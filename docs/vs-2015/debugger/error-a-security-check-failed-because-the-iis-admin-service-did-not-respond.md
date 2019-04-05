@@ -1,14 +1,9 @@
 ---
 title: 'Fehler: Eine Sicherheitsprüfung ist fehlgeschlagen, weil der IIS-Verwaltungsdienst nicht reagiert hat | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -22,22 +17,22 @@ ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6215648cba97e17ab143538afb4936a480adae4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955934"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Fehler: Fehler bei einer Sicherheitsüberprüfung, weil der IIS-Verwaltungsdienst nicht reagiert hat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normalerweise weist dies auf ein Problem mit der IIS-Installation hin. Überprüfen Sie, dass der Dienst ausgeführt wird, mit der **Services** tool **Verwaltung**.  
+Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normalerweise weist dies auf ein Problem mit der IIS-Installation hin. Stellen Sie zunächst in der **Verwaltung** unter **Dienste** sicher, dass der Dienst ausgeführt wird.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Installieren Sie IIS mithilfe der **Software** Systemsteuerung.  
+-   Installieren Sie IIS mithilfe der Option **Software** in der Systemsteuerung neu.  
   
 -   - oder -   
   
@@ -49,7 +44,7 @@ Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normaler
   
      - oder -   
   
--   Deaktivieren Sie den IIS-Verwaltungsdienst mithilfe der Einstellungen „Verwaltung“. Dadurch wird IIS auf dem Computer deaktiviert.  
+-   Deaktivieren Sie den IIS-Verwaltungsdienst in der Systemsteuerung über die Option Verwaltung. Dadurch wird IIS auf dem Computer deaktiviert.  
   
      Sie müssen den Computer nach jedem dieser drei Schritte neu starten.  
   
@@ -57,6 +52,3 @@ Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normaler
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Codeanalyse
-description: 'Erfahren Sie, wie Sie Visual Studio verwenden, um die Codequalität zu analysieren.'
+description: Erfahren Sie, wie Sie Visual Studio verwenden, um die Codequalität zu analysieren.
 ms.date: 12/03/2018
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
+ms.openlocfilehash: 9cc40bdd7b0e120e3a8e3e5be28f4d399afb9210
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323317"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Codeanalyse in Visual Studio
 

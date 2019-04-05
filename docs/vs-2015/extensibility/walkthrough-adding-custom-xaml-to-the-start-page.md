@@ -1,27 +1,22 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen von benutzerdefinierten XAML zur Startseite | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58c7441a4f910a1da35bc464e12ddba3bd5583bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802524"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001665"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,9 +88,8 @@ Diese exemplarische Vorgehensweise veranschaulicht eine benutzerdefinierte Visua
 1.  In **Extras / Optionen / Umgebung**Option **Start**. Auf der **Customize Start Page** auflisten, wählen Sie die XAML-Datei, und klicken Sie auf **OK**.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Der Visual Studio-Startseite enthält jetzt eine Registerkarte, die eine Registerkarte des Webbrowsers und eine Registerkarte "MyButton" angezeigt. Sie können benutzerdefinierte Startseiten mithilfe von denen andere Funktionen erstellen den *Code-Behind* Modell eine benutzerdefinierte DLL-Datei hinzufügen, siehe [Benutzersteuerelement hinzufügen, um die Startseite](../extensibility/adding-user-control-to-the-start-page.md). Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, veröffentlichen Sie die resultierende VSIX-Datei in die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website oder eine andere Website oder Netzwerk. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+ Der Visual Studio-Startseite enthält jetzt eine Registerkarte, die eine Registerkarte des Webbrowsers und eine Registerkarte "MyButton" angezeigt. Sie können benutzerdefinierte Startseiten mithilfe von denen andere Funktionen erstellen den *Code-Behind* Modell eine benutzerdefinierte DLL-Datei hinzufügen, siehe [Benutzersteuerelement hinzufügen, um die Startseite](../extensibility/adding-user-control-to-the-start-page.md). Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, veröffentlichen Sie die resultierende VSIX-Datei in die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website oder eine andere Website oder Netzwerk. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)   
- [WPF-Container-Steuerelemente](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
-
+ [WPF-Container-Steuerelemente](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

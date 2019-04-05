@@ -1,12 +1,9 @@
 ---
 title: 'UML-Klassendiagramme: Richtlinien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,13 +16,13 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726524"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957819"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +79,7 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
  Finden Sie unter [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Klassendiagrammen  
- Referenzinformationen zu den Elementen in UML-Klassendiagrammen finden Sie unter [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md).  
+ Referenzinformationen zu den Elementen in UML-Klassendiagrammen finden Sie unter [UML-Klassendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
 >  Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
@@ -179,7 +176,7 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
   
 - **(keine)**  -Lassen Sie einen Typ, der nicht in der Signatur angegeben, indem Sie den vorangestellten Doppelpunkt auslassen (`:`).  
   
-- Eine der standardmäßigen primitiven Typen: **booleschen**, **Ganzzahl**, **Zeichenfolge**.  
+- Eine der standardmäßigen primitiven Typen: **Boolesche**, **Ganzzahl**, **Zeichenfolge**.  
   
 - Einen Typ, der im Modell definiert ist.  
   
@@ -292,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Sie können jedoch nur Festlegen der **ist statisch** und **Is Abstract** Eigenschaften in der **Eigenschaften** Fenster.  
   
 #### <a name="full-signature"></a>Vollständige Signatur  
- Wenn Sie die Signatur eines Attributs oder Vorgangs bearbeiten, werden ggf. einige zusätzliche Eigenschaften am Ende der Zeile und nach jedem Parameter angezeigt. Sie stehen in geschweiften Klammern ({…}). Sie können diese Eigenschaften bearbeiten oder hinzufügen. Beispiel:  
+ Wenn Sie die Signatur eines Attributs oder Vorgangs bearbeiten, werden ggf. einige zusätzliche Eigenschaften am Ende der Zeile und nach jedem Parameter angezeigt. Sie stehen in geschweiften Klammern ({…}). Sie können diese Eigenschaften bearbeiten oder hinzufügen. Zum Beispiel:  
   
 ```  
 + AddItems (items: MenuItem [1..*] {unique, ordered})  
@@ -325,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Das Attribut wird aus Werten anderer Attribute oder Zuordnungen berechnet.  
   
- "/" steht vor dem Namen eines Attributs. Beispiel:  
+ "/" steht vor dem Namen eines Attributs. Zum Beispiel:  
   
 ```  
 /TotalPrice: Integer  
@@ -483,6 +480,3 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)   
  [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)
-
-
-

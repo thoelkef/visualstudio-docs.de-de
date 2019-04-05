@@ -1,14 +1,9 @@
 ---
 title: Keine Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.remote_debug
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958384"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Diese Fehlermeldung wird angezeigt, wenn Sie im Dialogfeld **An den Prozess anh�
   
 -   Sie können den Remotedebugger beenden und unter dem Konto, das Sie auf dem lokalen Computer verwenden, erneut starten.  
   
--   Sie können den Remotedebugger über die Befehlszeile mit starten die **/ allow \<Benutzername >** Parameter: `msvsmon /allow <username@computer>`  
+-   Sie können den Remotedebugger über die Befehlszeile mit dem Parameter **/allow \<Benutzername>** erneut starten: `msvsmon /allow <username@computer>`  
   
 -   Sie können dem Benutzer Remotedebuggerberechtigungen (im Remotedebugger-Fenster **Extras/Berechtigungen**) hinzufügen.  
   
@@ -90,6 +85,3 @@ Diese Fehlermeldung wird angezeigt, wenn Sie im Dialogfeld **An den Prozess anh�
   
 ## <a name="see-also"></a>Siehe auch  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

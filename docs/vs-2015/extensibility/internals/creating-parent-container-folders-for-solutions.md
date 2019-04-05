@@ -1,27 +1,22 @@
 ---
 title: Erstellen von übergeordneten Containerordnern für Projektmappen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762533"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58959195"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Containerordnern für Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +50,15 @@ Die Source-Plug-in-API Version 1.2 kann einem Benutzer ein einziger Stammknoten 
 |Feature|tSource-Steuerelement-Plug-in-API-Version 1.1|Datenquellen Sie-Steuerelement-Plug-in API-Version 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
 |Hinzufügen der Lösung zum SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Projekt der quellcodeverwaltung unterliegende Projektmappe hinzufügen|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Hinweis:** Visual Studio wird davon ausgegangen, dass eine Projektmappe direkt untergeordnetes Element von der (Süd).|  
+|Projekt der quellcodeverwaltung unterliegende Projektmappe hinzufügen|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Note:**  Visual Studio wird davon ausgegangen, dass eine Projektmappe direkt untergeordnetes Element von der (Süd).|  
   
 ## <a name="examples"></a>Beispiele  
  Die folgende Tabelle enthält zwei Beispiele. In beiden Fällen die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzer zur Eingabe aufgefordert, einen Zielspeicherort für die Projektmappe unter quellcodeverwaltung, bis die *User_choice* als Ziel angegeben ist. Wenn die User_choice angegeben wird, werden die Projektmappe und zwei Projekte hinzugefügt, ohne Aufforderung des Benutzers für Datenquellen-Steuerelement-Ziele.  
   
 |Projektmappe enthält|Auf Datenträger|Datenbank-Standardstruktur|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> WEB2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /C/Web1<br /><br /> $/*User_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*User_choice*/sln1<br /><br /> $/*User_choice*  /D/web1<br /><br /> $/*User_choice*  /sln1/win1|  
+|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*User_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*User_choice*  /D/web1<br /><br /> $/*user_choice*/sln1/win1|  
   
  Die SUR-Ordner und Unterordner werden erstellt, unabhängig davon, ob der Vorgang wurde abgebrochen oder aufgrund eines Fehlers fehlschlägt. Sie werden nicht automatisch in "Abbrechen" oder fehlerbedingungen entfernt.  
   
@@ -73,4 +68,3 @@ Die Source-Plug-in-API Version 1.2 kann einem Benutzer ein einziger Stammknoten 
   
 ## <a name="see-also"></a>Siehe auch  
  [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

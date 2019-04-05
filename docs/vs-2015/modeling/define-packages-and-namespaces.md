@@ -1,12 +1,9 @@
 ---
 title: Definieren von Paketen und Namespaces | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, namespaces
 - UML, namespaces
@@ -16,13 +13,13 @@ ms.assetid: 79147068-02d5-4b70-933d-f647c1da3829
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b9295b5af83270069df11e6460ee85dfe0fd9c73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956744"
 ---
 # <a name="define-packages-and-namespaces"></a>Definieren von Paketen und Namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -230,6 +227,3 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
  [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)   
  [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)   
  [Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md)
-
-
-

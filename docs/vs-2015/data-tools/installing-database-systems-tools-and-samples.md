@@ -1,12 +1,9 @@
 ---
 title: Installieren von Datenbanksystemen, Tools und Beispiele | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244282"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001701"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Installieren von Datenbanksystemen, Tools und Beispiele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +32,12 @@ Visual Studio umfasst keine Datenbanksysteme außer denen, die intern verwendet.
   
  Stellen Sie sicher, dass Sie SQL Server Data Tools in Visual Studio installiert haben, für die SQL-Entwicklung. Klicken Sie auf die **Ansicht** Menü. Wenn Sie SQL Server-Objekt-Explorer nicht angezeigt wird, wechseln Sie zur Systemsteuerung, und Ändern von Visual Studio. Wählen Sie das Installationsprogramm **Microsoft SQL Server Data Tools**.  
   
- Wenn Sie Azure Storage-APIs verwenden, installieren Sie die Azure-Speicher-Emulatoren auf dem lokalen Computer während der Entwicklung, um Gebühren zu vermeiden, bis Sie bereit sind, für die Produktion bereitstellen. Weitere Informationen finden Sie unter [Verwenden des Azure-Speicheremulators für Entwicklung und Tests](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).  
+ Wenn Sie Azure Storage-APIs verwenden, installieren Sie die Azure-Speicher-Emulatoren auf dem lokalen Computer während der Entwicklung, um Gebühren zu vermeiden, bis Sie bereit sind, für die Produktion bereitstellen. Weitere Informationen finden Sie unter [Verwenden des Azure-Speicheremulators für Entwicklung und Tests](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).  
   
  Die folgende Liste enthält einige der gängigeren Datenbanksystemen, die verwendet werden können, in Visual Studio-Projekten. Die Liste ist nicht vollständig. Eine Liste der Drittanbieter, die Daten ADO.NET-Datenanbieter bieten, die enge Integration in Visual Studio-Tools zu ermöglichen, finden Sie unter [ADO.NET-Datenanbietern](https://msdn.microsoft.com/library/dd363565.aspx).  
   
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server  
- SQL Server ist die führende Microsoft-Datenbank bietet. SQL Server 2016 bietet bahnbrechende Leistung, erweiterter Sicherheit und funktionsreiche, integrierte berichterstellung und Analysen. Wird in verschiedenen Editionen, die für unterschiedliche Verwendungszwecke ausgelegt sind: hochgradig skalierbare, leistungsstarke Business Analytics, für die Verwendung auf einem einzelnen Computer. SQL Server Express ist eine voll funktionsfähige Edition von SQL Server, die für die weiterverteilung und Einbetten von zugeschnitten sind.  LocalDB ist eine vereinfachte Edition von SQL Server Express, die erfordert keine Konfiguration und in der Anwendung ausgeführt wird. Sie können eine oder beide Produkte über [der SQL Server Express-Download-Seite](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).    Viele der SQL-Beispiele in diesem Abschnitt verwenden Sie SQL Server LocalDB. SQL Server Management Studio (SSMS) ist eine eigenständige Datenbank-verwaltungsanwendung, die über mehr Funktionen als die in Visual Studio SQL Server Objekt-Explorer bereitgestellten verfügt. Sie können SSMS über den vorherigen Link abrufen.  
+ SQL Server ist die führende Microsoft-Datenbank bietet. SQL Server 2016 bietet bahnbrechende Leistung, erweiterter Sicherheit und funktionsreiche, integrierte berichterstellung und Analysen. Wird in verschiedenen Editionen, die für unterschiedliche Verwendungszwecke ausgelegt sind: hochgradig skalierbare, leistungsstarke Business Analytics, für die Verwendung auf einem einzelnen Computer. SQL Server Express ist eine voll funktionsfähige Edition von SQL Server, die für die weiterverteilung und Einbetten von zugeschnitten sind.  LocalDB ist eine vereinfachte Edition von SQL Server Express, die erfordert keine Konfiguration und in der Anwendung ausgeführt wird. Sie können eine oder beide Produkte über [der SQL Server Express-Download-Seite](https://www.microsoft.com/sql-server/sql-server-editions-express). Viele der SQL-Beispiele in diesem Abschnitt verwenden Sie SQL Server LocalDB. SQL Server Management Studio (SSMS) ist eine eigenständige Datenbank-verwaltungsanwendung, die über mehr Funktionen als die in Visual Studio SQL Server Objekt-Explorer bereitgestellten verfügt. Sie können SSMS über den vorherigen Link abrufen.  
   
 ### <a name="oracle"></a>Oracle  
  Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank aus der [Oracle Technologienetzwerk](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) Seite. Entwurfszeitunterstützung für Entity Framework und TableAdapter-Steuerelemente, müssen Sie die [Oracle Developer Tools für Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Andere offizielle Oracle-Produkte, einschließlich von den Oracle Instant Client, stehen über den NuGet-Paket-Manager zur Verfügung.  Sie können Oracle-Beispielschemas herunterladen, indem Sie die Anweisungen in der [Oracle-Onlinedokumentation](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).  
@@ -58,5 +55,4 @@ Visual Studio umfasst keine Datenbanksysteme außer denen, die intern verwendet.
  Firebird ist ein Open-Source-SQL-Datenbank. Sie können es von der [Firebird-Downloadseite](http://firebirdsql.org/en/downloads/). Ein ADO.NET-Datenanbieter steht über den NuGet-Paket-Manager zur Verfügung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Ermitteln der Version und Edition von SQL Server und dessen Komponenten](http://support.microsoft.com/kb/321185)
-
+ [So ermitteln Sie die Version, Edition und Updateebene von SQL Server und seinen Komponenten](http://support.microsoft.com/kb/321185)

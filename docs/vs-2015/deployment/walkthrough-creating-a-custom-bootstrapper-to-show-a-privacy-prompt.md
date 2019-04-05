@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Datenschutzbestimmungen Eingabeaufforderung anzeigen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893389"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958966"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,7 +149,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 -   Ein Dokument für die Software-Lizenzbedingungen.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Erstellen Sie das Bootstrapperverzeichnis  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Schritt 1: Beim Erstellen des Bootstrappers-Verzeichnisses  
   
 1.  Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** im %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
@@ -166,7 +161,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
     > [!NOTE]
     >  Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema. Beispielsweise können Sie die Unterverzeichnisse für den fr und de Gebietsschemas hinzufügen. Diese Verzeichnisse würde die Zeichenfolgen für Französisch und Deutsch und Language Packs bei Bedarf enthalten.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Erstellen Sie die product.xml-Manifestdatei  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Die product.xml-manifest-Datei erstellen  
   
 1.  Erstellen Sie eine Textdatei namens `product.xml`.  
   
@@ -198,7 +193,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 3.  Speichern Sie die Datei in das Bootstrapperverzeichnis UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Schritt 3: Erstellen Sie das Manifest "Package.xml" Lizenzbedingungen-Datei und der software  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Schritt 3: Zum Erstellen der manifest-Datei "Package.xml" und die Software-Lizenzbedingungen  
   
 1.  Erstellen Sie eine Textdatei namens `package.xml`.  
   
@@ -242,7 +237,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
 3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **Voraussetzungen**.  
   
@@ -260,7 +255,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
 3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
@@ -272,13 +267,13 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 6.  Lesen Sie die Software-Lizenzbedingungen, und klicken Sie dann auf **Accept**.  
   
-     Die Anwendung für die Update-Zustimmungsdialogfeld angezeigt wird, und zeigt den folgenden Text: überprüft die Anwendung, die Sie installieren die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
+     Die Update-Zustimmungsdialogfeld-Anwendung wird angezeigt und zeigt den folgenden Text: Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
   
 7.  Schließen Sie die Anwendung aus, oder klicken Sie auf "Abbrechen".  
   
      Die Anwendung wird ein Fehler angezeigt: Fehler beim Installieren der Systemkomponenten für *ApplicationName*. Setup kann nicht fortgesetzt, bis alle Systemkomponenten erfolgreich installiert wurden.  
   
-8.  Klicken Sie auf Details, um die folgende Fehlermeldung angezeigt: Komponente aktualisieren-Zustimmungsdialogfeld Fehler bei der Installation die folgende Fehlermeldung angezeigt: "die Vereinbarung für die automatische Aktualisierung wird nicht akzeptiert." Die folgenden Komponenten konnten nicht installiert:-Update-Zustimmungsdialogfeld  
+8.  Klicken Sie auf Details, um die folgende Fehlermeldung angezeigt: Komponente Update-Zustimmungsdialogfeld Fehler bei der Installation die folgende Fehlermeldung angezeigt: "Die Vereinbarung für die automatische Aktualisierung wird nicht akzeptiert." Die folgenden Komponenten konnten nicht installiert:-Update-Zustimmungsdialogfeld  
   
 9. Klicken Sie auf **Schließen**.  
   
@@ -286,7 +281,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 1.  In **Projektmappen-Explorer**, klicken Sie auf den Namen der Anwendung, die Sie bereitstellen möchten.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
 3.  Klicken Sie auf die **veröffentlichen** Seite, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
@@ -298,7 +293,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
   
 6.  Lesen Sie die Software-Lizenzbedingungen, und klicken Sie dann auf **Accept**.  
   
-     Die Anwendung für die Update-Zustimmungsdialogfeld angezeigt wird, und zeigt den folgenden Text: überprüft die Anwendung, die Sie installieren die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
+     Die Update-Zustimmungsdialogfeld-Anwendung wird angezeigt und zeigt den folgenden Text: Die Anwendung, die Sie installieren, überprüft die neuesten Updates im Web. Wenn Sie auf ich stimme zu, autorisieren Sie die Anwendung nach Updates automatisch auf das Internet zu überprüfen.  
   
 7.  Klicken Sie auf **ich stimme zu**, und klicken Sie dann auf **fortsetzen**.  
   
@@ -312,6 +307,3 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
  [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)   
  [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md)   
  [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
-
-
-

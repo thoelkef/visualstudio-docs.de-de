@@ -1,28 +1,23 @@
 ---
-title: 'Vorgehensweise: Bereitstellen ein Diensts | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Geben Sie einen Dienst | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956520"
 ---
-# <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen ein Diensts
+# <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen eines Diensts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst bereitstellen zu können, muss eine VSPackage registrieren den Dienst mit Visual Studio, und fügen Sie den Dienst.  
@@ -149,4 +144,3 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
  [Vorgehensweise: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
  [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)   
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)
-

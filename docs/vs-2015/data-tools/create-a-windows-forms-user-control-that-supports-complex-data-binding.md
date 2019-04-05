@@ -1,12 +1,9 @@
 ---
 title: Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,23 +17,23 @@ ms.assetid: c8f29c2b-b49b-4618-88aa-33b6105880b5
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: de22f93c6fd04f89360fdaf8a2f5d83bd373d93d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cdaee8ea14aab67f9c4f0cc77ae9c7507309534c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956866"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen Steuerelemente aus der **Toolbox**, oder Sie können benutzerdefinierte Steuerelemente erstellen, wenn Ihre Anwendung Funktionen erfordert, die in den Standardsteuerelementen nicht verfügbar ist. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementieren, enthalten eine Eigenschaft `DataSource` und `DataMember`, die an Daten gebunden werden kann. Solche Steuerelemente sind vergleichbar mit <xref:System.Windows.Forms.DataGridView> oder <xref:System.Windows.Forms.ListBox>.  
+Zum Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie die in der **Toolbox** vorhandenen Steuerelemente verwenden oder, falls die gewünschte Funktionalität in den Standardsteuerelementen nicht verfügbar ist, benutzerdefinierte Steuerelemente erstellen. Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementiert. Steuerelemente, die <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementieren, enthalten eine Eigenschaft `DataSource` und `DataMember`, die an Daten gebunden werden kann. Solche Steuerelemente sind vergleichbar mit <xref:System.Windows.Forms.DataGridView> oder <xref:System.Windows.Forms.ListBox>.  
   
  Weitere Informationen über das Erstellen von Steuerelementen, finden Sie unter [Entwickeln von Windows Forms-Steuerelementen zur Entwurfszeit](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
- Beim Erstellen von Steuerelementen für die Verwendung in Szenarios mit Datenbindung müssen Sie eine der folgenden Datenbindungsattribute implementieren:  
+ Beim Erstellen von Steuerelementen, die in Datenbindungsszenarios verwendet werden sollen, müssen Sie eines der folgenden Datenbindungsattribute implementieren:  
   
 |Die Datenbindung Attributverwendung|  
 |-----------------------------------|  
@@ -50,7 +47,7 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
   
 -   Erstellen Sie ein neues **Windows-Anwendung**.  
   
--   Fügen Sie einen neuen **Benutzersteuerelement** zu Ihrem Projekt.  
+-   Ihrem Projekt ein neues **Benutzersteuerelement** hinzufügen.  
   
 -   Entwerfen des Benutzersteuerelements im visuellen Designer.  
   
@@ -65,7 +62,7 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
--   Zugriff auf die Beispieldatenbank Northwind. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+-   Zugriff auf die Beispieldatenbank Northwind.
   
 ## <a name="create-a-windows-application"></a>Erstellen Sie eine Windows-Anwendung  
  Der erste Schritt ist die Erstellung einer **Windows-Anwendung**.  
@@ -74,36 +71,36 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
   
 1.  In Visual Studio aus der **Datei** im Menü Erstellen Sie ein neues **Projekt**.  
   
-2.  Nennen Sie das Projekt **ComplexControlWalkthrough**.  
+2.  Geben Sie dem Projekt den Namen **ComplexControlWalkthrough**.  
   
 3.  Wählen Sie **Windows-Anwendung**, und klicken Sie auf **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-     Die **ComplexControlWalkthrough** Projekt wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
+     Das Projekt **ComplexControlWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.  
   
-## <a name="add-a-user-control-to-the-project"></a>Fügen Sie dem Projekt ein Benutzersteuerelement  
+## <a name="add-a-user-control-to-the-project"></a>Hinzufügen eines Benutzersteuerelements zum Projekt  
  Da in dieser exemplarischen Vorgehensweise ein komplexes, datenbindbares Steuerelement aus erstellt eine **Benutzersteuerelement**, müssen Sie hinzufügen, eine **Benutzersteuerelement** Elements zum Projekt.  
   
 #### <a name="to-add-a-user-control-to-the-project"></a>So fügen Sie dem Projekt ein Benutzersteuerelement hinzu  
   
-1.  Von der **Projekt** Menü wählen **Benutzersteuerelement hinzufügen**.  
+1.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.  
   
-2.  Typ **ComplexDataGridView** in die **Namen** Bereich, und klicken Sie dann auf **hinzufügen**.  
+2.  Geben Sie **ComplexDataGridView** in den Bereich **Name** ein, und klicken Sie anschließend auf **Hinzufügen**.  
   
-     Die **ComplexDataGridView** -Steuerelement hinzugefügt **Projektmappen-Explorer**, und im Designer geöffnet.  
+     Das **ComplexDataGridView**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.  
   
 ## <a name="design-the-complexdatagridview-control"></a>Entwerfen des ComplexDataGridView-Steuerelements  
  Dieser Schritt fügt dem Benutzersteuerelement eine <xref:System.Windows.Forms.DataGridView> hinzu.  
   
 #### <a name="to-design-the-complexdatagridview-control"></a>So entwerfen Sie das ComplexDataGridView-Steuerelement  
   
--   Ziehen Sie eine <xref:System.Windows.Forms.DataGridView> aus der **Toolbox** auf der Entwurfsoberfläche des Benutzersteuerelements.  
+-   Ziehen Sie ein <xref:System.Windows.Forms.DataGridView> aus der **Toolbox** auf die Entwurfsoberfläche des Benutzersteuerelements.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Fügen Sie das erforderliche Attribut für die Datenbindung hinzu  
  Für komplexe Steuerelemente, die Datenbindung unterstützen, können Sie das <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementieren.  
   
 #### <a name="to-implement-the-complexbindingproperties-attribute"></a>So implementieren Sie das ComplexBindingProperties-Attribut  
   
-1.  Wechseln der **ComplexDataGridView** -Steuerelement zur Codeansicht. (Auf der **Ansicht** , wählen Sie im Menü **Code**.)  
+1.  Wechseln Sie für das **ComplexDataGridView**-Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** die Option **Code** aus.)  
   
 2.  Ersetzen Sie den Code in `ComplexDataGridView` durch folgenden Code:  
   
@@ -113,49 +110,49 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
 3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.  
   
 ## <a name="creating-a-data-source-from-your-database"></a>Erstellen eine Datenquelle aus einer Datenbank  
- Dieser Schritt verwendet den **Datenquellenkonfiguration** Assistenten zum Erstellen einer Datenquelle basierend auf den `Customers` -Tabelle in der Beispieldatenbank Northwind. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Installieren von SQL Server-Beispieldatenbanken](../data-tools/install-sql-server-sample-databases.md).  
+ In diesem Schritt wird der **Assistent zum Konfigurieren von Datenquellen** verwendet, um eine Datenquelle anhand der `Customers`-Tabelle in der Beispieldatenbank Northwind zu erstellen. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Installieren von SQL Server-Beispieldatenbanken](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
 1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
   
-2.  In der **Datenquellen** wählen Sie im Fenster **neue Datenquelle hinzufügen** zum Starten der **Datenquellenkonfiguration** Assistenten.  
+2.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
   
 3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
   
-4.  Auf der **wählen Sie Ihre Datenverbindung** Seite führen Sie einen der folgenden:  
+4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
   
     -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
-    -   Wählen Sie **neue Verbindung** zum Starten der **Verbindung hinzufügen/ändern** Dialogfeld.  
+    -   Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.  
   
-5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
+5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
   
-6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
+6.  Klicken Sie auf der Seite **Save connection string to the Application Configuration file** (Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern) auf **Weiter**.  
   
-7.  Auf der **Datenbankobjekte auswählen** Seite, erweitern Sie die **Tabellen** Knoten.  
+7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
   
-8.  Wählen Sie die `Customers` Tabelle, und klicken Sie dann auf **Fertig stellen**.  
+8.  Wählen Sie die `Customers`-Tabelle aus, und klicken Sie anschließend auf **Fertig stellen**.  
   
-     Die **NorthwindDataSet** wird Ihrem Projekt hinzugefügt und die `Customers` Tabelle angezeigt wird, der **Datenquellen** Fenster.  
+     Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die Tabelle `Customers` wird im **Datenquellenfenster** angezeigt.  
   
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Festlegen der Tabelle Customers das Steuerelement ComplexDataGridView verwendet  
- In der **Datenquellen** Fenster können Sie das Steuerelement erstellt werden, vor dem Ziehen von Elementen auf das Formular festlegen.  
+ Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll.  
   
 #### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>So legen Sie die Bindung der Spalte Customers an das ComplexDataGridView-Steuerelement fest  
   
-1.  Open **Form1** im Designer.  
+1.  Öffnen Sie **Form1** im Designer.  
   
-2.  Erweitern Sie die **Kunden** Knoten in der **Datenquellen** Fenster.  
+2.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
   
-3.  Klicken Sie auf die Dropdown-Pfeil der **Kunden** Knoten, und wählen Sie **anpassen**.  
+3.  Klicken Sie auf den Dropdownpfeil für den Knoten **Customers**, und wählen Sie **Anpassen**.  
   
-4.  Wählen Sie die **ComplexDataGridView** aus der Liste der **zugeordnete Steuerelemente** in die **Optionen für die Anpassung** Dialogfeld.  
+4.  Wählen Sie im Dialogfeld **Optionen für die Anpassung der Datenbenutzeroberfläche** in der Liste **Zugeordnete Steuerelemente** den Eintrag **ComplexDataGridView** aus.  
   
-5.  Klicken Sie auf die Dropdown-Pfeil der `Customers` Tabelle, und wählen Sie **ComplexDataGridView** aus der Steuerungsliste.  
+5.  Klicken Sie auf den Dropdownpfeil für die `Customers`-Tabelle, und wählen Sie **ComplexDataGridView** aus der Steuerungsliste aus.  
   
 ## <a name="addcontrols-to-the-form"></a>Addcontrols zum Formular  
- Sie können die datengebundenen Steuerelemente erstellen, durch Ziehen von Elementen aus der **Datenquellen** auf das Formular.  
+ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem Fenster **Datenquellen** auf das Formular ziehen.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular  
   
@@ -178,4 +175,3 @@ Anzeigen von Daten in Formularen in Windows-Anwendungen können Sie vorhandenen 
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
  [Windows Forms-Steuerelemente](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
-

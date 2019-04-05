@@ -1,27 +1,22 @@
 ---
 title: Grafikereignisliste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766214"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59001130"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,17 +83,17 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 ### <a name="user-defined-events-in-direct3d-12"></a>Benutzerdefinierte Ereignisse in Direct3D 12  
  Verwenden Sie zum Erstellen von Gruppen und Markierungen in Direct3D 12 die in diesem Abschnitt beschriebenen APIs. In der folgenden Tabelle werden die APIs aufgeführt, die Sie je nachdem, ob Sie Ereignisse in einer Befehlswarteschlange oder einer Befehlsliste markieren, verwenden können.  
   
-|API-Beschreibung|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|API-Beschreibung|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Überprüfen der Verfügbarkeit des benutzerdefinierten Ereignisses|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|Start einer Ereignisgruppe|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|Ende einer Ereignisgruppe|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|Erstellen eines Ereignismarkers|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|Überprüfen der Verfügbarkeit des benutzerdefinierten Ereignisses|[PIXGetStatus](http://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|Start einer Ereignisgruppe|[PIXBeginEvent](http://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|Ende einer Ereignisgruppe|[PIXEndEvent](http://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|Erstellen eines Ereignismarkers|[PIXSetMarker](http://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Benutzerdefinierte Ereignisse in Direct3D 11 und früheren Versionen  
  Verwenden Sie zum Erstellen von Gruppen und Markierungen in Direct3D 11 oder in früheren Versionen die in diesem Abschnitt beschriebenen APIs. In der Tabelle unten sind die APIs aufgeführt, die Sie in verschiedenen Versionen von Direct3D 11 und in früheren Versionen von Direct3D verwenden können.  
   
-|API-Beschreibung|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API-Familie (Direct3D 11.0 und früher)|  
+|API-Beschreibung|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API-Familie (Direct3D 11.0 und früher)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Start einer Ereignisgruppe|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |Ende einer Ereignisgruppe|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -108,6 +103,3 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Erstellen eine Windows Forms-Toolbox-Steuerelement | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781711"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001383"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms-Toolbox-Steuerelements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +189,7 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
   
      Das Formular wird geöffnet. Die `Counter` Steuerelement zeigt den folgenden Text.  
   
-     **Anzahl: 0**  
+     **Anzahl von: 0**  
   
 14. Klicken Sie auf **Test**.  
   
@@ -213,11 +208,10 @@ Ermöglicht das Erstellen ein Steuerelements, das automatisch hinzugefügt wird,
      Der Leistungsindikator wird zurückgesetzt, um **0**.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- Beim Erstellen eines **Toolbox** -Steuerelements erstellt Visual Studio eine Datei namens *Projektname*.vsix im Ordner „\bin\debug\“ des Projekts. Sie können das Steuerelement bereitstellen, indem Sie die VSIX-Datei in ein Netzwerk oder auf eine Website hochladen. Wenn ein Benutzer die VSIX-Datei öffnet, wird das Steuerelement installiert und in Visual Studio hinzugefügt **Toolbox** auf dem Computer des Benutzers. Alternativ können Sie die VSIX-Datei zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website aus, damit Benutzer sie finden können der **Extras / Erweiterungen und Updates** Dialogfeld.  
+ Beim Erstellen eines **Toolbox** -Steuerelements erstellt Visual Studio eine Datei namens *Projektname*.vsix im Ordner „\bin\debug\“ des Projekts. Sie können das Steuerelement bereitstellen, indem Sie die VSIX-Datei in ein Netzwerk oder auf eine Website hochladen. Wenn ein Benutzer die VSIX-Datei öffnet, wird das Steuerelement installiert und in Visual Studio hinzugefügt **Toolbox** auf dem Computer des Benutzers. Alternativ können Sie die VSIX-Datei zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Website aus, damit Benutzer sie finden können der **Extras / Erweiterungen und Updates** Dialogfeld.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern der Toolbox](../misc/extending-the-toolbox.md)   
  [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Grundlagen für das Entwickeln von Windows Forms-Steuerelementen](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

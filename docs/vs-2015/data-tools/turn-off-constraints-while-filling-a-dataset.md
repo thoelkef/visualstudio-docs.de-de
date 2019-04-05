@@ -1,12 +1,9 @@
 ---
 title: Deaktivieren von Einschränkungen beim Auffüllen von Datasets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - DataRow.BeginEdit
 - DataRow.EndEdit
@@ -25,19 +22,19 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956395"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Deaktivieren von Einschränkungen beim Auffüllen von Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Wenn Sie ein Dataset Einschränkungen (z. B. fremdschlüsseleinschränkungen) enthält, lösen Fehler aus Sequenznummern für das Dataset ausgeführten Vorgänge im Zusammenhang. Z. B. kann untergeordnete Datensätze vor dem Loadingrelated übergeordneten Datensätze gegen eine Einschränkung verstoßen und einen Fehler verursachen. Sobald Sie einen untergeordneten Datensatz laden, wird die Einschränkung für den zugehörigen übergeordneten Datensatz überprüft und ein Fehler ausgelöst.  
+Wenn Sie ein Dataset Einschränkungen (z. B. fremdschlüsseleinschränkungen) enthält, lösen Fehler aus Sequenznummern für das Dataset ausgeführten Vorgänge im Zusammenhang. Z. B. kann untergeordnete Datensätze vor dem Loadingrelated übergeordneten Datensätze gegen eine Einschränkung verstoßen und einen Fehler verursachen. Sobald Sie einen untergeordneten Datensatz laden, überprüft die Einschränkung das Vorhandensein des übergeordneten Datensatzes und löst einen Fehler aus.  
   
  Ohne einen Mechanismus, der die vorübergehende Aufhebung der Einschränkung zulässt, würde der Fehler bei jedem Versuch ausgelöst, einen Datensatz in die untergeordnete Tabelle zu laden. Es besteht außerdem die Möglichkeit, alle Einschränkungen in einem Dataset mit der <xref:System.Data.DataRow.BeginEdit%2A>-Eigenschaft und der <xref:System.Data.DataRow.EndEdit%2A>-Eigenschaft aufzuheben.  
   
@@ -53,11 +50,10 @@ Wenn Sie ein Dataset Einschränkungen (z. B. fremdschlüsseleinschränkungen) en
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>So heben Sie Aktualisierungseinschränkungen mit dem Dataset-Designer auf  
   
-1.  Öffnen Sie das Dataset in den [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md). Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Öffnen Sie das Dataset im Dataset-Designer. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Legen Sie im Fenster **Eigenschaften** die Eigenschaft <xref:System.Data.DataSet.EnforceConstraints%2A> auf `false`fest.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md)
-

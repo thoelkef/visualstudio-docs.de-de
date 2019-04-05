@@ -1,13 +1,19 @@
 ---
 layout: LandingPage
 title: Erstellen von JavaScript-Apps in Visual Studio | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie Visual Studio 2017 zum Erstellen von Anwendungen verwenden.'
+description: Erfahren Sie, wie Sie Visual Studio 2017 zum Erstellen von Anwendungen verwenden.
 ms.topic: landing-page
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: 4ba823e113167bbd78eaf6ac6fe71110866715f5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325041"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 

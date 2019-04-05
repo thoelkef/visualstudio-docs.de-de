@@ -1,12 +1,9 @@
 ---
 title: Erstellen Sie eine SQL­Datenbank mithilfe eines Designers | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956603"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen 
   
 2.  Öffnen Sie das Kontextmenü für **Tabellen**, und wählen Sie dann **neue Tabelle hinzufügen**.  
   
-     Die **Tabellen-Designer** wird geöffnet und zeigt ein Raster mit einer standardmäßigen Zeile an, die eine einzelne Spalte in der Tabelle darstellt, die Sie erstellen. Durch Hinzufügen von Zeilen zum Raster fügen Sie zusätzliche Spalten in der Tabelle hinzu.  
+     Der **Tabellen-Designer** wird geöffnet und zeigt ein Raster mit einer Standardzeile an, die eine einzelne Spalte in der Tabelle darstellt, die Sie erstellen. Durch Hinzufügen von Zeilen zum Raster fügen Sie zusätzliche Spalten in der Tabelle hinzu.  
   
 3.  Im Raster fügen Sie eine Zeile für jeden der folgenden Einträge hinzu:  
   
@@ -195,4 +192,3 @@ Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen 
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Nun, da Sie eine lokale Datenbankdatei mit einigen Beispieldaten haben, können Sie eine der exemplarischen Vorgehensweisen abschließen, die Tasks der Datenbank zu veranschaulichen.
-

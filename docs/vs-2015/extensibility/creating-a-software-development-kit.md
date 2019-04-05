@@ -1,24 +1,19 @@
 ---
 title: Erstellen eines Software Development Kits | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961381"
 ---
 # <a name="creating-a-software-development-kit"></a>Erstellen eines Software Development Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +57,8 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
 |Verweise (Ordner)|Enthält die Binärdateien, die APIs enthalten, die für codiert werden können. Diese können es sich um Windows-Metadatendateien (WinMD) oder Assemblys enthalten.|  
 |DesignTime-Ordner|Enthält Dateien, die nur zum Zeitpunkt der pre-ausführen/Debuggen erforderlich sind. Diese können XML-Dokumente, Bibliotheken, Header, Toolbox während der Entwurfszeit-Binärdateien, MSBuild-Elementen usw. enthalten.<br /><br /> XML-Dokumente würden, im Idealfall im Ordner \DesignTime platziert werden, aber weiterhin XML-Dokumente, für Verweise, zusammen mit der Referenzdatei in Visual Studio platziert werden soll. Z. B. das XML-Dokument für einen Verweis \References\\[Config]\\[arch]\sample.dll werden \References\\[Config]\\[arch]\sample.xml und die lokalisierte Version von diesem Dokument werden \References\\[Config]\\[Arch]\\[locale]\sample.xml.|  
 |Ordner "Configuration"|Es darf nur drei Ordnern: Debug "," Retail "und" CommonConfiguration. SDK-Autoren können ihre Dateien unterhalb CommonConfiguration platzieren, wenn Sie der gleiche Satz von SDK-Dateien, unabhängig von der Konfiguration genutzt werden sollen, die SDK-Consumers ausgerichtet wird.|  
-|Ordner "Architektur"|Jede unterstützte Architektur Ordner kann vorhanden sein. Visual Studio unterstützt die folgenden Architekturen: X86, X64, ARM "und" Neutral. Hinweis: Win32 X86, und "anycpu" auf neutral.<br /><br /> MSBuild sucht nur unter \CommonConfiguration\neutral Plattform-SDKs.|  
-|SDKManifest.xml|Diese Datei beschreibt, wie das SDK von Visual Studio reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **"DisplayName":** der Wert, der die Objekt-Browser in der Suchliste angezeigt.<br /><br /> **PlatformIdentity:** das Vorhandensein dieses Attribut teilt Visual Studio und MSBuild, dass das SDK ein Plattform-SDK ist und die Verweise hinzugefügt, daraus kopiert werden soll, darf nicht lokal.<br /><br /> **TargetFramework:** dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, die auf die gleichen Frameworks gemäß dem Wert dieses Attributs kann das SDK nutzen.<br /><br /> **MinVSVersion:** dieses Attribut wird von Visual Studio verwendet, um nur die SDKs verwenden, die auf sie anwenden.<br /><br /> **Referenz:** dieses Attribut muss für nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen zur Verwendung an, ob ein Verweis auf Steuerelemente enthält finden Sie unten.|  
+|Ordner "Architektur"|Jede unterstützte Architektur Ordner kann vorhanden sein. Visual Studio unterstützt die folgenden Architekturen: X86, X64, ARM "und" Neutral. Hinweis: Win32 X86 zugeordnet, und "anycpu" neutrale zugeordnet.<br /><br /> MSBuild sucht nur unter \CommonConfiguration\neutral Plattform-SDKs.|  
+|SDKManifest.xml|Diese Datei beschreibt, wie das SDK von Visual Studio reserviert werden soll. Betrachten Sie das SDK-Manifest für [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Der Wert, den die Objekt-Browser in der Suchliste angezeigt.<br /><br /> **PlatformIdentity:** Das Vorhandensein dieses Attribut teilt Visual Studio und MSBuild, die das SDK ist ein Plattform-SDK und die Verweise hinzugefügt, daraus dürfen nicht kopiert werden, lokal.<br /><br /> **TargetFramework:** Dieses Attribut wird von Visual Studio verwendet, um sicherzustellen, die nur Projekte, die auf die gleichen Frameworks gemäß dem Wert dieses Attributs kann das SDK nutzen.<br /><br /> **MinVSVersion:** Dieses Attribut wird von Visual Studio verwendet, um nur die SDKs verwenden, die auf sie anwenden.<br /><br /> **Referenz:** Dieses Attribut muss für nur die Verweise angegeben werden, die Steuerelemente enthalten. Informationen zur Verwendung an, ob ein Verweis auf Steuerelemente enthält finden Sie unten.|  
   
 ##  <a name="ExtensionSDKs"></a> Erweiterungs-SDKs  
  In den folgenden Abschnitten wird beschrieben, was Sie tun, um ein Erweiterungs-SDK bereitstellen müssen.  
@@ -166,7 +161,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 1.  DisplayName: der Wert, der im Verweis-Manager, Projektmappen-Explorer, Objekt-Browser und andere Speicherorte in der Benutzeroberfläche von Visual Studio angezeigt wird.  
   
-2.  ProductFamilyName: Der gesamte SDK Produktname. Z. B. die [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK heißt "Microsoft.WinJS.1.0" und "Microsoft.WinJS.2.0", die zu derselben Familie der SDK-Familie, "Microsoft.WinJS" gehören. Dieses Attribut ermöglicht Visual Studio und MSBuild, um diese Verbindung zu erstellen. Wenn dieses Attribut nicht vorhanden ist, wird der SDK-Name als der Name der Produktreihe verwendet.  
+2.  ProductFamilyName: Der gesamte SDK-Produktname. Z. B. die [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK heißt "Microsoft.WinJS.1.0" und "Microsoft.WinJS.2.0", die zu derselben Familie der SDK-Familie, "Microsoft.WinJS" gehören. Dieses Attribut ermöglicht Visual Studio und MSBuild, um diese Verbindung zu erstellen. Wenn dieses Attribut nicht vorhanden ist, wird der SDK-Name als der Name der Produktreihe verwendet.  
   
 3.  FrameworkIdentity: Gibt eine Abhängigkeit auf eine oder mehrere Windows-Komponentenbibliotheken, die der Wert dieses Attributs in der verwendeten app-Manifest eingefügt wird. Dieses Attribut gilt nur für Windows-Komponentenbibliotheken zur Verfügung.  
   
@@ -176,7 +171,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 6.  MaxPlatformVerson: Die maximale zielplattformversion sollte verwendet werden, an die Plattformversionen, auf denen Ihre Erweiterungs-SDK nicht funktionieren. Beispielsweise sollte das Microsoft Visual C++ Runtime Package V11. 0 nur von Windows 8-Projekte verwiesen werden. Daher ist die Windows 8-Projekt MaxPlatformVersion 8.0. Dies bedeutet, dass der Verweis-Manager Microsoft Visual C++ Runtime Package für ein Windows 8.1-Projekt filtert, und MSBuild löst einen Fehler aus. wenn eine [!INCLUDE[win81](../includes/win81-md.md)] Projekt verweist darauf. Hinweis: dieses Element wird unterstützt ab [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
-7.  AppliesTo: Gibt an, die SDKs, die im Verweis-Manager verfügbar sind, durch Angabe der entsprechende Visual Studio-Projekttypen. Es werden neun Werte erkannt: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, verwaltet und systemeigen. Der Autor des SDK kann verwenden, und ("+"), oder ("&#124;") und nicht ("!") Operatoren, die genau den Bereich der Projekttypen anzugeben, die für das SDK gelten.  
+7.  AppliesTo: Gibt an, die SDKs, die im Verweis-Manager verfügbar sind, durch Angabe der entsprechende Visual Studio-Projekttypen. Es werden neun Werte erkannt: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, verwaltet, und systemeigene. Der Autor des SDK kann verwenden, und ("+"), oder ("&#124;") und nicht ("!") Operatoren, die genau den Bereich der Projekttypen anzugeben, die für das SDK gelten.  
   
      WindowsAppContainer identifiziert Projekte für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps.  
   
@@ -190,7 +185,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 12. CopyRedistToSubDirectory: Gibt an, in dem die Dateien im Ordner \redist relativ zum Stammverzeichnis app-Paket kopiert werden sollen (d. h. die **Paketspeicherort** im App-Pakete erstellen-Assistenten ausgewählt) und Common Language Runtime-Layoutstamm. Der Standardspeicherort ist der Stamm der app-Paket und die F5-Layout.  
   
-13. "DependsOn": Eine Liste von SDK-Identitäten, die die SDKs zu definieren, von denen dieses SDK abhängig ist. Dieses Attribut wird im Detailbereich des Verweis-Managers angezeigt.  
+13. DependsOn: Eine Liste der SDK-Identitäten, die die SDKs zu definieren, von denen dieses SDK abhängig ist. Dieses Attribut wird im Detailbereich des Verweis-Managers angezeigt.  
   
 14. MoreInfo: die URL zur Webseite, die Hilfe und Weitere Informationen bereitstellt. Dieser Wert wird unter dem Link "Weitere Informationen" im rechten Bereich des Verweis-Managers verwendet.  
   
@@ -270,7 +265,6 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Erstellen eines SDKS mit C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Exemplarische Vorgehensweise: Erstellen eines SDKS mit c# oder Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [Exemplarische Vorgehensweise: Erstellen eines SDK mit C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Exemplarische Vorgehensweise: Erstellen einer SDK mit C# oder Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
-

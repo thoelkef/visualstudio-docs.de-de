@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Debuggen von Apps | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie Visual Studio für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.'
+description: Erfahren Sie, wie Sie Visual Studio für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322076"
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 

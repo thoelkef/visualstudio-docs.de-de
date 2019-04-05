@@ -1,26 +1,21 @@
 ---
 title: 'Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
-manager: douge
-ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957863"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Gewusst wie: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
-Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung für die Bereitstellung zu verpacken. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
+Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung für die Bereitstellung zu verpacken. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
   
 - Erstellen Sie mithilfe einer der Erweiterungsvorlagen, die im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK enthalten sind, ein VSIX-Paketprojekt. Dies ist die einfachste Möglichkeit für die meisten Szenarien.  
   
@@ -31,7 +26,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
   In diesem Dokument wird die dritte Option erläutert:  
   
 ## <a name="creating-a-vsix-package"></a>Erstellen eines VSIX-Pakets  
- Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
+ Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
   
 > [!NOTE]
 >  Die Namen der Dateien in VSIX-Paketen darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -42,7 +37,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
   
 2.  Erstellen Sie eine XML-Datei, und nennen Sie sie `extension.vsixmanifest`.  
   
-3.  Füllen Sie die Datei "extension.vsixmanifest" gemäß dem VSIX-Schema. Ein Beispiel für ein Manifest finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3.  Füllen Sie die Datei "extension.vsixmanifest" gemäß dem VSIX-Schema. Ein Beispiel für ein Manifest finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4.  Erstellen Sie eine zweite XML-Datei, und nennen Sie sie `[Content_Types].xml`.  
   
@@ -61,4 +56,4 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
 ## <a name="see-also"></a>Siehe auch  
  [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

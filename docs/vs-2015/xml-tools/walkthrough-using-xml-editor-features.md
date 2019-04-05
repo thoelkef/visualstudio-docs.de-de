@@ -1,30 +1,25 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden von XML-Editor-Funktionen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Verwenden der Funktionen des XML-Editors | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958558"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden der Funktionen des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Bei der exemplarischen Vorgehensweise werden auch die Features des XML-Editors verwendet, die für das Verfassen von XML nützlich sind.  
+Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstellung eines neuen XML-Dokuments. Bei der exemplarischen Vorgehensweise werden auch die Funktionen des XML-Editors verwendet, die für das Verfassen von XML nützlich sind.  
   
 > [!NOTE]
 >  Speichern Sie vor dem Starten der exemplarischen Vorgehensweise die Datei hireDate.xsd (weiter unten in diesem Thema aufgeführt) auf dem lokalen Computer.  
@@ -77,7 +72,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
   
 5.  Geben Sie `>` ein, um das Tag zu schließen.  
   
-6.  Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die QuickInfo zeigt an, dass der Inhalt des 'employee'-Elements unvollständig ist. Erwartet wurde 'ID'.  
+6.  Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die QuickInfo wird die Meldung angezeigt: Das Element "Employee" ist Inhalt unvollständig. Erwartet wurde 'ID'.  
   
 7.  Typ `<` , und wählen Sie **ID** in der Memberliste aus. Geben Sie anschließend `>` ein.  
   
@@ -85,7 +80,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
   
 8.  Typ **Abc**.  
   
-     Die **Abc** Text weist eine wellenförmige Unterstreichung. Die QuickInfo zeigt an, dass das 'ID'-Element einen für seinen Datentyp ungültigen Wert hat.  
+     Die **Abc** Text weist eine wellenförmige Unterstreichung. Die QuickInfo wird die Meldung angezeigt: Das Element "ID" hat einen ungültigen Wert gemäß seinem Datentyp.  
   
 9. Klicken Sie mit der rechten Maustaste auf das ID-Element, und wählen Sie **Gehe zu Definition**.  
   
@@ -93,9 +88,9 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
   
 10. Zurückgeben der XML-Datei, und Ersetzen Sie die **Abc** Text mit **123**.  
   
-     Die wellenförmige Unterstreichung und die Quickinfo unter dem ID-Elementwert werden gelöscht. Die QuickInfo für das 'employee'-Endtag zeigt an, dass der Inhalt des 'employee'-Elements unvollständig ist. Erwartet wurde 'hire-date'.  
+     Die wellenförmige Unterstreichung und die Quickinfo unter dem ID-Elementwert werden gelöscht. Die QuickInfo für das Endtag des Mitarbeiters wird jetzt die Meldung angezeigt: Das Element "Employee" ist Inhalt unvollständig. Erwartet wurde 'hire-date'.  
   
-11. Positionieren Sie den Cursor hinter dem ID-Endtag, geben Sie `<` ein, wählen Sie 'hire-date' in der Memberliste aus, und geben Sie anschließend `>` ein.  
+11. Positionieren Sie den Cursor hinter dem ID-Endtag, geben Sie `<` ein, wählen Sie „hire-date“ in der Memberliste aus, und geben Sie anschließend `>` ein.  
   
      Der Editor fügt das XML-Element `<hire-date></hire-date>` hinzu und platziert den Cursor hinter dem 'hire-date'-Starttag.  
   
@@ -136,4 +131,3 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Editor](../xml-tools/xml-editor.md)
-

@@ -1,25 +1,20 @@
 ---
 title: Direkte Aktivierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
-manager: douge
-ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c673fd7eb2b51e611256efb427baa0174d29462
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956951"
 ---
 # <a name="in-place-activation"></a>Direkte Aktivierung
 Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müssen Sie die Editor-Ansicht entweder als ActiveX-Steuerelement oder als aktives Dokumentdatenobjekt mithilfe des Modells für die direkte Aktivierung implementieren.  
@@ -41,7 +36,7 @@ Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müss
 Editor für die direkte Aktivierung  
   
 > [!NOTE]
->  Von den Objekten in dieser Zeichnung ist nur das `CYourEditorFactory`-Objekt zum Erstellen eines Standard-Editors erforderlich. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> nicht implementieren, da Ihr Editor wahrscheinlich über einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).  
+>  Von den Objekten in dieser Zeichnung ist nur das `CYourEditorFactory` -Objekt zum Erstellen eines Standard-Editors erforderlich. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> nicht implementieren, da Ihr Editor wahrscheinlich über einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).  
   
  Alle Schnittstellen, die zum Erstellen eines Editors für die direkte Aktivierung implementiert werden, werden an einem einzelnen `CYourEditorDocument` -Objekt angezeigt. Diese Konfiguration unterstützt jedoch nur eine einzige Ansicht der Dokumentdaten. Weitere Informationen zur Unterstützung von mehreren Ansichten der Dokumentdaten finden Sie unter [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   

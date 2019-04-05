@@ -1,12 +1,9 @@
 ---
 title: Anpassen des Löschverhaltens | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957014"
 ---
 # <a name="customizing-deletion-behavior"></a>Anpassen des Löschverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -303,6 +300,3 @@ partial class NestedShapesSampleDocData
  [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)   
  [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md)   
  [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

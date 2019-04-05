@@ -1,27 +1,24 @@
 ---
 title: Hinzufügen einer benutzerdefinierten architekturvalidierung zu Ebenendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961301"
 ---
-# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Ebenendiagrammen
+# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturüberprüfung zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren. So kann überprüft werden, ob der Quellcode den Abhängigkeiten in einem Ebenendiagramm entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.  
@@ -154,7 +151,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
   Wenn der Benutzer den Menübefehl **Architektur überprüfen** aufruft, werden die Ebenen und ihre Artefakte vom Ebenenlaufzeitsystem analysiert, und es wird ein Diagramm erstellt. Das Diagramm besteht aus vier Teilen:  
   
-- Den Ebenenmodellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
+- Den Ebenenmodellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
   
 - Dem Code, Projektelementen und anderen Artefakte, die in der Projektmappe definiert und als Knoten dargestellt werden, sowie den Links, die die vom Analyseprozess ermittelten Abhängigkeiten vertreten.  
   
@@ -211,7 +208,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ### <a name="launch-the-debugger-explicitly"></a>Explizites Starten des Debuggers  
  Die Validierung wird in einem separaten Prozess ausgeführt. Daher werden die Haltepunkte in der Überprüfungsmethode nicht ausgelöst. Sie müssen den Debugger explizit dem Prozess anfügen, wenn die Validierung gestartet wurde.  
   
- Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus.  
+ Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aus.  
   
  Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.  
   
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md)
-
-
-

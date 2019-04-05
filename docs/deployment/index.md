@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Bereitstellen von Apps | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie mit Visual Studio Anwendungen, Dienste und Komponenten bereitstellen.'
+description: Erfahren Sie, wie Sie mit Visual Studio Anwendungen, Dienste und Komponenten bereitstellen.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325015"
 ---
 # <a name="deployment-in-visual-studio"></a>Bereitstellung in Visual Studio
 

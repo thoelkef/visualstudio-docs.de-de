@@ -1,14 +1,9 @@
 ---
 title: Bearbeiten und Fortfahren (Visual C++) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748352"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58955985"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +34,9 @@ Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. F
   
  Weitere Update 1-Verbesserungen sind ein neues Wartedialogfeld, das abgebrochen werden kann, sowie eine Benachrichtigung für den Fall, dass „Bearbeiten und Fortfahren“ für eine Datei nicht unterstützt wird. Weitere Informationen zu Update 1-Verbesserungen, finden Sie unter [Verbesserungen für C++-bearbeiten und Fortfahren in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
   
- Die [/zo (optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) Compileroption, die in Visual Studio 2013 Update 3 eingeführte PDB-Dateien (Symboldateien) zusätzliche Informationen hinzugefügt, für die Kompilierung von Binärdateien ohne die  [ /Od (deaktivieren (Debuggen)) ](http://msdn.microsoft.com/library/aafb762y.aspx) Option.  
+ Die Compileroption [/Zo (erweitertes optimiertes Debugging)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt zusätzliche Informationen in PDB-Dateien (Symboldateien) für Binärdateien hinzu, die ohne die Option [/Od ((Debug) deaktivieren)](http://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.  
   
- **/ Zo** bearbeiten und Fortfahren deaktiviert. Finden Sie unter [Vorgehensweise: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md).  
+ **/ Zo** bearbeiten und Fortfahren deaktiviert. Weitere Informationen finden Sie unter [How to: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Aktivieren oder Deaktivieren von „Bearbeiten und Fortfahren“  
  Möglicherweise möchten Sie das automatische Aufrufen von „Bearbeiten und Fortfahren“ deaktivieren, wenn Sie Änderungen am Code vornehmen, die nicht während der aktuellen Debugsitzung angewendet werden sollen. Sie können das automatische Aufrufen von „Bearbeiten und Fortfahren“ später wieder aktivieren.  
@@ -84,6 +79,3 @@ Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. F
   
 ## <a name="see-also"></a>Siehe auch  
  [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

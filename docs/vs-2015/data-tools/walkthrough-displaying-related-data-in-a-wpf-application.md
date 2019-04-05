@@ -1,12 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956263"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 - Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -72,7 +69,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 4.  Stellen Sie sicher, dass **.NET Framework 4** im Kombinationsfeld am oberen Rand des Dialogfelds ausgewählt ist. Die <xref:System.Windows.Controls.DataGrid> -Steuerelement, das Sie in dieser exemplarischen Vorgehensweise verwenden, ist nur in .NET Framework 4 verfügbar.  
   
-5.  Wählen Sie die **WPF-Anwendung** Projektvorlage.  
+5.  Wählen Sie die Projektvorlage **WPF-Anwendung** aus.  
   
 6.  Geben Sie im Feld **Name** `AdventureWorksOrdersViewer`ein.  
   
@@ -81,7 +78,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
      Visual Studio erstellt die `AdventureWorksOrdersViewer` Projekt.  
   
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Erstellen eines Entity Data Models für die Anwendung  
- Bevor Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmodell für Ihre Anwendung definieren und Hinzufügen der **Datenquellen** Fenster. In dieser exemplarischen Vorgehensweise wird das Datenmodell ein Entity Data Model.  
+ Ehe Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmodell für die Anwendung definieren und es dem **Datenquellenfenster** hinzufügen. In dieser exemplarischen Vorgehensweise wird das Datenmodell ein Entity Data Model.  
   
 #### <a name="to-create-an-entity-data-model"></a>So erstellen Sie ein Entity Data Model  
   
@@ -95,7 +92,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 5. Auf der **wählen Sie Ihre Datenverbindung** eine der folgenden:  
   
-   - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „AdventureWorksLT“ verfügbar ist, wählen Sie diese aus.  
+   - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "AdventureWorksLT" verfügbar ist, wählen Sie diese aus.  
   
       - oder -   
   
@@ -107,7 +104,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
    -   **SalesOrderDetail**  
   
-   -   **"SalesOrderHeader"**  
+   -   **SalesOrderHeader**  
   
 7. Klicken Sie auf **Fertig stellen**.  
   
@@ -126,7 +123,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 3. In der **Datenquellen** Fenster, klicken Sie auf das Dropdownmenü für die **SalesOrderHeaders** Knoten, und wählen **Details**.  
   
-4. Erweitern Sie die **SalesOrderHeaders** Knoten.  
+4. Erweitern Sie den Knoten **SalesOrderHeaders**.  
   
 5. Klicken Sie auf das Dropdownmenü neben **SalesOrderID** , und wählen Sie **"ComboBox"**.  
   
@@ -142,15 +139,15 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
    - **CreditCardApprovalCode**  
   
-   - **Zwischensumme**  
+   - **SubTotal**  
   
-   - **"Taxamt"**  
+   - **TaxAmt**  
   
    - **Freight**  
   
-   - **rowguid**  
+   - **Rowguid**  
   
-   - **"ModifiedDate"**  
+   - **ModifiedDate**  
   
      Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.  
   
@@ -160,7 +157,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 8. Im Designer, klicken Sie auf das Kombinationsfeld neben dem **Sales Order ID** Bezeichnung.  
   
-9. In der **Eigenschaften** wählen Sie im Fenster das Kontrollkästchen neben den **IsReadOnly** Eigenschaft.  
+9. Aktivieren Sie im Fenster **Eigenschaften** das Kontrollkästchen neben der Eigenschaft **IsReadOnly**.  
   
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Erstellen ein DataGrid-Steuerelement, das den Details der Bestellung anzeigt  
  Erstellen Sie eine <xref:System.Windows.Controls.DataGrid> -Steuerelement, das zeigt Auftragsdetails durch Ziehen der `SalesOrderDetails` Entität aus der **Datenquellen** in den WPF-Designer.  
@@ -176,13 +173,13 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 3. Für jede der folgenden untergeordneten Knoten von der **SalesOrderDetails** Knoten, klicken Sie auf dem Dropdownmenü neben den Knoten, und wählen Sie **keine**:  
   
-   - **"SalesOrderID"**  
+   - **SalesOrderID**  
   
    - **SalesOrderDetailID**  
   
-   - **rowguid**  
+   - **Rowguid**  
   
-   - **"ModifiedDate"**  
+   - **ModifiedDate**  
   
      Diese Aktion verhindert, dass Visual Studio einschließlich diese Daten in die <xref:System.Windows.Controls.DataGrid> Kontrolle, die Sie im nächsten Schritt erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.  
   

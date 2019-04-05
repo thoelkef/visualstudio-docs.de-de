@@ -1,12 +1,9 @@
 ---
 title: Anpassen von Dateispeicher und XML-Serialisierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955541"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -294,7 +291,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
 |Eigenschaft|Beschreibung|  
 |Eigenschaft "Domain"|Die Eigenschaft, die Xml-serialisierungskonfigurationsdaten gelten. Schreibgeschützt.|  
 |Wird der Monikerschlüssel|Bei "true", dient die Eigenschaft als Schlüssel für das Erstellen von Monikern, die Instanzen dieser Domänenklasse verweisen.|  
-|Ist der Monikerqualifizierer|Wenn True, wird die Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false", und SerializeId nicht "true" für diese Domänenklasse ist, werden Moniker durch den Moniker, der das übergeordnete Element in der einbettenden Struktur qualifiziert.|  
+|Is Moniker Qualifier|Wenn True, wird die Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false", und SerializeId nicht "true" für diese Domänenklasse ist, werden Moniker durch den Moniker, der das übergeordnete Element in der einbettenden Struktur qualifiziert.|  
 |Darstellung|Wenn das Attribut, das die Eigenschaft als XML-Attribut serialisiert wird; Wenn das Element, es ist als ein Element serialisiert Falls Sie nicht serialisiert.|  
 |XML-Name|Namen für die XML-Attribut oder Element, das die Eigenschaft darstellt. Standardmäßig ist dies eine lower-case-Version vom Namen Domäne.|  
 |Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind|  
@@ -313,6 +310,3 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

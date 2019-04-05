@@ -1,12 +1,9 @@
 ---
 title: T4-Textvorlagenanweisungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, import directive
 - text templates, include directive
@@ -18,20 +15,20 @@ ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
 caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce0acf7c1c63f0d1c05d1e1d3b59dc7a5d28862a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957374"
 ---
-# <a name="t4-text-template-directives"></a>T4-Textvorlagenanweisungen
+# <a name="t4-text-template-directives"></a>T4-Textvorlagendirektiven
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Enginebereitgestellt.  
   
- Die Syntax von Direktiven lautet wie folgt:  
+ Die Syntax von Anweisungen lautet wie folgt:  
   
 ```  
 <#@ DirectiveName [AttributeName = "AttributeValue"] ... #>  
@@ -39,7 +36,7 @@ Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Engine
   
  Alle Attributwerte müssen in doppelte Anführungszeichen eingeschlossen werden. Wenn der Wert selbst Anführungszeichen enthält, müssen diese mit dem Escapezeichen "\" versehen werden.  
   
- Direktiven sind in der Regel die ersten Elemente in einer Vorlagendatei oder einer eingeschlossenen Datei. Platzieren Sie sie nicht in einem Codeblock `<#...#>` und nicht nach einem Klassenfunktionsblock `<#+...#>`.  
+ Anweisungen sind in der Regel die ersten Elemente in einer Vorlagendatei oder einer eingeschlossenen Datei. Platzieren Sie sie nicht in einem Codeblock `<#...#>` und nicht nach einem Klassenfunktionsblock `<#+...#>`.  
   
  [T4-Vorlagenanweisung](../modeling/t4-template-directive.md)  
  ```  
@@ -76,7 +73,4 @@ Durch Direktiven werden Anweisungen für die Textvorlagen-Transformations-Engine
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
 ```  
   
- Darüber hinaus können Sie eigene Anweisungen erstellen. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md). Wenn Sie mithilfe des Visualisierungs- und Modellierungs-SDKs eine domänenspezifische Sprache (DSL) erstellen, wird ein Direktivenprozessor als Teil der DSL generiert.
-
-
-
+ Darüber hinaus können Sie eigene Direktiven erstellen. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten T4 Text Vorlage Richtlinie Prozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md). Wenn Sie mithilfe des Visualisierungs- und Modellierungs-SDKs eine domänenspezifische Sprache (DSL) erstellen, wird ein Anweisungsprozessor als Teil der DSL generiert.

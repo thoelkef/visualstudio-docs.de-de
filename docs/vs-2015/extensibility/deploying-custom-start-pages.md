@@ -1,27 +1,22 @@
 ---
 title: Bereitstellen von benutzerdefinierten Startseiten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795114"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001359"
 ---
 # <a name="deploying-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
   
 - Sie können die VSIX-Datei auf einer Netzwerkfreigabe oder auf einer öffentlichen Website einfügen. Wenn eine Person die Datei geöffnet wird, wird die Startseite wird automatisch installiert.  
   
-- Sie können die VSIX-Datei zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
+- Sie können die VSIX-Datei zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
   
   Die Startseite-Projektvorlage erstellt eine Kopie der standardmäßigen Visual Studio-Startseite, damit Sie die Kopie zu ändern und das Original beibehalten können.  
   
@@ -76,7 +71,7 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
   
 4.  Ändern Sie die PKGDEF, um die Standardstartseite unter HKLM zu festlegen, indem Sie Folgendes ein, wobei *MyStartPage.xaml* ist der Name der XAML-Datei, die Startseite enthält.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -98,4 +93,3 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Hinzufügen eines Benutzersteuerelements zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)
-

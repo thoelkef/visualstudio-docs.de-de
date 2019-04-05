@@ -1,14 +1,9 @@
 ---
 title: Beseitigung von ~ SAK-Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
 - ~sak files
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 930ee0690e14431298461f50387a94dd4bb0ce7d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 70efef9232bd7e9baf317e59111e59e9f98bf46b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955638"
 ---
 # <a name="elimination-of-sak-files"></a>Beseitigung von ~SAK-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Im Datenquellen-Steuerelement-Plug-in-API 1.2 die ~ SAK-Dateien wurden durch funktionsflags und neue Funktionen, die erkennen, ob ein Quellcodeverwaltungs-Plug-Ins, die MSSCCPRJ-Datei, und freigegebene ausgecheckte Elemente nicht unterstützt ersetzt.  
   
-## <a name="sak-files"></a>~ SAK-Dateien  
+## <a name="sak-files"></a>~SAK Files  
  Visual Studio .NET 2003 erstellte temporäre Dateien, die mit dem Präfix ~ SAK. Diese Dateien werden verwendet, um festzustellen, ob ein Quellcodeverwaltungs-Plug-in unterstützt:  
   
 - Die MSSCCPRJ. SCC-Datei.  
@@ -59,4 +54,3 @@ Im Datenquellen-Steuerelement-Plug-in-API 1.2 die ~ SAK-Dateien wurden durch fun
   
 ## <a name="see-also"></a>Siehe auch  
  [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

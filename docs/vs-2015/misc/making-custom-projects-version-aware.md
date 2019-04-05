@@ -1,23 +1,18 @@
 ---
 title: Bewirken, dass benutzerdefinierte Projekte Versionsfähig | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957015"
 ---
 # <a name="making-custom-projects-version-aware"></a>Bewirken, dass benutzerdefinierte Projekte versionsfähig werden
 In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte dieses Typs in mehreren Versionen von Visual Studio geladen werden. Sie können aber auch verhindern, dass Projekte dieses Typs in einer früheren Version von Visual Studio geladen werden. Außerdem können Sie für dieses Projekt ermöglichen, sich selbst für eine neuere Version zu identifizieren für den Fall, dass das Projekt repariert, konvertiert oder als veraltet deklariert werden muss.  
@@ -27,15 +22,15 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
   
  Bevor ein Projekt geladen wird, ruft Visual Studio die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A>-Methode auf, um zu ermitteln, ob ein Upgrade für das Projekt durchgeführt werden kann. Ist dies der Fall, legt die `UpgradeProject_CheckOnly`-Methode ein Flag fest, das einen späteren Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode bewirkt, um ein Upgrade für das Projekt durchzuführen. Da für inkompatible Projekte kein Upgrade durchgeführt werden kann, muss `UpgradeProject_CheckOnly` zunächst auf Projektkompatibilität prüfen, wie dies im vorherigen Abschnitt beschrieben ist.  
   
- Sie als der Autor eines Projektsystems implementieren `UpgradeProject_CheckOnly` (aus der `IVsProjectUpgradeViaFactory4` -Schnittstelle), um Benutzern Ihres Projektsystems eine Upgradeprüfung bereitzustellen. Wenn ein Benutzer ein Projekt öffnet, wird diese Methode aufgerufen, um festzustellen, ob ein Projekt repariert werden muss, bevor es geladen wird. Die möglichen Upgradeanforderungen werden in `VSPUVF_REPAIRFLAGS` aufgelistet, und sie enthalten folgende Möglichkeiten:  
+ Sie als der Autor eines Projektsystems implementieren `UpgradeProject_CheckOnly` (aus der `IVsProjectUpgradeViaFactory4` -Schnittstelle), um Benutzern Ihres Projektsystems eine Upgradeprüfung bereitzustellen. Wenn ein Benutzer ein Projekt öffnet, wird diese Methode aufgerufen, um festzustellen, ob ein Projekt repariert werden muss, bevor es geladen wird. Die möglichen Upgradeanforderungen werden in `VSPUVF_REPAIRFLAGS`aufgelistet, und sie enthalten folgende Möglichkeiten:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: Es ist keine Reparatur erforderlich.  
+1.  `SPUVF_PROJECT_NOREPAIR`: Ist keine Reparatur erforderlich.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Macht das Projekt mit einer früheren Version kompatibel ohne die Probleme, die möglicherweise in den vorherigen Versionen des Produkts aufgetreten sind.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Macht das Projekt mit einer früheren Version kompatibel ohne die Probleme, die möglicherweise in den vorherigen Versionen des Produkts aufgetreten.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Macht das Projekt rückwärtskompatibel, es gibt aber ein gewisses Risiko, dass die Probleme, die möglicherweise in vorherigen Versionen des Produkts aufgetreten sind, weiterhin auftreten. Beispielsweise wird das Projekt nicht kompatibel sein, wenn es von verschiedenen SDK-Versionen abhängt.  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Macht das Projekt rückwärtskompatibel aber einige Risiken, das Sie festgestellt haben, können Probleme mit früheren Versionen des Produkts. Beispielsweise wird das Projekt nicht kompatibel sein, wenn es von verschiedenen SDK-Versionen abhängt.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Bewirkt, dass das Projekt nicht mehr mit einer früheren Version kompatibel ist.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Macht das Projekt mit einer früheren Version nicht kompatibel.  
   
 5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Gibt an, dass die aktuelle Version dieses Projekt nicht unterstützt.  
   
@@ -61,11 +56,11 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
   
 #### <a name="to-mark-a-project-as-incompatible"></a>So kennzeichnen Sie ein Projekt als nicht kompatibel  
   
-1.  Rufen Sie in der Komponente eine `IVsAppCompat`-Schnittstelle aus dem globalen Dienst „SVsSolution“ ab.  
+1.  Rufen Sie in der Komponente eine `IVsAppCompat` -Schnittstelle aus dem globalen Dienst „SVsSolution“ ab.  
   
      Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  Rufen Sie in der Komponente die `IVsAppCompat.AskForUserConsentToBreakAssetCompat`-Methode auf, und übergeben Sie dieser ein Array von `IVsHierarchy`-Schnittstellen, die die betroffenen Projekte darstellen.  
+2.  Rufen Sie in der Komponente die `IVsAppCompat.AskForUserConsentToBreakAssetCompat`-Methode auf, und übergeben Sie dieser ein Array von `IVsHierarchy` -Schnittstellen, die die betroffenen Projekte darstellen.  
   
      Diese Methode hat die folgende Signatur:  
   
@@ -98,12 +93,12 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
     HRESULT GetCurrentDesignTimeCompatVersion([out] BSTR * pbstrCurrentDesignTimeCompatVersion)  
     ```  
   
-     Anschließend ruft die BreakAssetCompatibility-Methode die `IVsHierarchy.SetProperty`-Methode auf, um die `VSHPROPID_MinimumDesignTimeCompatVersion`-Stammeigenschaft auf den Wert der Versionszeichenfolge festzulegen, die Sie im vorherigen Schritt abgerufen haben.  
+     Anschließend ruft die BreakAssetCompatibility-Methode die `IVsHierarchy.SetProperty` -Methode auf, um die `VSHPROPID_MinimumDesignTimeCompatVersion` -Stammeigenschaft auf den Wert der Versionszeichenfolge festzulegen, die Sie im vorherigen Schritt abgerufen haben.  
   
      Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Sie müssen die `VSHPROPID_MinimumDesignTimeCompatVersion`-Eigenschaft implementieren, damit ein Projekt als kompatibel oder nicht kompatibel gekennzeichnet werden kann. Wird für das Projektsystem beispielsweise eine MSBuild-Projektdatei verwendet, fügen Sie der Projektdatei eine `<MinimumVisualStudioVersion>` -Buildeigenschaft hinzu, die denselben Wert hat wie die entsprechende `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft.  
+>  Sie müssen die `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft implementieren, damit ein Projekt als kompatibel oder nicht kompatibel gekennzeichnet werden kann. Wird für das Projektsystem beispielsweise eine MSBuild-Projektdatei verwendet, fügen Sie der Projektdatei eine `<MinimumVisualStudioVersion>` -Buildeigenschaft hinzu, die denselben Wert hat wie die entsprechende `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Ermitteln, ob ein Projekt nicht kompatibel ist  
  Für ein Projekt, das nicht mit der aktuellen Version von Visual Studio kompatibel ist, muss verhindert werden, dass es geladen wird. Darüber hinaus kann ein Projekt, das nicht kompatibel ist, weder ein Upgrade durchlaufen noch repariert werden. Daher muss ein Projekt zweimal auf Kompatibilität überprüft werden: erstmals, wenn es für ein Upgrade oder eine Reparatur berücksichtigt wird, und zweitens, bevor es geladen wird.  
@@ -123,13 +118,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
 )  
 ```  
   
- Wird `pUpgradeRequired` von dieser Methode auf TRUE festgelegt, und gibt die Methode den Wert `S_OK`zurück, wird das Ergebnis als „Upgrade“ behandelt, weshalb die Methode ein Upgradeflag auf den Wert `VSPUVF_PROJECT_ONEWAYUPGRADE`festgelegt, der weiter unten in diesem Thema beschrieben wird. Die folgenden Rückgabewerte werden unterstützt, wenn diese ältere Methode verwendet wird, allerdings nur, wenn `pUpgradeRequired` auf TRUE festgelegt ist:  
+ Wird `pUpgradeRequired` von dieser Methode auf TRUE festgelegt, und gibt die Methode den Wert `S_OK`zurück, wird das Ergebnis als „Upgrade“ behandelt, weshalb die Methode ein Upgradeflag auf den Wert `VSPUVF_PROJECT_ONEWAYUPGRADE`festgelegt, der weiter unten in diesem Thema beschrieben wird. Der folgende Rückgabewerte werden unterstützt, wenn diese ältere Methode verwendet wird, allerdings nur, wenn `pUpgradeRequired` auf TRUE festgelegt ist:  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_SAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
-2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_UNSAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_UNSAFEREPAIR`, das weiter unten in diesem Thema beschrieben wird.  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired`-Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_ONEWAYUPGRADE`, das weiter unten in diesem Thema beschrieben wird.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Dieser Rückgabewert übersetzt den `pUpgradeRequired` -Wert in TRUE als Entsprechung zu `VSPUVF_PROJECT_ONEWAYUPGRADE`, das weiter unten in diesem Thema beschrieben wird.  
   
    Die neuen Implementierungen in `IVsProjectUpgradeViaFactory4` und `IVsProjectFlavorUpgradeViaFactory2` ermöglichen es, den Migrationstyp genauer anzugeben.  
   

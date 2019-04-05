@@ -1,13 +1,8 @@
 ---
 title: Remotedebuggen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799274"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001610"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -186,13 +181,13 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
 ## <a name="remote-debug-a-visual-c-project"></a>Remotedebuggen eines Visual C++-Projekts  
  In der folgenden Prozedur den Namen und Pfad des Projekts C:\remotetemp\MyMfc, und der Name des Remotecomputers ist **MJO-DL**.  
   
-1. Erstellen eine MFC-Anwendung, die mit dem Namen **Mymfc.**  
+1. Erstellen Sie eine MFC-Anwendung mit dem Namen **mymfc**.  
   
-2. Legen Sie einen Haltepunkt an einer beliebigen Stelle in der Anwendung, die leicht, z. B. in erreicht wird **"MainFrm.cpp"**, am Anfang des `CMainFrame::OnCreate`.  
+2. Legen Sie einen leicht erreichbaren Haltepunkt an einer beliebigen Stelle in der Anwendung fest, z.B. in **MainFrm.cpp** am Anfang von `CMainFrame::OnCreate`.  
   
-3. Projektmappen-Explorer mit der Maustaste auf das Projekt, und wählen **Eigenschaften**. Öffnen der **Debuggen** Registerkarte.  
+3. Projektmappen-Explorer mit der Maustaste auf das Projekt, und wählen **Eigenschaften**. Öffnen Sie die Registerkarte **Debuggen**.  
   
-4. Legen Sie die **zu startender Debugger** zu **Remote-Windows-Debugger**.  
+4. Legen Sie **Zu startender Debugger** auf **Remote-Windows-Debugger** fest.  
   
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
@@ -200,7 +195,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
    |Einstellung|Wert|
    |-|-|  
-   |Remotebefehl|C:\remotetemp\mymfc.exe|  
+   |Remote-Befehl|C:\remotetemp\mymfc.exe|  
    |Arbeitsverzeichnis|C:\remotetemp|  
    |Remoteservername|MJO-DL:*Portnumber*|  
    |Verbindung|Remote mit Windows-Authentifizierung|  
@@ -212,7 +207,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
 6. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in der Projektmappe, und wählen Sie **Configuration Manager**.  
   
-7. Für die **Debuggen** Konfiguration der **bereitstellen** Kontrollkästchen.  
+7. Aktivieren Sie für die Konfiguration **Debuggen** das Kontrollkästchen **Bereitstellen**.  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
@@ -227,9 +222,9 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
 11. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wird.  
   
     > [!TIP]
-    >  Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. In der **Projektmappen-Explorer** mit der rechten Maustaste die **Mymfc** Knoten und wählen Sie dann **bereitstellen**.  
+    >  Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **mymfc**, und wählen Sie dann **Bereitstellen** aus.  
   
-    Wenn bestimmte Dateien ohne Code von der Anwendung benötigt werden, müssen Sie diese zum Visual Studio-Projekt hinzufügen. Erstellen einen Projektordner für die zusätzlichen Dateien (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / neue Ordner**.) Fügen Sie dann die Dateien in den Ordner hinzu (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / vorhandenen Element**, wählen Sie die Dateien.). Auf der **Eigenschaften** Seite für jede Datei **in Ausgabeverzeichnis kopieren** zu **immer kopieren**.  
+    Wenn bestimmte Dateien ohne Code von der Anwendung benötigt werden, müssen Sie diese zum Visual Studio-Projekt hinzufügen. Erstellen einen Projektordner für die zusätzlichen Dateien (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / neue Ordner**.) Fügen Sie dann die Dateien in den Ordner hinzu (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / vorhandenen Element**, wählen Sie die Dateien.). Legen Sie auf der Seite **Eigenschaften** der einzelnen Dateien die Option **In Ausgabeverzeichnis kopieren** auf **Immer kopieren** fest.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Remotedebugging eines Visual C#- oder Visual Basic-Projekts  
  Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf einem Remotecomputer bereitstellen, aber Sie können diese trotzdem wie folgt remotedebuggen. Das folgende Verfahren wird davon ausgegangen, dass Sie auf dem Computer debuggen möchten **MJO-DL**, wie in der Abbildung oben gezeigt.
@@ -242,19 +237,19 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
 3. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie **Eigenschaften**.  
   
-4. Auf der **Eigenschaften** Seite die **Debuggen** Registerkarte.  
+4. Wählen Sie auf der Seite **Eigenschaften** die Registerkarte **Debuggen** aus.  
   
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5. Stellen Sie sicher, dass die **Arbeitsverzeichnis** Textfeld leer ist.  
+5. Stellen Sie sicher, dass das Textfeld **Arbeitsverzeichnis** leer ist.  
   
 6. Wählen Sie **Remotecomputer**, und geben **MJO-DL:4020** in das Textfeld ein. (4020 ist die Portnummer im Remotedebugger-Fenster gezeigt).  
   
-7. Stellen Sie sicher, dass **Debuggen von nativem Code aktivieren** nicht ausgewählt ist.  
+7. Stellen Sie sicher, dass **Debuggen von nativem Code aktivieren** nicht aktiviert ist.  
   
 8. Erstellen Sie das Projekt.  
   
-9. Erstellen Sie einen Ordner auf dem Remotecomputer, die den gleichen Pfad wie die **Debuggen** Ordner auf Ihrem Computer Visual Studio:  **\<Quellpfad > \MyWPF\MyWPF\bin\Debug**.  
+9. Erstellen Sie auf dem Remotecomputer einen Ordner mit dem gleichen Pfad wie der **Debug**-Ordner auf Ihrem Visual Studio-Computer: **\<Quellpfad>\MyWPF\MyWPF\bin\Debug**.  
   
 10. Kopieren Sie die ausführbare Datei, die Sie soeben erstellt haben, vom Visual Studio-Computer in den neu erstellten Ordner auf dem Remotecomputer.
   
@@ -279,21 +274,21 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
 15. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wurde.
   
-    Wenn bestimmte Dateien ohne Code von der Anwendung benötigt werden, müssen Sie diese zum Visual Studio-Projekt hinzufügen. Erstellen einen Projektordner für die zusätzlichen Dateien (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / neue Ordner**.) Fügen Sie dann die Dateien in den Ordner hinzu (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / vorhandenen Element**, wählen Sie die Dateien.). Auf der **Eigenschaften** Seite für jede Datei **in Ausgabeverzeichnis kopieren** zu **immer kopieren**.
+    Wenn bestimmte Dateien ohne Code von der Anwendung benötigt werden, müssen Sie diese zum Visual Studio-Projekt hinzufügen. Erstellen einen Projektordner für die zusätzlichen Dateien (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / neue Ordner**.) Fügen Sie dann die Dateien in den Ordner hinzu (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen / vorhandenen Element**, wählen Sie die Dateien.). Legen Sie auf der Seite **Eigenschaften** der einzelnen Dateien die Option **In Ausgabeverzeichnis kopieren** auf **Immer kopieren** fest.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen  
  Sie sollten Ihren Code mit den auf dem Visual Studio-Computer generierten Symbolen debuggen können. Die Leistung des Remotedebuggers ist viel besser, wenn Sie lokale Symbole verwenden.  Wenn Sie Remotesymbole verwenden müssen, ist es erforderlich, dem Remotedebugmonitor mitzuteilen, dass er auf dem Remotecomputer nach Symbolen suchen soll.  
   
  Ab Visual Studio 2013 Update 2 können Sie über die folgende msvsmon-Befehlszeilenoption Remotesymbole für verwalteten Code verwenden: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
- Weitere Informationen finden Sie in der Hilfe zum Remotedebugging (drücken Sie die **F1** im Remotedebugger-Fenster, oder klicken Sie auf **Hilfe / Verwendung**). Sie können weitere Informationen finden unter [.NET Remote Symbol Loading Changes in Visual Studio 2012 und 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
+ Weitere Informationen finden Sie in der Hilfe zum Remotedebugging (drücken Sie die **F1** im Remotedebugger-Fenster, oder klicken Sie auf **Hilfe / Verwendung**). Weitere Informationen finden Sie unter [.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013 (Änderungen beim Laden von Symbolen in der .NET-Remoteinstanz in Visual Studio 2012 und 2013)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
 ##  <a name="bkmk_winstoreAzure"></a> Remotedebugging in Windows Store und Azure-apps  
  Informationen zum Remotedebuggen mit Windows Store-apps finden Sie unter [Debuggen und Testen von Windows Store-apps auf einem Remotegerät in Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Informationen zum Debuggen in Azure finden Sie in den folgenden Themen:  
   
--   [Debuggen eines Cloud-Diensts oder eines virtuellen Computers in Visual Studio](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Debuggen eines Cloud-Diensts oder eines virtuellen Computers in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [Debuggen des .NET-Backends in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
@@ -301,10 +296,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Konfigurieren der Windows-Firewalls für Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Windows-Firewall für Remotedebuggen konfigurieren](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Hinzufügen von Elementen, die zum Hinzufügen neuer Elemente Dialogfelder | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001042"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Hinzufügen von Elementen zu den Dialogfeldern „Neues Element hinzufügen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
   
  Die erste GUID ist die CLSID für Projekte dieses Typs. die zweite GUID gibt an, den registrierten Projekttyp für die Vorlagen für Elemente hinzufügen.  
   
- \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \1  
+ \\{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
   
  @="#6"  
   
  "TemplatesDir"="\<Visual Studio SDK-Installationspfad\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
- "SortPriority" Dword:00000064 =  
+ "SortPriority"=dword:00000064  
   
-|name|Typ|Daten (aus dem RGS-Datei)|Beschreibung|  
+|Name|Typ|Daten (aus dem RGS-Datei)|Beschreibung|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (Standard)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Ressourcen-ID für **Element hinzufügen** Vorlagen.|  
+|@ (Standard)|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|Ressourcen-ID für **Element hinzufügen** Vorlagen.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Pfad der Projektelemente angezeigt, die im Dialogfeld für die **neues Element hinzufügen** Assistenten.|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Bestimmt die Sortierreihenfolge im Knoten "Struktur" der Dateien angezeigt, der **neues Element hinzufügen** Dialogfeld.|  
   
@@ -89,4 +84,3 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
  [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Beschreibung der Vorlage Verzeichnis (. VSDIR)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

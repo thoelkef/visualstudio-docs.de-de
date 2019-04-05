@@ -1,27 +1,22 @@
 ---
 title: Verwenden von Spy++ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 205c99d4278c1421a98373f22374add81d0f9ac7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955742"
 ---
 # <a name="using-spy"></a>Verwenden von Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,22 +27,22 @@ Spy++ (SPYXX. EXE-Datei) ist ein Win32-basierte-Hilfsprogramm, die Ihnen ermögl
  [Einführung in Spy++](../debugger/introducing-spy-increment.md)  
  Erläutert die Typen von Informationen, die Sie mit dem Tool Spy++ anzeigen können.  
   
- [Gewusst wie: Starten von Spy++](../debugger/how-to-start-spy-increment.md)  
+ [Vorgehensweise: Starten von Spy++](../debugger/how-to-start-spy-increment.md)  
  Erläutert das Starten von Spy++ aus dem Menü "Extras".  
   
  [Spy++-Symbolleiste](../debugger/spy-increment-toolbar.md)  
  Beschreibt die verfügbaren Befehle in der Spy++-Symbolleiste.  
   
- [Gewusst wie: Anzeigen von Spy++-Ansichten](../debugger/how-to-display-spy-increment-views.md)  
+ [Vorgehensweise: Anzeigen von Spy++-Ansichten](../debugger/how-to-display-spy-increment-views.md)  
  Vorgehensweise beim Anzeigen von Windows-Ansicht "," Ansicht "Nachrichten" "," Prozessansicht "und" Ansicht "Threads".  
   
- [Gewusst wie: Aktualisieren der Ansicht](../debugger/how-to-refresh-the-view.md)  
+ [Vorgehensweise: Aktualisieren der Ansicht](../debugger/how-to-refresh-the-view.md)  
  Erläutert die Refresh-Befehl.  
   
- [Gewusst wie: Ändern von Schriftarten](../debugger/how-to-change-fonts.md)  
+ [Vorgehensweise: Ändern von Schriftarten](../debugger/how-to-change-fonts.md)  
  Erläutert das verändern, wie eine Ansicht angezeigt wird.  
   
- [Gewusst wie: Erweitern und Reduzieren von Spy++-Strukturen](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
+ [Vorgehensweise: Auf- und Zuklappen von Spy++-Strukturen](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
  Erläutert, wie eine Sicht zu bearbeiten.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
@@ -56,6 +51,3 @@ Spy++ (SPYXX. EXE-Datei) ist ein Win32-basierte-Hilfsprogramm, die Ihnen ermögl
   
  [Spy++-Referenz](../debugger/spy-increment-reference.md)  
  Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
-
-
-

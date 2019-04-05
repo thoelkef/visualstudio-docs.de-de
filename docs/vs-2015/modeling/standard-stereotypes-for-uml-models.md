@@ -1,12 +1,9 @@
 ---
 title: Standardstereotype für UML-Modellen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957383"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardstereotype für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,32 +80,32 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
 |----------------|----------------|-------------|  
 |auxiliary|Klasse|Eine Klasse, die eine andere Klasse unterstützt, in der Regel durch das Implementieren von zusätzlicher Logik. Die andere Klasse kann über das Stereotyp «focus» verfügen.|  
 |call|Abhängigkeit|Die Clientklasse ruft die Vorgänge des Lieferanten auf.|  
-|create|Abhängigkeit|Die Clientklasse erstellt Instanzen des Lieferanten.|  
-|create|Nachricht|Der Absender erstellt den Empfänger.|  
-|create|Vorgang|Dieser Vorgang ist ein Konstruktor.|  
+|Erstellen|Abhängigkeit|Die Clientklasse erstellt Instanzen des Lieferanten.|  
+|Erstellen|Meldung|Der Absender erstellt den Empfänger.|  
+|Erstellen|Vorgang|Dieser Vorgang ist ein Konstruktor.|  
 |derive|Abhängigkeit|Das Clientelement wird vollständig oder teilweise aus dem Lieferanten berechnet.|  
 |destroy|Vorgang|Der Vorgang zerstört seine Instanz.|  
-|document|Artefakt|Ein «file», das keine Quelle und keine ausführbare Datei ist.|  
+|Dokument|Artefakt|Ein «file», das keine Quelle und keine ausführbare Datei ist.|  
 |entity|Komponente|Die Komponente stellt ein Geschäftskonzept dar.|  
 |executable|Artefakt|Ein ausführbares «file».|  
 |Datei|Artefakt|Eine physische Datei|  
 |focus|Klasse|Eine Klasse, die die Kerngeschäftslogik definiert, die von mehreren «auxiliary»-Klassen unterstützt wird.|  
-|framework|Package|Dieses Paket definiert ein wiederverwendbares Entwurfsmuster.|  
+|Framework|Package|Dieses Paket definiert ein wiederverwendbares Entwurfsmuster.|  
 |implement|Komponente|Die Implementierung einer «specification».|  
 |implementationClass|Klasse|Die Klasse beschreibt eine Implementierung, und jede Laufzeitinstanz verfügt über eine feste Implementierungsklasse. Gegensatz zu «type».|  
 |instantiate|Abhängigkeit|Der Client erstellt Instanzen des Lieferanten.|  
-|library|Artefakt|Ein Bibliotheks-«file».|  
+|Bibliothek|Artefakt|Ein Bibliotheks-«file».|  
 |metaclass|Klasse|Instanzen dieser Klasse sind ebenfalls Klassen.|  
 |modelLibrary|Package|Enthält Modellelemente, die durch das Importieren von Paketen wiederverwendet werden sollen. In der Regel als Teil eines Profils definiert und durch Anwenden des Profils automatisch importiert.|  
-|process|Komponente|Eine transaktionsbasierte Komponente oder eine Komponente mit einem Thread.|  
+|Prozess|Komponente|Eine transaktionsbasierte Komponente oder eine Komponente mit einem Thread.|  
 |realization|Klasse, Schnittstelle, Komponente|Beschreibe eine Implementierung.|  
 |refine|Abhängigkeit|Die Clientklasse, die Komponente oder das Paket stellt mehr Informationen über die Spezifikation oder den Entwurf bereit als der Lieferant.|  
 |responsibility|Abhängigkeit|Der Kommentar am Lieferantenende der Abhängigkeit definiert die Zuständigkeiten der Clientklasse oder der Komponente.|  
-|script|Artefakt|Ein interpretierbares «file».|  
+|Skript|Artefakt|Ein interpretierbares «file».|  
 |send|Abhängigkeit|Der Quellvorgang sendet das Zielsignal.|  
 |service|Komponente|Eine zustandslose Komponente.|  
 |Quelle|Artefakt|Ein kompilierbares «file».|  
-|specification|Klasse, Schnittstelle, Komponente|Definiert das Verhalten einer Komponente oder eines Objekts, ohne die interne Funktionsweise zu definieren.|  
+|Angabe|Klasse, Schnittstelle, Komponente|Definiert das Verhalten einer Komponente oder eines Objekts, ohne die interne Funktionsweise zu definieren.|  
 |subsystem|Komponente|Ein Teil eines umfangreichen Systems. Ein Subsystem in einem Anwendungsfalldiagramm ist eine Komponente mit dem Stereotyp „subsystem“.|  
 |trace|Abhängigkeit|Das Clientelement ist Teil des Entwurfs für die Realisierung des Lieferanten. Die beiden Enden dieser Abhängigkeit befinden sich in der Regel in unterschiedlichen Modellen. Das eine Modell ist die Realisierung des anderen Modells.|  
 |Typ|Klasse|Gibt das Verhalten eines Objekts an, ohne anzugeben, wie es implementiert wird. Ein Objekt ist ein Member eines Typs, wenn es der Spezifikation entspricht.|  
@@ -145,6 +142,3 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
  [Hinzufügen von Stereotypen zu UML-Modellelementen](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

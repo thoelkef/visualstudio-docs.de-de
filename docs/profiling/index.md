@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Messen der Leistung einer App mithilfe der Profilerstellung | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie Visual Studio für die Profilerstellung der Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.'
+description: Erfahren Sie, wie Sie Visual Studio für die Profilerstellung der Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323007"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Messen der Leistung einer App in Visual Studio
 

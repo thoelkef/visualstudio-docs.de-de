@@ -1,13 +1,8 @@
 ---
 title: 'Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -21,13 +16,13 @@ ms.assetid: ccc80825-a4a0-44fa-a0bb-f95254785a3b
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4dface8e157e44aa09b271446dba68b2779d0a6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745773"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001226"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +103,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
-- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 - [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
@@ -247,7 +242,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |**Code Map oder Diagramm**|**Zeigt Folgendes an**|  
 |------------------------|---------------|  
 |*Code Map*<br /><br /> Thema<br /><br /> -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Abhängigkeiten und andere Beziehungen im Code.<br /><br /> Dinner Now könnte z. B. damit beginnen, Assembly-Code Maps zu überprüfen, um eine Übersicht der Assemblys und ihrer Abhängigkeiten zu erhalten. Sie können in den Code Maps einen Drilldown durchführen, um die Namespaces und Klassen in diesen Assemblys zu untersuchen.<br /><br /> Dinner Now kann auch Code Maps erstellen, um bestimmte Bereiche und andere Arten von Beziehungen im Code zu untersuchen. Sie verwenden den Projektmappen-Explorer, um relevante Bereiche und Beziehungen zu finden und auszuwählen.|  
-|*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
+|*Codebasiertes Klassendiagramm*<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
   
  Beispiel: Die Entwicklerin erstellt eine Code Map. Sie passt den Umfang an, um sich auf die Bereiche zu konzentrieren, die von dem neuen Szenario betroffen sind. Diese Bereiche werden ausgewählt und auf der Code Map hervorgehoben:  
   
@@ -269,7 +264,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |------------------|-------------------|  
 |*Aktivitätsdiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)|Der Ablauf von Schritten, wenn das System erkennt, dass ein Kunde erneut eine Bestellung bei einem Restaurant aufgibt, und der Kunden aufgefordert wird, eine Kritik zu schreiben|  
 |*Klassendiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|Logische Klassen und ihre Beziehungen Beispielsweise wird eine neue Klasse hinzugefügt, um eine **Kritik** und die Beziehungen mit anderen Entitäten zu beschreiben, wie z. B. **Restaurant**, **Menü**und **Kunde**.<br /><br /> Um Kritiken einem Kunden zuzuordnen, muss das System Kundendetails speichern. Ein UML-Klassendiagramm kann helfen, diese Details zu klären.|  
-|*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
+|*Codebasiertes Klassendiagramm*<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
 |*Komponentendiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|Die Teile des Systems auf höherer Ebene, wie z. B. die Dinner Now-Website und ihre Schnittstellen Diese Schnittstellen definieren, wie Komponenten untereinander durch die Methoden oder Dienste interagieren, die sie bereitstellen und nutzen.|  
 |*Sequenzdiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|Die Sequenz der Interaktionen zwischen Instanzen|  
   
@@ -375,7 +370,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 ##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne und Dinner Now müssen ihre Zahlungssysteme integrieren. Die folgenden Abschnitte zeigen die Modellierungsdiagramme in Visual Studio, die beim Ausführen dieser Aufgabe helfen:  
   
-- [Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme](#UnderstandUseCases)  
+- [Verstehen der Benutzeranforderungen: Verwenden von Anwendungsfalldiagrammen](#UnderstandUseCases)  
   
 - [Verstehen des Geschäftsprozesses: Aktivitätsdiagramme](#UnderstandActivities)  
   
@@ -383,7 +378,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Beschreiben der Interaktionen: Sequenzdiagramme](#DescribeSequence)  
   
-- [Visualisieren von vorhandenem Code: Code Maps](#VisualizeCode)  
+- [Visualisieren von vorhandenem Code: Codezuordnungen](#VisualizeCode)  
   
 - [Definieren eines Glossars der Typen: Klassendiagramme](#DefineClasses)  
   
@@ -401,7 +396,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme  
+###  <a name="UnderstandUseCases"></a> Verstehen der Benutzeranforderungen: Verwenden von Anwendungsfalldiagrammen  
  Anwendungsfalldiagramme fassen zusammen, welche Aktivitäten ein System unterstützt und von wem diese ausgeführt werden. Lucerne verwendet ein Anwendungsfalldiagramm, um die folgenden Informationen über das Dinner Now-System zu erhalten:  
   
 - Kunden geben Bestellungen auf.  
@@ -601,7 +596,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Ebenendiagramm|Beschreiben Sie die logische Architektur des Systems in Bezug auf die Komponenten. Stellen Sie durch Ebenenvalidierung sicher, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Thema<br /><br /> -   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|  
 |Aktivitätsdiagramm|Visualisieren Sie die interne Verarbeitung, die Komponenten als Reaktion auf eingehende Nachrichten durchführen.<br /><br /> Thema<br /><br /> -   [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Code Maps  
+###  <a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Codezuordnungen  
  Code Maps zeigen die aktuelle Organisation und die Beziehungen im Code. Elemente werden auf der Code Map durch *Knoten* und Beziehungen durch *Links*dargestellt. Mit Code Maps können Sie die folgenden Arten von Aufgaben ausführen:  
   
 - Untersuchen von unbekanntem Code  
@@ -670,7 +665,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Ebenendiagramm|Die logische Architektur des Systems Stellen Sie durch Ebenenvalidierung sicher, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Erstellen Sie eine Code Map, und gruppieren Sie zugehörige Elemente, um vorhandene oder beabsichtigte Ebenen besser identifizieren zu können. Informationen zum Erstellen eines Ebenendiagramms finden Sie unter:<br /><br /> -   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)|  
 |Komponentendiagramm|Komponenten, ihre Schnittstellen und ihre Beziehungen<br /><br /> Um Komponenten zu identifizieren, erstellen Sie eine Code Map, und gruppieren Sie Elemente nach ihrer Funktion im System.<br /><br /> Thema<br /><br /> -   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|  
 |Klassendiagramm (UML)|Klassen, ihre Attribute und Vorgänge und ihre Beziehungen<br /><br /> Um diese Elemente leichter zu identifizieren, erstellen Sie ein UML-Klassendiagramm, das die betreffenden Elemente zeigt.<br /><br /> Thema<br /><br /> -   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|  
-|Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
+|Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
 ###  <a name="DescribeSequence"></a> Beschreiben der Interaktionen: Sequenzdiagramme  
  Sequenzdiagramme beschreiben eine Reihe von Interaktionen zwischen Teilen eines Systems. Die Teile können beliebig skaliert sein. Sie können z. B. von einzelnen Objekten in einem Programm bis hin zu großen Subsystemen oder externen Akteuren reichen. Skala und Typ der Interaktionen können beliebig sein. Sie können z. B. von einzelnen Nachrichten bis hin zu erweiterten Transaktionen reichen, und es kann sich um Funktionsaufrufe oder Webdienstmeldungen handeln.  
@@ -789,7 +784,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
   
-- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Zusammenfassung: Vorteile von Klassendiagrammen  
  Mit Klassendiagrammen können Sie Folgendes definieren:  
@@ -893,9 +888,6 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
  [Visualisieren von code](../modeling/visualize-code.md)   
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
- [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)   
  [Erweitern von UML-Modellen und -Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

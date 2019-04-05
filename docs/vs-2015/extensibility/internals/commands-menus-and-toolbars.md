@@ -1,14 +1,9 @@
 ---
 title: Befehle, Menüs und Symbolleisten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958848"
 ---
 # <a name="commands-menus-and-toolbars"></a>Befehle, Menüs und Symbolleisten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Menüs und Symbolleisten sind, dass sich Benutzer Befehle im VSPackage zugreifen
   
 - Wenn Sie einen Befehl erstellen, müssen Sie auch einen Ereignishandler für diesen Befehl erstellen. Der Ereignishandler bestimmt, wann der Befehl angezeigt oder aktiviert wird, ermöglicht Ihnen, den zugehörigen Text zu ändern, und stellt sicher, dass der Befehl entsprechend "reagiert", wenn er aktiviert wird. In den meisten Fällen verarbeitet die IDE Befehle mit der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>-Schnittstelle. In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] werden Befehle hierarchisch weitergeleitet, beginnend mit dem innersten Befehlskontext, basierend auf der lokalen Auswahl, bis zum äußersten Kontext, basierend auf der globalen Auswahl. Befehle, die dem Hauptmenü hinzugefügt werden, sind sofort für die Skripterstellung verfügbar. Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) und [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md).  
   
-  Wenn Sie neue Menüs und Symbolleisten definieren möchten, müssen Sie diese in einer VSCT-Datei (Visual Studio Command Table) beschreiben. Diese Datei wird von der Visual Studio-Paketvorlage zusammen mit den erforderlichen Elementen zur Unterstützung der von Ihnen in der Vorlage ausgewählten Befehle, Symbolleisten und Editoren erstellt. Alternativ können Sie Ihre eigene VSCT-Datei mithilfe des unter [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)beschriebenen XML-Schemas schreiben.  
+  Wenn Sie neue Menüs und Symbolleisten definieren möchten, müssen Sie diese in einer VSCT-Datei (Visual Studio Command Table) beschreiben. Diese Datei wird von der Visual Studio-Paketvorlage zusammen mit den erforderlichen Elementen zur Unterstützung der von Ihnen in der Vorlage ausgewählten Befehle, Symbolleisten und Editoren erstellt. Alternativ können Sie Ihre eigene VSCT-Datei schreiben, verwenden hier das XML-Schema beschrieben: [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).  
   
   Weitere Informationen zum Arbeiten mit VSCT-Dateien finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
@@ -69,4 +64,3 @@ Menüs und Symbolleisten sind, dass sich Benutzer Befehle im VSPackage zugreifen
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Befehlsrouting in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
  Erläutert das Befehlsrouting in VSPackages.
-
