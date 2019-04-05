@@ -1,11 +1,8 @@
 ---
 title: Debuggen von Legacyworkflows | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, debugging
@@ -15,13 +12,13 @@ ms.assetid: e6097b47-760a-4b30-a92c-ae70cdbda49f
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5d835ddc84fae24130035f0664d446a73b7ac3f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956681"
 ---
 # <a name="debugging-legacy-workflows"></a>Debuggen von Legacyworkflows
 Wenn Sie mit der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] arbeiten, um [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen für .NET Framework 3.0 oder 3.5 zu erstellen, können Sie die Workflows genau wie jedes andere Programm debuggen, indem Sie Haltepunkte festlegen, Anfügungen an Prozesse vornehmen und Threads und die Aufrufliste überprüfen. Sie haben auch die Möglichkeit, remote zu debuggen.  
@@ -38,11 +35,11 @@ Wenn Sie mit der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] 
   
  [!INCLUDE[wf2](../includes/wf2-md.md)] kann in die folgenden standardmäßigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugfenster integriert werden:  
   
-- **Haltepunkt**: funktioniert wie erwartet, aber es eine Aktivität für den Namen der Funktion anzugeben.  
+- **Breakpoint**: Wie erwartet funktioniert, aber es eine Aktivität für den Namen der Funktion anzugeben.  
   
-- **Aufrufliste**: geändert, um einen Überblick über die Aktivitäten bereitstellen, die in einer Workflowinstanz ausgeführt wurden. Die Einträge in der **Aufrufliste** Fenster sind eine Tiefensuche der ausgeführten Aktivitäten. Sie können auf einen Eintrag doppelklicken, um den Fokus auf die ausgewählte Aktivität zu lenken.  
+- **Aufrufliste**: So geben Sie einen Überblick über die Aktivitäten, die in einer Workflowinstanz ausgeführt wurden geändert. Die Einträge in der **Aufrufliste** Fenster sind eine Tiefensuche der ausgeführten Aktivitäten. Sie können auf einen Eintrag doppelklicken, um den Fokus auf die ausgewählte Aktivität zu lenken.  
   
-- **Threads**: stellt die Instanz-ID der Workflowinstanz, die gedebuggt wird.  
+- **Threads**: Stellt die Instanz-ID der Workflowinstanz, die gedebuggt wird.  
   
   Die folgenden Debugfunktionen werden von Visual Studio für Windows Workflow Foundation nicht unterstützt.  
   

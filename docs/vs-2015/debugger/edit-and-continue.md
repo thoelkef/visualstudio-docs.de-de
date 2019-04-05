@@ -1,14 +1,9 @@
 ---
 title: Bearbeiten und fortfahren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a82d3e22eec449e499f845965ad8c838600d9ea3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955537"
 ---
 # <a name="edit-and-continue"></a>Bearbeiten und Fortfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,13 @@ Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen 
   
  Dieser Abschnitt schließt folgende Themen ein:  
   
- [Vorgehensweise: Explizites übernehmen von Codeänderungen](http://msdn.microsoft.com/en-us/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Vorgehensweise: Explizites übernehmen von Codeänderungen](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
- [Gewusst wie: Aktivieren und Deaktivieren von "Bearbeiten und Fortfahren"](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Vorgehensweise: Enable and Disable Edit and Continue (Vorgehensweise: Aktivieren und Deaktivieren von „Bearbeiten und Fortfahren“)](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
- [Gewusst wie: Anhalten von Codeänderungen](../debugger/how-to-stop-code-changes.md)  
+ [Vorgehensweise: Stop Code Changes (Vorgehensweise: Anhalten von Codeänderungen)](../debugger/how-to-stop-code-changes.md)  
   
- [Ausführungspunkt](http://msdn.microsoft.com/en-us/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Ausführungspunkt](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -59,9 +54,6 @@ Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen 
  [Bearbeiten und Fortfahren wird für F# nicht unterstützt](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
-
-
-

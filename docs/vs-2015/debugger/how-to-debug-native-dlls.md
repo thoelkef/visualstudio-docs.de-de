@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Debuggen von nativen DLLs | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffc4f0b58bacdc71439a89dce711575a103c71cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757476"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956266"
 ---
-# <a name="how-to-debug-native-dlls"></a>Gewusst wie: Debuggen von systemeigenen DLLs
+# <a name="how-to-debug-native-dlls"></a>Vorgehensweise: Debuggen von systemeigenen DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Das Debuggen einer DLL kann über die folgenden Projekte gestartet werden:  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51757476"
   
 - Über das Projekt, durch das die DLL selbst erstellt wurde.  
   
-  Falls das Projekt, mit dem die ausführbare Datei erstellt wurde, verfügbar ist, starten Sie den Debugvorgang über dieses Projekt. Sie können dann eine Quelldatei für die DLL öffnen und in dieser Datei Haltepunkte festlegen. Dies gilt auch, wenn die Datei nicht dem Projekt angehört, mit dem die ausführbare Datei erstellt wurde. Weitere Informationen finden Sie unter [Haltepunkte](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Falls das Projekt, mit dem die ausführbare Datei erstellt wurde, verfügbar ist, starten Sie den Debugvorgang über dieses Projekt. Sie können dann eine Quelldatei für die DLL öffnen und in dieser Datei Haltepunkte festlegen. Dies gilt auch, wenn die Datei nicht dem Projekt angehört, mit dem die ausführbare Datei erstellt wurde. Weitere Informationen finden Sie unter [Breakpoints (Haltepunkte)](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
   Wenn Sie den Debugvorgang über das Projekt starten, mit dem die DLL erstellt wird, müssen Sie die ausführbare Datei angeben, die beim Debuggen der DLL verwendet werden soll.  
   
@@ -68,8 +63,5 @@ ms.locfileid: "51757476"
    Wenn Sie nicht die ausführbare Datei in angeben der _Projekt_**Eigenschaftenseiten** im Dialogfeld die [ausführbare für Dialogfeld "Sitzung" Debuggen](../debugger/executable-for-debugging-session-dialog-box.md) angezeigt wird, wenn Sie das Debuggen starten.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

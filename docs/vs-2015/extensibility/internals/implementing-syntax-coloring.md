@@ -1,14 +1,9 @@
 ---
 title: Implementieren von Syntaxfarben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956527"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gibt keine Parser-Schnittstelle, und der Parser-Implementierung steht Ihnen völlig frei. Allerdings wird eine Standardimplementierung der Parser in das Sprachpaket für Visual Studio-Projekt bereitgestellt. Für verwalteten Code bietet das managed Package Framework (MPF) vollständige Unterstützung für die farbliche Kennzeichnung von Text an.  
   
- Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren von Syntaxfarben finden Sie unter [Exemplarische Vorgehensweise: Hervorheben von Text](../../extensibility/walkthrough-highlighting-text.md).  
+ Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren von Syntaxfarben finden Sie unter [Exemplarische Vorgehensweise: Markieren von Text](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
 >  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
@@ -74,4 +69,3 @@ Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der
  [Benutzerdefinierte kolorierbare Elemente](../../extensibility/internals/custom-colorable-items.md)   
  [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

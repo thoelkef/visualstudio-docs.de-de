@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggings | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Wechseln Sie zu einem anderen Thread während des Debuggings | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad13c81afc82ac69055ae117c862a1cf73b51478
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5fa84d46d64db048b58d0fcdb1c433b4830a5f45
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737710"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58955937"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Vorgehensweise: Wechseln Sie zu einem anderen Thread während des Debuggings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Beim Debuggen einer Multithreadanwendung können Sie verschiedene Methoden verwenden, um vom Kontext des bearbeiteten Threads zu einem anderen Thread zu wechseln.  
@@ -51,6 +46,3 @@ Beim Debuggen einer Multithreadanwendung können Sie verschiedene Methoden verwe
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

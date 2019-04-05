@@ -1,25 +1,20 @@
 ---
 title: Halb-/ Viertel-Textur Dimensionen Variante | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955733"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Halb-/Viertel-Texturdimensionsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
  Diese Variante ändert die Größe von Texturen vor dem Aufruf von `CreateTexture2D`. Wir empfehlen bei diesem Ansatz die Verwendung eines Produktionscodes, da die Texturen in vollständiger Größe mehr Speicherplatz verbrauchen und der zusätzliche Schritt die Ladezeiten in Ihrer App bedeutend in die Länge ziehen kann – insbesondere bei komprimierten Texturen, für denen Kodierung beträchtliche Computerressourcen erforderlich sind. Wir empfehlen, die Größe Ihrer Texturen stattdessen mithilfe eines Bildeditors oder Bildprozessors, der Teil Ihrer Erstellungspipeline ist, offline zu ändern. Diese Ansätze reduzieren Speicheranforderungen, eliminieren den Laufzeit-Overhead in Ihrer App und wenden mehr Bearbeitungszeit auf, sodass Sie die beste Bildqualität erreichen, wenn Sie Ihre Texturen verkleinern oder komprimieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [MipMap-Generierungsvariante](../debugger/mip-map-generation-variant.md)   
+ [Mipmap-Generierungsvariante](../debugger/mip-map-generation-variant.md)   
  [BC-Texturkomprimierungsvariante](../debugger/bc-texture-compression-variant.md)
-
-
-

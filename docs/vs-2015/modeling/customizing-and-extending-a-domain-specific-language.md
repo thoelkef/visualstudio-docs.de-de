@@ -1,25 +1,22 @@
 ---
 title: Anpassen und Erweitern einer domänenspezifischen Sprache | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957011"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,14 +58,14 @@ Visual Studio-Modellierung und Visualisierung SDK (VMSDK) bietet mehrere Ebenen,
 |Löschen, Neuzuordnen des übergeordneten Elements oder verwandten Elemente neu verknüpfen, wenn ein Element gelöscht wird.|Legen Sie die **löschen weitergeben** Wert, der eine Rolle. Für komplexere Auswirkungen, außer Kraft setzen `ShouldVisitRelationship` und `ShouldVisitRolePlayer` Methoden in der `MyDslDeleteClosure` in definierte Klasse **"domainmodel.cs"**<br /><br /> Finden Sie unter [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md)|  
 |Behalten Sie die Shape-Layout und die Darstellung zu kopieren und Drag & Drop.|Hinzufügen von Formen und Konnektoren zu den kopierten `ElementGroupPrototype`. Ist die einfachste Methode zum Überschreiben `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Finden Sie unter [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md).|  
 |Fügen Sie Formen an einer ausgewählten Stelle ein, beispielsweise an der aktuelle Cursorposition.|Außer Kraft setzen `ClipboardCommandSet.ProcessOnCopy()` verwenden die positionsspezifische Version von `ElementOperations.Merge().` finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md).|  
-|Erstellen Sie weitere Links einfügen|ClipboardCommandSet.ProcessOnPasteCommand() überschreiben|  
-|Aktivierung der Drag & ein, und legen Sie in diesem Diagramm andere DSLs oder UML-Diagramme und Windows-Elemente|Finden Sie unter [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Erstellen Sie weitere Links einfügen|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Aktivierung der Drag & ein, und legen Sie in diesem Diagramm andere DSLs oder UML-Diagramme und Windows-Elemente|Weitere Informationen finden Sie unter [How to: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Können Sie eine Form oder das Tool auf einer untergeordneten Form, wie z. B. einen Port, gezogen werden, als ob sie auf das übergeordnete Element gezogen wurden.|Definieren Sie eine Direktive für Elementzusammenführungen für die Klasse des Ziel-Objekt, das abgelegte Objekt an dem übergeordnete Element weitergeleitet. Finden Sie unter [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md).|  
 |Ermöglichen einer Form oder ein Tool, um auf eine Form gezogen werden und verfügen über zusätzliche Links oder Objekte erstellt. Geben Sie beispielsweise Folgendes ein, um einen Kommentar an, auf ein Element abgelegt werden, für die sie verknüpft werden, wird, zu ermöglichen.|Definieren Sie auf die zieldomänenklasse eine Direktive für Elementzusammenführungen, und definieren Sie die Links generiert werden soll. In komplexen Fällen können Sie benutzerdefinierten Code hinzufügen. Finden Sie unter [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md).|  
 |Erstellen Sie eine Gruppe von Elementen mit einem Tool aus. Z. B. eine Komponente mit einem festen Satz von Ports.|Überschreiben Sie die Toolbox Initialisierungsmethode in "toolboxhelper.cs". Erstellen Sie ein Element Gruppe Prototyp (EGP), die die Elemente und ihre beziehungslinks enthält. Finden Sie unter [Anpassen der Tools und der Toolbox](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Schließen Sie die Dienstprinzipal und die Portnummer Formen in der EGP oder definieren Sie BoundsRules, um die Anschluss-Formen zu positionieren, wenn die EGP instanziiert wird. Finden Sie unter [BoundsRules schränken Position und Größe](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Verwenden Sie ein Verbindungstool, um verschiedene Typen von Beziehungen zu instanziieren.|Fügen Sie den Verbindungs-Generator, der vom Tool aufgerufen wird Link verbinden Direktiven LCD-hinzu. Die LCDs bestimmen Sie den Typ der Beziehung aus den Typen der beiden Elemente. Um dies die Zustände der Elemente abhängig machen, können Sie benutzerdefinierten Code hinzufügen. Finden Sie unter [Anpassen der Tools und der Toolbox](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Kurznotiz Tools – kann der Benutzer ein Tool zum Erstellen von vielen Formen oder-Verbinder in Folge doppelklicken.|Wählen Sie im DSL-Explorer die `Editor` Knoten. Legen Sie im Eigenschaftenfenster **Kurznotiz Toolboxelemente verwendet**.|  
-|Definieren von Menübefehlen|Finden Sie unter [Vorgehensweise: ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Definieren von Menübefehlen|Weitere Informationen finden Sie unter [How to: Ändern eines Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Das Modell mit Validierungsregeln zu beschränken|Finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md)|  
 |Generieren Sie Code, Konfigurationsdateien oder Dokumenten aus einer DSL.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Anpassen, wie die Modelle gespeichert werden, die Datei.|Finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ Visual Studio-Modellierung und Visualisierung SDK (VMSDK) bietet mehrere Ebenen,
  [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
  [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

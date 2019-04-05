@@ -1,26 +1,21 @@
 ---
 title: Übersicht über das Eigenschaftenfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752100"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58956018"
 ---
 # <a name="properties-window-overview"></a>Übersicht über Eigenschaftenfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für O
 |Schnittstellenname|Beschreibung|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Enthält eine Liste der Kategorien für die **Eigenschaften** Fenster und ordnet jede Eigenschaft zu einer Kategorie.|  
-|[IDispatch-Schnittstelle](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Macht Methoden und Eigenschaften für die Programmierung von Tools und andere Anwendungen, die Unterstützung der Automatisierung des Objekts.|  
+|[IDispatch-Schnittstelle](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Macht Methoden und Eigenschaften für die Programmierung von Tools und andere Anwendungen, die Unterstützung der Automatisierung des Objekts.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Stellt mit den Auslassungspunkten (...)-Schaltflächen namens *Generatoren* öffnen, die Sie modalen Dialogfeldern, die durch das Objekt selbst implementiert. Verwendet, wenn ein Wert vom Benutzer in einem Textfeld einfach nicht typisiert ist. Beispielsweise kann verwendet werden, um ein Farbwähler zu öffnen, der den RGB-Wert für Sie bestimmt.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Bietet Zugriff auf Objekte, die zum Aktualisieren von Informationen in den **Eigenschaften** Fenster. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird von VSPackages für jedes Fenster implementiert, auswählbaren Objekte mit verwandten Eigenschaften, die angezeigt werden enthält.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Enthält Informationen zu den Typ eines Objekts, z. B. Methoden einer Schnittstelle und Felder einer Struktur.|  
@@ -58,4 +53,3 @@ Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für O
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)   
  [Felder und Schnittstellen des Eigenschaftenfensters](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-
