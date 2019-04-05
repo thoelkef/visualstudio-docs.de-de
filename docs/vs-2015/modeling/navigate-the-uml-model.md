@@ -1,25 +1,22 @@
 ---
 title: Navigieren im UML-Modell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958057"
 ---
 # <a name="navigate-the-uml-model"></a>Navigieren im UML-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
   
  Wenn Sie ein Element aus dem Modell löschen, werden alle Beziehungen, in denen es vorkommt, automatisch gelöscht, und die Eigenschaft am anderen Ende wird aktualisiert.  
   
- Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit Maximalwert als 1 bedeutet, dass die .NET-Eigenschaft den Typ hat: `IEnumerable<` *Typ*`>`.  
+ Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit Maximalwert als 1 bedeutet, dass die .NET-Eigenschaft den Typ hat: `IEnumerable<`*Typ*`>`.  
   
  Weitere Informationen zum Durchsuchen von Beziehungen finden Sie unter [Navigieren in Beziehungen mit der UML-API](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)
-
-
-

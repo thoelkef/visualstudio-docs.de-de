@@ -1,13 +1,8 @@
 ---
 title: Navigieren im Code mit dem Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957496"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navigieren im Code mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
 -   **Manuelles Unterbrechen im Code**  
   
-     Um die Ausführung einer Anwendung in der nächsten verfügbaren Codezeile zu unterbrechen, wählen Sie **Debuggen**, **Alle unterbrechen** (Tastatur: **Ctrl+Alt+Break**).  
+     Um in den nächsten verfügbaren Codezeile Ausführung einer Anwendung zu unterbrechen, wählen **Debuggen**, **alle unterbrechen** (Tastatur: **Strg + Alt + UNTBR**).  
   
      Wenn Sie die Ausführung von Code ohne zugehörige Quell- oder Symboldateien (PDB-Dateien) unterbrechen, wird im Debugger die Seite **Die Quelldatei wurde nicht gefunden** oder **Symbol nicht gefunden** geöffnet, auf der Sie die entsprechenden Dateien suchen können. Weitere Informationen finden Sie unter [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie nicht auf die zugehörigen Hilfsdateien zugreifen können, können Sie dennoch die Assemblyanweisungen im Disassemblyfenster debuggen.  
   
@@ -134,7 +129,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Bewegen Sie den Mauszeiger, um den Ausführungsfluss zu ändern.  
  Während der Debugger angehalten wird, können Sie den Anweisungszeiger Festlegen der nächsten Anweisung der Ausführung von Code verschieben. Die Position der nächsten auszuführenden Anweisung wird durch eine gelbe Pfeilspitze am Rand eines Quellcodefensters oder Disassemblierungsfensters markiert. Durch das Verschieben dieser Pfeilspitze können Sie einen Teil des Codes überspringen oder zu einer bereits ausgeführten Zeile zurückkehren. Dies ist zum Beispiel sinnvoll, um einen Codeabschnitt zu überspringen, von dem bereits bekannt ist, dass er einen Fehler enthält.  
   
- !["Example2"](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
+ ![Example2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
   
  Zum Festlegen der nächsten auszuführenden Anweisung verwenden Sie eines der folgenden Verfahren:  
   
@@ -181,7 +176,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
  So laden Sie Symbole für eine bestimmte Systemkomponente während des Debuggings:  
   
-1.  Öffnen Sie das Fenster "Module" (Tastatur: **Ctrl+Alt+U**).  
+1.  Öffnen Sie das Fenster "Module" (Tastatur: **Strg + Alt + U**).  
   
 2.  Wählen Sie das Modul aus, für das Sie Symbole laden möchten.  
   
@@ -191,8 +186,3 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code  
  Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie zum Aktivieren von Eigenschaften oder Operatoren schrittweise **Debuggen** / **Optionen**. Deaktivieren Sie auf der Seite **Debuggen** / **Allgemein** das Kontrollkästchen **Eigenschaften und Operatoren überspringen (nur verwaltet)** .
-
-
-
-
-

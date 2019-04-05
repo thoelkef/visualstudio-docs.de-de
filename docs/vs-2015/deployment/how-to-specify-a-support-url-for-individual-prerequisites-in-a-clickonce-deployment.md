@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957740"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Gewusst wie: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstellung können Sie für eine Reihe von Voraussetzungen, die auf dem Clientcomputer für verfügbar sein müssen die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung ausgeführt. Dazu gehören die erforderliche Mindestversion von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (GAC) vorinstalliert sein müssen. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], kann jedoch nicht installiert diese erforderlichen Komponenten selbst Wenn eine erforderliche Komponente nicht gefunden wird, wird die Installation angehalten es einfach an und zeigt ein Dialogfeld, die erläutern, warum Fehler bei der Installation an.  
@@ -67,7 +62,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,7 +79,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
     </compatibleFrameworks>  
     ```  
   
-7.  Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden Sie Mage.exe oder MageUI.exe SDK-tools zum Ausführen dieser Aufgabe, als diese Dateien mithilfe von Neugenerieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden Sie Mage.exe oder MageUI.exe SDK-tools zum Ausführen dieser Aufgabe, als diese Dateien mithilfe von Neugenerieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
  Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit markiert ist.  
@@ -95,6 +90,3 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
  [\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)
-
-
-

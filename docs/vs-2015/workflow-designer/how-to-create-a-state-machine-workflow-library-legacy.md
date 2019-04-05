@@ -1,11 +1,8 @@
 ---
 title: 'Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, state machine workflow library
@@ -15,15 +12,15 @@ ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 9f813df11fdc787455c1c435a53cff2e074612a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f1f972903cadf6a918b34b1d0fbed560bd26606f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189935"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957803"
 ---
-# <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)
+# <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Vorgehensweise: Erstellen einer Zustandsautomatworkflow-Bibliothek (Vorgängerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine Zustandsautomatworkflowbibliothek mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] zu erstellen, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
   
 ### <a name="to-create-a-state-machine-workflow-library-project"></a>So erstellen Sie ein Projekt für eine Zustandsautomatworkflowbibliothek:  

@@ -1,14 +1,9 @@
 ---
 title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7f4f03d461422b4f1423e6ef63cd7b3653234257
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dd454873fb6a81e66efa99ed68007408f87ff824
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955873"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Gibt an, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktivi
   
  \<VSTemplate>  
  \<TemplateData>  
- \<SupportsCodeSeparation >  
+ \<SupportsCodeSeparation>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -95,4 +90,3 @@ Gibt an, ob die **Code in eigener Datei platzieren** Kontrollkästchen in aktivi
 ## <a name="see-also"></a>Siehe auch  
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-

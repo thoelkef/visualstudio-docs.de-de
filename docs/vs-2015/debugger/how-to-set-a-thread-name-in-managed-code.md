@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,18 +18,18 @@ ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 585c372a5ffcb71fcc8a2f7e56bb95380b3c41ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729528"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58955986"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Gewusst wie: Festlegen eines Threadnamens in verwaltetem Code
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Benennen von Threads ist nützlich für das Verfolgen von Threads in der **Threads** Fenster. Da die **Threads** nicht in den Visual Studio Express-Editionen verfügbar ist, ist ein kleines Hilfsprogramm Benennen von Threads in Express-Editionen.  
+Das Benennen von Threads ist in allen Editionen von Visual Studio möglich. Das Benennen von Threads ist hilfreich beim Verfolgen von Threads im Fenster **Threads**. Da die **Threads** nicht in den Visual Studio Express-Editionen verfügbar ist, ist ein kleines Hilfsprogramm Benennen von Threads in Express-Editionen.  
   
  Um einen Threadnamen in verwaltetem Code festzulegen, verwenden Sie die <xref:System.Threading.Thread.Name%2A>-Eigenschaft.  
   
@@ -62,7 +57,4 @@ End Sub
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Gewusst wie: Festlegen eines Threadnamens in nativem Code](../debugger/how-to-set-a-thread-name-in-native-code.md)
-
-
-
+ [Vorgehensweise: Festlegen eines Threadnamens in nativem Code](../debugger/how-to-set-a-thread-name-in-native-code.md)

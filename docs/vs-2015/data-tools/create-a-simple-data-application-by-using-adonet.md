@@ -1,12 +1,9 @@
 ---
 title: Erstellen eine einfachen datenanwendung mit ADO.NET | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +13,15 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824281"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58957705"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen datenanwendung mit ADO.NET
+# <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -71,7 +68,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
   
     Visual Studio erstellt das Projekt und mehrere Dateien, einschließlich eines leeren Windows-Formulars namens "Form1".  
   
-2. Hinzufügen von zwei Windows Forms zu Ihrem Projekt so, dass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:  
+2. Fügen Sie dem Projekt zwei Windows-Formulare hinzu, sodass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:  
   
    -   Navigation  
   
@@ -227,7 +224,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
  Dieser Abschnitt enthält kurze Übersichten über den Zweck der einzelnen Formulare sowie den Code, der die Formulare erstellt. Nummerierte Kommentare kennzeichnen die Codeabschnitte.  
   
 ### <a name="navigation-form"></a>Navigationsformular  
- Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die **Hinzufügen eines Kontos** Schaltfläche öffnet das NewCustomer-Formular. Die **ausfüllen oder Abbrechen** Schaltfläche öffnet das FillOrCancel-Formular. Die **beenden** Schaltfläche wird die Anwendung geschlossen.  
+ Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die Schaltfläche **Konto hinzufügen** öffnet das NewCustomer-Formular. Die Schaltfläche **Auftrag ausfüllen oder abbrechen** öffnet das FillOrCancel-Formular. Die Schaltfläche **Beenden** schließt die Anwendung.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Das Navigationsformular als Startformular festlegen  
  Wenn Sie c# in nutzen **Projektmappen-Explorer**, öffnen Sie die Datei "Program.cs", und ändern Sie dann die `Application.Run` Zeile: `Application.Run(new Navigation());`  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Testen Sie Ihre Anwendung  
  Wählen Sie die F5-Taste zum Erstellen und Testen Ihre Anwendung aus, nachdem Sie die einzelnen Click-Ereignishandler code und dann nach dem Abschluss der Codierung.
-

@@ -1,12 +1,9 @@
 ---
 title: Erstellen von UML-Modellierungsprojekten und-Diagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956456"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 |**Problem**|**Bewirkt, dass**|**Auflösung**|  
 |---------------|----------------|--------------------|  
-|Das Modellierungsprojekt kann nicht geöffnet oder in der Projektmappe geladen werden.<br /><br /> Folgende Meldung wird angezeigt:<br /><br /> "Ein oder mehrere Projekte in der Projektmappe wurden nicht ordnungsgemäß geladen. Details finden Sie im Ausgabefenster."<br /><br /> Im Ausgabefenster wird die folgende Meldung angezeigt:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: Fehler: Unbekanntes Guid-Format."|Ein Modellierungsprojekt enthält Verweise auf Projekte, die den gleichen Namen haben und in der gleichen Projektmappe vorkommen.<br /><br /> Beispielsweise ist eine Ebene mit Projekten verknüpft, die den gleichen Namen haben und in der gleichen Projektmappe vorhanden sind.|Verwenden Sie einen Text-Editor, öffnen Sie die Datei, entfernen Sie die Verweise, und versuchen Sie erneut, das Modellierungsprojekt zu öffnen.<br /><br /> Um dieses Problem zu vermeiden, fügen Sie keine Verweise auf Projekte hinzu, die den gleichen Namen haben. Stellen Sie sicher, dass Projekte über eindeutige Namen verfügen.|  
-|Es fehlen Elemente aus Diagrammen, die hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden.<br /><br /> - oder - <br /><br /> Wenn Sie versuchen, ein Diagramm zu öffnen, werden die folgenden Meldungen angezeigt:<br /><br /> -"Einige Formen oder Konnektoren im Diagramm fehlen, da ihre Definitionen in diesem Projekt nicht vorhanden sind. Entweder die Definitionen wurden aus dem Modell gelöscht, während das Diagramm geschlossen war, oder das Diagramm wurde in ein anderes Projekt kopiert, das diese Definitionen nicht enthält."<br /><br /> - oder -<br /><br /> -"In diesem Dokument wird von einem anderen Projekt geöffnet."|Die Diagrammdatei wurde hinzugefügt, gezogen oder aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an einen anderen Speicherort in der Projektmappe kopiert.|Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm.|  
+|Das Modellierungsprojekt kann nicht geöffnet oder in der Projektmappe geladen werden.<br /><br /> Folgende Meldung wird angezeigt:<br /><br /> "Ein oder mehrere Projekte in der Projektmappe wurden nicht ordnungsgemäß geladen. Details finden Sie im Ausgabefenster."<br /><br /> Im Ausgabefenster wird die folgende Meldung angezeigt:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: error: Unrecognized Guid format."|Ein Modellierungsprojekt enthält Verweise auf Projekte, die den gleichen Namen haben und in der gleichen Projektmappe vorkommen.<br /><br /> Beispielsweise ist eine Ebene mit Projekten verknüpft, die den gleichen Namen haben und in der gleichen Projektmappe vorhanden sind.|Verwenden Sie einen Text-Editor, öffnen Sie die Datei, entfernen Sie die Verweise, und versuchen Sie erneut, das Modellierungsprojekt zu öffnen.<br /><br /> Um dieses Problem zu vermeiden, fügen Sie keine Verweise auf Projekte hinzu, die den gleichen Namen haben. Stellen Sie sicher, dass Projekte über eindeutige Namen verfügen.|  
+|Es fehlen Elemente aus Diagrammen, die hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden.<br /><br /> - oder -<br /><br /> Wenn Sie versuchen, ein Diagramm zu öffnen, werden die folgenden Meldungen angezeigt:<br /><br /> -"Einige Formen oder Konnektoren im Diagramm fehlen, da ihre Definitionen in diesem Projekt nicht vorhanden sind. Entweder die Definitionen wurden aus dem Modell gelöscht, während das Diagramm geschlossen war, oder das Diagramm wurde in ein anderes Projekt kopiert, das diese Definitionen nicht enthält."<br /><br /> - oder -<br /><br /> -"In diesem Dokument wird von einem anderen Projekt geöffnet."|Die Diagrammdatei wurde hinzugefügt, gezogen oder aus einem Modellierungsprojekt in ein anderes Modellierungsprojekt oder an einen anderen Speicherort in der Projektmappe kopiert.|Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   
  [Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '&lt;InstallChecks&gt; -Element (Bootstrapper) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 03f489c22c8912e332f7d01e6ec4ac48aacda30b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958323"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |`PackageFile`|Erforderlich. Das externe Programm ausgeführt werden soll. Das Programm muss Teil des Setuppakets Verteilung sein.|  
 |`Arguments`|Dies ist optional. Gibt Befehlszeilenargumente an die ausführbare Datei mit dem Namen von `PackageFile`.|  
   
-## <a name="filecheck"></a>Menüoptionen Datei  
+## <a name="filecheck"></a>FileCheck  
  Dieses Element ist ein optionales untergeordnetes Element des `InstallChecks`. Für jede Instanz der `FileCheck`, der Bootstrapper bestimmen, ob die angegebene Datei vorhanden ist, und geben Sie die Versionsnummer der Datei zurück. Wenn Sie eine Versionsnummer in der Datei nicht vorhanden ist, legt der Bootstrapper die Eigenschaft mit dem Namen von `Property` auf 0. Wenn die Datei nicht vorhanden ist, `Property` nicht auf einen beliebigen Wert festgelegt ist.  
   
  `FileCheck` keine Elemente enthält, und weist folgende Attribute.  
@@ -175,7 +170,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |Eigenschaft|Hinweise|Mögliche Werte|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Die Versionsnummer des Betriebssystems Windows 9 X.|4.10 = Windows 98|  
-|`VersionNT`|Die Versionsnummer des Betriebssystems Windows NT-basierten.|"Major.minor.Servicepack"<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = WindowsServer 2003|  
+|`VersionNT`|Die Versionsnummer des Betriebssystems Windows NT-basierten.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = WindowsServer 2003|  
 |`VersionNT64`|Die Versionsnummer eines 64-Bit-Windows NT-basierten Windows-Betriebssystems.|Wie bereits zuvor erwähnt.|  
 |`VersionMsi`|Die Versionsnummer des Windows Installer-Diensts.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|Gibt an, ob ein Benutzer über Administratorrechte auf einem Windows NT-basierten Betriebssystem verfügt.|0 = keine Administratorrechte<br /><br /> 1 = Administratorrechte|  
@@ -190,6 +185,3 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 ## <a name="see-also"></a>Siehe auch  
  [\<Befehle >-Element](../deployment/commands-element-bootstrapper.md)   
  [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
-
-
-
