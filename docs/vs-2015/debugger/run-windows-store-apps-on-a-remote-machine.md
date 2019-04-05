@@ -1,14 +1,9 @@
 ---
 title: Führen Sie Windows Store-apps auf einem Remotecomputer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946921"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Ausführen von Windows Store-Apps auf einem Remotecomputer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -173,11 +168,8 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 ##  <a name="BKMK_RunRemoteDebug"></a> Ausführen einer Remotedebugsitzung  
  Sie starten, beenden und navigieren eine Remotedebugsitzung genauso wie eine lokale Sitzung. Bevor Sie mit dem Debuggen beginnen, stellen Sie sicher, dass der Remotedebugmonitor auf dem Remotegerät ausgeführt wird.  
   
- Wählen Sie anschließend im Menü **Debuggen** (Tastatur: F5) die Option **Debuggen starten** aus. Das Projekt wird neu kompiliert, anschließend für das Remotegerät bereitgestellt und darauf gestartet . An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können Ihren Code schrittweise ausführen, ihn überspringen oder verlassen. Wählen Sie **Debuggen beenden** aus, um Ihre Debugsitzung zu beenden, und schließen Sie die Remoteapp. Weitere Informationen finden Sie unter [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Wählen Sie dann **Debuggen starten** auf die **Debuggen** Menü (Tastatur: F5) aus. Das Projekt wird neu kompiliert, anschließend für das Remotegerät bereitgestellt und darauf gestartet . An Haltepunkten unterbricht der Debugger die Ausführung, und Sie können Ihren Code schrittweise ausführen, ihn überspringen oder verlassen. Wählen Sie **Debuggen beenden** aus, um Ihre Debugsitzung zu beenden, und schließen Sie die Remoteapp. Weitere Informationen finden Sie unter [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Testen von Store-Apps mit Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debuggen von Apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

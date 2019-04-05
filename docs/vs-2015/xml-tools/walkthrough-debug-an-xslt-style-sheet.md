@@ -1,25 +1,20 @@
 ---
-title: 'Exemplarische Vorgehensweise: Debuggen ein XSLT-Stylesheets | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946359"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung 
   
 2.  Kopieren Sie die zwei Beispieldateien auf den lokalen Computer.  
   
-## <a name="start-debugging"></a>Starten des Debuggens  
+## <a name="start-debugging"></a>Debugging starten  
   
 #### <a name="to-start-debugging"></a>So starten Sie das Debuggen  
   
@@ -161,4 +156,3 @@ Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung 
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von XSLT](../xml-tools/debugging-xslt.md)
-

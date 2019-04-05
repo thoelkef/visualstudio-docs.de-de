@@ -1,26 +1,21 @@
 ---
 title: Auswählen des Installationsverzeichnisses für ein VSPackage | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 385877b8a682574946bfd43e1e51acd771d00a2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946691"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Auswählen des Installationsverzeichnisses für ein VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +25,17 @@ Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benu
 ## <a name="unmanaged-vspackages"></a>Nicht verwaltete VSPackages  
  Eine nicht verwaltete VSPackage ist ein COM-Server, der an einem beliebigen Speicherort installiert werden kann. Registrierungsinformationen muss genau widerspiegelt, den Speicherort. Der Installer-Benutzeroberfläche (UI) sollte es sich um einen Standardspeicherort als Unterverzeichnis der ProgramFilesFolder Windows Installer-Eigenschaft bereitstellen. Zum Beispiel:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\  
   
  Der Benutzer sollte ermöglicht werden, ändern das Standardverzeichnis, um Benutzern zu ermöglichen, die eine kleine Startpartition zu halten, und Anwendungen und Tools auf einem anderen Volume installieren möchten.  
   
  Wenn das Schema für die Seite-an-Seite eine mit versionsverwaltung durch das VSPackage verwendet, können Sie Unterverzeichnisse, um verschiedene Versionen zu speichern. Zum Beispiel:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2002\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2002\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2003\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2003\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2005\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>Verwaltete VSPackages  
  Verwaltete VSPackages können auch an einem beliebigen Speicherort installiert werden. Allerdings sollten Sie immer installiert werden, im globalen Assemblycache (GAC), um die Assembly Ladezeiten zu reduzieren. Da verwaltete VSPackages immer Assemblys mit starkem Namen sind, bedeutet, dass im GAC installieren, dass die Überprüfung der Signatur mit starkem Namen nur zum Installationszeitpunkt dauert. Assemblys mit starkem Namen an anderer Stelle im Dateisystem installiert müssen die Signaturen überprüft jedes Mal, wenn sie geladen werden. Wenn Sie verwaltete VSPackages im GAC installieren, verwenden Sie des Regpkg-Tools **/Assembly** Switch zum Schreiben der Registrierungseinträge auf dem starken Namen der Assembly verweist.  
@@ -69,5 +64,4 @@ Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benu
 ## <a name="see-also"></a>Siehe auch  
  [Auswählen zwischen freigegebenen und mit versionsverwaltung durch das VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Verwalten von VSPackages](../../extensibility/managing-vspackages.md)   
- [Managed Package-Registrierung](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Managed Package-Registrierung](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
