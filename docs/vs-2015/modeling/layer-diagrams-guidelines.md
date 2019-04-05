@@ -1,12 +1,9 @@
 ---
 title: 'Ebenendiagramme: Richtlinien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962056"
 ---
 # <a name="layer-diagrams-guidelines"></a>Ebenendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-layer-diagram"></a>Was ist ein Ebenendiagramm?  
- In einem Ebenendiagramm werden wie in einem herkömmlichen Architekturdiagramm die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten identifiziert. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekte oder andere Artefakte. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md).  
+ In einem Ebenendiagramm werden wie in einem herkömmlichen Architekturdiagramm die wichtigsten Komponenten oder Funktionseinheiten des Entwurfs sowie ihre Abhängigkeiten identifiziert. Jeder Knoten im Diagramm mit der Bezeichnung eine *Ebene*, stellt eine logische Gruppe von Namespaces, Projekte oder andere Artefakte. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Finden Sie unter [Ebenendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/layer-diagrams-reference.md).  
   
 ##  <a name="Update"></a> So entwerfen oder aktualisieren Sie Ihre app mit Ebenendiagrammen  
  Die folgenden Schritte bieten einen Überblick über die Verwendung von Ebenendiagrammen im Entwicklungsprozess. In späteren Abschnitten dieses Themas werden die einzelnen Schritte ausführlicher beschrieben. Wenn Sie einen neuen Entwurf entwickeln, lassen Sie die Schritte aus, die sich auf vorhandenen Code beziehen.  
@@ -72,7 +69,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
  Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Informationen zu Ebenenmuster finden Sie auf der Patterns & Practices-Website unter [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Bestimmte Arten von Artefakten können mit Ebenen verknüpft, aber nicht anhand des Ebenendiagramms validiert werden. Öffnen Sie zum Anzeigen, ob das Artefakt die Validierung unterstützt **Ebenen-Explorer** Untersuchen der **unterstützt die Validierung** Eigenschaft des Artefaktlinks. Finden Sie unter [vorhandene Abhängigkeiten zwischen Ebenen ermitteln](#Generate).  
+>  Bestimmte Arten von Artefakten können mit Ebenen verknüpft, aber nicht anhand des Ebenendiagramms überprüft werden. Öffnen Sie zum Anzeigen, ob das Artefakt die Validierung unterstützt **Ebenen-Explorer** Untersuchen der **unterstützt die Validierung** Eigenschaft des Artefaktlinks. Finden Sie unter [vorhandene Abhängigkeiten zwischen Ebenen ermitteln](#Generate).  
   
  Bei der Aktualisierung einer nicht vertrauten Anwendung können Sie auch Codezuordnungen erstellen. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe des Projektmappen-Explorers können Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weisen Sie diese Codeartefakte Ebenen zu, indem Sie sie aus dem Projektmappen-Explorer in Ebenendiagramme ziehen. Sie können dann Ebenendiagramme verwenden, um den Code zu aktualisieren und ihn mit dem Entwurf konsistent zu halten.  
   
@@ -109,7 +106,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
 |Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in der Ebene des **erforderliche Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
   
 ###  <a name="Improving"></a> Verbessern der Struktur des Codes  
- Refactoringänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Der Entwurf von gut strukturiertem Code lässt sich leicht in einem Ebenendiagramm abstrakt darstellen.  
+ Umgestaltungsänderungen sind Verbesserungen, die das Verhalten der Anwendung nicht ändern, jedoch zukünftige Änderungen und Erweiterungen des Codes erleichtern. Der Entwurf von gut strukturiertem Code lässt sich leicht in einem Ebenendiagramm abstrakt darstellen.  
   
  Wenn Sie z. B. eine Ebene für jeden Namespace im Code erstellen und die Abhängigkeiten dann zurück entwickeln, sollte die Anzahl unidirektionaler Abhängigkeiten zwischen den Ebenen minimal sein. Wenn Sie ein detailliertes Diagramm mit Klassen oder Methoden als Ebenen zeichnen, sollte das Ergebnis dieselben Merkmale aufweisen.  
   
@@ -118,7 +115,7 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
 ##  <a name="NewAreas"></a> Entwerfen Sie neue Bereiche der Anwendung  
  Wenn Sie mit der Entwicklung eines neuen Projekts oder eines neuen Bereichs in einem neuen Projekt beginnen, können Sie Ebenen und Abhängigkeiten zeichnen, um die Hauptkomponenten zu identifizieren, bevor Sie mit dem Entwickeln des Codes beginnen.  
   
--   **Zeigen Sie identifizierbare architektonische Muster** in den Ebenendiagrammen an, wenn möglich. Beispielsweise kann ein Ebenendiagramm, das eine Desktopanwendung beschreibt, die Ebenen Präsentation, Domänenlogik und Datenspeicher enthalten. Ein Ebenendiagramm für eine einzelne Funktion in einer Anwendung kann beispielsweise die Ebenen Modell, Ansicht und Controller enthalten. Weitere Informationen zu solchen Mustern finden Sie unter [Patterns & Practices: Application Architecture](http://go.microsoft.com/fwlink/?LinkId=145794).  
+-   **Zeigen Sie identifizierbare architektonische Muster** in den Ebenendiagrammen an, wenn möglich. Beispielsweise kann ein Ebenendiagramm, das eine Desktopanwendung beschreibt, die Ebenen Präsentation, Domänenlogik und Datenspeicher enthalten. Ein Ebenendiagramm für eine einzelne Funktion in einer Anwendung kann beispielsweise die Ebenen Modell, Ansicht und Controller enthalten. Weitere Informationen zu solchen Mustern finden Sie unter [Patterns & Practices: Anwendungsarchitektur](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
      Wenn Sie häufig ähnliche Muster entwerfen, erstellen Sie ein benutzerdefiniertes Tool. Finden Sie unter [Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
@@ -168,6 +165,3 @@ Beschreiben Sie die Architektur Ihrer app auf einer hohen Ebene erstellen *Ebene
 ## <a name="see-also"></a>Siehe auch  
  [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)   
  [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-
