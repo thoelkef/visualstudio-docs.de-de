@@ -1,14 +1,9 @@
 ---
-title: 'Fehler: Timeout während des Debuggens von Webdiensten | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Fehler: Timeout beim Debuggen von Webdiensten | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 4b7df112-788a-4429-9a0c-4c6dac4fb609
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 985082d675da2a56d9880414809d91e92cb1fe0d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5745a23e70f9245d6f1cb34a6d4ccc042f64bdd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736348"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956776"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Fehler: Timeout während des Debuggens von Webdiensten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ obj.TimeOut = -1; // infinite time out.
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

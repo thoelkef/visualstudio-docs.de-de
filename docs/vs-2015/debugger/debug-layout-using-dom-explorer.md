@@ -1,14 +1,9 @@
 ---
 title: Debuggen von Layout mithilfe von DOM Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956261"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,6 +130,3 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)
-
-
-

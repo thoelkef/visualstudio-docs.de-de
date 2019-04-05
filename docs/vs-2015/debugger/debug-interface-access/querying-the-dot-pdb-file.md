@@ -1,14 +1,9 @@
 ---
 title: Abfragen der. PDB-Datei | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.assetid: 8da07d1c-2712-45f9-8fbf-f34040408a8a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f82180427155a364ad4240eeede0503e99857f80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e0f08256d8852e707c3f6acf37ed6addc2ef831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957550"
 ---
 # <a name="querying-the-pdb-file"></a>Abfragen der PDB-Datei
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die Art und symbolische Debuginformationen gesammelt, die im Verlauf des kompilieren und verknüpfen das Projekt enthält. Eine PDB-Datei wird erstellt, beim Kompilieren eines C/C++-Programms mit **"/ Zi"** oder **"/ Zi"** oder [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], oder [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] Programmierung mit der **/debug** -Option. Objektdateien enthalten Verweise in die PDB-Datei für Debuginformationen. Weitere Informationen zu Pdb-Dateien, finden Sie unter [PDB-Dateien](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Eine DIA-Anwendung können die folgenden allgemeinen Schritte zum Abrufen von Details zu den verschiedenen Symbolen, Objekte und Datenelemente innerhalb von ein ausführbares Image.  
+Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die Art und symbolische Debuginformationen gesammelt, die im Verlauf des kompilieren und verknüpfen das Projekt enthält. Eine PDB-Datei wird erstellt, beim Kompilieren eines C/C++-Programms mit **"/ Zi"** oder **"/ Zi"** oder [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], oder [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] Programmierung mit der **/debug** -Option. Objektdateien enthalten Verweise in die PDB-Datei für Debuginformationen. Weitere Informationen zu Pdb-Dateien, finden Sie unter [PDB-Dateien](http://msdn.microsoft.com/1761c84e-8c2c-4632-9649-b5f99964ed3f). Eine DIA-Anwendung können die folgenden allgemeinen Schritte zum Abrufen von Details zu den verschiedenen Symbolen, Objekte und Datenelemente innerhalb von ein ausführbares Image.  
   
 ### <a name="to-query-the-pdb-file"></a>Zum Abfragen der PDB-Datei  
   
@@ -100,6 +95,3 @@ Eine Programmdatenbankdatei (Dateierweiterung ".pdb") ist eine Binärdatei, die 
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
-
-
-

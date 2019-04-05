@@ -1,12 +1,9 @@
 ---
 title: Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 dev_langs:
@@ -25,13 +22,13 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956678"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +39,14 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
  Weitere Informationen zum Auswählen von datengebundenen Steuerelementen für die Erstellung für Elemente in der **Datenquellen** Fenster finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="customizinglist"></a> Die Liste der bindungsfähige Steuerelemente für einen Datentyp anpassen  
  Zum Hinzufügen oder entfernen Steuerelemente aus der Liste der verfügbaren Steuerelemente für Elemente in der **Datenquellen** Fenster, das einen bestimmten Datentyp, der die folgenden Schritte ausführen zu müssen.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Die Steuerelemente für einen Datentyp aufgeführt werden auswählen  
   
-1.  Stellen Sie sicher, dass WPF-Designer oder im Windows Forms-Designer geöffnet ist.  
+1.  Der WPF- oder der Windows Forms-Designer muss geöffnet sein.  
   
 2.  In der **Datenquellen** , klicken Sie auf ein Element, das ist Teil einer Datenquelle, die Sie hinzugefügt, um das Fenster haben, und klicken Sie dann auf das Dropdownmenü für das Element.  
   
@@ -102,4 +99,3 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-

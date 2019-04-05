@@ -1,25 +1,20 @@
 ---
 title: GPU-Nutzung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957555"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +94,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 |--------------------|-----------------|  
 |**Process**|Der Name des Prozesses, der Sie interessiert. Alle Prozesse, die GPU während der Diagnosesitzung verwenden, sind in dieser Dropdownliste enthalten. Die dem Prozess in dieser Dropdownliste zugeordnete Farbe entspricht der Farbe der Threadvorgänge auf den Zeitachsen unten.|  
 |**Thread**|Die Thread-ID, die Sie interessiert. In einer Multithread-App können Sie hiermit bestimmte Threads isolieren, die mit dem gewünschten Prozess verknüpft sind. Die im Zusammenhang mit dem ausgewählten Thread stehenden Ereignisse werden auf jeder Zeitachse hervorgehoben.|  
-|**Display**|Die Anzahl von Anzeigen, deren Aktualisierungsrate angezeigt wird. **Hinweis:** Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzige große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|  
+|**Anzeige**|Die Nummer der Anzeige, deren Aktualisierungsrate angezeigt wird. **Hinweis:**  Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzelne, große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|  
 |**Filter**|Die Schlüsselwörter, die Sie interessieren. Ereignisse im unteren Bereich des Berichts beinhalten nur diejenigen, die mit einem Schlüsselwort ganz oder teilweise übereinstimmen. Sie können mehrere Schlüsselwörter durch Semikolons (;) getrennt angeben.|  
 |**Hierarchische Sortierung**|Ein Kontrollkästchen, das angibt, ob durch Benutzermarkierungen definierte  Ereignishierarchien beibehalten oder ignoriert werden.|  
   
@@ -155,6 +150,3 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 -   [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog) (GPU-Auslastungstool in Visual Studio 2013 Update 4 CTP1 (Blog))](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [GPU Usage for DirectX in Visual Studio (blog) (GPU-Auslastung für DirectX in Visual Studio (Blog))](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

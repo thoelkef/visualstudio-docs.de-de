@@ -1,12 +1,9 @@
 ---
 title: Neue Datenquellen hinzufügen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,15 +18,15 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956052"
 ---
-# <a name="add-new-data-sources"></a>Neue Datenquelle hinzufügen
+# <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -88,10 +85,10 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 -   Webdienste.  
   
     > [!NOTE]
-    >  Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste möglicherweise nicht genug Informationen bieten die **Assistenten zur Datenquellenkonfiguration** bindbare Objekte erstellen. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.  
+    >  Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.  
   
 ## <a name="data-source-for-an-object"></a>Datenquelle für ein Objekt  
- Sie können eine Datenquelle erstellen, über jedes Objekt, das eine oder mehrere öffentliche Eigenschaften mit macht die **Assistenten zur Datenquellenkonfiguration** auswählen und dann auf die **Objekt** Datenquellentyp. Alle öffentliche Eigenschaften eines Objekts werden angezeigt, der **Datenquellen** Fenster.   Wenn Sie Entity Framework verwenden und ein Modell generiert haben, ist dies, wo Sie die Entitätsklassen, die die Datenquellen für Ihre Anwendung finden.  
+ Sie können eine Datenquelle mit jedem Objekt erstellen, das mindestens eine öffentliche Eigenschaft durch Ausführen des **Assistenten zum Konfigurieren von Datenquellen** und anschließendes Auswählen des Datenquellentyps **Objekt** verfügbar macht. Alle öffentlichen Eigenschaften eines Objekts werden im Fenster **Datenquellen** angezeigt.   Wenn Sie Entity Framework verwenden und ein Modell generiert haben, ist dies, wo Sie die Entitätsklassen, die die Datenquellen für Ihre Anwendung finden.  
   
  Auf der **Datenobjekte auswählen** Seite, erweitern Sie die Knoten in der Strukturansicht, um die Objekte zu suchen, die Sie binden möchten. Die Strukturansicht enthält Knoten für Ihr Projekt für Assemblys und andere Projekte, die vom Projekt verwiesen werden.  
   
@@ -104,8 +101,7 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 >  Um Drag & Drop-Datenbindung, unterstützen Objekte, implementieren die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource> Schnittstelle muss über einen Standardkonstruktor verfügen. Andernfalls, Visual Studio das Datenquellen-Objekt kann nicht instanziiert werden, und es wird eine Fehlermeldung angezeigt, wenn Sie das Element auf die Entwurfsoberfläche ziehen.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste  
- Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie Ausführung der **Assistenten zur Datenquellenkonfiguration** und Auswählen der **SharePoint** Datenquellentyp. SharePoint macht Daten über [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], sodass das Erstellen einer SharePoint-Datenquelle ist dasselbe wie das Erstellen einer Datenquelle von einem Dienst. Auswählen der **SharePoint** Element der **Assistenten zur Datenquellenkonfiguration** öffnet die **Hinzufügen eines Dienstverweises** Dialogfeld, in dem Sie Herstellen einer Verbindung mit dem SharePoint-Datendienst indem Sie auf der SharePoint-Server zeigen.  Dies erfordert das SharePoint SDK.  
+ Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], sodass das Erstellen einer SharePoint-Datenquelle ist dasselbe wie das Erstellen einer Datenquelle von einem Dienst. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen.  Dies erfordert das SharePoint SDK.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

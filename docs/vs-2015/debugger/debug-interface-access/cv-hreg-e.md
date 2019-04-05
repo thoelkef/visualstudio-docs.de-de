@@ -1,14 +1,9 @@
 ---
 title: CV_HREG_e | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5387a697b025757388864289cbbd3fdcebc7a5ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e05b93d363b8157cae5ac66a4fe8fdd14634aa11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724317"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956598"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -417,37 +412,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elements  
- CV_REG_ *  
+ CV_REG_*  
  Führt die Registrierung von Intel 80 x 86- und ix86 Prozessoren und p-Code genutzt werden.  
   
- CV_R68_ *  
+ CV_R68_*  
  Führt die Registrierung von 68 KB-Prozessor verwendet.  
   
- CV_M4_ *  
+ CV_M4_*  
  Führt die Registrierung von MIPS 4000 Reihe Prozessor verwendet.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Führt die Registrierung von Digital Equipment Corporation Alpha AXP-Reihe-Prozessor verwendet.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Führt die Registrierung, die von Get/IBM Motorola PowerPC-Prozessor verwendet.  
   
  CV_SH3_ * und CV_SH_\*  
  Führt die Registrierung von Hitachi Prozessoren SH3 und Hitachi SH-Reihe-Prozessor verwendet.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Führt die Registrierung von Advanced RISC Machine (ARM)-Prozessoren verwendet.  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Führt die Registrierung von Prozessoren der Intel-IA64-Serie verwendet.  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Führt die Registrierung von Infineon Technologien TriCore Prozessor verwendet.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Registriert von Matsushita/Panasonic AM33 verwendet und beziehen Prozessoren.  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Führt die Registrierung von Mitsubishi M32R Prozessor verwendet.  
   
 ## <a name="remarks"></a>Hinweise  
@@ -470,11 +465,8 @@ enum CV_HREG_e { 
   
 ## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe:: Get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe:: Put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
-
-
-

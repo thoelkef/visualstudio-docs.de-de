@@ -1,34 +1,29 @@
 ---
 title: Private Kataloge | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 910764df2f6a6e3069136bce64b77f267e473b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956186"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, indem Sie sie veröffentlichen Freigeben einer *privaten Katalog* im Intranet für Ihre Organisation wie folgt:  
   
--   Erstellen Sie ein Atom (RSS-Feeds) entsprechend konfigurierten zentral (Repository) in Ihrem Intranet. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen Sie ein Atom-Feed für einen privaten Katalog](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+-   Erstellen Sie ein Atom (RSS-Feeds) entsprechend konfigurierten zentral (Repository) in Ihrem Intranet. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Atom-Feed für einen privaten Katalog](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
 -   Verteilen Sie eine PKGDEF-Datei, die den privaten Katalog beschreibt. Es wird empfohlen, diese Konfiguration für Administratoren, die einen privaten Katalog auf mehreren Computern gleichzeitig eine Verbindung herstellen möchten.  
   
@@ -68,7 +63,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten einer privaten Galerie mithilfe von Registrierungseinstellungen](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungseinstellungen](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
   
 ## <a name="installing-extensions-from-a-private-gallery"></a>Installieren von Extensions von einen privaten Katalog  
  Sie können nach suchen und installieren Sie Visual Studio-Erweiterungen über einen privaten Katalog in **Erweiterungen und Updates**. Die folgenden Schritte verwenden, einen privaten Katalog mit dem Namen `My Gallery`.  
@@ -99,4 +94,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## <a name="see-also"></a>Siehe auch  
  [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)   
  [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
-

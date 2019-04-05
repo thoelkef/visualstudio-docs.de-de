@@ -1,25 +1,20 @@
 ---
 title: Migrieren von apps auf die universelle Windows-Plattform (UWP) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956745"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrieren von Apps in die universelle Windows-Plattform (UWP)
 Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projektdateien für Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps vor, damit sie mit Visual Studio 2015 RTM verwendet werden können. (Wenn Sie über eine universelle Windows 8.1-App mit einem Windows-Anwendungsprojekt und einem Windows Phone-Projekt verfügen, müssen Sie die Schritte befolgen, um jedes Projekt zu migrieren).  
@@ -273,7 +268,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
     2.  Aktualisieren Sie den Wert des Elements „ApplicationTypeRevision“ von „8.1“auf „10.0“.  
   
-    3.  Ändern Sie den Wert, der die \<MinimumVisualStudioVersion >-Element: 14.  
+    3.  Ändern Sie den Wert, der die \<MinimumVisualStudioVersion >-Element: 14,  
   
     4.  Hinzufügen einer \<EnableDotNetNativeCompatibleProfile >-Element und dessen Wert auf: "true".  
   
@@ -356,7 +351,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **NEU für universelle Windows-Plattform:** fügen Sie die unten stehenden Schemas zu Ihrem \<Paket > Element. Entfernen Sie alle zugehörigen Namespace-Bezeichnerpräfixe von Elementen für die Schemas, die Sie gerade entfernt haben. Aktualisieren Sie die IgnorableNamespaces-Eigenschaft auf „uap mp“. Die neue \<Package >-Element sollte etwa wie folgt aussehen.  
+    **NEU für universelle Windows-Plattform:** Fügen Sie die unten stehenden Schemas zu Ihrem \<Paket > Element. Entfernen Sie alle zugehörigen Namespace-Bezeichnerpräfixe von Elementen für die Schemas, die Sie gerade entfernt haben. Aktualisieren Sie die IgnorableNamespaces-Eigenschaft auf „uap mp“. Die neue \<Package >-Element sollte etwa wie folgt aussehen.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
    ```  
   
-3. Hinzufügen einer \<Abhängigkeiten > untergeordnete Elemente der \<Paket > Element. Fügen Sie dann eine \<TargetDeviceFamily > untergeordnetes Element dieser \<Dependencies >-Element mit den Namen, "MinVersion" und "maxversiontested". Weisen Sie dem Name-Attribut den Wert „Windows.Universal“ zu. Geben Sie „MinVersion“ und „MaxVersionTested“ den Wert der installierten Version der universellen Windows-Plattform. Dieses Element sollte in etwa wie folgt aussehen:  
+3. Hinzufügen einer \<Abhängigkeiten > untergeordnete Elemente der \<Paket > Element. Fügen Sie dann eine \<TargetDeviceFamily > untergeordnetes Element dieser \<Dependencies >-Element mit den Namen, "MinVersion" und "maxversiontested". Geben Sie dem Name-Attribut den Wert zu: Windows.Universal. Geben Sie „MinVersion“ und „MaxVersionTested“ den Wert der installierten Version der universellen Windows-Plattform. Dieses Element sollte in etwa wie folgt aussehen:  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
    </Dependencies>  
    ```  
   
-4. **Für Windows Store nur:** Sie hinzufügen müssen eine \<Mp:PhoneIdentity > untergeordnete Elemente der \<Paket > Element. Fügen Sie ein „PhoneProductId“-Attribut und ein „PhonePublisherId“-Attribut hinzu. Legen Sie "phoneproductid" haben den gleichen Wert wie die Name-Attribut in der \<Identität > Element. Legen Sie den „PhonePublishedId“-Wert auf Folgendes fest: 00000000-0000-0000-0000-000000000000. Und zwar so:  
+4. **Für nur Windows Store:** Sie hinzufügen müssen eine \<Mp:PhoneIdentity > untergeordnete Elemente der \<Paket > Element. Fügen Sie ein „PhoneProductId“-Attribut und ein „PhonePublisherId“-Attribut hinzu. Legen Sie "phoneproductid" haben den gleichen Wert wie die Name-Attribut in der \<Identität > Element. Legen Sie den "phonepublishedid" Wert: 00000000-0000-0000-0000-000000000000. Und zwar so:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 5. Suchen der \<Voraussetzungen > Element, und löschen Sie dieses Element und alle untergeordneten Elemente.  
   
-6. Hinzufügen der **Uap** Namespace die folgende \<Ressource >-Elemente: Scale, DXFeatureLevel. Zum Beispiel:  
+6. Hinzufügen der **Uap** Namespace die folgende \<Ressource > Elemente: Scale, DXFeatureLevel. Zum Beispiel:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
    ```  
   
-    **Gilt nur für Windows Store:** Die Namen der Kachelgröße wurden geändert. Ändern Sie die Attribute in der \<VisualElements >-Element entsprechend den neuen zusammengeführten kachelgrößen. 70 x 70 wird zu 71 x 71 und 30 x 30 zu 44 x 44.  
+    **Betrifft nur Windows Store:** Die Namen der Kachelgröße wurden geändert. Ändern Sie die Attribute in der \<VisualElements >-Element entsprechend den neuen zusammengeführten kachelgrößen. 70 x 70 wird zu 71 x 71 und 30 x 30 zu 44 x 44.  
   
     **ALT:** Kachelgrößennamen  
   
@@ -487,7 +482,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 12. Ändern Sie die Framework-Abhängigkeiten. Fügen Sie einen Herausgebernamen zu allen \<PackageDependency >-Elementen und geben Sie eine "MinVersion" aus, wenn sie noch nicht angegeben ist.  
   
-     **ALT:** \<PackageDependency >-Element  
+     **ALTE:** \<PackageDependency >-Element  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
     </Extension>  
     ```  
   
-     **NEU:** Mit der Aufgabe vom Typ Bluetooth.  
+     **NEU:** Mit der Aufgabe des Bluetooth-Typ.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -605,7 +600,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 -   [C++-apps](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> Aktualisieren der C-/ VB-Projekte zur Verwendung von der neuesten universellen Windows-Plattform  
+###  <a name="RCUpdate10CSharp"></a> Aktualisieren Ihrer C#/VB-Projekten mit der neuesten universellen Windows-Plattform  
  Wenn Sie Ihre Projektmappe für Ihre vorhandene App öffnen, sehen Sie, dass für Ihre App eine Aktualisierung erforderlich ist:  
   
  ![Anzeigen der Projektmappe im Projektmappen-Explorer](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -676,7 +671,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
    ```  
   
-6. Suchen der \<Target >-Element mit einem Namensattribut mit dem Wert: "ensurenugetpackagebuildimports". Löschen Sie dieses Element und alle zugehörigen untergeordneten Elemente.  
+6. Suchen der \<Target >-Element mit einem Namensattribut mit dem Wert: EnsureNuGetPackageBuildImports. Löschen Sie dieses Element und alle zugehörigen untergeordneten Elemente.  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  

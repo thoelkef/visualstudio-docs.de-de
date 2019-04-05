@@ -1,26 +1,21 @@
 ---
 title: Service Essentials | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956293"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,4 +64,3 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
  [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)   
  [Umwandlung und Typkonvertierungen](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [Umwandlung](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
-

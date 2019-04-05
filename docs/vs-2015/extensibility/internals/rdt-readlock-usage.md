@@ -1,14 +1,9 @@
 ---
 title: RDT_ReadLock-Verwendung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 337fa34bce713f743b8962f41a6889335b54b722
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956652"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock-Verwendung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,8 @@ ms.locfileid: "51817450"
  Wenn ein Benutzer ein Dokument in der Benutzeroberfläche öffnet eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Besitzer für das Dokument muss eingerichtet werden und ein <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> Flag festgelegt werden muss. Wenn kein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Besitzer hergestellt werden kann, und klicken Sie dann das Dokument wird nicht gespeichert werden, wenn der Benutzer klickt **Alles speichern** oder die IDE geschlossen. Dies bedeutet, wenn ein Dokument geöffnet unsichtbar ist, wo er im Arbeitsspeicher geändert wird, und der Benutzer dazu aufgefordert werden, um das Dokument beim Herunterfahren speichern oder gespeichert, wenn **Alles speichern** ausgewählt wird, wird eine `RDT_ReadLock` kann nicht verwendet werden. Sie müssen stattdessen eine `RDT_EditLock` und registrieren Sie eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> beim ein <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> Flag.  
   
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock und Änderung von Dokumenten  
-<<<<<<< HEAD, die das vorherige Flag erwähnt gibt an, dass das unsichtbare Öffnen des Dokuments führt seine `RDT_EditLock` beim Öffnen des Dokuments durch den Benutzer in ein sichtbares **DocumentWindow**. In diesem Fall erhält der Benutzer mit einer **speichern** aufgefordert, wenn die sichtbaren **DocumentWindow** geschlossen wird. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` Implementierungen, mit denen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> Dienst anfänglich arbeiten, wenn nur ein `RDT_ReadLock` stammt (d. h., wenn das Dokument im Hintergrund geöffnet wird, um Informationen zu analysiert). Später, wenn das Dokument geändert werden muss, klicken Sie dann die Sperre wird aktualisiert, eine schwache **RDT_EditLock**. Wenn der Benutzer klicken Sie dann das Dokument in ein sichtbares öffnet **DocumentWindow**, `CodeModel`des schwachen `RDT_EditLock` veröffentlicht wird.  
-==== Der vorherigen Flag erwähnt gibt an, dass das unsichtbare Öffnen des Dokuments führt seine `RDT_EditLock` beim Öffnen des Dokuments durch den Benutzer in ein sichtbares **DocumentWindow**. In diesem Fall erhält der Benutzer mit einer **speichern** aufgefordert, wenn die sichtbaren **DocumentWindow** geschlossen wird. Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel-Implementierungen, mit denen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> Dienst anfänglich arbeiten, wenn nur ein `RDT_ReadLock` stammt (d. h., wenn das Dokument im Hintergrund geöffnet wird, um Informationen zu analysiert). Später, wenn das Dokument geändert werden muss, klicken Sie dann die Sperre wird aktualisiert, eine schwache **RDT_EditLock**. Wenn der Benutzer klicken Sie dann das Dokument in ein sichtbares öffnet **DocumentWindow**, `CodeModel`des schwachen `RDT_EditLock` veröffentlicht wird.  
->>>>>>> 9c8493a8dd... Versuchen Sie es einen neuen Moniker-Bereich zur Unterstützung der Kombination von Versionen
+ Das vorherige Flag erwähnt gibt an, dass das unsichtbare Öffnen des Dokuments führt seine `RDT_EditLock` beim Öffnen des Dokuments durch den Benutzer in ein sichtbares **DocumentWindow**. In diesem Fall erhält der Benutzer mit einer **speichern** aufgefordert, wenn die sichtbaren **DocumentWindow** geschlossen wird. Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel-Implementierungen, mit denen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> Dienst anfänglich arbeiten, wenn nur ein `RDT_ReadLock` stammt (d. h., wenn das Dokument im Hintergrund geöffnet wird, um Informationen zu analysiert). Später, wenn das Dokument geändert werden muss, klicken Sie dann die Sperre wird aktualisiert, eine schwache **RDT_EditLock**. Wenn der Benutzer klicken Sie dann das Dokument in ein sichtbares öffnet **DocumentWindow**, `CodeModel`des schwachen `RDT_EditLock` veröffentlicht wird.  
   
  Wenn der Benutzer dann schließt der **DocumentWindow** und wählt **keine** bei der Aufforderung zum Speichern Sie des geöffneten Dokuments, das `CodeModel` Implementierung verwirft alle Informationen im Dokument und erneut öffnet die Dokument vom Datenträger unsichtbar das nächste Mal, das Informationen für das Dokument erforderlich ist. Die Besonderheit dieses Verhalten ist eine Instanz, in denen der Benutzer öffnet, die **DocumentWindow** des unsichtbar geöffneten Dokuments, ändert, wird geschlossen und wählt dann **keine** bei der Aufforderung zum Speichern des Dokuments. In diesem Fall, wenn das Dokument besitzt eine `RDT_ReadLock`, klicken Sie dann das Dokument wird nicht geschlossen werden, und das geänderte Dokument bleibt unsichtbar im Arbeitsspeicher, geöffnet, auch wenn der Benutzer hat nicht das Dokument zu speichern.  
   
  Wenn das unsichtbare Öffnen des Dokuments eine schwache verwendet `RDT_EditLock`, und er stellt eine Sperre, wenn der Benutzer das Dokument sichtbar öffnet und keine anderen Sperren aufrechterhalten werden. Wenn der Benutzer schließt die **DocumentWindow** und wählt **keine** wenn dazu aufgefordert werden, um das Dokument speichern, klicken Sie dann das Dokument muss geschlossen werden, aus dem Arbeitsspeicher. Dies bedeutet, dass der Client nicht sichtbare für RDT-Ereignisse zum Nachverfolgen der dieses Ereignis überwachen muss. Das nächste Mal das Dokument erforderlich ist, muss das Dokument erneut geöffnet werden.
-

@@ -1,14 +1,9 @@
 ---
 title: Schreiben von Hookfunktionen zum Debuggen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47cd3d42639785290f26d7acbbad15cd948b4f51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0554c1494bec757d1baecd78cdc302608e5b6b3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958882"
 ---
 # <a name="debug-hook-function-writing"></a>Schreiben von Hookfunktionen zum Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +42,8 @@ In diesem Abschnitt wird eine Reihe von benutzerdefinierten Hookfunktionen zum D
  [Hookfunktionen für Reservierungen](../debugger/allocation-hook-functions.md)  
  Enthält eine Beschreibung einer Reservierungshookfunktion und deren unterschiedlichen Verwendungen, Hinweise auf Beschränkungen sowie einen Prototyp.  
   
- [Reservierungshooks und CRT-Speicherbelegungen](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- In diesem Abschnitt wird die für Reservierungshookfunktionen anwendbare Beschränkung beschrieben, nach der `_CRT_BLOCK`-Blöcke explizit ignoriert werden, wenn sie C-Laufzeitbibliotheksfunktionen aufrufen, durch die interner Speicher belegt wird. Dieses Thema enthält auch die Konsequenzen, wenn der Reservierungshook nicht ignoriert wird `_CRT_BLOCK` Blöcke (einschließlich Beispielen) und ändern Sie die standardzuweisung Reservierungshookfunktion **CrtDefaultAllocHook**.  
+ [Zuweisungshooks und CRT-Speicherbelegungen](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
+ In diesem Abschnitt wird die für Reservierungshookfunktionen anwendbare Beschränkung beschrieben, nach der `_CRT_BLOCK`-Blöcke explizit ignoriert werden, wenn sie C-Laufzeitbibliotheksfunktionen aufrufen, durch die interner Speicher belegt wird. Hier wird außerdem beschrieben, welche Konsequenzen es hat, wenn der Zuweisungshook `_CRT_BLOCK`-Blöcke nicht ignoriert (einschließlich Beispielen), und wie Sie die standardmäßige Zuweisungshookfunktion **CrtDefaultAllocHook** ändern.  
   
  [Berichtshookfunktionen](../debugger/report-hook-functions.md)  
  Hier wird die `_CrtSetReportHook`-Funktion beschrieben, mit der Sie Berichte nach bestimmten Reservierungstypen filtern können. In diesem Thema finden Sie außerdem einen Prototyp.  
@@ -56,6 +51,3 @@ In diesem Abschnitt wird eine Reihe von benutzerdefinierten Hookfunktionen zum D
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md)  
  Enthält Links zu Debugtechniken für die C-Laufzeitbibliothek, darunter Verwenden der CRT-Debugbibliothek, Makros für die Berichterstellung, Unterschiede zwischen `malloc` und `_malloc_dbg`, Schreiben von Hookfunktionen für das Debuggen und CRT-Debugheap.
-
-
-

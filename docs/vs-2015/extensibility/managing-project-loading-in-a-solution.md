@@ -1,26 +1,21 @@
 ---
 title: Verwalten des Ladens von Projekten in einer Projektmappe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 041c5ab52a7a0e8be89ef1abe6db4d1aed51ecfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957414"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Verwalten des Ladens von Projekten in einer Projektmappe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,15 +82,15 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Dieser Fehler wird ausgelöst, bevor eine Projektmappe geöffnet wird. Sie können es verwenden, so ändern Sie das Projekt, die Priorität für die Projekte in der Projektmappe laden.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Wird ausgelöst, nachdem die Projektmappe vollständig geladen ist, aber vor dem Hintergrund wird das Laden des Projekts erneut gestartet. Beispielsweise ein Benutzer möglicherweise auf ein Projekt, dessen lastpriorität LoadIfNeeded ist, zugegriffen haben, oder möglicherweise der projektmappenlastmanager eine projektlastpriorität geändert, um BackgroundLoad, die einen Hintergrund laden dieses Projekts gestartet werden konnte.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Diese wird ausgelöst, nachdem die Projektmappe vollständig geladen ist, aber vor dem Hintergrund wird das Laden des Projekts erneut gestartet. Beispielsweise ein Benutzer möglicherweise auf ein Projekt, dessen lastpriorität LoadIfNeeded ist, zugegriffen haben, oder möglicherweise der projektmappenlastmanager eine projektlastpriorität geändert, um BackgroundLoad, die einen Hintergrund laden dieses Projekts gestartet werden konnte.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Wird ausgelöst, nachdem eine Projektmappe ursprünglich vollständig geladen ist, ob es ein projektmappenlademanager ist. Es wird auch ausgelöst, nachdem der Hintergrund laden oder bei Bedarf geladen werden, wenn die Projektmappe vollständig geladen wird. Zur gleichen Zeit <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> wird erneut aktiviert.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Dies wird ausgelöst, nachdem eine Projektmappe ursprünglich vollständig geladen ist, ob es ein projektmappenlademanager ist. Es wird auch ausgelöst, nachdem der Hintergrund laden oder bei Bedarf geladen werden, wenn die Projektmappe vollständig geladen wird. Zur gleichen Zeit <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> wird erneut aktiviert.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Wird ausgelöst, bevor Sie das Laden eines Projekts (oder Projekte). Um sicherzustellen, dass andere Hintergrundprozesse abgeschlossen sind, bevor die Projekte geladen werden, legen Sie `pfShouldDelayLoadToNextIdle` zu **"true"**.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Diese wird ausgelöst, bevor Sie das Laden eines Projekts (oder Projekte). Um sicherzustellen, dass andere Hintergrundprozesse abgeschlossen sind, bevor die Projekte geladen werden, legen Sie `pfShouldDelayLoadToNextIdle` zu **"true"**.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Wird ausgelöst, wenn ein Batch von Projekten wird geladen werden soll. Wenn `fIsBackgroundIdleBatch` ist "true", die Projekte sind im Hintergrund; geladen werden, wenn `fIsBackgroundIdleBatch` ist "false", die Projekte geladen werden sollen synchron aufgrund einer benutzeranforderung, z. B. wenn der Benutzer ein ausstehendes Projekt im Projektmappen-Explorer erweitert wird. Sie können diese Option, um teure Arbeit zu erledigen, die andernfalls ausgeführt werden müssten implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Dies wird ausgelöst, wenn ein Batch von Projekten wird geladen werden soll. Wenn `fIsBackgroundIdleBatch` ist "true", die Projekte sind im Hintergrund; geladen werden, wenn `fIsBackgroundIdleBatch` ist "false", die Projekte geladen werden sollen synchron aufgrund einer benutzeranforderung, z. B. wenn der Benutzer ein ausstehendes Projekt im Projektmappen-Explorer erweitert wird. Sie können diese Option, um teure Arbeit zu erledigen, die andernfalls ausgeführt werden müssten implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Wird ausgelöst, nachdem ein Batch von Projekten geladen wurde.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Dies wird ausgelöst, nachdem ein Batch von Projekten geladen wurde.  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Erkennen und Verwalten von Projektmappen und des Ladens von Projekten  
  Um den Load-Status der Projekte und Projektmappen zu erkennen, rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> mit den folgenden Werten:  
@@ -120,4 +115,3 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 > [!NOTE]
 >  sein. Standardmäßig nur die Projekte, die die Anforderung geladen und Hintergrund ladeprioritäten geladen sind, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag wird an die Methode übergeben, werden alle Projekte geladen werden, außer denjenigen, die markiert sind, um explizit zu laden.
-

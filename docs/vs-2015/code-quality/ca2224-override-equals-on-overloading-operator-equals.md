@@ -1,14 +1,9 @@
 ---
-title: 'CA2224: Equals beim Überladen die Außerkraftsetzung gleich | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2224: Außerkraftsetzung equals, Equals beim Überladen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -21,14 +16,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66f4b4bcc7c2c1d359f5d8fa91227fb51a27adc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955797"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -67,12 +62,12 @@ ms.locfileid: "49815233"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **a = ([0] 1,1) und b = ([1] 2,2) gleich sind? Keine**
-**eine == b? Keine**
+ **a = ([0] 1,1) und b = ([1] 2,2) gleich sind? No**
+**a == b ? Keine**
 **a1 und einer gleich? Ja**
 **a1 == ein? Ja**
-**b und Bcopy gleich sind? Keine**
-**b == Bcopy? "Ja"**
+**b und Bcopy gleich sind? No**
+**b == bcopy ? "Ja"**
 ## <a name="example"></a>Beispiel
  Das folgende Beispiel zeigt einen Typ, der technisch verstößt gegen diese Regel, aber nicht in einem inkonsistenten Weise verhält.
 
@@ -85,8 +80,8 @@ ms.locfileid: "49815233"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **a = (1,1) und b = (2,2) gleich sind? Keine**
-**eine == b? Keine**
+ **a = (1,1) und b = (2,2) gleich sind? No**
+**a == b ? Keine**
 **a1 und einer gleich? Ja**
 **a1 == ein? Ja**
 **b und Bcopy gleich sind? Ja**
@@ -120,13 +115,10 @@ ms.locfileid: "49815233"
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Operatorüberladungen weisen benannte alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218: GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Überschreiben von GetHashCode beim Überschreiben von Equals überschreiben](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

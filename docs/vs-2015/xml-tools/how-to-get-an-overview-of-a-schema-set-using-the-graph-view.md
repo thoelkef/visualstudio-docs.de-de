@@ -1,27 +1,22 @@
 ---
-title: 'Vorgehensweise: bietet einen Überblick über ein Schemaset, das mithilfe der Graph-Ansicht | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Bietet einen Überblick über ein Schemaset, das mithilfe der Graph-Ansicht | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3722af4aef2f56d6da1c2a79840c05edd2a87b65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 61284d0b94d621c788a4d39fc2672d0778dd5c0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957169"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Gewusst wie: Anzeigen einer Übersicht über ein Schemaset in der Diagrammansicht
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Vorgehensweise: Anzeigen einer Übersicht über ein Schemaset in der Diagrammansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -46,6 +41,3 @@ In diesem Thema wird beschrieben, wie Sie mit der [Diagrammansicht](../xml-tools
 7.  Klicken Sie auf der Entwurfsoberfläche auf einen Knoten, und überprüfen Sie in der Breadcrumb-Leiste, wo sich der ausgewählte Knoten im Schemaset befindet.  
   
 8.  Rick, klicken Sie auf einen Elementknoten in das Muster, die Entwurfsoberfläche, und wählen **Beispiel-XML generieren** XML-Instanzendokument angezeigt.
-
-
-

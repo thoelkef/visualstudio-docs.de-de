@@ -1,30 +1,27 @@
 ---
 title: 'Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958259"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Ihrer DSL Handler für Drag & Drop-Ereignisse hinzufügen, sodass die Benutzer Elemente von anderen Diagrammen oder von anderen Teilen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf das Diagramm ziehen können. Sie können auch Handler für Ereignisse wie Doppelklicks hinzufügen. Handler für Drag & Drop und doppelklicken Sie auf werden zusammen als bezeichnet *Gestenhandler*.  
+Sie können Ihrer DSL Handler für Drag &amp; Drop-Ereignisse hinzufügen, sodass die Benutzer Elemente von anderen Diagrammen oder von anderen Teilen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf das Diagramm ziehen können. Sie können auch Handler für Ereignisse wie Doppelklicks hinzufügen. Handler für Drag & Drop und doppelklicken Sie auf werden zusammen als bezeichnet *Gestenhandler*.  
   
- In diesem Thema werden Drag & Drop-Gesten behandelt, deren Ursprung in anderen Diagrammen liegt. Für Verschiebe- und Kopierereignisse innerhalb eines Diagramms könnten Sie alternativ eine Unterklasse von `ElementOperations` definieren. Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md). Eine Anpassung der DSL-Definition kann auch möglich sein.  
+ In diesem Thema werden Drag &amp; Drop-Gesten behandelt, deren Ursprung in anderen Diagrammen liegt. Für Verschiebe- und Kopierereignisse innerhalb eines Diagramms könnten Sie alternativ eine Unterklasse von `ElementOperations` definieren. Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md). Eine Anpassung der DSL-Definition kann auch möglich sein.  
   
 ## <a name="in-this-topic"></a>In diesem Thema  
   
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Diese Methode wird aufgerufen, wenn der Benutzer auf die Form oder das Diagramm doppelklickt.  
   
-   Weitere Informationen finden Sie unter [wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Weitere Informationen finden Sie unter [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Definieren Sie `IsAcceptableDropItem(e)`, um zu bestimmen, ob das gezogene Element akzeptiert werden kann, und "ProcessDragDropItem(e)", um das Modell zu aktualisieren, wenn das Element abgelegt wird. Diese Methoden müssen das Element zuerst aus den Ereignisargumenten extrahieren. Informationen dazu, wie Sie dies tun, finden Sie unter [Gewusst wie: Abrufen eines Verweises auf das gezogene Element](#extracting).  
   
@@ -143,7 +140,7 @@ using System.Linq;
   
   -   diagramEventArgs.Data.GetDataFormats() – Listet die Formate auf, in die Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).  
   
-  -   `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt in das angegebene Format. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:  
+  -   `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt in das angegebene Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)   
  [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

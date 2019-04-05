@@ -1,14 +1,9 @@
 ---
 title: Hinzufügen von Befehlszeilenschaltern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5034e6bcb5aa878c16dbf9dadf478d68276c4fac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958968"
 ---
 # <a name="adding-command-line-switches"></a>Hinzufügen von Befehlszeilenschaltern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Sie können Befehlszeilenoptionen hinzufügen, die für das VSPackage angewendet
  HelpString  
  Die Zeichenfolge "oder" Ressource-ID der Zeichenfolge mit anzuzeigende **Devenv /?**.  
   
- name  
+ Name  
  Der Schalter.  
   
  PackageGuid  
@@ -85,6 +80,5 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)   
- [CreatePkgDef-Hilfsprogramm](../extensibility/internals/createpkgdef-utility.md)   
+ [CreatePkgDef Utility](../extensibility/internals/createpkgdef-utility.md)   
  [PKGDEF-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Anpassen des Modells mit Profilen und Stereotypen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, profiles
 - UML model, stereotypes
@@ -15,13 +12,13 @@ ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956096"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Anpassen des Modells mit Profilen und Stereotypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +46,3 @@ In Visual Studio können Sie die standardmäßigen UML-Modellelemente wie z. B.
 |[Installieren eines UML-Profils](../modeling/install-a-uml-profile.md)|Wenn Sie ein UML-Profil von einem anderen Benutzer erhalten haben, können Sie es auf Ihrem Computer installieren.|  
 |[Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox](../modeling/define-a-custom-modeling-toolbox-item.md)|Ein benutzerdefiniertes Toolboxelement erspart Ihnen das wiederholte Festlegen eines Stereotyps für neue Elemente.|  
 |[Color UML-Klassen nach Stereotyp](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Mit diesem Beispielcode werden die UML-Diagramme erweitert. Die Farbe einer UML-Form wird automatisch entsprechend dem Stereotyp des Elements festgelegt.|
-
-
-

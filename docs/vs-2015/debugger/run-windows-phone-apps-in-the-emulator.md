@@ -1,14 +1,9 @@
 ---
 title: Ausführen von Windows Phone-apps im Emulator | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956029"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Ausführen von Windows Phone-Apps im Emulator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Sie Windows Phone-Apps auf Ihrem Computer ohne ein physisches Gerät debuggen und testen können. Sie können typische Touch- und Rotationsereignisse simulieren und die physische Bildschirmgröße und -auflösung auswählen, die Sie emulieren möchten. Sie können außerdem viele häufig verwendete Funktionen wie Standort, Netzwerk, Benachrichtigungen, Sensoren, den Beschleunigungsmesser und die optionale SD-Karte testen.  
+Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Sie Windows Phone-Apps auf Ihrem Computer ohne ein physisches Gerät debuggen und testen können. Sie können typische Touch- und Rotationsereignisse simulieren und die physische Bildschirmgröße und -auflösung auswählen, die Sie emulieren möchten. Sie können außerdem viele häufig verwendete Features wie Standort, Netzwerk, Benachrichtigungen, Sensoren, den Beschleunigungsmesser und die optionale SD-Karte testen.  
   
- Weitere Informationen über die Funktionen, die Sie im Emulator testen können, finden Sie unter [Testen von app-Features in Windows Phone-Emulator](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Weitere Informationen über die Funktionen, die Sie im Emulator testen können, finden Sie unter [Testen von app-Features in Windows Phone-Emulator](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  In Kombination mit Visual Studio stellt der Emulator eine vollständige Umgebung bereit, in der Sie Windows Phone-Apps entwerfen, entwickeln, debuggen und testen können.  
   
@@ -113,7 +108,7 @@ Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Si
 ##  <a name="BKMK_toolbar"></a> Konfigurieren Sie den Windows Phone-Emulator über die Symbolleiste des Emulators  
  In dieser Tabelle sind die auf der Symbolleiste des Emulators verfügbaren Konfigurationsschaltflächen sichtbar.  
   
-|Schaltflächen der Symbolleiste|Konfigurationsoptionen|  
+|Schaltflächen auf der Symbolleiste|Konfigurationsoptionen|  
 |---------------------|---------------------------|  
 |![Eingabeoptionen auf Windows Phone-Emulator-Symbolleiste](../debugger/media/wp-emulator.png "WP_Emulator_")|**Konfigurieren einer Einzel- oder multipunkteingabe**<br /><br /> Wenn Sie die Multipunkteingabe aktivieren, können Sie mit der rechten Maustaste klicken, um die Berührungspunkte zu verschieben, ohne den Bildschirm zu berühren. Dann können Sie mit der linken Maustaste klicken, um beide Berührungspunkte gleichzeitig zu verschieben.|  
 |![Ausrichtung auf Windows Phone-Emulator-Symbolleiste](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**Konfigurieren der Ausrichtung des Emulators**<br /><br /> Sie können die Ausrichtung im Windows Phone-Emulator in eine der drei folgenden Ausrichtungen ändern: Hochformat, Querformat links oder Querformat rechts. Die Größe des Emulators wird bei einer Änderung der Ausrichtung nicht geändert.<br /><br /> Klicken Sie zum Ändern der Ausrichtung auf die **nach links drehen** Schaltfläche oder die **nach rechts drehen** Schaltfläche.|  
@@ -153,7 +148,7 @@ Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Si
   
 |Computerhardwaretaste|Windows Phone-Taste|Hinweise|  
 |---------------------------|-----------------------------------|-----------|  
-|F1|RÜCKTASTE|Langes Drücken funktioniert erwartungsgemäß.|  
+|F1|ZURÜCK|Langes Drücken funktioniert erwartungsgemäß.|  
 |F2|START|Langes Drücken funktioniert erwartungsgemäß.|  
 |F3|SUCHE||  
 |F4|Im Windows 10-Emulator wird zwischen der Verwendung der Tastatur des lokalen Computers und der Nicht-Verwendung der Tastatur des lokalen Computers umgeschaltet.|Gilt nicht für den Windows 8/8.1-Emulator.|  
@@ -171,7 +166,7 @@ Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Si
 |BILD-AB|Deaktiviert die Hardwaretastatur (gilt nur für den Windows 8/8.1-Emulator).|Gilt nicht für den Windows 10-Emulator.|  
   
 ##  <a name="BKMK_checkpoints"></a> Speichern und Laden von benutzerdefinierten Prüfpunkten  
- Speichern Sie eine Momentaufnahme des Emulator-Zustands mit den **Prüfpunkte** des Emulators auf der Registerkarte **zusätzliche Tools**. Diese Funktion ist nützlich, wenn Sie Ihre App häufig mit denselben Daten und Einstellungen testen.  
+ Speichern Sie eine Momentaufnahme des Emulator-Zustands mit den **Prüfpunkte** des Emulators auf der Registerkarte **zusätzliche Tools**. Dieses Feature ist nützlich, wenn Sie Ihre App häufig mit denselben Daten und Einstellungen testen.  
   
  Wenn für die App beispielsweise mehrere Kontakte erforderlich sind, können Sie den Kontaktdatensatz einmal erstellen und dann eine Momentaufnahme des Emulators speichern. Andernfalls müssten Sie den Kontaktdatensatz bei jedem Starten des Emulators erneut erstellen.  
   
@@ -225,6 +220,3 @@ Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Si
 -   Geben Sie einen Releasebuild in Visual Studio an. Starten Sie nach dem Angeben eines Releasebuilds, die Ihre app durch Auswählen der **bereitstellen _[app-Name]_**  auf einen link auf die **erstellen** Menü.  
   
 -   Alternativ können Sie die Codezeile in der Datei app.xaml.cs oder app.xaml.vb auskommentieren, die den Wert von `EnableFrameRateCounter` auf `true` festlegt.
-
-
-

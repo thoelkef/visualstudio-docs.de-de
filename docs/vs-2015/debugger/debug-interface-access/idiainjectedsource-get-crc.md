@@ -1,14 +1,9 @@
 ---
 title: 'Idiainjectedsource:: Get_crc | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2ecdda93-950e-40d6-b79b-4ae3c55b6cfc
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4445585b07a38ed4b3fa2ed5dde88ebd2785679f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb62e5ad1d67f0e7bc85692935e64f85eb1c72df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957323"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ HRESULT get_crc ( 
  [out] Gibt das CRC berechnet die Bytes des Quellcodes.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
-
-
-

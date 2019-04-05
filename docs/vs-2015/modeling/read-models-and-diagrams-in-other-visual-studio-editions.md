@@ -1,25 +1,22 @@
 ---
 title: Lesen von Modellen und Diagrammen in anderen Visual Studio-Versionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956726"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +68,3 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
-
-
-

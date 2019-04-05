@@ -1,29 +1,24 @@
 ---
-title: 'Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1 | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Neue Projektgenerierung: In die Hintergründe, Teil 1 | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958542"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Generieren neuer Projekte: Einblick in die Hintergründe, Teil 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Jemals daran gedacht, dazu, wie Sie Ihren eigenen Projekttyp erstellen? Fragen Sie sich, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen? Lassen Sie uns einen Blick hinter die Kulissen, und sehen, was wirklich passiert.  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Wenn dieser Unterschlüssel vorhanden ist, wird die Position des Stammknotens im Dialogfeld Developer-Einstellungen gesteuert. Ein auf ein Objekt angewendeter  
   
- DeveloperActivity REG_SZ VC#-  
+ DeveloperActivity REG_SZVC#  
   
  Gibt an, dass es sich bei Visual c# ein Stammknoten ist, wenn Visual Studio festgelegt ist, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Entwicklung. Andernfalls wird es sein, einen untergeordneten Knoten des **andere Sprachen**.  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   Die Sortierreihenfolge kann geändert werden.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Suchen den Stammknoten für einen Projekttyp  
- Wenn Visual Studio die ProjectTemplates Ordner durchlaufen werden, alle ZIP-Dateien geöffnet und VSTEMPLATE-Dateien extrahiert. Eine VSTEMPLATE-Datei verwendet die XML-Vorlage einer Anwendung beschrieben. Weitere Informationen finden Sie unter [Generieren neuer Projekte: Under the Hood, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Wenn Visual Studio die ProjectTemplates Ordner durchlaufen werden, alle ZIP-Dateien geöffnet und VSTEMPLATE-Dateien extrahiert. Eine VSTEMPLATE-Datei verwendet die XML-Vorlage einer Anwendung beschrieben. Weitere Informationen finden Sie unter [Generieren neuer Projekte: In die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Die \<ProjectType >-Tag der Projekttyp für die Anwendung bestimmt. Beispielsweise enthält die Datei \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip eine EmptyProject.vstemplate-Datei, die dieses Tag weist:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** als untergeordneter Knoten des Visual C# -Code direkt unter der Windows-Knoten wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Generieren neuer Projekte: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Generieren neuer Projekte: In die Hintergründe Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

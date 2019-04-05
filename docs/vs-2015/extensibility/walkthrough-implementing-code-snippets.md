@@ -1,24 +1,19 @@
 ---
 title: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752060"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956159"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
   
 1. Erstellen Sie die folgende Verzeichnisstruktur:  
   
-    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
     wo *% INSTALLDIR%* ist der Visual Studio-Installationsordner. (Obwohl dieser Pfad in der Regel verwendet wird, um Codeausschnitte zu installieren, können Sie einen Pfad angeben.)  
   
@@ -124,7 +119,7 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  Öffnen Sie im Projekt die Datei "Source.Extension.vsixmanifest" ein.  
   
@@ -254,4 +249,3 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
 7.  Klicken Sie in einem anderen Teil des Texts Geben Sie "test", und drücken Sie dann die Registerkarte. Da "Test" die Verknüpfung eines Codeausschnitts ist, sollte erneut der Ausschnitt eingefügt werden.  
   
 ## <a name="next-steps"></a>Nächste Schritte
-

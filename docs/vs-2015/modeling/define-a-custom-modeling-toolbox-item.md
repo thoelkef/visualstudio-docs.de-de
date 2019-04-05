@@ -1,25 +1,22 @@
 ---
 title: Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957386"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +58,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
     -   Ein einzelnes **tbxinfo** Datei zum Definieren mehrerer Tools verwendet werden kann. Diese kann auf Diagrammdateien verweisen, die sich in Unterordnern befinden.  
   
-5.  Starten Sie Visual Studio neu. Das zusätzliche Tool wird in der Toolbox für den entsprechenden Diagrammtyp angezeigt.  
+5.  Starten Sie Visual Studio neu. Das zusätzliche Tool wird in der Toolbox für den entsprechenden Diagrammtyp angezeigt.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>Was vom benutzerdefinierten Tool repliziert wird  
  Ein benutzerdefiniertes Tool repliziert die meisten Funktionen des Quelldiagramms:  
@@ -164,7 +161,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
 4.  Fügen Sie die Toolboxdefinitionen dem Projekt hinzu. Enthalten die **tbxinfo** -Datei, die Diagrammdateien, Bitmapdateien und alle Ressourcendateien ein, und stellen Sie sicher, dass sie in die VSIX-Datei enthalten sind.  
   
-    -   Wählen Sie im Projektmappen-Explorer auf das Kontextmenü des VSIX-Projekts **hinzufügen**, **vorhandenes Element**. Klicken Sie im Dialogfeld festlegen **Objekttyp: alle Dateien**. Suchen Sie die Dateien, wählen sie alle aus, und wählen Sie dann **hinzufügen**.  
+    -   Wählen Sie im Projektmappen-Explorer auf das Kontextmenü des VSIX-Projekts **hinzufügen**, **vorhandenes Element**. Klicken Sie im Dialogfeld festlegen **Objekttyp: Alle Dateien**. Suchen Sie die Dateien, wählen sie alle aus, und wählen Sie dann **hinzufügen**.  
   
         > [!NOTE]
         >  In diesem Projekt können die Diagrammdateien nicht im Modell-Editor geöffnet werden.  
@@ -200,7 +197,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
      Erstellen oder öffnen Sie in der experimentellen Instanz ein UML-Diagramm des relevanten Typs. Stellen Sie sicher, dass das neue Tool in der Toolbox angezeigt wird und dass Elemente ordnungsgemäß erstellt werden.  
   
-10. **Um eine VSIX-Datei für die Bereitstellung zu erhalten:** öffnen Sie im Windows-Explorer den Ordner **.\bin\Debug** oder **.\bin\Release** finden die **VSIX** Datei. Dies ist eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterungsdatei. Sie kann auf dem Computer installiert und an andere Visual Studio-Benutzer gesendet werden.  
+10. **So erhalten Sie eine VSIX-Datei für die Bereitstellung:** Öffnen Sie im Windows-Explorer den Ordner **.\bin\Debug** oder **.\bin\Release** finden die **VSIX** Datei. Dies ist eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterungsdatei. Sie kann auf dem Computer installiert und an andere Visual Studio-Benutzer gesendet werden.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>So installieren Sie benutzerdefinierte Tools aus einer Visual Studio-Erweiterung  
   
@@ -241,6 +238,3 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definieren von Validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Debuggen einer ausführbaren Datei nicht Visual Studio-Projektmappe angehört | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Eine ausführbare Datei nicht Teil von Visual Studio-Projektmappe debuggen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958378"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Gewusst wie: Debuggen einer ausführbaren Datei, die keiner Visual Studio-Projektmappe angehört
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Vorgehensweise: Debuggen einer ausführbaren Datei nicht Visual Studio-Projektmappe angehört
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Manchmal kann es erforderlich sein, eine ausführbare Datei zu debuggen, die nicht Bestandteil eines [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekts ist. Die ausführbare Datei wurde möglicherweise außerhalb von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt, oder sie stammt von einem anderen Entwickler.  
@@ -68,12 +63,9 @@ Manchmal kann es erforderlich sein, eine ausführbare Datei zu debuggen, die nic
     > [!NOTE]
     >  EXE-Projekte werden nicht von allen Programmiersprachen unterstützt. Installieren Sie [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], falls Sie diese Funktion benötigen.  
   
-     Wenn Sie eine ausführbare Datei ohne den Quellcode debuggen, sind die verfügbaren Debugfunktionen eingeschränkt, und zwar abhängig davon, ob es sich um ein Anhängen an eine laufende ausführbare Datei handelt, oder ob die ausführbare Datei einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe hinzufügt wird. Wenn die ausführbare Datei ohne Debuginformationen in einem kompatiblen Format erstellt wurde, sind die verfügbaren Features noch weiter eingeschränkt. Falls der Quellcode verfügbar ist, empfiehlt es sich, den Quellcode in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu importieren und ein Debugbuild der ausführbaren Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu erstellen.  
+     Wenn Sie eine ausführbare Datei ohne den Quellcode debuggen, sind die verfügbaren Debugfunktionen eingeschränkt, und zwar abhängig davon, ob es sich um ein Anhängen an eine laufende ausführbare Datei handelt, oder ob die ausführbare Datei einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe hinzufügt wird. Wenn die ausführbare Datei ohne Debuginformationen in einem kompatiblen Format erstellt wurde, sind die verfügbaren Funktionen noch weiter eingeschränkt. Falls der Quellcode verfügbar ist, empfiehlt es sich, den Quellcode in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu importieren und ein Debugbuild der ausführbaren Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu erstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Debuggersicherheit](../debugger/debugger-security.md)   
- [DBG-Dateien](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
+ [DBG-Dateien](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)
