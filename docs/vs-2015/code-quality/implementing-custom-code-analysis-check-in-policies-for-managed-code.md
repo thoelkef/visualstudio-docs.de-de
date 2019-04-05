@@ -1,14 +1,9 @@
 ---
 title: Implementieren von benutzerdefiniertem Code Codeanalyse-Eincheckrichtlinien für verwalteten Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946215"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
  Um eine benutzerdefinierte Regel für ein Teamprojekt zu erstellen, Sie für den Regelsatz-Eincheckrichtlinie einen speziellen Ordner zuerst erstellen **Quellcodeverwaltungs-Explorer**. Dann erstellen die Regelsatzdatei und fügen Sie die Datei zur Versionskontrolle hinzu. Abschließend geben Sie den Regelsatz, der als das Einchecken Codeanalyserichtlinie für das Teamprojekt.  
   
 > [!NOTE]
->  Um einen Ordner in einem Teamprojekt zu erstellen, müssen Sie zuerst das Stammverzeichnis des Projekts Team an einem Speicherort auf dem lokalen Computer zuordnen. Weitere Informationen finden Sie unter [erstellen und Verwenden von Arbeitsbereichen (ALT)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Um einen Ordner in einem Teamprojekt zu erstellen, müssen Sie zuerst das Stammverzeichnis des Projekts Team an einem Speicherort auf dem lokalen Computer zuordnen. Weitere Informationen finden Sie unter [erstellen und Verwenden von Arbeitsbereichen (ALT)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Erstellen Sie den Versionskontrollordner für den Regelsatz-Eincheckrichtlinie  
   
@@ -124,6 +119,3 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
 7.  In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
   
 8.  Geben Sie die lokale Version der Regelsatzdatei der Eincheckrichtlinie.
-
-
-

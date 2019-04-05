@@ -1,14 +1,9 @@
 ---
 title: Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946863"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Erstellen Sie benutzerdefinierter Ansichten von systemeigenen Objekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +348,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 -   Wenn ein `Expand` -Knoten ohne untergeordnete Knoten angegeben wird, kann der Typ in den Debuggerfenstern nicht erweitert werden.  
 
 ####  <a name="BKMK_Item_expansion"></a> Item-Erweiterung  
- Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das`Item` -Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect`-Klasse mit `top`, `left`, `right` und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
+ Das `Item` -Element ist das einfachste und häufigste Element in einem `Expand` -Knoten. Das`Item` -Element definiert ein einzelnes untergeordnetes Element. Angenommen, Sie haben beispielsweise eine `CRect` -Klasse mit `top`, `left`, `right`und `bottom` als dessen Felder und den folgenden Visualisierungseintrag:  
 
 ```xml  
 <Type Name="CRect">  
@@ -432,7 +427,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
  ![Zweidimensionales Array mit ArrayItems-Erweiterung](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
 ####  <a name="BKMK_IndexListItems_expansion"></a> IndexListItems-Erweiterung  
- Sie können die `ArrayItems` -Erweiterung nur dann verwenden, wenn die Arrayelemente im Arbeitsspeicher zusammenhängend angeordnet sind. Der Debugger erreicht das nächste Element, indem einfach der Zeiger auf das aktuelle Element erhöht wird. Für die Fälle, bei denen der Index für Wertknoten bearbeitet werden muss, können Sie die `IndexListItems`-Knoten verwenden. Im Folgenden ist eine Visualisierung mithilfe des `IndexListItems` -Knotens angegeben:  
+ Sie können die `ArrayItems` -Erweiterung nur dann verwenden, wenn die Arrayelemente im Arbeitsspeicher zusammenhängend angeordnet sind. Der Debugger erreicht das nächste Element, indem einfach der Zeiger auf das aktuelle Element erhöht wird. Für die Fälle, bei denen der Index für Wertknoten bearbeitet werden muss, können Sie die `IndexListItems` -Knoten verwenden. Im Folgenden ist eine Visualisierung mithilfe des `IndexListItems` -Knotens angegeben:  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -471,14 +466,14 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 ```  
 
- Das `Size`-Element bezieht sich auf die Länge der Liste. `HeadPointer` zeigt auf das erste Element, `NextPointer` bezieht sich auf das nächste Element, und `ValueNode` verweist auf den Wert des Elements.  
+ Das `Size` -Element bezieht sich auf die Länge der Liste. `HeadPointer` zeigt auf das erste Element, `NextPointer` bezieht sich auf das nächste Element, und `ValueNode` verweist auf den Wert des Elements.  
 
--   Die `NextPointer` - und `ValueNode` -Ausdrücke werden im Kontext des verknüpften Listenknotenelements und nicht im Kontext des übergeordneten Listentyps ausgewertet. Im obigen Beispiel hat `CAtlList` eine `CNode`-Klasse (in `atlcoll.h`), die einen Knoten der verknüpften Liste darstellt. `m_pNext` und `m_element` sind Felder dieser `CNode` -Klasse und nicht der `CAtlList` -Klasse.  
+-   Die `NextPointer` - und `ValueNode` -Ausdrücke werden im Kontext des verknüpften Listenknotenelements und nicht im Kontext des übergeordneten Listentyps ausgewertet. Im obigen Beispiel hat `CAtlList` eine `CNode` -Klasse (in `atlcoll.h`), die einen Knoten der verknüpften Liste darstellt. `m_pNext` und `m_element` sind Felder dieser `CNode` -Klasse und nicht der `CAtlList` -Klasse.  
 
 -   Sie können `ValueNode` leer lassen oder mithilfe von `this` auf den verknüpften Listenknoten verweisen.  
 
 #### <a name="customlistitems-expansion"></a>CustomListItems-Erweiterung  
- Die `CustomListItems`-Erweiterung ermöglicht Ihnen das Schreiben von benutzerdefinierter Logik für das Traversieren einer Datenstruktur, beispielsweise einer Hashtabelle. Sie sollten `CustomListItems` zum Visualisieren von Datenstrukturen verwenden, in denen alles, was Sie zum Auswerten benötigen, mithilfe von C++-Ausdrücken ausgedrückt werden kann, jedoch nicht wirklich für `ArrayItems`, `TreeItems`oder `LinkedListItems.`geeignet ist.  
+ Die `CustomListItems` -Erweiterung ermöglicht Ihnen das Schreiben von benutzerdefinierter Logik für das Traversieren einer Datenstruktur, beispielsweise einer Hashtabelle. Sie sollten `CustomListItems` zum Visualisieren von Datenstrukturen verwenden, in denen alles, was Sie zum Auswerten benötigen, mithilfe von C++-Ausdrücken ausgedrückt werden kann, jedoch nicht wirklich für `ArrayItems`, `TreeItems`oder `LinkedListItems.`geeignet ist.  
 
  Die Schnellansicht für CAtlMap ist ein tolles Beispiel dafür, in welchen Fällen `CustomListItems` angemessen ist.  
 
@@ -532,7 +527,7 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 
 ```  
 
- Die Syntax ist mit dem `LinkedListItems`-Knoten nahezu identisch. `LeftPointer`, `RightPointer`und `ValueNode` werden im Kontext der Strukturknotenklasse ausgewertet, und `ValueNode` können leer gelassen werden oder `this` aufweisen, um auf den Strukturknoten selbst zu verweisen.  
+ Die Syntax ist mit dem `LinkedListItems` -Knoten nahezu identisch. `LeftPointer`, `RightPointer`und `ValueNode` werden im Kontext der Strukturknotenklasse ausgewertet, und `ValueNode` können leer gelassen werden oder `this` aufweisen, um auf den Strukturknoten selbst zu verweisen.  
 
 ####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem-Erweiterung  
  Das `ExpandedItem` -Element kann verwendet werden, um eine aggregierte untergeordnete Ansicht zu generieren, indem die Eigenschaften von Basisklassen oder Datenmembern so angezeigt werden, als ob sie untergeordnete Elemente des Schnellansichtstyps wären. Der angegebene Ausdruck wird ausgewertet, und die untergeordneten Knoten des Ergebnisses werden an die untergeordnete Liste des Schnellansichtstyps angefügt. Angenommen, es gibt beispielsweise einen intelligenten Zeiger vom Typ `auto_ptr<vector<int>>` , der normalerweise wie folgt angezeigt wird:  
@@ -632,12 +627,9 @@ Mit dem Natvis-Framework in Visual Studio können Sie die Darstellung anpassen, 
 </Type>  
 ```  
 
- Ein Beispiel für Benutzeroberflächenschnellansichten (UIVisualizer) finden Sie in der Image Watch-Erweiterung, die zum Anzeigen von Bitmaps im Speicher verwendet wird: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Sie können ein Beispiel finden Sie in der Image Watch-Erweiterung, die zum Anzeigen von Bitmaps im Speicher finden Sie unter: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>CustomVisualizer-Element  
  `CustomVisualizer` ist ein Erweiterungspunkt. Er gibt eine VSIX-Erweiterung an, die Sie schreiben können, um die Visualisierung im Code zu steuern, der in Visual Studio ausgeführt wird. Weitere Informationen zum Schreiben von VSIX-Erweiterungen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Eine benutzerdefinierte Schnellansicht zu schreiben, ist viel aufwendiger als das Schreiben einer XML-Natvis-Definition. Sie sind jedoch nicht an Beschränkungen gebunden, wenn es darum geht, was Natvis unterstützt und was nicht. Benutzerdefinierte Schnellansichten verfügen über Zugriff auf den vollständigen Satz der Debugger-Erweiterbarkeits-APIs. Diese können zum Abfragen und Ändern des debuggenden Prozesses oder zum Kommunizieren mit anderen Bestandteilen von Visual Studio verwendet werden.  
 
  Sie können die Attribute `Condition`, `IncludeView`und `ExcludeView` für „CustomVisualizer“-Elemente verwenden.
-
-
-

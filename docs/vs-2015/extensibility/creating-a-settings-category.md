@@ -1,31 +1,26 @@
 ---
 title: Erstellen einer Einstellungskategorie | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960812"
 ---
 # <a name="creating-a-settings-category"></a>Erstellen einer Einstellungskategorie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual Studio-Einstellungen und zum Speichern von Werten, und Werte aus einer Datei wiederherstellen. Eine Einstellungskategorie ist eine Gruppe von verwandten Eigenschaften, die als ein "benutzerdefinierter einstellungspunkt"; d. h. als Kontrollkästchen in der **Einstellungen importieren und Exporte** Assistenten. (Sie finden es auf die **Tools** Menü.) Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und der einzelne Einstellungen werden im Assistenten nicht angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual Studio-Einstellungen und zum Speichern von Werten, und Werte aus einer Datei wiederherstellen. Eine Einstellungskategorie ist eine Gruppe von verwandten Eigenschaften, die als ein "benutzerdefinierter einstellungspunkt"; d. h. als Kontrollkästchen in der **Einstellungen importieren und Exporte** Assistenten. (Sie finden es auf die **Tools** Menü.) Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und der einzelne Einstellungen werden im Assistenten nicht angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Erstellen eine Einstellungskategorie durch Ableiten von der <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse.  
   
@@ -43,7 +38,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual 
   
 2.  Öffnen Sie die VSPackage.resx-Datei, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:  
   
-    |name|Wert|  
+    |Name|Wert|  
     |----------|-----------|  
     |106|Meine Kategorie|  
     |107|Meine Einstellungen|  
@@ -104,7 +99,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual 
   
 4.  Ändern Sie den Wert der **OptionFloat** zu 3,1416 und **OptionInteger** bis 12. Klicken Sie auf **OK**.  
   
-5.  Auf der **Tools** Menü klicken Sie auf **Einstellungen importieren und exportieren**.  
+5.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.  
   
      Die **Einstellungen importieren und exportieren** -Assistent wird angezeigt.  
   
@@ -160,4 +155,3 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual 
 16. Stellen Sie sicher, dass **Meine Einstellungen** ausgewählt ist, und klicken Sie dann auf **Fertig stellen**. Wenn die **Importvorgang abgeschlossen** klicken Sie mit der Seite angezeigt wird, auf **schließen**.  
   
 17. Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie **My Category**, klicken Sie auf **Meine Rasterseite** und stellen Sie sicher, dass die Eigenschaftswerte für die Kategorie haben wurde wiederhergestellt.
-
