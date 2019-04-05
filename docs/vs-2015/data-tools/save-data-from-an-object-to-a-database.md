@@ -1,12 +1,9 @@
 ---
 title: Speichern von Daten aus einem Objekt in einer Datenbank | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,19 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956397"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem Objekt eines TableAdapters-DBDirect-Methoden übergeben (z. B. `TableAdapter.Insert`). Weitere Informationen finden Sie unter [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem Objekt eines TableAdapters-DBDirect-Methoden übergeben (z. B. `TableAdapter.Insert`).
   
  Klicken Sie zum Speichern von Daten aus einer Auflistung von Objekten, durchlaufen Sie die Auflistung von Objekten (z. B. eine for-Next-Schleife), und senden Sie die Werte für jedes Objekt an die Datenbank mithilfe einer der TableAdapters-DBDirect-Methoden.  
   
@@ -85,4 +82,3 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-
