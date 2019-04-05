@@ -1,27 +1,22 @@
 ---
 title: RegPkg-Hilfsprogramm | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: da637b365eec260a7c1c34bbe7ba96c785cc18fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b93f6946f8043a2e4aecfda91ceb02e568a17869
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962013"
 ---
 # <a name="regpkg-utility"></a>RegPkg-Hilfsprogramm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51781282"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
 ```  
   
- /Root:Root  
+ /root:root  
  Führt die Registrierung unter der angegebenen  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Stamm.  
@@ -62,10 +57,10 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /codebase  
  Erzwingt, dass die Registrierung mit Codebasis und nicht als Assembly.  
   
- / Assembly  
+ /assembly  
  Erzwingt, dass die Registrierung mit Assembly anstelle der Codebasis.  
   
- / unregister  
+ /unregister  
  Hebt die Registrierung dieses Pakets.  Kann nicht verwendet werden  
   
  mit/regfile oder /vrgfile /rgsfile oder /wixfile.  
@@ -73,4 +68,3 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 ## <a name="see-also"></a>Siehe auch  
  [Freigeben eines Produkts](../../misc/releasing-a-visual-studio-integration-product.md)   
  [Problembehandlung bei der Registrierung des RegPkg-Pakets](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 'Schnellstart: Debuggen von JavaScript mithilfe der Konsole | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961550"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Schnellstart: Debuggen von JavaScript mit der Konsole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,9 +161,9 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Die App wird ausgeführt, aber es fehlen Bilder. APPHOST-Fehler im JavaScript-Konsolenfenster geben an, dass Bilder fehlen.  
   
-9. Geben Sie bei laufender `FlipView`-App im Simulator oder Phone-Emulator die Zeichenfolge `Data.items` an der Eingabeaufforderung des Konsolenfensters (neben dem Symbol ">>") ein, und drücken Sie die EINGABETASTE.  
+9. Mit der `FlipView` -app im Simulator oder Windows Phone-Emulator, Typ `Data.items` in der Eingabeaufforderung des Konsolenfensters (neben der ">>" Symbol), und drücken Sie die EINGABETASTE.  
   
-     Im Konsolenfenster wird eine Schnellansicht für das `items`-Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
+     Im Konsolenfenster wird eine Schnellansicht für das `items` -Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
   
      ![JavaScript-Konsolenfenster](../debugger/media/js-console-window.png "JS_Console_Window")  
   
@@ -212,7 +207,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 18. Beenden Sie das Debuggen, indem Sie **Debuggen** > **Debuggen beenden** auswählen, oder indem Sie UMSCHALT+F5 drücken, und korrigieren Sie anschließend den Quellcode.  
   
-     Die vollständige "default.HTML"-Seite mit dem korrigierten Beispielcode finden Sie unter [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Die vollständige Seite „default.html“ mit dem korrigierten Beispielcode finden Sie unter [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Interaktiver Debug- und Unterbrechungsmodus  
  Sie können Haltepunkte verwenden und Einzelschritte im Code durchführen, während Sie JavaScript-Debugtools wie z. B. das JavaScript-Konsolenfenster verwenden. Wenn ein im Debugger ausgeführtes Programm einen Haltepunkt erreicht, unterbricht der Debugger vorübergehend die Ausführung des Programms. Wenn die Ausführung angehalten wird, wechselt das Programm vom Ausführungs- in den Unterbrechungsmodus. Sie können die Ausführung jederzeit wieder fortsetzen.  
@@ -276,19 +271,16 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 -   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] und Windows Phone Store-Apps mit JavaScript und HTML  
   
--   Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)] ausgeführt  
+-   Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)]ausgeführt  
   
 -   Internet Explorer 10 wird unter [!INCLUDE[win8](../includes/win8-md.md)]ausgeführt  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)   
  [Produktsupport und Barrierefreiheit](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

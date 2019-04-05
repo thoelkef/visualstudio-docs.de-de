@@ -1,14 +1,9 @@
 ---
 title: 'CA2238: Serialisierungsmethoden korrekt implementieren | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
@@ -20,17 +15,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864282"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59001826"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serialisierungsmethoden korrekt implementieren
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serialisierungsmethoden korrekt implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA2238: Serialisierungsmethoden korrekt implementieren](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA2238: Serialisierungsmethoden korrekt implementieren](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) auf docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -68,7 +63,7 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA2238: Seri
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/vb/FxCop.Usage.SerializationEventHandlers.vb#1)]  
   
 ## <a name="related-rules"></a>Verwandte Regeln  
- [CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+ [CA2236: Aufrufen von Basisklassenmethoden auf ISerializable-Typen](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
  [CA2240: ISerializable ordnungsgemäß implementieren](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
@@ -81,4 +76,3 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA2238: Seri
  [CA2239: Deserialisierungsmethoden für optionale Felder angeben](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
  [CA2120: Sichere Serialisierungskonstruktoren](../code-quality/ca2120-secure-serialization-constructors.md)
-

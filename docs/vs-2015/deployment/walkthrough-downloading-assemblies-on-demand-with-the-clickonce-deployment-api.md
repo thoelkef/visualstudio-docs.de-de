@@ -1,14 +1,9 @@
 ---
-title: 'Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,18 @@ ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961232"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung werden heruntergeladen, wenn die Anwendung zuerst ausgeführt wird. Allerdings müssen Sie Teile Ihrer Anwendung möglicherweise, die durch eine kleine Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie bestimmte Assemblys in Ihrer Anwendung als "optional" markieren und zum Herunterladen mithilfe von Klassen der <xref:System.Deployment.Application> Namespace verwenden, wenn die common Language Runtime (CLR) angefordert.  
+Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung werden heruntergeladen, wenn die Anwendung zuerst ausgeführt wird. Allerdings müssen Sie Teile Ihrer Anwendung möglicherweise, die durch eine kleine Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application>-Namespace verwenden, wenn diese von der Common Language Runtime (CLR) angefordert werden.  
   
 > [!NOTE]
 >  Die Anwendung muss mit voller Vertrauenswürdigkeit ausgeführt werden, um dieses Verfahren zu verwenden.  
@@ -108,7 +103,7 @@ Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../inc
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>So markieren Assemblys als optional klicken Sie in der ClickOnce-Anwendung mit MageUI.exe  
   
-1.  Erstellen Sie ein Anwendungsmanifest unter Verwendung von MageUI.exe, siehe [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Verwenden Sie die folgenden Einstellungen für das Anwendungsmanifest:  
+1.  Erstellen Sie ein Anwendungsmanifest unter Verwendung von MageUI.exe, siehe [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Verwenden Sie die folgenden Einstellungen für das Anwendungsmanifest:  
   
     -   Nennen Sie das Anwendungsmanifest `ClickOnceOnDemand`.  
   
@@ -116,7 +111,7 @@ Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../inc
   
     -   Auf der **Dateien** Seite in der Zeile ClickOnceLibrary.dll Typ `ClickOnceLibrary.dll` in die **Gruppe** Spalte.  
   
-2.  Erstellen Sie ein Bereitstellungsmanifest mithilfe MageUI.exe, wie im [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Verwenden Sie die folgenden Einstellungen für das Bereitstellungsmanifest aus:  
+2.  Erstellen Sie ein Bereitstellungsmanifest mithilfe MageUI.exe, wie im [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Verwenden Sie die folgenden Einstellungen für das Bereitstellungsmanifest aus:  
   
     -   Nennen Sie das Bereitstellungsmanifest `ClickOnceOnDemand`.  
   
@@ -132,10 +127,7 @@ Standardmäßig alle Assemblys enthalten, in einem [!INCLUDE[ndptecclick](../inc
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  Wenn das Hauptformular angezeigt wird, drücken Sie die <xref:System.Windows.Forms.Button>. Eine Zeichenfolge in einem Meldungsfeldfenster sollte angezeigt werden, die "Hello, World!" liest.  
+3.  Wenn das Hauptformular angezeigt wird, drücken Sie die <xref:System.Windows.Forms.Button>. Daraufhin sollte eine Zeichenfolge in einem Meldungsfeldfenster angezeigt werden, die „Hello, World!“ lautet.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-
