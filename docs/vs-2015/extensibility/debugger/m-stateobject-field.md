@@ -1,26 +1,21 @@
 ---
 title: M_stateObject-Feld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3231f63d91e8393e5fa1417d97202d1b46cdd571
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947334"
 ---
 # <a name="mstateobject-field"></a>m_stateObject-Feld
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,4 +39,3 @@ Ein Objekt, das Daten darstellt, die die Aktion verwendet wird.
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenklasse](../../extensibility/debugger/task-class-internal-members.md)
-

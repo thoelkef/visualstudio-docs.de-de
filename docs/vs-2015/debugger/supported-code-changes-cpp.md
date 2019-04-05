@@ -1,14 +1,9 @@
 ---
 title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797974"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001629"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,8 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
  Weitere Informationen zum Arbeiten mit „Bearbeiten und Fortfahren“ für C++ in Visual Studio finden Sie unter [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
- Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
+
+Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
   
 - Die meisten Änderungen an globalen oder statischen Daten.  
   
@@ -68,7 +64,7 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
 - Änderungen an Code ohne Objektdatei.  
   
-  Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
+Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
   
 - Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
   
@@ -149,6 +145,3 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
 ## <a name="see-also"></a>Siehe auch  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-
