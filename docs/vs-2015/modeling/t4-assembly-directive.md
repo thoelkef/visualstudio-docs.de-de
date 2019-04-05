@@ -1,25 +1,22 @@
 ---
 title: T4-Assemblydirektive | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960763"
 ---
-# <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
+# <a name="t4-assembly-directive"></a>T4-Assemblydirektive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Anweisung eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt vergleichbar.  
@@ -30,7 +27,7 @@ In einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwurfszeittextvorlage wi
 >  Die `assembly`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt.  
   
 ## <a name="using-the-assembly-directive"></a>Verwenden der Assemblyanweisung  
- Die Syntax der Direktive lautet wie folgt:  
+ Die Syntax der Anweisung lautet wie folgt:  
   
 ```  
 <#@ assembly name="[assembly strong name|assembly file name]" #>  
@@ -59,7 +56,7 @@ In einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwurfszeittextvorlage wi
   
 - `WindowsBase.dll`  
   
-  Wenn Sie eine benutzerdefinierte Anweisung verwenden, lädt der Anweisungsprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblyanweisungen für die folgenden Assemblys schreiben:  
+  Wenn Sie eine benutzerdefinierte Direktive verwenden, lädt der Direktivenprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblyanweisungen für die folgenden Assemblys schreiben:  
   
 - `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
@@ -97,6 +94,3 @@ In einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwurfszeittextvorlage wi
   
 ## <a name="see-also"></a>Siehe auch  
  [T4-Include-Direktive](../modeling/t4-include-directive.md)
-
-
-

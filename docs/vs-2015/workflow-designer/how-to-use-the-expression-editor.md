@@ -1,11 +1,8 @@
 ---
 title: 'Vorgehensweise: Verwenden Sie den Ausdrucks-Editor | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,15 +10,15 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961811"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks-Editors
+# <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks Editors
 Der Ausdrucks-Editor ist ein [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Steuerelement, das in vielen Workflowaktivitäten zum Eingeben und Auswerten von Ausdrücken verwendet wird. Der Ausdrucks-Editor stellt vollständige IDE-Bearbeitungsumgebung bereit, einschließlich IntelliSense, Einfärbung, ParamInfo, Fehlerschnörkel und weitere Funktionen. Der Compiler überprüft den Ausdruck, nachdem er eingegeben wurde. Wenn der Ausdruck ungültig ist, wird ein Fehlersymbol angezeigt. Der Editor kann auch geöffnet werden, als ein **Ausdrucks-Editor** Dialogfeld.  
   
  Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code. Sie enthalten Wertelemente, die (z. B. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen kombiniert werden, um einen neuen Wert zu ergeben. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass Großschreibung spielt keine Rolle, Vergleich erfolgt über ein einzelnes Gleichheitszeichen ("=") anstelle von ("==") sind die booleschen Operatoren die Wörter "and" und "or" statt der Symbole "& &" und "&#124;&#124;", und **"Nothing"**  anstelle **null**. Weitere Informationen zu Ausdrücken und Operatoren in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und einige Beispiele finden Sie unter [Operatoren und Ausdrücke in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).  

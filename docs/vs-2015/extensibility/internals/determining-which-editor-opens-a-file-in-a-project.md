@@ -1,14 +1,9 @@
 ---
 title: Bestimmen, welcher Editor eine Datei in einem Projekt öffnet | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741606"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961517"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Bestimmen, welcher Editor eine Datei in einem Projekt öffnet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Wenn ein Benutzer eine Datei in einem Projekt geöffnet wird, durchläuft die Um
   
  Das Projekt verschiedene Dateien Ansprüche werden alle Dateien, die nicht von anderen Projekten in Anspruch genommen werden. Auf diese Weise können benutzerdefinierte Editoren Dokumente öffnen, bevor sie standard-Editoren zu öffnen. Wenn ein Projekt verschiedene Dateien auf eine Datei Ansprüche, die Umgebung Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um die Datei mit einem standard-Editor zu öffnen. Die Umgebung überprüft ihre interne Liste von registrierten Editoren für das RTF-Dateien behandelt. Diese Liste befindet sich in der Registrierung unter folgendem Schlüssel:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
   
  Die Umgebung überprüft auch die Klassenbezeichner im HKEY_CLASSES_ROOT\CLSID Schlüssel für alle Objekte, die Unterschlüssel DocObject aufweisen. Wenn die Dateierweiterung dort gefunden wird, wird eine eingebettete Version von der Anwendung, z.B. Microsoft Word ein direktes in Visual Studio erstellt. Diese Dokumentobjekte müssen compound-Dateien, die implementiert werden die <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> -Schnittstelle, oder das Objekt muss implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Schnittstelle.  
   
@@ -53,4 +48,3 @@ Wenn ein Benutzer eine Datei in einem Projekt geöffnet wird, durchläuft die Um
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
-

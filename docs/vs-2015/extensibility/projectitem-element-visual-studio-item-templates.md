@@ -1,14 +1,9 @@
 ---
 title: ProjectItem-Element (Visual Studio-Projektelementvorlagen) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961531"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem-Element (Visual Studio-Elementvorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +29,8 @@ Gibt eine Datei, die in der Elementvorlage enthalten ist.
 >  Die `ProjectItem` -Element akzeptiert verschiedene Attribute je nachdem, ob die Vorlage für ein Projekt oder ein Element. In diesem Thema wird erläutert, die `ProjectItem` -Element für Element. Eine Erläuterung der `ProjectItem` -Element für Projektvorlagen finden Sie unter [ProjectItem-Element (Visual Studio-Projektvorlagen)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<VSTemplate>  
- \<TemplateContent >  
- \<ProjectItem >  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -86,7 +81,7 @@ Gibt eine Datei, die in der Elementvorlage enthalten ist.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Wenn ein Element aus dieser Vorlage erstellt wird, der Dateiname wird auf Grundlage der Name des Benutzers im der **neues Element hinzufügen** Dialogfeld. Dies ist nützlich, beim Erstellen von Elementvorlagen mit mehreren Dateien. Weitere Informationen finden Sie unter [wie: Erstellen von mehreren Dateien Elementvorlagen](../ide/how-to-create-multi-file-item-templates.md) und [Vorlagenparameter](../ide/template-parameters.md).  
+ Wenn ein Element aus dieser Vorlage erstellt wird, der Dateiname wird auf Grundlage der Name des Benutzers im der **neues Element hinzufügen** Dialogfeld. Dies ist nützlich, beim Erstellen von Elementvorlagen mit mehreren Dateien. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) und [Vorlagenparameter](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt die Metadaten für die standard-Elementvorlage für eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Klasse.  
@@ -112,4 +107,3 @@ Gibt eine Datei, die in der Elementvorlage enthalten ist.
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md)   
  [Vorlagenparameter](../ide/template-parameters.md)
-

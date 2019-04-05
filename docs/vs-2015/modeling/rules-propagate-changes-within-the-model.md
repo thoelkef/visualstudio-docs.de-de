@@ -1,12 +1,9 @@
 ---
 title: Regeln propagieren Änderungen im Modell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961814"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             Basisklasse                              |                                                                                                                                                                                                                                                                                                                                                                              Trigger                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Ein Element, eine Verknüpfung oder eine Form wird hinzugefügt.<br /><br /> Verwenden Sie diese Option, um neue Beziehungen, zusätzlich zu neuen Elementen zu erkennen.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Ein Domäne-Eigenschaftswert geändert wird. Das Methodenargument enthält die alten und neuen Werte.<br /><br /> Für Formen die, mit dieser Regel wird ausgelöst, wenn die integrierte `AbsoluteBounds` eigenschaftsänderungen, wenn die Form bewegt wird.<br /><br /> In vielen Fällen ist es einfacher, außer Kraft setzen `OnValueChanged` oder `OnValueChanging` in der Handler. Diese Methoden werden unmittelbar vor und nach der Änderung aufgerufen. Im Gegensatz dazu wird die Regel in der Regel am Ende der Transaktion ausgeführt werden. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md). **Hinweis:** mit dieser Regel wird nicht ausgelöst, wenn ein Link erstellt oder gelöscht wird. Schreiben Sie stattdessen eine `AddRule` und `DeleteRule` für die domänenbeziehung. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Ein Domäne-Eigenschaftswert geändert wird. Das Methodenargument enthält die alten und neuen Werte.<br /><br /> Für Formen die, mit dieser Regel wird ausgelöst, wenn die integrierte `AbsoluteBounds` eigenschaftsänderungen, wenn die Form bewegt wird.<br /><br /> In vielen Fällen ist es einfacher, außer Kraft setzen `OnValueChanged` oder `OnValueChanging` in der Handler. Diese Methoden werden unmittelbar vor und nach der Änderung aufgerufen. Im Gegensatz dazu wird die Regel in der Regel am Ende der Transaktion ausgeführt werden. Weitere Informationen finden Sie unter [Handler für Wertänderungen von Domäne](../modeling/domain-property-value-change-handlers.md). **Hinweis**:  Mit dieser Regel wird nicht ausgelöst, wenn ein Link erstellt oder gelöscht wird. Schreiben Sie stattdessen eine `AddRule` und `DeleteRule` für die domänenbeziehung. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Wird ausgelöst, wenn ein Element oder ein Link gelöscht werden soll. Die Eigenschaft ModelElement.IsDeleting gilt bis zum Ende der Transaktion.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Ausgeführt, wenn ein Element oder ein Link gelöscht wurde. Die Regel ausgeführt wird, nachdem alle anderen Regeln einschließlich DeletingRules ausgeführt wurden. ModelElement.IsDeleting ist "false", und ModelElement.IsDeleted ist "true". Um für eine nachfolgende Rollback zu ermöglichen, wird das Element nicht tatsächlich aus dem Arbeitsspeicher entfernt wird er aus Store.ElementDirectory entfernt.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Ein Element wird aus einem Speicher-Partition in eine andere verschoben.<br /><br /> (Beachten Sie, dass dies nicht mit der grafischen Position einer Form verknüpft ist.)                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Siehe auch  
  [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules schränken Position und Größe von Formen ein](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

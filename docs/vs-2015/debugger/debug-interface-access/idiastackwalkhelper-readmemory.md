@@ -1,14 +1,9 @@
 ---
 title: IDiaStackWalkHelper::readMemory | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d1b2cd284611956be58c677f849236b246269fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961677"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT readMemory( 
  `type`  
  [in] Ein Wert aus der [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md) Enumeration, die den Typ des Arbeitsspeichers zu lesen.  
   
- VA  
+ va  
  [in] Virtuelle Adresse in das Image aus dem gelesen werden soll.  
   
  `cbData`  
@@ -64,6 +59,3 @@ HRESULT readMemory( 
 ## <a name="see-also"></a>Siehe auch  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [MemoryTypeEnum-Enumeration](../../debugger/debug-interface-access/memorytypeenum.md)
-
-
-

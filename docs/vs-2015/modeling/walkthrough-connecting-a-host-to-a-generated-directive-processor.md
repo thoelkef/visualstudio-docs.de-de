@@ -1,12 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,13 +11,13 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817872"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58962284"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +57,13 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
   
    - Name: DSLMinimalTest  
   
-   - Lösungsvorlage: minimale Sprache  
+   - Lösungsvorlage: Minimal Language (Einfache Version der Sprache)  
   
    - Dateierweiterung: Min.  
   
-   - Firmenname: Fabrikam  
+   - Name des Unternehmens: Fabrikam  
   
-     Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+     Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
@@ -230,7 +227,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
             }  
     ```  
   
-7.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
+7.  Klicken Sie im Menü **Datei** auf **Alle speichern**.  
   
 8.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
@@ -363,6 +360,3 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-

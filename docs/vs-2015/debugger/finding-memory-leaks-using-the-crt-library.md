@@ -1,14 +1,9 @@
 ---
 title: Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,20 +29,20 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961847"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuvor vorgenommenen Speicherbelegung) zählen zu den heikelsten und am schwierigsten zu erkennenden Fehlern in C/C++-Anwendungen. Ein kleiner Arbeitsspeicherverlust würde möglicherweise zuerst nicht bemerkt werden. Im Laufe der Zeit kann ein fortschreitender Arbeitsspeicherverlust jedoch Symptome verursachen, die von verringerter Leistung bis hin zu einem Absturz reichen, wenn der Anwendung kein Arbeitsspeicher mehr zur Verfügung steht. Schwerwiegender ist hierbei jedoch, dass eine Anwendung mit Arbeitsspeicherverlusten, die den gesamten verfügbaren Arbeitsspeicher aufbraucht, einen Absturz anderer Anwendungen verursachen kann, wodurch das Identifizieren der für den Fehler verantwortlichen Anwendung erschwert wird. Auch scheinbar harmlose Arbeitsspeicherverluste können ein Symptom für andere Probleme sein, die korrigiert werden sollten.  
   
- Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger und die C-Laufzeitbibliotheken (CRT) enthalten die notwendigen Mittel zum Erkennen und Identifizieren von Arbeitsspeicherverlusten.  
+ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debugger und die C-Laufzeitbibliotheken (CRT) enthalten die notwendigen Mittel zum Erkennen und Identifizieren von Arbeitsspeicherverlusten.  
   
 ## <a name="enabling-memory-leak-detection"></a>Aktivieren der Speicherverlusterkennung  
  Die wichtigsten Tools zum Feststellen von Speicherverlusten sind der Debugger und die Debugheapfunktionen der C-Laufzeitbibliotheken.  
@@ -114,7 +109,7 @@ Object dump complete.
   
 - Die Speicherbelegungsnummer (in diesem Beispiel `18` )  
   
-- Der [Blocktyp](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)(in diesem Beispiel `normal` )  
+- Der [Blocktyp](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)(in diesem Beispiel `normal` )  
   
 - Der hexadezimale Speicherbereich (in diesem Beispiel `0x00780E80` )  
   
@@ -262,15 +257,12 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
   
  `_CrtMemDifference` vergleicht die Speicherzustände `s1` und `s2` und gibt in (`s3`) ein Ergebnis zurück, das die Differenz zwischen `s1` und `s2`darstellt.  
   
- Eine Methode zur Suche nach Arbeitsspeicherverlusten besteht darin, zunächst `_CrtMemCheckpoint`-Aufrufe am Anfang und Ende der Anwendung einzufügen und anschließend mit `_CrtMemDifference` die Ergebnisse zu vergleichen. Wenn `_CrtMemDifference` einen Arbeitsspeicherverlust anzeigt, können Sie weitere `_CrtMemCheckpoint` -Aufrufe hinzufügen, um das Programm anhand einer Binärsuche aufzuteilen, bis Sie die Quelle des Verlusts gefunden haben.  
+ Eine Methode zur Suche nach Arbeitsspeicherverlusten besteht darin, zunächst `_CrtMemCheckpoint` -Aufrufe am Anfang und Ende der Anwendung einzufügen und anschließend mit `_CrtMemDifference` die Ergebnisse zu vergleichen. Wenn `_CrtMemDifference` einen Arbeitsspeicherverlust anzeigt, können Sie weitere `_CrtMemCheckpoint` -Aufrufe hinzufügen, um das Programm anhand einer Binärsuche aufzuteilen, bis Sie die Quelle des Verlusts gefunden haben.  
   
 ## <a name="false-positives"></a>Falsch positive Ergebnisse  
  In manchen Fällen kann `_CrtDumpMemoryLeaks` falsche Angaben zu Speicherverlusten machen. Dies kann bei Verwendung einer Bibliothek vorkommen, die interne Speicherbelegungen nicht als `_CRT_BLOCK`s oder `_CLIENT_BLOCK`s markiert, sondern als _NORMAL_BLOCKs. In diesem Fall kann `_CrtDumpMemoryLeaks` den Unterschied zwischen Benutzerspeicherbelegungen und internen Bibliotheksspeicherbelegungen nicht erkennen. Wenn die globalen Destruktoren für die Bibliotheksspeicherbelegungen nach dem Punkt ausgeführt werden, an dem `_CrtDumpMemoryLeaks`aufgerufen wird, wird jede interne Bibliotheksspeicherbelegung als Arbeitsspeicherverlust angezeigt. In früheren Versionen der Standardvorlagenbibliothek (vor Visual Studio .NET) wurden solche falsch positiven Ergebnisse von `_CrtDumpMemoryLeaks` ausgegeben, in neueren Versionen wurde dies jedoch behoben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Details zum CRT-Debugbibliothek-Debugheap](../debugger/crt-debug-heap-details.md)   
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-
-
-
