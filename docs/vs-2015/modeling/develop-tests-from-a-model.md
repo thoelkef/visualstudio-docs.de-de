@@ -1,30 +1,27 @@
 ---
 title: Entwickeln von Tests aus einem Modell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961674"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Hierdurch wird sichergestellt, dass Sie die für die Benutzer und anderen Projektbeteiligten wichtigen Anforderungen testen, und es hilft Ihnen, die Tests schnell zu aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../includes/tcmext-md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.  
+Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Durch diese Vorgehensweise können Sie sicherstellen, dass die Anforderungen, die für die Benutzer und andere Projektbeteiligte wichtig sind, getestet werden. Außerdem können Sie dadurch die Tests schneller aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../includes/tcmext-md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.  
   
  Welche Versionen von Visual Studio diese Features unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -59,14 +56,14 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
   
     -   Wenn laut Entwicklungsplan ein Aspekt des Anwendungsfalls vor einem anderen implementiert wird, können Sie die Tests im Verlauf der Entwicklung getrennt aktivieren.  
   
--   Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion folgendermaßen aussehen: Eingabe ist 4. Prüfen Sie, ob die Ausgabe 2 ist. Entwerfen Sie das Skript stattdessen folgendermaßen: Wählen Sie eine Eingabe. Multiplizieren Sie die Ausgabe mit sich selbst, und prüfen Sie, ob das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.  
+-   Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion sein: Eingaben von 4 Stellen Sie sicher, dass die Ausgabe 2 ist. Entwerfen Sie stattdessen das Skript ein: Wählen Sie eine Eingabe; Multiplizieren Sie die Ausgabe von selbst, und stellen Sie sicher, dass das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.  
   
 #### <a name="linking-tests-to-use-cases"></a>Verknüpfen von Tests mit Anwendungsfällen  
  Bei Verwendung von [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] zum Entwerfen und Ausführen der Tests, können Sie die Tests unter der Voraussetzung, Anwendungsfall- oder User Story-Arbeitsaufgaben organisieren. Sie können diese Arbeitsaufgaben mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.  
   
 ###### <a name="to-link-tests-to-a-use-case"></a>So verknüpfen Sie Tests mit einem Anwendungsfall  
   
-1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
     Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Eine invariante Regel dieser Art regelt nicht nur alle aktuell definierten Anwendungsfälle, sondern auch alle anderen Anwendungsfälle, die später definiert werden. Daher ist es nützlich, sie unabhängig von Anwendungsfällen zu schreiben und getrennt von ihnen zu testen.  
   
- Sie können eine invariante Geschäftsregel als Kommentar in einem Klassendiagramm schreiben. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
+ Sie können eine invariante Geschäftsregel als Kommentar in einem Klassendiagramm schreiben. Weitere Informationen finden Sie unter [UML Class Diagrams: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
   
  Sie können Tests mit einer Geschäftsregel verknüpfen, indem Sie den Kommentar mit einer Anforderungs- oder User Story-Arbeitsaufgabe verknüpfen, die Sie mit einer Testsammlung im [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] verknüpfen können. Weitere Informationen finden Sie unter [Anfügen von Testsituationen an Modellelemente](#Attaching).  
   
@@ -167,7 +164,7 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>So verknüpfen Sie Tests mit einem Modellelement oder einer Beziehung  
   
-1.  Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung, und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1.  Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
  [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md)   
  [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)
-
-
-

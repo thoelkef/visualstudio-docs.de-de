@@ -1,14 +1,9 @@
 ---
 title: Codegenerierung und T4-Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9967b0cb47bd397b7b0fa752eb2fff2518865b14
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229819"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001184"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>Siehe auch  
  [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md)   
  [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

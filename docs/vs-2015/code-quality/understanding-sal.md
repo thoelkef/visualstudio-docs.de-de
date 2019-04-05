@@ -1,25 +1,20 @@
 ---
 title: Grundlegendes zu SAL | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962137"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  Können Sie feststellen, was diese Funktion macht? Wenn eine Funktion implementiert oder aufgerufen wird, müssen bestimmte Eigenschaften verwaltet werden, um sicherzustellen, dass Richtigkeit des Programms. Durch das alleinige untersuchen eine Deklaration, wie im Beispiel, wissen Sie nicht genau. Ohne SAL-Anmerkungen müssten Sie die Dokumentation oder in den Kommentaren im Code verwenden. Hier ist die MSDN-Dokumentation für `memcpy` besagt:  
   
 > "Kopien Anzahl der Bytes von Src an Dest. Wenn sich Quelle und Ziel überlappen, ist das Verhalten der Memcpy nicht definiert. Verwenden Sie Memmove, um überlappende Bereiche zu behandeln.   
-> **Sicherheitshinweis:** stellen Sie sicher, dass der Zielpuffer identisch ist, mindestens so groß wie der Quellpuffer. Weitere Informationen finden Sie vermeiden von Pufferüberläufen."  
+> **Sicherheitshinweis:** Stellen Sie sicher, dass der Zielpuffer dieselbe Größe wie der Quellpuffer aufweist bzw. größer ist. Weitere Informationen finden Sie vermeiden von Pufferüberläufen."  
   
  Die Dokumentation enthält eine Reihe von Bits von Informationen, die wird empfohlen, dass der Code hat bestimmte Eigenschaften aus, um die Richtigkeit des Programms beibehalten:  
   
@@ -112,7 +107,7 @@ wchar_t * wmemcpy(
 ## <a name="sal-examples"></a>Beispiele zu SAL  
  Dieser Abschnitt zeigt die Codebeispiele für die grundlegende SAL-Anmerkungen.  
   
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio Codeanalysetools  
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools  
  In den Beispielen wird das Tool für Visual Studio-Codeanalyse zusammen mit SAL-Anmerkungen verwendet, um Codefehler zu finden. Hier ist wie das geht.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL  
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Hinzufügen von Kommentaren Sperrverhalten](../code-quality/annotating-locking-behavior.md)   
  [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Anzeigen von Dateien mit dem Befehl Open File | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f1a2ca2b87cadf118c83501bbd6b6bf78af761a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 286f310765db6fff14f6b134c6107ff1c9e36215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962038"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mit dem Befehl „Datei öffnen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,11 +51,10 @@ Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Dat
   
 4.  Sobald die IDE stellt fest, welches Projekt die Datei geöffnet wird, ruft der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> Methode für das Projekt.  
   
-5.  Das Projekt enthält dann die Möglichkeit, die Datei über einen projektspezifischen Editor oder einem standard-Editor zu öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md) und [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)bzw.  
+5.  Das Projekt enthält dann die Möglichkeit, die Datei über einen projektspezifischen Editor oder einem standard-Editor zu öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md) und [Vorgehensweise: Öffnen Sie die Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)bzw.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anzeigen von Dateien mit Öffnen mit (Befehl)](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Sie öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)   
- [Gewusst wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
-
+ [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)

@@ -1,35 +1,30 @@
 ---
-title: 'Gewusst wie: Debuggen von einer benutzerdefinierten Debug-Engine | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Debuggen eine benutzerdefinierten Debug-Engine | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d293011a3865b4fb9c31349240c520e56f5a9e39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946449"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine
+# <a name="how-to-debug-a-custom-debug-engine"></a>Vorgehensweise: Debuggen einer benutzerdefinierten Debug-Engine
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ein Projekt startet die Debug-Engine (DE) aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode. Dies bedeutet, dass die DE, unter der Kontrolle der Instanz von gestartet wird [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] steuern den Projekttyp. Aber diese Instanz von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kann nicht debuggen, die DE. Nachfolgend werden die Schritte aus, damit Sie Ihre benutzerdefinierten DE Debuggen können.  
   
 > [!NOTE]
->  : In der Prozedur "Debuggen einer benutzerdefinierten Debug-Engine" müssen Sie warten, für das DE zum Starten, bevor Sie sie anfügen können. Wenn Sie ein Meldungsfeld nahe am Anfang Ihrer DE, die beim Start der DE angezeigt wird platzieren, können zu diesem Zeitpunkt Anfügen und deaktivieren Sie dann im Meldungsfeld, um den Vorgang fortzusetzen. Auf diese Weise können abfangen, alle DE-Ereignisse.  
+>  :     In der Prozedur "Debuggen einer benutzerdefinierten Debug-Engine" müssen Sie warten, für das DE zum Starten, bevor Sie sie anfügen können. Wenn Sie ein Meldungsfeld nahe am Anfang Ihrer DE, die beim Start der DE angezeigt wird platzieren, können zu diesem Zeitpunkt Anfügen und deaktivieren Sie dann im Meldungsfeld, um den Vorgang fortzusetzen. Auf diese Weise können abfangen, alle DE-Ereignisse.  
   
 > [!WARNING]
 >  Benötigen Sie, ob Sie Remotedebuggen installiert, bevor Sie, die folgenden Verfahren versuchen. Finden Sie unter [Remotedebuggen](../../debugger/remote-debugging.md) Details.  
@@ -82,4 +77,3 @@ Ein Projekt startet die Debug-Engine (DE) aus der <xref:Microsoft.VisualStudio.S
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

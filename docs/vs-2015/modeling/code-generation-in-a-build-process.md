@@ -1,12 +1,9 @@
 ---
 title: Codegenerierung in einem Buildprozess | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281809"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001371"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Dies bedeutet, dass Sie auf Elemente wie Projektdateinamen nicht genauso zugreif
 
 ##  <a name="buildserver"></a> Konfigurieren des Computers
 
-Um Buildaufgaben auf dem Entwicklungscomputer zu aktivieren, installieren [Modellierungs-SDK für Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Um Buildaufgaben auf dem Entwicklungscomputer zu aktivieren, installieren [Modellierungs-SDK für Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Wenn [Buildserver](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) Ausführungen auf einem Computer, auf dem Visual Studio nicht installiert ist, und kopieren Sie die folgenden Dateien auf den Buildcomputer von Ihrem Entwicklungscomputer. Ersetzen Sie "*" durch die aktuellste Versionsnummer.
 
@@ -93,7 +90,7 @@ Fügen Sie nach dieser Zeile den Textvorlagenimport ein:
 
 Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Transformationsaufgabe zu steuern:
 
--   Führen Sie die Transformationsaufgabe am Anfang jedes Builds aus:
+-   Führen Sie die Transformierensaufgabe am Anfang jedes Builds aus:
 
     ```xml
     <PropertyGroup>
@@ -119,7 +116,7 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
 
      Standardmäßig generiert die Aufgabe T4 MSBuild erneut eine Ausgabedatei, wenn diese älter als die entsprechende Vorlagendatei oder alle Dateien ist, auf die die Vorlage oder ein Direktivenprozessor, der die Datei verwendet, zuvor zugegriffen hat. Beachten Sie, dass hierbei ein viel leistungsstärkerer Abhängigkeitstest durchgeführt wird als mit dem Befehl zur Transformation aller Vorlagen in Visual Studio, bei dem nur die Daten der Vorlage und der Ausgabedatei verglichen werden.
 
-Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe "TransformAll" auf:
+Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe „TransformAll“ auf:
 
 `msbuild myProject.csproj /t:TransformAll`
 
@@ -194,7 +191,7 @@ Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung
 </ItemGroup>
 ```
 
-Es wird nicht empfohlen, OutputFileName oder OutputFilePath anzugeben, wenn Sie außerdem in VS mit "Alle transformieren" Vorlagen transformieren oder einen Generator einzelner Dateien ausführen. Je nachdem, wie Sie die Transformation ausgelöst haben, erhalten Sie dann unterschiedliche Dateipfade. Dies kann sehr verwirrend sein.
+Es wird nicht empfohlen, OutputFileName oder OutputFilePath anzugeben, wenn Sie außerdem in VS mit „Alle transformieren“ Vorlagen transformieren oder einen Generator einzelner Dateien ausführen. Je nachdem, wie Sie die Transformation ausgelöst haben, erhalten Sie dann unterschiedliche Dateipfade. Dies kann sehr verwirrend sein.
 
 ## <a name="adding-reference-and-include-paths"></a>Hinzufügen von Verweis- und Includepfaden
 
@@ -229,7 +226,7 @@ Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. Buil
 </ItemGroup>
 ```
 
-Legen Sie in einer Textvorlage `hostspecific` in der template-Anweisung fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
+Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -288,4 +285,4 @@ Hier finden Sie eine gute Anleitung zur T4 MSbuild-Vorlage, $(VSToolsPath)\TextT
 
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio-Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych: Grundlegendes T4:MSBuild-Integration](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych: Grundlegendes zu T4:MSBuild Integration](https://github.com/olegsych/T4Toolbox)

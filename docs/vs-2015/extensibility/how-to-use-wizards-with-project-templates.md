@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783752"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59001815"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
+# <a name="how-to-use-wizards-with-project-templates"></a>Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle bereit, die, falls sie implementiert ist, das Ausführen von benutzerdefiniertem Code beim Erstellen eines Projekts aus einer Vorlage ermöglicht.  
@@ -244,7 +239,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
      Vergessen Sie nicht in diesem Fall die Anführungszeichen ein. Eine Zeile in die Ausgabe wie die folgende sollte angezeigt werden.  
   
-     **Token des öffentlichen Schlüssels ist. <token>**  
+     **Token des öffentlichen Schlüssels ist \<token >**  
   
      Notieren Sie sich dieses Werts.  
   
