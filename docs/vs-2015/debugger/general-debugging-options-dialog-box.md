@@ -1,14 +1,9 @@
 ---
 title: Allgemein, Debuggen, Dialogfeld "Optionen" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.General
 - VS.ToolsOptionsPages.Debugger.General
@@ -26,13 +21,13 @@ ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3a9e0b8008da5b648ae156235a20964fc0952b1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742783"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000893"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51742783"
 Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folgenden Optionen festlegen:  
   
  **Vor dem Löschen aller Haltepunkte Fragen**  
- Erfordert eine Bestätigung vor dem Abschluss der **alle Haltepunkte löschen** Befehl.  
+ Erfordert zum Ausführen des Befehls **Alle Haltepunkte löschen** die Bestätigung.  
   
  **Anhalten Sie alle Prozesse, wenn ein Prozess anhält**  
  Hält im Falle einer Unterbrechung alle Prozesse gleichzeitig an, an die der Debugger angefügt ist.  
@@ -50,14 +45,14 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   
  1\) bei nativem Code verwalteter Code mit COM-Interop aufgerufen und der verwaltete Code löst eine Ausnahme aus. Finden Sie unter [Einführung in COM-Interop](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) bei verwaltetem Code in Anwendungsdomäne 1 ausgeführt wird verwalteter Code in Anwendungsdomäne 2 aufgerufen und der Code in Anwendungsdomäne 2 eine Ausnahme ausgelöst. Finden Sie unter [Programmieren mit Anwendungsdomänen](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) bei verwaltetem Code in Anwendungsdomäne 1 ausgeführt wird verwalteter Code in Anwendungsdomäne 2 aufgerufen und der Code in Anwendungsdomäne 2 eine Ausnahme ausgelöst. Finden Sie unter [Programmieren mit Anwendungsdomänen](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
  3\) Wenn Code eine Funktion mithilfe der Reflektion aufgerufen und die Funktion löst eine Ausnahme aus. Finden Sie unter [Reflektion](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  In den Fällen 2) und 3) wird die Ausnahme gelegentlich von verwaltetem Code in `mscorlib` und nicht von der Common Language Runtime aufgefangen. Diese Option beeinträchtigt nicht das Unterbrechen bei von `mscorlib` aufgefangenen Ausnahmen.  
   
  **Debuggen auf Adressebene aktivieren**  
- Aktiviert erweiterte Funktionen für das Debuggen auf Adressebene (das **Disassembly** Fenster die **registriert** Fenster und Adresshaltepunkte).  
+ Aktiviert erweiterte Funktionen für das Debuggen auf Adressebene (das Fenster **Disassembly**, das Fenster **Register** und Adresshaltepunkte).  
   
  **Zeigen Sie Disassemblierung an, wenn die Quelle nicht verfügbar ist**  
  Zeigt automatisch die **Disassembly** Fenster, wenn Sie versuchen, den Code für die Quellcode zu Debuggen ist nicht verfügbar.  
@@ -69,7 +64,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  Nur für verwalteten Code. Verwaltete Ausnahmen öffnen das Dialogfeld des Ausnahmen-Assistenten.  Finden Sie unter [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Aufrufliste für Ausnahmefehler entladen**  
- Bewirkt, dass die **Aufrufliste** Fenster aus, um ein Rollback die Aufrufliste zu dem Punkt, bevor der Ausnahmefehler aufgetreten ist.  
+ Führt dazu, dass das Fenster **Aufrufliste** die Aufrufliste an den Punkt zurücksetzt, bevor der Ausnahmefehler aufgetreten ist.  
   
  **Nur meinen Code aktivieren**  
  Der Debugger zeigt nur Benutzercode („Mein Code“) an und durchläuft ihn schrittweise, während systemeigener und sonstiger Code, der optimiert ist oder keine Debugsymbole aufweist, ignoriert wird.  
@@ -87,7 +82,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  Verhindert, dass der Debugger Eigenschaften und Operatoren in verwaltetem Code schrittweise ausführt.  
   
  **Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**  
- Aktiviert die automatische Auswertung von Eigenschaften und impliziten Funktionsaufrufen in Variablenfenstern und **Schnellüberwachung** Dialogfeld.  
+ Aktiviert die automatische Auswertung von Eigenschaften und impliziten Funktionsaufrufen in Variablenfenstern und im Dialogfeld **Schnellüberwachung**.  
   
  **Zeichenfolgenkonvertierungsfunktion für Objekte in Variablenfenstern (C#- und JavaScript nur) aufrufen.**  
  Führt einen impliziten Zeichenkonvertierungsaufruf beim Auswerten von Objekten in Variablenfenstern aus. Deshalb wird dieses Ergebnis nicht als Typname, sondern als Zeichenfolge angezeigt. Gilt nur für Debuggen in C#-Code. Diese Einstellung kann vom DebuggerDisplay-Attribut überschrieben werden (siehe [Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md)).  
@@ -111,7 +106,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  Fordert den Debugger auf, zu prüfen, ob die Quelldatei mit der Version des Quellcodes übereinstimmt, mit dem die ausführbare Datei erstellt wurde, die Sie debuggen. Wenn die Version nicht übereinstimmt, werden Sie aufgefordert, eine übereinstimmende Quelle zu suchen. Wenn keine übereinstimmende Quelle gefunden wird, wird der Quellcode während des Debuggens nicht angezeigt.  
   
  **Umleiten Sie gesamten Text aus Ausgabefenster an das Direktfenster**  
- Sendet alle Debuggermeldungen, die normalerweise in der **Ausgabe** Fenster aus, um die **direkt** Fenster stattdessen.  
+ Sendet alle Debuggermeldungen, die normalerweise im **Ausgabefenster** angezeigt werden, an das **Direktfenster**.  
   
  **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen**  
  Deaktiviert alle Anpassungen von Objektstrukturansichten. Weitere Informationen zu ansichtsanpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).  
@@ -131,7 +126,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Parallele Stapel Diagramm unten nach oben anzeigen**  
- Steuert die Richtung, in der Stapel, in angezeigt werden, der **parallele Stapel** Fenster.  
+ Steuert die Richtung, in der Stapel im Fenster **Parallele Stapel** angezeigt werden.  
   
  **Ignorieren Sie GPU Ausnahmen Speicherzugriff, wenn die geschriebenen Daten nicht geändert haben**  
  Ignoriert Racebedingungen, die während des Debuggens erkannt wurden, wenn sich die Daten nicht geändert haben. Weitere Informationen finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md).  
@@ -148,7 +143,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   **Systemeigenen Kompatibilitätsmodus verwenden**  
   Wenn diese Option ausgewählt ist, wird der native Debugger von Visual Studio 2010 anstelle des neuen nativen Debuggers verwendet.  
   
-  Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des nativen Kompatibilitätsmodus werden aber viele Funktionen deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Z. B. die legacy-Engine verfügt nicht über viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.  
+  Beim Debuggen von .NET C++-Code sollten Sie diese Option verwenden, da die neue Debug-Engine das Auswerten von .NET C++-Ausdrücken nicht unterstützt. Durch das Aktivieren des systemeigenen Kompatibilitätsmodus werden aber viele Features deaktiviert, für deren Verwendung die aktuelle Debuggerimplementierung erforderlich ist. Z. B. die legacy-Engine verfügt nicht über viele Schnellansichten für integrierte Typen wie `std::string` in Visual Studio 2015-Projekten.   Verwenden Sie für ein optimales Debugging in diesen Fällen Visual Studio 2013-Projekte.  
   
   **Verwenden Sie die älteren c# und VB-ausdrucksauswertungen**  
   Der Debugger verwendet anstelle der Visual Studio 2015 Roslyn-basierten Ausdrucksauswertungen die Visual Studio 2013 C#/VB-Ausdrucksauswertungen.  
@@ -160,16 +155,16 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   Aktiviert den Debugheap von Windows, um die Heapdiagnose zu verbessern. Das Aktivieren dieser Option wirkt sich auf die Debugleistung aus.  
   
   **Aktivieren Sie UI-Debuggingtools für XAML**  
-  Die Fenster „Visuelle Echtzeitstruktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).  
+  Die Fenster „Visuelle Live-Struktur“ und „Echtzeit-Eigenschaften-Explorer“ werden angezeigt, wenn Sie mit dem Debuggen eines unterstützten Projekttyps beginnen (F5). Weitere Informationen finden Sie unter [Überprüfen von XAML-Eigenschaften während des Debuggens](../debugger/inspect-xaml-properties-while-debugging.md).  
   
   **Vorschau der ausgewählten Elemente in visuelle Echtzeitstruktur**  
-  Das XAML-Element, dessen Kontext ausgewählt ist, ebenfalls ausgewählt ist, der **Live Visual Tree** Fenster.  
+  Das XAML-Element, dessen Kontext ausgewählt ist, ist auch im Fenster **Visuelle Echtzeitstruktur** ausgewählt.  
   
   **Laufzeittools in Anwendung**  
   Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste des Hauptfensters der XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
   
   **Diagnosetools beim Debuggen aktivieren**  
-  Die **Diagnosetools** Fenster wird angezeigt, während des Debuggens. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Das Fenster **Diagnosetools** wird während des Debuggens angezeigt. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **PerfTip für verstrichene Zeit beim Debuggen anzeigen**  
   Das Codefenster zeigt an, wie viel Zeit bei einem bestimmten Methodenaufruf während des Debuggens verstrichen ist.  
@@ -180,10 +175,10 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   **Aktivieren Sie systemeigene bearbeiten und fortfahren**  
   Sie können die Funktion „Bearbeiten und Fortfahren“ während des Debuggens von systemeigenem C++-Code verwenden. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
-  **Anwenden von Änderungen beim fortfahren (nur systemeigen)**  
+  **Änderungen beim Fortfahren anwenden (nur nativ)**  
   Beim Fortsetzen eines unterbrochenen Prozesses kompiliert Visual Studio automatisch alle ausstehenden Codeänderungen und wendet sie an. Ist diese Option nicht aktiviert, können Sie Änderungen mit der Option „Codeänderungen übernehmen“ im Menü „Debuggen“ übernehmen.  
   
-  **Warnung bei veraltetem Code (nur systemeigen)**  
+  **Warnung bei veraltetem Code (nur nativ)**  
   Ruft Warnungen über veralteten Code ab.  
   
   **Zulassen Sie (nur systemeigen) Vorkompilierung**  
@@ -191,6 +186,3 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

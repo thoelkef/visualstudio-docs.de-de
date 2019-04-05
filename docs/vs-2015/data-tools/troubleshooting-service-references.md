@@ -1,12 +1,9 @@
 ---
 title: Problembehandlung bei Dienstverweisen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223960"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962133"
 ---
 # <a name="troubleshooting-service-references"></a>Problembehandlung bei Dienstverweisen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Dieses Thema führt häufige Probleme, die auftreten können, bei der Arbeit mit
 -   In **Projektmappen-Explorer**mit der rechten Maustaste auf das WCF-Dienstbibliothek-Projekt, und klicken Sie auf **erstellen**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Fehler beim Zugriff auf einen Dienst über einen Remotedesktop
- Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer erhalten die folgende Fehlermeldung angezeigt: "die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
+ Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer die folgende Fehlermeldung angezeigt: "Die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
 
  So beheben Sie diesen Fehler
 
@@ -79,7 +76,7 @@ Dieses Thema führt häufige Probleme, die auftreten können, bei der Arbeit mit
 
 3.  Stellen Sie sicher, dass die **Erweiterte Buildkonfigurationen anzeigen** Kontrollkästchen ausgewählt ist, und klicken Sie dann auf **OK**.
 
-4.  Laden Sie das WCF-Dienstprojekt. Weitere Informationen finden Sie unter [nib: Gewusst-wie: Erstellen von Projektmappen mit mehreren Projekten](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Laden Sie das WCF-Dienstprojekt. Weitere Informationen finden Sie unter [NIB How to: Erstellen von Projektmappen mit mehreren Projekten](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5.  In der **Configuration Manager** (Dialogfeld), legen die **aktive Projektmappenkonfiguration** zu **Debuggen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
@@ -92,13 +89,13 @@ Dieses Thema führt häufige Probleme, die auftreten können, bei der Arbeit mit
 
  Um diesen Fehler zu beheben, deaktivieren Sie RSS-Feeds:
 
-1.  In Internet Explorer auf die **Tools** Menü klicken Sie auf **Internetoptionen**.
+1.  Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
 
 2.  Auf der **Content** Registerkarte die **Feeds** auf **Einstellungen**.
 
 3.  In der **Feedeinstellungen** Dialogfeld das Kontrollkästchen der **Feedleseanzeige einschalten** , und klicken Sie dann auf **OK**.
 
-4.  Klicken Sie auf **OK** schließen die **Internetoptionen** Dialogfeld.
+4.  Klicken Sie auf **OK**, um das Dialogfeld **Internetoptionen** zu schließen.
 
 ## <a name="see-also"></a>Siehe auch
 

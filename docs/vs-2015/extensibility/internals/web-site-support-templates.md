@@ -1,26 +1,21 @@
 ---
 title: Vorlagen für die Websiteunterstützung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961941"
 ---
 # <a name="web-site-support-templates"></a>Vorlagen für die Websiteunterstützung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "51760221"
   
      Standard-Startseite für die neue Website. Language-Attribut gibt an, die Codebehind-Sprache, und das CodeFile-Attribut gibt an, die abhängige Datei, die den Codebehind-Code, der mit dieser Seite verknüpft sind.  
   
--   "Default.aspx". *Erweiterung*  
+-   Default.aspx.*extension*  
   
      Die abhängige Datei, die den Codebehind-Code für die Standard-Startseite enthält. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -87,7 +82,7 @@ ms.locfileid: "51760221"
   
      Die HTML-Seite für den neuen Webdienst. Language-Attribut gibt an, die Codebehind-Sprache, und das CodeBehind-Attribut gibt an, die abhängige Datei, die den Codebehind-Code, der diesem Dienst zugeordnet.  
   
--   -Dienst. *Erweiterung*  
+-   -Dienst. *extension*  
   
      Die abhängige Datei, die die Dienstklasse implementiert wird. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51760221"
 ### <a name="new-class"></a>Neue Klasse  
  Diese Vorlage erstellt eine neue Quelldatei, die als Reaktion auf eine leere Klasse definiert die **neue Klasse hinzufügen** Befehl.  
   
--   Klasse. *Erweiterung*  
+-   Klasse. *extension*  
   
      Die Quelldatei, die die leere Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -146,7 +141,7 @@ ms.locfileid: "51760221"
   
  Wählen Sie zum Erstellen einer Inhaltsseite für eine ausgewählte Masterseite **Masterseite auswählen**.  
   
--   "Webform.aspx"  
+-   WebForm.aspx  
   
      Der ab Inhalt der Webseite. Diese Webseite hat keine abhängigen zugeordneten Codebehind-Datei.  
   
@@ -154,7 +149,7 @@ ms.locfileid: "51760221"
   
      Der ab Inhalt der Webseite. Diese Webseite ist eine abhängige zugeordneten Codebehind-Datei.  
   
--   CodeBehind. *Erweiterung*  
+-   Codebehind. *extension*  
   
      Die abhängige Datei, die der Webform-Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -183,7 +178,7 @@ ms.locfileid: "51760221"
   
      Der ab Inhalt der Masterseite. Diese Masterseite verfügt über eine abhängige zugeordneten Codebehind-Datei.  
   
--   CodeBehind. *Erweiterung*  
+-   Codebehind.*extension*  
   
      Die abhängige Datei, die die Masterseite-Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760221"
   
 ## <a name="see-also"></a>Siehe auch  
  [Websiteunterstützung](../../extensibility/internals/web-site-support.md)
-

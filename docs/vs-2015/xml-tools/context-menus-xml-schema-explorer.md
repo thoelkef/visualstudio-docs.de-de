@@ -1,25 +1,20 @@
 ---
 title: Kontextmenüs (XML-Schema-Explorer) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946910"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49294612"
   
 Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen und andere Vorgänge auszuführen.  
   
-## <a name="node-type-schema-set"></a>Knotentyp: Schemaset  
+## <a name="node-type-schema-set"></a>Knotentyp: Schema Set  
  In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknoten verfügbar sind.  
   
 |Option|Beschreibung|  
@@ -122,6 +117,3 @@ Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen
 ## <a name="see-also"></a>Siehe auch  
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)   
  [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md)
-
-
-

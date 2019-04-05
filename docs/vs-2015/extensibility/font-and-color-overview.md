@@ -1,27 +1,22 @@
 ---
 title: Schriftart und Farbe (Übersicht) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d849d93bdab481cecbb7d1f0f862f1db8eb3c181
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946720"
 ---
 # <a name="font-and-color-overview"></a>Schriftart und Farbe (Übersicht)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ In diesem Thema wird erläutert, Text-Schriftart und Farbe Einstellungen in der 
   
 - Die Möglichkeit zum Verwenden von integrierte von Anzeigeelementen aus der **Text EditorCategory** und diese zu erweitern.  
   
-   Weitere Informationen finden Sie unter [Vorgehensweise: verwenden integrierten kolorierbaren Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md) und [benutzerdefinierten kolorierbaren Elemente](../extensibility/internals/custom-colorable-items.md).  
+   Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md) und [benutzerdefinierten kolorierbaren Elemente](../extensibility/internals/custom-colorable-items.md).  
   
 - Automatische Persistenz des aktuellen Zustands des sowohl integrierte und benutzerdefinierte Elemente mit angezeigt werden, die **Text-Editor** Kategorie.  
   
@@ -87,4 +82,3 @@ In diesem Thema wird erläutert, Text-Schriftart und Farbe Einstellungen in der 
 ## <a name="see-also"></a>Siehe auch  
  [Legacy-Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md)   
  [Syntaxfarben in einem Legacysprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-

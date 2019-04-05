@@ -1,27 +1,22 @@
 ---
 title: Überprüfen des Systems während der Entwicklung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams
 ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 03cac924853f4348faabd773260a9512c2d82b6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760975"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001208"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
   
 |**Kategorie**|**Links**|  
 |------------------|---------------|  
-|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sieben: Verstehen von Code und Systementwurf mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Entwerfen einer Anwendung mit einem Ebenendiagramm](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Reihe: Überprüfen von Code mit Ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=214405)|  
+|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug Seven: Verstehen von Code und Systementwurf mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Entwerfen einer Anwendung mit einem Ebenendiagramm](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Reihe: Überprüfen von Code mit Ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=214405)|  
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|-   [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -53,6 +48,3 @@ Visual Studio unterstützt Sie dabei, die Software mit den Anforderungen der Ben
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   
  [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
  [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)
-
-
-

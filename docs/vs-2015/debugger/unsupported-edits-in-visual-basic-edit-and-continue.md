@@ -1,14 +1,9 @@
 ---
 title: Nicht unterstützte Bearbeitungen in Visual Basic bearbeiten und fortfahren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58962283"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nicht unterstützte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ ms.locfileid: "51787899"
  Wenn Sie eine nicht unterstützte Änderungen vornehmen möchten, müssen Sie das Debuggen unterbrechen, die Änderungen vornehmen und eine neue Debugsitzung starten.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Methode und Eigenschaftentext  
- **Nicht unterstützte Änderungen an statischen lokalen Variablen**: Hinzufügen oder aktualisieren eine lokale Variable oder eine statische lokale Variable zu entfernen, wenn dies zu einen Kompilierungsfehler führen würde.  
+ **Nicht unterstützte Änderungen an statischen lokalen Variablen**: Hinzufügen oder Aktualisieren einer lokalen Variable oder eine statische lokale Variable entfernen, wenn das würde eines Kompilierungsfehler auf.  
   
- **Nicht unterstützte Änderungen an Generika**: Änderungen an der generischen Methode oder den Textteil der generischen Methode werden nicht unterstützt. Die Instanziierung eines generischen Typs oder Aufrufe von vorhandenen generischen Methoden können hinzugefügt, gelöscht oder geändert werden.  
+ **Nicht unterstützte Änderungen an Generika**: Änderungen an der generischen Methode selbst oder am Text von generischen Methoden werden nicht unterstützt. Die Instanziierung eines generischen Typs oder Aufrufe von vorhandenen generischen Methoden können hinzugefügt, gelöscht oder geändert werden.  
   
  **Andere nicht unterstützten Änderungen**  
   
@@ -225,6 +220,3 @@ ms.locfileid: "51787899"
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und fortfahren](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Bearbeiten und Fortfahren (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

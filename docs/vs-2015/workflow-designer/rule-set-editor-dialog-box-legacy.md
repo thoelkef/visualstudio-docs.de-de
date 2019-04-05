@@ -1,11 +1,8 @@
 ---
 title: Regelsatz-Editor-Dialogfeld (Legacy) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942399"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961358"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -31,7 +28,7 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der
 > [!NOTE]
 >  Wenn Sie die zu öffnende die rules-Datei mit den **XML-Editor mit Codierung**, müssen Sie zunächst das zugewiesene Designerfenster für den Workflow oder eine Aktivität schließen.  
   
- Informationen über den Zugriff auf die **Regelsatz-Editor** im Dialogfeld finden Sie unter [Vorgehensweise: Erstellen Sie eine PolicyActivity Regelsatz (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ Informationen über den Zugriff auf die **Regelsatz-Editor** im Dialogfeld finden Sie unter [Vorgehensweise: Erstellen ein PolicyActivity-Regelsatzes (Vorgängerversion)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
 >  Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../includes/wfd2-md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.  
@@ -50,7 +47,7 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der
 |**Name:**|Geben Sie den Namen der Regel ein.|  
 |**Priorität:**|Geben Sie eine Priorität für die Regel ein. Die Standardpriorität ist 0.|  
 |**Eine erneute Auswertung:**|Gibt an, welcher erneute Auswertungstyp mit der Regel verwendet werden soll. Die folgenden Optionen sind verfügbar:<br /><br /> -   **Immer**, womit die Regel neu ausgewertet werden, je nach Bedarf.<br />-   **Nie**, womit die Regel nie neu ausgewertet wird. In diesem Fall wird eine Regel nur einmal ausgeführt.|  
-|**aktiv**|Aktivieren, damit die Regel aktiv wird.|  
+|**Active**|Aktivieren, damit die Regel aktiv wird.|  
 |**Bedingung:**|Geben Sie einen Ausdruck für die Regelbedingung ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|  
 |**Then-Aktionen:**|Geben Sie einen Ausdruck für Then-Aktionen ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|  
 |**Else-Aktionen:**|Geben Sie einen Ausdruck für Else-Aktionen ein. Informationen zur Ausdruckssyntax finden Sie im Abschnitt "Eingeben von Bedingungs- und Aktionsausdrücken" dieser Seite.|  
@@ -73,13 +70,13 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der
   
 - Arithmetische Operatoren: +, - , *, /, MOD  
   
-- Logische Operatoren: und, & &, OR, &#124; &#124;, NOT,!  
+- Logische Operatoren: AND, &&, OR, &#124;&#124;, NOT, !  
   
 - Bitweise Operatoren: &,&#124;  
   
   Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.  
   
-  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Halt-Funktion und Update-Funktion  
  **Then-Aktionen:** und **Else-Aktionen:** Ausdrücke unterstützen **anhalten** und **Update** Funktionen. Verwenden der **anhalten** funktionieren, geben Sie **anhalten** in einer **Then-Aktion:** oder **Else-Aktion:** Textfeld. Die **anhalten** Aktion bewirkt sofort beendet, und die Steuerung an den aufrufenden Code zurückgibt. Sie verwenden die **Update** -Funktion mit vorwärtsverketten.  

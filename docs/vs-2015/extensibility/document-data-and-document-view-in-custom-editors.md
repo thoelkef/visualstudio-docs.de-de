@@ -1,26 +1,21 @@
 ---
 title: Dokumentdaten und Dokument anzeigen, in benutzerdefinierten Editoren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55f082711de306e9dd22fdf55e769282ad150f17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947406"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt 
  [Persistenz und die aktive Dokumenttabelle](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [Bestimmen daraufhin-Editor eine Datei in einem Projekt](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
  [Editorfactorys](../extensibility/editor-factories.md)
-

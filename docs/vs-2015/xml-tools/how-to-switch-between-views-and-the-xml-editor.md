@@ -1,27 +1,22 @@
 ---
 title: 'Vorgehensweise: Wechseln zwischen Ansichten und dem XML-Editor | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03edf2ba9d2e9c5042328a62606d9bbae47bb0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55481b5f91e0bb83241a04d61d1bfa91657b5c0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946174"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Gewusst wie: Wechseln zwischen Ansichten und dem XML-Editor
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Vorgehensweise: Wechseln zwischen Ansichten und dem XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -44,6 +39,3 @@ In diesem Thema wird beschrieben, wie Sie zwischen den Ansichten des XML-Schema-
 6.  Verwenden Sie folgende Hotkeys, um zwischen den Ansichten zu wechseln: STRG+1 für die Ausgangsansicht, STRG+2 für die Diagrammansicht und STRG+3 für die Inhaltsmodellansicht.  
   
 7.  Um von der Inhaltsmodellansicht zum XML-Editor zu wechseln, mit der rechten Maustaste des Knotens, und wählen Sie **Ansichtscode** im Kontextmenü.
-
-
-

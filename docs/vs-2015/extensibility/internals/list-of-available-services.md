@@ -1,27 +1,22 @@
 ---
 title: Liste der verfügbaren Dienste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730691"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001472"
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51730691"
 |Dienst|Interface|Visual Studio|Visual Studio 2005|Beschreibung|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Ja|Ja|Wird von VSPackages verwendet zum Abrufen einer <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> Schnittstelle aus einem ActiveX-Steuerelement, um asynchrone Datenübertragungen zu ermöglichen.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Nein|Ja|Ruft die Design-Time-Erweiterbarkeit (DTE)-Objekt, das verwendet wird, für die Automatisierung ab.<br /><br /> C/C++-ID: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Nein|Ja|Ruft die Design-Time-Erweiterbarkeit (DTE)-Objekt, das verwendet wird, für die Automatisierung ab.<br /><br /> C/C++ ID: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Ja|Ja|Durch ein Forms-Designer zum Anzeigen des Standardereignishandler für ein Steuerelement implementiert.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Ja|Ja|Ermöglicht einem VSPackages, die Automationsschnittstelle von einem anderen VSPackage oder ein Steuerelement zugreifen.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Ja|Ja|Aktiviert ein VSPackage hinzufügen oder erstellen eine erweiterte Typbibliothek.|  
@@ -126,7 +121,7 @@ ms.locfileid: "51730691"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger>|Ja|Ja|Ermöglicht den Zugriff auf die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Ja|Ja|Aktiviert ein VSPackage zugreifen auf die aktuelle Auswahl und Verwalten von Benutzeroberflächen-Kontexten zu Befehl.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider>|IVSMDCodeDomProvider|Nein|Ja|Bietet Zugriff auf ein Dokument Objekt Dokumentobjektmodell (DOM) Codeanbieter die in nativem Code verwendet werden kann.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService>|Schnittstellen IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService|Nein|Ja|Ermöglicht den Zugriff auf die IDE Unterstützung für verwaltete Formular-Designer. Die `IVSMDCodeDomCreator` kann zum Erstellen von Code-DOM-Anbieter verwendet werden.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService>|IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService|Nein|Ja|Ermöglicht den Zugriff auf die IDE Unterstützung für verwaltete Formular-Designer. Die `IVSMDCodeDomCreator` kann zum Erstellen von Code-DOM-Anbieter verwendet werden.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser>|IVSMDPropertyBrowser|Nein|Ja|Bietet Zugriff auf den Designer Eigenschaft Windows-Dienst.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService>|Nein|Ja|Ermöglicht den Zugriff auf eine Schnittstelle, die zurückgegeben werden kann eine <xref:System.ComponentModel.Design.ITypeResolutionService> Objekt in systemeigenem Code verwendbar.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope>|Nein|Ja|Bietet eine Möglichkeit, um einen Bereich für eine Assembly, die Berücksichtigung Sperren nach Bedarf zu öffnen.|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730691"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Ja|Ja|Bietet Zugriff auf XML-formatierte Dokumentationsdateien, die einer bestimmten Metadaten-Datei zugeordnet.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Com- und verwalteten Diensten](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [Com- und verwalteten Diensten](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)
-
