@@ -1,14 +1,9 @@
 ---
 title: Legen Sie die Codeanalyse-Regelsätze arbeiten-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946757"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Arbeiten mit dem Regelsatz-Editor für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Die Codeanalyse Regelsatz-Editor können Sie zum Festlegen von Regeln, die in ei
   
 |ToolBar-Steuerelement|Beschreibung|  
 |---------------------|-----------------|  
-|**Alle erweitern**|Die Regeln in allen Gruppen angezeigt.|  
+|**Alle aufklappen**|Die Regeln in allen Gruppen angezeigt.|  
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen an.|  
 |**Group By**|Gibt das Feld, nach dem Regeln gruppiert werden. Klicken Sie auf  **\<None >** ohne Gruppen angezeigt.|  
 |**Spaltenoptionen**|Gibt die Regelfelder angezeigt werden sollen.|  
@@ -81,6 +76,3 @@ Die Codeanalyse Regelsatz-Editor können Sie zum Festlegen von Regeln, die in ei
 -   Um die Listen der Regel-Satz zu sortieren, klicken Sie auf die Spaltenüberschrift des Felds, nach der sortiert werden sollen. Wenn die Regelsätze gruppiert werden, wird jede Gruppe einzeln sortiert.  
   
 -   Um die Regelsätze durch den Wert eines Felds zu filtern, klicken Sie auf die Schaltfläche "Filter" auf die Spaltenüberschrift des Felds mit dem Sie filtern möchten. Wählen Sie die Kontrollkästchen für die Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen für die Werte, die Sie ausblenden möchten.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Debuggen von Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 53df72fcdc5df0022be337aa01a0eab003ba3949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b689a3be22c9fec775cf42b9d26393a886174daf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810012"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000881"
 ---
 # <a name="debugging-applications"></a>Debuggen von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von
 |[Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md)|Beschreibt das Debuggen von DirectX-Grafiken.|  
 |[Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)|Beschreibt das Debuggen von Web-, ASP.NET- und AJAX-Anwendungen.|  
 |[Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)|Beschreibt das Debuggen von Windows Communication Foundation-Diensten|
-
-
-

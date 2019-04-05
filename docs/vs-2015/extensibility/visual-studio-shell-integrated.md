@@ -1,27 +1,22 @@
 ---
 title: Visual Studio-Shell (integriert) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765282"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "59001893"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio-Shell (integriert)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +39,10 @@ Die Visual Studio integrierte Shell umfasst die integrierte Entwicklungsumgebung
 |IDE|<ul><li>Einstellungen<br /><br /> <ul><li>Erstellen von Einstellungen</li><li>Einstellungen importieren und exportieren</li><li>Zurücksetzen von Einstellungen</li></ul></li><li>**Toolbox** Integration</li><li>**Aufgabenliste für** Integration</li><li>Integration von Hilfe</li><li>**Optionen** (Dialogfeld)</li><li>Verwaltung von Schriftarten und Farben</li><li>**Ausgabe** Fenster</li><li>**Befehl** Fenster</li><li>Fensterverwaltung</li><li>Befehle, Menüs und Tastenkombinationen</li><li>Domänenspezifische Sprache (DSL)-Laufzeit</li></ul>|  
 |Projektsystem und Projekttypen|-Lösungen und Projektmappenordner<br />-Konfigurations-Manager Lösung<br />-Verwaltung<br />-Lösungen Single-Projekt und mit mehreren Projekten<br />-Anwendungs-Designer (vereinfachte Projekteigenschaften)<br />-Webverweis hinzufügen<br />– Hinzufügen eines Dienstverweises<br />-Single-Projekt<br />-Website Projekttypen<br />-Webanwendungsprojekte|  
 |Build|– Benutzerdefinierte Buildschritte in IDE<br />– Vorkompilierung für den Schutz des geistigen Eigentums (IP)<br />: Signieren von code<br />     MSBuild|  
-|Editor|-Code-Tools (einheitliche Suche, Quelldefinition, Vererbung) durchsuchen<br />: Navigation in code<br />-IntelliSense<br />-SmartTags<br />-Refactoring<br />-Automatische Strukturierung<br />-IntelliSense Filterung<br />-   **Code Definition** Fenster|  
+|Editor|-Code-Tools (einheitliche Suche, Quelldefinition, Vererbung) durchsuchen<br />: Navigation in code<br />-IntelliSense<br />-   SmartTags<br />-Refactoring<br />-Automatische Strukturierung<br />-IntelliSense Filterung<br />-   **Code Definition** Fenster|  
 |Designer|– Windows Presentation Foundation-Designer<br />-Windows Forms-Designer<br />-Web-Designer und HTML-Editor|  
 |Daten|-   **Server-Explorer** (vereinfacht: nur Daten). Siehe Hinweis 1.<br />-   **Datenquellen** Fenster<br />-Vollständiger Satz von Datensteuerelementen<br />-XML-Editor<br />-Daten zu binden, um die lokale Datenquelle (. MDF-Datei oder. MDB)<br />-Data-Bind-Objekt<br />-Daten zu binden, Webdienst<br />-Datenbindung mit lokalen Datenbankserver<br />-Datenbindung an remote-Datenbankserver<br />-DDL Tools für die Remotedaten<br />-   **Server-Explorer** Erweiterbarkeit ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Beispiele)|  
-|Debugger|-Lokalen Debuggen. Siehe Hinweis 2.<br />– Verwaltetes Debuggen<br />– Lokales Debuggen<br />– An den lokalen Prozess anhängen.<br />-Fügen Sie dem Remoteprozess<br />-Anonymen Delegaten<br />-Anwendungsdomänen<br />-ASPX Debugging<br />-Attribute<br />-Wird unterbrochen Sie, während der eval-Funktion<br />-Haltepunkte<br />-Haltepunkt Einschränkungen<br />: Aufrufliste<br />-   **Befehl** Fenster<br />-Debuggen Cross-thread<br />-Datentipps<br />-Daten Schnellansicht<br />-Die Debuggerunterstützung für verwaltetes Debuggen (MDA)<br />-Debugger Unterstützung für typweiterleitung<br />-OTB DTEEvents Unterstützung<br />-JMC zugeordnetem<br />-Debugger AppID-Test (DBGCLR)<br />-Debugger Profil<br />-Debugger-Tools und Optionen<br />-Debug iterator<br />-Design-Time-ausdrucksauswertung<br />– C# Ausdrucksauswertung<br />-Disassembly<br />– Bearbeiten und fortfahren<br />-Expression Evaluator Windows (sehen Sie sich, "lokal", "Auto")<br />-Ausnahme-Hilfe<br />-Ausnahmen<br />-Execution<br />– Generics<br />– Abrufen der richtige Quelle<br />-Debuggen von HPC/Cluster<br />-Integrierte Debuggen mehrerer Sprachen<br />-InterOp-Debuggen<br />-Just-in-Time-Debuggen<br />– Lokales Debuggen<br />– Verwaltetes Debuggen<br />– Manuelle Steuerung (Fenster "Prozesse")<br />-Arbeitsspeicher<br />-MiniDump Unterstützung<br />-Module<br />-Debuggen mit mehreren Prozessen<br />-Systemeigenes Debuggen<br />– Neue Debug-Engine-Unterstützung<br />-Optimierten Codedebuggen<br />-Ausgabefenster filtern<br />– Verarbeiten Sie hosting für verwaltetes Debuggen<br />-Prozesse<br />-Schnellüberwachung<br />-Register<br />-Register im Stapel<br />-Remotedebuggen<br />-Rückgabewerte<br />: Debuggen von Skripts<br />-Source-dienstunterstützung<br />-Sicherheit<br />Seite-an-Seite<br />-SQL<br />-Symbolserver<br />-Ablaufverfolgungspunkte<br />-Thread<br />-Visualisierungen<br />-Extensible Stylesheet Language Transformations (XSLT)-debugger|  
+|Debugger|-Lokalen Debuggen. Siehe Hinweis 2.<br />– Verwaltetes Debuggen<br />– Lokales Debuggen<br />– An den lokalen Prozess anhängen.<br />-Fügen Sie dem Remoteprozess<br />-Anonymen Delegaten<br />-Anwendungsdomänen<br />-ASPX Debugging<br />-Attribute<br />-Wird unterbrochen Sie, während der eval-Funktion<br />-Haltepunkte<br />-Haltepunkt Einschränkungen<br />: Aufrufliste<br />-   **Befehl** Fenster<br />-Debuggen Cross-thread<br />-Datentipps<br />-Daten Schnellansicht<br />-Die Debuggerunterstützung für verwaltetes Debuggen (MDA)<br />-Debugger Unterstützung für typweiterleitung<br />-OTB DTEEvents Unterstützung<br />-JMC zugeordnetem<br />-Debugger AppID-Test (DBGCLR)<br />-Debugger Profil<br />-Debugger-Tools und Optionen<br />-Debug iterator<br />-Design-Time-ausdrucksauswertung<br />– C# Ausdrucksauswertung<br />-Disassembly<br />– Bearbeiten und fortfahren<br />-Expression Evaluator Windows (sehen Sie sich, "lokal", "Auto")<br />-Ausnahme-Hilfe<br />-Ausnahmen<br />-Execution<br />– Generics<br />– Abrufen der richtige Quelle<br />-Debuggen von HPC/Cluster<br />-Integrierte Debuggen mehrerer Sprachen<br />-InterOp-Debuggen<br />-Just-in-Time-Debuggen<br />– Lokales Debuggen<br />– Verwaltetes Debuggen<br />– Manuelle Steuerung (Fenster "Prozesse")<br />-Arbeitsspeicher<br />-MiniDump Unterstützung<br />-Module<br />-Debuggen mit mehreren Prozessen<br />-Systemeigenes Debuggen<br />– Neue Debug-Engine-Unterstützung<br />-Optimierten Codedebuggen<br />-Ausgabefenster filtern<br />– Verarbeiten Sie hosting für verwaltetes Debuggen<br />-Prozesse<br />-Schnellüberwachung<br />-Register<br />-Register im Stapel<br />-Remotedebuggen<br />-Rückgabewerte<br />: Debuggen von Skripts<br />-Source-dienstunterstützung<br />-Sicherheit<br />Seite-an-Seite<br />-   SQL<br />-Symbolserver<br />-Ablaufverfolgungspunkte<br />-Thread<br />-Visualisierungen<br />-Extensible Stylesheet Language Transformations (XSLT)-debugger|  
 |64-Bit-Unterstützung|-64-Bit-Debuggen für verwalteten und systemeigenen Code, alle Sprachen<br />-native X64 unterstützen|  
 |Quellcodeverwaltung (SCC)|-Einfache SCC-Integration. Siehe Hinweis 3.<br />-Tools und Optionen der Überprüfung|  
 |Erweiterungen|– Nutzen Sie VSPackages und MEF-Komponenten|  
@@ -75,7 +70,7 @@ Die Visual Studio integrierte Shell umfasst die integrierte Entwicklungsumgebung
   
 -   Klassen-Designer  
   
--   Präemptive DotFuscator  
+-   PreEmptive Protection – Dotfuscator  
   
 -   Sprachfunktionen  
   
@@ -84,4 +79,4 @@ Die Visual Studio integrierte Shell umfasst die integrierte Entwicklungsumgebung
 -   Keine Visual Studio-Sprachen oder ihre zugeordneten Projektvorlagen oder Projektelementvorlagen, sind in der integrierten Shell enthalten. Keine sprachspezifische Implementierungen anderer Features sind enthalten, für das Beispiel Visual Basic-Codeausschnitte.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erweitern von Visual Studio-Übersicht](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Übersicht über die Erweiterung von Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

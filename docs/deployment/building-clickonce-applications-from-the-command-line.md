@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
 ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/28/2019
 ms.locfileid: "58567840"
@@ -154,7 +154,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 
 - `IsWebBootstrapper` Bestimmt, ob die *setup.exe* Bootstrapper funktioniert nur über das Internet oder in datenträgerbasierte-Modus.
 
-## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL "," SupportUrl "," PublishURL "und" UpdateURL
+## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL, and UpdateURL
  Die folgende Tabelle zeigt die vier URL-Optionen für die ClickOnce-Bereitstellung.
 
 |URL-option|Beschreibung|

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden des Fensters Aufrufliste | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -33,18 +28,18 @@ ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c45f0a645945e68b7b3d21eefe2f981b9b4b352f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946760"
 ---
-# <a name="how-to-use-the-call-stack-window"></a>Gewusst wie: Verwenden des Fensters Aufrufliste
+# <a name="how-to-use-the-call-stack-window"></a>Vorgehensweise: Verwenden des Fensters Aufrufliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufrufen, die derzeit auf dem Stapel vorhanden sind.  
+Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozeduraufrufe anzeigen, die sich derzeit im Stapel befinden.  
   
  Die **Aufrufliste** Fenster zeigt den Namen der Funktionen und die Programmiersprache, die es geschrieben ist. Der Name der Funktion oder der Prozedur wird möglicherweise von optionalen Informationen begleitet, z. B. Modulname, Zeilennummer, Parameternamen, -typen und -werte. Die Anzeige dieser optionalen Informationen kann ein- bzw. ausgeschaltet werden:  
   
@@ -63,7 +58,7 @@ Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufruf
  Im Kontextmemü können Sie auswählen, ob Aufrufe zwischen Threads angezeigt werden sollen.  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie zum Ändern Ihrer Einstellungen **Einstellungen importieren und exportieren** auf die **Tools** Menü. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>So zeigen Sie das Fenster "Aufrufliste" im Unterbrechungsmodus oder im Ausführmodus an  
   
@@ -75,33 +70,33 @@ Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufruf
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>So zeigen Sie Rahmen mit nicht benutzerseitigem Code im Fenster "Aufrufliste" an  
   
--   Mit der rechten Maustaste die **Aufrufliste** Fenster, und wählen **externen Code anzeigen**.  
+-   Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Externen Code anzeigen** aus.  
   
 ### <a name="to-switch-to-another-stack-frame"></a>So wechseln Sie in einen anderen Stapelrahmen  
   
 1.  In der **Aufrufliste** Fenster mit der rechten Maustaste in des Rahmens, dessen Code und Daten, die Sie anzeigen möchten.  
   
-2.  Wählen Sie **zu Rahmen wechseln**.  
+2.  Wählen Sie **Switch to Frame** (Zu Frame wechseln) aus.  
   
-     Neben dem ausgewählten Rahmen wird ein grüner Pfeil in Form einer Welle angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Bei Auswahl von **Schritt** oder **Weiter** aus der **Debuggen** Menü Ausführung wird im ursprünglichen Rahmen fortgesetzt, die nicht im neu ausgewählten.  
+     Neben dem ausgewählten Rahmen wird ein grüner Pfeil in Form einer Welle angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Wenn Sie im Menü **Debuggen** den Befehl **Schritt** oder **Weiter** auswählen, wird die Ausführung nicht im neu ausgewählten, sondern im ursprünglichen Frame fortgesetzt.  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>So zeigen Sie Aufrufe zu bzw. von anderen Threads an  
   
--   Mit der rechten Maustaste die **Aufrufliste** Fenster, und wählen **Aufrufe zu/von anderen Threads einschließen**.  
+-   Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Aufrufe zu/von anderen Threads einschließen** aus.  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an  
   
--   In der **Aufrufliste** der rechten Maustaste auf die Funktion, deren Quellcode Sie, anzeigen möchten und wählen Sie **Gehe zu Quellcode**.  
+-   Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Quellcode Sie anzeigen möchten, und wählen Sie **Gehe zu Quellcode** aus.  
   
 ### <a name="to-visually-trace-the-call-stack"></a>So verfolgen Sie die Aufrufliste visuell  
   
-1.  In der **Aufrufliste** Fenster, das Kontextmenü zu öffnen. Wählen Sie **Aufrufliste auf Code Map anzeigen**. (Tastatur: **STRG** + **UMSCHALT** + **`**)  
+1.  Öffnen Sie das Kontextmenü im Fenster **Aufrufliste**. Wählen Sie **Aufrufliste auf Code Map anzeigen**. (Tastatur: **STRG** + **UMSCHALT** + **`**)  
   
      Finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>So zeigen Sie den Disassembly-Code für eine Funktion in der Aufrufliste an  
   
--   In der **Aufrufliste** der rechten Maustaste auf die Funktion, deren Disassemblycode Sie, anzeigen möchten und wählen Sie **Gehe zu Disassembly**.  
+-   Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Disassemblycode Sie anzeigen möchten, und wählen Sie **Gehe zu Disassembly** aus.  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>So führen Sie im Aufruflistenfenster das Programm bis zu einer angegebenen Funktion aus  
   
@@ -116,9 +111,9 @@ Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufruf
 -   In der **Aufrufliste** Fenster mit der rechten Maustaste in des Frames mit dem Modul, dessen Symbole Sie erneut laden, und wählen Sie möchten **Symbole laden**.  
   
 ## <a name="loading-symbols"></a>Laden von Symbolen  
- In der **Aufrufliste** Fenster können Sie laden die Debugsymbole für Code, der derzeit keine Symbole geladen sind. Bei diesen Symbolen kann es sich um .NET Framework-Symbole oder Systemsymbole handeln, die von den öffentlichen Microsoft-Symbolservern heruntergeladen wurden, oder um Symbole in einem Symbolpfad auf dem Computer, den Sie debuggen.  
+ Im Fenster **Aufrufliste** können Sie Debugsymbole für Code laden, für den derzeit keine Symbole geladen sind. Bei diesen Symbolen kann es sich um .NET Framework-Symbole oder Systemsymbole handeln, die von den öffentlichen Microsoft-Symbolservern heruntergeladen wurden, oder um Symbole in einem Symbolpfad auf dem Computer, den Sie debuggen.  
   
- Finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ Weitere Informationen finden Sie unter [Angeben von Symbol- (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 #### <a name="to-load-symbols"></a>So laden Sie Symbole  
   
@@ -128,15 +123,15 @@ Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufruf
   
 #### <a name="to-set-the-symbol-path"></a>So legen Sie den Symbolpfad fest  
   
-1.  In der **Aufrufliste** Fenster wählen **Symboleinstellungen** aus dem Kontextmenü.  
+1.  Wählen Sie im Fenster **Aufrufliste** im Kontextmenü die Option **Symboleinstellungen** aus.  
   
-     Die **Optionen** Dialogfeld wird geöffnet und die **Symbole** angezeigt wird.  
+     Das Dialogfeld **Optionen** wird geöffnet, und die Seite **Symbole** wird angezeigt.  
   
 2.  Klicken Sie auf **Symboleinstellungen**.  
   
-3.  In der **Optionen** Dialogfeld klicken Sie auf das Ordnersymbol.  
+3.  Klicken Sie im Dialogfeld **Optionen** auf das Ordnersymbol.  
   
-     In der **Symboldateien (.pdb) Orte für Symboldateien** Feld ein Cursor angezeigt.  
+     Im Feld **Speicherorte für Symboldateien (.pdb)** wird ein Cursor angezeigt.  
   
 4.  Geben Sie einen Verzeichnispfadnamen zum Symbolspeicherort auf dem Computer ein, den Sie debuggen. Beim lokalen Debuggen ist dies der lokale Computer. Beim Remotedebuggen ist es der Remotecomputer.  
   
@@ -146,10 +141,5 @@ Mithilfe der **Aufrufliste** Fenster sehen Sie die Funktions- und Prozeduraufruf
  [Gemischter Code und fehlende Daten im Aufruflistenfenster](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
  [Vorgehensweise: Ändern des numerischen Formats von Debugger-Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Angeben von Symboldateien (PDB) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
-
-
-
-
-

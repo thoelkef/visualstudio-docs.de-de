@@ -1,30 +1,27 @@
 ---
 title: Erste Schritte mit domänenspezifischen Sprachen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877766"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001388"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und verwenden eine domänenspezifische Sprache (DSL) mit der Modellierungs-SDK für Visual Studio erstellt wird.  
   
- Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Was können Sie mit einer domänenspezifischen Sprache?  
  Eine domänenspezifische Sprache ist eine Notation, normalerweise eine grafische Darstellung, die für einen bestimmten Zweck verwendet werden soll. Im Gegensatz dazu sind Sprachen wie z. B. UML allgemeinen. In einer DSL können Sie definieren die Typen von Modellelement und ihre Beziehungen und wie sie auf dem Bildschirm dargestellt werden.  
@@ -46,7 +43,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Modellierungs-SDK für Visual Studio|[Herunterladen von MSDK](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Modellierungs-SDK für Visual Studio|[Herunterladen von MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>Erstellen eine DSL-Projektmappe  
  Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie ein neues [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung mithilfe der Projektvorlage einer domänenspezifischen Sprache.  
@@ -86,7 +83,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
    Die Benutzeroberfläche gleicht nun der folgenden Abbildung.  
   
-   ![DSL-Designers](../modeling/media/dsl-designer.png "Dsl_designer")  
+   ![DSL-Designer](../modeling/media/dsl-designer.png "DSL-Designer")  
   
    Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Überblick über die Benutzeroberfläche für domänenspezifische Sprachtools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
@@ -107,7 +104,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 1. Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Dies wird erneut die meisten der Quellcode von "DslDefinition.DSL" generiert.  
   
    > [!NOTE]
-   >  Wenn Sie "DslDefinition.DSL" ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   >  Wenn Sie "DslDefinition.DSL" ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Drücken Sie F5, oder auf die **Debuggen** Menü klicken Sie auf **Debuggen starten**.  
   
@@ -377,7 +374,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 ## <a name="validation-and-commands"></a>Überprüfung und Befehle  
  Sie können diese DSL weiter entwickeln, durch das Hinzufügen von validierungseinschränkungen. Diese Einschränkungen sind Methoden, die Sie definieren können, und sicherstellen, dass das Modell in einem korrekten Zustand befindet. Beispielsweise können Sie eine Einschränkung, um sicherzustellen, definieren, die das Geburtsdatum des ein untergeordnetes Element höher als die des übergeordneten ist. Die Überprüfungsfunktion zeigt eine Warnung aus, wenn die DSL-Benutzer versucht, ein Modell zu speichern, die Einschränkungen beeinträchtigen. Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
   
- Sie können auch die Befehle im Menü definieren, die der Benutzer aufrufen können. Befehle können das Modell ändern. Sie können auch mit anderen Modellen interagieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und mit externen Ressourcen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern eines Menübefehls Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Sie können auch die Befehle im Menü definieren, die der Benutzer aufrufen können. Befehle können das Modell ändern. Sie können auch mit anderen Modellen interagieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und mit externen Ressourcen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Bereitstellen von der DSL  
  Um andere Benutzer zum Verwenden der domänenspezifischen Sprache zu ermöglichen, verteilen Sie ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX)-Datei. Dies wird erstellt, wenn Sie die DSL-Projektmappe zu erstellen.  
@@ -386,7 +383,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
  Sie können das gleiche Verfahren verwenden, auf die DSL auf Ihrem eigenen Computer installieren, sodass Sie nicht verfügen, verwenden Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).  
+ Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a> Entfernen alte experimentelle DSLs  
  Wenn Sie experimentelle DSLs erstellt haben Sie nicht mehr benötigen, Sie können sie von Ihrem Computer entfernen, indem Sie das Zurücksetzen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle Instanz.  
@@ -405,6 +402,3 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
  [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)   
  [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-
