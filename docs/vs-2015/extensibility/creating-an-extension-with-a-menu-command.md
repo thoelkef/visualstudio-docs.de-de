@@ -1,14 +1,9 @@
 ---
 title: Erstellen einer Erweiterung mit einem Menübefehl | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957989"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -130,13 +125,12 @@ Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiteru
   
    3.  Fügen Sie eine Verknüpfung im Startmenü auf einen Befehl hinzu: [Binden von Tastenkombinationen an Menüelemente](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Verschiedene Arten von Befehle, Menüs und Symbolleisten: [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)  
+2. Fügen Sie verschiedene Arten von Befehle, Menüs und Symbolleisten hinzu: [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)  
   
-3. Hinzufügen von Toolfenstern und erweitern Sie die integrierte Visual Studio-Toolfenster: [erweitern und Anpassen von Tool Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Fügen Sie Toolfenster, und erweitern Sie die integrierte Visual Studio-Toolfenster: [Erweitern und Anpassen von Toolfenstern](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. Hinzufügen von IntelliSense Vorschläge für Code, und andere Funktionen auf vorhandenen code-Editoren: [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md)  
+4. Hinzufügen von IntelliSense Vorschläge für Code und andere Funktionen auf vorhandenen Code-Editoren: [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Hinzufügen von Seiten "Optionen" und "-Eigenschaft und die benutzereinstellungen zu Ihrer Erweiterung: [Erweitern von Eigenschaften und des Eigenschaftenfensters](../extensibility/extending-properties-and-the-property-window.md) und [Erweitern von Benutzereinstellungen und Optionen](../extensibility/extending-user-settings-and-options.md)  
+5. Fügen Sie die Seiten "Optionen" und "-Eigenschaft und die benutzereinstellungen zu Ihrer Erweiterung hinzu: [Erweitern von Eigenschaften und das Eigenschaftenfenster](../extensibility/extending-properties-and-the-property-window.md) und [Erweitern von Benutzereinstellungen und Optionen](../extensibility/extending-user-settings-and-options.md)  
   
-   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Erweitern von Projekten](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)), oder implementieren die Erweiterung in einer isolierten Shell: [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
-
+   Andere Arten von Erweiterungen erfordern ein wenig mehr Arbeit, z. B. das Erstellen einer neuen Art von Projekt ([Erweitern von Projekten](../extensibility/extending-projects.md)), erstellen eine neue Art von Editor ([Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)), oder implementieren die Erweiterung in einer isolierten Shell ein: [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)

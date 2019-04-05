@@ -1,23 +1,20 @@
 ---
 title: Richtlinien für das Verfassen von T4-Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812744"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59001245"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Diese allgemeinen Richtlinien sinnvoll sein, wenn Sie Programmcode oder andere R
   Verschieben Sie häufige Material in Include-Dateien oder Laufzeitvorlagen  
   Wiederholen ähnliche Blöcke von Text und Code in mehreren Vorlagen verwenden damit, die `<#@ include #>` Richtlinie. Weitere Informationen finden Sie unter [T4-Include-Direktive](../modeling/t4-include-directive.md).  
   
-  Sie können auch die Laufzeit-Textvorlagen in einem separaten Projekt erstellen, und rufen sie dann aus der Vorlage zur Entwurfszeit. Verwenden Sie hierzu die `<#@ assembly #>` Richtlinie den Zugriff auf die separaten Projekt. Beispiele finden Sie in ["Vererbung in Textvorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Sie können auch die Laufzeit-Textvorlagen in einem separaten Projekt erstellen, und rufen sie dann aus der Vorlage zur Entwurfszeit. Verwenden Sie hierzu die `<#@ assembly #>` Richtlinie den Zugriff auf die separaten Projekt.
   
   Sollten Sie große Datenblöcke des Codes in eine separate Assembly verschieben.  
   Wenn Sie große Code- und Klassenfunktionsblöcken verfügen, kann es hilfreich sein, Teile dieses Codes in Methoden zu verschieben, die Sie in einem separaten Projekt kompilieren. Sie können die `<#@ assembly #>` Richtlinie den Zugriff auf den Code in der Vorlage. Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>Siehe auch  
  [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-
