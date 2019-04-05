@@ -1,14 +1,9 @@
 ---
 title: Verwalten von Ausnahmen mit dem Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769997"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960516"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Verwalten von Ausnahmen mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +98,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
    goodbye  
    ```  
   
-    Die `here`-Zeile wird jedoch nicht angezeigt.  
+    Die `here` -Zeile wird jedoch nicht angezeigt.  
   
 2. Eine C#-Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse mit zwei Methoden: einer Methode, die eine Ausnahme auslöst und diese verarbeitet, und einer zweiten Methode, die die gleiche Ausnahme auslöst, sie aber nicht behandelt:  
   
@@ -189,12 +184,7 @@ public class GenericException<T> : Exception
 ## <a name="see-also"></a>Siehe auch  
  [Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)   
  [Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Vorgehensweise: Verwenden von systemeigenen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)   
+ [Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)   
  [Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Elemente eines Projektmodells | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
 - project models
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 818e58af478b3c86c4d0ce9daa9c439681de999e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946702"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projektmodells
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../
   
 - Jedes Projekt benötigen eine Vorlagendatei oder einen Assistenten, um die neue Projektdatei zu initialisieren, wenn ein Benutzer über ein neues Projekt erstellt die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Benutzeroberfläche. Z. B. die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Vorlagen zu initialisieren, was schließlich VCPROJ-Dateien werden.  
   
-  Die folgende Abbildung zeigt die primären Schnittstellen, Dienste und Objekte, die eine Implementierung der typischen Projekt zu erstellen. Die Anwendung Hilfsprogramms, des HierUtil7, können Sie um die zugrunde liegenden Objekte und andere Programmiersprachen Codebausteinen zu erstellen. Weitere Informationen zu der Anwendung HierUtil7-Hilfsprogramm, finden Sie unter [nicht im Build: Verwenden von HierUtil7 Projektklassen implementieren Sie eine Projekt-Typ (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Die folgende Abbildung zeigt die primären Schnittstellen, Dienste und Objekte, die eine Implementierung der typischen Projekt zu erstellen. Die Anwendung Hilfsprogramms, des HierUtil7, können Sie um die zugrunde liegenden Objekte und andere Programmiersprachen Codebausteinen zu erstellen. Weitere Informationen zu der Anwendung HierUtil7-Hilfsprogramm, finden Sie unter [nicht im Build: HierUtil7-Projektklassen zum Implementieren eines Projekttyps (C++) mit](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
   ![Grafik zum Visual Studio-Projektmodell](../../extensibility/internals/media/vsprojectmodel.gif "VsProjectModel")  
   Projektmodell  
@@ -50,9 +45,8 @@ Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../
   
 ## <a name="see-also"></a>Siehe auch  
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Nicht im Build: verwenden HierUtil7-Projekt-Klasse zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Nicht im Build: Mithilfe von HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md)   
  [Erstellen von Projektinstanzen mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Vorgehensweise: Abrufen eines Diensts](../../extensibility/how-to-get-a-service.md)   
  [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)
-

@@ -1,12 +1,9 @@
 ---
 title: 'UML-Aktivitätsdiagramme: Richtlinien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,13 +14,13 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959497"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
   Prozesse lassen sich durch das Zeichnen eines Aktivitätsdiagramms optimieren. Wenn sich das Diagramm eines vorhandenen Prozesses als sehr komplex erweist, können Sie überlegen, wie der Prozess vereinfacht werden kann.  
   
-  Referenzinformationen zu den Elementen in Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md).  
+  Referenzinformationen zu den Elementen in Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Beziehung zu anderen Diagrammen  
  Wenn Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder die Art und Weise der Verwendung des Systems durch Benutzer zu beschreiben, können Sie ein Anwendungsfalldiagramm zeichnen, das eine andere Ansicht der gleichen Informationen liefert. Im Anwendungsfalldiagramm zeichnen Sie Aktionen als Anwendungsfälle. Weisen Sie den Anwendungsfällen den gleichen Namen zu wie den entsprechenden Aktionen. Die Anwendungsfallansicht bietet Ihnen folgende Vorteile:  
@@ -168,7 +165,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="interrupting-the-activity"></a>Unterbrechen der Aktivität  
  Um zu beschreiben, wie der normale Fluss einer Aktivität unterbrochen werden kann, beispielsweise wenn sich der Benutzer entscheidet, den Vorgang abzubrechen, können Sie einen Knoten zum Akzeptieren eines Ereignisses erstellen, der auf dieses Ereignis lauscht. Weitere Informationen finden Sie im Abschnitt [parallele Flüsse](#Concurrent). Erstellen Sie eine Ablaufsteuerung von diesem Knoten zu einem Aktivitätsendknoten (7).  
   
-### <a name="swimlanes"></a>Verantwortlichkeitsbereiche  
+### <a name="swimlanes"></a>Swimlanes  
  Manchmal ist es sinnvoll, die Aktionen einer Aktivität in Bereiche aufzuteilen, die unterschiedlichen Objekten oder Geschäftsrollen entsprechen, die die Aktionen ausführen. Diese Bereiche werden herkömmlicherweise in Spalten angeordnet und als *Verantwortlichkeitsbereiche*.  
   
 - Mithilfe von Linien oder Rechtecken aus dem **einfache Formen** Abschnitt der Toolbox zeichnen Sie Verantwortlichkeitsbereiche oder andere Bereiche.  
@@ -185,7 +182,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 -   Verwenden einer **Ausgabe Pin** und **Eingabe der Pin**. Mit dieser Methode können Sie die Ausgaben einer Aktion und die Eingaben einer anderen Aktion getrennt beschreiben. Pins sind mit Parametern in einem Programm vergleichbar. Pins stellen Ports dar, an denen Objekte in eine Aktion eintreten und eine Aktion verlassen können.  
   
     > [!NOTE]
-    >  Einen Überblick über die in diesem Abschnitt verwendeten Elemente finden Sie im Datenfluss Abschnitt des Themas finden Sie unter [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md).  
+    >  Einen Überblick über die in diesem Abschnitt verwendeten Elemente finden Sie im Datenfluss Abschnitt des Themas finden Sie unter [UML-Aktivitätsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Beschreiben des Datenflusses mit Objektknoten  
  Die meisten Ablaufsteuerungen übertragen Daten. Beispielsweise überträgt der Ausgabefluss der Aktion „Kunde gibt Details an“ einen Verweis auf die Lieferadresse.  
@@ -198,7 +195,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Weisen Sie dem Objektknoten einen Namen zu, der die Rolle des Knotens als Kanal oder Puffer der Objekte widerspiegelt, die zwischen den Aktionen übertragen werden.  
   
- Sie können festlegen, die **Typ** des Objektknotens im Eigenschaftenfenster angezeigt. Der Typ kann ein primitiver Typ wie z. B. „Integer“ oder eine Klasse, Schnittstelle oder Enumeration sein, die Sie in einem Klassendiagramm definiert haben. Sie können z. B. die Klasse „Lieferadresse“ mit den Attributen „Anschrift“, „Ort“ usw. zusammen mit einer Zuordnung zur Klasse „Kunde“ erstellen. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
+ Sie können festlegen, die **Typ** des Objektknotens im Eigenschaftenfenster angezeigt. Der Typ kann ein primitiver Typ wie z. B. „Integer“ oder eine Klasse, Schnittstelle oder Enumeration sein, die Sie in einem Klassendiagramm definiert haben. Sie können z. B. die Klasse „Lieferadresse“ mit den Attributen „Anschrift“, „Ort“ usw. zusammen mit einer Zuordnung zur Klasse „Kunde“ erstellen. Weitere Informationen finden Sie unter [UML Class Diagrams: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
 >  Wenn Sie den Namen eines Typs, die noch nicht definiert wurde eingeben, wird ein Element hinzugefügt werden, unter **nicht spezifizierte Typen** im UML-Modell-Explorer. Wenn Sie anschließend einen Typ dieses Namens in einem Klassendiagramm definieren, setzen Sie den Typ des Objektknotens zurück, sodass er auf den neuen Typ verweist.  
@@ -293,7 +290,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Um diese Eigenschaften festlegen, mit der rechten Maustaste in der Aktions aus, und klicken Sie dann auf **Eigenschaften**. Geben Sie Werte in die Eigenschaftenfelder im Eigenschaftenfenster ein.  
   
-#### <a name="local-postconditions"></a>Local Postconditions  
+#### <a name="local-postconditions"></a>Lokale Nachbedingungen  
  Eine Nachbedingung ist eine Bedingung, die erfüllt sein muss, bevor die Aktion als abgeschlossen betrachtet werden kann. In der Beispielaktion „Bestellung bestätigen“ kann die Nachbedingung wie folgt lauten:  
   
  Der Kunde hat vollständige und gültige Informationen angegeben, die zum Verarbeiten seiner Kreditkartendaten erforderlich sind.  
@@ -363,7 +360,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  ![Parallele Objektflüsse](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- Wenn die Aktion „Kunde stellt genau Daten bereit“ abgeschlossen wird, erzeugt sie zwei Objekte: „Lieferadresse“ und „Kreditkartendetails“. Die beiden Objekte werden anschließend durch unterschiedliche Aktionen verarbeitet.  
+ Wenn die Aktion "Kunde gibt Details" abgeschlossen ist, erzeugt es sich um zwei Objekte: "Lieferadresse" und "Kreditkartendetails". Die beiden Objekte werden anschließend durch unterschiedliche Aktionen verarbeitet.  
   
  Da eine Aktion erst beginnen kann, wenn alle zugehörigen Eingaben verfügbar sind, beginnt die letzte Aktion erst, wenn alle zu ihr führenden Aktionen abgeschlossen sind.  
   
@@ -437,6 +434,3 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
  [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)   
  [Video: Erfassen von Geschäftsworkflows mithilfe von Aktivitätsdiagrammen](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Debuggen von ASP.NET-Ausnahmen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,38 +17,35 @@ ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d505e67018c24f659e88401b565011a4c7bea96
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959786"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Gewusst wie: Debuggen von ASP.NET-Ausnahmen
+# <a name="how-to-debug-aspnet-exceptions"></a>Vorgehensweise: Debuggen von ASP.NET-Ausnahmen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debuggen von Ausnahmen ist ein wichtiger Bestandteil der Entwicklung einer robusten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Anwendung. Allgemeine Informationen zum Debuggen von Ausnahmen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
+Das Debuggen von Ausnahmen ist ein wichtiger Teil bei der Entwicklung einer robusten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung. Allgemeine Informationen zum Debuggen von Ausnahmen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).  
   
- So debuggen Sie nicht behandelte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Ausnahmen, achten Sie darauf, dass der Debugger dort anhält. Die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Laufzeit verfügt über einen Ausnahmehandler der obersten Ebene. Daher wird der Debugger bei Ausnahmefehlern standardmäßig nie unterbrochen. Um den Debugger anhalten, wenn eine Ausnahme ausgelöst wird, müssen Sie auswählen **Unterbrechen bei folgendem Ausnahmezustand: ausgelöst** Einstellung für die jeweilige Ausnahme im der **Ausnahmen** Dialogfeld.  
+ Zum Debuggen von nicht behandelten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Ausnahmen muss sichergestellt sein, dass der Debugger dort anhält. Die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Laufzeit verfügt über einen Ausnahmehandler der obersten Ebene. Daher wird der Debugger bei Ausnahmefehlern standardmäßig nie unterbrochen. Um den Debugger anhalten, wenn eine Ausnahme ausgelöst wird, müssen Sie auswählen **Unterbrechen bei folgendem Ausnahmezustand: Wird ausgelöst,** für die jeweilige Ausnahme im Festlegen der **Ausnahmen** Dialogfeld.  
   
- Wenn Sie nur mein Code aktiviert haben **Unterbrechen bei folgendem Ausnahmezustand: ausgelöst** bewirkt nicht, dass den Debugger sofort unterbrochen wird, wenn eine Ausnahme in einer .NET Framework-Methode oder anderem Systemcode ausgelöst wird. Stattdessen wird die Ausführung fortgesetzt, bis der Debugger auf Nicht-Systemcode trifft, und dann unterbrochen. Folglich müssen Sie den Systemcode nicht schrittweise durchlaufen, wenn eine Ausnahme auftritt.  
+ Wenn Sie nur mein Code aktiviert haben **Unterbrechen bei folgendem Ausnahmezustand: Wird ausgelöst,** bewirkt nicht, dass den Debugger sofort unterbrochen wird, wenn eine Ausnahme in einer .NET Framework-Methode oder anderem Systemcode ausgelöst wird. Stattdessen wird die Ausführung fortgesetzt, bis der Debugger auf Nicht-Systemcode trifft, und dann unterbrochen. Folglich müssen Sie den Systemcode nicht schrittweise durchlaufen, wenn eine Ausnahme auftritt.  
   
- Nur mein Code bietet Ihnen die Möglichkeit, die sogar noch nützlicher sein können: **Unterbrechen bei folgendem Ausnahmezustand: vom Benutzercode unbehandelt**. Bei dieser Einstellung für eine Ausnahme unterbricht der Debugger die Ausführung im Benutzercode nur, wenn die Ausnahme nicht durch den Benutzercode abgefangen und behandelt wird. Diese Einstellung neutralisiert die Wirkung des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Ausnahmehandlers der obersten Ebene, da dieser kein benutzerdefinierter Code ist.  
+ Nur mein Code bietet Ihnen eine weitere Möglichkeit, die sogar noch nützlicher sein können: **Unterbrechen Sie bei folgendem Ausnahmezustand: Vom Benutzercode unbehandelt**. Bei dieser Einstellung für eine Ausnahme unterbricht der Debugger die Ausführung im Benutzercode nur, wenn die Ausnahme nicht durch den Benutzercode abgefangen und behandelt wird. Diese Einstellung neutralisiert die Wirkung des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Ausnahmehandlers der obersten Ebene, da dieser kein benutzerdefinierter Code ist.  
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>So aktivieren Sie Debuggen der ASP.NET-Ausnahmen mit Nur mein Code  
   
-1.  Auf der **Debuggen** Menü klicken Sie auf **Ausnahmen**.  
+1.  Klicken Sie im Menü **Debuggen** auf **Ausnahmen**.  
   
-     Die **Ausnahmen** Dialogfeld wird angezeigt.  
+     Das Dialogfeld **Ausnahmen** wird angezeigt.  
   
-2.  Auf der **Common Language Runtime-Ausnahmen** Zeile **ausgelöst** oder **vom Benutzercode unbehandelt**.  
+2.  Wählen Sie in der Zeile **Common Language Runtime-Ausnahmen** die Einstellung **Ausgelöst** oder **Vom Benutzercode unbehandelt** aus.  
   
-     Verwenden der **vom Benutzercode unbehandelt** Einstellung **nur mein Code** muss aktiviert sein...  
+     Wenn Sie die Einstellung **Vom Benutzercode unbehandelt** verwenden möchten, muss **Nur eigenen Code** aktiviert werden.  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Empfohlene Vorgehensweise für die ASP.NET-Ausnahmebehandlung  
   
 -   Platzieren Sie `try … catch`-Blöcke für Code, der Ausnahmen auslösen kann, die Sie vorhersehen und behandeln können. Z. B. wenn die Anwendung Aufrufe an einen XML-Webdienst oder direkt an eine SQL Server herstellt, diesen Code muss **try … Catch** blockiert wird, weil es gibt zahlreiche Ausnahmen, die auftreten können.
-
-
-

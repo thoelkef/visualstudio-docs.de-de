@@ -1,14 +1,9 @@
 ---
-title: Code Analysis-Anwendungsfehler | Microsoft-Dokumentation
-ms.custom: ''
+title: Anwendungsfehler bei der Codeanalyse
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +13,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959851"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +52,13 @@ Dieser Abschnitt ist eine Referenz für die Fehlermeldungen, die vom Analysetool
 |[CA0070](ca0070.md)|Assembly bzw. aufgrund von Berechtigungen für die Codezugriffssicherheit kann nicht geladen werden.|
 |[CA0501](ca0501.md)|Lesen der Ausgabebericht kann nicht ausgeführt werden.|
 |[CA0502](ca0502.md)|Nicht unterstützte Sprache.|
-|[CA0503](ca0503.md))|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
+|[CA0503](ca0503.md)|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
 |[CA0504](ca0504.md)|Regelverzeichnis wurde ignoriert, da sie nicht vorhanden ist|
 |[CA0505](ca0505.md)|Die Eigenschaft ist veraltet. Verwenden Sie die ersetzende Eigenschaft|
 |[FxCopCmd-Fehler](fxcopcmd-errors.md)|Analysefehler bei verwaltetem Code.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Code Analysis Einchecken Richtlinienfehler.|
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-- [Richtlinien zum Schreiben von sicherem Code](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Richtlinien zum Schreiben von sicherem Code](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
 - [Ressourcen für das Beheben von Fehlern in Application Lifecycle Management-Tools](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

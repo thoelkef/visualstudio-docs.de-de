@@ -1,14 +1,9 @@
 ---
-title: 'CA1060: Move P-Invokes in NativeMethods-Klasse | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1060: Verschieben von P-Invokes in NativeMethods-Klasse | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913864"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959692"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes in NativeMethods-Klasse verschieben
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes in NativeMethods-Klasse verschieben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -94,7 +89,7 @@ ms.locfileid: "49913864"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods-Beispiel
 
 ### <a name="description"></a>Beschreibung
- P/Invoke-Methoden, die nicht sicher aufgerufen und kann dazu führen, dass Nebenwirkungen, sollten in einer Klasse mit dem Namen gesetzt werden **UnsafeNativeMethods**. Diese Methoden sollten gründlich überprüft werden, um sicherzustellen, dass sie nicht an den Benutzer unbeabsichtigt verfügbar gemacht werden. Die Regel [CA2118: Verwendung von Überprüfung SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) können Sie dabei unterstützen. Alternativ müssen die Methoden eine andere Berechtigung, die anstelle von gefordert wird **UnmanagedCode** wann diese verwendet werden.
+ P/Invoke-Methoden, die nicht sicher aufgerufen und kann dazu führen, dass Nebenwirkungen, sollten in einer Klasse mit dem Namen gesetzt werden **UnsafeNativeMethods**. Diese Methoden sollten gründlich überprüft werden, um sicherzustellen, dass sie nicht an den Benutzer unbeabsichtigt verfügbar gemacht werden. Die Regel [CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) dabei helfen können. Alternativ müssen die Methoden eine andere Berechtigung, die anstelle von gefordert wird **UnmanagedCode** wann diese verwendet werden.
 
  Das folgende Beispiel zeigt eine **Cursor.Hide** -Methode, die dient als Wrapper für die **ShowCursor** -Funktion aus "User32.dll".
 
@@ -104,6 +99,3 @@ ms.locfileid: "49913864"
 
 ## <a name="see-also"></a>Siehe auch
  [Entwurfswarnungen](../code-quality/design-warnings.md)
-
-
-

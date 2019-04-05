@@ -1,11 +1,8 @@
 ---
 title: Send-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
@@ -13,13 +10,13 @@ ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 77b277098958ac70e0afe3476310111bc0f54921
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a6eb6c858b7be16d5929668f854dd49b01957e14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962060"
 ---
 # <a name="send-activity-designer"></a>Send-Aktivitätsdesigner
 Die **senden** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.Send> Aktivität.  

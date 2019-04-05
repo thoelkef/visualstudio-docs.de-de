@@ -1,14 +1,9 @@
 ---
 title: Produkt- und Paketschemareferenz | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958174"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigke
   
 |Element|Beschreibung|Attribute|  
 |-------------|-----------------|----------------|  
-|[\<Produkt >-Element](../deployment/product-element-bootstrapper.md)|Element der obersten Ebene erforderlich für Produktdateien.|Keiner|  
-|[\<Package >-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für die Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts >-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element, für die Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt.|Keiner|  
-|[\<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen auf dem lokalen Computer ausführen, während der Installation überprüft die Abhängigkeit.|Keiner|  
-|[\<Befehle >-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen, wie beschrieben `InstallChecks`, und gibt an, welches Paket installiert die Überprüfung sollte fehlschlagen.|Keiner|  
-|[\<"PackageFiles" >-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Listet die Pakete, die durch diese Installation installiert werden können.|Keiner|  
-|[\<Zeichenfolgen >-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen der Produkte und Fehler Zeichenfolgen.|Keiner|  
+|[\<Product>-Element](../deployment/product-element-bootstrapper.md)|Element der obersten Ebene erforderlich für Produktdateien.|Keiner|  
+|[\<Package>-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für die Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts>-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element, für die Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt.|Keiner|  
+|[\<InstallChecks>-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen auf dem lokalen Computer ausführen, während der Installation überprüft die Abhängigkeit.|Keiner|  
+|[\<Commands>-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen, wie beschrieben `InstallChecks`, und gibt an, welches Paket installiert die Überprüfung sollte fehlschlagen.|Keiner|  
+|[\<PackageFiles>-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Listet die Pakete, die durch diese Installation installiert werden können.|Keiner|  
+|[\<Strings>-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen der Produkte und Fehler Zeichenfolgen.|Keiner|  
   
 ## <a name="remarks"></a>Hinweise  
  Das Paketschema wird von Setup.exe, eine Stub-Programm generiert, die von der MS Build-bootstrapping-Aufgabe, die wenig hartcodierte Logik selbst enthält. Das Schema Laufwerke jeden Aspekt des Installationsprozesses.  
@@ -168,6 +163,3 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigke
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Testbereich 7: Freigeben | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Testbereich 7: Freigabe | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47bf73d60d71a7b1c2e1c80e58c5900c870599ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957487"
 ---
 # <a name="test-area-7-share"></a>Testbereich 7: Freigeben
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Test Hierunter Freigabe Elemente zwischen den Standorten über die **Freigabe** 
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  
  Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen.  
   
- Freigabe: **Datei**->**Quellcodeverwaltung**->**Freigabe**.  
+ Freigeben: **Datei**->**Quellcodeverwaltung**->**Freigabe**.  
   
 ## <a name="expected-behavior"></a>Es wird erwartet  
   
@@ -67,4 +62,3 @@ Test Hierunter Freigabe Elemente zwischen den Standorten über die **Freigabe** 
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

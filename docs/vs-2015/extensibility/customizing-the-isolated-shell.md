@@ -1,26 +1,21 @@
 ---
 title: Anpassen der Isolated Shell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959899"
 ---
 # <a name="customizing-the-isolated-shell"></a>Anpassen der Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Sie können Ihrem Visual Studio isolated Shell-Anwendung durch verschiedene Aspe
  Sie können das Anwendungssymbol, anpassen, das Symbol, das von den Anwendungsnamen in der Titelleiste der Anwendung angezeigt wird. Kopieren Sie ein anderes Symbol in der Symbol-Verzeichnis. In **Projektmappen-Explorer**, das Symbol "Ordner" Ressourcen "hinzufügen". Klicken Sie dann öffnen Sie die VSShellStub.rc-Datei, und Ersetzen Sie den Wert der IDI_STUBPROGRAM durch den Namen des neuen Symbols. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Das Befehlszeilen-logo  
- Sie können anpassen, dass das Befehlszeile-Logo, d.h. dem Text, der angezeigt wird, wenn die Anwendung über die Befehlszeile gestartet wird, durch Ändern des Werts der "CommandLineLogo" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Sie können anpassen, dass das Befehlszeile-Logo, d.h. dem Text, der angezeigt wird, wenn die Anwendung über die Befehlszeile gestartet wird, durch Ändern des Werts der "CommandLineLogo" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Der Name des Unterordners Benutzer Dateien  
  Sie können den Namen des Ordners, die Ihre Anwendung für Benutzerdateien verwaltet durch Ändern des Werts der "UserFilesSubFolderName" in Zeile ändern *SolutionName*. Application.PKGDEF-Datei.  
@@ -63,7 +58,7 @@ Sie können Ihrem Visual Studio isolated Shell-Anwendung durch verschiedene Aspe
  Sie können anpassen, dass der Webbrowser eine Seite, die Seite, der angezeigt wird ist, wenn im Webbrowserfenster geöffnet wird, durch Ändern des Werts der "DefaultSearchPage" in Zeile, die *SolutionName*. Application.PKGDEF-Datei.  
   
 ##### <a name="the-default-home-page"></a>Standard-Startseite  
- Sie können auf der Startseite anpassen, indem Sie die Änderung des Werts der "DefaultHomePage" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Sie können auf der Startseite anpassen, indem Sie die Änderung des Werts der "DefaultHomePage" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Ob das Lösungskonzept ausblenden  
  Sie können angeben, ob die Lösung in Ihrer Anwendung ausblenden, indem Sie die Änderung des Werts der "HideSolutionConcept" Zeile in der *SolutionName*. Application.PKGDEF-Datei. Um die Projektmappe auszublenden, legen Sie den Wert `dword:00000001`, und um die Projektmappe anzuzeigen, legen Sie den Wert `dword:00000000`.  
@@ -133,4 +128,3 @@ DisableStartPage=dword:00000000
   
 ##### <a name="the-helpabout-window"></a>Die Hilfe/über Fenster  
  In der isolierten Shell-Vorlage besteht ein separates Projekt Sie anpassen, die Hilfe können/Info-Dialogfeld für Ihre Anwendung. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-

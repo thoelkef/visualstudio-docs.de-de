@@ -1,14 +1,9 @@
 ---
 title: Nur mein Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958652"
 ---
 # <a name="just-my-code"></a>Nur eigenen Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion „Nur eigenen Code“ vertraut, die System-, Framework- und andere Nichtbenutzeraufrufe überspringt und diese Aufrufe in den Aufruflistenfenstern reduziert. „Nur eigener Code“ wurde die C++- und JavaScript-Sprachen erweitert. In diesem Thema werden die Einzelheiten der Verwendung von "Nur eigenen Code" in .NET Framework-, in systemeigenen C++- und in JavaScript-Projekten beschrieben.  
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Aktivieren Sie oder deaktivieren Sie nur mein Code  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Aktivieren oder Deaktivieren von „Nur eigenen Code“  
  Wählen Sie zum Aktivieren oder deaktivieren nur mein Code, **Optionen und Einstellungen** auf die **Debuggen** Menü. In der **Debuggen** / **allgemeine** Knoten auswählen, oder deaktivieren Sie **nur meinen Code aktivieren**.  
   
  ![Aktivieren Sie im Dialogfeld "Optionen" nur mein Code](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
@@ -40,7 +35,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
 >  Die **nur meinen Code aktivieren** ist eine globale Einstellung, die für alle Visual Studio-Projekte in allen Sprachen angewendet wird.  
   
 ###  <a name="BKMK_Override_call_stack_filtering"></a> Überschreiben der aufruflistenfilterung  
- In den Aufruflistenanzeigen wie den Fenstern „Aufrufliste“ und „Aufgaben“ reduziert „Nur eigenen Code“ den Nichtbenutzercode in einen mit Anmerkungen versehenen Frame mit der Bezeichnung `[External Code]`. Um die reduzierten Frames anzuzeigen, wählen **externen Code anzeigen** im Kontextmenü der Aufrufliste angezeigt.  
+ In den Aufruflistenanzeigen wie den Fenstern "Aufrufliste" und "Aufgaben" reduziert "Nur eigenen Code" den Nichtbenutzercode in einen mit Anmerkungen versehenen Frame mit der Bezeichnung `[External Code]`. Um die reduzierten Frames anzuzeigen, wählen **externen Code anzeigen** im Kontextmenü der Aufrufliste angezeigt.  
   
 > [!NOTE]
 >  Die **externen Code anzeigen** Einstellung des aktuellen Benutzers Profiler gespeichert ist. Sie wird auf alle Projekte in allen Sprachen angewendet, die von dem Benutzer geöffnet werden.  
@@ -71,7 +66,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
   
  Wenn Ausnahmen (erste Chance) für die Ausnahme aktiviert sind, wird die Benutzercodezeile grün hervorgehoben. Die Aufrufliste zeigt einen mit Anmerkungen versehenen Frame mit der Bezeichnung **[externer Code]**.  
   
-##  <a name="BKMK_C___Just_My_Code"></a> C++ nur mein Code  
+##  <a name="BKMK_C___Just_My_Code"></a> „Nur eigenen Code“ in C++  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Benutzer-und Nichtbenutzercode  
  "Nur eigenen Code" in C++ ist anders als "Nur eigenen Code" in .NET Framework und JavaScript, da das Schrittverhalten vom Aufruflistenverhalten unabhängig ist.  
@@ -182,7 +177,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
 |`Module`|Dies ist optional. Der Name oder der vollständige Pfad zu dem Modul, das die Funktion enthält. Sie können dieses Attribut verwenden, um Funktionen mit demselben Namen zu unterscheiden.|  
 |`ExceptionImplementation`|Bei Festlegung auf `true` zeigt die Aufrufliste die Funktion an, die die Ausnahme und nicht diese Funktion ausgelöst hat.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript nur mein Code  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> „Nur eigenen Code“ in JavaScript  
   
 ###  <a name="BKMK_JS_User_and_non_user_code"></a> Benutzer-und Nichtbenutzercode  
  **Codeklassifizierungen**  
@@ -209,7 +204,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
   
   Sie können die Standardklassifizierungen ändern und bestimmte Dateien und URLs klassifizieren, indem Sie dem Stammordner eines Projekts eine JSON-Datei mit dem Namen `mycode.json` hinzufügen.  
   
-  Alle anderen Code als klassifiziert **MyCode**.  
+  Der restliche Code wird als **MyCode** klassifiziert.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Schrittverhalten  
   
@@ -289,17 +284,17 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
   
 |||  
 |-|-|  
-|**Eval**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die vom Host bereitgestellte `eval`-Funktion übergeben wird. Eval-Skript wird standardmäßig als klassifiziert **MyCode**.|  
-|**Function**|Skript, das ausgeführt wird, indem eine Zeichenfolge an den `Function`-Konstruktor übergeben wird. Function-Skript wird standardmäßig als klassifiziert **LibraryCode**.|  
-|**"Scriptblock"**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die Funktionen `setTimeout`, `setImmediate` oder `setInterval` übergeben wird. ScriptBlock-Skript wird standardmäßig als klassifiziert **UnrelatedCode**.|  
+|**Eval**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die vom Host bereitgestellte `eval`-Funktion übergeben wird. Standardmäßig wird ein Eval-Skript als **MyCode** klassifiziert.|  
+|**Function**|Skript, das ausgeführt wird, indem eine Zeichenfolge an den `Function`-Konstruktor übergeben wird. Standardmäßig wird ein Function-Skript als **LibraryCode** klassifiziert.|  
+|**ScriptBlock**|Skript, das ausgeführt wird, indem eine Zeichenfolge an die Funktionen `setTimeout`, `setImmediate` oder `setInterval` übergeben wird. Standardmäßig wird ein ScriptBlock-Skript als **UnrelatedCode** klassifiziert.|  
   
  Sie können den Wert auf eines dieser Schlüsselwörter ändern:  
   
-- `MyCode`  klassifiziert das Skript als **MyCode**.  
+- `MyCode` klassifiziert das Skript als **MyCode**.  
   
-- `Library`  klassifiziert das Skript als **LibraryCode**.  
+- `Library` klassifiziert das Skript als **LibraryCode**.  
   
-- `Unrelated`  klassifiziert das Skript als **UnrelatedCode**.  
+- `Unrelated` klassifiziert das Skript als **UnrelatedCode**.  
   
   **MyCode, Libraries und Unrelated**  
   
@@ -308,12 +303,7 @@ Entwickler, die .NET Framework-Sprachen verwenden, sind mit der Debuggerfunktion
 |||  
 |-|-|  
 |**MyCode**|Ein Array von Urls oder Dateien, die als klassifiziert werden **MyCode**.|  
-|**Bibliotheken**|Ein Array von Urls oder Dateien, die als klassifiziert werden **LibraryCode**.|  
-|**Unabhängig vom stagingstatus**|Ein Array von Urls oder Dateien, die als klassifiziert werden **UnrelatedCode**.|  
+|**Libraries**|Ein Array von Urls oder Dateien, die als klassifiziert werden **LibraryCode**.|  
+|**Unrelated**|Ein Array von Urls oder Dateien, die als klassifiziert werden **UnrelatedCode**.|  
   
  Die URL-Zeichenfolge oder Dateizeichenfolge kann eine oder mehrere `*`-Zeichen enthalten, die mit null oder mehr Zeichen übereinstimmen. `*` entspricht dem regulären Ausdruck `.*`.
-
-
-
-
-

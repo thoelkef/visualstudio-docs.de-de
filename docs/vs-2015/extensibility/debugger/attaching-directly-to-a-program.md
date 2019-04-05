@@ -1,26 +1,21 @@
 ---
 title: Direktes Anfügen an ein Programm | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 01845979c838c065774aeab55abc9a1a2cfcde6c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ab49163fc1474b541df3bc1b54d336574761baa3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960087"
 ---
 # <a name="attaching-directly-to-a-program"></a>Direktes Anfügen an ein Programm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,4 +45,3 @@ Gehen Sie Benutzer, die beim Debuggen von Programmen in einem Prozess, der berei
 ## <a name="see-also"></a>Siehe auch  
  [Senden von Startereignissen nach einem Start](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)
-

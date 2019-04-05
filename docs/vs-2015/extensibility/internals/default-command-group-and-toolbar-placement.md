@@ -1,14 +1,9 @@
 ---
 title: Standard-Befehl, Gruppe und Symbolleiste Platzierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -19,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7fc877332f7db7b27c4a30c23f1ac395a4fc22e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959561"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Standardplatzierung von Befehlen, Gruppen und Symbolleisten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Für Produkt Einheitlichkeit und Stabilität, die Benutzeroberfläche zeigt die bestimmte Befehlsgruppen und [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] enthält Definitionen für Befehle und Befehlsgruppen. VSPackages können sich auch auf die Standardbefehle und Befehlsgruppen aus.  
   
- Die Standard-Befehlsgruppen fallen in drei Kategorien: IDE Befehle, Produkt und -Editor-Befehlen.  
+ Die Standard-Befehlsgruppen fallen in drei Kategorien: IDE-Befehle, Produkt und -Editor-Befehlen.  
   
 ## <a name="default-ide-commands"></a>Standard-IDE-Befehle  
  Die Standard-IDE-Symbolleiste enthält Befehle, die von allen Produkten, die in enthaltenen freigegebene [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Hierzu gehören auch Befehle, die im Zusammenhang mit generischen Projektvorgänge, z. B. die **speichern** Befehl und die **Element hinzufügen** Befehl. VSPackages, die nicht hinzugefügt oder subtrahiert dieser Symbolleiste, mit einer Ausnahme: Wenn das Produkt oder die VSPackage-ein neues Toolfenster fügt, das Fenster zur Liste der verfügbaren Toolfenstern hinzugefügt werden sollen, auf die **Ansicht** Menü. Neue Produkte oder VSPackages können eine eigene Symbolleiste hinzufügen.  
@@ -50,4 +45,3 @@ Für Produkt Einheitlichkeit und Stabilität, die Benutzeroberfläche zeigt die 
 ## <a name="see-also"></a>Siehe auch  
  [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

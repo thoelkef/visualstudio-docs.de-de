@@ -1,14 +1,9 @@
 ---
 title: Anfügen an den Prozess nicht möglich | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.unable2attach
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 0468de6c-3ff1-4979-a8c6-8afb53f37547
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0075050b6d24b63ed8380644ad9ec50dd4aa8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737666"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960050"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Anfügen an den Prozess nicht möglich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wu
   
  Es gibt zwei gängige Szenarios, durch die dieser Fehler verursacht wird:  
   
- **Szenario 1:** Computer A Windows XP ausgeführt wird. Auf Computer B wird Windows Server 2003 ausgeführt. Die Registrierung auf Computer B enthält den folgenden DWORD-Wert:  
+ **Szenario 1:** Computer A wird Windows XP ausgeführt. Auf Computer B wird Windows Server 2003 ausgeführt. Die Registrierung auf Computer B enthält den folgenden DWORD-Wert:  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
@@ -43,21 +38,21 @@ Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wu
   
  Benutzer 2, Administrator beider Computer ist, ist bei Computer a angemeldet. Von dort aus versucht er für die Verbindung zu einer Anwendung, die auf Computer b in Sitzung 1 ausgeführt  
   
- **Szenario 2:** auf zwei Computern, A und B in derselben Arbeitsgruppe, ein Benutzer angemeldet ist, mit dem gleichen Kennwort auf beiden Computern. Der Debugger auf Computer A ausgeführt wird und versucht, Anfügen an eine verwaltete Anwendung, die auf Computer b-Computer ein **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** festgelegt **Gast**.  
+ **Szenario 2:** Ein Benutzer hat auf zwei Computern, A und B in derselben Arbeitsgruppe, angemeldet mit dem gleichen Kennwort auf beiden Computern. Der Debugger auf Computer A ausgeführt wird und versucht, Anfügen an eine verwaltete Anwendung, die auf Computer b-Computer ein **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten** festgelegt **Gast**.  
   
 ### <a name="to-solve-scenario-1"></a>So lösen Sie Szenario 1  
   
 -   Führen Sie den Debugger und die verwaltete Anwendung unter Verwendung desselben Benutzerkontonamens und Kennworts aus.  
   
-### <a name="to-solve-scenario-2"></a>Lösen Sie Szenario 2  
+### <a name="to-solve-scenario-2"></a>So lösen Sie Szenario 2  
   
-1.  Von der **starten** Menü wählen **Systemsteuerung**.  
+1.  Wählen Sie im Menü **Start** die **Systemsteuerung** aus.  
   
-2.  In der Systemsteuerung, doppelklicken Sie auf **Verwaltung**.  
+2.  Doppelklicken Sie in der Systemsteuerung auf **Verwaltung**.  
   
-3.  Doppelklicken Sie im Fenster Verwaltung auf **Local Security Policy**.  
+3.  Doppelklicken Sie im Fenster „Verwaltung“ auf **Lokale Sicherheitsrichtlinie**.  
   
-4.  Wählen Sie im Fenster Lokale Sicherheitsrichtlinie **lokale Richtlinien**.  
+4.  Wählen Sie im Fenster „Lokale Sicherheitsrichtlinie“ die Option **Lokale Richtlinien**.  
   
 5.  In der **Richtlinien** Spalte doppelklicken Sie auf **Netzwerkzugriff: Modell für gemeinsame Nutzung und Sicherheitsmodell für lokale Konten**.  
   
@@ -70,6 +65,3 @@ Anfügen an den Prozess nicht möglich. Der Debuggerkomponente auf dem Server wu
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Testbereich 3: Check Out rückgängig: Auschecken | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, checkout
 - source control plug-ins, undo checkout
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: adc6a84dbdc4fb182dd589c54527f02a1aa90d99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722995"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961282"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Testbereich 3: Auschecken / Auschecken rückgängig machen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elemente aus dem Versionsspeicher über die **Auschecken** und **Rückgängig: Auschecken** Befehle.  
   
- **Auschecken**: markiert ein Element in den Versionsspeicher als ausgecheckt ändert die lokale Kopie Lese-/Schreibzugriff.  
+ **Sehen Sie sich**: Markiert ein Element in den Versionsspeicher als ausgecheckt, wird die lokale Kopie Lese-/Schreibzugriff geändert.  
   
- **Rückgängig: Auschecken**: ein Element in den Versionsspeicher als aktiviert markiert, wird die lokale Kopie für den Zustand vor dem Auschecken (je nach Optionen) zurückgesetzt.  
+ **Rückgängig: Auschecken**: Markiert ein Element in den Versionsspeicher als eingecheckt wird die lokale Kopie für den Zustand vor dem Auschecken (je nach Optionen) zurückgesetzt.  
   
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  
  Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen.  
@@ -45,7 +40,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 -   Klicken Sie im Kontextmenü **Auschecken**.  
   
--   "Auschecken rückgängig": **Datei**, **Quellcodeverwaltung**, **Rückgängig: Auschecken**.  
+-   Rückgängig: Auschecken: **Datei**, **Quellcodeverwaltung**, **Rückgängig: Auschecken**.  
   
 ## <a name="common-expected-behavior"></a>Allgemeine erwartet  
   
@@ -58,7 +53,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
 ## <a name="test-cases"></a>Testfälle  
  Im folgenden finden bestimmte Testfälle für den Testbereich "Auschecken rückgängig: Auschecken /".  
   
-### <a name="case-3a-check-out"></a>Case-3a: Auschecken  
+### <a name="case-3a-check-out"></a>Groß-/Kleinschreibung 3a: Auschecken  
  Dieser Abschnitt konzentriert sich auf den Betrieb des Befehls Auschecken.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
@@ -66,9 +61,9 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
 |Überprüfen Sie, exklusive (festgestellte) eines Clientprojekts|1.  Erstellen Sie ein Clientprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Sehen Sie sich das gesamte Projekt exklusiv (**Datei**, **Auschecken**).|Sehen Sie sich auftritt.|  
 |Sehen Sie sich exklusiven (festgestellte), einem Dateisystem oder dem lokalen IIS-Webprojekt|1.  Legen Sie die Web-Server-Verbindung mit der Dateifreigabe in **Tools**, **Optionen**, **Projekte**, **Webeinstellungen**.<br />2.  Erstellen Sie ein Webprojekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Sehen Sie sich das gesamte Projekt exklusiv (**Datei**, **Quellcodeverwaltung**, **Auschecken**).|Sehen Sie sich auftritt.|  
 |Sehen Sie sich Projektmappenelemente in einer Projektmappe (neue Methode für die Behandlung von anderen Dateien)|1.  Erstellen Sie eine leere Projektmappe.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Überprüfen Sie die Lösung.<br />4.  Fügen Sie verschiedene Elemente der Lösung hinzu.<br />5.  Überprüfen Sie in alle neu hinzugefügten Elemente.<br />6.  Wählen Sie mehrere Elemente der Lösung.<br />7.  Sehen Sie sich die ausgewählten Elemente (klicken Sie im Kontextmenü **Auschecken**).|Ausgewählte Dateien werden ausgecheckt.|  
-|Lokale Version auschecken (sofern-Plug-in im Test dieses Feature unterstützt)|1.  Benutzer 1: Erstellen eines Clientprojekts.<br />2.  Benutzer 1: Die Projektmappe zur quellcodeverwaltung hinzufügen.<br />3.  Benutzer 2: Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einen anderen Speicherort.<br />4.  Benutzer 2: Sehen Sie sich eine Datei.<br />5.  Benutzer 2: Ändern Sie die Datei.<br />6.  Benutzer 2: Überprüfen Sie in der Datei.<br />7.  Benutzer 1: Auschecken von lokalen Version der Datei (Überprüfen Sie die **lokale Version Auschecken** erweiterte Optionen in **Auschecken** (Dialogfeld)).|Lokale Version der Datei wurde ausgecheckt.<br /><br /> Änderungen von Benutzer 2 gelten nicht für Benutzer 1 Datei.|  
+|Lokale Version auschecken (sofern-Plug-in im Test dieses Feature unterstützt)|1.  Benutzer 1: Erstellen Sie ein Clientprojekt.<br />2.  Benutzer 1: Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Benutzer 2: Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einen anderen Speicherort.<br />4.  Benutzer 2: Sehen Sie sich eine Datei.<br />5.  Benutzer 2: Ändern Sie die Datei an.<br />6.  Benutzer 2: Überprüfen Sie in der Datei.<br />7.  Benutzer 1: Sehen Sie sich die lokale Version der Datei (Überprüfen Sie die **lokale Version Auschecken** erweiterte Optionen in **Auschecken** (Dialogfeld)).|Lokale Version der Datei wurde ausgecheckt.<br /><br /> Änderungen von Benutzer 2 gelten nicht für Benutzer 1 Datei.|  
   
-### <a name="case-3b-disconnected-check-out"></a>Fall 3 b: Auschecken getrennt  
+### <a name="case-3b-disconnected-check-out"></a>Fall 3 b: Nicht verbundene Auschecken  
  Im getrennten Modus kann Benutzer gewisse fortgesetzten quellcodeverwaltungsunterstützung Wenn nicht direkt an ein Versionsspeicher angefügt. Dies erfolgt, indem alle relevanten Informationen über die eingetragenen Projektmappen und Projekte lokal im Zwischenspeicher.  
   
  Exklusives Auschecken Vorgänge kann nur auftreten, während der Verbindung mit dem Speicher der quellcodeverwaltung. Freigegebenen Auschecken Vorgänge zu jedem Zeitpunkt ist möglich, ob verbunden oder getrennt. Aus diesem Grund, aus dem Versionsspeicher, nur die Verbindung getrennt die **überprüfen, freigegebene** (COS) Befehl aktiviert ist. Wenn Sie verbunden sind, **Rückgängig: Auschecken** ist deaktiviert, da die alte Version nicht abgerufen werden kann, um vom Benutzer vorgenommenen Änderungen zu ersetzen.  
@@ -87,7 +82,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
 |------------|----------------|--------------------------------|  
 |Wenn Sie verbunden sind, sehen Sie sich eine Datei herstellen Sie, dann für die Synchronisierung|1.  Trennen Sie eine der quellcodeverwaltung unterliegenden Projekt mit Quellcodeverwaltung ändern (Dialogfeld) (**Datei**, **Quellcodeverwaltung**, **Änderung Quellcodeverwaltung**l).<br />2.  Sehen Sie sich eine Datei.<br />3.  Klicken Sie auf diese Option, Auschecken (nicht verbunden), im Dialogfeld "Warnung".<br />4.  Bearbeiten Sie die Datei.<br />5.  Verbinden Sie das Dialogfeld "Quellcodeverwaltung ändern" verwenden.<br />6.  Erhalten Sie die neueste Version von die bearbeitete Datei.|Allgemeine erwartet|  
   
-### <a name="case-3c-query-editquery-save-qeqs"></a>Fall 3c: Abfrage bearbeiten/Abfrage speichern (QEQS.)  
+### <a name="case-3c-query-editquery-save-qeqs"></a>Fall 3c: / Queryeditquerysave (QEQS.)  
  Elemente in der quellcodeverwaltung werden für die Bearbeitung, Änderungen, nachverfolgt, und speichert, die Benutzer leichter verwalten ihrer Dateien. Wenn ein kontrollierter-Element, das "Einchecken" bearbeitet wird, wird QEQS fängt die versuchte Bearbeitung und fordert den Benutzer aus, wenn er die Datei so bearbeiten Sie es auschecken möchte. Je **Tools**, **Optionen** Einstellungen, die der Benutzer ist gezwungen, überprüfen Sie die Datei zum Bearbeiten auschecken mindestens berechtigt, auf die Kopie im Arbeitsspeicher bearbeiten, und sehen Sie sich später noch mal. Wenn des Benutzers **Tools**, **Optionen** Einstellung ist nicht festgelegt werden, um die sehen Sie sich das Dialogfeld anzuzeigen und gerade ausgecheckt, und klicken Sie dann wie der Benutzer seine bearbeiten trifft, die Datei automatisch ausgecheckt, wann immer möglich.  
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
@@ -106,7 +101,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
 |Bearbeiten Sie eine Projektmappendatei, die eingecheckt wird|Wiederholen Sie die Schritte wie beschrieben in vorherigen testen, aber anstatt zu ändern, eine Textdatei, die Projektmappe durch Ändern der Lösungseigenschaften von ändern.|Identisch mit den vorherigen test|  
 |Bearbeiten einer Projektdatei, die eingecheckt wird|Wiederholen Sie die Schritte wie beschrieben in vorherigen testen, aber anstelle eine Textdatei ändern, ändern Projekt durch Ändern von Projekteigenschaften.|Identisch mit den vorherigen Test.|  
   
-### <a name="case-3d-silent-check-out"></a>Fall 3d: Automatische Auschecken  
+### <a name="case-3d-silent-check-out"></a>Case-3d: Automatische Auschecken  
  Dieses Unterbereich Hintergrund Auschecken Szenarien, in denen die **Auschecken** Dialogfeld pro Benutzer nicht angezeigt **Tools**, **Optionen**, **Einstellungen für Quellcodeverwaltung** .  
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
@@ -124,7 +119,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
 |Automatische Auschecken einer Datei|1.  Legen Sie **Tools**, **Optionen**, **Quellcodeverwaltung** zu **Auschecken von Dateien automatisch in Bearbeitung**.<br />2.  Erstellen eines neuen Projekts mit einer Datei an.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Die Datei auschecken.|Datei wird automatisch ausgecheckt (ohne Benutzeroberfläche).|  
 |Automatische Auschecken für ein Projekt|1.  Legen Sie **Tools**, **Optionen**, **Quellcodeverwaltung** zu **Auschecken von Dateien automatisch in Bearbeitung**.<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Sehen Sie sich das Projekt.|Datei wird automatisch ausgecheckt (ohne Benutzeroberfläche).|  
   
-### <a name="case-3e-undo-check-out"></a>Case-3e: Auschecken rückgängig machen  
+### <a name="case-3e-undo-check-out"></a>Groß-/Kleinschreibung 3e: Auschecken rückgängig machen  
  **Rückgängig: Auschecken** dient zum Abbrechen einer Datei ausgecheckt, Status und zu überprüfen, ob Änderungen an der Datei vorgenommen.  
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
@@ -142,4 +137,3 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

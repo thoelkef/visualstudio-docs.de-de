@@ -1,35 +1,30 @@
 ---
 title: Unterstützen mehrerer Dokumentansichten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6be1e48917c8ad5e7035f01caa4f74b78a6fa3d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9377fc12db8cedba65a418fd32b82a1421bd9b43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792254"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960058"
 ---
 # <a name="supporting-multiple-document-views"></a>Unterstützen mehrerer Dokumentansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mehr als eine Ansicht eines Dokuments angeben, durch die Trennung der Dokumentdaten und dokumentenansichtsobjekten für den Editor erstellen. Einige Fälle, in denen ein zusätzlicher Dokumentenansicht sinnvoll wäre, sind:  
   
-- Unterstützung für das neue Fenster: sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  
+- Unterstützung für das neue Fenster: Sollen Ihre-Editor, um mindestens zwei Ansichten des gleichen Typs enthalten, ein Benutzer, der bereits ein Fenster im Editor geöffnet hat ein neues Fenster, die sich durch Auswählen öffnen kann der **neues Fenster** Befehl die **Fenster** Menü.  
   
-- Form "und" Code anzeigen Unterstützung: Sie möchten Ihre-Editor, um die Ansichten für verschiedene Arten bereitstellen. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], z. B. bietet sowohl eine Formularansicht und eine Codeansicht.  
+- Formular "und" Code anzeigen-Unterstützung: Sie möchten Ihre-Editor, um die Ansichten für verschiedene Arten bereitstellen. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], z. B. bietet sowohl eine Formularansicht und eine Codeansicht.  
   
   Weitere Informationen hierzu finden Sie im Verfahren "CreateEditorInstance" in der Datei EditorFactory.cs im benutzerdefinierten Editor-Projekt, das von der Visual Studio-Paketvorlage erstellt. Weitere Informationen zu diesem Projekt finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
@@ -47,4 +42,3 @@ Mehrere Ansichten
  Standardmäßig ist jeder Ansicht (dokumentenansichtsobjekt) in eine eigene Fensterrahmen enthalten (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Wie bereits erwähnt können Dokumentdaten jedoch in mehreren Ansichten angezeigt werden. Um dies zu ermöglichen, überprüft Visual Studio den RDT an, um zu bestimmen, ob das betreffende Dokument bereits in einem Editor geöffnet ist. Wenn die IDE aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> ein Wert ungleich NULL zurückgegeben, um den Editor zu erstellen, in der `punkDocDataExisting` Parameter gibt an, dass das Dokument bereits in einem anderen Editor geöffnet ist. Weitere Informationen zur Verwendung die RDT-Funktionen finden Sie unter [Running Document Table](../extensibility/internals/running-document-table.md).  
   
  In Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Implementierung, untersuchen Sie das dokumentendatenobjekt im zurückgegebenen `punkDocDataExisting` zu bestimmen, ob die Dokumentendaten für den Editor geeignet ist. (Zum Beispiel sollte nur HTML-Daten von einem HTML-Editor angezeigt werden.) Wenn dies sinnvoll ist, sollte der Editorfactory eine zweite Ansicht für die Daten bereitstellen. Wenn die `punkDocDataExisting` -Parameter ist kein `NULL`, es kann entweder, dass das dokumentendatenobjekt in einem anderen Editor geöffnet oder, wahrscheinlicher ist, die Daten bereits in einer anderen Ansicht mit gleichen Editor geöffnet ist. Wenn die Dokumentdaten in einem anderen Editor geöffnet, die der Editorfactory nicht unterstützt ist, schlägt Visual Studio zu Ihrem-Editor-Factory zu öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten](../extensibility/how-to-attach-views-to-document-data.md).
-

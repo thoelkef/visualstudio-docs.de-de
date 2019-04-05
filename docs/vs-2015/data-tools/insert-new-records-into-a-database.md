@@ -1,12 +1,9 @@
 ---
 title: Einfügen neuer Datensätze in einer Datenbank | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,19 +19,19 @@ ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959279"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter.Update` Methode oder eines der TableAdapter-DBDirect-Methoden (insbesondere die `TableAdapter.Insert` Methode). Weitere Informationen finden Sie unter [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter.Update` Methode oder eines der TableAdapter-DBDirect-Methoden (insbesondere die `TableAdapter.Insert` Methode).
   
  Wenn Ihre Anwendung TableAdapters nicht verwendet werden, können Sie Befehlsobjekte verwenden (z. B. <xref:System.Data.SqlClient.SqlCommand>) zum Einfügen neuer Datensätze in der Datenbank.  
   
@@ -42,7 +39,7 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
   
  Wenn Ihre Anwendung Objekte verwendet, Daten, oder speichern eine genauere Steuerung der Erstellung neuer Datensätze in der Datenbank, verwenden Sie die `TableAdapter.Insert` Methode.  
   
- Wenn keine der TableAdapter eine `Insert` -Methode, es bedeutet, dass entweder der TableAdapter konfiguriert ist, um gespeicherte Prozeduren zu verwenden oder den zugehörigen `GenerateDBDirectMethods` -Eigenschaftensatz auf `false`. Legen Sie der TableAdapters `GenerateDBDirectMethods` Eigenschaft `true` innerhalb der [Dataset-Designer](../data-tools/creating-and-editing-typed-datasets.md), und speichern Sie das Dataset. Hierdurch wird den TableAdapter neu generiert. Wenn der TableAdapter immer noch kein `Insert` -Methode, und klicken Sie dann auf die Tabelle möglicherweise bietet keine ausreichende Schemainformationen zur Unterscheidung zwischen den einzelnen Zeilen (z. B. möglicherweise keine primären Schlüsselsatz für die Tabelle).  
+ Wenn keine der TableAdapter eine `Insert` -Methode, es bedeutet, dass entweder der TableAdapter konfiguriert ist, um gespeicherte Prozeduren zu verwenden oder den zugehörigen `GenerateDBDirectMethods` -Eigenschaftensatz auf `false`. Legen Sie der TableAdapters `GenerateDBDirectMethods` Eigenschaft `true` aus in der Dataset-Designer, und speichern Sie das Dataset. Hierdurch wird den TableAdapter neu generiert. Wenn der TableAdapter immer noch kein `Insert` -Methode, und klicken Sie dann auf die Tabelle möglicherweise bietet keine ausreichende Schemainformationen zur Unterscheidung zwischen den einzelnen Zeilen (z. B. möglicherweise keine primären Schlüsselsatz für die Tabelle).  
   
 ## <a name="insert-new-records-by-using-tableadapters"></a>Fügen Sie neue Datensätze mit TableAdapters  
  TableAdapters bieten verschiedene Möglichkeiten zum Einfügen neuer Datensätze in einer Datenbank, abhängig von den Anforderungen Ihrer Anwendung.  
@@ -51,7 +48,7 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe der TableAdapter.Update-Methode  
   
-1. Neue Datensätze hinzufügen, um die gewünschte <xref:System.Data.DataTable> durch Erstellen eines neuen <xref:System.Data.DataRow> und zum Hinzufügen der <xref:System.Data.DataTable.Rows%2A> Auflistung. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Zeilen zu einer DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Neue Datensätze hinzufügen, um die gewünschte <xref:System.Data.DataTable> durch Erstellen eines neuen <xref:System.Data.DataRow> und zum Hinzufügen der <xref:System.Data.DataTable.Rows%2A> Auflistung. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Zeilen zu einer "DataTable"](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Nachdem die neuen Zeilen hinzugefügt wurden die <xref:System.Data.DataTable>, rufen Sie die `TableAdapter.Update` Methode. Sie können steuern, die Menge der Daten zu aktualisieren, indem Sie entweder eine gesamte übergeben <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ein Array von <xref:System.Data.DataRow>s oder eine einzelne <xref:System.Data.DataRow>.  
   
@@ -75,7 +72,7 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
   
 ## <a name="insert-new-records-by-using-command-objects"></a>Fügen Sie neue Datensätze mit Befehlsobjekte  
- Das folgende Beispiel fügt neue Datensätze direkt in eine Datenbank mithilfe von Befehlsobjekten. Weitere Informationen zur Verwendung von Befehlsobjekten zum Ausführen von Befehlen und gespeicherten Prozeduren finden Sie unter [Abrufen von Daten in Ihrer Anwendung](../data-tools/fetching-data-into-your-application.md).  
+ Das folgende Beispiel fügt neue Datensätze direkt in eine Datenbank mithilfe von Befehlsobjekten.
   
  Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.  
   
@@ -91,4 +88,3 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-

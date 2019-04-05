@@ -1,26 +1,21 @@
 ---
 title: Von bestimmten Befehlen verwendete Bitflags | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958961"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Von bestimmten Befehlen verwendete Bitflags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +27,17 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_KEEP_CHECKEDOUT`|0 x 1000|Halten Sie die Datei ausgecheckt haben.|  
+|`SCC_KEEP_CHECKEDOUT`|0x1000|Halten Sie die Datei ausgecheckt haben.|  
   
 ## <a name="add-flags"></a>Hinzufügen von Flags  
  Diese Flags werden verwendet, durch die [SccAdd](../extensibility/sccadd-function.md).  
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_FILETYPE_AUTO`|0 x 00|Das Quellcodeverwaltungs-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärdaten.|  
-|`SCC_FILETYPE_TEXT`|0 x 01|Dateityp ist Text.|  
+|`SCC_FILETYPE_AUTO`|0x00|Das Quellcodeverwaltungs-Plug-in wird erwartet, automatisch zu erkennen, ob die Datei Text- oder Binärdaten.|  
+|`SCC_FILETYPE_TEXT`|0x01|Dateityp ist Text.|  
 |`SCC_FILETYPE_BINARY`|0x04|Dateityp ist binär. **Hinweis:** `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Flags schließen sich gegenseitig. Legen Sie genau eines oder keines von beiden.|  
-|`SCC_ADD_STORELATEST`|0 x 02|Store nur die neueste Version (keine Deltas).|  
+|`SCC_ADD_STORELATEST`|0x02|Store nur die neueste Version (keine Deltas).|  
   
 ## <a name="diff-flags"></a>Diff-Flags  
  Die [SccDiff](../extensibility/sccdiff-function.md) diese Flags definieren des Bereichs eines Diff-Vorgangs verwendet. Die `SCC_DIFF_QD_xxx` Flags schließen sich gegenseitig. Wenn eines dieser Projekte angegeben wird, ist kein visuelles Feedback gegeben werden soll. In einem "schnellen"Diff (QD), das plug-in wird nicht bestimmt, wie die Datei unterscheidet sich, nur dann, wenn er sich unterscheidet. Wenn keines ist diese Flags angegeben "visual Diff" erfolgt., Ausführliche Dateiunterschieden werden berechnet und angezeigt. Wenn die angeforderte QD nicht unterstützt wird, verschiebt zur nächsten bewährte des Plug-Ins. Z. B. überprüfen, ob die IDE, eine Prüfsumme anfordert, und das plug-in nicht unterstützt,-Plug-in ist eine vollständige-Inhalt (immer noch sehr viel schneller als eine visuelle Darstellung).  
@@ -50,10 +45,10 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorieren von Groß-/Kleinschreibung unterschieden.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren von Leerzeichen Unterschiede. **Hinweis:** der `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorieren von Leerzeichen Unterschiede. **Hinweis**:  Die `SCC_DIFF_IGNORECASE` und `SCC_DIFF_IGNORESPACE` Flags sind optionale Bitflags.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD durch Vergleichen der gesamte Dateiinhalt.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|Warteschlangentiefe von Checksum.|  
-|`SCC_DIFF_QD_TIME`|0 x 0040|Warteschlangentiefe von Datums-/Zeitstempel der Datei.|  
+|`SCC_DIFF_QD_TIME`|0x0040|Warteschlangentiefe von Datums-/Zeitstempel der Datei.|  
 |`SCC_DIFF_QUICK_DIFF`|0x0070|Dies ist eine Maske, mit der alle dem QD Bitflags überprüft. Es sollte nicht in eine Funktion übergeben werden; die drei QD Bitflags schließen sich gegenseitig aus. QD bedeutet immer ohne Anzeige der Benutzeroberfläche.|  
   
 ## <a name="populatelist-flag"></a>PopulateList-Flag  
@@ -85,8 +80,8 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
   
 |Flag|Wert|Beschreibung|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|Die IDE ist die Übergabe Verzeichnisse, Dateien nicht: Abrufen aller Dateien in diesen Verzeichnissen.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|Die IDE ist die Übergabe Verzeichnisse: Diese Verzeichnisse und alle ihre Unterverzeichnisse zu erhalten.|  
+|`SCC_GET_ALL`|0x00000001L|Die IDE wird Verzeichnisse, Dateien nicht übergeben: Rufen Sie aller Dateien in diesen Verzeichnissen verwenden ab.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|Die IDE wird Verzeichnisse übergeben: Rufen Sie diese Verzeichnisse und alle ihre Unterverzeichnisse.|  
   
 ## <a name="noption-values"></a>nOption Werte  
  Diese Flags werden verwendet, durch die [SccSetOption](../extensibility/sccsetoption-function.md) in die `nOption` Parameter.  
@@ -114,4 +109,3 @@ Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Fe
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-ins.md)
-

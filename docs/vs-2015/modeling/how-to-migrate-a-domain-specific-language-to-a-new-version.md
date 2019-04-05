@@ -1,25 +1,22 @@
 ---
 title: 'Vorgehensweise: Migrieren eine domänenspezifischen Sprache zu einer neuen Version | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959489"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Gewusst wie: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Vorgehensweise: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen Sprache migrieren [!INCLUDE[vs2010](../includes/vs2010-md.md)] von der Version der [!INCLUDE[dsl](../includes/dsl-md.md)] , die mit verteilt wurde [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
@@ -28,7 +25,7 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
  Sie müssen das Migrationstool explizit ausführen: Es wird nicht automatisch gestartet, wenn Sie eine Projektmappe in öffnen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dokument mit den Tools und detaillierte Anleitungen finden Sie unter folgendem Pfad:  
   
- **% Programm Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Vor dem Migrieren Sie Ihre DSL-Projekte  
  Ändert das Migrationstool [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projektdateien (**csproj**) und Projektmappendateien (**sln**).  
@@ -47,7 +44,7 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
    -   Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:  
   
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2. Wählen Sie einen Ordner mit Projektmappen und Projekte, die Sie konvertieren möchten.  
   
@@ -81,7 +78,7 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
    2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.  
   
        > [!NOTE]
-       >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.  
   
@@ -91,6 +88,3 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
 ## <a name="see-also"></a>Siehe auch  
  [Neues im Visualisierungs- und Modellierungs-SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-
