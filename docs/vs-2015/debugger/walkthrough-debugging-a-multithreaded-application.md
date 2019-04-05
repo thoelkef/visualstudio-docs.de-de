@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961878"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51798630"
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  In der **Projekttyp**s Klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#-**, oder **Visual C++**.  
+2.  In der **Projekttyp**s Klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#** , oder **Visual C++**.  
   
 3.  In der **Vorlagen** wählen **Konsolenanwendung** oder **CLR-Konsolenanwendung**.  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51798630"
   
 6.  Löschen Sie den Code, der in der Quelldatei angezeigt wird, und Ersetzen Sie ihn durch den Beispielcode, der im Abschnitt "Erstellen eines Threads" des Themas angezeigt wird [Erstellen von Threads und übergeben von Daten zur Startzeit](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
+7.  Klicken Sie im Menü **Datei** auf **Alle speichern**.  
   
 #### <a name="to-begin-the-walkthrough"></a>So beginnen Sie mit der exemplarischen Vorgehensweise  
   
@@ -143,7 +138,7 @@ Thread::Sleep(3000);
   
 7.  Zeigen Sie mit dem Mauszeiger auf das Kennzeichnungssymbol.  
   
-     Ein Popupfenster wird eingeblendet. Diesem Popupfenster ist angegeben, in welchem Modus der **Thread** Liste finden Sie in: **nur gekennzeichnete Threads anzeigen**.  
+     Ein Popupfenster wird eingeblendet. Diesem Popupfenster ist angegeben, in welchem Modus der **Thread** Liste finden Sie in: **Nur gekennzeichnete Threads anzeigen**.  
   
 8.  Klicken Sie auf die Schaltfläche "kennzeichnen", um zurück zu wechseln **alle Threads anzeigen** Modus.  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. Klicken Sie auf die Schaltfläche "kennzeichnen", um zurück zu wechseln **nur gekennzeichnete Threads anzeigen**.  
   
-11. Auf der **Debuggen** Startmenü **Windows** , und klicken Sie dann auf **Threads**.  
+11. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Threads**.  
   
      Die **Threads** Fenster wird angezeigt. Ein Thread ist mit einem deutlich erkennbaren Kennzeichnungssymbol versehen.  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      Sie haben nun gesehen, drei Möglichkeiten, den aktiven Thread: Verwenden der **Threads** Fenster die **Thread** im Feld der **Debugspeicherort** Symbolleiste und den Indikator für den Thread in der Datenquellen-Fenster.  
   
-     Mit dem Threadindikator können Sie nur zu Threads wechseln, die an der jeweiligen Position angehalten wurden. Mithilfe der **Threads** Fenster und **Debugspeicherort** -Symbolleiste, die Sie an einen beliebigen Thread wechseln können.  
+     Mit dem Threadindikator können Sie nur zu Threads wechseln, die an der jeweiligen Position angehalten wurden. Über das **Threadfenster** und die Symbolleiste **Debugspeicherort** können Sie zu jedem beliebigen Thread wechseln.  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>Sperren und Entsperren der Threadausführung  
   
@@ -263,7 +258,4 @@ Thread::Sleep(3000);
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-
+ [Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens](../debugger/how-to-switch-to-another-thread-while-debugging.md)

@@ -1,25 +1,22 @@
 ---
 title: T4-Parameter-Direktive | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1d590387-1d9d-40a5-a72c-65fae7a8bdf3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c7971dc3402a344a5318fd8415404e7a45ae8485
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962050"
 ---
-# <a name="t4-parameter-directive"></a>T4-Parameter-Anweisung
+# <a name="t4-parameter-directive"></a>T4-Parameter-Direktive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Textvorlage die `parameter` Richtlinie deklariert Eigenschaften im Vorlagencode, die von Werten aus dem externen Kontext übergeben initialisiert werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, die TextTransformation aufruft.  
@@ -110,6 +107,3 @@ string resultText = t.TransformText();
   
 > [!IMPORTANT]
 >  Die `parameter` Richtlinie ist nicht in festgelegten Werte abgerufen werden die `–a` Parameter, der die `TextTransform.exe` Hilfsprogramm. Um diese Werte zu erhalten, legen Sie `hostSpecific="true"` in die `template` Richtlinie, und verwenden Sie `this.Host.ResolveParameterValue("","","argName")`.
-
-
-

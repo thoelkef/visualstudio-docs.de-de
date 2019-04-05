@@ -1,14 +1,9 @@
 ---
 title: Arbeiten mit Codemetrikdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fd746ca463808ddc3ab70d795af88f6dff53f860
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946302"
 ---
 # <a name="working-with-code-metrics-data"></a>Arbeiten mit Codemetrikdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse f�
   
 |Spalte|Beschreibung|  
 |------------|-----------------|  
-|**Hierarchie**|Die **Hierarchie** Spalte enthält eine Strukturansicht der der Codehierarchie, die kann erweitert oder reduziert werden, um die gewünschte Detailebene angezeigt. Die übrigen Spalten enthalten die berechneten Ergebnisse. Sie können ordnen die Ergebnisspalten nach Ihren wünschen oder ausblenden.|  
+|**Hierarchy**|Die **Hierarchie** Spalte enthält eine Strukturansicht der der Codehierarchie, die kann erweitert oder reduziert werden, um die gewünschte Detailebene angezeigt. Die übrigen Spalten enthalten die berechneten Ergebnisse. Sie können ordnen die Ergebnisspalten nach Ihren wünschen oder ausblenden.|  
 |**Verwaltbarkeit**|Die **Verwaltbarkeit** Spalte enthält ein Symbol neben dem Ergebnis in numerischer Form. Ein grünes Symbol gibt an, ein relativ hohes Maß an Verwaltbarkeit. Ein gelbes Symbol gibt an, ein bestimmtes Maß an Verwaltbarkeit. Ein rotes Symbol weist geringe Verwaltbarkeit und potenzielle Fehler auf. Diese Farbe Indikatoren entsprechen Schweregradkategorien, die von der FxCop-Regel AvoidUnmaintainableCode verwendet werden. Diese Regel wird einen Fehler ausgelöst, wenn der Wartbarkeitsindex kleiner als 10, eine Warnung ist, wenn der Index zwischen 10 und 20, und weder Fehler noch eine Warnung, liegt Wenn der Index mehr als 20 ist. Der Wartbarkeitsindex ist einer Synthese von drei Metriken: zyklomatische Komplexität, Codezeilen, und Komplexität der Berechnung. Die Werte werden nicht in Einheiten ausgedrückt.|  
   
 ##  <a name="BKMK_DisplayingCodeMetricsResults"></a> Anzeigen von Codemetrikergebnissen  
@@ -129,7 +124,7 @@ Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse f�
 ##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Erstellen eines Arbeitselements anhand von Codemetrikergebnissen  
  Sie erstellen eine [!INCLUDE[esprfound](../includes/esprfound-md.md)] führt zu Arbeitsaufgabe, die basierend auf der **Codemetrikergebnisse** Fenster. Wenn das Arbeitselement erstellt wird, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gibt automatisch einen Titel in der **Titel** Feld und die Codemetrikdaten werden unter der **Verlauf** Registerkarte.  
   
- Weitere Informationen zum Arbeitsaufgaben zu erstellen, finden Sie unter [Erstellen einer Arbeitsaufgabe &#91;umgeleitet&#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
+ Weitere Informationen zum Arbeitsaufgaben zu erstellen, finden Sie unter [Erstellen einer Arbeitsaufgabe &#91;umgeleitet&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Um eine Arbeitsaufgabe basierend auf ein Ergebnis zu erstellen.  
   
@@ -153,7 +148,4 @@ Die **Codemetrikergebnisse** Fenster zeigt die Daten, die von der Codeanalyse f�
   
 ## <a name="see-also"></a>Siehe auch  
  [Messen von Komplexität und verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
- [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)
-
-
-
+ [Vorgehensweise: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)

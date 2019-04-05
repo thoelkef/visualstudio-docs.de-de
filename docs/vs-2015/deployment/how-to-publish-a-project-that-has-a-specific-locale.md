@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Veröffentlichen eines Projekts, die einem bestimmten Gebietsschema | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Veröffentlichen Sie ein Projekt, das einem bestimmten Gebietsschema | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,29 +20,29 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946427"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Gewusst wie: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Vorgehensweise: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedlichen Gebietsschemas enthält. In diesem Szenario würden Sie eine Projektmappe aus mehreren Projekten erstellen und dann gesonderte Projekte für jedes Gebietsschema veröffentlichen. Dieses Verfahren zeigt, wie Sie das erste Projekt in einer Projektmappe mit dem Gebietsschema "en" mit einem Makro veröffentlichen können. Wenn Sie das Verfahren mit einem anderen Gebietsschema als "en" verwenden möchten, müssen Sie `localeString` im Makro auf das verwendete Gebietsschema festlegen (beispielsweise auf "de" oder "de-DE").  
   
 > [!NOTE]
->  Wenn Sie dieses Makro verwenden, sollte der Ort der Veröffentlichung eine gültige URL oder UNC-Freigabe (Universal Naming Convention) sein. Darüberhinaus müssen Internetinformationsdienste (Internet Information Services, IIS) auf Ihrem Computer installiert sein. So installieren Sie IIS, auf die **starten** Menü klicken Sie auf **Systemsteuerung**. Doppelklicken Sie auf **hinzufügen oder Entfernen von Programmen**. In **Software**, klicken Sie auf **Windows-Komponenten hinzufügen/entfernen**. In der **Assistenten für Windows-Komponenten**, wählen die **(Internet Information Services, IIS)** Kontrollkästchen in der **Komponenten** Liste. Klicken Sie dann auf **Fertig stellen** um den Assistenten zu schließen.  
+>  Wenn Sie dieses Makro verwenden, sollte der Ort der Veröffentlichung eine gültige URL oder UNC-Freigabe (Universal Naming Convention) sein. Darüberhinaus müssen Internetinformationsdienste (Internet Information Services, IIS) auf Ihrem Computer installiert sein. Klicken Sie zur Installation von IIS im Menü **Start** auf **Systemsteuerung**. Doppelklicken Sie auf **Software**. Klicken Sie unter **Software** auf **Windows-Komponenten hinzufügen/entfernen**. Aktivieren Sie unter **Assistent für Windows-Komponenten** in der Liste **Komponenten** das Kontrollkästchen **Internetinformationsdienste (IIS)**. Klicken Sie dann auf **Fertig stellen**, um den Assistenten zu schließen.  
   
 ### <a name="to-create-the-publishing-macro"></a>So erstellen Sie das Makro zum Veröffentlichen  
   
-1.  So öffnen Sie im Makro-Explorer auf die **Tools** , zeigen Sie auf **Makros**, und klicken Sie dann auf **Makro-Explorer**.  
+1.  Zeigen Sie zum Öffnen des Makro-Explorers im Menü **Extras** auf **Makros**, und klicken Sie dann auf **Makro-Explorer**.  
   
-2.  Erstellen Sie ein neues Makromodul. Wählen Sie im Makro-Explorer **MyMacros**. Auf der **Tools** Startmenü **Makros**, und klicken Sie dann auf **neues Makromodul**. Nennen Sie das Modul **"PublishSpecificCulture"**.  
+2.  Erstellen Sie ein neues Makromodul. Wählen Sie im Makro-Explorer **MyMacros** aus. Zeigen Sie im Menü **Extras** auf **Makros**, und klicken Sie dann auf **Neues Makromodul**. Geben Sie dem Modul den Namen **PublishSpecificCulture**.  
   
-3.  Erweitern Sie im Makro-Explorer die **MyMacros** Knoten, und öffnen Sie die **PublishAllProjects** Modul, indem Sie darauf doppelklicken (oder von der **Tools** Menü **Makros**, und klicken Sie dann auf **Makro-IDE**).  
+3.  Erweitern Sie im Makro-Explorer den Knoten **MyMacros**, und öffnen Sie dann das Modul **PublishAllProjects**, indem Sie darauf doppelklicken (oder zeigen Sie im Menü **Extras** auf **Makros**, und klicken Sie dann auf **Makro-IDE**).  
   
 4.  Fügen Sie in der Makro-IDE dem Modul nach den `Import`-Anweisungen den folgenden Code hinzu:  
   
@@ -147,17 +142,17 @@ Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedliche
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>So veröffentlichen Sie ein Projekt für ein bestimmtes Gebietsschema  
   
-1.  Erstellen Sie ein Visual Basic Windows-Anwendungsprojekt auf die **Datei** Menü **neu**, und klicken Sie dann auf **Projekt**.  
+1.  Um ein Visual Basic-Projekt für eine Windows-Anwendung zu erstellen, zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-2.  In der **neues Projekt** wählen Sie im Dialogfeld **Windows-Anwendung** aus der **Visual Basic** Knoten. Nennen Sie das Projekt **"PublishLocales"**.  
+2.  Wählen Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** die Option **Windows-Anwendung** aus. Geben Sie dem Projekt den Namen **PublishLocales**.  
   
-3.  Klicken Sie auf "Form1". In der **Eigenschaften** Fenster unter **Entwurf**, ändern Sie die **Sprache** Eigenschaft aus **(Standard)** zu **Englisch**. Ändern der **Text** -Eigenschaft des Formulars auf **"MyForm"**.  
+3.  Klicken Sie auf "Form1". Ändern Sie im Fenster **Eigenschaften** unter **Entwurf** die Einstellung **Sprache** von **(Standard)** in **Englisch**. Ändern Sie die Eigenschaft **Text** des Formulars in **MyForm**.  
   
      Beachten Sie, dass die lokalisierten Ressourcen-DLLs erst erstellt werden, wenn sie benötigt werden. Sie werden beispielsweise erstellt, wenn Sie den Text des Formulars oder eines der Steuerelemente ändern, nachdem Sie das neue Gebietsschema angegeben haben.  
   
 4.  Veröffentlichen Sie "PublishLocales" mit der Visual Studio-IDE.  
   
-     In **Projektmappen-Explorer**, wählen Sie "PublishLocales". Auf der **Projekt** , wählen Sie im Menü **Eigenschaften**. Im Projekt-Designer auf die **veröffentlichen** Seite, geben Sie als Veröffentlichungsort **http://localhost/PublishLocales**, und klicken Sie dann auf **jetzt veröffentlichen**.  
+     In **Projektmappen-Explorer**, wählen Sie "PublishLocales". Wählen Sie im Menü **Projekt** die Option **Eigenschaften** aus. Im Projekt-Designer auf die **veröffentlichen** Seite, geben Sie als Veröffentlichungsort **http://localhost/PublishLocales**, und klicken Sie dann auf **jetzt veröffentlichen**.  
   
      Wenn die veröffentlichte Webseite angezeigt wird, schließen Sie sie. (Für diesen Schritt müssen Sie das Projekt nur veröffentlichen, Sie müssen es nicht installieren.)  
   
@@ -165,15 +160,12 @@ Es ist nicht ungewöhnlich, dass eine Anwendung Komponenten mit unterschiedliche
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  Bei einer erfolgreichen Veröffentlichung wird in einer Meldung angegeben, dass die Veröffentlichung von "PublishLocales\PublishLocales.vbproj" erfolgreich war und dass die Sprache für die Veröffentlichung "en" war. Klicken Sie auf **OK** in der MessageBox. Wenn die Veröffentlichungswebseite angezeigt wird, klicken Sie auf **installieren**.  
+6.  Bei einer erfolgreichen Veröffentlichung wird in einer Meldung angegeben, dass die Veröffentlichung von "PublishLocales\PublishLocales.vbproj" erfolgreich war Die Sprache für die Veröffentlichung war „en“. Klicken Sie im Meldungsfeld auf **OK**. Wenn die veröffentlichte Webseite angezeigt wird, klicken Sie auf **Installieren**.  
   
 7.  Sehen Sie unter "C:\Inetpub\wwwroot\PublishLocales\en" nach. Sie sollten die installierten Dateien wie Manifeste, "setup.exe" und die veröffentlichte Webseitendatei sowie die lokalisierte Ressourcen-DLL finden. (Standardmäßig fügt ClickOnce eine DEPLOY-Erweiterung an EXEs und DLLs an. Sie können diese Erweiterung nach der Bereitstellung entfernen.)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Makros-Entwicklungsumgebung](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Makro-Explorer-Fenster](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Vorgehensweise: Bearbeiten und Programmgesteuertes Erstellen von Makros](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
-
-
-
+ [Makros-Entwicklungsumgebung](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Makro-Explorer-Fenster](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Vorgehensweise: Bearbeiten und Programmgesteuertes Erstellen von Makros](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

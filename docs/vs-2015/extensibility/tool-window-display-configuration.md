@@ -1,27 +1,22 @@
 ---
 title: Tool-Fenster-Anzeigekonfiguration | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962145"
 ---
 # <a name="tool-window-display-configuration"></a>Tool-Fenster-Anzeigekonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +37,12 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
-|name|REG_SZ|"Kurzen Namen hier einfügen"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2 ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
+|Name|REG_SZ|"Kurzen Namen hier einfügen"|Ein kurzer Name, der das Toolfenster beschreibt. Nur für den Verweis in der Registrierung verwendet.|  
+|Float|REG_SZ|"X1,Y1,X2,Y2"|Vier durch Trennzeichen getrennte Werte. X1, Y1, ist die Koordinate der oberen linken Ecke des Toolfensters. X2, Y2 ist die Koordinate der unteren rechten Ecke. Alle Werte sind in Bildschirmkoordinaten.|  
 |Stil|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Verknüpft"<br /><br /> "Registerkarten"<br /><br /> "AlwaysFloat"|Ein Schlüsselwort, das Angeben der anfänglichen anzeigenzustand des Toolfensters.<br /><br /> "MDI" = MDI-Fensters angedockt.<br /><br /> "Float" = Gleitkommawert.<br /><br /> "Verknüpft" = verknüpft, die mit einem anderen Fenster (angegeben in den Fenster-Eintrag).<br /><br /> "Registerkarten" = in Kombination mit einem anderen Toolfenster.<br /><br /> "AlwaysFloat" = nicht angedockt werden.<br /><br /> Weitere Informationen finden Sie unter den folgenden Kommentarabschnitt.|  
-|Fenster|REG_SZ|*\<GUID &GT;*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID möglicherweise gehört, um eine eigene Windows oder eines der Fenster in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
+|Fenster|REG_SZ|*\<GUID>*|Die GUID eines Fensters, das Toolfenster verknüpft oder im Registerformat werden kann. Die GUID möglicherweise gehört, um eine eigene Windows oder eines der Fenster in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Ausrichtung|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Unten"|Finden Sie unter den folgenden Kommentarabschnitt.|  
 |DontForceCreate|REG_DWORD|0 oder 1|Wenn dieser Eintrag vorhanden ist und dessen Wert nicht 0 (null), wird das Fenster geladen, aber nicht sofort angezeigt.|  
   
@@ -91,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|name|Typ|Daten|Beschreibung|  
+|Name|Typ|Daten|Beschreibung|  
 |----------|----------|----------|-----------------|  
 |(Standard)|REG_SZ|Keiner|Lassen Sie leer.|  
-|*\<GUID &GT;*|REG_DWORD-Wert oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls müssen die Sichtbarkeit. Der Wert enthält lediglich eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
+|*\<GUID>*|REG_DWORD-Wert oder REG_SZ|0 oder eine beschreibende Zeichenfolge.|Dies ist optional. Der Eintrag Name muss die GUID eines Befehls müssen die Sichtbarkeit. Der Wert enthält lediglich eine informative Zeichenfolge. Der Wert in der Regel ist eine `reg_dword` auf 0 festgelegt.|  
   
 ### <a name="example"></a>Beispiel  
   
@@ -115,4 +110,3 @@ HKEY_LOCAL_MACHINE\
   
 ## <a name="see-also"></a>Siehe auch  
  [Grundlegendes zu VSPackage](../misc/vspackage-essentials.md)
-

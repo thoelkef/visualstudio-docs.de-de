@@ -1,27 +1,22 @@
 ---
 title: Visual Studio-Interop-Assembly-Parameter-Marshalling | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946647"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parameter-Marshalling für Visual Studio-Interopassemblys
 VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen oder von nicht verwalteten COM-Code aufgerufen werden. In der Regel Methodenargumente umgewandelt oder gemarshallt werden, automatisch von der interop-Marshaller. Allerdings können keine Argumente manchmal nicht in einer unkomplizierten Weise transformiert werden. In diesen Fällen werden die interop-Assembly-Methode Prototyp-Parameter verwendet, um die COM-Funktionsparameter so weit wie möglich entsprechen. Weitere Informationen finden Sie unter [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Verwaltete Methoden, die Schnittstellen dieses Typs aufrufen sollten das erste Element aus dem [Out] Array extrahieren. Dieses Element behandelt werden kann, als wäre er ein `retval` Wert aus der entsprechenden COM-Schnittstelle zurückzugeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Interop-Marshalling](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Interop-Marshalling](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Problembehandlung bei der Interoperabilität](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Verwaltete VSPackages](../misc/managed-vspackages.md)

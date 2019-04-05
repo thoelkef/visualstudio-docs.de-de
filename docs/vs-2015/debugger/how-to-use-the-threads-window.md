@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden des Fensters Threads | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946975"
 ---
-# <a name="how-to-use-the-threads-window"></a>Gewusst wie: Verwenden des Fensters Threads
+# <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können.  
   
  Die **Threads** Fenster enthält eine Tabelle, in dem jede Zeile stellt einen Thread in der Anwendung dar. Standardmäßig sind in der Tabelle alle Threads in der Anwendung aufgeführt. Sie können die Liste jedoch filtern, sodass nur die gewünschten Threads angezeigt werden. Jede Spalte enthält einen anderen Typ von Informationen. Sie können auch einige Spalten ausblenden. Wenn alle Spalten eingeblendet sind, werden die folgenden Informationen angezeigt (von links nach rechts):  
   
--   Die Flagspalte, in Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Flag und Aufheben der Kennzeichnung von Threads](../debugger/how-to-flag-and-unflag-threads.md).  
+-   Die Flagspalte, in Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Kennzeichnen und Threadkennzeichnung](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt. Konturen eines Pfeils geben den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
   
@@ -119,7 +114,7 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 #### <a name="to-search-for-specific-threads"></a>So suchen Sie nach bestimmten Threads  
   
--   Auf der Symbolleiste am oberen Rand der **Threads** Fenster, wechseln Sie zu der **Suche** Feld, und:  
+-   Wechseln Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** in das Feld **Suchen**, und führen Sie Folgendes aus:  
   
     -   Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
   
@@ -127,33 +122,33 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
     -   Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
   
--   (Optional) Um die vollständige Aufrufliste in die Suche einbeziehen möchten, wählen Sie **Aufrufliste suchen**.  
+-   (Optional) Wenn bei der Suche die vollständige Aufrufliste berücksichtigt werden soll, wählen Sie **Aufrufliste durchsuchen** aus.  
   
 ## <a name="freezing-and-thawing-threads"></a>Sperren und Entsperren von Threads  
  Wenn ein Thread eingefroren ist, wird die Threadausführung vom System auch dann nicht gestartet, wenn Ressourcen verfügbar sind.  
   
  In nativem Code können Sie anhalten oder Fortsetzen von Threads durch Aufruf der Windows-Funktionen `SuspendThread` und `ResumeThread` oder die MFC-Funktionen [CWinThread:: SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) und [CWinThread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Wenn Sie aufrufen `SuspendThread` oder `ResumeThread`, Sie ändern die *Unterbrechungszähler*, die angezeigt wird, der **Threads** Fenster. Wenn Sie jedoch einen systemeigenen Thread einfrieren oder reaktivieren, wird dadurch der Unterbrechungszähler nicht geändert. Im systemeigenen Code kann ein Thread nur ausgeführt werden, wenn er reaktiviert ist und sein Unterbrechungszähler den Wert 0 aufweist.  
   
- In verwaltetem Code hat das Einfrieren oder Reaktivieren keinen Einfluss auf den Wert des Unterbrechungszählers. In verwaltetem Code hat ein eingefrorener Thread den Unterbrechungszähler 1 auf. In systemeigenem Code hat der Unterbrechungszähler eines eingefrorenen Threads den Wert 0, es sei denn, seine Ausführung wurde durch einen `SuspendThread`-Aufruf unterbrochen.  
+ In verwaltetem Code hat das Einfrieren oder Reaktivieren keinen Einfluss auf den Wert des Unterbrechungszählers. In verwaltetem Code hat ein eingefrorener Thread den Unterbrechungszähler 1 auf. In nativem Code hat der Unterbrechungszähler eines eingefrorenen Threads den Wert 0, es sei denn, seine Ausführung wurde durch einen `SuspendThread`-Aufruf unterbrochen.  
   
 > [!NOTE]
->  Beim Debuggen eines Aufrufs vom nativen Code in den verwalteten Code wird der verwaltete Code im selben physischen Thread ausgeführt wie der native Code, durch den er aufgerufen wurde. Durch Unterbrechen oder Sperren des systemeigenen Threads wird auch der verwaltete Code gesperrt.  
+>  Beim Debuggen eines Aufrufs vom systemeigenen Code in den verwalteten Code wird der verwaltete Code im selben physischen Thread ausgeführt wie der systemeigene Code, durch den er aufgerufen wurde. Durch Unterbrechen oder Sperren des systemeigenen Threads wird auch der verwaltete Code gesperrt.  
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>So können Sie die Ausführung eines Threads einfrieren oder reaktivieren  
   
 -   Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Threads einfrieren** oder **Threads reaktivieren**.  
   
-     Dieser Vorgang wirkt sich nur die Threads, die im ausgewählten der **Threads** Fenster.  
+     Dieser Vorgang wirkt sich nur auf Threads aus, die im Fenster **Threads** ausgewählt sind.  
   
 ## <a name="displaying-flagged-threads"></a>Anzeigen von gekennzeichneten Threads  
- Sie können einen Thread, der besondere Aufmerksamkeit erhalten, indem Sie es mit einem Symbol im markieren möchten kennzeichnen die **Threads** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Flag und Aufheben der Kennzeichnung von Threads](../debugger/how-to-flag-and-unflag-threads.md). Im Fenster "Threads" können Sie festlegen, dass alle Threads oder nur die gekennzeichneten Threads angezeigt werden.  
+ Einen Thread, der besondere Aufmerksamkeit erhalten soll, können Sie kennzeichnen, indem Sie ihn im Fenster **Threads** mit einem Symbol markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Kennzeichnen und Threadkennzeichnung](../debugger/how-to-flag-and-unflag-threads.md). Im Fenster "Threads" können Sie festlegen, dass alle Threads oder nur die gekennzeichneten Threads angezeigt werden.  
   
 #### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
 -   Wählen Sie die Schaltfläche "kennzeichnen" in der oberen linken Ecke des der **Threads** Fenster.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>Anzeigen von Threadaufruflisten und Wechseln zwischen Rahmen  
- In einem Multithreadprogramm verfügt jeder Thread über eine eigene Aufrufliste. Die **Threads** Fenster bietet eine bequeme Möglichkeit, diese Aufruflisten anzuzeigen.  
+ In einem Multithreadprogramm verfügt jeder Thread über eine eigene Aufrufliste. Das Fenster **Threads** bietet eine benutzerfreundliche Möglichkeit, sich diese anzeigen zu lassen.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>So zeigen Sie die Aufrufliste eines Threads an  
   
@@ -168,6 +163,3 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-

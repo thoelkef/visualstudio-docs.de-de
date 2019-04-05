@@ -1,27 +1,22 @@
 ---
-title: 'Testbereich 5: Ändern der Quellcodeverwaltung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Testbereich 5: Quellcodeverwaltung ändern | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947442"
 ---
 # <a name="test-area-5-change-source-control"></a>Testbereich 5: Ändern der Quellcodeverwaltung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
   
  **Ändern Sie die Quellcodeverwaltung** Befehl bietet vier grundlegende Funktionen für den Benutzer:  
   
-- **Binden:**  
+- **Bind:**  
   
    Ermöglicht einem Benutzer zum Herstellen oder zum Wiederherstellen einer Datenquellen-Steuerelement-Verknüpfung zwischen einer Projektmappe oder eines Projekts und den Versionsspeicher.  
   
-- **Aufheben der Bindung:**  
+- **Unbind:**  
   
    Entfernt eine Projekt/Projektmappe aus der quellcodeverwaltung auf einer Basis pro Verbindung.  
   
@@ -50,7 +45,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
 ## <a name="test-cases"></a>Testfälle  
  Im folgenden sind bestimmte Testfälle für die **Quellcodeverwaltung ändern** Befehl Testbereich.  
   
-### <a name="case-5a-bind"></a>Case-5a: Binden  
+### <a name="case-5a-bind"></a>Groß-/Kleinschreibung 5a: Binden  
  Bindung kann der Benutzer ausgewählte Projekte und Projektmappen Source Code Control Informationen hinzugefügt. In der Regel wird der Benutzer aufgefordert, ein Projekt in der quellcodeverwaltung identifizieren, der diese hinzugefügt werden. Der Benutzer kann ein neues Projekt in der quellcodeverwaltung im Rahmen dieses Vorgangs (Kontrast zur Quellcodeverwaltung hinzufügen) nicht erstellt werden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
@@ -61,7 +56,7 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
 |Binden Sie die Lösung, die nicht unter quellcodeverwaltung Stand|1.  Erstellen Sie einen leeren Ordner, in der quellcodeverwaltung.<br />2.  Erstellen Sie ein Clientprojekt.<br />3.  Open **Quellcodeverwaltung ändern** (Dialogfeld) (**Datei**, **Quellcodeverwaltung**, **Quellcodeverwaltung ändern**).<br />4.  Binden Sie die Lösung an leerer Speicherort in der quellcodeverwaltung an.<br />5.  Klicken Sie auf **OK** schließen die **Quellcodeverwaltung ändern** Dialogfeld.<br />6.  Klicken Sie auf **Bindungsvorgang fortsetzen** im Dialogfeld zur Bestätigung.<br />7.  Klicken Sie auf **OK** in das Warnungsdialogfeld, wenn es angezeigt wird.|Projektmappe wird zur quellcodeverwaltung hinzugefügt.<br /><br /> Projektmappen- und Projektdateien werden ausgecheckt.|  
 |Cancel-Bindung|1.  Erstellen eines Projekts.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Öffnen Sie das Dialogfeld "Quellcodeverwaltung ändern".<br />4.  Heben Sie alle.<br />5.  Klicken Sie auf **OK** , um das Dialogfeld zu schließen. Wenn dieser Schritt erfolgreich ist, können Sie mit nächsten Schritt fort.<br />6.  Öffnen Sie erneut die **Quellcodeverwaltung ändern** Dialogfeld.<br />7.  Binden Sie an nicht verknüpfte Speicherort.<br />8.  Klicken Sie auf **Abbrechen**.|`Result from Step 5:`<br /><br /> Die Lösung befindet sich nicht mehr unter quellcodeverwaltung<br /><br /> `Result from Step 8:`<br /><br /> Projektmappe wird noch nicht unter quellcodeverwaltung.|  
   
-### <a name="case-5b-unbind"></a>Fall 5 b: Aufheben der Bindung  
+### <a name="case-5b-unbind"></a>Case 5b: Aufheben der Bindung  
  Aufheben der Bindung entfernt Code Steuerelement Quellinformationen aus Projekten und ihre Lösung. Die betroffenen Projekte und Projektmappen basieren auf einer Kombination aus Benutzerauswahl, und wie die Elemente zur quellcodeverwaltung hinzugefügt wurden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
@@ -81,4 +76,3 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

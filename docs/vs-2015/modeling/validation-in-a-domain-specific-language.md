@@ -1,12 +1,9 @@
 ---
 title: Validierung in einer domänenspezifischen Sprache | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961817"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
   
     Mit "ValidationCategories" wird angegeben, wann die Methode ausgeführt wird.  
   
-   Beispiel:  
+   Zum Beispiel:  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -185,7 +182,7 @@ public partial class Person
   
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.  
   
- **Übergeben von Werten in den Kontextcache.** Der Kontextparameter weist ein Wörterbuch, in dem Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:  
+ **Übergeben von Werten in den Kontextcache.** Der Kontextparameter weist ein Wörterbuch, in dem Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Zum Beispiel:  
   
 ```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
@@ -223,7 +220,7 @@ partial class MyLanguageCommandSet
   
  Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
- Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Beispiel:  
+ Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Zum Beispiel:  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -350,6 +347,3 @@ validationController.ValidateCustom
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 42c7a65625d8e21ceff1070ccbc66d5881af853d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960519"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Gewusst wie: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Vorgehensweise: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen können eine oder mehrere Dateierweiterungen zugeordnet sein, damit die Anwendung automatisch gestartet wird, wenn der Benutzer eine Datei mit diesen Typen wird geöffnet. Hinzufügen von Unterstützung für Dateinamen-Erweiterung auf einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung ist einfach.  
@@ -49,7 +44,7 @@ ms.locfileid: "49909106"
   
    - `progid`: Eine Zeichenfolge, die den Dateityp aus, um es in der Registrierung markieren eindeutig identifiziert.  
   
-   - `defaultIcon`: Ein Symbol für diesen Dateityp verwendet werden soll. Das Symbol muss als eine Ressource im Manifest Anwendung hinzugefügt werden. Weitere Informationen finden Sie unter [Gewusst wie: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Ein Symbol für diesen Dateityp verwendet werden soll. Das Symbol muss als eine Ressource im Manifest Anwendung hinzugefügt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Ein Beispiel für die `file` und `fileAssociation` Elemente finden Sie unter [ \<FileAssociation >-Element](../deployment/fileassociation-element-clickonce-application.md).  
   
@@ -59,12 +54,9 @@ ms.locfileid: "49909106"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    Weitere Informationen finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Weitere Informationen finden Sie unter [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ## <a name="see-also"></a>Siehe auch  
  [\<FileAssociation >-Element](../deployment/fileassociation-element-clickonce-application.md)   
  [ClickOnce Application Manifest (ClickOnce-Anwendungsmanifest)](../deployment/clickonce-application-manifest.md)   
  [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
-
-
-
