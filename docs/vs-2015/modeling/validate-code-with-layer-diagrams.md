@@ -1,12 +1,9 @@
 ---
 title: Überprüfen von Code mit Ebenendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960765"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Überprüfen von Code mit Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -237,17 +234,14 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht, können Sie Ih
   
 |**Fehlersyntax**|**Fehlerbeschreibung**|  
 |----------------------|---------------------------|  
-|AV0001: Ungültige Abhängigkeit: *"Element1"*(*ArtifactType1*)--> *"Element2"*(*ArtifactType2*)<br /><br /> Ebenen: *LayerName1*, *LayerName2* &#124; Abhängigkeiten: *DependencyType*|*"Element1"* in *LayerName1* sollte keine Abhängigkeit auf *"Element2"* in *LayerName2* da *LayerName1* hat keine direkte Abhängigkeit für *LayerName2*.|  
-|AV1001: Ungültiger Namespace: *Artefakt*<br /><br /> Ebene: *LayerName* &#124; Namespace erforderlich: *NamespaceName1* &#124; aktuellen Namespace: *NamespaceName2*|*LayerName* erfordert, dass die zugeordneten Artefakte zu gehören müssen *NamespaceName1*. *Artefakt* befindet sich im *NamespaceName2*, nicht *NamespaceName1*.|  
-|: Av1002 Abhängigkeit von unzulässigem Namespace: *"Element1"*(*ArtifactType1*) &#124; *"Element2"*(*ArtifactType2*)<br /><br /> Ebene: *LayerName* &#124; Namespace unzulässig: *NamespaceName* &#124; Abhängigkeiten: *DependencyType*|*LayerName* erfordert, dass die zugeordneten Artefakte nicht abhängig müssen *NamespaceName*. *"Element1"* kann nicht von abhängen *"Element2"* da *"Element2"* befindet sich im *NamespaceName*.|  
-|AV1003: In unzulässigem Namespace: *Artefakt*(*ArtifactType*)<br /><br /> Ebene: *LayerName* &#124; Namespace unzulässig: *NamespaceName*|*LayerName* erfordert, dass die zugeordneten Artefakte nicht zu gehören *NamespaceName*. *Artefakt* gehört *NamespaceName*.|  
+|AV0001: Ungültige Abhängigkeit: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Ebenen: *LayerName1*, *LayerName2* &#124; Dependencies: *DependencyType*|*"Element1"* in *LayerName1* sollte keine Abhängigkeit auf *"Element2"* in *LayerName2* da *LayerName1* hat keine direkte Abhängigkeit für *LayerName2*.|  
+|AV1001: Ungültiger Namespace: *Artefakt*<br /><br /> Schicht: *LayerName* &#124; Namespace erforderlich: *NamespaceName1* &#124; aktuellen Namespace: *NamespaceName2*|*LayerName* erfordert, dass die zugeordneten Artefakte zu gehören müssen *NamespaceName1*. *Artefakt* befindet sich im *NamespaceName2*, nicht *NamespaceName1*.|  
+|AV1002: Hängt von unzulässigem Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Schicht: *LayerName* &#124; Forbidden Namespace: *NamespaceName* &#124; Dependencies: *DependencyType*|*LayerName* erfordert, dass die zugeordneten Artefakte nicht abhängig müssen *NamespaceName*. *"Element1"* kann nicht von abhängen *"Element2"* da *"Element2"* befindet sich im *NamespaceName*.|  
+|AV1003: In unzulässigem Namespace: *Artifact*(*ArtifactType*)<br /><br /> Schicht: *LayerName* &#124; Forbidden Namespace: *NamespaceName*|*LayerName* erfordert, dass die zugeordneten Artefakte nicht zu gehören *NamespaceName*. *Artefakt* gehört *NamespaceName*.|  
 |AV3001: Fehlender Link: Ebene '*LayerName*"enthält links zu"*Artefakt*", der nicht gefunden werden. Möglicherweise fehlt ein Assemblyverweis.|*LayerName* Verknüpfung mit einem Artefakt, das nicht gefunden werden kann. Ein Link zu einer Klasse kann beispielsweise fehlen, wenn im Modellierungsprojekt ein Verweis auf die Assembly mit der Klasse fehlt.|  
-|AV9001: Bei der Architekturvalidierung sind interne Fehler aufgetreten. Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster.|Weitere Einzelheiten finden Sie im Buildereignisprotokoll oder im Ausgabefenster.|  
+|AV9001: Architektur-Analyse gefunden interne Fehler. Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster.|Weitere Einzelheiten finden Sie im Buildereignisprotokoll oder im Ausgabefenster.|  
   
 ## <a name="security"></a>Sicherheit  
   
 ## <a name="see-also"></a>Siehe auch  
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
-
-
-

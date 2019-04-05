@@ -1,27 +1,22 @@
 ---
 title: 'Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e857befa71095572661ff2c2e1a2ba074444f231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884224"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961681"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -84,6 +79,3 @@ Die **Beispiel-XML generieren** Funktion generiert eine XML-Beispieldatei, die b
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit XML-Daten](../xml-tools/working-with-xml-data.md)
-
-
-

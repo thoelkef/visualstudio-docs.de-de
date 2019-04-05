@@ -1,27 +1,22 @@
 ---
 title: Registrieren von Generatoren einzelner Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962168"
 ---
 # <a name="registering-single-file-generators"></a>Registrieren von Generatoren einzelner Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -84,5 +79,4 @@ Ein benutzerdefiniertes Tool in zur Verfügung stellen [!INCLUDE[vsprvs](../../i
  [Implementieren von Einzeldatei-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
  [Bestimmen die Standard-Namespace eines Projekts](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

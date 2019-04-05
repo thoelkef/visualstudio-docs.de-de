@@ -1,12 +1,9 @@
 ---
 title: Erstellen von Nachschlagetabellen in WPF-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303341"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58961459"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +41,11 @@ Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreib
   
 1.  Fügen Sie eine der folgenden Typen von Datenquellen mit zugehörigen Daten zu Ihrem Projekt hinzu:  
   
-    -   DataSet oder ein Entity Data Model. Weitere Informationen finden Sie unter [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   DataSet oder ein Entity Data Model.
+
+    -   WCF Data Service, WCF-Dienst oder einen Webdienst. Weitere Informationen finden Sie unter [Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   WCF Data Service, WCF-Dienst oder einen Webdienst. Weitere Informationen finden Sie unter [Vorgehensweise: Verbinden mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).  
-  
-    -   -Objekte. Weitere Informationen finden Sie unter [Vorgehensweise: Verbinden mit Daten in Objekten](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    -   Objekte. Weitere Informationen finden Sie unter [Vorgehensweise: Verbinden mit Daten in Objekten](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Bevor Sie eine Nachschlagetabelle erstellen können, müssen zwei zusammengehörige Tabellen oder Objekte als Datenquelle für das Projekt vorhanden.  
@@ -57,7 +54,7 @@ Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreib
   
      Weitere Informationen über gültige Ablageziele finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-3.  Auf der **Daten** Menü klicken Sie auf **Datenquellen anzeigen** zum Öffnen der **Datenquellen** Fenster.  
+3.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.  
   
 4.  Erweitern Sie die Knoten in der **Datenquellen** Fenster, bis die übergeordnete Tabelle oder Objekt und die zugehörige untergeordnete Tabelle oder das Objekt angezeigt werden.  
   
@@ -104,4 +101,3 @@ Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreib
  [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Zeigen Sie verknüpfter Daten in WPF-Anwendungen an](../data-tools/display-related-data-in-wpf-applications.md)   
  [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
