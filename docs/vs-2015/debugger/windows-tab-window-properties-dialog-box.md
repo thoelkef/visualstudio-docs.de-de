@@ -1,27 +1,22 @@
 ---
 title: Registerkarte "Windows", Dialogfeld "Fenstereigenschaften" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04bba4490d5cfaebd6bb3d99ac7ad2911b3f548e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774626"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58962242"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Registerkarte "Fenster", Dialogfeld "Fenstereigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Verwenden der **Windows** Tab, um die Informationen unter Windows anzeigen im Zu
 |**Übergeordnetes Fenster**|Das Handle des Fensters übergeordneten Fenster ("none", wenn es kein übergeordnetes Element). Wählen Sie diesen Eintrag aus, um die Eigenschaften des übergeordneten Fensters anzuzeigen.|  
 |**Erste untergeordnete Element**|Das Handle des Fensters ersten untergeordneten Fensters, in der Sequenz (Z-Reihenfolge) angezeigt, in der Strukturansicht für Fenster ("none", wenn keine untergeordneten Fenster vorhanden sind). Wählen Sie diesen Wert aus, um die Eigenschaften des ersten untergeordneten Fensters anzuzeigen.|  
 |**Besitzerfenster**|Das Handle des Fensters des Fensters. Hauptfenster der Anwendung besitzt normalerweise System modalen Dialogfeldern, z. B. ("none", wenn kein Besitzer vorhanden ist). Wählen Sie diesen Eintrag aus, um die Eigenschaften des Besitzerfensters anzuzeigen.|
-
-
-

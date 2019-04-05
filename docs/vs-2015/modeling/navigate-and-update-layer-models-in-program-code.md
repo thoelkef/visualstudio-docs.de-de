@@ -1,12 +1,9 @@
 ---
 title: Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962205"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In diesem Thema werden die Elemente und Beziehungen in Ebenenmodellen beschrieben, die Sie mithilfe von Programmcode durchsuchen und aktualisieren können. Weitere Informationen zu Ebenendiagrammen aus Sicht des Benutzers, finden Sie unter [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md) und [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).  
+In diesem Thema werden die Elemente und Beziehungen in Ebenenmodellen beschrieben, die Sie mithilfe von Programmcode durchsuchen und aktualisieren können. Weitere Informationen zu Ebenendiagrammen aus Sicht des Benutzers, finden Sie unter [Ebenendiagramme: Verweis](../modeling/layer-diagrams-reference.md) und [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).  
   
  Das in diesem Thema beschriebene <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>-Modell ist eine Fassade eines allgemeineren <xref:Microsoft.VisualStudio.GraphModel>-Modells. Wenn Sie schreiben eine [menüerweiterung Befehls- oder Gestenhandlerprojekts](../modeling/add-commands-and-gestures-to-layer-diagrams.md), verwenden Sie die `Layer` Modell. Wenn Sie schreiben eine [layer validierungserweiterung](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), es ist einfacher zu verwenden die `GraphModel`.  
   
@@ -92,7 +89,7 @@ IEnumerable<ILayerComment> comments =
  Jedes `ILayerElement` verfügt über ein Zeichenfolgenwörterbuch namens `Properties`. Über dieses Wörterbuch können Sie willkürliche Informationen an ein beliebiges Ebenenelement anfügen.  
   
 ## <a name="artifact-references"></a>Artefaktverweise  
- Ein Artefaktverweis (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) stellt den Link zwischen einer Ebene und einem Projektelement dar, z. B. eine Datei, eine Klasse oder ein Ordner. Der Benutzer erstellt Artefakte, wenn er eine Ebene erstellt oder dieser Elemente hinzufügt, indem er Elemente aus dem Projektmappen-Explorer, der Klassenansicht oder dem Objektkatalog in ein Ebenendiagramm zieht. Mit einer Ebene kann eine beliebige Anzahl von Artefaktverweisen verknüpft werden.  
+ Ein Artefaktverweis (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) stellt den Link zwischen einer Ebene und einem Projektelement dar, z. B. einer Datei, einer Klasse oder einem Ordner. Der Benutzer erstellt Artefakte, wenn er eine Ebene erstellt oder dieser Elemente hinzufügt, indem er Elemente aus dem Projektmappen-Explorer, der Klassenansicht oder dem Objektkatalog in ein Ebenendiagramm zieht. Mit einer Ebene kann eine beliebige Anzahl von Artefaktverweisen verknüpft werden.  
   
  Jede Zeile im Ebenen-Explorer zeigt einen Artefaktverweis an. Weitere Informationen finden Sie unter [Erstellen von Ebenendiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -137,6 +134,3 @@ public void ... (...)
  [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)   
  [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)   
  [Erweitern von UML-Modellen und -Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
-
-
-
