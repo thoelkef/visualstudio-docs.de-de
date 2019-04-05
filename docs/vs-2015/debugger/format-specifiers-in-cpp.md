@@ -1,13 +1,8 @@
 ---
 title: Formatbezeichner in C++ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957204"
 ---
 # <a name="format-specifiers-in-c"></a>Formatbezeichner in C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,13 +83,13 @@ int main() {
 |**s32**|UTF-32-Zeichenfolge|\<Speicherort > U "Hello World"|U”hello world”|  
 |**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > U "Hello World"|hello world|  
 |**en**|enum|Samstag(6)|Samstag|  
-|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort > {\<erste Member >}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|  
-|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort >, {Member = Value...}|{member=value…}|  
+|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|  
+|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<location>, {member=value…}|{member=value…}|  
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|  
 |hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows-Meldungsnummern|16|WM_CLOSE|  
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<benutzerdefinierte Darstellung >|4|  
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|  
   
 > [!NOTE]
 >  Wenn der Formatbezeichner **hv** vorhanden ist, versucht der Debugger, die Länge des Puffers zu bestimmen, und zeigt die entsprechende Anzahl von Elementen an. Da der Debugger nicht immer die exakte Puffergröße eines Arrays finden kann, sollten Sie möglichst immer einen Größenbezeichner `(pBuffer,[bufferSize])` verwenden. Der Formatbezeichner **hv** ist für Szenarien vorgesehen, in denen die Puffergröße nicht einfach verfügbar ist.  
@@ -121,15 +116,15 @@ int main() {
 |**f**|Gleitkommazahl mit Vorzeichen|(3./2.), f|1.500000|  
 |**e**|Wissenschaftliche Notation mit Vorzeichen|(3.0/2.0)|1.500000e+000|  
 |**g**|Gleitkommazahl oder wissenschaftliche Notation mit Vorzeichen, je nachdem, welche kürzer ist|(3.0/2.0)|1.5|  
-|c|Einzelnes Zeichen|\<Speicherort >|101 'e'|  
-|s|const char*|\<Speicherort >|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|hello world|  
-|s8|const char*|\<Speicherort >|"hello world"|  
+|c|Einzelnes Zeichen|\<Speicherort>|101 'e'|  
+|s|const char*|\<Speicherort>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort>|hello world|  
+|s8|const char*|\<Speicherort>|"hello world"|  
 |hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|  
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<benutzerdefinierte Darstellung >|4|  
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim Interop-Debuggen mit C++/CLI  
  Die folgende Tabelle enthält Formatierungssymbole, die für Speicherbereiche verwendet werden. Bezeichner für Speicherbereiche können mit beliebigen Werten oder Ausdrücken verwendet werden, die als Speicherbereiche ausgewertet werden.  
@@ -150,8 +145,3 @@ int main() {
 |Bezeichner|Format|Ausdruck|Angezeigter Wert|  
 |---------------|------------|----------------|---------------------|  
 |n|Ganze Dezimalzahl|pBuffer[32]|Zeigt `pBuffer` als Array mit 32 Elementen an.|
-
-
-
-
-

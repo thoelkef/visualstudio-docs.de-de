@@ -1,12 +1,9 @@
 ---
 title: Aktualisieren von MDF-Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956380"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +79,9 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
   
        -   Um eine bestimmte Version verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 LocalDB 2014 ist und V13 LocalDB 2016.  
   
-   -   **Anfügen einer Datenbankdatei**: der physische Pfad der primären MDF-Datei.  
+   -   **Anfügen einer Datenbankdatei**: Der physische Pfad der primären MDF-Datei.  
   
-   -   **Der logische Name**: der Name, der mit der Datei verwenden möchten.  
+   -   **Der logische Name**: Der Name, die Sie mit der Datei verwenden möchten.  
   
 3. Klicken Sie auf die Schaltfläche **OK**.  
   
@@ -123,8 +120,3 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
 4. Klicken Sie auf die Schaltfläche **OK**.  
   
    SQL Server Express werden die Standard-Datenbank-Engine für Ihre Anwendungen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Übersicht über lokale Daten](../data-tools/local-data-overview.md)   
- [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in einer lokalen Datenbankdatei (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

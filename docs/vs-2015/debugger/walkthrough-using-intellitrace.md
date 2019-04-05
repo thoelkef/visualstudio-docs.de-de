@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von IntelliTrace | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955542"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Exemplarische Vorgehensweise: Verwenden von IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
 1.  Aktivieren Sie das IntelliTrace-Ereignis für den Dateizugriff. Wechseln Sie zur Seite **Extras / Optionen / IntelliTrace / IntelliTrace-Ereignisse** , und erweitern Sie die Kategorie **Datei** . Aktivieren Sie die Ereigniskategorie **Datei** . Dadurch werden alle Dateiereignisse (Zugriff, Schließen, Löschen) überprüft.  
   
-2.  Erstellen Sie eine C#- Konsolenanwendung. Fügen Sie in der Datei "Program.cs" die folgende `using`-Anweisung hinzu:  
+2.  Erstellen Sie eine C#- Konsolenanwendung. Fügen Sie in der Datei "Program.cs" die folgende `using` -Anweisung hinzu:  
   
     ```csharp  
     using System.IO;  
@@ -68,7 +63,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
      Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update 1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 7.  Wählen Sie das Ereignis aus, um die Details zu erweitern.  
   
@@ -106,9 +101,3 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
     >  Wie Sie sehen, sind einige Aufrufe abgeblendet. Dies liegt daran, dass IntelliTrace keine Daten aus den entsprechenden Modulen aufgezeichnet hat. Um diese Daten anzuzeigen, lassen Sie IntelliTrace Daten aus diesen Modulen sammeln. Informationen zum Angeben von Modulen, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Nächste Schritte
-
-
-
-
-
-

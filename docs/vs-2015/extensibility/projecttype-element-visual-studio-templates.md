@@ -1,14 +1,9 @@
 ---
 title: ProjectType-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d76962d5a8b90b5cc947721608aa1758193fe6c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956477"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezei
   
  \<VSTemplate>  
  \<TemplateData>  
- \<ProjectType >  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -62,11 +57,11 @@ Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezei
   
  Durch diesen Wert wird der Projekttyp angegeben, der von der Vorlage erstellt wird. Er muss einen der folgenden Werte aufweisen:  
   
--   `CSharp`: Gibt an, dass von der Vorlage ein [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projekt oder -Element erstellt wird.  
+-   `CSharp`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Projekt oder Element.  
   
--   `VisualBasic`: Gibt an, dass von der Vorlage ein [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Projekt oder -Element erstellt wird.  
+-   `VisualBasic`: Gibt an, dass die Vorlage erstellt eine [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekt oder Element.  
   
--   `Web`: Gibt an, dass von der Vorlage ein Webprojekt oder -element erstellt wird. Wenn die `ProjectType` -Element diesen Wert enthält, wird die Sprache des Projekts oder Elements definiert, der [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+-   `Web`: Gibt an, dass die Vorlage ein Webprojekt oder-Element erstellt. Wenn die `ProjectType` -Element diesen Wert enthält, wird die Sprache des Projekts oder Elements definiert, der [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Hinweise  
  `ProjectType` ist ein erforderliches untergeordnetes Element von `TemplateData`.  
@@ -106,4 +101,3 @@ Kategorisiert die Projektvorlage, sodass es unter der angegebenen Gruppe angezei
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md)
-

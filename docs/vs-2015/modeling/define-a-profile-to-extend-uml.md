@@ -1,12 +1,9 @@
 ---
 title: Definieren eines Profils zum Erweitern von UML | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957385"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definieren eines Profils zum Erweitern von UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
 #### <a name="to-define-a-uml-profile"></a>So definieren Sie ein UML-Profil  
   
-1.  Erstellen Sie eine neue XML-Datei mit der Dateierweiterung `.profile`.  
+1.  Erstellen Sie eine neue XML-Datei mit der Dateinamenerweiterung `.profile`.  
   
 2.  Fügen Sie Stereotypdefinitionen gemäß den Richtlinien unter [die Struktur eines Profils](#Schema).  
   
@@ -62,9 +59,9 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
 4.  Installieren Sie die Erweiterung auf dem Computer.  
   
-    1.  Doppelklicken Sie auf die Erweiterungsdatei mit der Dateinamenerweiterung `.vsix`.  
+    1.  Doppelklicken Sie auf die Erweiterungsdatei mit der Dateierweiterung `.vsix`.  
   
-    2.  Starten Sie Visual Studio neu.  
+    2.  Starten Sie Visual Studio neu.  
   
 5.  Überprüfen Sie, ob das Profil installiert wurde.  
   
@@ -223,7 +220,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
 7.  Erstellen Sie die Visual Studio-Erweiterung, indem Sie entweder das Erweiterungsprojekt erstellen oder alle Dateien komprimieren, wie in den vorherigen Abschnitten beschrieben.  
   
 ##  <a name="Schema"></a> Die Struktur eines Profils  
- Die XSD-Datei für UML-Profile finden Sie im folgenden Beispiel: [Festlegen von Stereotypen und XSD-Profilen](http://go.microsoft.com/fwlink/?LinkID=213811). Installieren Sie die `.xsd`-Datei zur Unterstützung der Bearbeitung von Profildateien in:  
+ Die XSD-Datei für UML-Profile finden Sie im folgenden Beispiel: [Festlegen von Stereotypen und Profile XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Installieren Sie die `.xsd`-Datei zur Unterstützung der Bearbeitung von Profildateien in:  
   
  **%ProgramFiles%\Microsoft visual Studio [Version] \Xml\Schemas**  
   
@@ -345,7 +342,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
  Meine Stereotype werden nicht in den UML-Modellen angezeigt.  
  Das Profil muss als Paket oder Modell ausgewählt werden. Anschließend werden die Stereotype auf Elementen in dem Paket oder Modell angezeigt. Weitere Informationen finden Sie unter [Hinzufügen von Stereotypen zu UML-Modellelemente](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- Der folgende Fehler angezeigt wird, beim Öffnen eines UML-Modells: **VS1707: die folgenden Profile können nicht geladen werden, weil Fehler bei der Serialisierung: MyProfile.profile**  
+ Der folgende Fehler angezeigt wird, wenn ich ein UML-Modell zu öffnen: **VS1707: Die folgenden Profile können nicht geladen werden, weil Fehler bei der Serialisierung: MyProfile.profile**  
  1.  Überprüfen Sie, ob die grundlegende XML-Syntax der PROFILE-Datei korrekt ist.  
   
 2. Stellen Sie sicher, dass jeder Monikername das Format "/Profilname/Knotenname" besitzt. Der "Profilname" ist der Wert des name-Attributs im Stammprofilknoten. Der "Knotenname" ist der Wert des name-Attributs einer Metaklasse (metaclass), eines externen Typs (externalType) oder eines Enumerationstyps (enumerationType).  
@@ -358,7 +355,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   
 5. Erstellen Sie die VSIX-Datei neu, und öffnen Sie sie in Windows-Explorer, um sie erneut zu installieren. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
-   Die Erweiterung wird nicht im Erweiterungs-Manager angezeigt, aber wenn Sie versuchen, sie erneut zu installieren, wird die folgende Meldung angezeigt: **die Erweiterung bereits für alle entsprechenden Produkte installiert ist.**  
+   Die Erweiterung wird nicht im Erweiterungs-Manager angezeigt, aber wenn Sie versuchen, sie erneut zu installieren, wird die folgende Meldung angezeigt: **Die Erweiterung ist bereits für alle entsprechenden Produkte installiert.**  
    1.  Entfernen Sie die Erweiterungsdatei aus einem Unterordner des *LocalAppData*\Microsoft\VisualStudio\\[Version] \Extensions\  
   
    -   Um finden Sie unter *LocalAppData*, müssen Sie versteckte Dateien und Ordner in der Registerkarte Ansicht der Optionen für die Windows-Explorer festlegen.  
@@ -371,8 +368,5 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
  [Hinzufügen von Stereotypen zu UML-Modellelementen](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Standardstereotype für UML-Modelle](../modeling/standard-stereotypes-for-uml-models.md)   
- [Beispiel: Color UML-Elementen nach Stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [Beispiel: Festlegen von Stereotypen, Profile XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-
+ [Beispiel: Farbe von UML-Elementen nach Stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Beispiel: Festlegen von Stereotypen, XSD-Profilen](http://go.microsoft.com/fwlink/?LinkID=213811)

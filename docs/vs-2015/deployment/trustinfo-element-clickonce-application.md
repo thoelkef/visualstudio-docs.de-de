@@ -1,14 +1,9 @@
 ---
 title: '&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957294"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +90,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.  
   
 ## <a name="ipermission"></a>IPermission  
- Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das `IPermission`-Element identifiziert eine Berechtigungsklasse in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] vollständig. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.  
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das `IPermission` -Element identifiziert eine Berechtigungsklasse in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]vollständig. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.  
   
 -   `class`  
   
@@ -158,7 +153,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
      `requireAdministrator`, es werden vollständige Administratorberechtigungen angefordert.  
   
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungen können nur mit dem Wert `asInvoker` installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen können nur mit dem Wert `asInvoker`installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
   
 -   `uiAccess`  
   
@@ -172,7 +167,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
  Weitere Informationen zur Berechtigungserweiterung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md). Weitere Informationen zur Bereitstellung von Richtlinien finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Beispiele  
- Die folgenden drei Codebeispiele veranschaulichen `trustInfo`-Elemente für die benannten Standardsicherheitszonen – Internet, Lokales Intranet und Vertrauenswürdige Sites – für die Verwendung im Anwendungsmanifest einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung.  
+ Die folgenden drei Codebeispiele veranschaulichen `trustInfo` -Elemente für die benannten Standardsicherheitszonen – Internet, Lokales Intranet und Vertrauenswürdige Sites – für die Verwendung im Anwendungsmanifest einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung.  
   
  Das erste Beispiel zeigt das `trustInfo` -Element für die in der Sicherheitszone „Internet“ verfügbaren Standardberechtigungen.  
   
@@ -278,6 +273,3 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ## <a name="see-also"></a>Siehe auch  
  [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Öffnen Sie ein UML-Modell mithilfe der Visual Studio-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, opening models in Visual Studio
 ms.assetid: 38423682-f2a7-4d2a-a2cd-fd680e9b4b4d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62b8700e85ccab271dbfdc4f9bac504ee64197a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21f9b02b84644bd748c88e9d08647fa7d57d951b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956163"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Öffnen eines UML-Modells über die Visual Studio-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +42,9 @@ Sie können Modelle und Diagramme auch über die API in der Visual Studio-Benut
   
 - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-- Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[Version]  
   
-- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[Version]  
   
 - Microsoft.VisualStudio.Shell.Immutable.[version]  
   
@@ -121,6 +118,3 @@ foreach (ProjectItem item in project.ProjectItems)
 ## <a name="see-also"></a>Siehe auch  
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)   
  [Erweitern von UML-Modellen und -Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

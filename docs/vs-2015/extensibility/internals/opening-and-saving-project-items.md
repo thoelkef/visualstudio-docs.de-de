@@ -1,14 +1,9 @@
 ---
 title: Sie öffnen und Speichern von Projektelementen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], file persistence
 - files [Visual Studio], opening and saving
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956898"
 ---
 # <a name="opening-and-saving-project-items"></a>Öffnen und Speichern von Projektelementen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speiche
  [Anzeigen von Dateien mit dem Befehl „Öffnen mit“](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Eine ausführliche, schrittweise Erklärung der Behandlung von der IDE bereit, die **Öffnen mit** Befehl aufgefordert wird das Öffnen einer Datei, die eine Auswahl aus der standard-Editoren.  
   
- [Gewusst wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)  
  Enthält schrittweise Anleitungen zum angeben, dass die Dateien eines bestimmten Typs in Ihrem Projekt mit einem projektspezifischen-Editor geöffnet werden soll.  
   
- [Gewusst wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
+ [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)  
  Enthält schrittweise Anleitungen zum angeben die IDE zu einen standard-Editor für Dateien in Ihrem Projekttyp öffnen zu aktivieren.  
   
- [Gewusst wie: Öffnen von Editoren für geöffnete Dokumente](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Enthält schrittweise Anleitungen für eine geöffnete Datei einen projektspezifische-Editor wird geöffnet.  
   
  [Speichern eines Standarddokuments](../../extensibility/internals/saving-a-standard-document.md)  
@@ -60,4 +55,3 @@ Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speiche
   
  [Projekttypen](../../extensibility/internals/project-types.md)  
  Beschreibt, wie Projekte, dass der Code kompiliert und erstellt wurde, zu steuern, wie Editoren geöffnet werden und wie Projektelemente formatiert werden.
-

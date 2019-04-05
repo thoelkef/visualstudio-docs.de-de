@@ -1,12 +1,9 @@
 ---
 title: Eigenschaften von Zuordnungen in UML-Klassendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958053"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Eigenschaften von Zuordnungen in UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Sie können in einem UML-Klassendiagramm zeichnen *Zuordnungen* zwischen beliebi
 
 |     **Property**     |          **Default**          |                                                                                                                                                                                                                                                                                                                                        Beschreibung                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  **Name der Rolle (2)**   | Name des Typs dieser Rolle |                                                                                                                                                                                                                                                                                                       Der Name der Rolle. Wird am Ende der Zuordnung im Diagramm angezeigt.                                                                                                                                                                                                                                                                                                        |
+|  **Role Name (2)**   | Name des Typs dieser Rolle |                                                                                                                                                                                                                                                                                                       Der Name der Rolle. Wird am Ende der Zuordnung im Diagramm angezeigt.                                                                                                                                                                                                                                                                                                        |
 |   **Aggregation**    |             Keiner              |                                                                        **Keine** (4) – stellt eine allgemeine Beziehung zwischen Instanzen der Klassen dar.<br /><br /> **Zusammengesetzte** (5) – das Objekt in dieser Rolle enthält das Objekt in der entgegengesetzten Rolle. Sie können die **zusammengesetzten** Tool zum Erstellen einer Zuordnung mit Composite-Aggregation.<br /><br /> **Freigegebene** (6) - Objekt in dieser Rolle enthält Verweise auf das Objekt in der anderen Rolle. Sie können die **Aggregation** Tool zum Erstellen einer Zuordnung mit Shared-Aggregation.<br /><br /> Die genaue Interpretation richtet sich nach der lokalen Konvention.                                                                         |
 |    **Wird abgeleitet**    |             False             |                                                                                                                                                                                                                          Wenn „true“, wird das Objekt an diesem Ende des Links aus anderen Attributen und Zuordnungen berechnet. Beispielsweise wird MyWorkPlace aus MyEmployer.WorkPlace berechnet. Die Details sollten in die Beschreibung oder einen angefügten Kommentar eingegeben werden.                                                                                                                                                                                                                           |
 | **Ist abgeleitet von Union** |             False             |                                                                                                                                                                                                                                                                                                             Wenn „true“, ist die Rolle die Vereinigung einer Gruppe von Rollen in abgeleiteten Typen.                                                                                                                                                                                                                                                                                                             |
@@ -74,6 +71,3 @@ Sie können in einem UML-Klassendiagramm zeichnen *Zuordnungen* zwischen beliebi
  [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Eigenschaften von Operationen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

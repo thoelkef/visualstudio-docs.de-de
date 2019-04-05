@@ -1,12 +1,9 @@
 ---
 title: Anpassen der Elementerstellung und-Verschiebung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957025"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +76,7 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
 >   
 >  Wenn Sie sicherstellen, dass ein neues Element oder eine neue Beziehung immer von Ihrem benutzerdefinierten Code verarbeitet wird, können Sie definieren eine `AddRule` in der einbettenden Beziehung und eine `DeleteRule` für das Element die Domänenklasse. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>Beispiel: Definieren einer EMD ohne benutzerdefinierten code  
+## <a name="example-defining-an-emd-without-custom-code"></a>Beispiel: Definieren eine EMD ohne benutzerdefinierten code  
  Im folgende Beispiel ermöglicht Benutzern, die ein Element und einen Connector zur gleichen Zeit zu erstellen, indem Sie Sie aus der Toolbox auf eine vorhandene Form ziehen. Im Beispiel wird eine EMD der DSL-Definition hinzugefügt. Vor dieser Änderung ist können die Benutzer Tools auf das Diagramm, jedoch nicht auf vorhandene Formen ziehen.  
   
  Benutzer können auch Elemente in andere Elemente einfügen.  
@@ -94,7 +91,7 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
   
    1.  In **DSL-Explorer**, erweitern Sie **Domänenklassen**. Mit der rechten Maustaste `ExampleElement` , und klicken Sie dann auf **Hinzufügen neuer Elementmerge-Anweisung**.  
   
-   2.  Stellen Sie sicher, dass die **DSL-Details** Fenster geöffnet ist, sodass Sie die Details der neuen EMD sehen können. (Im Menü: **Ansicht**, **andere Windows**, **DSL-Details**.)  
+   2.  Stellen Sie sicher, dass die **DSL-Details** Fenster geöffnet ist, sodass Sie die Details der neuen EMD sehen können. (Im Menü: **Anzeigen von**, **andere Windows**, **DSL-Details**.)  
   
 3. Legen Sie die **indizierende Klasse** im DSL-Details-Fenster, zu definieren, welche Klasse von Elementen auf zusammengeführt werden kann `ExampleElement` Objekte.  
   
@@ -163,7 +160,7 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
   
 4.  Generieren Sie die Projektmappe neu. Dies dauert länger als üblich, da es sich bei der generierte Code aus dem Modell aktualisiert wird.  
   
-     Ein Buildfehler wird gemeldet, ähnlich wie: "Company.ElementMergeSample.ExampleElement enthält keine Definition für CanMergeExampleElement..."  
+     Ein Buildfehler werden gemeldet, ähnlich: "Company.ElementMergeSample.ExampleElement enthält eine Definition für CanMergeExampleElement keine..."  
   
      Sie müssen die Methode implementieren `CanMergeExampleElement`.  
   
@@ -324,6 +321,3 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Anpassen der Tools und der Toolbox](../modeling/customizing-tools-and-the-toolbox.md)   
  [Circuit Diagrams Sample DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

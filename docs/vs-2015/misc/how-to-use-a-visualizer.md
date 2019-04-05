@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden einer Schnellansicht | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957876"
 ---
-# <a name="how-to-use-a-visualizer"></a>Gewusst wie: Verwenden einer Schnellansicht
+# <a name="how-to-use-a-visualizer"></a>Vorgehensweise: Verwenden einer Schnellansicht
 Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnellansicht in einer für den Datentyp sinnvollen Art anzeigen. Können Schnellansichten über **DataTips**, **Überwachen** Fenster die **"Auto"** Fenster oder die **"lokal"** Fenster.  
   
  Schnellansichten werden in Compact Framework nicht unterstützt.  
@@ -61,7 +56,7 @@ Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnella
   
      - oder -   
   
-     `My Documents\Visual Studio 2010\Visualizers` *Visual Studio-Version* `\Visualizers`  
+     `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   

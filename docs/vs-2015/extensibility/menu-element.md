@@ -1,32 +1,27 @@
 ---
 title: Menu-Element | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 99eb70f0b8377c1dfd1be2d365298637d0be28ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79a8fafc748274015dac7f8f0938bba37ba5a8bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774345"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959260"
 ---
 # <a name="menu-element"></a>Menu-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definiert ein Menüelement. Hierbei handelt es sich um die sechs Arten von Menüs: Kontext, Menüs, MenuController, MenuControllerLatched, Symbolleiste und ToolWindowToolbar.  
+Definiert ein Menüelement. Dies sind die sechs Arten von Menüs: Kontext, Menüs, MenuController, MenuControllerLatched, Symbolleisten und ToolWindowToolbar.  
   
 ## <a name="syntax"></a>Syntax  
   

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden des Modulfensters | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,15 +26,15 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957183"
 ---
-# <a name="how-to-use-the-modules-window"></a>Gewusst wie: Verwenden des Fensters Module
+# <a name="how-to-use-the-modules-window"></a>Vorgehensweise: Verwenden des Modulfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
@@ -51,7 +46,7 @@ HINWEIS]
   
 -   Auf der **Debuggen** Menü wählen **Windows**, und klicken Sie dann auf **Module**.  
   
-     In der Standardeinstellung die **Module** Fenster nach Modulen Ladereihenfolge sortiert. Sie können sie jedoch nach einer beliebigen Spalte sortieren.  
+     Module werden im Fenster **Module** standardmäßig nach der Ladereihenfolge sortiert. Sie können sie jedoch nach einer beliebigen Spalte sortieren.  
   
 ### <a name="to-sort-by-any-column"></a>So sortieren Sie nach einer beliebigen Spalte  
   
@@ -70,7 +65,7 @@ HINWEIS]
   
 #### <a name="to-change-symbol-load-settings"></a>So ändern Sie Einstellungen zum Laden von Symbolen  
   
-1.  In der **Module** Fenster mit der rechten Maustaste ein Modul.  
+1.  Klicken Sie im Fenster **Module** mit der rechten Maustaste auf ein beliebiges Modul.  
   
 2.  Klicken Sie auf **Symboleinstellungen**.  
   
@@ -78,16 +73,11 @@ HINWEIS]
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>So ändern Sie das Symbolladeverhalten für ein bestimmtes Modul  
   
-1.  In der **Module** Fenster mit der rechten Maustaste in des Moduls.  
+1.  Klicken Sie im Fenster **Module** mit der rechten Maustaste auf das Modul.  
   
 2.  Zeigen Sie auf **automatische Symboleinstellungen laden** , und klicken Sie dann auf **immer manuell laden** oder **Standard**. Änderungen werden erst wirksam, wenn die Debugsitzung neu gestartet wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Unterbrechen der Ausführung](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Unterbrechen der Ausführung](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-
