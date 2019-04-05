@@ -1,13 +1,8 @@
 ---
 title: Analysieren und Modellieren der Architektur | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -36,13 +31,13 @@ ms.assetid: c9f04cfa-72bd-419d-a952-616eed01472e
 caps.latest.revision: 129
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1b7d7f9f478e85229eaa72ab04d12b6b542cbab5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d7a36d2033fabf6562cadfde84db84b06fb63fee
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781035"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001377"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analysieren und Modellieren der Architektur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Stellen Sie sicher, dass Ihre App Benutzeranforderungen erfüllt, indem Sie die 
   
 |||  
 |-|-|  
-|**Visualisieren von Code**:<br /><br /> -Finden Sie unter Organisation und Beziehungen des Codes, indem Sie codezuordnungen erstellen. Sie können Abhängigkeiten zwischen Assemblys, Namespaces, Klassen, Methoden usw. visualisieren.<br />-Finden Sie der Struktur der Klasse und Member für ein bestimmtes Projekt Klassendiagramme aus Code erstellen.<br />-Finden Sie Konflikte zwischen Ihrem Code und dem Entwurf, indem Sie Ebenendiagramme zum Überprüfen von Code erstellen.<br /><br /> **Hinweis**: In dieser Version von Visual Studio wird der Begriff *Code Map* anstelle von *Abhängigkeitsdiagramm*verwendet. Der Begriff *Diagramm* allein bezieht sich in der Regel auf ein gerichtetes Diagramm oder ein DGML-Diagramm (oder -Dokument). Code Maps sind ein spezialisierter Typ von DGML-Diagrammen.|-   [Visualisieren von Code](../modeling/visualize-code.md)<br />-   [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Verstehen der codeabhängigkeiten durch Visualisierung (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252065)<br />-   [Video: Visualisieren der Auswirkungen einer Änderung (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252068)|  
+|**Visualisieren von Code**:<br /><br /> -Finden Sie unter Organisation und Beziehungen des Codes, indem Sie codezuordnungen erstellen. Sie können Abhängigkeiten zwischen Assemblys, Namespaces, Klassen, Methoden usw. visualisieren.<br />-Finden Sie der Struktur der Klasse und Member für ein bestimmtes Projekt Klassendiagramme aus Code erstellen.<br />-Finden Sie Konflikte zwischen Ihrem Code und dem Entwurf, indem Sie Ebenendiagramme zum Überprüfen von Code erstellen.<br /><br /> **Hinweis:** In dieser Version von Visual Studio den Begriff *codezuordnung* dient anstelle von *Abhängigkeitsdiagramm*. Der Begriff *Diagramm* allein bezieht sich in der Regel auf ein gerichtetes Diagramm oder ein DGML-Diagramm (oder -Dokument). Code Maps sind ein spezialisierter Typ von DGML-Diagrammen.|-   [Visualisieren von Code](../modeling/visualize-code.md)<br />-   [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Verstehen der codeabhängigkeiten durch Visualisierung (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252065)<br />-   [Video: Visualisieren der Auswirkungen einer Änderung (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252068)|  
 |**Beschreiben und Kommunizieren von Benutzeranforderungen**:<br /><br /> -Klären Sie User Stories, Geschäftsregeln und andere Anforderungen und sicherzustellen Sie ihre Konsistenz durch Zeichnen von UML-Diagramme Anwendungsfall, Aktivität und Klassendiagramme.|-   [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)<br />-   [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)<br />-   [Video: Verbessern der Architektur durch Modellierung (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252078)|  
 |**Definieren der Architektur**:<br /><br /> -Modell der allgemeinen Struktur des Softwaresystems und der Entwurfsmuster durch Zeichnen von UML-Komponente, Klasse und Sequenzdiagramme.<br />– Definieren und Erzwingen von Einschränkungen für Abhängigkeiten zwischen den Komponenten des Codes, indem Sie Ebenendiagramme erstellen.|-   [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)<br />-   [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md)<br />-   [Video: Verbessern der Architektur durch Modellierung (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252078)<br />-   [Video: Verwenden von Ebenendiagrammen zum Entwerfen und Überprüfen der Architektur (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252073)|  
 |**Überprüfen des Systems anhand der Anforderungen und des beabsichtigten Entwurfs:**<br /><br /> – Definieren Sie Akzeptanztests oder Systemtests auf Grundlage der Anforderungsmodelle. Dies schafft eine enge Beziehung zwischen den Tests und den Anforderungen der Benutzer und erleichtert das Aktualisieren des Systems bei geänderten Anforderungen.<br />-Überprüfen Sie codeabhängigkeiten mit Ebenendiagrammen, die die beabsichtigte Architektur beschreiben und zu verhindern, dass Änderungen, die mit dem Entwurf in Konflikt stehen.|-   [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)<br />-   [Video: Verwenden von Ebenendiagrammen zum Entwerfen und Überprüfen der Architektur (Channel 9)](http://go.microsoft.com/fwlink/?LinkID=252073)|  
@@ -82,8 +77,6 @@ Stellen Sie sicher, dass Ihre App Benutzeranforderungen erfüllt, indem Sie die 
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Neuigkeiten](../modeling/what-s-new-for-design-in-visual-studio.md)   
- [DevOps und Anwendungslebenszyklus-Verwaltung](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
-
-
+- [Neuerungen bei der Modellierung in Visual Studio 2015](../modeling/what-s-new-for-design-in-visual-studio.md)   
+- [DevOps und Anwendungslebenszyklus-Verwaltung](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

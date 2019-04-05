@@ -1,21 +1,17 @@
 ---
 title: Image-Dienst und -Katalog | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774366"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001239"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und -katalog
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +46,9 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 ## <a name="how-it-works"></a>So funktioniert es  
  Der Image-Dienst kann auf ein Bitmapbild geeignet für alle unterstützten UI-Frameworks angeben:  
 
-- WPF: "BitmapSource"  
+- WPF: BitmapSource  
 
-- Windows Forms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
 
 - Win32: HBITMAP  
 
@@ -108,10 +104,10 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 
 |||  
 |-|-|  
-|**Unterelement**|**Definition**|  
+|**Subelement**|**Definition**|  
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle manifest|  
 |GUID|Das Symbol eine GUID darstellt, und Formatieren der GUID übereinstimmen|  
-|Id|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|  
+|ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|  
 |Zeichenfolge|Das Symbol für eines beliebigen Zeichenfolgenwert|  
 
  Symbole sind Groß-/Kleinschreibung beachtet und die referenzierten $(symbol-name)-Syntax verwenden:  
@@ -130,7 +126,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |CommonProgramFiles|Der Wert, der die Variable %CommonProgramFiles%-Umgebung|  
 |LocalAppData|Der Wert der Umgebungsvariablen % LocalAppData% %|  
 |ManifestFolder|Dem Ordner mit der Manifestdatei|  
-|Eigene Dateien|Der vollständige Pfad des Ordners "Eigene Dateien" des aktuellen Benutzers|  
+|MyDocuments|Der vollständige Pfad des Ordners "Eigene Dateien" des aktuellen Benutzers|  
 |ProgramFiles|Der Wert der Umgebungsvariablen % ProgramFiles %|  
 |System|Der Ordner "Windows\System32"|  
 |WinDir|Der Wert der Umgebungsvariable "WinDir"|  
@@ -152,7 +148,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
+|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|  
 
  **Quelle**  
@@ -170,7 +166,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               [Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mithilfe der Anwendung: / / / der Autorität<br />– Ein Ressourcenverweis absolute-Komponente<br />– Ein Pfad zu einer Datei enthält eine systemeigene Ressource                                                                                                                                                                                                                                                                                                               |
-|  Hintergrund   | [Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> *Licht:* die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em>die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> *Hohem Kontrast:* die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* kann die Quelle eines dunklen Hintergrunds im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn Hintergrund ausgelassen oder legen Sie auf *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut. |
+|  Hintergrund   | [Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> *Licht:* Die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> <em>Dunkel:</em>die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastLight:* Die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> *HighContrastDark:* Die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle auf eine im Hintergrund laufende verwendet werden.<br /><br /> Wenn der Hintergrund ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn Hintergrund ausgelassen oder legen Sie auf *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeordneten Elemente aufweisen:  
@@ -178,10 +174,10 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 ||||  
 |-|-|-|  
 |**Element**|**Attribute (alle erforderlich)**|**Definition**|  
-|\<Größe >|Wert|Die Quelle wird für Bilder mit der angegebenen Größe (in Geräteeinheiten) verwendet werden. Das Bild wird quadratisch sein.|  
-|\<SizeRange >|"MinSize", "MaxSize-Wert|Die Quelle wird für Bilder aus "MinSize" auf MaxSize-Wert (in Geräteeinheiten) einschließlich verwendet werden. Das Bild wird quadratisch sein.|  
+|\<Size>|Wert|Die Quelle wird für Bilder mit der angegebenen Größe (in Geräteeinheiten) verwendet werden. Das Bild wird quadratisch sein.|  
+|\<SizeRange>|MinSize, MaxSize|Die Quelle wird für Bilder aus "MinSize" auf MaxSize-Wert (in Geräteeinheiten) einschließlich verwendet werden. Das Bild wird quadratisch sein.|  
 |\<Dimensionen >|Breite, Höhe|Die Quelle wird für Bilder mit der angegebenen Breite und Höhe (in Geräteeinheiten) verwendet werden.|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird einschließlich bei Abbildern für die minimale Breite/Höhe, die maximale Breite/Höhe (in Geräteeinheiten) verwendet werden.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|Die Quelle wird einschließlich bei Abbildern für die minimale Breite/Höhe, die maximale Breite/Höhe (in Geräteeinheiten) verwendet werden.|  
 
  Ein \<Source >-Element kann auch einen optionalen aufweisen \<NativeResource > Unterelement, das definiert eine \<Quelle >, die aus einer nativen Assembly anstatt einer verwalteten Assembly geladen wird.  
 
@@ -193,7 +189,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |Typ|[Erforderlich] Der Typ der systemeigene Ressource entweder XAML oder PNG-Datei|  
-|Id|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
+|ID|[Erforderlich] Der ganzzahlige ID Teil der systemeigene Ressource|  
 
  **ImageList**  
 
@@ -210,7 +206,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |-|-|  
 |**Attribut**|**Definition**|  
 |GUID|[Erforderlich] Der GUID-Teil der Image-moniker|  
-|Id|[Erforderlich] Die ID-Teil der Image-moniker|  
+|ID|[Erforderlich] Die ID-Teil der Image-moniker|  
 |Extern|[Optional, standardmäßig "false"] Gibt an, ob der Image-Moniker ein Bild in das aktuelle Manifest verweist.|  
 
  Der Moniker für das enthaltene Image keine auf ein Bild in das aktuelle Manifest definiert. Wenn das eigenständige Image aus der Abbildbibliothek gefunden werden kann, wird ein leeres Platzhalterbild an seiner Stelle verwendet werden.  
@@ -244,7 +240,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 
     -   Erforderlich, wenn Sie die **BrushToColorConverter** für die ImageThemingUtilities. **ImageBackgroundColor** in Ihrer WPF-Benutzeroberfläche  
 
--   **Microsoft.VisualStudio.Shell. \<VSVersion >.0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
     -   Erforderlich, wenn Sie die **IVsUIObject** Typ  
 
@@ -655,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Aktualisieren Sie Ihren Code, um den Dienst Images zu verwenden, um Moniker über die aktualisierte Zuordnung anzufordern. (Dies kann bedeuten, Aktualisieren auf **CrispImages** für verwalteten Code oder Anfordern von HBITMAPs nicht oder HICONs aus der Image-Dienst und sie für systemeigenen Code übergeben.)  
 
 ## <a name="testing-your-images"></a>Testen Ihre images  
- Sie können das Bildbibliotheks-Viewer-Tool verwenden, testen Sie Ihr Image-Manifeste, um sicherzustellen, dass alles richtig erstellt wurde. Sie finden das Tool in der [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Dokumentation zu diesem und anderen Tools finden Sie [hier](http://aka.ms/VSImageThemeTools).  
+ Sie können das Bildbibliotheks-Viewer-Tool verwenden, testen Sie Ihr Image-Manifeste, um sicherzustellen, dass alles richtig erstellt wurde. Sie finden das Tool in der [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Dokumentation zu diesem und anderen Tools finden Sie [hier](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
 
@@ -969,7 +965,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphReference||ClassMethodReference|  
         |GlyphRecursion||Rekursion|  
         |GlyphXmlItem||Tag|  
-        |GlyphJSharpProject||Dokumentensammlung|  
+        |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||Dokument|  
         |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||CallTo|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

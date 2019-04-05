@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "57870272"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
+
 Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Dienste, Schemas, Hilfsprogramme und ähnliches.
 
 ## <a name="extensibility-architecture"></a>Architektur der Erweiterbarkeit
@@ -83,11 +84,12 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
  Das Herzstück von einem Sprachdienst sind ein Parser und Scanner. Scanner (oder Lexer) teilt eine Quelldatei in Elemente, die als Token bezeichnet werden, und ein Parser stellt die Beziehungen zwischen diesen Token her. Wenn Sie einen Sprachdienst erstellen, müssen Sie der Parser und die Überprüfung implementieren, damit Visual Studio die Token und die Grammatik der Sprache verstehen können. Sie können die Dienste für verwalteten oder nicht verwalteten Sprachen erstellen. Weitere Informationen finden Sie unter [Erweiterbarkeit von Legacysprachdiensten Legacy](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projekte
- In Visual Studio sind Projekte die Container, mit denen Entwickler zum Organisieren und den Quellcode und weitere Ressourcen zu erstellen. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, indem Projekttypen, Projektuntertypen und benutzerdefinierte Tools.
 
- Projekte können auch in einer Lösung erfasst werden, eine Gruppierung von ein oder mehrere Projekte, die zusammenarbeiten, um eine Anwendung zu erstellen. Informationen zum Projekt und zum Status, die der Projektmappe gehört wird in zwei Projektmappendateien, die textbasierte Projektmappendatei (.sln) und die binären Lösung Benutzeroptionsdatei (SUO) gespeichert. Diese Dateien sind ähnlich wie die (vbg)-Gruppendateien, die in früheren Versionen von verwendeten [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], und der Arbeitsbereich (.dsw) und der Benutzer "Optionen" (.opt)-Dateien, die in früheren Versionen von verwendeten [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+In Visual Studio sind Projekte die Container, mit denen Entwickler zum Organisieren und den Quellcode und weitere Ressourcen zu erstellen. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, indem Projekttypen, Projektuntertypen und benutzerdefinierte Tools.
 
- Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions.md).
+Projekte können auch gesammelt werden eine *Lösung*, dies ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Informationen zum Projekt und zum Status, die der Projektmappe gehört befindet sich in zwei Projektmappendateien, die dem textbasierten [Projektmappendatei (.sln)](solution-dot-sln-file.md) und den binären [Lösung Benutzeroptionsdatei (.suo)](solution-user-options-dot-suo-file.md). Diese Dateien sind ähnlich wie die (vbg)-Gruppendateien, die in früheren Versionen von Visual Basic und den Arbeitsbereich (.dsw) verwendet wurden und die Benutzer-Optionen (.opt)-Dateien, die in früheren Versionen von C++ verwendet wurden.
+
+Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
  Visual Studio enthält die vordefinierten Projektvorlagen und Projektelementvorlagen. Sie können stellen Sie außerdem Ihre eigenen Vorlagen oder Vorlagen aus der Community erhalten und diese dann in Visual Studio integrieren. Die [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) ist die Anlaufstelle für Vorlagen und Erweiterungen.

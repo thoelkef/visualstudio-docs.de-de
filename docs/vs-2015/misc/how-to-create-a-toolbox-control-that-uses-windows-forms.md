@@ -1,29 +1,24 @@
 ---
-title: 'Vorgehensweise: erstellen ein Toolbox-Steuerelements, das Windows Forms verwendet | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen ein Toolbox-Steuerelements, das Windows Forms verwendet | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263717"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001436"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Gewusst wie: Erstellen eines Toolbox-Steuerelements, das Windows Forms verwendet
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Vorgehensweise: Erstellen eines Toolbox-Steuerelements, das Windows Forms verwendet
 Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] enthalten ist, können Sie die Windows Forms-Steuerelemente erstellen, die beim Installieren der Extension automatisch zur **Toolbox** hinzugefügt werden. Dieses Thema veranschaulicht, wie Sie die Vorlage verwenden, um ein **Toolbox** -Steuerelement zu erstellen, das Sie an andere Benutzer verteilen können.  
   
 > [!NOTE]
@@ -92,7 +87,7 @@ Mit der Vorlage „Windows Forms-Toolbox-Steuerelement“, die im [!INCLUDE[vssd
   
 2.  Laden Sie die VSIX-Datei in ein Netzwerk oder auf einer Website hoch.  
   
-     Wenn Sie die Datei auf die Website [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) hochladen, können andere Benutzer den **Extension-Manager** in Visual Studio zum Suchen nach dem Steuerelement sowie zum Installieren des Steuerelements verwenden.  
+     Wenn Sie die Datei zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website, andere Benutzer können **Erweiterungs-Manager** in Visual Studio für das Steuerelement suchen und installieren Sie es.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)

@@ -1,12 +1,9 @@
 ---
 title: Laufzeit-Textgenerierung mithilfe von T4-Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920130"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001370"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Vererbung zwischen Laufzeit-Textvorlagen  
  Sie können Freigeben von Inhalten zwischen Laufzeitvorlagen durch Schreiben einer Textvorlage Basisklasse, die kann abstrakt sein. Verwenden der `inherits` Parameter, der die `<@#template#>` Richtlinie auf eine andere Runtime-Vorlagenklasse.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Base-Methoden  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Basismethoden  
  Beachten Sie, dass im Muster, die in das folgende Beispiel verwendet die folgenden Punkte:  
   
 - Die Basisklasse `SharedFragments` definiert die Methoden in Klassenfunktionsblöcken `<#+ ... #>`.  
@@ -375,7 +372,7 @@ End of common template.
   
 ```  
   
- **"DerivedTemplate1.tt":**  
+ **DerivedTemplate1.tt:**  
   
 ```csharp  
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Siehe auch  
  [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)   
  [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)   
- [Grundlegendes zur T4: Vorverarbeitete Textvorlagen von Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Grundlegendes zur T4: Vorverarbeitete Textvorlagen von Oleg Sych](https://github.com/olegsych/T4Toolbox)

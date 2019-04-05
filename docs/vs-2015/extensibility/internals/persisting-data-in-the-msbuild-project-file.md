@@ -1,33 +1,28 @@
 ---
 title: Beibehalten von Daten in der MSBuild-Projektdatei | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 059ddc7b9b8fe0de06530af704bb5f7e271f6744
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d6c4318ff23fecdaf312533c7b92712db291fee8
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749640"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59001074"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Beibehalten von Daten in der MSBuild-Projektdatei
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Einem Projektuntertyp untertypspezifischen Daten in die Projektdatei für die spätere Verwendung beibehalten werden müssen. Project-Datei-Persistenz wird von einem Projektuntertyp verwendet, um die folgenden Anforderungen erfüllen:  
   
-1.  Beibehalten von Daten, die als Teil der Erstellung des Projekts verwendet. (Weitere Informationen auf der Microsoft Build Engine finden Sie unter [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Auf Builds bezogene Informationen folgende Möglichkeiten:  
+1.  Beibehalten von Daten, die als Teil der Erstellung des Projekts verwendet. (Weitere Informationen auf der Microsoft Build Engine finden Sie unter [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Auf Builds bezogene Informationen folgende Möglichkeiten:  
   
     1.  Configuration-unabhängige Daten. D. h. Daten, die in MSBuild-Elemente mit leeren oder fehlenden Bedingungen gespeichert.  
   
@@ -85,4 +80,3 @@ Einem Projektuntertyp untertypspezifischen Daten in die Projektdatei für die sp
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektuntertypen](../../extensibility/internals/project-subtypes.md)
-
