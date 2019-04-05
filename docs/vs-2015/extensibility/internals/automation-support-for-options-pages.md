@@ -1,27 +1,22 @@
 ---
 title: Automatisierungsunterstützung für Optionsseiten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6205d01547f7243234facfb43db80303c9b71c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7cb2634f5a16c62222cf360065cae0c22aef6667
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956967"
 ---
 # <a name="automation-support-for-options-pages"></a>Automatisierungsunterstützung für Optionsseiten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ VSPackages, bieten benutzerdefinierte **Optionen** Dialogfelder die **Tools** (S
   
 ## <a name="see-also"></a>Siehe auch  
  [Verfügbarmachen von Projektobjekten](../../extensibility/internals/exposing-project-objects.md)
-

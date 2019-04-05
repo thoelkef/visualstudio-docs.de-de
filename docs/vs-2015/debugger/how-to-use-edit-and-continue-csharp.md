@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Verwenden von bearbeiten und Fortfahren (c#) | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Bearbeiten und Fortfahren verwenden (C#) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4106a8bcaec8890192fdc33b9db0d66c12d8b07d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958091"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ [C#]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen.  
@@ -57,9 +52,6 @@ Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen 
      Die Einstellungen werden beim Neustarten der Debugsitzung aktiv.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bearbeiten Sie und fortfahren Sie (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [Unterstützte Codeänderungen (c#)](../debugger/supported-code-changes-csharp.md)   
  [Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)
-
-
-

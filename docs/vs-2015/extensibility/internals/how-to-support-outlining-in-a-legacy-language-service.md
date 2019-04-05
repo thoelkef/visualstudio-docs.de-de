@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: unterstützen der Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Unterstützen der Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb596c8fbc7ab3c354b5b8d3e2a116ee752f06a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2177ad8080f549f8f1de2736c34103979d8828f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957811"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Vorgehensweise: unterstützen der Gliederung in einem Legacysprachdienst
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Vorgehensweise: Unterstützen der Gliederung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Gliederung wird zum Erweitern oder reduzieren die verschiedene Regionen des Texts. Die Möglichkeit Gliederung wird verwendet, kann durch verschiedene Sprachen unterschiedlich definiert werden. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md).  
@@ -53,6 +48,5 @@ Gliederung wird zum Erweitern oder reduzieren die verschiedene Regionen des Text
 >  Achten Sie darauf, dass zum Ausblenden von neue-Zeile-Zeichen. Ausgeblendeten Text sollten ab dem Anfang der ersten Zeile bis zum letzten Zeichen der letzten Zeile in einem Abschnitt, sodass das abschließende neue-Zeile-Zeichen sichtbar erweitern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: unterstützen der ausgeblendeten Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
-
+ [Vorgehensweise: Unterstützen der ausgeblendeten Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [Vorgehensweise: Geben Sie die Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

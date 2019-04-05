@@ -1,11 +1,8 @@
 ---
 title: 'Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomat-Workflows (Vorgängerversion) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - console applications, state machine workflows
@@ -15,13 +12,13 @@ ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a879838cceecc5229abf2c09b76208e4f42c5db8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb6026def60be27535843a51d78c4c05657d385f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956980"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendung für Zustandsautomatworkflows mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] zu erstellen, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -53,4 +50,4 @@ Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendu
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Legacyworkflowprojekten](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
+ [Vorgehensweise: Create a State Machine Workflow Library (Legacy) (Vorgehensweise: Erstellen einer Bibliothek für Zustandsautomatworkflows (Vorgängerversion))](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)

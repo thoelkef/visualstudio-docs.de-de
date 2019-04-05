@@ -1,12 +1,9 @@
 ---
 title: Hinzufügen von Validierungen zu einem n-Tier-Dataset | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,21 +17,20 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960561"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Hinzufügen von Validierungen zu einem N-Tier-Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt ist, grundsätzlich auf die gleiche Art hinzugefügt wie einem DataSet in einer einzelnen Datei (in einem einzelnen Projekt). Es wird empfohlen, die Datenvalidierung während des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses und/oder des <xref:System.Data.DataTable.RowChanging>-Ereignisses einer Datentabelle auszuführen.  
   
- Die [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md) bietet Funktionen zum Erstellen von partiellen Klassen, die Sie hinzufügen können, Benutzercode für Spalten- und Zeile – ändern Sie die Ereignisse der Datentabellen im Dataset. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) oder [partielle Klassen und Methoden](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+Der DataSet-Designer stellt die Funktionalität zum Erstellen von partiellen Klassen, die Sie hinzufügen können, Benutzercode für Spalten- und Zeilen-wechselnde Ereignisse der Datentabellen im Dataset. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) oder [partielle Klassen und Methoden](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 >  Bei einer Abtrennung der Datasets von TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.  
@@ -43,7 +39,7 @@ Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt i
 >  Vom DataSet-Designer werden in C# nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Sie müssen manuell einen Ereignishandler erstellen und den Ereignishandler mit dem zugrunde liegenden Ereignis verknüpfen. Die folgenden Verfahren wird beschrieben, wie die erforderlichen Ereignishandler in Visual Basic und c# zu erstellen.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges für einzelne Spalten  
- Validieren Sie die Werte in einzelnen Spalten durch Behandeln des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis wird ausgelöst, wenn ein Wert in einer Spalte geändert wird. Erstellen Sie einen Ereignishandler für die <xref:System.Data.DataTable.ColumnChanging> Ereignis durch Doppelklicken auf die gewünschte Spalte auf die [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md).  
+ Validieren Sie die Werte in einzelnen Spalten durch Behandeln des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis wird ausgelöst, wenn ein Wert in einer Spalte geändert wird. Erstellen Sie einen Ereignishandler für die <xref:System.Data.DataTable.ColumnChanging> Ereignis durch Doppelklicken auf die gewünschte Spalte im DataSet.  
   
  Beim ersten Doppelklicken auf eine Spalte wird vom Designer ein Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis erstellt. Ein `If…Then` Anweisung wird auch erstellt, die für die spezifische Spalte überprüft. Beispielsweise wird der folgende Code generiert, wenn Sie auf die RequiredDate-Spalte der Tabelle Northwind Orders doppelklicken:  
   
@@ -62,7 +58,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>So fügen Sie Validierungen bei Änderung einzelner Spaltenwerte hinzu  
   
-1.  Öffnen Sie das Dataset in den [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md) durch Doppelklicken auf die **XSD** Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Öffnen Sie das Dataset im Designer durch Doppelklicken auf die **XSD** Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Doppelklicken Sie auf die zu validierende Spalte. Durch diese Aktion wird der <xref:System.Data.DataTable.ColumnChanging>-Ereignishandler erstellt.  
   
@@ -117,11 +113,11 @@ End Sub
   
  Wenn die Bestellungen eingegeben werden, wird durch die Validierung sichergestellt, dass keine Bestellung mit einem RequiredDate eingegeben wird, das vor dem OrderDate liegt oder mit diesem übereinstimmt. In diesem Beispiel müssen die Werte für die Spalten RequiredDate und OrderDate verglichen werden, es ist daher nicht sinnvoll, eine einzelne Spaltenänderung zu überprüfen.  
   
- Erstellen Sie einen Ereignishandler für die <xref:System.Data.DataTable.RowChanging> Ereignis durch Doppelklicken auf den Tabellennamen in der Titelleiste der Tabelle auf die [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md).  
+ Erstellen Sie einen Ereignishandler für die <xref:System.Data.DataTable.RowChanging> Ereignis durch Doppelklicken auf den Tabellennamen in der Titelleiste der Tabelle.  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>So fügen Sie Validierungen bei Änderung ganzer Zeilen hinzu  
   
-1.  Öffnen Sie das Dataset in den [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md) durch Doppelklicken auf die **XSD** Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Öffnen Sie das Dataset im Designer durch Doppelklicken auf die **XSD** Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Doppelklicken Sie im Designer auf die Titelleiste der Datentabelle.  
   
@@ -183,4 +179,3 @@ End Sub
  [Übersicht über N-Tier-Data-Anwendungen](../data-tools/n-tier-data-applications-overview.md)   
  [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)
-

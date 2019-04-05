@@ -1,27 +1,22 @@
 ---
 title: Übersicht der Konfigurationsoptionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959009"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Projekte in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützen mehrer
 |Konfigurationsname|Plattform: Win32|Plattform: Win64|  
 |------------------------|----------------------|----------------------|  
 |Debug|\<Debug-Win32-Einstellungen >|\<Debug-Win64-Einstellungen >|  
-|Release|\<Einstellungen für die Win32-Version >|\<Releaseeinstellungen Win64 >|  
+|Freigabe|\<Einstellungen für die Win32-Version >|\<Releaseeinstellungen Win64 >|  
 |MyConfig|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|  
   
 > [!NOTE]
@@ -80,4 +75,3 @@ Konfigurationsschnittstellen
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
  [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)
-

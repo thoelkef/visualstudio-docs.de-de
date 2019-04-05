@@ -1,14 +1,9 @@
 ---
 title: Registrieren von Projekt- und Elementvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957473"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|name|Typ|Beschreibung|  
+|Name|Typ|Beschreibung|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Der Standardname der Projekte dieser Art.|  
 |DisplayName|REG_SZ|Ressourcen-ID mit dem Namen aus der Satelliten-DLL abgerufen werden, die unter Pakete registriert werden.|  
@@ -62,7 +57,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Typ|Beschreibung|  
+|Name|Typ|Beschreibung|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Ressourcen-ID für Element hinzufügen-Vorlagen.|  
 |TemplatesDir|REG_SZ|Pfad der Projektelemente angezeigt, in das Dialogfeld für die **neues Element hinzufügen** Assistenten.|  
@@ -89,7 +84,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
 "SortPriority"=dword:00000064  
 ```  
   
-|name|Typ|Beschreibung|  
+|Name|Typ|Beschreibung|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Stellt den Filter eine häufig verwendete Filter in der **in Dateien suchen** Dialogfeld. Allgemeine Filter werden in der Filterliste vor Filtern, die nicht so häufig gekennzeichnet aufgeführt.|  
 |CommonOpenFilesFilter|REG_DWORD|Stellt den Filter eine häufig verwendete Filter in der **geöffnete Datei** Dialogfeld. Allgemeine Filter werden in der Filterliste vor Filtern, die nicht so häufig gekennzeichnet aufgeführt.|  
@@ -117,7 +112,7 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
   
  \Form  
   
- \Web Seite  
+ \Web Page  
   
  \HelperFiles (enthält die in der Projektelemente mit mehreren Dateien verwendeten Dateien)  
   
@@ -128,4 +123,3 @@ Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und P
  [Assistenten](../../extensibility/internals/wizards.md)   
  [Lokalisieren von Anwendungen](../../ide/localizing-applications.md)   
  [CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

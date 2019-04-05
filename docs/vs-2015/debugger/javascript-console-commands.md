@@ -1,14 +1,9 @@
 ---
 title: JavaScript-Konsolenbefehle | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d62754dc881e42b2beada17379def19eb96abcda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959075"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Überprüfen von Objekten im JavaScript-Konsolenfenster  
  Über das JavaScript-Konsolenfenster können Sie mit jedem Objekt interagieren, das im Bereich enthalten ist. Um ein Objekt, das außerhalb des gültigen Bereichs liegt, im Konsolenfenster zu überprüfen, führen Sie `console.log` , `console.dir`oder andere Befehle aus dem Code aus. Alternativ können Sie aus dem Konsolenfenster mit dem Objekt interagieren, während es innerhalb des gültigen Bereichs liegt. Dazu müssen Sie einen Haltepunkt im Code festlegen (**Haltepunkt** > **Insert Haltepunkt**.)  
   
-##  <a name="ConsoleLog"></a> Formatieren der Ausgabe von "Console.log"  
+##  <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
  Wenn Sie mehrere Argumente an `console.log`übergeben, behandelt die Konsole die Argumente als Array und verkettet die Ausgabe.  
   
 ```javascript  
@@ -144,7 +139,4 @@ console.log("%s is %f years old!", user.first, user.age);
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958317"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Gewusst wie: Angeben der mit ClickOnce veröffentlichten Dateien
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung, alle nicht-Code-Dateien im Projekt zusammen mit der Anwendung bereitgestellt werden. In einigen Fällen möglicherweise nicht möchten oder müssen bestimmte Dateien zu veröffentlichen, oder möchten Sie möglicherweise bestimmte Dateien, die basierend auf Bedingungen zu installieren. Visual Studio bietet die Funktionen zum Ausschließen von Dateien, kennzeichnen von Dateien als Datendateien oder erforderliche Komponenten und Erstellen von Dateigruppen zur bedingten Installation.  
@@ -45,7 +40,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 -   Datendateien, z. B. SQL-Datenbank (MDF- und MDB) und XML-Dateien werden standardmäßig als Datendateien gekennzeichnet.  
   
--   Verweise auf Assemblys (DLL-Dateien) werden wie folgt gekennzeichnet, wenn Sie den Verweis hinzufügen: Wenn **lokale Kopie** ist **"false"**, standardmäßig als erforderliche Assembly markiert ist (**erforderliche () Auto)**), die muss im GAC vorhanden sein, bevor die Anwendung installiert wird. Wenn **lokale Kopie** ist **"true"**, die Assembly ist standardmäßig als eine Anwendungsassembly gekennzeichnet (**einschließen (Auto)**) und in den Ordner der Anwendung, bei der Installation kopiert werden. Ein COM-Verweis wird angezeigt, der **Anwendungsdateien** Dialogfeld Feld (als OCX-Datei) nur, wenn die **isoliert** -Eigenschaftensatz auf **"true"**. Standardmäßig werden sie berücksichtigt.  
+-   Verweise auf Assemblys (DLL-Dateien) werden wie folgt gekennzeichnet, wenn Sie den Verweis hinzufügen: Wenn **lokale Kopie** ist **"false"**, er ist standardmäßig als erforderliche Assembly gekennzeichnet (**Voraussetzung (Auto)**), die muss im GAC vorhanden sein, bevor die Anwendung installiert wird. Wenn **lokale Kopie** ist **"true"**, die Assembly ist standardmäßig als eine Anwendungsassembly gekennzeichnet (**einschließen (Auto)**) und in den Ordner der Anwendung, bei der Installation kopiert werden. Ein COM-Verweis wird angezeigt, der **Anwendungsdateien** Dialogfeld Feld (als OCX-Datei) nur, wenn die **isoliert** -Eigenschaftensatz auf **"true"**. Standardmäßig werden sie berücksichtigt.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Dateien im Dialogfeld für die Dateien der Anwendung hinzufügen  
   
@@ -57,7 +52,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
@@ -69,7 +64,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
@@ -81,7 +76,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
@@ -93,7 +88,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
@@ -110,7 +105,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
+2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
 3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
@@ -123,7 +118,4 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
- [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

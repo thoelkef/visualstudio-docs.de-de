@@ -1,14 +1,9 @@
 ---
-title: 'Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann nicht an diesem Computer herstellen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann keine rückverbindung mit diesem Computer Verbindung herstellen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 89ecf99d-66bf-4da0-a840-aa95b0be1702
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f1e457829f7b6ab5050a02bd8f20e1c51d5df14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 833beb91c35c35d29df45a2e8caa31aae173bb27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958837"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio-Remotedebugdienst auf dem Zielcomputer kann keine Rückverbindung mit diesem Computer herstellen
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benutzerkonto ausgeführt wird, das beim Versuch, eine Verbindung zu dem Computer herzustellen, von dem aus Sie debuggen, nicht authentifiziert werden kann.  
@@ -47,7 +42,7 @@ Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benu
   
 -   Das Konto, unter dem Sie den Visual Studio-Remotedebugdienst ausführen, sollte Administratorrechte auf dem Remotecomputer besitzen, damit alle Prozesse gedebuggt werden können.  
   
--   Das Konto muss auch erteilt werden die `Log on as a service` Berechtigungen auf dem Remotecomputer, der verwendet die **Local Security Policy** Verwaltungstool.  
+-   Dem Konto muss auf dem Remotecomputer außerdem mithilfe des Verwaltungstools **Lokale Sicherheitsrichtlinie** die Berechtigung `Log on as a service` gewährt werden.  
   
 -   Bei Verwendung eines lokalen Kontozugriffs auf den Computer müssen Sie den Visual Studio-Remotedebugdienst unter einem lokalen Konto verwenden.  
   
@@ -59,31 +54,28 @@ Dieser Fehler besagt, dass der Visual Studio-Remotedebugdienst unter einem Benu
   
 ### <a name="to-add-log-on-as-a-service-privilege"></a>So fügen Sie die Berechtigung "Als Dienst anmelden" hinzu  
   
-1.  Auf der **starten** Menü wählen **Systemsteuerung**.  
+1.  Klicken Sie im Menü **Start** auf **Systemsteuerung**.  
   
-2.  Wählen Sie in der Systemsteuerung **klassische Ansicht**, falls erforderlich.  
+2.  Wählen Sie in der Systemsteuerung die **Klassische Ansicht** aus (falls erforderlich).  
   
 3.  Doppelklicken Sie auf **Verwaltung**.  
   
-4.  Doppelklicken Sie im Fenster Verwaltung auf **Local Security Policy**.  
+4.  Doppelklicken Sie im Fenster „Verwaltung“ auf **Lokale Sicherheitsrichtlinie**.  
   
-5.  In der **lokale Sicherheitseinstellungen** Fenster, erweitern Sie die **lokale Richtlinien** Ordner.  
+5.  Erweitern Sie im Fenster **Lokale Sicherheitseinstellungen** den Ordner **Lokale Richtlinien**.  
   
 6.  Klicken Sie auf **Zuweisen von Benutzerrechten**.  
   
-7.  In der **Richtlinie** Spalte doppelklicken Sie auf **Anmelden als Dienst** an der aktuellen lokalen Gruppenrichtlinien-Zuweisungen in der **Anmelden als Dienst** Dialogfeld.  
+7.  Doppelklicken Sie in der Spalte **Richtlinie** auf **Anmelden als Dienst**, um sich im Dialogfeld **Anmelden als Dienst** die aktuell zugewiesenen lokalen Gruppenrichtlinien anzeigen zu lassen.  
   
-8.  Um neue Benutzer hinzuzufügen, klicken Sie auf die **Benutzer oder Gruppe hinzufügen** Schaltfläche.  
+8.  Klicken Sie auf die Schaltfläche **Benutzer oder Gruppe hinzufügen**, um neue Benutzer hinzuzufügen.  
   
-9. Wenn Sie nach dem Hinzufügen der Benutzer sind, klicken Sie auf **OK**.  
+9. Klicken Sie auf **OK**, wenn Sie fertig sind.  
   
 ### <a name="to-work-around-this-error"></a>So umgehen Sie diesen Fehler  
   
 -   Führen Sie den Remotedebugmonitor als Anwendung statt als Dienst aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

@@ -1,23 +1,20 @@
 ---
 title: MSI- und VSIX-Bereitstellung einer DSL | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958050"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
   
 |Methode|Vorteile|  
 |------------|--------------|  
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung)|Sehr leicht bereitzustellen: kopieren, und führen Sie die **VSIX** Datei aus dem DslPackage-Projekt.<br /><br /> Weitere Informationen finden Sie unter [installieren und Deinstallieren eine DSL mithilfe der VSX](#Installing).|  
+|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung)|Sehr leicht bereitzustellen: Kopieren Sie aus, und führen Sie die **VSIX** Datei aus dem DslPackage-Projekt.<br /><br /> Weitere Informationen finden Sie unter [installieren und Deinstallieren eine DSL mithilfe der VSX](#Installing).|  
 |MSI-Datei (Installationsdatei)|– Ermöglicht es dem Benutzer zum Öffnen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durch Doppelklicken auf eine DSL-Datei.<br />: Ordnet ein Symbol mit dem Typ des DSL-Datei auf dem Zielcomputer an.<br />: Ordnet ein XSD-Schema (XML-Schema) mit dem DSL-Dateityp an. Dadurch werden Warnungen vermieden, wenn in die Datei geladen werden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Sie müssen ein Setup-Projekt zu Ihrer Lösung erstellen Sie eine MSI-Datei hinzufügen.<br /><br /> Weitere Informationen finden Sie unter [mithilfe einer MSI-Datei für die Bereitstellung einer DSL](#msi).|  
   
 ##  <a name="Installing"></a> Installieren und Deinstallieren eine DSL mithilfe der VSX  
@@ -141,6 +138,3 @@ Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf
 2.  Deinstallieren Sie die DSL ein.  
   
 3.  Starten Sie Visual Studio neu.
-
-
-

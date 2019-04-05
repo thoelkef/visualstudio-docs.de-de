@@ -1,14 +1,9 @@
 ---
 title: Codeanalyse-Regelsätze ressourcensatzverweis | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959882"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Codeanalyse-Regelsatzreferenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,8 +39,5 @@ Beim Konfigurieren der Codeanalyse für Projekte mit verwaltetem Code in [!INCLU
 |[Regelsatz für gemischte Mindestregeln](../code-quality/mixed-minimum-rules-rule-set.md)|Diese Regeln zielen auf die kritischsten Probleme in C++-Projekten mit Common Language Runtime-Unterstützung ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.|  
 |[Regelsatz für gemischte empfohlene Mindestregeln](../code-quality/mixed-recommended-rules-rule-set.md)|Diese Regeln zielen auf die häufigsten und kritischsten Probleme in C++-Projekten mit Common Language Runtime-Unterstützung ab, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.  Dieser Regelsatz ist für die Konfiguration mit Visual Studio Professional Edition und höher vorgesehen.|  
 |[Regelsatz für systemeigene Mindestregeln](../code-quality/native-minimum-rules-rule-set.md)|Diese Regeln zielen auf die kritischsten Probleme in Ihrem nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|  
-|[Regelsatz für systemeigene empfohlene Regeln](../code-quality/native-recommended-rules-rule-set.md)|Diese Regeln zielen auf die kritischsten und häufigsten Probleme im nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürze.  Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.  Dieser Regelsatz ist für die Verwendung mit Visual Studio Professional Edition und höher vorgesehen.|  
+|[Regelsatz für systemeigene empfohlene Regeln](../code-quality/native-recommended-rules-rule-set.md)|Diese Regeln zielen auf die kritischsten und häufigsten Probleme im systemeigenen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürze.  Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.  Dieser Regelsatz ist für die Verwendung mit Visual Studio Professional Edition und höher vorgesehen.|  
 |[Regelsatz für Sicherheitsregeln für verwalteten Code](../code-quality/security-rules-rule-set-for-managed-code.md)|Dieser Regelsatz enthält alle Microsoft-Sicherheitsregeln. Binden Sie diesen Regelsatz mit ein, um die Anzahl gemeldeter potenzieller Sicherheitsprobleme zu maximieren.|
-
-
-

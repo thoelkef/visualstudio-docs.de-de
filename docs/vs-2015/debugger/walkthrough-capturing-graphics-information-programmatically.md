@@ -1,25 +1,20 @@
 ---
-title: 'Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erfassen von Grafikinformationen programmgesteuert | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958851"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 -   Aufzeichnen von Grafikinformationen  
   
 > [!NOTE]
->  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um Erfassungsfunktionalität bereitzustellen. Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Deshalb ist es unter Windows 8.1 nicht mehr erforderlich, dass Sie die Remotetools für programmgesteuerte Erfassung installieren.  
+>  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um Erfassungsfunktionalität bereitzustellen. Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Deshalb ist es unter Windows 8.1 nicht mehr erforderlich, dass Sie die Remotetools für programmgesteuerte Erfassung installieren.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
  Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Bestandteile des Windows 8.1 SDK.  
@@ -148,14 +143,14 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 -   Verwenden der `CaptureCurrentFrame` -API  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Vorbereiten Ihres Computers für die Verwendung der programmgesteuerten Erfassung  
- Die API für die programmgesteuerte Erfassung verwendet Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um die Erfassungsfunktionen bereitzustellen. Auf dem Computer, auf dem die App läuft, müssen die Remote-Tools installiert sein, auch wenn Sie die programmgesteuerte Erfassung auf Ihrem lokalen Computer anwenden. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss nicht laufen, wenn Sie die programmgesteuerte Erfassung auf einem lokalen Computer durchführen.  
+ Die API für die programmgesteuerte Erfassung verwendet Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um die Erfassungsfunktionen bereitzustellen. Auf dem Computer, auf dem die App läuft, müssen die Remote-Tools installiert sein, auch wenn Sie die programmgesteuerte Erfassung auf Ihrem lokalen Computer anwenden. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss nicht laufen, wenn Sie die programmgesteuerte Erfassung auf einem lokalen Computer durchführen.  
   
  Um die APIs für die Remote-Erfassung in einer App zu verwenden, die auf einem Computer läuft, müssen Sie zuerst die Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf diesem Computer installieren. Verschiedene Versionen der Remote-Tools unterstützen verschiedene Hardwareplattformen. Informationen zur Installation der Remotetools finden Sie auf der Download-Website von Microsoft auf der [Downloadseite für Remotetools](http://go.microsoft.com/fwlink/p/?LinkId=246691) .  
   
  Alternativ werden durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die erforderlichen Komponenten zur Durchführung der Remote-Erfassung für 32-Bit-Apps installiert.  
   
 > [!NOTE]
->  Da die meisten Windows-Desktop-Apps – darunter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] – unter [!INCLUDE[win8](../includes/win8-md.md)] für ARM-Geräte nicht unterstützt werden, ist die Verwendung von Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zusammen mit der API für die programmgesteuerte Erfassung der einzige Weg, um Grafikdiagnosen auf ARM-Geräten zu erfassen.  
+>  Da die meisten Windows-Desktop-Apps – darunter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– unter [!INCLUDE[win8](../includes/win8-md.md)] für ARM-Geräte nicht unterstützt werden, ist die Verwendung von Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zusammen mit der API für die programmgesteuerte Erfassung der einzige Weg, um Grafikdiagnosen auf ARM-Geräten zu erfassen.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
  Sie müssen zunächst die benötigten Grafikinformationen erfassen, um die Grafikdiagnosetools verwenden zu können. Sie können die Informationen mithilfe der `CaptureCurrentFrame` -API programmgesteuert erfassen.  
@@ -190,10 +185,10 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   Für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -apps, den Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und -app und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamilienname*\TempState\\. Für desktop-apps, der Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
+>  Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
   
 ### <a name="capturing-the-graphics-information"></a>Erfassung der Grafikinformationen  
- Wenn Sie die App für die programmgesteuerte Erfassung vorbereitet und optional den Speicherort und den Namen der Grafikprotokolldatei konfiguriert haben, erstellen Sie die App, und führen Sie sie dann aus, oder debuggen Sie sie, um die Daten zu erfassen; starten Sie nicht die Grafikdiagnose aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], wenn Sie die API für die programmgesteuerte Erfassung verwenden. Das Grafikprotokoll wird in den von Ihnen angegebene Speicherort geschrieben. Wenn Sie diese Version des Protokolls behalten möchten, verschieben Sie sie an einen anderen Speicherort; andernfalls wird sie überschrieben, wenn Sie die App erneut ausführen.  
+ Wenn Sie die App für die programmgesteuerte Erfassung vorbereitet und optional den Speicherort und den Namen der Grafikprotokolldatei konfiguriert haben, erstellen Sie die App, und führen Sie sie dann aus, oder debuggen Sie sie, um die Daten zu erfassen; starten Sie nicht die Grafikdiagnose aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wenn Sie die API für die programmgesteuerte Erfassung verwenden. Das Grafikprotokoll wird in den von Ihnen angegebene Speicherort geschrieben. Wenn Sie diese Version des Protokolls behalten möchten, verschieben Sie sie an einen anderen Speicherort; andernfalls wird sie überschrieben, wenn Sie die App erneut ausführen.  
   
 > [!TIP]
 >  Sie können Grafikinformationen auch während der programmgesteuerten Erfassung weiterhin manuell erfassen – drücken Sie einfach **Bildschirm drucken**, während die App aufgerufen ist. Sie können dieses Verfahren anwenden, um zusätzliche Grafikinformationen zu erfassen, die nicht von der API für die programmgesteuerte Erfassung erfasst werden.  
@@ -207,6 +202,3 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
  [Exemplarische Vorgehensweise: Erfassen von Grafikinformationen](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Befehlszeilen-Erfassungstool](../debugger/command-line-capture-tool.md)
-
-
-

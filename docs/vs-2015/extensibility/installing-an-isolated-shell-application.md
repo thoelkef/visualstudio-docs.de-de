@@ -1,27 +1,22 @@
 ---
 title: Installieren einer Isolated Shell-Anwendung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958342"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
         ```  
   
     > [!NOTE]
-    >  Erforderlichen Abhängigkeiten für Anwendungen der Shell (isoliert): DebuggerProxy, MasterPkgDef, Ressourcen (insbesondere die .winprf-Datei), Anwendung und PkgDefs.  
+    >  Erforderliche Abhängigkeiten für die Shell (isoliert)-Anwendungen sind: DebuggerProxy, MasterPkgDef, Ressourcen (insbesondere die .winprf-Datei), Anwendung und PkgDefs.  
   
 ### <a name="registry-entries"></a>Registrierungseinträge  
  Die Shell (isoliert)-Projektvorlage enthält ein *ProjectName*reg-Datei für die Registrierungsschlüssel für die Installation zusammenführen. Diese Registrierungseinträge müssen die MSI-Datei für die Installation und Bereinigung Zwecke angehören. Außerdem müssen Sie entsprechende Registrierung Blöcke in ApplicationRegistry.wxs erstellen.  
@@ -181,10 +176,10 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
   
 5.  Für jeden Registrierungseintrag in *ProjectName*reg, fügen Sie als das folgende Beispiel zeigt einen entsprechenden Block für die Registrierung hinzu.  
   
-    |*Projektname*reg|ApplicationRegisty.wxs|  
+    |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "PhotoStudio DTE-Objekt"|\<RegistryKey-Id = 'DteClsidRegKey' Root = "HKCR" Key = "$(" var ". DteClsidRegKey)' Aktion "CreateAndRemoveOnUninstall" = ><br /><br /> \<RegistryValue Typ = 'String' Name =' @' Wert = "$(" var ". ShortProductName) DTE-Objekt "/ ><br /><br /> \</ RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @= "$RootFolder$\PhotoStudio.exe"|\<RegistryKey-Id = 'DteLocSrv32RegKey' Root = "HKCR" Key = "$(" var ". DteClsidRegKey) \LocalServer32' Aktion "CreateAndRemoveOnUninstall" = ><br /><br /> \<RegistryValue Typ = 'String' Name = "@" Wert = "[INSTALLATIONSVERZEICHNIS] $(" var ". ShortProductName) .exe "/ ><br /><br /> \</ RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Typ = 'String' Name =' @' Wert = "$(" var ". ShortProductName) DTE-Objekt "/ ><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Typ = 'String' Name = "@" Wert = "[INSTALLATIONSVERZEICHNIS] $(" var ". ShortProductName) .exe "/ ><br /><br /> \</RegistryKey>|  
   
      In diesem Beispiel löst Var.DteClsidRegKey in den Registrierungsschlüssel in der obersten Zeile auf. Var.ShortProductName löst in `PhotoStudio`.  
   
@@ -375,4 +370,3 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-

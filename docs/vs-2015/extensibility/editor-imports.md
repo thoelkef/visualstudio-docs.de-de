@@ -1,26 +1,21 @@
 ---
 title: Editor-Importe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958863"
 ---
 # <a name="editor-imports"></a>Editor-Importe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen von Smarttags](../misc/walkthrough-displaying-smarttags.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von SmartTags](../misc/walkthrough-displaying-smarttags.md)  
   
 ## <a name="importing-the-service-provider"></a>Importieren den Service-Anbieter  
  Sie können auch Importieren einer <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (gefunden in der Assembly Microsoft.VisualStudio.Shell.Immutable.10.0) auf die gleiche Weise für den Zugriff auf Visual Studio-Diensten:  
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Finden Sie unter [Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) für Weitere Informationen.  
+ Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) für Weitere Informationen.  
   
 ## <a name="services"></a>Dienste  
  Editor-Dienste sind, in der Regel einzelnen Entitäten, die einen Service bieten, und werden über mehrere Komponenten gemeinsam genutzt wird.  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweiterungspunkte für den Sprachdienst und den Editor](../extensibility/language-service-and-editor-extension-points.md)
-

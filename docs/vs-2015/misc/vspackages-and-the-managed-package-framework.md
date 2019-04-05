@@ -1,27 +1,22 @@
 ---
 title: VSPackages und das Managed Package Framework | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework
 - VSPackages, managed package framework
 - managed VSPackages, managed package framework
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f8d5da0d246cb6b0faa8b424f8039697686cd2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958273"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages und das Managed Package Framework
 Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage mit dem verwalteten Paket Framework (MPF)-Klassen anstelle von mithilfe von COM-Interop-Klassen.  
@@ -30,7 +25,7 @@ Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage 
   
 -   Verwenden der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
   
-     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Menü-Befehl mit der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 -   Erstellen Sie Ihr VSPackage ohne die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
   

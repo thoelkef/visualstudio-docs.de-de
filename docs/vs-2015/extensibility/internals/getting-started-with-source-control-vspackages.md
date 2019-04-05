@@ -1,27 +1,22 @@
 ---
 title: Erste Schritte mit Quellcodeverwaltungs-VSPackages | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
 - getting started, source control packages
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 248adc1b7dfbd2527940e31b88abc4d7639353ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f9891461312f3e0db8b3961160de094e0ed34dd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958415"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Erste Schritte mit Quellcodeverwaltungs-VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ Eine VSPackage für die quellcodeverwaltung ist eine erweiterte Alternative zum 
   
  [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  Erläutert, wie ein Quellcodeverwaltungs-VSPackage zu erstellen, die nicht nur Quellcodeverwaltungsfunktionen bereitstellt, sondern dienen zum Anpassen der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Datenquellen-Steuerelement-Benutzeroberfläche.
-

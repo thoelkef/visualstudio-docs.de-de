@@ -1,25 +1,20 @@
 ---
 title: XML-Schema-Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962027"
 ---
 # <a name="xml-schema-explorer"></a>XML-Schema-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,12 +74,12 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
   
 -   Beim Aktivieren eines Schemaset- oder Namespaceknotens geschieht nichts.  
   
-## <a name="draging-and-dropping-nodes"></a>Drag & Drop von Knoten  
- Sie können globale Knoten, Dateiknoten und Namespaceknoten per Drag & Drop in einer XSD-Designer-Ansicht ablegen. Wenn die aktuelle Ansicht ist die [Ausgangsansicht](../xml-tools/start-view.md), ziehen einen Knoten in der Ansicht wird geöffnet. die [Diagrammansicht](../xml-tools/graph-view.md). Wenn die aktuelle Ansicht ist die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) oder Diagrammansicht die Sicht wird nicht geändert werden, wenn Sie einen Knoten in löschen.  
+## <a name="draging-and-dropping-nodes"></a>Drag &amp; Drop von Knoten  
+ Sie können globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop in einer XSD-Designer-Ansicht ablegen. Wenn die aktuelle Ansicht ist die [Ausgangsansicht](../xml-tools/start-view.md), ziehen einen Knoten in der Ansicht wird geöffnet. die [Diagrammansicht](../xml-tools/graph-view.md). Wenn die aktuelle Ansicht ist die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) oder Diagrammansicht die Sicht wird nicht geändert werden, wenn Sie einen Knoten in löschen.  
   
  Ablegen von Dateien in der Ansicht werden alle globalen Knoten in der Datei hinzufügen die [Arbeitsbereich des XSD-Designers](../xml-tools/xml-schema-designer-workspace.md). Wenn Sie Namespaces in der Ansicht ablegen, werden dem Arbeitsbereich alle globalen Knoten im Namespace hinzugefügt. Der Arbeitsbereich wird für alle Ansichten verwendet.  
   
- Lokale Knoten oder Importe können nicht per Drag & Drop verschoben werden.  
+ Lokale Knoten oder Importe können nicht per Drag &amp; Drop verschoben werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
@@ -97,11 +92,4 @@ Der XML-Schema-Explorer ist in Microsoft Visual Studio und den XML-Editor inte
 -   [Integration von XML-Literalen in den XML-Schema-Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-
+ [Vorgehensweise: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

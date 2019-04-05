@@ -1,27 +1,24 @@
 ---
 title: 'Vorgehensweise: Zugriff auf und Einschränken der aktuellen Auswahl | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
 ms.assetid: 2990981e-dfae-416f-b0d0-7197f1242dfa
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 731968f79565742595b4f574e986d69a311d5f90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957175"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Vorgehensweise: Zugreifen auf die und Einschränken der aktuellen Auswahl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie einen Menübefehl oder Gestenhandler-Handler für die domänenspezifische Sprache schreiben, können Sie bestimmen, welches Element der Benutzer mit der rechten Maustaste. Sie können auch einige Formen oder Felder verhindern ausgewählt werden. Sie können z. B. anordnen, dass klickt der Benutzer ein Symbol für Decorator-Element, Form, die es enthält stattdessen ausgewählt ist. Die Auswahl auf diese Weise einschränken, reduziert die Anzahl von Handlern, die Sie schreiben müssen. Es erleichtert auch für den Benutzer, die an einer beliebigen Stelle in der Form klicken kann, ohne das Decorator-Element zu vermeiden.  
@@ -219,6 +216,3 @@ namespace CompanyName.ProductName.GroupingDsl
  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>   
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules>   
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>
-
-
-

@@ -1,23 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960659"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +29,13 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
   
 - Name: DebuggingTestLanguage  
   
-- Lösungsvorlage: minimale Sprache  
+- Lösungsvorlage: Minimal Language (Einfache Version der Sprache)  
   
 - Dateierweiterung: .ddd  
   
-- Firmenname: Fabrikam  
+- Name des Unternehmens: Fabrikam  
   
-  Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Erstellen einer Textvorlage  
  Fügen Sie eine Textvorlage, um Ihre Lösung.  
@@ -164,7 +161,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
   
      (C#)  
   
-     **Kompilieren von Transformation: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "enthält keine Definition für"ExampleModel"**  
+     **Kompilieren von Transformation: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation "enthält keine Definition für"ExampleModel"**  
   
      (Visual Basic)  
   
@@ -216,6 +213,3 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
 5.  In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
   
      Nachdem das System die Textvorlage transformiert und die entsprechende Ausgabedatei generiert. Sie sehen keine Fehler in der **Fehlerliste** Fenster.
-
-
-

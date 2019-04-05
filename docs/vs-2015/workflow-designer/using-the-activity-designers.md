@@ -1,11 +1,8 @@
 ---
 title: Verwenden der Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
@@ -14,13 +11,13 @@ ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224236"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959515"
 ---
 # <a name="using-the-activity-designers"></a>Verwenden der Aktivitätsdesigner
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Aktivitäten und Workflows verwenden können. In diesem Abschnitt werden die Kategorien der vom System bereitgestellten Aktivitäten und den hierfür verfügbaren Designern beschrieben. In Themen zu den einzelnen Aktivitäten und den jeweiligen Designern in jeder dieser Kategorien wird die Wirkung dieser Aktivitäten beschrieben und erläutert, wie sie verwendet werden.  

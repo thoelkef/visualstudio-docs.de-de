@@ -1,14 +1,9 @@
 ---
 title: Debuggen von clientseitigen Skripts | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3aa04ab77b6e3dc6264a517c83c4ed319f36d686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817801"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957884"
 ---
 # <a name="client-side-script-debugging"></a>Debuggen von clientseitigen Skripts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +30,15 @@ ms.locfileid: "51817801"
 Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und Beheben von Fehlern in clientseitigen Skripts auf ASP.NET-Seiten bereit.  
   
 ## <a name="opening-script-documents"></a>Öffnen von Skriptdokumenten  
- Im **Projektmappen-Explorer** können Sie Listen serverseitiger und clientseitiger Skriptdokumente anzeigen lassen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+ Im **Projektmappen-Explorer** können Sie Listen serverseitiger und clientseitiger Skriptdokumente anzeigen lassen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen von Skriptdokumenten](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Zuordnen von Haltepunkten  
  In Visual Studio können Sie serverseitigen Code nicht direkt debuggen, Sie können jedoch einen Haltepunkt in einer serverseitigen Datei festlegen. Visual Studio ordnet den Haltepunkt automatisch einer entsprechenden Position in der clientseitigen Datei zu und erstellt einen zugeordneten Haltepunkt im clientseitigen Code.  
   
 ## <a name="manually-or-automatically-attaching-to-script"></a>Manuelles oder automatisches Anhängen an Skripts  
- Um mit dem Debuggen von Skripts in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu beginnen, muss der Debugger an das Skript anhängt werden, das Sie debuggen möchten. Dies kann manuell oder automatisch geschehen.  
+ Um mit dem Debuggen von Skripts in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]zu beginnen, muss der Debugger an das Skript anhängt werden, das Sie debuggen möchten. Dies kann manuell oder automatisch geschehen.  
   
- Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Sie können den Debugger manuell über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Debuggerschnittstelle anhängen und dabei einen laufenden Skriptprozess auswählen, an den der Debugger angehängt werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen an ein Skript](../debugger/how-to-attach-to-script.md).  
   
  Der Debugger wird automatisch an das Skript angehängt, wenn eine der folgenden Bedingungen zutrifft:  
   
@@ -69,10 +64,7 @@ Der Visual Studio-Debugger stellt eine umfassende Debugumgebung zum Suchen und B
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Einschränkungen beim Skriptdebugging](../debugger/limitations-on-script-debugging.md)   
- [Variable Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Einschränkungen beim Skriptdebuggen](../debugger/limitations-on-script-debugging.md)   
+ [Variablenfenster](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Direktfenster](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Auswerten eines Überwachungsfensterausdrucks | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4dc9a56927ebe1e7b962ab815eb34028ba75350c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959404"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Auswerten eines Überwachungsfensterausdrucks
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51801464"
 7.  Visual Studio-Aufrufe [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) um den Wert des Ausdrucks zu erhalten, die in der Liste sehen Sie sich dann angezeigt werden.  
   
 ## <a name="parse-then-evaluate"></a>Analysieren und Auswerten  
- Da beim Analysieren eines komplexen Ausdrucks viel länger als das Auswerten von es in Anspruch nehmen kann, wird der Prozess der Auswertung eines Ausdrucks sich in zwei Schritte unterteilt: (1) der Ausdruck analysiert und (2) den analysierten Ausdruck auszuwerten. Auf diese Weise kann Auswertung viele Male vorkommen, aber der Ausdruck muss nur einmal analysiert werden. Die analysierte intermediären Ausdrucks wird zurückgegeben, aus der EE in ein [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt, das wiederum gekapselt und von der DE als zurückgegeben wird ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. Die `IDebugExpression` Objekt verzögert alle Auswertung der `IDebugParsedExpression` Objekt.  
+ Da beim Analysieren eines komplexen Ausdrucks viel länger als das Auswerten von es in Anspruch nehmen kann, wird der Prozess der Auswertung eines Ausdrucks in zwei Schritte unterteilt: (1) Analyse der Ausdruck "und" 2 ") auszuwerten den analysierten Ausdruck. Auf diese Weise kann Auswertung viele Male vorkommen, aber der Ausdruck muss nur einmal analysiert werden. Die analysierte intermediären Ausdrucks wird zurückgegeben, aus der EE in ein [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt, das wiederum gekapselt und von der DE als zurückgegeben wird ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. Die `IDebugExpression` Objekt verzögert alle Auswertung der `IDebugParsedExpression` Objekt.  
   
 > [!NOTE]
 >  Es ist nicht notwendig, für eine EE dieser zweistufige Prozess befolgen, obwohl Visual Studio Dies setzt voraus. die EE analysieren und Auswerten von in der gleichen Schritt kann bei [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) aufgerufen wird (Dies ist die MyCEE, z. B. Funktionsweise des Beispiels). Wenn Ihre Sprache komplexe Ausdrücke bilden kann, empfiehlt es sich, den Schritt der Analyse von der bewertungsschritt zu trennen. Dies kann die Leistung in Visual Studio-Debugger verbessern, wenn viele Ausdrücke zu beobachten sind angezeigt werden.  
@@ -67,4 +62,3 @@ ms.locfileid: "51801464"
   
 ## <a name="see-also"></a>Siehe auch  
  [Schreiben einer CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-
