@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Analysieren von C / C++-Code auf Fehler | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946620"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Fehler zu analysieren, indem Sie mit dem Code Analysis-Tool für C/C++-Code veranschaulicht.  
@@ -57,7 +52,7 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
   
      Die Demoprojektmappe jetzt wird **Projektmappen-Explorer**.  
   
-2.  Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**.  
+2.  Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**.  
   
      Die Projektmappe ohne Fehler oder Warnungen wird erstellt.  
   
@@ -83,7 +78,7 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
   
 2.  In der **Fehlerliste**, doppelklicken Sie auf die folgende Warnung:  
   
-     Warnung C6230: implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT in einen Boolean-Kontext verwenden.  
+     Warnung C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT in einen Boolean-Kontext verwenden.  
   
      Der Code-Editor zeigt die Codezeile, die die Warnung verursacht, in der Funktion hat `bool``ProcessDomain()`. Diese Warnung gibt an, dass ein HRESULT in einen "if"-Anweisung verwendet wird, wo ein boolesches Ergebnis erwartet wird.  
   
@@ -200,7 +195,4 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
      Das Projekt erstellt, ohne alle Warnungen oder Fehler.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code auf Codefehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [Exemplarische Vorgehensweise: Analysieren von verwaltetem Code im Hinblick auf Codefehler](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

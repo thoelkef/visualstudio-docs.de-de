@@ -1,12 +1,9 @@
 ---
-title: 'UML-Sequenzdiagramme: Referenz | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'UML-Sequenzdiagramme: Verweis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,13 +18,13 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946654"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML-Sequenzdiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ In Visual Studio eine *Sequenzdiagramm* zeigt eine Interaktion, die die Sequenz 
   
 |**Form "**|**Element**|**Beschreibung**|  
 |---------------|-----------------|---------------------|  
-|1|**Lebenslinie**|Eine vertikale Linie, die die Sequenz von Ereignissen darstellt, die während einer Interaktion in einem Teilnehmer vorkommen,während die Zeit abwärts entlang der Linie verläuft. Dieser Teilnehmer kann eine Instanz einer Klasse, einer Komponente oder eines Akteurs sein.|  
+|1|**Lifeline**|Eine vertikale Linie, die die Sequenz von Ereignissen darstellt, die während einer Interaktion in einem Teilnehmer vorkommen,während die Zeit abwärts entlang der Linie verläuft. Dieser Teilnehmer kann eine Instanz einer Klasse, einer Komponente oder eines Akteurs sein.|  
 |2|**Actor**|Ein Teilnehmer, der sich außerhalb des Systems befindet, das Sie entwickeln.<br /><br /> Sie können ein Akteursymbol am Anfang einer Lebenslinie angezeigt werden, indem Sie die Einstellung machen die **Actor** Eigenschaft.|  
 |3|**Synchrone Meldung**|Der Absender wartet auf eine Antwort auf eine synchrone Meldung, bevor er fortfährt. Das Diagramm zeigt den Aufruf und die Rückgabe. Synchrone Meldungen werden verwendet, um gewöhnliche Funktionsaufrufe innerhalb eines Programms sowie andere Arten von Meldungen darzustellen, die das gleiche Verhalten aufweisen.|  
 |4|**Asynchrone Meldung**|Eine Meldung, die keine Antwort erfordert, bevor der Absender fortfährt. Eine asynchrone Meldung zeigt nur einen Aufruf vom Absender. Verwenden Sie diese, um die Kommunikation zwischen separaten Threads oder die Erstellung eines neuen Threads darzustellen.|  
@@ -61,7 +58,7 @@ In Visual Studio eine *Sequenzdiagramm* zeigt eine Interaktion, die die Sequenz 
 |14|**Fragmentwächter**|Kann verwendet werden, um eine Bedingung anzugeben, die entscheidet, ob das Fragment auftritt.<br /><br /> Um den Wächter festzulegen, wählen Sie ein Fragment, wählen Sie dann den Wächter, und geben Sie einen Wert ein.|  
 |**X**|**Zerstörungsereignis**|Gibt den Punkt an, an dem das Objekt gelöscht wird oder nicht mehr verfügbar ist. Wird am unteren Rand jeder Lebenslinie angezeigt.|  
 ||**Interaktion**|Die Auflistung der Meldungen und Lebenslinien, die im Sequenzdiagramm angezeigt wird. Um die Eigenschaften einer Interaktion anzuzeigen, müssen Sie diesen in auswählen **UML-Modell-Explorer**.|  
-||**Sequenzdiagramm**|Das Diagramm, das eine Interaktion anzeigt. Um seine Eigenschaften anzuzeigen, klicken Sie auf einen leeren Bereich des Diagramms. **Hinweis:** die Namen der im Sequenzdiagramm die Interaktion, die angezeigt wird, und die Datei, die das Diagramm enthält kann alle unterschiedlich sein.|  
+||**Sequenzdiagramm**|Das Diagramm, das eine Interaktion anzeigt. Um seine Eigenschaften anzuzeigen, klicken Sie auf einen leeren Bereich des Diagramms. **Hinweis**:  Die Namen des Sequenzdiagramms, die von ihm angezeigte Interaktion und die Datei, die das Diagramm enthält, können sich alle unterscheiden.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)   
@@ -70,6 +67,3 @@ In Visual Studio eine *Sequenzdiagramm* zeigt eine Interaktion, die die Sequenz 
  [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)
-
-
-

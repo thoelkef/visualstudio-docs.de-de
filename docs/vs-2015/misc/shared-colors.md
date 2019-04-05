@@ -1,23 +1,18 @@
 ---
 title: Freigegebene Farben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
-ms.author: v-brickg
-ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.author: brgeorge
+ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805514"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001725"
 ---
 # <a name="shared-colors"></a>Konsistente Farben
 Fügen Sie hier eine Einleitung ein.  
@@ -68,16 +63,16 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Standard für Menütitel](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **Menütitel**|Hintergrund|Keiner|  
 |![Standard für Menütitel](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **Menütitel**|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
 |![Menütitel mit Standardglyphe](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **Menütitel mit Glyphe**|Vordergrund (Glyphe)|`Environment.CommandBarMenuGlyph`|  
 |![Menütitel mit Standardglyphe](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **Menütitel mit Glyphe**|Rahmen|Keiner|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Menütitel, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **Menütitel**|Hintergrund|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Menütitel, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **Menütitel**|Vordergrund (Text)|`Environment.CommandBarTextHover`|  
@@ -86,7 +81,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Menütitel, aufgerufen](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **Menütitel**|Hintergrund|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Menütitel, aufgerufen](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **Menütitel**|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -95,7 +90,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Menütitel mit Standardglyphe in deaktiviertem Zustand](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Menütitel mit Glyphe**|Hintergrund|Keiner|  
 |![Menütitel mit Standardglyphe in deaktiviertem Zustand](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Menütitel mit Glyphe**|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
@@ -117,7 +112,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Hintergrund|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Menüstandard](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menü**|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -131,9 +126,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Ausgewählte Menü](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **ausgewählt**|Symbolhintergrund|`Environment.CommandBarSelected`|  
 |![Ausgewählte Menü](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **ausgewählt**|Symbolrahmen|`Environment.CommandBarSelectedBorder`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Zeigen Sie die im Menü](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menüelement**|Hintergrund|`Environment.CommandBarMenuItemMouseOver`|  
 |![Zeigen Sie die im Menü](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Menüelement**|Vordergrund (Text)|`Environment.CommandBarMenuItemMouseOver`|  
@@ -145,7 +140,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Menü, deaktiviert](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menüelement|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
 |![Menü, deaktiviert](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Menüelement|Vordergrund (Untermenü-Glyphe)|`Environment.CommandBarMenuSubmenuGlyph`|  
@@ -184,7 +179,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Standard** (kein weiterer Zustand)  
   
-|Element|Tokenname: Category.color|  
+|Element|Tokenname: Category.Color|  
 |-------------|--------------------------------|  
 |Hintergrund|`Environment.CommandBarGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |Rahmen|`Environment.CommandBarToolBarBorder`|  
@@ -206,7 +201,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Standardmäßiges Befehlssymbol Befehl](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Default**|Hintergrund|N/V (erbt vom Befehlsleisten-Hintergrund)|  
 |![Standardmäßiges Befehlssymbol Befehl](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Default**|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -217,7 +212,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Hover- und Tastaturfokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Zeigen Sie das Symbol der Befehl](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard, wenn darauf gezeigt wird**|Hintergrund|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Zeigen Sie das Symbol der Befehl](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard, wenn darauf gezeigt wird**|Vordergrund (Text)|`Environment.CommandBarTextHover`|  
@@ -228,7 +223,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Befehlssymbol, aufgerufen](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Gedrücktes Befehlssymbol**|Hintergrund|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Befehlssymbol, aufgerufen](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Gedrücktes Befehlssymbol**|Vordergrund (Text)|`Environment.CommandBarTextMouseDown`|  
@@ -236,7 +231,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Hintergrund|N/V (erbt vom Befehlsleisten-Hintergrund)|  
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
@@ -261,7 +256,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Kombinationsfeld (Eingabefeld)](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Eingabefeld**|Hintergrund|`Environment.ComboBoxBackground`|  
 |![Kombinationsfeld (Eingabefeld)](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxText`|  
@@ -273,9 +268,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Das Kombinationsfeld&#47;löschen&#45;-Liste](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemText`|  
 |![Das Kombinationsfeld&#47;löschen&#45;-Liste](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Dropdown-Liste**|Rahmen|`Environment.ComboBoxPopupBorder`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Kombinationsfeld (Eingabefeld) bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Eingabefeld**|Hintergrund|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Kombinationsfeld (Eingabefeld) bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`Environment.ComboBoxMouseOverText`|  
@@ -337,7 +332,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownBackground`|  
 |![Drop&#45;unten Auswahlfeld](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`DropDownText`|  
@@ -350,9 +345,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Drop&#45;-Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown-Liste**|Rahmen|`Environment.DropDownPopupBorder`|  
 |![Drop&#45;-Liste](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Dropdown-Liste**|Schatten|`Environment.DropShadowBackground`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten Auswahlfeld bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Drop&#45;unten Auswahlfeld bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`Environment.DropDownMouseOverText`|  
@@ -360,13 +355,13 @@ Fügen Sie hier eine Einleitung ein.
 |![Drop&#45;unten Auswahlfeld bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Auswahlfeld**|Trennzeichen|`Environment.DropDownButtonMouseOverSeparator`|  
 |![Drop&#45;gedrückt, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Dropdown-Schaltfläche**|Hintergrund|`Environment.DropDownButtonMouseOverBackground`|  
 |![Drop&#45;gedrückt, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Dropdown-Schaltfläche**|Vordergrund (Glyphe)|`Environment.DropDownMouseOverGlyph`|  
-|![Drop&#45;-Liste bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Hintergrund (Menüelement)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![Drop&#45;-Liste bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemMouseOverText`|  
-|![Drop&#45;-Liste bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Rahmen (Menüelement)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![Drop&#45;down list on hover](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Hintergrund (Menüelement)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![Drop&#45;down list on hover](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Vordergrund (Text)|`Environment.ComboBoxItemMouseOverText`|  
+|![Drop&#45;down list on hover](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Dropdown-Liste**|Rahmen (Menüelement)|`Environment.ComboBoxItemMouseOverBorder`|  
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Hintergrund|`Environment.DropDownMouseDownBackground`|  
 |![Drop&#45;unten Auswahlfeld gedrückt](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Auswahlfeld**|Vordergrund (Text)|`Environment.DropDownMouseDownText`|  
@@ -377,7 +372,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Hintergrund|`Environment.DropDownDisabledBackground`|  
 |![Drop&#45;unten Auswahlfeld deaktiviert](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Vordergrund (Text)|`Environment.DropDownDisabledText`|  
@@ -401,7 +396,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Unterteilte Schaltfläche](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Unterteilte Schaltfläche (Standard)**|Hintergrund|Keiner|  
 |![Unterteilte Schaltfläche](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Unterteilte Schaltfläche (Standard)**|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -409,9 +404,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Unterteilte Schaltfläche](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Unterteilte Schaltfläche (Standard)**|Rahmen|Nicht zutreffend|  
 |![Unterteilte Schaltfläche](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Unterteilte Schaltfläche (Standard)**|Trennzeichen|Nicht zutreffend|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Unterteilte Schaltfläche, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Hintergrund|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Unterteilte Schaltfläche, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Unterteilte Schaltfläche (wenn darauf gezeigt wird)**|Vordergrund (Text)|`Environment.CommandBarTextHover`|  
@@ -421,7 +416,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Unterteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Hintergrund|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Unterteilte Schaltfläche gedrückt](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Unterteilte Schaltfläche (gedrückt)**|Vordergrund (Text)|`Environment.CommandBarTextMouseDown`|  
@@ -431,7 +426,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Unterteilte Schaltfläche, deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Hintergrund|Nicht zutreffend|  
 |![Unterteilte Schaltfläche, deaktiviert](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Unterteilte Schaltfläche (deaktiviert)**|Vordergrund (Text)|`Environment.ComboBoxItemTextInactive`|  
@@ -452,30 +447,30 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Weitere Optionen](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Weitere Optionen**|Hintergrund|`Environment.CommandBarOptionsBackground`|  
 |![Weitere Optionen](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Weitere Optionen**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsGlyph`|  
-|![Schaltfläche "Überlauf"](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Überlauf**|Hintergrund|`Environment.CommandBarOptionsBackground`|  
-|![Schaltfläche "Überlauf"](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Überlauf**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsGlyph`|  
+|![Schaltfläche "Überlauf"](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Overflow**|Hintergrund|`Environment.CommandBarOptionsBackground`|  
+|![Schaltfläche "Überlauf"](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Overflow**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsGlyph`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Weitere Optionen bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Weitere Optionen**|Hintergrund|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Weitere Optionen bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Weitere Optionen**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
-|![Bei einer mauszeigerbewegung über Overflow](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Überlauf**|Hintergrund|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Bei einer mauszeigerbewegung über Overflow](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Überlauf**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Bei einer mauszeigerbewegung über Overflow](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Overflow**|Hintergrund|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Bei einer mauszeigerbewegung über Overflow](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Overflow**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Weitere Optionen gedrückt](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Weitere Optionen**|Hintergrund|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Weitere Optionen gedrückt](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Weitere Optionen**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
-|![Überlauf gedrückt](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Überlauf**|Hintergrund|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
-|![Überlauf gedrückt](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Überlauf**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Überlauf gedrückt](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Overflow**|Hintergrund|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
+|![Überlauf gedrückt](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Overflow**|Vordergrund (Glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
 ### <a name="document-windows"></a>Dokumentfenster  
  Dokumentfenster müssen nicht repliziert werden, weil sie von der Visual Studio-Umgebung bereitgestellt werden. Sie können jedoch festlegen, dass die in den Dokumentfenstern genutzten Farben verwendet werden, damit Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent ist.  
@@ -501,7 +496,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Dokument: angedockt oder unverankert|Hintergrund|Hängt vom Dokumenttyp ab.|  
 |Dokument: angedockt oder unverankert|Vordergrund (Text)|Hängt vom Dokumenttyp ab.|  
@@ -517,9 +512,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Rahmen ohne Fokus](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rahmen: unverankert, ohne Fokus**|Rahmen|`Environment.MainWindowInactiveBorder`|  
 |![Rahmen ohne Fokus](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rahmen: unverankert, ohne Fokus**|Rahmen (Glyphe)|`Environment.RaftedWindowButtonInactiveBorder`<br /><br /> Auf transparent festgelegt|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Rahmen mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Rahmen: unverankert, mit Fokus**|Hintergrund (Glyphe)|`Environment.RaftedWindowButtonHoverActive`|  
 |![Rahmen mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Rahmen: unverankert, mit Fokus**|Vordergrund (Glyphe)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
@@ -530,7 +525,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Rahmen mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Rahmen: unverankert, mit Fokus**|Hintergrund (Glyphe)|`Environment.RaftedWindowButtonDown`|  
 |![Rahmen mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Rahmen: unverankert, mit Fokus**|Vordergrund (Glyphe)|`Environment.RaftedWindowButtonDownGlyph`|  
@@ -567,7 +562,7 @@ Fügen Sie hier eine Einleitung ein.
 ##### <a name="selected-tab"></a>Ausgewählte Registerkarte  
  **Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Ausgewählte Registerkarte mit Fokus](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Ausgewählte Dokumentregisterkarte, mit Fokus**|Hintergrund|`Environment.FileTabSelectedGradientTop`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Ausgewählte Registerkarte mit Fokus](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Ausgewählte Dokumentregisterkarte, mit Fokus**|Vordergrund (Text)|`Environment.FileTabSelectedText`|  
@@ -576,7 +571,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Ohne Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Ausgewählte Registerkarte ohne Fokus](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Ausgewählte Dokumentregisterkarte, ohne Fokus**|Hintergrund|`Environment.FileTabInactiveGradientTop`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Ausgewählte Registerkarte ohne Fokus](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Ausgewählte Dokumentregisterkarte, ohne Fokus**|Vordergrund (Text)|`Environment.FileTabInactiveText`|  
@@ -592,7 +587,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Registerkarte "Hintergrund"](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Hintergrundregisterkarte, Standard**|Vordergrund (Text)|`Environment.FileTabText`|  
 |![Registerkarte "Hintergrund"](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Hintergrundregisterkarte, Standard**|Rahmen|`Environment.FileTabBorder`<br /><br /> Auf dieselbe Farbe wie der Hintergrund festgelegt|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
 |Komponente|Element|Tokenname: Color.category|  
 |---------------|-------------|--------------------------------|  
@@ -613,35 +608,35 @@ Fügen Sie hier eine Einleitung ein.
   
 - für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
-  **Ausgewählte vorschauregisterkarte: mit Fokus**  
+  **Ausgewählte vorschauregisterkarte: Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Vorschauregisterkarte mit Fokus](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Vorschauregisterkarte mit Fokus**|Hintergrund|`Environment.FileTabProvisionalSelectedActive`|  
 |![Vorschauregisterkarte mit Fokus](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Vorschauregisterkarte mit Fokus**|Vordergrund (Text)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
 |![Vorschauregisterkarte mit Fokus](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Vorschauregisterkarte mit Fokus**|Rahmen|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Auf dieselbe Farbe wie der Hintergrund festgelegt|  
 |![Vorschauregisterkarte mit Fokus](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Vorschauregisterkarte mit Fokus**|Dokumentrahmen|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
- **Ausgewählte vorschauregisterkarte: ohne Fokus**  
+ **Ausgewählte vorschauregisterkarte: Ohne Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Registerkarte "Vorschau" ohne Fokus](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Vorschauregisterkarte**|Hintergrund|`Environment.FileTabProvisionalSelectedInactive`|  
 |![Registerkarte "Vorschau" ohne Fokus](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Vorschauregisterkarte**|Vordergrund (Text)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
 |![Registerkarte "Vorschau" ohne Fokus](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Vorschauregisterkarte**|Rahmen|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
 |![Registerkarte "Vorschau" ohne Fokus](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Vorschauregisterkarte**|Dokumentrahmen|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
- **Hintergrund-/ vorschauregisterkarte: Standard**  
+ **Registerkarte "Vorschau" Hintergrund: Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hintergrund-Registerkarte "Vorschau"](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Vorschau-/ Hintergrundregisterkarte**|Hintergrund|`Environment.FileTabProvisionalInactive`|  
 |![Hintergrund-Registerkarte "Vorschau"](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Vorschau-/ Hintergrundregisterkarte**|Vordergrund (Text)|`Environment.FileTabProvisionalInactiveForeground`|  
 |![Hintergrund-Registerkarte "Vorschau"](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Vorschau-/ Hintergrundregisterkarte**|Rahmen|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Auf dieselbe Farbe wie der Hintergrund festgelegt|  
   
- **Hintergrund-/ vorschauregisterkarte: Zeigen Sie mit**  
+ **Registerkarte "Vorschau" Hintergrund: Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Registerkarte "Vorschau Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Vorschau-/ Hintergrundregisterkarte wenn darauf gezeigt wird**|Hintergrund|`Environment.FileTabProvisionalHover`|  
 |![Registerkarte "Vorschau Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Vorschau-/ Hintergrundregisterkarte wenn darauf gezeigt wird**|Vordergrund (Text)|`Environment.FileTabProvisionalHoverForeground`|  
@@ -650,7 +645,7 @@ Fügen Sie hier eine Einleitung ein.
 ##### <a name="document-overflow-button"></a>Dokumentüberlauf-Schaltfläche  
  Die Dokumentüberlauf-Schaltfläche wird angezeigt, wenn mindestens ein Dokument geöffnet ist. Ihre Anzeige ist unabhängig davon, ob der vertikale Platz in der aktuellen Konfiguration für alle Dokumentregisterkarten ausreicht. Das Dokumentüberlauf-Dropdownmenü, das mithilfe der **CommandBarMenu** -Farben (siehe [Menus](../misc/shared-colors.md#BKMK_CommandMenus)) gesteuert wird, zeigt eine Liste aller geöffneten Dokumente (sichtbar und unsichtbar) an. Die Überlauf-Glyphe ändert sich abhängig davon, ob alle geöffneten Dokumente im Registerkartenkanal angezeigt werden.  
   
- ![(Rote Linie) der Überlauf](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
+ ![Overflow redline](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
  Empfohlen...  
  für die Erstellung einer benutzerdefinierten Dokumentüberlauf-Schaltfläche  
@@ -662,15 +657,15 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Dokumentüberlauf-Schaltfläche**|Hintergrund|`Environment.DocWellOverflowButtonBackground`|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Dokumentüberlauf-Schaltfläche**|Vordergrund (Glyphe)|`Environment.DocWellOverflowButtonGlyph`|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Dokumentüberlauf-Schaltfläche**|Rahmen|Nicht zutreffend|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Bei einer mauszeigerbewegung über Overflow](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Dokumentüberlauf-Schaltfläche wenn darauf gezeigt wird**|Hintergrund|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![Bei einer mauszeigerbewegung über Overflow](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Dokumentüberlauf-Schaltfläche wenn darauf gezeigt wird**|Vordergrund (Glyphe)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
@@ -678,7 +673,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Überlauf gedrückt](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Gedrückte dokumentüberlauf-Schaltfläche**|Hintergrund|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![Überlauf gedrückt](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Gedrückte dokumentüberlauf-Schaltfläche**|Vordergrund (Glyphe)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
@@ -708,21 +703,21 @@ Fügen Sie hier eine Einleitung ein.
   
  **Angedockt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolfenster angedockt](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|Hintergrund|`Environment.ToolWindowBackground`|  
 |![Toolfenster angedockt](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|Rahmen|`Environment.ToolWindowBorder`|  
   
  **Gleitkommawert: mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolfenster mit Fokus](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|Hintergrund|`Environment.ToolWindowBackground`|  
 |![Toolfenster mit Fokus](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|Rahmen|`Environment.MainWindowActiveDefaultBorder`|  
   
  **Gleitkommawert: ohne Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolfenster ohne Fokus](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|Hintergrund|`Environment.ToolWindowBackground`|  
 |![Toolfenster ohne Fokus](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|Rahmen|`Environment.MainWindowInactiveBorder`|  
@@ -740,7 +735,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Titelleiste mit Fokus](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Titelleiste mit Fokus**|Hintergrund|`Environment.TitleBarActiveGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Titelleiste mit Fokus](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Titelleiste mit Fokus**|Vordergrund (Text)|`Environment.TitleBarActiveText`|  
@@ -749,7 +744,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Ohne Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Titelleiste ohne Fokus](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Titelleiste ohne Fokus**|Hintergrund|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Titelleiste ohne Fokus](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Titelleiste ohne Fokus**|Vordergrund (Text)|`Environment.TitleBarInactiveText`|  
@@ -769,7 +764,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Titelleiste mit Fokus Schaltfläche](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Mit Fokus**|Hintergrund|Nicht zutreffend|  
 |![Titelleiste mit Fokus Schaltfläche](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonActiveGlyph`|  
@@ -778,9 +773,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Titelleiste ohne Fokus Schaltfläche](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Ohne Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonInactiveGlyph`|  
 |![Titelleiste ohne Fokus Schaltfläche](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Ohne Fokus**|Rahmen|Nicht zutreffend|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Mit Fokus**|Hintergrund|`Environment.ToolWindowButtonHoverActive`|  
 |![Titelleistenschaltfläche mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
@@ -791,7 +786,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Titelleiste auf die Schaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Mit Fokus**|Hintergrund|`Environment.ToolWindowButtonDown`|  
 |![Titelleiste auf die Schaltfläche mit Fokus, aufgerufen](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Mit Fokus**|Vordergrund (Glyphe)|`Environment.ToolWindowButtonDownActiveGlyph`|  
@@ -811,13 +806,13 @@ Fügen Sie hier eine Einleitung ein.
   
  **Ausgewählte Registerkarte**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Der Toolfenster-Registerkarte mit Fokus](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Ausgewählte, fokussierte Toolfenster-Registerkarte**|Hintergrund|`Environment.ToolWindowTabSelectedTab`|  
 |![Der Toolfenster-Registerkarte mit Fokus](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Ausgewählte, fokussierte Toolfenster-Registerkarte**|Vordergrund (Text)|`Environment.ToolWindowTabSelectedActiveText`|  
 |![Der Toolfenster-Registerkarte mit Fokus](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Ausgewählte, fokussierte Toolfenster-Registerkarte**|Rahmen|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Auf dieselbe Farbe wie der Hintergrund festgelegt|  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolfenster-Registerkarte ohne Fokus](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Ausgewählte, ohne Fokus Toolfenster-Registerkarte**|Hintergrund|`Environment.ToolWindowTabSelectedTab`|  
 |![Toolfenster-Registerkarte ohne Fokus](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Ausgewählte, ohne Fokus Toolfenster-Registerkarte**|Vordergrund (Text)|`Environment.ToolWindowTabSelectedText`|  
@@ -825,13 +820,13 @@ Fügen Sie hier eine Einleitung ein.
   
  **Registerkarte "Hintergrund"**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hintergrund der Toolfenster-Registerkarte](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Hintergrundregisterkarte im Toolfenster**|Hintergrund|`Environment.ToolWindowTabGradientBegin`<br /><br /> In Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> In Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps|  
 |![Hintergrund der Toolfenster-Registerkarte](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Hintergrundregisterkarte im Toolfenster**|Vordergrund (Text)|`Environment.ToolWindowTabText`|  
 |![Hintergrund der Toolfenster-Registerkarte](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Hintergrundregisterkarte im Toolfenster**|Rahmen|`Environment.ToolWindowTabBorder`|  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tool-Fenster Registerkarte "Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Hintergrundregisterkarte im Toolfenster wenn darauf gezeigt wird**|Hintergrund|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> In Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> In Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps|  
 |![Tool-Fenster Registerkarte "Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Hintergrundregisterkarte im Toolfenster wenn darauf gezeigt wird**|Vordergrund (Text)|`Environment.ToolWindowTabMouseOverText`|  
@@ -848,15 +843,15 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Automatische&#45;Registerkarte ausblenden](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Hintergrund|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Automatische&#45;Registerkarte ausblenden](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Vordergrund (Text)|`Environment.AutoHideTabText`|  
 |![Automatische&#45;Registerkarte ausblenden](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Automatisch ausgeblendete Registerkarte, Standard**|Rahmen|`Environment.AutoHideTabBorder`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Automatische&#45;blenden Sie die Registerkarte "Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Hintergrund|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Automatische&#45;blenden Sie die Registerkarte "Hintergrundvorschau"](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatisch ausgeblendete Registerkarte, wenn darauf gezeigt wird**|Vordergrund (Text)|`Environment.AutoHideTabMouseOverText`|  
@@ -878,7 +873,7 @@ Fügen Sie hier eine Einleitung ein.
   
 - "Deaktiviert" bedeutet, dass die Suchfunktion für den aktuellen Kontext deaktiviert ist.  
   
-  ![Suchfeld (rote Linie,)](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
+  ![Search box redline](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
   
   Empfohlen...  
   für das Entwerfen eines benutzerdefinierten Suchfelds  
@@ -890,7 +885,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Schwerpunkt sucheingabefeld](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Eingabefeld**|Hintergrund|`SearchControl.FocusedBackground`|  
 |![Schwerpunkt sucheingabefeld](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`SearchControl.FocusedBackground`|  
@@ -907,7 +902,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Ohne Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Sucheingabefeld ohne Fokus](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Aktives Eingabefeld**|Hintergrund|`SearchControl.SearchActiveBackground`|  
 |![Sucheingabefeld ohne Fokus](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Aktives Eingabefeld**|Vordergrund (Text)|`SearchControl.SearchActiveBackground`|  
@@ -928,7 +923,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Suche (Aktionsschaltfläche) gedrückt](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Schaltfläche "Aktion"**|Hintergrund|`SearchControl.ActionButtonMouseDown`|  
 |![Suche (Aktionsschaltfläche) gedrückt](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Schaltfläche "Aktion"**|Vordergrund (Glyphe)|`SearchControl.ActionButtonMouseDownGlyph`|  
@@ -939,16 +934,16 @@ Fügen Sie hier eine Einleitung ein.
   
  **Hervorgehoben (nur Text)**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Eingabefeld durch hervorheben](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Hintergrund|`SearchControl.Selection`|  
-|![Eingabefeld durch hervorheben](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Vordergrund (Text)|`SearchControl.FocusedBackground`|  
-|![Eingabefeld durch hervorheben](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Rahmen|Keiner|  
-|![Eingabefeld durch hervorheben](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Trennzeichen|`SearchControl.FocusedDropDownSeparator`|  
+|![Search input field highlight](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Hintergrund|`SearchControl.Selection`|  
+|![Search input field highlight](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Vordergrund (Text)|`SearchControl.FocusedBackground`|  
+|![Search input field highlight](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Rahmen|Keiner|  
+|![Search input field highlight](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Eingabefeld mit hervorgehobenem text**|Trennzeichen|`SearchControl.FocusedDropDownSeparator`|  
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Sucheingabefeld deaktiviert](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Eingabefeld**|Hintergrund|`SearchControl.Disabled`|  
 |![Sucheingabefeld deaktiviert](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Eingabefeld**|Vordergrund (Text)|`SearchControl.Disabled`|  
@@ -978,7 +973,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Standard (kein weiterer Zustand)**  
   
-|Element|Tokenname: Category.color|  
+|Element|Tokenname: Category.Color|  
 |-------------|--------------------------------|  
 |Rahmen|`SearchControl.PopupBorder`|  
 |Trennzeichen|`SearchControl.PopupSectionHeaderSeparator`|  
@@ -986,7 +981,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Suchvorschlag](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **Vorschläge für Suchen**|Hintergrund|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Suchvorschlag](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **Vorschläge für Suchen**|Vordergrund (Text)|`SearchControl.PopupItemText`|  
@@ -1001,9 +996,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Kontrollkästchen "Suche"](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Suchoptionen (Kontrollkästchen)**|Vordergrund (Headertext)|`SearchControl.PopupSectionHeaderText`|  
 |![Suchoptionen](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")<br /><br /> **Suchoptionen (Link)**|Vordergrund (Headertext)|`SearchControl.PopupSectionHeaderText`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Bei einer mauszeigerbewegung über suchvorschlag](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Vorschläge für Suchen**|Hintergrund|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Bei einer mauszeigerbewegung über suchvorschlag](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Vorschläge für Suchen**|Vordergrund (Text)|`SearchControl.PopupMouseOverItemText`|  
@@ -1019,7 +1014,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Suchvorschlag gedrückt](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Empfohlene Suchbegriffe (Kontrollkästchen)**|Kontrollkästchen-Hintergrund|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
 |![Suchoptionen gedrückt](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Suchoptionen**|Kontrollkästchen-Hintergrund|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Obwohl in Benutzeroberflächen mit modernen Designs nicht verwendet, gibt es Farbverlaufsstopps und -werte für diesen Hintergrund.|  
@@ -1035,7 +1030,7 @@ Fügen Sie hier eine Einleitung ein.
 #### <a name="hyperlink"></a>Link  
  Der Link ist ein Steuerelement, das keine Kombination aus Vordergrund-/Hintergrundfarbe darstellt. Sie verwenden grundsätzlich die Vordergrund-Linkfarbe, die auf dunklem, grauen und weißem Hintergrund ordnungsgemäß angezeigt wird. Wenn Sie nicht das Farbtoken für das Linksteuerelement verwenden, sehen Sie für den "gedrückten" Zustand die Standardsystemfarbe, die rot blinkend dargestellt wird. Das ist das Signal, dass das Steuerelement nicht das richtige Farbtoken für die Umgebung verwendet.  
   
- ![Hyperlink (rote Linie,)](../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")  
+ ![Hyperlink redline](../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")  
   
  Empfohlen...  
  für die Erstellung eines benutzerdefinierten Links  
@@ -1045,32 +1040,32 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hyperlink, Standard](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")|Vordergrund (Text)|`Environment.PanelHyperlink`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Link bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")|Vordergrund (Text)|`Environment.PanelHyperlinkHover`|  
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Link – gedrückt](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")|Vordergrund (Text)|`Environment.PanelHyperlinkPressed`|  
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hyperlink, deaktiviert](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")|Vordergrund (Text)|`Environment.PanelHyperlinkDisabled`|  
   
 #### <a name="infobar"></a>Infoleiste  
  Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Kontext bereitzustellen. Sie erscheinen immer im oberen Bereich eines Dokument- oder Toolfensters.  
   
- ![Infoleiste (rote Linie,)](../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")  
+ ![Infobar redline](../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")  
   
  Empfohlen...  
  für die Erstellung einer benutzerdefinierten Infoleiste  
@@ -1078,11 +1073,11 @@ Fügen Sie hier eine Einleitung ein.
  Nicht empfohlen...  
  für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Infoleiste haben  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Infoleiste](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infoleiste**|Hintergrund|`Environment.InfoBackground`|  
-|![Infoleiste](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infoleiste**|Vordergrund (Text)|`Environment.InfoText`|  
-|![Infoleiste](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infoleiste**|Rahmen|`Environment.ToolWindowBorder`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Hintergrund|`Environment.InfoBackground`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Vordergrund (Text)|`Environment.InfoText`|  
+|![Infobar](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Infobar**|Rahmen|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Bildlaufleiste  
  Bildlaufleisten erhalten ihr Format von der Visual Studio-Umgebung, sodass kein Design angewendet werden muss. Möglicherweise möchten jedoch, dass Sie für die Farben, die in Bildlaufleisten verwendet werden, sodass Ihre Benutzeroberfläche immer mit diesem Teil der Visual Studio-Umgebung konsistent nutzen möchten.  
@@ -1097,35 +1092,35 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Bildlaufleiste**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
-|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Bildlaufleiste**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbBackground`|  
+|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
+|![Bildlaufleiste](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbBackground`|  
 |![Bildlaufleiste Pfeil](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleiste Pfeil](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyph`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Bildlaufleiste**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
-|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Bildlaufleiste**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbMouseOverBackground`|  
+|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
+|![Bildlaufleiste, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbMouseOverBackground`|  
 |![Bildlaufleisten-Taste bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowMouseOverBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleisten-Taste bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyphMouseOver`|  
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Bildlaufleiste geklickt](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Bildlaufleiste**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
-|![Bildlaufleiste geklickt](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Bildlaufleiste**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbPressedBackground`|  
+|![Bildlaufleiste geklickt](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Bildlaufleiste|`Environment.ScrollBarBackground`|  
+|![Bildlaufleiste geklickt](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Vordergrund (Ziehpunkt)|`Environment.ScrollBarThumbPressedBackground`|  
 |![Bildlaufleisten-Taste gedrückt](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleisten-Taste gedrückt](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyphPressed`|  
   
 ####  <a name="BKMK_TreeView"></a> Strukturansicht  
  Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in der TreeView-Kategorie gesteuert werden. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.  
   
- ![(Rote Linie) der Strukturansicht](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
+ ![Tree view redline](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
   
  Empfohlen...  
  für alle Projekte zur Implementierung einer hierarchischen Organisationsstruktur  
@@ -1137,16 +1132,16 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Hintergrund|`TreeView.Background`|  
 |![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Vordergrund (Text)|`TreeView.Background`|  
 |![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Vordergrund (Glyphe)|`TreeView.Glyph`|  
 |![Strukturansicht](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Rahmen|Keiner|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Bei einer mauszeigerbewegung über die Strukturansicht](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Hintergrund|`TreeView.Background`|  
 |![Bei einer mauszeigerbewegung über die Strukturansicht](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Vordergrund (Text)|`TreeView.Background`|  
@@ -1155,7 +1150,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Ziehen Sie auf**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Struktur anzeigen "DragOver"](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Hintergrund|`TreeView.DragOverItem`|  
 |![Struktur anzeigen "DragOver"](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Vordergrund (Text)|`TreeView.DragOverItem`|  
@@ -1164,7 +1159,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **ausgewählt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`|  
 |![Strukturansicht mit Fokus](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
@@ -1177,7 +1172,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Ausgewähltes Element zeigen**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`|  
 |![Strukturansicht mit Fokus, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Mit Fokus**|Vordergrund (Text)|`TreeView.SelectedItemActive`|  
@@ -1199,35 +1194,35 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Schaltfläche](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Schaltfläche|`CommonControls.Button`|  
-|![Schaltfläche](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Schaltflächenrahmen|`CommonControls.ButtonBorder`|  
+|![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Schaltfläche|`CommonControls.Button`|  
+|![Button](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Schaltflächenrahmen|`CommonControls.ButtonBorder`|  
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Schaltfläche|`CommonControls.ButtonDisabled`|  
 |![Schaltfläche deaktiviert](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Schaltflächenrahmen|`CommonControls.ButtonBorderDisabled`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Schaltfläche ", wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Schaltfläche|`CommonControls.ButtonHover`|  
 |![Schaltfläche ", wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Schaltflächenrahmen|`CommonControls.ButtonBorderHover`|  
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Gedrückte Taste](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Schaltfläche|`CommonControls.ButtonPressed`|  
 |![Gedrückte Taste](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Schaltflächenrahmen|`CommonControls.ButtonBorderPressed`|  
   
  **Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Schaltfläche|`CommonControls.ButtonFocused`|  
 |![Schaltfläche mit Fokus](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Schaltflächenrahmen|`CommonControls.ButtonBorderFocused`|  
@@ -1243,7 +1238,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Aktivieren Sie das Kontrollkästchen](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Hintergrund|`CommonControls.CheckBoxBackground`|  
 |![Aktivieren Sie das Kontrollkästchen](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Rahmen|`CommonControls.CheckBoxBorder`|  
@@ -1252,16 +1247,16 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Aktivieren Sie das Kontrollkästchen deaktiviert](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Hintergrund|`CommonControls.CheckBoxBackgroundDisabled`|  
 |![Aktivieren Sie das Kontrollkästchen deaktiviert](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Rahmen|`CommonControls.CheckBoxBorderDisabled`|  
 |![Aktivieren Sie das Kontrollkästchen deaktiviert](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Text|`CommonControls.CheckBoxTextDisabled`|  
 |![Aktivieren Sie das Kontrollkästchen deaktiviert](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Glyphe|`CommonControls.CheckBoxGlyphDisabled`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Das Kontrollkästchen, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Hintergrund|`CommonControls.CheckBoxBackgroundHover`|  
 |![Das Kontrollkästchen, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Rahmen|`CommonControls.CheckBoxBorderHover`|  
@@ -1270,7 +1265,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Aktivieren Sie das Kontrollkästchen geklickt](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Hintergrund|`CommonControls.CheckBoxBackgroundPressed`|  
 |![Aktivieren Sie das Kontrollkästchen geklickt](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Rahmen|`CommonControls.CheckBoxBorderPressed`|  
@@ -1279,7 +1274,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Kontrollkästchen mit Fokus](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Hintergrund|`CommonControls.CheckBoxBackgroundFocused`|  
 |![Kontrollkästchen mit Fokus](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Rahmen|`CommonControls.CheckBoxBorderFocused`|  
@@ -1299,7 +1294,7 @@ Fügen Sie hier eine Einleitung ein.
   
   **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten&#47;Kombinationsfeld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Hintergrund|`CommonControls.ComboBoxBackground`|  
 |![Drop&#45;unten&#47;Kombinationsfeld](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Rahmen|`CommonControls.ComboBoxBorder`|  
@@ -1310,7 +1305,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Disabled** (deaktiviert)  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten&#47;Kombinationsfeld, deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Hintergrund|`CommonControls.ComboBoxBackgroundDisabled`|  
 |![Drop&#45;unten&#47;Kombinationsfeld, deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Rahmen|`CommonControls.ComboBoxBorderDisabled`|  
@@ -1319,9 +1314,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Drop&#45;unten&#47;Kombinationsfeld, deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glyphe|`CommonControls.ComboBoxGlyphDisabled`|  
 |![Drop&#45;unten&#47;Kombinationsfeld, deaktiviert](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glyphenhintergrund|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten&#47;im Kombinationsfeld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Hintergrund|`CommonControls.ComboBoxBackgroundHover`|  
 |![Drop&#45;unten&#47;im Kombinationsfeld, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Rahmen|`CommonControls.ComboBoxBorderHover`|  
@@ -1332,7 +1327,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten&#47;gedrückten Kombinationsfelds](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Hintergrund|`CommonControls.ComboBoxBackgroundPressed`|  
 |![Drop&#45;unten&#47;gedrückten Kombinationsfelds](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Rahmen|`CommonControls.ComboBoxBorderPressed`|  
@@ -1343,7 +1338,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Mit Fokus**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten&#47;Kombinationsfeld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Hintergrund|`CommonControls.ComboBoxBackgroundFocused`|  
 |![Drop&#45;unten&#47;Kombinationsfeld mit Fokus](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Rahmen|`CommonControls.ComboBoxBorderFocused`|  
@@ -1354,7 +1349,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Texteingabeauswahl**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Drop&#45;unten&#47;Combo Box Texteingabe](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|Hervorheben|`CommonControls.ComboBoxTextInputSelection`|  
   
@@ -1390,7 +1385,7 @@ Fügen Sie hier eine Einleitung ein.
 ##### <a name="column-headers"></a>Spaltenheader  
  Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionalen Glyphe zusammen, die normalerweise verwendet wird, wenn ein Raster nach dieser Spalte sortiert wird.  
   
-|Zustand|Element|Tokenname: Category.color|  
+|Zustand|Element|Tokenname: Category.Color|  
 |-----------|-------------|--------------------------------|  
 |Standard|Hintergrund|`Header.Default`|  
 |Standard|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -1408,7 +1403,7 @@ Fügen Sie hier eine Einleitung ein.
 ##### <a name="list-view-items"></a>Listenansichtselemente  
  Listenansichtselemente bestehen aus einem Hintergrund und dem Inhalt. Der Inhalt kann Text, ein Symbol oder beides sein.  
   
-|Zustand|Element|Tokenname: Category.color|  
+|Zustand|Element|Tokenname: Category.Color|  
 |-----------|-------------|--------------------------------|  
 |Standard|Hintergrund|Transparent|  
 |Standard|Vordergrund (Text)|`Environment.CommandBarTextActive`|  
@@ -1435,7 +1430,7 @@ Fügen Sie hier eine Einleitung ein.
   
 - für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind  
   
-|Zustand|Komponente|Element|Tokenname: Category.color|  
+|Zustand|Komponente|Element|Tokenname: Category.Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Standard (ausgewählt)|Registerkarte|Hintergrund|`ManifestDesigner.TabActive`|  
 |Standard (ausgewählt)|Registerkarte|Rahmen|Keiner|  
@@ -1458,12 +1453,12 @@ Fügen Sie hier eine Einleitung ein.
   
 #### <a name="tag"></a>Tag  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Hintergrund|`Tag.Background`|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Default**|Vordergrund (Text)|`Tag.Background`|  
-|![Markieren Sie bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Wenn darauf gezeigt wird**|Hintergrund|`Tag.HoverBackground`|  
-|![Markieren Sie bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Wenn darauf gezeigt wird**|Vordergrund (Text)|`Tag.HoverBackgroundText`|  
+|![Markieren Sie bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Hover**|Hintergrund|`Tag.HoverBackground`|  
+|![Markieren Sie bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Hover**|Vordergrund (Text)|`Tag.HoverBackgroundText`|  
 |![Tag, aufgerufen](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Gedrückt**|Hintergrund|`Tag.PressedBackground`|  
 |![Tag, aufgerufen](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Gedrückt**|Vordergrund (Text)|`Tag.PressedBackgroundText`|  
 |![Tag, ausgewählt](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **ausgewählt**|Hintergrund|`Tag.SelectedBackground`|  
@@ -1472,14 +1467,14 @@ Fügen Sie hier eine Einleitung ein.
 #### <a name="glyph-close-icon"></a>Glyphe (Schließsymbol)  
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;Glyphe&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Standard (Tag, Standard)**|Hintergrund|Nicht zutreffend|  
 |![Tag &#40;Glyphe&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Standard (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyph`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;Glyphe&#41; bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Wenn darauf gezeigt wird (Tag, Standard)**|Hintergrund|`Tag.TagHoverGlyphHoverBackground`|  
 |![Tag &#40;Glyphe&#41; bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Wenn darauf gezeigt wird (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyphHover`|  
@@ -1487,7 +1482,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;Glyphe&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Hintergrund|`Tag.TagHoverGlyphPressedBackground`|  
 |![Tag &#40;Glyphe&#41; gedrückt](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Gedrückt (Tag, Standard)**|Vordergrund (Glyphe)|`Tag.TagHoverGlyphPressed`|  
@@ -1495,14 +1490,14 @@ Fügen Sie hier eine Einleitung ein.
   
  **Tag ausgewählt/Glyphe, Standard**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag, ausgewählt](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **Standard (Tag, ausgewählt)**|Hintergrund|Nicht zutreffend|  
 |![Tag, ausgewählt](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **Standard (Tag, ausgewählt)**|Vordergrund (Glyphe)|`Tag.TagSelectedGlyph`|  
   
  **Tag ausgewählt/Glyphe, Hoverzustand**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag, ausgewählt werden, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Hoverzustand (Tag, ausgewählt)**|Hintergrund|`Tag.TagSelectedGlyphHoverBackground`|  
 |![Tag, ausgewählt werden, wenn darauf gezeigt wird](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Hoverzustand (Tag, ausgewählt)**|Vordergrund (Glyphe)|`Tag.TagSelectedGlyphHover`|  
@@ -1510,7 +1505,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Tag-ausgewählt/Glyphe, die gedrückt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag, ausgewählt gedrückt](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Gedrückt (Tag, ausgewählt)**|Hintergrund|`Tag.TagSelectedGlyphPressedBackground`|  
 |![Tag, ausgewählt gedrückt](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Gedrückt (Tag, ausgewählt)**|Vordergrund (Glyphe)|`Tag.TagSelectedGlyphPressed`|  
@@ -1531,11 +1526,11 @@ Fügen Sie hier eine Einleitung ein.
   
 -   als Hintergrund, auf dem Vordergrundelemente platziert werden sollen  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Untere Ebene|Hintergrund|`Environment.EnvironmentBackground`|  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Obere Ebene|Hintergrund<br /><br /> *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*|`Environment.EnvironmentBackgroundGradientBegin`|  
 |Obere Ebene|Hintergrund<br /><br /> *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*|`Environment.EnvironmentBackgroundGradientEnd`|  
@@ -1555,7 +1550,7 @@ Fügen Sie hier eine Einleitung ein.
   Nicht empfohlen...  
   für Bereiche, die keine Ähnlichkeit mit einer Befehlsablage aufweisen  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Menüleiste|Hintergrund<br /><br /> *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*|`Environment.CommandShelfHighlightGradientBegin`|  
 |Menüleiste|Hintergrund<br /><br /> *Farbverlaufstopps auf denselben Farbwert in Visual Studio 2013 im hellen und dunklen Designs festgelegt ist.*|`Environment.CommandShelfHighlightGradientMiddle`|  
@@ -1577,7 +1572,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **Default**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolbox, übergeordneter Knoten](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Übergeordneter Knoten**|Hintergrund|`Environment.ToolboxContent`<br /><br /> Kopfzeilen<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind.|  
 |![Toolbox, untergeordneter Knoten](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Untergeordneten Knoten**|Hintergrund|`Environment.ToolboxContent`<br /><br /> Kopfzeilen<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind.|  
@@ -1588,9 +1583,9 @@ Fügen Sie hier eine Einleitung ein.
 |![Toolbox, übergeordneter Knoten](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Übergeordneter Knoten**|Vordergrund (Text)|`Environment.ToolboxContent`|  
 |![Toolbox, untergeordneter Knoten](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Untergeordneten Knoten**|Vordergrund (Text)|`Environment.ToolboxContent`|  
   
- **Wenn darauf gezeigt wird**  
+ **Hover**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolbox, untergeordneter Knoten bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Werkzeugkasten, zeigen auf untergeordneten Knoten**|Hintergrund|`Environment.ToolboxContentMouseOver`<br /><br /> Nur einzelne Elemente|  
 |![Toolbox, untergeordneter Knoten bei einer mauszeigerbewegung über](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Werkzeugkasten, zeigen auf untergeordneten Knoten**|Rahmen|Keiner|  
@@ -1598,7 +1593,7 @@ Fügen Sie hier eine Einleitung ein.
   
  **ausgewählt**  
   
-|Komponente|Element|Tokenname: Category.color|  
+|Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Toolbox, übergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Übergeordneter Knoten mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Toolbox, untergeordneter Knoten mit Fokus](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Untergeordneter Knoten mit Fokus**|Hintergrund|`TreeView.SelectedItemActive`<br /><br /> Aus Kategorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
