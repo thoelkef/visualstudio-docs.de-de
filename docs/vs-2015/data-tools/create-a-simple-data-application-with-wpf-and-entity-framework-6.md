@@ -63,7 +63,7 @@ Dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegende "Forms 
   
     ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png "EF Objekte, die Raddata auswählen")  
   
-5. Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Hierbei handelt es sich um plain old C#-Klassen aus, und sie sind, was wir wird Databind der WPF-Benutzeroberfläche. Die EDMX-Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet.  Die TT-Dateien sind T4-Vorlagen, die den Code zu generieren, die das Modell verarbeiten und speichern Sie Änderungen an der Datenbank. Sie können alle diese Dateien im Projektmappen-Explorer unter dem Knoten Northwind_model sehen:  
+5. Der Assistent generiert der C#-Klassen, die das Entity Framework-Modell darstellen. Hierbei handelt es sich um plain old C#-Klassen aus, und sie sind, was wir wird Databind der WPF-Benutzeroberfläche. Die EDMX-Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet.  Die TT-Dateien sind T4-Vorlagen, die den Code zu generieren, die das Modell verarbeiten und speichern Sie Änderungen an der Datenbank. Sie können alle diese Dateien im Projektmappen-Explorer unter dem Knoten Northwind_model sehen:  
   
     ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png "Raddata Projektmappen-Explorer EF-Model-Dateien")  
   

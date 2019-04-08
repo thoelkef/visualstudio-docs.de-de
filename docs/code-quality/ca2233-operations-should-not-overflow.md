@@ -100,7 +100,7 @@ Geprüfte Blöcke werden nicht unterstützt, [!INCLUDE[vbprvb](../code-quality/i
 
 Wenn Sie aktiviert arithmetischen Über-/Unterlauf in C# -Code aktivieren, entspricht es umbruchvorgang jede ganze Zahl in einem aktivierten Block.
 
-Um überprüfte arithmetischen Über-/Unterlauf in c# zu aktivieren:
+Um überprüfte arithmetischen Über-/Unterlauf in C# zu aktivieren:
 
 1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 

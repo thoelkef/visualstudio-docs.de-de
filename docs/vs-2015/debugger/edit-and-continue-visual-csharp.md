@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren (Visual c#) | Microsoft-Dokumentation
+title: Bearbeiten und Fortfahren (Visual C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,7 +31,7 @@ ms.locfileid: "58946165"
 
 Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen. Im Ausführmodus ist der Quellcode-Editor schreibgeschützt.  
   
- Die Funktion "Bearbeiten und Fortfahren" unterstützt bis auf einige Ausnahmen die meisten Änderungen, die Sie möglicherweise während einer Debugsitzung vornehmen möchten. Weitere Informationen finden Sie unter [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
+ Die Funktion "Bearbeiten und Fortfahren" unterstützt bis auf einige Ausnahmen die meisten Änderungen, die Sie möglicherweise während einer Debugsitzung vornehmen möchten. Weitere Informationen finden Sie unter [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md).  
   
  Die Funktion "Bearbeiten und Fortfahren" wird für 64-Bit-Projekte unterstützt, die auf .NET Framework 4.5.1 abzielen.  
   

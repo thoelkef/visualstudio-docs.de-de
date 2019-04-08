@@ -38,7 +38,7 @@ ms.locfileid: "58959041"
 ## <a name="rule-description"></a>Regelbeschreibung
  Es gibt keine Situationen, in denen entweder auf Gleichheit oder Ungleichheit für Instanzen eines Typs gilt, und der entgegengesetzte Operator ist nicht definiert. Typen implementieren den Inequality-Operator in der Regel durch Rückgabe den negierten Wert des Gleichheitsoperators.
 
- Der c#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.
+ Der C#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie sowohl die Gleichheits- und Ungleichheitsoperatoren oder zu entfernen Sie, die vorhanden ist.

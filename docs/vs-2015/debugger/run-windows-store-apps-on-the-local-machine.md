@@ -46,7 +46,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
   
  Sie können das Ausführungsziel auch direkt in der Projekteigenschaftendatei festlegen. Mit der rechten Maustaste in des Namens des Projekts **Projektmappen-Explorer** und wählen Sie dann **Eigenschaften**. Führen Sie dann eine der folgenden Aktionen aus:  
   
--   Klicken Sie in c# und Visual Basic-Projekten auf **Debuggen** und wählen Sie dann **lokalen Computer** aus der **Zielgerät** Dropdown-Liste.  
+-   Klicken Sie in C# und Visual Basic-Projekten auf **Debuggen** und wählen Sie dann **lokalen Computer** aus der **Zielgerät** Dropdown-Liste.  
   
      ![C&#35; und Visual Basic-Projekt-Eigenschaftenseite](../debugger/media/vsrun-cs-vb-projprop-local.png "VSRUN_CS_VB_ProjProp_Local")  
   

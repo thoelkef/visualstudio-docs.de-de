@@ -83,5 +83,5 @@ Das folgende Beispiel zeigt einige Objektsperren, die die Regel verletzen.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [lock-Anweisung (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [lock-Anweisung (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [SyncLock-Anweisung (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

@@ -33,7 +33,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Erstellen ein Projektvorlagenprojekt mit einem VSIX-Projekt  
  Sie beginnen, erstellen eine benutzerdefinierte Vorlage, mit der Standardprojektvorlage-Projekt., die Teil von Visual Studio SDK ist. In diesem Verfahren verwenden wir ein C#-Projekt-Vorlagenprojekt, aber es gibt auch ein Vorlagenprojekt für Visual Basic-Projekt. Dann fügen Sie ein VSIX-Projekt der Projektmappe, die das Projektvorlagenprojekt enthält.  
   
-1.  Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei / neu / Projekt / Visual c# / Erweiterbarkeit / C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
+1.  Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei / neu / Projekt / Visual C# / Erweiterbarkeit / C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

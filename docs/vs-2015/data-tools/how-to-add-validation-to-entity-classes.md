@@ -110,7 +110,7 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
   
       Für C#-Projekte:  
   
-   5. Da c#-Projekte die Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle erstellen `Update` *CLASSNAME* Methode.  
+   5. Da C#-Projekte die Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle erstellen `Update` *CLASSNAME* Methode.  
   
    6. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Updatemethode für die Klasse, der Sie Validierung hinzufügen möchten. Der folgende Code ähnelt dem Code, der generiert wird, bei der Auswahl einer `Update` *CLASSNAME* partielle Methode:  
   

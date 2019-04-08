@@ -1,5 +1,5 @@
 ---
-title: Refactoring (c#) | Microsoft-Dokumentation
+title: Refactoring (C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -30,7 +30,7 @@ ms.locfileid: "58959696"
 
 Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschrieben wurde, indem Sie die interne Struktur des Codes ändern, ohne das externe Verhalten des Codes zu ändern.  
   
- Visual c# bietet die folgenden Befehle für die Umgestaltung für die **Refactoring** Menü:  
+ Visual C# bietet die folgenden Befehle für die Umgestaltung für die **Refactoring** Menü:  
   
 -   [Refactoring „Methode extrahieren“ (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
@@ -69,7 +69,7 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
   
  Die **Ergebnisse der Überprüfung** Dialogfeld kann benachrichtigt, wenn die umgestaltungs-Engine Kompilierungsfehler erkennt oder erkennt, dass ein Umgestaltungsvorgang versehentlich führt dazu, einen Codeverweis dass sich an etwas anderes als den binden ursprünglich gebunden Sie (neubindung Problem).  
   
- Zum Aktivieren der Ergebnisse der Überprüfung feature, auf die **Tools** Menü klicken Sie auf **Optionen**. In der **Optionen** Dialogfeld erweitern Sie **Text-Editor**, und erweitern Sie dann **c#**. Klicken Sie auf **erweitert** , und wählen Sie die **Ergebnisse der Umgestaltung überprüfen** Kontrollkästchen.  
+ Zum Aktivieren der Ergebnisse der Überprüfung feature, auf die **Tools** Menü klicken Sie auf **Optionen**. In der **Optionen** Dialogfeld erweitern Sie **Text-Editor**, und erweitern Sie dann **C#**. Klicken Sie auf **erweitert** , und wählen Sie die **Ergebnisse der Umgestaltung überprüfen** Kontrollkästchen.  
   
  Die **Ergebnisse der Überprüfung** Dialogfeld unterscheidet, den Unterschied zwischen zwei Arten von neubindung Probleme.  
   
@@ -107,5 +107,5 @@ class Example
  Wenn Sie die Umgestaltung verwenden, um `OtherMethod` zu `Method`, dieses Dialogfeld wird angezeigt. Der Verweis in `Main` verweist nun auf die überladene Methode, die akzeptiert eine `int` -Parameter, anstatt die überladene Methode, die akzeptiert eine `object` Parameter.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden die Visual Studio-Entwicklungsumgebung für c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [Verwenden die Visual Studio-Entwicklungsumgebung für C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Vorgehensweise: Restore C# Refactoring Snippets (Vorgehensweise: Wiederherstellen von C#-Umgestaltungsausschnitten)](../ide/how-to-restore-csharp-refactoring-snippets.md)

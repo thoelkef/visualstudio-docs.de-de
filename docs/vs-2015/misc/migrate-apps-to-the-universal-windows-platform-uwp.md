@@ -197,7 +197,7 @@ Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projekt
   
 12. Suchen der \<ItemGroup >-Element, das andere Objekte enthält, die Ihr Projekt wie z. B. Logo-PNG-Dateien hinzugefügt werden (\<Content Include="Assets\Logo.scale-100.png" / >). Fügen Sie die folgenden \<Content > untergeordnetes Element dieser \<ItemGroup >-Element:  
   
-     **Für c#:**  
+     **Für C#:**  
   
     ```xml  
     <Content Include="Properties\default.rd.xml" />  

@@ -73,7 +73,7 @@ Dieser exemplarischen Vorgehensweise erstellen eine native C++ Mathematikbibliot
   
 6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **NativeMathVSIX** Projekt, und wählen Sie dann **hinzufügen**, **neues Element**.  
   
-7.  In der Liste der **Visual c#-Elemente**, erweitern Sie **Daten**, und wählen Sie dann **XML-Datei**. In der **Namen** geben `SDKManifest.xml`, und wählen Sie dann die **OK** Schaltfläche.  
+7.  In der Liste der **Visual C#-Elemente**, erweitern Sie **Daten**, und wählen Sie dann **XML-Datei**. In der **Namen** geben `SDKManifest.xml`, und wählen Sie dann die **OK** Schaltfläche.  
   
 8.  Verwenden Sie diesen XML-Code, um den Inhalt der Datei zu ersetzen:  
   

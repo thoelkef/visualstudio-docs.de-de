@@ -44,7 +44,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 - [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-- Code, den Sie, z. B. Visual c#, Visual Basic, C++, JavaScript oder X++ Debuggen können
+- Code, den Sie, z. B. Visual C#, Visual Basic, C++, JavaScript oder X++ Debuggen können
 
   Thema
 
@@ -89,7 +89,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
  ![Code Map mit nächster Aufrufliste aktualisieren](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Hinzufügen von zugehörigem Code zur Code Map
- Jetzt haben Sie einer Karte – was geschieht als Nächstes? Wenn Sie mit c# oder Visual Basic arbeiten, fügen Sie Elemente wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.
+ Jetzt haben Sie einer Karte – was geschieht als Nächstes? Wenn Sie mit C# oder Visual Basic arbeiten, fügen Sie Elemente wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was im Code geschieht.
 
  Doppelklicken Sie auf eine Methode, um ihre Codedefinition anzuzeigen, oder verwenden Sie das Kontextmenü für die Methode. (Tastatur: Wählen Sie die Methode auf der Karte, und drücken Sie **F12**)
 

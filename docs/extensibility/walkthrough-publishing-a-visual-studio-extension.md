@@ -30,7 +30,7 @@ Diese exemplarische Vorgehensweise veranschaulicht die Visual Studio-Erweiterung
 
 In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung, aber die Schritte für jede Art von Erweiterung gültig sind.
 
-1. Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublish` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen Ihrer erste Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in C# mit dem Namen `TestPublish` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen Ihrer erste Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Packen Sie die Erweiterung
 

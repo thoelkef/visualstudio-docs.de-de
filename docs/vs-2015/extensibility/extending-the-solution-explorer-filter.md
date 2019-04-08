@@ -190,7 +190,7 @@ Sie können die erweitern **Projektmappen-Explorer** Funktionen ein- oder Ausble
   
 1.  Erstellen Sie das Projekt, und führen Sie es aus. Eine zweite Instanz von Visual Studio wird geöffnet. Dies ist die experimentelle Instanz bezeichnet.  
   
-2.  Öffnen Sie in der experimentellen Instanz von Visual Studio eine c#-Projekt ein.  
+2.  Öffnen Sie in der experimentellen Instanz von Visual Studio eine C#-Projekt ein.  
   
 3.  Suchen Sie nach der Schaltfläche, die Sie auf der Symbolleiste des Projektmappen-Explorer hinzugefügt. Es sollte die vierte Schaltfläche von links sein.  
   

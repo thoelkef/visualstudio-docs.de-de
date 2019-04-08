@@ -66,7 +66,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die meisten Benutzer 
 ##  <a name="BKMK_ProjectTemplate"></a> Welche Projektvorlagen werden von der VSSDK bereitgestellt?
  Die zwei wichtigsten Typen von Erweiterungen sind VSPackages und MEF-Erweiterungen. Im Allgemeinen werden die VSPackage-Erweiterungen für Erweiterungen verwendet, die verwenden oder Erweitern von Befehlen, Toolfenster und Projekte. MEF-Erweiterungen werden zum Erweitern oder Anpassen von Visual Studio-Editor.
 
- Für Erweiterungen für Visual c# und Visual Basic bietet das VS SDK eine leere VSIX-Projektvorlage, die Sie zusammen mit den neuen Vorlagen verwenden können, die Menübefehle, Toolfenster und Erweiterungen des Editors zu erstellen. Sie können auch diese Vorlage, um die Paket-Projektvorlage, Codeausschnitte und andere Artefakte für die Verteilung an andere Benutzer verwenden.
+ Für Erweiterungen für Visual C# und Visual Basic bietet das VS SDK eine leere VSIX-Projektvorlage, die Sie zusammen mit den neuen Vorlagen verwenden können, die Menübefehle, Toolfenster und Erweiterungen des Editors zu erstellen. Sie können auch diese Vorlage, um die Paket-Projektvorlage, Codeausschnitte und andere Artefakte für die Verteilung an andere Benutzer verwenden.
 
  Für C++ bietet der VSPackage-Assistent den Code zum Hinzufügen von Menübefehle, Toolfenster und benutzerdefinierte Editoren.
 

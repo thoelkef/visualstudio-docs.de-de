@@ -1,5 +1,5 @@
 ---
-title: Refactoring (c#) Feld kapseln | Microsoft-Dokumentation
+title: Refactoring (C#) Feld kapseln | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

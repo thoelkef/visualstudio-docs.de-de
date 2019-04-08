@@ -19,7 +19,7 @@ ms.locfileid: "58789529"
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier sind die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.
 
 > [!WARNING]
->  Ab Visual Studio 2015 für c# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
+>  Ab Visual Studio 2015 für C# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
 
 > [!IMPORTANT]
 >  In vielen Fällen können Sie einfach Ihren Code-add-in einem VSIX-Projekt mit einem VSPackage-Projektelement übertragen. Das DTE-Automatisierungsobjekt können Sie durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode abrufen.

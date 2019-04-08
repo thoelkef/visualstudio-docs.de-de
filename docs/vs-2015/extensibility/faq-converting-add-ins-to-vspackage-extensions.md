@@ -21,7 +21,7 @@ ms.locfileid: "58961211"
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier sind die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.  
   
 > [!WARNING]
->  Ab Visual Studio 2015 für c# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  Ab Visual Studio 2015 für C# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
 >  In vielen Fällen können Sie einfach Ihren Code-add-in einem VSIX-Projekt mit einem VSPackage-Projektelement übertragen. Das DTE-Automatisierungsobjekt können Sie durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode abrufen.  
@@ -44,9 +44,9 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu machen, die über einen Menübefehl verfügt  
   
-1.  Erstellen eines VSIX-Projekts (**Datei**, **neu**, **Projekt**, oder geben **Projekt** in die **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual c# / Erweiterbarkeit** oder **Visual Basic / Erweiterungen** , und wählen Sie **VSIX-Projekt**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.  
+1.  Erstellen eines VSIX-Projekts (**Datei**, **neu**, **Projekt**, oder geben **Projekt** in die **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual C# / Erweiterbarkeit** oder **Visual Basic / Erweiterungen** , und wählen Sie **VSIX-Projekt**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.  
   
-2.  Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen / neues Element**. In der **neues Projekt** Dialogfeld für Visual c# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)  
+2.  Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen / neues Element**. In der **neues Projekt** Dialogfeld für Visual C# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)  
   
 3.  Drücken Sie F5, um das Projekt im Debugmodus zu erstellen und auszuführen.  
   

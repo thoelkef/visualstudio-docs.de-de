@@ -49,7 +49,7 @@ Um einen Verstoß gegen diese Regel zu beheben, außer Kraft setzen <xref:System
 - op_LessThan
 - op_GreaterThan
 
-Sind in c# wie folgt die Token, die verwendet werden, um diese Operatoren darstellen:
+Sind in C# wie folgt die Token, die verwendet werden, um diese Operatoren darstellen:
 
 ```csharp
 ==

@@ -40,7 +40,7 @@ Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [
 
 Es gibt keine Situationen, in denen entweder auf Gleichheit oder Ungleichheit für Instanzen eines Typs gilt, und der entgegengesetzte Operator ist nicht definiert. Typen implementieren den Inequality-Operator in der Regel durch Rückgabe den negierten Wert des Gleichheitsoperators.
 
-Der c#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.
+Der C#-Compiler gibt einen Fehler für Verstöße gegen diese Regel.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 

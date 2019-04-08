@@ -38,7 +38,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
 4.  Benennen Sie das Steuerelement `WebUserControl` , und klicken Sie dann auf **OK**.  
   
 ## <a name="implementing-the-user-control"></a>Das Benutzersteuerelement implementiert  
- Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzeroberfläche (UI) in XAML, und klicken Sie dann schreiben Sie die CodeBehind-Ereignisse in c# oder einer anderen .NET-Sprache zu.  
+ Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzeroberfläche (UI) in XAML, und klicken Sie dann schreiben Sie die CodeBehind-Ereignisse in C# oder einer anderen .NET-Sprache zu.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Der XAML für das Benutzersteuerelement schreiben  
   

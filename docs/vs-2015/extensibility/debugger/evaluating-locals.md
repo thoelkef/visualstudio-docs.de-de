@@ -34,7 +34,7 @@ ms.locfileid: "58961394"
   
 3.  Formatiert den Wert basierend auf den lokalen Typ.  
   
-4.  Gibt ein generisches Objekt, das den lokalen Wert enthält. In c# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
+4.  Gibt ein generisches Objekt, das den lokalen Wert enthält. In C# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
  Dies ist eine Implementierung einer Funktion, die den Wert einer lokalen in verwaltetem Code abruft.  

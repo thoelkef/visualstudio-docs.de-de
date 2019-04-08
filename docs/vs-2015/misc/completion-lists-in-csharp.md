@@ -1,5 +1,5 @@
 ---
-title: Vervollständigungslisten in c# | Microsoft-Dokumentation
+title: Vervollständigungslisten in C# | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp

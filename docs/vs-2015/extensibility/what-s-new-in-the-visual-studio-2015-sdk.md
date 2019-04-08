@@ -40,7 +40,7 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
  Ab Visual Studio 2015 SDK können, müssen Sie verschiedene Optionen zum Erstellen von Erweiterungen, je nachdem, welche, die Programmiersprache Sie verwenden.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C#- oder Visual Basic
- Für c# und Visual Basic ist es eine Vielzahl von Projektelementvorlagen, mit die Sie VSPackages, Menübefehle, Toolfenster, Editor-Klassifizierer, Editorzusatzelemente und Rand editorerweiterungen erstellen können. Sie können einige oder alle diese zum standard VSIX-Projekt hinzufügen. Weitere Informationen finden Sie unter:
+ Für C# und Visual Basic ist es eine Vielzahl von Projektelementvorlagen, mit die Sie VSPackages, Menübefehle, Toolfenster, Editor-Klassifizierer, Editorzusatzelemente und Rand editorerweiterungen erstellen können. Sie können einige oder alle diese zum standard VSIX-Projekt hinzufügen. Weitere Informationen finden Sie unter:
 
 -   [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,7 +50,7 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
 
 -   [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     Der VSPackage-Assistent erstellt die Erweiterungen nicht mehr in c# oder Visual Basic.
+     Der VSPackage-Assistent erstellt die Erweiterungen nicht mehr in C# oder Visual Basic.
 
 ### <a name="c"></a>C++
  Für C++ Menübefehle, Toolfenster und benutzerdefinierte Editoren des VSPackage-Assistenten unterstützt. Suchen sie in der **neues Projekt** Dialogfeld **Visual C++ / Erweiterbarkeit**.

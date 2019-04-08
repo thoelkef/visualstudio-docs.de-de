@@ -52,7 +52,7 @@ ms.locfileid: "57868034"
 | *.webpart* | Ein *Webpartdefinition* Datei. Diese Datei enthält die Einstellungen der Eigenschaft für ein Webpart. Weitere Informationen finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkId=177791). |
 | *.ascx* | Eine ASP.NET UserControl-Datei. Diese Datei definiert die Benutzeroberfläche des ein visuelles Webpart an. |
 | *.aspx* | Eine Datei der ASP.NET-Seite. Diese Datei enthält die XML-Markup, das eine Seite "Anwendung" definiert. |
-| *cs* oder *vb* Dateien | Dieser Codedateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell, das die von Visual c# oder Visual Basic-Code, z. B. Anwendungsseiten, Webparts und Workflows zugegriffen werden kann. |
+| *cs* oder *vb* Dateien | Dieser Codedateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell, das die von Visual C# oder Visual Basic-Code, z. B. Anwendungsseiten, Webparts und Workflows zugegriffen werden kann. |
 
 ## <a name="create-project-templates"></a>Erstellen von Projektvorlagen
  Wenn Sie eine SharePoint-Projektvorlage erstellen, gibt es einige Dateien, die immer erforderlichen und optionalen Dateien sind, die von bestimmten Typen von Projekten verwendet werden kann. SharePoint-Projekte enthalten in der Regel mindestens eine SharePoint-Projektelement. Dies ist jedoch nicht erforderlich. Sie können z. B. eine SharePoint-Projektvorlage definieren, die nur für die Bereitstellung von SharePoint-Lösungen, die in anderen Projekten erstellt verwendet werden soll.

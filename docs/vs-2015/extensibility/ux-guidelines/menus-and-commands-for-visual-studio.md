@@ -289,4 +289,4 @@ ms.locfileid: "59001382"
 
 1.  Überprüfen Sie die Liste der [Tastenkombinationen für Visual Studio 2013](http://visualstudioshortcuts.com/2013/) zu ermitteln, ob ähnliche Befehle, um Ihre mit zu gruppieren.
 
-2.  Wechseln Sie zu **Tools > Optionen > Umgebung > Tastatur** und Ihre Verknüpfung testen. Überprüfen Sie, dass jede Tastaturzuordnungsschema unter aufgeführt "die folgenden zusätzliches Tastaturzuordnungsschema anwenden." Überprüfen Sie Allgemein, c#, VB und C++-Profilen, wie die eindeutige Tastenkombinationen freigeben. Die Verknüpfung ist verfügbar, falls es nicht in allen diesen zugeordnet ist.
+2.  Wechseln Sie zu **Tools > Optionen > Umgebung > Tastatur** und Ihre Verknüpfung testen. Überprüfen Sie, dass jede Tastaturzuordnungsschema unter aufgeführt "die folgenden zusätzliches Tastaturzuordnungsschema anwenden." Überprüfen Sie Allgemein, C#, VB und C++-Profilen, wie die eindeutige Tastenkombinationen freigeben. Die Verknüpfung ist verfügbar, falls es nicht in allen diesen zugeordnet ist.

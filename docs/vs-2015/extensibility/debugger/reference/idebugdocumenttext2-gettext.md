@@ -61,7 +61,7 @@ int GetText( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="example"></a>Beispiel  
- Dieses Beispiel zeigt, wie diese Methode in c# aufgerufen werden kann.  
+ Dieses Beispiel zeigt, wie diese Methode in C# aufgerufen werden kann.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

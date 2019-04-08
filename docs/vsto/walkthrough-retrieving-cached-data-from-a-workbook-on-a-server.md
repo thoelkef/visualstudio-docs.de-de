@@ -245,7 +245,7 @@ ms.locfileid: "54867428"
 
 6. Öffnen der *"Program.cs"* oder *"Module1.vb"* Datei im Code-Editor.
 
-7. Fügen Sie die folgenden **mit** (für c#) oder **Importe** (für Visual Basic)-Anweisung am Anfang der Codedatei zu verlassen.
+7. Fügen Sie die folgenden **mit** (für C#) oder **Importe** (für Visual Basic)-Anweisung am Anfang der Codedatei zu verlassen.
 
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]

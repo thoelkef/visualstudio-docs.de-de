@@ -36,7 +36,7 @@ Durch Hinzufügen einer Anwendungskonfigurationsdatei (Datei „app.config“) z
   
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.  
   
-2.  Erweitern Sie **installiert**, erweitern Sie **Visual c#-Elemente**, und wählen Sie dann die **Anwendungskonfigurationsdatei** Vorlage.  
+2.  Erweitern Sie **installiert**, erweitern Sie **Visual C#-Elemente**, und wählen Sie dann die **Anwendungskonfigurationsdatei** Vorlage.  
   
 3.  Geben Sie im Textfeld **Name** einen Namen ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen**.  
   

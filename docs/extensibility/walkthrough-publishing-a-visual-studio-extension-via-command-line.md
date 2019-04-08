@@ -200,7 +200,7 @@ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visua
 
 In diesem Fall verwenden wir eine Standard-VSPackage-Erweiterung, aber die gleichen Schritte gelten für jede Art von Erweiterung.
 
-1. Erstellen Sie ein VSPackage in c# mit dem Namen "TestPublish", das einen Menübefehl verfügt. Weitere Informationen finden Sie unter [Erstellen Ihrer ersten Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in C# mit dem Namen "TestPublish", das einen Menübefehl verfügt. Weitere Informationen finden Sie unter [Erstellen Ihrer ersten Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Packen Sie die Erweiterung
 

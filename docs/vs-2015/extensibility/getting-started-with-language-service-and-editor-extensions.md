@@ -78,7 +78,7 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Mithilfe von Vorlagen zum Erstellen von Editor-Erweiterungen  
- Sie können die Editorvorlagen verwenden, zum Erstellen von MEF-Erweiterungen, die Klassifizierungen, Zusatzelemente und Ränder anpassen. Es sind Vorlagen für c# und Visual Basic-Projekte. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+ Sie können die Editorvorlagen verwenden, zum Erstellen von MEF-Erweiterungen, die Klassifizierungen, Zusatzelemente und Ränder anpassen. Es sind Vorlagen für C# und Visual Basic-Projekte. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
  Sie können auch die VSIX-Projektvorlage verwenden, zum Erstellen von Erweiterungen. Diese Vorlage enthält nur die Elemente, die erforderlich sind, um jede Art von Erweiterung bereitstellen und sind der Datei "Source.Extension.vsixmanifest", die erforderlichen Assemblyverweise und eine Projektdatei, die die Buildaufgaben, mit denen Sie bereitstellen können die die Erweiterung. Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).  
   

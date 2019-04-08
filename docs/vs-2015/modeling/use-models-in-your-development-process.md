@@ -1,13 +1,8 @@
 ---
 title: Verwenden von Modellen im Entwicklungsprozess | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,13 +10,13 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757704"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59001203"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
   
 -   Entwurfsmuster: Beschreiben die gemeinsamen Entwurfsregeln für die verschiedenen Teile des Systems.  
   
--   Testspezifikationen: In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.  
+-   Testspezifikationen:  In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.  
   
 -   Projektplan: Der Projektplan oder -rückstand legt fest, wann die einzelnen Funktionen bereitgestellt werden. Sie können jede Funktion definieren, indem Sie angeben, welche Anwendungsfälle und Geschäftsregeln von ihr implementiert oder erweitert werden. Sie können entweder direkt im Plan auf die Anwendungsfälle und Geschäftsregeln verweisen, oder Sie können in einem eigenen Dokument einen Satz von Funktionen definieren und im Plan die Funktionstitel verwenden.  
   
@@ -104,7 +99,7 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
   
 -   Anwendungsfälle: Sie können einen Anwendungsfall mit den Entwicklungsaufgaben verknüpfen, durch die er implementiert wird.  
   
--   Anwendungsfallerweiterungen: Wenn in einer Iteration nur ein Aspekt eines Anwendungsfalls implementiert wird, können Sie ihn zusammen mit einer oder mehreren Erweiterungen als Basisanwendungsfall abtrennen. Die Erweiterungen sind Anwendungsfälle, die über die Beziehung «extend» mit dem Basisfall verknüpft sind. Weitere Informationen über anwendungsfallerweiterungen finden Sie unter [UML-Anwendungsfalldiagrammen: Verweis](../modeling/uml-use-case-diagrams-reference.md).  
+-   Anwendungsfallerweiterungen: Wenn in einer Iteration nur ein Aspekt eines Anwendungsfalls implementiert wird, können Sie ihn zusammen mit einer oder mehreren Erweiterungen als Basisanwendungsfall abtrennen. Die Erweiterungen sind Anwendungsfälle, die über die Beziehung «extend» mit dem Basisfall verknüpft sind. Weitere Informationen über anwendungsfallerweiterungen finden Sie unter [UML-Anwendungsfalldiagrammen: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-use-case-diagrams-reference.md).  
   
 -   Kommentare, die Geschäftsregeln oder Servicequalitätsanforderungen beschreiben. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
@@ -137,18 +132,15 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
   
 |**Kategorie**|**Links**|  
 |------------------|---------------|  
-|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN Anleitungsvideos: Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [wie Reihe von MSDN: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN Anleitungsvideos: Das Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Reihe: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md)   
  [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md)   
  [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)   
  [Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)
-
-
-

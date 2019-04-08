@@ -49,7 +49,7 @@ ms.locfileid: "58958824"
 
 - op_GreaterThan
 
-  In c# werden die Token, die zur Darstellung dieser Operatoren verwendet werden wie folgt: ==,! =, \<, und >.
+  In C# werden die Token, die zur Darstellung dieser Operatoren verwendet werden wie folgt: ==,! =, \<, und >.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, wenn es sich bei den Verstoß verursacht wird, durch fehlende Operatoren und Ihre bevorzugte Programmiersprache unterstützt keine operatorüberladung, wie mit Visual Basic .NET. Es ist auch sicher, um eine Warnung für diese Regel zu unterdrücken, wenn es auf Gleichheitsoperatoren ausgelöst wird, anders als Op_Equality, wenn Sie feststellen, dass die Implementierung der Operatoren nicht im Kontext Ihrer Anwendung sinnvoll ist. Sie sollten jedoch immer op_Equality und dem == Operator, wenn Sie Object.Equals überschreiben.

@@ -46,7 +46,7 @@ Um sicherzustellen, dass der Code dem Entwurf nicht widerspricht ist, können ü
 
 - Visual Studio
 
-- Eine Lösung, die ein Modellierungsprojekt mit einem Abhängigkeitsdiagramm enthält. In diesem Abhängigkeitsdiagramm muss mit Artefakten in c# oder Visual Basic-Projekten verknüpft sein, die Sie überprüfen möchten. Finden Sie unter [Erstellen von Abhängigkeitsdiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).
+- Eine Lösung, die ein Modellierungsprojekt mit einem Abhängigkeitsdiagramm enthält. In diesem Abhängigkeitsdiagramm muss mit Artefakten in C# oder Visual Basic-Projekten verknüpft sein, die Sie überprüfen möchten. Finden Sie unter [Erstellen von Abhängigkeitsdiagrammen aus Ihrem Code](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
 > Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
@@ -62,7 +62,7 @@ Sie können den Code manuell aus einer open Abhängigkeitsdiagramm in Visual Stu
 
 Abhängigkeit von Überprüfungen in Echtzeit und Fehler werden sofort angezeigt, der **Fehlerliste**.
 
-* Live-Überprüfung wird für c# und Visual Basic unterstützt.
+* Live-Überprüfung wird für C# und Visual Basic unterstützt.
 
 * Öffnen Sie die optionseinstellungen aus der goldenen Leiste, die in angezeigt, um vollständige projektmappenanalyse aktivieren bei Verwendung von live-abhängigkeitsüberprüfung der **Fehlerliste**.
 

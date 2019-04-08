@@ -28,7 +28,7 @@ ms.locfileid: "58957295"
   
  In dieser Implementierung der `IDebugParsedExpression::EvaluateSync`, der Ausdruck analysiert und gleichzeitig ausgewertet. Diese Implementierung führt die folgenden Aufgaben:  
   
-1.  Analysiert und wertet den Ausdruck aus, um ein generisches Objekt zu erstellen, das den Wert und den Typ enthält. In c# wird dies als eine `object` während C++ dies als dargestellt wird ein `VARIANT`.  
+1.  Analysiert und wertet den Ausdruck aus, um ein generisches Objekt zu erstellen, das den Wert und den Typ enthält. In C# wird dies als eine `object` während C++ dies als dargestellt wird ein `VARIANT`.  
   
 2.  Instanziiert die Klasse (namens `CValueProperty` in diesem Beispiel), implementiert die `IDebugProperty2` Schnittstelle, und speichert Sie in der Klasse den Wert zurückgegeben werden.  
   

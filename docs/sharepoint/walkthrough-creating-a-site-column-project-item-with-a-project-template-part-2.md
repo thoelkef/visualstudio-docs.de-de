@@ -112,7 +112,7 @@ ms.locfileid: "57868103"
 
 1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **ProjectTemplateWizard** Projektknoten, und wählen Sie dann **Eigenschaften**.
 
-2.  In der **Projekt-Designer**, wählen Sie die **Anwendung** Registerkarte für ein Visual Basic#-Projekt oder die **Kompilieren** Visual Basic-Projekt auf der Registerkarte.
+2.  In der **Projekt-Designer**, wählen Sie die **Anwendung** Registerkarte für ein Visual BasiC#-Projekt oder die **Kompilieren** Visual Basic-Projekt auf der Registerkarte.
 
 3.  Stellen Sie sicher, dass für das Zielframework .NET Framework 4.5 und nicht .NET Framework 4.5 Client Profile festgelegt ist.
 

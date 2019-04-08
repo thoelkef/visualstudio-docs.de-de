@@ -39,7 +39,7 @@ Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen 
   
 2.  Von der **Debuggen** Menü klicken Sie auf **Weiter**, **Schritt**, oder **Festlegen der nächsten Anweisung** oder Auswerten einer Funktion in einem Debuggerfenster.  
   
-     Der neue Code wird kompiliert, und das Debuggen wird mit neuem Code fortgesetzt. Einige Änderungen werden von Bearbeiten und Fortfahren nicht unterstützt. Weitere Informationen finden Sie unter [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
+     Der neue Code wird kompiliert, und das Debuggen wird mit neuem Code fortgesetzt. Einige Änderungen werden von Bearbeiten und Fortfahren nicht unterstützt. Weitere Informationen finden Sie unter [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>So aktivieren bzw. deaktivieren Sie "Bearbeiten und Fortfahren"  
   
@@ -53,5 +53,5 @@ Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen 
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Unterstützte Codeänderungen (c#)](../debugger/supported-code-changes-csharp.md)   
+ [Unterstützte Codeänderungen (C#)](../debugger/supported-code-changes-csharp.md)   
  [Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

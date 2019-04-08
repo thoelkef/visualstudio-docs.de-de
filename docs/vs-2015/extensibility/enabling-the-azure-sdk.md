@@ -31,7 +31,7 @@ Das Azure SDK für .NET können, die Sie erstellen, konfigurieren, erstellen, De
   
 1.  Auf der **Datei** Menü ein neues Projekt erstellen. (Klicken Sie auf **neu** , und klicken Sie dann auf **Projekt**.)  
   
-2.  Erweitern Sie den Knoten für eine **Visual Basic** oder **c#** , und klicken Sie dann auf **Cloud**.  
+2.  Erweitern Sie den Knoten für eine **Visual Basic** oder **C#** , und klicken Sie dann auf **Cloud**.  
   
 3.  Wählen Sie im mittleren Bereich **Azure SDK für .NET abrufen**, und klicken Sie dann auf **OK**.  
   

@@ -200,31 +200,31 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
  Für Visual Studio-Assistenten verwendet.  
   
  <xref:VSLangProj>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj2>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj80>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj90>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj100>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj110>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj140>  
- Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
   
  <xref:Microsoft.VisualStudio.Language.CallHierarchy>  
- Für c# und Visual Basic-Automatisierung verwendet.  
+ Für C# und Visual Basic-Automatisierung verwendet.  
   
  <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>  
- Für c# und Visual Basic-Automatisierung verwendet.  
+ Für C# und Visual Basic-Automatisierung verwendet.  
   
  <xref:Microsoft.VisualStudio.Threading>  
  Für Visual Studio threading verwendet.  

@@ -25,7 +25,7 @@ Wenn Sie eine benutzerdefinierte Startseite mithilfe der Projektvorlage "Startse
   
 #### <a name="to-create-a-blank-start-page"></a>Um eine leere Startseite erstellen  
   
-1.  Erstellen eines neuen Projekts vom Typ **WPF-Anwendung** (**Visual c# / Windows-Desktop**.  
+1.  Erstellen eines neuen Projekts vom Typ **WPF-Anwendung** (**Visual C# / Windows-Desktop**.  
   
 2.  Fügen Sie einen Verweis auf `Microsoft.VisualStudio.Shell.14.0` hinzu.  
   
