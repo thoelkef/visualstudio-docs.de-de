@@ -65,7 +65,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
   
-2. In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual c#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
+2. In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual C#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
   
 3. Wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
   

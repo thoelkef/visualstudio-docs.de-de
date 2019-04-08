@@ -21,7 +21,7 @@ ms.locfileid: "58947102"
 # <a name="using-escape-sequences-in-text-templates"></a>Verwenden von Escapesequenzen in Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Können Sie Escapesequenzen in Textvorlagen generieren Sie Text in Template Tags und (in c# nur Code)-Steuerelement-Escape-Zeichen und Anführungszeichen.  
+Können Sie Escapesequenzen in Textvorlagen generieren Sie Text in Template Tags und (in C# nur Code)-Steuerelement-Escape-Zeichen und Anführungszeichen.  
   
  Um öffnende und schließende Tags für einen standard-Codeblock in die Ausgabedatei drucken, mit Escapezeichen versehen Sie die Tags wie folgt:  
   
@@ -37,7 +37,7 @@ Können Sie Escapesequenzen in Textvorlagen generieren Sie Text in Template Tags
   
 -   Wenn eine ungerade Anzahl von Escapezeichen Vorlagentags Text vorangestellt ist (\\) Zeichen der Vorlagenparser umfasst die Hälfte der der "\\"-Zeichen sowie das Tag selbst (\<# oder #>). Das Tag ist nicht als Text Template-Tag werden.  
   
--   Wenn ein Escapezeichen (\\) Zeichen wird angezeigt, an anderer Stelle in beliebiger Reihenfolge als die, in dem sie ein Steuerzeichen noch ein öffnendes ohne schließendes Anführungszeichen (nur c#) versieht, wird das Zeichen direkt ausgegeben werden.  
+-   Wenn ein Escapezeichen (\\) Zeichen wird angezeigt, an anderer Stelle in beliebiger Reihenfolge als die, in dem sie ein Steuerzeichen noch ein öffnendes ohne schließendes Anführungszeichen (nur C#) versieht, wird das Zeichen direkt ausgegeben werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

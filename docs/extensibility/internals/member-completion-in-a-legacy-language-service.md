@@ -38,7 +38,7 @@ Es folgen die beiden Möglichkeiten, die mit die MPF-Klassen, in denen eine Memb
 
 - Die <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Vervollständigungszeichen Element und legt einen token Trigger [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) für dieses Zeichen.
 
-Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In c# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.
+Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In C# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.
 
 ### <a name="the-intellisense-member-list-command"></a>Der IntelliSense-Member-List-Befehl
 
@@ -103,7 +103,7 @@ Für den Abschluss der Member die <xref:Microsoft.VisualStudio.Package.Source> -
 
 Der Parser aufgerufen wird und [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) oder [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) Wenn ein Element auf Zeichen eingegeben wird. Den Speicherort, der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt ist, sofort, nachdem das Element ausgewählt haben Zeichen. Der Parser muss die Namen aller Elemente erfasst werden, die in einer Memberliste zum jeweiligen Zeitpunkt im Quellcode angezeigt werden können. Klicken Sie dann analysiert der Parser die aktuelle Zeile aus, um den Bereich zu ermitteln, die, den der Benutzer das Element auf Zeichen zugeordnet möchte.
 
-Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In C# geschrieben, betrachten Sie die Membervariable `languageService` aufweist eine Art von `LanguageService`eingeben **LanguageService.** erstellt eine Liste aller Member der `LanguageService` Klasse. Auch in c# eingeben **dies.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.
+Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In C# geschrieben, betrachten Sie die Membervariable `languageService` aufweist eine Art von `LanguageService`eingeben **LanguageService.** erstellt eine Liste aller Member der `LanguageService` Klasse. Auch in C# eingeben **dies.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.
 
 ### <a name="parser-example"></a>Parser-Beispiel
 

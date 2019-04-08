@@ -1,5 +1,5 @@
 ---
-title: Refactoring mit Umbenennen (c#) | Microsoft-Dokumentation
+title: Refactoring mit Umbenennen (C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

@@ -38,7 +38,7 @@ ms.locfileid: "58958040"
 ## <a name="rule-description"></a>Regelbeschreibung
  Typen deklarieren Methoden als virtuell, damit erbende Typen die Implementierung der virtuellen Methode überschreiben können. Sie können nicht per Definition aus einem versiegelten Typ eine virtuelle Methode für einen versiegelten Typ bedeutungslos erben.
 
- Die Visual Basic .NET und c#-Compiler gestatten keine Typen, die gegen diese Regel verstoßen.
+ Die Visual Basic .NET und C#-Compiler gestatten keine Typen, die gegen diese Regel verstoßen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, stellen Sie die Methode nicht virtuell, oder ändern Sie den Typ geerbt.

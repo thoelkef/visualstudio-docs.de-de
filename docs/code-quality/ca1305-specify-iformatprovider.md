@@ -56,7 +56,7 @@ Auch wenn das Standardverhalten des überladenen Member für Ihre Anforderungen 
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die Überladung mit einem <xref:System.IFormatProvider> Argument. Oder verwenden Sie eine [c# interpolierte Zeichenfolge](/dotnet/csharp/tutorials/string-interpolation) und übergeben es an der <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie die Überladung mit einem <xref:System.IFormatProvider> Argument. Oder verwenden Sie eine [C# interpolierte Zeichenfolge](/dotnet/csharp/tutorials/string-interpolation) und übergeben es an der <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> Methode.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 

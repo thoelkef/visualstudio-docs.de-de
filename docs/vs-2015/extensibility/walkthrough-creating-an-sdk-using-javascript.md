@@ -98,7 +98,7 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 14. Wählen Sie im Kontextmenü für den Ordner \js\ **hinzufügen**, **neues Element**.  
   
-15. Klicken Sie unter **Visual c#-Elemente**, wählen die **Web** Kategorie, und wählen Sie dann die **JavaScript-Datei** Element. Nennen Sie die Datei `arithmetic.js`, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+15. Klicken Sie unter **Visual C#-Elemente**, wählen die **Web** Kategorie, und wählen Sie dann die **JavaScript-Datei** Element. Nennen Sie die Datei `arithmetic.js`, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
 16. Fügen Sie den folgenden Code in arithmetic.js:  
   

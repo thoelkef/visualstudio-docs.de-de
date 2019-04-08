@@ -20,7 +20,7 @@ ms.locfileid: "58960534"
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Erstellen einer Erweiterung mit einer Editor-Elementvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfachen Editor-Erweiterungen zu erstellen, die Klassifizierungen, Zusatzelemente und Ränder im Editor hinzu. Die Editor-Elementvorlagen sind für Visual c# oder Visual Basic-VSIX-Projekte verfügbar.  
+Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfachen Editor-Erweiterungen zu erstellen, die Klassifizierungen, Zusatzelemente und Ränder im Editor hinzu. Die Editor-Elementvorlagen sind für Visual C# oder Visual Basic-VSIX-Projekte verfügbar.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -30,7 +30,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfach
   
 1.  In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** oder **Visual Basic** , und klicken Sie dann auf **Erweiterbarkeit**. In der **Vorlagen** wählen Sie im Bereich **VSIX-Projekt**. Geben Sie im Feld **Name** `TestClassifier`ein. Klicken Sie auf **OK**.  
   
-2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual c# **Erweiterbarkeit** Knoten, und wählen **Editor Klassifizierer**. Lassen Sie den Standarddateinamen (EditorClassifier1.cs) aus.  
+2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual C# **Erweiterbarkeit** Knoten, und wählen **Editor Klassifizierer**. Lassen Sie den Standarddateinamen (EditorClassifier1.cs) aus.  
   
 3.  Es gibt drei Codedateien, wie folgt:  
   
@@ -51,7 +51,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfach
   
 1.  In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** oder **Visual Basic** , und klicken Sie dann auf **Erweiterbarkeit**. In der **Vorlagen** wählen Sie im Bereich **VSIX-Projekt**. Geben Sie im Feld **Name** `TestAdornment`ein. Klicken Sie auf **OK**.  
   
-2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual c# **Erweiterbarkeit** Knoten, und wählen **Editor Text Zusatzelement**. Lassen Sie den Standarddateinamen (TextAdornment1.cs/vb) aus.  
+2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual C# **Erweiterbarkeit** Knoten, und wählen **Editor Text Zusatzelement**. Lassen Sie den Standarddateinamen (TextAdornment1.cs/vb) aus.  
   
 3.  Es gibt zwei Codedateien, wie folgt:  
   
@@ -71,7 +71,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfach
   
 1.  In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** oder **Visual Basic** , und klicken Sie dann auf **Erweiterbarkeit**. In der **Vorlagen** wählen Sie im Bereich **VSIX-Projekt**. Geben Sie im Feld **Name** `ViewportAdornment`ein. Klicken Sie auf **OK**.  
   
-2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual c# **Erweiterbarkeit** Knoten, und wählen **Editor Viewport Zusatzelement**. Lassen Sie den Standarddateinamen (ViewportAdornment1.cs/vb) aus.  
+2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual C# **Erweiterbarkeit** Knoten, und wählen **Editor Viewport Zusatzelement**. Lassen Sie den Standarddateinamen (ViewportAdornment1.cs/vb) aus.  
   
 3.  Es gibt zwei Codedateien, wie folgt:  
   
@@ -88,7 +88,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfach
   
 1.  In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-** oder **Visual Basic** , und klicken Sie dann auf **Erweiterbarkeit**. In der **Vorlagen** wählen Sie im Bereich **VSIX-Projekt**. Geben Sie im Feld **Name** `MarginExtension`ein. Klicken Sie auf **OK**.  
   
-2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual c# **Erweiterbarkeit** Knoten, und wählen **Editor Viewport Zusatzelement**. Lassen Sie den Standarddateinamen (EditorMargin1.cs/vb) aus.  
+2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. Wechseln Sie in der Visual C# **Erweiterbarkeit** Knoten, und wählen **Editor Viewport Zusatzelement**. Lassen Sie den Standarddateinamen (EditorMargin1.cs/vb) aus.  
   
 3.  Es gibt zwei Codedateien, wie folgt:  
   

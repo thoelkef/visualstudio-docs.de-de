@@ -77,7 +77,7 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
 
 4.  Erstellen Sie die Projektmappe, und drücken Sie F5. Die experimentelle Instanz angezeigt wird.
 
-5.  Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei / neu / Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage, die in das Dialogfeld "Neues Element hinzufügen" aufgeführt (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).
+5.  Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei / neu / Projekt**) in den Visual C# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage, die in das Dialogfeld "Neues Element hinzufügen" aufgeführt (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).
 
 ## <a name="see-also"></a>Siehe auch
 

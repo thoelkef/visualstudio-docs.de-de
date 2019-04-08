@@ -36,7 +36,7 @@ Führen Sie die folgenden Schritte aus, um ein Projekt für eine Workflowaktivit
     > [!NOTE]
     >  Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.  
   
-4.  In der **Projekttypen** Bereich Option Visual c# oder Visual Basic (unter **andere Sprachen**) und wählen Sie dann **Workflow**.  
+4.  In der **Projekttypen** Bereich Option Visual C# oder Visual Basic (unter **andere Sprachen**) und wählen Sie dann **Workflow**.  
   
 5.  In der **Vorlagen** wählen Sie im Bereich **Workflowaktivitätsbibliothek**.  
   

@@ -22,9 +22,9 @@ Sie können zum Abrufen eines Diensts, ohne Blockierung im UI-Thread Sie ein asy
 
 ## <a name="implementing-an-asynchronous-service"></a>Implementieren eines asynchronen Diensts
 
-1.  Erstellen Sie ein VSIX-Projekt (**Datei / neu / Projekt / Visual c# / Erweiterbarkeit / VSIX-Projekt**). Nennen Sie das Projekt **TestAsync**.
+1.  Erstellen Sie ein VSIX-Projekt (**Datei / neu / Projekt / Visual C# / Erweiterbarkeit / VSIX-Projekt**). Nennen Sie das Projekt **TestAsync**.
 
-2.  Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen / neues Element / Visual c#-Elemente / Erweiterbarkeit / Visual Studio-Paket**. Nennen Sie diese Datei **TestAsyncPackage.cs**.
+2.  Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen / neues Element / Visual C#-Elemente / Erweiterbarkeit / Visual Studio-Paket**. Nennen Sie diese Datei **TestAsyncPackage.cs**.
 
 3.  In TestAsyncPackage.cs ändern Sie das Paket das erben von AsyncPackage statt-Paket:
 

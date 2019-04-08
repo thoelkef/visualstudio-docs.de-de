@@ -85,7 +85,7 @@ Sie können eine legacysprachdiensten auf eine neuere Version von Visual Studio 
   
 10. Sie müssen eine Datei "Source.Extension.vsixmanifest" hinzufügen.  
   
-    -   Kopieren Sie diese Datei aus einer vorhandenen Erweiterung zu Ihrem Projektverzeichnis. (Eine Möglichkeit zum Abrufen dieser Datei wird zum Erstellen eines VSIX-Projekts (unter **Datei**, klicken Sie auf **neu**, klicken Sie dann auf **Projekt**. Klicken Sie in Visual Basic oder c# auf **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**.)  
+    -   Kopieren Sie diese Datei aus einer vorhandenen Erweiterung zu Ihrem Projektverzeichnis. (Eine Möglichkeit zum Abrufen dieser Datei wird zum Erstellen eines VSIX-Projekts (unter **Datei**, klicken Sie auf **neu**, klicken Sie dann auf **Projekt**. Klicken Sie in Visual Basic oder C# auf **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**.)  
   
     -   Die Datei zu Ihrem Projekt hinzufügen.  
   

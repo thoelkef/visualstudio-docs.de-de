@@ -129,7 +129,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
 4.  Klicken Sie im Menü **Debuggen** auf **Fenster**, dann auf **Überwachen** und anschließend auf **Überwachen 1**.  
   
-5.  Klicken Sie im Fenster **Überwachen 1** auf eine leere Zeile. In der **Namen** Spalte, Datentyp `textBox1.Text` (Wenn Sie Visual Basic, Visual c# oder j# verwenden) oder `textBox1->Text` (Wenn Sie C++ verwenden), dann die EINGABETASTE drücken.  
+5.  Klicken Sie im Fenster **Überwachen 1** auf eine leere Zeile. In der **Namen** Spalte, Datentyp `textBox1.Text` (Wenn Sie Visual Basic, Visual C# oder j# verwenden) oder `textBox1->Text` (Wenn Sie C++ verwenden), dann die EINGABETASTE drücken.  
   
      Das Fenster **Überwachen 1** zeigt den Wert dieser Variablen in Anführungszeichen an:  
   

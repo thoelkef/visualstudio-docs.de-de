@@ -105,7 +105,7 @@ End Sub
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aktivierte arithmetischen Über-/Unterlauf aktivieren
  Wenn Sie aktiviert arithmetischen Über-/Unterlauf in C# -Code aktivieren, entspricht es umbruchvorgang jede ganze Zahl in einem aktivierten Block.
 
- **So schalten Sie die aktivierten arithmetischen Über-/Unterlauf in c#**
+ **So schalten Sie die aktivierten arithmetischen Über-/Unterlauf in C#**
 
 1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 

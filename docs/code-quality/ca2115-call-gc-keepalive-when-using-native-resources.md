@@ -42,7 +42,7 @@ Mit dieser Regel wird vorausgesetzt, dass <xref:System.IntPtr> und <xref:System.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen Aufruf von <xref:System.GC.KeepAlive%2A> an die Methode übergeben Sie die aktuelle Instanz (`this` in c# und C++) als Argument. Positionieren Sie den Aufruf nach der letzten Zeile des Codes, in dem das Objekt muss vor der Garbagecollection geschützt werden. Unmittelbar nach dem Aufruf von <xref:System.GC.KeepAlive%2A>, das Objekt wird wieder als bereit für die Garbagecollection betrachtet, vorausgesetzt, es keine verwalteten Verweise darauf gibt.
+Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen Aufruf von <xref:System.GC.KeepAlive%2A> an die Methode übergeben Sie die aktuelle Instanz (`this` in C# und C++) als Argument. Positionieren Sie den Aufruf nach der letzten Zeile des Codes, in dem das Objekt muss vor der Garbagecollection geschützt werden. Unmittelbar nach dem Aufruf von <xref:System.GC.KeepAlive%2A>, das Objekt wird wieder als bereit für die Garbagecollection betrachtet, vorausgesetzt, es keine verwalteten Verweise darauf gibt.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 

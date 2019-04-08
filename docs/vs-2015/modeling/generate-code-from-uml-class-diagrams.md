@@ -26,7 +26,7 @@ ms.locfileid: "58961956"
 # <a name="generate-code-from-uml-class-diagrams"></a>Generieren von Code aus UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen in Visual Studio die **Code generieren** Befehl. Standardmäßig generiert der Befehl einen C#-Typ für jeden UML-Typ, den Sie auswählen. Sie können dieses Verhalten ändern oder erweitern, indem Sie die Textvorlagen ändern oder kopieren, mit denen der Code generiert wird. Sie können ein anderes Verhalten für die Typen angeben, die in anderen Paketen im Modell enthalten sind.  
+Verwenden Sie zum Generieren von Visual C#-.NET-Code aus UML-Klassendiagrammen in Visual Studio die **Code generieren** Befehl. Standardmäßig generiert der Befehl einen C#-Typ für jeden UML-Typ, den Sie auswählen. Sie können dieses Verhalten ändern oder erweitern, indem Sie die Textvorlagen ändern oder kopieren, mit denen der Code generiert wird. Sie können ein anderes Verhalten für die Typen angeben, die in anderen Paketen im Modell enthalten sind.  
 
  Die **Code generieren** Befehl ist besonders geeignet, zum Generieren von Code aus der Auswahl des Benutzers, der Elemente, und klicken Sie zum Generieren einer Datei für jede UML-Klasse oder ein anderes Element. Das folgende Bildschirmfoto zeigt z. B. zwei C#-Dateien, die aus zwei UML-Klassen generiert wurden.  
 
@@ -112,7 +112,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
 
  Außerdem stellt jedes Stereotyp mehrere zusätzliche Eigenschaften bereit, die Sie festlegen können. Diese Werte werden im C#-Code in geeignete Schlüsselwörter übersetzt. Wenn Sie z. B. die `Is Static`-Eigenschaft für eine Klasse festlegen, ist die C#-Klasse `static`.  
 
- Wählen Sie die Klasse oder ein anderes Element im Diagramm aus, um diese zusätzlichen Eigenschaften festzulegen. Erweitern Sie im Eigenschaftenfenster **Stereotype**, und erweitern Sie das C#-Stereotyp, z. B. **c#-Klasse**.  Für Klassen schließen diese zusätzlichen Eigenschaften Folgendes ein:  
+ Wählen Sie die Klasse oder ein anderes Element im Diagramm aus, um diese zusätzlichen Eigenschaften festzulegen. Erweitern Sie im Eigenschaftenfenster **Stereotype**, und erweitern Sie das C#-Stereotyp, z. B. **C#-Klasse**.  Für Klassen schließen diese zusätzlichen Eigenschaften Folgendes ein:  
 
 - CRL-Attribute  
 

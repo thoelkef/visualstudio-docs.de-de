@@ -58,7 +58,7 @@ int GetMessage( 
  [out] Gibt den Typ der Nachricht mit den Konventionen der Win32- `MessageBox` Funktion. Finden Sie unter den [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) -Funktion für Details.  
   
  `pbstrHelpFileName`  
- [in, out] Gibt den Namen der Hilfedatei zurück. Möglicherweise eine (C++) leer oder Null (c#), wenn keine Hilfedatei vorhanden ist.  
+ [in, out] Gibt den Namen der Hilfedatei zurück. Möglicherweise eine (C++) leer oder Null (C#), wenn keine Hilfedatei vorhanden ist.  
   
  `pdwHelpId`  
  [in, out] Gibt den hilfebezeichner. 0, wenn keine Hilfe kann mit dieser Nachricht zugeordnet werden.  

@@ -185,7 +185,7 @@ Type Class2 ::
   
 2. Erstellen Sie ein C#- oder Visual Basic-Projekt in derselben Projektmappe.  
   
-   -   Im Projektmappen-Explorer mit der Maustaste der Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. Klicken Sie unter **installierte Vorlagen**, klicken Sie auf **Visual Basic** oder **Visual c#** und wählen Sie dann einen Projekttyp wie z. B. **Konsolenanwendung**.  
+   -   Im Projektmappen-Explorer mit der Maustaste der Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. Klicken Sie unter **installierte Vorlagen**, klicken Sie auf **Visual Basic** oder **Visual C#** und wählen Sie dann einen Projekttyp wie z. B. **Konsolenanwendung**.  
   
 3. Fügen Sie eine Nur-Text-Datei zum C#- oder Visual Basic-Projekt hinzu. Diese Datei enthält Code, der freigegeben wird, wenn Sie mehrere Textvorlagen schreiben möchten.  
   

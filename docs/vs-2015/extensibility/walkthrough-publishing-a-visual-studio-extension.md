@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie Visual Stu
 ## <a name="create-a-visual-studio-extension"></a>Erstellen Sie eine Visual Studio-Erweiterung
  In diesem Fall verwenden wir eine Standard-VSPackage-Erweiterung, aber die gleichen Schritte gelten für jede Art von Erweiterung.
 
-1.  Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublishing` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Erstellen Sie ein VSPackage in C# mit dem Namen `TestPublishing` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Testen Sie die Erweiterung
  Bevor Sie die Erweiterung verteilen, erstellen Sie und Testen Sie, um sicherzustellen, dass es in der experimentellen Instanz von Visual Studio ordnungsgemäß installiert ist.

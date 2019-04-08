@@ -39,7 +39,7 @@ ms.locfileid: "58958627"
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn die Ausführung wegen einer Ausnahme vom Debugger unterbrochen wird, wird ein Dialogfeld angezeigt. Für Visual Basic oder C#-, sehen Sie die [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) Dialogfeld, in der Standardeinstellung. Für C++, sehen Sie die ältere **Ausnahme** Dialogfeld. Wenn Sie Visual Basic oder c# verwenden, aber deaktiviert haben die **Ausnahmen-Assistent** in die **Optionen** im Dialogfeld wird Ihnen die **Ausnahme** im Dialogfeld.  
+Wenn die Ausführung wegen einer Ausnahme vom Debugger unterbrochen wird, wird ein Dialogfeld angezeigt. Für Visual Basic oder C#-, sehen Sie die [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) Dialogfeld, in der Standardeinstellung. Für C++, sehen Sie die ältere **Ausnahme** Dialogfeld. Wenn Sie Visual Basic oder C# verwenden, aber deaktiviert haben die **Ausnahmen-Assistent** in die **Optionen** im Dialogfeld wird Ihnen die **Ausnahme** im Dialogfeld.  
   
  Wenn die **Ausnahmen-Assistent** oder **Ausnahme** Dialogfeld angezeigt wird, können Sie versuchen, das Problem zu beheben, die die Ausnahme verursacht hat.  
   

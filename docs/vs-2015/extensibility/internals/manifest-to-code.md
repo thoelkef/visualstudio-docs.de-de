@@ -16,7 +16,7 @@ ms.locfileid: "58960064"
 # <a name="manifest-to-code"></a>Manifest für Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .imagemanifest-Datei für die Visual Studio-Image-Diensts und generiert einen Wrapper-Dateien für das Verweisen auf das Image-Manifest-Werte in C++, c#, VB oder VSCT-Dateien für Visual Studio-Erweiterungen. Dieses Tool generiert Wrapper-Dateien, die verwendet werden können, für anfordernde Images aus dem Visual Studio-Image-Dienst direkt oder über APIs die modulmanifest-Werte übergeben, wenn der Code eine eigene Benutzeroberfläche und-Rendering nicht behandelt.  
+Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .imagemanifest-Datei für die Visual Studio-Image-Diensts und generiert einen Wrapper-Dateien für das Verweisen auf das Image-Manifest-Werte in C++, C#, VB oder VSCT-Dateien für Visual Studio-Erweiterungen. Dieses Tool generiert Wrapper-Dateien, die verwendet werden können, für anfordernde Images aus dem Visual Studio-Image-Dienst direkt oder über APIs die modulmanifest-Werte übergeben, wenn der Code eine eigene Benutzeroberfläche und-Rendering nicht behandelt.  
   
 ## <a name="how-to-use-the-tool"></a>Gewusst wie: Verwenden Sie das tool  
  **Syntax**  

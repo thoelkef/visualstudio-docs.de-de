@@ -23,7 +23,7 @@ ms.locfileid: "58960798"
 
 Klammer hilft den Entwickler, die Language-Elemente zu verfolgen, die zusammen, wie z. B. Klammern und geschweifte Klammern enthalten sein müssen. Wenn ein Entwickler eine schließende geschweifte Klammer eingibt, wird der öffnenden geschweiften Klammer hervorgehoben.  
   
- Sie können zwei oder drei gemeinsam auftretende Elemente, die sogenannten-Paare und Tripeln zuordnen. Tripeln werden drei gemeinsam auftretende Elemente. Zum Beispiel in c# die `foreach` Anweisung bildet ein Tripel: "`foreach()`","`{`", und "`}`". Alle drei Elemente werden hervorgehoben, wenn die schließende geschweifte Klammer eingegeben wird.  
+ Sie können zwei oder drei gemeinsam auftretende Elemente, die sogenannten-Paare und Tripeln zuordnen. Tripeln werden drei gemeinsam auftretende Elemente. Zum Beispiel in C# die `foreach` Anweisung bildet ein Tripel: "`foreach()`","`{`", und "`}`". Alle drei Elemente werden hervorgehoben, wenn die schließende geschweifte Klammer eingegeben wird.  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren der Zuordnung von geschweiften Klammern zu suchen, finden Sie unter [Exemplarische Vorgehensweise: Übereinstimmende Klammern anzeigen](../../extensibility/walkthrough-displaying-matching-braces.md).  
   

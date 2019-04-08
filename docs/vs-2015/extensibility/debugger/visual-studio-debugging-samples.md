@@ -24,6 +24,6 @@ ms.locfileid: "58956349"
 
 Zwei Beispiele zeigen, wie mithilfe von Visual Studio-Debugger erweitert [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
--   Debugger Expression Evaluator Beispiel für verwaltete Sprachen befindet sich auf die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Fenster, klicken Sie auf die **Beispiele** auf **alle** oder **c#** in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.  
+-   Debugger Expression Evaluator Beispiel für verwaltete Sprachen befindet sich auf die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Fenster, klicken Sie auf die **Beispiele** auf **alle** oder **C#** in der Liste der Sprachen, und klicken Sie dann auf **Debugger**.  
   
 -   Visual Studio Debug-Engine-Beispiel für systemeigene Sprachen ist in der MSDN Code Gallery verfügbar. Weitere Informationen finden Sie auf der folgenden Microsoft-Website: [Visual Studio debuggen-Engine-Beispiel](http://go.microsoft.com/fwlink/?LinkId=150236).

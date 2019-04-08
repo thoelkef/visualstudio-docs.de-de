@@ -31,7 +31,7 @@ Die **Interop** Aktivitäts-Designer finden Sie in der **Migration** Kategorie d
 
 Die [Migration](../workflow-designer/migration-activity-designers.md) Kategorie, enthält die <xref:System.Activities.Statements.Interop> Aktivität nur wird im **Toolbox** Wenn Ihr Projekt das vollständige .NET Framework 4 ausgerichtet ist.
 
-Für c#-Projekten können Sie erneut das Projekt, um das vollständige .NET Framework 4 zu verwenden, indem Sie mit der rechten Maustaste in des Projekts im Ziel **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Anwendung** Registerkarte die **.NET Framework 4** option die **Zielframework**. Wählen Sie **Ja** , diese Änderung zu bestätigen.
+Für C#-Projekten können Sie erneut das Projekt, um das vollständige .NET Framework 4 zu verwenden, indem Sie mit der rechten Maustaste in des Projekts im Ziel **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Anwendung** Registerkarte die **.NET Framework 4** option die **Zielframework**. Wählen Sie **Ja** , diese Änderung zu bestätigen.
 
 Für Visual Basic-Projekten können Sie erneut das Projekt, um das vollständige .NET Framework 4 zu verwenden, indem Sie mit der rechten Maustaste auf das Projekt im Ziel **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Kompilieren** Registerkarte, klicken Sie auf die **Advanced Compile Options** Schaltfläche. Wählen Sie **.Net Framework 4** aus der **Zielframeworkliste**, und klicken Sie dann auf **OK**. Wählen Sie **Ja** , diese Änderung zu bestätigen.
 

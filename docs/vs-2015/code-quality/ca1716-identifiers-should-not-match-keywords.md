@@ -36,7 +36,7 @@ ms.locfileid: "58957326"
  Ein Name, der einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können c#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
+ Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können C#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
 
  Diese Regel überprüft für Schlüsselwörter in den folgenden Sprachen:
 

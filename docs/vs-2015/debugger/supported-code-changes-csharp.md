@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Codeänderungen (c#) | Microsoft-Dokumentation
+title: Unterstützte Codeänderungen (C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug

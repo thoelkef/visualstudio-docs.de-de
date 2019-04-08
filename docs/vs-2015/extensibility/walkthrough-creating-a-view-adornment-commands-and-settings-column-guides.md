@@ -44,7 +44,7 @@ Zuerst Sie ein VSIX-Projekt erstellen, ein Zusatzelement der Editor-Ansicht hinz
 - Es ist ein VSIP-Paket, das ist erforderlich, wenn Sie Benutzerbefehle haben, aber es ist nur für den Standardcode, der die Befehle Implementierungsobjekt initialisiert.
 - Es gibt eine `ColumnGuideCommands` Objekt, das die Benutzerbefehle implementiert und verknüpft die Befehlshandler für Befehle in der VSCT-Datei deklariert.
   
-  **VSIX**. Verwendung **Datei &#124; neu...** Befehl zum Erstellen eines Projekts. Wählen Sie im linken Navigationsbereich den Knoten "Erweiterbarkeit" unter c#, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.
+  **VSIX**. Verwendung **Datei &#124; neu...** Befehl zum Erstellen eines Projekts. Wählen Sie im linken Navigationsbereich den Knoten "Erweiterbarkeit" unter C#, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen ColumnGuides, und wählen Sie **OK** zum Erstellen des Projekts.
   
   **Anzeigen des Zusatzelements**. Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer. Wählen Sie die **hinzufügen &#124; neues Element...** Befehl zum Hinzufügen eines neuen Ansicht Zusatzelement-Elements. Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich. Geben Sie den Namen ColumnGuideAdornment als Name des Elements, und wählen Sie **hinzufügen** hinzugefügt.
   

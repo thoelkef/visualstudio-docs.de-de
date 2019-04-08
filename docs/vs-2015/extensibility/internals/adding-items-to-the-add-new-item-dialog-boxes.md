@@ -44,7 +44,7 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Bestimmt die Sortierreihenfolge im Knoten "Struktur" der Dateien angezeigt, der **neues Element hinzufügen** Dialogfeld.|  
   
 > [!NOTE]
->  Die GUIDS für die Visual c# und Visual Basic-Projekttypen sind wie folgt:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  Die GUIDS für die Visual C# und Visual Basic-Projekttypen sind wie folgt:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  Das Verzeichnis aufgeführt, für TemplateDirs, die % TEMPLATE_PATH%\SomeProjectItems ist, der Knoten auf der linken Seite des ist der **neues Element hinzufügen** Dialogfeld im Feld-Struktur. Zusätzliche Elemente in der Struktur basieren auf das Unterverzeichnis innerhalb dieses Stammverzeichnis. Die Dateien zum Projekt hinzugefügt werden sind die Elemente im Bereich rechts von der **neues Element hinzufügen** Dialogfeld.  
   

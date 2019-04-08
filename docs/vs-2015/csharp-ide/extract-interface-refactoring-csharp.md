@@ -1,5 +1,5 @@
 ---
-title: Extrahieren Sie die Schnittstelle Refactoring (c#) | Microsoft-Dokumentation
+title: Extrahieren Sie die Schnittstelle Refactoring (C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general

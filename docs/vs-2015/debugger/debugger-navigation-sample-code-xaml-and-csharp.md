@@ -1,5 +1,5 @@
 ---
-title: Debugger-Navigation Sample Code (Xaml und c#) | Microsoft-Dokumentation
+title: Debugger-Navigation Sample Code (Xaml und C#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,7 +24,7 @@ ms.locfileid: "58959530"
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>Beispielcode für die Navigation im Debugger (Xaml und C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Der Code in diesem Thema ist die Beispieldatei für die [Navigieren in einer Debugsitzung (Xaml und c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) Thema.  
+Der Code in diesem Thema ist die Beispieldatei für die [Navigieren in einer Debugsitzung (Xaml und C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) Thema.  
   
 ## <a name="sample-code"></a>Beispielcode  
   

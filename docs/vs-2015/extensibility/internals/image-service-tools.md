@@ -20,6 +20,6 @@ Das VS-SDK enthält mehrere Tools, mit denen Erweiterung-Generatoren, die den Vi
   
 -   Die [Manifest aus Ressourcen](../../extensibility/internals/manifest-from-resources.md) Tool akzeptiert eine Liste von Bildressourcen (PNG oder XAML-Dateien) und eine Image-Manifestdatei generiert.  
   
--   Die [Manifest für Code](../../extensibility/internals/manifest-to-code.md) Tool nimmt eine Image-manifest-Datei und generiert eine Wrapperdatei in C++, c#, VB oder VSCT-Dateien verwenden.  
+-   Die [Manifest für Code](../../extensibility/internals/manifest-to-code.md) Tool nimmt eine Image-manifest-Datei und generiert eine Wrapperdatei in C++, C#, VB oder VSCT-Dateien verwenden.  
   
 -   Die [Bildbibliotheks-Viewer](../../extensibility/internals/image-library-viewer.md) laden, bearbeiten und bildmanifesten suchen können.

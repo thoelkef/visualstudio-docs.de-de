@@ -80,7 +80,7 @@ Für Szenarien für einfache Vorlage erstellen, sollten Sie verwenden die **Vorl
 
 4. Die Projektmappe erstellen, und drücken Sie **F5**. Die experimentelle Instanz angezeigt wird.
 
-5. Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei** > **neu**  >  **Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage aufgeführt, die der **neues Element hinzufügen** Dialogfeld. Anzeigen der **neues Element hinzufügen** Dialogfeld aus der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen** > **neues Element**).
+5. Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei** > **neu**  >  **Projekt**) in den Visual C# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage aufgeführt, die der **neues Element hinzufügen** Dialogfeld. Anzeigen der **neues Element hinzufügen** Dialogfeld aus der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen** > **neues Element**).
 
 ## <a name="see-also"></a>Siehe auch
 

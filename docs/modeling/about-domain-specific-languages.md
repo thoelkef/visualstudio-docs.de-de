@@ -18,7 +18,7 @@ ms.locfileid: "55939488"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
-Im Gegensatz zu einer Sprache wie c# oder UML-eine domänenspezifische Sprache (DSL) soll Anweisungen in einer bestimmten Problembereich oder Domäne express.
+Im Gegensatz zu einer Sprache wie C# oder UML-eine domänenspezifische Sprache (DSL) soll Anweisungen in einer bestimmten Problembereich oder Domäne express.
 
 Well-Known DSLs sind reguläre Ausdrücke und SQL. Jede DSL ist viel besser als eine Sprache zum Beschreiben der Vorgänge für Zeichenfolgen oder eine Datenbank, sondern eher schlechter zum Beschreiben von Ideen, die außerhalb der eigenen Bereichs liegen. Einzelne Branchen können auch ihre eigenen DSLs. Z. B. in der Telekommunikationsbranche rufen Sie Beschreibung an auf, die Sprachen, geben die Sequenz der Status in einen Telefonanruf an, und übertragen in der Luft Branche weit verbreitet ist ein Standard, die DSL mit der Flug Buchungen beschrieben werden.
 

@@ -1,5 +1,5 @@
 ---
-title: Gefilterte Vervollständigungslisten in c# | Microsoft-Dokumentation
+title: Gefilterte Vervollständigungslisten in C# | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,4 +21,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58961319"
 ---
 # <a name="filtered-completion-lists-in-c"></a>Gefilterte Vervollständigungslisten in C# #
-Dieser Inhalt wurde verschoben, um [Vervollständigungslisten in c#](../misc/completion-lists-in-csharp.md)
+Dieser Inhalt wurde verschoben, um [Vervollständigungslisten in C#](../misc/completion-lists-in-csharp.md)

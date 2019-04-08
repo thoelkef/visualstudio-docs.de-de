@@ -99,7 +99,7 @@ ms.locfileid: "54864071"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programmierung mit Visual Basic und. Visual C# -Code in Office-Projektmappen
  Sie können Office-Lösungen entweder mit Visual Basic oder Visual C# erstellen. Da die Microsoft Office-Objektmodelle zur Verwendung mit Microsoft Visual Basic for Applications (VBA) entwickelt wurden, können Visual Basic-Entwickler problemlos mit den von den Microsoft Office-Anwendungen verfügbar gemachten Objekten arbeiten. Visual C#-Entwickler können größtenteils die gleichen Funktionen wie Visual Basic-Entwickler nutzen, aber in einigen Fällen müssen sie zusätzlichen Code verfassen, um die Office-Objektmodelle verwenden zu können. Es gibt auch einige Unterschiede zwischen den grundlegenden Programmierfunktionen für die Office-Entwicklung und in Visual Basic und C# geschriebenem verwalteten Code.
 
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Wichtige Unterschiede zwischen Visual Basic und Visual c#
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Wichtige Unterschiede zwischen Visual Basic und Visual C#
  In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen Visual Basic und Visual C# bei der Office-Entwicklung angezeigt.
 
 |Feature|Beschreibung|Visual Basic-Unterstützung|Visual C#-Unterstützung|

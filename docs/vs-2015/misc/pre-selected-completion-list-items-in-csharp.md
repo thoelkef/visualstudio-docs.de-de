@@ -1,5 +1,5 @@
 ---
-title: Vorauswahl von Elementen in Vervollständigungslisten in c# | Microsoft-Dokumentation
+title: Vorauswahl von Elementen in Vervollständigungslisten in C# | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -20,4 +20,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58956448"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Vorauswahl von Elementen in Vervollständigungslisten in C# #
-Dieser Inhalt wurde verschoben, um [Vervollständigungslisten in c#](../misc/completion-lists-in-csharp.md)
+Dieser Inhalt wurde verschoben, um [Vervollständigungslisten in C#](../misc/completion-lists-in-csharp.md)

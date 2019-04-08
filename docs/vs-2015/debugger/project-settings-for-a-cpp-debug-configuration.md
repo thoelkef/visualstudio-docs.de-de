@@ -125,7 +125,7 @@ ms.locfileid: "58961644"
 Sie können die projekteinstellungen für eine C- oder Visual C++-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Dialogfeld wie in beschrieben [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.  
   
 > [!WARNING]
->  Die debugprojekteinstellungen in der **Konfigurationseigenschaften/Debugging** unterscheiden sich die Kategorie für Windows Store-apps und Komponenten, die in C++ geschrieben sind. Finden Sie unter [Starten einer Debugsitzung (VB, c#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) im Windows Developer Center.  
+>  Die debugprojekteinstellungen in der **Konfigurationseigenschaften/Debugging** unterscheiden sich die Kategorie für Windows Store-apps und Komponenten, die in C++ geschrieben sind. Finden Sie unter [Starten einer Debugsitzung (VB, C#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) im Windows Developer Center.  
   
  Geben Sie an der Debugger für die Verwendung in der **zu startender Debugger** Listenfeld. Die Auswahl beeinflusst, welche Eigenschaften angezeigt werden.  
   

@@ -94,7 +94,7 @@ devenv /installvstemplates
   
  DeveloperActivity REG_SZVC#  
   
- Gibt an, dass es sich bei Visual c# ein Stammknoten ist, wenn Visual Studio festgelegt ist, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Entwicklung. Andernfalls wird es sein, einen untergeordneten Knoten des **andere Sprachen**.  
+ Gibt an, dass es sich bei Visual C# ein Stammknoten ist, wenn Visual Studio festgelegt ist, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Entwicklung. Andernfalls wird es sein, einen untergeordneten Knoten des **andere Sprachen**.  
   
 ##### <a name="folder"></a>Ordner  
  Wenn dieser Unterschlüssel vorhanden ist, wird der Stammknoten einen untergeordneten Knoten des angegebenen Ordners. Eine Liste der möglichen Ordner angezeigt wird, unter dem Schlüssel  
@@ -106,7 +106,7 @@ devenv /installvstemplates
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>Projekt Typ untergeordnete Knoten und .vstdir-Dateien  
  Die Position der untergeordneten Knoten in der **Projekttypen** Struktur folgt die Hierarchie der Ordner in den Ordnern ProjectTemplates. Für Computervorlagen (**Visual Studio installierte Vorlagen**), der typische Speicherort ist \Programme\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\ und für Benutzervorlagen (**Meine Vorlagen**), der typische Speicherort ist \My Documents\Visual Studio 14.0\Templates\ProjectTemplates\\. Die Ordnerhierarchien aus diesen beiden Speicherorten werden zusammengeführt, um das Erstellen der **Projekttypen** Struktur.  
   
- Für Visual Studio mit c# Developer-Einstellungen die **Projekttypen** Struktur sieht etwa folgendermaßen aus:  
+ Für Visual Studio mit C# Developer-Einstellungen die **Projekttypen** Struktur sieht etwa folgendermaßen aus:  
   
  ![Projekttypen](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
   

@@ -38,7 +38,7 @@ ms.locfileid: "58960745"
 ## <a name="rule-description"></a>Regelbeschreibung
  Typen deklarieren geschützte Member, damit erbende Typen auf den Member zugreifen oder diesen überschreiben können. Per Definition können nicht Sie aus einem versiegelten Typ erben, d. h., die geschützten Methoden in versiegelten Typen nicht aufgerufen werden kann.
 
- Der c#-Compiler gibt eine Warnung für diesen Fehler.
+ Der C#-Compiler gibt eine Warnung für diesen Fehler.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zugriffsebene des Members in privat, oder ändern Sie den Typ geerbt.

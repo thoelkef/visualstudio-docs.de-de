@@ -36,7 +36,7 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
  `compilerOptions="optimize+"`  
   
  Gültige Werte:  
- Alle gültigen Compileroptionen. Weitere Informationen finden Sie unter [(c# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Alle gültigen Compileroptionen. Weitere Informationen finden Sie unter [(C# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).  
   
