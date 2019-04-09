@@ -63,7 +63,7 @@ Dieser Artikel enthält die folgenden Aufgaben für Visual Studio Help Viewer In
 
 - JavaScript
 
-- CSharp- oder c#
+- CSharp- oder C#
 
 - Cplusplus oder Visual c++ oder c++
 
