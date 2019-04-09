@@ -22,7 +22,7 @@ ms.locfileid: "58957152"
 # <a name="outlining-in-a-legacy-language-service"></a>Gliederung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die Gliederung zu reduzieren. In c# können z. B. alle Methoden einer einzelnen Zeile zeigt nur die Signatur der Methode reduziert werden. Darüber hinaus können Strukturen und Klassen reduziert werden, um nur die Namen der Strukturen und Klassen angezeigt. In einer einzelnen Methode, komplexer Logik reduziert werden kann, um den Gesamtablauf anzeigen, indem Sie nur die erste Zeile von Anweisungen wie z. B. mit `foreach`, `if`, und `while`.  
+Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die Gliederung zu reduzieren. In C# können z. B. alle Methoden einer einzelnen Zeile zeigt nur die Signatur der Methode reduziert werden. Darüber hinaus können Strukturen und Klassen reduziert werden, um nur die Namen der Strukturen und Klassen angezeigt. In einer einzelnen Methode, komplexer Logik reduziert werden kann, um den Gesamtablauf anzeigen, indem Sie nur die erste Zeile von Anweisungen wie z. B. mit `foreach`, `if`, und `while`.  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  
   
@@ -35,7 +35,7 @@ Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die G
  Der Wert des der `AutoOutlining` Eintrag in der Registrierung erhalten Sie über die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Eigenschaft für die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Die `AutoOutlining` Registrierungseintrag kann initialisiert werden, mit einem benannten Parameter, um die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Attribut (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten).  
   
 ## <a name="the-hidden-region"></a>Der ausgeblendete Bereich  
- Um Gliederung zu gewährleisten, muss der Sprachdienst ausgeblendeten Bereiche unterstützen. Hierbei handelt es sich um Spannen der Text, der erweitert oder reduziert werden können. Ausgeblendete Bereiche können Standardsprache-Symbole, z. B. von geschweiften Klammern oder durch benutzerdefinierte Symbole getrennt werden. Z. B. c# verfügt über eine `#region` / `#endregion` -Paar, das einen ausgeblendeten Bereich begrenzt.  
+ Um Gliederung zu gewährleisten, muss der Sprachdienst ausgeblendeten Bereiche unterstützen. Hierbei handelt es sich um Spannen der Text, der erweitert oder reduziert werden können. Ausgeblendete Bereiche können Standardsprache-Symbole, z. B. von geschweiften Klammern oder durch benutzerdefinierte Symbole getrennt werden. Z. B. C# verfügt über eine `#region` / `#endregion` -Paar, das einen ausgeblendeten Bereich begrenzt.  
   
  Ausgeblendete Bereiche werden durch einen Manager für ausgeblendete Bereiche, die als verfügbar gemacht wird verwaltet die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Schnittstelle.  
   
@@ -48,7 +48,7 @@ Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die G
 ### <a name="example"></a>Beispiel  
  Hier ist ein vereinfachtes Beispiel der Erstellung der ausgeblendeten Bereiche für alle Paare von geschweiften Klammern ein. Es wird davon ausgegangen, dass die Sprache bereitstellt, Zuordnung von geschweiften Klammern und geschweiften Klammern in geschweiften Klammern, um die abzugleichenden mindestens enthalten sein ({und}). Dieser Ansatz ist nur zur Veranschaulichung. Eine vollständige Implementierung hätte eine vollständige Behandlung der Fälle im <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Dieses Beispiel zeigt auch Gewusst wie: Festlegen der <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Vorrang `true` vorübergehend. Geben Sie eine Alternative ist die `AutoOutlining` benannten Parameter in der `ProvideLanguageServiceAttribute` Attribut im Language-Paket.  
   
- In diesem Beispiel wird davon ausgegangen, c#-Regeln für Kommentare, Zeichenfolgen und Literale.  
+ In diesem Beispiel wird davon ausgegangen, C#-Regeln für Kommentare, Zeichenfolgen und Literale.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

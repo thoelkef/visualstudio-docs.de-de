@@ -30,9 +30,9 @@ Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eine Erweiteru
   
 ## <a name="creating-a-menu-command"></a>Erstellen eines Menübefehls  
   
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstMenuCommand**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
+1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstMenuCommand**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C# / Erweiterbarkeit**.  
   
-2.  Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **FirstCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **FirstCommand.cs**.  
+2.  Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **FirstCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **FirstCommand.cs**.  
   
 3.  Erstellen Sie das Projekt, und starten Sie das Debugging.  
   

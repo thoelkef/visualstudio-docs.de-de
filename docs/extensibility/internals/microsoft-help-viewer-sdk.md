@@ -63,7 +63,7 @@ Unterstützte Sprache-Zeichenfolgen (ohne Beachtung von Groß-/Kleinschreibung):
 
 -   JavaScript
 
--   CSharp- oder c#
+-   CSharp- oder C#
 
 -   Cplusplus oder Visual c++ oder c++
 
