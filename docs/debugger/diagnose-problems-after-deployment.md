@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316885"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857774"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostizieren von Problemen nach der Bereitstellung mithilfe von IntelliTrace (C#, Visual Basic)
 
@@ -21,7 +21,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
  Wenn Sie Microsoft Monitoring Agent zur Steuerung von IntelliTrace verwenden, müssen Sie Application Performance Monitoring auf dem Webserver einrichten. Auf diese Weise werden Diagnoseereignisse beim Betrieb Ihrer App gesammelt und in einer IntelliTrace-Protokolldatei gespeichert. Anschließend können Sie die Ereignisse in Visual Studio Enterprise (nicht den Professional oder Community Editions) öffnen, zum Code springen, in dem ein Ereignis eingetreten ist, die aufgezeichneten Werte zum jeweiligen Zeitpunkt anzeigen und den ausgeführten Code vorwärts oder rückwärts durchlaufen. Nachdem Sie das Problem gefunden und behoben haben, wiederholen Sie den Zyklus zum Erstellen, Freigeben und Überwachen der Version, um zukünftige Probleme früher und schneller beheben zu können.
 
- ![Code, build, release, Überwachung, diagnose und Korrektur](../debugger/media/ffr_cycle.png "FFR_Cycle")
+ ![Codierung, Erstellung, Freigabe, Überwachung, Diagnose, Korrektur](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
  **Sie benötigen Folgendes:**
 
@@ -40,29 +40,29 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 ####  <a name="TFS2017"></a> Azure DevOps und Team Foundation Server 2017
 
-Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veraltet markiert und entfernt wurde. Verwenden Sie zum Debuggen von ASP.NET Web-apps nach der Bereitstellung eine der folgenden Methoden aus:
+Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-Datei, die als veraltet markiert und entfernt wurde. Verwenden Sie zum Debuggen von ASP.NET-Web-Apps nach der Bereitstellung eine der folgenden Methoden:
 
-* Verwenden Sie für die Bereitstellung in Azure, [Application Insights](https://docs.microsoft.com/azure/application-insights/).
+* Verwenden Sie für die Bereitstellung in Azure [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
-* Wenn Sie IntelliTrace verwenden möchten, öffnen Sie das Projekt in Visual Studio, und Laden Sie die Symboldateien aus dem entsprechenden Build. Sie können Symboldateien aus Laden der **Module** Fenster oder durch Konfigurieren von Symbolen in **Tools** > **Optionen** > **Debuggen**   >  **Symbole**.
+* Wenn Sie IntelliTrace verwenden müssen, öffnen Sie das Projekt in Visual Studio, und laden Sie die Symboldateien aus dem entsprechenden Build. Sie können Symboldateien aus dem Fenster **Module** oder durch Konfigurieren von Symbolen in **Extras** > **Optionen** > **Debuggen** > **Symbole** laden.
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- Richten Sie Ihrer erstellungspipeline aus, um die Speicherorte von der Quelle, Build und Symbole das buildmanifest (BuildInfo.config-Datei) hinzufügen. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
+ Richten Sie Ihre Buildpipeline so ein, dass sie die Speicherorte Ihrer Quellen, des Builds und der Symbole in das Buildmanifest (BuildInfo.config-Datei) schreibt. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
 
-1.  [Bearbeiten Sie Ihrer erstellungspipeline, oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1.  [Bearbeiten Sie Ihre Buildpipeline, oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer?view=vsts)
 
-     ![Anzeigen von Buildpipeline in TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![Anzeigen der Buildpipeline in TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
 2.  Wählen Sie die Standardvorlage (TfvcTemplate.12.xaml) oder eine eigene benutzerdefinierte Vorlage aus.
 
-     ![Wählen Sie die Buildprozessvorlage &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
+     ![Auswählen der Buildprozessvorlage &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
 
 3.  Geben Sie an, wo die Symboldatei (PDB) gespeichert werden soll, sodass die Quelle automatisch indiziert wird.
 
      Wenn Sie eine benutzerdefinierte Vorlage verwenden, vergewissern Sie sich, dass die Vorlage über eine Aktivität zum Indizieren der Quelle verfügt. Später fügen Sie ein MSBuild-Argument hinzu, um anzugeben, wo die Symboldateien gespeichert werden sollen.
 
-     ![Einrichten der Symbolpfad in TFS 2013-Buildpipeline](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
+     ![Einrichten des Symbolpfads in Buildpipeline TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
      Weitere Informationen über Symbole finden Sie unter [Veröffentlichen von Symboldaten](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
 
@@ -76,7 +76,7 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
      **/p:BuildSymbolStorePath=**\<*Pfad zu Symbolen*>
 
-     ![Buildserverinformationen in Builddefinition TFS 2013 einschließen](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
+     ![Einschließen von Buildserverinformationen in Builddefinition TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
      Fügen Sie der Webprojektdatei (CSPROJ oder VBPROJ) diese Zeilen hinzu:
 
@@ -90,18 +90,18 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
 6.  Führen Sie einen neuen Build aus.
 
-    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)
+    Gehen Sie zu [Schritt 2: Freigeben der App](#DeployRelease).
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 oder 2010
  Führen Sie die folgenden Schritte aus, um das Buildmanifest (BuildInfo.config) für Ihr Projekt automatisch zu erstellen und in das Ausgabeverzeichnis Ihres Projekts einzufügen. Die Datei erscheint als "*ProjektName*.BuildInfo.config" im Ausgabeverzeichnis, wird jedoch im Bereitstellungsverzeichnis als "BuildInfo.config" umbenannt, nachdem Sie Ihre App veröffentlicht haben.
 
 1.  Installieren Sie eine beliebige Edition von Visual Studio 2013 auf Ihrem Team Foundation Build-Server.
 
-2.  Geben Sie in Ihrer erstellungspipeline an, wo die Symbole gespeichert werden, sodass die Quelle automatisch indiziert wird.
+2.  Geben Sie in Ihrer Buildpipeline an, wo die Symbole gespeichert werden sollen, sodass die Quelle automatisch indiziert wird.
 
      Wenn Sie eine benutzerdefinierte Vorlage verwenden, vergewissern Sie sich, dass die Vorlage über eine Aktivität zum Indizieren der Quelle verfügt.
 
-3.  Fügen Sie diese MSBuild-Argumente zu Ihrer erstellungspipeline hinzu:
+3.  Fügen Sie der Buildpipeline die folgenden MSBuild-Argumente hinzu:
 
     -   **/p:VisualStudioVersion=12.0**
 
@@ -115,7 +115,7 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
 4.  Führen Sie einen neuen Build aus.
 
-    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)
+    Gehen Sie zu [Schritt 2: Freigeben der App](#DeployRelease).
 
 ###  <a name="ManualBuild"></a> Erstellen des Buildmanifests für einen manuellen Buildvorgang mithilfe von Visual Studio
  Führen Sie die folgenden Schritte aus, um das Buildmanifest (BuildInfo.config) für Ihr Projekt automatisch zu erstellen und in das Ausgabeverzeichnis Ihres Projekts einzufügen. Die Datei erscheint als "*ProjektName*.BuildInfo.config" im Ausgabeverzeichnis, wird jedoch im Bereitstellungsverzeichnis als "BuildInfo.config" umbenannt, nachdem Sie Ihre App veröffentlicht haben.
@@ -142,7 +142,7 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
 4.  Führen Sie einen neuen Build aus.
 
-    Wechseln Sie zu [Schritt 2: Freigeben einer app](#DeployRelease)
+    Gehen Sie zu [Schritt 2: Freigeben der App](#DeployRelease).
 
 ###  <a name="MSBuild"></a> Erstellen des Buildmanifests für einen manuellen Buildvorgang mithilfe von „MSBuild.exe“
  Fügen Sie diese Buildargumente beim Ausführen des Builds hinzu:
@@ -162,39 +162,39 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
  Richten Sie Leistungsüberwachung für Ihre App auf dem Webserver ein, um Ihre App auf Probleme zu untersuchen, Diagnoseereignisse aufzuzeichnen und diese Ereignisse in einer IntelliTrace-Protokolldatei zu speichern. Siehe [Überwachen Ihrer App auf Bereitstellungsprobleme](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ##  <a name="InvestigateEvents"></a> Schritt 4: Ermitteln des Problems
- Sie benötigen Visual Studio Enterprise auf Ihrem Entwicklungscomputer oder einem anderen Computer, um die aufgezeichneten Ereignisse anzuzeigen und Ihren Code mit IntelliTrace zu debuggen. Sie können alternativ Tools wie CodeLens, IntelliTrace, Debuggerzuordnungen und Code Maps verwenden, um das Problem zu diagnostizieren.
+ Sie benötigen Visual Studio Enterprise auf Ihrem Entwicklungscomputer oder einem anderen Computer, um die aufgezeichneten Ereignisse anzuzeigen und Ihren Code mit IntelliTrace zu debuggen. Sie können alternativ Tools wie CodeLens, IntelliTrace, Debuggerzuordnungen und Codezuordnungen verwenden, um das Problem zu diagnostizieren.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Öffnen des IntelliTrace-Protokolls und der entsprechenden Projektmappe
 
 1.  Öffnen Sie das IntelliTrace-Protokoll (ITRACE-Datei) in Visual Studio Enterprise. Oder doppelklicken Sie einfach auf die Datei, wenn Visual Studio Enterprise auf demselben Computer installiert ist.
 
-2.  Wählen Sie **Projektmappe öffnen** aus, damit die entsprechende Projektmappe oder das Projekt automatisch in Visual Studio geöffnet wird, wenn das Projekt nicht als Teil einer Projektmappe erstellt wurde. [F: Im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte App. Wie konnte das geschehen? Wie gehe ich vor?](#InvalidConfigFile)
+2.  Wählen Sie **Projektmappe öffnen** aus, damit die entsprechende Projektmappe oder das Projekt automatisch in Visual Studio geöffnet wird, wenn das Projekt nicht als Teil einer Projektmappe erstellt wurde. [F: Im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte App. Wie konnte das geschehen? Was kann ich unternehmen?](#InvalidConfigFile)
 
      Visual Studio legt alle ausstehenden Änderungen automatisch ab, wenn die entsprechende Projektmappe oder das Projekt geöffnet wird. Nähere Informationen zu diesem Shelvesets finden Sie im Fenster **Ausgabe** oder **Team Explorer**.
 
      Bevor Sie Änderungen vornehmen, sollten Sie überprüfen, ob Sie über die richtige Quelle verfügen. Wenn Sie Verzweigung verwenden kann es sein, dass die aktuelle Verzweigung von der Verzweigung abweicht, in der Visual Studio die entsprechende Quelle findet, z. B. Ihre Versionsverzweigung.
 
-     ![Öffnen Sie die Projektmappe von IntelliTrace-Protokoll](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
+     ![Öffnen der Projektmappe vom IntelliTrace-Protokoll aus](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
      Wenn Sie einen Arbeitsbereich zu dieser Lösung oder diesem Projekt zugeordnet haben, wählt Visual Studio diesen Arbeitsbereich aus, um die gesuchte Quelle einzufügen.
 
-     ![Aus quellcodeverwaltung öffnen, um den zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
+     ![Öffnen von der Quellcodeverwaltung aus im zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
      Andernfalls wählen Sie einen anderen Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich. Visual Studio ordnet diesem Arbeitsbereich die gesamte Verzweigung zu.
 
-     ![Aus quellcodeverwaltung öffnen &#45; neuen Arbeitsbereich erstellen](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
+     ![Öffnen von der Quellcodeverwaltung aus &#45; Erstellen eines neuen Arbeitsbereichs](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
      Um einen Arbeitsbereich mit bestimmten Zuordnungen oder einen Namen zu erstellen, der nicht Ihrem Computernamen entspricht, wählen Sie **Verwalten**aus.
 
      [F: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?](#IneligibleWorkspace)
 
-     [F: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamsammlung oder eine andere Sammlung ausgewählt habe?](#ChooseTeamProject)
+     [F: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamauflistung oder eine andere Auflistung ausgewählt habe?](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnose eines Leistungsproblems
 
 1.  Unter **Leistungsverletzungen**überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.
 
-     ![Informationen zum Leistungsereignis anzeigen](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![Anzeigen von Leistungsereignisdetails](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      Sie können auch einfach auf das Ereignis doppelklicken.
 
@@ -204,13 +204,13 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
      Erweitern Sie diesen Aufruf, um alle geschachtelten Aufrufe und Werte zu überprüfen, die zu diesem Zeitpunkt aufgezeichnet wurden. Starten Sie dann das Debuggen über diesen Aufruf.
 
-     ![Starten Sie das Debuggen über Methodenaufruf](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+     ![Starten des Debuggens über einen Methodenaufruf](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
 
      Sie können auch einfach auf den Aufruf doppelklicken.
 
      Wenn die Methode in Ihrem Anwendungscode enthalten ist, wechselt Visual Studio zu dieser Methode.
 
-     ![Wechseln Sie zum Anwendungscode von Leistungsereignissen](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![Wechseln zum Anwendungscode vom Leistungsereignis](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen, den Code schrittweise durchlaufen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen Methoden zeitlich rückwärts oder vorwärts zu bewegen](../debugger/intellitrace.md) , die während dieses Leistungsereignisses aufgerufen wurden.
 
@@ -222,13 +222,13 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
 1.  Überprüfen Sie unter **Ausnahmedaten**die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.
 
-     ![Starten Sie das Debuggen von einem Ausnahmeereignis aus](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+     ![Starten des Debuggens von einem Ausnahmeereignis aus](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
      Sie können auch einfach auf das Ereignis doppelklicken.
 
      Wenn die Ausnahme im Anwendungscode aufgetreten ist, wechselt Visual Studio zu der Stelle, an der die Ausnahme aufgetreten ist.
 
-     ![Wechseln Sie zum Anwendungscode von einem Ausnahmeereignis aus](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+     ![Wechseln zum Anwendungscode von einem Leistungsereignis aus](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen aufgezeichneten Ereignissen](../debugger/intellitrace.md), zugehörigem Code und den Werten zu bewegen, die zu diesen Zeitpunkten erfasst wurden.
 
@@ -238,13 +238,13 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
 -   [Rufen Sie mehr Informationen zu diesem Code ab](../ide/find-code-changes-and-other-history-with-codelens.md). Um Verweise für diesen Code, dessen Änderungsverlauf und alle entsprechenden Fehler, Arbeitselemente, Codeüberprüfungsanforderungen oder Komponententests zu suchen, ohne den Editor zu verlassen, können Sie die CodeLens-Indikatoren im Editor verwenden.
 
-     ![CodeLens &#45; Verweise auf diesen Code anzeigen](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
+     ![CodeLens &#45; Anzeigen von Verweisen auf diesen Code](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
-     ![CodeLens &#45; Änderungsverlauf für diesen Code anzeigen](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
+     ![CodeLens &#45; Anzeigen des Änderungsverlaufs für diesen Code](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
 -   [Ordnen Sie die Stelle im Code während des Debuggens zu.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Um die Methoden, die während der Debugsitzung aufgerufen wurden, visuell nachzuverfolgen, ordnen Sie die Aufrufliste zu.
 
-     ![Zuordnen die Aufrufliste beim Debuggen](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
+     ![Zuordnen der Aufrufliste beim Debuggen](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
 ###  <a name="FAQ"></a> Fragen und Antworten
 
@@ -262,7 +262,7 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
 3.  Vergewissern Sie sich, dass die folgenden Informationen enthalten sind:
 
-- **ProjectName**
+- **ProjektName**
 
    Der Name Ihres Projekts in Visual Studio. Beispiel:
 
@@ -316,7 +316,7 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
     </SourceControl>
     ```
 
-- **Erstellen**
+- **Build**
 
    Informationen über Ihr Buildsystem, entweder `"TeamBuild"` oder `"MSBuild"`, sowie die folgenden erforderlichen Eigenschaften:
 
@@ -360,14 +360,14 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 ####  <a name="IneligibleWorkspace"></a> F: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?
  **A:** Der ausgewählte Arbeitsbereich besitzt keine Zuordnungen zwischen dem Quellverwaltungsordner und einem lokalen Ordner. Um eine Zuordnung für diesen Arbeitsbereich zu erstellen, wählen Sie **Verwalten**aus. Andernfalls wählen Sie einen bereits zugeordneten Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich.
 
- ![Öffnen aus der quellcodeverwaltung ohne zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
+ ![Öffnen von der Quellcodeverwaltung aus ohne zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
 ####  <a name="ChooseTeamProject"></a> F: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamsammlung oder eine andere Sammlung ausgewählt habe?
  **A:** Dies kann aus folgenden Gründen der Fall sein:
 
 -   Visual Studio ist nicht mit dem TFS verbunden.
 
-     ![Aus quellcodeverwaltung öffnen &#45; nicht verbunden](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![Öffnen von der Quellcodeverwaltung aus &#45; nicht verbunden](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 -   Visual Studio konnte die Projektmappe oder das Projekt nicht in der aktuellen Teamauflistung finden.
 
@@ -377,12 +377,12 @@ Visual Studio 2017 umfasst nicht die *"buildinfo.config"* -Datei, die als veralt
 
      Der angegebene TFS verfügt möglicherweise nicht mehr über die entsprechende Quelle oder Sie ist nicht mehr vorhanden, da Sie möglicherweise zu einem neuen TFS migriert sind. Wenn der angegebene TFS nicht vorhanden ist, kann bei Visual Studio nach etwa einer Minute ein Timeout auftreten, und Sie werden anschließend aufgefordert, eine Verbindung mit einer anderen Auflistung herzustellen. Um den Vorgang fortzusetzen, stellen Sie eine Verbindung mit dem richtigen TFS her.
 
-     ![Aus quellcodeverwaltung öffnen &#45; migriert](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![Öffnen von der Quellcodeverwaltung aus &#45; migriert](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> F: Was ist ein Arbeitsbereich?
  **A:** Der [Arbeitsbereich speichert eine Kopie der Quelle](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) sodass Sie sie separat entwickeln und testen können, bevor Sie die Arbeit einchecken. Wenn Sie nicht bereits über einen Arbeitsbereich verfügen, der der gefundenen Projektmappe oder dem Projekt speziell zugeordnet ist, dann werden Sie von Visual Studio aufgefordert, einen verfügbaren Arbeitsbereich auszuwählen oder einen neuen Arbeitsbereich mit Ihrem Computernamen als Standardarbeitsbereichsname zu erstellen.
 
 ####  <a name="UntrustedSymbols"></a> F: Warum erhalte ich diese Meldung über nicht vertrauenswürdige Symbole?
- ![Debuggen mit nicht vertrauenswürdigem Symbolpfad? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+ ![Debuggen mit nicht vertrauenswürdigem Symbolpfad?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **A:** Diese Meldung wird angezeigt, wenn der Symbolpfad in der Buildmanifestdatei (\<*ProjectName*>.BuildInfo.config) nicht in der Liste der vertrauenswürdigen Symbolpfade enthalten ist. Sie können den Pfad zur Liste der Symbolpfade in den Debuggeroptionen hinzufügen.

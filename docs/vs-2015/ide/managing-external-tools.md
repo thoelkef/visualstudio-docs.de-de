@@ -1,5 +1,5 @@
 ---
-title: Verwalten von externen Tools | Microsoft-Dokumentation
+title: Verwalten externer Tools | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763322"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866764"
 ---
 # <a name="managing-external-tools"></a>Verwalten von externen Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
   
 3.  ATL-/MFC-Ablaufverfolgungsprogramm: Zeigt Debugablaufverfolgungs-Meldungen in den ATL- und MFC-Quellen an.  
   
-4.  PreEmptive Dotfuscator und Analytics: Schützt .NET Programme vor reverse Engineering.  
+4.  PreEmptive Protection – Dotfuscator: Schützt .NET-Programme vor Reverse Engineering.  
   
-5.  SPY++ Zeigt Prozesse, Threads, Windows und fenstermeldungen grafisch an.  
+5.  SPY++: Stellt Prozesse, Threads, Fenster und Fenstermeldungen grafisch dar.  
   
-6.  &WCF-Dienstkonfigurations-Editor Ermöglicht Ihnen das Erstellen und Ändern von Konfigurationseinstellungen für WCF-Dienste.  
+6.  WCF-Dienstkonfigurations-Editor: Ermöglicht es Ihnen, die Konfigurationseinstellungen für WCF-Dienste zu erstellen und zu ändern.  
   
 > [!WARNING]
 >  Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -122,4 +122,4 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 |Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|  
   
 ## <a name="see-also"></a>Siehe auch  
- [C/C++-Buildtools](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C-/C++-Buildtools](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

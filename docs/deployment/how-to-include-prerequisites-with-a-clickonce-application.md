@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620004"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232852"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Einschließen erforderlicher Komponenten in eine ClickOnce-Anwendung
 Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung verteilen können, müssen Sie zunächst die Installationspakete für diese erforderlichen Komponenten auf Ihren Entwicklungscomputer herunterladen. Wenn Sie eine Anwendung veröffentlichen und **Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen** auswählen, tritt ein Fehler auf, wenn die Installationspakete nicht im Ordner **Pakete** enthalten sind.
 
 > [!NOTE]
@@ -25,7 +25,7 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
 
 1. Öffnen Sie im Datei-Explorer den Ordner **Pakete**.
 
-    Der Pfad ist standardmäßig *C:\Programme\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* auf einem 32-Bit-System und *C:\Programme (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* auf einem 64-Bit-System.
+    Standardmäßig ist der Pfad `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
 
 2. Öffnen Sie den Ordner für die erforderliche Komponente, die Sie hinzufügen möchten, und öffnen Sie dann den Sprachordner für die installierte Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (z.B. **en** für Englisch).
 
@@ -50,4 +50,4 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../deploym
     Sie können das Installationspaket jetzt mit der Anwendung verteilen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Installieren von Voraussetzungen mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Vorgehensweise: Installieren von Voraussetzungen mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
