@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31912d5528c38374aafd1212767bfb850a8b976
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723577"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232813"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 Wenn Sie beim Entwerfen, Benutzeroberfläche, die allgemeine Visual Studio Shell-Elementen oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, verwenden Sie Tokennamen in Paketdefinitionsdateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.
@@ -24,9 +24,9 @@ Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:
 
 -   **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Die Funktionen des Kombinationsfelds und der Animation sind unterschiedlich, und wenn das Kombinationsfeld ändert die Farbe zugeordnet ist, kann es nicht mehr sein, auf eine geeignete Farbe für Ihr Animationselement. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.
 
--   **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination aus.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn nicht die zugeordnete Textfarbe vorhanden ist, verwenden Sie nicht diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt. Andere Kombinationen von Text- und Hintergrundfarben können die Benutzeroberfläche unlesbar führen.
+-   **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn nicht die zugeordnete Textfarbe vorhanden ist, verwenden Sie nicht diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt. Andere Kombinationen von Text- und Hintergrundfarben können die Benutzeroberfläche unlesbar führen.
 
--   **Verwenden Sie steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände nicht einige Visual Studio-Steuerelemente auf separaten Rahmen- und Hintergrundfarben haben. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
+-   **Verwenden Sie Steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände nicht einige Visual Studio-Steuerelemente auf separaten Rahmen- und Hintergrundfarben haben. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
 
 > [!IMPORTANT]
 > Verwenden Sie keine Token gefunden, die in den Kategorien "Startseite" oder "Cider".
@@ -299,7 +299,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | --- | --- |
 | Hintergrund | Transparent |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Liste der Elemente anzeigen: Zustand "aktiv"**
 
@@ -307,7 +307,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | --- | --- |
 | Hintergrund | `TreeView.SelectedItemActive` |
 | Vordergrund (Text) | `TreeView.SelectedItemActiveText` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Liste der Elemente anzeigen: inaktiver Zustand**
 
@@ -315,7 +315,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 | --- | --- |
 | Hintergrund | `TreeView.SelectedItemInactive` |
 | Vordergrund (Text) | `TreeView.SelectedItemInactiveText` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 ### <a name="ui-text"></a>Benutzeroberflächentext
 
@@ -679,7 +679,7 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 | --- | --- |
 | Hintergrund | `SearchControl.Selection` |
 | Vordergrund (Text) | `SearchControl.FocusedBackground` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Trennzeichen | `SearchControl.FocusedDropDownSeparator` |
 
 **Deaktivierte sucheingabefeld**
@@ -699,7 +699,7 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe "Suchen") | `SearchControl.SearchGlyph` |
 | Vordergrund (Glyphe "Beenden") | `SearchControl.StopGlyph` |
 | Vordergrund (Glyphe "Löschen") | `SearchControl.ClearGlyph` |
@@ -733,9 +733,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `SearchControl.ActionButtonDisabledGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Zielgerichtete Suche in Dropdown-Schaltfläche**
 
@@ -773,9 +773,9 @@ Ein Suchfeld kann einen von mehreren Zuständen aufweisen, von denen sich einige
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `SearchControl.DisabledDownButtonGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 #### <a name="search-drop-down-lists"></a>Dropdownlisten im Suchfeld
 Die Dropdown-suchfeldmenü kann etwas komplexer als andere Dropdownmenüs in Visual Studio sein. Die "Empfohlene Suchbegriffe" und die Abschnitte "Suchoptionen" können alleine oder zusammen im Menü angezeigt, und jede Bereiche. Die beiden Bereiche werden außerdem durch eine Linie getrennt, wenn sie zusammen auftreten, und das gesamte Dropdownmenü ist von einem Rahmen umgeben.
@@ -873,7 +873,7 @@ Mehrere Toolfenster, einschließlich der Projektmappen-Explorer, Server-Explorer
 | Hintergrund | `TreeView.Background` |
 | Vordergrund (Text) | `TreeView.Background` |
 | Vordergrund (Glyphe) | `TreeView.Glyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturansichtselement: Zeigen Sie mit Status**
 
@@ -884,7 +884,7 @@ Mehrere Toolfenster, einschließlich der Projektmappen-Explorer, Server-Explorer
 | Hintergrund | `TreeView.Background` |
 | Vordergrund (Text) | `TreeView.Background` |
 | Vordergrund (Glyphe) | `TreeView.GlyphMouseOver` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturansichtselement: Ziehen Sie über den Status**
 
@@ -895,7 +895,7 @@ Mehrere Toolfenster, einschließlich der Projektmappen-Explorer, Server-Explorer
 | Hintergrund | `TreeView.DragOverItem` |
 | Vordergrund (Text) | `TreeView.DragOverItem` |
 | Vordergrund (Glyphe) | `TreeView.DragOverItemGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturansichtselement: ausgewählt wird, konzentriert sich der Zustand**
 
@@ -917,7 +917,7 @@ Mehrere Toolfenster, einschließlich der Projektmappen-Explorer, Server-Explorer
 | Hintergrund | `TreeView.SelectedItemInactive` |
 | Vordergrund (Text) | `TreeView.SelectedItemInactive` |
 | Vordergrund (Glyphe) | `TreeView.SelectedItemInactiveGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Strukturansichtselement: gezeigt, ausgewählt und konzentriert sich der Zustand**
 
@@ -939,7 +939,7 @@ Mehrere Toolfenster, einschließlich der Projektmappen-Explorer, Server-Explorer
 | Hintergrund | `TreeView.SelectedItemInactive` |
 | Vordergrund (Text) | `TreeView.SelectedItemInactive` |
 | Vordergrund (Glyphe) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 ## <a name="shell-appearance"></a>Shell-Darstellung
 
@@ -985,7 +985,7 @@ Für die Hintergründe der Befehlsablage werden zwei Sätze von Tokennamen verwe
 | --- | --- |
 | Hintergrund | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-** Befehl-Shell-Befehl Leiste **
+**Befehlsleiste Shelf-Befehl**
 
 > Im hellen und dunklen Design von Visual Studio 2013 auf denselben Farbwert festgelegte Farbverlaufsstopps
 
@@ -1008,7 +1008,7 @@ Der Manifest-Designer dient dazu, die Bearbeitung der Manifestdatei in Windows 8
 | Element | Tokenname: Category.Color |
 | --- | --- |
 | Hintergrund | `ManifestDesigner.TabActive` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Beschreibung der ausgewählten Bereich der Manifest-Designers: Status**
 
@@ -1065,10 +1065,10 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarMenuGlyph` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 **Menütitel: Zeigen Sie mit Status**
 
@@ -1102,10 +1102,10 @@ Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie 
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Text) | `Environment.CommandBarTextInactive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarTextInactive` |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 
 #### <a name="menu-items"></a>Menüelemente
 Ein einzelnes Menüelement besteht aus dem Menütext und optional einem Symbol, einem Kontrollkästchen oder einer Untermenü-Glyphe. Hintergrund- und Textfarbe ändern sich, wenn Sie darauf zeigen. Dieses Farbtoken ist eine Kombination aus Hintergrund-/Vordergrundfarbe.
@@ -1407,7 +1407,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
 ####  <a name="BKMK_CommandDropDown"></a> Befehlsleiste Dropdown-Elemente
@@ -1439,7 +1439,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Glyphe) | `Environment.DropDownGlyph` |
 
 **Befehlsleiste Dropdown-Liste: Status**
@@ -1539,7 +1539,7 @@ Unterteilte Schaltflächen haben viele Tokennamen gemeinsam mit anderen Befehlsl
 
 | Element | Tokenname: Category.Color |
 | --- | --- |
-| Hintergrund | Keine |
+| Hintergrund | Keiner |
 | Vordergrund (Text) | `Environment.CommandBarTextActive` |
 | Vordergrund (Glyphe) | `Environment.CommandBarSplitButtonGlyph` |
 | Rahmen | Nicht zutreffend |
@@ -2030,7 +2030,7 @@ Der Werkzeugkasten ist eines der am häufigsten verwendeten allgemeinen Toolfens
 | --- | --- |
 | Hintergrund | `Environment.ToolboxContent`<br />(Rubriken) |
 | Hintergrund | `Environment.ToolWindowBackground`<br />(Einzelne Elemente oder das gesamte Fenster, wenn keine Steuerelemente verfügbar sind) |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Vordergrund (Glyphe) | `Environment.ToolboxContent` |
 | Vordergrund (Text) | `Environment.ToolboxContent` |
 
@@ -2041,7 +2041,7 @@ Der Werkzeugkasten ist eines der am häufigsten verwendeten allgemeinen Toolfens
 | Element | Tokenname: Category.Color |
 | --- | --- |
 | Hintergrund | `Environment.ToolboxContentMouseOver`<br />(Nur für einzelne Elemente) |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Vordergrund (Text) | `Environment.ToolboxContentMouseOver`<br />(Nur für einzelne Elemente) |
 
 **Ausgewählte Toolbox Knoten: mit Fokus Zustand**
@@ -2066,7 +2066,7 @@ Der Werkzeugkasten ist eines der am häufigsten verwendeten allgemeinen Toolfens
 | Element | Tokenname: Category.Color |
 | --- | --- |
 | Hintergrund | `TreeView.SelectedItemInactive`<br />Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
-| Rahmen | Keine |
+| Rahmen | Keiner |
 | Vordergrund (Glyphe) | `TreeView.SelectedItemInactive`<br />Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Vordergrund (Text) | `TreeView.SelectedItemInactive`<br />Aus Kategorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
@@ -2176,7 +2176,7 @@ Der Rahmen der Titelleiste wird nicht echter Rahmen, sondern eine starke Linie a
 | --- | --- |
 | ... erstellen Sie eine beliebige Stelle Benutzeroberfläche, die Toolfenster abstimmen möchten. | ... für Benutzeroberflächenelemente, die Sie nicht, automatisch ändern, wenn möchten designaktualisierung die Shell ein. |
 
-**Ausgewählte, fokussierte Toolfenster-Registerkarte**
+**Ausgewählt, Toolfenster-Registerkarte mit Fokus**
 
 ![Ausgewählt, Toolfenster-Registerkarte konzentriert](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Ausgewählt, Toolfenster-Registerkarte mit Fokus
 
@@ -2186,7 +2186,7 @@ Der Rahmen der Titelleiste wird nicht echter Rahmen, sondern eine starke Linie a
 | Vordergrund (Text) | `Environment.ToolWindowTabSelectedActiveText` |
 | Rahmen | `Environment.ToolWindowTabSelectedBorder`<br />(Auf dieselbe Farbe wie der Hintergrund festgelegt.) |
 
-**Ausgewählte, ohne Fokus Toolfenster-Registerkarte**
+**Ausgewählt, Toolfenster-Registerkarte ohne Fokus**
 
 ![Ausgewählte, ohne Fokus Toolfenster-Registerkarte](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Ausgewählt, Toolfenster-Registerkarte ohne Fokus
 

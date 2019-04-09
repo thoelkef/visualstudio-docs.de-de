@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223727"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232748"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
 
-Sie können die Codemetrikergebnisse für eine oder mehrere Projekte oder eine gesamte Projektmappe generieren. Codemetrik ist verfügbar, in das interaktive Entwicklungsumgebung (IDE) von Visual Studio und für C# und Visual Basic-Projekten in der Befehlszeile.
+Sie können Codemetrikdaten werden auf drei Arten generieren:
 
-Darüber hinaus können Sie installieren ein [NuGet-Paket](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , enthält vier Codemetrik [Analyzer](roslyn-analyzers-overview.md) Regeln: CA1501, CA1502, CA1505 und CA1506. Diese Regeln sind standardmäßig deaktiviert, aber Sie können sie aus **Projektmappen-Explorer** oder in einem [Regelsatz](using-rule-sets-to-group-code-analysis-rules.md) Datei.
+- Durch die Installation von [FxCop-Analysetools](#fxcop-analyzers-code-metrics-rules) und aktivieren die vier Code Metriken (Verwaltbarkeit)-Regeln, die sie enthält.
 
-## <a name="visual-studio-ide-code-metrics"></a>Codemetrik für Visual Studio-IDE
+- Durch Auswahl der [ **analysieren** > **Berechnen der Codemetrik** ](#calculate-code-metrics-menu-command) Menübefehl in Visual Studio.
+
+- Von der [Befehlszeile](#command-line-code-metrics) für C# und Visual Basic-Projekte.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop Analysen Metriken Coderegeln
+
+Die [FxCopAnalyzers-NuGet-Paket](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) enthält mehrere Codemetrik [Analyzer](roslyn-analyzers-overview.md) Regeln:
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Diese Regeln sind standardmäßig deaktiviert, jedoch können sie aus [ **Projektmappen-Explorer** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) oder in einem [Regelsatz](using-rule-sets-to-group-code-analysis-rules.md) Datei. Um die Regel CA1502 als Warnung zu aktivieren, würde die RULESET-Datei z. B. den folgenden Eintrag enthalten:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Konfiguration
+
+Sie können die Schwellenwerte konfigurieren, an denen die Regeln in die FxCop-Analysetools Metriken ausgelöst Paket.
+
+1. Erstellen einer Textdatei Beispielsweise können Sie sie benennen *CodeMetricsConfig.txt*.
+
+2. Fügen Sie die gewünschten Schwellenwerte in die Textdatei in folgendem Format ein:
+
+   ```txt
+   CA1502: 10
+   ```
+
+   In diesem Beispiel Regel [CA1502](ca1502-avoid-excessive-complexity.md) ausgelöst werden, wenn eine Methode, die zyklomatische Komplexität größer als 10 ist konfiguriert ist.
+
+3. In der **Eigenschaften** Fenster von Visual Studio oder in der Projektdatei, markieren Sie die Buildaktion der Konfigurationsdatei als [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Zum Beispiel:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Kontextmenübefehl von "Code Metrics" berechnet
 
 Codemetrik für eine oder alle der die geöffneten Projekte in der IDE generieren Sie mit der **analysieren** > **Berechnen der Codemetrik** Menü.
 
@@ -54,7 +100,8 @@ Die Ergebnisse werden generiert und die **Codemetrikergebnisse** Fenster wird an
 > Die **Berechnen der Codemetrik** Befehl funktioniert nicht für .NET Core und .NET Standard-Projekte. Zum Berechnen der Codemetrik für ein Projekt für .NET Core oder .NET Standard können Sie folgende Aktionen ausführen:
 >
 > - Berechnen der Codemetrik aus der [Befehlszeile](#command-line-code-metrics) stattdessen
-> - ein Upgrade auf Visual Studio-2019
+>
+> - Upgrade auf [2019 für Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 

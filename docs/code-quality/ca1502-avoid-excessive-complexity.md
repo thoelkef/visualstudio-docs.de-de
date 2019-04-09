@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916764"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232315"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Übermäßige Komplexität vermeiden.
 
@@ -44,11 +44,11 @@ Eine Methode hat eine übermäßige zyklomatische Komplexität.
 
 Zyklomatische Komplexität die Anzahl Rändern - die Anzahl der Knoten + 1 =
 
-wobei ein Knoten einem zweigverteilungspunkt Logik und einen Edge darstellt, stellt eine Linie zwischen Knoten dar.
+Ein *Knoten* einem zweigverteilungspunkt Logik darstellt und ein *Edge* eine Linie zwischen den Knoten darstellt.
 
 Einen Verstoß wird von die Regel berichtet, wenn die zyklomatische Komplexität mehr als 25 ist.
 
-Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität und verwaltbarkeit von verwaltetem Code](../code-quality/code-metrics-values.md),
+Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität von verwaltetem Code](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -102,7 +102,7 @@ Die folgenden Beispiele zeigen die Methoden, die unterschiedliche zyklomatische 
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA1501: Übermäßige Vererbung vermeiden](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: Übermäßige Vererbung vermeiden.](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Siehe auch
 
