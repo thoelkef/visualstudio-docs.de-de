@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Hier erfahren Sie mehr über den in Ihrem Visual Studio-Abonnement enthaltenen Enterprise Mobility + Security-Vorteil.
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841194"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232657"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) in Visual Studio-Abonnements
 
@@ -29,23 +29,23 @@ Um EMS zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereit
 
 2. Suchen Sie im Abschnitt „Tools“ die Kachel „Enterprise Mobility & Security“, und klicken Sie im unteren Bereich der Kachel auf den Link **Code abrufen**.   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „EMS“](_img/vs-ems/vs-ems-tile.png)
+   > ![EMS-Kachel](_img/vs-ems/vs-ems-tile.png)
 
 3. Auf der Seite von Enterprise Mobility + Security E5 können Sie sich mit einem bestehenden Abonnement anmelden oder ein neues erstellen.  Um ein neues zu erstellen, vervollständigen Sie die angeforderten Informationen, und klicken Sie auf **Next** (Weiter).
    > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Konto erstellen](_img/vs-ems/vs-ems-create-account-cropped.png)
+   > ![Konto für EMS erstellen](_img/vs-ems/vs-ems-create-account-cropped.png)
 
 4. Erstellen Sie Ihre Benutzer-ID und ein Kennwort.  Klicken Sie auf **Create my account** (Mein Konto erstellen), um den Vorgang fortzusetzen.
    > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Benutzer-ID erstellen](_img/vs-ems/vs-ems-userID-cropped.png)
+   > ![EMS: Benutzer-ID erstellen](_img/vs-ems/vs-ems-userID-cropped.png)
 
 5. Geben Sie als Nächstes eine Telefonnummer an, an die der Prüfcode per Anruf oder SMS übermittelt wird.  Geben Sie den Code ein, und klicken Sie auf **Next** (Weiter).
    > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Überprüfung](_img/vs-ems/vs-ems-robot-cropped.png)
+   > ![EMS-Prüfung](_img/vs-ems/vs-ems-robot-cropped.png)
 
 6. Auf der nächsten Seite ist die Anmeldeseite, auf der Ihre Benutzer-ID angezeigt wird.  Notieren Sie die Informationen zur späteren Verwendung.  Klicken Sie auf **You’re ready to go…** (Sie sind startbereit…).
    > [!div class="mx-imgBorder"]
-   > ![EMS-Vorteil: Konto erstellt](_img/vs-ems/vs-ems-save-info-cropped.png)
+   > ![EMS: Konto erstellt](_img/vs-ems/vs-ems-save-info-cropped.png)
 
 7. Für EMS ist Zugriff auf das [Microsoft Azure-Portal](https://azure.microsoft.com) erforderlich.  Führen Sie die drei Schritte auf der EMS-Angebotsseite aus. So aktivieren Sie Ihr Azure-Abonnement, fügen Benutzer hinzu und konfigurieren EMS.
 
@@ -73,6 +73,6 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="support-resources"></a>Supportressourcen
 -  Benötigen Sie Hilfe bei EMS?  Lesen Sie die [Onlinedokumentation zu EMS](/enterprise-mobility-security/).
--  Antworten auf Fragen zum technischen Support für EMS-Komponenten erhalten Sie unter [Häufig gestellte Fragen zum Support für EMS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq).
+-  Antworten auf Fragen zum technischen Support für EMS-Komponenten erhalten Sie unter [Häufig gestellte Fragen zum Support für EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq).
 -  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
 -  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

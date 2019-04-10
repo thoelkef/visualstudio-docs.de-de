@@ -3,19 +3,19 @@ title: Komponententest für Python-Code
 description: Einrichten von Unittests für Python-Code in Visual Studio, um die Features des Test-Explorers zum Ermitteln, Ausführen und Debuggen von Tests in vollem Umfang zu nutzen.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e16612287d1efa76b206de50c6af9f18edab7c8a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983805"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366132"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
