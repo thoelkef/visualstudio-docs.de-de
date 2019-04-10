@@ -180,8 +180,6 @@ items:
         href: get-started/tutorial-open-project-from-repo.md
       - name: Portieren, Migrieren und Aktualisieren von Projekten
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: Übertragung, Migration und Upgrade von Projekten in Visual Studio 2019
-        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Verwalten von Projekt- und Projektmappeneigenschaften
         href: ide/managing-project-and-solution-properties.md
       - name: Verwalten von Verweisen in einem Projekt
@@ -725,6 +723,7 @@ items:
       displayName: Start page window
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: Suchen und Verwenden von Visual Studio-Erweiterungen
+      displayName: marketplace, gallery, vsix
       href: ide/finding-and-using-visual-studio-extensions.md
     - name: Verwalten externer Tools
       href: ide/managing-external-tools.md
@@ -1124,20 +1123,20 @@ items:
       items:
       - name: Tastenkombinationen
         href: help-viewer/shortcut-keys.md
-  - name: Dotfuscator Community Edition (CE)
+  - name: Dotfuscator Community
     href: ide/dotfuscator/index.md
     items:
     - name: Funktionen von Dotfuscator
       href: ide/dotfuscator/capabilities.md
-    - name: Installieren von Dotfuscator CE
+    - name: Installieren von Dotfuscator Community
       href: ide/dotfuscator/install.md
-    - name: Aktualisieren von Dotfuscator CE
+    - name: Upgraden von Dotfuscator Community
       href: ide/dotfuscator/upgrades.md
 - name: Ressourcen
   items:
   - name: Neues in Visual Studio 2017
     href: ide/whats-new-visual-studio-2017.md
-  - name: Neuigkeiten in Visual Studio 2019 RC
+  - name: Neues in Visual Studio 2019
     href: ide/whats-new-visual-studio-2019.md
   - name: Versionsanmerkungen und Systemanforderungen
     items:
@@ -1195,9 +1194,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 91a495ff1f48243244f4c68bb6a8a87a6acdd7ea
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 815123cfc5caf88a7131f87bf194c1b62762a068
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568022"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232508"
