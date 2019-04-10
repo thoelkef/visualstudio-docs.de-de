@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336d177ec939ca0f7dfdc32535e2d2e92b0f04d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686508"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366847"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariablen in Visual Studio-debugger
 Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variablenfenster oder im Dialogfeld **Schnellüberwachung** angezeigt werden. Eine Pseudovariable können Sie genauso wie eine normale Variable eingeben. Pseudovariablen sind jedoch keine Variablen und es gibt keine entsprechenden Variablennamen im Programm.
@@ -32,11 +32,11 @@ Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variab
 
 `$handles`
 
- Bei systemeigenem Code können Sie die in dieser Tabelle aufgeführten Pseudovariablen verwenden:
+ In nativem Code können Sie in der folgenden Tabelle angezeigten Pseudovariablen verwenden:
 
 |Pseudovariable|Funktion|
 |--------------------|--------------|
-|`$err`|Es wird der letzten Fehlerwert angezeigt, der mit der Funktion "SetLastError" festgelegt wird. Der angezeigte Wert stellt das Ergebnis der Rückgabe der Funktion "GetLastError" dar.<br /><br /> Verwenden Sie `$err,hr`, um die dekodierte Form dieses Werts anzuzeigen. Wenn der letzte Fehler z. B. 3 wäre, würde `$err,hr``ERROR_PATH_NOT_FOUND : The system cannot find the path specified.` anzeigen.|
+|`$err`|Es wird der letzten Fehlerwert angezeigt, der mit der Funktion "SetLastError" festgelegt wird. Der angezeigte Wert stellt das Ergebnis der Rückgabe der Funktion "GetLastError" dar.<br /><br /> Verwenden Sie `$err,hr`, um die dekodierte Form dieses Werts anzuzeigen. Wenn der letzte Fehler 3, z. B. die `$err,hr` würde anzeigen `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|Zeigt die Anzahl von Handles an, die der Anwendung zugeordnet sind.|
 |`$vframe`|Zeigt die Adresse des aktuellen Stapelrahmens an.|
 |`$tid`|Zeigt die Thread-ID für den aktuellen Thread an.|
@@ -47,19 +47,21 @@ Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variab
 |`$clk`|Zeigt die Zeit in Taktzyklen an.|
 |`$user`|Zeigt eine Struktur mit Kontoinformationen für das die Anwendung ausführende Konto an. Aus Sicherheitsgründen werden die Kennwortinformationen nicht angezeigt.|
 |`$exceptionstack`|Zeigt die Stapelüberwachung der aktuellen Windows-Runtime-Ausnahme an. `$ exceptionstack` kann nur in UWP-apps. `$ exceptionstack` für C++- und SEH-Ausnahmen wird nicht unterstützt werden.|
-|`$ReturnValue`|Zeigt den Rückgabewert einer .NET Framework-Methode an.|
+|`$returnvalue`|Zeigt den Rückgabewert einer .NET Framework-Methode an.|
 
- Die in dieser Tabelle angezeigten Pseudovariablen können Sie in C# und Visual Basic verwenden:
+ In C# können Sie in der folgenden Tabelle angezeigten Pseudovariablen verwenden:
 
 |Pseudovariable|Funktion|
 |--------------------|--------------|
-|`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.<br /><br /> Bei deaktiviertem Ausnahmen-Assistenten wird in Visual C# dem Fenster **Lokal** bei Auftreten einer Ausnahme automatisch `$exception` hinzugefügt.|
+|`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.<br /><br /> Wenn der Ausnahmen-Assistent deaktiviert ist, `$exception` wird automatisch hinzugefügt, die **"lokal"** Fenster, wenn eine Ausnahme auftritt.|
 |`$user`|Zeigt eine Struktur mit Kontoinformationen für das die Anwendung ausführende Konto an. Aus Sicherheitsgründen werden die Kennwortinformationen nicht angezeigt.|
+|`$returnvalue`|Zeigt den Rückgabewert einer .NET Framework-Methode an.|
 
  Die in dieser Tabelle angezeigten Pseudovariablen können Sie in Visual Basic verwenden:
 
 |Pseudovariable|Funktion|
 |--------------------|--------------|
+|`$exception`|Zeigt Informationen über die letzte Ausnahme an. Wenn keine Ausnahme aufgetreten ist, wird beim Auswerten von `$exception` eine Fehlermeldung angezeigt.|
 |`$delete` oder `$$delete`|Löscht eine implizite Variable, die im Fenster **Direkt** erstellt wurde. Die Syntax ist `$delete,` *Variable* oder`$delete,` *Variable*`.`|
 |`$objectids` oder `$listobjectids`|Zeigt alle aktiven Objekt-IDs als untergeordnete Elemente des angegebenen Ausdrucks an. Die Syntax ist `$objectid,` *Ausdruck* oder`$listobjectids,` *Ausdruck*`.`|
 |`$` *N* `#`|Zeigt das Objekt mit der Objekt-ID *N* an.|

@@ -1,25 +1,22 @@
 ---
 title: Definieren von validierungseinschränkungen für UML-Modellen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958933"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
-     **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
+     **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
   
     -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  Doppelklicken Sie auf den Fehlerbericht. Wenn die im Bericht erwähnten Elemente auf dem Bildschirm sichtbar sind, werden sie hervorgehoben.  
   
-     **Problembehandlung**: Wenn der Befehl **Überprüfen** nicht im Menü angezeigt wird, stellen Sie Folgendes sicher:  
+     **Problembehandlung bei**: Wenn die **überprüfen** Befehl nicht im Menü angezeigt, stellen Sie sicher, dass:  
   
     -   Das Überprüfungsprojekt ist im VSIX-Projekt in **source.extensions.manifest** auf der Registerkarte **Objekte** als MEF-Komponente aufgeführt.  
   
@@ -268,7 +265,7 @@ public void ValidateSomething
  Sie können beliebig viele Validierungsmethoden mit unterschiedlichen Typen im zweiten Parameter definieren. Wenn die Validierung aufgerufen wird, wird jede Validierungsmethode für jedes dem Parametertyp entsprechende Modellelement aufgerufen.  
   
 ### <a name="reporting-validation-errors"></a>Melden von Validierungsfehlern  
- Um einen Fehlerbericht zu erstellen, verwenden Sie die von `ValidationContext` bereitgestellten Methoden:  
+ Um einen Fehlerbericht zu erstellen, verwenden Sie die von `ValidationContext`bereitgestellten Methoden:  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
@@ -278,7 +275,7 @@ public void ValidateSomething
   
 - `elementsWithError` identifiziert Elemente im Modell. Wenn Benutzer auf den Fehlerbericht doppelklicken, wird die Form ausgewählt, die dieses Element darstellt.  
   
-  `LogError(),``LogWarning()` und `LogMessage()` platzieren Meldungen in den verschiedenen Abschnitten der Fehlerliste.  
+  `LogError(),` `LogWarning()` und `LogMessage()` platzieren Meldungen in den verschiedenen Abschnitten der Fehlerliste.  
   
 ## <a name="how-validation-methods-are-applied"></a>Anwenden von Validierungsmethoden  
  Die Validierung wird auf jedes Element im Modell angewendet, einschließlich Beziehungen und Teile größerer Elemente, z. B. Attribute einer Klasse und Parameter einer Operation.  
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
   
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> Beispiel  
  In diesem Beispiel wird nach Schleifen in der Abhängigkeitsbeziehung zwischen Elementen gesucht.  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>Siehe auch  
  [Definieren und Installieren einer modellierungserweiterung](../modeling/define-and-install-a-modeling-extension.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Definieren eines Menübefehls in einem Modellierungsdiagramm | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946360"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definieren eines Menübefehls in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,12 +66,12 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 2. Fügen Sie dem Projekt die folgenden Verweise hinzu.  
 
 
-   |                                                                                                    Verweis                                                                                                    |                                                                                                  Optionen                                                                                                  |
+   |                                                                                                    Referenz                                                                                                    |                                                                                                  Optionen                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definieren Sie Komponenten mithilfe von [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Lesen und Ändern der Eigenschaften von Modellelementen                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Erstellen von Modellelementen, Ändern von Formen in Diagrammen                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Definieren von Modellereignishandlern<br /><br /> Kapseln einer Reihe von Änderungen im Modell. Weitere Informationen finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[Version]                                                                                  | Definieren von Modellereignishandlern<br /><br /> Kapseln einer Reihe von Änderungen im Modell. Weitere Informationen finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[Version]<br /><br /> (nicht immer erforderlich)                                                             |                                                                                   Zugreifen auf zusätzliche Diagrammelemente für Gestenhandler                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Nur für Befehle in Ebenendiagrammen erforderlich. Weitere Informationen finden Sie unter [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md). |                                                                                             Definieren Sie Befehle in einem Ebenendiagramm.                                                                                              |
 
@@ -189,7 +186,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
  ...  
 
- Die `IDiagramContext`-Deklaration ermöglicht es Ihnen, in den Methoden Code zu schreiben, der auf das Diagramm, die aktuelle Auswahl und das Modell zugreift:  
+ Die `IDiagramContext` -Deklaration ermöglicht es Ihnen, in den Methoden Code zu schreiben, der auf das Diagramm, die aktuelle Auswahl und das Modell zugreift:  
 
 ```  
 IDiagram diagram = this.DiagramContext.CurrentDiagram;  
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
 
-     **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
+     **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
 
     -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Öffnen Sie das Kontextmenü an einer beliebigen Stelle im Diagramm. Der Befehl muss im Menü angezeigt werden.  
 
-     **Problembehandlung**: Wenn der Befehl nicht im Menü angezeigt wird, stellen Sie Folgendes sicher:  
+     **Problembehandlung bei**: Wenn der Befehl im Menü nicht angezeigt wird, stellen Sie sicher, dass:  
 
     -   Das Menübefehlsprojekt ist im VSIX-Projekt als MEF-Komponente auf der Registerkarte **Objekte** in **source.extensions.manifest** aufgeführt.  
 
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. Sie haben die Möglichkeit, die Erweiterung zu entfernen, indem Sie die Datei aus dem folgenden Ordner löschen:  
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> Beispiel  
  Das folgende Beispiel zeigt den Code für einen Menübefehl, der die Namen von zwei Elementen eines Klassendiagramms austauscht. Dieser Code muss in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterungsprojekt erstellt und wie in den vorherigen Abschnitten beschrieben installiert werden.  
@@ -376,6 +373,3 @@ namespace SwapClassNames
  [Bearbeiten von UML-Sequenzdiagrammen mit der UML-API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)   
  [Beispiel: Befehl zum Ausrichten von Formen in einem UML-Diagramm](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-

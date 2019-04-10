@@ -1,12 +1,9 @@
 ---
 title: Definieren eines gestenhandlers in einem Modellierungsdiagramm | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958738"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
   
     Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
-    **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
+    **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
   
    -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
@@ -256,7 +253,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
   
 4. Ziehen Sie ein Element aus dem UML-Explorer auf das Diagramm. Der Ziehhandler sollte aufgerufen werden.  
   
-   **Problembehandlung:** Wenn der Gestenhandler nicht ordnungsgemäß funktioniert, stellen Sie Folgendes sicher:  
+   **Problembehandlung bei**: Wenn der Gestenhandler nicht ordnungsgemäß funktioniert, stellen Sie sicher, dass:  
   
 -   Das Gestenhandlerprojekt ist im VSIX-Projekt als MEF-Komponente auf der Registerkarte **Objekte** im **source.extensions.manifest** aufgeführt.  
   
@@ -279,7 +276,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Aktualisieren Sie das Modell basierend auf dem Zielobjekt und auf dem Quellobjekt, auf das in `dragEvent`verwiesen wird.<br /><br /> Wird aufgerufen, wenn der Benutzer die Maus nach dem Ziehvorgang loslässt.|  
 |`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` ist die Form, auf die der Benutzer doppelt geklickt hat.|  
   
- Sie können Handler schreiben, die nicht nur UML akzeptieren, sondern auch eine Vielzahl anderer Elemente, z. B. Dateien, Knoten in einer .NET-Klassenansicht usw. Benutzer können diese Elemente in ein UML-Diagramm ziehen, wenn Sie eine `OnDragDrop` -Methode schreiben, die die serialisierte Form der Elemente decodieren kann. Die Decodierungsmethoden variieren von Elementtyp zu Elementtyp.  
+ Sie können Handler schreiben, die nicht nur UML akzeptieren, sondern auch eine Vielzahl anderer Elemente, z. B. Dateien, Knoten in einer .NET-Klassenansicht usw. Benutzer können diese Elemente in ein UML-Diagramm ziehen, wenn Sie eine `OnDragDrop` -Methode schreiben, die die serialisierte Form der Elemente decodieren kann. Die Decodierungsmethoden variieren von Elementtyp zu Elementtyp.  
   
  Die Parameter dieser Methoden lauten wie folgt:  
   
@@ -320,7 +317,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
     ```  
   
-     Sie können viele unterschiedliche Elemente aus verschiedenen Teilen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder vom Windows-Desktop in ein Diagramm ziehen. Unterschiedliche Elementtypen werden in `IDataObject`unterschiedlich codiert. Informationen zum Extrahieren der Elemente finden Sie in der Dokumentation für den jeweiligen Objekttyp.  
+     Sie können viele unterschiedliche Elemente aus verschiedenen Teilen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder vom Windows-Desktop in ein Diagramm ziehen. Unterschiedliche Elementtypen werden in `IDataObject`unterschiedlich codiert. Informationen zum Extrahieren der Elemente finden Sie in der Dokumentation für den jeweiligen Objekttyp.  
   
      Wenn das Quellobjekt ein aus UML-Modell-Explorer oder einem anderen UML-Diagramm gezogenes UML-Element ist, finden Sie unter [Abrufen von UML-Modellelementen aus IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
@@ -382,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. Sie haben die Möglichkeit, die Erweiterung zu entfernen, indem Sie die Datei aus dem folgenden Ordner löschen:  
   
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="DragExample"></a> Beispiel  
  Im folgenden Beispiel wird gezeigt, wie basierend auf den Teilen und Anschlüssen einer aus einem Komponentendiagramm gezogenen Komponente Lebenslinien in einem Sequenzdiagramm erstellt werden.  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)
-
-
-

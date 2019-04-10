@@ -34,22 +34,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea096ce0880ff3126e7aff98e037c75dc457997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719599"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366690"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
 
 ##  <a name="BKMK_Overview"></a> Setzen Sie Haltepunkte im Quellcode
- Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Z. B. in der folgenden C# Code können Sie einen Haltepunkt festlegen, die Deklaration von Variablen, die `for` -Schleife oder Code innerhalb der `for` Schleife. Sie können nicht auf den Namespace oder den Klassendeklarationen oder die Signatur der Methode einen Haltepunkt festlegen.
+ Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Z. B. im folgenden C#-Code, Sie können einen Haltepunkt festlegen der Deklaration von Variablen, die `for` -Schleife oder Code innerhalb der `for` Schleife. Sie können nicht auf den Namespace oder den Klassendeklarationen oder die Signatur der Methode einen Haltepunkt festlegen.
 
  Klicken Sie in den linken Rand neben einer Codezeile, zum Festlegen eines Haltepunkts im Quellcode. Sie können auch auswählen, die Zeile, und drücken Sie **F9**Option **Debuggen** > **Haltepunkt ein/aus**, oder mit der rechten Maustaste, und wählen Sie **Haltepunkt**  >  **Haltepunkt einfügen**. Der Haltepunkt wird als ein roter Punkt am linken Rand angezeigt.
 
-In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatisch hervorgehoben. Für C++-Code können Sie auf die Herausarbeitung der Haltepunkt und die aktuellen Zeilen durch Auswahl aktivieren **Tools** (oder **Debuggen**) > **Optionen**  >   **Debuggen von** >  **bei Haltepunkten und aktueller Anweisung (nur C++) gesamte Quellcodezeile markieren**.
+In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatisch hervorgehoben. Für C++ Code, die Sie aktivieren können, auf die Herausarbeitung der Haltepunkt und die aktuellen Zeilen dazu **Tools** (oder **Debuggen**) > **Optionen**  >  **Debuggen** >  **bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren (C++ nur)**.
 
  ![Festlegen eines Haltepunkts](../debugger/media/basicbreakpoint.png "grundlegende Haltepunkt")
 
@@ -59,7 +59,7 @@ In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatis
 
  ![Haltepunktausführung beendet](../debugger/media/breakpointexecution.png "haltepunktausführung")
 
- Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters „Aufrufliste“)](../debugger/how-to-use-the-call-stack-window.md).
+ Wenn der Debugger am Haltepunkt beendet wurde, können Sie den aktuellen Status der app, einschließlich der Variablenwerte und die Aufrufliste anzeigen. Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md).
 
 - Der Haltepunkt ist eine Umschaltoption. Sie klicken Sie darauf, drücken Sie die **F9**, oder verwenden Sie **Debuggen** > **Haltepunkt ein/aus** zu löschen oder erneut eingefügt werden.
 
@@ -87,7 +87,7 @@ Wird der aufruflistenhaltepunkt angezeigt, der **Haltepunkte** -Fenster als eine
 
 Der Debugger bei der Anweisung.
 
-Weitere Informationen zur Aufrufliste finden Sie unter [How to: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters „Aufrufliste“)](../debugger/how-to-use-the-call-stack-window.md).
+Weitere Informationen zur Aufrufliste finden Sie unter [Vorgehensweise: Verwenden Sie das Fenster "Aufrufliste"](../debugger/how-to-use-the-call-stack-window.md).
 
 Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -113,21 +113,21 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 
    - Verwenden Sie den vollqualifizierten Funktionsnamen.
 
-     Beispiel: `Namespace1.ClassX.MethodA()`
+     Beispiel:  `Namespace1.ClassX.MethodA()`
 
    - Fügen Sie die Parametertypen einer überladenen Funktion hinzu.
 
-     Beispiel: `MethodA(int, string)`
+     Beispiel:  `MethodA(int, string)`
 
    - Verwenden der "!" Symbol für das Modul angeben.
 
-     Ein Beispiel: `App1.dll!MethodA`
+     Beispiel: `App1.dll!MethodA`
 
    - Verwenden Sie den Kontextoperator in systemeigenem C++.
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     Ein Beispiel: `{MethodA, , App1.dll}+2`
+     Beispiel: `{MethodA, , App1.dll}+2`
 
 1. In der **Sprache** Dropdownliste, wählen Sie die Sprache der Funktion.
 
@@ -148,7 +148,7 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
     ((my_class *) 0xcccccccc)->my_method
     ```
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Festlegen von Datenhaltepunkten (nur systemeigener C++)
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Festlegen von Datenhaltepunkten (nur systemeigener C++)
 
  Datenhaltepunkte unterbrechen die Ausführung, wenn ein Wert, der an einer angegebenen Adresse arbeitsspeicheränderungen gespeichert. Wenn der Wert ausgelesen jedoch nicht geändert wird, wird die Ausführung nicht unterbrochen.
 
@@ -218,7 +218,7 @@ Haltepunkte mit Bedingungen werden mit einem **+** Symbol im Quellcode und **Hal
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Bedingter Ausdruck
 
-Bei der Auswahl **Bedingungsausdruck**, können Sie zwischen zwei Bedingungen: **ist "true"** oder **Änderung**. Wählen Sie **ist "true"** zu unterbrechen, wenn der Ausdruck erfüllt ist, oder **Änderung** zu unterbrechen, wenn der Wert des Ausdrucks geändert hat.
+Bei der Auswahl **Bedingungsausdruck**, Sie können zwischen zwei Bedingungen auswählen: **Ist "true"** oder **Änderung**. Wählen Sie **ist "true"** zu unterbrechen, wenn der Ausdruck erfüllt ist, oder **Änderung** zu unterbrechen, wenn der Wert des Ausdrucks geändert hat.
 
  Im folgenden Beispiel wird der Haltepunkt erreicht nur, wenn der Wert des `testInt` ist **4**:
 
@@ -286,7 +286,7 @@ Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können
 
 1. Mit der rechten Maustaste eines Haltepunkts, und wählen Sie **Aktionen**. Oder im der **Haltepunkteinstellungen** Fenster, zeigen Sie auf den Haltepunkt, wählen Sie die **Einstellungen** Symbol, und wählen Sie dann **Aktionen**.
 
-1. Geben Sie eine Nachricht in die **Meldung im Ausgabefenster protokollieren** Feld. Die Nachricht kann generische Textzeichenfolgen, die Werte der Variablen oder Ausdrücke in geschweiften Klammern und Formatbezeichner enthalten ([ C# ](../debugger/format-specifiers-in-csharp.md) und [C++](../debugger/format-specifiers-in-cpp.md)) für die Werte.
+1. Geben Sie eine Nachricht in die **Meldung im Ausgabefenster protokollieren** Feld. Die Nachricht kann generische Textzeichenfolgen, die Werte der Variablen oder Ausdrücke in geschweiften Klammern und Formatbezeichner enthalten ([c#](../debugger/format-specifiers-in-csharp.md) und [C++](../debugger/format-specifiers-in-cpp.md)) für die Werte.
 
    Sie können auch die folgenden speziellen Schlüsselwörter in der Nachricht verwenden:
 

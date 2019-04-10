@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723252"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366808"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung
 
@@ -91,6 +91,19 @@ Die Regeln zum Auswerten von Ausdrücken in der **Watch** Fenster sind in der Re
 ![Sehen Sie sich Ausdrucksfehler](../debugger/media/watchexpressionerror.png "Ausdrucksfehler ansehen")
 
 Ein Kreis mit zwei Wellenlinien Symbol darf in der **Watch** Fenster. Dieses Symbol weist darauf hin, dass der Debugger der Ausdruck aufgrund einer möglichen threadübergreifenden Abhängigkeit nicht. Auswertung des Codes muss andere Threads in Ihrer app vorübergehend ausgeführt, aber da Sie sich im Unterbrechungsmodus befinden, werden alle Threads in Ihrer app in der Regel beendet. Vorübergehende Ausführung anderer Threads zugelassen haben unerwartete Auswirkungen auf den Status Ihrer app, und der Debugger können Ereignisse wie z. B. Haltepunkte und Ausnahmen für diese Threads zu ignorieren.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Suchen Sie in das Fenster "überwachen"
+
+Sie können nach Schlüsselwörtern in den Spalten für Name, Wert und Typ der suchen die **Überwachen** Fenster über die Suchleiste oben jedes Fenster. Drücken Sie die EINGABETASTE, oder wählen Sie einen der Pfeile, um eine Suche auszuführen. Um einen laufenden Suchvorgang abzubrechen, wählen Sie das Symbol "X" in der Suchleiste ein.
+
+Verwenden Sie die Pfeile nach links und rechts (UMSCHALT + F3 und F3, bzw.) finden Sie zum Navigieren zwischen entspricht.
+
+![Suchen Sie im Fenster "überwachen"](../debugger/media/ee-search-watch.png "suchen Sie im Fenster \"überwachen\"")
+
+Um Ihre Suche mehr oder weniger umfassend und nutzen die **umfassendere Suche** Dropdownliste am oberen Rand der **sehen Sie sich** Fenster auswählen, wie viele Ebenen soll in geschachtelten Objekten. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Aktualisieren von Überwachungswerten
 
@@ -280,6 +293,6 @@ Beobachten der `a` -Variable
 
 ## <a name="see-also"></a>Siehe auch
 - [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
-- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
+- [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md)
 - [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)
 - [Debuggerfenster](../debugger/debugger-windows.md)

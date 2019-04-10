@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526359"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366301"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -31,7 +31,7 @@ Wenn Sie häufig auf Datentipps während des Debuggens zeigen, können Sie den D
 
 ![Anheften eines Datentipps](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Ihren Code bearbeiten und Debuggen fortsetzen (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Bearbeiten Sie Ihren Code und fortfahren Sie, Debuggen (c#, VB, C++)
 
 In den meisten Sprachen, die von Visual Studio unterstützt werden können Sie bearbeiten den Code in der Mitte einer Debugsitzung und mit dem Debuggen fortfahren. Um dieses Feature verwenden zu können, klicken Sie in Ihrem Code mit dem Cursor während der Debugger, nehmen Änderungen, und drücken Sie angehalten **F5**, **F10**, oder **F11** um das Debuggen fortzusetzen.
 
@@ -64,7 +64,7 @@ Durch Ändern des Ausführungsablaufs können Sie Aktionen ausführen wie das Te
 > [!WARNING]
 > Bei dieser Funktion müssen Sie häufig vorsichtig vorgehen. Sie werden durch eine Warnung in der QuickInfo auf Probleme aufmerksam gemacht. Möglicherweise werden Ihnen auch andere Warnungen angezeigt. Verschieben den Zeiger kann nicht rückgängig gemacht, Ihre app in einem früheren Anwendungszustand.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs, (c#, Visual Basic)
 
 Es ist einfach, zeigen Sie die Variablen mithilfe der Debuggerfenster wie die **Watch** Fenster. Aber wenn eine Variable den Gültigkeitsbereich verlässt in der **Watch** Fenster werden Sie feststellen, dass er ausgegraut ist. Der Wert einer Variablen kann in einigen app-Szenarien ändern, selbst wenn die Variable ist außerhalb des gültigen Bereichs, und möglicherweise möchten es so beobachten (z. B. eine Variable kann Garbage collection erhalten). Sie können die Variable verfolgen, indem Sie dafür im Objekt-ID erstellen die **Watch** Fenster.
 
@@ -106,7 +106,7 @@ Eine Zeichenfolgen-Schnellansicht helfen Ihnen dabei herauszufinden, ob eine Zei
 
 ![JSON-Zeichenfolgen-Schnellansicht](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Für einigen andere Typen wie z. B. WPF-Objekte, die in den Debuggerfenstern angezeigt werden, können Sie auch Schnellansichten öffnen.
+Für einigen andere Typen wie z. B. DataSet und DataTable-Objekte, die in den Debuggerfenstern angezeigt werden, können Sie auch eine integrierte Schnellansicht öffnen.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Unterbrechen Sie im Code auf behandelten Ausnahmen
 
