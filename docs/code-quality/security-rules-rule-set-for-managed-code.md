@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018388"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366041"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Regelsatz für Sicherheitsregeln für verwalteten Code
 Sie sollten den Regelsatz Microsoft-Sicherheitsregeln, die Anzahl potenzieller Sicherheitsprobleme zu maximieren, die gemeldet werden, einschließen.
@@ -63,15 +63,18 @@ Sie sollten den Regelsatz Microsoft-Sicherheitsregeln, die Anzahl potenzieller S
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Transparente Methoden dürfen keine Sicherheitsassertionen verwenden.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Transparente Methoden dürfen keine Aufrufe in nativen Code durchführen.|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Assemblys müssen gültige starke Namen aufweisen.|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Code nach SQL-Injection-Anfälligkeiten überprüfen|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Code für XSS-Anfälligkeiten überprüfen|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Code nach Datei Pfad-Injection-Anfälligkeiten überprüfen|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Überprüfen Sie Code für die Veröffentlichung von Sicherheitsrisiken Informationen|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Code nach LDAP-Injection-Anfälligkeiten überprüfen|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Code nach Prozess-Befehl-Injection-Anfälligkeiten überprüfen|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Überprüfen Sie Code für offene umleitungen Sicherheitsrisiken|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Code nach XPath-Injection-Anfälligkeiten überprüfen|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Code nach XML-Injection-Anfälligkeiten überprüfen|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Code nach XAML-Injection-Anfälligkeiten überprüfen|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Code nach DLL Injection-Anfälligkeiten überprüfen|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Code nach Regex-Injection-Anfälligkeiten überprüfen|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Verwenden Sie keine unsicheren Deserialisierer BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Rufen Sie BinaryFormatter.Deserialize nicht ohne die erste Einstellung BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Sicherstellen Sie, dass BinaryFormatter.Binder festgelegt ist, vor dem Aufrufen von BinaryFormatter.Deserialize|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Review code for SQL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von SQL-Befehlen)|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Review code for XSS vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch XSS)|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Review code for file path injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen über einen Dateipfad)|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Review code for information disclosure vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken bei der Veröffentlichung von Informationen)|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Review code for LDAP injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von LDAP-Befehlen)|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Review code for XPath injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XPath-Befehlen)|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Review code for XAML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XAML-Befehlen)|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Review code for regex injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von RegEx)|

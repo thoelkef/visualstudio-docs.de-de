@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355723"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366470"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS
 Um eine ASP.NET-Anwendung debuggen, die in IIS bereitgestellt wurde, installieren Sie und führen Sie die Remoteserver-Verwaltungstools auf dem Computer, in dem Sie Ihre app bereitgestellt haben, und fügen Sie dann auf der ausgeführten app in Visual Studio.
@@ -28,7 +28,7 @@ Dieses Handbuch wird erläutert, wie einrichten und konfigurieren Sie eine Visua
 > [!NOTE]
 > Klicken Sie auf den Remotecomputer stattdessen Debuggen von ASP.NET Core, finden Sie unter [Remote Debuggen von ASP.NET Core auf einem Computer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Für Azure App Service Sie ganz einfach bereitstellen und Debuggen auf einer vorkonfigurierten Instanz von IIS entweder können die [Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 erforderlich) oder durch [das Anfügen des Debuggers im Server-Explorer](../debugger/remote-debugging-azure.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 ::: moniker range=">=vs-2019"
 Visual Studio-2019 ist erforderlich, die in diesem Artikel gezeigten Schritte.
@@ -200,25 +200,37 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 2. Klicken Sie in Visual Studio auf **Debuggen > an den Prozess anhängen** (Strg + Alt + P).
 
     > [!TIP]
-    > In Visual Studio 2017 und höheren Versionen, Sie können erneut anfügen an denselben Prozess, die Sie zuvor mit angefügte **Debuggen > an Prozess anfügen...** UMSCHALT+ALT+P
+    > In Visual Studio 2017 und höheren Versionen, Sie können erneut anfügen an denselben Prozess, die Sie zuvor mit angefügte **Debuggen > an Prozess anfügen...** (Umschalt + Alt + P).
 
-3. Legen Sie auf das Feld "Qualifizierer"  **\<Name des Remotecomputers >: Port**.
+3. Legen Sie auf das Feld "Qualifizierer"  **\<Remotecomputernamen >** , und drücken Sie **EINGABETASTE**.
+
+    Stellen Sie sicher, dass fügt Visual Studio den erforderlichen Port auf den Namen des Computers angezeigt wird, das Format:  **\<Name des Remotecomputers >: Port**
 
     ::: moniker range=">=vs-2019"
-    **\<Name des Remotecomputers >: 4024** 2019 für Visual Studio
+    Visual Studio-2019, sollte Sie  **\<Name des Remotecomputers >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<Name des Remotecomputers >: 4022** für Visual Studio 2017
+    In Visual Studio 2017 sollte  **\<Name des Remotecomputers >: 4022**
     ::: moniker-end
+    Der Port ist erforderlich. Wenn Sie die Nummer des Ports nicht angezeigt wird, fügen Sie sie manuell hinzu.
+
 4. Klicken Sie auf **Aktualisieren**.
     Im Fenster sollten einige Prozesse **Verfügbare Prozesse** angezeigt werden.
 
     Wenn alle Prozesse, die nicht angezeigt wird, versuchen Sie den Namen des Remotecomputers (der Port ist erforderlich.) anstelle der IP-Adresse. Sie können `ipconfig` in einer Befehlszeile, um die IPv4-Adresse zu erhalten.
 
 5. Aktivieren Sie  **Prozesse aller Benutzer anzeigen**.
+
 6. Geben Sie den ersten Buchstaben eines Prozessnamens schnell und problemlos suchen **w3wp.exe** für ASP.NET 4.5.
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    Wenn mehrere Prozesse mit **w3wp.exe**, überprüfen Sie die **Benutzernamen** Spalte. In einigen Szenarien die **Benutzernamen** Spalte zeigt den Namen Ihrer app-Pool, z. B. **IIS APPPOOL\DefaultAppPool**. Wenn der App-Pool, eine einfache Möglichkeit zum Identifizieren des richtigen Prozesses wird zum Erstellen eines neuen Namens der App-Pool für die app-Instanz, die Sie debuggen möchten, und klicken Sie dann Sie es im finden der **Benutzernamen** Spalte.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Klicken Sie auf **Attach** (Anhängen).
 
@@ -229,7 +241,7 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 
     Der Haltepunkt sollte in Visual Studio erreicht werden.
 
-## <a name="bkmk_openports"></a> Problembehandlung Öffnen Sie die erforderlichen Ports unter Windows Server
+## <a name="bkmk_openports"></a> Problembehandlung: Öffnen Sie die erforderlichen Ports unter Windows Server
 
 In den meisten Setups werden die erforderlichen Ports durch die Installation von ASP.NET und den Remotedebugger geöffnet. Allerdings müssen Sie sicherstellen, dass die Ports geöffnet sind.
 
