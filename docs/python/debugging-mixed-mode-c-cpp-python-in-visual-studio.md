@@ -3,19 +3,19 @@ title: Debuggen im gemischten Modus für Python
 description: Gleichzeitiges Debuggen von C++ und Python in Visual Studio einschließlich abwechselnder Einzelschrittausführung in beiden Umgebungen, Anzeigen von Werten und Auswerten von Ausdrücken
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355233"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366652"
 ---
 # <a name="debug-python-and-c-together"></a>Gleichzeitiges Debuggen von Python und C++
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610345"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897685"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei *Microsoft.Build.CommonTypes.xsd* definiert.
@@ -46,9 +46,9 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|
-|GUID|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Optionale Zeichenfolge. Der Hauptteil der Versionsnummer der Komponente. Beispielsweise "5", wenn die Versionsnummer "5.46" lautet.|
-|VersionMinor|Optionale Zeichenfolge. Der zweite Teil der Versionsnummer (Nebenversionsnummer) der Komponente. Beispielsweise "46", wenn die Versionsnummer "5.46" lautet.|
+|GUID|Erforderliche Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Erforderliche Zeichenfolge. Der Hauptteil der Versionsnummer der Komponente. Beispielsweise "5", wenn die Versionsnummer "5.46" lautet.|
+|VersionMinor|Erforderliche Zeichenfolge. Der zweite Teil der Versionsnummer (Nebenversionsnummer) der Komponente. Beispielsweise "46", wenn die Versionsnummer "5.46" lautet.|
 |LCID|Optionale Zeichenfolge. Die LocaleID (Gebietsschema-ID) für die Komponente.|
 |WrapperTool|Optionale Zeichenfolge. Der Name des Wrappertools, das auf die Komponente angewendet wird, z. B. "tlbimp".|
 |Isolated|Optionaler boolescher Wert. Gibt an, ob die Komponente eine registrierungsfreie Komponente ist.|
@@ -76,7 +76,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|
 |Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|
 |Package|Optionale Zeichenfolge. Der Pfad der Projektdatei, auf die verwiesen wird.|
-|ReferenceOutputAssembly|Optionaler boolescher Wert. Bei Festlegung auf `false` ist die Ausgabe des referenzierten Projekts als [Verweis](#Reference) dieses Projekts nicht eingeschlossen, aber dennoch wird sichergestellt, dass das andere Projekt vor diesem Projekt erstellt wird. Wird standardmäßig auf `true` festgelegt.|
+|ReferenceOutputAssembly|Optionaler boolescher Wert. Bei Festlegung auf `false` ist die Ausgabe des referenzierten Projekts als [Verweis](#reference) dieses Projekts nicht eingeschlossen, aber dennoch wird sichergestellt, dass das andere Projekt vor diesem Projekt erstellt wird. Wird standardmäßig auf `true` festgelegt.|
 
 ### <a name="compile"></a>Compile
  Stellt die Quelldateien für den Compiler dar.
