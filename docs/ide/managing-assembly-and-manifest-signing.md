@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957467"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866691"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 
@@ -31,7 +31,7 @@ Informationen zum Signieren von Assemblys in Visual Basic- und C#-Projekten find
 Informationen zum Signieren von Assemblys in Visual C++-Projekten finden Sie unter [Assemblys mit starken Namen (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> Die Signierung mit starken Namen schützt nicht gegen Reverse Engineering (Zurückentwicklung) der Assembly. Informationen zum Schutz gegen Reverse Engineering finden Sie unter [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> Die Signierung mit starken Namen schützt nicht gegen Reverse Engineering (Zurückentwicklung) der Assembly. Informationen zum Schutz gegen Reverse Engineering finden Sie unter [Dotfuscator Community Edition](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Objekttypen und Signierung
 
@@ -57,7 +57,7 @@ Im Allgemeinen sollten Sie ausführbare Dateien nicht signieren. Eine Komponente
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Signieren einer Assembly in Visual Studio
 
-Verwenden Sie zum Signieren einer Anwendung oder Komponente die Registerkarte **Signierung** des Projekteigenschaftenfensters (klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und anschließend mit der Linken auf **Eigenschaften**, geben Sie **Projekteigenschaften** im Fenster **Schnellstart ein**, oder drücken Sie **ALT**+**EINGABETASTE** im Fenster **Projektmappen-Explorer**). Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
+Verwenden Sie zum Signieren einer Anwendung oder Komponente die Registerkarte **Signierung** des Projekteigenschaftenfensters (klicken Sie dazu zuerst im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten und anschließend mit der linken auf **Eigenschaften**). Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
 
 Geben Sie eine Schlüsseldatei an. Wenn Sie eine neue Schlüsseldatei erstellen, werden neue Schlüsseldateien immer im *PFX-Format* erstellt. Sie benötigen einen Namen und ein Kennwort für die neue Datei.
 
@@ -72,5 +72,5 @@ Weitere Informationen zum Signieren von Manifesten finden Sie unter [Vorgehenswe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Assemblys mit starken Namen](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Assemblys mit starken Namen (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Assemblys mit starkem Namen](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Strong-named assemblies (C++/CLI) (Assemblys mit starkem Namen (C++/CLI))](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

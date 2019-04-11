@@ -2,18 +2,20 @@
 title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940658"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647491"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 
@@ -21,7 +23,23 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>So erstellen Sie ein Projekt und fügen dem Formular eine Tabelle hinzu
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+::: moniker range="vs-2017"
+
+1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+1. Geben Sie im Suchfeld den Begriff „WPF“ ein, wählen Sie **WPF-App (.Net Framework)** und dann **Weiter** aus.
+
+   (Wenn Ihnen die Vorlage **WPF-App (.NET Framework)** nicht angezeigt wird, verwenden Sie den Visual Studio-Installer, um die Workload **.NET Desktop-Entwicklung** zu installieren.)
+
+1. Benennen Sie das Projekt mit **MatchingGame**, und klicken Sie auf **Erstellen**.
+
+::: moniker-end
 
 2. Wenn Sie nicht Visual Studio Express verwenden, müssen Sie zuerst eine Programmiersprache auswählen. Wählen Sie in der Liste **Installierte Vorlagen** entweder **Visual C#** oder **Visual Basic** aus.
 

@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325213"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789990"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
 
@@ -28,7 +28,7 @@ In diesem Artikel werden die Optionen in Visual Studio 2017 beschrieben. Wenn Si
 
 ::: moniker-end
 
-Drücken Sie **STRG** + **Q**, um `Quick Launch` zu aktivieren, und geben Sie anschließend „experimentell“ ein, um auf diese Eigenschaftenseite zuzugreifen. Der Schnellstart findet die Seite nach den ersten Buchstaben. Sie können auch darauf zugreifen, indem Sie **Tool** > **Optionen** auswählen, den **Text-Editor** und **C/C++** erweitern und anschließend **Experimentell** auswählen.
+Drücken Sie **STRG**+**Q**, um das Suchfeld zu aktivieren, und geben Sie anschließend **experimentell** ein, um auf diese Eigenschaftenseite zuzugreifen. Die Suche findet die Seite nach den ersten Buchstaben. Sie können auch darauf zugreifen, indem Sie **Tool** > **Optionen** auswählen, den **Text-Editor** und **C/C++** erweitern und anschließend **Experimentell** auswählen.
 
 Diese Features sind mit einer Visual Studio-Installation verfügbar.
 

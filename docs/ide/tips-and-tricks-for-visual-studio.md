@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223363"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790367"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
@@ -49,10 +49,10 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 |||
 |-|-|
-|Suche in Projektmappen-Explorer|**STRG**+**;**|
+|Projektmappen-Explorer-Suche|**STRG**+**;**|
 |Platzieren des Fokus in das Suchfeld eines beliebigen Toolfensters|**Alt**+**`** wenn sich der Fokus im Toolfenster befindet|
-|Schnellstart|**Strg**+**Q**|
-|Eingrenzen der Schnellstart-Ergebnisbereiche|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|
+|Suchfeld|**Strg**+**Q**|
+|Ergebnisse im Suchfeld|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|
 |Suchen in den Tooloptionen|**STRG**+**E**|
 
 ## <a name="editor-find"></a>Suche im Editor

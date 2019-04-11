@@ -10,31 +10,53 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a478e8d3575e70a11ec776d59337ae93e7a677
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 689bdb62d5a4bc9aea21da67e8e5e844660756d6
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873359"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647309"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
-Codeformateinstellungen können für Ihre C#- und Visual Basic-Projekte festgelegt werden, indem Sie das Dialogfeld **Optionen** im Menü **Extras** öffnen. Klicken Sie im Dialogfeld **Optionen** auf **Text-Editor** > [**C#** oder **Basic**] > **Codeformat** > **Allgemein**. Jedes Element auf der Liste zeigt eine Vorschau der Einstellung an, wenn es ausgewählt wird:
+Codeformateinstellungen können für Ihre C#- und Visual Basic-Projekte festgelegt werden, indem Sie das Dialogfeld **Optionen** im Menü **Extras** öffnen. Klicken Sie im Dialogfeld **Optionen** auf **Text-Editor** > [**C#** oder **Basic**] > **Codeformat** > **Allgemein**.
+
+Jedes Element auf der Liste zeigt eine Vorschau der Einstellung an, wenn es ausgewählt wird:
+
+::: moniker range="vs-2017"
 
 ![Codeformatoptionen](media/code-style-quick-actions-dialog.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Codeformatoptionen](media/vs-2019/code-style-quick-actions-dialog.png)
+
+::: moniker-end
 
 In diesem Fenster festgelegte Optionen gelten für Ihr Visual Studio-Personalisierungskonto und sind keinem bestimmten Projekt bzw. keiner bestimmten Codebasis zugeordnet. Darüber hinaus werden sie nicht zur Buildzeit erzwungen. Das gilt auch für CI-Builds (Continuous Integration). Wenn Sie Codeformateinstellungen mit Ihrem Projekt verknüpfen möchten und die Formate während des Buildvorgangs erzwungen werden, geben Sie die Einstellungen in einer Datei vom Typ [.editorconfig](#editorconfig-files) an.
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Editorverhalten in Visual Studio für Mac](/visualstudio/mac/editor-behavior).
 
-## <a name="preference-and-severity"></a>Einstellung und Schweregrad
-
-Sie können für jedes Element über die Dropdownfelder jeder Zeile die Werte für **Präferenz** und **Sicherheit** festlegen. Der Schweregrad kann auf **Kein**, **Vorschlag**, **Warnung** oder **Fehler** festgelegt werden. Wenn Sie für ein Codeformat [Schnellaktionen](../ide/quick-actions.md) aktivieren möchten, stellen Sie sicher, dass die Einstellung für den **Schweregrad** auf einen anderen Wert als **Kein** festgelegt ist. Das Glühbirnensymbol für **Schnellaktionen** ![Glühbirnensymbol](media/light-bulb-dropdown.png), das Fehlerglühbirnensymbol ![Fehlerglühbirnensymbol](media/error-bulb.png) oder das Schraubendrehersymbol ![Schraubendrehersymbol](media/screwdriver.png) wird angezeigt, wenn ein nicht bevorzugtes Format verwendet wird, und Sie können eine Option aus der Liste der **Schnellaktionen** auswählen, um den Code automatisch im bevorzugten Format neu zu schreiben.
-
 ## <a name="editorconfig-files"></a>EDITORCONFIG-Dateien
 
-Sie können Codeformateinstellungen für .NET auch angeben, indem Sie Ihrem Projekt eine [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)-Datei hinzufügen. Diese Dateien sind nicht mit einem Visual Studio-Personalisierungskonto, sondern mit einer Codebasis verknüpft. Die Einstellungen in der EDITORCONFIG-Datei haben Vorrang gegenüber den im Dialogfeld **Optionen** ausgewählten Optionen. Verwenden Sie eine EditorConfig-Datei, wenn Sie Codierungsstile für alle Mitwirkenden an Ihrem Repository oder Projekt erzwingen möchten.
+Sie können Codeformateinstellungen für .NET auch angeben, indem Sie Ihrem Projekt eine [EditorConfig](../ide/editorconfig-code-style-settings-reference.md)-Datei hinzufügen.
+
+::: moniker range=">=vs-2019"
+
+Klicken Sie auf **Generate .editorconfig file from setting** (.editorconfig-Datei aus Einstellungen generieren), um automatisch eine .editorconfig-Codeformatdatei auf Grundlage der Optionen zu erstellen, die Sie auf dieser **Optionenseite** festgelegt haben.
+
+![Screenshot: Generieren einer .editorconfig-Datei aus den Einstellungen in VS 2019](media/vs-2019/generate-editorconfig-file-small.png)
+
+::: moniker-end
+
+Diese .editorconfig-Dateien sind nicht mit einem Visual Studio-Personalisierungskonto, sondern mit einer Codebasis verknüpft. Die Einstellungen in der .editorconfig-Datei haben Vorrang gegenüber den im Dialogfeld **Optionen** ausgewählten Optionen. Verwenden Sie eine EditorConfig-Datei, wenn Sie Codierungsstile für alle Mitwirkenden an Ihrem Repository oder Projekt erzwingen möchten.
+
+## <a name="preference-and-severity"></a>Einstellung und Schweregrad
+
+Sie können für jede dieser Codeformateinstellungen auf dieser Seite über die Dropdownfelder jeder Zeile die Werte für **Preference** (Präferenz)und **Schweregrad** festlegen. Der Schweregrad kann auf **Kein**, **Vorschlag**, **Warnung** oder **Fehler** festgelegt werden. Wenn Sie für ein Codeformat [Schnellaktionen](../ide/quick-actions.md) aktivieren möchten, stellen Sie sicher, dass die Einstellung für den **Schweregrad** auf einen anderen Wert als **Kein** festgelegt ist. Das Glühbirnensymbol für **Schnellaktionen** ![Glühbirnensymbol](media/light-bulb-dropdown.png), das Fehlerglühbirnensymbol ![Fehlerglühbirnensymbol](media/error-bulb.png) oder das Schraubendrehersymbol ![Schraubendrehersymbol](media/screwdriver.png) wird angezeigt, wenn ein nicht bevorzugtes Format verwendet wird, und Sie können eine Option aus der Liste der **Schnellaktionen** auswählen, um den Code automatisch im bevorzugten Format neu zu schreiben.
 
 ## <a name="format-document-command"></a>Befehl „Dokument formatieren“
 
