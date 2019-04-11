@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647270"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018193"
 ---
 # <a name="options-dialog-box-environment--general"></a>Dialogfeld „Optionen“: Umgebung \> Allgemein
 
@@ -53,13 +53,24 @@ Menüs verwenden diesen Stil mit großen Anfangsbuchstaben standardmäßig. Deak
 
 Diese Option aktiviert oder deaktiviert den DPI-Grad (Dots Per Inch) pro Monitor (oder *PMA* (Per-Monitor Aware)). Wenn PMA aktiviert ist, wird die Visual Studio-Benutzeroberfläche in jedem Skalierungsfaktor der Monitoranzeige und jeder DPI-Konfiguration als hochauflösend angezeigt, auch wenn mehrere Monitore verwendet werden. Wenn Sie PMA aktivieren möchten, benötigen Sie das Windows-Update vom 10. April 2018 oder höhere Updates und mindestens .NET Framework 4.8. (Diese Option wird ausgeblendet, wenn diese beiden Voraussetzungen nicht erfüllt sind.)
 
+> [!TIP]
+> - Windows 10 verfügt über die Einstellung **Windows kann versuchen, Apps mit unscharfer Darstellung zu korrigieren**. Wenn Sie diese Windows-Einstellung auf **Ein** stellen, ist die Wirkung vernachlässigbar, wenn Sie die Option **Rendering für Bildschirme mit anderen Pixeldichten optimieren** aktiviert haben.
+> - Windows 10 bietet außerdem eine **Problembehandlung bei der Programmkompatibilität**. Es ist nicht ratsam, die Darstellung von Visual Studio mit dieser Problembehandlung zu korrigieren.
+
 ::: moniker-end
 
 **Visuelle Darstellung automatisch basierend auf der Clientleistung anpassen**
 
 Gibt an, ob Visual Studio die Anpassung der visuellen Darstellung automatisch festlegt oder Sie die Anpassung explizit festlegen. Mit dieser Anpassung können Sie die Darstellung von Farben von Farbverläufen in gleichmäßige Farben ändern oder die Verwendung von Animationen in Menüs oder Popupfenstern einschränken.
 
-**Enable rich client experience** (Umfassende visuelle Clientdarstellung aktivieren)
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 verfügt über die Einstellung **Windows kann versuchen, Apps mit unscharfer Darstellung zu korrigieren**. Es ist empfehlenswert, diese Einstellung auf **Ein** einzustellen, wenn Visual Studio auf dem Monitor unscharf angezeigt wird. Erwägen Sie ein Upgrade auf [Visual Studio-2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), das über eine erheblich verbesserte Anzeigeschärfe verfügt, da es sich um eine PMA-Anwendung (mit monitorspezifischen DPI-Werten kompatibel) handelt.
+
+::: moniker-end
+
+**Umfassende visuelle Clientdarstellung aktivieren**
 
 Aktiviert die vollständige visuelle Darstellung von Visual Studio, u. a. mit Farbverläufen und Animationen. Deaktiviert diese Option bei Verwendung von Remotedesktopverbindungen oder älteren Grafikkarten, da diese Funktionen in solchen Fällen zu einer schlechteren Leistung führen können. Diese Option ist nur verfügbar, wenn Sie die Option **Visuelle Darstellung automatisch basierend auf der Clientleistung anpassen** deaktivieren.
 
@@ -91,5 +102,5 @@ Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
+- [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)
 - [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)
