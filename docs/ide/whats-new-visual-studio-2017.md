@@ -12,17 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476071"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857813"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -107,11 +108,11 @@ Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiteru
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_**: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roamed“ (Roaming erfolgt)](media/vs2017ide-roamedicon.png) **_Roamed (Roaming erfolgt):_** Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_**: Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
+* ![Symbol für „Roamed and Installed“ (Roaming und Installation erfolgt)](media/vs2017ide-roamedinstalledicon.png) **_Roamed an Installed (Roaming und Installation erfolgt):_** Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol „Installiert](media/vs2017ide-installedicon.png) **_Installiert_**: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol für „Installiert“](media/vs2017ide-installedicon.png) **_Installiert:_** Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -382,10 +383,10 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Visual Studio 2017 – Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes)
+* [Visual Studio 2017 release notes (Visual Studio 2017: Versionshinweise)](/visualstudio/releasenotes/vs2017-relnotes)
 * [Neuigkeiten im Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
-* [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [What's new in Visual C++ (Neues in Visual C++)](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Neues in C#](/dotnet/csharp/whats-new)
-* [Neues für Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [What‘s new for TFS (Neues für Team Foundation Server)](/tfs/server/whats-new?view=vsts)
 * [Neues in Visual Studio für Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Neues in Visual Studio 2019](whats-new-visual-studio-2019.md)
