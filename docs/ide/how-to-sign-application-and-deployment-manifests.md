@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916882"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790848"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 
@@ -35,11 +35,11 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
  Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt nur Schlüsseldateien für den privaten Informationsaustausch mit der Erweiterung *.pfx*. Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.
+> Visual Studio unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange) mit der Erweiterung *.pfx*. Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>So signieren Sie Anwendungs- und Bereitstellungsmanifeste mit einem Zertifikat
+## <a name="sign-using-a-certificate"></a>Signieren mithilfe eines Zertifikats
 
-1.  Navigieren Sie zum Projekteigenschaftenfenster (klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann mit der Linken auf **Eigenschaften**, geben Sie **Projekteigenschaften** im Fenster **Schnellstart** ein, oder drücken Sie im **Projektmappen-Explorer** **ALT**+**EINGABE**). Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **ClickOnce-Manifeste signieren**.
+1.  Navigieren Sie zum Fenster „Projekteigenschaften“. Klicken Sie hierzu im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus. Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **ClickOnce-Manifeste signieren**.
 
 2.  Klicken Sie auf die Schaltfläche **Aus Speicher auswählen**.
 
@@ -52,7 +52,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 
 4.  Zudem können Sie im Textfeld **Timestampserver-URL** die Adresse eines Timestampservers angeben. Dabei handelt es sich um einen Server, der einen Timestamp bereitstellt, mit dem angegeben wird, zu welchem Zeitpunkt das Manifest signiert wurde.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>So signieren Sie Anwendungs- und Bereitstellungsmanifeste mit einer vorhandenen Schlüsseldatei
+## <a name="sign-using-an-existing-key-file"></a>Signieren mithilfe einer vorhandenen Schlüsseldatei
 
 1.  Aktivieren Sie auf der Seite **Signierung** das Kontrollkästchen **ClickOnce-Manifeste signieren**.
 
@@ -69,7 +69,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 
 4.  Geben Sie das Kennwort für den Zugriff auf die Schlüsseldatei ein, und drücken Sie die **EINGABETASTE**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>So signieren Sie Anwendungs- und Bereitstellungsmanifeste mit einem Testzertifikat
+## <a name="sign-using-a-test-certificate"></a>Signieren mithilfe eines Testzertifikats
 
 1.  Aktivieren Sie auf der Seite **Signierung** das Kontrollkästchen **ClickOnce-Manifeste signieren**.
 

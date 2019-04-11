@@ -11,20 +11,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983714"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790042"
 ---
-# <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
+# <a name="options-dialog-box-environment"></a>Dialogfeld „Optionen“: Umgebung
 
-Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie auf der Menüleiste **Tools** und **Optionen** auswählen, und anschließend auf **Umgebung** klicken.
+Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie in der Menüleiste **Tools** > **Optionen** auswählen, und anschließend auf **Umgebung** klicken.
 
 |Vorgehensweise|Siehe|
 | - |---------|
 |Anpassen der Darstellung und des Verhaltens von Fenstern, Menüs und anderen IDE-Elementen|[Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)|
+|Festlegen, ob Einstellungen für alle Computer angewendet werden|[Konten, Umgebung, Dialogfeld „Optionen“](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Ändern der Einstellungen für das automatische Speichern und Wiederherstellen von Dateien|[AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Festlegen der Anzeige von Dokumenten und Verwaltungseinstellungen, z. B. das Verhalten von Sonstige Dateien|[Dokumente, Umgebung, Dialogfeld „Optionen“](../../ide/reference/documents-environment-options-dialog-box.md)|
 |Legen Sie fest, wie Updates auftreten und Erweiterungen verwaltet werden.|[Erweiterungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
@@ -33,10 +34,7 @@ Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die
 |Legen Sie den Speicherort für die VSSETTINGS-Dateien fest, in denen Informationen zu den Benutzereinstellungen gespeichert werden.|[Einstellungen importieren und exportieren, Umgebung, Dialogfeld „Optionen“](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Auswählen einer Standardsprache für Visual Studio|[Internationale Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/international-settings-environment-options-dialog-box.md)|
 |Festlegen von Optionen für die Tastenzuordnung|[Tastatur, Umgebung, Dialogfeld „Optionen“](../../ide/reference/keyboard-environment-options-dialog-box.md)|
-|Aktivieren von Benachrichtigungen|[Benachrichtigungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/notifications-environment-options-dialog-box.md)|
-|Angeben von Optionen für das Fenster „Schnellstart“|[Schnellstart, Umgebung, Dialogfeld „Optionen“](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Festlegen der Startoptionen|[Start, Umgebung, Dialogfeld „Optionen“](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Festlegen, ob Einstellungen für alle Computer angewendet werden|[Synchronisierte Einstellungen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Vorgehensweise zum Festlegen von Optionen für Aufgaben und Aufgabenlisten|[Aufgabenliste, Umgebung, Dialogfeld „Optionen“](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Ändern der Standardstart- und -suchseiten, Ändern des vom System verwendeten Quellcode-Editors und Konfigurieren von Optionen für Internet Explorer|[Webbrowser, Umgebung, Dialogfeld „Optionen“](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

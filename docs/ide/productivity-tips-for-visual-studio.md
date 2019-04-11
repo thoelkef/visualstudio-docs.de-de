@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355762"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789912"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -66,7 +66,7 @@ Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeit
 
 - **Zeigen Sie nur die Fehler an, die berücksichtigt werden sollen**. Wenn Sie die Schaltfläche **Filter** auf der Symbolleiste **Fehlerliste** auswählen, können Sie die Anzahl der Fehler reduzieren, die im Fenster **Fehlerliste** angezeigt werden. Sie können nur die Fehler in den Dateien anzeigen, die im Editor geöffnet sind, nur die Fehler in der aktuellen Datei oder nur die Fehler im aktuellen Projekt. Sie können im Fenster **Fehlerliste** auch nach bestimmten Fehlern suchen.
 
-- **Suchen von Dialogfeldern, Menübefehlen, Optionen und mehr**. Geben Sie im Suchfeld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie **Neues Projekt** eingeben:
+- **Suchen von Dialogfeldern, Menübefehlen, Optionen und mehr**. Geben Sie im Suchfeld Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie **Neues Projekt** eingeben:
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeit
 
    ::: moniker range=">=vs-2019"
 
-   ![Schnellstart-Suchergebnisse für „Neues Projekt“](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Screenshot: Suchergebnisse für „new project“ (Neues Projekt)](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld **Schnellstart** zu wechseln.
+   Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
 
 ## <a name="debug-code"></a>Debuggen von Code
 

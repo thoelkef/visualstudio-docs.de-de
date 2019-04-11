@@ -1,6 +1,6 @@
 ---
 title: Dokumente, Umgebung, Dialogfeld "Optionen"
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912819"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647257"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Dokumente, Umgebung, Dialogfeld "Optionen"
+# <a name="options-dialog-box-environment--documents"></a>Dialogfeld „Optionen“: Umgebung \> Dokumente
 
-Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Anzeige von Dokumenten in der integrierten Entwicklungsumgebung (IDE) zu steuern und externe Änderungen an Dokumenten und Dateien zu verwalten. Sie können auf dieses Dialogfeld zugreifen, indem Sie im Menü **Extras** auf **Optionen** klicken, und anschließend auf dem Knoten **Umgebung** **Dokumente** auswählen. Wenn **Dokumente** nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
-
-**Gespeichertes aktives Dokumentfenster wiederverwenden**
-
-Wenn diese Option aktiviert ist, wird Ihr aktuelles Dokument geschlossen, falls es bereits gespeichert wurde, und ein neues Dokument im selben Fenster wird geöffnet. Wenn das aktuelle Dokument noch nicht gespeichert wurde bleibt es geöffnet. Das neue Dokument wird in einem separaten Fenster geöffnet. Wenn diese Option deaktiviert ist, werden neue Dokumente immer in separaten Fenstern geöffnet.
-
-Wenn Sie selten Ausschneide- und Einfügevorgänge in mehreren Dokumenten vornehmen und die Anzahl der geöffneten Dokumente und Fenster in Ihrem Arbeitsspeicher minimieren möchten, sollten Sie diese Option ausprobieren.
+Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Anzeige von Dokumenten in der integrierten Entwicklungsumgebung (IDE) zu steuern und externe Änderungen an Dokumenten und Dateien zu verwalten. Sie können auf dieses Dialogfeld zugreifen, indem Sie im Menü **Extras** auf **Optionen** klicken, und anschließend **Umgebung** > **Dokumente** auswählen.
 
 **Ermitteln, ob Datei außerhalb der Umgebung geändert wird**
 
 Wenn diese Option aktiviert ist, benachrichtigt Sie eine Meldung sofort über Änderungen einer geöffneten Datei, die von außerhalb der IDE vorgenommen wurden. Mit dieser Meldung können Sie die Datei aus dem Speicher erneut laden.
 
-**Gespeicherte Änderungen automatisch laden**
+**Geänderte Dateien neu laden, sofern keine ungespeicherten Änderungen vorhanden sind**
 
 Wenn die Datei **Gespeicherte Änderungen automatisch laden** aktiviert ist, und eine geöffnete Datei in der IDE außerhalb der IDE geändert wird, wird standardmäßig eine Warnmeldung generiert. Wenn diese Option aktiviert ist, erscheint keine Warnung, und das Dokument wird in der IDE erneut geladen, um die externen Änderungen zu übernehmen.
 
@@ -79,9 +73,9 @@ Aktivieren Sie diese Option, um den Knoten **Verschiedene Dateien** im **Projekt
 > [!NOTE]
 > Aktivieren Sie diese Option, um den Befehl **In Browser anzeigen** im Menü **Datei** für Webdokumente zu aktivieren, die nicht in der aktiven Webanwendung enthalten sind.
 
-**\<** *n* **> im Projekt „Sonstige Dateien“ gespeicherte Elemente**
+**im Projekt „Sonstige Dateien“ gespeicherte Elemente**
 
-Gibt die Anzahl von Dateien an, die im Ordner **Verschiedene Dateien** des **Projektmappen-Explorers** aufbewahrt werden sollen. Diese Dateien werden auch aufgelistet, wenn sie nicht mehr in einem Editor geöffnet sind. Sie können eine beliebige ganze Anzahl von 0 bis 256 angeben. Die Standardanzahl ist 0.
+Gibt die Anzahl von Dateien an, die im Ordner **Sonstige Dateien** des **Projektmappen-Explorers** aufbewahrt werden sollen. Diese Dateien werden auch aufgelistet, wenn sie nicht mehr in einem Editor geöffnet sind. Sie können eine beliebige ganze Anzahl von 0 bis 256 angeben. Die Standardanzahl ist 0.
 
 Wenn Sie z.B. diese Option auf 5 festlegen, und 10 verschiedene Dateien geöffnet sind, werden die ersten 5 Dateien trotzdem noch im Ordner **Verschiedene Dateien** angezeigt, wenn Sie alle 10 Dateien schließen.
 

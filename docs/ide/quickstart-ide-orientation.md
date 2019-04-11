@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354728"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790900"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Einführung in die Visual Studio-IDE
 
@@ -125,15 +125,15 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 ![Ausgabefenster in Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Schnellstart
+## <a name="search-box"></a>Suchfeld
 
-Über das Suchfeld **Schnellstart** gelangen Sie schnell und einfach an nahezu jeden Ort in Visual Studio. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
+Über das Suchfeld gelangen Sie schnell und einfach an nahezu jeden Ort in Visual Studio. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
 
 ::: moniker range="vs-2017"
 
 1. Das Suchfeld **Schnellstart** finden Sie in der rechten oberen Ecke der IDE. (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
 
-2. Geben Sie im Suchfeld **Schnellstart** den Suchbegriff **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
+2. Geben Sie im Suchfeld den Suchbegriff **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
 
    ![Suchfeld „Schnellstart“ in Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 ::: moniker range=">=vs-2019"
 
-1. Das Suchfeld **Schnellstart** befindet sich rechts oben in der IDE (rechts neben den Menüs). (Alternativ können Sie die Tastenkombination **STRG**+**Q** verwenden.)
+1. Drücken Sie **STRG**+**Q**, um das Suchfeld im oberen Bereich der integrierten Entwicklungsumgebung zu aktivieren.
 
-2. Geben Sie im Suchfeld **Schnellstart** den Suchbegriff **Ausführlichkeit** ein. Wählen Sie in den angezeigten Ergebnissen die Option **MSBuild-Ausführlichkeit ändern**.
+2. Geben Sie im Suchfeld den Suchbegriff **Ausführlichkeit** ein. Wählen Sie in den angezeigten Ergebnissen die Option **MSBuild-Ausführlichkeit ändern**.
 
-   ![Suchfeld „Schnellstart“ in Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
+   ![Screenshot: Suchfeld in Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
    Das Dialogfeld **Optionen** wird mit der Seite **Erstellen und ausführen** geöffnet.
 
@@ -163,7 +163,7 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 ## <a name="send-feedback-menu"></a>Menü „Feedback senden“
 
-Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verbesserung des Produkts haben, können Sie das Menü **Feedback senden** im oberen Bereich des Visual Studio-Fensters neben dem Feld **Schnellstart** verwenden.
+Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verbesserung des Produkts haben, können Sie das Menü **Feedback senden** im oberen Bereich des Visual Studio-Fensters verwenden.
 
 ::: moniker range="vs-2017"
 

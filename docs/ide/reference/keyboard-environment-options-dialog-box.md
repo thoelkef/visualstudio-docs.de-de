@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934639"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647114"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Tastatur, Umgebung, Dialogfeld „Optionen“
+# <a name="options-dialog-box-environment--keyboard"></a>Dialogfeld „Optionen“: Umgebung \> Tastatur
+
 Auf dieser Seite können Sie Tastaturzuordnungen festlegen. Weitere Informationen zu Zuordnungen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869330"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646698"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalisieren der Visual Studio-IDE und des Editors
 
-In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
+In diesem 5- bis 10-minütigen Tutorial erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
 
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
 
@@ -28,9 +28,19 @@ Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio heißt **B
 
 1. Ändern Sie auf der Optionsseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
-   Das Farbdesign für die gesamte Visual Studio-IDE (integrierte Entwicklungsumgebung) wird in **Dunkel** geändert.
+   Das Farbdesign für die gesamte integrierten Entwicklungsumgebung in Visual Studio (Integrated Development Environment, IDE) wird in **Dunkel** geändert.
 
-   ![Visual Studio im Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 im Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 im Design „Dunkel“](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der **Farbdesign**-Dropdownliste angezeigt.

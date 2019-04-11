@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223610"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790523"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -44,7 +44,7 @@ Sofern Sie keine Änderungen am Code vorgenommen haben, den Sie zuvor erfolgreic
 
 ![Visual Studio, Ausgabe und Fehlerliste](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Klicken Sie im Fenster **Fehlerliste** auf die Zeile mit dem Fehler, um direkt in die Zeile zu springen, in der der Fehler aufgetreten ist. (Blenden Sie alternativ die Zeilennummern ein, indem Sie oben rechts auf die **Schnellstartleiste** klicken, „Zeilennummern“ eingeben und die **EINGABETASTE** drücken. Dies ist die schnellste Möglichkeit zum Aufrufen des Dialogfeldes **Optionen**, in dem Sie Zeilennummern aktivieren können. Machen Sie sich mit der Verwendung der **Schnellstartleiste** vertraut, denn sie erspart Ihnen viele Klicks auf der Benutzeroberfläche!)
+Klicken Sie im Fenster **Fehlerliste** auf die Zeile mit dem Fehler, um direkt in die Zeile zu springen, in der der Fehler aufgetreten ist. (Aktivieren Sie alternativ Zeilennummern, indem Sie **STRG**+**Q** drücken, **Zeilennummern** eingeben und dann aus den Ergebnissen die Option **Zeilennummern aktivieren oder deaktivieren** auswählen. Dies ist die schnellste Möglichkeit zum Aufrufen des Dialogfeldes **Optionen**, in dem Sie Zeilennummern aktivieren können.)
 
 ![Visual Studio, Editor mit Zeilennummern](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

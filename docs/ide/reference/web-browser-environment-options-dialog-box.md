@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700003"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647283"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
+# <a name="options-dialog-box-environment--web-browser"></a>Dialogfeld „Optionen“: Umgebung \> Webbrowser
 
 Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explorer fest. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Webbrowser**.
 
@@ -50,11 +50,11 @@ Hier können Sie eine Suchseite für den internen Webbrowser festlegen. Diese Ad
 
 Legt den Editor fest, der zum Öffnen einer Website verwendet wird, wenn Sie den Befehl **Quelltext anzeigen** auf der im internen Webbrowser angezeigten Seite wählen.
 
--   **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
+- **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
 
--   **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: in der Entwurfsansicht oder in der Standardtext-Quellansicht.
+- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: in der Entwurfsansicht oder in der Standardtext-Quellansicht.
 
--   **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
+- **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer-Optionen
 

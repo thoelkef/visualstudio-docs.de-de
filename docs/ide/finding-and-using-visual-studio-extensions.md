@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268545"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790757"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Suchen und Verwenden von Visual Studio-Erweiterungen
 
@@ -33,7 +33,7 @@ Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um Visual Studio-Erw
 
 ::: moniker range=">=vs-2019"
 
-Verwenden Sie das Dialogfeld **Erweiterungen verwalten**, um Visual Studio-Erweiterungen zu installieren und zu verwalten. Wählen Sie **Erweiterungen** > **Erweiterungen verwalten** aus, um das Dialogfeld **Erweiterungen verwalten** zu öffnen. Oder geben Sie **Erweiterungen** in das Suchfeld **Schnellstart** ein, und wählen Sie **Erweiterungen verwalten** aus.
+Verwenden Sie das Dialogfeld **Erweiterungen verwalten**, um Visual Studio-Erweiterungen zu installieren und zu verwalten. Wählen Sie **Erweiterungen** > **Erweiterungen verwalten** aus, um das Dialogfeld **Erweiterungen verwalten** zu öffnen. Geben Sie alternativ im Suchfeld **Erweiterungen** ein, und wählen Sie **Erweiterungen verwalten** aus.
 
 ::: moniker-end
 

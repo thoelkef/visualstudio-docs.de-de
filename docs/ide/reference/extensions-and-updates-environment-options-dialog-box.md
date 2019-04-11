@@ -1,6 +1,6 @@
 ---
 title: Erweiterungen, Umgebung, Dialogfeld „Optionen“
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983935"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646711"
 ---
-# <a name="extensions-environment-options-dialog-box"></a>Erweiterungen, Umgebung, Dialogfeld „Optionen“
+# <a name="options-dialog-box-environment--extensions"></a>Dialogfeld „Optionen“: Umgebung \> Erweiterungen
 
 Verwenden Sie diese Seite, um festzulegen, wie Visual Studio-Updates ausgeführt und wie Erweiterungen aktualisiert und ermittelt werden.
 
@@ -29,7 +29,7 @@ Ist dieses Kontrollkästchen aktiviert, wird Visual Studio in regelmäßigen Abs
 
 Wenn dieses Kontrollkästchen aktiviert ist, werden Erweiterungen aktualisiert, ohne dass eine Aufforderung notwendig ist. Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>Benutzererweiterungen bei Ausführung als Administrator laden
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Laden von Benutzererweiterungen bei Ausführung als Administrator
 
 Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../../ide/finding-and-using-visual-studio-extensions.md).
 

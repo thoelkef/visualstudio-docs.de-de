@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268615"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790536"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
 
@@ -118,7 +118,7 @@ Azure DevOps Services besteht aus cloudbasierten Diensten zum Planen, Hosten, Au
 
 Team Foundation Server (TFS) ist der Anwendungslebenszyklus-Verwaltungshub für Visual Studio. Auf diese Weise können alle am Entwicklungsprozess beteiligten Personen mithilfe einer einzigen Projektmappe am Prozess teilnehmen. TFS ist auch nützlich für die Verwaltung heterogener Teams und Projekte.
 
-Wenn Sie in Ihrem Netzwerk über eine Azure DevOps-Organisation oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitselemente verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie **Team Explorer** über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
+Wenn Sie in Ihrem Netzwerk über eine Azure DevOps-Organisation oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitselemente verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie den **Team Explorer** über das Suchfeld oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
 
 Die folgende Abbildung zeigt das Fenster **Team Explorer** für eine Projektmappe, die in Azure DevOps Services gehostet wird.
 

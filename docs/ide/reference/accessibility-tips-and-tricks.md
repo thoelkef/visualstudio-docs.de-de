@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680931"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789691"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 
@@ -63,11 +63,11 @@ Zu diesen Tastenkombinationen gehören:
 |IDE|Hohen Kontrast ein- und ausschalten <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LINKE ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|
 |Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|
 |Kontextmenüs|Öffnen Sie ein Kontextmenü (Rechtsklick). <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**UMSCHALT** + **F10**|
-|Menüs|Greifen Sie schnell auf ein Menüelement mithilfe der Zugriffstasten zu. Drücken Sie die **ALT**-TASTE gefolgt von den unterstrichenen Buchstaben in einem Menü, um den Befehl zu aktivieren. Um z.B. das Dialogfeld „Projekt öffnen“ in Visual Studio anzuzeigen, wählen Sie **ALT** + **F** + **O** + **P** aus.  <br><br> **HINWEIS:** Windows-Standardtastenkombination|**ALT** + **[Buchstabe]**|
-|Suchfeld „Schnellstart“| Verwenden des Suchfeatures in Visual Studio|**Strg** + **Q**|
+|Menüs|Greifen Sie schnell auf ein Menüelement mithilfe der Zugriffstasten zu. Drücken Sie die **ALT**-Taste gefolgt von den unterstrichenen Buchstaben in einem Menü, um den Befehl zu aktivieren. Wenn z.B. das Dialogfeld „Projekt öffnen“ in Visual Studio angezeigt werden soll, wählen Sie **ALT** + **F** + **O** + **P** aus.  <br><br> **HINWEIS:** Windows-Standardtastenkombination|**ALT** + **[Buchstabe]**|
+|Suchfeld|Verwenden des Suchfeatures in Visual Studio|**Strg** + **Q**|
 |Fenster „Toolbox“|Wechseln Sie zwischen Toolboxregisterkarten.|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|
 |Fenster „Toolbox“|Fügen Sie ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzu.|**EINGABETASTE**|
-|Tastatur, Umgebung, Dialogfeld „Optionen“|Löschen Sie die Tastenkombination, die unter **Tastenkombination drücken** eingegeben wurde.|**RÜCKTASTE**|
+|Dialogfeld „Optionen“: Umgebung > Tastatur|Löschen Sie die Tastenkombination, die unter **Tastenkombination drücken** eingegeben wurde.|**RÜCKTASTE**|
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.
@@ -76,12 +76,12 @@ Zu diesen Tastenkombinationen gehören:
 
 Sie können das Sound-Applet in Windows verwenden, um Visual Studio-Programmereignissen einen Sound zuzuweisen. Insbesondere können Sie folgenden Programmereignissen Sounds zuweisen:
 
- * Haltepunkt erreicht
- * Buildvorgang abgebrochen
- * Fehler beim Buildvorgang
- * Buildvorgang erfolgreich
+* Haltepunkt erreicht
+* Buildvorgang abgebrochen
+* Fehler beim Buildvorgang
+* Buildvorgang erfolgreich
 
-Gehen Sie folgendermaßen vor:
+Gehen Sie dabei folgendermaßen vor:
 
 1. Geben Sie auf einem Computer mit Windows 10 **Systemsounds ändern** in das Feld **Suche** ein.
 
