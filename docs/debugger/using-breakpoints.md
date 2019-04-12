@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366690"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504327"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
@@ -147,6 +147,28 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Festlegen von Datenhaltepunkten (.NET Core 3.0 oder höher)
+
+Datenhaltepunkte unterbrechen die Ausführung, wenn ein bestimmtes Objekt der Eigenschaft ändert.
+
+**Festlegen ein Haltepunkts für Daten**
+
+1. In einem .NET Core-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird.
+
+2. In der die **"Auto"**, **Watch**, oder **"lokal"** mit der rechten Maustaste auf eine Eigenschaft, und wählen Sie **unterbrechen, wenn der Wert ändert** im Kontextmenü.
+
+    ![Verwaltete Datenhaltepunkt](../debugger/media/managed-data-breakpoint.png "verwaltet Datenhaltepunkt")
+
+Datenhaltepunkte in .NET Core funktioniert nicht für:
+
+- Eigenschaften, die nicht in der QuickInfo, "lokal", "Auto", erweiterbar sind oder Überwachung (Fenster)
+- Statische Variablen
+- Klassen mit dem DebuggerTypeProxy-Attribut
+- Felder in Strukturen 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Festlegen von Datenhaltepunkten (nur systemeigener C++)
 
@@ -156,7 +178,7 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 
 1.  In einem C++-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird. Auf der **Debuggen** Menü wählen **Neuer Haltepunkt** > **Datenhaltepunkt**
 
-    Sie können auch auswählen, **neu** > **Datenhaltepunkt** in die **Haltepunkte** Fenster.
+    Sie können auch auswählen, **neu** > **Datenhaltepunkt** in die **Haltepunkte** Fenster oder auf ein Element in der **"Auto"**, **Watch**, oder **"lokal"** Fenster, und wählen **unterbrechen, wenn der Wert ändert**im Kontextmenü.
 
 2.  Geben Sie im Feld **Adresse** eine Speicheradresse oder einen Ausdruck ein, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.
 

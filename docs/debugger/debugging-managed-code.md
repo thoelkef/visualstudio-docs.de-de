@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 384b5dca1da11a430036cce2536e6859f3e98f94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868090"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504145"
 ---
 # <a name="debugging-managed-code"></a>Debuggen von verwaltetem Code
 
@@ -35,10 +35,10 @@ Erläutert die <xref:System.Diagnostics.Debug>-Klasse und die <xref:System.Diagn
 [Assertionen in verwaltetem Code](../debugger/assertions-in-managed-code.md)\
 Hier werden Assertionen in verwaltetem Code beschrieben. Diese testen Bedingungen, die Sie als Argumente für `Assert`-Methoden angeben. Sie finden in diesem Abschnitt außerdem Beispielcode, Informationen zum Verwenden der <xref:System.Diagnostics.Debug>-Klassenmethode und der <xref:System.Diagnostics.Trace>-Klassenmethode, zur Debug- und zur Releaseversion von Code, Nebeneffekten, Assert-Argumenten, dem Anpassen des Assert-Verhaltens und zu Konfigurationsdateien.
 
-[Stop-Anweisungen in Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
+[Stop-Anweisungen in Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Hier wird die `Stop`-Anweisung beschrieben, die eine Alternative zum Festlegen eines Haltepunkts bietet. Sie finden hier außerdem Beispielcode sowie Vergleiche zwischen der `Stop`-Anweisung und der `End`-Anweisung sowie zwischen der `Stop`-Anweisung und der `Assert`-Anweisung.
 
-[Exemplarische Vorgehensweise: Debuggen eines Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts](../debugger/walkthrough-debugging-a-windows-form.md)\
 Hier finden Sie Schritt-für-Schritt-Anweisungen zum Erstellen eines Windows Forms und zum Debuggen dieses Formulars. Ein Windows Form, eine Standardkomponente verwalteter Windows-Anwendungen, ist eine der am häufigsten verwendeten verwalteten Anwendungen. In dieser exemplarischen Vorgehensweise werden Visual C# und Visual Basic verwendet, die Verfahrensweisen zum Erstellen eines Windows Forms mit C++ sind jedoch grundsätzlich vergleichbar.
 
 [Debuggen der OnStart-Methode](../debugger/how-to-debug-the-onstart-method.md)\
@@ -78,9 +78,6 @@ Hier werden das Debuggen von .NET Framework-Anwendungen sowie die Konfiguration
 
 [Debuggen von Skript- und Webanwendungen](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Beschreibt allgemeine Probleme und Verfahren, die beim Debuggen von Skript- und Webanwendungen auftreten können.
-
-[Debuggen-Homepage](../debugger/debugger-feature-tour.md)\
-Enthält Links zu den ausführlicheren Abschnitten der Debugdokumentation. Zu den behandelten Themen gehören neue Funktionen im Debugger, Einstellungen und Vorbereitung, Haltepunkte, Ausnahmebehandlung, die Funktion Bearbeiten und Fortfahren, Debuggen von verwaltetem Code, Debuggen von Visual C++-Projekten, Debuggen von COM und ActiveX, Debuggen von DLLs, Debuggen von SQL und Verweise auf die Benutzeroberfläche.
 
 ## <a name="see-also"></a>Siehe auch
 

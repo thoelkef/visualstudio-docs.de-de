@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870398"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504262"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
   Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.
@@ -46,7 +46,7 @@ ms.locfileid: "57870398"
 
 -   Unterstützte Editionen von Windows und SharePoint.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Erstellen Sie benutzerdefinierte Websitespalten
  Dieses Beispiel erstellt eine Liste für die Verwaltung von Patienten in einem Krankenhaus. Erstellen Sie zuerst, eine SharePoint-Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Websitespalten, wie folgt hinzufügen.
@@ -67,7 +67,7 @@ ms.locfileid: "57870398"
 
      Weitere Informationen zu sandkastenlösungen und farmlösungen, finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt sollte jetzt aufgelistet werden **Projektmappen-Explorer**.
+6.  Wählen Sie die **Fertig stellen** Schaltfläche. Das Projekt wird jetzt aufgeführt, **Projektmappen-Explorer**.
 
 #### <a name="to-add-site-columns"></a>Websitespalten hinzufügen
 

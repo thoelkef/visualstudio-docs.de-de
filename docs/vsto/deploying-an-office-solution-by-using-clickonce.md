@@ -13,27 +13,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863928"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504431"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projektmappe mit ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Aus diesem Grund sollten Sie erwägen, mithilfe von Windows Installer (*MSI*), wenn mehr als ein Benutzer die Lösung auf dem gleichen Computer ausgeführt wird.
 
 ## <a name="in-this-topic"></a>In diesem Thema
 
-- [Veröffentlichen Sie die Projektmappe](#Publish)
+- [Veröffentlichen der Projektmappe](#Publish)
 
-- [Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.](#Trust)
+- [Festlegen, wie der Projektmappe Vertrauenswürdigkeit gewährt werden soll](#Trust)
 
-- [Unterstützen von Benutzern, die die Lösung installieren](#Helping)
+- [Hilfe für Benutzer bei der Installation der Projektmappe](#Helping)
 
-- [Kopieren des Dokuments einer Projektmappe auf der Endbenutzer Computer (nur Anpassungen auf Dokumentebene)](#Put)
+- [Kopieren des Dokuments einer Projektmappe auf den Computer des Endbenutzers (nur Anpassungen auf Dokumentebene)](#Put)
 
-- [Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)](#SharePoint)
+- [Kopieren des Dokuments einer Projektmappe auf einen Server, auf dem SharePoint ausgeführt wird (nur Anpassungen auf Dokumentebene)](#SharePoint)
 
 - [Erstellen eines benutzerdefinierten Installationsprogramms](#Custom)
 
@@ -41,7 +41,7 @@ ms.locfileid: "54863928"
 
 - [Ändern des Installationspfads einer Projektmappe](#Location)
 
-- [Zurücksetzen der Projektmappe auf eine frühere version](#Roll)
+- [Zurücksetzen der Projektmappe auf eine frühere Version](#Roll)
 
   Weitere Informationen zum Bereitstellen einer Office-Projektmappe durch Erstellung einer Windows Installer-Datei finden Sie unter [Bereitstellen einer Office-Projektmappe mit Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -139,7 +139,7 @@ ms.locfileid: "54863928"
  Wenn Sie eine Anpassung auf Dokumentebene bereitstellen, und legen Sie das Dokument in einen Ordner auf dem Computer des Benutzers oder das Dokument auf einer SharePoint-Website verfügbar machen möchten, stellen Sie sicher, dass Office den Speicherort des Dokuments vertraut. Finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Unterstützen von Benutzern, die die Lösung installieren
- Benutzer können die Projektmappe installieren, indem sie das Setupprogramm ausführen oder das Bereitstellungsmanifest öffnen; im Falle einer Anpassung auf Dokumentebene kann auch das Dokument direkt geöffnet werden. Als empfohlene Vorgehensweise sollten Benutzer die Projektmappe mithilfe des Setupprogramms installieren. Die beiden anderen Ansätze nicht stellen Sie sicher, dass die erforderliche Software installiert ist. Wenn Benutzer das Dokument vom Installationspfad öffnen möchten, müssen sie ihn der Liste vertrauenswürdiger Speicherorte im Sicherheitscenter der Office-Anwendung hinzufügen.
+ Benutzer können die Projektmappe durch Öffnen des Bereitstellungsmanifests, das Setup-Programm ausführen oder während der Anpassung auf Dokumentebene, installieren das Dokument direkt geöffnet. Als empfohlene Vorgehensweise sollten Benutzer die Projektmappe mithilfe des Setupprogramms installieren. Die beiden anderen Ansätze nicht stellen Sie sicher, dass die erforderliche Software installiert ist. Wenn Benutzer das Dokument vom Installationspfad öffnen möchten, müssen sie ihn der Liste vertrauenswürdiger Speicherorte im Sicherheitscenter der Office-Anwendung hinzufügen.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Öffnen des Dokuments einer Anpassung auf Dokumentebene
  Benutzer können das Dokument einer Anpassung auf Dokumentebene direkt vom Installationspfad öffnen, oder indem Sie das Dokument auf den lokalen Computer kopieren und dann die Kopie öffnen.
@@ -190,7 +190,7 @@ ms.locfileid: "54863928"
 ##  <a name="Put"></a> Kopieren des Dokuments einer Projektmappe auf der Endbenutzer Computer (nur Anpassungen auf Dokumentebene)
  Sie können das Dokument der Projektmappe auf dem Computer des Endbenutzers kopieren, indem Sie eine Aktion nach der Bereitstellung zu erstellen. Der Benutzer nicht auf diese Weise manuell kopieren Sie das Dokument vom Installationspfad auf ihren Computer nach der Installation Ihrer Lösung. Sie müssen, erstellen Sie eine Klasse, die die Aktion nach der Bereitstellung definiert, erstellen und veröffentlichen Sie die Projektmappe, das Anwendungsmanifest ändern und die Anwendung und das Bereitstellungsmanifest erneut signieren.
 
- Die folgenden Verfahren wird davon ausgegangen, dass der Name Ihres Projekts **ExcelWorkbook** und dass Sie die Projektmappe veröffentlichen der **C:\publish** Verzeichnis auf Ihrem Computer.
+ Die folgenden Verfahren wird davon ausgegangen, dass der Name Ihres Projekts **ExcelWorkbook** und Veröffentlichen der Lösung in den erstellten Ordner **C:\publish** auf Ihrem Computer.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Erstellen einer Klasse, in der die Aktion nach der Bereitstellung definiert wird
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863928"
 
 ### <a name="modify-the-application-manifest"></a>Ändern des Anwendungsmanifests
 
-1.  Öffnen der **c:\publish** Verzeichnis mit **Datei-Explorer**.
+1.  Öffnen Sie im Projektmappenverzeichnis **c:\publish**, mithilfe von **Datei-Explorer**.
 
 2.  Öffnen Sie die **Anwendungsdateien** Ordner, und öffnen Sie den Ordner aus, die die letzte veröffentlichte Version der Projektmappe.
 
@@ -302,7 +302,7 @@ ms.locfileid: "54863928"
     > [!NOTE]
     >  Ersetzen Sie im vorherigen Beispiel "mostrecentversionnumber" durch die Versionsnummer der zuletzt veröffentlichten Version der Projektmappe (z. B. **1_0_0_4**).
 
-     Die Meldung „ExcelWorkbook.vsto erfolgreich signiert“ wird angezeigt.
+     Die Meldung "ExcelWorkbook.vsto erfolgreich signiert" wird angezeigt.
 
 5.  Kopieren der *ExcelWorkbook.vsto* -Datei in die **c:\publish\Application Files\ExcelWorkbook**\__"mostrecentversionnumber"_ Verzeichnis.
 
@@ -336,7 +336,7 @@ ms.locfileid: "54863928"
              Wenn Benutzer das Dokument von der SharePoint-Site öffnen, wird das Dokument geöffnet, und die Anpassung wird installiert. Benutzer können das Dokument auf den Desktop kopieren. Die Anpassung wird nach wie vor ausgeführt, da Eigenschaften im Dokument auf den Netzwerkspeicherort des Dokuments verweisen.
 
 ##  <a name="Custom"></a> Erstellen eines benutzerdefinierten Installationsprogramms
- Sie können ein benutzerdefiniertes Installationsprogramm erstellen, für die Office-Projektmappe, anstatt das Setup-Programm, das für Sie erstellt wird, wenn Sie die Projektmappe veröffentlichen. Beispielsweise können Sie die Installation mit einem Anmeldeskript starten oder mit einer Batchdatei die Projektmappe ohne Benutzerinteraktion installieren. Diese Szenarios funktionieren am besten, wenn die erforderlichen Komponenten bereits auf den Endbenutzercomputern installiert sind.
+ Sie können ein benutzerdefiniertes Installationsprogramm erstellen, für die Office-Projektmappe, anstatt das Setup-Programm, das für Sie erstellt wird, wenn Sie die Projektmappe veröffentlichen. Beispielsweise können ein Skript zum Starten der Installation, oder Sie können eine Batchdatei verwenden, um die Projektmappe ohne Eingreifen des Benutzers zu installieren. Diese Szenarios funktionieren am besten, wenn die erforderlichen Komponenten bereits auf den Endbenutzercomputern installiert sind.
 
  Rufen Sie im Rahmen des benutzerdefinierten Installationsprozesses das Installationstool für Office-Projektmappen (*VSTOInstaller.exe*), das standardmäßig an folgendem Speicherort installiert wird:
 
@@ -359,9 +359,9 @@ ms.locfileid: "54863928"
 |Fehlercode|Definition|
 |----------------|----------------|
 |0|Die Projektmappe wurde erfolgreich installiert oder deinstalliert, oder die VSTOInstaller-Hilfe wurde angezeigt.|
-|-100|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig oder wurden mehrmals festgelegt. Weitere Informationen geben Sie "Vstoinstaller /?" oder finden Sie unter [erstellen ein benutzerdefiniertes Installers für eine ClickOnce-Office-Projektmappe](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Eine oder mehrere Befehlszeilenoptionen sind nicht gültig. Weitere Informationen erhalten Sie, indem Sie „vstoinstaller/?“ eingeben.|
-|-200|Der Bereitstellungsmanifest-URI ist ungültig. Weitere Informationen erhalten Sie, indem Sie „vstoinstaller/?“ eingeben.|
+|-100|Eine oder mehrere Befehlszeilenoptionen sind ungültig oder wurde mehrmals festgelegt. Weitere Informationen geben Sie "Vstoinstaller /?" oder finden Sie unter [erstellen ein benutzerdefiniertes Installers für eine ClickOnce-Office-Projektmappe](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-101|Eine oder mehrere Befehlszeilenoptionen sind ungültig. Weitere Informationen erhalten Sie, indem Sie "vstoinstaller/?" eingeben.|
+|-200|Der Bereitstellungsmanifest-URI ist ungültig. Weitere Informationen erhalten Sie, indem Sie "vstoinstaller/?" eingeben.|
 |-201|Die Projektmappe konnte nicht installiert werden, da das Bereitstellungsmanifest ungültig ist. Finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|Die Projektmappe konnte nicht installiert werden, da Visual Studio-Tools für Office-Abschnitt im Anwendungsmanifest ungültig ist. Finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).|
 |-203|Die Projektmappe konnte nicht installiert werden, da ein Downloadfehler aufgetreten ist. Überprüfen Sie den URI bzw. den Netzspeicherort des Bereitstellungsmanifests, und versuchen Sie es erneut.|
