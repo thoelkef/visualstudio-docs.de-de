@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869017"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504106"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Erste Schritte (SharePoint-Entwicklung in Visual Studio)
   Dieser Abschnitt bietet Ihnen Unterstützung bei den ersten Schritten mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , um SharePoint-Lösungen zu entwickeln, die die Vorteile von [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]nutzen.
@@ -38,11 +38,12 @@ ms.locfileid: "57869017"
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)|Beschreibt die SharePoint-Entwicklung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)|Beschreibt die SharePoint-Entwicklung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Beschreibt die erforderlichen Installationen zum Erstellen einer SharePoint-Lösung|
 |[Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Beschreibt, wie mithilfe der Visual Studio-Tools zur SharePoint-Entwicklung benutzerdefinierte Websitespalten, Inhaltstypen und Listen für SharePoint erstellt werden.|
 |[Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)|Beschreibt Workflowentwurf und -entwicklung.|
 |[Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Beschreibt, wie eine Verbindung mit Business Data Connectivity (BDC)-Modellen hergestellt wird, um Geschäftsdaten zu integrieren.|
-|[Creatie Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Beschreibt Webparts und Webpartseiten, die Bausteine der Seiten auf einer SharePoint-Website.|
+|[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Beschreibt Webparts und Webpartseiten, die Bausteine der Seiten auf einer SharePoint-Website.|
 |[Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Beschreibt, wie Anwendungsseiten mit einem Designer entworfen werden.|
 |[Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Beschreibt, wie benutzerdefinierte, wiederverwendbare Steuerelemente für Anwendungsseiten und Webparts in SharePoint erstellt werden.|
 |[Durchsuchen von SharePoint-Verbindungen mit Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Beschreibt, wie durch die Komponenten einer SharePoint-Website in einem Visual Studio-Toolfenster navigiert wird.|
