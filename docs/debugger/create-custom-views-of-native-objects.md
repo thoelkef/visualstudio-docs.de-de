@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten
+title: Erstellen benutzerdefinierter Ansichten von C++ Objekte
 description: Verwenden Sie das Natvis-Framework anpassen, dass Visual Studio systemeigene Typen im Debugger angezeigt.
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428803"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537576"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Erstellen benutzerdefinierter Ansichten nativer Objekte im Debugger
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Erstellen benutzerdefinierter Ansichten von C++ Objekte im Debugger
 
 Visual Studio *Natvis* Framework passt die Möglichkeit, native Typen in Variablenfenstern des Debuggers, z. B. werden, die **"lokal"** und **Watch** Windows und **DataTips**. Natvis-Visualisierungen können die Typen zu, die Sie während des Debuggens besser sichtbar zu erstellen.
 
@@ -165,7 +165,7 @@ Wenn der Debugger Fehler in einem visualisierungseintrag feststellt, wird sie ig
 
 **Natvis-Diagnose aktivieren:**
 
-- Klicken Sie unter **Tools** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen**  >  **Fenster "Ausgabe"** legen **Natvis-diagnosemeldungen (nur C++)** zu **Fehler**, **Warnung**, oder  **Ausführliche**, und wählen Sie dann **OK**.
+- Klicken Sie unter **Tools** > **Optionen** (oder **Debuggen** > **Optionen**) > **Debuggen**  >  **Fenster "Ausgabe"** legen **Natvis-diagnosemeldungen (C++ nur)** zu **Fehler**, **Warnung** , oder **ausführlich**, und wählen Sie dann **OK**.
 
 Die Fehler erscheinen in der **Ausgabe** Fenster.
 
@@ -234,7 +234,7 @@ Im folgenden Beispiel gilt die Visualisierung nur für die `BaseClass` Typ:
 
 #### <a name="priority-attribute"></a>Priority-Attribut
 
-Der optionale `Priority` -Attribut gibt die Reihenfolge, in denen alternative Definitionen verwendet, wenn eine Definition kann nicht analysiert werden. Die möglichen Werte der `Priority` sind: `Low`, `MediumLow`,`Medium`, `MediumHigh`, und `High`. Der Standardwert ist `Medium`sein. Die `Priority` -Attribut unterscheidet nur zwischen Prioritäten in derselben *natvis* Datei.
+Der optionale `Priority` -Attribut gibt die Reihenfolge, in denen alternative Definitionen verwendet, wenn eine Definition kann nicht analysiert werden. Die möglichen Werte der `Priority` sind: `Low`, `MediumLow`,`Medium`, `MediumHigh`, und `High`. Der Standardwert ist `Medium`. Die `Priority` -Attribut unterscheidet nur zwischen Prioritäten in derselben *natvis* Datei.
 
 Im folgende Beispiel analysiert zuerst den Eintrag, der die 2015 STL entspricht. Schlägt dies fehl, analysiert, wird den alternativen Eintrag für die 2013-Version von STL verwendet:
 
@@ -664,7 +664,7 @@ Im Folgenden ist ein Beispiel eines UIVisualizer-Elements angegeben:
 
 - Ein `ServiceId`  -  `Id` -Paar des Attributs identifiziert eine `UIVisualizer`. Die `ServiceId` ist die GUID des Diensts die Schnellansicht Paket verfügbar macht. `Id` ist ein eindeutiger Bezeichner, der Schnellansichten, unterscheidet, wenn ein Dienst mehrere bereitstellt. Im vorherigen Beispiel enthält der gleiche schnellansichtsdienst zwei Schnellansichten bereit.
 
-- Die `MenuName` Attribut definiert eine Schnellansicht-Name, der in der Dropdownliste neben dem Lupensymbol im Debugger angezeigt. Beispiel:
+- Die `MenuName` Attribut definiert eine Schnellansicht-Name, der in der Dropdownliste neben dem Lupensymbol im Debugger angezeigt. Zum Beispiel:
 
   ![Kontextmenü für UIVisualizer-Menü](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer-Menü-Kontextmenü")
 

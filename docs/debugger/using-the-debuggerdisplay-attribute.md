@@ -1,5 +1,5 @@
 ---
-title: Verwenden des DebuggerDisplay-Attributs | Microsoft-Dokumentation
+title: Benutzerdefinierte Informationen, die mithilfe der DebuggerDisplay anzeigen | Microsoft-Dokumentation
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680187"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537636"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Verwenden des DebuggerDisplay-Attributs (C#, Visual Basic F#ist C++ / CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Entsprechende Konfiguration des Debuggers Vorgehensweise wird die Verwendung des DebuggerDisplay-Attributs (C#, Visual Basic F#, C++/CLI)
 Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von Objekten, Eigenschaften oder Feldern in den Variablenfenstern des Debuggers. Dieses Attribut kann auf Typen, Delegaten, Eigenschaften, Felder und Assemblys angewendet werden.
 
 Das `DebuggerDisplay` -Attribut verfügt über ein einziges Argument, das als Zeichenfolge in der Wertspalte für Instanzen des Typs angezeigt wird. Diese Zeichenfolge kann geschweifte Klammern (`{` und `}`) enthalten. Text innerhalb von Klammern wird als Feld, Eigenschaft oder Methode ausgewertet.
@@ -32,7 +32,7 @@ Ob der Debugger diesen impliziten `ToString()` -Aufruf auswertet, hängt von ein
 > Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.
 
 > [!NOTE]
-> Dieses Attribut wird unterstützt für nativen Code nur in C++ / CLI-Code.
+> Für nativen Code wird dieses Attribut nur in unterstützt C++/CLI Code.
 
 In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.
 
