@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710486"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537490"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Erstellen benutzerdefinierte Ansichten von Daten in Visual Studio-Debugger (C#, Visual Basic, C++)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Erstellen benutzerdefinierte Ansichten von Daten in Visual Studio-Debugger (C#, Visual Basic C++)
 
 Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger bietet viele Tools zum Überprüfen und ändern den Zustand des Programms. Die meisten dieser Tools funktionieren nur im Unterbrechungsmodus.
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Erstellen Sie benutzerdefinierter Ansichten von Daten im Variablenfenster und DataTips
 
- Viele der [Debuggerfenster](../debugger/debugger-windows.md), z. B. die **"Auto"** und **Überwachen** Windows ermöglichen es Ihnen, Variablen untersuchen. Sie können anpassen, wie systemeigene Typen verwalteter Objekte und Ihre eigenen Typen werden angezeigt, in den Variablenfenstern des Debuggers und im [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Ansichten von systemeigenen Objekten](../debugger/create-custom-views-of-native-objects.md) und [erstellen benutzerdefinierte Ansichten von Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Viele der [Debuggerfenster](../debugger/debugger-windows.md), z. B. die **"Auto"** und **Überwachen** Windows ermöglichen es Ihnen, Variablen untersuchen. Sie können anpassen, wie C++ Typen, verwaltete Objekte und Ihre eigenen Typen werden angezeigt, in den Variablenfenstern des Debuggers und im [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Ansichten von C++ Objekte](../debugger/create-custom-views-of-native-objects.md) und [erstellen benutzerdefinierte Ansichten von Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Erstellen benutzerdefinierter Schnellansichten
 

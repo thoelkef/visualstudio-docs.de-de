@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366301"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537558"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -52,6 +52,10 @@ Ist es schwierig oder zeitaufwändig ist, um einen bestimmten Status in Ihrer ap
     ![Bedingter Haltepunkt](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. Wenn Sie einen anderen Typ der Bedingung interessiert sind, wählen Sie **Filter** anstelle von **Bedingungsausdruck** in die **Haltepunkteinstellungen** (Dialogfeld), und führen Sie dann die Filter-Tipps.
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Konfigurieren Sie die Daten im Debugger angezeigt.
+
+Für C#, Visual Basic und C++ (C++nur /CLI Code), Sie können dem Debugger zu veranschaulichen, indem Informationen feststellen der [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) Attribut. Für C++ Code erreichen Sie die gleichen Using [Natvis-Visualisierungen](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Ändern des Ausführungsablaufs
 

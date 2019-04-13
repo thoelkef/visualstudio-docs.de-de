@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504327"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537597"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
@@ -113,21 +113,21 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 
    - Verwenden Sie den vollqualifizierten Funktionsnamen.
 
-     Beispiel:  `Namespace1.ClassX.MethodA()`
+     Beispiel: `Namespace1.ClassX.MethodA()`
 
    - Fügen Sie die Parametertypen einer überladenen Funktion hinzu.
 
-     Beispiel:  `MethodA(int, string)`
+     Beispiel: `MethodA(int, string)`
 
    - Verwenden der "!" Symbol für das Modul angeben.
 
-     Beispiel: `App1.dll!MethodA`
+     Ein Beispiel: `App1.dll!MethodA`
 
    - Verwenden Sie den Kontextoperator in systemeigenem C++.
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     Beispiel: `{MethodA, , App1.dll}+2`
+     Ein Beispiel: `{MethodA, , App1.dll}+2`
 
 1. In der **Sprache** Dropdownliste, wählen Sie die Sprache der Funktion.
 
@@ -176,13 +176,13 @@ Datenhaltepunkte in .NET Core funktioniert nicht für:
 
 **Um einen Datenhaltepunkt festzulegen:**
 
-1.  In einem C++-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird. Auf der **Debuggen** Menü wählen **Neuer Haltepunkt** > **Datenhaltepunkt**
+1. In einem C++-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird. Auf der **Debuggen** Menü wählen **Neuer Haltepunkt** > **Datenhaltepunkt**
 
     Sie können auch auswählen, **neu** > **Datenhaltepunkt** in die **Haltepunkte** Fenster oder auf ein Element in der **"Auto"**, **Watch**, oder **"lokal"** Fenster, und wählen **unterbrechen, wenn der Wert ändert**im Kontextmenü.
 
-2.  Geben Sie im Feld **Adresse** eine Speicheradresse oder einen Ausdruck ein, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.
+2. Geben Sie im Feld **Adresse** eine Speicheradresse oder einen Ausdruck ein, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.
 
-3.  Geben Sie im Feld **Byteanzahl** die Anzahl der Bytes an, die der Debugger überwachen soll. Wenn Sie beispielsweise **4**auswählen, überwacht der Debugger vier Bytes ab `&avar` und unterbricht, wenn eines dieser Bytes seinen Wert ändert.
+3. Geben Sie im Feld **Byteanzahl** die Anzahl der Bytes an, die der Debugger überwachen soll. Wenn Sie beispielsweise **4**auswählen, überwacht der Debugger vier Bytes ab `&avar` und unterbricht, wenn eines dieser Bytes seinen Wert ändert.
 
 Datenhaltepunkte funktionieren nicht unter den folgenden Bedingungen:
 -   Ein Prozess, der nicht gedebuggt wird, wird in einen Speicherbereich geschrieben.
