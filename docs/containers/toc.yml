@@ -3,25 +3,35 @@ items:
   href: index.yml
   items:
   - name: Übersicht
-    href: visual-studio-tools-for-docker.md
-  - name: 'Schnellstart: Docker in Visual Studio'
-    href: docker-tools.md
-  - name: 'Tutorial: Multicontainer-App mit Docker Compose'
-    href: tutorial-multicontainer.md
-  - name: 'Tutorial: Kubernetes in Visual Studio'
-    href: tutorial-kubernetes-tools.md
-  - name: Debuggen von Apps in einem lokalen Docker-Container
-    href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Bereitstellung in einer Containerregistrierung
-    href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Bereitstellen in Azure App Service
-    href: docker-deploy-app-service.md
-  - name: Problembehandlung bei der Entwicklung von Visual Studio mit Docker
-    href: vs-azure-tools-docker-troubleshooting-docker-errors.md
+    href: overview.md
+  - name: Schnellstart
+    items:
+    - name: Containertools in Visual Studio
+      href: container-tools.md
+    expanded: true
+  - name: Tutorials
+    items:
+    - name: 'Tutorial: Multicontainer-App mit Docker Compose'
+      href: tutorial-multicontainer.md
+    - name: 'Tutorial: Kubernetes in Visual Studio'
+      href: tutorial-kubernetes-tools.md
+    expanded: true
+  - name: Gewusst wie
+    items:
+    - name: Debuggen von Apps in einem lokalen Docker-Container
+      href: edit-and-refresh.md
+    - name: Bereitstellung in einer Containerregistrierung
+      href: hosting-web-apps-in-docker.md
+    - name: Bereitstellen in Azure App Service
+      href: deploy-app-service.md
+    - name: Konfigurieren von Containertools
+      href: container-tools-configure.md
+  - name: Problembehandlung
+    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354816"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537688"
