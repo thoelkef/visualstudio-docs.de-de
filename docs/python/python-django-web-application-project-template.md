@@ -3,19 +3,19 @@ title: Django-Webprojektvorlage für Python
 description: Visual Studio stellt Ihnen eine umfassende Vorlage zur Verfügung, mit der Sie mithilfe von Python einfach und schnell Django-Webanwendungen erstellen können.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0848eb7f4ce7894035db06a775c0cb3628970421
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943024"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366379"
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 

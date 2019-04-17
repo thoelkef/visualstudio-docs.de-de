@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950577"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232417"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 
@@ -46,27 +46,27 @@ Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für 
 
 Über die farbige Syntaxhervorhebung und einfache Anweisungsvervollständigung hinaus bietet Visual Studio noch eine Funktion mit dem Namen [Navigieren zu](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Mithilfe dieses Features können Sie schnell Codedateien, Dateipfade und Codesymbole durchsuchen. Visual Studio bietet Unterstützung für Navigieren zu für die folgenden Sprachen.
 
--   Gehe zu
+- Gehe zu
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Alle diese Dateitypen verfügen über die zuvor beschriebenen Features, auch wenn der Support für eine bestimmte Sprache noch nicht installiert wurde. Das Installieren der besonderen Unterstützung für einige Sprachen stellt möglicherweise weitergehende Unterstützung für die betreffende Sprache bereit, wie etwa IntelliSense oder andere erweiterte Sprachfeatures wie Glühbirnen.
 
 ## <a name="add-support-for-non-supported-languages"></a>Hinzufügen von Unterstützung für nicht unterstützte Sprachen
 
-Visual Studio 2015 Update 1 und spätere Versionen bieten Sprachunterstützung im Editor mithilfe von [TextMate-Grammatiken](https://manual.macromates.com/en/language_grammars). Wenn Ihre bevorzugte Programmiersprache aktuell nicht im Visual Studio-Editor unterstützt wird, suchen Sie zuerst im Web – es ist gut möglich, dass bereits ein TextMate-Paket für die Sprache verfügbar ist. Wenn Sie allerdings keins finden können, können Sie in Visual Studio 2015 Update 1 oder später selbst Unterstützung hinzufügen, indem Sie ein TextMate-Paketmodell für die Sprachgrammatik und die Codeausschnitte erstellen.
+Visual Studio bietet Sprachunterstützung im Editor mithilfe von [TextMate-Grammatiken](https://manual.macromates.com/en/language_grammars). Wenn Ihre bevorzugte Programmiersprache aktuell nicht im Visual Studio-Editor unterstützt wird, suchen Sie zuerst im Web&mdash;es ist gut möglich, dass bereits ein TextMate-Paket für die Sprache verfügbar ist. Wenn Sie allerdings keins finden können, können Sie selbst Unterstützung hinzufügen, indem Sie ein TextMate-Paketmodell für die Sprachgrammatik und die Codeausschnitte erstellen.
 
 Fügen Sie eventuelle neue TextMate-Grammatiken für Visual Studio im folgenden Ordner hinzu:
 
@@ -80,11 +80,14 @@ Fügen Sie unter diesem Basispfad die folgenden Ordner hinzu, wenn sie für Ihre
 |*\Syntaxes*|Der Grammatikordner. Enthält die *JSON*-Grammatikdateien für die Sprache, wie etwa *Matlab.json*.|
 |*\Snippets*|Der Codeausschnittordner. Enthält die Ausschnitte für die Sprache.|
 
-Unter Windows wird *%userprofile%* in den Pfad *C:\Benutzer\\\<Benutzername>* aufgelöst. Wenn der Erweiterungsordner auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
+Unter Windows wird *%userprofile%* in den Pfad *C:\Benutzer\\\<Benutzername>* aufgelöst. Wenn der *Erweiterungsordner* auf Ihrem System nicht vorhanden ist, müssen Sie ihn erstellen. Wenn der Ordner bereits vorhanden ist, ist er verborgen.
 
-Weitere Informationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML (Text Mate – Einführung in Sprachen: Hinzufügen von Quellcode-Syntaxhervorhebungen mit Einbettung in HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) und unter [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Anmerkungen zum Erstellen einer Sprache und eines benutzerdefinierten Designs für ein TextMate-Paket)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+> [!TIP]
+> Wenn Sie Dateien im Editor geöffnet haben, müssen Sie sie schließen und erneut öffnen, um die Syntaxhervorhebung anzuzeigen, nachdem Sie die TextMate-Grammatiken hinzugefügt haben.
+
+Detailinformationen zum Erstellen von TextMate-Grammatiken finden Sie unter [TextMate – Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Einführung in Sprachgrammatiken) und [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Anmerkungen zum Erstellen einer Sprachgrammatik und eines benutzerdefinierten Designs für ein TextMate-Paket).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Walkthrough: Create a code snippet (Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts)](../ide/walkthrough-creating-a-code-snippet.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)

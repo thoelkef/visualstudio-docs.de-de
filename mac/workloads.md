@@ -3,14 +3,14 @@ title: Visual Studio für Mac-Workloads
 description: Dieser Artikel beschreibt die verschiedenen Workloads, die in Visual Studio für Mac verwendet werden können, einschließlich mobiler Xamarin-Apps, ASP.NET Core und Unity für Spiele.
 author: conceptdev
 ms.author: crdun
-ms.date: 12/05/2018
+ms.date: 04/02/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 609f96f959b59184016093cdf2ba7a69bc6c0292
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315461"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018349"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio für Mac-Workloads
 
@@ -24,9 +24,13 @@ Visual Studio für Mac enthält für die Entwicklung folgender App-Typen vorinst
 
 ## <a name="mobile-applications-with-xamarin"></a>Mobile Anwendungen mit Xamarin
 
-Mit Xamarin können Sie plattformübergreifende mobile Apps mit .NET für Android, iOS, tvOS, watchOS und Mac-Desktop-Apps erstellen.
+Mit [Xamarin](xamarin.md) können Sie plattformübergreifende mobile Apps mit .NET für Android, iOS, tvOS, watchOS und Mac-Desktop-Apps erstellen.
 
 Informationen zur Verwendung von Xamarin in Visual Studio für Mac finden Sie im [Xamarin-Entwicklercenter](https://developer.xamarin.com/), und sehen Sie sich das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started) zu mobilen Apps an.
+
+## <a name="mac-desktop-applications"></a>Mac-Desktopanwendungen
+
+Sie können Mac-Apps mit [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) mithilfe des Cocoa-Benutzeroberflächen-Frameworks erstellen, und mit [Xamarin.Forms auf Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) Apps erstellen, die Code und Benutzeroberfläche mit anderen Plattformen gemeinsam nutzen.
 
 ## <a name="net-core-applications"></a>.NET Core-Anwendungen
 

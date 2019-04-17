@@ -4,18 +4,18 @@ description: In diesem Schnellstart verwenden Sie Visual Studio und das Flask-Fr
 ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683384"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366686"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -193,7 +193,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 Glückwunsch zum Ausführen Ihrer ersten Python-App über Visual Studio! Dabei haben Sie mehr über das Verwenden von Visual Studio als Python-IDE erfahren.
 
 > [!div class="nextstepaction"]
-> [Deploy the app to Azure App Service (Bereitstellen der App in Azure App Service)](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Bereitstellen der App in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 Da die Schritte, die Sie in diesem Schnellstart befolgt haben, relativ allgemein sind, können und sollten diese automatisiert werden. Visual Studio-Projektvorlagen sind für diese Automatisierungen zuständig. Führen Sie den [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](../python/quickstart-02-python-in-visual-studio-project-from-template.md) durch. Dort wird veranschaulicht, wie eine Web-App in weniger Schritten erstellt wird, die der ähnelt, die Sie in diesem Artikel erstellt haben.
 

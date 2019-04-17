@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad150a2eb9e27a9b2ce1e2e293d84ed956d8a7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a87013ff3a1911caa667f7ba431e408fc87a98f4
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603312"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584479"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild-Sonderzeichen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserviert einige Zeichen für die besondere Verwendung in bestimmten Kontexten. Sie müssen diese Zeichen nur mit einem Escapezeichen versehen, wenn Sie sie in dem für sie reservierten Kontext in ihrer ursprünglichen Bedeutung verwenden möchten. Beispielsweise hat ein Sternchen nur in den Attributen `Include` und `Exclude` einer Elementdefinition und im Zusammenhang mit Aufrufen von `CreateItem` eine besondere Bedeutung. Wenn aber ein Sternchen in diesen Kontexten wirklich als Sternchen angezeigt werden soll, müssen Sie es mit einem Escapezeichen versehen. In allen anderen Kontexten müssen Sie lediglich auf die Sternchentaste drücken, wenn ein Sternchen angezeigt werden soll.
@@ -32,7 +32,7 @@ ms.locfileid: "56603312"
 |%|%25|Verweisen auf Metadaten|
 |$|%24|Verweisen auf Eigenschaften|
 |@|%40|Verweisen auf Elementlisten|
-|'|%27|Bedingungen und andere Ausdrücke|
+|\'|%27|Bedingungen und andere Ausdrücke|
 |;|%3B|Listentrennzeichen|
 |?|%3F|Platzhalterzeichen für Dateinamen in `Include`- und `Exclude`-Attributen|
 |*|%2A|Platzhalterzeichen für Dateinamen in `Include`- und `Exclude`-Attributen|

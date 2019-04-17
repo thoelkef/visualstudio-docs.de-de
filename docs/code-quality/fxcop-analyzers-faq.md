@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222484"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232553"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Häufig gestellte Fragen zu FxCop und FxCop-Analysetools
 
@@ -41,8 +41,16 @@ Nein. Die Eigenschaft **RunCodeAnalysis** in einer Projektdatei (z.B. *.csproj*)
 
 Zum Ausführen von FxCop-Analysetools müssen Sie zunächst die entsprechenden [NuGet-Pakete installieren](install-fxcop-analyzers.md). Dann erstellen Sie Ihr Projekt oder Ihre Projektmappe mit Visual Studio oder MSBuild. Die Warnungen und Fehlermeldungen von FxCop-Analysetools werden in der **Fehlerliste** oder im Befehlsfenster angezeigt.
 
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Nach der Installation des NuGet-Pakets für das FxCop-Analysetool erhalte ich die Warnung „CA0507“.
+
+Wenn Sie FxCop-Analysetools installiert haben, aber weiterhin eine Warnung erhalten CA0507 **"Run Code Analysis" ist zugunsten von FxCop-Analysetools, die während des Build ausgeführt werden, veraltet**, müssen Sie möglicherweise die msbuild-Eigenschaft **RunCodeAnalysis** in Ihrer Projektdatei auf **false** setzen. Andernfalls wird die statische Codeanalyse nach jedem Build ausgeführt.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
+
 ## <a name="see-also"></a>Siehe auch
 
-- [Overview of .NET Compiler Platform analyzers (Übersicht über .NET Compiler Platform-Analysetools)](roslyn-analyzers-overview.md)
-- [Get started with analyzers (Erste Schritte mit Analysetools)](fxcop-analyzers.yml)
-- [Install FxCop analyzers (Installieren von FxCop-Analysetools)](install-fxcop-analyzers.md)
+- [Übersicht über .NET Compiler Platform-Analysetools](roslyn-analyzers-overview.md)
+- [Erste Schritte mit Analysetools](fxcop-analyzers.yml)
+- [Installieren von FxCop-Analysetools](install-fxcop-analyzers.md)

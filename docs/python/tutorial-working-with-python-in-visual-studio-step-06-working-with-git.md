@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Dies ist Schritt 6 einer grundlegenden Einführung in die Arbeit mit Python in Visual Studio, in dem die Git-bezogenen Features von Visual Studio erläutert werden.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 386821867b1f7290fd195322a699eb161536a06b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919858"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365997"
 ---
 # <a name="step-6-work-with-git"></a>Schritt 6: Arbeiten mit Git
 
@@ -74,4 +74,4 @@ Sehen Sie sich für weitere Informationen die folgenden Artikel zu Konzepten und
 - [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md)
 - [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Profilerstellung](profiling-python-code-in-visual-studio.md)
-- [Komponententests](unit-testing-python-in-visual-studio.md)
+- [Komponententest](unit-testing-python-in-visual-studio.md)

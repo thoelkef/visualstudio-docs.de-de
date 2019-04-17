@@ -3,18 +3,18 @@ title: Verwalten von Python-Umgebungen und -Interpretern
 description: Verwalten Sie globale, virtuelle und Conda-Umgebungen im Fenster „Python-Umgebungen“. Dort können Sie Python-Interpreters und -Pakete installieren und Visual Studio-Projekten Umgebungen zuweisen.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355684"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366561"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -33,7 +33,7 @@ In Visual Studio unter Windows verwenden Sie das Fenster **Python-Umgebungen** w
 Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, finden Sie das allgemeine Hintergrundwissen in den folgenden Artikeln:
 
 - [Arbeiten mit Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
+- [Installieren der Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
 
 > [!Note]
 > Sie können Umgebungen für Python-Code nicht verwalten, der nur als Ordner über **Datei** > **Öffnen** > **Ordner** geöffnet wurde. Stattdessen [erstellen Sie ein Python-Projekt aus vorhandenem Code](quickstart-01-python-in-visual-studio-project-from-existing-code.md), um die Umgebungsfeatures von Visual Studio nutzen zu können.
@@ -270,4 +270,4 @@ Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption ver
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)
 - [Verwenden von „requirements.txt“ für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
 - [Suchpfade](search-paths.md)
-- [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)
+- [Referenz zum Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)

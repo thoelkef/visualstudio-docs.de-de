@@ -77,3 +77,4 @@
 # [Problembehandlung](/visualstudio/mac/troubleshooting)
 ## [Programm zur Verbesserung der Visual Studio-Benutzerfreundlichkeit](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Report a Problem (Melden eines Problems)](/visualstudio/mac/report-a-problem)
+## [Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten](updater-troubleshooting.md)

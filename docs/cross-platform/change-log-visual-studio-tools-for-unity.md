@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803739"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232761"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="4005"></a>4.0.0.5
+ Veröffentlichung: 27. Februar 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Visual Studio-Versionserkennung mit dem Setuppaket korrigiert.
+
+    -   Nicht verwendete Assemblys aus dem Setuppaket entfernt.
+
+## <a name="4004"></a>4.0.0.4
+ Veröffentlichung: 13. Februar 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Integration:**
+
+    -   Unterstützung hinzugefügt, um Unity-Prozesse während der Installation richtig zu erkennen und damit die Setup-Engine mit Dateisperren besser umgehen kann.
+    
+    -   ScriptableObject-API aktualisiert.
+
+## <a name="4003"></a>4.0.0.3
+ Veröffentlichung: 31. Januar 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Projektgenerierung:**
+
+    -   Öffentliche und serialisiert Felder rufen keine Warnungen mehr hervor. Wir haben die Compilerwarnungen CS0649 und IDE0051 in Unity-Projekten, die diese Nachrichten erstellt haben, automatisch unterdrückt.
+
+-   **Integration:**
+
+    -   Die Benutzererfahrung bei der Anzeige von Unity-Editor- und Player-Instanzen wurde verbessert (Fenster sind nun in der Größe veränderbar, verwenden einheitliche Ränder und zeigen einen Griff zum Ändern der Größe). Prozess-ID-Informationen für Unity-Editoren hinzugefügt.
+    
+    -   MonoBehaviour-API aktualisiert.
+    
+-   **Auswertung:**
+
+    -   Unterstützung für lokale Funktionen hinzugefügt.
+    
+    -   Unterstützung für Pseudovariablen (Ausnahme und die Objekt-IDs) hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Problem mit Moniker-Images und -Designs behoben.
+
+    -   Schreiben Sie nur während des Debuggens in das Ausgabefenster, wenn Sie die Asset-Datenbank automatisch aktualisieren.
+
+    -   Verzögerungen der Benutzeroberfläche mit der MonoBehaviour-Assistentenfilterung behoben.
+    
+-   **Debugger:**
+
+    -   Das Lesen von benutzerdefinierten Attributen für benannte Argumente wurde korrigiert, wenn alte Protokollversionen verwendet wurden.
+
+## <a name="4002"></a>4.0.0.2
+ Veröffentlichung: 23. Januar 2019
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Experimentelle Build-Generierung korrigiert.
+
+    -   Die Behandlung von Ereignissen in Projektdateien wurde korrigiert, um die Auslastung von UI-Threads zu minimieren.
+
+    -   Der Vervollständigungsanbieter mit gestapelten Textänderungen wurde korrigiert.
+    
+-   **Debugger:**
+
+    -   Die Anzeige von Debugmeldungen für Benutzer an den angefügten Debugger wurde korrigiert.
+
+## <a name="4001"></a>4.0.0.1
+ Veröffentlichung: 10. Dezember 2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Auswertung:**
+
+    -   NRefactory zugunsten von Roslyn für die Auswertung von Ausdrücken ersetzt.
+
+    -   Unterstützung für Zeiger hinzugefügt: Dereferenzieren, Umwandeln und Zeigerarithmetik (Unity 2018.2 + und die neue Runtime sind dafür erforderlich).
+
+    -   Unterstützung für Arrayzeigeransicht (wie im C++). Nehmen Sie einen Zeigerausdruck und fügen Sie dann ein Komma und die Anzahl der Elemente hinzu, die Sie anzeigen möchten.
+
+    -   Unterstützung für asynchrone Konstrukte hinzugefügt.
+
+-   **Integration:**
+    
+    -   Unterstützung für die automatische Aktualisierung der Asset-Datenbank von Unity beim Speichern hinzugefügt. Dies ist standardmäßig aktiviert und löst beim Speichern eines Skripts in Visual Studio eine Neukompilierung auf der Unity-Seite aus. Sie können dieses Feature in „Tools\Optionen\Tools für Unity\AssetDatabase von Unity beim Speichern aktualisieren“ deaktivieren.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+-   **Integration:**
+
+    -   Die Brückenaktivierung wurde korrigiert, wenn Visual Studio nicht als bevorzugter externer Editor ausgewählt wurde.
+
+    -   Auswertung von Ausdrücken mit fehlerhaften oder nicht unterstützten Ausdrücken korrigiert.
+
+## <a name="4000"></a>4.0.0.0
+ Veröffentlichung: 4. Dezember 2018
+
+### <a name="new-features"></a>Neue Funktionen
+
+-   **Integration:**
+
+    -   Unterstützung für Visual Studio 2019 hinzugefügt.
+
+    -   Übernahme des Visual Studio-Bilddienstes und -Katalogs mit voller Unterstützung für HDPI-Skalierung, pixelgenaue Bilder und Designs.
+
+### <a name="deprecated-features"></a>Veraltete Features
+
+-   **Integration:**
+
+    -   In Zukunft wird Visual Studio-Tools für Unity nur noch Unity 5.2+ unterstützen (mit der integrierten Visual Studio-Integration von Unity).
+
+    -   In Zukunft wird Visual Studio-Tools für Unity nur noch Visual Studio 2015+ unterstützen.
+
+    -   Legacysprachendienst, Fehlerliste und Statusleiste entfernt.
+    
+    -   Der Quick Monobehaviour-Assistent wurde entfernt (zugunsten der dedizierten IntelliSense-Unterstützung).
 
 ## <a name="3903"></a>3.9.0.3
  am 28. November 2018 veröffentlicht
@@ -411,7 +535,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
     -   Probleme beim Hinzufügen von Elementen zu Visual Studio Watch wurden behoben.
 
--   **Project Generation:**
+-   **Projektgenerierung:**
 
     -   Fehlerhafte Assembly-Namensverweise bei mcs.rsp Dateien behoben.
 

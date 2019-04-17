@@ -11,18 +11,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151166"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365797"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -47,7 +47,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | Option | Standard | Beschreibung |
 | --- | --- | --- |
 | **Beim Erstellen virtueller Umgebungen das Ausgabefenster anzeigen**| Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
-| **Beim Installieren oder Entfernen von Paketen das Ausgabefenster anzeigen** | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
+| **Anzeigen des Ausgabefensters beim Installieren oder Löschen von Paketen** | Ein | Deaktivieren Sie diese Option, um zu verhindern, dass das **Ausgabefenster** angezeigt wird. |
 | **Benachrichtigungsleiste zum Erstellen von Umgebungen anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Wenn diese Option festgelegt ist und der Benutzer ein Projekt öffnet, das eine Datei namens *requirements.txt* oder *environment.yml* enthält, zeigt Visual Studio eine Informationsleiste mit Vorschlägen für die Erstellung einer virtuellen Umgebung bzw. einer Conda-Umgebung an, anstatt die globale Standardumgebung zu verwenden. |
 | **Benachrichtigungsleiste zum Erstellen von Paketen anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Wenn diese Option festgelegt ist und der Benutzer ein Projekt öffnet, das eine Datei namens *requirements.txt* enthält (und nicht die globale Standardumgebung verwendet wird), gleicht Visual Studio diese Anforderungen mit Paketen ab, die in der aktuellen Umgebung installiert sind. Sollten Pakete fehlen, fordert Visual Studio zur Installation dieser Abhängigkeiten auf. |
 | **Paket-Manager immer als Administrator ausführen** | Aus | Führt dazu, dass `pip install` und ähnliche Paket-Manager-Vorgänge für alle Umgebungen immer mit erhöhten Rechten ausgeführt werden. Beim Installieren von Paketen fordert Visual Studio die Eingabe von Administratorberechtigungen, wenn sich die Umgebung in einem geschützten Bereich des Dateisystems wie z.B. *c:\Programme* befindet. In dieser Aufforderung können Sie auswählen, dass der Installationsbefehl für diese eine Umgebung immer mit erhöhten Rechten ausgeführt werden soll. Siehe [Registerkarte „Pakete“](python-environments-window-tab-reference.md#packages-tab). |
@@ -87,7 +87,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | --- | --- | --- |
 | **Eingabeaufforderung vor der Ausführung, wenn Fehler vorliegen** | Ein | Wenn diese Option aktiviert ist, werden Sie aufgefordert zu bestätigen, dass Sie Code ausführen möchten, der Fehler enthält. Deaktivieren Sie diese Option, um das Warnen auszuschalten. |
 | **Auf Eingabe warten, wenn der Prozess abnormal beendet wird**<br/><br/>**Auf Eingabe warten, wenn der Prozess normal beendet wird** | Ein (für beide) | Ein aus Visual Studio gestartetes Python-Programm wird in seinem eigenen Konsolenfenster ausgeführt. Standardmäßig wartet das Fenster, bis Sie eine Taste drücken, bevor es schließt, unabhängig davon, wie das Programm beendet wird. Um diese Aufforderung zu deaktivieren und das Fenster automatisch zu schließen, deaktivieren Sie mindestens eine dieser beiden Optionen. |
-| **Programmausgabe mithilfe von „tee“ an Debugausgabefenster senden** | Ein | Zeigt die Programmausgabe sowohl in einem separaten Konsolenfenster als auch im **Ausgabefenster** von Visual Studio an. Deaktivieren Sie diese Option, um die Ausgabe nur im separaten Konsolenfenster anzuzeigen. |
+| **Programmausgabe mithilfe von "tee" an Debugausgabefenster senden** | Ein | Zeigt die Programmausgabe sowohl in einem separaten Konsolenfenster als auch im **Ausgabefenster** von Visual Studio an. Deaktivieren Sie diese Option, um die Ausgabe nur im separaten Konsolenfenster anzuzeigen. |
 | **Bei SystemExit-Ausnahme mit Exitcode 0 anhalten** | Aus | Wenn diese Option aktiviert ist, wird der Debugger für diese Option beendet. Wenn diese Option deaktiviert ist, wird der Debugger ohne Unterbrechung beendet. |
 | **Debuggen der Python-Standardbibliothek aktivieren** | Aus | Mit dieser Option ist es möglich, den Quellcode der Standardbibliothek beim Debuggen schrittweise auszuführen. Dadurch dauert das Starten des Debuggers allerdings länger.|
 | **Rückgabewert der Funktion anzeigen** | Ein | *Gilt nur für Visual Studio 2019.* Zeigt den Rückgabewert der Funktion im Fenster **Lokal** beim Durchlaufen eines Funktionsaufrufs im Debugger (F10) an. |
@@ -120,7 +120,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | --- | --- | --- |
 | **Skripts** | n/v | Gibt einen allgemeinen Ordner an, den Startskripts auf **interaktive** Fenster für alle Umgebungen anwenden. Weitere Informationen finden Sie unter [Startskripte](python-environments-window-tab-reference.md#startup-scripts). Beachten Sie, dass diese Funktion im Moment nicht funktioniert. |
 | **NACH-OBEN- und NACH-UNTEN-TASTEN zum Navigieren des Verlaufs** | Ein | Verwenden Sie die Pfeiltasten, um durch den Verlauf im **interaktiven** Fenster zu Navigieren. Deaktivieren Sie diese Einstellung, um die Pfeiltasten stattdessen zum Navigieren der Ausgabe im **interaktiven** Fenster zu verwenden. |
-| **Vervollständigungsmodus** | **Nur Ausdrücke ohne Funktionsaufrufe auswerten** | Für das Bestimmen der verfügbaren Member in einem Ausdruck im **interaktiven** Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung **Nur Ausdrücke ohne Funktionsaufrufe auswerten** schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  **Ausdrücke nie auswerten** verhindert alle Nebenwirkungen, indem nur die gängige IntelliSense-Engine für Vorschläge verwendet wird. **Alle Ausdrücke auswerten** wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
+| **Beendigungsmodus** | **Nur Ausdrücke ohne Funktionsaufrufe auswerten** | Für das Bestimmen der verfügbaren Member in einem Ausdruck im **interaktiven** Fenster ist möglicherweise das Auswerten des aktuellen unvollständigen Ausdrucks notwendig. Dies kann Nebenwirkungen haben oder dazu führen, dass Funktionen mehrmals aufgerufen werden. Die Standardeinstellung **Nur Ausdrücke ohne Funktionsaufrufe auswerten** schließt Ausdrücke aus, die eine Funktion aufrufen, wertet aber andere Ausdrücke aus. Beispielsweise wird `a.b` ausgewertet, `a().b` aber nicht.  **Ausdrücke nie auswerten** verhindert alle Nebenwirkungen, indem nur die gängige IntelliSense-Engine für Vorschläge verwendet wird. **Alle Ausdrücke auswerten** wertet den vollständigen Ausdruck aus, um Vorschläge abzurufen, unabhängig von Nebenwirkungen. |
 | **Vorschläge zur statischen Analyse ausblenden** | Aus | Wenn diese Option aktiviert ist, werden nur Vorschläge angezeigt, die durch das Abrufen von Ausdrücken entstanden sind. Wenn diese Option mit dem Wert **Ausdrücke nie auswerten** für den **Vervollständigungsmodus** kombiniert wird, werden keine brauchbaren Vervollständigungen im **interaktiven** Fenster angezeigt. |
 
 ![Dialogfeld „Python-Optionen“, Registerkarte „Interaktives Fenster“](media/options-interactive-windows.png)
@@ -157,7 +157,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | --- | --- | --- |
 | **Commit bei Eingabe der folgenden Zeichen** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Diese Zeichen folgen üblicherweise auf einen Bezeichner, den Sie aus einer Vervollständigungsliste auswählen können. Deshalb ist es praktisch, die Vervollständigung zu committen, indem Sie einfach ein Zeichen eingeben. Sie können spezifische Zeichen nach Ihren Wünschen einer Liste hinzufügen oder aus dieser entfernen.  |
 | **Bei EINGABE wird die aktuelle Vervollständigung übernommen** | Ein | Wenn diese Option aktiviert ist, wählt die **EINGABETASTE** die aktuell ausgewählte Vervollständigung aus und wendet diese an wie mit den oben stehenden Zeichen (es gibt natürlich kein Zeichen für **EINGABE**, weshalb es nicht direkt in die Liste aufgenommen werden kann). |
-| **Mit Eingabe neue Zeile nach jedem ganzen Wort** | Aus | Wenn Sie das gesamte Wort eingeben, das im Vervollständigungspopupfenster angezeigt wird, und dann **EINGABE** drücken, wird diese Vervollständigung standardmäßig committet. Wenn Sie diese Option festlegen, committen Sie Vervollständigungen mit Abschluss der Eingabe des Bezeichners, sodass **EINGABE** eine neue Zeile einfügt. |
+| **Mit EINGABE neue Zeile nach jedem ganzen Wort** | Aus | Wenn Sie das gesamte Wort eingeben, das im Vervollständigungspopupfenster angezeigt wird, und dann **EINGABE** drücken, wird diese Vervollständigung standardmäßig committet. Wenn Sie diese Option festlegen, committen Sie Vervollständigungen mit Abschluss der Eingabe des Bezeichners, sodass **EINGABE** eine neue Zeile einfügt. |
 
 ### <a name="miscellaneous-options"></a>Sonstige Optionen
 

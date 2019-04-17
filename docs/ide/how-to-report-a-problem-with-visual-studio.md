@@ -1,50 +1,41 @@
 ---
 title: Melden eines Problems mit Visual Studio
-titleSuffix: ''
-description: Erfahren Sie, wie Sie ein Problem mit Visual Studio an Microsoft melden, sodass eine Diagnose durchgeführt und das Problem behoben werden kann.
+description: Erfahren Sie, wie Sie ein Problem mit Visual Studio melden.
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953654"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232540"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Melden eines Problems mit Visual Studio
-
-Wenn ein Problem mit Visual Studio auftritt, möchten wir dies erfahren. So melden Sie das Problem auf der [Developer Community](https://developercommunity.visualstudio.com/)-Website, damit wir eine Diagnose durchführen und uns um die Behebung kümmern können.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Melden eines Problems mit Visual Studio oder Visual Studio-Installer
 
 > [!NOTE]
-> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter[Melden eines Problems in Visual Studio für Mac](/visualstudio/mac/report-a-problem).
+> Informationen zu Visual Studio für Mac finden Sie unter[Melden eines Problems in Visual Studio für Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Melden eines Problems mithilfe von Visual Studio
+Sie können ein Problem in Visual Studio oder dem Installationsprogramm über das darin enthaltene Feedbacktool melden. Mit dem Feedbacktool können Sie ganz einfach Diagnoseinformationen in Ihr Feedback einbeziehen und Visual Studio-Teams dabei unterstützen, Probleme wesentlich effektiver zu diagnostizieren und zu beheben. Im Folgenden finden Sie die Schritte zum Melden eines Problems.
 
-Wenn Sie ein Problem mit Visual Studio melden möchten, müssen Sie den Bericht in Visual Studio oder im Visual Studio-Installer initiieren. Direkt über die [Developer Community](https://developercommunity.visualstudio.com/)-Website ist dies nicht möglich. Erfolgt die Berichterstattung über Visual Studio, sind die Diagnoseinformationen automatisch im Bericht enthalten.
+1. Wählen Sie in **Visual Studio** das Feedback-Symbol in der oberen rechten Ecke und dann „Ein Problem melden“ aus. Sie können das Feedback-Tool auch aus dem Menü **Hilfe** > **Feedback senden** > **Ein Problem melden** aufrufen.
+![Popupfenster „Problem melden“ auf der Visual Studio Developer Community-Website](media/vsfeedbackentry.png) Alternativ können Sie ein Problem im **Visual Studio-Installer** melden, wenn Sie Visual Studio nicht installieren können oder nicht auf das Feedback-Tool in Visual Studio zugreifen können.  Wählen Sie im Installer das Feedback-Symbol in der oberen rechten Ecke und dann „Ein Problem melden“ aus.
+![Popupelement „Problem melden“ auf der Visual Studio Developer Community-Website](media/installer.png)
 
-![Popupelement „Problem melden“ auf der Visual Studio Developer Community-Website](media/report-an-issue.png)
-
-1. Wählen Sie in Visual Studio **Hilfe** > **Feedback senden** > **Problem melden** aus.
-
-   > [!TIP]
-   > Wenn Sie die Installation von Visual Studio nicht abschließen oder nicht auf das Feedbacktool in Visual Studio zugreifen können, können Sie über den **Visual Studio-Installer** ein Problem melden. Klicken Sie hierfür in der rechten oberen Ecke des **Visual Studio-Installers** auf das Feedbacksymbol.
-
-1. Wenn Sie nicht angemeldet sind, wählen Sie auf der rechten Seite des Tools **Anmelden** aus, wie im folgenden Screenshot gezeigt. Befolgen Sie die Anweisungen auf dem Bildschirm für die Anmeldung.
+1. Wenn Sie nicht angemeldet sind, wählen Sie **Anmeldung**, wie im folgenden Screenshot gezeigt. Befolgen Sie die Anweisungen auf dem Bildschirm für die Anmeldung.
 
    ![Anmelden zum Melden eines Problems](../ide/media/sign-in-new-ux.png)
 
-   Wenn Sie sich anmelden, können Sie ein Problem melden und für gepostete Probleme abstimmen oder sie kommentieren.
+   Sie können nicht nur ein Problem melden, wenn Sie angemeldet sind, sondern auch abstimmen und Kommentare zu vorhandenem Feedback abgeben.
 
 1. Nach der Anmeldung werden Ihnen auf dem Bildschirm **Elemente, denen ich folge** die Bereiche **Probleme** und **Aktivität** angezeigt.
 
-    ![Elemente, denen ich folge](../ide/media/items-i-follow.png)
+   ![Elemente, denen ich folge](../ide/media/items-i-follow.png)
 
 1. Visual Studio stellt eine Schnittstelle bereit, über die Sie nach Ihrem Problem suchen und überprüfen können, ob andere es bereits gemeldet haben. Wenn es bereits gemeldet wurde, stimmen Sie dafür, um uns zu informieren.
    > [!NOTE]
@@ -132,7 +123,7 @@ Wenn Sie kein Problem melden, sondern ein Feature vorschlagen möchten, haben Si
 ## <a name="see-also"></a>Siehe auch
 
 * [Sprechen Sie mit uns](../ide/talk-to-us.md)
-* [Vorgehensweise: Melden eines Problems mit Visual Studio für Mac](/visualstudio/mac/report-a-problem)
-* [Melden eines Problems mit dem Visual C++-Toolset oder der -Dokumentation](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
+* [Melden eines Problems mit Visual Studio für Mac](/visualstudio/mac/report-a-problem)
+* [Melden eines Problems mit C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
-* [Developer Community data privacy (Datenschutz in der Entwicklercommunity)](developer-community-privacy.md)
+* [Datenschutz in der Developer Community](developer-community-privacy.md)

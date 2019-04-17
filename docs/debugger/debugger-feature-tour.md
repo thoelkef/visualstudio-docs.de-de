@@ -1,8 +1,8 @@
 ---
-title: Debuggen von Apps mithilfe von Visual Studio
+title: Erster Einblick in den Debugger
 description: Erste Schritte beim Debuggen von Anwendungen mithilfe des Visual Studio-Debuggers
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428686"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366769"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -188,7 +188,7 @@ In diesem Beispiel hat der `DirectoryInfo`-Aufruf den Fehler für eine leere Zei
 Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Debugging techniques and tools (Debugverfahren und Tools)](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Der Ausnahmen-Assistent wurde in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] durch die Ausnahmen-Hilfe ersetzt.
+> Der Ausnahmenassistent wurde in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] durch die Ausnahmenhilfe ersetzt.
 
 Erweitern Sie den Knoten **Ausnahmeeinstellungen**, um weitere Optionen zu diesem Ausnahmetyp anzuzeigen. Für dieses Tutorial müssen Sie dort jedoch keine Änderungen vornehmen.
 
@@ -217,4 +217,4 @@ Weitere Informationen finden Sie auf der Seite [Inspect previous app states usin
 In diesem Tutorial haben Sie einen ersten Einblick in die zahlreichen Features des Debuggers erhalten. Vielleicht sollten Sie sich eines dieser Features genauer ansehen, z. B. Breakpoints.
 
 > [!div class="nextstepaction"]
-> [Learn to use breakpoints (Verwenden von Breakpoints)](../debugger/using-breakpoints.md)
+> [Verwenden von Breakpoints](../debugger/using-breakpoints.md)

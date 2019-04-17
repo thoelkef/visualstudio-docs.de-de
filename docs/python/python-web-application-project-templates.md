@@ -3,19 +3,19 @@ title: Webanwendungsvorlagen für Python
 description: Visual Studio stellt Vorlagen für in Python mithilfe der Bottle-, Flask- und Django-Frameworks erstellte Webanwendungen zur Verfügung. Der Support schließt Debugkonfigurationen und die Veröffentlichung in Azure App Service mit ein.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81684f8069189f6ee3deed48d9f2a6718b01d7b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957899"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366587"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -113,7 +113,7 @@ Die Vorlage **Bottle-Webprojekt** enthält Codebausteine, die die erforderliche 
 
 - Gruppe **Debugserverbefehl**:
   - **Befehl**: `bottle` (Modul)
-  - **Argumente**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumente** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debuggen verwenden.
 
@@ -147,5 +147,5 @@ Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbil
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Python item templates reference (Referenz für Python-Elementvorlagen)](python-item-templates.md)
+- [Referenz für Python-Elementvorlagen](python-item-templates.md)
 - [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

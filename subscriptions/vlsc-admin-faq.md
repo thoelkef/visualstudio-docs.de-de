@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Migration der Volume License Service Center-Verwaltung
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145264"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897659"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration der Verwaltung von Visual Studio-Abonnements
 
@@ -36,7 +36,7 @@ Dies ist ein gewaltiger Übergang, und er wird in Phasen durchgeführt, bis alle
 Ihre Organisation muss sich nicht für Azure AD registrieren, jedoch können Sie dies jederzeit tun. Wenn Sie Azure AD integrieren möchten, können Sie dazu den kostenlosen Free-Tarif für Azure AD nutzen. Mit Azure Active Directory schützen Sie Ihre Organisation mit erhöhter Sicherheit, Kontrolle und langfristiger Zuverlässigkeit. Wenn Sie jedoch noch nicht für Azure AD bereit sind, können Sie weiterhin so wie zurzeit Ihre Microsoft-Konten (MSAs) verwenden.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Wie erfahre ich, wann meine Organisation migriert wird?
-Primäre Kontakte/Ansprechpartner erhalten eine Woche vor der Migration Ihrer Organisation eine E-Mail von uns, mit der Sie zum Durchführen des Onboardingprozesses aufgefordert werden. Abonnement-Manager erhalten ebenfalls eine E-Mail mit der Mitteilung, dass wir die primären Kontakte/Ansprechpartner kontaktiert und Details zur Sicherstellung des erfolgreichen Onboardings bereitgestellt haben. Erfahren Sie, wie Sie [die primären Kontakte/Ansprechpartner Ihrer Organisation finden](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
+Primäre Kontakte/Ansprechpartner erhalten eine Woche vor der Migration Ihrer Organisation eine E-Mail von uns, mit der Sie zum Durchführen des Onboardingprozesses aufgefordert werden. Abonnement-Manager erhalten ebenfalls eine E-Mail mit der Mitteilung, dass wir die primären Kontakte/Ansprechpartner kontaktiert und Details zur Sicherstellung des erfolgreichen Onboardings bereitgestellt haben. Erfahren Sie, wie Sie [die primären Kontakte/Ansprechpartner Ihrer Organisation finden](#how-do-i-find-out-who-my-primary-or-notices-contact-is).
 
 ### <a name="is-onboarding-different-from-migration"></a>Unterscheidet sich das Onboarding von der Migration?
 Ja.  In diesem Prozess gibt es zwei Phasen. Durch das Einrichten (oder Onboarding) Ihrer Organisation vor der Migration wird sichergestellt, dass Ihre Arbeit als Administrator nicht unterbrochen wird. Wenn wir die Informationen Ihrer Organisation migriert haben, können Sie Visual Studio-Abonnements im neuen Portal verwalten. Wenn die primären Kontakte/Ansprechpartner das Onboarding nicht vor der Migration durchführen, wird der Abonnement-Manager blockiert und kann Abonnements nicht verwalten, bis Sie den Onboardingprozess abgeschlossen haben.
@@ -44,7 +44,7 @@ Ja.  In diesem Prozess gibt es zwei Phasen. Durch das Einrichten (oder Onboardin
 ### <a name="what-is-the-onboarding-process"></a>Was ist der Onboardingprozess?
 Eine E-Mail wird an die primären Kontakte und Ansprechpartner gesendet, um sie aufzufordern, den Onboardingprozess durchzuführen.
 Anweisungen für den Prozess finden Sie weiter unten.
-1. **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
+1. **Ermitteln Sie Ihre öffentliche Kundennummer, und melden Sie sich an:**
 
     a. Die E-Mail an die primären Kontakte und Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer öffentlichen Kundennummer (Public Customer Number, PCN).*
 
@@ -54,7 +54,7 @@ Anweisungen für den Prozess finden Sie weiter unten.
 
     d. Als Nächstes müssen sie die PCN eingeben.
 
-2. **Ihre Administratoren einrichten:**
+2. **Richten Sie Ihre Administratoren ein:**
 
     Nach dem Eingeben der PCN wird die Seite aufgerufen, auf sie der Superadministratoren und Administratoren (vormals Abonnement-Manager) hinzufügen können. Im Idealfall sollte dies vor dem Migrationsdatum Ihrer Organisation durchgeführt werden, damit bei der Verwaltung Ihrer Abonnements keine Unterbrechungen auftreten.
 

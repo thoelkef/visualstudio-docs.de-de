@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416265"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897724"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes
 
@@ -144,7 +144,7 @@ Installieren Sie die Komponente **Test der programmierten UI** von Visual Studio
 
 8. Führen Sie den Test aus.
 
-   Verwenden Sie Test-Explorer, oder öffnen Sie das Kontextmenü in der Testmethode, und wählen Sie **Tests ausführen** aus. Weitere Informationen zum Ausführen von Tests finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md) und *Weitere Optionen zum Ausführen von Tests der programmierten UI* im Abschnitt [Ausblick](#whats-next?) am Ende dieses Themas.
+   Verwenden Sie Test-Explorer, oder öffnen Sie das Kontextmenü in der Testmethode, und wählen Sie **Tests ausführen** aus. Weitere Informationen zum Ausführen von Tests finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md) und *Weitere Optionen zum Ausführen von Tests der programmierten UI* im Abschnitt [Ausblick](#whats-next) am Ende dieses Themas.
 
 Die restlichen Abschnitten dieses Themas enthalten weitere Informationen über die Schritte in dieser Prozedur.
 
@@ -307,7 +307,7 @@ Nachdem Sie den Test der programmierten UI erstellt haben, können Sie diesen mi
 
        - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [Supported Configurations and Platforms for Coded UI Tests and Action Recordings (Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen)](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+       - [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>Der generierte Code
 
@@ -445,9 +445,9 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
 
-- [Run tests in your build process (Ausführen von Tests im Buildprozess)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Ausführen von Tests im Buildprozess](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Vorgehensweise: Set up your test agent to run tests that interact with the desktop (Vorgehensweise: Einrichten Ihres Test-Agents zum Ausführen von Tests, die mit dem Desktopcomputer interagieren)](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Hinzufügen der Unterstützung für benutzerdefinierte Steuerelemente:**  Das Framework für den Test der programmierten UI unterstützt nicht alle Benutzeroberflächen und bietet möglicherweise keine Unterstützung für die Benutzeroberfläche, die Sie testen möchten. Zum Beispiel können Sie nicht sofort einen Test der programmierten UI für Microsoft Excel erstellen. Sie können jedoch eine Erweiterung für das Framework für den Test der programmierten UI erstellen, die ein benutzerdefiniertes Steuerelement unterstützt.
 
@@ -462,7 +462,7 @@ Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu autom
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Create a coded UI test to test a UWP app (Erstellen eines Tests der programmierten UI zum Testen einer UWP-App)](test-uwp-app-with-coded-ui-test.md)
+- [Erstellen eines Tests der programmierten UI zum Testen einer UWP-App](test-uwp-app-with-coded-ui-test.md)
 - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
 - [Bewährte Methoden für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
 - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)

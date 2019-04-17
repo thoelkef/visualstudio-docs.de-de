@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867854"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232709"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
 Mit CodeLens können Sie sich auf Ihre Arbeit konzentrieren, während Sie ermitteln, was mit Ihrem Code geschehen ist. Dazu müssen Sie nicht einmal den Editor schließen. Suchen Sie Verweise auf Codeabschnitte und -änderungen, verknüpfte Fehler, Arbeitselemente, Code Reviews und Komponententests.
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Die CodeLens-Indikatoren für die Quellcodeverwaltung sind in der Visual Studio Community Edition nicht verfügbar.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens steht nur in Visual Studio Enterprise- und Visual Studio Professional-Versionen zur Verfügung. Es ist nicht in Visual Studio Community verfügbar.
+> CodeLens steht nur in Visual Studio Enterprise- und Professional-Versionen zur Verfügung. Es ist nicht in Visual Studio Community verfügbar.
 
 ::: moniker-end
 
@@ -60,15 +67,15 @@ Sie können Verweise in C#- oder Visual Basic-Code suchen.
 
 ![CodeLens – Verweise in Codezuordnung](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Suchen nach Änderungen im Code
+## <a name="find-changes-in-your-code"></a>Suchen nach Änderungen im Code
 
 Überprüfen Sie den Codeverlauf, um zu ermitteln, was mit Ihrem Code geschehen ist. Sie können die Änderungen auch überprüfen, bevor sie mit Ihrem Code zusammengeführt werden. Auf diese Weise können Sie besser beurteilen, wie sich Änderungen in anderen Verzweigungen möglicherweise auf Ihren Code auswirken.
 
 Sie benötigen Folgendes:
 
-- Visual Studio-2019 (oder Visual Studio 2017 Enterprise oder Professional Edition)
+- Visual Studio Enterprise- oder Professional-Edition
 
-- Team Foundation Server 2013 oder höher, Azure DevOps Services oder Git
+- Azure DevOps Services, Team Foundation Server 2013 oder höher, Azure DevOps Services oder Git
 
 - [Skype for Business](/skypeforbusiness/) für das Kontaktieren Ihres Teams über den Code-Editor
 
@@ -228,7 +235,7 @@ Sie können weitere Komponententests für Ihren C#- oder Visual Basic-Code ermit
 
      ![CodeLens – Komponententestergebnis anzeigen](../ide/media/codelens-unit-test-result.png)
 
-7. Zum Überprüfen, wie viele Personen diesen Test geändert haben, wer ihn geändert hat oder wie viele Änderungen an diesem Test durchgeführt wurden, [ermitteln Sie den Codeverlauf](#find-code-history) und verknüpfte Elemente.
+7. Zum Überprüfen, wie viele Personen diesen Test geändert haben, wer ihn geändert hat oder wie viele Änderungen an diesem Test durchgeführt wurden, [ermitteln Sie den Codeverlauf](#find-changes-in-your-code) und verknüpfte Elemente.
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -264,6 +271,20 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 - DevOps-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. Stellen Sie sicher, dass Sie über [Teammitgliedsberechtigungen](/azure/devops/organizations/security/view-permissions?view=vsts) verfügen.
 
 - Komponententestindikatoren werden nicht angezeigt, wenn der Anwendungscode nicht über Komponententests verfügt. Teststatusindikatoren werden automatisch in Testprojekten angezeigt. Wenn Sie wissen, dass der Anwendungscode über Komponententests verfügt, die Testindikatoren jedoch nicht angezeigt werden, versuchen Sie, die Projektmappe zu erstellen (**STRG**+**UMSCHALT**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Die Indikatoren für die Quellcodeverwaltung sind in der Visual Studio Community Edition nicht verfügbar.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens ist nicht in Visual Studio Community verfügbar.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Frage: Warum sehe ich keine Arbeitselementdetails für einen Commit?
 
@@ -313,11 +334,11 @@ So verwenden Sie die Tastatur:
 
 - **Verweise**: Dieser Indikator wird bei einer Änderung des Codes automatisch aktualisiert. Wenn der Indikator **Verweise** als separates Fenster angedockt ist, aktualisieren Sie den Indikator, indem Sie auf **Aktualisieren** klicken:
 
-     ![Schaltfläche „Aktualisieren“ in CodeLens-Verweise](../ide/media/codelensviewreferencesdocked.png)
+   ![Schaltfläche „Aktualisieren“ in CodeLens-Verweise](../ide/media/codelensviewreferencesdocked.png)
 
 - **Team**: Aktualisieren Sie diese Indikatoren, indem Sie im Kontextmenü auf **CodeLens-Teamindikatoren aktualisieren** klicken:
 
-     ![Menüelement „CodeLens-Teamindikatoren aktualisieren“](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![Menüelement „CodeLens-Teamindikatoren aktualisieren“](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Test**: [Suchen von Komponententests für Ihren Code](#associated-unit-tests) zum Aktualisieren des **Testindikators**.
 
@@ -336,4 +357,4 @@ So verwenden Sie die Tastatur:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -3,19 +3,19 @@ title: Definieren von benutzerdefinierten Menübefehlen für Python-Projekte
 description: Durch Bearbeiten von Projekt- und TARGETS-Dateien können Sie benutzerdefinierte Befehle zum Kontextmenü des Python-Projekts in Visual Studio hinzufügen, um ausführbare Programme, Skripts, Module, Inline-Codeausschnitte und pip aufzurufen.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943089"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366717"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definieren von benutzerdefinierten Befehlen für Python-Projekte
 

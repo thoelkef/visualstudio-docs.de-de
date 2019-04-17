@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640791"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366756"
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -56,6 +56,10 @@ In der Regel repliziert der lokale Computer die Ausführung der installierten Ap
 
 Der Diagnosebericht wird nach **CPU gesamt** vom höchsten zum niedrigsten Wert sortiert. Ändern Sie die Sortierreihenfolge oder sortieren Sie eine Spalte, indem Sie auf die Spaltenüberschrift klicken. Verwenden Sie die Dropdownliste **Filter**, um das Anzeigen von Threads zu aktivieren bzw. deaktivieren. Verwenden Sie das Feld **Suchen**, um nach einem bestimmten Thread oder Knoten zu suchen.
 
+::: moniker range=">=vs-2019"
+Ab Visual Studio 2019 können Sie auf die Schaltflächen **Langsamsten Pfad erweitern**  und **Langsamsten Pfad anzeigen** klicken, um die Funktionsaufrufe anzuzeigen, die den höchsten Prozentsatz der CPU in der Ansicht der Aufrufstruktur verwenden.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Datenspalten der CPU-Auslastung
 
 |||
@@ -70,7 +74,12 @@ Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knote
 
 ####  <a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur
 
- ![Struktur der Aufrufstruktur](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")
+::: moniker range=">=vs-2019"
+![Struktur der Aufrufstruktur](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Call tree structure")
+::: moniker-end
+::: moniker range="vs-2017"
+![Struktur der Aufrufstruktur](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knote
 
 ####  <a name="BKMK_External_Code"></a> Externer Code
 
- System- und Frameworkfunktionen, die von Ihrem Code ausgeführt werden, werden als *externer Code* bezeichnet. Funktionen mit externem Code starten und beenden die App, zeichnen die Benutzeroberfläche, steuern das Threading und stellen der App weitere Dienste auf unterer Ebene bereit. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die Aufrufstruktur „CPU-Auslastung“ die externen Funktionen einer Benutzermethode in einem **[Externer Code]**-Knoten sammelt.
+System- und Frameworkfunktionen, die von Ihrem Code ausgeführt werden, werden als *externer Code* bezeichnet. Funktionen mit externem Code starten und beenden die App, zeichnen die Benutzeroberfläche, steuern das Threading und stellen der App weitere Dienste auf unterer Ebene bereit. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die Aufrufstruktur „CPU-Auslastung“ die externen Funktionen einer Benutzermethode in einem **[Externer Code]**-Knoten sammelt.
 
- Wählen Sie zum Anzeigen der Aufrufpfade von externem Code auf der Hauptseite des Diagnoseberichts (rechter Bereich) in der Dropdownliste **Filter** die Option **Externen Code anzeigen** aus, und klicken Sie dann auf **Anwenden**. In der Ansicht **Aufrufstruktur** der Seite **CPU-Auslastung** werden dann die externen Codeaufrufe erweitert. (Die Dropdownliste **Filter** finden Sie auf der Hauptdiagnoseseite, nicht in den Detailansichten.)
+Wählen Sie zum Anzeigen der Aufrufpfade von externem Code auf der Hauptseite des Diagnoseberichts (rechter Bereich) in der Dropdownliste **Filter** die Option **Externen Code anzeigen** aus, und klicken Sie dann auf **Anwenden**. In der Ansicht **Aufrufstruktur** der Seite **CPU-Auslastung** werden dann die externen Codeaufrufe erweitert. (Die Dropdownliste **Filter** finden Sie auf der Hauptdiagnoseseite, nicht in den Detailansichten.)
 
- ![Externen Code anzeigen](../profiling/media/cpu_use_wt_filterview.png "Show External Code")
+![Externen Code anzeigen](../profiling/media/cpu_use_wt_filterview.png "Show External Code")
 
- Viele externe Codeaufrufketten sind tief verschachtelt, sodass die Breite der Kette die Anzeigebreite der Spalte **Funktionsname** überschreiten kann. Die Funktionsnamen werden dann als **...** angezeigt.
+Viele externe Codeaufrufketten sind tief verschachtelt, sodass die Breite der Kette die Anzeigebreite der Spalte **Funktionsname** überschreiten kann. Die Funktionsnamen werden dann als **...** angezeigt.
 
- ![Verschachtelter externer Code in der Aufrufstruktur](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")
+![Verschachtelter externer Code in der Aufrufstruktur](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")
 
- Verwenden Sie das Suchfeld, um einen Funktionsnamen zu finden. Zeigen Sie auf die ausgewählte Zeile, oder verwenden Sie die horizontale Scrollleiste, um die Daten anzuzeigen.
+Verwenden Sie das Suchfeld, um einen Funktionsnamen zu finden. Zeigen Sie auf die ausgewählte Zeile, oder verwenden Sie die horizontale Scrollleiste, um die Daten anzuzeigen.
 
- ![Suche nach verschachteltem externem Code](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
+::: moniker range=">=vs-2019"
+![Suche nach verschachteltem externem Code](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "Search for nested external code")
+::: moniker-end
+::: moniker range="vs-2017"
+![Suche nach verschachteltem externem Code](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchrone Funktionen in der Aufrufstruktur der CPU-Auslastung
 

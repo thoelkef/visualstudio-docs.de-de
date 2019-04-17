@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Zusammenfassung der Python-Features in Visual Studio, durch die Visual Studio zur besten Python-IDE unter Windows wird (auch bekannt als Python-Tools für Visual Studio, PTVS).
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195007"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366873"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -98,7 +98,7 @@ Mit Visual Studio können Sie die Komplexität eines Projekts handhaben, währen
 
 Projekt- und Elementvorlagen automatisieren die Einrichtung unterschiedlicher Arten von Projekten und Dateien. Dadurch sparen Sie wertvolle Zeit und müssen komplizierte und fehleranfällige Details nicht mehr verwalten. Visual Studio stellt Vorlagen für Web-, Azure-, Data Science-, Konsolen- und andere Arten von Projekten bereit. Zudem gibt es Vorlagen für Dateien, wie Python-Klassen, Komponententests, Azure-Webkonfigurationen, HTML und sogar Django-Apps.
 
-[![Projekt- und Elementvorlagen für Python in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![PProjekt- und Elementvorlagen für Python in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Weitere Informationen finden Sie unter: 
 
@@ -130,7 +130,7 @@ Weitere Informationen finden Sie unter:
 
 Mit der Profilerstellung wird untersucht, wie Zeit innerhalb der Anwendung aufgewendet wird. Visual Studio unterstützt die Profilerstellung mit CPython-basierten Interpretern und bietet die Möglichkeit, die Leistung zwischen verschiedenen Profilerstellungen zu vergleichen.
 
-[![Visual Studio-Profiler-Ergebnisse für ein Python-Projekt](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VVisual Studio-Profiler-Ergebnisse für ein Python-Projekt](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Weitere Informationen finden Sie unter: 
 

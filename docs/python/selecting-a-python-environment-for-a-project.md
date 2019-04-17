@@ -3,19 +3,19 @@ title: Auswählen eines Python-Interpreters und einer -Umgebung für ein Projekt
 description: Sie können eine bestimmte Python-Umgebung auswählen, einschließlich Anaconda-Umgebungen und virtueller Umgebungen, und auf ein bestimmtes Projekt anwenden.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194962"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366184"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Auswählen einer Python-Umgebung für ein Projekt
 
@@ -42,7 +42,7 @@ Das Kontextmenü des Knotens **Python-Umgebungen** stellt ebenfalls zusätzliche
 | --- | --- |
 | **Virtuelle Umgebung hinzufügen** | Startet den Prozess zum Erstellen einer neuen virtuellen Umgebung im Projekt Weitere Informationen finden Sie unter [Create a virtual environment (Erstellen einer virtuellen Umgebung)](#create-a-virtual-environment). |
 | **Vorhandene virtuelle Umgebung hinzufügen** | Fordert Sie dazu auf, einen Ordner auszuwählen, der eine virtuelle Umgebung enthält, und fügt diese der Liste unter **Python-Umgebungen** hinzu, ohne diese zu aktivieren Weitere Informationen finden Sie unter [Aktivieren einer vorhandenen virtuellen Umgebung](#activate-an-existing-virtual-environment). |
-| **Erstellen einer Conda-Umgebung** | Wechselt zum **Fenster** *Python-Umgebungen*, in dem Sie einen Namen für die Umgebung eingeben und deren Basisinterpreter angeben Weitere Informationen finden Sie unter [Conda-Umgebungen](managing-python-environments-in-visual-studio.md#conda-environments). |
+| **Conda-Umgebung erstellen** | Wechselt zum **Fenster** *Python-Umgebungen*, in dem Sie einen Namen für die Umgebung eingeben und deren Basisinterpreter angeben Weitere Informationen finden Sie unter [Conda-Umgebungen](managing-python-environments-in-visual-studio.md#conda-environments). |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -176,4 +176,4 @@ Beachten Sie auch, dass Visual Studio die Verwendung von `conda` zum Installiere
 - [Verwalten von Python-Umgebungen in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Verwenden von „requirements.txt“ für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
 - [Suchpfade](search-paths.md)
-- [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)
+- [Referenz zum Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)

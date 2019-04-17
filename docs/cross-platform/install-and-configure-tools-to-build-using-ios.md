@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070642"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897581"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
@@ -70,7 +70,7 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
 Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
 
-Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#Prerequisites) vorhanden sind und [Visual C++ für die plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) installiert ist.
+Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#prerequisites) vorhanden sind und [Visual C++ für die plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) installiert ist.
 
 ###  <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten
 
@@ -236,4 +236,4 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Installieren der plattformübergreifenden Mobile-Entwicklung mit Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
