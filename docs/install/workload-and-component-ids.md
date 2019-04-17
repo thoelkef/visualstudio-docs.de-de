@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b96088a2107ae826067287aee9f306aa0f590329
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324038"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018297"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Arbeitsauslastung und Komponenten-IDs von Visual Studio
 
@@ -31,7 +31,7 @@ Klicken Sie auf die Namen der Editionen in der folgenden Tabelle, um die Workloa
 
 **Für [Release 15.9](/visualstudio/releasenotes/vs2017-relnotes/) aktualisiert**
 
-| **Edition** | **ID** | **Beschreibung** |
+| **Edition** | **Id** | **Beschreibung** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Microsoft DevOps-Lösung für die Produktivität und Koordination über Teams jeglicher Größe hinweg. |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Professionelle Entwicklertools und -dienste für kleine Teams. |
@@ -50,9 +50,9 @@ Weitere Informationen zur Verwendung dieser Listen finden Sie auf der Seite [Ver
 
 ::: moniker range="vs-2019"
 
-**Wurde für [Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/) aktualisiert**
+**Aktualisiert für [Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/)**
 
-| **Edition** | **ID** | **Beschreibung** |
+| **Edition** | **Id** | **Beschreibung** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | Microsoft DevOps-Lösung für die Produktivität und Koordination über Teams jeglicher Größe hinweg. |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Professionelle Entwicklertools und -dienste für kleine Teams. |
@@ -63,6 +63,9 @@ Weitere Informationen zur Verwendung dieser Listen finden Sie auf der Seite [Ver
 | [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Verteilt automatisierte Tests auf mehrere Computer. |
 
 Weitere Informationen zur Verwendung dieser Listen finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) und der Seite [How to: Migrate Extensibility Projects to Visual Studio (Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019).
+
+> [!NOTE]
+> Eine Liste der Workload- und Komponenten-IDs für die Vorgängerversion finden Sie unter [Visual Studio 2017 Workload- und Komponenten-IDs](workload-and-component-ids.md?view=vs-2017).
 
 ::: moniker-end
 

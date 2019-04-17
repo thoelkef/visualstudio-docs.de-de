@@ -3,19 +3,19 @@ title: 'Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code'
 description: In diesem Schnellstart erstellen Sie mithilfe einer geeigneten Vorlage ein Visual Studio-Projekt für Python aus einem vorhandenen Ordner.
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 56660aaa920fc5813f73bfcc9c191ee0baafb113
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354923"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365105"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 03/19/2019
 ms.locfileid: "58152076"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Bestimmt, ob ein just-in-Time (JIT)-Debugger zu dumm Auto-Debug-Hosts registriert ist.  
+Ermittelt, ob ein JIT-Debugger (Just-in-Time) für das automatische Debuggen von Dumb-Hosts registriert ist.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -37,10 +37,10 @@ BOOL FIsAutoJitDebugEnabled();
  Diese Methode akzeptiert keine Parameter.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Die Methode gibt zurück, wenn die Methode erfolgreich ist, und ein JIT-Debugger ist zu dumm Auto-Debug-Hosts registriert, `TRUE`. Andernfalls wird `FALSE`zurückgegeben.  
+ Wenn die Methode erfolgreich ist und ein JIT-Debugger für das automatische Debuggen von Dumb-Hosts registriert ist, gibt die Methode `TRUE` zurück. Andernfalls wird `FALSE`zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Methode wird bestimmt, ob ein JIT-Debugger zu dumm Auto-Debug-Hosts registriert ist.  
+ Diese Methode ermittelt, ob ein JIT-Debugger für das automatische Debuggen von Dumb-Hosts registriert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)

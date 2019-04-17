@@ -46,6 +46,6 @@ Macht nicht-Remote-debuggingmethoden für die Verwendung von Sprach-Engines und 
 |[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Wird ausgelöst, ein generisches Ereignisses des Debuggers `IApplicationDebugger` Schnittstelle.|  
 |[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung über den Fehler an den Debugger-IDE.|  
 |[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Bestimmt, ob ein just-in-Time (JIT)-Debugger registriert ist.|  
-|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Bestimmt, ob ein JIT-Debugger zu dumm Auto-Debug-Hosts registriert ist.|  
+|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Ermittelt, ob ein JIT-Debugger (Just-in-Time) für das automatische Debuggen von Dumb-Hosts registriert ist.|  
 |[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Diese Anwendung hinzugefügt einen globalen anwendungsausdrücken Kontextanbieter.|  
 |[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Entfernt einen globalen anwendungsausdrücken Kontextanbieter aus dieser Anwendung an.|

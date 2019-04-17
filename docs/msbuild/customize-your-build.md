@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610332"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584310"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>Anpassen Ihres Builds (C#, Visual Basic)
+# <a name="customize-your-build"></a>Anpassen Ihres Builds
 
 MSBuild-Projekte, die den Standardbuildprozess verwenden und *Microsoft.Common.props* und *Microsoft.Common.targets* importieren, beinhalten einige Erweiterungsmöglichkeiten, die zum Anpassen Ihres Buildprozesses verwendet werden können.
 

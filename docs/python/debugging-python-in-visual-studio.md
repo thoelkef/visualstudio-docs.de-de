@@ -3,19 +3,19 @@ title: Debuggen von Python-Code
 description: Visual Studio bietet umfassendes Debugging für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151361"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366496"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -68,7 +68,7 @@ Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene M�
 
 | Feature | Tastatureingabe | Beschreibung |
 | --- | --- | --- |
-| **Continue** | **F5** | Führt den Code aus, bis der nächste Haltepunkt erreicht ist. |
+| **Weiter** | **F5** | Führt den Code aus, bis der nächste Haltepunkt erreicht ist. |
 | **Einzelschritt** | **F11** | Führt die nächste Anweisung aus und hält an. Wenn die nächste Anweisung ein Funktionsaufruf ist, hält der Debugger in der ersten Zeile der aufgerufenen Funktion an. |
 | **Prozedurschritt** | **F10** | Führt die nächste Anweisung aus, einschließlich des Aufrufs einer Funktion (sämtlicher Code wird ausgeführt) und der Anwendung von möglichen Rückgabewerten. Mit Prozedurschritten können Sie problemlos Funktionen überspringen, die Sie nicht debuggen müssen. |
 | **Ausführen bis Rücksprung** | **UMSCHALT**+**F11** | Führt Code bis zum Ende der aktuellen Funktion aus und springt dann zur aufrufenden Anweisung.  Dieser Befehl ist hilfreich, wenn Sie den Rest der aktuellen Funktion nicht debuggen müssen. |
@@ -134,7 +134,7 @@ Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartpr
 
 | Option | Beschreibung |
 | --- | --- |
-| **Python-Standardstartprogramm** | Verwendet in portierbarem Python geschriebenen Debugcode, der mit CPython, IronPython und Varianten wie Stackless Python kompatibel ist. Diese Option bietet die beste Leistung für das Debuggen von reinem Python-Code. Beim Anfügen an einen ausgeführten *python.exe*-Prozess wird dieses Startprogramm verwendet. Dieses Startprogramm ermöglicht auch das [Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) für CPython, mit dem Sie nahtlos zwischen C/C++-Code und Python-Code wechseln können. |
+| **Python-Standardstartprogram** | Verwendet in portierbarem Python geschriebenen Debugcode, der mit CPython, IronPython und Varianten wie Stackless Python kompatibel ist. Diese Option bietet die beste Leistung für das Debuggen von reinem Python-Code. Beim Anfügen an einen ausgeführten *python.exe*-Prozess wird dieses Startprogramm verwendet. Dieses Startprogramm ermöglicht auch das [Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) für CPython, mit dem Sie nahtlos zwischen C/C++-Code und Python-Code wechseln können. |
 | **Webstartprogramm** | Startet Ihren Standardbrowser und ermöglicht das Debuggen von Vorlagen. Im Abschnitt [Debuggen von Webvorlagen](python-web-application-project-templates.md#debugging) finden Sie weitere Informationen. |
 | **Django-Webstartprogramm** | Ist mit dem Webstartprogramm identisch und wird nur aus Gründen der Abwärtskompatibilität aufgeführt. |
 | **IronPython-Startprogramm (.NET)** | Verwendet den .NET-Debugger, der nur mit IronPython funktioniert, aber das Wechseln zwischen Projekten in beliebigen .NET-Sprachen ermöglicht, einschließlich C# und VB. Dieses Startprogramm wird beim Anfügen an einen ausgeführten .NET-Prozess verwendet, der IronPython hostet. |
@@ -163,7 +163,7 @@ Das **Fenster zum interaktiven Debuggen** unterstützt zusätzlich zu den [REPL-
 
 | Befehl | Argumente | Beschreibung |
 | --- | --- | --- |
-| `$continue`, `$cont`, `$c` | Startet die Ausführung des Programms ab der aktuellen Anweisung. |
+| `$continue`ist `$cont`ist `$c` | Startet die Ausführung des Programms ab der aktuellen Anweisung. |
 | `$down`, `$d` | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach unten. |
 | `$frame` | | Zeigt die aktuelle Rahmen-ID an.
 | `$frame` | frame id | Legt den aktuellen Rahmen auf die angegebene Rahmen-ID fest.
@@ -171,14 +171,14 @@ Das **Fenster zum interaktiven Debuggen** unterstützt zusätzlich zu den [REPL-
 | `$proc` |  | Zeigt die aktuelle Prozess-ID an. |
 | `$proc` | process id | Legt den aktuellen Prozess auf die angegebene Prozess-ID fest. |
 | `$procs` | | Führt die aktuell im Debugmodus befindlichen Prozesse auf. |
-| `$stepin`, `$step`, `$s` | Springt in den nächsten Funktionsaufruf, wenn möglich. |
-| `$stepout`, `$return`, `$r` | Springt aus der aktuellen Funktion heraus. |
-| `$stepover`, `$until`, `$unt` | Springt über den nächsten Funktionsaufruf. |
+| `$stepin`ist `$step`ist `$s` | Springt in den nächsten Funktionsaufruf, wenn möglich. |
+| `$stepout`ist `$return`ist `$r` | Springt aus der aktuellen Funktion heraus. |
+| `$stepover`ist `$until`ist `$unt` | Springt über den nächsten Funktionsaufruf. |
 | `$thread` | | Zeigt die aktuelle Thread-ID an. |
 | `$thread` | Thread-ID | Legt den aktuellen Thread auf die angegebene Thread-ID fest. |
 | `$threads` | | Führt die aktuell im Debugmodus befindlichen Threads auf. |
 | `$up`, `$u` | | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach oben. |
-| `$where`, `$w`, `$bt` | Führt die Rahmen für den aktuellen Thread auf. |
+| `$where`ist `$w`ist `$bt` | Führt die Rahmen für den aktuellen Thread auf. |
 
 Beachten Sie, dass die standardmäßigen Debuggerfenster wie **Prozesse**, **Threads** und **Aufrufliste** nicht mit dem **Fenster zum interaktiven Debuggen** synchronisiert werden. Das Ändern des aktiven Prozesses, Threads oder Frames im **Fenster zum interaktiven Debuggen** wirkt sich nicht auf die anderen Debuggerfenster aus. Entsprechend gilt: Das Ändern des aktiven Prozesses, Threads oder Frames in anderen Debuggerfenster wirkt sich nicht auf das **Fenster zum interaktiven Debuggen** aus.
 

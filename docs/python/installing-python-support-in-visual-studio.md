@@ -3,19 +3,19 @@ title: Installieren von Python-Unterstützung
 description: Informationen zum Installieren von Python Tools für Visual Studio (PTVS) in Visual Studio 2017, 2015, 2013, 2012 und 2010, einschließlich Optionen und Installationsspeicherorten.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ce4963f753498ff4c43b92b0b59fbfae25a45315
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355538"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366237"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Installieren von Python-Unterstützung für Visual Studio unter Windows
 
@@ -74,9 +74,9 @@ Wenn die Python-Unterstützung nach Ausführung der Installationsschritte schnel
     | Python-Verteilungen | Wählen Sie eine beliebige Kombination der verfügbaren Optionen wie 32-Bit- und 64-Bit-Varianten der Python 2-, Python 3-, Miniconda-, Anaconda2- und Anaconda3-Verteilungen aus, mit denen Sie arbeiten möchten. Jede enthält den Interpreter, die Runtime und die Bibliotheken der Verteilung. Bei Anaconda handelt es sich um eine offene Data Science-Plattform, die eine große Auswahl an vorinstallierten Paketen enthält. (Sie können jederzeit zum Visual Studio-Installer zurückkehren, um Verteilungen hinzuzufügen oder zu entfernen.)  **Hinweis:** Wenn Sie eine Distribution außerhalb des Visual Studio-Installers installiert haben, muss die entsprechende Option hier nicht aktiviert werden. Visual Studio erkennt vorhandene Python-Installationen automatisch. Weitere Informationen finden Sie im [Fenster „Python-Umgebungen“](managing-python-environments-in-visual-studio.md#the-python-environments-window). Wenn eine neuere Version von Python als im Installationsprogramm angezeigt verfügbar ist, können Sie diese Version separat installieren, und Visual Studio erkennt sie. |
     | **Unterstützung von Cookiecutter-Vorlagen** | Installiert die grafische Benutzeroberfläche von Cookiecutter, um Vorlagen zu ermitteln, Vorlagenoptionen einzugeben und Projekte und Dateien zu erstellen. Weitere Informationen finden Sie unter [Verwenden der Cookiecutter-Erweiterung](using-python-cookiecutter-templates.md). |
     | **Webunterstützung für Python** | Installiert Tools für die Webentwicklung einschließlich der Bearbeitungsunterstützung für HTML, CSS und JavaScript sowie Vorlagen für Projekte, die Bottle-, Flask- und Django-Frameworks verwenden. Weitere Informationen finden Sie unter [Python-Webprojektvorlagen](python-web-application-project-templates.md). |
-    | **IoT-Unterstützung für Python** | Unterstützt die Windows IoT Core-Entwicklung mithilfe von Python. |
+    | **Python IoT-Unterstützung** | Unterstützt die Windows IoT Core-Entwicklung mithilfe von Python. |
     | **Native Python-Entwicklungstools** | Installiert den C++-Compiler und andere erforderliche Komponenten, um native Erweiterungen für Python zu entwickeln. Weitere Informationen finden Sie unter [Erstellen einer C++-Erweiterung für Python](working-with-c-cpp-python-in-visual-studio.md). Installieren Sie außerdem die Workload **Desktopentwicklung mit C++**, um über volle Unterstützung für C++ zu verfügen. |
-    | **Kerntools für Azure Cloud Services** | Bietet zusätzliche Unterstützung für Azure Cloud Services-Entwickler in Python. Weitere Informationen finden Sie unter [Projekte für Azure Cloud Services](python-azure-cloud-service-project-template.md). |
+    | **Azure Cloud Services-Kerntools** | Bietet zusätzliche Unterstützung für Azure Cloud Services-Entwickler in Python. Weitere Informationen finden Sie unter [Projekte für Azure Cloud Services](python-azure-cloud-service-project-template.md). |
 
 1. Nach der Installation bietet der Installer Optionen für das Ändern, Starten, Reparieren oder Deinstallieren von Visual Studio. Die Schaltfläche **Ändern** ändert sich zu **Aktualisieren**, wenn Updates für die installierten Komponenten von Visual Studio verfügbar sind. (Die Option **Ändern** ist anschließend im Dropdownmenü verfügbar.) Sie können Visual Studio und den Installer ebenfalls über das Windows-Menü **Start** starten, indem Sie nach „Visual Studio“ suchen.
 

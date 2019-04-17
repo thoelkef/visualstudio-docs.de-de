@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355259"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897594"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
@@ -59,14 +59,16 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 1. Erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Vue.js** ein, und wählen Sie dann **Einfache Vue.js-Webanwendung** (entweder JavaScript oder TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Grundlegende Vue.js** ein, und wählen Sie dann **Grundlegende Vue.js-Webanwendung** (entweder JavaScript oder TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+
+    ![Vue.js-Vorlage](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **JavaScript** oder **TypeScript**, und wählen Sie dann **Node.js** aus. Wählen Sie im mittleren Bereich **Grundlegende Vue.js-Webanwendung** und anschließend **OK**.
-    ::: moniker-end
-    Wenn die Projektvorlage **Grundlegende Vue.js-Webanwendung** nicht angezeigt wird, müssen Sie die Workload für die **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 
     ![Vue.js-Vorlage](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Wenn die Projektvorlage **Grundlegende Vue.js-Webanwendung** nicht angezeigt wird, müssen Sie die Workload für die **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 
     Visual Studio erstellt daraufhin das neue Projekt. Das neue Projekt wird im Projektmappen-Explorer geöffnet (im rechten Bereich).
 
@@ -128,4 +130,4 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
 - Sehen Sie sich das [Tutorial zu Node.js und Express](../nodejs/tutorial-nodejs.md) an.
 - Sehen Sie sich das [Tutorial zu Node.js und React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx) an.
-- [Deploy the app to Linux App Service (Bereitstellen der App für Linux App Service)](../javascript/publish-nodejs-app-azure.md)
+- [Bereitstellen der App für Linux App Service](../javascript/publish-nodejs-app-azure.md)

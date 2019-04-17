@@ -77,3 +77,5 @@
 # [Problembehandlung](troubleshooting.md)
 ## [Programm zur Verbesserung der Visual Studio-Benutzerfreundlichkeit](visual-studio-experience-improvement-program.md)
 ## [Report a Problem (Melden eines Problems)](report-a-problem.md)
+## [Problembehandlung: Warum kann ich nicht alle Vorlagen anzeigen?](troubleshooting-no-templates.md)
+## [Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten](updater-troubleshooting.md)

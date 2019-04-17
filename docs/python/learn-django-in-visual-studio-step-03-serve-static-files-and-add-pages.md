@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Eine exemplarische Vorgehensweise der Grundlagen von Django im Kontext von Visual Studio-Projekten, die zeigt, wie Sie statische Dateien bereitstellen, Seiten zur App hinzufügen, und die Vorlagenvererbung verwenden
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e649dd6b802f99c73b99e5980039d0fef6e5a86f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957246"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365703"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
@@ -275,7 +275,7 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Use the full Django Web Project template (Verwenden Sie die vollständige Vorlage „Django-Webprojekt“)](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Verwenden der vollständigen Vorlage „Django-Webprojekt“](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354842"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504223"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 
@@ -28,7 +28,7 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
 1. Öffnen Sie Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie **Vorlagen** und dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie **Vorlagen** und dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Web** aus, und wählen Sie dann im mittleren Bereich **ASP.NET Core-Webanwendung** aus. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
@@ -99,7 +99,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
 
-Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `return c2`, bis die grüne Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und klicken Sie dann auf diese****.
+Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `return c2`, bis die grüne Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und klicken Sie dann auf diese.
 
 ![Ausführen bis Klick](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
@@ -138,4 +138,4 @@ Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von 
 In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
-> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

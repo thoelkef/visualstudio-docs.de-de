@@ -3,19 +3,19 @@ title: Verwenden der CookieCutter-Vorlagen für Python
 description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354746"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366314"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -82,7 +82,7 @@ Cookiecutter-Optionen stehen über **Extras** > **Optionen** > **Cookiecutter** 
 | Option | Beschreibung |
 | --- | --- |
 | **URL des empfohlenen Feeds** | Der Speicherort des empfohlenen Vorlagenfeeds. Hierbei kann es sich um eine URL oder den Pfad zu einer lokalen Datei handeln. Lassen Sie die URL leer, um den standardmäßigen, von Microsoft kuratierten Feed zu verwenden. Der Feed bietet eine einfache, durch Zeilenumbrüche getrennte Liste mit Vorlagenspeicherorten. Um Änderungen am kuratierten Feed anzufordern, führen Sie eine Pullanforderung in der [Quelle in GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) aus. |
-| **Anzeigen von Hilfe** | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
+| **Hilfe anzeigen** | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Optimieren von Cookiecutter-Vorlagen für Visual Studio
 

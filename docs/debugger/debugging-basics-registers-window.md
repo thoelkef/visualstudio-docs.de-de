@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685052"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584518"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Über das Fenster "Register" in Visual Studio (C#, C++, Visual Basic F#)
 
@@ -47,8 +47,24 @@ Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Di
  Das Fenster **Register** bietet neben der Anzeige des Registerinhalts jedoch noch weitere Vorteile. Wenn Sie sich im Unterbrechungsmodus befinden, können Sie im nativen Code auf den Inhalt eines Registers klicken und den jeweiligen Wert bearbeiten. Dies sollten Sie jedoch nicht willkürlich machen. Solange Sie das zu bearbeitende Register und die darin enthaltenen Daten nicht vollständig verstehen, werden achtlose Bearbeitungen vermutlich einen Systemabsturz oder andere unerwünschte Konsequenzen zur Folge haben. Leider würden detailliertere Erklärungen der Registergruppen der verschiedenen Intel- bzw. Intel-kompatiblen Prozessoren den Rahmen dieser kurzen Einführung sprengen.
 
 ## <a name="register-groups"></a>Registergruppen
- Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** in Gruppen organisiert. Wenn Sie mit der rechten Maustaste in das Fenster **Register** klicken, wird ein Kontextmenü mit einer Liste von Gruppen geöffnet, die Sie je nach Bedarf ein- oder ausblenden können.
+
+Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** in Gruppen organisiert. Wenn Sie mit der rechten Maustaste in das Fenster **Register** klicken, wird ein Kontextmenü mit einer Liste von Gruppen geöffnet, die Sie je nach Bedarf ein- oder ausblenden können.
+
+## <a name="register-flags"></a>Registrieren von flags
+
+X86-Intel-Prozessoren können finden Sie in der folgenden Flags der **registriert** Fenster. Während einer Debugsitzung können Sie auch diese Flags bearbeiten.
+
+|Flag|Wert festlegen|
+|-|-|
+|Überlauf|OV = 1|
+|Richtung|UP = 1|
+|Interrupt|EI = 1|
+|Sign|PL = 1|
+|Zero|ZR = 1|
+|Zusätzliche carry|AC = 1|
+|Parität|PE = 1|
+|Ausführen|CY = 1|
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)
+- [Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

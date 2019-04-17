@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415213"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018219"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
 
@@ -31,7 +31,7 @@ Es gibt mehrere Tools, die Sie zum Erkennen und Verwalten von Visual Studio-Inst
 
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten können:
 
-* [VSWhere](https://github.com/microsoft/vswhere): eine ausführbare Datei, die entweder in Visual Studio integriert oder zur separaten Verteilung verfügbar ist und Ihnen dabei hilft, die Speicherorte aller Visual Studio-Instanzen auf einem bestimmten Computer zu finden.
+* [vswhere](https://github.com/microsoft/vswhere): eine ausführbare Datei, die entweder in Visual Studio integriert oder zur separaten Verteilung verfügbar ist und Ihnen dabei hilft, die Speicherorte aller Visual Studio-Instanzen auf einem bestimmten Computer zu finden.
 * [vssetup.powershell:](https://github.com/microsoft/vssetup.powershell) PowerShell-Skripts, die mithilfe der Setupkonfigurations-API installierte Visual Studio-Instanzen ermitteln.
 * [vs-setup-samples:](https://github.com/microsoft/vs-setup-samples) C#- und C++-Beispiele, die veranschaulichen, wie Sie eine vorhandene Installation mit der Setupkonfigurations-API abfragen.
 
@@ -39,7 +39,7 @@ Darüber hinaus stellt die [Setupkonfigurations-API](<xref:Microsoft.VisualStudi
 
 ## <a name="using-vswhereexe"></a>Verwenden von „vswhere.exe“
 
-`vswhere.exe` wird in Visual Studio (ab Visual Studio 2017, Version 15.2, und höheren Versionen) automatisch eingeschlossen, alternativ können Sie sie von der [VSWhere-Releaseseite](https://github.com/Microsoft/vswhere/releases) herunterladen. Verwenden Sie `vswhere -?`, um Hilfeinformationen zum Tool zu erhalten. Dieser Befehl zeigt beispielsweise alle Releases von Visual Studio, einschließlich früherer Produktversionen und Vorabversionen, und gibt die Ergebnisse im JSON-Format zurück:
+`vswhere.exe` wird in Visual Studio (ab Visual Studio 2017, Version 15.2 und höheren Versionen) automatisch eingeschlossen, alternativ können Sie sie von [der vswhere-Releaseseite](https://github.com/Microsoft/vswhere/releases) herunterladen. Verwenden Sie `vswhere -?`, um Hilfeinformationen zum Tool zu erhalten. Dieser Befehl zeigt beispielsweise alle Releases von Visual Studio, einschließlich früherer Produktversionen und Vorabversionen, und gibt die Ergebnisse im JSON-Format zurück:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json

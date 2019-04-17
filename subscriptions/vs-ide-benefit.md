@@ -1,20 +1,20 @@
 ---
 title: Visual Studio IDE-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789886"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018141"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Verwenden des Visual Studio 2017-Vorteils
+# <a name="using-the-visual-studio-2019-benefit"></a>Verwenden des Visual Studio 2019-Vorteils
 
 Als Visual Studio-Abonnent haben Sie Zugriff auf die Visual Studio-IDE.  Die genaue Version richtet sich nach der Stufe Ihres Abonnements.  Der Vorteil wird auf der Seite [Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) im Abonnentenportal als Kachel in der Kategorie „Tools“ (Extras) angezeigt.
 
@@ -29,7 +29,7 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
    > [!div class="mx-imgBorder"]
    > ![Kachel „Visual Studio Enterprise“](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Sie werden auf die Seite „Downloadergebnisse“ für Visual Studio Enterprise umgeleitet. Dort können Sie die IDE herunterladen und den Produktschlüssel für die Aktivierung abrufen. Sie können einen Product Key auch anfordern, indem Sie auf den blauen Link **Schlüssel abrufen** klicken, oder den Schlüssel später auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) anfordern.
+3. Sie werden auf die Seite „Downloadergebnisse“ für Visual Studio umgeleitet. Dort können Sie die IDE herunterladen und den Produktschlüssel für die Aktivierung abrufen. Sie können einen Product Key auch anfordern, indem Sie auf den blauen Link **Schlüssel abrufen** klicken, oder den Schlüssel später auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) anfordern.
 4. Führen Sie auf der Registerkarte „Details“ der Seite „Downloadergebnisse“ folgende Schritte aus:
    - Wählen Sie die gewünschte Architektur (x86, x64) aus.
    - Wählen Sie Ihre bevorzugte Sprache aus.

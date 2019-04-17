@@ -3,19 +3,19 @@ title: Verwenden von Python-Suchpfaden
 description: In Visual Studio wird eine spezifischere Möglichkeit zum Festlegen der Suchpfade für Umgebungen und Projekte bereitgestellt, um die Verwendung von systemweiten Variablen zu vermeiden.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147734"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365339"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Verwenden von Python-Suchpfaden in Visual Studio
 
@@ -51,4 +51,4 @@ Dateien mit einer *ZIP*- oder *EGG*-Erweiterung können ebenfalls als Suchpfade 
 - [Verwalten von Python-Umgebungen in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)
 - [Verwenden von „requirements.txt“ für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
-- [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)
+- [Referenz zum Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)

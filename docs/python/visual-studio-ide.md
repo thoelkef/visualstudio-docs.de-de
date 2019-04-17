@@ -3,26 +3,26 @@ title: Überblick über Visual Studio für Python-Entwickler
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354745"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365729"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform für Python (und andere Sprachen), die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu testen und die App anschließend zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und dem Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Codevervollständigungstools, interaktive REPL-Umgebungen und weitere Features zur Erleichterung der Softwareentwicklung.
 
-[![Visual Studio mit einem Python-Projekt](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![VVisual Studio mit einem Python-Projekt(media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und einigen wichtigen Toolfenstern, die Sie wahrscheinlich verwenden:
 
@@ -56,7 +56,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ![Membervervollständigung mit Visual Studio IntelliSense](media/code-editing-completions-simple.png)
 
-- [Refactoring](refactoring-python-code.md)
+- [Umgestaltung](refactoring-python-code.md)
 
    Wenn Sie mit der rechten Maustaste auf den Code klicken und **Schnellaktionen und Refactorings...** auswählen, stellt Visual Studio Vorgänge wie das intelligente Umbenennen von Variablen, das Extrahieren von Codezeilen in eine neue Methode und das Ändern der Reihenfolge von Methodenparametern zur Verfügung.
 
@@ -68,11 +68,11 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ![PyLint-Befehl im Kontextmenü für Python-Projekte](media/code-pylint-command.png)
 
-- [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Suchfeld
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld **Schnellstart** finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert **Schnellstart** Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
 
-   ![Suchfeld „Schnellstart“ in Visual Studio](media/tour-ide-quick-launch.png)
+   ![Suchfeld in Visual Studio](media/tour-ide-quick-launch.png)
 
 - Wellenlinien und [schnelle Aktionen](../ide/quick-actions.md)
 
@@ -118,7 +118,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
     ![Leistungsbericht für Profilerstellung](media/profiling-results.png)
 
-- [Komponententests](unit-testing-python-in-visual-studio.md)
+- [Unittests](unit-testing-python-in-visual-studio.md)
 
     Visual Studio unterstützt das Ermitteln, Ausführen und Debuggen von Komponententests in der IDE.
 

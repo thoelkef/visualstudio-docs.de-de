@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: fa9547aad720567e2f62d3fde1248504c4849e11
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355512"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790640"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Informationen zum Debuggen von Visual Basic-Code mit Visual Studio
 
@@ -56,7 +56,7 @@ Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen,
 1. Öffnen Sie Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Visual Basic** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, einen Namen wie **Erste-Schritte-Debuggen** ein, und wählen Sie dann **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Visual Basic** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, einen Namen wie **Erste-Schritte-Debuggen** ein, und wählen Sie dann **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual Basic** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus. Geben Sie dann einen Namen ein, z.B. **Erste-Schritte-Debuggen**, und klicken Sie auf **OK**.
