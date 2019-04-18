@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897737"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584401"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 
@@ -416,7 +416,7 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
  fügt alle Dateien mit der Dateierweiterung *JPEG* im Ordner *images* dem Photos-Elementtyp hinzu, während
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  alle Dateien mit der Dateierweiterung *JPEG* im Ordner *images* und allen Unterordnern dem Photos-Elementtyp hinzufügt. Weitere Beispiele finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).
@@ -428,7 +428,7 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
 <Photos Include="images\*.gif" />
 ```
 
- erstellt den Elementtyp „Photo“ mit allen Dateien im Ordner *image*, die die Dateierweiterung *JPEG* oder *GIF* aufweisen. Dies entspricht der folgenden Zeile:
+ erstellt den Elementtyp „Photo“ mit allen Dateien im Ordner *images*, die die Dateierweiterung *JPEG* oder *GIF* aufweisen. Dies entspricht der folgenden Zeile:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
