@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018154"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477540"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -34,10 +34,10 @@ Visual Studio 2019 bietet branchenführende Tools und Dienste für jeden Entwick
 Im Folgenden erhalten Sie einen allgemeinen Überblick über die Neuheiten:
 
 * **[Entwickeln:](#develop)** Arbeiten Sie fokussiert und effizient mit verbesserter Leistung, sofortiger Codebereinigung und besseren Suchergebnissen.
-* **[Zusammenarbeiten:](#collaborate)** Profitieren Sie von intuitiver Zusammenarbeit über einen Cloud-First-Workflow, Bearbeitung und Debuggen in Echtzeit sowie von Code Reviews direkt in Visual Studio.
+* **[Zusammenarbeiten:](#collaborate)** Profitieren Sie von intuitiver Zusammenarbeit über einen Git-First-Workflow, Bearbeitung und Debuggen in Echtzeit sowie von Code Reviews direkt in Visual Studio.
 * **[Debuggen:](#debug)** Heben Sie bestimmte Werte hervor, oder navigieren Sie zu diesen, optimieren Sie die Arbeitsspeichernutzung, und erstellen Sie automatische Momentaufnahmen von der Ausführung Ihrer Anwendung.
 
-Eine ausführliche Liste aller Neuheiten in dieser Version finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes/). 
+Eine ausführliche Liste aller Neuheiten in dieser Version finden Sie in den [Versionshinweisen](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Entwicklung
 
@@ -55,11 +55,11 @@ Mit der neuen unscharfen Suchlogik finden Sie die gewünschten Ergebnisse, auch 
 
 ### <a name="refactorings"></a>Refactorings
 
-Mithilfe der neuen C#-Refactorings wird die Organisation Ihres Codes noch einfacher. Rufen Sie die Refactorings einfach auf, indem Sie **STRG+.** drücken und die Aktion auswählen, die Sie ausführen möchten. 
+In C# gibt es viele neue und sehr nützliche Refactorings, die das Organisieren Ihres Codes vereinfachen. Sie werden als Vorschläge in der Glühbirne angezeigt und enthalten Aktionen, um beispielsweise Member in die Schnittstelle oder die Basisklasse zu verschieben, Namespaces anzupassen, sodass Sie einer Ordnerstruktur entsprechen, oder um Foreach-Schleifen in LINQ-Abfragen zu konvertieren usw.
 
    ![Animation: Die neuen Refactorings in Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Viele neue Refactorings wurden hinzugefügt, darunter eines, mit dem Sie Methodenparameter umschließen können.
+Rufen Sie die Refactorings einfach auf, indem Sie **STRG+.** drücken und die Aktion auswählen, die Sie ausführen möchten.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Bei der ersten Vorschauversion der IntelliCode-Erweiterung für Visual Studio wu
 
 Und bei Verwendung von C# können Sie jetzt auch ein benutzerdefiniertes Modell für Ihren eigenen Code trainieren.
 
-Weitere Informationen zu IntelliCode finden Sie im Blogbeitrag [Code more, scroll less with Visual Studio IntelliCode (Mehr Code schreiben, weniger scrollen mit Visual Studio IntelliCode)](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/). 
+Weitere Informationen zu IntelliCode finden Sie im Blogbeitrag [Code more, scroll less with Visual Studio IntelliCode (Mehr Code schreiben, weniger scrollen mit Visual Studio IntelliCode)](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/).
 
 ### <a name="code-cleanup"></a>Codebereinigung
 
@@ -142,7 +142,7 @@ Wir haben die Datenbreakpoints, die ursprünglich nur für C++ ausgerichtet ware
 
    ![Animation: Datenbreakpoints für das Debuggen in Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif)
 
-Datenbreakpoints können nun also unabhängig davon, ob Sie in C++ oder in .NET Core programmieren, eine gute Alternative zu regulären Breakpoints darstellen. Datenbreakpoints eignen sich auch ideal für Szenarios wie für die Suche nach der Position, an der ein globales Objekt bearbeitet, hinzugefügt oder aus einer Liste entfernt wird. 
+Datenbreakpoints können nun also unabhängig davon, ob Sie in C++ oder in .NET Core programmieren, eine gute Alternative zu regulären Breakpoints darstellen. Datenbreakpoints eignen sich auch ideal für Szenarios wie für die Suche nach der Position, an der ein globales Objekt bearbeitet, hinzugefügt oder aus einer Liste entfernt wird.
 
 Wenn Sie in C++ große Anwendungen entwickeln, hat Visual Studio 2019 nun außerdem Symbole lokal verfügbar gemacht, mithilfe derer Sie diese Anwendungen debuggen können, ohne dass es zu arbeitsspeicherbezogenen Problemen kommt.
 
