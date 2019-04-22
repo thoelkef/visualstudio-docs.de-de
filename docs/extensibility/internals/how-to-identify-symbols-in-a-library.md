@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628714"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651964"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek
 Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbolen. Die Symbole darstellen, Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente.
@@ -49,7 +49,6 @@ N1
  Die kanonische Pfad des C2-Klasse, in diesem Beispiel ist N1 + C2. Präsentationspfad des C2 enthält Knoten "C1" und "Basen und Schnittstellen": N1 + C1 + "Basen und Schnittstellen" + C2.
 
  Zum Abrufen von Informationen der Präsentation Form, der die Objekt-Manager ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> Methode.
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Kanonische abrufen und Presentation forms-Informationen
 

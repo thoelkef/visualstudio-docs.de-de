@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683677"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649991"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.
@@ -104,7 +104,6 @@ Visual Studio 2017 und höhere Versionen enthalten die **Ressourcenverlauf** Fen
 ![Ressourcenverlauf](media/gfx_diag_resource_history.png)
 
 In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Ereignisliste an.  Die Dropdownliste oben kann verwendet werden, auf andere Elemente, die den Verlauf anzuzeigen.  Die obere Hälfte des Fensters enthält die **Framesetupereignisse**.  Hierbei handelt es sich um die Ereignisse, die in fallen die *erstellen* Datentyps der Kategorie und Aufrufe, die in der Regel zu initialisieren und die Ressource zu erstellen.  Der unteren Hälfte des Fensters enthält die **Frameereignisse** Abschnitt.  Diese sind die normalen lesen und Schreiben von Ereignissen, die bei der Nutzung der Ressource auftreten.
-
 
 | Spalte | Beschreibung |
 |-----------| - |

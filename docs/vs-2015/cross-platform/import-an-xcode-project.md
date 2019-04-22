@@ -7,17 +7,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: d04c82a5122aae263676a43367105d44e3aa75a5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788797"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652045"
 ---
 # <a name="import-an-xcode-project"></a>Importieren eines XCode-Projekts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfasst die Unterstützung für das Verschieben von XCode-Projekten in Visual Studio, in dem Sie plattformübergreifende Bibliotheken erstellen und den Code mit anderen Projekten nutzen können. Der „Aus XCode importieren“-Assistent vereinfacht den Prozess des Importierens von Projekten und des Aufteilens des C++-Codes auf Ihre XCode-Ziele, um diese als eine statische Bibliothek oder ein freigegebenes Codeprojekt zu verwenden. Sie können Ihren iOS-spezifischen Code in Visual Studio verwalten und trotzdem XCode verwenden, um Storyboards und Builds auszuführen. Informationen darüber, wie Sie einfach Code zwischen Visual Studio und XCode verschieben können, finden Sie unter „Änderungen zwischen XCode und Visual Studio“.  
   
 ## <a name="using-the-import-from-xcode-wizard"></a>Verwenden des „Aus XCode importieren“-Assistenten  

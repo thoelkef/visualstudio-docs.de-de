@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195124"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649107"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
 
@@ -42,7 +42,7 @@ Der Aufruf der benutzerdefinierten Direktive sieht folgendermaßen aus:
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Anweisung, die Sie hier erstellen, wird der von der Engine zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom> Klassen abhängig von der Sprache, die im angegebenen Code in Visual C# oder Visual Basic erstellen die `language` Parameter, der die `template` Richtlinie. Die Sprache des Direktivenprozessors und die Sprache der Textvorlage, die auf den Direktivenprozessor zugreift, müssen nicht identisch sein.
+Der benutzerdefinierte Anweisungsprozessor fügt die Variable und die Eigenschaft der generierten Transformationsklasse hinzu. In der Anweisung, die Sie hier erstellen, wird der von der Engine zur generierten Transformationsklasse hinzugefügte Code mithilfe von <xref:System.CodeDom>-Klassen erstellt. Die <xref:System.CodeDom> Klassen abhängig von der Sprache, die im angegebenen Code in Visual c# oder Visual Basic erstellen die `language` Parameter, der die `template` Richtlinie. Die Sprache des Direktivenprozessors und die Sprache der Textvorlage, die auf den Direktivenprozessor zugreift, müssen nicht identisch sein.
 
 Der von der Anweisung erstellte Code sieht folgendermaßen aus:
 
@@ -654,7 +654,6 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
      Folgende Werte müssen für den Registrierungsschlüssel festgelegt werden:
 
-
    | name | Typ | Daten |
    |-|-|-|
    | (Standard) | REG_SZ | (Wert nicht festgelegt) |
@@ -663,13 +662,11 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
      Wenn Sie die Assembly im GAC gespeichert haben, sollten die Werte wie folgt aussehen:
 
-
    | name | Typ | Daten |
    |-|-|-|
    | (Standard) | REG_SZ | (Wert nicht festgelegt) |
    | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Starten Sie Visual Studio neu.
 

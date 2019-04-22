@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790796"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen eine Multithread-app mithilfe des Fensters Threads (C#, Visual Basic, C++)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer Multithread-app mithilfe des Fensters Threads (C#, Visual Basic C++)
 
 Einige Benutzeroberflächenelemente von Visual Studio helfen Ihnen beim Debuggen von Multithreadanwendungen. In diesem Artikel wird die Multithread-debugging-Funktionen im Code-Editor-Fenster, **Debugspeicherort** Symbolleiste und **Threads** Fenster. Weitere Informationen zu anderen Tools zum Debuggen von Multithreadanwendungen, finden Sie unter [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -37,17 +37,17 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **Esc** um den Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
 
     - Für C#, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** für C#. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
-    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    - Für C++, wählen Sie **neues Konsolen-App-Projekt erstellen**. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Im linken Bereich die **neues Projekt** Dialogfeld Wählen Sie die folgenden:
     - Für eine C# app unter **Visual C#** , wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)**.
-    - Für eine C++-app unter **Visual C++**, wählen Sie **Windows Desktop**, und wählen Sie dann **Windows-Konsolenanwendung**.
+    - Für eine C++ app unter **Visual C++** , wählen Sie **Windows Desktop**, und wählen Sie dann **Windows-Konsolenanwendung**.
 
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **OK**.
     ::: moniker-end
@@ -56,7 +56,7 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
 
     Das neue Projekt wird im **Projektmappen-Explorer**, und eine Quelldatei namens *"Program.cs"* oder *MyThreadWalkthroughApp.cpp* wird im Quellcodefenster geöffnet.
 
-1. Ersetzen Sie den Code in der Quelldatei mit der C# oder C++-Beispielcode von [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md).
+1. Ersetzen Sie den Code in der Quelldatei mit der C# oder C++ Beispielcode aus [erste Schritte zum Debuggen von Multithreadanwendungen](../debugger/get-started-debugging-multithreaded-apps.md).
 
 1. Wählen Sie **Datei** > **alle speichern**.
 
@@ -198,4 +198,4 @@ Sie haben nun die Grundlagen des Debuggens von Multithreadanwendungen kennengele
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Vorgehensweise: Switch to another thread while debugging (Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens)](../debugger/how-to-switch-to-another-thread-while-debugging.md)

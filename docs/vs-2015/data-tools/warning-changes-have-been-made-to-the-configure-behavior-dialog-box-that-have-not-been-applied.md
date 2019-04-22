@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958425"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651755"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung. Es wurden Änderungen am Dialogfeld 'Verhalten konfigurieren' vorgenommen, die nicht übernommen wurden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden. Möchten Sie die Änderungen übernehmen?  
   
  Die **Verhalten konfigurieren** Dialogfeld können Sie INSERT-, Update- und Delete-Verhalten für alle verfügbaren Klassen zu konfigurieren. Diese Nachricht wird angezeigt, wenn Sie eine neue Kombination von **Klasse** und **Verhalten** auswählen und die vorangegangene Änderung noch nicht übernommen wurde.  

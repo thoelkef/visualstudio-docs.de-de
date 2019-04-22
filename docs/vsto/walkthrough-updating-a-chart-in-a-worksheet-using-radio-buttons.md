@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602064"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651889"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Arbeitsblatts in einem Dokument mithilfe von Optionsfeldern
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Optionsfeldern in einem Microsoft Office Excel-Arbeitsblatt, Benutzern eine Möglichkeit, schnell zwischen den Optionen wechseln. Ändern Sie die Optionen in diesem Fall den Stil eines Diagramms.
@@ -132,30 +132,24 @@ ms.locfileid: "56602064"
 
 2. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, ziehen Sie eine **Optionsfeld** steuern, auf das Benutzersteuerelement, und ändern Sie die folgenden Eigenschaften.
 
-
    | Eigenschaft | Wert |
    |----------|------------------|
    | **Name** | **columnChart** |
    | **Text** | **Säulendiagramm** |
 
-
 3. Fügen Sie auf das Benutzersteuerelement ein zweites Optionsfeld aus, und ändern Sie die folgenden Eigenschaften.
-
 
    | Eigenschaft | Wert |
    |----------|---------------|
    | **Name** | **barChart** |
    | **Text** | **Balkendiagramm** |
 
-
 4. Fügen Sie auf das Benutzersteuerelement ein drittes Optionsfeld aus, und ändern Sie die folgenden Eigenschaften.
-
 
    | Eigenschaft | Wert |
    |----------|----------------|
    | **Name** | **lineChart** |
    | **Text** | **Liniendiagramm** |
-
 
 5. Fügen Sie auf das Benutzersteuerelement ein viertes Optionsfeld aus, und ändern Sie die folgenden Eigenschaften.
 

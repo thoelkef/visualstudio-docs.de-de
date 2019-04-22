@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758453"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649120"
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
   
 -   Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](msbuild-properties1.md).  

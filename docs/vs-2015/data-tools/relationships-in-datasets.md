@@ -21,17 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946668"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649666"
 ---
 # <a name="relationships-in-datasets"></a>Beziehungen in datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation> Objekte aus, um eine über-/unterordnungsbeziehung zwischen den Tabellen und verknüpften Datensätze von den anderen zurück. Hinzufügen verknüpfte Tabellen zu Datasets mithilfe der **Assistenten zur Datenquellenkonfiguration**, oder die **Dataset-Designer**, erstellt und konfiguriert die <xref:System.Data.DataRelation> -Objekt für Sie.  
   
  Die <xref:System.Data.DataRelation> Objekt erfüllt zwei Funktionen:  

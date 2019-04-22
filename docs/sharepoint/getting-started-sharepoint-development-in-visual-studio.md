@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504106"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Erste Schritte (SharePoint-Entwicklung in Visual Studio)
@@ -38,7 +38,7 @@ ms.locfileid: "59504106"
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)|Beschreibt die SharePoint-Entwicklung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Entwickeln von SharePoint-Projektmappen](../sharepoint/developing-sharepoint-solutions.md)|Beschreibt die SharePoint-Entwicklung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Beschreibt die erforderlichen Installationen zum Erstellen einer SharePoint-Lösung|
 |[Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Beschreibt, wie mithilfe der Visual Studio-Tools zur SharePoint-Entwicklung benutzerdefinierte Websitespalten, Inhaltstypen und Listen für SharePoint erstellt werden.|
 |[Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)|Beschreibt Workflowentwurf und -entwicklung.|

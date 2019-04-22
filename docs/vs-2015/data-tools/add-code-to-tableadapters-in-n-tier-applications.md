@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651918"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Können Sie die Funktionalität des erweitern eine `TableAdapter` durch das Erstellen der Datei eine partielle Klasse für die `TableAdapter` und Code hinzufügen (anstelle von Code zum Hinzufügen der *DatasetName*. DataSet.Designer-Datei). Partielle Klassen ermöglichen es sich um Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [teilweise](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) oder [Partial (Typ)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Der Code, definiert ein `TableAdapter` generiert jedes Mal, wenn Änderungen der `TableAdapter`. Dieser Code wird auch generiert, wenn Änderungen während der Ausführung des alle-Assistenten vorgenommen werden, die die Konfiguration ändert die `TableAdapter`. Um zu verhindern, dass Ihr Code gelöscht wird, während die erneute Generierung von einer `TableAdapter`, fügen Sie Code in die partielle Klasse-Datei von der `TableAdapter`.  

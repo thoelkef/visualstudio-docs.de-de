@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796815"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652110"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines Überprüfungsprogramm Verweis
 
@@ -107,12 +107,9 @@ Ausdruck "% Expr %": Kein Array zu zeigerverfall. Finden Sie unter [C++ Core Ric
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) Funktion "% Symbol %" muss genau eines der "virtual", "override" oder "final" angeben. Finden Sie unter [128: Virtuelle Funktionen sollten genau einem der virtuell, "Override", "oder" letzte angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) der Typ "% Symbol %" mit einer virtuellen Funktion benötigt entweder öffentlichen virtuellen oder einen geschützten nicht virtuellen Destruktor. Finden Sie unter [C++ Core Guidelines 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) Außerkraftsetzen Destruktor sollten nicht verwenden, explizite 'Override' oder 'virtual'-Spezifizierer. Finden Sie unter [128: Virtuelle Funktionen sollten genau einem der virtuell, "Override", "oder" letzte angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>Typ-Gruppe
 
@@ -205,7 +202,6 @@ Finden Sie unter [GSL.view für C++-Core-Richtlinien: Ansichten](https://github.
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` oder `std::string_view` erstellt aus einer temporären werden ungültige bei temporären für ungültig erklärt. Finden Sie unter [C++ Core Guidelines: GSL.view: Ansichten](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Veraltete Warnungen
 
