@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bef136cef69715fdb27a426c4aab5baa1db18dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 280ae52056d188c1959355c1d7521d1c7e744997
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957734"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654736"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Vorgehensweise: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Thema wird beschrieben, wie globale Knoten hinzufügen der [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md) aus der [Ausgangsansicht](../xml-tools/start-view.md).  
   
 ### <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>So fügen Sie dem Arbeitsbereich Knoten aus der Ausgangsansicht hinzu  

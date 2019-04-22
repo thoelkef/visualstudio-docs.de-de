@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597796"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654086"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.
@@ -94,7 +94,6 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll für die Installation von Anwendungen nicht unterstützt.
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt das Installieren von Anwendungen von HTTP 1.1-Webserver oder Dateiserver. FTP, File Transfer Protocol, wird nicht unterstützt, für die Installation von Anwendungen. Sie können FTP verwenden, um nur Anwendungen zu veröffentlichen. In der folgende Tabelle werden diese Unterschiede zusammengefasst:
 
-
 | URL-Typ | Beschreibung |
 |----------| - |
 | ftp:// | Sie können Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
@@ -102,15 +101,15 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 | https:// | Installation kann ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
 | file:// | Installation kann ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit diesem Protokoll. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows Firewall
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows-Firewall
  Windows XP SP2 aktiviert standardmäßig die Windows-Firewall. Wenn Sie Ihre Anwendung auf einem Computer, die Windows XP installiert ist entwickeln, können Sie weiterhin auf veröffentlichen, und führen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen vom lokalen Server, auf denen IIS ausgeführt wird. Allerdings können nicht Sie den Server zugreifen, der IIS auf einem anderen Computer ausgeführt wird, es sei denn, Sie die Windows-Firewall zu öffnen. Informationen zum Verwalten der Windows-Firewall finden Sie in der Windows-Hilfe.
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>WindowsServer: Aktivieren Sie FrontPage-Servererweiterungen
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Aktivieren Sie FrontPage-Servererweiterungen
  FrontPage-Servererweiterungen von Microsoft ist erforderlich, für die Veröffentlichung von Anwendungen auf einem Windows-Webserver, der HTTP verwendet.
 
  Standardmäßig verfügt Windows Server nicht über FrontPage-Servererweiterungen installiert. Wenn Sie verwenden möchten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] um an einen Webserver für Windows Server zu veröffentlichen, die mit FrontPage-Servererweiterungen HTTP verwendet, müssen Sie zunächst die FrontPage-Servererweiterungen installieren. Sie können die Installation ausführen, indem mithilfe des Verwaltungstools für die Serververwaltung in Windows Server.
 
-## <a name="windows-server-locked-down-content-types"></a>WindowsServer: Gesperrten-Inhaltstypen
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Gesperrte Inhaltstypen
  IIS auf [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] Sperren nach-unten-alle Dateitypen mit Ausnahme bestimmter bekannten Inhaltstypen (z. B. *.htm*, *.html*, *.txt*und so weiter). So aktivieren Sie die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen, die diesen Server verwenden, müssen Sie die IIS-Einstellungen zum Zulassen der Herunterladen von Dateien des Typs ändern *.application*, *". manifest"*, und beliebige andere benutzerdefinierte Typen von verwendet der Anwendung.
 
  Wenn Sie die Bereitstellung mit einem IIS-Server, führen Sie *inetmgr.exe* und fügen Sie neue Dateitypen für die Standardwebseite hinzu:

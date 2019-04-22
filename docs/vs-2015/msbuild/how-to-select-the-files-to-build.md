@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798903"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659813"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Gewusst wie: Auswählen von Dateien für den Buildvorgang
+# <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.  
   
 ## <a name="specifying-inputs"></a>Angeben von Eingaben  
@@ -174,5 +173,5 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [How to: Exclude Files from the Build (Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang)](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
+ [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Elemente](../msbuild/msbuild-items.md)

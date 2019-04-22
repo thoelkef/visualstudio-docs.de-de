@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714282"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658043"
 ---
 # <a name="graphics-log-document"></a>Grafikprotokolldokument
 Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Grafikdiagnosesitzung aufgetretenen Grafikereignisse. Wenn das Prokotoll erstellt wurde, können Sie es in der Visual Studio-Grafikanalyse auf Renderings- und Leistungsprobleme durchsuchen.
@@ -42,7 +42,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 ## <a name="playback-machine"></a>Wiedergabecomputer
  In der rechten oberen Ecke der **Frameliste** wird auch der **Wiedergabecomputer** angezeigt. Der Wiedergabecomputer ist ein Computer oder ein Gerät, das Grafikereignisse aus einer Grafikprotokolldatei während einer späteren Grafikdiagnosesitzung wiedergibt. Wenn Sie ein anderes Gerät als Ihren Entwicklungscomputer zur Wiedergabe der aufgezeichneten Ereignisse verwenden, können Sie die Ausführungsumgebung genauer reproduzieren, in der das Problem aufgetreten ist – Sie können beispielsweise einen Computer mit anderer Grafikhardware oder anderen Treibern als Ihr Entwicklungscomputer oder andere Arten von Geräten verwenden, z. B. ein ARM-basiertes Windows RT-Tablet oder ein Gerät mit Windows Phone.
 
- Informationen zum Angeben eines Wiedergabecomputers finden Sie unter [How to: Change the Graphics Diagnostics Playback Machine (Vorgehensweise: Ändern des Wiedergabecomputers für die Grafikdiagnose)](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Weitere Informationen zur Vorgehensweise beim Angeben eines wiedergabecomputers finden Sie unter [Vorgehensweise: Ändern des Grafikdiagnose-Wiedergabecomputers](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="graphics-log-summary-information"></a>Kurzinformationen zum Grafikprotokoll
  Wenn das aktive Dokument eine Graphikprotokolldatei ist, werden im Fenster **Eigenschaften** Informationen zur Umgebung angezeigt, in der die Grafikdiagnose-Erfassungssitzung gehostet wird. Es werden verschiedene Kategorien von Informationen angezeigt.
@@ -73,7 +73,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 
 |Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Pfad**|Der Pfad der .vsglog-Datei. **Hinweis:** in früheren Erfassungen wird diese Eigenschaft nicht verwendet.|
+|**Pfad**|Der Pfad der .vsglog-Datei. **Hinweis**:  In früheren Erfassungen wird die Eigenschaft nicht verwendet.|
 
  **Modulinformationen** Listet den Namen und die Version der dynamic Link Librarys (DLLs), die von der app, die während der erfassungssitzung geladen wurden.
 
@@ -97,7 +97,6 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 |**Version**|Die App-Version.|
 
  **VSG-Protokolldatei** gibt Informationen über das grafikprotokolldokument.
-
 
 | Eigenschaft | Beschreibung |
 |------------------------| - |

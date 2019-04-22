@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eaf16ac81f5b8347955e97d71f82e37e7feff38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16b8d2214d9f81115d183eb1b4e6765dcd33d37e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756334"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655101"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Verwenden Sie diese Seite, um festzulegen, wie Visual Studio-Updates ausgeführt und wie Erweiterungen aktualisiert und ermittelt werden.  
   
 ### <a name="automatically-check-for-updates"></a>Automatisch nach Updates suchen  
@@ -34,7 +33,7 @@ Verwenden Sie diese Seite, um festzulegen, wie Visual Studio-Updates ausgeführt
  Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../../ide/finding-and-using-visual-studio-extensions.md).  
   
 ### <a name="additional-extension-galleries"></a>Zusätzliche Erweiterungskataloge  
- Eine Enterprise-Funktion, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [Private Galleries](../../extensibility/private-galleries.md).  
+ Ein Enterprise-Feature, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [Private Galleries](../../extensibility/private-galleries.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)

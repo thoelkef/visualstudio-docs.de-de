@@ -20,17 +20,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6b6428681815f20951b090075e859959a4e3180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946635"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660860"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Datenbank. Sie verbinden, in der Datenbank, die Abfragen ausführen oder die gespeicherten Prozeduren und entweder einen neuen Daten zurückgeben Tabellen- oder geben Sie eine vorhandene <xref:System.Data.DataTable> mit den zurückgegebenen Daten. TableAdapter-Steuerelemente können auch aktualisierte Daten aus Ihrer Anwendung an die Datenbank senden.  
   
  TableAdapters werden für Sie erstellt, wenn Sie eine der folgenden Aktionen ausführen:  

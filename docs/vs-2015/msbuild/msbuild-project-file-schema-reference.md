@@ -16,17 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772585"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660527"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenz zum MSBuild-Projektdateischema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sowie ihren verfügbaren Attributen und untergeordneten Elementen.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet Projektdateien, um der Build-Engine anzuzeigen, was wie erstellt werden soll. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateien sind XML-Dateien, für die das [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei (XSD) für [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

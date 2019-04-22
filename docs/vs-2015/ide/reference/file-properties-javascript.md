@@ -26,17 +26,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780368"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656481"
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Projektsystem für die Dateien ausführen soll. Sie können Dateieigenschaften z.B. festlegen, um anzugeben, ob eine Datei als Ressourcendatei zum Paket hinzugefügt werden soll.  
   
  Sie können eine beliebige Datei im Projektmappen-Explorer auswählen und deren Eigenschaften im Eigenschaftenfenster überprüfen. JavaScript-Dateien haben vier Eigenschaften: **In Ausgabeverzeichnis kopieren**, **Package Action**, **Dateiname** und **Dateipfad**.  
@@ -97,4 +96,4 @@ Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Proj
  Zeigt die Version des Verweises an.  
   
 ## <a name="see-also"></a>Siehe auch  
- [NIB:-Projekteigenschaften (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
+ [NIB: Projekteigenschaften (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

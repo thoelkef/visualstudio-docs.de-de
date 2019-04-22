@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908516"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659938"
 ---
 # <a name="send-activity-designer"></a>Send-Aktivitätsdesigner
 
@@ -36,7 +36,6 @@ Alternativ die **SendAndReceiveReply** -Vorlagendesigner in der **Messaging** Ka
 ### <a name="the-send-activity-properties"></a>Die Eigenschaften der Send-Aktivität
 
 In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Send>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder auf die Oberfläche des Workflow-Designer bearbeitet werden.
-
 
 | Eigenschaftenname | Erforderlich | Verwendung |
 |-|----------|-|

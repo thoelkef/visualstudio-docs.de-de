@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694815"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655373"
 ---
 # <a name="graphics-frame-validation"></a>Grafik-Frame-Überprüfung
-<!-- VERSIONLESS --> Visual Studio 2017 und höher unterstützt die **Frame-Überprüfung** Tool.  Die Frame-Überprüfung-Fenster werden Fehler und Warnungen im Zusammenhang mit der Ereignisliste angezeigt.  Um dieses Fenster anzuzeigen, wählen die **Ansicht > Frame-Überprüfung** Menü.
+<!-- VERSIONLESS -->
+Visual Studio 2017 und höher unterstützt die **Frame-Überprüfung** Tool.  Die Frame-Überprüfung-Fenster werden Fehler und Warnungen im Zusammenhang mit der Ereignisliste angezeigt.  Um dieses Fenster anzuzeigen, wählen die **Ansicht > Frame-Überprüfung** Menü.
 
 ![Frame-Überprüfung](media/gfx_diag_frame_validation.png)
 
 Klicken Sie auf die **Überprüfung ausführen** auf der linken oberen Ecke, um die Analyse zu initiieren.  Es dauert mehrere Minuten je nach Komplexität des Frames.  Die Daten, die angezeigt wird, hier ist eine Kombination aus beiden Quellen: die Nachrichten, D3D selbst ausgibt, wenn [SDK Layers](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) aktiviert ist, und die Daten, die vom Nachverfolgen von internen Zustand des Tools gesammelt werden. Nach Abschluss des Vorgangs sehen Sie mehrere Spalten mit Daten:
-
 
 | **Spalte** | **Beschreibung** |
 |------------| - |
@@ -34,5 +34,5 @@ Klicken Sie auf die **Überprüfung ausführen** auf der linken oberen Ecke, um 
 | event | Das Ereignis, das den Fehler oder die Warnung zugeordnet. |
 
 ## <a name="see-also"></a>Siehe auch
-[Graphics Diagnostics (Debugging DirectX Graphics) (Grafikdiagnose (Debuggen von DirectX-Grafiken))](visual-studio-graphics-diagnostics.md)
+[Grafikdiagnose (Debuggen von DirectX-Grafiken)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960496"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661320"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Überprüfen von Daten ist der Prozess der Bestätigung der Werte, die in Datenobjekte eingegeben werden, die die Einschränkungen in einer Dataset Schema entsprechen. Der Überprüfungsprozess wird bestätigt, dass diese Werte die Regeln eingehalten werden, die für Ihre Anwendung eingerichtet wurden. Es hat sich bewährt, überprüfen Sie die Daten vor dem Senden von Aktualisierungen an der zugrunde liegenden Datenbank. Dies verringert sowohl Fehler als auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank.  
   
  Sie können bestätigen, dass Daten, die auf ein Dataset geschrieben werden durch Erstellen von Überprüfungen in das Dataset selbst gültig ist. Das Dataset kann überprüfen Sie die Daten unabhängig davon, wie das Update ausgeführt wird – direkt über die Steuerelemente in einem Formular in eine Komponente, oder auf andere Weise. Da das Dataset Teil Ihrer Anwendung (im Gegensatz zu den Datenbank-Back-End) ist, ist es ein logischer Ansatzpunkt zum anwendungsspezifischen Validierung zu erstellen.  
