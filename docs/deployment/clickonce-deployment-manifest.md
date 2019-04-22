@@ -15,32 +15,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 485f503d237cbc98918357eee79a3309fe8d33a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609079"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648000"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce-Bereitstellungsmanifest
 Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung beschreibt, einschließlich der Bestimmung der aktuellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsversion für die Bereitstellung.
 
  Bereitstellungsmanifeste verfügen über die folgenden Elemente und Attribute.
 
-
 | Element | Beschreibung | Attribute |
 | - | - | - |
-| [\<Assembly >-Element](../deployment/assembly-element-clickonce-deployment.md) | Erforderlich. Ein Element der obersten Ebene. | `manifestVersion` |
-| [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Erforderlich. Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<Description >-Element](../deployment/description-element-clickonce-deployment.md) | Erforderlich. Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell-Eintrags und des Elements **Software** in der Systemsteuerung verwendet werden. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [\<Bereitstellung >-Element](../deployment/deployment-element-clickonce-deployment.md) | Dies ist optional. Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Erforderlich. Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann. | `SupportUrl` |
-| [\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md) | Erforderlich. Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<assembly>-Element](../deployment/assembly-element-clickonce-deployment.md) | Erforderlich. Ein Element der obersten Ebene. | `manifestVersion` |
+| [\<assemblyIdentity>-Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Erforderlich. Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<description>-Element](../deployment/description-element-clickonce-deployment.md) | Erforderlich. Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell-Eintrags und des Elements **Software** in der Systemsteuerung verwendet werden. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<deployment>-Element](../deployment/deployment-element-clickonce-deployment.md) | Dies ist optional. Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<compatibleFrameworks>-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Erforderlich. Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann. | `SupportUrl` |
+| [\<dependency>-Element](../deployment/dependency-element-clickonce-deployment.md) | Erforderlich. Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [\<publisherIdentity> Element](../deployment/publisheridentity-element-clickonce-deployment.md) | Für signierte Manifeste erforderlich. Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Signature >-Element](../deployment/signature-element-clickonce-deployment.md) | Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren. | Keiner |
-| [\<CustomErrorReporting >-Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Dies ist optional. Gibt einen URI an, der bei einem Fehler angezeigt wird. | URI |
+| [\<Signature>-Element](../deployment/signature-element-clickonce-deployment.md) | Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren. | Keiner |
+| [\<customErrorReporting>-Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Dies ist optional. Gibt einen URI an, der bei einem Fehler angezeigt wird. | URI |
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die Bereitstellungsmanifestdatei identifiziert eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsbereitstellung einschließlich der aktuellen Version und anderer Bereitstellungseinstellungen. Sie verweist auf das Anwendungsmanifest, in dem die aktuelle Version der Anwendung und alle in der Bereitstellung enthaltenen Dateien beschrieben werden.
 
  Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).

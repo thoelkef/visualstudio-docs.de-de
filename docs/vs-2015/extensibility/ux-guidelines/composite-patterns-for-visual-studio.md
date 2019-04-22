@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653267"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Darstellung der grafischen Objekts-Auswahl
  Ziehpunkte sind Quadrate, die in einem rechteckmuster an, um das umgebende Feld des Objekts gezeichnet wird. Im Diagramm unten sind Beispiele für die verschiedenen Status, die mit Handle größenanpassung und direkte Bearbeitung Darstellung ein grafisches Objekts haben kann. Die Größe des Handles gebunden werden sollte, Fensterrahmen und Edge Metriken verwenden das **GetSystemMetrics** API.
 
-
 |          Zustand          |  Darstellung   |                                                                  Visuelle details                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Nicht ausgewählt**      |    Standard    |                 ![Schaltfläche Standardstatus](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
@@ -437,7 +436,6 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 >  **Fokus** und **Auswahl** sind unterschiedliche Konzepte. *Fokus* ist ein Hinweis auf die Benutzeroberfläche Element als Ziel verwendet wird um die Eingaben, die nicht explizit an einem anderen Objekt gerichtet erhalten, während er sich *Auswahl* bezieht sich auf den Status eines Objekts Aufnahme in einen Satz von Objekten auf dem nachfolgenden Vorgänge stattfinden können.
 
  Auswahl der in Listen möglicherweise zusammenhängenden, zusammenhanglos, oder die Region. Wenn mehrere Elemente ausgewählt sind, zugelassen, zusammenhängende und nicht zusammenhängenden Auswahl sollte immer unterstützt werden, und bei der Unterstützung für die Auswahl der Region (Feld) ist optional. Auswahl der Region werden durch Ziehen in den Leerraum des Texts Liste initiiert.
-
 
 | Object | Auswahl  |
 |--------|------------|
@@ -508,7 +506,7 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
  Eine Fensterkonfiguration ist die grundlegende Darstellung der Entwicklungsumgebung – es ist ein Schema aus der Liste der Toolfenster vorhanden und die Möglichkeit, die in der sie angeordnet werden. Für Windows, die von der IDE (IDE-Windows) verwaltet wird wird pro Benutzer und Layoutinformationen beibehalten, damit bei einer starten die IDE, das Fensterlayout identisch angezeigt wird, wenn sie zum letzten Visual Studio beendet. Die Status und die Position des IDE-Fenster wird in einer benutzerdefinierten Optionen, die Datei im XML-Format beibehalten. Toolfenster, die von Paketen, die in der IDE geladen erstellt werden behalten ihren Zustand in der Registrierung können und möglicherweise nicht pro Benutzer.
 
 #### <a name="profile-specific-layouts"></a>Profil-spezifischen layouts
- Jedes Profil enthält die Tool-Fensterlayouts, auf eine Weise vertraut sind, bestimmte Rollen organisiert (Visual C++-Entwickler erwarten die **Projektmappen-Explorer** auf der linken Seite der IDE, während C#-Entwickler erwarten, dass die findenSieunter **Projektmappen-Explorer** auf der rechten Seite). Profil-spezifische Fensterlayouts werden geladen, nachdem der Benutzer ein Profil auf Start wählt. Autor eines Pakets sollten das Fensterlayout, das am besten zu ihren Kunden zu ermitteln und zu wissen, dass Änderungen, die der Benutzer die angegebene Fensterkonfiguration stellt dann beibehalten werden.
+ Jedes Profil enthält die Tool-Fensterlayouts, auf eine Weise vertraut sind, bestimmte Rollen organisiert (Visual C++-Entwickler erwarten die **Projektmappen-Explorer** auf der linken Seite der IDE, während c#-Entwickler erwarten, dass die findenSieunter **Projektmappen-Explorer** auf der rechten Seite). Profil-spezifische Fensterlayouts werden geladen, nachdem der Benutzer ein Profil auf Start wählt. Autor eines Pakets sollten das Fensterlayout, das am besten zu ihren Kunden zu ermitteln und zu wissen, dass Änderungen, die der Benutzer die angegebene Fensterkonfiguration stellt dann beibehalten werden.
 
 ##  <a name="BKMK_TouchInput"></a> Touch-Punkts
  Benutzer werden zunehmend Produkte für die Entwicklung von Microsoft für Touch-Geräten verwenden. Es gibt jedoch Hindernissen, die Entwicklungstools für Touch-Geräten verwenden erschweren. Benutzer erwarten, dass unsere Produkte aus, um eine zuverlässige und präzise Touch-Erlebnis zu bieten. Die Absicht dieser Richtlinien besteht darin, Entscheidungen über die Touch-Funktionen zu integrieren und eine konsistente Touch-Funktion in Visual Studio und verwandte Produkte empfehlen.

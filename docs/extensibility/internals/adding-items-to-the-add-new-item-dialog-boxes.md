@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620992"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651296"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Fügen Sie Elemente hinzu, um das Dialogfeld "Neues Element hinzufügen"
 Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dialogfeld beginnt mit dem Registrierungsschlüssel. Siehe die folgenden Registrierungseinträge, die **AddItemTemplates** Abschnitt enthält den Pfad und Name des Verzeichnisses in der die Elemente zur Verfügung gestellt der **neues Element hinzufügen** Dialogfeld abgelegt werden.
@@ -34,7 +34,6 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
  **TemplatesDir** = \\&lt;Visual Studio SDK-Installationspfad&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\ &lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
 
  **SortPriority** Dword:00000064 =
-
 
 | name | Typ | Daten (aus *RGS* Datei) | Beschreibung |
 |------------------|-----------| - | - |

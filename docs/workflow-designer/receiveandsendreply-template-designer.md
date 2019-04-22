@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e14d968496c895f24038ca2db1e7f62846b75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950200"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648756"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply-Vorlagendesigner
 
@@ -41,7 +41,6 @@ Weitere Informationen zur Verwendung der **empfangen** -Designers bei der Konfig
 ### <a name="properties-of-sendreply"></a>Eigenschaften von SendReply
 
 In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.SendReply>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, und einige auf der Oberfläche des Workflow-Designer bearbeitet werden kann.
-
 
 | Eigenschaftenname | Erforderlich | Verwendung |
 |-|----------|-|

@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775887"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652864"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zeigt die Komponenten, die Sie zu [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]- und [!INCLUDE[csprcs](../../includes/csprcs-md.md)]-Designern hinzufügen können. Zusätzlich zu den [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]-Komponenten, die in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] enthalten sind, wie z.B. die Komponenten <xref:System.Messaging.MessageQueue> und <xref:System.Diagnostics.EventLog>, können Sie eigene Komponenten oder Drittanbieter-Komponenten zu dieser Registerkarte hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Registerkarten der Toolbox](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Wählen Sie im Menü **Ansicht** die Option **Toolbox**, um diese Registerkarte anzuzeigen. Wählen Sie in der **Toolbox** die Registerkarte **Komponenten**.  

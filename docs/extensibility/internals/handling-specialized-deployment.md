@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840324"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650810"
 ---
 # <a name="handle-specialized-deployment"></a>Behandeln der speziellen Bereitstellung
 Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unterstützt ein Webprojekt eine Bereitstellung können Sie ein Projekt, das einen Webserver zu aktualisieren. Ebenso eine **intelligente Geräte** Projekt unterstützt eine Bereitstellung aus, um eine integrierte Anwendung auf dem Zielgerät zu kopieren. Projektuntertypen können spezielle bereitstellungsverhalten angeben, durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle. Diese Schnittstelle definiert einen vollständigen Satz von Bereitstellungsvorgänge:
@@ -40,7 +40,6 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   Die tatsächliche Bereitstellung durchgeführt werden soll im separaten Thread stellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] noch auf Benutzeraktionen reagieren. Die vom bereitgestellten Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> heißen asynchron durch [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und im Hintergrund, damit die Umgebung, die zum Abfragen des Status eines bereitstellungvorgangs zu einem beliebigen Zeitpunkt oder beenden den Vorgang, bei Bedarf ausgeführt werden. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle Bereitstellungsvorgänge werden von der Umgebung aufgerufen, wenn der Benutzer mit den Bereitstellungsbefehl auswählt.
 
   Um die Umgebung zu benachrichtigen, die ein Bereitstellungsvorgang gestartet oder beendet wurde, der Projektuntertyp aufrufen muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> Methoden.
-
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Um eine spezielle Bereitstellung von einem Untertyp-Projekt zu behandeln
 

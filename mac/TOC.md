@@ -14,7 +14,6 @@
 # [Customizing the IDE (Anpassen der IDE)](customizing-the-ide.md)
 ## [Extending Visual Studio for Mac (Erweitern von Visual Studio für Mac)](extending-visual-studio-mac.md)
 
-
 # [Projects and Solutions (Projekte und Projektmappen)](projects-and-solutions.md)
 ## [Creating new Projects (Erstellen neuer Projekte)](create-new-projects.md)
 ## [Adding and removing Project Items (Hinzufügen und Entfernen von Projektelementen)](add-and-remove-project-items.md)

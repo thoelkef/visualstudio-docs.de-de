@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194508"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649263"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.  
   
  In diesem Thema werden bestimmte Aspekte von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] erläutert, die beim Anpassen von Projekten und TARGETS-Dateien berücksichtigt werden sollten, die Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] laden und erstellen möchten. Dadurch können Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Funktionen wie IntelliSense sowie Debugging in Ihrem benutzerdefinierten Projekt einsetzen.  

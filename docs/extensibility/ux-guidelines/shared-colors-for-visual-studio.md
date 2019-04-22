@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232813"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649953"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Konsistente Farben für Visual Studio
 Wenn Sie beim Entwerfen, Benutzeroberfläche, die allgemeine Visual Studio Shell-Elementen oder Ihr Benutzeroberflächenelement konsistent mit ähnlichen Features sein soll, verwenden Sie Tokennamen in Paketdefinitionsdateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.
@@ -24,9 +24,9 @@ Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:
 
 -   **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Die Funktionen des Kombinationsfelds und der Animation sind unterschiedlich, und wenn das Kombinationsfeld ändert die Farbe zugeordnet ist, kann es nicht mehr sein, auf eine geeignete Farbe für Ihr Animationselement. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.
 
--   **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn nicht die zugeordnete Textfarbe vorhanden ist, verwenden Sie nicht diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt. Andere Kombinationen von Text- und Hintergrundfarben können die Benutzeroberfläche unlesbar führen.
+-   **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination aus.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn nicht die zugeordnete Textfarbe vorhanden ist, verwenden Sie nicht diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt. Andere Kombinationen von Text- und Hintergrundfarben können die Benutzeroberfläche unlesbar führen.
 
--   **Verwenden Sie Steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände nicht einige Visual Studio-Steuerelemente auf separaten Rahmen- und Hintergrundfarben haben. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
+-   **Verwenden Sie steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände nicht einige Visual Studio-Steuerelemente auf separaten Rahmen- und Hintergrundfarben haben. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.
 
 > [!IMPORTANT]
 > Verwenden Sie keine Token gefunden, die in den Kategorien "Startseite" oder "Cider".
@@ -1949,7 +1949,6 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 
 ![Ausgewählte Tag mit schließen (&times;) Symbol bei einer mauszeigerbewegung über](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Ausgewählte Tag mit schließen (&times;) Symbol, wenn darauf gezeigt wird
 
-
 | Element | Tokenname: Category.Color |
 | --- | --- |
 | Hintergrund | `Tag.TagSelectedGlyphHoverBackground` |
@@ -2176,7 +2175,7 @@ Der Rahmen der Titelleiste wird nicht echter Rahmen, sondern eine starke Linie a
 | --- | --- |
 | ... erstellen Sie eine beliebige Stelle Benutzeroberfläche, die Toolfenster abstimmen möchten. | ... für Benutzeroberflächenelemente, die Sie nicht, automatisch ändern, wenn möchten designaktualisierung die Shell ein. |
 
-**Ausgewählt, Toolfenster-Registerkarte mit Fokus**
+**Ausgewählte, fokussierte Toolfenster-Registerkarte**
 
 ![Ausgewählt, Toolfenster-Registerkarte konzentriert](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Ausgewählt, Toolfenster-Registerkarte mit Fokus
 
@@ -2186,7 +2185,7 @@ Der Rahmen der Titelleiste wird nicht echter Rahmen, sondern eine starke Linie a
 | Vordergrund (Text) | `Environment.ToolWindowTabSelectedActiveText` |
 | Rahmen | `Environment.ToolWindowTabSelectedBorder`<br />(Auf dieselbe Farbe wie der Hintergrund festgelegt.) |
 
-**Ausgewählt, Toolfenster-Registerkarte ohne Fokus**
+**Ausgewählte, ohne Fokus Toolfenster-Registerkarte**
 
 ![Ausgewählte, ohne Fokus Toolfenster-Registerkarte](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Ausgewählt, Toolfenster-Registerkarte ohne Fokus
 

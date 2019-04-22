@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599648"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649250"
 ---
-# <a name="test-area-5-change-source-control"></a>Testbereich 5: Quellcodeverwaltung ändern
+# <a name="test-area-5-change-source-control"></a>Testbereich 5: Ändern der Quellcodeverwaltung
 Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelement über die **Quellcodeverwaltung ändern** Befehl.
 
  **Ändern Sie die Quellcodeverwaltung** Befehl bietet vier grundlegende Funktionen für den Benutzer:
@@ -45,7 +45,6 @@ Quellcodeverwaltung-Plug-in Test Hierunter ändern die Datenquellen-Steuerelemen
 
 ### <a name="case-5a-bind"></a>Groß-/Kleinschreibung 5a: Binden
  Bindung kann der Benutzer ausgewählte Projekte und Projektmappen Source Code Control Informationen hinzugefügt. In der Regel wird der Benutzer aufgefordert, ein Projekt in der quellcodeverwaltung identifizieren, der diese hinzugefügt werden. Der Benutzer kann ein neues Projekt in der quellcodeverwaltung im Rahmen dieses Vorgangs (Kontrast zur Quellcodeverwaltung hinzufügen) nicht erstellt werden.
-
 
 | Aktion | Testschritte | Erwartete Ergebnisse überprüfen |
 | - | - | - |

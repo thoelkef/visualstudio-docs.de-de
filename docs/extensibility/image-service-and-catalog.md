@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857852"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und-Katalog
@@ -104,7 +104,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 
 |||
 |-|-|
-|**Unterelement**|**Definition**|
+|**Subelement**|**Definition**|
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle manifest|
 |GUID|Das Symbol eine GUID darstellt, und Formatieren der GUID übereinstimmen|
 |ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|
@@ -131,7 +131,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |System|Die *"Windows\System32"* Ordner|
 |WinDir|Der Wert der Umgebungsvariable "WinDir"|
 
- **Bild**
+ **Image**
 
  Die \<Image >-Element definiert ein Bild, das einen Moniker verwiesen werden kann. Die GUID und ID, die zusammen bilden die Image-Moniker. Der Moniker für das Image muss innerhalb der gesamten Abbildbibliothek eindeutig sein. Wenn mehr als ein Bild ein angegebenes Monikers verfügt, wird die erste Bedingung, die beim Erstellen der Bibliotheks gefunden, die beibehalten werden.
 
@@ -151,7 +151,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |ID|[Erforderlich] Die ID-Teil der Image-moniker|
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|
 
- **Source**
+ **Quelle**
 
  Die \<Source >-Element definiert ein einzelnes Abbild quellmedienobjekt (XAML und PNG).
 

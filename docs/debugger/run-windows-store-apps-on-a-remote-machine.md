@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58789899"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-apps auf Remotecomputern aus Visual Studio
@@ -55,9 +55,9 @@ So debuggen Sie eine UWP-app auf einem Remotegerät in Visual Studio
 
     ![Verwaltete Projekteigenschaften für Remotedebugging](../debugger/media/vsrun_managed_projprop_remote.png "verwalteten Debug-Projekteigenschaften")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren eines C++-Projekts für das Remotedebuggen
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren einer C++ Projekts für das Remotedebuggen
 
-1.  Wählen Sie das C++-Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
+1.  Wählen Sie die C++ Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
 
 1.  Wählen Sie die **Debuggen** Registerkarte.
 

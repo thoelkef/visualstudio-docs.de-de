@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600719"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648233"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Bereitstellung)
 Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendungsmanifests.
@@ -78,7 +78,6 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ## <a name="dependentassembly"></a>dependentAssembly
  Erforderlich. Dieses Element enthält die `assemblyIdentity` Element. Die folgende Tabelle zeigt die Attribute der `dependentAssembly` unterstützt.
 
-
 | Attribut | Beschreibung |
 |------------------| - |
 | `preRequisite` | Dies ist optional. Gibt an, dass diese Assembly im GAC bereits vorhanden sein sollte. Gültige Werte sind `true` und `false`. Wenn `true`, und die angegebene Assembly im globalen Assemblycache nicht vorhanden, die Anwendung nicht ausgeführt. |
@@ -110,14 +109,12 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ## <a name="dsigtransform"></a>dsig:Transform
  Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Die folgende Tabelle zeigt die Attribute der `dsig:Transform` Element.
 
-
 | Attribut | Beschreibung |
 |-------------| - |
 | `Algorithm` | Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Die folgende Tabelle zeigt die Attribute der `dsig:DigestMethod` Element.
-
 
 | Attribut | Beschreibung |
 |-------------| - |
@@ -126,7 +123,7 @@ Gibt die Version der Anwendung zu installieren und den Speicherort des Anwendung
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Bereitstellungsmanifeste verfügen in der Regel über eine einzige `assemblyIdentity` -Element, das den Namen und die Version des Anwendungsmanifests bezeichnet.
 
 ## <a name="example"></a>Beispiel

@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790250"
 ---
-# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic C++)
 
 Visual Studio bietet mehrere Tools und Elemente der Benutzeroberfläche können Sie das Debuggen von Multithreadanwendungen. In diesem Tutorial wird gezeigt, wie mit Threadmarker, der **parallele Stapel** Fenster die **parallele Überwachung** bedingter Haltepunkte, Fenster und filterhaltepunkte. Das Abschließen dieses Lernprogramms werden Sie mit Visual Studio-Funktionen für das Debuggen von Multithreadanwendungen vertraut machen.
 
@@ -32,7 +32,7 @@ Diese zwei Themen enthalten weitere Informationen zur Verwendung von anderen Mul
 
 - Verwenden der **Debugspeicherort** Symbolleiste und die **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
 
-- Ein Beispiel, verwendet <xref:System.Threading.Tasks.Task> (verwalteter Code) und die Concurrency Runtime (C++), finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md). Finden Sie allgemeine Tipps zum Debuggen, die für die meisten Multithread-Anwendungstypen gelten sowohl für dieses Thema als auch für diese.
+- Ein Beispiel, verwendet <xref:System.Threading.Tasks.Task> (verwalteter Code) und der Concurrency Runtime (C++), finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md). Finden Sie allgemeine Tipps zum Debuggen, die für die meisten Multithread-Anwendungstypen gelten sowohl für dieses Thema als auch für diese.
 
 Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein Beispiel aufgeführt.
 
@@ -41,10 +41,10 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **Esc** um den Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Typ **STRG + Q** Geben Sie zum Öffnen des Suchfelds **Konsole** (oder **C ++**), wählen Sie **Vorlagen**, und klicken Sie dann:
 
     - Für C# oder Visual Basic, wählen Sie **neues ((.NET Framework)-Konsolen-App-Projekt erstellen** entweder C# oder Visual Basic. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
-    - Wählen Sie für C++, **neues Konsolen-App-Projekt erstellen** für C++. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    - Für C++, wählen Sie **neues Konsolen-App-Projekt erstellen** für C++. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **erstellen**.
     ::: moniker-end
@@ -53,7 +53,7 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
 
     - Für eine C# app unter **Visual C#** , wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)**.
     - Für eine Visual Basic-app unter **Visual Basic**, wählen Sie **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolen-App ((.NET Framework)**.
-    - Für eine C++-app unter **Visual C++**, wählen Sie **Windows Desktop**, und wählen Sie dann **Windows-Konsolenanwendung**.
+    - Für eine C++ app unter **Visual C++** , wählen Sie **Windows Desktop**, und wählen Sie dann **Windows-Konsolenanwendung**.
 
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **OK**.
     ::: moniker-end
@@ -265,7 +265,7 @@ In der **parallele Stapel** Fenster, wechseln Sie zwischen einer Threads und (f�
     Sie können verschiedene Aktionen in diese Menüs mit der rechten Maustaste, aber in diesem Tutorial erfahren Sie mehr diese Details in der **parallele Überwachung** Fenster (nächsten Abschnitten).
 
     > [!NOTE]
-    > Um eine Liste mit Informationen für jeden Thread anzeigen zu anzuzeigen, verwenden die **Threads** Fenster stattdessen. Finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
+    > Um eine Liste mit Informationen für jeden Thread anzeigen zu anzuzeigen, verwenden die **Threads** Fenster stattdessen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen eine Multithreadanwendung](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Festlegen eines überwachungselements für eine variable
 
@@ -353,6 +353,6 @@ Sie können Haltepunkte festlegen, auf verschiedenen Bedingungen, z. B. den Thre
 ## <a name="see-also"></a>Siehe auch
 
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-- [Gewusst wie: Verwenden Sie das Fenster "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)
-- [Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Vorgehensweise: Switch to another thread while debugging (Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens)](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Vorgehensweise: Verwenden Sie das Fenster "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)
+- [Vorgehensweise: Verwenden des Fensters „Parallele Überwachung“](../debugger/how-to-use-the-parallel-watch-window.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366548"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Prüfen Sie die Variablen im Auto und lokal
@@ -164,6 +164,6 @@ Die Rückgabewerte der an die `sumVars()` und `subtractVars()` Methodenaufrufe i
 ## <a name="see-also"></a>Siehe auch
 
 - [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
-- [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md)
+- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
 - [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)
 - [Debuggerfenster](../debugger/debugger-windows.md)

@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761671"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651931"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den barrierefreien Entwurf von Software sowie Tipps und Beispiele für die Entwicklung barrierefreier Windows-Anwendungen und Websites. Allgemeine Informationen über die Barrierefreiheit finden Sie online unter [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
   
 ## <a name="technologies"></a>Technologien  
@@ -45,7 +44,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
   
 ## <a name="web-sites"></a>Websites  
   
--   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps für den barrierefreien Entwurf für das Web.  
+-   [Exemplarische Vorgehensweise: Richtlinien für Eingabehilfen für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) dieses Thema enthält schrittweise Anweisungen zum Einfügen barrierefreier Steuerelemente in eine Beispielwebsite sowie Tipps Entwurf Barrierefreiheit für das Web.  
   
 -   **Webseiten barrierefreier machen** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 3.2-Elemente sowie andere Elemente aufgelistet, die für die barrierefreie Entwicklung von Websites angepasst werden können. Weitere Informationen finden Sie unter [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   

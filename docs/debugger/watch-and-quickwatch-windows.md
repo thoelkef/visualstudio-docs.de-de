@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366808"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Beobachten Sie Variablen mit überwachen und Schnellüberwachung
@@ -293,6 +293,6 @@ Beobachten der `a` -Variable
 
 ## <a name="see-also"></a>Siehe auch
 - [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
-- [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md)
+- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
 - [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)
 - [Debuggerfenster](../debugger/debugger-windows.md)

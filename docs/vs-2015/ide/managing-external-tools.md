@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866764"
 ---
 # <a name="managing-external-tools"></a>Verwalten von externen Tools
@@ -78,11 +78,11 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
   
 3.  ATL-/MFC-Ablaufverfolgungsprogramm: Zeigt Debugablaufverfolgungs-Meldungen in den ATL- und MFC-Quellen an.  
   
-4.  PreEmptive Protection – Dotfuscator: Schützt .NET-Programme vor Reverse Engineering.  
+4.  PreEmptive Protection – Dotfuscator: Schützt .NET Programme vor reverse Engineering.  
   
-5.  SPY++: Stellt Prozesse, Threads, Fenster und Fenstermeldungen grafisch dar.  
+5.  SPY++: Zeigt Prozesse, Threads, Windows und fenstermeldungen grafisch an.  
   
-6.  WCF-Dienstkonfigurations-Editor: Ermöglicht es Ihnen, die Konfigurationseinstellungen für WCF-Dienste zu erstellen und zu ändern.  
+6.  WCF Service Configuration Editor: Ermöglicht Ihnen das Erstellen und Ändern von Konfigurationseinstellungen für WCF-Dienste.  
   
 > [!WARNING]
 >  Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -102,7 +102,7 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 > [!NOTE]
 >  In der IDE-Statusleiste werden die Variablen "Aktuelle Zeile" und "Aktuelle Spalte" angezeigt, um die Position der Einfügemarke im aktiven Code-Editor anzuzeigen. Die Variable "Aktueller Text" gibt den an dieser Stelle ausgewählten Text oder Code zurück.  
   
-|name|Argument|Beschreibung|  
+|Name|Argument|Beschreibung|  
 |----------|--------------|-----------------|  
 |Elementpfad|$(ItemPath)|Der vollständige Dateiname der aktuellen Datei (Laufwerk + Pfad + Dateiname).|  
 |Elementverzeichnis|$(ItemDir)|Das Verzeichnisses der aktuellen Datei (Laufwerk + Pfad).|  
@@ -122,4 +122,4 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 |Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|  
   
 ## <a name="see-also"></a>Siehe auch  
- [C-/C++-Buildtools](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++-Buildtools](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

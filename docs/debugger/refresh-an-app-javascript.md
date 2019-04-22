@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790289"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualisieren Sie eine UWP-app in Visual Studio
@@ -57,9 +57,9 @@ ms.locfileid: "58790289"
 
 5.  Bearbeiten Sie auf der Startseite Ihrer UWP-App Teil der HTML-Code aus.
 
-7.  Klicken Sie auf die **Aktualisieren von Windows-app** Schaltfläche an, welche sieht wie folgt aus: ![Schaltfläche "Aktualisieren von Windows-app"](../debugger/media/js_refresh.png "JS_Refresh"). (Oder drücken Sie F4)
+7.  Klicken Sie auf die **Aktualisieren von Windows-app** Schaltfläche an, welche sieht wie folgt aus: ![Windows-app-Schaltfläche "Aktualisieren"](../debugger/media/js_refresh.png "JS_Refresh"). (Oder drücken Sie F4)
 
 8.  Wechseln Sie zur App. Die app wird erneut geladen, und das aktualisierte HTML zum Rendern der app verwendet wird.
 
 ## <a name="see-also"></a>Siehe auch
-- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790380"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von UWP-Apps aus Visual Studio
@@ -28,7 +28,7 @@ Die Funktionen zur Bereitstellung von Visual Studio erstellt und registriert UWP
 
 - Handelt es sich bei dem Ziel um ein Remotegerät, kopiert Visual Studio die erforderlichen Dateien auf den Remotecomputer und registriert anschließend die App auf dem Gerät.
 
-Die Bereitstellung erfolgt automatisch, wenn Sie die App von Visual Studio aus mit der Option **Debuggen starten** (Tastatur: F5) oder der Option **Starten ohne Debuggen** (Tastatur: STRG + F5) debuggen. Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
+Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debuggen die **Debuggen starten** Option (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: CTRL + F5). Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
 
 - Ad-Hoc-Tests auf einem lokalen oder Remotecomputer.
 
@@ -76,7 +76,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
 
     Die **Remoteverbindung** Dialogfeld zeigt die Geräte im Subnetz des lokalen Netzwerks sowie solche Geräte, die durch ein Ethernetkabel direkt mit dem Visual Studio-Computer verbunden ist.
 
-   **Angeben des Remotegeräts auf einer Visual C++-Projektseite**
+   **Angeben des Remotegeräts in einem visuellen Objekt C++ -Projektseite**
 
    ![C&#43; &#43; Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,7 +104,7 @@ So entfernen Sie die Netzwerkloopbackausnahme aus der App:
 
 - Auf der C# und Debuggen von Visual Basic auf der Seite Deaktivieren der **Netzwerkloopback zulassen** Kontrollkästchen.
 
-- Legen Sie auf der C++-Debug-Eigenschaft der **Netzwerkloopback zulassen** Wert **keine**.
+- Auf der C++ Eigenschaftenseite zum Debuggen, legen Sie die **Netzwerkloopback zulassen** Wert **keine**.
 
 **Nicht starten sondern Debuggen mein Code (C# und Visual Basic) / Anwendung starten (C++)**
 
@@ -112,7 +112,7 @@ So konfigurieren Sie den automatischen Start einer Debugsitzung beim Starten der
 
 - Auf der C# und Debuggen von Visual Basic auf der Seite überprüfen Sie die **nicht starten sondern Debuggen meinen Code** Kontrollkästchen.
 
-- Legen Sie auf der C++-Debug-Eigenschaft der **Anwendung starten** Wert **Ja**.
+- Auf der C++ Eigenschaftenseite zum Debuggen, legen Sie die **Anwendung starten** Wert **Ja**.
 
 ## <a name="see-also"></a>Siehe auch
 

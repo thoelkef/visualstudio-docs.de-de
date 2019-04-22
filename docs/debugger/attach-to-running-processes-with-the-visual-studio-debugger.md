@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366405"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
@@ -197,7 +197,7 @@ In einigen Szenarien für lokalen Debuggen können Sie in Visual Studio ohne Zug
 
  Wenn spezifischere Informationen, warum der Debugger an einen Codetyp angefügt konnte werden sollen, versuchen Sie, um nur diesen Codetyp erneut anzufügen.
 
- **So erhalten Sie spezielle Informationen, warum ein Codetyp beim Anfügen Fehler an:**
+ **So erhalten Sie Informationen darüber, warum ein bestimmter Codetyp nicht angehängt werden konnte:**
 
 1.  Trennen Sie den Prozess. Auf der **Debuggen** , wählen Sie im Menü **alle trennen**.
 
@@ -218,5 +218,5 @@ In einigen Szenarien für lokalen Debuggen können Sie in Visual Studio ohne Zug
 ## <a name="see-also"></a>Siehe auch
 
 - [Debuggen mehrerer Prozesse](../debugger/debug-multiple-processes.md)
-- [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Just-In-Time debugging (Just-In-Time-Debuggen)](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Remotedebuggen](../debugger/remote-debugging.md)
