@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723070"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670497"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlichen Konfigurationen. Einige der wichtigsten zusammengesetzte Muster in Visual Studio im Hinblick auf Konsistenz sind:
@@ -393,7 +393,6 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Darstellung der grafischen Objekts-Auswahl
  Ziehpunkte sind Quadrate, die in einem rechteckmuster an, um das umgebende Feld des Objekts gezeichnet wird. Im Diagramm unten sind Beispiele für die verschiedenen Status, die mit Handle größenanpassung und direkte Bearbeitung Darstellung ein grafisches Objekts haben kann. Die Größe des Handles gebunden werden sollte, Fensterrahmen und Edge Metriken verwenden das **GetSystemMetrics** API.
 
-
 | Zustand | Darstellung | Visuelle details |
 |-------------------------|---------------| - |
 | **Nicht ausgewählt** | Standard | ![Schaltfläche Standardstatus](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
@@ -435,7 +434,6 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 >  **Fokus** und **Auswahl** sind unterschiedliche Konzepte. *Fokus* ist ein Hinweis auf die Benutzeroberfläche Element als Ziel verwendet wird um die Eingaben, die nicht explizit an einem anderen Objekt gerichtet erhalten, während er sich *Auswahl* bezieht sich auf den Status eines Objekts Aufnahme in einen Satz von Objekten auf dem nachfolgenden Vorgänge stattfinden können.
 
  Auswahl der in Listen möglicherweise zusammenhängenden, zusammenhanglos, oder die Region. Wenn mehrere Elemente ausgewählt sind, zugelassen, zusammenhängende und nicht zusammenhängenden Auswahl sollte immer unterstützt werden, und bei der Unterstützung für die Auswahl der Region (Feld) ist optional. Auswahl der Region werden durch Ziehen in den Leerraum des Texts Liste initiiert.
-
 
 | Object | Auswahl |
 |--------|------------|
