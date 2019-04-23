@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054091"
 ---
 # <a name="extending-the-isolated-shell"></a>Erweitern der Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ Sie können die Visual Studio isolierte Shell erweitern, indem Ihre isolated She
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die VSPackage-Projektvorlage  
  Die VSPackage-Projektvorlage finden Sie an drei verschiedenen Stellen im Dialogfeld **Neues Projekt** :  
   
-1.  Klicken Sie unter **Visual Basic**, **Erweiterbarkeit**. Die Standardsprache des Projekts ist Visual Basic.  
+1. Klicken Sie unter **Visual Basic**, **Erweiterbarkeit**. Die Standardsprache des Projekts ist Visual Basic.  
   
-2.  Klicken Sie unter **Visual C#-**, **Erweiterbarkeit**. Die Standardsprache des Projekts ist C#.  
+2. Klicken Sie unter **Visual C#-**, **Erweiterbarkeit**. Die Standardsprache des Projekts ist C#.  
   
-3.  Klicken Sie unter **anderen Projekttypen**, **Erweiterbarkeit**. Die Standardsprache des Projekts ist C++.  
+3. Klicken Sie unter **anderen Projekttypen**, **Erweiterbarkeit**. Die Standardsprache des Projekts ist C++.  
   
 ## <a name="adding-a-vspackage"></a>Hinzufügen von einem VSPackage  
  Sie können eine VSPackage für die isolierte Shell-Anwendung hinzufügen. Die folgenden Schritte zeigen, wie Sie eine erstellen, die Befehle im Menü hinzugefügt wird.  
   
 #### <a name="to-add-a-new-vspackage"></a>Hinzufügen ein neues VSPackage  
   
-1.  Fügen Sie ein Visual Studio-Paket-Projekt mit dem Namen `MenuCommandsPackage`.  
+1. Fügen Sie ein Visual Studio-Paket-Projekt mit dem Namen `MenuCommandsPackage`.  
   
-2.  Auf der **grundlegende Informationen zum VSPackage** Seite des Assistenten festgelegt **Firmenname** zu `Fabrikam` und **VSPackage-Name** zu `FabrikamMenuCommands`. Klicken Sie auf **Weiter**.  
+2. Auf der **grundlegende Informationen zum VSPackage** Seite des Assistenten festgelegt **Firmenname** zu `Fabrikam` und **VSPackage-Name** zu `FabrikamMenuCommands`. Klicken Sie auf **Weiter**.  
   
-3.  Wählen Sie auf der nächsten Seite **Menübefehl** und wählen Sie dann **Weiter**.  
+3. Wählen Sie auf der nächsten Seite **Menübefehl** und wählen Sie dann **Weiter**.  
   
-4.  Legen Sie auf der nächsten Seite **Befehlsnamen** zu `Fabrikam Command` und **Befehls-ID** zu `cmdidFabrikamCommand`, und wählen Sie dann **Weiter**.  
+4. Legen Sie auf der nächsten Seite **Befehlsnamen** zu `Fabrikam Command` und **Befehls-ID** zu `cmdidFabrikamCommand`, und wählen Sie dann **Weiter**.  
   
-5.  Auf der **testen Projektoptionen wählen** Seite, deaktivieren Sie die Testoptionen, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
+5. Auf der **testen Projektoptionen wählen** Seite, deaktivieren Sie die Testoptionen, und wählen Sie dann die **Fertig stellen** Schaltfläche.  
   
-6.  Öffnen Sie im ShellExtensionsVSIX-Projekt die Datei "Source.Extension.vsixmanifest" ein.  
+6. Öffnen Sie im ShellExtensionsVSIX-Projekt die Datei "Source.Extension.vsixmanifest" ein.  
   
      Die **Assets** Abschnitt sollte einen Eintrag für das Projekt VSShellStub.AboutBoxPackage enthalten.  
   
-7.  Wählen Sie die **neu** Schaltfläche.  
+7. Wählen Sie die **neu** Schaltfläche.  
   
-8.  In der **neue Anlage hinzufügen** Fenster in der **Typ** Liste **"Microsoft.VisualStudio.VSPackage"**.  
+8. In der **neue Anlage hinzufügen** Fenster in der **Typ** Liste **"Microsoft.VisualStudio.VSPackage"**.  
   
 9. In der **Quelle** auflisten, stellen Sie sicher, dass **ein Projekt in der aktuellen Projektmappe** ausgewählt ist. In der **Projekt** wählen Sie im Listenfeld **MenuCommandsPackage**.  
   
@@ -74,21 +74,21 @@ Sie können die Visual Studio isolierte Shell erweitern, indem Ihre isolated She
   
 #### <a name="to-add-a-mef-component"></a>Hinzufügen eine MEF-Komponente  
   
-1.  In der **neues Projekt hinzufügen** Dialogfeld **Visual C#-**, **Erweiterbarkeit**, verwenden Sie die **Rand des Editors** Vorlage zum Hinzufügen eines Projekts. Nennen Sie es `ShellEditorMargin`.  
+1. In der **neues Projekt hinzufügen** Dialogfeld **Visual C#-**, **Erweiterbarkeit**, verwenden Sie die **Rand des Editors** Vorlage zum Hinzufügen eines Projekts. Nennen Sie es `ShellEditorMargin`.  
   
-2.  Öffnen Sie die Datei "Source.Extension.vsixmanifest" in der Entwurfsansicht, nicht in der Codeansicht ShellExtensionsVSIX im Projekt.  
+2. Öffnen Sie die Datei "Source.Extension.vsixmanifest" in der Entwurfsansicht, nicht in der Codeansicht ShellExtensionsVSIX im Projekt.  
   
-3.  In der `Asset` Abschnitt **Inhalt hinzufügen**.  
+3. In der `Asset` Abschnitt **Inhalt hinzufügen**.  
   
-4.  In der **neue Anlage hinzufügen** Fenster in der **Typ** Liste **Microsoft.VisualStudio.MefComponent**.  
+4. In der **neue Anlage hinzufügen** Fenster in der **Typ** Liste **Microsoft.VisualStudio.MefComponent**.  
   
-5.  In der **Quelle** auflisten, stellen Sie sicher, dass **ein Projekt in der aktuellen Projektmappe** ausgewählt ist. In der **Projekt** wählen Sie im Listenfeld **ShellEditorMargin**.  
+5. In der **Quelle** auflisten, stellen Sie sicher, dass **ein Projekt in der aktuellen Projektmappe** ausgewählt ist. In der **Projekt** wählen Sie im Listenfeld **ShellEditorMargin**.  
   
-6.  Speichern und schließen Sie die Datei.  
+6. Speichern und schließen Sie die Datei.  
   
-7.  Erstellen Sie die Projektmappe neu, und starten Sie das Debuggen der isolated Shells.  
+7. Erstellen Sie die Projektmappe neu, und starten Sie das Debuggen der isolated Shells.  
   
-8.  Öffnen Sie eine Textdatei ein.  
+8. Öffnen Sie eine Textdatei ein.  
   
      Ein grünes Rand, der die Wörter "Hello World!" enthält. sollte am unteren Rand des Fensters des Text-Datei angezeigt werden.  
   
@@ -98,27 +98,27 @@ Sie können die Visual Studio isolierte Shell erweitern, indem Ihre isolated She
   
 #### <a name="to-add-a-generic-vsix-project"></a>Zum Hinzufügen eines generischen VSIX-Projekts  
   
-1.  In der **neues Projekt hinzufügen** Dialogfeld **Visual C#-**, **Erweiterbarkeit**, verwenden Sie die **VSIXProject** Vorlage zum Hinzufügen eines Projekts. Nennen Sie es `EmptyVSIX`.  
+1. In der **neues Projekt hinzufügen** Dialogfeld **Visual C#-**, **Erweiterbarkeit**, verwenden Sie die **VSIXProject** Vorlage zum Hinzufügen eines Projekts. Nennen Sie es `EmptyVSIX`.  
   
-2.  Öffnen Sie im Projekt ShellExtensionsVSIX die Source.extensions.vsixmanifest-Datei in der Entwurfsansicht nicht in der Codeansicht.  
+2. Öffnen Sie im Projekt ShellExtensionsVSIX die Source.extensions.vsixmanifest-Datei in der Entwurfsansicht nicht in der Codeansicht.  
   
-3.  In der `Assets` Abschnitt **neu**.  
+3. In der `Assets` Abschnitt **neu**.  
   
-4.  In der **neue Anlage hinzufügen** Fenster in der **Typ** wählen die Art des Inhalts, die Sie hinzufügen möchten.  
+4. In der **neue Anlage hinzufügen** Fenster in der **Typ** wählen die Art des Inhalts, die Sie hinzufügen möchten.  
   
-5.  In **Quelle**, stellen Sie sicher, dass die **ein Projekt in der aktuellen Projektmappe** ausgewählt ist. Wählen Sie im Listenfeld den Namen des VSIX-Projekts ein.  
+5. In **Quelle**, stellen Sie sicher, dass die **ein Projekt in der aktuellen Projektmappe** ausgewählt ist. Wählen Sie im Listenfeld den Namen des VSIX-Projekts ein.  
   
-6.  Speichern und schließen Sie die Datei.  
+6. Speichern und schließen Sie die Datei.  
   
-7.  Wenn dieses Projekt kompilierten Code enthält, müssen Sie das Projekt bearbeiten, damit die Assembly in der Ausgabe enthalten ist.  
+7. Wenn dieses Projekt kompilierten Code enthält, müssen Sie das Projekt bearbeiten, damit die Assembly in der Ausgabe enthalten ist.  
   
-    1.  Entladen Sie das VSIX-Projekt, und öffnen Sie die Projektdatei.  
+    1. Entladen Sie das VSIX-Projekt, und öffnen Sie die Projektdatei.  
   
-    2.  In der ersten `<PropertyGroup>` blockieren, ändern Sie den Wert der `<CopyBuildOutputToOutputDirectory>` zu `true`.  
+    2. In der ersten `<PropertyGroup>` blockieren, ändern Sie den Wert der `<CopyBuildOutputToOutputDirectory>` zu `true`.  
   
-    3.  Speichern Sie und Laden Sie das Projekt.  
+    3. Speichern Sie und Laden Sie das Projekt.  
   
-8.  Erstellen Sie die Projektmappe, und führen Sie sie aus.  
+8. Erstellen Sie die Projektmappe, und führen Sie sie aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

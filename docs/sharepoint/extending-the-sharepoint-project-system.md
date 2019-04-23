@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b02d831093173b28cfd6c004e16c4514977a044
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617404"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061605"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Erweitern von SharePoint-Projektsystem
   Sie können SharePoint-Lösungen erstellen, indem Sie mit der eine Reihe von Projektvorlagen und Elementvorlagen in Visual Studio. Diese Vorlagen erfüllen die Anforderungen der viele Entwicklungsszenarien, jedoch können Sie ermitteln, einige Fälle, in dem diese Funktionalität nicht bereitstellen, die erforderlich sind. In diesen Fällen können Sie die SharePoint-Projektsystem erweitern.
@@ -33,20 +33,20 @@ ms.locfileid: "56617404"
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>Erweitern der SharePoint-Projektsystem
  Sie können SharePoint-Projektsystem erweitern, es gibt folgende Möglichkeiten:
 
--   Definieren Sie eigene SharePoint-Projektelementtypen, und ordnen sie neue Vorlagen oder Projektvorlagen in Visual Studio. Beispielsweise können Sie einen SharePoint-Projektelementtyp definieren, für das Erstellen einer benutzerdefinierten Aktion oder ein Feld. Weitere Informationen finden Sie unter [definieren Sie benutzerdefinierte SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md).
+- Definieren Sie eigene SharePoint-Projektelementtypen, und ordnen sie neue Vorlagen oder Projektvorlagen in Visual Studio. Beispielsweise können Sie einen SharePoint-Projektelementtyp definieren, für das Erstellen einer benutzerdefinierten Aktion oder ein Feld. Weitere Informationen finden Sie unter [definieren Sie benutzerdefinierte SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
--   Erweitern Sie SharePoint-Projektelementtypen, die in Visual Studio bereits installiert sind. Sie können z. B. ein Kontextmenüelement hinzufügen, auf ein Projektelement in **Projektmappen-Explorer** und passen Sie das Projektelement aus, wenn ein Entwickler das Menüelement auswählt. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md).
+- Erweitern Sie SharePoint-Projektelementtypen, die in Visual Studio bereits installiert sind. Sie können z. B. ein Kontextmenüelement hinzufügen, auf ein Projektelement in **Projektmappen-Explorer** und passen Sie das Projektelement aus, wenn ein Entwickler das Menüelement auswählt. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Projektelemente](../sharepoint/extending-sharepoint-project-items.md).
 
--   Erweitern Sie SharePoint-Projekte. Beispielsweise können Sie Ereignishandler, um bestimmte Aufgaben auszuführen, wenn Elemente hinzugefügt oder aus SharePoint-Projekten entfernt hinzufügen. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Projekte](../sharepoint/extending-sharepoint-projects.md).
+- Erweitern Sie SharePoint-Projekte. Beispielsweise können Sie Ereignishandler, um bestimmte Aufgaben auszuführen, wenn Elemente hinzugefügt oder aus SharePoint-Projekten entfernt hinzufügen. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Projekte](../sharepoint/extending-sharepoint-projects.md).
 
--   Erweitern Sie das Verhalten Verpacken und Bereitstellen von SharePoint-Projektelemente und SharePoint-Projekte. Beispielsweise können Sie durch Erstellen eigener Bereitstellungsschritte ausgeführt werden, wenn Sie beim Bereitstellen oder Zurückziehen ein Projekts oder Sie zusätzliche benutzerdefinierte Aufgaben ausführen können, wenn Visual Studio bestimmte Bereitstellungsschritte ausgeführt wird. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+- Erweitern Sie das Verhalten Verpacken und Bereitstellen von SharePoint-Projektelemente und SharePoint-Projekte. Beispielsweise können Sie durch Erstellen eigener Bereitstellungsschritte ausgeführt werden, wenn Sie beim Bereitstellen oder Zurückziehen ein Projekts oder Sie zusätzliche benutzerdefinierte Aufgaben ausführen können, wenn Visual Studio bestimmte Bereitstellungsschritte ausgeführt wird. Weitere Informationen finden Sie unter [Erweitern von SharePoint-Packen und-Bereitstellen](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ## <a name="common-development-tasks"></a>Allgemeine Entwicklungsaufgaben
  In Erweiterungen des SharePoint-Projektsystem können Sie die folgenden allgemeinen Aufgaben ausführen:
 
--   Speichern Sie die benutzerdefinierten Zeichenfolgendaten mit Projektelementen und in verschiedene Arten von Projektdateien. Weitere Informationen finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+- Speichern Sie die benutzerdefinierten Zeichenfolgendaten mit Projektelementen und in verschiedene Arten von Projektdateien. Weitere Informationen finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projektsystem](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
--   Konvertieren eines Objekts in der SharePoint-Projektsystem in ein entsprechendes Objekt in der Visual Studio-Automatisierungsobjektmodell oder-Integrationsobjektmodell und umgekehrt. Weitere Informationen finden Sie unter [konver zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+- Konvertieren eines Objekts in der SharePoint-Projektsystem in ein entsprechendes Objekt in der Visual Studio-Automatisierungsobjektmodell oder-Integrationsobjektmodell und umgekehrt. Weitere Informationen finden Sie unter [konver zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Definieren von benutzerdefinierten SharePoint-Projektelementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)

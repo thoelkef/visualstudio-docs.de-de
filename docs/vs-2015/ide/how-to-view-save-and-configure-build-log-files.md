@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053561"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Nachdem Sie ein Projekt in der Visual Studio-IDE erstellt haben, werden Informat
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Anzeigen der Buildprotokolldatei für ein C++-Projekt  
   
-1.  Öffnen Sie im **Windows-Explorer** oder im **Datei-Explorer** folgende Datei: \\...\Visual Studio *Version*\Projekte\\*Projektname*\\*Projektname*\Debug\\*Projektname*.txt.  
+1. Öffnen Sie im **Windows-Explorer** oder im **Datei-Explorer** folgende Datei: \\...\Visual Studio *Version*\Projekte\\*Projektname*\\*Projektname*\Debug\\*Projektname*.txt.  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Erstellen einer Buildprotokolldatei für ein Projekt mit verwaltetem Code  
   
-1.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
+1. Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
   
-2.  Markieren Sie im Fenster **Ausgabe** die Informationen aus dem Build, und kopieren Sie diese in die Zwischenablage.  
+2. Markieren Sie im Fenster **Ausgabe** die Informationen aus dem Build, und kopieren Sie diese in die Zwischenablage.  
   
-3.  Öffnen Sie einen Text-Editor wie Editor, fügen Sie die Informationen in die Datei ein, und speichern Sie diese anschließend.  
+3. Öffnen Sie einen Text-Editor wie Editor, fügen Sie die Informationen in die Datei ein, und speichern Sie diese anschließend.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll  
   
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
+1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
   
-2.  Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.  
+2. Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.  
   
-3.  Wählen Sie einen der folgenden Werte aus der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** aus, und klicken Sie dann auf die Schaltfläche **OK**.  
+3. Wählen Sie einen der folgenden Werte aus der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** aus, und klicken Sie dann auf die Schaltfläche **OK**.  
   
     |Ausführlichkeitsgrad|Beschreibung|  
     |---------------------|-----------------|  

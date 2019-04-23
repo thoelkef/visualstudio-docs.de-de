@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721068"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057432"
 ---
 # <a name="create-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
+
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiedene Arten von Editor hosten:
 
 - Die Visual Studio-Kern-editor
@@ -29,10 +30,11 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiede
 
 - Designer
 
-  Die folgende Informationen können Sie den Typ des Editors auswählen, die Sie benötigen.
+Die folgende Informationen können Sie den Typ des Editors auswählen, die Sie benötigen.
 
 ## <a name="types-of-editor"></a>Typen des Editors
- Weitere Informationen zu den Visual Studio-Kern-Editor, finden Sie unter [Erweiterung der Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md).
+
+Weitere Informationen zu den Visual Studio-Kern-Editor, finden Sie unter [Erweiterung der Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Benutzerdefinierte Editoren
  Ein benutzerdefinierter Editor ist eine, die entwickelt wurde, in speziellen Umständen funktioniert. Z. B. können Sie einen Editor erstellen, deren Funktion zum Lesen und Schreiben von Daten in ein bestimmtes Repository wie z. B. Microsoft Exchange-Server ist. Wählen Sie einen benutzerdefinierten Editor, wenn Sie einen Editor, der mit der Art Ihres Projekts funktioniert oder ggf. einen Editor, die nur einige spezifische Befehle hat. Beachten Sie jedoch, dass Benutzer nicht um einen benutzerdefinierten Editor zu verwenden, um Standard bearbeiten können [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekte.
@@ -70,24 +72,36 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiede
    Wenn sie eingebettet werden kann, erstellen Sie ein Hostfenster für den externen Editor, und rufen Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode, und legen die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert zu `DP_External`. Wenn der Editor kann nicht eingebettet werden, wird die IDE automatisch ein separates Fenster dafür erstellt.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Exemplarische Vorgehensweise: Erstellen eines benutzerdefiniertes Editors](../extensibility/walkthrough-creating-a-custom-editor.md) wird erläutert, wie Sie einen benutzerdefinierten Editor erstellen.
 
-- [Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einer benutzerdefinierten Editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) wird erläutert, wie Sie einen benutzerdefinierten Editor Features hinzu.
+[Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Erläutert das Erstellen eines benutzerdefinierten Editors.
 
-- [Designer-Initialisierung und Metadaten Konfiguration](../extensibility/designer-initialization-and-metadata-configuration.md) wird erläutert, wie ein Designer initialisiert.
+[Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einer benutzerdefinierten editor](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Erläutert, wie Sie einen benutzerdefinierten Editor Features hinzu.
 
-- [Geben Sie die Rückgängig-Unterstützung für Designer](../extensibility/supplying-undo-support-to-designers.md) wird erläutert, wie zum Bereitstellen von Rückgängig-Unterstützung für Designer.
+[Designer-Initialisierung und die Metadaten-Konfiguration](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Erläutert, wie einen Designer initialisiert werden.
 
-- [Syntaxfarben in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md) erläutert den Unterschied zwischen Syntaxfarben, die in der Kern-Editor und in benutzerdefinierten Editoren.
+[Bereitstellen von Rückgängig-Unterstützung für Designer](../extensibility/supplying-undo-support-to-designers.md)\
+Erläutert, wie zum Bereitstellen von Rückgängig-Unterstützung für Designer.
 
-- [Dokumentieren Sie die Daten und das Dokument anzeigen, in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md) wird erläutert, wie Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren implementieren.
+[Syntaxfarben in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md)\
+Erläutert den Unterschied zwischen Syntaxfarben, die in der Kern-Editor und in benutzerdefinierten Editoren.
+
+[Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Erläutert die Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren implementieren.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Legacy-Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md) wird erläutert, wie der Kern-Editor mithilfe der legacy-API zugreifen.
 
-- [Entwickeln eines Datendiensts legacysprache](../extensibility/internals/developing-a-legacy-language-service.md) wird erläutert, wie einen Sprachdienst zu implementieren.
+[Legacy-Schnittstellen im editor](../extensibility/legacy-interfaces-in-the-editor.md)\
+Erläutert, wie der Kern-Editor mithilfe der legacy-API den Zugriff auf.
 
-- [Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md) wird erläutert, wie Elemente der Benutzeroberfläche zu erstellen, die den Rest der entsprechen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Entwickeln eines Datendiensts legacysprache](../extensibility/internals/developing-a-legacy-language-service.md)\
+Erläutert, wie einen Sprachdienst zu implementieren.
+
+[Erweitern von anderen Teilen von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Erläutert das Erstellen von UI-Elemente, die den Rest der entsprechen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Siehe auch
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

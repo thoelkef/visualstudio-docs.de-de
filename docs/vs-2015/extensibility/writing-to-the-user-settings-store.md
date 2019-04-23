@@ -8,12 +8,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14438e23e73e6c69ecfe94ee7ada379b0d2fad15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5d48535bf8e2eb0c5204be0b06701b54cc6e365b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058173"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,30 +22,30 @@ Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extra
   
 ### <a name="backing-up-your-user-settings"></a>Sichern der Benutzereinstellungen  
   
-1.  Sie müssen die Einstellungen für externe Tools zurücksetzen, damit Sie debuggen können, und wiederholen Sie den Vorgang sein. Zu diesem Zweck müssen Sie die ursprünglichen Einstellungen speichern, sodass Sie nach Bedarf wiederhergestellt werden können.  
+1. Sie müssen die Einstellungen für externe Tools zurücksetzen, damit Sie debuggen können, und wiederholen Sie den Vorgang sein. Zu diesem Zweck müssen Sie die ursprünglichen Einstellungen speichern, sodass Sie nach Bedarf wiederhergestellt werden können.  
   
-2.  Öffnen Sie Regedit.exe.  
+2. Öffnen Sie Regedit.exe.  
   
-3.  Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\\.  
+3. Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\\.  
   
     > [!NOTE]
     >  Stellen Sie sicher, dass Sie den Schlüssel anzeigen, die \14.0Exp\ und nicht \14.0 enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, werden Ihre benutzereinstellungen in der Registrierungsstruktur "14.0Exp" ein.  
   
-4.  Mit der rechten Maustaste des \External Tools\-Unterschlüssels, und klicken Sie dann auf **exportieren**. Stellen Sie sicher, dass **ausgewählte Teilstruktur** ausgewählt ist.  
+4. Mit der rechten Maustaste des \External Tools\-Unterschlüssels, und klicken Sie dann auf **exportieren**. Stellen Sie sicher, dass **ausgewählte Teilstruktur** ausgewählt ist.  
   
-5.  Speichern Sie die externen Tools.reg-Ergebnisdatei an.  
+5. Speichern Sie die externen Tools.reg-Ergebnisdatei an.  
   
-6.  Später, wenn Sie die Einstellungen für externe Tools zurücksetzen möchten, wählen Sie den Registrierungsschlüssel HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\, und klicken Sie auf **löschen** im Kontextmenü.  
+6. Später, wenn Sie die Einstellungen für externe Tools zurücksetzen möchten, wählen Sie den Registrierungsschlüssel HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\, und klicken Sie auf **löschen** im Kontextmenü.  
   
-7.  Wenn die **Löschen des Schlüssels bestätigen** klicken Sie im angezeigten Dialogfeld **Ja**.  
+7. Wenn die **Löschen des Schlüssels bestätigen** klicken Sie im angezeigten Dialogfeld **Ja**.  
   
-8.  Die externe Tools.reg-Datei, die Sie zuvor gespeichert haben, klicken Sie auf **Öffnen mit**, und klicken Sie dann auf **Registrierungs-Editor**.  
+8. Die externe Tools.reg-Datei, die Sie zuvor gespeichert haben, klicken Sie auf **Öffnen mit**, und klicken Sie dann auf **Registrierungs-Editor**.  
   
 ## <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen  
   
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen UserSettingsStoreExtension, und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen UserSettingsStoreCommand. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen UserSettingsStoreExtension, und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen UserSettingsStoreCommand. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  UserSettingsStoreCommand.cs, fügen Sie die folgende using-Anweisungen:  
+2. UserSettingsStoreCommand.cs, fügen Sie die folgende using-Anweisungen:  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -53,7 +53,7 @@ Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extra
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  Klicken Sie in MenuItemCallback löschen Sie den Text der Methode, und rufen Sie Benutzer ab, die Einstellungen gespeichert werden, wie folgt:  
+3. Klicken Sie in MenuItemCallback löschen Sie den Text der Methode, und rufen Sie Benutzer ab, die Einstellungen gespeichert werden, wie folgt:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -63,7 +63,7 @@ Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extra
     }  
     ```  
   
-4.  Nun erfahren Sie, ob der Editor bereits als ein externes Tool eingerichtet ist. In diesem Fall müssen Sie eine Iteration durch alle externen Tools, die bestimmen, ob die Einstellung ToolCmd "Notepad", wie folgt lautet:  
+4. Nun erfahren Sie, ob der Editor bereits als ein externes Tool eingerichtet ist. In diesem Fall müssen Sie eine Iteration durch alle externen Tools, die bestimmen, ob die Einstellung ToolCmd "Notepad", wie folgt lautet:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -87,7 +87,7 @@ Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extra
   
     ```  
   
-5.  Wenn der Editor nicht als ein externes Tool festgelegt wurde, legen Sie es wie folgt:  
+5. Wenn der Editor nicht als ein externes Tool festgelegt wurde, legen Sie es wie folgt:  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -123,10 +123,10 @@ Benutzereinstellungen werden beschreibbaren Einstellungen wie die in der **Extra
     }  
     ```  
   
-6.  Testen des Codes. Denken Sie daran, dass sie Editor als externes Tool, hinzufügt, damit Sie die Registrierung wieder zurücksetzen müssen, bevor Sie ihn ein zweites Mal ausführen.  
+6. Testen des Codes. Denken Sie daran, dass sie Editor als externes Tool, hinzufügt, damit Sie die Registrierung wieder zurücksetzen müssen, bevor Sie ihn ein zweites Mal ausführen.  
   
-7.  Erstellen Sie den Code, und starten Sie das Debuggen.  
+7. Erstellen Sie den Code, und starten Sie das Debuggen.  
   
-8.  Auf der **Tools** Menü klicken Sie auf **aufrufen UserSettingsStoreCommand**. Dadurch wird hinzugefügt, Editor, um die **Tools** Menü.  
+8. Auf der **Tools** Menü klicken Sie auf **aufrufen UserSettingsStoreCommand**. Dadurch wird hinzugefügt, Editor, um die **Tools** Menü.  
   
 9. Editor auf die Tools angezeigt werden soll / Menü, und klicken auf "Optionen" **Editor** sollte eine Instanz von Editor aufzurufen.

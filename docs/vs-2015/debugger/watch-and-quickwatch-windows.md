@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063529"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Fenster "Überwachen" und "Schnellüberwachung"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  Sie können die Variable "a" im Fenster "Schnellüberwachung" wie folgt beobachten:  
   
-1.  Legen Sie einen Haltepunkt in der Zeile `a = a + b;` fest.  
+1. Legen Sie einen Haltepunkt in der Zeile `a = a + b;` fest.  
   
-2.  Beginnen Sie mit dem Debuggen. Die Ausführung hält am Haltepunkt an.  
+2. Beginnen Sie mit dem Debuggen. Die Ausführung hält am Haltepunkt an.  
   
-3.  Öffnen Sie das Fenster **Schnellüberwachung** (klicken Sie mit der rechten Maustaste auf "a", wählen Sie dann **Debuggen &gt; Schnellüberwachung**aus, oder drücken Sie **UMSCHALT+F9**). Sie können das Fenster öffnen und die Variable "a" dem Fenster **Ausdruck** hinzufügen. Klicken Sie dann auf **Neu auswerten**. Die Variable "a" sollte im Fenster **Werte** mit einem Wert von 2 angezeigt werden.  
+3. Öffnen Sie das Fenster **Schnellüberwachung** (klicken Sie mit der rechten Maustaste auf "a", wählen Sie dann **Debuggen &gt; Schnellüberwachung**aus, oder drücken Sie **UMSCHALT+F9**). Sie können das Fenster öffnen und die Variable "a" dem Fenster **Ausdruck** hinzufügen. Klicken Sie dann auf **Neu auswerten**. Die Variable "a" sollte im Fenster **Werte** mit einem Wert von 2 angezeigt werden.  
   
-4.  Das Fenster **Schnellüberwachung** ist ein modales Dialogfeld, d. h., Sie können den Debugvorgang nicht fortsetzen, solange es geöffnet ist. Sie können die Variable dem Fenster **Überwachen** hinzufügen, indem Sie auf **Überwachung hinzufügen**klicken.  
+4. Das Fenster **Schnellüberwachung** ist ein modales Dialogfeld, d. h., Sie können den Debugvorgang nicht fortsetzen, solange es geöffnet ist. Sie können die Variable dem Fenster **Überwachen** hinzufügen, indem Sie auf **Überwachung hinzufügen**klicken.  
   
-5.  Schließen Sie das Fenster **Schnellüberwachung** . Nun können Sie den Debugvorgang fortsetzen, während Sie den Wert im Fenster **Überwachen** beobachten  
+5. Schließen Sie das Fenster **Schnellüberwachung** . Nun können Sie den Debugvorgang fortsetzen, während Sie den Wert im Fenster **Überwachen** beobachten  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Beobachten von Variablen im Fenster "Überwachen"  
  Mehrere Variablen können Sie im Fenster **Überwachen** beobachten. Wenn Ihr Code beispielsweise folgendermaßen lautet:  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Aktualisieren von veralteten Werten im Fenster "Überwachen"  
+## <a name="bkmk_refreshWatch"></a> Aktualisieren von veralteten Werten im Fenster "Überwachen"  
  Unter bestimmten Umständen wird ein Aktualisierungssymbol (ein Kreis mit zwei Pfeilen oder ein Kreis mit zwei Wellenlinien) angezeigt, wenn ein Ausdruck im Fenster **Überwachen** ausgewertet wird.  Beispiel: Wenn Sie die Eigenschaftenauswertung deaktiviert haben (**Tools > Optionen > Debugging > Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**) und der folgende Code angezeigt wird:  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Wenn Sie ein Symbol in Form eines Kreises mit zwei Wellenlinien sehen, die Threads ähneln, wurde der Ausdruck aufgrund einer möglichen threadübergreifenden Abhängigkeit nicht ausgewertet. Mit anderen Worten: Für die Auswertung des Codes müssen andere Threads in der Anwendung vorübergehend ausgeführt werden. Wenn Sie sich im Unterbrechungsmodus befinden, sind alle Threads in der Anwendung typischerweise angehalten. Wenn die vorübergehende Ausführung anderer Threads zugelassen wird, kann dies unerwartete Auswirkungen auf den Zustand des Programms nach sich ziehen, und der Debugger ignoriert Ereignisse (wie z. B. Haltepunkte und für diese Threads ausgelöste Ausnahmen).  
   
-##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Die Auswertung des folgenden Ausdrucks ändert beispielsweise den Wert von `var1`:  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  Sie können wie folgt einen Verweis auf dieses `Person` -Objekt im Fenster **Überwachen** hinzufügen:  
   
-1.  Legen Sie im Code nach der Erstellung des Objekts einen Haltepunkt fest.  
+1. Legen Sie im Code nach der Erstellung des Objekts einen Haltepunkt fest.  
   
-2.  Starten Sie das Debugging, und suchen Sie die Variable, wenn die Ausführung im Haltepunkt anhält, im Fenster **Lokale** , klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Objekt-ID erstellen**aus.  
+2. Starten Sie das Debugging, und suchen Sie die Variable, wenn die Ausführung im Haltepunkt anhält, im Fenster **Lokale** , klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Objekt-ID erstellen**aus.  
   
-3.  Sie sollten ein **$** und eine Zahl im **Lokale** . Dies ist die Objekt-ID.  
+3. Sie sollten ein **$** und eine Zahl im **Lokale** . Dies ist die Objekt-ID.  
   
-4.  Fügen Sie die Objekt-ID dem Fenster "Überwachen" hinzu.  
+4. Fügen Sie die Objekt-ID dem Fenster "Überwachen" hinzu.  
   
-5.  Legen Sie einen Haltepunkt dort fest, wo Sie das Verhalten des Objekts beobachten möchten.  Im oben stehenden Code ist das in der `DoSomething()` -Methode.  
+5. Legen Sie einen Haltepunkt dort fest, wo Sie das Verhalten des Objekts beobachten möchten.  Im oben stehenden Code ist das in der `DoSomething()` -Methode.  
   
-6.  Setzen Sie das Debugging fort. Wenn die Ausführung in der `DoSomething()` Methode anhält, wird im Fenster **Überwachen** das Objekt `Person` angezeigt.  
+6. Setzen Sie das Debugging fort. Wenn die Ausführung in der `DoSomething()` Methode anhält, wird im Fenster **Überwachen** das Objekt `Person` angezeigt.  
   
 > [!NOTE]
 >  Wenn Sie die Eigenschaften des Objekts anzeigen möchten, z. B. `Person.Name` im oben stehenden Beispiel, muss die Eigenschaftenauswertung aktiviert sein.  

@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054729"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Hinzufügen einer Schaltfläche auf der Symbolleiste des Projektmappen-Explorer  
  In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie eine Schaltfläche zum Hinzufügen der **Projektmappen-Explorer** Symbolleiste. Wenn die Schaltfläche geklickt wird, wird der Code in der Rückrufmethode ausgeführt.  
   
-1.  Wechseln Sie in der Datei ToolbarButtonPackage.vsct zu den `<Symbols>` Abschnitt. Die `<GuidSymbol>` Knoten enthält die Gruppe und der Befehl, der durch die Paket-Vorlage generiert wurde. Hinzufügen einer `<IDSymbol>` Element auf diesen Knoten aus, um die Gruppe zu deklarieren, der den Befehl enthält.  
+1. Wechseln Sie in der Datei ToolbarButtonPackage.vsct zu den `<Symbols>` Abschnitt. Die `<GuidSymbol>` Knoten enthält die Gruppe und der Befehl, der durch die Paket-Vorlage generiert wurde. Hinzufügen einer `<IDSymbol>` Element auf diesen Knoten aus, um die Gruppe zu deklarieren, der den Befehl enthält.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  In der `<Groups>` Abschnitt nach den vorhandenen Gruppeneintrag definieren, die neue Gruppe, die Sie deklariert haben im vorherigen Schritt.  
+2. In der `<Groups>` Abschnitt nach den vorhandenen Gruppeneintrag definieren, die neue Gruppe, die Sie deklariert haben im vorherigen Schritt.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
   
      Festlegen des GUID: ID-Paar für das übergeordnete Element `guidSHLMainMenu` und `IDM_VS_TOOL_PROJWIN` legt dieser Gruppe auf die **Projektmappen-Explorer** Symbolleiste, und eine wichtige Einstellung nach dem anderen Befehlsgruppen eingefügt.  
   
-3.  In der `<Buttons>` Abschnitt, ändern Sie die übergeordnete ID der generierten `<Button>` einen Eintrag in der Gruppe anzugeben, die Sie im vorherigen Schritt definiert. Die geänderte `<Button>` -Element sollte wie folgt aussehen:  
+3. In der `<Buttons>` Abschnitt, ändern Sie die übergeordnete ID der generierten `<Button>` einen Eintrag in der Gruppe anzugeben, die Sie im vorherigen Schritt definiert. Die geänderte `<Button>` -Element sollte wie folgt aussehen:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
     </Button>  
     ```  
   
-4.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
      Die **Projektmappen-Explorer** Symbolleiste sollte die neue Schaltfläche rechts neben der vorhandenen Schaltflächen angezeigt. Das Symbol "Schaltfläche" ist die durchgestrichen.  
   
-5.  Klicken Sie auf die Schaltfläche "Neu".  
+5. Klicken Sie auf die Schaltfläche "Neu".  
   
      Ein Dialogfeld mit der Nachricht **ToolbarButtonPackage in SolutionToolbar.ToolbarButton.MenuItemCallback()** angezeigt werden soll.  
   

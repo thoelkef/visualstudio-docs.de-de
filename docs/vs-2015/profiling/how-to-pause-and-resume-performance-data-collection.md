@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9916a46089e1d3381f1bc1f41dd5b7c0178c964
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054000"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>So können Sie die Profilerstellung anhalten, fortsetzen oder beenden  
   
--   Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:  
+- Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:  
   
-    -   Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.  
+    - Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.  
   
-    -   Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.  
+    - Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.  
   
-    -   Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
+    - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Steuern der Datenauflistung](../profiling/controlling-data-collection.md)   
+ [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
  [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)

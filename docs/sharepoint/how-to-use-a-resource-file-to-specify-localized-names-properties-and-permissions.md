@@ -19,31 +19,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9014b344e030f3763037395f5fb96d446c0132f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066532"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen
   Verwenden Sie eine Ressourcendatei, können Sie lokalisierte Namen, Eigenschaften zu definieren und Anwenden von Berechtigungen Tor-Objekte, die in einem Business Data Connectivity (BDC)-Modell definiert sind. Um diese Informationen anzugeben, fügen Sie eine **Business Data Connectivity-Ressource** Element, das ein Projekt mit einem **Business Data Connectivity-Modells** Element. Dann geben Sie Namen, Eigenschaften und Berechtigungen durch Bearbeiten den XML-Code für die Ressourcendatei.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Eine BDC-Ressourcendatei einem SharePoint-Projekt hinzu
 
-1.  In **Projektmappen-Explorer**, erweitern Sie den Ordner für die SharePoint-Projekt, und wählen Sie dann den Ordner mit dem BDC-Modell.
+1. In **Projektmappen-Explorer**, erweitern Sie den Ordner für die SharePoint-Projekt, und wählen Sie dann den Ordner mit dem BDC-Modell.
 
-2.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
-3.  Erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+3. Erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
 
-4.  In der **neues Element hinzufügen** Dialogfeld wählen **Business Data Connectivity-Ressourcenelement**.
+4. In der **neues Element hinzufügen** Dialogfeld wählen **Business Data Connectivity-Ressourcenelement**.
 
-5.  In der **Namen** Feld Geben Sie den Namen der Ressourcendatei, und wählen Sie dann die **hinzufügen** Schaltfläche.
+5. In der **Namen** Feld Geben Sie den Namen der Ressourcendatei, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
      Eine Ressourcendatei, die der Erweiterung .bdcr wird dem Projekt hinzugefügt und für die Bearbeitung geöffnet.
 
-6.  Fügen Sie XML-Code, um definieren den lokalisierten Namen, Eigenschaften und Berechtigungen, die auf das BDC-Modell angewendet werden soll.
+6. Fügen Sie XML-Code, um definieren den lokalisierten Namen, Eigenschaften und Berechtigungen, die auf das BDC-Modell angewendet werden soll.
 
      Weitere Informationen zum Definieren dieser Elemente finden Sie unter [Modell und Ressourcendateien](http://go.microsoft.com/fwlink/?LinkID=169283).
 

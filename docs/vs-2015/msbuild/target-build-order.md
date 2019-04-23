@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054443"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,19 +107,19 @@ Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe ei
 ## <a name="determining-the-target-build-order"></a>Bestimmen der Buildreihenfolge für Ziele  
  MSBuild bestimmt die Buildreihenfolge für Ziele wie folgt:  
   
-1.  `InitialTargets`-Ziele werden ausgeführt.  
+1. `InitialTargets`-Ziele werden ausgeführt.  
   
-2.  Auf der Befehlszeile mit dem Schalter **/target** angegebene Ziele werden ausgeführt. Wenn Sie keine Ziele in der Befehlszeile angeben, werden die `DefaultTargets`-Ziele ausgeführt. Wenn keine Ziele vorhanden sind, wird das erste gefundene Ziel ausgeführt.  
+2. Auf der Befehlszeile mit dem Schalter **/target** angegebene Ziele werden ausgeführt. Wenn Sie keine Ziele in der Befehlszeile angeben, werden die `DefaultTargets`-Ziele ausgeführt. Wenn keine Ziele vorhanden sind, wird das erste gefundene Ziel ausgeführt.  
   
-3.  Das `Condition`-Attribut des Ziels wird ausgewertet. Wenn das `Condition`-Attribut vorhanden ist und `false` ergibt, wird das Ziel nicht ausgeführt und hat keine weitere Auswirkung auf den Build.  
+3. Das `Condition`-Attribut des Ziels wird ausgewertet. Wenn das `Condition`-Attribut vorhanden ist und `false` ergibt, wird das Ziel nicht ausgeführt und hat keine weitere Auswirkung auf den Build.  
   
-4.  Bevor ein Ziel ausgeführt wird, werden dessen `DependsOnTargets`-Ziele ausgeführt.  
+4. Bevor ein Ziel ausgeführt wird, werden dessen `DependsOnTargets`-Ziele ausgeführt.  
   
-5.  Bevor ein Ziel ausgeführt wird, werden alle Ziele ausgeführt, die es in einem `BeforeTargets`-Attribut auflisten.  
+5. Bevor ein Ziel ausgeführt wird, werden alle Ziele ausgeführt, die es in einem `BeforeTargets`-Attribut auflisten.  
   
-6.  Bevor ein Ziel ausgeführt wird, werden sein `Inputs`-Attribut und `Outputs`-Attribut verglichen. Wenn MSBuild feststellt, dass alle Ausgabedateien in Bezug auf die entsprechende(n) Eingabedatei(en) veraltet sind, wird das Ziel von MSBuild ausgeführt. Andernfalls überspringt MSBuild das Ziel.  
+6. Bevor ein Ziel ausgeführt wird, werden sein `Inputs`-Attribut und `Outputs`-Attribut verglichen. Wenn MSBuild feststellt, dass alle Ausgabedateien in Bezug auf die entsprechende(n) Eingabedatei(en) veraltet sind, wird das Ziel von MSBuild ausgeführt. Andernfalls überspringt MSBuild das Ziel.  
   
-7.  Nachdem ein Ziel ausgeführt oder übersprungen wurde, wird jedes beliebige Ziel ausgeführt, das es in einem `AfterTargets`-Attribut auflistet.  
+7. Nachdem ein Ziel ausgeführt oder übersprungen wurde, wird jedes beliebige Ziel ausgeführt, das es in einem `AfterTargets`-Attribut auflistet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Ziele](../msbuild/msbuild-targets.md)

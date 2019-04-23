@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053766"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Vorgehensweise: Verwenden des Suchtools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Suchtool im Dialogfeld "Fenster Suchen"
   
 ### <a name="to-display-window-properties-or-messages"></a>Zum Anzeigen von Eigenschaften oder Meldungen  
   
-1.  Ordnen Sie die Fenster, sodass Spy++ und das Zielfenster angezeigt werden.  
+1. Ordnen Sie die Fenster, sodass Spy++ und das Zielfenster angezeigt werden.  
   
-2.  Von der **Spy** Menü wählen **Fenster Suchen**.  
+2. Von der **Spy** Menü wählen **Fenster Suchen**.  
   
      Die [Dialogfeld Fenster Suchen](../debugger/find-window-dialog-box.md) wird geöffnet.  
   
-3.  Ziehen Sie die **Suchtool** über das Zielfenster.  
+3. Ziehen Sie die **Suchtool** über das Zielfenster.  
   
      Wie Sie das Tool, ziehen Sie die **Fenster Suchen** Dialogfeld zeigt die Details für das ausgewählte Fenster.  
   
@@ -47,9 +47,9 @@ Suchtool im Dialogfeld "Fenster Suchen"
     > [!TIP]
     >  Um die Übersichtlichkeit des Bildschirms, wählen Sie die **Spy++ ausblenden** Option. Diese Option verbirgt die Spy++-Hauptfenster, sondern nur die **Fenster Suchen** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen**, oder wenn Sie das Kontrollkästchen der **Spy++ ausblenden** Option.  
   
-4.  Klicken Sie unter **anzeigen**, wählen Sie entweder **Eigenschaften** oder **Nachrichten**.  
+4. Klicken Sie unter **anzeigen**, wählen Sie entweder **Eigenschaften** oder **Nachrichten**.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
      Wenn Sie ausgewählt haben **Eigenschaften**, [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md) wird geöffnet. Wenn Sie ausgewählt haben **Nachrichten**, [Meldungsansicht](../debugger/messages-view.md) Fenster wird geöffnet.  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061956"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Entwicklungsübersicht für Office-Projektmappen (VSTO)
   Wenn Sie Microsoft Office als Front-End für Projektmappen verwenden, können Sie die vertrauten Microsoft Office-Benutzeroberflächen und -Tools verwenden, z. B. die Textverarbeitungsfunktionen in Word, die Datenanalysefunktionen von Excel und die E-Mail-Verwaltungsfunktionen von Outlook. Sie können Projektmappen in Visual Studio entwickeln, um Office-Anwendungen anzupassen und die speziellen Funktionen hinzuzufügen, die Sie für Ihre Geschäftsprozesse benötigen. Beispielsweise können Sie Word in einen Vertragsgenerator verwandeln, mit dem Verträge aus bereits vorhandenen Teilen zusammengestellt werden können. Die Teile können dabei bearbeitbar oder nicht bearbeitbar sein. Mit Excel können Sie ein automatisiertes Budgetarbeitsblatt erstellen, das für unterschiedliche Projekte angepasst werden kann. Ihre Benutzer können Bürolösungen auch offline verwenden. Dies ist bei komplexen Lösungen praktikabler als die Verwendung einer webbasierten Architektur.
@@ -43,11 +43,11 @@ ms.locfileid: "56628779"
 
  Weitere Informationen zu Anpassungen finden Sie in den folgenden Themen:
 
--   [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)
+- [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>VSTO-Add-Ins
  VSTO-Add-Ins bestehen aus einer Assembly, die einer Microsoft Office-Anwendung zugeordnet ist. Normalerweise wird das VSTO-Add-In ausgeführt, wenn die zugeordnete Anwendung gestartet wird, Benutzer können VSTO-Add-Ins aber auch laden, nachdem die Anwendung bereits ausgeführt wird. Funktionen in VSTO-Add-Ins, die Sie erstellen, sind für die eigentliche Anwendung verfügbar. Dabei spielt es keine Rolle, welche Dokumente geöffnet sind.
@@ -56,9 +56,9 @@ ms.locfileid: "56628779"
 
  Weitere Informationen zu VSTO-Add-Ins finden Sie unter den folgenden Themen:
 
--   [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Erste Schritte zum Programmieren von VSTO-Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatisieren der Office-Anwendungen mit primären interop-Assemblys
  Sie können die Funktionen einer Office-Anwendung programmgesteuert in Ihre Projektmappe einbinden, indem Sie Code schreiben, mit dem auf das Objektmodell der Anwendung zugegriffen wird. Bei Objektmodellen handelt es sich um eine Anordnung von Klassen, mit denen die Funktionalität unter Verwendung verschiedener Eigenschaften und Methoden verfügbar gemacht wird. Das Objektmodell ist für jede Office-Anwendung anders.
@@ -69,9 +69,9 @@ ms.locfileid: "56628779"
 
  Weitere Informationen zum Verwenden der PIAs in VSTO-Office-Projektmappen finden Sie unter den folgenden Themen:
 
--   [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)
+- [Schreiben Sie Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)
 
--   [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
+- [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Ausführen von Microsoft VSTO-Office-Projektmappen auf Endbenutzercomputern
  Berücksichtigen Sie beim Erstellen einer VSTO-Office-Projektmappe, wie sich die Bereitstellungsanforderungen auf Ihre Entwicklungsentscheidungen auswirken.

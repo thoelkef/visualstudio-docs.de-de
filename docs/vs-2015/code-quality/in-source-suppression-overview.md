@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057159"
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Unterdrückung im Quellcode ist die Möglichkeit, unterdrücken oder ignorieren Verletzungen der Codeanalyse in verwaltetem Code durch Hinzufügen der **SuppressMessage** -Attribut auf die Codesegmente, die dazu führen, die Verstöße dass. Die **SuppressMessage** -Attribut ist ein conditional-Attribut die in der IL-Metadaten einer Assembly mit verwaltetem Code enthalten ist, nur dann, wenn das Symbol für die CODE_ANALYSIS-Kompilierung zum Zeitpunkt der Kompilierung definiert wird.  
   
- In C++ / CLI, verwenden Sie die Makros, CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.  
+ In C++/CLI, verwenden Sie die Makros, CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.  
   
  Sie sollten nicht im Quellcode-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die Metadaten für die Unterdrückung im Quellcode versehentlich zu versenden. Aufgrund der Verarbeitungskosten Unterdrückung im Quellcode kann auch die Leistung Ihrer Anwendung beeinträchtigt werden, durch die Unterdrückung im Quellcode-Metadaten einschließen.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Ort:  
   
--   **Regel Kategorie** -die Kategorie, in dem die Regel definiert wird. Weitere Informationen zu Codeanalyseregeln, finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Regel Kategorie** -die Kategorie, in dem die Regel definiert wird. Weitere Informationen zu Codeanalyseregeln, finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Regel-Id** – der Bezeichner der Regel. Die Unterstützung umfasst sowohl eine kurze und lange Namen für die Regel-ID an. Der kurze Name ist CAXXXX; der lange Name ist CAXXXX:FriendlyTypeName.  
+- **Regel-Id** – der Bezeichner der Regel. Die Unterstützung umfasst sowohl eine kurze und lange Namen für die Regel-ID an. Der kurze Name ist CAXXXX; der lange Name ist CAXXXX:FriendlyTypeName.  
   
--   **Begründung** -der Text, der verwendet wird, um den Grund für das Unterdrücken der Meldung dokumentieren.  
+- **Begründung** -der Text, der verwendet wird, um den Grund für das Unterdrücken der Meldung dokumentieren.  
   
--   **Meldungs-Id** – Eindeutiger Bezeichner für ein Problem für jede Nachricht.  
+- **Meldungs-Id** – Eindeutiger Bezeichner für ein Problem für jede Nachricht.  
   
--   **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt  
+- **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt  
   
-    -   Modul  
+    - Modul  
   
-    -   Namespace  
+    - Namespace  
   
-    -   Ressource  
+    - Ressource  
   
-    -   Typ  
+    - Typ  
   
-    -   Member  
+    - Member  
   
--   **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss einen vollqualifizierten Elementnamen enthalten.  
+- **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss einen vollqualifizierten Elementnamen enthalten.  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage-Nutzung  
  Warnungen der Codeanalyse unterdrückt werden, auf der Ebene, der eine Instanz von der **SuppressMessage** Attribut angewendet wird. Das Zweck dieses werden eng gekoppelt die Unterdrückungsinformationen aus, um den Code, in dem die Verletzung auftritt.  

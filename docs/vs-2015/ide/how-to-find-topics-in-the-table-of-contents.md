@@ -16,14 +16,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055497"
 ---
-# <a name="how-to-find-topics-in-the-table-of-contents"></a>Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis
+# <a name="how-to-find-topics-in-the-table-of-contents"></a>Vorgehensweise: Suchen nach Themen im Inhaltsverzeichnis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, um Informationen zu suchen. Das Inhaltsverzeichnis ist eine erweiterbare Liste, die alle Themen in den installierten Büchern enthält. Informationen zur Navigation durch das Inhaltsverzeichnis mithilfe von Tastenkombinationen finden Sie unter [Tastenkombinationen (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
@@ -36,9 +36,9 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
   
 #### <a name="to-filter-the-toc"></a>So filtern Sie Inhaltsverzeichnisse  
   
-1.  Klicken Sie auf die Registerkarte **Inhalt**.  
+1. Klicken Sie auf die Registerkarte **Inhalt**.  
   
-2.  Geben Sie im Textfeld **Inhalte filtern** einen Begriff ein.  
+2. Geben Sie im Textfeld **Inhalte filtern** einen Begriff ein.  
   
 > [!NOTE]
 >  Wenn die Ausführung des Filters viel Zeit in Anspruch nimmt, versuchen Sie es mit dem erweiterten Suchoperator `title:`, wodurch Ergebnisse möglicherweise schneller angezeigt werden.  
@@ -48,9 +48,9 @@ Auf der Registerkarte **Inhalt** können Sie das Inhaltsverzeichnis verwenden, u
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>So synchronisieren Sie das Inhaltsverzeichnis mit dem Themenfenster  
   
-1.  Zeigen Sie ein Thema an.  
+1. Zeigen Sie ein Thema an.  
   
-2.  Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie STRG+S.  
+2. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Thema in Inhalten anzeigen**, oder drücken Sie STRG+S.  
   
      Die Registerkarte **Inhalt** wird geöffnet und zeigt den Speicherort des Themas im Inhaltsverzeichnis an.  
   

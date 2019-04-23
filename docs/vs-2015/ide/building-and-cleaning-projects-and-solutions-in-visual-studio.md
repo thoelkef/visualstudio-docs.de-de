@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba3a7c26f56b923b9286a5e2f290502f2765e2b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054546"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,28 +40,28 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinigen
 
-1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus, oder öffnen Sie sie.
+1. Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus, oder öffnen Sie sie.
 
-2.  Wählen Sie dann auf der Menüleiste **Erstellen**, gefolgt von einem der folgenden Befehle aus:
+2. Wählen Sie dann auf der Menüleiste **Erstellen**, gefolgt von einem der folgenden Befehle aus:
 
-    -   Wählen Sie **Erstellen** oder **Projektmappe erstellen** aus, um nur diejenigen Projektdateien und Komponenten zu kompilieren, die sich seit dem letzten Build geändert haben.
+    - Wählen Sie **Erstellen** oder **Projektmappe erstellen** aus, um nur diejenigen Projektdateien und Komponenten zu kompilieren, die sich seit dem letzten Build geändert haben.
 
         > [!NOTE]
         >  Der Befehl **Erstellen** wandelt sich in **Projektmappe erstellen**, wenn eine Projektmappe mehr als ein Projekt enthält.
 
-    -   Wählen Sie **Projektmappe neu erstellen** aus, um die Projektmappe zu „bereinigen“ und anschließend alle Projektdateien und Komponenten zu erstellen.
+    - Wählen Sie **Projektmappe neu erstellen** aus, um die Projektmappe zu „bereinigen“ und anschließend alle Projektdateien und Komponenten zu erstellen.
 
-    -   Wählen Sie **Projektmappe bereinigen** aus, um alle eventuellen Interims- und Ausgabedateien zu löschen. Dann bleiben nur die Projekt- und Komponentendateien übrig, und neue Instanzen der Interims- und Ausgabedateien können erstellt werden.
+    - Wählen Sie **Projektmappe bereinigen** aus, um alle eventuellen Interims- und Ausgabedateien zu löschen. Dann bleiben nur die Projekt- und Komponentendateien übrig, und neue Instanzen der Interims- und Ausgabedateien können erstellt werden.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>So erstellen Sie ein einzelnes Projekt oder erstellen es neu
 
-1.  Wählen Sie im **Projektmappen-Explorer** das Projekt aus, oder öffnen Sie es.
+1. Wählen Sie im **Projektmappen-Explorer** das Projekt aus, oder öffnen Sie es.
 
-2.  Wählen Sie in der Menüleiste **Erstellen** und dann entweder **Projektname** _erstellen_ oder **Projektname** _neu erstellen_ aus.
+2. Wählen Sie in der Menüleiste **Erstellen** und dann entweder **Projektname** _erstellen_ oder **Projektname** _neu erstellen_ aus.
 
-    -   Wählen Sie **Projektname** _erstellen_ aus, um nur die Projektkomponenten zu erstellen, die sich seit dem letzten Build geändert haben.
+    - Wählen Sie **Projektname** _erstellen_ aus, um nur die Projektkomponenten zu erstellen, die sich seit dem letzten Build geändert haben.
 
-    -   Wählen Sie **Projektname** _neu erstellen_ aus, um das Projekt zu „bereinigen“ und dann die Projektdateien und alle Projektkomponenten zu erstellen.
+    - Wählen Sie **Projektname** _neu erstellen_ aus, um das Projekt zu „bereinigen“ und dann die Projektdateien und alle Projektkomponenten zu erstellen.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>So erstellen Sie nur das Startprojekt und seine Abhängigkeiten
 
@@ -97,17 +97,17 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
 ## <a name="to-compile-multiple-c-project-items"></a>So kompilieren Sie mehrere C++-Projektelemente
 
-1.  Wählen Sie im **Projektmappen-Explorer** mehrere Dateien aus, die kompilierbare Aktionen aufweisen, öffnen Sie das Kontextmenü für eine dieser Dateien, und wählen Sie dann **Kompilieren** aus.
+1. Wählen Sie im **Projektmappen-Explorer** mehrere Dateien aus, die kompilierbare Aktionen aufweisen, öffnen Sie das Kontextmenü für eine dieser Dateien, und wählen Sie dann **Kompilieren** aus.
 
      Wenn die Dateien Abhängigkeiten aufweisen, werden die Dateien in der Reihenfolge der Abhängigkeit kompiliert. Beim Kompilieren tritt ein Fehler auf, wenn für die Dateien ein vorkompilierter Header erforderlich ist, der zum Zeitpunkt des Kompilierens nicht verfügbar ist. Der Kompiliervorgang verwendet die aktuelle Konfiguration der aktiven Projektmappe.
 
 ## <a name="to-stop-a-build"></a>So beenden Sie einen Build
 
-1.  Führen Sie einen der folgenden Schritte aus:
+1. Führen Sie einen der folgenden Schritte aus:
 
-    -   Wählen Sie in der Menüleiste **Erstellen**, **Abbrechen** aus.
+    - Wählen Sie in der Menüleiste **Erstellen**, **Abbrechen** aus.
 
-    -   Verwenden Sie die Tasten STRG+UNTBR.
+    - Verwenden Sie die Tasten STRG+UNTBR.
 
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Debug und Release-Projektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [Referenz zur C/C++-Erstellung](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekten](../ide/solutions-and-projects-in-visual-studio.md)
+ [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Debug und Release-Projektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ Referenz zur Erstellung](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekten](../ide/solutions-and-projects-in-visual-studio.md)

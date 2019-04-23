@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fca04d921fb423bafccbeef56c9f3ff499d05d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059200"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +35,26 @@ Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekt
   
  Die folgenden LayoutPanel-Elemente sind die meisten allgemein verwendeten, aber es gibt noch andere. Sie befinden sich im Bereich **Bestand**.  
   
--   [Raster](#Grid)  
+- [Raster](#Grid)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Canvas](#Canvas)  
+- [Canvas](#Canvas)  
   
--   [StackPanel](#Stack)  
+- [StackPanel](#Stack)  
   
--   [WrapPanel](#Wrap)  
+- [WrapPanel](#Wrap)  
   
--   [DockPanel](#Dock)  
+- [DockPanel](#Dock)  
   
-###  <a name="Grid"></a> Raster  
+### <a name="Grid"></a> Raster  
  Anordnen von Objekten in Zeilen und Spalten.  
   
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Verwendung von Rastern](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
-###  <a name="Uniform"></a> UniformGrid  
+### <a name="Uniform"></a> UniformGrid  
  Anordnen von Objekten in gleiche oder einheitliche Rasterbereiche. Dieser Bereich eignet sich hervorragend für die Anordnung einer Liste von Bildern.  
   
  ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
@@ -63,21 +63,21 @@ Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekt
   
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit einem UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
-###  <a name="Canvas"></a> Canvas  
+### <a name="Canvas"></a> Canvas  
  Anordnen von Objekten auf jede gewünschte Weise. Wenn Benutzer Ihre Anwendung ausführen, haben diese Elemente feste Positionen auf dem Bildschirm.  
   
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
  **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit dem Zeichnungsbereich](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
-###  <a name="Stack"></a> StackPanel  
+### <a name="Stack"></a> StackPanel  
  Horizontales oder vertikales Anordnen von Objekten in einer einzelnen Zeile.  
   
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit StackPanel und WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Wrap"></a> WrapPanel  
+### <a name="Wrap"></a> WrapPanel  
  Anordnen von Objekten nacheinander von links nach rechts. Wenn der Bereich am rechten Rand nicht genügend Platz aufweist, wird der Inhalt in die nächste Zeile *umgebrochen*, von links nach rechts und von oben nach unten. Sie können auch die ein WrapPanel-Element vertikal ausrichten, sodass Objekte von oben nach unten und von links nach rechts fließen.  
   
  (Nur für WPF-Projekte verfügbar)  
@@ -86,7 +86,7 @@ Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekt
   
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit StackPanel und WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Dock"></a> DockPanel  
+### <a name="Dock"></a> DockPanel  
  Ordnet Elemente so an, dass sie an einer Kante des Panels bleiben (*andocken*).  
   
  (Nur für WPF-Projekte verfügbar)  
@@ -100,32 +100,32 @@ Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekt
   
  Die folgenden LayoutPanel-Elemente sind die meisten, allgemein verwendeten, aber es gibt noch andere. Sie finden Sie alle im Bereich **Bestand**.  
   
--   [Randbereich](#Border)  
+- [Randbereich](#Border)  
   
--   [Popup](#Popup)  
+- [Popup](#Popup)  
   
--   [ScrollViewer](#Scroll)  
+- [ScrollViewer](#Scroll)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Viewbox](#View)  
+- [Viewbox](#View)  
   
-###  <a name="Border"></a> Rahmen  
+### <a name="Border"></a> Rahmen  
  Erstellen Sie einen Rahmen, Hintergrund oder beides rund um ein Objekt. Sie können einem **Rahmen** nur ein Objekt hinzufügen. Wenn Sie einen Rahmen oder Hintergrund für mehrere Objekte benötigen, fügen Sie einen Layoutbereich zum **Rahmen** hinzu. Dann fügen Sie Objekte zu diesem Panel oder Steuerelement hinzu.  
   
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit Rahmen](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
-###  <a name="Popup"></a> Popup  
+### <a name="Popup"></a> Popup  
  Anzeigen von Informationen oder Optionen für Benutzer in einem Fenster. Sie können einem **Popup** nur ein Objekt hinzufügen. In der Standardeinstellung enthält ein **Popup** ein **Raster**. Dies lässt sich jedoch ändern.  
   
-###  <a name="Scroll"></a> ScrollViewer  
+### <a name="Scroll"></a> ScrollViewer  
  Ermöglicht Benutzern, den Bildlauf auf einer Seite oder ein einem Bereich zu verwenden. Sie können einem **ScrollViewer** nur ein Objekt hinzufügen. Deshalb ist es sehr sinnvoll, einen Layoutbereich hinzuzufügen, z.B. ein **Raster** oder ein **StackPanel**.  
   
  ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
   
-###  <a name="View"></a> Viewbox  
+### <a name="View"></a> Viewbox  
  Skalieren von Objekten ähnlich wie bei einem Zoomsteuerelement. Sie können einer **Viewbox** nur ein Objekt hinzufügen. Wenn Sie diesen Effekt auf mehr als ein Objekt anwenden möchten, fügen Sie der **ViewBox** einen Layoutbereich mit Steuerelementen hinzu.  
   
  (Nur für WPF-Projekte verfügbar)  

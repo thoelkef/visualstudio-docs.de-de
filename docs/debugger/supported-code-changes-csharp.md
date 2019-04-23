@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055787"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte codeänderungen (C# und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.
@@ -45,7 +45,7 @@ Die folgende Tabelle zeigt die Änderungen werden möglicherweise C# und Visual 
 ## <a name="unsupported-changes-to-code"></a>Nicht unterstützte Änderungen an code
  Die folgenden Änderungen können nicht angewendet werden, um C# und Visual Basic-Code während einer Debugsitzung:
 
--   Änderungen an der aktuellen Anweisung oder einer beliebigen anderen aktiven Anweisung.
+- Änderungen an der aktuellen Anweisung oder einer beliebigen anderen aktiven Anweisung.
 
      Aktive Anweisungen umfassen alle Anweisungen in Funktionen der Aufrufliste, die aufgerufen wurden, um zur aktuellen Anweisung zu gelangen.
 
@@ -78,7 +78,7 @@ Die folgende Tabelle zeigt die Änderungen werden möglicherweise C# und Visual 
 |Iterators|Ändern Sie einen Iterator in einem Projekt auf .NET Framework 4 ausgerichtet und senken (finden Sie unter [Details](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Unsicherer Code
- Bei Änderungen an unsicherem Code gibt es dieselben Einschränkungen wie bei Änderungen an sicherem Code, es gibt jedoch eine zusätzliche Einschränkung: „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden ist, die den Operator `stackalloc` enthält.
+ Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: Bearbeiten und Fortfahren unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden, die enthält die `stackalloc` Operator.
 
 ## <a name="unsupported-app-scenarios"></a>Nicht unterstützte app-Szenarien
 
@@ -90,20 +90,20 @@ Nicht unterstützte Anwendungen und Plattformen gehören ASP.NET 5, Silverlight 
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien
  Bearbeiten und Fortfahren steht in den folgenden Debugszenarios nicht zur Verfügung:
 
--   Debuggen im gemischten Modus (systemeigen/verwaltet).
+- Debuggen im gemischten Modus (systemeigen/verwaltet).
 
--   SQL-Debuggen.
+- SQL-Debuggen.
 
--   Debuggen einer Dr. Watson-Sicherungskopie.
+- Debuggen einer Dr. Watson-Sicherungskopie.
 
--   Debuggen einer eingebetteten Laufzeitanwendung.
+- Debuggen einer eingebetteten Laufzeitanwendung.
 
--   Debuggen einer Anwendung mit an den Prozess anhängen (**Debuggen > an den Prozess anhängen**) anstatt die Anwendung dazu **starten** aus der **Debuggen** Menü.
+- Debuggen einer Anwendung mit an den Prozess anhängen (**Debuggen > an den Prozess anhängen**) anstatt die Anwendung dazu **starten** aus der **Debuggen** Menü.
 
--   Debuggen von optimiertem Code.
+- Debuggen von optimiertem Code.
 
--   Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.
+- Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.
 
 ## <a name="see-also"></a>Siehe auch
 - [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Vorgehensweise: Verwenden von „Bearbeiten und fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

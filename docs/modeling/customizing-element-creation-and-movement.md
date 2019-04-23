@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4b2f57485a942877861400aec9ec7d0f13f977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00026cd53a67a216e126bcc5de92a136a6359331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043523"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 
@@ -87,9 +87,9 @@ Benutzer können auch Elemente in andere Elemente einfügen.
 
 2. Zusammenführen von Elementen am Benutzer informieren, `ExampleElement` Formen, erstellen Sie eine neue EMD in die `ExampleElement` Domänenklasse:
 
-   1.  In **DSL-Explorer**, erweitern Sie **Domänenklassen**. Mit der rechten Maustaste `ExampleElement` , und klicken Sie dann auf **Hinzufügen neuer Elementmerge-Anweisung**.
+   1. In **DSL-Explorer**, erweitern Sie **Domänenklassen**. Mit der rechten Maustaste `ExampleElement` , und klicken Sie dann auf **Hinzufügen neuer Elementmerge-Anweisung**.
 
-   2.  Stellen Sie sicher, dass die **DSL-Details** Fenster geöffnet ist, sodass Sie die Details der neuen EMD sehen können. (Im Menü: **Anzeigen von**, **andere Windows**, **DSL-Details**.)
+   2. Stellen Sie sicher, dass die **DSL-Details** Fenster geöffnet ist, sodass Sie die Details der neuen EMD sehen können. (Im Menü: **Anzeigen von**, **andere Windows**, **DSL-Details**.)
 
 3. Legen Sie die **indizierende Klasse** im DSL-Details-Fenster, zu definieren, welche Klasse von Elementen auf zusammengeführt werden kann `ExampleElement` Objekte.
 
@@ -117,29 +117,29 @@ Benutzer können auch Elemente in andere Elemente einfügen.
 
 5. Testen Sie die DSL an:
 
-   1.  Drücken Sie **F5** neu erstellen, und führen Sie die Projektmappe.
+   1. Drücken Sie **F5** neu erstellen, und führen Sie die Projektmappe.
 
         Neuerstellung dauert länger als üblich, da der generierte Code aus Textvorlagen, um die neue DSL-Definition entsprechen aktualisiert wird.
 
-   2.  Wenn die experimentelle Instanz von Visual Studio gestartet wurde, öffnen Sie eine Modelldatei Ihrer DSL. Erstellen Sie eine Beispiel-Elemente.
+   2. Wenn die experimentelle Instanz von Visual Studio gestartet wurde, öffnen Sie eine Modelldatei Ihrer DSL. Erstellen Sie eine Beispiel-Elemente.
 
-   3.  Ziehen Sie aus der **Beispielelement** Tool auf einer vorhandenen Form.
+   3. Ziehen Sie aus der **Beispielelement** Tool auf einer vorhandenen Form.
 
         Eine neue Form angezeigt wird, und sie mit der vorhandenen Form mit einem Connector verknüpft ist.
 
-   4.  Kopieren einer vorhandenen Form an. Wählen Sie eine andere Form, und fügen Sie ein.
+   4. Kopieren einer vorhandenen Form an. Wählen Sie eine andere Form, und fügen Sie ein.
 
         Eine Kopie der ersten Form wird erstellt.  Es hat es sich um einen neuen Namen, und sie mit der zweiten Form mit einem Connector verknüpft ist.
 
 Beachten Sie die folgenden Punkte in diesem Verfahren aus:
 
--   Erstellen Sie die Elementmerge-Anweisungen, können Sie jede Klasse des Elements, akzeptieren Sie alle anderen zulassen. Die EMD wird in der empfangenden Domänenklasse erstellt, und die akzeptierte Domäne-Klasse wird angegeben, der **Index-Klasse** Feld.
+- Erstellen Sie die Elementmerge-Anweisungen, können Sie jede Klasse des Elements, akzeptieren Sie alle anderen zulassen. Die EMD wird in der empfangenden Domänenklasse erstellt, und die akzeptierte Domäne-Klasse wird angegeben, der **Index-Klasse** Feld.
 
--   Durch Definieren von Pfaden, können Sie festlegen, welche Links sollte verwendet werden, um das neue Element mit dem vorhandenen Modell herzustellen.
+- Durch Definieren von Pfaden, können Sie festlegen, welche Links sollte verwendet werden, um das neue Element mit dem vorhandenen Modell herzustellen.
 
      Die Links, die Sie angeben, sollte einer einbettende Beziehung enthalten.
 
--   Die EMD wirkt sich sowohl die Erstellung aus der Toolbox, und auch einfügen.
+- Die EMD wirkt sich sowohl die Erstellung aus der Toolbox, und auch einfügen.
 
      Wenn Sie benutzerdefinierten Code, die neuen Elemente erstellt schreiben, können Sie die EMD explizit aufrufen, indem Sie mit der `ElementOperations.Merge` Methode. Dadurch wird sichergestellt, dass Ihr Code neue Elemente in das Modell in die gleiche Weise wie andere Vorgänge verknüpft. Weitere Informationen finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md).
 
@@ -149,21 +149,21 @@ Eine EMD benutzerdefinierten Code hinzufügen, können Sie komplexere Zusammenf�
 
 ### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Zum Schreiben von Code benutzerdefiniertes akzeptieren, um einzuschränken, was der Benutzer hinzufügen können
 
-1.  Erstellen Sie eine DSL mithilfe der **minimale Sprache** Projektmappe (Vorlage). Öffnen Sie im DSL-Definitionsdiagramm.
+1. Erstellen Sie eine DSL mithilfe der **minimale Sprache** Projektmappe (Vorlage). Öffnen Sie im DSL-Definitionsdiagramm.
 
-2.  Erweitern Sie im DSL-Explorer **Domänenklassen**, `ExampleModel`, **Elementmerge-Anweisungen**. Wählen Sie die elementmerge-Anweisung mit dem Namen `ExampleElement`.
+2. Erweitern Sie im DSL-Explorer **Domänenklassen**, `ExampleModel`, **Elementmerge-Anweisungen**. Wählen Sie die elementmerge-Anweisung mit dem Namen `ExampleElement`.
 
      Diese EMD steuert, wie der Benutzer neu erstellen kann `ExampleElement` Objekte im Modell, indem Sie beispielsweise aus der Toolbox ziehen.
 
-3.  In der **DSL-Details** wählen Sie im Fenster **verwendet benutzerdefiniertes akzeptieren**.
+3. In der **DSL-Details** wählen Sie im Fenster **verwendet benutzerdefiniertes akzeptieren**.
 
-4.  Generieren Sie die Projektmappe neu. Dies dauert länger als üblich, da es sich bei der generierte Code aus dem Modell aktualisiert wird.
+4. Generieren Sie die Projektmappe neu. Dies dauert länger als üblich, da es sich bei der generierte Code aus dem Modell aktualisiert wird.
 
      Ein Buildfehler werden gemeldet, ähnlich: "Company.ElementMergeSample.ExampleElement enthält eine Definition für CanMergeExampleElement keine..."
 
      Sie müssen die Methode implementieren `CanMergeExampleElement`.
 
-5.  Erstellen Sie eine neue Codedatei, in der **Dsl** Projekt. Ersetzen Sie deren Inhalt durch den folgenden Code ein, und ändern Sie den Namespace auf den Namespace des Projekts.
+5. Erstellen Sie eine neue Codedatei, in der **Dsl** Projekt. Ersetzen Sie deren Inhalt durch den folgenden Code ein, und ändern Sie den Namespace auf den Namespace des Projekts.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -192,11 +192,11 @@ Eine EMD benutzerdefinierten Code hinzufügen, können Sie komplexere Zusammenf�
 
     In diesem einfache Beispiel schränkt die Anzahl der Elemente, die das übergeordnete Modell zusammengeführt werden können. Weitere interessante Bedingungen kann die Methode eine der Eigenschaften und Links, der das empfangende Objekt überprüfen. Es kann auch überprüfen, das Zusammenführen von Elementen, die übertragen werden die Eigenschaften einer <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Weitere Informationen zu `ElementGroupPrototypes`, finden Sie unter [Anpassen des Verhaltens beim Kopieren](../modeling/customizing-copy-behavior.md). Weitere Informationen dazu, wie Sie Code schreiben, der ein Modell liest, finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-6.  Testen Sie die DSL an:
+6. Testen Sie die DSL an:
 
-    1.  Drücken Sie **F5** auf die Projektmappe erneut erstellen. Wenn die experimentelle Instanz von Visual Studio geöffnet wird, öffnen Sie eine Instanz Ihrer DSL.
+    1. Drücken Sie **F5** auf die Projektmappe erneut erstellen. Wenn die experimentelle Instanz von Visual Studio geöffnet wird, öffnen Sie eine Instanz Ihrer DSL.
 
-    2.  Erstellen Sie neue Elemente auf verschiedene Weise:
+    2. Erstellen Sie neue Elemente auf verschiedene Weise:
 
         - Ziehen Sie aus der **Beispielelement** Werkzeug in das Diagramm.
 
@@ -204,7 +204,7 @@ Eine EMD benutzerdefinierten Code hinzufügen, können Sie komplexere Zusammenf�
 
         - Kopieren Sie ein Element im Diagramm.
 
-    3.  Stellen Sie sicher, dass Sie keine dieser Methoden zum Hinzufügen von mehr als vier Elemente für das Modell verwenden können. Dies ist, da sie alle der Elementmerge-Anweisung verwenden.
+    3. Stellen Sie sicher, dass Sie keine dieser Methoden zum Hinzufügen von mehr als vier Elemente für das Modell verwenden können. Dies ist, da sie alle der Elementmerge-Anweisung verwenden.
 
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Beispiel: Eine EMD Zusammenführen von benutzerdefinierten Code hinzufügen
 
@@ -218,19 +218,19 @@ In benutzerdefinierten Zusammenführung von Code können Sie definieren, was ges
 
 ### <a name="to-override-mergerelate"></a>MergeRelate überschreiben
 
-1.  Stellen Sie sicher, dass Sie die EMD definiert haben, zu dem Sie Code hinzufügen möchten, in der DSL-Definition. Wenn Sie möchten, können Sie diese Pfade hinzufügen und definieren benutzerdefinierte Code akzeptiert, wie in den vorherigen Abschnitten beschrieben.
+1. Stellen Sie sicher, dass Sie die EMD definiert haben, zu dem Sie Code hinzufügen möchten, in der DSL-Definition. Wenn Sie möchten, können Sie diese Pfade hinzufügen und definieren benutzerdefinierte Code akzeptiert, wie in den vorherigen Abschnitten beschrieben.
 
-2.  Wählen Sie im Diagramm DslDefinition erhaltenen Klasse der Zusammenführung aus. In der Regel wird die Klasse am Quellenende einer einbettenden Beziehung.
+2. Wählen Sie im Diagramm DslDefinition erhaltenen Klasse der Zusammenführung aus. In der Regel wird die Klasse am Quellenende einer einbettenden Beziehung.
 
      Wählen Sie in einer DSL, die von der Lösung für die minimale Sprache generiert wird, z. B. `ExampleModel`.
 
-3.  In der **Eigenschaften** legen **generiert doppelte Ableitungen** zu **"true"**.
+3. In der **Eigenschaften** legen **generiert doppelte Ableitungen** zu **"true"**.
 
-4.  Generieren Sie die Projektmappe neu.
+4. Generieren Sie die Projektmappe neu.
 
-5.  Überprüfen Sie den Inhalt des **Dsl\Generated Files\DomainClasses.cs**. Suche nach Methoden, die mit dem Namen `MergeRelate` und deren Inhalt untersuchen. Dadurch können Sie Ihre eigenen Versionen zu schreiben.
+5. Überprüfen Sie den Inhalt des **Dsl\Generated Files\DomainClasses.cs**. Suche nach Methoden, die mit dem Namen `MergeRelate` und deren Inhalt untersuchen. Dadurch können Sie Ihre eigenen Versionen zu schreiben.
 
-6.  Klicken Sie in eine neue Codedatei, eine partielle Klasse für den empfangenden Klasse schreiben, und überschreiben die `MergeRelate` Methode. Denken Sie daran, die Basismethode aufrufen. Zum Beispiel:
+6. Klicken Sie in eine neue Codedatei, eine partielle Klasse für den empfangenden Klasse schreiben, und überschreiben die `MergeRelate` Methode. Denken Sie daran, die Basismethode aufrufen. Zum Beispiel:
 
     ```csharp
     partial class ExampleModel

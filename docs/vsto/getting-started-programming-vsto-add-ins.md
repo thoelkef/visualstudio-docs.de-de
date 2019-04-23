@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061987"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Erste Schritte zum Programmieren von VSTO-Add-ins
   Sie können mit VSTO-Add-Ins Microsoft Office-Anwendungen automatisieren, Funktionen der Anwendung erweitern und die Benutzeroberfläche der Anwendung anpassen. Informationen zu VSTO-Add-ins im Vergleich zu anderen Arten von Office-Projektmappen können Sie mithilfe von Visual Studio erstellen, finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618834"
 
  Weitere Informationen zu den Objektmodellen von bestimmten Microsoft Office-Anwendungen finden Sie unter den folgenden Themen:
 
--   [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md)
+- [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md)
 
--   [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
+- [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
 
--   [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)
+- [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath-Lösungen](../vsto/infopath-solutions.md)
+- [InfoPath-Lösungen](../vsto/infopath-solutions.md)
 
--   [PowerPoint-Projektmappen](../vsto/powerpoint-solutions.md)
+- [PowerPoint-Projektmappen](../vsto/powerpoint-solutions.md)
 
--   [Projektmappen](../vsto/project-solutions.md)
+- [Projektmappen](../vsto/project-solutions.md)
 
--   [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
+- [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Anpassen der Benutzeroberfläche von Anwendungen
  Es gibt mehrere Möglichkeiten, die Benutzeroberfläche der hostanwendung mithilfe eines VSTO-Add-Ins anpassen:

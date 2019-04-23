@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059265"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Zum Erstellen einer Laufzeit-Textvorlage  
   
-1.  Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **neues Element**.  
+1. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **neues Element**.  
   
-2.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Runtimetextvorlage**. (In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] suchen Sie unter **allgemeine Items\General**.)  
+2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Runtimetextvorlage**. (In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] suchen Sie unter **allgemeine Items\General**.)  
   
-3.  Geben Sie einen Namen für die Vorlagendatei an.  
+3. Geben Sie einen Namen für die Vorlagendatei an.  
   
     > [!NOTE]
     >  Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Aus diesem Grund sollten sie Leerzeichen oder Interpunktionszeichen keine.  
   
-4.  Wählen Sie **Hinzufügen** aus.  
+4. Wählen Sie **Hinzufügen** aus.  
   
      Eine neue Datei wird erstellt, mit der Erweiterung **TT**. Die **benutzerdefiniertes Tool** -Eigenschaftensatz auf **TextTemplatingFilePreprocessor**. Es enthält die folgenden Zeilen:  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Um eine vorhandene Textdatei in eine Laufzeitvorlage zu konvertieren.  
   
-1.  Schließen Sie die Datei in Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **vorhandenes Element**.  
+1. Schließen Sie die Datei in Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **vorhandenes Element**.  
   
-2.  Legen Sie die Datei **benutzerdefinierte Tools** Eigenschaft **TextTemplatingFilePreprocessor**. Wählen Sie im Projektmappen-Explorer im Kontextmenü der Datei **Eigenschaften**.  
+2. Legen Sie die Datei **benutzerdefinierte Tools** Eigenschaft **TextTemplatingFilePreprocessor**. Wählen Sie im Projektmappen-Explorer im Kontextmenü der Datei **Eigenschaften**.  
   
     > [!NOTE]
     >  Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass er ist **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann auftreten, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.  
   
-3.  Ändern Sie die Dateinamenerweiterung zu **TT**. Obwohl dieser Schritt optional ist, können Sie vermeiden Sie die Datei in einem falschen Editor öffnen.  
+3. Ändern Sie die Dateinamenerweiterung zu **TT**. Obwohl dieser Schritt optional ist, können Sie vermeiden Sie die Datei in einem falschen Editor öffnen.  
   
-4.  Entfernen Sie alle Leerzeichen oder Satzzeichen, aus dem Hauptteil des Dateinamens. Z. B. "Meine Web Page.tt" wird nicht korrekt, aber "MyWebPage.tt" korrekt ist. Der Dateiname wird als Klassenname im generierten Code verwendet werden.  
+4. Entfernen Sie alle Leerzeichen oder Satzzeichen, aus dem Hauptteil des Dateinamens. Z. B. "Meine Web Page.tt" wird nicht korrekt, aber "MyWebPage.tt" korrekt ist. Der Dateiname wird als Klassenname im generierten Code verwendet werden.  
   
-5.  Fügen Sie die folgende Zeile am Anfang der Datei. Wenn Sie in Visual Basic-Projekt arbeiten, ersetzen Sie "C#", mit "VB".  
+5. Fügen Sie die folgende Zeile am Anfang der Datei. Wenn Sie in Visual Basic-Projekt arbeiten, ersetzen Sie "C#", mit "VB".  
   
      `<#@ template language="C#" #>`  
   

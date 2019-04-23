@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055196"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
 
@@ -60,19 +60,19 @@ Ein Textwert ist erforderlich. Dieser Text gibt die Funktionen des Projekts an.
 
 Gültige Ausdruckssyntax ist folgendermaßen definiert:
 
--   Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   Die "&#124;" ist der OR-Operator.
+- Die "&#124;" ist der OR-Operator.
 
--   Die Zeichen "&" und "+" sind beide AND-Operatoren.
+- Die "&" und "+" Zeichen sind beide AND-Operatoren.
 
--   Das Zeichen "!" ist der Operator NOT.
+- Das Zeichen "!" ist der Operator NOT.
 
--   Klammern erzwingen die Auswertungsreihenfolge.
+- Klammern erzwingen die Auswertungsreihenfolge.
 
--   Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.
+- Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.
 
--   Projektfunktionen können jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r
+- Projektfunktionen können jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r
 
 ## <a name="example"></a>Beispiel
 
