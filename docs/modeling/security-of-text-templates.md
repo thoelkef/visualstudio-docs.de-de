@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050010"
 ---
 # <a name="security-of-text-templates"></a>Sicherheit von Textvorlagen
 Textvorlagen haben die folgenden Sicherheitsaspekte:
 
--   Textvorlagen sind anfällig für Einfügen von beliebigem Code.
+- Textvorlagen sind anfällig für Einfügen von beliebigem Code.
 
--   Wenn der Mechanismus, den vom Host verwendet wird, finden Sie einen anweisungsprozessor nicht sicher ist, könnte ein böswilliger Direktivenprozessor ausgeführt werden.
+- Wenn der Mechanismus, den vom Host verwendet wird, finden Sie einen anweisungsprozessor nicht sicher ist, könnte ein böswilliger Direktivenprozessor ausgeführt werden.
 
 ## <a name="arbitrary-code"></a>Beliebigen Code
  Wenn Sie eine Vorlage schreiben, Sie können Code einfügen, alle innerhalb der \<## > Tags. Dies kann beliebigen Code innerhalb einer Textvorlage ausgeführt werden.

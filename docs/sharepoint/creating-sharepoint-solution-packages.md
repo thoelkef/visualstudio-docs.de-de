@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 147bb56e0d8759ece67ea1454f496b23b770cebf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049944"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungspakete
   Mithilfe des Paket-Designers können Sie Bereitstellungspakete erstellen und anpassen. Beispielsweise können Sie SharePoint-Projektelemente und -Funktionen hinzufügen, den IIS-Server zurücksetzen, Funktionsaktivierungsbereiche festlegen und Funktionsabhängigkeiten identifizieren. Der Designer generiert außerdem ein Manifest, eine XML-Datei, die jedes Paket beschreibt.
@@ -35,7 +35,7 @@ ms.locfileid: "56604729"
 
 |Eigenschaft des Paket-Designers|Beschreibung der Standardeinstellung|
 |-------------------------------|------------------------------------|
-|name|Erforderlich. Der Standardname des Pakets nastaven NA hodnotu *ProjectName*.|
+|Name|Erforderlich. Der Standardname des Pakets nastaven NA hodnotu *ProjectName*.|
 |Webserver zurücksetzen|Dies ist optional. Wählen Sie, wenn den Webserver nach neu gestartet werden soll die *.wsp* Datei auf dem SharePoint-Server installiert ist.|
 |Bereitstellungsservertyp|Erforderlich. In der Standardeinstellung ist der Bereich auf ApplicationServer festgelegt.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> WebFrontEnd: Beschreibt einen Server, der Websites hostet.|
 |Elemente in der Lösung|Alle SharePoint-Projektelemente und -Funktionen, die dem Paket hinzugefügt werden können.|
@@ -56,17 +56,17 @@ ms.locfileid: "56604729"
 ## <a name="packaging-architecture"></a>Verpackungsarchitektur
  Die folgenden Schritte durchgeführt, bei der Erstellung eines SharePoint-Pakets (*.wsp*) in Visual Studio.
 
-1.  Der Funktionen und Pakete werden überprüft, um sicherzustellen, dass die physikalische und semantische Struktur des Pakets richtig ist.
+1. Der Funktionen und Pakete werden überprüft, um sicherzustellen, dass die physikalische und semantische Struktur des Pakets richtig ist.
 
-2.  Der Funktionen, Projektelemente und Paketdateien im Paket werden aufgelistet. Manifestdateien für Pakete und Funktionen werden umgewandelt, damit alle erforderlichen Informationen für die Bereitstellung und Aktivierung eingeschlossen sind. Die Token werden durch den vollqualifizierten Wert ersetzt.
+2. Der Funktionen, Projektelemente und Paketdateien im Paket werden aufgelistet. Manifestdateien für Pakete und Funktionen werden umgewandelt, damit alle erforderlichen Informationen für die Bereitstellung und Aktivierung eingeschlossen sind. Die Token werden durch den vollqualifizierten Wert ersetzt.
 
-3.  Das anpassbare MSBuild-Ziel BeforeLayout wird ausgeführt. Sie können diesen Schritt, um die Stellen benutzerdefinierten Änderungen für das Paket vor dem Erstellen der *.wsp* Datei erstellt wird.
+3. Das anpassbare MSBuild-Ziel BeforeLayout wird ausgeführt. Sie können diesen Schritt, um die Stellen benutzerdefinierten Änderungen für das Paket vor dem Erstellen der *.wsp* Datei erstellt wird.
 
-4.  Die aufgelisteten Dateien werden in ein Zwischenverzeichnis kopiert.
+4. Die aufgelisteten Dateien werden in ein Zwischenverzeichnis kopiert.
 
-5.  Das anpassbare MSBuild-Ziel AfterLayout wird ausgeführt. Sie können diesen Schritt, um die Stellen benutzerdefinierten Änderungen für das Paket vor dem Erstellen der *.wsp* Datei erstellt wird.
+5. Das anpassbare MSBuild-Ziel AfterLayout wird ausgeführt. Sie können diesen Schritt, um die Stellen benutzerdefinierten Änderungen für das Paket vor dem Erstellen der *.wsp* Datei erstellt wird.
 
-6.  Die Dateien im Zwischenverzeichnis werden hinzugefügt, um die *.wsp* Datei.
+6. Die Dateien im Zwischenverzeichnis werden hinzugefügt, um die *.wsp* Datei.
 
 ## <a name="package-folder-structure"></a>Paketordnerstruktur
  Beim Packen Ihrer SharePoint-Projekts eine *.wsp* Datei wird erstellt, in der *SolutionFolder\bin\\\<BuildConfiguration >* Ordner. Wenn Ihre Lösung im ist z. B. *C:\Visual Studio 2013\projects\listdefinition1 befindet* und die Buildkonfiguration auf Release festgelegt ist die *.wsp* Datei befindet sich im *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*.

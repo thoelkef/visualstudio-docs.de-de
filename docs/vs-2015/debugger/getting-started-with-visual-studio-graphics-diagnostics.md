@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047306"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Erste Schritte mit Visual Studio-Grafikdiagnose
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 
  Um einen Remotewiedergabecomputer zu verwenden, der Windows 10 in einem Entwicklungscomputer mit Windows 8.1 ausführt, müssen Sie auf dem Entwicklungscomputer das Windows 10-SDK und auf dem Wiedergabecomputer die optionale Grafiktools-Funktion installieren.
 
-##  <a name="InstallGraphicsTools"></a> Installieren von Grafiktools für Windows 10
+## <a name="InstallGraphicsTools"></a> Installieren von Grafiktools für Windows 10
  In Windows 10 wird die Infrastruktur für die Grafikdiagnose durch eine optionale Funktion von Windows mit der Bezeichnung *Grafiktools* bereitgestellt. Diese Funktion ist erforderlich, um Grafikinformationen in Windows 10 zu erfassen und wiederzugeben, unabhängig davon, ob die erfasste App eine frühere Windows-Version als Ziel hat oder welche Direct3D-Version verwendet wird. Sie können die Grafiktools-Funktion auch vorab installieren. Andernfalls wird sie bei Bedarf installiert, wenn Sie das erste Mal eine Grafikdiagnosesitzung in Visual Studio starten.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>So installieren Sie Grafiktools für Windows 10
@@ -87,7 +87,7 @@ In diesem Abschnitt bereiten Sie sich auf die erstmalige Verwendung der Grafikdi
 
 ##### <a name="to-capture-single-frames"></a>So erfassen Sie einzelne Frames
 
--   Wählen Sie in Visual Studio in der Grafik-Symbolleiste oder im Fenster für die Diagnosesitzung die Schaltfläche **Frame erfassen** aus. Oder, wenn Ihre app den Fokus besitzt, drücken Sie einfach **Druck**.
+- Wählen Sie in Visual Studio in der Grafik-Symbolleiste oder im Fenster für die Diagnosesitzung die Schaltfläche **Frame erfassen** aus. Oder, wenn Ihre app den Fokus besitzt, drücken Sie einfach **Druck**.
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>So erfassen Sie eine Sequenz von Frames
 

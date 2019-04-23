@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060357"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek
 Tools zum Durchsuchen von Symbolen angezeigt hierarchische Ansichten von Symbolen. Die Symbole darstellen, Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente.
@@ -52,7 +52,7 @@ N1
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Kanonische abrufen und Presentation forms-Informationen
 
-1.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>-Methode.
+1. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>-Methode.
 
      Der Objekt-Manager ruft diese Methode zum Abrufen der Liste von Knoten im kanonischen Pfad des Symbols enthalten sind.
 
@@ -75,7 +75,7 @@ N1
 
     ```
 
-2.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>-Methode.
+2. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>-Methode.
 
      Der Objekt-Manager ruft diese Methode zum Abrufen der Liste von Knoten im Präsentationspfad des Symbols enthalten sind.
 

@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048191"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Visual Studio-Projekte verfügen über separate Release- und Debugkonfiguration
   
 ### <a name="to-change-the-build-configuration"></a>So ändern Sie die Buildkonfiguration  
   
-1.  Im Menü erstellen: Klicken Sie auf **Build / Konfigurations-Manager**, und wählen Sie dann **Debuggen** oder **Version**.  
+1. Im Menü erstellen: Klicken Sie auf **Build / Konfigurations-Manager**, und wählen Sie dann **Debuggen** oder **Version**.  
   
-2.  Wählen Sie auf der Symbolleiste entweder **Debuggen** oder **Version** aus der **Projektmappenkonfigurationen** Listenfeld.  
+2. Wählen Sie auf der Symbolleiste entweder **Debuggen** oder **Version** aus der **Projektmappenkonfigurationen** Listenfeld.  
   
      ![Symbolleisten-Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

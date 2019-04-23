@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049866"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Anpassen von IntelliSense für RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Beginnend mit Visual Studio 2013 Update 4 wird Unterstützung für die beliebte 
   
  In diesem Thema wird Folgendes erläutert:  
   
--   Anpassen von RequireJS in ASP.NET-Projekten  
+- Anpassen von RequireJS in ASP.NET-Projekten  
   
--   Anpassen von RequireJS in JSProj-Projekten, die verwendet werden, um Apache Cordova-apps, Windows Store-Apps und LightSwitch-HTML-Apps zu erstellen.  
+- Anpassen von RequireJS in JSProj-Projekten, die verwendet werden, um Apache Cordova-apps, Windows Store-Apps und LightSwitch-HTML-Apps zu erstellen.  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>Anpassen von RequireJS in ASP.NET-Projekten  
  Die Unterstützung für RequireJS wird automatisch aktiviert, wenn auf eine Datei mit dem Namen „require.js“ durch Ihre aktuelle JavaScript-Datei verwiesen wird. (Weitere Informationen finden Sie im Abschnitt „Bestimmen des IntelliSense-Kontexts“ unter [JavaScript IntelliSense](../ide/javascript-intellisense.md)). In ASP.NET-Projekten erfolgt das Verweisen auf „require.js“ in der Regel mithilfe einer /// \<reference/>-Anweisung in einer _references.js-Datei.  
@@ -55,7 +55,7 @@ Beginnend mit Visual Studio 2013 Update 4 wird Unterstützung für die beliebte 
  Das `start-page`-Attribut gibt die URL der Seite an, wie sie in einem Browser beim Ausführen der App angezeigt würde.  
   
 ## <a name="customize-requirejs-in-jsproj-projects"></a>Anpassen von RequireJS in JSProj-Projekten  
- Beim Erstellen von Apps für Apache Cordova, HTML-basierte Windows Store-Apps oder LightSwitch-HTML-Apps werden JSProj-Projekte (Projektdateien mit der Erweiterung ".jsproj") verwendet. Im Gegensatz zu ASP.NET-Projekten lesen diese Projekte Verweise auf die JS-Dateien aus HTML-Dateien, die im Projekt vorhanden sind. Aus diesem Grund wird beim Bearbeiten von JavaScript in einem Projekt JSProj Unterstützung für RequireJS aktiviert, wenn auf die JavaScript-Datei, die derzeit bearbeitet wird, in einer anderen HTML-Datei verwiesen wird, die auch auf "require.js" verweist.  
+ Beim Erstellen von Apps für Apache Cordova, HTML-basierte Windows Store-Apps oder LightSwitch-HTML-Apps werden JSProj-Projekte (Projektdateien mit der Erweiterung „.jsproj“) verwendet. Im Gegensatz zu ASP.NET-Projekten lesen diese Projekte Verweise auf die JS-Dateien aus HTML-Dateien, die im Projekt vorhanden sind. Aus diesem Grund wird beim Bearbeiten von JavaScript in einem Projekt JSProj Unterstützung für RequireJS aktiviert, wenn auf die JavaScript-Datei, die derzeit bearbeitet wird, in einer anderen HTML-Datei verwiesen wird, die auch auf "require.js" verweist.  
   
  Die Anpassungsschritte für ASP.NET-Projekte sind in einer JSProj-Projektdatei nicht erforderlich. Das heißt, dass Skriptdateien, die vom `data-main`-Attribut Skript-Tag verwendet werden, das auf "require.js" verweist, automatisch zur Konfiguration von "require.js" geladen werden. Die HTML-Datei, die auf "reuqire.js" verweist, wird auch als Startseite für die Anwendung verwendet.  
   

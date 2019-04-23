@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba574854424eac14898c923701f7d8f4c1f81347
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d3b94b70db49903e41d26ac0f1382eaa2826e31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059748"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Das Ändern des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ Eine Änderung des Rückgabetyps einer DataContext-Methode kann nicht rückgäng
   
 ### <a name="to-change-the-return-type-of-a-datacontext"></a>So ändern Sie den Rückgabetyp eines DataContext  
   
--   Klicken Sie auf **Ja**.  
+- Klicken Sie auf **Ja**.  
   
 ### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>So schließen Sie das Meldungsfeld, ohne den Rückgabetyp zu ändern  
   
--   Klicken Sie auf **Nein**.  
+- Klicken Sie auf **Nein**.  
   
 ### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>So setzen Sie den Typ auf den ursprünglichen Rückgabetyp zurück, nachdem der Rückgabetyp geändert wurde  
   
-1.  Wählen Sie die <xref:System.Data.Linq.DataContext>-Methode im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] aus, und löschen Sie sie.  
+1. Wählen Sie die <xref:System.Data.Linq.DataContext>-Methode im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] aus, und löschen Sie sie.  
   
-2.  Suchen Sie das Element im **Server-Explorer/Datenbank-Explorer**, und ziehen Sie es auf den [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Suchen Sie das Element im **Server-Explorer/Datenbank-Explorer**, und ziehen Sie es auf den [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      Eine <xref:System.Data.Linq.DataContext>-Methode mit dem ursprünglichen Standardrückgabetyp wird erstellt.  
   

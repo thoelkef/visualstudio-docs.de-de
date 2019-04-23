@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a252a719e800e828275b8f3575c5073ae185e10b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060227"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Felder und Schnittstellen des Eigenschaftenfensters
 Das Modell für die Auswahl, um zu bestimmen, welche Informationen angezeigt werden, in der **Eigenschaften** Fenster basiert darauf, dass das Fenster, das Fokus, in der IDE besitzt. Alle Fenster und Objekt in das ausgewählte Fenster, haben die Auswahl Context-Objekt, die per Push an den globalen Auswahlkontext. Die Umgebung aktualisiert den Kontext für die globale Auswahl mit Werten aus einem Fensterrahmen, wenn das Fenster den Fokus hat. Wenn der Fokus geändert wird, steigt auch die Auswahlkontext.
@@ -50,26 +50,26 @@ Es gibt zwei Möglichkeiten, das **Eigenschaften** -Fenster ständig mit Änderu
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>So aktualisieren Sie Eigenschaftswerte über die IVsUIShell-Schnittstelle
 
-1.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>-Dienst) jedes Mal auf, wenn VSPackages, Projekte oder Editoren Tool- oder Dokumentfenster erstellen oder durchlaufen müssen.
+1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>-Dienst) jedes Mal auf, wenn VSPackages, Projekte oder Editoren Tool- oder Dokumentfenster erstellen oder durchlaufen müssen.
 
-2.  Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zu der **Eigenschaften** Fensters mit eigenschaftsänderungen für ein Projekt (oder ein anderes Objekt durchsucht werden, indem die **Eigenschaften** Fenster) ohne die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> und das Auslösen von <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> Ereignisse.
+2. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> zu der **Eigenschaften** Fensters mit eigenschaftsänderungen für ein Projekt (oder ein anderes Objekt durchsucht werden, indem die **Eigenschaften** Fenster) ohne die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> und das Auslösen von <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> Ereignisse.
 
-3.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>-Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>, um Clientbenachrichtigung zu Hierarchieereignissen einzurichten bzw. zu deaktivieren, ohne dass für die Hierarchie <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> implementiert werden muss.
+3. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>-Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A>, um Clientbenachrichtigung zu Hierarchieereignissen einzurichten bzw. zu deaktivieren, ohne dass für die Hierarchie <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> implementiert werden muss.
 
 ### <a name="updating-property-values-using-iconnection"></a>Aktualisieren von Eigenschaftswerten über IConnection
  Die zweite Möglichkeit, das **Eigenschaften** -Fenster ständig mit Eigenschaftswertänderungen zu synchronisieren, besteht darin, `IConnection` für das verbindungsfähige Objekt zu implementieren, um das Vorhandensein der Ausgangsschnittstellen anzugeben. Wenn Sie den Eigenschaftsnamen lokalisieren möchten, leiten Sie das Objekt aus <xref:System.ComponentModel.ICustomTypeDescriptor> ab. Die <xref:System.ComponentModel.ICustomTypeDescriptor>-Implementierung kann die von ihr zurückgegebenen Eigenschaftsdeskriptoren sowie den Namen einer Eigenschaft ändern. Wenn Sie die Beschreibung lokalisieren möchten, erstellen Sie ein Attribut, das aus <xref:System.ComponentModel.DescriptionAttribute> abgeleitet wird, und überschreiben Sie die Description-Eigenschaft.
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Aspekte zur Implementierung der IConnection-Schnittstelle
 
-1.  `IConnection` bietet Zugriff auf ein Enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle. Die Schnittstelle bietet außerdem Zugriff auf alle Verbindungspunktunterobjekte, von denen jedes die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle implementiert.
+1. `IConnection` bietet Zugriff auf ein Enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle. Die Schnittstelle bietet außerdem Zugriff auf alle Verbindungspunktunterobjekte, von denen jedes die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle implementiert.
 
-2.  Für jedes Browseobjekt muss ein <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink>-Ereignis implementiert werden. Im **Eigenschaften** -Fenster erfolgt eine Empfehlung für das Ereignis, das über `IConnection`festgelegt ist.
+2. Für jedes Browseobjekt muss ein <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink>-Ereignis implementiert werden. Im **Eigenschaften** -Fenster erfolgt eine Empfehlung für das Ereignis, das über `IConnection`festgelegt ist.
 
-3.  Ein Verbindungspunkt steuert, wie viele Verbindungen in seiner Implementierung von <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> zulässig sind. Ein Verbindungspunkt, der nur eine Schnittstelle zulässt, kann <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> aus der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A>-Methode zurückgeben.
+3. Ein Verbindungspunkt steuert, wie viele Verbindungen in seiner Implementierung von <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> zulässig sind. Ein Verbindungspunkt, der nur eine Schnittstelle zulässt, kann <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> aus der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A>-Methode zurückgeben.
 
-4.  Ein Client kann die `IConnection`-Schnittstelle aufrufen, um Zugriff auf ein Enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle zu erhalten. Die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle kann dann aufgerufen werden, um Verbindungspunkte für jede Ausgangsschnittstellen-ID (IID) zu durchlaufen.
+4. Ein Client kann die `IConnection`-Schnittstelle aufrufen, um Zugriff auf ein Enumeratorunterobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle zu erhalten. Die <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints>-Schnittstelle kann dann aufgerufen werden, um Verbindungspunkte für jede Ausgangsschnittstellen-ID (IID) zu durchlaufen.
 
-5.  `IConnection` kann auch aufgerufen werden, um mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle Zugriff auf Verbindungspunktunterobjekte für jede ausgehende IID zu erhalten. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle, startet oder beendet ein Client eine Empfehlungsschleife mit dem verbindungsfähigen Objekt und der Synchronisierung des Clients. Der Client kann auch die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle aufrufen, um ein Enumeratorobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections>-Schnittstelle abzurufen, damit er die ihm bekannten Verbindungen durchlaufen kann.
+5. `IConnection` kann auch aufgerufen werden, um mit der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle Zugriff auf Verbindungspunktunterobjekte für jede ausgehende IID zu erhalten. Über die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle, startet oder beendet ein Client eine Empfehlungsschleife mit dem verbindungsfähigen Objekt und der Synchronisierung des Clients. Der Client kann auch die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>-Schnittstelle aufrufen, um ein Enumeratorobjekt mit der <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections>-Schnittstelle abzurufen, damit er die ihm bekannten Verbindungen durchlaufen kann.
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a> Abrufen von Feldbeschreibungen im Eigenschaftenfenster
 Am unteren Rand des Fensters **Eigenschaften** werden in einem Beschreibungsbereich Informationen angezeigt, die zu dem ausgewählten Eigenschaftenfeld gehören. Diese Funktion ist standardmäßig aktiviert. Wenn Sie das Beschreibungsfeld ausblenden möchten, klicken Sie mit der rechten Maustaste in das Fenster **Eigenschaften** , und klicken Sie auf **Beschreibung**. Dies bewirkt auch, dass das Häkchen neben dem Titel **Beschreibung** im Menüfenster entfernt wird. Sie können das Feld wieder anzeigen, indem die gleichen Schritte ausführen, um **Beschreibung** erneut zu aktivieren.

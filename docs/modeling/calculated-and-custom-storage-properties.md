@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060422"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können für den Benutzer auf das Diagramm und in Ihrer Sprache-Explorer angezeigt werden, und können über Programmcode zugegriffen werden. Unterscheiden sich jedoch die Eigenschaften auf die Weise, dass ihre Werte gespeichert werden.
@@ -33,30 +33,30 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Zum Definieren einer berechneten oder benutzerdefinierte Storage-Eigenschaft
 
-1.  Wählen Sie in "DslDefinition.DSL", die Eigenschaft "Domain" im Diagramm oder im **DSL-Explorer**.
+1. Wählen Sie in "DslDefinition.DSL", die Eigenschaft "Domain" im Diagramm oder im **DSL-Explorer**.
 
-2.  In der **Eigenschaften** legen die **Art** Feld **berechnete** oder **benutzerdefinierten Speicher**.
+2. In der **Eigenschaften** legen die **Art** Feld **berechnete** oder **benutzerdefinierten Speicher**.
 
      Stellen Sie sicher, dass Sie auch festlegen, haben die **Typ** auf die gewünschte.
 
-3.  Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer**.
+3. Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer**.
 
-4.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+4. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
      Die folgende Fehlermeldung wird angezeigt: "*Ihreklasse* enthält keine Definition für Get*YourProperty*."
 
-5.  Doppelklicken Sie auf die Fehlermeldung angezeigt.
+5. Doppelklicken Sie auf die Fehlermeldung angezeigt.
 
      Dsl\GeneratedCode\DomainClasses.cs oder DomainRelationships.cs wird geöffnet. Über den hervorgehobenen Methodenaufruf, ein Kommentar aufgefordert, eine Implementierung für Get bereitstellen*YourProperty*().
 
     > [!NOTE]
     >  Diese Datei wird aus "DslDefinition.DSL" generiert. Wenn Sie diese Datei bearbeiten, Ihre Änderungen verloren das nächste Mal, die Sie klicken **alle Vorlagen transformieren**. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
 
-6.  Erstellen oder öffnen Sie eine Datei in einem separaten Ordner, z. B. CustomCode\\*YourDomainClass*. Cs.
+6. Erstellen oder öffnen Sie eine Datei in einem separaten Ordner, z. B. CustomCode\\*YourDomainClass*. Cs.
 
      Stellen Sie sicher, dass der Namespace des generierten Codes identisch ist.
 
-7.  Schreiben Sie eine partielle Implementierung der Domänenklasse in der Klassendatei. Schreiben Sie in der Klasse, eine Definition für die fehlende `Get` -Methode, die das folgende Beispiel ähnelt:
+7. Schreiben Sie eine partielle Implementierung der Domänenklasse in der Klassendatei. Schreiben Sie in der Klasse, eine Definition für die fehlende `Get` -Methode, die das folgende Beispiel ähnelt:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
     }  }
     ```
 
-8.  Setzen Sie **Art** zu **benutzerdefinierten Speicher**, außerdem müssen Sie zu einer `Set` Methode. Zum Beispiel:
+8. Setzen Sie **Art** zu **benutzerdefinierten Speicher**, außerdem müssen Sie zu einer `Set` Methode. Zum Beispiel:
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
 
 10. Testen Sie die Eigenschaft an. Stellen Sie sicher, dass Sie versuchen **Rückgängig** und **wiederholen**.
 
-##  <a name="setters"></a> Transaktionen und benutzerdefinierten Setter
+## <a name="setters"></a> Transaktionen und benutzerdefinierten Setter
  In der Set-Methode der Eigenschaft des benutzerdefinierten Speicher müssen Sie keinen zu eine Transaktion zu öffnen, da die Methode in der Regel innerhalb einer aktiven Transaktion aufgerufen wird.
 
  Die Set-Methode kann jedoch auch aufgerufen werden, wenn der Benutzer zum Rückgängigmachen oder Wiederholen aufruft, oder wenn eine Transaktion ein Rollback ausgeführt wird. Wenn <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ist "true", die Set-Methode sollte Verhalten sich wie folgt:

@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058498"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Gewusst wie: Erstellen eines Typs, der Nullwerte zulässt (Klassen-Designer)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder benötigen keinen. Dies ist in Datenbanken üblich, in denen möglicherweise einigen Feldern kein Wert zugewiesen wird. Sie können z.B. einem Datenbankfeld einen NULL-Wert zuweisen, um zu zeigen, dass noch kein Wert zugewiesen wurde.  
@@ -42,17 +42,17 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Hinzufügen eines Nullable-Typs mithilfe des Klassen-Designers  
   
-1.  Im Klassendiagramm erweitern Sie eine vorhandene Klasse, oder erstellen eine neue Klasse.  
+1. Im Klassendiagramm erweitern Sie eine vorhandene Klasse, oder erstellen eine neue Klasse.  
   
-2.  Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Klasse hinzufügen**, um dem Projekt eine Klasse hinzuzufügen.  
+2. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Klasse hinzufügen**, um dem Projekt eine Klasse hinzuzufügen.  
   
-3.  Klicken Sie im Menü **Klassendiagramm** auf **Erweitern**, um die Klassenform zu erweitern.  
+3. Klicken Sie im Menü **Klassendiagramm** auf **Erweitern**, um die Klassenform zu erweitern.  
   
-4.  Wählen Sie die Klassenform aus. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Feld**. Ein neues Feld mit den Standardnamen **Feld** wird in der Klassenform und auch im Fenster **Klassendetails** angezeigt.  
+4. Wählen Sie die Klassenform aus. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Feld**. Ein neues Feld mit den Standardnamen **Feld** wird in der Klassenform und auch im Fenster **Klassendetails** angezeigt.  
   
-5.  Ändern Sie in der Spalte **Name** im Fenster **Klassendetails** (oder in der Klassenform selbst) den Namen des neuen Felds in einen gültigen und aussagekräftigen Namen.  
+5. Ändern Sie in der Spalte **Name** im Fenster **Klassendetails** (oder in der Klassenform selbst) den Namen des neuen Felds in einen gültigen und aussagekräftigen Namen.  
   
-6.  Deklarieren Sie in der Spalte **Typ** im Fenster **Klassendetails** den Typ als Nullable-Typ, wie im folgenden Code gezeigt:  
+6. Deklarieren Sie in der Spalte **Typ** im Fenster **Klassendetails** den Typ als Nullable-Typ, wie im folgenden Code gezeigt:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,15 +71,15 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Hinzufügen eines Nullable-Typs mithilfe des Code-Editors  
   
-1.  Fügen Sie dem Projekt eine Klasse hinzu. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus und klicken Sie dann im Menü **Projekt** auf **Klasse hinzufügen**.  
+1. Fügen Sie dem Projekt eine Klasse hinzu. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus und klicken Sie dann im Menü **Projekt** auf **Klasse hinzufügen**.  
   
-2.  Fügen Sie in der CS- oder VB-Datei für die neue Klasse eine oder mehrere Nullable-Typen in der Klassendeklaration hinzu.  
+2. Fügen Sie in der CS- oder VB-Datei für die neue Klasse eine oder mehrere Nullable-Typen in der Klassendeklaration hinzu.  
   
-3.  Ziehen Sie das Klassensymbol in der Klassenansicht zur Entwurfsoberfläche des Klassen-Designers. Eine Klassenform wird im Klassendiagramm angezeigt.  
+3. Ziehen Sie das Klassensymbol in der Klassenansicht zur Entwurfsoberfläche des Klassen-Designers. Eine Klassenform wird im Klassendiagramm angezeigt.  
   
-4.  Erweitern Sie die Details für die Klassenform, und bewegen Sie den Mauszeiger über die Klassenmember. Die QuickInfo zeigt die Deklaration der einzelnen Member.  
+4. Erweitern Sie die Details für die Klassenform, und bewegen Sie den Mauszeiger über die Klassenmember. Die QuickInfo zeigt die Deklaration der einzelnen Member.  
   
-5.  Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.  
+5. Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Nullable%601>   

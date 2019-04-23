@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059876"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navigieren in einer Debugsitzung in Visual Studio (Xaml und C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 ## <a name="in-this-topic"></a>In diesem Thema
  Sie lernen Folgendes:
 
--   [Erstellen der Beispiel-App](#BKMK_CreateTheApplication)
+- [Erstellen der Beispiel-App](#BKMK_CreateTheApplication)
 
--   [Festlegen eines Haltepunkts und Ausführen bis zu diesem Haltepunkt, Durchlaufen einer Methode in Einzelschritten und Untersuchen von Programmdaten](#BKMK_StepInto)
+- [Festlegen eines Haltepunkts und Ausführen bis zu diesem Haltepunkt, Durchlaufen einer Methode in Einzelschritten und Untersuchen von Programmdaten](#BKMK_StepInto)
 
--   [Einzel- und Prozedurschritte für Methoden](#BKMK_StepIntoOverOut)
+- [Einzel- und Prozedurschritte für Methoden](#BKMK_StepIntoOverOut)
 
--   [Festlegen eines bedingten Haltepunkts, Ausführen bis zum Cursor und Visualisieren einer Variablen](#BKMK_ConditionCursorVisualize)
+- [Festlegen eines bedingten Haltepunkts, Ausführen bis zum Cursor und Visualisieren einer Variablen](#BKMK_ConditionCursorVisualize)
 
--   [Bearbeiten und Fortfahren, Wiederherstellung nach einer Ausnahme](#BKMK_EditContinueRecoverExceptions)
+- [Bearbeiten und Fortfahren, Wiederherstellung nach einer Ausnahme](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Erstellen der Beispiel-App
+## <a name="BKMK_CreateTheApplication"></a> Erstellen der Beispiel-App
  Beim Debuggen geht es um den Code. Daher wird für die Beispiel-App das Framework der Windows Store-App nur verwendet, um eine Quelldatei zu erstellen, mit der Sie erkennen können, wie das Navigieren in einer Debugsitzung funktioniert, und wie Sie den Programmzustand prüfen und ändern können. Der gesamte aufgerufene Code wird vom Konstruktor der Hauptseite aufgerufen. Es werden keine Steuerelemente hinzugefügt und keine Ereignisse behandelt.
 
  **Erstellen Sie eine standardmäßige C#-Windows Store-App.** Öffnen Sie Visual Studio. Wählen Sie auf der Homepage den Link **Neues Projekt** . Wählen Sie im Dialogfeld "Neues Projekt" in der Liste **Installiert** die Option **Visual C#** und anschließend **Windows Store**aus. Wählen Sie in der Liste der Projektvorlagen **Anwendung**aus. In Visual Studio werden eine neue Projektmappe und ein Projekt erstellt sowie der MainPage.xaml-Designer und der XAML-Code-Editor angezeigt.
@@ -56,7 +56,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
  Sie können nun den Beispielen in diesem Thema folgen.
 
-##  <a name="BKMK_StepInto"></a> Festlegen eines Haltepunkts und Ausführen bis zu diesem Haltepunkt, Durchlaufen einer Methode in Einzelschritten und Untersuchen von Programmdaten
+## <a name="BKMK_StepInto"></a> Festlegen eines Haltepunkts und Ausführen bis zu diesem Haltepunkt, Durchlaufen einer Methode in Einzelschritten und Untersuchen von Programmdaten
  Die gängigste Methode, eine Debugsitzung zu starten ist auf **Debuggen starten** aus der **Debuggen** Menü (Tastatur: F5) aus. Die Ausführung wird gestartet und fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie sie manuell anhalten, bis eine Ausnahme auftritt, oder bis die App beendet ist.
 
  Wenn die Ausführung im Debugger angehalten wird, können Sie den Wert einer aktiven Variablen in einem Datentipp anzeigen, indem Sie die Maus über die Variable bewegen. Sie können auch die Fenster "Lokal" und "Auto" öffnen, um Listen der aktiven Variablen und ihrer aktuellen Werte anzuzeigen. Durch das Hinzufügen einer oder mehrerer Variablen zu einem Überwachungsfenster können Sie sich auf den Wert der Variablen konzentrieren, während die App die Ausführung fortsetzt.
@@ -112,7 +112,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
   In einem Überwachungsfenster können mehrere Variablen überwacht werden. Die Werte der überwachten Variablen werden wie die Werte in den Lokal- und Datentippfenstern aktualisiert, wenn die Ausführung angehalten wird. Sie können dem Überwachungsfenster zudem Variablen vom Code-Editor aus hinzufügen. Wählen Sie die zu überwachende Variable aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Überwachung hinzufügen**aus.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Einzel- und Prozedurschritte für Methoden
+## <a name="BKMK_StepIntoOverOut"></a> Einzel- und Prozedurschritte für Methoden
  Im Gegensatz zu einem von einer übergeordneten Methode aufgerufenen Einzelschritt einer Methode wird bei einem Prozedurschritt die untergeordnete Methode ausgeführt und anschließend beim Fortsetzen der übergeordneten Methode die Ausführung in der aufrufenden Methode abgebrochen. Sie können für eine Methode einen Prozedurschritt ausführen, wenn Sie mit der Funktionsweise der Methode vertraut und sicher sind, dass dessen Ausführung das zu untersuchende Problem nicht beeinflusst.
 
  Bei einem Prozedurschritt für eine Codezeile, die keinen Methodenaufruf enthält, wird die Zeile wie bei einem Einzelschritt ausgeführt.
@@ -144,7 +144,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
  **Beenden des Debuggens.** Klicken Sie im Menü "Debuggen" die Option Debuggen beenden (Tastatur: UMSCHALT + F5). Damit wird die Debugsitzung beendet.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Festlegen eines bedingten Haltepunkts, Ausführen bis zum Cursor und Visualisieren einer Variablen
+## <a name="BKMK_ConditionCursorVisualize"></a> Festlegen eines bedingten Haltepunkts, Ausführen bis zum Cursor und Visualisieren einer Variablen
  Ein bedingter Haltepunkt legt eine Bedingung fest, unter der der Debugger die Ausführung unterbricht. Die Bedingung kann mit beliebigen Codeausdrücken angegeben werden, die als "true" oder "false" ausgewertet werden können. So können Sie beispielsweise einen bedingten Haltepunkt nur dann zum Prüfen des Programmzustands einer häufig aufgerufenen Methode verwenden, wenn eine Variable einen bestimmten Wert erreicht.
 
  Das Ausführen bis zum Cursor entspricht dem Festlegen eines einmaligen Haltepunkts. Wenn die Ausführung angehalten wird, können Sie eine Zeile in der Quelle auswählen und die Ausführung fortsetzen, bis die ausgewählte Zeile erreicht ist. So können Sie beispielsweise die Einzelschritte einer Schleife in einer Methode durchlaufen und feststellen, dass der Code in der Schleife ordnungsgemäß ausgeführt wird. Anstatt alle Iterationen der Schleife zu durchlaufen, können Sie bis zum Cursor ausführen, der nach dem Ausführen der Schleife positioniert wird.
@@ -180,7 +180,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
  **Beenden des Debuggens.** Klicken Sie im Menü "Debuggen" die Option Debuggen beenden (Tastatur: UMSCHALT + F5). Damit wird die Debugsitzung beendet.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Bearbeiten und Fortfahren, Wiederherstellung nach einer Ausnahme
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Bearbeiten und Fortfahren, Wiederherstellung nach einer Ausnahme
  Unter bestimmten Umständen können Sie beim Unterbrechen von Code im Visual Studio-Debugger den Wert von Variablen und sogar die Logik von Anweisungen ändern. Diese Funktionalität wird als Bearbeiten und Fortfahren bezeichnet.
 
  Das Bearbeiten und Fortfahren kann besonders hilfreich sein, wenn Sie an einer Ausnahme unterbrechen. Anstatt das Debuggen einer langen und komplexen Prozedur zum Vermeiden der Ausnahme beenden und neu starten zu müssen, kann die Ausnahme "abgewickelt" werden, um mit der Ausführung an einen Punkt unmittelbar vor dem Auftreten der Ausnahme zu wechseln. Dort kann die zu beanstandende Variable oder Anweisung geändert und mit der aktuellen Debugsitzung in einem Zustand fortgefahren werden, der keine Ausnahme auslöst.

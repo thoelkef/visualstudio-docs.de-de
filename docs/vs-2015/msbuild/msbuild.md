@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56c7e5a5a02f2ef5c114665d358e86d768a24a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050399"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,42 +38,42 @@ Das [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ist ein
   
 - Sie möchten das Buildsystem ändern. Möglicherweise möchten Sie z. B. die folgenden Aktionen aktivieren:  
   
-  -   Dateien vorverarbeiten, bevor sie den Compiler erreichen.  
+  - Dateien vorverarbeiten, bevor sie den Compiler erreichen.  
   
-  -   Kopieren Sie die Buildausgaben an eine andere Stelle.  
+  - Kopieren Sie die Buildausgaben an eine andere Stelle.  
   
-  -   Erstellen Sie komprimierte Dateien aus den Buildausgaben.  
+  - Erstellen Sie komprimierte Dateien aus den Buildausgaben.  
   
-  -   Führen Sie einen Nachverarbeitungsschritt durch. Beispielsweise können Sie eine Assembly mit einer anderen Version stempeln.  
+  - Führen Sie einen Nachverarbeitungsschritt durch. Beispielsweise können Sie eine Assembly mit einer anderen Version stempeln.  
   
   Sie können Code in der Visual Studio-IDE schreiben, aber Builds mit MSBuild ausführen. Des Weiteren können Sie Code in der IDE auf dem Entwicklungscomputer erstellen, jedoch eine MSBuild-Befehlszeile verwenden, um Code zu erstellen, der von mehreren Entwicklern integriert wird.  
   
 > [!NOTE]
 >  Sie können Team Foundation Build verwenden, um die Anwendung automatisch zu kompilieren, zu testen und bereitzustellen. Das Buildsystem kann Builds automatisch ausführen, wenn Entwickler Code z. B. als Teil einer fortlaufenden Integrationsstrategie oder gemäß einem Zeitplan (z. B. bei einem Build für einen nächtlichen Buildüberprüfungstest) einchecken. Team Foundation Build kompiliert den Code mithilfe von MSBuild. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
- Dieses Thema enthält eine Übersicht über MSBuild. Ein Einführungstutorial finden Sie unter [Walkthrough: Using MSBuild (Anleitung für das Verwenden von MSBuild)](../msbuild/walkthrough-using-msbuild.md).  
+ Dieses Thema enthält eine Übersicht über MSBuild. Ein Einführungstutorial finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
  **Inhalt**  
   
--   [Verwenden von MSBuild an einer Eingabeaufforderung](#BKMK_CommandPrompt)  
+- [Verwenden von MSBuild an einer Eingabeaufforderung](#BKMK_CommandPrompt)  
   
--   [Projektdatei](#BKMK_ProjectFile)  
+- [Projektdatei](#BKMK_ProjectFile)  
   
-    -   [Eigenschaften](#BKMK_Properties)  
+    - [Eigenschaften](#BKMK_Properties)  
   
-    -   [Elemente](#BKMK_Items)  
+    - [Elemente](#BKMK_Items)  
   
-    -   [Aufgaben](#BKMK_Tasks)  
+    - [Aufgaben](#BKMK_Tasks)  
   
-    -   [Ziele](#BKMK_Targets)  
+    - [Ziele](#BKMK_Targets)  
   
--   [Buildprotokolle](#BKMK_BuildLogs)  
+- [Buildprotokolle](#BKMK_BuildLogs)  
   
--   [Verwenden von MSBuild in Visual Studio](#BKMK_VisualStudio)  
+- [Verwenden von MSBuild in Visual Studio](#BKMK_VisualStudio)  
   
--   [Festlegen von Zielversionen](#BKMK_Multitargeting)  
+- [Festlegen von Zielversionen](#BKMK_Multitargeting)  
   
-##  <a name="BKMK_CommandPrompt"></a> Verwenden von MSBuild an einer Eingabeaufforderung  
+## <a name="BKMK_CommandPrompt"></a> Verwenden von MSBuild an einer Eingabeaufforderung  
  Übergeben Sie eine Projektdatei mit den entsprechenden Befehlszeilenoptionen an MSBuild.exe, um [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] an einer Eingabeaufforderung auszuführen. Über Befehlszeilenoptionen können Sie Eigenschaften festlegen, bestimmte Ziele ausführen und weitere Optionen für die Steuerung des Buildprozesses festlegen. Beispielsweise verwenden Sie die folgende Befehlszeilensyntax zum Erstellen der Datei `MyProj.proj`, deren `Configuration`-Eigenschaft auf `Debug` festgelegt ist.  
   
 ```  
@@ -85,12 +85,12 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  Bevor Sie ein Projekt herunterladen, bestimmen Sie die Vertrauenswürdigkeit des Codes.  
   
-##  <a name="BKMK_ProjectFile"></a> Projektdatei  
+## <a name="BKMK_ProjectFile"></a> Projektdatei  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet ein einfaches und erweiterbares XML-basiertes Projektdateiformat. Mithilfe des [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateiformats können Entwickler die zu erstellenden Elemente beschreiben. Darüber hinaus lässt sich damit beschreiben, wie diese Elemente für verschiedene Betriebssysteme und Konfigurationen erstellt werden müssen. Zusätzlich können Entwickler im Projektdateiformat wiederverwendbare Buildregeln erstellen, die in separate Dateien unterteilt werden können, um Builds im Produkt über verschiedene Projekte hinweg konsistent auszuführen.  
   
- In den folgenden Abschnitten werden einige der Grundelemente des [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateiformats beschrieben. Ein Tutorial zum Erstellen einer einfachen Projektdatei finden Sie unter [Walkthrough: Creating an MSBuild Project File from Scratch](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) (Anleitung für das Erstellen einer neuen MSBuild-Projektdatei).  
+ In den folgenden Abschnitten werden einige der Grundelemente des [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateiformats beschrieben. Ein Tutorial zum Erstellen einer einfachen Projektdatei finden Sie unter [Exemplarische Vorgehensweise: MSBuild-Projektdatei von Grund auf neu erstellen](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-###  <a name="BKMK_Properties"></a> Eigenschaften  
+### <a name="BKMK_Properties"></a> Eigenschaften  
  Eigenschaften stellen Schlüssel/Wert-Paare dar, die zur Konfiguration von Builds verwendet werden können. Eigenschaften werden deklariert, indem ein Element mit dem Namen der jeweiligen Eigenschaft als untergeordnetes Element eines [PropertyGroup](../msbuild/propertygroup-element-msbuild.md)-Elements erstellt wird. Durch den folgenden Code wird beispielsweise die Eigenschaft `BuildDir` mit dem Wert `Build` erstellt.  
   
 ```  
@@ -109,7 +109,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild Properties](msbuild-properties1.md) (MSBuild-Eigenschaften).  
   
-###  <a name="BKMK_Items"></a> Elemente  
+### <a name="BKMK_Items"></a> Elemente  
  Elemente sind Eingaben in das Buildsystem und stellen in der Regel Dateien dar. Elemente werden auf der Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Diese Elementtypen können als Parameter für Aufgaben verwendet werden, die mithilfe der einzelnen Elemente die Schritte des Buildprozesses ausführen.  
   
  In der Projektdatei werden Elemente deklariert, indem ein Element mit dem Namen des jeweiligen Elementtyps als untergeordnetes Element eines [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elements erstellt wird. Im folgenden Code wird z. B. der Elementtyp `Compile` mit zwei Dateien erstellt.  
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Elemente können mit Platzhalterzeichen deklariert werden und zusätzliche Metadaten für erweiterte Buildszenarios enthalten. Weitere Informationen zu Elementen finden Sie unter [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente).  
   
-###  <a name="BKMK_Tasks"></a> Aufgaben  
+### <a name="BKMK_Tasks"></a> Aufgaben  
  Aufgaben sind Einheiten ausführbaren Codes, die in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Aufgaben können wiederverwendet werden, auch von verschiedenen Entwicklern in unterschiedlichen Projekten.  
   
  Die Ausführungslogik einer Aufgabe wird in verwaltetem Code geschrieben und [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] mithilfe des [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements zugeordnet. Sie können eine eigene Aufgabe schreiben, indem Sie einen verwalteten Typ erstellen, der die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen zum Erstellen von Aufgaben finden Sie unter [Task Writing](../msbuild/task-writing.md) (Schreiben von Aufgaben).  
@@ -151,7 +151,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).  
   
-###  <a name="BKMK_Targets"></a>Ziele  
+### <a name="BKMK_Targets"></a>Ziele  
  Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert und Abschnitte der Projektdatei als Einstiegspunkte in den Buildprozess verfügbar gemacht. Ziele werden oft in logischen Abschnitten gruppiert, um ihre Lesbarkeit zu erhöhen und Erweiterungen zu ermöglichen. Wenn die Buildschritte in Ziele unterteilt werden, können Sie einen Teil des Buildprozesses in anderen Zielen aufrufen, ohne diesen Codeabschnitt in jedes Ziel kopieren zu müssen. Wenn mehrere Einstiegspunkte in den Buildprozess die Erstellung von Verweisen erfordern, können Sie beispielsweise ein Ziel erstellen, durch das Verweise erstellt werden, und dieses Ziel anschließend über jeden Einstiegspunkt ausführen, für den es erforderlich ist.  
   
  Ziele werden in der Projektdatei mithilfe des [Target](../msbuild/target-element-msbuild.md)-Elements deklariert. Der folgende Code erstellt z.B. ein Ziel mit dem Namen `Compile`, das anschließend die [Csc](../msbuild/csc-task.md)-Aufgabe mit der im vorangehenden Beispiel deklarierten Elementliste aufruft.  
@@ -164,15 +164,15 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  In fortgeschritteneren Szenarios können Ziele die zwischen verschiedenen Zielen bestehenden Beziehungen beschreiben und Abhängigkeitsanalysen durchführen. Wenn das jeweilige Ziel aktuell ist, können daher ganze Bereiche des Buildprozesses übersprungen werden. Weitere Informationen zu Zielen finden Sie unter [Targets (MSBuild-Ziele)](../msbuild/msbuild-targets.md).  
   
-##  <a name="BKMK_BuildLogs"></a>Buildprotokolle  
+## <a name="BKMK_BuildLogs"></a>Buildprotokolle  
  Sie können Buildfehler, Warnungen und Meldungen in der Konsole oder auf anderen Ausgabegeräten protokollieren. Weitere Informationen finden Sie unter [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md) (Erhalten von Buildprotokollen in MSBuild) und [Logging in MSBuild](../msbuild/logging-in-msbuild.md) (Protokollieren in MSBuild).  
   
-##  <a name="BKMK_VisualStudio"></a>Verwenden von MSBuild in Visual Studio  
+## <a name="BKMK_VisualStudio"></a>Verwenden von MSBuild in Visual Studio  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet das [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateiformat, um Buildinformationen zu verwalteten Projekten zu speichern. Die Projekteinstellungen, die mithilfe der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Schnittstelle hinzugefügt oder geändert werden, werden in der *PROJ-Datei gespeichert, die für das jeweilige Projekt generiert wird. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt verwaltete Projekte mithilfe einer gehosteten Instanz von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Das bedeutet, dass ein verwaltetes Projekt mit demselben Ergebnis entweder in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder an einer Befehlszeile erstellt werden kann (auch wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht installiert ist).  
   
- Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Walkthrough: Using MSBuild](../msbuild/walkthrough-using-msbuild.md) (Anleitung für das Verwenden von MSBuild).  
+ Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-##  <a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen  
+## <a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen  
  Mit Visual Studio können Sie eine Anwendung zur Ausführung in verschiedenen Versionen von .NET Framework kompilieren. Beispielsweise können Sie die gleiche Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform und für die Ausführung in .NET Framework 4.5 auf einer 64-Bit-Plattform kompilieren. Die Möglichkeit, für mehr als ein Framework zu kompilieren, wird Festlegung von Zielversionen genannt.  
   
  In Folgenden sind einige Vorteile der Festlegung auf mehrere Zielversionen aufgeführt:  
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird.|  
+|[Exemplarische Vorgehensweise: MSBuild-Projektdatei erstellen von Grund auf neu](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Hier wird veranschaulicht, wie eine Projektbasisdatei nur mit einem Texteditor inkrementell erstellt wird.|  
 |[Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)|Die Bausteine von MSBuild werden eingeführt, und es wird gezeigt, wie MSBuild-Projekte erstellt, bearbeitet und debuggt werden, ohne die Visual Studio-IDE zu schließen.|  
 |[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)|Stellt die vier Bausteine von MSBuild dar: Eigenschaften, Elemente, Ziele und Aufgaben.|  
 |[Elemente](../msbuild/msbuild-items.md)|Hierin werden die allgemeinen Konzepte hinter dem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Dateiformat sowie das Zusammenwirken der einzelnen Teile beschrieben.|  

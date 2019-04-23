@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050114"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
   
  Wie in der folgenden Abbildung gezeigt, kann die Parallelitätsschnellansicht dieses Symptom auch in der CPU-Auslastungsansicht anzeigen, wo die Anwendung trotz mehrerer Threads nur einen logischen Kern nutzt.  
   
- Weitere Informationen finden Sie unter „Performance Pattern 1: Identifying Lock Contention“ (Verhaltensmuster 1: Identifizieren von Sperrenkonflikten) in Hazim Shafis Blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) auf der MSDN-Blogwebsite.  
+ Weitere Informationen finden Sie unter "Performance Pattern 1: Identifizieren von Sperrkonflikten"in der Hazim Shafi [Parallel Performance Tools für Windows](http://go.microsoft.com/fwlink/?LinkID=160569) Blog auf der MSDN-Blog-Website.  
   
  ![Sperrenkonflikte](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -52,9 +52,9 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
   
  Beachten Sie beim Auswerten dieses Problems Folgendes:  
   
--   Das Gesamtsystem ist möglicherweise überzeichnet. Beachten Sie, dass die Threads möglicherweise von anderen Prozessen im System präemptiv unterbrochen werden. Wenn Sie den Cursor in der Threadansicht über einem Segment mit vorzeitiger Entfernung ruhen lassen, werden der Thread und der Prozess, von dem dieser präemptiv unterbrochen wurde, in einer QuickInfo benannt. Bei diesem Prozess muss es sich nicht zwingend um den Prozess handeln, der während der gesamten präemptiven Unterbrechung des Prozesses ausgeführt wurde, Sie erhalten dadurch jedoch einen Hinweis auf mögliche Ursachen für die präemptive Unterbrechung.  
+- Das Gesamtsystem ist möglicherweise überzeichnet. Beachten Sie, dass die Threads möglicherweise von anderen Prozessen im System präemptiv unterbrochen werden. Wenn Sie den Cursor in der Threadansicht über einem Segment mit vorzeitiger Entfernung ruhen lassen, werden der Thread und der Prozess, von dem dieser präemptiv unterbrochen wurde, in einer QuickInfo benannt. Bei diesem Prozess muss es sich nicht zwingend um den Prozess handeln, der während der gesamten präemptiven Unterbrechung des Prozesses ausgeführt wurde, Sie erhalten dadurch jedoch einen Hinweis auf mögliche Ursachen für die präemptive Unterbrechung.  
   
--   Untersuchen Sie, wie die entsprechende Anzahl der Threads zur Ausführung in dieser Arbeitsphase vom Prozess ermittelt wird. Wenn der Prozess die Anzahl der aktiven parallelen Threads direkt berechnet, können Sie den Algorithmus ändern, um der Anzahl der verfügbaren logischen Kerne auf dem System besser Rechnung zu tragen. Bei Verwendung von Concurrency Runtime, Task Parallel Library oder PLINQ wird die Anzahl der Threads von diesen Bibliotheken berechnet.  
+- Untersuchen Sie, wie die entsprechende Anzahl der Threads zur Ausführung in dieser Arbeitsphase vom Prozess ermittelt wird. Wenn der Prozess die Anzahl der aktiven parallelen Threads direkt berechnet, können Sie den Algorithmus ändern, um der Anzahl der verfügbaren logischen Kerne auf dem System besser Rechnung zu tragen. Bei Verwendung von Concurrency Runtime, Task Parallel Library oder PLINQ wird die Anzahl der Threads von diesen Bibliotheken berechnet.  
   
 ## <a name="inefficient-io"></a>Ineffizienter E/A  
  ![Ineffizienter E&#47;A](../profiling/media/inefficient-io.png "Inefficient_IO")  

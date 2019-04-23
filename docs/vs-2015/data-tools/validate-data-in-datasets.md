@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047136"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ ms.locfileid: "59661320"
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>So validieren Sie Daten bei Zeilenänderungen (Visual Basic)  
   
-1.  Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird der <xref:System.Data.DataTable.RowChanging>-Ereignishandler der <xref:System.Data.DataTable> in der Datei für die partielle Klasse des Datasets automatisch erstellt.  
+2. Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird der <xref:System.Data.DataTable.RowChanging>-Ereignishandler der <xref:System.Data.DataTable> in der Datei für die partielle Klasse des Datasets automatisch erstellt.  
   
     > [!TIP]
     >  Doppelklicken Sie links neben den Tabellennamen, um den Ereignishandler für Zeilenänderungen zu erstellen. Wenn Sie den Tabellennamen doppelklicken, können Sie es bearbeiten.  
@@ -114,14 +114,14 @@ ms.locfileid: "59661320"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>So validieren Sie Daten bei Zeilenänderungen (C#)  
   
-1.  Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird eine Datei für die partielle Klasse der <xref:System.Data.DataTable> erstellt.  
+2. Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird eine Datei für die partielle Klasse der <xref:System.Data.DataTable> erstellt.  
   
     > [!NOTE]
     >  Der **DataSet-Designer** erstellt nicht automatisch einen Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis. Sie müssen eine Methode zum Behandeln von erstellen die <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Tabelle Initialisierungsmethode einzubinden.  
   
-3.  Kopieren Sie den folgenden Code in die partielle Klasse:  
+3. Kopieren Sie den folgenden Code in die partielle Klasse:  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ ms.locfileid: "59661320"
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Um alle geänderten Datensätze aus einem Dataset zu erhalten.  
   
--   Rufen Sie die <xref:System.Data.DataSet.GetChanges%2A> -Methode eines Datasets.  
+- Rufen Sie die <xref:System.Data.DataSet.GetChanges%2A> -Methode eines Datasets.  
   
      Das folgende Beispiel erstellt ein neues Dataset namens `changedRecords` und füllt sie mit der geänderten Datensätze aus einem anderen Dataset `dataSet1`.  
   
@@ -164,7 +164,7 @@ ms.locfileid: "59661320"
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>So rufen Sie alle geänderten Datensätze aus einer Datentabelle ab  
   
--   Rufen Sie die <xref:System.Data.DataTable.GetChanges%2A> Methode von einer "DataTable".  
+- Rufen Sie die <xref:System.Data.DataTable.GetChanges%2A> Methode von einer "DataTable".  
   
      Das folgende Beispiel erstellt eine neue Datentabelle namens `changedRecordsTable` und füllt sie mit der geänderten Datensätze aus einer anderen Datentabelle `dataTable1`.  
   
@@ -173,14 +173,14 @@ ms.locfileid: "59661320"
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Abrufen aller Datensätze, die einen bestimmte Zeile (Zustand)  
   
--   Rufen Sie die `GetChanges` -Methode der ein Dataset oder einer Datentabelle und übergeben Sie einen <xref:System.Data.DataRowState> Enumerationswert als Argument.  
+- Rufen Sie die `GetChanges` -Methode der ein Dataset oder einer Datentabelle und übergeben Sie einen <xref:System.Data.DataRowState> Enumerationswert als Argument.  
   
      Das folgende Beispiel zeigt, wie Sie ein neues Dataset namens erstellen `addedRecords` und füllen sie nur mit Datensätzen, die hinzugefügt wurden die `dataSet1` Dataset.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   Das folgende Beispiel zeigt, wie Sie alle Datensätze zurückzugeben, die vor kurzem hinzugefügt wurden, die `Customers` Tabelle:  
+- Das folgende Beispiel zeigt, wie Sie alle Datensätze zurückzugeben, die vor kurzem hinzugefügt wurden, die `Customers` Tabelle:  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ ms.locfileid: "59661320"
   
 #### <a name="to-get-the-original-version-of-a-record"></a>So rufen Sie die ursprüngliche Datensatzversion ab  
   
--   Zugriff auf den Wert einer Spalte durch die Übergabe der <xref:System.Data.DataRowVersion> der Zeile zurückgegeben werden soll.  
+- Zugriff auf den Wert einer Spalte durch die Übergabe der <xref:System.Data.DataRowVersion> der Zeile zurückgegeben werden soll.  
   
      Das folgende Beispiel zeigt, wie Sie mit einer <xref:System.Data.DataRowVersion> den ursprünglichen Wert des abzurufenden Werts eine `CompanyName` Feld eine <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ ms.locfileid: "59661320"
   
 #### <a name="to-get-the-current-version-of-a-record"></a>So rufen Sie die aktuelle Datensatzversion ab  
   
--   Zugriff auf den Wert einer Spalte, und fügen Sie einen Parameter klicken Sie dann auf den Index, der angibt, welche Version einer Zeile, die Sie zurückgeben möchten.  
+- Zugriff auf den Wert einer Spalte, und fügen Sie einen Parameter klicken Sie dann auf den Index, der angibt, welche Version einer Zeile, die Sie zurückgeben möchten.  
   
      Das folgende Beispiel zeigt, wie Sie mit einer <xref:System.Data.DataRowVersion> den aktuellen Wert des abzurufenden Werts eine `CompanyName` Feld eine <xref:System.Data.DataRow>:  
   
