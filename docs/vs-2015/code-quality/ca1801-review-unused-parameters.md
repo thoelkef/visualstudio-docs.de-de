@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045641"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Nicht verwe
 ## <a name="cause"></a>Ursache  
  Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. Diese Regel untersucht nicht die folgenden Methoden:  
   
--   Methoden, die einen Delegaten auf.  
+- Methoden, die einen Delegaten auf.  
   
--   Methoden, die als Ereignishandler verwendet werden.  
+- Methoden, die als Ereignishandler verwendet werden.  
   
--   Methoden deklariert werden, mit der `abstract` (`MustOverride` in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `abstract` (`MustOverride` in Visual Basic) Modifizierer.  
   
--   Methoden deklariert werden, mit der `virtual` (`Overridable` in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `virtual` (`Overridable` in Visual Basic) Modifizierer.  
   
--   Methoden deklariert werden, mit der `override` (`Overrides` in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `override` (`Overrides` in Visual Basic) Modifizierer.  
   
--   Methoden deklariert werden, mit der `extern` (`Declare` -Anweisung in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `extern` (`Declare` -Anweisung in Visual Basic) Modifizierer.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
  Überprüfen Sie die Parameter in nicht virtuellen Methoden, die nicht im Methodentext verwendet werden, um sicherzustellen, dass keine Richtigkeit Umfeld des Fehlers für den Zugriff darauf vorhanden ist. Nicht verwendete Parameter fallen Kosten für Wartung und Leistung.  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 50cafe4ef571034f496ec3e21a530c02b5d13a95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 782f5b422058d1564bde04251a92d95145f6edf3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045126"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
 
@@ -28,25 +28,25 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
 ## <a name="to-databind-a-lookup-control"></a>So stellen Sie die Datenbindung für ein Nachschlagesteuerelement her
 
-1.  Öffnen Sie das Projekt, öffnen die **Datenquellen** durch auswählen **Ansicht** > **Other Windows** > **Datenquellen**.
+1. Öffnen Sie das Projekt, öffnen die **Datenquellen** durch auswählen **Ansicht** > **Other Windows** > **Datenquellen**.
 
     > [!NOTE]
     > Für Nachschlagetabellen ist es erforderlich, dass zwei zusammengehörige Tabellen oder Objekte im **Datenquellenfenster** verfügbar sind. Weitere Informationen finden Sie unter [Beziehungen in Datasets](relationships-in-datasets.md).
 
-2.  Erweitern Sie im **Datenquellenfenster** die Knoten, bis die übergeordnete Tabelle und die zugehörige untergeordnete Tabelle jeweils mit allen Spalten angezeigt werden.
+2. Erweitern Sie im **Datenquellenfenster** die Knoten, bis die übergeordnete Tabelle und die zugehörige untergeordnete Tabelle jeweils mit allen Spalten angezeigt werden.
 
     > [!NOTE]
     > Der Knoten der untergeordneten Tabelle ist der Knoten, der in der übergeordneten Tabelle als ein erweiterbarer untergeordneter Knoten angezeigt wird.
 
-3.  Ändern Sie den Ablagetyp auf **Details**, indem Sie am Knoten der untergeordneten Tabelle in der Steuerelementliste die Option **Details** auswählen. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+3. Ändern Sie den Ablagetyp auf **Details**, indem Sie am Knoten der untergeordneten Tabelle in der Steuerelementliste die Option **Details** auswählen. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4.  Suchen Sie den Knoten, die zwei Tabellen verknüpft (die `CustomerID` Knoten im vorherigen Beispiel). Ändern Sie den Ablagetyp in einem <xref:System.Windows.Forms.ComboBox> dazu **"ComboBox"** aus der Steuerungsliste.
+4. Suchen Sie den Knoten, die zwei Tabellen verknüpft (die `CustomerID` Knoten im vorherigen Beispiel). Ändern Sie den Ablagetyp in einem <xref:System.Windows.Forms.ComboBox> dazu **"ComboBox"** aus der Steuerungsliste.
 
-5.  Ziehen Sie den Hauptknoten der untergeordneten Tabelle aus dem **Datenquellenfenster** auf das Formular.
+5. Ziehen Sie den Hauptknoten der untergeordneten Tabelle aus dem **Datenquellenfenster** auf das Formular.
 
      Auf dem Formular werden datengebundene Steuerelemente (mit beschreibenden Bezeichnungen) sowie ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) angezeigt. Die Komponenten [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt.
 
-6.  Ziehen Sie den Hauptknoten der übergeordneten Tabelle aus dem **Datenquellenfenster** direkt auf das Nachschlagesteuerelement (<xref:System.Windows.Forms.ComboBox>).
+6. Ziehen Sie den Hauptknoten der übergeordneten Tabelle aus dem **Datenquellenfenster** direkt auf das Nachschlagesteuerelement (<xref:System.Windows.Forms.ComboBox>).
 
      Die Nachschlagebindungen werden jetzt festgelegt. Verweisen Sie auf die folgende Tabelle enthält die spezifischen Eigenschaften, die für das Steuerelement festgelegt wurden.
 

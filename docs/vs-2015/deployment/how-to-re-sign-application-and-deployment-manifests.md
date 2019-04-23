@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045780"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Um erneut signieren Sie die Anwendungs- und Bereitstellungsmanifeste mit Mage.exe  
   
-1.  Öffnen einer **Visual Studio-Eingabeaufforderung** Fenster.  
+1. Öffnen einer **Visual Studio-Eingabeaufforderung** Fenster.  
   
-2.  Wechseln Sie zu dem Ordner, der die Manifesten-Dateien enthält, die Sie signieren möchten.  
+2. Wechseln Sie zu dem Ordner, der die Manifesten-Dateien enthält, die Sie signieren möchten.  
   
-3.  Geben Sie den folgenden Befehl aus, um die Manifestdatei der Anwendung anmelden. Ersetzen Sie ManifestFileName, durch den Namen der Manifestdatei mit der Erweiterung. Zertifikat aus, ersetzen Sie dies durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei, und Ersetzen Sie das Kennwort durch das Kennwort für das Zertifikat.  
+3. Geben Sie den folgenden Befehl aus, um die Manifestdatei der Anwendung anmelden. Ersetzen Sie ManifestFileName, durch den Namen der Manifestdatei mit der Erweiterung. Zertifikat aus, ersetzen Sie dies durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei, und Ersetzen Sie das Kennwort durch das Kennwort für das Zertifikat.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Geben Sie den folgenden Befehl zum Aktualisieren und Signieren die Datei mit dem Bereitstellungsmanifest, und Ersetzen Sie dabei die Platzhalternamen wie im vorherigen Schritt.  
+4. Geben Sie den folgenden Befehl zum Aktualisieren und Signieren die Datei mit dem Bereitstellungsmanifest, und Ersetzen Sie dabei die Platzhalternamen wie im vorherigen Schritt.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Optional, kopieren Sie das Bereitstellungsmanifest für die master (Veröffentlichen\\*Appname*.application) in Ihrer Version Bereitstellungsverzeichnis (Publish\Application Dateien\\*Appname*_ *Version*).  
+5. Optional, kopieren Sie das Bereitstellungsmanifest für die master (Veröffentlichen\\*Appname*.application) in Ihrer Version Bereitstellungsverzeichnis (Publish\Application Dateien\\*Appname*_ *Version*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Aktualisieren und erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste  
  Dieses Verfahren setzt voraus, dass Sie Änderungen an Ihrer Anwendung, die Manifestdatei (. manifest) bereits geleistet haben, aber es gibt noch andere Dateien, die aktualisiert wurden. Bei der Dateien aktualisiert werden, muss auch der Hash, der die Datei repräsentiert aktualisiert werden.  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Zum Aktualisieren und erneut signieren, die Anwendungs- und Bereitstellungsmanifeste mit Mage.exe  
   
-1.  Öffnen einer **Visual Studio-Eingabeaufforderung** Fenster.  
+1. Öffnen einer **Visual Studio-Eingabeaufforderung** Fenster.  
   
-2.  Wechseln Sie zu dem Ordner, der die Manifesten-Dateien enthält, die Sie signieren möchten.  
+2. Wechseln Sie zu dem Ordner, der die Manifesten-Dateien enthält, die Sie signieren möchten.  
   
-3.  Entfernen Sie die Dateierweiterung ".deploy" aus den Dateien im Ausgabeordner veröffentlichen.  
+3. Entfernen Sie die Dateierweiterung ".deploy" aus den Dateien im Ausgabeordner veröffentlichen.  
   
-4.  Geben Sie den folgenden Befehl zum Aktualisieren das Anwendungsmanifest mit den neuen Hashes für die aktualisierten Dateien und die Manifestdatei der Anwendung anmelden. Ersetzen Sie ManifestFileName, durch den Namen der Manifestdatei mit der Erweiterung. Zertifikat aus, ersetzen Sie dies durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei, und Ersetzen Sie das Kennwort durch das Kennwort für das Zertifikat.  
+4. Geben Sie den folgenden Befehl zum Aktualisieren das Anwendungsmanifest mit den neuen Hashes für die aktualisierten Dateien und die Manifestdatei der Anwendung anmelden. Ersetzen Sie ManifestFileName, durch den Namen der Manifestdatei mit der Erweiterung. Zertifikat aus, ersetzen Sie dies durch den relativen oder vollqualifizierten Pfad der Zertifikatdatei, und Ersetzen Sie das Kennwort durch das Kennwort für das Zertifikat.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Geben Sie den folgenden Befehl zum Aktualisieren und Signieren die Datei mit dem Bereitstellungsmanifest, und Ersetzen Sie dabei die Platzhalternamen wie im vorherigen Schritt.  
+5. Geben Sie den folgenden Befehl zum Aktualisieren und Signieren die Datei mit dem Bereitstellungsmanifest, und Ersetzen Sie dabei die Platzhalternamen wie im vorherigen Schritt.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Nachdem Sie Änderungen an Eigenschaften in das Anwendungsmanifest für Windows 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Fügen Sie die Dateierweiterung ".deploy" an den Dateien, hinzu, mit der Ausnahme von Dateien die Anwendungs- und Bereitstellungsmanifesten.  
+6. Fügen Sie die Dateierweiterung ".deploy" an den Dateien, hinzu, mit der Ausnahme von Dateien die Anwendungs- und Bereitstellungsmanifesten.  
   
-7.  Optional, kopieren Sie das Bereitstellungsmanifest für die master (Veröffentlichen\\*Appname*.application) in Ihrer Version Bereitstellungsverzeichnis (Publish\Application Dateien\\*Appname*_ *Version*).  
+7. Optional, kopieren Sie das Bereitstellungsmanifest für die master (Veröffentlichen\\*Appname*.application) in Ihrer Version Bereitstellungsverzeichnis (Publish\Application Dateien\\*Appname*_ *Version*).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   

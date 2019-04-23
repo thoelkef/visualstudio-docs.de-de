@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043679"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Es gibt eine Vielzahl von Problemen bei der [!INCLUDE[ndptecclick](../includes/n
   
  Wenn Sie Ihre bereitstellungs- noch die Anwendungsmanifeste manuell bearbeitet haben, Sie möglicherweise unbeabsichtigt sie beschädigt. Beschädigtes Manifest wird verhindert, dass eine korrekte [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Installation. Sie können solche Fehler zur Laufzeit Debuggen, indem Sie auf **Details** auf die **ClickOnce-Fehler** (Dialogfeld), und die Fehlermeldung in das Protokoll lesen. Das Protokoll Listet die folgenden Meldungen:  
   
--   Eine Beschreibung der Syntaxfehler, und die Zeilennummer und Zeichenposition Position, in dem der Fehler aufgetreten ist.  
+- Eine Beschreibung der Syntaxfehler, und die Zeilennummer und Zeichenposition Position, in dem der Fehler aufgetreten ist.  
   
--   Der Name der ein Element oder Attribut verwendet wird, gegen das Schema des Manifests. Wenn Sie XML manuell den Manifesten hinzugefügt haben, müssen Sie die Erweiterungen, die von Manifestschemas verglichen werden soll. Weitere Informationen finden Sie unter [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) und [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
+- Der Name der ein Element oder Attribut verwendet wird, gegen das Schema des Manifests. Wenn Sie XML manuell den Manifesten hinzugefügt haben, müssen Sie die Erweiterungen, die von Manifestschemas verglichen werden soll. Weitere Informationen finden Sie unter [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) und [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
   
--   Ein ID-Konflikt auftritt. Dependency-Verweise in bereitstellungs- und Anwendungsmanifeste müssen in beiden eindeutig sein ihre `name` und `publicKeyToken` Attribute. Wenn beide Attribute zwischen zwei beliebigen Elementen in einem Manifest übereinstimmen, ist das manifest Analyse nicht erfolgreich.  
+- Ein ID-Konflikt auftritt. Dependency-Verweise in bereitstellungs- und Anwendungsmanifeste müssen in beiden eindeutig sein ihre `name` und `publicKeyToken` Attribute. Wenn beide Attribute zwischen zwei beliebigen Elementen in einem Manifest übereinstimmen, ist das manifest Analyse nicht erfolgreich.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Vorsichtsmaßnahmen bei der Manifeste oder Anwendungen manuell zu ändern.  
  Wenn Sie ein Anwendungsmanifest aktualisieren, müssen Sie sowohl das Anwendungsmanifest und das Bereitstellungsmanifest erneut signieren. Das Bereitstellungsmanifest enthält einen Verweis auf das Anwendungsmanifest, das diese Dateihash und seiner digitalen Signatur enthält.  

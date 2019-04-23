@@ -12,12 +12,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7344bc5b830de07a72a86537af6839ab0993518a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044459"
 ---
 # <a name="getting-local-values"></a>Abrufen von lokalen Werten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "58959631"
   
  Diese Implementierung der `IDebugProperty2::GetPropertyInfo` führt die folgenden Aufgaben:  
   
-1.  Ruft den lokalen Namen, Eigenschaft und Attribute aus der [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) Struktur ausgefüllt, wenn die Klasse instanziiert und initialisiert wurde.  
+1. Ruft den lokalen Namen, Eigenschaft und Attribute aus der [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) Struktur ausgefüllt, wenn die Klasse instanziiert und initialisiert wurde.  
   
-2.  Ruft den lokalen Typ aus der [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt.  
+2. Ruft den lokalen Typ aus der [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt.  
   
-3.  Ruft den lokalen Wert aus der `IDebugField` Objekt. Dieses Feld gebunden ist, auf die Speicheradresse der lokalen mithilfe der [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekt und der Wert abgerufen wird, aus dem sich ergebenden [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
+3. Ruft den lokalen Wert aus der `IDebugField` Objekt. Dieses Feld gebunden ist, auf die Speicheradresse der lokalen mithilfe der [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekt und der Wert abgerufen wird, aus dem sich ergebenden [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
   
-4.  Gibt alle angeforderte Eigenschaften in einem [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) Struktur.  
+4. Gibt alle angeforderte Eigenschaften in einem [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) Struktur.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
  Dieses Beispiel zeigt eine Implementierung von `IDebugProperty2::GetPropertyInfo` für eine Methode den lokalen, in verwaltetem Code. Es zeigt auch eine Hilfsmethode, `Field.GetType`, d. h. verwendet, um das Feld vom Typ abzurufen. `Field.GetValue` sehen Sie in [auswerten "lokal"](../../extensibility/debugger/evaluating-locals.md). Die Hilfsfunktion `Field.MapModifiersToAttributes` (nicht dargestellt) einfach konvertiert eines Felds [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) Werte.  

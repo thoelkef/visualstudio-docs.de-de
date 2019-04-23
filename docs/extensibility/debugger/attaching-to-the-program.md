@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9776a6340fb96954c0d79694ce79dc577363f2b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045226"
 ---
 # <a name="attach-to-the-program"></a>Fügen an die Anwendung an
 Nachdem Sie Ihre Programme mit den entsprechenden Port registriert haben, müssen Sie den Debugger an das Programm anfügen, die Sie debuggen möchten.
@@ -43,16 +43,16 @@ Nachdem Sie Ihre Programme mit den entsprechenden Port registriert haben, müsse
 
   Nach der `IDebugEngine2::Attach` -Methode aufgerufen wird, gehen Sie in der Implementierung von der `IDebugEngine2::Attach` Methode:
 
-1.  Senden einer [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) Event-Objekt, das SDM. Weitere Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).
+1. Senden einer [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) Event-Objekt, das SDM. Weitere Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).
 
-2.  Rufen Sie die [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) Methode für die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das übergeben wurde die `IDebugEngine2::Attach` Methode.
+2. Rufen Sie die [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) Methode für die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das übergeben wurde die `IDebugEngine2::Attach` Methode.
 
      Dies gibt eine `GUID` wird, um die Anwendung zu identifizieren. Die `GUID` müssen gespeichert werden, in dem Objekt, stellt der lokalen Programm bereit, um die DE, und es muss zurückgegeben werden, wenn die `IDebugProgram2::GetProgramId` Methode wird aufgerufen, auf die `IDebugProgram2` Schnittstelle.
 
     > [!NOTE]
     >  Wenn Sie implementieren die `IDebugProgramNodeAttach2` Schnittstelle des Programms `GUID` übergeben wird, um die `IDebugProgramNodeAttach2::OnAttach` Methode. Dies `GUID` wird verwendet, für des Programms die `GUID` zurückgegebenes der `IDebugProgram2::GetProgramId` Methode.
 
-3.  Senden einer [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Event-Objekt, das SDM zu benachrichtigen, die der lokalen `IDebugProgram2` Objekt wurde erstellt, um die Anwendung für das DE darstellen. Weitere Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).
+3. Senden einer [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Event-Objekt, das SDM zu benachrichtigen, die der lokalen `IDebugProgram2` Objekt wurde erstellt, um die Anwendung für das DE darstellen. Weitere Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).
 
     > [!NOTE]
     >  Dies ist nicht die gleiche `IDebugProgram2` -Objekt, das übergebene der `IDebugEngine2::Attach` Methode. Das zuvor übergebene `IDebugProgram2` Objekt wird von den Port nur erkannt und ein separates Objekt ist.

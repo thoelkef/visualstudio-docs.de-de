@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045797"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Umgestaltung "Parameter entfernen" (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58958141"
   
 ### <a name="to-remove-parameters"></a>Um Parameter zu entfernen.  
   
-1.  Erstellen Sie eine Konsolenanwendung namens `RemoveParameters`, und Ersetzen Sie `Program` durch den folgenden Code.  
+1. Erstellen Sie eine Konsolenanwendung namens `RemoveParameters`, und Ersetzen Sie `Program` durch den folgenden Code.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58958141"
     }  
     ```  
   
-2.  Platzieren Sie den Cursor auf die Methode `A`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
+2. Platzieren Sie den Cursor auf die Methode `A`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
   
-3.  Von der **Umgestalten** , wählen Sie im Menü **Parameter entfernen** zum Anzeigen der **Parameter entfernen** Dialogfeld.  
+3. Von der **Umgestalten** , wählen Sie im Menü **Parameter entfernen** zum Anzeigen der **Parameter entfernen** Dialogfeld.  
   
      Sie können auch die Tastenkombination STRG + R, V anzuzeigende eingeben der **Parameter entfernen** Dialogfeld.  
   
      Sie können auch mit der rechten Maustaste des Cursors, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Parameter entfernen** zum Anzeigen der **Parameter entfernen** Dialogfeld.  
   
-4.  Mithilfe der **Parameter** Feld, positionieren Sie den Cursor auf `int i`, und klicken Sie dann auf **entfernen**.  
+4. Mithilfe der **Parameter** Feld, positionieren Sie den Cursor auf `int i`, und klicken Sie dann auf **entfernen**.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
-6.  In der **Vorschau der Änderungen – Parameter entfernen** Dialogfeld klicken Sie auf **übernehmen**.  
+6. In der **Vorschau der Änderungen – Parameter entfernen** Dialogfeld klicken Sie auf **übernehmen**.  
   
 ## <a name="remarks"></a>Hinweise  
  Sie können die Parameter aus der Deklaration einer Methode oder ein Methodenaufruf entfernen. Positionieren Sie des Cursors in der Deklaration oder Delegaten Name der Methode aus, und rufen Sie die Parameter zu entfernen.  

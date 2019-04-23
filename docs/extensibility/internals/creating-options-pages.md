@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044502"
 ---
 # <a name="create-options-pages"></a>Erstellen von Optionsseiten
 In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwaltetes Paketframework, abgeleitete Klassen von <xref:Microsoft.VisualStudio.Shell.DialogPage> erweitern die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE durch Hinzufügen von **Optionen** Seiten unter der **Tools** Menü.
@@ -25,9 +25,9 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwaltetes 
 
  Da die Umgebung das Implementieren von einer bestimmtes Objekt instanziiert **Extras/Optionen** Seite, wenn diese bestimmte Seite von der IDE angezeigt wird:
 
--   Ein **Extras/Optionen** Seite sollte implementiert werden, auf sein eigenes Objekt und nicht auf das Objekt, das ein VSPackage implementiert.
+- Ein **Extras/Optionen** Seite sollte implementiert werden, auf sein eigenes Objekt und nicht auf das Objekt, das ein VSPackage implementiert.
 
--   Ein Objekt kann nicht mehrere implementieren **Extras/Optionen** Seiten.
+- Ein Objekt kann nicht mehrere implementieren **Extras/Optionen** Seiten.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Registrieren Sie sich als ein Extras Optionen-Seite-Anbieter
  Ein VSPackage Unterstützung Benutzerkonfiguration über **Extras/Optionen** Seiten gibt an, die Objekte, die diese Bereitstellung **Extras/Optionen** Seiten durch Anwenden von Instanzen von <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> angewendet werden, um die <xref:Microsoft.VisualStudio.Shell.Package>Implementierung.

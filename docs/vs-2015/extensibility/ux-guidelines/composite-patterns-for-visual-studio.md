@@ -8,62 +8,62 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045082"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlichen Konfigurationen. Einige der wichtigsten zusammengesetzte Muster in Visual Studio im Hinblick auf Konsistenz sind:
 
--   [Visualisierung von Daten](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
+- [Visualisierung von Daten](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
 
--   [Objektgebundenen Benutzeroberfläche und einsehen](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+- [Objektgebundenen Benutzeroberfläche und einsehen](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
--   [Auswahlmodelle](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+- [Auswahlmodelle](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
--   [Persistenz und Einstellungen werden gespeichert.](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+- [Persistenz und Einstellungen werden gespeichert.](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
--   [Touch-Punkts](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+- [Touch-Punkts](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-##  <a name="BKMK_DataVisualization"></a> Visualisierung von Daten
+## <a name="BKMK_DataVisualization"></a> Visualisierung von Daten
 
 ### <a name="overview"></a>Übersicht
  Diagramme sind eine visuelle Möglichkeit zum Aggregieren und Visualisieren Sie Daten, um Entscheidungen zu verbessern. Sie können die Benutzer, die mit einer Vielzahl von Daten, aber wenig bedeutet finden Sie unter Was Aufmerksamkeit verdient, und was eine Aktion möglicherweise konfrontiert.
 
  Der Benutzer wird aus einem Diagramm profitieren, wenn eine der folgenden Bedingungen zutrifft:
 
--   Wird das Diagramm den Benutzern, die Aufgaben zu identifizieren, die, denen Sie bearbeiten können, besser?
+- Wird das Diagramm den Benutzern, die Aufgaben zu identifizieren, die, denen Sie bearbeiten können, besser?
 
--   Wird das Diagramm der Benutzer, die Auswirkungen möglicher Änderungen zu prognostizieren aktiviert?
+- Wird das Diagramm der Benutzer, die Auswirkungen möglicher Änderungen zu prognostizieren aktiviert?
 
--   Wird das Diagramm den Benutzern, die Erkennung von Trends und Muster identifizieren besser?
+- Wird das Diagramm den Benutzern, die Erkennung von Trends und Muster identifizieren besser?
 
--   Lässt das Diagramm Benutzer bessere Entscheidungen zu treffen?
+- Lässt das Diagramm Benutzer bessere Entscheidungen zu treffen?
 
--   Wird das Diagramm eine bestimmte Frage beantworten, die Benutzer im angegebenen Kontext möglicherweise helfen?
+- Wird das Diagramm eine bestimmte Frage beantworten, die Benutzer im angegebenen Kontext möglicherweise helfen?
 
 #### <a name="general-rules-for-charts"></a>Allgemeine Regeln für Diagramme
 
--   Klar bezeichnungsdaten. Abbildungen ohne erläuterungen sind nur so ziemlich Bilder.
+- Klar bezeichnungsdaten. Abbildungen ohne erläuterungen sind nur so ziemlich Bilder.
 
--   Starten Sie die Achsen auf 0 (null), um neigen Proportionen zu vermeiden. Länge und Balken Größe sind wichtig visuelle Hinweise für das Verständnis der Beziehungen zwischen Datenpunkten.
+- Starten Sie die Achsen auf 0 (null), um neigen Proportionen zu vermeiden. Länge und Balken Größe sind wichtig visuelle Hinweise für das Verständnis der Beziehungen zwischen Datenpunkten.
 
--   Erstellen Sie Diagramme, nicht infografiken. Infografiken stehen künstlerische Darstellungen von Daten, und das primäre Ziel ist das visual Storytelling. Diagramme können (und sollten) visuell ansprechend sein, aber lassen Sie die Daten für sich selbst sprechen.
+- Erstellen Sie Diagramme, nicht infografiken. Infografiken stehen künstlerische Darstellungen von Daten, und das primäre Ziel ist das visual Storytelling. Diagramme können (und sollten) visuell ansprechend sein, aber lassen Sie die Daten für sich selbst sprechen.
 
--   Vermeiden Sie Skeumorphism, grafische Balkendiagrammen, Kontrast Rautenzeichen und andere Workflows INFOGRAFIK.
+- Vermeiden Sie Skeumorphism, grafische Balkendiagrammen, Kontrast Rautenzeichen und andere Workflows INFOGRAFIK.
 
--   Verwenden Sie 3D-Effekte nicht als dekoratives Element aus. Verwenden sie nur, wenn sie die Möglichkeit des Benutzers zu verstehen, die Informationen tatsächlich integraler Bestandteil.
+- Verwenden Sie 3D-Effekte nicht als dekoratives Element aus. Verwenden sie nur, wenn sie die Möglichkeit des Benutzers zu verstehen, die Informationen tatsächlich integraler Bestandteil.
 
--   Verwenden Sie mehrere Linien und Füllungen, da mehr als zwei Farben aus, diese Art von Diagramm schwierig dass können zu lesen und richtig interpretieren.
+- Verwenden Sie mehrere Linien und Füllungen, da mehr als zwei Farben aus, diese Art von Diagramm schwierig dass können zu lesen und richtig interpretieren.
 
--   Verwenden Sie ein Diagramm (oder eine beliebige Abbildung) nicht als einziges Mittel der ein Konzept zu verstehen oder interagieren mit Daten. Dies stellt die Probleme für Benutzer mit eingeschränkter sehfähigkeit.
+- Verwenden Sie ein Diagramm (oder eine beliebige Abbildung) nicht als einziges Mittel der ein Konzept zu verstehen oder interagieren mit Daten. Dies stellt die Probleme für Benutzer mit eingeschränkter sehfähigkeit.
 
--   Verwenden Sie die Diagramme nicht als kostenlose oder dekorative Elemente auf einer Seite. Das heißt, wenn ein Diagramm nicht, dass alle Benutzer Wert oder Hilfe beim Lösen eines Problems hinzufügen, verwenden Sie nicht.
+- Verwenden Sie die Diagramme nicht als kostenlose oder dekorative Elemente auf einer Seite. Das heißt, wenn ein Diagramm nicht, dass alle Benutzer Wert oder Hilfe beim Lösen eines Problems hinzufügen, verwenden Sie nicht.
 
 ### <a name="chart-types"></a>Diagrammtypen
  Diagramme, die in Visual Studio verwendet Typen Balkendiagramme, Liniendiagramme, eine geänderte Kreisdiagramm, bekannt als Ringdiagramm oder "Ringdiagramm", Zeitachsen, Punktdiagramm Plots (auch als "cluster-Diagramme" bezeichnet) und Gantt-Diagramme. Jede Art von Diagramm eignet sich für die Kommunikation einer anderen Art von Informationen.
@@ -83,7 +83,7 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 |![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711-79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|
 |![Swatch B5B5B5](../../extensibility/ux-guidelines/media/0711-b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|
 
-##  <a name="BKMK_OnObjectUI"></a> Objektgebundenen Benutzeroberfläche und einsehen
+## <a name="BKMK_OnObjectUI"></a> Objektgebundenen Benutzeroberfläche und einsehen
  Dieser Abschnitt enthält Kontext zum einsehen, auch bekannt als Code Vorschauansicht, eines Typs des objektgebundenen Benutzeroberfläche nur für Visual Studio.
 
 ### <a name="overview"></a>Übersicht
@@ -94,9 +94,9 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
 - Objektgebundenen-Benutzeroberfläche in Visual Studio ist entweder Inline oder Gleitkommazahl und dauerhafte oder vorübergehende.
 
-  -   Vorschauansicht "Code", "ein Typ des objektgebundenen UI in Visual Studio ist Inline und dauerhaft.
+  - Vorschauansicht "Code", "ein Typ des objektgebundenen UI in Visual Studio ist Inline und dauerhaft.
 
-  -   Ein Typ des objektgebundenen UI in Visual Studio CodeLens ist Gleitkomma- und vorübergehende
+  - Ein Typ des objektgebundenen UI in Visual Studio CodeLens ist Gleitkomma- und vorübergehende
 
   Grundlegendes zur Funktionsweise eines Codeabschnitts, oder Suchen von Informationen zu diesen Code, erfordert häufig ein Entwickler den Kontext wechseln, und wechseln zu anderen Inhalten oder einer anderen Fenster. Diese Kontext-Schichten können störend sein, sein, da der Benutzer den Fokus auf ihre ursprünglichen Aufgabe verlieren können, wenn sie ihre Hauptfenster lassen. Darüber hinaus werden abgerufen, dass die ursprünglichen Kontext zurück, insbesondere dann, wenn ihre ursprünglichen Code von der andere Benutzeroberfläche verdeckt werden Wechseln zwischen Fenstern verursacht werden, schwierig sein kann.
 
@@ -108,11 +108,11 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 #### <a name="relationships-between-master-and-detail-content"></a>Beziehungen zwischen Master- und Inhalt
  Informationen zum Zeitpunkt der Aufmerksamkeit wird verwendet, um die Anzeige einer Beziehung zwischen dem Inhalt, dass der Benutzer konzentriert sich auf (den "master"-Inhalt) und weitere verwandte Inhalte (den Inhalt von "Details"). Bei diesem Muster der Detail-Inhalt klar auf den Inhalt bezieht sich der Benutzer arbeitet mit und in der Nähe der master-Inhalt angezeigt werden kann. Zusätzliche Informationen oder Informationen, die zusammengefasst werden kann, ohne Sie zu einer Überlastung des master-Inhalts sollte, wie z. B. ein Toolfenster, ein weiteres Muster folgen.
 
--   **Immer** zeigt den Inhalt der Details in der Nähe der master-Inhalt.
+- **Immer** zeigt den Inhalt der Details in der Nähe der master-Inhalt.
 
--   **Immer** stellen Sie sicher, dass der Inhalt der Details weiterhin Benutzer bleiben, konzentriert sich auf den master Inhalt ermöglicht. Häufig besteht die beste Möglichkeit, dies zu erreichen den Detail-Inhalt als in der Nähe der master Inhalt wie möglich zu rendern. Dies kann Rendern des Inhalts Details in einem Popup-Fenster neben dem master Inhalt oder die Details Inhalt Inline unterhalb der master-Inhalt Rendern erfolgen.
+- **Immer** stellen Sie sicher, dass der Inhalt der Details weiterhin Benutzer bleiben, konzentriert sich auf den master Inhalt ermöglicht. Häufig besteht die beste Möglichkeit, dies zu erreichen den Detail-Inhalt als in der Nähe der master Inhalt wie möglich zu rendern. Dies kann Rendern des Inhalts Details in einem Popup-Fenster neben dem master Inhalt oder die Details Inhalt Inline unterhalb der master-Inhalt Rendern erfolgen.
 
--   **Nie** verwenden Sie die Informationen zum Zeitpunkt der Aufmerksamkeit, die den Benutzer von der master-Inhalt verwendet. Wenn Benutzer den Inhalt Detail separat anzeigen müssen, machen Sie eine explizite Aktion, die dem Benutzer ermöglicht, die dazu.
+- **Nie** verwenden Sie die Informationen zum Zeitpunkt der Aufmerksamkeit, die den Benutzer von der master-Inhalt verwendet. Wenn Benutzer den Inhalt Detail separat anzeigen müssen, machen Sie eine explizite Aktion, die dem Benutzer ermöglicht, die dazu.
 
 #### <a name="design-details"></a>Entwurfsdetails
  Nachdem Sie ermittelt haben, dass objektgebundenen-Benutzeroberfläche die richtige Wahl ist, gibt es vier wichtige Überlegungen:
@@ -133,123 +133,123 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
 ### <a name="on-object-ui-components"></a>Objektgebundenen UI-Komponenten
 
-1.  Containertyp (ContentPresenter)
+1. Containertyp (ContentPresenter)
 
-    -   Gleitkomma
+    - Gleitkomma
 
-    -   Inline
+    - Inline
 
-2.  Inhaltstyp
+2. Inhaltstyp
 
-    -   Information: Daten, die statisch oder dynamisch sein können
+    - Information: Daten, die statisch oder dynamisch sein können
 
-    -   Aktionen erfordernde: Befehle, die den Hauptschlüssel Inhalt ändern
+    - Aktionen erfordernde: Befehle, die den Hauptschlüssel Inhalt ändern
 
-    -   : Navigationslinks, die der Benutzer in einem anderen Fenster oder einer Anwendung, z. B. MSDN ausführen
+    - : Navigationslinks, die der Benutzer in einem anderen Fenster oder einer Anwendung, z. B. MSDN ausführen
 
-3.  Gesten
+3. Gesten
 
-    -   Aufruf
+    - Aufruf
 
-    -   Kündigung
+    - Kündigung
 
-    -   Anheften von Zertifikaten
+    - Anheften von Zertifikaten
 
-    -   Weitere Interaktionen
+    - Weitere Interaktionen
 
-4.  Persistenz und Commit-Modell
+4. Persistenz und Commit-Modell
 
-    -   Transient (vorübergehend)
+    - Transient (vorübergehend)
 
-    -   Durable
+    - Durable
 
-    -   Automatisch
+    - Automatisch
 
-    -   Bei Bedarf
+    - Bei Bedarf
 
-5.  (Optional) der Ambient-Indikatoren
+5. (Optional) der Ambient-Indikatoren
 
-    -   Wellenlinie unterstrichen
+    - Wellenlinie unterstrichen
 
-    -   Smarttag-Symbol
+    - Smarttag-Symbol
 
-    -   Andere ambient-Indikatoren
+    - Andere ambient-Indikatoren
 
 #### <a name="container-content-presenter-type"></a>Containertyp (ContentPresenter)
  Es gibt zwei Hauptoptionen zur Verfügung, die zum Zeitpunkt der Aufmerksamkeit zu präsentieren:
 
-1.  **Inline:** eine Inline-Darstellung, wie z. B. die Peek-Sicht, die in der Visual Studio 2013-Code-Editor, eingeführte macht Platz für neue Inhalte durch die Umstellung der vorhandenen Inhalte.
+1. **Inline:** eine Inline-Darstellung, wie z. B. die Peek-Sicht, die in der Visual Studio 2013-Code-Editor, eingeführte macht Platz für neue Inhalte durch die Umstellung der vorhandenen Inhalte.
 
-    -   **Bevorzugen** Inline-Darstellungen, wenn Sie erwarten, Benutzer möchten verbringen viel Zeit verweisen dass auf oder die Interaktion mit Inhalten, die Sie darstellen.
+    - **Bevorzugen** Inline-Darstellungen, wenn Sie erwarten, Benutzer möchten verbringen viel Zeit verweisen dass auf oder die Interaktion mit Inhalten, die Sie darstellen.
 
-    -   **Vermeiden Sie** Inline-Darstellungen, wenn Sie erwarten, Benutzer dass Blick auf die Informationen, die Sie darstellen, und klicken Sie dann ihre Hauptaufgabe mit minimalen Unterbrechungen fortsetzen möchten.
+    - **Vermeiden Sie** Inline-Darstellungen, wenn Sie erwarten, Benutzer dass Blick auf die Informationen, die Sie darstellen, und klicken Sie dann ihre Hauptaufgabe mit minimalen Unterbrechungen fortsetzen möchten.
 
-2.  **Gleitkommawert:** ein unverankerten Presenter so nahe wie möglich dem ausgewählten Inhalt befindet er ändert jedoch nicht das Layout des vorhandenen Inhalts. Verschiedene Strategien verwendet werden, z. B. das Anzeigen eines frei verschiebbaren Panels des Inhalts über die nächstgelegenen verfügbaren Leerraum, um das ausgewählte Symbol.
+2. **Gleitkommawert:** ein unverankerten Presenter so nahe wie möglich dem ausgewählten Inhalt befindet er ändert jedoch nicht das Layout des vorhandenen Inhalts. Verschiedene Strategien verwendet werden, z. B. das Anzeigen eines frei verschiebbaren Panels des Inhalts über die nächstgelegenen verfügbaren Leerraum, um das ausgewählte Symbol.
 
-    -   **Bevorzugen** floating Presenter, wenn Sie erwarten, Benutzer dass möchten Blick auf die Informationen, die Sie darstellen, und klicken Sie dann ihre Hauptaufgabe mit minimalen Unterbrechungen fortsetzen.
+    - **Bevorzugen** floating Presenter, wenn Sie erwarten, Benutzer dass möchten Blick auf die Informationen, die Sie darstellen, und klicken Sie dann ihre Hauptaufgabe mit minimalen Unterbrechungen fortsetzen.
 
-    -   **Vermeiden Sie** floating Presenter, wenn Sie erwarten, Benutzer dass verbringen viel Zeit verweisen auf oder die Interaktion mit Inhalten sollten Sie vorhanden.
+    - **Vermeiden Sie** floating Presenter, wenn Sie erwarten, Benutzer dass verbringen viel Zeit verweisen auf oder die Interaktion mit Inhalten sollten Sie vorhanden.
 
 #### <a name="content-type"></a>Inhaltstyp
  Es gibt drei Haupttypen von Inhalten, die in jeder objektgebundenen Benutzeroberflächen-Container angezeigt werden können. Eine beliebige Kombination dieser Typen von Informationen kann angezeigt werden. Die drei Typen sind:
 
-1.  **Information:** die meisten objektgebundenen UI-Containern werden eine Art von Informationelle angezeigt. Der Inhalt kann Informationen zu den aktuellen Zustand der Umgebung darstellen, oder es kann Informationen zu einem potenziellen zukünftigen Zustand der Umgebung dar. Beispielsweise kann verwendet werden, um die Auswirkungen eines bestimmten Befehls ein, z. B. ein refactoring, auf den vorhandenen Code anzuzeigen.
+1. **Information:** die meisten objektgebundenen UI-Containern werden eine Art von Informationelle angezeigt. Der Inhalt kann Informationen zu den aktuellen Zustand der Umgebung darstellen, oder es kann Informationen zu einem potenziellen zukünftigen Zustand der Umgebung dar. Beispielsweise kann verwendet werden, um die Auswirkungen eines bestimmten Befehls ein, z. B. ein refactoring, auf den vorhandenen Code anzuzeigen.
 
-    -   **Immer** verwenden, die kanonische Darstellung der Informationen, die angezeigt werden. Z. B. Code sollte wie folgt Code, vollständig mit syntaxhervorhebung, Aussehen und sollten berücksichtigt werden, Schriftart und anderen umgebungseinstellungen, die vom Benutzer festgelegt wurde.
+    - **Immer** verwenden, die kanonische Darstellung der Informationen, die angezeigt werden. Z. B. Code sollte wie folgt Code, vollständig mit syntaxhervorhebung, Aussehen und sollten berücksichtigt werden, Schriftart und anderen umgebungseinstellungen, die vom Benutzer festgelegt wurde.
 
-    -   **Immer** erwägen Sie die Unterstützung von Maßnahmen, die über die nur zu Informationszwecken Inhalte, die wäre möglich, wenn die gleiche Informationen als master Inhalt angezeigt wird. Z. B. wenn vorhandener Code innerhalb einer objektgebundenen Benutzeroberflächen-Container zu präsentieren, sollten Sie möglicherweise Unterstützung der Fähigkeit zum Durchsuchen und ändern diesen Code.
+    - **Immer** erwägen Sie die Unterstützung von Maßnahmen, die über die nur zu Informationszwecken Inhalte, die wäre möglich, wenn die gleiche Informationen als master Inhalt angezeigt wird. Z. B. wenn vorhandener Code innerhalb einer objektgebundenen Benutzeroberflächen-Container zu präsentieren, sollten Sie möglicherweise Unterstützung der Fähigkeit zum Durchsuchen und ändern diesen Code.
 
-    -   **Immer** sollten Sie eine andere Hintergrundfarbe verwenden, wenn nur zu Informationszwecken Inhalt darstellen, die einen potenziellen zukünftigen Zustand darstellt.
+    - **Immer** sollten Sie eine andere Hintergrundfarbe verwenden, wenn nur zu Informationszwecken Inhalt darstellen, die einen potenziellen zukünftigen Zustand darstellt.
 
-2.  Umsetzbare: Einige objektgebundenen UI-Container werden die Fähigkeit zum Ausführen einer Aktion über die master-Inhalte, wie z. B. eines Umgestaltungsvorgangs bieten.
+2. Umsetzbare: Einige objektgebundenen UI-Container werden die Fähigkeit zum Ausführen einer Aktion über die master-Inhalte, wie z. B. eines Umgestaltungsvorgangs bieten.
 
-    -   **Immer** umsetzbare Befehle separat von der Informationelle zu positionieren.
+    - **Immer** umsetzbare Befehle separat von der Informationelle zu positionieren.
 
-    -   **Immer** aktivieren und Deaktivieren von Aktionen, die bei Bedarf.
+    - **Immer** aktivieren und Deaktivieren von Aktionen, die bei Bedarf.
 
-    -   **Immer** finden Sie in der Standardrichtlinien für die Darstellung von Befehlen in Dialogfeldern.
+    - **Immer** finden Sie in der Standardrichtlinien für die Darstellung von Befehlen in Dialogfeldern.
 
-    -   **Immer** minimale behalten Sie die Anzahl der Aktionen, die in einem Container des objektgebundenen-Benutzeroberfläche auf ein absolutes verfügbar gemacht werden. Interaktion mit objektgebundenen Benutzeroberfläche sollte ein einfaches, schnelles-Erlebnis. Der Benutzer sollte keine Energie zum Verwalten des objektgebundenen-UI-Containers selbst aufwenden.
+    - **Immer** minimale behalten Sie die Anzahl der Aktionen, die in einem Container des objektgebundenen-Benutzeroberfläche auf ein absolutes verfügbar gemacht werden. Interaktion mit objektgebundenen Benutzeroberfläche sollte ein einfaches, schnelles-Erlebnis. Der Benutzer sollte keine Energie zum Verwalten des objektgebundenen-UI-Containers selbst aufwenden.
 
-    -   **Immer** erwägen Sie, wie und wann ein Benutzeroberflächen-Container mit objektgebundenen geschlossen oder verworfen werden. Als bewährte Methode sollten alle Aktionen, die das Dialogfeld "zwischen der Master- und Inhalt wird abgeschlossen, auch die objektgebundenen Benutzeroberflächen-Container schließen, wenn mit dieser Aktion aufgerufen wird.
+    - **Immer** erwägen Sie, wie und wann ein Benutzeroberflächen-Container mit objektgebundenen geschlossen oder verworfen werden. Als bewährte Methode sollten alle Aktionen, die das Dialogfeld "zwischen der Master- und Inhalt wird abgeschlossen, auch die objektgebundenen Benutzeroberflächen-Container schließen, wenn mit dieser Aktion aufgerufen wird.
 
-3.  **Navigation:** einige objektgebundenen UI-Container enthalten Links, die der Benutzer in einem anderen Fenster oder einer Anwendung, z. B. öffnen einen MSDN-Artikel im Webbrowser des Benutzers ausführen.
+3. **Navigation:** einige objektgebundenen UI-Container enthalten Links, die der Benutzer in einem anderen Fenster oder einer Anwendung, z. B. öffnen einen MSDN-Artikel im Webbrowser des Benutzers ausführen.
 
-    -   **Immer** jede Landmarks Verknüpfung mit "Öffnen" voranstellen, damit, dass Benutzer nicht überraschen, werden einige andere Inhalt navigiert wird.
+    - **Immer** jede Landmarks Verknüpfung mit "Öffnen" voranstellen, damit, dass Benutzer nicht überraschen, werden einige andere Inhalt navigiert wird.
 
-    -   **Immer** Navigationslinks in umsetzbare Links zu trennen.
+    - **Immer** Navigationslinks in umsetzbare Links zu trennen.
 
 #### <a name="ambient-indicators-optional"></a>(Optional) der Ambient-Indikatoren
  Ambiente-Indikatoren möglich stimmt, einschließlich Text-, die in einer kontrastreichen Farbe vom Rest des Codes angezeigt oder offensichtlich Tickler-Symbole, z. B. Wellenlinie unterstrichen und Smarttag-Symbole einschließlich. Zusätzliche, relevanter Informationen zu Ambiente-Indikatoren kommunizieren. Im Idealfall bieten sie nützliche Informationen selbst, ohne dass der Benutzer Sie mit ihnen interagieren.
 
--   **Immer** positionieren Sie einen ambient-Indikator, sodass abgelenkt werden oder nicht des Benutzers überlasten. Ist dies nicht möglich, einen ambient-Indikator so zu positionieren, sollten Sie eine andere Lösung.
+- **Immer** positionieren Sie einen ambient-Indikator, sodass abgelenkt werden oder nicht des Benutzers überlasten. Ist dies nicht möglich, einen ambient-Indikator so zu positionieren, sollten Sie eine andere Lösung.
 
--   **Immer** positionieren Sie den Ambiente-Indikator so nah wie möglich auf den Inhalt, der es verknüpft ist.
+- **Immer** positionieren Sie den Ambiente-Indikator so nah wie möglich auf den Inhalt, der es verknüpft ist.
 
--   **Immer** versuchen, einen Indikator zu erstellen, die die Informationen zusammengefasst, zur Verfügung stellt. Geben Sie ggf. eine Anzahl die Anzahl der verfügbaren Datenelemente (z. B. "3 Referenzen" anstatt einfach "Referenzen"), oder stellen Sie sich eine andere Möglichkeit zum Zusammenfassen der Daten.
+- **Immer** versuchen, einen Indikator zu erstellen, die die Informationen zusammengefasst, zur Verfügung stellt. Geben Sie ggf. eine Anzahl die Anzahl der verfügbaren Datenelemente (z. B. "3 Referenzen" anstatt einfach "Referenzen"), oder stellen Sie sich eine andere Möglichkeit zum Zusammenfassen der Daten.
 
-    -   In Fällen, in denen die Daten für einen Indikator immer berechnet und angezeigt werden können, sofort berücksichtigen von Feedback progressive wie die Werte berechnet werden. Betrachten Sie beispielsweise das Animieren von Änderungen, die Updates für die verfügbaren Daten, die ähnlich wie die widerspiegeln, die die Anzahl der ungelesenen e-Mails erhöht die e-Mail-live-Kachel in Windows Phone aktualisiert wird.
+    - In Fällen, in denen die Daten für einen Indikator immer berechnet und angezeigt werden können, sofort berücksichtigen von Feedback progressive wie die Werte berechnet werden. Betrachten Sie beispielsweise das Animieren von Änderungen, die Updates für die verfügbaren Daten, die ähnlich wie die widerspiegeln, die die Anzahl der ungelesenen e-Mails erhöht die e-Mail-live-Kachel in Windows Phone aktualisiert wird.
 
--   **Nie** hinzufügen Weitere Indikatoren, die als ein Benutzer für einen bestimmten des Inhalts relativ ausführen kann. Ambiente-Indikatoren sollten nützlich sein, ohne Eingreifen des Benutzers. Indikatoren verlieren ihre Umgebung aus, wenn der benötigten Überlauf und andere verwaltungssteuerung für sie sichtbar zu machen.
+- **Nie** hinzufügen Weitere Indikatoren, die als ein Benutzer für einen bestimmten des Inhalts relativ ausführen kann. Ambiente-Indikatoren sollten nützlich sein, ohne Eingreifen des Benutzers. Indikatoren verlieren ihre Umgebung aus, wenn der benötigten Überlauf und andere verwaltungssteuerung für sie sichtbar zu machen.
 
 #### <a name="gestures"></a>Gesten
  Ein wichtiger Aspekt der Benutzer auf den master Inhalt konzentrieren kann, ist durch die Unterstützung von rechten Gesten zum Öffnen und schließen den Inhalt zusätzliche Details.
 
--   **Immer** muss der Benutzer einige explizite Geste zum Öffnen des weiteren Inhalts führen. Allgemeine open Bewegungen zählen:
+- **Immer** muss der Benutzer einige explizite Geste zum Öffnen des weiteren Inhalts führen. Allgemeine open Bewegungen zählen:
 
-    -   **Wenn darauf gezeigt wird:** QuickInfos oder nicht interaktiven Informationelle
+    - **Wenn darauf gezeigt wird:** QuickInfos oder nicht interaktiven Informationelle
 
-    -   **Expliziten Befehl:** Inline Presenter
+    - **Expliziten Befehl:** Inline Presenter
 
-    -   **Doppelklicken Sie auf der ambient-Indikator:** CodeLens-Popup-Fenster
+    - **Doppelklicken Sie auf der ambient-Indikator:** CodeLens-Popup-Fenster
 
--   **Immer** den Detail-Inhalt zu verwerfen, wenn der Benutzer die Esc-Taste drückt.
+- **Immer** den Detail-Inhalt zu verwerfen, wenn der Benutzer die Esc-Taste drückt.
 
--   **Immer** im Rahmen der objektgebundenen-Benutzeroberfläche zu berücksichtigen. Content-Darstellungen, die für die Interaktion in den Container zu ermöglichen, überlegt, ob zusätzliche Informationen zeigen, dies ist wahrscheinlich für den Workflow des Benutzers störend angezeigt.
+- **Immer** im Rahmen der objektgebundenen-Benutzeroberfläche zu berücksichtigen. Content-Darstellungen, die für die Interaktion in den Container zu ermöglichen, überlegt, ob zusätzliche Informationen zeigen, dies ist wahrscheinlich für den Workflow des Benutzers störend angezeigt.
 
--   **Nie** Inhalte anzeigen, wenn darauf gezeigt wird, die angezeigt wird, bearbeitet werden kann, oder lädt der Benutzerinteraktion. Dieses Verhalten kann Benutzer frustrierend sein, wenn sie versuchen, den Cursor über dem Details-Inhalt, bewegen, wie das Standardverhalten für eine QuickInfo wird, um sofort zu schließen, wenn der Cursor nicht mehr über den Master Inhalt ist, die sie erstellt.
+- **Nie** Inhalte anzeigen, wenn darauf gezeigt wird, die angezeigt wird, bearbeitet werden kann, oder lädt der Benutzerinteraktion. Dieses Verhalten kann Benutzer frustrierend sein, wenn sie versuchen, den Cursor über dem Details-Inhalt, bewegen, wie das Standardverhalten für eine QuickInfo wird, um sofort zu schließen, wenn der Cursor nicht mehr über den Master Inhalt ist, die sie erstellt.
 
-##  <a name="BKMK_SelectionModels"></a> Auswahlmodelle
+## <a name="BKMK_SelectionModels"></a> Auswahlmodelle
 
 ### <a name="overview"></a>Übersicht
  Ein Auswahlmodell ist ein Mechanismus verwendet, um anzugeben, und bestätigen Sie die Vorgänge für eine oder mehrere Objekte von Interesse sind, in der Benutzeroberfläche. In diesem Thema wird erläutert, Auswahl Interaktionsmuster in Editoren von Visual Studio-Dokument: Text-Editoren, Entwurfsoberflächen und Modellierung Flächen.
@@ -319,11 +319,11 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 #### <a name="interaction"></a>Interaktion
  Auswahl von grafischen Objekten kann komplex sein und hängt von einer Reihe von Faktoren:
 
--   **Primäre Auswahl-Modell des Editors.** Editoren, die grafische Objekte enthalten können auch zum Bearbeiten von Text oder Raster verwendet werden. Der Editor kann z. B. einer textbasierten Editor sein, der auch die Platzierung des grafischen Objekte, z. B. den Visual Studio-XAML-Designer unterstützt. Unterstützung mehrerer Objekttypen kann beeinflussen wie der Benutzer Gruppen setzt sich aus verschiedenen Typen von Objekten auswählt.
+- **Primäre Auswahl-Modell des Editors.** Editoren, die grafische Objekte enthalten können auch zum Bearbeiten von Text oder Raster verwendet werden. Der Editor kann z. B. einer textbasierten Editor sein, der auch die Platzierung des grafischen Objekte, z. B. den Visual Studio-XAML-Designer unterstützt. Unterstützung mehrerer Objekttypen kann beeinflussen wie der Benutzer Gruppen setzt sich aus verschiedenen Typen von Objekten auswählt.
 
--   **Unterstützung für Primär- und sekundärauswahl Zustände.** Ein-Editor kann es sich um Primär- und sekundärauswahl bereitstellen, die Status miteinander, und so weiter, auf die Größe geändert, damit Objekte bearbeitet werden können, gemeinsamen, ausgerichtet.
+- **Unterstützung für Primär- und sekundärauswahl Zustände.** Ein-Editor kann es sich um Primär- und sekundärauswahl bereitstellen, die Status miteinander, und so weiter, auf die Größe geändert, damit Objekte bearbeitet werden können, gemeinsamen, ausgerichtet.
 
--   **Unterstützung für die direkte Bearbeitung.** Editoren können auch den Inhalt ihrer grafische Objekte bearbeitet werden. Beispielsweise könnte eine rechteckige Form auch Text innerhalb enthalten, die vom Benutzer geändert werden können. Darüber hinaus kann Text zentriert oder im Blocksatz ausgerichtet werden. Direkte Bearbeitung eine detailliertere Ebene der Benutzerinteraktion umfasst und erfordert daher einen entsprechenden Satz von optische Hinweise zur Darstellung von Zustandsinformationen für den Benutzer.
+- **Unterstützung für die direkte Bearbeitung.** Editoren können auch den Inhalt ihrer grafische Objekte bearbeitet werden. Beispielsweise könnte eine rechteckige Form auch Text innerhalb enthalten, die vom Benutzer geändert werden können. Darüber hinaus kann Text zentriert oder im Blocksatz ausgerichtet werden. Direkte Bearbeitung eine detailliertere Ebene der Benutzerinteraktion umfasst und erfordert daher einen entsprechenden Satz von optische Hinweise zur Darstellung von Zustandsinformationen für den Benutzer.
 
 #### <a name="mouse-interaction"></a>Mausinteraktion
 
@@ -392,7 +392,7 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
  **Primäre Auswahl mit zwei sekundäre Auswahl**
 
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Darstellung der grafischen Objekts-Auswahl
+#### <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Darstellung der grafischen Objekts-Auswahl
  Ziehpunkte sind Quadrate, die in einem rechteckmuster an, um das umgebende Feld des Objekts gezeichnet wird. Im Diagramm unten sind Beispiele für die verschiedenen Status, die mit Handle größenanpassung und direkte Bearbeitung Darstellung ein grafisches Objekts haben kann. Die Größe des Handles gebunden werden sollte, Fensterrahmen und Edge Metriken verwenden das **GetSystemMetrics** API.
 
 |          Zustand          |  Darstellung   |                                                                  Visuelle details                                                                  |
@@ -447,11 +447,11 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
  Ziehen in der Liste Text ist eines von drei Dingen:
 
--   Durch die Auswahl einer Region initiiert, wenn die Liste wird unterstützt und die Maus nach unten in Leerzeichen
+- Durch die Auswahl einer Region initiiert, wenn die Liste wird unterstützt und die Maus nach unten in Leerzeichen
 
--   Initiiert einen Drag & Drop-Vorgang aus, wenn die Listenzelle oder Zeile unterstützt eine Quelle des Ziehvorgangs werden
+- Initiiert einen Drag & Drop-Vorgang aus, wenn die Listenzelle oder Zeile unterstützt eine Quelle des Ziehvorgangs werden
 
--   Markiert die aktuelle Zeile
+- Markiert die aktuelle Zeile
 
 ##### <a name="in-place-editing"></a>Direktes Bearbeiten
  Wenn direkte Bearbeitung zulässig ist, es gibt zwei grundlegende Modelle: einfache bearbeiten-Steuerelement und der Eigenschaft Auswahl. Mit einem einfachen Bearbeitungssteuerelement wird der Inhalt, hervorgehoben und bereit für Benutzereingaben als direktes Editieren aktiviert ist. Bei eine Eigenschaftenauswahl implementiert wird, wird die Schaltfläche, die die Eigenschaftenauswahl ruft angezeigt, sobald direkten Bearbeitungsmodus ist aktiviert, und die aktuelle Auswahl nicht hervorgehoben ist. Die Schaltfläche "Auswahl" sollte in der Zelle rechtsbündig ausgerichtet sein. Direkte Bearbeitung Beispiele finden Sie in der **Fenster "Eigenschaften"** und **Aufgabenliste** in Visual Studio.
@@ -459,21 +459,21 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 ##### <a name="keyboard-support"></a>Die Bildschirmtastatur-Unterstützung
  Die Bildschirmtastatur-Unterstützung für die Auswahl in Listen und Raster folgt die standard-Windows-Konventionen:
 
--   Jede Zeile/Zelle auswählen, wie sich der Fokus verschoben wird die Liste navigieren die Pfeiltasten.
+- Jede Zeile/Zelle auswählen, wie sich der Fokus verschoben wird die Liste navigieren die Pfeiltasten.
 
--   UMSCHALT + nach-führt eine zusammenhängende Auswahl in die Richtung der Pfeiltasten an.
+- UMSCHALT + nach-führt eine zusammenhängende Auswahl in die Richtung der Pfeiltasten an.
 
--   STRG + LEERTASTE schaltet gefolgt sind, zwischen hinzufügen und Entfernen von Elementen aus der Auswahl, und erstellen eine nicht zusammenhängende Auswahl-Taste.
+- STRG + LEERTASTE schaltet gefolgt sind, zwischen hinzufügen und Entfernen von Elementen aus der Auswahl, und erstellen eine nicht zusammenhängende Auswahl-Taste.
 
--   Raster, die geschachtelte Hierarchien enthalten, rechts-Taste wird eine übergeordnete Zeile erweitert und links-Taste reduziert einen.
+- Raster, die geschachtelte Hierarchien enthalten, rechts-Taste wird eine übergeordnete Zeile erweitert und links-Taste reduziert einen.
 
--   Die Tab-Taste verschiebt den Fokus zwischen den Zellen in der aktuellen Zeile, wenn die Zellen bearbeitet werden.
+- Die Tab-Taste verschiebt den Fokus zwischen den Zellen in der aktuellen Zeile, wenn die Zellen bearbeitet werden.
 
--   Die EINGABETASTE führt den Standardbefehl für das Element in der Liste (häufig **öffnen**).
+- Die EINGABETASTE führt den Standardbefehl für das Element in der Liste (häufig **öffnen**).
 
--   Die F2-Taste wird die direkte Bearbeitung für die derzeit ausgewählte Zelle aktiviert.
+- Die F2-Taste wird die direkte Bearbeitung für die derzeit ausgewählte Zelle aktiviert.
 
-##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistenz und Einstellungen werden gespeichert.
+## <a name="BKMK_PersistenceAndSavingSettings"></a> Persistenz und Einstellungen werden gespeichert.
 
 ### <a name="overview"></a>Übersicht
  Obwohl jede Softwarekomponente in Visual Studio in der Regel für einen eigenen Status und die Persistenz zuständig ist, speichert Visual Studio-Einstellungen in einigen Fällen wie z. B. mit Fenstergrößen und Positionen. In der folgenden Tabelle ist eine Kombination von Einstellungen, die automatisch gespeichert und Einstellungen, die einen expliziten Benutzer oder programmiert auszuführende Aktion.
@@ -490,17 +490,17 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
  Was der Benutzer Aktionen und, wenn sie ihn ausführen bestimmt, ob eine Einstellung im Arbeitsspeicher (während der Sitzung), auf dem Datenträger gespeichert werden, (sitzungsübergreifend als registrierungseinstellung), gespeichert wird, wird als Teil der Projekt- oder Projektmappendatei selbst als Teil des der **Lösung Optionen (SUO)** aus, oder wie eine benutzerdefinierte, die nur diese Softwarekomponente Einstellungsdatei kennt. Der Tabelle oben werden mehrere Ereignisse, die an denen Einstellungen gespeichert werden können. Es gibt jedoch auch in anderen Fällen, in denen Sie Zustand speichern möchten:
 
--   Wenn der Benutzer die Position in einem Dialogfeld oder Fenster ändert
+- Wenn der Benutzer die Position in einem Dialogfeld oder Fenster ändert
 
--   Wenn der Benutzer den Fokus in ein anderes Fenster übertragen
+- Wenn der Benutzer den Fokus in ein anderes Fenster übertragen
 
--   Wenn der Benutzer vom Entwurf bis zur den Debugmodus wechselt.
+- Wenn der Benutzer vom Entwurf bis zur den Debugmodus wechselt.
 
--   Wenn Sie ihr Konto meldet den Benutzer
+- Wenn Sie ihr Konto meldet den Benutzer
 
--   Wenn der Computer in den Ruhezustand wechselt, oder wird heruntergefahren
+- Wenn der Computer in den Ruhezustand wechselt, oder wird heruntergefahren
 
--   Wenn die Computer/Festplatte ist, werden erneut formatiert und erneut einrichten
+- Wenn die Computer/Festplatte ist, werden erneut formatiert und erneut einrichten
 
 ### <a name="window-configurations"></a>Fensterkonfigurationen
  Eine Fensterkonfiguration ist die grundlegende Darstellung der Entwicklungsumgebung – es ist ein Schema aus der Liste der Toolfenster vorhanden und die Möglichkeit, die in der sie angeordnet werden. Für Windows, die von der IDE (IDE-Windows) verwaltet wird wird pro Benutzer und Layoutinformationen beibehalten, damit bei einer starten die IDE, das Fensterlayout identisch angezeigt wird, wenn sie zum letzten Visual Studio beendet. Die Status und die Position des IDE-Fenster wird in einer benutzerdefinierten Optionen, die Datei im XML-Format beibehalten. Toolfenster, die von Paketen, die in der IDE geladen erstellt werden behalten ihren Zustand in der Registrierung können und möglicherweise nicht pro Benutzer.
@@ -508,17 +508,17 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 #### <a name="profile-specific-layouts"></a>Profil-spezifischen layouts
  Jedes Profil enthält die Tool-Fensterlayouts, auf eine Weise vertraut sind, bestimmte Rollen organisiert (Visual C++-Entwickler erwarten die **Projektmappen-Explorer** auf der linken Seite der IDE, während c#-Entwickler erwarten, dass die findenSieunter **Projektmappen-Explorer** auf der rechten Seite). Profil-spezifische Fensterlayouts werden geladen, nachdem der Benutzer ein Profil auf Start wählt. Autor eines Pakets sollten das Fensterlayout, das am besten zu ihren Kunden zu ermitteln und zu wissen, dass Änderungen, die der Benutzer die angegebene Fensterkonfiguration stellt dann beibehalten werden.
 
-##  <a name="BKMK_TouchInput"></a> Touch-Punkts
+## <a name="BKMK_TouchInput"></a> Touch-Punkts
  Benutzer werden zunehmend Produkte für die Entwicklung von Microsoft für Touch-Geräten verwenden. Es gibt jedoch Hindernissen, die Entwicklungstools für Touch-Geräten verwenden erschweren. Benutzer erwarten, dass unsere Produkte aus, um eine zuverlässige und präzise Touch-Erlebnis zu bieten. Die Absicht dieser Richtlinien besteht darin, Entscheidungen über die Touch-Funktionen zu integrieren und eine konsistente Touch-Funktion in Visual Studio und verwandte Produkte empfehlen.
 
 ### <a name="levels-of-experience"></a>Ebenen der Benutzeroberfläche
  Die folgenden Ebenen Erfahrung dienen als Anleitung können Teams entscheiden, abhängig von den gewünschten Grad der Investition Interesse an der Touch mit Touch-Funktionen zu bieten.
 
--   Die **Grundkenntnisse beim** ist für Teams, die möchten, geben Sie Funktionen touch, daher gibt es keine Warteschlange für unzustellbare Nachrichten enden während ihrer Arbeit.
+- Die **Grundkenntnisse beim** ist für Teams, die möchten, geben Sie Funktionen touch, daher gibt es keine Warteschlange für unzustellbare Nachrichten enden während ihrer Arbeit.
 
--   Die **optimierte Erfahrung** ist für Teams, die die meisten gebräuchlicher-Funktionen (z. B. die in der Regel in der Internet-Browser-Anwendungen verfügbar) bereitstellen möchten.
+- Die **optimierte Erfahrung** ist für Teams, die die meisten gebräuchlicher-Funktionen (z. B. die in der Regel in der Internet-Browser-Anwendungen verfügbar) bereitstellen möchten.
 
--   Die **erhöhte benutzerfreundlichkeit** ist für Teams, die solche Funktionen hinzufügen möchten, die als anwendungsstiftbewegungen oder andere optionale Funktionen, die ihrer Anwendung vornehmen können Touch hat Priorität angezeigter.
+- Die **erhöhte benutzerfreundlichkeit** ist für Teams, die solche Funktionen hinzufügen möchten, die als anwendungsstiftbewegungen oder andere optionale Funktionen, die ihrer Anwendung vornehmen können Touch hat Priorität angezeigter.
 
 ||Grundkenntnisse beim|Optimiert und|Erhöhte benutzerfreundlichkeit|
 |-|----------------------|--------------------------|-------------------------|

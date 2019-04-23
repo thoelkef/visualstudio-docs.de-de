@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1331fb7df7cc2c1aaff6a498aab0d9cf8ec8f57f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046265"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ SAL ist die Microsoft Source Code Annotation-Sprache. Mithilfe von Code quellanm
   
  Die Artikel in diesem Abschnitt der Dokumentation erläutert die Aspekte von SAL, Verweis bereitstellen, die für die Syntax für SAL und Beispielen für deren Verwendung geben.  
   
--   [Einführung in SAL](../code-quality/understanding-sal.md)  
+- [Einführung in SAL](../code-quality/understanding-sal.md)  
   
      Enthält Informationen und Beispiele, die den Kern von SAL-Anmerkungen anzeigen.  
   
--   [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)  
+- [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md)  
   
      Listet die SAL-Anmerkungen für Funktionen und Funktionsparameter.  
   
--   [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
+- [Hinzufügen einer Anmerkung zum Funktionsverhalten](../code-quality/annotating-function-behavior.md)  
   
      Listet die SAL-Anmerkungen für Funktionen und Funktionsverhalten.  
   
--   [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
+- [Hinzufügen einer Anmerkung zu Strukturen und Klassen](../code-quality/annotating-structs-and-classes.md)  
   
      Listet die SAL-Anmerkungen für Strukturen und Klassen.  
   
--   [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
+- [Hinzufügen einer Anmerkung zum Sperrverhalten](../code-quality/annotating-locking-behavior.md)  
   
      Erläutert das Verwenden von SAL-Anmerkungen mit Mechanismen für die Sperre.  
   
--   [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+- [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      Listet die SAL-Anmerkungen, die die Bedingung oder einen Bereich (die Platzierung), der andere SAL-Anmerkungen angeben.  
   
--   [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  
+- [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)  
   
      Listet die systeminternen SAL-Anmerkungen.  
   
--   [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)  
+- [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)  
   
      Enthält Beispiele für die Verwendung von SAL-Anmerkungen verwendet. Außerdem wird erläutert, häufige Probleme.  
   

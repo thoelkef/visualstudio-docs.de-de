@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a00a980f5984b05bd1f77a83d4c95d4da0f3ff03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045446"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: ISerializable ordnungsgemäß implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58959468"
 ## <a name="cause"></a>Ursache
  Ein extern sichtbarer Typ zugewiesen werden, ist die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> -Schnittstelle und eine der folgenden Bedingungen zutrifft:
 
--   Der Typ erbt, aber überschreibt nicht die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> -Methode und den Typ deklariert Instanzfelder, die nicht mit gekennzeichnet sind die <xref:System.NonSerializedAttribute?displayProperty=fullName> Attribut.
+- Der Typ erbt, aber überschreibt nicht die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> -Methode und den Typ deklariert Instanzfelder, die nicht mit gekennzeichnet sind die <xref:System.NonSerializedAttribute?displayProperty=fullName> Attribut.
 
--   Der Typ ist nicht versiegelt und implementiert eine <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> -Methode, die nicht extern sichtbar und überschreibbar ist.
+- Der Typ ist nicht versiegelt und implementiert eine <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> -Methode, die nicht extern sichtbar und überschreibbar ist.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Instanzfelder, die in einem Typ deklariert werden, erbt die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle sind nicht automatisch in den Serialisierungsprozess enthalten. Um Felder einzuschließen, der Typ muss implementieren die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> -Methode und den Serialisierungskonstruktor. Wenn die Felder nicht serialisiert werden sollen, wenden Sie die <xref:System.NonSerializedAttribute> -Attribut auf die Felder aus, um die Entscheidung explizit anzugeben.
@@ -58,7 +58,7 @@ ms.locfileid: "58959468"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>Beispiel
- Im folgenden Beispiel wird die zwei vorherigen Verstöße korrigiert durch eine überschreibbare Implementierung von [ISerializable.GetObjectData] (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) für die Buch-Klasse und durch eine Implementierung von <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> für die Bibliothek-Klasse.
+ Im folgenden Beispiel wird die zwei vorherigen Verstöße korrigiert durch eine überschreibbare Implementierung der [ISerializable.GetObjectData])<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) für die Buch-Klasse und durch eine Implementierung von <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> in der Bibliothek-Klasse.
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

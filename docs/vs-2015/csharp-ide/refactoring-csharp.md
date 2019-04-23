@@ -1,5 +1,5 @@
 ---
-title: Refactoring (C#) | Microsoft-Dokumentation
+title: Refactoring (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,31 +18,31 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046317"
 ---
 # <a name="refactoring-c"></a>Refactoring (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschrieben wurde, indem Sie die interne Struktur des Codes ändern, ohne das externe Verhalten des Codes zu ändern.  
   
- Visual C# bietet die folgenden Befehle für die Umgestaltung für die **Refactoring** Menü:  
+ Visual c# bietet die folgenden Befehle für die Umgestaltung für die **Refactoring** Menü:  
   
--   [Refactoring „Methode extrahieren“ (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refactoring „Methode extrahieren“ (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refactoring durch Umbenennen (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refactoring durch Umbenennen (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refactoring „Feld kapseln“ (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refactoring „Feld kapseln“ (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refactoring „Schnittstelle extrahieren“ (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refactoring „Schnittstelle extrahieren“ (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Umgestaltung „Parameter entfernen“ (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Umgestaltung „Parameter entfernen“ (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refactoring „Parameter neu anordnen“ (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refactoring „Parameter neu anordnen“ (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refactoring mit mehreren Projekten  
  Visual Studio unterstützt mit mehreren Projekten refactoring für Projekte, die sich in derselben Projektmappe befinden. Alle der Umgestaltungsvorgänge, die Verweise auf Dateien zu korrigieren, korrigieren diese Verweise für alle Projekte die gleiche Sprache. Dies funktioniert für alle Verweise von Projekt-zu-Projekt. Für, wenn Sie z. B. eine Konsolenanwendung, die eine Klassenbibliothek verweist, wenn Sie einen Typ "Klassenbibliothek" Umbenennen (mithilfe der `Rename` refactoringvorgang), die Verweise auf den Typ "Klassenbibliothek" in der Konsolenanwendung werden ebenfalls aktualisiert.  
@@ -69,7 +69,7 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
   
  Die **Ergebnisse der Überprüfung** Dialogfeld kann benachrichtigt, wenn die umgestaltungs-Engine Kompilierungsfehler erkennt oder erkennt, dass ein Umgestaltungsvorgang versehentlich führt dazu, einen Codeverweis dass sich an etwas anderes als den binden ursprünglich gebunden Sie (neubindung Problem).  
   
- Zum Aktivieren der Ergebnisse der Überprüfung feature, auf die **Tools** Menü klicken Sie auf **Optionen**. In der **Optionen** Dialogfeld erweitern Sie **Text-Editor**, und erweitern Sie dann **C#**. Klicken Sie auf **erweitert** , und wählen Sie die **Ergebnisse der Umgestaltung überprüfen** Kontrollkästchen.  
+ Zum Aktivieren der Ergebnisse der Überprüfung feature, auf die **Tools** Menü klicken Sie auf **Optionen**. In der **Optionen** Dialogfeld erweitern Sie **Text-Editor**, und erweitern Sie dann **c#**. Klicken Sie auf **erweitert** , und wählen Sie die **Ergebnisse der Umgestaltung überprüfen** Kontrollkästchen.  
   
  Die **Ergebnisse der Überprüfung** Dialogfeld unterscheidet, den Unterschied zwischen zwei Arten von neubindung Probleme.  
   
@@ -107,5 +107,5 @@ class Example
  Wenn Sie die Umgestaltung verwenden, um `OtherMethod` zu `Method`, dieses Dialogfeld wird angezeigt. Der Verweis in `Main` verweist nun auf die überladene Methode, die akzeptiert eine `int` -Parameter, anstatt die überladene Methode, die akzeptiert eine `object` Parameter.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwenden die Visual Studio-Entwicklungsumgebung für C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [Verwenden die Visual Studio-Entwicklungsumgebung für c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Vorgehensweise: Restore C# Refactoring Snippets (Vorgehensweise: Wiederherstellen von C#-Umgestaltungsausschnitten)](../ide/how-to-restore-csharp-refactoring-snippets.md)
