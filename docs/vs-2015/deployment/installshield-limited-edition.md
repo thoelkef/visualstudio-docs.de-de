@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080630"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ Mit InstallShield Limited Edition können Sie eine Setupdatei erstellen und sie 
   
 ### <a name="to-enable-installshield-limited-edition"></a>Aktivieren von InstallShield Limited Edition  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Andere Projekttypen** , und wählen Sie den Knoten **Setup und Bereitstellung** aus.  
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Andere Projekttypen** , und wählen Sie den Knoten **Setup und Bereitstellung** aus.  
   
-3.  Wählen Sie in der Vorlagenliste die Option **InstallShield Limited Edition aktivieren**und dann die Schaltfläche **OK** aus.  
+3. Wählen Sie in der Vorlagenliste die Option **InstallShield Limited Edition aktivieren**und dann die Schaltfläche **OK** aus.  
   
-4.  Lesen die Anweisungen im geöffneten Browserfenster, und wählen Sie anschließend den Link **Rufen Sie die Downloadwebsite auf** aus.
+4. Lesen die Anweisungen im geöffneten Browserfenster, und wählen Sie anschließend den Link **Rufen Sie die Downloadwebsite auf** aus.

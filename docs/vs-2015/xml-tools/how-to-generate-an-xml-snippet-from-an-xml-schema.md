@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115574"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Vorgehensweise: Generieren eines XML-Ausschnitts aus einem XML-Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
   
 - Das aktuelle Element im Editor muss leer sein und darf keine Attribute aufweisen. Alle folgenden Elemente sind z. B. gültig:  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - Der Cursor muss direkt rechts neben dem Elementnamen platziert werden.  
   
@@ -51,31 +51,31 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen ihr ein XML-Schema zu  
   
-1.  Auf der **Datei** Startmenü **neu**, und klicken Sie auf **Datei**.  
+1. Auf der **Datei** Startmenü **neu**, und klicken Sie auf **Datei**.  
   
-2.  Wählen Sie **XML-Datei** in die **Vorlagen** Bereich, und klicken Sie auf **öffnen**.  
+2. Wählen Sie **XML-Datei** in die **Vorlagen** Bereich, und klicken Sie auf **öffnen**.  
   
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Schemas** Feld.  
+3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Schemas** Feld.  
   
      Die **XSD-Schemas** Dialogfeld wird angezeigt.  
   
-4.  Klicken Sie auf **Hinzufügen**.  
+4. Klicken Sie auf **Hinzufügen**.  
   
      Die **XSD-Schema öffnen** Dialogfeld wird angezeigt.  
   
-5.  Wählen Sie die Schemadatei aus, und klicken Sie auf **öffnen**.  
+5. Wählen Sie die Schemadatei aus, und klicken Sie auf **öffnen**.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
      Das XML-Schema wird jetzt dem XML-Dokument zugeordnet.  
   
 #### <a name="to-generate-an-xml-snippet"></a>So generieren Sie einen XML-Ausschnitt  
   
-1.  Geben Sie im Editorbereich `<` ein.  
+1. Geben Sie im Editorbereich `<` ein.  
   
-2.  In der Memberliste werden die möglichen Elemente angezeigt:  
+2. In der Memberliste werden die möglichen Elemente angezeigt:  
   
      **!--** zum Hinzufügen eines Kommentars.  
   
@@ -85,11 +85,11 @@ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XSD-Schema
   
      **Wenden Sie sich an** zum Hinzufügen eines Stammelements.  
   
-3.  Wählen Sie **wenden Sie sich an** aus der Memberliste aus und drücken Sie die EINGABETASTE.  
+3. Wählen Sie **wenden Sie sich an** aus der Memberliste aus und drücken Sie die EINGABETASTE.  
   
      Der Editor fügt das Starttag `<Contact` hinzu und platziert den Cursor nach dem Elementnamen.  
   
-4.  Drücken Sie die TAB-Taste, um XML-Daten für das `Contact`-Element auf der Grundlage seiner Schemainformationen zu generieren.  
+4. Drücken Sie die TAB-Taste, um XML-Daten für das `Contact`-Element auf der Grundlage seiner Schemainformationen zu generieren.  
   
 ### <a name="input"></a>Eingabe  
  Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.  

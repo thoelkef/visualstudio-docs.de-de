@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0c79da47b83f8bf5b44af16ca291e2424011b80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075609"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Vorgehensweise: Auswerten eines XPath-Ausdrucks
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,32 +23,32 @@ Sie können die XPath-Ausdrücken mit Auswerten der **Schnellüberwachung** Dial
   
  In der folgenden Liste wird beschrieben, welche Funktionen beim Auswerten eines XPath-Ausdrucks unterstützt werden:  
   
--   Integrierte XPath-Funktionen werden unterstützt.  
+- Integrierte XPath-Funktionen werden unterstützt.  
   
--   Integrierte XSLT-Funktionen werden nicht unterstützt.  
+- Integrierte XSLT-Funktionen werden nicht unterstützt.  
   
--   Benutzerdefinierte Funktionen werden nicht unterstützt.  
+- Benutzerdefinierte Funktionen werden nicht unterstützt.  
   
 > [!NOTE]
 >  Im folgenden Verfahren wird die belowAvg.xsl und books.xml Dateien aus dem [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) Thema.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>So werten Sie einen XPath-Ausdruck aus  
   
-1.  Fügen Sie einen Haltepunkt am `xsl:if`-Starttag ein.  
+1. Fügen Sie einen Haltepunkt am `xsl:if`-Starttag ein.  
   
-2.  Klicken Sie auf die **XSLT Debuggen** auf der Symbolleiste des XML-Editor.  
+2. Klicken Sie auf die **XSLT Debuggen** auf der Symbolleiste des XML-Editor.  
   
      Der Debugger wird gestartet und am `xsl:if`-Tag unterbrochen.  
   
-3.  Mit der rechten Maustaste, und wählen Sie **Schnellüberwachung**.  
+3. Mit der rechten Maustaste, und wählen Sie **Schnellüberwachung**.  
   
      Die **Schnellüberwachung** Dialogfeld wird angezeigt.  
   
-4.  Geben Sie `./price/text()` in die **Ausdruck** Feld der **Schnellüberwachung** Dialogfeld und klicken Sie auf **neu auswerten**.  
+4. Geben Sie `./price/text()` in die **Ausdruck** Feld der **Schnellüberwachung** Dialogfeld und klicken Sie auf **neu auswerten**.  
   
      Der Preis für den aktuellen Buchknoten angezeigt wird, der **Wert** Feld.  
   
-5.  Ändern Sie die XPath-Ausdruck zur `./price/text() < $bookAverage` , und klicken Sie auf **neu auswerten**.  
+5. Ändern Sie die XPath-Ausdruck zur `./price/text() < $bookAverage` , und klicken Sie auf **neu auswerten**.  
   
      Die **Wert** Feld zeigt, dass der XPath-Ausdruck ergibt `true`.  
   

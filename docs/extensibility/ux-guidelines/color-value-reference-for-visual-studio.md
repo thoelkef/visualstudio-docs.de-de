@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118083"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Farbwertreferenz für Visual Studio
 
@@ -26,13 +26,13 @@ Farbtoken mit vorhandenen Benutzeroberfläche verwenden, finden Sie unter [freig
 
 Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 
--   **Immer kopieren Sie Vordergrund und Hintergrund Farbtöne zusammen.** Wählen Sie ein nicht von einer UI-Element und einen Hintergrund von einem anderen nur, weil Sie die Farbtöne wie.
+- **Immer kopieren Sie Vordergrund und Hintergrund Farbtöne zusammen.** Wählen Sie ein nicht von einer UI-Element und einen Hintergrund von einem anderen nur, weil Sie die Farbtöne wie.
 
--   **Hierbei handelt es sich um hexadezimale Codes nicht farbtoken.** Sie können nicht die tatsächliche Farbe Tokennamen diese Elemente der Benutzeroberfläche nicht verwenden, da Sie nicht steuern können, wie die Token in der Zukunft geändert werden können. Stattdessen erstellen Sie in eine eigene Kategorie-Token, und verwenden Sie die Hue-Werte, die in den Tabellen angezeigt. Color-Token für die vorhandene Benutzeroberfläche finden Sie in [freigegebene Farben für Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Hierbei handelt es sich um hexadezimale Codes nicht farbtoken.** Sie können nicht die tatsächliche Farbe Tokennamen diese Elemente der Benutzeroberfläche nicht verwenden, da Sie nicht steuern können, wie die Token in der Zukunft geändert werden können. Stattdessen erstellen Sie in eine eigene Kategorie-Token, und verwenden Sie die Hue-Werte, die in den Tabellen angezeigt. Color-Token für die vorhandene Benutzeroberfläche finden Sie in [freigegebene Farben für Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Hoher Kontrast Swatches werden für den Vergleich nur angezeigt werden.** Verwenden Sie den Namen des System-Farbe für hohen Kontrast-Benutzeroberfläche, und verwenden Sie keine Pipette oder dem Farbwähler auf diese Farbfelder. Hoher Kontrast Swatches in diesem Thema entsprechend das Design "hoher Kontrast #1" in Windows. Die Farben werden in anderen Designs mit hohem Kontrast anders aussehen.
 
--   **Für optimale Ergebnisse wird Paar Farbe mit Benutzeroberfläche, der ähnlich wie im Beispiel ist.**
+- **Für optimale Ergebnisse wird Paar Farbe mit Benutzeroberfläche, der ähnlich wie im Beispiel ist.**
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
 
@@ -96,7 +96,7 @@ Wenn Sie dieses Referenzhandbuch zu verwenden, denken Sie daran:
 | Vordergrund: Wenn darauf gezeigt wird | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![HighlightText swatch](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText swatch")<br />`HighlightText` |
 | Hintergrund | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![#FF292929 swatch](../../extensibility/ux-guidelines/media/292929.png "#FF292929 swatch")<br />`#FF292929` | ![#FFEEEEF2 swatch](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 swatch")<br />`#FFEEEEF2` | ![Steuerelement Farbmuster](../../extensibility/ux-guidelines/media/HCControl.png "Steuerelement-Muster")<br />`Control` |
 | Hintergrund: Wenn darauf gezeigt wird | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFFFFCF4 Farbmuster](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4-Muster")<br />`#FFFFFCF4` | ![Markieren Sie Muster](../../extensibility/ux-guidelines/media/HCHighlight.png "Hervorhebung-Muster")<br />`Highlight` |
-| Rahmen | Keine | Keiner | Keiner | Keine |
+| Rahmen | Keiner | Keiner | Keiner | Keiner |
 | Rahmen: Wenn darauf gezeigt wird | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFE5C365 Farbmuster](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365-Muster")<br />`#FFE5C365` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Kategoriegruppe

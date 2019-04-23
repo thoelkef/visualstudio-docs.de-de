@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114768"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -85,7 +85,7 @@ In einigen Fällen möchten Sie ermöglicht dem Endbenutzer die Benutzeroberflä
 
 ![Tools &gt; Dialogfeld "Optionen"](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-A_ToolsOptionsDialog")<br />Tools &gt; Dialogfeld "Optionen"
 
-##  <a name="BKMK_TheVSColorService"></a> Die VSColor Service
+## <a name="BKMK_TheVSColorService"></a> Die VSColor Service
 
 Visual Studio bietet einen Umgebung Farbe Dienst auch die VSColor Service oder der Color-Shell-Dienst genannt. Dieser Dienst ermöglicht Ihnen, binden die Farbwerte, die Elemente der Benutzeroberfläche in eine Name / Wert-Farbe, die Farben für jedes Design enthält. Die VSColor Service muss für alle Elemente der Benutzeroberfläche verwendet werden, damit Farben automatisch entsprechend der aktuellen vom Benutzer ausgewählten Thema zu ändern und so, dass die Umgebung-Farben-Benutzeroberfläche gebunden mit neuen Designs in zukünftigen Versionen von Visual Studio integriert werden.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Farben mit hohem Kontrast auswählen
+## <a name="BKMK_ChoosingHighContrastColors"></a> Farben mit hohem Kontrast auswählen
 
 ### <a name="overview"></a>Übersicht
 
@@ -330,7 +330,7 @@ Viele allgemeine Elemente der Benutzeroberfläche haben bereits kontrastreiche F
 | WindowFrame | -IDE Rahmens |
 | WindowText | -Automatisch ausblendbaren Registerkarte Vordergrund<br />– Vordergrund Registerkarte ausgewählte tool<br />-Ohne Fokus Dokumentregisterkarte für Fenster und provisorischen Registerkarte ohne Fokus oder "deaktiviert" Vordergrund<br />-Struktur, die standardmäßige Vordergrund-Ansicht und zeigen Sie für nicht ausgewählte Symbol<br />– Toolfenster ausgewählte Registerkarte – Rahmen<br />-Bildlaufleiste Thumb-Hintergrund, Rahmen und Symbol |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Verfügbarmachen von Farben für Endbenutzer
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Verfügbarmachen von Farben für Endbenutzer
 
 ### <a name="overview"></a>Übersicht
 

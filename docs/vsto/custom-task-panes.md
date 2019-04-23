@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106201"
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Funktionen Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.
@@ -126,7 +126,7 @@ ms.locfileid: "57526702"
 
  Vom benutzerdefinierten Aufgabenbereich verwendete Ressourcen werden von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatisch bereinigt, wenn das VSTO-Add-In entladen wird. Rufen Sie nicht die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> Methoden in der `ThisAddIn_Shutdown` -Ereignishandler in Ihrem Projekt. Durch diese Methoden wird <xref:System.ObjectDisposedException> ausgelöst, da die vom <xref:Microsoft.Office.Tools.CustomTaskPane>-Objekt verwendeten Ressourcen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereinigt werden, bevor `ThisAddIn_Shutdown` aufgerufen wird. Weitere Informationen zu `ThisAddIn_Shutdown`, finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Verwalten von benutzerdefinierten Aufgabenbereichen in mehreren Anwendungsfenstern
+## <a name="Managing"></a> Verwalten von benutzerdefinierten Aufgabenbereichen in mehreren Anwendungsfenstern
  Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Anwendung erstellen, die mehrere Fenster zum Anzeigen von Dokumenten und anderen Elementen verwendet, müssen Sie in zusätzlichen Schritten sicherstellen, dass der Aufgabenbereich sichtbar ist, wenn der Benutzer es erwartet.
 
  Benutzerdefinierte Aufgabenbereiche sind in allen Anwendungen einem Dokumentrahmenfenster zugeordnet, das eine Ansicht eines Dokuments oder Elements für den Benutzer enthält. Der Aufgabenbereich ist nur sichtbar, wenn das zugeordnete Fenster sichtbar ist. Allerdings verwenden nicht alle Anwendungen Dokumentrahmenfenster auf dieselbe Weise.
@@ -137,7 +137,7 @@ ms.locfileid: "57526702"
 
 - [Word, InfoPath und PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  Wenn Sie einen benutzerdefinierten Aufgabenbereich für Outlook erstellen, wird dieser einem bestimmten Explorer- oder Inspektor-Fenster zugeordnet. Explorer sind Fenster, die den Inhalt eines Ordners anzeigen,-Fenster, in denen ein Element z. B. eine e-Mail-Nachricht oder eine Aufgabe angezeigt.
 
  Wenn Sie einen benutzerdefinierten Aufgabenbereich mit mehreren Explorer- oder Inspektor-Fenstern anzeigen möchten, müssen Sie eine neue Instanz des benutzerdefinierten Aufgabenbereichs erstellen, wenn ein Explorer- oder Inspektor-Fenster geöffnet wird. Behandeln Sie dazu ein Ereignis, das ausgelöst wird, wenn ein Explorer- oder Inspektor-Fenster erstellt wird, und erstellen Sie dann den Aufgabenbereich im Ereignishandler. Sie können auch Explorer- und Inspektor-Ereignisse behandeln, um Aufgabenbereiche abhängig davon auszublenden oder anzuzeigen, welches Fenster sichtbar ist.
@@ -167,7 +167,7 @@ ms.locfileid: "57526702"
 
  Wenn Sie den benutzerdefinierten Aufgabenbereich nicht explizit entfernen, werden in Outlook-Fenstern möglicherweise mehrere Instanzen des benutzerdefinierten Aufgabenbereichs angezeigt. Fenster werden in Outlook gelegentlich wiederverwendet, und in wiederverwendeten Fenstern werden Verweise auf benutzerdefinierte Aufgabenbereiche beibehalten, die an die Fenster angefügt waren.
 
-##  <a name="WordAndInfoPath"></a> Word, InfoPath und PowerPoint
+## <a name="WordAndInfoPath"></a> Word, InfoPath und PowerPoint
  In Word, InfoPath und PowerPoint wird jedes Dokument in einem anderen Dokumentrahmenfenster angezeigt. Wenn Sie einen benutzerdefinierten Aufgabenbereich für diese Anwendungen erstellen, ist dieser nur einem bestimmten Dokument zugeordnet. Wenn der Benutzer ein anderes Dokument öffnet, wird der benutzerdefinierte Aufgabenbereich ausgeblendet, bis das vorherige Dokument wieder sichtbar ist.
 
  Wenn Sie einen benutzerdefinierten Aufgabenbereich mit mehreren Dokumenten anzeigen möchten, erstellen Sie eine neue Instanz des benutzerdefinierten Aufgabenbereichs, wenn der Benutzer ein neues Dokument erstellt oder ein vorhandenes Dokument öffnet. Behandeln Sie dazu Ereignisse, die ausgelöst werden, wenn ein Dokument erstellt oder geöffnet wird, und erstellen Sie dann den Aufgabenbereich in den Ereignishandlern. Sie können auch Dokumentereignisse behandeln, um Aufgabenbereiche abhängig davon auszublenden oder anzuzeigen, welches Dokument sichtbar ist.
@@ -177,43 +177,43 @@ ms.locfileid: "57526702"
 ### <a name="word-events"></a>Word-Ereignisse
  Um den Zustand von Dokumentfenstern in Word zu überwachen, können Sie die folgenden Ereignisse behandeln:
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>InfoPath-Ereignisse
  Um den Zustand von Dokumentfenstern in InfoPath zu überwachen, können Sie die folgenden Ereignisse behandeln:
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>PowerPoint-Ereignisse
  Um den Zustand von Dokumentfenstern in PowerPoint zu überwachen, können Sie die folgenden Ereignisse behandeln:
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

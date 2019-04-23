@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083997"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Fehler: Fehler bei der Kerberos-Authentifizierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>So überprüfen Sie, ob der Name des Debuggerhostcomputers vom DNS auf dem Zielcomputer ordnungsgemäß aufgelöst wird  
   
-1.  Klicken Sie auf dem Zielcomputer auf das Menü **Start**, zeigen Sie auf **Zubehör**, und klicken Sie dann auf **Eingabeaufforderung**.  
+1. Klicken Sie auf dem Zielcomputer auf das Menü **Start**, zeigen Sie auf **Zubehör**, und klicken Sie dann auf **Eingabeaufforderung**.  
   
-2.  Geben Sie im Fenster **Eingabeaufforderung** Folgendes ein:  
+2. Geben Sie im Fenster **Eingabeaufforderung** Folgendes ein:  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  Die erste Zeile der `ping`-Antwort enthält den vollständigen Computernamen und die vollständige IP-Adresse, die vom DNS für den angegebenen Computer zurückgegeben wurden.  
+3. Die erste Zeile der `ping`-Antwort enthält den vollständigen Computernamen und die vollständige IP-Adresse, die vom DNS für den angegebenen Computer zurückgegeben wurden.  
   
-4.  Öffnen Sie auf dem Debuggerhostcomputer das Fenster **Eingabeaufforderung**, und führen Sie `ipconfig` aus.  
+4. Öffnen Sie auf dem Debuggerhostcomputer das Fenster **Eingabeaufforderung**, und führen Sie `ipconfig` aus.  
   
-5.  Vergleichen Sie die IP-Adresswerte.  
+5. Vergleichen Sie die IP-Adresswerte.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   

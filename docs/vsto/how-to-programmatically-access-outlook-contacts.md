@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104225"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Vorgehensweise: Programmgesteuertes Zugreifen auf Outlook-Kontakte
   Dieses Beispiel ermittelt alle Kontakte, deren Nachname eine angegebene Suchzeichenfolge enthalten.
@@ -32,7 +32,7 @@ ms.locfileid: "56598205"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Beispiel benötigen Sie Folgendes:
 
--   Kontakte, deren Nachname die Zeichenfolge enthalten "**Na"** (z. B. Tzipi Butnaru) in der **Kontakte** Ordner.
+- Kontakte, deren Nachname die Zeichenfolge enthalten "**Na"** (z. B. Tzipi Butnaru) in der **Kontakte** Ordner.
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)

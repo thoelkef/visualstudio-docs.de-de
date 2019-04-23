@@ -19,50 +19,50 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78d5e8bbc024009ad6515bdf08c5219253b42d12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105499"
 ---
-# <a name="how-to-choose-sampling-events"></a>Gewusst wie: Auswählen von Samplingereignissen
+# <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Profilerstellungstools [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:  
   
--   Taktzyklen: bei CPU-Problemen  
+- Taktzyklen: bei CPU-Problemen  
   
--   Seitenfehler: bei Arbeitsspeicherproblemen  
+- Seitenfehler: bei Arbeitsspeicherproblemen  
   
--   Systemaufrufe: bei E/A-Probleme  
+- Systemaufrufe: bei E/A-Probleme  
   
--   Leistungsindikator – CPU-Indikatoren für Leistungsproblemen auf niedriger Ebene  
+- Leistungsindikator – CPU-Indikatoren für Leistungsproblemen auf niedriger Ebene  
   
 > [!IMPORTANT]
 >  Wenn Sie .NET-Speicherdaten mithilfe der Sampling-Methode sammeln (Belegungen, Lebensdauer von Objekten oder beides), werden benutzerspezifische Samplingereignisse ignoriert und Ereignisse zur Speicherbelegung, zur automatischen Speicherbereinigung (oder beide) werden zur Datensammlung verwendet.  
   
 ### <a name="to-select-a-sample-event"></a>So wählen Sie ein Beispielereignis aus  
   
-1.  Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaften **Sampling**.  
+2. Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaften **Sampling**.  
   
-3.  Wählen Sie aus der Dropdownliste **Beispielereignisse** das Beispielereignis aus, das Sie zur Profilerstellung Ihrer Anwendung verwende möchten.  
+3. Wählen Sie aus der Dropdownliste **Beispielereignisse** das Beispielereignis aus, das Sie zur Profilerstellung Ihrer Anwendung verwende möchten.  
   
     > [!NOTE]
     >  Die **verfügbaren Leistungsindikatoren** sind nur aktiviert, wenn Sie aus der Dropdown-Liste **Beispielereignis** **Leistungsindikator** auswählen.  
   
-4.  Wenn Sie **Leistungsindikator** auswählen, klicken Sie vom Strukturansicht-Steuerelement auf **Verfügbare Leistungsindikatoren** auf einen bestimmten CPU-Indikator.  
+4. Wenn Sie **Leistungsindikator** auswählen, klicken Sie vom Strukturansicht-Steuerelement auf **Verfügbare Leistungsindikatoren** auf einen bestimmten CPU-Indikator.  
   
-    -   Indikatoren aus dem Knoten **Portable Ereignisse** sind für alle Prozessortypen verfügbar.  
+    - Indikatoren aus dem Knoten **Portable Ereignisse** sind für alle Prozessortypen verfügbar.  
   
-    -   Indikatoren aus dem Knoten **Plattformereignisse** sind spezifische Prozessoren am aktuellen Computer und sind vielleicht für andere Prozessortypen verfügbar.  
+    - Indikatoren aus dem Knoten **Plattformereignisse** sind spezifische Prozessoren am aktuellen Computer und sind vielleicht für andere Prozessortypen verfügbar.  
   
-5.  Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.  
+5. Wenn Sie ein Beispielereignis auswählen, wird ein standardmäßiger Samplingintervallwert im Textfeld **Samplingintervall** angezeigt. Bei Bedarf können Sie den gewünschten Wert in das Textfeld eingeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Konfigurieren von Leistungssitzungen für Profilerstellungstools](../profiling/configuring-performance-sessions.md)   
+ [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)   
  [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   

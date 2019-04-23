@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59001893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074124"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio-Shell (integriert)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,15 +68,15 @@ Die Visual Studio integrierte Shell umfasst die integrierte Entwicklungsumgebung
 ## <a name="features-not-included-in-the-integrated-shell"></a>In der integrierten Shell nicht enthaltene Funktionen  
  Im folgenden finden eine Liste der Funktionen, die nicht in der integrierten Shell enthalten sind:  
   
--   Klassen-Designer  
+- Klassen-Designer  
   
--   PreEmptive Protection – Dotfuscator  
+- PreEmptive Protection – Dotfuscator  
   
--   Sprachfunktionen  
+- Sprachfunktionen  
   
--   VSHost  
+- VSHost  
   
--   Keine Visual Studio-Sprachen oder ihre zugeordneten Projektvorlagen oder Projektelementvorlagen, sind in der integrierten Shell enthalten. Keine sprachspezifische Implementierungen anderer Features sind enthalten, für das Beispiel Visual Basic-Codeausschnitte.  
+- Keine Visual Studio-Sprachen oder ihre zugeordneten Projektvorlagen oder Projektelementvorlagen, sind in der integrierten Shell enthalten. Keine sprachspezifische Implementierungen anderer Features sind enthalten, für das Beispiel Visual Basic-Codeausschnitte.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Visual Studio-Übersicht](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

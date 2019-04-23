@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104478"
 ---
-# <a name="how-to-install-a-visualizer"></a>Gewusst wie: Installieren einer Schnellansicht
+# <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.
 
 > [!NOTE]
@@ -32,18 +32,18 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
 
 ### <a name="to-install-a-visualizer"></a>So installieren Sie eine Schnellansicht
 
-1.  Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
+1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.
 
-2.  Kopieren Sie die DLL an einen der folgenden Speicherorte:
+2. Kopieren Sie die DLL an einen der folgenden Speicherorte:
 
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`
 
-3.  Wenn Sie eine verwaltete Schnellansicht zum Remotedebuggen verwenden möchten, kopieren Sie die DLL-Datei in denselben Pfad auf dem Remotecomputer.
+3. Wenn Sie eine verwaltete Schnellansicht zum Remotedebuggen verwenden möchten, kopieren Sie die DLL-Datei in denselben Pfad auf dem Remotecomputer.
 
-4.  Starten Sie die Debugsitzung neu.
+4. Starten Sie die Debugsitzung neu.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
-- [Gewusst wie: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Vorgehensweise: Schreiben einer Schnellansicht](/visualstudio/debugger/create-custom-visualizers-of-data)

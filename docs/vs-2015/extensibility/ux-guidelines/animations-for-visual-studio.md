@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 241a9f628ab731552a01b2ccbefe55fe53dbe3e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077250"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,39 +23,39 @@ ms.locfileid: "58956345"
 ### <a name="animation-best-practices-in-visual-studio"></a>Animation, bewährte Methoden in Visual Studio
  Führen Sie diese Regeln aus, um konsistente und benutzerfreundliche animationsstile für Visual Studio IDE sicherzustellen.
 
--   **Werden Sie selektive.** Beschränken Sie Animationen, die bestimmte Zwecke zu erfüllen.
+- **Werden Sie selektive.** Beschränken Sie Animationen, die bestimmte Zwecke zu erfüllen.
 
--   **Zeitpunkt und Geschwindigkeit sind wichtig,** um sicherzustellen, dass es sich bei Übergängen können Sie schnelle und natürliche:
+- **Zeitpunkt und Geschwindigkeit sind wichtig,** um sicherzustellen, dass es sich bei Übergängen können Sie schnelle und natürliche:
 
-    -   Führen Sie animierten Übergänge in eine halbe Sekunde (500 Millisekunden).
+    - Führen Sie animierten Übergänge in eine halbe Sekunde (500 Millisekunden).
 
-    -   Animationen, die häufig auftreten würden müssen schnell genug sein, dass sie den Workflow des Benutzers nicht unterbrechen.
+    - Animationen, die häufig auftreten würden müssen schnell genug sein, dass sie den Workflow des Benutzers nicht unterbrechen.
 
-    -   Animationen sollte nicht so schnell oder bedürfen, es ist schwer zu verstehen, aber nicht so langsam ist, dass es eine ungeduldig der Übergang abgeschlossen ist.
+    - Animationen sollte nicht so schnell oder bedürfen, es ist schwer zu verstehen, aber nicht so langsam ist, dass es eine ungeduldig der Übergang abgeschlossen ist.
 
-    -   Verwenden Sie Variablen zeitliche Steuerung, um die Bedeutung hervorzuheben. Z. B. beim Navigieren durch eine Sequenz von Elementen in einem Diagramm beschleunigt über die Übergänge zwischen den Elementen und dann verlangsamt sich auf wichtige Elemente konzentrieren.
+    - Verwenden Sie Variablen zeitliche Steuerung, um die Bedeutung hervorzuheben. Z. B. beim Navigieren durch eine Sequenz von Elementen in einem Diagramm beschleunigt über die Übergänge zwischen den Elementen und dann verlangsamt sich auf wichtige Elemente konzentrieren.
 
--   **Mithilfe der schrittweisen nicht lineare Beschleunigung** von einem Zustand in einen anderen, bietet einen Überblick über die schwierigen Situationen ruhig und natürliche verschieben
+- **Mithilfe der schrittweisen nicht lineare Beschleunigung** von einem Zustand in einen anderen, bietet einen Überblick über die schwierigen Situationen ruhig und natürliche verschieben
 
--   Wenn möglich, **verwenden Sie eine geringfügige Animation, wenn darauf gezeigt wird** interaktive Elemente unter der Maus an.
+- Wenn möglich, **verwenden Sie eine geringfügige Animation, wenn darauf gezeigt wird** interaktive Elemente unter der Maus an.
 
--   Wenn Sie stark auf Animationen in Ihrer Features dann verlassen **bieten eine Möglichkeit zum Abschalten** lokal (für alle Funktionen) als Option in der **Tools > Optionen** Dialogfeld.
+- Wenn Sie stark auf Animationen in Ihrer Features dann verlassen **bieten eine Möglichkeit zum Abschalten** lokal (für alle Funktionen) als Option in der **Tools > Optionen** Dialogfeld.
 
--   **Nur eine einzige Animation erfolgen soll, zu einem Zeitpunkt** und nur ein Teil der Informationen zu vermitteln.
+- **Nur eine einzige Animation erfolgen soll, zu einem Zeitpunkt** und nur ein Teil der Informationen zu vermitteln.
 
--   **Besonderheit ist wichtig.** In den meisten Fällen keine Animation, bei Bedarf der Aufmerksamkeit des Benutzers auf die ihr Zweck dienen. Geringfügige Änderungen in der zeitlichen Steuerung, Sequenz und Verhalten können können erhebliche Auswirkungen auf die Wahrnehmung, und den Unterschied zwischen einer Animation effektiv und ineffizient.
+- **Besonderheit ist wichtig.** In den meisten Fällen keine Animation, bei Bedarf der Aufmerksamkeit des Benutzers auf die ihr Zweck dienen. Geringfügige Änderungen in der zeitlichen Steuerung, Sequenz und Verhalten können können erhebliche Auswirkungen auf die Wahrnehmung, und den Unterschied zwischen einer Animation effektiv und ineffizient.
 
--   Wenn Animationen zu verwenden, um die Aufmerksamkeit auf etwas zu lenken **stellen Sie sicher, dass es lohnt sich den Benutzer unterbrechen**den Gedankengang.
+- Wenn Animationen zu verwenden, um die Aufmerksamkeit auf etwas zu lenken **stellen Sie sicher, dass es lohnt sich den Benutzer unterbrechen**den Gedankengang.
 
--   **Beim Anzeigen von Fortschritt oder Status** über Animation:
+- **Beim Anzeigen von Fortschritt oder Status** über Animation:
 
-    -   Beenden Sie die Bearbeitung Bewegung anzeigen, wenn es sich bei der zugrunde liegenden Prozess nicht vorwärts verschoben wird.
+    - Beenden Sie die Bearbeitung Bewegung anzeigen, wenn es sich bei der zugrunde liegenden Prozess nicht vorwärts verschoben wird.
 
-    -   Unterscheiden Sie unbestimmt Prozesse von bestimmte Prozesse.
+    - Unterscheiden Sie unbestimmt Prozesse von bestimmte Prozesse.
 
-    -   Stellen Sie sicher, dass eine Animation identifizierbaren Abschluss und Fehler Status verfügt.
+    - Stellen Sie sicher, dass eine Animation identifizierbaren Abschluss und Fehler Status verfügt.
 
-    -   Minimieren Sie die Verwendung von Auswirkungen Animationen, die der Status, und stellen sicher, dass sie echten Wert aufweisen, durch zusätzliche Informationen von der tatsächlichen Nutzung. Beispiele hierfür sind vorübergehende statusänderungen und Notfälle
+    - Minimieren Sie die Verwendung von Auswirkungen Animationen, die der Status, und stellen sicher, dass sie echten Wert aufweisen, durch zusätzliche Informationen von der tatsächlichen Nutzung. Beispiele hierfür sind vorübergehende statusänderungen und Notfälle
 
 #### <a name="do-not"></a>Tue nicht:
 
@@ -71,15 +71,15 @@ ms.locfileid: "58956345"
 
 ### <a name="animation-metrics"></a>Animation-Metriken
 
--   Das System sollte sichtbar auf Benutzergesten in weniger als 10 Millisekunden zu reagieren.
+- Das System sollte sichtbar auf Benutzergesten in weniger als 10 Millisekunden zu reagieren.
 
--   Animierten Übergänge dauert nicht mehr als 500 Millisekunden abgeschlossen.
+- Animierten Übergänge dauert nicht mehr als 500 Millisekunden abgeschlossen.
 
--   Eine Möglichkeit, die Übergänge zu kompensieren, die längere Zeiträume zu erfordern, ist für die Trennung in zwei Teile; der erste Teil einer Animation kann z. B. die leere Inhaltscontainer (bis zu 500 Millisekunden) gefolgt von der Inhalte ausblenden von Fenstern in den Container (bis zu 500 Millisekunden) sein.
+- Eine Möglichkeit, die Übergänge zu kompensieren, die längere Zeiträume zu erfordern, ist für die Trennung in zwei Teile; der erste Teil einer Animation kann z. B. die leere Inhaltscontainer (bis zu 500 Millisekunden) gefolgt von der Inhalte ausblenden von Fenstern in den Container (bis zu 500 Millisekunden) sein.
 
--   Für die Ladezeiten, die berechnet werden können, wird eine Determinante Statusanzeige (Prozent-fertig Statusanzeige) bevorzugt.
+- Für die Ladezeiten, die berechnet werden können, wird eine Determinante Statusanzeige (Prozent-fertig Statusanzeige) bevorzugt.
 
--   Für die Ladezeiten, die nicht berechnet werden können, ist ein auslastungsindikator angezeigt, wie z. B. ein Cursor oder eine eingebettete rotierende Animation (geladen oder Verwendung Indikators) geeignet.
+- Für die Ladezeiten, die nicht berechnet werden können, ist ein auslastungsindikator angezeigt, wie z. B. ein Cursor oder eine eingebettete rotierende Animation (geladen oder Verwendung Indikators) geeignet.
 
 ### <a name="animation-as-communicator"></a>Animation als communicator
  -Funktionen in Visual Studio Benutzeroberfläche Animation nur als ein Tool für die Kommunikation.  Es wird verwendet, um eine Vielzahl von Informationen, z. B. strukturellen Änderungen in der Benutzeroberfläche zu kommunizieren. z. B. wenn ein Menü öffnet oder schließt. Animationen kann das Verhalten zeitabhängige komplexer Systeme wie Installation Fortschritt Visualisierung visualisieren oder verwendet werden, um die Aufmerksamkeit mit Warnungen und Benachrichtigungen zu gewinnen.
@@ -96,61 +96,61 @@ ms.locfileid: "58956345"
 ##### <a name="data"></a>Daten
  Informationen zu komplexen und Variablen zu veranschaulichen:
 
--   Durchsuchen von Informationen Visualisierungen wie Diagramme und Grafiken
+- Durchsuchen von Informationen Visualisierungen wie Diagramme und Grafiken
 
--   Eine Sequenz durchlaufen, Führung und paging
+- Eine Sequenz durchlaufen, Führung und paging
 
--   Details aufrufen, verweisen und markieren spezifische Informationen
+- Details aufrufen, verweisen und markieren spezifische Informationen
 
--   Überlagern Details und zusätzliche Informationen über ein Fokuselement
+- Überlagern Details und zusätzliche Informationen über ein Fokuselement
 
--   Verwandeln in eine andere aus einer strukturellen oder die Organisationseinheit Darstellung
+- Verwandeln in eine andere aus einer strukturellen oder die Organisationseinheit Darstellung
 
--   Die Änderungen im Zeitverlauf mit der Zeit-Schieberegler, dauerlauf-Shuttle Wheels und Transport-Steuerelemente (Wiedergabe-, Stopp- und anhalten) darstellen.
+- Die Änderungen im Zeitverlauf mit der Zeit-Schieberegler, dauerlauf-Shuttle Wheels und Transport-Steuerelemente (Wiedergabe-, Stopp- und anhalten) darstellen.
 
 ##### <a name="relationships"></a>Beziehungen
 
--   Veranschaulicht, wie Elemente miteinander in Beziehung stehen, oder welche Elemente mit einem bestimmten Element beziehen.
+- Veranschaulicht, wie Elemente miteinander in Beziehung stehen, oder welche Elemente mit einem bestimmten Element beziehen.
 
--   Hierarchien und über-und untergeordneten oder nebengeordneten Beziehungen anzeigen
+- Hierarchien und über-und untergeordneten oder nebengeordneten Beziehungen anzeigen
 
--   Ein Element erzeugt eine andere
+- Ein Element erzeugt eine andere
 
--   Ein Element wird auf ein anderes Element minimiert.
+- Ein Element wird auf ein anderes Element minimiert.
 
--   Ein Element in eine andere verbundene
+- Ein Element in eine andere verbundene
 
 ##### <a name="state"></a>Zustand
 
--   Die Inhaltsupdates.
+- Die Inhaltsupdates.
 
--   Den Benutzerfokus und Auswahl
+- Den Benutzerfokus und Auswahl
 
--   Status
+- Status
 
--   Fehler
+- Fehler
 
 ##### <a name="structure"></a>Struktur
 
--   Pivotieren die Struktur auf einem Knoten
+- Pivotieren die Struktur auf einem Knoten
 
--   Neuorientieren
+- Neuorientieren
 
--   Zu minimieren Sie und Maximieren Sie, oder Erweitern Sie sowie reduzieren
+- Zu minimieren Sie und Maximieren Sie, oder Erweitern Sie sowie reduzieren
 
 ##### <a name="sequence"></a>Sequenz
 
--   Diaschau Sequenz
+- Diaschau Sequenz
 
--   Länger Papierseiten durch Bilder
+- Länger Papierseiten durch Bilder
 
 ##### <a name="time"></a>zeit
 
--   Anzeigen von Änderungen im Laufe der Zeit, Zeitsprung-screencast
+- Anzeigen von Änderungen im Laufe der Zeit, Zeitsprung-screencast
 
--   Verschieben Sie in den Papierkorb, Rückgängig / Wiederholen
+- Verschieben Sie in den Papierkorb, Rückgängig / Wiederholen
 
--   Wiederherstellen des historischen Zustands
+- Wiederherstellen des historischen Zustands
 
 #### <a name="attract-attention"></a>Wecken Sie
  Wenn das Ziel zum Zeichnen der Aufmerksamkeit des Benutzers auf ein einzelnes Element aus mehreren oder Benachrichtigung des Benutzers auf aktualisierte Informationen ist, möglicherweise eine Animation geeignet. Die Startseite Ihrer Anwendungen kann z. B. eine Schaltfläche "Erste Schritte" können das an Stelle verschoben werden soll, nachdem die Seite geladen.
@@ -159,43 +159,43 @@ ms.locfileid: "58956345"
 
 ##### <a name="alert"></a>Warnung
 
--   Warnen Sie die Benutzer, erhalten Sie Ihre Aufmerksamkeit zu, die den zeigen Fortschritt an
+- Warnen Sie die Benutzer, erhalten Sie Ihre Aufmerksamkeit zu, die den zeigen Fortschritt an
 
--   Zeigen Sie an, dass etwas richtig oder falsch ausgeführt wird oder zeigen Fortschritt oder Status Änderungen an
+- Zeigen Sie an, dass etwas richtig oder falsch ausgeführt wird oder zeigen Fortschritt oder Status Änderungen an
 
--   Auffordern Sie Benutzer, während eine Aufgabe, z. B. Suchen nach weiteren Informationen online oder Informationen zu den aktuellen task
+- Auffordern Sie Benutzer, während eine Aufgabe, z. B. Suchen nach weiteren Informationen online oder Informationen zu den aktuellen task
 
 ##### <a name="notifications"></a>Benachrichtigungen
 
--   Warnen Sie die Benutzer zu einer fehlerbedingung
+- Warnen Sie die Benutzer zu einer fehlerbedingung
 
--   Unterbrechen Sie den Benutzer aus, um festzustellen, ob sie etwas anderem Aufmerksamkeit schenken müssen möchten
+- Unterbrechen Sie den Benutzer aus, um festzustellen, ob sie etwas anderem Aufmerksamkeit schenken müssen möchten
 
--   Vorsichtig informieren des Benutzers, den ein Prozess abgeschlossen oder geändert werden, z. B. wenn ein Download abgeschlossen ist.
+- Vorsichtig informieren des Benutzers, den ein Prozess abgeschlossen oder geändert werden, z. B. wenn ein Download abgeschlossen ist.
 
 #### <a name="simulate"></a>Simulieren
  Diese Kategorie behandelt Physicality und Dimensionalität.
 
--   Veranschaulicht, in denen Objekte aus stammen oder wo auf
+- Veranschaulicht, in denen Objekte aus stammen oder wo auf
 
--   Erweitern und reduzieren oder zu öffnen und schließen
+- Erweitern und reduzieren oder zu öffnen und schließen
 
--   Schwenken, Durchführen eines Bildlaufs und Seite aktiviert.
+- Schwenken, Durchführen eines Bildlaufs und Seite aktiviert.
 
--   Stapeln und Z-Anordnung
+- Stapeln und Z-Anordnung
 
--   Karussellsicht und ' Accordion '
+- Karussellsicht und ' Accordion '
 
--   Kippen und Drehen von der Benutzeroberfläche
+- Kippen und Drehen von der Benutzeroberfläche
 
 #### <a name="response-and-progress-indicators"></a>Antwort der Status-und Status
  Statusanzeigen haben einige wichtige Vorteile:
 
--   Beide bestimmte und unbestimmt Statusanzeigen versichern den Benutzer, den das System nicht abgestürzt ist, und arbeitet an der das Problem.
+- Beide bestimmte und unbestimmt Statusanzeigen versichern den Benutzer, den das System nicht abgestürzt ist, und arbeitet an der das Problem.
 
--   Bestimmte Indikatoren können Benutzer, die, den ein Eindruck davon, wie weit die Aktion fortgesetzt wird, den sowie einen Eindruck, näher to the Fertig stellen.
+- Bestimmte Indikatoren können Benutzer, die, den ein Eindruck davon, wie weit die Aktion fortgesetzt wird, den sowie einen Eindruck, näher to the Fertig stellen.
 
-##  <a name="BKMK_AnimationPatterns"></a> Animation-Muster
+## <a name="BKMK_AnimationPatterns"></a> Animation-Muster
 
 ### <a name="overview"></a>Übersicht
  Animationen in Visual Studio sollen dienen einem bestimmten Zweck und die Produktivität der Benutzer nicht behindern. Allgemeine Animation-Merkmale enthält entsprechen:
@@ -232,11 +232,11 @@ ms.locfileid: "58956345"
 
 ##### <a name="examples"></a>Beispiele
 
--   Automatisches Ausblenden von Toolfenstern
+- Automatisches Ausblenden von Toolfenstern
 
--   Tastatur aktivierten-Editor-Benutzeroberfläche, z. B. IntelliSense und die Parameterhilfe
+- Tastatur aktivierten-Editor-Benutzeroberfläche, z. B. IntelliSense und die Parameterhilfe
 
--   Erweitern und reduzieren Codebereiche
+- Erweitern und reduzieren Codebereiche
 
 #### <a name="fade-in-and-fade-out"></a>Dem Einblenden und Ausblenden der videoüberlagerung benötigt
  Mit diesem Muster ist ein Element der Benutzeroberfläche, die aus nicht sichtbar (0 % Deckkraft) geht in sichtbar (100 % Deckkraft) oder umgekehrt:
@@ -248,21 +248,21 @@ ms.locfileid: "58956345"
 
 ##### <a name="animation-properties"></a>Animationseigenschaften
 
--   Starten Sie die Deckkraft: 0 % für das Einblenden der videoüberlagerung, 100 % für das Ausblenden der videoüberlagerung benötigt
+- Starten Sie die Deckkraft: 0 % für das Einblenden der videoüberlagerung, 100 % für das Ausblenden der videoüberlagerung benötigt
 
--   Beenden die Deckkraft: 100 % für dem einblenden, Ausblenden der videoüberlagerung benötigt % 0
+- Beenden die Deckkraft: 100 % für dem einblenden, Ausblenden der videoüberlagerung benötigt % 0
 
--   Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
+- Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
 
--   Einfachere Format an: Sinus InOut
+- Einfachere Format an: Sinus InOut
 
 ##### <a name="examples"></a>Beispiele
 
--   Automatisches Ausblenden von Toolfenstern
+- Automatisches Ausblenden von Toolfenstern
 
--   Menü öffnen und schließen
+- Menü öffnen und schließen
 
--   Hintergrund- und Vordergrundfarben Registerkarte Übergänge
+- Hintergrund- und Vordergrundfarben Registerkarte Übergänge
 
 #### <a name="color-blend-from-a-to-b"></a>Farbe von Blend von A nach B
  Bei diesem Muster wird nun ein Element der Benutzeroberfläche von Farbe ein Farbe B:
@@ -274,19 +274,19 @@ ms.locfileid: "58956345"
 
 ##### <a name="animation-properties"></a>Animationseigenschaften
 
--   Startfarbe: UI-spezifischen
+- Startfarbe: UI-spezifischen
 
--   Endfarbe: UI-spezifischen
+- Endfarbe: UI-spezifischen
 
--   Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
+- Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
 
--   Einfachere Format an: Sinus InOut
+- Einfachere Format an: Sinus InOut
 
 ##### <a name="examples"></a>Beispiele
 
--   Dokumentieren Sie Fenster Statusübergänge (aktiv, letzte aktive und inaktive)
+- Dokumentieren Sie Fenster Statusübergänge (aktiv, letzte aktive und inaktive)
 
--   Statusübergänge für Fenster-Tool (mit Fokus und ohne Fokus)
+- Statusübergänge für Fenster-Tool (mit Fokus und ohne Fokus)
 
 #### <a name="expand-and-contract"></a>Erweiterung und Verkleinerung
  Bei diesem Muster erweitert ein Element der Benutzeroberfläche die X-, Y- oder beide Richtungen:
@@ -298,19 +298,19 @@ ms.locfileid: "58956345"
 
 ##### <a name="animation-properties"></a>Animationseigenschaften
 
--   X-Skalierung: % oder einer bestimmten Dimension (in Pixel)
+- X-Skalierung: % oder einer bestimmten Dimension (in Pixel)
 
--   Y skalieren: % oder einer bestimmten Dimension (in Pixel)
+- Y skalieren: % oder einer bestimmten Dimension (in Pixel)
 
--   Ankerposition: In der Regel die linke obere (für Links-nach-rechts-Sprachen) oder rechts (für rechts-nach-links-Sprachen)
+- Ankerposition: In der Regel die linke obere (für Links-nach-rechts-Sprachen) oder rechts (für rechts-nach-links-Sprachen)
 
--   Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
+- Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
 
 ##### <a name="examples"></a>Beispiele
 
--   Architektur-Explorer-Bereich erweitern und reduzieren
+- Architektur-Explorer-Bereich erweitern und reduzieren
 
--   Startseite Element erweitern und reduzieren
+- Startseite Element erweitern und reduzieren
 
 #### <a name="x-y-position-change"></a>X-Y-position ändern
  Bei diesem Muster ändert ein Element der Benutzeroberfläche an seine X- oder Y-Position oder beides:
@@ -322,15 +322,15 @@ ms.locfileid: "58956345"
 
 ##### <a name="animation-properties"></a>Animationseigenschaften
 
--   Starten von X- und Y-Position: UI-spezifischen
+- Starten von X- und Y-Position: UI-spezifischen
 
--   Am Ende X und Y-Position: UI-spezifischen
+- Am Ende X und Y-Position: UI-spezifischen
 
--   Animationspfad: Keiner
+- Animationspfad: Keiner
 
--   Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
+- Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
 
--   Einfachere Format an: Sinus InOut
+- Einfachere Format an: Sinus InOut
 
 ##### <a name="example"></a>Beispiel
  Registerkarte neuanordnung
@@ -345,11 +345,11 @@ ms.locfileid: "58956345"
 
 ##### <a name="animation-properties"></a>Animationseigenschaften
 
--   Der Grad der Drehung: 360
+- Der Grad der Drehung: 360
 
--   Mittelpunkts der Drehung: Mitte des Objekts
+- Mittelpunkts der Drehung: Mitte des Objekts
 
--   Dauer: Fortlaufend
+- Dauer: Fortlaufend
 
 ##### <a name="example"></a>Beispiel
  Unbestimmte Statusanzeige (rotierende)

@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105408"
 ---
 # <a name="extending-the-output-window"></a>Erweitern des Ausgabefensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Erstellen einer Erweiterung, die verwendet den Ausgabebereich  
  Sie können eine Erweiterung erstellen, die verschiedene Aspekte des Ausgabebereichs ausführt.  
   
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `TestOutput` mit einem Menübefehl mit dem Namen **TestOutput**. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TestOutput` mit einem Menübefehl mit dem Namen **TestOutput**. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Fügen Sie die folgenden Verweise hinzu:  
+2. Fügen Sie die folgenden Verweise hinzu:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  TestOutput.cs, fügen Sie die folgende using-Anweisung:  
+3. TestOutput.cs, fügen Sie die folgende using-Anweisung:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  Löschen Sie in TestOutput.cs die ShowMessageBox-Methode. Fügen Sie den folgenden Methodenstub hinzu:  
+4. Löschen Sie in TestOutput.cs die ShowMessageBox-Methode. Fügen Sie den folgenden Methodenstub hinzu:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }  
     ```  
   
-5.  Ändern Sie im Konstruktor TestOutput der Befehlshandler in OutputCommandHandler ein. Hier ist das Teil, das die Befehle hinzugefügt:  
+5. Ändern Sie im Konstruktor TestOutput der Befehlshandler in OutputCommandHandler ein. Hier ist das Teil, das die Befehle hinzugefügt:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }  
     ```  
   
-6.  In den folgenden Abschnitten haben verschiedene Methoden, die verschiedene Methoden zum Umgang mit den Ausgabebereich anzeigen. Sie können diese Methoden Hauptteil der OutputCommandHandler()-Methode aufrufen. Der folgende Code fügt z. B. die CreatePane()-Methode, die im nächsten Abschnitt angegeben.  
+6. In den folgenden Abschnitten haben verschiedene Methoden, die verschiedene Methoden zum Umgang mit den Ausgabebereich anzeigen. Sie können diese Methoden Hauptteil der OutputCommandHandler()-Methode aufrufen. Der folgende Code fügt z. B. die CreatePane()-Methode, die im nächsten Abschnitt angegeben.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

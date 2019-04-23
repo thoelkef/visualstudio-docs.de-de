@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073890"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test 
 ## <a name="do-you-need-multiple-ui-maps"></a>Brauche ich mehrere UI-Zuordnung?  
  Erstellen Sie in jeder der folgenden Situationen UI-Zuordnungen:  
   
--   Verschieden komplexe Sätze zusammengesetzter UI-Steuerelemente, die zusammen einen logischen Vorgang ausführen wie beispielsweise eine Registrierungsseite auf einer Website oder die Kaufseite eines Warenkorbs.  
+- Verschieden komplexe Sätze zusammengesetzter UI-Steuerelemente, die zusammen einen logischen Vorgang ausführen wie beispielsweise eine Registrierungsseite auf einer Website oder die Kaufseite eines Warenkorbs.  
   
--   Ein unabhängiger Steuerelementsatz, auf den von verschiedenen Punkten der Anwendung aus zugegriffen wird, wie beispielsweise ein Assistent mit verschiedenen Seiten an Vorgängen. Wenn jede Seite eines Assistenten besonders komplex ist, könnten Sie für jede dieser Seiten eine UI-Zuordnung erstellen.  
+- Ein unabhängiger Steuerelementsatz, auf den von verschiedenen Punkten der Anwendung aus zugegriffen wird, wie beispielsweise ein Assistent mit verschiedenen Seiten an Vorgängen. Wenn jede Seite eines Assistenten besonders komplex ist, könnten Sie für jede dieser Seiten eine UI-Zuordnung erstellen.  
   
 ## <a name="adding-multiple-ui-maps"></a>Mehrere UI-Zuordnungen hinzufügen  
   

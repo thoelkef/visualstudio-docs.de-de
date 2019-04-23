@@ -14,31 +14,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c42fc5ec197447a8def80d3aab7bb74def2db5e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073201"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Vorgehensweise: Erstellen einer SharePoint-projekterweiterung
   Erstellen Sie eine projekterweiterung, wenn Sie möchten alle SharePoint-Projekt Funktionen hinzu, die in Visual Studio geöffnet ist. Weitere Informationen finden Sie unter [Erweitern der SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ### <a name="to-create-a-project-extension"></a>Erstellen Sie eine projekterweiterung
 
-1.  Erstellen Sie ein Klassenbibliotheksprojekt.
+1. Erstellen Sie ein Klassenbibliotheksprojekt.
 
-2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:
+2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>-Schnittstelle implementiert.
+3. Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>-Schnittstelle implementiert.
 
-4.  Hinzufügen der <xref:System.ComponentModel.Composition.ExportAttribute> der-Klasse. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Typ an den Attributkonstruktor.
+4. Hinzufügen der <xref:System.ComponentModel.Composition.ExportAttribute> der-Klasse. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Typ an den Attributkonstruktor.
 
-5.  In der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode verwenden, Mitglied der *Anwendbarkeitsprüfungen* Parameter, um das Verhalten Ihrer Erweiterung zu definieren. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> -Objekt, das Zugriff auf die in definierten Ereignisse ermöglicht die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Schnittstelle.
+5. In der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode verwenden, Mitglied der *Anwendbarkeitsprüfungen* Parameter, um das Verhalten Ihrer Erweiterung zu definieren. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> -Objekt, das Zugriff auf die in definierten Ereignisse ermöglicht die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Schnittstelle.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Codebeispiel wird veranschaulicht, wie eine einfaches Projekt-Erweiterung zu erstellen, die meisten SharePoint-Projektereignisse behandelt, die von definiert werden die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Schnittstelle. Um den Code zu testen, erstellen Sie eine SharePoint-Projekt in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und klicken Sie dann die Projektmappe weitere Projekte hinzufügen, Projekt-Eigenschaftswerte, ändern oder löschen oder schließen Sie ein Projekt. Die Erweiterung benachrichtigt Sie über die Ereignisse durch Schreiben von Nachrichten an die **Ausgabe** Fenster und **Fehlerliste** Fenster.
@@ -192,9 +192,9 @@ Dieses Beispiel verwendet die SharePoint-Projektdiensts zum Schreiben der Nachri
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung
  Erstellen Sie zum Bereitstellen der Erweiterungs eine [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für die SharePoint-tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

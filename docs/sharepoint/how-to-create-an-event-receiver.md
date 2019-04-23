@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 395fc5976f31fb2d465c57f036b3e5369aaa0c07
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081959"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Vorgehensweise: Erstellen eines Ereignisempfängers
   Durch das Erstellen *Ereignisempfänger*, können Sie reagieren, wenn ein Benutzer mit SharePoint-Elemente wie Listen oder Listenelemente interagiert. Beispielsweise kann der Code in einem Ereignisempfänger ausgelöst werden, wenn ein Benutzer der Kalender geändert, oder einen Namen aus einer Liste "Kontakte löscht". Anhand der in diesem Thema erhalten Sie, wie Sie eine Listeninstanz eine Ereignisempfänger hinzufügen.
@@ -34,23 +34,23 @@ ms.locfileid: "54865098"
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Die Listeninstanz ein Ereignisempfänger hinzu
 
-1.  Öffnen Sie das Projekt, das Sie in erstellt [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1. Öffnen Sie das Projekt, das Sie in erstellt [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2.  In **Projektmappen-Explorer**, wählen Sie die SharePoint-Projektknoten, mit dem Namen **Clinic**.
+2. In **Projektmappen-Explorer**, wählen Sie die SharePoint-Projektknoten, mit dem Namen **Clinic**.
 
-3.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+3. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
-4.  Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Element.
+4. Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Element.
 
-5.  In der **Vorlagen** Bereich wählen **Ereignisempfänger**, nennen Sie sie **"TestEventReceiver1" ein**, und wählen Sie dann die **OK** Schaltfläche.
+5. In der **Vorlagen** Bereich wählen **Ereignisempfänger**, nennen Sie sie **"TestEventReceiver1" ein**, und wählen Sie dann die **OK** Schaltfläche.
 
      Die **SharePoint Customization Wizard** angezeigt wird.
 
-6.  In der **welche Art von-Ereignisempfänger verwenden sollen?** wählen **Listenelementereignisse**.
+6. In der **welche Art von-Ereignisempfänger verwenden sollen?** wählen **Listenelementereignisse**.
 
-7.  In der **welche Artikel befinden sollte, die Ereignisquelle?** wählen **Patienten (Clinic\Patients)**.
+7. In der **welche Artikel befinden sollte, die Ereignisquelle?** wählen **Patienten (Clinic\Patients)**.
 
-8.  In der **die folgenden Ereignisse behandeln** wählen Sie das Kontrollkästchen neben **ein Element wurde hinzugefügt**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+8. In der **die folgenden Ereignisse behandeln** wählen Sie das Kontrollkästchen neben **ein Element wurde hinzugefügt**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
      Die Codedatei für den neuen Ereignisempfänger enthält eine einzelne Methode mit dem Namen `ItemAdded`. Im nächsten Schritt wird: Fügen Sie Code für diese Methode, damit jeder wenden Sie sich an Scott Brown standardmäßig benannt ist.
 

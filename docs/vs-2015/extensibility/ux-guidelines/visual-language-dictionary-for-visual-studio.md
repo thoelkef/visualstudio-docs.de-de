@@ -8,12 +8,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc64cd1d1a4fae8703f95aa4c2da9b2bb5b363cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ce4316c874183e920dd767bcef495b95fb73ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073708"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visuelles Sprachwörterbuch für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 
   **Wechseln Sie zu Abschnitt:**
 
-1.  [Konzepte von A bis Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+1. [Konzepte von A bis Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
 
-2.  [Produkte und Plattformen](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+2. [Produkte und Plattformen](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
 
-3.  [Allgemeine Konzepte, die mithilfe der Pfeile](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+3. [Allgemeine Konzepte, die mithilfe der Pfeile](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
 
-4.  [Statusindikatoren](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+4. [Statusindikatoren](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
 
-##  <a name="BKMK_VLDConcepts"></a> Konzepte von A bis Z
+## <a name="BKMK_VLDConcepts"></a> Konzepte von A bis Z
 
-###  <a name="BKMK_VLDConceptsA"></a> A
+### <a name="BKMK_VLDConceptsA"></a> A
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -56,7 +56,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Warnung**|![Symbol "Warnung"](../../extensibility/ux-guidelines/media/vld-c-alert.png "VLD_C_Alert")||
 |**Alpha-Kanal**|![Symbol "Alphakanal"](../../extensibility/ux-guidelines/media/vld-c-alphachannel.png "VLD_C_AlphaChannel")||
 |**Animation**|![Symbol "Animation"](../../extensibility/ux-guidelines/media/vld-c-animation.png "VLD_C_Animation")|![Symbol für animationsfehler](../../extensibility/ux-guidelines/media/vld-c-animation-animationerror.png "VLD_C_Animation_AnimationError") Animation Fehler![Symbol für nächste Animation](../../extensibility/ux-guidelines/media/vld-c-animation-nextanimation.png "VLD_C_Animation_NextAnimation") nächste Animation|
-|**Anwendung** Projekt|![Anwendungssymbol](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Anwendungsrollenfehler](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") Rolle Anwendungsfehler![C&#43; &#43; Symbol für MFC-Projekt](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") C++-MFC-Projekt|
+|**Anwendung** Projekt|![Anwendungssymbol](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Anwendungsrollenfehler](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") Rolle Anwendungsfehler![C&#43; &#43; Symbol für MFC-Projekt](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") C++ MFC-Projekt|
 |**Bereich**|![Area icon](../../extensibility/ux-guidelines/media/vld-c-area.png "VLD_C_Area")|![Symbol "Diagramm" der Spline-Bereich](../../extensibility/ux-guidelines/media/vld-c-area-splineareachart.png "VLD_C_Area_SplineAreaChart") Splineflächendiagramm![gestapelter Bereich Reihe Symbol](../../extensibility/ux-guidelines/media/vld-c-area-stackedareaseries.png "VLD_C_Area_StackedAreaSeries") gestapelte Fläche Serie|
 |**Arrange**|![Symbol "Anordnen"](../../extensibility/ux-guidelines/media/vld-c-arrange.png "VLD_C_Arrange")|![Symbol für die Formen anordnen](../../extensibility/ux-guidelines/media/vld-c-arrange-arrangeshapes.png "VLD_C_Arrange_ArrangeShapes") Anordnen von Formen![automatisch&#45;Formen Symbol "Anordnen"](../../extensibility/ux-guidelines/media/vld-c-arrange-autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes") Formen automatisch anordnen|
 |**Assign**|![Weisen Sie das Symbol](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||
@@ -69,7 +69,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Audio-Aufzeichnung**|![Symbol für die audioaufzeichnung](../../extensibility/ux-guidelines/media/vld-c-audiorecording.png "VLD_C_AudioRecording")|![Symbol "Aufzeichnen stumm schalten"](../../extensibility/ux-guidelines/media/vld-c-audiorecording-recordmute.png "VLD_C_AudioRecording_RecordMute") Aufnahme aus![Aufzeichnungssymbol Bildschirm- und stimmenaufzeichnung](../../extensibility/ux-guidelines/media/vld-c-audiorecording-recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice") Datensatz Bildschirm- und stimmaufzeichnung|
 |**Autosum**|![Autosum icon](../../extensibility/ux-guidelines/media/vld-c-autosum.png "VLD_C_Autosum")||
 
-###  <a name="BKMK_VLDConceptsB"></a> B
+### <a name="BKMK_VLDConceptsB"></a> B
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -85,7 +85,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Business**|![Business icon](../../extensibility/ux-guidelines/media/vld-c-business.png "VLD_C_Business")|![Geschäftsmodellvorlage](../../extensibility/ux-guidelines/media/vld-c-business-businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate") Vorlage für das Unternehmen![Business Objekte datenquellensymbol](../../extensibility/ux-guidelines/media/vld-c-business-businessobjectsdatasource.png "VLD_C_Business_ BusinessObjectsDataSource") Geschäftsobjekte-Datenquelle![Symbol für Onlinegeschäft](../../extensibility/ux-guidelines/media/vld-c-business-onlinebusiness.png "VLD_C_Business_OnlineBusiness") Onlinedienste für Unternehmen|
 |**Button** (Schaltfläche)|![Button icon](../../extensibility/ux-guidelines/media/vld-c-button.png "VLD_C_Button")|![Add button icon](../../extensibility/ux-guidelines/media/vld-c-button-addbutton.png "VLD_C_Button_AddButton")Add button![Image button icon](../../extensibility/ux-guidelines/media/vld-c-button-imagebutton.png "VLD_C_Button_ImageButton") Image button![Linked button icon](../../extensibility/ux-guidelines/media/vld-c-button-linkedbutton.png "VLD_C_Button_LinkedButton") Linked button|
 
-###  <a name="BKMK_VLDConceptsC"></a> C
+### <a name="BKMK_VLDConceptsC"></a> C
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -127,7 +127,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Benutzerdefinierter Ausdruck** Vorhersage|![Symbol "benutzerdefinierter Ausdruck"](../../extensibility/ux-guidelines/media/vld-c-customexpression.png "VLD_C_CustomExpression")|![Datamining-Vorhersage](../../extensibility/ux-guidelines/media/vld-c-customexpression-dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction") Datamining-Vorhersage|
 |**Ausschneiden**|![Symbol "Ausschneiden"](../../extensibility/ux-guidelines/media/vld-c-cut.png "VLD_C_Cut")||
 
-###  <a name="BKMK_VLDConceptsD"></a> D
+### <a name="BKMK_VLDConceptsD"></a> D
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -149,21 +149,21 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Dynamic**|![Dynamic icon](../../extensibility/ux-guidelines/media/vld-c-dynamic.png "VLD_C_Dynamic")|![Symbol für die dynamische Steuerelement von ASP.NET](../../extensibility/ux-guidelines/media/vld-c-dynamic-aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl") dynamisches ASP.NET-Steuerelement ![C&#35; Symbol für eine dynamische datenwebsite](../../extensibility/ux-guidelines/media/vld-c-dynamic-csdynamicdatawebsite.png "VLD_C_Dynamic_ CSDynamicDataWebsite") C# dynamic Data-Website ![Symbol für dynamische Validierung](../../extensibility/ux-guidelines/media/vld-c-dynamic-dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator") dynamische Validierung|
 |**Dynamischer Wert**|![Symbol "dynamischer Wert"](../../extensibility/ux-guidelines/media/vld-c-dynamicvalue.png "VLD_C_DynamicValue")|![Symbol "Kopieren dynamischer Wert"](../../extensibility/ux-guidelines/media/vld-c-dynamicvalue-copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue") dynamischen Wert kopieren ![Symbol "leerer dynamischer Wert"](../../extensibility/ux-guidelines/media/vld-c-dynamicvalue-emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue") Leerer dynamischer Wert|
 
-###  <a name="BKMK_VLDConceptsE"></a> E
+### <a name="BKMK_VLDConceptsE"></a> E
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
 |**Bearbeiten**|![Symbol "Bearbeiten"](../../extensibility/ux-guidelines/media/vld-c-edit.png "VLD_C_Edit")|![Address editor icon](../../extensibility/ux-guidelines/media/vld-c-edit-addresseditor.png "VLD_C_Edit_AddressEditor") Address editor ![Edit query icon](../../extensibility/ux-guidelines/media/vld-c-edit-editquery.png "VLD_C_Edit_EditQuery") Edit query ![Edit relation icon](../../extensibility/ux-guidelines/media/vld-c-edit-editrelation.png "VLD_C_Edit_EditRelation") Edit relation|
 |Die **bearbeiten** Anmerkung zeigt nach links oder rechts, je nachdem, wie das Symbol "Basis" aussieht. Wählen Sie die Ausrichtung, die am besten mit der Symbol-Gesamtentwurf aussieht.|||
 |**Effekte** identisch mit "Function" und "Variable (global)"|![Symbol "Effekte"](../../extensibility/ux-guidelines/media/vld-c-effects.png "VLD_C_Effects")||
-|**Empty**|![Symbol "leer"](../../extensibility/ux-guidelines/media/vld-c-empty.png "VLD_C_Empty")|![Symbol "leere Seite"](../../extensibility/ux-guidelines/media/vld-c-empty-blankpage.png "VLD_C_Empty_BlankPage") leere Seite ![C&#43; &#43; Symbol "leeres Projekt"](../../extensibility/ux-guidelines/media/vld-c-empty-cppemptyproject.png "VLD_C_Empty_CPPEmptyProject") leeres C++ Projekt ![F&#35; leere Website Projektsymbol](../../extensibility/ux-guidelines/media/vld-c-empty-fsemptywebsiteproject.png "VLD_C_Empty_FSEmptyWebsiteProject") F# leere Website-Projekt|
+|**Empty**|![Symbol "leer"](../../extensibility/ux-guidelines/media/vld-c-empty.png "VLD_C_Empty")|![Symbol "leere Seite"](../../extensibility/ux-guidelines/media/vld-c-empty-blankpage.png "VLD_C_Empty_BlankPage") leere Seite ![C&#43; &#43; Symbol "leeres Projekt"](../../extensibility/ux-guidelines/media/vld-c-empty-cppemptyproject.png "VLD_C_Empty_CPPEmptyProject") C++ leeres Projekt ![F&#35; leere Website Projektsymbol](../../extensibility/ux-guidelines/media/vld-c-empty-fsemptywebsiteproject.png "VLD_C_Empty_FSEmptyWebsiteProject") F# leere Website-Projekt|
 |**Enumerator**|![Symbol "Enumerator"](../../extensibility/ux-guidelines/media/vld-c-enumerator.png "VLD_C_Enumerator")|![Erstellen Symbol "Enumerator"](../../extensibility/ux-guidelines/media/vld-c-enumerator-createenumerator.png "VLD_C_Enumerator_CreateEnumerator") Enumerator erstellen|
 |**Umgebung**|![Symbol "bibliotheksumgebung"](../../extensibility/ux-guidelines/media/vld-c-environment.png "VLD_C_Environment")|![Herstellen einer Verbindung mit dem Symbol "bibliotheksumgebung"](../../extensibility/ux-guidelines/media/vld-c-environment-connecttoenvironment.png "VLD_C_Environment_ConnectToEnvironment") mit Umgebung verbinden ![Erstellen von bibliotheksumgebung](../../extensibility/ux-guidelines/media/vld-c-environment-createlibraryenvironment.png "VLD_C_Environment_ CreateLibraryEnvironment") Library-Umgebung erstellen ![bibliotheksumgebung](../../extensibility/ux-guidelines/media/vld-c-environment-libraryenvironment.png "VLD_C_Environment_LibraryEnvironment") Library-Umgebung|
 |**Ereignis** Trigger|![Symbol "Ereignis"](../../extensibility/ux-guidelines/media/vld-c-event.png "VLD_C_Event")|![Symbol zum Hinzufügen von Ereignis](../../extensibility/ux-guidelines/media/vld-c-event-addevent.png "VLD_C_Event_AddEvent") Add Event ![Symbol "Ereignisprotokoll"](../../extensibility/ux-guidelines/media/vld-c-event-eventlog.png "VLD_C_Event_EventLog") Ereignisprotokoll|
 |**Erweitern Sie**|![Erweitern-Symbol](../../extensibility/ux-guidelines/media/vld-c-expand.png "VLD_C_Expand")|![Erweiterte rückgabewertsymbol](../../extensibility/ux-guidelines/media/vld-c-expand-returnvalueexpanded.png "VLD_C_Expand_ReturnValueExpanded") erweiterten Wert zurückgeben|
 |**Exportieren Sie** identisch mit "Öffnen"|![Symbol "Exportieren"](../../extensibility/ux-guidelines/media/vld-c-export.png "VLD_C_Export")|![Symbol "Filter" exportieren](../../extensibility/ux-guidelines/media/vld-c-export-exportfilter.png "VLD_C_Export_ExportFilter") Exportfilter ![Export Data Berichtssymbol](../../extensibility/ux-guidelines/media/vld-c-export-exportreportdata.png "VLD_C_Export_ExportReportData") Berichtsdaten exportieren ![Symbol "Bericht-Filter" für den Export](../../extensibility/ux-guidelines/media/vld-c-export-exportreportfilter.png "VLD_C_Export_ExportReportFilter") Berichtfilter exportieren|
 
-###  <a name="BKMK_VLDConceptsF"></a> F
+### <a name="BKMK_VLDConceptsF"></a> F
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -180,7 +180,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Friend**|![Symbol "Friend"](../../extensibility/ux-guidelines/media/vld-c-friend.png "VLD_C_Friend")||
 |**Funktion** Ausdruck wie "Effekte" und "Variable (global)"|![Function icon](../../extensibility/ux-guidelines/media/vld-c-function.png "VLD_C_Function")|![Für funktionswarnung](../../extensibility/ux-guidelines/media/vld-c-function-functionwarning.png "VLD_C_Function_FunctionWarning") Funktion Warnung ![Symbol für WPF-Funktion "Seite"](../../extensibility/ux-guidelines/media/vld-c-function-wpfpagefunction.png "VLD_C_Function_WPFPageFunction") WPF-Seite Funktion|
 
-###  <a name="BKMK_VLDConceptsG"></a> G
+### <a name="BKMK_VLDConceptsG"></a> G
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -192,7 +192,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Gruppierung**|![Symbol "Gruppieren"](../../extensibility/ux-guidelines/media/vld-c-grouping.png "VLD_C_Grouping")|![Für dialogfeldgruppe](../../extensibility/ux-guidelines/media/vld-c-grouping-dialoggroup.png "VLD_C_Grouping_DialogGroup") Dialogfeld Gruppe ![Symbol "Team"](../../extensibility/ux-guidelines/media/vld-c-grouping-team.png "VLD_C_Grouping_Team") Team ![Symbol für virtuelle Computer ](../../extensibility/ux-guidelines/media/vld-c-grouping-virtualmachines.png "VLD_C_Grouping_VirtualMachines") virtuelle Computer|
 |Stapeln von mehreren Objekten aufeinander gestapelt, stellt das Konzept der **gruppieren** oder Multiplizität.|||
 
-###  <a name="BKMK_VLDConceptsH"></a> H
+### <a name="BKMK_VLDConceptsH"></a> H
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -200,7 +200,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Versionsgeschichte**|![History icon](../../extensibility/ux-guidelines/media/vld-c-history.png "VLD_C_History")||
 |**Home**|![Symbol "Startseite"](../../extensibility/ux-guidelines/media/vld-c-home.png "VLD_C_Home")|![Symbol für LightSwitch-Startbildschirm](../../extensibility/ux-guidelines/media/vld-c-home-lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen") LightSwitch-Startbildschirm|
 
-###  <a name="BKMK_VLDConceptsI"></a> I
+### <a name="BKMK_VLDConceptsI"></a> I
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -215,24 +215,24 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Interface**|![Symbol "Schnittstelle"](../../extensibility/ux-guidelines/media/vld-c-interface.png "VLD_C_Interface")|![Symbol "der Schnittstelle" implementieren](../../extensibility/ux-guidelines/media/vld-c-interface-implementinterface.png "VLD_C_Interface_ImplementInterface") Schnittstelle implementieren|
 |**Item**|![Symbol "Element"](../../extensibility/ux-guidelines/media/vld-c-item.png "VLD_C_Item")|![Symbol "Copy-Element"](../../extensibility/ux-guidelines/media/vld-c-item-copyitem.png "VLD_C_Item_CopyItem") Element kopieren ![erstellen Symbol "Element"](../../extensibility/ux-guidelines/media/vld-c-item-createlistitem.png "VLD_C_Item_CreateListItem") Listenelement erstellen ![Einchecken Symbol "Element"](../../extensibility/ux-guidelines/media/vld-c-item-checkinitem.png "VLD_C_Item_CheckInItem") Element einchecken|
 
-###  <a name="BKMK_VLDConceptsK"></a> K
+### <a name="BKMK_VLDConceptsK"></a> K
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
 |**Schlüssel** Berechtigung, -ID|![Key icon](../../extensibility/ux-guidelines/media/vld-c-key.png "VLD_C_Key")|![Neue Schlüsselsymbol](../../extensibility/ux-guidelines/media/vld-c-key-newkey.png "VLD_C_Key_NewKey") neuer Schlüssel ![Symbol "Berechtigung"](../../extensibility/ux-guidelines/media/vld-c-key-permission.png "VLD_C_Key_Permission") Berechtigung ![Get aktuelle Symbol "Element-ID"](../../extensibility/ux-guidelines/media/vld-c-key-getcurrentitemid.png "VLD_C_Key_GetCurrentItemID") aktuelle Element-ID abrufen|
 |**Key Performance Indicator (KPI)**|![KPI icon](../../extensibility/ux-guidelines/media/vld-c-kpi.png "VLD_C_KPI")|![KPI-Symbol "löschen"](../../extensibility/ux-guidelines/media/vld-c-kpi-deletekpi.png "VLD_C_KPI_DeleteKPI") KPI löschen ![KPI-Browser-Ansichtssymbol](../../extensibility/ux-guidelines/media/vld-c-kpi-kpibrowserview.png "VLD_C_KPI_KPIBrowserView") KPI-Browseransicht ![KPI mit Symbol "Fehler"](../../extensibility/ux-guidelines/media/vld-c-kpi-kpiwitherror.png "VLD_C_KPI_KPIWithError") KPI mit Fehler|
 
-###  <a name="BKMK_VLDConceptsL"></a> L
+### <a name="BKMK_VLDConceptsL"></a> L
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
-|**Bibliothek**|![Symbol "Bibliothek"](../../extensibility/ux-guidelines/media/vld-c-library.png "VLD_C_Library")|![C&#43; &#43; Klasse Bibliothek Projektsymbol](../../extensibility/ux-guidelines/media/vld-c-library-cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject") C++-Klassenbibliotheksprojekt ![Exporte Symbol "Bibliothek"](../../extensibility/ux-guidelines/media/vld-c-library-exportslibrary.png "VLD_C_Library_ ExportsLibrary") Exporte Bibliothek ![F&#35; Symbol "Bibliothek" der Windows Forms-Steuerelement](../../extensibility/ux-guidelines/media/vld-c-library-fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary") F# Windows Forms Steuerelementbibliothek|
+|**Bibliothek**|![Symbol "Bibliothek"](../../extensibility/ux-guidelines/media/vld-c-library.png "VLD_C_Library")|![C&#43; &#43; Klasse Bibliothek Projektsymbol](../../extensibility/ux-guidelines/media/vld-c-library-cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject") C++ Klassenbibliotheksprojekt ![Exporte Symbol "Bibliothek"](../../extensibility/ux-guidelines/media/vld-c-library-exportslibrary.png "VLD_C_ Library_ExportsLibrary") Exporte Bibliothek ![F&#35; Symbol "Bibliothek" der Windows Forms-Steuerelement](../../extensibility/ux-guidelines/media/vld-c-library-fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary") F# Windows Forms-Steuerelementbibliothek|
 |**Link**|![Link icon](../../extensibility/ux-guidelines/media/vld-c-link.png "VLD_C_Link")|![Konvertieren in das Symbol "Hyperlink"](../../extensibility/ux-guidelines/media/vld-c-link-converttohyperlink.png "VLD_C_Link_ConvertToHyperlink") in Link konvertieren ![erstellen verknüpfte Tabellensymbol](../../extensibility/ux-guidelines/media/vld-c-link-createlinkedtable.png "VLD_C_Link_CreateLinkedTable") Verknüpfte Tabelle erstellen ![Symbol "Bearbeiten-Link"](../../extensibility/ux-guidelines/media/vld-c-link-editlink.png "VLD_C_Link_EditLink") Link "Bearbeiten"|
 |**Sperre** "Private", Berechtigung|![Lock icon](../../extensibility/ux-guidelines/media/vld-c-lock.png "VLD_C_Lock")|![Symbol für die Achse Lockx](../../extensibility/ux-guidelines/media/vld-c-lock-lockxaxis.png "VLD_C_Lock_LockXAxis") x-Achse Sperren ![branchberechtigungen](../../extensibility/ux-guidelines/media/vld-c-lock-branchpermissions.png "VLD_C_Lock_BranchPermissions") Branch Berechtigungen ![Symbol für private Warteschlange](../../extensibility/ux-guidelines/media/vld-c-lock-privatequeue.png "VLD_C_Lock_PrivateQueue") Private Warteschlange|
 |**Log**|![Log icon](../../extensibility/ux-guidelines/media/vld-c-log.png "VLD_C_Log")|![Symbol für Katalogeigenschaften](../../extensibility/ux-guidelines/media/vld-c-log-catalogproperties.png "VLD_C_Log_CatalogProperties") Katalogeigenschaften ![Log Aktionssymbol](../../extensibility/ux-guidelines/media/vld-c-log-actionlog.png "VLD_C_Log_ActionLog") Aktionsprotokoll ![Verbindungssymbol für Test Plan](../../extensibility/ux-guidelines/media/vld-c-log-connecttestplan.png "VLD_C_Log_ConnectTestPlan") Testplan verbinden|
 |**Loop**|![Loop icon](../../extensibility/ux-guidelines/media/vld-c-loop.png "VLD_C_Loop")|![Zum Hinzufügen oder Einfügen von Symbol für bedingte Schleife](../../extensibility/ux-guidelines/media/vld-c-loop-addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop") hinzufügen oder Einfügen für bedingte Schleife ![Symbol für bedingte Schleife](../../extensibility/ux-guidelines/media/vld-c-loop-conditionalloop.png "VLD_C_Loop_ConditionalLoop ") Für bedingte Schleife|
 
-###  <a name="BKMK_VLDConceptsM"></a> M
+### <a name="BKMK_VLDConceptsM"></a> M
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -256,7 +256,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Modul**|![Symbol "Modul"](../../extensibility/ux-guidelines/media/vld-c-module.png "VLD_C_Module")|![Mergemodulprojekt](../../extensibility/ux-guidelines/media/vld-c-module-mergemoduleproject.png "VLD_C_Module_MergeModuleProject") Mergemodulprojekt ![Symbol zum Hinzufügen von Modul](../../extensibility/ux-guidelines/media/vld-c-module-addmodule.png "VLD_C_Module_AddModule") Modul hinzufügen ![ Symbol zum Ausschließen Merge](../../extensibility/ux-guidelines/media/vld-c-module-mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude") Merge Modul ausschließen|
 |**Verschieben**|![Symbol "verschieben"](../../extensibility/ux-guidelines/media/vld-c-move.png "VLD_C_Move")||
 
-###  <a name="BKMK_VLDConceptsN"></a> N
+### <a name="BKMK_VLDConceptsN"></a> N
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -267,14 +267,14 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |Ein gepunkteter Umriss eines Objekts gibt an, dass es **ausgeblendet oder auf Vorlagen basierenden**.|||
 |**Hinweis**|![Symbol "Hinweis"](../../extensibility/ux-guidelines/media/vld-c-note.png "VLD_C_Note")||
 
-###  <a name="BKMK_VLDConceptsO"></a> O
+### <a name="BKMK_VLDConceptsO"></a> O
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
 |**Open** identisch mit "Export"|![Symbol "Öffnen"](../../extensibility/ux-guidelines/media/vld-c-open.png "VLD_C_Open")|![Symbol "Anlage öffnen"](../../extensibility/ux-guidelines/media/vld-c-open-openattachment.png "VLD_C_Open_OpenAttachment") Anlage öffnen ![Vergleichsergebnis öffnen ergebnissymbol](../../extensibility/ux-guidelines/media/vld-c-open-opencomparisonresult.png "VLD_C_Open_OpenComparisonResult") öffnen Vergleichsergebnis ![Symbol "Datei öffnen-Dialogfeld"](../../extensibility/ux-guidelines/media/vld-c-open-openfiledialog.png "VLD_C_Open_OpenFileDialog") geöffneten Dateidialogfeld|
 |**Ausgabe**|![Symbol "Ausgabe"](../../extensibility/ux-guidelines/media/vld-c-output.png "VLD_C_Output")||
 
-###  <a name="BKMK_VLDConceptsP"></a> P
+### <a name="BKMK_VLDConceptsP"></a> P
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -294,13 +294,13 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Prozedur** Interactive-Fenster|![Symbol "Prozedur"](../../extensibility/ux-guidelines/media/vld-c-procedure.png "VLD_C_Procedure")|![Symbol für Python interactive-Fenster](../../extensibility/ux-guidelines/media/vld-c-procedure-pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow") Interaktives Python-Fenster ![Prozedur-Warnsymbol](../../extensibility/ux-guidelines/media/vld-c-procedure-procedurewarning.png "VLD_C_Procedure_ ProcedureWarning") Prozedur Warnung ![Symbol "gespeicherte Prozedur"](../../extensibility/ux-guidelines/media/vld-c-procedure-storedprocedure.png "VLD_C_Procedure_StoredProcedure") gespeicherten Prozedur|
 |**Eigenschaft** Einstellungen, Konfigurationen|![Symbol "Eigenschaft"](../../extensibility/ux-guidelines/media/vld-c-property.png "VLD_C_Property")|![Symbol zum Hinzufügen von Eigenschaft](../../extensibility/ux-guidelines/media/vld-c-property-addproperty.png "VLD_C_Property_AddProperty") Eigenschaft hinzufügen ![erweiterte Eigenschaft Warnsymbol](../../extensibility/ux-guidelines/media/vld-c-property-extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning") Erweiterte Eigenschaft – Warnung ![Symbol "neue Eigenschaft"](../../extensibility/ux-guidelines/media/vld-c-property-newproperty.png "VLD_C_Property_NewProperty") neue Eigenschaft|
 
-###  <a name="BKMK_VLDConceptsQ"></a> Q
+### <a name="BKMK_VLDConceptsQ"></a> Q
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
 |**Query**|![Query icon](../../extensibility/ux-guidelines/media/vld-c-query.png "VLD_C_Query")|![Bearbeiten von Symbol "Abfrage"](../../extensibility/ux-guidelines/media/vld-c-query-editquery.png "VLD_C_Query_EditQuery") Abfrage bearbeiten ![Symbol "Abfrage-Extender"](../../extensibility/ux-guidelines/media/vld-c-query-queryextender.png "VLD_C_Query_QueryExtender") Abfrage-Extender ![schnelle Symbol "Abfrage"](../../extensibility/ux-guidelines/media/vld-c-query-quickquery.png "VLD_C_Query_QuickQuery") schnelle Abfrage|
 
-###  <a name="BKMK_VLDConceptsR"></a> R
+### <a name="BKMK_VLDConceptsR"></a> R
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -318,7 +318,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Regel**|![Symbol "Regel"](../../extensibility/ux-guidelines/media/vld-c-rule.png "VLD_C_Rule")|![Symbol "neue extrahieren"](../../extensibility/ux-guidelines/media/vld-c-rule-newextractionrule.png "VLD_C_Rule_NewExtractionRule") neue Extraktionsregel ![Symbol "neue Schwellenwert"](../../extensibility/ux-guidelines/media/vld-c-rule-newthresholdrule.png "VLD_C_Rule_NewThresholdRule") neu Schwellenwertregel ![Symbol "neue Überprüfung"](../../extensibility/ux-guidelines/media/vld-c-rule-newvalidationrule.png "VLD_C_Rule_NewValidationRule") neue Überprüfungsregel|
 |**Lineal** Measure, Anleitung|![Symbol "Lineal"](../../extensibility/ux-guidelines/media/vld-c-ruler.png "VLD_C_Ruler")|![Messmodus auf das Symbol für](../../extensibility/ux-guidelines/media/vld-c-ruler-measuremodeon.png "VLD_C_Ruler_MeasureModeOn")Messmodus aktivieren ![Symbol "Maßeinheiten"](../../extensibility/ux-guidelines/media/vld-c-ruler-unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure") Maßeinheiten|
 
-###  <a name="BKMK_VLDConceptsS"></a> S
+### <a name="BKMK_VLDConceptsS"></a> S
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -339,7 +339,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Stylesheet**|![Style-Symbol "Stylesheet"](../../extensibility/ux-guidelines/media/vld-c-stylesheet.png "VLD_C_StyleSheet")|![Symbol "neue Formatvorlage Stylesheet"](../../extensibility/ux-guidelines/media/vld-c-stylesheet-newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet") neues Stylesheet ![anfügen Style-Symbol "Stylesheet"](../../extensibility/ux-guidelines/media/vld-c-stylesheet-attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet") Anfügen Stylesheet|
 |**Synchronisieren von** aktualisieren|![Symbol "Synchronisieren"](../../extensibility/ux-guidelines/media/vld-c-synchronize.png "VLD_C_Synchronize")|![JavaScript-Symbol aktualisiert](../../extensibility/ux-guidelines/media/vld-c-synchronize-updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript") aktualisiert JavaScript ![Datenbank aktualisiert Elemente Symbol](../../extensibility/ux-guidelines/media/vld-c-synchronize-databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems ") Datenbank aktualisierten Elementen ![Symbol "Synchronisieren"](../../extensibility/ux-guidelines/media/vld-c-synchronize-sync.png "VLD_C_Synchronize_Sync") synchronisieren|
 
-###  <a name="BKMK_VLDConceptsT"></a> T
+### <a name="BKMK_VLDConceptsT"></a> T
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -355,7 +355,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Ein/aus**|![Symbol "umschalten"](../../extensibility/ux-guidelines/media/vld-c-toggle.png "VLD_C_Toggle")|![Symbol für alle Haltepunkte umschalten](../../extensibility/ux-guidelines/media/vld-c-toggle-toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints") alle Haltepunkte umschalten ![Umschaltsymbol](../../extensibility/ux-guidelines/media/vld-c-toggle-toggle.png "VLD_C_Toggle_Toggle") umschalten|
 |**Werkzeugkasten**|![Symbol "Toolbox"](../../extensibility/ux-guidelines/media/vld-c-toolbox.png "VLD_C_Toolbox")|![Symbol für WinForm-Toolbox-Steuerelement](../../extensibility/ux-guidelines/media/vld-c-toolbox-winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl") Winform-Toolbox-Steuerelement ![Symbol für WPF-Toolbox-Steuerelement](../../extensibility/ux-guidelines/media/vld-c-toolbox-wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl") WPF-Toolbox-Steuerelement|
 
-###  <a name="BKMK_VLDConceptsU"></a> U
+### <a name="BKMK_VLDConceptsU"></a> U
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -364,7 +364,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Benutzer** Profil-Rolle|![Symbol "Benutzer"](../../extensibility/ux-guidelines/media/vld-c-user.png "VLD_C_User")|![Symbol zum Hinzufügen von Benutzer](../../extensibility/ux-guidelines/media/vld-c-user-adduser.png "VLD_C_User_AddUser") Benutzer hinzufügen ![Add Web Control Benutzersymbol](../../extensibility/ux-guidelines/media/vld-c-user-addwebusercontrol.png "VLD_C_User_AddWebUserControl") Webbenutzer-Steuerelement hinzufügen ![ SQL-Benutzer&#45;definierten Typen Symbol](../../extensibility/ux-guidelines/media/vld-c-user-sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType") SQL-benutzerdefinierte Typen|
 |**Benutzeroberfläche** UI|![Symbol "Benutzer-Schnittstelle"](../../extensibility/ux-guidelines/media/vld-c-userinterface.png "VLD_C_UserInterface")||
 
-###  <a name="BKMK_VLDConceptsV"></a> V
+### <a name="BKMK_VLDConceptsV"></a> V
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -375,7 +375,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Virtuelle** identisch mit "Nonsubstantive (ausgeblendet oder Vorlage)"|![Virtual icon](../../extensibility/ux-guidelines/media/vld-c-virtual.png "VLD_C_Virtual")|![Symbol "virtuelle Umgebung"](../../extensibility/ux-guidelines/media/vld-c-virtual-virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment") virtuellen Umgebung|
 |Sichtbar|![Symbol "sichtbar"](../../extensibility/ux-guidelines/media/vld-c-visible.png "VLD_C_Visible")|![Verdecken oder Ausblenden von Symbol](../../extensibility/ux-guidelines/media/vld-c-visible-cloakorhide.png "VLD_C_Visible_CloakOrHide") Verdeckung ein- oder ausblenden|
 
-###  <a name="BKMK_VLDConceptsW"></a> W
+### <a name="BKMK_VLDConceptsW"></a> W
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -384,19 +384,19 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Wizard**|![Symbol "Assistent"](../../extensibility/ux-guidelines/media/vld-c-wizard.png "VLD_C_Wizard")|![Map Layer Assistentensymbol](../../extensibility/ux-guidelines/media/vld-c-wizard-maplayerwizard.png "VLD_C_Wizard_MapLayerWizard") kartenebenen-Assistenten ![Symbol für MFC-Klasse-Assistenten](../../extensibility/ux-guidelines/media/vld-c-wizard-mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard") MFC-Klassen-Assistent ![Zuordnung Assistentensymbol](../../extensibility/ux-guidelines/media/vld-c-wizard-mapwizard.png "VLD_C_Wizard_MapWizard") Karten-Assistenten|
 |**Arbeitselement**|![Symbol für Arbeitselement](../../extensibility/ux-guidelines/media/vld-c-workitem.png "VLD_C_WorkItem")|![Gehe zu Symbol für das Arbeitselement](../../extensibility/ux-guidelines/media/vld-c-workitem-gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem") Gehe zu Arbeitselement ![Symbol für Arbeitselementabfrage](../../extensibility/ux-guidelines/media/vld-c-workitem-workitemquery.png "VLD_C_WorkItem_WorkItemQuery") Werteknoten der Arbeitselementabfrage|
 
-###  <a name="BKMK_VLDConceptsY"></a> Y
+### <a name="BKMK_VLDConceptsY"></a> Y
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
 |**Yield**|![Yield-Symbol](../../extensibility/ux-guidelines/media/vld-c-yield.png "VLD_C_Yield")||
 
-###  <a name="BKMK_VLDConceptsZ"></a> Z
+### <a name="BKMK_VLDConceptsZ"></a> Z
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
 |**Zoom**|![Zoom icon](../../extensibility/ux-guidelines/media/vld-c-zoom.png "VLD_C_Zoom")|![Vergrößern auf das Symbol](../../extensibility/ux-guidelines/media/vld-c-zoom-zoomin.png "VLD_C_Zoom_ZoomIn") vergrößern ![Symbol für verkleinern](../../extensibility/ux-guidelines/media/vld-c-zoom-zoomout.png "VLD_C_Zoom_ZoomOut") verkleinern|
 
-##  <a name="BKMK_VLDProducts"></a> Produkte und Plattformen
+## <a name="BKMK_VLDProducts"></a> Produkte und Plattformen
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -408,7 +408,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**GitHub**|![Symbol "Github"](../../extensibility/ux-guidelines/media/vld-p-github.png "VLD_P_Github")||
 |**LightSwitch**|![LightSwitch icon](../../extensibility/ux-guidelines/media/vld-p-lightswitch.png "VLD_P_LightSwitch")|![C&#35; Symbol "Bibliothek" der LightSwitch-Erweiterung](../../extensibility/ux-guidelines/media/vld-p-lightswitch-cslightswitchextensionlibrary.png "VLD_P_LightSwitch_CSLightSwitchExtensionLibrary") C# LightSwitch-Erweiterungsbibliothek|
 |**"Mercury"**|![Mercury-Symbol](../../extensibility/ux-guidelines/media/vld-p-mercury.png "VLD_P_Mercury")||
-|**Microsoft Foundation Class (MFC)**|![Symbol für MFC](../../extensibility/ux-guidelines/media/vld-p-mfc.png "VLD_P_MFC")|![Symbol für MFC-ActiveX-Steuerelement-Projekt](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject") MFC-ActiveX-Steuerelement ![MFC-Projekt Anwendungssymbol](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcapplicationproject.png "VLD_P_MFC_ MFCApplicationProject") MFC-Anwendungsprojekt ![C&#43; &#43; Symbol für MFC-DLL-Projekt](../../extensibility/ux-guidelines/media/vld-p-mfc-cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject") C++-MFC-DLL-Projekt|
+|**Microsoft Foundation Class (MFC)**|![Symbol für MFC](../../extensibility/ux-guidelines/media/vld-p-mfc.png "VLD_P_MFC")|![Symbol für MFC-ActiveX-Steuerelement-Projekt](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject") MFC-ActiveX-Steuerelement ![MFC-Projekt Anwendungssymbol](../../extensibility/ux-guidelines/media/vld-p-mfc-mfcapplicationproject.png "VLD_P_MFC_ MFCApplicationProject") MFC-Anwendungsprojekt ![C&#43; &#43; Symbol für MFC-DLL-Projekt](../../extensibility/ux-guidelines/media/vld-p-mfc-cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject") C++ MFC-DLL-Projekt|
 |**Visual Studio**|![Visual Studio &#40;Feld&#41; Symbol](../../extensibility/ux-guidelines/media/vld-p-visualstudio-box.png "VLD_P_VisualStudio_box")|![Symbol für Feedbacktool](../../extensibility/ux-guidelines/media/vld-p-visualstudio-box-feedbacktool.png "VLD_P_VisualStudio_box_FeedbackTool") Feedbacktool|
 |**Visual Studio (transparentes Logo)**|![Visual Studio &#40;transparentes Logo&#41; Symbol](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent.png "VLD_P_VisualStudio_transparent")|![Visual Studio-Projektmappendatei &#40;11&#41; Symbol](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent-visualstudiosolutionfile-11.png "VLD_P_VisualStudio_transparent_VisualStudioSolutionFile_11") Visual Studio-Projektmappendatei (11) ![Visual Studio-Projektmappendatei &#40; 12&#41; Symbol](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent-visualstudiosolutionfile-12.png "VLD_P_VisualStudio_transparent_VisualStudioSolutionFile_12") Visual Studio-Projektmappendatei (12) ![Visual Studio-Symbol "Einstellungen"](../../extensibility/ux-guidelines/media/vld-p-visualstudio-transparent-visualstudiosettings.png "VLD_P_VisualStudio_transparent_VisualStudioSettings") Visual Studio-Einstellungen|
 |**Visual Studio Blend**|![Symbol für Visual Studio-Blend](../../extensibility/ux-guidelines/media/vld-p-visualstudioblend.png "VLD_P_VisualStudioBlend")||
@@ -421,7 +421,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**WCF**|![WCF icon](../../extensibility/ux-guidelines/media/vld-p-wcf.png "VLD_P_WCF")|![Symbol für WCF Data Services](../../extensibility/ux-guidelines/media/vld-p-wcf-wcfdataservices.png "VLD_P_WCF_WCFDataServices") WCF-Datendienste ![WCF-Projekt F&#35; Symbol](../../extensibility/ux-guidelines/media/vld-p-wcf-wcfprojectfs.png "VLD_P_WCF_WCFProjectFS") F# ![VB-Symbol für WCF-Projekt](../../extensibility/ux-guidelines/media/vld-p-wcf-wcfprojectvb.png "VLD_P_WCF_WCFProjectVB") WCF-Projekt VB|
 |**WF**|![WF icon](../../extensibility/ux-guidelines/media/vld-p-wf.png "VLD_P_WF")|![WF project C&#35; icon](../../extensibility/ux-guidelines/media/vld-p-wf-wfprojectcs.png "VLD_P_WF_WFProjectCS") WF project C# ![WF project VB icon](../../extensibility/ux-guidelines/media/vld-p-wf-wfprojectvb.png "VLD_P_WF_WFProjectVB") WF project VB|
 
-##  <a name="BKMK_VLDArrows"></a> Allgemeine Konzepte, die mithilfe der Pfeile
+## <a name="BKMK_VLDArrows"></a> Allgemeine Konzepte, die mithilfe der Pfeile
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|
@@ -463,7 +463,7 @@ Visual Studio verwendet eine gemeinsame visual Sprache zum Veranschaulichen der 
 |**Rückgängig:** wiederherstellen, Wiederherstellung|![Symbol "Rückgängig"](../../extensibility/ux-guidelines/media/vld-a-undo.png "VLD_A_Undo")|![Symbol "Bild wiederherstellen"](../../extensibility/ux-guidelines/media/vld-a-undo-imagerestore.png "VLD_A_Undo_ImageRestore") Bild wiederherstellen ![Auswahlkommentar löschen-Symbol](../../extensibility/ux-guidelines/media/vld-a-undo-uncomment.png "VLD_A_Undo_Uncomment") Auswahlkommentar löschen|
 |**Um** hochladen|![Symbol](../../extensibility/ux-guidelines/media/vld-a-up.png "VLD_A_Up")|![Symbol "Parameter" der Datei-Upload](../../extensibility/ux-guidelines/media/vld-a-up-fileuploadparameter.png "VLD_A_Up_FileUploadParameter") Dateiuploadparameter ![eine Ebene nach oben das Symbol](../../extensibility/ux-guidelines/media/vld-a-up-onelevelup.png "VLD_A_Up_OneLevelUp") eine Ebene oberhalb|
 
-##  <a name="BKMK_VLDStatus"></a> Statusindikatoren
+## <a name="BKMK_VLDStatus"></a> Statusindikatoren
 
 |Konzept|Symbol "Main"|Weitere Beispiele|
 |-------------|---------------|--------------------|

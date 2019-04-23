@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e82246a750c26881a055e372baa7d5eb0386952
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080201"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der Parser konvertiert eine Textzeile in ein Array der kolorierbaren Elemente, und gibt die Typen von Sicherheitstoken für diese kolorierbaren Elemente zurück. Der Parser sollte Tokentypen zurückgeben, die eine Liste der kolorierbaren Elemente angehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zeigt jede kolorierbaren Elements im Code-Fenster gemäß der Attribute, die von der Farbauswahl-Objekt zugeordnet wird, dem entsprechenden Tokentyp an.
@@ -31,33 +31,33 @@ Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Schritte, gefolgt von einem Editor zum farbigen Anzeigen von Text
 
-1.  Der Editor Ruft die Farbauswahl durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt.
+1. Der Editor Ruft die Farbauswahl durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt.
 
-2.  Der Editor Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Methode, um zu bestimmen, ob die Farbauswahl Zustand jeder Zeile außerhalb der Farbauswahl beibehalten werden soll.
+2. Der Editor Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Methode, um zu bestimmen, ob die Farbauswahl Zustand jeder Zeile außerhalb der Farbauswahl beibehalten werden soll.
 
-3.  Die Farbauswahl den Status außerhalb der Farbauswahl beibehalten werden benötigt, ruft der Editor die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> Methode, um den Zustand der ersten Zeile abzurufen.
+3. Die Farbauswahl den Status außerhalb der Farbauswahl beibehalten werden benötigt, ruft der Editor die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> Methode, um den Zustand der ersten Zeile abzurufen.
 
-4.  Für jede Zeile im Puffer, ruft der Editor die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> -Methode, die die folgenden Schritte ausführt:
+4. Für jede Zeile im Puffer, ruft der Editor die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> -Methode, die die folgenden Schritte ausführt:
 
-    1.  Die Zeile des Texts wird an einen Scanner so konvertieren Sie den Text in Token übergeben. Jedes Token gibt an, die token-Text und der Typ des Sicherheitstokens.
+    1. Die Zeile des Texts wird an einen Scanner so konvertieren Sie den Text in Token übergeben. Jedes Token gibt an, die token-Text und der Typ des Sicherheitstokens.
 
-    2.  Der Tokentyp wird in einen Index in eine Liste der kolorierbaren Elemente konvertiert.
+    2. Der Tokentyp wird in einen Index in eine Liste der kolorierbaren Elemente konvertiert.
 
-    3.  Die token Informationen werden verwendet, um in einem Array zu füllen, sodass jedes Element des Arrays in ein Zeichen in der Zeile entspricht. Die Werte im Array gespeichert sind, die Indizes in der Liste der kolorierbaren Elemente.
+    3. Die token Informationen werden verwendet, um in einem Array zu füllen, sodass jedes Element des Arrays in ein Zeichen in der Zeile entspricht. Die Werte im Array gespeichert sind, die Indizes in der Liste der kolorierbaren Elemente.
 
-    4.  Für jede Zeile wird der Zustand am Ende der Zeile zurückgegeben.
+    4. Für jede Zeile wird der Zustand am Ende der Zeile zurückgegeben.
 
-5.  Wenn die Farbauswahl den Zustand verwaltet werden, erforderlich sind, werden der Editor den Zustand für diese Zeile zwischengespeichert.
+5. Wenn die Farbauswahl den Zustand verwaltet werden, erforderlich sind, werden der Editor den Zustand für diese Zeile zwischengespeichert.
 
-6.  Der Editor rendert die Textzeile, die mit den Informationen zurückgegeben, die von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode. Gehen Sie dazu folgendermaßen vor:
+6. Der Editor rendert die Textzeile, die mit den Informationen zurückgegeben, die von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode. Gehen Sie dazu folgendermaßen vor:
 
-    1.  Erhalten Sie für jedes Zeichen in der Zeile den Index des kolorierbaren Elements.
+    1. Erhalten Sie für jedes Zeichen in der Zeile den Index des kolorierbaren Elements.
 
-    2.  Wenn Sie die standardmäßige kolorierbaren Elemente verwenden zu können, Zugriff auf der Editorliste kolorierbaren Elemente.
+    2. Wenn Sie die standardmäßige kolorierbaren Elemente verwenden zu können, Zugriff auf der Editorliste kolorierbaren Elemente.
 
-    3.  Rufen Sie andernfalls des Sprachdiensts <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Methode, um ein färbbares Element abzurufen.
+    3. Rufen Sie andernfalls des Sprachdiensts <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Methode, um ein färbbares Element abzurufen.
 
-    4.  Verwenden Sie die Informationen in das kolorierbare Element, mit der Text in der Anzeige gerendert.
+    4. Verwenden Sie die Informationen in das kolorierbare Element, mit der Text in der Anzeige gerendert.
 
 ## <a name="managed-package-framework-colorizer"></a>Managed Package Framework Farbauswahl
  Das managed Package Framework (MPF) stellt alle Klassen, die erforderlich sind, um eine Farbauswahl zu implementieren. Sprachdienstklasse sollten erben die <xref:Microsoft.VisualStudio.Package.LanguageService> -Klasse und die erforderlichen Methoden zu implementieren. Sie müssen einen Scanner und Parser angeben, durch die Implementierung der <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle und eine Instanz dieser Schnittstelle vom Zurückgeben der <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode (eine der Methoden, die in implementiert werden müssen die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse). Weitere Informationen finden Sie unter [einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).

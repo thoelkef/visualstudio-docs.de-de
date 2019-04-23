@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20f4c2b4a876c35868b08378bda4daaf6d13c2e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945845"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114339"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O/R Designer)
 Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützt Vererbung einer einzelnen Tabelle aus, wie sie in der Regel in relationalen Systemen implementiert ist. Diese exemplarische Vorgehensweise baut auf den allgemeinen Schritten der [Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Thema und stellt realen Daten zur Veranschaulichung der Verwendung von Vererbung in der [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -42,12 +42,12 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>So erstellen Sie eine Basistabelle zur Veranschaulichung der Vererbung
 
-1.  In **Server-Explorer** oder **Datenbank-Explorer**, mit der rechten Maustaste die **Tabellen** Knoten, und klicken Sie auf **neue Tabelle hinzufügen**.
+1. In **Server-Explorer** oder **Datenbank-Explorer**, mit der rechten Maustaste die **Tabellen** Knoten, und klicken Sie auf **neue Tabelle hinzufügen**.
 
     > [!NOTE]
     >  Sie können die Northwind-Datenbank oder eine andere Datenbank verwenden, der Sie eine Tabelle hinzufügen können.
 
-2.  Fügen Sie der Tabelle im **Tabellen-Designer** die folgenden Spalten hinzu:
+2. Fügen Sie der Tabelle im **Tabellen-Designer** die folgenden Spalten hinzu:
 
     |Spaltenname|Datentyp|NULL zulassen|
     |-----------------|---------------|-----------------|
@@ -57,18 +57,18 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
 
-3.  Legen Sie die ID-Spalte als Primärschlüssel fest.
+3. Legen Sie die ID-Spalte als Primärschlüssel fest.
 
-4.  Speichern Sie die Tabelle unter dem Namen **Person**.
+4. Speichern Sie die Tabelle unter dem Namen **Person**.
 
 ## <a name="add-data-to-the-table"></a>Hinzufügen von Daten zur Tabelle
  Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist, muss die Tabelle Daten für jede Klasse in der Vererbung einer einzelnen Tabelle enthalten.
 
 ### <a name="to-add-data-to-the-table"></a>So fügen Sie der Tabelle Daten hinzu
 
-1.  Öffnen Sie die Tabelle in der Datenansicht. (Mit der rechten Maustaste die **Person** -Tabelle **Server-Explorer** oder **Datenbank-Explorer** , und klicken Sie auf **Tabellendaten anzeigen**.)
+1. Öffnen Sie die Tabelle in der Datenansicht. (Mit der rechten Maustaste die **Person** -Tabelle **Server-Explorer** oder **Datenbank-Explorer** , und klicken Sie auf **Tabellendaten anzeigen**.)
 
-2.  Kopieren Sie die folgenden Daten in die Tabelle. (Sie kopieren und fügen Sie ihn in die Tabelle durch Auswahl der gesamten Zeile in der **Ergebnisse** Bereich.)
+2. Kopieren Sie die folgenden Daten in die Tabelle. (Sie kopieren und fügen Sie ihn in die Tabelle durch Auswahl der gesamten Zeile in der **Ergebnisse** Bereich.)
 
     ||||||
     |-|-|-|-|-|
@@ -93,7 +93,7 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
@@ -105,9 +105,9 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 ### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>So fügen Sie dem Projekt eine LINQ to SQL-Datei hinzu
 
-1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
+1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-2.  Klicken Sie auf die Vorlage **LINQ to SQL-Klassen** und dann auf **Hinzufügen**.
+2. Klicken Sie auf die Vorlage **LINQ to SQL-Klassen** und dann auf **Hinzufügen**.
 
      Die *dbml* Datei wird dem Projekt hinzugefügt und die **O/R Designer** wird geöffnet.
 
@@ -116,21 +116,21 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 ### <a name="to-create-the-inheritance"></a>So erstellen Sie die Vererbung
 
-1.  In **Server-Explorer** oder **Datenbank-Explorer**, navigieren Sie zu der **Person** Tabelle, die Sie zuvor erstellt haben.
+1. In **Server-Explorer** oder **Datenbank-Explorer**, navigieren Sie zu der **Person** Tabelle, die Sie zuvor erstellt haben.
 
-2.  Ziehen Sie die **Person** die Tabelle auf die **O/R Designer** Entwurfsoberfläche.
+2. Ziehen Sie die **Person** die Tabelle auf die **O/R Designer** Entwurfsoberfläche.
 
-3.  Ziehen Sie eine zweite **Person** die Tabelle auf die **O/R Designer** und ändern Sie den Namen **Mitarbeiter**.
+3. Ziehen Sie eine zweite **Person** die Tabelle auf die **O/R Designer** und ändern Sie den Namen **Mitarbeiter**.
 
-4.  Löschen Sie die **Manager**-Eigenschaft aus dem Objekt **Person**.
+4. Löschen Sie die **Manager**-Eigenschaft aus dem Objekt **Person**.
 
-5.  Löschen Sie die Eigenschaften **Type**, **ID**, **FirstName** und **LastName** aus dem Objekt **Employee**. (Mit anderen Worten: Entfernen Sie alle Eigenschaften außer **Manager**.)
+5. Löschen Sie die Eigenschaften **Type**, **ID**, **FirstName** und **LastName** aus dem Objekt **Employee**. (Mit anderen Worten: Entfernen Sie alle Eigenschaften außer **Manager**.)
 
-6.  Erstellen Sie von der Registerkarte **Objektrelationaler Designer** der **Toolbox** eine **Vererbung** zwischen dem **Person**-Objekt und dem **Employee**-Objekt. Klicken Sie dazu in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie anschließend die **Mitarbeiter** Objekt und klicken Sie dann die **Person** -Objekt in der **O/R Designer**. Klicken Sie dann der Pfeil der Vererbungslinie zeigt, auf die **Person** Objekt.
+6. Erstellen Sie von der Registerkarte **Objektrelationaler Designer** der **Toolbox** eine **Vererbung** zwischen dem **Person**-Objekt und dem **Employee**-Objekt. Klicken Sie dazu in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie anschließend die **Mitarbeiter** Objekt und klicken Sie dann die **Person** -Objekt in der **O/R Designer**. Klicken Sie dann der Pfeil der Vererbungslinie zeigt, auf die **Person** Objekt.
 
-7.  Klicken Sie auf die Linie der **Vererbung** auf der Entwurfsoberfläche.
+7. Klicken Sie auf die Linie der **Vererbung** auf der Entwurfsoberfläche.
 
-8.  Legen Sie die Eigenschaft **Diskriminatoreigenschaft** auf **Type** fest.
+8. Legen Sie die Eigenschaft **Diskriminatoreigenschaft** auf **Type** fest.
 
 9. Legen Sie die Eigenschaft **Diskrimatorwert der abgeleiteten Klasse** auf **2** fest.
 
@@ -145,11 +145,11 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>So erstellen Sie eine LINQ-Abfrage und zeigen die Ergebnisse im Formular an
 
-1.  Ziehen Sie eine **ListBox** auf **Form1**.
+1. Ziehen Sie eine **ListBox** auf **Form1**.
 
-2.  Doppelklicken Sie auf das Formular, um einen `Form1_Load`-Ereignishandler zu erstellen.
+2. Doppelklicken Sie auf das Formular, um einen `Form1_Load`-Ereignishandler zu erstellen.
 
-3.  Fügen Sie dem `Form1_Load` -Ereignishandler folgenden Code hinzu:
+3. Fügen Sie dem `Form1_Load` -Ereignishandler folgenden Code hinzu:
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -179,16 +179,16 @@ Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 
 ### <a name="to-test-the-application"></a>So testen Sie die Anwendung
 
-1.  Drücken Sie **F5**.
+1. Drücken Sie **F5**.
 
-2.  Stellen Sie sicher, dass nur Datensätze angezeigt werden, die den Wert 2 in ihrer **Type**-Spalte enthalten.
+2. Stellen Sie sicher, dass nur Datensätze angezeigt werden, die den Wert 2 in ihrer **Type**-Spalte enthalten.
 
-3.  Schließen Sie das Formular. (Klicken Sie im Menü **Debuggen** auf **Debuggen beenden**.)
+3. Schließen Sie das Formular. (Klicken Sie im Menü **Debuggen** auf **Debuggen beenden**.)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Vorgehensweise: Generieren des Objektmodells in Visual Basic oder C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Vorgehensweise: Generieren des Objektmodells in Visual Basic oderC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

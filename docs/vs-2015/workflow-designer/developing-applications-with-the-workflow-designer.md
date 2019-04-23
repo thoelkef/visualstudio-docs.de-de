@@ -17,37 +17,37 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073968"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Entwickeln von Anwendungen mit dem Workflow-Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] ist ein visueller Designer und Debugger zum grafischen Aufbau und Debugging von  [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen im [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], das in der [!INCLUDE[vs2010](../includes/vs2010-md.md)] Entwicklungsumgebung gehostet wird. Er ermöglicht es Ihnen, durch die Verwendung von Vorlagen und Aktivitätsdesignern eine zusammengesetzte Workflowanwendung, eine Aktivitätsbibliothek oder einen [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienst zu erstellen. [!INCLUDE[crabout](../includes/crabout-md.md)] finden Sie unter den [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Im Folgenden werden einige neue Entwurfsfunktionen aufgeführt, durch die sich diese neue Version von [!INCLUDE[wfd2](../includes/wfd2-md.md)] von früheren Versionen von [!INCLUDE[wfd2](../includes/wfd2-md.md)] unterscheidet:  
   
--   Der [!INCLUDE[wfd2](../includes/wfd2-md.md)] wird mit [!INCLUDE[avalon1](../includes/avalon1-md.md)] erstellt. Dadurch wird die Handhabung des Aktivitätsdesigners und die Leistung bei großen und komplexen Workflows verbessert.  
+- Der [!INCLUDE[wfd2](../includes/wfd2-md.md)] wird mit [!INCLUDE[avalon1](../includes/avalon1-md.md)] erstellt. Dadurch wird die Handhabung des Aktivitätsdesigners und die Leistung bei großen und komplexen Workflows verbessert.  
   
--   Benutzerdefinierte Aktivitäten werden jetzt mit [!INCLUDE[avalon2](../includes/avalon2-md.md)] in XAML entworfen, und das Programmiermodell zum Erstellen der Aktivitätsdesigner wurde vereinfacht.  
+- Benutzerdefinierte Aktivitäten werden jetzt mit [!INCLUDE[avalon2](../includes/avalon2-md.md)] in XAML entworfen, und das Programmiermodell zum Erstellen der Aktivitätsdesigner wurde vereinfacht.  
   
--   Es wurde eine Flussdiagrammaktivität implementiert, damit Sie den Programmablauf mit dem vertrauten Flussdiagrammmodellierungsformat visuell darstellen können.  
+- Es wurde eine Flussdiagrammaktivität implementiert, damit Sie den Programmablauf mit dem vertrauten Flussdiagrammmodellierungsformat visuell darstellen können.  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] verfügt über einen neuen variablen Designer, der es Ihnen ermöglicht, Variablen innerhalb der Workflows zu deklarieren und deren Bereich festzulegen, indem Sie sie an Aktivitäten binden.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] verfügt über einen neuen variablen Designer, der es Ihnen ermöglicht, Variablen innerhalb der Workflows zu deklarieren und deren Bereich festzulegen, indem Sie sie an Aktivitäten binden.  
   
--   In [!INCLUDE[vs2010](../includes/vs2010-md.md)] bietet der [!INCLUDE[wfd2](../includes/wfd2-md.md)] umfassende IntelliSense-Funktionen beim Erstellen von Visual Basic-Ausdrücken innerhalb von [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]-Workflows.  
+- In [!INCLUDE[vs2010](../includes/vs2010-md.md)] bietet der [!INCLUDE[wfd2](../includes/wfd2-md.md)] umfassende IntelliSense-Funktionen beim Erstellen von Visual Basic-Ausdrücken innerhalb von [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]-Workflows.  
   
--   Die Debugfunktion wurde erweitert und ermöglicht es Ihnen, Haltepunkte in der XAML-Workflowdefinition festzulegen und den XAML-Code zur Laufzeit schrittweise auszuführen, sodass XAML ähnlich wie verwalteter Code im Debugger bearbeitet werden kann.  
+- Die Debugfunktion wurde erweitert und ermöglicht es Ihnen, Haltepunkte in der XAML-Workflowdefinition festzulegen und den XAML-Code zur Laufzeit schrittweise auszuführen, sodass XAML ähnlich wie verwalteter Code im Debugger bearbeitet werden kann.  
   
--   Erneutes Hosting von [!INCLUDE[wfd2](../includes/wfd2-md.md)] außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist gegenüber früheren Versionen viel einfacher und erfordert jetzt nur einige Codezeile.  
+- Erneutes Hosting von [!INCLUDE[wfd2](../includes/wfd2-md.md)] außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ist gegenüber früheren Versionen viel einfacher und erfordert jetzt nur einige Codezeile.  
   
--   Die neue <xref:System.Activities.Statements.Flowchart> Aktivität und die zugehörige [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) können Sie den Programmablauf mit dem vertrauten flussdiagrammmodellierungsformat visuell darstellen.  
+- Die neue <xref:System.Activities.Statements.Flowchart> Aktivität und die zugehörige [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) können Sie den Programmablauf mit dem vertrauten flussdiagrammmodellierungsformat visuell darstellen.  
   
--   Die Messagingaktivitäten wurden verbessert, sodass Sie vollständig-deklarative (kein Code) [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienste schreiben können.  
+- Die Messagingaktivitäten wurden verbessert, sodass Sie vollständig-deklarative (kein Code) [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienste schreiben können.  
   
--   Die **Dienstverweis hinzufügen...** Funktionalität ermöglicht es Ihnen, Aktivitäten automatisch, die Zugriff auf Webdienste zu generieren.  
+- Die **Dienstverweis hinzufügen...** Funktionalität ermöglicht es Ihnen, Aktivitäten automatisch, die Zugriff auf Webdienste zu generieren.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Verwenden des Workflow-Designers](../workflow-designer/using-the-workflow-designer.md)  

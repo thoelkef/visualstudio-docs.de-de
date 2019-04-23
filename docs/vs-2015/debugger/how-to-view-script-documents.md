@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104205"
 ---
 # <a name="how-to-view-script-documents"></a>Vorgehensweise: Anzeigen von Skriptdokumenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ In früheren Versionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wurden c
   
 ### <a name="to-view-a-server-side-script-document"></a>So zeigen Sie ein serverseitiges Skriptdokument an  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website-Pfadname>**.  
+1. Öffnen Sie im **Projektmappen-Explorer** den Knoten **\<Website-Pfadname>**.  
   
-2.  Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
+2. Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
   
      Die serverseitige Skriptdatei wird in einem Quellcodefenster geöffnet.  
   
 ### <a name="to-view-a-client-side-script-document"></a>So zeigen Sie ein clientseitiges Skriptdokument an  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** den Knoten **Skriptdokumente**.  
+1. Öffnen Sie im **Projektmappen-Explorer** den Knoten **Skriptdokumente**.  
   
-2.  Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
+2. Doppelklicken Sie auf die Skriptdatei, die Sie anzeigen möchten.  
   
      Die clientseitige Skriptdatei wird in einem Quellcodefenster geöffnet.  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107040"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen eines WCF-Datendiensts mit WPF und Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Erstellen 
   
  In dieser exemplarischen Vorgehensweise werden Sie:  
   
--   Eine Webanwendung erstellen, um einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] zu hosten.  
+- Eine Webanwendung erstellen, um einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] zu hosten.  
   
--   Ein [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] zur Darstellung der Tabelle "Customers" in der Northwind-Datenbank erstellen.  
+- Ein [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] zur Darstellung der Tabelle "Customers" in der Northwind-Datenbank erstellen.  
   
--   Erstellen Sie eine [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Erstellen Sie eine [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Eine Clientanwendung erstellen und dieser einen Verweis auf den [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] hinzufügen.  
+- Eine Clientanwendung erstellen und dieser einen Verweis auf den [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] hinzufügen.  
   
--   Die Datenbindung zum Dienst aktivieren und die Benutzeroberfläche erstellen.  
+- Die Datenbindung zum Dienst aktivieren und die Benutzeroberfläche erstellen.  
   
--   Optional Filterfunktionen zur Anwendung hinzufügen.  
+- Optional Filterfunktionen zur Anwendung hinzufügen.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
   
--   Die Beispieldatenbank Northwind.  
+- Die Beispieldatenbank Northwind.  
   
      Befindet sich diese Datenbank nicht auf Ihrem Entwicklungscomputer, können Sie sie aus dem [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088)herunterladen. Anweisungen hierzu finden Sie unter [Herunterladen von Beispieldatenbanken](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Erstellen 
   
 5. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** einen der folgenden Schritte aus:  
   
-   -   Wenn eine Datenverbindung mit der Beispieldatenbank Northwind in der Dropdownliste verfügbar ist, wählen Sie sie aus.  
+   - Wenn eine Datenverbindung mit der Beispieldatenbank Northwind in der Dropdownliste verfügbar ist, wählen Sie sie aus.  
   
         - oder -   
   
-   -   Wählen Sie die Schaltfläche **Neue Verbindung**, um eine neue Datenverbindung zu konfigurieren. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).  
+   - Wählen Sie die Schaltfläche **Neue Verbindung**, um eine neue Datenverbindung zu konfigurieren. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).  
   
 6. Wenn für die Datenbank ein Kennwort erforderlich ist, klicken Sie auf das Optionsfeld **Ja, vertrauliche Daten in die Verbindungszeichenfolge einschließen** und dann auf die Schaltfläche **Weiter**.  
   
@@ -236,11 +236,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Erstellen 
   
 #### <a name="to-add-filtering-by-city"></a>So fügen Sie Filterung anhand des Wohnorts hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Knoten **Form1.vb** oder **Form1.cs**, und wählen Sie dann **Öffnen** aus.  
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für den Knoten **Form1.vb** oder **Form1.cs**, und wählen Sie dann **Öffnen** aus.  
   
-2.  Fügen Sie dem Formular ein <xref:System.Windows.Forms.TextBox>- und ein <xref:System.Windows.Forms.Button>-Steuerelement aus der **Toolbox** hinzu.  
+2. Fügen Sie dem Formular ein <xref:System.Windows.Forms.TextBox>- und ein <xref:System.Windows.Forms.Button>-Steuerelement aus der **Toolbox** hinzu.  
   
-3.  Öffnen Sie das Kontextmenü für die <xref:System.Windows.Forms.Button> steuern, und wählen Sie **Anzeigecode**, und fügen Sie den folgenden Code in die `Button1_Click` -Ereignishandler:  
+3. Öffnen Sie das Kontextmenü für die <xref:System.Windows.Forms.Button> steuern, und wählen Sie **Anzeigecode**, und fügen Sie den folgenden Code in die `Button1_Click` -Ereignishandler:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Erstellen 
     }  
     ```  
   
-4.  Ersetzen Sie im vorherigen Code den Text `http://localhost:53161/NorthwindCustomers.svc` durch die URL aus dem `Form1_Load`-Ereignishandler.  
+4. Ersetzen Sie im vorherigen Code den Text `http://localhost:53161/NorthwindCustomers.svc` durch die URL aus dem `Form1_Load`-Ereignishandler.  
   
-5.  Wählen Sie auf der Menüleiste **Debuggen**, **Debuggen starten** zum Ausführen der Anwendung.  
+5. Wählen Sie auf der Menüleiste **Debuggen**, **Debuggen starten** zum Ausführen der Anwendung.  
   
-6.  Geben Sie im Textfeld die Zeichenfolge **London** ein, und klicken Sie dann auf die Schaltfläche. Nur die Kunden aus London werden angezeigt.  
+6. Geben Sie im Textfeld die Zeichenfolge **London** ein, und klicken Sie dann auf die Schaltfläche. Nur die Kunden aus London werden angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

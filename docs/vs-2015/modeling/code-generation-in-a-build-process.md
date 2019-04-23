@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077601"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben untersc
 
 Dies bedeutet, dass Sie auf Elemente wie Projektdateinamen nicht genauso zugreifen können, wie wenn Sie eine Textvorlage in MSBuild erstellen. Sie können jedoch [übergeben Sie Umgebungsinformationen mit Buildparametern in Textvorlagen und anweisungsprozessoren](#parameters).
 
-##  <a name="buildserver"></a> Konfigurieren des Computers
+## <a name="buildserver"></a> Konfigurieren des Computers
 
 Um Buildaufgaben auf dem Entwicklungscomputer zu aktivieren, installieren [Modellierungs-SDK für Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Wenn [Buildserver](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) Ausführungen auf einem Computer, auf dem Visual Studio nicht installiert ist, und kopieren Sie die folgenden Dateien auf den Buildcomputer von Ihrem Entwicklungscomputer. Ersetzen Sie "*" durch die aktuellste Versionsnummer.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (mehrere Dateien)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (mehrere Dateien)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>So bearbeiten Sie die Projektdatei
 
@@ -90,7 +90,7 @@ Fügen Sie nach dieser Zeile den Textvorlagenimport ein:
 
 Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Transformationsaufgabe zu steuern:
 
--   Führen Sie die Transformierensaufgabe am Anfang jedes Builds aus:
+- Führen Sie die Transformierensaufgabe am Anfang jedes Builds aus:
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
     </PropertyGroup>
     ```
 
--   Überschreiben Sie Dateien, die schreibgeschützt sind, weil sie z. B. nicht ausgecheckt sind:
+- Überschreiben Sie Dateien, die schreibgeschützt sind, weil sie z. B. nicht ausgecheckt sind:
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
     </PropertyGroup>
     ```
 
--   Transformieren Sie jede Vorlage jedes Mal:
+- Transformieren Sie jede Vorlage jedes Mal:
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Übergeben der buildkontextdaten in die Vorlagen
+## <a name="parameters"></a> Übergeben der buildkontextdaten in die Vorlagen
 
 Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. Buildeigenschaften übergeben und [Umgebungsvariablen](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Ve
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly und die #include-Direktiven
+## <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly und die #include-Direktiven
 
 Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
 
@@ -271,13 +271,13 @@ Wenn Sie eine eingeschlossene Datei oder eine andere Datei, die von der Vorlage 
 
 **Was sind andere Optionen für Textvorlagen werden transformiert?**
 
--   Die [Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md) in den Befehlsskripten verwendet werden kann. In den meisten Fällen ist es einfacher, MSBuild zu verwenden.
+- Die [Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md) in den Befehlsskripten verwendet werden kann. In den meisten Fällen ist es einfacher, MSBuild zu verwenden.
 
--   [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Während der Entwurfszeit-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) werden von Visual Studio transformiert.
+- [Während der Entwurfszeit-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md) werden von Visual Studio transformiert.
 
--   [Laufzeittextvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md) werden zur Laufzeit in Ihrer Anwendung transformiert.
+- [Laufzeittextvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md) werden zur Laufzeit in Ihrer Anwendung transformiert.
 
 ## <a name="read-more"></a>Weitere Informationen
 

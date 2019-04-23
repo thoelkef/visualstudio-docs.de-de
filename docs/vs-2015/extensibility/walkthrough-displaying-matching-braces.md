@@ -10,12 +10,12 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084933"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden Klammern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,50 +29,50 @@ Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von gesch
   
 #### <a name="to-create-a-mef-project"></a>So erstellen Sie ein MEF-Projekt  
   
-1.  Erstellen Sie ein Editorklassifiziererprojekt. Nennen Sie die Projektmappe `BraceMatchingTest`.  
+1. Erstellen Sie ein Editorklassifiziererprojekt. Nennen Sie die Projektmappe `BraceMatchingTest`.  
   
-2.  Fügen Sie eine Elementvorlage Editor Klassifizierer zum Projekt hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Fügen Sie eine Elementvorlage Editor Klassifizierer zum Projekt hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Löschen Sie die vorhandenen Klassendateien.  
+3. Löschen Sie die vorhandenen Klassendateien.  
   
 ## <a name="implementing-a-brace-matching-tagger"></a>Implementieren eine Zuordnung von geschweiften Klammern Taggers  
  Rufen Sie eine geschweifte Klammer hervorheben ab, der dem ähnelt, die in Visual Studio verwendet wird, können Sie einen Tagger des Typs implementieren <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Der folgende Code zeigt, wie Sie den Tagger für Klammerpaare auf jeder Schachtelungsebene definieren. In diesem Beispiel-Paaren der geschweiften Klammern []. [], und {} definiert sind, in den Tagger-Konstruktor, jedoch in einem vollständigen sprachimplementierung die relevanten Klammerpaare würde in der Language-Spezifikation definiert werden.  
   
 #### <a name="to-implement-a-brace-matching-tagger"></a>Um eine Zuordnung von geschweiften Klammern Tagger zu implementieren.  
   
-1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie Klammernentsprechung aus.  
+1. Fügen Sie eine Klassendatei hinzu, und nennen Sie sie Klammernentsprechung aus.  
   
-2.  Importieren Sie die folgenden Namespaces ein.  
+2. Importieren Sie die folgenden Namespaces ein.  
   
      [!code-csharp[VSSDKBraceMatchingTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#1)]
      [!code-vb[VSSDKBraceMatchingTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#1)]  
   
-3.  Definieren Sie eine Klasse `BraceMatchingTagger` von erbt <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> des Typs <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3. Definieren Sie eine Klasse `BraceMatchingTagger` von erbt <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> des Typs <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#2)]
      [!code-vb[VSSDKBraceMatchingTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#2)]  
   
-4.  Fügen Sie Eigenschaften für die Textansicht, Quellpuffer, und der aktuellen Momentaufnahmepunkt und auch einen Satz von Klammerpaare.  
+4. Fügen Sie Eigenschaften für die Textansicht, Quellpuffer, und der aktuellen Momentaufnahmepunkt und auch einen Satz von Klammerpaare.  
   
      [!code-csharp[VSSDKBraceMatchingTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#3)]
      [!code-vb[VSSDKBraceMatchingTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#3)]  
   
-5.  Legen Sie die Eigenschaften im Konstruktor Tagger und abonnieren Sie die Ansicht Änderungsereignisse <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> und <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. In diesem Beispiel werden zur Veranschaulichung im Konstruktor auch übereinstimmende Paare definiert.  
+5. Legen Sie die Eigenschaften im Konstruktor Tagger und abonnieren Sie die Ansicht Änderungsereignisse <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> und <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. In diesem Beispiel werden zur Veranschaulichung im Konstruktor auch übereinstimmende Paare definiert.  
   
      [!code-csharp[VSSDKBraceMatchingTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#4)]
      [!code-vb[VSSDKBraceMatchingTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#4)]  
   
-6.  Als Teil der <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> Implementierung, deklarieren Sie ein TagsChanged-Ereignis.  
+6. Als Teil der <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> Implementierung, deklarieren Sie ein TagsChanged-Ereignis.  
   
      [!code-csharp[VSSDKBraceMatchingTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#5)]
      [!code-vb[VSSDKBraceMatchingTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#5)]  
   
-7.  Die Ereignishandler aktualisiert die aktuelle Einfügemarkenposition des der `CurrentChar` -Eigenschaft und lösen Sie das TagsChanged-Ereignis.  
+7. Die Ereignishandler aktualisiert die aktuelle Einfügemarkenposition des der `CurrentChar` -Eigenschaft und lösen Sie das TagsChanged-Ereignis.  
   
      [!code-csharp[VSSDKBraceMatchingTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#6)]
      [!code-vb[VSSDKBraceMatchingTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#6)]  
   
-8.  Implementieren der <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> Methode entsprechend geschweiften Klammern, wenn das aktuelle Zeichen ist eine öffnende geschweifte Klammer oder das vorherige Zeichen ist eine schließende geschweifte Klammer, wie in Visual Studio. Wenn die Übereinstimmung gefunden wird, instanziiert diese Methode zwei Tags, eine für die öffnende geschweifte Klammer und eine für die schließende geschweifte Klammer.  
+8. Implementieren der <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> Methode entsprechend geschweiften Klammern, wenn das aktuelle Zeichen ist eine öffnende geschweifte Klammer oder das vorherige Zeichen ist eine schließende geschweifte Klammer, wie in Visual Studio. Wenn die Übereinstimmung gefunden wird, instanziiert diese Methode zwei Tags, eine für die öffnende geschweifte Klammer und eine für die schließende geschweifte Klammer.  
   
      [!code-csharp[VSSDKBraceMatchingTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#7)]
      [!code-vb[VSSDKBraceMatchingTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#7)]  
@@ -92,12 +92,12 @@ Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von gesch
   
 #### <a name="to-implement-a-brace-matching-tagger-provider"></a>Einen Übereinstimmende Klammer-Tagger-Anbieter implementiert  
   
-1.  Deklarieren Sie einen Tagger-Anbieter, die von erbt <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, nennen Sie sie BraceMatchingTaggerProvider und exportieren Sie sie mit einem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text" und ein <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> von <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1. Deklarieren Sie einen Tagger-Anbieter, die von erbt <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, nennen Sie sie BraceMatchingTaggerProvider und exportieren Sie sie mit einem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text" und ein <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> von <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#10)]
      [!code-vb[VSSDKBraceMatchingTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#10)]  
   
-2.  Implementieren der <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> Methode, um eine BraceMatchingTagger zu instanziieren.  
+2. Implementieren der <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> Methode, um eine BraceMatchingTagger zu instanziieren.  
   
      [!code-csharp[VSSDKBraceMatchingTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#11)]
      [!code-vb[VSSDKBraceMatchingTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#11)]  
@@ -107,11 +107,11 @@ Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von gesch
   
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>Zum Erstellen und Testen BraceMatchingTest-Lösung  
   
-1.  Erstellen Sie die Projektmappe.  
+1. Erstellen Sie die Projektmappe.  
   
-2.  Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
+2. Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
   
-3.  Erstellen Sie eine Textdatei, und geben Sie Text, der übereinstimmende geschweiften Klammern enthält.  
+3. Erstellen Sie eine Textdatei, und geben Sie Text, der übereinstimmende geschweiften Klammern enthält.  
   
     ```  
     hello {  
@@ -122,7 +122,7 @@ Sie können die Sprache basierenden Funktionen wie z. B. die Zuordnung von gesch
     {hello}  
     ```  
   
-4.  Wenn Sie die position der Einfügemarke, bevor Sie eine öffnende geschweifte Klammer, sollten sowohl, geschweifte Klammer und der entsprechende schließende geschweifte Klammer hervorgehoben werden. Wenn Sie den Cursor direkt nach der schließenden geschweiften Klammer positionieren, sollten sowohl dieser geschweifte Klammer als auch die entsprechende öffnende geschweifte Klammer hervorgehoben werden.  
+4. Wenn Sie die position der Einfügemarke, bevor Sie eine öffnende geschweifte Klammer, sollten sowohl, geschweifte Klammer und der entsprechende schließende geschweifte Klammer hervorgehoben werden. Wenn Sie den Cursor direkt nach der schließenden geschweiften Klammer positionieren, sollten sowohl dieser geschweifte Klammer als auch die entsprechende öffnende geschweifte Klammer hervorgehoben werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

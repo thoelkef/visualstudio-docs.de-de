@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961522"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112831"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine
   
  **Beispiele**  
   
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>Hinweise  
   
--   Das Tool unterstützt nur PNG und XAML-Dateien. Alle anderen Bild oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen aufgetreten beim Analysieren von Ressourcen wird eine Warnung generiert. Wenn keine unterstützte Images befinden sich Wenn das Tool abgeschlossen ist analysieren die Ressourcen, wird ein Fehler generiert werden  
+- Das Tool unterstützt nur PNG und XAML-Dateien. Alle anderen Bild oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen aufgetreten beim Analysieren von Ressourcen wird eine Warnung generiert. Wenn keine unterstützte Images befinden sich Wenn das Tool abgeschlossen ist analysieren die Ressourcen, wird ein Fehler generiert werden  
   
--   Befolgen Sie die vorgeschlagene Format für PNG-Bilder, wird das Tool der Größe/Dimensionen bestehenden Wert für die PNG-Format angegebene Größe des, festgelegt, auch wenn es die tatsächliche Größe des Bilds unterscheidet.  
+- Befolgen Sie die vorgeschlagene Format für PNG-Bilder, wird das Tool der Größe/Dimensionen bestehenden Wert für die PNG-Format angegebene Größe des, festgelegt, auch wenn es die tatsächliche Größe des Bilds unterscheidet.  
   
--   Das Format der Breite/Höhe kann für PNG-Bilder weggelassen werden, aber das Tool des Bilds tatsächliche Breite und Höhe zu lesen und verwenden Sie diese für die Größe/Dimensionen bestehenden Wert des Bilds.  
+- Das Format der Breite/Höhe kann für PNG-Bilder weggelassen werden, aber das Tool des Bilds tatsächliche Breite und Höhe zu lesen und verwenden Sie diese für die Größe/Dimensionen bestehenden Wert des Bilds.  
   
--   Ausführen dieses Tools auf den gleichen Bildstreifen mehrmals für den gleichen .imagemanifest führt zu doppelten manifesteinträge, daran, dass das Tool versucht, teilen den Bildstreifen in separate Abbildungen und tragen Sie in der vorhandenen Manifest.  
+- Ausführen dieses Tools auf den gleichen Bildstreifen mehrmals für den gleichen .imagemanifest führt zu doppelten manifesteinträge, daran, dass das Tool versucht, teilen den Bildstreifen in separate Abbildungen und tragen Sie in der vorhandenen Manifest.  
   
--   Zusammenführen (durch das weglassen /newGuids bzw. /newIds) sollte nur für die Tool-generierte Manifeste durchgeführt werden. Manifeste, die angepasst oder auf andere Weise generiert wurden möglicherweise nicht richtig gemergt werden.  
+- Zusammenführen (durch das weglassen /newGuids bzw. /newIds) sollte nur für die Tool-generierte Manifeste durchgeführt werden. Manifeste, die angepasst oder auf andere Weise generiert wurden möglicherweise nicht richtig gemergt werden.  
   
--   Manifeste, die für die systemeigenen Assemblys generiert werden müssen möglicherweise manuell bearbeitet werden, nach der Generierung, stellen die ID-Symbole, die die Ressourcen-IDs aus der nativen Assembly RC-Datei übereinstimmen werden.  
+- Manifeste, die für die systemeigenen Assemblys generiert werden müssen möglicherweise manuell bearbeitet werden, nach der Generierung, stellen die ID-Symbole, die die Ressourcen-IDs aus der nativen Assembly RC-Datei übereinstimmen werden.  
   
 ## <a name="sample-output"></a>Beispielausgabe  
  **Einfache bildmanifest**  

@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115067"
 ---
 # <a name="viewing-the-structure-of-code"></a>Anzeigen der Codestruktur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 > [!NOTE]
 >  Die Visual Studio-Edition und die verwendeten Einstellungen können sich auf die Funktionen der IDE auswirken. Sie können sich daher von den in diesem Thema beschriebenen Funktionen unterscheiden.  
   
-##  <a name="BKMK_ClassView"></a> Klassenansicht (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Klassenansicht (Visual Basic, C#, C++)  
  Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** sowie in einem separaten Fenster angezeigt. Das Fenster **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).  
   
  Sie müssen ein Projekt nicht kompilieren, um seine Elemente in der **Klassenansicht** anzuzeigen. Das Fenster wird aktualisiert, wenn Sie im Projekt Änderungen am Code vornehmen.  
@@ -110,7 +110,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 |**Gehe zu Verweis**|Zeigt einen Verweis auf den Typ oder Member im Quellcode an, falls verfügbar.|  
 |**Aufrufhierarchie anzeigen**|Zeigt die ausgewählte Methode im Fenster **Aufrufhierarchie** an.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Aufrufhierarchie (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Aufrufhierarchie (Visual Basic, C#, C++)  
  Das Fenster **Aufrufhierarchie** zeigt an, wo eine bestimmte Methode (oder Eigenschaft oder ein Konstruktor) aufgerufen wird, und listet die von dieser Methode aufgerufenen Methoden auf. Sie können mehrere Ebenen des Aufrufdiagramms anzeigen, in dem die Aufrufer/Aufgerufenem-Beziehung zwischen den Methoden in einem angegebenen Bereich angezeigt wird.  
   
  Sie können das Fenster **Aufrufhierarchie** anzeigen, indem Sie eine Methode (oder Eigenschaft oder einen Konstruktor) und dann im Kontextmenü **Aufrufhierarchie anzeigen** auswählen. Die Anzeige sollte in etwa der folgenden Abbildung entsprechen.  
@@ -135,7 +135,7 @@ Fenster „Aufrufhierarchie“
 |**Kopieren**|Kopiert den ausgewählten Knoten (aber nicht dessen untergeordnete Knoten).|  
 |**Aktualisieren**|Aktualisiert die Informationen.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Objektkatalog  
+## <a name="BKMK_ObjectBrowser"></a> Objektkatalog  
  Der **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.  
   
  Sie können die Anzeige im **Objektkatalog** filtern. Mithilfe der Dropdownliste am oberen Rand des Fensters können Sie zwischen folgenden Optionen wählen:  
@@ -194,7 +194,7 @@ Fenster „Aufrufhierarchie“
 |**Gehe zu Verweis**|Zeigt einen Verweis auf den Typ oder Member im Quellcode an, falls verfügbar.|  
 |**Aufrufhierarchie anzeigen**|Zeigt die ausgewählte Methode im Fenster **Aufrufhierarchie** an.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Codedefinitionsfenster (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Codedefinitionsfenster (C#, C++)  
  Im Fenster **Codedefinition** wird die Definition eines ausgewählten Typs oder Members im aktiven Projekt angezeigt. Der Typ oder Member kann im Code-Editor oder in einem Codeansichtsfenster ausgewählt werden.  
   
  Obwohl dieses Fenster schreibgeschützt ist, können Sie darin Haltepunkte oder Lesezeichen festlegen. Wählen Sie im Kontextmenü die Option **Definition bearbeiten** aus, um die angezeigte Definition zu ändern. Daraufhin wird die Quelldatei im Code-Editor geöffnet und die Einfügemarke in die Zeile verschoben, in der die Definition beginnt.  

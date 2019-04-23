@@ -34,17 +34,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085258"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
 
-##  <a name="BKMK_Overview"></a> Setzen Sie Haltepunkte im Quellcode
+## <a name="BKMK_Overview"></a> Setzen Sie Haltepunkte im Quellcode
  Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Z. B. im folgenden C#-Code, Sie können einen Haltepunkt festlegen der Deklaration von Variablen, die `for` -Schleife oder Code innerhalb der `for` Schleife. Sie können nicht auf den Namespace oder den Klassendeklarationen oder die Signatur der Methode einen Haltepunkt festlegen.
 
  Klicken Sie in den linken Rand neben einer Codezeile, zum Festlegen eines Haltepunkts im Quellcode. Sie können auch auswählen, die Zeile, und drücken Sie **F9**Option **Debuggen** > **Haltepunkt ein/aus**, oder mit der rechten Maustaste, und wählen Sie **Haltepunkt**  >  **Haltepunkt einfügen**. Der Haltepunkt wird als ein roter Punkt am linken Rand angezeigt.
@@ -67,7 +67,7 @@ In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatis
 
 - Festlegen von Bedingungen und Aktionen, hinzufügen und Bezeichnungen bearbeiten oder einen Haltepunkt zu exportieren, indem sie und den entsprechenden Befehl auswählen oder mit dem Mauszeiger auf ihn auswählen der **Einstellungen** Symbol.
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Legen Sie Haltepunkte vom Debugger windows
+## <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Legen Sie Haltepunkte vom Debugger windows
 
 Sie können auch festlegen, Haltepunkte aus der **Aufrufliste** und **Disassembly** Debuggerfenster.
 
@@ -97,7 +97,7 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 
 2. In der **Disassembly** Fenster, klicken Sie in den linken Rand der Anweisung, die Sie unterbrechen möchten. Sie können auch auswählen, und drücken Sie die **F9**, oder mit der rechten Maustaste, und wählen Sie **Haltepunkt** > **Haltepunkt einfügen**.
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Festlegen von Haltepunkten-Funktion
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Festlegen von Haltepunkten-Funktion
 
   Sie können die Ausführung unterbrechen, wenn eine Funktion aufgerufen wird.
 
@@ -136,17 +136,18 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Festlegen eines Funktionshaltepunkts mit einer Speicheradresse (nur systemeigener C++)
  Sie können die Adresse eines Objekts verwenden, einen Funktionshaltepunkt für eine Methode namens von einer bestimmten Instanz einer Klasse festlegen.  Angenommen, ein adressierbares Objekt des Typs `my_class`, Sie können eine Funktions-Haltepunkts festlegen, auf die `my_method` -Methode, die Aufrufe Instanz.
 
-1.  Legen Sie einen Haltepunkt an einer beliebigen Stelle, nachdem die Instanz der Klasse instanziiert wird.
+1. Legen Sie einen Haltepunkt an einer beliebigen Stelle, nachdem die Instanz der Klasse instanziiert wird.
 
-2.  Suchen Sie die Adresse der Instanz (z. B. `0xcccccccc`).
+2. Suchen Sie die Adresse der Instanz (z. B. `0xcccccccc`).
 
-3.  Wählen Sie **Debuggen** > **Neuer Haltepunkt** > **Funktions-Haltepunkts**, oder drücken Sie **Alt** + **F9** > **STRG**+**B**.
+3. Wählen Sie **Debuggen** > **Neuer Haltepunkt** > **Funktions-Haltepunkts**, oder drücken Sie **Alt** + **F9** > **STRG**+**B**.
 
-4.  Fügen Sie den folgenden der **Funktionsnamen** , und wählen Sie **C++** Sprache.
+4. Fügen Sie den folgenden der **Funktionsnamen** , und wählen Sie **C++** Sprache.
 
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+
 ::: moniker range=">= vs-2019"
 
 ## <a name="BKMK_set_a_data_breakpoint_managed"></a>Festlegen von Datenhaltepunkten (.NET Core 3.0 oder höher)
@@ -157,7 +158,7 @@ Datenhaltepunkte unterbrechen die Ausführung, wenn ein bestimmtes Objekt der Ei
 
 1. In einem .NET Core-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird.
 
-2. In der die **"Auto"**, **Watch**, oder **"lokal"** mit der rechten Maustaste auf eine Eigenschaft, und wählen Sie **unterbrechen, wenn der Wert ändert** im Kontextmenü.
+2. In der **"Auto"**, **Watch**, oder **"lokal"** mit der rechten Maustaste auf eine Eigenschaft, und wählen Sie **unterbrechen, wenn der Wert ändert** im Kontextmenü.
 
     ![Verwaltete Datenhaltepunkt](../debugger/media/managed-data-breakpoint.png "verwaltet Datenhaltepunkt")
 
@@ -185,16 +186,16 @@ Datenhaltepunkte in .NET Core funktioniert nicht für:
 3. Geben Sie im Feld **Byteanzahl** die Anzahl der Bytes an, die der Debugger überwachen soll. Wenn Sie beispielsweise **4**auswählen, überwacht der Debugger vier Bytes ab `&avar` und unterbricht, wenn eines dieser Bytes seinen Wert ändert.
 
 Datenhaltepunkte funktionieren nicht unter den folgenden Bedingungen:
--   Ein Prozess, der nicht gedebuggt wird, wird in einen Speicherbereich geschrieben.
--   Der Speicherbereich wird von mindestens zwei Prozessen gemeinsam verwendet.
--   Der Speicherort wird innerhalb des Kernels aktualisiert. Wenn Speicher an der 32-Bit-Windows übergeben wird z. B. `ReadFile` -Funktion, der Speicher vom Kernelmodus, damit das Update der Debugger unterbricht aktualisiert.
+- Ein Prozess, der nicht gedebuggt wird, wird in einen Speicherbereich geschrieben.
+- Der Speicherbereich wird von mindestens zwei Prozessen gemeinsam verwendet.
+- Der Speicherort wird innerhalb des Kernels aktualisiert. Wenn Speicher an der 32-Bit-Windows übergeben wird z. B. `ReadFile` -Funktion, der Speicher vom Kernelmodus, damit das Update der Debugger unterbricht aktualisiert.
 
 >[!NOTE]
 >- Datenhaltepunkte richten sich nach spezifischen Speicheradressen. Die Adresse einer Variablen ändert sich von einer Debugsitzung zur nächsten, sodass Datenhaltepunkte am Ende einer Debugsitzung automatisch deaktiviert werden.
 >
 >- Wenn Sie einen Datenhaltepunkt bei einer lokalen Variable festlegen, bleibt der Haltepunkt aktiviert, wenn die Funktion beendet wird, die Speicheradresse ist jedoch nicht mehr gültig, und das Verhalten des Haltepunkts ist unvorhersehbar. Wenn Sie einen Datenhaltepunkt auf eine lokale Variable festlegen, sollten Sie löschen oder deaktivieren diesen vor dem Ende der Funktion.
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Verwalten von Haltepunkten im Haltepunktefenster
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Verwalten von Haltepunkten im Haltepunktefenster
 
  Sie können die **Haltepunkte** Fenster anzeigen und Verwalten aller Haltepunkte in der Projektmappe. Dieser zentrale Speicherort ist besonders hilfreich, in großen Projektmappen oder komplexen Debugszenarios, in denen Haltepunkte wichtig sind.
 
@@ -206,7 +207,7 @@ Zum Öffnen der **Haltepunkte** wählen Sie im Fenster **Debuggen** > **Windows*
 
 Anzuzeigende Spalten auswählen der **Haltepunkte** wählen Sie im Fenster **Spalten einblenden**. Wählen Sie eine Spaltenüberschrift, um die Liste der Haltepunkte nach dieser Spalte zu sortieren.
 
-###  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Haltepunktbezeichnungen
+### <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Haltepunktbezeichnungen
 Sie können Bezeichnungen zu sortieren und Filtern Sie die Liste von Haltepunkten in der **Haltepunkte** Fenster.
 
 1. Um eine Bezeichnung einem Haltepunkt hinzuzufügen, Maustaste den Breakpoint im Quellcode oder die **Haltepunkte** Fenster, und wählen Sie dann **Bezeichnungen bearbeiten**. Eine neue Bezeichnung hinzufügen oder ein vorhandenes Zertifikat, und wählen Sie dann **OK**.
@@ -220,7 +221,7 @@ Sie können Bezeichnungen zu sortieren und Filtern Sie die Liste von Haltepunkte
 - Um alle Haltepunkte exportieren möchten, deaktivieren Sie alle Felder aus, und lassen Sie die **Suche** Feld leer. Wählen Sie die **exportieren Sie alle Haltepunkte mit den aktuellen Suchkriterien übereinstimmen** Symbol, und speichern Sie die Datei.
 - Zum Importieren von Haltepunkten, in der **Haltepunkte** wählen Sie im Fenster der **Haltepunkte aus einer Datei importieren** Symbol, um den Speicherort der XML-Datei navigieren, und wählen **öffnen**.
 
-##  <a name="breakpoint-conditions"></a>Haltepunktbedingungen
+## <a name="breakpoint-conditions"></a>Haltepunktbedingungen
  Sie können steuern, wann und wo ein Haltepunkt ausgeführt wird, indem Sie Bedingungen festlegen. Die Bedingung kann jeder gültige Ausdruck sein, den der Debugger erkennt. Weitere Informationen zu gültigen Ausdrücken finden Sie unter [Expressions in the Debugger (Ausdrücke im Debugger)](../debugger/expressions-in-the-debugger.md).
 
 **Um eine Bedingung für Haltepunkt festzulegen:**
@@ -293,15 +294,15 @@ Sie können einen Haltepunkt so einschränken, dass dieser nur auf bestimmten Ge
 
 Klicken Sie unter **Bedingungen** in die **Haltepunkteinstellungen** wählen Sie im Fenster **Filter**, und geben Sie dann eine oder mehrere der folgenden Ausdrücke:
 
--   MachineName = "name"
--   ProcessId = value
--   ProcessName = "name"
--   ThreadId = value
--   ThreadName = "name"
+- MachineName = "name"
+- ProcessId = value
+- ProcessName = "name"
+- ThreadId = value
+- ThreadName = "name"
 
 Schließen Sie Zeichenfolgewerte in doppelte Anführungszeichen ein. Sie können Klauseln mit `&` (AND), `||` (OR), `!` (NOT), und Klammern kombinieren.
 
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Haltepunktaktionen und Ablaufverfolgungspunkte
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Haltepunktaktionen und Ablaufverfolgungspunkte
  Beim *Ablaufverfolgungspunkt* handelt es sich um einen Haltepunkt, der eine Meldung im Fenster **Ausgabe** ausgibt. Ein Ablaufverfolgungspunkt kann wie eine temporäre Trace-Anweisung in der Programmiersprache reagieren.
 
 **So legen Sie einen Ablaufverfolgungspunkt fest:**

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37cdbc07f5defe0c6f8d5613795d2a9c6142521f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 44be83e21a5e3cd94a1db2b7edce3e8484353f88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082879"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Vorgehensweise: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
@@ -32,30 +32,30 @@ ms.locfileid: "56644704"
 
 ## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Ordnen Sie eine XML-Schema in ein Word-Dokument in Visual Studio
 
-1.  Öffnen Sie das Word-Dokument oder einer Vorlage-Projekt, in Visual Studio.
+1. Öffnen Sie das Word-Dokument oder einer Vorlage-Projekt, in Visual Studio.
 
-2.  Klicken Sie auf das Dokument, das den Fokus auf den Designer.
+2. Klicken Sie auf das Dokument, das den Fokus auf den Designer.
 
-3.  Klicken Sie auf dem Menüband auf die **Developer** Registerkarte.
+3. Klicken Sie auf dem Menüband auf die **Developer** Registerkarte.
 
     > [!NOTE]
     >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  In der **XML** auf **Schema**.
+4. In der **XML** auf **Schema**.
 
      Die **Vorlagen und Add-Ins** Dialogfeld wird geöffnet.
 
-5.  Klicken Sie auf die **XML-Schema** Registerkarte.
+5. Klicken Sie auf die **XML-Schema** Registerkarte.
 
-6.  Klicken Sie auf **Schema hinzufügen**.
+6. Klicken Sie auf **Schema hinzufügen**.
 
      Die **Schema hinzufügen** Dialogfeld wird geöffnet.
 
-7.  Navigieren Sie zu der Schemadatei, wählen Sie ihn, und klicken Sie dann auf **öffnen**.
+7. Navigieren Sie zu der Schemadatei, wählen Sie ihn, und klicken Sie dann auf **öffnen**.
 
      Die **Schema Einstellungen** Dialogfeld wird geöffnet.
 
-8.  Weisen Sie einen Alias, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.
+8. Weisen Sie einen Alias, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.
 
 9. Klicken Sie auf **OK**.
 

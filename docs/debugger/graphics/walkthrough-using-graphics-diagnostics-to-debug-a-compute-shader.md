@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden der Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Mithilfe der Grafikdiagnose zum Debuggen eines Compute-Shaders | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105369"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Studio-Grafikdiagnosetools zur Untersuchung eines Compute-Shaders verwendet werden, der falsche Ergebnisse generiert.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:
 
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.
 
--   Verwenden Sie die **Aufrufliste des Grafikereignisses**, um zu ermitteln, welcher Compute-Shader durch ein `Dispatch`-Ereignis in DirectCompute ausgeführt wird.
+- Verwenden Sie die **Aufrufliste des Grafikereignisses**, um zu ermitteln, welcher Compute-Shader durch ein `Dispatch`-Ereignis in DirectCompute ausgeführt wird.
 
--   Untersuchen Sie den Compute-Shader, der das Problem verursacht, über das Fenster **Grafikpipelinestufen** und mit dem HLSL-Debugger.
+- Untersuchen Sie den Compute-Shader, der das Problem verursacht, über das Fenster **Grafikpipelinestufen** und mit dem HLSL-Debugger.
 
 ## <a name="scenario"></a>Szenario
  In diesem Szenario haben Sie eine Fluiddynamiksimulation geschrieben, die DirectCompute zur Ausführung der berechnungsintensivsten Teile des Simulationsupdates verwendet. Beim Ausführen der App werden Dataset und Benutzeroberfläche korrekt wiedergegeben, die Simulation verhält sich jedoch nicht wie erwartet. Mithilfe der Grafikdiagnose können Sie den Fehler in einer Grafikprotokolldatei erfassen, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:
@@ -88,7 +88,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
 
     ![Debuggen des IntegrateCS-Compute-Shaders. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. Um das Debugging im Computeshader zu beenden, klicken Sie auf der Symbolleiste **Debuggen** die Option **Debuggen beenden** aus (Tastatur: UMSCHALT+F5).
+4. Zum Beenden des Debuggens im Compute-Shaders in der **Debuggen** Symbolleiste wählen **Debuggen beenden** (Tastatur: UMSCHALT + F5).
 
 5. Wählen Sie danach Sie das zweite `Dispatch`-Ereignis aus, und starten Sie das Debugging des Compute-Shaders, wie Sie dies bereits im vorherigen Schritt getan haben.
 

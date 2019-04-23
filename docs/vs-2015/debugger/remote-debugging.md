@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076210"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Sie können entweder herunterladen, die die Remoteserver-Verwaltungstools direkt
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Herunterladen und Installieren der Remotetools
   
-1.  Erhalten Sie auf dem Gerät oder Server-Computer, die Sie debuggen möchten (statt der Computer mit Visual Studio) die richtige Version der Remotetools.
+1. Erhalten Sie auf dem Gerät oder Server-Computer, die Sie debuggen möchten (statt der Computer mit Visual Studio) die richtige Version der Remotetools.
 
     |Version|Link|Hinweise|
     |-|-|-|
@@ -47,14 +47,14 @@ Sie können entweder herunterladen, die die Remoteserver-Verwaltungstools direkt
     |Visual Studio 2013|[Remotetools](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Download-Seite in Visual Studio 2013-Dokumentation|
     |Visual Studio 2012|[Remotetools](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Download-Seite in Visual Studio 2012-Dokumentation|
   
-2.  Wählen Sie auf der Downloadseite die Version der Tools, die das Betriebssystem (x 86, X64 oder ARM-Version) entspricht, und Laden Sie die Remoteserver-Verwaltungstools.
+2. Wählen Sie auf der Downloadseite die Version der Tools, die das Betriebssystem (x 86, X64 oder ARM-Version) entspricht, und Laden Sie die Remoteserver-Verwaltungstools.
   
     > [!IMPORTANT]
     >  Es wird empfohlen, dass Sie die neueste Version der Remotetools installieren, die Ihrer Version von Visual Studio entspricht. Nicht übereinstimmende Versionen werden nicht empfohlen.  
     >   
     >  Darüber hinaus müssen Sie die Remotetools installieren, die die gleiche Architektur wie das Betriebssystem auf dem Sie sie installieren möchten. Das heißt, sollten Sie eine 32-Bit-Anwendung auf einem Remotecomputer unter einem 64-Bit-Betriebssystem zu debuggen, müssen Sie die 64-Bit-Version der Remotetools auf dem Remotecomputer installieren.  
   
-3.  Wenn Sie die ausführbare Datei heruntergeladen haben, folgen Sie den Anweisungen zum Installieren der Anwendung auf dem Remotecomputer. Finden Sie unter [– Anweisungen zur Einrichtung](#bkmk_setup)
+3. Wenn Sie die ausführbare Datei heruntergeladen haben, folgen Sie den Anweisungen zum Installieren der Anwendung auf dem Remotecomputer. Finden Sie unter [– Anweisungen zur Einrichtung](#bkmk_setup)
 
 Wenn Sie versuchen, den Remotedebugger (msvsmon.exe) auf den Remotecomputer kopieren und ausführen, müssen Sie beachten, die die **Konfigurations-Assistent für Remote Debugger** (**rdbgwiz.exe**) wird nur installiert, wenn Sie Herunterladen der Tools, und Sie müssen zum Verwenden des Assistenten für die Konfiguration später, insbesondere, wenn den Remotedebugger als Dienst ausgeführt werden sollen. Weitere Informationen finden Sie unter [(Optional) Konfigurieren des Remotedebuggers als Dienst](#bkmk_configureService) unten.
 
@@ -78,27 +78,27 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
 ## <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme  
  Auf dem Remotecomputer muss eines der folgenden Betriebssysteme ausgeführt werden:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 oder 8.1  
+- Windows 8 oder 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 oder Windows Server 2012 R2  
+- Windows Server 2012 oder Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>Unterstützte Hardwarekonfigurationen  
   
--   1,6-GHz-Prozessor oder schneller  
+- 1,6-GHz-Prozessor oder schneller  
   
--   1 GB RAM (1,5 GB bei Ausführung auf einem virtuellen Computer)  
+- 1 GB RAM (1,5 GB bei Ausführung auf einem virtuellen Computer)  
   
--   1 GB verfügbarer Festplattenspeicher  
+- 1 GB verfügbarer Festplattenspeicher  
   
--   Festplatte mit 5.400 U/min  
+- Festplatte mit 5.400 U/min  
   
--   DirectX 9-kompatible Grafikkarte mit einer Auflösung von 1024 x 768 oder höher  
+- DirectX 9-kompatible Grafikkarte mit einer Auflösung von 1024 x 768 oder höher  
   
 ## <a name="network-configuration"></a>Netzwerkkonfiguration  
  Der Remotecomputer und der Visual Studio-Computer müssen über ein Netzwerk, eine Arbeitsgruppe oder eine Heimnetzgruppe verbunden bzw. mit einem Ethernetkabel direkt verbunden werden. Das Debugging über das Internet wird nicht unterstützt.  
@@ -147,7 +147,7 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
    > [!WARNING]
   >  Sie haben die Möglichkeit, die Remotetools im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus „Ohne Authentifizierung“ nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
 
-##  <a name="bkmk_configureService"></a> (Optional) Konfigurieren des Remotedebuggers als Dienst
+## <a name="bkmk_configureService"></a> (Optional) Konfigurieren des Remotedebuggers als Dienst
  Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remotedebugger als Administrator ausführen oder, soll es immer ausgeführt, den den Remotedebugger als Dienst ausführen.
   
  Wenn Sie den Remotedebugger als Dienst konfigurieren möchten, gehen Sie wie folgt vor.  
@@ -282,16 +282,16 @@ Sie finden den Remotedebugger (**msvsmon.exe**) auf einem Computer mit Visual St
   
  Weitere Informationen finden Sie in der Hilfe zum Remotedebugging (drücken Sie die **F1** im Remotedebugger-Fenster, oder klicken Sie auf **Hilfe / Verwendung**). Weitere Informationen finden Sie unter [.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013 (Änderungen beim Laden von Symbolen in der .NET-Remoteinstanz in Visual Studio 2012 und 2013)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
-##  <a name="bkmk_winstoreAzure"></a> Remotedebugging in Windows Store und Azure-apps  
+## <a name="bkmk_winstoreAzure"></a> Remotedebugging in Windows Store und Azure-apps  
  Informationen zum Remotedebuggen mit Windows Store-apps finden Sie unter [Debuggen und Testen von Windows Store-apps auf einem Remotegerät in Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Informationen zum Debuggen in Azure finden Sie in den folgenden Themen:  
   
--   [Debuggen eines Cloud-Diensts oder eines virtuellen Computers in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Debuggen eines Cloud-Diensts oder eines virtuellen Computers in Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Debuggen des .NET-Backends in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Debuggen des .NET-Backends in Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Einführung in das Remotedebuggen auf Azure-Websites ([Teil 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [Teil 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [Teil 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Einführung in das Remotedebuggen auf Azure-Websites ([Teil 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [Teil 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [Teil 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   

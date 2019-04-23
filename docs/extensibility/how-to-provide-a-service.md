@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078628"
 ---
 # <a name="how-to-provide-a-service"></a>Vorgehensweise: Geben Sie einen Dienst
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst bereitstellen zu können, muss eine VSPackage registrieren den Dienst mit Visual Studio, und fügen Sie den Dienst.
@@ -76,7 +76,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
 
 ### <a name="register-a-service"></a>Registrieren von Diensten
 
-1.  Um einen Dienst zu registrieren, fügen die <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für das VSPackage, das den Dienst bereitstellt. Im Folgenden ein Beispiel:
+1. Um einen Dienst zu registrieren, fügen die <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für das VSPackage, das den Dienst bereitstellt. Im Folgenden ein Beispiel:
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -93,7 +93,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
 
 ### <a name="add-a-service"></a>Hinzufügen eines Diensts
 
-1.  Klicken Sie in der VSPackage-Initialisierer fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist die Änderung an der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode:
+1. Klicken Sie in der VSPackage-Initialisierer fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist die Änderung an der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode:
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
     }
     ```
 
-2.  Implementieren Sie die Callback-Methode, die sollte erstellen und Zurückgeben des Diensts oder null, wenn sie nicht erstellt werden kann.
+2. Implementieren Sie die Callback-Methode, die sollte erstellen und Zurückgeben des Diensts oder null, wenn sie nicht erstellt werden kann.
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -119,7 +119,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
     > [!NOTE]
     >  Visual Studio kann eine Anforderung zur Bereitstellung eines Diensts ablehnen. Dies geschieht, wenn einem anderen VSPackage bereits den Dienst bereitstellt.
 
-3.  Jetzt können Sie den Dienst abrufen und seine Methoden verwenden. Das folgende Beispiel zeigt die Verwendung des Diensts im Initialisierer, aber Sie erhalten den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.
+3. Jetzt können Sie den Dienst abrufen und seine Methoden verwenden. Das folgende Beispiel zeigt die Verwendung des Diensts im Initialisierer, aber Sie erhalten den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.
 
     ```csharp
     protected override void Initialize()

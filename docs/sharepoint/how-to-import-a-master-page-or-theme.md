@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081905"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Masterseite oder eines Designs
   Sie können Seiten auf Ihrer SharePoint-Website ein einheitliches Erscheinungsbild verleihen durch Erstellen und Verwenden von Masterseiten und Designs. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht für diese Elemente stellen Vorlagen bereit, aber Sie können sie in SharePoint Designer erstellen und importieren Sie sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) auf der Microsoft-Website.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Zum Importieren einer Masterseite oder eines Designs
 
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen oder öffnen Sie ein SharePoint-Projekt.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]erstellen oder öffnen Sie ein SharePoint-Projekt.
 
      Weitere Informationen zum Erstellen eines SharePoint-Projekts, finden Sie unter [SharePoint-Projekt und Projekt Elementvorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
-3.  In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+3. In der **neues Element hinzufügen** Dialogfeld erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
 
-4.  Wählen Sie in der Liste der SharePoint-Vorlagen, die **Modul** Vorlage, und klicken Sie dann einen Namen für das Modul angeben.
+4. Wählen Sie in der Liste der SharePoint-Vorlagen, die **Modul** Vorlage, und klicken Sie dann einen Namen für das Modul angeben.
 
      Ein Modul enthält Dateien (z. B. "Masterseite" oder "Dateien") für die Bereitstellung an einem Speicherort, den Sie in SharePoint angeben.
 
-5.  Löschen Sie die Standard-Datei, mit dem Namen des Moduls *"Sample.txt"*.
+5. Löschen Sie die Standard-Datei, mit dem Namen des Moduls *"Sample.txt"*.
 
-6.  Wählen Sie den Knoten "Module" aus.
+6. Wählen Sie den Knoten "Module" aus.
 
-7.  Wählen Sie auf der Menüleiste **Projekt** > **vorhandenes Element hinzufügen**, und wählen Sie dann auf die Seite oder eines Designs Masterdatei.
+7. Wählen Sie auf der Menüleiste **Projekt** > **vorhandenes Element hinzufügen**, und wählen Sie dann auf die Seite oder eines Designs Masterdatei.
 
      Masterseitendateien haben eine Master-Erweiterung und Designdateien haben die Erweiterung thmx.
 
-8.  Wenn Sie eine Masterseite hinzugefügt haben, ändern die **Bereitstellungskonfliktlösung** auf **automatische** in die Eigenschaften des Moduls.
+8. Wenn Sie eine Masterseite hinzugefügt haben, ändern die **Bereitstellungskonfliktlösung** auf **automatische** in die Eigenschaften des Moduls.
 
     > [!NOTE]
     >  Fehler können auftreten, wenn der Name der Masterseite ist identisch mit den Namen einer vorhandenen master-Seite, die als Standardgestaltungsvorlage oder benutzerdefinierten Gestaltungsvorlage markiert ist. Informationen zum Beheben dieses Problems finden Sie unter [Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

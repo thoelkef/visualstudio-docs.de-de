@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081319"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Besondere sicherheitsüberlegungen für Office-Projektmappen
   Die von Microsoft .NET Framework und Microsoft Office bereitgestellten Sicherheitsfeatures können in Office-Projektmappen zum Schutz vor möglichen Sicherheitsbedrohungen beitragen. In diesem Thema werden einige dieser Bedrohungen erläutert und Empfehlungen bereitgestellt, wie sich vor diesen Bedrohungen schützen lässt. Es beinhaltet auch Informationen dazu, wie sich Microsoft Office-Sicherheitseinstellungen auf Office-Projektmappen auswirken.
@@ -39,13 +39,13 @@ ms.locfileid: "56629078"
 
 ### <a name="recommendations"></a>Empfehlungen
 
--   Überprüfen Sie immer Eingaben und Daten, egal, ob sie vom Benutzer, aus dem Dokument, aus einer Datenbank, von einem Webdienst oder aus einer anderen Quelle stammen.
+- Überprüfen Sie immer Eingaben und Daten, egal, ob sie vom Benutzer, aus dem Dokument, aus einer Datenbank, von einem Webdienst oder aus einer anderen Quelle stammen.
 
--   Achten Sie darauf, dass Sie bestimmte Arten von Funktionen nicht offen zugänglich machen, beispielsweise das Abrufen privilegierter Daten im Namen des Benutzers und Ablegen dieser Daten auf einem ungeschützten Arbeitsblatt.
+- Achten Sie darauf, dass Sie bestimmte Arten von Funktionen nicht offen zugänglich machen, beispielsweise das Abrufen privilegierter Daten im Namen des Benutzers und Ablegen dieser Daten auf einem ungeschützten Arbeitsblatt.
 
--   Je nach Typ der Anwendung ist es möglicherweise sinnvoll, vor dem Ausführen von irgendwelchem Code zu überprüfen, ob das Originaldokument ausgeführt wird. Vergewissern Sie sich sich beispielsweise, dass der Code aus einem Dokument ausgeführt wird, das in einem bekannten, sicheren Speicherort gespeichert ist.
+- Je nach Typ der Anwendung ist es möglicherweise sinnvoll, vor dem Ausführen von irgendwelchem Code zu überprüfen, ob das Originaldokument ausgeführt wird. Vergewissern Sie sich sich beispielsweise, dass der Code aus einem Dokument ausgeführt wird, das in einem bekannten, sicheren Speicherort gespeichert ist.
 
--   Eventuell ist es sinnvoll, beim Öffnen des Dokuments eine Warnung anzuzeigen, wenn Ihre Anwendung privilegierte Aktionen ausführt. Sie können zum Beispiel einen Begrüßungsbildschirm oder ein Startdialogfeld erstellen, in dem mitgeteilt wird, dass die Anwendung auf persönliche Daten zugreift, und dem Benutzer die Entscheidung zum Fortsetzen oder Abbrechen überlassen. Wenn ein Endbenutzer eine solche Warnung aus einem scheinbar unverfänglichen Dokument erhält, kann er die Anwendung beenden, bevor es irgendeine Beeinträchtigung gibt.
+- Eventuell ist es sinnvoll, beim Öffnen des Dokuments eine Warnung anzuzeigen, wenn Ihre Anwendung privilegierte Aktionen ausführt. Sie können zum Beispiel einen Begrüßungsbildschirm oder ein Startdialogfeld erstellen, in dem mitgeteilt wird, dass die Anwendung auf persönliche Daten zugreift, und dem Benutzer die Entscheidung zum Fortsetzen oder Abbrechen überlassen. Wenn ein Endbenutzer eine solche Warnung aus einem scheinbar unverfänglichen Dokument erhält, kann er die Anwendung beenden, bevor es irgendeine Beeinträchtigung gibt.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Code wird von der Outlook-Objektmodellschutz blockiert.
  In Microsoft Office kann verhindert werden, dass Code bestimmte Eigenschaften, Methoden und Objekte im Objektmodell verwendet. Durch Einschränken des Zugriffs auf diese Objekte, können Outlook, um zu verhindern, dass e-Mail-Würmer und-Viren das Objektmodell für böswillige Zwecke verwenden. Dieses Sicherheitsfeature wird als Outlook-Objektmodellschutz bezeichnet. Wenn ein VSTO-Add-in versucht, eine beschränkte Eigenschaft oder Methode verwenden, während der Objektmodellschutz aktiviert ist, zeigt Outlook eine sicherheitswarnung angezeigt, die mit der Benutzer den Vorgang zu beenden oder ermöglicht es dem Benutzer das Gewähren von Zugriff auf die Eigenschaft oder Methode für einen begrenzten Zeitraum t IME. Wenn der Benutzer den Vorgang beendet, lösen Outlook-VSTO-Add-Ins, die als Office-Projektmappen in Visual Studio erstellt wurden, eine <xref:System.Runtime.InteropServices.COMException>aus.
@@ -103,17 +103,17 @@ ms.locfileid: "56629078"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>So deaktivieren Sie VSTO-Add-Ins in Microsoft Office 2010- und Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] -Anwendungen
 
-1.  Wählen Sie die Registerkarte **Datei** aus.
+1. Wählen Sie die Registerkarte **Datei** aus.
 
-2.  Wählen Sie die *ApplicationName* **Optionen** Schaltfläche.
+2. Wählen Sie die *ApplicationName* **Optionen** Schaltfläche.
 
-3.  Wählen Sie im Kategorienbereich den Eintrag **Trust Center**aus.
+3. Wählen Sie im Kategorienbereich den Eintrag **Trust Center**aus.
 
-4.  Wählen Sie im Detailbereich die Option **Einstellungen für das Trust Center**aus.
+4. Wählen Sie im Detailbereich die Option **Einstellungen für das Trust Center**aus.
 
-5.  Wählen Sie im Kategorienbereich den Eintrag **Add-Ins**aus.
+5. Wählen Sie im Kategorienbereich den Eintrag **Add-Ins**aus.
 
-6.  Wählen Sie im Detailbereich die Option **Anwendungs-Add-Ins müssen von einem vertrauenswürdigen Herausgeber signiert sein** oder **Alle Anwendungs-Add-Ins deaktivieren**aus.
+6. Wählen Sie im Detailbereich die Option **Anwendungs-Add-Ins müssen von einem vertrauenswürdigen Herausgeber signiert sein** oder **Alle Anwendungs-Add-Ins deaktivieren**aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)

@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084571"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Behandeln von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:
 
--   [Erstellen, aktualisieren und Öffnen von Projekten](#creating)
+- [Erstellen, aktualisieren und Öffnen von Projekten](#creating)
 
--   [Verwenden Sie die Designer](#designers)
+- [Verwenden Sie die Designer](#designers)
 
--   [Schreiben von Code](#code)
+- [Schreiben von Code](#code)
 
--   [Erstellen von Projekten](#building)
+- [Erstellen von Projekten](#building)
 
--   [Debuggen von Projekten](#debugging)
+- [Debuggen von Projekten](#debugging)
 
-##  <a name="creating"></a> Erstellen, aktualisieren und Öffnen von Projekten
+## <a name="creating"></a> Erstellen, aktualisieren und Öffnen von Projekten
  Die folgenden Fehler können auftreten, wenn Sie Office-Projekte erstellen oder öffnen.
 
 ### <a name="the-project-cannot-be-created"></a>Das Projekt kann nicht erstellt werden
@@ -60,13 +60,13 @@ ms.locfileid: "56610909"
 
  Diese Fehler können auftreten, wenn Sie versuchen, ein Projekt zu erstellen, das auf einer Arbeitsmappe basiert, deren persönliche Informationen mithilfe der Dokumentprüfung entfernt wurden. Führen Sie vor dem Erstellen des Projekts die folgenden Schritte aus, um diesen Fehler zu vermeiden.
 
-1.  Öffnen Sie die Arbeitsmappe in Excel.
+1. Öffnen Sie die Arbeitsmappe in Excel.
 
-2.  Öffnen Sie in Excel das Trust Center.
+2. Öffnen Sie in Excel das Trust Center.
 
-3.  Auf der **Datenschutzoptionen** Registerkarte Deaktivieren der **Speichern persönliche Daten aus Dateieigenschaften entfernen** Kontrollkästchen.
+3. Auf der **Datenschutzoptionen** Registerkarte Deaktivieren der **Speichern persönliche Daten aus Dateieigenschaften entfernen** Kontrollkästchen.
 
-4.  Speichern Sie die Arbeitsmappe, und schließen Sie Excel.
+4. Speichern Sie die Arbeitsmappe, und schließen Sie Excel.
 
 ### <a name="cannot-open-a-project-after-migration"></a>Ein Projekt kann nicht nach der Migration nicht geöffnet werden.
  Nachdem eine Office-Projektmappe zu Microsoft Office 2010 migriert wurde, kann das Projekt nicht auf einem Entwicklungscomputer geöffnet werden, wenn nur 2007 Microsoft Office System installiert ist. Die folgenden Fehler können angezeigt werden.
@@ -84,17 +84,17 @@ ms.locfileid: "56610909"
 
  Nachdem Sie das Projekt aktualisiert haben, können Sie die Visual Studio 2005-Tools für Office Second Edition-Laufzeit vom Entwicklungscomputer deinstallieren, wenn sie nicht von anderen Office-Projektmappen verwendet wird.
 
-##  <a name="designers"></a> Verwenden Sie die Designer
+## <a name="designers"></a> Verwenden Sie die Designer
  Die folgenden Fehler können auftreten, wenn Sie in Projekten auf Dokumentebene mit dem Dokument-, Arbeitsmappen- oder Arbeitsblatt-Designer arbeiten.
 
 ### <a name="designer-failed-to-load-correctly"></a>Designer wurde nicht ordnungsgemäß geladen.
  In den folgenden Fällen kann Visual Studio den Designer nicht öffnen:
 
--   Excel oder Word ist bereits geöffnet und zeigt ein modales Dialogfeld an. Um den Designer zu öffnen, prüfen Sie, ob in Excel oder Word ein modales Dialogfeld geöffnet ist, und schließen Sie alle geöffneten modalen Dialogfelder. Wenn keine modalen Dialogfelder geöffnet sind, sind möglicherweise andere Maßnahmen erforderlich, damit Excel bzw. Word reagiert.
+- Excel oder Word ist bereits geöffnet und zeigt ein modales Dialogfeld an. Um den Designer zu öffnen, prüfen Sie, ob in Excel oder Word ein modales Dialogfeld geöffnet ist, und schließen Sie alle geöffneten modalen Dialogfelder. Wenn keine modalen Dialogfelder geöffnet sind, sind möglicherweise andere Maßnahmen erforderlich, damit Excel bzw. Word reagiert.
 
--   Das Projekt wird gerade debuggt. Beenden Sie den Debugvorgang, oder schließen Sie ihn ab, um den Designer zu öffnen.
+- Das Projekt wird gerade debuggt. Beenden Sie den Debugvorgang, oder schließen Sie ihn ab, um den Designer zu öffnen.
 
--   Ein auf dem Entwicklungscomputer installiertes Excel-VSTO-Add-In zeigt ein Dialogfeld an, wenn Excel gestartet wird. Um ein Excel-Projekt auf Dokumentebene zu erstellen, müssen Sie zuerst das VSTO-Add-In deaktivieren.
+- Ein auf dem Entwicklungscomputer installiertes Excel-VSTO-Add-In zeigt ein Dialogfeld an, wenn Excel gestartet wird. Um ein Excel-Projekt auf Dokumentebene zu erstellen, müssen Sie zuerst das VSTO-Add-In deaktivieren.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Steuerelemente werden auf das Dokument oder Arbeitsblatt als schwarze Rechtecke angezeigt.
  Wenn Sie Steuerelemente in einem Dokument oder Arbeitsblatt gruppieren, erkennt Visual Studio die Steuerelemente nicht mehr. Gruppierte Steuerelemente können nicht zugegriffen werden, der **Eigenschaften** Fenster, und sie, die auf das Dokument oder Arbeitsblatt als schwarze Rechtecke angezeigt werden. Sie müssen die Gruppierung der Steuerelemente aufheben, um ihre Funktionalität wiederherzustellen.
@@ -105,10 +105,10 @@ ms.locfileid: "56610909"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Befehl Einfügen Art ist "nothing" in Visual Studio-designer
  Bei Excel- oder Word in Visual Studio-Designer geöffnet ist, durch Klicken auf die **ClipArt** auf auf die Schaltfläche der **Abbildungen** Registerkarte im Menüband wird nicht geöffnet werden. die **ClipArt-Objekt** im Aufgabenbereich. Um ClipArt-Objekt hinzuzufügen, müssen Sie öffnen die Kopie der Arbeitsmappe oder das Dokument, das im Hauptprojektordner befindet (nicht auf die Kopie, die in der *\bin* Ordner) außerhalb von Visual Studio, fügen Sie das ClipArt-Objekt hinzu, und speichern Sie die Arbeitsmappe oder das Dokument.
 
-##  <a name="code"></a> Schreiben von code
+## <a name="code"></a> Schreiben von code
  Die folgenden Fehler können auftreten, wenn Sie Code in Office-Projekten schreiben.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Einige Ereignisse von Office-Objekten werden bei Verwendung von c# nicht zugegriffen
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Einige Ereignisse von Office-Objekte sind nicht zugegriffen werden kann, wenn mithilfe von C\#
  In einigen Fällen kann ein Compilerfehler wie der folgende angezeigt werden, wenn Sie versuchen, auf ein bestimmtes Ereignis einer Instanz eines primären Interopassemblytyps (PIA) für Office in einem Visual C#-Projekt zuzugreifen.
 
  "Mehrdeutigkeit zwischen 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' und 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Auch wenn Sie den Word- oder Excel-Namespace importiert haben und den Zugriff auf alle darin enthaltenen Klassen haben, müssen Sie alle Typen mit Word oder Excel, um Mehrdeutigkeit beim Namespace zu entfernen vollständig qualifizieren.
 
-##  <a name="building"></a> Erstellen von Projekten
+## <a name="building"></a> Erstellen von Projekten
  Beim Erstellen von Office-Projekten können die folgenden Fehler auftreten.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Ein Projekt auf Dokumentebene, die für ein Dokument mit eingeschränkten Berechtigungen basiert, kann nicht erstellt werden.
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Compilerfehler nach dem Löschen eines NamedRange-Steuerelements
  Wenn Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement aus einem Arbeitsblatt löschen, das nicht das aktive Arbeitsblatt im Designer ist, wird der automatisch generierte Code möglicherweise nicht aus dem Projekt entfernt, und es können Compilerfehler auftreten. Um sicherzustellen, dass der Code entfernt wird, müssen Sie vor dem Löschen des Steuerelements immer das Arbeitsblatt auswählen, das das <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement enthält, um dieses als aktives Arbeitsblatt festzulegen. Wenn automatisch generierter Code beim Löschen des Steuerelements nicht gelöscht wird, können Sie den Designer anweisen, den Code zu löschen. Aktivieren Sie dazu das Arbeitsblatt, und nehmen Sie eine Änderung vor, sodass das Arbeitsblatt als geändert markiert wird. Beim Neuerstellen des Projekts wird der Code entfernt.
 
-##  <a name="debugging"></a> Debuggen von Projekten
+## <a name="debugging"></a> Debuggen von Projekten
  Beim Debuggen von Office-Projekten können die folgenden Fehler auftreten.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Aufforderung zum Deinstallieren, das angezeigt wird, wenn Sie veröffentlichen und installieren Sie eine Lösung auf dem Entwicklungscomputer

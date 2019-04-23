@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0c170beb6bfd8a74d61e6de2398a7478567c893
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104563"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
 
@@ -296,6 +296,7 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. Mit der rechten Maustaste auf die JSON-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um den "Content" und "Include in VSIX-Datei" Eigenschaft auf "true".
 
 3. Implementieren von ConfigurationSections und Zurückgeben der Liste der Präfixe für die Einstellungen, die in der JSON-Datei definiert (In Visual Studio Code, dies würde zugeordnet, der Name des Konfigurationsabschnitts in "Package.JSON"):
@@ -318,6 +319,7 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
     ```
 
     Beispiel:
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

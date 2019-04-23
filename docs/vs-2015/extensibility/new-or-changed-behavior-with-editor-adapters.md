@@ -10,12 +10,12 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073617"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Neues oder Geändertes Verhalten mit Editor-Adaptern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,32 +85,32 @@ Wenn Sie planen, die Editor-Adapter (oder Shims) verwenden, anstatt die neue API
   
  Die Methoden, die betroffenen gehören (die Liste ist nicht vollständig):  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>Gliedern  
- Clients <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> sehen nur die Gliederungsbereiche, die hinzugefügt wurden, mithilfe von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>oder <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Sie können ad-hoc-Regionen werden nicht angezeigt, da sie nicht über die Editor-Adapter hinzugefügt werden. Ebenso werden diesen Clients nicht angezeigt Gliedern von Bereichen von Sprachen (einschließlich C# und C++), die der neue EditorCode statt in die Editor-Adapter verwenden, hinzugefügt.  
+ Clients <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> sehen nur die Gliederungsbereiche, die hinzugefügt wurden, mithilfe von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>oder <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Sie können ad-hoc-Regionen werden nicht angezeigt, da sie nicht über die Editor-Adapter hinzugefügt werden. Ebenso werden diesen Clients nicht angezeigt Gliedern von Bereichen von Sprachen (einschließlich c# und C++), die der neue EditorCode statt in die Editor-Adapter verwenden, hinzugefügt.  
   
 #### <a name="line-heights"></a>Höhe der Zeile  
  Im neuen Editor haben Textzeilen unterschiedlicher Höhe, je nach den Schriftgrad und mögliche Zeilentransformationen, die die Linie relativ zu anderen Positionen verschoben werden können. Die Zeilenhöhe von Methoden zurückgegeben werden beispielsweise <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A> ist die Höhe einer Zeile mit der Standardschriftgrad, die keine Zeilentransformationen angewendet. Diese Höhe kann oder die tatsächliche Höhe einer Zeile in der Ansicht u. u. nicht wiedergegeben.  
@@ -120,7 +120,7 @@ Wenn Sie planen, die Editor-Adapter (oder Shims) verwenden, anstatt die neue API
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Methode schlägt fehl, wenn Sie in einer Klasse übergeben, die nicht entweder implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> oder <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Benutzerdefinierte Win32-Ownerdrawn-Popups werden nicht mehr unterstützt.  
+- Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Methode schlägt fehl, wenn Sie in einer Klasse übergeben, die nicht entweder implementiert <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> oder <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Benutzerdefinierte Win32-Ownerdrawn-Popups werden nicht mehr unterstützt.  
   
 #### <a name="smarttags"></a>SmartTags  
  Es gibt keine Adapter-Unterstützung für Smarttags, die mit dem Sie erstellt <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> Schnittstellen.  

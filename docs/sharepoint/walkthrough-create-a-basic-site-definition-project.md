@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 078fcc4d30613e4fe19b493150ce4570196b73ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083373"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts definition
   In dieser exemplarischen Vorgehensweise veranschaulicht eine grundlegende Definition zu erstellen, die ein visuelles Webpart mit Steuerelementen darauf enthält. Aus Gründen der Klarheit hat das visuelle Webpart, das Sie erstellen nur wenige Steuerelemente. Allerdings können Sie komplexere Websitedefinitionen für SharePoint erstellen, die weitere Funktionen enthalten.
@@ -38,9 +38,9 @@ ms.locfileid: "56608876"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   Unterstützte Editionen von Microsoft Windows und SharePoint. Weitere Informationen finden Sie unter Anforderungen für SharePoint-Lösungen entwickeln.
+- Unterstützte Editionen von Microsoft Windows und SharePoint. Weitere Informationen finden Sie unter Anforderungen für SharePoint-Lösungen entwickeln.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Erstellen einer Sitedefinition
  Erstellen Sie zunächst das Websiteprojekt-Definition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -80,19 +80,19 @@ ms.locfileid: "56608876"
 
 #### <a name="to-create-a-visual-web-part"></a>Erstellen Sie ein visuelles Webpart
 
-1.  In **Projektmappen-Explorer**, wählen Sie die **alle Dateien anzeigen** Schaltfläche.
+1. In **Projektmappen-Explorer**, wählen Sie die **alle Dateien anzeigen** Schaltfläche.
 
-2.  Wählen Sie die **SiteDefinition1** Projektknoten, und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.
+2. Wählen Sie die **SiteDefinition1** Projektknoten, und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-3.  Erweitern Sie die **Visual C#-** Knoten oder die **Visual Basic** Knoten erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+3. Erweitern Sie die **Visual C#-** Knoten oder die **Visual Basic** Knoten erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
 
-4.  Wählen Sie in der Liste der Vorlagen, die **visuelles Webpart** Vorlage, behalten die standardmäßige Namen VisualWebPart1, und wählen Sie dann die **hinzufügen** Schaltfläche.
+4. Wählen Sie in der Liste der Vorlagen, die **visuelles Webpart** Vorlage, behalten die standardmäßige Namen VisualWebPart1, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
      Die *VisualWebPart1.ascx* Datei wird geöffnet.
 
-5.  Am unteren Rand *VisualWebPart1.ascx*, fügen Sie das folgende Markup zum Hinzufügen von drei Steuerelementen zum Formular hinzu: ein Textfeld, eine Schaltfläche und einer Bezeichnung:
+5. Am unteren Rand *VisualWebPart1.ascx*, fügen Sie das folgende Markup zum Hinzufügen von drei Steuerelementen zum Formular hinzu: ein Textfeld, eine Schaltfläche und einer Bezeichnung:
 
     ```aspx-csharp
     <table>
@@ -110,7 +110,7 @@ ms.locfileid: "56608876"
     </table>
     ```
 
-6.  Unter *VisualWebPart1.ascx*öffnen die *VisualWebPart1.ascx.cs* Datei (für [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) oder *VisualWebPart1.ascx.vb* (für [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), und klicken Sie dann hinzufügen. Der folgende Code:
+6. Unter *VisualWebPart1.ascx*öffnen die *VisualWebPart1.ascx.cs* Datei (für [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) oder *VisualWebPart1.ascx.vb* (für [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), und klicken Sie dann hinzufügen. Der folgende Code:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -122,7 +122,7 @@ ms.locfileid: "56608876"
 
 #### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Die Standard-ASPX-Seite ein visuelles Webpart hinzu
 
-1.  Öffnen Sie die Seite "default.aspx", und fügen Sie dann die folgende Zeile unter der `WebPartPages` Tag:
+1. Öffnen Sie die Seite "default.aspx", und fügen Sie dann die folgende Zeile unter der `WebPartPages` Tag:
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
@@ -130,7 +130,7 @@ ms.locfileid: "56608876"
 
      Diese Zeile ordnet den Namen MyWebPartControls mit Webparts und den Code an. Die *Namespace* Parameter entspricht den Namespace, der verwendet wird die *VisualWebPart1.ascx* Codedatei.
 
-2.  Nach der `</asp:Content>` Element ersetzen den gesamten `ContentPlaceHolderId="PlaceHolderMain"` Abschnitt und seinen Inhalt mit dem folgenden Code:
+2. Nach der `</asp:Content>` Element ersetzen den gesamten `ContentPlaceHolderId="PlaceHolderMain"` Abschnitt und seinen Inhalt mit dem folgenden Code:
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -140,16 +140,16 @@ ms.locfileid: "56608876"
 
      Dieser Code erstellt einen Verweis auf das visuelle Webpart, das Sie zuvor erstellt haben.
 
-3.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **SiteDefinition1** Knoten, und wählen Sie dann **als Startelement festlegen**.
+3. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **SiteDefinition1** Knoten, und wählen Sie dann **als Startelement festlegen**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Bereitstellen Sie und führen Sie der Sitedefinition aus
  Als Nächstes bereitstellen Sie das Projekt für SharePoint, und führen Sie das Projekt.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>So stellen Sie die Websitedefinition bereit und führen sie aus
 
--   Wählen Sie auf der Menüleiste **erstellen** > **bereitstellen "TestSiteDef" ein**.
+- Wählen Sie auf der Menüleiste **erstellen** > **bereitstellen "TestSiteDef" ein**.
 
--   Drücken Sie die Taste **F5**.
+- Drücken Sie die Taste **F5**.
 
      Visual Studio wird der Code kompiliert, seine Funktionen hinzugefügt, fasst alle Dateien in einer SharePoint-Lösungsdatei (WSP) und die WSP-Datei auf SharePoint-Server bereitgestellt. SharePoint klicken Sie dann die Dateien installiert und aktiviert die Funktionen.
 
@@ -158,17 +158,17 @@ ms.locfileid: "56608876"
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>Zum Erstellen einer Website unter Verwendung der Websitedefinition
 
-1.  Auf der SharePoint-Website die neue SharePoint-Website-Seite wird angezeigt.
+1. Auf der SharePoint-Website die neue SharePoint-Website-Seite wird angezeigt.
 
-2.  In der **Titel und Beschreibung** Geben Sie im Abschnitt **meine neue Website** für den Titel und eine Beschreibung des Standorts.
+2. In der **Titel und Beschreibung** Geben Sie im Abschnitt **meine neue Website** für den Titel und eine Beschreibung des Standorts.
 
-3.  In der **Websiteadresse** Geben Sie im Abschnitt **MeineNeueSite** in die **URL-Namen** Feld.
+3. In der **Websiteadresse** Geben Sie im Abschnitt **MeineNeueSite** in die **URL-Namen** Feld.
 
-4.  In der **Vorlage** Abschnitt der **SharePoint-Anpassungen** Registerkarte.
+4. In der **Vorlage** Abschnitt der **SharePoint-Anpassungen** Registerkarte.
 
-5.  In der **wählen Sie eine Vorlage** wählen **SiteDefinition1**.
+5. In der **wählen Sie eine Vorlage** wählen **SiteDefinition1**.
 
-6.  Behalten Sie die anderen Einstellungen die Standardwerte bei, und wählen Sie dann die **erstellen** Schaltfläche.
+6. Behalten Sie die anderen Einstellungen die Standardwerte bei, und wählen Sie dann die **erstellen** Schaltfläche.
 
      Die neue Website wird angezeigt.
 
@@ -177,7 +177,7 @@ ms.locfileid: "56608876"
 
 #### <a name="to-test-the-new-site"></a>So testen Sie den neuen Standort
 
--   Geben Sie Text, auf die Standard-ASPX-Seite, und wählen Sie dann die **Änderung Bezeichnungstext** Schaltfläche neben dem Textfeld.
+- Geben Sie Text, auf die Standard-ASPX-Seite, und wählen Sie dann die **Änderung Bezeichnungstext** Schaltfläche neben dem Textfeld.
 
      Der Text wird in der Bezeichnung auf der rechten Seite der Schaltfläche angezeigt.
 

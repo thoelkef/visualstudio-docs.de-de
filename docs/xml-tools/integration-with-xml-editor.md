@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106322"
 ---
-# <a name="integration-with-xml-editor"></a>Integration in XML-editor
+# <a name="integration-with-xml-editor"></a>Integration in den XML-Editor
 
 Der XML-Schema-Designer ist in der XML-Editor integriert. Wenn Sie eine XSD-Datei im XML-Editor ändern, die Änderung der [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Wenn Sie haben die [Diagrammansicht](../xml-tools/graph-view.md) oder [Inhaltsmodellansicht](../xml-tools/content-model-view.md) geöffnet ist, die Änderung dort ebenfalls wiedergegeben vorhanden. Sie können zwischen der XML-Schema-Designer und XML-Editor navigieren, es gibt folgende Möglichkeiten:
 
--   Klicken Sie in der XML-Editor, mit der rechten Maustaste in eines Knotens, und wählen **im XML-Schema-Explorer anzeigen**.
+- Klicken Sie in der XML-Editor, mit der rechten Maustaste in eines Knotens, und wählen **im XML-Schema-Explorer anzeigen**.
 
--   In der Diagrammansicht und der **XML-Schema-Explorer**, doppelklicken Sie auf einen Knoten oder mit der rechten Maustaste in eines Knotens, und wählen Sie **Ansichtscode**. Klicken Sie in der Inhaltsmodellansicht mit der rechten Maustaste in eines Knotens, und wählen **Ansichtscode**.
+- In der Diagrammansicht und der **XML-Schema-Explorer**, doppelklicken Sie auf einen Knoten oder mit der rechten Maustaste in eines Knotens, und wählen Sie **Ansichtscode**. Klicken Sie in der Inhaltsmodellansicht mit der rechten Maustaste in eines Knotens, und wählen **Ansichtscode**.
 
 Der folgende Screenshot zeigt ein XML-Schema in geöffnet der **XML-Schema-Explorer**. Die **XML-Schema-Explorer** zeigt das Schemaset in einer Strukturansicht an. Der XML-Editor zeigt die Textansicht des Knotens, der derzeit aktiv ist die **XML-Schema-Explorer**.
 

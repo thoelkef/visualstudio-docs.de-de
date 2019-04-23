@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Speichern von Daten mithilfe einer Transaktion'
+title: 'Vorgehensweise: Speichern von Daten mithilfe von Transaktionen'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080994"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Vorgehensweise: Speichern von Daten mithilfe einer Transaktion
+# <a name="how-to-save-data-by-using-a-transaction"></a>Vorgehensweise: Speichern von Daten mithilfe von Transaktionen
 
 Speichern Sie Daten in einer Transaktion mithilfe der <xref:System.Transactions> Namespace. Verwenden der <xref:System.Transactions.TransactionScope> Objekt, das an einer Transaktion teilnehmen, die automatisch für Sie verwaltet wird.
 
@@ -37,15 +37,15 @@ Um ein Rollback die Transaktion, eine Ausnahme vor dem Aufrufen der <xref:System
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Einen Verweis auf die "System.Transactions.dll" hinzufügen
 
-1.  Auf der **Projekt** , wählen Sie im Menü **Verweis hinzufügen**.
+1. Auf der **Projekt** , wählen Sie im Menü **Verweis hinzufügen**.
 
-2.  Auf der **.NET** Registerkarte (**SQL Server** Registerkarte für SQL Server-Projekte), wählen **System.Transactions**, und wählen Sie dann **OK**.
+2. Auf der **.NET** Registerkarte (**SQL Server** Registerkarte für SQL Server-Projekte), wählen **System.Transactions**, und wählen Sie dann **OK**.
 
      Ein Verweis auf *"System.Transactions.dll"* wird dem Projekt hinzugefügt.
 
 ## <a name="to-save-data-in-a-transaction"></a>Zum Speichern von Daten in einer Transaktion
 
--   Fügen Sie Code zum Speichern von Daten innerhalb des using-Anweisung, die Transaktion enthält. Der folgende Code zeigt das Erstellen und Instanziieren einer <xref:System.Transactions.TransactionScope> Objekts in einer using Anweisung:
+- Fügen Sie Code zum Speichern von Daten innerhalb des using-Anweisung, die Transaktion enthält. Der folgende Code zeigt das Erstellen und Instanziieren einer <xref:System.Transactions.TransactionScope> Objekts in einer using Anweisung:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ Um ein Rollback die Transaktion, eine Ausnahme vor dem Aufrufen der <xref:System
 ## <a name="see-also"></a>Siehe auch
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-- [Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion](../data-tools/save-data-in-a-transaction.md)
+- [Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion](../data-tools/save-data-in-a-transaction.md)

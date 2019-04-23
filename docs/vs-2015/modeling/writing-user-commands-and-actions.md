@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b07a311123299c0df76834a4b07d3a39f79f0ce2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11d8e3c4ad6c17b000dbf076928c4b1b2c584973
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076262"
 ---
 # <a name="writing-user-commands-and-actions"></a>Schreiben von Benutzerbefehlen und -aktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Bef
   
 ## <a name="user-actions"></a>Benutzeraktionen  
   
--   [Vorgehensweise: Ändern Sie einen Standard Menübefehl](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – Sie können anpassen, das Verhalten von Befehlen, wie z. B. kopieren und drucken.  
+- [Vorgehensweise: Ändern Sie einen Standard Menübefehl](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – Sie können anpassen, das Verhalten von Befehlen, wie z. B. kopieren und drucken.  
   
--   [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – erstellen Sie Ihre eigenen Befehle, die Ihre Model oder externe Ressourcen aktualisiert werden können.  
+- [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – erstellen Sie Ihre eigenen Befehle, die Ihre Model oder externe Ressourcen aktualisiert werden können.  
   
--   [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) – kann der Benutzer Elemente aus einem Diagramm in ein anderes zu verschieben, einschließlich UML-Diagramme. Sie können Verweise auf ein Modell in einem anderen speichern.  
+- [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md) – kann der Benutzer Elemente aus einem Diagramm in ein anderes zu verschieben, einschließlich UML-Diagramme. Sie können Verweise auf ein Modell in einem anderen speichern.  
   
--   [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) : zulassen, dass Ihre Benutzer über ein Element in ein anderes Element klicken Sie auf, die darauf verweist.  
+- [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) : zulassen, dass Ihre Benutzer über ein Element in ein anderes Element klicken Sie auf, die darauf verweist.  
   
--   [Vorgehensweise: Programmieren von Kopier- und Einfügeverhalten - umleiten](../misc/how-to-program-copy-and-paste-behavior-redirect.md) – Verwendung von ElementOperations.  
+- [Vorgehensweise: Programmieren von Kopier- und Einfügeverhalten - umleiten](../misc/how-to-program-copy-and-paste-behavior-redirect.md) – Verwendung von ElementOperations.  
   
--   [Vorgehensweise: Zugreifen auf die aktuelle Auswahl und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)  
+- [Vorgehensweise: Zugreifen auf die aktuelle Auswahl und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   
--   [Anpassen von Elementtools](../modeling/customizing-element-tools.md)  
+- [Anpassen von Elementtools](../modeling/customizing-element-tools.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)

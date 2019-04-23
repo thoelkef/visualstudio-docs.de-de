@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 01989e9e9d6b186e520f48d45202687d690410fc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115639"
 ---
 # <a name="create-an-android-native-activity-app"></a>Erstellen einer Android Native Activity-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
  [Erstellen eines neuen Native Activity-Projekts](#Create)   
  [Generieren und Ausführen der standardmäßigen Android Native Activity-App](#BuildHello)  
   
-##  <a name="req"></a> Anforderungen  
+## <a name="req"></a> Anforderungen  
  Vor der Erstellung einer Android Native Activity-App müssen Sie sicherstellen, dass Sie alle Systemvoraussetzungen erfüllen und die Option "Visual C++ Mobile-Entwicklung" in Visual Studio 2015 installiert haben. Weitere Informationen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Stellen Sie sicher, dass die erforderlichen Drittanbietertools und -SDKs in der Installation enthalten sind und dass der Microsoft Visual Studio-Emulator für Android installiert ist.  
   
-##  <a name="Create"></a> Erstellen eines neuen Native Activity-Projekts  
+## <a name="Create"></a> Erstellen eines neuen Native Activity-Projekts  
  In diesem Lernprogramm erstellen Sie zunächst ein neues Android Native Activity-Projekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus.  
   
 #### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt  
@@ -49,30 +49,30 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
    Die neue Android Native Activity-App-Projektmappe enthält zwei Projekte:  
   
--   **MyAndroidApp.NativeActivity** enthält die Verweise und den Verbindungscode, damit Ihre App als eine systemeigene Aktivität auf Android ausgeführt werden kann. Die Implementierung der Einstiegspunkte aus dem Verbindungscode befindet sich in "main.cpp". Vorkompilierte Header befinden sich in "pch.h". Das Native Activity-App-Projekt wird in eine freigegebene Bibliotheksdatei (SO) kompiliert, die durch das Paketprojekt ausgewählt wird.  
+- **MyAndroidApp.NativeActivity** enthält die Verweise und den Verbindungscode, damit Ihre App als eine systemeigene Aktivität auf Android ausgeführt werden kann. Die Implementierung der Einstiegspunkte aus dem Verbindungscode befindet sich in "main.cpp". Vorkompilierte Header befinden sich in "pch.h". Das Native Activity-App-Projekt wird in eine freigegebene Bibliotheksdatei (SO) kompiliert, die durch das Paketprojekt ausgewählt wird.  
   
--   **MyAndroidApp.Packaging** erstellt die APK-Datei für die Entwicklung auf einem Android-Gerät oder -Emulator. Dieses enthält die Ressourcen und die Datei "AndroidManifest.xml", wo Sie Manifesteigenschaften festlegen. Es enthält zudem die Datei "build.xml", die den Ant-Buildprozess steuert. Es ist standardmäßig als Startprojekt festgelegt, sodass es bereitgestellt und direkt in Visual Studio ausgeführt werden kann.  
+- **MyAndroidApp.Packaging** erstellt die APK-Datei für die Entwicklung auf einem Android-Gerät oder -Emulator. Dieses enthält die Ressourcen und die Datei "AndroidManifest.xml", wo Sie Manifesteigenschaften festlegen. Es enthält zudem die Datei "build.xml", die den Ant-Buildprozess steuert. Es ist standardmäßig als Startprojekt festgelegt, sodass es bereitgestellt und direkt in Visual Studio ausgeführt werden kann.  
   
-##  <a name="BuildHello"></a> Generieren und Ausführen der standardmäßigen Android Native Activity-App  
+## <a name="BuildHello"></a> Generieren und Ausführen der standardmäßigen Android Native Activity-App  
  Erstellen und führen Sie die App aus, die durch die Vorlage generiert wurde, um Ihre Installation und Einrichtung zu überprüfen. Führen Sie die App in diesem ersten Test unter einem der Geräteprofile aus, die vom Visual Studio-Emulator für Android installiert werden. Wenn Sie Ihre App auf einem anderen Ziel testen möchten, können Sie den Zielemulator laden oder das Gerät mit Ihrem Computer verbinden.  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>So erstellen Sie die standardmäßige Native Activity-App und führen diese aus  
   
-1.  Falls die Plattform noch nicht ausgewählt ist, wählen Sie **x86** aus der Dropdownliste **Projektmappenplattformen** aus.  
+1. Falls die Plattform noch nicht ausgewählt ist, wählen Sie **x86** aus der Dropdownliste **Projektmappenplattformen** aus.  
   
      ![Dropdownliste für Lösungsplattformen mit x86-Auswahl](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
      Wenn die Liste **Projektmappenplattformen** nicht angezeigt wird, wählen Sie **Projektmappenplattformen** aus der Dropdownliste **Schaltflächen hinzufügen/entfernen** aus, und wählen Sie dann Ihre Plattform aus.  
   
-2.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
+2. Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
   
      Das Fenster "Ausgabe" zeigt die Ausgabe des Buildprozesses für die zwei Projekte in der Projektmappe an.  
   
-3.  Wählen Sie eines der VS-Emulator Android Phone (x86)-Profile als Bereitstellungsziel aus.  
+3. Wählen Sie eines der VS-Emulator Android Phone (x86)-Profile als Bereitstellungsziel aus.  
   
      Wenn Sie andere Emulatoren installiert oder mit einem Android-Gerät verbunden haben, können Sie sie aus der Bereitstellungsziel-Dropdownliste auswählen.  
   
-4.  Drücken Sie F5, um mit dem Debuggen zu beginnen, oder UMSCHALT+F5, um ohne Debuggen zu beginnen.  
+4. Drücken Sie F5, um mit dem Debuggen zu beginnen, oder UMSCHALT+F5, um ohne Debuggen zu beginnen.  
   
      So in etwa sieht die standardmäßige App im Visual Studio-Emulator für Android aus.  
   
@@ -80,6 +80,6 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
      Visual Studio startet den Emulator, wobei das Laden und Bereitstellen Ihres Codes einige Sekunden in Anspruch nimmt. Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Debugger verwenden, um den Code schrittweise zu durchlaufen, lokale Variablen zu prüfen und Werte anzuzeigen.  
   
-5.  Drücken Sie UMSCHALTTASTE+F5, um das Debuggen zu beenden.  
+5. Drücken Sie UMSCHALTTASTE+F5, um das Debuggen zu beenden.  
   
      Der Emulator ist ein separater Prozess, der weiterhin ausgeführt wird. Sie können Ihren Code mehrfach auf demselben Emulator bearbeiten, kompilieren und bereitstellen.

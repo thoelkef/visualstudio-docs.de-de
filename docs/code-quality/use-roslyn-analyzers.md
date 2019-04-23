@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080812"
 ---
 # <a name="use-roslyn-analyzers"></a>Verwenden von Roslyn-Analysetools
 
@@ -108,42 +108,42 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
 Es gibt mehrere Möglichkeiten, um Verletzungen zu unterdrücken:
 
-- Um alle aktuellen Verstöße zu unterdrücken, wählen Sie **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken** in der Menüleiste. Dies wird manchmal als "Baselining" bezeichnet.
+- Von der **analysieren** Menü
 
-- Um eine Diagnose aus zu unterdrücken, **Projektmappen-Explorer**, legen Sie den Schweregrad auf **keine**.
+   Wählen Sie **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken** in der Menüleiste, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
-- Um eine Diagnose aus dem Regelsatz-Editor zu unterdrücken, deaktivieren Sie das Kontrollkästchen neben seinem Namen aus, oder legen Sie **Aktion** zu **keine**.
+- Von **Projektmappen-Explorer**
 
-- Um eine Diagnose im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+**.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAxxxx** > **In Quelle** oder **unterdrücken CAxxxx** > **In Unterdrückungsdatei**.
+   Um einen Verstoß in zu unterdrücken, **Projektmappen-Explorer**, legen Sie den Schweregrad der Regel auf **keine**.
+
+- Von der **Regelsatz-Editor**
+
+   Um einen Verstoß aus dem Regelsatz-Editor zu unterdrücken, deaktivieren Sie das Kontrollkästchen neben seinem Namen aus, oder legen Sie **Aktion** zu **keine**.
+
+- Von der **Code-Editor**
+
+   Um einen Verstoß im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+**.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAXXXX** > **in Quelle/in Unterdrückungsdatei**.
 
    ![Vom Menü "schnelle Aktionen" Diagnose unterdrücken](media/suppress-diagnostic-from-editor.png)
 
-- Um eine Diagnose aus zu unterdrücken, die **Fehlerliste**, finden Sie unter [unterdrücken Verstöße aus der Fehlerliste](#suppress-violations-from-the-error-list).
+- Von der **Fehlerliste**
 
-### <a name="suppress-violations-from-the-error-list"></a>Unterdrücken von Verletzungen, aus der Fehlerliste
+   Können Sie eine Diagnose aus einem oder mehreren Unterdrücken der **Fehlerliste** durch Auswählen der gewünschten unterdrückt werden sollen, und klicken Sie dann mit der rechten Maustaste und Auswählen von **unterdrücken** > **In Source/In Unterdrückungsdatei**.
 
-Können Sie eine Diagnose aus einem oder mehreren Unterdrücken der **Fehlerliste** durch Auswählen der gewünschten unterdrückt werden sollen, und klicken Sie dann mit der rechten Maustaste und Auswählen von **unterdrücken** > **In Quelle**  oder **unterdrücken** > **In Unterdrückungsdatei**.
+   - Wenn Sie unterdrücken **In Quelle**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der C# [#pragma-Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warnung](/dotnet/visual-basic/language-reference/directives/directives) Richtlinie, die den Quellcode hinzugefügt wird.
 
-- Bei Auswahl von **In Quelle**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau der C#- [#pragma-Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warning](/dotnet/visual-basic/language-reference/directives/directives) Richtlinie, die den Quellcode hinzugefügt wird.
+      ![Vorschau der #pragma-Warnung in der Codedatei hinzufügen](media/pragma-warning-preview.png)
 
-   ![Vorschau der #pragma-Warnung in der Codedatei hinzufügen](media/pragma-warning-preview.png)
+   - Bei Auswahl von **In Unterdrückungsdatei**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut, das die globale Unterdrückungen-Datei hinzugefügt wird.
 
-- Bei Auswahl von **In Unterdrückungsdatei**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut, das die globale Unterdrückungen-Datei hinzugefügt wird.
+      ![Vorschau der Unterdrückungsdatei SuppressMessage-Attributs hinzugefügt](media/preview-changes-in-suppression-file.png)
 
-   ![Vorschau der Unterdrückungsdatei SuppressMessage-Attributs hinzugefügt](media/preview-changes-in-suppression-file.png)
+   In der **Vorschau der Änderungen** wählen Sie im Dialogfeld **übernehmen**.
 
-In der **Vorschau der Änderungen** wählen Sie im Dialogfeld **übernehmen**.
-
-Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Codeanalyse und erstellen. Da die Build-Diagnose veraltet sein können, z. B. Wenn Sie haben den Code zur Behebung des Verstoßes bearbeitet, aber noch nicht neu erstellt, Sie können nicht unterdrücken, diese Diagnose von der **Fehlerliste**. Allerdings Diagnose von live-Analyse oder IntelliSense, sind immer auf dem neuesten Stand mit aktuellen Datenquellen und kann unterdrückt werden, aus der **Fehlerliste**. Wenn die Unterdrückung-Option im Menü mit der rechten Maustaste noch ein Kontext deaktiviert ist, ist es wahrscheinlich, weil Sie eine oder mehrere-Diagnose in Ihrer Auswahl Build. Wechseln Sie zum Ausschließen der Build-Diagnose in die Auswahl der **Fehlerliste** Quellfilter aus **erstellen + IntelliSense** zu **Intellisense nur**. Wählen Sie die Diagnose zu unterdrücken, und fahren Sie fort, wie zuvor beschrieben.
-
-![Fehler Quelle Listenfilter in Visual Studio](media/error-list-filter.png)
-
-> [!NOTE]
-> In einem .NET Core-Projekt Wenn Sie einen Verweis auf ein Projekt hinzufügen, die NuGet-Analysetools, werden diese Analysen automatisch das abhängige Projekt zu hinzugefügt. So deaktivieren Sie dieses Verhalten, z. B. das abhängige Projekt ist ein Komponententestprojekt, markieren Sie das NuGet-Paket als privat in der *csproj* oder *vbproj* -Datei des Projekts auf die verwiesen wird:
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Wenn Sie nicht sehen die **unterdrücken** Menüoption im **Projektmappen-Explorer**, die Verletzung stammt wahrscheinlich von Build und nicht als live-Analyse. Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Codeanalyse und erstellen. Da die Build-Diagnose veraltet sein können, z. B. Wenn Sie haben den Code zur Behebung des Verstoßes bearbeitet, aber noch nicht neu erstellt, Sie können nicht unterdrücken, diese Diagnose von der **Fehlerliste**. Diagnose von live-Analyse und IntelliSense, sind immer auf dem neuesten Stand mit aktuellen Datenquellen und kann unterdrückt werden, aus der **Fehlerliste**. Auszuschließende *erstellen* eine Diagnose aus der Auswahl wechseln die **Fehlerliste** Quellfilter aus **erstellen + IntelliSense** zu **Intellisense nur**. Wählen Sie die Diagnose zu unterdrücken, und fahren Sie fort, wie zuvor beschrieben.
+   >
+   > ![Fehler Quelle Listenfilter in Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Die Verwendung der Befehlszeile
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 Die folgende Abbildung zeigt die Ausgabe erstellen über die Befehlszeile beim Erstellen eines Projekts, das einen Regelverstoß Analyzer enthält:
 
 ![MSBuild-Ausgabe mit Regelverstoß](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Abhängige Projekte
+
+In einem .NET Core-Projekt Wenn Sie einen Verweis auf ein Projekt hinzufügen, die NuGet-Analysetools, werden diese Analysen automatisch das abhängige Projekt zu hinzugefügt. So deaktivieren Sie dieses Verhalten, z. B. das abhängige Projekt ist ein Komponententestprojekt, markieren Sie das NuGet-Paket als privat in der *csproj* oder *vbproj* -Datei des Projekts auf die verwiesen wird durch Festlegen der **PrivateAssets** Attribut:
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114508"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
 |[Function-Element](../ide/code-snippets-schema-reference.md#function)|[Object-Element](../ide/code-snippets-schema-reference.md#object)|[URL-Element](../ide/code-snippets-schema-reference.md#url)|  
 |[Header-Element](../ide/code-snippets-schema-reference.md#header)|[Reference-Element](../ide/code-snippets-schema-reference.md#reference)||  
   
-##  <a name="assembly"></a>Assembly-Element  
+## <a name="assembly"></a>Assembly-Element  
  Gibt den Namen der Assembly an, auf die vom Codeausschnitt verwiesen wird.  
   
 > [!NOTE]
@@ -61,7 +61,7 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
   
  Ein Textwert ist erforderlich. Dieser Text gibt die Assembly an, auf die der Codeausschnitt verweist.  
   
-##  <a name="author"></a> Author-Element  
+## <a name="author"></a> Author-Element  
  Gibt den Namen des Autors des Codeausschnitts an. Der **Codeausschnitt-Manager** zeigt den im `Author`-Element des Codeausschnitts gespeicherten Namen an.  
   
 ```xml  
@@ -77,7 +77,7 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
   
  Ein Textwert ist erforderlich. Dieser Text gibt den Autor des Codeausschnitts an.  
   
-##  <a name="code"></a> Code-Element  
+## <a name="code"></a> Code-Element  
  Stellt einen Container für kurze Codeblöcke bereit.  
   
  Zwei reservierte Wörter sind zur Verwendung im Text des `Code`-Elements verfügbar: `$end$` und `$selected$`. `$end$` markiert die Position, an die der Cursor zu setzen ist, nachdem der Codeausschnitt eingefügt wurde. `$selected$` stellt Text dar, der im Dokument ausgewählt wurde, das in den Ausschnitt eingefügt werden soll, wenn dieser aufgerufen wird. Betrachten wir beispielsweise einen Ausschnitt, der Folgendes enthält:  
@@ -146,7 +146,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text bezeichnet den Code zusammen mit den Literalen und Objekten an, die verwendet werden können, wenn dieser Codeausschnitt in ein Projekt eingefügt wird.  
   
-##  <a name="codesnippet"></a> CodeSnippet-Element  
+## <a name="codesnippet"></a> CodeSnippet-Element  
  Ermöglicht die Angabe einer Überschrift und mehrerer IntelliSense-Codeausschnitte, die Sie in Visual Studio Codedateien einfügen können.  
   
 ```xml  
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippets-Element](../ide/code-snippets-schema-reference.md#codesnippets)|Stammelement des XML-Schemas für den Codeausschnitt.|  
   
-##  <a name="codesnippets"></a> CodeSnippets-Element  
+## <a name="codesnippets"></a> CodeSnippets-Element  
  Gruppiert [CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet)-Elemente. Das `CodeSnippets`-Element ist das Stammelement des XML-Schemas des Codeausschnitts.  
   
 ```xml  
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet)|Optionales Element. Übergeordnetes Element für alle Codeausschnittdaten. Es kann keine oder mehrere `CodeSnippet`-Elemente in einem `CodeSnippets`-Element geben.|  
   
-##  <a name="declarations"></a> Declarations-Element  
+## <a name="declarations"></a> Declarations-Element  
  Gibt die Literale und Objekte an, die die bearbeitbaren Teile eines Codeausschnitts darstellen.  
   
 ```xml  
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|  
   
-##  <a name="default"></a> Default-Element  
+## <a name="default"></a> Default-Element  
  Gibt den Standardwert des Literals oder Objekts für einen IntelliSense-Codeausschnitt an.  
   
 ```xml  
@@ -221,7 +221,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text gibt den Standardwert des Literals oder Objekts an, das die Felder des bearbeitbaren Codeausschnitts füllt.  
   
-##  <a name="description"></a> Description-Element  
+## <a name="description"></a> Description-Element  
  Bezeichnet beschreibende Informationen über den Inhalt eines IntelliSense-Codeausschnitts.  
   
 ```xml  
@@ -236,7 +236,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text beschreibt den Codeausschnitt.  
   
-##  <a name="function"></a> Function-Element  
+## <a name="function"></a> Function-Element  
  Gibt eine Funktion an, die ausgeführt wird, wenn das Literal oder Objekt in Visual Studio den Fokus erhält.  
   
 > [!NOTE]
@@ -255,7 +255,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text bezeichnet eine Funktion, die ausgeführt wird, wenn das Literal- oder Objektfeld in Visual Studio den Fokus erhält.  
   
-##  <a name="header"></a> Header-Element  
+## <a name="header"></a> Header-Element  
  Gibt allgemeine Informationen über den IntelliSense-Codeausschnitt an.  
   
 ```xml  
@@ -275,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Author-Element](../ide/code-snippets-schema-reference.md#author)|Optionales Element. Der Name der Person oder der Firma, die den Codeausschnitt erstellt hat. Ein `Author`-Element kann kein oder ein `Header`-Element enthalten.|  
 |[Description-Element](../ide/code-snippets-schema-reference.md#description)|Optionales Element. Eine Beschreibung des Codeausschnitts. Ein `Description`-Element kann kein oder ein `Header`-Element enthalten.|  
-|[HelpUrl-Element](../ide/code-snippets-schema-reference.md#helpurl)|Optionales Element. Eine URL, die weitere Informationen über den Codeausschnitt enthält. Ein Header-Element kann kein oder ein `HelpURL`-Element enthalten. **Hinweis:** Visual Studio verwendet das `HelpUrl`-Element nicht. Das Element ist Bestandteil des XML-Schemas für IntelliSense-Codeausschnitte. Alle Codeausschnitte mit dem Element werden überprüft, der Wert des Elements wird jedoch nie verwendet.|  
+|[HelpUrl-Element](../ide/code-snippets-schema-reference.md#helpurl)|Optionales Element. Eine URL, die weitere Informationen über den Codeausschnitt enthält. Ein Header-Element kann kein oder ein `HelpURL`-Element enthalten. **Hinweis**:  Visual Studio verwendet das `HelpUrl`-Element nicht. Das Element ist Bestandteil des XML-Schemas für IntelliSense-Codeausschnitte. Alle Codeausschnitte mit dem Element werden überprüft, der Wert des Elements wird jedoch nie verwendet.|  
 |[Keywords-Element](../ide/code-snippets-schema-reference.md#keywords)|Optionales Element. Gruppiert `Keyword`-Elemente. Ein `Keywords`-Element kann kein oder ein `Header`-Element enthalten.|  
 |[Shortcut-Element](../ide/code-snippets-schema-reference.md#shortcut)|Optionales Element. Gibt den Verknüpfungstext an, der zum Einfügen des Ausschnitts verwendet werden kann. Ein `Shortcut`-Element kann kein oder ein `Header`-Element enthalten.|  
 |[SnippetTypes-Element](../ide/code-snippets-schema-reference.md#snippettypes)|Optionales Element. Gruppiert `SnippetType`-Elemente. Ein `SnippetTypes`-Element kann kein oder ein `Header`-Element enthalten. Wenn keine `SnippetTypes`-Elemente verfügbar sind, ist der Codeausschnitt immer gültig.|  
@@ -285,7 +285,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet)|Übergeordnetes Element für alle Codeausschnittdaten.|  
   
-##  <a name="helpurl"></a> HelpUrl-Element  
+## <a name="helpurl"></a> HelpUrl-Element  
  Gibt eine URL zu weiteren Informationen über einen Codeausschnitt an.  
   
 > [!NOTE]
@@ -304,7 +304,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist optional. Dieser Text bezeichnet die aufzurufende URL, die weitere Informationen über einen Codeausschnitt enthält.  
   
-##  <a name="id"></a> ID-Element  
+## <a name="id"></a> ID-Element  
  Gibt einen eindeutigen Bezeichner für ein `Literal`-Element oder ein `Object`-Element an. Die Textwert in den `ID`-Elementen zweier Literale oder Objekte im selben Codeausschnitt dürfen nicht übereinstimmen. Literale und Objekte dürfen kein `ID`-Element mit dem Wert "end" enthalten. Der Wert `$end$` ist reserviert. Mit diesem Wert wird die Stelle gekennzeichnet, an der der Cursor nach dem Einfügen des Codeausschnitts positioniert wird.  
   
 ```xml  
@@ -321,7 +321,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text bezeichnet den eindeutigen Bezeichner für das Objekt oder Literal.  
   
-##  <a name="import"></a> Import-Element  
+## <a name="import"></a> Import-Element  
  Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt verwendet werden.  
   
 > [!NOTE]
@@ -342,7 +342,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Imports-Element](../ide/code-snippets-schema-reference.md#imports)|Gruppierungselement für **Import**-Elemente.|  
   
-##  <a name="imports"></a> Imports-Element  
+## <a name="imports"></a> Imports-Element  
  Gruppiert einzelne `Import`-Elemente.  
   
 > [!NOTE]
@@ -362,7 +362,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|  
   
-##  <a name="keyword"></a> Keyword-Element  
+## <a name="keyword"></a> Keyword-Element  
  Gibt ein benutzerdefiniertes Schlüsselwort für den Codeausschnitt an. Die Schlüsselwörter des Codeausschnitts werden von Visual Studio verwendet und bieten Onlineinhaltsanbietern eine Standardmöglichkeit zum Hinzufügen von benutzerdefinierten Schlüsselwörtern für Suche und Kategorisierung.  
   
 ```xml  
@@ -377,7 +377,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Das Schlüsselwort für den Codeausschnitt.  
   
-##  <a name="keywords"></a> Keywords-Element  
+## <a name="keywords"></a> Keywords-Element  
  Gruppiert einzelne `Keyword`-Elemente. Die Schlüsselwörter des Codeausschnitts werden von Visual Studio verwendet und bieten Onlineinhaltsanbietern eine Standardmöglichkeit zum Hinzufügen von benutzerdefinierten Schlüsselwörtern für Suche und Kategorisierung.  
   
 ```xml  
@@ -395,7 +395,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Header-Element](../ide/code-snippets-schema-reference.md#header)|Enthält allgemeine Informationen über den Codeausschnitt.|  
   
-##  <a name="literal"></a> Literal-Element  
+## <a name="literal"></a> Literal-Element  
  Definiert die bearbeitbaren Literale des Codeausschnitts an. Das `Literal`-Element wird verwendet, um eine Ersetzung für ein Codeelement zu kennzeichnen, das zwar vollständig im Ausschnitt enthalten ist, nach dem Einfügen in den Code jedoch wahrscheinlich geändert wird. So sollten beispielsweise Literalzeichenfolgen, numerische Werte und einige Variablennamen als Literale deklariert werden.  
   
  Literale und Objekte können kein **ID**-Element mit dem Wert „selected“ oder „end“ enthalten. Der Wert `$selected$` stellt den im Dokument ausgewählten Text dar, der beim Aufruf in den Ausschnitt eingefügt werden soll. `$end$` markiert die Position, an die der Cursor zu setzen ist, nachdem der Codeausschnitt eingefügt wurde.  
@@ -424,7 +424,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|  
   
-##  <a name="namespace"></a> Namespace-Element  
+## <a name="namespace"></a> Namespace-Element  
  Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschnitts importiert werden muss. Der im `Namespace`-Element angegebene Namespace wird automatisch einer `Imports`-Anweisung am Anfang des Codes hinzugefügt, sofern er nicht bereits vorhanden ist.  
   
 > [!NOTE]
@@ -442,7 +442,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text gibt einen importierten Namespace an, der Voraussetzung für den Codeausschnitt ist.  
   
-##  <a name="object"></a> Object-Element  
+## <a name="object"></a> Object-Element  
  Definiert die Objekte des Codeausschnitts an, die bearbeitet werden können. Das `Object`-Element wird zur Kennzeichnung eines vom Codeausschnitt benötigten Elements verwendet, das möglicherweise jedoch außerhalb des Codeausschnitts selbst definiert wird. Beispielsweise sollten Windows Forms-Steuerelemente, ASP.NET-Steuerelemente, Objektinstanzen und Typinstanzen als Objekte deklariert werden. Für Objektdeklarationen muss ein Typ angegeben werden. Zu diesem Zweck wird das `Type`-Element verwendet.  
   
 ```xml  
@@ -471,7 +471,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations)|Enthält die Literale und Objekte eines Codeausschnitts, die Sie bearbeiten können.|  
   
-##  <a name="reference"></a> Reference-Element  
+## <a name="reference"></a> Reference-Element  
  Bezeichnet Informationen über die für den Codeausschnitt erforderlichen Assemblyverweise.  
   
 > [!NOTE]
@@ -493,7 +493,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[References-Element](../ide/code-snippets-schema-reference.md#references)|Gruppierungselement für `Reference`-Elemente.|  
   
-##  <a name="references"></a> References-Element  
+## <a name="references"></a> References-Element  
  Gruppiert einzelne `Reference`-Elemente.  
   
 > [!NOTE]
@@ -513,7 +513,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Snippet-Element](../ide/code-snippets-schema-reference.md#snippet)|Enthält die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt.|  
   
-##  <a name="shortcut"></a> Shortcut-Element  
+## <a name="shortcut"></a> Shortcut-Element  
  Gibt den Verknüpfungstext an, der zum Einfügen des Codeausschnitts verwendet wird. Der Textwert eines `Shortcut`-Elements kann nur alphanumerische Zeichen, Bindestriche ( - ) und Unterstriche ( _ ) enthalten.  
   
 > [!CAUTION]
@@ -531,7 +531,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist optional. Dieser Text wird als Verknüpfung zum Einfügen des Codeausschnitts verwendet.  
   
-##  <a name="snippet"></a> Snippet-Element  
+## <a name="snippet"></a> Snippet-Element  
  Gibt die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt an.  
   
 ```xml  
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[CodeSnippet-Element](../ide/code-snippets-schema-reference.md#codesnippet)|Ermöglicht die Angabe einer Überschrift und mehrerer IntelliSense-Codeausschnitte, die Sie in Visual Studio Codedateien einfügen können.|  
   
-##  <a name="snippettype"></a> SnippetType-Element  
+## <a name="snippettype"></a> SnippetType-Element  
  Gibt an, wie Visual Studio den Codeausschnitt einfügt.  
   
 ```xml  
@@ -570,13 +570,13 @@ is a great color. I love Blue.
   
  Der Textwert muss einer der folgenden Werte sein:  
   
--   `SurroundsWith`: Der Codeausschnitt kann ein ausgewähltes Codeelement umschließen.  
+- `SurroundsWith`: Der Codeausschnitt kann ein ausgewähltes Codeelement umschließen.  
   
--   `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.  
+- `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.  
   
--   `Refactoring`: Der Codeausschnitt wird während der Visual C#-Umgestaltung verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.  
+- `Refactoring`: Der Codeausschnitt wird während der Visual C#-Umgestaltung verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.  
   
-##  <a name="snippettypes"></a> SnippetTypes-Element  
+## <a name="snippettypes"></a> SnippetTypes-Element  
  Gruppiert einzelne `SnippetType`-Elemente. Wenn das `SnippetTypes`-Element nicht vorhanden ist, kann der Codeausschnitt an beliebiger Stelle im Code eingefügt werden.  
   
 ```xml  
@@ -594,7 +594,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|  
 |[Header-Element](../ide/code-snippets-schema-reference.md#header)|Bezeichnet allgemeine Informationen über den Codeausschnitt.|  
   
-##  <a name="title"></a> Title-Element  
+## <a name="title"></a> Title-Element  
  Gibt den Titel für den Codeausschnitt an. Der im `Title`-Element des Codeausschnitts gespeicherte Titel wird im **Code Snippet Picker** sowie in der Beschreibung des Codeausschnitts im **Codeausschnitt-Manager** angezeigt.  
   
 ```xml  
@@ -609,7 +609,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text gibt den Titel des Codeausschnitts an.  
   
-##  <a name="tooltip"></a> ToolTip-Element  
+## <a name="tooltip"></a> ToolTip-Element  
  Beschreibt den erwarteten Wert und die erwartete Verwendung eines Literals oder Objekts in einem Codeausschnitt, das Visual Studio beim Einfügen des Codeausschnitts in ein Projekt in einer QuickInfo anzeigt. Der QuickInfo-Text (ToolTip) wird angezeigt, wenn mit der Maus nach dem Einfügen des Codeausschnitts auf das Literal oder Objekt gezeigt wird.  
   
 ```xml  
@@ -625,7 +625,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text gibt die QuickInfo-Beschreibung an, die dem Objekt oder Literal im Codeausschnitt zugeordnet werden soll.  
   
-##  <a name="type"></a> Type-Element  
+## <a name="type"></a> Type-Element  
  Gibt den Typ des Objekts an. Das `Object`-Element wird zur Kennzeichnung eines vom Codeausschnitt benötigten Elements verwendet, das möglicherweise jedoch außerhalb des Codeausschnitts selbst definiert wird. Beispielsweise sollten Windows Forms-Steuerelemente, ASP.NET-Steuerelemente, Objektinstanzen und Typinstanzen als Objekte deklariert werden. Für Objektdeklarationen muss ein Typ angegeben werden. Zu diesem Zweck wird das `Type`-Element verwendet.  
   
 ```xml  
@@ -640,7 +640,7 @@ is a great color. I love Blue.
   
  Ein Textwert ist erforderlich. Dieser Text gibt den Typ des Objekts an.  
   
-##  <a name="url"></a> URL-Element  
+## <a name="url"></a> URL-Element  
  Gibt eine URL an, die weitere Informationen über die referenzierte Assembly bietet.  
   
 > [!NOTE]

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2934cb9cb009a46cbd79340173eb2cad0a0fefe0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078218"
 ---
 # <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von fehlermarker
 Fehlermarker (oder rote wellenförmige unterstreichungen) sind sehr schwer Text-Editor Anpassungen implementieren. Die Vorteile, die sie für Benutzer Ihres VSPackage erhalten, können jedoch weit zunichte machen die Kosten für die sie angeben. Fehlermarker markieren etwas Text, der Ihre Sprachenparser mit eine Wellenlinie oder wellenförmige rote Linie falsch erachtet. Dieser Indikator kann Programmierer, indem Sie visuelle Anzeige von falschen Code.
@@ -42,16 +42,16 @@ Fehlermarker (oder rote wellenförmige unterstreichungen) sind sehr schwer Text-
 
   Der Parser Aufgabenanbieter und Filter bieten die nötige Infrastruktur für fehlermarker zu ermöglichen. Die folgenden Schritte stellen den Prozess, zur Anzeige von fehlermarker.
 
-1.  In einer Sicht, die gefiltert wird, ruft der Filter ein Zeiger auf den Aufgabenanbieter zugeordnet, die Daten Ansicht ab.
+1. In einer Sicht, die gefiltert wird, ruft der Filter ein Zeiger auf den Aufgabenanbieter zugeordnet, die Daten Ansicht ab.
 
     > [!NOTE]
     >  Sie können den gleichen Befehlsfilter für methodentipps, Anweisungsvervollständigung, fehlermarker und So weiter verwenden.
 
-2.  Wenn der Filter empfängt ein Ereignis gibt an, dass Sie in eine neue Zeile verschoben haben, wird eine Aufgabe erstellt, um Fehler zu finden.
+2. Wenn der Filter empfängt ein Ereignis gibt an, dass Sie in eine neue Zeile verschoben haben, wird eine Aufgabe erstellt, um Fehler zu finden.
 
-3.  Der taskhandler wird überprüft, ob die Zeile geändert wurde. Wenn dies der Fall ist, analysiert er die Zeile nach Fehlern.
+3. Der taskhandler wird überprüft, ob die Zeile geändert wurde. Wenn dies der Fall ist, analysiert er die Zeile nach Fehlern.
 
-4.  Wenn Fehler gefunden werden, erstellt der Aufgabenanbieter eine Instanz des Tasks-Element. Diese Instanz erstellt, die textmarkierung, die die Umgebung als einen fehlermarker in der Textansicht verwendet wird.
+4. Wenn Fehler gefunden werden, erstellt der Aufgabenanbieter eine Instanz des Tasks-Element. Diese Instanz erstellt, die textmarkierung, die die Umgebung als einen fehlermarker in der Textansicht verwendet wird.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden von Textmarkierungen mit der legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)

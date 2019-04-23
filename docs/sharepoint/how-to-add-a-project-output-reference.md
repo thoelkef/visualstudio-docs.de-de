@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079784"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Vorgehensweise: Hinzufügen einer Projektausgabereferenz
   Fügen Sie sie zum Bereitstellen von Assemblys für nicht-SharePoint-Projekt (oder XAP-Dateien in Silverlight-Projekten) in SharePoint als Ausgabe Projektverweis hinzu.
@@ -28,17 +28,17 @@ ms.locfileid: "56619328"
 
 ### <a name="to-add-a-project-output-reference"></a>Hinzufügen eine Projektausgabereferenz
 
-1.  Laden Sie eine Lösung, die mindestens eine SharePoint-Projekt und eine nicht-SharePoint-Projekt enthält.
+1. Laden Sie eine Lösung, die mindestens eine SharePoint-Projekt und eine nicht-SharePoint-Projekt enthält.
 
-2.  In **Projektmappen-Explorer**, wählen Sie ein Element in der SharePoint-Projektknoten.
+2. In **Projektmappen-Explorer**, wählen Sie ein Element in der SharePoint-Projektknoten.
 
-3.  In der **Eigenschaften** Fenster, wählen Sie die **Projektausgabeverweise** -Eigenschaft, und klicken Sie dann auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP. NET-Mobile-Designer Ellipse")) Schaltfläche daneben.
+3. In der **Eigenschaften** Fenster, wählen Sie die **Projektausgabeverweise** -Eigenschaft, und klicken Sie dann auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP. NET-Mobile-Designer Ellipse")) Schaltfläche daneben.
 
-4.  In der **Projektausgabeverweise** Dialogfeld auf die **hinzufügen** Schaltfläche.
+4. In der **Projektausgabeverweise** Dialogfeld auf die **hinzufügen** Schaltfläche.
 
-5.  Wählen Sie im Eigenschaftenbereich den Pfeil neben der **Bereitstellungstyp** -Eigenschaft, und wählen Sie dann einen geeigneten Wert für das nicht-SharePoint-Element, das Sie verweisen auf, wie z. B. **ElementFile**.
+5. Wählen Sie im Eigenschaftenbereich den Pfeil neben der **Bereitstellungstyp** -Eigenschaft, und wählen Sie dann einen geeigneten Wert für das nicht-SharePoint-Element, das Sie verweisen auf, wie z. B. **ElementFile**.
 
-6.  Wählen Sie den Pfeil neben **Projektname**, wählen Sie den Namen des nicht-SharePoint-Projektelements, und wählen Sie dann die **OK** Schaltfläche.
+6. Wählen Sie den Pfeil neben **Projektname**, wählen Sie den Namen des nicht-SharePoint-Projektelements, und wählen Sie dann die **OK** Schaltfläche.
 
 ## <a name="see-also"></a>Siehe auch
 - [Angaben Sie zu packen und-Bereitstellen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

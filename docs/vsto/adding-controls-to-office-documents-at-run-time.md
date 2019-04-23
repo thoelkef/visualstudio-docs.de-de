@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b09e658c896f4f3e864c46dbd02d65a871da318
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075804"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit
   Sie können eine Microsoft Office Word-Dokument und Microsoft Office Excel-Arbeitsmappe zur Laufzeit Steuerelemente hinzugefügt. Sie können auch zur Laufzeit entfernen. Steuerelemente, die Sie hinzufügen oder entfernen zur Laufzeit heißen *dynamische Steuerelemente*.
@@ -44,16 +44,16 @@ ms.locfileid: "56600840"
 
   ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Hinzufügen von Steuerelementen zu einer Dokumentoberfläche zur Laufzeit? ](http://go.microsoft.com/fwlink/?LinkId=132782).
 
-##  <a name="ControlsCollection"></a> Verwalten von Steuerelementen zur Laufzeit mithilfe der steuerelementauflistungen
+## <a name="ControlsCollection"></a> Verwalten von Steuerelementen zur Laufzeit mithilfe der steuerelementauflistungen
  Verwenden Sie zum Hinzufügen, abrufen, oder Entfernen von Steuerelementen zur Laufzeit, die Hilfsmethoden der <xref:Microsoft.Office.Tools.Excel.ControlCollection> und <xref:Microsoft.Office.Tools.Word.ControlCollection> Objekte.
 
  Wie Sie auf diese Objekte zugreifen, hängt vom Typ des Projekts ab, das Sie entwickeln:
 
--   In einem Projekt auf Dokumentebene für Excel verwenden Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> -Eigenschaft der Klassen `Sheet1`, `Sheet2`und `Sheet3` . Weitere Informationen zu diesen Klassen finden Sie unter [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md).
+- In einem Projekt auf Dokumentebene für Excel verwenden Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> -Eigenschaft der Klassen `Sheet1`, `Sheet2`und `Sheet3` . Weitere Informationen zu diesen Klassen finden Sie unter [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md).
 
--   In einem Projekt auf Dokumentebene für Word verwenden Sie die <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft der `ThisDocument` -Klasse. Weitere Informationen zu dieser Klasse finden Sie unter [Dokumenthostelement](../vsto/document-host-item.md).
+- In einem Projekt auf Dokumentebene für Word verwenden Sie die <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft der `ThisDocument` -Klasse. Weitere Informationen zu dieser Klasse finden Sie unter [Dokumenthostelement](../vsto/document-host-item.md).
 
--   Verwenden Sie in einem Projekt VSTO-Add-in für Excel oder Word die `Controls` Eigenschaft eine <xref:Microsoft.Office.Tools.Excel.Worksheet> oder <xref:Microsoft.Office.Tools.Word.Document> , die Sie zur Laufzeit generieren. Weitere Informationen zum Generieren dieser Objekte zur Laufzeit finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+- Verwenden Sie in einem Projekt VSTO-Add-in für Excel oder Word die `Controls` Eigenschaft eine <xref:Microsoft.Office.Tools.Excel.Worksheet> oder <xref:Microsoft.Office.Tools.Word.Document> , die Sie zur Laufzeit generieren. Weitere Informationen zum Generieren dieser Objekte zur Laufzeit finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="add-controls"></a>Hinzufügen von Steuerelementen
  Die Typen <xref:Microsoft.Office.Tools.Excel.ControlCollection> und <xref:Microsoft.Office.Tools.Word.ControlCollection> enthalten Hilfsmethoden, mit denen Sie Dokumenten und Arbeitsblättern Hoststeuerelemente und allgemeine Windows Forms-Steuerelemente hinzufügen können. Jeder Methodenname weist folgendes Format auf `Add`*Steuerelementklasse*. Dabei ist *Steuerelementklasse* der Klassenname des Steuerelements, das Sie hinzufügen möchten. Verwenden Sie beispielsweise zum Hinzufügen eines <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelements zu Ihrem Dokument die <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> -Methode.
@@ -76,7 +76,7 @@ ms.locfileid: "56600840"
 > [!NOTE]
 >  Vermeiden Sie es, Steuerelemente im `Shutdown` -Ereignishandlerzeitraum des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das `Shutdown` -Ereignis ausgelöst wird. Wenn Sie Steuerelemente vor dem Schließen des Dokuments entfernen möchten, fügen Sie den Code dem Ereignishandler für ein anderes Ereignis hinzu, z. B. <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> oder <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> für Word oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> für Excel.
 
-##  <a name="HostControls"></a> Hinzufügen von Hoststeuerelementen zu Dokumenten
+## <a name="HostControls"></a> Hinzufügen von Hoststeuerelementen zu Dokumenten
 
 Wenn Sie Dokumenten programmgesteuert Hoststeuerelemente hinzufügen, müssen Sie einen Namen angeben, der das Steuerelement eindeutig identifiziert, und Sie müssen angeben, wo das Steuerelement im Dokument hinzugefügt werden soll. Spezifische Anweisungen finden Sie unter den folgenden Themen:
 
@@ -97,7 +97,7 @@ Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dy
 > [!NOTE]
 > Für folgende Hoststeuerelemente werden keine Hilfsmethoden bereitgestellt, da diese Steuerelemente nicht programmgesteuert Dokumenten hinzugefügt werden können: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>und <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
-##  <a name="WindowsForms"></a> Hinzufügen von Windows Forms-Steuerelementen zu Dokumenten
+## <a name="WindowsForms"></a> Hinzufügen von Windows Forms-Steuerelementen zu Dokumenten
  Wenn Sie einem Dokument programmgesteuert ein Windows Forms-Steuerelement hinzufügen, müssen Sie die Position des Steuerelements und einen Namen angeben, der das Steuerelement eindeutig identifiziert. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] stellt Hilfsmethoden für jedes Steuerelement bereit. Diese Methoden werden überladen, sodass Sie entweder einen Bereich oder bestimmte Koordinaten für die Position des Steuerelements übergeben können.
 
  Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dynamisch erstellten Windows Forms-Steuerelemente aus dem Dokument entfernt. Sie können der Projektmappe Code hinzufügen, damit die Steuerelemente neu erstellt werden, wenn das Dokument erneut geöffnet wird. Wenn Sie dynamische Windows Forms-Steuerelemente mithilfe eines VSTO-Add-Ins erstellen, werden die ActiveX-Wrapper für die Steuerelemente im Dokument beibehalten. Weitere Informationen finden Sie unter [beibehalten von dynamischen Steuerelementen in Office-Dokumente](../vsto/persisting-dynamic-controls-in-office-documents.md).

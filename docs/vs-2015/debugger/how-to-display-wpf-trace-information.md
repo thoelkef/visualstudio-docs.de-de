@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113780"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Vorgehensweise: Anzeigen von WPF-Ablaufverfolgungsinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "58958636"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>So aktivieren Sie WPF-Ablaufverfolgungsinformationen oder passen diese an  
   
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Öffnen Sie im Dialogfeld **Optionen** im Feld links den Knoten **Debuggen**.  
+2. Öffnen Sie im Dialogfeld **Optionen** im Feld links den Knoten **Debuggen**.  
   
-3.  Klicken Sie unter **Debuggen** auf **Ausgabefenster**.  
+3. Klicken Sie unter **Debuggen** auf **Ausgabefenster**.  
   
-4.  Wählen Sie unter **Allgemeine Ausgabeeinstellungen** die Option **Gesamte Debugausgabe** aus.  
+4. Wählen Sie unter **Allgemeine Ausgabeeinstellungen** die Option **Gesamte Debugausgabe** aus.  
   
-5.  Suchen Sie im Feld rechts die Option **WPF-Ablaufverfolgungseinstellungen**.  
+5. Suchen Sie im Feld rechts die Option **WPF-Ablaufverfolgungseinstellungen**.  
   
-6.  Öffnen Sie den Knoten **WPF-Ablaufverfolgungseinstellungen**.  
+6. Öffnen Sie den Knoten **WPF-Ablaufverfolgungseinstellungen**.  
   
-7.  Klicken Sie unter **WPF-Ablaufverfolgungseinstellungen** auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z.B. **Datenbindung**).  
+7. Klicken Sie unter **WPF-Ablaufverfolgungseinstellungen** auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z.B. **Datenbindung**).  
   
      Ein Dropdownlisten-Steuerelement wird in der Spalte „Einstellungen“ neben **Datenbindung** oder der Kategorie, auf die geklickt wurde, angezeigt.  
   
-8.  Klicken Sie auf die Dropdown-Liste, und wählen Sie den Typ der Ablaufverfolgungsinformationen, die Sie anzeigen möchten: **Alle**, **kritische**, **Fehler**, **Warnung**, **Informationen**, **ausführliche**, oder **ActivityTracing**.  
+8. Klicken Sie auf die Dropdown-Liste, und wählen Sie den Typ der Ablaufverfolgungsinformationen, die Sie anzeigen möchten: **Alle**, **kritische**, **Fehler**, **Warnung**, **Informationen**, **ausführliche**, oder **ActivityTracing**.  
   
      **Kritisch** ermöglich nur die Verfolgung von kritischen Ereignissen.  
   
@@ -69,23 +69,23 @@ ms.locfileid: "58958636"
   
 ### <a name="to-disable-wpf-trace-information"></a>So deaktivieren Sie WPF-Ablaufverfolgungsinformationen  
   
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Öffnen Sie im Dialogfeld **Optionen** im Feld links den Knoten **Debuggen**.  
+2. Öffnen Sie im Dialogfeld **Optionen** im Feld links den Knoten **Debuggen**.  
   
-3.  Klicken Sie unter **Debuggen** auf **Ausgabefenster**.  
+3. Klicken Sie unter **Debuggen** auf **Ausgabefenster**.  
   
-4.  Suchen Sie im Feld rechts die Option **WPF-Ablaufverfolgungseinstellungen**.  
+4. Suchen Sie im Feld rechts die Option **WPF-Ablaufverfolgungseinstellungen**.  
   
-5.  Öffnen Sie den Knoten **WPF-Ablaufverfolgungseinstellungen**.  
+5. Öffnen Sie den Knoten **WPF-Ablaufverfolgungseinstellungen**.  
   
-6.  Klicken Sie unter **WPF-Ablaufverfolgungseinstellungen** auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z.B. **Datenbindung**).  
+6. Klicken Sie unter **WPF-Ablaufverfolgungseinstellungen** auf die Kategorie der Einstellungen, die Sie aktivieren möchten (z.B. **Datenbindung**).  
   
      Ein Dropdownlisten-Steuerelement wird in der Spalte „Einstellungen“ neben **Datenbindung** oder der Kategorie, auf die geklickt wurde, angezeigt.  
   
-7.  Klicken Sie auf die Dropdownliste, und wählen Sie **Aus** aus.  
+7. Klicken Sie auf die Dropdownliste, und wählen Sie **Aus** aus.  
   
-8.  Klicken Sie auf **OK**.  
+8. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von WPF](../debugger/debugging-wpf.md)

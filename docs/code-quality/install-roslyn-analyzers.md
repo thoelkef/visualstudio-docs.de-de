@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077809"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installieren von .NET Compiler Platform-Analysetools
 
@@ -24,14 +24,14 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform (*Roslyn*) Anal
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Zum Installieren von Paketen für NuGet-analyzer
 
-1. Suchen Sie das Paket des Analysetools, die, das Sie auf www.nuget.org installieren möchten. Beispielsweise möchten [installieren die Microsoft FxCop-Analysetools](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) um den Code auf Sicherheit und Leistung Probleme, u. a. zu überprüfen.
+1. Suchen Sie das Paket des Analysetools, die, das Sie auf www.nuget.org installieren möchten.
+
+   Beispielsweise möchten [installieren die Microsoft FxCop-Analysetools](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) um den Code auf Sicherheit und Leistung Probleme, u. a. zu überprüfen. Oder installieren Sie [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) nach Problemen in Ihrer Codebasis gesucht werden soll.
 
 2. Installieren Sie das Paket in Visual Studio mit der [-Paket-Manager-Konsole](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) oder [-Paket-Manager-UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Die Seite www.nuget.org für jedes analyzerpaket erfahren Sie, den Befehl zum Einfügen in die **-Paket-Manager-Konsole**. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
-   >
-   > ![NuGet.org-Seite, die mit der Paket-Manager-Konsole](media/nuget-install-command.png)
 
    Der Analyzer-Assemblys werden installiert und werden in **Projektmappen-Explorer** unter **Verweise** > **Analysen**.
 

@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103640"
 ---
 # <a name="ribbon-designer"></a>Multifunktionsleisten-Designer
   Der Menüband-Designer ist ein visueller Entwurfzeichnungsbereich. Verwenden Sie die Menüband-Designer, um benutzerdefinierte Registerkarten, Gruppen und Steuerelemente des Menübands einer Microsoft Office-Anwendung hinzuzufügen.
@@ -40,11 +40,11 @@ ms.locfileid: "54867259"
 
  Fügen Sie zum Öffnen des Menüband-Designers eine **Menüband (visueller Designer)** Element zu Ihrem Projekt. Anschließend können die Entwurftools für die folgenden Aufgaben verwendet werden:
 
--   [Entwerfen des Menübandlayouts](#DesigningRibbonLayout)
+- [Entwerfen des Menübandlayouts](#DesigningRibbonLayout)
 
--   [Verarbeiten von Ereignissen und Festlegen von Steuerelementeigenschaften](#HandleEventsSetProperties)
+- [Verarbeiten von Ereignissen und Festlegen von Steuerelementeigenschaften](#HandleEventsSetProperties)
 
--   [Hinzufügen von Steuerelementen zur Backstage-Ansicht](#CustomizingMicrosoftOfficeButton)
+- [Hinzufügen von Steuerelementen zur Backstage-Ansicht](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  Einige Aufgaben können mit dem Menüband-Designer nicht ausgeführt werden. Weitere Informationen zu diesen Aufgaben und wie Sie sie ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
@@ -64,7 +64,7 @@ ms.locfileid: "54867259"
 
   Wenn Sie bereits haben eine **Menüband (visueller Designer)** Element aus einem anderen Projekt können Sie diesen wiederverwenden in Ihrem aktuellen Projekt mithilfe der **vorhandenes Element hinzufügen** Dialogfeld.
 
-##  <a name="DesigningRibbonLayout"></a> Entwerfen eines Menübands
+## <a name="DesigningRibbonLayout"></a> Entwerfen eines Menübands
  Zum Öffnen des Menüband-Designers stehen drei Möglichkeiten zur Verfügung:
 
 - In **Projektmappen-Explorer**, doppelklicken Sie auf dem Menüband-Codedatei.
@@ -98,7 +98,7 @@ ms.locfileid: "54867259"
 
    Steuerelemente kann nicht auf dem Menüband nicht von einer Registerkarte zur anderen gezogen werden. Wenn Sie ein Steuerelement in eine andere Registerkarte verschieben möchten, müssen Sie verwenden die **Ausschneiden** Befehl für entfernen Sie das Steuerelement von einer Registerkarte, und klicken Sie dann in eine andere Registerkarte eingefügt. Wird das Steuerelement ausgeschnitten und eingefügt, wird der Ereignishandler angehalten. Sie können die Ereignishandler im Wiederherstellen der **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Fenster "Eigenschaften"](../ide/reference/properties-window.md).
 
-###  <a name="AddTabToRibbon"></a> Hinzufügen von benutzerdefinierten Registerkarten zum Menüband
+### <a name="AddTabToRibbon"></a> Hinzufügen von benutzerdefinierten Registerkarten zum Menüband
  Es gibt drei Möglichkeiten zum Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband:
 
 - Hinzufügen einer Registerkarte aus der **Toolbox**.
@@ -114,11 +114,11 @@ ms.locfileid: "54867259"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>Entfernen von benutzerdefinierten Registerkarten vom Menüband
  Es gibt drei Möglichkeiten zum Entfernen einer benutzerdefinierten Registerkarte vom Menüband aus:
 
--   Mit der rechten Maustaste in des Designers, und klicken Sie dann auf **Registerkarte für Menüband entfernen**.
+- Mit der rechten Maustaste in des Designers, und klicken Sie dann auf **Registerkarte für Menüband entfernen**.
 
--   In der **Befehle** im Bereich der **Eigenschaften** Fenster, klicken Sie auf **Registerkarte für Menüband entfernen**.
+- In der **Befehle** im Bereich der **Eigenschaften** Fenster, klicken Sie auf **Registerkarte für Menüband entfernen**.
 
--   Öffnen der **Registerkartenauflistungs-Editor**, wählen Sie die Registerkarte, und klicken Sie dann auf **entfernen**.
+- Öffnen der **Registerkartenauflistungs-Editor**, wählen Sie die Registerkarte, und klicken Sie dann auf **entfernen**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Ändern der Position einer Registerkarte des Menübands
  Sie können die Reihenfolge von benutzerdefinierten Registerkarten auf einem Menüband ändern. Sie können auch benutzerdefinierte Registerkarten vor oder nach einer integrierten Registerkarte auf dem Menüband positionieren. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern der Position einer Registerkarte des Menübands](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
@@ -132,10 +132,10 @@ ms.locfileid: "54867259"
 
  Ausführliche Informationen zum Anpassen einer integrierten Registerkarte finden Sie unter [Vorgehensweise: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md).
 
-###  <a name="AddGroupsToTab"></a> Hinzufügen von Gruppen zu einer Registerkarte
+### <a name="AddGroupsToTab"></a> Hinzufügen von Gruppen zu einer Registerkarte
  Steuerelemente auf dem Menüband werden mithilfe von Gruppen logisch organisiert. Fügen Sie Registerkarten Gruppen hinzu. Fügen Sie der Gruppe alle anderen Steuerelemente hinzu.
 
-###  <a name="AddControlsToGroups"></a> Hinzufügen von Steuerelementen zu Gruppen
+### <a name="AddControlsToGroups"></a> Hinzufügen von Steuerelementen zu Gruppen
  Fügen Sie einer Gruppe mindestens ein Steuerelement hinzu. In der folgenden Tabelle wird jedes Steuerelement beschrieben.
 
 |Steuerelement|Beschreibung|
@@ -154,7 +154,7 @@ ms.locfileid: "54867259"
 |**SplitButton**|Eine Schaltfläche mit einem angehängten Menü. Eine Trennschaltfläche kann jedes der folgenden Steuerelemente beinhalten:<br /><br /> -Schaltfläche ""<br />-Kontrollkästchen<br />-Katalog<br />-Menü<br />-Die unterteilte Schaltfläche<br />-Aus-Schaltfläche<br />-Trennzeichen<br /><br /> Ebenso wie das Menü verfügt die Trennschaltfläche über eine eigene Entwurfsoberfläche. Allerdings können im Gegensatz zu einem Menü, Sie nur die Elemente aktualisiert auf einer Trennschaltfläche vor dem Laden des Menübands in die Office-Anwendung. Weitere Informationen zum Aktualisieren der Elemente auf einer Trennschaltfläche finden Sie unter [Multifunktionsleisten-objektmodellübersicht](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Eine Schaltfläche, die gedrückt oder nicht gedrückt angezeigt wird.|
 
-##  <a name="HandleEventsSetProperties"></a> Behandeln von Ereignissen und Festlegen von Eigenschaften
+## <a name="HandleEventsSetProperties"></a> Behandeln von Ereignissen und Festlegen von Eigenschaften
  Menüband-Designer können Sie zum Festlegen von Steuerelementeigenschaften zur Entwurfszeit mithilfe der **Eigenschaften** Fenster. Darüber hinaus macht das Menüband ein stark typisiertes Objektmodell, mit denen Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verfügbar.
 
  Sie können auf jedes Steuerelement im Designer doppelklicken, um einen Ereignishandler für das Standardereignis des Steuerelements zu öffnen. Sie können Ereignishandler für alle anderen Steuerelementereignisse erstellen, mit der **Eigenschaften** Fenster.
@@ -163,7 +163,7 @@ ms.locfileid: "54867259"
 
  Informationen zum Behandeln von Menübandereignissen und zum Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit finden Sie unter [Multifunktionsleisten-objektmodellübersicht](../vsto/ribbon-object-model-overview.md).
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> Anpassen der Backstage-Ansicht
+## <a name="CustomizingMicrosoftOfficeButton"></a> Anpassen der Backstage-Ansicht
  Können Sie zum Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf dem Menüband-Designer die **Datei** Registerkarte. Mit diesem Menü wird die Backstage-Ansicht aufgerufen.
 
  Sie können mit dem Menüband-Designer keine Steuerelemente vor oder nach integrierten Steuerelementen positionieren. Ein integriertes Steuerelement ist ein Steuerelement, das bereits in der Backstage-Ansicht angezeigt wird. Wenn Sie Steuerelemente vor oder nach integrierten Steuerelementen positionieren möchten, müssen Sie ein Menüband-XML verwenden. Weitere Informationen zu **Menüband (XML)**, finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md). Weitere Informationen zum Anpassen der Backstage-Ansicht finden Sie unter [Einführung in die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182189) und [anpassen die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182188).
@@ -172,7 +172,7 @@ ms.locfileid: "54867259"
 
  Weitere Informationen zur Vorgehensweise beim Hinzufügen von Steuerelementen zur Backstage-Ansicht finden Sie unter [Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-##  <a name="Accessibility"></a> Barrierefreiheit im Menüband-Designer
+## <a name="Accessibility"></a> Barrierefreiheit im Menüband-Designer
  Steuerelemente auf dem Menüband-Designer können mithilfe von Tastenkombinationen verschoben werden. Einige Tastenkombinationen gelten für alle Steuerelemente, wohingegen einige Tastenkombinationen nur für Steuerelemente mit Menüs verwendbar sind.
 
  Die für alle Steuerelemente verwendbaren Tastenkombinationen werden in der folgenden Tabelle angezeigt.

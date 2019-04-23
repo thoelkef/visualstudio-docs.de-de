@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080916"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Erweitern von anderen Teilen von Visual Studio
 
@@ -29,9 +29,9 @@ Die grundlegenden Bausteine von Visual Studio-Erweiterbarkeit sind VSPackages.  
 
 Erfahren Sie, wie Sie die neuen Steuerelemente und andere Elemente zur Toolbox hinzufügen und wie Sie mit der Funktionalität der Toolbox:
 
--   [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Erstellen Sie ein WPF-Toolbox-Steuerelement](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Erweitern der Statusleiste
 

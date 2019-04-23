@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104543"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
 
@@ -27,13 +27,13 @@ Dieses Thema beschreibt die Arten von Fehlermeldungen, die bei der Arbeit mit Wo
 
 Fehler im Workflow-Designer werden in den folgenden Situationen auftreten:
 
-1.  In einem Ausdruck liegt ein Fehler vor.
+1. In einem Ausdruck liegt ein Fehler vor.
 
-2.  Die Validierungseinschränkungen einer Aktivität wurden nicht erfüllt.
+2. Die Validierungseinschränkungen einer Aktivität wurden nicht erfüllt.
 
-3.  Die XAML-Datei enthält Fehler, die bewirken, dass eine Aktivität nicht geladen werden kann.
+3. Die XAML-Datei enthält Fehler, die bewirken, dass eine Aktivität nicht geladen werden kann.
 
-4.  Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
+4. Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
 
 Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich erstellt, zur Laufzeit wird jedoch eine Ausnahme vom Typ <xref:System.Activities.InvalidWorkflowException> ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 

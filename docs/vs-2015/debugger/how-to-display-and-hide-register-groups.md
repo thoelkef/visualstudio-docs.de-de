@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106357"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Vorgehensweise: Anzeigen und Ausblenden von Registergruppen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Das Fenster **Register** ist nur verfügbar, wenn Debuggen auf Adressebene im Di
   
 ### <a name="to-display-or-hide-register-groups"></a>So zeigen Sie Registergruppen an oder blenden sie aus  
   
-1.  Klicken Sie mit der rechten Maustaste in das Fenster **Register**.  
+1. Klicken Sie mit der rechten Maustaste in das Fenster **Register**.  
   
-2.  Wählen Sie im Kontextmenü die Registergruppen aus, die Sie anzeigen oder ausblenden möchten.  
+2. Wählen Sie im Kontextmenü die Registergruppen aus, die Sie anzeigen oder ausblenden möchten.  
   
      Registergruppen, die von der zum Debuggen verwendeten Hardware nicht unterstützt werden, sind im Kontextmenü deaktiviert und können folglich nicht ausgewählt werden.  
   

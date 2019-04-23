@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080903"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Vorgehensweise: Unterdrücken von Warnungen über das Menüelement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ HINWEIS]
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Eine Warnung zu unterdrücken, über Menüelement  
   
-1.  Auf der **analysieren** Menü wählen **Windows** und wählen Sie dann **Codeanalyse**.  
+1. Auf der **analysieren** Menü wählen **Windows** und wählen Sie dann **Codeanalyse**.  
   
-2.  In der **Codeanalyse** Fenster, wählen Sie die Warnung unterdrücken.  
+2. In der **Codeanalyse** Fenster, wählen Sie die Warnung unterdrücken.  
   
-3.  Wählen Sie die Aktionen, und wählen Sie dann **Nachrichten unterdrücken**, und wählen Sie dann entweder **In Quelle** oder **In Projektunterdrückungsdatei**.  
+3. Wählen Sie die Aktionen, und wählen Sie dann **Nachrichten unterdrücken**, und wählen Sie dann entweder **In Quelle** oder **In Projektunterdrückungsdatei**.  
   
      Die betreffende Warnung unterdrückt wird, und die Warnung wird im Fenster "Codeanalyse" durchgestrichen angezeigt.  
   

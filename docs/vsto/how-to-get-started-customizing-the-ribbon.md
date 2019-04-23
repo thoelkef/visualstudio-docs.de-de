@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081566"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Vorgehensweise: Erste Schritte beim Anpassen des Menübands
   Fügen Sie zum Anpassen des Menübands einer Microsoft Office-Anwendung eine **Menüband (visueller Designer)** oder **Menüband (XML)** Element, das ein Office-Projekt.
@@ -37,33 +37,33 @@ ms.locfileid: "56640115"
 
     Dürfen enthalten keine die folgenden Zeichen:
 
-   -   Nummernzeichen (#)
+   - Nummernzeichen (#)
 
-   -   Prozentzeichen (%)
+   - Prozentzeichen (%)
 
-   -   Kaufmännisches und-Zeichen (&)
+   - Kaufmännisches und-Zeichen (&)
 
-   -   Sternchen (*)
+   - Sternchen (*)
 
-   -   Senkrechter Strich (|)
+   - Senkrechter Strich (|)
 
-   -   Umgekehrter Schrägstrich (\\)
+   - Umgekehrter Schrägstrich (\\)
 
-   -   Doppelpunkt (:)
+   - Doppelpunkt (:)
 
-   -   Doppeltes Anführungszeichen (")
+   - Doppeltes Anführungszeichen (")
 
-   -   Kleiner als (\<)
+   - Kleiner als (\<)
 
-   -   Größer als (>)
+   - Größer als (>)
 
-   -   Fragezeichen (?)
+   - Fragezeichen (?)
 
-   -   Schrägstrich (/)
+   - Schrägstrich (/)
 
-   -   Führende oder nachfolgende Leerzeichen ("")
+   - Führende oder nachfolgende Leerzeichen ("")
 
-   -   Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) Windows oder DOS reservierte Namen
+   - Z. B. ("Nul", "Aux", "con", "com1", "lpt1" usw.) Windows oder DOS reservierte Namen
 
 4. Klicken Sie auf **OK**.
 

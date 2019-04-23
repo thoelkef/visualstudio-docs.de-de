@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fd519b396f5120b7b0acca8d2e6144e363ab1f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075544"
 ---
 # <a name="how-to-add-a-resource-file"></a>Vorgehensweise: Hinzufügen einer Ressourcendatei
   Die Befehle zum Hinzufügen von Ressourcendateien ist der Knoten "Projektmappe" und Feature-Knoten im Projektmappen-Explorer im Kontextmenü. Weitere Informationen finden Sie unter [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md).
@@ -42,13 +42,13 @@ ms.locfileid: "56633056"
 
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Hinzufügen eine Featureressourcendatei mit einer SharePoint-Funktion
 
-1.  Wenn die SharePoint-Lösung nicht bereits geöffnet, in ist [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], öffnen Sie die Projektmappe.
+1. Wenn die SharePoint-Lösung nicht bereits geöffnet, in ist [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], öffnen Sie die Projektmappe.
 
-2.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Namen einer Funktion unter den **Features** Knoten, und wählen Sie dann **Funktionsressource hinzufügen**.
+2. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für den Namen einer Funktion unter den **Features** Knoten, und wählen Sie dann **Funktionsressource hinzufügen**.
 
      Dieser Schritt fügt eine Ressourcendatei für das Feature in das Format _ResourceFileName_**.** _Kultur_**resx**, z. B. *Feature1.en-US.resx*.
 
-3.  Wenn der **Ressourcen-Editor-** öffnet im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Hinzufügen von Ressourcen in der Ressourcendatei.
+3. Wenn der **Ressourcen-Editor-** öffnet im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Hinzufügen von Ressourcen in der Ressourcendatei.
 
 ## <a name="see-also"></a>Siehe auch
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

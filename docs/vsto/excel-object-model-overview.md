@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104541"
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:
@@ -66,7 +66,7 @@ ms.locfileid: "56628584"
 
  Da die Daten in einem Excel-Dokument sehr strukturiert sind, ist das Objektmodell hierarchisch und unkompliziert. Excel enthält Hunderte von Objekten, die mit denen Sie interagieren möchten, aber Sie können einen guten Ausgangspunkt für das Objektmodell durch die Konzentration auf eine kleine Teilmenge der verfügbaren Objekte abrufen. Dazu gehören die folgenden vier Objekte:
 
-- Anwendung
+- Application
 
 - Arbeitsmappe
 
@@ -99,7 +99,7 @@ ms.locfileid: "56628584"
 
  Visual Studio erweitert das <xref:Microsoft.Office.Interop.Excel.Range>-Objekt durch Bereitstellen des <xref:Microsoft.Office.Tools.Excel.NamedRange>-Typs und des <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>-Typs. Diese Typen verfügen größtenteils über die gleichen Funktionen wie ein <xref:Microsoft.Office.Interop.Excel.Range>-Objekt sowie über neue Funktionen, z. B. die Datenbindungsfunktion und neue Ereignisse. Weitere Informationen finden Sie unter [NamedRange-Steuerelement](../vsto/namedrange-control.md) und [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md).
 
-##  <a name="ExcelOMDocumentation"></a> Verwenden der Dokumentation zum Excel-Objektmodell
+## <a name="ExcelOMDocumentation"></a> Verwenden der Dokumentation zum Excel-Objektmodell
  Ausführliche Informationen zum Excel-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) für Excel und der VBA-Objektmodellreferenz.
 
 ### <a name="primary-interop-assembly-reference"></a>Primäre interop-Assembly-Verweis

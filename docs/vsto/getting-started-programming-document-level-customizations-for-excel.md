@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114228"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Excel
   Wenn Sie gerade die mit Visual Studio erstellen von Anpassungen auf Dokumentebene für Microsoft Office Excel Schritte ersten, ist hier was Sie wissen müssen.
@@ -44,11 +44,11 @@ ms.locfileid: "56603793"
 
  Weitere Informationen finden Sie unter den folgenden Themen:
 
--   [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
+- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
 
--   [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
+- [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Anpassen der Benutzeroberfläche von Excel
  Die meisten Microsoft Office-Projektmappen ändern der Benutzeroberfläche (UI) der Office-Anwendung eine Möglichkeit für Benutzer, für die Interaktion mit der Lösung bereitstellen. Es gibt viele Möglichkeiten, die in denen Sie der Benutzeroberfläche von Excel mit einer Anpassung auf Dokumentebene ändern können. Beispielsweise können Sie Steuerelemente hinzufügen, auf dem Menüband, oder Sie können einen Aktionsbereich anzeigen. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).

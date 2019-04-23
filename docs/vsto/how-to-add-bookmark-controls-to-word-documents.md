@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07afb43ebe34e5bbaba045bf26e83dbf51ed4bc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104524"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten
   Sie können in Projekten auf Dokumentebene hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelemente an das Dokument in Ihrem Projekt zur Entwurfszeit oder zur Laufzeit. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelementen zu einem beliebigen geöffneten Dokument zur Laufzeit.
@@ -38,7 +38,7 @@ ms.locfileid: "56631275"
 
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelemente finden Sie [Bookmark-Steuerelement](../vsto/bookmark-control.md).
 
-##  <a name="designtime"></a> Hinzufügen von Lesezeichen-Steuerelementen zur Entwurfszeit
+## <a name="designtime"></a> Hinzufügen von Lesezeichen-Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten, wie Sie einem Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen können:
 
 - Die **Toolbox**von Visual Studio.
@@ -57,27 +57,27 @@ ms.locfileid: "56631275"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>So fügen Sie einem Dokument ein Lesezeichen-Steuerelement aus der Toolbox hinzu
 
-1.  Öffnen Sie die **Toolbox** , und klicken Sie auf die Registerkarte **Word-Steuerelemente** .
+1. Öffnen Sie die **Toolbox** , und klicken Sie auf die Registerkarte **Word-Steuerelemente** .
 
-2.  Ziehen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf das Dokument.
+2. Ziehen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf das Dokument.
 
      Das Dialogfeld **Lesezeichen hinzufügen** wird angezeigt.
 
-3.  Wählen Sie den Text oder andere Elemente aus, die Sie in das Lesezeichen einschließen möchten.
+3. Wählen Sie den Text oder andere Elemente aus, die Sie in das Lesezeichen einschließen möchten.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
      Wenn Sie nicht den Standardnamen für das Lesezeichen beibehalten möchten, können Sie den Namen im Fenster **Eigenschaften** ändern.
 
 #### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>So fügen Sie einem Dokument in Word ein Lesezeichen-Steuerelement hinzu
 
-1.  Platzieren Sie den Cursor in dem Dokument, das im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Designer gehostet wird, an der Stelle, an der Sie das Lesezeichen hinzufügen möchten, oder wählen Sie den Text aus, der vom Lesezeichen eingeschlossen werden soll.
+1. Platzieren Sie den Cursor in dem Dokument, das im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Designer gehostet wird, an der Stelle, an der Sie das Lesezeichen hinzufügen möchten, oder wählen Sie den Text aus, der vom Lesezeichen eingeschlossen werden soll.
 
-2.  Klicken Sie auf der Registerkarte **Einfügen** des Menübands in der Gruppe **Links** auf die Schaltfläche **Lesezeichen** .
+2. Klicken Sie auf der Registerkarte **Einfügen** des Menübands in der Gruppe **Links** auf die Schaltfläche **Lesezeichen** .
 
-3.  Geben Sie im Dialogfeld **Lesezeichen** den Namen des neuen Lesezeichens ein, und klicken Sie auf **Hinzufügen**.
+3. Geben Sie im Dialogfeld **Lesezeichen** den Namen des neuen Lesezeichens ein, und klicken Sie auf **Hinzufügen**.
 
-##  <a name="runtimedoclevel"></a> Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene
+## <a name="runtimedoclevel"></a> Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene
  Können Sie hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente programmgesteuert in Ihr Dokument zur Laufzeit mithilfe der Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> Eigenschaft der `ThisDocument` Klasse im Projekt. Es gibt zwei Methodenüberladungen, mit denen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf die folgenden Weisen hinzufügen können:
 
 - Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> in einem angegebenen Bereich hinzu.
@@ -88,7 +88,7 @@ ms.locfileid: "56631275"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>So fügen Sie einem Dokument ein Lesezeichen-Steuerelement programmgesteuert hinzu
 
-1.  Fügen Sie im `ThisDocument_Startup` -Ereignishandler Ihres Projekts den folgenden Code ein, um das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement dem ersten Absatz des Dokuments hinzuzufügen.
+1. Fügen Sie im `ThisDocument_Startup` -Ereignishandler Ihres Projekts den folgenden Code ein, um das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement dem ersten Absatz des Dokuments hinzuzufügen.
 
      [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
@@ -96,7 +96,7 @@ ms.locfileid: "56631275"
     > [!NOTE]
     >  Wenn Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement von einem vorhandenen <xref:Microsoft.Office.Interop.Word.Bookmark>erstellen möchten, verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> -Methode und übergeben das vorhandene <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
-##  <a name="runtimeaddin"></a> Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="runtimeaddin"></a> Hinzufügen von Lesezeichen-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können hinzufügen <xref:Microsoft.Office.Tools.Word.Bookmark> Steuerelemente programmgesteuert zu einem beliebigen geöffneten Dokument zur Laufzeit mithilfe eines VSTO-Add-Ins. Zu diesem Zweck generieren Sie ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement, das auf einem geöffneten Dokument basiert, und verwenden dann die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> -Eigenschaft dieses Hostelements. Es gibt zwei Methodenüberladungen, mit denen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement auf die folgenden Weisen hinzufügen können:
 
 - Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> in einem angegebenen Bereich hinzu.
@@ -109,7 +109,7 @@ ms.locfileid: "56631275"
 
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>So fügen Sie ein Lesezeichen-Steuerelement in einem angegebenen Bereich hinzu
 
-1.  Verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> -Methode, und übergeben Sie den <xref:Microsoft.Office.Interop.Word.Range> an der Stelle, an der Sie das <xref:Microsoft.Office.Tools.Word.Bookmark>hinzufügen möchten.
+1. Verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> -Methode, und übergeben Sie den <xref:Microsoft.Office.Interop.Word.Range> an der Stelle, an der Sie das <xref:Microsoft.Office.Tools.Word.Bookmark>hinzufügen möchten.
 
      Im folgenden Codebeispiel wird ein neues <xref:Microsoft.Office.Tools.Word.Bookmark> am Anfang des aktiven Dokuments hinzugefügt. Um dieses Beispiel zu verwenden, führen Sie den Code vom `ThisAddIn_Startup` -Ereignishandler in einem Word-VSTO-Add-In-Projekt aus.
 
@@ -118,7 +118,7 @@ ms.locfileid: "56631275"
 
 #### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>So fügen Sie ein Lesezeichen-Steuerelement hinzu, das auf einem systemeigenen Lesezeichen-Steuerelement basiert
 
-1.  Verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> -Methode, und übergeben Sie das vorhandene <xref:Microsoft.Office.Interop.Word.Bookmark> , das Sie als Grundlage für das neue <xref:Microsoft.Office.Tools.Word.Bookmark>verwenden möchten.
+1. Verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> -Methode, und übergeben Sie das vorhandene <xref:Microsoft.Office.Interop.Word.Bookmark> , das Sie als Grundlage für das neue <xref:Microsoft.Office.Tools.Word.Bookmark>verwenden möchten.
 
      Im folgenden Codebeispiel wird ein neues <xref:Microsoft.Office.Tools.Word.Bookmark> basierend auf dem ersten <xref:Microsoft.Office.Interop.Word.Bookmark> im aktiven Dokument erstellt. Um dieses Beispiel zu verwenden, führen Sie den Code vom `ThisAddIn_Startup` -Ereignishandler in einem Word-VSTO-Add-In-Projekt aus.
 

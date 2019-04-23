@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106266"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wählen Sie das Installationsverzeichnis für ein VSPackage
 Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benutzers Datei sein. Der Speicherort hängt davon ab, ob das VSPackage wird verwaltet oder nicht verwaltet, Ihr Schema für die versionsverwaltung von Seite-an-Seite, und klicken Sie auf Benutzerauswahl.
@@ -47,15 +47,15 @@ Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benu
 
  Die [verwalten VSPackages](../../extensibility/managing-vspackages.md) Artikel gibt an, dass die Registrierungseinträge steuern, wo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tatsächlich sucht einer VSPackages Satelliten-DLL. Allerdings [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versucht, eine Satelliten-DLL in einem Unterverzeichnis mit dem Namen für einen LCID-Wert, in der folgenden Reihenfolge zu laden:
 
-1.  Standard-LCID (Visual Studio-LCID, z. B. *\1033* für Englisch)
+1. Standard-LCID (Visual Studio-LCID, z. B. *\1033* für Englisch)
 
-2.  Standard-LCID mit der standardmäßigen Sprachvariante an.
+2. Standard-LCID mit der standardmäßigen Sprachvariante an.
 
-3.  Systemstandard LCID.
+3. Systemstandard LCID.
 
-4.  Systemstandard LCID mit der standardmäßigen Sprachvariante an.
+4. Systemstandard LCID mit der standardmäßigen Sprachvariante an.
 
-5.  USA Englisch (*. \1033* oder *. \0x409*).
+5. USA Englisch (*. \1033* oder *. \0x409*).
 
 Wenn Ihre VSPackage-DLL-Ressourcen enthält und die **SatelliteDll\DllName** Registrierungseintrag verweist, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versucht, die sie in der oben genannten Reihenfolge zu laden.
 

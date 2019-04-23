@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105590"
 ---
 # <a name="warning-script-debugging-disabled"></a>Warnung: Skriptdebuggen deaktiviert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>So aktivieren Sie das Skriptdebuggen in Internet Explorer  
   
-1.  Wählen Sie in Internet Explorer im Menü **Extras** die Option **Internetoptionen** aus.  
+1. Wählen Sie in Internet Explorer im Menü **Extras** die Option **Internetoptionen** aus.  
   
-2.  Klicken Sie im Dialogfeld **Internetoptionen** auf die Registerkarte **Erweitert**.  
+2. Klicken Sie im Dialogfeld **Internetoptionen** auf die Registerkarte **Erweitert**.  
   
-3.  Zeigen Sie auf der Registerkarte **Erweitert** unter der Kategorie **Browsen** das Feld **Einstellungen** an.  
+3. Zeigen Sie auf der Registerkarte **Erweitert** unter der Kategorie **Browsen** das Feld **Einstellungen** an.  
   
-4.  Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)**.  
+4. Deaktivieren Sie **Skriptdebugging deaktivieren (Internet Explorer)**.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
-6.  Beenden Sie Internet Explorer, und starten Sie die Anwendung neu.  
+6. Beenden Sie Internet Explorer, und starten Sie die Anwendung neu.  
   
      Die neuen Einstellungen sind jetzt wirksam.  
   

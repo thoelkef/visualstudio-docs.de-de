@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105044"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
  Ein benutzerdefiniertes Tool erstellt ein oder mehrere neue Elemente in einem Diagramm. Sie können z. B. ein benutzerdefiniertes Tool zum Erstellen von Elementen, wie beispielsweise die folgenden, erstellen:  
   
--   Ein Paket, das mit dem .NET-Profil verknüpft ist, und eine Klasse mit dem .NET-Stereotyp.  
+- Ein Paket, das mit dem .NET-Profil verknüpft ist, und eine Klasse mit dem .NET-Stereotyp.  
   
--   Ein Paar von Klassen, das durch eine Zuordnung verknüpft ist, um das Observer-Muster darzustellen.  
+- Ein Paar von Klassen, das durch eine Zuordnung verknüpft ist, um das Observer-Muster darzustellen.  
   
 > [!NOTE]
 >  Sie können diese Methode verwenden, um Elementtools zu erstellen. Das heißt, Sie können Tools erstellen, die Sie aus der Toolbox in ein Diagramm ziehen. Sie können keine Connector-Tools erstellen.  
   
-##  <a name="DefineTool"></a> Definieren ein benutzerdefinierten Modellierungstools  
+## <a name="DefineTool"></a> Definieren ein benutzerdefinierten Modellierungstools  
   
 #### <a name="to-define-a-custom-modeling-tool"></a>So definieren Sie ein benutzerdefiniertes Modellierungstool  
   
-1.  Erstellen Sie ein UML-Diagramm, das ein Element oder eine Gruppe von Elementen enthält.  
+1. Erstellen Sie ein UML-Diagramm, das ein Element oder eine Gruppe von Elementen enthält.  
   
-    -   Diese Elemente können Beziehungen untereinander haben und untergeordnete Elemente wie Ports, Attribute, Vorgänge oder Pins aufweisen.  
+    - Diese Elemente können Beziehungen untereinander haben und untergeordnete Elemente wie Ports, Attribute, Vorgänge oder Pins aufweisen.  
   
-2.  Speichern Sie das Diagramm mit dem Namen, den das neue Tool erhalten soll. Auf der **Datei** Menü **speichern... Als**.  
+2. Speichern Sie das Diagramm mit dem Namen, den das neue Tool erhalten soll. Auf der **Datei** Menü **speichern... Als**.  
   
-3.  Kopieren Sie mithilfe von Windows-Explorer die zwei Diagrammdateien in den folgenden Ordner oder einen beliebigen Unterordner:  
+3. Kopieren Sie mithilfe von Windows-Explorer die zwei Diagrammdateien in den folgenden Ordner oder einen beliebigen Unterordner:  
   
      *YourDocuments* **\Visual Studio\Architecture Tools\Custom Toolboxelemente**  
   
-    -   Erstellen Sie diesen Ordner, wenn er nicht bereits vorhanden ist. Möglicherweise müssen Sie beide erstellen **Architekturtools** und **benutzerdefinierte Toolboxelemente**.  
+    - Erstellen Sie diesen Ordner, wenn er nicht bereits vorhanden ist. Möglicherweise müssen Sie beide erstellen **Architekturtools** und **benutzerdefinierte Toolboxelemente**.  
   
-    -   Kopieren Sie beide Diagrammdateien, eine mit einem Namen, der endet "... **Diagramm**"und der andere mit einem Namen, die endet"... **diagram.layout**"  
+    - Kopieren Sie beide Diagrammdateien, eine mit einem Namen, der endet "... **Diagramm**"und der andere mit einem Namen, die endet"... **diagram.layout**"  
   
-    -   Sie können beliebig viele benutzerdefinierte Tools erstellen. Verwenden Sie ein Diagramm für jedes Tool.  
+    - Sie können beliebig viele benutzerdefinierte Tools erstellen. Verwenden Sie ein Diagramm für jedes Tool.  
   
-4.  (Optional) Erstellen Sie eine **tbxinfo** Datei wie in beschrieben [Gewusst wie: Definieren der Eigenschaften des benutzerdefinierten Tools](#tbxinfo), und fügen Sie es in dasselbe Verzeichnis. Auf diese Weise können Sie ein Toolboxsymbol, eine QuickInfo usw. definieren.  
+4. (Optional) Erstellen Sie eine **tbxinfo** Datei wie in beschrieben [Gewusst wie: Definieren der Eigenschaften des benutzerdefinierten Tools](#tbxinfo), und fügen Sie es in dasselbe Verzeichnis. Auf diese Weise können Sie ein Toolboxsymbol, eine QuickInfo usw. definieren.  
   
-    -   Ein einzelnes **tbxinfo** Datei zum Definieren mehrerer Tools verwendet werden kann. Diese kann auf Diagrammdateien verweisen, die sich in Unterordnern befinden.  
+    - Ein einzelnes **tbxinfo** Datei zum Definieren mehrerer Tools verwendet werden kann. Diese kann auf Diagrammdateien verweisen, die sich in Unterordnern befinden.  
   
-5.  Starten Sie Visual Studio neu. Das zusätzliche Tool wird in der Toolbox für den entsprechenden Diagrammtyp angezeigt.  
+5. Starten Sie Visual Studio neu. Das zusätzliche Tool wird in der Toolbox für den entsprechenden Diagrammtyp angezeigt.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>Was vom benutzerdefinierten Tool repliziert wird  
  Ein benutzerdefiniertes Tool repliziert die meisten Funktionen des Quelldiagramms:  
@@ -83,7 +83,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
 - Connector-Routing Wenn Sie Connectors manuell weiterleiten, wird das Routing nicht beibehalten, wenn das Tool verwendet wird. Die Positionen einiger geschachtelter Formen, wie z. B. Ports, werden in Bezug auf ihre Besitzer nicht beibehalten.  
   
-##  <a name="tbxinfo"></a> Gewusst wie: Definieren Sie die Eigenschaften des benutzerdefinierten Tools  
+## <a name="tbxinfo"></a> Gewusst wie: Definieren Sie die Eigenschaften des benutzerdefinierten Tools  
  Einer Toolboxinformationsdatei (**tbxinfo**) Datei können Sie geben Sie einen Toolboxnamen, die Symbol, die QuickInfo, die Registerkarte, und ein Hilfeschlüsselwort für ein oder mehrere benutzerdefinierte Tools. Geben sie einen beliebigen Namen, wie z. B. **MyTools.tbxinfo**.  
   
  Die allgemeine Form der Datei ist wie folgt:  
@@ -138,35 +138,35 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 > [!NOTE]
 >  Wenn Sie beginnen, eine TBXINFO-Datei zu verwenden, nachdem Sie mit der alleinigen Verwendung von Diagrammdateien experimentiert haben, stellen sie möglicherweise fest, dass die Toolbox sowohl die alten als auch die neuen Versionen eines Toolboxelements enthält. Dies kann auch auftreten, wenn der Name der Diagrammdatei in der TBXINFO-Datei falsch eingegeben wurde. Wählen Sie in diesem Fall auf das Kontextmenü der Toolbox **Toolbox zurücksetzen**. Die benutzerdefinierten Toolboxelemente werden ausgeblendet. Starten Sie Visual Studio neu; daraufhin werden die richtigen benutzerdefinierten Elemente angezeigt.  
   
-##  <a name="Extension"></a> Gewusst wie: Verteilen von Toolboxelementen in Visual Studio-Erweiterung  
+## <a name="Extension"></a> Gewusst wie: Verteilen von Toolboxelementen in Visual Studio-Erweiterung  
  Sie können Toolboxelemente an andere verteilen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer, indem Sie sie in einem Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter [Bereitstellen von Visual Studio-Erweiterungen](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
  Die übliche Vorgehensweise zum Erstellen einer Visual Studio-Erweiterung besteht darin, die VSIX-Projektvorlage zu verwenden. Zu diesem Zweck muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.  
   
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>So fügen Sie ein Toolboxelement zu einer Visual Studio-Erweiterung hinzu  
   
-1.  [Erstellen und Testen Sie eine oder mehrere benutzerdefinierte Tools](#DefineTool).  
+1. [Erstellen und Testen Sie eine oder mehrere benutzerdefinierte Tools](#DefineTool).  
   
-2.  [Erstellen Sie eine tbxinfo-Datei](#tbxinfo) , die auf die Tools verweist.  
+2. [Erstellen Sie eine tbxinfo-Datei](#tbxinfo) , die auf die Tools verweist.  
   
-3.  Öffnen Sie ein vorhandenes Visual Studio-Erweiterungsprojekt.  
+3. Öffnen Sie ein vorhandenes Visual Studio-Erweiterungsprojekt.  
   
      \- oder –  
   
      Definieren Sie ein neues Visual Studio-Erweiterungsprojekt.  
   
-    1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
+    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
-    2.  In der **neues Projekt** Dialogfeld **installierte Vorlagen**, wählen Sie **Visual C#-**, **Erweiterbarkeit**, **VSIX Projekt**.  
+    2. In der **neues Projekt** Dialogfeld **installierte Vorlagen**, wählen Sie **Visual C#-**, **Erweiterbarkeit**, **VSIX Projekt**.  
   
-4.  Fügen Sie die Toolboxdefinitionen dem Projekt hinzu. Enthalten die **tbxinfo** -Datei, die Diagrammdateien, Bitmapdateien und alle Ressourcendateien ein, und stellen Sie sicher, dass sie in die VSIX-Datei enthalten sind.  
+4. Fügen Sie die Toolboxdefinitionen dem Projekt hinzu. Enthalten die **tbxinfo** -Datei, die Diagrammdateien, Bitmapdateien und alle Ressourcendateien ein, und stellen Sie sicher, dass sie in die VSIX-Datei enthalten sind.  
   
-    -   Wählen Sie im Projektmappen-Explorer auf das Kontextmenü des VSIX-Projekts **hinzufügen**, **vorhandenes Element**. Klicken Sie im Dialogfeld festlegen **Objekttyp: Alle Dateien**. Suchen Sie die Dateien, wählen sie alle aus, und wählen Sie dann **hinzufügen**.  
+    - Wählen Sie im Projektmappen-Explorer auf das Kontextmenü des VSIX-Projekts **hinzufügen**, **vorhandenes Element**. Klicken Sie im Dialogfeld festlegen **Objekttyp: Alle Dateien**. Suchen Sie die Dateien, wählen sie alle aus, und wählen Sie dann **hinzufügen**.  
   
         > [!NOTE]
         >  In diesem Projekt können die Diagrammdateien nicht im Modell-Editor geöffnet werden.  
   
-5.  Legen Sie die folgenden Eigenschaften aller Dateien fest, die Sie gerade hinzugefügt haben. Sie können ihre Eigenschaften gleichzeitig festlegen, indem Sie alle im Projektmappen-Explorer auswählen. Achten Sie darauf, dass Sie keine Änderungen an den Eigenschaften der anderen Dateien im Projekt vornehmen.  
+5. Legen Sie die folgenden Eigenschaften aller Dateien fest, die Sie gerade hinzugefügt haben. Sie können ihre Eigenschaften gleichzeitig festlegen, indem Sie alle im Projektmappen-Explorer auswählen. Achten Sie darauf, dass Sie keine Änderungen an den Eigenschaften der anderen Dateien im Projekt vornehmen.  
   
      **In Ausgabeverzeichnis kopieren** = **immer kopieren**  
   
@@ -174,24 +174,24 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
      **In VSIX einbeziehen** = **"true"**  
   
-6.  Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Erweiterungsmanifest-Editor geöffnet.  
+6. Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Erweiterungsmanifest-Editor geöffnet.  
   
-7.  Klicken Sie unter **Metadaten**, fügen Sie eine Beschreibung für die benutzerdefinierten Tools hinzu.  
+7. Klicken Sie unter **Metadaten**, fügen Sie eine Beschreibung für die benutzerdefinierten Tools hinzu.  
   
      Klicken Sie unter **Assets**, wählen Sie **neu** und legen Sie dann die Felder im Dialogfeld wie folgt:  
   
-    -   **Typ** = **benutzerdefinierte Erweiterungstyp**  
+    - **Typ** = **benutzerdefinierte Erweiterungstyp**  
   
-    -   Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  Dies ist keine der Optionen in der Dropdownliste. Sie müssen sie über die Tastatur eingeben.  
   
-    -   **Quelle** = **Datei im Dateisystem**.  
+    - **Quelle** = **Datei im Dateisystem**.  
   
-    -   **Pfad** = Ihre **tbxinfo** -Datei, z. B. **MyTools.tbxinfo**  
+    - **Pfad** = Ihre **tbxinfo** -Datei, z. B. **MyTools.tbxinfo**  
   
-8.  Erstellen Sie das Projekt.  
+8. Erstellen Sie das Projekt.  
   
 9. **Um sicherzustellen, dass die Erweiterung funktioniert**, drücken Sie F5. Die experimentelle Instanz von Visual Studio wird geöffnet.  
   
@@ -201,11 +201,11 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>So installieren Sie benutzerdefinierte Tools aus einer Visual Studio-Erweiterung  
   
-1.  Öffnen Sie im Windows-Explorer oder in Visual Studio die `.vsix`-Datei.  
+1. Öffnen Sie im Windows-Explorer oder in Visual Studio die `.vsix`-Datei.  
   
-2.  Wählen Sie **installieren** im Dialogfeld, das angezeigt wird.  
+2. Wählen Sie **installieren** im Dialogfeld, das angezeigt wird.  
   
-3.  Öffnen Sie zum Deinstallieren oder vorübergehend deaktivieren Sie die Erweiterung, **Erweiterungen und Updates** aus der **Tools** Menü.  
+3. Öffnen Sie zum Deinstallieren oder vorübergehend deaktivieren Sie die Erweiterung, **Erweiterungen und Updates** aus der **Tools** Menü.  
   
 ## <a name="localization"></a>Lokalisierung  
  Sie können eine Erweiterung erstellen, die bei der Installation auf einem anderen Computer Toolnamen und QuickInfos in der Sprache des Zielcomputers anzeigt.  

@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 347e16f519c90a9a11d4fde278030fe021d4860d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074972"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Gewusst wie: Angeben von Debuggereinstellungen
+# <a name="how-to-specify-debugger-settings"></a>Vorgehensweise: Angeben von Debuggereinstellungen
 Das Debugverhalten kann in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe verschiedener Einstellungen angepasst werden. Sie können z. B. festlegen, wie Variablen angezeigt werden sollen, ob bestimmte Warnungen ausgegeben werden, wie Haltepunkte festgelegt werden und welchen Einfluss Unterbrechungen auf gegenwärtig ausgeführte Programme haben. Die Debuggereinstellungen werden im Dialogfeld **Optionen** festgelegt.
 
 ### <a name="to-set-debugger-options"></a>So legen Sie Debuggeroptionen fest
 
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.
+1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2.  Öffnen Sie im Dialogfeld **Optionen** den Ordner **Debuggen**.
+2. Öffnen Sie im Dialogfeld **Optionen** den Ordner **Debuggen**.
 
-3.  Wählen Sie die gewünschte Optionskategorie im Ordner **Debuggen** aus.
+3. Wählen Sie die gewünschte Optionskategorie im Ordner **Debuggen** aus.
 
      Die am häufigsten verwendeten Optionen sind unter der Kategorie **Allgemein** aufgeführt. Weitere Informationen finden Sie unter [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).
 
-4.  Aktivieren oder deaktivieren Sie die gewünschten Optionen. Hilfe zu den Optionen erhalten Sie, indem Sie F1 drücken.
+4. Aktivieren oder deaktivieren Sie die gewünschten Optionen. Hilfe zu den Optionen erhalten Sie, indem Sie F1 drücken.
 
 ## <a name="see-also"></a>Siehe auch
 - [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)

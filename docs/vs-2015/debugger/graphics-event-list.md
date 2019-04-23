@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59001130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105629"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
   
 ##### <a name="to-change-the-event-list-view-mode"></a>So ändern Sie den Ansichtsmodus der Ereignisliste  
   
--   Suchen Sie im Fenster **Grafikereignisliste** über der Ereignisliste die Dropdownliste **Ansicht** , und wählen Sie entweder die Ansicht **Zeitachse** oder die Ansicht **Zeichnen-Befehle** .  
+- Suchen Sie im Fenster **Grafikereignisliste** über der Ereignisliste die Dropdownliste **Ansicht** , und wählen Sie entweder die Ansicht **Zeitachse** oder die Ansicht **Zeichnen-Befehle** .  
   
 ### <a name="filtering-events"></a>Filtern von Ereignissen  
  Sie können mithilfe des Feldes "Suchen" in der oberen rechten Ecke des Fensters **Grafikereignisliste** die Ereignisliste so filtern, dass sie nur Ereignisse enthält, in deren Namen bestimmte Schlüsselwörter vorkommen. Sie können einzelne Schlüsselwörter wie `Vertex`(s. Abbildung oben) oder mehrere Schlüsselwörter angeben, indem Sie eine durch Semikola getrennte Liste wie z.B. `Draw;Primitive`erstellen. Diese findet alle Ereignisse, in deren Namen entweder `Draw` oder `Primitive` vorkommt. Suchen sind leerzeichenspezifisch -– `VSSet` und `VS Set` sind z.B. verschiedene Suchvorgänge. Stellen Sie daher sicher, dass Sie Ihre Suchen sorgfältig ausführen.  

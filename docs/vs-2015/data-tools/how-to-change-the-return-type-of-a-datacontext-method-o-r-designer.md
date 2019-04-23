@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077471"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Vorgehensweise: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Der Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode, die basieren
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>So ändern Sie den Rückgabetyp einer DataContext-Methode vom automatisch generierten Typ in eine Entitätsklasse  
   
-1.  Wählen Sie im Methodenbereich die <xref:System.Data.Linq.DataContext>-Methode aus.  
+1. Wählen Sie im Methodenbereich die <xref:System.Data.Linq.DataContext>-Methode aus.  
   
-2.  Wählen Sie im Fenster **Eigenschaften** die Option **Rückgabetyp** und anschließend in der Liste **Rückgabetyp** eine verfügbare Entitätsklasse aus. Wenn die gewünschte Entitätsklasse nicht in der Liste enthalten ist, hinzufügen oder erstellen sie im der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] um es der Liste hinzuzufügen.  
+2. Wählen Sie im Fenster **Eigenschaften** die Option **Rückgabetyp** und anschließend in der Liste **Rückgabetyp** eine verfügbare Entitätsklasse aus. Wenn die gewünschte Entitätsklasse nicht in der Liste enthalten ist, hinzufügen oder erstellen sie im der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] um es der Liste hinzuzufügen.  
   
-3.  Speichern Sie die DBML-Datei.  
+3. Speichern Sie die DBML-Datei.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>So ändern Sie den Rückgabetyp einer DataContext-Methode von einer Entitätsklasse zurück in einen automatisch generierten Typ  
   
-1.  Wählen Sie im Methodenbereich die <xref:System.Data.Linq.DataContext>-Methode aus, und löschen Sie sie.  
+1. Wählen Sie im Methodenbereich die <xref:System.Data.Linq.DataContext>-Methode aus, und löschen Sie sie.  
   
-2.  Ziehen Sie das Datenbankobjekt, das von **Server-Explorer**/**Datenbank-Explorer** auf einen leeren Bereich des O/R-Designers.  
+2. Ziehen Sie das Datenbankobjekt, das von **Server-Explorer**/**Datenbank-Explorer** auf einen leeren Bereich des O/R-Designers.  
   
-3.  Speichern Sie die DBML-Datei.  
+3. Speichern Sie die DBML-Datei.  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

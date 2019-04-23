@@ -1,5 +1,5 @@
 ---
-title: 'Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#) | Microsoft-Dokumentation'
+title: 'Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (c#) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58957649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085085"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen (C#)
 Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Funktion "Bearbeiten und Fortsetzen" nicht zulässig ist.  
@@ -79,11 +79,11 @@ Sie haben einen Codeabschnitt auf eine Weise bearbeitet, die in der Visual C#-Fu
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Wählen Sie im Menü **Debuggen** den Befehl **Rückgängig** aus, um die Änderung rückgängig zu machen.  
+1. Wählen Sie im Menü **Debuggen** den Befehl **Rückgängig** aus, um die Änderung rückgängig zu machen.  
   
      - oder -   
   
-2.  Halten Sie die Debugsitzung an, nehmen Sie die Änderungen vor, und starten Sie eine neue Debugsitzung.  
+2. Halten Sie die Debugsitzung an, nehmen Sie die Änderungen vor, und starten Sie eine neue Debugsitzung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

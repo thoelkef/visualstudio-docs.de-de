@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105837"
 ---
 # <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
   
   Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauenswürdigen Anwendung zu nutzen:  
   
-1.  Rufen Sie ein Zertifikat für den Herausgeber ab.  
+1. Rufen Sie ein Zertifikat für den Herausgeber ab.  
   
-2.  Fügen Sie den Herausgeber zum Speicher für vertrauenswürdige Herausgeber auf allen Clients hinzu.  
+2. Fügen Sie den Herausgeber zum Speicher für vertrauenswürdige Herausgeber auf allen Clients hinzu.  
   
-3.  Erstellen Sie Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung.  
+3. Erstellen Sie Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung.  
   
-4.  Signieren Sie das Bereitstellungsmanifest mit dem Zertifikat des Herausgebers.  
+4. Signieren Sie das Bereitstellungsmanifest mit dem Zertifikat des Herausgebers.  
   
-5.  Veröffentlichen Sie die Anwendungsbereitstellung auf Clientcomputern.  
+5. Veröffentlichen Sie die Anwendungsbereitstellung auf Clientcomputern.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Abrufen eines Zertifikats für den Herausgeber  
  Digitale Zertifikate sind eine Kernkomponente des Microsoft Authenticode-Authentifizierungs- und Sicherheitssystems. Authenticode ist ein Standardbestandteil des Windows-Betriebssystems. Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen müssen mit einem digitalen Zertifikat signiert werden, unabhängig davon, ob sie Teil einer Bereitstellung einer vertrauenswürdigen Anwendung sind. Eine vollständige Erläuterung der Funktionsweise von Authenticode mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
   
  Wenn Sie die Anwendung nicht in einer verwalteten Desktopumgebung bereitstellen, haben Sie die folgenden Optionen zum Hinzufügen eines Zertifikats zum Speicher vertrauenswürdiger Herausgeber:  
   
--   Der <xref:System.Security.Cryptography?displayProperty=fullName> -Namespace.  
+- Der <xref:System.Security.Cryptography?displayProperty=fullName> -Namespace.  
   
--   CertMgr.exe, eine Komponente von Internet Explorer und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, eine Komponente von Internet Explorer und daher unter Windows 98 und allen späteren Versionen vorhanden. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Erstellen einer ClickOnce-Anwendung  
  Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung ist eine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] -Clientanwendung kombiniert mit Manifestdateien, die die Anwendung beschreiben und Installationsparameter angegeben. Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]enthalten sind, generieren. Weitere Informationen zum [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

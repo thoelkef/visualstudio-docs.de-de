@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f44ab8e86a32fe4f1923b978bea7f6a7090921b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077614"
 ---
 # <a name="solutions-overview"></a>Übersicht über Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstell
   
 3. Wenn eine VSPackage geladen wurde, ist die Umgebung ruft `QueryInterface` für <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> Schnittstelle, für die Schnittstelle, die das VSPackage ist erforderlich.  
   
-   1.  Wenn von einer sln-Datei lesen, um die Umgebung ruft `QueryInterface` für `IVsPersistSolutionProps`.  
+   1. Wenn von einer sln-Datei lesen, um die Umgebung ruft `QueryInterface` für `IVsPersistSolutionProps`.  
   
-   2.  Wenn Sie aus einer SUO-Datei zu lesen, um die Umgebung ruft `QueryInterface` für `IVsPersistSolutionOpts`.  
+   2. Wenn Sie aus einer SUO-Datei zu lesen, um die Umgebung ruft `QueryInterface` für `IVsPersistSolutionOpts`.  
   
    Spezifische Informationen im Zusammenhang mit der Verwendung dieser Dateien finden Sie in [Lösung (. Sln) Datei](../../extensibility/internals/solution-dot-sln-file.md) und [Benutzeroptionen bei Projektmappen (. Suo)-Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
