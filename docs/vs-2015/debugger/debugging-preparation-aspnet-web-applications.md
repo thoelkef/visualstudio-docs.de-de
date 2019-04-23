@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092421"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Vorbereitung des Debugvorgangs: ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Websitevorlage erstellt ein
   
 ### <a name="to-create-a-web-forms-application"></a>So erstellen Sie eine Web Forms-Anwendung  
   
-1.  Auf der **Datei** Menü wählen **neue Website**.  
+1. Auf der **Datei** Menü wählen **neue Website**.  
   
-2.  In der **neue Website** wählen Sie im Dialogfeld [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Website**.  
+2. In der **neue Website** wählen Sie im Dialogfeld [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Website**.  
   
-3.  Klicken Sie auf **OK**.  
+3. Klicken Sie auf **OK**.  
   
 ### <a name="to-debug-your-web-form"></a>So debuggen Sie Web Forms  
   
-1.  Legen Sie in den Funktionen und Ereignishandlern einen oder mehrere Haltepunkte fest.  
+1. Legen Sie in den Funktionen und Ereignishandlern einen oder mehrere Haltepunkte fest.  
   
      Weitere Informationen finden Sie unter [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Wenn ein Haltepunkt erreicht wird, wird der Code in der Funktion schrittweise durchlaufen. Achten Sie auf die Ausführung des Codes, bis Sie das Problem isolieren.  
+2. Wenn ein Haltepunkt erreicht wird, wird der Code in der Funktion schrittweise durchlaufen. Achten Sie auf die Ausführung des Codes, bis Sie das Problem isolieren.  
   
      Weitere Informationen finden Sie unter [ausführen in Einzelschritten](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) und [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md).  
   
@@ -54,13 +54,13 @@ Die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Websitevorlage erstellt ein
   
 #### <a name="to-change-the-default-debug-configuration"></a>So ändern Sie die Standarddebugkonfiguration  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Website, und wählen Sie **Eigenschaftenseiten** zum Öffnen der **Eigenschaftenseiten** Dialogfeld.  
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Website, und wählen Sie **Eigenschaftenseiten** zum Öffnen der **Eigenschaftenseiten** Dialogfeld.  
   
-2.  Klicken Sie auf **Startoptionen**.  
+2. Klicken Sie auf **Startoptionen**.  
   
-3.  Legen Sie **Startaktion** an die Webseite, die zuerst angezeigt werden soll.  
+3. Legen Sie **Startaktion** an die Webseite, die zuerst angezeigt werden soll.  
   
-4.  Klicken Sie unter **Debugger**, stellen Sie sicher, dass **ASP.NET-Debuggen** ausgewählt ist.  
+4. Klicken Sie unter **Debugger**, stellen Sie sicher, dass **ASP.NET-Debuggen** ausgewählt ist.  
   
      Weitere Informationen finden Sie unter [Seiten Eigenschafteneinstellungen für Webprojekte](../debugger/property-pages-settings-for-web-projects.md).  
   

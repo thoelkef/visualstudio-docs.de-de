@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093103"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
  Programmgesteuerte Erfassung ist in Szenarien wie den folgenden nützlich:  
   
--   Beginnen Sie programmgesteuerte Erfassung, wenn Ihre Grafik-App kein vorhandenes Swapchain verwendet, etwa wenn sie auf einer Textur rendert.  
+- Beginnen Sie programmgesteuerte Erfassung, wenn Ihre Grafik-App kein vorhandenes Swapchain verwendet, etwa wenn sie auf einer Textur rendert.  
   
--   Beginnen Sie programmgesteuerte Erfassung, wenn Ihre Grafik-App überhaupt kein Rendern ausführt, etwa wenn in ihr DirectCompute verwendet wird, um Berechnungen auszuführen.  
+- Beginnen Sie programmgesteuerte Erfassung, wenn Ihre Grafik-App überhaupt kein Rendern ausführt, etwa wenn in ihr DirectCompute verwendet wird, um Berechnungen auszuführen.  
   
--   Rufen Sie `CaptureCurrentFrame`auf, wenn ein Renderingproblem schwer durch manuelles Testen zu antizipieren und zu erfassen ist, aber programmgesteuert mithilfe von Informationen über den Status der App zur Laufzeit vorhergesagt werden kann.  
+- Rufen Sie `CaptureCurrentFrame`auf, wenn ein Renderingproblem schwer durch manuelles Testen zu antizipieren und zu erfassen ist, aber programmgesteuert mithilfe von Informationen über den Status der App zur Laufzeit vorhergesagt werden kann.  
   
-##  <a name="CaptureDX11_2"></a> Programmgesteuerte Erfassung in Windows 8.1  
+## <a name="CaptureDX11_2"></a> Programmgesteuerte Erfassung in Windows 8.1  
  In diesem Teil der exemplarischen Vorgehensweise wird die programmgesteuerte Erfassung in Apps gezeigt, die die DirectX 11.2-API unter Windows 8.1 verwenden, in der die Methode der stabilen Erfassung verwendet wird. Informationen zur Verwendung der programmgesteuerten Erfassung in Apps, die frühere Versionen von DirectX unter Windows 8.0 verwenden, finden Sie unter [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) weiter unten in diesem Artikel.  
   
  In diesem Abschnitt wird gezeigt, wie folgende Aufgaben ausgeführt werden:  
   
--   Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
+- Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
   
--   Abrufen der Schnittstelle IDXGraphicsAnalysis  
+- Abrufen der Schnittstelle IDXGraphicsAnalysis  
   
--   Aufzeichnen von Grafikinformationen  
+- Aufzeichnen von Grafikinformationen  
   
 > [!NOTE]
 >  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um Erfassungsfunktionalität bereitzustellen. Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Deshalb ist es unter Windows 8.1 nicht mehr erforderlich, dass Sie die Remotetools für programmgesteuerte Erfassung installieren.  
@@ -48,7 +48,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
 ##### <a name="to-include-programmatic-capture-headers"></a>So schließen Sie die Header für die programmgesteuerte Erfassung ein  
   
--   Schließen Sie diese Header in die Quelldatei ein, in der Sie die IDXGraphicsAnalysis-Schnittstelle definieren:  
+- Schließen Sie diese Header in die Quelldatei ein, in der Sie die IDXGraphicsAnalysis-Schnittstelle definieren:  
   
     ```  
     #include <DXGItype.h>  
@@ -89,7 +89,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>So rufen Sie die IDXGraphicsAnalysis-Schnittstelle ab  
   
--   Verwenden Sie den folgenden Code, um die IDXGraphicsAnalysis-Schnittstelle an die DXGI-Debugschnittstelle anzuschließen.  
+- Verwenden Sie den folgenden Code, um die IDXGraphicsAnalysis-Schnittstelle an die DXGI-Debugschnittstelle anzuschließen.  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -113,7 +113,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
 ##### <a name="to-capture-graphics-information"></a>So erfassen Grafikinformationen  
   
--   Verwenden Sie `BeginCapture`, um mit der Erfassung von Grafikinformationen zu beginnen:  
+- Verwenden Sie `BeginCapture`, um mit der Erfassung von Grafikinformationen zu beginnen:  
   
     ```  
     ...  
@@ -129,18 +129,18 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  In diesem Teil der exemplarischen Vorgehensweise wird die programmgesteuerte Erfassung in Apps Windows 8.0 und früher gezeigt, die die DirectX 11.1-API verwenden, in der die frühere Erfassungsmethode verwendet wird. Informationen zur Verwendung der programmgesteuerten Erfassung in Apps, die DirectX 11.2 unter Windows 8.1 verwenden, finden Sie unter [Programmgesteuerte Erfassung in Windows 8.1](#CaptureDX11_2) weiter oben in diesem Artikel.  
   
  In diesem Teil werden folgende Aufgaben vorgestellt:  
   
--   Vorbereiten Ihres Computers für die Verwendung der programmgesteuerten Erfassung  
+- Vorbereiten Ihres Computers für die Verwendung der programmgesteuerten Erfassung  
   
--   Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
+- Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
   
--   Konfigurieren des Namens und des Ortes der Grafikprotokolldatei  
+- Konfigurieren des Namens und des Ortes der Grafikprotokolldatei  
   
--   Verwenden der `CaptureCurrentFrame` -API  
+- Verwenden der `CaptureCurrentFrame` -API  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Vorbereiten Ihres Computers für die Verwendung der programmgesteuerten Erfassung  
  Die API für die programmgesteuerte Erfassung verwendet Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um die Erfassungsfunktionen bereitzustellen. Auf dem Computer, auf dem die App läuft, müssen die Remote-Tools installiert sein, auch wenn Sie die programmgesteuerte Erfassung auf Ihrem lokalen Computer anwenden. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss nicht laufen, wenn Sie die programmgesteuerte Erfassung auf einem lokalen Computer durchführen.  
@@ -157,9 +157,9 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>So bereiten Sie Ihre App für die programmgesteuerte Erfassung von Grafikinformationen vor  
   
-1.  Stellen Sie sicher, dass der Header `vsgcapture.h` im Quellcode für die App enthalten ist. Dieser kann an nur einem Ort eingeschlossen werden – z. B. in der Quellcodedatei, in der Sie die API für die programmgesteuerte Erfassung aufrufen, oder in einer vorkompilierten Headerdatei zum Aufrufen der API aus mehreren Quellcodedateien.  
+1. Stellen Sie sicher, dass der Header `vsgcapture.h` im Quellcode für die App enthalten ist. Dieser kann an nur einem Ort eingeschlossen werden – z. B. in der Quellcodedatei, in der Sie die API für die programmgesteuerte Erfassung aufrufen, oder in einer vorkompilierten Headerdatei zum Aufrufen der API aus mehreren Quellcodedateien.  
   
-2.  Rufen Sie im Quellcode für die App immer dann, wenn Sie den Rest des aktuellen Frames erfassen möchten, `g_pVsgDbg->CaptureCurrentFrame()`auf. Mit dieser Methode werden keine Parameter übernommen und keine Werte zurückgegeben.  
+2. Rufen Sie im Quellcode für die App immer dann, wenn Sie den Rest des aktuellen Frames erfassen möchten, `g_pVsgDbg->CaptureCurrentFrame()`auf. Mit dieser Methode werden keine Parameter übernommen und keine Werte zurückgegeben.  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Konfigurieren des Namens und des Ortes der Grafikprotokolldatei  
  Das Grafikprotokoll wird an dem Ort erstellt, der durch die Makros `DONT_SAVE_VSGLOG_TO_TEMP` und `VSG_DEFAULT_RUN_FILENAME` definiert ist.  
@@ -196,7 +196,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 ## <a name="next-steps"></a>Nächste Schritte  
  In dieser exemplarische Vorgehensweise wurde veranschaulicht, wie Grafikinformationen programmatisch erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:  
   
--   Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Finden Sie unter [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Erfahren Sie, wie Sie erfasste Grafikinformationen mithilfe der Grafikdiagnose-Tools analysieren können. Finden Sie unter [Übersicht](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erfassen von Grafikinformationen](../debugger/walkthrough-capturing-graphics-information.md)   

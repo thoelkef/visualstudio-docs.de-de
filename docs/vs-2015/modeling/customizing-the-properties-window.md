@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088794"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 ### <a name="default-property-forwarding-cases"></a>Weiterleitung von Standardszenarien-Eigenschaft  
  Wenn der Benutzer eine Form oder -Connector oder ein Element im Explorer auswählt, werden die folgenden Eigenschaften im Fenster Eigenschaften angezeigt:  
   
--   Die Domäneneigenschaften, die definiert sind, auf die Domänenklasse des Modellelements, einschließlich derjenigen, die in Basisklassen definiert sind. Eine Ausnahme ist die Domäneneigenschaften für die Sie festgelegt haben **kann durchsucht werden** zu `False`.  
+- Die Domäneneigenschaften, die definiert sind, auf die Domänenklasse des Modellelements, einschließlich derjenigen, die in Basisklassen definiert sind. Eine Ausnahme ist die Domäneneigenschaften für die Sie festgelegt haben **kann durchsucht werden** zu `False`.  
   
--   Die Namen von Elementen, die durch Beziehungen verknüpft sind, die eine Multiplizität von 0.. 1 aufweisen. Sie enthält eine praktische Methode optional sehen Elementen verknüpft, selbst wenn Sie keine connectorzuordnung für die Beziehung definiert haben.  
+- Die Namen von Elementen, die durch Beziehungen verknüpft sind, die eine Multiplizität von 0.. 1 aufweisen. Sie enthält eine praktische Methode optional sehen Elementen verknüpft, selbst wenn Sie keine connectorzuordnung für die Beziehung definiert haben.  
   
--   Domäneneigenschaften der einbettenden Beziehung, die das Element ausgerichtet ist. Da es sich bei einbettende Beziehungen in der Regel nicht explizit angezeigt werden, können die Benutzer, deren Eigenschaften finden Sie unter.  
+- Domäneneigenschaften der einbettenden Beziehung, die das Element ausgerichtet ist. Da es sich bei einbettende Beziehungen in der Regel nicht explizit angezeigt werden, können die Benutzer, deren Eigenschaften finden Sie unter.  
   
--   Eigenschaften von Domänen, die für die ausgewählte Form oder den Connector definiert sind.  
+- Eigenschaften von Domänen, die für die ausgewählte Form oder den Connector definiert sind.  
   
 ### <a name="adding-property-forwarding"></a>Hinzufügen von Eigenschaft-Weiterleitung  
  Um eine Eigenschaft weiterzuleiten, definieren Sie einen Typdeskriptor für die Domäne an. Wenn Sie eine domänenbeziehung zwischen zwei Domänenklassen haben, können Sie einen Typdeskriptor für die Domäne, in der ersten Klasse auf den Wert einer Domäneneigenschaft in der zweiten Domänenklasse eine Domäneneigenschaft fest. Für, wenn Sie z. B. eine Beziehung zwischen einer **Buch** Domänenklasse und ein **Autor** Domänenklasse, können Sie eine domänentypdeskriptor stellen die **Namen** Eigenschaft eine Des Buchs **Autor** im Eigenschaftenfenster angezeigt werden, wenn der Benutzer das Buch auswählt.  
@@ -69,29 +69,29 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
 ##### <a name="to-forward-a-property-from-another-element"></a>Eine Eigenschaft aus einem anderen Element weiterleiten  
   
-1.  Erstellen Sie eine [!INCLUDE[dsl](../includes/dsl-md.md)] Projektmappe mit mindestens zwei Klassen, die in diesem Beispiel aufgerufen werden, **Buch** und **Autor**. Es muss eine Beziehung entweder Art zwischen **Buch** und **Autor**.  
+1. Erstellen Sie eine [!INCLUDE[dsl](../includes/dsl-md.md)] Projektmappe mit mindestens zwei Klassen, die in diesem Beispiel aufgerufen werden, **Buch** und **Autor**. Es muss eine Beziehung entweder Art zwischen **Buch** und **Autor**.  
   
      Die Multiplizität der Rolle "Quelle" (die Rolle auf die **Buch** Seite) muss 0.. 1 "oder" 1..1, sodass die einzelnen **Buch** verfügt über ein **Autor**.  
   
-2.  In **DSL-Explorer**, mit der rechten Maustaste die **Buch** Domänenklasse, und klicken Sie dann auf **neue für Hinzufügen neuer DomainTypeDescriptor**.  
+2. In **DSL-Explorer**, mit der rechten Maustaste die **Buch** Domänenklasse, und klicken Sie dann auf **neue für Hinzufügen neuer DomainTypeDescriptor**.  
   
      Ein Knoten mit dem Namen **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** wird unter der **benutzerdefinierten Typdeskriptor** Knoten.  
   
-3.  Mit der rechten Maustaste die **benutzerdefinierten Typdeskriptor** Knoten, und klicken Sie dann auf **Hinzufügen eines neuen "PropertyPath"**.  
+3. Mit der rechten Maustaste die **benutzerdefinierten Typdeskriptor** Knoten, und klicken Sie dann auf **Hinzufügen eines neuen "PropertyPath"**.  
   
      Ein neuen Eigenschaftenpfad angezeigt wird, unter dem **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** Knoten.  
   
-4.  Wählen Sie den neuen Eigenschaftenpfad, und klicken Sie in der **Eigenschaften** legen **Pfad zur Eigenschaft** auf den Pfad der entsprechenden Modellelement.  
+4. Wählen Sie den neuen Eigenschaftenpfad, und klicken Sie in der **Eigenschaften** legen **Pfad zur Eigenschaft** auf den Pfad der entsprechenden Modellelement.  
   
      Sie können den Pfad in einer Strukturansicht bearbeiten, indem Sie auf den Pfeil nach unten rechts von dieser Eigenschaft. Weitere Informationen zu Domänenpfade, finden Sie unter [Domänenpfadsyntax](../modeling/domain-path-syntax.md). Wenn Sie es bearbeitet haben, sollte der Pfad ähneln **BookReferencesAuthor.Author/! Autor**.  
   
-5.  Legen Sie **Eigenschaft** auf die **Namen** Domäneneigenschaft der **Autor**.  
+5. Legen Sie **Eigenschaft** auf die **Namen** Domäneneigenschaft der **Autor**.  
   
-6.  Legen Sie **Anzeigename** zu **erstellen Namen**.  
+6. Legen Sie **Anzeigename** zu **erstellen Namen**.  
   
-7.  Transformieren Sie alle Vorlagen, zu erstellen Sie, und führen Sie die DSL.  
+7. Transformieren Sie alle Vorlagen, zu erstellen Sie, und führen Sie die DSL.  
   
-8.  In einem Modell ein Buch, Autor, und sie mit der verweisbeziehung zu verknüpfen. Wählen das Book-Element, und im Eigenschaftenfenster sollte Autorenname zusätzlich zu den Eigenschaften des Buchs angezeigt. Ändern Sie den Namen des Autors des verknüpften, oder verknüpfen Sie das Buch zu einem anderen Autor, und beachten Sie, dass der Name des Autors des Buchs ändert.  
+8. In einem Modell ein Buch, Autor, und sie mit der verweisbeziehung zu verknüpfen. Wählen das Book-Element, und im Eigenschaftenfenster sollte Autorenname zusätzlich zu den Eigenschaften des Buchs angezeigt. Ändern Sie den Namen des Autors des verknüpften, oder verknüpfen Sie das Buch zu einem anderen Autor, und beachten Sie, dass der Name des Autors des Buchs ändert.  
   
 ## <a name="custom-property-editors"></a>Benutzerdefinierte Eigenschaften-Editoren  
  Das Eigenschaftenfenster stellt Bearbeitungsfunktionen für den Typ der Eigenschaft "Domain" jede entsprechende Standardeinstellung bereit. Z. B. für ein enumerierter Typ, der Benutzer sieht eine Dropdown-Liste, und der Benutzer kann für eine numerische Eigenschaft Ziffern eingeben. Dies gilt nur für die integrierten Typen. Wenn Sie einen externen Typ angeben, wird der Benutzer sein können, finden Sie unter der Eigenschaftswerte, aber nicht bearbeiten.  
@@ -116,14 +116,14 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
 2. Fügen Sie den Typ der **Domänentypen** aufzulisten, es sei denn, Sie geschehen.  
   
-   1.  Öffnen Sie "DslDefinition.DSL", und klicken Sie in **DSL-Explorer**mit der rechten Maustaste auf den Stammknoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.  
+   1. Öffnen Sie "DslDefinition.DSL", und klicken Sie in **DSL-Explorer**mit der rechten Maustaste auf den Stammknoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.  
   
         Ein neuer Eintrag wird unter der **Domänentypen** Knoten.  
   
        > [!WARNING]
        >  Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.  
   
-   2.  Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.  
+   2. Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.  
   
 3. Fügen Sie eine Domäneneigenschaft an eine Domänenklasse, auf die übliche Weise.  
   
@@ -149,9 +149,9 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
 ##### <a name="to-define-a-file-name-domain-property"></a>Definieren Sie eine Datei namens Domäneneigenschaft  
   
-1.  Fügen Sie eine Domäneneigenschaft an eine Domänenklasse in Ihrer DSL-Definition.  
+1. Fügen Sie eine Domäneneigenschaft an eine Domänenklasse in Ihrer DSL-Definition.  
   
-2.  Wählen Sie die neue Eigenschaft ein. In der **benutzerdefiniertes Attribut** Feld in das Fenster "Eigenschaften", geben Sie das folgende Attribut. Dieses Attribut bei der Eingabe, klicken Sie auf die Auslassungspunkte **[...]**  und geben Sie den Attributnamen und den Parametern getrennt:  
+2. Wählen Sie die neue Eigenschaft ein. In der **benutzerdefiniertes Attribut** Feld in das Fenster "Eigenschaften", geben Sie das folgende Attribut. Dieses Attribut bei der Eingabe, klicken Sie auf die Auslassungspunkte **[...]**  und geben Sie den Attributnamen und den Parametern getrennt:  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -160,15 +160,15 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   
     ```  
   
-3.  Behalten Sie die Standardeinstellung für den Typ der Domäneneigenschaft **Zeichenfolge**.  
+3. Behalten Sie die Standardeinstellung für den Typ der Domäneneigenschaft **Zeichenfolge**.  
   
-4.  Um den Editor zu testen, stellen Sie sicher, dass Benutzer die Dateinamen-Editor zum Bearbeiten Ihrer Eigenschaft "Domain" öffnen können.  
+4. Um den Editor zu testen, stellen Sie sicher, dass Benutzer die Dateinamen-Editor zum Bearbeiten Ihrer Eigenschaft "Domain" öffnen können.  
   
-    1.  Drücken Sie STRG + F5 oder F5. Öffnen Sie eine Testdatei in der Projektmappe debuggen. Erstellen Sie ein Element der Domänenklasse aus, und wählen Sie sie.  
+    1. Drücken Sie STRG + F5 oder F5. Öffnen Sie eine Testdatei in der Projektmappe debuggen. Erstellen Sie ein Element der Domänenklasse aus, und wählen Sie sie.  
   
-    2.  Wählen Sie im Fenster Eigenschaften die Eigenschaft "Domain". Das Feld "Wert" zeigt ein Auslassungszeichen **[...]** .  
+    2. Wählen Sie im Fenster Eigenschaften die Eigenschaft "Domain". Das Feld "Wert" zeigt ein Auslassungszeichen **[...]** .  
   
-    3.  Klicken Sie auf die Auslassungspunkte. Ein Dialogfeld wird angezeigt. Wählen Sie eine Datei, und schließen Sie das Dialogfeld. Der Dateipfad ist jetzt der Wert der Domäneneigenschaft.  
+    3. Klicken Sie auf die Auslassungspunkte. Ein Dialogfeld wird angezeigt. Wählen Sie eine Datei, und schließen Sie das Dialogfeld. Der Dateipfad ist jetzt der Wert der Domäneneigenschaft.  
   
 ### <a name="defining-your-own-property-editor"></a>Definieren Ihre eigenen Eigenschaften-editor  
  Sie können Ihren eigenen Editor definieren. Sie möchten diese Option, um dem Benutzer ermöglichen, einen Typ zu bearbeiten, den Sie definiert haben, oder um einen Standardtyp auf besondere Weise zu bearbeiten. Beispielsweise können Sie ermöglichen, den Benutzer zur Eingabe von einer Zeichenfolge, die eine Formel darstellt.  

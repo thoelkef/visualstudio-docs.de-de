@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096087"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einen einfachen [!
   
 #### <a name="to-create-a-wcf-service"></a>So erstellen Sie einen WCF-Dienst  
   
-1.  Zeigen Sie im Menü **Datei** auf **Neu** , und klicken Sie dann auf **Projekt**.  
+1. Zeigen Sie im Menü **Datei** auf **Neu** , und klicken Sie dann auf **Projekt**.  
   
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**, und klicken Sie anschließend auf **WCF** und dann auf **WCF-Dienstbibliothek**. Klicken Sie auf **OK**, um das Projekt zu öffnen.  
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual C#**, und klicken Sie anschließend auf **WCF** und dann auf **WCF-Dienstbibliothek**. Klicken Sie auf **OK**, um das Projekt zu öffnen.  
   
      ![Der WCF-Dienstbibliotheksprojekt](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
     >  Dadurch wird ein funktionierender Dienst erstellt, der getestet und aufgerufen werden kann. Die folgenden beiden Schritte veranschaulichen, wie Sie die Standardmethode ändern können, um einen anderen Datentyp zu verwenden. In einer echten Anwendung würden Sie dem Dienst auch Ihre eigenen Funktionen hinzufügen.  
   
-3.  ![Die Datei "IService1"](../data-tools/media/wcf2.png "wcf2")  
+3. ![Die Datei "IService1"](../data-tools/media/wcf2.png "wcf2")  
   
      In **Projektmappen-Explorer**, doppelklicken Sie auf IService1.vb oder IService1.cs, und suchen Sie die folgende Zeile:  
   
@@ -54,7 +54,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einen einfachen [!
   
      Beachten Sie im obigen Code die `<OperationContract()>`- oder `[OperationContract]`-Attribute. Diese Attribute sind für jede Methode erforderlich, die vom Dienst zur Verfügung gestellt wird.  
   
-4.  ![Die Datei "Service1"](../data-tools/media/wcf3.png "wcf3")  
+4. ![Die Datei "Service1"](../data-tools/media/wcf3.png "wcf3")  
   
      In **Projektmappen-Explorer**, doppelklicken Sie auf Service1.vb "oder" Service1.cs, und suchen Sie die folgende Zeile:  
   
@@ -69,58 +69,58 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie einen einfachen [!
   
 #### <a name="to-test-a-wcf-service"></a>So testen Sie einen WCF-Dienst  
   
-1.  Drücken Sie **F5**, um den Dienst auszuführen. Ein **WCF-Testclient** -Formular wird angezeigt, und den Dienst lädt.  
+1. Drücken Sie **F5**, um den Dienst auszuführen. Ein **WCF-Testclient** -Formular wird angezeigt, und den Dienst lädt.  
   
-2.  Doppelklicken Sie im **WCF-Testclient**-Formular auf die **GetData()**-Methode unter **IService1**. Die **GetData** Registerkarte wird angezeigt.  
+2. Doppelklicken Sie im **WCF-Testclient**-Formular auf die **GetData()**-Methode unter **IService1**. Die **GetData** Registerkarte wird angezeigt.  
   
      ![Die GetData&#40; &#41; Methode](../data-tools/media/wcf4.png "wcf4")  
   
-3.  Wählen Sie im Feld **Anforderung** das Feld **Wert** aus, und geben Sie `Hello` ein.  
+3. Wählen Sie im Feld **Anforderung** das Feld **Wert** aus, und geben Sie `Hello` ein.  
   
      ![Das Wertfeld](../data-tools/media/wcf5.png "wcf5")  
   
-4.  Klicken Sie auf die Schaltfläche **Aufrufen**. Wenn eine **Sicherheitswarnung** Dialogfeld wird angezeigt, klicken Sie auf **OK**. Das Ergebnis erscheint in der **Antwort** Feld.  
+4. Klicken Sie auf die Schaltfläche **Aufrufen**. Wenn eine **Sicherheitswarnung** Dialogfeld wird angezeigt, klicken Sie auf **OK**. Das Ergebnis erscheint in der **Antwort** Feld.  
   
      ![Das Ergebnis im Antwortfeld](../data-tools/media/wcf6.png "wcf6")  
   
-5.  Klicken Sie im Menü **Datei** auf **Beenden**, um das Testformular zu schließen.  
+5. Klicken Sie im Menü **Datei** auf **Beenden**, um das Testformular zu schließen.  
   
 ## <a name="accessing-the-service"></a>Zugriff auf den Dienst  
   
 #### <a name="to-reference-a-wcf-service"></a>So greifen Sie auf einen WCF-Dienst zu  
   
-1.  Zeigen Sie im Menü **Datei** auf die Option **Hinzufügen**, und klicken Sie anschließend auf **Neues Projekt**.  
+1. Zeigen Sie im Menü **Datei** auf die Option **Hinzufügen**, und klicken Sie anschließend auf **Neues Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld erweitern Sie die **Visual Basic** oder **Visual C#-** Knoten, und wählen **Windows**, und wählen Sie dann auf **Windows Forms-Anwendung**. Klicken Sie auf **OK**, um das Projekt zu öffnen.  
+2. In der **neues Projekt** Dialogfeld erweitern Sie die **Visual Basic** oder **Visual C#-** Knoten, und wählen **Windows**, und wählen Sie dann auf **Windows Forms-Anwendung**. Klicken Sie auf **OK**, um das Projekt zu öffnen.  
   
      ![Windows Forms-Anwendungsprojekt](../data-tools/media/wcf7.png "wcf7")  
   
-3.  Klicken Sie mit der rechten Maustaste auf **WindowsApplication1** und dann auf **Dienstverweis hinzufügen**. Die **Hinzufügen eines Dienstverweises** Dialogfeld wird angezeigt.  
+3. Klicken Sie mit der rechten Maustaste auf **WindowsApplication1** und dann auf **Dienstverweis hinzufügen**. Die **Hinzufügen eines Dienstverweises** Dialogfeld wird angezeigt.  
   
-4.  Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **Ermitteln**.  
+4. Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **Ermitteln**.  
   
      ![Das Dialogfeld "Add Service Reference"](../data-tools/media/wcf8.png "wcf8")  
   
      **"Service1"** erscheint in der **Services** Bereich.  
   
-5.  Klicken Sie auf **OK**, um den Dienstverweis hinzuzufügen.  
+5. Klicken Sie auf **OK**, um den Dienstverweis hinzuzufügen.  
   
 #### <a name="to-build-a-client-application"></a>So erstellen Sie eine Clientanwendung  
   
-1.  Doppelklicken Sie im **Projektmappen-Explorer** auf **Form1.vb** oder **Form1.cs**, um den Windows Forms-Designer zu öffnen, wenn er nicht bereits geöffnet ist.  
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf **Form1.vb** oder **Form1.cs**, um den Windows Forms-Designer zu öffnen, wenn er nicht bereits geöffnet ist.  
   
-2.  Ziehen Sie aus der **Toolbox** ein `TextBox`-Steuerelement, ein `Label`-Steuerelement und ein `Button`-Steuerelement auf das Formular.  
+2. Ziehen Sie aus der **Toolbox** ein `TextBox`-Steuerelement, ein `Label`-Steuerelement und ein `Button`-Steuerelement auf das Formular.  
   
      ![Hinzufügen von Steuerelementen zum Formular](../data-tools/media/wcf9.png "wcf9")  
   
-3.  Doppelklicken Sie auf `Button`, und fügen Sie dem `Click`-Ereignishandler den folgenden Code hinzu:  
+3. Doppelklicken Sie auf `Button`, und fügen Sie dem `Click`-Ereignishandler den folgenden Code hinzu:  
   
      [!code-csharp[WCFWalkthrough#3](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs#3)]
      [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]  
   
-4.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **WindowsApplication1**, und klicken Sie auf **Als Startprojekt festlegen**.  
+4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **WindowsApplication1**, und klicken Sie auf **Als Startprojekt festlegen**.  
   
-5.  Drücken Sie **F5**, um das Projekt auszuführen. Geben Sie Text ein, und klicken Sie auf die Schaltfläche. Zeigt die Bezeichnung "Ihre Eingabe:" und den von Ihnen eingegebenen Text an.  
+5. Drücken Sie **F5**, um das Projekt auszuführen. Geben Sie Text ein, und klicken Sie auf die Schaltfläche. Zeigt die Bezeichnung "Ihre Eingabe:" und den von Ihnen eingegebenen Text an.  
   
      ![Das Formular mit dem Ergebnis](../data-tools/media/wcf10.png "wcf10")  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085624"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Außer Kraft setzen, und Erweitern der generierten Klassen
 
@@ -54,9 +54,9 @@ Dennoch können Sie diese Methoden überschreiben, durch Festlegen der **generie
 
 Im Beispiel Library.dsl, z. B. die `CirculationBook` Domänenklasse besitzt die `Generates``Double Derived` -Eigenschaftensatz auf `true`. Der generierte Code für diese Domänenklasse enthält zwei Klassen:
 
--   `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.
+- `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.
 
--   `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.
+- `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.
 
 Um eine beliebige Methode überschreiben, Sie erstellen eine partielle Definition der abgeleiteten Klasse wie z. B. `CirculationBook`. Sie können sowohl für die generierten Methoden als auch für den von der Modellierung Framework geerbten Methoden überschreiben.
 

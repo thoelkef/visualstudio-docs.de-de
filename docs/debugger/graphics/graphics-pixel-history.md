@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02d56441eb8cb5a47fcdfc6cfa0db153fd72b8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100989"
 ---
 # <a name="graphics-pixel-history"></a>Grafikpixelverlauf
 Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie sich Direct3D-Ereignisse, die während eines Frames Ihres Spiels oder Ihre App auftreten, auf ein bestimmtes Pixel auswirken.
@@ -35,7 +35,7 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 
  Sie können jeden Primitiv erweitern, um zu untersuchen, wie die Pixel-Shader-Ausgabe mit der vorhandenen Pixelfarbe zusammengeführt wurde, um die Ergebnisfarbe zu erzeugen. Von hier aus können Sie den Pixel Shader-Code prüfen oder debuggen, der dem Primitiv-Typ zugeordnet ist, und Sie können den Vertex-Shader Knoten zum Überprüfen der Vertex-Shaders-Eingaben erweitern.
 
-###  <a name="exclusion"></a> Ausschluss eines Primitivs
+### <a name="exclusion"></a> Ausschluss eines Primitivs
  Wenn ein Primitiv die Pixelfarbe nicht beeinflusst, kann der Ausschluss für eine Vielzahl von Gründen erfolgen. Jeder Grund wird durch ein Symbol dargestellt, das in dieser Tabelle beschrieben wird:
 
 |Symbol|Grund für den Ausschluss|
@@ -52,22 +52,22 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 
 ##### <a name="to-view-a-shaders-source-code"></a>Um einen Shader-Quellcode anzuzeigen
 
-1.  Suchen Sie im Fenster **Grafikpixelverlauf** nach dem Zeichnen-Befehl, der dem zu überprüfenden Shader entspricht, und erweitern Sie ihn.
+1. Suchen Sie im Fenster **Grafikpixelverlauf** nach dem Zeichnen-Befehl, der dem zu überprüfenden Shader entspricht, und erweitern Sie ihn.
 
-2.  Wählen Sie unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.
+2. Wählen Sie unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.
 
-3.  Folgen sie unter dem entsprechenden Primitiv dem Shader-Titellink (folgen Sie beispielsweise dem Link **Vertex Shader obj:30**), um den Quellcode des Vertex-Shaders anzuzeigen.
+3. Folgen sie unter dem entsprechenden Primitiv dem Shader-Titellink (folgen Sie beispielsweise dem Link **Vertex Shader obj:30**), um den Quellcode des Vertex-Shaders anzuzeigen.
 
     > [!TIP]
     >  Die Objektnummer **obj:30** identifiziert diesen Shader über die gesamte Grafikanalyseoberfläche hinweg, beispielsweise in der Objekttabelle und im Pipelinestufenfenster.
 
 ##### <a name="to-debug-a-shader"></a>Um einen Shader zu debuggen
 
-1.  Suchen Sie im Fenster **Grafikpixelverlauf** nach dem Zeichnen-Befehl, der dem zu überprüfenden Shader entspricht, und erweitern Sie ihn.
+1. Suchen Sie im Fenster **Grafikpixelverlauf** nach dem Zeichnen-Befehl, der dem zu überprüfenden Shader entspricht, und erweitern Sie ihn.
 
-2.  Wählen Sie dann unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.
+2. Wählen Sie dann unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.
 
-3.  Wählen Sie unter dem entsprechenden Primitiv **Debuggen starten** aus. Durch diesen Einstiegspunkt in den HLSL-Debugger erfolgt die standardmäßige Festlegung auf den ersten Aufruf des Shaders für das entsprechende Primitiv, d. h. das erste Pixel oder Vertex, das bzw. der durch den Shader verarbeitet wird. Es ist nur ein Pixel mit dem Primitiv verknüpft. Es liegen jedoch mehrere Vertex-Shader-Aufrufe für Linien und Dreiecke vor.
+3. Wählen Sie unter dem entsprechenden Primitiv **Debuggen starten** aus. Durch diesen Einstiegspunkt in den HLSL-Debugger erfolgt die standardmäßige Festlegung auf den ersten Aufruf des Shaders für das entsprechende Primitiv, d. h. das erste Pixel oder Vertex, das bzw. der durch den Shader verarbeitet wird. Es ist nur ein Pixel mit dem Primitiv verknüpft. Es liegen jedoch mehrere Vertex-Shader-Aufrufe für Linien und Dreiecke vor.
 
      Erweitern Sie zum Debuggen des Vertex-Shader-Aufrufs für ein bestimmtes Vertex den VertexShader-Titellink, und suchen Sie nach dem entsprechenden Vertex. Wählen Sie dann **Debuggen starten** daneben aus.
 

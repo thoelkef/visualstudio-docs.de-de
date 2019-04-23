@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112337"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
 Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, die eine XML-Datei, die Farben für vorhandene Visual Studio-Designs darstellt akzeptiert und konvertiert sie eine PKGDEF-Datei, damit diese Farben in Visual Studio verwendet werden können. Da es einfach, die Unterschiede zwischen XML-Dateien handelt, eignet sich dieses Tool zum Verwalten von Farben in der quellcodeverwaltung. Sie können auch Buildumgebungen Hook hinzugefügt werden soll, damit die Ausgabe des Builds eine gültige PKGDEF-Datei ist.
@@ -53,7 +53,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|name|[Erforderlich] Der Name des Designs|
+|Name|[Erforderlich] Der Name des Designs|
 |GUID|[Erforderlich] Das Design der GUID (Formatierung der GUID übereinstimmen muss)|
 
  Wenn Sie benutzerdefinierte Farben für Visual Studio zu erstellen, müssen diese Farben für die folgenden Themen definiert werden. Wenn keine Farben für ein bestimmtes Design vorhanden ist, versucht Visual Studio, um die fehlenden Farben aus das Design "hell" zu laden.
@@ -79,7 +79,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|name|[Erforderlich] Der Name der Kategorie|
+|Name|[Erforderlich] Der Name der Kategorie|
 |GUID|[Erforderlich] Die Kategorie-GUID (Formatierung der GUID übereinstimmen muss)|
 
  **Farbe**
@@ -96,7 +96,7 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |||
 |-|-|
 |**Attribut**|**Definition**|
-|name|[Erforderlich] Der Name der Farbe|
+|Name|[Erforderlich] Der Name der Farbe|
 
  **Hintergrund und/oder Vordergrund**
 
@@ -142,22 +142,22 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
 |-|-|-|
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|
 |Unbenannte (XML-Datei)|Dies ist der erste unbenannte Parameter und den Pfad der XML-Datei konvertiert wird.|Erforderlich|
-|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standardeinstellung: \<XML Filename>.pkgdef|Optional|
+|Unbenannte (PKGDEF-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte PKGDEF-Datei.<br /><br /> Standard: \<XML Filename>.pkgdef|Optional|
 |/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|
 |/?|Ausgeben von Hilfeinformationen.|Optional|
 |/help|Ausgeben von Hilfeinformationen.|Optional|
 
  **Beispiele**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml /noLogo
+- VsixColorCompiler D:\xml\colors.xml /noLogo
 
 ## <a name="notes"></a>Hinweise
 
--   Dieses Tool erfordert, dass die neueste Version der VC++-Laufzeit installiert werden.
+- Dieses Tool erfordert, dass die neueste Version der VC++-Laufzeit installiert werden.
 
--   Nur einzelne Dateien werden unterstützt. Das massenkonvertieren über Ordnerpfade wird nicht unterstützt.
+- Nur einzelne Dateien werden unterstützt. Das massenkonvertieren über Ordnerpfade wird nicht unterstützt.
 
 ## <a name="sample-output"></a>Beispielausgabe:
  Die PKGDEF-Datei, die vom Tool generierten sollte dieser ähneln dem folgenden Schlüssel:

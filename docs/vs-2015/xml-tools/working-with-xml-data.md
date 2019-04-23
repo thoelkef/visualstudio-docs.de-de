@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092174"
 ---
 # <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoNam
   
  Folgende zusätzlichen Funktionen sind verfügbar:  
   
--   Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte.  
+- Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte.  
   
--   Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können.  
+- Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können.  
   
--   Ausführen von XSL-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML.  
+- Ausführen von XSL-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML.  
   
--   Generieren von XSD-Schemas (XML-Schemadefinitionssprache) aus dem XML-Instanzdokument.  
+- Generieren von XSD-Schemas (XML-Schemadefinitionssprache) aus dem XML-Instanzdokument.  
   
--   Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung.  
+- Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung.  
   
--   XML-Schema-Explorer  
+- XML-Schema-Explorer  
   
 ## <a name="xml-schema-designer"></a>XML-Schema-Designer  
  Der XML-Schema-Designer ist in Microsoft Visual Studio 2010 und den XML-Editor integriert, um die Arbeit mit XSD-Schemas (XML-Schemadefinitionssprache) zu ermöglichen.  

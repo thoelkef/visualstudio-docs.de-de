@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die auf mehrere Versionen von .NET Framework ausgeführt werden kann | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Mithilfe von ClickOnce zum Bereitstellen von Anwendungen, die auf mehrere Versionen von .NET Framework ausgeführt werden kann | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 154e6058689d308f35fd969438d1964b9383f653
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096048"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
 Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framework ausgerichtet ist, mithilfe der ClickOnce-bereitstellungstechnologie. Dies erfordert, dass Sie generieren und aktualisieren die Anwendungs- und Bereitstellungsmanifeste.
@@ -31,27 +31,27 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
 
  Dieser Prozess erfordert die folgenden Schritte aus:
 
-1.  Die Anwendungs- und Bereitstellungsmanifeste zu generieren.
+1. Die Anwendungs- und Bereitstellungsmanifeste zu generieren.
 
-2.  Ändern Sie das Bereitstellungsmanifest, um mehrere .NET Framework-Versionen aufzulisten.
+2. Ändern Sie das Bereitstellungsmanifest, um mehrere .NET Framework-Versionen aufzulisten.
 
-3.  Ändern der *"App.config"* Datei, die die kompatiblen Versionen von .NET Framework Common Language Runtime-Liste.
+3. Ändern der *"App.config"* Datei, die die kompatiblen Versionen von .NET Framework Common Language Runtime-Liste.
 
-4.  Ändern Sie das Anwendungsmanifest, um abhängige Assemblys als .NET Framework-Assemblys zu kennzeichnen.
+4. Ändern Sie das Anwendungsmanifest, um abhängige Assemblys als .NET Framework-Assemblys zu kennzeichnen.
 
-5.  Melden Sie das Anwendungsmanifest an.
+5. Melden Sie das Anwendungsmanifest an.
 
-6.  Aktualisieren und das Bereitstellungsmanifest zu signieren.
+6. Aktualisieren und das Bereitstellungsmanifest zu signieren.
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Um die Anwendungs- und Bereitstellungsmanifeste zu generieren.
 
--   Verwenden Sie den Webpublishing-Assistenten oder die Seite "Veröffentlichen", Projekt-Designer zum Veröffentlichen der Anwendung und generieren die Anwendung und der Bereitstellungsmanifestdateien an. Weitere Informationen finden Sie unter [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oder [Seite "Veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md).
+- Verwenden Sie den Webpublishing-Assistenten oder die Seite "Veröffentlichen", Projekt-Designer zum Veröffentlichen der Anwendung und generieren die Anwendung und der Bereitstellungsmanifestdateien an. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) oder [Seite "Veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>So ändern Sie das Bereitstellungsmanifest zum Auflisten der mehrere Versionen von .NET Framework
 
-1.  Öffnen Sie im Veröffentlichungsverzeichnis das Bereitstellungsmanifest, indem Sie mit der XML-Editor in Visual Studio. Das Bereitstellungsmanifest hat die *.application* Dateinamenerweiterung.
+1. Öffnen Sie im Veröffentlichungsverzeichnis das Bereitstellungsmanifest, indem Sie mit der XML-Editor in Visual Studio. Das Bereitstellungsmanifest hat die *.application* Dateinamenerweiterung.
 
-2.  Ersetzen Sie den XML-Code zwischen den `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` und `</compatibleFrameworks>` Elemente mit XML, das die unterstützten Versionen von .NET Framework für Ihre Anwendung enthält.
+2. Ersetzen Sie den XML-Code zwischen den `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` und `</compatibleFrameworks>` Elemente mit XML, das die unterstützten Versionen von .NET Framework für Ihre Anwendung enthält.
 
      Die folgende Tabelle zeigt einige der verfügbaren .NET Framework-Versionen und den entsprechenden XML-Code, der das Bereitstellungsmanifest hinzugefügt werden können.
 
@@ -65,9 +65,9 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>So ändern Sie die Datei "App.config", um die kompatiblen Versionen von .NET Framework Common Language Runtime-Liste
 
-1.  Öffnen Sie im Projektmappen-Explorer die *"App.config"* -Datei mit dem XML-Editor in Visual Studio.
+1. Öffnen Sie im Projektmappen-Explorer die *"App.config"* -Datei mit dem XML-Editor in Visual Studio.
 
-2.  Ersetzen Sie den XML-Code zwischen (oder hinzufügen) die `<startup>` und `</startup>` Elemente mit XML, das die unterstützten .NET Framework-Laufzeiten für Ihre Anwendung enthält.
+2. Ersetzen Sie den XML-Code zwischen (oder hinzufügen) die `<startup>` und `</startup>` Elemente mit XML, das die unterstützten .NET Framework-Laufzeiten für Ihre Anwendung enthält.
 
      Die folgende Tabelle zeigt einige der verfügbaren .NET Framework-Versionen und den entsprechenden XML-Code, der das Bereitstellungsmanifest hinzugefügt werden können.
 
@@ -100,7 +100,7 @@ Sie können eine Anwendung bereitstellen, die mehrere Versionen von .NET Framewo
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Zum Aktualisieren und erneut signieren, die Anwendungs- und Bereitstellungsmanifeste
 
--   Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests (Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten)](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Aktualisieren und erneut die Anwendungs- und Bereitstellungsmanifeste zu signieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)

@@ -14,14 +14,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089925"
 ---
-# <a name="how-to-manage-editor-windows"></a>Gewusst wie: Verwalten von Editorfenstern
+# <a name="how-to-manage-editor-windows"></a>Vorgehensweise: Verwalten von-Editor für Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teilen Sie ein Editorfenster oder öffnen mehrere Instanzen von Editorfenstern.  
@@ -34,9 +34,9 @@ Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teil
   
 #### <a name="to-split-a-pane"></a>So teilen Sie einen Bereich  
   
-1.  Klicken Sie in das Editorfenster, um dort den Fokus zu setzen.  
+1. Klicken Sie in das Editorfenster, um dort den Fokus zu setzen.  
   
-2.  Wählen Sie im Menü **Fenster** die Option **Teilen** aus.  
+2. Wählen Sie im Menü **Fenster** die Option **Teilen** aus.  
   
      Der Bearbeitungsbereich ist in zwei Bereiche aufgeteilt, die durch eine Teilerleiste getrennt sind. Sie können in jedem Bereich unabhängig scrollen, um verschiedene Teile des aktiven Dokuments gleichzeitig anzuzeigen und zu bearbeiten. Alle Änderungen, die in einem Bereich vorgenommen werden, spiegeln sich auch im anderen wider.  
   
@@ -45,14 +45,14 @@ Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teil
   
 #### <a name="to-return-to-single-pane-view"></a>So kehren Sie in die Anzeige mit nur einem Bereich zurück  
   
--   Wählen Sie im Menü **Fenster** die Option **Teilung aufheben** aus.  
+- Wählen Sie im Menü **Fenster** die Option **Teilung aufheben** aus.  
   
 ## <a name="creating-new-windows"></a>Erstellen neuer Fenster  
  Sie können auch mehrere Instanzen eines Editorfensters erstellen. Mithilfe dieser Funktion können Sie ein langes und ausführliches Dokument in mehr als einer Instanz eines Editors öffnen. So können Sie unterschiedliche Abschnitte gleichzeitig in separaten Editorfenstern im Vollbild anzeigen und bearbeiten.  
   
 #### <a name="to-create-a-new-window"></a>So erstellen Sie ein neues Fenster  
   
--   Klicken Sie im Menü **Fenster** auf **Neues Fenster**.  
+- Klicken Sie im Menü **Fenster** auf **Neues Fenster**.  
   
      Es wird eine neue Instanz des Editors im Registerkartenformat hinzugefügt.  
   

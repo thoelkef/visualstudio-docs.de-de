@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702485"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085583"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente
 Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuerst bestimmen, ob die Datei bereits im Dokumentfenster für einen anderen Editor geöffnet ist. Die Datei kann entweder in einem projektspezifischen-Editor zu öffnen oder einem standard-Editor registriert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -46,11 +46,11 @@ Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuer
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>Um einen standard-Editor für eine geöffnete Datei zu öffnen.
 
-1.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> auf.
+1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> auf.
 
      Diese Methode zunächst überprüft, ob das Dokument nicht bereits geöffnet durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Wenn das Dokument bereits geöffnet ist, und klicken Sie dann das Editorfenster Aufkommen ist.
 
-2.  Wenn das Dokument nicht geöffnet ist, führen Sie die Schritte im [Vorgehensweise: Öffnen Sie die standard-Editoren](../extensibility/how-to-open-standard-editors.md).
+2. Wenn das Dokument nicht geöffnet ist, führen Sie die Schritte im [Vorgehensweise: Öffnen Sie die standard-Editoren](../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d1be80fff92a8663582ba4e51e65ecc224ef1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: a442ed4a81cac312c675d9dd6d83a8901e939f15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093981"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 Überschreibt die Multi-Sample Anti-Aliasing (MSAA)-Einstellungen auf allen Renderzielen und Swapketten.
@@ -28,18 +28,18 @@ ms.locfileid: "56699222"
 > [!NOTE]
 >  Ihre Hardware unterstützt MSAA eventuell nicht vollständig für alle Formate. Wenn für eine dieser Varianten eine Hardwarebeschränkung gilt, die nicht umgangen werden kann, wird die entsprechende Spalte in der Leistungszusammenfassungstabelle leer gelassen und eine Fehlermeldung ausgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Diese Varianten überschreiben die Samplinganzahl- und die Samplingqualitäts-Argumente auf Aufrufen von `ID3DDevice::CreateTexture2D`, die Renderziele erstellen. Diese Parameter werden insbesondere überschrieben, wenn:
 
 - Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt ein Renderziel mit folgenden Eigenschaften beschreibt:
 
-  -   Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.
+  - Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.
 
-  -   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.
+  - Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.
 
-  -   Das CPUAccessFlags-Member ist auf 0 gesetzt.
+  - Das CPUAccessFlags-Member ist auf 0 gesetzt.
 
-  -   Das MipLevels-Member ist auf 1 gesetzt.
+  - Das MipLevels-Member ist auf 1 gesetzt.
 
 - Das Gerät unterstützt die angefragte Samplinganzahl (0, 2 oder 4) und Samplingqualität (0) für das angefragte Renderzielformat (Member D3D11_TEXTURE2D_DESC::Format), wie durch `ID3D11Device::CheckMultisampleQualityLevels` festgelegt.
 

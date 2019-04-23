@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103367"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Verbessern der Codequalität mit Eincheckrichtlinien für das Teamprojekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Wenn Sie Team Foundation-Versionskontrolle (TFVC) verwenden, können Sie Einchec
   
  Sie können diese Eincheckrichtlinien für das Teamprojekt angeben:  
   
--   **Builds**: Erfordert, dass Buildunterbrechungen, die während eines Builds erstellt wurden, die vor einem neuen Einchecken korrigiert werden müssen.  
+- **Builds**: Erfordert, dass Buildunterbrechungen, die während eines Builds erstellt wurden, die vor einem neuen Einchecken korrigiert werden müssen.  
   
--   **Changeset-Kommentare**: Erfordert, dass Benutzer beim Einchecken von Änderungen Kommentare eingeben.  
+- **Changeset-Kommentare**: Erfordert, dass Benutzer beim Einchecken von Änderungen Kommentare eingeben.  
   
--   **Codeanalyse**: Erfordert, dass die Codeanalyse vor dem Einchecken ausgeführt wird.  
+- **Codeanalyse**: Erfordert, dass die Codeanalyse vor dem Einchecken ausgeführt wird.  
   
--   **Typen von Arbeitselementen**: Erfordert, dass eine oder mehrere Arbeitsaufgaben mit dem Eincheckvorgang verknüpft werden.  
+- **Typen von Arbeitselementen**: Erfordert, dass eine oder mehrere Arbeitsaufgaben mit dem Eincheckvorgang verknüpft werden.  
   
 > [!IMPORTANT]
 >  Eincheckrichtlinien können nur verwendet werden, wenn eine Verbindung mit [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]besteht.  

@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107085"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Beschreiben des Kontrollflusses mit Fragmenten in UML-Sequenzdiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
   
  In der Abbildung sind die folgenden Elemente dargestellt.  
   
-1.  Ein kombiniertes Fragment. Es gibt mehrere Arten von kombinierten Fragmenten. Dieses Beispiel ist ein kombiniertes Alt-Fragment, mit dem Sie anzeigen können, dass alternative Sequenzen von Meldungen auftreten können.  
+1. Ein kombiniertes Fragment. Es gibt mehrere Arten von kombinierten Fragmenten. Dieses Beispiel ist ein kombiniertes Alt-Fragment, mit dem Sie anzeigen können, dass alternative Sequenzen von Meldungen auftreten können.  
   
-2.  Interaktionsoperanden. Jedes kombinierte Fragment enthält mindestens einen Interaktionsoperanden, der Meldungen, Interaktionsverwendungen und kleinere kombinierte Fragmente enthalten kann. In diesem Beispiel verfügt das kombinierte Alt-Fragment über zwei Interaktionsoperanden, die zwei alternative Sequenzen von Meldungen anzeigen.  
+2. Interaktionsoperanden. Jedes kombinierte Fragment enthält mindestens einen Interaktionsoperanden, der Meldungen, Interaktionsverwendungen und kleinere kombinierte Fragmente enthalten kann. In diesem Beispiel verfügt das kombinierte Alt-Fragment über zwei Interaktionsoperanden, die zwei alternative Sequenzen von Meldungen anzeigen.  
   
-3.  Sie können jeden Interaktionsoperanden einzeln auswählen, indem Sie darauf klicken. In diesem Beispiel ist der oberste Interaktionsoperand ausgewählt, sodass seine Begrenzung zu sehen ist. Normalerweise ist nur die Trennlinie zwischen Interaktionsoperanden sichtbar.  
+3. Sie können jeden Interaktionsoperanden einzeln auswählen, indem Sie darauf klicken. In diesem Beispiel ist der oberste Interaktionsoperand ausgewählt, sodass seine Begrenzung zu sehen ist. Normalerweise ist nur die Trennlinie zwischen Interaktionsoperanden sichtbar.  
   
     > [!NOTE]
     >  Um den obersten Interaktionsoperanden auszuwählen, dürfen Sie nicht zu nah am oberen Rand des kombinierten Fragments klicken.  
   
-4.  Wächter. Sie können jeden Interaktionsoperanden mit einem Wächter versehen. Dieser beschreibt die Bedingung, unter der die Meldungen im Interaktionsoperanden ausgeführt werden.  
+4. Wächter. Sie können jeden Interaktionsoperanden mit einem Wächter versehen. Dieser beschreibt die Bedingung, unter der die Meldungen im Interaktionsoperanden ausgeführt werden.  
   
 ## <a name="creating-combined-fragments"></a>Erstellen von kombinierten Fragmenten  
  Eine Liste der Arten von Fragmenten, die Sie erstellen können, finden Sie unter [Arten von kombinierten Fragmenten](#KindsOfFragment).  
@@ -97,12 +97,12 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>So legen Sie die Eigenschaften eines kombinierten Fragments fest oder zeigen diese an  
   
--   Klicken Sie mit der rechten Maustaste in den Titel des kombinierten Fragments, und klicken Sie dann auf **Eigenschaften**.  
+- Klicken Sie mit der rechten Maustaste in den Titel des kombinierten Fragments, und klicken Sie dann auf **Eigenschaften**.  
   
     > [!NOTE]
     >  Verschiedene Arten von kombinierten Fragmenten verfügen über unterschiedliche Eigenschaften.  
   
-##  <a name="KindsOfFragment"></a> Arten von kombinierten Fragmenten  
+## <a name="KindsOfFragment"></a> Arten von kombinierten Fragmenten  
   
 ### <a name="fragments-describing-control-flow"></a>Fragmente, die die Ablaufsteuerung beschreiben  
  Ein einfaches Sequenzdiagramm zeigt nur eine typische Sequenz. Sie können die folgenden Typen von kombinierten Fragmenten verwenden, um Variationen zu beschreiben, die in unterschiedlichen Situationen auftreten können.  

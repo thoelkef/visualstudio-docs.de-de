@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093461"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Vorgehensweise: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben
   Erstellen, bereinigen und Überprüfen eines SharePoint-Pakets (*.wsp*) mithilfe der Befehlszeile MSBuild-Aufgaben auf einem Entwicklungscomputer. Sie können diese Befehle auch verwenden, um den Buildprozess automatisieren, indem Sie mit Team Foundation Server auf einem Buildcomputer.
@@ -26,11 +26,11 @@ ms.locfileid: "56624398"
 
 #### <a name="to-build-a-sharepoint-package"></a>Erstellen ein SharePoint-Pakets
 
-1.  Auf der Windows **starten** Menü wählen **Programme** > **Zubehör** > **Eingabeaufforderung**.
+1. Auf der Windows **starten** Menü wählen **Programme** > **Zubehör** > **Eingabeaufforderung**.
 
-2.  Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
+2. Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
 
-3.  Geben Sie den folgenden Befehl zum Erstellen eines Pakets für das Projekt aus. Ersetzen Sie dies *ProjectFileName* mit dem Namen des Projekts.
+3. Geben Sie den folgenden Befehl zum Erstellen eines Pakets für das Projekt aus. Ersetzen Sie dies *ProjectFileName* mit dem Namen des Projekts.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624398"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Zum Bereinigen eines SharePoint-Pakets
 
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.
+1. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-2.  Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
+2. Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
 
-3.  Geben Sie den folgenden Befehl aus, um ein Paket für das Projekt zu bereinigen. Ersetzen Sie dies *ProjectFileName* mit dem Namen des Projekts.
+3. Geben Sie den folgenden Befehl aus, um ein Paket für das Projekt zu bereinigen. Ersetzen Sie dies *ProjectFileName* mit dem Namen des Projekts.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624398"
 
 #### <a name="to-validate-a-sharepoint-package"></a>So überprüfen Sie eine SharePoint-Paket
 
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.
+1. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-2.  Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
+2. Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
 
-3.  Geben Sie den folgenden Befehl aus, um ein Paket für das Projekt zu überprüfen. Ersetzen Sie dies *ProjectFileName* mit dem Namen des Projekts.
+3. Geben Sie den folgenden Befehl aus, um ein Paket für das Projekt zu überprüfen. Ersetzen Sie dies *ProjectFileName* mit dem Namen des Projekts.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624398"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Zum Festlegen einer Eigenschaft in einem SharePoint-Paket
 
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.
+1. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-2.  Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
+2. Ändern Sie in das Verzeichnis, in dem das SharePoint-Projekt befindet.
 
-3.  Geben Sie den folgenden Befehl zum Festlegen einer Eigenschaft in ein Paket für das Projekt aus. Ersetzen Sie dies *PropertyName* mit der Eigenschaft, die Sie festlegen möchten.
+3. Geben Sie den folgenden Befehl zum Festlegen einer Eigenschaft in ein Paket für das Projekt aus. Ersetzen Sie dies *PropertyName* mit der Eigenschaft, die Sie festlegen möchten.
 
     ```cmd
     msbuild /property:PropertyName=Value

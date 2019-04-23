@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085628"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Hinzufügen von Benutzeroberflächenelementen mit VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Eine VSPackage hinzufügen (UI) Elemente der Benutzeroberfläche, z. B. Menüs, 
 ## <a name="the-visual-studio-command-table-architecture"></a>Die Tabelle-Architektur von Visual Studio-Befehl  
  Wie bereits erwähnt, unterstützt der-Tabelle Befehlsarchitektur die vorstehenden architektonischen Prinzipien. Die Grundsätze hinter der Abstraktionen, Datenstrukturen und Tools von der-Tabelle Befehlsarchitektur lauten wie folgt aus:  
   
--   Es gibt drei grundlegende Arten von Elementen: Menüs, Befehle und Gruppen. Menüs können in der Benutzeroberfläche wie Menüs, Untermenüs, Symbolleisten und Toolfenster verfügbar gemacht werden. Befehle sind Prozeduren, die der Benutzer kann in der IDE ausführen, und sie können als Menüelemente, Schaltflächen, Listenfelder oder andere Steuerelemente verfügbar gemacht werden. Gruppen sind Container für Menüs und Befehle.  
+- Es gibt drei grundlegende Arten von Elementen: Menüs, Befehle und Gruppen. Menüs können in der Benutzeroberfläche wie Menüs, Untermenüs, Symbolleisten und Toolfenster verfügbar gemacht werden. Befehle sind Prozeduren, die der Benutzer kann in der IDE ausführen, und sie können als Menüelemente, Schaltflächen, Listenfelder oder andere Steuerelemente verfügbar gemacht werden. Gruppen sind Container für Menüs und Befehle.  
   
--   Jedes Element wird durch eine Definition angegeben, die beschreibt, das Element, dessen Priorität relativ zu anderen Elementen und die Flags, die das Verhalten zu ändern.  
+- Jedes Element wird durch eine Definition angegeben, die beschreibt, das Element, dessen Priorität relativ zu anderen Elementen und die Flags, die das Verhalten zu ändern.  
   
--   Jedes Element verfügt über eine Platzierung, die das übergeordnete Element des Elements beschreibt. Ein Element kann über mehrere übergeordnete Elemente, verfügen, damit er an mehreren Standorten in der Benutzeroberfläche angezeigt werden kann.  
+- Jedes Element verfügt über eine Platzierung, die das übergeordnete Element des Elements beschreibt. Ein Element kann über mehrere übergeordnete Elemente, verfügen, damit er an mehreren Standorten in der Benutzeroberfläche angezeigt werden kann.  
   
      Jeder Befehl muss eine Gruppe als übergeordnetes verfügen, auch wenn es das einzige untergeordnete Element in dieser Gruppe ist. Jede Standardmenü muss auch eine übergeordnete Gruppe verfügen. Fungieren als ihre eigenen Eltern, Symbolleisten und Toolfenster. Eine Gruppe kann als das übergeordnete Element der wichtigsten Visual Studio-Menüleiste oder alle Menüs, Symbolleiste oder Toolfenster aufweisen.  
   
@@ -76,15 +76,15 @@ Eine VSPackage hinzufügen (UI) Elemente der Benutzeroberfläche, z. B. Menüs, 
 ### <a name="menus-groups-and-commands"></a>Menüs, Gruppen und Befehle  
  Wenn ein Menü, Gruppe oder den Befehl wird eine GUID und ID aufweist, können sie der IDE hinzugefügt werden. Jedes Benutzeroberflächenelement muss über Folgendes verfügen:  
   
--   Ein `guid` Attribut, das den Namen des entspricht der `GuidSymbol` -Element, das das Element der Benutzeroberfläche unter definiert ist.  
+- Ein `guid` Attribut, das den Namen des entspricht der `GuidSymbol` -Element, das das Element der Benutzeroberfläche unter definiert ist.  
   
--   Ein `id` Attribut, das den Namen des zugeordneten entspricht `IDSymbol` Element.  
+- Ein `id` Attribut, das den Namen des zugeordneten entspricht `IDSymbol` Element.  
   
      Zusammen, die `guid` und `id` compose-Attribute der *Signatur* des UI-Elements.  
   
--   Ein `priority` -Attribut, das die Platzierung des UI-Elements in der übergeordneten Menüs oder einer Gruppe bestimmt.  
+- Ein `priority` -Attribut, das die Platzierung des UI-Elements in der übergeordneten Menüs oder einer Gruppe bestimmt.  
   
--   Ein [übergeordnetes Element](../../extensibility/parent-element.md) , bei dem `guid` und `id` Attribute, die die Signatur des übergeordneten Menüs oder der Gruppe angeben.  
+- Ein [übergeordnetes Element](../../extensibility/parent-element.md) , bei dem `guid` und `id` Attribute, die die Signatur des übergeordneten Menüs oder der Gruppe angeben.  
   
 #### <a name="menus"></a>Menüs  
  Jedes Menü wird definiert, wie eine [Menu Element](../../extensibility/menu-element.md) in die `Menus` Abschnitt. Menüs müssen `guid`, `id`, und `priority` Attribute, und ein `Parent` -Element, und auch die folgenden zusätzlichen Attribute und untergeordnete Elemente:  
@@ -271,17 +271,17 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>Allgemeine Anforderungen  
  Der Befehl muss die folgende Reihe von Tests übergeben, bevor es angezeigt und aktiviert werden kann:  
   
--   Der Befehl ist richtig positioniert.  
+- Der Befehl ist richtig positioniert.  
   
--   Die `DefaultInvisible` Flag nicht festgelegt.  
+- Die `DefaultInvisible` Flag nicht festgelegt.  
   
--   Das übergeordnete Menü oder einer Symbolleiste wird angezeigt.  
+- Das übergeordnete Menü oder einer Symbolleiste wird angezeigt.  
   
--   Der Befehl ist kein nicht sichtbar aufgrund eines Eintrags Kontext, in der [VisibilityConstraints-Element](../../extensibility/visibilityconstraints-element.md) Abschnitt.  
+- Der Befehl ist kein nicht sichtbar aufgrund eines Eintrags Kontext, in der [VisibilityConstraints-Element](../../extensibility/visibilityconstraints-element.md) Abschnitt.  
   
--   VSPackage-Code zum Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle angezeigt und können Sie den Befehl. Keine Schnittstellencode abgefangen und darauf reagiert.  
+- VSPackage-Code zum Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle angezeigt und können Sie den Befehl. Keine Schnittstellencode abgefangen und darauf reagiert.  
   
--   Klickt ein Benutzer den Befehl, wird Sie gemäß der Prozedur, die in beschriebenen [Routing Algorithmus](../../extensibility/internals/command-routing-algorithm.md).  
+- Klickt ein Benutzer den Befehl, wird Sie gemäß der Prozedur, die in beschriebenen [Routing Algorithmus](../../extensibility/internals/command-routing-algorithm.md).  
   
 ## <a name="calling-pre-defined-commands"></a>Vordefinierte Befehle aufrufen  
  Die [UsedCommands-Element](../../extensibility/usedcommands-element.md) ermöglicht VSPackages, Zugriff auf die Befehle, die von anderen VSPackages oder von der IDE bereitgestellt werden. Zu diesem Zweck erstellen Sie eine [UsedCommand-Element](../../extensibility/usedcommand-element.md) hat die GUID und ID des Befehls verwendet. Dadurch wird sichergestellt, dass der Befehl von Visual Studio geladen werden, auch wenn er nicht Teil der aktuellen Visual Studio-Konfiguration ist. Weitere Informationen finden Sie unter [UsedCommand-Element](../../extensibility/usedcommand-element.md).  
@@ -289,17 +289,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Darstellung der Benutzeroberfläche-Element  
  Überlegungen zur Auswahl, und Positionieren von befehlselementen lauten wie folgt aus:  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Elemente der Benutzeroberfläche, die je nach Platzierung unterschiedlich angezeigt werden.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Elemente der Benutzeroberfläche, die je nach Platzierung unterschiedlich angezeigt werden.  
   
--   Ein Benutzeroberflächenelement, das mit definiert ist die `DefaultInvisible` Flag wird nicht in der IDE angezeigt werden, es sei denn, es ist entweder eine VSPackage-Implementierung des angezeigt der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> -Methode, oder für einen bestimmten UI-Kontext, in der `VisibilityConstraints` Abschnitt.  
+- Ein Benutzeroberflächenelement, das mit definiert ist die `DefaultInvisible` Flag wird nicht in der IDE angezeigt werden, es sei denn, es ist entweder eine VSPackage-Implementierung des angezeigt der <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> -Methode, oder für einen bestimmten UI-Kontext, in der `VisibilityConstraints` Abschnitt.  
   
--   Sogar ein erfolgreich positionierte-Befehl kann nicht angezeigt werden. Dies ist da die IDE automatisch ausgeblendet oder einige Befehle, abhängig von Schnittstellen, die das VSPackage hat zeigt (oder nicht) implementiert. Z. B. eine VSPackage Implementierung einiger erstellen Schnittstellen bewirkt, dass auf Builds bezogene Menüelemente automatisch angezeigt werden.  
+- Sogar ein erfolgreich positionierte-Befehl kann nicht angezeigt werden. Dies ist da die IDE automatisch ausgeblendet oder einige Befehle, abhängig von Schnittstellen, die das VSPackage hat zeigt (oder nicht) implementiert. Z. B. eine VSPackage Implementierung einiger erstellen Schnittstellen bewirkt, dass auf Builds bezogene Menüelemente automatisch angezeigt werden.  
   
--   Anwenden der `CommandWellOnly` Flag in der Definition der UI-Element bedeutet, dass der Befehl nur durch Anpassung hinzugefügt werden kann.  
+- Anwenden der `CommandWellOnly` Flag in der Definition der UI-Element bedeutet, dass der Befehl nur durch Anpassung hinzugefügt werden kann.  
   
--   Befehle können nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. verfügbar sein, nur, wenn ein Dialogfeld angezeigt wird, wenn die IDE in der Entwurfsansicht befindet.  
+- Befehle können nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. verfügbar sein, nur, wenn ein Dialogfeld angezeigt wird, wenn die IDE in der Entwurfsansicht befindet.  
   
--   Um die dazu führen, dass bestimmte Elemente der Benutzeroberfläche, die in der IDE angezeigt werden, müssen Sie eine oder mehrere Schnittstellen implementieren oder Code schreiben.  
+- Um die dazu führen, dass bestimmte Elemente der Benutzeroberfläche, die in der IDE angezeigt werden, müssen Sie eine oder mehrere Schnittstellen implementieren oder Code schreiben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)

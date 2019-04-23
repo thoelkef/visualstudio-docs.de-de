@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d25325eb6f0fac952cbecff13cacde2d5354762
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092759"
 ---
 # <a name="create-outlook-form-regions"></a>Erstellen von Outlook-Formularbereichen
   Formularbereiche können zum Anpassen von Microsoft Office Outlook-Formularen verwendet werden. Visual Studio bietet erweiterte Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.
@@ -30,23 +30,23 @@ ms.locfileid: "56621367"
 
  Dieses Thema enthält folgende Informationen:
 
--   [Vorteile der Verwendung von Formularbereichen](#Enhance)
+- [Vorteile der Verwendung von Formularbereichen](#Enhance)
 
--   [Hinzufügen eines Outlook-Formularbereichs zu Ihrem Projekt](#Adding)
+- [Hinzufügen eines Outlook-Formularbereichs zu Ihrem Projekt](#Adding)
 
--   [Verwenden des Formularbereich-Designers](#UsingFormRegionDesigner)
+- [Verwenden des Formularbereich-Designers](#UsingFormRegionDesigner)
 
--   [Verwenden eines in Outlook entworfenen Formularbereichs](#UsingFormRegionDesignedOutlook)
+- [Verwenden eines in Outlook entworfenen Formularbereichs](#UsingFormRegionDesignedOutlook)
 
--   [Hinzufügen von benutzerdefiniertem Code zu einem Formularbereich](#AddingCustomCode)
+- [Hinzufügen von benutzerdefiniertem Code zu einem Formularbereich](#AddingCustomCode)
 
--   [Erstellen Sie das Projekt](#Building)
+- [Erstellen Sie das Projekt](#Building)
 
--   [Debuggen eines Formularbereichs](#Debugging)
+- [Debuggen eines Formularbereichs](#Debugging)
 
--   [Bereitstellen eines Formularbereichs](#Deploying)
+- [Bereitstellen eines Formularbereichs](#Deploying)
 
-##  <a name="Enhance"></a> Vorteile der Verwendung von Formularbereichen
+## <a name="Enhance"></a> Vorteile der Verwendung von Formularbereichen
  Formularbereiche bieten zahlreiche Verbesserungen gegenüber der traditionellen Outlook-Formularentwicklung:
 
 - Anpassen der Standardseite beliebiger Standardformulare.
@@ -59,10 +59,10 @@ ms.locfileid: "56621367"
 
   Weitere Informationen finden Sie unter [Anpassen von Formularseiten und Formularbereichen](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).
 
-##  <a name="Adding"></a> Hinzufügen eines Outlook-Formularbereichs zu Ihrem Projekt
+## <a name="Adding"></a> Hinzufügen eines Outlook-Formularbereichs zu Ihrem Projekt
  Sie können die **neuer Outlook-Formularbereich** Assistenten können Sie einen neuen Formularbereich entwerfen oder einen, der in Outlook entworfenen Formularbereich importieren. Wenn Sie über einen Formularbereich verfügen, den Sie in einem anderen Outlook VSTO-Add-In-Projekt verwendet haben, können Sie außerdem Ihren vorhandenen Formularbereich wiederverwenden.
 
-###  <a name="CreatingFormRegion"></a> Erstellen eines neuen Formularbereichs mithilfe des Assistenten
+### <a name="CreatingFormRegion"></a> Erstellen eines neuen Formularbereichs mithilfe des Assistenten
  Fügen Sie zum Erstellen eines Formularbereichs ein **Outlook-Formularbereich** Element zu einem Outlook-VSTO-Add-in-Projekt. Dies startet den **neuer Outlook-Formularbereich** Assistenten.
 
  Verwenden Sie den Assistenten, um anzugeben, ob Sie einen neuen Formularbereich entwerfen oder einen in Outlook entworfenen Formularbereich importieren möchten. Weitere Informationen zum Entwerfen eines neuen Formularbereichs finden Sie unter [Verwenden des Formularbereich-Designers](#UsingFormRegionDesigner). Weitere Informationen zur Verwendung eines in Outlook entworfenen Formularbereichs finden Sie unter [einen in Outlook entworfenen Formularbereich importieren](#UsingFormRegionDesignedOutlook).
@@ -83,11 +83,11 @@ ms.locfileid: "56621367"
 #### <a name="form-region-files"></a>Formularbereichdateien
  Nach Abschluss der **neuer Outlook-Formularbereich** Assistent bietet Ihnen Visual Studio fügt automatisch die folgenden Dateien zu Ihrem Projekt hinzu:
 
--   Eine Formularbereich-Codedatei. Diese Datei enthält den Namen, den Sie, für angeben die **Outlook-Formularbereich** Element in der **neues Element hinzufügen** Dialogfeld. Fügen Sie dieser Datei Code zum Behandeln von Formularbereichereignissen hinzu.
+- Eine Formularbereich-Codedatei. Diese Datei enthält den Namen, den Sie, für angeben die **Outlook-Formularbereich** Element in der **neues Element hinzufügen** Dialogfeld. Fügen Sie dieser Datei Code zum Behandeln von Formularbereichereignissen hinzu.
 
--   Eine Codedatei des Formularbereich-Designers. Diese Datei beinhaltet vom Formularbereich-Designer generierten Code und sollte nicht direkt bearbeitet werden.
+- Eine Codedatei des Formularbereich-Designers. Diese Datei beinhaltet vom Formularbereich-Designer generierten Code und sollte nicht direkt bearbeitet werden.
 
--   Outlook Form Storage (*OFS*) Datei.
+- Outlook Form Storage (*OFS*) Datei.
 
     > [!NOTE]
     >  Diese Datei wird dem Projekt nur hinzugefügt, wenn Sie einen Formularbereich importieren, der in Outlook entworfenen wurde.
@@ -101,12 +101,12 @@ ms.locfileid: "56621367"
 
  Ein Großteil der Formularbereichsfactory-Klasse wird in der Codedatei des Formularbereich-Designers implementiert. Allerdings wird der `FormRegionInitializing`-Ereignishandler in der Formularbereich-Codedatei bereitgestellt. Sie können diesen Ereignishandler zum Angeben verwenden, ob Outlook den Formularbereich anzeigen soll. Weitere Informationen finden Sie unter [Behandeln von formularbereichereignissen](#HandlingFormRegionEvents).
 
-###  <a name="AddingExistingFormRegion"></a> Hinzufügen eines vorhandenen Formularbereichs zu Ihrem Projekt
+### <a name="AddingExistingFormRegion"></a> Hinzufügen eines vorhandenen Formularbereichs zu Ihrem Projekt
  Wenn Sie über einen Outlook-Formularbereich verfügen, den Sie in einem anderen Outlook-Projekt verwendet haben, können Sie diesen in Ihrem aktuellen Outlook VSTO-Add-In-Projekt wiederverwenden, indem Sie mit das Dialogfeld **Vorhandenes Element hinzufügen** verwenden.
 
  Der vorhandenen Formularbereich benötigen eine Codedatei (*vb* oder *cs*); Outlook Form Storage kann nicht hinzugefügt werden (*OFS*) Dateien mithilfe der **vorhandenes Element hinzufügen** Dialogfeld. Allerdings können Sie einen neuen Formularbereich durch Importieren einer OSF-Datei (Outlook Form Storage) erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-##  <a name="UsingFormRegionDesigner"></a> Verwenden des Formularbereich-Designers
+## <a name="UsingFormRegionDesigner"></a> Verwenden des Formularbereich-Designers
  Der Formularbereich-Designer unterstützt Sie beim Entwerfen des Layouts und des Erscheinungsbilds eines Formularbereichs. Sie können verwaltete Steuerelemente auf die Oberfläche des Designers gezogen, doppelklicken Sie auf die Steuerelemente, um Ereignishandler zu öffnen, und legen Sie Eigenschaften der **Eigenschaften** Fenster.
 
 > [!NOTE]
@@ -124,7 +124,7 @@ ms.locfileid: "56621367"
 
   Der Formularbereich-Designer unterstützt nur verwaltete Steuerelemente. Sie können keine systemeigenen Outlook-Steuerelemente hinzufügen.
 
-##  <a name="UsingFormRegionDesignedOutlook"></a> Importieren Sie einen in Outlook entworfenen Formularbereich
+## <a name="UsingFormRegionDesignedOutlook"></a> Importieren Sie einen in Outlook entworfenen Formularbereich
  Wenn Sie in Outlook entwerfen, können Sie dem Formularbereich systemeigene Outlook-Steuerelemente hinzufügen. Systemeigene Outlook-Steuerelemente ermöglichen es Ihnen, Outlook-Daten zur Entwurfszeit zu binden. Allerdings können Sie den Formularbereich-Designer nicht zum Hinzufügen verwalteter Steuerelemente oder zum Ändern des Entwurfs des Formularbereichs verwenden.
 
  Sie können Formularbereiche in ein Outlook VSTO-Add-in-Projekt importieren, mit der **neuer Outlook-Formularbereich** Assistenten. Auf der **wählen, wie der Formularbereich erstellt werden sollen** Seite **Outlook Form Storage (OFS)-Datei importieren**. Sie können dann zum Speicherort der Datei Outlook Form Storage navigieren (*OFS*) Datei. (Outlook speichert Formularbereiche als *OFS* Dateien.)
@@ -143,12 +143,12 @@ ms.locfileid: "56621367"
 ### <a name="update-an-imported-form-regions-design"></a>Aktualisieren eines importierten Formularbereichs-Entwurf
  Sie können Steuerelemente für den Formularbereich hinzufügen, entfernen oder ändern. Bevor Sie diese Aufgaben ausführen, erstellen Sie eine Sicherung des Codes, den Sie der Formularbereich-Codedatei hinzugefügt haben. Öffnen Sie dann die *OFS* Datei in Outlook, ändern Sie den Formularbereich und speichern Sie die Änderungen. Verwenden der **neuer Outlook-Formularbereich** Assistenten, um die geänderte importieren *OFS* Datei. Anschließend können Sie Ihren Code in die neue Formularbereich-Codedatei einfügen.
 
-##  <a name="AddingCustomCode"></a> Hinzufügen von benutzerdefiniertem Code zu einem Formularbereich
+## <a name="AddingCustomCode"></a> Hinzufügen von benutzerdefiniertem Code zu einem Formularbereich
  Der Namespace <xref:Microsoft.Office.Tools.Outlook> ermöglicht Ihnen den Zugriff auf Klassen, die den Formularbereich darstellen, das Outlook-Element, das den Formularbereich angezeigt, und andere nützliche Elemente. Die **Outlook-Formularbereich** Element fügt automatisch einen Verweis auf diese Assembly im Projekt und fügt die entsprechende **mit** oder **Importe** Anweisung am Anfang der Formularbereich-Codedatei.
 
  Sie können Klassen, Methoden und Eigenschaften im Namespace `Microsoft.Office.Interop.Outlook` verwenden, um die meisten Outlook-Programmieraufgaben auszuführen. Weitere Informationen zu Outlook-Objektmodell, finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md). Beispiele für typische Aufgaben, die Outlook-Objektmodell verwenden, finden Sie unter [Outlook-Projektmappen](../vsto/outlook-solutions.md).
 
-###  <a name="HandlingFormRegionEvents"></a> Behandeln von formularbereichereignissen
+### <a name="HandlingFormRegionEvents"></a> Behandeln von formularbereichereignissen
  Die **Outlook-Formularbereich** Element automatisch die folgenden drei Ereignishandler auf die Formularbereich-Codedatei hinzugefügt.
 
 |event|Beschreibung|
@@ -157,7 +157,7 @@ ms.locfileid: "56621367"
 |FormRegionShowing|Tritt nach dem Erstellen einer Instanz des Formularbereichs, jedoch vor dem Anzeigen des Formularbereichs auf.|
 |FormRegionClosed|Tritt auf, bevor der Formularbereich geschlossen wird.|
 
-##  <a name="Building"></a> Erstellen Sie das Projekt
+## <a name="Building"></a> Erstellen Sie das Projekt
  Wenn Sie ein Outlook VSTO-Add-In-Projekt erstellen, das einen Formularbereich enthält, fügt Visual Studio der Registrierung die folgenden Informationen hinzu:
 
 - Einen Schlüssel für jede Nachrichtenklasse, die mindestens einem Formularbereich zugeordnet ist.
@@ -166,12 +166,12 @@ ms.locfileid: "56621367"
 
   Outlook verwendet diese Informationen zum Laden der Formularbereiche.
 
-##  <a name="Debugging"></a> Debuggen eines Formularbereichs
+## <a name="Debugging"></a> Debuggen eines Formularbereichs
  Sie können ein Outlook VSTO-Add-in, das einen Formularbereich enthält, auf die gleiche Weise wie andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Projekte debuggen. Beim Starten des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers startet Visual Studio automatisch Outlook.
 
  Um den Formularbereich anzuzeigen, müssen Sie das entsprechende Outlook-Element öffnen. Öffnen Sie z. B. ein E-Mail-Element, wenn ein benachbarter Formularbereich am Ende des E-Mail-Elements angefügt wird.
 
-##  <a name="Deploying"></a> Bereitstellen eines Formularbereichs
+## <a name="Deploying"></a> Bereitstellen eines Formularbereichs
  Formularbereiche werden automatisch mit dem zugehörigen Outlook VSTO-Add-In bereitgestellt. Daher müssen Sie keine besonderen Aufgaben ausführen, um einen Formularbereich bereitzustellen. Weitere Informationen zum Bereitstellen von VSTO-Add-ins finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
 
 ## <a name="related-topics"></a>Verwandte Themen

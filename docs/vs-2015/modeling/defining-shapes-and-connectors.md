@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112324"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definieren von Formen und Konnektoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es gibt mehrere grundlegende Formtypen, die Sie zum Anzeigen von Informationen in einem Diagramm in einer domänenspezifischen Sprache (DSL) verwenden können.  
   
-##  <a name="shapeTypes"></a> Grundlegende Typen von Formen und Konnektoren  
+## <a name="shapeTypes"></a> Grundlegende Typen von Formen und Konnektoren  
  Eine DSL-Diagramm wird eine Auflistung von *Formen* angezeigt, die durch Linien oder *Connectors*.  Normalerweise gilt Folgendes (wenn auch nicht immer):  
   
 - Bei Formen handelt es sich um die sichtbare Darstellung der Modellelemente.  
@@ -45,5 +45,5 @@ Es gibt mehrere grundlegende Formtypen, die Sie zum Anzeigen von Informationen i
 |Swimlanes|Mithilfe von Verantwortlichkeitsbereichen wird ein Diagramm in horizontale oder vertikale Segmente partitioniert. Der Verantwortlichkeitsbereich bleibt stets unterhalb der anderen Formen im Diagramm.<br /><br /> Normalerweise sind die Modellelemente des Verantwortlichkeitsbereichs dem Modellstamm übergeordnet, und die anderen Elemente sind diesen übergeordnet. Erstellen Sie zum Beispiel eine DSL mithilfe der Lösungsvorlage für den Aufgabenverlauf.|  
 |Connectors|Die zwischen den Formen gezeichneten Linien stellen normalerweise Verweisbeziehungen dar. Sie können Optionen festlegen, sodass ein Konnektor gerade oder geradlinig ist und verschiedene Pfeilspitzentypen zur Verfügung stehen.|  
   
-##  <a name="shapeInheritance"></a> Form-Vererbung  
+## <a name="shapeInheritance"></a> Form-Vererbung  
  Eine Form kann von einer anderen Form erben. Die Formen müssen allerdings vom selben Typ sein. Beispielsweise kann nur eine Geometrie-Form von einer Geometrie-Form erben. Geerbte Formen verfügen über die Depots und Decorator-Elemente ihrer entsprechenden Basis-Form. Konnektoren können von Konnektoren erben.

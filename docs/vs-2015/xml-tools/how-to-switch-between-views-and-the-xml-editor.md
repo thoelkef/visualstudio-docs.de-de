@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bdc530656ef7e7a57b8e637aeca562eb483e0d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c8d396efdc615ae954ef16453c9c5459f0685650
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107232"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Vorgehensweise: Wechseln zwischen Ansichten und dem XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ In diesem Thema wird beschrieben, wie Sie zwischen den Ansichten des XML-Schema-
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>So wechseln Sie zwischen den Ansichten und dem XML-Editor  
   
-1.  Führen Sie zum Erstellen und bearbeiten eine neue XML-Schema-Datei, die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Führen Sie zum Erstellen und bearbeiten eine neue XML-Schema-Datei, die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Um in der XML-Schema-Designer aus der XML-Editor wechseln, mit der rechten Maustaste an einer beliebigen Stelle in der XML-Editor, und wählen Sie **Ansicht-Designer**.  
+2. Um in der XML-Schema-Designer aus der XML-Editor wechseln, mit der rechten Maustaste an einer beliebigen Stelle in der XML-Editor, und wählen Sie **Ansicht-Designer**.  
   
-3.  Um zur Diagrammansicht über das Wasserzeichen zu wechseln, klicken Sie auf die **verwenden Sie die Diagrammansicht, um die Beziehung zwischen den Knoten finden Sie unter** Link in der Ausgangsansicht auf.  
+3. Um zur Diagrammansicht über das Wasserzeichen zu wechseln, klicken Sie auf die **verwenden Sie die Diagrammansicht, um die Beziehung zwischen den Knoten finden Sie unter** Link in der Ausgangsansicht auf.  
   
-4.  Ziehen Sie den `USAddress`-Knoten vom XML-Schema-Explorer in die Diagrammansicht. Mit der rechten Maustaste die `USAddress` Knoten in der Diagrammansicht und **in Inhaltsmodellansicht anzeigen** im Kontextmenü.  
+4. Ziehen Sie den `USAddress`-Knoten vom XML-Schema-Explorer in die Diagrammansicht. Mit der rechten Maustaste die `USAddress` Knoten in der Diagrammansicht und **in Inhaltsmodellansicht anzeigen** im Kontextmenü.  
   
      Die Inhaltsmodellansicht mit den Details des `USAddress`-Knotens wird angezeigt.  
   
-5.  Klicken Sie auf der XSD-Symbolleiste auf die Schaltfläche "Ausgangsansicht", um von der Inhaltsmodellansicht über die Symbolleiste zur Ausgangsansicht zu wechseln.  
+5. Klicken Sie auf der XSD-Symbolleiste auf die Schaltfläche "Ausgangsansicht", um von der Inhaltsmodellansicht über die Symbolleiste zur Ausgangsansicht zu wechseln.  
   
-6.  Verwenden Sie folgende Hotkeys, um zwischen den Ansichten zu wechseln: STRG+1 für die Ausgangsansicht, STRG+2 für die Diagrammansicht und STRG+3 für die Inhaltsmodellansicht.  
+6. Verwenden Sie folgende Hotkeys, um zwischen den Ansichten zu wechseln: STRG+1 für die Ausgangsansicht, STRG+2 für die Diagrammansicht und STRG+3 für die Inhaltsmodellansicht.  
   
-7.  Um von der Inhaltsmodellansicht zum XML-Editor zu wechseln, mit der rechten Maustaste des Knotens, und wählen Sie **Ansichtscode** im Kontextmenü.
+7. Um von der Inhaltsmodellansicht zum XML-Editor zu wechseln, mit der rechten Maustaste des Knotens, und wählen Sie **Ansichtscode** im Kontextmenü.

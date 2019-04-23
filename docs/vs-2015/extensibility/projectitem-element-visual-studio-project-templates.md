@@ -13,12 +13,12 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4f480275c29906f3bb941187ff537e3a02a1f45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099129"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem-Element (Visual Studio-Projektvorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,21 +90,21 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
   
 ### <a name="to-rename-files-with-parameters"></a>Zum Umbenennen von Dateien mit Parametern  
   
-1.  Verwenden Sie das folgende XML, in der VSTEMPLATE-Datei:  
+1. Verwenden Sie das folgende XML, in der VSTEMPLATE-Datei:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Öffnen Sie die Projektdatei (.vbproj für ein [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Öffnen Sie die Projektdatei (.vbproj für ein [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:  
+3. Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Ersetzen Sie die Zeile des Codes, durch das folgende XML:  
+4. Ersetzen Sie die Zeile des Codes, durch das folgende XML:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  

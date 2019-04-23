@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097478"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Vorgehensweise: Modell 3D-Geländes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Objekten in einer Szene  
+- Hinzufügen von Objekten in einer Szene  
   
--   Auswählen von Flächen und Punkten  
+- Auswählen von Flächen und Punkten  
   
--   Übertragen der Auswahl  
+- Übertragen der Auswahl  
   
--   Verwenden des Tools **Flächen unterteilen**  
+- Verwenden des Tools **Flächen unterteilen**  
   
--   Umrahmen eines Objekt in der Entwurfsoberfläche  
+- Umrahmen eines Objekt in der Entwurfsoberfläche  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Erstellen eines 3D-Geländemodells  
  Sie können ein 3D-Gelände erstellen, indem Sie eine Ebene unterteilen, um zusätzliche Flächen zu erstellen und anschließend ihre Schnittpunkte zur Erstellung interessanter Geländefunktionen zu bearbeiten.  
@@ -68,7 +68,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
   
    ![3D-Szene zur Darstellung eines Geländemodells](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   Sie können dieses Geländemodell zur Veranschaulichung des Effekts des Farbverlauf-Shaders verwenden, das unter [Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md) beschrieben wird.  
+   Sie können dieses Geländemodell zur Veranschaulichung des Effekts des Farbverlauf-Shaders verwenden, das unter [Vorgehensweise: Erstellen eines Geometriebasierten Farbverlauf-Shaders](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Modell-Editor](../designers/model-editor.md)

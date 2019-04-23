@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092096"
 ---
 # <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,43 +38,43 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
  Die **Threads** Fenster enthält eine Tabelle, in dem jede Zeile stellt einen Thread in der Anwendung dar. Standardmäßig sind in der Tabelle alle Threads in der Anwendung aufgeführt. Sie können die Liste jedoch filtern, sodass nur die gewünschten Threads angezeigt werden. Jede Spalte enthält einen anderen Typ von Informationen. Sie können auch einige Spalten ausblenden. Wenn alle Spalten eingeblendet sind, werden die folgenden Informationen angezeigt (von links nach rechts):  
   
--   Die Flagspalte, in Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Kennzeichnen und Threadkennzeichnung](../debugger/how-to-flag-and-unflag-threads.md).  
+- Die Flagspalte, in Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Kennzeichnen und Threadkennzeichnung](../debugger/how-to-flag-and-unflag-threads.md).  
   
--   Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt. Konturen eines Pfeils geben den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
+- Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt. Konturen eines Pfeils geben den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
   
--   Die **ID** Spalte, die die ID für jeden Thread enthält.  
+- Die **ID** Spalte, die die ID für jeden Thread enthält.  
   
--   Die **verwaltete ID** Spalte, die die verwalteten IDs für verwaltete Threads enthält.  
+- Die **verwaltete ID** Spalte, die die verwalteten IDs für verwaltete Threads enthält.  
   
--   Die **Kategorie** Spalte, die Threads als Benutzeroberflächenthreads, Remoteprozeduraufruf-Handler oder Arbeitsthreads kategorisiert werden. In einer speziellen Kategorie wird der Hauptthread der Anwendung angegeben.  
+- Die **Kategorie** Spalte, die Threads als Benutzeroberflächenthreads, Remoteprozeduraufruf-Handler oder Arbeitsthreads kategorisiert werden. In einer speziellen Kategorie wird der Hauptthread der Anwendung angegeben.  
   
--   Die **Namen** Spalte, die einzelnen Threads anhand des Namens, zu identifizieren, sofern vorhanden, oder als \<ohne Namen >.  
+- Die **Namen** Spalte, die einzelnen Threads anhand des Namens, zu identifizieren, sofern vorhanden, oder als \<ohne Namen >.  
   
--   Die **Speicherort** Spalte, die angezeigt wird, in dem der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.  
+- Die **Speicherort** Spalte, die angezeigt wird, in dem der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.  
   
--   Die **Priorität** Spalte, die die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.  
+- Die **Priorität** Spalte, die die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.  
   
--   Die **Affinity Mask** Spalte, die eine erweiterte Spalte darstellt, die normalerweise ausgeblendet ist. In dieser Spalte wird die Prozessor-Affinitätsmaske für jeden Thread angezeigt. In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.  
+- Die **Affinity Mask** Spalte, die eine erweiterte Spalte darstellt, die normalerweise ausgeblendet ist. In dieser Spalte wird die Prozessor-Affinitätsmaske für jeden Thread angezeigt. In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.  
   
--   Die **angehaltene Anzahl** Spalte, die der Unterbrechungszähler angegeben. Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann. Eine Erläuterung des Unterbrechungszählers finden Sie in diesem Thema im Abschnitt "Sperren und Entsperren von Threads".  
+- Die **angehaltene Anzahl** Spalte, die der Unterbrechungszähler angegeben. Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann. Eine Erläuterung des Unterbrechungszählers finden Sie in diesem Thema im Abschnitt "Sperren und Entsperren von Threads".  
   
--   Die **Prozessnamen** Spalte, die den Prozess enthält, zu der jeder Thread gehört. Diese Spalte kann hilfreich sein, wenn Sie mehrere Prozesse debuggen. Normalerweise ist sie jedoch ausgeblendet.  
+- Die **Prozessnamen** Spalte, die den Prozess enthält, zu der jeder Thread gehört. Diese Spalte kann hilfreich sein, wenn Sie mehrere Prozesse debuggen. Normalerweise ist sie jedoch ausgeblendet.  
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>So zeigen Sie das Fenster Threads im Unterbrechungs- oder Ausführmodus an  
   
--   Auf der **Debuggen** Startmenü **Windows**, und klicken Sie dann auf **Threads**.  
+- Auf der **Debuggen** Startmenü **Windows**, und klicken Sie dann auf **Threads**.  
   
 ### <a name="to-display-or-hide-a-column"></a>So blenden Sie Spalten ein oder aus  
   
--   Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Spalten**, und aktivieren bzw. deaktivieren Sie den Namen der Spalte, die Sie anzeigen oder ausblenden möchten.  
+- Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Spalten**, und aktivieren bzw. deaktivieren Sie den Namen der Spalte, die Sie anzeigen oder ausblenden möchten.  
   
 ### <a name="to-switch-the-active-thread"></a>So wechseln Sie den aktiven Thread  
   
--   Führen Sie einen der folgenden Schritte aus:  
+- Führen Sie einen der folgenden Schritte aus:  
   
-    -   Doppelklicken Sie auf einen beliebigen Thread.  
+    - Doppelklicken Sie auf einen beliebigen Thread.  
   
-    -   Mit der rechten Maustaste in eines Threads aus, und klicken Sie auf **zu Thread wechseln**.  
+    - Mit der rechten Maustaste in eines Threads aus, und klicken Sie auf **zu Thread wechseln**.  
   
          Der gelbe Pfeil wird neben dem neuen aktiven Thread angezeigt. Die grauen Konturen eines Pfeils geben den Thread, in dem der Debugger die Ausführung unterbrochen hat.  
   
@@ -85,44 +85,44 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 #### <a name="to-sort-threads"></a>So sortieren Sie Threads  
   
-1.  Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf die Schaltfläche am oberen Rand einer beliebigen Spalte.  
+1. Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf die Schaltfläche am oberen Rand einer beliebigen Spalte.  
   
      Die Threads werden jetzt nach den Werten in dieser Spalte sortiert.  
   
-2.  Wenn Sie die Sortierreihenfolge umkehren möchten, klicken Sie erneut auf dieselbe Schaltfläche.  
+2. Wenn Sie die Sortierreihenfolge umkehren möchten, klicken Sie erneut auf dieselbe Schaltfläche.  
   
      Threads, die am Anfang der Liste angezeigt wurden, werden nun am Ende der Liste aufgeführt.  
   
 #### <a name="to-group-threads"></a>So gruppieren Sie Threads  
   
--   In der **Threads** Symbolleiste des Fensters klicken Sie auf die **Group by-** Liste, und klicken Sie dann die Kriterien, die Sie Threads gruppieren möchten.  
+- In der **Threads** Symbolleiste des Fensters klicken Sie auf die **Group by-** Liste, und klicken Sie dann die Kriterien, die Sie Threads gruppieren möchten.  
   
 #### <a name="to-sort-threads-within-groups"></a>So sortieren Sie Threads innerhalb von Gruppen  
   
-1.  Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf die **Group by-** Liste, und klicken Sie dann die Kriterien, die Sie Threads gruppieren möchten.  
+1. Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf die **Group by-** Liste, und klicken Sie dann die Kriterien, die Sie Threads gruppieren möchten.  
   
-2.  In der **Threads** Fenster, klicken Sie auf die Schaltfläche am oberen Rand einer beliebigen Spalte.  
+2. In der **Threads** Fenster, klicken Sie auf die Schaltfläche am oberen Rand einer beliebigen Spalte.  
   
      Die Threads werden jetzt nach den Werten in dieser Spalte sortiert.  
   
 #### <a name="to-expand-or-collapse-all-groups"></a>So erweitern oder reduzieren Sie alle Gruppen  
   
--   Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Gruppen erweitern** oder **Gruppen reduzieren**.  
+- Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Gruppen erweitern** oder **Gruppen reduzieren**.  
   
 ## <a name="searching-for-specific-threads"></a>Suchen nach bestimmten Threads  
  In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] können Sie nach Threads suchen, die einer bestimmten Zeichenfolge entsprechen. Bei der Suche nach Threads in der **Threads** , im Fenster werden alle Threads angezeigt, die mit die Suchzeichenfolge in einer beliebigen Spalte übereinstimmen. Dass Informationen zählt der Threadspeicherort, der am oberen Rand der Aufrufliste in angezeigt wird. die **Speicherort** Spalte. Standardmäßig wird jedoch nicht die vollständige Aufrufliste durchsucht.  
   
 #### <a name="to-search-for-specific-threads"></a>So suchen Sie nach bestimmten Threads  
   
--   Wechseln Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** in das Feld **Suchen**, und führen Sie Folgendes aus:  
+- Wechseln Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** in das Feld **Suchen**, und führen Sie Folgendes aus:  
   
-    -   Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
+    - Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
   
          \- oder –  
   
-    -   Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
+    - Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
   
--   (Optional) Wenn bei der Suche die vollständige Aufrufliste berücksichtigt werden soll, wählen Sie **Aufrufliste durchsuchen** aus.  
+- (Optional) Wenn bei der Suche die vollständige Aufrufliste berücksichtigt werden soll, wählen Sie **Aufrufliste durchsuchen** aus.  
   
 ## <a name="freezing-and-thawing-threads"></a>Sperren und Entsperren von Threads  
  Wenn ein Thread eingefroren ist, wird die Threadausführung vom System auch dann nicht gestartet, wenn Ressourcen verfügbar sind.  
@@ -136,7 +136,7 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>So können Sie die Ausführung eines Threads einfrieren oder reaktivieren  
   
--   Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Threads einfrieren** oder **Threads reaktivieren**.  
+- Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Threads einfrieren** oder **Threads reaktivieren**.  
   
      Dieser Vorgang wirkt sich nur auf Threads aus, die im Fenster **Threads** ausgewählt sind.  
   
@@ -145,20 +145,20 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 #### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
--   Wählen Sie die Schaltfläche "kennzeichnen" in der oberen linken Ecke des der **Threads** Fenster.  
+- Wählen Sie die Schaltfläche "kennzeichnen" in der oberen linken Ecke des der **Threads** Fenster.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>Anzeigen von Threadaufruflisten und Wechseln zwischen Rahmen  
  In einem Multithreadprogramm verfügt jeder Thread über eine eigene Aufrufliste. Das Fenster **Threads** bietet eine benutzerfreundliche Möglichkeit, sich diese anzeigen zu lassen.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>So zeigen Sie die Aufrufliste eines Threads an  
   
--   In der **Speicherort** Spalte, klicken Sie auf das umgekehrte Dreieck neben dem Threadspeicherort.  
+- In der **Speicherort** Spalte, klicken Sie auf das umgekehrte Dreieck neben dem Threadspeicherort.  
   
      Der Speicherort wird erweitert, und die Aufrufliste für den Thread wird angezeigt.  
   
 #### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>So können Sie die Aufruflisten aller Threads anzeigen oder reduzieren  
   
--   Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Aufruflisten erweitern** oder **Aufruflisten reduzieren**.  
+- Auf der Symbolleiste am oberen Rand der **Threads** Fenster, klicken Sie auf **Aufruflisten erweitern** oder **Aufruflisten reduzieren**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

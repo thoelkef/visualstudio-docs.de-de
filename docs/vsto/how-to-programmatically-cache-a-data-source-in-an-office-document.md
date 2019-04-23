@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109178"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument
   Sie können ein Objekt, das dem Datencache in einem Dokument programmgesteuert hinzufügen, durch den Aufruf der `StartCaching` Methode von einem Host-Elements, z. B. eine <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, oder <xref:Microsoft.Office.Tools.Excel.Worksheet>. Entfernen Sie ein Datenobjekt aus dem Datencache durch Aufrufen der `StopCaching` Methode eines Hostelements.
@@ -34,19 +34,19 @@ ms.locfileid: "54867324"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Ein Datenobjekt programmgesteuert zwischenspeichern
 
-1.  Das Datenobjekt auf Klassenebene, nicht innerhalb einer Methode zu deklarieren. In diesem Beispiel wird davon ausgegangen, dass Sie deklarieren eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie programmgesteuert zwischenspeichern möchten.
+1. Das Datenobjekt auf Klassenebene, nicht innerhalb einer Methode zu deklarieren. In diesem Beispiel wird davon ausgegangen, dass Sie deklarieren eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie programmgesteuert zwischenspeichern möchten.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  Das Datenobjekt, das Instanziieren und rufen Sie dann die `StartCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts.
+2. Das Datenobjekt, das Instanziieren und rufen Sie dann die `StartCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>So beenden Sie das Zwischenspeichern eines Datenobjekts
 
-1.  Rufen Sie die `StopCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts. In diesem Beispiel wird davon ausgegangen, dass Sie haben eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie beenden das Zwischenspeichern möchten.
+1. Rufen Sie die `StopCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts. In diesem Beispiel wird davon ausgegangen, dass Sie haben eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie beenden das Zwischenspeichern möchten.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]

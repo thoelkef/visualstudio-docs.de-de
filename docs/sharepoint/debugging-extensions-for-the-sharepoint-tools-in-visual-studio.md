@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094397"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debuggen von Erweiterungen für SharePoint-Tools in Visual Studio
   Sie können SharePoint-Tools-Erweiterungen in der experimentellen Instanz oder in der regulären Instanz von Visual Studio debuggen. Wenn Sie Fehler im Verhalten einer Erweiterung beheben müssen, können Sie auch Registrierungswerte ändern, um weitere Fehlerinformationen anzuzeigen und die Ausführung von SharePoint-Befehlen durch Visual Studio zu konfigurieren.
@@ -29,50 +29,50 @@ ms.locfileid: "58324499"
 
  In den folgenden exemplarischen Vorgehensweisen finden Sie Beispiele, die das Debuggen verschiedener Arten von Erweiterungen in der experimentellen Instanz von Visual Studio veranschaulichen:
 
--   [Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [Exemplarische Vorgehensweise: Erstellen Sie benutzerdefinierte Aktionsprojektelement, mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [Exemplarische Vorgehensweise: Erstellen Sie benutzerdefinierte Aktionsprojektelement, mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+- [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+- [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Debuggen von Erweiterungen in der regulären Instanz von Visual Studio
  Installieren Sie zunächst die Erweiterung in der regulären Instanz, wenn Sie das Erweiterungsprojekt in der regulären Instanz von Visual Studio debuggen möchten. Fügen Sie dann den Debugger an einen zweiten Visual Studio-Prozess an. Anschließend können Sie die Erweiterung entfernen, damit sie auf dem Entwicklungscomputer nicht mehr geladen wird.
 
 #### <a name="to-install-the-extension"></a>So installieren Sie die Erweiterung
 
-1.  Schließen Sie alle Instanzen von Visual Studio.
+1. Schließen Sie alle Instanzen von Visual Studio.
 
-2.  Öffnen Sie in den Buildausgabeordner für das Erweiterungsprojekt, das *VSIX* Datei, indem Sie darauf doppelklicken oder indem Sie das Kontextmenü öffnen und dann auf **öffnen**:
+2. Öffnen Sie in den Buildausgabeordner für das Erweiterungsprojekt, das *VSIX* Datei, indem Sie darauf doppelklicken oder indem Sie das Kontextmenü öffnen und dann auf **öffnen**:
 
-3.  In der **Installer für Visual Studio-Erweiterungen** Dialogfeld Wählen Sie die Edition von Visual Studio, die Sie möchten die Erweiterung installieren, und wählen Sie dann die **installieren** Schaltfläche.
+3. In der **Installer für Visual Studio-Erweiterungen** Dialogfeld Wählen Sie die Edition von Visual Studio, die Sie möchten die Erweiterung installieren, und wählen Sie dann die **installieren** Schaltfläche.
 
      Visual Studio installiert die Erweiterungsdateien %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*Autorenname*\\*Erweiterungsnamen* \\ *Version*. Die letzten drei Ordner in diesem Pfad bestehen aus den `Author`, `Name`, und `Version` Elemente in der *"Extension.vsixmanifest"* Datei für die Erweiterung.
 
-4.  Nachdem die Erweiterung von Visual Studio installiert wird, wählen Sie die **schließen** Schaltfläche.
+4. Nachdem die Erweiterung von Visual Studio installiert wird, wählen Sie die **schließen** Schaltfläche.
 
 #### <a name="to-debug-the-extension"></a>So debuggen Sie die Erweiterung
 
-1.  Öffnen Sie Visual Studio mit Administratorrechten, und öffnen Sie das Erweiterungsprojekt. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zuerst Instanz*.
+1. Öffnen Sie Visual Studio mit Administratorrechten, und öffnen Sie das Erweiterungsprojekt. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zuerst Instanz*.
 
-2.  Starten Sie eine weitere Instanz von Visual Studio mit Administratorrechten. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zweite Instanz*.
+2. Starten Sie eine weitere Instanz von Visual Studio mit Administratorrechten. Die folgenden Schritte aus, die mit dieser Instanz von Visual Studio als finden Sie die *zweite Instanz*.
 
-3.  Wechseln Sie zur ersten Instanz von Visual Studio.
+3. Wechseln Sie zur ersten Instanz von Visual Studio.
 
-4.  Wählen Sie auf der Menüleiste **Debuggen**, **an den Prozess anhängen**.
+4. Wählen Sie auf der Menüleiste **Debuggen**, **an den Prozess anhängen**.
 
-5.  In der **verfügbare Prozesse** wählen *devenv.exe*. In diesem Eintrag wird auf die zweite Instanz von Visual Studio verwiesen. Dies ist die Instanz zum Debuggen der Projekterweiterung.
+5. In der **verfügbare Prozesse** wählen *devenv.exe*. In diesem Eintrag wird auf die zweite Instanz von Visual Studio verwiesen. Dies ist die Instanz zum Debuggen der Projekterweiterung.
 
-6.  Wählen Sie die **Anfügen** Schaltfläche.
+6. Wählen Sie die **Anfügen** Schaltfläche.
 
      Das Erweiterungsprojekt wird im Debugmodus ausgeführt.
 
-7.  Wechseln Sie zur zweiten Instanz von Visual Studio.
+7. Wechseln Sie zur zweiten Instanz von Visual Studio.
 
-8.  Erstellen Sie ein neues SharePoint-Projekt, von dem die Erweiterung geladen wird. Wenn Sie eine Erweiterung für die Definition Projektelemente Debuggen, z. B. Erstellen einer **Listendefinition** Projekt.
+8. Erstellen Sie ein neues SharePoint-Projekt, von dem die Erweiterung geladen wird. Wenn Sie eine Erweiterung für die Definition Projektelemente Debuggen, z. B. Erstellen einer **Listendefinition** Projekt.
 
 9. Führen Sie die erforderlichen Schritte zum Testen des Erweiterungscodes aus.
 
@@ -80,33 +80,33 @@ ms.locfileid: "58324499"
 
 #### <a name="to-remove-the-extension"></a>So entfernen Sie die Erweiterung
 
-1.  Wählen Sie in Visual Studio-Menüleiste den Menüpunkt **Tools**, **Erweiterungen und Updates**.
+1. Wählen Sie in Visual Studio-Menüleiste den Menüpunkt **Tools**, **Erweiterungen und Updates**.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
-2.  Klicken Sie in der Liste der Erweiterungen, wählen Sie den Namen der Erweiterung, und wählen Sie dann die **Deinstallieren** Schaltfläche.
+2. Klicken Sie in der Liste der Erweiterungen, wählen Sie den Namen der Erweiterung, und wählen Sie dann die **Deinstallieren** Schaltfläche.
 
-3.  Wählen Sie in das Dialogfeld, das angezeigt wird, die **Ja** , um zu bestätigen, dass Sie die Erweiterung deinstallieren möchten.
+3. Wählen Sie in das Dialogfeld, das angezeigt wird, die **Ja** , um zu bestätigen, dass Sie die Erweiterung deinstallieren möchten.
 
-4.  Wählen Sie die **jetzt neu starten** Schaltfläche, um die Deinstallation abzuschließen.
+4. Wählen Sie die **jetzt neu starten** Schaltfläche, um die Deinstallation abzuschließen.
 
 ## <a name="debug-sharepoint-commands"></a>Debuggen von SharePoint-Befehle
  Sollten Sie einen SharePoint-Befehl zu debuggen, die Teil einer SharePoint-Tools-Erweiterung ist, müssen Sie den Debugger Anfügen der *vssphost4.exe* Prozess. Hierbei handelt es sich um den 64-Bit-Hostprozess zum Ausführen von SharePoint-Befehlen. Weitere Informationen zu SharePoint-Befehle und *vssphost4.exe*, finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>So fügen Sie den Debugger an den Prozess vssphost4.exe an
 
-1.  Debuggen Sie die Erweiterung in der experimentellen Instanz von Visual Studio oder in der regulären Instanz von Visual Studio, indem Sie die obigen Anweisungen befolgen.
+1. Debuggen Sie die Erweiterung in der experimentellen Instanz von Visual Studio oder in der regulären Instanz von Visual Studio, indem Sie die obigen Anweisungen befolgen.
 
-2.  Wählen Sie in der Instanz von Visual Studio, in dem Sie den Debugger, in der Menüleiste ausführen, **Debuggen**, **an den Prozess anhängen**.
+2. Wählen Sie in der Instanz von Visual Studio, in dem Sie den Debugger, in der Menüleiste ausführen, **Debuggen**, **an den Prozess anhängen**.
 
-3.  In der **verfügbare Prozesse** wählen *vssphost.exe*.
+3. In der **verfügbare Prozesse** wählen *vssphost.exe*.
 
     > [!NOTE]
     >  Wenn vssphost.exe nicht in der Liste angezeigt wird, müssen Sie starten die *vssphost4.exe* verarbeiten, in der Instanz von Visual Studio, die in der Sie die Erweiterung ausgeführt werden. In der Regel führen Sie dazu eine Aktion aus, durch die eine Verbindung von Visual Studio mit der SharePoint-Website auf dem Entwicklungscomputer hergestellt wird. Z. B. Visual Studio startet *vssphost4.exe* beim Erweitern eines Website-Verbindungsknoten (einen Knoten, eine Website-URL angezeigt, wird) unter den **SharePoint-Verbindungen** Knoten in der **Server-Explorer**  Fenster, oder wenn Sie bestimmte SharePoint-Projektelemente, z. B. hinzufügen **Listeninstanz** oder **Ereignisempfänger** Elemente zu einer SharePoint-Projekt.
 
-4.  Wählen Sie die **Anfügen** Schaltfläche.
+4. Wählen Sie die **Anfügen** Schaltfläche.
 
-5.  Führen Sie in der Instanz von Visual Studio, für die das Debugging durchgeführt wird, die zum Ausführen des Befehls erforderlichen Schritte aus.
+5. Führen Sie in der Instanz von Visual Studio, für die das Debugging durchgeführt wird, die zum Ausführen des Befehls erforderlichen Schritte aus.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Ändern Sie die Registrierungswerte, um das Debuggen von SharePoint-Tools-Erweiterungen
  Wenn Sie eine Erweiterung der SharePoint-Tools in Visual Studio debuggen, können Sie Werte in der Registrierung ändern, um die Problembehandlung für die Erweiterung zu erleichtern. Die Werte sind unter der **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** Schlüssel. Diese Werte sind standardmäßig nicht vorhanden.

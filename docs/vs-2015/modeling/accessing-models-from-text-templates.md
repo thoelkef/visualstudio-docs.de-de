@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110491"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Beachten Sie, dass die folgenden Punkte bezüglich dieser Vorlage:  
   
--   Der Domänenklassen, Eigenschaften und Beziehungen, die Sie in der DSL-Definition definiert haben, kann die Vorlage verwenden.  
+- Der Domänenklassen, Eigenschaften und Beziehungen, die Sie in der DSL-Definition definiert haben, kann die Vorlage verwenden.  
   
--   Lädt die Modelldatei, die Sie, in angeben die Vorlage, die `requires` Eigenschaft.  
+- Lädt die Modelldatei, die Sie, in angeben die Vorlage, die `requires` Eigenschaft.  
   
--   Eine Eigenschaft in `this` das Stammelement enthält. Von dort aus kann Ihren Code auf andere Elemente des Modells navigieren. Der Name der Eigenschaft ist in der Regel identisch mit der Domäne Stammklasse der DSL. In diesem Beispiel ist dies `this.ExampleModel`.  
+- Eine Eigenschaft in `this` das Stammelement enthält. Von dort aus kann Ihren Code auf andere Elemente des Modells navigieren. Der Name der Eigenschaft ist in der Regel identisch mit der Domäne Stammklasse der DSL. In diesem Beispiel ist dies `this.ExampleModel`.  
   
--   Obwohl die Sprache, in der die Codefragmente geschrieben sind C# -Code ist, können Sie den Text beliebiger Art generieren. Alternativ können Sie den Code schreiben, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] durch Hinzufügen der Eigenschaft `language="VB"` auf die `template` Richtlinie.  
+- Obwohl die Sprache, in der die Codefragmente geschrieben sind C# -Code ist, können Sie den Text beliebiger Art generieren. Alternativ können Sie den Code schreiben, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] durch Hinzufügen der Eigenschaft `language="VB"` auf die `template` Richtlinie.  
   
--   Zum Debuggen der Vorlage hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird geöffnet, in eine andere Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wenn eine Ausnahme auftritt. Wenn Sie in den Debugger zu einem bestimmten Zeitpunkt im Code unterbrechen möchten, fügen Sie die Anweisung `System.Diagnostics.Debugger.Break();`  
+- Zum Debuggen der Vorlage hinzufügen `debug="true"` auf die `template` Richtlinie. Die Vorlage wird geöffnet, in eine andere Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wenn eine Ausnahme auftritt. Wenn Sie in den Debugger zu einem bestimmten Zeitpunkt im Code unterbrechen möchten, fügen Sie die Anweisung `System.Diagnostics.Debugger.Break();`  
   
      Weitere Informationen finden Sie unter [Debuggen einer T4-Textvorlage](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  Der DSL-anweisungsprozessor führt zwei grundlegenden Aufgaben aus:  
   
--   Effektiv in der Vorlage, die Ihre DSL verweist auf Assembly "und" Import-Anweisungen eingefügt. So können Sie Ihre Domänenklassen im Vorlagencode zu verwenden.  
+- Effektiv in der Vorlage, die Ihre DSL verweist auf Assembly "und" Import-Anweisungen eingefügt. So können Sie Ihre Domänenklassen im Vorlagencode zu verwenden.  
   
--   Es lädt die Datei, die Sie, in angeben der `requires` -Parameter und legt eine Eigenschaft `this` , der auf das Stammelement des geladenen Modell verweist.  
+- Es lädt die Datei, die Sie, in angeben der `requires` -Parameter und legt eine Eigenschaft `this` , der auf das Stammelement des geladenen Modell verweist.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Überprüfen das Modell vor der Ausführung der Vorlage  
  Sie können veranlassen, dass das Modell, das überprüft werden, bevor die Vorlage ausgeführt wird.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Wenn ein Fehler gefunden wird, wird Sie im Fenster "Fehler" gemeldet, und die Ergebnisdatei enthält eine Fehlermeldung angezeigt.  
   
-##  <a name="Multiple"></a> Zugreifen auf mehrere Modelle aus einer Textvorlage  
+## <a name="Multiple"></a> Zugreifen auf mehrere Modelle aus einer Textvorlage  
   
 > [!NOTE]
 >  Diese Methode können Sie mehrere Modelle in der gleichen Vorlage zu lesen, aber ModelBus-Verweise nicht unterstützt. Modelle, die von der ModelBus-Verweise angezeigt werden, finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101183"
 ---
 # <a name="msbuild-properties1"></a>MSBuild-Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>Erstellen von Eigenschaften während der Ausführung  
  Eigenschaften außerhalb von `Target`-Elementen werden die Werte im Rahmen der Auswertungsphase eines Builds zugewiesen. Während der anschließenden Ausführungsphase können die Eigenschaften erstellt oder geändert werden, wie nachfolgend veranschaulicht:  
   
--   Eigenschaften können von einer beliebigen Aufgabe ausgegeben werden. Das [Task](../msbuild/task-element-msbuild.md)-Element muss über ein untergeordnetes [Output](../msbuild/output-element-msbuild.md)-Element mit einem `PropertyName`-Attribut verfügen, um eine Eigenschaft auszugeben.  
+- Eigenschaften können von einer beliebigen Aufgabe ausgegeben werden. Das [Task](../msbuild/task-element-msbuild.md)-Element muss über ein untergeordnetes [Output](../msbuild/output-element-msbuild.md)-Element mit einem `PropertyName`-Attribut verfügen, um eine Eigenschaft auszugeben.  
   
--   Eigenschaften lassen sich mithilfe der [CreateProperty](../msbuild/createproperty-task.md)-Aufgabe ausgeben. Diese Verwendung ist veraltet.  
+- Eigenschaften lassen sich mithilfe der [CreateProperty](../msbuild/createproperty-task.md)-Aufgabe ausgeben. Diese Verwendung ist veraltet.  
   
--   Ab .NET Framework 3.5 können `Target`-Elemente mit Eigenschaftendeklarationen in `PropertyGroup`-Elementen enthalten sein.  
+- Ab .NET Framework 3.5 können `Target`-Elemente mit Eigenschaftendeklarationen in `PropertyGroup`-Elementen enthalten sein.  
   
 ## <a name="storing-xml-in-properties"></a>Speichern von XML in Eigenschaften  
  Eigenschaften können beliebigen XML-Code enthalten, um die Übergabe von Werten an Aufgaben oder das Anzeigen von Protokollierungsinformationen zu unterstützen. Im folgenden Beispiel wird die `ConfigTemplate`-Eigenschaft veranschaulicht, die über einen Wert verfügt, der XML- und andere Eigenschaftenverweise enthält. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ersetzt die Eigenschaftenverweise durch ihre jeweiligen Eigenschaftswerte. Eigenschaftswerte werden in der Reihenfolge zugewiesen, in der sie angezeigt werden. `$(MySupportedVersion)`, `$(MyRequiredVersion)` und `$(MySafeMode)` sollten in diesem Beispiel daher bereits definiert worden sein.  

@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102249"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Vorgehensweise: Debuggen Sie über ein DLL-Projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Um mit dem Debuggen eines DLL-Projekts zu beginnen, müssen Sie die aufrufende A
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>So geben Sie die aufrufende Anwendung in einem C++-Projekt an  
   
-1.  Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wechseln Sie zu der **Debuggen** Registerkarte.  
+1. Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wechseln Sie zu der **Debuggen** Registerkarte.  
   
-2.  Stellen Sie sicher, dass das Feld **Konfiguration** am oberen Rand des Fensters auf **Debuggen** festgelegt ist.  
+2. Stellen Sie sicher, dass das Feld **Konfiguration** am oberen Rand des Fensters auf **Debuggen** festgelegt ist.  
   
-3.  Wechseln Sie zu **Konfigurationseigenschaften / Debugging**.  
+3. Wechseln Sie zu **Konfigurationseigenschaften / Debugging**.  
   
-4.  In der **zu startender Debugger** wählen **lokaler Windows-Debugger** oder **Remote-Windows-Debugger**.  
+4. In der **zu startender Debugger** wählen **lokaler Windows-Debugger** oder **Remote-Windows-Debugger**.  
   
-5.  In der **Befehl** oder **Remotebefehl** hinzu, und den vollqualifizierten Pfadnamen der Anwendung.  
+5. In der **Befehl** oder **Remotebefehl** hinzu, und den vollqualifizierten Pfadnamen der Anwendung.  
   
-6.  Fügen Sie die notwendigen Programmargumente in das Feld **Befehlsargumente** ein.  
+6. Fügen Sie die notwendigen Programmargumente in das Feld **Befehlsargumente** ein.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>So geben Sie die aufrufende Anwendung in einem C#- oder Visual Basic-Projekt an  
   
-1.  Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wechseln Sie zu der **Debuggen** Registerkarte.  
+1. Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wechseln Sie zu der **Debuggen** Registerkarte.  
   
      Wählen Sie **externes Programm starten**, und fügen Sie den vollqualifizierten Pfadnamen der Ausführung des Programms hinzu.  
   
      Wenn Sie Befehlszeilenargumente für das externe Programm hinzufügen müssen, fügen Sie sie in der **Befehlszeilenargumente** Feld.  
   
-2.  Sie können eine Anwendung auch als URL aufrufen. (Dies empfiehlt sich u. U., wenn Sie eine verwaltete DLL debuggen, die von einer lokalen ASP.NET-Anwendung verwendet wird.)  
+2. Sie können eine Anwendung auch als URL aufrufen. (Dies empfiehlt sich u. U., wenn Sie eine verwaltete DLL debuggen, die von einer lokalen ASP.NET-Anwendung verwendet wird.)  
   
      Klicken Sie unter **Startaktion**, wählen die **Browser mit folgender URL starten:** Optionsfeld aus, und geben Sie in der URL.  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>So debuggen Sie über das DLL-Projekt  
   
-1.  Legen Sie die gewünschten Haltepunkte fest.  
+1. Legen Sie die gewünschten Haltepunkte fest.  
   
-2.  Starten Sie das Debuggen (drücken Sie F5, klicken Sie auf den grünen Pfeil, oder klicken Sie auf **Debuggen / Debugging starten**).  
+2. Starten Sie das Debuggen (drücken Sie F5, klicken Sie auf den grünen Pfeil, oder klicken Sie auf **Debuggen / Debugging starten**).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md)   

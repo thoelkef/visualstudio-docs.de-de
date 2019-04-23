@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108047"
 ---
 # <a name="program-control"></a>Programmsteuerung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Treten in Visual Studio debuggen, die alle der folgenden schrittweises Durchlaufen und Fortsetzen von Routinen auf Programmebene:  
   
--   Festlegen der nächsten Anweisung an, festlegen den Computer, also, auf die nächste Anweisung in einer bestimmten Frame-Umgebung ausgeführt werden soll  
+- Festlegen der nächsten Anweisung an, festlegen den Computer, also, auf die nächste Anweisung in einer bestimmten Frame-Umgebung ausgeführt werden soll  
   
--   Ausgeführt, d. h. weiterhin im schrittweisen Modus beenden  
+- Ausgeführt, d. h. weiterhin im schrittweisen Modus beenden  
   
--   Schrittweises durchlaufen für die nächste Anweisung  
+- Schrittweises durchlaufen für die nächste Anweisung  
   
--   Mit dem aktuellen Modus für die schrittweise Ausführung fortsetzen  
+- Mit dem aktuellen Modus für die schrittweise Ausführung fortsetzen  
   
--   Anhalten von Threads enthalten, die von der Anwendung  
+- Anhalten von Threads enthalten, die von der Anwendung  
   
--   Fortsetzen von Threads enthalten, die von der Anwendung  
+- Fortsetzen von Threads enthalten, die von der Anwendung  
   
 > [!NOTE]
 >  Anzeigen der Aufrufliste wird auf der Threadebene implementiert. Sie müssen zum Aufzählen der Frame-Informationen beim Anzeigen der Aufrufliste für einen Thread alle Methoden implementieren die [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Schnittstelle.  

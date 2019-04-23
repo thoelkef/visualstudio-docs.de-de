@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093123"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
 
@@ -31,16 +31,16 @@ Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von de
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität
 
-1.  Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.
+1. Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.
 
-2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.
+2. Drücken Sie **F4** um die **Eigenschaften** Fenster.
 
-3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.
+3. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>So öffnen Sie den Typauflistungs-Editor für die InvokeMethod-Aktivität
 
-1.  Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.
+1. Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.
 
-2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.
+2. Drücken Sie **F4** um die **Eigenschaften** Fenster.
 
-3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **GenericTypeArguments** Eigenschaft.
+3. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **GenericTypeArguments** Eigenschaft.

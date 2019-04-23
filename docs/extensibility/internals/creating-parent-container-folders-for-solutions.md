@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102717"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten containerordnern für Projektmappen
 In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angeben. Diese einzelne Stamm ist eine Super Unified-Stamm (SUR) aufgerufen.
@@ -35,13 +35,13 @@ In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein e
 
  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE fast immer einen SUR-Ordner erstellt, wenn eine Projektmappe zur quellcodeverwaltung hinzufügen. Insbesondere erfolgt dies in den folgenden Fällen:
 
--   Das Projekt ist ein Datei-Freigabe-Webprojekt.
+- Das Projekt ist ein Datei-Freigabe-Webprojekt.
 
--   Es gibt unterschiedliche Laufwerke für das Projekt und die Projektmappendatei.
+- Es gibt unterschiedliche Laufwerke für das Projekt und die Projektmappendatei.
 
--   Es gibt andere Freigaben für das Projekt und die Projektmappendatei.
+- Es gibt andere Freigaben für das Projekt und die Projektmappendatei.
 
--   Getrennt (in einer Projektmappe unter quellcodeverwaltung) wurden Projekte hinzugefügt.
+- Getrennt (in einer Projektmappe unter quellcodeverwaltung) wurden Projekte hinzugefügt.
 
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es wird empfohlen, dass der Name für den SUR-Ordner den Namen der Projektmappe ohne Erweiterung identisch sein. In der folgende Tabelle wird das Verhalten in beiden Versionen zusammengefasst.
 

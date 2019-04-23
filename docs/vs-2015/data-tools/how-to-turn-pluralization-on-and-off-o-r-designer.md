@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098622"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Standardmäßig wird beim Ziehen Datenbankobjekte, deren Namen auf s oder ies en
   
 ### <a name="to-turn-pluralization-on-and-off"></a>So schalten Sie Pluralisierung ein und aus  
   
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Erweitern Sie im Dialogfeld **Optionen** den Knoten **Datenbanktools**.  
+2. Erweitern Sie im Dialogfeld **Optionen** den Knoten **Datenbanktools**.  
   
 > [!NOTE]
 >  Wählen Sie **Alle Einstellungen anzeigen** aus, wenn der Knoten **Datenbanktools** nicht angezeigt wird.  
   
-1.  Klicken Sie auf **O/R-Designer**.  
+1. Klicken Sie auf **O/R-Designer**.  
   
-2.  Legen Sie **Pluralisierung von Namen** zu **aktiviert** = **"false"** Festlegen der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , damit es Klassennamen nicht geändert wird.  
+2. Legen Sie **Pluralisierung von Namen** zu **aktiviert** = **"false"** Festlegen der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , damit es Klassennamen nicht geändert wird.  
   
-3.  Legen Sie **Pluralisierung von Namen** zu **aktiviert** = **"true"** anzuwendende Pluralisierungsregeln auf die Klassennamen von Objekten, die hinzugefügt, die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+3. Legen Sie **Pluralisierung von Namen** zu **aktiviert** = **"true"** anzuwendende Pluralisierungsregeln auf die Klassennamen von Objekten, die hinzugefügt, die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

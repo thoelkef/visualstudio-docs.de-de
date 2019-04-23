@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087520"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
  **Anforderungen**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>So analysieren Sie die Code Coverage in Komponententests im Test-Explorer  
   
-1.  Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.  
+1. Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.  
   
-2.  Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![„Code Coverage-Färbung anzeigen“-Symbol](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Code Coverage-Färbung anzeigen**.  
+2. Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![„Code Coverage-Färbung anzeigen“-Symbol](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Code Coverage-Färbung anzeigen**.  
   
      Um die Farben zu ändern, oder um Text fett formatiert anzuzeigen, wählen **Tools**, **Optionen**, **Umgebung**, **Schriftarten und Farben**, **anzeigen Einstellungen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.  
   
-3.  Wenn die Ergebnisse eine niedrige Abdeckung anzeigen, untersuchen Sie, welche Teile des Codes nicht ausgeführt werden, und schreiben Sie weitere Tests, um diese abzudecken. Entwicklungsteams streben normalerweise eine Codeabdeckung von ca. 80 % an. In einigen Situationen ist eine geringere Abdeckung akzeptabel. Beispielsweise ist eine geringere Abdeckung akzeptabel, wenn ein Teil des Codes aus einer Standardvorlage generiert wird.  
+3. Wenn die Ergebnisse eine niedrige Abdeckung anzeigen, untersuchen Sie, welche Teile des Codes nicht ausgeführt werden, und schreiben Sie weitere Tests, um diese abzudecken. Entwicklungsteams streben normalerweise eine Codeabdeckung von ca. 80 % an. In einigen Situationen ist eine geringere Abdeckung akzeptabel. Beispielsweise ist eine geringere Abdeckung akzeptabel, wenn ein Teil des Codes aus einer Standardvorlage generiert wird.  
   
 > [!TIP]
 >  So erhalten Sie genaue Ergebnisse:  
@@ -48,7 +48,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 > - Überprüfen Sie, ob Compileroptimierung deaktiviert ist.  
 > 
 >   Wenn Sie mit nicht verwaltetem (systemeigenen) Code arbeiten, verwenden Sie einen Debugbuild.  
->   -   Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.  
+>   - Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.  
 > 
 >   Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md). sein. Vergessen Sie nicht, die Codeabdeckung nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.  
   
@@ -66,15 +66,15 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
  Sie können die Ergebnisse aus mehreren Testläufen zusammenführen, zum Beispiel aus Testläufen, in denen unterschiedliche Testdaten verwendet werden.  
   
--   **Um ein vorheriges Resultset aufzurufen**, wählen Sie dieses aus dem Dropdownmenü aus. Das Menü enthält eine temporäre Liste, die gelöscht wird, wenn Sie eine neue Projektmappe öffnen.  
+- **Um ein vorheriges Resultset aufzurufen**, wählen Sie dieses aus dem Dropdownmenü aus. Das Menü enthält eine temporäre Liste, die gelöscht wird, wenn Sie eine neue Projektmappe öffnen.  
   
--   **Um Ergebnisse aus einer vorherigen Sitzung aufzurufen**, wählen Sie **Codeabdeckungsergebnisse importieren** aus, navigieren Sie zum Ordner „TestResults“ in der Projektmappe, und importieren Sie eine COVERAGE-Datei.  
+- **Um Ergebnisse aus einer vorherigen Sitzung aufzurufen**, wählen Sie **Codeabdeckungsergebnisse importieren** aus, navigieren Sie zum Ordner „TestResults“ in der Projektmappe, und importieren Sie eine COVERAGE-Datei.  
   
      Die Codeabdeckungsfärbung ist möglicherweise falsch, wenn der Quellcode nach Generieren der COVERAGE-Datei geändert wurde.  
   
--   **Um die Ergebnisse als Text lesbar zu machen**, wählen Sie **Codeabdeckungsergebnisse exportieren** aus. Dadurch wird eine lesbare COVERAGEXML-Datei generiert, die mit anderen Tools verarbeitet oder problemlos in einer E-Mail gesendet werden kann.  
+- **Um die Ergebnisse als Text lesbar zu machen**, wählen Sie **Codeabdeckungsergebnisse exportieren** aus. Dadurch wird eine lesbare COVERAGEXML-Datei generiert, die mit anderen Tools verarbeitet oder problemlos in einer E-Mail gesendet werden kann.  
   
--   **Um Ergebnisse an eine andere Person weiterzuleiten**, senden Sie dieser entweder eine COVERAGE-Datei oder eine exportierte COVERAGEXML-Datei. Die Datei kann dann importiert werden. Verfügt die andere Person über dieselbe Version des Quellcodes, kann sie die Abdeckungsfärbung sehen.  
+- **Um Ergebnisse an eine andere Person weiterzuleiten**, senden Sie dieser entweder eine COVERAGE-Datei oder eine exportierte COVERAGEXML-Datei. Die Datei kann dann importiert werden. Verfügt die andere Person über dieselbe Version des Quellcodes, kann sie die Abdeckungsfärbung sehen.  
   
 ## <a name="merging-results-from-different-runs"></a>Zusammenführen von Ergebnissen aus verschiedenen Ausführungen  
  In einigen Situationen werden abhängig von den Testdaten andere Blöcke im Code verwendet. Daher sollten Sie die Ergebnisse aus verschiedenen Testläufen kombinieren.  
@@ -87,16 +87,16 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
 ### <a name="limitations-in-merging"></a>Einschränkungen beim Zusammenführen  
   
--   Wenn Sie Abdeckungsdaten aus verschiedenen Versionen desselben Codes zusammenführen, werden die Ergebnisse separat dargestellt und sind nicht kombiniert. Um vollständig kombinierte Ergebnisse zu erhalten, verwenden Sie denselben Build des Codes, und ändern Sie nur die Testdaten.  
+- Wenn Sie Abdeckungsdaten aus verschiedenen Versionen desselben Codes zusammenführen, werden die Ergebnisse separat dargestellt und sind nicht kombiniert. Um vollständig kombinierte Ergebnisse zu erhalten, verwenden Sie denselben Build des Codes, und ändern Sie nur die Testdaten.  
   
--   Wenn Sie eine Ergebnisdatei zusammenführen, die exportiert und anschließend importiert wurde, können Sie die Ergebnisse nur nach Zeilen und nicht nach Blöcken anzeigen. Verwenden Sie den Befehl **Spalten hinzufügen/entfernen**, um die Zeilendaten anzuzeigen.  
+- Wenn Sie eine Ergebnisdatei zusammenführen, die exportiert und anschließend importiert wurde, können Sie die Ergebnisse nur nach Zeilen und nicht nach Blöcken anzeigen. Verwenden Sie den Befehl **Spalten hinzufügen/entfernen**, um die Zeilendaten anzuzeigen.  
   
--   Wenn Sie Ergebnisse aus Tests für ein ASP.NET-Projekt zusammenführen, werden die Ergebnisse für die separaten Tests angezeigt und sind nicht kombiniert. Dies gilt nur für ASP.NET-Artefakte selbst: Die Ergebnisse für alle anderen Assemblys werden kombiniert dargestellt.  
+- Wenn Sie Ergebnisse aus Tests für ein ASP.NET-Projekt zusammenführen, werden die Ergebnisse für die separaten Tests angezeigt und sind nicht kombiniert. Dies gilt nur für ASP.NET-Artefakte selbst: Die Ergebnisse für alle anderen Assemblys werden kombiniert dargestellt.  
   
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Ausschließen von Elementen aus den Codeabdeckungsergebnissen  
  Sie können bestimmte Elemente im Code aus den Abdeckungsergebnissen ausschließen, zum Beispiel, wenn der Code aus einer Textvorlage generiert wird. Fügen Sie das `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage`-Attribut zu einem der folgenden Codeelemente hinzu: Klasse, Struktur, Methode, Eigenschaft-Setter oder -Getter oder Ereignis. Beachten Sie, dass durch das Ausschließen einer Klasse nicht deren abgeleitete Klassen ausgeschlossen werden.  
   
- Beispiel:  
+ Zum Beispiel:  
   
 ```csharp  
   
@@ -225,19 +225,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`  
   
--   *ExclusionName* ist ein eindeutiger Name.  
+- *ExclusionName* ist ein eindeutiger Name.  
   
--   *FunctionName* ist ein vollqualifizierter Funktionsname. Er enthält möglicherweise Platzhalter. Um beispielsweise alle Funktionen einer Klasse auszuschließen, schreiben Sie `MyNamespace::MyClass::*`  
+- *FunctionName* ist ein vollqualifizierter Funktionsname. Er enthält möglicherweise Platzhalter. Um beispielsweise alle Funktionen einer Klasse auszuschließen, schreiben Sie `MyNamespace::MyClass::*`  
   
--   *SourceFilePath* ist der lokale oder UNC-Pfad einer CPP-Datei. Er enthält möglicherweise Platzhalter. Im folgenden Beispiel werden alle Dateien in einem bestimmten Verzeichnis ausgeschlossen: `\\MyComputer\Source\UnitTests\*.cpp`  
+- *SourceFilePath* ist der lokale oder UNC-Pfad einer CPP-Datei. Er enthält möglicherweise Platzhalter. Im folgenden Beispiel werden alle Dateien in einem bestimmten Verzeichnis ausgeschlossen: `\\MyComputer\Source\UnitTests\*.cpp`  
   
--   `#include <CodeCoverage\CodeCoverage.h>`  
+- `#include <CodeCoverage\CodeCoverage.h>`  
   
--   Platzaufrufe zu den Ausschlussmakros im globalen Namespace, nicht innerhalb eines Namespace oder einer Klasse.  
+- Platzaufrufe zu den Ausschlussmakros im globalen Namespace, nicht innerhalb eines Namespace oder einer Klasse.  
   
--   Sie können die Ausschlüsse entweder in der Komponententestcodedatei oder in der Anwendungscodedatei platzieren.  
+- Sie können die Ausschlüsse entweder in der Komponententestcodedatei oder in der Anwendungscodedatei platzieren.  
   
--   Die Ausschlüsse müssen als nicht verwalteter (systemeigener) Code kompiliert werden, indem Sie entweder die Compileroption festlegen oder `#pragma managed(off)` verwenden.  
+- Die Ausschlüsse müssen als nicht verwalteter (systemeigener) Code kompiliert werden, indem Sie entweder die Compileroption festlegen oder `#pragma managed(off)` verwenden.  
   
 > [!NOTE]
 >  Um Funktionen in C++/CLI-Code auszuschließen, wenden Sie das Attribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` auf die Funktion an. Dasselbe gilt für C#.  
@@ -267,11 +267,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analysieren der Codeabdeckung in einer Befehlszeile  
  Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Code Coverage ist eine Option in diesem Hilfsprogramm. Weitere Informationen finden Sie unter [Befehlszeilenoptionen von „VSTest.Console.exe“](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
-1.  Starten der Visual Studio Developer-Eingabeaufforderung:  
+1. Starten der Visual Studio Developer-Eingabeaufforderung:  
   
      Wählen Sie im Windows-Menü **Start** nacheinander **Alle Programme**, **Microsoft Visual Studio**, **Visual Studio-Tools** und **Developer-Eingabeaufforderung** aus.  
   
-2.  Führen Sie Folgendes aus:  
+2. Führen Sie Folgendes aus:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   

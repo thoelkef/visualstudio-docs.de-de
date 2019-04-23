@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd16fa286c4e6343e69644caa60525a988e180e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092304"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 Der Parser ist das Herzstück des Sprachdiensts. Die Managed Package Framework (MPF)-Language-Klassen erfordern einen Sprachenparser auf Informationen über den Code, der angezeigt wird. Ein Parser trennt den Text in lexikalischer Token, und klicken Sie dann identifiziert diese Token nach Typ und Funktion.
@@ -48,7 +48,7 @@ namespace MyNamespace
 |MyNamespace|namespace|
 |MyClass|Klasse|
 |MyFunction|Methode|
-|arg1|Parameter|
+|arg1|-Parameter von|
 |var1|lokale variable|
 
  Die Rolle des Parsers werden die Token identifizieren. Token können mehr als einen Typ haben. Nachdem der Parser Token identifiziert wurde, können der Sprachdienst die Informationen zur Verfügung zu stellen hilfreiche Features, wie die syntaxhervorhebung, Klammer, und die IntelliSense-Vorgänge.
@@ -80,29 +80,29 @@ namespace MyNamespace
 
  Wird davon ausgegangen Sie, dass der Sprachdienst übereinstimmende geschweiften Klammern unterstützt.
 
-1.  Der Benutzer gibt eine schließende geschweifte Klammer (}).
+1. Der Benutzer gibt eine schließende geschweifte Klammer (}).
 
-2.  Die geschweifte Klammer an der Cursorposition in der Quelldatei eingefügt wird, und der Cursor von einem erweitert wird.
+2. Die geschweifte Klammer an der Cursorposition in der Quelldatei eingefügt wird, und der Cursor von einem erweitert wird.
 
-3.  Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> Klasse mit der typisierten schließenden geschweiften Klammer aufgerufen wird.
+3. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> Klasse mit der typisierten schließenden geschweiften Klammer aufgerufen wird.
 
-4.  Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> Klasse, um das Token an die Position direkt vor der aktuellen Cursorposition abzurufen. Dieses Token entspricht die typisierte schließende geschweifte Klammer).
+4. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> Klasse, um das Token an die Position direkt vor der aktuellen Cursorposition abzurufen. Dieses Token entspricht die typisierte schließende geschweifte Klammer).
 
-    1.  Die <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Colorizer> Objekts, um alle Token in der aktuellen Zeile abzurufen.
+    1. Die <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Colorizer> Objekts, um alle Token in der aktuellen Zeile abzurufen.
 
-    2.  Die <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> Methode für die <xref:Microsoft.VisualStudio.Package.IScanner> Objekt mit dem Text der aktuellen Zeile.
+    2. Die <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methodenaufrufe der <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> Methode für die <xref:Microsoft.VisualStudio.Package.IScanner> Objekt mit dem Text der aktuellen Zeile.
 
-    3.  Die <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methode wiederholt aufruft der <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> Methode für die <xref:Microsoft.VisualStudio.Package.IScanner> Objekt, das alle Token aus der aktuellen Zeile zu erfassen.
+    3. Die <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methode wiederholt aufruft der <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> Methode für die <xref:Microsoft.VisualStudio.Package.IScanner> Objekt, das alle Token aus der aktuellen Zeile zu erfassen.
 
-    4.  Die <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Methode ruft eine private Methode in der <xref:Microsoft.VisualStudio.Package.Source> Klasse, um das Token abzurufen, die die gewünschte Position enthält, und übergibt die Liste der Token aus dem <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methode.
+    4. Die <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Methode ruft eine private Methode in der <xref:Microsoft.VisualStudio.Package.Source> Klasse, um das Token abzurufen, die die gewünschte Position enthält, und übergibt die Liste der Token aus dem <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Methode.
 
-5.  Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methode sucht nach token Trigger Kennzeichen <xref:Microsoft.VisualStudio.Package.TokenTriggers> auf dem Token, die von zurückgegeben wird das <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> -Methode, d. h. das Token, die schließende geschweifte Klammer darstellt).
+5. Die <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Methode sucht nach token Trigger Kennzeichen <xref:Microsoft.VisualStudio.Package.TokenTriggers> auf dem Token, die von zurückgegeben wird das <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> -Methode, d. h. das Token, die schließende geschweifte Klammer darstellt).
 
-6.  Wenn der Trigger der flag <xref:Microsoft.VisualStudio.Package.TokenTriggers> gefunden wird, wird die <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> -Klasse aufgerufen wird.
+6. Wenn der Trigger der flag <xref:Microsoft.VisualStudio.Package.TokenTriggers> gefunden wird, wird die <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.Source> -Klasse aufgerufen wird.
 
-7.  Die <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Methode startet einen Analysevorgang mit dem Wert des Analyse-Grund der <xref:Microsoft.VisualStudio.Package.ParseReason>. Dieser Vorgang schließlich Ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Wenn asynchrone Analyse aktiviert ist, rufen diese auf die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode, die in einem Hintergrundthread auftritt.
+7. Die <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Methode startet einen Analysevorgang mit dem Wert des Analyse-Grund der <xref:Microsoft.VisualStudio.Package.ParseReason>. Dieser Vorgang schließlich Ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Wenn asynchrone Analyse aktiviert ist, rufen diese auf die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode, die in einem Hintergrundthread auftritt.
 
-8.  Wenn der Analysevorgang abgeschlossen ist, eine interne Abschlusshandler (auch bekannt als eine Rückrufmethode) mit dem Namen `HandleMatchBracesResponse` wird aufgerufen, der <xref:Microsoft.VisualStudio.Package.Source> Klasse. Dieser Aufruf erfolgt automatisch durch die <xref:Microsoft.VisualStudio.Package.LanguageService> Basisklasse nicht vom Parser.
+8. Wenn der Analysevorgang abgeschlossen ist, eine interne Abschlusshandler (auch bekannt als eine Rückrufmethode) mit dem Namen `HandleMatchBracesResponse` wird aufgerufen, der <xref:Microsoft.VisualStudio.Package.Source> Klasse. Dieser Aufruf erfolgt automatisch durch die <xref:Microsoft.VisualStudio.Package.LanguageService> Basisklasse nicht vom Parser.
 
 9. Die `HandleMatchBracesResponse` Methode ruft eine Liste von Spannen aus dem <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Objekt, das in gespeichert ist die <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt. (Eine Spanne ist ein <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> -Struktur, die einen Bereich von Zeilen und Zeichen in der Quelldatei angibt.) Die Liste von Spannen enthält in der Regel zwei Spannen, die jeweils eine für die öffnende und schließende geschweifte Klammern.
 

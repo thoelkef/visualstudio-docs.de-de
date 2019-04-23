@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b55cd1106159bd6eae345ca849ab944f04620e61
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9a03c4282fb7c2719f0f408759be972ead0f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110296"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Geben Sie einen Dienst für die asynchronen Visual Studio
 Sie können zum Abrufen eines Diensts, ohne Blockierung im UI-Thread Sie ein asynchrones Diensts erstellen und Laden Sie das Paket in einem Hintergrundthread. Zu diesem Zweck können Sie eine <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines <xref:Microsoft.VisualStudio.Shell.Package>, und fügen Sie den Dienst mit asynchroner Pakets spezielle asynchrone Methoden.
@@ -22,27 +22,27 @@ Sie können zum Abrufen eines Diensts, ohne Blockierung im UI-Thread Sie ein asy
 
 ## <a name="implement-an-asynchronous-service"></a>Implementieren eines asynchronen Diensts
 
-1.  Erstellen Sie ein VSIX-Projekt (**Datei** > **neu** > **Projekt** > **Visual C#-**  >  **Erweiterbarkeit** > **VSIX-Projekt**). Nennen Sie das Projekt **TestAsync**.
+1. Erstellen Sie ein VSIX-Projekt (**Datei** > **neu** > **Projekt** > **Visual C#-**  >  **Erweiterbarkeit** > **VSIX-Projekt**). Nennen Sie das Projekt **TestAsync**.
 
-2.  Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen** > **neues Element** > **Visual c#-Elemente**  >  **Erweiterbarkeit** > **Visual Studio-Paket**. Nennen Sie diese Datei *TestAsyncPackage.cs*.
+2. Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen-Explorer** , und klicken Sie auf **hinzufügen** > **neues Element** > **Visual c#-Elemente**  >  **Erweiterbarkeit** > **Visual Studio-Paket**. Nennen Sie diese Datei *TestAsyncPackage.cs*.
 
-3.  In *TestAsyncPackage.cs*, ändern Sie das Paket zu vererben `AsyncPackage` statt `Package`:
+3. In *TestAsyncPackage.cs*, ändern Sie das Paket zu vererben `AsyncPackage` statt `Package`:
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
     ```
 
-4.  Um einen Dienst zu implementieren, müssen Sie drei Arten erstellen:
+4. Um einen Dienst zu implementieren, müssen Sie drei Arten erstellen:
 
-    -   Eine Schnittstelle, die den Dienst identifiziert. Viele dieser Schnittstellen sind leer, d. h. sie keine Methoden haben, wie sie nur für Abfragen an den Dienst verwendet werden.
+    - Eine Schnittstelle, die den Dienst identifiziert. Viele dieser Schnittstellen sind leer, d. h. sie keine Methoden haben, wie sie nur für Abfragen an den Dienst verwendet werden.
 
-    -   Eine Schnittstelle, die die Dienstschnittstelle beschreibt. Diese Schnittstelle enthält die Methoden implementiert werden.
+    - Eine Schnittstelle, die die Dienstschnittstelle beschreibt. Diese Schnittstelle enthält die Methoden implementiert werden.
 
-    -   Eine Klasse, die den Dienst und die Dienstschnittstelle implementiert.
+    - Eine Klasse, die den Dienst und die Dienstschnittstelle implementiert.
 
-5.  Das folgende Beispiel zeigt eine sehr grundlegende Implementierung der drei Typen an. Der Konstruktor der Dienstklasse, muss den Dienstanbieter festgelegt. In diesem Beispiel fügen wir einfach den Dienst der Paket-Codedatei.
+5. Das folgende Beispiel zeigt eine sehr grundlegende Implementierung der drei Typen an. Der Konstruktor der Dienstklasse, muss den Dienstanbieter festgelegt. In diesem Beispiel fügen wir einfach den Dienst der Paket-Codedatei.
 
-6.  Fügen Sie die folgenden using-Anweisungen zur-Paketdatei:
+6. Fügen Sie die folgenden using-Anweisungen zur-Paketdatei:
 
     ```csharp
     using System.Threading;
@@ -54,7 +54,7 @@ Sie können zum Abrufen eines Diensts, ohne Blockierung im UI-Thread Sie ein asy
     using Task = System.Threading.Tasks.Task;
     ```
 
-7.  Hier ist die Implementierung des asynchronen. Beachten Sie, dass der Dienst für die asynchrone Anbieter anstelle der synchronen Dienstanbieter im Konstruktor festgelegt werden sollen:
+7. Hier ist die Implementierung des asynchronen. Beachten Sie, dass der Dienst für die asynchrone Anbieter anstelle der synchronen Dienstanbieter im Konstruktor festgelegt werden sollen:
 
     ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService
@@ -120,7 +120,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Hinzufügen eines Diensts
 
-1.  In *TestAsyncPackage.cs*, entfernen Sie die `Initialize()` -Methode und überschreiben die `InitializeAsync()` Methode. Fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist ein Beispiel für die asynchrone Initialisierung Hinzufügen eines Diensts:
+1. In *TestAsyncPackage.cs*, entfernen Sie die `Initialize()` -Methode und überschreiben die `InitializeAsync()` Methode. Fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist ein Beispiel für die asynchrone Initialisierung Hinzufügen eines Diensts:
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -131,9 +131,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-2.  Hinzufügen eines Verweises auf *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
+2. Hinzufügen eines Verweises auf *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
-3.  Implementieren Sie die Callback-Methode als asynchrone Methode, die erstellt und gibt den Dienst zurück.
+3. Implementieren Sie die Callback-Methode als asynchrone Methode, die erstellt und gibt den Dienst zurück.
 
     ```csharp
     public async Task<object> CreateTextWriterService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)
@@ -148,7 +148,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-a-service"></a>Verwenden Sie einen Dienst
  Jetzt können Sie den Dienst abrufen und seine Methoden verwenden.
 
-1.  Wir zeigen dies im Initialisierer. allerdings erhalten Sie den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.
+1. Wir zeigen dies im Initialisierer. allerdings erhalten Sie den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.
 
     ```csharp
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -165,14 +165,14 @@ public sealed class TestAsyncPackage : AsyncPackage
 
      Vergessen Sie nicht so ändern Sie  *\<Userpath >* , einen Dateinamen und Pfad, der auf Ihrem Computer sinnvoll.
 
-2.  Erstellen Sie und führen Sie den Code. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, öffnen Sie eine Projektmappe aus. Dies bewirkt, dass die `AsyncPackage` Automatisches Laden. Wenn der Initialisierer ausgeführt wurde, sollte eine Datei am Speicherort finden Sie, die Sie angegeben haben.
+2. Erstellen Sie und führen Sie den Code. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, öffnen Sie eine Projektmappe aus. Dies bewirkt, dass die `AsyncPackage` Automatisches Laden. Wenn der Initialisierer ausgeführt wurde, sollte eine Datei am Speicherort finden Sie, die Sie angegeben haben.
 
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Verwenden eines asynchronen Diensts in einem Befehlshandler
  Hier ist ein Beispiel zur Verwendung eines asynchronen Diensts Menübefehl aus. Sie können den Dienst in anderen nicht asynchrone Methoden verwenden hier angezeigten Prozedur verwenden.
 
-1.  Fügen Sie dem Projekt einen Menübefehl hinzu. (In der **Projektmappen-Explorer**, wählen Sie den Projektknoten aus, mit der rechten Maustaste und wählen Sie **hinzufügen** > **neues Element**  >   **Erweiterbarkeit** > **benutzerdefinierten Befehl**.) Benennen Sie die Befehlsdatei *TestAsyncCommand.cs*.
+1. Fügen Sie dem Projekt einen Menübefehl hinzu. (In der **Projektmappen-Explorer**, wählen Sie den Projektknoten aus, mit der rechten Maustaste und wählen Sie **hinzufügen** > **neues Element**  >   **Erweiterbarkeit** > **benutzerdefinierten Befehl**.) Benennen Sie die Befehlsdatei *TestAsyncCommand.cs*.
 
-2.  Die benutzerdefinierten Befehls-Vorlage erneut fügt die `Initialize()` Methode, um die *TestAsyncPackage.cs* Datei, um den Befehl zu initialisieren. In der `Initialize()` -Methode, kopieren Sie die Zeile, die den Befehl initialisiert. Es sollte wie folgt aussehen:
+2. Die benutzerdefinierten Befehls-Vorlage erneut fügt die `Initialize()` Methode, um die *TestAsyncPackage.cs* Datei, um den Befehl zu initialisieren. In der `Initialize()` -Methode, kopieren Sie die Zeile, die den Befehl initialisiert. Es sollte wie folgt aussehen:
 
     ```csharp
     TestAsyncCommand.Initialize(this);
@@ -198,17 +198,17 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-3.  Löschen der `Initialize()` Methode.
+3. Löschen der `Initialize()` Methode.
 
-4.  In der *TestAsyncCommand.cs* Datei, suchen die `MenuItemCallback()` Methode. Löschen Sie den Text der Methode.
+4. In der *TestAsyncCommand.cs* Datei, suchen die `MenuItemCallback()` Methode. Löschen Sie den Text der Methode.
 
-5.  Fügen Sie eine Using-Anweisung hinzu:
+5. Fügen Sie eine Using-Anweisung hinzu:
 
     ```csharp
     using System.IO;
     ```
 
-6.  Fügen Sie eine asynchrone Methode, die mit dem Namen `UseTextWriterAsync()`, dem ruft des Diensts und seine Methoden verwendet:
+6. Fügen Sie eine asynchrone Methode, die mit dem Namen `UseTextWriterAsync()`, dem ruft des Diensts und seine Methoden verwendet:
 
     ```csharp
     private async System.Threading.Tasks.Task UseTextWriterAsync()
@@ -224,7 +224,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-7.  Rufen Sie diese Methode aus der `MenuItemCallback()` Methode:
+7. Rufen Sie diese Methode aus der `MenuItemCallback()` Methode:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -234,7 +234,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
     ```
 
-8.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, wechseln Sie zu der **Tools** Menü, und suchen Sie nach der **aufrufen TestAsyncCommand** Menüelement. Wenn Sie darauf klicken, schreibt den TextWriterService in die Datei, die Sie angegeben haben. (Sie müssen nicht Öffnen einer Projektmappe, weil die zu ladenden Pakets Aufrufen des Befehls auch verursacht werden.)
+8. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Wenn die experimentelle Instanz von Visual Studio angezeigt wird, wechseln Sie zu der **Tools** Menü, und suchen Sie nach der **aufrufen TestAsyncCommand** Menüelement. Wenn Sie darauf klicken, schreibt den TextWriterService in die Datei, die Sie angegeben haben. (Sie müssen nicht Öffnen einer Projektmappe, weil die zu ladenden Pakets Aufrufen des Befehls auch verursacht werden.)
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden und Dienste bereitstellen](../extensibility/using-and-providing-services.md)

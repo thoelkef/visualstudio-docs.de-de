@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087182"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Vorgehensweise: Hinzufügen eines Dialogfeld-Startprogramms zu einer Menübandgruppe
   Sie können ein Dialogfeld-Startprogramms zu einer Gruppe auf einem Menüband hinzufügen. Ein Dialogfeld-Startprogramm ist ein kleines Symbol, das in einer Gruppe angezeigt wird. Benutzer klicken Sie auf dieses Symbol, um den zugehörigen Dialogfeldern oder Aufgabenbereiche, die weitere Optionen angeben, die im Zusammenhang mit der Gruppe zu öffnen.
@@ -27,11 +27,11 @@ ms.locfileid: "56629949"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Hinzufügen ein Dialogfeld-Startprogramms zu einer Menübandgruppe
 
-1.  Wählen Sie die Menüband-Codedatei (*vb* oder *cs* Datei) in **Projektmappen-Explorer**.
+1. Wählen Sie die Menüband-Codedatei (*vb* oder *cs* Datei) in **Projektmappen-Explorer**.
 
-2.  Auf der **Ansicht** Menü klicken Sie auf **Designer**.
+2. Auf der **Ansicht** Menü klicken Sie auf **Designer**.
 
-3.  Mit der rechten Maustaste in einer beliebigen Gruppe im Menüband-Designer, und klicken Sie dann auf **DialogBoxLauncher hinzufügen**.
+3. Mit der rechten Maustaste in einer beliebigen Gruppe im Menüband-Designer, und klicken Sie dann auf **DialogBoxLauncher hinzufügen**.
 
      Fügen Sie Code in die <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> Ereignis der Gruppe, die einen benutzerdefinierten oder integrierten Dialogfeld zu öffnen.
 

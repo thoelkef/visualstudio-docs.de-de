@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091875"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Vorgehensweise: Erzwingen von verwaltbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ Entwickler können das Codemetrik-Tool verwenden, um die Komplexität und verwal
   
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Der Code Codeanalyserichtlinien-Editor öffnen  
   
-1.  In **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
+1. In **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
   
      Die **Quellcodeverwaltung** Dialogfeld wird angezeigt.  
   
-2.  Auf der **Eincheckrichtlinie** Registerkarte, und klicken Sie auf **hinzufügen**.  
+2. Auf der **Eincheckrichtlinie** Registerkarte, und klicken Sie auf **hinzufügen**.  
   
      Die **Eincheckrichtlinie hinzufügen** Dialogfeld wird angezeigt.  
   
-3.  In der **Eincheckrichtlinie** Liste der **Codeanalyse** , und klicken Sie dann auf **OK**.  
+3. In der **Eincheckrichtlinie** Liste der **Codeanalyse** , und klicken Sie dann auf **OK**.  
   
      Die **Code Codeanalyserichtlinien-Editor** Dialogfeld wird angezeigt.  
   
 ### <a name="to-enable-code-analysis-maintainability-rules"></a>So aktivieren Sie die Verwaltbarkeit von Codeanalyseregeln  
   
-1.  In der **Code Codeanalyserichtlinien-Editor** Dialogfeld **Regeleinstellungen**, erweitern Sie die **Wartbarkeitsregeln** Knoten.  
+1. In der **Code Codeanalyserichtlinien-Editor** Dialogfeld **Regeleinstellungen**, erweitern Sie die **Wartbarkeitsregeln** Knoten.  
   
-2.  Wählen Sie die Kontrollkästchen für die folgenden Regeln:  
+2. Wählen Sie die Kontrollkästchen für die folgenden Regeln:  
   
-    -   Die Tiefe der Vererbung: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei mehr als 5 Ebenen  
+    - Die Tiefe der Vererbung: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei mehr als 5 Ebenen  
   
-    -   Komplexität: **CA1502 AvoidExcessiveComplexity** -Schwellenwert: Warnung bei mehr als 25  
+    - Komplexität: **CA1502 AvoidExcessiveComplexity** -Schwellenwert: Warnung bei mehr als 25  
   
-    -   Wartbarkeitsindex: **CA1505 AvoidUnmaintainableCode** -Schwellenwert: Warnung bei weniger als 20  
+    - Wartbarkeitsindex: **CA1505 AvoidUnmaintainableCode** -Schwellenwert: Warnung bei weniger als 20  
   
-    -   Klassenkopplung: **CA1506 AvoidExcessiveClassCoupling** -Schwellenwert: Warnung bei mehr als 80 für eine Klasse und mehr als 30 für eine Methode  
+    - Klassenkopplung: **CA1506 AvoidExcessiveClassCoupling** -Schwellenwert: Warnung bei mehr als 80 für eine Klasse und mehr als 30 für eine Methode  
   
-    -   Wählen Sie außerdem, wenn Sie einen Regelverstoß, um einen Build zu verhindern möchten, die **behandeln Warnung als Fehler** Kontrollkästchen neben der Beschreibung der Regel.  
+    - Wählen Sie außerdem, wenn Sie einen Regelverstoß, um einen Build zu verhindern möchten, die **behandeln Warnung als Fehler** Kontrollkästchen neben der Beschreibung der Regel.  
   
-3.  Klicken Sie auf **OK**. Die neue Richtlinie gilt jetzt Eincheckvorgängen.  
+3. Klicken Sie auf **OK**. Die neue Richtlinie gilt jetzt Eincheckvorgängen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Codemetrikwerte](../code-quality/code-metrics-values.md)   

@@ -23,59 +23,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c51d2466cc7382e98b0d0d82efff14f817a98e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107761"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Anzeigen von Threads in Visual Studio-Debugger mithilfe des Fensters Threads (C#, Visual Basic, C++)
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Anzeigen von Threads in Visual Studio-Debugger mithilfe des Fensters Threads (C#, Visual Basic C++)
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können. Schrittweise Anleitung zur Verwendung der **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Verwenden des Fensters „Threads“
  Die **Threads** Fenster enthält eine Tabelle, in dem jede Zeile einen separaten Thread in der Anwendung beschreibt. Standardmäßig sind in der Tabelle alle Threads in der Anwendung aufgelistet. Sie können die Liste jedoch filtern, sodass nur die für Sie relevanten Threads angezeigt werden. Jede Spalte wird eine andere Art von Informationen beschrieben. Sie können auch einige Spalten ausblenden. Wenn Sie alle Spalten anzeigen, werden die folgenden Spalten von links nach rechts angezeigt:
 
-- **Flag**: In diesem Artikel noch nicht gekennzeichneten können Sie markieren einen Thread, besondere Aufmerksamkeit werden soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Flag und Aufheben der Kennzeichnung Threads](../debugger/how-to-flag-and-unflag-threads.md).
+- **Flag**: In diesem Artikel noch nicht gekennzeichneten können Sie einen Thread markieren, den besondere Aufmerksamkeit werden soll. Weitere Informationen zum Kennzeichnen von Threads, finden Sie unter [Vorgehensweise: Kennzeichnen und Threadkennzeichnung](../debugger/how-to-flag-and-unflag-threads.md).
 
-- **Aktuellen Thread**: In diesem Artikel noch nicht gekennzeichneten ein gelber Pfeil gibt den aktuellen Thread. Eine Gliederung Pfeil gibt den aktuellen Debuggerkontext für eine nicht-aktuellen Threads an.
+- **Aktuellen Thread**: In diesem Artikel noch nicht gekennzeichneten gibt mit ein gelber Pfeil für den aktuellen Thread. Eine Gliederung Pfeil gibt den aktuellen Debuggerkontext für eine nicht-aktuellen Threads an.
 
-- **ID**: die ID für jeden Thread angezeigt.
+- **ID**: Zeigt an, die für jeden Thread-ID zurück.
 
 - **Verwaltete ID**: Zeigt die verwalteten IDs für verwaltete Threads.
 
 - **Kategorie**: Zeigt die Kategorie der Threads als Benutzeroberflächenthreads, Remoteprozeduraufruf-Handler oder Arbeitsthreads. In einer speziellen Kategorie wird der Hauptthread der Anwendung angegeben.
 
-- **Namen**: identifiziert jeden Thread den Namen, sofern vorhanden, oder als \<ohne Namen >.
+- **Name**: Identifiziert jeden Thread den Namen, sofern vorhanden, oder als \<ohne Namen >.
 
-- **Speicherort**: Zeigt, in dem der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.
+- **Speicherort**: Zeigt an, wobei der Thread ausgeführt wird. Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.
 
-- **Priorität**: eine erweiterte Spalte (standardmäßig ausgeblendet), die anzeigt, die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.
+- **Priorität**: Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt an, die die Priorität bzw. Rangfolge, die das System für jeden Thread zugewiesen wurden.
 
-- **Affinitätsmaske**: eine erweiterte Spalte (standardmäßig ausgeblendet), die der Prozessor-Affinitätsmaske für jeden Thread anzeigt. In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.
+- **Affinitätsmaske**: Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt, dass die Prozessor-Affinitätsmaske für jeden Thread. In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.
 
-- **Unterbrechungszähler**: eine erweiterte Spalte (standardmäßig ausgeblendet), die die Anzahl die angehaltene anzeigt. Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann. Weitere Informationen zu der Anzahl der angehaltenen, finden Sie unter [Einfrieren und Reaktivieren von Threads](#freeze-and-thaw-threads).
+- **Unterbrechungszähler**: Eine erweiterte Spalte (standardmäßig ausgeblendet), die die Anzahl die angehaltene anzeigt. Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann. Weitere Informationen zu der Anzahl der angehaltenen, finden Sie unter [Einfrieren und Reaktivieren von Threads](#freeze-and-thaw-threads).
 
-- **Prozessname**: eine erweiterte Spalte (standardmäßig ausgeblendet), in dem den Prozess angezeigt, zu der jeder Thread gehört. Die Daten in dieser Spalte können nützlich sein, wenn Sie viele Prozesse debuggen.
+- **Prozessname**: Eine erweiterte Spalte (standardmäßig ausgeblendet), in dem den Prozess angezeigt, zu dem jeder Thread gehört. Die Daten in dieser Spalte können nützlich sein, wenn Sie viele Prozesse debuggen.
 
-- **Prozess-ID**: eine erweiterte Spalte (standardmäßig ausgeblendet), die der Prozess zeigt die ID, zu der jeder Thread gehört.
+- **Prozess-ID**: Eine erweiterte Spalte (standardmäßig ausgeblendet) zeigt an, die die Prozess-ID, zu der jeder Thread gehört.
 
-- **Transportqualifizierer**: eine erweiterte Spalte (standardmäßig ausgeblendet), die den Computer eindeutig mit dem der Debugger verbunden ist.
+- **Transportqualifizierer**: Eine erweiterte Spalte (standardmäßig ausgeblendet) eindeutig identifiziert, den Computer mit dem der Debugger verbunden ist.
 
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>So zeigen Sie das Fenster Threads im Unterbrechungs- oder Ausführmodus an
 
--   Wählen Sie während der Visual Studio im Debugmodus befindet, die **Debuggen** Startmenü **Windows**, und wählen Sie dann **Threads**.
+- Wählen Sie während der Visual Studio im Debugmodus befindet, die **Debuggen** Startmenü **Windows**, und wählen Sie dann **Threads**.
 
 ### <a name="to-display-or-hide-a-column"></a>So blenden Sie Spalten ein oder aus
 
--   Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Spalten**. Klicken Sie dann aktivieren Sie, oder deaktivieren Sie den Namen der Spalte, die Sie anzeigen oder ausblenden möchten.
+- Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Spalten**. Klicken Sie dann aktivieren Sie, oder deaktivieren Sie den Namen der Spalte, die Sie anzeigen oder ausblenden möchten.
 
 ## <a name="display-flagged-threads"></a>Gekennzeichnete Threads anzeigen
- Einen Thread, der besondere Aufmerksamkeit erhalten soll, können Sie kennzeichnen, indem Sie ihn im Fenster **Threads** mit einem Symbol markieren. Weitere Informationen finden Sie unter [wie: kennzeichnen und Threadkennzeichnung](../debugger/how-to-flag-and-unflag-threads.md). Im Fenster **Threads** können Sie festlegen, dass alle Threads oder nur die gekennzeichneten Threads angezeigt werden.
+ Einen Thread, der besondere Aufmerksamkeit erhalten soll, können Sie kennzeichnen, indem Sie ihn im Fenster **Threads** mit einem Symbol markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md). Im Fenster **Threads** können Sie festlegen, dass alle Threads oder nur die gekennzeichneten Threads angezeigt werden.
 
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an
 
--   Wählen Sie **nur gekennzeichnete Threads anzeigen Threads** auf der Symbolleiste am oberen Rand der **Threads** Fenster. (Wenn es abgeblendet ist, müssen Sie so kennzeichnen Sie zunächst einige Threads).
+- Wählen Sie **nur gekennzeichnete Threads anzeigen Threads** auf der Symbolleiste am oberen Rand der **Threads** Fenster. (Wenn es abgeblendet ist, müssen Sie so kennzeichnen Sie zunächst einige Threads).
 
 ## <a name="freeze-and-thaw-threads"></a>Sperren und Threads reaktivieren
  Wenn Sie einen Thread einfrieren, startet das System Ausführung des Threads nicht, wenn Ressourcen verfügbar sind.
@@ -89,7 +89,7 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>So können Sie die Ausführung eines Threads einfrieren oder reaktivieren
 
--   Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Threads einfrieren** oder **Threads reaktivieren**.
+- Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Threads einfrieren** oder **Threads reaktivieren**.
 
      Dieser Vorgang wirkt sich nur auf Threads aus, die im Fenster **Threads** ausgewählt sind.
 
@@ -99,11 +99,11 @@ Ein gelber Pfeil gibt den aktuellen Thread (und den Speicherort der Ausführungs
 
 #### <a name="to-switch-to-another-thread"></a>So wechseln Sie zu einem anderen thread
 
--   Führen Sie entweder die folgenden Schritte aus:
+- Führen Sie entweder die folgenden Schritte aus:
 
-    -   Doppelklicken Sie auf einen beliebigen Thread.
+    - Doppelklicken Sie auf einen beliebigen Thread.
 
-    -   Mit der rechten Maustaste in eines Threads aus, und wählen Sie **Switch zum Thread**.
+    - Mit der rechten Maustaste in eines Threads aus, und wählen Sie **Switch zum Thread**.
 
 ## <a name="group-and-sort-threads"></a>Gruppieren und Sortieren von threads
  Beim Gruppieren von Threads wird in der Tabelle eine Überschrift für jede Gruppe angezeigt. Die Überschrift enthält eine Gruppenbeschreibung, z. B. **Arbeitsthread** oder **Nicht gekennzeichnete Threads**, und ein Struktursteuerelement. Die einzelnen Threads jeder Gruppe werden unter der Gruppenüberschrift angezeigt. Wenn Sie die einzelnen Threads einer Gruppe ausblenden möchten, verwenden Sie das Strukturansicht-Steuerelement, um die Gruppe zu reduzieren.
@@ -112,29 +112,29 @@ Ein gelber Pfeil gibt den aktuellen Thread (und den Speicherort der Ausführungs
 
 ### <a name="to-sort-threads"></a>So sortieren Sie Threads
 
-1.  Auf der Symbolleiste am oberen Rand der **Threads** Fenster, wählen Sie die Schaltfläche am oberen Rand einer beliebigen Spalte.
+1. Auf der Symbolleiste am oberen Rand der **Threads** Fenster, wählen Sie die Schaltfläche am oberen Rand einer beliebigen Spalte.
 
      Die Threads werden jetzt nach den Werten in dieser Spalte sortiert.
 
-2.  Wenn Sie die Sortierreihenfolge umkehren möchten, wählen Sie die gleiche Schaltfläche erneut.
+2. Wenn Sie die Sortierreihenfolge umkehren möchten, wählen Sie die gleiche Schaltfläche erneut.
 
      Threads, die am Anfang der Liste angezeigt wurden, werden nun am Ende der Liste aufgeführt.
 
 ### <a name="to-group-threads"></a>So gruppieren Sie Threads
 
--   In der **Threads** Symbolleiste des Fensters auf die **Group by-** Liste, und wählen Sie die Kriterien, die Sie Threads gruppieren möchten.
+- In der **Threads** Symbolleiste des Fensters auf die **Group by-** Liste, und wählen Sie die Kriterien, die Sie Threads gruppieren möchten.
 
 ### <a name="to-sort-threads-within-groups"></a>So sortieren Sie Threads innerhalb von Gruppen
 
-1.  Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster der **Group by-** Liste, und wählen Sie die Kriterien, die Sie Threads gruppieren möchten.
+1. Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster der **Group by-** Liste, und wählen Sie die Kriterien, die Sie Threads gruppieren möchten.
 
-2.  In der **Threads** Fenster, wählen Sie die Schaltfläche am oberen Rand einer beliebigen Spalte.
+2. In der **Threads** Fenster, wählen Sie die Schaltfläche am oberen Rand einer beliebigen Spalte.
 
      Die Threads werden jetzt nach den Werten in dieser Spalte sortiert.
 
 ### <a name="to-expand-or-collapse-all-groups"></a>So erweitern oder reduzieren Sie alle Gruppen
 
--   Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Gruppen erweitern** oder **Gruppen reduzieren**.
+- Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Gruppen erweitern** oder **Gruppen reduzieren**.
 
 ## <a name="search-for-specific-threads"></a>Suchen Sie nach bestimmten threads
  Sie können Threads, die in einer bestimmten Zeichenfolge entsprechen Suchen der **Threads** Fenster. Wenn Sie nach Threads suchen, zeigt das Fenster die Threads, die für die Übereinstimmung der Suchzeichenfolge in einer beliebigen Spalte. Zu diesen Informationen zählt der Threadspeicherort, der am oberen Rand der Aufrufliste in der Spalte **Speicherort** angezeigt wird. Standardmäßig ist nicht die vollständige Aufrufliste durchsucht.
@@ -159,13 +159,13 @@ In einem Multithreadprogramm verfügt jeder Thread über eine eigene Aufrufliste
 
 ### <a name="to-view-the-call-stack-of-a-thread"></a>So zeigen Sie die Aufrufliste eines Threads an
 
--   In der **Speicherort** Spalte wählen Sie das umgekehrte Dreieck neben dem Threadspeicherort.
+- In der **Speicherort** Spalte wählen Sie das umgekehrte Dreieck neben dem Threadspeicherort.
 
      Der Speicherort wird erweitert, und die Aufrufliste für den Thread wird angezeigt.
 
 ### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>So können Sie die Aufruflisten aller Threads anzeigen oder reduzieren
 
--   Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Aufruflisten erweitern** oder **Aufruflisten reduzieren**.
+- Auf der Symbolleiste am oberen Rand der **Threads** wählen Sie im Fenster **Aufruflisten erweitern** oder **Aufruflisten reduzieren**.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)

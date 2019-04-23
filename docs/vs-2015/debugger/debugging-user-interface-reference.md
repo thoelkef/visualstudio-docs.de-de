@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f84df26f2dbdd000c61f93b092e2150b2c2242f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 59cc4e96630be23ee864e3d5a03cbb6dde709695
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098844"
 ---
 # <a name="debugging-user-interface-reference"></a>Referenz zur Debugger-Benutzeroberfläche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Beim Debuggen einer Anwendung werden möglicherweise folgende Dialogfelder angez
   
  Mithilfe des Erweiterbarkeitsmodells von Visual Studio lassen sich zahlreiche Debuggerfeatures automatisieren. Weitere Informationen finden Sie unter Visual Studio Debugging-SDK.  
   
--   [Dialogfeld "Haltepunkte wählen"](../debugger/choose-breakpoints-dialog-box.md)  
+- [Dialogfeld "Haltepunkte wählen"](../debugger/choose-breakpoints-dialog-box.md)  
   
--   [Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
+- [Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
--   [Debuggen, Dialogfeld "Optionen"](../debugger/debugging-options-dialog-box.md)  
+- [Debuggen, Dialogfeld "Optionen"](../debugger/debugging-options-dialog-box.md)  
   
--   [Dialogfeld "Bearbeiten und Fortfahren"](../debugger/edit-and-continue-dialog-box.md)  
+- [Dialogfeld "Bearbeiten und Fortfahren"](../debugger/edit-and-continue-dialog-box.md)  
   
--   [Dialogfeld "Debuggen wird abgebrochen"](../debugger/stop-debugging-in-progress-dialog-box.md)  
+- [Dialogfeld "Debuggen wird abgebrochen"](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
--   [Debugfehler und Warnmeldungen](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
+- [Debugfehler und Warnmeldungen](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   

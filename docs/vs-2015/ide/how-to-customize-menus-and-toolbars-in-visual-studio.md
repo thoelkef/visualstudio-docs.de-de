@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b492764c6d872ff8f2568b4abcbeefe133ee23c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094527"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,86 +45,86 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
  **In diesem Thema:**
 
--   [Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
+- [Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
 
--   [Hinzufügen, Entfernen oder Verschieben einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
+- [Hinzufügen, Entfernen oder Verschieben einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
 
--   [Anpassen eines Menüs oder einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_customize)
+- [Anpassen eines Menüs oder einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_customize)
 
--   [Zurücksetzen eines Menüs oder einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
+- [Zurücksetzen eines Menüs oder einer Symbolleiste](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-##  <a name="bkmk_addmenu"></a> Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste
+## <a name="bkmk_addmenu"></a> Hinzufügen, Entfernen oder Verschieben eines Menüs in der Menüleiste
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
+1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
      Das Dialogfeld **Anpassen** wird geöffnet.
 
-2.  Lassen Sie auf der Registerkarte **Befehle** das Optionsfeld **Menüleiste** ausgewählt, lassen Sie **Menüleiste** in der Liste neben dieser Option ausgewählt, und führen Sie dann einen der folgenden Schritte aus:
+2. Lassen Sie auf der Registerkarte **Befehle** das Optionsfeld **Menüleiste** ausgewählt, lassen Sie **Menüleiste** in der Liste neben dieser Option ausgewählt, und führen Sie dann einen der folgenden Schritte aus:
 
-    -   Um ein Menü hinzuzufügen, klicken Sie auf die Schaltfläche **Neues Menü hinzufügen** und anschließend auf die Schaltfläche **Auswahl ändern**, und benennen Sie das Menü, das Sie hinzufügen möchten.
+    - Um ein Menü hinzuzufügen, klicken Sie auf die Schaltfläche **Neues Menü hinzufügen** und anschließend auf die Schaltfläche **Auswahl ändern**, und benennen Sie das Menü, das Sie hinzufügen möchten.
 
          ![Dialogfeld „Anpassen“ zum Hinzufügen eines Menüs](../ide/media/addmenu.png "AddMenu")
 
-    -   Um ein Menü zu entfernen, wählen Sie es in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
+    - Um ein Menü zu entfernen, wählen Sie es in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
-    -   Um ein Menü in der Menüleiste zu verschieben, wählen Sie das Menü in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Nach oben** oder **Nach unten**.
+    - Um ein Menü in der Menüleiste zu verschieben, wählen Sie das Menü in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Nach oben** oder **Nach unten**.
 
-##  <a name="bkmk_addtoolbar"></a> Hinzufügen, Entfernen oder Verschieben einer Symbolleiste
+## <a name="bkmk_addtoolbar"></a> Hinzufügen, Entfernen oder Verschieben einer Symbolleiste
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
+1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
      Das Dialogfeld **Anpassen** wird geöffnet.
 
-2.  Führen Sie auf der Registerkarte **Symbolleiste** einen der folgenden Schritte aus:
+2. Führen Sie auf der Registerkarte **Symbolleiste** einen der folgenden Schritte aus:
 
-    -   Um eine Symbolleiste hinzufügen, klicken Sie auf die Schaltfläche **Neu**, geben Sie einen Namen für die Symbolleiste ein, die Sie hinzufügen möchten, und klicken Sie dann auf **OK**.
+    - Um eine Symbolleiste hinzufügen, klicken Sie auf die Schaltfläche **Neu**, geben Sie einen Namen für die Symbolleiste ein, die Sie hinzufügen möchten, und klicken Sie dann auf **OK**.
 
          ![Dialogfeld „Anpassen“ zum Hinzufügen einer Symbolleiste](../ide/media/addtoolbar.png "AddToolbar")
 
-    -   Um eine benutzerdefinierte Symbolleiste zu entfernen, wählen Sie sie in der Liste **Symbolleisten** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
+    - Um eine benutzerdefinierte Symbolleiste zu entfernen, wählen Sie sie in der Liste **Symbolleisten** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
         > [!IMPORTANT]
         >  Sie können selbst erstellte Symbolleisten löschen, jedoch keine Standardsymbolleisten.
 
-    -   Um eine Symbolleiste an eine andere Andockposition zu verschieben, wählen Sie sie in der Liste **Symbolleisten** aus, klicken Sie auf **Auswahl ändern**, und wählen Sie eine Position in der angezeigten Liste aus.
+    - Um eine Symbolleiste an eine andere Andockposition zu verschieben, wählen Sie sie in der Liste **Symbolleisten** aus, klicken Sie auf **Auswahl ändern**, und wählen Sie eine Position in der angezeigten Liste aus.
 
          Sie können die Symbolleiste auch am linken Rand ziehen, um sie im Hauptandockbereich zu verschieben.
 
         > [!NOTE]
         >  Weitere Informationen zur Verbesserung der Benutzerfreundlichkeit und der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-##  <a name="bkmk_customize"></a> Anpassen eines Menüs oder einer Symbolleiste
+## <a name="bkmk_customize"></a> Anpassen eines Menüs oder einer Symbolleiste
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
+1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
      Das Dialogfeld **Anpassen** wird geöffnet.
 
-2.  Wählen Sie auf der Registerkarte **Befehle** das Optionsfeld für den Elementtyp aus, den Sie anpassen möchten.
+2. Wählen Sie auf der Registerkarte **Befehle** das Optionsfeld für den Elementtyp aus, den Sie anpassen möchten.
 
-3.  Wählen Sie in der Liste für den Elementtyp das Menü oder die Symbolleiste aus, das bzw. die Sie anpassen möchten, und führen Sie dann einen der folgenden Schritte aus:
+3. Wählen Sie in der Liste für den Elementtyp das Menü oder die Symbolleiste aus, das bzw. die Sie anpassen möchten, und führen Sie dann einen der folgenden Schritte aus:
 
-    -   Um einen Befehl hinzuzufügen, klicken Sie auf **Befehl hinzufügen**.
+    - Um einen Befehl hinzuzufügen, klicken Sie auf **Befehl hinzufügen**.
 
          Wählen Sie im Dialogfeld **Befehl hinzufügen** ein Element in der Liste **Kategorien** aus, wählen Sie ein Element in der Liste **Befehle** aus, und klicken Sie dann auf **OK**.
 
          ![Dialogfeld „Befehl hinzufügen“ in Visual Studio](../ide/media/addcommand.png "AddCommand")
 
-    -   Um einen Befehl zu löschen, wählen Sie ihn in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
+    - Um einen Befehl zu löschen, wählen Sie ihn in der Liste **Steuerelemente** aus, und klicken Sie dann auf die Schaltfläche **Löschen**.
 
-    -   Um Befehle neu anzuordnen, wählen Sie einen Befehl in der Liste **Steuerelemente** aus, und klicken Sie dann auf **Nach oben** oder **Nach unten**.
+    - Um Befehle neu anzuordnen, wählen Sie einen Befehl in der Liste **Steuerelemente** aus, und klicken Sie dann auf **Nach oben** oder **Nach unten**.
 
-    -   Wenn Sie einen Befehl in Gruppen aufteilen möchten, wählen Sie zuerst aus der Liste **Controls** (Steuerelemente) einen Befehl aus. Klicken Sie dann auf die Schaltfläche **Auswahl ändern**, und wählen Sie im angezeigten Menü **Gruppe beginnen** aus.
+    - Wenn Sie einen Befehl in Gruppen aufteilen möchten, wählen Sie zuerst aus der Liste **Controls** (Steuerelemente) einen Befehl aus. Klicken Sie dann auf die Schaltfläche **Auswahl ändern**, und wählen Sie im angezeigten Menü **Gruppe beginnen** aus.
 
-##  <a name="bkmk_reset"></a>Zurücksetzen eines Menüs oder einer Symbolleiste
+## <a name="bkmk_reset"></a>Zurücksetzen eines Menüs oder einer Symbolleiste
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
+1. Wählen Sie in der Menüleiste **Extras**, **Anpassen** aus.
 
      Das Dialogfeld **Anpassen** wird geöffnet.
 
-2.  Wählen Sie auf der Registerkarte **Befehle** das Optionsfeld für den Elementtyp aus, den Sie zurücksetzen möchten.
+2. Wählen Sie auf der Registerkarte **Befehle** das Optionsfeld für den Elementtyp aus, den Sie zurücksetzen möchten.
 
-3.  Wählen Sie in der Liste für den Elementtyp das Menü oder die Symbolleiste aus, das bzw. die Sie zurücksetzen möchten.
+3. Wählen Sie in der Liste für den Elementtyp das Menü oder die Symbolleiste aus, das bzw. die Sie zurücksetzen möchten.
 
-4.  Klicken Sie auf die Schaltfläche **Auswahl ändern**, und wählen Sie dann im angezeigten Menü **Zurücksetzen** aus.
+4. Klicken Sie auf die Schaltfläche **Auswahl ändern**, und wählen Sie dann im angezeigten Menü **Zurücksetzen** aus.
 
      Sie können auch alle Menüs und Symbolleisten zurücksetzen, indem Sie die Schaltfläche **Alle zurücksetzen** auswählen.

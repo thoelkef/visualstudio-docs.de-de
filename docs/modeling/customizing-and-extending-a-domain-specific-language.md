@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096789"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 Visual Studio-Modellierung und Visualisierung SDK (VMSDK) bietet mehrere Ebenen, die an dem Sie die Tools zur Modellierung definieren können:
 
-1.  Definieren Sie eine domänenspezifische Sprache (DSL) mithilfe von DSL-Definitionsdiagramm. Sie können schnell eine DSL erstellen, mit einer diagrammdarstellung, einem lesbaren XML-Format und die grundlegenden Tools, die zum Generieren von Code und andere Artefakte erforderlich sind.
+1. Definieren Sie eine domänenspezifische Sprache (DSL) mithilfe von DSL-Definitionsdiagramm. Sie können schnell eine DSL erstellen, mit einer diagrammdarstellung, einem lesbaren XML-Format und die grundlegenden Tools, die zum Generieren von Code und andere Artefakte erforderlich sind.
 
      Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
-2.  Optimieren Sie die DSL, indem Sie mithilfe von erweiterten Funktionen von der DSL-Definition. Beispielsweise können Sie vornehmen, weitere Links werden angezeigt, wenn der Benutzer ein Element erstellt werden sollen. Diese Verfahren bestehen meist in der DSL-Definition, und einige erfordern einige Zeilen Programmcode.
+2. Optimieren Sie die DSL, indem Sie mithilfe von erweiterten Funktionen von der DSL-Definition. Beispielsweise können Sie vornehmen, weitere Links werden angezeigt, wenn der Benutzer ein Element erstellt werden sollen. Diese Verfahren bestehen meist in der DSL-Definition, und einige erfordern einige Zeilen Programmcode.
 
-3.  Erweitern Sie Ihre Modellierungstools mit Programmcode. VMSDK wurde speziell dafür entwickelt, die Integration Ihrer Erweiterungen in den Code zu vereinfachen, der aus der DSL-Definition generiert wird.  Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Erweitern Sie Ihre Modellierungstools mit Programmcode. VMSDK wurde speziell dafür entwickelt, die Integration Ihrer Erweiterungen in den Code zu vereinfachen, der aus der DSL-Definition generiert wird.  Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
 >  Wenn Sie die DSL-Definitionen-Datei aktualisiert haben, vergessen Sie nicht auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer vor dem Neuerstellen der Projektmappe.

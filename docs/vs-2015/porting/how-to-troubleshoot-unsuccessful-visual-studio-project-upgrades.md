@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096334"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früher
 
 #### <a name="to-resolve-incorrect-file-paths"></a>So lösen Sie falsche Dateipfade auf
 
-1.  Öffnen Sie die Projektdatei in einem Texteditor.
+1. Öffnen Sie die Projektdatei in einem Texteditor.
 
-2.  Suchen Sie nach Dateipfaden, die falsch sein könnten, insbesondere solchen, die eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Versionsnummer enthalten.
+2. Suchen Sie nach Dateipfaden, die falsch sein könnten, insbesondere solchen, die eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Versionsnummer enthalten.
 
-3.  Ändern Sie falsche Dateipfade so, dass diese auf die neuen Ziele zeigen.
+3. Ändern Sie falsche Dateipfade so, dass diese auf die neuen Ziele zeigen.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Das Projekt wird nicht erstellt, da Verweise nicht gültig sind
  Wenn Sie ein Upgrade von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durchführen, wird möglicherweise auch die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version aktualisiert. Wenn das Projekt Verweise enthält, die in der neueren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version nicht mehr unterstützt werden, können diese nicht ordnungsgemäß aufgelöst werden. Dies ist bei Verweisen mit Versionsnummern besonders wahrscheinlich, z. B. `Microsoft.VisualStudio.Shell.Interop.8.0`.

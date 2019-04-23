@@ -1,5 +1,5 @@
 ---
-title: 'CA3007: Überprüfen Sie Code für offene umleitungen Sicherheitsrisiken'
+title: 'CA3007: Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: dbafb6c05a3dba72d1614d6a955e20030a50c6ea
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096711"
 ---
-# <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Überprüfen Sie Code für offene umleitungen Sicherheitsrisiken
+# <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Review code for open redirect vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch offene Umleitungen)
 
 |||
 |-|-|

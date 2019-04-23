@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108853"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio-Vorlage manifest Schemareferenz
 Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman*) Dateien, die generiert werden, die für Visual Studio Projekt- oder Elementvorlagen. Das Schema beschreibt auch den Speicherort und andere relevante Informationen zur Vorlage.
@@ -28,15 +28,15 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
 
 ### <a name="attributes"></a>Attribute
 
--   **Version**: Eine Zeichenfolge, die die Version des Manifests Vorlage darstellt. Erforderlich.
+- **Version**: Eine Zeichenfolge, die die Version des Manifests Vorlage darstellt. Erforderlich.
 
--   **Locale**: Eine Zeichenfolge, die dem Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen. Sie müssen ein eigenes Manifest für jedes Gebietsschema verwenden. Dies ist optional.
+- **Locale**: Eine Zeichenfolge, die dem Gebietsschema oder Gebietsschemas des Manifests Vorlage darstellt. Die Gebietsschemawert gilt für alle Vorlagen. Sie müssen ein eigenes Manifest für jedes Gebietsschema verwenden. Dies ist optional.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
--   **VSTemplateContainer** Optional.
+- **VSTemplateContainer** Optional.
 
--   **VSTemplateDir** Optional.
+- **VSTemplateDir** Optional.
 
 ### <a name="parent-element"></a>Übergeordnetes Element
  Keine
@@ -49,9 +49,9 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
--   **RelativePathOnDisk**:  Der relative Pfad der Vorlagendatei auf dem Datenträger. Hier definiert die Platzierung der Vorlage auch in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und die einzelnen Dateien bereitgestellt werden bezieht sich dieser Pfad zu dem Verzeichnis, das die Vorlagendateien enthält. Vorlagen als "bereitgestellt" eine *ZIP* -Datei in diesen Pfad muss der Pfad zu der *ZIP* Datei.
+- **RelativePathOnDisk**:  Der relative Pfad der Vorlagendatei auf dem Datenträger. Hier definiert die Platzierung der Vorlage auch in der Struktur der Vorlage angezeigt, der **neues Projekt** oder **neues Element** Dialogfeld. Für Vorlagen, die als ein Verzeichnis und die einzelnen Dateien bereitgestellt werden bezieht sich dieser Pfad zu dem Verzeichnis, das die Vorlagendateien enthält. Vorlagen als "bereitgestellt" eine *ZIP* -Datei in diesen Pfad muss der Pfad zu der *ZIP* Datei.
 
--   **VSTemplateHeader: Ein [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element, das den Header beschreibt.
+- **VSTemplateHeader: Ein [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) Element, das den Header beschreibt.
 
 ### <a name="parent-element"></a>Übergeordnetes Element
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
--   **RelativePath**: Der Pfad der Vorlage. Es können nur einen Eintrag pro Pfad vorhanden sein, damit die erste Bedingung für alle Manifeste gewinnen wird.
+- **RelativePath**: Der Pfad der Vorlage. Es können nur einen Eintrag pro Pfad vorhanden sein, damit die erste Bedingung für alle Manifeste gewinnen wird.
 
--   **LocalizedName**: Ein **NameDescriptionIcon** Element, das den lokalisierten Namen angibt. Dies ist optional.
+- **LocalizedName**: Ein **NameDescriptionIcon** Element, das den lokalisierten Namen angibt. Dies ist optional.
 
--   **SortOrder**: Eine Zeichenfolge, die Sortierreihenfolge angibt. Dies ist optional.
+- **SortOrder**: Eine Zeichenfolge, die Sortierreihenfolge angibt. Dies ist optional.
 
--   **ParentFolderOverrideName**: Die außer Kraft gesetzten Namen des übergeordneten Ordners. Dies ist optional. Dieses Element verfügt über eine **Namen** Attribut, das einen Zeichenfolgenwert, der den Namen angibt.
+- **ParentFolderOverrideName**: Die außer Kraft gesetzten Namen des übergeordneten Ordners. Dies ist optional. Dieses Element verfügt über eine **Namen** Attribut, das einen Zeichenfolgenwert, der den Namen angibt.
 
 ### <a name="parent-element"></a>Übergeordnetes Element
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ Dieses Schema beschreibt das Format des Manifests Visual Studio-Vorlage (*vstman
 
 ### <a name="attributes"></a>Attribute
 
--   **Paket**: Ein Zeichenfolgenwert, der angibt, das Paket. Dies ist optional.
+- **Paket**: Ein Zeichenfolgenwert, der angibt, das Paket. Dies ist optional.
 
--   **ID**: Ein Zeichenfolgenwert, der angibt, die-ID. Dies ist optional.
+- **ID**: Ein Zeichenfolgenwert, der angibt, die-ID. Dies ist optional.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine

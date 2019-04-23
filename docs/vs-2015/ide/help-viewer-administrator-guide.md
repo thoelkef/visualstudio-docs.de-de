@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086597"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer-Administratorhandbuch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 ##### <a name="to-install-english-content-from-the-internet"></a>So installieren Sie englische Inhalte über das Internet  
   
-1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
+1. Klicken Sie auf **Start** und dann auf **Ausführen**.  
   
-2.  Geben Sie folgenden Pfad ein:  
+2. Geben Sie folgenden Pfad ein:  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Drücken Sie die EINGABETASTE.  
+3. Drücken Sie die EINGABETASTE.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Bereitstellen der vorinstallierten lokalen Hilfeinhalte auf Clientcomputern  
  Sie können Inhalte von einem Onlinespeicherort auf einem Computer installieren und die Inhalte anschließend auf andere Computer kopieren.  
@@ -117,15 +117,15 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 ##### <a name="to-package-the-content"></a>So verpacken Sie die Inhalte  
   
-1.  Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren.  
+1. Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren.  
   
      Beispiel: c:\VS12Help.  
   
-2.  Öffnen Sie "cmd.exe" mit Administratorberechtigungen.  
+2. Öffnen Sie "cmd.exe" mit Administratorberechtigungen.  
   
-3.  Navigieren Sie zu dem in Schritt 1 erstellten Ordner.  
+3. Navigieren Sie zu dem in Schritt 1 erstellten Ordner.  
   
-4.  Geben Sie folgenden Pfad ein:  
+4. Geben Sie folgenden Pfad ein:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*Ordnername*>\ /y /e /k /o  
   
@@ -135,13 +135,13 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 ##### <a name="to-deploy-the-content"></a>So stellen Sie die Inhalte bereit  
   
-1.  Erstellen Sie eine Netzwerkfreigabe und kopieren Sie die Hilfeinhalte an diesen Speicherort.  
+1. Erstellen Sie eine Netzwerkfreigabe und kopieren Sie die Hilfeinhalte an diesen Speicherort.  
   
      Kopieren Sie beispielsweise den Inhalt von C:\VS12Help nach \\\myserver\VS12Help.  
   
-2.  Erstellen Sie eine BAT-Datei für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen.  
+2. Erstellen Sie eine BAT-Datei für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen.  
   
-     Beispiel:  
+     Zum Beispiel:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -199,7 +199,7 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
     :CONTINUE  
     ```  
   
-3.  Führen Sie die BAT-Datei auf den lokalen Computern aus, auf denen die Hilfeinhalte installiert werden sollen.  
+3. Führen Sie die BAT-Datei auf den lokalen Computern aus, auf denen die Hilfeinhalte installiert werden sollen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   

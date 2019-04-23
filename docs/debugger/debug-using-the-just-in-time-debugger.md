@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092279"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen Sie mithilfe der Just-in-Time-Debugger in Visual Studio
 
@@ -26,7 +26,7 @@ Just-In-Time-Debuggen funktioniert für Windows desktop-apps. Es funktioniert ni
 > [!TIP]
 > Wenn Sie nur möchten, beenden das Dialogfeld "Just-in-Time-Debugger" angezeigt werden, jedoch keine Visual Studio installiert haben, finden Sie unter [deaktivieren Sie Just-in-Time-Debugger](../debugger/just-in-time-debugging-in-visual-studio.md). Wenn Sie einmal Visual Studio installiert haben, müssen Sie möglicherweise auf [deaktivieren Sie Just-in-Time-Debuggen aus der Windows-Registrierung](#disable-just-in-time-debugging-from-the-windows-registry).
 
-##  <a name="BKMK_Enabling"></a> Aktivieren oder deaktivieren Sie Just-in-Time-Debuggen in Visual Studio
+## <a name="BKMK_Enabling"></a> Aktivieren oder deaktivieren Sie Just-in-Time-Debuggen in Visual Studio
 
 >[!NOTE]
 >Zum Aktivieren oder deaktivieren Just-in-Time-Debuggen, müssen Sie Visual Studio als Administrator ausführen. Aktivieren oder deaktivieren Just-in-Time-Debuggen wird ein Registrierungsschlüssel, und möglicherweise Administratorrechte zum Ändern dieses Schlüssels erforderlich. Klicken Sie zum Öffnen von Visual Studio als Administrator mit der rechten Maustaste in der Visual Studio-app, und wählen Sie **als Administrator ausführen**.
@@ -39,7 +39,7 @@ Sie können konfigurieren, Just-In-Time-Debuggen von Visual Studio **Tools** > *
 
    ![Aktivieren oder Deaktivieren der JIT-Debuggen](../debugger/media/dbg-jit-enable-or-disable.png "aktivieren oder Deaktivieren der JIT-Debuggen")
 
-1. In der **Aktivieren von Just-in-Time-Debuggen für diese Arten von Code** wählen die Codetypen Just-In-Time-Debuggen zum Debuggen angezeigt werden sollen: **verwaltete**, **Native**, und/oder  **Skript**.
+1. In der **Aktivieren von Just-in-Time-Debuggen für diese Arten von Code** wählen die Codetypen Just-In-Time-Debuggen zum Debuggen angezeigt werden sollen: **Verwaltete**, **Native**, und/oder **Skript**.
 
 1. Klicken Sie auf **OK**.
 
@@ -51,25 +51,25 @@ Just-In-Time-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual
 
 **So deaktivieren Sie Just-In-Time-Debuggen durch Bearbeiten der Registrierung:**
 
-1.  Von der Windows **starten** führen die **Registrierungs-Editor** (*regedit.exe*).
+1. Von der Windows **starten** führen die **Registrierungs-Editor** (*regedit.exe*).
 
-2.  In der **Registrierungs-Editor** Fenster Suchen und löschen Sie die folgenden Registrierungseinträge:
+2. In der **Registrierungs-Editor** Fenster Suchen und löschen Sie die folgenden Registrierungseinträge:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![JIT-Registrierungsschlüssel](../debugger/media/dbg-jit-registry.png "JIT-Registrierungsschlüssel")
 
-3.  Wenn Ihr Computer eine 64-Bit-Betriebssystem ausgeführt wird, können auch löschen Sie die folgenden Registrierungseinträge:
+3. Wenn Ihr Computer eine 64-Bit-Betriebssystem ausgeführt wird, können auch löschen Sie die folgenden Registrierungseinträge:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Stellen Sie sicher, dass nicht löschen oder ändern andere Registrierungsschlüssel.
 
-5.  Schließen der **Registrierungs-Editor** Fenster.
+5. Schließen der **Registrierungs-Editor** Fenster.
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Aktivieren der Just-In-Time-Debuggen eines Windows Forms
 
@@ -79,7 +79,7 @@ Standardmäßig haben die Windows-formularanwendungen einen Ausnahmehandler der 
 
 Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für die Fehlerbehandlung zu aktivieren, fügen Sie diese Einstellungen:
 
--  In der `system.windows.forms` Teil der *"Machine.config"* oder  *\<app-Name >. exe.config* Datei die `jitDebugging` Wert `true`:
+- In der `system.windows.forms` Teil der *"Machine.config"* oder  *\<app-Name >. exe.config* Datei die `jitDebugging` Wert `true`:
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für d
     </configuration>
     ```
 
--  Legen Sie auch in einer C++ Windows Form-Anwendung `DebuggableAttribute` zu `true` in eine *config* Datei oder in Ihrem Code. Bei der Kompilierung mit [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) und ohne [/Og](/cpp/build/reference/og-global-optimizations) wird dieses Attribut vom Compiler für Sie festgelegt. Wenn Sie einen nicht optimierten Releasebuild debuggen möchten, jedoch müssen Sie festlegen `DebuggableAttribute` durch Hinzufügen der folgenden Zeile in Ihrer app *AssemblyInfo.cpp* Datei:
+- Legen Sie auch in einer C++ Windows Form-Anwendung `DebuggableAttribute` zu `true` in eine *config* Datei oder in Ihrem Code. Bei der Kompilierung mit [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) und ohne [/Og](/cpp/build/reference/og-global-optimizations) wird dieses Attribut vom Compiler für Sie festgelegt. Wenn Sie einen nicht optimierten Releasebuild debuggen möchten, jedoch müssen Sie festlegen `DebuggableAttribute` durch Hinzufügen der folgenden Zeile in Ihrer app *AssemblyInfo.cpp* Datei:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -96,11 +96,11 @@ Um Just-In-Time-Debuggen, anstelle der standardmäßigen Windows-Formular für d
    Weitere Informationen finden Sie unter <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="BKMK_Using_JIT"></a>Verwenden von Just-in-Time-Debuggen
- In diesem Beispiel führt Sie durch Just-In-Time-Debuggen, wenn eine app, einen Fehler verursacht.
+In diesem Beispiel führt Sie durch Just-In-Time-Debuggen, wenn eine app, einen Fehler verursacht.
 
- - Sie benötigen Visual Studio installiert, um die folgenden Schritte ausführen zu können. Wenn Sie Visual Studio nicht haben, können Sie die kostenlose Herunterladen [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- Sie benötigen Visual Studio installiert, um die folgenden Schritte ausführen zu können. Wenn Sie Visual Studio nicht haben, können Sie die kostenlose Herunterladen [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
- - Stellen Sie sicher, dass Just-In-Time-Debuggen ist [aktiviert](#BKMK_Enabling) in **Tools** > **Optionen** > **Debuggen**  >  **Just-In-Time**.
+- Stellen Sie sicher, dass Just-In-Time-Debuggen ist [aktiviert](#BKMK_Enabling) in **Tools** > **Optionen** > **Debuggen**  >  **Just-In-Time**.
 
 In diesem Beispiel erstellen Sie eine C# Konsolen-app in Visual Studio, das löst eine ["NullReferenceException"](/dotnet/api/system.nullreferenceexception).
 
@@ -157,7 +157,7 @@ Wenn Just-in-Time-Debuggen nicht gestartet, wenn eine app abstürzt, auch wenn e
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
-  - (Für 64-Bit-Computer): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows-Fehlerberichterstattung**
+  - (Für 64-Bit-Computer): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   Weitere Informationen finden Sie unter [. WER-Einstellungen](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 

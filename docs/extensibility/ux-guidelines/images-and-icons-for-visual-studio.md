@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087793"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Image-Verwendung in Visual Studio
+## <a name="BKMK_ImageUseInVisualStudio"></a> Image-Verwendung in Visual Studio
  Berücksichtigen Sie vor dem Erstellen von Grafiken, Erstellung Verwendung von mehr als 1.000 Bildern in der [Visual Studio-Bildbibliothek](http://www.microsoft.com/en-my/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Typen von Bildern
 
--   **Symbole**. Kleine Bilder, die in Befehlen, Hierarchien, Vorlagen und So weiter angezeigt werden. Die Standardgröße-Symbol in Visual Studio verwendet, ist eine 16 x 16-PNG-Datei. Symbole, die der Image-Dienst automatisch erzeugten generieren, das XAML-Format für die HDPI-Unterstützung.
+- **Symbole**. Kleine Bilder, die in Befehlen, Hierarchien, Vorlagen und So weiter angezeigt werden. Die Standardgröße-Symbol in Visual Studio verwendet, ist eine 16 x 16-PNG-Datei. Symbole, die der Image-Dienst automatisch erzeugten generieren, das XAML-Format für die HDPI-Unterstützung.
 
      **HINWEIS:** Während der Images im Menüsystem verwendet werden, sollten Sie nicht, ein Symbol für jeden Befehl erstellen. Wenden Sie sich an [Menüs und Befehle für Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) um festzustellen, ob der Befehl auf ein Symbol erhalten soll.
 
--   **Miniaturansichten.** Bilder, die in den Vorschaubereich des ein Dialogfeld an, wie das Dialogfeld "Neues Projekt" verwendet werden.
+- **Miniaturansichten.** Bilder, die in den Vorschaubereich des ein Dialogfeld an, wie das Dialogfeld "Neues Projekt" verwendet werden.
 
--   **Dialogfeld-Images.** Bilder, die in Dialogfeldern oder Assistenten, die als beschreibender Grafiken oder Nachricht Indikatoren angezeigt werden. Verwenden Sie nur selten und nur bei Bedarf ein schwieriges Konzept veranschaulichen oder erhalten die Aufmerksamkeit des Benutzers (Warnung).
+- **Dialogfeld-Images.** Bilder, die in Dialogfeldern oder Assistenten, die als beschreibender Grafiken oder Nachricht Indikatoren angezeigt werden. Verwenden Sie nur selten und nur bei Bedarf ein schwieriges Konzept veranschaulichen oder erhalten die Aufmerksamkeit des Benutzers (Warnung).
 
--   **Animierte Bilder.** Statusanzeigen, Statusleisten und Dialogfelder des Vorgangs verwendet.
+- **Animierte Bilder.** Statusanzeigen, Statusleisten und Dialogfelder des Vorgangs verwendet.
 
--   **Cursor.** Wird verwendet, um anzugeben, ob ein Vorgang zulässig ist, mit der Maus, in dem ein Objekt gelöscht werden kann und so weiter.
+- **Cursor.** Wird verwendet, um anzugeben, ob ein Vorgang zulässig ist, mit der Maus, in dem ein Objekt gelöscht werden kann und so weiter.
 
-##  <a name="BKMK_IconDesign"></a> Symbol entwerfen
+## <a name="BKMK_IconDesign"></a> Symbol entwerfen
 
 ### <a name="overview"></a>Übersicht
  Visual Studio verwendet moderne Symbole bereinigen Geometrie und eine 50/50 Balance zwischen positiv/negativ (hellen/dunklen), und direktere, verständliche Metaphern verwenden. Symbol für wichtige Design Punkte stehen im Mittelpunkt Klarheit, Vereinfachung und den Kontextinformationen.
@@ -210,19 +210,19 @@ ms.locfileid: "56683141"
 
 #### <a name="file-types"></a>Dateitypen
 
--   **32-Bit-PNG:** das bevorzugte Format für Symbole. Eine verlustfreie Komprimierung Datei Datenformat, das ein einzelnes Rasterbild (Pixel) speichern kann. 32-Bit-PNG-Dateien unterstützen Alphakanaltransparenz Gammakorrektur und Zeilensprung verwenden.
+- **32-Bit-PNG:** das bevorzugte Format für Symbole. Eine verlustfreie Komprimierung Datei Datenformat, das ein einzelnes Rasterbild (Pixel) speichern kann. 32-Bit-PNG-Dateien unterstützen Alphakanaltransparenz Gammakorrektur und Zeilensprung verwenden.
 
--   **32-Bit-BMP:** für nicht-WPF-Steuerelemente. Auch als XP oder hoher Farbtiefe ist 32-Bit-BMP eine RGB/ein Abbildformat, ein True-Color-Image mit einer Alphakanaltransparenz. Der alpha-Kanal ist eine Ebene der Transparenz festgelegt, die in Adobe Photoshop überein, die innerhalb der Bitmap als eine zusätzliche (4) klicken Sie dann gespeichert wird Farbkanal. Erhält ein schwarzer Hintergrund wird während der Produktion von Vorlagen für alle 32-Bit-BMP-Dateien zu einer schnellen visuellen Hinweis auf die Farbtiefe hinzugefügt. Diese schwarze Hintergrund darstellt den Bereich, das Sie in der Benutzeroberfläche maskiert werden.
+- **32-Bit-BMP:** für nicht-WPF-Steuerelemente. Auch als XP oder hoher Farbtiefe ist 32-Bit-BMP eine RGB/ein Abbildformat, ein True-Color-Image mit einer Alphakanaltransparenz. Der alpha-Kanal ist eine Ebene der Transparenz festgelegt, die in Adobe Photoshop überein, die innerhalb der Bitmap als eine zusätzliche (4) klicken Sie dann gespeichert wird Farbkanal. Erhält ein schwarzer Hintergrund wird während der Produktion von Vorlagen für alle 32-Bit-BMP-Dateien zu einer schnellen visuellen Hinweis auf die Farbtiefe hinzugefügt. Diese schwarze Hintergrund darstellt den Bereich, das Sie in der Benutzeroberfläche maskiert werden.
 
--   **32-Bit-ICO-:** Projektsymbole "und" Element hinzufügen. Alle ICO-Dateien sind "true" 32-Bit-Farbe Alphakanaltransparenz (RGB/A). Da ICO-Dateien mehrere Größe und Farbe Tiefen speichern können, sind die Vista-Symbolen häufig eine ICO-Format mit 16 x 16, 32 x 32, 256 x 256 Bildgrößen und 48 x 48. Um ordnungsgemäß in Windows Explorer angezeigt werden soll, ICO-Dateien müssen gespeichert, die Tiefen der 24-Bit- und 8-Bit-Farbe für jede Größe auswählen werden.
+- **32-Bit-ICO-:** Projektsymbole "und" Element hinzufügen. Alle ICO-Dateien sind "true" 32-Bit-Farbe Alphakanaltransparenz (RGB/A). Da ICO-Dateien mehrere Größe und Farbe Tiefen speichern können, sind die Vista-Symbolen häufig eine ICO-Format mit 16 x 16, 32 x 32, 256 x 256 Bildgrößen und 48 x 48. Um ordnungsgemäß in Windows Explorer angezeigt werden soll, ICO-Dateien müssen gespeichert, die Tiefen der 24-Bit- und 8-Bit-Farbe für jede Größe auswählen werden.
 
--   **XAML:** Entwurfsoberflächen und Windows-Adorner. XAML-Symbole sind vektorbasiertes Bild-Dateien, die skalieren, drehen, Archivierung und Transparenz zu unterstützen. Sie sind zurzeit nicht in Visual Studio häufig, jedoch werden immer populärer aufgrund ihrer Flexibilität.
+- **XAML:** Entwurfsoberflächen und Windows-Adorner. XAML-Symbole sind vektorbasiertes Bild-Dateien, die skalieren, drehen, Archivierung und Transparenz zu unterstützen. Sie sind zurzeit nicht in Visual Studio häufig, jedoch werden immer populärer aufgrund ihrer Flexibilität.
 
--   **SVG**
+- **SVG**
 
--   **24-Bit-BMP:** für die Visual Studio-Befehlsleiste. Ein Bildformat der RGB-Farben "true" ist 24-Bit-BMP ein Symbol-Konvention, die eine Ebene der Transparenz erstellt mithilfe der Magenta (R = 255, G = 0, B = 255) als farbenschlüssel für eine Ebene Hit Transparenz. In einem 24-Bit-BMP werden alle Magenta Flächen mit die Hintergrundfarbe angezeigt.
+- **24-Bit-BMP:** für die Visual Studio-Befehlsleiste. Ein Bildformat der RGB-Farben "true" ist 24-Bit-BMP ein Symbol-Konvention, die eine Ebene der Transparenz erstellt mithilfe der Magenta (R = 255, G = 0, B = 255) als farbenschlüssel für eine Ebene Hit Transparenz. In einem 24-Bit-BMP werden alle Magenta Flächen mit die Hintergrundfarbe angezeigt.
 
--   **24-Bit-GIF:** für die Visual Studio-Befehlsleiste. Ein "true"-Color RGB-Bildformat, das Transparenz unterstützt. GIF-Dateien werden häufig in Assistenten Bildmaterial und GIF-Animationen verwendet.
+- **24-Bit-GIF:** für die Visual Studio-Befehlsleiste. Ein "true"-Color RGB-Bildformat, das Transparenz unterstützt. GIF-Dateien werden häufig in Assistenten Bildmaterial und GIF-Animationen verwendet.
 
 ### <a name="icon-construction"></a>Symbol für Erstellung
  Die kleinste Größe der Symbole in Visual Studio ist 16 x 16. Das größte ist gemeinsam verwenden 32 x 32. Bedenken Sie nicht auf den gesamten Rahmen von 16 x 16, 24 x 24 oder 32 x 32 auffüllen, wenn Sie ein Symbol zu entwerfen. Symbol für lesbar, einheitliche Konstruktion ist wesentlich für Benutzer. Entsprechen Sie die folgenden Punkte beim Erstellen von Symbolen.
@@ -244,18 +244,18 @@ ms.locfileid: "56683141"
 
  Weitere Informationen zur Verwendung von Farbe in Visual Studio-Symbolen finden Sie unter [mithilfe von Farbe in Bildern](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-##  <a name="BKMK_UsingColorInImages"></a> Mithilfe von Farbe in Bildern
+## <a name="BKMK_UsingColorInImages"></a> Mithilfe von Farbe in Bildern
 
 ### <a name="overview"></a>Übersicht
  Symbole in Visual Studio sind in erster Linie monochrome. Farbe ist reserviert, um spezifische Informationen zu vermitteln und niemals für die Dekoration. Farbe wird verwendet:
 
--   Um eine Aktion anzugeben.
+- Um eine Aktion anzugeben.
 
--   Benachrichtigung des Benutzers auf eine Benachrichtigung zum status
+- Benachrichtigung des Benutzers auf eine Benachrichtigung zum status
 
--   Festlegen von Sprache-Zuordnung
+- Festlegen von Sprache-Zuordnung
 
--   Um Elemente in IntelliSense zu unterscheiden.
+- Um Elemente in IntelliSense zu unterscheiden.
 
 ### <a name="accessibility"></a>Zugriff
  Visual Studio-Compliance-Richtlinien erfordern, dass alle Symbole in der Product-Durchlauf der Anforderungen zur Barrierefreiheit für Farbe und Kontrast überprüft. Farben in der visuellen Sprache Palette getestet wurden und die folgenden Voraussetzungen erfüllen.
@@ -268,7 +268,7 @@ ms.locfileid: "56683141"
 ### <a name="base-palette"></a>Basispalette
  Alle standard-Symbole enthalten drei grundlegende Farben. Symbole enthalten keine Farbverläufe oder Schlagschatten, die mit einem oder zwei Ausnahmen für 3D-Tool-Symbole.
 
-|Verwendung|name|Wert (Design "hell")|Farbmuster|Beispiel|
+|Verwendung|Name|Wert (Design "hell")|Farbmuster|Beispiel|
 |-----------|----------|---------------------------|------------|-------------|
 |Hintergrund/dunklen|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Beispiel für basispalette](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Vordergrund-/Licht|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -281,7 +281,7 @@ ms.locfileid: "56683141"
 #### <a name="action-modifiers"></a>Aktionsmodifizierer
  Die vier Farben unten zeigen die Aktionen, die erforderliche Aktionsmodifizierer:
 
-|Verwendung|name|Wert (alle Designs)|Farbmuster|
+|Verwendung|Name|Wert (alle Designs)|Farbmuster|
 |-----------|----------|--------------------------|------------|
 |Positiv|Grün für Visual Studio-Aktion|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativ|Rot für Visual Studio-Aktion|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -324,14 +324,14 @@ ms.locfileid: "56683141"
 
 #### <a name="folder"></a>Ordner
 
-|Verwendung|name|Wert (alle Designs)|Farbmuster|Beispiel|
+|Verwendung|Name|Wert (alle Designs)|Farbmuster|Beispiel|
 |-----------|----------|--------------------------|------------|-------------|
 |Ordner|Ordner|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Symbol "Ordner Farbe"](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio-Sprachen
  Jede der allgemeinen Sprachen oder Plattformen in Visual Studio verfügbaren verfügt über zugeordnete Farbe. Diese Farben werden verwendet, auf das Symbol "Basis" oder auf der Language-Modifizierer, die in der Ecke der zusammengesetzten Symbole angezeigt werden.
 
-|Verwendung|name|Wert (alle Designs)|Farbmuster|
+|Verwendung|Name|Wert (alle Designs)|Farbmuster|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML-WPF-Blau|0095D 7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP-Lila|9B4F96 / 155,79,150|![Muster 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -353,7 +353,7 @@ ms.locfileid: "56683141"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense-Symbole verwenden, eine exklusive Farbpalette. Diese Farben verwendet, um Benutzer schnell zwischen den verschiedenen Elementen in der Liste der IntelliSense-Popupfenster unterscheiden.
 
-|Verwendung|name|Wert (alle Designs)|Farbmuster|
+|Verwendung|Name|Wert (alle Designs)|Farbmuster|
 |-----------|----------|--------------------------|------------|
 |Event-Klasse|Visual Studio Aktion Orange|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Erweiterungsmethode "," Methode ","-Modul, Delegat|Visual Studio Aktion Lila|652D 90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -371,7 +371,7 @@ ms.locfileid: "56683141"
 ### <a name="notifications"></a>Benachrichtigungen
  Benachrichtigungen in Visual Studio werden verwendet, um Status anzugeben. Die Benachrichtigung Palette verwendet die folgenden vier Farben angezeigt werden, sowie Schwarz oder weiß Foreground-Optionen, so definieren Sie Benachrichtigungen mit den folgenden Statusebenen an.
 
-|Verwendung|name|Wert (alle Designs)|Farbmuster|
+|Verwendung|Name|Wert (alle Designs)|Farbmuster|
 |-----------|----------|--------------------------|------------|
 |Status: neutral|Benachrichtigung Blau (Visual Studio-Blau)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Status: positiv|Benachrichtigung Grün (VS Grün)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -389,7 +389,7 @@ ms.locfileid: "56683141"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Im Allgemeinen besteht aus Visual Studio Online-Funktionen in einem Browser gehostet. Die Farbe in unterschiedlichen Umgebungen variieren, aber das Format bleibt unverändert.
 
-|Gruppieren|Verwendung|name|Wert (alle Designs)|Farbmuster|
+|Gruppieren|Verwendung|Name|Wert (alle Designs)|Farbmuster|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Hintergrund|TFSO BG|656565/ 101, 101, 101|![Swatch 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|Umriss|TFSO OUT|FFFFFF / 255, 255, 255|![Muster FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|

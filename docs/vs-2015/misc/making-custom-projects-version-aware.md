@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096594"
 ---
 # <a name="making-custom-projects-version-aware"></a>Bewirken, dass benutzerdefinierte Projekte versionsfähig werden
 In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte dieses Typs in mehreren Versionen von Visual Studio geladen werden. Sie können aber auch verhindern, dass Projekte dieses Typs in einer früheren Version von Visual Studio geladen werden. Außerdem können Sie für dieses Projekt ermöglichen, sich selbst für eine neuere Version zu identifizieren für den Fall, dass das Projekt repariert, konvertiert oder als veraltet deklariert werden muss.  
@@ -24,17 +24,17 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
   
  Sie als der Autor eines Projektsystems implementieren `UpgradeProject_CheckOnly` (aus der `IVsProjectUpgradeViaFactory4` -Schnittstelle), um Benutzern Ihres Projektsystems eine Upgradeprüfung bereitzustellen. Wenn ein Benutzer ein Projekt öffnet, wird diese Methode aufgerufen, um festzustellen, ob ein Projekt repariert werden muss, bevor es geladen wird. Die möglichen Upgradeanforderungen werden in `VSPUVF_REPAIRFLAGS`aufgelistet, und sie enthalten folgende Möglichkeiten:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: Ist keine Reparatur erforderlich.  
+1. `SPUVF_PROJECT_NOREPAIR`: Ist keine Reparatur erforderlich.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Macht das Projekt mit einer früheren Version kompatibel ohne die Probleme, die möglicherweise in den vorherigen Versionen des Produkts aufgetreten.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: Macht das Projekt mit einer früheren Version kompatibel ohne die Probleme, die möglicherweise in den vorherigen Versionen des Produkts aufgetreten.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Macht das Projekt rückwärtskompatibel aber einige Risiken, das Sie festgestellt haben, können Probleme mit früheren Versionen des Produkts. Beispielsweise wird das Projekt nicht kompatibel sein, wenn es von verschiedenen SDK-Versionen abhängt.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Macht das Projekt rückwärtskompatibel aber einige Risiken, das Sie festgestellt haben, können Probleme mit früheren Versionen des Produkts. Beispielsweise wird das Projekt nicht kompatibel sein, wenn es von verschiedenen SDK-Versionen abhängt.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Macht das Projekt mit einer früheren Version nicht kompatibel.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Macht das Projekt mit einer früheren Version nicht kompatibel.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Gibt an, dass die aktuelle Version dieses Projekt nicht unterstützt.  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`: Gibt an, dass die aktuelle Version dieses Projekt nicht unterstützt.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: Gibt an, dass dieses Projekt nicht mehr unterstützt wird.  
+6. `VSPUVF_PROJECT_DEPRECATED`: Gibt an, dass dieses Projekt nicht mehr unterstützt wird.  
   
 > [!NOTE]
 >  Um Verwirrung zu vermeiden, sollten Sie Upgradeflags nicht kombinieren, wenn Sie diese festlegen. Beispielsweise sollten Sie keinen mehrdeutigen Upgradestatus wie etwas `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`erstellen.  
@@ -49,18 +49,18 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
   
  Es folgt ein Beispiel, in dem die kompatibilitätsbezogene Vorgehensweise zusammengefasst ist. Wurde ein Projekt in einer früheren Version erstellt, und stellt die aktuelle Version fest, dass ein Upgrade erforderlich ist, zeigt Visual Studio ein Dialogfeld an, in dem der Benutzer gebeten wird, die Berechtigung zum Vornehmen der Änderungen zu erteilen. Stimmt der Benutzer zu, wird das Projekt geändert und dann geladen. Wird die Projektmappe nun geschlossen und in der früheren Version wieder geöffnet, ist das auf die höhere Version aktualisierte Projekt nicht kompatibel und wird nicht geladen. Gab es für das Projekt nur eine erforderliche Reparatur (anstelle eines Upgrades), wird das reparierte Projekt weiterhin in beiden Versionen geöffnet.  
   
-##  <a name="BKMK_Incompat"></a> Kennzeichnen eines Projekt als nicht kompatibel  
+## <a name="BKMK_Incompat"></a> Kennzeichnen eines Projekt als nicht kompatibel  
  Sie können ein Projekt als nicht kompatibel mit früheren Versionen von Visual Studio kennzeichnen.  Nehmen Sie beispielsweise an, Sie erstellen ein Projekt, in dem eine .NET Framework 4.5-Funktion verwendet wird. Da dieses Projekt nicht in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]erstellt werden kann, können Sie es als nicht kompatibel kennzeichnen, um zu verhindern, dass diese Version versucht, das Projekt zu laden.  
   
  Die Komponente, aus der die nicht kompatible Funktion hinzufügt wurde, ist dafür zuständig, das Projekt als nicht kompatibel zu kennzeichnen. Die Komponente muss Zugriff auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>-Schnittstelle haben, die den betroffenen Projekten entspricht.  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>So kennzeichnen Sie ein Projekt als nicht kompatibel  
   
-1.  Rufen Sie in der Komponente eine `IVsAppCompat` -Schnittstelle aus dem globalen Dienst „SVsSolution“ ab.  
+1. Rufen Sie in der Komponente eine `IVsAppCompat` -Schnittstelle aus dem globalen Dienst „SVsSolution“ ab.  
   
      Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  Rufen Sie in der Komponente die `IVsAppCompat.AskForUserConsentToBreakAssetCompat`-Methode auf, und übergeben Sie dieser ein Array von `IVsHierarchy` -Schnittstellen, die die betroffenen Projekte darstellen.  
+2. Rufen Sie in der Komponente die `IVsAppCompat.AskForUserConsentToBreakAssetCompat`-Methode auf, und übergeben Sie dieser ein Array von `IVsHierarchy` -Schnittstellen, die die betroffenen Projekte darstellen.  
   
      Diese Methode hat die folgende Signatur:  
   
@@ -74,9 +74,9 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
     > [!WARNING]
     >  In den meisten Fällen enthält das `IVsHierarchy` -Array nur ein Element.  
   
-3.  Wenn `AskForUserConsentToBreakAssetCompat` den Wert `S_OK`zurückgibt, nimmt die Komponente die Änderungen vor, die die Kompatibilität beseitigen, oder die Komponente akzeptiert diese Änderungen.  
+3. Wenn `AskForUserConsentToBreakAssetCompat` den Wert `S_OK`zurückgibt, nimmt die Komponente die Änderungen vor, die die Kompatibilität beseitigen, oder die Komponente akzeptiert diese Änderungen.  
   
-4.  Rufen Sie in Ihrer Komponente die `IVsAppCompat.BreakAssetCompatibility` -Methode für jedes Projekt, das Sie als nicht kompatibel kennzeichnen möchten. Die Komponente kann den Wert des Parameters `lpszMinimumVersion` auf eine bestimmte mindestens erforderliche Version festlegen, sodass Visual Studio nicht gezwungen ist, die aktuelle Versionszeichenfolge in der Registrierung zu suchen. Diese Vorgehensweise verringert das Risiko, dass die Komponente zukünftig anhand des Werts, der zu diesem Zeitpunkt in der Registrierung steht, versehentlich einen höheren Wert festlegt. Würde dieser höhere Wert festgelegt, könnte Visual Studio das Projekt nicht öffnen.  
+4. Rufen Sie in Ihrer Komponente die `IVsAppCompat.BreakAssetCompatibility` -Methode für jedes Projekt, das Sie als nicht kompatibel kennzeichnen möchten. Die Komponente kann den Wert des Parameters `lpszMinimumVersion` auf eine bestimmte mindestens erforderliche Version festlegen, sodass Visual Studio nicht gezwungen ist, die aktuelle Versionszeichenfolge in der Registrierung zu suchen. Diese Vorgehensweise verringert das Risiko, dass die Komponente zukünftig anhand des Werts, der zu diesem Zeitpunkt in der Registrierung steht, versehentlich einen höheren Wert festlegt. Würde dieser höhere Wert festgelegt, könnte Visual Studio das Projekt nicht öffnen.  
   
      Diese Methode hat die folgende Signatur:  
   
@@ -133,21 +133,21 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Wenn beispielsweise die Methoden `UpgradeProject_CheckOnly` und `CreateProject` , die für ein [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] mit SP1-Projektsystem geschrieben sind, eine Projektdatei auswerten und feststellen, dass die `<MinimumVisualStudioVersion>` -Buildeigenschaft den Wert „11.0“ hat, wird das Projekt von Visual Studio 2010 mit SP1 nicht geladen. Darüber hinaus würde der **Projektmappen-Navigator** angeben, dass das Projekt „nicht kompatibel“ ist, und würde es nicht laden.  
   
-##  <a name="BKMK_UpgradeLogger"></a> Die Upgrade-Protokollierung  
+## <a name="BKMK_UpgradeLogger"></a> Die Upgrade-Protokollierung  
  Ein Aufruf von `IVsProjectUpgradeViaFactory::UpgradeProject` enthält eine `IVsUpgradeLogger` -Protokollierung. Diese sollte von Projektsystemen und -konfigurationen verwendet werden, um ausführliche Upgradeablaufverfolgung zur Problembehandlung bereitzustellen. Wird eine Warnung oder ein Fehler protokolliert, zeigt Visual Studio den Upgradebericht an.  
   
  Für das Schreiben in die Upgrade-Protokollierung sollten Sie die folgenden Richtlinien beachten:  
   
--   Visual Studio ruft „Flush“ auf, nachdem das Upgrade für alle Projekte durchgeführt wurde. Rufen Sie „Flush“ nicht in Ihrem Projektsystem auf.  
+- Visual Studio ruft „Flush“ auf, nachdem das Upgrade für alle Projekte durchgeführt wurde. Rufen Sie „Flush“ nicht in Ihrem Projektsystem auf.  
   
--   Die LogMessage-Funktion hat die folgenden Fehlerstufen (ErrorLevels):  
+- Die LogMessage-Funktion hat die folgenden Fehlerstufen (ErrorLevels):  
   
-    -   0 steht für irgendeine Information, die Sie verfolgen möchten.  
+    - 0 steht für irgendeine Information, die Sie verfolgen möchten.  
   
-    -   1 steht für eine Warnung.  
+    - 1 steht für eine Warnung.  
   
-    -   2 steht für einen Fehler.  
+    - 2 steht für einen Fehler.  
   
-    -   3 steht für das Berichts-Formatierungsprogramm. Wenn für Ihr Projekt das Upgrade durchgeführt wurde, protokollieren Sie das Wort „Converted“ einmal, und lokalisieren Sie dieses Wort nicht.  
+    - 3 steht für das Berichts-Formatierungsprogramm. Wenn für Ihr Projekt das Upgrade durchgeführt wurde, protokollieren Sie das Wort „Converted“ einmal, und lokalisieren Sie dieses Wort nicht.  
   
--   Erfordert ein Projekt weder eine Reparatur noch ein Upgrade, generiert Visual Studio die Protokolldatei nur, wenn das Projektsystem während der Methode „UpgradeProject_CheckOnly“ oder „UpgradeProjectFlavor_CheckOnly“ eine Warnung oder einen Fehler protokolliert hat.
+- Erfordert ein Projekt weder eine Reparatur noch ein Upgrade, generiert Visual Studio die Protokolldatei nur, wenn das Projektsystem während der Methode „UpgradeProject_CheckOnly“ oder „UpgradeProjectFlavor_CheckOnly“ eine Warnung oder einen Fehler protokolliert hat.

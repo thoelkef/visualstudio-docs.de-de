@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095957"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studi
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>So migrieren Sie Ihr Unity-Projekt von UnityVS 1.8 zu Visual Studio-Tools für Unity 1.9  
   
-1.  Löschen Sie die alten Projektmappen- und Projektdateien aus Ihrem Unity-Projekt. Suchen Sie im Stammverzeichnis Ihres Unity-Projekts die SLN- und PROJ-Dateien von Visual Studio, und löschen Sie alle.  
+1. Löschen Sie die alten Projektmappen- und Projektdateien aus Ihrem Unity-Projekt. Suchen Sie im Stammverzeichnis Ihres Unity-Projekts die SLN- und PROJ-Dateien von Visual Studio, und löschen Sie alle.  
   
-2.  Importieren Sie das Visual Studio-Tools für Unity-Paket in Ihr Unity-Projekt. Informationen zum Importieren des VSTU-Pakets finden Sie unter "Konfigurieren von Visual Studio-Tools für Unity" auf der Seite [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
+2. Importieren Sie das Visual Studio-Tools für Unity-Paket in Ihr Unity-Projekt. Informationen zum Importieren des VSTU-Pakets finden Sie unter "Konfigurieren von Visual Studio-Tools für Unity" auf der Seite [Erste Schritte](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
   
-3.  Generieren Sie neue Projektmappen- und Projektdateien. Wenn Sie sie jetzt generieren möchten, klicken Sie im Unity-Editor im Hauptmenü auf **Visual Studio Tools**, **Generate Project Files**. Andernfalls können Sie diesen Schritt nach Wunsch überspringen. Visual Studio-Tools für Unity generiert die neuen Dateien automatisch, wenn Sie auf **Visual Studio Tools**, **Open in Visual Studio**klicken.  
+3. Generieren Sie neue Projektmappen- und Projektdateien. Wenn Sie sie jetzt generieren möchten, klicken Sie im Unity-Editor im Hauptmenü auf **Visual Studio Tools**, **Generate Project Files**. Andernfalls können Sie diesen Schritt nach Wunsch überspringen. Visual Studio-Tools für Unity generiert die neuen Dateien automatisch, wenn Sie auf **Visual Studio Tools**, **Open in Visual Studio**klicken.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio lädt die Projektmappe nicht, die Visual Studio-Tools für Unity erstellt hat.  
  Weitere Informationen finden Sie unter [der Antwort auf diese Frage auf Stackoverflow](http://stackoverflow.com/a/24035907/36702).  
@@ -44,11 +44,11 @@ In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studi
 ## <a name="known-issues"></a>Bekannte Probleme  
  Es gibt bekannte Probleme in Visual Studio-Tools für Unity, deren Ursache die Interaktion des Debuggers mit der älteren Version von Unity des C#-Compilers ist. Wir arbeiten daran, diese Schwierigkeiten zu beheben, aber in der Zwischenzeit können die folgenden Probleme auftreten.  
   
--   Beim Debuggen stürzt Unity manchmal ab.  
+- Beim Debuggen stürzt Unity manchmal ab.  
   
--   Beim Debuggen friert Unity manchmal ein.  
+- Beim Debuggen friert Unity manchmal ein.  
   
--   Bei Einzel- und Prozedurschritten für Methoden kommt es mitunter zu einem Fehlverhalten, insbesondere bei Iteratoren oder innerhalb von Switch-Anweisungen.  
+- Bei Einzel- und Prozedurschritten für Methoden kommt es mitunter zu einem Fehlverhalten, insbesondere bei Iteratoren oder innerhalb von Switch-Anweisungen.  
   
 ## <a name="reporting-errors"></a>Erstellen von Fehlerberichten  
  Helfen Sie uns, die Qualität von Visual Studio-Tools für Unity zu verbessern, indem Sie Fehlerberichte senden, sollte das Programm abstürzen, einfrieren oder ein anderer Fehler auftreten. Dies hilft uns beim Untersuchen und Beheben von Problemen in Visual Studio-Tools für Unity. Vielen Dank!  

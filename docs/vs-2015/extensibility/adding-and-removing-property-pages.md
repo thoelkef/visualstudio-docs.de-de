@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baefb34bf098b9d5b712267a88303b25a2d5687d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102795"
 ---
 # <a name="adding-and-removing-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>So entfernen Sie eine Eigenschaftenseite im Projekt-Designer  
   
-1.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.  
+1. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     }  
     ```  
   
-2.  Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.  
+2. Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -111,7 +111,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Hinzufügen eine Eigenschaftenseite im Projekt-Designer  
   
-1.  Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.  
+1. Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     }  
     ```  
   
-2.  Registrieren Sie Ihre neue Eigenschaftenseite an.  
+2. Registrieren Sie Ihre neue Eigenschaftenseite an.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.  
+3. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  

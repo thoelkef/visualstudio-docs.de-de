@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094345"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Vorgehensweise: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz
   Ein Ereignisempfänger für Liste Instanz reagiert auf Ereignisse, die in einer beliebigen Instanz von einer Listendefinition auftreten. Auch wenn die ereignisvorlage für den Empfänger nicht die Zielgruppenadressierung von eine bestimmte Listeninstanz aktiviert wird, können Sie einen Ereignisempfänger ändern, der auf einer Listendefinition Reaktion auf Ereignisse in eine bestimmte Listeninstanz begrenzt ist.
@@ -30,24 +30,24 @@ ms.locfileid: "56596528"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>So ändern Sie einen Ereignisempfänger zum Reagieren auf eine bestimmte Listeninstanz
 
-1.  Öffnen Sie in einem Browser die SharePoint-Website.
+1. Öffnen Sie in einem Browser die SharePoint-Website.
 
-2.  Klicken Sie im Navigationsbereich **listet** Link.
+2. Klicken Sie im Navigationsbereich **listet** Link.
 
-3.  In der **Alle Websiteinhalte einblenden** Seite die **erstellen** Link.
+3. In der **Alle Websiteinhalte einblenden** Seite die **erstellen** Link.
 
-4.  In der **erstellen** Dialogfeld auf die **Ankündigungen** geben, benennen Sie die Ankündigung **TestAnnouncements**, und wählen Sie dann die **erstellen**Schaltfläche.
+4. In der **erstellen** Dialogfeld auf die **Ankündigungen** geben, benennen Sie die Ankündigung **TestAnnouncements**, und wählen Sie dann die **erstellen**Schaltfläche.
 
-5.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ein Ereignisempfängerprojekt erstellen.
+5. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ein Ereignisempfängerprojekt erstellen.
 
-6.  In der **welche Art von-Ereignisempfänger verwenden sollen?** wählen **Listenelementereignisse**.
+6. In der **welche Art von-Ereignisempfänger verwenden sollen?** wählen **Listenelementereignisse**.
 
     > [!NOTE]
     >  Sie können auch eine andere Art von Ereignisempfänger, die für die Listendefinition einer, z. B. Bereiche auswählen **Listen-e-Mail-Ereignisse** oder **Listenworkflowereignisse**.
 
-7.  In der **welche Artikel befinden sollte, die Ereignisquelle?** wählen **Ankündigungen**.
+7. In der **welche Artikel befinden sollte, die Ereignisquelle?** wählen **Ankündigungen**.
 
-8.  In der **die folgenden Ereignisse behandeln** Liste der **ein Element hinzugefügt wird** aus, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+8. In der **die folgenden Ereignisse behandeln** Liste der **ein Element hinzugefügt wird** aus, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
 9. In **Projektmappen-Explorer**, öffnen Sie unter EventReceiver1, *"Elements.xml"*.
 

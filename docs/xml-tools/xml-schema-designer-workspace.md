@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ce85980be2e55e9d3886f39ec855303b7b458cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107345"
 ---
-# <a name="xml-schema-designer-workspace"></a>XML-Schema-Designer-Arbeitsbereich
+# <a name="xml-schema-designer-workspace"></a>Arbeitsbereich des XML-Schema-Designers
 
 Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie die XML-Schemas untersuchen können. Zusätzlich zu den [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), wodurch Sie durchsuchen und Navigieren durch die Struktur von XML-Schema und Suchvorgänge durchführen, der XSD-Designer bietet drei Ansichten, mit denen Sie des XSD-Schemas noch ausführlicher untersuchen können. Die Ausgangsansicht ist der Ausgangspunkt für den XSD-Designer. In dieser Ansicht können Sie zu anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets sehen. Die Diagrammansicht bietet eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten. Die Inhaltsmodellansicht bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.
 
@@ -25,22 +25,22 @@ Bevor Sie bestimmte Knoten untersuchen können, müssen Sie sie zuerst dem Arbei
 
 Zum Hinzufügen von Knoten zum Arbeitsbereich stehen die folgenden Methoden zur Auswahl:
 
--   Im Abschnitt "Details zum Schemaset" der [Ausgangsansicht](../xml-tools/start-view.md), klicken Sie auf die **hinzufügen** neben dem globalen Knotentyp.
+- Im Abschnitt "Details zum Schemaset" der [Ausgangsansicht](../xml-tools/start-view.md), klicken Sie auf die **hinzufügen** neben dem globalen Knotentyp.
 
--   Drag & drop, globale Knoten, Dateiknoten und Namespaceknoten aus der **XML-Schema-Explorer** auf eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt "Knoten ziehen und Ablegen von" in [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).
+- Drag & drop, globale Knoten, Dateiknoten und Namespaceknoten aus der **XML-Schema-Explorer** auf eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt "Knoten ziehen und Ablegen von" in [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).
 
--   Verwenden Sie das Kontextmenü (Rechtsklick), in der **XML-Schema-Explorer**. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).
+- Verwenden Sie das Kontextmenü (Rechtsklick), in der **XML-Schema-Explorer**. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).
 
--   Ausführen einer Suche im XSD-Explorer, und klicken Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).
+- Ausführen einer Suche im XSD-Explorer, und klicken Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).
 
 ## <a name="switch-views"></a>Ansicht umschalten
 
 Zum Wechseln zwischen den Ansichten stehen folgende Methoden zur Auswahl:
 
--   XSD-Designer-Symbolleiste
+- XSD-Designer-Symbolleiste
 
--   (Rechtsklick) Kontextmenüs der Inhaltsmodellansicht und Diagrammansicht.
+- (Rechtsklick) Kontextmenüs der Inhaltsmodellansicht und Diagrammansicht.
 
--   Wasserzeichen in der Ausgangsansicht oder der leeren Inhaltsmodell- oder Diagrammansicht
+- Wasserzeichen in der Ausgangsansicht oder der leeren Inhaltsmodell- oder Diagrammansicht
 
--   Hotkeys: **STRG**+**1** für die Ausgangsansicht **STRG**+**2** für die Diagrammansicht und **STRG** + **3** für die Inhaltsmodellansicht.
+- Hotkeys: **STRG**+**1** für die Ausgangsansicht **STRG**+**2** für die Diagrammansicht und **STRG** + **3** für die Inhaltsmodellansicht.

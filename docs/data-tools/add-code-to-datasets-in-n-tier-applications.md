@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111687"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
 Sie können die Funktionen eines Datasets erweitern, indem Sie die Datei eine partielle Klasse für das Dataset zu erstellen und Code hinzufügen (anstelle von Code zum Hinzufügen der *DatasetName*. Dataset.Designer-Datei). Partielle Klassen ermöglichen es sich um Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [teilweise](/dotnet/visual-basic/language-reference/modifiers/partial) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standard
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu Datasets in n-schichtige Anwendungen
 
-1.  Suchen Sie das Projekt mit der *XSD* Datei.
+1. Suchen Sie das Projekt mit der *XSD* Datei.
 
-2.  Wählen Sie die **XSD** Datei, um das Dataset öffnen.
+2. Wählen Sie die **XSD** Datei, um das Dataset öffnen.
 
-3.  Mit der rechten Maustaste in der Datentabelle, Sie fügen Sie Code (den Tabellennamen in der Titelleiste), und wählen Sie dann möchten **Ansichtscode**.
+3. Mit der rechten Maustaste in der Datentabelle, Sie fügen Sie Code (den Tabellennamen in der Titelleiste), und wählen Sie dann möchten **Ansichtscode**.
 
      Eine partielle Klasse wird erstellt und im Code-Editor geöffnet.
 
-4.  Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.
+4. Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.
 
      Das folgende Beispiel zeigt, wo die CustomersDataTable NorthwindDataSet Code hinzufügen:
 
@@ -53,6 +53,7 @@ Nachdem Sie das Dataset und TableAdapter-Code trennen, ist das Ergebnis standard
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

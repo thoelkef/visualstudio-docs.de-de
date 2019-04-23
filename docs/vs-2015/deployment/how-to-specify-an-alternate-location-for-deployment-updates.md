@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087937"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Sie installieren können Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Angeben eines alternativen Speicherorts für Updates mit MageUI.exe (Windows Forms-basierten-Hilfsprogramm)  
   
-1.  Öffnen Sie einen .NET Framework-Eingabeaufforderung, und geben:  
+1. Öffnen Sie einen .NET Framework-Eingabeaufforderung, und geben:  
   
      **mageui.exe**  
   
-2.  Auf der **Datei** Menü wählen **öffnen** zu Ihrer Anwendung das Bereitstellungsmanifest öffnen.  
+2. Auf der **Datei** Menü wählen **öffnen** zu Ihrer Anwendung das Bereitstellungsmanifest öffnen.  
   
-3.  Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.  
+3. Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.  
   
-4.  In das Textfeld mit dem Namen **starten Speicherort**, geben Sie die URL in das Verzeichnis, das das Bereitstellungsmanifest für Anwendungsupdates enthält.  
+4. In das Textfeld mit dem Namen **starten Speicherort**, geben Sie die URL in das Verzeichnis, das das Bereitstellungsmanifest für Anwendungsupdates enthält.  
   
-5.  Speichern Sie das Bereitstellungsmanifest.  
+5. Speichern Sie das Bereitstellungsmanifest.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Angeben eines alternativen Speicherorts für Updates mit Mage.exe  
   
-1.  Öffnen Sie eine .NET Framework-Eingabeaufforderung.  
+1. Öffnen Sie eine .NET Framework-Eingabeaufforderung.  
   
-2.  Legen Sie den Speicherort für die Aktualisierung mithilfe des folgenden Befehls. In diesem Beispiel **HelloWorld.exe.application** ist der Pfad zu Ihrem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifest, das die Erweiterung .application immer aufweist, und **http://adatum.com/Update/Path** ist die URL, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsupdates überprüft.  
+2. Legen Sie den Speicherort für die Aktualisierung mithilfe des folgenden Befehls. In diesem Beispiel **HelloWorld.exe.application** ist der Pfad zu Ihrem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsmanifest, das die Erweiterung .application immer aufweist, und **http://adatum.com/Update/Path** ist die URL, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungsupdates überprüft.  
   
      **Mage-HelloWorld.exe.application - ProviderUrl aktualisieren http://adatum.com/Update/Path**  
   
-3.  Speichern Sie die Datei.  
+3. Speichern Sie die Datei.  
   
     > [!NOTE]
     >  Nun müssen Sie die Datei mit Mage.exe erneut signieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Manually Deploying a ClickOnce Application (Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung)](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100446"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Ausführen der Test-App zur JavaScript-Speicheranalyse  
   
-1.  Wählen Sie in Visual Studio **Datei**, **Neu**, **Projekt**aus.  
+1. Wählen Sie in Visual Studio **Datei**, **Neu**, **Projekt**aus.  
   
-2.  Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 8**und dann entweder **Universell** oder **Windows Phone-Apps**aus.  
+2. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 8**und dann entweder **Universell** oder **Windows Phone-Apps**aus.  
   
     > [!IMPORTANT]
     >  Die in diesem Thema gezeigten Ergebnisse der Speicherauslastung werden für eine Windows 8-App getestet.  
   
-3.  Wählen Sie dann im mittleren Bereich die Projektvorlage **Leere App** aus.  
+3. Wählen Sie dann im mittleren Bereich die Projektvorlage **Leere App** aus.  
   
-4.  Geben Sie im Feld **Name** einen Namen wie `JS_Mem_Tester`an, und wählen Sie dann **OK**aus.  
+4. Geben Sie im Feld **Name** einen Namen wie `JS_Mem_Tester`an, und wählen Sie dann **OK**aus.  
   
-5.  Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
+5. Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     > [!IMPORTANT]
     >  Wenn Sie eine Vorlage für universelle Windows 8.1-Apps verwenden, müssen Sie HTML- und CSS-Code sowohl in den ".Windows"- als auch in den ".WindowsPhone"-Projekten aktualisieren.  
   
-6.  Öffnen Sie default.css, und fügen Sie den folgenden CSS-Code hinzu:  
+6. Öffnen Sie default.css, und fügen Sie den folgenden CSS-Code hinzu:  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     }  
     ```  
   
-7.  Öffnen Sie default.js, und ersetzen Sie den gesamten Code mit dem folgenden Code:  
+7. Öffnen Sie default.js, und ersetzen Sie den gesamten Code mit dem folgenden Code:  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     })();  
     ```  
   
-8.  Drücken Sie die F5-TASTE, um das Debuggen zu starten. Überprüfen Sie, dass die Schaltfläche **Speicherverlust** auf der Seite angezeigt wird.  
+8. Drücken Sie die F5-TASTE, um das Debuggen zu starten. Überprüfen Sie, dass die Schaltfläche **Speicherverlust** auf der Seite angezeigt wird.  
   
 9. Wechseln Sie zu Visual Studio zurück (ALT+TAB), und drücken Sie die Tastenkombination UMSCHALT+F5, um das Debugging zu beenden.  
   
@@ -224,7 +224,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     > [!TIP]
     >  Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global` -Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen**aus.  
   
-##  <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
+## <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
   
 1. Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()`-Funktion auf.  
   

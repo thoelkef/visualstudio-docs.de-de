@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112174"
 ---
 # <a name="xml-editor"></a>XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-V
 ## <a name="express-editions"></a>Express Editions  
  Die folgenden XML-Editor-Funktionen sind in Visual Studio Express-Editionen nicht verfügbar:  
   
--   Erstellen eines XML-Schemas aus einem XML-Instanzdokument.  
+- Erstellen eines XML-Schemas aus einem XML-Instanzdokument.  
   
--   Anzeigen der XSLT-Ausgabe im XML-Editor.  
+- Anzeigen der XSLT-Ausgabe im XML-Editor.  
   
--   Intelligente Validierung beim Bearbeiten von XSLT-Stylesheets.  
+- Intelligente Validierung beim Bearbeiten von XSLT-Stylesheets.  
   
--   XML-Schema-Explorer  
+- XML-Schema-Explorer  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Validierung von XML-Dokumenten](../xml-tools/xml-document-validation.md)  

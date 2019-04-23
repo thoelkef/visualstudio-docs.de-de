@@ -9,34 +9,34 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098962"
 ---
-# <a name="how-to-export-a-shader"></a>Gewusst wie: Exportieren eines Shaders
+# <a name="how-to-export-a-shader"></a>Vorgehensweise: Exportieren eines Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Shader-Designer zum Exportieren eines Shaders der Directed Graph Shader Language (DGSL) verwendet wird, damit Sie ihn in Ihrer Anwendung verwenden können.  
   
  In diesem Dokument wird die folgende Aktivität veranschaulicht:  
   
--   Exportieren eines Shaders  
+- Exportieren eines Shaders  
   
 ## <a name="exporting-a-shader"></a>Exportieren eines Shaders  
  Nachdem Sie einen Shader mithilfe des Shader-Designers erstellt haben, und bevor Sie ihn in Ihrer Anwendung verwenden können, müssen Sie den Shader in einem Format exportieren, das Ihre Grafik-API versteht. Sie können einen Shader auf unterschiedliche Weisen für andere Anforderungen exportieren.  
   
 #### <a name="to-export-a-shader"></a>So exportieren Sie einen Shader  
   
-1.  Öffnen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Datei **Visual Shader-Diagramm (.dgsl)**  
+1. Öffnen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Datei **Visual Shader-Diagramm (.dgsl)**  
   
-     Wenn Sie keine Datei **Visual Shader Graph (.dgsl)** zum Öffnen haben, erstellen Sie eine, wie es unter [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) beschrieben wird.  
+     Wenn keine **DGSL**-Datei (Visual Shader Graph) zum Öffnen vorhanden ist, erstellen Sie eine. Gehen Sie hierzu vor, wie unter [Vorgehensweise: Erstellen ein standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md).  
   
-2.  Klicken Sie auf der Symbolleiste **Shader-Designer** auf **Erweitert** > **Exportieren** > **Exportieren als**. Das Dialogfeld **Shader exportieren** wird angezeigt.  
+2. Klicken Sie auf der Symbolleiste **Shader-Designer** auf **Erweitert** > **Exportieren** > **Exportieren als**. Das Dialogfeld **Shader exportieren** wird angezeigt.  
   
-3.  Wählen Sie in der Dropdownliste **Dateityp** das Format aus, in das Sie exportieren möchten.  
+3. Wählen Sie in der Dropdownliste **Dateityp** das Format aus, in das Sie exportieren möchten.  
   
      Sie können die folgende Formate auswählen:  
   
@@ -49,7 +49,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer zum Exportieren eines S
      **C++ Header (\*.h)**  
      Exportiert den Shader als C-Style-Header, der ein Byte-Array definiert, das HLSL-Bytecode enthält. Diese Option kann das Debuggen und Patchen des Codes aufgrund der Probleme beim Endnutzer zeitaufwändiger gestalten, da die App erneut kompiliert werden muss, um den Fix zu testen. Da diese Option es jedoch schwierig, aber nicht unmöglich macht, den Shader nach seiner Bereitstellung in einer App zu verändern, bereitet es für einen Benutzer, der den Shader auf unerwünschte Weise verändern möchte, die meisten Probleme.  
   
-4.  Geben Sie im Kombinationsfeld **Dateiname** einen Namen für den exportierten Shader an, und klicken Sie auf die Schaltfläche **Speichern**  
+4. Geben Sie im Kombinationsfeld **Dateiname** einen Namen für den exportierten Shader an, und klicken Sie auf die Schaltfläche **Speichern**  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md)   

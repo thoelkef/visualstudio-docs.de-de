@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101794"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.
@@ -35,11 +35,11 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 2. Experimentieren Sie mit dem ersten Beispiel, das die Vorlage bereitstellt:
 
-   1.  Transformieren Sie alle Vorlagen.
+   1. Transformieren Sie alle Vorlagen.
 
-   2.  Erstellen und Ausführen des Beispiels (**STRG + F5**).
+   2. Erstellen und Ausführen des Beispiels (**STRG + F5**).
 
-   3.  Öffnen Sie in der experimentellen Instanz von Visual Studio die `Sample` Datei im Projekt debuggen.
+   3. Öffnen Sie in der experimentellen Instanz von Visual Studio die `Sample` Datei im Projekt debuggen.
 
         Beachten Sie, dass er in einem Windows Forms-Steuerelement angezeigt wird.
 
@@ -49,17 +49,17 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
    Beachten Sie in der Hauptinstanz von Visual Studio die folgenden Punkte bezüglich der DSL-Projektmappe aus:
 
--   `DslDefinition.dsl` enthält keine Diagrammelemente. Dies ist, da Sie DSL-Diagrammen nicht verwenden werden, um Modelle dieser DSL Instanz anzuzeigen. Stattdessen, binden Sie ein Windows-Formular für das Modell und die Elemente auf dem Formular werden das Modell angezeigt.
+- `DslDefinition.dsl` enthält keine Diagrammelemente. Dies ist, da Sie DSL-Diagrammen nicht verwenden werden, um Modelle dieser DSL Instanz anzuzeigen. Stattdessen, binden Sie ein Windows-Formular für das Modell und die Elemente auf dem Formular werden das Modell angezeigt.
 
--   Zusätzlich zu den `Dsl` und `DslPackage` Projekte die Projektmappe enthält ein drittes Projekt mit dem Namen `UI.` **UI** Projekt enthält die Definition eines Windows Forms-Steuerelements. `DslPackage` hängt von `UI`, und `UI` hängt `Dsl`.
+- Zusätzlich zu den `Dsl` und `DslPackage` Projekte die Projektmappe enthält ein drittes Projekt mit dem Namen `UI.` **UI** Projekt enthält die Definition eines Windows Forms-Steuerelements. `DslPackage` hängt von `UI`, und `UI` hängt `Dsl`.
 
--   In der `DslPackage` Projekt `UI\DocView.cs` enthält den Code, in dem das Windows Forms-Steuerelement angezeigt, die in definiert ist die `UI` Projekt.
+- In der `DslPackage` Projekt `UI\DocView.cs` enthält den Code, in dem das Windows Forms-Steuerelement angezeigt, die in definiert ist die `UI` Projekt.
 
--   Die `UI` -Projekt enthält ein funktionstüchtiges Beispiel ein Formularsteuerelement gebunden an die DSL. Es funktioniert jedoch nicht, wenn Sie der DSL-Definition geändert haben. Die `UI` -Projekt enthält:
+- Die `UI` -Projekt enthält ein funktionstüchtiges Beispiel ein Formularsteuerelement gebunden an die DSL. Es funktioniert jedoch nicht, wenn Sie der DSL-Definition geändert haben. Die `UI` -Projekt enthält:
 
-    -   Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.
+    - Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.
 
-    -   Eine Datei namens `DataBinding.cs` , enthält eine weitere partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Ansichtscode**.
+    - Eine Datei namens `DataBinding.cs` , enthält eine weitere partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Ansichtscode**.
 
 ### <a name="about-the-ui-project"></a>Über das UI-Projekt
  Wenn Sie die DSL-Definitionsdatei definieren Ihrer eigenen DSL aktualisieren, müssen beim Aktualisieren des Steuerelements in der `UI` Projekts, der Ihre DSL angezeigt. Im Gegensatz zu den `Dsl` und `DslPackage` -Projekten, das Beispiel `UI` Projekt wird nicht von generiert `DslDefinitionl.dsl`. Sie können die TT-Dateien, um den Code generieren, wenn Sie möchten, obwohl, die in dieser exemplarischen Vorgehensweise nicht behandelt wird hinzufügen.
@@ -71,34 +71,34 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-update-the-dsl-definition"></a>Die DSL-Definition aktualisieren
 
-1.  Öffnen Sie "DslDefinition.DSL" in der DSL-Designer an.
+1. Öffnen Sie "DslDefinition.DSL" in der DSL-Designer an.
 
-2.  Löschen Sie **ExampleElement**
+2. Löschen Sie **ExampleElement**
 
-3.  Benennen Sie die **ExampleModel** Domänenklasse `Farm`.
+3. Benennen Sie die **ExampleModel** Domänenklasse `Farm`.
 
      Geben Sie ihm weitere Domäne-Eigenschaften, die mit der Bezeichnung `Size` des Typs **Int32**, und `IsOrganic` des Typs **booleschen**.
 
     > [!NOTE]
     >  Wenn Sie die Stammklasse für die Domäne zu löschen, und klicken Sie dann eine neue Stamm erstellen, müssen Sie die Editor-Stammklasse Eigenschaft zurückgesetzt. In **DSL-Explorer**Option **Editor**. Legen Sie dann im Fenster Eigenschaften **Stammklasse** zu `Farm`.
 
-4.  Verwenden der **benannte Domänenklasse** Tool, um die folgenden Domänenklassen zu erstellen:
+4. Verwenden der **benannte Domänenklasse** Tool, um die folgenden Domänenklassen zu erstellen:
 
-    -   `Field` -Geben Sie dieser eine weitere Domäne-Eigenschaft, die mit dem Namen `Size`.
+    - `Field` -Geben Sie dieser eine weitere Domäne-Eigenschaft, die mit dem Namen `Size`.
 
-    -   `Animal` -Die, legen Sie im Fenster **Vererbungsmodifizierer** zu **abstrakte**.
+    - `Animal` -Die, legen Sie im Fenster **Vererbungsmodifizierer** zu **abstrakte**.
 
-5.  Verwenden der **Domänenklasse** Tool, um die folgenden Klassen zu erstellen:
+5. Verwenden der **Domänenklasse** Tool, um die folgenden Klassen zu erstellen:
 
-    -   `Sheep`
+    - `Sheep`
 
-    -   `Goat`
+    - `Goat`
 
-6.  Verwenden der **Vererbung** Tool zum Erstellen von `Goat` und `Sheep` erben `Animal`.
+6. Verwenden der **Vererbung** Tool zum Erstellen von `Goat` und `Sheep` erben `Animal`.
 
-7.  Verwenden der **Embedding** Tool zum Einbetten `Field` und `Animal` unter `Farm`.
+7. Verwenden der **Embedding** Tool zum Einbetten `Field` und `Animal` unter `Farm`.
 
-8.  Möglicherweise möchten das Diagramm übersichtlicher zu machen. Verwenden Sie zum Verringern der Anzahl von doppelten Elementen der **Teilstruktur hier zu bringen** Befehl im Kontextmenü der untergeordneten Elemente.
+8. Möglicherweise möchten das Diagramm übersichtlicher zu machen. Verwenden Sie zum Verringern der Anzahl von doppelten Elementen der **Teilstruktur hier zu bringen** Befehl im Kontextmenü der untergeordneten Elemente.
 
 9. **Alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer.
 
@@ -112,13 +112,13 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>Definieren Sie Ihre DSL-Modell als Datenquelle
 
-1.  Auf der **Daten** Menü wählen **Datenquellen anzeigen**.
+1. Auf der **Daten** Menü wählen **Datenquellen anzeigen**.
 
      Das Fenster **Datenquellen** wird geöffnet.
 
      Wählen Sie **neue Datenquelle hinzufügen**. Der **Assistent zum Konfigurieren von Datenquellen** wird geöffnet.
 
-2.  Wählen Sie **Objekt**, **Weiter**.
+2. Wählen Sie **Objekt**, **Weiter**.
 
      Erweitern Sie **Dsl**, **Company.FarmApp**, und wählen Sie **Farm**, dies ist die Stammklasse des Modells. Klicken Sie auf **Fertig stellen**.
 
@@ -175,7 +175,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Die Bindungen für die DSL abgeschlossen
 
-1.  Fügen Sie den folgenden Code in einer separaten Codedatei in die **UI** Projekt:
+1. Fügen Sie den folgenden Code in einer separaten Codedatei in die **UI** Projekt:
 
     ```csharp
     using System.ComponentModel;
@@ -201,7 +201,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
     }
     ```
 
-2.  In der **DslPackage** Projekt, bearbeiten **DslPackage\DocView.tt** zum Aktualisieren der folgenden Variablendefinition:
+2. In der **DslPackage** Projekt, bearbeiten **DslPackage\DocView.tt** zum Aktualisieren der folgenden Variablendefinition:
 
     ```csharp
     string viewControlTypeName = "FarmControl";
@@ -212,18 +212,18 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-test-the-dsl"></a>So testen Sie die DSL
 
-1.  Erstellen Sie die Projektmappe, und führen Sie sie aus.
+1. Erstellen Sie die Projektmappe, und führen Sie sie aus.
 
-2.  Öffnen Sie in der experimentellen Instanz von Visual Studio die **Beispiel** Datei.
+2. Öffnen Sie in der experimentellen Instanz von Visual Studio die **Beispiel** Datei.
 
-3.  In der **FarmApp Explorer**, öffnen Sie das Kontextmenü für die **Farm** Stammknoten, und wählen **Hinzufügen neuer Ziege**.
+3. In der **FarmApp Explorer**, öffnen Sie das Kontextmenü für die **Farm** Stammknoten, und wählen **Hinzufügen neuer Ziege**.
 
      `Goat1` wird in der **Tiere** anzeigen.
 
     > [!WARNING]
     >  Müssen Sie das Kontextmenü verwenden, auf die **Farm** Knoten nicht die **Tiere** Knoten.
 
-4.  Wählen Sie die **Farm** Stammknoten und Anzeigen seiner Eigenschaften.
+4. Wählen Sie die **Farm** Stammknoten und Anzeigen seiner Eigenschaften.
 
      Ändern Sie in der Formularansicht die **Namen** oder **Größe** der Farm.
 
@@ -233,13 +233,13 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
 #### <a name="to-make-the-properties-update-immediately"></a>Zu den Eigenschaften, die sofort zu aktualisieren
 
-1.  Wählen Sie in der Entwurfsansicht des FarmControl.cs z. B. Name, Größe oder IsOrganic ein einfaches Feld.
+1. Wählen Sie in der Entwurfsansicht des FarmControl.cs z. B. Name, Größe oder IsOrganic ein einfaches Feld.
 
-2.  Erweitern Sie im Eigenschaftenfenster **DataBindings** , und öffnen Sie **(Erweitert)**.
+2. Erweitern Sie im Eigenschaftenfenster **DataBindings** , und öffnen Sie **(Erweitert)**.
 
      In der **Formatierung und erweiterte Bindung** Dialogfeld unter **Datenquellen-Aktualisierungsmodus**, wählen Sie **OnPropertyChanged**.
 
-3.  Erstellen Sie die Projektmappe, und führen Sie sie aus.
+3. Erstellen Sie die Projektmappe, und führen Sie sie aus.
 
      Überprüfen Sie, wenn Sie den Inhalt des Felds, die entsprechende Eigenschaft von der Farm modelländerungen sofort ändern.
 

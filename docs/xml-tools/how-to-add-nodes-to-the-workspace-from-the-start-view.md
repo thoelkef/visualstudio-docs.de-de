@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111661"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Vorgehensweise: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
 
@@ -21,14 +21,14 @@ In diesem Thema wird beschrieben, wie globale Knoten hinzufügen der [XML-Schema
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>So fügen Sie dem Arbeitsbereich Knoten aus der Ausgangsansicht hinzu
 
-1.  Führen Sie die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Führen Sie die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Mit der rechten Maustaste in der XML-Editor, und wählen Sie **Ansicht-Designer**.
+2. Mit der rechten Maustaste in der XML-Editor, und wählen Sie **Ansicht-Designer**.
 
      Die Ausgangsansicht wird angezeigt.
 
      In der **Details zum Schemaset** Abschnitt, beachten Sie, dass zwei (**2**) **globale komplexe Typen**.
 
-3.  Klicken Sie auf die **hinzufügen** rechts von der **globale komplexe Typen** Überschrift.
+3. Klicken Sie auf die **hinzufügen** rechts von der **globale komplexe Typen** Überschrift.
 
      Die `USAddress`- und `PurchaseOrderType`-Knoten des komplexen Typs werden auf der Entwurfsoberfläche der Diagrammansicht angezeigt.

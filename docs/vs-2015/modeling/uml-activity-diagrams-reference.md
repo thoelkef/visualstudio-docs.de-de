@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087143"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML-Aktivitätsdiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Ein *Aktivitätsdiagramm* zeigt einen Geschäfts- oder Softwareprozess als Arbei
 |13|**Aktion zum Senden**|Eine Aktion, die eine Nachricht oder ein Signal an eine andere Aktivität oder an einen parallelen Thread in der gleichen Aktivität sendet. Typ und Inhalt der Nachricht werden durch den Titel der Aktion impliziert oder in zusätzlichen Kommentaren angegeben.<br /><br /> Die Aktion kann Daten im Signal senden, die in einem Objektfluss oder Eingabepin (16) an die Aktion übergeben werden können.|  
 |14|**Ereignisaktion akzeptieren**|Eine Aktion, die auf eine Nachricht oder ein Signal wartet, bevor die Aktion fortgesetzt werden kann. Der Typ der Nachricht, der von der Aktion abgerufen werden kann, wird durch den Titel der Aktion impliziert oder in zusätzlichen Kommentaren angegeben.<br /><br /> Weist die Aktion keine eingehende Ablaufsteuerung auf, erzeugt sie beim Erhalten einer Nachricht ein Token.<br /><br /> Die Aktion kann Daten im Signal empfangen, die in einem Objektfluss oder Ausgabepin (17) übergeben werden können.<br /><br /> -   **IsUnmarshall** : Wenn "true", können mehrere typisierte Ausgabepins vorhanden sein, und Daten auf diese mashallen. Bei „False“ werden alle Daten auf einem Pin angezeigt.|  
   
-###  <a name="DataFlow"></a> Datenflüsse  
+### <a name="DataFlow"></a> Datenflüsse  
  Sie können den Fluss der Daten von einer Aktion zu einer anderen beschreiben. Weitere Informationen zu den in diesem Abschnitt verwendeten Elementen finden Sie im Abschnitt „Zeichnen von Datenflüssen“ des Themas „Richtlinien zum Zeichnen eines Aktivitätsdiagramms“.  
   
  ![Aktivitätsdiagramm mit Datenfluss](../modeling/media/uml-actovdata.png "UML_ActOvData")  

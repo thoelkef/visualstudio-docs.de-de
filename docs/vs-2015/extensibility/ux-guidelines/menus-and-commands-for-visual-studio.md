@@ -8,12 +8,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0fa441c6dc56210c11a0007eb2662b3c08910ba
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095801"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüs und Befehle für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "59001382"
 ##### <a name="do-not-create-icons-for-every-command"></a>Erstellen Sie Symbole für jeden Befehl nicht.
  Stellen Sie sich sorgfältig durch, bevor Sie ein Befehlssymbol zu erstellen. Symbole, die nur für Befehle erstellt werden soll, die:
 
--   in einer Standardsymbolleiste angezeigt.
+- in einer Standardsymbolleiste angezeigt.
 
--   voraussichtlich von Benutzern hinzugefügt werden, um eine Symbolleiste über dem **anpassen...** Dialogfeld.
+- voraussichtlich von Benutzern hinzugefügt werden, um eine Symbolleiste über dem **anpassen...** Dialogfeld.
 
--   haben Sie ein Symbol, das die gleiche Aktion in einem anderen Microsoft-Produkt zugeordnet.
+- haben Sie ein Symbol, das die gleiche Aktion in einem anderen Microsoft-Produkt zugeordnet.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Beschränken Sie das Hinzufügen von Tastenkombinationen in Visual Studio
  Die große Mehrheit der Benutzer nutzen einen kleinen Bruchteil alle verfügbaren Tastenkombinationen. Binden Sie im Zweifelsfall das Feature nicht auf eine Tastenkombination ist. Arbeiten mit Ihrer Benutzer kommen Team vor dem Hinzufügen neuer Tastenkombinationen.
@@ -77,65 +77,65 @@ ms.locfileid: "59001382"
 
 ##### <a name="core-menus"></a>Core-Menüs
 
--   Datei
+- Datei
 
--   Bearbeiten
+- Bearbeiten
 
--   Ansicht
+- Ansicht
 
--   Tools
+- Tools
 
--   Fenster
+- Fenster
 
--   Help
+- Help
 
 ##### <a name="project-specific-menus"></a>Projektspezifische Menüs
 
--   Projekt
+- Projekt
 
--   Build
+- Build
 
--   Debug
+- Debug
 
 ##### <a name="context-specific-menus"></a>Kontextspezifische-Menüs
 
--   Team
+- Team
 
--   Daten
+- Daten
 
--   Test
+- Test
 
--   Architektur
+- Architektur
 
--   Analysieren
+- Analysieren
 
 ##### <a name="document-specific-menus"></a>Für die spezifischen-Menüs
 
--   Format
+- Format
 
--   Tabelle
+- Tabelle
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Beim Entwerfen von Hauptmenüs, befolgen Sie die folgenden Regeln:
 
--   Nicht mehr als 25 Elemente der obersten Ebene in einem bestimmten Kontext
+- Nicht mehr als 25 Elemente der obersten Ebene in einem bestimmten Kontext
 
--   Menüs sollte niemals mehr als 600 Pixel hoch.
+- Menüs sollte niemals mehr als 600 Pixel hoch.
 
--   Auswerten von ein Hauptmenü in mehreren Kontexten wie z. B. in die Ultimate-SKU und des allgemeinen Profils.
+- Auswerten von ein Hauptmenü in mehreren Kontexten wie z. B. in die Ultimate-SKU und des allgemeinen Profils.
 
--   Flyout-Menüs sind zulässig.
+- Flyout-Menüs sind zulässig.
 
--   Flyout-Menüs sollte mindestens drei Elemente und nicht mehr als sieben enthalten.
+- Flyout-Menüs sollte mindestens drei Elemente und nicht mehr als sieben enthalten.
 
--   Flyout-Menüs gesendet werden sollen nur eine Ebene tief – einige Visual Studio-Menüelemente haben cascading Untermenüs, aber dieses Muster wird nicht empfohlen.
+- Flyout-Menüs gesendet werden sollen nur eine Ebene tief – einige Visual Studio-Menüelemente haben cascading Untermenüs, aber dieses Muster wird nicht empfohlen.
 
--   Verwenden Sie nicht mehr als sechs Trennzeichen. Gruppierungen sollte der folgenden Abbildung entsprechen:
+- Verwenden Sie nicht mehr als sechs Trennzeichen. Gruppierungen sollte der folgenden Abbildung entsprechen:
 
      ![Richtlinien für die Gruppierung des Hauptmenüs](../../extensibility/ux-guidelines/media/0501-b-mainmenus.png "0501-B_MainMenus")
 
--   Es ist zwar nicht erforderlich, jede Gruppe in der Abbildung zu erhalten, ist das Hinzufügen von zusätzlichen Gruppierungen, beschränkt.
+- Es ist zwar nicht erforderlich, jede Gruppe in der Abbildung zu erhalten, ist das Hinzufügen von zusätzlichen Gruppierungen, beschränkt.
 
--   Jede Gruppe sollte zwischen zwei und sieben Menüelemente verfügen.
+- Jede Gruppe sollte zwischen zwei und sieben Menüelemente verfügen.
 
 #### <a name="main-menu-ordering"></a>Sortieren im Hauptmenü
  Erwägen Sie vor dem Hinzufügen eines neuen Elements für der obersten Ebene, platzieren den Befehl in einem vorhandenen Menü für der obersten Ebene aus. Wenn Sie ein neues Hauptebenen-Menüelement hinzufügen, achten Sie darauf, dass Sie an der aktuellen Position platzieren. Entscheiden Sie, ob das Menü für Projekt, Kontext oder Dokument spezifisch ist. Behalten Sie den Namen des Menüs der obersten Ebene präzise, und verwenden Sie nur aus einem Wort.
@@ -147,30 +147,30 @@ ms.locfileid: "59001382"
 
  Beim Entwerfen von Kontextmenüs, halten Sie den gleichen Regeln wie für das Hauptmenü, und darüber hinaus:
 
--   Überschreiten Sie 25 Menüelemente der obersten Ebene nicht.
+- Überschreiten Sie 25 Menüelemente der obersten Ebene nicht.
 
--   Flyout-Menüs sind zulässig muss, aber nicht mehr als eine Ebene tief – verwenden Sie niemals kaskadierende Flyouts.
+- Flyout-Menüs sind zulässig muss, aber nicht mehr als eine Ebene tief – verwenden Sie niemals kaskadierende Flyouts.
 
--   Verwenden Sie nicht mehr als sechs Trennzeichen.
+- Verwenden Sie nicht mehr als sechs Trennzeichen.
 
 ### <a name="command-placement-in-toolbars"></a>Befehl Platzierung in Symbolleisten
 
 #### <a name="general-toolbars"></a>Allgemeine Symbolleisten
  Beim Entwerfen und Anordnen von Symbolleisten, führen Sie diese Standards:
 
--   Verwenden Sie nicht mehr als ein Verb pro Schaltfläche. Eine Schaltfläche eine Aktion =.
+- Verwenden Sie nicht mehr als ein Verb pro Schaltfläche. Eine Schaltfläche eine Aktion =.
 
--   Verwenden Sie Text neben dem Symbol an, nur, wenn sie mit der Bezeichnung gestärkt werden muss.
+- Verwenden Sie Text neben dem Symbol an, nur, wenn sie mit der Bezeichnung gestärkt werden muss.
 
--   Verwenden Sie ein Kombinationsfeld, ausschließlich für die Eigenschaften, die mehrere Male in einer Sitzung gewechselt werden. Andernfalls machen Sie Eigenschaft an anderer Stelle verfügbar.
+- Verwenden Sie ein Kombinationsfeld, ausschließlich für die Eigenschaften, die mehrere Male in einer Sitzung gewechselt werden. Andernfalls machen Sie Eigenschaft an anderer Stelle verfügbar.
 
--   Die Breite eines Kombinationsfelds sollte es sich um die Breite des am längsten Elements in der Box + 30 % entsprechen. Wenn Sie der längsten 200 Pixel ist, sollte im Kombinationsfeld z. B. 260 Pixel breit sein.
+- Die Breite eines Kombinationsfelds sollte es sich um die Breite des am längsten Elements in der Box + 30 % entsprechen. Wenn Sie der längsten 200 Pixel ist, sollte im Kombinationsfeld z. B. 260 Pixel breit sein.
 
--   Schränken Sie die Verwendung von Trennzeichen. Die Verwendung eines Trennzeichens neben einer Dropdownliste ist als Antimuster, da die Form im Dropdownmenü auf sich selbst als visual Trennzeichen fungiert.
+- Schränken Sie die Verwendung von Trennzeichen. Die Verwendung eines Trennzeichens neben einer Dropdownliste ist als Antimuster, da die Form im Dropdownmenü auf sich selbst als visual Trennzeichen fungiert.
 
--   Symbol für Gruppen müssen drei bis sechs Symbole enthalten.
+- Symbol für Gruppen müssen drei bis sechs Symbole enthalten.
 
--   Wenn mehrere hilfreiche Befehle Qualifizierer führen, verwenden Sie eine unterteilte Schaltfläche, die die letzte Einstellung speichert:
+- Wenn mehrere hilfreiche Befehle Qualifizierer führen, verwenden Sie eine unterteilte Schaltfläche, die die letzte Einstellung speichert:
 
      ![Unterteilte Schaltflächen in Visual Studio](../../extensibility/ux-guidelines/media/0501-c-splitbuttons.png "0501-C_SplitButtons")
 
@@ -231,13 +231,13 @@ ms.locfileid: "59001382"
 
 #### <a name="when-naming-commands"></a>Wenn Befehle benennen:
 
--   Erstellen Sie Text aus, sodass sie problemlos lokalisiert ist. Weitere Informationen zum Lokalisieren von Text finden Sie unter [Lokalisierung bewährte](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Erstellen Sie Text aus, sodass sie problemlos lokalisiert ist. Weitere Informationen zum Lokalisieren von Text finden Sie unter [Lokalisierung bewährte](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Werden Sie präzise. Befehle sollten nicht mehr als drei Wörter verwenden.
+- Werden Sie präzise. Befehle sollten nicht mehr als drei Wörter verwenden.
 
--   Verwenden Sie große Anfangsbuchstaben Groß-/Kleinschreibung: der erste Buchstabe jedes Worts groß geschrieben werden soll. Weitere Informationen zur textformatierung, die in Visual Studio finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Verwenden Sie große Anfangsbuchstaben Groß-/Kleinschreibung: der erste Buchstabe jedes Worts groß geschrieben werden soll. Weitere Informationen zur textformatierung, die in Visual Studio finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Berücksichtigen Sie, wo der Befehl platziert werden. Handelt es sich in einem Menü der obersten Ebene oder ein Flyout? Z. B. wenn Gruppierung Ausrichten von Befehlen in ein Flyout, den obersten Ebene Befehl "Align" und der Flyout-Befehle werden sollen sollte "Left" "Right", "Center", "Blocksatz" sein, und so weiter. Es wäre redundant, benennen Sie die Flyout-Befehle "Linksbündig" oder "Align Right."
+- Berücksichtigen Sie, wo der Befehl platziert werden. Handelt es sich in einem Menü der obersten Ebene oder ein Flyout? Z. B. wenn Gruppierung Ausrichten von Befehlen in ein Flyout, den obersten Ebene Befehl "Align" und der Flyout-Befehle werden sollen sollte "Left" "Right", "Center", "Blocksatz" sein, und so weiter. Es wäre redundant, benennen Sie die Flyout-Befehle "Linksbündig" oder "Align Right."
 
      ![Visual Studio-Format zum Menü ","](../../extensibility/ux-guidelines/media/0502-a-formatmenu.png "0502-A_FormatMenu")
 
@@ -246,20 +246,20 @@ ms.locfileid: "59001382"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Verwenden Sie ein Symbol mit nur ein Befehl, wenn ein:
 
--   Der gleiche Befehl verfügt über ein Symbol in einem anderen deutliche Microsoft-Produkt wie z. B. Microsoft Office-Anwendung zugeordnet.
+- Der gleiche Befehl verfügt über ein Symbol in einem anderen deutliche Microsoft-Produkt wie z. B. Microsoft Office-Anwendung zugeordnet.
 
--   Der Befehl wird in einer Standardsymbolleiste platziert werden.
+- Der Befehl wird in einer Standardsymbolleiste platziert werden.
 
--   Der Befehl ist eine spezielle-Befehl, der Benutzer wahrscheinlich eine Symbolleiste mit hinzugefügt werden die **"Anpassen..."** Dialogfeld.
+- Der Befehl ist eine spezielle-Befehl, der Benutzer wahrscheinlich eine Symbolleiste mit hinzugefügt werden die **"Anpassen..."** Dialogfeld.
 
 ## <a name="access-and-shortcut-keys"></a>Zugriff und die Tastenkombinationen
 
 ### <a name="overview"></a>Übersicht
  Es gibt zwei Arten von Tastenbelegung für Schlüssel:
 
--   **Zugriffsschlüssel** (auch bekannt als Zugriffstasten) ermöglichen den Zugriff über die Menüs für die Befehlseingabe und zu jeder Bezeichnung im Dialogfeld "UI". Zugriffsschlüssel werden hauptsächlich für die Barrierefreiheit zu, alle Menüs und die meisten Dialogfeld-Steuerelementen zugewiesen sind, sind nicht dafür vorgesehen, Sie werden merken können, wirken sich auf nur das aktuelle Fenster und lokalisiert werden.
+- **Zugriffsschlüssel** (auch bekannt als Zugriffstasten) ermöglichen den Zugriff über die Menüs für die Befehlseingabe und zu jeder Bezeichnung im Dialogfeld "UI". Zugriffsschlüssel werden hauptsächlich für die Barrierefreiheit zu, alle Menüs und die meisten Dialogfeld-Steuerelementen zugewiesen sind, sind nicht dafür vorgesehen, Sie werden merken können, wirken sich auf nur das aktuelle Fenster und lokalisiert werden.
 
--   **Tastenkombinationen für den** verwenden STRG- und -Funktion (Fn) folgen. Sie wurden mehr Produktivität für fortgeschrittene Benutzer und Hilfe entwickelt. Sie werden nur die häufigsten verwendete Befehle zugewiesen und ermöglichen schnellen Zugriff beim umgehen im Hauptmenü. Tastenkombinationen für den merken können, werden sollen, und für diesen Grund muss zugewiesen werden konsistent mit dem Profil-Schema. Wichtige Tastenkombinationsschemas variieren von Profilen. Ein Benutzer möglicherweise Tastenkombinationen über anpassen **Tools > Optionen > Tastatur**.
+- **Tastenkombinationen für den** verwenden STRG- und -Funktion (Fn) folgen. Sie wurden mehr Produktivität für fortgeschrittene Benutzer und Hilfe entwickelt. Sie werden nur die häufigsten verwendete Befehle zugewiesen und ermöglichen schnellen Zugriff beim umgehen im Hauptmenü. Tastenkombinationen für den merken können, werden sollen, und für diesen Grund muss zugewiesen werden konsistent mit dem Profil-Schema. Wichtige Tastenkombinationsschemas variieren von Profilen. Ein Benutzer möglicherweise Tastenkombinationen über anpassen **Tools > Optionen > Tastatur**.
 
 ### <a name="assigning-access-keys"></a>Zuordnen von Tastenkombinationen
  Zugriffsschlüssel bestehen aus Alt plus alphanumerische Schlüssel. Weisen Sie jedes Menüelement ausnahmslos eine Zugriffstaste hinzu zu. Führen Sie Windows und allgemeine Konventionen für das Zuordnen von Tastenkombinationen. z. B. den Zugriffsschlüssel für **Datei > Neu** muss immer **Alt, F, N**.
@@ -287,6 +287,6 @@ ms.locfileid: "59001382"
 
   Es ist keine einfache Möglichkeit zum Prüfen der Verfügbarkeit der Verknüpfung. Wenn Sie eine Verknüpfung hinzufügen möchten, gehen Sie wie folgt vor:
 
-1.  Überprüfen Sie die Liste der [Tastenkombinationen für Visual Studio 2013](http://visualstudioshortcuts.com/2013/) zu ermitteln, ob ähnliche Befehle, um Ihre mit zu gruppieren.
+1. Überprüfen Sie die Liste der [Tastenkombinationen für Visual Studio 2013](http://visualstudioshortcuts.com/2013/) zu ermitteln, ob ähnliche Befehle, um Ihre mit zu gruppieren.
 
-2.  Wechseln Sie zu **Tools > Optionen > Umgebung > Tastatur** und Ihre Verknüpfung testen. Überprüfen Sie, dass jede Tastaturzuordnungsschema unter aufgeführt "die folgenden zusätzliches Tastaturzuordnungsschema anwenden." Überprüfen Sie Allgemein, C#, VB und C++-Profilen, wie die eindeutige Tastenkombinationen freigeben. Die Verknüpfung ist verfügbar, falls es nicht in allen diesen zugeordnet ist.
+2. Wechseln Sie zu **Tools > Optionen > Umgebung > Tastatur** und Ihre Verknüpfung testen. Überprüfen Sie, dass jede Tastaturzuordnungsschema unter aufgeführt "die folgenden zusätzliches Tastaturzuordnungsschema anwenden." Überprüfen Sie Allgemein, c#, VB und C++-Profilen, wie die eindeutige Tastenkombinationen freigeben. Die Verknüpfung ist verfügbar, falls es nicht in allen diesen zugeordnet ist.

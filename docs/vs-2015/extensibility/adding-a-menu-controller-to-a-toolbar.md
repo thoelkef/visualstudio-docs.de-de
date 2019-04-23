@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107800"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Hinzufügen eines Menücontrollers zu einer Symbolleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleis
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementieren die Controller-Befehle im Menü  
   
-1.  Fügen Sie in TWTestCommandPackageGuids.cs Befehls-IDs für Ihre drei Menüelemente nach den vorhandenen Befehls-IDs ein.  
+1. Fügen Sie in TWTestCommandPackageGuids.cs Befehls-IDs für Ihre drei Menüelemente nach den vorhandenen Befehls-IDs ein.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleis
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  Fügen Sie in TWTestCommand.cs den folgenden Code am Anfang der TWTestCommand-Klasse.  
+2. Fügen Sie in TWTestCommand.cs den folgenden Code am Anfang der TWTestCommand-Klasse.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  Im Konstruktor TWTestCommand nach dem letzten Aufruf von der `AddCommand` -Methode Code hinzufügen, um die Ereignisse für jeden Befehl über die gleichen Handler weitergeleitet.  
+3. Im Konstruktor TWTestCommand nach dem letzten Aufruf von der `AddCommand` -Methode Code hinzufügen, um die Ereignisse für jeden Befehl über die gleichen Handler weitergeleitet.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleis
     }  
     ```  
   
-4.  Fügen Sie einen Ereignishandler, der TWTestCommand-Klasse, um den ausgewählten Befehl als aktivierten zu markieren.  
+4. Fügen Sie einen Ereignishandler, der TWTestCommand-Klasse, um den ausgewählten Befehl als aktivierten zu markieren.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleis
     }  
     ```  
   
-5.  Fügen Sie einen Ereignishandler, der eine MessageBox anzeigt, wenn der Benutzer einen Befehl auf dem Menücontroller im auswählt:  
+5. Fügen Sie einen Ereignishandler, der eine MessageBox anzeigt, wenn der Benutzer einen Befehl auf dem Menücontroller im auswählt:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ Diese exemplarische Vorgehensweise baut auf den [ein Toolfenster eine Symbolleis
   
 ## <a name="testing-the-menu-controller"></a>Testen des Menücontrollers  
   
-1.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
+1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollten angezeigt werden.  
   
-2.  Öffnen der **Test ToolWindow** auf die **anzeigen / Other Windows** Menü.  
+2. Öffnen der **Test ToolWindow** auf die **anzeigen / Other Windows** Menü.  
   
      Der Menücontroller im auf der Symbolleiste im Toolfenster angezeigt wird, und zeigt **MC Element 1**.  
   
-3.  Klicken Sie auf die Menüschaltfläche Controller, auf der linken Seite des Pfeils.  
+3. Klicken Sie auf die Menüschaltfläche Controller, auf der linken Seite des Pfeils.  
   
      Drei Elemente enthält, sollte das erste Argument ausgewählt ist, und verfügt über ein Highlight-Feld, um das entsprechende Symbol angezeigt werden. Klicken Sie auf **MC Element 3**.  
   

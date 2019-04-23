@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088560"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch einen TextField dargestellt. Beispiele für die Initialisierung von TextFields und andere ShapeFields untersuchen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>Erstellen Sie eine Unterklasse von ImageField
 
-1.  Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.
+1. Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.
 
-2.  Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.
+2. Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.
 
-    -   Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.
+    - Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.
 
-3.  Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
+3. Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
 
      Rufen Sie in der Überschreibungsmethode die Basismethode auf, und klicken Sie dann erstellen Sie eine Instanz Ihrer eigenen Images-Feld-Klasse. Verwenden Sie diese ersetzen die regulären Bildfeld in der `shapeFields` Liste.
 

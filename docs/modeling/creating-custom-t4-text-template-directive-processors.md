@@ -1,5 +1,5 @@
 ---
-title: Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
+title: Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109256"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
+# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
 
 Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Eingabe und erzeugt eine Textdatei, die als Ausgabe. Die *Textvorlagen-Transformationsmodul* Steuerelemente, die der Prozess, und die Engine interagiert mit einer Textvorlagen-Transformationshost und mindestens eine Textvorlage *anweisungsprozessoren* zum Abschließen der der Prozess. Weitere Informationen finden Sie unter [das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).
 
@@ -40,9 +40,9 @@ Andere Textvorlagen können die Funktionalität, die ein einzelner anweisungspro
 
 Einige Beispiele für benutzerdefinierte anweisungsprozessoren könnte sein:
 
--   Ein anweisungsprozessor, Daten aus einer Datenbank zurückzugeben, die einen Benutzernamen und ein Kennwort als Parameter akzeptiert.
+- Ein anweisungsprozessor, Daten aus einer Datenbank zurückzugeben, die einen Benutzernamen und ein Kennwort als Parameter akzeptiert.
 
--   Einen anweisungsprozessor öffnen und Lesen einer Datei, die den Namen der Datei als Parameter akzeptiert.
+- Einen anweisungsprozessor öffnen und Lesen einer Datei, die den Namen der Datei als Parameter akzeptiert.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Prinzipal Teile eines benutzerdefinierten anweisungsprozessors
 
@@ -50,19 +50,19 @@ Um einen anweisungsprozessor entwickeln zu können, müssen Sie eine Klasse, die
 
 Die wichtigste `DirectiveProcessor` Methoden, die Sie implementieren müssen, sind wie folgt.
 
--   `bool IsDirectiveSupported(string directiveName)` -Return `true` , wenn die benannte Direktive der anweisungsprozessor behandeln kann.
+- `bool IsDirectiveSupported(string directiveName)` -Return `true` , wenn die benannte Direktive der anweisungsprozessor behandeln kann.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Die Vorlagen-Engine ruft diese Methode für jedes Vorkommen einer Direktive in der Vorlage. Der Prozessor sollten die Ergebnisse zu speichern.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Die Vorlagen-Engine ruft diese Methode für jedes Vorkommen einer Direktive in der Vorlage. Der Prozessor sollten die Ergebnisse zu speichern.
 
 Die Vorlagen-Engine wird diese Methoden aufrufen, nachdem alle Aufrufe von ProcessDirective():
 
--   `string[] GetReferencesForProcessingRun()` -Die Namen der Assemblys, die den Code der Vorlage erfordert zurück.
+- `string[] GetReferencesForProcessingRun()` -Die Namen der Assemblys, die den Code der Vorlage erfordert zurück.
 
--   `string[] GetImportsForProcessingRun()` -Gibt die Namespaces zurück, die verwendet werden können im Vorlagencode.
+- `string[] GetImportsForProcessingRun()` -Gibt die Namespaces zurück, die verwendet werden können im Vorlagencode.
 
--   `string GetClassCodeForProcessingRun()` -Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen, die den Code der Vorlage verwenden können. Die einfachste Möglichkeit hierzu ist eine Zeichenfolge, die mit der C#- oder Visual Basic-Code zu erstellen. Damit den anweisungsprozessor aufgerufen werden, aus einer Vorlage, die einer beliebigen CLR-Sprache verwendet wird, können Sie die Anweisungen als eine CodeDom-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurück.
+- `string GetClassCodeForProcessingRun()` -Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen, die den Code der Vorlage verwenden können. Die einfachste Möglichkeit hierzu ist eine Zeichenfolge, die mit der C#- oder Visual Basic-Code zu erstellen. Damit den anweisungsprozessor aufgerufen werden, aus einer Vorlage, die einer beliebigen CLR-Sprache verwendet wird, können Sie die Anweisungen als eine CodeDom-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurück.
 
--   Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Siehe auch
 

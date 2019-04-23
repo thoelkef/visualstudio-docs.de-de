@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096997"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Erweitern von SharePoint-Packen und-bereitstellen
   Sie können den Paketerstellungs- und Bereitstellungsprozess für SharePoint-Projekte erweitern.
@@ -35,9 +35,9 @@ ms.locfileid: "56628389"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Ausführen von Code bei eine SharePoint-Lösung bereitgestellt oder zurückgezogen wird
  Sie können Ereignisse verarbeiten, um zusätzliche Aufgaben auszuführen, wenn eine SharePoint-Lösung bereitgestellt oder zurückgezogen wird. Visual Studio löst Ereignisse aus, die Sie in den folgenden Szenarien behandeln können:
 
--   Vor und nach der Ausführung jedes Bereitstellungsschritts für ein SharePoint-Projektelement. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen von Code bei der Bereitstellung ausgeführt werden](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Vor und nach der Ausführung jedes Bereitstellungsschritts für ein SharePoint-Projektelement. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen von Code bei der Bereitstellung ausgeführt werden](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Vor und nach der Bereitstellung oder Zurückziehung eines SharePoint-Projekts. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen von Code beim Bereitstellen oder Zurückziehen ein SharePoint-Projekts](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Vor und nach der Bereitstellung oder Zurückziehung eines SharePoint-Projekts. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen von Code beim Bereitstellen oder Zurückziehen ein SharePoint-Projekts](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Behandeln von Bereitstellungskonflikten
  Einige SharePoint-Projektelementtypen, einschließlich Module, Webparts, Listeninstanzen und Inhaltstypen, bieten eine integrierte Bereitstellungskonfliktlösung. Beim Bereitstellen einer Lösung, die eins dieser Projektelemente enthält, prüft Visual Studio zunächst, ob eine Datei bereits auf der SharePoint-Website mit demselben Namen, der URL oder ID wie die Datei im Element vorhanden ist, die Sie bereitstellen. Wenn ein Konflikt vorhanden ist, kann Visual Studio den Konflikt automatisch lösen, alternativ kann es Sie auffordern zu bestimmen, ob Visual Studio den Konflikt beheben oder ob die Bereitstellung abgebrochen werden soll. Weitere Informationen finden Sie unter [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

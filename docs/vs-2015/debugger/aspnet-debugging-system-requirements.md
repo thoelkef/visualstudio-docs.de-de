@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097127"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET-Debugging: Systemanforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema werden die Software- und Sicherheitsanforderungen für die folgenden [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Debugszenarios beschrieben:  
   
--   Lokales Debuggen, bei dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und die Webanwendung auf demselben Computer ausgeführt werden. Es gibt zwei Versionen dieses Szenarios:  
+- Lokales Debuggen, bei dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und die Webanwendung auf demselben Computer ausgeführt werden. Es gibt zwei Versionen dieses Szenarios:  
   
-    -   Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich im Dateisystem.  
+    - Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich im Dateisystem.  
   
-    -   Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich in einer IIS-Website.  
+    - Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich in einer IIS-Website.  
   
--   Remotedebuggen: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird auf einem Clientcomputer und die debuggte Webanwendung auf einem Remoteservercomputer ausgeführt.  
+- Remotedebuggen: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird auf einem Clientcomputer und die debuggte Webanwendung auf einem Remoteservercomputer ausgeführt.  
   
 ## <a name="security-requirements"></a>Sicherheitsanforderungen  
  Lokale Computer und Remotecomputer müssen sich beim Remotedebuggen in einer Domänen- oder Arbeitsgruppenkonfiguration befinden.  
