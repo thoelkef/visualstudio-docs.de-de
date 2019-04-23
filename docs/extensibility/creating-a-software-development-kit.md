@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661219"
 ---
 # <a name="create-a-software-development-kit"></a>Erstellen eines Software Development Kits
 Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein einzelnes Element in Visual Studio verweisen können. Die **Verweis-Manager** Dialogfeld listet alle SDKs, die für das Projekt relevant sind. Wenn Sie ein Projekt eine SDK hinzufügen, sind die APIs in Visual Studio verfügbar.
@@ -49,7 +49,6 @@ Ein Software Development Kit (SDK) ist eine Sammlung von APIs, die Sie als ein e
                   \[config]
                         \[arch]
 ```
-
 
 | Knoten | Beschreibung |
 |------------------------| - |
@@ -174,7 +173,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
     WindowsAppContainer identifiziert Projekte für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps.
 
-8. SupportPrefer32Bit: Unterstützte Werte sind "True" und "False". Der Standardwert ist "True". Wenn der Wert auf "False" festgelegt ist, gibt MSBuild einen Fehler für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] Projekte (oder eine Warnung für Desktopprojekte), wenn das Projekt, das das SDK verweist Prefer32Bit aktiviert wurde. Weitere Informationen zu Prefer32Bit, finden Sie unter [Seite "erstellen", Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md) oder [Seite "Kompilieren", Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).
+8. SupportPrefer32Bit: Unterstützte Werte sind "True" und "False". Der Standardwert ist "True". Wenn der Wert auf "False" festgelegt ist, gibt MSBuild einen Fehler für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] Projekte (oder eine Warnung für Desktopprojekte), wenn das Projekt, das das SDK verweist Prefer32Bit aktiviert wurde. Weitere Informationen zu Prefer32Bit, finden Sie unter [Seite "erstellen", Projekt-Designer (c#)](../ide/reference/build-page-project-designer-csharp.md) oder [Seite "Kompilieren", Projekt-Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).
 
 9. SupportedArchitectures: Eine durch Semikolons getrennte Liste von Architekturen, die das SDK unterstützt. MSBuild zeigt eine Warnung aus, wenn die Ziel-SDK-Architektur in das verarbeitende Projekt nicht unterstützt wird. Wenn dieses Attribut nicht angegeben ist, wird MSBuild nie dieser Art der Warnung angezeigt.
 

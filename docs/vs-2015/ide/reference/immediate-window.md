@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802673"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660293"
 ---
 # <a name="immediate-window"></a>Direktfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen. Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann im Menü **Debuggen** zunächst **Fenster** und dann **Direkt** aus, oder drücken Sie STRG+ALT+I.  
   
  Sie können in diesem Fenster einzelne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehle ausgeben. Zu den verfügbaren Befehlen gehört `EvaluateStatement`. Damit können Variablen Werte zugewiesen werden. Das Fenster **Direkt** unterstützt auch IntelliSense.  
@@ -75,7 +74,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
   
     Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.  
   
-   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Walkthrough: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z. B. [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.  
   

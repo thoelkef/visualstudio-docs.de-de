@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944532"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657388"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -45,7 +45,6 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische S
 ## <a name="prerequisites"></a>Vorraussetzungen
 
 Bevor Sie in dieser exemplarischen Vorgehensweise beginnen können, müssen Sie zunächst diese Komponenten installieren:
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ Wenn Sie mehr als eine Nachverfolgungseigenschaft verwenden oder Eigenschaften d
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
-- [Vorgehensweise: Erstellen Sie eine DSL-Projektmappe](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Vorgehensweise: Erstellen einer Projektmappe für eine domänenspezifische Sprache](../modeling/how-to-create-a-domain-specific-language-solution.md)

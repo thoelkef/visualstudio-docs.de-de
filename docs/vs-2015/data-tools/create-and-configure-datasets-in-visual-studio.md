@@ -17,16 +17,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4679063634af102c71635f2d84b7c3e44cd33085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947310"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656247"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Ein *Dataset* ist ein Satz von Objekten, die Daten aus einer Datenbank im Arbeitsspeicher speichern und Aktivieren der änderungsnachverfolgung zu unterstützen erstellen, lesen, aktualisieren und löschen (CRUD) für diese Daten ohne die Notwendigkeit, immer mit der Datenbank verbunden werden. DataSets wurden entwickelt, für einfache *Formulare über Daten* Geschäftsanwendungen. Für neue Anwendungen sollten Sie in Betracht ziehen, Entity Framework zum Speichern und Modellieren von Daten im Arbeitsspeicher zu verwenden. Um mit Datasets arbeiten, sollten Sie über Grundkenntnisse der Konzepte der Datenbank verfügen.
 

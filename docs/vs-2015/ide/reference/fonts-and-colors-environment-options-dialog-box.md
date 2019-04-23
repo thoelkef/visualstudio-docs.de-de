@@ -27,17 +27,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761626"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656023"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
@@ -128,7 +127,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 |**Von Codeabdeckung nicht verwendeter Bereich**|Code, der nicht von einem Komponententest abgedeckt wurde.|  
 |**Von Codeabdeckung teilweise verwendeter Bereich**|Code, der teilweise von einem Komponententest abgedeckt wurde.|  
 |**Von Codeabdeckung verwendeter Bereich**|Code, der vollständig von einem Komponententest abgedeckt wurde.|  
-|**CSS-Kommentar**|Ein Kommentar in Cascading Stylesheets (CSS). Beispiel:<br /><br /> /* comment \*/|  
+|**CSS-Kommentar**|Ein Kommentar in Cascading Stylesheets (CSS). Zum Beispiel:<br /><br /> /* comment \*/|  
 |**CSS-Schlüsselwort**|Schlüsselwörter im Cascading Style Sheet (CSS).|  
 |**CSS-Eigenschaftenname**|Der Name einer Eigenschaft, z. B. „Background“.|  
 |**CSS-Eigenschaftenwert**|Der einer Eigenschaft zugewiesene Wert, z. B. „blue“.|  
@@ -164,7 +163,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 |**SQL-DML-Marker**|Gilt für den Transact-SQL-Editor. DML-Anweisungen in diesem Editor werden standardmäßig mit einem blauen Rahmen gekennzeichnet.|  
 |**Veralteter Code**|Abgelöster Code, für den ein Update erwartet wird. In einigen Fällen können Codeänderungen beim Bearbeiten und Fortfahren nicht sofort angewendet werden; sie werden später angewendet, wenn Sie mit dem Debuggen fortfahren. Dies geschieht, wenn Sie eine Funktion bearbeiten, die die aktuell ausgeführte Funktion aufrufen muss, oder wenn Sie einer in der Aufrufliste wartenden Funktion neue Variablen mit einer Größe von mehr als 64 Bytes hinzufügen. In diesem Fall zeigt der Debugger das Dialogfeld „Warnung: Veralteter Code“ an, und der abgelöste Code wird weiterhin ausgeführt, bis die betreffende Funktion beendet und erneut aufgerufen wird. Bearbeiten und Fortfahren wendet die Codeänderungen zu diesem Zeitpunkt an.|  
 |**String**|Zeichenfolgenliterale.|  
-|**Zeichenfolge (C# @ Verbatim)**|Zeichenfolgenliterale in C#, die wörtlich interpretiert werden. Beispiel:<br /><br /> @"x"|  
+|**Zeichenfolge (C# @ Verbatim)**|Zeichenfolgenliterale in C#, die wörtlich interpretiert werden. Zum Beispiel:<br /><br /> @"x"|  
 |**Syntaxfehler**|Analysefehler.|  
 |**Verknüpfung für Aufgabenliste**|Wenn einer Zeile eine Verknüpfung zu einer **Aufgabenliste** hinzugefügt wird und der Indikatorrand deaktiviert ist, wird die Zeile hervorgehoben.|  
 |**Ablaufverfolgungspunkt (Deaktiviert)**|Nicht verwendet.|  
@@ -192,7 +191,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 |**XML-Attribut**|Attributnamen.|  
 |**XML-Attributanführungszeichen**|Die Anführungszeichen für XML-Attribute.|  
 |**XML-Attributwert**|Der Inhalt von XML-Attributen.|  
-|**XML-CData-Abschnitt**|Der Inhalt von \<![CDATA[…]]>.|  
+|**XML-CData-Abschnitt**|Inhalt der \<! [CDATA [...]] >.|  
 |**XML-Kommentar**|Der Inhalt von \<!-- -->|  
 |**XML-Trennzeichen**|XML-Syntaxtrennzeichen, z.B. <, <?, <!, \<!--, -->, ?\>, \<![, ]]> und [, ]|  
 |**XML-Dokumentattribut**|Der Wert eines XML-Dokumentationsattributs wie z.B. \<param name="I">, wobei das „I“ farbig hervorgehoben ist|  

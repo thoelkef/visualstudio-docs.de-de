@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794281"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656487"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] enthalten ist, finden Sie unter [Task reference (Aufgabenreferenz)](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Aufgaben  

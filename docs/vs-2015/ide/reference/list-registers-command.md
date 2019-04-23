@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763038"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658538"
 ---
 # <a name="list-registers-command"></a>Befehl "Registrierungen auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zeigt den Wert des ausgewählten Registers an und ermöglicht es Ihnen, die Liste der anzuzeigenden Register zu ändern  
   
 ## <a name="syntax"></a>Syntax  
@@ -38,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>Schalter  
  /Display [{`register`|`registerGroup`}...]  
- Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Beispiel:  
+ Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Zum Beispiel:  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -67,5 +66,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
- [Grundlagen des Debuggens: Fenster „Register“](../../debugger/debugging-basics-registers-window.md)   
- [Gewusst wie: Verwenden des Fensters "Register"](../../debugger/how-to-use-the-registers-window.md)
+ [Debuggrundlagen: Fenster "Register"](../../debugger/debugging-basics-registers-window.md)   
+ [Vorgehensweise: Verwenden des Fensters „Register“](../../debugger/how-to-use-the-registers-window.md)

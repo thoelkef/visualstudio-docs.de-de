@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658708"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.
@@ -28,12 +28,10 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 
     In dieser exemplarischen Vorgehensweise werden die folgenden Namen angenommen:
 
-
    | | |
    |-|-|
    | Namen von Projektmappen und DSL | FarmApp |
    | Namespace | Company.FarmApp |
-
 
 2. Experimentieren Sie mit dem ersten Beispiel, das die Vorlage bereitstellt:
 

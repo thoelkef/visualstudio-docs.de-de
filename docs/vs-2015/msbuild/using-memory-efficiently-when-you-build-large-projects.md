@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b214ff057125b2921ec853fbee004cbb7d41f9e0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28d9f3d43faa53731b101dfdf58fe1e68a0920c5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792766"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655698"
 ---
 # <a name="using-memory-efficiently-when-you-build-large-projects"></a>Effiziente Verwendung des Speichers beim Erstellen umfangreicher Projekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Große Projekte enthalten häufig viele Unterprojekte und andere Abhängigkeiten, die während des Buildvorgangs viel Systemspeicher beanspruchen können. Wenn der verfügbare Systemspeicher verringert wird, kann sich auch die Systemleistung verschlechtern. Ältere Versionen von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekten waren speicherintern oder wurden in Version 3.5 entfernt. Die Buildergebnisse wurden jedoch für den späteren Abruf in einem Cache aufbewahrt.  
   
  In Version 4.0 wurde diese Speicherverwaltung automatisiert, weswegen Eigenschaften wie `UnloadProjectsOnCompletion` und `UseResultsCache` nun nicht mehr in Projekten verwendet werden müssen.  

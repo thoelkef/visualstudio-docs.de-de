@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960755"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656608"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ähnlich wie Sie die Daten in einer Tabelle in einer beliebigen Datenbank bearbeiten, bearbeiten Sie die Daten in Tabellen. Der Prozess kann enthalten, einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle. In einem datengebundenen Formular können Sie angeben, welche Felder Benutzer bearbeitbare sind. In diesen Fällen behandelt die Infrastruktur für die Datenbindung an, alle der änderungsnachverfolgung, damit die Änderungen später an die Datenbank gesendet werden können. Wenn Sie programmgesteuert Änderungen an Daten vornehmen und diese Änderungen an die Datenbank gesendet werden sollen, müssen Sie verwenden die Objekte und Methoden, die die änderungsnachverfolgung für die Sie ausführen.  
   
  Sie können auch Abfragen, zusätzlich zum Ändern der tatsächlichen Daten, eine <xref:System.Data.DataTable> um bestimmte Datenzeilen zurückzugeben. Beispielsweise können Sie Abfragen für einzelne Zeilen, bestimmte Versionen von Zeilen (ursprüngliche und vorgesehene), geänderte Zeilen oder Zeilen mit Fehlern.  

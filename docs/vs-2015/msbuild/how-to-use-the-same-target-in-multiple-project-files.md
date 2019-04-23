@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769332"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654866"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateien autorisiert haben, haben Sie möglicherweise festgestellt, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.  
   
 ## <a name="using-the-import-element"></a>Verwenden des Import-Elements  

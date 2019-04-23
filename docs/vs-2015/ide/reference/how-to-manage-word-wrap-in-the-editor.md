@@ -13,17 +13,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753245"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656010"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Gewusst wie: Verwalten des Zeilenumbruchs im Editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Vorgehensweise: Verwalten des Zeilenumbruchs im Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Sie können die Option **Zeilenumbruch** aktivieren und deaktivieren. Wenn diese Option aktiviert ist, wird der Teil einer langen Zeile, der über die aktuelle Breite des Code-Editor-Fensters hinausgeht, auf der nächsten Zeile angezeigt. Wenn diese Option deaktiviert ist, können Sie nach rechts scrollen, um ans Ende von langen Zeilen zu gelangen, z.B. um die Verwendung der Zeilennummerierung zu erleichtern.  
   
  Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  

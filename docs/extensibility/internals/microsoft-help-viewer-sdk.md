@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868300"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660711"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -63,7 +63,7 @@ Unterstützte Sprache-Zeichenfolgen (ohne Beachtung von Groß-/Kleinschreibung):
 
 -   JavaScript
 
--   CSharp- oder C#
+-   CSharp- oder c#
 
 -   Cplusplus oder Visual c++ oder c++
 
@@ -352,14 +352,13 @@ Fügen Sie den folgenden Registrierungsschlüssel und den Wert ein:
 
 ::: moniker-end
 
-Wert: Anzeigen der Debugausgabe in Retail-Daten: "JA"
+Wert: Anzeigen der Debugausgabe in Retail-Daten: YES
 
 Wählen Sie in der IDE vornehmen, klicken Sie unter der Hilfe **Hilfekontext Debuggen**.
 
 **Content-Metadaten**
 
 In der folgenden Tabelle ist eine beliebige Zeichenfolge, die in Klammern steht ein Platzhalter, der von der kein gültiger Wert ersetzt werden muss. Z. B. in \<Meta name="Microsoft.Help.Locale" Inhalt = "[Language-Code]" / >, "[Sprachcode]" ersetzt werden muss durch einen Wert wie z. B. "En-us".
-
 
 | Eigenschaft (HTML-Darstellung) | Beschreibung |
 | - | - |

@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605171"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659500"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-in-Wechsel
+# <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-In-Wechsel
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verfügt über die Benutzeroberfläche (UI) so ändern Sie das aktuelle Quellcodeverwaltungs-Plug-in. Dieser Testbereich bietet Testfälle für den Prozess auswählen, die für die Verwendung für die quellcodeverwaltung des Projektmappen-Plug-in.
 
 ## <a name="command-menu-access"></a>Menüzugriff Befehl
@@ -39,7 +39,6 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Ent
 #### <a name="expected-behavior"></a>Es wird erwartet
  Wenn ein Benutzer eine Projektmappe geladen wird, die unter quellcodeverwaltung befindet, die Projektmappe wird automatisch geladen, und das entsprechende Quellcodeverwaltungs-Plug-in als aktuell ausgewählt ist.
 
-
 | Aktion | Testschritte | Erwartete Ergebnisse überprüfen |
 | - | - | - |
 | Automatische Source Control-Plug-in ändern | 1.  Select-Plug-in als aktuell testen (**Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **-Plug-in Auswahl**.)<br />2.  Erstellen Sie ein neues Projekt.<br />3.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />4.  Wählen Sie eine andere-Plug-in (z. B. [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Akzeptieren Sie entladen Lösung-Eingabeaufforderung.<br />6.  Öffnen Sie die Projektmappe vom Datenträger aus. | Projektmappe wird geöffnet.<br /><br /> -Plug-in im Test wird das aktuelle Quellcodeverwaltungs-Plug-in. |
@@ -48,7 +47,6 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Ent
 
 #### <a name="expected-behavior"></a>Es wird erwartet
  Die Lösung kann die zugehörige Quellcodeverwaltungs-Plug-in geändert haben.
-
 
 | Aktion | Testschritte | Erwartete Ergebnisse überprüfen |
 |----------------------------------| - | - |

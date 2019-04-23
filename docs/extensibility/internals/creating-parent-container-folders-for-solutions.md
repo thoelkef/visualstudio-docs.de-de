@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602013"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661060"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten containerordnern für Projektmappen
 In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein einziger Stammknoten Quelle-Ziel-Steuerelement für alle Webprojekte in der Projektmappe angeben. Diese einzelne Stamm ist eine Super Unified-Stamm (SUR) aufgerufen.
@@ -42,7 +42,6 @@ In der Quelle Steuerelement-Plug-in-API-Version 1.2 können einen Benutzer ein e
 -   Es gibt andere Freigaben für das Projekt und die Projektmappendatei.
 
 -   Getrennt (in einer Projektmappe unter quellcodeverwaltung) wurden Projekte hinzugefügt.
-
 
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es wird empfohlen, dass der Name für den SUR-Ordner den Namen der Projektmappe ohne Erweiterung identisch sein. In der folgende Tabelle wird das Verhalten in beiden Versionen zusammengefasst.
 

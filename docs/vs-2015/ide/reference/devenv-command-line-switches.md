@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754970"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653865"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z. B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.  
   
 > [!NOTE]

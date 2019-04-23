@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783471"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653280"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools den Profiler an eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung anfügen und Daten zur Anzahl und Größe der .NET Framework-Speicherbelegungen sammeln können. Sie können außerdem Daten zur Lebensdauer von .NET Framework-Arbeitsspeicherobjekten erfassen.  
@@ -77,7 +77,6 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt.                                                                                          |
 
-
 6. Starten Sie die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung auf die gewohnte Weise.  
 
 7. Fügen Sie den Profiler an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess an. Typ:  
@@ -110,7 +109,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
 
    - Geben Sie **VSPerfCmd** [/detach](../profiling/detach.md) ein.  
 
-      - oder -  
+      - oder -   
 
    - Schließen Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess. Typ:  
 

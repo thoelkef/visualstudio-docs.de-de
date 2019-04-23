@@ -19,17 +19,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2d69d19e43ae2e94382e32ba6579f55cecb2efca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766188"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659487"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Umschließt CSC.exe und erzeugt ausführbare Dateien (EXE-Dateien), Dynamic Link Libraries (DLL-Dateien) und Codemodule (NETMODULE-Dateien). Weitere Informationen zu CSC.exe finden Sie unter [C# Compiler Options (C#-Compileroptionen)](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44).  
   
 ## <a name="parameters"></a>Parameter  

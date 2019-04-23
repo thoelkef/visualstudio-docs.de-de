@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773084"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653488"
 ---
 # <a name="msbuild-transforms"></a>MSBuild-Transformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine andere. Über Transformationen können nicht nur Elementlisten in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. In diesem Artikel werden Transformationen thematisiert, und es wird erläutert, wie sie von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zur effizienteren Erstellung von Projekten verwendet werden.  
   
 ## <a name="transform-modifiers"></a>Transformationsmodifizierer  
@@ -55,7 +54,7 @@ Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine an
 ## <a name="dependency-analysis"></a>Abhängigkeitsanalyse  
  Tansformationen garantieren eine 1:1-Zuordnung zwischen der transformierten und der ursprünglichen Elementliste. Wenn daher ein Ziel Ausgaben erzeugt, die Transformationen der Eingaben sind, kann [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die Zeitstempel der Ein- und Ausgaben analysieren und entscheiden, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt werden soll.  
   
- In der [Kopieraufgabe](../msbuild/copy-task.md) im folgenden Beispiel ist jede Datei in der `BuiltAssemblies`-Elementliste einer Datei im Zielordner der Aufgabe zugeordnet, die durch eine Transformation im `Outputs`-Attribut bestimmt wird. Wenn eine Datei in der `BuiltAssemblies`-Elementliste geändert wird, wird die `Copy`-Aufgabe nur für die geänderte Datei ausgeführt, und alle anderen Dateien werden übersprungen. Weitere Informationen zur Abhängigkeitsanalyse finden Sie unter [How to: Build Incrementally (Vorgehensweise: Inkrementelles Erstellen)](../msbuild/how-to-build-incrementally.md).  
+ In der [Kopieraufgabe](../msbuild/copy-task.md) im folgenden Beispiel ist jede Datei in der `BuiltAssemblies`-Elementliste einer Datei im Zielordner der Aufgabe zugeordnet, die durch eine Transformation im `Outputs`-Attribut bestimmt wird. Wenn eine Datei in der `BuiltAssemblies`-Elementliste geändert wird, wird die `Copy`-Aufgabe nur für die geänderte Datei ausgeführt, und alle anderen Dateien werden übersprungen. Weitere Informationen zur Abhängigkeitsanalyse finden Sie unter [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -112,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Gewusst wie: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)
+ [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)

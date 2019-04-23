@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24222b60db1ba35da59069e58d6f1377928e7a54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 25897eac467fe318ac67b91db247d2fd7b6ec68a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714919"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654411"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Eine Struktur, die ein Array von Zeichenfolgen beschreibt.
@@ -46,8 +46,7 @@ Member-Array von Zeichenfolgen.
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zurückgegeben, die [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) Methode.
 
-
- [Nur für C++] Jeder einzelnen Zeichenfolge muss freigegeben werden, mithilfe von `SysFreeString`, und die `Members` Array muss mit dem freigegeben `CoTaskMemFree`.
+ [C++ nur] Jeder einzelnen Zeichenfolge muss freigegeben werden, mithilfe von `SysFreeString`, und die `Members` Array muss mit dem freigegeben `CoTaskMemFree`.
 
 ## <a name="requirements"></a>Anforderungen
 Header: msdbg.h

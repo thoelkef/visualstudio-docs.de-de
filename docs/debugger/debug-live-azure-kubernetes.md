@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856689"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654710"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure Kubernetes Services mit dem Momentaufnahmedebugger
 
@@ -33,11 +33,11 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Festlegen eines Andockpunkts und Anzeigen einer Momentaufnahme
 > * Festlegen eines Protokollpunkts
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
-* Der Momentaufnahmedebugger für Azure Kubernetes Services ist nur für die Vorschau von Visual Studio 2019 Enterprise oder höher mit der **Azure-Entwicklungsworkload** verfügbar. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
+* Snapshot-Debugger für die Azure-Kubernetes-Dienste nur für Visual Studio Enterprise mit 2019 verfügbar oder höher mit der **Azure-entwicklungsworkload**. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
 
-    Falls noch nicht installiert, installieren Sie [Visual Studio 2019 Enterprise – Vorschauversion](https://visualstudio.microsoft.com/vs/preview/).
+    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * Die Momentaufnahmensammlung ist für folgende Azure Kubernetes Services-Web-Apps verfügbar:
   * ASP.NET Core-Apps, die in .NET Core 2.2 oder höher unter Debian 9 ausgeführt werden.

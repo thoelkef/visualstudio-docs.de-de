@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857475"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656439"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger
 
@@ -32,11 +32,16 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Festlegen eines Andockpunkts und Anzeigen einer Momentaufnahme
 > * Festlegen eines Protokollpunkts
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
-* Der Momentaufnahmedebugger ist nur für Visual Studio 2017 Enterprise Version 15.5 oder höher mit der **Azure-Entwicklungsworkload** verfügbar. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
+* Momentaufnahmedebugger ist nur verfügbar in Visual Studio 2017 Enterprise-Version 15.5 oder höher mit der **Azure-entwicklungsworkload**. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
 
-    Falls noch nicht installiert, installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) oder höher. Wenn Sie von einer früheren Visual Studio 2017-Installation aus aktualisieren, führen Sie den Visual Studio-Installer aus, und überprüfen Sie die Momentaufnahmedebugger-Komponente in der **ASP.NET- und Webentwicklungsworkload**.
+    ::: moniker range=">=vs-2019"
+    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio-2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Wenn Sie von einer früheren Visual Studio-Installation aktualisieren, führen Sie den Visual Studio-Installer, und überprüfen Sie die Snapshot-Debugger-Komponente in der **ASP.NET und Web-entwicklungsworkload**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Falls noch nicht installiert, installieren Sie [Visual Studio 2017 Enterprise Version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) oder höher. Wenn Sie von einer früheren Visual Studio 2017-Installation aus aktualisieren, führen Sie den Visual Studio-Installer aus, und überprüfen Sie die Momentaufnahmedebugger-Komponente in der **ASP.NET- und Webentwicklungsworkload**.
+    ::: moniker-end
 
 * Azure App Service-Plan Basic oder höher.
 
@@ -73,7 +78,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
   > Die Application Insights-Websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine „Websiteerweiterung veraltet“-Fehlermeldung erhalten, finden Sie unter [Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio](../debugger/debug-live-azure-apps-troubleshooting.md) weitere Informationen zum Aktualisieren.
 
    Visual Studio ist jetzt im Modus des Debuggens von Momentaufnahmen.
-   ![Modus des Debuggens von Momentaufnahmen](../debugger/media/snapshot-message.png)
+   ![Momentaufnahme-debugging-Modus](../debugger/media/snapshot-message.png)
 
    Im Fenster **Module** sehen Sie, ob alle Module für den Azure App Service geladen wurden (wählen Sie **Debuggen > Fenster > Module** zum Öffnen des Fensters aus).
 

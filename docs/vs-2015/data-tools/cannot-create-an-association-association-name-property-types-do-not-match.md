@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960020"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656595"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf. Die Eigenschaften weisen keine übereinstimmenden Typen auf: \<Eigenschaftennamen>.  
   
  Zuordnungen werden im Dialogfeld **Zuordnungs-Editor** von den ausgewählten **Zuordnungseigenschaften** definiert. Eigenschaften auf jeder Seite der Zuordnung müssen den gleichen Datentyp haben.  

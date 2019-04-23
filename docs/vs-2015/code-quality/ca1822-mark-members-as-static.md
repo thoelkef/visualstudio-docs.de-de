@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001827"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659773"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1822: Member als statisch markieren](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1822: Member als statisch markieren](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |TypeName|MarkMethodsAsStatic|  
 |CheckId|CA1822|  
 |Kategorie|Microsoft.Performance|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung. Nicht unterbrechend – Wenn Sie das Element auf einen Instanzmember mit ändern Sie einfach die `this` Schlüsselwort.<br /><br /> Unterbrechend – Wenn Sie das Element über ein Instanzmember in einen statischen Member ändern und außerhalb der Assembly sichtbar ist.|  
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung.<br /><br /> Nicht unterbrechend – Wenn Sie nur das Element auf einen Instanzmember mit Ändern der `this` Schlüsselwort.<br /><br /> Unterbrechend – Wenn Sie das Element über ein Instanzmember in einen statischen Member ändern und außerhalb der Assembly sichtbar ist.|  
   
 ## <a name="cause"></a>Ursache  
  Ein Element, das nicht auf Instanzdaten zugreift, ist nicht als statisch markiert (Shared in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  

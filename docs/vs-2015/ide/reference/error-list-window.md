@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785770"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658148"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 HINWEIS]
 >  In der Fehlerliste werden Informationen zu einer bestimmten Fehlermeldung angezeigt. Sie können die Fehlernummer oder den Fehlerzeichenfolgentext im Ausgabefenster kopieren. Drücken Sie zum Anzeigen des Ausgabefensters STRG+ALT+O. Siehe [Ausgabefenster](../../ide/reference/output-window.md).  
   
@@ -58,7 +57,7 @@ HINWEIS]
   
  Sie können den Suchbereich einschränken, um Gruppen von Fehlern zu analysieren und zu behandeln. Beispielsweise sollten Sie sich auf Kernfehler konzentrieren, die das Kompilieren eines Projekts verhindern. Es gibt folgende Eingrenzungsoptionen:  
   
-1. **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die offenen Dokumente an.  
+1. **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die geöffneten Dokumente an.  
   
 2. **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.  
   

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789807"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659672"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Tastenkombinationen (HTML und JavaScript)
 
@@ -28,7 +28,6 @@ ms.locfileid: "58789807"
 ::: moniker range="vs-2017"
  Tastenkombinationen in Visual Studio zum Debuggen von UWP-apps mit HTML und JavaScript.
 ::: moniker-end
-
 
 ## <a name="general-shortcuts"></a>Allgemeine Tastenkombinationen
 
@@ -66,5 +65,5 @@ ms.locfileid: "58789807"
 
 ## <a name="see-also"></a>Siehe auch
 - [JavaScript-Konsolenbefehle](../debugger/javascript-console-commands.md)
-- [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

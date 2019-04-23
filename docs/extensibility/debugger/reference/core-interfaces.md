@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702277"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660787"
 ---
 # <a name="core-interfaces"></a>Wichtige Schnittstellen
 Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung des Debuggers mit den [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -138,7 +138,6 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 ##  <a name="Events"></a> Ereignisse
  Diese Schnittstellen darstellen, alle Ereignisse, die zwischen dem DE und sitzungsbasierter Debug-Manager (SDM) gesendet werden.
 
-
 | Interface | Implementiert von | Beschreibung |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Gesendet durch die DE um fordern ein Dokument geöffnet werden. |
@@ -211,7 +210,6 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 
 ##  <a name="Ports"></a> Ports
  Diese Schnittstellen werden die Ports und Portanbieter darstellen.
-
 
 | Interface | Implementiert von | Beschreibung |
 | - |----------------| - |

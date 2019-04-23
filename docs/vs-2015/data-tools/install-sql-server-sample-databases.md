@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956615"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654502"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installieren von SQL Server-Beispieldatenbanken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Beispieldatenbanken sind nützlich für das Experimentieren mit SQL und LINQ-Abfragen, Datenbindung, Entity Framework-Modellierung und So weiter.  Jedes Produkt-Datenbank verfügt über eine eigene Beispieldatenbanken. Sind zwei gängige SQL Server-Beispieldatenbanken Northwind und AdventureWorks.  
   
  **AdventureWorks** ist die aktuelle Beispieldatenbank für SQL Server-Produkte bereitgestellt. Sie können es herunterladen, wie eine MDF-Datei aus dem [Seite "AdventureWorks" auf Codeplex](http://msftdbprodsamples.codeplex.com/). Hier sind regelmäßige und einfache (LT) Versionen der Datenbank verfügbar. In den meisten Fällen wird die Version LT bevorzugt, da sie weniger komplex ist.  

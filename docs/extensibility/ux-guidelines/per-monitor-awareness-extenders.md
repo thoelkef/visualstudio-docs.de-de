@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504249"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660696"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Unterstützung für die Monitorspezifische dpi-Erkennung für Visual Studio-Extender
 Versionen vor Visual Studio-2019 mussten die DPI-Wert-Awareness-Kontext auf System fähig ist, anstatt monitorspezifische dpi-DPI-bewusst (PMA) festgelegt. System Awareness auf führte zu einer beeinträchtigten Visualisierung (z. B. unscharf Schriftarten oder Symbolsatz) auftreten, wenn musste, dass Visual Studio über Monitore mit verschiedenen Skalierungsfaktoren oder Remote in Computern mit verschiedenen Anzeigekonfigurationen z. B. (unterschiedliche Rendern Windows-Skalierung).
@@ -40,10 +40,13 @@ Finden Sie in der [hohe DPI-Wert Desktop-Anwendungsentwicklung unter Windows](ht
 ## <a name="enabling-pma"></a>Aktivieren der PMA
 Um PMA in Visual Studio zu aktivieren, müssen die folgenden Anforderungen erfüllt sein:
 1)  Windows 10 April 2018 Update (Version RS4 v1803) oder höher
-2)  .NET Framework 4.8 RTM oder höher (derzeit wird als eigenständige Vorschau oder Bundle mit aktuellen Windows Insider-builds)
+2)  .NET Framework 4.8 RTM oder höher
 3)  Visual Studio-2019 mit der ["Optimieren des Renderings für Bildschirme mit verschiedenen Pixel dichten"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) Option aktiviert ist
 
 Wenn diese Anforderungen erfüllt sind, wird Visual Studio automatisch über den Prozess PMA-Modus aktiviert.
+
+> [!NOTE]
+> Windows Forms-Inhalt in Visual Studio (z. B. Eigenschaften-Browser) unterstützt die PMA nur, wenn Sie Visual Studio 2019 Update 1 verfügen.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Testen Ihre Erweiterungen für PMA-Probleme
 
@@ -106,12 +109,18 @@ Jedes Mal, wenn konnte im gemischten Modus DPI-Wert-Szenarien (z. B. verschieden
 #### <a name="out-of-process-ui"></a>Out-of-Process-Benutzeroberfläche
 Einige Elemente der Benutzeroberfläche Out-of-Process erstellt, und ist der Erstellen von externe Prozess in einem anderen DPI-Awareness-Modus als Visual Studio, kann dies die vorherigen Rendering-Probleme führen.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows Forms-Steuerelemente, Bilder oder Windows nicht angezeigt.
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows Forms-Steuerelemente, Bilder oder Layouts, die nicht ordnungsgemäß gerendert
+Nicht alle von der Windows Forms-Inhalten unterstützen PMA-Modus. Daher möglicherweise rendering-Problem mit falschen Layouts oder Skalierung angezeigt. Eine mögliche Lösung in diesem Fall ist, um Windows Forms-Inhalt in "System kennen" DpiAwarenessContext explizit zu rendern (finden Sie unter [erzwingen ein Steuerelement in einem bestimmten DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows Forms-Steuerelemente oder Windows, die nicht angezeigt.
 Eine der Hauptursachen für dieses Problem, dass ist Entwickler, die ein Steuerelement oder das Fenster mit einem DpiAwarenessContext für ein Fenster mit einer anderen DpiAwarenessContext Neuzuordnen des übergeordneten Elements.
 
-Die folgenden Abbildungen zeigen die aktuellen Einschränkungen der Windows-Betriebssystem in überordnen von Windows:
+Die folgenden Abbildungen zeigen die aktuelle **Standard** Windows-Betriebssystem-Einschränkungen in überordnen von Windows:
 
 ![Ein Screenshot, der das richtige übergeordnete Verhalten](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> Sie können dieses Verhalten ändern, indem das Thread-Hosting-Verhalten festlegen (finden Sie unter [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Wenn Sie eine über-/ unterordnungsbeziehung zwischen den nicht unterstützten Modi festgelegt, daher es schlägt fehl, und das Steuerelement oder das Fenster kann nicht gerendert werden wie erwartet.
 

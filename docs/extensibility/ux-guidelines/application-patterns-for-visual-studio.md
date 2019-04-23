@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MT
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796880"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659786"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Fenster-Interaktionen
@@ -547,7 +547,6 @@ Der Benutzer muss immer bestimmen Sie die Auswirkungen eines Drag & Drop-Vorgang
 
 #### <a name="directory-based-projects"></a>Verzeichnisbasierte Projekte
 Die folgende Tabelle enthält die Drag & Drop (sowie Ausschneiden/Kopieren/Einfügen) Vorgänge, die ausgeführt werden sollte aufgrund der Natur von Element "und"-Modifizierer Quellschlüssel gedrückt für verzeichnisbasierte Zielprojekte:
-
 
 | Modifizierer | Kategorie | Das Quellelement: Verweis/Link | Das Quellelement: Physische Element oder das Dateisystem (`CF_HDROP`) |
 |-----------------|----------| - | - |

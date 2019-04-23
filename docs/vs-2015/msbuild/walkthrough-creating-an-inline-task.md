@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1dd2cb3278357f05d5ed08031c8e385d45f1a35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800491"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655386"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Weitere Informationen hierzu finden Sie unter [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md).  
   
  In dieser exemplarischen Vorgehensweise wird das Erstellen und Ausführen der folgenden Inlineaufgaben erläutert:  

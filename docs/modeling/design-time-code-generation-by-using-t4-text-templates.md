@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415695"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657466"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateien in Ihrem Visual Studio-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
@@ -341,12 +341,10 @@ Warning("A warning message");
 
 4. Überprüfen Sie die folgenden Eigenschaften der **TT** Datei:
 
-
    | | |
    |-|-|
    | **Benutzerdefiniertes Tool =** | **TextTemplatingFileGenerator** |
    | **Buildvorgang =** | **Keine** |
-
 
 5. Fügen Sie am Anfang der Datei die folgenden Zeilen ein:
 

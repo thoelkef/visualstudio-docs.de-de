@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
-ms.translationtype: MT
+ms.openlocfilehash: 081abc8765e1f95b723a598f4fedbaef4357c539
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857774"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655174"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostizieren von Problemen nach der Bereitstellung mithilfe von IntelliTrace (C#, Visual Basic)
 
@@ -31,7 +31,7 @@ Um Probleme mit der Webanwendung ASP.NET nach der Bereitstellung mit IntelliTrac
 
 -   Visual Studio Enterprise (nicht Professional oder Community Editions) zum Anzeigen von Diagnosedaten und Debuggen Ihres Codes mit IntelliTrace
 
-##  <a name="SetUpBuild"></a> Schritt 1: Aufnehmen der Buildinformationen in Ihre Version
+##  <a name="SetUpBuild"></a> Schritt 1: Einschließen von Build-Informationen in Ihren Versionscode
  Richten Sie den Buildprozess ein, um eine Buildmanifestdatei (*BuildInfo.config*) für Ihr Webprojekt zu erstellen, und fügen Sie dieses Manifest in Ihre Version ein. Dieses Manifest enthält Informationen über Projekt, Quellcodeverwaltung und Buildsystem, die für die Erstellung einer bestimmten Version verwendet wurden. Mit diesen Informationen kann Visual Studio die entsprechenden Quellen und Symbole finden, nachdem Sie das IntelliTrace-Protokoll geöffnet haben, um die aufgezeichneten Ereignisse zu prüfen.
 
 ###  <a name="AutomatedBuild"></a> Erstellen des Buildmanifests für einen automatischen Buildvorgang mithilfe von Team Foundation Server
@@ -46,11 +46,10 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 * Wenn Sie IntelliTrace verwenden müssen, öffnen Sie das Projekt in Visual Studio, und laden Sie die Symboldateien aus dem entsprechenden Build. Sie können Symboldateien aus dem Fenster **Module** oder durch Konfigurieren von Symbolen in **Extras** > **Optionen** > **Debuggen** > **Symbole** laden.
 
-
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Richten Sie Ihre Buildpipeline so ein, dass sie die Speicherorte Ihrer Quellen, des Builds und der Symbole in das Buildmanifest (BuildInfo.config-Datei) schreibt. Team Foundation Build erstellt diese Datei automatisch und fügt sie in das Ausgabeverzeichnis Ihres Projekts ein.
 
-1.  [Bearbeiten Sie Ihre Buildpipeline, oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1.  [Bearbeiten Sie Ihrer erstellungspipeline, oder erstellen Sie eine neue Buildpipeline.](/azure/devops/pipelines/get-started-designer?view=vsts)
 
      ![Anzeigen der Buildpipeline in TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -90,7 +89,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 6.  Führen Sie einen neuen Build aus.
 
-    Gehen Sie zu [Schritt 2: Freigeben der App](#DeployRelease).
+    Wechseln Sie zu [Schritt 2: Veröffentlichen Ihrer Anwendung](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 oder 2010
  Führen Sie die folgenden Schritte aus, um das Buildmanifest (BuildInfo.config) für Ihr Projekt automatisch zu erstellen und in das Ausgabeverzeichnis Ihres Projekts einzufügen. Die Datei erscheint als "*ProjektName*.BuildInfo.config" im Ausgabeverzeichnis, wird jedoch im Bereitstellungsverzeichnis als "BuildInfo.config" umbenannt, nachdem Sie Ihre App veröffentlicht haben.
@@ -115,7 +114,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 4.  Führen Sie einen neuen Build aus.
 
-    Gehen Sie zu [Schritt 2: Freigeben der App](#DeployRelease).
+    Wechseln Sie zu [Schritt 2: Veröffentlichen Ihrer Anwendung](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> Erstellen des Buildmanifests für einen manuellen Buildvorgang mithilfe von Visual Studio
  Führen Sie die folgenden Schritte aus, um das Buildmanifest (BuildInfo.config) für Ihr Projekt automatisch zu erstellen und in das Ausgabeverzeichnis Ihres Projekts einzufügen. Die Datei erscheint als "*ProjektName*.BuildInfo.config" im Ausgabeverzeichnis, wird jedoch im Bereitstellungsverzeichnis als "BuildInfo.config" umbenannt, nachdem Sie Ihre App veröffentlicht haben.
@@ -142,7 +141,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 4.  Führen Sie einen neuen Build aus.
 
-    Gehen Sie zu [Schritt 2: Freigeben der App](#DeployRelease).
+    Wechseln Sie zu [Schritt 2: Veröffentlichen Ihrer Anwendung](#DeployRelease)
 
 ###  <a name="MSBuild"></a> Erstellen des Buildmanifests für einen manuellen Buildvorgang mithilfe von „MSBuild.exe“
  Fügen Sie diese Buildargumente beim Ausführen des Builds hinzu:
@@ -153,22 +152,22 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
  **/p:BuildSymbolStorePath=**\<*Pfad zu Symbolen*>
 
-##  <a name="DeployRelease"></a> Schritt 2: Freigeben der App
+##  <a name="DeployRelease"></a> Schritt 2: Veröffentlichen Ihrer Anwendung
  Wenn Sie das [Web.Deploy-Paket](https://msdn.microsoft.com/library/dd394698.aspx) verwenden, das vom Build-Prozess zum Bereitstellen Ihrer App erstellt wurde, wird das Buildmanifest automatisch von „*Projektname*.BuildInfo.config“ zu „BuildInfo.config“ umbenannt und auf dem Webserver im gleichen Verzeichnis wie die Web.config-Datei Ihrer App abgelegt.
 
  Wenn Sie eine andere Methode zum Bereitstellen Ihrer App verwenden, müssen Sie sicherstellen, dass das Buildmanifest von "*ProjektName*.BuildInfo.config" zu "BuildInfo.config" umbenannt und auf dem Webserver im gleichen Verzeichnis wie die Web.config-Datei Ihrer App abgelegt wird.
 
-## <a name="step-3-monitor-your-app"></a>Schritt 3: Überwachen der App
+## <a name="step-3-monitor-your-app"></a>Schritt 3: Überwachen Sie Ihre app
  Richten Sie Leistungsüberwachung für Ihre App auf dem Webserver ein, um Ihre App auf Probleme zu untersuchen, Diagnoseereignisse aufzuzeichnen und diese Ereignisse in einer IntelliTrace-Protokolldatei zu speichern. Siehe [Überwachen Ihrer App auf Bereitstellungsprobleme](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents"></a> Schritt 4: Ermitteln des Problems
- Sie benötigen Visual Studio Enterprise auf Ihrem Entwicklungscomputer oder einem anderen Computer, um die aufgezeichneten Ereignisse anzuzeigen und Ihren Code mit IntelliTrace zu debuggen. Sie können alternativ Tools wie CodeLens, IntelliTrace, Debuggerzuordnungen und Codezuordnungen verwenden, um das Problem zu diagnostizieren.
+##  <a name="InvestigateEvents"></a> Schritt 4: Problemsuche
+ Sie benötigen Visual Studio Enterprise auf Ihrem Entwicklungscomputer oder einem anderen Computer, um die aufgezeichneten Ereignisse anzuzeigen und Ihren Code mit IntelliTrace zu debuggen. Sie können alternativ Tools wie CodeLens, IntelliTrace, Debuggerzuordnungen und Code Maps verwenden, um das Problem zu diagnostizieren.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Öffnen des IntelliTrace-Protokolls und der entsprechenden Projektmappe
 
 1.  Öffnen Sie das IntelliTrace-Protokoll (ITRACE-Datei) in Visual Studio Enterprise. Oder doppelklicken Sie einfach auf die Datei, wenn Visual Studio Enterprise auf demselben Computer installiert ist.
 
-2.  Wählen Sie **Projektmappe öffnen** aus, damit die entsprechende Projektmappe oder das Projekt automatisch in Visual Studio geöffnet wird, wenn das Projekt nicht als Teil einer Projektmappe erstellt wurde. [F: Im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte App. Wie konnte das geschehen? Was kann ich unternehmen?](#InvalidConfigFile)
+2.  Wählen Sie **Projektmappe öffnen** aus, damit die entsprechende Projektmappe oder das Projekt automatisch in Visual Studio geöffnet wird, wenn das Projekt nicht als Teil einer Projektmappe erstellt wurde. [Frage: Im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte App. Wie konnte das geschehen? Wie gehe ich vor?](#InvalidConfigFile)
 
      Visual Studio legt alle ausstehenden Änderungen automatisch ab, wenn die entsprechende Projektmappe oder das Projekt geöffnet wird. Nähere Informationen zu diesem Shelvesets finden Sie im Fenster **Ausgabe** oder **Team Explorer**.
 
@@ -186,9 +185,9 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
      Um einen Arbeitsbereich mit bestimmten Zuordnungen oder einen Namen zu erstellen, der nicht Ihrem Computernamen entspricht, wählen Sie **Verwalten**aus.
 
-     [F: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?](#IneligibleWorkspace)
+     [Frage: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?](#IneligibleWorkspace)
 
-     [F: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamauflistung oder eine andere Auflistung ausgewählt habe?](#ChooseTeamProject)
+     [Frage: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamauflistung oder eine andere Auflistung ausgewählt habe?](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnose eines Leistungsproblems
 
@@ -248,12 +247,12 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 ###  <a name="FAQ"></a> Fragen und Antworten
 
-####  <a name="WhyInclude"></a> F: Warum sollte ich Informationen über mein Projekt, die Quellcodeverwaltung, Version und Symbole in meine Version aufnehmen?
+####  <a name="WhyInclude"></a> Frage: Warum sollte ich Informationen über mein Projekt, die Quellcodeverwaltung, Version und Symbole in meine Version integrieren?
  Visual Studio verwendet diese Informationen, um die passende Lösung und den entsprechenden Quellcode für die Version zu finden, die Sie gerade debuggen. Nachdem Sie das IntelliTrace-Protokoll geöffnet und ein zu debuggendes Ereignis ausgewählt haben, zeigt Ihnen Visual Studio anhand der Symbole den Code, in dem das Ereignis aufgetreten ist. Anschließend können Sie die aufgezeichneten Werte anzeigen und den ausgeführten Code vorwärts und rückwärts durchlaufen.
 
  Falls Sie TFS verwenden und Ihr Buildmanifest (Datei „BuildInfo.config“) diese Informationen nicht enthält, sucht Visual Studio in Ihrem aktuell verbundenen TFS nach dem passenden Quellcode und den entsprechenden Symbolen. Wenn Visual Studio das korrekte TFS oder den entsprechenden Quellcode nicht findet, werden Sie aufgefordert, ein anderes TFS auszuwählen.
 
-####  <a name="InvalidConfigFile"></a> F: Im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte App. Wie konnte das geschehen? Was kann ich unternehmen?
+####  <a name="InvalidConfigFile"></a> Frage: Im IntelliTrace-Protokoll fehlen Informationen über die bereitgestellte App. Wie konnte das geschehen? Was kann ich unternehmen?
  Dies kann geschehen, wenn Sie die App von Ihrem Entwicklungscomputer bereitstellen oder bei der Bereitstellung nicht mit dem TFS verbunden sind.
 
 1.  Öffnen Sie den Bereitstellungsordner Ihres Projekts.
@@ -262,9 +261,9 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 3.  Vergewissern Sie sich, dass die folgenden Informationen enthalten sind:
 
-- **ProjektName**
+- **ProjectName**
 
-   Der Name Ihres Projekts in Visual Studio. Beispiel:
+   Der Name Ihres Projekts in Visual Studio. Zum Beispiel:
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -276,13 +275,13 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
   - **TFS**
 
-    - **ProjectCollectionUri**: der URI für Ihren Team Foundation Server und Ihre Projektsammlung
+    - **ProjectCollectionUri**: Der URI für Ihren Team Foundation Server und Ihre Projektsammlung
 
-    - **ProjectItemSpec**: der Pfad zur Projektdatei Ihrer App (.csproj oder .vbproj)
+    - **ProjectItemSpec**: Pfad zur Projektdatei Ihrer App (.csproj or .vbproj)
 
-    - **ProjectVersionSpec**: die Version Ihres Projekts
+    - **ProjectVersionSpec**: Die Version Ihres Projekts
 
-      Beispiel:
+      Zum Beispiel:
 
     ```xml
     <SourceControl type="TFS">
@@ -296,15 +295,15 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
   - **Git**
 
-    - **GitSourceControl**: der Speicherort des **GitSourceControl** -Schemas
+    - **GitSourceControl**: Der Speicherort des **GitSourceControl**-Schemas
 
-    - **RepositoryUrl**: der URI für Ihren Team Foundation Server, Ihre Projektsammlung und Ihr Git-Repository
+    - **RepositoryUrl**: Der URI für Ihren Team Foundation Server, Ihre Projektsammlung und Ihr Git-Repository
 
-    - **ProjectPath**: der Pfad zur Projektdatei Ihrer App (.csproj oder .vbproj)
+    - **ProjectPath**: Pfad zur Projektdatei Ihrer App (.csproj or .vbproj)
 
-    - **CommitId**: die ID Ihres Commits
+    - **CommitId**: Die ID Ihres Commits
 
-      Beispiel:
+      Zum Beispiel:
 
     ```xml
     <SourceControl type="Git">
@@ -316,21 +315,21 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
     </SourceControl>
     ```
 
-- **Build**
+- **Erstellen**
 
    Informationen über Ihr Buildsystem, entweder `"TeamBuild"` oder `"MSBuild"`, sowie die folgenden erforderlichen Eigenschaften:
 
   - **BuildLabel** (für TeamBuild): Buildname und -Nummer. Diese Bezeichnung wird auch als Name des Bereitstellungsereignisses verwendet. Weitere Informationen zu Buildnummern finden Sie unter [Verwenden von Buildnummern, um abgeschlossene Builds mit aussagekräftigen Namen zu versehen](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (empfohlen): die Liste der URIs für die Orte Ihrer Symbole (PDB-Datei) getrennt durch Semikolons. Diese URIs können URLs oder Netzwerkpfade (UNC) sein. Dies erleichtert Visual Studio das Auffinden der entsprechenden Symbole zum Debuggen.
+  - **SymbolPath** (empfohlen): Die Liste der URIs für die Orte Ihrer Symbole (PDB-Datei) getrennt durch Semikolons. Diese URIs können URLs oder Netzwerkpfade (UNC) sein. Dies erleichtert Visual Studio das Auffinden der entsprechenden Symbole zum Debuggen.
 
-  - **BuildReportUrl** (für TeamBuild): Buildberichtsspeicherort in TFS
+  - **BuildReportUrl** (für TeamBuild): Der Speicherort des Buildreports in TFS
 
-  - **BuildId** (für TeamBuild): URI für die Builddetails in TFS. Dieser URI wird auch als ID des Bereitstellungsereignisses verwendet. Diese ID muss eindeutig sein, wenn Sie TeamBuild nicht verwenden.
+  - **BuildId** (für TeamBuild): Der URI für die Builddetails in TFS. Dieser URI wird auch als ID des Bereitstellungsereignisses verwendet. Diese ID muss eindeutig sein, wenn Sie TeamBuild nicht verwenden.
 
-  - **BuiltSolution**: der Pfad zur Projektmappendatei, die Visual Studio zum Suchen und Öffnen der entsprechenden Projektmappe verwendet. Dies ist der Inhalt der MsBuild-Eigenschaft **SolutionPath** .
+  - **BuiltSolution**: Pfad zur Buildprojektmappe, die Visual Studio zum Suchen und Öffnen der entsprechenden Projektmappe verwendet. Dies ist der Inhalt der MsBuild-Eigenschaft **SolutionPath** .
 
-    Beispiel:
+    Zum Beispiel:
 
   - **TFS**
 
@@ -357,13 +356,13 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> F: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?
- **A:** Der ausgewählte Arbeitsbereich besitzt keine Zuordnungen zwischen dem Quellverwaltungsordner und einem lokalen Ordner. Um eine Zuordnung für diesen Arbeitsbereich zu erstellen, wählen Sie **Verwalten**aus. Andernfalls wählen Sie einen bereits zugeordneten Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich.
+####  <a name="IneligibleWorkspace"></a> Frage: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?
+ **Antwort:** Der ausgewählte Arbeitsbereich besitzt keine Zuordnungen zwischen dem Quellverwaltungsordner und einem lokalen Ordner. Um eine Zuordnung für diesen Arbeitsbereich zu erstellen, wählen Sie **Verwalten**aus. Andernfalls wählen Sie einen bereits zugeordneten Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich.
 
  ![Öffnen von der Quellcodeverwaltung aus ohne zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> F: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamsammlung oder eine andere Sammlung ausgewählt habe?
- **A:** Dies kann aus folgenden Gründen der Fall sein:
+####  <a name="ChooseTeamProject"></a> Frage: Warum kann ich den Vorgang erst fortsetzen, wenn ich eine Teamauflistung oder eine andere Auflistung ausgewählt habe?
+ **Antwort:** Dies kann aus folgenden Gründen der Fall sein:
 
 -   Visual Studio ist nicht mit dem TFS verbunden.
 
@@ -379,10 +378,10 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
      ![Öffnen von der Quellcodeverwaltung aus &#45; migriert](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> F: Was ist ein Arbeitsbereich?
- **A:** Der [Arbeitsbereich speichert eine Kopie der Quelle](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) sodass Sie sie separat entwickeln und testen können, bevor Sie die Arbeit einchecken. Wenn Sie nicht bereits über einen Arbeitsbereich verfügen, der der gefundenen Projektmappe oder dem Projekt speziell zugeordnet ist, dann werden Sie von Visual Studio aufgefordert, einen verfügbaren Arbeitsbereich auszuwählen oder einen neuen Arbeitsbereich mit Ihrem Computernamen als Standardarbeitsbereichsname zu erstellen.
+####  <a name="WhatWorkspace"></a> Frage: Was ist ein Arbeitsbereich?
+ **Antwort:** Der [Arbeitsbereich speichert eine Kopie der Quelle](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) sodass Sie sie separat entwickeln und testen können, bevor Sie die Arbeit einchecken. Wenn Sie nicht bereits über einen Arbeitsbereich verfügen, der der gefundenen Projektmappe oder dem Projekt speziell zugeordnet ist, dann werden Sie von Visual Studio aufgefordert, einen verfügbaren Arbeitsbereich auszuwählen oder einen neuen Arbeitsbereich mit Ihrem Computernamen als Standardarbeitsbereichsname zu erstellen.
 
-####  <a name="UntrustedSymbols"></a> F: Warum erhalte ich diese Meldung über nicht vertrauenswürdige Symbole?
+####  <a name="UntrustedSymbols"></a> Frage: Warum erhalte ich diese Meldung über nicht vertrauenswürdige Symbole?
  ![Debuggen mit nicht vertrauenswürdigem Symbolpfad?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **A:** Diese Meldung wird angezeigt, wenn der Symbolpfad in der Buildmanifestdatei (\<*ProjectName*>.BuildInfo.config) nicht in der Liste der vertrauenswürdigen Symbolpfade enthalten ist. Sie können den Pfad zur Liste der Symbolpfade in den Debuggeroptionen hinzufügen.
+ **Antwort:** Diese Meldung wird angezeigt, wenn der Symbolpfad in der Buildmanifestdatei (\<*ProjectName*>.BuildInfo.config) nicht in der Liste der vertrauenswürdigen Symbolpfade enthalten ist. Sie können den Pfad zur Liste der Symbolpfade in den Debuggeroptionen hinzufügen.

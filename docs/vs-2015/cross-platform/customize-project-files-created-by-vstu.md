@@ -9,17 +9,16 @@ caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 14b04de6ea4c945b67bada257d7822790b683b38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772942"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660504"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Anpassen von mit VSTU erstellten Projektdateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio-Tools für Unity bieten während der Generierung der Projektdatei einen Rückruf im Unity-Stil. Registrieren Sie das `VisualStudioIntegration.ProjectFileGeneration`-Ereignis, um die Projektdatei zu ändern, immer wenn sie neu erstellt wird.  
   
 ## <a name="demonstrates"></a>Veranschaulicht  
@@ -70,4 +69,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Beispiel: Protokollrückruf](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Anpassen von mit VSTU Protokollrückruf](../cross-platform/share-the-unity-log-callback-with-vstu.md)

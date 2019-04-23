@@ -13,17 +13,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797038"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654879"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Gewusst wie: Angeben des zuerst zu erstellenden Ziels
+# <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)])-Engine erstellt das erste Projekt, das es findet, sowie alle Abhängigkeiten, es sei denn, die Projektdatei enthält ein `DefaultTargets`-Attribut, ein `InitialTargets`-Attribut oder ein Ziel, das in der Befehlszeile unter Verwendung des **/target**-Schalters angegeben ist.  
   
 ## <a name="using-the-initialtargets-attribute"></a>Verwenden des InitialTargets-Attributs  
@@ -31,7 +30,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-one-initial-target"></a>Angeben eines ersten Ziels  
   
-- Geben Sie das Standardziel im `InitialTargets`-Attribut des `Project`-Elements an. Beispiel:  
+- Geben Sie das Standardziel im `InitialTargets`-Attribut des `Project`-Elements an. Zum Beispiel:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -48,7 +47,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-one-default-target"></a>Ein Standardziel angeben  
   
-- Geben Sie das Standardziel im `DefaultTargets`-Attribut des `Project`-Elements an. Beispiel:  
+- Geben Sie das Standardziel im `DefaultTargets`-Attribut des `Project`-Elements an. Zum Beispiel:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -65,17 +64,17 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Zuerst ein anderen Ziels und nicht das Standardziel verwenden  
   
--   Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Beispiel:  
+-   Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Zum Beispiel:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>So können Sie zuerst mehrere Ziele, die nicht die Standardziele sind, verwenden  
   
--   Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Beispiel:  
+-   Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Zum Beispiel:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
 ## <a name="see-also"></a>Siehe auch
   [MSBuild](msbuild.md)  
  [Ziele](../msbuild/msbuild-targets.md)   
- [Gewusst wie: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)
+ [Vorgehensweise: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)

@@ -6,17 +6,16 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a8be3ad8b102677014aca4b59fed29f11cf3d50a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766996"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661043"
 ---
 # <a name="verify-your-xamarin-environment"></a>Überprüfen Ihrer Xamarin-Umgebung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nachdem die Installationsprogramme abgeschlossen wurden (siehe dazu [Setup and install (Setup und Installation)](../cross-platform/setup-and-install.md)), sollten Sie ein paar Minuten investieren, um zu überprüfen, ob alles für den Einstieg in die Xamarin-Entwicklung bereit ist.  
   
  Nach Abschluss dieser Überprüfung können Sie eine oder beide der folgenden exemplarischen Vorgehensweisen verwenden:  

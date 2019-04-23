@@ -1,5 +1,5 @@
 ---
-title: C++ statischem Code Analysis-Store-apps
+title: C++statische Analyse Store-apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873242"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659824"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,6 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 ##  <a name="Warnings"></a> C++-Codeanalysewarnungen
  Die Codeanalyse gibt die folgenden Warnungen für C++-Code aus:
 
-
 |                                      Regel                                      |                                                  Beschreibung                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          Nicht initialisierter Speicher wird verwendet                                           |
@@ -133,7 +132,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Ungültiger Größenzeichenfolgenparameter                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Ungültiger Größenzeichenfolgenstandort                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.               |
+|                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Unbekannter Formatzeichenfolgenstil                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Ungültige Größenangabe: Ausdruck nicht analysierbar                              |
@@ -204,7 +203,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                      [C28286](../code-quality/c28286.md)                       |                                    Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.                |
+|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine                |
 |                      [C28290](../code-quality/c28290.md)                       |           Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Ausdrucksoperanden von inkompatiblen Typen für Operator                             |
