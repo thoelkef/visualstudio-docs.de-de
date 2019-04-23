@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790536"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504301"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
 
@@ -100,7 +100,7 @@ Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Window
 
 ## <a name="debug-test-and-improve-your-code"></a>Debuggen, Testen und Verbessern Ihres Codes
 
-Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder auf einem [Geräteemulator](../cross-platform/visual-studio-emulator-for-android.md) zu debuggen. Sie können Ihren Code Anweisung für Anweisung durchlaufen und die Variablen untersuchen. Sie können Haltepunkte setzen, die nur erreicht werden, wenn eine bestimmte Bedingung erfüllt ist. Debugoptionen können im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Tour zu den Debuggerfeatures](../debugger/debugger-feature-tour.md).
+Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder auf einem [Geräteemulator](../cross-platform/visual-studio-emulator-for-android.md) zu debuggen. Sie können Ihren Code Anweisung für Anweisung durchlaufen und die Variablen untersuchen. Sie können Haltepunkte setzen, die nur erreicht werden, wenn eine bestimmte Bedingung erfüllt ist. Debugoptionen können im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
 Sehen Sie sich für weitere Informationen zum Verbessern der Leistung Ihrer Apps das [Profilerstellungsfeature](../profiling/profiling-feature-tour.md) von Visual Studio an.
 
@@ -139,5 +139,5 @@ Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweiter
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
-- [Neuerungen in Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Neues in Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Neues in Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

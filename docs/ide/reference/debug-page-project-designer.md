@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949680"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504405"
 ---
 # <a name="debug-page-project-designer"></a>Seite "Debuggen", Projekt-Designer
 
@@ -83,7 +83,7 @@ Aktivieren oder deaktivieren Sie dieses Kontrollkästchen, um das Debuggen von S
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debuggen in Visual Studio](../../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../../debugger/debugger-feature-tour.md)
 - [Projekteinstellungen für C#-Debugkonfigurationen](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

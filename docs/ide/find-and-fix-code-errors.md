@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790523"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504457"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -156,6 +156,6 @@ Weitere Informationen zu Komponententests in Visual Studio und wie diese Ihnen h
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
-- [Weitere Informationen zur Verwendung des Debuggers](../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Weitere Informationen zur Verwendung des Debuggers](../debugger/index.md)
 - [Generieren und Korrigieren von Code](../ide/code-generation-in-visual-studio.md)

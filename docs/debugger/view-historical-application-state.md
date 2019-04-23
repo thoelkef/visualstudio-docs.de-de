@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703577"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504360"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Untersuchen von vorherigen App-Zuständen mithilfe des IntelliTrace-Features „Schritt zurück“ in Visual Studio (Visual Studio Enterprise)
 
@@ -87,7 +87,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     ![Übersicht von „Schritt zurück“ in IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Overview of IntelliTrace Step-back")
 
-    Weitere Informationen zum Untersuchen von Variablen in Visual Studio finden Sie im [ersten Einblick in den Debugger](../debugger/debugger-feature-tour.md).
+    Weitere Informationen zum Untersuchen von Variablen in Visual Studio finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen (FAQs)
 

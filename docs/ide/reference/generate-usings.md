@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355184"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537503"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generieren von Using-Anweisungen in Visual Studio
 
@@ -24,18 +24,18 @@ Diese Codegenerierung gilt für:
 
 **Beschreibung:** Ermöglicht Ihnen das sofortige Hinzufügen erforderlicher Import- oder [Using-Anweisungen](/dotnet/csharp/language-reference/keywords/using-statement) für kopierten und eingefügten Code.
 
-**Hintergrund:** Es ist üblich, Code aus anderen Dateien in Ihrem Projekt oder anderen Codequellen zu kopieren und in den Code einzufügen. Diese Schnellaktion analysiert fehlende Import-Anweisungen für Code, der kopiert und eingefügt wurde, und fordert Sie dann dazu auf, sie hinzuzufügen.
+**Hintergrund:** Es ist üblich, Code aus anderen Dateien in Ihrem Projekt oder anderen Quellen zu kopieren und in neuen Code einzufügen. Diese Schnellaktion findet fehlende Import-Anweisungen für Code, der kopiert und eingefügt wurde, und fordert Sie dann dazu auf, sie hinzuzufügen.
 
-**Vorteile**: Dank dem automatischen Hinzufügen der erforderlichen Import-Anweisungen, müssen Benutzer die erforderlichen `using`-Anweisungen nicht manuell kopieren.
+**Vorteile**: Da die Schnellaktion erforderliche Import-Anweisungen automatisch hinzufügt, müssen Sie die in Ihrem Code erforderlichen `using`-Anweisungen nicht manuell kopieren.
 
 ## <a name="generate-usings-refactoring"></a>Refactoring: Generieren von Using-Anweisungen
 
-1. Kopieren Sie Code aus einer anderen Datei, und fügen Sie ihn ohne die erforderlichen `using`-Anweisungen ein. Bei dem Fehler wird nun ein Codefix angezeigt, der die fehlenden `using`-Anweisungen hinzufügt.
+1. Kopieren Sie Code aus einer Datei, und fügen Sie ihn in eine neue Datei ohne die erforderlichen `using`-Anweisungen ein. Zusammen mit dem resultierenden Fehler wird ein Codefix angezeigt, der die fehlenden `using`-Anweisungen hinzufügt.
 
     > [!NOTE] 
-    > Dieser Vorschlag muss zunächst in **Extras > Optionen > Text-Editor > C# > Erweitert > Using-Anweisungen** aktiviert werden.
+    > Sie müssen diesen Vorschlag unter **Extras > Optionen > Text-Editor > C# > Erweitert > Using-Anweisungen** aktivieren.
 
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** zu öffnen. 
+2. Drücken Sie STRG+., um das Menü **Schnellaktionen und Refactorings** zu öffnen.
 
     ![Generieren von Using-Anweisungen](media/generate-using-codefix.png)
 
