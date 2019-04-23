@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116393"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Bereitstellen von Windows Store-Apps aus Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 
 - Bereitstellen einer App, deren Debugging beim Start durch eine andere App oder Methode erfolgen soll.
 
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema
+## <a name="BKMK_In_this_topic"></a> In diesem Thema
  Hier erfahren Sie Folgendes:
 
  [Bereitstellen von Windows Store-Apps](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 
  [Bereitstellungsoptionen](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Bereitstellen von Windows Store-Apps
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Bereitstellen von Windows Store-Apps
  Das manuelle Bereitstellen einer App ist ein einfacher Vorgang:
 
-1.  Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)
+1. Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)
 
-2.  Wählen Sie auf der Debugger-Symbolleiste von Visual Studio das Bereitstellungsziel aus der Dropdownliste neben der Schaltfläche **Debuggen starten** aus.
+2. Wählen Sie auf der Debugger-Symbolleiste von Visual Studio das Bereitstellungsziel aus der Dropdownliste neben der Schaltfläche **Debuggen starten** aus.
 
      ![Führen Sie auf dem lokalen Computer](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  Klicken Sie im Menü **Erstellen** auf **Bereitstellen**.
+3. Klicken Sie im Menü **Erstellen** auf **Bereitstellen**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Festlegen eines Remotegeräts
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Festlegen eines Remotegeräts
  **Erforderliche Komponenten**
 
  So stellen Sie eine App auf einem Remotegerät bereit:
 
--   Die Lizenz eines Entwicklers muss auf dem Remotegerät installiert sein.
+- Die Lizenz eines Entwicklers muss auf dem Remotegerät installiert sein.
 
--   Die Visual Studio Remote Tools müssen auf dem Remotegerät installiert sein, außerdem muss der Remotedebugmonitor ausgeführt werden.
+- Die Visual Studio Remote Tools müssen auf dem Remotegerät installiert sein, außerdem muss der Remotedebugmonitor ausgeführt werden.
 
      Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die App-Dateien an das Remotegerät zu senden.
 
@@ -101,7 +101,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 
 8. Geben Sie den Netzwerknamen des Remotegeräts in das Feld **Remotecomputer** ein oder klicken Sie auf **Suchen** , um das Gerät im Dialogfeld **Remotedebuggerverbindung auswählen** auszuwählen.
 
-##  <a name="BKMK_Deployment_options"></a> Bereitstellungsoptionen
+## <a name="BKMK_Deployment_options"></a> Bereitstellungsoptionen
  Sie können die folgenden Bereitstellungsoptionen auf der Debugeigenschaftenseite für das Startprojekt festlegen.
 
  **Netzwerkloopback zulassen** aus Gründen der Sicherheit einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] im Standardverfahren installierten app ist nicht zulässig, Netzwerkaufrufe an das Gerät auszuführen, auf installiert ist. Standardmäßig wird durch die Visual Studio-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]senden, sollten Sie die App ohne die Ausnahme testen.

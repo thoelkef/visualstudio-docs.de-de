@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096984"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 Ähnlich wie Sie die Daten in einer Tabelle in einer beliebigen Datenbank bearbeiten, bearbeiten Sie die Daten in Tabellen. Der Prozess kann enthalten, einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle. In einem datengebundenen Formular können Sie angeben, welche Felder Benutzer bearbeitbare sind. In diesen Fällen behandelt die Infrastruktur für die Datenbindung an, alle der änderungsnachverfolgung, damit die Änderungen später an die Datenbank gesendet werden können. Wenn Sie programmgesteuert Änderungen an Daten vornehmen und diese Änderungen an die Datenbank gesendet werden sollen, müssen Sie verwenden die Objekte und Methoden, die die änderungsnachverfolgung für die Sie ausführen.
@@ -53,7 +53,7 @@ Wenn Ihre Anwendung nicht zum Senden von Updates in einer Datenquelle benötigt,
 
 #### <a name="to-delete-records-from-a-data-table"></a>Zum Löschen von Datensätzen aus einer Datentabelle
 
--   Rufen Sie die <xref:System.Data.DataRow.Delete%2A> Methode eine <xref:System.Data.DataRow>.
+- Rufen Sie die <xref:System.Data.DataRow.Delete%2A> Methode eine <xref:System.Data.DataRow>.
 
      Diese Methode den Datensatz nicht physisch entfernt werden. Stattdessen wird den Datensatz für die Löschung markiert.
 
@@ -70,15 +70,15 @@ Wenn Änderungen an Datensätzen in einem Dataset vorgenommen werden, werden die
 
 Änderungen sind nachverfolgte zwei Möglichkeiten für jede Datenzeile:
 
--   Jede Datenzeile enthält Informationen, die im Zusammenhang mit der <xref:System.Data.DataRow.RowState%2A> (z. B. <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, oder <xref:System.Data.DataRowState.Unchanged>).
+- Jede Datenzeile enthält Informationen, die im Zusammenhang mit der <xref:System.Data.DataRow.RowState%2A> (z. B. <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, oder <xref:System.Data.DataRowState.Unchanged>).
 
--   Jede geänderte Datenzeile enthält mehrere Versionen der Zeile (<xref:System.Data.DataRowVersion>), die Originalversion (vor der Änderung) und die aktuelle Version (nach der Änderung). Während des Zeitraums, wenn eine Änderung aussteht (die Zeit, wenn Sie auf reagieren, die <xref:System.Data.DataTable.RowChanging> Ereignis), eine dritte Version – die vorläufige Version – ist ebenfalls verfügbar.
+- Jede geänderte Datenzeile enthält mehrere Versionen der Zeile (<xref:System.Data.DataRowVersion>), die Originalversion (vor der Änderung) und die aktuelle Version (nach der Änderung). Während des Zeitraums, wenn eine Änderung aussteht (die Zeit, wenn Sie auf reagieren, die <xref:System.Data.DataTable.RowChanging> Ereignis), eine dritte Version – die vorläufige Version – ist ebenfalls verfügbar.
 
 Wenn das Dataset geändert wurde, gibt die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets den Wert `true` zurück. Nachdem festgestellt wurde, dass geänderte Zeilen vorhanden sind, können Sie die `GetChanges`-Methode eines <xref:System.Data.DataSet> oder einer <xref:System.Data.DataTable> aufrufen, um die Gruppe der geänderten Zeilen zurückzugeben.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Um festzustellen, ob Änderungen an den Zeilen vorgenommen wurden
 
--   Rufen Sie die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets auf, um geänderte Zeilen zu suchen.
+- Rufen Sie die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets auf, um geänderte Zeilen zu suchen.
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie anhand des Rückgabewerts der <xref:System.Data.DataSet.HasChanges%2A>-Methode feststellen, ob ein Dataset mit dem Namen `NorthwindDataset1` geänderte Zeilen enthält:
 
@@ -90,7 +90,7 @@ Sie können auch überprüfen, um festzustellen, welche Art von Änderungen wurd
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>So stellen Sie fest, welche Art von Änderungen an einer Zeile vorgenommen wurden
 
--   Übergeben Sie einen <xref:System.Data.DataRowState>-Wert an die <xref:System.Data.DataSet.HasChanges%2A>-Methode.
+- Übergeben Sie einen <xref:System.Data.DataRowState>-Wert an die <xref:System.Data.DataSet.HasChanges%2A>-Methode.
 
 Das folgende Beispiel zeigt, wie Sie ein Dataset namens überprüfen `NorthwindDataset1` zu bestimmen, ob alle neuen Zeilen zuerst darauf hinzugefügt wurden:
 
@@ -100,9 +100,9 @@ Das folgende Beispiel zeigt, wie Sie ein Dataset namens überprüfen `NorthwindD
 ## <a name="to-locate-rows-that-have-errors"></a>Um Zeilen zu finden, die Fehler enthalten
 Bei der Arbeit mit einzelnen Spalten und Zeilen mit Daten können Fehler auftreten. Sehen Sie sich die `HasErrors` Eigenschaft, um zu bestimmen, ob Fehler vorhanden, in sind einem <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, oder <xref:System.Data.DataRow>.
 
-1.  Überprüfen Sie die `HasErrors` Eigenschaft, um festzustellen, ob Fehler im Dataset vorhanden sind.
+1. Überprüfen Sie die `HasErrors` Eigenschaft, um festzustellen, ob Fehler im Dataset vorhanden sind.
 
-2.  Wenn die `HasErrors` -Eigenschaft ist `true`, durchlaufen die Auflistungen von Tabellen, und klicken Sie dann die mit die Zeilen, die Zeile mit dem Fehler finden.
+2. Wenn die `HasErrors` -Eigenschaft ist `true`, durchlaufen die Auflistungen von Tabellen, und klicken Sie dann die mit die Zeilen, die Zeile mit dem Fehler finden.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

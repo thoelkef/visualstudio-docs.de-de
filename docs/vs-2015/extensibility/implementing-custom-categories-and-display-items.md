@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 040c2408f8b0e120996f95e31afdf188d123f76a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117901"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementieren von benutzerdefinierten Kategorien und Anzeigeelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,11 +83,11 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
   
 - Die Methoden implementiert, über <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> müssen die IDE mit bereitstellen:  
   
-  -   Listen von **Anzeigeelemente** in die **Kategorie.**  
+  - Listen von **Anzeigeelemente** in die **Kategorie.**  
   
-  -   Lokalisierbaren Namen für die **Anzeigeelemente**.  
+  - Lokalisierbaren Namen für die **Anzeigeelemente**.  
   
-  -   Anzeigen von Informationen für jeden Member des **Kategorie**.  
+  - Anzeigen von Informationen für jeden Member des **Kategorie**.  
   
   > [!NOTE]
   >  Jede **Kategorie** muss mindestens einen enthalten **Anzeigeelement**.  
@@ -96,11 +96,11 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
   
    Die Implementierung bietet die IDE mit:  
   
-  -   Eine Liste mit den **Kategorien** , die eine bestimmte Gruppe enthalten.  
+  - Eine Liste mit den **Kategorien** , die eine bestimmte Gruppe enthalten.  
   
-  -   Zugriff auf Instanzen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> unterstützen jeweils **Kategorie** innerhalb der Gruppe.  
+  - Zugriff auf Instanzen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> unterstützen jeweils **Kategorie** innerhalb der Gruppe.  
   
-  -   Lokalisierbare Gruppennamen.  
+  - Lokalisierbare Gruppennamen.  
   
 - Aktualisieren die IDE:  
   
@@ -111,13 +111,13 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 ## <a name="to-handle-font-and-color-changes"></a>Behandeln von Schriftart und Farbe ändert  
  Um die farbliche Kennzeichnung von Text ordnungsgemäß zu unterstützen, die eine VSPackage anzeigt, der Farbgebung-Dienst unterstützt das VSPackage muss auf Antworten, die vom Benutzer initiierte Änderungen, die über die **Schriftarten und Farben** Seite "Eigenschaften". Eine VSPackage erledigt dies durch:  
   
--   Behandeln von Ereignissen IDE generiert wurde durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Schnittstelle.  
+- Behandeln von Ereignissen IDE generiert wurde durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Schnittstelle.  
   
      Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der **Schriftarten und Farben** Seite. Beispielsweise ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> Methode, wenn eine neue Schriftart ausgewählt ist.  
   
      - oder -   
   
--   Abrufen der IDE Änderungen an.  
+- Abrufen der IDE Änderungen an.  
   
      Dies kann erfolgen über das System implementierter <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle. Zwar in erster Linie für die Unterstützung von Persistenz der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> Methode kann verwendet werden, zum Abrufen von Informationen von Schriftart- und farbeinstellungen für **Anzeigeelemente**. Weitere Informationen finden Sie unter [den Zugriff auf gespeicherte Schriftart- und Farbeinstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
   

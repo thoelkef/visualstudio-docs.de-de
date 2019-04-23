@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57790fce73c96a37c678f32cb76e332c28f73673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093566"
 ---
 # <a name="error-site-uses-ip-address"></a>Fehler: Site verwendet IP-Adresse
 Zu diesem Fehler kommt es beim Versuch des Debuggers, sich automatisch an eine Webanwendung anzuhängen, die eine IP-Adresse verwendet. Dies passiert, wenn Sie in IIS **Identifikation der Webseite** in **Spezielle IP-Adresse verwenden** ändern.
@@ -30,11 +30,11 @@ Zu diesem Fehler kommt es beim Versuch des Debuggers, sich automatisch an eine W
 
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-1.  Führen Sie das Anhängen stattdessen manuell aus (wählen Sie im Menü „Debuggen“ **An den Prozess anhängen** aus).
+1. Führen Sie das Anhängen stattdessen manuell aus (wählen Sie im Menü „Debuggen“ **An den Prozess anhängen** aus).
 
      – oder –
 
-2.  Ändern Sie die Einstellung **Identifikation der IIS-Website**.
+2. Ändern Sie die Einstellung **Identifikation der IIS-Website**.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

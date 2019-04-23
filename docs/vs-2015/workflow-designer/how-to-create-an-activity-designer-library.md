@@ -9,36 +9,36 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69d68fdc0a34ffa680ec2306a087cd29002eb185
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3950540edb7ab17bafa5ed5c9e7b0f3660ad436a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090601"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Vorgehensweise: Erstellen einer Aktivitätsdesignerbibliothek
 Mit benutzerdefinierten Aktivitätsdesignern können Sie für eine benutzerdefinierte Aktivität oder eine Standardaktivität eine Benutzeroberfläche erstellen. Sie steuern die Komplexität der Benutzeroberfläche und sind in der Lage, mehrere Aktivitätsdesigner für eine Aktivität zu erstellen. Dieses Szenario ermöglicht es Ihnen, Designer zu erstellen, die auf unterschiedliche Zielgruppen zugeschnitten sind.  
   
 ### <a name="to-create-an-activity-designer-library"></a>So erstellen Sie eine Aktivitätsdesignerbibliothek  
   
-1.  Starten Sie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+1. Starten Sie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
-2.  Auf der **Datei** Startmenü **neu**, und wählen Sie dann **Projekt...** zum Öffnen der **neues Projekt** Dialogfeld.  
+2. Auf der **Datei** Startmenü **neu**, und wählen Sie dann **Projekt...** zum Öffnen der **neues Projekt** Dialogfeld.  
   
-3.  In der **Projekttypen** wählen Sie im Bereich **Workflow** entweder die **Visual C#-** oder **Visual Basic** Gruppierungen abhängig von Ihrer bevorzugten die Sprache.  
+3. In der **Projekttypen** wählen Sie im Bereich **Workflow** entweder die **Visual C#-** oder **Visual Basic** Gruppierungen abhängig von Ihrer bevorzugten die Sprache.  
   
-4.  In der **Vorlagen** wählen Sie im Bereich **Aktivitäts-Designerbibliothek**.  
+4. In der **Vorlagen** wählen Sie im Bereich **Aktivitäts-Designerbibliothek**.  
   
-5.  In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
+5. In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
   
-6.  In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt speichern, oder klicken Sie auf möchten **Durchsuchen** dorthin navigieren.  
+6. In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt speichern, oder klicken Sie auf möchten **Durchsuchen** dorthin navigieren.  
   
-7.  In der **Lösung** , geben Sie einen beschreibenden Namen für die Projektmappe, und klicken Sie dann **OK**.  
+7. In der **Lösung** , geben Sie einen beschreibenden Namen für die Projektmappe, und klicken Sie dann **OK**.  
   
     > [!NOTE]
     >  Wenn Sie einer vorhandenen Projektmappe eine workflowkonsolenanwendung hinzufügen möchten, öffnen Sie die Projektmappe in [!INCLUDE[vs2010](../includes/vs2010-md.md)], klicken Sie mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer**, und wählen Sie **hinzufügen**, und klicken Sie dann **Neues Projekt...** zum Öffnen der **neues Projekt** Dialogfeld. Fahren Sie wie oben in dieser Prozedur beschrieben fort.  
   
-8.  Die Projektvorlage erstellt eine Aktivitätsdesignerdefinition in XAML und die Code-Behind-Implementierungsdatei im Quellcode. Der [!INCLUDE[wfd1](../includes/wfd1-md.md)] wird geöffnet und zeigt den Canvas für den Aktivitätsdesigner an.  
+8. Die Projektvorlage erstellt eine Aktivitätsdesignerdefinition in XAML und die Code-Behind-Implementierungsdatei im Quellcode. Der [!INCLUDE[wfd1](../includes/wfd1-md.md)] wird geöffnet und zeigt den Canvas für den Aktivitätsdesigner an.  
   
 9. Ziehen Sie [!INCLUDE[avalon1](../includes/avalon1-md.md)] -Steuerelemente aus der **Toolbox** auf die Entwurfsoberfläche, um sie in Ihrer benutzerdefinierten Aktivitäts-Designer verwenden.  Ein Beispiel zum Implementieren eines benutzerdefinierten Aktivitätsdesigners finden Sie unter [Vorgehensweise: Erstellen ein benutzerdefinierten Aktivitätsdesigners](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   

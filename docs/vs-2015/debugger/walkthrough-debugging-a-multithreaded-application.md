@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117706"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58961878"
   
 #### <a name="to-create-the-walkthrough-project"></a>So erstellen Sie das Projekt für die exemplarische Vorgehensweise  
   
-1.  Auf der **Datei** Menü wählen **neu** , und klicken Sie dann auf **Projekt**.  
+1. Auf der **Datei** Menü wählen **neu** , und klicken Sie dann auf **Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  In der **Projekttyp**s Klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#** , oder **Visual C++**.  
+2. In der **Projekttyp**s Klicken Sie auf der Sprache Ihrer Wahl: **Visual Basic**, **Visual C#** , oder **Visual C++**.  
   
-3.  In der **Vorlagen** wählen **Konsolenanwendung** oder **CLR-Konsolenanwendung**.  
+3. In der **Vorlagen** wählen **Konsolenanwendung** oder **CLR-Konsolenanwendung**.  
   
-4.  In der **Namen** geben den Namen MyThreadWalkthroughApp ein.  
+4. In der **Namen** geben den Namen MyThreadWalkthroughApp ein.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
      Ein neues Konsolenprojekt wird angezeigt. Nachdem das Projekt erstellt wurde, wird eine Quelldatei angezeigt. Abhängig von der ausgewählten Programmiersprache hat die Quelldatei die Bezeichnung Module1.vb, Program.cs oder MyThreadWalkthroughApp.cpp.  
   
-6.  Löschen Sie den Code, der in der Quelldatei angezeigt wird, und Ersetzen Sie ihn durch den Beispielcode, der im Abschnitt "Erstellen eines Threads" des Themas angezeigt wird [Erstellen von Threads und übergeben von Daten zur Startzeit](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Löschen Sie den Code, der in der Quelldatei angezeigt wird, und Ersetzen Sie ihn durch den Beispielcode, der im Abschnitt "Erstellen eines Threads" des Themas angezeigt wird [Erstellen von Threads und übergeben von Daten zur Startzeit](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
-7.  Klicken Sie im Menü **Datei** auf **Alle speichern**.  
+7. Klicken Sie im Menü **Datei** auf **Alle speichern**.  
   
 #### <a name="to-begin-the-walkthrough"></a>So beginnen Sie mit der exemplarischen Vorgehensweise  
   
--   Suchen Sie im Quellcodefenster nach folgendem Code:  
+- Suchen Sie im Quellcodefenster nach folgendem Code:  
   
     ```vb  
     Thread.Sleep(3000)   
@@ -72,17 +72,17 @@ Console.WriteLine();
   
 #### <a name="to-start-debugging"></a>So starten Sie das Debuggen  
   
-1.  Mit der rechten Maustaste die `Console.WriteLine` -Anweisung, zeigen Sie auf **Haltepunkt** , und klicken Sie dann auf **Haltepunkt einfügen**.  
+1. Mit der rechten Maustaste die `Console.WriteLine` -Anweisung, zeigen Sie auf **Haltepunkt** , und klicken Sie dann auf **Haltepunkt einfügen**.  
   
      Innerhalb des Bundstegs auf der linken Seite des Quellcodefensters wird eine rote Kugel angezeigt. Diese Kugel zeigt an, dass an dieser Stelle jetzt ein Haltepunkt festgelegt wurde.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
+2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
   
      Der Debugvorgang beginnt, die Konsolenanwendung wird gestartet und hält dann am Haltepunkt an.  
   
-3.  Wenn sich der Fokus zu diesem Zeitpunkt im Fenster der Konsolenanwendung befindet, klicken Sie in das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenster, um den Fokus wieder an [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zurückzugeben.  
+3. Wenn sich der Fokus zu diesem Zeitpunkt im Fenster der Konsolenanwendung befindet, klicken Sie in das [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Fenster, um den Fokus wieder an [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zurückzugeben.  
   
-4.  Suchen Sie im Quellcodefenster die Zeile, die den folgenden Code enthält:  
+4. Suchen Sie im Quellcodefenster die Zeile, die den folgenden Code enthält:  
   
     ```vb  
     Thread.Sleep(5000)   
@@ -96,7 +96,7 @@ Thread.Sleep(3000);
 Thread::Sleep(3000);  
 ```  
   
-1.  
+1. 
   
 #### <a name="to-discover-the-thread-marker"></a>So ermitteln Sie den Threadmarker  
   
@@ -117,30 +117,30 @@ Thread::Sleep(3000);
   
 #### <a name="to-flag-threads"></a>So kennzeichnen Sie Threads  
   
-1.  Auf **Ansicht** Startmenü **Symbolleisten**.  
+1. Auf **Ansicht** Startmenü **Symbolleisten**.  
   
      Stellen Sie sicher, dass die **Debugspeicherort** Symbolleiste ausgewählt ist.  
   
-2.  Wechseln Sie zu der **Debugspeicherort** Symbolleiste, und klicken Sie auf die **Thread** Liste.  
+2. Wechseln Sie zu der **Debugspeicherort** Symbolleiste, und klicken Sie auf die **Thread** Liste.  
   
     > [!NOTE]
     >  Sie können diese Symbolleiste erkennen, drei gut sichtbaren Listen: **Prozess**, **Thread**, und **Stapelrahmen**.  
   
-3.  Beachten Sie, wie viele Threads in der Liste angezeigt werden.  
+3. Beachten Sie, wie viele Threads in der Liste angezeigt werden.  
   
-4.  Wechseln Sie zurück zum Quellcodefenster, und mit der rechten Maustaste die **Thread** Marker erneut aus.  
+4. Wechseln Sie zurück zum Quellcodefenster, und mit der rechten Maustaste die **Thread** Marker erneut aus.  
   
-5.  Zeigen Sie im Kontextmenü auf **Flag**, und klicken Sie dann auf den Threadnamen und die ID-Nummer.  
+5. Zeigen Sie im Kontextmenü auf **Flag**, und klicken Sie dann auf den Threadnamen und die ID-Nummer.  
   
-6.  Wechseln Sie zurück zur **Debugspeicherort** Symbolleiste, und klicken Sie auf die **Thread** erneut auflisten.  
+6. Wechseln Sie zurück zur **Debugspeicherort** Symbolleiste, und klicken Sie auf die **Thread** erneut auflisten.  
   
      Jetzt wird nur der gekennzeichnete Thread in der Liste angezeigt. Die Kennzeichnungsschaltfläche, die nur auf der rechten Seite des der **Thread** Liste. Das Kennzeichnungssymbol auf der Schaltfläche war zuvor abgeblendet. Jetzt wird es in einem reinen, hellen Rot angezeigt.  
   
-7.  Zeigen Sie mit dem Mauszeiger auf das Kennzeichnungssymbol.  
+7. Zeigen Sie mit dem Mauszeiger auf das Kennzeichnungssymbol.  
   
      Ein Popupfenster wird eingeblendet. Diesem Popupfenster ist angegeben, in welchem Modus der **Thread** Liste finden Sie in: **Nur gekennzeichnete Threads anzeigen**.  
   
-8.  Klicken Sie auf die Schaltfläche "kennzeichnen", um zurück zu wechseln **alle Threads anzeigen** Modus.  
+8. Klicken Sie auf die Schaltfläche "kennzeichnen", um zurück zu wechseln **alle Threads anzeigen** Modus.  
   
 9. Klicken Sie auf die **Thread** erneut aus, und stellen Sie sicher, dass jetzt wieder alle Threads angezeigt werden.  
   
@@ -158,29 +158,29 @@ Thread::Sleep(3000);
   
 #### <a name="to-unflag-threads"></a>So heben Sie die Kennzeichnung von Threads auf  
   
-1.  Auf der **Threads** Fenster mit der rechten Maustaste in der Zeile, die dem gekennzeichneten Thread entspricht.  
+1. Auf der **Threads** Fenster mit der rechten Maustaste in der Zeile, die dem gekennzeichneten Thread entspricht.  
   
      Ein Kontextmenü wird angezeigt. Bietet die Optionen **Flag** und **Kennzeichnung aller Threads aufheben**.  
   
-2.  Um den Thread Kennzeichnung aufzuheben, klicken Sie auf **Flag**.  
+2. Um den Thread Kennzeichnung aufzuheben, klicken Sie auf **Flag**.  
   
-3.  Klicken Sie auf das rote Kennzeichnungssymbol.  
+3. Klicken Sie auf das rote Kennzeichnungssymbol.  
   
-4.  Sehen Sie sich die **Debugspeicherort** Symbolleiste erneut. Die Kennzeichnungsschaltfläche ist wieder abgeblendet. Sie haben die Kennzeichnung des einzigen gekennzeichneten Threads aufgehoben. Da keine gekennzeichneten Threads vorhanden sind, die Symbolleiste ist wieder auf **alle Threads anzeigen** Modus. Klicken Sie auf die **Thread** aus, und stellen Sie sicher, dass Sie alle Threads angezeigt werden.  
+4. Sehen Sie sich die **Debugspeicherort** Symbolleiste erneut. Die Kennzeichnungsschaltfläche ist wieder abgeblendet. Sie haben die Kennzeichnung des einzigen gekennzeichneten Threads aufgehoben. Da keine gekennzeichneten Threads vorhanden sind, die Symbolleiste ist wieder auf **alle Threads anzeigen** Modus. Klicken Sie auf die **Thread** aus, und stellen Sie sicher, dass Sie alle Threads angezeigt werden.  
   
-5.  Wechseln Sie zurück zu den **Threads** Fenster, und untersuchen Sie die Informationsspalten.  
+5. Wechseln Sie zurück zu den **Threads** Fenster, und untersuchen Sie die Informationsspalten.  
   
      Am Anfang der einzelnen Spalten befinden sich Schaltflächen. Die meisten Schaltflächen sind mit einem Titel versehen, an dem die Spalte erkennbar ist. Die erste Spalte auf der linken Seite hat jedoch keinen Titel. Sie verfügt stattdessen über ein Symbol, das die Umrisslinie eines Flags darstellt. Sie werden bemerken, dass jede Zeile der Threadliste dasselbe Umrisssymbol enthält. Dies bedeutet, dass die Kennzeichnung des Threads aufgehoben ist.  
   
-6.  Klicken Sie für zwei Threads in der Liste, den zweiten und dritten von unten, auf den Umriss des Flags.  
+6. Klicken Sie für zwei Threads in der Liste, den zweiten und dritten von unten, auf den Umriss des Flags.  
   
      Die Kennzeichensymbole werden in der Volltonfarbe Rot und nicht als leere Umrisslinien dargestellt.  
   
-7.  Klicken Sie auf die Schaltfläche oben in der Kennzeichenspalte.  
+7. Klicken Sie auf die Schaltfläche oben in der Kennzeichenspalte.  
   
      Die Reihenfolge der Threadliste wurde geändert, als Sie auf die Schaltfläche geklickt haben. Die Threadliste ist jetzt neu sortiert, und die gekennzeichneten Threads befinden sich am Anfang.  
   
-8.  Klicken Sie erneut auf die Schaltfläche am Anfang der Kennzeichenspalte.  
+8. Klicken Sie erneut auf die Schaltfläche am Anfang der Kennzeichenspalte.  
   
      Die Sortierreihenfolge wurde wieder geändert.  
   
@@ -188,31 +188,31 @@ Thread::Sleep(3000);
   
 #### <a name="to-learn-more-about-the-threads-window"></a>Weitere Informationen zum Threadfenster  
   
-1.  In der **Threads** Fenster, überprüfen Sie die dritte Spalte von links. Die Schaltfläche am Anfang dieser Spalte daneben **ID**.  
+1. In der **Threads** Fenster, überprüfen Sie die dritte Spalte von links. Die Schaltfläche am Anfang dieser Spalte daneben **ID**.  
   
-2.  Klicken Sie auf **ID**.  
+2. Klicken Sie auf **ID**.  
   
      Die Threadliste wird jetzt nach Thread-ID sortiert.  
   
-3.  Klicken Sie mit der rechten Maustaste auf einen beliebigen Thread in der Liste. Klicken Sie im Kontextmenü auf **Hexadezimale Anzeige**.  
+3. Klicken Sie mit der rechten Maustaste auf einen beliebigen Thread in der Liste. Klicken Sie im Kontextmenü auf **Hexadezimale Anzeige**.  
   
      Das Format der Thread-IDs wird geändert.  
   
-4.  Zeigen Sie mit dem Mauszeiger auf einen beliebigen Thread in der Liste.  
+4. Zeigen Sie mit dem Mauszeiger auf einen beliebigen Thread in der Liste.  
   
      Nach einer kurzen Verzögerung wird ein DataTip eingeblendet. Er enthält eine teilweise Aufrufliste für den Thread.  
   
-5.  Betrachten Sie die vierte Spalte von links, mit der Bezeichnung **Kategorie**. Die Threads werden in Kategorien klassifiziert.  
+5. Betrachten Sie die vierte Spalte von links, mit der Bezeichnung **Kategorie**. Die Threads werden in Kategorien klassifiziert.  
   
      Der erste in einem Prozess erstellte Thread wird als Hauptthread bezeichnet. Suchen Sie ihn in der Threadliste.  
   
-6.  Mit der rechten Maustaste in des Hauptthreads, und klicken Sie dann auf **zu Thread wechseln**.  
+6. Mit der rechten Maustaste in des Hauptthreads, und klicken Sie dann auf **zu Thread wechseln**.  
   
      Ein Warnungsdialogfeld wird angezeigt. Es enthält den Hinweis, dass [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] keinen Quellcode für den Hauptthread anzeigen kann.  
   
      Klicken Sie auf **OK**.  
   
-7.  Sehen Sie sich die **Aufrufliste** Fenster und die **Debugspeicherort** Symbolleiste.  
+7. Sehen Sie sich die **Aufrufliste** Fenster und die **Debugspeicherort** Symbolleiste.  
   
      Den Inhalt der **Aufrufliste** Fenster geändert haben.  
   
@@ -220,21 +220,21 @@ Thread::Sleep(3000);
   
 #### <a name="to-switch-threads"></a>So wechseln Sie zwischen Threads  
   
-1.  In der **Threads** Fenster, überprüfen Sie die zweite Spalte von links. Die Schaltfläche am Anfang dieser Spalte weist keinen Text bzw. kein Symbol auf. Diese Spalte ist der **aktiven Thread** Spalte.  
+1. In der **Threads** Fenster, überprüfen Sie die zweite Spalte von links. Die Schaltfläche am Anfang dieser Spalte weist keinen Text bzw. kein Symbol auf. Diese Spalte ist der **aktiven Thread** Spalte.  
   
-2.  Sehen Sie sich die **aktiven Thread** Spalten- und beachten Sie, dass ein Thread einen gelben Pfeil. Dies ist die *Indikator für den aktiven Thread*.  
+2. Sehen Sie sich die **aktiven Thread** Spalten- und beachten Sie, dass ein Thread einen gelben Pfeil. Dies ist die *Indikator für den aktiven Thread*.  
   
-3.  Notieren Sie sich die ID des Threads, der durch den Indikator für den aktiven Thread gekennzeichnet ist. Sie verschieben den Indikator für den aktiven Thread auf einen anderen Thread, müssen ihn nach Beendigung jedoch wieder an die frühere Position zurückversetzen.  
+3. Notieren Sie sich die ID des Threads, der durch den Indikator für den aktiven Thread gekennzeichnet ist. Sie verschieben den Indikator für den aktiven Thread auf einen anderen Thread, müssen ihn nach Beendigung jedoch wieder an die frühere Position zurückversetzen.  
   
-4.  Mit der rechten Maustaste in einem anderen Thread aus, und klicken Sie dann auf **zu Thread wechseln**.  
+4. Mit der rechten Maustaste in einem anderen Thread aus, und klicken Sie dann auf **zu Thread wechseln**.  
   
-5.  Sehen Sie sich die **Aufrufliste** Fenster im Quellcodefenster. Der Inhalt hat sich geändert.  
+5. Sehen Sie sich die **Aufrufliste** Fenster im Quellcodefenster. Der Inhalt hat sich geändert.  
   
-6.  Sehen Sie sich die **Debugspeicherort** Symbolleiste. Der aktive Thread wurde auch dort geändert.  
+6. Sehen Sie sich die **Debugspeicherort** Symbolleiste. Der aktive Thread wurde auch dort geändert.  
   
-7.  Wechseln Sie zu der **Debugspeicherort** Symbolleiste. Klicken Sie auf die **Thread** ein, und wählen Sie einen anderen Thread aus der Dropdown-Liste.  
+7. Wechseln Sie zu der **Debugspeicherort** Symbolleiste. Klicken Sie auf die **Thread** ein, und wählen Sie einen anderen Thread aus der Dropdown-Liste.  
   
-8.  Sehen Sie sich die **Threads** Fenster. Der Indikator für den aktiven Thread wurde geändert.  
+8. Sehen Sie sich die **Threads** Fenster. Der Indikator für den aktiven Thread wurde geändert.  
   
 9. Klicken Sie im Quellcodefenster mit der rechten Maustaste auf einen Threadmarker. Zeigen Sie im Kontextmenü auf **wechseln Sie zur** , und klicken Sie auf einen Threadnamen/eine Thread-ID.  
   
@@ -246,13 +246,13 @@ Thread::Sleep(3000);
   
 #### <a name="to-freeze-and-unfreeze-threads"></a>So sperren und entsperren Sie Threads  
   
-1.  In der **Threads** mit der rechten Maustaste auf einen beliebigen Thread, und klicken Sie dann auf **fixieren**.  
+1. In der **Threads** mit der rechten Maustaste auf einen beliebigen Thread, und klicken Sie dann auf **fixieren**.  
   
-2.  Beachten Sie die Spalte mit dem aktiven Thread. Jetzt wird dort das Paar senkrechter Striche angezeigt. Diese beiden blauen Striche zeigen an, dass der Thread gesperrt ist.  
+2. Beachten Sie die Spalte mit dem aktiven Thread. Jetzt wird dort das Paar senkrechter Striche angezeigt. Diese beiden blauen Striche zeigen an, dass der Thread gesperrt ist.  
   
-3.  Sehen Sie sich die **Suspend** Spalte. Der Unterbrechungszähler für den Thread lautet jetzt 1.  
+3. Sehen Sie sich die **Suspend** Spalte. Der Unterbrechungszähler für den Thread lautet jetzt 1.  
   
-4.  Mit der rechten Maustaste in des gesperrten Threads, und klicken Sie dann auf **reaktivieren**.  
+4. Mit der rechten Maustaste in des gesperrten Threads, und klicken Sie dann auf **reaktivieren**.  
   
      Die Spalte mit aktiven Threads und die **Suspend** ändert sich die Spalte.  
   

@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f18195f344adca16fce7403d225c42826a2af544
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117140"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Unerwarteter Quantifizierer (JavaScript)
 Beim Verfassen Ihrer Musters für reguläre Ausdrücke suchen, haben Sie ein Muster-Element mit einem Faktor unzulässige Wiederholung erstellt. Zum Beispiel das Muster  
@@ -45,7 +45,7 @@ Beim Verfassen Ihrer Musters für reguläre Ausdrücke suchen, haben Sie ein Mus
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass Ihre Suche Muster-Element nur zulässige Wiederholung Faktoren enthält.  
+- Stellen Sie sicher, dass Ihre Suche Muster-Element nur zulässige Wiederholung Faktoren enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   

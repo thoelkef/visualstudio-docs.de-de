@@ -11,12 +11,12 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 255afb948f7a7e00f1249c332eac7234800ae980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117576"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Hinzufügen eines Menüs zur Visual Studio-Menüleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Erstellen eines VSIX-Projekts mit einer benutzerdefinierten Befehls-Elementvorlage
 
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `TopLevelMenu`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** / **Erweiterbarkeit**.  Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TopLevelMenu`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C#-** / **Erweiterbarkeit**.  Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **TestCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **TestCommand.cs**.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **TestCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **TestCommand.cs**.
 
 ## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Erstellen eines Menüs in der IDE-Menüleiste
 
 #### <a name="to-create-a-menu"></a>Zum Erstellen eines Menüs
 
-1.  In **Projektmappen-Explorer**, TestCommandPackage.vsct zu öffnen.
+1. In **Projektmappen-Explorer**, TestCommandPackage.vsct zu öffnen.
 
      Am Ende der Datei, besteht eine \<Symbole > Knoten, der mehrere enthält \<GuidSymbol > Knoten. Fügen Sie ein neues Symbol, klicken Sie im Knoten mit dem Namen GuidTestCommandPackageCmdSet wie folgt:
 
@@ -50,7 +50,7 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
     <IDSymbol name="TopLevelMenu" value="0x1021"/>
     ```
 
-2.  Erstellen Sie eine leere \<Menüs > Knoten in der \<Befehle > Knoten direkt vor \<Gruppen >. In der \<Menüs > Knoten Hinzufügen einer \<Menü > Knoten wie folgt:
+2. Erstellen Sie eine leere \<Menüs > Knoten in der \<Befehle > Knoten direkt vor \<Gruppen >. In der \<Menüs > Knoten Hinzufügen einer \<Menü > Knoten wie folgt:
 
     ```xml
     <Menus>
@@ -71,7 +71,7 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
 
      Der Wert des der `CommandName` Zeichenfolge gibt an, dass der Text im Menüelement angezeigt wird.
 
-3.  In der \<Gruppen > im Abschnitt, finden Sie die \<Gruppe >, und ändern Sie die \<übergeordneten >-Elements auf das Menü zeigen wir gerade hinzugefügt haben:
+3. In der \<Gruppen > im Abschnitt, finden Sie die \<Gruppe >, und ändern Sie die \<übergeordneten >-Elements auf das Menü zeigen wir gerade hinzugefügt haben:
 
     ```csharp
     <Groups>
@@ -83,15 +83,15 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Menü zur von der integrierten
 
      Dadurch wird den Teil von Gruppe für das neue Menü.
 
-4.  Suchen der `Buttons` Abschnitt. Beachten Sie, dass die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Paket-Vorlage wurde generiert eine `Button` -Element, das das übergeordnete Element festgelegt wurde `MyMenuGroup`. Mit diesem Befehl wird daher in Ihrem Menü angezeigt.
+4. Suchen der `Buttons` Abschnitt. Beachten Sie, dass die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Paket-Vorlage wurde generiert eine `Button` -Element, das das übergeordnete Element festgelegt wurde `MyMenuGroup`. Mit diesem Befehl wird daher in Ihrem Menü angezeigt.
 
 ## <a name="building-and-testing-the-extension"></a>Erstellen und testen die Erweiterung
 
-1.  Erstellen Sie das Projekt, und starten Sie das Debugging. Eine Instanz der experimentellen Instanz sollten angezeigt werden.
+1. Erstellen Sie das Projekt, und starten Sie das Debugging. Eine Instanz der experimentellen Instanz sollten angezeigt werden.
 
-2.  Die Menüleiste in der experimentellen Instanz sollte enthalten eine **TestMenu** Menü.
+2. Die Menüleiste in der experimentellen Instanz sollte enthalten eine **TestMenu** Menü.
 
-3.  Auf der **TestMenu** Menü klicken Sie auf **Test-Invoke-Command**.
+3. Auf der **TestMenu** Menü klicken Sie auf **Test-Invoke-Command**.
 
      Ein Meldungsfeld angezeigt werden soll, und die Meldung "Paket in TopLevelMenu.TestCommand.MenuItemCallback() TestCommand" angezeigt. Dies gibt an, dass der neue Befehl funktioniert.
 

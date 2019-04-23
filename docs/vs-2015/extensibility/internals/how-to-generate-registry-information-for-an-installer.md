@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117732"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Vorgehensweise: Generieren von Registrierungsinformationen für einen Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Das Dienstprogramm "RegPkg.exe" kann verwendet werden, um ein Manifest für die 
   
 ### <a name="to-create-a-registration-manifest"></a>Um ein Manifest für die Registrierung zu erstellen.  
   
--   Führen Sie RegPkg mit der **/regfile** wechseln. Geben Sie keine anderen Schalter, die den Namen der Ausgabedatei und den Pfad des VSPackage.  
+- Führen Sie RegPkg mit der **/regfile** wechseln. Geben Sie keine anderen Schalter, die den Namen der Ausgabedatei und den Pfad des VSPackage.  
   
      Beispielsweise würde an der Eingabeaufforderung Sie etwa wie folgt eingeben:  
   
@@ -39,7 +39,7 @@ Das Dienstprogramm "RegPkg.exe" kann verwendet werden, um ein Manifest für die 
   
 ### <a name="to-view-a-registration-manifest"></a>Um ein Manifest für die Registrierung anzuzeigen.  
   
--   Öffnen Sie das Manifest für die Registrierung in einem Text-Editor ein.  
+- Öffnen Sie das Manifest für die Registrierung in einem Text-Editor ein.  
   
      Im folgende Beispiel wird die Registrierung-Manifest, das RegPkg für den Sprachdienst IronPython erstellt:  
   
@@ -100,7 +100,7 @@ Das Dienstprogramm "RegPkg.exe" kann verwendet werden, um ein Manifest für die 
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Zum Erstellen Includedatei einer Windows Installer XML Toolset  
   
--   Führen Sie RegPkg mit der **/wixfile** wechseln. Geben Sie keine anderen Schalter, die den Namen der Ausgabedatei und den Pfad des VSPackage.  
+- Führen Sie RegPkg mit der **/wixfile** wechseln. Geben Sie keine anderen Schalter, die den Namen der Ausgabedatei und den Pfad des VSPackage.  
   
      Beispielsweise würde an der Eingabeaufforderung Sie etwa wie folgt eingeben:  
   
@@ -110,7 +110,7 @@ Das Dienstprogramm "RegPkg.exe" kann verwendet werden, um ein Manifest für die 
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Zum Anzeigen Includedatei einer Windows Installer XML Toolset  
   
--   Öffnen der Windows Installer XML Toolset include-Datei in einem Text-Editor.  
+- Öffnen der Windows Installer XML Toolset include-Datei in einem Text-Editor.  
   
      Im folgende Beispiel wird die Include-Datei, die RegPkg erstellt, für den Sprachdienst IronPython:  
   

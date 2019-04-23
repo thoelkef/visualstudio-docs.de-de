@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093487"
 ---
 # <a name="dependency-diagrams-reference"></a>Abhängigkeitsdiagramme: Referenz
 
@@ -40,13 +40,13 @@ Sie können die vorgesehenen oder vorhandenen Abhängigkeiten zwischen Ebenen an
 
 Verwenden Sie ein Abhängigkeitsdiagramm, können Sie die folgenden Aufgaben ausführen:
 
--   Kommunizieren der vorhandenen oder vorgesehenen logischen Architektur des Systems
+- Kommunizieren der vorhandenen oder vorgesehenen logischen Architektur des Systems
 
--   Ermitteln von Konflikten zwischen dem vorhandenen Code und der vorgesehenen Architektur
+- Ermitteln von Konflikten zwischen dem vorhandenen Code und der vorgesehenen Architektur
 
--   Visualisieren der Auswirkungen von Änderungen auf die vorgesehene Architektur beim Umgestalten, Aktualisieren oder Entwickeln des Systems
+- Visualisieren der Auswirkungen von Änderungen auf die vorgesehene Architektur beim Umgestalten, Aktualisieren oder Entwickeln des Systems
 
--   Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge
+- Untermauern der vorgesehenen Architektur während der Entwicklung und Wartung des Codes durch Einschließen von Validierung in Eincheck- und Buildvorgänge
 
 Dieses Thema beschreibt die Elemente, die Sie in einem Abhängigkeitsdiagramm verwenden können. Ausführlichere Informationen zum Erstellen und zeichnen Abhängigkeitsdiagramme, finden Sie unter [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu Ebenenmuster finden Sie auf die [Patterns & Practices-Website](http://go.microsoft.com/fwlink/?LinkId=145794).
 
@@ -68,17 +68,17 @@ Die folgende Tabelle beschreibt die Elemente, die Sie in einem Abhängigkeitsdia
 
 Sie können jede Ebene mit Artefakten in der Projektmappe verknüpfen, z. B. Projekte, Klassen, Namespaces, Projektdateien und andere Teile der Software. Die Zahl auf einer Ebene zeigt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch beim Lesen der Anzahl der Artefakte in einer Ebene Folgendes:
 
--   Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
+- Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
 
      Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.
 
--   Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
+- Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
 
 Weitere Informationen zum Verknüpfen von Ebenen und Artefakten finden Sie unter:
 
--   [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)
+- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)
 
--   [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)
+- [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>Überprüfen Sie die verknüpften Artefakte
 

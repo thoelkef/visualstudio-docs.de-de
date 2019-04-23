@@ -13,14 +13,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117433"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Befehlszeile mit Sampling-Profilerstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeilentools und Sampling eine Profilerstellung einer Anwendung ausgeführt wird, um Leistungsprobleme zu identifizieren.  
@@ -29,21 +29,21 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
   
  Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schritte aus:  
   
--   Profilerstellung einer Anwendung mithilfe von Befehlszeilentools und Sampling  
+- Profilerstellung einer Anwendung mithilfe von Befehlszeilentools und Sampling  
   
--   Analysieren der Ergebnisse der Profilerstellung, für die ein Sampling durchgeführt wurde, um Leistungsprobleme zu lokalisieren und zu beheben  
+- Analysieren der Ergebnisse der Profilerstellung, für die ein Sampling durchgeführt wurde, um Leistungsprobleme zu lokalisieren und zu beheben  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   Grundlegende Kenntnisse über [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
+- Grundlegende Kenntnisse über [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]  
   
--   Grundlegende Kenntnisse über die Arbeit mit Befehlszeilentools  
+- Grundlegende Kenntnisse über die Arbeit mit Befehlszeilentools  
   
--   Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)  
+- Eine Kopie von [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.  
+- Um mit den durch die Profilerstellung bereitgestellten Informationen arbeiten zu können, sollten Symbolinformationen für das Debuggen verfügbar sein.  
   
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilerstellung über die Befehlszeile mit der Samplingmethode  
  Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Prozess periodisch zum Bestimmen der aktiven Funktion überprüft wird. Die resultierenden Daten enthalten Angaben dazu, wie häufig die Funktion sich während des Samplings des Prozesses in der Aufrufliste ganz oben befunden hat.  
@@ -53,19 +53,19 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>So erstellen Sie ein Profil für die Anwendung "PeopleTrax" mithilfe der Samplingmethode  
   
-1.  Installieren Sie die Beispielanwendung "PeopleTrax", und erstellen Sie die Releaseversion der Anwendung.  
+1. Installieren Sie die Beispielanwendung "PeopleTrax", und erstellen Sie die Releaseversion der Anwendung.  
   
-2.  Öffnen Sie ein Eingabeaufforderungsfenster, und fügen Sie der lokalen Path-Umgebungsvariablen das Verzeichnis "Profilerstellungstools" hinzu.  
+2. Öffnen Sie ein Eingabeaufforderungsfenster, und fügen Sie der lokalen Path-Umgebungsvariablen das Verzeichnis "Profilerstellungstools" hinzu.  
   
-3.  Legen Sie das Arbeitsverzeichnis auf das Verzeichnis fest, das die Binärdateien für "PeopleTrax" enthält.  
+3. Legen Sie das Arbeitsverzeichnis auf das Verzeichnis fest, das die Binärdateien für "PeopleTrax" enthält.  
   
-4.  Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen:  
+4. Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen:  
   
     ```  
     VSPerfCLREnv /sampleon  
     ```  
   
-5.  Starten Sie die Profilerstellung, indem Sie VSPerfCmd.exe ausführen. Dies ist das Befehlszeilentool, das den Profiler steuert. Mit dem folgenden Befehl werden Anwendung und Profiler im Samplingmodus gestartet:  
+5. Starten Sie die Profilerstellung, indem Sie VSPerfCmd.exe ausführen. Dies ist das Befehlszeilentool, das den Profiler steuert. Mit dem folgenden Befehl werden Anwendung und Profiler im Samplingmodus gestartet:  
   
     ```  
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe  
@@ -73,13 +73,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
   
      Der Profilerprozess startet und wird an den PeopleTrax.exe-Prozess angefügt. Der Profilerprozess beginnt, die erfassten Profilerstellungsdaten in die Berichtsdatei zu schreiben.  
   
-6.  Klicken Sie auf **Get People** (Personen abrufen).  
+6. Klicken Sie auf **Get People** (Personen abrufen).  
   
-7.  Klicken Sie auf **Daten exportieren**.  
+7. Klicken Sie auf **Daten exportieren**.  
   
      In Editor wird eine neue Datei angezeigt, die die exportierten Daten aus **PeopleTrax** enthält.  
   
-8.  Schließen Sie Editor, und schließen Sie dann die Anwendung **PeopleTrax**.  
+8. Schließen Sie Editor, und schließen Sie dann die Anwendung **PeopleTrax**.  
   
 9. Schließen Sie den Profiler. Geben Sie folgenden Befehl ein:  
   
@@ -95,11 +95,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mithilfe von Befehlszeil
   
 11. Die Profilerstellungsdaten werden in der VSP-Datei gespeichert. Analysieren Sie die Ergebnisse mit einer der folgenden Methoden:  
   
-    -   Öffnen Sie die VSP-Datei in der Visual Studio-IDE.  
+    - Öffnen Sie die VSP-Datei in der Visual Studio-IDE.  
   
          - oder -  
   
-    -   Generieren Sie mithilfe des Befehlszeilentools "VSPerfReport.exe" eine Datei mit durch Trennzeichen getrennten Werten (CSV-Datei). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE verwendet werden können:  
+    - Generieren Sie mithilfe des Befehlszeilentools "VSPerfReport.exe" eine Datei mit durch Trennzeichen getrennten Werten (CSV-Datei). Verwenden Sie den folgenden Befehl, um Berichte zu generieren, die außerhalb der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE verwendet werden können:  
   
         ```  
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  

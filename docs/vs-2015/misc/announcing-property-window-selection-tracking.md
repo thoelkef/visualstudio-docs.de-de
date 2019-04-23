@@ -13,27 +13,27 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089262"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Ankündigen der Auswahlnachverfolgung im Eigenschaftenfenster
 Wenn Sie zusammenarbeiten möchten die **Eigenschaften** Fenster oder der **Eigenschaft** -Seiten, z. B. ein Formular, Text oder eine Auswahl, die für die Sie Eigenschaften anzeigen möchten haben Sie vollständige Informationen zur Verwendung müssen Sie Koordinieren Sie die Auswahl. Beispielsweise müssen Sie wissen, ob Sie einfach- oder Mehrfachauswahl verfügen. Dann müssen Sie Ihre Auswahltyp (einzelne oder mehrere) mit der IDE bekanntgeben zu können die <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> Schnittstelle. Diese Schnittstelle bietet Informationen, die erforderlich sind, durch die **Eigenschaften** Fenster.  
   
 ### <a name="to-announce-selection-to-the-environment"></a>Auswahl in der Umgebung bekanntgeben zu können  
   
-1.  Rufen Sie `QueryInterface` für <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
+1. Rufen Sie `QueryInterface` für <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
   
-    1.  Zu diesem Zweck verwenden Sie den Website-Zeiger an die Ansicht übergeben werden, wenn es erstellt wurde.  
+    1. Zu diesem Zweck verwenden Sie den Website-Zeiger an die Ansicht übergeben werden, wenn es erstellt wurde.  
   
-    2.  Rufen Sie `QueryService` aus der Ansicht für die `SID_STrackSelection` Service.  
+    2. Rufen Sie `QueryService` aus der Ansicht für die `SID_STrackSelection` Service.  
   
          Gibt einen Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Methode, die jedes Mal, wenn die Auswahl geändert wird, und übergeben einen Zeiger auf ein Objekt, das implementiert <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
+2. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Methode, die jedes Mal, wenn die Auswahl geändert wird, und übergeben einen Zeiger auf ein Objekt, das implementiert <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
      Das Auswahlobjekt-Container können einfach- oder Mehrfachauswahl und enthält die Auswahlinformationen in einem `IDispatch` Objekt. Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> Methode benachrichtigt den **Eigenschaften** Fenster, das die Auswahl geändert hat. Die **Eigenschaften** Fenster verwendet dann die Objekte auf <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> um zu bestimmen, ob einzelne oder mehrere Auswahlmöglichkeiten aufgetreten sind, und was die Auswahl des eigentlichen Objekts sind.  
   

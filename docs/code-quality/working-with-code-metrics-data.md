@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089288"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden Sie das Fenster Codemetrikergebnisse
 
@@ -48,15 +48,15 @@ Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Fi
 
 ### <a name="to-filter-the-code-metrics-results"></a>Zum Filtern der Codemetrikergebnisse
 
-1.  Von der **Filter** wählen Sie den Namen der Spalte.
+1. Von der **Filter** wählen Sie den Namen der Spalte.
 
-2.  In **Min**, geben Sie den minimalen Wert, der angezeigt werden.
+2. In **Min**, geben Sie den minimalen Wert, der angezeigt werden.
 
-3.  In **Max**, geben Sie den maximalen Wert angezeigt werden.
+3. In **Max**, geben Sie den maximalen Wert angezeigt werden.
 
-4.  Klicken Sie auf die **Filter anwenden** Schaltfläche.
+4. Klicken Sie auf die **Filter anwenden** Schaltfläche.
 
-5.  Um die Details der anzuzeigen, erweitern Sie in der Hierarchiestruktur.
+5. Um die Details der anzuzeigen, erweitern Sie in der Hierarchiestruktur.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Hinzufügen, entfernen und Neuanordnen von Datenspalten
 
@@ -88,23 +88,23 @@ Weitere Informationen zu Azure-Boards Arbeitselemente angezeigt werden, finden S
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Um eine Arbeitsaufgabe basierend auf ein Ergebnis zu erstellen.
 
-1.  Mit der rechten Maustaste in des Ergebnis.
+1. Mit der rechten Maustaste in des Ergebnis.
 
-2.  Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ des zu erstellenden Arbeitsaufgabe (**Fehler**, **Aufgabe**usw.).
+2. Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ des zu erstellenden Arbeitsaufgabe (**Fehler**, **Aufgabe**usw.).
 
-3.  Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
+3. Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
 
-4.  Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
+4. Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>So erstellen Sie einen Fehler basierend auf ein Ergebnis
 
-1.  Klicken Sie auf das Ergebnis, um es auszuwählen.
+1. Klicken Sie auf das Ergebnis, um es auszuwählen.
 
-2.  Klicken Sie auf die **Arbeitselement erstellen** Schaltfläche.
+2. Klicken Sie auf die **Arbeitselement erstellen** Schaltfläche.
 
-3.  Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
+3. Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
 
-4.  Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
+4. Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
 
 ## <a name="see-also"></a>Siehe auch
 

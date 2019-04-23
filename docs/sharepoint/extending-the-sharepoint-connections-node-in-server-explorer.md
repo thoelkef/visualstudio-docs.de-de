@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092639"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des SharePoint-Verbindungsknotens im Server-Explorer
   In Visual Studio können Sie mit der lokalen SharePoint-Websites auf dem Entwicklungscomputer verbinden, mit der **SharePoint-Verbindungen** Knoten in der **Server-Explorer** Fenster. Dieser Knoten zeigt viele der Komponenten der lokalen SharePoint-Websites in einer hierarchischen Strukturansicht an. Beispielsweise können Sie die Listen, Dokumentbibliotheken und Inhaltstypen auf lokale Standorte anzeigen. Weitere Informationen zur Verwendung von **Server-Explorer** zum Verbinden mit lokalen SharePoint-Websites finden Sie unter [Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595123"
 
  Es gibt zwei Arten von benutzerdefinierten Eigenschaften, die Sie einen Knoten hinzufügen können:
 
--   Eigenschaften, die einen Satz von schreibgeschützten Daten aus der SharePoint-Website anzuzeigen. Die Daten beschreiben, die SharePoint-Komponente, die vom Knoten dargestellt wird. Eine exemplarische Vorgehensweise, die veranschaulicht, wie Sie dies tun, finden Sie unter [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Eigenschaften, die einen Satz von schreibgeschützten Daten aus der SharePoint-Website anzuzeigen. Die Daten beschreiben, die SharePoint-Komponente, die vom Knoten dargestellt wird. Eine exemplarische Vorgehensweise, die veranschaulicht, wie Sie dies tun, finden Sie unter [Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Eigenschaften, benutzerdefinierte Lese/Schreib-Daten anzeigen. Ein Codebeispiel, das veranschaulicht, wie Sie dies tun, finden Sie unter [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Eigenschaften, benutzerdefinierte Lese/Schreib-Daten anzeigen. Ein Codebeispiel, das veranschaulicht, wie Sie dies tun, finden Sie unter [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Abrufen von Daten für integrierte Knoten
  Alle von Visual Studio bereitgestellte integrierte Knoten enthalten einige Daten über die SharePoint-Komponente, die sie darstellen. Beispielsweise stellt ein Knoten, der eine Liste auf der SharePoint-Website stellt einige Daten über die Liste, z. B. den Titel und die URL der Standardansicht für die Liste bereit.

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082762"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Speichern von Daten in Erweiterungen des SharePoint-Projektsystem
   Wenn Sie SharePoint-Projektsystem erweitern, können Sie Zeichenfolgedaten speichern, die erhalten bleibt, nachdem ein SharePoint-Projekt geschlossen wird. Die Daten sind in der Regel mit einem bestimmten Projekt-Element oder das Projekt selbst zugeordnet.
@@ -35,9 +35,9 @@ ms.locfileid: "56599674"
 ## <a name="save-data-that-is-associated-with-a-project"></a>Speichern von Daten, die einem Projekt zugeordnet ist.
  Bei Daten auf Projektebene, z. B. den Wert einer Eigenschaft, die Sie für SharePoint-Projekte, hinzufügen, können Sie die Daten in der Projektdatei speichern (die *csproj* Datei oder *vbproj* Datei) oder die Option für Projekt Datei (die *. csproj.user* Datei oder *. vbproj.user* Datei). Die Datei zum Speichern der Daten im gewählten hängt davon ab, wie Sie die Daten verwendet werden sollen:
 
--   Wenn Sie möchten die Daten für alle Entwickler verfügbar sein, die die SharePoint-Projekt öffnen, können Sie die Daten in der Projektdatei gespeichert. Diese Datei wird immer auf Quelldatenbanken-Steuerelement, eingecheckt, damit die Daten in dieser Datei für andere Entwickler verfügbar ist, die das Projekt auschecken.
+- Wenn Sie möchten die Daten für alle Entwickler verfügbar sein, die die SharePoint-Projekt öffnen, können Sie die Daten in der Projektdatei gespeichert. Diese Datei wird immer auf Quelldatenbanken-Steuerelement, eingecheckt, damit die Daten in dieser Datei für andere Entwickler verfügbar ist, die das Projekt auschecken.
 
--   Wenn Sie möchten die Daten nur für Entwickler verfügbar sein sollen, wer das SharePoint-Projekt in Visual Studio geöffnet haben, können speichern Sie die Daten in der Benutzeroptionsdatei. Diese Datei ist nicht in der Regel auf Quelldatenbanken-Steuerelement, eingecheckt, damit die Daten in dieser Datei nicht an andere Entwickler verfügbar ist, die das Projekt auschecken.
+- Wenn Sie möchten die Daten nur für Entwickler verfügbar sein sollen, wer das SharePoint-Projekt in Visual Studio geöffnet haben, können speichern Sie die Daten in der Benutzeroptionsdatei. Diese Datei ist nicht in der Regel auf Quelldatenbanken-Steuerelement, eingecheckt, damit die Daten in dieser Datei nicht an andere Entwickler verfügbar ist, die das Projekt auschecken.
 
 ### <a name="save-data-to-the-project-file"></a>Speichern Sie Daten in der Projektdatei
  Um Daten in der Projektdatei speichern möchten, konvertieren eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> -Objekt an eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Objekt aus, und verwenden Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> Methode. Im folgenden Codebeispiel wird veranschaulicht, wie Sie mithilfe dieser Methode den Wert einer Projekteigenschaft in der Projektdatei speichern. Dieses Beispiel im Kontext eines größeren Beispiels, finden Sie unter [Vorgehensweise: Hinzufügen einer Eigenschaft zu SharePoint-Projekte](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).

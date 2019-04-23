@@ -8,12 +8,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d82414b94caee2f1ccbb823e94d9168e5502df8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 903074787169a8889db89a85d65129c1b97c13e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096958"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Unsichere XSLT-Skriptausführung.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58946338"
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
--   Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings an.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokument-Funktion und Skript die Ausführung deaktiviert wurde.
+- Ersetzen Sie das unsichere XsltSettings-Argument durch XsltSettings an.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder mit einer Instanz, die Dokument-Funktion und Skript die Ausführung deaktiviert wurde.
 
--   Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
+- Ersetzen Sie das <xref:System.Xml.XmlResolver> -Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver> -Instanz.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind ganz sicher, dass die Eingabe von einer vertrauenswürdigen Quelle stammt.
