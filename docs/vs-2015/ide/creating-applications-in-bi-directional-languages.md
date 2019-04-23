@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104979"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,53 +30,53 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen  
   
-1.  Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
+1. Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
   
-2.  Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
+2. Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
   
-3.  Konsolenanwendungen Konsolenanwendungen unterstützen keinen bidirektionalen Text. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.  
+3. Konsolenanwendungen Konsolenanwendungen unterstützen keinen bidirektionalen Text. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.  
   
 ## <a name="visual-studio-features-that-are-fully-supported"></a>Visual Studio-Funktionen, die vollständig unterstützt werden  
  Zur Entwurfszeit sind bidirektionale Sprachen in Visual Studio folgendermaßen einsetzbar:  
   
--   **Texteingabe** Visual Studio unterstützt Unicode. Wenn in Ihrem System also das entsprechende Gebietsschema und die entsprechende Eingabesprache eingestellt sind, können Sie Text auf Arabisch oder Hebräisch eingeben. (Ebenso werden auch Kashida und Diakritika unterstützt.)  
+- **Texteingabe** Visual Studio unterstützt Unicode. Wenn in Ihrem System also das entsprechende Gebietsschema und die entsprechende Eingabesprache eingestellt sind, können Sie Text auf Arabisch oder Hebräisch eingeben. (Ebenso werden auch Kashida und Diakritika unterstützt.)  
   
--   **Objektnamen** Mithilfe von bidirektionalen Sprachen können Sie Projektmappen, Projekten, Dateien, Ordern usw. Namen zuweisen. Im Code können Sie bidirektionale Sprachen zum Benennen von Variablen, Klassen, Objekten, Attributen, Metadaten und anderen Elementen einsetzen.  
+- **Objektnamen** Mithilfe von bidirektionalen Sprachen können Sie Projektmappen, Projekten, Dateien, Ordern usw. Namen zuweisen. Im Code können Sie bidirektionale Sprachen zum Benennen von Variablen, Klassen, Objekten, Attributen, Metadaten und anderen Elementen einsetzen.  
   
--   **Dateicodierung** Sie können Dateien mit sprachspezifischer oder Unicode-Codierung speichern und öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung](../ide/how-to-save-and-open-files-with-encoding.md).  
+- **Dateicodierung** Sie können Dateien mit sprachspezifischer oder Unicode-Codierung speichern und öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung](../ide/how-to-save-and-open-files-with-encoding.md).  
   
 ## <a name="features-with-limited-or-no-support"></a>Nicht oder nur eingeschränkt unterstützte Funktionen  
  Einige Features, die für Anwendungen in bidirektionalen Sprachen üblich sind, werden von Visual Studio nur eingeschränkt oder gar nicht unterstützt. Dazu gehören:  
   
--   **Rechts-nach-Links-Lesefolge** Die Steuerelemente für die Texteingabe von Visual Studio verwenden standardmäßig die Lesefolge von links nach rechts. Meist können Sie die Lesefolge mit Windows-Standardfunktionen ändern. So können Sie z. B. mit STRG+RECHTE UMSCHALTTASTE das Eigenschaftenfenster umschalten, sodass für die Eigenschaftswerte die Lesefolge von rechts nach links unterstützt wird.  
+- **Rechts-nach-Links-Lesefolge** Die Steuerelemente für die Texteingabe von Visual Studio verwenden standardmäßig die Lesefolge von links nach rechts. Meist können Sie die Lesefolge mit Windows-Standardfunktionen ändern. So können Sie z. B. mit STRG+RECHTE UMSCHALTTASTE das Eigenschaftenfenster umschalten, sodass für die Eigenschaftswerte die Lesefolge von rechts nach links unterstützt wird.  
   
      Die Lesefolge von rechts nach links wird jedoch nicht überall in Visual Studio unterstützt. Zu den Ausnahmen zählen:  
   
-    -   Kontrollkästchen, Dropdownlisten und andere Steuerelemente verwenden in Visual Studio immer die Lesefolge von links nach rechts.  
+    - Kontrollkästchen, Dropdownlisten und andere Steuerelemente verwenden in Visual Studio immer die Lesefolge von links nach rechts.  
   
-    -   Der Code-Editor (und der Text-Editor) unterstützen die Lesefolge von rechts nach links nicht. Sie können zwar Text in einer bidirektionalen Sprache eingeben, doch die Lesefolge bleibt stets von links nach rechts.  
+    - Der Code-Editor (und der Text-Editor) unterstützen die Lesefolge von rechts nach links nicht. Sie können zwar Text in einer bidirektionalen Sprache eingeben, doch die Lesefolge bleibt stets von links nach rechts.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Benennung mit arabischem oder hebräischem Text  
  Sie können mithilfe von arabischem oder hebräischem Text Ordnern, Variablen oder anderen Objekten Namen zuweisen. Wenn Sie mit Arabisch arbeiten, können Sie alle arabischen Zeichen verwenden, einschließlich Kashida und Diakritika.  
   
  Folgende Elemente können mithilfe von Arabisch oder Hebräisch benannt werden und werden in Visual Studio korrekt gehandhabt:  
   
--   Projektmappen-, Projekt- und Dateinamen, einschließlich aller dem Projektpfad hinzugefügten Ordner. Die Namen der Projektmappen und Elemente werden dann im Projektmappen-Explorer korrekt angezeigt.  
+- Projektmappen-, Projekt- und Dateinamen, einschließlich aller dem Projektpfad hinzugefügten Ordner. Die Namen der Projektmappen und Elemente werden dann im Projektmappen-Explorer korrekt angezeigt.  
   
--   Dateiinhalt. Sie können mit Unicode codierte Dateien oder Dateien mit einer ausgewählten Codepage öffnen und speichern.  
+- Dateiinhalt. Sie können mit Unicode codierte Dateien oder Dateien mit einer ausgewählten Codepage öffnen und speichern.  
   
     > [!NOTE]
     >  Der Code-Editor ist ein Sonderfall. Einzelheiten finden Sie weiter unten.  
   
--   Datenelemente. Diese Elemente werden im **Server-Explorer** korrekt angezeigt, und Sie können sie bearbeiten.  
+- Datenelemente. Diese Elemente werden im **Server-Explorer** korrekt angezeigt, und Sie können sie bearbeiten.  
   
--   In die Windows-Zwischenablage kopierte Elemente.  
+- In die Windows-Zwischenablage kopierte Elemente.  
   
--   Attribute und Metadaten.  
+- Attribute und Metadaten.  
   
--   Eigenschaftswerte. Sie können im Fenster Eigenschaften arabischen oder hebräischen Text eingeben. In diesem Fenster können Sie mit den üblichen Windows-Tastenkombinationen zwischen der Rechts-nach-Links-Lesefolge und der Links-nach-Rechts-Lesefolge wechseln (STRG+RECHTE UMSCHALTTASTE für Rechts-nach-Links bzw. STRG+LINKE UMSCHALTTASTE für Links-nach-Rechts).  
+- Eigenschaftswerte. Sie können im Fenster Eigenschaften arabischen oder hebräischen Text eingeben. In diesem Fenster können Sie mit den üblichen Windows-Tastenkombinationen zwischen der Rechts-nach-Links-Lesefolge und der Links-nach-Rechts-Lesefolge wechseln (STRG+RECHTE UMSCHALTTASTE für Rechts-nach-Links bzw. STRG+LINKE UMSCHALTTASTE für Links-nach-Rechts).  
   
--   Code und normaler Text. Im Code-Editor, der gleichzeitig der Text-Editor ist, können Sie mithilfe von Arabisch oder Hebräisch Klassen, Funktionen, Variablen, Eigenschaften, Zeichenfolgenliterale, Attribute usw. benennen. Allerdings unterstützt der Editor keine Lesefolge von rechts nach links; der Text beginnt immer am linken Rand.  
+- Code und normaler Text. Im Code-Editor, der gleichzeitig der Text-Editor ist, können Sie mithilfe von Arabisch oder Hebräisch Klassen, Funktionen, Variablen, Eigenschaften, Zeichenfolgenliterale, Attribute usw. benennen. Allerdings unterstützt der Editor keine Lesefolge von rechts nach links; der Text beginnt immer am linken Rand.  
   
     > [!TIP]
     >  Es wird empfohlen, Zeichenfolgenliterale in Ressourcendateien abzulegen und sie nicht fest in Programmen zu codieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Lokalisieren von Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
@@ -84,7 +84,7 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
     > [!NOTE]
     >  Die Verweise auf die in diesen Sprachen benannten Objekte müssen konsistent sein. Wenn Sie z. B. bei der Benennung einer arabischen Variablen Kashida verwenden, müssen Sie dies auch tun, wenn Sie auf diese Variable verweisen, sonst werden Fehler verursacht.  
   
--   Codekommentare. Sie können Kommentare in Arabisch oder Hebräisch erstellen. Sie können diese Sprachen auch im Kommentarerstellungstool verwenden.  
+- Codekommentare. Sie können Kommentare in Arabisch oder Hebräisch erstellen. Sie können diese Sprachen auch im Kommentarerstellungstool verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bidirektionale Unterstützung für Windows Forms-Anwendungen](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083516"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie in / öffnen aus der Quellcodeverwaltung hinzu.
 Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von Projektmappen oder Projekte unter quellcodeverwaltung und Abrufen von Verbindungszeichenfolgen aus der quellcodeverwaltung.
@@ -41,15 +41,15 @@ Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von P
 
 ## <a name="expected-behavior"></a>Es wird erwartet
 
--   Für jede unterstützte Projekttyp muss ein Benutzer können Sie "Hinzufügen" und "Öffnen in" Datenquellen-Steuerelement.
+- Für jede unterstützte Projekttyp muss ein Benutzer können Sie "Hinzufügen" und "Öffnen in" Datenquellen-Steuerelement.
 
--   Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *ProjectName*> .vspscc-Datei (Projektdatei Hinweis) erstellt wird. Es enthält Informationen von Ausschluss-Datei Liste und die Verbindungszeichenfolge. Diese Datei kann nicht gelöscht werden, da sie Informationen, die spezifisch für das Projekt enthält.
+- Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *ProjectName*> .vspscc-Datei (Projektdatei Hinweis) erstellt wird. Es enthält Informationen von Ausschluss-Datei Liste und die Verbindungszeichenfolge. Diese Datei kann nicht gelöscht werden, da sie Informationen, die spezifisch für das Projekt enthält.
 
--   Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Tripel S)-Datei erstellt wird. Die Textdatei enthält die Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Hinweis-Projektdatei. Diese Datei besteht nur vorübergehend und nur im Quellcode-Verwaltungsdatenbank vorhanden ist.
+- Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Tripel S)-Datei erstellt wird. Die Textdatei enthält die Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Hinweis-Projektdatei. Diese Datei besteht nur vorübergehend und nur im Quellcode-Verwaltungsdatenbank vorhanden ist.
 
--   Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank vorhanden ist wird lokal in eine temporäre Datei erstellt. Diese Datei enthält den Pfad aus dem Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.
+- Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank vorhanden ist wird lokal in eine temporäre Datei erstellt. Diese Datei enthält den Pfad aus dem Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.
 
--   Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen auf (sehen Sie sich, Get usw.) ausführen.
+- Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen auf (sehen Sie sich, Get usw.) ausführen.
 
 ## <a name="test-cases"></a>Testfälle
  Im folgenden sind bestimmte Testfälle für das Hinzufügen zu / von Testbereich Quellcodeverwaltung öffnen.

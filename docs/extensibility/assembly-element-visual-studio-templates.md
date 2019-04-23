@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079343"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly-Element (Visual Studio-Vorlagen)
 Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verweis von dieser Assembly zu Projekten hinzuzufügen.
@@ -52,7 +52,7 @@ Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verwei
 
  Dieser Text gibt die Assembly zu einem Projekt hinzugefügt werden soll, wenn die Item-Vorlage instanziiert wird. Diese Assembly muss in einem der folgenden Arten angegeben werden:
 
--   Als vollständige AssemblyName. Zum Beispiel:
+- Als vollständige AssemblyName. Zum Beispiel:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verwei
     </Assembly>
     ```
 
--   Als einfachen Text-Verweis. Zum Beispiel:
+- Als einfachen Text-Verweis. Zum Beispiel:
 
     ```
     <Assembly> System </Assembly>

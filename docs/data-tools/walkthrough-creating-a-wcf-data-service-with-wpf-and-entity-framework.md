@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework'
+title: 'Exemplarische Vorgehensweise: Erstellen eines WCF-Datendiensts mit WPF und Entity Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081384"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen eines WCF-Datendiensts mit WPF und Entity Framework
 In dieser exemplarischen Vorgehensweise wird dargestellt, wie ein einfacher [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] erstellt wird, der in einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung gehostet wird, und wie dann von einer Windows Forms-Anwendung aus darauf zugegriffen wird.
 
 In dieser exemplarischen Vorgehensweise Sie:
@@ -40,7 +40,7 @@ In dieser exemplarischen Vorgehensweise Sie:
 
 - Optional Filterfunktionen zur Anwendung hinzufügen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
 1. Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **datenspeicherung und-Verarbeitung** Workload oder als eine einzelne Komponente.
@@ -90,11 +90,11 @@ In den nächsten Schritt erstellen Sie eine [!INCLUDE[adonet_edm](../data-tools/
 
 5. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** einen der folgenden Schritte aus:
 
-    -   Wenn eine Datenverbindung mit der Beispieldatenbank Northwind in der Dropdownliste verfügbar ist, wählen Sie sie aus.
+    - Wenn eine Datenverbindung mit der Beispieldatenbank Northwind in der Dropdownliste verfügbar ist, wählen Sie sie aus.
 
          - oder - 
 
-    -   Wählen Sie die Schaltfläche **Neue Verbindung**, um eine neue Datenverbindung zu konfigurieren. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
+    - Wählen Sie die Schaltfläche **Neue Verbindung**, um eine neue Datenverbindung zu konfigurieren. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
 
 6. Wenn für die Datenbank ein Kennwort erforderlich ist, klicken Sie auf das Optionsfeld **Ja, vertrauliche Daten in die Verbindungszeichenfolge einschließen** und dann auf die Schaltfläche **Weiter**.
 
@@ -154,7 +154,7 @@ In den nächsten Schritten erstellen Sie eine Windows Forms-Clientanwendung für
 
 1. Wählen Sie auf der Menüleiste Datei **hinzufügen** > **neues Projekt**.
 
-2. In der **neues Projekt** Dialogfeld erweitern Sie die **Visual Basic** oder **Visual C#**  Knoten, wählen Sie die **Windows** Knoten, und wählen Sie dann **Windows Forms-Anwendung**.
+2. In der **neues Projekt** Dialogfeld erweitern Sie die **Visual Basic** oder **Visual C#-** Knoten, wählen Sie die **Windows** Knoten und wählen Sie dann auf  **Windows Forms-Anwendung**.
 
 3. Geben Sie im Textfeld **Name** `NorthwindClient` ein, und wählen Sie dann die Schaltfläche **OK** aus.
 

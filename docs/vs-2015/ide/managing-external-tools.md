@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084040"
 ---
 # <a name="managing-external-tools"></a>Verwalten von externen Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Im Menü "Extras" von Visual Studio verfügbare Tools  
  Sie können die folgenden Tools in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im Menü **Extras** aufrufen. Sie können sie auch nach Namen im Fenster **Schnellstart** aufrufen. Um beispielsweise die Datei „GuidGen.exe“ aufzurufen, geben Sie **GUID erstellen** ein.  
   
-1.  GUID erstellen: Generiert eine GUID.  
+1. GUID erstellen: Generiert eine GUID.  
   
-2.  Fehlersuche: Empfängt eine Fehlermeldung vom eingegebenen Wert. Weitere Informationen finden Sie unter [ERRLOOK-Referenz](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Fehlersuche: Empfängt eine Fehlermeldung vom eingegebenen Wert. Weitere Informationen finden Sie unter [ERRLOOK-Referenz](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
-3.  ATL-/MFC-Ablaufverfolgungsprogramm: Zeigt Debugablaufverfolgungs-Meldungen in den ATL- und MFC-Quellen an.  
+3. ATL-/MFC-Ablaufverfolgungsprogramm: Zeigt Debugablaufverfolgungs-Meldungen in den ATL- und MFC-Quellen an.  
   
-4.  PreEmptive Protection – Dotfuscator: Schützt .NET Programme vor reverse Engineering.  
+4. PreEmptive Protection – Dotfuscator: Schützt .NET Programme vor reverse Engineering.  
   
-5.  SPY++: Zeigt Prozesse, Threads, Windows und fenstermeldungen grafisch an.  
+5. SPY++: Zeigt Prozesse, Threads, Windows und fenstermeldungen grafisch an.  
   
-6.  WCF Service Configuration Editor: Ermöglicht Ihnen das Erstellen und Ändern von Konfigurationseinstellungen für WCF-Dienste.  
+6. WCF Service Configuration Editor: Ermöglicht Ihnen das Erstellen und Ändern von Konfigurationseinstellungen für WCF-Dienste.  
   
 > [!WARNING]
 >  Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,11 +90,11 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 ## <a name="adding-new-tools"></a>Hinzufügen von neuen Tools  
  So können im Menü **Extras** ein externes Tool hinzufügen. Öffnen Sie das Dialogfeld **Externe Tools**, und klicken Sie auf **Hinzufügen**. Geben Sie dann die Informationen ein. Beispielsweise führt der folgende Eintrag dazu, dass Windows Explorer in dem Verzeichnis der Datei geöffnet wird, das Sie zurzeit in Visual Studio geöffnet haben:  
   
-1.  Titel: Dateispeicherort öffnen  
+1. Titel: Dateispeicherort öffnen  
   
-2.  Befehl: explorer.exe  
+2. Befehl: explorer.exe  
   
-3.  Argumente: /root, "$(ItemDir)"  
+3. Argumente: /root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>Argumente für externe Tools  
  Bei den folgenden Argumente handelt es sich um Visual Studio-Variablen, beim Starten eines externen Tools zugewiesen werden. Links zu externen Tools, z.B. Editor oder Spy++, können im Menü **Extras** mithilfe des Dialogfelds „Externe Tools“ aufgeführt werden.  

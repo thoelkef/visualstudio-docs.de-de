@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082021"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Einschränkungen beim WCF-Debugging
 Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen eines WCF-Diensts zu starten:
@@ -37,13 +37,13 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
 ## <a name="limitations-on-stepping-into-a-service"></a>Einschränkungen bei der schrittweisen Verwendung eines Diensts
  Folgende Bedingungen müssen erfüllt sein, damit Sie von den debuggten Clientanwendungen einen Einzelschritt in einen Dienst ausführen können:
 
--   Der Client muss den Dienst aufrufen, indem er ein synchrones Clientobjekt verwendet.
+- Der Client muss den Dienst aufrufen, indem er ein synchrones Clientobjekt verwendet.
 
--   Die Vertragsoperation darf nicht unidirektional sein.
+- Die Vertragsoperation darf nicht unidirektional sein.
 
--   Wenn es sich um einen asynchronen Server handelt, können Sie nicht die vollständige Aufrufliste anzeigen, während der Code innerhalb des Diensts ausgeführt wird.
+- Wenn es sich um einen asynchronen Server handelt, können Sie nicht die vollständige Aufrufliste anzeigen, während der Code innerhalb des Diensts ausgeführt wird.
 
--   Das Debuggen muss mithilfe des folgenden Codes in der Datei "app.config" oder "Web.config" aktiviert werden:
+- Das Debuggen muss mithilfe des folgenden Codes in der Datei "app.config" oder "Web.config" aktiviert werden:
 
     ```xml
     <system.web>
@@ -74,11 +74,11 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
   ```
 
 ## <a name="self-hosting"></a>Lokales Hosten
- Ein *selbstgehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, WCF-Diensthost oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server ausgeführt wird. Informationen dazu, wie Sie einen selbst gehosteten Dienst debuggen, finden Sie unter [Vorgehensweise: Debuggen eines WCF-Diensts für selbstgehostete](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+ Ein *selbstgehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, WCF-Diensthost oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server ausgeführt wird. Informationen dazu, wie Sie einen selbst gehosteten Dienst debuggen, finden Sie unter [Vorgehensweise: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
 ## <a name="self-hosting"></a>Lokales Hosten
  Um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0- oder 3.5-Anwendungen zu aktivieren, muss [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 vor der Installation von [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installiert werden. Wenn [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] vor [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 installiert wird, tritt ein Fehler auf, wenn Sie versuchen, eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0- oder 3.5-Anwendung zu debuggen. Die Fehlermeldung lautet: "Automatischer Einzelschritt auf dem Server nicht möglich." Um dieses Problem zu beheben, verwenden Sie die Windows **Systemsteuerung** > **Programme und Funktionen** Reparieren Ihrer [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] Installation.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)
-- [Gewusst wie: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Vorgehensweise: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23d07f3ca3585030317a97f941d2b9ca0c36f9e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c86228d21323d1928acb9fc94582fbb9d320248
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084842"
 ---
 # <a name="concurrency-visualizer"></a>Parallelitätsschnellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ HINWEIS]
 >  Concurrency Visualizer ist eine optionale Erweiterung für Visual Studio. Laden Sie Concurrency Visualizer und die Concurrency Visualizer Collection Tools unter folgenden Links herunter:  
 > 
 > - Laden Sie die Erweiterung              [Concurrency Visualizer](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) herunter.  
->   -   Laden Sie              [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103)herunter.  
+>   - Laden Sie              [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103)herunter.  
 > 
 >   Mit dem [Befehlszeilenprogramm für die Nebenläufigkeitsschnellansicht (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) können Sie die Ablaufverfolgung aus der Befehlszeile sammeln und diese in Concurrency Visualizer für Visual Studio 2015 anzeigen. Das Tool kann auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   

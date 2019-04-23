@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5e82777b0d2f6134f99cabf42030943d4ea9a8a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fb95164642595195dc62166aec5c81f39abd33e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104058"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilerstellung und Sicherheit in Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Je nach [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]-Einstellungen für di
   
  Sie können eine Liste der Prozesse ansehen, die durch Festlegen der Sichtbarkeitsoptionen der prozessübergreifenden Profilerstellung verfügbar sind. Diese Optionen stehen im Fenster **An den Prozess anhängen** zur Verfügung. Dieses Fenster wird angezeigt, wenn Sie auf **An den Prozess anhängen** klicken:  
   
--   **Prozesse aller Benutzer anzeigen**  
+- **Prozesse aller Benutzer anzeigen**  
   
      Wenn diese Option nicht ausgewählt ist, zeigt die Liste nur die Prozesse an, die dem aktuellen Benutzer gehören. Wenn **Prozesse aller Benutzer anzeigen** aktiviert ist, wird die Liste der Prozesse aller Benutzer angezeigt.  
   
--   **Prozesse in allen Sitzungen anzeigen**  
+- **Prozesse in allen Sitzungen anzeigen**  
   
      Wenn diese Option nicht ausgewählt ist, zeigt die Liste Prozesse in der aktuellen Sitzung an. Wenn diese Option ausgewählt ist, zeigt die Liste Prozesse in allen Sitzungen an.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersichten](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Vorgehensweise: Anfügen an einen laufenden Prozess](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Vorgehensweise: Fügen Sie an einen laufenden Prozess an](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

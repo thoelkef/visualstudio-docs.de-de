@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104017"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Beispiel: Die \_In\_ Anmerkung  
  Die `_In_` Anmerkung gibt an, dass:  
   
--   Der Parameter muss gültig sein und wird nicht geändert werden.  
+- Der Parameter muss gültig sein und wird nicht geändert werden.  
   
--   Die Funktion liest nur aus dem Puffer für die einzelnen Element.  
+- Die Funktion liest nur aus dem Puffer für die einzelnen Element.  
   
--   Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.  
+- Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.  
   
--   `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler besteht darin, anzuwendende `_In_` auf einen Parameter, die haben, sollte die `_Inout_` Anmerkung stattdessen.  
+- `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler besteht darin, anzuwendende `_In_` auf einen Parameter, die haben, sollte die `_Inout_` Anmerkung stattdessen.  
   
--   `_In_` kann jedoch vom Analyzer auf Nichtzeiger skalare ignoriert.  
+- `_In_` kann jedoch vom Analyzer auf Nichtzeiger skalare ignoriert.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

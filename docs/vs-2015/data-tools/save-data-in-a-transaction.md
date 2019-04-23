@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105018"
 ---
 # <a name="save-data-in-a-transaction"></a>Speichern von Daten in einer Transaktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 #### <a name="to-create-the-new-windows-project"></a>So erstellen Sie ein neues Windows-Projekt  
   
-1.  In Visual Studio auf die **Datei** im Menü Erstellen Sie ein neues **Projekt**.  
+1. In Visual Studio auf die **Datei** im Menü Erstellen Sie ein neues **Projekt**.  
   
-2.  Nennen Sie das Projekt **SavingDataInATransactionWalkthrough**.  
+2. Nennen Sie das Projekt **SavingDataInATransactionWalkthrough**.  
   
-3.  Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wählen Sie **Windows-Anwendung**, und wählen Sie dann **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Das Projekt **SavingDataInATransactionWalkthrough** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.  
   
@@ -53,27 +53,27 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  Auf der **Daten** , wählen Sie im Menü**Datenquellen anzeigen**.  
+1. Auf der **Daten** , wählen Sie im Menü**Datenquellen anzeigen**.  
   
-2.  Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
+2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
   
-3.  Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann **Weiter**.  
+3. Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**, und wählen Sie dann **Weiter**.  
   
-4.  Auf der **wählen Sie Ihre Datenverbindung**Bildschirm führen Sie einen der folgenden:  
+4. Auf der **wählen Sie Ihre Datenverbindung**Bildschirm führen Sie einen der folgenden:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
          - oder -   
   
-    -   Klicken Sie auf **neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.  
+    - Klicken Sie auf **neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.  
   
-5.  Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.  
+5. Wenn Ihre Datenbank ein Kennwort erfordert, wählen Sie die Option Einbeziehung vertraulicher Daten, und wählen Sie dann **Weiter**.  
   
-6.  Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
+6. Auf der **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
   
-7.  Auf der **Datenbankobjekte auswählen** Bildschirm, erweitern Sie die **Tabellen** Knoten.  
+7. Auf der **Datenbankobjekte auswählen** Bildschirm, erweitern Sie die **Tabellen** Knoten.  
   
-8.  Wählen Sie die `Customers` und `Orders` Tabellen, und wählen Sie dann **Fertig stellen**.  
+8. Wählen Sie die `Customers` und `Orders` Tabellen, und wählen Sie dann **Fertig stellen**.  
   
      Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im Fenster **Datenquellen** angezeigt.  
   
@@ -82,13 +82,13 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Windows-Formular  
   
--   In der **Datenquellen** Fenster, erweitern Sie die **Kunden** Knoten.  
+- In der **Datenquellen** Fenster, erweitern Sie die **Kunden** Knoten.  
   
--   Ziehen Sie den Hauptknoten **Customers** aus dem Fenster **Datenquellen** auf **Form1**.  
+- Ziehen Sie den Hauptknoten **Customers** aus dem Fenster **Datenquellen** auf **Form1**.  
   
      Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement und ein Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) für die Navigation in den Datensätzen angezeigt. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden auf der Komponentenleiste angezeigt.  
   
--   Ziehen Sie den zugehörigen **Bestellungen** Knoten (nicht der Hauptknoten **Bestellungen** Knoten, aber die verknüpfte untergeordnete Tabellenknoten unter der **Fax** Spalte) auf das Formular unten die  **CustomersDataGridView**.  
+- Ziehen Sie den zugehörigen **Bestellungen** Knoten (nicht der Hauptknoten **Bestellungen** Knoten, aber die verknüpfte untergeordnete Tabellenknoten unter der **Fax** Spalte) auf das Formular unten die  **CustomersDataGridView**.  
   
      Ein <xref:System.Windows.Forms.DataGridView> wird auf dem Formular angezeigt. OrdersTableAdapter und <xref:System.Windows.Forms.BindingSource> werden in der Komponentenleiste angezeigt.  
   
@@ -97,9 +97,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>So fügen Sie einen Verweis zur DLL-Datei System.Transactions hinzu  
   
-1.  Auf der **Projekt** , wählen Sie im Menü**Verweis hinzufügen**.  
+1. Auf der **Projekt** , wählen Sie im Menü**Verweis hinzufügen**.  
   
-2.  Wählen Sie **System.Transactions**(auf der **.NET** Registerkarte), und wählen Sie dann **OK**.  
+2. Wählen Sie **System.Transactions**(auf der **.NET** Registerkarte), und wählen Sie dann **OK**.  
   
      Dem Projekt wird ein Verweis auf **System.Transactions** hinzugefügt.  
   
@@ -117,38 +117,38 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
    Der Befehl für das Abgleichen zugehöriger Daten lautet wie folgt:  
   
--   Löschen Sie untergeordnete Datensätze. (In diesem Fall Löschen von Datensätzen aus der `Orders` Tabelle.)  
+- Löschen Sie untergeordnete Datensätze. (In diesem Fall Löschen von Datensätzen aus der `Orders` Tabelle.)  
   
--   Löschen Sie übergeordnete Datensätze. (In diesem Fall Löschen von Datensätzen aus der `Customers` Tabelle.)  
+- Löschen Sie übergeordnete Datensätze. (In diesem Fall Löschen von Datensätzen aus der `Customers` Tabelle.)  
   
--   Übergeordnete Datensätze einfügen. (In diesem Fall Einfügen von Datensätzen in der `Customers` Tabelle.)  
+- Übergeordnete Datensätze einfügen. (In diesem Fall Einfügen von Datensätzen in der `Customers` Tabelle.)  
   
--   Untergeordnete Datensätze einfügen. (In diesem Fall Einfügen von Datensätzen in der `Orders` Tabelle.)  
+- Untergeordnete Datensätze einfügen. (In diesem Fall Einfügen von Datensätzen in der `Orders` Tabelle.)  
   
 #### <a name="to-delete-existing-orders"></a>So löschen Sie eine vorhandene Bestellungen  
   
--   Fügen Sie die folgende Methode `DeleteOrders` zu **Form1** hinzu:  
+- Fügen Sie die folgende Methode `DeleteOrders` zu **Form1** hinzu:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>So löschen Sie eine vorhandene Kunden  
   
--   Fügen Sie die folgende Methode `DeleteCustomers` zu **Form1** hinzu:  
+- Fügen Sie die folgende Methode `DeleteCustomers` zu **Form1** hinzu:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Neue Kunden hinzufügen  
   
--   Fügen Sie die folgende Methode `AddNewCustomers` zu **Form1** hinzu:  
+- Fügen Sie die folgende Methode `AddNewCustomers` zu **Form1** hinzu:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Neue Bestellungen hinzufügen  
   
--   Fügen Sie die folgende Methode `AddNewOrders` zu **Form1** hinzu:  
+- Fügen Sie die folgende Methode `AddNewOrders` zu **Form1** hinzu:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Speichern 
   
 #### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
--   Wählen Sie **F5** zum Ausführen der Anwendung.  
+- Wählen Sie **F5** zum Ausführen der Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

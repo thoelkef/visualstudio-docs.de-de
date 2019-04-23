@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 514f4e3de9bd5b79387a17dffe0e016dc92ea91e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9ae4de4f8dc044d578bb4f593dc9c6c77a7b0b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083893"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Fehler: Die DCOM-Kommunikation kann nicht initiiert werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Bei einem Versuch des lokalen Computers, mit dem Remotecomputer zu kommunizieren
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Wenn auf dem Remotecomputer Windows-Firewall aktiviert ist, finden Sie unter [festgelegt Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Anleitungen zum Konfigurieren der Firewall für das lokale Debuggen.  
+- Wenn auf dem Remotecomputer Windows-Firewall aktiviert ist, finden Sie unter [festgelegt Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Anleitungen zum Konfigurieren der Firewall für das lokale Debuggen.  
   
--   Versuchen Sie zum Wiederherstellen der Windows-Authentifizierung, beide Computer neu zu starten. Überprüfen Sie die Ereignisprotokolle auf dem lokalen Computer und dem Remotecomputer auf Kerberos-Fehler, und klären Sie mit den Domänenadministratoren ab, ob bekannte Probleme vorliegen.  
+- Versuchen Sie zum Wiederherstellen der Windows-Authentifizierung, beide Computer neu zu starten. Überprüfen Sie die Ereignisprotokolle auf dem lokalen Computer und dem Remotecomputer auf Kerberos-Fehler, und klären Sie mit den Domänenadministratoren ab, ob bekannte Probleme vorliegen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Remote Debugging](../debugger/remote-debugging.md)

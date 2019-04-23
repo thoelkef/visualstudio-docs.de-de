@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082433"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]
   
 ### <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld  
   
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Wählen Sie **Projekte und Projektmappen** aus, und wählen Sie dann **VC++-Projekteinstellungen** aus.  
+2. Wählen Sie **Projekte und Projektmappen** aus, und wählen Sie dann **VC++-Projekteinstellungen** aus.  
   
 ## <a name="build-customization-search-path"></a>Suchpfad für die Buildanpassung  
  Gibt die Liste der Verzeichnisse mit RULES-Dateien an, die Sie bei der Definition von Buildregeln für Projekte unterstützen.  

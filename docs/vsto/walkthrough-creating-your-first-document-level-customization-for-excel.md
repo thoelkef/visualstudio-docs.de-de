@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1289f6eeb802aa53db5f9e43dc3725b8c65f884
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104498"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen Sie Ihrer ersten Anpassung auf Dokumentebene, für Excel
   Diese exemplarische Vorgehensweise bietet eine Einführung zum Erstellen einer Anpassung auf Dokumentebene für Microsoft Office Excel. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind nur verfügbar, wenn eine bestimmte Arbeitsmappe geöffnet ist. Sie können eine Anpassung auf Dokumentebene nicht verwenden, um anwendungsweite Änderungen vorzunehmen, z. B., um eine neue Registerkarte des Menübands anzuzeigen, wenn eine Arbeitsmappe geöffnet ist.
@@ -43,9 +43,9 @@ ms.locfileid: "56622877"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
@@ -88,9 +88,9 @@ ms.locfileid: "56622877"
 
 ### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>So schließen Sie ein Arbeitsblatt im Designer und öffnen es erneut
 
-1.  Schließen Sie die Arbeitsmappe, indem Sie auf die **schließen** Schaltfläche (X) für das Designer-Fenster.
+1. Schließen Sie die Arbeitsmappe, indem Sie auf die **schließen** Schaltfläche (X) für das Designer-Fenster.
 
-2.  In **Projektmappen-Explorer**, mit der rechten Maustaste die **Sheet1** Codedatei, und klicken Sie auf **Ansicht-Designer**.
+2. In **Projektmappen-Explorer**, mit der rechten Maustaste die **Sheet1** Codedatei, und klicken Sie auf **Ansicht-Designer**.
 
      \- oder –
 
@@ -101,7 +101,7 @@ ms.locfileid: "56622877"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>So fügen Sie einem Arbeitsblatt mithilfe des Designers Text hinzu
 
-1.  Wählen Sie in das Arbeitsblatt, das im Designer geöffnet ist, Zelle **A1**, und geben Sie dann den folgenden Text.
+1. Wählen Sie in das Arbeitsblatt, das im Designer geöffnet ist, Zelle **A1**, und geben Sie dann den folgenden Text.
 
      **Dieser Text wurde mithilfe des Designers hinzugefügt.**
 
@@ -111,17 +111,17 @@ ms.locfileid: "56622877"
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Fügen Sie Text in einem Arbeitsblatt programmgesteuert hinzu
  Als Nächstes fügen Sie der Codedatei "Sheet1" Code hinzu. Der neue Code verwendet das Excel-Objektmodell, um der Arbeitsmappe eine zweite Textzeile hinzuzufügen. Standardmäßig enthält die Codedatei "Sheet1" den folgenden generierten Code:
 
--   Eine partielle Definition der `Sheet1`-Klasse, die das Programmiermodell des Arbeitsblatts darstellt und den Zugriff auf das Excel-Objektmodell bereitstellt. Weitere Informationen [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `Sheet1` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
+- Eine partielle Definition der `Sheet1`-Klasse, die das Programmiermodell des Arbeitsblatts darstellt und den Zugriff auf das Excel-Objektmodell bereitstellt. Weitere Informationen [Arbeitsblatt-Hostelement](../vsto/worksheet-host-item.md) und [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md). Der Rest der `Sheet1` -Klasse ist in einer ausgeblendeten Codedatei definiert, die nicht geändert werden darf.
 
--   Die Ereignishandler `Sheet1_Startup` und `Sheet1_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihre Anpassung von Excel geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren der Anpassung, wenn sie geladen wird, und zum Bereinigen der von der Anpassung verwendeten Ressourcen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
+- Die Ereignishandler `Sheet1_Startup` und `Sheet1_Shutdown` . Diese Ereignishandler werden aufgerufen, wenn Ihre Anpassung von Excel geladen und entladen wird. Verwenden Sie diese Ereignishandler zum Initialisieren der Anpassung, wenn sie geladen wird, und zum Bereinigen der von der Anpassung verwendeten Ressourcen, wenn sie entladen wird. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>So fügen Sie dem Arbeitsblatt mithilfe von Code eine zweite Textzeile hinzu
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1**, und klicken Sie dann auf **Ansichtscode**.
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1**, und klicken Sie dann auf **Ansichtscode**.
 
      Die Codedatei wird in Visual Studio geöffnet.
 
-2.  Ersetzen Sie den `Sheet1_Startup` -Ereignishandler durch den folgenden Code. Beim Öffnen von "Sheet1" wird dem Arbeitsblatt durch diesen Code eine zweite Textzeile hinzugefügt.
+2. Ersetzen Sie den `Sheet1_Startup` -Ereignishandler durch den folgenden Code. Beim Öffnen von "Sheet1" wird dem Arbeitsblatt durch diesen Code eine zweite Textzeile hinzugefügt.
 
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
@@ -130,41 +130,41 @@ ms.locfileid: "56622877"
 
 ### <a name="to-test-your-workbook"></a>So testen Sie die Arbeitsmappe
 
-1.  Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen.
+1. Drücken Sie **F5** , um das Projekt zu erstellen und auszuführen.
 
      Wenn Sie das Projekt erstellen, wird der Code in eine Assembly kompiliert, die der Arbeitsmappe zugeordnet ist. Visual Studio legt eine Kopie der Arbeitsmappe und der Assembly im Buildausgabeordner für das Projekt ab und konfiguriert die Sicherheitseinstellungen auf dem Entwicklungscomputer, damit die Anpassung ausgeführt werden kann. Weitere Informationen finden Sie unter [erstellen Office-Projektmappen](../vsto/building-office-solutions.md).
 
-2.  Vergewissern Sie sich, dass der folgende Text in der Arbeitsmappe angezeigt wird.
+2. Vergewissern Sie sich, dass der folgende Text in der Arbeitsmappe angezeigt wird.
 
      **Dieser Text wurde mithilfe des Designers hinzugefügt.**
 
      **Dieser Text wurde per Code hinzugefügt.**
 
-3.  Schließen Sie die Arbeitsmappe.
+3. Schließen Sie die Arbeitsmappe.
 
 ## <a name="clean-up-the-project"></a>Bereinigen Sie das Projekt
  Wenn Sie die Entwicklung eines Projekts abgeschlossen haben, sollten Sie die Dateien im Buildausgabeordner und die Sicherheitseinstellungen entfernen, die durch den Buildvorgang erstellt wurden.
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>So bereinigen Sie das abgeschlossene Projekt auf dem Entwicklungscomputer
 
-1.  Klicken Sie in Visual Studio im Menü **Build** auf **Projektmappe bereinigen**.
+1. Klicken Sie in Visual Studio im Menü **Build** auf **Projektmappe bereinigen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
  Da Sie nun eine grundlegende Anpassung auf Dokumentebene für Excel erstellt haben, können Sie mehr über die Entwicklung von Anpassungen in den folgenden Themen erfahren:
 
--   Allgemeine Programmieraufgaben, die Sie in Anpassungen auf Dokumentebene ausführen können: [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md).
+- Allgemeine Programmieraufgaben, die Sie in Anpassungen auf Dokumentebene ausführen können: [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md).
 
--   Programmieraufgaben, die für Anpassungen auf Dokumentebene für Excel spezifisch sind: [Excel-Projektmappen](../vsto/excel-solutions.md).
+- Programmieraufgaben, die für Anpassungen auf Dokumentebene für Excel spezifisch sind: [Excel-Projektmappen](../vsto/excel-solutions.md).
 
--   Verwenden das Objektmodell von Excel: [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).
+- Verwenden das Objektmodell von Excel: [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).
 
--   Anpassen der Benutzeroberfläche von Excel, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen Aktionsbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
+- Anpassen der Benutzeroberfläche von Excel, z. B. durch Hinzufügen einer benutzerdefinierten Registerkarte zum Menüband oder durch Erstellen eines eigenen Aktionsbereichs: [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).
 
--   Mithilfe von erweiterten Excel-Objekten, die von Office-Entwicklungstools in Visual Studio bereitgestellten Aufgaben, die mit dem Excel-Objektmodell (z. B. Hosten verwalteter Steuerelemente für Dokumente und binden Excel-Steuerelementen an Daten mithilfe der Windows-Formulare nicht möglich sind -Datenbindungsmodell verwendet): [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).
+- Mithilfe von erweiterten Excel-Objekten, die von Office-Entwicklungstools in Visual Studio bereitgestellten Aufgaben, die mit dem Excel-Objektmodell (z. B. Hosten verwalteter Steuerelemente für Dokumente und binden Excel-Steuerelementen an Daten mithilfe der Windows-Formulare nicht möglich sind -Datenbindungsmodell verwendet): [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).
 
--   Erstellen und Debuggen von Anpassungen auf Dokumentebene für Excel: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).
+- Erstellen und Debuggen von Anpassungen auf Dokumentebene für Excel: [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md).
 
--   Bereitstellen von Anpassungen auf Dokumentebene für Excel: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
+- Bereitstellen von Anpassungen auf Dokumentebene für Excel: [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

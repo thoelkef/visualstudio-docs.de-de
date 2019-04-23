@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103874"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 > [!NOTE]
 > In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalysetools verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](http://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
 
-##  <a name="BKMK_Run"></a> Ausführen der Codeanalyse
+## <a name="BKMK_Run"></a> Ausführen der Codeanalyse
  So führen Sie die Codeanalyse in der Visual Studio-Projektmappe aus
 
 - Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.
@@ -43,7 +43,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    ![Codeanalysefenster](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
+## <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
  Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummer und die Analyselogik an, die zu der Warnung geführt haben.
 
  ![Erweiterte Codeanalysewarnung](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 > [!TIP]
 >  Sie können die Codeanalyse im Codeanalysefenster erneut ausführen. Klicken Sie auf die Schaltfläche **Analysieren**, und wählen Sie dann den Bereich der Analyse aus. Sie können die Analyse für die gesamte Projektmappe oder für ein ausgewähltes Projekt erneut ausführen.
 
-##  <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen
+## <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen
  Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass diese nicht mehr im Codeanalysefenster angezeigt werden.
 
  So unterdrücken Sie eine Warnung
@@ -70,12 +70,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    Unterdrücken einer Meldung fügt `#pragma(warning:`*WarningId*`)` ein, das die Warnung für die Codezeile unterdrückt.
 
-##  <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
+## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
  ![Fenster zum Suchen und Filtern der Codeanalyse](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++-Codeanalysewarnungen
+## <a name="Warnings"></a> C++-Codeanalysewarnungen
  Die Codeanalyse gibt die folgenden Warnungen für C++-Code aus:
 
 |                                      Regel                                      |                                                  Beschreibung                                                  |

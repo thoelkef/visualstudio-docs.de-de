@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b082e92ffac43e48725285bc9fa9052dd82cfd92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104474"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` Eig
   
 ### <a name="to-change-the-publish-version"></a>So ändern Sie die Version veröffentlichen  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  In **Veröffentlichungsversion** Feld, das Erhöhen der **wichtigen**, **kleinere**, **erstellen**, oder **Revision** Version die Nummern.  
+3. In **Veröffentlichungsversion** Feld, das Erhöhen der **wichtigen**, **kleinere**, **erstellen**, oder **Revision** Version die Nummern.  
   
     > [!NOTE]
     >  Sie sollten niemals eine Versionsnummer verringern; Dies kann zu unvorhersehbaren Updateverhalten führen.  

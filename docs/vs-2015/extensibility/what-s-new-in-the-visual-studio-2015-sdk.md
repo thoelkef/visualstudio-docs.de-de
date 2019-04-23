@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c419800a92f25ce4531c351d4131acf119633ccb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080877"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Was&#39;Neues in Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
 
  Diese Themen sind unter der [VSSDK-Hilfsprogramme](../extensibility/internals/vssdk-utilities.md) Abschnitt:
 
--   Die [Tools für Farbdesigns](../extensibility/internals/color-theming-tools.md) erstellen und Bearbeiten von Farben für Visual Studio.
+- Die [Tools für Farbdesigns](../extensibility/internals/color-theming-tools.md) erstellen und Bearbeiten von Farben für Visual Studio.
 
--   Die [Bilddienste](../extensibility/internals/image-service-tools.md) können Sie mit Visual Studio-Image-manifest-Dateien arbeiten.
+- Die [Bilddienste](../extensibility/internals/image-service-tools.md) können Sie mit Visual Studio-Image-manifest-Dateien arbeiten.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Neue Möglichkeit zum Hinzufügen von Visual Studio SDK für Visual Studio
  Ab Visual Studio 2015, müssen Sie das Visual Studio SDK separat herunterladen. Stattdessen können Sie sie als Teil der normal-Installation installieren, oder Sie können auch später auf installieren. Wenn Sie zu öffnen oder erstellen Sie eine VSIX-Projektmappe, fordert Visual Studio Sie Visual Studio-Erweiterbarkeitstools installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -40,17 +40,17 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
  Ab Visual Studio 2015 SDK können, müssen Sie verschiedene Optionen zum Erstellen von Erweiterungen, je nachdem, welche, die Programmiersprache Sie verwenden.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C#- oder Visual Basic
- Für C# und Visual Basic ist es eine Vielzahl von Projektelementvorlagen, mit die Sie VSPackages, Menübefehle, Toolfenster, Editor-Klassifizierer, Editorzusatzelemente und Rand editorerweiterungen erstellen können. Sie können einige oder alle diese zum standard VSIX-Projekt hinzufügen. Weitere Informationen finden Sie unter:
+ Für c# und Visual Basic ist es eine Vielzahl von Projektelementvorlagen, mit die Sie VSPackages, Menübefehle, Toolfenster, Editor-Klassifizierer, Editorzusatzelemente und Rand editorerweiterungen erstellen können. Sie können einige oder alle diese zum standard VSIX-Projekt hinzufügen. Weitere Informationen finden Sie unter:
 
--   [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Erstellen einer Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     Der VSPackage-Assistent erstellt die Erweiterungen nicht mehr in C# oder Visual Basic.
+     Der VSPackage-Assistent erstellt die Erweiterungen nicht mehr in c# oder Visual Basic.
 
 ### <a name="c"></a>C++
  Für C++ Menübefehle, Toolfenster und benutzerdefinierte Editoren des VSPackage-Assistenten unterstützt. Suchen sie in der **neues Projekt** Dialogfeld **Visual C++ / Erweiterbarkeit**.

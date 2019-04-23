@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2102bc7f91570bf68616eb62520e5b955204c26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085271"
 ---
 # <a name="xmlnode-control"></a>XMLNode-Steuerelement
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
@@ -37,23 +37,23 @@ ms.locfileid: "56599570"
 ## <a name="events"></a>Ereignisse
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelement verfügbar:
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
 
 ## <a name="compare-events"></a>Vergleichen von Ereignissen
  Sie können ein Ereignis, wenn der Benutzer den Cursor innerhalb des Kontexts eines bestimmten bewegt erfassen <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Angenommen, Sie haben eine <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement mit dem Namen `Customer` , die über ein untergeordnetes Element verfügt <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement mit dem Namen `Company`, und `Company` zwei untergeordnete <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelemente namens `CompanyName` und `CompanyRegion` wie folgt:

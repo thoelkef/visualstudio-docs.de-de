@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081423"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Überprüfen von Objekten im JavaScript-Konsolenfenster  
  Über das JavaScript-Konsolenfenster können Sie mit jedem Objekt interagieren, das im Bereich enthalten ist. Um ein Objekt, das außerhalb des gültigen Bereichs liegt, im Konsolenfenster zu überprüfen, führen Sie `console.log` , `console.dir`oder andere Befehle aus dem Code aus. Alternativ können Sie aus dem Konsolenfenster mit dem Objekt interagieren, während es innerhalb des gültigen Bereichs liegt. Dazu müssen Sie einen Haltepunkt im Code festlegen (**Haltepunkt** > **Insert Haltepunkt**.)  
   
-##  <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
+## <a name="ConsoleLog"></a> Formatieren der console.log-Ausgabe  
  Wenn Sie mehrere Argumente an `console.log`übergeben, behandelt die Konsole die Argumente als Array und verkettet die Ausgabe.  
   
 ```javascript  

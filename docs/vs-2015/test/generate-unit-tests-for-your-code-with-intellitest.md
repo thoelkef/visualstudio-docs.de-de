@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085011"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generieren von Komponententests für Code mit IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
 ### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Untersuchen: Verwenden von IntelliTest zum Untersuchen Ihres Codes und Generieren von Komponententests  
  Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstellen Sie Komponententests](#NoRun) andernfalls, bevor Sie sie generieren.  
   
-1.  Öffnen Sie Ihre Projektmappe in Visual Studio. Öffnen Sie dann die Klassendatei, welche die zu testenden Methoden enthält.  
+1. Öffnen Sie Ihre Projektmappe in Visual Studio. Öffnen Sie dann die Klassendatei, welche die zu testenden Methoden enthält.  
   
-2.  Klicken Sie mit der rechten Maustaste auf eine Methode im Code, und wählen Sie **IntelliTest ausführen** , um Komponententests für den Code in der Methode zu generieren.  
+2. Klicken Sie mit der rechten Maustaste auf eine Methode im Code, und wählen Sie **IntelliTest ausführen** , um Komponententests für den Code in der Methode zu generieren.  
   
      ![Klicken Sie mit der rechten Maustaste auf Ihrer Methode zum Generieren der Komponententests](../test/media/runpex.png "RunPEX")  
   
@@ -50,7 +50,7 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
 ### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Beibehalten: Speichern der Komponententests als Regressionssammlung  
   
-1.  Wählen Sie die Datenzeilen aus, die Sie mit dem parametrisierten Komponententest in einem Testprojekt speichern möchten.  
+1. Wählen Sie die Datenzeilen aus, die Sie mit dem parametrisierten Komponententest in einem Testprojekt speichern möchten.  
   
      ![Wählen Sie „Tests“ aus, klicken Sie mit der rechten Maustaste, und klicken auf „Speichern“](../test/media/savepextests.png "SavePEXTests")  
   
@@ -64,13 +64,13 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
 ### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Hilfe: Verwenden von IntelliTest für die Codeuntersuchung  
   
-1.  Wenn Ihr Code komplizierter ist, hilft Ihnen IntelliTest bei der Untersuchung des Codes. Ein Beispiel: Sie verwenden eine Methode, die eine Schnittstelle als Parameter hat, und diese Schnittstelle wird von mehreren Klassen implementiert. Dann ermittelt IntelliTest diese Klassen und gibt eine Warnung aus.  
+1. Wenn Ihr Code komplizierter ist, hilft Ihnen IntelliTest bei der Untersuchung des Codes. Ein Beispiel: Sie verwenden eine Methode, die eine Schnittstelle als Parameter hat, und diese Schnittstelle wird von mehreren Klassen implementiert. Dann ermittelt IntelliTest diese Klassen und gibt eine Warnung aus.  
   
      Rufen Sie die Warnungen auf, um zu entscheiden, was zu tun ist.  
   
      ![Rufen Sie die Warnungen auf](../test/media/pexviewwarning.png "PEXViewWarning")  
   
-2.  Nachdem Sie den Code untersucht haben und wissen, was Sie testen möchten, können Sie die Warnung beheben, indem Sie die Klassen wählen, mit denen die Schnittstelle getestet werden soll.  
+2. Nachdem Sie den Code untersucht haben und wissen, was Sie testen möchten, können Sie die Warnung beheben, indem Sie die Klassen wählen, mit denen die Schnittstelle getestet werden soll.  
   
      ![Klicken Sie mit der rechten Maustaste auf die Warnung, und wählen Sie die Option zum Beheben aus](../test/media/pexfixwarning.png "PEXFixWarning")  
   
@@ -78,14 +78,14 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
      `[assembly: PexUseType(typeof(Camera))]`  
   
-3.  Jetzt können Sie IntelliTest erneut ausführen, um einen parametrisierten Komponententest und Testdaten zu generieren, wobei nur die korrigierte Klasse verwendet wird.  
+3. Jetzt können Sie IntelliTest erneut ausführen, um einen parametrisierten Komponententest und Testdaten zu generieren, wobei nur die korrigierte Klasse verwendet wird.  
   
      ![IntelliTest zum Generieren der Testdaten erneut ausführen](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Angeben: Verwenden von IntelliTest zum Überprüfen der Richtigkeit der im Code festgelegten Eigenschaften  
  Geben Sie die allgemeine Beziehung zwischen Eingaben und Ausgaben an, die von den generierten Komponententests überprüft werden soll. Diese Spezifikation ist in einer Methode gekapselt, die wie eine Testmethode aussieht, aber universell quantifiziert ist. Dies ist die parametrisierte Komponententestmethode, und alle Assertionen, die Sie vornehmen, müssen für alle möglichen Eingabewerte gelten, die IntelliTest generieren kann.  
   
-##  <a name="QandALink"></a> Fragen und Antworten  
+## <a name="QandALink"></a> Fragen und Antworten  
   
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Frage: Kann IntelliTest für nicht verwalteten Code verwendet werden?  
  **Antwort:** Nein, IntelliTest funktioniert nur mit verwaltetem Code.  
@@ -95,13 +95,13 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
  Wenn Sie einen Test haben, der bestanden wird, wenn bestimmte Ausnahmen ausgelöst werden, können Sie je nach Ihren Anforderungen auf Ebene der Testmethode, der Testklasse oder der Assembly eines der folgenden Attribute festlegen:  
   
--   **PexAllowedExceptionAttribute**  
+- **PexAllowedExceptionAttribute**  
   
--   **PexAllowedExceptionFromTypeAttribute**  
+- **PexAllowedExceptionFromTypeAttribute**  
   
--   **PexAllowedExceptionFromTypeUnderTestAttribute**  
+- **PexAllowedExceptionFromTypeUnderTestAttribute**  
   
--   **PexAllowedExceptionFromAssemblyAttribute**  
+- **PexAllowedExceptionFromAssemblyAttribute**  
   
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Frage: Kann ich dem parametrisierten Komponententest Annahmen hinzufügen?  
  **Antwort:** Ja. Geben Sie mit Annahmen an, welche Testdaten für den Komponententest einer bestimmten Methode nicht benötigt werden. Verwenden Sie die Klasse <xref:Microsoft.Pex.Framework.PexAssume> , um Annahmen hinzuzufügen. Sie können z. B. die Annahme hinzufügen, dass die Längenvariable ungleich null ist:  
@@ -117,7 +117,7 @@ IntelliTest untersucht Ihren .NET-Code, um Testdaten und eine Reihe von Komponen
   
  Wenn Sie eine Assertion hinzufügen und IntelliTest erneut ausführen, wird geprüft, ob die Assertion gültig ist; falls nicht, schlägt der Test fehl.  
   
-###  <a name="NoRun"></a> Frage: Kann ich parametrisierte Komponententests generieren, ohne zuerst IntelliTest auszuführen?  
+### <a name="NoRun"></a> Frage: Kann ich parametrisierte Komponententests generieren, ohne zuerst IntelliTest auszuführen?  
  **Antwort:** Ja, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen** aus.  
   
  ![Klicken Sie mit der rechten Maustaste auf „Editor“ und wählen Sie „IntelliTest erstellen“](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c525aa18e94e7951e6355c959a105aa5841e10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631979309d9ad42a25b244e8806e5a6849f8b81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081467"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Auf Objekten mit schwacher Identität nicht sperren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "58947501"
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein Objekt hat eine schwache Identität, wenn ein Zugriff darauf über Grenzen von Anwendungsdomänen hinweg möglich ist. Ein Thread, der eine Sperre für ein Objekt zu erhalten versucht, das über eine schwache Identität verfügt, kann durch einen zweiten Thread in einer anderen Anwendungsdomäne blockiert werden, der eine Sperre für das gleiche Objekt besitzt. Die folgenden Typen haben eine schwache Identität und werden von der Regel gekennzeichnet:
 
--   <xref:System.MarshalByRefObject>
+- <xref:System.MarshalByRefObject>
 
--   <xref:System.ExecutionEngineException>
+- <xref:System.ExecutionEngineException>
 
--   <xref:System.OutOfMemoryException>
+- <xref:System.OutOfMemoryException>
 
--   <xref:System.StackOverflowException>
+- <xref:System.StackOverflowException>
 
--   <xref:System.String>
+- <xref:System.String>
 
--   <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.MemberInfo>
 
--   <xref:System.Reflection.ParameterInfo>
+- <xref:System.Reflection.ParameterInfo>
 
--   <xref:System.Threading.Thread>
+- <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie ein Objekt von einem Typ, der nicht in der Liste in der Beschreibung des Ereignisses ist.

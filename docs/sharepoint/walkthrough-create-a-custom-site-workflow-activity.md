@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dfed62c493473c48704061fac00427f40d828520
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084322"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivität
   In dieser exemplarischen Vorgehensweise veranschaulicht, wie eine benutzerdefinierte Aktivität für eine Website-Ebene mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Workflowdokumentbibliothek auf Siteebene Workflows gelten für die gesamte Website, nicht nur eine Liste auf der Website.) Die benutzerdefinierte Aktivität wird eine Liste der Ankündigungen-Sicherung erstellt und kopiert dann den Inhalt dieser Liste hinein.
@@ -43,34 +43,34 @@ ms.locfileid: "56615831"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
+- Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-a-site-workflow-custom-activity-project"></a>Erstellen eines Projekts benutzerdefinierte Aktivität für workflow
  Erstellen Sie zunächst ein Projekt zum Speichern und testen die benutzerdefinierte Workflow-Aktivität.
 
 #### <a name="to-create-a-site-workflow-custom-activity-project"></a>Erstellen ein Projekts benutzerdefinierte Aktivität für workflow
 
-1.  Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.
+1. Wählen Sie auf der Menüleiste **Datei** > **neu** > **Projekt** zum Anzeigen der **neues Projekt** Dialogfeld.
 
-2.  Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.
+2. Erweitern Sie die **SharePoint** Knoten entweder **Visual C#-** oder **Visual Basic**, und wählen Sie dann die **2010** Knoten.
 
-3.  In der **Vorlagen** Bereich, wählen Sie die **SharePoint 2010-Projekt** Vorlage.
+3. In der **Vorlagen** Bereich, wählen Sie die **SharePoint 2010-Projekt** Vorlage.
 
-4.  In der **Namen** geben **AnnouncementBackup**, und wählen Sie dann die **OK** Schaltfläche.
+4. In der **Namen** geben **AnnouncementBackup**, und wählen Sie dann die **OK** Schaltfläche.
 
      Die **SharePoint Customization Wizard** angezeigt wird.
 
-5.  Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite die **als farmlösung bereitstellen** Optionsfeld aus, und wählen Sie dann die **Fertig stellen** Schaltfläche zum Akzeptieren der Trust-Ebene und Standard-Website.
+5. Auf der **Geben Sie die Website und Sicherheitsebene für debugging** Seite die **als farmlösung bereitstellen** Optionsfeld aus, und wählen Sie dann die **Fertig stellen** Schaltfläche zum Akzeptieren der Trust-Ebene und Standard-Website.
 
      In diesem Schritt wird die Vertrauensebene für die Lösung als Farm-Lösung, die einzig verfügbare Option für Workflowprojekte.
 
-6.  In **Projektmappen-Explorer**, wählen Sie den Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.
+6. In **Projektmappen-Explorer**, wählen Sie den Projektknoten und anschließend auf der Menüleiste die Optionen **Projekt** > **neues Element hinzufügen**.
 
-7.  Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
+7. Entweder unter **Visual C#-** oder **Visual Basic**, erweitern Sie die **SharePoint** Knoten, und wählen Sie dann die **2010** Knoten.
 
-8.  In der **Vorlagen** Bereich Wählen Sie die **sequenzieller Workflow (nur Farmlösung)** Vorlage, und wählen Sie dann die **hinzufügen** Schaltfläche.
+8. In der **Vorlagen** Bereich Wählen Sie die **sequenzieller Workflow (nur Farmlösung)** Vorlage, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
      Die **SharePoint Customization Wizard** angezeigt wird.
 
@@ -83,16 +83,16 @@ ms.locfileid: "56615831"
 
 #### <a name="to-add-a-custom-workflow-activity-class"></a>Hinzufügen eine benutzerdefinierten Workflow Activity-Klasse
 
-1.  Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen** zum Anzeigen der **neues Element hinzufügen** Dialogfeld.
+1. Wählen Sie auf der Menüleiste **Projekt** > **neues Element hinzufügen** zum Anzeigen der **neues Element hinzufügen** Dialogfeld.
 
-2.  In der **installierte Vorlagen** Strukturansicht, und wählen Sie die **Code** Knoten, und wählen Sie dann die **Klasse** Vorlage in der Liste von Projektelementvorlagen. Verwenden Sie den Standardnamen Class1. Wählen Sie die Schaltfläche **Hinzufügen** aus.
+2. In der **installierte Vorlagen** Strukturansicht, und wählen Sie die **Code** Knoten, und wählen Sie dann die **Klasse** Vorlage in der Liste von Projektelementvorlagen. Verwenden Sie den Standardnamen Class1. Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
-3.  Ersetzen Sie sämtlichen Code in Class1 durch Folgendes:
+3. Ersetzen Sie sämtlichen Code in Class1 durch Folgendes:
 
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4.  Speichern Sie das Projekt, und anschließend auf der Menüleiste die Optionen **erstellen** > **Projektmappe**.
+4. Speichern Sie das Projekt, und anschließend auf der Menüleiste die Optionen **erstellen** > **Projektmappe**.
 
      Class1 angezeigt wird, als benutzerdefinierte Aktion in der **Toolbox** auf die **AnnouncementBackup Komponenten** Registerkarte.
 
@@ -101,26 +101,26 @@ ms.locfileid: "56615831"
 
 #### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Zum Hinzufügen einer benutzerdefinierten Aktivität auf der Website-workflow
 
-1.  Öffnen Sie Workflow1 im Workflow-Designer in der Entwurfsansicht.
+1. Öffnen Sie Workflow1 im Workflow-Designer in der Entwurfsansicht.
 
-2.  Ziehen Sie die Class1 aus der **Toolbox** , damit es unter angezeigt wird der `onWorkflowActivated1` wählen Sie die Aktivität, oder Sie öffnen das Kontextmenü für Class1, **kopieren**, öffnen das Kontextmenü für die Zeile unter der `onWorkflowActivated1` Aktivität, und wählen Sie dann **einfügen**.
+2. Ziehen Sie die Class1 aus der **Toolbox** , damit es unter angezeigt wird der `onWorkflowActivated1` wählen Sie die Aktivität, oder Sie öffnen das Kontextmenü für Class1, **kopieren**, öffnen das Kontextmenü für die Zeile unter der `onWorkflowActivated1` Aktivität, und wählen Sie dann **einfügen**.
 
-3.  Speichern Sie das Projekt.
+3. Speichern Sie das Projekt.
 
 ## <a name="test-the-site-workflow-custom-activity"></a>Testen der benutzerdefinierten Websiteworkflowaktivität
  Als Nächstes führen Sie das Projekt, und starten Sie den Websiteworkflow. Die benutzerdefinierte Aktivität erstellt eine Sicherungsliste von Ankündigungen und kopiert den Inhalt aus der Liste der Ankündigungen für das aktuelle hinein. Der Code überprüft auch, ob eine Liste der Sicherungen, die bereits vor dem Erstellen einer vorhanden ist. Wenn eine Sicherungsliste bereits vorhanden ist, wird sie gelöscht. Der Code fügt auch einen Link in die neue Liste auf der Schnellstartleiste der SharePoint-Website.
 
 #### <a name="to-test-the-site-workflow-custom-activity"></a>So testen Sie die benutzerdefinierten Websiteworkflowaktivität
 
-1.  Wählen Sie die **F5** Taste, um das Projekt ausführen und in SharePoint bereitzustellen.
+1. Wählen Sie die **F5** Taste, um das Projekt ausführen und in SharePoint bereitzustellen.
 
-2.  Wählen Sie auf der Schnellstartleiste der **listet** Link, um alle Listen anzuzeigen, die in der SharePoint-Website verfügbar sind. Beachten Sie, dass es nur eine Liste mit dem Namen Ankündigungen **Ankündigungen**.
+2. Wählen Sie auf der Schnellstartleiste der **listet** Link, um alle Listen anzuzeigen, die in der SharePoint-Website verfügbar sind. Beachten Sie, dass es nur eine Liste mit dem Namen Ankündigungen **Ankündigungen**.
 
-3.  Wählen Sie am oberen Rand der SharePoint-Website, die **Websiteworkflows** Link.
+3. Wählen Sie am oberen Rand der SharePoint-Website, die **Websiteworkflows** Link.
 
-4.  Wählen Sie den Anfang einer neuen Workflow-Bereich, der **AnnouncementBackup - Workflow1** Link. Dies startet den Websiteworkflow und führt den Code in die benutzerdefinierte Aktion.
+4. Wählen Sie den Anfang einer neuen Workflow-Bereich, der **AnnouncementBackup - Workflow1** Link. Dies startet den Websiteworkflow und führt den Code in die benutzerdefinierte Aktion.
 
-5.  Wählen Sie auf der Schnellstartleiste der **Ankündigungen Sicherung** Link. Beachten Sie, dass alle Ankündigungen, die in befinden die **Ankündigungen** Liste in diese neue Liste kopiert wurden.
+5. Wählen Sie auf der Schnellstartleiste der **Ankündigungen Sicherung** Link. Beachten Sie, dass alle Ankündigungen, die in befinden die **Ankündigungen** Liste in diese neue Liste kopiert wurden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)

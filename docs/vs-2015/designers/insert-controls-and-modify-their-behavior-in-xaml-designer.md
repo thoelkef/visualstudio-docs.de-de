@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082944"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Einfügen von Steuerelementen und Ändern des Verhaltens im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Steuerelemente ermöglichen Benutzern die Interaktion mit Ihrer Anwendung. Verwe
   
  **In diesem Thema:**  
   
--   [Hinzufügen von Steuerelementen zur Zeichenfläche](#Insert)  
+- [Hinzufügen von Steuerelementen zur Zeichenfläche](#Insert)  
   
--   [Mit Steuerelementen Dinge ausführen](#Modify)  
+- [Mit Steuerelementen Dinge ausführen](#Modify)  
   
-##  <a name="Insert"></a> Hinzufügen von Steuerelementen zur Zeichenfläche  
+## <a name="Insert"></a> Hinzufügen von Steuerelementen zur Zeichenfläche  
  Sie können Steuerelemente über den Bereich **Bestand** auf die **Zeichenfläche**ziehen und sie dann im Fenster **Eigenschaften** ändern.  
   
  ![Blend &#45; Assets &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ Steuerelemente ermöglichen Benutzern die Interaktion mit Ihrer Anwendung. Verwe
   
  Wählen Sie ein Objekt, um ein Steuerelement zu erstellen. Klicken Sie im Menü **Extras** auf **Steuerung erstellen**.  
   
-##  <a name="Modify"></a> Mit Steuerelementen Dinge ausführen  
+## <a name="Modify"></a> Mit Steuerelementen Dinge ausführen  
  Steuerelemente können Aktionen ausführen, wenn die Benutzer mit ihnen interagieren. Sie können z. B. eine Animation starten, eine Datenquelle aktualisieren oder ein Video abspielen.  
   
  Verwenden Sie *Trigger*, *Verhalten*und *Ereignisse* , um mit Steuerelementen etwas auszuführen.  

@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97b6b7a798483000916ee8c99a8000fd45b9cc00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080240"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Fehler: Websiteworkerprozess wurde von IIS beendet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Der Debugger hat die Codeausführung auf der Website beendet. Dadurch gehen die 
   
 1. Öffnen Sie das Fenster **Verwaltung**.  
   
-   1.  Klicken Sie auf das Menü **Start**, und wählen Sie anschließend **Systemsteuerung** aus.  
+   1. Klicken Sie auf das Menü **Start**, und wählen Sie anschließend **Systemsteuerung** aus.  
   
-   2.  Wählen Sie in der **Systemsteuerung** ggf. die Option **Zur klassischen Ansicht wechseln**, und doppelklicken Sie auf **Verwaltung**.  
+   2. Wählen Sie in der **Systemsteuerung** ggf. die Option **Zur klassischen Ansicht wechseln**, und doppelklicken Sie auf **Verwaltung**.  
   
 2. Doppelklicken Sie im Fenster **Verwaltung** auf **Internetinformationsdienste-Manager**.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1940bb3825fd610d4177b92c7147bfcd55b6174
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 36d9f2abceb7daf0d9e4be72958b2bbc1fe86204
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080539"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren eines .NET-Diensts und Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Profiler-Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
     |Option|Beschreibung|  
     |------------|-----------------|  
@@ -98,19 +98,19 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
-1.  Beendet den Dienst aus dem Dienststeuerungs-Manager.  
+1. Beendet den Dienst aus dem Dienststeuerungs-Manager.  
 
-2.  Schließen Sie den Profiler. Typ:  
+2. Schließen Sie den Profiler. Typ:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Wenn Sie alle Profilerstellungsaufgaben abgeschlossen haben, entfernen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
+3. Wenn Sie alle Profilerstellungsaufgaben abgeschlossen haben, entfernen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Ersetzen Sie das instrumentierte Modul durch das Original. Konfigurieren Sie bei Bedarf den Starttyp des Diensts neu.  
+4. Ersetzen Sie das instrumentierte Modul durch das Original. Konfigurieren Sie bei Bedarf den Starttyp des Diensts neu.  
 
-5.  Starten Sie den Computer neu.  
+5. Starten Sie den Computer neu.  
 
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   

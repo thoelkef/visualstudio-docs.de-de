@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083025"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten
 
@@ -28,11 +28,11 @@ Der Zugriff auf Daten in einem Datenobjekt funktioniert in Microsoft Office Word
 
 Sie müssen drei grundlegende Schritte ausführen, um das Dokument mit Daten aus einem Objekt aufzufüllen:
 
--   Fügen Sie ein Steuerelement zum Dokument hinzu, das an Daten gebunden werden kann.
+- Fügen Sie ein Steuerelement zum Dokument hinzu, das an Daten gebunden werden kann.
 
--   Fügen Sie ein Datenobjekt zum Dokument hinzu.
+- Fügen Sie ein Datenobjekt zum Dokument hinzu.
 
--   Verbinden Sie das Datenobjekt mit der BindingSource-Komponente.
+- Verbinden Sie das Datenobjekt mit der BindingSource-Komponente.
 
 ## <a name="to-add-a-data-object"></a>So fügen Sie ein Datenobjekt hinzu
 
@@ -48,23 +48,23 @@ In VSTO-Add-In-Projekten erstellen Sie Steuerelemente und binden diese zur Laufz
 
 So verbinden das Datenobjekt, das mit der BindingSource-Komponente:
 
-1.  Ziehen Sie das gewünschte Datenfeld vom Fenster **Datenquellen** in Ihr Dokument. Dadurch wird automatisch ein Steuerelement erstellt.
+1. Ziehen Sie das gewünschte Datenfeld vom Fenster **Datenquellen** in Ihr Dokument. Dadurch wird automatisch ein Steuerelement erstellt.
 
-2.  Erstellen Sie im Code eine Instanz des Typs des Objekts, das Sie für die Datenquelle ausgewählt haben.
+2. Erstellen Sie im Code eine Instanz des Typs des Objekts, das Sie für die Datenquelle ausgewählt haben.
 
-3.  Weisen Sie die Instanz der <xref:System.Windows.Forms.BindingSource.DataSource%2A> -Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Komponente zu.
+3. Weisen Sie die Instanz der <xref:System.Windows.Forms.BindingSource.DataSource%2A> -Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Komponente zu.
 
 ### <a name="application-level-projects"></a>Anwendungsebene
 
 So verbinden das Datenobjekt, das mit der BindingSource-Komponente:
 
-1.  Erstellen Sie im Code eine Instanz des Typs des Objekts, das der Datenquelle zugewiesen wird.
+1. Erstellen Sie im Code eine Instanz des Typs des Objekts, das der Datenquelle zugewiesen wird.
 
-2.  Erstellen Sie eine Instanz einer <xref:System.Windows.Forms.BindingSource>-Komponente:
+2. Erstellen Sie eine Instanz einer <xref:System.Windows.Forms.BindingSource>-Komponente:
 
-3.  Weisen Sie die Datenquelleninstanz der <xref:System.Windows.Forms.BindingSource.DataSource%2A> -Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Komponente zu.
+3. Weisen Sie die Datenquelleninstanz der <xref:System.Windows.Forms.BindingSource.DataSource%2A> -Eigenschaft der <xref:System.Windows.Forms.BindingSource>-Komponente zu.
 
-4.  Fügen Sie die Datenquelle als eine Datenbindung zum Steuerelement hinzu.
+4. Fügen Sie die Datenquelle als eine Datenbindung zum Steuerelement hinzu.
 
 ## <a name="see-also"></a>Siehe auch
 

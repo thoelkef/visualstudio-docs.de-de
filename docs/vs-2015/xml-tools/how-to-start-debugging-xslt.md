@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104095"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Vorgehensweise: Starten des Debuggens von XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Mit dem XSLT-Debugger können XSLT-Stylesheets oder XSLT-Anwendungen debuggt wer
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>So starten Sie das Debuggen eines Stylesheets  
   
-1.  Öffnen Sie das Stylesheet im XML-Editor.  
+1. Öffnen Sie das Stylesheet im XML-Editor.  
   
-2.  Wählen Sie **XSLT Debuggen** aus der **XML** Menü.  
+2. Wählen Sie **XSLT Debuggen** aus der **XML** Menü.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>So starten Sie das Debuggen eines XML-Eingabedokuments  
   
-1.  Öffnen Sie das XML-Dokument im XML-Editor.  
+1. Öffnen Sie das XML-Dokument im XML-Editor.  
   
-2.  Wählen Sie **XSLT Debuggen** aus der **XML** Menü.  
+2. Wählen Sie **XSLT Debuggen** aus der **XML** Menü.  
   
 ## <a name="xslt-from-other-languages"></a>XSLT aus anderen Sprachen  
  Auch beim Debuggen einer Anwendung können Sie XSLT schrittweise ausführen. Wenn Sie die Taste F11<xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> bei einem -Aufruf drücken, führt der Debugger den XSLT-Code schrittweise aus.  
@@ -44,11 +44,11 @@ Mit dem XSLT-Debugger können XSLT-Stylesheets oder XSLT-Anwendungen debuggt wer
   
 #### <a name="to-start-debugging-an-xslt-application"></a>So starten Sie das Debuggen einer XSLT-Anwendung  
   
-1.  Legen Sie beim Instanziieren des <xref:System.Xml.Xsl.XslCompiledTransform>-Objekts im Code den `enableDebug`-Parameter auf `true` fest.  
+1. Legen Sie beim Instanziieren des <xref:System.Xml.Xsl.XslCompiledTransform>-Objekts im Code den `enableDebug`-Parameter auf `true` fest.  
   
      Damit wird der XSLT-Prozessor angewiesen, dass beim Kompilieren des Codes Debuginformationen erstellt werden sollen.  
   
-2.  Um den XSLT-Code schrittweise auszuführen, drücken Sie die Taste F11.  
+2. Um den XSLT-Code schrittweise auszuführen, drücken Sie die Taste F11.  
   
      Das XSLT-Stylesheet wird in einem neuen Dokumentfenster geladen, und der XSLT-Debugger wird gestartet.  
   

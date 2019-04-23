@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106962"
 ---
 # <a name="authoring-vsct-files"></a>Erstellen. VSCT-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
 ##### <a name="to-create-the-file-structure"></a>Beim Erstellen der Dateistruktur  
   
-1.  Anhand der Schritte in einer VSCT-Datei dem Projekt hinzufügen [Vorgehensweise: Erstellen Sie ein. VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1. Anhand der Schritte in einer VSCT-Datei dem Projekt hinzufügen [Vorgehensweise: Erstellen Sie ein. VSCT-Datei](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
-2.  Fügen Sie die erforderlichen Namespaces, die `CommandTable` Element, wie im folgenden Beispiel dargestellt.  
+2. Fügen Sie die erforderlichen Namespaces, die `CommandTable` Element, wie im folgenden Beispiel dargestellt.  
   
     ```xml  
     <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"   
@@ -42,7 +42,7 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
     ```  
   
-3.  In der `CommandTable` -Element, Hinzufügen einer `Commands` Element, um alle Ihre benutzerdefinierten Menüs, Symbolleisten, Befehlsgruppen und Befehle zu hosten. Damit Ihre benutzerdefinierten Elemente der Benutzeroberfläche geladen werden können, die `Commands` Element müssen die `Package` -Attributsatz auf den Namen des Pakets.  
+3. In der `CommandTable` -Element, Hinzufügen einer `Commands` Element, um alle Ihre benutzerdefinierten Menüs, Symbolleisten, Befehlsgruppen und Befehle zu hosten. Damit Ihre benutzerdefinierten Elemente der Benutzeroberfläche geladen werden können, die `Commands` Element müssen die `Package` -Attributsatz auf den Namen des Pakets.  
   
      Nach der `Commands` -Element, Hinzufügen einer `Symbols` Element zu definieren, die GUIDs für das Paket und die Namen der Befehls-IDs für Ihre UI-Elemente.  
   
@@ -51,28 +51,28 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
 ##### <a name="to-include-visual-studio-resources"></a>Einschließen von Visual Studio-Ressourcen  
   
-1.  Am oberen Rand der `CommandTable` -Element, fügen Sie eine `Extern` -Element für jede externe Datei, die auf die verwiesen wird und festgelegt werden, die `href` -Attribut auf den Namen der Datei. Sie können die folgenden Headerdateien für den Zugriff auf Visual Studio-Ressourcen verweisen:  
+1. Am oberen Rand der `CommandTable` -Element, fügen Sie eine `Extern` -Element für jede externe Datei, die auf die verwiesen wird und festgelegt werden, die `href` -Attribut auf den Namen der Datei. Sie können die folgenden Headerdateien für den Zugriff auf Visual Studio-Ressourcen verweisen:  
   
-    -   Stdidcmd.h, definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.  
+    - Stdidcmd.h, definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.  
   
-    -   Vsshlids.h, enthält die Befehls-IDs für Visual Studio-Menüs.  
+    - Vsshlids.h, enthält die Befehls-IDs für Visual Studio-Menüs.  
   
-2.  Wenn Ihr Paket auf alle Befehle, die von Visual Studio oder von anderen Paketen definiert sind aufruft, fügen Sie eine `UsedCommands` Element an, nach der `Commands` Element. Füllen Sie dieses Element mit einem [UsedCommand](../../extensibility/usedcommand-element.md) -Element für jeden Befehl, die Sie aufrufen, d. h. nicht Teil des Pakets. Legen Sie die `guid` und `id` Attribute der `UsedCommand` Elementen, die die GUID und ID-Werte, der die Befehle zum Aufrufen. Weitere Informationen dazu, wie Sie die GUIDs und IDs von Visual Studio-Befehle finden Sie unter [GUIDs und IDs der Visual Studio-Befehle](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Verwenden Sie zum Aufrufen von Befehlen aus anderen Paketen die GUID und die ID des Befehls wie in der VSCT-Datei für diese Pakete definiert.  
+2. Wenn Ihr Paket auf alle Befehle, die von Visual Studio oder von anderen Paketen definiert sind aufruft, fügen Sie eine `UsedCommands` Element an, nach der `Commands` Element. Füllen Sie dieses Element mit einem [UsedCommand](../../extensibility/usedcommand-element.md) -Element für jeden Befehl, die Sie aufrufen, d. h. nicht Teil des Pakets. Legen Sie die `guid` und `id` Attribute der `UsedCommand` Elementen, die die GUID und ID-Werte, der die Befehle zum Aufrufen. Weitere Informationen dazu, wie Sie die GUIDs und IDs von Visual Studio-Befehle finden Sie unter [GUIDs und IDs der Visual Studio-Befehle](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Verwenden Sie zum Aufrufen von Befehlen aus anderen Paketen die GUID und die ID des Befehls wie in der VSCT-Datei für diese Pakete definiert.  
   
 ### <a name="declaring-ui-elements"></a>Deklarieren von UI-Elemente  
  Deklarieren Sie alle Elemente der neuen Benutzeroberfläche in der `Symbols` Abschnitt der VSCT-Datei.  
   
 ##### <a name="to-declare-ui-elements"></a>Um UI-Elemente zu deklarieren.  
   
-1.  In der `Symbols` -Element, fügen Sie drei [GuidSymbol](../../extensibility/guidsymbol-element.md) Elemente. Jede `GuidSymbol` Element verfügt über eine `name` Attribut und einem `value` Attribut. Legen Sie die `name` Attribut, damit es den Verwendungszweck des Elements widerspiegelt. Die `value` Attribut nimmt eine GUID. (Zum Generieren einer GUID, die für die **Tools** Menü klicken Sie auf **GUID erstellen**, und wählen Sie dann **Registrierungsformat**.)  
+1. In der `Symbols` -Element, fügen Sie drei [GuidSymbol](../../extensibility/guidsymbol-element.md) Elemente. Jede `GuidSymbol` Element verfügt über eine `name` Attribut und einem `value` Attribut. Legen Sie die `name` Attribut, damit es den Verwendungszweck des Elements widerspiegelt. Die `value` Attribut nimmt eine GUID. (Zum Generieren einer GUID, die für die **Tools** Menü klicken Sie auf **GUID erstellen**, und wählen Sie dann **Registrierungsformat**.)  
   
      Die erste `GuidSymbol` Element stellt dar, das Paket, und in der Regel hat keine untergeordneten Elemente. Die zweite `GuidSymbol` -Element stellt der Befehl festgelegt und enthält alle Symbole, die Ihre Menüs, Gruppen und Befehle zu definieren. Die dritte `GuidSymbol` Element stellt Ihr imagespeicher dar und enthält Symbole für alle Symbole für Ihre Befehle. Wenn Sie keine Befehle, die Symbole zu verwenden, können Sie das dritte weglassen `GuidSymbol` Element.  
   
-2.  In der `GuidSymbol` -Element, das den Befehlssatz, stellt eine oder mehrere hinzufügen [IDSymbol](../../extensibility/idsymbol-element.md) Elemente. Jede dieser darstellen, ein Menü, Symbolleiste, Gruppe oder Befehl, den Sie an der Benutzeroberfläche hinzufügen.  
+2. In der `GuidSymbol` -Element, das den Befehlssatz, stellt eine oder mehrere hinzufügen [IDSymbol](../../extensibility/idsymbol-element.md) Elemente. Jede dieser darstellen, ein Menü, Symbolleiste, Gruppe oder Befehl, den Sie an der Benutzeroberfläche hinzufügen.  
   
      Für jede `IDSymbol` -Element legen Sie die `name` -Attribut auf den Namen, die Sie verwenden, um auf das entsprechende Menü, Gruppe oder den Befehl zu verweisen, und legen Sie dann die `value` Element in eine hexadezimale Zahl, die die Befehls-Id darstellt. Keine zwei `IDSymbol` Elemente mit demselben übergeordneten Element können den gleichen Wert aufweisen.  
   
-3.  Wenn eines Ihrer Elemente der Benutzeroberfläche Symbole benötigen, fügen eine `IDSymbol` -Element für jedes Symbol, um die `GuidSymbol` Element, das Ihr Image-Speicher darstellt.  
+3. Wenn eines Ihrer Elemente der Benutzeroberfläche Symbole benötigen, fügen eine `IDSymbol` -Element für jedes Symbol, um die `GuidSymbol` Element, das Ihr Image-Speicher darstellt.  
   
 ### <a name="putting-ui-elements-in-the-ide"></a>Einfügen von UI-Elemente in der IDE  
  Die [Menüs](../../extensibility/menus-element.md) Element [Gruppen](../../extensibility/groups-element.md) -Element, und [Schaltflächen](../../extensibility/buttons-element.md) -Element enthalten, die Definitionen für alle Menüs, Gruppen und Befehle, die in Ihrem Paket definiert sind. Fügen Sie diese Menüs, Gruppen und Befehle in der IDE, die entweder mit einer [übergeordneten](../../extensibility/parent-element.md) Element, das Teil der Definition des UI-Elements oder mithilfe eine [CommandPlacement](../../extensibility/commandplacement-element.md) -Element, das definiert, an anderer Stelle.  
@@ -120,9 +120,9 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
     Das Ziel der `Parent` Element ist, der im Menü oder Gruppe, die Sie im Menü enthält, oder einer Gruppe-Befehl.  
   
-   1.  Legen Sie die `guid` auf den Namen des Attributs der `GuidSymbol` Element, das den Befehlssatz definiert. Ist der Target-Element nicht Teil des Pakets, verwenden Sie die Guid für diese Befehl festgelegt ist, wie in der entsprechenden VSCT-Datei definiert.  
+   1. Legen Sie die `guid` auf den Namen des Attributs der `GuidSymbol` Element, das den Befehlssatz definiert. Ist der Target-Element nicht Teil des Pakets, verwenden Sie die Guid für diese Befehl festgelegt ist, wie in der entsprechenden VSCT-Datei definiert.  
   
-   2.  Legen Sie die `id` Attribut entsprechend den `id` Attribut, das Menü "Ziel" oder einer Gruppe. Eine Liste der Menüs und Gruppen, die von Visual Studio verfügbar gemacht werden, finden Sie unter [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2. Legen Sie die `id` Attribut entsprechend den `id` Attribut, das Menü "Ziel" oder einer Gruppe. Eine Liste der Menüs und Gruppen, die von Visual Studio verfügbar gemacht werden, finden Sie unter [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
    Wenn Sie eine große Anzahl von Elementen der Benutzeroberfläche in der IDE platziert haben oder wenn Sie über Elemente verfügen, die an mehreren Stellen angezeigt werden soll, definieren Sie ihre Platzierungen, in der [CommandPlacements](../../extensibility/commandplacements-element.md) Element, wie in den folgenden Schritten dargestellt.  
   
@@ -145,11 +145,11 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
   
 1. Um ein Element der Benutzeroberfläche sichtbar machen nur in bestimmten Benutzeroberflächen-Kontexten zu, z. B. wenn eine Projektmappe geladen ist, verwenden Sie Sichtbarkeit-Einschränkungen.  
   
-   1.  Nach der `Commands` -Element, Hinzufügen einer `VisibilityConstraints` Element.  
+   1. Nach der `Commands` -Element, Hinzufügen einer `VisibilityConstraints` Element.  
   
-   2.  Für jedes UI-Element, eingeschränkt werden soll, Hinzufügen einer [VisibilityItem](../../extensibility/visibilityitem-element.md) Element.  
+   2. Für jedes UI-Element, eingeschränkt werden soll, Hinzufügen einer [VisibilityItem](../../extensibility/visibilityitem-element.md) Element.  
   
-   3.  Für jede `VisibilityItem` -Element legen Sie die `guid` und `id` Attribute auf das Menü, Gruppe oder Befehl und legen Sie dann die `context` Attribut an den Benutzeroberflächenkontext werden sollen, gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klasse. Weitere Informationen finden Sie unter [VisibilityItem-Element](../../extensibility/visibilityitem-element.md).  
+   3. Für jede `VisibilityItem` -Element legen Sie die `guid` und `id` Attribute auf das Menü, Gruppe oder Befehl und legen Sie dann die `context` Attribut an den Benutzeroberflächenkontext werden sollen, gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klasse. Weitere Informationen finden Sie unter [VisibilityItem-Element](../../extensibility/visibilityitem-element.md).  
   
 2. Um die Sichtbarkeit oder die Verfügbarkeit eines UI-Elements im Code festzulegen, verwenden Sie eine oder mehrere der folgenden Befehlsflags aus:  
   

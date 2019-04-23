@@ -13,47 +13,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b162d3ae4d9eacc5ca227848056672186d1390
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083763"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer
   Sie können die Knoten erweitern die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Dies ist nützlich, wenn Sie neue untergeordnete Knoten, Elemente des Kontextmenüs oder Eigenschaften zu einem vorhandenen Knoten hinzufügen möchten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Erweitern ein SharePoint-Knotens im Server-Explorer
 
-1.  Erstellen Sie ein Klassenbibliotheksprojekt.
+1. Erstellen Sie ein Klassenbibliotheksprojekt.
 
-2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:
+2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+    - Microsoft.VisualStudio.SharePoint.Explorer.Extensions
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>-Schnittstelle implementiert.
+3. Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>-Schnittstelle implementiert.
 
-4.  Fügen Sie der Klasse das <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut hinzu. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ an den Attributkonstruktor.
+4. Fügen Sie der Klasse das <xref:System.ComponentModel.Composition.ExportAttribute> -Attribut hinzu. Mit diesem Attribut können Sie Visual Studio zum Ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> Typ an den Attributkonstruktor.
 
-5.  Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> -Attribut hinzu. Dieses Attribut gibt den Zeichenfolgenbezeichner für den Typ des Knotens, die Sie erweitern möchten.
+5. Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> -Attribut hinzu. Dieses Attribut gibt den Zeichenfolgenbezeichner für den Typ des Knotens, die Sie erweitern möchten.
 
      Um integrierte Knotentypen, die von Visual Studio bereitgestellten anzugeben, übergeben Sie eine der folgenden Enumerationswerte an den Attributkonstruktor:
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte an der Website-Verbindungsknoten (die Knoten, die Website-URLs anzeigen), Standort, Knoten und alle anderen übergeordneten Knoten in **Server-Explorer**.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte an der Website-Verbindungsknoten (die Knoten, die Website-URLs anzeigen), Standort, Knoten und alle anderen übergeordneten Knoten in **Server-Explorer**.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Verwenden Sie diese Werte, um eine der integrierten Knoten anzugeben, die auf einer SharePoint-Website, z. B. ein Knoten eine einzelne Komponente darstellen, die eine Liste, ein Feld oder Inhaltstyp darstellt.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Verwenden Sie diese Werte, um eine der integrierten Knoten anzugeben, die auf einer SharePoint-Website, z. B. ein Knoten eine einzelne Komponente darstellen, die eine Liste, ein Feld oder Inhaltstyp darstellt.
 
-6.  In der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> Methode verwenden, Mitglied der *NodeType* Parameter, um Features auf den Knoten hinzufügen. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> -Objekt, das Zugriff auf die in definierten Ereignisse ermöglicht die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> Schnittstelle. Beispielsweise können Sie die folgenden Ereignisse behandeln:
+6. In der Implementierung von der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> Methode verwenden, Mitglied der *NodeType* Parameter, um Features auf den Knoten hinzufügen. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> -Objekt, das Zugriff auf die in definierten Ereignisse ermöglicht die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> Schnittstelle. Beispielsweise können Sie die folgenden Ereignisse behandeln:
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Behandeln Sie dieses Ereignis, um neue untergeordnete Knoten auf den Knoten hinzuzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie einen benutzerdefinierten SharePoint-Knoten zum Server-Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Behandeln Sie dieses Ereignis, um neue untergeordnete Knoten auf den Knoten hinzuzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie einen benutzerdefinierten SharePoint-Knoten zum Server-Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Behandeln Sie dieses Ereignis zum Hinzufügen eines benutzerdefinierten Kontextmenüelements auf den Knoten.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Behandeln Sie dieses Ereignis zum Hinzufügen eines benutzerdefinierten Kontextmenüelements auf den Knoten.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Behandeln Sie dieses Ereignis, um benutzerdefinierte Eigenschaften auf den Knoten hinzufügen. Die Eigenschaften werden in der **Eigenschaften** anzeigen, wenn der Knoten ausgewählt ist.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Behandeln Sie dieses Ereignis, um benutzerdefinierte Eigenschaften auf den Knoten hinzufügen. Die Eigenschaften werden in der **Eigenschaften** anzeigen, wenn der Knoten ausgewählt ist.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Codebeispiel wird veranschaulicht zwei verschiedene Arten von Knoten Erweiterungen zu erstellen:
@@ -70,13 +70,13 @@ ms.locfileid: "56638919"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+- Microsoft.VisualStudio.SharePoint.Explorer.Extensions
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
--   System.Windows.Forms
+- System.Windows.Forms
 
 ## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung
  Zum Bereitstellen der **Server-Explorer** -Erweiterung erstellen Sie eine [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
