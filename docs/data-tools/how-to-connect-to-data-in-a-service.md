@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst'
+title: 'Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085960"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst
 
@@ -36,20 +36,20 @@ Nach Abschluss des Assistenten ein Dienstverweis wird dem Projekt hinzugefügt u
 
 ## <a name="to-connect-your-application-to-a-service"></a>Um Ihre Anwendung mit einem Dienst verbinden
 
-1.  Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
+1. Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
 
-2.  Wählen Sie **Service** auf die **wählen Sie einen Datenquellentyp** Seite, und klicken Sie dann auf **Weiter**.
+2. Wählen Sie **Service** auf die **wählen Sie einen Datenquellentyp** Seite, und klicken Sie dann auf **Weiter**.
 
-3.  Geben Sie die Adresse des Diensts zu verwenden, oder klicken Sie auf **Discover** suchen Dienste in der aktuellen Projektmappe, und klicken Sie auf **wechseln**.
+3. Geben Sie die Adresse des Diensts zu verwenden, oder klicken Sie auf **Discover** suchen Dienste in der aktuellen Projektmappe, und klicken Sie auf **wechseln**.
 
-4.  Optional können Sie ein neues eingeben **Namespace** anstelle des Standard-Werts.
+4. Optional können Sie ein neues eingeben **Namespace** anstelle des Standard-Werts.
 
     > [!NOTE]
     > Klicken Sie auf **erweitert** zum Öffnen der [Dialogfeld Dienstverweis konfigurieren](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Klicken Sie auf **OK** zum Hinzufügen eines Dienstverweises zum Projekt.
+5. Klicken Sie auf **OK** zum Hinzufügen eines Dienstverweises zum Projekt.
 
-6.  Klicken Sie auf **Fertig stellen**.
+6. Klicken Sie auf **Fertig stellen**.
 
      Die Datenquelle wird dem Fenster **Datenquellen** hinzugefügt.
 

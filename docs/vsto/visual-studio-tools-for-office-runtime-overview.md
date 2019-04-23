@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f841d7f80e7130b2ee5a9c11f53d12137f7e358d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086325"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio-Tools für Office-laufzeitübersicht
   Um Projektmappen auszuführen, die mit den Microsoft Office Developer Tools in Visual Studio erstellt werden, muss Visual Studio 2010-Tools für Office-Laufzeit auf Endbenutzercomputern installiert sein. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010-Tools für Office-Laufzeit besteht aus zwei Hauptkomponenten:
@@ -42,7 +42,7 @@ ms.locfileid: "56642988"
 
   Die Laufzeit kann auf unterschiedliche Weise installiert werden. In Abhängigkeit von der Konfiguration des Computers werden unterschiedliche Laufzeitkomponenten installiert, wenn Sie die Laufzeit installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
-##  <a name="officeextensions"></a> Informationen zu den Office-Erweiterungen für .NET Framework
+## <a name="officeextensions"></a> Informationen zu den Office-Erweiterungen für .NET Framework
  Visual Studio 2010-Tools für Office-Laufzeit enthält Office-Erweiterungen für .NET Framework 3.5, die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und höher. Projektmappen, die auf die einzelnen Versionen von .NET Framework abzielen, verwenden die entsprechenden Erweiterungen für die jeweilige Version.
 
  Diese Erweiterungen bestehen aus Assemblys, die von den Projektmappen verwendet werden, um Office-Anwendungen zu automatisieren und zu erweitern. Wenn Sie ein Office-Projekt erstellen, fügt Visual Studio Verweise automatisch Verweise auf die Assemblys hinzu, die für den Projekttyp und das Ziel-.NET Framework des Projekts verwendet werden. Weitere Informationen zu den Assemblys in Office-Erweiterungen finden Sie unter [Assemblys in Visual Studio Tools for Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).
@@ -74,7 +74,7 @@ ms.locfileid: "56642988"
 
   Nachdem Sie diese Änderung vorgenommen haben, werden Typinformationen für alle vom Projekt verwendeten Laufzeittypen in die Projektmappenassembly eingebettet, wenn Sie das Projekt erstellen. Diese eingebetteten Typinformationen, anstatt die Typinformationen in Assemblys, auf die verwiesen wird, werden von der Lösung zur Laufzeit verwendet.
 
-##  <a name="UnmanagedLoader"></a> Verstehen von Office-Projektmappenladeprogramm
+## <a name="UnmanagedLoader"></a> Verstehen von Office-Projektmappenladeprogramm
  Visual Studio-Tools für Office-Laufzeit schließt mehrere nicht verwaltete DLLs ein, die Office-Anwendungen verwenden, um die Laufzeit sowie Office-Projektmappen zu laden. Obwohl Sie in der Regel nie direkt mit diesen DLLs arbeiten müssen, können Kenntnisse über ihren Zweck Ihnen dabei helfen, die Architektur der Office-Projektmappen besser zu verstehen.
 
  Informationen, wie diese Komponenten während des Ladevorgangs verwendet werden, finden Sie unter [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md) und [Architecture of VSTO-Add-ins](../vsto/architecture-of-vsto-add-ins.md).

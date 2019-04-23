@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1c2c053a9e2c906e5ca9e530a5a46a2501a840
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086312"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
 Die IntelliSense-ParameterInfo-QuickInfo bietet Benutzern Hinweise, wo sie sich in einem Sprachkonstrukt sind.
@@ -43,31 +43,31 @@ Die IntelliSense-ParameterInfo-QuickInfo bietet Benutzern Hinweise, wo sie sich 
 
  Wenn Ihre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> -Klasse aufgerufen wird, deren Methoden aufgerufen werden, in der folgenden Reihenfolge:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
 
      Gibt die Position und Länge der relevanten Daten in den aktuellen Textpuffer zurück. Dies weist die IDE nicht auf diese Daten mit dem QuickInfo-Fenster verdeckt.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
 
      Gibt die Methode-Anzahl (nullbasiert) zuerst angezeigt werden soll. Z. B. Wenn Sie 0 (null) zurückgegeben wird, wird dann die erste überladene Methode zunächst präsentiert.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
 
      Gibt die Anzahl der überladenen Methoden, die im aktuellen Kontext anwendbar sind. Wenn Sie einen Wert größer als 1 für diese Methode zurückgegeben wird, zeigt die Textansicht nach oben oder unten Pfeile für Sie. Wenn Sie den Pfeil nach unten klicken, ruft die IDE die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> Methode. Wenn Sie den Pfeil nach oben klicken, ruft die IDE die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> Methode.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
 
      Das ParameterInfo-QuickInfo erstellt wird, während mehrere Aufrufe der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> Methoden.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
 
      Gibt die Anzahl von Parametern, die in der Methode angezeigt.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
 
      Wenn Sie, eine Methodennummer, die mit der Überladung zurückkehren, angezeigt werden sollen, diese Methode wird aufgerufen, gefolgt von einem Aufruf der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> Methode.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
 
      Informiert den Sprachdienst, um den Editor zu aktualisieren, wenn es sich bei einem methodentipp angezeigt wird. In der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> -Methode den folgenden Aufruf:
 
@@ -75,6 +75,6 @@ Die IntelliSense-ParameterInfo-QuickInfo bietet Benutzern Hinweise, wo sie sich 
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
     ```
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
 
      Sie erhalten einen Anruf an die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> Methode, wenn Sie das Fenster des methodentipps schließen.

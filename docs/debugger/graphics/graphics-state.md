@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d451f7e59774dae37d781f60812003f16120b98a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f7f4dbeb378f0ac921f42f2ad71d3b5cae8d10ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088378"
 ---
 # <a name="graphics-state"></a>Grafikzustand
 Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, der zum Zeitpunkt des aktuellen Ereignisses aktiv ist, wie z. B. bei einem Zeichnen-Befehl.
@@ -34,13 +34,13 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
 
 ##### <a name="to-change-the-state-view"></a>So ändern Sie die Statusansicht
 
--   Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.
+- Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.
 
-    -   **API-Eingabestatusansicht anzeigen**
+    - **API-Eingabestatusansicht anzeigen**
 
-    -   **Logische Statusansicht anzeigen**
+    - **Logische Statusansicht anzeigen**
 
-    -   **Angeheftete Statusansicht anzeigen**
+    - **Angeheftete Statusansicht anzeigen**
 
 > [!IMPORTANT]
 >  Sie müssen den Status in den Ansichten **API-Eingabestatus anzeigen** oder **Logischen Status anzeigen** anheften, damit er in der Ansicht **Angeheftete Statusansicht anzeigen** angezeigt wird.
@@ -50,7 +50,7 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
 
 |Spalte|Beschreibung|
 |------------|-----------------|
-|name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API-Eingabestatusansicht** und in der **logischen Statusansicht** geben Namen die hierarchische Beziehung zwischen den Zuständen an.<br /><br /> In der **angehefteten Statusansicht** werden vollqualifizierte Namen in einer einfachen Liste angezeigt.|
+|Name|Der Name des Statuselements. Wenn dieses Element Statusbündel darstellt, kann das Element erweitert werden, um es anzuzeigen.<br /><br /> In der **API-Eingabestatusansicht** und in der **logischen Statusansicht** geben Namen die hierarchische Beziehung zwischen den Zuständen an.<br /><br /> In der **angehefteten Statusansicht** werden vollqualifizierte Namen in einer einfachen Liste angezeigt.|
 |Wert|Der Wert des Statuselements.|
 |Typ|Der Typ des Statuselements.|
 
@@ -64,8 +64,8 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
 
 ##### <a name="to-pin-state-in-place"></a>So heften Sie einen Status an
 
-1.  Suchen Sie den gewünschten Status im Statusfenster. Sie müssen möglicherweise einen Status auf höherer Ebene erweitern, um die Details zum gewünschten Status anzuzeigen.
+1. Suchen Sie den gewünschten Status im Statusfenster. Sie müssen möglicherweise einen Status auf höherer Ebene erweitern, um die Details zum gewünschten Status anzuzeigen.
 
-2.  Platzieren Sie den Cursor auf dem gewünschten Status. Eine Pinsymbol wird auf der linken Seite des Statuselements angezeigt.
+2. Platzieren Sie den Cursor auf dem gewünschten Status. Eine Pinsymbol wird auf der linken Seite des Statuselements angezeigt.
 
-3.  Klicken Sie auf das Pinsymbol, um das Statuselement anzuheften.
+3. Klicken Sie auf das Pinsymbol, um das Statuselement anzuheften.

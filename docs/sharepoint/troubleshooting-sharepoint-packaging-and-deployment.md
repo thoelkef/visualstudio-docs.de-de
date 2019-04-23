@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087598"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Problembehandlung bei SharePoint-Packen und-bereitstellen
   In diesem Thema werden verschiedene Probleme behandelt, die beim Packen und Bereitstellen von SharePoint-Lösungen auftreten können.
@@ -51,7 +51,7 @@ ms.locfileid: "54868039"
 |-----------|-----------------|
 |Automatisch|Erkennt Konflikte und löst die Konflikte automatisch.|
 |Eingabeaufforderung|Erkennt Konflikte und meldet sie dem Entwickler vor dem Lösen der Konflikte.|
-|Keine|Konflikte werden nicht erkannt.|
+|Keiner|Konflikte werden nicht erkannt.|
 
 ## <a name="differences-between-f5-deployment"></a>Unterschiede bei der F5-Bereitstellung
  Wenn Sie das SharePoint-Projekt mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Testen und Debuggen auf dem lokalen SharePoint-Server bereitstellen, werden von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] einige zusätzliche Schritte ausgeführt.
@@ -73,9 +73,9 @@ ms.locfileid: "54868039"
 ### <a name="resolution"></a>Auflösung
  Führen Sie die folgenden Schritte aus, um dieses Problem zu umgehen:
 
-1.  Installieren Sie Update KB967535, wie in den Microsoft Support-Artikel beschrieben [zu beheben: Ein Hotfix ist verfügbar, die Behebung von zwei Problemen in ASP.NET in IIS 7.0 für Windows Vista und Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Installieren Sie Update KB967535, wie in den Microsoft Support-Artikel beschrieben [zu beheben: Ein Hotfix ist verfügbar, die Behebung von zwei Problemen in ASP.NET in IIS 7.0 für Windows Vista und Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Fügen Sie der Datei "Web.config" die folgende Zeile hinzu:
+2. Fügen Sie der Datei "Web.config" die folgende Zeile hinzu:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">
