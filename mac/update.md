@@ -3,24 +3,24 @@ title: Aktualisieren von Visual Studio für Mac
 description: Anleitung zum Aktualisieren von Visual Studio für Mac und Zugreifen auf Vorschauversionen
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8c2c6fa6f947f43ed03fd1ec474c9ecb8b84a9fa
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294402"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584466"
 ---
 # <a name="update-visual-studio-for-mac"></a>Aktualisieren von Visual Studio für Mac
 
 Visual Studio für Mac veröffentlicht regelmäßig Updates für die IDE und die unterstützten Frameworks. Diese Updates können neue Funktionen, aber auch Verbesserungen und Fehlerbehebungen sein.
 
-In Visual Studio für Mac gibt es drei Kanäle, über die Sie die neuesten Versionen herunterladen können:
+In Visual Studio für Mac gibt es zwei Kanäle, über die Sie die neuesten Versionen herunterladen können:
 
 * **Stabil**: Stellt gründlich getestete Updates bereit. Dieser Kanal empfiehlt sich für eine optimale Entwicklungserfahrung.
-* **Beta** / **Alpha**: Stellt frühen Zugriff auf Updates bereit, die demnächst im stabilen Kanal veröffentlicht werden. Diese Releases sind möglicherweise für einen zuverlässigen routinemäßigen Einsatz nicht geeignet.
+* **Vorschau**: Stellt frühen Zugriff auf Updates bereit, die demnächst im stabilen Kanal veröffentlicht werden. Diese Releases sind möglicherweise für einen zuverlässigen routinemäßigen Einsatz nicht geeignet.
 
 ## <a name="checking-for-updates"></a>Überprüfen auf Updates
 
@@ -51,6 +51,10 @@ Um die Installation der Updates zu starten, wählen Sie **Neu starten und Update
 ![Schaltfläche zum Starten der Installation von Updates](media/update-image4.png)
 
 Je nach den zu installierenden Komponenten, müssen Sie möglicherweise zusätzliche Lizenzen akzeptieren oder den Administratorbenutzernamen und das entsprechende Kennwort Ihres Computers eingeben.
+
+## <a name="troubleshooting"></a>Problembehandlung
+
+Wenn Probleme mit dem Updater auftreten, führen Sie die Schritte im [Leitfaden zur Problembehandlung für den Updater](updater-troubleshooting.md) aus.
 
 ## <a name="see-also"></a>Siehe auch
 

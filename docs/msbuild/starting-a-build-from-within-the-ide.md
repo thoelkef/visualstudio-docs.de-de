@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617742"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584336"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Erstellen eines Builds von der IDE aus
 Benutzerdefinierte Projektsysteme müssen Builds mithilfe von <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> starten. In diesem Artikel werden die Gründe für diese Anforderung beschrieben. Zudem wird die Prozedur erläutert.
 
 ## <a name="parallel-builds-and-threads"></a>Parallele Builds und Threads
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lässt parallele Builds zu, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen, die für den Build-Manager bereitgestellt werden.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lässt parallele Builds zu, sodass für den Zugriff auf allgemeine Ressourcen eine Vermittlung erforderlich ist. Projektsysteme können Builds asynchron ausführen, diese Systeme dürfen jedoch keine Buildfunktionen innerhalb von Rückrufen aufrufen.
 
  Wenn das Projektsystem Umgebungsvariablen ändert, muss es die Knotenaffinität (NodeAffinity) des Builds auf OutOfProc festlegen. Diese Anforderung bedeutet, dass Sie keine Hostobjekte verwenden können, da sie den prozessinternen Knoten benötigen.
 
