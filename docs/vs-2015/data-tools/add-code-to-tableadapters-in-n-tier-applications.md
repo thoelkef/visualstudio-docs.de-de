@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115366"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ Können Sie die Funktionalität des erweitern eine `TableAdapter` durch das Erst
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Benutzercode einen TableAdapter in eine n-schichtige Anwendung hinzu  
   
-1.  Suchen Sie das Projekt mit der XSD-Datei (das Dataset).  
+1. Suchen Sie das Projekt mit der XSD-Datei (das Dataset).  
   
-2.  Klicken Sie mit der Doppelklicken auf die **XSD** Datei, um das Dataset öffnen.  
+2. Klicken Sie mit der Doppelklicken auf die **XSD** Datei, um das Dataset öffnen.  
   
-3.  Mit der rechten Maustaste die `TableAdapter` , die Sie verwenden möchten, fügen Sie Code, und wählen Sie dann**Ansichtscode**.  
+3. Mit der rechten Maustaste die `TableAdapter` , die Sie verwenden möchten, fügen Sie Code, und wählen Sie dann**Ansichtscode**.  
   
      Eine partielle Klasse wird erstellt und im Code-Editor geöffnet.  
   
-4.  Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.  
+4. Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.  
   
-5.  Das folgende Beispiel zeigt, wo Sie zum Hinzufügen von Code die `CustomersTableAdapter` in die `NorthwindDataSet`:  
+5. Das folgende Beispiel zeigt, wo Sie zum Hinzufügen von Code die `CustomersTableAdapter` in die `NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

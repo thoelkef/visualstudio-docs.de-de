@@ -11,12 +11,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa412b37ae735ffd53acba9d7e9730f4a51ce416
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1f052392edab92dfd566c14bb0e452ca0056bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113897"
 ---
 # <a name="registering-an-expression-evaluator"></a>Registrieren einer Ausdrucksauswertung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>DLL-Server-Prozess  
  Wenn Sie die EE, die DLL-Server zu registrieren:  
   
-1.  Registriert die Klassenfactory `CLSID` gemäß den normalen COM-Konventionen.  
+1. Registriert die Klassenfactory `CLSID` gemäß den normalen COM-Konventionen.  
   
-2.  Ruft die Hilfsfunktion `SetEEMetric` mit Visual Studio die EE-Metriken, die in der folgenden Tabelle gezeigt registrieren. Die Funktion `SetEEMetric` und die unten angegebenen Metriken sind Teil der dbgmetric.lib-Bibliothek. Finden Sie unter [SDK-Hilfsprogramme zum Debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Details.  
+2. Ruft die Hilfsfunktion `SetEEMetric` mit Visual Studio die EE-Metriken, die in der folgenden Tabelle gezeigt registrieren. Die Funktion `SetEEMetric` und die unten angegebenen Metriken sind Teil der dbgmetric.lib-Bibliothek. Finden Sie unter [SDK-Hilfsprogramme zum Debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Details.  
   
     |Metrik|Beschreibung|  
     |------------|-----------------|  
@@ -123,7 +123,7 @@ namespace EEMC
     > [!NOTE]
     >  Die `metricLanguage``GUID` identifiziert die Sprache von Namen, aber es ist die `guidLang` Argument `SetEEMetric` , bei dem die Sprache ausgewählt. Wenn der Compiler die Debuginformationsdatei generiert, sollten die entsprechenden schreiben `guidLang` , damit die DE weiß, welche EE verwenden. Die DE fordert den symbolanbieter in der Regel für diese Sprache `GUID`, die in der Debug-Informationsdatei gespeichert ist.  
   
-3.  Registriert bei Visual Studio erstellen, die Schlüssel unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, wobei *X.Y* ist die Version von Visual Studio zu registrieren.  
+3. Registriert bei Visual Studio erstellen, die Schlüssel unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, wobei *X.Y* ist die Version von Visual Studio zu registrieren.  
   
 ### <a name="example"></a>Beispiel  
  Diese Funktion zeigt, wie eine nicht verwaltete Code (C++) EE registriert, und selbst mit Visual Studio hebt die Registrierung.  

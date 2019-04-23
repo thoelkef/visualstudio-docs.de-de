@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113442"
 ---
 # <a name="task-class---internal-members"></a>Task-Klasse – interne Member
 In diesem Artikel wird beschrieben, die internen Member des der <xref:System.Threading.Tasks.Task?displayProperty=fullName> implementieren einen benutzerdefinierten Debugger-Klasse, die Ihnen helfen. Allgemeine Informationen zu dieser Klasse finden Sie unter den <xref:System.Threading.Tasks.Task> Referenzartikel.
@@ -49,7 +49,7 @@ In diesem Artikel wird beschrieben, die internen Member des der <xref:System.Thr
 
 ### <a name="fields"></a>Felder
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Der Delegat, der den auszuführenden in Code stellt dar, die <xref:System.Threading.Tasks.Task> Objekt.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Speichert zusätzliche Eigenschaften für die <xref:System.Threading.Tasks.Task> Objekt.|
@@ -67,17 +67,17 @@ In diesem Artikel wird beschrieben, die internen Member des der <xref:System.Thr
 ## <a name="remarks"></a>Hinweise
  Die folgenden internen Methoden sind nützlich, um ein Debugmodul, da sie zu "entrance" zu markieren <xref:System.Threading.Tasks.Task> code Ausführung:
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114365"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
 >  Wenn das Projektsystem einen Assemblyverweis findet, löst das System den Verweis auf, indem es die folgenden Speicherorte in folgender Reihenfolge durchsucht:  
 > 
 > 1. Der Projektordner. Die Projektordnerdateien werden im **Projektmappen-Explorer**, wenn **Alle Dateien anzeigen** nicht aktiv ist.  
->    2.  Ordner, die im Dialogfeld **Verweispfade** angegeben sind.  
->    3.  Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen  
->    4.  Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)  
+>    2. Ordner, die im Dialogfeld **Verweispfade** angegeben sind.  
+>    3. Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen  
+>    4. Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)  
   
  **Verweise**  
  Diese Liste zeigt alle Verweise im Projekt, sowohl verwendete als auch nicht verwendete.  
@@ -80,11 +80,11 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
  **Benutzerimport aktualisieren**  
  Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, geben Sie den Namen im Feld **Importierte Namespaces** ein, der den Namespace ersetzen soll, und klicken Sie anschließend auf diese Schaltfläche, um den neuen Namespace zu ändern. Die Schaltfläche ist nur dann aktiviert, wenn der ausgewählte Namespace ein Namespace ist, den Sie der Liste mit der Schaltfläche **Benutzerimport hinzufügen** hinzugefügt haben. Sie können Folgendes hinzufügen:  
   
--   Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>  
+- Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>  
   
--   Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`  
+- Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`  
   
--   XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`  
+- XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`  
   
 ## <a name="see-also"></a>Siehe auch  
  [NIB: Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

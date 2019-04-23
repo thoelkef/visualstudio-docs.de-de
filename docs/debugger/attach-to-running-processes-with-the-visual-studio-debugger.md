@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115158"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **an den Prozess anhängen** , oder drücken Sie **STRG**+**Alt** + **P** in Visual Studio, und die Verwendung der **an den Prozess anhängen** Dialogfeld, um den Debugger an den Prozess anzuhängen.
@@ -43,7 +43,7 @@ Sie können **an den Prozess anhängen** zum Debuggen von ausgeführten apps auf
 > [!TIP]
 > Nicht sicher, ob verwendet **an den Prozess anhängen** für Ihr Szenario Debuggen? Finden Sie unter [allgemeine Debugszenarien](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Fügen Sie an einen laufenden Prozess auf dem lokalen Computer an
+## <a name="BKMK_Attach_to_a_running_process"></a> Fügen Sie an einen laufenden Prozess auf dem lokalen Computer an
 
 Um schnell zu einem Prozess anfügen zuvor anhangsanker, finden Sie unter [Anfügen an einen Prozess](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Um einen Prozess auf einem Remotecomputer zu debuggen, finden Sie unter [Anfüge
 >[!NOTE]
 >Sie können mehrere apps für das Debuggen angefügt sein, aber nur eine app im Debugger aktiv ist, zu einem Zeitpunkt. Sie können die aktive app einrichten, in der Visual Studio **Debugspeicherort** Symbolleiste oder **Prozesse** Fenster.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anfügen an einen Prozess auf einem Remotecomputer
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anfügen an einen Prozess auf einem Remotecomputer
 
 Sie können auch auswählen, einem Remotecomputer in die **an den Prozess anhängen** (Dialogfeld), zeigen Sie eine Liste der verfügbaren Prozesse, die auf diesem Computer ausgeführt, und fügen Sie auf eine oder mehrere Prozesse debuggen. Der Remotedebugger (*msvsmon.exe*) muss auf dem Remotecomputer ausgeführt werden. Weitere Informationen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ Für remote debugging-Szenarien müssen Sie den Quellcode (oder eine Kopie des Q
 
 In einigen Szenarien für lokalen Debuggen können Sie in Visual Studio ohne Zugriff auf die Quelle Debuggen, wenn die richtige Symbol-Dateien mit der app vorhanden sind. Standardmäßig ist dies einen Debugbuild erforderlich. Weitere Informationen finden Sie unter [angeben von Symbol-und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Beheben von Fehlern beim Anfügen
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Beheben von Fehlern beim Anfügen
  Wenn der Debugger an einen laufenden Prozess angehängt wird, kann dieser Prozess mehrere Codetypen enthalten. Die Codetypen, an die der Debugger angefügt werden kann, werden im Dialogfeld **Codetyp auswählen** angezeigt und ausgewählt.
 
  Manchmal kann der Debugger erfolgreich an den einen Codetyp, nicht aber an den anderen Codetyp angehängt werden. Das kann bei dem Versuch vorkommen, den Debugger an einen Prozess anzufügen, der auf einem Remotecomputer ausgeführt wird. Auf dem Remotecomputer sind möglicherweise nur Remotedebugkomponenten für bestimmte Codetypen installiert. Das Gleiche kann passieren, wenn Sie versuchen, den Debugger an mehr als einen Prozess zum direkten Datenbankdebuggen anzufügen. SQL-Debuggen unterstützt lediglich das Anfügen an einen einzelnen Prozess.
@@ -199,19 +199,19 @@ In einigen Szenarien für lokalen Debuggen können Sie in Visual Studio ohne Zug
 
  **So erhalten Sie Informationen darüber, warum ein bestimmter Codetyp nicht angehängt werden konnte:**
 
-1.  Trennen Sie den Prozess. Auf der **Debuggen** , wählen Sie im Menü **alle trennen**.
+1. Trennen Sie den Prozess. Auf der **Debuggen** , wählen Sie im Menü **alle trennen**.
 
-1.  Anfügen Sie an den Prozess, und wählen nur den Codetyp aus, der nicht angefügt werden konnte.
+1. Anfügen Sie an den Prozess, und wählen nur den Codetyp aus, der nicht angefügt werden konnte.
 
-    1.  Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** den entsprechenden Prozess aus.
+    1. Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** den entsprechenden Prozess aus.
 
-    2.  Wählen Sie **wählen**.
+    2. Wählen Sie **wählen**.
 
-    3.  Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie anschließend den Codetyp aus, der nicht angefügt werden konnte. Deaktivieren Sie die anderen Codetypen aus.
+    3. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie anschließend den Codetyp aus, der nicht angefügt werden konnte. Deaktivieren Sie die anderen Codetypen aus.
 
-    4.  Klicken Sie auf **OK**.
+    4. Klicken Sie auf **OK**.
 
-    5.  In der **an den Prozess anhängen** wählen Sie im Dialogfeld **Anfügen**.
+    5. In der **an den Prozess anhängen** wählen Sie im Dialogfeld **Anfügen**.
 
     Dieses Mal schlägt das Anfügen komplett fehl, und Sie erhalten eine spezifische Fehlermeldung.
 

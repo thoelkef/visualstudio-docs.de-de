@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbdb6c819ca8f6e109d7f58fb799b08378a963da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 12a64f35e7d530b80e44f3098035093509766c60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113026"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Vorgehensweise: Programmgesteuertes Aktualisieren von Lesezeichentext
   Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56624671"
 
 ### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>So aktualisieren Lesezeicheninhalte mithilfe des Lesezeichen-Steuerelements
 
-1.  Erstellen Sie eine Prozedur, die ein `bookmark`-Argument für den Namen des Lesezeichens akzeptiert, und ein`newText`-Argument für die Zeichenfolge zum Zuweisen der <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>-Eigenschaft.
+1. Erstellen Sie eine Prozedur, die ein `bookmark`-Argument für den Namen des Lesezeichens akzeptiert, und ein`newText`-Argument für die Zeichenfolge zum Zuweisen der <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>-Eigenschaft.
 
     > [!NOTE]
     >  Die Zuweisung von Text zu den Eigenschaften <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> oder <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> eines <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelements führt nicht dazu, dass das Lesezeichen gelöscht wird.
@@ -50,7 +50,7 @@ ms.locfileid: "56624671"
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
 
-2.  Weisen Sie die *NewText* von string in die <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Word.Bookmark>.
+2. Weisen Sie die *NewText* von string in die <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
      [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]
@@ -59,7 +59,7 @@ ms.locfileid: "56624671"
 
 ### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>So aktualisieren Lesezeicheninhalte mithilfe eines Word-Lesezeichenobjekts
 
-1.  Erstellen Sie eine Prozedur, die ein `bookmark`-Argument für den Namen von <xref:Microsoft.Office.Interop.Word.Bookmark> und ein `newText`-Argument für die Zeichenfolge zur Zuweisung zur <xref:Microsoft.Office.Interop.Word.Range.Text%2A>-Eigenschaft des Lesezeichens enthält.
+1. Erstellen Sie eine Prozedur, die ein `bookmark`-Argument für den Namen von <xref:Microsoft.Office.Interop.Word.Bookmark> und ein `newText`-Argument für die Zeichenfolge zur Zuweisung zur <xref:Microsoft.Office.Interop.Word.Range.Text%2A>-Eigenschaft des Lesezeichens enthält.
 
     > [!NOTE]
     >  Die Zuweisung von Text zu einem systemeigenen Word-<xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt führt nicht dazu, dass das Lesezeichen gelöscht wird.
@@ -67,7 +67,7 @@ ms.locfileid: "56624671"
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]
 
-2.  Weisen Sie die *NewText* von string in die <xref:Microsoft.Office.Interop.Word.Range.Text%2A> -Eigenschaft des Lesezeichens zu, wodurch das Lesezeichen automatisch gelöscht. Fügen Sie das Lesezeichen der <xref:Microsoft.Office.Interop.Word.Bookmarks>-Auflistung dann erneut hinzu.
+2. Weisen Sie die *NewText* von string in die <xref:Microsoft.Office.Interop.Word.Range.Text%2A> -Eigenschaft des Lesezeichens zu, wodurch das Lesezeichen automatisch gelöscht. Fügen Sie das Lesezeichen der <xref:Microsoft.Office.Interop.Word.Bookmarks>-Auflistung dann erneut hinzu.
 
      Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.
 

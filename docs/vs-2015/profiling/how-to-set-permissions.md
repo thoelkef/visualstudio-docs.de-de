@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Festlegen von Berechtigungen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114566"
 ---
-# <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung
+# <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erforderlichen Sicherheitsberechtigungen für die Profilerstellung für einen Benutzer oder eine Gruppe, die keine Administratorberechtigungen auf diesem Computer haben, gewährt.  
@@ -42,25 +42,25 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen  
   
-1.  Klicken Sie mit der rechten Maustaste auf **Arbeitsplatz** und anschließend auf **Verwalten**.  
+1. Klicken Sie mit der rechten Maustaste auf **Arbeitsplatz** und anschließend auf **Verwalten**.  
   
      Das Fenster **Computerverwaltung** wird geöffnet.  
   
-2.  Erweitern Sie **Lokale Benutzer und Gruppen**.  
+2. Erweitern Sie **Lokale Benutzer und Gruppen**.  
   
-3.  Klicken Sie mit der rechten Maustaste auf den Ordner **Benutzer** und anschließend auf **Neuer Benutzer**.  
+3. Klicken Sie mit der rechten Maustaste auf den Ordner **Benutzer** und anschließend auf **Neuer Benutzer**.  
   
      Das Dialogfeld **Neuer Benutzer** wird angezeigt.  
   
-4.  Füllen Sie die Felder im Dialogfeld mit den Informationen für das Benutzerkonto aus, das Sie gerade erstellen. Geben Sie ein Passwort ein. Optional: Wählen Sie das Kontrollkästchen aus, das erfordert, dass der Benutzer das Passwort bei der nächsten Anmeldung ändert.  
+4. Füllen Sie die Felder im Dialogfeld mit den Informationen für das Benutzerkonto aus, das Sie gerade erstellen. Geben Sie ein Passwort ein. Optional: Wählen Sie das Kontrollkästchen aus, das erfordert, dass der Benutzer das Passwort bei der nächsten Anmeldung ändert.  
   
-5.  Klicken Sie auf **Erstellen** und anschließend auf **Schließen**.  
+5. Klicken Sie auf **Erstellen** und anschließend auf **Schließen**.  
   
      Der neue Benutzer wird in der Benutzergruppe erscheinen, eine Gruppe von Benutzern, die nicht über Administratorberechtigungen verfügen.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien  
   
-1.  Suchen Sie in Windows Explorer (oder Datei-Explorer) nach den Stamm der Ordnerstruktur für die Projektdateien, von diesem Benutzer verwendet und vom Projektteam freigegeben werden.  
+1. Suchen Sie in Windows Explorer (oder Datei-Explorer) nach den Stamm der Ordnerstruktur für die Projektdateien, von diesem Benutzer verwendet und vom Projektteam freigegeben werden.  
   
      Der Pfad dieses Ordners könnte folgendermaßen aussehen:  
   
@@ -68,17 +68,17 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
     D:\ourProject  
     ```  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Ordner und anschließend auf **Eigenschaften**.  
+2. Klicken Sie mit der rechten Maustaste auf den Ordner und anschließend auf **Eigenschaften**.  
   
      Das Dialogfeld **\<Ordnername> Eigenschaften** wird angezeigt.  
   
-3.  Klicken Sie auf die Registerkarte **Sicherheit** .  
+3. Klicken Sie auf die Registerkarte **Sicherheit** .  
   
-4.  Klicken Sie auf den Namen eines Benutzerkontos im Feld **Gruppen- oder Benutzernamen**.  
+4. Klicken Sie auf den Namen eines Benutzerkontos im Feld **Gruppen- oder Benutzernamen**.  
   
-5.  Im Feld **Berechtigungen für \<Benutzername >** wählen Sie das Kontrollkästchen für **Vollzugriff**.  
+5. Im Feld **Berechtigungen für \<Benutzername >** wählen Sie das Kontrollkästchen für **Vollzugriff**.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
      Erteilt dem Benutzer die Berechtigung für die freigegebene Ordnerstruktur, die mit dem in Schritt 5 ausgewählten Ordner beginnt.  
   
@@ -112,11 +112,11 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   
     Dieser Befehl erteilt den \<Benutzernamen> oder \<Gruppennamen> -Kontozugriff auf die Profilerstellungstools. Die \<rechts> Option bestimmt die Profilerstellungsfunktionalität, auf die der Benutzer zugreifen kann. Die \<rechts> Option kann eine oder mehrere der folgenden Werte sein:  
   
-   -   FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.  
+   - FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.  
   
-   -   SampleProfiling – ermöglicht den Zugriff auf Sampling-Profilerstellungsmethoden.  
+   - SampleProfiling – ermöglicht den Zugriff auf Sampling-Profilerstellungsmethoden.  
   
-   -   CrossSession – ermöglicht den Zugriff auf die sitzungsübergreifende Profilerstellung, die für Profilerstellungsdienste erforderlich ist.  
+   - CrossSession – ermöglicht den Zugriff auf die sitzungsübergreifende Profilerstellung, die für Profilerstellungsdienste erforderlich ist.  
   
 5. Optional: Um die Ergebnisse der vorherigen Schritte nach dem Computerneustart zu erhalten, führen Sie den folgenden Befehl ein:  
   

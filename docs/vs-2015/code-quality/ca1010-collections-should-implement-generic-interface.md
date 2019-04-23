@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 10b3a408503245b96338d0b92e7e5b54148da977
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f57bae0a755ae651215e9623edaf7e7a89fe70ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113468"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Sammlungen müssen eine generische Schnittstelle implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ ms.locfileid: "58958900"
 ## <a name="rule-description"></a>Regelbeschreibung
  Um die Verwendbarkeit einer Auflistung zu erweitern, implementieren Sie eine der generischen Auflistungsschnittstellen. Klicken Sie dann kann die Auflistung verwendet werden, zum Auffüllen generischer Auflistungstypen, z. B. Folgendes:
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie eine der folgenden generischen Auflistungsschnittstellen:
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher ist, unterdrücken Sie eine Warnung dieser Regel. jedoch müssen die Auflistung eine eingeschränktere verwenden.

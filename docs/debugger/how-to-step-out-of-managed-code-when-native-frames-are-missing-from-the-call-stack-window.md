@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112870"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Vorgehensweise: Ausführen von verwaltetem Code bis zum Rücksprung, wenn native Frames im Aufruflistenfenster fehlen
 
@@ -39,11 +39,11 @@ Wenn der Code native Frames enthält, die im Fenster **Aufrufliste** nicht angez
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>So führen Sie verwalteten Code bis zum Rücksprung aus, wenn native Frames in der Aufrufliste fehlen
 
-1.  Legen Sie im nativen Code nach dem Aufruf an den verwalteten Code einen Positionshaltepunkt fest.
+1. Legen Sie im nativen Code nach dem Aufruf an den verwalteten Code einen Positionshaltepunkt fest.
 
-2.  Wählen Sie im Menü **Debuggen** die Option **Weiter** aus.
+2. Wählen Sie im Menü **Debuggen** die Option **Weiter** aus.
 
-     Sobald der verwaltete Aufruf fertig gestellt wurde, wird die Ausführung am Haltepunkt im nativen Code beendet.
+     Sobald der verwaltete Aufruf fertig gestellt wurde, wird die Ausführung am Haltepunkt im systemeigenen Code beendet.
 
 ## <a name="see-also"></a>Siehe auch
 

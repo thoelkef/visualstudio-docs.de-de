@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113312"
 ---
 # <a name="validate-your-uml-model"></a>Überprüfen des UML-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
   
 #### <a name="to-install-a-visual-studio-extension"></a>So installieren Sie eine Visual Studio-Erweiterung  
   
-1.  Doppelklicken Sie auf die **VSIX** -Datei im Windows-Explorer (oder Datei-Explorer).  
+1. Doppelklicken Sie auf die **VSIX** -Datei im Windows-Explorer (oder Datei-Explorer).  
   
-2.  Starten Sie eine beliebige bereits ausgeführte Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
+2. Starten Sie eine beliebige bereits ausgeführte Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Deaktivieren und Deinstallieren von Validierungseinschränkungen  
  Wenn Sie mit einem Modell arbeiten möchten, für das die Einschränkungen nicht gelten, können Sie die Erweiterung mit den Einschränkungen vorübergehend deaktivieren. Dank der Möglichkeit zum Aktivieren und Deaktivieren verschiedener Erweiterungen können Sie zu unterschiedlichen Zeiten an unterschiedlichen Arten von Modellen arbeiten.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>So deaktivieren oder deinstallieren Sie eine Visual Studio-Erweiterung  
   
-1.  Auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.  
+1. Auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.  
   
-2.  Klicken Sie neben der Erweiterung auf **deaktivieren** die Erweiterung vorübergehend zu deaktivieren. Sie können später erneut aktivieren durch Rückgabe der **Erweiterungen und Updates** Fenster.  
+2. Klicken Sie neben der Erweiterung auf **deaktivieren** die Erweiterung vorübergehend zu deaktivieren. Sie können später erneut aktivieren durch Rückgabe der **Erweiterungen und Updates** Fenster.  
   
      \- oder –  
   
      Klicken Sie auf **Deinstallieren** auf die Erweiterung zu entfernen.  
   
-3.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
+3. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)   

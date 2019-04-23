@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115353"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Vorgehensweise: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 
@@ -21,29 +21,29 @@ Die **Beispiel-XML generieren** Funktion generiert eine XML-Beispieldatei, die b
 
  Diese Option kann für die folgenden Szenarien verwendet werden :
 
--   Um die Verwendung verschiedener Konstrukte im Schema zu verstehen.
+- Um die Verwendung verschiedener Konstrukte im Schema zu verstehen.
 
--   Um zu bestätigen, dass das Schema wie beabsichtigt ausgeführt wird.
+- Um zu bestätigen, dass das Schema wie beabsichtigt ausgeführt wird.
 
 Die **Beispiel-XML generieren** Feature ist nur für globale Elemente verfügbar und erfordert ein gültiges XML-Schemaset.
 
 Diese Funktion generiert i. d. R. gültige XML-Dokumente. Wenn das Schema jedoch eines der folgenden Elemente enthält, ist das Beispiel möglicherweise nicht gültig:
 
--   Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`
+- Die folgenden Identitätseinschränkungen: `xs:key`, `xs:keyref` und `xs:unique`
 
--   `xs:pattern`-Facets
+- `xs:pattern`-Facets
 
--   Enumerationen des `xs:QName`-Typs
+- Enumerationen des `xs:QName`-Typs
 
--   `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen
+- `xs:ENTITY`-, `xs:ENTITIES`- und `xs:NOTATION`-Typen
 
 Beachten Sie außerdem, dass `xs:base64Binary`-Inhalt nur dann generiert wird, wenn Enumerationen im Schema für diesen Typ vorkommen.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>So generieren Sie ein XML-Instanzdokument auf Grundlage der XSD-Datei
 
-1.  Führen Sie die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Führen Sie die Schritte in [Vorgehensweise: Erstellen und Bearbeiten einer XSD-Schemadatei](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  In der [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), mit der rechten Maustaste die `PurchaseOrder` globale Element. Wählen Sie **Beispiel-XML generieren**.
+2. In der [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), mit der rechten Maustaste die `PurchaseOrder` globale Element. Wählen Sie **Beispiel-XML generieren**.
 
      Wenn Sie diese Option, die "PurchaseOrder" auswählen. *Xml* -Datei mit dem folgenden Beispiel-XML-Inhalt generiert und in der XML-Editor geöffnet:
 

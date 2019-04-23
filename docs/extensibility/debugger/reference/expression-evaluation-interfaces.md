@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a2dab234f56b9d6ab1368ac87f4da9c5fae4125
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113130"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -28,11 +28,11 @@ ms.locfileid: "56720054"
 
  Jede Schnittstelle in der Tabelle zeigt die Komponente, die sie in der folgenden Liste implementieren kann:
 
--   Debug-Engine (DE)
+- Debug-Engine (DE)
 
--   Ausdrucksauswertung (EE)
+- Ausdrucksauswertung (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
 |Interface|Implementiert von|Beschreibung|
 |---------------|--------------------|-----------------|

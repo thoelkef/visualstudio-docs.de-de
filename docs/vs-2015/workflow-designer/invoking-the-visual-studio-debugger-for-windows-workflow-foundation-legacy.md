@@ -20,30 +20,30 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db045700da02911cf52d69b36a68607ab8a43f69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82532fc2864bcb4c19b0cf122e60fd9a64b2dbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113065"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)
 In diesem Thema wird die Verwendung des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debuggers zum Debuggen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
 
  Grundsätzlich debuggen Sie Workflows der Vorgängerversion genau wie in anderen Visual Studio-Programmiersprachen geschriebene Programme. Sie können den [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für Windows Workflow Foundation folgendermaßen starten:
 
--   Wählen Sie **an den Prozess anhängen** auf die **Debuggen** im Menü der verfügbaren Prozesse einer ausgeführten Workflowinstanz aus.
+- Wählen Sie **an den Prozess anhängen** auf die **Debuggen** im Menü der verfügbaren Prozesse einer ausgeführten Workflowinstanz aus.
 
--   Drücken Sie **F5** um eine Instanz des Workflows zu starten oder weiter ausgeführt, nachdem ein Haltepunkt erreicht wurde.
+- Drücken Sie **F5** um eine Instanz des Workflows zu starten oder weiter ausgeführt, nachdem ein Haltepunkt erreicht wurde.
 
 ## <a name="stepping-through-code"></a>Schrittweises Ausführen von Code
  Der Debugger unterstützt eine der gängigsten Debugprozeduren, das zeilenweise Ausführen von Code. Für das schrittweise Ausführen von Code stehen drei Befehle zur Verfügung:
 
--   **Schritt**: Sie einen Einzelschritt in eine Aktivität mit **F11**. Der Debugger führt alle definierten Handler in Einzelschritten aus. Ist kein Handler definiert, wird die Aktivität übersprungen. Bei zusammengesetzten Aktivitäten, die andere Aktivitäten enthalten, führen Sie die erste ausgeführte Aktivität in einem Einzelschritt aus. Für die folgenden Aktivitäten wird die codehandlern vom Designer nicht unterstützt: **Aktivität "IfElseActivity"**, **WhileActivity**, **ConditionedActivityGroup**, oder die **ReplicatorActivity**. Um die diesen Aktivitäten zugeordneten Handler zu debuggen, müssen Sie explizite Haltepunkte im Code setzen.
+- **Schritt**: Sie einen Einzelschritt in eine Aktivität mit **F11**. Der Debugger führt alle definierten Handler in Einzelschritten aus. Ist kein Handler definiert, wird die Aktivität übersprungen. Bei zusammengesetzten Aktivitäten, die andere Aktivitäten enthalten, führen Sie die erste ausgeführte Aktivität in einem Einzelschritt aus. Für die folgenden Aktivitäten wird die codehandlern vom Designer nicht unterstützt: **Aktivität "IfElseActivity"**, **WhileActivity**, **ConditionedActivityGroup**, oder die **ReplicatorActivity**. Um die diesen Aktivitäten zugeordneten Handler zu debuggen, müssen Sie explizite Haltepunkte im Code setzen.
 
--   **Ausführen bis Rücksprung**: Sie können eine Aktivität mit Rücksprung **UMSCHALT + F11**. Mit dem Verlassen einer Aktivität werden die aktuelle Aktivität und alle dazugehörigen gleichgeordneten Aktivitäten bis zum Abschluss ausgeführt. Der Debugger wird dann auf dem übergeordneten Element der aktuellen Aktivität unterbrochen. Bei der Ausführung bis zum Rücksprung von einem Codehandler unterbricht der Debugger an der Aktivität, der der Handler zugewiesen ist.
+- **Ausführen bis Rücksprung**: Sie können eine Aktivität mit Rücksprung **UMSCHALT + F11**. Mit dem Verlassen einer Aktivität werden die aktuelle Aktivität und alle dazugehörigen gleichgeordneten Aktivitäten bis zum Abschluss ausgeführt. Der Debugger wird dann auf dem übergeordneten Element der aktuellen Aktivität unterbrochen. Bei der Ausführung bis zum Rücksprung von einem Codehandler unterbricht der Debugger an der Aktivität, der der Handler zugewiesen ist.
 
--   **Prozedurschritt**: Sie können eine Aktivität mit überspringen **F10**. Wird ein Prozedurschritt für eine zusammengesetzte Aktivität ausgeführt, unterbricht der Debugger an der ersten ausführbaren untergeordneten Komponente der zusammengesetzten Aktivität. Prozedurschritt für eine nicht zusammengesetzte, z. B. eine **CodeActivity** Aktivität, führt der Debugger die Aktivität und die zugeordneten Handler und unterbricht an der nächsten Aktivität. Handelt es sich bei der ausgeführten Aktivität um die letzte untergeordnete Aktivität einer zusammengesetzten Aktivität, hält der Debugger nach der Ausführung an der übergeordneten Aktivität an.
+- **Prozedurschritt**: Sie können eine Aktivität mit überspringen **F10**. Wird ein Prozedurschritt für eine zusammengesetzte Aktivität ausgeführt, unterbricht der Debugger an der ersten ausführbaren untergeordneten Komponente der zusammengesetzten Aktivität. Prozedurschritt für eine nicht zusammengesetzte, z. B. eine **CodeActivity** Aktivität, führt der Debugger die Aktivität und die zugeordneten Handler und unterbricht an der nächsten Aktivität. Handelt es sich bei der ausgeführten Aktivität um die letzte untergeordnete Aktivität einer zusammengesetzten Aktivität, hält der Debugger nach der Ausführung an der übergeordneten Aktivität an.
 
 ## <a name="attaching-to-a-process"></a>Anhängen an einen Prozess
  Wählen Sie den verfügbaren Prozess aus, um einen Workflow Debuggen durch Anhängen an einen Prozess, der **verfügbare Prozesse** Listenfeld in der **an den Prozess anhängen** Dialogfeld. Wenn **automatische: Workflowcode** wird nicht angezeigt, der **Anfügen an** Text, und klicken Sie dann **wählen**. In der **Codetyp auswählen** Dialogfeld klicken Sie auf **diese Codetypen debuggen** , und wählen Sie **Workflow**. Klicken Sie dann auf **OK** , und klicken Sie auf **Anfügen**.
