@@ -12,17 +12,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad2070bb696a3ce326331d01145b3ef3b54ae5ec
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6973e905a0587ffdc7cbd0a401e03f933fc60a3a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780665"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662213"
 ---
 # <a name="msbuild-best-practices"></a>Best Practices für MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Es werden die folgenden bewährten Methoden zum Schreiben von MSBuild-Skripts empfohlen:  
   
 -   Standardwerte für Eigenschaften werden am besten mit dem `Condition`-Attribut verarbeitet und nicht durch Deklarieren einer Eigenschaft, deren Standardwert in der Befehlszeile überschrieben werden kann. Verwenden Sie beispielsweise  

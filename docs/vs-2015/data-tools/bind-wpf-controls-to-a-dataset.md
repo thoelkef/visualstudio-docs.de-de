@@ -18,17 +18,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94b6c5d7e1695b4b9ef2d1b383575a8806b112db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 663665c77a966d793930326ae04f8d30c71de771
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959446"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665518"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Produktdatensätze gebunden, die in einem Dataset gekapselt sind. Sie fügen außerdem Schaltflächen hinzu, mit denen es möglich ist, Produkte zu durchsuchen und Änderungen an Produktdatensätzen zu speichern.  
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  

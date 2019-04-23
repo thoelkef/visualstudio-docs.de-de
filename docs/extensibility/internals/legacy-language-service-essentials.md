@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661892"
 ---
 # <a name="legacy-language-service-essentials"></a>Grundlagen zu Legacysprachdiensten
 Sie müssen einen Sprachdienst, zum Integrieren von einer Programmiersprache in Visual Studio bereitstellen. Dieser Artikel beschreibt die Funktionen von legacy-Sprachdienste an.
@@ -41,7 +41,6 @@ Sie müssen einen Sprachdienst, zum Integrieren von einer Programmiersprache in 
  Viele dieser Funktionen erfordern den Sprachdienst Quellcode analysieren. Sie können häufig die Tokenisierung und Analysieren von Code für Ihre Compiler oder einem Interpreter wiederverwenden.
 
  Die folgenden Features stehen im Zusammenhang mit Unterstützung für Programmiersprachen, jedoch sind nicht Teil des Sprachdienste:
-
 
 | Feature | Beschreibung |
 |-----------------------| - |

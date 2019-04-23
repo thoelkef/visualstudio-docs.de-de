@@ -14,17 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c83f499560bf747843fe74ede4d2187a544bee8b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769160"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668190"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann Elementlisten anhand von Elementmetadatenelementen in verschiedene Kategorien oder Batches unterteilen und eine Aufgabe einmal mit jedem Batch ausführen. Es ist schwierig zu erkennen, welche Elemente mit welchem Batch übergeben werden. In diesem Artikel werden die folgenden häufig auftretenden Szenarios thematisiert, bei denen die Batchverarbeitung ein Bestandteil ist.  
   
 - Unterteilen einer Elementliste in Batches  

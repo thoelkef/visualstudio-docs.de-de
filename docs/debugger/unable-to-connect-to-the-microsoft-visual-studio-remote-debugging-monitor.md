@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953653"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665622"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Die Verbindung mit dem Microsoft Visual Studio-Remotedebugmonitor konnte nicht hergestellt werden
 Diese Meldung kann auftreten, weil der Remotedebugmonitor nicht ordnungsgemäß auf dem Remotecomputer eingerichtet ist oder der Remotecomputer aufgrund von Netzwerkproblemen oder das Vorhandensein einer Firewall nicht mehr verfügbar ist.
@@ -81,7 +81,6 @@ Visual Studio konnte keine mit dem Remotedebugger herstellen. Diese Meldung kann
 
 - Die Version des Remotedebuggers stimmt nicht mit Visual Studio überein. Rufen Sie die richtige Version des Remotedebuggers finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md)
 
-
 ## <a name="valid_name"></a> Der angeforderte Name ist gültig, aber keine Daten vom angeforderten Typ gefunden
 
 Der Remotecomputer vorhanden ist, aber Visual Studio konnte keine Verbindung mit dem Remotedebugger herstellen. Diese Meldung kann aus verschiedenen Gründen auftreten:
@@ -118,7 +117,7 @@ Wenn dies fehlschlägt, stellen Sie sicher, dass der Remotecomputer im Netzwerk 
 
 ### <a name="server_incorrect"></a> Der Servername ist falsch oder Drittanbieter-Software beeinträchtigt wird, mit dem Remotedebugger
 
-Sehen Sie in Visual Studio sich die Projekteigenschaften, und stellen Sie sicher, dass der Servername richtig ist. Finden Sie in Themen [ C# und Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) und [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Öffnen Sie für ASP.NET **Eigenschaften / Web / Servern** oder **Eigenschaften / Debug** je nach Projekttyp.
+Sehen Sie in Visual Studio sich die Projekteigenschaften, und stellen Sie sicher, dass der Servername richtig ist. Finden Sie in Themen [(c# und Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) und [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Öffnen Sie für ASP.NET **Eigenschaften / Web / Servern** oder **Eigenschaften / Debug** je nach Projekttyp.
 
 > [!NOTE]
 > Wenn Sie an den Prozess anfügen, werden die Einstellungen des remote in den Projekteigenschaften nicht verwendet werden.

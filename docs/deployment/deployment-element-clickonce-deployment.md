@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629520"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667208"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung)
 Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.
@@ -59,7 +59,6 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `deployment` -Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1` -Namespace. Das Element weist folgende Attribute auf.
-
 
 | Attribut | Beschreibung |
 |--------------------------| - |
@@ -97,12 +96,11 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 
  Dieses Element ist ein untergeordnetes Element des `deployment` -Elements und weist folgende Attribute auf.
 
-
 | Attribut | Beschreibung |
 |------------| - |
 | `codebase` | Erforderlich. Identifiziert den Speicherplatz, als ein Uniform Resource Identifier (URI), der das Bereitstellungsmanifest, das zum Aktualisieren von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Dieses Element ermöglicht es auch für die Weiterleitung der Speicherorte für die Aktualisierung für Installationen von CD-basierte. Ein gültiger URI muss sein. |
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Sie können konfigurieren, Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung für die Suche nach Updates beim Start nach Updates suchen, nach dem Start oder nie nach Updates suchen. Stellen Sie sicher, die für die Suche nach Updates beim Start der `beforeApplicationStartup` Element vorhanden ist, unter der `update` Element. Suche nach Updates nach dem Start sicher, dass die `expiration` Element vorhanden ist, unter dem `update` -Element, und die Updateintervallen angegeben werden.
 
  Zum Suchen nach Updates zu deaktivieren, entfernen Sie die `subscription` Element. Bei der Angabe im Bereitstellungsmanifest nie nach Updates gesucht, Sie können weiterhin manuell nach Updates Suchen mithilfe der <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> Methode.

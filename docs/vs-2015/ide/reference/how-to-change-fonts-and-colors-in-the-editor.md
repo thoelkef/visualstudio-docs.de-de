@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799107"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661866"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Vorgehensweise: Ändern von Schriftarten und Farben im Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpassen und die Vorder- und Hintergrundfarben für verschiedene Text-**Anzeigeelemente** ändern. Beim Verändern der Schriftarteinstellungen sollten Sie folgendes bedenken:  
   
 -   Die Einstellungen für **Schriftart** und **Größe** gelten global für alle Textelemente in allen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Editoren.  

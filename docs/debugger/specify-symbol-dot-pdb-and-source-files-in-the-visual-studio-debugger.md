@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681711"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666558"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -76,11 +76,11 @@ Der Debugger sucht auch nach Symboldateien in den folgenden Speicherorten:
 
      Sind Symbolserver, die Sie verwenden können:
 
-     **Öffentliche Microsoft-Symbolserver**: um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern.
+     **Öffentliche Microsoft-Symbolserver**: Um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern.
 
-     **Symbolserver auf einem internen Netzwerk oder auf dem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer.
+     **Symbolserver auf einem internen Netzwerk oder auf Ihrem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer.
 
-     **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet bereitstellen.
+     **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet gewähren.
 
      > [!WARNING]
      > Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, stellen Sie sicher, dass der Symbolserver und den Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie in Bezug auf Sicherheitsrisiken verfügbar gemacht werden.
@@ -155,7 +155,7 @@ Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen**
   Sie können die Befehle einschränken, *srcsrv.dll* können aus der app ausführen *PDB* Datei durch Auflisten der zulässigen Befehle in einer Datei namens *srcsrv.ini*. Ort der *srcsrv.ini* -Datei im gleichen Ordner wie *srcsrv.dll* und *devenv.exe*.
 
   >[!IMPORTANT]
-  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
   >Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Angenommen, Sie aufgeführten *cmd.exe* in Ihre *srcsrv.ini*, könnte ein böswilliger Benutzer Parameter angeben, auf *cmd.exe* , das würde machen es gefährlich.
 
@@ -259,7 +259,6 @@ Sie können Geben Sie die Speicherorte, die der Debugger nach Quelldateien sucht
 1. Klicken Sie unter **Quelldateien nicht suchen**, geben Sie die Namen der Quelldateien, Suche ausgeschlossen werden sollen.
 
 1. Wählen Sie **OK** oder **anwenden**.
-
 
 ## <a name="see-also"></a>Siehe auch
 - [Grundlegendes zu Symboldateien und symboleinstellungen für Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

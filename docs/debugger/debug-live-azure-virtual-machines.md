@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856955"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663189"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET-Apps auf Azure-VMs und Azure-VMSS mit dem Momentaufnahmedebugger
 
@@ -33,13 +33,13 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 > * Festlegen eines Andockpunkts und Anzeigen einer Momentaufnahme
 > * Festlegen eines Protokollpunkts
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
-* Der Momentaufnahmedebugger für virtuelle Azure-Computer (VM) und Azure Virtual Machine Scale Sets (VMSS) ist nur für die Vorschau von Visual Studio 2019 Enterprise oder höher mit der **Azure-Entwicklungsworkload** verfügbar. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
+* Momentaufnahmedebugger für mit Azure Virtual Machines (VMs) und Azure Virtual Machine Scale Sets ist nur verfügbar für Visual Studio 2019 Enterprise oder höher mit der **Azure-entwicklungsworkload**. (Auf der Registerkarte **Einzelne Komponenten** finden Sie ihn unter **Debuggen und Testen** > **Momentaufnahmedebugger**.)
 
-    Falls noch nicht installiert, installieren Sie [Visual Studio 2019 Enterprise – Vorschauversion](https://visualstudio.microsoft.com/vs/preview/).
+    Wenn sie noch nicht installiert ist, installieren Sie [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
-* Die Momentaufnahmensammlung ist für folgende Azure-VM/-VMSS-Web-Apps verfügbar:
+* Erfassung von Momentaufnahmen ist für die folgenden Azure virtuelle Machines\Virtual Machine Scale Sets-Web-apps zur Verfügung:
   * ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
   * ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
 
@@ -48,9 +48,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 1. Öffnen Sie das Projekt, das Sie mit einer Momentaufnahme debuggen möchten.
 
     > [!IMPORTANT]
-    > Zum Debuggen mit einer Momentaufnahme müssen Sie *dieselbe Version des Quellcodes* öffnen, die für Ihren Azure-VM/-VMSS-Dienst veröffentlicht wird.
+    > Momentaufnahme Debuggen, müssen Sie öffnen die *dieselbe Version des Quellcodes* dar, mit dem Azure virtuelle Machine\Virtual Machine Scale Sets-Dienst veröffentlicht wird.
 
-1. Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen** aus. Wählen Sie die Azure-VM/-VMSS aus, für die Ihre Web-App bereitgestellt wird, und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
+1. Wählen Sie **Debuggen > Momentaufnahmedebugger anfügen** aus. Wählen Sie die Azure virtuelle Machine\Virtual VM-Skalierungsgruppe für Ihre Web-app bereitgestellt wird und ein Azure Storage-Konto, und klicken Sie dann auf **Anfügen**.
 
       ![Starten des Momentaufnahmedebuggers im Menü „Debuggen“](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     > [!IMPORTANT]
     > Wenn Sie **Momentaufnahmedebugger anfügen** zum ersten Mal für Ihren virtuellen Computer auswählen, wird IIS automatisch neu gestartet.
-    > Wenn Sie **Momentaufnahmedebugger anfügen** zum ersten Mal für Ihre VM-Skalierungsgruppen auswählen, ist das manuelle Upgrade jeder Instanz der VMSS erforderlich.
+    > Die zum ersten Mal auswählen **Momentaufnahmedebugger Anfügen** für Ihre VM-Skalierungsgruppen, erfordert das manuelle Upgrade für jede Instanz von der Virtual Machine Scale Sets.
 
     Die Metadaten für die **Module** werden anfänglich nicht aktiviert; navigieren Sie zur Web-App, und die Schaltfläche **Sammlung starten** wird aktiv. Visual Studio ist jetzt im Modus des Debuggens von Momentaufnahmen.
 
@@ -66,9 +66,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     > [!NOTE]
     > Die Application Insights-Websiteerweiterung unterstützt auch das Debuggen von Momentaufnahmen. Wenn Sie eine „Websiteerweiterung veraltet“-Fehlermeldung erhalten, finden Sie unter [Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio](../debugger/debug-live-azure-apps-troubleshooting.md) weitere Informationen zum Aktualisieren.
-    > Für VM-Skalierungsgruppen muss der Benutzer die Instanzen in seinen VMSS manuell aktualisieren, nachdem er den Momentaufnahmedebugger zum ersten Mal angefügt hat.
+    > VM-skalierungsgruppen ist der Benutzer erforderlich, um die Instanzen in ihrer Virtual Machine Scale Sets manuell zu aktualisieren, nachdem Sie den Momentaufnahmedebugger anzufügen, zum ersten Mal.
 
-   Im Fenster **Module** sehen Sie, ob alle Module für die Azure-VM/-VMSS geladen wurden (wählen Sie **Debuggen > Fenster > Module** zum Öffnen des Fensters aus).
+   Die **Module** Fenster erfahren Sie, wenn alle Module für die Azure virtuelle Machine\Virtual VM-Skalierungsgruppe geladen wurden (Wählen Sie **Debuggen > Windows > Module** zum Öffnen des Fensters).
 
    ![Überprüfen des Fensters „Module“](../debugger/media/snapshot-modules.png)
 

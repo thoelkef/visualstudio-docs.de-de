@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957684"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668352"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass die in Datenobjekte eingegebenen Werte den Einschränkungen eines Objektschemas oder den bestehenden Regeln für die Anwendung entsprechen. Es dient der Fehlervermeidung, Daten vor dem Senden von Aktualisierungen an zugrunde liegende Datenbanken auf Gültigkeit zu überprüfen. Dadurch wird auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank verringert.  
   
  Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) stellt partielle Methoden, mit denen Benutzer, den vom Designer generierten Code zu erweitern, der ausgeführt wird, während Einfüge-, Update- und gelöscht werden, von Entitäten, die abgeschlossen und auch während und nach der einzelnen Spalte ändert.  
@@ -110,7 +109,7 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
   
       Für C#-Projekte:  
   
-   5. Da C#-Projekte die Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle erstellen `Update` *CLASSNAME* Methode.  
+   5. Da c#-Projekte die Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle erstellen `Update` *CLASSNAME* Methode.  
   
    6. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Updatemethode für die Klasse, der Sie Validierung hinzufügen möchten. Der folgende Code ähnelt dem Code, der generiert wird, bei der Auswahl einer `Update` *CLASSNAME* partielle Methode:  
   

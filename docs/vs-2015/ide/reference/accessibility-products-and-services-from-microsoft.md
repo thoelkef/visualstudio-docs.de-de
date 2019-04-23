@@ -19,17 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867941"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669600"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Die folgenden Themen enthalten Informationen über die Funktionen, Produkte und Dienste, die Menschen mit Behinderungen die Verwendung von Microsoft Windows erleichtern:  
   
 -   [Barrierefreiheitsfeatures in Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  

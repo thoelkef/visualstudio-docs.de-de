@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612464"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666584"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt werden, um dem Objekt-manager
 Die Tools zum Durchsuchen von Symbolen **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, Anforderungen für neue Daten zu übergeben die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager. Der Objekt-Manager sucht nach den entsprechenden Bibliotheken und fordert neue Listen von Symbolen. Die Bibliotheken zu reagieren, durch die Bereitstellung der angeforderten Daten an die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager Ruft die Methoden in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle zum Abrufen der Daten und zum Auffüllen von oder aktualisieren die Ansichten der Tools zum Durchsuchen von Symbolen verwendet.
@@ -30,7 +30,6 @@ Die Tools zum Durchsuchen von Symbolen **Klassenansicht**, **Objektkatalog**, **
 >  Folgende verwalteter Code wird gezeigt, wie Listen von Symbolen durch die Implementierung der zu der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die Objekt-Manager Ruft die Methoden dieser Benutzeroberfläche und verwendet die erhaltenen Daten zum Auffüllen von oder aktualisieren die Tools zum Durchsuchen von Symbolen.
 >
 >  Verwenden Sie für systemeigenen Code Symbol-anbieterimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstelle.
-
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Listen von Symbolen, für den Objekt-Manager bereitstellen
 

@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c161dcd18a46928c9e180608a122f106ecd6554e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780901"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667169"
 ---
 # <a name="assignculture-task"></a>AssignCulture-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Diese Aufgabe akzeptiert eine Liste von Elementen, die eine gültige .NET-Kulturbezeichnerzeichenfolge als Teil des Dateinamens enthalten kann, und erzeugt Elemente, die Metadaten mit dem Namen `Culture` aufweisen, die die entsprechenden Kulturbezeichner enthalten. Der Dateiname „Form1.fr-fr.resx“ enthält beispielsweise den eingebetteten Kulturbezeichner „fr-fr“, damit diese Aufgabe ein Element erstellt, das den gleichen Dateinamen mit Metadaten aufweist, bei denen `Culture` gleich `fr-fr` ist. Die Aufgabe erstellt auch eine Liste von Dateinamen ohne Kultur.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  

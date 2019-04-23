@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954107"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665687"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-and-install.md) und [Überprüfen Ihrer Xamarin-Umgebung](../cross-platform/verify-your-xamarin-environment.md) ausgeführt haben, zeigt Ihnen diese exemplarische Vorgehensweise das Erstellen einer einfachen (unten gezeigten) Xamarin-App mit nativen Benutzeroberflächenebenen. Bei nativen Benutzeroberflächen befindet sich der freigegebene Code in einer portablen Klassenbibliothek (PCL), und die einzelnen Plattformprojekte enthalten die UI-Definitionen.
 
@@ -519,7 +518,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 2.  Wählen Sie ein geeignetes Gerät oder Emulatorziel, und starten Sie die App durch Drücken der Taste F5.
 
-3.  Geben Sie auf dem Gerät oder im Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld ein (zum Beispiel: 60601), und drücken Sie dann **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
+3.  Geben Sie auf dem Gerät oder im Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld (z. B.: 60601), und drücken Sie die **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
 
      ![Wetter-App für Android und Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 
 2.  Starten Sie die App durch Drücken der Taste "F5".
 
-3.  Geben Sie im Windows Phone-Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld ein (zum Beispiel: 60601), und drücken Sie **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
+3.  Geben Sie im Windows Phone-Emulator eine gültige Postleitzahl für die USA in das Bearbeitungsfeld für die Postleitzahl ein (zum Beispiel: 60601), und drücken Sie die **Get Weather**. In den Steuerelementen werden nun Wetterdaten für diese Region angezeigt.
 
      ![Windows-Version der ausgeführten App](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

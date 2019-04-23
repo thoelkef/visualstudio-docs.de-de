@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801673"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668327"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie verwenden können, um ein Anwendungsprojekt zu erstellen. MSBuild umfasst ein Standardtoolset, Sie können jedoch auch benutzerdefinierte Toolsets erstellen. Informationen zum Angeben eines Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
 
 ## <a name="standard-toolset-configurations"></a>Standard-Toolsetkonfigurationen  
  MSBuild 12.0 umfasst die folgenden Standardtoolsets:  
-
 
 | ToolsVersion | Toolsetpfad (wie in der MSBuildToolsPath- oder MSBuildBinPath-Eigenschaft des Builds angegeben) |
 |--------------|--------------------------------------------------------------------------------------|

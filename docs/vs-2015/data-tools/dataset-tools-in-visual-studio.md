@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957785"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666506"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 HINWEIS]
 >  Datasets und verknüpften Klassen sind ältere Technologien von .NET aus den frühen 2000 s, mit denen Anwendungen arbeiten mit Daten im Arbeitsspeicher, während die Anwendungen aus der Datenbank getrennt werden. Sie sind besonders nützlich für Anwendungen, die Benutzern das Ändern von Daten und speichert die Änderungen in der Datenbank dauerhaft zu ermöglichen. Obwohl Datasets zu einer sehr erfolgreichen Technologie bewährt haben, empfehlen wir, neue Anwendungen für .NET zu Entity Framework verwenden. Entitätsframework bietet eine natürliche Möglichkeit zum Arbeiten mit tabellarischen Daten als Object-Modelle, und es hat es sich um eine einfachere Programmierschnittstelle.

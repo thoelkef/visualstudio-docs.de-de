@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: f97c86bd274d8fe6a75e8731165c5189e27cf08f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416421"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664481"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projektmappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
@@ -608,7 +608,6 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 ## <a name="trouble"></a> Problembehandlung bei
  In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie auf die [Visualisierung Tools Extensibility Forum](http://go.microsoft.com/fwlink/?LinkId=186074).
-
 
 | Problem | Vorschlag |
 |-|-|

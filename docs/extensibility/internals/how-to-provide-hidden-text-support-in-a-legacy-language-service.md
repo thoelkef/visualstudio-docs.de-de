@@ -12,16 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df34e65eda5dd871dc62132059dce0ac75e4030f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b7dc3d84ab543c7e3fc49060d20a33738bf5a8db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612430"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661463"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Vorgehensweise: Unterstützen der ausgeblendeten Text in einem legacy-Sprachdienst
 Sie können Regionen ausgeblendetem Text, zusätzlich zur konturenbereiche erstellen. Ausgeblendeten Text Regionen können Client-gesteuert oder Editor-gesteuert werden und werden verwendet, um einen Bereich des Texts ganz ausblenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist die **nur Skript** Ansicht im HTML-Editor.
-
 
 ## <a name="to-implement-a-hidden-text-region"></a>Um einen Bereich des ausgeblendeten Textes zu implementieren.
 

@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770849"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669808"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich dabei um Dateien. Elemente werden auf Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Elementtypen sind benannte Listen von Elementen, die als Parameter für Aufgaben verwendet werden können. In den Aufgaben werden die Schritte des Buildprozesses mithilfe der Elementwerte ausgeführt.  
   
  Da Elemente anhand des Elementtyps benannt werden, zu dem sie gehören, können die Begriffe „Element“ und „Elementwert“ synonym verwendet werden.  
@@ -88,9 +87,9 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 -   Ab .NET Framework 3.5 enthalten `Target`-Elemente möglicherweise [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elemente, die Item-Elemente enthalten.  
   
 ##  <a name="BKMK_ReferencingItems"></a>Verweisen auf Elemente in einer Projektdatei  
- Verwenden Sie die Syntax @(`ItemType`), um auf Elementtypen in der gesamten Projektdatei zu verweisen. Auf den Elementtyp aus dem vorherigen Beispiel würden Sie z.B. mithilfe von `@(Compile)` verweisen. Mithilfe dieser Syntax können Sie Elemente an Aufgaben übergeben, indem Sie den Elementtyp als einen Parameter dieser Aufgabe angeben. Weitere Informationen finden Sie unter [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md).  
+ Verwenden Sie die Syntax @(`ItemType`), um auf Elementtypen in der gesamten Projektdatei zu verweisen. Auf den Elementtyp aus dem vorherigen Beispiel würden Sie z.B. mithilfe von `@(Compile)` verweisen. Mithilfe dieser Syntax können Sie Elemente an Aufgaben übergeben, indem Sie den Elementtyp als einen Parameter dieser Aufgabe angeben. Weitere Informationen finden Sie unter [Vorgehensweise: Wählen Sie die Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
   
- Standardmäßig sind die Elemente eines Elementtyps durch Semikolons (;) getrennt, wenn er erweitert wird. Verwenden Sie die Syntax @(*ItemType*, „*Trennzeichen*“), um ein anderes Trennzeichen als den Standard anzugeben. Weitere Informationen finden Sie unter [How to: Display an Item List Separated with Commas (Vorgehensweise: Anzeigen einer durch Kommas getrennten Elementliste)](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Standardmäßig sind die Elemente eines Elementtyps durch Semikolons (;) getrennt, wenn er erweitert wird. Verwenden Sie die Syntax @(*ItemType*, „*Trennzeichen*“), um ein anderes Trennzeichen als den Standard anzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen einer durch Kommas getrennten](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a>Verwenden von Platzhaltern zum Angeben von Elementen  
  Sie können die Platzhalterzeichen **, \* und ? verwenden, um eine Gruppe von Dateien als Eingaben für einen Build anzugeben. So müssen Sie nicht alle Dateien separat auflisten.  
@@ -113,7 +112,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Weitere Informationen zu Platzhalterzeichen finden Sie unter [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md).  
+ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Wählen Sie die Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
   
 ##  <a name="BKMK_ExcludeAttribute"></a>Verwenden des Exclude-Attributs  
  Item-Elemente können das `Exclude`-Attribut enthalten, das bestimmte Elemente (Dateien) aus dem Elementtyp ausschließt. Das `Exclude`-Attribut wird normalerweise zusammen mit Platzhalterzeichen verwendet. Das folgende XML fügt z.B. dem Elementtyp der CS-Datei alle CS-Dateien im Verzeichnis mit Ausnahme der `DoNotBuild.cs`-Datei hinzu.  
@@ -358,9 +357,9 @@ Output:
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
- [How to: Select the Files to Build (Vorgehensweise: Auswählen von Dateien für den Buildvorgang)](../msbuild/how-to-select-the-files-to-build.md)   
- [How to: Exclude Files from the Build (Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang)](../msbuild/how-to-exclude-files-from-the-build.md)   
- [How to: Display an Item List Separated with Commas (Vorgehensweise: Anzeigen von durch Trennzeichen getrennten Elementlisten)](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Vorgehensweise: Wählen Sie die Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)   
+ [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Vorgehensweise: Zeigen Sie eine durch Kommas getrennte Liste an](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Item Definitions (Elementdefinitionen)](../msbuild/item-definitions.md)   
  [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
  [Item-Element (MSBuild)](../msbuild/item-element-msbuild.md)

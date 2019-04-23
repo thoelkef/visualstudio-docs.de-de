@@ -26,22 +26,20 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 338b5a93ebedca14c6ceb531354cd1852fbaae6e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763392"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665427"
 ---
 # <a name="lib-task"></a>LIB-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe"). Der Bibliothek-Manager erstellt und verwaltet eine Bibliothek mit Objektdateien im Common Object File Format (COFF). Der Bibliothek-Manager kann darüber hinaus Exportdateien und Importbibliotheken erstellen, um auf exportierte Definitionen zu verweisen. Weitere Informationen finden Sie unter [LIB-Referenz](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) und [Ausführen von LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
 
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **LIB**-Aufgabe beschrieben. Die meisten Aufgabenparameter entsprechen einer Befehlszeilenoption.  
-
 
 |             Parameter              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,7 +68,7 @@ Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ("lib.exe").
 |    **UseUnicodeResponseFiles**     |                                                                                                                                                                                                                                                                                                                                                               Optionaler **Boolean**-Parameter.<br /><br /> Bei `true` wird das Projektsystem angewiesen, UNICODE-Antwortdateien zu generieren, wenn der Bibliothekar erzeugt wird. Geben Sie `true` an, wenn Dateien im Projekt über UNICODE-Pfade verfügen.                                                                                                                                                                                                                                                                                                                                                               |
 |            **Verbose**             |                                                                                                                                                                                                                                                                       Optionaler **Boolean**-Parameter.<br /><br /> Bei `true` werden Details zum Fortschritt der Sitzung angezeigt. Dies schließt die Namen der hinzuzufügenden OBJ-Dateien ein. Die Informationen werden an die Standardausgabe gesendet und können in eine Datei umgeleitet werden.<br /><br /> Weitere Informationen finden Sie bei der Option **/VERBOSE** unter [Ausführen von LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                                                                                                                                                        |
 
-## <a name="remarks"></a>Anmerkungen  
+## <a name="remarks"></a>Hinweise  
 
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

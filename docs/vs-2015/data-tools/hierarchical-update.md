@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958730"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663296"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten Daten (aus einem Dataset mit zwei oder mehr verknüpfte Tabellen) in einer Datenbank beim Verwalten von Regeln für die referenzielle Integrität. *Referenzielle Integrität* bezieht sich auf die Konsistenzregeln, angegeben durch die Einschränkungen in einer Datenbank, die das Verhalten des einfügen, aktualisieren und Löschen von verknüpften Datensätzen zu steuern. Beispielsweise ist es an der referenziellen Integrität, der die Erstellung eines Kundendatensatzes vor Aufträge erstellt werden für diesen Kunden erzwingt.  Weitere Informationen zu Beziehungen in Datasets, finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md)  
   
  Die hierarchische Aktualisierung-Funktion verwendet einen `TableAdapterManager` zum Verwalten der `TableAdapter`s in einem typisierten Dataset. Die `TableAdapterManager` Komponente ist eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Klasse generiert, sodass es nicht Teil der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Wenn Sie eine Tabelle aus dem Datenquellenfenster auf einem Windows-Formular oder eine WPF-Seite ziehen, wird Visual Studio fügt eine Variable vom Typ TableAdapterManager in das Formular oder die Seite, und es im Designer auf der Komponentenleiste angezeigt. Ausführliche Informationen zu den `TableAdapterManager` Klasse, finden Sie im Abschnitt TableAdapterManager-Verweis [Übersicht über TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

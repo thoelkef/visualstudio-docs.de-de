@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960400"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668443"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Eigenschaften von Vorgängen in UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,6 @@ Sie können in einem UML-Klassendiagramm hinzufügen *Vorgänge* Klassen und Sch
  Dies sind die Eigenschaften eines Vorgangs in einer Klasse oder Schnittstelle in einem UML-Klassendiagramm.  
 
  Um die Eigenschaften eines Vorgangs anzuzeigen, mit der rechten Maustaste in des Vorgangs in der Klasse oder Schnittstelle im Diagramm, und klicken Sie dann auf **Eigenschaften**. Die Eigenschaften werden in der **Eigenschaften** Fenster.  
-
 
 |      Eigenschaft       |   Standard    |                                                                                                                                                                                 Beschreibung                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

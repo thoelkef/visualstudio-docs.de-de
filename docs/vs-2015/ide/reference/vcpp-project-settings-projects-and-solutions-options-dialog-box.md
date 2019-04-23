@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d5d697cecfb30bc52f3386411a32a05718b0662
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664017"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekteinstellungen definieren, die für die Buildprotokollierung sowie unterstützende Dateitypen relevant sind.  
   
 ### <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld  

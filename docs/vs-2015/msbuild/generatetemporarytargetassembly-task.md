@@ -19,17 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 397bb367207646e110243e050c271815b6258ff5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774682"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668612"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task generiert eine Assembly, wenn mindestens eine <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>-Seite in einem Projekt auf einen Typ verweist, der lokal in diesem Projekt deklariert ist. Die generierte Assembly wird entfernt, nachdem der Build abgeschlossen ist, oder wenn beim Buildprozess ein Fehler auftritt.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  

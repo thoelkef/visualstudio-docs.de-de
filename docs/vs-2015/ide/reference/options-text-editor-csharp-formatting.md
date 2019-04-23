@@ -26,17 +26,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 407e438193e5ee328a8cbc6743829e40f2c366fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800766"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665661"
 ---
 # <a name="options-text-editor-c-formatting"></a>Optionen, Text-Editor, C#, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, erweitern Sie **C#**, und klicken Sie dann auf **Formatierung**.  
   
 > [!NOTE]

@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001844"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664111"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Bevorzugte Begriffe verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1726: Bevorzugte Begriffe verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1726: Bevorzugte Begriffe verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -41,30 +41,30 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1726: Bevorzugte 
   
 |Veraltete Bezeichnung|Bevorzugter Begriff|  
 |-------------------|--------------------|  
-|werden nicht|AreNot|  
-|Cancelled|Canceled|  
-|Kann nicht|Nicht möglich|  
-|ComPlus|EnterpriseServices|  
-|Testfalldaten|CouldNot|  
-|Didnt|DidNot|  
-|Nicht|DoesNot|  
-|Dont|DoNot|  
-|Flag oder Flags|Es gibt keine ersetzungsbegriff. Nicht verwenden.|  
-|Hadnt|HadNot|  
-|Noch nicht|HasNot|  
-|noch nicht|HaveNot|  
-|Indizes|Indizes|  
-|Isnt|IsNot|  
-|LogIn|LogOn|  
-|LogOut|LogOff|  
-|Shouldnt|ShouldNot|  
-|SignOn|SignIn|  
-|SignOff|SignOut|  
-|Wasnt|WasNot|  
-|Waren nicht|WereNot|  
-|Empfängerseitige|WillNot|  
-|Wouldnt|WouldNot|  
-|Beschreibbare|Beschreibbare|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` oder `Flags`|Es gibt keine ersetzungsbegriff. Nicht verwenden.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie den Begriff mit dem bevorzugten Begriff für die alternative.  

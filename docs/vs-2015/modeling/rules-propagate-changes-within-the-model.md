@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 32aff234b5b45df4154d47f94c975828f31b71fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961814"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668339"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,7 +133,6 @@ namespace ExampleNamespace
 
 - Leiten Sie die Regelklasse, von einem der folgenden Basisklassen:  
 
-
   |                             Basisklasse                              |                                                                                                                                                                                                                                                                                                                                                                              Trigger                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Ein Element, eine Verknüpfung oder eine Form wird hinzugefügt.<br /><br /> Verwenden Sie diese Option, um neue Beziehungen, zusätzlich zu neuen Elementen zu erkennen.                                                                                                                                                                                                                                                                                                                        |
@@ -146,7 +145,6 @@ namespace ExampleNamespace
   |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              Ausgeführt, wenn eine Transaktion erstellt wird.                                                                                                                                                                                                                                                                                                                                                              |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      Ausgeführt, wenn die Transaktion ein Commit ausgeführt wird.                                                                                                                                                                                                                                                                                                                                                      |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     Ausgeführt, wenn die Transaktion wird ein Rollback ausgeführt werden.                                                                                                                                                                                                                                                                                                                                                     |
-
 
 - Jede Klasse verfügt über eine Methode, die Sie außer Kraft setzen. Typ `override` in der Klasse ermittelt. Die Parameter dieser Methode gibt das Element, das geändert wird.  
 

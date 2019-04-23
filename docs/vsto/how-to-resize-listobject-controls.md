@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598465"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669301"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Vorgehensweise: Größe von ListObject-Steuerelementen
   Sie legen die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements fest, wenn Sie es einer Microsoft Office Excel-Arbeitsmappe hinzufügen. Möglicherweise möchten Sie dessen Größe jedoch zu einem späteren Zeitpunkt ändern. Beispielsweise könnte es sein, dass Sie eine zweispaltige Liste in eine dreispaltige Liste ändern möchten.
@@ -43,7 +43,6 @@ ms.locfileid: "56598465"
  Sie können die Größe einer Liste ändern, indem Sie auf einen der Ziehpunkte klicken und diesen ziehen oder indem Sie die Größe im Dialogfeld **Größe der Liste ändern** neu definieren.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>So ändern Sie die Größe einer Liste im Dialogfeld „Größe der Liste ändern“
-
 
 1.  Klicken Sie auf eine beliebige Stelle der <xref:Microsoft.Office.Tools.Excel.ListObject> Tabelle. Die **Tabellentools** > **Entwurf** Registerkarte im Menüband angezeigt wird.
 

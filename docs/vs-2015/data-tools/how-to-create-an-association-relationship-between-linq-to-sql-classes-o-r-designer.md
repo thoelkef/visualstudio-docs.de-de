@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961349"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669054"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Vorgehensweise: Erstellen einer Zuordnung (Beziehung) zwischen LINQ to SQL-Klassen (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zuordnungen zwischen Entitätsklassen in [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ähneln Beziehungen zwischen Tabellen einer Datenbank. Sie können Zuordnungen zwischen Entitätsklassen mithilfe des Dialogfelds **Zuordnungs-Editor** erstellen.  
   
  Sie müssen eine übergeordnete und eine untergeordnete Klasse auswählen, wenn Sie das Dialogfeld **Zuordnungs-Editor** verwenden, um eine Zuordnung zu erstellen. Die übergeordnete Klasse ist die Entitätsklasse, die den Primärschlüssel enthält. Die untergeordnete Klasse ist die Entitätsklasse, die den Fremdschlüssel enthält. Wenn z. B. Entitätsklassen erstellt würden, die den Northwind-Tabellen Customers und Orders zugeordnet sind, wäre die Customer-Klasse die übergeordnete und die Order-Klasse die untergeordnete Klasse.  

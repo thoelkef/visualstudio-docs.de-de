@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800420"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663142"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Gewusst wie: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Oder Sie können ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um die unterschiedlichen Buildkonfigurationen zu erstellen.  
   
 ## <a name="using-properties-to-modify-projects"></a>Verwenden von Eigenschaften zum Ändern von Projekten  
@@ -56,7 +55,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest  
   
--   Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Beispiel:  
+-   Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -70,7 +69,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an  
   
-- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Beispiel:  
+- Verwenden Sie mehrmals den Schalter **/property** oder **/p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **/property** bzw. **/p** und unterteilen mehrere Eigenschaft mithilfe des Semikolons (;). Zum Beispiel:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  

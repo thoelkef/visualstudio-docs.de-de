@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001838"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662607"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Nicht verwendete Parameter überprüfen](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Nicht verwendete Parameter überprüfen](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Kategorie|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly, unabhängig von der Änderung angezeigt wird, die Sie vornehmen.<br /><br /> Nicht unterbrechend – Wenn Sie ändern, dass das Element, um die Parameter innerhalb des Texts zu verwenden.<br /><br /> Wichtige – Wenn Sie den Parameter entfernen und außerhalb der Assembly sichtbar ist.|  
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung.<br /><br /> Nicht unterbrechend – Wenn Sie ändern, dass das Element, um die Parameter innerhalb des Texts zu verwenden.<br /><br /> Wichtige – Wenn Sie den Parameter entfernen und außerhalb der Assembly sichtbar ist.|  
   
 ## <a name="cause"></a>Ursache  
  Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. Diese Regel untersucht nicht die folgenden Methoden:  

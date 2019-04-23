@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001557"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664799"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegende "Forms over Data"-Anwendung in Visual Studio mit SQL Server LocalDB, die Northwind-Datenbank, Entity Framework 6 und Windows Presentation Foundation erstellt wird. Es zeigt, wie Sie einfache Datenbindung mit einer Master / Detail-Ansicht, und sie hat auch einen benutzerdefinierten "Bindung Navigator" mit Schaltflächen für die "Nächste verschieben", "Vorherige verschieben," "Wechseln zu beginnen," "Wechseln zu beenden," "Update" und "Delete".  
   
  Dieser Artikel konzentriert sich auf das Verwenden von Datentools in Visual Studio, und versucht nicht, erläutern die zugrunde liegenden Technologien in jeder beliebigen Tiefe. Es wird davon ausgegangen, dass Sie über grundlegende Kenntnisse von XAML, Entity Framework und SQL verfügen. In diesem Beispiel wird auch nicht MVVM-Architektur veranschaulicht die standardmäßigen für WPF-Anwendungen ist. Allerdings können Sie diesen Code in Ihren eigenen MVVM-Anwendung mit sehr wenigen Änderungen kopieren.  
@@ -63,7 +62,7 @@ Dieser exemplarischen Vorgehensweise wird gezeigt, wie eine grundlegende "Forms 
   
     ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png "EF Objekte, die Raddata auswählen")  
   
-5. Der Assistent generiert der C#-Klassen, die das Entity Framework-Modell darstellen. Hierbei handelt es sich um plain old C#-Klassen aus, und sie sind, was wir wird Databind der WPF-Benutzeroberfläche. Die EDMX-Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet.  Die TT-Dateien sind T4-Vorlagen, die den Code zu generieren, die das Modell verarbeiten und speichern Sie Änderungen an der Datenbank. Sie können alle diese Dateien im Projektmappen-Explorer unter dem Knoten Northwind_model sehen:  
+5. Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Hierbei handelt es sich um plain old C#-Klassen aus, und sie sind, was wir wird Databind der WPF-Benutzeroberfläche. Die EDMX-Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet.  Die TT-Dateien sind T4-Vorlagen, die den Code zu generieren, die das Modell verarbeiten und speichern Sie Änderungen an der Datenbank. Sie können alle diese Dateien im Projektmappen-Explorer unter dem Knoten Northwind_model sehen:  
   
     ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png "Raddata Projektmappen-Explorer EF-Model-Dateien")  
   

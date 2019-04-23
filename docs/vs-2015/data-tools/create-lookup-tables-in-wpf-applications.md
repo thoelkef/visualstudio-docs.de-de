@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58961459"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663781"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der Begriff *Nachschlagetabelle* (bezeichnet ein *nachschlagebindung*) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle, die anhand des Werts eines Fremdschlüsselfelds in einer anderen Tabelle anzeigt. Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten einer übergeordneten Tabelle ziehen oder-Objekts in die **Datenquellen** auf ein Steuerelement, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.  
   
  Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in die `Orders` Tabelle enthält eine `CustomerID` , der angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in zeigt die `Customers` Tabelle. Wenn Sie eine Liste der Bestellungen Anzeigen der `Orders` Tabelle, Sie können anstelle von den tatsächlichen Kundennamen anzeigen möchten die `CustomerID`. Da der Kundenname wird die `Customers` Tabelle müssen Sie eine Nachschlagetabelle, um die Namen der Kunden zu erstellen. Die Lookup-Tabelle verwendet den `CustomerID` Wert in der `Orders` aufzeichnen, um die Beziehung zu navigieren, und geben Sie den Namen des Kunden zurück.  

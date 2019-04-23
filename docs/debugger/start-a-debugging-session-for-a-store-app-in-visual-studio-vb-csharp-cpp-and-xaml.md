@@ -35,23 +35,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669785"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Starten einer Debugsitzung für eine UWP-App
 
-Dieser Artikel beschreibt, wie Sie eine Visual Studio-Debugsitzung für eine universelle Windows-Plattform (UWP)-app zu starten. UWP-apps in XAML, C++ und XAML geschrieben werden können und C#Nachrichtentexts. Klicken Sie zum Starten des Debuggens einer UWP-Apps Konfigurieren der Debugsitzung, und wählen Sie die Möglichkeit, die app zu starten.
+Dieser Artikel beschreibt, wie Sie eine Visual Studio-Debugsitzung für eine universelle Windows-Plattform (UWP)-app zu starten. UWP-apps in XAML geschrieben werden können und C++, XAML und C#Nachrichtentexts. Klicken Sie zum Starten des Debuggens einer UWP-Apps Konfigurieren der Debugsitzung, und wählen Sie die Möglichkeit, die app zu starten.
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
 > Ab Visual Studio-2019 wird werden für HTML und JavaScript-UWP-apps nicht mehr unterstützt.
 ::: moniker-end
 ::: moniker range="vs-2017"
-In Visual Studio 2017 gelten die meisten Befehle und Optionen, die in diesem Artikel gezeigten auch für UWP-apps für HTML und JavaScript. Bei Befehlen unterscheiden zwischen verwalteten und C++-apps mit JavaScript-apps in der Regel sind die Befehle für C++-UWP-apps identisch.
+In Visual Studio 2017 gelten die meisten Befehle und Optionen, die in diesem Artikel gezeigten auch für UWP-apps für HTML und JavaScript. Verwaltete, in denen Befehle unterschiedlich sind und C++ apps JavaScript-apps in der Regel sind identisch mit Befehlen für C++ UWP-apps.
 ::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Starten des Debuggen von Visual Studio-Symbolleiste
@@ -98,9 +98,9 @@ Verwenden Sie zum Konfigurieren zusätzlicher Optionen für das Debuggen des Pro
 
      ![C#und Visual Basic-Projekt Debuggen-Eigenschaftenseite](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Wählen Sie für C++-apps **Konfigurationseigenschaften** > **Debuggen**.
+   - Für C++ -apps wählen **Konfigurationseigenschaften** > **Debuggen**.
 
-     ![Eigenschaftenseite "debugging" C++-UWP-app](../debugger/media/dbg_cpp_debugpropertypage.png)
+     ![C++Debugeigenschaftenseite von UWP-app](../debugger/media/dbg_cpp_debugpropertypage.png)
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Auswahl des zu verwendenden Debuggers
 
@@ -112,17 +112,16 @@ In C++-Anwendungen debuggt Visual Studio systemeigenen Code standardmäßig an. 
 
 - Für C# , und wählen Sie einen der folgenden Debugger in Visual Basic-Anwendungen, die **Anwendungstyp** und **Hintergrund Prozesstyp** Dropdownmenüs unter **Debuggertyp** auf die **Debuggen** Eigenschaftenseite.
 
-- Für C++-apps wählen Sie eine der folgenden Debugger in den **Debuggertyp** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
+- Für C++ -apps wählen Sie einen der folgenden Debugger in den **Debuggertyp** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
 
 |||
 |-|-|
 |**Nur verwaltet**|Für das Debuggen des verwalteten Codes der Anwendung. JavaScript- und systemeigener C/C++-Code werden ignoriert.|
 |**Nur systemeigen**|Für das Debuggen des systemeigenen C/C++-Codes der Anwendung. Verwalteter und JavaScript-Code werden ignoriert.|
-|**Gemischt (verwaltet und systemeigen)**|Für das Debuggen des systemeigenen C/C++- und des verwalteten Codes der Anwendung. JavaScript-Code wird ignoriert. In C++-Projekten, heißt diese Option **verwaltet und systemeigen**.|
+|**Gemischt (verwaltet und systemeigen)**|Für das Debuggen des systemeigenen C/C++- und des verwalteten Codes der Anwendung. JavaScript-Code wird ignoriert. In C++ Projekte, heißt diese Option **verwaltet und systemeigen**.|
 |**Skript**|Für das Debuggen des JavaScript-Codes der Anwendung. Verwalteter und systemeigener Code werden ignoriert.|
-|**Nativ mit Skript**|Debuggen des systemeigenen C/C++-Code und JavaScript-Code in Ihrer app. Verwalteter Code wird ignoriert. Verfügbar in C++-Projekten oder nur Aufgaben im Hintergrund.|
+|**Nativ mit Skript**|Debuggen des systemeigenen C/C++-Code und JavaScript-Code in Ihrer app. Verwalteter Code wird ignoriert. Verfügbar in C++ Projekte oder Hintergrund nur Vorgänge.|
 |**Nur GPU (C++ AMP)**|Debuggen von systemeigenem C++-Code, der auf einer Grafikverarbeitungseinheit (GPU) ausgeführt wird. In der nur C++-Projekte verfügbar.|
-
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Deaktivieren von netzwerkloopbacks (optional)
 
@@ -132,10 +131,10 @@ In C++-Anwendungen debuggt Visual Studio systemeigenen Code standardmäßig an. 
 
 -   Für C# und Visual Basic-Anwendungen, deaktivieren Sie die **lokales netzwerkloopback zulassen** Kontrollkästchen unter **Startoptionen** auf die **Debuggen** Eigenschaftenseite.
 
--   Wählen Sie für Visual C++-apps **keine** aus der **lokaler Netzwerkloopback zulassen** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
+-   Für Visual C++ -apps wählen **keine** aus der **lokaler Netzwerkloopback zulassen** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Installieren Sie die Anwendung neu, wenn Sie das Debuggen starten (optional)
- Diagnostizieren Sie Probleme bei der Installation eine C# oder Visual Basic-app, und wählen **deinstallieren und installieren Sie Mein Paket erneut** auf die **Debuggen** Eigenschaftenseite. Diese Option wird die ursprüngliche Installation neu erstellt, beim Starten des Debuggens. Diese Option nicht für C++-Projekte verfügbar ist.
+ Diagnostizieren Sie Probleme bei der Installation eine C# oder Visual Basic-app, und wählen **deinstallieren und installieren Sie Mein Paket erneut** auf die **Debuggen** Eigenschaftenseite. Diese Option wird die ursprüngliche Installation neu erstellt, beim Starten des Debuggens. Diese Option ist nicht verfügbar für C++ Projekte.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Festlegen von Authentifizierungsoptionen für das Remotedebuggen
 
@@ -147,7 +146,7 @@ Die **universell (unverschlüsseltes Protokoll)** Authentifizierungsmodus ist f�
 
 - Für C# und Visual Basic-apps, auf die **Debuggen** auf der Seite wählen **Remotecomputer** als die **Zielgerät**. Wählen Sie dann **keine** oder **universell (unverschlüsseltes Protokoll)** für **Authentifizierungsmodus**.
 
-- Wählen Sie für C++-apps **Remotecomputer** unter **zu startender Debugger** auf die **Debuggen** Eigenschaftenseite. Wählen Sie dann **keine Authentifizierung** oder **universell (unverschlüsseltes Protokoll)** für **Authentifizierungstyp**.
+- Für C++ -apps wählen **Remotecomputer** unter **zu startender Debugger** auf die **Debuggen** Eigenschaftenseite. Wählen Sie dann **keine Authentifizierung** oder **universell (unverschlüsseltes Protokoll)** für **Authentifizierungstyp**.
 
 > [!CAUTION]
 > Es gibt keine Netzwerksicherheit, beim Ausführen des Remotedebuggers in **keine** oder **universell (unverschlüsseltes Protokoll)** Modi. Wählen Sie diesen Modus nur in vertrauenswürdigen Netzwerken, die Sie nicht sicher durch bösartigen Code oder feindlichen Datenverkehr gefährdet sind.
@@ -164,7 +163,7 @@ Standardmäßig startet der Visual Studio die app sofort beim Starten des Debugg
 
 - Für C# und Visual Basic-Anwendungen, die Option **nicht starten sondern Debuggen meinen Code** unter **Startoptionen** auf die **Debuggen** Eigenschaftenseite.
 
-- Wählen Sie für C++-apps **keine** aus der **Anwendung starten** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
+- Für C++ -apps wählen **keine** aus der **Anwendung starten** Dropdownliste auf der **Debuggen** Eigenschaftenseite.
 
 Weitere Informationen zum Debuggen von Hintergrundaufgaben finden Sie unter [Trigger anhalten, fortsetzen und hintergrundereignissen für UWP-apps](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
