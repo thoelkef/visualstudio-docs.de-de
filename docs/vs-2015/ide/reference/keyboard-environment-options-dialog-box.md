@@ -11,17 +11,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e42eac163b35650aa42942fd9f595d90a7655a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 22bd3a56470fa377475f44488de936313b9f96b1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778697"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666792"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Tastatur, Umgebung, Dialogfeld „Optionen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Auf dieser Seite können Sie Tastaturzuordnungen festlegen. Weitere Informationen zu Zuordnungen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch  

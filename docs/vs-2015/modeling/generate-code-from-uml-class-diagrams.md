@@ -16,17 +16,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961956"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663991"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generieren von Code aus UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwenden Sie zum Generieren von Visual C#-.NET-Code aus UML-Klassendiagrammen in Visual Studio die **Code generieren** Befehl. Standardmäßig generiert der Befehl einen C#-Typ für jeden UML-Typ, den Sie auswählen. Sie können dieses Verhalten ändern oder erweitern, indem Sie die Textvorlagen ändern oder kopieren, mit denen der Code generiert wird. Sie können ein anderes Verhalten für die Typen angeben, die in anderen Paketen im Modell enthalten sind.  
+Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen in Visual Studio die **Code generieren** Befehl. Standardmäßig generiert der Befehl einen C#-Typ für jeden UML-Typ, den Sie auswählen. Sie können dieses Verhalten ändern oder erweitern, indem Sie die Textvorlagen ändern oder kopieren, mit denen der Code generiert wird. Sie können ein anderes Verhalten für die Typen angeben, die in anderen Paketen im Modell enthalten sind.  
 
  Die **Code generieren** Befehl ist besonders geeignet, zum Generieren von Code aus der Auswahl des Benutzers, der Elemente, und klicken Sie zum Generieren einer Datei für jede UML-Klasse oder ein anderes Element. Das folgende Bildschirmfoto zeigt z. B. zwei C#-Dateien, die aus zwei UML-Klassen generiert wurden.  
 
@@ -112,7 +112,7 @@ Verwenden Sie zum Generieren von Visual C#-.NET-Code aus UML-Klassendiagrammen i
 
  Außerdem stellt jedes Stereotyp mehrere zusätzliche Eigenschaften bereit, die Sie festlegen können. Diese Werte werden im C#-Code in geeignete Schlüsselwörter übersetzt. Wenn Sie z. B. die `Is Static`-Eigenschaft für eine Klasse festlegen, ist die C#-Klasse `static`.  
 
- Wählen Sie die Klasse oder ein anderes Element im Diagramm aus, um diese zusätzlichen Eigenschaften festzulegen. Erweitern Sie im Eigenschaftenfenster **Stereotype**, und erweitern Sie das C#-Stereotyp, z. B. **C#-Klasse**.  Für Klassen schließen diese zusätzlichen Eigenschaften Folgendes ein:  
+ Wählen Sie die Klasse oder ein anderes Element im Diagramm aus, um diese zusätzlichen Eigenschaften festzulegen. Erweitern Sie im Eigenschaftenfenster **Stereotype**, und erweitern Sie das C#-Stereotyp, z. B. **c#-Klasse**.  Für Klassen schließen diese zusätzlichen Eigenschaften Folgendes ein:  
 
 - CRL-Attribute  
 
@@ -164,7 +164,6 @@ Verwenden Sie zum Generieren von Visual C#-.NET-Code aus UML-Klassendiagrammen i
 
 4. Legen Sie im Dialogfeld die Eigenschaften der Textvorlagenbindung fest.  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Beschreibung**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Name        |                                                                                                                                                                                                                                                  Ein Name für diese Bindung. Um eine von einem enthaltenden Paket oder Modell geerbte Bindung zu überschreiben, verwenden Sie den gleichen Namen wie die Bindung, die Sie überschreiben möchten.                                                                                                                                                                                                                                                  |
@@ -173,7 +172,6 @@ Verwenden Sie zum Generieren von Visual C#-.NET-Code aus UML-Klassendiagrammen i
    |    Project Path    |                                                                      Gibt den Pfad zum [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt an, das die Ausgabedateien der Transformation enthält. Verwenden Sie typisierte Werte, um ein neues Projekt zu erstellen. Wählen Sie die Schaltfläche mit den Auslassungspunkten (**[...]** ) auf ein vorhandenes Projekt auszuwählen.<br /><br /> Falls noch nicht vorhanden, wird ein neues Projekt erstellt. Es ist ein C#-Klassenbibliotheksprojekt.<br /><br /> Hierzu müssen Sie das Projekt direkt eingeben. Sie können Umgebungsvariablenmakros wie %ProgramFiles% oder %LocalAppData% einschließen.                                                                       |
    |  Target Directory  |                                                                                          Der Ordner, in dem die Zieldatei generiert wird. Der Pfad ist relativ zum Projektordner.<br /><br /> Sie können mithilfe des `{PackageStructure}`-Ausdrucks einen Pfad einfügen, der den Namen der enthaltenden Pakete entspricht. Der Standardwert ist `\GeneratedCode\{PackageStructure}`. Sie können auch Umgebungsvariablen wie %TEMP% oder %HomePath% einschließen. **Wichtig:** `{PackageStructure}` kann verwendet werden, nur in der **Zielverzeichnis** Eigenschaft.                                                                                          |
    | Vorlagendatei-Pfad |                                                                                                                                                           Die Vorlage, mit der die Transformation ausgeführt wird.<br /><br /> Sie können entweder die bereitgestellten Vorlagen verwenden oder eigene erstellen. Sie finden die bereitgestellten Vorlagen am folgenden Speicherort:<br /><br /> …\Programme\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. Sie können einem Element beliebig viele Bindungen anfügen.  
 

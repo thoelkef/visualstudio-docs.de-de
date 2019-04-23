@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956603"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661580"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen und Definieren von Spalten mithilfe von Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB. Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie erweiterte Funktionen ermitteln, indem Sie die lokale Datenbank als Ausgangspunkt für andere exemplarische Vorgehensweisen verwenden, in denen sie erforderlich ist.  
   
  Sie können auch eine Datenbank erstellen, mithilfe von SQL Server Management Studio (separater Download) oder Transact-SQL-Anweisungen in der **Objekt-Explorer von SQL Server** Toolfenster in Visual Studio.  

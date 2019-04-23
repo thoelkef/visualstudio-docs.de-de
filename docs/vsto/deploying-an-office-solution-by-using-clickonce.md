@@ -13,27 +13,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504431"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665453"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projektmappe mit ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Aus diesem Grund sollten Sie erwägen, mithilfe von Windows Installer (*MSI*), wenn mehr als ein Benutzer die Lösung auf dem gleichen Computer ausgeführt wird.
 
 ## <a name="in-this-topic"></a>In diesem Thema
 
-- [Veröffentlichen der Projektmappe](#Publish)
+- [Veröffentlichen Sie die Projektmappe](#Publish)
 
-- [Festlegen, wie der Projektmappe Vertrauenswürdigkeit gewährt werden soll](#Trust)
+- [Entscheiden Sie, wie der Projektmappe Vertrauenswürdigkeit gewährt werden sollen.](#Trust)
 
-- [Hilfe für Benutzer bei der Installation der Projektmappe](#Helping)
+- [Unterstützen von Benutzern, die die Lösung installieren](#Helping)
 
-- [Kopieren des Dokuments einer Projektmappe auf den Computer des Endbenutzers (nur Anpassungen auf Dokumentebene)](#Put)
+- [Kopieren des Dokuments einer Projektmappe auf der Endbenutzer Computer (nur Anpassungen auf Dokumentebene)](#Put)
 
-- [Kopieren des Dokuments einer Projektmappe auf einen Server, auf dem SharePoint ausgeführt wird (nur Anpassungen auf Dokumentebene)](#SharePoint)
+- [Kopieren des Dokuments einer Projektmappe auf einem Server mit SharePoint (nur Anpassungen auf Dokumentebene)](#SharePoint)
 
 - [Erstellen eines benutzerdefinierten Installationsprogramms](#Custom)
 
@@ -41,7 +41,7 @@ ms.locfileid: "59504431"
 
 - [Ändern des Installationspfads einer Projektmappe](#Location)
 
-- [Zurücksetzen der Projektmappe auf eine frühere Version](#Roll)
+- [Zurücksetzen der Projektmappe auf eine frühere version](#Roll)
 
   Weitere Informationen zum Bereitstellen einer Office-Projektmappe durch Erstellung einer Windows Installer-Datei finden Sie unter [Bereitstellen einer Office-Projektmappe mit Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -345,7 +345,6 @@ ms.locfileid: "59504431"
  Wenn Sie nicht das Tool an diesem Speicherort ist, können Sie die **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** oder **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** Registrierungsschlüssel, den Pfad zu diesem Tool finden.
 
  Sie können die folgenden Parameter in *VSTOinstaller.exe*.
-
 
 | Parameter | Definition |
 |------------------| - |

@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778302"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665701"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ für plattformübergreifende Mobile-Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Mithilfe von Visual C++ für plattformübergreifende Mobile-Entwicklung können Sie native C++-Apps für iOS-, Android- und Windows-Geräte erstellen sowie für iOS, Android und Windows erstellten allgemeinen Code in Bibliotheken freigeben. Mit dieser in Visual Studio 2015 optional verfügbaren Komponente werden die SDKs und Tools installiert, die Sie für die plattformübergreifende Entwicklung von freigegebenen Bibliotheken und systemeigenen Apps benötigen. Bei Installation können Sie mithilfe von Visual C++ Code erstellen, der außer auf Windows-, Windows Phone- und Xbox- auch auf iOS- und Android-Geräten und -Plattformen ausgeführt werden kann.  
   
  Das Schreiben von Code für mehrere Plattformen kann recht mühsam sein. Die primären Entwicklungssprachen und Tools für iOS, Android und Windows sind auf jeder Plattform unterschiedlich. Alle Plattformen unterstützen jedoch das Schreiben von Code in C++. Dies ist der gemeinsame Nenner, der es Ihnen ermöglicht, Kerncode plattformübergreifend zu wiederzuverwenden. In C++ geschriebener systemeigener Code kann sowohl leistungsfähiger als auch beständiger gegen Reverse Engineering sein. Die Wiederverwendung von Code spart Zeit und Mühe beim Erstellen von Apps für mehrere Plattformen.  

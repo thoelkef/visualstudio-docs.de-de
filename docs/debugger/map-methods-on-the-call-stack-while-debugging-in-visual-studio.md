@@ -29,23 +29,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526089"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665674"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen (C#, Visual Basic, C++, JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen (C#, Visual Basic C++, JavaScript)
 
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Code Map vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
 
-Eine exemplarische Vorgehensweise die diesem Video aus: [Video. Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Eine exemplarische Vorgehensweise die diesem Video aus: [Video: Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Details zu Befehlen und Aktionen, die Sie mit Code Maps verwenden können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Sie können Erstellen von Code maps nur in [Visual Studio Enterprise-Edition](https://visualstudio.microsoft.com/downloads/).
+>Sie können Erstellen von Code maps nur in [Visual Studio Enterprise-Edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 So sieht ein kurzen Blick auf eine Code Map aus:
 
@@ -53,7 +53,7 @@ So sieht ein kurzen Blick auf eine Code Map aus:
 
 ##  <a name="MapStack"></a> Abbilden der Aufrufliste
 
-1. In einem Visual Studio Enterprise C#, Visual Basic, C++ oder JavaScript-Projekt, das Debuggen starten, indem Sie die Auswahl **Debuggen** > **Debuggen starten** oder durch Drücken **F5**.
+1. In einem Visual Studio Enterprise C#, Visual Basic C++, oder JavaScript-Projekt, das Debuggen starten, indem Sie die Auswahl **Debuggen** > **Debuggen starten** oder durch Drücken **F5** .
 
 1. Wählen Sie nach Ihrer app in den Unterbrechungsmodus wechselt oder Sie eine Funktion schrittweise, **Debuggen** > **Code Map**, oder drücken Sie **STRG**+**UMSCHALT** +**`**.
 

@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956552"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670094"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58956552"
 |Sie haben eine einzelne Funktion oder eine Gruppe von Funktionen und keine gemeinsam genutzten Farben für ähnliche Elemente vorhanden sind.|**Benutzerdefinierte Farben**|Token-Namen von Farben, die spezifisch für einen Bereich und nicht für andere Benutzeroberfläche freigegeben werden sollen|
 |Möchten Sie dem Endbenutzer zum Anpassen der Benutzeroberfläche oder Inhalt (z. B. für Text-Editoren oder spezielle Designerfenstern) ermöglichen.|**Durch den Endbenutzer-Anpassung**<br /><br /> **(Tools > Dialogfeld "Optionen")**|Einstellungen, die auf der Seite "Schriftarten und Farben" definiert die **Tools > Optionen** Dialogs oder einer speziellen Seite für eine UI-Funktion.|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio-Designs
  Visual Studio verfügt über drei verschiedene Farbschemas: hell, dunkel und Blau. Außerdem wird erkannt, Modus für hohe Kontraste, eine systemweite Farbschema für Eingabehilfen entworfen wird.
 
@@ -79,7 +78,6 @@ ms.locfileid: "58956552"
  ![Tools &#62; Dialogfeld "Optionen" in Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301-A_ToolsOptionsDialog")
 
  **Tools > Dialogfeld "Optionen"**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> Die VSColor Service
  Visual Studio bietet einen Umgebung Farbe Dienst auch die VSColor Service oder der Color-Shell-Dienst genannt. Dieser Dienst ermöglicht Ihnen, binden die Farbwerte, die Elemente der Benutzeroberfläche in eine Name / Wert-Farbe, die Farben für jedes Design enthält. Die VSColor Service muss für alle Elemente der Benutzeroberfläche verwendet werden, damit Farben automatisch entsprechend der aktuellen vom Benutzer ausgewählten Thema zu ändern und so, dass die Umgebung-Farben-Benutzeroberfläche gebunden mit neuen Designs in zukünftigen Versionen von Visual Studio integriert werden.

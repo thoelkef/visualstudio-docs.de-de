@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960002"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665583"
 ---
 # <a name="xml-editor"></a>XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-Visual Studio-Texteditor und bietet weitere Unterstützung für die XML-Sprachen. Der XML-Editor verfügt über folgende Features:  
   
 - Syntaxüberprüfung für XML 1.0  

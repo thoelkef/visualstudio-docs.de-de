@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723499"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667454"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 ## <a name="best-practices"></a>Bewährte Methoden
@@ -102,7 +102,6 @@ ms.locfileid: "56723499"
 
 #### <a name="example-video-links-in-team-explorer"></a>Beispiel: Videolinks in Team Explorer
 Das Erzwingen eines erklärenden Text zu lesen, vor dem Schließen der Benutzeroberfläche des Benutzers ist ein Anti-Muster in Visual Studio. Richtig entworfene und Videofunktionen Links sollte eine QuickInfo mit weiteren Informationen angezeigt, wenn darauf gezeigt wird, und klicken auf die "&times;" sollte die Meldung ohne weitere Interaktion zu schließen.
-
 
  ![Erklärender Text anti-&#45;Muster &#45; falsche](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Falsche Videolink-Muster
 

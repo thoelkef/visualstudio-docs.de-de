@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602207"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665993"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren einer benutzerdefinierten SharePoint-Gestaltungsvorlage und einer Websiteseite mit Bild in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
@@ -150,13 +150,11 @@ ms.locfileid: "56602207"
 
 2. Auf der **zu importierende Elemente auswählen** Seite **Modul** in die **Typ** Spalte, die Kontrollkästchen für die nur die Dateien in der folgenden Tabelle für den Import.
 
-
    | Dateiname | Beschreibung |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | Die benutzerdefinierte Masterseite. |
    | images_ | Die Bilddatei im SharePoint-Dateisystem. |
    | SitePages_ | Die Websiteseite. |
-
 
 3. Wählen Sie die **Fertig stellen** Schaltfläche, um die ausgewählten Elemente zu importieren.
 

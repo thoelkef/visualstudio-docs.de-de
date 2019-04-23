@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001353"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669704"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Hinweis:** Der Visual Studio Gallery wird von Visual Studio Marketplace ersetzt. Die neueste Version dieses Themas Weitere Informationen anzeigen.
-
 
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie Visual Studio-Erweiterung in der Visual Studio Gallery veröffentlichen. Wenn Sie die Erweiterung im Katalog hinzufügen, können Entwickler **Erweiterungen und Updates** dort nach neuen und aktualisierten Erweiterungen suchen.
 
@@ -32,7 +31,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie Visual Stu
 ## <a name="create-a-visual-studio-extension"></a>Erstellen Sie eine Visual Studio-Erweiterung
  In diesem Fall verwenden wir eine Standard-VSPackage-Erweiterung, aber die gleichen Schritte gelten für jede Art von Erweiterung.
 
-1.  Erstellen Sie ein VSPackage in C# mit dem Namen `TestPublishing` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Erstellen Sie ein VSPackage in c# mit dem Namen `TestPublishing` , das einen Menübefehl hat. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Testen Sie die Erweiterung
  Bevor Sie die Erweiterung verteilen, erstellen Sie und Testen Sie, um sicherzustellen, dass es in der experimentellen Instanz von Visual Studio ordnungsgemäß installiert ist.
