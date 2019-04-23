@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27850b7531af4d0883f2cbf250987562a56b8f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048268"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Formularbereichen in Outlook-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden
   Wenn das Zielframework eines Outlook VSTO-Add-In-Projekts mit einem Formularbereich in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird, müssen Sie einige Änderungen am generierten Formularbereichscode und an Code vornehmen, durch den bestimmte Formularbereichsklassen zur Laufzeit instanziiert werden.
@@ -27,11 +27,11 @@ ms.locfileid: "56597646"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>So aktualisieren Sie den generierten Code für einen in Visual Studio entworfenen Formularbereich
 
-1.  Öffnen Sie die CodeBehind-Datei des Formularbereichs im Code-Editor. Diese Datei hat den Namen " *IhrFormularbereich*.Designer.cs" oder " *IhrFormularbereich*.Designer.vb". Klicken Sie im **Projektmappen-Explorer** auf die Schaltfläche **Alle Dateien anzeigen**, um diese Datei in Visual Basic-Projekten anzuzeigen.
+1. Öffnen Sie die CodeBehind-Datei des Formularbereichs im Code-Editor. Diese Datei hat den Namen " *IhrFormularbereich*.Designer.cs" oder " *IhrFormularbereich*.Designer.vb". Klicken Sie im **Projektmappen-Explorer** auf die Schaltfläche **Alle Dateien anzeigen**, um diese Datei in Visual Basic-Projekten anzuzeigen.
 
-2.  Ändern Sie die Deklaration der Formularbereichsklasse so, dass sie von <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> statt von `Microsoft.Office.Tools.Outlook.FormRegionControl` abgeleitet wird.
+2. Ändern Sie die Deklaration der Formularbereichsklasse so, dass sie von <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> statt von `Microsoft.Office.Tools.Outlook.FormRegionControl` abgeleitet wird.
 
-3.  Ändern Sie den Konstruktor der Formularbereichklasse, wie in den folgenden Codebeispielen dargestellt.
+3. Ändern Sie den Konstruktor der Formularbereichklasse, wie in den folgenden Codebeispielen dargestellt.
 
      Im folgenden Codebeispiel wird der Konstruktor einer Formularbereichsklasse in einem Projekt dargestellt, das auf .NET Framework 3.5 ausgerichtet ist.
 
@@ -67,7 +67,7 @@ ms.locfileid: "56597646"
     }
     ```
 
-4.  Ändern Sie die Signatur der `InitializeManifest` -Methode, wie unten dargestellt. Stellen Sie sicher, dass Sie den Code in der Methode nicht ändern. Dieser Code stellt Formularbereichseinstellungen dar, die Sie im Designer angewendet haben. In Visual C#-Projekten müssen Sie den Bereich mit der Bezeichnung `Form Region Designer generated code` erweitern, um diese Methode anzuzeigen.
+4. Ändern Sie die Signatur der `InitializeManifest` -Methode, wie unten dargestellt. Stellen Sie sicher, dass Sie den Code in der Methode nicht ändern. Dieser Code stellt Formularbereichseinstellungen dar, die Sie im Designer angewendet haben. In Visual C#-Projekten müssen Sie den Bereich mit der Bezeichnung `Form Region Designer generated code` erweitern, um diese Methode anzuzeigen.
 
      Im folgenden Codebeispiel wird die Signatur der `InitializeManifest` -Methode in einem Projekt dargestellt, das auf .NET Framework 3.5 ausgerichtet ist.
 
@@ -103,21 +103,21 @@ ms.locfileid: "56597646"
     }
     ```
 
-5.  Fügen Sie Ihrem Projekt ein neues Outlook-Formularbereichselement hinzu. Öffnen Sie die CodeBehind-Datei für den neuen Formularbereich, suchen Sie die *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen in der Datei, und kopieren Sie diese Klassen in die Zwischenablage.
+5. Fügen Sie Ihrem Projekt ein neues Outlook-Formularbereichselement hinzu. Öffnen Sie die CodeBehind-Datei für den neuen Formularbereich, suchen Sie die *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen in der Datei, und kopieren Sie diese Klassen in die Zwischenablage.
 
-6.  Löschen Sie den neuen Formularbereich, den Sie dem Projekt hinzugefügt haben.
+6. Löschen Sie den neuen Formularbereich, den Sie dem Projekt hinzugefügt haben.
 
-7.  Suchen Sie in der CodeBehind-Datei des Formularbereichs, den Sie aktualisieren, damit er im neu ausgerichteten Projekt funktioniert, die *YourOriginalFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen, und ersetzen Sie sie durch den Code, den Sie aus dem neuen Formularbereich kopiert haben.
+7. Suchen Sie in der CodeBehind-Datei des Formularbereichs, den Sie aktualisieren, damit er im neu ausgerichteten Projekt funktioniert, die *YourOriginalFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen, und ersetzen Sie sie durch den Code, den Sie aus dem neuen Formularbereich kopiert haben.
 
-8.  Suchen Sie in den *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen alle Verweise auf die *YourNewFormRegion* -Klasse, und ändern Sie jeden Verweis stattdessen in die *YourOriginalFormRegion* -Kasse. Wenn der aktualisierte Formularbereich z. B. `SalesDataFormRegion` und der neue in Schritt 5 erstellte Formularbereich `FormRegion1`heißt, ändern Sie alle Verweise von `FormRegion1` in `SalesDataFormRegion`.
+8. Suchen Sie in den *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen alle Verweise auf die *YourNewFormRegion* -Klasse, und ändern Sie jeden Verweis stattdessen in die *YourOriginalFormRegion* -Kasse. Wenn der aktualisierte Formularbereich z. B. `SalesDataFormRegion` und der neue in Schritt 5 erstellte Formularbereich `FormRegion1`heißt, ändern Sie alle Verweise von `FormRegion1` in `SalesDataFormRegion`.
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>So aktualisieren Sie den generierten Code für einen aus Outlook importierten Formularbereich
 
-1.  Öffnen Sie die CodeBehind-Datei des Formularbereichs im Code-Editor. Diese Datei hat den Namen " *IhrFormularbereich*.Designer.cs" oder " *IhrFormularbereich*.Designer.vb". Klicken Sie im **Projektmappen-Explorer** auf die Schaltfläche **Alle Dateien anzeigen**, um diese Datei in Visual Basic-Projekten anzuzeigen.
+1. Öffnen Sie die CodeBehind-Datei des Formularbereichs im Code-Editor. Diese Datei hat den Namen " *IhrFormularbereich*.Designer.cs" oder " *IhrFormularbereich*.Designer.vb". Klicken Sie im **Projektmappen-Explorer** auf die Schaltfläche **Alle Dateien anzeigen**, um diese Datei in Visual Basic-Projekten anzuzeigen.
 
-2.  Ändern Sie die Deklaration der Formularbereichsklasse so, dass sie von <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> statt von `Microsoft.Office.Tools.Outlook.ImportedFormRegion` abgeleitet wird.
+2. Ändern Sie die Deklaration der Formularbereichsklasse so, dass sie von <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> statt von `Microsoft.Office.Tools.Outlook.ImportedFormRegion` abgeleitet wird.
 
-3.  Ändern Sie den Konstruktor der Formularbereichklasse, wie in den folgenden Codebeispielen dargestellt.
+3. Ändern Sie den Konstruktor der Formularbereichklasse, wie in den folgenden Codebeispielen dargestellt.
 
      Im folgenden Codebeispiel wird der Konstruktor einer Formularbereichsklasse in einem Projekt dargestellt, das auf .NET Framework 3.5 ausgerichtet ist.
 
@@ -153,7 +153,7 @@ ms.locfileid: "56597646"
     }
     ```
 
-4.  Ändern Sie für jede Codezeile in der `InitializeControls` -Methode, die ein Steuerelement in der Formularbereichsklasse initialisiert, den Code wie unten dargestellt.
+4. Ändern Sie für jede Codezeile in der `InitializeControls` -Methode, die ein Steuerelement in der Formularbereichsklasse initialisiert, den Code wie unten dargestellt.
 
      Im folgenden Codebeispiel wird veranschaulicht, wie ein Steuerelement in einem Projekt initialisiert wird, das auf .NET Framework 3.5 ausgerichtet ist. In diesem Code verfügt die `GetFormRegionControl`-Methode über einen Typparameter, der den Typ des Steuerelements angibt, das zurückgegeben wird.
 
@@ -175,13 +175,13 @@ ms.locfileid: "56597646"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5.  Fügen Sie Ihrem Projekt ein neues Outlook-Formularbereichselement hinzu. Öffnen Sie die CodeBehind-Datei für den neuen Formularbereich, suchen Sie die *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen in der Datei, und kopieren Sie diese Klassen in die Zwischenablage.
+5. Fügen Sie Ihrem Projekt ein neues Outlook-Formularbereichselement hinzu. Öffnen Sie die CodeBehind-Datei für den neuen Formularbereich, suchen Sie die *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen in der Datei, und kopieren Sie diese Klassen in die Zwischenablage.
 
-6.  Löschen Sie den neuen Formularbereich, den Sie dem Projekt hinzugefügt haben.
+6. Löschen Sie den neuen Formularbereich, den Sie dem Projekt hinzugefügt haben.
 
-7.  Suchen Sie in der CodeBehind-Datei des Formularbereichs, den Sie aktualisieren, damit er im neu ausgerichteten Projekt funktioniert, die *YourOriginalFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen, und ersetzen Sie sie durch den Code, den Sie aus dem neuen Formularbereich kopiert haben.
+7. Suchen Sie in der CodeBehind-Datei des Formularbereichs, den Sie aktualisieren, damit er im neu ausgerichteten Projekt funktioniert, die *YourOriginalFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen, und ersetzen Sie sie durch den Code, den Sie aus dem neuen Formularbereich kopiert haben.
 
-8.  Suchen Sie in den *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen alle Verweise auf die *YourNewFormRegion* -Klasse, und ändern Sie jeden Verweis stattdessen in die *YourOriginalFormRegion* -Kasse. Wenn der aktualisierte Formularbereich z. B. `SalesDataFormRegion` und der neue in Schritt 5 erstellte Formularbereich `FormRegion1`heißt, ändern Sie alle Verweise von `FormRegion1` in `SalesDataFormRegion`.
+8. Suchen Sie in den *YourNewFormRegion*`Factory` - und `WindowFormRegionCollection` -Klassen alle Verweise auf die *YourNewFormRegion* -Klasse, und ändern Sie jeden Verweis stattdessen in die *YourOriginalFormRegion* -Kasse. Wenn der aktualisierte Formularbereich z. B. `SalesDataFormRegion` und der neue in Schritt 5 erstellte Formularbereich `FormRegion1`heißt, ändern Sie alle Verweise von `FormRegion1` in `SalesDataFormRegion`.
 
 ## <a name="instantiate-form-region-classes"></a>Instanziieren von Formularbereichklassen
  Sie müssen jeden Code ändern, durch den bestimmte Formularbereichsklassen dynamisch instanziiert werden. In Projekten, die auf .NET Framework 3.5 ausgerichtet sind, können Sie Formularbereichklassen wie `Microsoft.Office.Tools.Outlook.FormRegionManifest` direkt instanziieren. In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind, sind diese Klassen Schnittstellen, die Sie nicht direkt instanziieren können.

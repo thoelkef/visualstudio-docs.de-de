@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061098"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Vorgehensweise: Aktivieren von AutoStart für Installationen von CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Bei der Bereitstellung ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
   
 ### <a name="to-enable-autostart"></a>Aktivieren von AutoStart  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die Schaltfläche **Optionen**.  
+3. Klicken Sie auf die Schaltfläche **Optionen**.  
   
      Die **Veröffentlichungsoptionen** Dialogfeld wird angezeigt.  
   
-4.  Klicken Sie auf **Bereitstellung**.  
+4. Klicken Sie auf **Bereitstellung**.  
   
-5.  Wählen Sie die **für CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** Kontrollkästchen.  
+5. Wählen Sie die **für CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** Kontrollkästchen.  
   
      Eine Autorun.inf-Datei wird an den Veröffentlichungsort kopiert werden, wenn die Anwendung veröffentlicht wird.  
   

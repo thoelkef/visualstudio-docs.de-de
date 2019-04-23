@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064192"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 
@@ -20,15 +20,15 @@ DSL-Definition-Erweiterung können Sie ein Paket von Erweiterungen für eine dom
 
 DSL-Erweiterungen können die folgenden Features umfassen:
 
--   Eigenschaften für das Modell und die Darstellung von Elementen
+- Eigenschaften für das Modell und die Darstellung von Elementen
 
--   Decorators für Formen und Konnektoren
+- Decorators für Formen und Konnektoren
 
--   Klassen, Beziehungen, Formen und Konnektoren
+- Klassen, Beziehungen, Formen und Konnektoren
 
--   Validierungseinschränkungen
+- Validierungseinschränkungen
 
--   Registerkarten und Toolboxelemente
+- Registerkarten und Toolboxelemente
 
 Ein Benutzer eine DSL mit der erweiterten kann erstellt, und Speichern eines Modells, das Instanzen der zusätzlichen Funktionen enthält. Das Modell kann von anderen Benutzern gelesen werden, die die geeignete Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden können, aber zu aktualisieren und Speichern eines Modells, ohne dass Sie die zusätzlichen Funktionen verloren gehen.
 

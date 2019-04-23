@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060630"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Vorgehensweise: Programmgesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:
 
--   Fügen Sie Text in einen Bereich ein.
+- Fügen Sie Text in einen Bereich ein.
 
--   Ersetzen Sie Text in einem Bereich durch neuen Text.
+- Ersetzen Sie Text in einem Bereich durch neuen Text.
 
--   Verwenden Sie die <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> -Methode eines <xref:Microsoft.Office.Interop.Word.Selection> -Objekts, um Text an der Cursor- oder Auswahlposition einzufügen.
+- Verwenden Sie die <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> -Methode eines <xref:Microsoft.Office.Interop.Word.Selection> -Objekts, um Text an der Cursor- oder Auswahlposition einzufügen.
 
 > [!NOTE]
 >  Sie können auch Text in Inhaltssteuerelemente und Lesezeichen einfügen. Weitere Informationen finden Sie unter [Inhaltssteuerelemente](../vsto/content-controls.md) und [Bookmark-Steuerelement](../vsto/bookmark-control.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56654021"
 
 ### <a name="to-insert-text-in-a-range"></a>So fügen Sie Text in einen Bereich ein
 
-1.  Geben Sie einen Bereich am Anfang eines Dokuments an, und fügen Sie den Text **New Text**ein.
+1. Geben Sie einen Bereich am Anfang eines Dokuments an, und fügen Sie den Text **New Text**ein.
 
      Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654021"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Wählen Sie das <xref:Microsoft.Office.Interop.Word.Range> -Objekt aus, das von einem Zeichen auf die Länge des eingefügten Texts erweitert wurde.
+2. Wählen Sie das <xref:Microsoft.Office.Interop.Word.Range> -Objekt aus, das von einem Zeichen auf die Länge des eingefügten Texts erweitert wurde.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654021"
 
 ### <a name="to-replace-text-in-a-range"></a>So ersetzen Sie Text in einem Bereich
 
-1.  Erstellen Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt, das aus den ersten 12 Zeichen des Dokuments besteht.
+1. Erstellen Sie ein <xref:Microsoft.Office.Interop.Word.Range> -Objekt, das aus den ersten 12 Zeichen des Dokuments besteht.
 
      Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654021"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Ersetzen Sie diese Zeichen durch die Zeichenfolge **New Text**.
+2. Ersetzen Sie diese Zeichen durch die Zeichenfolge **New Text**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Wählen Sie den Bereich aus.
+3. Wählen Sie den Bereich aus.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

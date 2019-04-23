@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060864"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ Gespeicherte Prozeduren können dem O/R-Designer hinzugefügt und als typische <
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>So weisen Sie gespeicherte Prozeduren zu, um das Standardverhalten einer Entitätsklasse zu überschreiben  
   
-1.  Öffnen Sie die **LINQ to SQL**-Datei im Designer. (Doppelklicken Sie auf die DBML-Datei in **Projektmappen-Explorer**.)  
+1. Öffnen Sie die **LINQ to SQL**-Datei im Designer. (Doppelklicken Sie auf die DBML-Datei in **Projektmappen-Explorer**.)  
   
-2.  In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie **gespeicherte Prozeduren** und suchen Sie die gespeicherten Prozeduren, die für die INSERT-, Update-, verwendet werden sollen. und/oder Löschbefehle der Entitätsklasse.  
+2. In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie **gespeicherte Prozeduren** und suchen Sie die gespeicherten Prozeduren, die für die INSERT-, Update-, verwendet werden sollen. und/oder Löschbefehle der Entitätsklasse.  
   
-3.  Ziehen Sie die gespeicherte Prozedur in den O/R-Designer.  
+3. Ziehen Sie die gespeicherte Prozedur in den O/R-Designer.  
   
      Die gespeicherte Prozedur wird dem Methodenbereich als <xref:System.Data.Linq.DataContext>-Methode hinzugefügt. Weitere Informationen finden Sie unter [DataContext-Methoden (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-4.  Wählen Sie die Entitätsklasse aus, für die die gespeicherte Prozedur zur Durchführung von Updates verwendet werden soll.  
+4. Wählen Sie die Entitätsklasse aus, für die die gespeicherte Prozedur zur Durchführung von Updates verwendet werden soll.  
   
-5.  Wählen Sie im Fenster **Eigenschaften** den Befehl aus, der überschrieben werden soll (**Einfügen**, **Aktualisieren** oder **Löschen**).  
+5. Wählen Sie im Fenster **Eigenschaften** den Befehl aus, der überschrieben werden soll (**Einfügen**, **Aktualisieren** oder **Löschen**).  
   
-6.  Klicken Sie auf die Auslassungszeichen (...) neben den Wörtern **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.  
+6. Klicken Sie auf die Auslassungszeichen (...) neben den Wörtern **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.  
   
-7.  Wählen Sie **Anpassen** aus.  
+7. Wählen Sie **Anpassen** aus.  
   
-8.  Wählen Sie die gewünschte gespeicherte Prozedur in der Liste **Anpassen** aus.  
+8. Wählen Sie die gewünschte gespeicherte Prozedur in der Liste **Anpassen** aus.  
   
 9. Untersuchen Sie die Listen **Methodenargumente** und **Klasseneigenschaften**, um zu überprüfen, ob die **Methodenargumente** den entsprechenden **Klasseneigenschaften** zugeordnet sind. Ordnen Sie die ursprünglichen Methodenargumente (Original_*ArgumentName*) den ursprünglichen Eigenschaften (*PropertyName* (Original)) für Update- und Delete-Befehle.  
   

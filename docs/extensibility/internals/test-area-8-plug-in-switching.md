@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047879"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testbereich 8: Plug-In-Wechsel
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) verfügt über die Benutzeroberfläche (UI) so ändern Sie das aktuelle Quellcodeverwaltungs-Plug-in. Dieser Testbereich bietet Testfälle für den Prozess auswählen, die für die Verwendung für die quellcodeverwaltung des Projektmappen-Plug-in.
@@ -24,9 +24,9 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Ent
 ## <a name="command-menu-access"></a>Menüzugriff Befehl
  Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen.
 
--   Quellcodeverwaltungs-Plug-in: **Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **Plug-in-Auswahl**.
+- Quellcodeverwaltungs-Plug-in: **Tools** -> **Optionen** -> **Quellcodeverwaltung** -> **Plug-in-Auswahl**.
 
--   Quelle ändern Bindung steuern: **Datei** -> **Quellcodeverwaltung** -> **ändern, Datenquellen-Steuerelement**...
+- Quelle ändern Bindung steuern: **Datei** -> **Quellcodeverwaltung** -> **ändern, Datenquellen-Steuerelement**...
 
 ## <a name="common-expected-behavior"></a>Allgemeine erwartet
  Ändern das Quellcodeverwaltungs-Plug-In für eine Lösung ist möglich, ohne Visual Studio beenden oder das erneute Laden der Projektmappe. Darüber hinaus wird das aktuelle Quellcodeverwaltungs-Plug-in automatisch von einer Lösung verwendet werden, wenn diese Projektmappe geladen ist.

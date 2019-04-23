@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7cbe3b0593b3a71c65667e78d7b0284cacc4538
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f48a30e11e28daef2d1803646d2b495bcb718b84
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046188"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
@@ -24,11 +24,11 @@ In der **Eigenschaften** Fenster, Dialogfelder und Designern, z. B. den Variable
 
 Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem eingesetzt:
 
--   Beim Festlegen des Typs einer Variable oder eines Arguments.
+- Beim Festlegen des Typs einer Variable oder eines Arguments.
 
--   Beim Auswählen eines Typs für eine generische Aktivität.
+- Beim Auswählen eines Typs für eine generische Aktivität.
 
--   Beim Hinzufügen einer catch-Anweisung für die <xref:System.Activities.Statements.TryCatch>-Aktivität.
+- Beim Hinzufügen einer catch-Anweisung für die <xref:System.Activities.Statements.TryCatch>-Aktivität.
 
 > [!NOTE]
 > Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Finden Sie unter [verzweigte Arrays](http://go.microsoft.com/fwlink/?LinkId=195226) und [mehrdimensionale Arrays](http://go.microsoft.com/fwlink/?LinkId=195227) Details.
@@ -37,19 +37,19 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>So wählen Sie einen Wert- oder Verweistyp im Typbrowser aus
 
-1.  In der **Typnamen** Geben Sie den Namen des Typs, die Sie verwenden möchten.
+1. In der **Typnamen** Geben Sie den Namen des Typs, die Sie verwenden möchten.
 
-2.  Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie einen der folgenden Schritte aus:
 
-    -   Sobald der Name des Typs, die Sie verwenden möchten, die in der Struktur im angezeigt wird der **Typnamen** Feld, doppelklicken Sie auf den Typ, um es auszuwählen.
+    - Sobald der Name des Typs, die Sie verwenden möchten, die in der Struktur im angezeigt wird der **Typnamen** Feld, doppelklicken Sie auf den Typ, um es auszuwählen.
 
-    -   Geben Sie genug Zeichen in der **Typnamen** Feld zur eindeutigen Identifizierung den Typ, die Sie verwenden möchten, und drücken Sie die EINGABETASTE, um den Typ auszuwählen
+    - Geben Sie genug Zeichen in der **Typnamen** Feld zur eindeutigen Identifizierung den Typ, die Sie verwenden möchten, und drücken Sie die EINGABETASTE, um den Typ auszuwählen
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>So wählen Sie einen generischen Typ im Typbrowser aus
 
-1.  In der **Typnamen** Feld den Namen des Typs, die Sie verwenden möchten.
+1. In der **Typnamen** Feld den Namen des Typs, die Sie verwenden möchten.
 
-2.  Sobald der Name des Typs, die Sie verwenden möchten, die in der Struktur im angezeigt wird der **Typnamen** Box, klicken Sie auf der Typ auswählen, die dazu führen, dass der Dropdown-Felder angezeigt werden.
+2. Sobald der Name des Typs, die Sie verwenden möchten, die in der Struktur im angezeigt wird der **Typnamen** Box, klicken Sie auf der Typ auswählen, die dazu führen, dass der Dropdown-Felder angezeigt werden.
 
      Wählen Sie den Typ, den Sie verwenden, um die generische über die Dropdownfelder zu schließen, und klicken Sie dann auf möchten **OK**.
 
@@ -65,9 +65,9 @@ Die Liste der Typen in der **Typnamen** Feld wird kürzer, während der Eingabe 
 
 Zum Beispiel:
 
-1.  Eingabe **Vorgang** entspricht <xref:System.OperationCanceledException> , nicht jedoch <xref:System.InvalidOperationException>. Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
+1. Eingabe **Vorgang** entspricht <xref:System.OperationCanceledException> , nicht jedoch <xref:System.InvalidOperationException>. Um <xref:System.InvalidOperationException> zu finden, geben Sie System.I oder Invalid ein.
 
-2.  Eingabe **generische** entspricht <xref:System.GenericUriParser> aber nicht Typen die <xref:System.Collections.Generic> Namespace. Zum Suchen nach Typen in der <xref:System.Collections.Generic> -Namespace, geben Sie den vollqualifizierten Namen des Namespaces.
+2. Eingabe **generische** entspricht <xref:System.GenericUriParser> aber nicht Typen die <xref:System.Collections.Generic> Namespace. Zum Suchen nach Typen in der <xref:System.Collections.Generic> -Namespace, geben Sie den vollqualifizierten Namen des Namespaces.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Auswählen eines Dienstvertrags mithilfe des Typbrowserdialogfelds
 

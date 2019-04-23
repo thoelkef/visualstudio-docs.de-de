@@ -10,12 +10,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b14b59465b94ddd0a09748f0e309166bf3d4114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065817"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt über eine Editor-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ In VSPackages, erhalten Sie das DTE-Objekt durch Aufrufen der <xref:Microsoft.Vi
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>Um das DTE-Objekt über den ServiceProvider zu erhalten.  
   
-1.  Erstellen Sie ein C#-VSIX-Projekt mit dem Namen `DTETest`. Hinzufügen einer Elementvorlage-Editor-Klassifizierung aus, und nennen Sie sie `DTETest`. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+1. Erstellen Sie ein C#-VSIX-Projekt mit dem Namen `DTETest`. Hinzufügen einer Elementvorlage-Editor-Klassifizierung aus, und nennen Sie sie `DTETest`. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-2.  Fügen Sie dem Projekt die folgenden Assemblyverweise hinzu:  
+2. Fügen Sie dem Projekt die folgenden Assemblyverweise hinzu:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.Shell.Immutable.10.0  
+    - Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  Wechseln Sie zur DTETest.cs, und fügen Sie die folgenden `using` Anweisungen:  
+3. Wechseln Sie zur DTETest.cs, und fügen Sie die folgenden `using` Anweisungen:  
   
     ```csharp  
     using EnvDTE;  
@@ -48,7 +48,7 @@ In VSPackages, erhalten Sie das DTE-Objekt durch Aufrufen der <xref:Microsoft.Vi
   
     ```  
   
-4.  In der `GetDTEProvider` Klasse, importieren Sie eine <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
+4. In der `GetDTEProvider` Klasse, importieren Sie eine <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
   
     ```csharp  
     [Import]  
@@ -56,14 +56,14 @@ In VSPackages, erhalten Sie das DTE-Objekt durch Aufrufen der <xref:Microsoft.Vi
   
     ```  
   
-5.  Fügen Sie folgenden Code in die `GetClassifier()`-Methode ein.  
+5. Fügen Sie folgenden Code in die `GetClassifier()`-Methode ein.  
   
     ```csharp  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  
   
-6.  Wenn Sie verwenden die <xref:EnvDTE80.DTE2> -Schnittstelle können Sie das DTE-Objekt, umgewandelt.  
+6. Wenn Sie verwenden die <xref:EnvDTE80.DTE2> -Schnittstelle können Sie das DTE-Objekt, umgewandelt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweiterungspunkte für den Sprachdienst und den Editor](../extensibility/language-service-and-editor-extension-points.md)

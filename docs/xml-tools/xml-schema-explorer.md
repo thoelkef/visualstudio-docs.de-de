@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 07c5ba8d28a053b83481cf24e3bc1e450c28844e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050061"
 ---
 # <a name="xml-schema-explorer"></a>XML-Schema-Explorer
 
@@ -21,40 +21,40 @@ Die **XML-Schema-Explorer** ist in Microsoft Visual Studio und dem XML-Editor, u
 
  Die **XML-Schema-Explorer** können Sie die folgenden Schritte ausführen:
 
--   Abrufen einer kurzen Übersicht über das Schemaset.
+- Abrufen einer kurzen Übersicht über das Schemaset.
 
--   Durchsuchen und Navigieren in der Struktur.
+- Durchsuchen und Navigieren in der Struktur.
 
--   Durchführen von schlüsselwort- und schemaspezifischen Suchvorgängen. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).
+- Durchführen von schlüsselwort- und schemaspezifischen Suchvorgängen. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).
 
--   Hinzufügen der Suchergebnisse auf Diagramm- oder Inhaltsmodellansicht anzeigen
+- Hinzufügen der Suchergebnisse auf Diagramm- oder Inhaltsmodellansicht anzeigen
 
--   Sortieren der Struktur nach Dokumentreihenfolge, Typ oder Namen. Weitere Informationen finden Sie unter [sortieren, Filtern und Gruppieren von](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+- Sortieren der Struktur nach Dokumentreihenfolge, Typ oder Namen. Weitere Informationen finden Sie unter [sortieren, Filtern und Gruppieren von](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   Öffnen Sie den XML-Editor, und springen zu Codepositionen in der XSD-Datei. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
+- Öffnen Sie den XML-Editor, und springen zu Codepositionen in der XSD-Datei. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
 
--   Generieren von Beispiel-XML für globale Elemente.
+- Generieren von Beispiel-XML für globale Elemente.
 
 Die **XML-Schema-Explorer** stellt eine hierarchische Ansicht des Schemasets einer Strukturansicht an. Die **XML-Schema-Explorer** bietet auch die Suche, Filterung, Navigation und Sortierung. Für den Zugriff auf die **XML-Schema-Explorer**, führen Sie einen der folgenden:
 
--   Bei der [Ausgangsansicht](../xml-tools/start-view.md), klicken Sie auf die **XML-Schema-Explorer** Link.
+- Bei der [Ausgangsansicht](../xml-tools/start-view.md), klicken Sie auf die **XML-Schema-Explorer** Link.
 
--   Bei der [Diagrammansicht](../xml-tools/graph-view.md) oder [Inhaltsmodellansicht](../xml-tools/content-model-view.md) und Knoten in Ihrem Arbeitsbereich haben, verwenden Sie das Kontextmenü (Rechtsklick) auf die **XML-Schema-Explorer**.
+- Bei der [Diagrammansicht](../xml-tools/graph-view.md) oder [Inhaltsmodellansicht](../xml-tools/content-model-view.md) und Knoten in Ihrem Arbeitsbereich haben, verwenden Sie das Kontextmenü (Rechtsklick) auf die **XML-Schema-Explorer**.
 
--   Sie können auch auswählen, die **XML-Schema-Explorer** aus der **Ansicht** Menü.
+- Sie können auch auswählen, die **XML-Schema-Explorer** aus der **Ansicht** Menü.
 
--   Sie erreichen die **XML-Schema-Explorer** aus eine *vb* -Datei mit Visual Basic-XML-Literal zugeordnete ein *XSD* Datei. Festlegen, um das Schema finden in der **XML-Schema-Explorer**mit der rechten Maustaste auf einen XML-Knoten in einem XML-Literal oder einem XML-Namespaceimport, und wählen Sie die **im Schema-Explorer anzeigen** Befehl. Weitere Informationen finden Sie unter [Integration von XML-Literalen in den XML-Schema-Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Sie erreichen die **XML-Schema-Explorer** aus eine *vb* -Datei mit Visual Basic-XML-Literal zugeordnete ein *XSD* Datei. Festlegen, um das Schema finden in der **XML-Schema-Explorer**mit der rechten Maustaste auf einen XML-Knoten in einem XML-Literal oder einem XML-Namespaceimport, und wählen Sie die **im Schema-Explorer anzeigen** Befehl. Weitere Informationen finden Sie unter [Integration von XML-Literalen in den XML-Schema-Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Strukturansicht
  Die **XML-Schema-Explorer** zeigt vorkompilierte Schemaset Informationen in einer Baumstruktur. Die Struktur ist wie folgt aufgebaut:
 
--   Auf oberster Ebene befindet sich der Schemasetknoten.
+- Auf oberster Ebene befindet sich der Schemasetknoten.
 
--   Die zweite Ebene enthält die Namespaces.
+- Die zweite Ebene enthält die Namespaces.
 
--   Die dritte Ebene enthält die Dateien.
+- Die dritte Ebene enthält die Dateien.
 
--   Die vierte Ebene enthält die globalen Knoten. Dazu können Elemente, Gruppen, komplexe Typen, einfache Typen, Attribute, Attributgruppen und `include`-, `import`- und `redefine`-Anweisungen gehören.
+- Die vierte Ebene enthält die globalen Knoten. Dazu können Elemente, Gruppen, komplexe Typen, einfache Typen, Attribute, Attributgruppen und `include`-, `import`- und `redefine`-Anweisungen gehören.
 
 Im Folgenden Sie ein Beispiel für eine Struktur:
 
@@ -65,11 +65,11 @@ Im Folgenden Sie ein Beispiel für eine Struktur:
 
  Um einen Knoten zu aktivieren, doppelklicken Sie darauf, oder drücken Sie **EINGABETASTE** Wenn der Knoten ausgewählt ist.
 
--   Durch das Aktivieren eines Knotens wird die Datei, in der dieser Knoten definiert ist, geöffnet (wenn sie nicht bereits geöffnet ist), und der Knoten wird in der Datei ausgewählt.
+- Durch das Aktivieren eines Knotens wird die Datei, in der dieser Knoten definiert ist, geöffnet (wenn sie nicht bereits geöffnet ist), und der Knoten wird in der Datei ausgewählt.
 
--   Durch das Aktivieren eines Dateiknotens wird die ausgewählte Datei geöffnet (wenn sie nicht bereits geöffnet ist), und der Knoten `<schema>` wird hervorgehoben.
+- Durch das Aktivieren eines Dateiknotens wird die ausgewählte Datei geöffnet (wenn sie nicht bereits geöffnet ist), und der Knoten `<schema>` wird hervorgehoben.
 
--   Beim Aktivieren eines Schemaset- oder Namespaceknotens geschieht nichts.
+- Beim Aktivieren eines Schemaset- oder Namespaceknotens geschieht nichts.
 
 ## <a name="drag-and-drop-nodes"></a>Drag & drop von Knoten
  Sie können globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop in einer XSD-Designer-Ansicht ablegen. Wenn die aktuelle Ansicht ist die [Ausgangsansicht](../xml-tools/start-view.md), ziehen einen Knoten in der Ansicht wird geöffnet. die [Diagrammansicht](../xml-tools/graph-view.md). Wenn die aktuelle Ansicht ist die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) oder Diagrammansicht die Sicht wird nicht geändert werden, wenn Sie einen Knoten in löschen.

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049060"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Debuggen zur Entwurfszeit in Visual Studio (C#, C++, Visual Basic F#)
 
@@ -33,7 +33,7 @@ So debuggen Sie XAML-Code hinter einer app aus dem XAML-Designer, z. B. Code fü
 
 Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterroutine ausführen, ohne die app ausgeführt wird. Wenn die Funktion oder Unterroutine einen Haltepunkt enthält, wird Visual Studio die Ausführung am Haltepunkt unterbrochen. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Dieses Feature wird *Debuggen zur Entwurfszeit* genannt.
 
-Im folgende Beispiel wird in Visual Basic. Sie können auch die **direkt** Fenster zur Entwurfszeit im C#, F#, und C++-apps.
+Im folgende Beispiel wird in Visual Basic. Sie können auch die **direkt** Fenster zur Entwurfszeit im C#, F#, und C++ apps.
 
 1. Fügen Sie den folgenden Code in eine leere Visual Basic-Konsolen-app ein:
 
@@ -102,6 +102,7 @@ In einigen Szenarien deklarative Datenbindung ist es hilfreich, Debuggen von Cod
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    Wenn die Seite geladen wird, wird der Haltepunkt erreicht.
 
 ## <a name="see-also"></a>Siehe auch

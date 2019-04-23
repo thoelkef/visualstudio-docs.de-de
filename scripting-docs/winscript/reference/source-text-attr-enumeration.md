@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062449"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR-Enumeration
 Beschreiben die Attribute eines einzelnen Zeichens des Quelltexts.  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Hinweise  
  In der Regel die `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, und `IActiveScriptDebug::GetScriptTextAttributes` Methoden geben ein Textattribut pro Zeichen zurück, es sei denn:  
   
--   Das GETATTRTYPE_DEPSCAN-Flag wird festgelegt, in diesem Fall kann die Methode die Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP zurückgeben wird,  
+- Das GETATTRTYPE_DEPSCAN-Flag wird festgelegt, in diesem Fall kann die Methode die Flags SOURCETEXT_ATTR_IDENTIFIER und SOURCETEXT_ATTR_MEMBERLOOKUP zurückgeben wird,  
   
--   Das GETATTRFLAG_THIS-Flag wird festgelegt, in diesem Fall kann die Methode das SOURCETEXT_ATTR_THIS-Flag zurückgeben wird,  
+- Das GETATTRFLAG_THIS-Flag wird festgelegt, in diesem Fall kann die Methode das SOURCETEXT_ATTR_THIS-Flag zurückgeben wird,  
   
--   Das GETATTRFLAG_HUMANTEXT-Flag wird festgelegt, in diesem Fall kann die Methode das SOURCETEXT_ATTR_HUMANTEXT-Flag zurückgeben.  
+- Das GETATTRFLAG_HUMANTEXT-Flag wird festgelegt, in diesem Fall kann die Methode das SOURCETEXT_ATTR_HUMANTEXT-Flag zurückgeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konstanten, Enumerationen und Strukturen für Active Script-Debugger](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057250"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder-Element (Visual Studio-Projektvorlagen)
 Gibt einen Ordner, der dem Projekt hinzugefügt werden.
@@ -62,7 +62,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
 
  Sie können eine der folgenden Methoden verwenden, so organisieren Projektelemente in Ordnern in einer Vorlage:
 
--   Schließen Sie den Ordner, in der Vorlage *ZIP* Datei, und fügen Sie sie dem Projekt in der *VSTEMPLATE* Datei durch Angabe des Pfads zur Datei in die `ProjectItem` Elemente ohne `Folder` Elemente. Dies ist die empfohlene Methode. Zum Beispiel:
+- Schließen Sie den Ordner, in der Vorlage *ZIP* Datei, und fügen Sie sie dem Projekt in der *VSTEMPLATE* Datei durch Angabe des Pfads zur Datei in die `ProjectItem` Elemente ohne `Folder` Elemente. Dies ist die empfohlene Methode. Zum Beispiel:
 
      `...`
 
@@ -72,7 +72,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
 
      `...`
 
--   Schließen Sie den Ordner, in der Vorlage *ZIP* Datei, und fügen Sie sie dem Projekt in der *VSTEMPLATE* -Datei mit `Folder` Elemente. Zum Beispiel:
+- Schließen Sie den Ordner, in der Vorlage *ZIP* Datei, und fügen Sie sie dem Projekt in der *VSTEMPLATE* -Datei mit `Folder` Elemente. Zum Beispiel:
 
      `...`
 
@@ -86,7 +86,7 @@ Gibt einen Ordner, der dem Projekt hinzugefügt werden.
 
      `...`
 
--   Schließen Sie Ordner nicht in der Vorlage *ZIP* Datei, aber fügen Sie Ordner mit der `TargetFileName` Attribut des der `ProjectItem` Element. Zum Beispiel:
+- Schließen Sie Ordner nicht in der Vorlage *ZIP* Datei, aber fügen Sie Ordner mit der `TargetFileName` Attribut des der `ProjectItem` Element. Zum Beispiel:
 
      `...`
 

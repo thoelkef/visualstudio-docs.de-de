@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045486"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse
   Können Sie die `ServerDocument` -Klasse in der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mehrere Aspekte von Anpassungen auf Dokumentebene, zu verwalten, auch wenn Microsoft Office Word und Microsoft Office Excel nicht installiert werden. Sie können die folgenden Aufgaben ausführen:
@@ -40,26 +40,26 @@ ms.locfileid: "56630079"
 > [!NOTE]
 >  Wenn Sie eine ältere Anwendung verfügen, verwendet der `ServerDocument` -Klasse in der `Visual Studio Tools for Office` System (Version 3.0 Common Language Runtime), wird die `Visual Studio Tools for Office` System (Version 3.0 Runtime) muss installiert sein, auf Computern, auf denen die Anwendung ausgeführt. Die `Visual Studio 2010 Tools for Office runtime` dieser Anwendungen kann nicht ausgeführt werden.
 
-##  <a name="CachedData"></a> Arbeiten Sie mit im Dokument zwischengespeicherten Daten
+## <a name="CachedData"></a> Arbeiten Sie mit im Dokument zwischengespeicherten Daten
  Die `ServerDocument`-Klasse stellt Member bereit, die Sie verwenden können, um mit dem Datencache in angepassten Dokumenten zu arbeiten. Weitere Informationen über zwischengespeicherte Daten finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md) und [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).
 
  In der folgenden Tabelle werden die Member aufgeführt, die Sie verwenden können, um mit zwischengespeicherten Daten zu arbeiten.
 
 |Aufgabe|Zu verwendender Member|
 |----------|-------------------|
-|Bestimmen, ob ein Dokument über einen Datencache verfügt|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A>-Methode.|
+|Bestimmen, ob ein Dokument über einen Datencache verfügt|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> -Methode.|
 |Zugreifen auf die zwischengespeicherten Daten in einem Dokument<br /><br /> Weitere Informationen finden Sie unter [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>-Eigenschaft|
 
-##  <a name="CustomizationInfo"></a> Verwalten der dokumentanpassung
+## <a name="CustomizationInfo"></a> Verwalten der dokumentanpassung
  Sie können Member der `ServerDocument`-Klasse zum Verwalten der Anpassungsassembly verwenden, die einem Dokument zugeordnet ist. Sie können z. B. die Anpassung aus einem Dokument programmgesteuert entfernen, sodass das Dokument nicht mehr Teil einer Anpassung ist.
 
  In der folgenden Tabelle werden die Member, mit denen Sie die Anpassungsassembly verwalten können, aufgeführt.
 
 |Aufgabe|Zu verwendender Member|
 |----------|-------------------|
-|Ermitteln, ob ein Dokument Teil einer Anpassung auf Dokumentebene ist|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A>-Methode.|
+|Ermitteln, ob ein Dokument Teil einer Anpassung auf Dokumentebene ist|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> -Methode.|
 |Eine Anpassung zu einem Dokument zur Laufzeit programmgesteuert zu anzufügen.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Eine der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>-Methoden|
-|Programmgesteuertes Entfernen einer Anpassung aus einem Dokument zur Laufzeit<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Entfernen von verwaltetem Code-Erweiterungen aus Dokumenten](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>-Methode.|
+|Programmgesteuertes Entfernen einer Anpassung aus einem Dokument zur Laufzeit<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Entfernen von verwaltetem Code-Erweiterungen aus Dokumenten](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> -Methode.|
 |Abrufen der URL des Bereitstellungsmanifests, das dem Dokument zugeordnet ist|Die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A>-Eigenschaft|
 
 ## <a name="see-also"></a>Siehe auch

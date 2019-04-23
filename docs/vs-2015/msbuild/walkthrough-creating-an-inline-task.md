@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061592"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
 #### <a name="to-create-and-modify-a-project-file"></a>So erstellen und ändern Sie eine Projektdatei  
   
-1.  Klicken Sie in Visual Studio im Menü **Datei** auf die Option **Neu** und anschließend auf **Projekt**.  
+1. Klicken Sie in Visual Studio im Menü **Datei** auf die Option **Neu** und anschließend auf **Projekt**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** `InlineTasks` lautet.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** `InlineTasks` lautet.  
   
      Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.  
   
-3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den InlineTasks-Projektknoten und anschließend auf **Projekt entladen**.  
+3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den InlineTasks-Projektknoten und anschließend auf **Projekt entladen**.  
   
-4.  Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.  
+4. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.  
   
      Die Projektdatei wird im Code-Editor angezeigt.  
   

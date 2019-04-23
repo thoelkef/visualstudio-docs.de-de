@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048674"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "58961211"
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier sind die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.  
   
 > [!WARNING]
->  Ab Visual Studio 2015 für C# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  Ab Visual Studio 2015 für c# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
 >  In vielen Fällen können Sie einfach Ihren Code-add-in einem VSIX-Projekt mit einem VSPackage-Projektelement übertragen. Das DTE-Automatisierungsobjekt können Sie durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode abrufen.  
@@ -39,22 +39,22 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Kann ich meinen Add-In-Projekt in ein VSIX-Projekt konvertieren?  
  Ein Add-In Projekt kann nicht direkt in einem VSIX-Projekt nicht konvertiert werden, da die verwendeten Mechanismen in VSIX-Projekte nicht identisch mit denen-Add-in-Projekte sind. Die VSIX-Projektvorlage sowie die richtige Projektelementvorlagen haben viel Code, der es relativ einfach einzurichten und als VSIX-Erweiterung ausgeführt wird.  
   
-##  <a name="BKMK_StartDeveloping"></a> Wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?  
+## <a name="BKMK_StartDeveloping"></a> Wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?  
  Hier ist, wie Sie einer VSIX-Datei vornehmen, die einen Menübefehl hat:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu machen, die über einen Menübefehl verfügt  
   
-1.  Erstellen eines VSIX-Projekts (**Datei**, **neu**, **Projekt**, oder geben **Projekt** in die **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual C# / Erweiterbarkeit** oder **Visual Basic / Erweiterungen** , und wählen Sie **VSIX-Projekt**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.  
+1. Erstellen eines VSIX-Projekts (**Datei**, **neu**, **Projekt**, oder geben **Projekt** in die **Schnellstart** Fenster). In der **neues Projekt** Dialogfeld erweitern Sie **Visual c# / Erweiterbarkeit** oder **Visual Basic / Erweiterungen** , und wählen Sie **VSIX-Projekt**.) Nennen Sie das Projekt **TestExtension** und geben Sie einen Speicherort für sie.  
   
-2.  Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen / neues Element**. In der **neues Projekt** Dialogfeld für Visual C# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)  
+2. Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage. (Mit der rechten Maustaste des Knotens "Projekt" in der **Projektmappen-Explorer** , und wählen Sie **hinzufügen / neues Element**. In der **neues Projekt** Dialogfeld für Visual c# oder Visual Basic, wählen Sie die **Erweiterbarkeit** Knoten, und wählen **benutzerdefinierten Befehls**.)  
   
-3.  Drücken Sie F5, um das Projekt im Debugmodus zu erstellen und auszuführen.  
+3. Drücken Sie F5, um das Projekt im Debugmodus zu erstellen und auszuführen.  
   
      Eine zweite Instanz von Visual Studio wird geöffnet. Diese zweite Instanz wird experimentelle Instanz genannt und besitzt möglicherweise nicht die gleichen Einstellungen wie die Instanz von Visual Studio, die Sie zum Schreiben von Code verwenden. Wenn Sie die experimentelle Instanz zum ersten Mal ausführen, müssen Sie sich bei VS Online anmelden und Ihr Design und Profil festlegen.  
   
      Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, sollte eine Meldung angezeigt werden: **In TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?  
+## <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?  
  Add-In-Code kann auf zwei Arten ausgeführt werden:  
   
 - Ausgelöst durch einen Menübefehl (Der Code befindet sich in der `IDTCommandTarget.Exec`-Methode.)  

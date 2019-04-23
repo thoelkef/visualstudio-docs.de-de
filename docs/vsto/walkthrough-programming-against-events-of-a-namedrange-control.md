@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44efc94f1bd9f0c2e962bf08bb663ada834f5b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049931"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements
   In dieser exemplarischen Vorgehensweise veranschaulicht das Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement zu einem Microsoft Office Excel-Arbeitsblatt und das Programmieren der Ereignisse mithilfe von Office-Entwicklungstools in Visual Studio.
@@ -30,11 +30,11 @@ ms.locfileid: "56633238"
 
  Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
--   Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements zu einem Arbeitsblatt.
+- Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements zu einem Arbeitsblatt.
 
--   Programmieren Sie mit <xref:Microsoft.Office.Tools.Excel.NamedRange> Ereignisse zu steuern.
+- Programmieren Sie mit <xref:Microsoft.Office.Tools.Excel.NamedRange> Ereignisse zu steuern.
 
--   Testen Sie das Projekt ein.
+- Testen Sie das Projekt ein.
 
 > [!NOTE]
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -42,16 +42,16 @@ ms.locfileid: "56633238"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
  In diesem Schritt erstellen Sie ein Excel-Workbook-Projekt mithilfe von Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1.  Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My mit dem Namen der Range-Events**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **My mit dem Namen der Range-Events**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **My mit dem Namen der Range-Events** Projekt **Projektmappen-Explorer**.
 
@@ -62,23 +62,23 @@ ms.locfileid: "56633238"
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>Hinzufügen eines Bereichs in das Arbeitsblatt
 
-1.  Überprüfen Sie, ob die *Meine benannte Bereich Events.xlsx* Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.
+1. Überprüfen Sie, ob die *Meine benannte Bereich Events.xlsx* Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit `Sheet1` angezeigt.
 
-2.  Von der **Excel-Steuerelemente** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle **A1** in `Sheet1`.
+2. Von der **Excel-Steuerelemente** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle **A1** in `Sheet1`.
 
      Die **NamedRange-Steuerelement hinzufügen** Dialogfeld wird angezeigt.
 
-3.  Überprüfen Sie, ob **$A$ 1** wird in der editierbares Textfeld, und dieser Zelle **A1** ausgewählt ist. Wenn sie nicht der Fall ist, klicken Sie auf die Zelle **A1** um es auszuwählen.
+3. Überprüfen Sie, ob **$A$ 1** wird in der editierbares Textfeld, und dieser Zelle **A1** ausgewählt ist. Wenn sie nicht der Fall ist, klicken Sie auf die Zelle **A1** um es auszuwählen.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
      Zelle **A1** wird zu einem Bereich mit dem Namen `namedRange1`. Gibt es dafür keinen sichtbaren Hinweis auf dem Arbeitsblatt aber `namedRange1` wird in der **Namen** Feld (befindet sich direkt über dem Arbeitsblatt auf der linken Seite) Wenn Zelle **A1** ausgewählt ist.
 
-5.  Fügen Sie ein weiteres <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle **B3**.
+5. Fügen Sie ein weiteres <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement zur Zelle **B3**.
 
-6.  Überprüfen Sie, ob **$B$ 3** wird in der editierbares Textfeld, und dieser Zelle **B3** ausgewählt ist. Wenn sie nicht der Fall ist, klicken Sie auf die Zelle **B3** um es auszuwählen.
+6. Überprüfen Sie, ob **$B$ 3** wird in der editierbares Textfeld, und dieser Zelle **B3** ausgewählt ist. Wenn sie nicht der Fall ist, klicken Sie auf die Zelle **B3** um es auszuwählen.
 
-7.  Klicken Sie auf **OK**.
+7. Klicken Sie auf **OK**.
 
      Zelle **B3** wird zu einem Bereich mit dem Namen `namedRange2`.
 
@@ -98,14 +98,14 @@ ms.locfileid: "56633238"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Zum Einfügen von Text in NamedRange2 basierend auf dem BeforeDoubleClick-Ereignis
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs** , und wählen Sie **Ansichtscode**.
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste **Sheet1.vb** oder **Sheet1.cs** , und wählen Sie **Ansichtscode**.
 
-2.  Fügen Code hinzu, sodass die `namedRange1_BeforeDoubleClick` Ereignishandler sieht wie folgt aus:
+2. Fügen Code hinzu, sodass die `namedRange1_BeforeDoubleClick` Ereignishandler sieht wie folgt aus:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
 
-3.  In c# müssen Sie Ereignishandler für den benannten Bereich hinzufügen, siehe die <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> Ereignis unten. Informationen zum Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. In c# müssen Sie Ereignishandler für den benannten Bereich hinzufügen, siehe die <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> Ereignis unten. Informationen zum Erstellen von Ereignishandlern finden Sie unter [Vorgehensweise: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
 
@@ -113,7 +113,7 @@ ms.locfileid: "56633238"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-change-event"></a>Zum Einfügen von Text in namedRange2 basierend auf das Change-Ereignis
 
-1.  Fügen Code hinzu, sodass die `NamedRange1_Change` Ereignishandler sieht wie folgt aus:
+1. Fügen Code hinzu, sodass die `NamedRange1_Change` Ereignishandler sieht wie folgt aus:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
@@ -125,7 +125,7 @@ ms.locfileid: "56633238"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Zum Einfügen von Text in namedRange2 basierend auf den SelectionChange-Ereignis
 
-1.  Fügen Code hinzu, sodass die **NamedRange1_SelectionChange** Ereignishandler sieht wie folgt aus:
+1. Fügen Code hinzu, sodass die **NamedRange1_SelectionChange** Ereignishandler sieht wie folgt aus:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
@@ -138,22 +138,22 @@ ms.locfileid: "56633238"
 
 ### <a name="to-test-your-document"></a>So testen Sie das Dokument
 
-1.  Drücken Sie **F5** um Ihr Projekt auszuführen.
+1. Drücken Sie **F5** um Ihr Projekt auszuführen.
 
-2.  Platzieren Sie den Cursor in `namedRange1`, und überprüfen Sie, ob der Text im Hinblick auf die <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> Ereignis eingefügt wird, und, die ein Kommentar in das Arbeitsblatt eingefügt wird.
+2. Platzieren Sie den Cursor in `namedRange1`, und überprüfen Sie, ob der Text im Hinblick auf die <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> Ereignis eingefügt wird, und, die ein Kommentar in das Arbeitsblatt eingefügt wird.
 
-3.  Klicken Sie auf doppelte `namedRange1`, und überprüfen Sie, ob der Text im Hinblick auf <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> kursiven Text in Rot eingefügt wird `namedRange2`.
+3. Klicken Sie auf doppelte `namedRange1`, und überprüfen Sie, ob der Text im Hinblick auf <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> kursiven Text in Rot eingefügt wird `namedRange2`.
 
-4.  Klicken Sie außerhalb des `namedRange1` und beachten Sie, dass das Change-Ereignis tritt auf, beim Beenden den Bearbeitungsmodus, obwohl keine Änderungen am Text vorgenommen wurde.
+4. Klicken Sie außerhalb des `namedRange1` und beachten Sie, dass das Change-Ereignis tritt auf, beim Beenden den Bearbeitungsmodus, obwohl keine Änderungen am Text vorgenommen wurde.
 
-5.  Ändern Sie den Text in `namedRange1`.
+5. Ändern Sie den Text in `namedRange1`.
 
-6.  Klicken Sie außerhalb des `namedRange1`, und überprüfen Sie, ob der Text im Hinblick auf <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> Ereignis wird mit blauem Text in eingefügt `namedRange2`.
+6. Klicken Sie außerhalb des `namedRange1`, und überprüfen Sie, ob der Text im Hinblick auf <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> Ereignis wird mit blauem Text in eingefügt `namedRange2`.
 
 ## <a name="next-steps"></a>Nächste Schritte
  In dieser exemplarischen Vorgehensweise werden die Grundlagen der Programmierung mit Ereignissen eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement. Hier ist eine Aufgabe, die als Nächstes getan werden kann:
 
--   Bereitstellen des Projekts an. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
+- Bereitstellen des Projekts an. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)

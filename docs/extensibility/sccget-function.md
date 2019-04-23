@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044492"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 Diese Funktion ruft eine Kopie einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zur Bearbeitung ab. In den meisten Systemen werden die Dateien als schreibgeschützt markiert.
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Es gibt zwei Möglichkeiten, dieses Problem zu beheben, in denen der lokale Cache von Source-Control-Versionen mit der Datenbank synchronisiert wird:
 
-1.  Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.
+1. Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.
 
-2.  Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.
+2. Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.
 
-    1.  Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über die Umbenennung *a.txt* zu *"b.txt"* im Quellcode-Verwaltungsdatenbank.
+    1. Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über die Umbenennung *a.txt* zu *"b.txt"* im Quellcode-Verwaltungsdatenbank.
 
-    2.  Benennen Sie die lokale *a.txt* zu *"b.txt"*.
+    2. Benennen Sie die lokale *a.txt* zu *"b.txt"*.
 
-    3.  Rufen Sie die `SccGet` -Funktion für beide *a.txt* und *"b.txt"*.
+    3. Rufen Sie die `SccGet` -Funktion für beide *a.txt* und *"b.txt"*.
 
-    4.  Da *a.txt* existiert nicht in der Quellcode-Verwaltungsdatenbank wird der lokalen Cache des fehlenden gelöscht *a.txt* Versionsinformationen.
+    4. Da *a.txt* existiert nicht in der Quellcode-Verwaltungsdatenbank wird der lokalen Cache des fehlenden gelöscht *a.txt* Versionsinformationen.
 
-    5.  Die *"b.txt"* ausgecheckten Datei wird zusammengeführt, mit dem Inhalt der lokalen *"b.txt"* Datei.
+    5. Die *"b.txt"* ausgecheckten Datei wird zusammengeführt, mit dem Inhalt der lokalen *"b.txt"* Datei.
 
-    6.  Die aktualisierte *"b.txt"* Datei jetzt eingecheckt werden kann.
+    6. Die aktualisierte *"b.txt"* Datei jetzt eingecheckt werden kann.
 
 ## <a name="see-also"></a>Siehe auch
 - [Datenquellen-Steuerelement-Plug-in-API-Funktionen](../extensibility/source-control-plug-in-api-functions.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065142"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>So erstellen Sie eine T4-Vorlage für die Entwurfszeit in Visual Studio  
   
-1.  Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt, oder öffnen Sie eine vorhandene Ressourcengruppe.  
+1. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt, oder öffnen Sie eine vorhandene Ressourcengruppe.  
   
      Z. B. auf die **Datei** Menü wählen **neu**, **Projekt**.  
   
-2.  Ihr Projekt eine Textvorlagendatei hinzu, und geben sie einen Namen mit der Erweiterung **TT**.  
+2. Ihr Projekt eine Textvorlagendatei hinzu, und geben sie einen Namen mit der Erweiterung **TT**.  
   
      Klicken Sie hierzu in **Projektmappen-Explorer**, wählen Sie im Kontextmenü des Projekts **hinzufügen**, **neues Element**. In der **neues Element hinzufügen** aktivieren Sie im Dialogfeld **Textvorlage** im mittleren Bereich.  
   
      Beachten Sie, dass die **benutzerdefiniertes Tool** -Eigenschaft der Datei ist **TextTemplatingFileGenerator**.  
   
-3.  Öffnen Sie die Datei. Sie enthält bereits die folgenden Anweisungen:  
+3. Öffnen Sie die Datei. Sie enthält bereits die folgenden Anweisungen:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   
      Wenn Sie die Vorlage einem [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Projekt hinzugefügt haben, ist das Sprachattribut auf `VB` festgelegt.  
   
-4.  Fügen Sie am Ende der Datei Text hinzu. Zum Beispiel:  
+4. Fügen Sie am Ende der Datei Text hinzu. Zum Beispiel:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Speichern Sie die Datei.  
+5. Speichern Sie die Datei.  
   
      Sie sehen möglicherweise eine **Sicherheitswarnung** Meldungsfeld mit der Frage zu bestätigen, dass die Vorlage ausgeführt werden soll. Klicken Sie auf **OK**.  
   
-6.  In **Projektmappen-Explorer**, erweitern Sie den Vorlagendateiknoten und sehen Sie eine Datei mit der Erweiterung **.txt**. Die Datei enthält den Text, der von der Vorlage generiert wird.  
+6. In **Projektmappen-Explorer**, erweitern Sie den Vorlagendateiknoten und sehen Sie eine Datei mit der Erweiterung **.txt**. Die Datei enthält den Text, der von der Vorlage generiert wird.  
   
     > [!NOTE]
     >  Ist Ihr Projekt eine Visual Basic-Projekt ist, klicken Sie auf **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.  
@@ -150,9 +150,9 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   
 #### <a name="to-generate-program-code-or-resources"></a>So generieren Sie Programmcode oder Ressourcen  
   
-1.  Ändern Sie die output-Direktive, um eine Datei des entsprechenden Typs zu generieren, z. B. .cs, .vb, .resx oder .xml.  
+1. Ändern Sie die output-Direktive, um eine Datei des entsprechenden Typs zu generieren, z. B. .cs, .vb, .resx oder .xml.  
   
-2.  Fügen Sie Code ein, durch den der benötigte Projektmappencode generiert wird. Fügen Sie z. B. folgenden Code ein, wenn Sie drei Deklarationen für Felder für ganze Zahlen in einer Klasse generieren möchten:  
+2. Fügen Sie Code ein, durch den der benötigte Projektmappencode generiert wird. Fügen Sie z. B. folgenden Code ein, wenn Sie drei Deklarationen für Felder für ganze Zahlen in einer Klasse generieren möchten:  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   
     ```  
   
-3.  Speichern Sie die Datei, und überprüfen Sie die generierte Datei, die nun den folgenden Code enthält:  
+3. Speichern Sie die Datei, und überprüfen Sie die generierte Datei, die nun den folgenden Code enthält:  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Eine Textvorlage wird in ihrer eigene App-Domäne ausgeführt, und der Zugriff auf Dienste erfolgt durch Marshalling. Unter diesen Umständen ist GetCOMService() zuverlässiger als GetService().  
   
-##  <a name="Regenerating"></a> Automatisches Erneutes Generieren des Codes  
+## <a name="Regenerating"></a> Automatisches Erneutes Generieren des Codes  
  In der Regel werden mehrere Dateien in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe mit einem Eingabemodell generiert. Jede Datei wird aus einer eigenen Vorlage generiert, die Vorlagen verweisen jedoch alle auf das gleiche Modell.  
   
  Wenn sich das Quellmodell ändert, müssen Sie alle Vorlagen in der Projektmappe erneut ausführen. Wählen Sie dazu manuell **alle Vorlagen transformieren** auf die **erstellen** Menü.  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Konvertieren einer vorhandenen Datei zu einer Vorlage  
+## <a name="Converting"></a> Konvertieren einer vorhandenen Datei zu einer Vorlage  
  Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr ähneln und zudem einigen eingefügten Programmcode enthalten. Dadurch ergibt sich eine einfache Methode zum Erstellen einer Vorlage. Erstellen Sie zunächst eine normale Datei als Prototyp, z. B. eine [!INCLUDE[csprcs](../includes/csprcs-md.md)] Datei, und klicken Sie dann Generierungscode, der die resultierende Datei verändert.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>So konvertieren Sie eine vorhandene Datei in eine Entwurfszeitvorlage  
   
-1.  Fügen Sie dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt eine Datei des Typs hinzu, den Sie generieren möchten, z. B. eine `.cs`-, `.vb`- oder `.resx`-Datei.  
+1. Fügen Sie dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt eine Datei des Typs hinzu, den Sie generieren möchten, z. B. eine `.cs`-, `.vb`- oder `.resx`-Datei.  
   
-2.  Testen Sie die neue Datei, um sicherzustellen, dass sie ordnungsgemäß funktioniert.  
+2. Testen Sie die neue Datei, um sicherzustellen, dass sie ordnungsgemäß funktioniert.  
   
-3.  Ändern Sie im Projektmappen-Explorer die Dateierweiterung, **TT**.  
+3. Ändern Sie im Projektmappen-Explorer die Dateierweiterung, **TT**.  
   
-4.  Überprüfen Sie die folgenden Eigenschaften der **TT** Datei:  
+4. Überprüfen Sie die folgenden Eigenschaften der **TT** Datei:  
   
     |||  
     |-|-|  
     |**Benutzerdefiniertes Tool =**|**TextTemplatingFileGenerator**|  
     |**Buildvorgang =**|**Keine**|  
   
-5.  Fügen Sie am Anfang der Datei die folgenden Zeilen ein:  
+5. Fügen Sie am Anfang der Datei die folgenden Zeilen ein:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      Legen Sie das `extension`-Attribut auf die Dateinamenerweiterung für den zu generierenden Dateityp fest, z. B. `.cs`, `.resx` oder `.xml`.  
   
-6.  Speichern Sie die Datei.  
+6. Speichern Sie die Datei.  
   
      Eine untergeordnete Datei mit der angegebenen Erweiterung wird erstellt. Die Eigenschaften entsprechen dem Dateityp. Z. B. die **Buildvorgang** Eigenschaft einer CS-Datei wäre **Kompilieren**.  
   
      Vergewissern Sie sich, dass die generierte Datei den gleichen Inhalt enthält wie die ursprüngliche Datei.  
   
-7.  Identifizieren Sie einen Teil der Datei, den Sie ändern möchten. Beispielsweise einen Teil, der nur unter bestimmten Bedingungen angezeigt oder wiederholt wird oder in dem sich bestimmte Werte ändern. Fügen Sie Generierungscode ein. Speichern Sie die Datei, und überprüfen Sie, ob die untergeordnete Datei ordnungsgemäß generiert wurde. Wiederholen Sie diesen Schritt.  
+7. Identifizieren Sie einen Teil der Datei, den Sie ändern möchten. Beispielsweise einen Teil, der nur unter bestimmten Bedingungen angezeigt oder wiederholt wird oder in dem sich bestimmte Werte ändern. Fügen Sie Generierungscode ein. Speichern Sie die Datei, und überprüfen Sie, ob die untergeordnete Datei ordnungsgemäß generiert wurde. Wiederholen Sie diesen Schritt.  
   
 ## <a name="guidelines-for-code-generation"></a>Richtlinien für die Codegenerierung  
  Informieren Sie sich [Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md).  

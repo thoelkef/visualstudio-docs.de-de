@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061618"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Verwenden Sie das Fenster "Arbeitsspeicher" in Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -84,7 +84,7 @@ In der Standardeinstellung Speicherinhalt angezeigt als 1-Byte-Ganzzahlen im Hex
 
 **So ändern Sie das Format des Speicherinhalts:**
 
--  Mit der rechten Maustaste den **Arbeitsspeicher** Fenster, und wählen Sie die Formate, die Sie möchten, aus dem Kontextmenü.
+- Mit der rechten Maustaste den **Arbeitsspeicher** Fenster, und wählen Sie die Formate, die Sie möchten, aus dem Kontextmenü.
 
 **So ändern Sie die Anzahl der Spalten im Fenster „Arbeitsspeicher“:**
 

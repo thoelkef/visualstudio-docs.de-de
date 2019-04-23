@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064283"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic C++)
 
@@ -234,17 +234,17 @@ Zunächst benötigen Sie ein Multithreadanwendungsprojekt. Im Folgenden wird ein
 
 ### <a name="ShowThreadsInSource"></a>Ermitteln Sie den Threadmarker  
 
-1.  Wählen Sie in der Debug-Symbolleiste die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Wählen Sie in der Debug-Symbolleiste die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Drücken Sie **F11** einmal um den Debugger eine Codezeile zu gelangen.
 
-3.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , die zwei twisted Threads ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
+3. Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile sehen Sie eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , die zwei twisted Threads ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
 
     Ein Threadmarker kann teilweise durch einen Haltepunkt verborgen werden.
 
-4.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt, dass Sie die Namen und die Thread-ID jedes angehaltenen Threads. Der Name ist in diesem Fall wahrscheinlich `<noname>`.
+4. Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt, dass Sie die Namen und die Thread-ID jedes angehaltenen Threads. Der Name ist in diesem Fall wahrscheinlich `<noname>`.
 
-5.  Wählen Sie den Threadmarker, um die verfügbaren Optionen im Kontextmenü anzuzeigen.
+5. Wählen Sie den Threadmarker, um die verfügbaren Optionen im Kontextmenü anzuzeigen.
 
 ### <a name="ParallelStacks"></a>Anzeigen der Thread-Orte
 
@@ -260,7 +260,7 @@ In der **parallele Stapel** Fenster, wechseln Sie zwischen einer Threads und (f�
     - Zwei Threads eingegeben haben die `ServerClass.InstanceMethod`, von denen der aktuelle Thread (gelben Pfeil), wird während der andere Thread, im beendet wurde `Thread.Sleep`.
     - Ein neuer Thread (rechts) wird auch gestartet, aber auf beendet ist `ThreadHelper.ThreadStart`.
 
-2.  Mit der rechten Maustaste Einträge in der **parallele Stapel** Fenster aus, um die verfügbaren Optionen im Kontextmenü anzuzeigen.
+2. Mit der rechten Maustaste Einträge in der **parallele Stapel** Fenster aus, um die verfügbaren Optionen im Kontextmenü anzuzeigen.
 
     Sie können verschiedene Aktionen in diese Menüs mit der rechten Maustaste, aber in diesem Tutorial erfahren Sie mehr diese Details in der **parallele Überwachung** Fenster (nächsten Abschnitten).
 
@@ -292,14 +292,14 @@ Sie können Threads zum Nachverfolgen wichtiger Threads und ignoriert die andere
 
     Alle ausgewählten Threads werden gekennzeichnet. Jetzt können Sie filtern, um nur gekennzeichnete Threads angezeigt.
 
-3.  In der **parallele Überwachung** wählen Sie im Fenster der **nur gekennzeichnete Threads anzeigen** Schaltfläche ![gekennzeichnete Threads anzeigen](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. In der **parallele Überwachung** wählen Sie im Fenster der **nur gekennzeichnete Threads anzeigen** Schaltfläche ![gekennzeichnete Threads anzeigen](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Nur die gekennzeichneten Threads, die in der Liste angezeigt werden.
 
     > [!TIP]
     > Nachdem Sie einige Threads gekennzeichnet haben, können Sie mit der rechten Maustaste in einer einzige Zeile Code im Code-Editor und wählen Sie **gekennzeichnete Threads bis zum Cursor ausführen**. Stellen Sie sicher, um auszuwählen, dass Code, der alle gekennzeichnete Threads erreicht wird. Visual Studio hält Threads in der ausgewählten Zeile des Codes, erleichtert Ihnen die Steuerung die Reihenfolge der Ausführung von [sperren und Entsperren von Threads](#bkmk_freeze).
 
-4.  Wählen Sie die **nur gekennzeichnete Threads anzeigen** Schaltfläche erneut aus, um zurück in den wechseln **alle Threads anzeigen** Modus.
+4. Wählen Sie die **nur gekennzeichnete Threads anzeigen** Schaltfläche erneut aus, um zurück in den wechseln **alle Threads anzeigen** Modus.
 
 5. Zum Aufheben der Kennzeichnung von Threads Maustaste einen oder mehrere gekennzeichnete Threads in der **parallele Überwachung** Fenster, und wählen **Flag**.
 
@@ -308,17 +308,17 @@ Sie können Threads zum Nachverfolgen wichtiger Threads und ignoriert die andere
 > [!TIP]
 > Sie können Einfrieren und reaktivieren (anhalten und fortsetzen) Threads zur Steuerung der Reihenfolge, in denen Threads Arbeiten ausführen. Damit können Sie beheben Parallelitätsprobleme wie Deadlocks und Racebedingungen.
 
-1.  In der **parallele Überwachung** Fenster für die alle Zeilen ausgewählt haben, mit der rechten Maustaste, und wählen **fixieren**.
+1. In der **parallele Überwachung** Fenster für die alle Zeilen ausgewählt haben, mit der rechten Maustaste, und wählen **fixieren**.
 
     In der zweiten Spalte wird Sie für jede Zeile eine Pausen-Symbol angezeigt. Das Pausensymbol gibt an, dass der Thread gesperrt ist.
 
-2.  Deaktivieren Sie alle anderen Zeilen dazu nur eine Zeile aus.
+2. Deaktivieren Sie alle anderen Zeilen dazu nur eine Zeile aus.
 
-3.  Mit der rechten Maustaste einer Zeile aus, und wählen Sie **reaktivieren**.
+3. Mit der rechten Maustaste einer Zeile aus, und wählen Sie **reaktivieren**.
 
     Das Pausensymbol verschwindet in dieser Zeile, die angibt, dass der Thread nicht mehr gesperrt ist.
 
-4.  Wechseln Sie zu dem Code-Editor, und drücken Sie **F11**. Nur der nicht fixierte-Thread ausgeführt wird.
+4. Wechseln Sie zu dem Code-Editor, und drücken Sie **F11**. Nur der nicht fixierte-Thread ausgeführt wird.
 
     Die app kann auch einige neue Threads instanziieren. Alle neuen Threads sind nicht gekennzeichnet und nicht fixiert werden.
 

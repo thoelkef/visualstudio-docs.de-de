@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59367288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047123"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen
 
@@ -34,25 +34,24 @@ Ein <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?display
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Diese Regel sucht nach <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> Methoden- oder Verweise, die Deserialisierung bei <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> bei dessen <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> kann null sein. Wenn Sie Deserialisierung mit unterbinden möchten <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> unabhängig von der <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> -Eigenschaft, deaktivieren Sie diese Regel und [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md), und aktivieren Sie die Regel [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Diese Regel sucht nach <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> Deserialisierungsmethode aufruft oder verweist auf, wenn die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> kann null sein. Wenn Sie Deserialisierung mit unterbinden möchten <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> unabhängig von der <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> -Eigenschaft, deaktivieren Sie diese Regel und [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md), und aktivieren Sie die Regel [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
 - Wenn möglich, verwenden Sie stattdessen einen sicheren Serialisierer und **nicht es Angreifern ermöglichen, geben Sie einen beliebigen Typ zum Deserialisieren**. Einige Serialisierungsprogramme sicherer gehören:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Verwenden Sie niemals <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Wenn Sie einen Typresolver verwenden müssen, müssen Sie die deserialisierte Typen einer erwarteten Liste einschränken.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Verwenden Sie niemals <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Wenn Sie einen Typresolver verwenden müssen, beschränken Sie deserialisierte Typen einer erwarteten Liste aus.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Verwenden Sie NewtonSoft Json.NET - TypeNameHandling.None. Wenn Sie einen anderen Wert für TypeNameHandling verwenden müssen, müssen Sie die deserialisierte Typen einer erwarteten Liste einschränken.
+  - Verwenden Sie NewtonSoft Json.NET - TypeNameHandling.None. Wenn Sie einen anderen Wert für TypeNameHandling verwenden müssen, beschränken Sie zu einer erwarteten Liste mit einem benutzerdefinierten ISerializationBinder deserialisierte Typen.
   - Protokollpuffer
-- Stellen Sie die serialisierten Daten Manipulationssicheres. Melden Sie kryptografisch nach der Serialisierung die serialisierten Daten. Überprüfen Sie vor der Deserialisierung der kryptografischen Signatur. Sie müssen verhindern, dass die kryptografischen Schlüssel offengelegt werden und sollten für den Schlüsselrotationen entwerfen.
+- Stellen Sie die serialisierten Daten vor Manipulationen sicher. Melden Sie kryptografisch nach der Serialisierung die serialisierten Daten. Überprüfen Sie vor der Deserialisierung die kryptografische Signatur. Verhindern Sie, dass die kryptografischen Schlüssel offen gelegt wird und für den Schlüsselrotationen entwerfen.
 - Deserialisierte Typen zu beschränken. Implementieren Sie einen benutzerdefinierten <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Vor der Deserialisierung mit <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>legen die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> Eigenschaft, um eine Instanz des benutzerdefinierten <xref:System.Runtime.Serialization.SerializationBinder>. In der überschriebenen <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> -Methode, wenn der Typ wird dann eine Ausnahme auslöst.
   - Stellen Sie sicher, dass alle Codepfade haben die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> Eigenschaftensatz.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-- Es ist sicher, die mit dieser Regel eine Warnung zu unterdrücken, wenn Sie wissen, dass die Eingabe als vertrauenswürdig eingestuft wird. Beachten Sie, dass es sich bei Ihrer Anwendung Vertrauenswürdigkeit Grenze und Datenfluss im Laufe der Zeit ändern können.
-- Es ist sicher, diese Warnung zu unterdrücken, wenn Sie eines der oben genannten Vorsichtsmaßnahmen ergriffen haben.
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Pseudocodebeispiele
 
@@ -123,6 +122,7 @@ End Class
 ```
 
 ### <a name="solution"></a>Lösung
+
 ```csharp
 using System;
 using System.IO;
@@ -144,7 +144,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -197,7 +197,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

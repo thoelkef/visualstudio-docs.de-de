@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064842"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-declare-items-individually"></a>So deklarieren Sie Elemente einzeln  
   
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-declare-multiple-items"></a>So deklarieren Sie mehrere Elemente  
   
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle JPG-Dateien im Verzeichnis „Images“ bzw. in Unterverzeichnissen ein  
   
--   Verwenden Sie das folgende `Include`-Attribut:  
+- Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle JPG-Dateien ein, die mit „img“ beginnen  
   
--   Verwenden Sie das folgende `Include`-Attribut:  
+- Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>So schließen Sie alle Dateien in Verzeichnissen ein, die mit „jpgs“ enden  
   
--   Ändern Sie eines der folgenden `Include`-Attribute:  
+- Ändern Sie eines der folgenden `Include`-Attribute:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>So verwenden Sie alle Visual C#- oder Visual Basic-Dateien als Eingabe  
   
--   Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

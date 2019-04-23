@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063139"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt (Vorgängerversion)
 Nachdem Sie ein Workflowprojekt mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] erstellt haben, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird, das auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt, können Sie dem Projekt [!INCLUDE[wf](../includes/wf-md.md)]-Elemente und andere vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Elemente hinzufügen.  
@@ -37,15 +37,15 @@ Nachdem Sie ein Workflowprojekt mithilfe der Vorgängerversion von [!INCLUDE[wfd
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>So fügen Sie ein neues Element zu einem Workflowprojekt hinzu  
   
-1.  Auf der **Projekt** Menü klicken Sie auf **Hinzufügen eines neuen Elements**.  
+1. Auf der **Projekt** Menü klicken Sie auf **Hinzufügen eines neuen Elements**.  
   
      Die **Hinzufügen eines neuen Elements** Dialogfeld wird geöffnet.  
   
-2.  Wählen Sie ein Element aus.  
+2. Wählen Sie ein Element aus.  
   
      In der vorherigen Tabelle wird die verfügbare Windows Workflow Foundation-Auswahl aufgelistet.  
   
-3.  Klicken Sie auf **hinzufügen** das Element dem Workflowprojekt hinzugefügt.  
+3. Klicken Sie auf **hinzufügen** das Element dem Workflowprojekt hinzugefügt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Legacyworkflowprojekten](../workflow-designer/creating-legacy-workflow-projects.md)

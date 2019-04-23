@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059443"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -259,7 +259,7 @@ Der folgende Code zeigt ein Beispiel für das Schreiben einer Textdatei in den l
 
 Um die durch den Code im vorhergehenden Abschnitt erstellte Datei anzuzeigen, führen Sie die folgenden Schritte aus:
 
-1.  Klicken Sie im Windows-Infobereich mit der rechten Maustaste auf das Azure-Symbol, und wählen Sie dann im Kontextmenü **Serveremulator-UI anzeigen** aus.
+1. Klicken Sie im Windows-Infobereich mit der rechten Maustaste auf das Azure-Symbol, und wählen Sie dann im Kontextmenü **Serveremulator-UI anzeigen** aus.
 
     ![Azure-Serveremulator anzeigen](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

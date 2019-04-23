@@ -27,19 +27,19 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065752"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:  
   
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
+## <a name="BKMK_In_this_topic"></a> In diesem Thema  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [Das TRACE-Makro](#BKMK_The_TRACE_macro)  
@@ -64,7 +64,7 @@ Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreic
   
   - [So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
+## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC bietet eine spezielle [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) -Funktion für hart codierte Haltepunkte im Quellcode:  
   
 ```  
@@ -84,7 +84,7 @@ _asm int 3
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro  
+## <a name="BKMK_The_TRACE_macro"></a> Das TRACE-Makro  
  Um Programmmeldungen im [Ausgabefenster](../ide/reference/output-window.md)des Debuggers anzuzeigen, können Sie das [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) -Makro oder das MFC- [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) -Makro verwenden. Wie [Assertions](../debugger/c-cpp-assertions.md)sind auch TRACE-Makros nur in der Debugversion des Programms aktiv und werden bei der Kompilierung der endgültigen Produktversion entfernt.  
   
  Die folgenden Beispiele zeigen einige Verwendungsmöglichkeiten für das **TRACE** -Makro auf. Ähnlich wie `printf`ist das **TRACE** -Makro in der Lage, mehrere Argumente zu verarbeiten.  
@@ -117,10 +117,10 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> Feststellen von Speicherverlusten in MFC  
+## <a name="BKMK_Memory_leak_detection_in_MFC"></a> Feststellen von Speicherverlusten in MFC  
  MFC stellt Klassen und Funktionen bereit, mit deren Hilfe Speicherbereiche ermittelt werden können, die belegt, jedoch nicht wieder freigegeben werden.  
   
-###  <a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung  
+### <a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung  
  In MFC können Sie anstelle des Operators [new](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.  
   
  Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new**zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:  
@@ -135,7 +135,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [Inhalt](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Enabling_memory_diagnostics"></a> Aktivieren der Speicherdiagnose  
+### <a name="BKMK_Enabling_memory_diagnostics"></a> Aktivieren der Speicherdiagnose  
  Damit Sie die Speicherdiagnosefeatures nutzen können, muss die Diagnosenachverfolgung aktiviert werden.  
   
  **So aktivieren oder deaktivieren Sie die Speicherdiagnose**  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   [Inhalt](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen  
+### <a name="BKMK_Taking_memory_snapshots"></a> Aufzeichnen von Speichermomentaufnahmen  
   
 1. Erstellen Sie ein [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) -Objekt, und rufen Sie die [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) -Memberfunktion auf. Dadurch wird die erste Speichermomentaufnahme erstellt.  
   
@@ -197,7 +197,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
    [Inhalt](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Viewing_memory_statistics"></a> Anzeigen einer Speicherstatistik  
+### <a name="BKMK_Viewing_memory_statistics"></a> Anzeigen einer Speicherstatistik  
  Durch die [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) -Funktion werden die beiden Speicherzustandsobjekte verglichen und alle Objekte ermittelt, die zwischen dem Anfangs- und dem Endzustand nicht vom Heap freigegeben wurden. Nachdem Sie Speichermomentaufnahmen aufgezeichnet und diese mithilfe von `CMemoryState::Difference`verglichen haben, können Sie [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) aufrufen, um Informationen über die nicht freigegebenen Objekte zu erhalten.  
   
  Betrachten Sie das folgende Beispiel:  
@@ -232,7 +232,7 @@ Total allocations: 67 bytes
   
  [Inhalt](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_object_dumps"></a> Nachverfolgen von Objektabbildern  
+### <a name="BKMK_Taking_object_dumps"></a> Nachverfolgen von Objektabbildern  
  Sie können in einem MFC-Programm verwenden [CMemoryState](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) um eine Beschreibung aller Objekte im Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.  
   
 > [!NOTE]
@@ -278,7 +278,7 @@ Phone #: 581-0215
   
  [Inhalt](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpretieren von Speicherabbildern  
+#### <a name="BKMK_Interpreting_memory_dumps"></a> Interpretieren von Speicherabbildern  
  Im Folgenden wird dieser Objektdump ausführlich erläutert:  
   
 ```  
@@ -361,7 +361,7 @@ Phone #: 581-0215
   
  [Inhalt](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Customizing_object_dumps"></a> Anpassen von Objektdumps  
+#### <a name="BKMK_Customizing_object_dumps"></a> Anpassen von Objektdumps  
  Wenn Sie eine Klasse von [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)ableiten, können Sie die Memberfunktion `Dump` überschreiben, um bei Verwendung von [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) für den Objektdump zusätzliche Informationen im [Ausgabefenster](../ide/reference/output-window.md)anzuzeigen.  
   
  Die `Dump` -Funktion gibt eine Textdarstellung der objektspezifischen Membervariablen in einem Dumpkontext ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)) aus. Der Dumpkontext ist mit einem E/A-Stream vergleichbar. Mithilfe des Anfügeoperators (**<<**) können Sie Daten an einen `CDumpContext`aufgerufen.  
@@ -416,7 +416,7 @@ pMyPerson->Dump( afxDump );
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Verringern der Größe eines MFC-Debugbuilds  
+## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Verringern der Größe eines MFC-Debugbuilds  
  Die Debuginformationen für eine umfangreiche MFC-Anwendung können sehr viel Speicherplatz beanspruchen. Sie können eine dieser Prozeduren zum Verringern der Größe verwenden:  
   
 1. Die MFC‑Bibliotheken mithilfe der [/Z7, / Zi, / Zi (Debuginformationsformat)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) -Option anstelle von **"/ Z7"**. Durch diese Optionen wird eine einzelne Programmdatenbank-Datei (PDB) mit Debuginformationen für die gesamte Bibliothek erstellt, wodurch Redundanz und Speicherplatzanforderungen verringert werden.  
@@ -427,7 +427,7 @@ pMyPerson->Dump( afxDump );
   
    [In diesem Thema](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module  
+### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> So erstellen Sie eine MFC‑Anwendung mit Debuginformationen für ausgewählte Module  
  Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die schrittweise Ausführung der Module sowie die Verwendung weiterer Debugfunktionen. In den folgenden Schritten wird sowohl der Debug- als auch der Releasemodus des Visual C++-Makefile verwendet. Dadurch werden die im Folgenden beschriebenen Änderungen erforderlich. (Darüber hinaus ist die Option Alles neu erstellen erforderlich, wenn ein vollständiges Releasebuild benötigt wird.)  
   
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.  
@@ -436,49 +436,49 @@ pMyPerson->Dump( afxDump );
   
 3. Zunächst erstellen Sie eine neue Projektkonfiguration.  
   
-   1.  Klicken Sie im Dialogfeld **\<Projekt > Eigenschaftenseiten** auf die Schaltfläche **Konfigurations-Manager**.  
+   1. Klicken Sie im Dialogfeld **\<Projekt > Eigenschaftenseiten** auf die Schaltfläche **Konfigurations-Manager**.  
   
-   2.  Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b). Wählen Sie in der Spalte **Konfiguration** die Option **\<Neu...>** aus.  
+   2. Suchen Sie das Projekt im Raster des [Dialogfelds "Konfigurations-Manager"](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b). Wählen Sie in der Spalte **Konfiguration** die Option **\<Neu...>** aus.  
   
-   3.  Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".  
+   3. Geben Sie im [Dialogfeld "Neue Projektkonfiguration"](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)im Feld **Projektkonfigurationsname** einen Namen für die neue Konfiguration ein, z. B. "Teildebugprojekt".  
   
-   4.  Wählen Sie in der Liste **Einstellungen kopieren von** die Option **Release**.  
+   4. Wählen Sie in der Liste **Einstellungen kopieren von** die Option **Release**.  
   
-   5.  Klicken Sie auf **OK** , um das Dialogfeld **Neue Projektkonfiguration**zu schließen.  
+   5. Klicken Sie auf **OK** , um das Dialogfeld **Neue Projektkonfiguration**zu schließen.  
   
-   6.  Schließen Sie das Dialogfeld **Konfigurations-Manager** .  
+   6. Schließen Sie das Dialogfeld **Konfigurations-Manager** .  
   
 4. Nun legen Sie Optionen für das gesamte Projekt fest.  
   
-   1.  Wählen Sie im Dialogfeld **Eigenschaftenseiten** unter dem Ordner **Konfigurationseigenschaften** die Kategorie **Allgemein** aus.  
+   1. Wählen Sie im Dialogfeld **Eigenschaftenseiten** unter dem Ordner **Konfigurationseigenschaften** die Kategorie **Allgemein** aus.  
   
-   2.  Erweitern Sie im Raster für die Projekteinstellungen ggf. **Projektstandards** .  
+   2. Erweitern Sie im Raster für die Projekteinstellungen ggf. **Projektstandards** .  
   
-   3.  Suchen Sie unter **Projektstandards**die Option **Verwendung von MFC**. Die aktuelle Einstellung wird in der rechten Spalte des Rasters angezeigt. Klicken Sie auf die aktuelle Einstellung, und ändern Sie diese in **MFC in einer statischen Bibliothek verwenden**.  
+   3. Suchen Sie unter **Projektstandards**die Option **Verwendung von MFC**. Die aktuelle Einstellung wird in der rechten Spalte des Rasters angezeigt. Klicken Sie auf die aktuelle Einstellung, und ändern Sie diese in **MFC in einer statischen Bibliothek verwenden**.  
   
-   4.  Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **C/C++** , und wählen Sie **Präprozessor**aus. Suchen Sie im Eigenschaftsraster die Option **Präprozessordefinitionen** , und ersetzen Sie "NDEBUG" durch "_DEBUG".  
+   4. Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **C/C++** , und wählen Sie **Präprozessor**aus. Suchen Sie im Eigenschaftsraster die Option **Präprozessordefinitionen** , und ersetzen Sie "NDEBUG" durch "_DEBUG".  
   
-   5.  Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **Linker** , und wählen Sie die Kategorie **Eingabe** aus. Suchen Sie im Eigenschaftsraster die Option **Zusätzliche Abhängigkeiten**. Geben Sie in der Einstellung **Zusätzliche Abhängigkeiten** "NAFXCWD.LIB" und "LIBCMT" ein.  
+   5. Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **Linker** , und wählen Sie die Kategorie **Eingabe** aus. Suchen Sie im Eigenschaftsraster die Option **Zusätzliche Abhängigkeiten**. Geben Sie in der Einstellung **Zusätzliche Abhängigkeiten** "NAFXCWD.LIB" und "LIBCMT" ein.  
   
-   6.  Klicken Sie auf **OK** , um die neuen Buildoptionen zu speichern und das Dialogfeld **Eigenschaftenseiten** zu schließen.  
+   6. Klicken Sie auf **OK** , um die neuen Buildoptionen zu speichern und das Dialogfeld **Eigenschaftenseiten** zu schließen.  
   
 5. Wählen Sie im Menü **Erstellen** die Option **Neu erstellen**. Dadurch werden alle Debuginformationen aus den Modulen entfernt, was sich jedoch nicht auf die MFC-Bibliothek auswirkt.  
   
 6. Jetzt müssen Sie den ausgewählten Modulen in der Anwendung wieder Debuginformationen hinzufügen. Dabei ist zu beachten, dass das Festlegen von Haltepunkten und das Ausführen anderer Debuggerfunktionen nur in Modulen möglich ist, die mit Debuginformationen kompiliert wurden. Führen Sie die folgenden Schritte für jede Projektdatei aus, in der Debuginformationen enthalten sein sollen:  
   
-   1.  Öffnen Sie im Projektmappen-Explorer den Ordner **Quelldateien** unterhalb des Projekts.  
+   1. Öffnen Sie im Projektmappen-Explorer den Ordner **Quelldateien** unterhalb des Projekts.  
   
-   2.  Markieren Sie die Datei, für die Debuginformationen festgelegt werden sollen.  
+   2. Markieren Sie die Datei, für die Debuginformationen festgelegt werden sollen.  
   
-   3.  Wählen Sie im Menü **Ansicht** die Option **Eigenschaftenseiten**aus.  
+   3. Wählen Sie im Menü **Ansicht** die Option **Eigenschaftenseiten**aus.  
   
-   4.  Öffnen Sie im Dialogfeld **Eigenschaftenseiten** unter dem Ordner **Konfigurationseinstellungen** den Ordner **C/C++** , und wählen Sie die Kategorie **Allgemein** aus.  
+   4. Öffnen Sie im Dialogfeld **Eigenschaftenseiten** unter dem Ordner **Konfigurationseinstellungen** den Ordner **C/C++** , und wählen Sie die Kategorie **Allgemein** aus.  
   
-   5.  Suchen Sie im Eigenschaftsraster die Option **Debuginformationsformat.**  
+   5. Suchen Sie im Eigenschaftsraster die Option **Debuginformationsformat.**  
   
-   6.  Klicken Sie auf die Einstellungen **Debuginformationsformat** , und wählen sie die für die Debuginformationen gewünschte Option (gewöhnlich **/ZI**) aus.  
+   6. Klicken Sie auf die Einstellungen **Debuginformationsformat** , und wählen sie die für die Debuginformationen gewünschte Option (gewöhnlich **/ZI**) aus.  
   
-   7.  Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++**, Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.  
+   7. Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++**, Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.  
   
 7. Klicken Sie im Menü **Erstellen** auf **Erstellen** , um veraltete Projektdateien neu zu erstellen.  
   

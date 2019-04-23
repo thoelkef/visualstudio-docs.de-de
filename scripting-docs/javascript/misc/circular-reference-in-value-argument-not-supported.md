@@ -15,19 +15,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1235c8b1bb7b815b5f26e0ffb744c31a3575ba81
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063997"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Zirkelverweis in Wertargument nicht unterstützt
 Wurde versucht, aufzurufen `JSON.stringify` mit einem Wert, der ungültig ist. Die `value` Argument, ein Array oder Objekt enthält einen Zirkelverweis.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Entfernen Sie den Zirkelverweis aus dem Argument an.  
+- Entfernen Sie den Zirkelverweis aus dem Argument an.  
   
 ## <a name="example"></a>Beispiel  
  Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` enthält einen Verweis auf `mary` und `mary` enthält einen Verweis auf `john`. um den zirkulären Verweis zu entfernen, entfernen Sie entweder oder verworfen Eigenschaft `brother` aus der `mary` Objekt oder die `sister` Eigenschaft aus der `john` Objekt.  

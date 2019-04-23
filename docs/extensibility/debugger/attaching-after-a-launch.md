@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065583"
 ---
 # <a name="attach-after-a-launch"></a>Fügen Sie nach einem Start
 Nachdem ein Programm gestartet hat, kann die Debugsitzung die Debug-Engine (DE) um genannte Anwendung anfügen.
@@ -23,9 +23,9 @@ Nachdem ein Programm gestartet hat, kann die Debugsitzung die Debug-Engine (DE) 
 ## <a name="design-decisions"></a>Entwurfsentscheidungen
  Da die Kommunikation innerhalb einer gemeinsam genutzten Adressraums einfacher ist, müssen Sie zwischen zwei Ansätze für Design auswählen: Legen Sie die Kommunikation zwischen der Debugsitzung und die DE. Oder legen Sie die Kommunikation zwischen dem Code und das Programm. Wählen Sie zwischen den folgenden:
 
--   Wenn sie zum Einrichten der Kommunikation zwischen der Debugsitzung und die DE sinnvoller, wird die Debugsitzung zusammen erstellt die DE, und fordert die DE zum Anfügen an die Anwendung. Dieser Entwurf bewirkt, dass die Debugsitzung und DE zusammen einen Adressraum, und das Runtime-Umgebung und das Programm in einem anderen zusammen.
+- Wenn sie zum Einrichten der Kommunikation zwischen der Debugsitzung und die DE sinnvoller, wird die Debugsitzung zusammen erstellt die DE, und fordert die DE zum Anfügen an die Anwendung. Dieser Entwurf bewirkt, dass die Debugsitzung und DE zusammen einen Adressraum, und das Runtime-Umgebung und das Programm in einem anderen zusammen.
 
--   Wenn es mehr zum Einrichten der Kommunikation zwischen dem Code und das Programm sinnvoll ist, wird die Laufzeitumgebung die DE zusammen erstellt. Dieser Entwurf lässt das SDM in einen Adressraum und die DE-Laufzeitumgebung und Programm zusammen in einer anderen. Dieser Entwurf ist typisch für einer bereitgestellten Kompatibilitätsrichtlinie, die mit einem Interpreter zum Ausführen von Skripts Sprachen implementiert wird.
+- Wenn es mehr zum Einrichten der Kommunikation zwischen dem Code und das Programm sinnvoll ist, wird die Laufzeitumgebung die DE zusammen erstellt. Dieser Entwurf lässt das SDM in einen Adressraum und die DE-Laufzeitumgebung und Programm zusammen in einer anderen. Dieser Entwurf ist typisch für einer bereitgestellten Kompatibilitätsrichtlinie, die mit einem Interpreter zum Ausführen von Skripts Sprachen implementiert wird.
 
     > [!NOTE]
     >  Wie die DE für das Programm angefügt wird, ist implementierungsabhängig. Kommunikation zwischen dem Code und das Programm ist auch abhängig von der Implementierung.

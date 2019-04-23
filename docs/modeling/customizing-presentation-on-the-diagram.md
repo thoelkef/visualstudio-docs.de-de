@@ -9,29 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99cd0704c74da1e3f31363c5847260e39d844a41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19f63ebc662b745062f0163a1f82eb036e164f3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046513"
 ---
-# <a name="customizing-presentation-on-the-diagram"></a>Anpassen der Darstellung im Diagramm
-Das Diagramm ist der Hauptpräsentationsbereich eines domänenspezifischen Sprach-Designers. Normalerweise konstruieren die Benutzer ihre Modelle mit dem Diagramm. Sie können das Diagramm wie in den folgenden Themen beschrieben anpassen.
+# <a name="customize-presentation-on-the-diagram"></a>Anpassen der Darstellung im Diagramm
 
--   [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
+Das Diagramm ist der Hauptpräsentationsbereich eines domänenspezifischen Sprach-Designers. Normalerweise konstruieren die Benutzer ihre Modelle mit dem Diagramm. Sie können das Diagramm anpassen, wie in den folgenden Artikeln beschrieben:
 
--   [Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen](../modeling/controlling-color-line-style-and-other-shape-properties.md)
+- [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 
--   [Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
+- [Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen](../modeling/controlling-color-line-style-and-other-shape-properties.md)
 
--   [Anpassen von Text- und Image-Feldern](../modeling/customizing-text-and-image-fields.md)
+- [Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
 
--   [Festlegen eines Hintergrundbilds für ein Diagramm](../modeling/setting-a-background-image-on-a-diagram.md)
+- [Anpassen von Text- und Image-Feldern](../modeling/customizing-text-and-image-fields.md)
 
--   [Verschachteln von Formen](../modeling/nesting-shapes.md)
+- [Festlegen eines Hintergrundbilds für ein Diagramm](../modeling/setting-a-background-image-on-a-diagram.md)
 
--   [Einbetten eines Diagramms in Windows Form](../modeling/embedding-a-diagram-in-a-windows-form.md)
+- [Einbetten eines Diagramms in Windows Form](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044605"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer interne
   
  Die IDE verwendet auch den RDT an diesem (Verschieben in den Vordergrund) einem geöffneten Dokument, wenn ein Benutzer das Dokument anfordert. Weitere Informationen finden Sie unter [Anzeigen von Dateien mithilfe des Befehls der geöffneten Datei](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Bestimmt, ob eine Datei geöffnet, in der RDT ist, führen Sie eine der folgenden.  
   
--   Abfrage für den dokumentmoniker (d. h. der vollständigen Dokuments-Pfad), um herauszufinden, ob das Element geöffnet ist.  
+- Abfrage für den dokumentmoniker (d. h. der vollständigen Dokuments-Pfad), um herauszufinden, ob das Element geöffnet ist.  
   
--   Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.  
+- Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.  
   
 ## <a name="see-also"></a>Siehe auch  
  [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   

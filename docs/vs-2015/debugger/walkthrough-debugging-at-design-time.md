@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046148"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterrou
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>So erreichen Sie Haltepunkte über das Direktfenster  
   
-1.  Fügen Sie den folgenden Code in eine Visual Basic-Konsolenanwendung ein:  
+1. Fügen Sie den folgenden Code in eine Visual Basic-Konsolenanwendung ein:  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ Sie können Visual Studio **direkt** Fenster aus, um eine Funktion oder Unterrou
     End Module  
     ```  
   
-2.  Legen Sie einen Haltepunkt an der Zeile `s="Add BreakPoint Here"` fest.  
+2. Legen Sie einen Haltepunkt an der Zeile `s="Add BreakPoint Here"` fest.  
   
-3.  Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
+3. Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
   
-4.  Stellen Sie sicher, dass der Haltepunkt erreicht wurde und dass die Aufrufliste korrekt ist.  
+4. Stellen Sie sicher, dass der Haltepunkt erreicht wurde und dass die Aufrufliste korrekt ist.  
   
-5.  Auf der **Debuggen** Menü klicken Sie auf **Weiter**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus sind.  
+5. Auf der **Debuggen** Menü klicken Sie auf **Weiter**, und stellen Sie sicher, dass Sie immer noch im Entwurfsmodus sind.  
   
-6.  Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
+6. Geben Sie Folgendes in die **direkt** Fenster: `?MyFunction<enter>`  
   
-7.  Geben Sie Folgendes in die **direkt** Fenster: `?MySub<enter>`  
+7. Geben Sie Folgendes in die **direkt** Fenster: `?MySub<enter>`  
   
-8.  Stellen Sie sicher, dass Sie den Haltepunkt, und überprüfen Sie den Wert der statischen Variablen `i` in die **"lokal"** Fenster. Sie sollte den Wert 3 haben.  
+8. Stellen Sie sicher, dass Sie den Haltepunkt, und überprüfen Sie den Wert der statischen Variablen `i` in die **"lokal"** Fenster. Sie sollte den Wert 3 haben.  
   
 9. Überprüfen Sie, dass die Aufrufliste korrekt ist.  
   

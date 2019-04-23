@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044692"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Einbetten eines Diagramms in Windows Form
 
@@ -20,15 +20,15 @@ Sie können einem DSL-Diagramm in einem Windows-Steuerelement, einbetten, die in
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Einbetten von einem DSL-Diagramm in einem Windows-Steuerelement
 
-1.  Fügen Sie einen neuen **Benutzersteuerelement** Datei DslPackage-Projekt.
+1. Fügen Sie einen neuen **Benutzersteuerelement** Datei DslPackage-Projekt.
 
-2.  Fügen Sie ein Panel-Steuerelement, auf das Benutzersteuerelement. In diesem Bereich wird das DSL-Diagramm enthalten.
+2. Fügen Sie ein Panel-Steuerelement, auf das Benutzersteuerelement. In diesem Bereich wird das DSL-Diagramm enthalten.
 
      Fügen Sie andere Steuerelemente, die erforderlich sind.
 
      Legen Sie die Anker-Eigenschaften der Steuerelemente.
 
-3.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste der Benutzersteuerelement-Datei, und klicken Sie auf **Ansichtscode**. Fügen Sie diesen Konstruktor und die Variable auf den Code hinzu:
+3. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste der Benutzersteuerelement-Datei, und klicken Sie auf **Ansichtscode**. Fügen Sie diesen Konstruktor und die Variable auf den Code hinzu:
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ Sie können einem DSL-Diagramm in einem Windows-Steuerelement, einbetten, die in
     private MyDSLDocView docView;
     ```
 
-4.  Fügen Sie eine neue Datei in das DslPackage-Projekt mit dem folgenden Inhalt hinzu:
+4. Fügen Sie eine neue Datei in das DslPackage-Projekt mit dem folgenden Inhalt hinzu:
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ Sie können einem DSL-Diagramm in einem Windows-Steuerelement, einbetten, die in
     } } } }
     ```
 
-5.  Um die DSL zu testen, indem Sie **F5** , und öffnen Sie eine beispielmodelldatei. Das Diagramm auf das Steuerelement angezeigt wird. Die Toolbox und andere Funktionen funktionieren ordnungsgemäß.
+5. Um die DSL zu testen, indem Sie **F5** , und öffnen Sie eine beispielmodelldatei. Das Diagramm auf das Steuerelement angezeigt wird. Die Toolbox und andere Funktionen funktionieren ordnungsgemäß.
 
 ## <a name="update-the-form-using-store-events"></a>Aktualisieren Sie das Formular mit Speicherereignisse
 
-1.  Fügen Sie in den Formular-Designer eine **ListBox** mit dem Namen `listBox1`. Dadurch wird eine Liste der Elemente im Modell angezeigt. Es wieder synchronisiert wird, mit dem Modell mit *Speichern von Ereignissen*. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Fügen Sie in den Formular-Designer eine **ListBox** mit dem Namen `listBox1`. Dadurch wird eine Liste der Elemente im Modell angezeigt. Es wieder synchronisiert wird, mit dem Modell mit *Speichern von Ereignissen*. Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  Überschreiben Sie in der Datei mit benutzerdefiniertem Code weitere Methoden, um die DocView--Klasse:
+2. Überschreiben Sie in der Datei mit benutzerdefiniertem Code weitere Methoden, um die DocView--Klasse:
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ Sie können einem DSL-Diagramm in einem Windows-Steuerelement, einbetten, die in
      }
     ```
 
-3.  Fügen Sie in den Code-behind das Benutzersteuerelement Methoden zum Lauschen auf die Elemente hinzugefügt und entfernt:
+3. Fügen Sie in den Code-behind das Benutzersteuerelement Methoden zum Lauschen auf die Elemente hinzugefügt und entfernt:
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ Sie können einem DSL-Diagramm in einem Windows-Steuerelement, einbetten, die in
     }
     ```
 
-4.  Um die DSL zu testen, indem Sie **F5** und in der experimentellen Instanz von Visual Studio, öffnen Sie eine beispielmodelldatei.
+4. Um die DSL zu testen, indem Sie **F5** und in der experimentellen Instanz von Visual Studio, öffnen Sie eine beispielmodelldatei.
 
      Beachten Sie, dass im Listenfeld eine Liste der Elemente im Modell angezeigt wird und er korrekt ist, nachdem alle Hinzufügungen oder löschungen und rückgängig und wiederholen.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065108"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – die Eigenschaften
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Notieren Sie die in der Meldung genannten Eigenschaften.  
+1. Notieren Sie die in der Meldung genannten Eigenschaften.  
   
-2.  Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
+2. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
   
-3.  Überprüfen Sie die **Zuordnungseigenschaften**, und wählen Sie Eigenschaften des gleichen Datentyps aus.  
+3. Überprüfen Sie die **Zuordnungseigenschaften**, und wählen Sie Eigenschaften des gleichen Datentyps aus.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen einer Zuordnung (Beziehung) zwischen LINQ to SQL-Klassen (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

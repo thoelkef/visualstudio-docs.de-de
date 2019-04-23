@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065739"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von UWP-Apps aus Visual Studio
 
@@ -36,18 +36,18 @@ Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debu
 
 - Bereitstellen einer App, deren Debugging beim Start durch eine andere App oder Methode erfolgen soll.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Gewusst wie: Bereitstellen einer UWP-app
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Gewusst wie: Bereitstellen einer UWP-app
  Das manuelle Bereitstellen einer App ist ein einfacher Vorgang:
 
-1.  Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)
+1. Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)
 
-2.  Wählen Sie auf der Debugger-Symbolleiste von Visual Studio das Bereitstellungsziel aus der Dropdownliste neben der Schaltfläche **Debuggen starten** aus.
+2. Wählen Sie auf der Debugger-Symbolleiste von Visual Studio das Bereitstellungsziel aus der Dropdownliste neben der Schaltfläche **Debuggen starten** aus.
 
      ![Führen Sie auf dem lokalen Computer](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Klicken Sie im Menü **Erstellen** auf **Bereitstellen**.
+3. Klicken Sie im Menü **Erstellen** auf **Bereitstellen**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Festlegen eines Remotegeräts
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Festlegen eines Remotegeräts
 
 **Erforderliche Komponenten**
 
@@ -92,7 +92,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
 
 10. Geben Sie den Netzwerknamen des Remotegeräts in das Feld **Remotecomputer** ein oder klicken Sie auf **Suchen** , um das Gerät im Dialogfeld **Remotedebuggerverbindung auswählen** auszuwählen.
 
-##  <a name="BKMK_Deployment_options"></a> Bereitstellungsoptionen
+## <a name="BKMK_Deployment_options"></a> Bereitstellungsoptionen
 
 Sie können die folgenden Bereitstellungsoptionen auf der Debugeigenschaftenseite für das Startprojekt festlegen.
 

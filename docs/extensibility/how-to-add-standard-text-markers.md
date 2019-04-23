@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ad7dd9ef83f9de3cfe406dc4fda2cd00837464
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060084"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Vorgehensweise: Standard-Text-Marker hinzufügen
 Verwenden Sie das folgende Verfahren zum Erstellen der standardmäßigen Text Markertypen im Lieferumfang der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor.
 
 ## <a name="to-create-a-text-marker"></a>Erstellen ein textmarkers
 
-1.  Je nachdem, ob Sie einem ein- oder zweidimensionalen Koordinatensystem verwenden, rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> Methode oder der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> Methode, um eine neue textmarkierung zu erstellen.
+1. Je nachdem, ob Sie einem ein- oder zweidimensionalen Koordinatensystem verwenden, rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> Methode oder der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> Methode, um eine neue textmarkierung zu erstellen.
 
      Geben Sie in diesem Methodenaufruf einen Markertyp, einen Textbereich, den Marker aus, zu erstellen und ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle. Diese Methode gibt dann einen Zeiger auf die neu erstellte textmarkierung. Markertypen stammen aus der <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> Enumeration. Geben Sie eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle, wenn Sie über Markerereignissen informiert werden möchten.
 
@@ -34,15 +34,15 @@ Verwenden Sie das folgende Verfahren zum Erstellen der standardmäßigen Text Ma
 
 ### <a name="to-add-a-custom-command-to-the-context-menu"></a>Hinzufügen ein benutzerdefiniertes Befehls zum Kontextmenü
 
-1.  Bevor das Kontextmenü angezeigt wird, wird die Umgebung Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> -Methode und übergeben Sie einen Zeiger auf die textmarkierung betroffen und die Anzahl der Befehl im Kontextmenü des Elements.
+1. Bevor das Kontextmenü angezeigt wird, wird die Umgebung Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> -Methode und übergeben Sie einen Zeiger auf die textmarkierung betroffen und die Anzahl der Befehl im Kontextmenü des Elements.
 
      Die Haltepunkt-spezifische Befehle im Kontextmenü kann beispielsweise **Haltepunkt entfernen** über **Neuer Haltepunkt**, wie im folgenden Screenshot angezeigt.
 
      ![Marker-Kontextmenü](../extensibility/media/vsmarkercontextmenu.gif "VsMarkercontextmenu")
 
-2.  Geben Sie Text identifiziert den Namen des benutzerdefinierten Befehls zurück. Z. B. **Haltepunkt entfernen** möglicherweise ein benutzerdefinierter Befehl aus, wenn die Umgebung nicht bereits er angegeben wurde. Sie auch übergeben zurück, ob der Befehl unterstützt, verfügbar und aktiviert ist, bzw. eine Umschaltfläche aktivieren / deaktivieren. Die Umgebung verwendet diese Informationen, um den benutzerdefinierten Befehl im Kontextmenü in korrekter Weise anzuzeigen.
+2. Geben Sie Text identifiziert den Namen des benutzerdefinierten Befehls zurück. Z. B. **Haltepunkt entfernen** möglicherweise ein benutzerdefinierter Befehl aus, wenn die Umgebung nicht bereits er angegeben wurde. Sie auch übergeben zurück, ob der Befehl unterstützt, verfügbar und aktiviert ist, bzw. eine Umschaltfläche aktivieren / deaktivieren. Die Umgebung verwendet diese Informationen, um den benutzerdefinierten Befehl im Kontextmenü in korrekter Weise anzuzeigen.
 
-3.  Zum Ausführen des Befehls, der die Umgebung Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> Methode und übergeben Sie einen Zeiger auf die textmarkierung und die Anzahl des Befehls aus dem Kontextmenü ausgewählt.
+3. Zum Ausführen des Befehls, der die Umgebung Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> Methode und übergeben Sie einen Zeiger auf die textmarkierung und die Anzahl des Befehls aus dem Kontextmenü ausgewählt.
 
      Verwenden Sie diese Informationen aus diesen Aufruf zum Ausführen der Aktionen der textmarkierung des benutzerdefinierten Befehls bestimmt.
 

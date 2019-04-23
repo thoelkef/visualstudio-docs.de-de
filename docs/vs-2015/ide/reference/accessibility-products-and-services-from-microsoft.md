@@ -19,30 +19,30 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048074"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Die folgenden Themen enthalten Informationen über die Funktionen, Produkte und Dienste, die Menschen mit Behinderungen die Verwendung von Microsoft Windows erleichtern:  
   
--   [Barrierefreiheitsfeatures in Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
+- [Barrierefreiheitsfeatures in Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
   
--   [Dokumentation in alternativen Formaten](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
+- [Dokumentation in alternativen Formaten](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
   
--   [Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
+- [Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
   
--   [Weitere Informationen](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
+- [Weitere Informationen](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
 >  Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.  
   
-##  <a name="windows"></a> Barrierefreiheitsfeatures in Windows  
+## <a name="windows"></a> Barrierefreiheitsfeatures in Windows  
  Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
 ### <a name="free-step-by-step-tutorials"></a>Kostenlose schrittweise Lernprogramme  
@@ -55,7 +55,7 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
   
  Wenn Sie Hilfstechnologien verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren.  
   
-##  <a name="altfortmats"></a> Dokumentation in alternativen Formaten  
+## <a name="altfortmats"></a> Dokumentation in alternativen Formaten  
  Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
  Weitere Microsoft-Veröffentlichungen erhalten Sie bei Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D verteilt diese Dokumente an registrierte, berechtigte Mitglieder ihres Vertriebsdienstes. Wenn Sie Informationen über die Verfügbarkeit von Microsoft-Produktdokumentation und Büchern von Microsoft Press benötigen, wenden Sie sich an:  
@@ -66,7 +66,7 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
   
  Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.  
   
-##  <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs  
+## <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs  
  Wenn Sie taub oder schwerhörig sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundensupportdienste von Microsoft zugreifen:  
   
 - Um das Microsoft Sales Information Center über ein Texttelefon zu erreichen, wählen Sie die Nummer (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr amerikanischer Zeit (Westen), Montag bis Freitag, außer an Feiertagen.  
@@ -75,7 +75,7 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
   
   Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.  
   
-##  <a name="moreinfo"></a> Weitere Informationen  
+## <a name="moreinfo"></a> Weitere Informationen  
  Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
 ## <a name="see-also"></a>Siehe auch  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047812"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
 Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer erfüllen müssen, können Sie Modelle als Teil der Beschreibung von Gesamtstruktur und das Verhalten des Softwaresystems oder der Anwendung in Visual Studio erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
@@ -28,9 +28,9 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 
  Die Architektur eines Systems kann in zwei Bereiche unterteilt werden:
 
--   [Allgemeiner Entwurf](#Structure). Dieser Begriff beschreibt die Hauptkomponenten und ihre Interaktion zum Erfüllen der einzelnen Anforderungen. Wenn es sich um ein umfangreiches System handelt, kann jede Komponente über einen eigenen allgemeinen Entwurf verfügen, der darstellt, wie er aus kleineren Komponenten zusammengesetzt ist.
+- [Allgemeiner Entwurf](#Structure). Dieser Begriff beschreibt die Hauptkomponenten und ihre Interaktion zum Erfüllen der einzelnen Anforderungen. Wenn es sich um ein umfangreiches System handelt, kann jede Komponente über einen eigenen allgemeinen Entwurf verfügen, der darstellt, wie er aus kleineren Komponenten zusammengesetzt ist.
 
--   [Entwurfsmuster](#Patterns) und Konventionen, die in allen Entwürfen der Komponenten verwendet. Ein Muster beschreibt eine bestimmte Methode zum Erreichen eines Programmierziels. Wenn das Team während des gesamten Entwurfs die gleichen Entwurfsmuster verwendet, lässt sich der Aufwand zum Durchführen von Änderungen und Entwickeln neuer Software verringern.
+- [Entwurfsmuster](#Patterns) und Konventionen, die in allen Entwürfen der Komponenten verwendet. Ein Muster beschreibt eine bestimmte Methode zum Erreichen eines Programmierziels. Wenn das Team während des gesamten Entwurfs die gleichen Entwurfsmuster verwendet, lässt sich der Aufwand zum Durchführen von Änderungen und Entwickeln neuer Software verringern.
 
 ## <a name="Structure"></a> Allgemeiner Entwurf
  Ein allgemeiner Entwurf beschreibt die Hauptkomponenten des Systems und ihre Interaktion zum Erreichen der Ziele des Entwurfs. Das Entwickeln des allgemeinen Entwurfs umfasst die Aktivitäten in der folgenden Liste, wenn auch nicht unbedingt in einer bestimmten Reihenfolge.
@@ -39,11 +39,11 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 
  In jedem Fall ist es hilfreich, die verschiedenen Aktivitäten parallel zu entwickeln und Code und Tests bereits in einer frühen Phase zu entwerfen. Versuchen Sie nicht, einen dieser Aspekte abzuschließen, bevor Sie mit einem anderen Aspekt beginnen. In der Regel ändern sich sowohl die Anforderungen als auch Ihre Auffassung von dem besten Verfahren zum Entwerfen des Systems, während Sie den Code schreiben und testen. Daher sollten Sie zunächst die Hauptmerkmale der Anforderungen und des Entwurfs ermitteln und codieren. Behandeln Sie die Details in späteren Iterationen des Projekts.
 
--   [Grundlegendes zu den Anforderungen](#Requirements). Der Ausgangspunkt jedes Entwurfs sind fundierte Kenntnisse der Benutzeranforderungen.
+- [Grundlegendes zu den Anforderungen](#Requirements). Der Ausgangspunkt jedes Entwurfs sind fundierte Kenntnisse der Benutzeranforderungen.
 
--   [Architektonische Muster](#BigDecisions). Die Kerntechnologien und Architekturelemente des Systems, die Sie ausgewählt haben.
+- [Architektonische Muster](#BigDecisions). Die Kerntechnologien und Architekturelemente des Systems, die Sie ausgewählt haben.
 
--   Datenmodell der Komponenten und Schnittstellen. Sie können Klassendiagramme zeichnen, um die Informationen zu beschreiben, die zwischen Komponenten übergeben und in den Komponenten gespeichert werden.
+- Datenmodell der Komponenten und Schnittstellen. Sie können Klassendiagramme zeichnen, um die Informationen zu beschreiben, die zwischen Komponenten übergeben und in den Komponenten gespeichert werden.
 
 ## <a name="Requirements"></a> Grundlegendes zu den Anforderungen
  Der allgemeine Entwurf für eine vollständige Anwendung wird am effektivsten zusammen mit einem Anforderungsmodell oder einer anderen Beschreibung der Benutzeranforderungen entwickelt. Weitere Informationen über Anforderungsmodelle finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
 
  Ein Entwurfsmuster wird in einem Dokument beschrieben, und es enthält in der Regel die folgenden Teile:
 
--   Name.
+- Name.
 
--   Eine Beschreibung des Kontexts, in dem es anwendbar ist. Aufgrund welcher Kriterien sollte der Entwickler das Anwenden des Musters in Betracht ziehen?
+- Eine Beschreibung des Kontexts, in dem es anwendbar ist. Aufgrund welcher Kriterien sollte der Entwickler das Anwenden des Musters in Betracht ziehen?
 
--   Eine kurze Erläuterung des Problems, das durch das Muster gelöst wird.
+- Eine kurze Erläuterung des Problems, das durch das Muster gelöst wird.
 
--   Ein Modell der Hauptbestandteile und ihrer Beziehungen. Dabei kann es sich um Klassen oder Komponenten und Schnittstellen handeln, mit Zuordnungen und Abhängigkeiten zwischen ihnen. Die Elemente gehören normalerweise zu einer von zwei Kategorien:
+- Ein Modell der Hauptbestandteile und ihrer Beziehungen. Dabei kann es sich um Klassen oder Komponenten und Schnittstellen handeln, mit Zuordnungen und Abhängigkeiten zwischen ihnen. Die Elemente gehören normalerweise zu einer von zwei Kategorien:
 
--   Benennungskonventionen
+- Benennungskonventionen
 
--   Eine Beschreibung, wie das Muster das Problem löst.
+- Eine Beschreibung, wie das Muster das Problem löst.
 
--   Eine Beschreibung von Varianten, die Entwickler möglicherweise anwenden können.
+- Eine Beschreibung von Varianten, die Entwickler möglicherweise anwenden können.
 
 ## <a name="see-also"></a>Siehe auch
 

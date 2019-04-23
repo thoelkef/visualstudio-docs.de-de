@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045536"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen.
 
@@ -100,13 +100,13 @@ Geprüfte Blöcke werden nicht unterstützt, [!INCLUDE[vbprvb](../code-quality/i
 
 Wenn Sie aktiviert arithmetischen Über-/Unterlauf in C# -Code aktivieren, entspricht es umbruchvorgang jede ganze Zahl in einem aktivierten Block.
 
-Um überprüfte arithmetischen Über-/Unterlauf in C# zu aktivieren:
+Um überprüfte arithmetischen Über-/Unterlauf in c# zu aktivieren:
 
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 
-2.  Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
+2. Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
 
-3.  Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
+3. Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 
