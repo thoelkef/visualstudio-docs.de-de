@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118109"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Dieser Abschnitt enthält alle VSPackage sammlungsbezogene Schnittstellen in der
   
  Schnittstellen sind:  
   
--   Erforderlich: Die entsprechende Entität (Datenquellen-Steuerelement VSPackage, Quellcode-Verwaltungsstub Projekt) muss die Schnittstelle implementieren.  
+- Erforderlich: Die entsprechende Entität (Datenquellen-Steuerelement VSPackage, Quellcode-Verwaltungsstub Projekt) muss die Schnittstelle implementieren.  
   
--   Empfohlen: Die Entität sollten diese Schnittstelle implementieren; Andernfalls kann Quellcodeverwaltungsfunktionen beschränkt sein.  
+- Empfohlen: Die Entität sollten diese Schnittstelle implementieren; Andernfalls kann Quellcodeverwaltungsfunktionen beschränkt sein.  
   
--   Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.  
+- Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.  
   
 |Interface|Zweck|Implementiert von|Implementiert werden?|  
 |---------------|-------------|--------------------|----------------|  

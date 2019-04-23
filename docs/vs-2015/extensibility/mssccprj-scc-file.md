@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117719"
 ---
 # <a name="mssccprjscc-file"></a>Datei „MSSCCPRJ.SCC“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Wenn Visual Studio-Projektmappe oder das Projekt unter quellcodeverwaltung, die 
   
  Eines Quellcodeverwaltungs-Plug-in, das die MSSCCPRJ unterstützt. SCC-Datei muss die folgenden Richtlinien eingehalten werden:  
   
--   Es kann nur eine MSSCCPRJ vorhanden sein. SCC-Datei pro Verzeichnis.  
+- Es kann nur eine MSSCCPRJ vorhanden sein. SCC-Datei pro Verzeichnis.  
   
--   Ein MSSCCPRJ. SCC-Datei kann die "AuxPath" und "Projektname" für mehrere Dateien enthalten, die in der quellcodeverwaltung in einem angegebenen Verzeichnis befinden.  
+- Ein MSSCCPRJ. SCC-Datei kann die "AuxPath" und "Projektname" für mehrere Dateien enthalten, die in der quellcodeverwaltung in einem angegebenen Verzeichnis befinden.  
   
--   Die Zeichenfolge "AuxPath" darf keine Anführungszeichen in die Datei haben. Es ist zulässig, die Anführungszeichen als Trennzeichen verwendet haben (z. B. ein Paar von Anführungszeichen kann an eine leere Zeichenfolge verwendet werden). Beim Lesen aus der MSSCCPRJ, wird die IDE alle Angebote aus der Zeichenfolge "AuxPath" entfernen. SCC-Datei.  
+- Die Zeichenfolge "AuxPath" darf keine Anführungszeichen in die Datei haben. Es ist zulässig, die Anführungszeichen als Trennzeichen verwendet haben (z. B. ein Paar von Anführungszeichen kann an eine leere Zeichenfolge verwendet werden). Beim Lesen aus der MSSCCPRJ, wird die IDE alle Angebote aus der Zeichenfolge "AuxPath" entfernen. SCC-Datei.  
   
--   Die Zeichenfolge "Projektname" in der MSSCCPRJ. SCC-Datei muss genau mit die Zeichenfolge zurückgegeben, die aus entsprechen den `SccGetProjPath` Funktion. Wenn die Zeichenfolge, die von der Funktion zurückgegebene Anführungszeichen, die Zeichenfolge in die MSSCCPRJ hat. SCC-Datei müssen die Anführungszeichen um es herum (und umgekehrt).  
+- Die Zeichenfolge "Projektname" in der MSSCCPRJ. SCC-Datei muss genau mit die Zeichenfolge zurückgegeben, die aus entsprechen den `SccGetProjPath` Funktion. Wenn die Zeichenfolge, die von der Funktion zurückgegebene Anführungszeichen, die Zeichenfolge in die MSSCCPRJ hat. SCC-Datei müssen die Anführungszeichen um es herum (und umgekehrt).  
   
--   Ein MSSCCPRJ. SCC-Datei erstellt oder aktualisiert, wenn eine Datei unter quellcodeverwaltung gestellt wird.  
+- Ein MSSCCPRJ. SCC-Datei erstellt oder aktualisiert, wenn eine Datei unter quellcodeverwaltung gestellt wird.  
   
--   Wenn ein MSSCCPRJ. SCC-Datei gelöscht wird, wird ein Anbieter sollte es das nächste Mal wird einen Quellcodeverwaltungsvorgang zu diesem Verzeichnis generieren.  
+- Wenn ein MSSCCPRJ. SCC-Datei gelöscht wird, wird ein Anbieter sollte es das nächste Mal wird einen Quellcodeverwaltungsvorgang zu diesem Verzeichnis generieren.  
   
--   Ein MSSCCPRJ. SCC-Datei muss genau mit dem definierte Format folgen.  
+- Ein MSSCCPRJ. SCC-Datei muss genau mit dem definierte Format folgen.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Eine Abbildung der MSSCCPRJ. SCC-Dateiformat  
  Es folgt ein Beispiel für die MSSCCPRJ. SCC-Dateiformat (die Zeilennummern werden nur als Leitfaden bereitgestellt und sollte nicht in der Datei Text enthalten sein):  

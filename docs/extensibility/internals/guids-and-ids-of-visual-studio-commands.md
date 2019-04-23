@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096131"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs von Visual Studio-Befehle
 Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthaltenen Befehle werden in der VSCT-Dateien definiert, die als Teil der Visual Studio SDK installiert sind. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -52,11 +52,11 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
 ### <a name="special-cases"></a>Sonderfälle
  In den folgenden Fällen den Menütext oder QuickInfo-Text entspricht möglicherweise nicht exakt neuerungen in der Befehlsdefinition.
 
--   Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü, in dem die *P* unterstrichen ist.
+- Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü, in dem die *P* unterstrichen ist.
 
      Zeichen, die das kaufmännische und-Zeichen vorangestellt werden (&) Zeichen in der Elementnamen im Menü angezeigt werden unterstrichen angezeigt. Allerdings *VSCT* Dateien werden geschrieben, in XML, das das kaufmännische und-Zeichen (&) verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, die angezeigt wird, werden als geschrieben werden muss  *&amp;Amp;*. Aus diesem Grund in einer *VSCT* -Datei, die **Drucken** -Befehl angezeigt wird, als  *&amp;Amp; Drucken*.
 
--   Befehle, die dynamischer Text, z. B. auf **speichern** \<aktuellen Dateinamen\>, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.
+- Befehle, die dynamischer Text, z. B. auf **speichern** \<aktuellen Dateinamen\>, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.
 
      Es ist keine zuverlässige Möglichkeit, die dynamischer Text suchen. Stattdessen finden Sie eine Gruppe, die den gewünschten Befehl von consulting hostet [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs von Visual Studio-Symbolleiste](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), und suchen Sie auf die ID dieser Gruppe. Wenn die Befehlsdefinition keinen die Gruppe als seine [übergeordnetes Element](../../extensibility/parent-element.md), Search *SharedCmdPlace.vsct* und *ShellCmdPlace.vsct* (oder  *VsDbgCmdPlace.vsct* für Debuggerbefehle) für eine `<CommandPlacement>` -Element, das das übergeordnete Element des Befehls legt diese fest. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*, und *VsDbgCmdPlace.vsct* befinden sich in der *\<Visual Studio SDK-Installationspfad\>\ VisualStudioIntegration\Common\Inc\\* Ordner.
 

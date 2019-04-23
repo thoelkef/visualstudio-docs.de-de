@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118252"
 ---
 # <a name="how-to-attach-to-script"></a>Vorgehensweise: Anfügen an ein Skript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ In diesem Thema wird erläutert, wie der Visual Studio-Debugger zum Debuggen ma
   
 2. Überprüfen Sie im Dialogfeld **An den Prozess anhängen** die Liste **Verfügbare Prozesse**, und suchen Sie den Skriptprozess, mit dem Sie eine Verbindung herstellen möchten. Sie können Skriptprozesse anhand der Spalte **Typ** identifizieren.  
   
-   1.  Wenn der zu debuggende Prozess auf einem anderen Computer ausgeführt wird, müssen Sie zunächst diesen Remotecomputer auswählen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen eines Remotecomputers](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Wenn der zu debuggende Prozess auf einem anderen Computer ausgeführt wird, müssen Sie zunächst diesen Remotecomputer auswählen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen eines Remotecomputers](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-   2.  Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .  
+   2. Wenn der Prozess unter einem anderen Benutzerkonto ausgeführt wird, aktivieren Sie das Kontrollkästchen **Prozesse aller Benutzer anzeigen** .  
   
-   3.  Wenn Sie über eine **Remotedesktopverbindung** verbunden sind, aktivieren Sie das Kontrollkästchen **Prozesse in allen Sitzungen anzeigen**.  
+   3. Wenn Sie über eine **Remotedesktopverbindung** verbunden sind, aktivieren Sie das Kontrollkästchen **Prozesse in allen Sitzungen anzeigen**.  
   
 3. Klicken Sie auf den Prozess, mit dem eine Verbindung hergestellt werden soll.  
   
 4. In der **Anfügen an** Feld sollte **Skriptcode** oder **automatische: Skriptcode**. Wenn etwas anderes angezeigt wird, führen Sie die folgenden Schritte aus:  
   
-   1.  Klicken Sie auf **Auswählen**.  
+   1. Klicken Sie auf **Auswählen**.  
   
-   2.  Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen**, und wählen Sie **Skript** aus.  
+   2. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen**, und wählen Sie **Skript** aus.  
   
-   3.  Klicken Sie auf **OK**.  
+   3. Klicken Sie auf **OK**.  
   
 5. Klicken Sie auf **Anfügen**aus.  
   

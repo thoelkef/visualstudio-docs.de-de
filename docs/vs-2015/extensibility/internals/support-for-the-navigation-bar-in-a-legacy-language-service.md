@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117940"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützen der Navigationsleiste in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   Eine Implementierung der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode in der Regel führt die folgenden Schritte aus:  
   
-1.  Ruft eine Liste der aktuellen Deklarationen für die Quelldatei.  
+1. Ruft eine Liste der aktuellen Deklarationen für die Quelldatei.  
   
      Es gibt eine Reihe von Möglichkeiten zum Auffüllen der Listen. Ein Ansatz besteht darin, erstellen Sie eine benutzerdefinierte Methode in Ihrer Version von der <xref:Microsoft.VisualStudio.Package.LanguageService> -Klasse, die Aufrufe der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode mit einem Grund für die benutzerdefinierte Analyse, die eine Liste mit allen Deklarationen zurückgibt. Ein anderer Ansatz ist möglicherweise rufen Sie die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode direkt aus der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode mit dem Grund für die benutzerdefinierte Analyse. Ein dritter Ansatz ist möglicherweise die Deklarationen in den cache der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, die von der letzten vollständigen Analysevorgang in zurückgegebenen der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse und abzurufen, die von der <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode.  
   
-2.  Füllen Sie auf und aktualisieren Sie die Liste der Typen.  
+2. Füllen Sie auf und aktualisieren Sie die Liste der Typen.  
   
      Der Inhalt der Liste der Typen sollten aktualisiert werden, wenn die Quelle geändert hat oder wenn Sie ausgewählt haben, so ändern Sie den Textstil der Typen basierend auf der aktuellen Position der Einfügemarke. Diese Position übergeben, um die <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> Methode.  
   
-3.  Bestimmen Sie den Typ, wählen Sie in der Liste der Typen basierend auf der aktuellen Position der Einfügemarke ein.  
+3. Bestimmen Sie den Typ, wählen Sie in der Liste der Typen basierend auf der aktuellen Position der Einfügemarke ein.  
   
      Sie können Suchen in Schritt 1 fest, um den Typ zu suchen, der von der aktuellen Position der Einfügemarke enthält, Deklarationen, die abgerufen wurden und suchen Sie dann die Liste der Typen für diesen Typ, dessen Index in der Liste der Typen zu ermitteln.  
   
-4.  Füllen Sie auf und aktualisieren Sie die Liste der Mitglieder basierend auf den ausgewählten Typ.  
+4. Füllen Sie auf und aktualisieren Sie die Liste der Mitglieder basierend auf den ausgewählten Typ.  
   
      Die Mitgliederliste spiegelt wider, was derzeit angezeigt wird, in der **Mitglieder** Dropdown-Liste. Der Inhalt der Liste Elemente müssen möglicherweise aktualisiert werden, wenn die Quelle geändert hat, oder Sie werden nur die Elemente des ausgewählten Typs angezeigt, und der ausgewählte Typ geändert wurde. Wenn Sie alle Elemente in der Quelldatei angezeigt, auch und klicken Sie dann der Textstil für jedes Elements in der Liste muss aktualisiert werden, wenn der aktuell ausgewählte Typ geändert wurde.  
   
-5.  Bestimmen Sie das Element, wählen Sie in der Liste der Mitglieder basierend auf der aktuellen Position der Einfügemarke ein.  
+5. Bestimmen Sie das Element, wählen Sie in der Liste der Mitglieder basierend auf der aktuellen Position der Einfügemarke ein.  
   
      Suchen Sie die Deklarationen, die abgerufen wurden in Schritt 1, für das Element, das der aktuellen Position der Einfügemarke enthält, und suchen Sie die Liste der Elemente für dieses Element aus, um zu bestimmen, dessen Index in der Memberliste aus.  
   
-6.  Zurückgeben `true` Wenn Änderungen in den Listen oder die Auswahl in einer der Listen vorgenommen wurden.
+6. Zurückgeben `true` Wenn Änderungen in den Listen oder die Auswahl in einer der Listen vorgenommen wurden.

@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080558"
 ---
 # <a name="searching-the-schema-set"></a>Durchsuchen des Schemasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im XML-Schema-Explorer stehen Ihnen die folgenden Methoden zum Durchsuchen des Schemasets zur Verfügung:  
   
--   Schlüsselwortsuche  
+- Schlüsselwortsuche  
   
--   Schemaspezifische Suche  
+- Schemaspezifische Suche  
   
 ## <a name="keyword-search"></a>Schlüsselwortsuche  
  Durchführen von Schlüsselwortsuchen durch Eingabe einer Teilzeichenfolge in der **Schlüsselwortsuche** Textfeld der XML-Schema-Explorer-Symbolleiste.  
@@ -32,11 +32,11 @@ Im XML-Schema-Explorer stehen Ihnen die folgenden Methoden zum Durchsuchen des S
   
  Der XML-Schema-Explorer durchsucht das Schemaset nach Folgendem:  
   
--   Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. So können Sie anhand des Namens nach Elementen, Attributen, Typen usw. suchen.  
+- Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. So können Sie anhand des Namens nach Elementen, Attributen, Typen usw. suchen.  
   
--   Die `schemaLocation`-Attribute von Include-Anweisungen.  
+- Die `schemaLocation`-Attribute von Include-Anweisungen.  
   
--   Die `namespace`-Attribute von Import-Anweisungen.  
+- Die `namespace`-Attribute von Import-Anweisungen.  
   
 ## <a name="schema-specific-search"></a>Schemaspezifische Suche  
  Der XML-Schema-Explorer enthält auch integrierte Suchfunktionen, auf die Sie über das Kontextmenü des XML-Schema-Explorers zugreifen. Weitere Informationen zu verfügbaren Kontextmenüs finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md). Sie können auch eine schemaspezifische Suche aus der Ausgangsansicht ausführen; Weitere Informationen finden Sie im Abschnitt "Details zum Schemaset" in der [Ausgangsansicht](../xml-tools/start-view.md) Thema.  

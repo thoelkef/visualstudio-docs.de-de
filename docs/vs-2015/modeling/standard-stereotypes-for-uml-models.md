@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116588"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardstereotype für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,37 +41,37 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>So verknüpfen Sie ein Profil mit einem Modell oder einem Paket  
   
-1.  Open **UML-Modell-Explorer**. Auf der **Architektur** Startmenü **Windows**, und klicken Sie dann auf **UML-Modell-Explorer**.  
+1. Open **UML-Modell-Explorer**. Auf der **Architektur** Startmenü **Windows**, und klicken Sie dann auf **UML-Modell-Explorer**.  
   
-2.  Suchen Sie ein Paket oder ein Modell, das alle Elemente enthält, auf die Sie die Stereotype im Profil anwenden möchten.  
+2. Suchen Sie ein Paket oder ein Modell, das alle Elemente enthält, auf die Sie die Stereotype im Profil anwenden möchten.  
   
-3.  Mit der rechten Maustaste das Paket oder das Modell, und klicken Sie dann auf **Eigenschaften**.  
+3. Mit der rechten Maustaste das Paket oder das Modell, und klicken Sie dann auf **Eigenschaften**.  
   
-4.  In der **Eigenschaften** legen die **Profile** Eigenschaft, um die gewünschten Profile fest.  
+4. In der **Eigenschaften** legen die **Profile** Eigenschaft, um die gewünschten Profile fest.  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>So entfernen Sie den Link zwischen einem Profil und einem Modell oder einem Paket  
   
-1.  Klicken Sie im UML-Modell-Explorer mit der rechten Maustaste das Modell oder Paket, und klicken Sie dann auf **Eigenschaften**.  
+1. Klicken Sie im UML-Modell-Explorer mit der rechten Maustaste das Modell oder Paket, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Legen Sie im Fenster Eigenschaften die **Profile** als leere Eigenschaft.  
+2. Legen Sie im Fenster Eigenschaften die **Profile** als leere Eigenschaft.  
   
     > [!NOTE]
     >  Sie können die Verknüpfung eines Profils nur aufheben, wenn keines der Elemente im Modell oder Paket die Stereotype dieses Profils verwendet.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>So wenden Sie ein Stereotyp auf ein Modellelement an  
   
-1.  Mit der rechten Maustaste in des Modellelements in einem Diagramm oder im **UML-Modell-Explorer**, und klicken Sie dann auf **Eigenschaften**.  
+1. Mit der rechten Maustaste in des Modellelements in einem Diagramm oder im **UML-Modell-Explorer**, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die **Stereotype** Eigenschaft, und wählen Sie die Stereotype, die Sie anwenden möchten.  
+2. Klicken Sie auf die **Stereotype** Eigenschaft, und wählen Sie die Stereotype, die Sie anwenden möchten.  
   
      Für die meisten Arten von Elementen werden die ausgewählten Stereotype innerhalb von Chevrons (« ») im Modellelement angezeigt.  
   
     > [!NOTE]
     >  Wenn Sie nicht sehen können die **Stereotype** -Eigenschaft, oder wenn das gewünschte Stereotyp nicht angezeigt wird, stellen Sie sicher, dass das Modellelement in einem Paket oder ein Modell ist, das entsprechende Profil verknüpft wurde.  
   
-3.  Einige Stereotype ermöglichen es Ihnen, die Werte zusätzlicher Eigenschaften für das Modellelement festzulegen. Um diese Eigenschaften anzuzeigen, erweitern Sie die **Stereotype** Eigenschaft.  
+3. Einige Stereotype ermöglichen es Ihnen, die Werte zusätzlicher Eigenschaften für das Modellelement festzulegen. Um diese Eigenschaften anzuzeigen, erweitern Sie die **Stereotype** Eigenschaft.  
   
-###  <a name="L2"></a> UML-Standardprofil L2  
+### <a name="L2"></a> UML-Standardprofil L2  
  Die folgenden Stereotype können verwendet werden, um die spezifische Bedeutung von UML-Modellelementen anzugeben, es sei denn, der Link zum Profil wurde aus dem Modell entfernt.  
   
  Die genaue Bedeutung dieser Stereotype wird durch die lokalen Konventionen bestimmt, sowie ggf. durch Tools, mit denen Sie möglicherweise das Modell verarbeiten.  
@@ -111,7 +111,7 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
 |Typ|Klasse|Gibt das Verhalten eines Objekts an, ohne anzugeben, wie es implementiert wird. Ein Objekt ist ein Member eines Typs, wenn es der Spezifikation entspricht.|  
 |utility|Klasse|Eine Auflistung von statischen Funktionen. Die Klasse verfügt über keine Instanzen.|  
   
-###  <a name="L3"></a> UML-Standardprofil L3  
+### <a name="L3"></a> UML-Standardprofil L3  
  Die folgenden Stereotype können verwendet werden, um die spezifische Bedeutung von UML-Modellelementen anzugeben, es sei denn, die Verknüpfung des Profils mit dem Modell wurde aufgehoben.  
   
  Die genaue Bedeutung dieser Stereotype wird durch die lokalen Konventionen bestimmt, sowie ggf. durch Tools, mit denen Sie möglicherweise das Modell verarbeiten.  
@@ -122,7 +122,7 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
 |metaModel|Modell|Definiert eine Modellierungssprache, z. B. eine Variante von UML, oder eine domänenspezifische Sprache.|  
 |systemModel|Modell|Ein Modell, bei dem es sich um eine Auflistung von Modellen handelt, die auf das gleiche System angewendet werden, z. B. eine Spezifikation, eine Realisierung, sowie Ablaufverfolgungsbeziehungen zwischen diesen.|  
   
-##  <a name="NetProfile"></a> C#-Profil  
+## <a name="NetProfile"></a> C#-Profil  
  Mit den in diesem Profil definierten Stereotypen können Sie angeben, dass ein Modellelement zur Übersetzung in Programmcode vorgesehen ist. Jedes Stereotyp definiert zusätzliche Eigenschaften, die Sie für das Modellelement festlegen können.  
   
  Um diese Stereotype verfügbar zu machen, verknüpfen Sie ein Modell oder ein Paket mit dem C#-Profil. Sie können dann die Stereotype auf Modellelemente in diesem Modell oder Paket anwenden.  

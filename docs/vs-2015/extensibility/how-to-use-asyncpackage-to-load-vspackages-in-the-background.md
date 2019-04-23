@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091667"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Vorgehensweise: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konvertieren Sie einen vorhandenen VSPackage in von AsyncPackage  
  Der Großteil der Arbeit entspricht dem Erstellen eines neuen **von AsyncPackage**. Sie müssen die Schritte 1 bis 5. Außerdem müssen Sie besondere Vorsicht für Folgendes ausführen:  
   
-1.  Denken Sie daran, entfernen Sie die **initialisieren** außer Kraft setzen, die Sie in Ihrem Paket haben.  
+1. Denken Sie daran, entfernen Sie die **initialisieren** außer Kraft setzen, die Sie in Ihrem Paket haben.  
   
-2.  Vermeiden von Deadlocks: Möglicherweise gibt es ausgeblendet RPCs in Ihrem Code die jetzt in einem Hintergrundthread ausgeführt. Sie müssen sicherstellen, dass wenn Sie RPC vornehmen (z. B. **"GetService"**), müssen Sie entweder (1) wechseln, an den primären Thread oder (2) verwenden die asynchrone Version der API eine vorhanden ist (z. B. **GetServiceAsync**).  
+2. Vermeiden von Deadlocks: Möglicherweise gibt es ausgeblendet RPCs in Ihrem Code die jetzt in einem Hintergrundthread ausgeführt. Sie müssen sicherstellen, dass wenn Sie RPC vornehmen (z. B. **"GetService"**), müssen Sie entweder (1) wechseln, an den primären Thread oder (2) verwenden die asynchrone Version der API eine vorhanden ist (z. B. **GetServiceAsync**).  
   
-3.  Wechseln Sie nicht zwischen den Threads zu häufig. Versuchen Sie es, um die Arbeit zu lokalisieren, die in einem Hintergrundthread auftreten können. Dies reduziert die Ladezeit.  
+3. Wechseln Sie nicht zwischen den Threads zu häufig. Versuchen Sie es, um die Arbeit zu lokalisieren, die in einem Hintergrundthread auftreten können. Dies reduziert die Ladezeit.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Abfragen von Diensten von AsyncPackage  
  Ein **von AsyncPackage** kann oder möglicherweise je nach den Aufrufer nicht asynchron geladen. Zum Beispiel  

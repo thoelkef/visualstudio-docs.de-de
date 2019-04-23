@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089368"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Aktualisieren und Migrieren von Office-Projektmappen
   Wenn Sie über ein Microsoft Office-Projekt verfügen, das in einer früheren Version von Visual Studio erstellt wurde, müssen Sie das Projekt aktualisieren, um es in der aktuellen Version von Visual Studio verwenden zu können. Um ein Microsoft Office-Projekt zu aktualisieren, öffnen Sie es in einer Version von Visual Studio, die die Microsoft Office-Entwicklertools umfasst. Weitere Informationen zu den Versionen von Visual Studio, die die Microsoft Office Developer Tools einschließen, finden Sie unter [konfigurieren ein Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635708"
 ## <a name="changes-to-upgraded-projects"></a>Änderungen an aktualisierten Projekten
  Wenn Sie ein Microsoft Office-Projekt aktualisieren, ändert Visual Studio das Projekt so, dass die folgenden Elemente als Ziel verwendet werden:
 
--   Visual Studio 2010-Tools für Office-Laufzeit. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Visual Studio 2010-Tools für Office-Laufzeit. Weitere Informationen finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Die aktuellen Assemblyverweise.
+- Die aktuellen Assemblyverweise.
 
--   Eine Version von .NET Framework, die vom Projekttyp unterstützt wird (nur bei einem Upgrade auf Visual Studio 2013).
+- Eine Version von .NET Framework, die vom Projekttyp unterstützt wird (nur bei einem Upgrade auf Visual Studio 2013).
 
--   Eine Version von Microsoft Office, die vom Projekttyp unterstützt wird (nur bei einem Upgrade auf Visual Studio 2013).
+- Eine Version von Microsoft Office, die vom Projekttyp unterstützt wird (nur bei einem Upgrade auf Visual Studio 2013).
 
 ## <a name="assembly-references"></a>Assemblyverweise
  Die folgenden Assemblyverweise im Projekt werden aktualisiert:
 
--   Primäre Interop-Assemblys für Microsoft Office (PIAS).
+- Primäre Interop-Assemblys für Microsoft Office (PIAS).
 
--   Assemblys in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Weitere Informationen zu diesen Assemblys finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Assemblys in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Weitere Informationen zu diesen Assemblys finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Neue oder aktualisierte Versionen abhängiger Assemblys.
+- Neue oder aktualisierte Versionen abhängiger Assemblys.
 
 ## <a name="targeted-net-framework"></a>Als Ziel festgelegte .NET Framework-Version
  Wenn Sie ein Upgrade eines Projekts auf Visual Studio 2013 ausführen, ändert Visual Studio das Projekt für die Verwendung von [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] oder [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]als Zielversion. Die vom Projekt als Ziel verwendete Version von .NET Framework hängt davon ab, welche Version von Office auf dem Computer installiert ist. Wenn nur [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] installiert ist, ändert Visual Studio das Projekt für die Verwendung von [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]als Ziel. Andernfalls ändert Visual Studio das Projekt für die Verwendung von [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]als Ziel.

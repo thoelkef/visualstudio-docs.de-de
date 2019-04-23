@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117628"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
   
 ### <a name="to-remove-dependencies-from-projects"></a>So entfernen Sie Abhängigkeiten aus Projekten  
   
-1.  Wählen Sie im Projektmappen-Explorer ein Projekt aus.  
+1. Wählen Sie im Projektmappen-Explorer ein Projekt aus.  
   
-2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.  
+2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.  
   
      Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.  
   
     > [!NOTE]
     >  Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
   
-3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
+3. Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
   
-4.  Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.  
+4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

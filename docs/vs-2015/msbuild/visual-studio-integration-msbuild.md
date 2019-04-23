@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117498"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Prozessinterne Compiler  
  Aus Gründen der Leistungssteigerung wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nach Möglichkeit die prozessinterne Version des [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Compilers verwendet. (Nicht zutreffend für [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Dazu müssen die folgenden Bedingungen erfüllt sein:  
   
--   Ein Ziel des Projekts muss bei `Vbc`-Projekten die Aufgabe mit dem Namen [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enthalten.  
+- Ein Ziel des Projekts muss bei `Vbc`-Projekten die Aufgabe mit dem Namen [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] enthalten.  
   
--   Der `UseHostCompilerIfAvailable` -Parameter der Aufgabe muss auf true festgelegt sein.  
+- Der `UseHostCompilerIfAvailable` -Parameter der Aufgabe muss auf true festgelegt sein.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense zur Entwurfszeit  
  Zum Aufrufen der IntelliSense-Unterstützung in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vor dem Generieren einer Ausgabeassembly in einem Build müssen die folgenden Bedingungen erfüllt sein:  
   
--   Ein Ziel mit dem Namen `Compile`muss vorliegen.  
+- Ein Ziel mit dem Namen `Compile`muss vorliegen.  
   
--   Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss die Kompilieraufgabe für das Projekt aufgerufen werden, z. B. `Csc` oder `Vbc`.  
+- Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss die Kompilieraufgabe für das Projekt aufgerufen werden, z. B. `Csc` oder `Vbc`.  
   
--   Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss der Compiler so eingerichtet werden, dass alle erforderlichen Parameter für IntelliSense, vor allem alle Verweise, empfangen werden.  
+- Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss der Compiler so eingerichtet werden, dass alle erforderlichen Parameter für IntelliSense, vor allem alle Verweise, empfangen werden.  
   
--   Die im Abschnitt "Prozessinterne Compiler" aufgeführten Bedingungen müssen erfüllt sein.  
+- Die im Abschnitt "Prozessinterne Compiler" aufgeführten Bedingungen müssen erfüllt sein.  
   
 ## <a name="building-solutions"></a>Erstellen von Projektmappen  
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird die Anordnung der Projektmappendateien und Projektbuilds über [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gesteuert. Beim Erstellen einer Projektmappe an der Befehlszeile mit msbuild.exe analysiert [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die Projektmappendatei und ordnet die Projektbuilds an. In beiden Fällen werden die Projekte einzeln in der Reihenfolge der Abhängigkeiten erstellt. Gleichzeitig werden Verweise zwischen Projekten nicht durchlaufen. Wenn hingegen einzelne Projekte mit msbuild.exe erstellt werden, werden Verweise zwischen Projekten durchlaufen.  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Zielausführung zur Entwurfszeit  
  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird beim Laden eines Projekts versucht, Ziele mit bestimmten Namen auszuführen. Zu diesen Zielen gehören `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` und `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] führt diese Ziele aus, sodass der Compiler zum Bereitstellen von IntelliSense initialisiert, der Debugger initialisiert und die im Projektmappen-Explorer angezeigten Verweise aufgelöst werden können. Wenn die Ziele nicht vorhanden sind, wird das Projekt ordnungsgemäß geladen und erstellt, bei Vorgängen zur Entwurfszeit in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können jedoch nicht alle Funktionen ausgeführt werden.  
   
-##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Wenn Sie ein [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt direkt bearbeiten möchten, können Sie die Projektdatei im XML-Editor von Visual Studio von öffnen.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>So entladen und bearbeiten Sie eine Projektdatei in Visual Studio  
   
-1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen**aus.  
+1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen**aus.  
   
      Das Projekt ist als **(nicht verfügbar)** gekennzeichnet.  
   
-2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Projektdatei> bearbeiten** aus.  
+2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Projektdatei> bearbeiten** aus.  
   
      Die Projektdatei wird im XML-Editor von Visual Studio geöffnet.  
   
-3.  Bearbeiten, speichern und schließen Sie dann die Projektdatei.  
+3. Bearbeiten, speichern und schließen Sie dann die Projektdatei.  
   
-4.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.  
+4. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung  
  Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „*\<Visual Studio-Installationsverzeichnis>* \Xml\Schemas\1033\MSBuild“ befindet.  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Auflösen von Verweisen  
  Verweisauflösung ist der Prozess, bei dem die in einer Projektdatei gespeicherten Verweiselemente verwendet werden, um tatsächliche Assemblys zu suchen. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss die Verweisauflösung initiieren, um ausführliche Eigenschaften für jeden Verweis im **Eigenschaftenfenster** anzuzeigen. In der folgenden Liste werden die drei Verweistypen sowie deren Auflösung beschrieben.  
   
--   Assemblyverweise:  
+- Assemblyverweise:  
   
      Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
   
-    -   `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
+    - `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
   
-    -   `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
+    - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
   
-    -   `ResolvedFrom` wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aufgelöst wurde.  
+    - `ResolvedFrom` wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aufgelöst wurde.  
   
--   COM-Verweise:  
+- COM-Verweise:  
   
      Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveCOMReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ComReferenceWrappers`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation mit dem vollständigen Pfad zur Interop-Assembly für den entsprechenden Verweis verfügen. Die Elemente müssen über alle Metadaten der übergebenen Eingabeelemente sowie über neue Metadaten mit dem Namen `CopyLocal`verfügen, mit denen über die Festlegung auf true oder false angegeben wird, ob die Assembly in den Ausgabeordner kopiert werden soll.  
   
--   Systemeigene Verweise  
+- Systemeigene Verweise  
   
      Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveNativeReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `NativeReferenceFile`erstellt werden. Die Elemente müssen über alle Metadaten der übergebenen Eingabeelemente sowie über neue Metadaten mit dem Namen `OriginalItemSpec`mit der ursprünglichen Elementspezifikation des entsprechenden Verweises verfügen.  
   

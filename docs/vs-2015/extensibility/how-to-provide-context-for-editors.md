@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a74acbcf3da16d7b8e2ac68e761719a6192a2b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116516"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Vorgehensweise: Bereitstellen von Kontext für Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,44 +32,44 @@ Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt,
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Um eine Kontextsammlung für einen Editor oder Designer zu erstellen.  
   
-1.  Rufen Sie `QueryService` auf Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> eine Schnittstelle für die <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> Service.  
+1. Rufen Sie `QueryService` auf Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> eine Schnittstelle für die <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> Service.  
   
      Ein Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> -Schnittstelle wird zurückgegeben.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> Methode, um einen neuen Kontext oder unterkontextbehälter Behälter zu erstellen.  
+2. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> Methode, um einen neuen Kontext oder unterkontextbehälter Behälter zu erstellen.  
   
      Ein Zeiger auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> -Schnittstelle wird zurückgegeben.  
   
-3.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> -Methode zum Hinzufügen von Attributen, die Suche Schlüsselwörter oder die F1-Schlüsselwörter zum Kontext-oder unterkontextbehälter.  
+3. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> -Methode zum Hinzufügen von Attributen, die Suche Schlüsselwörter oder die F1-Schlüsselwörter zum Kontext-oder unterkontextbehälter.  
   
-4.  Wenn Sie eine unterkontextsammlung erstellen, rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> Methode, um den unterkontextbehälter mit der übergeordneten Kontextsammlung verknüpft.  
+4. Wenn Sie eine unterkontextsammlung erstellen, rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> Methode, um den unterkontextbehälter mit der übergeordneten Kontextsammlung verknüpft.  
   
-5.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> benachrichtigt bei der **dynamische Hilfe** Fenster ist, zu aktualisieren.  
+5. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> benachrichtigt bei der **dynamische Hilfe** Fenster ist, zu aktualisieren.  
   
      Mit der **dynamische Hilfe** Fenster rufen Sie den Editor bereit zum Aktualisieren von wird er bietet Ihnen die Möglichkeit, verzögern, ändern den Kontext, bis das Update auftritt. Auf diese Weise kann die Leistung verbessern, da dadurch zu verzögern, zeitaufwändige Algorithmen ausgeführt, bis System-Leerlaufzeit verfügbar ist.  
   
 ### <a name="to-publish-the-context-bag-to-the-seid"></a>Die Kontextsammlung auf die SEID veröffentlichen  
   
-1.  Rufen Sie `QueryService` auf die <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> Dienst zur Rückgabe eines Zeigers auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> Schnittstelle.  
+1. Rufen Sie `QueryService` auf die <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> Dienst zur Rückgabe eines Zeigers auf die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> Schnittstelle.  
   
-2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, einen Elementbezeichner angeben (`elementid` Parameter) Wert SEID_UserContext, um anzugeben, dass Sie bis zur globalen Ebene Kontext übergeben.  
+2. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, einen Elementbezeichner angeben (`elementid` Parameter) Wert SEID_UserContext, um anzugeben, dass Sie bis zur globalen Ebene Kontext übergeben.  
   
-3.  Wenn der Editor oder Designer aktiviert wird, die Werte in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> Objekt an die globale Auswahl weitergegeben werden. Sie müssen nur dieser Prozess einmal pro Sitzung abgeschlossen, und speichern Sie den Zeiger auf den globalen Kontext erstellt, wenn Sie aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
+3. Wenn der Editor oder Designer aktiviert wird, die Werte in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> Objekt an die globale Auswahl weitergegeben werden. Sie müssen nur dieser Prozess einmal pro Sitzung abgeschlossen, und speichern Sie den Zeiger auf den globalen Kontext erstellt, wenn Sie aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
   
 ### <a name="to-maintain-the-context-bag"></a>Um den kontextbehälter zu verwalten.  
   
-1.  Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> um sicherzustellen, dass die **dynamische Hilfe** Fenster Editor oder Designer aufgerufen, bevor sie aktualisiert.  
+1. Implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> um sicherzustellen, dass die **dynamische Hilfe** Fenster Editor oder Designer aufgerufen, bevor sie aktualisiert.  
   
      Für jede Kontextsammlung, die aufgerufen wird, verfügt über <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> nach der kontextbehälter erstellt wird und implementiert hat <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, die IDE-Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> , dem Kontextanbieter benachrichtigen, dass es sich bei der kontextbehälter aktualisiert werden. Können Sie diesen Aufruf so ändern Sie die Attribute und Schlüsselwörter, die in den kontextbehälter und alle unterkontextbehälter, bevor die **dynamische Hilfe** fensterupdate auftritt.  
   
-2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> auf den kontextbehälter, um anzugeben, dass Editor oder Designer der neuen Kontext aus.  
+2. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> auf den kontextbehälter, um anzugeben, dass Editor oder Designer der neuen Kontext aus.  
   
      Wenn die **dynamische Hilfe** Fenster Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> , um anzugeben, dass es aktualisiert, Editor oder Designer aktualisiert den Kontext entsprechend der übergeordneten Kontextsammlung sowohl für alle unterkontextbehälter zu diesem Zeitpunkt.  
   
     > [!NOTE]
     >  Die `SetDirty` Kennzeichen auf automatisch eingestellt ist `true` jedes Mal, wenn Kontext hinzugefügt oder entfernt Sie aus dem kontextbehälter. Die **dynamische Hilfe** Fenster nur Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> auf den kontextbehälter Wenn die `SetDirty` ergebniskennzeichen auf `true`. Er wird zurückgesetzt, um `false` nach dem Update.  
   
-3.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> , um die Sammlung von aktiven Kontext Kontext hinzuzufügen oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> Kontext zu entfernen.  
+3. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> , um die Sammlung von aktiven Kontext Kontext hinzuzufügen oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> Kontext zu entfernen.  
   
 ## <a name="robust-programming"></a>Stabile Programmierung  
  Wenn Sie Ihren eigenen Editor schreiben, müssen Sie alle drei der Verfahren in diesem Thema, um den Kontext für den Editor bieten abschließen.  

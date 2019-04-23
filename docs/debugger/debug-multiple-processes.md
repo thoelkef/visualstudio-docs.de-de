@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9c592663e32b8050644d459b8db45f3f0f5307
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097140"
 ---
-# <a name="debug-multiple-processes-c-visual-basic-c"></a>Debuggen mehrerer Prozesse (C#, Visual Basic, C++)
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>Debuggen mehrerer Prozesse (C#, Visual Basic C++)
 
 Eine Lösung, die über mehrere Prozesse verfügt, können von Visual Studio debuggen. Starten und Wechseln zwischen Prozessen, unterbrechen, fortsetzen, und Durchlaufen der Quelle, das Debuggen beendet und End oder Trennen von einzelnen Prozessen.
 
@@ -48,11 +48,11 @@ So debuggen Sie ein Projekt aus **Projektmappen-Explorer** ohne dass sie das Sta
 
 1. Wählen Sie **aktuelle Auswahl**, **einzelnes Startprojekt** und eine Projektdatei oder **mehrere Startprojekte**.
 
-   Bei Auswahl von **mehrere Startprojekte**, können Sie die Startreihenfolge und die Aktion für jedes Projekt zu ändern: **starten**, **Starten ohne debugging**, oder **Keine**.
+   Bei Auswahl von **mehrere Startprojekte**, können Sie die Startreihenfolge und die Aktion für jedes Projekt zu ändern: **Starten Sie**, **Starten ohne debugging**, oder **keine**.
 
 1. Wählen Sie **übernehmen**, oder **OK** zu übernehmen und das Dialogfeld zu schließen.
 
-###  <a name="BKMK_Attach_to_a_process"></a> Anfügen an einen Prozess
+### <a name="BKMK_Attach_to_a_process"></a> Anfügen an einen Prozess
 
 Der Debugger kann auch *Anfügen* in apps, die in Prozessen außerhalb von Visual Studio, einschließlich auf Remotegeräten ausgeführt. Nachdem Sie eine app anfügen, können Sie Visual Studio-Debugger verwenden. Debuggen von Features kann beschränkt sein. Es hängt ab, ob die app mit Debuginformationen erstellt wurde, ob Sie Zugriff auf den Quellcode der app haben und gibt an, ob der JIT-Compiler Debuginformationen verfolgt.
 
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugg
 >[!NOTE]
 >Auch wenn sich das untergeordnete Projekt in derselben Projektmappe befindet, wird der Debugger nicht automatisch an einen untergeordneten Prozess angefügt, der durch einen debuggten Prozess gestartet wird. Um einen untergeordneten Prozess zu debuggen, an den untergeordneten Prozess angefügt werden, nachdem es gestartet wurde, oder konfigurieren Sie den Windows Registrierungs-Editor, um den untergeordneten Prozess in eine neue Instanz der Debugger zu starten.
 
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Verwenden Sie den Registrierungs-Editor für den automatischen start von einem Prozess im debugger
+### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Verwenden Sie den Registrierungs-Editor für den automatischen start von einem Prozess im debugger
 
 In einigen Fällen müssen Sie den Startcode für eine app zu debuggen, die von einem anderen Prozess gestartet wird. Zu den Beispielen hierfür gehören Dienste und benutzerdefinierte Setupaktionen. Sie können den Debugger starten, und fügen automatisch an die Anwendung verwenden.
 
@@ -93,7 +93,7 @@ In einigen Fällen müssen Sie den Startcode für eine app zu debuggen, die von 
 
    ![Für automatischen debuggerstart Eintrag im regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "für automatischen debuggerstart Eintrag im regedit.exe")
 
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Debuggen mit mehreren Prozessen
+## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Debuggen mit mehreren Prozessen
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Debuggen einer app mit mehreren Prozessen wirkt sich auf wichtige zum schrittweisen und Fortfahren Debuggerbefehle alle Prozesse standardmäßig. Z. B. wenn ein Prozess an einem Haltepunkt angehalten wird, wird die Ausführung aller anderen Prozesse auch angehalten. Sie können dieses Standardverhalten ändern, um mehr Kontrolle über die Ziele von Ausführungsbefehlen zu erhalten.
@@ -102,7 +102,7 @@ Debuggen einer app mit mehreren Prozessen wirkt sich auf wichtige zum schrittwei
 
 - Klicken Sie unter **Tools** (oder **Debuggen**) > **Optionen** > **Debuggen** > **Allgemein**aktivieren oder Deaktivieren der **alle Prozesse anhalten, wenn ein Prozess anhält** Kontrollkästchen.
 
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Befehle für Unterbrechen, Durchlaufen und Fortsetzen
+### <a name="BKMK_Break__step__and_continue_commands"></a> Befehle für Unterbrechen, Durchlaufen und Fortsetzen
 
 Die folgende Tabelle beschreibt die Verhalten des Debuggens Befehle, wenn die **alle Prozesse anhalten, wenn ein Prozess anhält** das Kontrollkästchen aktiviert oder deaktiviert wird:
 
@@ -117,12 +117,12 @@ Die folgende Tabelle beschreibt die Verhalten des Debuggens Befehle, wenn die **
 |**Prozesse** Fenster > **Prozess anhalten**|Nicht zutreffend|Der ausgewählte Prozess wird angehalten.<br />Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|
 |**Prozesse** Fenster > **Prozess fortsetzen**|Nicht zutreffend|Der ausgewählte Prozess wird fortgesetzt.<br />Andere Prozesse behalten ihren vorhandenen Zustand bei (angehaltener Zustand oder Ausführzustand).|
 
-###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Suchen der Quell- und Symboldateien (.pdb)
+### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Suchen der Quell- und Symboldateien (.pdb)
 Um den Quellcode eines Prozesses zu navigieren, werden von der Debugger Zugriff auf die Quelldateien und Symboldateien erforderlich. Weitere Informationen finden Sie unter [Specify symbol (.pdb) and source files (Angeben von Symbol- und Quelldateien (.pdb))](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-Wenn Sie die Dateien für einen Prozess zugreifen können, können Sie navigieren, indem die **Disassembly** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md).
+Wenn Sie die Dateien für einen Prozess zugreifen können, können Sie navigieren, indem die **Disassembly** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md).
 
-###  <a name="BKMK_Switch_between_processes"></a> Wechseln zwischen Prozessen
+### <a name="BKMK_Switch_between_processes"></a> Wechseln zwischen Prozessen
 
 Sie können mit mehreren Prozessen verbunden, wenn Sie Debuggen, aber nur ein Prozess im Debugger aktiv, zu jedem Zeitpunkt ist. Sie können den aktiven bzw. *aktuellen* Prozess auf der Symbolleiste **Debugspeicherort** oder im Fenster **Prozesse** festlegen. Um zwischen den Prozessen zu wechseln, müssen sich beide Prozesse im Unterbrechungsmodus befinden.
 

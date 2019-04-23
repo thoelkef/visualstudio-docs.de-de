@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095840"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
 > [!NOTE]
 >  Leistungstools für andere unterstützte Versionen von Windows (Windows 7, Windows Server 2008 R2) haben sich nicht geändert.  
   
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
+## <a name="BKMK_In_this_topic"></a> In diesem Thema  
  [Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
   [Sammeln von Ebeneninteraktionsdaten (TIP-Daten)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE  
+## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE  
  Wenn Sie das Profil für eine Windows Store-App erstellen, die in JavaScript und HTML 5 geschrieben ist, erfassen Sie Instrumentationsdaten für den JavaScript-Code. Wenn Sie das Profil für eine Windows Store-App oder -Komponente erstellen, die in Visual C++, Visual C# oder Visual Basic geschrieben ist, erfassen Sie Samplingdaten für den systemeigenen und verwalteten Code. Sie können das Profil für die App lokal oder auf einem Remotecomputer erstellen.  
   
  Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows Store-Apps erstellt werden:  
@@ -76,19 +76,19 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
   [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden  
+## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Sammeln von Daten aus der Visual Studio-IDE für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden  
  Die Profilerstellung mithilfe der Instrumentationsmethode hat sich unter Windows 8 nicht geändert.  
   
  Die Profilerstellung für die Ebeneninteraktion wird nicht mit der Samplingmethode unterstützt.  
   
-###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden, unter Verwendung von Sampling aus der Visual Studio IDE  
+### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden, unter Verwendung von Sampling aus der Visual Studio IDE  
  Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows 8-Desktopanwendungen oder Windows Server 2012-Anwendungen mithilfe der Samplingmethode erstellt werden:  
   
--   Profilerstellung für Ebeneninteraktion. Das Sammeln von Daten für die Profilerstellung für die Ebeneninteraktion mithilfe der Instrumentation wird unterstützt.  
+- Profilerstellung für Ebeneninteraktion. Das Sammeln von Daten für die Profilerstellung für die Ebeneninteraktion mithilfe der Instrumentation wird unterstützt.  
   
--   Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
+- Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
   
-##  <a name="BKMK_Profiling_from_the_command_line"></a> Profilerstellung mithilfe der Befehlszeile  
+## <a name="BKMK_Profiling_from_the_command_line"></a> Profilerstellung mithilfe der Befehlszeile  
  Sie verwenden zwei Befehlszeilentools, um Profilerstellungsdaten auf Windows 8- und Windows Server 2012-Geräten zu erfassen, einschließlich Geräte, auf denen kein Visual Studio installiert ist:  
   
 |Toolname|Beschreibung|  
@@ -100,22 +100,22 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
  Um Profile für Anwendungen auf Geräten zu erstellen, auf denen Visual Studio nicht installiert ist, führen Sie eines der folgenden Verfahren aus:  
   
--   Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](http://go.microsoft.com/fwlink/?LinkID=219549)herunter.  
+- Laden Sie die Tools als Teil der Remotetools für Visual Studio von der [MSDN-Website](http://go.microsoft.com/fwlink/?LinkID=219549)herunter.  
   
--   Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.  
+- Kopieren Sie das Installationsprogramm für die eigenständigen Profilertools, und führen Sie es von Ihrem Visual Studio-Computer aus. Die Installationsprogramme befinden sich im Ordner *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Wählen Sie das Setupprogramm für das Betriebssystem (x86/x64) des Remotecomputers aus.  
   
 > [!NOTE]
 >  Um Profilerstellungsdaten für die Ebeneninteraktion (TIP-Daten) zu erfassen, müssen Sie den eigenständigen Profiler vom Visual Studio-Computer auf dem Remotecomputer installieren.  
   
  Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows 8- und Windows Server 2012-Anwendungen von der Befehlszeile erstellt werden:  
   
--   Erfassen von Daten von Windows 8- und Windows Server 2012-Web-Apps mithilfe des Samplingmodus mit [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
+- Erfassen von Daten von Windows 8- und Windows Server 2012-Web-Apps mithilfe des Samplingmodus mit [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
   
--   Erfassen von Samplingdaten mit VsPerfCmd.exe.  
+- Erfassen von Samplingdaten mit VsPerfCmd.exe.  
   
--   Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
+- Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
   
-##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Sammeln von Ebeneninteraktionsdaten (TIP-Daten)  
+## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Sammeln von Ebeneninteraktionsdaten (TIP-Daten)  
  Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den Ausführungszeiten der Funktionen von Anwendungen mit mehreren Ebenen, die über ADO.NET-Dienste mit Datenbanken kommunizieren, bereit. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.  
   
  **Visual Studio-Editionen**  

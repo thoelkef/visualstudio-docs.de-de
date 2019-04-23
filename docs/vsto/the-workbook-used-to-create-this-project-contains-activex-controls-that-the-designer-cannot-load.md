@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089353"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Die zum Erstellen des Projekts verwendete Arbeitsmappe enthält ActiveX-Steuerelemente, die vom Designer nicht geladen werden können.
   Dieser Fehler wird angezeigt, wenn Sie ein Steuerelement einem Word-Dokument oder einem Excel-Arbeitsblatt programmgesteuert hinzufügen, das Dokument oder die Arbeitsmappe speichern, und dann eine neue Lösung auf Dokumentebene basierend auf dem Dokument oder der Arbeitsmappe erstellen.
@@ -26,11 +26,11 @@ ms.locfileid: "56638191"
 
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-1.  Öffnen Sie das Dokument oder die Arbeitsmappe.
+1. Öffnen Sie das Dokument oder die Arbeitsmappe.
 
-2.  Entfernen Sie die Steuerelemente, die zur Laufzeit hinzugefügt wurden. Wählen sie im Dokument oder Arbeitsmappe und drücken Sie hierzu die **löschen** Schlüssel.
+2. Entfernen Sie die Steuerelemente, die zur Laufzeit hinzugefügt wurden. Wählen sie im Dokument oder Arbeitsmappe und drücken Sie hierzu die **löschen** Schlüssel.
 
-3.  Erstellen Sie eine Lösung auf Dokumentebene basierend auf dem Dokument oder der Arbeitsmappe.
+3. Erstellen Sie eine Lösung auf Dokumentebene basierend auf dem Dokument oder der Arbeitsmappe.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

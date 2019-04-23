@@ -1,5 +1,5 @@
 ---
-title: Extrahieren Sie die Schnittstelle Refactoring (C#) | Microsoft-Dokumentation
+title: Extrahieren Sie die Schnittstelle Refactoring (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116744"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring „Schnittstelle extrahieren“ (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Schnittstelle extrahieren wird eine Umgestaltungsvorgang, der können eine einfa
   
 ### <a name="to-use-extract-interface"></a>Mit der Schnittstelle extrahieren  
   
-1.  Erstellen Sie eine Konsolenanwendung namens `ExtractInterface`, und Ersetzen Sie `Program` durch den folgenden Code  
+1. Erstellen Sie eine Konsolenanwendung namens `ExtractInterface`, und Ersetzen Sie `Program` durch den folgenden Code  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Schnittstelle extrahieren wird eine Umgestaltungsvorgang, der können eine einfa
     }  
     ```  
   
-2.  Mit dem Cursor im `MethodB`, und klicken Sie auf **Schnittstelle extrahieren** auf die **Umgestalten** Menü.  
+2. Mit dem Cursor im `MethodB`, und klicken Sie auf **Schnittstelle extrahieren** auf die **Umgestalten** Menü.  
   
      Die **Schnittstelle extrahieren** Dialogfeld wird angezeigt.  
   
@@ -53,9 +53,9 @@ Schnittstelle extrahieren wird eine Umgestaltungsvorgang, der können eine einfa
   
      Sie können auch mit der rechten Maustaste der Maus, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Schnittstelle extrahieren** zum Anzeigen der **Schnittstelle extrahieren** Dialogfeld.  
   
-3.  Klicken Sie auf **wählen Sie alle**.  
+3. Klicken Sie auf **wählen Sie alle**.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
      Daraufhin wird die neue Datei, IProtoA.cs und den folgenden Code:  
   

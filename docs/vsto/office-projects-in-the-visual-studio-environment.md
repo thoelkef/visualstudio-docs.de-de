@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091017"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office-Projekten in Visual Studio-Umgebung
   Microsoft Office-Projekte verfügen über eine ähnliche Entwicklungsumgebung wie andere Projekttypen in Visual Studio, z. B. Windows Forms-Projekte. Wenn Sie ein Office-Projekt erstellen oder öffnen, werden die Projektelemente im **Projektmappen-Explorer**angezeigt. Bei Projekten auf Dokumentebene wird das Dokument (d. h. das Word-Dokument oder die Excel-Arbeitsmappe) in Visual Studio geöffnet, und das Dokument verhält sich wie ein visueller Designer.
@@ -73,7 +73,7 @@ ms.locfileid: "54865982"
 ### <a name="temporary-certificates"></a>Temporäre Zertifikate
  Office-Projekte umfassen auch ein temporäres Zertifikat mit dem Namen „ *Projektname*_TemporaryKey.pfx“. Dieses Zertifikat wird verwendet, um während der Entwicklung die Anwendung und die Bereitstellungsmanifeste für das Projekt zu signieren. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md) und [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Ausgeblendete Projektdateien
+### <a name="hiddenfiles"></a> Ausgeblendete Projektdateien
  Mehrere Projektdateien werden standardmäßig ausgeblendet. Diese Dateien werden von Visual Studio generiert und unterscheiden sich anhand des Projekttyps. Um die ausgeblendeten Dateien anzuzeigen, klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
 
  Ändern Sie die ausgeblendeten Projektdateien nicht. Eine direkte Änderung dieser Dateien wird nicht unterstützt und könnte das Projekt beschädigen. Bei bestimmten Änderungen im Dokument werden die ausgeblendeten Projektdateien neu generiert. Wenn Sie manuelle Änderungen an einer ausgeblendeten Projektdatei vornehmen, gehen diese Änderungen verloren, wenn die Datei erneut generiert wird.

@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090802"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
+# <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Mithilfe von Profiler-APIs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die Verwendung von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools-APIs zu veranschaulichen. Verwenden Sie die Profiler-APIs, um die bei der Instrumentierungsprofilerstellung erfasste Datenmenge einzuschränken.  
@@ -36,12 +36,12 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
   
  Für verwalteten Code befinden sich die Profiler-APIs in „Microsoft.VisualStudio.Profiler.dll“. Die DLL finden Sie in dem Microsoft Visual Studio-Verzeichnis 9\Team Tools\Performance Tools. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Profiler>.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  In dieser exemplarischen Vorgehensweise wird angenommen, dass Ihre Entwicklungsumgebung so konfiguriert ist, dass sie Debuggen und Sampling unterstützt. In den folgenden Artikeln wird eine Übersicht über diese Vorgehensweise gegeben:  
   
  [Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)  
   
- [Gewusst wie: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Standardmäßig erfasst der Profiler Daten auf globaler Ebene, wenn er gestartet wird. Über den folgenden Code wird beim Starten des Programms die globale Profilerstellung deaktiviert.  
   
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>So erstellen Sie Code für die Profilerstellung  
   
-1.  Erstellen Sie je nach Vorliebe entweder ein neues C#-Projekt in Visual Studio, oder verwenden Sie einen Befehlszeilenbuild.  
+1. Erstellen Sie je nach Vorliebe entweder ein neues C#-Projekt in Visual Studio, oder verwenden Sie einen Befehlszeilenbuild.  
   
     > [!NOTE]
     >  Der Build muss auf die „Microsoft.VisualStudio.Profiler.dll“-Bibliothek verweisen, die im Microsoft Visual Studio-Verzeichnis 9\Team Tools\Performance Tools gespeichert ist.  
   
-2.  Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:  
+2. Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:  
   
     ```  
     using System;  
@@ -141,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>So erfassen Sie Daten in der Befehlszeile und rufen diese ab  
   
-1.  Kompilieren sie eine Debugversion des Beispielcodes, den Sie bereits in der Prozedur „Creating Code to Profile“ („Erstellen von Code für die Profilerstellung“) erstellt haben.  
+1. Kompilieren sie eine Debugversion des Beispielcodes, den Sie bereits in der Prozedur „Creating Code to Profile“ („Erstellen von Code für die Profilerstellung“) erstellt haben.  
   
-2.  Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen und eine verwaltete Anwendung zu profilen:  
+2. Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen und eine verwaltete Anwendung zu profilen:  
   
      **VsPefCLREnv /traceon**  
   
-3.  Geben Sie den folgenden Befehl ein: **VSInstr \<dateiname>.exe**  
+3. Geben Sie den folgenden Befehl ein: **VSInstr \<dateiname>.exe**  
   
-4.  Geben Sie den folgenden Befehl ein: **VSPerfCmd /start:trace /output:\<dateiname>.vsp**  
+4. Geben Sie den folgenden Befehl ein: **VSPerfCmd /start:trace /output:\<dateiname>.vsp**  
   
-5.  Geben Sie den folgenden Befehl ein: **VSPerfCmd /globaloff**  
+5. Geben Sie den folgenden Befehl ein: **VSPerfCmd /globaloff**  
   
-6.  Führen Sie das Programm aus.  
+6. Führen Sie das Programm aus.  
   
-7.  Geben Sie den folgenden Befehl ein: **VSPerfCmd /shutdown**  
+7. Geben Sie den folgenden Befehl ein: **VSPerfCmd /shutdown**  
   
-8.  Geben Sie den folgenden Befehl ein: **VSPerfReport /calltrace:\<dateiname>.vsp**  
+8. Geben Sie den folgenden Befehl ein: **VSPerfReport /calltrace:\<dateiname>.vsp**  
   
      Eine CSV-Datei wird im aktuellen Verzeichnis zusammen mit den erfassten Leistungsdaten erstellt.  
   

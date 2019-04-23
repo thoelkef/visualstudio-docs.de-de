@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115990"
 ---
 # <a name="schema-cache"></a>Schemacache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 
 #### <a name="to-change-the-schema-cache-location"></a>So ändern Sie den Speicherort für den Schemacache  
 
-1.  Von der **Tools** , wählen Sie im Menü **Optionen**.  
+1. Von der **Tools** , wählen Sie im Menü **Optionen**.  
 
-2.  Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und klicken Sie dann auf **Sonstiges**.  
+2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und klicken Sie dann auf **Sonstiges**.  
 
-3.  Klicken Sie auf die **Durchsuchen** Schaltfläche der **Schemas** Feld.  
+3. Klicken Sie auf die **Durchsuchen** Schaltfläche der **Schemas** Feld.  
 
-4.  Wählen Sie den Ordner für den Schemacache aus, und klicken Sie auf **OK**.  
+4. Wählen Sie den Ordner für den Schemacache aus, und klicken Sie auf **OK**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>So fügen Sie ein anderes Verzeichnis für häufig verwendete Schemata hinzu  
 
-1.  Bearbeiten Sie die Datei catalog.xml im Verzeichnis des Schemacaches des XML-Editors.  
+1. Bearbeiten Sie die Datei catalog.xml im Verzeichnis des Schemacaches des XML-Editors.  
 
-2.  Fügen Sie ein neues `<Catalog href="…"/>`-Element hinzu, das auf das Verzeichnis der zusätzlichen Schemata zeigt.  
+2. Fügen Sie ein neues `<Catalog href="…"/>`-Element hinzu, das auf das Verzeichnis der zusätzlichen Schemata zeigt.  
 
-3.  Speichern Sie die Änderungen.  
+3. Speichern Sie die Änderungen.  
 
      Der Katalog wird automatisch neu geladen.  
 

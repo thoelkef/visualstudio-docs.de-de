@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Codeänderungen (C#) | Microsoft-Dokumentation
+title: Unterstützte Codeänderungen (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117654"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
   
  Folgende Änderungen am C#-Code können während einer Debugsitzung nicht übernommen werden:  
   
--   Änderungen an der aktuellen Anweisung oder einer beliebigen anderen aktiven Anweisung.  
+- Änderungen an der aktuellen Anweisung oder einer beliebigen anderen aktiven Anweisung.  
   
      Aktive Anweisungen umfassen alle Anweisungen in Funktionen der Aufrufliste, die aufgerufen wurden, um zur aktuellen Anweisung zu gelangen.  
   
      Die aktuelle Anweisung wird im Quellcodefenster durch einen gelben Hintergrund gekennzeichnet. Andere aktive Anweisungen werden durch einen schattierten Hintergrund gekennzeichnet und sind schreibgeschützt. Diese Standardfarben können im Dialogfeld **Optionen** geändert werden.  
   
--   Ändern der Signatur eines Typs.  
+- Ändern der Signatur eines Typs.  
   
--   Hinzufügen einer anonymen Methode, die eine bisher noch nicht erfasste Variable erfasst.  
+- Hinzufügen einer anonymen Methode, die eine bisher noch nicht erfasste Variable erfasst.  
   
--   Hinzufügen, Entfernen oder Ändern von Attributen.  
+- Hinzufügen, Entfernen oder Ändern von Attributen.  
   
--   Hinzufügen, Entfernen oder Ändern von `using`-Anweisungen.  
+- Hinzufügen, Entfernen oder Ändern von `using`-Anweisungen.  
   
--   Hinzufügen von `foreach`, `using` oder `lock` zu der aktiven Anweisung.  
+- Hinzufügen von `foreach`, `using` oder `lock` zu der aktiven Anweisung.  
   
 ## <a name="unsafe-code"></a>Unsicherer Code  
  Änderungen an unsicherem Code unterliegen denselben Einschränkungen wie Änderungen an sicherem Code, allerdings mit einer zusätzlichen Einschränkung: Bearbeiten und Fortfahren unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden, die enthält die `stackalloc` Operator.  
@@ -55,35 +55,35 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien  
  Bearbeiten und Fortfahren steht in den folgenden Debugszenarios nicht zur Verfügung:  
   
--   Debuggen von LINQ-Code unter bestimmten Umständen. Weitere Informationen finden Sie unter [Debuggen von LINQ](../debugger/debugging-linq.md).  
+- Debuggen von LINQ-Code unter bestimmten Umständen. Weitere Informationen finden Sie unter [Debuggen von LINQ](../debugger/debugging-linq.md).  
   
-    -   Erfassen einer zuvor noch nicht erfassten Variablen.  
+    - Erfassen einer zuvor noch nicht erfassten Variablen.  
   
-    -   Ändern des Typs des Abfrageausdrucks (Wählen Sie z. B. eine = > "Neu" auswählen {A = eine};)  
+    - Ändern des Typs des Abfrageausdrucks (Wählen Sie z. B. eine = > "Neu" auswählen {A = eine};)  
   
-    -   Entfernen einer `where`-Klausel, die eine aktive Anweisung enthält.  
+    - Entfernen einer `where`-Klausel, die eine aktive Anweisung enthält.  
   
-    -   Entfernen einer `let`-Klausel, die eine aktive Anweisung enthält.  
+    - Entfernen einer `let`-Klausel, die eine aktive Anweisung enthält.  
   
-    -   Entfernen einer `join`-Klausel, die eine aktive Anweisung enthält.  
+    - Entfernen einer `join`-Klausel, die eine aktive Anweisung enthält.  
   
-    -   Entfernen einer `orderby`-Klausel, die eine aktive Anweisung enthält.  
+    - Entfernen einer `orderby`-Klausel, die eine aktive Anweisung enthält.  
   
--   Debuggen im gemischten Modus (systemeigen/verwaltet).  
+- Debuggen im gemischten Modus (systemeigen/verwaltet).  
   
--   SQL-Debuggen.  
+- SQL-Debuggen.  
   
--   Debuggen einer Dr. Watson-Sicherungskopie.  
+- Debuggen einer Dr. Watson-Sicherungskopie.  
   
--   Bearbeiten von Code nach einem Ausnahmefehler, wenn die "**Aufrufliste für Ausnahmefehler entladen**" nicht ausgewählt ist.  
+- Bearbeiten von Code nach einem Ausnahmefehler, wenn die "**Aufrufliste für Ausnahmefehler entladen**" nicht ausgewählt ist.  
   
--   Debuggen einer eingebetteten Laufzeitanwendung.  
+- Debuggen einer eingebetteten Laufzeitanwendung.  
   
--   Debuggen einer Anwendung, die **Anfügen an** anstatt die Anwendung dazu **starten** aus der **Debuggen** Menü.  
+- Debuggen einer Anwendung, die **Anfügen an** anstatt die Anwendung dazu **starten** aus der **Debuggen** Menü.  
   
--   Debuggen von optimiertem Code.  
+- Debuggen von optimiertem Code.  
   
--   Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
+- Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten und Fortfahren (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   

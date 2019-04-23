@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090380"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ Sie verbinden Ihrer Anwendung für die Daten von einem Dienst zurückgegeben wir
   
 ### <a name="to-connect-your-application-to-a-service"></a>Um Ihre Anwendung mit einem Dienst verbinden  
   
-1.  Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.  
+1. Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.  
   
-2.  Wählen Sie **Service** auf die **wählen Sie einen Datenquellentyp** Seite, und klicken Sie dann auf **Weiter**.  
+2. Wählen Sie **Service** auf die **wählen Sie einen Datenquellentyp** Seite, und klicken Sie dann auf **Weiter**.  
   
-3.  Geben Sie die Adresse des Diensts zu verwenden, oder klicken Sie auf **Discover** suchen Dienste in der aktuellen Projektmappe, und klicken Sie auf **wechseln**.  
+3. Geben Sie die Adresse des Diensts zu verwenden, oder klicken Sie auf **Discover** suchen Dienste in der aktuellen Projektmappe, und klicken Sie auf **wechseln**.  
   
-4.  Optional ein neues **Namespace** anstelle der Standardwert eingegeben werden können.  
+4. Optional ein neues **Namespace** anstelle der Standardwert eingegeben werden können.  
   
     > [!NOTE]
     >  Klicken Sie auf **erweitert** zum Öffnen der [Configure Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Klicken Sie auf **OK** zum Hinzufügen eines Dienstverweises zum Projekt.  
+5. Klicken Sie auf **OK** zum Hinzufügen eines Dienstverweises zum Projekt.  
   
-6.  Klicken Sie auf **Fertig stellen**.  
+6. Klicken Sie auf **Fertig stellen**.  
   
      Die Datenquelle wird dem Fenster **Datenquellen** hinzugefügt.  
   
@@ -64,7 +64,7 @@ Sie verbinden Ihrer Anwendung für die Daten von einem Dienst zurückgegeben wir
   
 #### <a name="to-add-functionality-to-your-application"></a>So fügen Sie der Anwendung Funktionalität hinzu  
   
--   Wählen Sie ein Element in der **Datenquellen** Fenster, und ziehen Sie es in ein Formular für das gebundene Steuerelemente zu erstellen. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+- Wählen Sie ein Element in der **Datenquellen** Fenster, und ziehen Sie es in ein Formular für das gebundene Steuerelemente zu erstellen. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von WPF-Steuerelemente an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

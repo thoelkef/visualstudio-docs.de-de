@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117543"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Vorgehensweise: Debuggen auf einem Hochleistungscluster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleic
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>So öffnen Sie das Dialogfeld Haltepunktfilter  
   
-1.  Klicken Sie in einem Quellcodefenster, im Fenster **Disassemblierung**, im Fenster **Aufrufliste** oder im Fenster **Haltepunkte** mit der rechten Maustaste auf ein Haltepunktsymbol.  
+1. Klicken Sie in einem Quellcodefenster, im Fenster **Disassemblierung**, im Fenster **Aufrufliste** oder im Fenster **Haltepunkte** mit der rechten Maustaste auf ein Haltepunktsymbol.  
   
-2.  Klicken Sie im Kontextmenü auf **Filter**. Diese Option wird möglicherweise auf oberster Ebene oder im Untermenü unter **Haltepunkte** angezeigt.  
+2. Klicken Sie im Kontextmenü auf **Filter**. Diese Option wird möglicherweise auf oberster Ebene oder im Untermenü unter **Haltepunkte** angezeigt.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>So legen Sie einen Haltepunkt für einen bestimmten Computer fest  
   
-1.  Entnehmen Sie dem Fenster **Prozesse** den Computernamen.  
+1. Entnehmen Sie dem Fenster **Prozesse** den Computernamen.  
   
-2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der vorigen Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
+2. Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der vorigen Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
   
-3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
+3. Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
   
      MachineName =*IhrComputerName*  
   
      Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>So legen Sie einen Haltepunkt für einen bestimmten Prozess fest  
   
-1.  Entnehmen Sie dem Fenster **Prozesse** den Prozessnamen oder die Prozess-ID.  
+1. Entnehmen Sie dem Fenster **Prozesse** den Prozessnamen oder die Prozess-ID.  
   
-2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
+2. Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
   
-3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
+3. Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
   
      `ProcessName =`  *IhrProzessName*  
   
@@ -73,15 +73,15 @@ Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleic
   
      Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>So legen Sie einen Haltepunkt für einen bestimmten Thread fest  
   
-1.  Entnehmen Sie dem Fenster **Threads** den Threadnamen oder die Thread-ID.  
+1. Entnehmen Sie dem Fenster **Threads** den Threadnamen oder die Thread-ID.  
   
-2.  Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
+2. Wählen Sie einen Haltepunkt aus, und öffnen Sie wie in der ersten Vorgehensweise beschrieben das Dialogfeld **Haltepunktfilter**.  
   
-3.  Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
+3. Geben Sie im Dialogfeld **Haltepunktfilter** Folgendes ein:  
   
      `ThreadName =` *IhrThreadName*  
   
@@ -91,7 +91,7 @@ Das Debuggen eines Multiprocessing-Programms in einem Hochleistungscluster gleic
   
      Zum Erstellen eines komplexeren Filters können Sie Klauseln mit `&` (dem Operator UND), `||` (dem Operator ODER) und `!` (dem Operator NICHT) und Klammern kombinieren.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird das Erstellen eines Filters für einen Haltepunkt für einen Computer mit dem Namen `marvin` und einen Thread mit dem Namen `fourier1` beschrieben.  
