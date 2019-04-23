@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077380"
 ---
 # <a name="image-editor"></a>Bildbearbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
   
 #### <a name="to-add-an-image-to-your-project"></a>So fügen Sie Ihrem Projekt ein Bild hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Image hinzufügen möchten, und klicken Sie dann auf **Hinzufügen** und **Neues Element**.  
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Image hinzufügen möchten, und klicken Sie dann auf **Hinzufügen** und **Neues Element**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend ein entsprechendes Dateiformat für das Bild aus. Informationen zur Auswahl eines Dateiformats, das Ihren Anforderungen entspricht, finden Sie im nachfolgenden Abschnitt.  
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend ein entsprechendes Dateiformat für das Bild aus. Informationen zur Auswahl eines Dateiformats, das Ihren Anforderungen entspricht, finden Sie im nachfolgenden Abschnitt.  
   
-3.  Legen Sie den **Namen** der Bilddatei und den **Speicherort** fest, an dem diese erstellt werden soll.  
+3. Legen Sie den **Namen** der Bilddatei und den **Speicherort** fest, an dem diese erstellt werden soll.  
   
-4.  Wählen Sie die Schaltfläche **Hinzufügen** aus.  
+4. Wählen Sie die Schaltfläche **Hinzufügen** aus.  
   
 ### <a name="choosing-the-image-format"></a>Auswählen des Bildformats  
  Abhängig von der geplanten Verwendung des Bilds sind bestimmte Dateiformate möglicherweise besser geeignet als andere. Möglicherweise unterstützen manche Formate eine benötigte Funktion nicht – wie Transparenz oder ein bestimmtes Farbformat – oder für die geplanten Bildinhalte kann keine geeignete Komprimierung bereitgestellt werden.  
@@ -146,7 +146,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**, **Text**|Erweitern Sie zum Verschmelzen der aktiven Farbauswahl mit dem Bild die Eigenschaftengruppe **Kanäle** im Fenster **Eigenschaften**, und aktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**. Zeichnen Sie dann ganz normal.<br /><br /> Deaktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**, und zeichnen Sie normal weiter, um mit der aktiven Farbauswahl zu zeichnen und den Alphawert des Bilds unverändert zu lassen.|  
 |**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Um das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) zu überschreiben, halten Sie die UMSCHALTTASTE gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|  
   
-###  <a name="ImageProperties"></a> Bildeigenschaften  
+### <a name="ImageProperties"></a> Bildeigenschaften  
  Über das Fenster **Eigenschaften** können Sie verschiedene Eigenschaften des Bilds festlegen. Beispielsweise können Sie die Breite und Höhe festlegen, um die Größe des Bilds zu ändern.  
   
  In der folgenden Tabelle werden die Bildeigenschaften beschrieben.  
@@ -171,9 +171,9 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 #### <a name="resizing-images"></a>Ändern der Bildgröße  
  Es gibt folgende zwei Möglichkeiten, die Größe eines Bilds zu ändern. In beiden Fällen verwendet die Bildbearbeitung eine bilineare Interpolation, um das Bild neu zu berechnen.  
   
--   Geben Sie im Fenster **Eigenschaften** die neuen Werte für die Eigenschaften **Breite** und **Höhe** an.  
+- Geben Sie im Fenster **Eigenschaften** die neuen Werte für die Eigenschaften **Breite** und **Höhe** an.  
   
--   Wählen Sie das gesamte Bild aus, und ändern Sie die Größe des Bilds mithilfe der Rahmenmarker.  
+- Wählen Sie das gesamte Bild aus, und ändern Sie die Größe des Bilds mithilfe der Rahmenmarker.  
   
 ### <a name="working-with-tools"></a>Arbeiten mit Werkzeugen  
   
@@ -207,7 +207,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |Ctrl|||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs.|  
 |Ctrl|Shift||Kopiert und ändert dann die Größe des Inhalts des ausgewählten Bereichs proportional.|  
   
-####  <a name="ToolProperties"></a> Tooleigenschaften  
+#### <a name="ToolProperties"></a> Tooleigenschaften  
  Wenn ein Tool ausgewählt ist, können Sie über das Fenster **Eigenschaften** angeben, wie es sich auf das Bild auswirken soll. Sie können z.B. die Breite des **Zeichenstift**-Tools oder die Farbe des **Pinsel**-Tools festlegen.  
   
  Sie können eine Vordergrundfarbe und eine Hintergrundfarbe festlegen. Beide unterstützen einen Alphakanal, um benutzerdefinierte Deckkraft bereitzustellen. Die Einstellungen gelten für alle Werkzeuge. Wenn Sie eine Maus verwenden, entspricht die linke Maustaste der Vordergrundfarbe und die rechte Maustaste der Hintergrundfarbe.  

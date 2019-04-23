@@ -19,41 +19,41 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73018dcdc34d3a824ff13da13fc12d03b8d13a7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076627"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Fehlermeldungs-Dialogfeld für "Bearbeiten und Fortfahren"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dieses Dialogfeld wird angezeigt, wenn Sie in einer Programmiersprache Debuggen, das Bearbeiten und fortfahren, unterstützt aber **bearbeiten und Fortfahren** ist für den Typ des von Ihnen vorgenommenen codeänderungen nicht verfügbar. Die Fehlermeldung in dem Feld enthält eine ausführlichere Erklärung. Folgende Gründe zum Anzeigen dieses Dialogfelds sind möglich:  
   
--   Sie haben versucht, verwalteten Code zu bearbeiten, während nicht verwaltetes Debuggen aktiviert war. "Bearbeiten und Fortfahren" funktioniert nicht bei Debuggen im gemischten Modus.  
+- Sie haben versucht, verwalteten Code zu bearbeiten, während nicht verwaltetes Debuggen aktiviert war. "Bearbeiten und Fortfahren" funktioniert nicht bei Debuggen im gemischten Modus.  
   
--   Sie haben versucht, SQL Server-Code zu bearbeiten.  
+- Sie haben versucht, SQL Server-Code zu bearbeiten.  
   
--   Sie haben versucht, Code während des Debuggens eines Dr zu bearbeiten. Watson-Sicherungskopie.  
+- Sie haben versucht, Code während des Debuggens eines Dr zu bearbeiten. Watson-Sicherungskopie.  
   
--   Sie haben versucht, das Bearbeiten von Code nach dem eine nicht behandelte Ausnahme aufgetreten ist und die Option "**Aufrufliste für Ausnahmefehler entladen**" wurde nicht ausgewählt.  
+- Sie haben versucht, das Bearbeiten von Code nach dem eine nicht behandelte Ausnahme aufgetreten ist und die Option "**Aufrufliste für Ausnahmefehler entladen**" wurde nicht ausgewählt.  
   
--   Sie haben versucht, Code zu bearbeiten, während Sie für eine eingebettete Laufzeitanwendung ein Debuggen durchgeführt haben.  
+- Sie haben versucht, Code zu bearbeiten, während Sie für eine eingebettete Laufzeitanwendung ein Debuggen durchgeführt haben.  
   
--   Sie haben versucht, Code in einem Programm, das Sie angefügt und nicht über die **Debuggen** Menü.  
+- Sie haben versucht, Code in einem Programm, das Sie angefügt und nicht über die **Debuggen** Menü.  
   
--   Sie haben versucht, optimierten Code zu bearbeiten.  
+- Sie haben versucht, optimierten Code zu bearbeiten.  
   
--   Sie haben versucht, verwalteten Code zu bearbeiten, obwohl das Ziel eine 64-Bit-Anwendung ist. Wenn Sie Bearbeiten und Fortfahren verwenden möchten, müssen Sie das Ziel auf x86 festlegen. (*Projekt* **Eigenschaften**, **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.).  
+- Sie haben versucht, verwalteten Code zu bearbeiten, obwohl das Ziel eine 64-Bit-Anwendung ist. Wenn Sie Bearbeiten und Fortfahren verwenden möchten, müssen Sie das Ziel auf x86 festlegen. (*Projekt* **Eigenschaften**, **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.).  
   
--   Sie haben versucht, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert und erneut geladen wurde.  
+- Sie haben versucht, Code in einer Assembly zu bearbeiten, die während des Debuggens geändert und erneut geladen wurde.  
   
--   Sie haben versucht, Code in einer Assembly zu bearbeiten, die nicht geladen wurde.  
+- Sie haben versucht, Code in einer Assembly zu bearbeiten, die nicht geladen wurde.  
   
--   Sie haben damit begonnen, eine alte Version der Anwendung zu debuggen (da die neue Version Buildfehler enthält).  
+- Sie haben damit begonnen, eine alte Version der Anwendung zu debuggen (da die neue Version Buildfehler enthält).  
   
--   Sie haben versucht, Code während dessen Ausführung zu bearbeiten.  
+- Sie haben versucht, Code während dessen Ausführung zu bearbeiten.  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **OK**  

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075623"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
   
 ### <a name="procedure-title"></a>Titel des Verfahrens  
   
-1.  Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument `collection.xml` verwendet.  
+1. Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument `collection.xml` verwendet.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
     </COLLECTION>  
     ```  
   
-2.  Fügen Sie die folgende Datei `xslincludefile.xsl` hinzu:  
+2. Fügen Sie die folgende Datei `xslincludefile.xsl` hinzu:  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
     </xsl:stylesheet>  
     ```  
   
-3.  Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:  
+3. Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
     </xsl:stylesheet>  
     ```  
   
-4.  Fügen Sie einen Haltepunkt bei der Anweisung hinzu: `<xsl:include href="xslincludefile.xsl" />`  
+4. Fügen Sie einen Haltepunkt bei der Anweisung hinzu: `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Beginnen Sie mit dem Debuggen.  
+5. Beginnen Sie mit dem Debuggen.  
   
-6.  Klicken Sie auf die Schaltfläche "Einzelschritt", wenn der Debugger bei der `<xsl:include href="xslincludefile.xsl" />`-Anweisung anhält. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.  
+6. Klicken Sie auf die Schaltfläche "Einzelschritt", wenn der Debugger bei der `<xsl:include href="xslincludefile.xsl" />`-Anweisung anhält. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)

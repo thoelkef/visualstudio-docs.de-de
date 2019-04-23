@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073426"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 ##### <a name="to-access-unity-documentation"></a>So greifen Sie auf die Unity-Dokumentation zu  
   
--   Platzieren Sie in Visual Studio den Cursor über der Unity-API, zu der Sie Informationen wünschen, oder markieren Sie sie, und drücken Sie dann **STRG+ALT+M, STRG+H**.  
+- Platzieren Sie in Visual Studio den Cursor über der Unity-API, zu der Sie Informationen wünschen, oder markieren Sie sie, und drücken Sie dann **STRG+ALT+M, STRG+H**.  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior-Assistent für das Erstellen von Skripts  
  In Unity werden die meisten Skripts durch Ableitung von der "MonoBehavior"-Klasse und Überschreiben einiger ihrer Methoden implementiert. Mithilfe des MonoBehavior-Assistenten können Sie schnell leere Definitionen der "MonoBehavior"-Methoden erstellen, die überladen werden sollen. Mit diesem Assistenten können Sie aus der Liste der verfügbaren Methoden eine oder mehrere Methoden angeben, die Sie überladen möchten. Außerdem können Sie auswählen, wo sie in Ihren Code eingefügt werden, und entscheiden, ob Sie Kommentare zu ihrer Verwendung einschließen möchten.  
@@ -59,13 +59,13 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>So erstellen Sie mit dem Quick MonoBehavior-Assistenten eine leere MonoBehavior-Methodendefinition  
   
-1.  Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methode eingefügt werden soll, und drücken Sie **STRG+UMSCHALT+Q**, um den Quick MonoBehavior-Assistenten zu starten. Im Gegensatz zu den anderen MonoBehavior-Assistenten müssen Sie den Cursor absichtlich positionieren, wenn Sie diesen Assistenten verwenden, da die neue Methode immer an dieser Stelle eingefügt wird.  
+1. Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methode eingefügt werden soll, und drücken Sie **STRG+UMSCHALT+Q**, um den Quick MonoBehavior-Assistenten zu starten. Im Gegensatz zu den anderen MonoBehavior-Assistenten müssen Sie den Cursor absichtlich positionieren, wenn Sie diesen Assistenten verwenden, da die neue Methode immer an dieser Stelle eingefügt wird.  
   
-2.  Stellen Sie sicher, dass die Frameworkversion, die rechts oben im Fenster **Create script method** (Skriptmethode erstellen) angezeigt wird, der Version entspricht, die Sie verwenden. Falls keine Übereinstimmung vorliegt, ändern Sie den Wert in der Dropdownliste in die Version, die Sie verwenden möchten.  
+2. Stellen Sie sicher, dass die Frameworkversion, die rechts oben im Fenster **Create script method** (Skriptmethode erstellen) angezeigt wird, der Version entspricht, die Sie verwenden. Falls keine Übereinstimmung vorliegt, ändern Sie den Wert in der Dropdownliste in die Version, die Sie verwenden möchten.  
   
-3.  Suchen Sie die Methode, die überladen werden soll. Beginnen Sie im Fenster "Skriptmethode erstellen" mit der Eingabe des Namens der Methode in das Textfeld. Eine Liste der Methoden, deren Namen mit Ihrer Eingabe übereinstimmen, wird angezeigt.  
+3. Suchen Sie die Methode, die überladen werden soll. Beginnen Sie im Fenster "Skriptmethode erstellen" mit der Eingabe des Namens der Methode in das Textfeld. Eine Liste der Methoden, deren Namen mit Ihrer Eingabe übereinstimmen, wird angezeigt.  
   
-4.  Wählen Sie die Methode, die überladen werden soll. Wenn Sie die gewünschte Methode in der Liste angezeigt wird, wählen Sie sie mit der Maus oder den Pfeiltasten aus, und drücken Sie dann die **EINGABETASTE**. Wenn die Liste nur eine Methode enthält, können Sie einfach die **EINGABETASTE** drücken. Die Methode wird in Ihren Code eingefügt.  
+4. Wählen Sie die Methode, die überladen werden soll. Wenn Sie die gewünschte Methode in der Liste angezeigt wird, wählen Sie sie mit der Maus oder den Pfeiltasten aus, und drücken Sie dann die **EINGABETASTE**. Wenn die Liste nur eine Methode enthält, können Sie einfach die **EINGABETASTE** drücken. Die Methode wird in Ihren Code eingefügt.  
   
 ### <a name="unity-project-explorer"></a>Unity-Projekt-Explorer  
  Im Unity-Projekt-Explorer können Sie innerhalb von Visual Studio zu Ihrem Unity-Projekt navigieren.  
@@ -103,16 +103,16 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
 ## <a name="unity-debugging"></a>Debuggen von Unity  
  Mit Visual Studio-Tools für Unity können Sie Editor- und Spielskripts für Ihr Unity-Projekt mit dem leistungsfähigen Debugger von Visual Studio debuggen.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Verbinden von Visual Studio mit Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Verbinden von Visual Studio mit Unity  
  Visual Studio-Tools für Unity kommuniziert mit Unity über eine UDP-Verbindung. Dies bedeutet, dass Sie stets gleich eine Verbindung mit einer Unity-Instanz herstellen können, die lokal oder irgendwo im Netzwerk ausgeführt werden kann. Im Dialogfeld **Unity-Instanz auswählen** können Sie eine Verbindung mit allen Unity-Instanzen herstellen, die Sie in Ihrem Netzwerk sehen.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>So öffnen Sie das Dialogfeld "Unity-Instanz auswählen"  
   
--   Wählen Sie in Visual Studio im Hauptmenü **Debuggen**, **Unity-Debugger anfügen** aus.  
+- Wählen Sie in Visual Studio im Hauptmenü **Debuggen**, **Unity-Debugger anfügen** aus.  
   
      ![Unity-Debugger anfügen](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *Oder* klicken Sie in Visual Studio auf der Statusleiste rechts unten auf das Steckersymbol.  
+- *Oder* klicken Sie in Visual Studio auf der Statusleiste rechts unten auf das Steckersymbol.  
   
      ![Dieses Symbol zeigt an, dass VSTU mit Unity verbunden ist](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -138,7 +138,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
 > [!IMPORTANT]
 >  Da Visual Studio-Tools für Unity und die Unity-Instanz über einen UDP-Netzwerksocket kommunizieren, werden Sie ggf. von Ihrer Firewall dazu befragt. In diesem Fall müssen Sie die Verbindung autorisieren, damit VSTU und Unity kommunizieren können.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Debuggen eines Projekts in einem Unity-Player  
+### <a name="debugging-your-project-in-a-unity-player"></a> Debuggen eines Projekts in einem Unity-Player  
  Sie können Visual Studio-Tools für Unity mit Ihrer in einem eigenständigen Player ausgeführten App verbinden, wenn Sie nicht den Unity-Editor ausführen oder plattformspezifische Probleme beheben möchten.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>So aktivieren Sie das Skriptdebugging in einem Unity-Player  

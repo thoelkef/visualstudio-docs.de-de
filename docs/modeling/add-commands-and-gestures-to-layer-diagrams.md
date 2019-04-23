@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077874"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 
@@ -66,7 +66,7 @@ Projektvorlagen stellen die schnellste Methode dar, eine Erweiterung zu erstelle
 
 Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelemente und andere Erweiterungen enthält, empfiehlt es sich, ein Projekt zum Definieren der VSIX und getrennte Projekte für die Handler zu erstellen.
 
-1. Erstellen Sie ein neues **Klassenbibliothek** Projekt. Dieses Projekt enthält Befehls- oder Gestenhandlerklassen.
+1. Erstellen Sie ein neues **Klassenbibliotheksprojekt**. Dieses Projekt enthält Befehls- oder Gestenhandlerklassen.
 
    > [!NOTE]
    > Sie können mehrere Befehls- oder Gestenhandlerklassen in einer Klassenbibliothek definieren, jedoch sollten Sie Ebenenvalidierungsklassen in einer separaten Klassenbibliothek definieren.
@@ -108,7 +108,7 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
 
 8. Um die VSIX-Datei in der Hauptinstanz von Visual Studio oder auf einem anderen Computer zu installieren, suchen die **VSIX** Datei die **Bin** Verzeichnis des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei im Datei-Explorer.
 
-##  <a name="command"></a> Definieren eines Menübefehls
+## <a name="command"></a> Definieren eines Menübefehls
 
 Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefehlsdefinitionen hinzufügen. Jeder Befehl wird von einer Klasse definiert, die über die folgenden Eigenschaften verfügt:
 
@@ -124,11 +124,11 @@ Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefeh
 
 - `ICommandExtension` wird mit den folgenden Methoden implementiert:
 
-  -   `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.
+  - `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.
 
-  -   `void QueryStatus(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, und bestimmt, ob der Befehl für die aktuelle Auswahl des Benutzers sichtbar und aktiviert ist.
+  - `void QueryStatus(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, und bestimmt, ob der Befehl für die aktuelle Auswahl des Benutzers sichtbar und aktiviert ist.
 
-  -   `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.
+  - `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.
 
 - Sie können `IDiagramContext`importieren, um die aktuelle Auswahl zu bestimmen:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Definieren eines Gestenhandlers
+## <a name="gesture"></a> Definieren eines Gestenhandlers
 
 Ein Gestenhandler reagiert, wenn der Benutzer Elemente auf dem Abhängigkeitsdiagramm zieht und der Benutzer eine beliebige Stelle im Diagramm doppelklickt.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
--   `IGestureExtension` umfasst folgende Member:
+- `IGestureExtension` umfasst folgende Member:
 
      **OnDoubleClick** - Wird aufgerufen, wenn der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.
 
@@ -246,7 +246,7 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
      **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.
 
--   Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:
+- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
     }
     ```
 
--   Handler für einige Typen von gezogenen Elementen sind bereits definiert. Beispielsweise kann der Benutzer Elemente im Projektmappen-Explorer in ein Abhängigkeitsdiagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.
+- Handler für einige Typen von gezogenen Elementen sind bereits definiert. Beispielsweise kann der Benutzer Elemente im Projektmappen-Explorer in ein Abhängigkeitsdiagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.
 
 ## <a name="see-also"></a>Siehe auch
 

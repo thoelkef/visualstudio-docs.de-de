@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077166"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>Erstellen Sie eine Unterklasse von ImageField  
   
-1.  Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.  
+1. Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.  
   
-2.  Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.  
+2. Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.  
   
-    -   Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.  
+    - Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.  
   
-3.  Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.  
+3. Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.  
   
      Rufen Sie in der Überschreibungsmethode die Basismethode auf, und klicken Sie dann erstellen Sie eine Instanz Ihrer eigenen Images-Feld-Klasse. Verwenden Sie diese ersetzen die regulären Bildfeld in der `shapeFields` Liste.  
   

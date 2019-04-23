@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074959"
 ---
 # <a name="xml-schema-designer-workspace"></a>Arbeitsbereich des XML-Schema-Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie die 
 ## <a name="adding-nodes-to-the-workspace"></a>Hinzufügen von Knoten zum Arbeitsbereich  
  Zum Hinzufügen von Knoten zum Arbeitsbereich stehen die folgenden Methoden zur Auswahl:  
   
--   Im Abschnitt "Details zum Schemaset" der [Ausgangsansicht](../xml-tools/start-view.md), klicken Sie auf die **hinzufügen** neben dem globalen Knotentyp.  
+- Im Abschnitt "Details zum Schemaset" der [Ausgangsansicht](../xml-tools/start-view.md), klicken Sie auf die **hinzufügen** neben dem globalen Knotentyp.  
   
--   Verschieben Sie globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop vom XML-Schema-Explorer in eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt "Knoten ziehen und Ablegen von" in [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).  
+- Verschieben Sie globale Knoten, Dateiknoten und Namespaceknoten per Drag &amp; Drop vom XML-Schema-Explorer in eine der drei Ansichten. Weitere Informationen finden Sie im Abschnitt "Knoten ziehen und Ablegen von" in [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md).  
   
--   Verwenden Sie das Kontextmenü im XML-Schema-Explorer. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).  
+- Verwenden Sie das Kontextmenü im XML-Schema-Explorer. Weitere Informationen finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md).  
   
--   Ausführen einer Suche im XSD-Explorer, und klicken Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).  
+- Ausführen einer Suche im XSD-Explorer, und klicken Sie auf die **hervorgehobene Knoten zu Arbeitsbereich hinzufügen** auf den Bereich auf die Schaltfläche. Weitere Informationen finden Sie unter [Durchsuchen des Schemasets](../xml-tools/searching-the-schema-set.md).  
   
 ## <a name="view-switching"></a>Wechseln zwischen den Ansichten  
  Zum Wechseln zwischen den Ansichten stehen folgende Methoden zur Auswahl:  
   
--   XSD-Designer-Symbolleiste  
+- XSD-Designer-Symbolleiste  
   
--   Kontextmenüs der Inhaltsmodellansicht und Diagrammansicht  
+- Kontextmenüs der Inhaltsmodellansicht und Diagrammansicht  
   
--   Wasserzeichen in der Ausgangsansicht oder der leeren Inhaltsmodell- oder Diagrammansicht  
+- Wasserzeichen in der Ausgangsansicht oder der leeren Inhaltsmodell- oder Diagrammansicht  
   
--   Hotkeys: STRG + 1 für die Ausgangsansicht, STRG + 2 für die Diagrammansicht und STRG + 3 für die Inhaltsmodellansicht.  
+- Hotkeys: STRG + 1 für die Ausgangsansicht, STRG + 2 für die Diagrammansicht und STRG + 3 für die Inhaltsmodellansicht.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
--   [Ausgangsansicht](../xml-tools/start-view.md)  
+- [Ausgangsansicht](../xml-tools/start-view.md)  
   
--   [Diagrammansicht](../xml-tools/graph-view.md)  
+- [Diagrammansicht](../xml-tools/graph-view.md)  
   
--   [Inhaltsmodellansicht](../xml-tools/content-model-view.md)
+- [Inhaltsmodellansicht](../xml-tools/content-model-view.md)

@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074241"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Persistenz ist eine wichtige Design-Überlegungen für das Projekt. Die meisten 
   
  Projektelemente können es sich um einen dateibasierten oder nicht dateibasierte sein:  
   
--   Dateibasierte Elemente können lokal oder remote sein. In Webprojekten in C# geschrieben beibehalten, z. B. Verbindungen mit Dateien auf einem Remotesystem lokal, während die Dateien selbst auf dem remoten System beibehalten werden.  
+- Dateibasierte Elemente können lokal oder remote sein. In Webprojekten in C# geschrieben beibehalten, z. B. Verbindungen mit Dateien auf einem Remotesystem lokal, während die Dateien selbst auf dem remoten System beibehalten werden.  
   
--   Nicht dateibasierte Elemente können Elemente in einer Datenbank oder einem Repository speichern.  
+- Nicht dateibasierte Elemente können Elemente in einer Datenbank oder einem Repository speichern.  
   
 ## <a name="commit-models"></a>Commit-Modelle  
  Nach der Entscheidung, wo sich die Projektelemente befinden, müssen Sie die entsprechenden Commit-Modell auswählen. Beispielsweise kann in einem dateibasierten Modell mit lokalen Dateien, jedes Projekt autonom gespeichert werden. In einem Repository-Modell können Sie mehrere Elemente in einer Transaktion speichern. Weitere Informationen finden Sie unter [Entwurfsentscheidungen bei Projekttypen](../../extensibility/internals/project-type-design-decisions.md).  

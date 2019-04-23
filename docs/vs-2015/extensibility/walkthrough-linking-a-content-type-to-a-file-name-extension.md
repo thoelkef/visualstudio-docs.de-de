@@ -10,12 +10,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076614"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Sie können einen eigenen Inhaltstyp definieren, und verknüpfen eine Dateinamen
   
 ## <a name="creating-a-mef-project"></a>Erstellen eines MEF-Projekts  
   
-1.  Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual C# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekt**.) Nennen Sie die Projektmappe `ContentTypeTest`.  
+1. Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual c# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekt**.) Nennen Sie die Projektmappe `ContentTypeTest`.  
   
-2.  In der **"Source.Extension.vsixmanifest"** -Datei, wechseln Sie zu der **Assets** , und legen die **Typ** Feld **Microsoft.VisualStudio.MefComponent**, **Quelle** Feld **ein Projekt in der aktuellen Projektmappe**, und die **Projekt** Feld auf den Namen des Projekts.  
+2. In der **"Source.Extension.vsixmanifest"** -Datei, wechseln Sie zu der **Assets** , und legen die **Typ** Feld **Microsoft.VisualStudio.MefComponent**, **Quelle** Feld **ein Projekt in der aktuellen Projektmappe**, und die **Projekt** Feld auf den Namen des Projekts.  
   
 ## <a name="defining-the-content-type"></a>Definieren den Inhaltstyp  
   
-1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `FileAndContentTypes`.  
+1. Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `FileAndContentTypes`.  
   
-2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
+2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  Fügen Sie die folgenden `using` Anweisungen.  
+3. Fügen Sie die folgenden `using` Anweisungen.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -52,14 +52,14 @@ Sie können einen eigenen Inhaltstyp definieren, und verknüpfen eine Dateinamen
   
     ```  
   
-4.  Deklarieren Sie eine statische Klasse, die die Definitionen enthält.  
+4. Deklarieren Sie eine statische Klasse, die die Definitionen enthält.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  In dieser Klasse Exportieren einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> mit dem Namen "hid", und deklarieren Sie die Basisdefinition "Text" sein.  
+5. In dieser Klasse Exportieren einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> mit dem Namen "hid", und deklarieren Sie die Basisdefinition "Text" sein.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -73,7 +73,7 @@ Sie können einen eigenen Inhaltstyp definieren, und verknüpfen eine Dateinamen
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>Verknüpfen eine Dateinamenerweiterung mit einem Inhaltstyp  
   
--   Um eine Dateinamenerweiterung dieser Inhaltstyp zuzuordnen, Exportieren einer <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , die über die Erweiterung "HID-Dateien" und der Inhaltstyp "hid".  
+- Um eine Dateinamenerweiterung dieser Inhaltstyp zuzuordnen, Exportieren einer <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> , die über die Erweiterung "HID-Dateien" und der Inhaltstyp "hid".  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -92,11 +92,11 @@ Sie können einen eigenen Inhaltstyp definieren, und verknüpfen eine Dateinamen
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Hinzufügen des Inhaltstyps mit einem Export-Editor  
   
-1.  Erstellen einer Editor-Erweiterungs. Sie können z. B. die Rand Symbol-Erweiterung, die in beschriebenen [Exemplarische Vorgehensweise: Erstellen einer Randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1. Erstellen einer Editor-Erweiterungs. Sie können z. B. die Rand Symbol-Erweiterung, die in beschriebenen [Exemplarische Vorgehensweise: Erstellen einer Randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  Fügen Sie der Klasse, die Sie in diesem Verfahren definiert.  
+2. Fügen Sie der Klasse, die Sie in diesem Verfahren definiert.  
   
-3.  Beim Exportieren der Erweiterungsklasse Hinzufügen einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> vom Typ "hid" zuzuweisen.  
+3. Beim Exportieren der Erweiterungsklasse Hinzufügen einer <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> vom Typ "hid" zuzuweisen.  
   
     ```csharp  
     [Export]  

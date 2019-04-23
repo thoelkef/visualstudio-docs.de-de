@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 551af75c985c9103db37cd3f9fe585655a4df342
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073552"
 ---
 # <a name="start"></a>Starten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  Eines der folgenden Schlüsselwörter muss angegeben werden:  
   
--   **TRACE**: Gibt die Instrumentationsmethode an.  
+- **TRACE**: Gibt die Instrumentationsmethode an.  
   
--   **SAMPLE**: Gibt die Samplingmethode an.  
+- **SAMPLE**: Gibt die Samplingmethode an.  
   
--   **COVERAGE**: Gibt die Abdeckung des Codes an.  
+- **COVERAGE**: Gibt die Abdeckung des Codes an.  
   
--   **CONCURRENCY**: Gibt die Ressourcenkonfliktmethode an.  
+- **CONCURRENCY**: Gibt die Ressourcenkonfliktmethode an.  
   
 ## <a name="required-options"></a>Erforderliche Optionen  
  Die Option **Ausgabe** muss angegeben werden, wenn **Start** auf der Befehlszeilen angegeben wird.  

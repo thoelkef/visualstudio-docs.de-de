@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27792aa1a8ca9edf1a85f4d607bbef926fb69027
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b4a727b078d55227b557621b673ea39b36d790f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074595"
 ---
 # <a name="call-debugger-events"></a>Aufrufen von debuggerereignissen
 Ereignisse in Debugsitzungen treten in einer bestimmten Reihenfolge.
@@ -23,21 +23,21 @@ Ereignisse in Debugsitzungen treten in einer bestimmten Reihenfolge.
 ## <a name="discussion"></a>Diskussion
  Um das Muster der Aufrufe zwischen der Debug-Engine (DE) und sitzungsbasierter Debug-Manager (SDM) zu verstehen, die Folgendes die Aufrufreihenfolge der Ereignisse, die in eine typische Debuggingsitzung auftreten:
 
-1.  [Anfügen und Trennen von einem Programm](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+1. [Anfügen und Trennen von einem Programm](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
 
-2.  [Starten des Debuggers](../../extensibility/debugger/launching-the-debugger.md)
+2. [Starten des Debuggers](../../extensibility/debugger/launching-the-debugger.md)
 
-3.  [Beenden eines Programms](../../extensibility/debugger/terminating-a-program.md)
+3. [Beenden eines Programms](../../extensibility/debugger/terminating-a-program.md)
 
-4.  [Erstellen eines Haltepunkts](../../extensibility/debugger/creating-a-breakpoint.md)
+4. [Erstellen eines Haltepunkts](../../extensibility/debugger/creating-a-breakpoint.md)
 
-5.  [Wenn ein Haltepunkt gebunden oder ungebunden immer](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+5. [Wenn ein Haltepunkt gebunden oder ungebunden immer](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
 
-6.  [Haltepunktfehler](../../extensibility/debugger/breakpoint-errors.md)
+6. [Haltepunktfehler](../../extensibility/debugger/breakpoint-errors.md)
 
-7.  [Erreichen eines Haltepunkts](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Erreichen eines Haltepunkts](../../extensibility/debugger/hitting-a-breakpoint.md)
 
-8.  [Löschen eines Haltepunkts](../../extensibility/debugger/deleting-a-breakpoint.md)
+8. [Löschen eines Haltepunkts](../../extensibility/debugger/deleting-a-breakpoint.md)
 
 9. [In den Unterbrechungsmodus](../../extensibility/debugger/entering-break-mode.md)
 

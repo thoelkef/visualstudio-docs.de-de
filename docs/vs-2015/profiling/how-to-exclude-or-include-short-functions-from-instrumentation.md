@@ -13,33 +13,33 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d37984b6535e353053ba6ee71090797e4ce119d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078589"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Gewusst wie: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Vorgehensweise: Schließen Sie aus oder einschließen Sie kurzer Funktionen in die Instrumentierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Profilerstellungstools schließen standardmäßig *Kleine Funktionen* von der Instrumentation aus. Kleine Funktionen sind kurze Funktionen, die keine Funktionsaufrufe ausführen. Das Ausschließen dieser kleinen Funktionen sorgt für weniger Instrumentation-Overhead und verbessert dadurch die Instrumentierungsgeschwindigkeit. Der Ausschluss kleiner Funktionen reduziert auch die Größe der Leistungsprofilerstellungsdatendatei (.vsp) und die Zeit, die für die Analyse erforderlich ist. Wenn kleine Funktionen ausgeschlossen werden, zählt die Zeit, die in den kleinen Funktionen verbracht wird, gegen die exklusive und inklusive Zeit der übergeordneten Funktionen. Kleine Funktionen können in die Instrumentation ausgeschlossen oder eingeschlossen werden, wie im folgenden Verfahren beschrieben wird.  
   
 ### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>So schließen Sie kurze Funktionen in die Instrumentierung ein oder aus  
   
-1.  Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf **Leistungssitzung**, und wählen Sie **Eigenschaften** aus.  
+1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf **Leistungssitzung**, und wählen Sie **Eigenschaften** aus.  
   
      Das Dialogfeld **Eigenschaftenseiten** wird angezeigt.  
   
-2.  Klicken Sie auf den **Eigenschaftenseiten** auf die Eigenschaften von **Instrumentierung**.  
+2. Klicken Sie auf den **Eigenschaftenseiten** auf die Eigenschaften von **Instrumentierung**.  
   
-3.  Wählen Sie zum Ausschließen von kleinen Funktionen in die Instrumentierung **Kleine Funktionen in die Instrumentierung ausschließen** Dies ist die Standardeinstellung.  
+3. Wählen Sie zum Ausschließen von kleinen Funktionen in die Instrumentierung **Kleine Funktionen in die Instrumentierung ausschließen** Dies ist die Standardeinstellung.  
   
-     - oder -  
+     - oder -   
   
      Deaktivieren Sie zum Einschließen von kleinen Funktionen in die Instrumentierung **Kleine Funktionen in die Instrumentierung ausschließen**  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   

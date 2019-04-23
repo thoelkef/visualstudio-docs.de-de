@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077887"
 ---
 # <a name="how-to-debug-injected-code"></a>Vorgehensweise: Debuggen von eingefügtem Code
 
@@ -46,25 +46,25 @@ Im Fenster **Disassemblierung** werden Assemblysprachanweisungen angezeigt, die 
 
 ## <a name="to-turn-on-source-annotation"></a>So aktivieren Sie Quellcodeanmerkungen
 
--   Klicken Sie mit der rechten Maustaste auf das **Disassemblierungsfenster**, und wählen Sie im Kontextmenü **Quellcode anzeigen** aus.
+- Klicken Sie mit der rechten Maustaste auf das **Disassemblierungsfenster**, und wählen Sie im Kontextmenü **Quellcode anzeigen** aus.
 
      Wenn Sie wissen, an welcher Stelle sich ein Attribut im Quellcodefenster befindet, können Sie das Kontextmenü verwenden, um den eingefügten Code im **Disassemblierungsfenster** zu suchen.
 
 ## <a name="to-view-injected-code"></a>So zeigen Sie eingefügten Code an
 
-1.  Der Debugger muss sich im Unterbrechungsmodus befinden.
+1. Der Debugger muss sich im Unterbrechungsmodus befinden.
 
-2.  Positionieren Sie den Cursor im Quellcodefenster vor dem Attribut, dessen eingefügter Code angezeigt werden soll.
+2. Positionieren Sie den Cursor im Quellcodefenster vor dem Attribut, dessen eingefügter Code angezeigt werden soll.
 
-3.  Klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü **Zu Disassemblierung wechseln** aus.
+3. Klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü **Zu Disassemblierung wechseln** aus.
 
      Wenn sich das Attribut in der Nähe des aktuellen Ausführungspunktes befindet, können Sie das **Disassemblierungsfenster** über das Menü **Debuggen** öffnen.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>So zeigen Sie den Disassemblycode am aktuellen Ausführungspunkt an
 
-1.  Der Debugger muss sich im Unterbrechungsmodus befinden.
+1. Der Debugger muss sich im Unterbrechungsmodus befinden.
 
-2.  Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Disassemblierung**.
+2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Disassemblierung**.
 
 ## <a name="see-also"></a>Siehe auch
 

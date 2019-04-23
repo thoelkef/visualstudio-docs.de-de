@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074335"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navigieren im Code mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
  Die meisten Debuggerfunktionen, z. B. Anzeigen der Variablenwerte im Lokalfenster oder Auswerten von Ausdrücken im Überwachungsfenster, stehen nur während der Debugger angehalten ist (so genannte *Unterbrechungsmodus*). Wenn der Debugger angehalten wird, der app-Status wird angehalten, während der Funktionen, Variablen und Objekte im Speicher verbleiben. Während Sie sich im Unterbrechungsmodus befindet, können Sie die Elemente-Positionen und Zustände, um nach Verstößen oder Fehlern zu suchen untersuchen. Bei einigen Projekttypen können Sie auch die app im Unterbrechungsmodus Anpassungen vornehmen.  
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Einzelschritt in Code Zeile für Zeile  
+## <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Einzelschritt in Code Zeile für Zeile  
  Verwenden Sie zum Beenden auf jede Codezeile (jede Anweisung) während des Debuggens die **F11** Tastenkombination (oder **Debuggen** / **Einzelschritt** im Menü).  
   
 > [!TIP]
@@ -78,7 +78,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
   Um die Aufrufliste während der schrittweisen visuell zu verfolgen, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a> Code, wird übersprungen, Funktionen schrittweise durchlaufen  
+## <a name="BKMK_Step_over_Step_out"></a> Code, wird übersprungen, Funktionen schrittweise durchlaufen  
  Wenn der Code im Debugger ausgeführt wird, oft Sie feststellen, dass Sie nicht sehen, was passiert, in einer bestimmten Funktion müssen (nicht wichtig es oder Sie wissen es funktioniert, wie gut getestete Bibliothekscode). Mit diesen Befehlen können Sie um mithilfe von Code zu überspringen (die Funktionen weiterhin auszuführen, natürlich, aber der Debugger überspringt diese).  
   
 |Tastenkombination|Menübefehl|Beschreibung|  
@@ -89,10 +89,10 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
 > [!TIP]
 >  Wenn Sie den Einstiegspunkt in Ihrer app finden möchten, beginnen Sie mit **F10** oder **F11**. Diese Befehle sind häufig hilfreich, wenn Sie den app-Status überprüfen oder versuchen, Weitere Informationen zu der Ausführungsablauf.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Führen Sie bis zu einer bestimmten Position oder Funktion aus  
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Führen Sie bis zu einer bestimmten Position oder Funktion aus  
  Häufig die bevorzugte Methode für das Debuggen von Code diese Methoden sind hilfreich, wenn man genau, welchen Code Sie überprüfen möchten, oder mindestens Sie wissen, in dem Sie debuggen möchten.  
   
--   **Festlegen von Haltepunkten im Code**  
+- **Festlegen von Haltepunkten im Code**  
   
      Um einen einfachen Haltepunkt im Code festzulegen, öffnen Sie die Quellcodedatei im Visual Studio-Editor. Setzen Sie den Cursor auf die Zeile des Codes, wo Sie möchten unterbrechen die Ausführung aus, und klicken Sie dann mit der rechten Maustaste im Codefenster "finden im Kontextmenü und wählen Sie **Haltepunkt / Haltepunkt einfügen** (oder drücken Sie **F9**). Der Debugger hält die Ausführung rechts, bevor die Zeile ausgeführt wird.  
   
@@ -100,21 +100,21 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
      Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
--   **Ausführen bis zur Cursorplatzierung**  
+- **Ausführen bis zur Cursorplatzierung**  
   
      Um den Code bis zur Cursorposition auszuführen, platzieren Sie den Cursor in einem Quellcodefenster auf eine ausführbare Codezeile. Wählen Sie auf die Anmerkung der Redaktion im Kontextmenü (Rechtsklick im Editor) **Ausführen bis Cursor**. Dies entspricht dem Festlegen als temporären Haltepunkts.  
   
--   **Manuelles Unterbrechen im Code**  
+- **Manuelles Unterbrechen im Code**  
   
      Um in den nächsten verfügbaren Codezeile Ausführung einer Anwendung zu unterbrechen, wählen **Debuggen**, **alle unterbrechen** (Tastatur: **Strg + Alt + UNTBR**).  
   
      Wenn Sie die Ausführung von Code ohne zugehörige Quell- oder Symboldateien (PDB-Dateien) unterbrechen, wird im Debugger die Seite **Die Quelldatei wurde nicht gefunden** oder **Symbol nicht gefunden** geöffnet, auf der Sie die entsprechenden Dateien suchen können. Weitere Informationen finden Sie unter [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Wenn Sie nicht auf die zugehörigen Hilfsdateien zugreifen können, können Sie dennoch die Assemblyanweisungen im Disassemblyfenster debuggen.  
   
--   **Ausführen bis zu einer Funktion in der Aufrufliste**  
+- **Ausführen bis zu einer Funktion in der Aufrufliste**  
   
      In der **Aufrufliste** Fenster (während des Debuggens verfügbar), wählen Sie die Funktion, mit der rechten Maustaste und wählen Sie **Ausführen bis Cursor**. Um die Aufrufliste visuell zu verfolgen, finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
--   **Ausführen bis zu einer Funktion anhand des Namens**  
+- **Ausführen bis zu einer Funktion anhand des Namens**  
   
      Sie können feststellen, dass den Debugger die Anwendung ausgeführt wird, bis eine bestimmte Funktion erreicht. Sie können die Funktion anhand ihres Namens angeben oder in der Aufrufliste auswählen.  
   
@@ -126,35 +126,35 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
      ![Wählen Sie im Dialogfeld Breakpoints](../debugger/media/dbg-execution-overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Bewegen Sie den Mauszeiger, um den Ausführungsfluss zu ändern.  
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> Bewegen Sie den Mauszeiger, um den Ausführungsfluss zu ändern.  
  Während der Debugger angehalten wird, können Sie den Anweisungszeiger Festlegen der nächsten Anweisung der Ausführung von Code verschieben. Die Position der nächsten auszuführenden Anweisung wird durch eine gelbe Pfeilspitze am Rand eines Quellcodefensters oder Disassemblierungsfensters markiert. Durch das Verschieben dieser Pfeilspitze können Sie einen Teil des Codes überspringen oder zu einer bereits ausgeführten Zeile zurückkehren. Dies ist zum Beispiel sinnvoll, um einen Codeabschnitt zu überspringen, von dem bereits bekannt ist, dass er einen Fehler enthält.  
   
  ![Example2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
   
  Zum Festlegen der nächsten auszuführenden Anweisung verwenden Sie eines der folgenden Verfahren:  
   
--   Ziehen Sie die gelbe Pfeilspitze in einem Quellcodefenster in derselben Quelldatei an die Position, an der Sie die nächste Anweisung festlegen möchten.  
+- Ziehen Sie die gelbe Pfeilspitze in einem Quellcodefenster in derselben Quelldatei an die Position, an der Sie die nächste Anweisung festlegen möchten.  
   
--   Setzen Sie den Cursor in einem Quellcodefenster in der Zeile, die Sie als Nächstes ausführen, mit der rechten Maustaste, und wählen möchten **Festlegen der nächsten Anweisung**.  
+- Setzen Sie den Cursor in einem Quellcodefenster in der Zeile, die Sie als Nächstes ausführen, mit der rechten Maustaste, und wählen möchten **Festlegen der nächsten Anweisung**.  
   
--   Setzen Sie den Cursor im dissamblyfenster auf die Assemblyanweisung, die Sie verwenden möchten, führen Sie als Nächstes der rechten Maustaste auf ein, und wählen Sie **Festlegen der nächsten Anweisung**.  
+- Setzen Sie den Cursor im dissamblyfenster auf die Assemblyanweisung, die Sie verwenden möchten, führen Sie als Nächstes der rechten Maustaste auf ein, und wählen Sie **Festlegen der nächsten Anweisung**.  
   
 > [!CAUTION]
 >  Das Festlegen der nächsten Anweisung bewirkt, dass der Programmzähler direkt zur neuen Position springt. Seien Sie daher vorsichtig, wenn Sie diesen Befehl verwenden.  
 > 
 > - Anweisungen zwischen den alten und neuen Ausführungspunkten werden nicht ausgeführt.  
->   -   Wenn Sie den Ausführungspunkt rückwärts verschieben, werden dazwischenliegende Anweisungen nicht rückgängig gemacht.  
->   -   Wenn Sie die nächste Anweisung in eine andere Funktion oder in einen anderen Gültigkeitsbereich verschieben, wird i. d. R. die Aufrufliste beeinträchtigt, wodurch ein Laufzeitfehler oder eine Ausnahme ausgelöst wird. Wenn Sie versuchen, die nächste Anweisung in einen anderen Gültigkeitsbereich zu verschieben, wird ein Dialogfenster mit einer Warnung geöffnet, in dem Sie den Vorgang abbrechen können. In Visual Basic können Sie die nächste Anweisung nicht in einen anderen Bereich oder in eine andere Funktion verlegen.  
->   -   In systemeigenem C++-Code kann das Festlegen der nächsten Anweisung bei aktivierter Laufzeitprüfung dazu führen, dass am Ende der Methode eine Ausnahme ausgelöst wird.  
->   -   Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. Dann wird die Fehlermeldung angezeigt, dass der Vorgang nicht unterstützt wird.  
+>   - Wenn Sie den Ausführungspunkt rückwärts verschieben, werden dazwischenliegende Anweisungen nicht rückgängig gemacht.  
+>   - Wenn Sie die nächste Anweisung in eine andere Funktion oder in einen anderen Gültigkeitsbereich verschieben, wird i. d. R. die Aufrufliste beeinträchtigt, wodurch ein Laufzeitfehler oder eine Ausnahme ausgelöst wird. Wenn Sie versuchen, die nächste Anweisung in einen anderen Gültigkeitsbereich zu verschieben, wird ein Dialogfenster mit einer Warnung geöffnet, in dem Sie den Vorgang abbrechen können. In Visual Basic können Sie die nächste Anweisung nicht in einen anderen Bereich oder in eine andere Funktion verlegen.  
+>   - In systemeigenem C++-Code kann das Festlegen der nächsten Anweisung bei aktivierter Laufzeitprüfung dazu führen, dass am Ende der Methode eine Ausnahme ausgelöst wird.  
+>   - Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. Dann wird die Fehlermeldung angezeigt, dass der Vorgang nicht unterstützt wird.  
 > 
 > [!NOTE]
 >  In verwaltetem Code können Sie die nächste Anweisung unter den folgenden Bedingungen nicht verschieben:  
 > 
 > - Die nächste Anweisung und die aktuelle Anweisung befinden sich in verschiedenen Methoden.  
->   -   Das Debuggen wurde über Just-In-Time-Debuggen gestartet.  
->   -   Die Aufrufliste wird gerade entladen.  
->   -   Eine System.StackOverflowException oder eine System.Threading.ThreadAbortException wurden ausgelöst.  
+>   - Das Debuggen wurde über Just-In-Time-Debuggen gestartet.  
+>   - Die Aufrufliste wird gerade entladen.  
+>   - Eine System.StackOverflowException oder eine System.Threading.ThreadAbortException wurden ausgelöst.  
   
  Während die Anwendung aktiv ausgeführt wird, ist es nicht möglich, die nächste Anweisung festzulegen. Zum Festlegen der nächsten Anweisung muss sich der Debugger im Unterbrechungsmodus befinden.  
   
@@ -176,13 +176,13 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
   
  So laden Sie Symbole für eine bestimmte Systemkomponente während des Debuggings:  
   
-1.  Öffnen Sie das Fenster "Module" (Tastatur: **Strg + Alt + U**).  
+1. Öffnen Sie das Fenster "Module" (Tastatur: **Strg + Alt + U**).  
   
-2.  Wählen Sie das Modul aus, für das Sie Symbole laden möchten.  
+2. Wählen Sie das Modul aus, für das Sie Symbole laden möchten.  
   
      Sie können in der Spalte **Symbolstatus** feststellen, für welche Module Symbole geladen sind.  
   
-3.  Wählen Sie im Kontextmenü die Option **Symbole laden** aus.  
+3. Wählen Sie im Kontextmenü die Option **Symbole laden** aus.  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code  
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code  
  Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie zum Aktivieren von Eigenschaften oder Operatoren schrittweise **Debuggen** / **Optionen**. Deaktivieren Sie auf der Seite **Debuggen** / **Allgemein** das Kontrollkästchen **Eigenschaften und Operatoren überspringen (nur verwaltet)** .

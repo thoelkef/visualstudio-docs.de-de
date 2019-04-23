@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078303"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField-Element (Visual Studio-Projektvorlagen)
 Gibt an, ob die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld ist aktiviert, deaktiviert oder ausgeblendet werden, für die Projektvorlage.
@@ -51,11 +51,11 @@ Gibt an, ob die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld ist
 
  Gültigen Werte sind:
 
--   `Enabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ist aktiviert.
+- `Enabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ist aktiviert.
 
--   `Disabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld deaktiviert ist.
+- `Disabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld deaktiviert ist.
 
--   `Hidden`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ausgeblendet wird.
+- `Hidden`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ausgeblendet wird.
 
 ## <a name="remarks"></a>Hinweise
  Der Standardwert ist `Enabled`.

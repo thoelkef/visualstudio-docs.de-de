@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26f17e863900eb1d1aa6414d28a7de0cee8f3c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075661"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Vorgehensweise: Anpassen einer integrierten Registerkarte
   Einer integrierten Registerkarte können Gruppen und Steuerelemente hinzugefügt werden. Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband einer Microsoft Office-Anwendung befindet. Z. B. die **Daten** Registerkarte ist eine integrierte Registerkarte in Excel. Wenn Sie eine benutzerdefinierte Gruppe erstellen, wird diese auf der Registerkarte an letzter Stelle angezeigt. Sie können die Gruppe aber an eine beliebige Position auf der Registerkarte verschieben.
@@ -30,39 +30,39 @@ ms.locfileid: "56639543"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>So fügen Sie einer integrierten Registerkarte Gruppen hinzu
 
-1.  Mit der rechten Maustaste in der Menüband-Codedatei **Projektmappen-Explorer**, und klicken Sie dann auf **Ansicht-Designer**.
+1. Mit der rechten Maustaste in der Menüband-Codedatei **Projektmappen-Explorer**, und klicken Sie dann auf **Ansicht-Designer**.
 
     > [!NOTE]
     >  Wenn Sie nicht in der Menüband-Codedatei angezeigt wird **Projektmappen-Explorer**, müssen Sie hinzufügen, eine **Element "Menüband"** zu Ihrem Projekt. Weitere Informationen finden Sie unter [How to: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  Mit der rechten Maustaste in eine beliebige Registerkarte im Menüband-Designer, und klicken Sie dann auf **Eigenschaften**.
+2. Mit der rechten Maustaste in eine beliebige Registerkarte im Menüband-Designer, und klicken Sie dann auf **Eigenschaften**.
 
-3.  In der **Eigenschaften** Fenster, erweitern Sie die **ControlId** -Eigenschaft, und legen die **ControlIdType** Eigenschaft **Office**.
+3. In der **Eigenschaften** Fenster, erweitern Sie die **ControlId** -Eigenschaft, und legen die **ControlIdType** Eigenschaft **Office**.
 
-4.  Legen Sie die **OfficeId** Eigenschaft, um die *Steuerelement-ID* der integrierten Registerkarte, die Sie anpassen möchten.
+4. Legen Sie die **OfficeId** Eigenschaft, um die *Steuerelement-ID* der integrierten Registerkarte, die Sie anpassen möchten.
 
      Die Steuerelement-ID ist der Name, mit dem Registerkarten, Gruppen und Steuerelemente eindeutig identifiziert werden, die in Microsoft Office-Anwendungen integriert sind.
 
      Eine Liste der Steuerelement-IDs, finden Sie unter [Office 2010-Hilfedateien: Steuerelement-IDs für Office fluent User Interface](http://go.microsoft.com/fwlink/?LinkID=181052).
 
-5.  Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie Gruppen auf der Registerkarte ".
+5. Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie Gruppen auf der Registerkarte ".
 
     > [!NOTE]
     >  Integrierte Gruppen werden im Designer nicht angezeigt. Die einzige Möglichkeit, zu bestimmen, ob Sie mit einer integrierten Registerkarte arbeiten aus diesem Grund ist, untersuchen die **ControlId** -Eigenschaft auf der Registerkarte.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>So ordnen Sie Gruppen auf einer integrierten Registerkarte an
 
-1.  Wählen Sie im Menüband-Designer eine benutzerdefinierte Gruppe aus.
+1. Wählen Sie im Menüband-Designer eine benutzerdefinierte Gruppe aus.
 
-2.  In der **Eigenschaften** Fenster, erweitern Sie die **Position** Eigenschaft.
+2. In der **Eigenschaften** Fenster, erweitern Sie die **Position** Eigenschaft.
 
-3.  Legen Sie die **PositionType** Eigenschaft auf den entsprechenden Wert:
+3. Legen Sie die **PositionType** Eigenschaft auf den entsprechenden Wert:
 
-    -   **BeforeOfficeId** wird die Gruppe vor einer angegebenen integrierten Gruppe.
+    - **BeforeOfficeId** wird die Gruppe vor einer angegebenen integrierten Gruppe.
 
-    -   **AfterOfficeId** wird die Gruppe nach einer angegebenen integrierten Gruppe angeordnet.
+    - **AfterOfficeId** wird die Gruppe nach einer angegebenen integrierten Gruppe angeordnet.
 
-4.  Legen Sie die **OfficeId** Eigenschaft, um die Steuerelement-ID einer integrierten Gruppe.
+4. Legen Sie die **OfficeId** Eigenschaft, um die Steuerelement-ID einer integrierten Gruppe.
 
      Eine Liste der Steuerelement-IDs, finden Sie unter [Office 2010-Hilfedateien: Steuerelement-IDs für Office fluent User Interface](http://go.microsoft.com/fwlink/?LinkID=181052).
 

@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076889"
 ---
 # <a name="write-code-in-office-solutions"></a>Schreiben Sie Code in Office-Projektmappen
   Einige Aspekte beim Schreiben von Code in Office-Projekten unterscheiden sich von anderen Projekttypen. Viele dieser Unterscheide haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Andere Unterschiede beziehen sich auf den Entwurf von Office-Projekten.
@@ -63,9 +63,9 @@ ms.locfileid: "54864071"
 
  Da die Typen in den Office-PIAs Typen in den COM-basierten Objektmodellen entsprechen, unterscheidet sich die Art der Verwendung dieser Typen von der anderer verwalteter Typen. Zum Beispiel hängt die Art, wie Sie Methoden mit optionalen Parameter in einer primären Interopassembly von Office aufrufen, von der im Projekt verwendeten Programmiersprache ab. Weitere Informationen finden Sie unter den folgenden Themen:
 
--   [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).
+- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Späte Bindung in Office-Projektmappen](../vsto/late-binding-in-office-solutions.md).
+- [Späte Bindung in Office-Projektmappen](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Programm-Modell von Office-Projekten
  Alle Office-Projekte schließen mindestens eine generierte Klasse ein, die den Einstiegspunkt für den Code darstellt. Diese Klassen bieten auch Zugriff auf das Objektmodell der Hostanwendung und Zugriff auf Funktionen wie Aktionsbereiche und benutzerdefinierte Aufgabenbereiche.
@@ -99,8 +99,11 @@ ms.locfileid: "54864071"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programmierung mit Visual Basic und. Visual C# -Code in Office-Projektmappen
  Sie können Office-Lösungen entweder mit Visual Basic oder Visual C# erstellen. Da die Microsoft Office-Objektmodelle zur Verwendung mit Microsoft Visual Basic for Applications (VBA) entwickelt wurden, können Visual Basic-Entwickler problemlos mit den von den Microsoft Office-Anwendungen verfügbar gemachten Objekten arbeiten. Visual C#-Entwickler können größtenteils die gleichen Funktionen wie Visual Basic-Entwickler nutzen, aber in einigen Fällen müssen sie zusätzlichen Code verfassen, um die Office-Objektmodelle verwenden zu können. Es gibt auch einige Unterschiede zwischen den grundlegenden Programmierfunktionen für die Office-Entwicklung und in Visual Basic und C# geschriebenem verwalteten Code.
 
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Wichtige Unterschiede zwischen Visual Basic und Visual C#
- In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen Visual Basic und Visual C# bei der Office-Entwicklung angezeigt.
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Wichtige Unterschiede zwischen Visual Basic und Visual c#
+<!-- markdownlint-enable MD003 MD020 -->
+
+In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen Visual Basic und Visual C# bei der Office-Entwicklung angezeigt.
 
 |Feature|Beschreibung|Visual Basic-Unterstützung|Visual C#-Unterstützung|
 |-------------|-----------------|--------------------------|------------------------|

@@ -11,15 +11,15 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1c305129a7f46c8d1841f28d8084535ec7e4d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077575"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Vorgehensweise: Verwenden des Imports-Designers
-Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden. Ähnlich wie die **importiert** oder **mit** Schlüsselwörtern in Visual Basic .NET und C#, Angeben von Namespaces im Importe-Designer können Sie einfach einen Typnamen in den Ausdruck und nicht in einen vollqualifizierten eingeben Version-Typname.  
+Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden. Ähnlich wie die **importiert** oder **mit** Schlüsselwörtern in Visual Basic .NET und c#, Angeben von Namespaces im Importe-Designer können Sie einfach einen Typnamen in den Ausdruck und nicht in einen vollqualifizierten eingeben Version-Typname.  
   
  Der Importe-Designer reagiert sowohl auf Änderungen, die in der Benutzeroberfläche vorgenommen werden, als auch auf Änderungen, die beim Speichern des Workflows gespeichert werden. Wenn der Workflow gespeichert wird, können dem Importe-Designer automatisch Namespaces hinzugefügt werden. Hierzu gehört Folgendes:  
   
@@ -33,14 +33,14 @@ Der Importe-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben,
   
 ### <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>So fügen Sie der Liste der importierten Namespaces einen Namespace hinzu  
   
-1.  Öffnen Sie eine WCF-Workflowdienstanwendung, die Workflowkonsolenanwendung oder das Aktivitätsbibliotheksprojekt in [!INCLUDE[vs2010](../includes/vs2010-md.md)] oder einer neu gehosteten Workflowanwendung.  
+1. Öffnen Sie eine WCF-Workflowdienstanwendung, die Workflowkonsolenanwendung oder das Aktivitätsbibliotheksprojekt in [!INCLUDE[vs2010](../includes/vs2010-md.md)] oder einer neu gehosteten Workflowanwendung.  
   
-2.  Klicken Sie auf **Importe** am unteren Rand der hauptarbeitsfläche. Der Import-Designer wird angezeigt.  
+2. Klicken Sie auf **Importe** am unteren Rand der hauptarbeitsfläche. Der Import-Designer wird angezeigt.  
   
-3.  Geben Sie einen Namespace ein, oder wählen Sie einen Namespace im Dropdownlisten-Steuerelement am oberen Rand des Import-Designers aus.  
+3. Geben Sie einen Namespace ein, oder wählen Sie einen Namespace im Dropdownlisten-Steuerelement am oberen Rand des Import-Designers aus.  
   
      Während der Eingabe wird eine Liste gültiger Namespaces angezeigt, die mit den eingegebenen Zeichen übereinstimmen.  
   
-4.  Drücken Sie **EINGABETASTE** den Namespace der Liste hinzufügen.  
+4. Drücken Sie **EINGABETASTE** den Namespace der Liste hinzufügen.  
   
-5.  Wenn Sie einen Namespace aus der Liste entfernen möchten, wählen Sie den Namespace, und drücken Sie dann die **löschen** auf der Tastatur die Taste. Beachten Sie, dass ein Namespace nur gelöscht werden kann, wenn er nicht gültig ist, z. B., wenn das Projekt nicht mehr auf die Assembly verweist, die den Namespace enthält.
+5. Wenn Sie einen Namespace aus der Liste entfernen möchten, wählen Sie den Namespace, und drücken Sie dann die **löschen** auf der Tastatur die Taste. Beachten Sie, dass ein Namespace nur gelöscht werden kann, wenn er nicht gültig ist, z. B., wenn das Projekt nicht mehr auf die Assembly verweist, die den Namespace enthält.

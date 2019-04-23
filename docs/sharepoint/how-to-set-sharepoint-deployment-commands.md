@@ -12,33 +12,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79843389adcd7dc0a4e350e4fd010d450c837a4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077783"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen
   Sie können während des Bereitstellungsvorgangs anpassen, indem Sie Befehle für vor und nach der Bereitstellung festlegen. Diese Befehle führen vor und nach anderen Bereitstellungsaktionen, beim Debuggen von SharePoint-Lösungen in Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Befehl vor der Bereitstellung hinzufügen
 
-1.  Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.
+1. Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.
 
-2.  Wählen Sie die **SharePoint** Registerkarte.
+2. Wählen Sie die **SharePoint** Registerkarte.
 
-3.  In der **vor der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.
+3. In der **vor der Bereitstellung über die Befehlszeile** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.
 
      Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalte aus, bevor die Bereitstellung abgeschlossen ist, **Dir**.
 
 ### <a name="to-add-a-post-deployment-command"></a>Hinzufügen eines Befehls nach der Bereitstellung
 
-1.  Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.
+1. Wählen Sie auf der Menüleiste **Projekt** > **\<*ProjectName*> Eigenschaften**.
 
-2.  Wählen Sie die **SharePoint** Registerkarte.
+2. Wählen Sie die **SharePoint** Registerkarte.
 
-3.  In der **Befehlszeile nach der Bereitstellung** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.
+3. In der **Befehlszeile nach der Bereitstellung** Text Geben Sie MS-DOS oder MSBuild Befehle aus, um diesen Schritt anzupassen.
 
      Geben Sie beispielsweise zum Auflisten der Verzeichnisinhalte aus, nachdem die Bereitstellung abgeschlossen ist, **Dir**. Um eine MSBuild-Variable verwenden, um die Assembly aus dem Buildverzeichnis zu kopieren, geben Sie **kopieren $(TargetPath) c:\DeploymentDirectory**.
 

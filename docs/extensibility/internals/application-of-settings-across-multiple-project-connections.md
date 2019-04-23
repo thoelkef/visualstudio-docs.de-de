@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074098"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung von Einstellungen auf mehrere projektverbindungen
 Ein Quellcodeverwaltungs-Plug-In können mit der Quelle Steuerelement-Plug-in-API-Version 1.2, erstellt einen Batchvorgang den gleichen Quellcodeverwaltungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte ausgeführt. Batches können zum Eliminieren Sie redundante projektbezogene Dialogfelder, die von der Benutzeroberfläche verwendet werden.
@@ -28,9 +28,9 @@ Ein Quellcodeverwaltungs-Plug-In können mit der Quelle Steuerelement-Plug-in-AP
 ## <a name="new-functions"></a>Neue Funktionen
 Die folgenden neuen Funktionen unterstützen den Batchvorgang:
 
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
 Die `SCCBeginBatch` Funktion startet eine Gruppe von Quellcodeverwaltungsvorgänge. Die `SccEndBatch` -Funktion schließt die Gruppe. Gruppen können nicht geschachtelt werden.
 

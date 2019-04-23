@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644522"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074007"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Vorgehensweise: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument
   Wenn Sie Daten, für den Datencache in einem Dokument oder die Arbeitsmappe, die mit einem Kennwort geschützt ist hinzufügen, werden Änderungen an den zwischengespeicherten Daten nicht automatisch gespeichert. Sie können Änderungen an den zwischengespeicherten Daten durch Überschreiben der Methoden in Ihrem Projekt speichern.
@@ -30,13 +30,13 @@ ms.locfileid: "56644522"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Zum Zwischenspeichern von Daten in einem Worddokument, das mit einem Kennwort geschützt ist
 
-1.  In der `ThisDocument` Klasse fest, markieren Sie ein öffentliches Feld oder Eigenschaft, die zwischengespeichert werden. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
+1. In der `ThisDocument` Klasse fest, markieren Sie ein öffentliches Feld oder Eigenschaft, die zwischengespeichert werden. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
 
-2.  Überschreiben der <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> -Methode in der die `ThisDocument` Klasse, und Entfernen des Schutzes vom Dokument.
+2. Überschreiben der <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> -Methode in der die `ThisDocument` Klasse, und Entfernen des Schutzes vom Dokument.
 
      Wenn das Dokument gespeichert wird, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft diese Methode zum Schutz des Dokuments aufgehoben werden kann. Dadurch können Änderungen an den zwischengespeicherten Daten gespeichert werden soll.
 
-3.  Überschreiben der <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> -Methode in der die `ThisDocument` Klasse, und wenden Sie Schutz für das Dokument erneut an.
+3. Überschreiben der <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> -Methode in der die `ThisDocument` Klasse, und wenden Sie Schutz für das Dokument erneut an.
 
      Nachdem das Dokument gespeichert wird, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft diese Methode zum Schutz des Dokuments erneut angewendet werden kann.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644522"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Zum Zwischenspeichern von Daten in einer Excel-Arbeitsmappe, die mit einem Kennwort geschützt ist
 
-1.  In der `ThisWorkbook` Klasse oder eines der `Sheet` *n* Klassen, markieren Sie ein öffentliches Feld oder Eigenschaft, die zwischengespeichert werden. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
+1. In der `ThisWorkbook` Klasse oder eines der `Sheet` *n* Klassen, markieren Sie ein öffentliches Feld oder Eigenschaft, die zwischengespeichert werden. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
 
-2.  Überschreiben der <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> -Methode in der die `ThisWorkbook` Klasse, und Entfernen des Schutzes aus der Arbeitsmappe.
+2. Überschreiben der <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> -Methode in der die `ThisWorkbook` Klasse, und Entfernen des Schutzes aus der Arbeitsmappe.
 
      Wenn die Arbeitsmappe gespeichert wird, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft diese Methode zum Schutz die Arbeitsmappe aufgehoben werden kann. Dadurch können Änderungen an den zwischengespeicherten Daten gespeichert werden soll.
 
-3.  Überschreiben der <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> -Methode in der die `ThisWorkbook` Klasse, und wenden Sie Schutz für das Dokument erneut an.
+3. Überschreiben der <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> -Methode in der die `ThisWorkbook` Klasse, und wenden Sie Schutz für das Dokument erneut an.
 
      Nach dem Speichern der Arbeitsmappe die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft diese Methode zum Schutz der Arbeitsmappe wieder aktiviert werden kann.
 

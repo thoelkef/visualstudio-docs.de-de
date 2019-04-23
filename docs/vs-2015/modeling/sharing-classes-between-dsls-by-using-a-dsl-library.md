@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c3a14a254eb3b07a95687faaf377664dd6f747a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073825"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ In der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs- und Modelli
   
 #### <a name="to-create-a-dsl-library"></a>Um eine DSL-Bibliothek zu erstellen.  
   
-1.  Erstellen eines neuen DSL-Projekts, und wählen Sie die Lösungsvorlage für die DSL-Bibliothek.  
+1. Erstellen eines neuen DSL-Projekts, und wählen Sie die Lösungsvorlage für die DSL-Bibliothek.  
   
      Ein einzelnes DSL-Projekt wird mit einem leeren Modell erstellt.  
   
-2.  Sie können Domänenklassen, Beziehungen, Formen und so weiter hinzufügen.  
+2. Sie können Domänenklassen, Beziehungen, Formen und so weiter hinzufügen.  
   
      Die Elemente in der Bibliothek keine einzelne einbettende Struktur bilden.  
   
@@ -37,15 +37,15 @@ In der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualisierungs- und Modelli
   
      Neben der Einstellung der **Vererbungsmodifizierer** der Domänenklassen, `Abstract`.  
   
-3.  Sie können Elemente hinzufügen, die Sie im DSL-Explorer, wie z. B. Verbindungs-Generatoren zu definieren.  
+3. Sie können Elemente hinzufügen, die Sie im DSL-Explorer, wie z. B. Verbindungs-Generatoren zu definieren.  
   
-4.  Sie können Anpassungen hinzufügen, die zusätzlichen Code, z. B. validierungseinschränkungen erfordern.  
+4. Sie können Anpassungen hinzufügen, die zusätzlichen Code, z. B. validierungseinschränkungen erfordern.  
   
-5.  Klicken Sie auf **alle Vorlagen transformieren**.  
+5. Klicken Sie auf **alle Vorlagen transformieren**.  
   
-6.  Erstellen Sie das Projekt.  
+6. Erstellen Sie das Projekt.  
   
-7.  Wenn Sie die DSL für andere Benutzer verteilen, müssen Sie sowohl die kompilierte Assembly (DLL) und die Datei bereitstellen `DslDefinition.dsl`. Sie können die kompilierte Assembly in einem Ordner unter finden. `Dsl\bin\*`  
+7. Wenn Sie die DSL für andere Benutzer verteilen, müssen Sie sowohl die kompilierte Assembly (DLL) und die Datei bereitstellen `DslDefinition.dsl`. Sie können die kompilierte Assembly in einem Ordner unter finden. `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek  
   

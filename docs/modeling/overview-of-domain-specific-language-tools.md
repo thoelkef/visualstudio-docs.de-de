@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078238"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Übersicht über domänenspezifische Sprachtools
 Domain-Specific-Sprachtools (DSL-Tools), die in Visual Studio gehostet werden, können Sie eine domänenspezifische Sprache zu entwerfen, und generieren Sie dann alle Elemente, die Benutzer benötigen, um Modelle zu erstellen, die von der Sprache basieren.
 
  Die folgenden Tools gehören zu den DSL-Tools:
 
--   Ein Projekt-Assistent, der verschiedene Projektmappenvorlagen verwendet, um Ihnen die Entwicklung von domänenspezifischen Sprachen zu erleichtern.
+- Ein Projekt-Assistent, der verschiedene Projektmappenvorlagen verwendet, um Ihnen die Entwicklung von domänenspezifischen Sprachen zu erleichtern.
 
--   Ein grafischer Designer zum Erstellen und Bearbeiten der domänenspezifischen Sprachdefinition.
+- Ein grafischer Designer zum Erstellen und Bearbeiten der domänenspezifischen Sprachdefinition.
 
--   Eine Validierungs-Engine, die sicherstellt, dass die domänenspezifische Sprachdefinition richtig formatiert ist, und bei Problemen Fehler- und Warnmeldungen anzeigt.
+- Eine Validierungs-Engine, die sicherstellt, dass die domänenspezifische Sprachdefinition richtig formatiert ist, und bei Problemen Fehler- und Warnmeldungen anzeigt.
 
--   Ein Codegenerator, der eine domänenspezifische Sprachdefinition als Eingabe behandelt und anschließend Quellcode ausgibt.
+- Ein Codegenerator, der eine domänenspezifische Sprachdefinition als Eingabe behandelt und anschließend Quellcode ausgibt.
 
 ## <a name="the-dsl-tools-solution"></a>Die Projektmappe für DSL-Tools
  Der DSL-Designer-Assistent stellt die folgenden Projektmappenvorlagen zur Verfügung:

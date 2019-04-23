@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072954"
 ---
 # <a name="program-control"></a>Programmsteuerung
 Treten in Visual Studio debuggen, die alle der folgenden schrittweises Durchlaufen und Fortsetzen von Routinen auf Programmebene:
 
--   Festlegen der nächsten Anweisung an, festlegen den Computer, also, auf die nächste Anweisung in einer bestimmten Frame-Umgebung ausgeführt werden soll
+- Festlegen der nächsten Anweisung an, festlegen den Computer, also, auf die nächste Anweisung in einer bestimmten Frame-Umgebung ausgeführt werden soll
 
--   Ausgeführt, d. h. weiterhin im schrittweisen Modus beenden
+- Ausgeführt, d. h. weiterhin im schrittweisen Modus beenden
 
--   Schrittweises durchlaufen für die nächste Anweisung
+- Schrittweises durchlaufen für die nächste Anweisung
 
--   Mit dem aktuellen Modus für die schrittweise Ausführung fortsetzen
+- Mit dem aktuellen Modus für die schrittweise Ausführung fortsetzen
 
--   Anhalten von Threads enthalten, die von der Anwendung
+- Anhalten von Threads enthalten, die von der Anwendung
 
--   Fortsetzen von Threads enthalten, die von der Anwendung
+- Fortsetzen von Threads enthalten, die von der Anwendung
 
 > [!NOTE]
 >  Anzeigen der Aufrufliste wird auf der Threadebene implementiert. Sie müssen zum Aufzählen der Frame-Informationen beim Anzeigen der Aufrufliste für einen Thread alle Methoden implementieren die [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Schnittstelle.

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073526"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
   
  Um ein UML-Diagramm oder ein Ebenendiagramm zu lesen, benötigen Sie mindestens die folgenden Dateien:  
   
--   Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.  
+- Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Für Ebenendiagramme sollten Sie auch die Datei mit dem Namen haben _MyDiagram_**. layerdiagram.suppressions**.  
   
--   Die Modellierungsprojektdatei (**MyModel.modelproj**)  
+- Die Modellierungsprojektdatei (**MyModel.modelproj**)  
   
--   Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)  
+- Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)  
   
--   Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)  
+- Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Änderungen, die Sie im schreibgeschützten Modus vornehmen können  
  Wenn Sie ein Modell und seine Diagramme in einer Version von Visual Studio öffnen, die keine Modellerstellung unterstützt, können Sie das Modell nicht ändern. Das heißt, dass Sie nicht die Elemente und Beziehungen ändern können, die in den Diagrammen oder im Modell-Explorer angezeigt werden. Sie können jedoch einige Änderungen am Layout der Diagramme vornehmen:  
@@ -55,7 +55,7 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
   
   Sie können diese Änderungen speichern. Wenn Sie Ihre Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens Senden der aktualisierten **.layout** Dateien.  
   
-##  <a name="RelatedTopics"></a> Verwandte Themen  
+## <a name="RelatedTopics"></a> Verwandte Themen  
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  

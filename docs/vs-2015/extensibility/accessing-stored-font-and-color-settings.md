@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078095"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Zugriff auf gespeicherte Schriftart- und Farbeinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebun
   
  Aus diesem Grund um Persistenz zu initiieren, muss eine VSPackage:  
   
--   Abrufen einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle durch den Aufruf `QueryService` für den globalen Dienstanbieter.  
+- Abrufen einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle durch den Aufruf `QueryService` für den globalen Dienstanbieter.  
   
      `QueryService` muss aufgerufen werden, mithilfe einer Dienst-ID-Argument `SID_SVsFontAndColorStorage` und ID Schnittstellenargument `IID_IVsFontAndColorStorage`.  
   
--   Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode zum Öffnen einer Kategorie unter Verwendung der Kategorie-GUID und eine moduskennzeichnung als Argumente beibehalten werden sollen.  
+- Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode zum Öffnen einer Kategorie unter Verwendung der Kategorie-GUID und eine moduskennzeichnung als Argumente beibehalten werden sollen.  
   
      Der Modus, gemäß der `fFlags` Argument wird aus Werten erstellt die <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> Enumeration. In diesem Modus steuert:  
   
-    -   Die Einstellungen, die über zugegriffen werden können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
+    - Die Einstellungen, die über zugegriffen werden können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
   
-    -   Alle Einstellungen oder nur diejenigen, die Benutzer zu ändern, und sind abrufbar, bis, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
+    - Alle Einstellungen oder nur diejenigen, die Benutzer zu ändern, und sind abrufbar, bis, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
   
-    -   Die Art und Weise der Weitergabe von Änderungen an den benutzereinstellungen.  
+    - Die Art und Weise der Weitergabe von Änderungen an den benutzereinstellungen.  
   
-    -   Das Format der RGB-Werte, die verwendet werden.  
+    - Das Format der RGB-Werte, die verwendet werden.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Verwenden von Schriftarten und Farben Statuspersistenz  
  Beibehalten von Schriftarten und Farben umfasst:  

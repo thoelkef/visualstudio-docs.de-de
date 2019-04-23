@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078927"
 ---
 # <a name="build-office-solutions"></a>Erstellen von Office-Projektmappen
   Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945416"
 ### <a name="document-level-projects"></a>Projekte auf Dokumentebene
  Wenn Sie ein Projekt auf Dokumentebene erstellen, sind die folgenden Elemente in der Projektausgabe enthalten:
 
--   Eine Kopie des Projektdokuments.
+- Eine Kopie des Projektdokuments.
 
--   Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
+- Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
 
--   Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
 
--   Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
+- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Eine Programmdatenbank (*PDB*) Datei.
+- Eine Programmdatenbank (*PDB*) Datei.
 
 > [!NOTE]
 >  Wenn Sie eine Projektmappe auf Dokumentebene an einem Remotespeicherort anstatt auf dem lokalen Computer erstellen, fügen Sie den vollqualifizierten Pfad zur Liste vertrauenswürdiger Speicherorte im Vertrauensstellungscenter der Anwendung hinzu. Weitere Informationen finden Sie im Abschnitt mit dem Gewähren von Vertrauenswürdigkeit für Dokumente in [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073734"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Binden von Daten an Steuerelemente in Office-Projektmappen
   Sie können Windows Forms-Steuerelemente und *Hoststeuerelemente* auf einem Microsoft Office Word-Dokument oder einem Microsoft Office Excel-Arbeitsblatt an eine Datenquelle binden, sodass die Steuerelemente die Daten automatisch anzeigen. Sie können Daten sowohl in Projekten auf Anwendungsebene als auch in Projekten auf Dokumentebene an Steuerelemente binden.
@@ -73,22 +73,22 @@ ms.locfileid: "56605717"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Datenbindung in Projekten auf Dokumentebene zur Entwurfszeit
  In den folgenden Themen werden Beispiele für das Binden von Daten zur Entwurfszeit erläutert:
 
--   [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Vorgehensweise: Führen Sie einen Bildlauf durch Datenbankdatensätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Vorgehensweise: Führen Sie einen Bildlauf durch Datenbankdatensätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Binden von Daten in VSTO-Add-in-Projekten
  In VSTO-Add-in-Projekten können Sie Steuerelemente nur zur Laufzeit hinzufügen. In den folgenden Themen werden Beispiele für das Binden von Daten zur Laufzeit dargestellt:
 
--   [Exemplarische Vorgehensweise: Einfache Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Exemplarische Vorgehensweise: Einfache Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Exemplarische Vorgehensweise: Komplexe Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Exemplarische Vorgehensweise: Komplexe Datenbindung in VSTO-Add-in-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Aktualisieren von Daten, die an Hoststeuerelemente gebunden ist
  Eine Datenbindung zwischen einer Datenquelle und einem Hoststeuerelement bedingt eine bidirektionale Datenaktualisierung. Bei einer einfachen Datenbindung werden Änderungen in der Datenquelle automatisch für das Hoststeuerelement übernommen, aber Änderungen im Hoststeuerelement erfordern einen expliziten Aufruf, damit die Datenquelle aktualisiert wird. Dies ist darauf zurückzuführen, dass in einigen Fällen Änderungen in einem datengebundenen Feld nur dann akzeptiert werden, wenn gleichzeitig auch Änderungen in einem anderen datengebundenen Feld vorgenommen werden. Es könnten z. B. zwei Felder vorhanden sein: eines für das Alter und eines für die Jahre an Berufserfahrung. Die Berufserfahrung kann das Alter nicht übersteigen Ein Benutzer kann nur dann das Alter von 50 in 25 und die Berufserfahrung von 30 in 10 ändern, wenn er die Änderungen gleichzeitig vornimmt. Um dieses Problem zu beheben, werden Felder mit einfacher Datenbindung erst aktualisiert, wenn die Aktualisierungen explizit durch Code gesendet wurden.
