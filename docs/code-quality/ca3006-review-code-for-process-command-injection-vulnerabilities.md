@@ -1,5 +1,5 @@
 ---
-title: 'CA3006: Code nach Prozess-Befehl-Injection-Anfälligkeiten überprüfen'
+title: 'CA3006: Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: da161e611ca1d802c8da16370907029233bfd785
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037984"
 ---
-# <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Code nach Prozess-Befehl-Injection-Anfälligkeiten überprüfen
+# <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Review code for process command injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusung von Prozessbefehlen)
 
 |||
 |-|-|

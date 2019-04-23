@@ -22,12 +22,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daa6966412f9bc24c498a089656502a31bcf90e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15b040ac69fbe581998850c3d8f56ad15d912a58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042849"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Durchsuchen und Neuanordnen von Code Maps
 
@@ -37,27 +37,27 @@ Sie können Codeübersichten ohne Auswirkungen auf den zugrunde liegenden Code i
 
  **Anforderungen**
 
--   Zum Erstellen von Code Maps benötigen Sie Visual Studio Enterprise.
+- Um Codeübersichten erstellen zu können, müssen Sie über Visual Studio Enterprise verfügen.
 
--   In Visual Studio Professional können Sie Codeübersichten anzeigen und diese im begrenzten Maße bearbeiten.
+- In Visual Studio Professional können Sie Codeübersichten anzeigen und diese im begrenzten Maße bearbeiten.
 
-##  <a name="ManageLargeGraphs"></a> Erste Schritte mit Code Maps verwenden
+## <a name="ManageLargeGraphs"></a> Erste Schritte mit Code Maps verwenden
 
 Erstellen Sie eine Code Map (finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md) Weitere Details). Wenn Sie nicht möchten, warten Sie, bis die Zuordnung abgeschlossen generieren, klicken Sie auf die **Abbrechen** Link zu einem beliebigen Zeitpunkt aus, um den Generierungsprozess zu beenden. Allerdings werden in diesem Fall nicht die Details aller Abhängigkeiten und Links angezeigt.
 
 Nachdem Sie die Übersicht generiert haben, beginnen Sie mit diesen Tipps zum Überprüfen des Codes:
 
--   Achten Sie auf die natürlichen Abhängigkeitscluster im Code. Wählen Sie auf der Symbolleiste der Map **Layout**, **schnelle Cluster**![Schaltfläche "Schnelle Cluster" auf der Symbolleiste "Diagramm"](../modeling/media/quickclustersicon.gif). Finden Sie unter [Ändern des übersichtlayouts](#Selecting).
+- Achten Sie auf die natürlichen Abhängigkeitscluster im Code. Wählen Sie auf der Symbolleiste der Map **Layout**, **schnelle Cluster**![Schaltfläche "Schnelle Cluster" auf der Symbolleiste "Diagramm"](../modeling/media/quickclustersicon.gif). Finden Sie unter [Ändern des übersichtlayouts](#Selecting).
 
      ![Abhängigkeitsdiagramm &#45; Layout "Schnelle Cluster"](../modeling/media/dependencygraph_quickclusters.png)
 
--   Organisieren Sie die Übersicht in kleinere Bereiche, indem Sie verwandte Knoten gruppieren. Reduzieren Sie diese Gruppen, um nur die Abhängigkeiten zwischen den Gruppen zu sehen, die automatisch angezeigt werden. Finden Sie unter [Knoten gruppieren](#OrganizeGroups).
+- Organisieren Sie die Übersicht in kleinere Bereiche, indem Sie verwandte Knoten gruppieren. Reduzieren Sie diese Gruppen, um nur die Abhängigkeiten zwischen den Gruppen zu sehen, die automatisch angezeigt werden. Finden Sie unter [Knoten gruppieren](#OrganizeGroups).
 
--   Verwenden Sie Filter, um die Übersicht zu vereinfachen und den Schwerpunkt auf die Typen von Knoten oder Links zu legen, an denen Sie interessiert sind. Finden Sie unter [Filtern von Knoten und Links](#FilterNodes).
+- Verwenden Sie Filter, um die Übersicht zu vereinfachen und den Schwerpunkt auf die Typen von Knoten oder Links zu legen, an denen Sie interessiert sind. Finden Sie unter [Filtern von Knoten und Links](#FilterNodes).
 
--   Maximieren Sie die Leistung von großen Übersichten. Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md) für Weitere Informationen. Schalten Sie z. B. **Skip Build** auf der Übersichtssymbolleiste, damit, die Visual Studio Ihre Projektmappe nicht erneut erstellt, wenn Sie Elemente in der Übersicht aktualisieren.
+- Maximieren Sie die Leistung von großen Übersichten. Finden Sie unter [projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md) für Weitere Informationen. Schalten Sie z. B. **Skip Build** auf der Übersichtssymbolleiste, damit, die Visual Studio Ihre Projektmappe nicht erneut erstellt, wenn Sie Elemente in der Übersicht aktualisieren.
 
-##  <a name="Selecting"></a> Ändern des übersichtlayouts
+## <a name="Selecting"></a> Ändern des übersichtlayouts
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
 |-|-|
@@ -68,7 +68,7 @@ Nachdem Sie die Übersicht generiert haben, beginnen Sie mit diesen Tipps zum Ü
 |Ändern Sie das Layout in einer Gruppe unabhängig von den anderen Knoten und Gruppen in der Übersicht.|Wählen Sie einen Knoten aus, und öffnen Sie das Kontextmenü. Wählen Sie **Layout** und dann eine layoutart.<br /><br /> - oder -<br /><br /> Wählen Sie einen Knoten, und erweitern Sie, um die untergeordneten Knoten angezeigt. Klicken Sie auf den knotentitel, um die Popupsymbolleiste für Gruppen angezeigt, und öffnen Sie die **den Layoutstil der Gruppe**![Abhängigkeitsdiagramm &#45; gruppensymbolleiste &#45; Layout](../modeling/media/dependencygraph_grouptoolbar.gif) Liste. Wählen Sie eine der drei Layouts, **schnelle Cluster**, oder **Listenansicht** (die ordnet der Gruppe Inhalt in eine Liste).<br /><br /> Finden Sie unter [Knoten gruppieren](#OrganizeGroups) Weitere Details.|
 |Machen Sie eine Aktion in der Übersicht rückgängig.|Drücken Sie **STRG** + **Z** oder verwenden Sie Visual Studio **Rückgängig** Befehl.|
 
-##  <a name="Explore"></a> Durchsuchen der Übersicht
+## <a name="Explore"></a> Durchsuchen der Übersicht
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
 |-|-|
@@ -80,7 +80,7 @@ Nachdem Sie die Übersicht generiert haben, beginnen Sie mit diesen Tipps zum Ü
 |Wählen Sie alle nicht markierten Knoten aus.|Öffnen Sie das Kontextmenü für die ausgewählten Knoten. Wählen Sie **wählen**, **Auswahl umkehren**.|
 |Wählen Sie weitere Knoten aus, die Links zu den ausgewählten Knoten aufweisen.|Öffnen Sie das Kontextmenü für die ausgewählten Knoten. Wählen Sie **wählen** und eine der folgenden:<br /><br /> – Um zusätzliche Knoten direkt mit dem ausgewählten Knoten mit Links auszuwählen, wählen Sie **eingehende Abhängigkeiten**.<br />-, Um zusätzlichen Knoten, die Verknüpfung direkt aus dem ausgewählten Knoten auszuwählen **ausgehenden Abhängigkeiten**.<br />– Um zusätzliche Knoten in den und aus dem ausgewählten Knoten mit Links auszuwählen, wählen Sie **sowohl**.<br />-Um alle Knoten in und aus dem ausgewählten Knoten mit Links auszuwählen, wählen Sie **verbunden Unterdiagramm**.<br />-, Um alle untergeordneten Elemente des ausgewählten Knotens auszuwählen **untergeordneten**.|
 
-##  <a name="FilterNodes"></a> Filtern von Knoten und links
+## <a name="FilterNodes"></a> Filtern von Knoten und links
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
 |-|-|
@@ -91,15 +91,15 @@ Nachdem Sie die Übersicht generiert haben, beginnen Sie mit diesen Tipps zum Ü
 
 Die im Bereich „Legende“ der Übersicht angezeigten Symbole spiegeln die von Ihnen in der Liste vorgenommenen Einstellungen wider. Um anzuzeigen, oder blenden den Bereich "Detaillegende", klicken Sie auf die **Legende** auf der Symbolleiste der Codeübersicht auf die Schaltfläche.
 
-##  <a name="Inspect"></a> Untersuchen von Knoten und links
+## <a name="Inspect"></a> Untersuchen von Knoten und links
 
 In Codeübersichten werden die folgenden Arten von Links angezeigt:
 
--   Ein einzelner Link stellt eine einzelne Beziehung zwischen zwei Knoten dar.
+- Ein einzelner Link stellt eine einzelne Beziehung zwischen zwei Knoten dar.
 
--   Ein gruppenübergreifender Link stellt eine Beziehung zwischen zwei Knoten in unterschiedlichen Gruppen dar.
+- Ein gruppenübergreifender Link stellt eine Beziehung zwischen zwei Knoten in unterschiedlichen Gruppen dar.
 
--   Ein Aggregatlink stellt alle gleichgerichteten Beziehungen zwischen zwei Gruppen dar.
+- Ein Aggregatlink stellt alle gleichgerichteten Beziehungen zwischen zwei Gruppen dar.
 
 > [!TIP]
 > Gruppenübergreifende Links werden in der Übersicht standardmäßig nur für ausgewählte Knoten angezeigt. Um dieses Verhalten zum Anzeigen oder Ausblenden von aggregatlinks zwischen Gruppen zu ändern, klicken Sie auf **Layout** auf den Code Symbolleiste zugeordnet, und wählen Sie **erweitert**, klicken Sie dann **alle gruppenübergreifenden Links anzeigen** oder **Alle gruppenübergreifenden Links ausblenden**. Finden Sie unter [ausblenden oder Einblenden von Knoten und Links](#HidingShowing) Weitere Details.
@@ -113,7 +113,7 @@ In Codeübersichten werden die folgenden Arten von Links angezeigt:
 |Überprüfen Sie die Abhängigkeiten zwischen mehreren Knoten in unterschiedlichen Gruppen.|Erweitern Sie die Gruppen, sodass alle untergeordneten Elemente angezeigt werden. Wählen Sie alle für Sie interessanten Knoten aus – einschließlich der untergeordneten Elemente. In der Übersicht werden die gruppenübergreifenden Links zwischen den ausgewählten Knoten angezeigt.<br /><br /> Um alle Knoten in einer Gruppe auszuwählen, halten Sie **UMSCHALT** und die linke Maustaste gedrückt, während Sie ein Rechteck um dieser Gruppe zeichnen. Um alle Knoten in der Übersicht auszuwählen, drücken Sie **STRG**+**ein**. **Tipp:**  Wählen Sie zum Anzeigen gruppenübergreifender Links jederzeit **Layout** auf der Symbolleiste der Map **erweitert**, **alle gruppenübergreifenden Links anzeigen**.|
 |Zeigen Sie die Elemente an, auf die von einem Knoten oder Link verwiesen wird.|Öffnen Sie das Kontextmenü für den Knoten, und wählen **alle Verweise suchen**. **Hinweis**:  Diese Möglichkeit besteht nur, wenn in der DGML-Datei der Übersicht das `Reference`-Attribut für den Knoten oder den Link festgelegt ist. Zum Hinzufügen von Verweisen auf Elemente von Knoten oder Links finden Sie unter [Anpassen von Code maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|
 
-##  <a name="HidingShowing"></a> Aus- oder Einblenden von Knoten und links
+## <a name="HidingShowing"></a> Aus- oder Einblenden von Knoten und links
 
 Wenn Knoten ausgeblendet werden, werden sie von Layoutalgorithmen nicht berücksichtigt. Gruppenübergreifende Links werden standardmäßig ausgeblendet. Gruppenübergreifende Links sind einzelne Links, durch die Knoten über Gruppen hinweg verbunden sind. Beim Reduzieren von Gruppen werden alle gruppenübergreifenden Links in der Übersicht zu einzelnen Links zwischen Gruppen aggregiert. Wenn Sie eine Gruppe erweitern und Knoten in der Gruppe auswählen, werden gruppenübergreifende Links angezeigt, die die Abhängigkeiten in dieser Gruppe darstellen.
 
@@ -137,7 +137,7 @@ Wenn Knoten ausgeblendet werden, werden sie von Layoutalgorithmen nicht berücks
 |Anzeigen ausschließlich gruppenübergreifender Links für ausgewählte Knoten.|**Gruppenübergreifende Links für ausgewählte Knoten anzeigen**|
 |Alle Links ausblenden.|**Alle Links ausblenden**. Wählen Sie eine der oben aufgeführten Optionen aus, um Links erneut anzuzeigen.|
 
-##  <a name="OrganizeGroups"></a> Gruppieren von Knoten
+## <a name="OrganizeGroups"></a> Gruppieren von Knoten
 
 |**Aktion**|**Führen Sie diese Schritte aus**|
 |-|-|
@@ -149,7 +149,7 @@ Wenn Knoten ausgeblendet werden, werden sie von Layoutalgorithmen nicht berücks
 |Entfernen Sie Gruppen.|Wählen Sie die Gruppe oder die Gruppen aus, die Sie entfernen möchten. Öffnen Sie das Kontextmenü für die Auswahl, und wählen **Gruppe**, **Gruppe entfernen**.|
 |Entfernen Sie Knoten aus der übergeordneten Gruppe.|Wählen Sie die Knoten aus, die Sie verschieben möchten. Öffnen Sie das Kontextmenü für die Auswahl, und wählen **Gruppe**, **aus übergeordnetem Element entfernen**. Dadurch werden Knoten bis zur zweiten übergeordneten Ebene oder außerhalb der Gruppe entfernt, wenn keine zweite übergeordnete Ebene vorhanden ist.<br /><br /> - oder -<br /><br /> Wählen Sie die Knoten aus, und ziehen Sie sie aus der Gruppe.|
 
-##  <a name="AddRemoveNodesLinks"></a> Hinzufügen, entfernen oder Umbenennen von Knoten, Links und Kommentare
+## <a name="AddRemoveNodesLinks"></a> Hinzufügen, entfernen oder Umbenennen von Knoten, Links und Kommentare
 
 Sie können in einer Übersicht mehr oder weniger Elemente anzeigen, um Detailinformationen einzublenden oder die Übersicht zu vereinfachen. Sie können Elemente auch entfernen und ihnen Kommentare hinzufügen.
 
@@ -171,9 +171,9 @@ Sie können in einer Übersicht mehr oder weniger Elemente anzeigen, um Detailin
 |-|-|
 |Codeelemente in der Projektmappe.|1.  Suchen Sie das Codeelement im **Projektmappen-Explorer**. Verwenden der **Projektmappen-Explorer** Suchbegriff, oder Durchsuchen Sie die Projektmappe. **Tipp:**      Suche nach Codeelementen, die Abhängigkeiten für einen Typ oder Member aufweisen, öffnen Sie das Kontextmenü für den Typ oder das Element im **Projektmappen-Explorer**. Wählen Sie die Beziehung aus, die Sie interessiert. **Projektmappen-Explorer** zeigt nur die Codeelemente mit den angegebenen Abhängigkeiten.<br />2.  Ziehen Sie die für Sie interessanten Codeelemente auf die Oberfläche der Übersicht. Sie können Codeelemente auch aus der Klassenansicht oder dem Objektkatalog ziehen.<br />     - oder -<br />     In **Projektmappen-Explorer**, wählen Sie die Codeelemente, die Sie zuordnen möchten. Klicken Sie auf die **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **auf Code Map anzeigen**.<br /><br /> Standardmäßig wird die übergeordnete Containerhierarchie für die neuen Codeelemente in der Übersicht angezeigt. Verwenden der **übergeordnete Elemente einschließen** Schaltfläche auf der Symbolleiste der Codeübersicht auf dieses Verhalten zu ändern. Wenn diese Option deaktiviert ist, wird nur das Codeelement zur Übersicht hinzugefügt. Zu reverse-dieses Verhalten nur für einen Drag & drop-Aktion, drücken und halten die **STRG** gedrückt, während Sie die Codeelemente in der Karte ziehen.<br /><br /> Von Visual Studio werden Codeelemente für die Codeelemente der obersten Ebene in der Auswahl hinzugefügt. Bewegen Sie den Mauszeiger über dem Anfang des Codeelements, sodass das Chevron (Pfeil nach unten) angezeigt wird, um zu prüfen, ob ein Codeelement andere Codeelemente enthält. Wählen Sie das Chevron aus, um das Codeelement zu erweitern. Um alle Codeelemente zu erweitern, drücken Sie die **STRG**+**ein** um alle Elemente auswählen möchten, öffnen Sie das Kontextmenü für die Karte, und wählen **Gruppe**, **erweitern** . Dieser Befehl ist nicht verfügbar, wenn das Erweitern aller Gruppen zu einer nicht verwendbaren Übersicht oder zu Speicherproblemen führt.|
 |Auf Codeelemente in der Übersicht bezogene Codeelemente.|Klicken Sie auf die **verwandte anzeigen** auf der Symbolleiste der Codeübersicht auf die Schaltfläche, und wählen Sie den Typ verwandter Elemente, die Sie interessiert sind.<br /><br /> - oder -<br /><br /> Öffnen Sie das Kontextmenü für das Codeelement. Wählen Sie eine der der **anzeigen...**  Elemente auf das Menü "je nach Art der Beziehung, die Sie interessieren. Beispielsweise können Sie Elemente, auf die das aktuelle Element verweist, Elemente, die auf das aktuelle Element verweisen, Basis- und abgeleitete Typen für Klassen, Methodenaufrufer und die enthaltenden Klassen, Namespaces sowie Assemblys anzeigen.<br /><br /> Weitere Informationen finden Sie unter [in diesem Thema](../modeling/map-dependencies-across-your-solutions.md).|
-|Kompilierte .NET-Assemblys (DLL oder EXE) oder Binärdateien.|Ziehen Sie die Assemblys oder Binärdateien, die sich außerhalb von Visual Studio befinden, in eine Übersicht.<br /><br /> Das Ziehen aus Windows-Explorer oder Datei-Explorer ist nur möglich, wenn der betreffende Explorer und Visual Studio auf der gleichen Berechtigungsstufe der Benutzerkontensteuerung (User Account Control, UAC) ausgeführt werden. Wenn z. B. die Benutzerkontensteuerung aktiviert ist und Sie Visual Studio als Administrator ausführen, wird der Ziehvorgang von Windows-Explorer oder Datei-Explorer blockiert.|
+|Kompilierte .NET-Assemblys (DLL oder EXE) oder Binärdateien.|Ziehen Sie die Assemblys oder Binärdateien, die sich außerhalb von Visual Studio befinden, in eine Übersicht.<br /><br /> Das Ziehen aus Windows-Explorer oder Datei-Explorer ist nur möglich, wenn der betreffende Explorer und Visual Studio auf der gleichen Berechtigungsstufe der Benutzerkontensteuerung (User Account Control, UAC) ausgeführt werden. Beispiel: Wenn Sie Visual Studio bei aktivierter UAC als Administrator ausführen, wird der Ziehvorgang von Windows-Explorer oder Datei-Explorer blockiert.|
 
-###  <a name="AddNodes"></a>
+### <a name="AddNodes"></a>
 
 #### <a name="add-a-link-between-existing-code-elements"></a>Hinzufügen von Links zwischen vorhandenen Codeelementen
 
@@ -197,86 +197,86 @@ Sie können in einer Übersicht mehr oder weniger Elemente anzeigen, um Detailin
 
 5. Drücken Sie die **EINGABETASTE**.
 
-###  <a name="AddComments"></a>
+### <a name="AddComments"></a>
 
 #### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Hinzufügen eines Kommentars zu einem vorhandenen Knoten in der Übersicht
 
-1.  Wählen Sie das Codeelement aus. Darüber wird eine Symbolleiste angezeigt.
+1. Wählen Sie das Codeelement aus. Darüber wird eine Symbolleiste angezeigt.
 
      ![Abhängigkeitsdiagramm-Symbolleiste](../modeling/media/depedencygraph_toolbar.png)
 
-2.  Wählen Sie auf der Symbolleiste das dritte Symbol, **erstellen Sie einen neuen Kommentarknoten mit einem neuen Link zum ausgewählten Knoten**.
+2. Wählen Sie auf der Symbolleiste das dritte Symbol, **erstellen Sie einen neuen Kommentarknoten mit einem neuen Link zum ausgewählten Knoten**.
 
      \- oder –
 
      Öffnen Sie das Kontextmenü für das Codeelement, und wählen **bearbeiten** > **neuer Kommentar**.
 
-3.  Geben Sie Ihre Kommentare ein. Um in einer neuen Zeile eingeben möchten, drücken Sie die **UMSCHALT** + **EINGABETASTE**.
+3. Geben Sie Ihre Kommentare ein. Um in einer neuen Zeile eingeben möchten, drücken Sie die **UMSCHALT** + **EINGABETASTE**.
 
 #### <a name="add-a-comment-to-the-map-itself"></a>Hinzufügen eines Kommentars zur Übersicht
 
-1.  Öffnen Sie das Kontextmenü für die Karte, und wählen **bearbeiten** > **neuer Kommentar**.
+1. Öffnen Sie das Kontextmenü für die Karte, und wählen **bearbeiten** > **neuer Kommentar**.
 
-2.  Geben Sie Ihre Kommentare ein. Um in einer neuen Zeile eingeben möchten, drücken Sie die **UMSCHALT** + **EINGABETASTE**.
+2. Geben Sie Ihre Kommentare ein. Um in einer neuen Zeile eingeben möchten, drücken Sie die **UMSCHALT** + **EINGABETASTE**.
 
-###  <a name="RenameNodes"></a>
+### <a name="RenameNodes"></a>
 
 #### <a name="rename-a-code-element-or-link"></a>Umbenennen eines Codeelements oder Links
 
-1.  Wählen Sie das Codeelement oder den Link aus, das bzw. der umbenannt werden soll.
+1. Wählen Sie das Codeelement oder den Link aus, das bzw. der umbenannt werden soll.
 
-2.  Drücken Sie **F2**, oder öffnen Sie das Kontextmenü, und wählen Sie **bearbeiten** > **umbenennen**.
+2. Drücken Sie **F2**, oder öffnen Sie das Kontextmenü, und wählen Sie **bearbeiten** > **umbenennen**.
 
-3.  Wenn das Eingabefeld in der Übersicht angezeigt wird, benennen Sie das Codeelement oder den Link um.
+3. Wenn das Eingabefeld in der Übersicht angezeigt wird, benennen Sie das Codeelement oder den Link um.
 
 **ODER**
 
-1.  Öffnen Sie das Kontextmenü und wählen Sie **bearbeiten** > **Eigenschaften**.
+1. Öffnen Sie das Kontextmenü und wählen Sie **bearbeiten** > **Eigenschaften**.
 
-2.  Bearbeiten der **Bezeichnung** Eigenschaft im Eigenschaftenfenster von Visual Studio.
+2. Bearbeiten der **Bezeichnung** Eigenschaft im Eigenschaftenfenster von Visual Studio.
 
 #### <a name="remove-a-code-element-or-link-from-the-map"></a>Entfernen eines Codeelements oder Links aus der Übersicht
 
-1.  Wählen Sie den Code-Element oder Link, und drücken Sie die **löschen** Schlüssel.
+1. Wählen Sie den Code-Element oder Link, und drücken Sie die **löschen** Schlüssel.
 
      \- oder –
 
      Öffnen Sie das Kontextmenü für das Codeelement oder den Link, und wählen **bearbeiten** > **entfernen**.
 
-2.  Wenn das Element oder der Link Teil einer Gruppe ist, die **untergeordnete Elemente erneut abrufen** Schaltfläche ![Symbol "untergeordnete" untergeordnete](../modeling/media/dependencygraph_deletednodesicon.png) in der Gruppe angezeigt. Klicken Sie auf diese Option, um fehlende Elemente und Links abzurufen.
+2. Wenn das Element oder der Link Teil einer Gruppe ist, die **untergeordnete Elemente erneut abrufen** Schaltfläche ![Symbol "untergeordnete" untergeordnete](../modeling/media/dependencygraph_deletednodesicon.png) in der Gruppe angezeigt. Klicken Sie auf diese Option, um fehlende Elemente und Links abzurufen.
 
--   Sie können Codeelemente und Links ohne Auswirkungen auf den zugrunde liegenden Code aus einer Übersicht entfernen. Wenn Sie diese löschen, werden die zugehörigen Definitionen aus der DGML-Datei (.dgml) entfernt.
+- Sie können Codeelemente und Links ohne Auswirkungen auf den zugrunde liegenden Code aus einer Übersicht entfernen. Wenn Sie diese löschen, werden die zugehörigen Definitionen aus der DGML-Datei (.dgml) entfernt.
 
--   Die über die DGML-Datei durch Hinzufügen nicht definierter Codeelemente oder durch Verwenden früherer Versionen von Visual Studio erstellten Übersichten unterstützen diese Funktion nicht.
+- Die über die DGML-Datei durch Hinzufügen nicht definierter Codeelemente oder durch Verwenden früherer Versionen von Visual Studio erstellten Übersichten unterstützen diese Funktion nicht.
 
 #### <a name="flag-a-code-element-for-follow-up"></a>Kennzeichnen eines Codeelements zur Nachverfolgung
 
-1.  Wählen Sie das Codeelement oder den Link aus, das bzw. den Sie zur Nachverfolgung kennzeichnen möchten.
+1. Wählen Sie das Codeelement oder den Link aus, das bzw. den Sie zur Nachverfolgung kennzeichnen möchten.
 
-2.  Öffnen Sie das Kontextmenü und wählen Sie **bearbeiten** > **zur nachverfolgung kennzeichnen**.
+2. Öffnen Sie das Kontextmenü und wählen Sie **bearbeiten** > **zur nachverfolgung kennzeichnen**.
 
--   Das Codeelement erhält standardmäßig einen roten Hintergrund. Betrachten Sie [Hinzufügen eines Kommentars](#AddComments) mit den entsprechenden Informationen zur nachverfolgung.
+- Das Codeelement erhält standardmäßig einen roten Hintergrund. Betrachten Sie [Hinzufügen eines Kommentars](#AddComments) mit den entsprechenden Informationen zur nachverfolgung.
 
--   Die Hintergrundfarbe des Elements ändern oder löschen Sie die Kennzeichen zur nachverfolgung, indem Sie die Auswahl **bearbeiten** > **andere Kennzeichenfarben**.
+- Die Hintergrundfarbe des Elements ändern oder löschen Sie die Kennzeichen zur nachverfolgung, indem Sie die Auswahl **bearbeiten** > **andere Kennzeichenfarben**.
 
-##  <a name="ChangeStyleCodeOrLink"></a> Ändern des Stils von eines Codeelements oder links
+## <a name="ChangeStyleCodeOrLink"></a> Ändern des Stils von eines Codeelements oder links
 
 Sie können die Symbole für Codeelemente und die Farben von Codeelementen und Links mithilfe vordefinierter Symbole und Farben ändern. Sie können z. B. eine Farbe auswählen, um Codeelemente und Links hervorzuheben, die eine bestimmte Kategorie oder Eigenschaft aufweisen. Dadurch können Sie bestimmte Bereiche der Übersicht kennzeichnen und sich auf diese Bereiche konzentrieren. Sie können benutzerdefinierte Symbole und Farben angeben, durch Bearbeiten der DGML-Datei der Map. finden Sie unter [Anpassen von Code maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
 ### <a name="to-apply-a-predefined-color-or-icon-to-code-elements-or-links-with-a-certain-category-or-property"></a>So wenden Sie eine vordefinierte Farbe oder ein vordefiniertes Symbol auf Codelemente oder Links mit einer bestimmten Kategorie oder Eigenschaft an
 
-1.  Wählen Sie auf der Symbolleiste der Map **Legende**.
+1. Wählen Sie auf der Symbolleiste der Map **Legende**.
 
-2.  In der **Legende** Feld ein, die Code-Element-Kategorie oder Eigenschaft bereits in der Liste angezeigt wird.
+2. In der **Legende** Feld ein, die Code-Element-Kategorie oder Eigenschaft bereits in der Liste angezeigt wird.
 
-3.  Wählen Sie die Kategorie oder Eigenschaft nicht in der Liste enthalten, **+** in die **Legende** Feld aus, und wählen Sie dann **Knoteneigenschaft**, **Knotenkategorie** , **Verbindungseigenschaft**, oder **verknüpfen Kategorie**. Wählen Sie dann die Eigenschaft oder Kategorie aus. Die Kategorie oder Eigenschaft wird jetzt der **Legende** Feld.
+3. Wählen Sie die Kategorie oder Eigenschaft nicht in der Liste enthalten, **+** in die **Legende** Feld aus, und wählen Sie dann **Knoteneigenschaft**, **Knotenkategorie** , **Verbindungseigenschaft**, oder **verknüpfen Kategorie**. Wählen Sie dann die Eigenschaft oder Kategorie aus. Die Kategorie oder Eigenschaft wird jetzt der **Legende** Feld.
 
     > [!NOTE]
     > Zum Erstellen und ein Codeelement eine Kategorie oder Eigenschaft zuweisen, können Sie die DGML-Datei der Map bearbeiten. finden Sie unter [Anpassen von Code maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-4.  In der **Legende** Feld, klicken Sie auf das Symbol neben der Kategorie oder Eigenschaft, die Sie hinzugefügt haben, oder Sie ändern möchten.
+4. In der **Legende** Feld, klicken Sie auf das Symbol neben der Kategorie oder Eigenschaft, die Sie hinzugefügt haben, oder Sie ändern möchten.
 
-5.  Orientieren Sie sich beim Auswählen des zu ändernden Stils an der folgenden Tabelle:
+5. Orientieren Sie sich beim Auswählen des zu ändernden Stils an der folgenden Tabelle:
 
     |**So ändern Sie die**|**Auswählen**|
     |-|-|
@@ -287,7 +287,7 @@ Sie können die Symbole für Codeelemente und die Farben von Codeelementen und L
 
      Die **Farbpalettenauswahl** oder **Symbolsatzauswahl** Dialogfeld zur Auswahl einer Farbe oder bestimmtes Symbol wird angezeigt.
 
-6.  In der **Farbpalettenauswahl** oder **Symbolsatzauswahl** (Dialogfeld), führen Sie einen der folgenden:
+6. In der **Farbpalettenauswahl** oder **Symbolsatzauswahl** (Dialogfeld), führen Sie einen der folgenden:
 
     |**Anwenden einer**|**Führen Sie diese Schritte aus**|
     |-|-|
@@ -297,13 +297,13 @@ Sie können die Symbole für Codeelemente und die Farben von Codeelementen und L
     > [!NOTE]
     > Können Sie neu anordnen, löschen oder vorübergehend deaktiviert Stile in die **Legende** Feld. Finden Sie unter [der Legende im Bearbeitungsfeld](#ModifyLegend).
 
-##  <a name="ModifyLegend"></a> Bearbeiten Sie die Felds "Legende"
+## <a name="ModifyLegend"></a> Bearbeiten Sie die Felds "Legende"
 
 Können Sie neu anordnen, löschen oder vorübergehend deaktiviert Stile in die **Legende** Feld:
 
-1.  Öffnen Sie das Kontextmenü für einen Stil für die **Legende** Feld.
+1. Öffnen Sie das Kontextmenü für einen Stil für die **Legende** Feld.
 
-2.  Führen Sie eine der folgenden Aufgaben aus:
+2. Führen Sie eine der folgenden Aufgaben aus:
 
     |**Aktion**|**Auswählen**|
     |-|-|
@@ -312,15 +312,15 @@ Können Sie neu anordnen, löschen oder vorübergehend deaktiviert Stile in die 
     |Verschieben des Stils nach oben|**Nach oben**|
     |Verschieben des Codeelements nach unten|**Nach unten verschieben**|
 
-##  <a name="CopyLegend"></a> Kopieren von Stilen aus einer Zuordnung zu einem anderen
+## <a name="CopyLegend"></a> Kopieren von Stilen aus einer Zuordnung zu einem anderen
 
-1.  Stellen Sie sicher, dass die **Legende** Feld wird in der quellübersicht angezeigt. Wenn sie nicht auf der Symbolleiste der Map angezeigt wird, klicken Sie auf **Legende**.
+1. Stellen Sie sicher, dass die **Legende** Feld wird in der quellübersicht angezeigt. Wenn sie nicht auf der Symbolleiste der Map angezeigt wird, klicken Sie auf **Legende**.
 
-2.  Öffnen Sie das Kontextmenü für die **Legende** Feld. Wählen Sie **Legende kopieren**.
+2. Öffnen Sie das Kontextmenü für die **Legende** Feld. Wählen Sie **Legende kopieren**.
 
-3.  Fügen Sie die Legende in der Zielübersicht ein.
+3. Fügen Sie die Legende in der Zielübersicht ein.
 
-##  <a name="MergeMaps"></a> Zusammenführen von codeübersichten
+## <a name="MergeMaps"></a> Zusammenführen von codeübersichten
 
 Sie können Übersichten durch Kopieren und Einfügen von Codeelementen zwischen Übersichten zusammenführen. Wenn die Codeelementbezeichner übereinstimmen, entspricht das Einfügen von Codeelementen einem Zusammenführungsvorgang. Sie können diese Aufgabe vereinfachen, indem Sie alle zu visualisierenden Assemblys oder Binärdateien im selben Ordner ablegen, damit der vollständige Pfad jeder Assembly oder Binärdatei für jede Übersicht, die Sie zusammenführen möchten, gleich ist.
 

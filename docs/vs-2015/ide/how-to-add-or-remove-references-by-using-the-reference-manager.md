@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041181"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen oder Entfernen von verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Komponenten hinzuzufügen und zu verwalten, die von Ihnen, Microsoft oder einem anderen Unternehmen entwickelt wurden. Wenn Sie eine universelle Windows-App entwickeln, verweist das Projekt automatisch auf alle richtigen Windows SDK-DLLs. Wenn Sie eine Anwendung für .NET entwickeln, verweist das Projekt automatisch auf mscorlib.dll. Einige .NET-APIs werden in Komponenten verfügbar gemacht, die Sie manuell hinzufügen müssen. Verweise auf COM-Komponenten oder benutzerdefinierte Komponenten müssen manuell hinzugefügt werden.  
@@ -45,13 +45,13 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
    Der **Verweis-Manager** wird mit den verfügbaren Verweisen nach Gruppe geöffnet. Der Projekttyp bestimmt, welche der folgenden Gruppen angezeigt werden:  
   
--   Assemblys, mit den Framework- und Erweiterungsuntergruppen.  
+- Assemblys, mit den Framework- und Erweiterungsuntergruppen.  
   
--   Projektmappe, mit der Projektuntergruppe.  
+- Projektmappe, mit der Projektuntergruppe.  
   
--   Windows, mit den Core- und Erweiterungsuntergruppen. Sie können die Verweise im Windows SDK oder im Erweiterungs-SDK mit dem **Objektkatalog** untersuchen.  
+- Windows, mit den Core- und Erweiterungsuntergruppen. Sie können die Verweise im Windows SDK oder im Erweiterungs-SDK mit dem **Objektkatalog** untersuchen.  
   
--   Durchsuchen, mit der aktuellen Untergruppe.  
+- Durchsuchen, mit der aktuellen Untergruppe.  
   
 ## <a name="assemblies-tab"></a>Assemblyregisterkarte  
  Die Registerkarte **Assemblys** führt alle .NET Framework-Assemblys auf, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im GAC registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung "Lokal kopieren" nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Projektverweise](http://go.microsoft.com/fwlink/?LinkId=238512).  
@@ -66,13 +66,13 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
 1. Framework listet alle Assemblys auf, die das Zielframework darstellen.  
   
-   -   Angekündigte Assemblys sind im vollständigen Framework und in der Frameworkliste aufgeführt, wenn das Projekt auf ein Profil des Zielframeworks abzielt. Angekündigte Assemblys sind grau, um sie von Assemblys zu unterscheiden, die im Profil des Zielframeworks des Projekts vorhanden sind. Wenn ein Projekt .NET Framework 4-Client als Ziel verwendet, zeigt die Frameworkliste angekündigte Assemblys aus .NET Framework 4 an. Wenn ein Benutzer eine angekündigte Assembly hinzufügt, wird der Benutzer benachrichtigt, dass das Projekt nach dem Schließen des Dialogfelds **Verweis-Manager** wieder auf .NET Framework 4 ausgerichtet und die angekündigte Assembly hinzugefügt wird.  
+   - Angekündigte Assemblys sind im vollständigen Framework und in der Frameworkliste aufgeführt, wenn das Projekt auf ein Profil des Zielframeworks abzielt. Angekündigte Assemblys sind grau, um sie von Assemblys zu unterscheiden, die im Profil des Zielframeworks des Projekts vorhanden sind. Wenn ein Projekt .NET Framework 4-Client als Ziel verwendet, zeigt die Frameworkliste angekündigte Assemblys aus .NET Framework 4 an. Wenn ein Benutzer eine angekündigte Assembly hinzufügt, wird der Benutzer benachrichtigt, dass das Projekt nach dem Schließen des Dialogfelds **Verweis-Manager** wieder auf .NET Framework 4 ausgerichtet und die angekündigte Assembly hinzugefügt wird.  
   
-   -   Projekte für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte Framework an. Entsprechend listet die Frameworkregisterkarte keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: "Alle Framework-Assemblys sind bereits referenziert. Verwenden Sie den Objektkatalog, um die Verweise im Framework zu durchsuchen. Für Desktopprojekte werden auf der Registerkarte „Framework“ Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.  
+   - Projekte für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte Framework an. Entsprechend ist die Registerkarte "Framework" frameworkregisterkarte keine der Assemblys aus dem Framework auf und stattdessen die folgende Meldung angezeigt: "Alle der Framework-Assemblys sind bereits referenziert. Verwenden Sie den Objektkatalog, um die Verweise im Framework zu durchsuchen. Für Desktopprojekte werden auf der Registerkarte „Framework“ Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.  
   
 2. Erweiterungen listen alle Assemblys auf, die externe Anbieter von Komponenten und Steuerelementen selbst entwickelt haben, um das Zielframework zu erweitern. Abhängig vom Zweck der Benutzeranwendung sind diese Assemblys gegebenenfalls erforderlich.  
   
-   -   Erweiterungen werden ausgefüllt, indem die Assemblys aufgelistet werden, die in den folgenden Speicherorten registriert sind:  
+   - Erweiterungen werden ausgefüllt, indem die Assemblys aufgelistet werden, die in den folgenden Speicherorten registriert sind:  
   
        ```  
        32-bit machine:  
@@ -88,17 +88,17 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
    Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hängt von der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version des Projekts ab. Dieser Fall kann unter den folgenden Bedingungen eintreten:  
   
--   Eine Komponente, für die eine aktuelle Version von .NET Framework verwendet wird, ist nicht kompatibel mit einem Projekt, für das eine frühere Version von .NET Framework als Zielversion festgelegt wurde.  
+- Eine Komponente, für die eine aktuelle Version von .NET Framework verwendet wird, ist nicht kompatibel mit einem Projekt, für das eine frühere Version von .NET Framework als Zielversion festgelegt wurde.  
   
-     Informationen zum Ändern der Zielversion von .NET Framework für ein Projekt finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Informationen zum Ändern der Zielversion von .NET Framework für ein Projekt finden Sie unter [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
--   Eine Komponente, für die [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] verwendet wird, ist nicht kompatibel mit einem Projekt, für das als Zielversion [!INCLUDE[net_v45](../includes/net-v45-md.md)] festgelegt wurde.  
+- Eine Komponente, für die [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] verwendet wird, ist nicht kompatibel mit einem Projekt, für das als Zielversion [!INCLUDE[net_v45](../includes/net-v45-md.md)] festgelegt wurde.  
   
      Wenn Sie eine neue Anwendung erstellen, wird für einige Projekte standardmäßig als Zielversion [!INCLUDE[net_v45](../includes/net-v45-md.md)] festgelegt. Weitere Informationen finden Sie unter [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
--   Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).  
+- Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).  
   
--   > [!NOTE]
+- > [!NOTE]
     >  In Visual Studio 2015 wird anstelle eines Projektverweises ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>So zeigen Sie eine Assembly im Dialogfeld "Verweis hinzufügen" an  
@@ -163,7 +163,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 ### <a name="core-subgroup"></a>Kernspeicher-Unterregisterkarte  
  Die Untergruppe "Core" listet alle WinMDs (für Windows Runtime-Elemente) im SDK für die jeweilige Windows-Version auf.  
   
- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte enthalten bei Projekterstellung standardmäßig Verweise auf alle WinMDs im [!INCLUDE[win8](../includes/win8-md.md)] SDK. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte [!INCLUDE[win8](../includes/win8-md.md)] SDK an. Entsprechend ist die Untergruppe "Core" im Verweis-Manager wird nicht frameworkregisterkarte keine der Assemblys aus dem [!INCLUDE[win8](../includes/win8-md.md)] SDK und stattdessen eine Meldung angezeigt: „The Windows SDK is already referenced. Verwenden Sie den Objektkatalog, um die Verweise im Windows SDK zu durchsuchen."  
+ [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte enthalten bei Projekterstellung standardmäßig Verweise auf alle WinMDs im [!INCLUDE[win8](../includes/win8-md.md)] SDK. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner „Verweise“ im **Projektmappen-Explorer** den Verweis für das gesamte [!INCLUDE[win8](../includes/win8-md.md)] SDK an. Entsprechend ist die Untergruppe "Core" im Verweis-Manager wird nicht frameworkregisterkarte keine der Assemblys aus dem [!INCLUDE[win8](../includes/win8-md.md)] SDK und stattdessen eine Meldung angezeigt: "Das Windows SDK is already referenced. Verwenden Sie den Objektkatalog, um die Verweise im Windows SDK zu durchsuchen."  
   
  In den Desktopprojekten wird die Core-Untergruppe nicht standardmäßig angezeigt. Sie können die Windows-Runtime hinzufügen, indem Sie das Kontextmenü für den Projektknoten öffnen, **Projekt entladen** auswählen, den folgenden Codeabschnitt hinzufügen, und das Projekt erneut öffnen (indem Sie auf dem Projektknoten **Projekt erneut laden** wählen). Wenn Sie das Dialogfeld **Verweis-Manager** aufrufen, wird die Untergruppe „Core“ angezeigt.  
   
@@ -196,9 +196,9 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
  Beim Erstellen eines Dateiverweises auf ein WinMD wird als Layout erwartet, dass die *FileName*winmd-, *FileName*.dll- und *FileName*.pri-Dateien alle nebeneinander platziert werden. Wenn Sie in den folgenden Szenarien auf ein WinMD verweisen, wird ein unvollständiger Satz von Dateien in das Projektausgabeverzeichnis kopiert und es treten infolgedessen Build- und Laufzeitfehler auf.  
   
--   **Native Komponente**: Ein natives Projekt erstellt ein WinMD für jeden unzusammenhängenden Satz von Namespaces und eine DLL, die aus der Implementierung besteht. Die WinMDs haben unterschiedliche Namen. Wenn auf diese systemeigene Komponentendatei verwiesen wird, erkennt MSBuild nicht, dass die ungleich benannten WinMDs eine Komponente darstellen. Folglich werden nur die *FileName*.dll- und *FileName*.winmd-Dateien mit identischem Namen kopiert, und es treten Laufzeitfehler auf. Um dieses Problem zu umgehen, erstellen Sie eine Erweiterungs-SDK. Weitere Informationen finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md).  
+- **Native Komponente**: Ein natives Projekt erstellt ein WinMD für jeden unzusammenhängenden Satz von Namespaces und eine DLL, die aus der Implementierung besteht. Die WinMDs haben unterschiedliche Namen. Wenn auf diese systemeigene Komponentendatei verwiesen wird, erkennt MSBuild nicht, dass die ungleich benannten WinMDs eine Komponente darstellen. Folglich werden nur die *FileName*.dll- und *FileName*.winmd-Dateien mit identischem Namen kopiert, und es treten Laufzeitfehler auf. Um dieses Problem zu umgehen, erstellen Sie eine Erweiterungs-SDK. Weitere Informationen finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md).  
   
--   **Verarbeiten von Steuerelementen**: Mindestens ein XAML-Steuerelement besteht aus einer *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName*.xaml und einer *ImageName*.jpg. Bei der Projekterstellung werden die Ressourcendateien, die mit dem Dateiverweis verknüpft sind, nicht in das Ausgabeverzeichnis des Projekts kopiert. Es werden nur die Dateien *FileName*.winmd, *FileName*.dll und *FileName*.pri kopiert. Ein Buildfehler wird protokolliert, um den Benutzer zu informieren, dass die Ressourcen *XamlName*.xaml und *ImageName*.jpg fehlen. Damit der Vorgang erfolgreich abgeschlossen wird, muss der Benutzer diese Ressourcendateien manuell in das Projektausgabeverzeichnis für Build und Debuggen/Laufzeit kopieren. Um dieses Problem zu umgehen, erstellen Sie entweder eine Erweiterungs-SDK, indem Sie die Schritte unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md) ausführen, oder bearbeiten Sie die Projektdatei, und fügen Sie folgende Eigenschaft hinzu:  
+- **Verarbeiten von Steuerelementen**: Mindestens ein XAML-Steuerelement besteht aus einer *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName*.xaml und einer *ImageName*.jpg. Bei der Projekterstellung werden die Ressourcendateien, die mit dem Dateiverweis verknüpft sind, nicht in das Ausgabeverzeichnis des Projekts kopiert. Es werden nur die Dateien *FileName*.winmd, *FileName*.dll und *FileName*.pri kopiert. Ein Buildfehler wird protokolliert, um den Benutzer zu informieren, dass die Ressourcen *XamlName*.xaml und *ImageName*.jpg fehlen. Damit der Vorgang erfolgreich abgeschlossen wird, muss der Benutzer diese Ressourcendateien manuell in das Projektausgabeverzeichnis für Build und Debuggen/Laufzeit kopieren. Um dieses Problem zu umgehen, erstellen Sie entweder eine Erweiterungs-SDK, indem Sie die Schritte unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md) ausführen, oder bearbeiten Sie die Projektdatei, und fügen Sie folgende Eigenschaft hinzu:  
   
     ```  
     <PropertyGroup>  
@@ -216,5 +216,5 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
  Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [(NIB) Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB: Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)

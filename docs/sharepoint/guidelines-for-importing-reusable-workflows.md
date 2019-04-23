@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041220"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Richtlinien für das Importieren von wiederverwendbaren workflows
   Verwenden Sie zum Importieren von wiederverwendbaren Workflows in SharePoint Designer erstellte die Projektvorlage "Wiederverwendbaren SharePoint 2010-Workflow importieren" in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Diese Vorlage importiert eine *deklarative* *Workflow* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-nur) und konvertiert ihn in eine *code Workflow*, dies ist ein Workflow, der entweder mit der Sie verbessern können [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] Code. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Exemplarische Vorgehensweise: Importieren ein wiederverwendbares Workflows aus SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56641519"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>Importieren von wiederverwendbaren Workflows mithilfe der Vorlage für die SharePoint 2010-Lösungspaket importieren
  Wenn Sie einen wiederverwendbaren Workflow importieren, mit der Vorlage für die SharePoint 2010-Lösungspaket importieren, müssen Sie Folgendes berücksichtigen:
 
--   Nach dem Importieren des Workflows können Sie sofort bereitstellen und ausführen können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] durch Auswählen der **F5** Schlüssel. Wenn Sie alle Elemente in der Workflow in der importierten Lösung ändern, möglicherweise Sie jedoch Elemente in das Projekt manuell korrigieren, vor der Bereitstellung und der Workflow ausgeführt werden können.
+- Nach dem Importieren des Workflows können Sie sofort bereitstellen und ausführen können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] durch Auswählen der **F5** Schlüssel. Wenn Sie alle Elemente in der Workflow in der importierten Lösung ändern, möglicherweise Sie jedoch Elemente in das Projekt manuell korrigieren, vor der Bereitstellung und der Workflow ausgeführt werden können.
 
--   Da Workflows deklarativ ist, kann der Code darauf hinzugefügt werden. Um den Workflow in einem Code-Workflow zu konvertieren, müssen Sie ihn in importieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mithilfe der Vorlage importieren von Wiederverwendbaren SharePoint 2010-Workflow.
+- Da Workflows deklarativ ist, kann der Code darauf hinzugefügt werden. Um den Workflow in einem Code-Workflow zu konvertieren, müssen Sie ihn in importieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mithilfe der Vorlage importieren von Wiederverwendbaren SharePoint 2010-Workflow.
 
--   Während Sie die Workflow-Designer (.xoml)-Datei, in der Entwurfsansicht bearbeiten können, wird empfohlen, dass Sie es in der Quellansicht bearbeiten, da der Workflow-Designer falsche Fehler angezeigt.
+- Während Sie die Workflow-Designer (.xoml)-Datei, in der Entwurfsansicht bearbeiten können, wird empfohlen, dass Sie es in der Quellansicht bearbeiten, da der Workflow-Designer falsche Fehler angezeigt.
 
--   Im Workflow-Debuggen funktioniert nicht für deklarative Inhalt. Haltepunkte in der [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] werden nicht erreicht.
+- Im Workflow-Debuggen funktioniert nicht für deklarative Inhalt. Haltepunkte in der [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] werden nicht erreicht.
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>Importieren Sie Global wieder verwendbaren Workflow-Projektmappen
  Global wiederverwendbare Workflows können nicht importiert werden, mithilfe der Vorlage Wiederverwendbaren SharePoint 2010 Workflow importieren. Um einen global wiederverwendbaren Workflow importieren, müssen Sie ihn in einen nicht global wieder verwendbaren Workflow konvertieren, oder müssen Sie mit der Vorlage für die SharePoint 2010-Lösungspaket importieren.

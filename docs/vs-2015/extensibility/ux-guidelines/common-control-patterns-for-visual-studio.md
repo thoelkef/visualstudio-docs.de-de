@@ -8,82 +8,82 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: efde723cfb72c8f91b0ba88c0a24bb2d9a3d245d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040830"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
+## <a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
 
 ### <a name="overview"></a>Übersicht
  Allgemeine Steuerelemente bilden zusammen den Großteil der Benutzeroberfläche in Visual Studio. Führen Sie die am häufigsten verwendeten Steuerelemente in Visual Studio-Benutzeroberfläche verwendet sollte die [Richtlinien für Windows Desktop-Interaktion](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). In diesem Dokument bezieht sich auf Visual Studio und behandelt Situationen oder Details, die die Windows-Richtlinien zu verbessern.
 
 #### <a name="common-controls-in-this-topic"></a>Allgemeine Steuerelemente in diesem Thema
 
--   [Scrollbars](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
+- [Scrollbars](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
 
--   [Felder für die Eingabe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
+- [Felder für die Eingabe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
 
--   [Kombinationsfelder und Dropdown-Listen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
+- [Kombinationsfelder und Dropdown-Listen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
 
--   [Kontrollkästchen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
+- [Kontrollkästchen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
--   [Optionsfelder](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
+- [Optionsfelder](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
--   [Gruppe frames](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
+- [Gruppe frames](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
--   [Textsteuerelemente](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
+- [Textsteuerelemente](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
--   [Schaltflächen und Links](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+- [Schaltflächen und Links](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
--   [Strukturansichten](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
+- [Strukturansichten](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
 #### <a name="visual-style"></a>Visuellen Stil
  Die erste, was beim Formatieren von Steuerelementen zu berücksichtigen ist, gibt an, ob die Steuerelemente im Design der Benutzeroberfläche verwendet werden. Steuerelemente in Benutzeroberflächen-Design-Benutzeroberfläche werden und müssen [Schriftschnitt "normal" Windows-Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx), was bedeutet, dass sie nicht erneut auf und sollte in ihrer standarddarstellung des Steuerelements angezeigt werden.
 
--   **Standard (Hilfsprogramm) Dialogfelder:** nicht mit Design. Führen Sie keine erneute-Vorlage. Die verwenden Sie grundlegende Steuerelement Style-Standardeinstellungen.
+- **Standard (Hilfsprogramm) Dialogfelder:** nicht mit Design. Führen Sie keine erneute-Vorlage. Die verwenden Sie grundlegende Steuerelement Style-Standardeinstellungen.
 
--   **Toolfenster, Dokument-Editoren, Entwurfsoberflächen und mit Design Dialogfelder:** Verwenden Sie spezielle Design Darstellung, die mit dem Dienst für die Farbe an.
+- **Toolfenster, Dokument-Editoren, Entwurfsoberflächen und mit Design Dialogfelder:** Verwenden Sie spezielle Design Darstellung, die mit dem Dienst für die Farbe an.
 
-###  <a name="BKMK_Scrollbars"></a> Scrollleisten
+### <a name="BKMK_Scrollbars"></a> Scrollleisten
  Bildlaufleisten sollte folgen [allgemeine Interaktionsmuster für Windows-Bildlaufleisten](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) , wenn sie mit Informationen zum Inhalt, z. B. im Code-Editor ergänzt werden.
 
-###  <a name="BKMK_InputFields"></a> Felder für die Eingabe
+### <a name="BKMK_InputFields"></a> Felder für die Eingabe
  Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für die Textfelder](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visuellen Stil
 
--   Felder sollten nicht im Hilfsprogramm-Dialogfelder formatiert werden. Verwenden Sie das grundlegende Format systemintern auf das Steuerelement.
+- Felder sollten nicht im Hilfsprogramm-Dialogfelder formatiert werden. Verwenden Sie das grundlegende Format systemintern auf das Steuerelement.
 
--   Design Eingabefelder sollte nur in Design Dialog- und Toolfenster verwendet werden.
+- Design Eingabefelder sollte nur in Design Dialog- und Toolfenster verwendet werden.
 
 #### <a name="specialized-interactions"></a>Spezielle Interaktionen
 
--   Schreibgeschützte Felder müssen einen Hintergrund grau (deaktiviert), aber Standardvordergrund-(aktiv).
+- Schreibgeschützte Felder müssen einen Hintergrund grau (deaktiviert), aber Standardvordergrund-(aktiv).
 
--   Erforderliche Felder müssen  **\<erforderlichen >** als Wasserzeichen darin. Sie sollten die Farbe des Hintergrunds außer in seltenen Fällen nicht ändern.
+- Erforderliche Felder müssen  **\<erforderlichen >** als Wasserzeichen darin. Sie sollten die Farbe des Hintergrunds außer in seltenen Fällen nicht ändern.
 
--   Fehler-Überprüfung: Finden Sie unter [Benachrichtigungen und Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- Fehler-Überprüfung: Finden Sie unter [Benachrichtigungen und Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
--   Größe Eingabefelder müssen entsprechend den Inhalt, der nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend angepasst werden. Länge kann darauf hinweisen, dass für den Benutzer Einschränkungen hinsichtlich der Anzahl der Zeichen in das Feld zulässig sind.
+- Größe Eingabefelder müssen entsprechend den Inhalt, der nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend angepasst werden. Länge kann darauf hinweisen, dass für den Benutzer Einschränkungen hinsichtlich der Anzahl der Zeichen in das Feld zulässig sind.
 
      ![Breite des Steuerelements falsche Eingabefeld](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl") **falsche Eingabe Feldlänge: Es ist unwahrscheinlich, dass der Name dieser Länge ist.**
 
      ![Korrigieren Sie die Breite für Eingabefeld-Steuerelement](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl") **richtig Eingabe der Feldlänge: Das Eingabefeld ist eine angemessene Breite für den erwarteten Inhalt.**
 
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Kombinationsfelder und Dropdown-Listen
+### <a name="BKMK_ComboBoxesAndDropDowns"></a> Kombinationsfelder und Dropdown-Listen
  Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für Dropdownlisten und Kombinationsfelder](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visuellen Stil
 
--   Dienstprogramm-Dialogfeldern verwenden Sie nicht Re-Vorlage des Steuerelements. Verwenden Sie das grundlegende Format systemintern auf das Steuerelement.
+- Dienstprogramm-Dialogfeldern verwenden Sie nicht Re-Vorlage des Steuerelements. Verwenden Sie das grundlegende Format systemintern auf das Steuerelement.
 
--   Führen Sie die standard-Designs für Steuerelemente, in Design-Benutzeroberfläche, Kombinationsfelder und Dropdown-Elemente.
+- Führen Sie die standard-Designs für Steuerelemente, in Design-Benutzeroberfläche, Kombinationsfelder und Dropdown-Elemente.
 
 #### <a name="layout"></a>Layout
  Kombinationsfelder und Dropdownlisten sollte Größe angepasst werden, um den Inhalt nicht auf die Breite des Fensters in der sie angezeigt werden, noch die Zeitdauer in einem langen Feld, z. B. einen Pfad nach dem Zufallsprinzip entsprechend anpassen.
@@ -96,26 +96,26 @@ ms.locfileid: "58946932"
 
  **Richtige Feldlänge für ein Dropdown-Steuerelement**
 
-###  <a name="BKMK_CheckBoxes"></a> Kontrollkästchen
+### <a name="BKMK_CheckBoxes"></a> Kontrollkästchen
  Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für Kontrollkästchen](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visuellen Stil
 
--   Dienstprogramm-Dialogfeldern verwenden Sie nicht Re-Vorlage des Steuerelements. Verwenden Sie das grundlegende Format systemintern auf das Steuerelement.
+- Dienstprogramm-Dialogfeldern verwenden Sie nicht Re-Vorlage des Steuerelements. Verwenden Sie das grundlegende Format systemintern auf das Steuerelement.
 
--   Design-Benutzeroberfläche führen Sie die Kontrollkästchen der standard-Designs für Steuerelemente.
+- Design-Benutzeroberfläche führen Sie die Kontrollkästchen der standard-Designs für Steuerelemente.
 
 #### <a name="specialized-interactions"></a>Spezielle Interaktionen
 
--   Interaktion mit einem Kontrollkästchen muss nie ein Dialogfeld angezeigt, oder navigieren Sie zu einem anderen Bereich.
+- Interaktion mit einem Kontrollkästchen muss nie ein Dialogfeld angezeigt, oder navigieren Sie zu einem anderen Bereich.
 
--   Richten Sie die Kontrollkästchen mit der Baseline der ersten Zeile des Texts.
+- Richten Sie die Kontrollkästchen mit der Baseline der ersten Zeile des Texts.
 
      ![Ausrichtung für falschen Kontrollkästchen](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign") **Ausrichtung für falschen Kontrollkästchen: Aktivieren Sie das Kontrollkästchen wird auf der Text zentriert.**
 
      ![Korrigieren Sie die Ausrichtung für Kontrollkästchen](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign") **Ausrichtung für Kontrollkästchen zu beheben: Aktivieren Sie das Kontrollkästchen wird die Grundlinie der ersten Textzeile ausgerichtet.**
 
-###  <a name="BKMK_RadioButtons"></a> Optionsfelder
+### <a name="BKMK_RadioButtons"></a> Optionsfelder
  Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für die Optionsfelder](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visuellen Stil
@@ -124,7 +124,7 @@ ms.locfileid: "58946932"
 #### <a name="specialized-interactions"></a>Spezielle Interaktionen
  Es ist nicht erforderlich, einen Gruppen Frame zum Einschließen von Optionsfeld-Optionen zu verwenden.
 
-###  <a name="BKMK_GroupFrames"></a> Gruppe frames
+### <a name="BKMK_GroupFrames"></a> Gruppe frames
  Führen Sie für typische Interaktionsverhalten ergibt, der [Windows-Desktop-Richtlinien für die Gruppe Frames](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Visuellen Stil
@@ -132,13 +132,13 @@ ms.locfileid: "58946932"
 
 #### <a name="layout"></a>Layout
 
--   Es ist nicht erforderlich, einen Gruppen Frame zu verwenden, zum Einschließen von Optionsfeld-Optionen, es sei denn, die Unterscheidung der Gruppe in einem engen Layout beibehalten werden sollen.
+- Es ist nicht erforderlich, einen Gruppen Frame zu verwenden, zum Einschließen von Optionsfeld-Optionen, es sei denn, die Unterscheidung der Gruppe in einem engen Layout beibehalten werden sollen.
 
--   Verwenden Sie niemals einen Gruppenrahmen für ein einzelnes Steuerelement an.
+- Verwenden Sie niemals einen Gruppenrahmen für ein einzelnes Steuerelement an.
 
--   Manchmal ist es akzeptabel, eine horizontale Trennlinie statt Gruppen Frame-Container zu verwenden.
+- Manchmal ist es akzeptabel, eine horizontale Trennlinie statt Gruppen Frame-Container zu verwenden.
 
-##  <a name="BKMK_TextControls"></a> Textsteuerelemente
+## <a name="BKMK_TextControls"></a> Textsteuerelemente
 
 ### <a name="labels"></a>Bezeichnungen
 
@@ -146,11 +146,11 @@ ms.locfileid: "58946932"
 
 ##### <a name="utility-standard-dialogs"></a>Dialogfelder für Utility (standard))
 
--   Im Allgemeinen führen Sie den Windows-Desktop-Leitfaden für Bezeichnungen aus.
+- Im Allgemeinen führen Sie den Windows-Desktop-Leitfaden für Bezeichnungen aus.
 
--   Im Hilfsprogramm-Dialogfeldern sollten Bezeichnungen nicht fett, in der standardumgebung Schriftart und Farbe angezeigt. Finden Sie unter [Schriftarten und Formatierungen für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md).
+- Im Hilfsprogramm-Dialogfeldern sollten Bezeichnungen nicht fett, in der standardumgebung Schriftart und Farbe angezeigt. Finden Sie unter [Schriftarten und Formatierungen für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md).
 
--   Ellipsen sollte immer Bezeichnungen folgen.
+- Ellipsen sollte immer Bezeichnungen folgen.
 
 ##### <a name="signature-themed-dialogs"></a>Signatur (Design) Dialogfelder)
  Label-Steuerelemente möglicherweise fett oder hellgrau.
@@ -168,11 +168,11 @@ ms.locfileid: "58946932"
 #### <a name="instructional-text"></a>Hinweistext
  Einige Elemente der Benutzeroberfläche profitieren von Anweisungstext, um den Benutzer, der den UI-Zweck zu verstehen oder die auszuführende Aktion an.
 
--   Anweisungstext ist am häufigsten verwendeten am oberen Rand der Dialogfelder, aber in anderen Bereichen, geben Sie die Anweisung, um ein komplexes Steuerelement Gruppierung angezeigt werden kann.
+- Anweisungstext ist am häufigsten verwendeten am oberen Rand der Dialogfelder, aber in anderen Bereichen, geben Sie die Anweisung, um ein komplexes Steuerelement Gruppierung angezeigt werden kann.
 
--   Anweisungstext ist nicht interaktiv, aber Sie können Softwareupdates enthalten Hyperlinks zu Hilfethemen.
+- Anweisungstext ist nicht interaktiv, aber Sie können Softwareupdates enthalten Hyperlinks zu Hilfethemen.
 
--   Verwenden von Anweisungstext nur sparsam und nur bei Bedarf.
+- Verwenden von Anweisungstext nur sparsam und nur bei Bedarf.
 
 ##### <a name="formatting"></a>Formatierung
  Anweisungstext sollte Umgebungsschriftart, standard (nicht-Design) Steuerelementtext. Finden Sie unter [Schriftarten und Formatierungen für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md).
@@ -227,7 +227,7 @@ ms.locfileid: "58946932"
 
   **Beispiele für Wasserzeichentext in Visual Studio**
 
-##  <a name="BKMK_ButtonsAndHyperlinks"></a> Schaltflächen und Links
+## <a name="BKMK_ButtonsAndHyperlinks"></a> Schaltflächen und Links
 
 ### <a name="overview"></a>Übersicht
  Führen Sie die Schaltflächen und Link-Steuerelemente (links) sollten [grundlegende Windows-Desktop-Hinweise zu Links](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) für die Nutzung formulierungen, Skalierung und Abstand.
@@ -352,13 +352,13 @@ ms.locfileid: "58946932"
 
 #### <a name="visual-style"></a>Visuellen Stil
 
--   Links sollten immer verwenden [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Wenn Sie ein Link nicht richtig formatiert wird, blinkt Rot, wenn aktive oder eine andere Farbe angezeigt, nachdem der aufgerufen wird.
+- Links sollten immer verwenden [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Wenn Sie ein Link nicht richtig formatiert wird, blinkt Rot, wenn aktive oder eine andere Farbe angezeigt, nachdem der aufgerufen wird.
 
--   Fügen Sie keine unterstreichungen am Zustand gespeichert, es sei denn, der Link ein Satz Fragment innerhalb eines vollständigen Satzes an, wie z. B. in einem Wasserzeichen ist-Steuerelement.
+- Fügen Sie keine unterstreichungen am Zustand gespeichert, es sei denn, der Link ein Satz Fragment innerhalb eines vollständigen Satzes an, wie z. B. in einem Wasserzeichen ist-Steuerelement.
 
--   Unterstreichungen nicht bei einer mauszeigerbewegung über angezeigt werden soll. Stattdessen wird das Feedback für den Benutzer, dass die Verbindung aktiv ist eine geringfügige Farbe ändern und den entsprechenden Link-Cursor.
+- Unterstreichungen nicht bei einer mauszeigerbewegung über angezeigt werden soll. Stattdessen wird das Feedback für den Benutzer, dass die Verbindung aktiv ist eine geringfügige Farbe ändern und den entsprechenden Link-Cursor.
 
-##  <a name="BKMK_TreeViews"></a> Strukturansichten
+## <a name="BKMK_TreeViews"></a> Strukturansichten
 
 ### <a name="overview"></a>Übersicht
  Strukturansichten bieten eine Möglichkeit zum Organisieren von komplexen in übergeordneten / untergeordneten Gruppen aufgeführt. Ein Benutzer kann erweitern oder reduzieren die übergeordnete Gruppen zum Anzeigen oder Ausblenden von zugrunde liegenden untergeordneten Elemente. Jedes Element in einer Strukturansicht kann ausgewählt werden, um weitere Aktion bereitzustellen.
@@ -367,11 +367,11 @@ ms.locfileid: "58946932"
 
 #### <a name="in-this-topic"></a>In diesem Thema
 
--   [Visuellen Stil](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
+- [Visuellen Stil](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
 
--   [Interaktionen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
+- [Interaktionen](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-###  <a name="BKMK_TreeViewVisualStyle"></a> Visuellen Stil
+### <a name="BKMK_TreeViewVisualStyle"></a> Visuellen Stil
 
 #### <a name="expanders"></a>Erweiterungen
  Strukturansicht-Steuerelemente müssen auf die Expander-Steuerelement von Windows und Visual Studio verwendet werden, entsprechen. Ein Expander-Steuerelement wird von jedem Knoten verwendet, um ein- oder Ausblenden von zugrunde liegenden Elementen. Verwenden eines Expander-Steuerelements ist die Konsistenz für Benutzer, die verschiedenen Ansichten in Windows und Visual Studio auftreten können.
@@ -405,7 +405,7 @@ ms.locfileid: "58946932"
 
  **Da der Inhalt die Grenzen des Strukturansicht-Steuerelement überschritten haben, werden beide vertikalen und horizontalen Bildlaufleisten angezeigt.**
 
-###  <a name="BKMK_TreeViewInteractions"></a> Interaktionen
+### <a name="BKMK_TreeViewInteractions"></a> Interaktionen
 
 #### <a name="context-menus"></a>Kontextmenüs
  Knoten einer Strukturansicht kann es sich um die Optionen des Untermenüs in einem Kontextmenü offenlegen. Das tritt in der Regel auf, wenn ein Benutzer ein Element mit der rechten Maustaste, oder drücken die Menütaste auf einer Windows-Tastatur mit das ausgewählte Element. Es ist wichtig, dass der Knoten den Fokus erhält, und aktiviert ist. Dadurch wird den Benutzer, welches Element identifizieren das Untermenü, angehört.
@@ -420,15 +420,15 @@ ms.locfileid: "58946932"
 ##### <a name="tree-view-control"></a>Strukturansicht-Steuerelement
  Visual Studio-Struktur-Steuerelemente sollten allgemeine Tastaturnavigation ausführen:
 
--   **Pfeil nach oben:** Wählen Sie Elemente aus, indem Sie der Struktur nach oben verschieben
+- **Pfeil nach oben:** Wählen Sie Elemente aus, indem Sie der Struktur nach oben verschieben
 
--   **Pfeil nach unten:** Wählen Sie Elemente aus, indem Sie in der Struktur nach unten verschieben
+- **Pfeil nach unten:** Wählen Sie Elemente aus, indem Sie in der Struktur nach unten verschieben
 
--   **Pfeil nach rechts:** Erweitern Sie den Knoten in der Struktur
+- **Pfeil nach rechts:** Erweitern Sie den Knoten in der Struktur
 
--   **Pfeil nach links:** Reduzieren eines Knotens in der Struktur
+- **Pfeil nach links:** Reduzieren eines Knotens in der Struktur
 
--   **Geben Sie Schlüssel aus:** Initiieren, laden, das ausgewählte Element ausführen
+- **Geben Sie Schlüssel aus:** Initiieren, laden, das ausgewählte Element ausführen
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (Strukturansicht und Rasteransicht)
  Ein Rastersteuerelement ist ein komplexes Steuerelement enthält eine Strukturansicht, in einem Raster an. Erweitern reduzieren, und Navigieren durch die Struktur sollte die gleichen Tastenkombinationen Befehle als eine Strukturansicht mit den folgenden Ergänzungen beachten:

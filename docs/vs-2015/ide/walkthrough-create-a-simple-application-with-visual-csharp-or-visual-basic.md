@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040558"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
 > [!NOTE]
 >  Diese exemplarische Vorgehensweise basiert auf Visual Studio Professional, da diese Version die WPF-Anwendungsvorlage enthält, mit deren Hilfe Sie das Projekt für diese exemplarische Vorgehensweise erstellen. Visual Studio Express für Windows Desktop enthält diese Vorlage ebenfalls, nicht aber Visual Studio Express für Windows und Visual Studio Express für das Web. Einführende Informationen zur Verwendung von Visual Studio Express für Windows finden Sie unter [Developer Center für Windows Store-Apps](http://msdn.microsoft.com/windows/apps/br229519). Einführende Informationen zur Verwendung von Visual Studio Express für das Web finden Sie unter [Erste Schritte mit ASP.NET](http://www.asp.net/get-started). Außerdem bestimmen die Edition von Visual Studio und Einstellungen, die Sie verwenden, die Namen und Positionen einiger Elemente der Benutzeroberfläche. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
-##  <a name="BKMK_ConfigureIDE"></a> Konfigurieren der IDE  
+## <a name="BKMK_ConfigureIDE"></a> Konfigurieren der IDE  
  Wenn Sie Visual Studio zum ersten Mal starten, werden Sie aufgefordert, sich mit einem Microsoft Dienstkonto (Microsoft Service Account; MSA) anzumelden, [Anmelden bei Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Sie müssen sich nicht jetzt anmelden, sondern können dies auch später machen.  
   
  Beim Start von Visual Studio müssen Sie als Nächstes eine Einstellungskombination auswählen, die einen Satz an vordefinierten Anpassungen auf die IDE anwendet. Jede Einstellungskombination wurde entwickelt, um Ihnen die Entwicklung von Anwendungen zu vereinfachen.  
@@ -69,7 +69,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
    Das im weiteren Verlauf dieser exemplarischen Vorgehensweise für Bilder verwendete Farbschema ist das helle Design. Weitere Informationen zum Anpassen der IDE finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
+## <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
   
 ### <a name="create-the-project"></a>Erstellen eines Projekts  
  Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein Projekt und eine Projektmappe. In diesem Beispiel erstellen Sie eine Windows Presentation Foundations (WPF)-Projektmappe.  
@@ -199,7 +199,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 ##### <a name="add-code-to-display-message-boxes"></a>Hinzufügen von Code zu Anzeigenmeldungsfeldern  
   
-1.  Doppelklicken Sie auf der Entwurfsoberfläche auf die Schaltfläche **Anzeigen** .  
+1. Doppelklicken Sie auf der Entwurfsoberfläche auf die Schaltfläche **Anzeigen** .  
   
      Greetings.xaml.vb oder Greetings.xaml.cs wird geöffnet, der Cursor steht im Button_Click-Ereignis. Sie können auch einen Click-Ereignishandler wie folgt hinzufügen (wenn im eingefügten Code Namen rot unterstrichen sind, haben Sie wahrscheinlich nicht die RadioButton-Steuerelemente auf der Entwurfsoberfläche ausgewählt und umbenannt):  
   
@@ -220,7 +220,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
     }  
     ```  
   
-2.  Geben Sie für Visual Basic den folgenden Code ein:  
+2. Geben Sie für Visual Basic den folgenden Code ein:  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
     }  
     ```  
   
-3.  Speichern Sie die Anwendung.  
+3. Speichern Sie die Anwendung.  
   
-##  <a name="BKMK_DebugTest"></a> Debuggen und Testen der Anwendung  
+## <a name="BKMK_DebugTest"></a> Debuggen und Testen der Anwendung  
  Als Nächstes debuggen Sie die Anwendung, um nach Fehlern zu suchen und zu testen, ob beide Meldungsfelder ordnungsgemäß angezeigt werden. Die folgenden Anweisungen beschreiben, wie Sie den Debugger erstellen und starten. Lesen Sie jedoch später für weitere Informationen [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) und [Debuggen von WPF](../debugger/debugging-wpf.md).  
   
 ### <a name="find-and-fix-errors"></a>Suchen und Beheben von Fehlern  
@@ -280,29 +280,29 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
 ##### <a name="to-add-breakpoints"></a>Hinzufügen von Haltepunkten  
   
-1.  Öffnen Sie Greetings.xaml.vb oder Greetings.xaml.cs, und wählen Sie die folgende Zeile aus: `MessageBox.Show("Hello.")`  
+1. Öffnen Sie Greetings.xaml.vb oder Greetings.xaml.cs, und wählen Sie die folgende Zeile aus: `MessageBox.Show("Hello.")`  
   
-2.  Fügen Sie einen Haltepunkt hinzu, indem Sie im Menü **Debuggen**und dann **Haltepunkt umschalten**auswählen.  
+2. Fügen Sie einen Haltepunkt hinzu, indem Sie im Menü **Debuggen**und dann **Haltepunkt umschalten**auswählen.  
   
      ![Befehl „Haltepunkt umschalten“ im Menü „Debuggen“](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-StartDebugging")  
   
      Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.  
   
-3.  Wählen Sie folgende Zeile aus: `MessageBox.Show("Goodbye.")`.  
+3. Wählen Sie folgende Zeile aus: `MessageBox.Show("Goodbye.")`.  
   
-4.  Drücken Sie die Taste F9, um einen Haltepunkt hinzuzufügen, und drücken Sie dann F5, um das Debuggen zu starten.  
+4. Drücken Sie die Taste F9, um einen Haltepunkt hinzuzufügen, und drücken Sie dann F5, um das Debuggen zu starten.  
   
-5.  Aktivieren Sie im Fenster **Greetings** das Optionsfeld **Hello** , und wählen Sie dann die Schaltfläche **Anzeigen** aus.  
+5. Aktivieren Sie im Fenster **Greetings** das Optionsfeld **Hello** , und wählen Sie dann die Schaltfläche **Anzeigen** aus.  
   
      Die Zeile wird `MessageBox.Show("Hello.")` gelb hervorgehoben. Am unteren Rand der IDE werden die Fenster "Auto", "Lokal" und "Überwachen" auf der linken Seite zusammengedockt, und die Fenster "Aufrufliste", "Haltepunkte", "Befehl", "Direkt" und "Ausgabe" werden auf der rechten Seite zusammengedockt.  
   
-6.  Wählen Sie in der Menüleiste **Debuggen**die Option **Rücksprung**aus.  
+6. Wählen Sie in der Menüleiste **Debuggen**die Option **Rücksprung**aus.  
   
      Die Anwendung wird weiter ausgeführt, und ein Meldungsfeld mit dem Wort "Hello" wird angezeigt.  
   
-7.  Wählen Sie die Schaltfläche **OK** im Meldungsfeld, um es zu schließen.  
+7. Wählen Sie die Schaltfläche **OK** im Meldungsfeld, um es zu schließen.  
   
-8.  Aktivieren Sie im Fenster **Greetings** das Optionsfeld **Goodbye** , und wählen Sie dann die Schaltfläche **Anzeigen** aus.  
+8. Aktivieren Sie im Fenster **Greetings** das Optionsfeld **Goodbye** , und wählen Sie dann die Schaltfläche **Anzeigen** aus.  
   
      Die Zeile wird `MessageBox.Show("Goodbye.")` gelb hervorgehoben.  
   

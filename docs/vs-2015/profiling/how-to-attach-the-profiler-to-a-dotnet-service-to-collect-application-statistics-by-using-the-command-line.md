@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca0b64b112e149404b2ee8861103b25fd6780ccc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040249"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an einen .NET-Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** aktiviert das Sampling.  
+   - **/globalsampleon** aktiviert das Sampling.  
 
-   -   **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben wird, werden Daten nur Funktionen zugewiesen.  
+   - **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben wird, werden Daten nur Funktionen zugewiesen.  
 
 4. Starten Sie den Computer neu.  
 
@@ -90,14 +90,14 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|  
    |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis in den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|  
 
-   -   **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.  
+   - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.  
 
 ## <a name="controlling-data-collection"></a>Steuern der Datenauflistung  
  Wenn der Dienst ausgeführt wird, können Sie die **VSPerfCmd.exe**-Optionen verwenden, um das Schreiben der Daten in die Profilerdatendatei zu starten und zu beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
     |Option|Beschreibung|  
     |------------|-----------------|  
@@ -112,23 +112,23 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
-1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
+1. Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
 
-    -   Beenden Sie den Dienst.  
+    - Beenden Sie den Dienst.  
 
          - oder -   
 
-    -   Geben Sie **VSPerfCmd /detach** ein.  
+    - Geben Sie **VSPerfCmd /detach** ein.  
 
-2.  Schließen Sie den Profiler. Typ:  
+2. Schließen Sie den Profiler. Typ:  
 
      **VSPerfCmd /shutdown**  
 
-3.  (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
+3. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Starten Sie den Computer neu.  
+4. Starten Sie den Computer neu.  
 
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   

@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042352"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Anzeigen eines UML-Modells in Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie Modellelemente in Diagrammen angezeigt werden. Welche Versionen von Visual Studio UML-Modelle unterstützen, erfahren Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- In diesem Thema:  
- -   [Um ein Element in einem Diagramm angezeigt werden.](#Display)  
+In diesem Thema:  
+- [Um ein Element in einem Diagramm angezeigt werden.](#Display)  
   
--   [Zugreifen auf die Formen, die ein Element darstellen.](#GetShapes)  
+- [Zugreifen auf die Formen, die ein Element darstellen.](#GetShapes)  
   
--   [Verschieben und Ändern der Größe von Formen](#Moving)  
+- [Verschieben und Ändern der Größe von Formen](#Moving)  
   
--   [So entfernen Sie eine Form aus einem Diagramm](#Removing)  
+- [So entfernen Sie eine Form aus einem Diagramm](#Removing)  
   
--   [Öffnen und Erstellen von Diagrammen](#Opening)  
+- [Öffnen und Erstellen von Diagrammen](#Opening)  
   
--   [Anpassen von mit VSTU Befehl zum Ausrichten von Formen](#AlignCommand)  
+- [Anpassen von mit VSTU Befehl zum Ausrichten von Formen](#AlignCommand)  
   
-##  <a name="Display"></a> Um ein Element in einem Diagramm angezeigt werden.  
+## <a name="Display"></a> Um ein Element in einem Diagramm angezeigt werden.  
  Wenn Sie ein Element erstellen, z. B. einen Anwendungsfall oder eine Aktion, können Benutzer das Element im UML-Modell-Explorer sehen, aber es wird nicht immer automatisch in einem Diagramm angezeigt. In einigen Fällen müssen Sie Code schreiben, um es anzuzeigen. In der folgenden Tabelle sind die Alternativen zusammengefasst.  
   
 |Elementtyp|Beispiel:|Code zum Anzeigen muss wie folgt lauten|  
@@ -47,7 +47,7 @@ Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie 
 |Untergeordnetes Element des Verhaltens|Lebenslinien, Meldungen, Aktionen, Objektknoten|Automatisch – Kein Code erforderlich. <br /><br /> Wird angezeigt, wenn das übergeordnete Element an ein Diagramm gebunden ist.|  
 |Beziehung|Zuordnung, Generalisierung, Fluss, Abhängigkeit|Automatisch – Kein Code erforderlich. <br /><br /> Wird in jedem Diagramm angezeigt, in dem beide Enden angezeigt werden.|  
   
-##  <a name="GetShapes"></a> Zugreifen auf die Formen, die ein Element darstellen.  
+## <a name="GetShapes"></a> Zugreifen auf die Formen, die ein Element darstellen.  
  Die Form, die ein Element darstellt, gehört zu den folgenden Typen:  
   
  `IShape`  
@@ -68,7 +68,7 @@ Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie 
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Wandeln Sie eine generische `IShape` in ein stark typisiertes `IShape<IElement>`.|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Wandeln Sie eine Form von einem parametrisierten Formtyp in einen anderen um.|  
   
-##  <a name="Moving"></a> Verschieben und Ändern der Größe von Formen  
+## <a name="Moving"></a> Verschieben und Ändern der Größe von Formen  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie 
   
  Ein Beispiel finden Sie unter [Definieren eines Ausrichtungsbefehls](#AlignCommand).  
   
-##  <a name="Removing"></a> So entfernen Sie eine Form aus einem Diagramm  
+## <a name="Removing"></a> So entfernen Sie eine Form aus einem Diagramm  
  Sie können Formen einiger Elementtypen löschen, ohne das Element zu löschen.  
   
 |Modellelement|So entfernen Sie die Form|  
@@ -86,7 +86,7 @@ Im Programmcode zu einer Erweiterung von Visual Studio können Sie steuern, wie 
 |Ein Verhalten: Interaktion oder Aktivität|Sie können das Diagramm aus dem Projekt löschen. Verwenden Sie `IDiagram.FileName`, um den Pfad abzurufen.<br /><br /> Dabei wird nicht das Verhalten aus dem Modell gelöscht.|  
 |Eine beliebige andere Form|Sie können andere Formen nicht explizit aus einem Diagramm löschen. Die Form wird automatisch entfernt, wenn das Element aus dem Modell gelöscht oder wenn die übergeordnete Form aus dem Diagramm entfernt wird.|  
   
-##  <a name="Opening"></a> Öffnen und Erstellen von Diagrammen  
+## <a name="Opening"></a> Öffnen und Erstellen von Diagrammen  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>So greifen Sie über einen Befehl oder eine Gestenerweiterung auf das aktuelle Diagramm des Benutzers zu  
  Deklarieren Sie diese importierte Eigenschaft in der Klasse:  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Beispiel: Befehl zum Ausrichten von Formen  
+## <a name="AlignCommand"></a> Beispiel: Befehl zum Ausrichten von Formen  
  Im folgenden Code wird ein Menübefehl implementiert, mit dem Formen ordentlich ausgerichtet werden. Der Benutzer muss zuerst mindestens zwei Formen einfügen, die in etwa vertikal oder horizontal aneinander ausgerichtet sind. Dann können ihre Mittelpunkte mit dem Befehl „Align“ aneinander ausgerichtet werden.  
   
  Um den Befehl verfügbar zu machen, fügen Sie diesen Code einem Menübefehlsprojekt hinzu, und stellen Sie den Benutzern dann die resultierende Erweiterung bereit. Weitere Informationen finden Sie unter [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  

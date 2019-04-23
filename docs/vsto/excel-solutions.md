@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f96543c3f2cca5c067eea4af4b14bc67d7d129c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69616c4406e6a608e406e479e5fc2de2dcbc2844
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041521"
 ---
 # <a name="excel-solutions"></a>Excel-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie verwenden können, um Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Excel zu erstellen. Mit diesen Projektmappen können Sie Excel automatisieren, Excel-Features erweitern und die Excel-Benutzeroberfläche anpassen. Weitere Informationen zu den Unterschieden zwischen Anpassungen auf Dokumentebene und VSTO-Add-ins finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56600539"
 
  Dieses Thema enthält folgende Informationen:
 
--   [Automatisieren von Excel](#automating).
+- [Automatisieren von Excel](#automating).
 
--   [Entwickeln von Anpassungen auf Dokumentebene für Excel](#doclevel).
+- [Entwickeln von Anpassungen auf Dokumentebene für Excel](#doclevel).
 
--   [Entwickeln von VSTO-Add-ins für Excel](#applevel).
+- [Entwickeln von VSTO-Add-ins für Excel](#applevel).
 
--   [Anpassen der Benutzeroberfläche von Excel](#UI).
+- [Anpassen der Benutzeroberfläche von Excel](#UI).
 
-##  <a name="automating"></a> Automatisieren von Excel
+## <a name="automating"></a> Automatisieren von Excel
  Das Excel-Objektmodell macht viele Typen verfügbar, die Sie zum Automatisieren von Excel verwenden können. Beispielsweise können Sie programmgesteuert Diagramme erstellen, Arbeitsblätter formatieren und die Werte von Bereichen und Zellen festlegen. Weitere Informationen finden Sie unter [Übersicht über Excel-Objektmodell](../vsto/excel-object-model-overview.md).
 
  Wenn Sie Excel-Projektmappen in Visual Studio entwickeln, können Sie auch *Hostelemente* und *Hoststeuerelemente* in den Projektmappen verwenden. Dabei handelt es sich um Objekte, die bestimmte häufig verwendete Objekte im Excel-Objektmodell erweitern, z. B. das <xref:Microsoft.Office.Interop.Excel.Worksheet> -Objekt und das <xref:Microsoft.Office.Interop.Excel.Range> -Objekt. Die erweiterten Objekte verhalten sich wie die Excel-Objekte, auf denen sie basieren, fügen den Objekten jedoch zusätzliche Ereignis- und Datenbindungsfunktionen hinzu. Weitere Informationen finden Sie unter [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Entwickeln von Anpassungen auf Dokumentebene für Excel
+## <a name="doclevel"></a> Entwickeln von Anpassungen auf Dokumentebene für Excel
  Eine Anpassung auf Dokumentebene für Microsoft Office Excel besteht aus einer Assembly, die einer spezifischen Arbeitsmappe zugeordnet ist. Die Assembly erweitert das Dokument normalerweise durch das Anpassen der Benutzeroberfläche und das Automatisieren von Excel. Im Gegensatz zu einem VSTO-Add-In, das Excel direkt zugeordnet ist, sind Funktionen, die in einer Anpassung implementiert werden, nur dann verfügbar, wenn die zugehörige Arbeitsmappe in Word geöffnet ist.
 
  Um ein Anpassungsprojekt auf Dokumentebene für Excel zu erstellen, verwenden Sie die Excel-Arbeitsmappe oder einer Excel-Vorlagen-Projektvorlagen in der **neues Projekt** Dialogfeld von Visual Studio. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56600539"
 
  Weitere Informationen zu diesen generierten Klassen und anderen Funktionen können in einem Projekt auf Dokumentebene finden Sie unter [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Entwickeln von VSTO-Add-ins für Excel
+## <a name="applevel"></a> Entwickeln von VSTO-Add-ins für Excel
  Ein VSTO-Add-In für Microsoft Office Excel besteht aus einer Assembly, die von Excel geladen wird. Die Assembly erweitert Excel normalerweise durch das Anpassen der Benutzeroberfläche und das Automatisieren von Excel. Im Gegensatz zu einer Anpassung auf Dokumentebene, die einer bestimmten Arbeitsmappe zugeordnet ist, sind die Funktionen, die in einem VSTO-Add-in implementiert nicht auf eine einzelne Arbeitsmappe beschränkt.
 
  Um ein VSTO-Add-in-Projekt für Excel zu erstellen, verwenden Sie die Excel-Arbeitsmappe oder einer Excel-Vorlagen-Projektvorlagen in der **neues Projekt** Dialogfeld von Visual Studio. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56600539"
 
  Weitere Informationen zu den `ThisAddIn` -Klasse und anderen Visual Studio-Funktionen, die in einem VSTO-Add-in verwendet werden können finden Sie unter [Programm VSTO-Add-Ins](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Anpassen der Benutzeroberfläche von Excel
+## <a name="UI"></a> Anpassen der Benutzeroberfläche von Excel
  Es gibt mehrere Möglichkeiten, die Benutzeroberfläche von Excel anzupassen. Einige Optionen sind für alle Projekttypen verfügbar, andere Optionen sind jedoch nur für VSTO-Add-Ins oder Anpassungen auf Dokumentebene verfügbar.
 
 ### <a name="options-for-all-project-types"></a>Optionen für alle Projekttypen

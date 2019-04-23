@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039529"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Vorgehensweise: Erstellen einer deklarativen Regelbedingung (Vorgängerversion)
 In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] deklariert wird, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.  
@@ -27,37 +27,37 @@ In diesem Thema wird beschrieben, wie eine Regelbedingung mithilfe der Vorgänge
   
  Deklarative Regelbedingungen werden in den folgenden vordefinierten Windows Workflow Foundation-Aktivitäten verwendet:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>So erstellen Sie eine deklarative Regelbedingung mit dem Regelbedingungs-Editor  
   
-1.  In der Aktivitäts **Eigenschaften** Fenster, klicken Sie auf die **Bedingung** Eigenschaft oder **UntilCondition** -Eigenschaft, je nach der Aktivität.  
+1. In der Aktivitäts **Eigenschaften** Fenster, klicken Sie auf die **Bedingung** Eigenschaft oder **UntilCondition** -Eigenschaft, je nach der Aktivität.  
   
-2.  Wählen Sie **deklarative Regelbedingung** aus der Liste für die Eigenschaft.  
+2. Wählen Sie **deklarative Regelbedingung** aus der Liste für die Eigenschaft.  
   
-3.  Erweitern Sie die **Bedingung** oder **UntilCondition** Eigenschaft.  
+3. Erweitern Sie die **Bedingung** oder **UntilCondition** Eigenschaft.  
   
-4.  Klicken Sie auf die **ConditionName** Eigenschaft.  
+4. Klicken Sie auf die **ConditionName** Eigenschaft.  
   
-5.  Klicken Sie auf die **ConditionName** Ellipsen **[...]**  zum Öffnen der **Bedingung auswählen** Dialogfeld.  
+5. Klicken Sie auf die **ConditionName** Ellipsen **[...]**  zum Öffnen der **Bedingung auswählen** Dialogfeld.  
   
-6.  Klicken Sie auf **neue Bedingung** zum Öffnen der **Regelbedingungs-Editor** Dialogfeld.  
+6. Klicken Sie auf **neue Bedingung** zum Öffnen der **Regelbedingungs-Editor** Dialogfeld.  
   
-7.  Geben Sie den Ausdruck für die Bedingung in der **Bedingung** Textfeld.  
+7. Geben Sie den Ausdruck für die Bedingung in der **Bedingung** Textfeld.  
   
      Weitere Informationen zum Erstellen, finden Sie unter [Regel-Editor-Dialogfeld (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  Wenn Sie die Erstellung des Bedingungsausdrucks haben, klicken Sie auf **OK** , um das Dialogfeld schließen und die regelbedingung mit einem zugewiesenen Namen zu erstellen.  
+8. Wenn Sie die Erstellung des Bedingungsausdrucks haben, klicken Sie auf **OK** , um das Dialogfeld schließen und die regelbedingung mit einem zugewiesenen Namen zu erstellen.  
   
      Die **Bedingung auswählen** Dialogfeld wird geöffnet.  
   

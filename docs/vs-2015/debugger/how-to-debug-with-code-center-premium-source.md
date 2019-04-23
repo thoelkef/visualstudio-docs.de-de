@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039876"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Vorgehensweise: Debuggen Sie mit Code Center Premium-Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>So debuggen Sie den Quellcode mithilfe der Funktion "An den Prozess anhängen"  
   
-1.  Schließen Sie das SmartCard-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
+1. Schließen Sie das SmartCard-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
   
-2.  Starten Sie Visual Studio.  
+2. Starten Sie Visual Studio.  
   
-3.  Öffnen Sie Ihr Visual Studio-Projekt.  
+3. Öffnen Sie Ihr Visual Studio-Projekt.  
   
-4.  Auf der **Tools** Menü klicken Sie auf **an den Prozess anhängen**.  
+4. Auf der **Tools** Menü klicken Sie auf **an den Prozess anhängen**.  
   
-5.  In der **an den Prozess anhängen** Dialogfeld klicken Sie auf **wählen**.  
+5. In der **an den Prozess anhängen** Dialogfeld klicken Sie auf **wählen**.  
   
-6.  In der **Codetyp auswählen** Dialogfeld **Codetypen**Option **Native**, **verwaltete**, und **verwaltet ( v4. 0)**.  
+6. In der **Codetyp auswählen** Dialogfeld **Codetypen**Option **Native**, **verwaltete**, und **verwaltet ( v4. 0)**.  
   
-7.  Klicken Sie auf **OK** zum Verwerfen der **Codetyp auswählen** Dialogfeld.  
+7. Klicken Sie auf **OK** zum Verwerfen der **Codetyp auswählen** Dialogfeld.  
   
-8.  In der **verfügbare Prozesse** Feld, wählen Sie den Prozess, die Sie debuggen möchten.  
+8. In der **verfügbare Prozesse** Feld, wählen Sie den Prozess, die Sie debuggen möchten.  
   
 9. Klicken Sie auf **Anfügen**aus.  
   
@@ -117,27 +117,27 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
   
 4. Führen Sie für jedes verwaltete Projekte in der Projektmappe Folgendes aus:  
   
-   1.  Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**.  
+   1. Klicken Sie im Projektmappen-Explorer das Kontextmenü für das Projekt, und wählen Sie dann **Eigenschaften**.  
   
-   2.  Wählen Sie **Debuggen** und wählen Sie dann **nicht verwaltetes Codedebuggen aktivieren**.  
+   2. Wählen Sie **Debuggen** und wählen Sie dann **nicht verwaltetes Codedebuggen aktivieren**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>So erstellen Sie die Lösung mit der Code Center Premium-Quelle  
   
-1.  Legen Sie in der `Package`-Klasse einen Haltepunkt für den Paketkonstruktor fest.  
+1. Legen Sie in der `Package`-Klasse einen Haltepunkt für den Paketkonstruktor fest.  
   
-2.  In der `Debug` Menü klicken Sie auf **Debuggen starten**.  
+2. In der `Debug` Menü klicken Sie auf **Debuggen starten**.  
   
-3.  Wenn Sie den Haltepunkt im Paketkonstruktor erreichen, navigieren Sie zu der **Aufrufliste** Fenster, und mit der rechten Maustaste der Stapelrahmen, der zu ladenden Assembly Symbole klicken Sie dann aus, klicken Sie auf **Symbole laden**.  
+3. Wenn Sie den Haltepunkt im Paketkonstruktor erreichen, navigieren Sie zu der **Aufrufliste** Fenster, und mit der rechten Maustaste der Stapelrahmen, der zu ladenden Assembly Symbole klicken Sie dann aus, klicken Sie auf **Symbole laden**.  
   
      Doppelklicken Sie auf den Aufrufframe, um die Quelle zu laden.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>So durchsuchen Sie Quellcode in Code Center Premium  
   
-1.  Schließen Sie das SmartCard-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
+1. Schließen Sie das SmartCard-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
   
-2.  Starten Sie Internet Explorer, und geben Sie die folgende URL ein: `https://codepremium.msdn.microsoft.com`  
+2. Starten Sie Internet Explorer, und geben Sie die folgende URL ein: `https://codepremium.msdn.microsoft.com`  
   
-3.  Navigieren Sie zur gewünschten Quelle.  
+3. Navigieren Sie zur gewünschten Quelle.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   

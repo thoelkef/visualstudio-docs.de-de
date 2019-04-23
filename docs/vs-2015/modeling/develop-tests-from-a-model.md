@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042053"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
   
  Diese Richtlinien können hilfreich sein:  
   
--   Für jeden Anwendungsfall sollte es mehrere Tests geben, für Hauptpfade und außergewöhnliche Ergebnisse.  
+- Für jeden Anwendungsfall sollte es mehrere Tests geben, für Hauptpfade und außergewöhnliche Ergebnisse.  
   
--   Wenn Sie einen Anwendungsfall im Anforderungsmodell beschreiben, ist es wichtiger, seine Nachbedingung zu definieren, das heißt das erreichte Ziel, anstatt die Verfahren, die der Benutzer zum Erreichen des Ziels befolgt, detailliert zu beschreiben. Die Nachbedingung für die Bestellung einer Mahlzeit beispielsweise kann sein, dass ein Restaurant eine Mahlzeit für einen Kunden zubereitet und der Kunde bezahlt hat. Die Nachbedingung ist das Kriterium, das durch Ihre Tests überprüft werden sollte.  
+- Wenn Sie einen Anwendungsfall im Anforderungsmodell beschreiben, ist es wichtiger, seine Nachbedingung zu definieren, das heißt das erreichte Ziel, anstatt die Verfahren, die der Benutzer zum Erreichen des Ziels befolgt, detailliert zu beschreiben. Die Nachbedingung für die Bestellung einer Mahlzeit beispielsweise kann sein, dass ein Restaurant eine Mahlzeit für einen Kunden zubereitet und der Kunde bezahlt hat. Die Nachbedingung ist das Kriterium, das durch Ihre Tests überprüft werden sollte.  
   
--   Lassen Sie verschiedene Tests auf den unterschiedlichen Klauseln der Nachbedingung basieren. Erstellen Sie beispielsweise separate Tests für die Benachrichtigung des Restaurants über die Bestellung und für das Empfangen der Zahlung vom Kunden. Diese Trennung bietet folgende Vorteile:  
+- Lassen Sie verschiedene Tests auf den unterschiedlichen Klauseln der Nachbedingung basieren. Erstellen Sie beispielsweise separate Tests für die Benachrichtigung des Restaurants über die Bestellung und für das Empfangen der Zahlung vom Kunden. Diese Trennung bietet folgende Vorteile:  
   
-    -   Änderungen verschiedener Aspekte der Anforderungen treten häufig unabhängig voneinander auf. Durch ein derartiges Aufteilen der Tests in verschiedene Aspekte ist es einfacher, die Tests zu aktualisieren, wenn sich Anforderungen ändern.  
+    - Änderungen verschiedener Aspekte der Anforderungen treten häufig unabhängig voneinander auf. Durch ein derartiges Aufteilen der Tests in verschiedene Aspekte ist es einfacher, die Tests zu aktualisieren, wenn sich Anforderungen ändern.  
   
-    -   Wenn laut Entwicklungsplan ein Aspekt des Anwendungsfalls vor einem anderen implementiert wird, können Sie die Tests im Verlauf der Entwicklung getrennt aktivieren.  
+    - Wenn laut Entwicklungsplan ein Aspekt des Anwendungsfalls vor einem anderen implementiert wird, können Sie die Tests im Verlauf der Entwicklung getrennt aktivieren.  
   
--   Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion sein: Eingaben von 4 Stellen Sie sicher, dass die Ausgabe 2 ist. Entwerfen Sie stattdessen das Skript ein: Wählen Sie eine Eingabe; Multiplizieren Sie die Ausgabe von selbst, und stellen Sie sicher, dass das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.  
+- Wenn Sie die Tests entwerfen, trennen Sie die Auswahl der Testdaten vom Code oder Skript, das bestimmt, ob die Nachbedingung erreicht wurde. Beispielsweise kann ein Test einer einfachen arithmetischen Funktion sein: Eingaben von 4 Stellen Sie sicher, dass die Ausgabe 2 ist. Entwerfen Sie stattdessen das Skript ein: Wählen Sie eine Eingabe; Multiplizieren Sie die Ausgabe von selbst, und stellen Sie sicher, dass das Ergebnis der ursprünglichen Eingabe entspricht. Durch dieses Format können Sie die Testeingaben variieren, ohne den Hauptteil des Tests zu ändern.  
   
 #### <a name="linking-tests-to-use-cases"></a>Verknüpfen von Tests mit Anwendungsfällen  
  Bei Verwendung von [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] zum Entwerfen und Ausführen der Tests, können Sie die Tests unter der Voraussetzung, Anwendungsfall- oder User Story-Arbeitsaufgaben organisieren. Sie können diese Arbeitsaufgaben mit Anwendungsfällen im Modell verknüpfen. Auf diese Weise können Sie Änderungen der Anforderungen für die Tests schnell nachverfolgen und den Fortschritt der einzelnen Anwendungsfälle prüfen.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Aus Testsicht kann ein Anforderungsmodell als eine Kurzschreibweise für die Tests betrachtet werden. Folglich ist es wichtig, die Beziehung zwischen Tests und Modell über das gesamte Projekt hinweg aufrechtzuerhalten.  
   
-##  <a name="Attaching"></a> Anfügen von Testsituationen an Modellelemente  
+## <a name="Attaching"></a> Anfügen von Testsituationen an Modellelemente  
  Wenn das Projekt [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] verwendet, können Sie Tests mit den Elementen im Modell verknüpfen. Dadurch können Sie schnell die Tests finden, die von einer Änderung der Anforderungen betroffen sind, und nachverfolgen, in welchem Umfang eine Anforderung erfüllt wurde.  
   
  Sie können Tests mit allen Arten von Elementen verknüpfen. Hier einige Beispiele:  
   
--   Verknüpfen Sie einen Anwendungsfall mit den Tests, die ihn ausführen.  
+- Verknüpfen Sie einen Anwendungsfall mit den Tests, die ihn ausführen.  
   
--   Schreiben Sie die Klauseln einer Anwendungsfall-Nachbedingung oder eines Ziels in Kommentare, die mit dem Anwendungsfall verknüpft sind, und verknüpfen Sie dann Tests mit den einzelnen Kommentaren.  
+- Schreiben Sie die Klauseln einer Anwendungsfall-Nachbedingung oder eines Ziels in Kommentare, die mit dem Anwendungsfall verknüpft sind, und verknüpfen Sie dann Tests mit den einzelnen Kommentaren.  
   
--   Schreiben Sie invariante Regeln in Kommentare in Klassendiagrammen oder Aktivitätsdiagrammen, und verknüpfen Sie sie mit Tests.  
+- Schreiben Sie invariante Regeln in Kommentare in Klassendiagrammen oder Aktivitätsdiagrammen, und verknüpfen Sie sie mit Tests.  
   
--   Verknüpfen Sie Tests mit einem Aktivitätsdiagramm oder mit einzelnen Aktivitäten.  
+- Verknüpfen Sie Tests mit einem Aktivitätsdiagramm oder mit einzelnen Aktivitäten.  
   
--   Verknüpfen Sie eine Testsammlung mit der Komponente oder dem Subsystem, die von ihr getestet werden.  
+- Verknüpfen Sie eine Testsammlung mit der Komponente oder dem Subsystem, die von ihr getestet werden.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>So verknüpfen Sie Tests mit einem Modellelement oder einer Beziehung  
   
-1.  Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Erstellen Sie in [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] eine Anforderung und lassen Sie eine Testsammlung auf dieser basieren. Informationen hierzu finden Sie unter [Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      Die von Ihnen erstellte Anforderung ist eine Arbeitsaufgabe in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. In Abhängigkeit von der Prozessvorlage, die Ihr Projekt mit [!INCLUDE[esprfound](../includes/esprfound-md.md)] verwendet, kann es sich um eine User Story-, Anforderungs- oder Anwendungsfall-Arbeitsaufgabe handeln. Weitere Informationen finden Sie unter [Nachverfolgen von Arbeit mit Visual Studio Team Services oder Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.  
+2. Verknüpfen Sie die Anforderungsarbeitsaufgabe mit einem oder mehreren Elementen im Modell.  
   
      Klicken Sie in einem Modellierungsdiagramm mit der rechten Maustaste eine Element, Kommentar oder eine Beziehung, und klicken Sie dann auf **mit Arbeitsaufgabe verknüpfen**. Weitere Informationen finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.  
+3. Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   

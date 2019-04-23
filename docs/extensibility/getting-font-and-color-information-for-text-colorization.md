@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042406"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen von Schriftart- und farbanbieters für die farbliche Kennzeichnung von text
 Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Benutzeroberfläche (UI) hängt von den Typ des Projekts, die Technologie und Developer-Einstellungen. Die **Schriftarten und Farben** auf der Seite werden die Einstellungen gespeichert.
@@ -31,11 +31,11 @@ Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Ben
 
 Eine VSPackage benötigen zum farbigen Anzeigen von, aktuelle **Schriftarten und Farben** Einstellungen. Eine VSPackage kann die aktuelle Einstellungen in der folgenden Methoden, nach Bedarf abrufen:
 
--   Verwenden Sie den Schriftart- und farbeinstellungen Dauerhaftigkeitsmechanismus zum Abrufen des gespeicherten oder der aktuellen Status. Weitere Informationen finden Sie unter [gespeicherte Schriftart-und farbeinstellungen](../extensibility/accessing-stored-font-and-color-settings.md).
+- Verwenden Sie den Schriftart- und farbeinstellungen Dauerhaftigkeitsmechanismus zum Abrufen des gespeicherten oder der aktuellen Status. Weitere Informationen finden Sie unter [gespeicherte Schriftart-und farbeinstellungen](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> ein Dienst, bietet Schriftart und Farbe Daten rufen Sie eine Instanz der, Schnittstelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, wenn das VSPackage auch nicht den Schriftart- und farbeinstellungen-Anbieter ist.
+- Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> ein Dienst, bietet Schriftart und Farbe Daten rufen Sie eine Instanz der, Schnittstelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, wenn das VSPackage auch nicht den Schriftart- und farbeinstellungen-Anbieter ist.
 
--   Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>-Schnittstelle.
+- Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>-Schnittstelle.
 
 Um sicherzustellen, dass die Ergebnisse der Abfrage werden auf dem neuesten Stand, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update erforderlich ist, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.
 

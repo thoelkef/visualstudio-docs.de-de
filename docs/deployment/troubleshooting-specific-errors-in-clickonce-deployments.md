@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042380"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung sowie Schritte, um jedes Problem zu beheben.
@@ -81,9 +81,9 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
 
  Sie sollten die folgenden Schritte ausführen:
 
--   Stellen Sie sicher, dass die Identität des Bereitstellungsmanifests, des Anwendungsmanifests und der Hauptanwendungsdatei exe-Datei alle eindeutig sind.
+- Stellen Sie sicher, dass die Identität des Bereitstellungsmanifests, des Anwendungsmanifests und der Hauptanwendungsdatei exe-Datei alle eindeutig sind.
 
--   Stellen Sie sicher, dass die Dateipfade nicht mehr als 100 Zeichen sind. Wenn Ihre Anwendung Dateipfade, die zu lang sind enthält, können Sie die Einschränkungen für die maximale Pfadlänge überschreiten, die Sie speichern können. Verkürzen Sie die Pfade, und installieren.
+- Stellen Sie sicher, dass die Dateipfade nicht mehr als 100 Zeichen sind. Wenn Ihre Anwendung Dateipfade, die zu lang sind enthält, können Sie die Einschränkungen für die maximale Pfadlänge überschreiten, die Sie speichern können. Verkürzen Sie die Pfade, und installieren.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath-Einstellungen in der Konfigurationsdatei der Anwendung werden nicht berücksichtigt.
  Um PrivatePath (Überprüfungspfade Fusion) zu verwenden, muss die Anwendung volle Vertrauenswürdigkeit anfordern. Versuchen Sie das Manifest der Anwendung volle Vertrauenswürdigkeit anfordern, und wiederholen dann erneut zu ändern.
@@ -112,9 +112,9 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Sie haben versucht, sich mit einem Zertifikat in Ihrem Zertifikatspeicher und ein Meldungsfeld der empfangenen leeren
  In der **Signierung** müssen Sie im Dialogfeld:
 
--   Wählen Sie **mit gespeichertem Zertifikat signieren**, und
+- Wählen Sie **mit gespeichertem Zertifikat signieren**, und
 
--   Wählen Sie ein Zertifikat aus der Liste aus. das erste Zertifikat ist nicht die Standardeinstellung.
+- Wählen Sie ein Zertifikat aus der Liste aus. das erste Zertifikat ist nicht die Standardeinstellung.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Klicken auf die Schaltfläche "Signieren" löst eine Ausnahme
  Dieses Problem ist ein bekanntes Problem. Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Manifeste signiert werden müssen. Wählen Sie einfach eine der Signierungsoptionen, und klicken Sie dann auf **OK**.

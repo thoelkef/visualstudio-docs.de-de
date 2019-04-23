@@ -14,27 +14,27 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78d634ed72878f15f240dd2c32577e6124ccd8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039226"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Gewusst wie: Speichern und Öffnen von Dateien mit Codierung
+# <a name="how-to-save-and-open-files-with-encoding"></a>Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirektionale Sprachen unterstützt werden. Sie können außerdem auch beim Öffnen einer Datei eine Codierung angeben, sodass Visual Studio die Datei korrekt anzeigt.  
   
 ### <a name="to-save-a-file-with-encoding"></a>So speichern Sie eine codierte Datei  
   
-1.  Klicken Sie im Menü **Datei** auf **Datei speichern unter**, und klicken Sie dann neben der Schaltfläche **Speichern** auf die Dropdownschaltfläche.  
+1. Klicken Sie im Menü **Datei** auf **Datei speichern unter**, und klicken Sie dann neben der Schaltfläche **Speichern** auf die Dropdownschaltfläche.  
   
      Das Dialogfeld **Erweiterte Speicheroptionen** wird angezeigt.  
   
-2.  Wählen Sie unter **Codierung** die gewünschte Codierung für diese Datei aus.  
+2. Wählen Sie unter **Codierung** die gewünschte Codierung für diese Datei aus.  
   
-3.  Optional können Sie unter **Zeilenenden** das Format für die Zeichen am Zeilenende auswählen.  
+3. Optional können Sie unter **Zeilenenden** das Format für die Zeichen am Zeilenende auswählen.  
   
      Diese Option ist sehr praktisch, wenn Sie die Datei an Benutzer eines anderen Betriebssystems weitergeben möchten.  
   
@@ -42,21 +42,21 @@ Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirek
   
 ### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>So öffnen Sie eine codierte Datei, die Teil eines Projekts ist  
   
-1.  Klicken Sie im **Projektmappen**-Explorer mit der rechten Maustaste auf die Datei, und wählen Sie **Öffnen mit** aus.  
+1. Klicken Sie im **Projektmappen**-Explorer mit der rechten Maustaste auf die Datei, und wählen Sie **Öffnen mit** aus.  
   
-2.  Wählen Sie im Dialogfeld **Öffnen mit** den Editor aus, mit dem die Datei geöffnet werden soll.  
+2. Wählen Sie im Dialogfeld **Öffnen mit** den Editor aus, mit dem die Datei geöffnet werden soll.  
   
      Viele der Editoren von Visual Studio, z. B. der Formular-Editor, erkennen die Codierung automatisch und öffnen die Datei dann entsprechend. Wenn Sie einen Editor verwenden, bei dem Sie eine Codierung auswählen können, wird das Dialogfeld **Codierung** angezeigt.  
   
-3.  Wählen Sie in diesem Fall im Dialogfeld **Codierung** die vom Editor zu verwendende Codierung aus.  
+3. Wählen Sie in diesem Fall im Dialogfeld **Codierung** die vom Editor zu verwendende Codierung aus.  
   
 ### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>So öffnen Sie eine codierte Datei, die nicht Teil eines Projekts ist  
   
-1.  Zeigen Sie im Menü **Datei** auf **Öffnen**, wählen Sie **Datei** oder **Datei im Web** aus, und wählen Sie dann die zu öffnende Datei aus.  
+1. Zeigen Sie im Menü **Datei** auf **Öffnen**, wählen Sie **Datei** oder **Datei im Web** aus, und wählen Sie dann die zu öffnende Datei aus.  
   
-2.  Klicken Sie neben der Schaltfläche **Öffnen** auf die Dropdownschaltfläche, und klicken Sie auf **Öffnen mit**.  
+2. Klicken Sie neben der Schaltfläche **Öffnen** auf die Dropdownschaltfläche, und klicken Sie auf **Öffnen mit**.  
   
-3.  Führen Sie die Schritte 2 und 3 der vorherigen Prozedur aus.  
+3. Führen Sie die Schritte 2 und 3 der vorherigen Prozedur aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Codierung und die Globalisierung von Windows Forms](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   

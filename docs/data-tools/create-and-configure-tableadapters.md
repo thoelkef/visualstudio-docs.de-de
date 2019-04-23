@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042810"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 
@@ -80,16 +80,16 @@ Der folgende Beispiel zeigt, wie Sie eine weitere Abfrage, die mit dem Namen auf
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Starten Sie den Konfigurations-Assistenten für TableAdapter-Abfrage mit einer neuen Abfrage
 
-1.  Öffnen Sie das Dataset im **DataSet-Designer**.
+1. Öffnen Sie das Dataset im **DataSet-Designer**.
 
-2.  Wenn Sie eine neue Abfrage erstellen, ziehen Sie eine **Abfrage** -Objekt aus der **DataSet** auf der Registerkarte die **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie **AbfrageHinzufügen**im Kontextmenü des TableAdapter. Sie können auch ziehen eine **Abfrage** Objekt auf einen leeren Bereich, der die **Dataset-Designer**, erstellt einen TableAdapter ohne einen zugehörigen <xref:System.Data.DataTable>. Diese Abfragen können nur zur Update-, INSERT- oder einzelnen (skalaren) Wert zurück, die oder Befehle für die Datenbank zu löschen.
+2. Wenn Sie eine neue Abfrage erstellen, ziehen Sie eine **Abfrage** -Objekt aus der **DataSet** auf der Registerkarte die **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie **AbfrageHinzufügen**im Kontextmenü des TableAdapter. Sie können auch ziehen eine **Abfrage** Objekt auf einen leeren Bereich, der die **Dataset-Designer**, erstellt einen TableAdapter ohne einen zugehörigen <xref:System.Data.DataTable>. Diese Abfragen können nur zur Update-, INSERT- oder einzelnen (skalaren) Wert zurück, die oder Befehle für die Datenbank zu löschen.
 
-3.  Auf der **wählen Sie Ihre Datenverbindung** Bildschirm Wählen oder erstellen Sie die Verbindung, die die Abfrage verwendet.
+3. Auf der **wählen Sie Ihre Datenverbindung** Bildschirm Wählen oder erstellen Sie die Verbindung, die die Abfrage verwendet.
 
     > [!NOTE]
     > Dieser Bildschirm wird nur angezeigt, wenn der Designer nicht die richtige zu verwendende Verbindung bestimmen kann, oder wenn keine Verbindungen verfügbar sind.
 
-4.  Auf der **wählen Sie einen Befehlstyp aus** aus der folgenden Methoden zum Abrufen von Daten aus der Datenbank wählen:
+4. Auf der **wählen Sie einen Befehlstyp aus** aus der folgenden Methoden zum Abrufen von Daten aus der Datenbank wählen:
 
     - **Verwenden von SQL-Anweisungen** ermöglicht es Ihnen, geben Sie eine SQL-Anweisung, um die Daten aus der Datenbank auszuwählen.
 

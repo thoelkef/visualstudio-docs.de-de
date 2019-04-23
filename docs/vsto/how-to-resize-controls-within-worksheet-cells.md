@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041901"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen
   Wenn Sie die Spalten oder Zeilen in einem Arbeitsblatt Größe, die Größe ändern alle Hoststeuerelemente in den Zellen automatisch an die Höhe oder Breite der Zelle, die Größe geändert wurde. Windows Forms-Steuerelemente sind standardmäßig nicht automatisch angepasst.
@@ -35,13 +35,13 @@ ms.locfileid: "56625464"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Um mit Steuerelementen zur Entwurfszeit mit Zellen ändern der Größe
 
-1.  Von der **Toolbox**, ziehen Sie ein Windows Forms-Steuerelement in einem Arbeitsblatt.
+1. Von der **Toolbox**, ziehen Sie ein Windows Forms-Steuerelement in einem Arbeitsblatt.
 
-2.  Klicken Sie auf das Steuerelement, und klicken Sie dann auf **Formatsteuerung**.
+2. Klicken Sie auf das Steuerelement, und klicken Sie dann auf **Formatsteuerung**.
 
-3.  In der **Formatsteuerung** Dialogfeld klicken Sie auf die **Eigenschaften** Registerkarte.
+3. In der **Formatsteuerung** Dialogfeld klicken Sie auf die **Eigenschaften** Registerkarte.
 
-4.  Klicken Sie unter **Objektposition**, wählen die **Größe und mit Zellen** aus, und klicken Sie dann auf **OK**.
+4. Klicken Sie unter **Objektposition**, wählen die **Größe und mit Zellen** aus, und klicken Sie dann auf **OK**.
 
      Wenn Sie die Größe der Zelle, die das Steuerelement enthält, wird die Größe des Steuerelements die Zelle eingepasst werden.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625464"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Um mit Steuerelementen zur Laufzeit mit Zellen ändern der Größe
 
-1.  Fügen Sie ein Steuerelement zum Bereich A1.
+1. Fügen Sie ein Steuerelement zum Bereich A1.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625464"
 ## <a name="reset-control-placement"></a>Zurücksetzen von Steuerelementen
  Sie können die Platzierung und Ändern der Größe des Steuerelements durch Festlegen von Zurücksetzen der `Placement` -Eigenschaft auf einen der folgenden <xref:Microsoft.Office.Interop.Excel.XlPlacement> Werte:
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Um das Verhalten eines Steuerelements zu ändern, damit es nicht mit der Zelle zu verschieben oder Ändern der Größe
 
-1.  Rufen Sie die Placement-Eigenschaft des Steuerelements, und legen Sie den Wert <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Rufen Sie die Placement-Eigenschaft des Steuerelements, und legen Sie den Wert <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

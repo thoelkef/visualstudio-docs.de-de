@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a78674a0738c0b7a0f69e04decd70fbbf1d1e367
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039310"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Vorgehensweise: Überprüfen Sie Daten aus, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird
   Benutzer können einem <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, das an Daten gebunden ist, neue Zeilen hinzufügen. Sie können die Daten des Benutzers überprüfen, bevor Sie Änderungen in einem Commit an die Datenquelle übertragen.
@@ -34,17 +34,17 @@ ms.locfileid: "56615857"
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>So überprüfen Sie Daten, wenn dem datengebundenen ListObject-Steuerelement eine neue Zeile hinzugefügt wird
 
-1.  Erstellen Sie Variablen für die ID und <xref:System.Data.DataTable> auf Klassenebene.
+1. Erstellen Sie Variablen für die ID und <xref:System.Data.DataTable> auf Klassenebene.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2.  Erstellen Sie ein neues <xref:System.Data.DataTable> und fügen Sie Beispielspalten und Daten in die `Startup` -Ereignishandler des der `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder `ThisAddIn` Klasse (in einem VSTO-Add-in-Projekt).
+2. Erstellen Sie ein neues <xref:System.Data.DataTable> und fügen Sie Beispielspalten und Daten in die `Startup` -Ereignishandler des der `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder `ThisAddIn` Klasse (in einem VSTO-Add-in-Projekt).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
 
-3.  Fügen Sie dem `list1_BeforeAddDataBoundRow` -Ereignishandler Code hinzu, um zu überprüfen, ob das eingegebene Alter innerhalb des zulässigen Bereichs liegt.
+3. Fügen Sie dem `list1_BeforeAddDataBoundRow` -Ereignishandler Code hinzu, um zu überprüfen, ob das eingegebene Alter innerhalb des zulässigen Bereichs liegt.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]

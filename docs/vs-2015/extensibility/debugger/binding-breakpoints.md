@@ -10,12 +10,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039706"
 ---
 # <a name="binding-breakpoints"></a>Binden von Haltepunkten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Wenn der Benutzer einen Haltepunkt festlegt, vielleicht durch Drücken von F9, d
 ## <a name="setting-a-breakpoint"></a>Festlegen eines Haltepunkts  
  Festlegen eines Haltepunkts ist ein zweistufiger Prozess, da der Code oder Daten, die vom Haltepunkt betroffenen noch möglicherweise nicht verfügbar. Zunächst muss der Haltepunkt beschrieben, und klicken Sie dann, wie Code oder Daten verfügbar ist, es muss gebunden sein Code oder Daten, wie folgt:  
   
-1.  Der Haltepunkt wird angefordert, aus dem relevanten Debug-Engines (DEs), und klicken Sie dann wird der Haltepunkt Code oder an Daten gebunden, sobald diese verfügbar werden.  
+1. Der Haltepunkt wird angefordert, aus dem relevanten Debug-Engines (DEs), und klicken Sie dann wird der Haltepunkt Code oder an Daten gebunden, sobald diese verfügbar werden.  
   
-2.  Die Haltepunkt-Anforderung wird an die Debug-Sitzung gesendet, diese an alle relevanten DEs sendet. Alle, die auswählt, behandeln den Haltepunkt DE erstellt eine entsprechende ausstehender Haltepunkt.  
+2. Die Haltepunkt-Anforderung wird an die Debug-Sitzung gesendet, diese an alle relevanten DEs sendet. Alle, die auswählt, behandeln den Haltepunkt DE erstellt eine entsprechende ausstehender Haltepunkt.  
   
-3.  Die Debugsitzung ausstehenden Haltepunkte sammelt und sendet sie an das debugpaket (der Komponente Debuggen von Visual Studio).  
+3. Die Debugsitzung ausstehenden Haltepunkte sammelt und sendet sie an das debugpaket (der Komponente Debuggen von Visual Studio).  
   
-4.  Das debugpaket fordert die Debugsitzung, um den ausstehenden Haltepunkt an Code oder Daten zu binden. Die Debugsitzung sendet diese Anforderung an alle relevanten DEs.  
+4. Das debugpaket fordert die Debugsitzung, um den ausstehenden Haltepunkt an Code oder Daten zu binden. Die Debugsitzung sendet diese Anforderung an alle relevanten DEs.  
   
-5.  Wenn die DE können den Haltepunkt gebunden ist, sendet sie an, dass ein Haltepunkt-Ereignis an die Debug-Sitzung gebunden. Wenn dies nicht der Fall ist, sendet er stattdessen ein Haltepunkt-Error-Ereignis.  
+5. Wenn die DE können den Haltepunkt gebunden ist, sendet sie an, dass ein Haltepunkt-Ereignis an die Debug-Sitzung gebunden. Wenn dies nicht der Fall ist, sendet er stattdessen ein Haltepunkt-Error-Ereignis.  
   
 ## <a name="pending-breakpoints"></a>Ausstehenden Haltepunkte  
  Ein ausstehender Haltepunkt kann an mehreren Standorten von Code binden. Beispielsweise kann eine Zeile des Quellcodes für eine C++-Vorlage an jede Codesequenz, die von der Vorlage generiert binden. Eine gebundene Haltepunktereignis können die Debugsitzung aufzählen die Codekontexte an einen Haltepunkt gebunden ist, zu dem Zeitpunkt, der das Ereignis gesendet wurde. Weitere Codekontexte können später gebunden werden, damit die DE senden kann, dass mehrere Haltepunkt Ereignisse für jede bindungsanforderung gebunden. Eine bereitgestellten Kompatibilitätsrichtlinie sollte jedoch nur eine Haltepunkt-Error-Ereignis pro bindungsanforderung senden.  

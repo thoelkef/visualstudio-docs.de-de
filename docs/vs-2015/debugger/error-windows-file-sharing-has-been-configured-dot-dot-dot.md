@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040856"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Fehler: Der gemeinsame Dateizugriff von Windows wurde so konfiguriert...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ Der gemeinsame Dateizugriff von Windows wurde so konfiguriert, dass Sie mit eine
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Melden Sie sich auf dem lokalen Computer (der Computer, von dem Sie debuggen) mit dem anderen Kontonamen an.  
+1. Melden Sie sich auf dem lokalen Computer (der Computer, von dem Sie debuggen) mit dem anderen Kontonamen an.  
   
      – oder –  
   
      sein. Trennen Sie die Verbindung mit dem Remotecomputer, und konfigurieren Sie anschließend die Dateifreigabe, um anhand Ihres Kontonamens eine Verbindung mit dem anderen Computer herzustellen:  
   
-    1.  Zeigen Sie imMenü **Start** auf **Zubehör**, und klicken Sie dann auf **Eingabeaufforderung**.  
+    1. Zeigen Sie imMenü **Start** auf **Zubehör**, und klicken Sie dann auf **Eingabeaufforderung**.  
   
-    2.  Geben Sie an der Windows-Eingabeaufforderung Folgendes ein:  
+    2. Geben Sie an der Windows-Eingabeaufforderung Folgendes ein:  
   
          `net use /delete computer_name`  
   
-    3.  Ändern Sie die Dateifreigabeeinstellungen mit einer der in der Windows-Hilfe dokumentierten Methoden.
+    3. Ändern Sie die Dateifreigabeeinstellungen mit einer der in der Windows-Hilfe dokumentierten Methoden.

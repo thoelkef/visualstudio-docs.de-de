@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039252"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod-Aktivitätsdesigner
 
@@ -43,17 +43,17 @@ Die folgende Tabelle zeigt die <xref:System.Activities.Statements.InvokeMethod> 
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Das Objekt, das die aufzurufende Methode enthält. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden.<br /><br /> Es muss entweder das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Objekt oder der <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>-Typ festgelegt werden.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Der <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Typ. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden. Diese Eigenschaft muss nur festgelegt werden, wenn die aufgerufene Methode statisch ist.|
 
-Zum Übergeben von Parametern als C# **out** Parameter (z. B. `Method1(out myParam))`, verwenden Sie **OutArgument** anstelle von **InOutArgument**
+Zum Übergeben von Parametern als c# **out** Parameter (z. B. `Method1(out myParam))`, verwenden Sie **OutArgument** anstelle von **InOutArgument**
 
 Methoden mit Argumenten namens **TargetObject** oder **Ergebnis** kann nicht aufgerufen werden, mithilfe der <xref:System.Activities.Statements.InvokeMethod> Aktivität. Der Grund dafür ist, dass die <xref:System.Activities.Statements.InvokeMethod>-Aktivität <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> und <xref:System.Activities.Statements.InvokeMethod.Result%2A> in <xref:System.Activities.Activity.CacheMetadata%2A> registriert.
 
 Der Algorithmus zum Registrieren der Parameter in <xref:System.Activities.Activity.CacheMetadata%2A> wird in der folgenden Liste dargestellt:
 
-1.  Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Argument.
+1. Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Argument.
 
-2.  Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.Result%2A>-Argument.
+2. Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.Result%2A>-Argument.
 
-3.  Durchlaufen Sie die <xref:System.Activities.Statements.InvokeMethod.Parameters%2A>-Auflistung, und registrieren Sie jedes Argument.
+3. Durchlaufen Sie die <xref:System.Activities.Statements.InvokeMethod.Parameters%2A>-Auflistung, und registrieren Sie jedes Argument.
 
 Die resultierende Ausnahme ist vom Typ <xref:System.Activities.InvalidWorkflowException> mit folgender Meldung: 'InvokeMethod': Mit dem Namen 'TargetObject' ist eine Variable, RuntimeArgument oder ein DelegateArgument ist bereits vorhanden. Namen müssen innerhalb einer Umgebung eindeutig sein.
 

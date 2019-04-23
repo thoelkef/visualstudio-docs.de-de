@@ -14,12 +14,12 @@ ms.assetid: 2fb72012-0f83-40fa-b747-167940d90bdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02ed1bcf86971b9b09ad58502c9c8ecdf4cf1378
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7338ac776fababe5d1801708a0de5a305af78d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038823"
 ---
 # <a name="expected--javascript"></a>")" erwartet (JavaScript)
 Sie haben versucht, einen Ausdruck in Klammern einschließen, aber es hat keine die schließenden Klammer. Einige Ausdruck muss in einer Gruppe von öffnende und schließende Klammern eingeschlossen werden. Beachten Sie die Verwendung von Klammern, die im folgenden Beispiel aus.  
@@ -32,4 +32,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie die richtigen Klammern, der Auswertungsausdruck hinzu.
+- Fügen Sie die richtigen Klammern, der Auswertungsausdruck hinzu.

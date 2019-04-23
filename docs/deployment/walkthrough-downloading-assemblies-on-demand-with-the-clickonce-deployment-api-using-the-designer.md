@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042509"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung
 Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthalten sind, beim ersten Ausführen der Anwendung heruntergeladen. Allerdings gibt es möglicherweise Teile der Anwendung, die von einer begrenzten Anzahl von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application> -Namespace verwenden, wenn diese von der Common Language Runtime angefordert werden.
@@ -71,15 +71,15 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>So markieren Sie Assemblys in der ClickOnce-Anwendung mithilfe von Visual Studio als optional
 
-1.  Klicken Sie im Windows Forms-Projekt in den **Projektmappen-Explorer** , und klicken Sie auf **Eigenschaften**. Wählen Sie die Registerkarte **Veröffentlichen** aus.
+1. Klicken Sie im Windows Forms-Projekt in den **Projektmappen-Explorer** , und klicken Sie auf **Eigenschaften**. Wählen Sie die Registerkarte **Veröffentlichen** aus.
 
-2.  Klicken Sie auf die Schaltfläche **Anwendungsdateien** .
+2. Klicken Sie auf die Schaltfläche **Anwendungsdateien** .
 
-3.  Suchen Sie das Listing für *ClickOnceLibrary.dll*. Legen Sie das Dropdownfeld **Veröffentlichungsstatus** auf **Einschließen**fest.
+3. Suchen Sie das Listing für *ClickOnceLibrary.dll*. Legen Sie das Dropdownfeld **Veröffentlichungsstatus** auf **Einschließen**fest.
 
-4.  Erweitern Sie das Dropdownfeld **Gruppe** , und wählen Sie **Neu**aus. Geben Sie den Namen `ClickOnceLibrary` als den neuen Gruppennamen ein.
+4. Erweitern Sie das Dropdownfeld **Gruppe** , und wählen Sie **Neu**aus. Geben Sie den Namen `ClickOnceLibrary` als den neuen Gruppennamen ein.
 
-5.  Weiterhin Veröffentlichen der Anwendung, wie in beschrieben [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Weiterhin Veröffentlichen der Anwendung, wie in beschrieben [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>So markieren Sie Assemblys in der ClickOnce-Anwendung mithilfe von Manifest Generation and Editing Tool— Graphical Client (MageUI.exe) als optional
 

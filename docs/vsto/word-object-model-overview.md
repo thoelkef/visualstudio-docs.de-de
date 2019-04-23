@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ba4b805f2e8737f7b142e02158b80f51c529d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041948"
 ---
 # <a name="word-object-model-overview"></a>Übersicht über das Word-Objektmodell
   Wenn Sie Word-Lösungen in Visual Studio entwickeln, interagieren Sie mit dem Word-Objektmodell. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Word bereitgestellt und im Namespace <xref:Microsoft.Office.Interop.Word> definiert werden.
@@ -33,13 +33,13 @@ ms.locfileid: "56635968"
 
  Informationen zur Verwendung des Word-Objektmodells für bestimmte Aufgaben finden Sie unter den folgenden Themen:
 
--   [Arbeiten mit Dokumenten](../vsto/working-with-documents.md)
+- [Arbeiten mit Dokumenten](../vsto/working-with-documents.md)
 
--   [Arbeiten Sie mit Text in Dokumenten](../vsto/working-with-text-in-documents.md)
+- [Arbeiten Sie mit Text in Dokumenten](../vsto/working-with-text-in-documents.md)
 
--   [Arbeiten mit Tabellen](../vsto/working-with-tables.md)
+- [Arbeiten mit Tabellen](../vsto/working-with-tables.md)
 
-##  <a name="understanding"></a> Verstehen von Word-Objektmodell
+## <a name="understanding"></a> Verstehen von Word-Objektmodell
  Word stellt Hunderte von Objekten bereit, mit denen Sie interagieren können. Diese Objekte werden in einer Hierarchie angeordnet, die eng an die Benutzeroberfläche angelehnt ist. An der Spitze dieser Hierarchie befindet sich das <xref:Microsoft.Office.Interop.Word.Application> -Objekt. Dieses Objekt stellt die aktuelle Instanz von Word dar. Das <xref:Microsoft.Office.Interop.Word.Application> -Objekt enthält die <xref:Microsoft.Office.Interop.Word.Document>-, <xref:Microsoft.Office.Interop.Word.Selection>-, <xref:Microsoft.Office.Interop.Word.Bookmark>- und <xref:Microsoft.Office.Interop.Word.Range> -Objekte. Jedes dieser Objekte verfügt über zahlreiche Methoden und Eigenschaften, auf die Sie zum Bearbeiten des Objekts und Interagieren mit dem Objekt zugreifen können.
 
  Die folgende Abbildung zeigt eine Ansicht dieser Objekte in der Hierarchie des Word-Objektmodells.
@@ -115,7 +115,7 @@ ms.locfileid: "56635968"
 
   Visual Studio erweitert das <xref:Microsoft.Office.Interop.Word.Bookmark> -Objekt durch Bereitstellen des <xref:Microsoft.Office.Tools.Word.Bookmark> -Hoststeuerelements. Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Hoststeuerelement verhält sich wie ein systemeigenes <xref:Microsoft.Office.Interop.Word.Bookmark>-Objekt, stellt jedoch zusätzliche Ereignisse und Datenbindungsfunktionen bereit. Sie können Daten an ein Bookmark-Steuerelement für ein Dokument auf die gleiche Weise binden wie Daten an ein Textfeld-Steuerelement für Windows Forms. Weitere Informationen finden Sie unter [Bookmark-Steuerelement](../vsto/bookmark-control.md).
 
-##  <a name="WordOMDocumentation"></a> Verwenden der Dokumentation zum Word-Objektmodell
+## <a name="WordOMDocumentation"></a> Verwenden der Dokumentation zum Word-Objektmodell
  Ausführliche Informationen zum Word-Objektmodell finden Sie in der Referenz für die primäre Interopassembly (PIA) und der VBA-Objektmodellreferenz (Visual Basic for Applications).
 
 ### <a name="primary-interop-assembly-reference"></a>Primäre interop-Assembly-Verweis

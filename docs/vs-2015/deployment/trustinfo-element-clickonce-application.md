@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039128"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;TrustInfo&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ## <a name="permissionset"></a>PermissionSet  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und enthält das `IPermission` -Element. Dieses Element weist folgende Attribute auf.  
   
--   `ID`  
+- `ID`  
   
      Erforderlich. Bezeichnet den Berechtigungssatz. Dieses Attribut kann beliebige Werte annehmen. Auf die ID wird in den Attributen `defaultAssemblyRequest` und `assemblyRequest` verwiesen.  
   
--   `version`  
+- `version`  
   
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.  
   
 ## <a name="ipermission"></a>IPermission  
  Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das `IPermission` -Element identifiziert eine Berechtigungsklasse in [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]vollständig. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.  
   
--   `class`  
+- `class`  
   
      Erforderlich. Bezeichnet die Berechtigungsklasse mit einem starken Namen. Beispielsweise identifiziert der folgende Code den Typ `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Erforderlich. Bestimmt, ob für die Anwendung eine unbeschränkte Erteilung dieser Berechtigung erforderlich ist. Bei `true`ist die Erteilung der Berechtigung ohne Bedingungen. Bei `false`oder nicht definiertem Attribut erfolgt die Erteilung gemäß den berechtigungsspezifischen Attributen, die im `IPermission` -Tag definiert sind. Betrachten wir die folgenden Berechtigungen:  
   
@@ -122,18 +122,18 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Dies ist optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der die Standardberechtigung bildet. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Dies ist optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.  
   
--   `Name`  
+- `Name`  
   
      Erforderlich. Bezeichnet den Assemblynamen.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der für diese Assembly erforderlich ist. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.  
   
@@ -143,7 +143,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Dies ist optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.  
   
--   `Level`  
+- `Level`  
   
      Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Dabei sind folgende Werte möglich:  
   
@@ -155,7 +155,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen können nur mit dem Wert `asInvoker`installiert werden. Bei der Installation mit anderen Werten tritt ein Fehler auf.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.  
   

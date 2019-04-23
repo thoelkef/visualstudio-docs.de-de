@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45da81c91cf654fe41fb903314dce662beac7a23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042017"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Debuggen von CSS-Stilen mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  Die Registerkarten **Formatvorlagen**, **Berechnet**und **Änderungen** enthalten unterschiedliche Ansichten von Formatinformationen.  
   
--   Verwenden Sie die Registerkarte **Formatvorlagen** , um die Regeln anzuzeigen, die nach CSS-Auswahlnamen angeordnet sind, wie z. B. `html, body`. Auf dieser Registerkarte können Sie auch bestimme Formatvorlagen aktivieren oder deaktivieren, Werte manuell bearbeiten und die unmittelbaren Ergebnisse dieser Änderungen anzeigen.  
+- Verwenden Sie die Registerkarte **Formatvorlagen** , um die Regeln anzuzeigen, die nach CSS-Auswahlnamen angeordnet sind, wie z. B. `html, body`. Auf dieser Registerkarte können Sie auch bestimme Formatvorlagen aktivieren oder deaktivieren, Werte manuell bearbeiten und die unmittelbaren Ergebnisse dieser Änderungen anzeigen.  
   
--   Verwenden Sie die Registerkarte **Berechnet** , um die berechneten Werte einer Formatvorlage anzuzeigen. Wenn Sie beispielsweise eine Größe auf "1em" festgelegt haben, ist der von Internet Explorer berechnete Wert möglicherweise "16px". Formatvorlagen auf dieser Registerkarte sind nach Formatvorlagenname wie z. B. `height`angeordnet. Auf dieser Registerkarte können Sie auch bestimme Formatvorlagen aktivieren oder deaktivieren, Werte manuell bearbeiten und die unmittelbaren Ergebnisse dieser Änderungen anzeigen.  
+- Verwenden Sie die Registerkarte **Berechnet** , um die berechneten Werte einer Formatvorlage anzuzeigen. Wenn Sie beispielsweise eine Größe auf "1em" festgelegt haben, ist der von Internet Explorer berechnete Wert möglicherweise "16px". Formatvorlagen auf dieser Registerkarte sind nach Formatvorlagenname wie z. B. `height`angeordnet. Auf dieser Registerkarte können Sie auch bestimme Formatvorlagen aktivieren oder deaktivieren, Werte manuell bearbeiten und die unmittelbaren Ergebnisse dieser Änderungen anzeigen.  
   
     > [!NOTE]
     >  In Visual Studio 2013 Update 2 wurden die in der Registerkarte **Ablaufverfolgung** bereitgestellten Informationen mit der Registerkarte **Berechnet** zusammengeführt und **Ablaufverfolgung** entfernt.  
   
--   Verwenden Sie die Registerkarte **Änderungen** (nur Windows Store- und Windows Phone Store-Apps), um CSS-Formatvorlagen zu identifizieren und nachzuverfolgen, die Sie während einer Debugsitzung geändert haben.  
+- Verwenden Sie die Registerkarte **Änderungen** (nur Windows Store- und Windows Phone Store-Apps), um CSS-Formatvorlagen zu identifizieren und nachzuverfolgen, die Sie während einer Debugsitzung geändert haben.  
   
 > [!TIP]
 >  Änderungen, die Sie an Formatvorlagen auf den Registerkarten **Formatvorlagen** und **Berechnet** vornehmen, sind nicht dauerhaft. Sie gehen nach dem Beenden des Debuggens verloren. Um Quellcode zu ändern und Seiten ohne Beenden und Neustarten des Debuggers neu zu laden, aktualisieren Sie die app mithilfe der ![Schaltfläche "Aktualisieren von Windows-app"](../debugger/media/js-refresh.png "JS_Refresh") Schaltfläche (**Aktualisieren von Windows-app** ) auf die **Debuggen** Symbolleiste (nur Windows Store und Windows Phone Store-apps). Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
@@ -58,11 +58,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 #### <a name="to-view-and-change-css-rules"></a>So zeigen Sie CSS-Regeln an und ändern diese  
   
-1.  Erstellen Sie in Visual Studio eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App mit JavaScript und HTML in der Projektvorlage "Split App".  
+1. Erstellen Sie in Visual Studio eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App mit JavaScript und HTML in der Projektvorlage "Split App".  
   
-2.  Öffnen Sie im **Projektmappen-Explorer**items.css. (Sie finden items.css im Seitenordner.)  
+2. Öffnen Sie im **Projektmappen-Explorer**items.css. (Sie finden items.css im Seitenordner.)  
   
-3.  Ersetzen Sie den folgenden CSS-Code:  
+3. Ersetzen Sie den folgenden CSS-Code:  
   
     ```css  
     .itemspage .itemslist .item {  
@@ -89,30 +89,30 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Hierdurch wird eine Formatvorlage hinzugefügt, die die Farbe #ff6a00 (orange) für jedes Element in der Liste angibt. Die CSS-Auswahl, `.itemspage .itemslist .item`, gibt einen Satz von Klassennamen für DIV-Elemente in items.html an, die als geschachtelte Elemente im aktiven DOM angezeigt werden. Das DIV-Element `item` gibt die Listenelemente an.  
   
-4.  Wählen Sie in der Dropdownliste auf der Symbolleiste **Debuggen** die Option **Simulator** aus (**Lokaler Computer** ist der Standardwert).  
+4. Wählen Sie in der Dropdownliste auf der Symbolleiste **Debuggen** die Option **Simulator** aus (**Lokaler Computer** ist der Standardwert).  
   
      ![Debugzielliste auswählen](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-5.  Drücken Sie F5, um die App im Debugmodus auszuführen.  
+5. Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
      Wenn die Anwendung vollständig geladen ist, schauen Sie sich die Überschriften der Listenelemente wie z. B. **Gruppentitel: 1**. Da die Farbe unverändert ist, wurde Orange folglich nicht auf die Titel angewendet. Die Ursache des Fehlers wird ermittelt und im DOM Explorer mithilfe der CSS-Registerkarten behoben.  
   
     > [!TIP]
     >  Nachdem die App im Simulator angezeigt wird, positionieren Sie den Simulator rechts neben dem Visual Studio-Fenster, sodass Sie die Ergebnisse der Auswahl und Änderungen, die Sie an den CSS-Formatvorlagen vornehmen, sofort sehen können.  
   
-6.  Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt. Das Beispiel zeigt die Schaltfläche **Element auswählen** . ![Wählen Sie die Schaltfläche "Element" im DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt. Das Beispiel zeigt die Schaltfläche **Element auswählen** . ![Wählen Sie die Schaltfläche "Element" im DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     >  Sie können HTML-Elemente auch direkt in DOM Explorer auswählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
   
-7.  Im Simulator, zeigen Sie auf den Titel des ersten Elements in der Liste der **Gruppentitel: 1**, im linken Bereich der Homepage angezeigt. Der Titel wird wie hier gezeigt hervorgehoben:  
+7. Im Simulator, zeigen Sie auf den Titel des ersten Elements in der Liste der **Gruppentitel: 1**, im linken Bereich der Homepage angezeigt. Der Titel wird wie hier gezeigt hervorgehoben:  
   
      ![Verwenden die Schaltfläche "Element auswählen"](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     >  Der Windows Phone-Emulator unterstützt das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise.  
   
-8.  Klicken Sie auf den umrandeten Titel. DOM Explorer wählt automatisch das entsprechende HTML-Element aus, das diesem ähnelt.  
+8. Klicken Sie auf den umrandeten Titel. DOM Explorer wählt automatisch das entsprechende HTML-Element aus, das diesem ähnelt.  
   
     ```html  
     <h4 class="item-title">Group Title: 1</h4>  
@@ -124,12 +124,12 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Diese Ansicht bietet nützliche Informationen zu den Regeln, die der `color` -Formatvorlage zugeordnet sind, wie im folgenden Beispiel dargestellt.  
   
-    -   Die CSS-Auswahl, die Sie in items.css geändert haben, `.itemspage .itemslist .item`, wird in der endgültigen Formatvorlagenberechnung nicht verwendet (sie wird in durchgestrichenem Text dargestellt). Einige weitere Vorkommen der Formatvorlage `color` werden ebenfalls nicht verwendet.  
+    - Die CSS-Auswahl, die Sie in items.css geändert haben, `.itemspage .itemslist .item`, wird in der endgültigen Formatvorlagenberechnung nicht verwendet (sie wird in durchgestrichenem Text dargestellt). Einige weitere Vorkommen der Formatvorlage `color` werden ebenfalls nicht verwendet.  
   
         > [!TIP]
         >  Bei längeren Auswahlnamen wird der vollständige Name in einer QuickInfo angezeigt.  
   
-    -   Der endgültige berechnete CSS-Wert, `rgba(255, 255, 255, 0.87)`, wird speziell für die folgende CSS-Auswahl festgelegt: `.itemspage .itemslist .item .item-overlay .item-title`. Diese wird auch in items.css definiert.  
+    - Der endgültige berechnete CSS-Wert, `rgba(255, 255, 255, 0.87)`, wird speziell für die folgende CSS-Auswahl festgelegt: `.itemspage .itemslist .item .item-overlay .item-title`. Diese wird auch in items.css definiert.  
   
         > [!TIP]
         >  Nachdem Sie nun wissen, wo die Titelfarbe festgelegt wird, wissen Sie auch, wo Sie sie ändern können. Sie können Änderungen in DOM Explorer allerdings auch testen, ohne die Anwendung zu aktualisieren, wie in den verbleibenden Schritten gezeigt.  
