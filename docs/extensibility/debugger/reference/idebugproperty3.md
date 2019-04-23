@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069652"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Diese Schnittstelle bietet Unterstützung für:
 
--   Abrufen von einer beliebig lange Zeichenfolge, die der Eigenschaft zugeordnet.
+- Abrufen von einer beliebig lange Zeichenfolge, die der Eigenschaft zugeordnet.
 
--   Verknüpfen eine eindeutige ID, mit der Eigenschaft.
+- Verknüpfen eine eindeutige ID, mit der Eigenschaft.
 
--   Eine Liste der benutzerdefinierten Viewer für die Eigenschaft abgerufen.
+- Eine Liste der benutzerdefinierten Viewer für die Eigenschaft abgerufen.
 
--   Den Wert einer Eigenschaft festlegen, mit der Möglichkeit, alle resultierenden Fehler melden
+- Den Wert einer Eigenschaft festlegen, mit der Möglichkeit, alle resultierenden Fehler melden
 
 ## <a name="syntax"></a>Syntax
 

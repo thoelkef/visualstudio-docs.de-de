@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a949ee781652c3e19b3ebc3476e736374fe4f21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071541"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Vorgehensweise: Programmgesteuertes Drucken von Visio-Dokumenten
   Sie können ein vollständiges Microsoft Office Visio-Dokument oder nur eine bestimmte Seite drucken.
@@ -29,9 +29,9 @@ ms.locfileid: "56634317"
 
 ### <a name="to-print-a-complete-document"></a>So drucken Sie ein vollständiges Dokument
 
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Print`-Methode des `Microsoft.Office.Interop.Visio.Document`-Objekts auf, das Sie drucken möchten.
+- Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Print` -Methode des `Microsoft.Office.Interop.Visio.Document` -Objekts auf, das Sie drucken möchten.
 
-     Im folgenden Codebeispiel wird das aktive Dokument gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn`-Klasse im Projekt aus.
+     Im folgenden Codebeispiel wird das aktive Dokument gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#8)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#8)]
@@ -40,9 +40,9 @@ ms.locfileid: "56634317"
 
 ### <a name="to-print-a-page-of-a-document"></a>So drucken Sie eine Seite eines Dokuments
 
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Pages.Print`-Methode des `Microsoft.Office.Interop.Visio.Pages`-Objekts auf, das Sie drucken möchten.
+- Rufen Sie die `Microsoft.Office.Interop.Visio.Pages.Print` -Methode des `Microsoft.Office.Interop.Visio.Pages` -Objekts auf, das Sie drucken möchten.
 
-     Im folgenden Codebeispiel wird die erste Seite des aktiven Dokuments gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn`-Klasse im Projekt aus.
+     Im folgenden Codebeispiel wird die erste Seite des aktiven Dokuments gedruckt. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#9)]

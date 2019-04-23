@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066766"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globaler Zugriff auf Objekte in Office-Projekten
   Wenn Sie ein Office-Projekt erstellen, generiert Visual Studio im Projekt automatisch eine Klasse mit dem Namen `Globals` . Mit der `Globals` -Klasse können Sie von beliebigem Code im Projekt aus zur Laufzeit auf mehrere verschiedene Projektelemente zugreifen.
@@ -57,13 +57,13 @@ ms.locfileid: "57525196"
 
 - Ein Factoryobjekt, das Ihnen ermöglicht, Menübandsteuerelemente zu erstellen und Hostelemente zur Laufzeit in Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]abzielen. Sie können mit der `Globals.Factory` -Eigenschaft auf dieses Objekt zugreifen. Dieses Objekt ist eine Instanz einer Klasse, die eine der folgenden Schnittstellen implementiert:
 
-  -   <xref:Microsoft.Office.Tools.Factory>
+  - <xref:Microsoft.Office.Tools.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+  - <xref:Microsoft.Office.Tools.Excel.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - <xref:Microsoft.Office.Tools.Outlook.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Word.Factory>
+  - <xref:Microsoft.Office.Tools.Word.Factory>
 
   Beispielsweise können Sie Text mithilfe der `Globals.Sheet1` -Eigenschaft in ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement auf `Sheet1` einfügen, wenn ein Benutzer in einem Projekt auf Dokumentebene für Excel auf eine Schaltfläche im Aktionsbereich klickt.
 

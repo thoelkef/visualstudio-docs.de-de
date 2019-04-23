@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0efd71b38d3fcd8ae8241e31e721bd48e857d3bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069769"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Vorgehensweise: Angeben von ausführlichen Protokolldateien für ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58946514"
   
 ### <a name="to-specify-verbose-log-files"></a>Angeben von ausführlichen Protokolldateien  
   
-1.  Open **Regedit.exe**.  
+1. Open **Regedit.exe**.  
   
-2.  Navigieren Sie zum Knoten `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Navigieren Sie zum Knoten `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  Erstellen Sie einen neuen Zeichenfolgenwert mit dem Namen, ggf. `LogVerbosityLevel`.  
+3. Erstellen Sie einen neuen Zeichenfolgenwert mit dem Namen, ggf. `LogVerbosityLevel`.  
   
-4.  Legen Sie den Wert `LogVerbosityLevel` auf `1` fest.  
+4. Legen Sie den Wert `LogVerbosityLevel` auf `1` fest.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

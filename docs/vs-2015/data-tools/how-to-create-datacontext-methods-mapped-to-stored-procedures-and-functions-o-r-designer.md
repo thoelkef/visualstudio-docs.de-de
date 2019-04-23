@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066610"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Vorgehensweise: Erstellen von DataContext-Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Gespeicherte Prozeduren und Funktionen können hinzugefügt werden die [!INCLUDE
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>So erstellen Sie DataContext-Methoden, die automatisch generierte Typen zurückgeben  
   
-1.  In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie die **gespeicherte Prozeduren** Knoten der Datenbank mit dem Sie arbeiten.  
+1. In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie die **gespeicherte Prozeduren** Knoten der Datenbank mit dem Sie arbeiten.  
   
-2.  Suchen Sie die gewünschte gespeicherte Prozedur, und ziehen Sie diese auf einen leeren Bereich des [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Suchen Sie die gewünschte gespeicherte Prozedur, und ziehen Sie diese auf einen leeren Bereich des [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      Die <xref:System.Data.Linq.DataContext>-Methode wird mit einem automatisch generierten Rückgabetyp erstellt und im Bereich **Methoden** angezeigt.  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>So erstellen Sie DataContext-Methoden, die über den Rückgabetyp einer Entitätsklasse verfügen  
   
-1.  In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie die **gespeicherte Prozeduren** Knoten der Datenbank mit dem Sie arbeiten.  
+1. In **Server-Explorer**/**Datenbank-Explorer**, erweitern Sie die **gespeicherte Prozeduren** Knoten der Datenbank mit dem Sie arbeiten.  
   
-2.  Suchen Sie die gewünschte gespeicherte Prozedur, und ziehen Sie diese im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] auf eine vorhandene Entitätsklasse.  
+2. Suchen Sie die gewünschte gespeicherte Prozedur, und ziehen Sie diese im [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] auf eine vorhandene Entitätsklasse.  
   
      Die <xref:System.Data.Linq.DataContext>-Methode wird mit dem Rückgabetyp der ausgewählten Entitätsklasse erstellt und im Bereich **Methoden** angezeigt.  
   

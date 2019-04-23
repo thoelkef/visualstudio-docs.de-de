@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067351"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 
  Aus der IDE können Sie die folgenden zusätzlichen Aufgaben ausführen:
 
--   [Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md).
+- [Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md).
 
--   [Identifizieren von Projekten, die zum ordnungsgemäßen Erstellen von der Ausgabe eines anderen Projekt abhängig sind](../ide/how-to-create-and-remove-project-dependencies.md).
+- [Identifizieren von Projekten, die zum ordnungsgemäßen Erstellen von der Ausgabe eines anderen Projekt abhängig sind](../ide/how-to-create-and-remove-project-dependencies.md).
 
--   [Ändern der Informationsmenge, die im Buildprotokoll oder im Ausgabefenster für Builds enthalten ist](../ide/how-to-view-save-and-configure-build-log-files.md).
+- [Ändern der Informationsmenge, die im Buildprotokoll oder im Ausgabefenster für Builds enthalten ist](../ide/how-to-view-save-and-configure-build-log-files.md).
 
--   [Ausblenden bestimmter Compilerwarnungen für Visual C#, Visual C++ oder Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
+- [Ausblenden bestimmter Compilerwarnungen für Visual C#, Visual C++ oder Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
 
--   [Angeben benutzerdefinierter Aktionen für das Vor- und Nachkompilieren eines Builds](../ide/specifying-custom-build-events-in-visual-studio.md).
+- [Angeben benutzerdefinierter Aktionen für das Vor- und Nachkompilieren eines Builds](../ide/specifying-custom-build-events-in-visual-studio.md).
 
--   Verbessern der Buildleistung mithilfe von parallelen Builds. Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) oder im Blogbeitrag [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Optimieren des parallelen Erstellens für C++).
+- Verbessern der Buildleistung mithilfe von parallelen Builds. Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) oder im Blogbeitrag [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Optimieren des parallelen Erstellens für C++).
 
 ## <a name="see-also"></a>Siehe auch
- [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [erstellen (Kompilieren) Websiteprojekte](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [So wird es gemacht: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) [erstellen (Kompilieren) Websiteprojekte](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ So wird es gemacht: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)

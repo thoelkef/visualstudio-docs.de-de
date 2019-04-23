@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066415"
 ---
 # <a name="project-subtypes-design"></a>Entwurf von Projektuntertypen
 
@@ -23,11 +23,11 @@ Projektuntertypen können VSPackages, Projekte, die basierend auf der Microsoft 
 
  In den folgenden Themen beschreiben den grundlegenden Aufbau und die Implementierung von Projektuntertypen:
 
--   Untertyp Projektentwurf.
+- Untertyp Projektentwurf.
 
--   Die Aggregation mit mehreren Ebenen.
+- Die Aggregation mit mehreren Ebenen.
 
--   Unterstützende Schnittstellen.
+- Unterstützende Schnittstellen.
 
 ## <a name="project-subtype-design"></a>Untertyp Projektentwurf
 
@@ -73,11 +73,11 @@ Projektuntertypen können das Basisprojektsystem durch Erweitern des Automatisie
 
 Eine Implementierung der Projekt-Untertyp, die eine niedrigere Ebene Projektuntertyp umschließt muss kooperativ programmiert werden, um die ordnungsgemäße Funktion den inneren Projektuntertyp zulassen. Eine Liste der Aufgaben Programmieren enthält:
 
--   Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementierung des projektuntertyps, die den inneren Untertyp umschlossen wird, muss zum Delegieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> der inneren Projektuntertyp-Implementierung für beide <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> Methoden.
+- Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementierung des projektuntertyps, die den inneren Untertyp umschlossen wird, muss zum Delegieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> der inneren Projektuntertyp-Implementierung für beide <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> Methoden.
 
--   Die <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des projektuntertyps Wrapper muss an, die von der inneren Projektuntertyp delegieren. Insbesondere für die Implementierung der <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> muss die Zeichenfolge mit den Namen der von der inneren Projektuntertyp und verkettet Sie dann die Zeichenfolgen, die als Extender hinzufügen möchte.
+- Die <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des projektuntertyps Wrapper muss an, die von der inneren Projektuntertyp delegieren. Insbesondere für die Implementierung der <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> muss die Zeichenfolge mit den Namen der von der inneren Projektuntertyp und verkettet Sie dann die Zeichenfolgen, die als Extender hinzufügen möchte.
 
--   Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> -Implementierung von einem Projektuntertyp Wrapper instanziieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> Objekt der inneren Projektuntertyp und halten Sie ihn als einen privaten Delegaten, da nur das Basisprojekt projektkonfigurationsobjekt direkt weiß, dass der Wrapper Projektuntertyp-Konfigurationsobjekt vorhanden ist. Äußeren Projektuntertyp kann anfänglich Konfigurationsschnittstellen direkt behandeln möchte, und Delegieren dann den Rest der inneren Projektuntertyp-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> -Implementierung von einem Projektuntertyp Wrapper instanziieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> Objekt der inneren Projektuntertyp und halten Sie ihn als einen privaten Delegaten, da nur das Basisprojekt projektkonfigurationsobjekt direkt weiß, dass der Wrapper Projektuntertyp-Konfigurationsobjekt vorhanden ist. Äußeren Projektuntertyp kann anfänglich Konfigurationsschnittstellen direkt behandeln möchte, und Delegieren dann den Rest der inneren Projektuntertyp-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Unterstützende Schnittstellen
 

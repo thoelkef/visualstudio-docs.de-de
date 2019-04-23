@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070783"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Verwenden des Aktivitätsdesigners der Vorgängerversion
 In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie den Designer der Vorgängerversion, wenn Sie auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -35,9 +35,9 @@ In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerv
   
 2. Wählen Sie die **Aktivität** oder **Aktivität (mit getrenntem Code)** Vorlage.  
   
-   1.  Verwenden der **Aktivität** Vorlage zum Erstellen einer Aktivität mit der Aktivitätsdefinition und dem Benutzercode in derselben Codedatei.  
+   1. Verwenden der **Aktivität** Vorlage zum Erstellen einer Aktivität mit der Aktivitätsdefinition und dem Benutzercode in derselben Codedatei.  
   
-   2.  Verwenden der **Aktivität (mit getrenntem Code)** Vorlage zum Erstellen einer Aktivität mit der als Workflowmarkup und dem Benutzercode in einer eigenen Codedatei ausgedrückte Aktivitätsdefinition.  
+   2. Verwenden der **Aktivität (mit getrenntem Code)** Vorlage zum Erstellen einer Aktivität mit der als Workflowmarkup und dem Benutzercode in einer eigenen Codedatei ausgedrückte Aktivitätsdefinition.  
   
 3. Geben Sie einen Aktivitätsnamen oder behalten Sie den Standardnamen, und klicken Sie dann auf **hinzufügen**.  
   

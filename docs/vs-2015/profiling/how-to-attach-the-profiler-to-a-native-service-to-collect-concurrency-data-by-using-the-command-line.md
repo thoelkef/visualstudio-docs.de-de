@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654346"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070562"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an einen nativen Dienst zum Sammeln Parallelitätsdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ In diesem Thema wird beschrieben, wie der Profiler mithilfe der Befehlszeilentoo
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
 
--   Mit den Optionspaaren in der folgenden Tabelle wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+- Mit den Optionspaaren in der folgenden Tabelle wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
     |Option|Beschreibung|  
     |------------|-----------------|  
@@ -79,10 +79,10 @@ In diesem Thema wird beschrieben, wie der Profiler mithilfe der Befehlszeilentoo
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
-1.  Trennen Sie den Profiler von der Zielanwendung, indem Sie den Dienst beenden oder an einer Eingabeaufforderung den folgenden Befehl eingeben:  
+1. Trennen Sie den Profiler von der Zielanwendung, indem Sie den Dienst beenden oder an einer Eingabeaufforderung den folgenden Befehl eingeben:  
 
      Geben Sie **VSPerfCmd /detach** ein.  
 
-2.  Beenden Sie den Profiler, indem Sie den folgenden Befehl an der Eingabeaufforderung eingeben:  
+2. Beenden Sie den Profiler, indem Sie den folgenden Befehl an der Eingabeaufforderung eingeben:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

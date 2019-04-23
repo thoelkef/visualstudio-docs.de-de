@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070739"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zustandsvariablen, die beibehalten werden, wenn ein Benutzer wählt definieren die **Import-/Exporteinstellungen** Befehl die **Tools** Menü. Zum Aktivieren der dieser Persistenz, die Sie verwenden der Einstellungen-APIs in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
  Ein Registrierungseintrag, der als eines benutzerdefinierten Einstellungspunkts und einer GUID bezeichnet wird definiert, eine VSPackage Einstellungskategorie. Eine VSPackage kann mehrere Einstellungskategorien unterstützen, die jeweils durch einen benutzerdefinierten Einstellungspunkt definiert.
 
--   Implementierungen von Einstellungen, die auf Interopassemblys basieren (mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> Schnittstelle) sollten Sie die benutzerdefinierten Einstellungspunkts durch Bearbeiten der Registrierungs oder mithilfe eines Skripts Registrierungsstelle (RGS-Datei) erstellen. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+- Implementierungen von Einstellungen, die auf Interopassemblys basieren (mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> Schnittstelle) sollten Sie die benutzerdefinierten Einstellungspunkts durch Bearbeiten der Registrierungs oder mithilfe eines Skripts Registrierungsstelle (RGS-Datei) erstellen. Weitere Informationen finden Sie unter [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
--   Code, der das Managed Package Framework (MPF) verwendet, sollten benutzerdefinierten Einstellungspunkten erstellen, durch Anfügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> für das VSPackage für jeden benutzerdefinierten Einstellungspunkts.
+- Code, der das Managed Package Framework (MPF) verwendet, sollten benutzerdefinierten Einstellungspunkten erstellen, durch Anfügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> für das VSPackage für jeden benutzerdefinierten Einstellungspunkts.
 
      Wenn ein einzelne VSPackage mehrere benutzerdefinierten Einstellungspunkten unterstützt, jeder benutzerdefinierten Einstellungspunkts durch eine separate Klasse implementiert wird und jedes, indem eine eindeutige Instanz registriert wird der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse. Daher können die Einstellungen für einen implementierende Klasse mehr als eine Einstellungskategorie unterstützen.
 

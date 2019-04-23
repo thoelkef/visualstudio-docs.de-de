@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066597"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Ein neues Feature von ClickOnce eingeführt, die in .NET Framework Version 3.5, 
   
  Drittanbieter-Entwicklern und ISVs können zu diesem Feature teilnehmen erleichtert Ihnen die für ihre Kunden ihre Anwendungen zu aktualisieren. Diese Funktion kann in den folgenden Situationen verwendet werden:  
   
--   Beim Aktualisieren von einer Anwendung, die nicht in der ersten Installation einer Anwendung.  
+- Beim Aktualisieren von einer Anwendung, die nicht in der ersten Installation einer Anwendung.  
   
--   Wenn nur eine Konfiguration der Anwendung auf einem Computer vorhanden ist. Wenn eine Anwendung konfiguriert ist, um auf zwei verschiedenen Datenbanken verweisen, können nicht Sie z. B. diese Funktion verwenden.  
+- Wenn nur eine Konfiguration der Anwendung auf einem Computer vorhanden ist. Wenn eine Anwendung konfiguriert ist, um auf zwei verschiedenen Datenbanken verweisen, können nicht Sie z. B. diese Funktion verwenden.  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Ausschließen von "deploymentProvider" von Bereitstellungsmanifesten  
  In .NET Framework 2.0 und .NET Framework 3.0, jede ClickOnce-Anwendung, die für die offlineverfügbarkeit auf dem System installiert angeben muss eine `deploymentProvider` in das Bereitstellungsmanifest. Die `deploymentProvider` wird bezeichnet als Speicherort für die Aktualisierung; es ist der Speicherort, in dem ClickOnce Anwendungsupdates überprüft. Diese Anforderung, die Notwendigkeit von App-Herausgeber ihre Bereitstellungen anmelden gekoppelt war es schwierig für ein Unternehmen eine ClickOnce-Anwendung von einem Lieferanten oder anderen von Drittanbietern zu aktualisieren. Es erleichtert auch schwieriger zu derselben Anwendung von mehreren Standorten in einem Netzwerk bereitstellen.  

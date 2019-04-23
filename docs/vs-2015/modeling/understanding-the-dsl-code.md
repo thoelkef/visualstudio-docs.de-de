@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068430"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
   
  Wir raten dringend davon ab, den generierten Code direkt zu bearbeiten, da Ihre Änderungen verloren gehen, wenn Sie die Projektmappe neu erstellen. Passen Sie stattdessen Ihre DSL an:  
   
--   Passen Sie die vielen Parameter in der DSL-Definition an.  
+- Passen Sie die vielen Parameter in der DSL-Definition an.  
   
--   Schreiben Sie partielle Klassen in separaten Codedateien, um Methoden zu überschreiben, die in den generierten Klassen definiert sind oder von ihnen geerbt werden. In einigen Fällen müssen Sie festlegen der **generiert doppelte Ableitungen** Möglichkeit, eine Klasse in der DSL-Definition, um eine generierte Methode überschreiben zu können.  
+- Schreiben Sie partielle Klassen in separaten Codedateien, um Methoden zu überschreiben, die in den generierten Klassen definiert sind oder von ihnen geerbt werden. In einigen Fällen müssen Sie festlegen der **generiert doppelte Ableitungen** Möglichkeit, eine Klasse in der DSL-Definition, um eine generierte Methode überschreiben zu können.  
   
--   Legen Sie Optionen in der DSL-Definition fest, durch die der generierte Code "Hooks" für Ihren eigenen Code bereitstellt.  
+- Legen Sie Optionen in der DSL-Definition fest, durch die der generierte Code "Hooks" für Ihren eigenen Code bereitstellt.  
   
      Wenn Sie festlegen, z. B. die **hat benutzerdefinierten Konstruktor** Möglichkeit, eine Domänenklasse, erstellen Sie die Projektmappe, und sehen Sie Fehlermeldungen. Wenn Sie auf eine dieser Fehlermeldungen doppelklicken, sehen Sie Kommentare im generierten Code, die erläutern, was der benutzerdefinierte Code enthalten sollte.  
   
--   Schreiben Sie eigene Textvorlagen, um Code speziell für Ihre Anwendung zu erstellen. Mit Includedateien können Sie Teile der Vorlagen freigeben, die in vielen Projekten gleich sind. Darüber hinaus können Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagen erstellen, die mit Ihrer eigenen Dateistruktur initialisiert werden.  
+- Schreiben Sie eigene Textvorlagen, um Code speziell für Ihre Anwendung zu erstellen. Mit Includedateien können Sie Teile der Vorlagen freigeben, die in vielen Projekten gleich sind. Darüber hinaus können Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagen erstellen, die mit Ihrer eigenen Dateistruktur initialisiert werden.  
   
 ## <a name="generated-files-in-dsl"></a>Generierte Dateien in "Dsl"  
  Die folgenden generierten Dateien werden in der **Dsl** Projekt.  

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071186"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Gewusst wie: Erweitern und Reduzieren von Spy++-Strukturen
-Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die über zwei Methoden: durch Klicken auf die Symbole in das Fenster oder mithilfe der **Struktur** Menü. Die + und - Symbole in der Struktur zu reagieren, wie sie in das Fenster des Visual C++-Projekt.
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Vorgehensweise: Auf- und Zuklappen von Spy++-Strukturen
+Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die über zwei Methoden: durch Klicken auf die Symbole in das Fenster oder mithilfe der **Struktur** Menü. Die + und - Symbole in der Struktur zu reagieren, wie in der Visualisierung C++ Fenster "Projekt".
 
  Die **Struktur** Menü enthält vier Befehle:
 
@@ -34,9 +34,9 @@ Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>So erweitern oder Reduzieren von Spy++-Strukturen
 
-1.  Markieren Sie eines der Elemente in der Windows-Prozesse oder Threads-Ansicht.
+1. Markieren Sie eines der Elemente in der Windows-Prozesse oder Threads-Ansicht.
 
-2.  Von der **Struktur** Menü Wählen Sie erweitern oder reduzieren Sie die Befehle.
+2. Von der **Struktur** Menü Wählen Sie erweitern oder reduzieren Sie die Befehle.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden von Spy++](../debugger/using-spy-increment.md)

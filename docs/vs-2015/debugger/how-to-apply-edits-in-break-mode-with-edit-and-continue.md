@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069925"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und fortfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,46 +38,46 @@ Sie können mit Bearbeiten und Fortfahren den Code im Unterbrechungsmodus bearbe
   
  Bearbeiten und Fortfahren steht in den folgenden Debugszenarios nicht zur Verfügung:  
   
--   Debuggen im gemischten Modus (systemeigen/verwaltet).  
+- Debuggen im gemischten Modus (systemeigen/verwaltet).  
   
--   SQL-Debuggen.  
+- SQL-Debuggen.  
   
--   Debuggen einer Dr. Watson-Sicherungskopie.  
+- Debuggen einer Dr. Watson-Sicherungskopie.  
   
--   Bearbeiten von Code nach einer nicht behandelten Ausnahme, wenn die Option **Aufrufliste für unbehandelte Ausnahmen entladen** nicht aktiviert ist.  
+- Bearbeiten von Code nach einer nicht behandelten Ausnahme, wenn die Option **Aufrufliste für unbehandelte Ausnahmen entladen** nicht aktiviert ist.  
   
--   Debuggen einer eingebetteten Laufzeitanwendung.  
+- Debuggen einer eingebetteten Laufzeitanwendung.  
   
--   Debuggen einer Anwendung mit **Anfügen an** statt die Anwendung mit **starten** aus der **Debuggen** Menü.  
+- Debuggen einer Anwendung mit **Anfügen an** statt die Anwendung mit **starten** aus der **Debuggen** Menü.  
   
--   Debuggen von optimiertem Code.  
+- Debuggen von optimiertem Code.  
   
--   Debuggen von verwaltetem Code, wenn das Ziel eine 64-Bit-Anwendung ist. Wenn Sie Bearbeiten und Fortfahren verwenden möchten, müssen Sie das Ziel auf x86 festlegen. (_Projekt_**Eigenschaften**, **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.).  
+- Debuggen von verwaltetem Code, wenn das Ziel eine 64-Bit-Anwendung ist. Wenn Sie Bearbeiten und Fortfahren verwenden möchten, müssen Sie das Ziel auf x86 festlegen. (_Projekt_**Eigenschaften**, **Kompilieren** Registerkarte **erweiterte Compilereinstellungen** festlegen.).  
   
--   Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
+- Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
   
 ### <a name="to-edit-code-in-break-mode"></a>So bearbeiten Sie Code im Unterbrechungsmodus  
   
-1.  Wechseln Sie in den Unterbrechungsmodus, indem Sie folgendermaßen vorgehen:  
+1. Wechseln Sie in den Unterbrechungsmodus, indem Sie folgendermaßen vorgehen:  
   
-    -   Legen Sie einen Breakpoint im Code fest, wählen Sie im Menü **Debuggen** den Befehl **Debuggen starten** aus, und warten Sie, bis die Anwendung den Breakpoint erreicht.  
-  
-         – oder –  
-  
-    -   Beginnen Sie mit dem Debuggen, und wählen Sie anschließend im Menü **Debuggen** den Befehl **Alle unterbrechen** aus.  
+    - Legen Sie einen Breakpoint im Code fest, wählen Sie im Menü **Debuggen** den Befehl **Debuggen starten** aus, und warten Sie, bis die Anwendung den Breakpoint erreicht.  
   
          – oder –  
   
-    -   Wenn eine Ausnahme auftritt, wählen Sie **Bearbeiten aktivieren** auf die**Ausnahmen-Assistent**.  
+    - Beginnen Sie mit dem Debuggen, und wählen Sie anschließend im Menü **Debuggen** den Befehl **Alle unterbrechen** aus.  
   
-2.  Nehmen Sie die gewünschten zulässigen Codeänderungen vor.  
+         – oder –  
+  
+    - Wenn eine Ausnahme auftritt, wählen Sie **Bearbeiten aktivieren** auf die**Ausnahmen-Assistent**.  
+  
+2. Nehmen Sie die gewünschten zulässigen Codeänderungen vor.  
   
      Weitere Informationen finden Sie unter [in Visual Basic zu bearbeiten und Fortfahren nicht unterstützte bearbeitet](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     >  Bei dem Versuch, mit Bearbeiten und Fortfahren eine nicht zulässige Änderung vorzunehmen, wird die bearbeitete Stelle violett wellenförmig unterstrichen, und in der Aufgabeliste wird eine Aufgabe angezeigt. Sie können mit der Codeausführung erst fortfahren, nachdem Sie die nicht zulässige Codeänderung rückgängig gemacht haben.  
   
-3.  Klicken Sie im Menü **Debuggen** auf **Weiter**, um mit der Ausführung fortzufahren.  
+3. Klicken Sie im Menü **Debuggen** auf **Weiter**, um mit der Ausführung fortzufahren.  
   
      Der Code wird nun einschließlich der vorgenommenen Änderungen ausgeführt, die jetzt Teil des Projekts sind.  
   

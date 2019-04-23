@@ -9,25 +9,25 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793480"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068950"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Barrierefreie Produkte und Dienste (Zusammenstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. In den folgenden Abschnitten finden Sie Informationen zu den Funktionen, Produkten und Diensten, die den Zugriff auf Microsoft Windows für Personen mit Behinderungen vereinfachen:  
   
--   "Barrierefreiheitfunktionen in Windows"  
+- "Barrierefreiheitfunktionen in Windows"  
   
--   "Dokumentation in alternativen Formaten"  
+- "Dokumentation in alternativen Formaten"  
   
--   "Kundenservice für Benutzer mit Hörschädigungen"  
+- "Kundenservice für Benutzer mit Hörschädigungen"  
   
--   "Weitere Informationen"  
+- "Weitere Informationen"  
   
 > [!NOTE]
 >  Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=75069) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.  

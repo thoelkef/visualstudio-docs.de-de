@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068222"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbe ccheme
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, die im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
@@ -34,28 +34,28 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Definieren Sie eine Kategorie mit integrierten Schriftarten und Farben
 
-1.  Erstellen Sie eine beliebige GUID.
+1. Erstellen Sie eine beliebige GUID.
 
      Diese GUID wird verwendet, um eine Kategorie eindeutig zu identifizieren. Diese Kategorie wird wiederverwendet, die IDE Standard-Schriftarten und Farben-Spezifikation.
 
     > [!NOTE]
     >  Beim Abrufen von Daten von Schriftart und Farbe mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> oder andere Schnittstellen, VSPackages verwenden diese GUID, um integrierte Informationen zu verweisen.
 
-2.  Die Kategorie der Name muss eine Zeichenfolgentabelle in die VSPackage Ressourcen hinzugefügt werden (*RC*) Datei, sodass sie lokalisiert werden kann, je nach Bedarf, wenn Sie in der IDE angezeigt.
+2. Die Kategorie der Name muss eine Zeichenfolgentabelle in die VSPackage Ressourcen hinzugefügt werden (*RC*) Datei, sodass sie lokalisiert werden kann, je nach Bedarf, wenn Sie in der IDE angezeigt.
 
      Weitere Informationen finden Sie unter [hinzufügen oder Löschen einer Zeichenfolge](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Registrieren Sie eine Kategorie mit integrierten Schriftarten und Farben
 
-1.  Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag an folgendem Speicherort:
+1. Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag an folgendem Speicherort:
 
      *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<Kategorie >* ist der nicht lokalisierte Name der Kategorie.
 
-2.  Füllen Sie die Registrierung, um die vordefinierten Schriftarten und Farbschemas mit vier Werten verwenden:
+2. Füllen Sie die Registrierung, um die vordefinierten Schriftarten und Farbschemas mit vier Werten verwenden:
 
-    |name|Typ|Daten|Beschreibung|
+    |Name|Typ|Daten|Beschreibung|
     |----------|----------|----------|-----------------|
     |Kategorie|REG_SZ|GUID|Eine beliebige GUID, die eine Kategorie identifiziert, die die vordefinierten Schriftart- und Farbschema enthält.|
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Diese GUID wird von allen VSPackages verwendet, die die Standardkonfigurationen für Schriftart und Farbe zu verwenden.|

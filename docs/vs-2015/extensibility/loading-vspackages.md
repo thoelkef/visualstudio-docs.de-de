@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 805b86802e64c91e52d869b067fac871603019e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066571"
 ---
 # <a name="loading-vspackages"></a>Laden von VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Automatisches Laden eines VSPackage in einem bestimmten Kontext  
   
--   Hinzufügen der `ProvideAutoLoad` -Attribut auf die VSPackage-Attribute:  
+- Hinzufügen der `ProvideAutoLoad` -Attribut auf die VSPackage-Attribute:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -43,11 +43,11 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
   
      Finden Sie unter den aufgelisteten Felder <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> für eine Liste mit den Benutzeroberfläche-Kontexte und die GUID-Werte.  
   
--   Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+- Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
--   Das VSPackage zu erstellen und mit dem Debuggen beginnen.  
+- Das VSPackage zu erstellen und mit dem Debuggen beginnen.  
   
--   Laden Sie eine Projektmappe, oder erstellen.  
+- Laden Sie eine Projektmappe, oder erstellen.  
   
      Das VSPackage lädt, und die Ausführung am Haltepunkt beendet.  
   
@@ -56,7 +56,7 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
   
  Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> -Methode zum Erzwingen eines VSPackages zu laden.  
   
--   Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode des VSPackages, die erzwingt, einem anderen VSPackage dass zu laden:  
+- Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode des VSPackages, die erzwingt, einem anderen VSPackage dass zu laden:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  

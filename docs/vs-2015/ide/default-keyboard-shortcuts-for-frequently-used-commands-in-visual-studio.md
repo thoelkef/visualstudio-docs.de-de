@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068872"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |[Erstellen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Bearbeiten](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Extras](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Fenster](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[Debuggen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Datei](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refactor](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Ansicht](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> Erstellen
+## <a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Build.Compile|STRG+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|ALT+F11 [Global]|
 
-##  <a name="bkmk_debug"></a> Debuggen
+## <a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Debug.StopDebugging|UMSCHALT+F5 [Global]|
 |Debug.ToggleBreakpoint|F9 [Global]|
 
-##  <a name="bkmk_edit"></a> Bearbeiten
+## <a name="bkmk_edit"></a> Bearbeiten
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |Edit.WordDeleteToEnd|STRG+ENTF [Text-Editor]|
 |Edit.WordDeleteToStart|STRG+RÜCKTASTE [Text-Editor]|
 
-##  <a name="bkmk_file"></a> Datei
+## <a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |File.SaveSelectedItems|STRG+S [Global]|
 |File.ViewinBrowser|STRG+UMSCHALT+W [Global]|
 
-##  <a name="bkmk_project"></a> Projekt
+## <a name="bkmk_project"></a> Projekt
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|UMSCHALT+ALT+A [Global]|
 |Project.AddNewItem|STRG+UMSCHALT+A [Global]|
 
-##  <a name="bkmk_refactor"></a> Refactor
+## <a name="bkmk_refactor"></a> Refactor
 
 |Befehl|Tastenkombination [Kontext]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|STRG+R, STRG+M [Global]|
 
-##  <a name="bkmk_tools"></a> Extras
+## <a name="bkmk_tools"></a> Extras
 
 |Befehl|Tastenkombination [Kontext]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|STRG+ALT+P [Global]|
 
-##  <a name="bkmk_view"></a> Ansicht
+## <a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ iew.TfsTeamExplorer|STRG+\\, STRG+M [Global]|
 |View.ViewCode|EINGABETASTE [Klassendiagramm]<br /><br /> oder F7 [Einstellungs-Designer]|
 |View.ViewDesigner|UMSCHALT+F7 [HTML-Editor-Quellansicht]|
 
-##  <a name="bkmk_window"></a> Fenster
+## <a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|

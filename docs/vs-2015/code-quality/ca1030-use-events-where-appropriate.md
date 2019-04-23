@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58959256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072096"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Nach Möglichkeit Ereignisse verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58959256"
 ## <a name="cause"></a>Ursache
  Namen einer öffentlichen, geschützten oder privaten Methode beginnt mit einer der folgenden:
 
--   AddOn
+- AddOn
 
--   RemoveOn
+- RemoveOn
 
--   Auslösen
+- Auslösen
 
--   Auslösen
+- Auslösen
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel erkennt Methoden, deren Namen normalerweise für Ereignisse verwendet würden. Ereignisse befolgen das Entwurfsmuster "Beobachter" oder "Veröffentlichen-Abonnieren"; Sie werden verwendet, wenn eine Zustandsänderung bei einem Objekt auf andere Objekte übertragen werden muss. Wenn eine Methode als Reaktion auf eine klar definierte Zustandsänderung hin aufgerufen wird, sollte die Methode von einem Ereignishandler aufgerufen werden. Objekte, die die Methode aufrufen, sollten Ereignisse auslösen, statt die Methode direkt aufzurufen.

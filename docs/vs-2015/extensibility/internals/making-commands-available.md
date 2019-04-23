@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071225"
 ---
 # <a name="making-commands-available"></a>Verfügbarmachen von Befehlen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzeroberfläche (UI) mit den Befehlen Akzente werden. Sie können das Paket, um dieses Problem lautet wie folgt zu reduzieren, Programmieren:  
   
--   Programm des Pakets, damit sie geladen wird, nur wenn ein Benutzer ist erforderlich.  
+- Programm des Pakets, damit sie geladen wird, nur wenn ein Benutzer ist erforderlich.  
   
--   Programmieren Sie das Paket so, dass die Befehle nur angezeigt werden, wenn diese im Kontext des aktuellen Zustands der integrierten Entwicklungsumgebung (IDE) werden möglicherweise benötigt.  
+- Programmieren Sie das Paket so, dass die Befehle nur angezeigt werden, wenn diese im Kontext des aktuellen Zustands der integrierten Entwicklungsumgebung (IDE) werden möglicherweise benötigt.  
   
 ## <a name="delayed-loading"></a>Verzögertes Laden  
  Das übliche Verfahren zum ermöglichen ist das VSPackage so entwerfen, dass die Befehle werden in der Benutzeroberfläche angezeigt, aber das Paket selbst nicht geladen werden, wird bis ein Benutzer, einen der Befehle klickt das verzögerte Laden. Erstellen Sie dazu in der VSCT-Datei Befehle, die keine Befehlsflags.  
@@ -94,11 +94,11 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
 ### <a name="custom-context-guids"></a>Benutzerdefinierten Kontext-GUIDs  
  Wenn einen entsprechenden Befehl-Kontext, den GUID noch nicht definiert ist, können Sie eine solche im VSPackage definieren, und klicken Sie dann Programmieren zu aktiven oder inaktiven nach Bedarf, um die Sichtbarkeit Ihrer Befehle zu steuern. Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> -Dienst:  
   
--   Registrieren Sie die Kontext-GUIDs (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode).  
+- Registrieren Sie die Kontext-GUIDs (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode).  
   
--   Abrufen des Status eines Kontexts `GUID` (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode).  
+- Abrufen des Status eines Kontexts `GUID` (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode).  
   
--   Aktivieren von Kontext `GUID`s ein- und ausschalten (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
+- Aktivieren von Kontext `GUID`s ein- und ausschalten (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
   
     > [!CAUTION]
     >  Stellen Sie sicher, dass das VSPackage nicht den Status der alle vorhandenen Kontext-GUID auswirkt, da andere VSPackages möglicherweise von ihnen abhängig sind.  

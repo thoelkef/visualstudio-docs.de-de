@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070237"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen
 Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass die in Datenobjekte eingegebenen Werte den Einschränkungen eines Objektschemas oder den bestehenden Regeln für die Anwendung entsprechen. Es dient der Fehlervermeidung, Daten vor dem Senden von Aktualisierungen an zugrunde liegende Datenbanken auf Gültigkeit zu überprüfen. Dadurch wird auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank verringert.
@@ -33,23 +33,23 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>So validieren Sie Daten während einer Änderung eines Spaltenwerts
 
-1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
+1. Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
 
-2.  Klicken Sie im **O/R-Designer** mit der rechten Maustaste auf die Klasse, der Sie Validierungen hinzufügen möchten, und klicken Sie dann auf **Code anzeigen**.
+2. Klicken Sie im **O/R-Designer** mit der rechten Maustaste auf die Klasse, der Sie Validierungen hinzufügen möchten, und klicken Sie dann auf **Code anzeigen**.
 
      Der Code-Editor wird mit einer partiellen Klasse für die ausgewählte Entitätsklasse geöffnet.
 
-3.  Platzieren Sie den Cursor in der partiellen Klasse.
+3. Platzieren Sie den Cursor in der partiellen Klasse.
 
-4.  Für Visual Basic-Projekte:
+4. Für Visual Basic-Projekte:
 
-    1.  Erweitern Sie die Liste **Methodenname**.
+    1. Erweitern Sie die Liste **Methodenname**.
 
-    2.  Suchen Sie die **OnSPALTENNNAMEChanging**-Methode für die Spalte, der Sie eine Validierung hinzufügen möchten.
+    2. Suchen Sie die **OnSPALTENNNAMEChanging**-Methode für die Spalte, der Sie eine Validierung hinzufügen möchten.
 
-    3.  Der partiellen Klasse wird eine `OnCOLUMNNAMEChanging`-Methode hinzugefügt.
+    3. Der partiellen Klasse wird eine `OnCOLUMNNAMEChanging`-Methode hinzugefügt.
 
-    4.  Fügen Sie den folgenden Code hinzu, um zunächst zu überprüfen, ob ein Wert eingegeben wurde, und dann sicherzustellen, dass der für die Spalte eingegebene Wert für die Anwendung gültig ist. Das `value`-Argument enthält den vorgeschlagenen Wert, fügen Sie daher Logik hinzu, um sicherzustellen, das es sich um einen gültigen Wert handelt:
+    4. Fügen Sie den folgenden Code hinzu, um zunächst zu überprüfen, ob ein Wert eingegeben wurde, und dann sicherzustellen, dass der für die Spalte eingegebene Wert für die Anwendung gültig ist. Das `value`-Argument enthält den vorgeschlagenen Wert, fügen Sie daher Logik hinzu, um sicherzustellen, das es sich um einen gültigen Wert handelt:
 
         ```vb
         If value.HasValue Then
@@ -62,7 +62,7 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
 
     Für C#-Projekte:
 
-    Da C# Projekte generieren nicht automatisch Ereignishandler, können Sie IntelliSense verwenden, um die partiellen Methoden zur Änderung der Spalte zu erstellen. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Methode zur Spaltenänderung für die Spalte, der Sie Validierung hinzufügen möchten. Der folgende Code ähnelt den Code, der generiert wird, wenn Sie eine partielle Methode zur spaltenänderung auswählen:
+    Da c#-Projekten-Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partiellen Methoden zur Änderung der Spalte zu erstellen. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Methode zur Spaltenänderung für die Spalte, der Sie Validierung hinzufügen möchten. Der folgende Code ähnelt den Code, der generiert wird, wenn Sie eine partielle Methode zur spaltenänderung auswählen:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -79,23 +79,23 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>So validieren Sie Daten während eines Updates einer Entitätsklasse
 
-1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
+1. Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
 
-2.  Klicken Sie im **O/R-Designer** mit der rechten Maustaste in einen leeren Bereich, und klicken Sie auf **Code anzeigen**.
+2. Klicken Sie im **O/R-Designer** mit der rechten Maustaste in einen leeren Bereich, und klicken Sie auf **Code anzeigen**.
 
      Der Code-Editor wird mit einer partiellen Klasse für den `DataContext` geöffnet.
 
-3.  Platzieren Sie den Cursor in die partielle Klasse für den `DataContext`.
+3. Platzieren Sie den Cursor in die partielle Klasse für den `DataContext`.
 
-4.  Für Visual Basic-Projekte:
+4. Für Visual Basic-Projekte:
 
-    1.  Erweitern Sie die Liste **Methodenname**.
+    1. Erweitern Sie die Liste **Methodenname**.
 
-    2.  Klicken Sie auf **UpdateENTITYCLASSNAME**.
+    2. Klicken Sie auf **UpdateENTITYCLASSNAME**.
 
-    3.  Der partiellen Klasse wird eine `UpdateENTITYCLASSNAME`-Methode hinzugefügt.
+    3. Der partiellen Klasse wird eine `UpdateENTITYCLASSNAME`-Methode hinzugefügt.
 
-    4.  Greifen Sie auf die Werte einzelner Spalten mithilfe des `instance`-Arguments zu, wie im folgenden Code dargestellt:
+    4. Greifen Sie auf die Werte einzelner Spalten mithilfe des `instance`-Arguments zu, wie im folgenden Code dargestellt:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then
@@ -106,7 +106,7 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
 
     Für C#-Projekte:
 
-    Da C# Projekte generieren nicht automatisch Ereignishandler, können Sie IntelliSense verwenden, um die partielle erstellen `UpdateCLASSNAME` Methode. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Updatemethode für die Klasse, die auf der Sie Validierung hinzufügen möchten. Der folgende Code ähnelt dem Code, der generiert wird, bei der Auswahl einer `UpdateCLASSNAME` partielle Methode:
+    Da c#-Projekten-Ereignishandler nicht automatisch generieren, können Sie IntelliSense verwenden, um die partielle erstellen `UpdateCLASSNAME` Methode. Geben Sie `partial` und dann ein Leerzeichen ein, um auf die Liste der verfügbaren partiellen Methoden zuzugreifen. Klicken Sie auf die Updatemethode für die Klasse, die auf der Sie Validierung hinzufügen möchten. Der folgende Code ähnelt dem Code, der generiert wird, bei der Auswahl einer `UpdateCLASSNAME` partielle Methode:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

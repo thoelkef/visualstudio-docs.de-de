@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234b2958fd3a5a533e881fc2589c275893326814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071330"
 ---
 # <a name="web-project-essentials"></a>Grundlagen von Webprojekten
 Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um eine Webanwendung erstellen, die intelligente Webseiten. Eine intelligente Webseite hat serverseitigem Code, der die Webseite bedarfsgesteuert gerendert wird.
@@ -28,9 +28,9 @@ Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um e
 
 - Zusätzliche Quellcodedateien, z. B. Hilfsklassen, die nicht mit einer bestimmten Webseite verknüpft sind befinden sich in den Ordner der Website kann.
 
-  -   Ein Websiteprojekt (WSP) generiert eine ausführbare Datei für jedes smart-Webseite. Weitere ausführbare Dateien werden von alle Quellcodedateien im Ordner "kann" generiert.
+  - Ein Websiteprojekt (WSP) generiert eine ausführbare Datei für jedes smart-Webseite. Weitere ausführbare Dateien werden von alle Quellcodedateien im Ordner "kann" generiert.
 
-  -   Ein Webanwendungsprojekt (WAP) erzeugt eine einzelne ausführbare Datei, die den Code für alle smart Webseiten als auch alle Quelldateien im Ordner "kann" kombiniert.
+  - Ein Webanwendungsprojekt (WAP) erzeugt eine einzelne ausführbare Datei, die den Code für alle smart Webseiten als auch alle Quelldateien im Ordner "kann" kombiniert.
 
 - Die Projektmappendatei für ein Webprojekt befindet sich unabhängig von der Website selbst. Standardmäßig befinden sich Projektmappendateien unter \Documents and Settings\\*Ihrkonto*\My Dokumente\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.
 
@@ -53,9 +53,9 @@ Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um e
 
 - Eine intelligente Webseite kombiniert HTML mit einer serverseitigen Programmiersprache. Die serverseitigen Sprache wird die enthaltende Sprache bezeichnet. Um einer enthaltenen Sprache zu unterstützen, muss die Web-Projektsystem implementieren die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> Familie von Schnittstellen.
 
-  -   Um die enthaltende Sprache in einem Editor zu unterstützen, muss HTML-Sprachdiensts verzögern enthaltenen Sprachcode an einen Dienst für die enthaltende Sprache angezeigt.
+  - Um die enthaltende Sprache in einem Editor zu unterstützen, muss HTML-Sprachdiensts verzögern enthaltenen Sprachcode an einen Dienst für die enthaltende Sprache angezeigt.
 
-  -   Fehlermarker (rote, wellenförmige Unterstreichung) müssen immer im primären Puffer des Code-Editor erstellt werden.
+  - Fehlermarker (rote, wellenförmige Unterstreichung) müssen immer im primären Puffer des Code-Editor erstellt werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Webprojekte](../../extensibility/internals/web-projects.md)

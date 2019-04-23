@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072850"
 ---
 # <a name="autos-and-locals-windows"></a>Fenster „Auto“ und „Lokal“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  In bestimmten Fällen können Sie auch die Rückgabewerte von Funktionen und Methoden sehen. Weitere Informationen finden im folgenden Abschnitt [View return values of method calls](#bkmk_returnValue) .  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  In .NET- und C++-Code können Sie Rückgabewerte auswerten, wenn Sie einen Methodenaufruf als Prozedurschritt oder bis zum Rücksprung ausführen. Diese Funktion ist nützlich, wenn das Ergebnis eines Methodenaufrufs nicht in einer lokalen Variablen gespeichert wird, etwa wenn eine Methode als Parameter oder Rückgabewert einer anderen Methode verwendet wird.  
   
  Im folgenden C#-Code werden die Rückgabewerte von zwei Funktionen hinzugefügt:  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  Allerdings sollten Sie Vorsicht walten lassen, wenn Sie Werte ändern. Mögliche Probleme:  
   
--   Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Wird beispielsweise `var1 = ++var2` ausgewertet, wird der Wert von `var1` und `var2`geändert.  
+- Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Wird beispielsweise `var1 = ++var2` ausgewertet, wird der Wert von `var1` und `var2`geändert.  
   
      Ausdrücke, die eine Änderung von Daten bewirken, haben [Nebeneffekte](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), die zu unerwarteten Ergebnissen führen können, wenn Sie sich der Effekte nicht bewusst sind. Vergewissern Sie sich, dass Sie die Folgen einer solchen Änderung kennen, bevor Sie sie vornehmen.  
   
--   Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch eine scheinbar harmlose Bearbeitung kann Änderungen in einigen der unwichtigsten Bits einer Gleitkommavariable bewirken.  
+- Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch eine scheinbar harmlose Bearbeitung kann Änderungen in einigen der unwichtigsten Bits einer Gleitkommavariable bewirken.  
   
 ## <a name="debug-location-toolbar"></a>Symbolleiste „Debugspeicherort“  
  Sie können die Symbolleiste **Debugspeicherort** verwenden, um die gewünschte Funktion, den gewünschten Thread oder den gewünschten Prozess auszuwählen. Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. (Wenn diese Symbolleiste nicht angezeigt wird, können Sie sie aktivieren, indem Sie auf einen leeren Bereich der Symbolleiste klicken. Sie sollten die Liste der Symbolleisten sehen. Wählen Sie **Debugspeicherort**aus.) Wenn der Haltepunkt erreicht ist, wird die Ausführung angehalten, und Sie können die Symbolleiste „Debugspeicherort“ sehen, die die unterste Zeile in der folgenden Grafik ist:  

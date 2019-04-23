@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a70e6b7c8126b2e9d2fc3274d5ecf905dce960d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066551"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Vorgehensweise: Programmgesteuertes Löschen von Arbeitsblättern aus Arbeitsmappen
   Sie können jedes beliebige Arbeitsblatt in einer Arbeitsmappe löschen. Verwenden Sie zum Löschen eines Arbeitsblatts das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.
@@ -40,7 +40,7 @@ ms.locfileid: "56644509"
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>So löschen Sie ein Arbeitsblatt mithilfe eines Arbeitsblatt-Hostelements
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> -Methode von `Sheet1`auf.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> -Methode von `Sheet1`auf.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
@@ -59,7 +59,7 @@ ms.locfileid: "56644509"
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>So löschen Sie ein Arbeitsblatt mithilfe der Sheets-Auflistung der Excel-Arbeitsmappe
 
-1.  Rufen Sie die Methode <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> der Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> auf.
+1. Rufen Sie die Methode <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> der Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> auf.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
