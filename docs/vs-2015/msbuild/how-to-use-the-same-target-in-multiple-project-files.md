@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056834"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projek
   
 #### <a name="to-import-a-project"></a>So importieren Sie ein Projekt  
   
-1.  Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.  
+1. Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.  
   
-2.  Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:  
+2. Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  Definieren Sie nach dem `Import`-Element alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.  
+3. Definieren Sie nach dem `Import`-Element alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.  
   
 ## <a name="order-of-evaluation"></a>Reihenfolge der Auswertung  
  Wenn [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ein `Import`-Element erreicht, wird das importierte Projekt effektiv in das importierte Projekt an den Speicherort des `Import`-Elements eingefügt. Aus diesem Grund kann der Speicherort des `Import`-Elements Auswirkungen auf die Werte der Eigenschaften und Elemente haben. Die Eigenschaften und Elemente, die durch das importierte Projekt festgelegt wurden, und die Eigenschaften und Elemente, die vom importierten Projekt verwendet werden, müssen bekannt sein.  
@@ -77,11 +77,11 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projek
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>Gehen Sie beim Importieren von Projekten wie folgt vor  
   
-1.  Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.  
+1. Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.  
   
-2.  Importieren Sie das Projekt.  
+2. Importieren Sie das Projekt.  
   
-3.  Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.  
+3. Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird die Datei MyCommon.targets dargestellt-Datei, die im zweiten Codebeispiel importiert wird. Die .targets-Datei wertet Eigenschaften des importierten Projekts für die Konfiguration des Builds aus.  

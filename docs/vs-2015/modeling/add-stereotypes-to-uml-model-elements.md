@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d60d20e7fd62ee05b6c74f580ef60e23c577c96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043645"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Hinzufügen von Stereotypen zu UML-Modellelementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,51 +29,51 @@ Sie können einem UML-Modellelement einen Stereotypen hinzufügen, um es zu komm
   
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>So verknüpfen Sie ein Profil mit einem Modell oder einem Paket  
   
-1.  Open **UML-Modell-Explorer**. Auf der **Architektur** Startmenü **Windows**, und klicken Sie dann auf **UML-Modell-Explorer**.  
+1. Open **UML-Modell-Explorer**. Auf der **Architektur** Startmenü **Windows**, und klicken Sie dann auf **UML-Modell-Explorer**.  
   
-2.  Suchen Sie ein Paket oder ein Modell, das alle Elemente enthält, auf die Sie den Stereotypen im Profil anwenden möchten.  
+2. Suchen Sie ein Paket oder ein Modell, das alle Elemente enthält, auf die Sie den Stereotypen im Profil anwenden möchten.  
   
-3.  Mit der rechten Maustaste das Paket oder das Modell, und klicken Sie dann auf **Eigenschaften**.  
+3. Mit der rechten Maustaste das Paket oder das Modell, und klicken Sie dann auf **Eigenschaften**.  
   
-4.  In der **Eigenschaften** legen die **Profile** Eigenschaft, um die Profile, die die Stereotype enthalten, Sie verwenden möchten.  
+4. In der **Eigenschaften** legen die **Profile** Eigenschaft, um die Profile, die die Stereotype enthalten, Sie verwenden möchten.  
   
      Die Stereotypen des Profils sind nun für alle Elemente im Modell oder Paket verfügbar. Wenn das Paket andere Pakete enthält, sind die Stereotypen ebenfalls in den darin enthaltenen Elementen verfügbar.  
   
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>Hinzufügen von Stereotypen zu Modellelementen oder Beziehungen  
   
-1.  Mit der rechten Maustaste das Modellelement oder die Beziehung, in einem Diagramm oder im **UML-Modell-Explorer**, und klicken Sie dann auf **Eigenschaften**.  
+1. Mit der rechten Maustaste das Modellelement oder die Beziehung, in einem Diagramm oder im **UML-Modell-Explorer**, und klicken Sie dann auf **Eigenschaften**.  
   
     > [!NOTE]
     >  Um mehreren Elementen die gleichen Stereotypen hinzuzufügen, können Sie mehrere Elemente auswählen und dann mit der rechten Maustaste aus eines davon klicken.  
   
-2.  Klicken Sie auf die **Stereotype** Eigenschaft, und wählen Sie die Stereotype, die Sie anwenden möchten.  
+2. Klicken Sie auf die **Stereotype** Eigenschaft, und wählen Sie die Stereotype, die Sie anwenden möchten.  
   
      Die ausgewählten Stereotypen werden für die meisten Arten von Elementen und Beziehungen im Modellelement in Chevrons (« ») angezeigt.  
   
     > [!NOTE]
     >  Wenn Sie nicht sehen können die **Stereotype** -Eigenschaft, oder wenn das gewünschte Stereotyp nicht angezeigt wird, stellen Sie sicher, dass das Modellelement in einem Paket oder ein Modell ist, das entsprechende Profil verknüpft wurde.  
   
-3.  Einige Stereotype ermöglichen es Ihnen, die Werte zusätzlicher Eigenschaften für das Modellelement festzulegen. Um diese Eigenschaften anzuzeigen, erweitern Sie die **Stereotype** Eigenschaft.  
+3. Einige Stereotype ermöglichen es Ihnen, die Werte zusätzlicher Eigenschaften für das Modellelement festzulegen. Um diese Eigenschaften anzuzeigen, erweitern Sie die **Stereotype** Eigenschaft.  
   
 ### <a name="to-create-model-elements-within-a-package"></a>Erstellen von Modellelementen in einem Paket  
   
-1.  Erstellen Sie ein Paket aus, entweder in einem UML-Klassendiagramm oder im **UML-Modell-Explorer**.  
+1. Erstellen Sie ein Paket aus, entweder in einem UML-Klassendiagramm oder im **UML-Modell-Explorer**.  
   
-2.  Fügen Sie Modellelemente für das Paket folgendermaßen hinzu:  
+2. Fügen Sie Modellelemente für das Paket folgendermaßen hinzu:  
   
-    -   Klicken Sie in einem UML-Klassendiagramm auf das Tool für ein Element, und klicken Sie dann in das Paket des Diagramms.  
-  
-         \- oder –  
-  
-    -   Im UML-Modell-Explorer mit der Maustaste des Pakets, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf einen Elementtyp.  
+    - Klicken Sie in einem UML-Klassendiagramm auf das Tool für ein Element, und klicken Sie dann in das Paket des Diagramms.  
   
          \- oder –  
   
-    -   Ziehen Sie im UML-Modell-Explorer ein vorhandenes Element in das Paket.  
+    - Im UML-Modell-Explorer mit der Maustaste des Pakets, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf einen Elementtyp.  
   
          \- oder –  
   
-    -   Verknüpfen Sie ein Diagramm mit dem Paket, und erstellen Sie dann Elemente innerhalb des Diagramms.  
+    - Ziehen Sie im UML-Modell-Explorer ein vorhandenes Element in das Paket.  
+  
+         \- oder –  
+  
+    - Verknüpfen Sie ein Diagramm mit dem Paket, und erstellen Sie dann Elemente innerhalb des Diagramms.  
   
          Zu diesem Zweck mit der rechten Maustaste in eines leeren Bereich des Diagramms, und klicken Sie dann auf **Eigenschaften**. In der **Eigenschaften** legen **Linked Package** auf das gewünschte Paket.  
   

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 255c82b09e87180149756ce684f001652f4b962a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058720"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Anweisungsprozessor
 
@@ -57,13 +57,13 @@ In dieser exemplarischen Vorgehensweise verwenden Sie den Domain-Specific Langua
 
 1. Erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:
 
-   -   Name: DSLMinimalTest
+   - Name: DSLMinimalTest
 
-   -   Lösungsvorlage: Minimal Language (Einfache Version der Sprache)
+   - Lösungsvorlage: Minimal Language (Einfache Version der Sprache)
 
-   -   Dateierweiterung: Min.
+   - Dateierweiterung: Min.
 
-   -   Name des Unternehmens: Fabrikam
+   - Name des Unternehmens: Fabrikam
 
    Weitere Informationen zum Erstellen einer DSL-Projektmappe finden Sie unter [Vorgehensweise: Create a Domain-Specific Language Solution (Vorgehensweise: Erstellen einer Projektmappe für die domänenspezifische Sprache)](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
@@ -88,27 +88,27 @@ In dieser exemplarischen Vorgehensweise verwenden Sie den Domain-Specific Langua
 
 Nachdem Sie den anweisungsprozessor generiert haben, verbinden Sie den anweisungsprozessor und der benutzerdefinierten Textvorlagenhosts, die Sie in erstellt [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-1.  Öffnen Sie die Projektmappe "CustomHost".
+1. Öffnen Sie die Projektmappe "CustomHost".
 
-2.  Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
+2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .
 
      Die **Verweis hinzufügen** Dialogfeld wird geöffnet, und die **.NET** angezeigt.
 
-3.  Fügen Sie die folgenden Verweise hinzu:
+3. Fügen Sie die folgenden Verweise hinzu:
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4.  Fügen Sie am oberen Rand der Datei "Program.cs" oder "Module1.vb" die folgende Codezeile hinzu:
+4. Fügen Sie am oberen Rand der Datei "Program.cs" oder "Module1.vb" die folgende Codezeile hinzu:
 
     ```csharp
     using Microsoft.Win32;
@@ -118,7 +118,7 @@ Nachdem Sie den anweisungsprozessor generiert haben, verbinden Sie den anweisung
     Imports Microsoft.Win32
     ```
 
-5.  Suchen Sie den Code für die Eigenschaft `StandardAssemblyReferences`, und Ersetzen Sie ihn durch den folgenden Code:
+5. Suchen Sie den Code für die Eigenschaft `StandardAssemblyReferences`, und Ersetzen Sie ihn durch den folgenden Code:
 
     > [!NOTE]
     > In diesem Schritt fügen Sie Verweise auf die Assemblys, die von der generierten Direktivenprozessor erforderlich sind, die dem Host unterstützt werden.
@@ -154,7 +154,7 @@ Nachdem Sie den anweisungsprozessor generiert haben, verbinden Sie den anweisung
     }
     ```
 
-6.  Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor`, und Ersetzen Sie ihn durch den folgenden Code:
+6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor`, und Ersetzen Sie ihn durch den folgenden Code:
 
     > [!IMPORTANT]
     > Dieser Code enthält hartcodierte Verweise auf den Namen der generierten Direktivenprozessor, zu der Sie eine Verbindung herstellen möchten. Sie können problemlos wandle die Liste Weitere allgemeine, in diesem Fall für alle anweisungsprozessoren in der Registrierung aufgeführte und versucht, eine Übereinstimmung zu finden. In diesem Fall würde der Host mit jeder generierten Direktivenprozessor funktionieren.
@@ -228,9 +228,9 @@ Nachdem Sie den anweisungsprozessor generiert haben, verbinden Sie den anweisung
             }
     ```
 
-7.  Klicken Sie im Menü **Datei** auf **Alle speichern**.
+7. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
-8.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+8. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>Testen des benutzerdefinierten Hosts mit der Anweisungsprozessor
 
@@ -238,9 +238,9 @@ Zum Testen der benutzerdefinierten Textvorlagenhosts müssen Sie zuerst eine Tex
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>Erstellen Sie eine Textvorlage zum Testen des benutzerdefinierten Hosts
 
-1.  Erstellen Sie eine Textdatei, und nennen Sie es `TestTemplateWithDP.tt`. Sie können einem beliebigen Texteditor wie Editor verwenden, zum Erstellen der Datei.
+1. Erstellen Sie eine Textdatei, und nennen Sie es `TestTemplateWithDP.tt`. Sie können einem beliebigen Texteditor wie Editor verwenden, zum Erstellen der Datei.
 
-2.  Fügen Sie folgenden Text in der Textdatei ein:
+2. Fügen Sie folgenden Text in der Textdatei ein:
 
     > [!NOTE]
     > Die Programmiersprache der Textvorlage muss nicht mit der des benutzerdefinierten Hosts übereinstimmen.
@@ -312,15 +312,15 @@ Zum Testen der benutzerdefinierten Textvorlagenhosts müssen Sie zuerst eine Tex
     #>
     ```
 
-3.  Ersetzen Sie im Code, \<IHR Pfad > durch den Pfad der Datei Sample.min aus der Design-spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
+3. Ersetzen Sie im Code, \<IHR Pfad > durch den Pfad der Datei Sample.min aus der Design-spezifischen Sprache, die Sie im ersten Verfahren erstellt haben.
 
-4.  Speichern und schließen Sie die Datei.
+4. Speichern und schließen Sie die Datei.
 
 ### <a name="test-the-custom-host"></a>Testen des benutzerdefinierten Hosts
 
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.
+1. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-2.  Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.
+2. Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.
 
      Beispiel:
 
@@ -329,9 +329,9 @@ Zum Testen der benutzerdefinierten Textvorlagenhosts müssen Sie zuerst eine Tex
     > [!NOTE]
     > Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer**, und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.
 
-3.  Geben Sie ein Leerzeichen ein.
+3. Geben Sie ein Leerzeichen ein.
 
-4.  Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.
+4. Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.
 
      Beispiel:
 
@@ -342,11 +342,11 @@ Zum Testen der benutzerdefinierten Textvorlagenhosts müssen Sie zuerst eine Tex
 
      Die benutzerdefinierte hostanwendung wird ausgeführt und startet das Textvorlagen-Transformationsprozess ab.
 
-5.  In **Windows Explorer**, navigieren Sie zu dem Ordner, die Datei TestTemplateWithDP.txt enthält.
+5. In **Windows Explorer**, navigieren Sie zu dem Ordner, die Datei TestTemplateWithDP.txt enthält.
 
      Der Ordner enthält auch die Datei TestTemplateWithDP1.txt.
 
-6.  Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.
+6. Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.
 
      Die Ergebnisse der die generierte Textausgabe wird angezeigt und sollte wie folgt aussehen:
 

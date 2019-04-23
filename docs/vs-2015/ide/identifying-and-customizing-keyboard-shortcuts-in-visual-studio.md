@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056067"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,48 +52,48 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 > [!NOTE]
 >  Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Dieses Thema bezieht sich auf **Allgemeine Entwicklungseinstellungen**.
 
-##  <a name="bkmk_identify"></a> Nachschlagen einer Tastenkombination
+## <a name="bkmk_identify"></a> Nachschlagen einer Tastenkombination
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
 
-2.  Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
+2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
      ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
+3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
      Beispielsweise können Sie Befehle für **solutionexplorer** suchen.
 
-4.  Wählen Sie in der Liste den richtigen Befehl aus.
+4. Wählen Sie in der Liste den richtigen Befehl aus.
 
      Beispielsweise können Sie **View.SolutionExplorer** auswählen.
 
-5.  Wenn dem Befehl eine Tastenkombination zugeordnet ist, wird sie in der Liste **Shortcut(s) for selected command** (Tastenkombination für ausgewählten Befehl) aufgeführt.
+5. Wenn dem Befehl eine Tastenkombination zugeordnet ist, wird sie in der Liste **Shortcut(s) for selected command** (Tastenkombination für ausgewählten Befehl) aufgeführt.
 
      ![Tastenkombination für einen bestimmten Befehl anzeigen](../ide/media/viewshortcut.png "TastenkombinationAnzeigen")
 
-##  <a name="bkmk_assign"></a> Anpassen einer Tastenkombination
+## <a name="bkmk_assign"></a> Anpassen einer Tastenkombination
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**.
+1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.
 
-2.  Erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Tastatur**.
+2. Erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
      ![Tastenkombinationen im Dialogfeld „Optionen“ anzeigen](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
+3. Geben Sie in das Feld **Befehle mit folgendem Inhalt anzeigen** den gesamten Befehlsnamen ohne Leerzeichen ein.
 
      Beispielsweise können Sie Befehle für **solutionexplorer** suchen.
 
-4.  Wählen Sie in der Liste den Befehl aus, dem Sie eine Tastenkombination zuweisen möchten.
+4. Wählen Sie in der Liste den Befehl aus, dem Sie eine Tastenkombination zuweisen möchten.
 
-5.  Wählen Sie in der Liste **Use new shortcut in** (Neue Tastenkombination verwenden in) den Funktionsbereich aus, in dem die Tastenkombination verwendet werden soll.
+5. Wählen Sie in der Liste **Use new shortcut in** (Neue Tastenkombination verwenden in) den Funktionsbereich aus, in dem die Tastenkombination verwendet werden soll.
 
      Wählen Sie beispielsweise **Global** aus, wenn die Tastenkombination in allen Zusammenhängen funktionieren soll. Sie können jede Tastenkombination verwenden, die in keinem anderen Editor (als Global) zugeordnet ist. Andernfalls wird die Tastenkombination vom Editor überschrieben.
 
     > [!NOTE]
     >  Folgende Tasten können im Gültigkeitsbereich **Global** nicht in einer Tastenkombination verwendet werden: DRUCK/S-ABF, ROLLEN, PAUSE/UNTBR, TAB, FESTSTELLTASTE, EINFG, POS1, ENDE, BILD-AUF, BILD-AB, die WINDOWS-TASTE, die ANWENDUNGSTASTE, alle PFEILTASTEN sowie die EINGABETASTE, NUM, ENTF bzw. ENTF im Tastenblock und STRG+ALT+ENTF.
 
-6.  Geben Sie in das Feld **Press shortcut key(s)** (Tastenkombination drücken) die Tastenkombination ein, die Sie verwenden möchten.
+6. Geben Sie in das Feld **Press shortcut key(s)** (Tastenkombination drücken) die Tastenkombination ein, die Sie verwenden möchten.
 
     > [!NOTE]
     >  Sie können eine Tastenkombination erstellen, die einen Buchstaben mit der ALT-TASTE, der STRG-TASTE oder mit beiden kombiniert. Sie können auch eine Tastenkombination erstellen, welche die UMSCHALTTASTE und einen Buchstaben mit der ALT-TASTE, der STRG-TASTE oder mit beiden kombiniert.
@@ -102,45 +102,45 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 
      ![Eine andere Tastenkombination für einen Befehl angeben](../ide/media/reassignshortcut.png "TastenkombinationNeuZuweisen")
 
-7.  Klicken Sie auf **Zuweisen**.
+7. Klicken Sie auf **Zuweisen**.
 
     > [!NOTE]
     >  Wenn Sie eine andere Tastenkombination für einen Befehl angeben, klicken Sie auf die Schaltfläche **Zuweisen** und dann auf **Abbrechen**. Damit wird das Dialogfeld geschlossen, aber die Änderung bleibt bestehen.
 
-##  <a name="bkmk_transfer"></a> Freigeben benutzerdefinierter Tastenkombinationen
+## <a name="bkmk_transfer"></a> Freigeben benutzerdefinierter Tastenkombinationen
  Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie in eine Datei exportieren und die Datei dann anderen Benutzern zur Verfügung stellen, sodass diese die Daten importieren können.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>So exportieren Sie nur Tastenkombinationen
 
-1.  Klicken Sie in der Menüleiste auf die Optionen **Extras** und dann auf **Einstellungen importieren und exportieren**.
+1. Klicken Sie in der Menüleiste auf die Optionen **Extras** und dann auf **Einstellungen importieren und exportieren**.
 
-2.  Klicken Sie auf **Ausgewählte Umgebungseinstellungen exportieren** und dann auf **Weiter**.
+2. Klicken Sie auf **Ausgewählte Umgebungseinstellungen exportieren** und dann auf **Weiter**.
 
-3.  Deaktivieren Sie unter **Welche Einstellungen sollen exportiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie **Optionen** sowie **Umgebung**.
+3. Deaktivieren Sie unter **Welche Einstellungen sollen exportiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie **Optionen** sowie **Umgebung**.
 
-4.  Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Weiter**.
+4. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Weiter**.
 
      ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png "TastenkombinationenExportieren")
 
-5.  Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein.** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf **Fertigstellen**.
+5. Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein.** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf **Fertigstellen**.
 
-     Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner %USERPROFILE%\Dokumente\Visual Studio 2013\Settings gespeichert. Der Name der Datei entspricht dem Datum, an dem Sie die Einstellungen exportiert haben, und die Dateierweiterung ist ".vssettings".
+     Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner %USERPROFILE%\Dokumente\Visual Studio 2013\Settings gespeichert. Der Name der Datei entspricht dem Datum, an dem Sie die Einstellungen exportiert haben, und die Dateinamenerweiterung ist ".vssettings".
 
 #### <a name="to-import-only-keyboard-shortcuts"></a>So importieren Sie nur Tastenkombinationen
 
-1.  Klicken Sie in der Menüleiste auf die Optionen **Extras** und dann auf **Einstellungen importieren und exportieren**.
+1. Klicken Sie in der Menüleiste auf die Optionen **Extras** und dann auf **Einstellungen importieren und exportieren**.
 
-2.  Klicken Sie auf das Optionsfeld **Ausgewählte Umgebungseinstellungen importieren** und dann auf **Weiter**.
+2. Klicken Sie auf das Optionsfeld **Ausgewählte Umgebungseinstellungen importieren** und dann auf **Weiter**.
 
-3.  Klicken Sie auf das Optionsfeld **Nein, neue Einstellungen importieren und aktuelle Einstellungen überschreiben** und dann auf **Weiter**.
+3. Klicken Sie auf das Optionsfeld **Nein, neue Einstellungen importieren und aktuelle Einstellungen überschreiben** und dann auf **Weiter**.
 
-4.  Wählen Sie unter **Meine Einstellungen** die Datei mit den Tastenkombinationen aus, die Sie importieren möchten, oder klicken Sie auf **Durchsuchen**, um die gewünschte Datei zu suchen.
+4. Wählen Sie unter **Meine Einstellungen** die Datei mit den Tastenkombinationen aus, die Sie importieren möchten, oder klicken Sie auf **Durchsuchen**, um die gewünschte Datei zu suchen.
 
-5.  Klicken Sie auf **Weiter**.
+5. Klicken Sie auf **Weiter**.
 
-6.  Deaktivieren Sie unter **Welche Einstellungen sollen importiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie dann **Optionen** sowie **Umgebung**.
+6. Deaktivieren Sie unter **Welche Einstellungen sollen importiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie dann **Optionen** sowie **Umgebung**.
 
-7.  Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
+7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
 
      ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png "TastenkombinationenImportieren")
 

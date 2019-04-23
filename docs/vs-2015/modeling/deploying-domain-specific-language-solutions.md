@@ -11,20 +11,20 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 082bde3704354fa85555e9ee3dc868441ac86dee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46eaf9fbd0e8de48b1f3838af4081bc15ed582d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063568"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Bereitstellen von domänenspezifischen Sprachlösungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muss bereits auf dem Zielcomputer installiert sein.  
   
--   [MSI- und VSIX-Bereitstellung einer DSL](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
+- [MSI- und VSIX-Bereitstellung einer DSL](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
   
--   [Mehrere DSLs in einer Projektmappe](../modeling/multiple-dsls-in-one-solution.md)  
+- [Mehrere DSLs in einer Projektmappe](../modeling/multiple-dsls-in-one-solution.md)  
   
--   [VS Shell-Bereitstellung](../modeling/vs-shell-deployment.md)
+- [VS Shell-Bereitstellung](../modeling/vs-shell-deployment.md)

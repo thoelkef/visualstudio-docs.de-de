@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059161"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tastenkombinationen und Zusatztasten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ Mit Tastenkombinationen können Sie beim Arbeiten Zeit sparen, indem eine Aktion
 ## <a name="modifier-keys"></a>Zusatztasten  
  Einigen Tastenkombinationen sind keine Menüoptionen zugeordnet. Sie können daher nicht über die [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]-Benutzeroberfläche ermittelt werden. Unter den folgenden Themen sind die Tastenkombinationen aufgeführt, mit denen Sie das Verhalten von Werkzeugen oder eine Aktion ändern können, z. B. die Größenänderung eines Objekts:  
   
--   [Zusatztasten der Zeichenflächen](../designers/artboard-modifier-keys-in-blend.md)  
+- [Zusatztasten der Zeichenflächen](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Stifttool-Zusatztasten](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Stifttool-Zusatztasten](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Direktauswahltool-Zusatztasten](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Direktauswahltool-Zusatztasten](../designers/direct-selection-tool-modifier-keys-in-blend.md)

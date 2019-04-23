@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055352"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms-Steuerelemente in Office-Dokumente – Übersicht
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word Sie können Windows Forms-Steuerelemente in das Dokument oder die Arbeitsmappe in Ihrem Projekt zur Entwurfszeit hinzufügen, oder Sie können diese Steuerelemente programmgesteuert zur Laufzeit hinzufügen. Sie können diese Steuerelemente programmgesteuert zu allen geöffneten Dokumenten oder Arbeitsblatt zur Laufzeit in einem VSTO-Add-in für Excel oder Word hinzufügen.
@@ -42,19 +42,20 @@ ms.locfileid: "56598855"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Verwenden von Windows Forms-Steuerelemente
- Sie können Windows Forms-Steuerelemente zu Dokumenten und anpassbbaren Benutzeroberflächenelementen (etwa Aktionsbereiche, benutzerdefinierte Aufgabenbereiche und Windows Forms) hinzufügen. In den meisten Fällen verhalten sich Windows Forms-Steuerelemente in Dokumenten genauso wie in diesen anderen Benutzeroberflächenelementen, es gibt aber auch einige Unterschiede. Weitere Informationen finden Sie unter [Einschränkungen von Windows Forms-Steuerelemente für Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- Die Entscheidung, ob Sie Windows Forms-Steuerelemente einem Dokument oder einem anderen Benutzeroberflächenelement hinzufügen, ist von verschiedenen Faktoren abhängig. Wenn Sie die Benutzeroberfläche Ihrer Lösung entwerfen, sollten Sie die Nutzung von Windows Forms-Steuerelemente entsprechend den Beschreibungen in der folgenden Tabelle berücksichtigen.
+Sie können Windows Forms-Steuerelemente zu Dokumenten und anpassbbaren Benutzeroberflächenelementen (etwa Aktionsbereiche, benutzerdefinierte Aufgabenbereiche und Windows Forms) hinzufügen. In den meisten Fällen verhalten sich Windows Forms-Steuerelemente in Dokumenten genauso wie in diesen anderen Benutzeroberflächenelementen, es gibt aber auch einige Unterschiede. Weitere Informationen finden Sie unter [Einschränkungen von Windows Forms-Steuerelemente für Office-Dokumente](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- Auf einem Dokument.
- -   Wenn Sie möchten, dass die Steuerelemente immer angezeigt werden.
+Die Entscheidung, ob Sie Windows Forms-Steuerelemente einem Dokument oder einem anderen Benutzeroberflächenelement hinzufügen, ist von verschiedenen Faktoren abhängig. Wenn Sie die Benutzeroberfläche Ihrer Lösung entwerfen, sollten Sie die Nutzung von Windows Forms-Steuerelemente entsprechend den Beschreibungen in der folgenden Tabelle berücksichtigen.
+
+Auf einem Dokument.
+- Wenn Sie möchten, dass die Steuerelemente immer angezeigt werden.
 
 - Wenn Sie möchten, dass Benutzer Daten direkt in das Dokument eingeben, beispielsweise in formularbasierten Dokumente, bei denen die Bearbeitungsoberfläche gesperrt ist.
 
 - Wenn Sie möchten, dass die Steuerelemente an den Daten ausgerichtet im Dokument angezeigt werden sollen. Wenn Sie beispielsweise jeder Zeile eines Listenobjekts Schaltflächen hinzufügen, sollten diese an dem jeweiligen Listenelement ausgerichtet sein.
 
-  Im Aktionsbereich oder in einem benutzerdefinierten Aufgabenbereich.
-  -   Wenn Sie dem Benutzer Kontextinformationen bereitstellen möchten.
+Im Aktionsbereich oder in einem benutzerdefinierten Aufgabenbereich.
+- Wenn Sie dem Benutzer Kontextinformationen bereitstellen möchten.
 
 - Wenn Sie nur die Ergebnisse im Dokument anzeigen möchten, nicht die Abfragesteuerelemente und -daten.
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598855"
 
 - Wenn Sie sicherstellen möchten, dass die Steuerelemente nicht die Ansicht des Dokuments beeinträchtigen.
 
-  Auf einem Windows Form.
-  -   Wenn Sie die Größe der Benutzeroberfläche steuern möchten.
+Auf einem Windows Form.
+- Wenn Sie die Größe der Benutzeroberfläche steuern möchten.
 
 - Wenn Sie verhindern möchten, dass Benutzer Steuerelemente ausblenden oder löschen können.
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598855"
 ### <a name="create-custom-user-controls"></a>Erstellen von benutzerdefinierten Steuerelementen
  Sie können Ihrem Projekt ein Benutzersteuerelement hinzufügen und das Steuerelement dann der **Toolbox**hinzufügen. Danach können Sie das Benutzersteuerelement direkt in der gleichen Weise auf das Dokument ziehen, in der Sie einem Dokument ein Windows Forms-Steuerelement hinzufügen. Es gibt einige Punkte zu beachten, wenn Sie Benutzersteuerelemente erstellen:
 
--   Erstellen Sie kein **sealed** Benutzersteuerelement. Wenn Sie das Steuerelement auf ein Dokument ziehen, generiert Visual Studio eine Wrapperklasse, die aus dem Benutzersteuerelement abgeleitet wird, um das Steuerelement zu erweitern und seine Verwendung auf dem Dokument zu unterstützen. Wenn das Benutzersteuerelement **sealed**ist, kann Visual Studio die Wrapperklasse nicht generieren.
+- Erstellen Sie kein **sealed** Benutzersteuerelement. Wenn Sie das Steuerelement auf ein Dokument ziehen, generiert Visual Studio eine Wrapperklasse, die aus dem Benutzersteuerelement abgeleitet wird, um das Steuerelement zu erweitern und seine Verwendung auf dem Dokument zu unterstützen. Wenn das Benutzersteuerelement **sealed**ist, kann Visual Studio die Wrapperklasse nicht generieren.
 
--   Für Benutzersteuerelemente muss das <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut auf **true**. Bei Benutzersteuerelementen, die in einem Office-Projekt erstellt werden, ist dieses Attribut standardmäßig auf **true** festgelegt, aber bei Benutzersteuerelementen, die zu externen Projekten gehören, ist dieses Attribut möglicherweise nicht auf **true**festgelegt.
+- Für Benutzersteuerelemente muss das <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut auf **true**. Bei Benutzersteuerelementen, die in einem Office-Projekt erstellt werden, ist dieses Attribut standardmäßig auf **true** festgelegt, aber bei Benutzersteuerelementen, die zu externen Projekten gehören, ist dieses Attribut möglicherweise nicht auf **true**festgelegt.
 
--   Nachdem Sie dem Dokument ein Benutzersteuerelement hinzugefügt haben, dürfen Sie die <xref:System.Windows.Forms.UserControl> -Klasse weder umbenennen noch aus dem Projekt löschen. Müssen Sie den Namen eines Benutzersteuerelements ändern, müssen Sie es zunächst aus dem Dokument löschen. Danach können Sie es, sobald der Name geändert wurde, erneut hinzufügen.
+- Nachdem Sie dem Dokument ein Benutzersteuerelement hinzugefügt haben, dürfen Sie die <xref:System.Windows.Forms.UserControl> -Klasse weder umbenennen noch aus dem Projekt löschen. Müssen Sie den Namen eines Benutzersteuerelements ändern, müssen Sie es zunächst aus dem Dokument löschen. Danach können Sie es, sobald der Name geändert wurde, erneut hinzufügen.
 
 ### <a name="arrange-controls-at-design-time"></a>Anordnen von Steuerelementen zur Entwurfszeit
  Wenn Sie Word- und Excel-Dokumenten zur Entwurfszeit mehrere Steuerelemente hinzufügen, können Sie die Ausrichtung aller ausgewählten Steuerelemente in Visual Studio schnell mit den Symbolleisten **Microsoft Office Word** und **Microsoft Office Excel** festlegen. Diese Symbolleisten sind nur verfügbar, wenn ein Dokument oder Arbeitsblatt im Designer geöffnet ist.
 
  Wenn Sie mehrere Steuerelemente im Designer auswählen, können Sie die Steuerelemente mit den folgenden Schaltflächen auf diesen Symbolleisten anordnen:
 
--   **Nach links ausrichten**
+- **Nach links ausrichten**
 
--   **Zentriert**
+- **Zentriert**
 
--   **Nach rechts ausrichten**
+- **Nach rechts ausrichten**
 
--   **Nach oben ausrichten**
+- **Nach oben ausrichten**
 
--   **Mittig ausrichten**
+- **Mittig ausrichten**
 
--   **Nach unten ausrichten**
+- **Nach unten ausrichten**
 
--   **Horizontalen Abstand ausgleichen**
+- **Horizontalen Abstand ausgleichen**
 
--   **Vertikalen Abstand ausgleichen**
+- **Vertikalen Abstand ausgleichen**
 
 > [!NOTE]
 >  In Word-Projekten sind diese Schaltflächen nur aktiviert, wenn die ausgewählten Steuerelemente nicht am Text ausgerichtet sind. Standardmäßig werden Steuerelemente, die Sie dem Dokument zur Entwurfszeit hinzufügen, am Text ausgerichtet.

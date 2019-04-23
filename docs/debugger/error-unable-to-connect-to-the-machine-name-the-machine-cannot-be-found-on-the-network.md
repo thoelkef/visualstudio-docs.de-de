@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6dc7a9b5e066304e27e784312707400d9571a60
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: b8eebd082df031161604bd04afe61d1aca652f6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043283"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Fehler: Es konnte keine Verbindung mit dem Computer &lt;Namen&gt;. Der Computer kann nicht im Netzwerk gefunden werden.
 Dieses Verhalten tritt auf, wenn eine der folgenden Bedingungen erfüllt ist:
 
--   Die Verbindung zum Remotecomputer ist unterbrochen.
+- Die Verbindung zum Remotecomputer ist unterbrochen.
 
--   Das Benutzerkonto auf dem Remotecomputer ist deaktiviert.
+- Das Benutzerkonto auf dem Remotecomputer ist deaktiviert.
 
--   Das Kennwort auf dem Remotecomputer ist abgelaufen.
+- Das Kennwort auf dem Remotecomputer ist abgelaufen.
 
 ### <a name="to-resolve-this-behavior"></a>So beheben Sie dieses Verhalten
 
--   Stellen Sie sicher, dass der lokale Computer und der Remotecomputer im gleichen Netzwerk sind. Tun Sie dies, indem Sie mit dem Microsoft Windows Explorer (oder File Explorer) versuchen, auf den Remotecomputer zuzugreifen.
+- Stellen Sie sicher, dass der lokale Computer und der Remotecomputer im gleichen Netzwerk sind. Tun Sie dies, indem Sie mit dem Microsoft Windows Explorer (oder File Explorer) versuchen, auf den Remotecomputer zuzugreifen.
 
      – und –
 
--   Stellen Sie sicher, dass das Benutzerkonto, das Sie verwenden, um eine Verbindung mit dem Remotecomputer herzustellen, aktiviert ist.
+- Stellen Sie sicher, dass das Benutzerkonto, das Sie verwenden, um eine Verbindung mit dem Remotecomputer herzustellen, aktiviert ist.
 
      – und –
 
--   Stellen Sie sicher, dass das Kennwort, das Sie verwenden, um eine Verbindung mit dem Remotecomputer herzustellen, gültig und nicht abgelaufen ist.
+- Stellen Sie sicher, dass das Kennwort, das Sie verwenden, um eine Verbindung mit dem Remotecomputer herzustellen, gültig und nicht abgelaufen ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [Remote Debugging](../debugger/remote-debugging.md)

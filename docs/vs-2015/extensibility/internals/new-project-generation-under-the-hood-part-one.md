@@ -11,12 +11,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054237"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Jemals daran gedacht, dazu, wie Sie Ihren eigenen Projekttyp erstellen? Fragen S
   
  Es gibt mehrere Aufgaben, die Koordinaten von Visual Studio für Sie:  
   
--   Eine Struktur mit allen verfügbaren Projekttypen angezeigt.  
+- Eine Struktur mit allen verfügbaren Projekttypen angezeigt.  
   
--   Es zeigt eine Liste der Vorlagen in der Anwendung für jeden Projekttyp und ermöglicht Ihnen eine auszuwählen.  
+- Es zeigt eine Liste der Vorlagen in der Anwendung für jeden Projekttyp und ermöglicht Ihnen eine auszuwählen.  
   
--   Er erfasst die Projektinformationen für die Anwendung, wie z. B. den Projektnamen und-Pfad.  
+- Er erfasst die Projektinformationen für die Anwendung, wie z. B. den Projektnamen und-Pfad.  
   
--   Er übergibt diese Information an die Projektzuordnungsinstanz.  
+- Er übergibt diese Information an die Projektzuordnungsinstanz.  
   
--   Projektelemente und Ordner in der aktuellen Projektmappe generiert.  
+- Projektelemente und Ordner in der aktuellen Projektmappe generiert.  
   
 ## <a name="the-new-project-dialog-box"></a>Das Dialogfeld Neues Projekt  
  Alles beginnt, wenn Sie ein Projekt für ein neues Projekt auswählen. Wir beginnen, indem Sie auf **neues Projekt** auf die **Datei** Menü. Die **neues Projekt** Dialogfeld angezeigt wird, suchen, könnte folgendermaßen aussehen:  
@@ -94,7 +94,7 @@ devenv /installvstemplates
   
  DeveloperActivity REG_SZVC#  
   
- Gibt an, dass es sich bei Visual C# ein Stammknoten ist, wenn Visual Studio festgelegt ist, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Entwicklung. Andernfalls wird es sein, einen untergeordneten Knoten des **andere Sprachen**.  
+ Gibt an, dass es sich bei Visual c# ein Stammknoten ist, wenn Visual Studio festgelegt ist, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Entwicklung. Andernfalls wird es sein, einen untergeordneten Knoten des **andere Sprachen**.  
   
 ##### <a name="folder"></a>Ordner  
  Wenn dieser Unterschlüssel vorhanden ist, wird der Stammknoten einen untergeordneten Knoten des angegebenen Ordners. Eine Liste der möglichen Ordner angezeigt wird, unter dem Schlüssel  
@@ -106,7 +106,7 @@ devenv /installvstemplates
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>Projekt Typ untergeordnete Knoten und .vstdir-Dateien  
  Die Position der untergeordneten Knoten in der **Projekttypen** Struktur folgt die Hierarchie der Ordner in den Ordnern ProjectTemplates. Für Computervorlagen (**Visual Studio installierte Vorlagen**), der typische Speicherort ist \Programme\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\ und für Benutzervorlagen (**Meine Vorlagen**), der typische Speicherort ist \My Documents\Visual Studio 14.0\Templates\ProjectTemplates\\. Die Ordnerhierarchien aus diesen beiden Speicherorten werden zusammengeführt, um das Erstellen der **Projekttypen** Struktur.  
   
- Für Visual Studio mit C# Developer-Einstellungen die **Projekttypen** Struktur sieht etwa folgendermaßen aus:  
+ Für Visual Studio mit c# Developer-Einstellungen die **Projekttypen** Struktur sieht etwa folgendermaßen aus:  
   
  ![Projekttypen](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  Wenn die **neues Projekt** Dialogfeld geöffnet, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] durchläuft den ProjectTemplates-Ordner und erstellt die Datenstruktur ändert sich die **Projekttypen** Struktur mit einigen Änderungen:  
   
--   Der Stammknoten in der **Projekttypen** Struktur richtet sich nach der Application-Vorlage.  
+- Der Stammknoten in der **Projekttypen** Struktur richtet sich nach der Application-Vorlage.  
   
--   Der Knotenname lokalisiert werden kann, und Sonderzeichen enthalten.  
+- Der Knotenname lokalisiert werden kann, und Sonderzeichen enthalten.  
   
--   Die Sortierreihenfolge kann geändert werden.  
+- Die Sortierreihenfolge kann geändert werden.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Suchen den Stammknoten für einen Projekttyp  
  Wenn Visual Studio die ProjectTemplates Ordner durchlaufen werden, alle ZIP-Dateien geöffnet und VSTEMPLATE-Dateien extrahiert. Eine VSTEMPLATE-Datei verwendet die XML-Vorlage einer Anwendung beschrieben. Weitere Informationen finden Sie unter [Generieren neuer Projekte: In die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81c85adc3aaa3bedb92709ce59dd2192a6756473
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062216"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Vorgehensweise: Programmgesteuertes Schützen von Arbeitsblättern
   Die Schutzfunktion in Microsoft Office Excel verhindert, dass Objekte in einem Arbeitsblatt durch Benutzer und Code geändert werden. Standardmäßig werden alle Zellen gesperrt, nachdem der Schutz aktiviert wurde.
@@ -44,7 +44,7 @@ ms.locfileid: "56601238"
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>So lassen Sie die Bearbeitung bestimmter Bereiche zu
 
-1.  In der **Änderungen** Gruppe der **Review** auf **Benutzerberechtigungen zum Bearbeiten von Bereichen**.
+1. In der **Änderungen** Gruppe der **Review** auf **Benutzerberechtigungen zum Bearbeiten von Bereichen**.
 
      Die **Benutzerberechtigungen zum Bearbeiten von Bereichen** Dialogfeld wird angezeigt. Sie können Bereiche angeben, die mithilfe eines Kennworts entsperrt werden, und Benutzer, die Bereiche ohne Kennwort bearbeiten können.
 
@@ -53,14 +53,14 @@ ms.locfileid: "56601238"
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>So schützen Sie ein Arbeitsblatt mithilfe von Code in einer Anpassung auf Dokumentebene
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> -Methode des Arbeitsblatts auf. In diesem Beispiel wird davon ausgegangen, dass Sie mit einem Arbeitsblatt namens `Sheet1`arbeiten.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> -Methode des Arbeitsblatts auf. In diesem Beispiel wird davon ausgegangen, dass Sie mit einem Arbeitsblatt namens `Sheet1`arbeiten.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>So schützen Sie ein Arbeitsblatt mithilfe von Code in einen VSTO-Add-In
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> -Methode des aktiven Arbeitsblatts auf.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> -Methode des aktiven Arbeitsblatts auf.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]

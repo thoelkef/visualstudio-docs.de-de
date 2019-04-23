@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afe3b2fd5bdae86d0b5046775c695766594ae9b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060773"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,43 +37,43 @@ In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode veru
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>So ermitteln Sie, ob das Projektcode eine Ausnahme verursacht  
   
-1.  Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um den Designer neu zu laden** aus.  
+1. Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um den Designer neu zu laden** aus.  
   
-2.  Klicken Sie auf der Menüleiste auf **Debuggen**und **Debuggen starten** , um die Anwendung zu erstellen und auszuführen.  
+2. Klicken Sie auf der Menüleiste auf **Debuggen**und **Debuggen starten** , um die Anwendung zu erstellen und auszuführen.  
   
      Wenn die Anwendung erfolgreich erstellt wurde und ausgeführt wird, wird die Ausnahme zur Entwurfszeit ggf. durch Projektcode verursacht, der im Designer ausgeführt wird.  
   
 #### <a name="to-debug-project-code-running-in-the-designer"></a>So debuggen Sie Projektcode, der im Designer ausgeführt wird  
   
-1.  Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um das Ausführen von Projektcode zu deaktivieren und den Designer erneut zu laden** aus.  
+1. Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um das Ausführen von Projektcode zu deaktivieren und den Designer erneut zu laden** aus.  
   
-2.  Wählen Sie im Windows Task-Manager die Schaltfläche **Task beenden** aus, um alle Instanzen des XAML-Designers von Visual Studio zu schließen, die zurzeit ausgeführt werden.  
+2. Wählen Sie im Windows Task-Manager die Schaltfläche **Task beenden** aus, um alle Instanzen des XAML-Designers von Visual Studio zu schließen, die zurzeit ausgeführt werden.  
   
      ![XAML-Designer-Instanzen im Task-Manager](../designers/media/xaml-taskmanager.png "XAML_TaskManager")  
   
-3.  Öffnen Sie in Visual Studio die XAML-Seite, die den Code oder das Steuerelement enthält, den bzw. das Sie debuggen möchten.  
+3. Öffnen Sie in Visual Studio die XAML-Seite, die den Code oder das Steuerelement enthält, den bzw. das Sie debuggen möchten.  
   
-4.  Öffnen Sie eine neue Instanz von Visual Studio, und öffnen Sie dann eine zweite Instanz Ihres Projekts.  
+4. Öffnen Sie eine neue Instanz von Visual Studio, und öffnen Sie dann eine zweite Instanz Ihres Projekts.  
   
-5.  Legen Sie einen Haltepunkt in Ihrem Projektcode fest.  
+5. Legen Sie einen Haltepunkt in Ihrem Projektcode fest.  
   
-6.  Wählen Sie in der neuen Instanz von Visual Studio auf der Menüleiste **Debuggen**und **An den Prozess anhängen**aus.  
+6. Wählen Sie in der neuen Instanz von Visual Studio auf der Menüleiste **Debuggen**und **An den Prozess anhängen**aus.  
   
-7.  Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** die Datei **XDesProc.exe**aus, und wählen Sie dann die Schaltfläche **Anfügen** aus.  
+7. Wählen Sie im Dialogfeld **An den Prozess anhängen** in der Liste **Verfügbare Prozesse** die Datei **XDesProc.exe**aus, und wählen Sie dann die Schaltfläche **Anfügen** aus.  
   
      ![Der XAML-Designer-Prozess](../designers/media/xaml-attach.png "XAML_Attach")  
   
      Dies ist der Prozess für den XAML-Designer in der ersten Instanz von Visual Studio.  
   
-8.  Wählen Sie in der ersten Instanz von Visual Studio auf der Menüleiste **Debuggen**und dann **Debuggen starten**aus.  
+8. Wählen Sie in der ersten Instanz von Visual Studio auf der Menüleiste **Debuggen**und dann **Debuggen starten**aus.  
   
      Sie können den Code nun schrittweise durchlaufen, der im Designer ausgeführt wird.  
   
 #### <a name="to-disable-project-code-in-the-designer"></a>So deaktivieren Sie Projektcode im Designer  
   
--   Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um das Ausführen von Projektcode zu deaktivieren und den Designer erneut zu laden** aus.  
+- Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um das Ausführen von Projektcode zu deaktivieren und den Designer erneut zu laden** aus.  
   
--   Alternativ können Sie auf der Symbolleiste im XAML-Designer die Schaltfläche **Projektcode deaktivieren** auswählen.  
+- Alternativ können Sie auf der Symbolleiste im XAML-Designer die Schaltfläche **Projektcode deaktivieren** auswählen.  
   
      ![Schaltfläche „Projektcode deaktivieren“](../designers/media/xaml-disablecode.png "XAML_DisableCode")  
   
@@ -82,7 +82,7 @@ In vielen Fällen können Ausnahmefehler im XAML-Designer durch Projektcode veru
     > [!NOTE]
     >  Für Projekte für ARM- oder X64-Prozessoren kann Visual Studio keinen Projektcode im Designer ausführen. Die Schaltfläche **Projektcode deaktivieren** ist daher im Designer deaktiviert.  
   
--   Jede dieser Optionen bewirkt, dass der Designer erneut geladen und anschließend der gesamte Code für das zugehörige Projekt deaktiviert wird.  
+- Jede dieser Optionen bewirkt, dass der Designer erneut geladen und anschließend der gesamte Code für das zugehörige Projekt deaktiviert wird.  
   
     > [!NOTE]
     >  Das Deaktivieren von Projektcode kann zu einem Verlust von Entwurfszeitdaten führen. Eine Alternative besteht darin, den im Designer ausgeführten Code zu debuggen.  

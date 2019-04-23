@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a75386844e3653a4dbf791980737f8d339072c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059707"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht i
   
 ### <a name="to-install-a-visualizer"></a>So installieren Sie eine Schnellansicht  
   
-1.  Suchen Sie die DLL, die die erstellte Schnellansicht enthält.  
+1. Suchen Sie die DLL, die die erstellte Schnellansicht enthält.  
   
-2.  Kopieren Sie die DLL an einen der folgenden Speicherorte:  
+2. Kopieren Sie die DLL an einen der folgenden Speicherorte:  
   
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
   
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`  
   
-3.  Wenn Sie eine verwaltete Schnellansicht zum Remotedebuggen verwenden möchten, kopieren Sie die DLL-Datei in denselben Pfad auf dem Remotecomputer.  
+3. Wenn Sie eine verwaltete Schnellansicht zum Remotedebuggen verwenden möchten, kopieren Sie die DLL-Datei in denselben Pfad auf dem Remotecomputer.  
   
-4.  Starten Sie die Debugsitzung neu.  
+4. Starten Sie die Debugsitzung neu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   

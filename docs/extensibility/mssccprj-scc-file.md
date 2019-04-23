@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043719"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC-Datei
 Wenn Sie Visual Studio-Projektmappe oder das Projekt unter quellcodeverwaltung, die mit der IDE platzieren, empfängt die IDE zwei wichtige Informationen. Die Informationen stammen aus das Quellcodeverwaltungs-Plug-in Form von Zeichenfolgen. Diese Zeichenfolgen, die "AuxPath" und "Projektname", sind für die IDE nicht transparent, aber sie werden vom plug-in verwendet, um die Projektmappe oder das Projekt in der Versionskontrolle zu suchen. Die IDE in der Regel ruft diese Zeichenfolgen erstmals durch Aufrufen der [SccGetProjPath](../extensibility/sccgetprojpath-function.md), und klicken Sie dann speichert sie in der Projektmappe oder ein Projekt-Datei für zukünftige Aufrufe von der [SccOpenProject](../extensibility/sccopenproject-function.md). Bei der Einbettung in die Projektmappen- und Projektdateien-Dateien werden die Zeichenfolgen "AuxPath" und "Projektname" nicht automatisch aktualisiert, wenn ein Benutzer, Forks, branches oder Projektmappen- und Projektdateien-Dateien, die in der Versionskontrolle werden kopiert. Um sicherzustellen, dass die Dateien Projektmappen- und Projektdateien auf am richtigen Speicherort in der Versionskontrolle verweisen, müssen die Zeichenfolgen von Benutzer manuell aktualisieren. Da die Zeichenfolgen nicht transparent sein sollen, möglicherweise nicht immer klar, wie sie aktualisiert werden soll.
@@ -25,19 +25,19 @@ Wenn Sie Visual Studio-Projektmappe oder das Projekt unter quellcodeverwaltung, 
 
  Ein Quellcodeverwaltungs-Plug-in, das unterstützt die *MSSCCPRJ.SCC* Datei entsprechen die folgenden Richtlinien:
 
--   Gibt es nur möglich *MSSCCPRJ.SCC* Datei pro Verzeichnis.
+- Gibt es nur möglich *MSSCCPRJ.SCC* Datei pro Verzeichnis.
 
--   Ein *MSSCCPRJ.SCC* Datei kann für mehrere Dateien, die in der quellcodeverwaltung in einem angegebenen Verzeichnis befinden die "AuxPath" und "Projektname" enthalten.
+- Ein *MSSCCPRJ.SCC* Datei kann für mehrere Dateien, die in der quellcodeverwaltung in einem angegebenen Verzeichnis befinden die "AuxPath" und "Projektname" enthalten.
 
--   Die Zeichenfolge "AuxPath" darf keine Anführungszeichen in die Datei haben. Es ist zulässig, die Anführungszeichen als Trennzeichen verwendet haben (z. B. ein Paar von Anführungszeichen kann an eine leere Zeichenfolge verwendet werden). Die IDE werden alle Angebote aus der Zeichenfolge "AuxPath" entfernen, beim Lesen aus der *MSSCCPRJ.SCC* Datei.
+- Die Zeichenfolge "AuxPath" darf keine Anführungszeichen in die Datei haben. Es ist zulässig, die Anführungszeichen als Trennzeichen verwendet haben (z. B. ein Paar von Anführungszeichen kann an eine leere Zeichenfolge verwendet werden). Die IDE werden alle Angebote aus der Zeichenfolge "AuxPath" entfernen, beim Lesen aus der *MSSCCPRJ.SCC* Datei.
 
--   Die "Projektname"-Zeichenfolge in der *MSSCCPRJ. SCC-Datei* muss genau mit die Zeichenfolge zurückgegeben, die aus entsprechen den `SccGetProjPath` Funktion. Verfügt die Zeichenfolge, die von der Funktion zurückgegebene Anführungszeichen, die Zeichenfolge in die *MSSCCPRJ.SCC* Datei müssen die Anführungszeichen um es herum (und umgekehrt).
+- Die "Projektname"-Zeichenfolge in der *MSSCCPRJ. SCC-Datei* muss genau mit die Zeichenfolge zurückgegeben, die aus entsprechen den `SccGetProjPath` Funktion. Verfügt die Zeichenfolge, die von der Funktion zurückgegebene Anführungszeichen, die Zeichenfolge in die *MSSCCPRJ.SCC* Datei müssen die Anführungszeichen um es herum (und umgekehrt).
 
--   Ein *MSSCCPRJ.SCC* Datei erstellt oder aktualisiert, wenn eine Datei unter quellcodeverwaltung gestellt wird.
+- Ein *MSSCCPRJ.SCC* Datei erstellt oder aktualisiert, wenn eine Datei unter quellcodeverwaltung gestellt wird.
 
--   Wenn ein *MSSCCPRJ.SCC* Datei gelöscht wird, wird ein Anbieter sollte es das nächste Mal einen Quellcodeverwaltungsvorgang zu diesem Verzeichnis wird generieren.
+- Wenn ein *MSSCCPRJ.SCC* Datei gelöscht wird, wird ein Anbieter sollte es das nächste Mal einen Quellcodeverwaltungsvorgang zu diesem Verzeichnis wird generieren.
 
--   Ein *MSSCCPRJ.SCC* Datei muss das definierte Format genau entsprechen.
+- Ein *MSSCCPRJ.SCC* Datei muss das definierte Format genau entsprechen.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Eine Abbildung der MSSCCPRJ. SCC-Dateiformat
  Es folgt ein Beispiel für die *MSSCCPRJ.SCC* -Dateiformat (die Zeilennummern werden nur als Leitfaden bereitgestellt und sollte nicht in der Datei Text enthalten sein):

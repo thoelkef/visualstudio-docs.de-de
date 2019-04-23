@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054624"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Arbeiten mit Visual C++-Code (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
   
  Klassen-Designer unterstützt die folgenden C++-Codeelemente:  
   
--   Klasse (ähnlich eine verwalteten Klassenform, außer dass sie mehrere Vererbungsbeziehungen haben kann)  
+- Klasse (ähnlich eine verwalteten Klassenform, außer dass sie mehrere Vererbungsbeziehungen haben kann)  
   
--   Anonyme Klasse (zeigt den von der Klassenansicht generierten Namen für den anonymen Typ an)  
+- Anonyme Klasse (zeigt den von der Klassenansicht generierten Namen für den anonymen Typ an)  
   
--   Vorlagenklasse  
+- Vorlagenklasse  
   
--   Struktur  
+- Struktur  
   
--   Enum  
+- Enum  
   
--   Makro (zeigt die Ansicht des Makros nach der Verarbeitung an)  
+- Makro (zeigt die Ansicht des Makros nach der Verarbeitung an)  
   
--   TypeDef  
+- TypeDef  
   
 > [!NOTE]
 >  Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md).  
@@ -84,27 +84,27 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 ### <a name="troubleshooting-other-error-messages"></a>Problembehandlung bei anderen Fehlermeldungen  
  Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Weitere Informationen finden Sie im [Forum des Visual Studio-Klassen-Designers](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> Einschränkungen für C++-Codeelemente  
+## <a name="limitations"></a> Einschränkungen für C++-Codeelemente  
   
--   Wenn ein Visual C++-Projekt geladen ist, funktioniert Klassen-Designer in einem schreibgeschützten Modus. Sie können das Klassendiagramm ändern, aber keine Änderungen am Klassendiagramm im Quellcode speichern.  
+- Wenn ein Visual C++-Projekt geladen ist, funktioniert Klassen-Designer in einem schreibgeschützten Modus. Sie können das Klassendiagramm ändern, aber keine Änderungen am Klassendiagramm im Quellcode speichern.  
   
--   Klassen-Designer unterstützt nur die systemeigene C++-Semantik. Für Visual C++-Projekte, die in verwaltetem Code kompiliert werden, visualisiert Klassen-Designer nur Codeelemente, die systemeigene Typen sind. Daher können Sie zwar ein Klassendiagramm zu einem Projekt hinzufügen, aber Klassen-Designer visualisiert keine Elemente, in denen die `IsManaged`-Eigenschaft auf "`true`" festgelegt ist (d. h. Werttypen und Referenztypen).  
+- Klassen-Designer unterstützt nur die systemeigene C++-Semantik. Für Visual C++-Projekte, die in verwaltetem Code kompiliert werden, visualisiert Klassen-Designer nur Codeelemente, die systemeigene Typen sind. Daher können Sie zwar ein Klassendiagramm zu einem Projekt hinzufügen, aber Klassen-Designer visualisiert keine Elemente, in denen die `IsManaged`-Eigenschaft auf "`true`" festgelegt ist (d. h. Werttypen und Referenztypen).  
   
--   Für Visual C++-Projekten liest der Klassen-Designer nur die Definition des Typs. Nehmen wir beispielsweise an, dass Sie einen Typ in einer Headerdatei (. h) und dessen Member in einer Implementierungsdatei (.cpp) definieren. Wenn Sie "Klassendiagramm anzeigen" für die Implementierungsdatei (.cpp) aufrufen, zeigt der Klassen-Designer nichts an. Ein weiteres Beispiel: Wenn Sie "Klassendiagramm anzeigen" für eine CPP-Datei aufrufen, die eine `#include`-Anweisung zum Einschließen anderer Dateien verwendet, aber keine eigentlichen Klassendefinitionen enthält, zeigt der Klassen-Designer erneut nichts an.  
+- Für Visual C++-Projekten liest der Klassen-Designer nur die Definition des Typs. Nehmen wir beispielsweise an, dass Sie einen Typ in einer Headerdatei (. h) und dessen Member in einer Implementierungsdatei (.cpp) definieren. Wenn Sie "Klassendiagramm anzeigen" für die Implementierungsdatei (.cpp) aufrufen, zeigt der Klassen-Designer nichts an. Ein weiteres Beispiel: Wenn Sie "Klassendiagramm anzeigen" für eine CPP-Datei aufrufen, die eine `#include`-Anweisung zum Einschließen anderer Dateien verwendet, aber keine eigentlichen Klassendefinitionen enthält, zeigt der Klassen-Designer erneut nichts an.  
   
--   IDL-Dateien (.idl), die COM-Schnittstellen und Typbibliotheken definieren, werden in Diagrammen nicht angezeigt, sofern sie nicht in systemeigenen C++-Code kompiliert werden.  
+- IDL-Dateien (.idl), die COM-Schnittstellen und Typbibliotheken definieren, werden in Diagrammen nicht angezeigt, sofern sie nicht in systemeigenen C++-Code kompiliert werden.  
   
--   Klassen-Designer unterstützt keine globale Funktionen und Variablen.  
+- Klassen-Designer unterstützt keine globale Funktionen und Variablen.  
   
--   Klassen-Designer unterstützt keine Unions. Dies ist eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist.  
+- Klassen-Designer unterstützt keine Unions. Dies ist eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist.  
   
--   Klassen-Designer zeigt keine grundlegenden Datentypen wie `int` und `char` an.  
+- Klassen-Designer zeigt keine grundlegenden Datentypen wie `int` und `char` an.  
   
--   Klassen-Designer zeigt keine Typen an, die außerhalb des aktuellen Projekts definiert sind, wenn das Projekt keinen richtigen Verweise auf diese Typen besitzt.  
+- Klassen-Designer zeigt keine Typen an, die außerhalb des aktuellen Projekts definiert sind, wenn das Projekt keinen richtigen Verweise auf diese Typen besitzt.  
   
--   Klassen-Designer kann geschachtelte Typen anzeigen, jedoch keine Beziehungen zwischen einem geschachtelten Typ und anderen Typen.  
+- Klassen-Designer kann geschachtelte Typen anzeigen, jedoch keine Beziehungen zwischen einem geschachtelten Typ und anderen Typen.  
   
--   Klassen-Designer kann keine Typen anzeigen, die "void" sind oder von einem void-Typ abgeleitet sind.  
+- Klassen-Designer kann keine Typen anzeigen, die "void" sind oder von einem void-Typ abgeleitet sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md)   

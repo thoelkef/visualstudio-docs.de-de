@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053805"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Exemplarische Vorgehensweise: Verwenden von IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
  Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden(jedoch nicht in der Professional oder Community Edition).  
   
-##  <a name="GettingStarted"></a> Verwenden von IntelliTrace nur mit  Ereignissen  
+## <a name="GettingStarted"></a> Verwenden von IntelliTrace nur mit  Ereignissen  
  Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. IntelliTrace-Ereignisse sind Debuggerereignisse, Ausnahmen, .NET Framework-Ereignisse und andere Systemereignisse. Bevor Sie mit dem Debuggen beginnen, sollten Sie bestimmte Ereignisse aktivieren oder deaktivieren, um die von IntelliTrace aufgezeichneten Ereignisse zu steuern. Weitere Informationen finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
  Die folgenden Schritte zeigen das Debuggen nur mit IntelliTrace-Ereignissen:  
   
-1.  Aktivieren Sie das IntelliTrace-Ereignis für den Dateizugriff. Wechseln Sie zur Seite **Extras / Optionen / IntelliTrace / IntelliTrace-Ereignisse** , und erweitern Sie die Kategorie **Datei** . Aktivieren Sie die Ereigniskategorie **Datei** . Dadurch werden alle Dateiereignisse (Zugriff, Schließen, Löschen) überprüft.  
+1. Aktivieren Sie das IntelliTrace-Ereignis für den Dateizugriff. Wechseln Sie zur Seite **Extras / Optionen / IntelliTrace / IntelliTrace-Ereignisse** , und erweitern Sie die Kategorie **Datei** . Aktivieren Sie die Ereigniskategorie **Datei** . Dadurch werden alle Dateiereignisse (Zugriff, Schließen, Löschen) überprüft.  
   
-2.  Erstellen Sie eine C#- Konsolenanwendung. Fügen Sie in der Datei "Program.cs" die folgende `using` -Anweisung hinzu:  
+2. Erstellen Sie eine C#- Konsolenanwendung. Fügen Sie in der Datei "Program.cs" die folgende `using` -Anweisung hinzu:  
   
     ```csharp  
     using System.IO;  
     ```  
   
-3.  Erstellen Sie ein <xref:System.IO.FileStream> -Element in der Main-Methode, lesen Sie es aus, schließen Sie es, und löschen Sie die Datei. Fügen Sie eine weitere Zeile hinzu, um einen Haltepunkt festlegen zu können:  
+3. Erstellen Sie ein <xref:System.IO.FileStream> -Element in der Main-Methode, lesen Sie es aus, schließen Sie es, und löschen Sie die Datei. Fügen Sie eine weitere Zeile hinzu, um einen Haltepunkt festlegen zu können:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -50,14 +50,14 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
     }  
     ```  
   
-4.  Legen Sie einen Haltepunkt auf `Console.WriteLine("done");`fest.  
+4. Legen Sie einen Haltepunkt auf `Console.WriteLine("done");`fest.  
   
-5.  Starten Sie das Debuggen wie gewohnt. (Drücken Sie **F5** , oder klicken Sie auf **Debuggen / Debugging starten**.  
+5. Starten Sie das Debuggen wie gewohnt. (Drücken Sie **F5** , oder klicken Sie auf **Debuggen / Debugging starten**.  
   
     > [!TIP]
     >  Halten Sie während des Debuggens die Fenster **Lokal** und **Auto** geöffnet, um die Werte darin anzuzeigen und aufzuzeichnen.  
   
-6.  Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen / Fenster / IntelliTrace-Ereignisse**.  
+6. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen / Fenster / IntelliTrace-Ereignisse**.  
   
      Wechseln Sie im Fenster **Diagnosetools** zur Registerkarte **Ereignisse** (es sollten drei Registerkarten vorhanden sein: **Ereignisse**, **Speicherauslastung**und **CPU-Auslastung**). Die Registerkarte **Ereignisse** zeigt eine chronologische Liste aller Ereignisse, die mit dem letzten Ereignis endet, bevor die Ausführung vom Debugger unterbrochen wurde. Es sollte ein Ereignis namens **Access WordSearchInputs.txt**angezeigt werden.  
   
@@ -65,7 +65,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
      ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
-7.  Wählen Sie das Ereignis aus, um die Details zu erweitern.  
+7. Wählen Sie das Ereignis aus, um die Details zu erweitern.  
   
      Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
   
@@ -79,19 +79,19 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
   
      ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
-8.  Wenn Sie den Fehler nicht finden, überprüfen Sie andere Ereignisse, die zu dem Fehler geführt haben. Sie können auch veranlassen, dass IntelliTrace Aufrufinformationen aufzeichnet, damit Sie die Funktionsaufrufe schrittweise durchlaufen können.  
+8. Wenn Sie den Fehler nicht finden, überprüfen Sie andere Ereignisse, die zu dem Fehler geführt haben. Sie können auch veranlassen, dass IntelliTrace Aufrufinformationen aufzeichnet, damit Sie die Funktionsaufrufe schrittweise durchlaufen können.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>Verwenden von IntelliTrace mit  Ereignissen und Funktionsaufrufen  
  IntelliTrace kann neben Ereignissen auch Funktionsaufrufe aufzeichnen. Auf diese Weise können Sie den Verlauf der Aufrufliste anzeigen und Aufrufe in Ihrem Code schrittweise durchlaufen. IntelliTrace zeichnet Daten wie z. B. Funktionsnamen, Einstiegs- und Endpunkte von Funktionen sowie bestimmte Parameter- und Rückgabewerte auf. Finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
-1.  Aktivieren Sie Aufrufauflistung ein. Wählen Sie unter **Extras / Optionen / IntelliTrace / Allgemein**die Option **IntelliTrace-Ereignis- und -Aufrufinformationen**aus. IntelliTrace beginnt beim Start der nächsten Debugsitzung mit dem Sammeln dieser Informationen.  
+1. Aktivieren Sie Aufrufauflistung ein. Wählen Sie unter **Extras / Optionen / IntelliTrace / Allgemein**die Option **IntelliTrace-Ereignis- und -Aufrufinformationen**aus. IntelliTrace beginnt beim Start der nächsten Debugsitzung mit dem Sammeln dieser Informationen.  
   
     > [!TIP]
     >  Dies kann zu einer Verlangsamung der Anwendung und zu einer Vergrößerung aller auf dem Datenträger gespeicherten IntelliTrace-Protokolldateien (ITRACE-Dateien) führen. Um möglichst viele Aufrufdaten abzurufen, die Auswirkungen jedoch möglichst gering zu halten, zeichnen Sie nur die Daten aus den Modulen auf, die für Sie von Interesse sind. Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Extras / Optionen / IntelliTrace / Erweitert**, und geben Sie die maximale Menge an Datenträgerspeicherplatz an. Der Standardwert ist 250 MB.  
   
-2.  Beginnen Sie mit dem Debuggen der im vorherigen Abschnitt erstellten C#-Konsolenanwendung. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen / Fenster / IntelliTrace-Ereignisse**.  
+2. Beginnen Sie mit dem Debuggen der im vorherigen Abschnitt erstellten C#-Konsolenanwendung. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen / Fenster / IntelliTrace-Ereignisse**.  
   
-3.  Wechseln Sie zur Registerkarte **Aufrufe** .  
+3. Wechseln Sie zur Registerkarte **Aufrufe** .  
   
      Nun sehen Sie die Funktionsaufrufe Ihrer Anwendung, die mit dem Stammaufruf (in der aktuellen Lösung der Main-Einstiegspunkt) beginnen und an der Stelle enden, an der die Ausführung unterbrochen wurde.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059135"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Angeben eines Support-URLs für eine einzelne erforderliche Komponente  
   
-1.  Öffnen Sie das Anwendungsmanifest (die Manifest-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung in einem Text-Editor.  
+1. Öffnen Sie das Anwendungsmanifest (die Manifest-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung in einem Text-Editor.  
   
-2.  Für ein erforderliches Betriebssystem hinzufügen der `supportUrl` -Attribut auf die `dependentOS` Element:  
+2. Für ein erforderliches Betriebssystem hinzufügen der `supportUrl` -Attribut auf die `dependentOS` Element:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
       </dependency>  
     ```  
   
-3.  Für eine Voraussetzung für eine bestimmte Version der common Language Runtime, Hinzufügen der `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
+3. Für eine Voraussetzung für eine bestimmte Version der common Language Runtime, Hinzufügen der `supportUrl` -Attribut auf die `dependentAssembly` Eintrag, der angibt, die common Language Runtime-Abhängigkeit:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
       </dependency>  
     ```  
   
-4.  Legen Sie für eine Voraussetzung für eine Assembly, die im globalen Assemblycache vorinstalliert sein muss, die `supportUrl` für die `dependentAssembly` Element, das die erforderliche Assembly angibt:  
+4. Legen Sie für eine Voraussetzung für eine Assembly, die im globalen Assemblycache vorinstalliert sein muss, die `supportUrl` für die `dependentAssembly` Element, das die erforderliche Assembly angibt:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
       </dependency>  
     ```  
   
-5.  Dies ist optional. Für Anwendungen, die .NET Framework 4, öffnen Sie das Bereitstellungsmanifest (die Application-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung in einem Text-Editor.  
+5. Dies ist optional. Für Anwendungen, die .NET Framework 4, öffnen Sie das Bereitstellungsmanifest (die Application-Datei) für Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung in einem Text-Editor.  
   
-6.  Voraussetzung für .NET Framework 4, Hinzufügen der `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
+6. Voraussetzung für .NET Framework 4, Hinzufügen der `supportUrl` -Attribut auf die `compatibleFrameworks` Element:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
     </compatibleFrameworks>  
     ```  
   
-7.  Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden Sie Mage.exe oder MageUI.exe SDK-tools zum Ausführen dieser Aufgabe, als diese Dateien mithilfe von Neugenerieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Nachdem Sie das Anwendungsmanifest manuell geändert haben, müssen Sie erneut das Anwendungsmanifest, das mit Ihrer digitalen Zertifikat signieren und dann aktualisieren und erneut signieren sowie das Bereitstellungsmanifest. Verwenden Sie Mage.exe oder MageUI.exe SDK-tools zum Ausführen dieser Aufgabe, als diese Dateien mithilfe von Neugenerieren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] manuellen Änderungen löscht. Weitere Informationen zur Verwendung von Mage.exe zum erneuten Signieren von Manifesten finden Sie unter [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifeste](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
  Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit markiert ist.  

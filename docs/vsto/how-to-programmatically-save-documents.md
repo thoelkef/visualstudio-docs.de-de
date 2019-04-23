@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e8a4e1c44928663d0d055d84899c60b968f90a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056275"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Vorgehensweise: Programmgesteuertes Speichern von Dokumenten
   Es gibt mehrere Möglichkeiten, Microsoft Office Word-Dokumente zu speichern. Sie können ein Dokument speichern, ohne den Namen des Dokuments zu ändern, oder Sie können ein Dokument mit einem neuen Namen speichern.
@@ -29,7 +29,7 @@ ms.locfileid: "56636462"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>Zum Speichern des Dokuments einer Anpassung auf Dokumentebene zugeordnet
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.Save%2A> -Methode der <xref:Microsoft.Office.Tools.Word.Document> -Klasse auf. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisDocument` -Klasse im Projekt aus.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.Save%2A> -Methode der <xref:Microsoft.Office.Tools.Word.Document> -Klasse auf. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisDocument` -Klasse im Projekt aus.
 
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
@@ -45,7 +45,7 @@ ms.locfileid: "56636462"
 
 ### <a name="to-save-a-document-specified-by-name"></a>Zum Speichern eines Dokuments anhand des Namens
 
-1.  Verwenden Sie den Namen des Dokuments als Argument an die <xref:Microsoft.Office.Interop.Word.Documents> Auflistung. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es aus der Klasse `ThisDocument` oder `ThisAddIn` in Ihrem Projekt aus.
+1. Verwenden Sie den Namen des Dokuments als Argument an die <xref:Microsoft.Office.Interop.Word.Documents> Auflistung. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es aus der Klasse `ThisDocument` oder `ThisAddIn` in Ihrem Projekt aus.
 
      [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
      [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
@@ -58,7 +58,7 @@ ms.locfileid: "56636462"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Um das Dokument mit einer Anpassung auf Dokumentebene mit einem neuen Namen zu speichern.
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode der `ThisDocument` Klasse in Ihrem Projekt mit einem vollqualifizierten Pfad und Dateiname. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es über die `ThisDocument` -Klasse aus.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode der `ThisDocument` Klasse in Ihrem Projekt mit einem vollqualifizierten Pfad und Dateiname. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es über die `ThisDocument` -Klasse aus.
 
     > [!NOTE]
     >  Die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode löst eine Ausnahme aus, wenn ein Zielverzeichnis nicht vorhanden ist oder liegen andere Probleme vor, das Speichern einer Datei. Es hat sich bewährt, verwenden Sie eine **try … Catch** -Block um die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode oder in ein aufrufende Methode.
@@ -68,7 +68,7 @@ ms.locfileid: "56636462"
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>Um ein systemeigenes Dokument mit einem neuen Namen zu speichern.
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Methode der <xref:Microsoft.Office.Interop.Word.Document> , die gespeichert werden soll, verwenden einen vollqualifizierten Pfad und Namen. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Methode der <xref:Microsoft.Office.Interop.Word.Document> , die gespeichert werden soll, verwenden einen vollqualifizierten Pfad und Namen. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben.
 
      Im folgenden Codebeispiel wird speichert das aktive Dokument unter einem neuen Namen ein. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es aus der Klasse `ThisDocument` oder `ThisAddIn` in Ihrem Projekt aus.
 
@@ -81,9 +81,9 @@ ms.locfileid: "56636462"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Codebeispiel benötigen Sie Folgendes:
 
--   Um ein Dokument anhand des Namens zu speichern, ein Dokument namens *NewDocument.doc* muss vorhanden sein, in ein Verzeichnis namens *Test* auf Laufwerk C.
+- Um ein Dokument anhand des Namens zu speichern, ein Dokument namens *NewDocument.doc* muss vorhanden sein, in ein Verzeichnis namens *Test* auf Laufwerk C.
 
--   Um ein Dokument mit einem neuen Namen speichern, ein Verzeichnis namens *Test* muss vorhanden sein, auf Laufwerk C.
+- Um ein Dokument mit einem neuen Namen speichern, ein Verzeichnis namens *Test* muss vorhanden sein, auf Laufwerk C.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Programmgesteuertes Schließen von Dokumenten](../vsto/how-to-programmatically-close-documents.md)

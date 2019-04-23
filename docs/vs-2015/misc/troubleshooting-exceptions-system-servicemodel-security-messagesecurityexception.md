@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058875"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException
 Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst, wenn [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] feststellt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:  
   
--   Sie verwenden einen WCF-Dienstverweis über eine Remoteverbindung, z. B. eine Remotedesktopverbindung oder Terminal Services, um mit einem WCF-Dienst (.svc) in einem Website- oder Webanwendungsprojekt zu kommunizieren.  
+- Sie verwenden einen WCF-Dienstverweis über eine Remoteverbindung, z. B. eine Remotedesktopverbindung oder Terminal Services, um mit einem WCF-Dienst (.svc) in einem Website- oder Webanwendungsprojekt zu kommunizieren.  
   
--   Sie haben keine Administratorberechtigungen auf der Remotewebsite.  
+- Sie haben keine Administratorberechtigungen auf der Remotewebsite.  
   
--   Anforderungen an localhost auf der Remotewebsite werden vom [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server behandelt.  
+- Anforderungen an localhost auf der Remotewebsite werden vom [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server behandelt.  
   
 ## <a name="associated-tips"></a>Tipps  
  **NTLM-Authentifizierungsprobleme zu beheben, wenn Sie den ASP.Net Development Server verwenden.**  
@@ -78,11 +78,11 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
   
 #### <a name="to-turn-off-ntlm-security"></a>So deaktivieren Sie die NTLM-Sicherheit  
   
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Websitenamen, und klicken Sie dann auf **Eigenschaftenseiten**.  
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Websitenamen, und klicken Sie dann auf **Eigenschaftenseiten**.  
   
-2.  Wählen Sie **Startoptionen**aus, und deaktivieren Sie dann das Kontrollkästchen **NTLM-Authentifizierung** .  
+2. Wählen Sie **Startoptionen**aus, und deaktivieren Sie dann das Kontrollkästchen **NTLM-Authentifizierung** .  
   
-3.  Klicken Sie auf **OK**.  
+3. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

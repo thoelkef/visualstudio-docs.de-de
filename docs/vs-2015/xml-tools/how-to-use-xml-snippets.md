@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055261"
 ---
 # <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML-Ausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,46 +31,46 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>So fügen Sie Ausschnitte über das Kontextmenü ein  
   
-1.  Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
+1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
   
-2.  Mit der rechten Maustaste, und wählen Sie **Ausschnitt einfügen**.  
+2. Mit der rechten Maustaste, und wählen Sie **Ausschnitt einfügen**.  
   
      Es wird eine Liste der verfügbaren XML-Ausschnitte angezeigt.  
   
-3.  Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>So fügen Sie Ausschnitte über das IntelliSense-Menü ein  
   
-1.  Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
+1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
   
-2.  Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Ausschnitt einfügen**.  
+2. Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Ausschnitt einfügen**.  
   
      Es wird eine Liste der verfügbaren XML-Ausschnitte angezeigt.  
   
-3.  Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>So fügen Sie Ausschnitte über die "Wort vervollständigen"-Liste von IntelliSense ein  
   
-1.  Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
+1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
   
-2.  Beginnen Sie mit dem Eingeben des XML-Ausschnitts, der der Datei hinzugefügt werden soll. Wenn die automatische Vervollständigung aktiviert ist, wird die Wort vervollständigen-Liste von IntelliSense angezeigt. Wenn dies nicht der Fall ist, drücken Sie STRG+LEERTASTE, um das Feature zu aktivieren.  
+2. Beginnen Sie mit dem Eingeben des XML-Ausschnitts, der der Datei hinzugefügt werden soll. Wenn die automatische Vervollständigung aktiviert ist, wird die Wort vervollständigen-Liste von IntelliSense angezeigt. Wenn dies nicht der Fall ist, drücken Sie STRG+LEERTASTE, um das Feature zu aktivieren.  
   
-3.  Wählen Sie den XML-Ausschnitt aus der Wort vervollständigen-Liste aus.  
+3. Wählen Sie den XML-Ausschnitt aus der Wort vervollständigen-Liste aus.  
   
-4.  Drücken Sie die TAB-Taste zweimal, um den XML-Ausschnitt aufzurufen.  
+4. Drücken Sie die TAB-Taste zweimal, um den XML-Ausschnitt aufzurufen.  
   
 > [!NOTE]
 >  Möglicherweise können XML-Ausschnitte in einigen Fällen nicht aufgerufen werden. Wenn Sie z. B. versuchen, ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens einzufügen, generiert der Editor keinen XML-Ausschnitt. Wenn ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens verwendet wird, sind die erforderlichen Attribute oder Unterelemente nicht vorhanden, sodass der Editor über keine Daten zum Einfügen verfügt.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>So fügen Sie Ausschnitte mithilfe von Abkürzungsnamen ein  
   
-1.  Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
+1. Platzieren Sie den Cursor an der Stelle, an der der XML-Ausschnitt eingefügt werden soll.  
   
-2.  Geben Sie im Editorbereich `<` ein.  
+2. Geben Sie im Editorbereich `<` ein.  
   
-3.  Drücken Sie ESC, um die Wort vervollständigen-Liste von IntelliSense zu schließen.  
+3. Drücken Sie ESC, um die Wort vervollständigen-Liste von IntelliSense zu schließen.  
   
-4.  Geben Sie den Abkürzungsnamen des Ausschnitts ein, und drücken Sie TAB, um den XML-Ausschnitt aufzurufen.  
+4. Geben Sie den Abkürzungsnamen des Ausschnitts ein, und drücken Sie TAB, um den XML-Ausschnitt aufzurufen.  
   
 ## <a name="surround-with"></a>Umgeben mit  
  Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Umschließen mit** Befehl.  
@@ -80,23 +80,23 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>So verwenden Sie "Umgeben mit" über das Kontextmenü  
   
-1.  Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.  
+1. Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.  
   
-2.  Mit der rechten Maustaste, und wählen Sie **Umschließen mit**.  
+2. Mit der rechten Maustaste, und wählen Sie **Umschließen mit**.  
   
      Eine Liste der verfügbaren Umgeben mit-XML-Ausschnitte wird angezeigt.  
   
-3.  Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>So verwenden Sie "Umgeben mit" über das Intellisense-Menü  
   
-1.  Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.  
+1. Wählen Sie den Text aus, der im XML-Editor umgeben werden soll.  
   
-2.  Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Umschließen mit**.  
+2. Von der **bearbeiten** Startmenü **IntelliSense**, und wählen Sie dann **Umschließen mit**.  
   
      Eine Liste der verfügbaren Umgeben mit-XML-Ausschnitte wird angezeigt.  
   
-3.  Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
+3. Wählen Sie mit der Maus einen Ausschnitt aus der Liste aus, oder geben Sie den Namen des Ausschnitts ein, und drücken Sie die TAB-Taste oder die EINGABETASTE.  
   
 ## <a name="using-xml-snippets"></a>Verwenden von XML-Ausschnitten  
  Wenn Sie einen XML-Ausschnitt ausgewählt haben, wird der Text des Codeausschnitts automatisch an der Cursorposition eingefügt. Alle editierbaren Felder im Ausschnitt sind hervorgehoben, und das erste editierbare Feld wird automatisch markiert. Das aktuell markierte Feld ist geschachtelt.  

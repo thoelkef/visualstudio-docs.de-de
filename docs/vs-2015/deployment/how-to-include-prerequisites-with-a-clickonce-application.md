@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc9ba407e91ddc8125d2836c8e2bb4329d5ad91f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059071"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
 > [!NOTE]
 >  Zum Hinzufügen eines Installationspakets für .NET Framework finden Sie unter [Handbuch für die Bereitstellung von .NET Framework für Entwickler](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu  
+## <a name="Package"></a> So fügen Sie mit „Package.xml“ ein Installationspaket hinzu  
   
-1.  Öffnen Sie im Datei-Explorer den Ordner **Pakete**.  
+1. Öffnen Sie im Datei-Explorer den Ordner **Pakete**.  
   
      Der Pfad ist standardmäßig C:\Programme\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages auf einem 32-Bit-System und C:\Programme (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages auf einem 64-Bit-System.  
   
-2.  Öffnen Sie den Ordner für die erforderliche Komponente, die Sie hinzufügen möchten, und öffnen Sie dann den Sprachordner für die installierte Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (z.B. **en** für Englisch).  
+2. Öffnen Sie den Ordner für die erforderliche Komponente, die Sie hinzufügen möchten, und öffnen Sie dann den Sprachordner für die installierte Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (z.B. **en** für Englisch).  
   
-3.  Öffnen Sie im Editor die Datei **Package.xml**.  
+3. Öffnen Sie im Editor die Datei **Package.xml**.  
   
-4.  Suchen Sie die **Namen** -Element mit **http://go.microsoft.com/fwlink**, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
+4. Suchen Sie die **Namen** -Element mit **http://go.microsoft.com/fwlink**, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
   
     > [!NOTE]
     >  Wenn kein **Namen** Element enthält **http://go.microsoft.com/fwlink**öffnen die **Product.xml** Datei im Stammordner für die erforderliche Komponente, und suchen Sie die **Fwlink** Zeichenfolge.  
@@ -42,11 +42,11 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
     > [!IMPORTANT]
     >  Einige erforderliche Komponenten haben mehrere Installationspakete (z. B. für 32-Bit- oder 64-Bit-Systeme). Wenn mehrere **Name**-Elemente **fwlink** enthalten, müssen Sie die verbleibenden Schritte für jedes dieser Elemente überprüfen.  
   
-5.  Fügen Sie die URL in die Adressleiste des Browsers ein, und wählen Sie dann, wenn Sie zum Ausführen oder Speichern aufgefordert werden, **Speichern** aus.  
+5. Fügen Sie die URL in die Adressleiste des Browsers ein, und wählen Sie dann, wenn Sie zum Ausführen oder Speichern aufgefordert werden, **Speichern** aus.  
   
      In diesem Schritt wird die Installationsdatei auf den Computer heruntergeladen.  
   
-6.  Kopieren Sie die Datei in den Stammordner für die erforderliche Komponente.  
+6. Kopieren Sie die Datei in den Stammordner für die erforderliche Komponente.  
   
      Für die erforderliche Komponente von Windows Installer 4.5 kopieren Sie z. B. die Datei in den Ordner \Packages\WindowsInstaller4_5.  
   

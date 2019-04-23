@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056158"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generieren von Code aus UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
 
 2. In einem Klassendiagramm oder im **UML-Modell-Explorer**, auswählen von Elementen, die von dem Sie Code generieren möchten. Es stehen Ihnen folgende Auswahlmöglichkeiten zur Verfügung:  
 
-   -   Ein bestimmter Satz von Elementen.  
+   - Ein bestimmter Satz von Elementen.  
 
-   -   Ein Paket oder das Modell, aus dessen Inhalt Code generiert werden soll.  
+   - Ein Paket oder das Modell, aus dessen Inhalt Code generiert werden soll.  
 
-   -   Das Diagramm, in dem alle Elemente ausgewählt werden können.  
+   - Das Diagramm, in dem alle Elemente ausgewählt werden können.  
 
 3. Öffnen Sie das Kontextmenü für ein ausgewähltes Element, und wählen Sie dann **Code generieren**.  
 
@@ -71,7 +71,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
 
    Einige Validierungstests werden für das Modell angewendet, um sicherzustellen, dass es in C# übersetzt werden kann. Wenn diese Tests fehlschlagen, wird eine Fehlermeldung angezeigt, und die Codegenerierung wird nicht ausgeführt. Wenn Sie einen Validierungsmenübefehl erstellt haben, wird Code für kein Element generiert, für das der Validierungsbefehl fehlschlägt. Weitere Informationen finden Sie unter [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Standardcodegenerierung  
+## <a name="default"></a> Standardcodegenerierung  
  In diesem Abschnitt werden die Ergebnisse, die von erstellt sind zusammengefasst die **Code generieren** Befehl, es sei denn, Sie den Befehl nicht angepasst. Weitere Informationen finden Sie unter [Anpassen der Befehls ' Code generieren '](#custom).  
 
 - Ein C#-Typ wird für jeden Typ erzeugt, den Sie im UML-Modell ausgewählt haben. Jeder Typ befindet sich in einer separaten Codedatei unter dem **GeneratedCode** Ordner.  
@@ -126,7 +126,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
 
   Jedes Attribut und jeder Vorgang verfügt ebenfalls über Stereotypeigenschaften, die Sie festlegen können. Wenn Sie die Eigenschaften nicht auf einem neuen Attribut sehen, führen Sie **Code generieren**.  
 
-##  <a name="custom"></a> Anpassen der Befehls ' Code generieren '  
+## <a name="custom"></a> Anpassen der Befehls ' Code generieren '  
  Die **Code generieren** Befehl funktioniert, indem die Modellelemente, die mithilfe eines Satzes von Textvorlagen transformiert. Weitere Informationen zu Textvorlagen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).  
 
  Die Vorlagen werden in einem Satz von angegeben *textvorlagenbindungen*. Eine textvorlagenbindung gibt an, welche Vorlage angewendet werden soll, in dem die generierte Ausgabe eingefügt werden soll, und anderen Parametern der **Code generieren** Befehl.  
@@ -175,7 +175,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
 
 5. Sie können einem Element beliebig viele Bindungen anfügen.  
 
-##  <a name="writing"></a> Schreiben einer Textvorlage  
+## <a name="writing"></a> Schreiben einer Textvorlage  
  Sie können eigene Textvorlagen schreiben. Textvorlagen können Programmcode oder eine beliebige andere Art von Textdatei generieren.  
 
  Beginnen Sie am besten, indem Sie Kopien der Standardvorlagen ändern. Sie können die Vorladen aus den folgenden Speicherorten kopieren:  

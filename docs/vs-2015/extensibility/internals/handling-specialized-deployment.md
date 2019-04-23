@@ -11,12 +11,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f5913a8b269d767bf7f406c38761c3a56695256e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054806"
 ---
 # <a name="handling-specialized-deployment"></a>Behandlung einer speziellen Bereitstellung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Um eine spezielle Bereitstellung von einem Untertyp-Projekt zu behandeln  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> Methode, um die Umgebung zum Empfangen von Benachrichtigungen von bereitstellungsstatusereignissen zu registrieren.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> Methode, um die Umgebung zum Empfangen von Benachrichtigungen von bereitstellungsstatusereignissen zu registrieren.  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -78,7 +78,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> Methode, um die Registrierung der Umgebung zum Empfangen von Benachrichtigungen von bereitstellungsstatusereignissen abzubrechen.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> Methode, um die Registrierung der Umgebung zum Empfangen von Benachrichtigungen von bereitstellungsstatusereignissen abzubrechen.  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -96,7 +96,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> Methode zum Ausführen des Commitvorgangs, der spezifisch für Ihre Anwendung.  Diese Methode wird hauptsächlich für die Bereitstellung der Datenbank verwendet.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> Methode zum Ausführen des Commitvorgangs, der spezifisch für Ihre Anwendung.  Diese Methode wird hauptsächlich für die Bereitstellung der Datenbank verwendet.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -114,7 +114,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> Methode, um einen Rollbackvorgang auszuführen. Wenn diese Methode aufgerufen wird, muss das Bereitstellungsprojekt enthält Artefakte sind angemessenen Änderungen und Wiederherstellen des Zustands des Projekts. Diese Methode wird hauptsächlich für die Bereitstellung der Datenbank verwendet.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> Methode, um einen Rollbackvorgang auszuführen. Wenn diese Methode aufgerufen wird, muss das Bereitstellungsprojekt enthält Artefakte sind angemessenen Änderungen und Wiederherstellen des Zustands des Projekts. Diese Methode wird hauptsächlich für die Bereitstellung der Datenbank verwendet.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -132,7 +132,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> Methode, um festzustellen, ob ein Projekt einen Bereitstellungsvorgang starten kann.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> Methode, um festzustellen, ob ein Projekt einen Bereitstellungsvorgang starten kann.  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -165,7 +165,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> Methode, um zu bestimmen, und zwar unabhängig davon, ob ein Bereitstellungsvorgang erfolgreich abgeschlossen wurde.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> Methode, um zu bestimmen, und zwar unabhängig davon, ob ein Bereitstellungsvorgang erfolgreich abgeschlossen wurde.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -188,7 +188,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> Methode, um einen Bereitstellungsvorgang in einem separaten Thread startet. Fügen Sie den Code für Ihre anwendungsbereitstellung innerhalb der `Deploy` Methode.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> Methode, um einen Bereitstellungsvorgang in einem separaten Thread startet. Fügen Sie den Code für Ihre anwendungsbereitstellung innerhalb der `Deploy` Methode.  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -245,7 +245,7 @@ Die Bereitstellung ist ein optionaler Vorgang für Projekte. Beispielsweise unte
   
     ```  
   
--   Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> Methode, um einen Bereitstellungsvorgang beendet. Diese Methode wird aufgerufen, wenn ein Benutzer drückt die **Abbrechen** Schaltfläche während der Bereitstellung.  
+- Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> Methode, um einen Bereitstellungsvorgang beendet. Diese Methode wird aufgerufen, wenn ein Benutzer drückt die **Abbrechen** Schaltfläche während der Bereitstellung.  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  

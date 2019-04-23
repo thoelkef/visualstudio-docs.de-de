@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055380"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-apps auf Remotecomputern aus Visual Studio
 
 Sie können Visual Studio ausführen, Debuggen, profilerstellung und zum Testen einer app (Universelle Windows Plattform) auf einem anderen Computer oder Gerät verwenden. Ausführen von UWP-app auf einem Remotecomputer ist besonders hilfreich, wenn Visual Studio-Computer nicht mit UWP-spezifische Funktionen wie die Fingereingabe, GeoLocation und physische Ausrichtung unterstützt.
 
-##  <a name="BKMK_Prerequisites"></a> Erforderliche Komponenten
+## <a name="BKMK_Prerequisites"></a> Erforderliche Komponenten
 
 So debuggen Sie eine UWP-app auf einem Remotegerät in Visual Studio
 
@@ -35,7 +35,7 @@ So debuggen Sie eine UWP-app auf einem Remotegerät in Visual Studio
   - Einige Windows 10-Versionen starten, und führen die Remotetools automatisch. Andernfalls [installieren und Ausführen der Remotetools für Visual Studio](#BKMK_download).
   - Mobile für Windows 10-Geräte nicht erforderlich oder die Remoteserver-Verwaltungstools unterstützen.
 
-##  <a name="BKMK_ConnectVS"></a> Konfigurieren eines Visual Studio-Projekts für das Remotedebuggen
+## <a name="BKMK_ConnectVS"></a> Konfigurieren eines Visual Studio-Projekts für das Remotedebuggen
 <a name="BKMK_DirectConnect"></a> Verwenden Sie das Projekt **Eigenschaften** an das Remotegerät an, um eine Verbindung herstellen. Die Einstellungen unterscheiden sich je nach Programmiersprache.
 
 > [!CAUTION]
@@ -43,27 +43,27 @@ So debuggen Sie eine UWP-app auf einem Remotegerät in Visual Studio
 >
 >Auf Wunsch **Windows-Authentifizierung** für die **Authentifizierungstyp**, Sie müssen sich auf den Remotecomputer beim Debuggen. Der Remotedebugger muss auch unter ausgeführt werden **Windows-Authentifizierung** -Modus mit dem gleichen Benutzerkonto wie auf dem Visual Studio-Computer.
 
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Konfigurieren einer C# oder Visual Basic-Projekt für das Remotedebuggen
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Konfigurieren einer C# oder Visual Basic-Projekt für das Remotedebuggen
 
 1. Wählen Sie die C# oder Visual Basic-Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt** +  **Geben Sie**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
 
-1.  Klicken Sie auf die Registerkarte **Debuggen**.
+1. Klicken Sie auf die Registerkarte **Debuggen**.
 
-1.  Klicken Sie unter **Zielgerät**Option **Remotecomputer** für einen Remotecomputer, oder **Gerät** für ein direkt verbundene Mobile für Windows 10-Gerät.
+1. Klicken Sie unter **Zielgerät**Option **Remotecomputer** für einen Remotecomputer, oder **Gerät** für ein direkt verbundene Mobile für Windows 10-Gerät.
 
-1.  Für einen Remotecomputer, geben Sie den Netzwerknamen oder die IP-Adresse in der **Remotecomputer** Feld, oder wählen **finden** , suchen Sie für das Gerät in die [Remoteverbindungen-Dialogfeld](#remote-connections).
+1. Für einen Remotecomputer, geben Sie den Netzwerknamen oder die IP-Adresse in der **Remotecomputer** Feld, oder wählen **finden** , suchen Sie für das Gerät in die [Remoteverbindungen-Dialogfeld](#remote-connections).
 
     ![Verwaltete Projekteigenschaften für Remotedebugging](../debugger/media/vsrun_managed_projprop_remote.png "verwalteten Debug-Projekteigenschaften")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren einer C++ Projekts für das Remotedebuggen
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurieren einer C++ Projekts für das Remotedebuggen
 
-1.  Wählen Sie die C++ Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
+1. Wählen Sie die C++ Projekt in Visual Studio **Projektmappen-Explorer** , und wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
 
-1.  Wählen Sie die **Debuggen** Registerkarte.
+1. Wählen Sie die **Debuggen** Registerkarte.
 
-3.  Klicken Sie unter **zu startender Debugger**Option **Remotecomputer** für einen Remotecomputer, oder **Gerät** für ein direkt verbundene Mobile für Windows 10-Gerät.
+3. Klicken Sie unter **zu startender Debugger**Option **Remotecomputer** für einen Remotecomputer, oder **Gerät** für ein direkt verbundene Mobile für Windows 10-Gerät.
 
-1.  Für eine remote-Computer eingeben, oder wählen Sie den Netzwerknamen oder die IP-Adresse in der **Computername** Feld oder die Drop nach unten, und wählen **suchen** , suchen Sie für das Gerät in die [RAS-Verbindungen (Dialogfeld) ](#remote-connections).
+1. Für eine remote-Computer eingeben, oder wählen Sie den Netzwerknamen oder die IP-Adresse in der **Computername** Feld oder die Drop nach unten, und wählen **suchen** , suchen Sie für das Gerät in die [RAS-Verbindungen (Dialogfeld) ](#remote-connections).
 
     ![C++-Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "Debuggen von C++-Projekteigenschaften")
 
@@ -92,7 +92,7 @@ Für Visual Studio zum Debuggen von apps auf einem Remotecomputer befindet muss 
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-##  <a name="BKMK_RunRemoteDebug"></a> Remotedebuggen von UWP-apps
+## <a name="BKMK_RunRemoteDebug"></a> Remotedebuggen von UWP-apps
 
 Remotedebuggen funktioniert genauso wie das lokale Debuggen die folgenden Schritte ausführen.
 
