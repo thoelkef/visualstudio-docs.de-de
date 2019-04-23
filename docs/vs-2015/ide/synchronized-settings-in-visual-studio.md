@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109003"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Synchronisierte Einstellungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Wenn Sie dasselbe Personalisierungskonto verwenden, um sich auf mehreren Compute
 ## <a name="synchronized-settings"></a>Synchronisierte Einstellungen
  Standardmäßig werden die folgenden Einstellungen synchronisiert:
 
--   Entwicklungseinstellungen (Sie müssen eine Reihe von Einstellungen auswählen, wenn Sie Visual Studio zum ersten Mal ausführen; die Auswahl kann jedoch jederzeit geändert werden. Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio (Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Entwicklungseinstellungen (Sie müssen eine Reihe von Einstellungen auswählen, wenn Sie Visual Studio zum ersten Mal ausführen; die Auswahl kann jedoch jederzeit geändert werden. Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio (Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
--   Im Folgenden finden Sie die Optionen auf den Seiten **Tools &#124; Optionen**:
+- Im Folgenden finden Sie die Optionen auf den Seiten **Tools &#124; Optionen**:
 
-    -   **Design** und Menüleisten-Schreibweiseneinstellungen auf der Optionsseite **Umgebung** > **Allgemein**
+    - **Design** und Menüleisten-Schreibweiseneinstellungen auf der Optionsseite **Umgebung** > **Allgemein**
 
-    -   Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
+    - Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
 
-    -   Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
+    - Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
 
-    -   Alle Einstellungen auf der Optionsseite **Umgebung, Registerkarten und Fenster**
+    - Alle Einstellungen auf der Optionsseite **Umgebung, Registerkarten und Fenster**
 
-    -   Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
+    - Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
 
-    -   Alle Einstellungen auf den Optionsseiten des **Text-Editors**
+    - Alle Einstellungen auf den Optionsseiten des **Text-Editors**
 
--   Alle Einstellungen auf den Optionsseiten für den XAML-Designer
+- Alle Einstellungen auf den Optionsseiten für den XAML-Designer
 
--   Benutzerdefinierte Befehlsaliase. Weitere Informationen zur Definition von Befehlsaliasen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).
+- Benutzerdefinierte Befehlsaliase. Weitere Informationen zur Definition von Befehlsaliasen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).
 
--   Benutzerdefinierte Fensterlayouts auf der Seite **Fenster &#124; Fensterlayouts verwalten**
+- Benutzerdefinierte Fensterlayouts auf der Seite **Fenster &#124; Fensterlayouts verwalten**
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Deaktivieren der synchronisierten Einstellungen für einen bestimmten Computer
  Die synchronisierten Einstellungen für Visual Studio sind standardmäßig aktiviert. Sie können die synchronisierten Einstellungen auf einem Computer deaktivieren, indem Sie zur Seite **Tools &#124; Optionen &#124; Umgebung &#124; Synchronisierte Einstellungen** wechseln und das Kontrollkästchen deaktivieren.  Angenommen, Sie möchten, dass die Einstellungen von Visual Studio auf Computer A nicht synchronisiert werden. So werden alle auf Computer A vorgenommenen Änderungen weder auf Computer B noch auf Computer C angezeigt. Computer B und Computer C nehmen weiterhin eine Synchronisierung miteinander vor, jedoch nicht mit Computer A.

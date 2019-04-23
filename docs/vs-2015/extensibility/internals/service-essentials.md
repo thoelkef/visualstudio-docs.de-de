@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111597"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
   
  Dienste verfügen über keine ermittelbarkeit. Aus diesem Grund benötigen Sie die Dienst-ID (SID) eines Diensts, die Sie nutzen möchten, und Sie müssen wissen, welche Schnittstellen es bietet. Die Referenzdokumentation für den Dienst stellt diese Informationen bereit.  
   
--   VSPackages, die Dienste bereitstellen, werden als Dienstanbieter bezeichnet.  
+- VSPackages, die Dienste bereitstellen, werden als Dienstanbieter bezeichnet.  
   
--   Dienste, die anderen VSPackages bereitgestellt werden, werden als globale Dienste bezeichnet.  
+- Dienste, die anderen VSPackages bereitgestellt werden, werden als globale Dienste bezeichnet.  
   
--   Dienste, die nur für das VSPackage, das sie implementiert, oder auf ein beliebiges Objekt damit erstellten verfügbar sind, werden als lokale Dienste bezeichnet.  
+- Dienste, die nur für das VSPackage, das sie implementiert, oder auf ein beliebiges Objekt damit erstellten verfügbar sind, werden als lokale Dienste bezeichnet.  
   
--   Dienste, die integrierten Dienste oder Dienste von anderen Paketen zu ersetzen, werden als dienstüberschreibungen bezeichnet.  
+- Dienste, die integrierten Dienste oder Dienste von anderen Paketen zu ersetzen, werden als dienstüberschreibungen bezeichnet.  
   
--   Dienste oder dienstüberschreibungen, bei Bedarf geladen werden, die der Dienstanbieter ist, also geladen, wenn der bereitgestellte Dienst von einem anderen VSPackage angefordert wird.  
+- Dienste oder dienstüberschreibungen, bei Bedarf geladen werden, die der Dienstanbieter ist, also geladen, wenn der bereitgestellte Dienst von einem anderen VSPackage angefordert wird.  
   
--   Um das bedarfsgesteuerte Laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Registrieren von Diensten](../../misc/registering-services.md).  
+- Um das bedarfsgesteuerte Laden zu unterstützen, registriert ein Dienstanbieter seine globalen Dienste mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Registrieren von Diensten](../../misc/registering-services.md).  
   
--   Verwenden Sie nach dem Erwerb eines Diensts [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (nicht verwaltetem Code) oder umwandeln (verwalteter Code), um die gewünschte Schnittstelle, z. B. zu erhalten:  
+- Verwenden Sie nach dem Erwerb eines Diensts [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (nicht verwaltetem Code) oder umwandeln (verwalteter Code), um die gewünschte Schnittstelle, z. B. zu erhalten:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sic
   
     ```  
   
--   Verwalteter Code verweist auf einen Dienst anhand des Typs, auf, während an einen Dienst durch ihre GUID nicht verwalteter Code bezeichnet.  
+- Verwalteter Code verweist auf einen Dienst anhand des Typs, auf, während an einen Dienst durch ihre GUID nicht verwalteter Code bezeichnet.  
   
--   Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lädt ein VSPackage, übergibt einen Dienstanbieter für dem VSPackage die VSPackage-Zugriff auf globale Dienste gewähren. Dies wird als "Positionierung" VSPackage bezeichnet.  
+- Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lädt ein VSPackage, übergibt einen Dienstanbieter für dem VSPackage die VSPackage-Zugriff auf globale Dienste gewähren. Dies wird als "Positionierung" VSPackage bezeichnet.  
   
--   VSPackages kann es sich um Dienstanbieter für die Objekte sein, die sie erstellen. Ein Formular könnte z. B. eine Anforderung für einen Dienst für die Farbe an die Rahmen, der der Anforderung übergeben kann senden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- VSPackages kann es sich um Dienstanbieter für die Objekte sein, die sie erstellen. Ein Formular könnte z. B. eine Anforderung für einen Dienst für die Farbe an die Rahmen, der der Anforderung übergeben kann senden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Verwaltete Objekte, die tief verschachtelt sind, oder überhaupt nicht positioniert können aufgerufen werden <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> für direkten Zugriff auf globale Dienste. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+- Verwaltete Objekte, die tief verschachtelt sind, oder überhaupt nicht positioniert können aufgerufen werden <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> für direkten Zugriff auf globale Dienste. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Liste der verfügbaren Dienste](../../extensibility/internals/list-of-available-services.md)   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ffc6f19a5b5d568968e95ee2f8b1b48feb619e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111167"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Vorgehensweise: Programmgesteuertes Sortieren von Daten in Arbeitsblättern
   Sie können Daten sortieren, die zur Laufzeit in Arbeitsblattbereichen und -listen enthalten sind. Der folgende Code sortiert einen mehrspaltigen Bereich namens `Fruits` nach den Daten in der ersten Spalte und anschließend nach den Daten in der zweiten Spalte.
@@ -40,7 +40,7 @@ ms.locfileid: "56645588"
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>So sortieren Sie Daten in einem ListObject-Steuerelement
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A>-Methode der <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A>-Eigenschaft des <xref:Microsoft.Office.Tools.Excel.ListObject>-Hoststeuerelements auf.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A>-Methode der <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A>-Eigenschaft des <xref:Microsoft.Office.Tools.Excel.ListObject>-Hoststeuerelements auf.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
@@ -49,14 +49,14 @@ ms.locfileid: "56645588"
 
 ### <a name="to-sort-data-in-a-native-range"></a>So sortieren Sie Daten in einem systemeigenen Bereich
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A>-Methode des systemeigenen Excel-<xref:Microsoft.Office.Interop.Excel.Range>-Steuerelements auf. Das folgende Beispiel erfordert ein systemeigenes Excel-Steuerelement namens `Fruits` in einem Arbeitsblatt.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A>-Methode des systemeigenen Excel-<xref:Microsoft.Office.Interop.Excel.Range>-Steuerelements auf. Das folgende Beispiel erfordert ein systemeigenes Excel-Steuerelement namens `Fruits` in einem Arbeitsblatt.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#23)]
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>So sortieren Sie Daten in einem ListObject-Steuerelement
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A>-Methode der <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A>-Eigenschaft des systemeigenen Excel-<xref:Microsoft.Office.Interop.Excel.ListObject>-Steuerelements auf. Im folgenden Beispiel wird vorausgesetzt, dass Sie über ein systemeigenes Excel-<xref:Microsoft.Office.Interop.Excel.ListObject>-Steuerelement namens `fruitList` im aktiven Arbeitsblatt verfügen.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A>-Methode der <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A>-Eigenschaft des systemeigenen Excel-<xref:Microsoft.Office.Interop.Excel.ListObject>-Steuerelements auf. Im folgenden Beispiel wird vorausgesetzt, dass Sie über ein systemeigenes Excel-<xref:Microsoft.Office.Interop.Excel.ListObject>-Steuerelement namens `fruitList` im aktiven Arbeitsblatt verfügen.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]

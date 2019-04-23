@@ -21,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eb2e58070a4be9d9dd5d70fdaddfd5eee997a41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112389"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office und SharePoint-Entwicklung in Visual Studio
   Sie können Microsoft Office und SharePoint erweitern, indem Sie eine einfache App oder ein Add-In erstellen, die Benutzer im [Office Store](https://store.office.com/) oder einem Unternehmenskatalog herunterladen, oder indem sie eine.NET Framework-basierte Lösung erstellen, die von Benutzern auf einem Computer installiert wird.
 
  In diesem Thema:
 
--   [Erstellen von Add-Ins für Office und SharePoint](#Apps)
+- [Erstellen von Add-Ins für Office und SharePoint](#Apps)
 
--   [Erstellen eines VSTO-Add-Ins](#Add-ins)
+- [Erstellen eines VSTO-Add-Ins](#Add-ins)
 
--   [Erstellen einer SharePoint-Lösung](#Solutions)
+- [Erstellen einer SharePoint-Lösung](#Solutions)
 
-##  <a name="Apps"></a> Erstellen von Add-Ins für Office und SharePoint
+## <a name="Apps"></a> Erstellen von Add-Ins für Office und SharePoint
  Office 2013 und SharePoint 2013 stellen ein neues Add-In-Modell vor, das Ihnen hilft, Add-Ins als Erweiterungen von Office und SharePoint zu erstellen, zu verteilen und damit Geld zu verdienen.  Diese Add-Ins können in Office oder SharePoint online ausgeführt werden, und Benutzer können von vielen Geräten mit ihnen interagieren.
 
  Erfahren Sie, wie Sie das neue [Office-Add-in-Modell](/office/dev/add-ins/overview/office-add-ins) der Office-Erfahrungen Ihrer Benutzer zu erweitern.
@@ -81,7 +81,7 @@ ms.locfileid: "56607056"
 |Vergleichen Sie Add-Ins für SharePoint mit herkömmlichen SharePoint-Lösungen.|[SharePoint-Add-ins im Vergleich mit SharePoint-Lösungen](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Wählen Sie aus, ob Sie SharePoint-Add-In oder eine SharePoint-Lösung erstellen möchten.|[Entscheiden Sie zwischen SharePoint-Add-ins und SharePoint-Lösungen](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-##  <a name="Add-ins"></a> Erstellen eines VSTO-Add-Ins
+## <a name="Add-ins"></a> Erstellen eines VSTO-Add-Ins
  Erstellen Sie ein VSTO-add-in für Office 2007 oder Office 2010 oder Office 2013 und Office 2016 mehr möglich, mit Office-add-ins erweitern. VSTO-Add-Ins können nur auf dem Desktop ausgeführt werden. Benutzer müssen VSTO-add-ins installieren, da sind in der Regel schwieriger bereitzustellen und zu unterstützen.  Allerdings kann das VSTO-Add-In stärker in Office integriert werden. Sie können z. B. die Office-Multifunktionsleiste Registerkarten und Steuerelemente hinzufügen und erweiterte Automatisierung-Aufgaben wie das Zusammenführen von Dokumenten oder das Ändern von Diagrammen durchführen. Sie können das .NET Framework einsetzen und C# und Visual Basic zur Interaktion mit Office-Objekten verwenden.
 
  Hier ist ein Beispiel für welche eines VSTO-add-Ins ausführen kann. Dieses VSTO-Add-In fügt Menübandsteuerelemente, einen benutzerdefinierten Aufgabenbereich und ein Dialogfeld zu PowerPoint hinzu.
@@ -90,12 +90,12 @@ ms.locfileid: "56607056"
 
  **Weitere Informationen**
 
-|An|Thema|
+|An|Lesen|
 |--------|----------|
 |Vergleichen Sie die verschiedenen Möglichkeiten, mit denen Sie Office erweitern können, und entscheiden Sie, ob Sie ein VSTO-Add-In oder ein Office-Add-In verwenden möchten.|[Roadmap für Office-Add-ins, VSTO und VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Erstellen eines VSTO-Add-Ins|[Mit Visual Studio erstellte VSTO-Add-Ins](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-##  <a name="Solutions"></a> Erstellen einer SharePoint-Lösung
+## <a name="Solutions"></a> Erstellen einer SharePoint-Lösung
  Erstellen Sie eine SharePoint-Lösung für SharePoint Foundation 2010 und SharePoint Server 2010 oder als Erweiterung von SharePoint 2013 und SharePoint 2016 hinausgeht, was mit einem SharePoint-add-in möglich ist.
 
  SharePoint-Lösungen erfordern lokale SharePoint-Farm-Server. Administratoren müssen sie installieren, und da Lösungen in SharePoint ausgeführt werden, können sie die Leistung des Servers beeinträchtigen. Allerdings bieten Lösungen einen tieferen Zugriff auf SharePoint-Objekte. Wenn Sie eine SharePoint-Lösung erstellen, können Sie außerdem das .NET Framework und C# und Visual Basic für die Interaktion mit SharePoint-Objekte verwenden.

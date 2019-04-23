@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27e9d1ce86064c23e3a293382ff7f83389d693f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109044"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden der Funktionen des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,59 +26,59 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
   
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>So erstellen Sie eine neue XML-Datei und ordnen ihr ein XML-Schema zu  
   
-1.  Auf der **Datei** Startmenü **neu**, und klicken Sie auf **Datei**.  
+1. Auf der **Datei** Startmenü **neu**, und klicken Sie auf **Datei**.  
   
-2.  Wählen Sie **XML-Datei** in die **Vorlagen** Bereich, und klicken Sie auf **öffnen**.  
+2. Wählen Sie **XML-Datei** in die **Vorlagen** Bereich, und klicken Sie auf **öffnen**.  
   
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Schemas** Feld.  
+3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Schemas** Feld.  
   
      Die **XSD-Schemas** Dialogfeld wird angezeigt.  
   
-4.  Klicken Sie auf **Hinzufügen**.  
+4. Klicken Sie auf **Hinzufügen**.  
   
      Die **XSD-Schema öffnen** Dialogfeld wird angezeigt.  
   
-5.  Wählen Sie die hireDate.xsd-Datei, und klicken Sie auf **öffnen**.  
+5. Wählen Sie die hireDate.xsd-Datei, und klicken Sie auf **öffnen**.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
      Das XML-Schema wird jetzt dem XML-Dokument zugeordnet. Mithilfe des XML-Schemas wird das Dokument validiert. Es wird auch von IntelliSense verwendet, um die Memberliste der gültigen Elemente aufzufüllen.  
   
 ### <a name="to-add-data"></a>So fügen Sie Daten hinzu  
   
-1.  Geben Sie im Editorbereich `<` ein.  
+1. Geben Sie im Editorbereich `<` ein.  
   
      In der Memberliste werden die möglichen Elemente angezeigt:  
   
-    -   **!--** zum Hinzufügen eines Kommentars.  
+    - **!--** zum Hinzufügen eines Kommentars.  
   
-    -   **! DOCTYPE** zum Hinzufügen eines Dokumenttyps.  
+    - **! DOCTYPE** zum Hinzufügen eines Dokumenttyps.  
   
-    -   **?** zum Hinzufügen einer Verarbeitungsanweisung.  
+    - **?** zum Hinzufügen einer Verarbeitungsanweisung.  
   
-    -   **Mitarbeiter** zum Hinzufügen eines Stammelements.  
+    - **Mitarbeiter** zum Hinzufügen eines Stammelements.  
   
-2.  Wählen Sie  **\<!--** einen Kommentarknoten hinzuzufügen, und drücken EINGABETASTE.  
+2. Wählen Sie  **\<!--** einen Kommentarknoten hinzuzufügen, und drücken EINGABETASTE.  
   
      Der Editor fügt ein Kommentar-Endtag ein und platziert den Cursor zwischen dem Start- und Endtag des Kommentars.  
   
-3.  Geben Sie in **XML-Testdatei**.  
+3. Geben Sie in **XML-Testdatei**.  
   
-4.  Geben Sie auf einer neuen Zeile `<`, und wählen Sie **Mitarbeiter** in der Memberliste aus.  
+4. Geben Sie auf einer neuen Zeile `<`, und wählen Sie **Mitarbeiter** in der Memberliste aus.  
   
      Im Editor wird der Anfang eines XML-Elements, `<employee`, hinzugefügt. An dieser Stelle können Sie dem Element Attribute hinzufügen, oder Sie können das Starttag schließen, indem Sie `>` eingeben.  
   
-5.  Geben Sie `>` ein, um das Tag zu schließen.  
+5. Geben Sie `>` ein, um das Tag zu schließen.  
   
-6.  Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die QuickInfo wird die Meldung angezeigt: Das Element "Employee" ist Inhalt unvollständig. Erwartet wurde 'ID'.  
+6. Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die QuickInfo wird die Meldung angezeigt: Das Element "Employee" ist Inhalt unvollständig. Erwartet wurde 'ID'.  
   
-7.  Typ `<` , und wählen Sie **ID** in der Memberliste aus. Geben Sie anschließend `>` ein.  
+7. Typ `<` , und wählen Sie **ID** in der Memberliste aus. Geben Sie anschließend `>` ein.  
   
      Der Editor fügt das XML-Element `<ID></ID>` hinzu und platziert den Cursor hinter dem ID-Starttag.  
   
-8.  Typ **Abc**.  
+8. Typ **Abc**.  
   
      Die **Abc** Text weist eine wellenförmige Unterstreichung. Die QuickInfo wird die Meldung angezeigt: Das Element "ID" hat einen ungültigen Wert gemäß seinem Datentyp.  
   
@@ -98,17 +98,17 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
   
 ### <a name="to-format-the-xml-document"></a>So formatieren Sie das XML-Dokument  
   
-1.  Wählen Sie die **Dokument formatieren** der XML-Editor-Symbolleiste die Schaltfläche.  
+1. Wählen Sie die **Dokument formatieren** der XML-Editor-Symbolleiste die Schaltfläche.  
   
      Das XML-Dokument wird neu formatiert.  
   
 ### <a name="to-save-the-xml-document"></a>So speichern Sie das XML-Dokument  
   
-1.  Von der **Datei** , wählen Sie im Menü **speichern**.  
+1. Von der **Datei** , wählen Sie im Menü **speichern**.  
   
      Die **Datei speichern unter** Dialogfeld wird angezeigt. Der Standarddateiname lautet 'XMLFile1'.  
   
-2.  Geben Sie den Dateinamen und Speicherort für das XML-Dokument aus, und klicken Sie auf **speichern**.  
+2. Geben Sie den Dateinamen und Speicherort für das XML-Dokument aus, und klicken Sie auf **speichern**.  
   
 ## <a name="hiredatexsd-file"></a>Die Datei "hireDate.xsd"  
  Bei der exemplarischen Vorgehensweise wird die folgende Schemadatei verwendet.  

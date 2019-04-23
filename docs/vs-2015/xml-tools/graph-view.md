@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110543"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 ## <a name="undoredo"></a>Rückgängig/Wiederholen  
  Die Funktion zum Rückgängigmachen bzw. Wiederholen ist in der Diagrammansicht für folgende Aktionen aktiviert:  
   
--   Hinzufügen eines einzelnen Knotens per Drag &amp; Drop  
+- Hinzufügen eines einzelnen Knotens per Drag &amp; Drop  
   
--   Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht  
+- Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht  
   
--   Löschen einzelner oder mehrerer Knoten  
+- Löschen einzelner oder mehrerer Knoten  
   
 ## <a name="zoom"></a>Zoom  
  Die Zoomfunktion befindet sich in der unteren rechten Ecke der Diagrammansicht.  

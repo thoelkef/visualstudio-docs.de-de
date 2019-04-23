@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be99c10a999ec190f538816e39eac411dc85544e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111193"
 ---
 # <a name="disk-operations-report-threads-view"></a>Bericht über Datenträgervorgänge (Threadansicht)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Im Bericht über Datenträgervorgänge werden Datenträger-E/A-Vorgänge in den 
   
  Für jeden Datenträgerzugriff, der für den Prozess durchgeführt wird, für den im derzeit angezeigten Zeitfenster ein Profil erstellt wird, werden folgende Informationen angezeigt:  
   
--   Name und PID des Prozesses, von dem der Datenträgerzugriff durchgeführt wurde  
+- Name und PID des Prozesses, von dem der Datenträgerzugriff durchgeführt wurde  
   
--   ID des Threads, von dem auf den Datenträger zugegriffen wurde  
+- ID des Threads, von dem auf den Datenträger zugegriffen wurde  
   
--   Name der Datei, auf die zugegriffen wurde  
+- Name der Datei, auf die zugegriffen wurde  
   
--   Anzahl der Lesevorgänge pro Datei  
+- Anzahl der Lesevorgänge pro Datei  
   
--   Anzahl der gelesenen Bytes  
+- Anzahl der gelesenen Bytes  
   
--   Latenz beim Lesen in Millisekunden  
+- Latenz beim Lesen in Millisekunden  
   
--   Anzahl von Schreibvorgängen  
+- Anzahl von Schreibvorgängen  
   
--   Anzahl der geschriebenen Bytes  
+- Anzahl der geschriebenen Bytes  
   
--   Latenz beim Schreiben in Millisekunden  
+- Latenz beim Schreiben in Millisekunden  
   
 ## <a name="see-also"></a>Siehe auch  
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

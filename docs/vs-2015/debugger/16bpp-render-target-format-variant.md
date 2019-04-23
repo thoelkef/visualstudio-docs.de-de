@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112376"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp-Renderzielformat-Variante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf DXGI_FORMA
 ## <a name="remarks"></a>Hinweise  
  Das Renderzielfomat wird mit jedem Aufruf von `ID3D11Device::CreateTexture2D`, der ein Renderziel erstellt, auf DXGI_FORMAT_B5G6R5_UNORM zurückgesetzt. Vor allem wird das Format überschrieben, wenn das in pDesc übergebene D3D11_TEXTURE2D_DESC-Objekt eines der folgenden Renderziele beschreibt:  
   
--   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_TARGET gesetzt.  
+- Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_TARGET gesetzt.  
   
--   Für das BindFlags-Member ist das Flag D3D11_BIND_DEPTH_STENCIL gelöscht.  
+- Für das BindFlags-Member ist das Flag D3D11_BIND_DEPTH_STENCIL gelöscht.  
   
--   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
+- Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
   
 ## <a name="restrictions-and-limitations"></a>Einschränkungen  
  Da das Format B5G6R5 über keinen Alpha-Kanal verfügt, werden Alpha-Inhalte von dieser Variante nicht beibehalten. Wenn das Rendering Ihrer App einen Alpha-Kanal in Ihrem Renderziel erfordert, können Sie nicht einfach zum Format B5G6R5 wechseln.  

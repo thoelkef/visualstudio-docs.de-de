@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109811"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
 ## <a name="adding-single-files-at-the-solution-level"></a>Hinzufügen von einzelnen Dateien auf Projektmappenebene  
  Manchmal haben Sie vielleicht eine Datei, auf die mehrere Projekte verweisen, oder die Text oder verschiedene Daten enthält, die logisch eher auf die Ebene der Projektmappe als unter ein bestimmtes Projekt gehören.  So fügen Sie einer Projektmappe ein einzelnes Element hinzu:  
   
-1.  Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten, und wählen Sie **Hinzufügen &#124; Neues Element** oder **Hinzufügen &#124; Vorhandenes Element** aus.  
+1. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten, und wählen Sie **Hinzufügen &#124; Neues Element** oder **Hinzufügen &#124; Vorhandenes Element** aus.  
   
 ## <a name="creating-empty-solutions"></a>Erstellen von leeren Projektmappen  
  Zwar muss sich ein Projekt in einer Projektmappe befinden, doch können Sie auch eine Projektmappe ohne Projekte erstellen.  
@@ -87,11 +87,11 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
   
 ##### <a name="to-delete-a-solution"></a>So löschen Sie eine Projektmappe  
   
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf die zu löschende Projektmappe, und wählen Sie **Ordner in Datei-Explorer öffnen**aus.  
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf die zu löschende Projektmappe, und wählen Sie **Ordner in Datei-Explorer öffnen**aus.  
   
-2.  Navigieren Sie im Datei-Explorer eine Ebene höher.  
+2. Navigieren Sie im Datei-Explorer eine Ebene höher.  
   
-3.  Wählen Sie das Verzeichnis mit der Projektmappe aus, und drücken Sie ENTF.  
+3. Wählen Sie das Verzeichnis mit der Projektmappe aus, und drücken Sie ENTF.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)   

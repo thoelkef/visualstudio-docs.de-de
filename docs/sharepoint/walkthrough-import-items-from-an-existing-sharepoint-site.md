@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110863"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren von Elementen aus einer vorhandenen SharePoint-Website in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
@@ -36,9 +36,9 @@ ms.locfileid: "56841740"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
+- Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Anpassen einer SharePoint-Websites
  In diesem Beispiel werden Sie erstellen und Anpassen eine SharePoint-Unterwebsite, indem eine neue Websitespalte hinzugefügt wird und erstellen eine weitere Unterwebsite zur späteren Verwendung. Sie werden später erste Unterwebsite in eine WSP-Datei exportieren und dann die benutzerdefinierte Website-Spalte in die zweite Unterwebsite mit dem WSP-Import-Projekt importieren.
@@ -79,23 +79,23 @@ ms.locfileid: "56841740"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>So exportieren Sie eine vorhandene SharePoint-Website
 
-1.  Wählen Sie in der SharePoint-Website **Standorteinstellungen** auf die **Websiteaktionen** Tab, um die Seite Siteeinstellungen anzeigen.
+1. Wählen Sie in der SharePoint-Website **Standorteinstellungen** auf die **Websiteaktionen** Tab, um die Seite Siteeinstellungen anzeigen.
 
-2.  In der **Websiteaktionen** Abschnitt wählen Sie die Seite Siteeinstellungen der **speichern-Website als Vorlage** Link.
+2. In der **Websiteaktionen** Abschnitt wählen Sie die Seite Siteeinstellungen der **speichern-Website als Vorlage** Link.
 
-3.  In der **Dateiname** geben **ExampleSite**, und klicken Sie in der **Vorlagennamen** Geben Sie **Beispielwebsite**.
+3. In der **Dateiname** geben **ExampleSite**, und klicken Sie in der **Vorlagennamen** Geben Sie **Beispielwebsite**.
 
-4.  In diesem Beispiel lassen den **Inhalte einschließen** Kontrollkästchen deaktivieren.
+4. In diesem Beispiel lassen den **Inhalte einschließen** Kontrollkästchen deaktivieren.
 
      Wenn Sie dieses Kontrollkästchen aktivieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] speichert Sie in der .wsp-Datei alle Listen und Dokumentbibliotheken und ihren Inhalt zu. Obwohl dies unter bestimmten Umständen nützlich ist, ist es nicht für dieses Beispiel erforderlich.
 
-5.  Wenn der Vorgang erfolgreich abgeschlossen wurde, wählen Sie die **Lösungskatalog** Link, um die .wsp-Datei anzuzeigen.
+5. Wenn der Vorgang erfolgreich abgeschlossen wurde, wählen Sie die **Lösungskatalog** Link, um die .wsp-Datei anzuzeigen.
 
      Zum Anzeigen der Solutions Gallery Seite höher, öffnen die **Websiteaktionen** im Menü wählen **Standorteinstellungen**, wählen Sie die **wechseln Sie zu Einstellungen des Standorts auf höchster Ebene** -link in der  **Verwaltung der Websitesammlung** aus, und wählen Sie dann die **Lösungen** -link in der **Galerien** Abschnitt.
 
-6.  Wählen Sie im Lösungskatalog der **ExampleSite** Link.
+6. Wählen Sie im Lösungskatalog der **ExampleSite** Link.
 
-7.  In der **Dateidownload** Dialogfeld auf die **speichern** aus, um die Datei auf Ihrem lokalen System standardmäßig im Ordner "Downloads" zu speichern.
+7. In der **Dateidownload** Dialogfeld auf die **speichern** aus, um die Datei auf Ihrem lokalen System standardmäßig im Ordner "Downloads" zu speichern.
 
 ## <a name="import-the-wsp-file"></a>Die WSP-Datei importieren
  Nun, Sie haben eine *.wsp* -Datei, die ein Element, die Sie möchten enthält (die benutzerdefinierte Spalte Test-Spalte) wiederverwenden, importieren die *.wsp* Datei für den Zugriff.
@@ -130,13 +130,13 @@ ms.locfileid: "56841740"
 
 ### <a name="to-deploy-the-project"></a>Um das Projekt bereitzustellen
 
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die **F5** Schlüssel zum Bereitstellen und Ausführen der *.wsp* Projekt importieren.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die **F5** Schlüssel zum Bereitstellen und Ausführen der *.wsp* Projekt importieren.
 
-2.  Öffnen Sie auf der SharePoint-Website die **Websiteaktionen** Menü, und wählen Sie dann **Standorteinstellungen** auf die Seite Siteeinstellungen anzeigen.
+2. Öffnen Sie auf der SharePoint-Website die **Websiteaktionen** Menü, und wählen Sie dann **Standorteinstellungen** auf die Seite Siteeinstellungen anzeigen.
 
-3.  In der **Galerien** Abschnitt der **Site Spalten** Link.
+3. In der **Galerien** Abschnitt der **Site Spalten** Link.
 
-4.  Führen Sie einen Bildlauf nach unten, um die **benutzerdefinierte Spalten** Abschnitt.
+4. Führen Sie einen Bildlauf nach unten, um die **benutzerdefinierte Spalten** Abschnitt.
 
      Beachten Sie, dass die benutzerdefinierte Website-Spalte, die Sie importiert haben, aus dem ersten SharePoint-Standort in der Liste angezeigt wird.
 

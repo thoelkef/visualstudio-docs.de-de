@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110324"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Vorgehensweise: Migrieren einer domänenspezifischen Sprache zu einer neuen Version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
 #### <a name="to-prepare-projects-for-migration"></a>Um Projekte für die Migration vorzubereiten.  
   
--   Stellen Sie sicher, dass die **csproj** und **sln** Dateien können geschrieben werden. Wenn sie sich unter quellcodeverwaltung sind, stellen Sie sicher, dass sie ausgecheckt sind.  
+- Stellen Sie sicher, dass die **csproj** und **sln** Dateien können geschrieben werden. Wenn sie sich unter quellcodeverwaltung sind, stellen Sie sicher, dass sie ausgecheckt sind.  
   
--   Erstellen Sie eine Kopie der Ordner, die Sie migrieren möchten.  
+- Erstellen Sie eine Kopie der Ordner, die Sie migrieren möchten.  
   
 ## <a name="migrating-a-collection-of-projects"></a>Migrieren Sie eine Sammlung von Projekten  
   
@@ -42,7 +42,7 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
 1. Starten Sie das Migrationstool DSL.  
   
-   -   Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:  
+   - Sie können Doppelklicken Sie auf das Tool im Windows-Explorer (oder Datei-Explorer), oder Sie können das Tool an einer Eingabeaufforderung starten. Das Tool ist an diesem Speicherort:  
   
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
@@ -54,37 +54,37 @@ Sie können Projekte, die definieren, und Verwenden einer domänenspezifischen S
   
 3. Überprüfen Sie die Struktur von Projekten, und deaktivieren Sie die Projekte, die Sie nicht konvertieren möchten.  
   
-   -   Wählen Sie ein Projekt oder eine Lösung, um eine Liste der Änderungen anzuzeigen, die das Tool machen werden.  
+   - Wählen Sie ein Projekt oder eine Lösung, um eine Liste der Änderungen anzuzeigen, die das Tool machen werden.  
   
        > [!NOTE]
        >  Die Kontrollkästchen, die neben den Ordnernamen angezeigt werden, haben keine Auswirkungen. Erweitern Sie die Ordner, um die Projekte und Lösungen überprüfen.  
   
 4. Konvertieren Sie die Projekte an.  
   
-   1.  Klicken Sie auf **konvertieren**.  
+   1. Klicken Sie auf **konvertieren**.  
   
         Vor jede Projektdatei konvertiert wird, wird eine Kopie des _Projekt_**csproj** als gespeicherter _Projekt_**. vs2008.csproj**  
   
         Eine Kopie aller _Lösung_**sln** als gespeicherter _Lösung_**. vs2008.sln**  
   
-   2.  Untersuchen Sie alle fehlerhaften Konvertierungen, die gemeldet werden.  
+   2. Untersuchen Sie alle fehlerhaften Konvertierungen, die gemeldet werden.  
   
         Fehler werden im Textfenster gemeldet. Darüber hinaus wird der Strukturansicht ein Warnsignal, das auf jedem Knoten, die konvertiert werden konnte. Sie können den Knoten, um weitere Informationen zu diesem Fehler erhalten, klicken.  
   
 5. **Alle Vorlagen transformieren** in Lösungen, die erfolgreich enthält Projekte konvertiert.  
   
-   1.  Öffnen Sie die Projektmappe.  
+   1. Öffnen Sie die Projektmappe.  
   
-   2.  Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.  
+   2. Klicken Sie auf die **alle Vorlagen transformieren** Schaltfläche im Header des Projektmappen-Explorer.  
   
        > [!NOTE]
        >  Sie können diesen Schritt nicht erforderlich machen. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aktualisieren Sie Ihren benutzerdefinierten Code in die konvertierten Projekte ein.  
   
-   -   Versuchen Sie, erstellen Sie die Projekte, und untersuchen Sie alle Fehler.  
+   - Versuchen Sie, erstellen Sie die Projekte, und untersuchen Sie alle Fehler.  
   
-   -   Testen Sie den Designer.  
+   - Testen Sie den Designer.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Neues im Visualisierungs- und Modellierungs-SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

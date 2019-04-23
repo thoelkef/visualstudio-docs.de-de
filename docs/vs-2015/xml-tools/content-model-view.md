@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109121"
 ---
 # <a name="content-model-view"></a>Inhaltsmodellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ Die Inhaltsmodellansicht bietet eine grafische Darstellung lokaler und globaler 
 ## <a name="undoredo"></a>Rückgängig/Wiederholen  
  Die Funktion zum Rückgängigmachen bzw. Wiederholen ist in der Inhaltsmodellansicht für folgende Aktionen aktiviert:  
   
--   Hinzufügen eines einzelnen Knotens per Drag &amp; Drop  
+- Hinzufügen eines einzelnen Knotens per Drag &amp; Drop  
   
--   Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer  
+- Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer  
   
--   Hinzufügen von Knoten aus der Ausgangsansicht  
+- Hinzufügen von Knoten aus der Ausgangsansicht  
   
--   Löschen einzelner oder mehrerer Knoten  
+- Löschen einzelner oder mehrerer Knoten  
   
 ## <a name="zoom"></a>Zoom  
  Die Zoomfunktion befindet sich in der unteren rechten Ecke der Inhaltsmodellansicht.  

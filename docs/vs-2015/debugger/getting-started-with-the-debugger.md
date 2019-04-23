@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109518"
 ---
 # <a name="getting-started-with-the-debugger"></a>Erste Schritte mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Visual Studio-Debugger ist in jeder Sprache einfach zu verwenden. Wir zeigen Ihnen hier, wie Sie ein einfaches C#-Programm debuggen. Sie können die gleichen Schritte jedoch auch auf andere Sprachen wie z. B. C++ und JavaScript anwenden.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Debuggen eines einfachen C#-Projekts  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Debuggen eines einfachen C#-Projekts  
  Beginnen wir mit einer einfachen C#-Konsolenanwendung (**Datei / neu / Projekt**, und wählen Sie dann **Visual C#-** und wählen Sie dann **Konsolenanwendung**). Wenn Sie mit Visual Studio noch nie gearbeitet haben, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Die **Main** Methode nur 1 10 Mal auf eine ganzzahlige Variable hinzugefügt und gibt das Ergebnis an die Konsole:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Weitere Informationen über Breakpoints finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Untersuchen Sie Variablen  
+## <a name="BKMK_Inspect_Variables"></a> Untersuchen Sie Variablen  
  Debuggen von häufig umfasst das Suchen von Variablen, die keine Werte enthalten, die Sie zu einem bestimmten Zeitpunkt zu erwarten. Einige der Möglichkeiten zeigen wir, dass Sie die Variablen überprüfen können.  
   
  Starten Sie das Debuggen erneut. Die Ausführung wird angehalten, bevor der `Console.WriteLine`-Code ausgeführt wird. Sie können dazu führen, dass er ausgeführt wird, indem Sie Ausführung schrittweise durchlaufen (klicken Sie auf **Debuggen / Prozedurschritt über** oder **F10**). In diesem Fall hätten Sie **Einzelschritt** (**F11**) erzielt dasselbe Ergebnis; den Unterschied wird später erläutert. Die Zeile mit der letzten geschweiften Klammer der Methode sollte gelb hervorgehoben sein. Betrachten Sie das Konsolenfenster. Daraufhin sollte **10**.  
