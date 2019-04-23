@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4fb88d4db82bde5f93d33716b65e2e8a4b48305a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115665"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Gewusst wie: Sammeln von Windows-Indikatordaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Windows-Indikatoren sind Systemleistungsindikatoren, die während der Profilerst
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>So sammeln Sie Windows-Indikatordaten  
   
-1.  Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Sitzung, für die Sie Windows-Indikatoren konfigurieren möchten, und wählen Sie **Eigenschaften** aus.  
+1. Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Sitzung, für die Sie Windows-Indikatoren konfigurieren möchten, und wählen Sie **Eigenschaften** aus.  
   
-2.  Klicken Sie in den **Eigenschaftenseiten** auf **Windows-Indikatoren**.  
+2. Klicken Sie in den **Eigenschaftenseiten** auf **Windows-Indikatoren**.  
   
-3.  Wählen Sie das Kontrollkästchen **Windows-Indikatoren auflisten** aus.  
+3. Wählen Sie das Kontrollkästchen **Windows-Indikatoren auflisten** aus.  
   
-4.  Geben Sie im Textfeld **Sammlungsintervall (ms)** ein Zeitintervall ein.  
+4. Geben Sie im Textfeld **Sammlungsintervall (ms)** ein Zeitintervall ein.  
   
-5.  Wählen Sie eine Kategorie aus der Dropdownliste **Indikatorkategorie** aus.  
+5. Wählen Sie eine Kategorie aus der Dropdownliste **Indikatorkategorie** aus.  
   
-6.  Wählen Sie eine Instanz aus der Dropdownliste **Instanz** aus.  
+6. Wählen Sie eine Instanz aus der Dropdownliste **Instanz** aus.  
   
-7.  Wählen Sie die Indikatoren aus, die Sie bei der Profilerstellung Ihrer Anwendung verwenden möchten.  
+7. Wählen Sie die Indikatoren aus, die Sie bei der Profilerstellung Ihrer Anwendung verwenden möchten.  
   
-8.  Klicken Sie auf **Übernehmen**.  
+8. Klicken Sie auf **Übernehmen**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   

@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117407"
 ---
 # <a name="troubleshooting-code-coverage"></a>Problembehandlung bei der Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
 ### <a name="youre-looking-at-a-previous-result"></a>Sie sehen sich ein vorheriges Ergebnis an.  
  Wenn Sie die Tests ändern und erneut ausführen, können das vorherige Codeabdeckungsergebnis und die Codefarbe der alten Ausführung noch sichtbar sein.  
   
-1.  Führen Sie "Codeabdeckung analysieren" aus.  
+1. Führen Sie "Codeabdeckung analysieren" aus.  
   
-2.  Überprüfen Sie, ob Sie das aktuelle Resultset im Fenster "Codeabdeckungsergebnisse" ausgewählt haben.  
+2. Überprüfen Sie, ob Sie das aktuelle Resultset im Fenster "Codeabdeckungsergebnisse" ausgewählt haben.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>PDB-Dateien (Symboldateien) sind nicht verfügbar  
  Analyse  
@@ -107,17 +107,17 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
  Auflösung  
  Es gibt zwei mögliche Fehlertypen:  
   
--   **XML-Fehler**  
+- **XML-Fehler**  
   
      Öffnen Sie die Datei ".runsettings" im XML-Editor von Visual Studio. Suchen Sie nach Fehlerhinweisen.  
   
--   **Fehler in regulärem Ausdruck**  
+- **Fehler in regulärem Ausdruck**  
   
      Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:  
   
-    -   Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`  
+    - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`  
   
-    -   Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`  
+    - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Benutzerdefinierte Datei ".runsettings" mit falschen Ausschlüssen  
  Analyse  
