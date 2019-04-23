@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045030"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusammen mit benutzerdefinierten Programmcode definiert, die Sie schreiben können. Die meisten der Programmcode in der DSL-Projektmappe wird aus dieser Datei generiert.
@@ -61,13 +61,13 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
 
  Um die DSL-Definitionsdiagramm neu anzuordnen, können Sie folgende Aktionen ausführen:
 
--   Main wechseln und auf Ansichten können Sie mit der **Struktur hier** und **Baum teilen** Befehle. Mit der rechten Maustaste in einer einzelne Domäne-Klasse, um diese Befehle finden Sie unter.
+- Main wechseln und auf Ansichten können Sie mit der **Struktur hier** und **Baum teilen** Befehle. Mit der rechten Maustaste in einer einzelne Domäne-Klasse, um diese Befehle finden Sie unter.
 
--   Neu anordnen von Domänenklassen und Formklassen durch Drücken von STRG + nach-oben und STRG + nach-unten.
+- Neu anordnen von Domänenklassen und Formklassen durch Drücken von STRG + nach-oben und STRG + nach-unten.
 
--   Klassen, die mithilfe des Symbols auf der rechten oberen Ecke der einzelnen Formen erweitern oder reduzieren.
+- Klassen, die mithilfe des Symbols auf der rechten oberen Ecke der einzelnen Formen erweitern oder reduzieren.
 
--   Reduzieren Sie Teile der Struktur, indem Sie auf das Minuszeichen (-) am unteren Rand einer Domänenklasse.
+- Reduzieren Sie Teile der Struktur, indem Sie auf das Minuszeichen (-) am unteren Rand einer Domänenklasse.
 
 ## <a name="inheritance"></a>Vererbung
  Domänenklassen können unter Verwendung der Vererbung definiert werden. Um eine Ableitung von Vererbung zu erstellen, klicken Sie auf das Tool Vererbung, klicken Sie auf die abgeleitete Klasse, und klicken Sie dann auf die Basisklasse. Ein Element des Modells hat alle Eigenschaften, die auf ihrer eigenen Domänenklasse, zusammen mit den Eigenschaften, die für die von der Basisklasse geerbt definiert sind. Es erbt auch die Rollen in Beziehungen.

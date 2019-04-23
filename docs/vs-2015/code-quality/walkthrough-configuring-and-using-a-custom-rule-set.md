@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052063"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
  In dieser exemplarischen Vorgehensweise werden Sie diese Prozesse durchlaufen:  
   
--   Erstellen Sie eine Klassenbibliothek.  
+- Erstellen Sie eine Klassenbibliothek.  
   
--   Wählen Sie die **grundlegende Microsoft-Regeln für Entwurfsrichtlinien** Codeanalyse-Regelsatz.  
+- Wählen Sie die **grundlegende Microsoft-Regeln für Entwurfsrichtlinien** Codeanalyse-Regelsatz.  
   
--   Fügen Sie Ihren eigenen Code zur Klasse hinzu.  
+- Fügen Sie Ihren eigenen Code zur Klasse hinzu.  
   
--   Codeanalyse ausführen.  
+- Codeanalyse ausführen.  
   
--   Passen Sie den Regelsatz an.  
+- Passen Sie den Regelsatz an.  
   
--   Führen Sie der Codeanalyse aus aus, und sehen Sie, wie den Regelsatz Anpassung Verhalten funktioniert.  
+- Führen Sie der Codeanalyse aus aus, und sehen Sie, wie den Regelsatz Anpassung Verhalten funktioniert.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Mit Regel legt fest, mit der Codeanalyse  
  Erstellen Sie zunächst eine einfache Klassenbibliothek.  
@@ -148,9 +148,9 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Codeanalyse für das Projekt RuleSetSample zum zweiten Mal ausführen.  
   
-1.  Auf der **analysieren** Menü klicken Sie auf **Codeanalyse für RuleSetSample ausführen**.  
+1. Auf der **analysieren** Menü klicken Sie auf **Codeanalyse für RuleSetSample ausführen**.  
   
-2.  Im Fenster "Fehlerliste", beachten Sie, dass wenn Sie auf **Warnungen**, nicht mehr die CA1704 Warnung Verletzungen für die Regel "Bezeichner sollten korrekt geschrieben werden." angezeigt.  
+2. Im Fenster "Fehlerliste", beachten Sie, dass wenn Sie auf **Warnungen**, nicht mehr die CA1704 Warnung Verletzungen für die Regel "Bezeichner sollten korrekt geschrieben werden." angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

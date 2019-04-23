@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050759"
 ---
 # <a name="test-area-6-delete"></a>Testbereich 6: Löschen
 Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.
@@ -36,13 +36,13 @@ Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.
 ## <a name="expected-behavior"></a>Es wird erwartet
  Das erwartete Verhalten für die Testfälle im Testbereich löschen ist:
 
--   Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.
+- Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.
 
--   Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)
+- Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)
 
--   Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.
+- Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.
 
--   Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.
+- Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.
 
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|
 |------------|----------------|--------------------------------|

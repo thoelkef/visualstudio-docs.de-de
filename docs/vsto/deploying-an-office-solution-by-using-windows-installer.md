@@ -18,14 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eed2cc63941f63b3f1d21cac86f907808a072665
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a89898b7f0495e35ed51d6333288b3aa67c45428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056747"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Bereitstellen einer Office-Projektmappe mit Windows Installer
+
 Erfahren Sie, wie Sie mithilfe von [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]einen Windows Installer für Ihre Office-Projektmappe erstellen.
 
 Wenn Sie Visual Studio zum Erstellen eines Windows Installers verwenden, können Sie eine Office-Projektmappe bereitstellen, die Administratorberechtigungen auf dem Computer des Endbenutzers erfordert. Sie können eine solche Datei beispielsweise verwenden, um eine Projektmappe für alle Benutzer eines Computers nur einmal zu installieren. Sie können eine Office-Projektmappe auch mit ClickOnce bereitstellen, aber diese Projektmappe muss für jeden Benutzer des Computers getrennt installiert werden.
@@ -77,6 +78,7 @@ Bevor eine Projektmappe auf Benutzercomputern ausgeführt werden kann, müssen S
 > Bei Anpassungen auf Dokumentebene muss der Speicherort des Dokuments ebenfalls vertrauenswürdig sein. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
 
 ## <a name="Obtain"></a>Abrufen der InstallShield Limited-Edition
+
 Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limited Edition (ISLE) verwenden, das kostenlos ist, wenn Sie Visual Studio installiert haben. ISLE ersetzt die Funktionen der Projektvorlagen für Setup und Bereitstellung, die frühere Versionen von Visual Studio bereitstellten.
 
 ### <a name="to-get-installshield-limited-edition"></a>Abrufen der InstallShield Limited-Edition
@@ -116,6 +118,7 @@ Sie können eine Windows Installer-Datei erstellen, indem Sie InstallShield Limi
    Die Beispiele für dieses Thema enthalten ein Setupprojekt mit dem Namen **OfficeAddInSetup**. In diesem Thema wird auf das Setupprojekt in der Projektmappe verwiesen, indem der gleiche Name verwendet wird.
 
 ## <a name="Add"></a>Hinzufügen der Projektausgabe
+
 Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office Project einzuschließen. Für VSTO-Add-In-Projekte besteht die Projektausgabe nur aus der Projektmappenassembly. Für Anpassungsprojekte auf Dokumentebene umfasst die Projektausgabe nicht nur die Projektmappenassembly, sondern auch das Dokument selbst.
 
 ### <a name="to-add-the-project-output"></a>Hinzufügen der Projektausgabe
@@ -136,7 +139,6 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
 
 ## <a name="AddD"></a>Hinzufügen der Bereitstellungs- und Anwendungsmanifeste
 
-###
 1. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Dateien hinzufügen** aus.
 
 2. Navigieren Sie im Dialogfeld **Öffnen** zum Ausgabeverzeichnis des Projekts **ExcelAddIn** .
@@ -150,6 +152,7 @@ Sie konfigurieren das **OfficeAddInSetup** -Projekt, um die Ausgabe des Office P
    ![Die Ausgabedateien des Setupprojekts verweist. ](../vsto/media/installshield-outputfiles.png "Die Ausgabedateien des Setupprojekts verweist.")
 
 ## <a name="Configure"></a>Konfigurieren der abhängigen Komponenten als erforderliche Komponenten
+
 Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschließen, sondern auch andere Komponenten, die für die Ausführung der Lösung erforderlich sind.
 
 - Die Version von .NET Framework, die die Office-Projektmappe als Zielversion verwendet.
@@ -173,6 +176,7 @@ Sie müssen nicht nur die folgenden Komponenten in die Setupanwendung einschlie�
 4. Wenn das Dialogfeld angezeigt wird, wählen Sie die Schaltfläche **Nein** aus.
 
 ### <a name="AddToolsForOffice"></a>Hinzufügen von Visual Studio 2010-Tools für Office-Laufzeit
+
 Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Microsoft VSTO 2010-Laufzeit**, verweist jedoch auf eine frühere Version der Laufzeit. Daher müssen Sie manuell eine Konfigurationsdatei erstellen, die auf die neueste Version verweist. Sie müssen diese Datei anschließend im selben Verzeichnis wie die Konfigurationsdateien für alle anderen Elemente ablegen, die auf der Seite **Verteilbare Komponenten** angezeigt werden.
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Visual Studio 2010-Tools für Office-Laufzeit als erforderliche Komponente hinzufügen
@@ -219,7 +223,7 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 8. Geben Sie im Feld **Dateiname** **Visual Studio 2010 Tools for Office Runtime.prq**ein, und klicken Sie dann auf die Schaltfläche **Speichern** .
 
    > [!NOTE]
-   >    Stellen Sie sicher, dass Sie **.prq** am Ende des Dateinamens hinzufügen, um diese Datei als erforderliche Datei zu identifizieren.
+   > Stellen Sie sicher, dass Sie **.prq** am Ende des Dateinamens hinzufügen, um diese Datei als erforderliche Datei zu identifizieren.
 
 9. Schließen Sie Editor.
 
@@ -250,9 +254,10 @@ Die Seite **Verteilbare Komponenten** enthält ein Element mit dem Namen **Micro
 4. In der **INSTALLDIR festlegen** Dialogfeld Wählen Sie einen Ordner auf dem Computer des Benutzers, in dem Sie die Projektmappe installieren möchten.
 
    > [!NOTE]
-   >    Sie können auch Unterverzeichnisse im Dialogfeld **INSTALLDIR festlegen** erstellen, indem Sie das Kontextmenü für einen beliebigen Ordner in der Liste öffnen.
+   > Sie können auch Unterverzeichnisse im Dialogfeld **INSTALLDIR festlegen** erstellen, indem Sie das Kontextmenü für einen beliebigen Ordner in der Liste öffnen.
 
 ## <a name="ConfigureRegistry"></a>Konfigurieren eines VSTO-Add-Ins
+
 Sie können festlegen, ob Ihr VSTO-Add-In für alle Benutzer auf dem Computer (pro Computer) installiert wird, oder nur für den Benutzer, der die Installation durchführt (pro Benutzer).
 
 Wenn Sie Installationen pro Computer unterstützen möchten, erstellen Sie zwei separate Installationsprogramme. Sie können Installationsprogramme auf Grundlage der Office-Version (32 Bit und 64 Bit) oder der Windows-Version (32 Bit und 64 Bit), die vom Benutzer ausgeführt wird, unterteilen.
@@ -313,10 +318,10 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 | 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
-   >    Ein Installationsprogramm für 64-Bit-Windows sind zwei Registrierungspfade erforderlich, da es ist möglich, dass Benutzer 32-Bit und 64-Bit-Versionen von Office auf einem Computer ausführen, die 64-Bit-Windows ausgeführt wird.
+   > Ein Installationsprogramm für 64-Bit-Windows sind zwei Registrierungspfade erforderlich, da es ist möglich, dass Benutzer 32-Bit und 64-Bit-Versionen von Office auf einem Computer ausführen, die 64-Bit-Windows ausgeführt wird.
 
    > [!NOTE]
-   >    Es wird empfohlen, den Namen des VSTO-Add-Ins mit dem Namen Ihres Unternehmens zu beginnen. Diese Konvention erhöht die Wahrscheinlichkeit, dass der Schlüssel eindeutig und die Wahrscheinlichkeit des Konflikts mit einem VSTO-Add-in eines anderen Anbieters verringert. Add-Ins mit demselben Namen können die jeweils anderen Registrierungsschlüssel beispielsweise überschreiben. Dieser Ansatz kann nicht garantieren, dass der Schlüssel eindeutig ist, jedoch kann potenzielle Namenskonflikte reduzieren.
+   > Es wird empfohlen, den Namen des VSTO-Add-Ins mit dem Namen Ihres Unternehmens zu beginnen. Diese Konvention erhöht die Wahrscheinlichkeit, dass der Schlüssel eindeutig und die Wahrscheinlichkeit des Konflikts mit einem VSTO-Add-in eines anderen Anbieters verringert. Add-Ins mit demselben Namen können die jeweils anderen Registrierungsschlüssel beispielsweise überschreiben. Dieser Ansatz kann nicht garantieren, dass der Schlüssel eindeutig ist, jedoch kann potenzielle Namenskonflikte reduzieren.
 
 5. Nachdem Sie die Hierarchie der Schlüssel erstellt haben, öffnen Sie das Kontextmenü für die **SampleCompany.ExcelAddIn** Schlüssel, wählen **neu**, und wählen Sie dann **Zeichenfolgenwert**.
 
@@ -368,6 +373,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 > Wenn Sie einen benutzerdefinierten Formularbereich in einem VSTO-Add-in für Outlook erstellen, müssen Sie weitere Registrierungseinträge, um den Bereich für Outlook registrieren erstellen. Weitere Informationen finden Sie unter [Registrierungseinträge für Outlook-Formularbereichen](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries).
 
 ## <a name="ConfigureDocument"></a>Configure a document-level customization
+
 Dieser Abschnitt gilt nur, wenn Sie eine Anpassung auf Dokumentebene bereitstellen. Wenn Sie ein VSTO-Add-in bereitstellen, können Sie sofort zum Wechseln der [Erstellen des Setupprojekts](#Build) Abschnitt.
 
 Anpassungen auf Dokumentebene verwenden keine Registrierungsschlüssel. Stattdessen enthalten benutzerdefinierte Dokumenteigenschaften den Speicherort des Bereitstellungsmanifests.
@@ -430,14 +436,14 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
    In einem Bereich an der Seite des Bildschirms wird eine Liste der Ereignisse angezeigt.
 
    > [!NOTE]
-   >    In InstallShield Limited Edition sind nur einige der in dieser Liste angezeigten Ereignisse verfügbar. In diesem Verfahren führen Sie das Programm mithilfe der **Setup Dialogfeld nach erfolgreichem Abschluss** Ereignis.
+   > In InstallShield Limited Edition sind nur einige der in dieser Liste angezeigten Ereignisse verfügbar. In diesem Verfahren führen Sie das Programm mithilfe der **Setup Dialogfeld nach erfolgreichem Abschluss** Ereignis.
 
 8. Öffnen Sie in der Liste der Ereignisse unter **Benutzerdefinierte Aktionen während der Installation**das Kontextmenü für das Ereignis **Dialogfeld nach erfolgreichem Abschluss des Setups** , und wählen Sie dann **Neue EXE**aus.
 
    Unter dem Ereignis **Dialogfeld nach erfolgreichem Abschluss des Setups** wird eine benutzerdefinierte Aktion namens **NewCustomAction1** angezeigt. In einem Bereich neben den Ereignissen wird ein Eigenschaftensatz für die benutzerdefinierte Aktion angezeigt.
 
    > [!IMPORTANT]
-   >    In der Liste der Eigenschaften wird das Ereignis **Dialogfeld nach erfolgreichem Abschluss des Setups** zweimal angezeigt. Stellen Sie sicher, dass Sie die Instanz des Ereignisses **Dialogfeld nach erfolgreichem Abschluss des Setups** auswählen, das unter dem Knoten **Benutzerdefinierte Aktionen während der Installation** angezeigt wird.
+   > In der Liste der Eigenschaften wird das Ereignis **Dialogfeld nach erfolgreichem Abschluss des Setups** zweimal angezeigt. Stellen Sie sicher, dass Sie die Instanz des Ereignisses **Dialogfeld nach erfolgreichem Abschluss des Setups** auswählen, das unter dem Knoten **Benutzerdefinierte Aktionen während der Installation** angezeigt wird.
 
 9. In der Liste für die Eigenschaft **Quellort** , wählen Sie **Mit dem Produkt installiert**aus.
 
@@ -468,7 +474,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 16. Ersetzen Sie **Your Solution ID** durch die Projektmappen-ID, die Sie in die Zwischenablage kopiert haben.
 
    > [!IMPORTANT]
-   >    Testen Sie das Installationsprogramm, um sicherzustellen, dass die Konsolenanwendung, die diese benutzerdefinierte Aktion ausführt, auf Dokumente im [INSTALLDIR-] Verzeichnis zugreifen kann. Einige Verzeichnisse auf dem Computer des Benutzers möglicherweise Administratorzugriff (z. B. das Verzeichnis "Programme"). Wenn Sie Ihre Projektmappe in ein Verzeichnis bereitstellen, das Administratorzugriff erfordert, sollten Sie öffnen die **Eigenschaften** im Dialogfeld die *setup.exe* Datei, wählen Sie die **Kompatibilität** Registerkarte, und wählen Sie dann die **dieses Programm als Administrator ausführen** das Kontrollkästchen, bevor Sie das Installationsprogramm verteilen. Wenn Sie nicht möchten, dass das Setup-Programm mit Administratorberechtigungen ausgeführt wird, legen Sie die [INSTALLDIR]-Eigenschaft auf ein Verzeichnis, die auf die der Benutzer möglicherweise Zugriff hat bereits, wie z. B. die **Dokumente** Verzeichnis. Weitere Informationen finden Sie unter den [angeben, wo Sie möchten die Projektmappe auf dem Computer des Benutzers installiert](#Location) Abschnitt dieses Themas.
+   > Testen Sie das Installationsprogramm, um sicherzustellen, dass die Konsolenanwendung, die diese benutzerdefinierte Aktion ausführt, auf Dokumente im [INSTALLDIR-] Verzeichnis zugreifen kann. Einige Verzeichnisse auf dem Computer des Benutzers möglicherweise Administratorzugriff (z. B. das Verzeichnis "Programme"). Wenn Sie Ihre Projektmappe in ein Verzeichnis bereitstellen, das Administratorzugriff erfordert, sollten Sie öffnen die **Eigenschaften** im Dialogfeld die *setup.exe* Datei, wählen Sie die **Kompatibilität** Registerkarte, und wählen Sie dann die **dieses Programm als Administrator ausführen** das Kontrollkästchen, bevor Sie das Installationsprogramm verteilen. Wenn Sie nicht möchten, dass das Setup-Programm mit Administratorberechtigungen ausgeführt wird, legen Sie die [INSTALLDIR]-Eigenschaft auf ein Verzeichnis, die auf die der Benutzer möglicherweise Zugriff hat bereits, wie z. B. die **Dokumente** Verzeichnis. Weitere Informationen finden Sie unter den [angeben, wo Sie möchten die Projektmappe auf dem Computer des Benutzers installiert](#Location) Abschnitt dieses Themas.
 
 ## <a name="Build"></a>Build the setup project
 

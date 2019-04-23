@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043960"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst ist eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und haben unterschiedliche Werte je nach Kontext, in dem der Ausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst im Codeausschnitt formatieren.
@@ -39,11 +39,11 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 ## <a name="providing-support-for-code-snippets"></a>Bereitstellen von Unterstützung für Codeausschnitte
  Um Unterstützung für Codeausschnitte aktivieren, müssen Sie bereitstellen oder installieren Sie die Codeausschnitte, und Sie müssen angeben, das bedeutet, dass der Benutzer diese Ausschnitte einfügen. Es gibt drei Schritte zum Aktivieren der Unterstützung für Codeausschnitte aus:
 
-1.  Installieren die codeausschnittsdateien an.
+1. Installieren die codeausschnittsdateien an.
 
-2.  Aktivieren Codeausschnitte für den Sprachdienst.
+2. Aktivieren Codeausschnitte für den Sprachdienst.
 
-3.  Aufrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt.
+3. Aufrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt.
 
 ### <a name="installing-the-snippet-files"></a>Installieren die Codeausschnittsdateien
  Alle Codeausschnitte für eine Sprache werden als Vorlagen im XML-Dateien, in der Regel eine Ausschnittvorlage pro Datei gespeichert. Ausführliche Informationen zu den XML-Schema für Codeausschnittvorlagen verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../../ide/code-snippets-schema-reference.md). Jede Vorlage Codeausschnitt wird mit einer Sprachen-ID identifiziert. Diese Sprache-ID in der Registrierung angegeben ist und in den versetzt wird die `Language` Attribut der \<Code > Tag in der Vorlage.
@@ -115,9 +115,9 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Einfügen eines Codeausschnitts mithilfe eines Menübefehls
  Um einen Befehl verwenden, um die im Codeausschnitt-Browser angezeigt werden, Sie fügen Sie einen Menübefehl hinzu, und rufen dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Schnittstelle als Reaktion auf dieser Menübefehl.
 
-1.  Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Erstellen einer Erweiterung mit einem Menübefehl](../../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Erstellen einer Erweiterung mit einem Menübefehl](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel wird immer den Menübefehl aus.
+2. Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel wird immer den Menübefehl aus.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
     }
     ```
 
-3.  Überschreiben der <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse zum Abrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt, und rufen die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode für dieses Objekt.
+3. Überschreiben der <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse zum Abrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt, und rufen die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode für dieses Objekt.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 
      Die folgenden Methoden in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse werden von Visual Studio in der angegebenen Reihenfolge aufgerufen, während des Prozesses, der den Ausschnitt eingefügt:
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      Nach der <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> Methode aufgerufen wird, wird der Codeausschnitt eingefügt wurde und die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt befindet sich in einer speziellen Bearbeitungsmodus zum Ändern eines Codeausschnitts, der gerade eingefügt wurde.
 

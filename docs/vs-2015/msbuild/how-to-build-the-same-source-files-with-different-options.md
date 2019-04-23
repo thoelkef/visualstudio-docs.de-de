@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045602"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>So legen Sie eine Eigenschaftengruppe anhand einer anderen Eigenschaft fest.  
   
--   Verwenden Sie ein Attribut `Condition` in einem Element `PropertyGroup`, das ähnlich dem Folgenden ist:  
+- Verwenden Sie ein Attribut `Condition` in einem Element `PropertyGroup`, das ähnlich dem Folgenden ist:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-define-a-property-based-on-another-property"></a>So definieren Sie eine Eigenschaft anhand einer anderen Eigenschaft  
   
--   Verwenden Sie ein Attribut `Condition` im Element `Property`, das ähnlich dem Folgenden ist:  
+- Verwenden Sie ein Attribut `Condition` im Element `Property`, das ähnlich dem Folgenden ist:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest  
   
--   Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
+- Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056769"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Vorgehensweise: Erstellen einer Zuordnung (Beziehung) zwischen LINQ to SQL-Klassen (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Zuordnungen zwischen Entitätsklassen in [!INCLUDE[vbtecdlinq](../includes/vbtec
   
 ### <a name="to-create-an-association-between-entity-classes"></a>So erstellen Sie eine Zuordnung zwischen Entitätsklassen  
   
-1.  Klicken Sie mit der rechten Maustaste auf die Entitätsklasse, die die übergeordnete Klasse in der Zuordnung darstellt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Zuordnung**.  
+1. Klicken Sie mit der rechten Maustaste auf die Entitätsklasse, die die übergeordnete Klasse in der Zuordnung darstellt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Zuordnung**.  
   
-2.  Überprüfen Sie, ob die richtige Einstellung für **Übergeordnete Klasse** im Dialogfeld **Zuordnungs-Editor** ausgewählt ist.  
+2. Überprüfen Sie, ob die richtige Einstellung für **Übergeordnete Klasse** im Dialogfeld **Zuordnungs-Editor** ausgewählt ist.  
   
-3.  Wählen Sie die Einstellung für **Untergeordnete Klasse** im Kombinationsfeld aus.  
+3. Wählen Sie die Einstellung für **Untergeordnete Klasse** im Kombinationsfeld aus.  
   
-4.  Wählen Sie die **Zuordnungseigenschaften** aus, die die Klassen verbinden. In der Regel wird hier die in der Datenbank definierte Fremdschlüsselbeziehung zugeordnet. In der Zuordnung Customers und Orders beispielsweise die **Zuordnungseigenschaften** die CustomerIDs jeder Klasse sind.  
+4. Wählen Sie die **Zuordnungseigenschaften** aus, die die Klassen verbinden. In der Regel wird hier die in der Datenbank definierte Fremdschlüsselbeziehung zugeordnet. In der Zuordnung Customers und Orders beispielsweise die **Zuordnungseigenschaften** die CustomerIDs jeder Klasse sind.  
   
-5.  Klicken Sie auf **OK**, um die Zuordnung zu erstellen.  
+5. Klicken Sie auf **OK**, um die Zuordnung zu erstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

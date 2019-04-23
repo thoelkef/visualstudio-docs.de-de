@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050361"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)
 Eine Vorlage Directory-Beschreibungsdatei (VSDIR) ist eine Textdatei, die es ermöglicht die integrierte Entwicklungsumgebung (IDE) zum Anzeigen von Ordnern, Assistenten VSZ-Dateien und Vorlagendateien, die dem Projekt in Dialogfeldern zugeordnet sind. Der Inhalt enthalten einen Datensatz pro Datei oder eines Ordners. Obwohl nur eine VSDIR-Datei in der Regel bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagendateien zu beschreiben werden, alle VSDIR-Dateien an einem Ort auf die verwiesen wird zusammengeführt.
@@ -50,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Wenn Sie eine Datei des Assistenten zum Erstellen, sollten Sie auch die folgenden Probleme.
 
--   Ein optionales Feld, für das es keine sinnvollen Daten gibt, sollte als Platzhalter 0 (null) enthalten.
+- Ein optionales Feld, für das es keine sinnvollen Daten gibt, sollte als Platzhalter 0 (null) enthalten.
 
--   Wenn kein lokalisierter Name angegeben ist, wird der relativen Pfadnamen in der Assistentendatei verwendet.
+- Wenn kein lokalisierter Name angegeben ist, wird der relativen Pfadnamen in der Assistentendatei verwendet.
 
--   DLLPath überschreibt CLSID-Paket für den Symbolspeicherort.
+- DLLPath überschreibt CLSID-Paket für den Symbolspeicherort.
 
--   Wenn kein Symbol definiert ist, ersetzt die IDE das Standardsymbol einer Datei, die diese Erweiterung hat.
+- Wenn kein Symbol definiert ist, ersetzt die IDE das Standardsymbol einer Datei, die diese Erweiterung hat.
 
--   Wenn kein vorgeschlagener Basisname angegeben wird, wird "Project" verwendet.
+- Wenn kein vorgeschlagener Basisname angegeben wird, wird "Project" verwendet.
 
--   Wenn Sie die VSZ-Dateien, Ordner oder Vorlagendateien löschen, müssen Sie auch die zugehörigen Datensätze aus der VSDIR-Datei entfernen.
+- Wenn Sie die VSZ-Dateien, Ordner oder Vorlagendateien löschen, müssen Sie auch die zugehörigen Datensätze aus der VSDIR-Datei entfernen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Assistenten](../../extensibility/internals/wizards.md)

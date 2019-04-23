@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047451"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus
 Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Grafikdiagnose ein Objekt untersucht werden kann, das wegen eines falsch konfigurierten Gerätestatus fehlt.
 
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:
 
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu finden
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu finden
 
--   Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen
+- Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen
 
--   Verwenden des Fensters **Grafikpixelverlauf** , um spezieller nach dem Problem zu suchen
+- Verwenden des Fensters **Grafikpixelverlauf** , um spezieller nach dem Problem zu suchen
 
--   Überprüfen des Gerätestatus auf mögliche Probleme oder fehlerhafte Konfigurationen
+- Überprüfen des Gerätestatus auf mögliche Probleme oder fehlerhafte Konfigurationen
 
 ## <a name="scenario"></a>Szenario
  Einer der Gründe dafür, dass Objekte nicht an den gewünschten Stellen in einer 3D-App angezeigt werden, kann eine fehlerhafte Konfiguration des Grafikgeräts sein, die zur Folge hat, dass die Objekte nicht gerendert werden. Dies kann z. B. der Fall sein, wenn die Windungsreihenfolge dazu führt, dass Dreiecke fälschlicherweise herausgefiltert werden, oder wenn die Tiefentestfunktion dazu führt, dass alle Pixel im Objekt abgelehnt werden.

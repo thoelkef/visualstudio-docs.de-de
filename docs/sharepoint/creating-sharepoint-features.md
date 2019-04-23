@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051315"
 ---
 # <a name="create-sharepoint-features"></a>Erstellen von SharePoint-features
   Sie können eine SharePoint-Funktion verwenden, zum Gruppieren verwandter Elemente der SharePoint-Projekt zur einfacheren Bereitstellung. Sie können Funktionen erstellen, Bereiche festlegen und andere Funktionen als Abhängigkeiten zu markieren, mit dem SharePoint-Funktions-Designer. Der Designer generiert außerdem ein Manifest, eine XML-Datei handelt, die jede Funktion beschreibt.
@@ -26,9 +26,9 @@ ms.locfileid: "56644457"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Hinzufügen von Funktionen zu der SharePoint-Lösung
  Sie können eine Funktion mithilfe des Projektmappen-Explorer oder die Paket-Explorer mit der SharePoint-Lösung hinzufügen. Sie können eine der folgenden Methoden verwenden, um ein Feature hinzufügen.
 
--   In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Features**, und wählen Sie dann **Feature hinzufügen**.
+- In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Features**, und wählen Sie dann **Feature hinzufügen**.
 
--   In **Paket-Explorer**, öffnen Sie das Kontextmenü für das Paket aus, und wählen Sie dann **Feature hinzufügen**.
+- In **Paket-Explorer**, öffnen Sie das Kontextmenü für das Paket aus, und wählen Sie dann **Feature hinzufügen**.
 
 ## <a name="using-the-feature-designer"></a>Verwenden die Funktions-designer
  Eine SharePoint-Lösung kann eine oder mehrere SharePoint-Funktionen enthalten, die unter dem Knoten "Funktion" im Projektmappen-Explorer gruppiert werden. Jede Funktion verfügt über eine eigene **Funktions-Designer** , Sie verwenden können, um die Feature-Eigenschaften anpassen. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Features](../sharepoint/how-to-customize-a-sharepoint-feature.md). Um Funktionen voneinander zu unterscheiden, können Sie die Feature-Eigenschaften, z. B. Titel, Beschreibung, Version und Bereich konfigurieren.

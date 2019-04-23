@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89b4f55e5e5de564db6cb7a1217b79a15283fb93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051660"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Erstellen von wiederverwendbaren Gruppen von Schaltflächen
 Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem Menü oder Symbolleiste angezeigt werden. Alle Befehlsgruppe kann erneut verwendet werden, indem anderen übergeordneten Menüs im Abschnitt CommandPlacements Zuweisen der *VSCT* Datei.
@@ -26,13 +26,13 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>Erstellen Sie eine wiederverwendbare Gruppe von Schaltflächen
 
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `ReusableButtons`. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `ReusableButtons`. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **ReusableCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *ReusableCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **ReusableCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *ReusableCommand.cs*.
 
-3.  In der *VSCT* Datei, wechseln Sie zu dem Abschnitt "Symbols" aus, und suchen die GuidSymbol-Element, Gruppen und Befehle für das Projekt enthält. Es sollten GuidReusableCommandPackageCmdSet benannt werden.
+3. In der *VSCT* Datei, wechseln Sie zu dem Abschnitt "Symbols" aus, und suchen die GuidSymbol-Element, Gruppen und Befehle für das Projekt enthält. Es sollten GuidReusableCommandPackageCmdSet benannt werden.
 
-4.  Fügen Sie eine IDSymbol für jede Schaltfläche, die Sie der Gruppe, wie im folgenden Beispiel hinzufügen.
+4. Fügen Sie eine IDSymbol für jede Schaltfläche, die Sie der Gruppe, wie im folgenden Beispiel hinzufügen.
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem
 
      Die Elementvorlage für den Befehl erstellt standardmäßig eine Gruppe namens **MyMenuGroup** und eine Schaltfläche mit dem Namen ab, die Sie angegeben haben, zusammen mit einem IDSymbol-Eintrag für jede.
 
-5.  Erstellen Sie im Abschnitt Gruppen ein Group-Element mit den gleichen GUID und ID-Attributen wie diejenigen in den Abschnitt "Symbols" angegeben ist. Sie können auch eine vorhandene Gruppe verwenden, oder verwenden Sie den Eintrag, der von der Befehlsvorlage wie im folgenden Beispiel bereitgestellt wird. Diese Gruppe wird angezeigt, auf die **Tools** Menü
+5. Erstellen Sie im Abschnitt Gruppen ein Group-Element mit den gleichen GUID und ID-Attributen wie diejenigen in den Abschnitt "Symbols" angegeben ist. Sie können auch eine vorhandene Gruppe verwenden, oder verwenden Sie den Eintrag, der von der Befehlsvorlage wie im folgenden Beispiel bereitgestellt wird. Diese Gruppe wird angezeigt, auf die **Tools** Menü
 
     ```xml
     <Groups>
@@ -56,7 +56,7 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>Um eine Gruppe von Schaltflächen für die Wiederverwendung zu erstellen.
 
-1.  Sie können einen Befehl oder ein Menü in einer Gruppe mithilfe der Gruppe als übergeordnetes Element in der Definition der Befehl oder im Menü, oder indem Sie den Befehl oder das Menü in der Gruppe mithilfe des Abschnitts CommandPlacements einfügen einfügen.
+1. Sie können einen Befehl oder ein Menü in einer Gruppe mithilfe der Gruppe als übergeordnetes Element in der Definition der Befehl oder im Menü, oder indem Sie den Befehl oder das Menü in der Gruppe mithilfe des Abschnitts CommandPlacements einfügen einfügen.
 
      Klicken Sie im Abschnitt Schaltflächen definieren Sie eine Schaltfläche mit Ihrer Gruppe als übergeordnete Klasse, oder verwenden Sie die Schaltfläche, die von der Paketvorlage bereitgestellt wird, wie im folgenden Beispiel gezeigt.
 
@@ -70,7 +70,7 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer zusammen in einem
     </Button>
     ```
 
-2.  Wenn eine Schaltfläche in mehr als einer Gruppe angezeigt werden muss, erstellen Sie einen Eintrag für sie im Abschnitt CommandPlacements, die nach dem Abschnitt Befehle platziert werden muss. Die GUID und ID-Attribute des CommandPlacement-Element, mit denen der Schaltfläche übereinstimmen, die Sie positionieren möchten, und legen Sie dann die GUID und ID des übergeordneten Elements, die von der Zielgruppe und wie im folgenden Beispiel gezeigt.
+2. Wenn eine Schaltfläche in mehr als einer Gruppe angezeigt werden muss, erstellen Sie einen Eintrag für sie im Abschnitt CommandPlacements, die nach dem Abschnitt Befehle platziert werden muss. Die GUID und ID-Attribute des CommandPlacement-Element, mit denen der Schaltfläche übereinstimmen, die Sie positionieren möchten, und legen Sie dann die GUID und ID des übergeordneten Elements, die von der Zielgruppe und wie im folgenden Beispiel gezeigt.
 
     ```xml
     <CommandPlacements>

@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050211"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Erstellen von Ebenendiagrammen aus Ihrem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
   
  Ein Ebenendiagramm können Sie die Visual Studio-Projektmappenelemente in logische, abstrakte Gruppen aufgerufen organisieren *Ebenen*. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. Sie können auch angeben, die vorgesehenen oder vorhandenen *Abhängigkeiten* zwischen Ebenen. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.  
   
-##  <a name="CreateDiagram"></a> Ein Ebenendiagramm erstellen  
+## <a name="CreateDiagram"></a> Ein Ebenendiagramm erstellen  
  Bevor Sie ein Ebenendiagramm erstellen, vergewissern Sie sich, dass die Projektmappe ein Modellierungsprojekt enthält. Finden Sie unter [Erstellen von UML-Modellierungsprojekten und-Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
@@ -40,13 +40,13 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>So fügen Sie einem Modellierungsprojekt ein neues Ebenendiagramm hinzu  
   
-1.  Auf der **Architektur** Menü wählen **neues UML- oder Ebenendiagramm**.  
+1. Auf der **Architektur** Menü wählen **neues UML- oder Ebenendiagramm**.  
   
-2.  Klicken Sie unter **Vorlagen**, wählen Sie **Ebenendiagramm**.  
+2. Klicken Sie unter **Vorlagen**, wählen Sie **Ebenendiagramm**.  
   
-3.  Benennen Sie das Diagramm.  
+3. Benennen Sie das Diagramm.  
   
-4.  In **zu Modellierungsprojekt hinzufügen**, navigieren Sie zu, und wählen Sie in der Projektmappe ein vorhandenes Modellierungsprojekt aus.  
+4. In **zu Modellierungsprojekt hinzufügen**, navigieren Sie zu, und wählen Sie in der Projektmappe ein vorhandenes Modellierungsprojekt aus.  
   
      - oder -   
   
@@ -55,9 +55,9 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
     > [!NOTE]
     >  Das Ebenendiagramm muss in einem Modellierungsprojekt vorhanden sein. Sie können es allerdings mit Elementen an einer beliebigen Stelle in der Projektmappe verknüpfen.  
   
-5.  Vergewissern Sie sich, dass Sie das Modellierungsprojekt und das Ebenendiagramm gespeichert haben.  
+5. Vergewissern Sie sich, dass Sie das Modellierungsprojekt und das Ebenendiagramm gespeichert haben.  
   
-##  <a name="CreateLayers"></a> Ebenen aus Artefakten erstellen  
+## <a name="CreateLayers"></a> Ebenen aus Artefakten erstellen  
  Ebenen können aus Visual Studio-Projektmappenelementen erstellt werden, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Dabei werden Verknüpfungen zwischen den Ebenen und den Elementen automatisch erstellt und im Ebenenvalidierungsprozess berücksichtigt.  
   
  Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie "Layer 1" und "Layer 2" angezeigt werden, jedoch nicht berücksichtigt.  
@@ -80,19 +80,19 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
   
  Die Zahl auf einer Ebene gibt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch Folgendes, wenn Sie diese Zahl lesen:  
   
--   Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.  
+- Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.  
   
      Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.  
   
--   Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.  
+- Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.  
   
-##  <a name="Managing"></a> Verwalten von Links zwischen Ebenen und Artefakten  
+## <a name="Managing"></a> Verwalten von Links zwischen Ebenen und Artefakten  
   
-1.  Öffnen Sie das Kontextmenü für die Ebene im Ebenendiagramm, und wählen Sie dann **Links anzeigen**.  
+1. Öffnen Sie das Kontextmenü für die Ebene im Ebenendiagramm, und wählen Sie dann **Links anzeigen**.  
   
      **Ebenen-Explorer** werden die Artefaktlinks für die ausgewählte Ebene.  
   
-2.  Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:  
+2. Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:  
   
 |**Aktion**|**Im Ebenen-Explorer**|  
 |------------|---------------------------|  
@@ -102,7 +102,7 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
 |Erstellen einer neuen Ebene aus einem vorhandenen Artefaktlink|Ziehen Sie den Artefaktlink in einen leeren Bereich des Diagramms.|  
 |Überprüfen, ob ein verknüpftes Artefakt die Validierung anhand des Ebenendiagramms unterstützt|Sehen Sie sich die **unterstützt die Validierung** Spalte für den Artefaktlink.|  
   
-##  <a name="Discovering"></a> Vorhandene Reverse-Engineering-Abhängigkeiten  
+## <a name="Discovering"></a> Vorhandene Reverse-Engineering-Abhängigkeiten  
  Eine Abhängigkeit ist überall dort vorhanden, wo ein Artefakt, das einer Ebene zugeordnet ist, einen Verweis auf ein Artefakt enthält, das einer anderen Ebene zugeordnet ist. Beispiel: Eine Klasse in einer Ebene deklariert eine Variable, deren Klasse sich auf einer anderen Ebene befindet. Bei vorhandenen Abhängigkeiten von Artefakten, die mit Ebenen des Diagramms verknüpft sind, ist eine Rückentwicklung möglich.  
   
 > [!NOTE]
@@ -112,7 +112,7 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
   
   In der Regel sind einige unerwünschte Abhängigkeiten vorhanden. Diese Abhängigkeiten können bearbeitet werden, um sie mit dem geplanten Entwurf in Einklang zu bringen.  
   
-##  <a name="EditDependencies"></a> Bearbeiten von Ebenen und Abhängigkeiten auf den vorgesehenen Entwurf anzeigen  
+## <a name="EditDependencies"></a> Bearbeiten von Ebenen und Abhängigkeiten auf den vorgesehenen Entwurf anzeigen  
  Um die geplanten Änderungen an Ihrem System oder der vorgesehenen Architektur zu beschreiben, bearbeiten Sie das Ebenendiagramm:  
   
 |**Aktion**|**Führen Sie diese Schritte aus**|  
@@ -123,17 +123,17 @@ Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustelle
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören dürfen|Geben Sie die Namespaces in der Ebene des **Unzulässige Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
 |Angeben, dass einer Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen|Geben Sie den Namespace in der Ebene des **erforderliche Namespaces** Eigenschaft. Verwenden Sie ein Semikolon (**;**) trennen Sie die Namespaces.|  
   
-##  <a name="EditLayout"></a> Ändern Sie, wie Elemente im Diagramm angezeigt werden  
+## <a name="EditLayout"></a> Ändern Sie, wie Elemente im Diagramm angezeigt werden  
  Sie können die Größe, Form, Farbe und Position von Ebenen oder die Farbe von Abhängigkeiten ändern, indem Sie ihre Eigenschaften bearbeiten.  
   
-##  <a name="Codemaps"></a> Ermitteln von Mustern und Abhängigkeiten in einer Code map  
+## <a name="Codemaps"></a> Ermitteln von Mustern und Abhängigkeiten in einer Code map  
  Beim Erstellen von Ebenendiagrammen können Sie auch erstellen **von code Maps**. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe von Projektmappen-Explorer, Klassenansicht oder Objektkatalog können Assemblys, Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weitere Informationen zu Codezuordnungen finden Sie unter den folgenden Themen:  
   
--   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
+- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Channel 9-Video: Entwerfen und Überprüfen der Architektur mit Ebenendiagrammen](http://go.microsoft.com/fwlink/?LinkID=252073)   

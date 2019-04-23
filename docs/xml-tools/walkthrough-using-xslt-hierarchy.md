@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051634"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie
 
@@ -69,7 +69,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-3.  Fügen Sie die folgenden *xslinclude.xsl* Datei:
+3. Fügen Sie die folgenden *xslinclude.xsl* Datei:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-4.  Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`.
+4. Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Beginnen Sie mit dem Debuggen.
+5. Beginnen Sie mit dem Debuggen.
 
-6.  Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
+6. Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

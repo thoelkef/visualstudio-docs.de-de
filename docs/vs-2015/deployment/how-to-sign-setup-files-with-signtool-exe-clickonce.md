@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053207"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch 
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>So generieren Sie ein nicht signiertes Setupprogramm und signieren es später  
   
-1.  Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.  
+1. Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.  
   
-2.  Wählen Sie das Projekt im **Projektmappen-Explorer** aus.  
+2. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.  
   
-3.  Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
+3. Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
-4.  Deaktivieren Sie auf der Seite **Signieren** das Kontrollkästchen **ClickOnce-Manifeste signieren**.  
+4. Deaktivieren Sie auf der Seite **Signieren** das Kontrollkästchen **ClickOnce-Manifeste signieren**.  
   
-5.  Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**.  
+5. Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**.  
   
-6.  Überprüfen Sie, ob alle erforderlichen Komponenten ausgewählt sind, und klicken Sie dann auf **OK**.  
+6. Überprüfen Sie, ob alle erforderlichen Komponenten ausgewählt sind, und klicken Sie dann auf **OK**.  
   
-7.  Überprüfen Sie auf der Seite **Veröffentlichen** die Einstellungen für die Veröffentlichung, und klicken Sie dann auf **Jetzt veröffentlichen**.  
+7. Überprüfen Sie auf der Seite **Veröffentlichen** die Einstellungen für die Veröffentlichung, und klicken Sie dann auf **Jetzt veröffentlichen**.  
   
      Die Projektmappe veröffentlicht das nicht signierte Anwendungsmanifest, das nicht signierte Bereitstellungsmanifest, versionsspezifische Dateien und das nicht signierte Setupprogramm im Pfad des Veröffentlichungsordners.  
   
-8.  Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**.  
+8. Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**.  
   
 9. Deaktivieren Sie im Dialogfeld **Erforderliche Komponenten** das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen**.  
   

@@ -14,19 +14,19 @@ ms.assetid: abebe518-07d7-42cd-af50-00bfda17da08
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8008ddc6d47114bcb442ebfb1e2f1cdda6c04587
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044147"
 ---
 # <a name="illegal-assignment-javascript"></a>Ungültige Zuweisung (JavaScript)
 Sie versucht, ein schreibgeschützter Bezeichner einen Wert zuweisen. Sie können nicht auf einen nur-Lese Bezeichner einen Wert zuweisen. Beispielsweise definiert die Host-Objekte und externe COM-Objekten.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Nur-Lese IDs keine Werte zuweisen.  
+- Nur-Lese IDs keine Werte zuweisen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Zuweisungsoperator (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

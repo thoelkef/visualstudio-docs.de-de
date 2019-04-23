@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8057aa7f2e69d88f6e9cbdf20f9d13105aa031c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab746bfd3e8854fddd83f3fdde49a5d0dda397ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052791"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zu
   
  Ein Registrierungseintrag, der als eines benutzerdefinierten Einstellungspunkts und einer GUID bezeichnet wird definiert, eine VSPackage Einstellungskategorie. Eine VSPackage kann mehrere Einstellungskategorien unterstützen, die jeweils durch einen benutzerdefinierten Einstellungspunkt definiert.  
   
--   Implementierungen von Einstellungen, die auf Interopassemblys basieren (mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> Schnittstelle) sollten Sie die benutzerdefinierten Einstellungspunkts durch Bearbeiten der Registrierungs oder mithilfe eines Skripts Registrierungsstelle (RGS-Datei) erstellen. Weitere Informationen finden Sie unter [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Implementierungen von Einstellungen, die auf Interopassemblys basieren (mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> Schnittstelle) sollten Sie die benutzerdefinierten Einstellungspunkts durch Bearbeiten der Registrierungs oder mithilfe eines Skripts Registrierungsstelle (RGS-Datei) erstellen. Weitere Informationen finden Sie unter [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
--   Code, der das Managed Package Framework (MPF) verwendet, sollten benutzerdefinierten Einstellungspunkten erstellen, durch Anfügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> für das VSPackage für jeden benutzerdefinierten Einstellungspunkts.  
+- Code, der das Managed Package Framework (MPF) verwendet, sollten benutzerdefinierten Einstellungspunkten erstellen, durch Anfügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> für das VSPackage für jeden benutzerdefinierten Einstellungspunkts.  
   
      Wenn ein einzelne VSPackage mehrere benutzerdefinierten Einstellungspunkten unterstützt, jeder benutzerdefinierten Einstellungspunkts durch eine separate Klasse implementiert wird und jedes, indem eine eindeutige Instanz registriert wird der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse. Daher können die Einstellungen für einen implementierende Klasse mehr als eine Einstellungskategorie unterstützen.  
   

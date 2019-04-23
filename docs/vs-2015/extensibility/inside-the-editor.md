@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056041"
 ---
 # <a name="inside-the-editor"></a>Im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Der Editor besteht aus einer Reihe von verschiedenen Subsysteme enthalten, die d
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Übersicht über die Subsysteme  
+## <a name="overview"></a> Übersicht über die Subsysteme  
   
 ### <a name="text-model-subsystem"></a>Text-Modell-Subsystem  
  Das Subsystem des Text-Modell dient, die Text darstellt, und aktivieren die Bearbeitung. Das Subsystem des Text-Modell enthält die <xref:Microsoft.VisualStudio.Text.ITextBuffer> -Schnittstelle, die die Sequenz von Zeichen beschreibt, die vom Editor angezeigt werden soll. Dieser Text kann geändert, nachverfolgt und auf viele Arten bearbeitet werden. Der Textmodell bietet auch Typen, für die folgenden Aspekte:  
@@ -76,7 +76,7 @@ Der Editor besteht aus einer Reihe von verschiedenen Subsysteme enthalten, die d
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Genauere Betrachtung des Text-Modells und der Textansicht  
   
-###  <a name="textmodel"></a> Das Textmodell  
+### <a name="textmodel"></a> Das Textmodell  
  Das Text-Modell-Subsystem besteht aus unterschiedliche Gruppierungen der Texttypen. Dazu gehören, die den Textpuffer, Textmomentaufnahmen und Textspannen.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Textpuffer und Textmomentaufnahmen  
@@ -141,7 +141,7 @@ abXefYj
  Sie können die Position eines Punkts nachverfolgung oder die Spanne des eine Nachverfolgungsspanne für jede Momentaufnahme des Textpuffers abrufen, die sie angehören. Überwachungspunkte und Nachverfolgungsspannen können sicher von jedem Thread aus verwiesen werden.  
   
 #### <a name="content-types"></a>Inhaltstypen  
- Inhaltstypen werden einen Mechanismus zum Definieren verschiedene Arten von Inhalt an. Ein Inhaltstyp möglich einen Dateityp, z. B. "Text", "Code" oder "binary" oder einen Technologietyp, z. B. "Xml", "Vb" oder "C#". Beispielsweise ist das Wort "using" ein Schlüsselwort in C# und Visual Basic, aber nicht in anderen Programmiersprachen. Daher wäre die Definition dieses Schlüsselwort auf den Inhalt vom Typ "C#" oder "Vb" beschränkt.  
+ Inhaltstypen werden einen Mechanismus zum Definieren verschiedene Arten von Inhalt an. Ein Inhaltstyp möglich einen Dateityp, z. B. "Text", "Code" oder "binary" oder einen Technologietyp, z. B. "Xml", "Vb" oder "c#". Beispielsweise ist das Wort "using" ein Schlüsselwort in c# und Visual Basic, aber nicht in anderen Programmiersprachen. Daher wäre die Definition dieses Schlüsselwort auf den Inhalt vom Typ "c#" oder "Vb" beschränkt.  
   
  Inhaltstypen werden als Filter für die Zusatzelemente und andere Elemente des Editors verwendet. Viele Editor-Funktionen und Erweiterungspunkte sind pro Inhaltstyp definiert. beispielsweise unterscheidet sich Text Farbgebung für nur-Text-Dateien, XML-Dateien und Visual Basic-Quellcodedateien. Textpuffer werden in der Regel einen Inhaltstyp zugewiesen, wenn sie erstellt wurden, und der Inhaltstyp eines Textpuffers geändert werden kann.  
   
@@ -149,7 +149,7 @@ abXefYj
   
  Entwickler können eigene Inhaltstypen zu definieren und registrieren Sie sie mithilfe der <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Viele Editor-Funktionen in Bezug auf einen bestimmten Inhaltstyp definiert werden, indem Sie mit der <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Beispielsweise können Editor Ränder und Zusatzelemente, die Maushandler definiert werden, damit sie nur für Editoren gelten, die bestimmte Inhaltstypen anzeigen.  
   
-###  <a name="textview"></a> Die Textansicht  
+### <a name="textview"></a> Die Textansicht  
  Die Ansichtsteil der Model-View-Controller (MVC)-Muster definiert die Textansicht, die die Formatierung der Ansicht, grafische Elemente wie die Bildlaufleiste, und die Einfügemarke an. Alle Darstellungselemente von Visual Studio-Editor basieren auf WPF.  
   
 #### <a name="text-views"></a>Text-Ansichten  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>Editor-Funktionen  
  Die Funktionen des Editors sind so konzipiert, dass die Definition der Funktion von ihrer Implementierung getrennt ist. Der Editor bietet folgende Funktionen:  
   
--   Tags und Klassifizierungen  
+- Tags und Klassifizierungen  
   
--   Zusatzelemente  
+- Zusatzelemente  
   
--   Projection  
+- Projection  
   
--   Gliedern  
+- Gliedern  
   
--   Maus und Tastatur-Bindungen  
+- Maus und Tastatur-Bindungen  
   
--   Vorgänge und primitive  
+- Vorgänge und primitive  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Tags und Klassifizierungen  
+### <a name="tagsandclassifiers"></a> Tags und Klassifizierungen  
  Tags sind Marker, die einen Textabschnitt zugeordnet sind. Sie können auf unterschiedliche Weise z. B. dargestellt werden mithilfe von Farben für Text, unterstreichungen, Grafiken oder Popups. Klassifizierer sind eine Art von Tags.  
   
  Andere Arten von Tags sind <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> für die Hervorhebung von Text, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> für Gliederungen, und <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> für Kompilierungsfehler.  
@@ -230,15 +230,15 @@ abXefYj
   
  Ein <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> ist eine Zuordnung von einem Klassifizierungstyp auf einen Satz von Eigenschaften für die textformatierung. Die Implementierung der gekachelten im Editor verarbeitet alle Exporte der Klassifizierung Formate.  
   
-###  <a name="adornments"></a> Zusatzelemente  
+### <a name="adornments"></a> Zusatzelemente  
  Zusatzelemente sind grafische Effekte, die nicht direkt mit der Schriftart und Farbe der Zeichen in der Textansicht verknüpft sind. Z. B. der roten Wellenlinie unterstrichen, die zum Markieren von nicht-Kompilierung von Code in vielen Programmiersprachen verwendet wird, ist ein eingebettetes Zusatzelement und QuickInfos werden Popup Randsteuerelemente. Zusatzelemente, die davon abgeleitet sind <xref:System.Windows.UIElement> und implementieren Sie <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Sind zwei spezielle Arten von Zusatzelement Tag der <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, für die Zusatzelemente, die den gleichen Speicherplatz wie der Text in einer Sicht, belegen und die <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, für die Wellenlinie unterstrichen.  
   
  Eingebettete Zusatzelemente sind Grafiken, die Teil der formatierten Textansicht an. Sie sind in verschiedenen Schichten der Z-Reihenfolge angeordnet. Es gibt drei integrierte Ebenen, die folgenden: Text, der Einfügemarke und die Auswahl. Entwickler können jedoch weitere Ebenen definieren, und platzieren Sie sie in der Reihenfolge relativ zu anderen. Die drei Arten von eingebetteten Zusatzelemente sind Relative Text-Randsteuerelemente (die Verschiebung, wenn der Text bewegt wird, und werden gelöscht, wenn der Text gelöscht wird), relativen Ansicht Zusatzelemente (die mit nicht-Text, Teile der Sicht zu tun haben) und Besitzer gesteuerte Zusatzelemente (die Entwickler muss ihrer Platzierung verwalten).  
   
  Popup Zusatzelemente sind Grafiken, die in einem kleinen Fenster über der Textansicht, z. B. QuickInfos angezeigt werden.  
   
-###  <a name="projection"></a> Projektion  
- Projektion ist ein Verfahren zum Erstellen einer anderen Art von Textpuffer, die nicht tatsächlich Text gespeichert, sondern stattdessen kombiniert Text aus anderer Textpuffer. Beispielsweise kann ein Projektionspuffer verwendet werden, um den Text aus zwei anderen Puffer zu verketten und das Ergebnis präsentieren, als ob sie nur ein Puffer wird, oder Teile des Texts in einem Puffer auszublenden. Ein Projektionspuffer kann als einen Quellpuffer in eine andere Projektionspuffer fungieren. Ein Satz von Puffern, die durch Projektion beziehen kann erstellt werden, um Text auf viele verschiedene Arten neu anzuordnen. (Es ist auch bekannt als solche einem *Pufferdiagramm*.) Die Visual Studio-Text-Gliederungsfunktion wird implementiert, mit einem Projektionspuffer So blenden Sie den reduzierten Text aus, und Visual Studio-Editor für ASP.NET-Seiten-Projektion verwendet, um eingebettete Sprachen wie Visual Basic und C# zu unterstützen.  
+### <a name="projection"></a> Projektion  
+ Projektion ist ein Verfahren zum Erstellen einer anderen Art von Textpuffer, die nicht tatsächlich Text gespeichert, sondern stattdessen kombiniert Text aus anderer Textpuffer. Beispielsweise kann ein Projektionspuffer verwendet werden, um den Text aus zwei anderen Puffer zu verketten und das Ergebnis präsentieren, als ob sie nur ein Puffer wird, oder Teile des Texts in einem Puffer auszublenden. Ein Projektionspuffer kann als einen Quellpuffer in eine andere Projektionspuffer fungieren. Ein Satz von Puffern, die durch Projektion beziehen kann erstellt werden, um Text auf viele verschiedene Arten neu anzuordnen. (Es ist auch bekannt als solche einem *Pufferdiagramm*.) Die Visual Studio-Text-Gliederungsfunktion wird implementiert, mit einem Projektionspuffer So blenden Sie den reduzierten Text aus, und Visual Studio-Editor für ASP.NET-Seiten-Projektion verwendet, um eingebettete Sprachen wie Visual Basic und c# zu unterstützen.  
   
  Ein <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> wird erstellt, indem Sie mithilfe von <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Ein Projektionspuffer wird durch eine geordnete Sequenz von dargestellt <xref:Microsoft.VisualStudio.Text.ITrackingSpan> Objekte, die so genannte *Quellspannen*. Der Inhalt der diese Spannen werden als eine Folge von Zeichen dargestellt. Der Textpuffer, die Quellspannen aus dem stammen, heißen *source Puffer*. Clients von einem Projektionspuffer keine Bedenken, dass es einen gewöhnlichen Textpuffer unterscheidet.  
   
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Ereignisse und Projektionspuffer  
  Ein Projektionspuffer geändert wurde, werden die Änderungen aus dem Projektionspuffer in den Puffer gesendet, von die sie abhängen. Nachdem alle Puffer geändert werden, werden Puffer Änderungsereignisse ausgelöst, mit dem tiefsten Puffer ab.  
   
-###  <a name="outlining"></a> Gliederung  
+### <a name="outlining"></a> Gliederung  
  Gliederung ist die Möglichkeit zum Erweitern oder reduzieren unterschiedliche Textblöcke in einer Textansicht. Gliederung ist definiert als eine Art von <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, in der gleichen Weise wie Zusatzelemente definiert sind. Ein <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> ist ein Tag, das einen Textbereich definiert, die erweitert oder reduziert werden können. Um Gliederung zu verwenden, müssen Sie importieren die <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> zum Abrufen einer <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Der gliederungs-Manager listet reduziert und erweitert die verschiedene Blöcke, die als dargestellt werden <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> Objekte aus, und löst Ereignisse entsprechend.  
   
-###  <a name="mousebindings"></a> Mausbindungen  
+### <a name="mousebindings"></a> Mausbindungen  
  Mausbindungen verknüpfen mausbewegungen auf andere Befehle. Mausbindungen mithilfe von definiert eine <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, und tastenzuordnungen mithilfe von definiert eine <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automatisch alle Bindungen instanziiert und verbindet sie mit der Mausereignisse in der Ansicht.  
   
  Die <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Schnittstelle enthält, vorab zu verarbeiten und nach der Verarbeitung-Ereignishandlern für verschiedene Mausereignisse. Um ein Handle eines der Ereignisse, können Sie einige der Methoden in überschreiben <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Editor-Vorgänge  
+### <a name="editoroperations"></a> Editor-Vorgänge  
  Editor-Vorgänge können verwendet werden, um Interaktion mit dem Editor für Skripterstellung oder für andere Zwecke zu automatisieren. Können Sie importieren die <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> für Zugriffsvorgänge auf einen bestimmten <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Sie können diese Objekte klicken Sie dann verwenden, um die Auswahl zu ändern, führen Sie einen Bildlauf der Ansicht oder verschiebt die Einfügemarke an verschiedenen Teilen der Ansicht.  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  Es unterstützt IntelliSense-Anweisungsvervollständigung, Signaturhilfe (auch bekannt als "ParameterInfo"), QuickInfo und Glühbirnen.  
   
  Anweisungsvervollständigung bietet Popup-Listen mit möglichen vervollständigungen für Methodennamen, XML-Elemente und andere Elemente zu codieren oder Markup. Eine Benutzeraktion ruft in der Regel eine vervollständigungssitzung. Die Sitzung wird die Liste der möglichen vervollständigungen angezeigt, und der Benutzer wählen Sie eine oder die Liste zu schließen. Die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> ist verantwortlich für das Erstellen und Auslösen der <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. Die <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> berechnet die <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> von Vervollständigungselemente der Sitzung.  

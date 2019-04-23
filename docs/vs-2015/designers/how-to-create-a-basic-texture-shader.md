@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048566"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Gewusst wie: Erstellen eines Basistextur-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Entfernen von Knoten aus einen Shader-Diagramm  
+- Entfernen von Knoten aus einen Shader-Diagramm  
   
--   Hinzufügen von Knoten in ein Diagramm  
+- Hinzufügen von Knoten in ein Diagramm  
   
--   Festlegen der Shader-Parameter  
+- Festlegen der Shader-Parameter  
   
--   Einstellen des Parameters „Sichtbarkeit“  
+- Einstellen des Parameters „Sichtbarkeit“  
   
--   Verbinden der Knoten  
+- Verbinden der Knoten  
   
 ## <a name="creating-a-basic-texture-shader"></a>So erstellen Sie einen Basistexturshader  
  Sie können einen grundlegenden, Ein-Textur-Shader implementieren, indem die Farb- und Alphawerte direkt in die endgültige Farbe geschrieben werden.  

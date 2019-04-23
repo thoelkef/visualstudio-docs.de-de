@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044823"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren Sie und deaktivieren Sie der vollständigen Projektmappenanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ ms.locfileid: "58946751"
 HINWEIS]
 >  Dieses Thema gilt nur für Visual Studio 2015 Update 3 RC und höher.  
   
- *Vollständige projektmappenanalyse* ist ein Visual Studio-Feature, können Sie auswählen, ob bei der Codeanalyse nur in open-Visual C# oder Visual Basic-Dateien in der Projektmappe oder in einer offenen und geschlossenen Visual C# oder Visual Basic-Dateien in der Projektmappe angezeigt.  
+ *Vollständige projektmappenanalyse* ist ein Visual Studio-Feature, können Sie auswählen, ob bei der Codeanalyse nur in open-Visual c# oder Visual Basic-Dateien in der Projektmappe oder in einer offenen und geschlossenen Visual c# oder Visual Basic-Dateien in der Projektmappe angezeigt.  
   
  Während nützlich dass Sie alle Probleme in allen Dateien ist, kann er störend und sogar Visual Studio verlangsamt werden, wenn Ihre Lösung sehr groß ist oder viele Dateien weist.  Um die Anzahl der angezeigten Probleme, und Verbessern der Leistung von Visual Studio, können Sie die vollständige projektmappenanalyse deaktivieren. Sie können einfach diese Funktion wieder aktivieren, wenn Sie möchten.  
   
 #### <a name="to-toggle-full-solution-analysis"></a>Zum Umschalten der vollständigen projektmappenanalyse  
   
-1.  Wählen Sie im Hauptmenü in Visual Studio **Tools** &#124; **Optionen** zum Anzeigen der **Optionen** Dialogfeld.  
+1. Wählen Sie im Hauptmenü in Visual Studio **Tools** &#124; **Optionen** zum Anzeigen der **Optionen** Dialogfeld.  
   
-2.  In der **Optionen** Dialogfeld wählen **Text-Editor** &#124; **C#** oder **grundlegende** &#124; **erweitert**.  
+2. In der **Optionen** Dialogfeld wählen **Text-Editor** &#124; **c#** oder **grundlegende** &#124; **erweitert**.  
   
-3.  Wählen Sie die **vollständige projektmappenanalyse aktivieren** Kontrollkästchen, um die vollständige projektmappenanalyse aktivieren oder deaktivieren Sie das Kontrollkästchen, um es zu deaktivieren. Wählen Sie die **OK** Schaltfläche, wenn Sie fertig sind.  
+3. Wählen Sie die **vollständige projektmappenanalyse aktivieren** Kontrollkästchen, um die vollständige projektmappenanalyse aktivieren oder deaktivieren Sie das Kontrollkästchen, um es zu deaktivieren. Wählen Sie die **OK** Schaltfläche, wenn Sie fertig sind.  
   
      ![Aktivieren Sie die vollständige Lösung Analysis-Kontrollkästchen. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

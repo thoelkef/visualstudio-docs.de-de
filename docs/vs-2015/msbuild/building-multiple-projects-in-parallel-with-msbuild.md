@@ -13,21 +13,21 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c420c4546a836d1440bdb150eba1319ad6218622
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050245"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Paralleles Erstellen von mehreren Projekten mit MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können MSBuild verwenden, um mehrere Projekte schneller zu erstellen, indem Sie sie parallel ausführen. Um Builds parallel auszuführen, verwenden Sie die folgenden Einstellungen auf einem Mehrkern- oder Mehrprozessorcomputer:  
   
--   den Schalter `/maxcpucount` in einer Eingabeaufforderung  
+- den Schalter `/maxcpucount` in einer Eingabeaufforderung  
   
--   den <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A>-Aufgabenparameter in einer MSBuild-Aufgabe  
+- den <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A>-Aufgabenparameter in einer MSBuild-Aufgabe  
   
 > [!NOTE]
 >  Der Schalter **/verbosity** (**/v**) in einer Befehlszeile kann die Buildleistung ebenfalls beeinflussen. Die Buildleistung verringert sich möglicherweise, wenn die Ausführlichkeit der Buildprotokollinformationen auf die Einstellung "Detailliert" oder "Diagnose" festgelegt ist, die beide für die Problembehandlung verwendet werden. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen in MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md) und [MSBuild Command-Line Reference](../msbuild/msbuild-command-line-reference.md).  

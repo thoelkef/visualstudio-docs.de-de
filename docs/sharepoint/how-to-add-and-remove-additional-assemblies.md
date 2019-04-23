@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13bb8c394468b209c55af2878e15232a08ff9f7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa25413a40c9b2333acbaba96d55008dbcebfd39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051609"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Vorgehensweise: Fügen Sie hinzu und entfernen Sie zusätzlicher Assemblys
   Wenn ein SharePoint-Paket im Hinblick auf Funktionen oder Daten von anderen Assemblys abhängig ist, können Sie die Assemblys dem Lösungspaket (.wsp) hinzufügen. Auf diese Weise stellt der SharePoint-Server sicher, dass benutzerdefinierte Assemblys mit einem Paket installiert werden.
@@ -31,82 +31,82 @@ ms.locfileid: "56621161"
 
 #### <a name="to-add-an-existing-assembly"></a>So fügen Sie eine vorhandene Assembly hinzu
 
-1.  Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+1. Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2.  Wählen Sie die **erweitert** Registerkarte.
+2. Wählen Sie die **erweitert** Registerkarte.
 
-3.  Wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **vorhandene Assembly hinzufügen** aus der Liste.
+3. Wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **vorhandene Assembly hinzufügen** aus der Liste.
 
      Die **vorhandene Assembly hinzufügen** Dialogfeld wird angezeigt.
 
-4.  Wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")), und wählen Sie dann auf die Assembly, die Sie hinzufügen möchten. Aus Gründen der Portabilität wird empfohlen, einen relativen Pfad zur ausgewählten Assembly zu verwenden.
+4. Wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")), und wählen Sie dann auf die Assembly, die Sie hinzufügen möchten. Aus Gründen der Portabilität wird empfohlen, einen relativen Pfad zur ausgewählten Assembly zu verwenden.
 
-5.  Für die **Bereitstellungsziel**, wählen Sie die **GlobalAssemblyCache** Optionsfeld aus, um die Assembly im globalen Assemblycache bereitstellen, oder wählen Sie die **WebApplication** Option Schaltfläche, um die Assembly im Ordner "WebApplication" auf dem Server bereitstellen, auf dem SharePoint ausgeführt wird.
+5. Für die **Bereitstellungsziel**, wählen Sie die **GlobalAssemblyCache** Optionsfeld aus, um die Assembly im globalen Assemblycache bereitstellen, oder wählen Sie die **WebApplication** Option Schaltfläche, um die Assembly im Ordner "WebApplication" auf dem Server bereitstellen, auf dem SharePoint ausgeführt wird.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>So fügen Sie eine Assembly aus der Projektausgabe hinzu
 
-1.  Öffnen der **Paket-Designer**.
+1. Öffnen der **Paket-Designer**.
 
      Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2.  Wählen Sie die **erweitert** Registerkarte.
+2. Wählen Sie die **erweitert** Registerkarte.
 
-3.  Wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **Assembly aus Projektausgabe hinzufügen** aus der Liste.
+3. Wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **Assembly aus Projektausgabe hinzufügen** aus der Liste.
 
      Die **Assembly aus Projektausgabe hinzufügen** Dialogfeld wird angezeigt.
 
-4.  In der **Quellprojekt** aus, und wählen Sie das Quellprojekt, die Sie hinzufügen möchten.
+4. In der **Quellprojekt** aus, und wählen Sie das Quellprojekt, die Sie hinzufügen möchten.
 
-5.  Für die **Bereitstellungsziel**, wählen Sie die **GlobalAssemblyCache** Optionsfeld aus, um die Assembly im globalen Assemblycache bereitstellen, oder wählen Sie die **WebApplication** Option Schaltfläche, um die Assembly im Ordner "WebApplication" auf dem Server bereitstellen, auf dem SharePoint ausgeführt wird.
+5. Für die **Bereitstellungsziel**, wählen Sie die **GlobalAssemblyCache** Optionsfeld aus, um die Assembly im globalen Assemblycache bereitstellen, oder wählen Sie die **WebApplication** Option Schaltfläche, um die Assembly im Ordner "WebApplication" auf dem Server bereitstellen, auf dem SharePoint ausgeführt wird.
 
 #### <a name="to-add-a-safe-control"></a>So fügen Sie ein sicheres Steuerelement hinzu
 
-1.  Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
+1. Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
 
-2.  In der **sichere Steuerelemente** Bereich, wählen Sie die **klicken Sie hier, um ein neues Element hinzufügen** Schaltfläche.
+2. In der **sichere Steuerelemente** Bereich, wählen Sie die **klicken Sie hier, um ein neues Element hinzufügen** Schaltfläche.
 
-3.  In der **Assemblyname** Spalte Geben Sie den Namen der Assembly.
+3. In der **Assemblyname** Spalte Geben Sie den Namen der Assembly.
 
-4.  In der **Namespace** Spalte Geben Sie den Namen des Namespace für das sichere Steuerelement.
+4. In der **Namespace** Spalte Geben Sie den Namen des Namespace für das sichere Steuerelement.
 
-5.  In der **Typnamen** Spalte Geben Sie den Namen des Typs.
+5. In der **Typnamen** Spalte Geben Sie den Namen des Typs.
 
 #### <a name="to-add-a-class-resource"></a>So fügen Sie eine Klassenressource hinzu
 
-1.  Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
+1. Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
 
-2.  In der **Klassenressourcen** Bereich, wählen Sie die **klicken Sie hier, um ein neues Element hinzufügen** Schaltfläche.
+2. In der **Klassenressourcen** Bereich, wählen Sie die **klicken Sie hier, um ein neues Element hinzufügen** Schaltfläche.
 
-3.  In der **Dateiname** Spalte wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")), und wählen Sie die Klassenressource aus, die Sie hinzufügen möchten.
+3. In der **Dateiname** Spalte wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")), und wählen Sie die Klassenressource aus, die Sie hinzufügen möchten.
 
 ## <a name="delete-custom-assemblies"></a>Löschen von benutzerdefinierten Assemblys
  Sie können Assemblys aus einem SharePoint-Paket oder sichere Steuerelemente und Klassenressourcen aus vorhandenen Assemblys löschen.
 
 #### <a name="to-delete-an-existing-assembly"></a>So löschen Sie eine vorhandene Assembly
 
-1.  Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+1. Öffnen der **Paket-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen eines SharePoint-Lösungspakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2.  Wählen Sie die **erweitert** Registerkarte.
+2. Wählen Sie die **erweitert** Registerkarte.
 
-3.  In der **zusätzliche Assemblys** Bereich, wählen Sie die benutzerdefinierte Assembly, die Sie löschen möchten.
+3. In der **zusätzliche Assemblys** Bereich, wählen Sie die benutzerdefinierte Assembly, die Sie löschen möchten.
 
-4.  Wählen Sie die **löschen** Schaltfläche.
+4. Wählen Sie die **löschen** Schaltfläche.
 
 #### <a name="to-delete-a-safe-control-for-an-assembly"></a>So löschen Sie ein sicheres Steuerelement für eine Assembly
 
-1.  Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
+1. Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
 
-2.  Wählen Sie das zu löschende sichere Steuerelement aus.
+2. Wählen Sie das zu löschende sichere Steuerelement aus.
 
-3.  Wählen Sie die ENTF-TASTE aus.
+3. Wählen Sie die ENTF-TASTE aus.
 
 #### <a name="to-delete-a-class-resource-for-an-assembly"></a>So löschen Sie eine Klassenressource für eine Assembly
 
-1.  Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
+1. Öffnen der **vorhandene Assembly bearbeiten** Dialogfeld. Um dies zu erreichen, der Paket-Designer zu öffnen, wählen Sie die **erweitert** Registerkarte, wählen Sie eine Assembly und wählen Sie dann die **bearbeiten** Schaltfläche.
 
-2.  Wählen Sie die zu löschende Klassenressource aus.
+2. Wählen Sie die zu löschende Klassenressource aus.
 
-3.  Wählen Sie die ENTF-TASTE aus.
+3. Wählen Sie die ENTF-TASTE aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen von SharePoint-features](../sharepoint/creating-sharepoint-features.md)

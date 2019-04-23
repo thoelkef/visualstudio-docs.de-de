@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045341"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -128,9 +128,9 @@ Auf der **Tools** > **Optionen** > **Debuggen** > **Symbole** Seite können Sie:
 
 4. Geben Sie die Module, die der Debugger beim Laden aus soll die **Symboldateien (.pdb) Orte für Symboldateien** Wenn gestartet wurde.
 
-   -  Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.
+   - Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.
 
-   -  Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.
+   - Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.
 
 5. Klicken Sie auf **OK**.
 
@@ -199,7 +199,7 @@ Erstellen Sie mit **/debug** zum Erstellen einer *PDB* Datei. Sie können Anwend
 
 Legen Sie die *"Web.config"* Datei der ASP.NET-Anwendung auf den Debugmodus. Der Debugmodus veranlasst ASP.NET zum Erstellen von Symbolen für dynamisch generierte Dateien und ermöglicht dem Debugger das Anfügen an die ASP.NET-Anwendung. Visual Studio legt dies automatisch beim Starten des Debuggen, wenn Sie Ihr Projekt aus der Webprojekte-Vorlage erstellt haben.
 
-##  <a name="manage-symbols-while-debugging"></a>Verwaltung von Symbolen beim Debuggen
+## <a name="manage-symbols-while-debugging"></a>Verwaltung von Symbolen beim Debuggen
 
 Können Sie die **Module**, **Aufrufliste**, **"lokal"**, **"Auto"**, oder ein beliebiges **Watch** Fenster geladen Symbole, oder Ändern der Symboloptionen während des Debuggens. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Während des Debuggens die **Module** Fenster zeigt die Codemodule, die der Debu
 
 Es gibt mehrere Möglichkeiten für den Debugger zu unterbrechen im Code, der keine verfügbaren Symbol- oder Quelldateien Dateien:
 
--  Code in Einzelschritten ausführen.
--  Unterbrechen Sie im Code von einem Haltepunkt oder einer Ausnahme.
--  Wechseln Sie zu einem anderen Thread.
--  Ändern Sie den Stapelrahmen durch Doppelklicken auf einen Frame in der **Aufrufliste** Fenster.
+- Code in Einzelschritten ausführen.
+- Unterbrechen Sie im Code von einem Haltepunkt oder einer Ausnahme.
+- Wechseln Sie zu einem anderen Thread.
+- Ändern Sie den Stapelrahmen durch Doppelklicken auf einen Frame in der **Aufrufliste** Fenster.
 
 In diesem Fall zeigt der Debugger die **keine Symbole geladen** oder **keine Quelle geladen** Seiten können Sie ermitteln und laden die erforderlichen Symbole oder Quelle aus.
 
@@ -235,11 +235,11 @@ In diesem Fall zeigt der Debugger die **keine Symbole geladen** oder **keine Que
 
 **So verwenden Sie die Dokumentseite keine Symbole geladen, ermitteln und Laden Symbole fehlen:**
 
--   Um den Suchpfad zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **neuen Pfad** oder **neuer VSTS-Pfad** und geben Sie ein oder wählen Sie einen neuen Pfad. Wählen Sie **laden** die Pfade erneut zu suchen und die Symboldatei zu laden, wenn es gefunden wird.
--   Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >**. Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.
--   Zum Öffnen der **Optionen** > **Debuggen** > **Symbole** Seite **Symboleinstellungen ändern**.
--   Um die Disassembly in einem neuen Fenster einmal anzuzeigen, wählen Sie **Disassembly anzeigen**, oder wählen Sie **Dialogfeld "Optionen"** , legen Sie die Option, um die Disassembly immer anzuzeigen, wenn Quell-oder Symboldateien nicht gefunden werden.
--   Um die Speicherorte durchsucht und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.
+- Um den Suchpfad zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **neuen Pfad** oder **neuer VSTS-Pfad** und geben Sie ein oder wählen Sie einen neuen Pfad. Wählen Sie **laden** die Pfade erneut zu suchen und die Symboldatei zu laden, wenn es gefunden wird.
+- Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >**. Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.
+- Zum Öffnen der **Optionen** > **Debuggen** > **Symbole** Seite **Symboleinstellungen ändern**.
+- Um die Disassembly in einem neuen Fenster einmal anzuzeigen, wählen Sie **Disassembly anzeigen**, oder wählen Sie **Dialogfeld "Optionen"** , legen Sie die Option, um die Disassembly immer anzuzeigen, wenn Quell-oder Symboldateien nicht gefunden werden.
+- Um die Speicherorte durchsucht und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.
 
 Wenn der Debugger sucht nach der *PDB-Datei* Datei, nachdem Sie eine der Optionen ausführen und können abrufen, die Quelldatei, die anhand der Informationen in der *PDB-Datei* -Datei, es zeigt die Quelle. Andernfalls zeigt er eine **keine Quelle geladen** Seite das Problem, mit Links zu Aktionen beschrieben, die das Problem möglicherweise behoben.
 

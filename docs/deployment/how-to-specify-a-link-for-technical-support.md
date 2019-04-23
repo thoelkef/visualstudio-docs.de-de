@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Angeben eines Links für technischen Support | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Geben Sie einen Link für den technischen Support | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,30 +20,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0acf30ee16669901da89a23587729599c7b4039
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051673"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für technischen Support
+# <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für den technischen Support
 Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung, die **Support-URL** Eigenschaft identifiziert, einer Webseite oder Dateifreigabe, in dem Benutzer zum Abrufen von Informationen zur Anwendung gelangen. Diese Eigenschaft ist optional. Wenn angegeben, wird die URL in der Eintrag der Anwendung angezeigt werden **Software** Dialogfeld.
 
  Die **Support-URL** Eigenschaft kann festgelegt werden, auf die **veröffentlichen** auf der Seite die **Projekt-Designer**.
 
 ### <a name="to-specify-a-support-url"></a>Angeben ein Support-URLs
 
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
 
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3.  Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.
+3. Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.
 
-4.  Klicken Sie auf **Beschreibung**.
+4. Klicken Sie auf **Beschreibung**.
 
-5.  In der **Support-URL** Geben Sie einen vollqualifizierten Pfad zu einer Website, Webseite oder UNC-Freigabe.
+5. In der **Support-URL** Geben Sie einen vollqualifizierten Pfad zu einer Website, Webseite oder UNC-Freigabe.
 
 ## <a name="see-also"></a>Siehe auch
 - [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
-- [How to: Publish a ClickOnce application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

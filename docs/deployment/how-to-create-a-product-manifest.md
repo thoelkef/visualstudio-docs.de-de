@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057406"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Vorgehensweise: Erstellen eines Produktmanifests
 Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Die Paketmanifest enthält Lokalisierung-spezifische Aspekte des Pakets. Dies schließt die Zeichenfolgen, durch den Endbenutzer-Lizenzverträge und die Language Packs.
@@ -34,11 +34,11 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
 
 #### <a name="to-create-the-product-manifest"></a>Das Produktmanifest erstellen
 
-1.  Erstellen Sie ein Verzeichnis für die Bootstrapper-Paket. Dieses Beispiel verwendet die C:\package.
+1. Erstellen Sie ein Verzeichnis für die Bootstrapper-Paket. Dieses Beispiel verwendet die C:\package.
 
-2.  Erstellen Sie in Visual Studio eine neue XML-Datei namens *product.xml*, und speichern sie die *C:\package* Ordner.
+2. Erstellen Sie in Visual Studio eine neue XML-Datei namens *product.xml*, und speichern sie die *C:\package* Ordner.
 
-3.  Fügen Sie den folgenden XML-Code, um den XML-Namespace und Produkt-Code für das Paket beschreiben. Ersetzen Sie den Produktcode mit einem eindeutigen Bezeichner für das Paket an.
+3. Fügen Sie den folgenden XML-Code, um den XML-Namespace und Produkt-Code für das Paket beschreiben. Ersetzen Sie den Produktcode mit einem eindeutigen Bezeichner für das Paket an.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  Fügen Sie XML-Code, um anzugeben, dass das Paket abhängig ist. Dieses Beispiel verwendet eine Abhängigkeit auf Microsoft Windows Installer 3.1 oder höher.
+4. Fügen Sie XML-Code, um anzugeben, dass das Paket abhängig ist. Dieses Beispiel verwendet eine Abhängigkeit auf Microsoft Windows Installer 3.1 oder höher.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
       </RelatedProducts>
     ```
 
-5.  Fügen Sie XML-Code, um alle Dateien aufgelistet, die in das Bootstrapperpaket zu sind. In diesem Beispiel verwendet den Namen der Paketdatei *"CorePackage.msi"*.
+5. Fügen Sie XML-Code, um alle Dateien aufgelistet, die in das Bootstrapperpaket zu sind. In diesem Beispiel verwendet den Namen der Paketdatei *"CorePackage.msi"*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Um die erforderlichen Komponenten für Ihre Anwendung bereitstellen möchten, k�
     </PackageFiles>
     ```
 
-6.  Kopieren oder verschieben Sie die *"CorePackage.msi"* -Datei in die *C:\package* Ordner.
+6. Kopieren oder verschieben Sie die *"CorePackage.msi"* -Datei in die *C:\package* Ordner.
 
-7.  Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** flag, das die *MSI* -Datei, die im Hintergrund installiert wird. Wenn die Datei ist eine *.exe*, führt der Bootstrapper die *.exe* -Datei mit der Shell. Das folgende XML zeigt keine Argumente *"CorePackage.msi"*, Sie können jedoch Befehlszeilenargument in der `Arguments` Attribut.
+7. Fügen Sie XML-Code, zum Installieren des Pakets mithilfe von Bootstrapperbefehlen. Der Bootstrapper fügt automatisch die **/qn /** flag, das die *MSI* -Datei, die im Hintergrund installiert wird. Wenn die Datei ist eine *.exe*, führt der Bootstrapper die *.exe* -Datei mit der Shell. Das folgende XML zeigt keine Argumente *"CorePackage.msi"*, Sie können jedoch Befehlszeilenargument in der `Arguments` Attribut.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  Fügen Sie den folgenden XML-Code, um festzustellen, ob dieser Bootstrapper-Paket installiert ist. Ersetzen Sie den Produktcode, durch die GUID für die redistributable-Komponente.
+8. Fügen Sie den folgenden XML-Code, um festzustellen, ob dieser Bootstrapper-Paket installiert ist. Ersetzen Sie den Produktcode, durch die GUID für die redistributable-Komponente.
 
     ```xml
     <InstallChecks>

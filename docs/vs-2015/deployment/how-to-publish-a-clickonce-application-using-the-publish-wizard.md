@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046937"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
   
 4. Wählen Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** den Speicherort aus, auf den Benutzer beim Installieren der Anwendung zugreifen:  
   
-   -   Wenn die Installation über eine Website durchgeführt werden soll, klicken Sie auf **Von einer Website**, und geben Sie eine URL ein, die dem im vorherigen Schritt eingegebenen Dateipfad entspricht. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)  
+   - Wenn die Installation über eine Website durchgeführt werden soll, klicken Sie auf **Von einer Website**, und geben Sie eine URL ein, die dem im vorherigen Schritt eingegebenen Dateipfad entspricht. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)  
   
-   -   Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Dies ist für die Veröffentlichung von Standorten, von dem Format c:\deploy\myapp oder \\\server\myapp.)  
+   - Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Dies ist für die Veröffentlichung von Standorten, von dem Format c:\deploy\myapp oder \\\server\myapp.)  
   
-   -   Wenn die Installation über Wechselmedien durchgeführt werden soll, klicken Sie auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.  
+   - Wenn die Installation über Wechselmedien durchgeführt werden soll, klicken Sie auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.  
   
 5. Wählen Sie auf der Seite **Wird die Anwendung offline verfügbar sein?** die gewünschte Option aus:  
   
