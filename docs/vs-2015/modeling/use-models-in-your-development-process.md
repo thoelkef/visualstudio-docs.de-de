@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038407"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
   
  Zusammen mit Modellen werden gewöhnlich folgende weitere Spezifikationsaspekte verwendet. Je nach Umfang und Art des Projekts verwenden Sie eventuell mehrere oder keinen dieser Aspekte:  
   
--   User Stories: Eine User Story ist eine kurze Beschreibung eines Aspekts des Systemverhaltens, der mit Benutzern und anderen Projektbeteiligten erörtert und in einer der Iterationen des Projekts bereitgestellt wird. Eine typische User Story beginnt mit „Der Kunde ist in der Lage …“. Eine User Story kann eine Gruppe von Anwendungsfällen einführen oder Erweiterungen von Anwendungsfällen definieren, die zuvor entwickelt wurden. Das Definieren oder Erweitern der Anwendungsfälle trägt zur größeren Verständlichkeit der User Story bei.  
+- User Stories: Eine User Story ist eine kurze Beschreibung eines Aspekts des Systemverhaltens, der mit Benutzern und anderen Projektbeteiligten erörtert und in einer der Iterationen des Projekts bereitgestellt wird. Eine typische User Story beginnt mit „Der Kunde ist in der Lage …“. Eine User Story kann eine Gruppe von Anwendungsfällen einführen oder Erweiterungen von Anwendungsfällen definieren, die zuvor entwickelt wurden. Das Definieren oder Erweitern der Anwendungsfälle trägt zur größeren Verständlichkeit der User Story bei.  
   
--   Änderungsanforderungen: Ein Änderungsanforderung in einem eher formalen Projekt ist einer User Story in einem agilen Projekt sehr ähnlich. Bei der agilen Vorgehensweise werden alle Anforderungen als Änderungen der Entwicklung in vorherigen Iterationen behandelt.  
+- Änderungsanforderungen: Ein Änderungsanforderung in einem eher formalen Projekt ist einer User Story in einem agilen Projekt sehr ähnlich. Bei der agilen Vorgehensweise werden alle Anforderungen als Änderungen der Entwicklung in vorherigen Iterationen behandelt.  
   
--   Anwendungsfallbeschreibung: Ein Anwendungsfall stellt eine der Methoden dar, mithilfe derer ein Benutzer mit dem System interagieren kann, um ein bestimmtes Ziel zu erreichen. Die vollständige Beschreibung enthält das Ziel, die Hauptsequenz und alternative Sequenzen von Ereignissen sowie außergewöhnliche Ergebnisse. Ein Anwendungsfalldiagramm bietet eine Zusammenfassung und einen Überblick über die Anwendungsfälle.  
+- Anwendungsfallbeschreibung: Ein Anwendungsfall stellt eine der Methoden dar, mithilfe derer ein Benutzer mit dem System interagieren kann, um ein bestimmtes Ziel zu erreichen. Die vollständige Beschreibung enthält das Ziel, die Hauptsequenz und alternative Sequenzen von Ereignissen sowie außergewöhnliche Ergebnisse. Ein Anwendungsfalldiagramm bietet eine Zusammenfassung und einen Überblick über die Anwendungsfälle.  
   
--   Szenarien: Ein Szenario ist eine ausführliche Beschreibung einer Sequenz von Ereignissen, die darstellt, wie sich durch die Interaktion von System, Benutzern und anderen Systemen sinnvolle Ergebnisse für die Projektbeteiligten ergeben. Dabei kann es sich um eine Bildschirmpräsentation der Benutzeroberfläche oder einen Prototyp der Benutzeroberfläche handeln. Ein Szenario kann einen Anwendungsfall oder eine Sequenz von Anwendungsfällen beschreiben.  
+- Szenarien: Ein Szenario ist eine ausführliche Beschreibung einer Sequenz von Ereignissen, die darstellt, wie sich durch die Interaktion von System, Benutzern und anderen Systemen sinnvolle Ergebnisse für die Projektbeteiligten ergeben. Dabei kann es sich um eine Bildschirmpräsentation der Benutzeroberfläche oder einen Prototyp der Benutzeroberfläche handeln. Ein Szenario kann einen Anwendungsfall oder eine Sequenz von Anwendungsfällen beschreiben.  
   
--   Glossar: Das Glossar zu den Anforderungen des Projekts beschreibt die Wörter, mit denen die Kunden ihre Welt beschreiben. Diese Begriffe sollten auch im Benutzeroberflächenmodell und Anforderungsmodell verwendet werden. Ein Klassendiagramm kann dazu beitragen, die Beziehungen zwischen den meisten von diesen Begriffen zu verdeutlichen. Durch das Erstellen der Diagramme und des Glossars werden nicht nur Missverständnisse zwischen Benutzern und Entwicklern reduziert, sondern fast immer auch Missverständnisse zwischen unterschiedlichen Projektbeteiligten aufgeklärt.  
+- Glossar: Das Glossar zu den Anforderungen des Projekts beschreibt die Wörter, mit denen die Kunden ihre Welt beschreiben. Diese Begriffe sollten auch im Benutzeroberflächenmodell und Anforderungsmodell verwendet werden. Ein Klassendiagramm kann dazu beitragen, die Beziehungen zwischen den meisten von diesen Begriffen zu verdeutlichen. Durch das Erstellen der Diagramme und des Glossars werden nicht nur Missverständnisse zwischen Benutzern und Entwicklern reduziert, sondern fast immer auch Missverständnisse zwischen unterschiedlichen Projektbeteiligten aufgeklärt.  
   
--   Geschäftsregeln: Viele Geschäftsregeln können als unveränderliche Einschränkungen der Zuordnungen und Attribute im Anforderungsklassenmodell und als Einschränkungen in Sequenzdiagrammen dargestellt werden.  
+- Geschäftsregeln: Viele Geschäftsregeln können als unveränderliche Einschränkungen der Zuordnungen und Attribute im Anforderungsklassenmodell und als Einschränkungen in Sequenzdiagrammen dargestellt werden.  
   
--   Allgemeiner Entwurf: Beschreibt die Hauptbestandteile und wie sie zusammenpassen. Komponenten-, Sequenz- und Schnittstellendiagramme sind wesentliche Teile eines allgemeinen Entwurfs.  
+- Allgemeiner Entwurf: Beschreibt die Hauptbestandteile und wie sie zusammenpassen. Komponenten-, Sequenz- und Schnittstellendiagramme sind wesentliche Teile eines allgemeinen Entwurfs.  
   
--   Entwurfsmuster: Beschreiben die gemeinsamen Entwurfsregeln für die verschiedenen Teile des Systems.  
+- Entwurfsmuster: Beschreiben die gemeinsamen Entwurfsregeln für die verschiedenen Teile des Systems.  
   
--   Testspezifikationen:  In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.  
+- Testspezifikationen:  In Testskripts und den Entwürfen für Testcode können Aktivitäts- und Sequenzdiagramme zum Beschreiben der Sequenzen von Testschritten genutzt werden. Systemtests sollten im Anforderungsmodell dargestellt werden, damit sie leicht geändert werden können, wenn sich die Anforderungen ändern.  
   
--   Projektplan: Der Projektplan oder -rückstand legt fest, wann die einzelnen Funktionen bereitgestellt werden. Sie können jede Funktion definieren, indem Sie angeben, welche Anwendungsfälle und Geschäftsregeln von ihr implementiert oder erweitert werden. Sie können entweder direkt im Plan auf die Anwendungsfälle und Geschäftsregeln verweisen, oder Sie können in einem eigenen Dokument einen Satz von Funktionen definieren und im Plan die Funktionstitel verwenden.  
+- Projektplan: Der Projektplan oder -rückstand legt fest, wann die einzelnen Funktionen bereitgestellt werden. Sie können jede Funktion definieren, indem Sie angeben, welche Anwendungsfälle und Geschäftsregeln von ihr implementiert oder erweitert werden. Sie können entweder direkt im Plan auf die Anwendungsfälle und Geschäftsregeln verweisen, oder Sie können in einem eigenen Dokument einen Satz von Funktionen definieren und im Plan die Funktionstitel verwenden.  
   
 ### <a name="use-models-in-iteration-planning"></a>Verwenden von Modellen bei der Iterationsplanung  
  Obwohl sich alle Projekte hinsichtlich Umfang und Organisation unterscheiden, wird ein typisches Projekt als eine Reihe von Iterationen mit einer Dauer von zwei bis sechs Wochen geplant. Es ist wichtig, eine ausreichende Anzahl von Iterationen zu planen, um Feedback von frühen Iterationen zu ermöglichen, mit dem der Umfang und die Pläne für spätere Iterationen angepasst werden können.  
@@ -80,28 +80,28 @@ In Visual Studio können Sie ein Modell verwenden, um ein System, eine Anwendung
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Konzentrieren Sie sich vor Beginn jeder Iteration auf das Wesentliche  
  Definieren Sie vor Beginn jeder Iteration mithilfe von Modellen, was am Ende der Iteration bereitgestellt werden muss.  
   
--   Modellieren Sie in frühen Iterationen nicht ausführlich alle Details. Erstellen Sie in der ersten Iteration ein Klassendiagramm für die Hauptelemente im Benutzerglossar, zeichnen Sie ein Diagramm der Hauptanwendungsfälle, und zeichnen Sie ein Diagramm der Hauptkomponenten. Beschreiben Sie nicht die Details dieser Elemente, da sich die Details später im Projekt ändern. Verwenden Sie die in diesem Modell definierten Begriffe, um eine Liste von Funktionen oder wichtigen User Stories zu erstellen. Weisen Sie Iterationen Funktionen zu, um die Arbeitsauslastung während des gesamten Projekts ungefähr gleichmäßig zu verteilen. Diese Zuweisungen werden später im Projekt geändert.  
+- Modellieren Sie in frühen Iterationen nicht ausführlich alle Details. Erstellen Sie in der ersten Iteration ein Klassendiagramm für die Hauptelemente im Benutzerglossar, zeichnen Sie ein Diagramm der Hauptanwendungsfälle, und zeichnen Sie ein Diagramm der Hauptkomponenten. Beschreiben Sie nicht die Details dieser Elemente, da sich die Details später im Projekt ändern. Verwenden Sie die in diesem Modell definierten Begriffe, um eine Liste von Funktionen oder wichtigen User Stories zu erstellen. Weisen Sie Iterationen Funktionen zu, um die Arbeitsauslastung während des gesamten Projekts ungefähr gleichmäßig zu verteilen. Diese Zuweisungen werden später im Projekt geändert.  
   
--   Versuchen Sie, in einer frühen Iteration vereinfachte Versionen aller besonders wichtigen Anwendungsfälle zu implementieren. Erweitern Sie diese Anwendungsfälle in späteren Iterationen. Auf diese Weise verringern Sie das Risiko, einen Fehler in den Anforderungen oder der Architektur zu einem Zeitpunkt des Projekts zu erkennen, zu dem der Fehler nicht mehr behoben werden kann.  
+- Versuchen Sie, in einer frühen Iteration vereinfachte Versionen aller besonders wichtigen Anwendungsfälle zu implementieren. Erweitern Sie diese Anwendungsfälle in späteren Iterationen. Auf diese Weise verringern Sie das Risiko, einen Fehler in den Anforderungen oder der Architektur zu einem Zeitpunkt des Projekts zu erkennen, zu dem der Fehler nicht mehr behoben werden kann.  
   
--   Veranstalten Sie gegen Ende jeder Iteration einen Anforderungsworkshop, um die Details der Anforderungen oder User Stories zu definieren, die in der nächsten Iteration entwickelt werden. Laden Sie Benutzer und Projektbeteiligte, die Entscheidungen zu Prioritäten treffen können, sowie Entwickler und Systemtester zur Teilnahme ein. Planen Sie zum Definieren der Anforderungen für eine Iteration von 2 Wochen eine Workshopdauer von 3 Stunden ein.  
+- Veranstalten Sie gegen Ende jeder Iteration einen Anforderungsworkshop, um die Details der Anforderungen oder User Stories zu definieren, die in der nächsten Iteration entwickelt werden. Laden Sie Benutzer und Projektbeteiligte, die Entscheidungen zu Prioritäten treffen können, sowie Entwickler und Systemtester zur Teilnahme ein. Planen Sie zum Definieren der Anforderungen für eine Iteration von 2 Wochen eine Workshopdauer von 3 Stunden ein.  
   
--   Der Workshop soll dazu führen, dass alle Projektbeteiligten Übereinstimmung über die bis zum Ende der nächsten Iteration zu erreichenden Ergebnisse erzielen. Verwenden Sie Modelle als eines der Instrumente zum Klarstellen der Anforderungen. Das Ergebnis des Workshops ist ein Iterationsrückstand. Dabei handelt es sich um eine Liste von Entwicklungsaufgaben in [!INCLUDE[esprfound](../includes/esprfound-md.md)] und von Testsammlungen in [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- Der Workshop soll dazu führen, dass alle Projektbeteiligten Übereinstimmung über die bis zum Ende der nächsten Iteration zu erreichenden Ergebnisse erzielen. Verwenden Sie Modelle als eines der Instrumente zum Klarstellen der Anforderungen. Das Ergebnis des Workshops ist ein Iterationsrückstand. Dabei handelt es sich um eine Liste von Entwicklungsaufgaben in [!INCLUDE[esprfound](../includes/esprfound-md.md)] und von Testsammlungen in [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   Besprechen Sie im Anforderungsworkshop den Entwurf nur insoweit, als Sie die Entwicklungsaufgaben schätzungsweise bestimmen müssen. Begrenzen Sie ansonsten die Besprechung auf Systemverhalten, das Benutzer direkt wahrnehmen können. Halten Sie das Anforderungsmodell vom Architekturmodell getrennt.  
+- Besprechen Sie im Anforderungsworkshop den Entwurf nur insoweit, als Sie die Entwicklungsaufgaben schätzungsweise bestimmen müssen. Begrenzen Sie ansonsten die Besprechung auf Systemverhalten, das Benutzer direkt wahrnehmen können. Halten Sie das Anforderungsmodell vom Architekturmodell getrennt.  
   
--   Projektbeteiligte ohne technischen Hintergrund verstehen normalerweise UML-Diagramme ohne Probleme, wenn sie von Ihnen Erläuterungen erhalten.  
+- Projektbeteiligte ohne technischen Hintergrund verstehen normalerweise UML-Diagramme ohne Probleme, wenn sie von Ihnen Erläuterungen erhalten.  
   
 #### <a name="link-model-to-work-items"></a>Verknüpfen Sie das Modell mit Arbeitsaufgaben  
  Bestimmen Sie nach dem Anforderungsworkshop die Details des Anforderungsmodells, und verknüpfen Sie das Modell mit Entwicklungsaufgaben. Sie können zu diesem Zweck Arbeitsaufgaben in [!INCLUDE[esprfound](../includes/esprfound-md.md)] mit Elementen im Modell verknüpfen. Informationen hierzu finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](../modeling/link-model-elements-and-work-items.md).  
   
  Sie können jedes Element mit Arbeitsaufgaben verknüpfen, die zweckmäßigsten Elemente lauten jedoch wie folgt:  
   
--   Anwendungsfälle: Sie können einen Anwendungsfall mit den Entwicklungsaufgaben verknüpfen, durch die er implementiert wird.  
+- Anwendungsfälle: Sie können einen Anwendungsfall mit den Entwicklungsaufgaben verknüpfen, durch die er implementiert wird.  
   
--   Anwendungsfallerweiterungen: Wenn in einer Iteration nur ein Aspekt eines Anwendungsfalls implementiert wird, können Sie ihn zusammen mit einer oder mehreren Erweiterungen als Basisanwendungsfall abtrennen. Die Erweiterungen sind Anwendungsfälle, die über die Beziehung «extend» mit dem Basisfall verknüpft sind. Weitere Informationen über anwendungsfallerweiterungen finden Sie unter [UML-Anwendungsfalldiagrammen: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-use-case-diagrams-reference.md).  
+- Anwendungsfallerweiterungen: Wenn in einer Iteration nur ein Aspekt eines Anwendungsfalls implementiert wird, können Sie ihn zusammen mit einer oder mehreren Erweiterungen als Basisanwendungsfall abtrennen. Die Erweiterungen sind Anwendungsfälle, die über die Beziehung «extend» mit dem Basisfall verknüpft sind. Weitere Informationen über anwendungsfallerweiterungen finden Sie unter [UML-Anwendungsfalldiagrammen: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-use-case-diagrams-reference.md).  
   
--   Kommentare, die Geschäftsregeln oder Servicequalitätsanforderungen beschreiben. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
+- Kommentare, die Geschäftsregeln oder Servicequalitätsanforderungen beschreiben. Weitere Informationen finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Verknüpfen Sie das Modell mit Tests  
  Verwenden Sie das Anforderungsmodell als Orientierungshilfe für den Entwurf der Akzeptanztests. Erstellen Sie diese Tests während der Entwicklungsarbeit.  

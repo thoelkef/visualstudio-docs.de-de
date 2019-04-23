@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041577"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren Sie im Code mit Visual Studio-debugger
 
@@ -44,7 +44,7 @@ Wenn die im Code unterbrochen wird, das keine Quell- oder Symboldateien (*PDB*) 
 
 Sie haben keine immer zum Starten des Debuggings, indem Sie eine app am Anfang starten. Drücken Sie **F11** zu [Einzelschritte in Code](#BKMK_Step_into__over__or_out_of_the_code), drücken Sie die **F10** zu [überspringen](#BKMK_Step_over_Step_out), oder [führen Sie an einem bestimmten Speicherort oder Funktion](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
-##  <a name="step-through-code"></a>Schritt-für-Schritt-Ausführung des Codes
+## <a name="step-through-code"></a>Schritt-für-Schritt-Ausführung des Codes
 
 Debuggerbefehle aus Schritt können Sie den app-Status zu überprüfen, oder erfahren Sie mehr über die Ausführungsablauf.
 
@@ -75,7 +75,7 @@ Bei einem geschachtelten Funktionsaufruf führt **Einzelschritt** die am tiefste
 >[!TIP]
 >Wie Sie jede Codezeile ausführen, können Sie Variablen, deren Werte angezeigt werden soll, oder verwenden Sie zeigen die ["lokal"](autos-and-locals-windows.md) und [Überwachen](watch-and-quickwatch-windows.md) Windows überwachen Sie die Werte ändern. Sie können die Aufrufliste visuell verfolgen, während der schrittweisen. Finden Sie unter [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-###  <a name="BKMK_Step_over_Step_out"></a> Code schrittweise durchzugehen und einige Funktionen zu überspringen
+### <a name="BKMK_Step_over_Step_out"></a> Code schrittweise durchzugehen und einige Funktionen zu überspringen
 
 Sie möglicherweise nicht über eine Funktion wichtig, beim Debuggen aus, oder Sie wissen es funktioniert, wie gut getestete Bibliothekscode. Sie können die folgenden Befehle verwenden, mithilfe von Code zu überspringen. Die Funktionen weiterhin auszuführen, aber der Debugger überspringt sie.
 
@@ -84,7 +84,7 @@ Sie möglicherweise nicht über eine Funktion wichtig, beim Debuggen aus, oder S
 |**F10**|**Prozedurschritt**|Wenn die aktuelle Zeile einen Funktionsaufruf enthält **Prozedurschritt** führt den Code, und klicken Sie dann in der ersten Zeile des Codes angehalten, wenn die aufgerufene Funktion zurückkehrt.|
 |**UMSCHALT**+**F11**|**Ausführen bis Rücksprung**|**Ausführen bis Rücksprung** setzt die Ausführung von Code und hält bei Rückgabe der aktuelle Funktion. Der Debugger überspringt über die aktuelle Funktion.|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Führen Sie bis zu einer bestimmten Position oder Funktion aus
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Führen Sie bis zu einer bestimmten Position oder Funktion aus
 
 Sie können aber auch direkt in einer bestimmten Position oder Funktion ausgeführt werden, wenn man genau, welchen Code Sie überprüfen möchten, oder Sie wissen, in dem Sie debuggen möchten.
 
@@ -139,7 +139,7 @@ Während im Debugger angehalten wird, können Sie eine Anweisung im Quellcode ze
 
 Um in den nächsten verfügbaren Codezeile in einer ausgeführten app zu unterbrechen, wählen Sie **Debuggen** > **alle unterbrechen**, oder drücken Sie **STRG**+**Alt**  + **Unterbrechen**.
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Bewegen Sie den Mauszeiger, um den Ausführungsfluss zu ändern.
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> Bewegen Sie den Mauszeiger, um den Ausführungsfluss zu ändern.
 
 Während der Debugger angehalten wird, eine gelbe Pfeilspitze am Rand des Quellcodes oder **Disassembly** Fenster markiert die Position der nächsten Anweisung ausgeführt werden. Sie können die nächste Anweisung ausgeführt wird, durch das Verschieben dieser Pfeilspitze ändern. Sie können einen Teil des Codes überspringen oder zu einer vorherigen Zeile zurückgegeben. Bewegen des Mauszeigers eignet sich für Situationen wie etwa dem auslassen eines Abschnitts eines Codes, die einen bekannten Fehler enthält.
 
@@ -181,7 +181,7 @@ Um Microsoft-Symbole laden zu können, finden Sie unter [Orte für Symboldateien
 
 1. In der **Module** Fenster, Sie können feststellen, die Module sind Symbole geladen, der **Symbolstatus** Spalte. Mit der rechten Maustaste in des Moduls, das Sie verwenden möchten, Laden von Symbolen für, und wählen Sie **Symbole laden**.
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Schrittweise Ausführung von Eigenschaften und Operatoren in verwaltetem Code
  Standardmäßig überspringt der Debugger die Eigenschaften und Operatoren in verwaltetem Code. In den meisten Fällen sorgt dies für einen besseren Debugvorgang. Wählen Sie zum Aktivieren von Eigenschaften oder Operatoren schrittweise **Debuggen** > **Optionen**. Deaktivieren Sie auf der Seite **Debuggen** > **Allgemein** das Kontrollkästchen **Eigenschaften und Operatoren überspringen (nur verwaltet)**.
 
 ## <a name="see-also"></a>Siehe auch

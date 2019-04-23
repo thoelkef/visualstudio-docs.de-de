@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037867"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Statische Felder von Referenztypen inline initialisieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58959676"
 
  Durch die Überprüfung statischer Konstruktoren kann die Leistung herabgesetzt werden. Ein statischer Konstruktor wird häufig verwendet, nur für die nach dem Initialisieren von statischen Feldern, in denen Fall, die Sie nur sicherstellen, dass die statische Initialisierung, müssen vor der ersten Zugriff auf ein statisches Feld auftritt. Die `beforefieldinit` Verhalten eignet sich für diese und die meisten anderen Projekttypen. Es ist nur dann ungeeignet, wenn statische Initialisierung wirkt sich auf die globalen Zustand und eine der folgenden zutrifft:
 
--   Die Auswirkungen auf den globalen Zustand ist teuer und ist nicht erforderlich, wenn der Typ nicht verwendet wird.
+- Die Auswirkungen auf den globalen Zustand ist teuer und ist nicht erforderlich, wenn der Typ nicht verwendet wird.
 
--   Die Auswirkungen des globalen Status können zugegriffen werden, ohne den Zugriff auf ein statisches Feld des Typs.
+- Die Auswirkungen des globalen Status können zugegriffen werden, ohne den Zugriff auf ein statisches Feld des Typs.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, initialisieren Sie alle statischen Daten nach deren Deklaration und entfernen den statischen Konstruktor.

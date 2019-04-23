@@ -21,19 +21,19 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038950"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../includes/vspreext-md.md)]-oder [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Big Compute: HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) auf der Microsoft-Website.  
+Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die [!INCLUDE[vsPreExt](../includes/vspreext-md.md)]-oder [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]-Profilerstellungstools erstellen. Weitere Informationen zu HPC finden Sie unter [Big Compute: HPC und Batch](https://azure.microsoft.com/solutions/big-compute/) auf der Microsoft-Website.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgendes ausführen:  
   
 - Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.  
@@ -42,68 +42,68 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
   So installieren Sie die [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:  
   
-1.  Öffnen Sie das Eingabeaufforderungsfenster, das im HPC Pack installiert ist.  
+1. Öffnen Sie das Eingabeaufforderungsfenster, das im HPC Pack installiert ist.  
   
-2.  Geben Sie in der Eingabeaufforderung folgende Befehle ein:  
+2. Geben Sie in der Eingabeaufforderung folgende Befehle ein:  
   
-    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
+    3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
 |||  
 |-|-|  
 |*%HeadNode%*|Der Name des Hauptknotens für den Cluster.|  
-|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Der Pfad auf den [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedien ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf dem [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]-Installationsmedium ist: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Pfad zum [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]-Installationsprogramm. Auf der [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] Installationsmedien, die der Pfad ist: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Auf der [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] Installationsmedien, die der Pfad ist: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilerstellung auf einem HPC-Berechnungsknoten  
  Konfigurieren Sie eine Profilerstellungssitzung mit dem HPC-Leistungs-Assistenten, um die Informationen des HPC-Cluster und -Ziel anzugeben. Sie können zusätzliche Optionen in der Eigenschaftenseiten der Leistungssitzung festlegen. Die Profilerstellungstools stellen automatisch die erforderlichen Zielbinärdateien bereit und starten den Profiler und die HPC-Anwendung.  
   
 #### <a name="to-profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten erstellen  
   
-1.  Klicken Sie im Menü **Analyse** auf **HPC-Leistungs-Assistenten starten**. Wenn der Befehl nicht verfügbar ist, stellen Sie sicher, dass Sie über die oben aufgeführten, erforderlichen Komponenten verfügen.  
+1. Klicken Sie im Menü **Analyse** auf **HPC-Leistungs-Assistenten starten**. Wenn der Befehl nicht verfügbar ist, stellen Sie sicher, dass Sie über die oben aufgeführten, erforderlichen Komponenten verfügen.  
   
-2.  Klicken Sie auf **Weiter** auf der ersten Seite des Assistenten.  
+2. Klicken Sie auf **Weiter** auf der ersten Seite des Assistenten.  
   
-3.  Wählen Sie auf der zweiten Seite des Assistenten die Anwendung aus, für die Sie ein Profil erstellen möchten.  
+3. Wählen Sie auf der zweiten Seite des Assistenten die Anwendung aus, für die Sie ein Profil erstellen möchten.  
   
-    -   Wählen Sie die Option **Ein oder mehrere verfügbare Projekte** aus, und wählen Sie dann den Namen des Projekts aus der Liste aus, um ein Profil für ein Projekt zu erstellen, das momentan in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] geöffnet ist.  
+    - Wählen Sie die Option **Ein oder mehrere verfügbare Projekte** aus, und wählen Sie dann den Namen des Projekts aus der Liste aus, um ein Profil für ein Projekt zu erstellen, das momentan in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] geöffnet ist.  
   
-    -   Wählen Sie die Option **Eine ausführbare (. EXE-Datei)** aus, um ein Profil für eine Binärdatei zu erstellen, die sich nicht in einem geöffneten Projekt befindet.  
+    - Wählen Sie die Option **Eine ausführbare (. EXE-Datei)** aus, um ein Profil für eine Binärdatei zu erstellen, die sich nicht in einem geöffneten Projekt befindet.  
   
-4.  Klicken Sie auf **Weiter**.  
+4. Klicken Sie auf **Weiter**.  
   
-5.  Führen Sie auf der vierten Seite des Assistenten folgende Schritte aus:  
+5. Führen Sie auf der vierten Seite des Assistenten folgende Schritte aus:  
   
-    -   Wenn Sie ein Profil für eine ausführbare Datei erstellen, die sich nicht in einem geöffneten Projekt befindet, geben Sie den Pfad für die Binärdatei in **What is the full path to the executable** (Welcher ist der vollständige Pfad zur ausführbaren Datei) an.  
+    - Wenn Sie ein Profil für eine ausführbare Datei erstellen, die sich nicht in einem geöffneten Projekt befindet, geben Sie den Pfad für die Binärdatei in **What is the full path to the executable** (Welcher ist der vollständige Pfad zur ausführbaren Datei) an.  
   
-    -   Wenn Sie ein Profil für eine ausführbare Datei erstellen, die sich nicht in einem geöffneten Projekt befindet, können Sie angeben, dass alle Befehlszeilenargumente an den Prozess **Befehlszeilenargumente** übergeben werden.  
+    - Wenn Sie ein Profil für eine ausführbare Datei erstellen, die sich nicht in einem geöffneten Projekt befindet, können Sie angeben, dass alle Befehlszeilenargumente an den Prozess **Befehlszeilenargumente** übergeben werden.  
   
-    -   Geben Sie in **Remote-Arbeitsverzeichnis** den Pfad zu dem Ordner an, der von den Prozessinstanzen auf den einzelnen Berechnungsknoten verwendet wird.  
+    - Geben Sie in **Remote-Arbeitsverzeichnis** den Pfad zu dem Ordner an, der von den Prozessinstanzen auf den einzelnen Berechnungsknoten verwendet wird.  
   
-    -   Geben Sie in **Bereitstellungsspeicherort** den Pfad zum Verzeichnis an, das HPC-Server zum Bereitstellen von Images für die Bereitstellung verwendet.  
+    - Geben Sie in **Bereitstellungsspeicherort** den Pfad zum Verzeichnis an, das HPC-Server zum Bereitstellen von Images für die Bereitstellung verwendet.  
   
-6.  Klicken Sie auf **Weiter**.  
+6. Klicken Sie auf **Weiter**.  
   
-7.  Auf der vierten Seite des Assistenten:  
+7. Auf der vierten Seite des Assistenten:  
   
-    -   Klicken Sie in der Liste **Hauptknoten** auf den Computer, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält. Der Hauptknoten kann „Localhost“ sein. Sie können somit ein Profil auf dem lokalen Computer erstellen, ohne ein Cluster zu benötigen.  
+    - Klicken Sie in der Liste **Hauptknoten** auf den Computer, der sich wie der HPC-Hauptknoten in der Profilerstellung verhält. Der Hauptknoten kann „Localhost“ sein. Sie können somit ein Profil auf dem lokalen Computer erstellen, ohne ein Cluster zu benötigen.  
   
-    -   Klicken Sie in der Liste **Anzahl von Prozessen** auf die Anzahl der Instanzen der Anwendung, die ausgeführt werden sollen.  
+    - Klicken Sie in der Liste **Anzahl von Prozessen** auf die Anzahl der Instanzen der Anwendung, die ausgeführt werden sollen.  
   
-    -   Wählen Sie aus der Liste **Profilerstellungsoptionen** das Ziel Profilerstellungsziel aus.  
+    - Wählen Sie aus der Liste **Profilerstellungsoptionen** das Ziel Profilerstellungsziel aus.  
   
          Um ein Profil für einen bestimmten Prozess im Cluster zu erstellen, wählen Sie die Option **Profil für Rang** aus, und wählen Sie dann den Rang des Prozesses aus der Dropdown-Liste aus.  
   
          Um ein Profil für den Prozess oder die Prozesse zu erstellen, die auf einem bestimmten Knoten im HPC-Cluster ausgeführt werden, wählen Sie die Option **Profil für Knoten** aus, und wählen Sie dann den Knoten aus der Dropdown-Liste aus.  
   
-8.  Klicken Sie auf **Weiter**.  
+8. Klicken Sie auf **Weiter**.  
   
 9. Auf der fünften Seite des Assistenten können Sie den Profiler und den Profilerstellungsprozess sofort starten oder mithilfe des Leistungs-Explorer später starten.  
   
-    -   Wählen Sie **Profilerstellung nach Abschluss des Assistenten starten** aus, um die Profilerstellung sofort zu starten, dieses Kontrollkästchen zu deaktivieren, um die Profilerstellung manuell starten.  
+    - Wählen Sie **Profilerstellung nach Abschluss des Assistenten starten** aus, um die Profilerstellung sofort zu starten, dieses Kontrollkästchen zu deaktivieren, um die Profilerstellung manuell starten.  
   
 10. Klicken Sie auf **Fertig stellen**.  
   
@@ -112,17 +112,17 @@ Sie können ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern 
   
 #### <a name="to-open-the-performance-session-property-pages"></a>Öffnen der Eigenschaftenseiten der Leistungssitzung  
   
-1.  Öffnen Sie bei Bedarf die Leistungssitzungsdatei (.psess) im Leistungs-Explorer. Klicken Sie im Menü **Datei** auf **Öffnen** und suchen Sie die Datei.  
+1. Öffnen Sie bei Bedarf die Leistungssitzungsdatei (.psess) im Leistungs-Explorer. Klicken Sie im Menü **Datei** auf **Öffnen** und suchen Sie die Datei.  
   
-2.  Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+2. Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
   
-3.  Um auf das Dialogfeld Eigenschaftenseiten zuzugreifen, verwenden Sie eine der folgenden Methoden:  
+3. Um auf das Dialogfeld Eigenschaftenseiten zuzugreifen, verwenden Sie eine der folgenden Methoden:  
   
-    -   Klicken Sie auf **Allgemein**, und wählen Sie dann **Auf HPC-Cluster erfassen** aus, um die HPC-Profilerstellung zu aktivieren oder deaktivieren Sie dieses Kontrollkästchen, um die HPC-Profilerstellung zu deaktivieren.  
+    - Klicken Sie auf **Allgemein**, und wählen Sie dann **Auf HPC-Cluster erfassen** aus, um die HPC-Profilerstellung zu aktivieren oder deaktivieren Sie dieses Kontrollkästchen, um die HPC-Profilerstellung zu deaktivieren.  
   
-    -   Klicken Sie auf **HPC-Starteigenschaften**, um die Eigenschaften, die die HPC-Anwendung starten, zu ändern.  
+    - Klicken Sie auf **HPC-Starteigenschaften**, um die Eigenschaften, die die HPC-Anwendung starten, zu ändern.  
   
-    -   Sie können zusätzliche Optionen unter **Erweiterte HPC-Eigenschaften** festlegen.  
+    - Sie können zusätzliche Optionen unter **Erweiterte HPC-Eigenschaften** festlegen.  
   
 ### <a name="hpc-launch-properties"></a>HPC-Starteigenschaften  
   

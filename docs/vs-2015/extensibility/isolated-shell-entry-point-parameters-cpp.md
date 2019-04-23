@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 313632661c3f73fdbd0f23616a068913c77508f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041950"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Isolierte Shell-Einstiegspunktparameter (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,17 +79,17 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
  Für boolesche Einstellungen stehen für die folgenden Zeichenfolgen den Wert True; Alle anderen Zeichenfolgen darstellen, den Wert "false". Diese Zeichenfolgen werden Groß-/Kleinschreibung.  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   an  
+- an  
   
--   true  
+- true  
   
--   ja  
+- ja  
   
 ## <a name="example"></a>Beispiel  
  Um-add-ins deaktivieren, und Ändern des Standardspeicherorts für Projekte für Ihre Anwendung, können Sie die letzten Parameter für "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp" festlegen.  

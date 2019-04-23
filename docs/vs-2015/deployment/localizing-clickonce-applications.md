@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039863"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalisieren von ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
   
  In diesem Thema werden drei Möglichkeiten beschrieben, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung für andere Kulturen bereitzustellen:  
   
--   Aufnehmen aller Satellitenassemblys in eine einzelne Bereitstellung.  
+- Aufnehmen aller Satellitenassemblys in eine einzelne Bereitstellung.  
   
--   Generieren einer Bereitstellung für jede Kultur, mit jeweils einer einzelnen darin enthaltenen Satellitenassembly.  
+- Generieren einer Bereitstellung für jede Kultur, mit jeweils einer einzelnen darin enthaltenen Satellitenassembly.  
   
--   Herunterladen von Satellitenassemblys bei Bedarf.  
+- Herunterladen von Satellitenassemblys bei Bedarf.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Aufnehmen aller Satellitenassemblys in eine einzelne Bereitstellung.  
  Anstatt mehrere [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellungen zu veröffentlichen, können Sie eine einzelne [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung veröffentlichen, in der alle Satellitenassemblys enthalten sind.  
@@ -77,9 +77,9 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
   
  Sie haben drei Optionen zum Testen lokalisierter Bereitstellungen, bevor Sie die Anwendung Kunden zur Verfügung stellen:  
   
--   Sie können die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung unter den entsprechenden lokalisierten Versionen von Windows ausführen.  
+- Sie können die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung unter den entsprechenden lokalisierten Versionen von Windows ausführen.  
   
--   Sie können die <xref:System.Threading.Thread.CurrentUICulture%2A>-Eigenschaft programmgesteuert in der Anwendung festlegen. (Diese Eigenschaft muss vor dem Aufrufen der <xref:System.Windows.Forms.Application.Run%2A>-Methode festgelegt werden.)  
+- Sie können die <xref:System.Threading.Thread.CurrentUICulture%2A>-Eigenschaft programmgesteuert in der Anwendung festlegen. (Diese Eigenschaft muss vor dem Aufrufen der <xref:System.Windows.Forms.Application.Run%2A>-Methode festgelegt werden.)  
   
 ## <a name="see-also"></a>Siehe auch  
  [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   

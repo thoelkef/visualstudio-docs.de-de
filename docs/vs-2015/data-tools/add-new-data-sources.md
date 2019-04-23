@@ -19,17 +19,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956052"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670172"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekte, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung verfügbar machen. Die Visual Studio-Designer können die Ausgabe von der Datenquelle, um die Codebausteine zu generieren, die die Daten zu Forms gebunden wird, wenn Drag & drop-Datenbankobjekte aus nutzen die **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:  
   
 -   Eine Klasse in einem Entity Framework-Datenmodell, das eine Art der Datenbank zugeordnet ist.  

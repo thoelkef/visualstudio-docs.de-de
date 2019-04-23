@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042118"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Vorgehensweise: Aktualisieren von Visual Studio-Erweiterung
 Sie können mithilfe von Visual Studio-Erweiterung auf Ihrem System aktualisieren **Erweiterungen und Updates** um die aktualisierte Version zu installieren. Wenn Sie eine aktualisierte Version der Erweiterung erstellen, können Sie es angeben, wie durch das Erhöhen der Versionsnummer im VSIX-Manifest aktualisiert.
@@ -28,30 +28,30 @@ Sie können mithilfe von Visual Studio-Erweiterung auf Ihrem System aktualisiere
 
 ## <a name="to-update-an-extension-on-your-system"></a>Um eine Erweiterung auf Ihrem System zu aktualisieren.
 
-1.  Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.
+1. Klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**.
 
-2.  Klicken Sie im linken Bereich auf **Updates**.
+2. Klicken Sie im linken Bereich auf **Updates**.
 
-3.  Klicken Sie im mittleren Bereich auf das Update aus, die, das Sie installieren möchten.
+3. Klicken Sie im mittleren Bereich auf das Update aus, die, das Sie installieren möchten.
 
      Die Versionsnummer der aktualisierte Erweiterung wird im rechten Bereich, zusammen mit anderen Informationen angezeigt.
 
-4.  Klicken Sie unten im rechten Bereich auf **Update**.
+4. Klicken Sie unten im rechten Bereich auf **Update**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>So veröffentlichen Sie ein Update einer Erweiterung
 
-1.  Öffnen Sie in Visual Studio die Projektmappe für die Erweiterung, die Sie aktualisieren möchten. Stellen Sie die Änderungen.
+1. Öffnen Sie in Visual Studio die Projektmappe für die Erweiterung, die Sie aktualisieren möchten. Stellen Sie die Änderungen.
 
     > [!IMPORTANT]
     >  Unsigned alle Benutzererweiterungen nicht automatisch aktualisiert werden. Sie sollten immer Ihre Erweiterungen signieren.
 
-2.  In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"*.
+2. In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"*.
 
-3.  Erhöhen Sie im manifest-Designer, den Wert der Zahl in die **Version** Feld.
+3. Erhöhen Sie im manifest-Designer, den Wert der Zahl in die **Version** Feld.
 
-4.  Speichern Sie die Projektmappe, und erstellen Sie sie.
+4. Speichern Sie die Projektmappe, und erstellen Sie sie.
 
-5.  Hochladen der neuen *VSIX* Datei (in der * \bin\Debug\* -Ordner des Projekts), die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Website.
+5. Hochladen der neuen *VSIX* Datei (in der * \bin\Debug\* -Ordner des Projekts), die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Website.
 
      Wenn ein Benutzer mit einer früheren Version der Erweiterung öffnet **Erweiterungen und Updates**, die neue Version wird angezeigt, der **Updates** aufzulisten, vorausgesetzt, dass das Tool festgelegt wird, automatisch nach Updates gesucht werden soll.
 

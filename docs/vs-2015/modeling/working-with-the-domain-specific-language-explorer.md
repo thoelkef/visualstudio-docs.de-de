@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d305fdfa74ff680a9d5ef0b12b1a84be10958204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f2dc0f425c86b7304ccde5778f8479678bc41f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962091"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037881"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ Die **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Struktu
   
  Er enthält die folgenden Knoten:  
   
--   **Verbindungs-Generatoren**. Eine Liste der Verbindungsgeneratoren im Modell. Weitere Informationen zu Verbindungs-Generatoren, finden Sie unter [Anpassen der Linkerstellung - Umleitung](../misc/customizing-link-creation-redirection.md).  
+- **Verbindungs-Generatoren**. Eine Liste der Verbindungsgeneratoren im Modell. Weitere Informationen zu Verbindungs-Generatoren, finden Sie unter [Anpassen der Linkerstellung - Umleitung](../misc/customizing-link-creation-redirection.md).  
   
--   **Connectors**. Eine Liste der Verbindungsdiagrammelemente im Modell. Weitere Informationen zu Connectors, finden Sie unter [Typen von Formen und Konnektoren - umleiten](../misc/types-of-shapes-and-connectors-redirect.md).  
+- **Connectors**. Eine Liste der Verbindungsdiagrammelemente im Modell. Weitere Informationen zu Connectors, finden Sie unter [Typen von Formen und Konnektoren - umleiten](../misc/types-of-shapes-and-connectors-redirect.md).  
   
--   **Diagramm**. Ein Satz von Eigenschaften, die das Diagramm definieren, sowie Listen von Verbindungszuordnungen und Formzuordnungen.  
+- **Diagramm**. Ein Satz von Eigenschaften, die das Diagramm definieren, sowie Listen von Verbindungszuordnungen und Formzuordnungen.  
   
--   **Domänenklassen**. Eine Liste der Domänenklassen im Modell.  
+- **Domänenklassen**. Eine Liste der Domänenklassen im Modell.  
   
--   **Domänenbeziehungen**. Eine Liste der Domänenbeziehungen im Modell.  
+- **Domänenbeziehungen**. Eine Liste der Domänenbeziehungen im Modell.  
   
--   **Domänentypen**. Eine Liste der integrierten und externen Typen, die im Modell verwendet werden.  
+- **Domänentypen**. Eine Liste der integrierten und externen Typen, die im Modell verwendet werden.  
   
--   **Editor**. Eine Liste der **Toolbox** Registerkarten und die darin enthaltenen Elemente und Einstellungen für die Überprüfung für das Modell. Weitere Informationen zur Überprüfung finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
+- **Editor**. Eine Liste der **Toolbox** Registerkarten und die darin enthaltenen Elemente und Einstellungen für die Überprüfung für das Modell. Weitere Informationen zur Überprüfung finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).  
   
--   **Explorer-Verhalten**. Einstellungen, die das Verhalten des Explorers im generierten Designer bestimmen. Weitere Informationen zum Anpassen des Explorers finden Sie unter [Anpassen des Modell-Explorers](../modeling/customizing-the-model-explorer.md).  
+- **Explorer-Verhalten**. Einstellungen, die das Verhalten des Explorers im generierten Designer bestimmen. Weitere Informationen zum Anpassen des Explorers finden Sie unter [Anpassen des Modell-Explorers](../modeling/customizing-the-model-explorer.md).  
   
--   **Formen**. Eine Liste der Formdiagrammelemente im Modell.  
+- **Formen**. Eine Liste der Formdiagrammelemente im Modell.  
   
--   **XML-Serialisierungsverhalten**. Serialisierungseinstellungen für das Modell. Weitere Informationen zur Serialisierung finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).  
+- **XML-Serialisierungsverhalten**. Serialisierungseinstellungen für das Modell. Weitere Informationen zur Serialisierung finden Sie unter [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44750783ecc7253480750fce10b65e07b2f5fd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041353"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 Sie installieren können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung zunächst von einer CD oder eine Dateifreigabe, aber die Anwendung muss überprüfen, regelmäßig nach Updates suchen im Web. Sie können einen alternativen Speicherort für Updates im Bereitstellungsmanifest angeben, damit Ihre Anwendung selbst aus dem Web nach der Erstinstallation kann aktualisiert werden.
@@ -30,17 +30,17 @@ Sie installieren können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndpt
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Geben Sie einen alternativen Speicherort für Updates mit MageUI.exe (Windows Forms-basierten-Hilfsprogramm)
 
-1.  Öffnen Sie einen .NET Framework-Eingabeaufforderung, und geben:
+1. Öffnen Sie einen .NET Framework-Eingabeaufforderung, und geben:
 
      **mageui.exe**
 
-2.  Auf der **Datei** Menü wählen **öffnen** zu Ihrer Anwendung das Bereitstellungsmanifest öffnen.
+2. Auf der **Datei** Menü wählen **öffnen** zu Ihrer Anwendung das Bereitstellungsmanifest öffnen.
 
-3.  Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.
+3. Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.
 
-4.  In das Textfeld mit dem Namen **starten Speicherort**, geben Sie die URL in das Verzeichnis, das das Bereitstellungsmanifest für Anwendungsupdates enthält.
+4. In das Textfeld mit dem Namen **starten Speicherort**, geben Sie die URL in das Verzeichnis, das das Bereitstellungsmanifest für Anwendungsupdates enthält.
 
-5.  Speichern Sie das Bereitstellungsmanifest.
+5. Speichern Sie das Bereitstellungsmanifest.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Geben Sie einen alternativen Speicherort für Updates mit Mage.exe
 

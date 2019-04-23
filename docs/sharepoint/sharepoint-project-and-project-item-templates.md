@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040337"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint-Projekte und Projektelementvorlagen
   In den folgenden Abschnitten werden die in SharePoint verfügbaren Projekte und Projektelementvorlagen sowie deren Verwendung beschrieben.
@@ -41,17 +41,17 @@ ms.locfileid: "57867872"
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010-Projekt
  Den Inhalt einer *SharePoint 2010-Projekt* in jeder SharePoint-Projektvorlage enthalten sind. Ein SharePoint 2010-Projekt enthält:
 
--   Eine Projektdatei.
+- Eine Projektdatei.
 
--   Eine Projekteigenschaftenseite.
+- Eine Projekteigenschaftenseite.
 
--   Ein **Verweise** Ordner, in dem alle der Assemblyverweise im Projekt.
+- Ein **Verweise** Ordner, in dem alle der Assemblyverweise im Projekt.
 
--   Ein **Features** Ordner mit einem *.feature* Konfigurationsdatei verwendet, um Features auf SharePoint-Server bereitzustellen.
+- Ein **Features** Ordner mit einem *.feature* Konfigurationsdatei verwendet, um Features auf SharePoint-Server bereitzustellen.
 
--   Ein **Paket** Ordner mit einem *Package.package* -Datei verwendet, um die Lösung für SharePoint bereitstellen.
+- Ein **Paket** Ordner mit einem *Package.package* -Datei verwendet, um die Lösung für SharePoint bereitstellen.
 
--   Eine "key.snk"-Datei (Schlüssel mit starkem Namen), um die Assembly zwecks verbesserter Sicherheit mit einem starken Namen zu signieren.
+- Eine "key.snk"-Datei (Schlüssel mit starkem Namen), um die Assembly zwecks verbesserter Sicherheit mit einem starken Namen zu signieren.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>SharePoint 2010 Silverlight-Webparts
  *SharePoint 2010 Silverlight-Webpart* -Projekten können Sie zum Erstellen von Webparts für SharePoint, die Silverlight-Anwendungen angezeigt. Beim Erstellen dieses Projekts können Sie angeben, ob eine neue Silverlight-Anwendung hinzugefügt oder auf eine vorhandene verwiesen werden soll. Weitere Informationen finden Sie unter [Webparts für SharePoint erstellen](../sharepoint/creating-web-parts-for-sharepoint.md) und [Exemplarische Vorgehensweise: Erstellen ein Silverlight-Webparts, das OData für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).

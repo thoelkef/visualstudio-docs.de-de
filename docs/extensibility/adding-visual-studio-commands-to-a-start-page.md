@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040158"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Startseite
 
@@ -73,15 +73,15 @@ Können Sie die `vscom:` Alias zum Binden von Visual Studio-Befehle an der XAML-
 
 ### <a name="to-call-a-command-from-an-assembly"></a>Zum Aufrufen eines Befehls aus einer assembly
 
-1.  Fügen Sie einen Verweis auf die Assembly, in der Projektmappe.
+1. Fügen Sie einen Verweis auf die Assembly, in der Projektmappe.
 
-2.  Am oberen Rand der *"StartPage.xaml"* Datei, fügen Sie eine Direktive für die Assembly, wie im folgenden Beispiel gezeigt.
+2. Am oberen Rand der *"StartPage.xaml"* Datei, fügen Sie eine Direktive für die Assembly, wie im folgenden Beispiel gezeigt.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  Rufen Sie den Befehl durch Festlegen der `Command` Eigenschaft eines XAML-Objekts, wie im folgenden Beispiel gezeigt.
+3. Rufen Sie den Befehl durch Festlegen der `Command` Eigenschaft eines XAML-Objekts, wie im folgenden Beispiel gezeigt.
 
      Xaml
 

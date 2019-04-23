@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040715"
 ---
 # <a name="ribbon-object-model-overview"></a>Übersicht über das Menüband-Objektmodell
   Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ein stark typisierten Objektmodell, mit denen Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit zur Verfügung. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Weitere Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601035"
 
  Dieses Menüband-Objektmodell besteht hauptsächlich aus der [Multifunktionsleistenklasse](#RibbonClass), [Multifunktionsleisten-Ereignisse](#RibbonEvents), und [Menüband-Steuerelementklassen](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Ribbon-Klasse
+## <a name="RibbonClass"></a> Ribbon-Klasse
  Beim Hinzufügen einer neuen **Menüband (visueller Designer)** Element zu einem Projekt, fügt Visual Studio eine **Menüband** Ihrem Projekt. Die **Menüband** Klasse erbt von der <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> Klasse.
 
  Diese Klasse wird als partielle Klasse angezeigt, die zwischen der Menüband-Codedatei und der Codedatei des Menüband-Designers aufgeteilt ist.
 
-##  <a name="RibbonEvents"></a> Menübandereignisse
+## <a name="RibbonEvents"></a> Menübandereignisse
  Die **Menüband** Klasse enthält die folgenden drei Ereignisse:
 
 |event|Beschreibung|
@@ -40,7 +40,7 @@ ms.locfileid: "56601035"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Sie können Zwischenspeicherung von Images in die Anpassung der Multifunktionsleiste beim Laden des Menübands. Sie können eine leichte leistungsverbesserung abrufen, wenn Sie Code zum Zwischenspeichern der Menüband-Images in diesem Ereignishandler schreiben. Weitere Informationen finden Sie unter <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Wird ausgelöst, wenn die Menübandinstanz geschlossen wird.|
 
-##  <a name="RibbonControlClasses"></a> Menübandsteuerelemente
+## <a name="RibbonControlClasses"></a> Menübandsteuerelemente
  Die <xref:Microsoft.Office.Tools.Ribbon> -Namespace enthält einen Typ für jedes Steuerelement, das Sie in finden Sie unter den **Steuerelemente für Office-Menübänder** Gruppe der **Toolbox**.
 
  In der folgenden Tabelle wird der Typ für jedes `Ribbon`-Steuerelement angezeigt. Eine Beschreibung der einzelnen Steuerelemente, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
@@ -85,11 +85,11 @@ ms.locfileid: "56601035"
 |Abrufen der Elemente in einem <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>-Steuerelement, einem <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>-Steuerelement, einem <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>-Steuerelement oder einem<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>-Steuerelement|Verwenden der Items-Eigenschaft.|
 |Hinzufügen eines <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>-Steuerelements, eines <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>-Steuerelements oder eines <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>-Steuerelements.|Verwenden der Items-Eigenschaft.|
 |Hinzufügen von Steuerelementen zu <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Verwenden der Items-Eigenschaft.<br /><br /> Zum Hinzufügen von Steuerelementen, die <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> , nachdem das Menüband in der Office-Anwendung geladen wird, müssen Sie festlegen der <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> Eigenschaft **"true"** vor dem Laden des Menübands in die Office-Anwendung. Weitere Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).|
-|Abrufen des ausgewählten Elements von <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> oder <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Verwenden Sie die SelectedItem-Eigenschaft. Verwenden Sie für <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> die <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>-Eigenschaft.|
+|Abrufen des ausgewählten Elements von <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, oder <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Verwenden Sie die SelectedItem-Eigenschaft. Verwenden Sie für <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> die <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>-Eigenschaft.|
 |Abrufen der Gruppen auf <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>-Eigenschaft.|
 |Angeben der Anzahl der Zeilen und Spalten, die in <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> angezeigt werden.|Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>-Eigenschaft und die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>-Eigenschaft.|
 
-##  <a name="SettingReadOnlyProperties"></a> Festlegen von Eigenschaften, die schreibgeschützt werden
+## <a name="SettingReadOnlyProperties"></a> Festlegen von Eigenschaften, die schreibgeschützt werden
  Einige Eigenschaften können nur vor dem Laden des Menübands festgelegt werden. Diese Eigenschaften können an drei Orten festgelegt werden:
 
 - In der Visual Studio **Eigenschaften** Fenster.
@@ -126,7 +126,7 @@ ms.locfileid: "56601035"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Eigenschaften, die schreibgeschützt werden
+### <a name="ReadOnlyProperties"></a> Eigenschaften, die schreibgeschützt werden
  Die folgende Tabelle zeigt die Eigenschaften, die nur vor dem Laden des Menübands festgelegt werden können.
 
 > [!NOTE]

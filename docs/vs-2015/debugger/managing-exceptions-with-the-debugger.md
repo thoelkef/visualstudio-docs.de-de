@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040963"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Verwalten von Ausnahmen mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
  Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster „Ausgabe“. In den folgenden Fällen kann er die Ausführung unterbrechen:  
   
--   Wenn eine Ausnahme ausgelöst und nicht behandelt wird.  
+- Wenn eine Ausnahme ausgelöst und nicht behandelt wird.  
   
--   Wenn der Debugger so eingestellt ist, dass die Ausführung sofort beim Auftreten einer Ausnahme unterbrochen wird, bevor ein Handler aufgerufen wird.  
+- Wenn der Debugger so eingestellt ist, dass die Ausführung sofort beim Auftreten einer Ausnahme unterbrochen wird, bevor ein Handler aufgerufen wird.  
   
--   Wenn Sie [Just My Code](../debugger/just-my-code.md)festgelegt haben und der Debugger so eingestellt ist, dass eine Unterbrechung bei jeder Ausnahme veranlasst wird, die nicht im Benutzercode behandelt wird.  
+- Wenn Sie [Just My Code](../debugger/just-my-code.md)festgelegt haben und der Debugger so eingestellt ist, dass eine Unterbrechung bei jeder Ausnahme veranlasst wird, die nicht im Benutzercode behandelt wird.  
   
 > [!NOTE]
 >  ASP.NET verfügt über einen Ausnahmehandler der obersten Ebene, der Fehlerseiten in einem Browser anzeigt. Die Ausführung wird nicht unterbrochen, es sei denn, **Nur eigenen Code** ist aktiviert. Ein Beispiel finden Sie weiter unten unter [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) .  
@@ -141,7 +141,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
    ![Wiederherstellen der Standardwerte in den Ausnahmeeinstellungen](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Einstellen des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt  
+### <a name="BKMK_UserUnhandled"></a> Einstellen des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt  
  Wenn Sie .NET- oder JavaScript-Code mit [Just My Code](../debugger/just-my-code.md)debuggen, können Sie den Debugger so einstellen, dass er bei Ausnahmen, die an anderer Stelle als im Benutzercode behandelt werden, die Ausführung nicht unterbricht.  
   
 1. Öffnen Sie im Fenster **Ausnahmeeinstellungen** das Kontextmenü, indem Sie mit der rechten Maustaste auf „Fenster“ klicken und dann **Spalten anzeigen**auswählen. (Wenn Sie **Nur eigenen Code**deaktiviert haben, wird dieser Befehl nicht angezeigt.)  

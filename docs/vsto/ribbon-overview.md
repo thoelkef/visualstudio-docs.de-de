@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040145"
 ---
 # <a name="ribbon-overview"></a>Übersicht über das Menüband
   Die Multifunktionsleiste ist eine Möglichkeit zum Organisieren verwandter Befehle, damit sie leichter zu finden sind. Befehle werden als Steuerelemente auf dem Menüband angezeigt. Steuerelemente sind in organisiert *Gruppen* entlang einer horizontalen Leiste am oberen Rand eines Anwendungsfensters. Verwandte Gruppen sind auf Registerkarten organisiert.
@@ -93,12 +93,12 @@ ms.locfileid: "56599479"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Fügen Sie mehrerer Menübandelemente zu einem Projekt hinzu
  Sie können einem einzelnen Projekt mehrere Menübandelemente hinzufügen. Dies ist hilfreich, wenn Sie eine der folgenden Aufgaben ausführen möchten:
 
--   Erstellen von Menübändern für Outlook *Inspektoren*. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Erstellen von Menübändern für Outlook *Inspektoren*. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Ein Inspektor ist ein Fenster, das geöffnet wird, wenn der Benutzer bestimmte Aufgaben ausführt, z. B. eine E-Mail verfasst.
 
--   Wählen Sie, welches Menüband zur Laufzeit angezeigt.
+- Wählen Sie, welches Menüband zur Laufzeit angezeigt.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Wählen Sie die Laufzeit anzuzeigenden Menübänder
  Da ein Projekt mehrere Menübänder enthalten kann, können Sie welches Menüband zur Laufzeit anzeigen auswählen.

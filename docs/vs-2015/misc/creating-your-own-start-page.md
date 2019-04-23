@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037894"
 ---
 # <a name="creating-your-own-start-page"></a>Erstellen einer eigenen Startseite
 Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für Startseiten oder auf Grundlage einer leeren Startseite erstellen.  
@@ -28,22 +28,22 @@ Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für 
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>So erstellen Sie eine benutzerdefinierte Startseite mithilfe der Projektvorlage für Startseiten  
   
-1.  Laden Sie die [Projektvorlage für Startseiten](http://go.microsoft.com/fwlink/?LinkId=186204) aus der Visual Studio Gallery herunter, und installieren Sie sie.  
+1. Laden Sie die [Projektvorlage für Startseiten](http://go.microsoft.com/fwlink/?LinkId=186204) aus der Visual Studio Gallery herunter, und installieren Sie sie.  
   
     > [!WARNING]
     >  Bislang wurde die Projektvorlage für Startseiten von Visual Studio 2010 nicht aktualisiert. Weitere Informationen zum Aktualisieren dieser Vorlage finden Sie unter [Vorgehensweise: Aktualisieren einer benutzerdefinierten Startseite Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Nachdem Sie die Vorlage installiert haben, erstellen Sie auf deren Grundlage ein neues Startseitenprojekt.  
+2. Nachdem Sie die Vorlage installiert haben, erstellen Sie auf deren Grundlage ein neues Startseitenprojekt.  
   
-3.  Erweitern Sie im linken Bereich des Dialogfelds "Neues Projekt" unter **Installierte Vorlagen**den Knoten **Andere Projekttypen** , und klicken Sie dann auf **Erweiterungen**.  
+3. Erweitern Sie im linken Bereich des Dialogfelds "Neues Projekt" unter **Installierte Vorlagen**den Knoten **Andere Projekttypen** , und klicken Sie dann auf **Erweiterungen**.  
   
-4.  Klicken Sie im mittleren Bereich auf **Benutzerdefinierte Startseite**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**.  
+4. Klicken Sie im mittleren Bereich auf **Benutzerdefinierte Startseite**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**.  
   
      Visual Studio erstellt ein Startseitenprojekt. Dabei handelt es sich um eine vollständige Kopie der Visual Studio-Startseite.  
   
-5.  Öffnen Sie im **Projektmappen-Explorer**die Datei **StartPage.xaml**.  
+5. Öffnen Sie im **Projektmappen-Explorer**die Datei **StartPage.xaml**.  
   
-6.  Bearbeiten Sie "StartPage.xaml".  
+6. Bearbeiten Sie "StartPage.xaml".  
   
      Sie können Ihre Arbeit anzeigen, indem Sie F5 drücken. Dadurch wird eine experimentelle Visual Studio-Instanz mit der installierten benutzerdefinierten Startseite geöffnet.  
   
