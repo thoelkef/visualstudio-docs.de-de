@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067247"
 ---
-# <a name="step-3-set-your-form-properties"></a>Schritt 3: Festlegen der Formulareigenschaften
+# <a name="step-3-set-your-form-properties"></a>Schritt 3: Festlegen der Formulareigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Formulars zu ändern.  
   
- ![Link zum Video](../data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 1 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205209) oder im Video 1 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo")eine Videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) oder [Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### <a name="to-set-your-form-properties"></a>So legen Sie die Formulareigenschaften fest  
   
@@ -64,14 +64,14 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
   
 7. Bevor Sie mit dem nächsten Schritt fortfahren, beenden Sie das Programm, da die IDE Änderungen an einem ausgeführten Programm nicht zulässt. Denken Sie daran, dass Sie eine der folgenden Methoden verwenden können, um das Programm zu beenden.  
   
-   -   Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen beenden** aus.  
+   - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen beenden** aus.  
   
-   -   Wählen Sie auf der Menüleiste **Debuggen** und dann **Debuggen beenden** aus.  
+   - Wählen Sie auf der Menüleiste **Debuggen** und dann **Debuggen beenden** aus.  
   
-   -   Schließen Sie das **Form1**-Fenster, indem Sie auf das X in der oberen rechten Ecke des Fensters klicken.  
+   - Schließen Sie das **Form1**-Fenster, indem Sie auf das X in der oberen rechten Ecke des Fensters klicken.  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   
--   Klicken Sie auf [Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md), um mit dem nächsten Schritt des Tutorials fortzufahren.  
+- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Wie Sie zum vorherigen Schritt des Tutorials zurückzukehren, erfahren Sie unter [Schritt 2: Ausführen des Programms](../ide/step-2-run-your-program.md).
+- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 2: Ausführen des Programms](../ide/step-2-run-your-program.md).

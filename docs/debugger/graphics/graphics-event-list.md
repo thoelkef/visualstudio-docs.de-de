@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066779"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.
@@ -49,7 +49,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 
 ##### <a name="to-change-the-event-list-view-mode"></a>So ändern Sie den Ansichtsmodus der Ereignisliste
 
--   In der **Graphics Event List** suchen Sie oben im Fenster, die Liste der Ereignisse, die **Ansicht** Dropdownliste und wählen Sie entweder die **Zeitachse** anzeigen oder die **GPU-Arbeit** anzeigen.
+- In der **Graphics Event List** suchen Sie oben im Fenster, die Liste der Ereignisse, die **Ansicht** Dropdownliste und wählen Sie entweder die **Zeitachse** anzeigen oder die **GPU-Arbeit** anzeigen.
 
 ### <a name="filtering-events"></a>Filtern von Ereignissen
  Sie können mithilfe des Feldes "Suchen" in der oberen rechten Ecke des Fensters **Grafikereignisliste** die Ereignisliste so filtern, dass sie nur Ereignisse enthält, in deren Namen bestimmte Schlüsselwörter vorkommen. Sie können einzelne Schlüsselwörter wie `Vertex`(s. Abbildung oben) oder mehrere Schlüsselwörter angeben, indem Sie eine durch Semikola getrennte Liste wie z.B. `Draw;Primitive`erstellen. Diese findet alle Ereignisse, in deren Namen entweder `Draw` oder `Primitive` vorkommt. Suchen sind leerzeichenspezifisch -– `VSSet` und `VS Set` sind z.B. verschiedene Suchvorgänge. Stellen Sie daher sicher, dass Sie Ihre Suchen sorgfältig ausführen.

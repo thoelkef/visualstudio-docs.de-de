@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2b61569c7d1608372516fbc8a71b9bc6955775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067091"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Exemplarische Vorgehensweise: Erstellen eines Legacysprachdiensts
 Verwenden die verwaltete Package Framework (MPF) Sprache-Klassen zum Implementieren von eines Sprachdiensts im [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ist einfach. Sie benötigen ein VSPackage, das den Sprachdienst, der Sprachdienst selbst und einen Parser für Ihre Sprache zu hosten.
@@ -26,11 +26,11 @@ Verwenden die verwaltete Package Framework (MPF) Sprache-Klassen zum Implementie
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die VSPackage-Projektvorlage
  Die Visual Studio-Paket-Projektvorlage finden Sie in drei unterschiedliche Vorlagen stellen in der **neues Projekt** Dialogfeld:
 
-1.  Unter Visual Basic-Erweiterungen. Die Standardsprache des Projekts ist Visual Basic.
+1. Unter Visual Basic-Erweiterungen. Die Standardsprache des Projekts ist Visual Basic.
 
-2.  Unter C#-Erweiterungen. Die Standardsprache des Projekts ist C#.
+2. Unter C#-Erweiterungen. Die Standardsprache des Projekts ist C#.
 
-3.  Unter den Erweiterungen für andere Projekttypen. Die Standardsprache des Projekts ist C++.
+3. Unter den Erweiterungen für andere Projekttypen. Die Standardsprache des Projekts ist C++.
 
 ### <a name="create-a-vspackage"></a>Erstellen Sie ein VSPackage
 
@@ -56,46 +56,46 @@ Verwenden die verwaltete Package Framework (MPF) Sprache-Klassen zum Implementie
 
 ### <a name="create-the-language-service-class"></a>Erstellen Sie die Language-Service-Klasse
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste auf das MyLanguagePackage-Projekt, wählen Sie **hinzufügen**, **Verweis**, und wählen Sie dann die **neuen Verweis hinzufügen** Schaltfläche.
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste auf das MyLanguagePackage-Projekt, wählen Sie **hinzufügen**, **Verweis**, und wählen Sie dann die **neuen Verweis hinzufügen** Schaltfläche.
 
-2.  In der **Verweis hinzufügen** wählen Sie im Dialogfeld **Microsoft.VisualStudio.Package.LanguageService** in die **.NET** Registerkarte, und klicken Sie auf **OK**.
+2. In der **Verweis hinzufügen** wählen Sie im Dialogfeld **Microsoft.VisualStudio.Package.LanguageService** in die **.NET** Registerkarte, und klicken Sie auf **OK**.
 
      Dies muss nur einmal für die Sprache Package-Projekt durchgeführt werden.
 
-3.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **hinzufügen**, **Klasse**.
+3. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **hinzufügen**, **Klasse**.
 
-4.  Stellen Sie sicher, dass **Klasse** in der Liste der Vorlagen ausgewählt ist.
+4. Stellen Sie sicher, dass **Klasse** in der Liste der Vorlagen ausgewählt ist.
 
-5.  Geben Sie **MyLanguageService.cs** für den Namen der Klassendatei, und klicken Sie auf **hinzufügen**.
+5. Geben Sie **MyLanguageService.cs** für den Namen der Klassendatei, und klicken Sie auf **hinzufügen**.
 
      Sie können einen beliebigen Namen verwenden, werden sollen. Diese hier beschriebenen Verfahren wird davon ausgegangen `MyLanguageService` als Namen.
 
-6.  Fügen Sie die folgenden, in der Datei MyLanguageService.cs `using` Anweisungen.
+6. Fügen Sie die folgenden, in der Datei MyLanguageService.cs `using` Anweisungen.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
 
-7.  Ändern der `MyLanguageService` Klasse ableiten von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse:
+7. Ändern der `MyLanguageService` Klasse ableiten von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse:
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8.  Positionieren Sie den Cursor auf "LanguageService" und auf die **bearbeiten**, **IntelliSense** , wählen Sie im Menü **abstrakte Klasse implementieren**. Dadurch wird die mindestens erforderlichen Methoden zur Implementierung einer Sprache-Dienstklasse hinzugefügt.
+8. Positionieren Sie den Cursor auf "LanguageService" und auf die **bearbeiten**, **IntelliSense** , wählen Sie im Menü **abstrakte Klasse implementieren**. Dadurch wird die mindestens erforderlichen Methoden zur Implementierung einer Sprache-Dienstklasse hinzugefügt.
 
 9. Die abstrakten Methoden implementieren, wie in beschrieben [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service2.md).
 
 ### <a name="register-the-language-service"></a>Registrieren des Sprachdiensts
 
-1.  Öffnen Sie die MyLanguagePackagePackage.cs-Datei, und fügen Sie die folgenden `using` Anweisungen:
+1. Öffnen Sie die MyLanguagePackagePackage.cs-Datei, und fügen Sie die folgenden `using` Anweisungen:
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
 
-2.  Sprachdienstklasse registrieren, siehe [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md). Dies schließt die ProvideXX Attribute und die "Der Sprachdienst Proffering" Abschnitte. Verwenden Sie MyLanguageService, bei denen in diesem Thema TestLanguageService verwendet.
+2. Sprachdienstklasse registrieren, siehe [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md). Dies schließt die ProvideXX Attribute und die "Der Sprachdienst Proffering" Abschnitte. Verwenden Sie MyLanguageService, bei denen in diesem Thema TestLanguageService verwendet.
 
 ### <a name="the-parser-and-scanner"></a>Der Parser und Scanner
 
-1.  Implementiert einen Parser und Scanner für Ihre Sprache, wie in beschrieben [Legacy-Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+1. Implementiert einen Parser und Scanner für Ihre Sprache, wie in beschrieben [Legacy-Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
      Parser und Scanner von Ihrer Implementierung der völlig Ihnen überlassen ist und über den Rahmen dieses Themas.
 
@@ -104,29 +104,29 @@ Verwenden die verwaltete Package Framework (MPF) Sprache-Klassen zum Implementie
 
 #### <a name="deriving-from-an-mpf-class"></a>Ableiten von einer MPF-Klasse
 
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **hinzufügen**, **Klasse**.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **hinzufügen**, **Klasse**.
 
-2.  Stellen Sie sicher, dass **Klasse** in der Liste der Vorlagen ausgewählt ist.
+2. Stellen Sie sicher, dass **Klasse** in der Liste der Vorlagen ausgewählt ist.
 
      Geben Sie einen geeigneten Namen für die Klassendatei, und klicken Sie auf **hinzufügen**.
 
-3.  Fügen Sie in der neuen Klassendatei Folgendes `using` Anweisungen.
+3. Fügen Sie in der neuen Klassendatei Folgendes `using` Anweisungen.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_4.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_4.vb)]
 
-4.  Ändern Sie die Klasse auf die gewünschte MPF-Klasse abgeleitet.
+4. Ändern Sie die Klasse auf die gewünschte MPF-Klasse abgeleitet.
 
-5.  Fügen Sie den Konstruktor einer Klasse, der mindestens die gleichen Parameter wie der Konstruktor der Basisklasse akzeptiert, und übergeben Sie die Parameter des Konstruktors an den Basisklassenkonstruktor zu.
+5. Fügen Sie den Konstruktor einer Klasse, der mindestens die gleichen Parameter wie der Konstruktor der Basisklasse akzeptiert, und übergeben Sie die Parameter des Konstruktors an den Basisklassenkonstruktor zu.
 
      Z. B. der Konstruktor für eine Klasse abgeleitet der <xref:Microsoft.VisualStudio.Package.Source> Klasse könnte wie folgt aussehen:
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
 
-6.  Von der **bearbeiten**, **IntelliSense** , wählen Sie im Menü **abstrakte Klasse implementieren** verfügt die Basisklasse keine abstrakten Methoden, die implementiert werden müssen.
+6. Von der **bearbeiten**, **IntelliSense** , wählen Sie im Menü **abstrakte Klasse implementieren** verfügt die Basisklasse keine abstrakten Methoden, die implementiert werden müssen.
 
-7.  Andernfalls positionieren Sie die Einfügemarke innerhalb der Klasse zu, und geben Sie die Methode außer Kraft gesetzt werden.
+7. Andernfalls positionieren Sie die Einfügemarke innerhalb der Klasse zu, und geben Sie die Methode außer Kraft gesetzt werden.
 
      Geben Sie z. B. `public override` um eine Liste aller Methoden, die in dieser Klasse überschrieben werden können.
 

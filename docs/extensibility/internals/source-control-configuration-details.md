@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070094"
 ---
 # <a name="source-control-configuration-details"></a>Konfigurationsdetails für die Quellcodeverwaltung
 Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgemäßen Konfigurieren von Ihrem Projektsystem oder Editor, um die folgenden Schritte ausführen:
 
--   Berechtigung zum Übergang in den geänderten Zustand anfordern
+- Berechtigung zum Übergang in den geänderten Zustand anfordern
 
--   Berechtigung zum Speichern einer Datei
+- Berechtigung zum Speichern einer Datei
 
--   Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
+- Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>Berechtigung zum Übergang in den geänderten Zustand anfordern
  Ein Projekt oder eine Editor muss über die Berechtigung zum Übergang in den Zustand der geänderten (geändert) anfordern, indem er <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Jede-Editor, der implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> müssen Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und Genehmigung zum Wechseln des Dokuments aus der Umgebung vor der Rückgabe `True` für <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Ein Projekt ist im Wesentlichen ein Editor für eine Projektdatei, und daher hat die gleiche Verantwortung für die Implementierung geändert-statusüberwachung für die Projektdatei aus, wie in ein Text-Editor für die Dateien. Die Umgebung verarbeitet den geänderten Zustand der Lösung, jedoch müssen Sie den geänderten Zustand eines Objekts die Projektmappe verweist, jedoch nicht gespeichert, z. B. einer Projektdatei oder seiner Elemente behandeln. Im Allgemeinen, wenn Ihrem Projekt oder den Editor zum Verwalten der Persistenz für ein Element verantwortlich ist, ist dann verantwortlich für die Implementierung geändert-statusüberwachung.

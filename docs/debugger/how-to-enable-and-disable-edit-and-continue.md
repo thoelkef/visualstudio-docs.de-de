@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Aktivieren und Deaktivieren von bearbeiten und fortfahren | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Aktivieren und Deaktivieren von bearbeiten und fortfahren | Microsoft-Dokumentation'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070407"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Gewusst wie: Aktivieren und Deaktivieren von bearbeiten und Fortfahren (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Vorgehensweise: Aktivieren und Deaktivieren von bearbeiten und Fortfahren (C#, VB, C++)
 
 Sie können das Aktivieren oder deaktivieren **bearbeiten und Fortfahren** in Visual Studio **Optionen** Dialogfeld zur Entwurfszeit. Die Funktion **Bearbeiten und Fortfahren** funktioniert nur in Debugversionen. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
 
@@ -41,14 +41,14 @@ Bei systemeigenem C++ **bearbeiten und Fortfahren** erfordert die Verwendung der
 
 **So aktivieren oder deaktivieren, bearbeiten und Fortfahren:**
 
-1.  Wenn Sie in einer Debugsitzung sind, beenden Sie das Debuggen (**Debuggen** > **Debuggen beenden** oder **UMSCHALT**+**F5**) .
+1. Wenn Sie in einer Debugsitzung sind, beenden Sie das Debuggen (**Debuggen** > **Debuggen beenden** oder **UMSCHALT**+**F5**) .
 
-1.  In **Tools** > **Optionen** > (oder **Debuggen** > **Optionen**) > **Debuggen**  >  **Allgemeine**Option **bearbeiten und Fortfahren** im rechten Bereich.
+1. In **Tools** > **Optionen** > (oder **Debuggen** > **Optionen**) > **Debuggen**  >  **Allgemeine**Option **bearbeiten und Fortfahren** im rechten Bereich.
 
     > [!NOTE]
     >  Wenn IntelliTrace aktiviert ist und Sie IntelliTrace-Ereignisse und Aufrufinformationen erfassen, wird "Bearbeiten und Fortfahren" deaktiviert. Weitere Informationen finden Sie unter [IntelliTrace](../debugger/intellitrace.md).
 
-1.  Für C++-Code stellen Sie sicher, dass **systemeigene bearbeiten und Fortfahren aktivieren** ausgewählt ist, und legen Sie die zusätzlichen Optionen:
+1. Für C++-Code stellen Sie sicher, dass **systemeigene bearbeiten und Fortfahren aktivieren** ausgewählt ist, und legen Sie die zusätzlichen Optionen:
     - **Änderungen beim Fortfahren anwenden (nur nativ)**
 
       Wenn ausgewählt, wird in Visual Studio automatisch kompiliert und codeänderungen angewendet werden, wenn Sie fortfahren, Debuggen von Zustand "unterbrochen". Andernfalls können Sie mithilfe von Änderungen zu übernehmen **Debuggen** > **Codeänderungen übernehmen**.
@@ -57,4 +57,4 @@ Bei systemeigenem C++ **bearbeiten und Fortfahren** erfordert die Verwendung der
 
       Wenn Sie ausgewählt haben, erhalten Warnungen über veralteten Code.
 
-1.  Klicken Sie auf **OK**.
+1. Klicken Sie auf **OK**.

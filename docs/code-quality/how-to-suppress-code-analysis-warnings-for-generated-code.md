@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066519"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Vorgehensweise: Unterdrücken von Codeanalysewarnungen für generierten Code
 Compiler für verwalteten Code generieren häufig Code, der ein Projekt aus, um die schnelle Codeentwicklung zu vereinfachen hinzugefügt wird. Darüber hinaus verwenden Entwickler häufig Drittanbieter-Tools ab, um schnell Anwendungen zu entwickeln. Diese Tools generieren auch Code, der dem Projekt hinzugefügt wird.
@@ -27,8 +27,8 @@ Compiler für verwalteten Code generieren häufig Code, der ein Projekt aus, um 
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>So unterdrücken Sie Warnungen für generierten Code in einem Projekt
 
-1.  Mit der rechten Maustaste in des Projekts im Projektmappen-Explorer, und klicken Sie dann auf **Eigenschaften**.
+1. Mit der rechten Maustaste in des Projekts im Projektmappen-Explorer, und klicken Sie dann auf **Eigenschaften**.
 
-2.  Klicken Sie auf **Codeanalyse**.
+2. Klicken Sie auf **Codeanalyse**.
 
-3.  Wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
+3. Wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.

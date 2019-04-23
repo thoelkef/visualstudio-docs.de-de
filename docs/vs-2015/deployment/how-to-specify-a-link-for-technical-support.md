@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072369"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für den technischen Support
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 ### <a name="to-specify-a-support-url"></a>Angeben ein Support-URLs  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.  
+3. Klicken Sie auf die **Optionen** die Schaltfläche, um die **Veröffentlichungsoptionen** Dialogfeld.  
   
-4.  Klicken Sie auf **Beschreibung**.  
+4. Klicken Sie auf **Beschreibung**.  
   
-5.  In der **Support-URL** Geben Sie einen vollqualifizierten Pfad zu einer Website, Webseite oder UNC-Freigabe.  
+5. In der **Support-URL** Geben Sie einen vollqualifizierten Pfad zu einer Website, Webseite oder UNC-Freigabe.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   

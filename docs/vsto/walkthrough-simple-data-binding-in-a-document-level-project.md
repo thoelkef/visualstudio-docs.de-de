@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066648"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Datenbindung in einem Projekt auf Dokumentebene. Ein einzelnes Datenfeld in einer SQL Server-Datenbank ist an einen benannten Bereich in Microsoft Office Excel gebunden. In der exemplarischen Vorgehensweise wird gezeigt, wie Steuerelemente hinzufügen, die Ihnen ermöglichen, führen Sie einen Bildlauf durch alle Datensätze in der Tabelle.
@@ -41,13 +41,13 @@ ms.locfileid: "56640266"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Zugriff auf einen Server mit der Beispieldatenbank Northwind-SQL Server.
+- Zugriff auf einen Server mit der Beispieldatenbank Northwind-SQL Server.
 
--   Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.
+- Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
  In diesem Schritt erstellen Sie ein Excel-Workbook-Projekt.
@@ -88,21 +88,21 @@ ms.locfileid: "56640266"
 
 ### <a name="to-add-two-named-ranges"></a>Hinzufügen von zwei benannte Bereiche
 
-1.  Überprüfen Sie, ob die *Meine einfache Daten Binding.xlsx* Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit **Sheet1** angezeigt.
+1. Überprüfen Sie, ob die *Meine einfache Daten Binding.xlsx* Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit **Sheet1** angezeigt.
 
-2.  Öffnen der **Datenquellen** Fenster, und erweitern Sie die **Kunden** Knoten.
+2. Öffnen der **Datenquellen** Fenster, und erweitern Sie die **Kunden** Knoten.
 
-3.  Wählen Sie die **CompanyName** Spalte, und klicken Sie dann auf den Dropdown-Pfeil, der angezeigt wird.
+3. Wählen Sie die **CompanyName** Spalte, und klicken Sie dann auf den Dropdown-Pfeil, der angezeigt wird.
 
-4.  Wählen Sie **NamedRange** in der Dropdown-Liste, und ziehen Sie dann die **CompanyName** Spalte Zelle **A1**.
+4. Wählen Sie **NamedRange** in der Dropdown-Liste, und ziehen Sie dann die **CompanyName** Spalte Zelle **A1**.
 
      Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement mit dem Namen `companyNameNamedRange` ist in der Zelle erstellt **A1**. Zur gleichen Zeit eine <xref:System.Windows.Forms.BindingSource> mit dem Namen `customersBindingSource`, ein Tabellenadapter und eine <xref:System.Data.DataSet> Instanz werden dem Projekt hinzugefügt. Das Steuerelement gebunden ist, um die <xref:System.Windows.Forms.BindingSource>, das wiederum gebunden ist die <xref:System.Data.DataSet> Instanz.
 
-5.  Wählen Sie die **"CustomerID"** -Spalte in der **Datenquellen** Fenster, und klicken Sie dann auf den Dropdown-Pfeil, der angezeigt wird.
+5. Wählen Sie die **"CustomerID"** -Spalte in der **Datenquellen** Fenster, und klicken Sie dann auf den Dropdown-Pfeil, der angezeigt wird.
 
-6.  Klicken Sie auf **NamedRange** in der Dropdown-Liste, und ziehen Sie dann die **"CustomerID"** Spalte Zelle **B1**.
+6. Klicken Sie auf **NamedRange** in der Dropdown-Liste, und ziehen Sie dann die **"CustomerID"** Spalte Zelle **B1**.
 
-7.  Eine andere <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement mit dem Namen `customerIDNamedRange` ist in der Zelle erstellt **B1**, und Binden an die <xref:System.Windows.Forms.BindingSource>.
+7. Eine andere <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement mit dem Namen `customerIDNamedRange` ist in der Zelle erstellt **B1**, und Binden an die <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-four-buttons"></a>Vier Schaltflächen hinzufügen
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640266"
 
 ### <a name="to-move-to-the-first-record"></a>Um auf den ersten Eintrag verschieben
 
-1.  Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button1` Schaltfläche aus, und fügen Sie den folgenden Code hinzu, verschieben Sie auf den ersten Eintrag hinzu:
+1. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button1` Schaltfläche aus, und fügen Sie den folgenden Code hinzu, verschieben Sie auf den ersten Eintrag hinzu:
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>Um zum vorherigen Datensatz zu verschieben.
 
-1.  Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button2` Schaltfläche, und fügen Sie den folgenden Code, um die Position zurück zu navigieren:
+1. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button2` Schaltfläche, und fügen Sie den folgenden Code, um die Position zurück zu navigieren:
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>Um zum nächsten Datensatz zu verschieben.
 
-1.  Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button3` Schaltfläche, und fügen Sie den folgenden Code zum fahren Sie fort, der die Position von einem:
+1. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button3` Schaltfläche, und fügen Sie den folgenden Code zum fahren Sie fort, der die Position von einem:
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>Bis zum letzten Datensatz verschieben
 
-1.  Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button4` Schaltfläche, und fügen Sie den folgenden Code zum bis zum letzten Datensatz verschoben:
+1. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `Button4` Schaltfläche, und fügen Sie den folgenden Code zum bis zum letzten Datensatz verschoben:
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640266"
 
 ### <a name="to-test-your-workbook"></a>So testen Sie die Arbeitsmappe
 
-1.  Drücken Sie **F5** um Ihr Projekt auszuführen.
+1. Drücken Sie **F5** um Ihr Projekt auszuführen.
 
-2.  Vergewissern Sie sich, dass der erste Datensatz in Zellen angezeigt **A1** und **B1**.
+2. Vergewissern Sie sich, dass der erste Datensatz in Zellen angezeigt **A1** und **B1**.
 
-3.  Klicken Sie auf die **>** (`Button3`) und bestätigen Sie, dass es sich bei der nächste Datensatz in Zelle angezeigt wird **A1** und **B1**.
+3. Klicken Sie auf die **>** (`Button3`) und bestätigen Sie, dass es sich bei der nächste Datensatz in Zelle angezeigt wird **A1** und **B1**.
 
-4.  Klicken Sie auf die anderen Bildlaufschaltflächen, um sicherzustellen, dass der Datensatz geändert wird, wie erwartet.
+4. Klicken Sie auf die anderen Bildlaufschaltflächen, um sicherzustellen, dass der Datensatz geändert wird, wie erwartet.
 
 ## <a name="next-steps"></a>Nächste Schritte
  In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Bindung eines benannten Bereichs auf ein Feld in einer Datenbank. Die folgenden Aufgaben könnten sich daran anschließen:
 
--   Daten zwischengespeichert, so dass sie offline verwendet werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Daten zwischengespeichert, so dass sie offline verwendet werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Binden von Zellen an mehrere Spalten in einer Tabelle statt auf ein Feld. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
+- Binden von Zellen an mehrere Spalten in einer Tabelle statt auf ein Feld. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
--   Verwenden einer <xref:System.Windows.Forms.BindingNavigator> Steuerelement durch die Datensätze scrollen. Weitere Informationen finden Sie unter [Vorgehensweise: Datennavigation mithilfe des Windows Forms BindingNavigator-Steuerelements](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Verwenden einer <xref:System.Windows.Forms.BindingNavigator> Steuerelement durch die Datensätze scrollen. Weitere Informationen finden Sie unter [Vorgehensweise: Datennavigation mithilfe des Windows Forms BindingNavigator-Steuerelements](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Siehe auch
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)

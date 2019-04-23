@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067039"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Problembehandlung bei Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ In diesem Thema werden Probleme behandelt, die bei der Verwendung des Help Viewe
   
 #### <a name="to-activate-windows-search-service"></a>So aktivieren Sie den Windows Search-Dienst  
   
-1.  Starten Sie den Server-Manager.  
+1. Starten Sie den Server-Manager.  
   
-2.  Klicken Sie im linken Navigationsbereich auf **Rollen**.  
+2. Klicken Sie im linken Navigationsbereich auf **Rollen**.  
   
-3.  Wählen Sie im Bereich „Rollenübersicht“ die Option **Rolle hinzufügen** aus.  
+3. Wählen Sie im Bereich „Rollenübersicht“ die Option **Rolle hinzufügen** aus.  
   
-4.  Wählen Sie die Rolle „Dateidienste“ aus, und klicken Sie dann auf **Weiter**.  
+4. Wählen Sie die Rolle „Dateidienste“ aus, und klicken Sie dann auf **Weiter**.  
   
-5.  Wählen Sie den Windows Search-Rollendienst aus.  
+5. Wählen Sie den Windows Search-Rollendienst aus.  
   
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
  Mithilfe der folgenden Ressourcen können Sie weitere Informationen abrufen und Feedback zum Help Viewer bereitstellen:  

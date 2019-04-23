@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067156"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie [!INCLUDE[vsprvs](../inc
   
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:  
   
--   Auswerten des Grafikprotokolldokuments, um die Pixel zu identifizieren, für die das Problem auftritt  
+- Auswerten des Grafikprotokolldokuments, um die Pixel zu identifizieren, für die das Problem auftritt  
   
--   Verwenden des Fensters **Grafikpixelverlauf** , um den Pixelstatus genauer zu untersuchen  
+- Verwenden des Fensters **Grafikpixelverlauf** , um den Pixelstatus genauer zu untersuchen  
   
--   Verwenden des **HLSL-Debuggers** , um den Pixel- und den Vertexshader zu überprüfen  
+- Verwenden des **HLSL-Debuggers** , um den Pixel- und den Vertexshader zu überprüfen  
   
 ## <a name="scenario"></a>Szenario  
  Eine falsche Farbgebung von Objekten tritt häufig auf, wenn ein Vertexshader einem Pixelshader falsche oder unvollständige Informationen übergibt.  

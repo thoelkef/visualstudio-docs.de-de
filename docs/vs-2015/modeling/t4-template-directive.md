@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070835"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
  `compilerOptions="optimize+"`  
   
  Gültige Werte:  
- Alle gültigen Compileroptionen. Weitere Informationen finden Sie unter [(C# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Alle gültigen Compileroptionen. Weitere Informationen finden Sie unter [(c# Compiler Options Listed by Category](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) und [Visual Basic Compiler Options Listed by Category](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).  
   
@@ -55,7 +55,8 @@ Eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4-Textvorlage beginnt normale
   
 ## <a name="debug-attribute"></a>debug-Attribut  
  Beispiel:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>hostspecific-Attribut  
  Beispiel:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  In der Regel geben Sie noch eine vorverarbeitete Vorlage als Basisklasse an. Die Basisvorlage beinhaltet allgemeine Textblöcke, die sich mit Text aus den abgeleiteten Vorlagen überlappen können. Sie können mithilfe von Klassenfunktionsblöcken (`<#+ ... #>`) Methoden definieren, die Textfragmente enthalten. Sie können z. B. das Framework des Ausgabetexts in der Basisvorlage platzieren und virtuelle Methoden bereitstellen, die in abgeleiteten Vorlagen überschrieben werden können:  
   
  Laufzeittextvorlage "BaseTemplate.tt" (vorverarbeitete Vorlage):  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  Laufzeittextvorlage "DerivedTemplate1.tt" (vorverarbeitete Vorlage):  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Anwendungscode zum Aufruf von "DerivedTemplate1":  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Ergebnis:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

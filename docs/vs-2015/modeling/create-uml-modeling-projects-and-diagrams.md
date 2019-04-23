@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068326"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
 > [!NOTE]
 >  Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="CreatingModelingDiagrams"></a> Erstellen Sie ein Diagramm in einem Modellierungsprojekt  
+## <a name="CreatingModelingDiagrams"></a> Erstellen Sie ein Diagramm in einem Modellierungsprojekt  
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>So erstellen Sie ein Diagramm und fügen es zu einem Projekt hinzu  
@@ -61,9 +61,9 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
      \- oder –  
   
-   1.  Wählen Sie **ein neues Modellierungsprojekt erstellen**, und klicken Sie dann auf **OK**.  
+   1. Wählen Sie **ein neues Modellierungsprojekt erstellen**, und klicken Sie dann auf **OK**.  
   
-   2.  In der **Neues Modellierungsprojekt erstellen** Dialogfeld Geben Sie einen Namen und Speicherort für das neue Projekt, und klicken Sie dann auf **OK**.  
+   2. In der **Neues Modellierungsprojekt erstellen** Dialogfeld Geben Sie einen Namen und Speicherort für das neue Projekt, und klicken Sie dann auf **OK**.  
   
         ![Dialogfeld für neues Modellierungsprojekt erstellen](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
@@ -73,16 +73,16 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Einem vorhandenen Modellierungsprojekt ein Diagramm hinzufügen  
   
-1.  In **Projektmappen-Explorer**, klicken Sie auf den modellierungs-Projektknoten.  
+1. In **Projektmappen-Explorer**, klicken Sie auf den modellierungs-Projektknoten.  
   
     > [!NOTE]
     >  Das Modellierungsprojekt enthält einen Modelldefinitionsordner mit dem Namen **ModelDefinition**.  
   
-2.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
   
-3.  In der **neues Element hinzufügen -**  *\<Projektname >* Dialogfeld **Vorlagen**, klicken Sie auf die Modellierung Diagrammtyp, z. B. **UML Komponentendiagramm**.  
+3. In der **neues Element hinzufügen -**  *\<Projektname >* Dialogfeld **Vorlagen**, klicken Sie auf die Modellierung Diagrammtyp, z. B. **UML Komponentendiagramm**.  
   
-4.  Geben Sie einen Namen für das Diagramm, und klicken Sie dann auf **hinzufügen**.  
+4. Geben Sie einen Namen für das Diagramm, und klicken Sie dann auf **hinzufügen**.  
   
      Das Modellierungsdiagramm wird geöffnet und im Modellierungsprojekt angezeigt.  
   
@@ -91,22 +91,22 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 #### <a name="to-create-a-blank-modeling-project"></a>So erstellen Sie ein leeres Modellierungsprojekt  
   
-1.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-2.  In der **neues Projekt** Dialogfeld **installierte Vorlagen**, klicken Sie auf **Modellierungsprojekte**.  
+2. In der **neues Projekt** Dialogfeld **installierte Vorlagen**, klicken Sie auf **Modellierungsprojekte**.  
   
-3.  Klicken Sie im mittleren Fenster auf **Modellierungsprojekt**.  
+3. Klicken Sie im mittleren Fenster auf **Modellierungsprojekt**.  
   
-4.  Nennen Sie das Projekt, und geben Sie einen Speicherort in der **Namen** und **Speicherort** Felder.  
+4. Nennen Sie das Projekt, und geben Sie einen Speicherort in der **Namen** und **Speicherort** Felder.  
   
-5.  In der **Lösung** wählen Sie im **zu Projektmappe hinzufügen** eine Lösung, die Sie bereits geöffnet haben; das neue Projekt hinzugefügt oder **neue Projektmappe erstellen** alle geöffneten Projektmappen schließen und Hinzufügen der Projekt einer neuen Projektmappe.  
+5. In der **Lösung** wählen Sie im **zu Projektmappe hinzufügen** eine Lösung, die Sie bereits geöffnet haben; das neue Projekt hinzugefügt oder **neue Projektmappe erstellen** alle geöffneten Projektmappen schließen und Hinzufügen der Projekt einer neuen Projektmappe.  
   
-##  <a name="RemovingModelingDiagrams"></a> Entfernen von Modellierungsdiagrammen aus einem Projekt  
+## <a name="RemovingModelingDiagrams"></a> Entfernen von Modellierungsdiagrammen aus einem Projekt  
  Sie können ein Diagramm dauerhaft löschen, oder Sie können vorübergehend ein Diagramm aus einem Projekt ausschließen und dann wiederherstellen.  
   
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Dauerhaftes Löschen ein Diagramms aus einem Projekt  
   
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf die Hauptdatei, die im Diagramm ist dargestellt, und klicken Sie dann auf **löschen**.  
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf die Hauptdatei, die im Diagramm ist dargestellt, und klicken Sie dann auf **löschen**.  
   
      Das Diagramm wird aus dem Projekt und dem Dateisystem entfernt. Die im Diagramm angezeigten Elemente werden nicht entfernt, von **UML-Modell-Explorer**.  
   
@@ -115,7 +115,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Vorübergehendes Ausschließen eines Diagramms aus einem Projekt  
   
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf die Diagrammdatei, und klicken Sie dann auf **aus Projekt ausschließen**.  
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf die Diagrammdatei, und klicken Sie dann auf **aus Projekt ausschließen**.  
   
      Das Diagramm wird aus dem Projekt entfernt. Es wird nicht aus dem Dateisystem entfernt.  
   
@@ -124,30 +124,30 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Ein vorübergehend ausgeschlossenes Diagramm in einem Projekt wiederherstellen  
   
-1.  In **Projektmappen-Explorer**, klicken Sie auf den modellierungs-Projektknoten.  
+1. In **Projektmappen-Explorer**, klicken Sie auf den modellierungs-Projektknoten.  
   
     > [!NOTE]
     >  Das Modellierungsprojekt enthält einen Modelldefinitionsordner mit dem Namen **ModelDefinition**.  
   
-2.  Auf der **Projekt** Menü klicken Sie auf **vorhandenes Element hinzufügen**.  
+2. Auf der **Projekt** Menü klicken Sie auf **vorhandenes Element hinzufügen**.  
   
-3.  In der **vorhandenes Element hinzufügen** Dialogfeld Suchen die Diagrammdatei, wählen Sie die Datei, und klicken Sie dann auf **hinzufügen**.  
+3. In der **vorhandenes Element hinzufügen** Dialogfeld Suchen die Diagrammdatei, wählen Sie die Datei, und klicken Sie dann auf **hinzufügen**.  
   
      Das Modellierungsdiagramm wird geöffnet und im Modellierungsprojekt angezeigt.  
   
     > [!NOTE]
     >  Jedes Diagramm verfügt über ein Paar von Dateien im Dateisystem. Wählen Sie keine Datei mit der Erweiterung `.layout`. Darüber hinaus bietet Visual Studio keine Unterstützung für das Hinzufügen vorhandener UML-Diagramme zu mehreren Modellierungsprojekten. Jede Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem sie erstellt wurde. Ein UML-Diagramm ist eine Ansicht eines Modells, das zum zum zugehörigen Modellierungsprojekt gehört.  
   
-##  <a name="NonModelDiagrams"></a> Diagramme, die keine Modellierungsprojekte erfordern  
+## <a name="NonModelDiagrams"></a> Diagramme, die keine Modellierungsprojekte erfordern  
  Die folgenden Arten von Diagrammen sind nicht Teil eines Modellierungsprojekts:  
   
--   Klassendiagramme, die als Ansichten des Quellcodes erstellt werden. Diese beziehen sich nicht auf UML-Klassendiagramme. Weitere Informationen finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md).  
+- Klassendiagramme, die als Ansichten des Quellcodes erstellt werden. Diese beziehen sich nicht auf UML-Klassendiagramme. Weitere Informationen finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Code Maps. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
+- Code Maps. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Diagramme, die keine UML-Diagramme oder Ebenendiagramme sind, z. B. domänenspezifische Sprachen.  
+- Diagramme, die keine UML-Diagramme oder Ebenendiagramme sind, z. B. domänenspezifische Sprachen.  
   
-##  <a name="TroubleshootingModelingProjects"></a> Problembehandlung bei Modellierungsprojekten und-Diagrammen  
+## <a name="TroubleshootingModelingProjects"></a> Problembehandlung bei Modellierungsprojekten und-Diagrammen  
  In der folgende Tabelle werden Probleme, die mit Modellierungsprojekten oder Diagrammen und deren Behebung auftreten können, beschrieben:  
   
 |**Problem**|**Bewirkt, dass**|**Auflösung**|  

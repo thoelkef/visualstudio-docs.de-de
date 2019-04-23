@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071807"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Registrierungseinträge für VSTO-Add-ins
   Sie müssen einen bestimmten Satz von Registrierungseinträgen erstellen, wenn Sie VSTO-Add-Ins bereitstellen, die mithilfe von Visual Studio erstellt werden. Diese Registrierungseinträge enthalten Informationen, mit denen die Microsoft Office-Anwendung das VSTO-Add-In erkennt und lädt.
@@ -78,7 +78,7 @@ ms.locfileid: "56612711"
 |**LoadBehavior**|REG_DWORD|Erforderlich. Ein Wert, der zusätzlich zum aktuellen Zustand des VSTO-Add-Ins (geladen oder entladen) angibt, wann die Anwendung das VSTO-Add-In laden soll.<br /><br /> Standardmäßig ist dieser Wert auf 3 festgelegt, was bedeutet, dass das VSTO-Add-In beim Start geladen wird. Weitere Informationen finden Sie unter [LoadBehavior-Werten](#LoadBehavior). **Hinweis**:  Wenn ein Benutzer das VSTO-Add-in deaktiviert, wird diese Aktion ändert **LoadBehavior** Wert in der **HKEY_CURRENT_USER** Registrierungsstruktur. Für jeden Benutzer den Wert des der **LoadBehavior** Wert in der HKEY_CURRENT_USER-Struktur überschreibt den standardmäßigen **LoadBehavior** definiert, der **HKEY_LOCAL_MACHINE** Hive.|
 |**Manifest**|REG_SZ|Erforderlich. Der vollständige Pfad des Bereitstellungsmanifests für das VSTO-Add-In. Bei dem Pfad kann es sich um einen Speicherort auf dem lokalen Computer, eine Netzwerkfreigabe (UNC) oder um einen Webserver (HTTP) handeln.<br /><br /> Wenn Sie Windows Installer verwenden, um die Lösung bereitzustellen, müssen Sie das Präfix hinzufügen **file:///** auf die **manifest** Pfad. Sie müssen auch die Zeichenfolge anhängen  **&#124;Vstolocal** (d. h. das Pipezeichen **&#124;** gefolgt von **Vstolocal**) am Ende dieses Pfads. Dadurch wird sichergestellt, dass die Projektmappe aus dem Installationsordner geladen wird und nicht aus dem ClickOnce-Cache. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe mit Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Hinweis**:  Wenn Sie ein VSTO-Add-in auf dem Entwicklungscomputer erstellen, fügt Visual Studio automatisch die  **&#124;Vstolocal** -Zeichenfolge an diesen Registrierungseintrag.|
 
-###  <a name="OutlookEntries"></a> Registrierungseinträge für Outlook-Formularbereichen
+### <a name="OutlookEntries"></a> Registrierungseinträge für Outlook-Formularbereichen
  Wenn Sie einen benutzerdefinierten Formularbereich in einem VSTO-Add-In für Outlook erstellen, werden zusätzliche Registrierungseinträge verwendet, um den Formularbereich für Outlook zu registrieren. Diese Einträge werden unter einem anderen Registrierungsschlüssel für jede Nachrichtenklasse erstellt, die vom Formularbereich unterstützt wird. Diese Registrierungsschlüssel befinden sich am folgenden Speicherort, wo *Stamm* ist **HKEY_CURRENT_USER** oder **HKEY_LOCAL_MACHINE**.
 
  *Stamm*\Software\Microsoft\Office\Outlook\FormRegions\\*message-Klasse*
@@ -87,7 +87,7 @@ ms.locfileid: "56612711"
 
  Weitere Informationen zu den Formularbereichsregistrierungseinträgen finden Sie unter [Geben Sie den Speicherort eines Formularbereichs in einem benutzerdefinierten Formular](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Weitere Informationen zu Outlook-Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).
 
-##  <a name="LoadBehavior"></a> LoadBehavior-Werten
+## <a name="LoadBehavior"></a> LoadBehavior-Werten
  Die **LoadBehavior** Eintrag unter dem *Stamm*\Software\Microsoft\Office\\*Anwendungsname*\Addins\\ *-add-in ID* Schlüssel enthält eine bitweise Kombination von Werten, die das Laufzeitverhalten des VSTO-Add-Ins angeben. Das Bit der niedrigsten Ordnung (Werte 0 und 1) gibt an, ob das VSTO-Add-In gerade geladen ist. Andere Bits geben an, wann die Anwendung versucht, das VSTO-Add-In zu laden.
 
  In der Regel die **LoadBehavior** -Eintrag auf 0, 3 oder 16 (dezimal) festgelegt werden Wenn das VSTO-Add-in auf Endbenutzercomputern installiert ist. Standardmäßig legt Visual Studio den **LoadBehavior** -Eintrag des VSTO-Add-Ins auf 3 fest, wenn Sie es erstellen oder veröffentlichen.

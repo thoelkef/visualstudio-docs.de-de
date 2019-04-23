@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068300"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Es gibt zwei Möglichkeiten, dieses Problem zu beheben, in denen der lokale Cache von Source-Control-Versionen mit der Datenbank synchronisiert wird:  
   
-1.  Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.  
+1. Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.  
   
-2.  Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.  
+2. Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.  
   
-    1.  Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über das Umbenennen von a.txt zu "b.txt" im Quellcode-Verwaltungsdatenbank.  
+    1. Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über das Umbenennen von a.txt zu "b.txt" im Quellcode-Verwaltungsdatenbank.  
   
-    2.  Benennen Sie die lokalen a.txt zu "b.txt".  
+    2. Benennen Sie die lokalen a.txt zu "b.txt".  
   
-    3.  Rufen Sie die `SccGet` -Funktion für sowohl "a.txt" und "b.txt".  
+    3. Rufen Sie die `SccGet` -Funktion für sowohl "a.txt" und "b.txt".  
   
-    4.  Da a.txt nicht im Quellcode-Verwaltungsdatenbank vorhanden ist, wird der lokalen Cache der Informationen zu fehlenden a.txt Version gelöscht.  
+    4. Da a.txt nicht im Quellcode-Verwaltungsdatenbank vorhanden ist, wird der lokalen Cache der Informationen zu fehlenden a.txt Version gelöscht.  
   
-    5.  Die "b.txt"-Datei, die ausgecheckt wird, wird mit dem Inhalt der lokalen "b.txt"-Datei zusammengeführt.  
+    5. Die "b.txt"-Datei, die ausgecheckt wird, wird mit dem Inhalt der lokalen "b.txt"-Datei zusammengeführt.  
   
-    6.  Die aktualisierte "b.txt"-Datei kann jetzt eingecheckt werden.  
+    6. Die aktualisierte "b.txt"-Datei kann jetzt eingecheckt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   

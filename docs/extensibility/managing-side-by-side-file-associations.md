@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067065"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Seite-an-Seite dateizuordnungen verwalten
 
@@ -81,9 +81,9 @@ Deinstallieren eines VSPackage, die Registrierungseinträge für dateizuordnunge
 
 - Weisen Sie den Benutzer, eine Reparatur der Version des VSPackage auszuführen, die der Benutzer möchte die dateizuordnung zu besitzen.
 
--   Geben Sie ein separates ausführbares Programm, das die entsprechenden Registrierungseinträge ändert.
+- Geben Sie ein separates ausführbares Programm, das die entsprechenden Registrierungseinträge ändert.
 
--   Geben Sie eine Konfiguration-Optionen oder im aktiven Dialogfeld, mit dem Benutzer, wählen Sie die dateizuordnungen und Freigeben von verlorenen Zuordnungen. Weisen Sie Benutzer für die Ausführung nach der Deinstallation.
+- Geben Sie eine Konfiguration-Optionen oder im aktiven Dialogfeld, mit dem Benutzer, wählen Sie die dateizuordnungen und Freigeben von verlorenen Zuordnungen. Weisen Sie Benutzer für die Ausführung nach der Deinstallation.
 
 ## <a name="see-also"></a>Siehe auch
 

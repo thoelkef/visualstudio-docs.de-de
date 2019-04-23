@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070913"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
   Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen*genannt .
@@ -29,9 +29,9 @@ ms.locfileid: "56644379"
 
  Die neuesten Informationen zur Entwicklung von Office finden Sie in den folgenden Development Centern auf MSDN:
 
--   Die [Office-Entwicklung mit Visual Studio-Entwicklerportal](http://go.microsoft.com/fwlink/?LinkId=123844) enthält Links zu Produktinformationen, Codebeispielen, Videos und Communityressourcen zur Verwendung von Visual Studio zum Anpassen von Office-Anwendungen als Teil Ihrer Lösungen .
+- Die [Office-Entwicklung mit Visual Studio-Entwicklerportal](http://go.microsoft.com/fwlink/?LinkId=123844) enthält Links zu Produktinformationen, Codebeispielen, Videos und Communityressourcen zur Verwendung von Visual Studio zum Anpassen von Office-Anwendungen als Teil Ihrer Lösungen .
 
--   Die [Microsoft Office-Entwicklercenter](http://go.microsoft.com/fwlink/?LinkId=83467) enthält Links zu technischen Artikeln, Codebeispiele, Downloads, Informationen zu Communities, Support und Weitere Dokumentationen zu Office-Anpassungen und Office Business Applications (OBAs ).
+- Die [Microsoft Office-Entwicklercenter](http://go.microsoft.com/fwlink/?LinkId=83467) enthält Links zu technischen Artikeln, Codebeispiele, Downloads, Informationen zu Communities, Support und Weitere Dokumentationen zu Office-Anpassungen und Office Business Applications (OBAs ).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Erste Schritte &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
@@ -108,7 +108,7 @@ ms.locfileid: "56644379"
 
 - [Verwaltete Referenz zu &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)
 
- Enthält Links zu Informationen über die API-Namespaces und Typen, die in Office-Projekten mit der Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] verwendet werden. API-Referenzdokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die .NET Framework 3.5 abzielen, finden Sie im folgenden Verweisabschnitt in der Dokumentation zu Visual Studio 2008: [Verwaltete Referenz zu 2007 System](http://go.microsoft.com/fwlink/?LinkId=160658).
+ Enthält Links zu Informationen über die API-Namespaces und Typen, die in Office-Projekten mit der Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]verwendet werden. API-Referenzdokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die .NET Framework 3.5 abzielen, finden Sie im folgenden Verweisabschnitt in der Dokumentation zu Visual Studio 2008: [Verwaltete Referenz zu 2007 System](http://go.microsoft.com/fwlink/?LinkId=160658).
 
 - [API-Referenz zur nicht verwalteten &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
 

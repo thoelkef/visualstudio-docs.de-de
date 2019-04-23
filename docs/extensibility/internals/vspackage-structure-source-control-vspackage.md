@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071277"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage-Struktur (Quellcodeverwaltungs-VSPackage)
 
@@ -28,23 +28,23 @@ Eine VSPackage deklariert seine Menüelemente und richtet einen Standardzustand 
 
 Ein Quellcodeverwaltungs-VSPackage ist umfassend in Visual Studio integriert. Die VSPackage-Semantik gehören:
 
--   Schnittstelle, die aufgrund ihrer Zugehörigkeit zu einem VSPackage implementiert werden (die `IVsPackage` Schnittstelle)
+- Schnittstelle, die aufgrund ihrer Zugehörigkeit zu einem VSPackage implementiert werden (die `IVsPackage` Schnittstelle)
 
--   Benutzeroberfläche-Implementierung (VSCT-Datei und die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)
+- Benutzeroberfläche-Implementierung (VSCT-Datei und die Implementierung der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle)
 
--   Die Registrierung des VSPackage in Visual Studio.
+- Die Registrierung des VSPackage in Visual Studio.
 
 Das Datenquellen-Steuerelement muss VSPackage mit diesen anderen Visual Studio-Entitäten kommunizieren:
 
--   Projekte
+- Projekte
 
--   Editoren
+- Editoren
 
--   Projektmappen
+- Projektmappen
 
--   Windows
+- Windows
 
--   Die aktive Dokumenttabelle
+- Die aktive Dokumenttabelle
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Visual Studio-Umgebung-Dienste, die genutzt werden kann
 

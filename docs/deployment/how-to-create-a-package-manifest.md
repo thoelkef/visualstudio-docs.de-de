@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd678d7db2a3af56a89756f65f8f7b98ef1e37a6
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071247"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Vorgehensweise: Erstellen eines Paketmanifests
 Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können Sie ein Bootstrapperpaket. Ein Bootstrapperpaket enthält eine einzelnes Produkt-Manifestdatei jedoch ein Paketmanifest für jedes Gebietsschema. Gemeinsam genutzte Funktionen in den verschiedenen lokalisierten Versionen sollten das Produktmanifest näher betrachten.
@@ -34,13 +34,13 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
 
 #### <a name="to-create-the-package-manifest"></a>Zum Erstellen des Paketmanifests
 
-1.  Erstellen Sie ein Verzeichnis für die Bootstrapper-Paket. Dieses Beispiel verwendet *C:\package*.
+1. Erstellen Sie ein Verzeichnis für die Bootstrapper-Paket. Dieses Beispiel verwendet *C:\package*.
 
-2.  Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebietsschemas, z. B. *En* für Englisch.
+2. Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebietsschemas, z. B. *En* für Englisch.
 
-3.  In Visual Studio, erstellen Sie eine XML-Datei mit dem Namen *"Package.xml"*, und speichern sie die *C:\package\en* Ordner.
+3. In Visual Studio, erstellen Sie eine XML-Datei mit dem Namen *"Package.xml"*, und speichern sie die *C:\package\en* Ordner.
 
-4.  Fügen Sie XML-Code, zum Auflisten der Name der Bootstrapper-Pakets, die Kultur für dieses lokalisierte Paketmanifest und die optionale Lizenzvertrag. Die folgende XML-Code verwendet die Variablen `DisplayName` und `Culture`, die in einem späteren Element definiert sind.
+4. Fügen Sie XML-Code, zum Auflisten der Name der Bootstrapper-Pakets, die Kultur für dieses lokalisierte Paketmanifest und die optionale Lizenzvertrag. Die folgende XML-Code verwendet die Variablen `DisplayName` und `Culture`, die in einem späteren Element definiert sind.
 
     ```xml
     <Package
@@ -50,7 +50,7 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
         LicenseAgreement="eula.txt">
     ```
 
-5.  Fügen Sie XML-Code, um alle Dateien aufgelistet, die sich im Verzeichnis gebietsschemaspezifische befinden. Die folgende XML-Code verwendet eine Datei mit dem Namen *eula.txt* , die gilt für die **En** Gebietsschema.
+5. Fügen Sie XML-Code, um alle Dateien aufgelistet, die sich im Verzeichnis gebietsschemaspezifische befinden. Die folgende XML-Code verwendet eine Datei mit dem Namen *eula.txt* , die gilt für die **En** Gebietsschema.
 
     ```xml
     <PackageFiles>
@@ -58,7 +58,7 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
     </PackageFiles>
     ```
 
-6.  Fügen Sie XML-Code, um lokalisierbare Zeichenfolgen für die Bootstrapper-Paket zu definieren. Das folgende XML fügt Fehlerzeichenfolgen für die **En** Gebietsschema.
+6. Fügen Sie XML-Code, um lokalisierbare Zeichenfolgen für die Bootstrapper-Paket zu definieren. Das folgende XML fügt Fehlerzeichenfolgen für die **En** Gebietsschema.
 
     ```xml
       <Strings>
@@ -71,7 +71,7 @@ Um die Bereitstellung der erforderlichen Komponenten für Ihre Anwendung können
     </Strings>
     ```
 
-7.  Kopieren der *C:\package* Ordner auf dem Visual Studio-Bootstrapper-Verzeichnis. Für Visual Studio 2010 ist dies die *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* Verzeichnis.
+7. Kopieren der *C:\package* Ordner auf dem Visual Studio-Bootstrapper-Verzeichnis. Für Visual Studio 2010 ist dies die *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* Verzeichnis.
 
 ## <a name="example"></a>Beispiel
  Die Paketmanifest enthält gebietsschemaspezifischen Informationen, z. B. Fehlermeldungen, Software-Lizenzbedingungen, und Language Packs.

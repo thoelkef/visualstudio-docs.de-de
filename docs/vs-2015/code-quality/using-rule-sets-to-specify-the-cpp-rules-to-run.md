@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068638"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsUltShort
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>So ändern Sie einen Regelsatz im Regelsatz-Editor  
   
--   So ändern Sie den Anzeigenamen des Regelsatzes auf die **Ansicht** Menü wählen **Fenster "Eigenschaften"**. Geben Sie den Anzeigenamen in den **Namen** Feld. Der Anzeigename kann sich vom Dateinamen unterscheiden.  
+- So ändern Sie den Anzeigenamen des Regelsatzes auf die **Ansicht** Menü wählen **Fenster "Eigenschaften"**. Geben Sie den Anzeigenamen in den **Namen** Feld. Der Anzeigename kann sich vom Dateinamen unterscheiden.  
   
--   Wenn Sie einem benutzerdefinierten Regelsatz alle Regeln der Gruppe hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Gruppe. Wenn Sie alle Regeln der Gruppe entfernen möchten, deaktivieren Sie das Kontrollkästchen.  
+- Wenn Sie einem benutzerdefinierten Regelsatz alle Regeln der Gruppe hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Gruppe. Wenn Sie alle Regeln der Gruppe entfernen möchten, deaktivieren Sie das Kontrollkästchen.  
   
--   Wenn Sie dem benutzerdefinierten Regelsatz eine bestimmte Regel hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Regel. Wenn Sie die Regel aus dem Regelsatz entfernen möchten, deaktivieren Sie das zugehörige Kontrollkästchen.  
+- Wenn Sie dem benutzerdefinierten Regelsatz eine bestimmte Regel hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Regel. Wenn Sie die Regel aus dem Regelsatz entfernen möchten, deaktivieren Sie das zugehörige Kontrollkästchen.  
   
--   Wählen Sie zum Ändern der Aktion ausgeführt, wenn in einer Codeanalyse gegen eine Regel verstoßen wird die **Aktion** Feld für die Regel, und wählen Sie dann eine der folgenden Werte:  
+- Wählen Sie zum Ändern der Aktion ausgeführt, wenn in einer Codeanalyse gegen eine Regel verstoßen wird die **Aktion** Feld für die Regel, und wählen Sie dann eine der folgenden Werte:  
   
      **Warnhinweis anzeigen,** – wird eine Warnung generiert.  
   
@@ -59,20 +59,20 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] und [!INCLUDE[vsUltShort
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>So gruppieren, filtern oder ändert Sie Felder auf der Symbolleiste des Regelsatz-Editors  
   
--   Um die Regeln in allen Gruppen erweitern möchten, wählen Sie **alle erweitern**.  
+- Um die Regeln in allen Gruppen erweitern möchten, wählen Sie **alle erweitern**.  
   
--   Um die Regeln in allen Gruppen reduzieren möchten, wählen Sie **alle reduzieren**.  
+- Um die Regeln in allen Gruppen reduzieren möchten, wählen Sie **alle reduzieren**.  
   
--   Wählen Sie das Feld aus, um das Feld ändern, die Regeln gruppiert werden, die **Group By** Liste. Um die Regeln ohne Gruppierung anzuzeigen, wählen Sie  **\<None >**.  
+- Wählen Sie das Feld aus, um das Feld ändern, die Regeln gruppiert werden, die **Group By** Liste. Um die Regeln ohne Gruppierung anzuzeigen, wählen Sie  **\<None >**.  
   
--   Wählen Sie zum Hinzufügen oder entfernen in Regelspalten Felder, **Spaltenoptionen**.  
+- Wählen Sie zum Hinzufügen oder entfernen in Regelspalten Felder, **Spaltenoptionen**.  
   
--   Wählen Sie zum Ausblenden von Regeln, die nicht für die aktuelle Projektmappe gelten, **Ausblenden von Regeln, die nicht für die aktuelle Projektmappe gelten**.  
+- Wählen Sie zum Ausblenden von Regeln, die nicht für die aktuelle Projektmappe gelten, **Ausblenden von Regeln, die nicht für die aktuelle Projektmappe gelten**.  
   
--   Wählen Sie zum Wechseln zwischen anzeigen und Ausblenden von Regeln, die die Fehleraktion zugewiesen sind, **Anzeigen von Regeln, die Codeanalysefehler generieren können**.  
+- Wählen Sie zum Wechseln zwischen anzeigen und Ausblenden von Regeln, die die Fehleraktion zugewiesen sind, **Anzeigen von Regeln, die Codeanalysefehler generieren können**.  
   
--   Wählen Sie zum Wechseln zwischen anzeigen und Ausblenden von Regeln, die die Warnaktion zugewiesen sind, **Anzeigen von Regeln, die codeanalysewarnungen generieren können**.  
+- Wählen Sie zum Wechseln zwischen anzeigen und Ausblenden von Regeln, die die Warnaktion zugewiesen sind, **Anzeigen von Regeln, die codeanalysewarnungen generieren können**.  
   
--   Zum Umschalten zwischen einblenden und Ausblenden von Regeln, die zugewiesen werden die **keine** Aktion wählen **Regeln, die nicht aktiviert werden anzeigen**.  
+- Zum Umschalten zwischen einblenden und Ausblenden von Regeln, die zugewiesen werden die **keine** Aktion wählen **Regeln, die nicht aktiviert werden anzeigen**.  
   
--   Wählen Sie zum Hinzufügen oder entfernen Microsoft-auf dem aktuellen Regelsatz Standardregelsätze, **hinzufügen oder Entfernen von untergeordnete Regelsätze**.
+- Wählen Sie zum Hinzufügen oder entfernen Microsoft-auf dem aktuellen Regelsatz Standardregelsätze, **hinzufügen oder Entfernen von untergeordnete Regelsätze**.

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d8ecbeca226d558774c12f4bec45ac26f66a808
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069106"
 ---
 # <a name="thread-details-view---contention-data"></a>Ansicht „Threaddetails“ – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Die Ansicht "Threaddetails" enthält ein Zeitachsendiagramm der blockierenden Er
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>So vergrößern Sie die Ansicht eines Zeitachsensegments  
   
--   Wählen Sie mit gedrückter Maustaste einen Bereich auf der Zeitachse aus.  
+- Wählen Sie mit gedrückter Maustaste einen Bereich auf der Zeitachse aus.  
   
      Wenn Sie die Maustaste loslassen, wird die Ansicht des ausgewählten Zeitsegments vergrößert. Sie können den Vorgang wiederholen, um größeres Detail zu vergrößern. Das Bildlauffeld auf der Zeitbildlaufleiste stellt die relative Größe des Zeitsegments dar, das in der Ansicht angezeigt wird.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>So verkleinern Sie die Ansicht einer Zeitachse  
   
--   Klicken Sie auf **Verkleinern**, um zur vorherigen Zoomstufe zurückzukehren.  
+- Klicken Sie auf **Verkleinern**, um zur vorherigen Zoomstufe zurückzukehren.  
   
--   Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.  
+- Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>So zeigen Sie die Aufrufliste eines Ereignisses an  
   
--   Klicken Sie im Zeitachsendiagramm auf den senkrechten Balken, der das Ereignis darstellt.  
+- Klicken Sie im Zeitachsendiagramm auf den senkrechten Balken, der das Ereignis darstellt.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an oder bearbeiten diesen  
   
@@ -53,12 +53,12 @@ Die Ansicht "Threaddetails" enthält ein Zeitachsendiagramm der blockierenden Er
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>So zeigen Sie die Konfliktereignisse einer Ressource in allen Threads bei der Profilerstellung an  
   
--   Klicken Sie im Zeitachsendiagramm auf den Namen oder die ID der Ressource.  
+- Klicken Sie im Zeitachsendiagramm auf den Namen oder die ID der Ressource.  
   
      Die Ansicht [Ressourcendetails](../profiling/resource-details-view-contention-data.md) wird für die ausgewählte Resource angezeigt.  
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>So zeigen Sie die Threadkonfliktdaten im Fenster "Prozesse" an  
   
--   Klicken Sie im Zeitachsendiagramm auf **Gesamt**.  
+- Klicken Sie im Zeitachsendiagramm auf **Gesamt**.  
   
      Die [Prozessansicht](../profiling/process-view-contention-data.md) wird mit ausgewähltem Thread angezeigt.

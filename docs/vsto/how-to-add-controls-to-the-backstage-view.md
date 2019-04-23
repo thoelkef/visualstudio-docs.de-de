@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068365"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Vorgehensweise: Hinzufügen von Steuerelementen zur Backstage-Ansicht
   Können Sie zum Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf dem Menüband-Designer die **Datei** Registerkarte. Beim Ausführen der Anwendung Steuerelemente, die Sie zum Hinzufügen der **Datei** Registerkarte angezeigt werden, eine Gruppe namens **-Add-ins**.
@@ -36,31 +36,31 @@ ms.locfileid: "56621343"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Zum Hinzufügen von Steuerelementen zur Backstage-Ansicht
 
-1.  Öffnen Sie das Element "Menüband" in der Entwurfsansicht.
+1. Öffnen Sie das Element "Menüband" in der Entwurfsansicht.
 
      Informationen zur Vorgehensweise beim Hinzufügen einer **Menüband (visueller Designer)** dem Projekt, finden Sie unter [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  Klicken Sie im Menüband-Designer auf die **Datei** Registerkarte.
+2. Klicken Sie im Menüband-Designer auf die **Datei** Registerkarte.
 
      Ein Menü-Designer wird angezeigt. Diese Entwurfsoberfläche ist keine Steuerelemente enthalten.
 
-3.  Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eines der folgenden Steuerelemente auf dem Menü-Designer:
+3. Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie eines der folgenden Steuerelemente auf dem Menü-Designer:
 
-    -   Schaltfläche
+    - Schaltfläche
 
-    -   CheckBox
+    - CheckBox
 
-    -   Katalog
+    - Katalog
 
-    -   Menü
+    - Menü
 
-    -   Trennzeichen
+    - Trennzeichen
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  Ziehen Sie Steuerelemente, um sie im Menü an neue Positionen zu verschieben.
+4. Ziehen Sie Steuerelemente, um sie im Menü an neue Positionen zu verschieben.
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über das Menüband](../vsto/ribbon-overview.md)

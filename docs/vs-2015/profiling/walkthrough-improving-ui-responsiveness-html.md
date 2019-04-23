@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071641"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Erstellen und Ausführen der Leistungstest-App  
   
-1.  Erstellen Sie in Visual Studio ein neues JavaScript-Projekt für Windows (universell). Wählen Sie **Datei > Neu > Projekt** aus. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 10** und dann entweder **Universell** oder **Windows Phone** aus.  
+1. Erstellen Sie in Visual Studio ein neues JavaScript-Projekt für Windows (universell). Wählen Sie **Datei > Neu > Projekt** aus. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 10** und dann entweder **Universell** oder **Windows Phone** aus.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Die in diesem Thema gezeigten Ergebnisse der Diagnose werden für Windows 8-Apps angezeigt.  
   
-3.  Wählen Sie im mittleren Bereich eine leere Projektvorlage aus, zum Beispiel **Leere App**.  
+3. Wählen Sie im mittleren Bereich eine leere Projektvorlage aus, zum Beispiel **Leere App**.  
   
-4.  Geben Sie im Feld **Name** einen Namen wie `JS_Perf_Tester` an, und wählen Sie dann **OK** aus.  
+4. Geben Sie im Feld **Name** einen Namen wie `JS_Perf_Tester` an, und wählen Sie dann **OK** aus.  
   
-5.  Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
+5. Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
     </div>  
     ```  
   
-6.  Öffnen Sie default.css, und fügen Sie den folgenden CSS-Code hinzu:  
+6. Öffnen Sie default.css, und fügen Sie den folgenden CSS-Code hinzu:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
     }  
     ```  
   
-7.  Öffnen Sie default.js, und ersetzen Sie den gesamten Code mit dem folgenden Code:  
+7. Öffnen Sie default.js, und ersetzen Sie den gesamten Code mit dem folgenden Code:  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
     ```  
   
-8.  Drücken Sie die F5-TASTE, um das Debuggen zu starten. Überprüfen Sie, ob die Schaltfläche **Waiting for values** (Warten auf Werte) auf der Seite angezeigt wird.  
+8. Drücken Sie die F5-TASTE, um das Debuggen zu starten. Überprüfen Sie, ob die Schaltfläche **Waiting for values** (Warten auf Werte) auf der Seite angezeigt wird.  
   
 9. Wählen Sie **Waiting for values** (Warten auf Werte) aus, und überprüfen Sie, ob Text und Farbe der Schaltfläche ungefähr einmal pro Sekunde aktualisiert werden. Dieser Fehler ist entwurfsbedingt.  
   
@@ -202,11 +202,11 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
      ![Timerereignis](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     Eine Vielzahl von Fakten kann aus den Daten abgeleitet werden. Beispiel:  
+     Eine Vielzahl von Fakten kann aus den Daten abgeleitet werden. Zum Beispiel:  
   
-    -   Jedes `Timer`-Ereignis ist farbcodiert, um es als scripting-Ereignis zu identifizieren. Es enthält einen `document.createElement`-Aufruf, gefolgt von einer Formatberechnung und einem Aufruf von `style.backgroundColor` und `appendChild()`.  
+    - Jedes `Timer`-Ereignis ist farbcodiert, um es als scripting-Ereignis zu identifizieren. Es enthält einen `document.createElement`-Aufruf, gefolgt von einer Formatberechnung und einem Aufruf von `style.backgroundColor` und `appendChild()`.  
   
-    -   In dem kurzen ausgewählten Zeitraum (ungefähr ein bis zwei Sekunden), gibt es viele `Timer`-, `Layout`- und `Paint`-Ereignisse, die stattfinden. Die `Timer`-Ereignisse treten viel häufiger auf als das eine Update pro Sekunde, das sichtbar ist, nachdem Sie die App ausgeführt und auf die Schaltfläche **Waiting for values** (Warten auf Werte) geklickt haben.  
+    - In dem kurzen ausgewählten Zeitraum (ungefähr ein bis zwei Sekunden), gibt es viele `Timer`-, `Layout`- und `Paint`-Ereignisse, die stattfinden. Die `Timer`-Ereignisse treten viel häufiger auf als das eine Update pro Sekunde, das sichtbar ist, nachdem Sie die App ausgeführt und auf die Schaltfläche **Waiting for values** (Warten auf Werte) geklickt haben.  
   
 10. Um dies zu untersuchen, wählen Sie den Link zu der anonymen Funktion für eines der `Timer`-Ereignisse im unteren linken Bereich. Die folgende Funktion wird in default.js geöffnet:  
   
@@ -225,7 +225,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
 ### <a name="fixing-the-performance-issue"></a>Korrigieren des Leistungsproblems  
   
-1.  Ersetzen Sie die `update()`-Funktion durch den folgenden Code:  
+1. Ersetzen Sie die `update()`-Funktion durch den folgenden Code:  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
   
      Diese feste Version des Codes enthält eine 1000-Millisekunden-Verzögerung, die aus der früheren Version des Codes weggelassen wurde, was zur Verwendung eines Standardverzögerungswerts führte. Auf Basis der Profilerdaten ist anzunehmen, dass der Standardwert 0 Millisekunden beträgt, wodurch die `setValues()`-Funktion zu häufig ausgeführt wird.  
   
-2.  Führen Sie den Profiler für die HTML-UI-Reaktionsfähigkeit erneut aus, und überprüfen Sie das CPU-Auslastungsdiagramm. Sie werden feststellen, dass die überzähligen Ereignisse verschwunden sind und die CPU-Auslastung beinahe auf null gesunken ist. Problem behoben!  
+2. Führen Sie den Profiler für die HTML-UI-Reaktionsfähigkeit erneut aus, und überprüfen Sie das CPU-Auslastungsdiagramm. Sie werden feststellen, dass die überzähligen Ereignisse verschwunden sind und die CPU-Auslastung beinahe auf null gesunken ist. Problem behoben!  
   
 ## <a name="see-also"></a>Siehe auch  
  [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)

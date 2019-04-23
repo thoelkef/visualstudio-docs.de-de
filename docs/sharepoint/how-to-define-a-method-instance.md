@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068495"
 ---
 # <a name="how-to-define-a-method-instance"></a>Vorgehensweise: Definieren einer Methodeninstanz
   Sie müssen mindestens eine Methodeninstanz für jede Methode in Ihrem Modell definieren.
@@ -29,15 +29,15 @@ ms.locfileid: "56608008"
 
 ### <a name="to-define-a-method-instance"></a>Zum Definieren einer Methodeninstanz
 
-1.  In der **BDC-Methodendetails** , erweitern Sie den Knoten einer Methode, und erweitern Sie dann die **Instanzen** Knoten.
+1. In der **BDC-Methodendetails** , erweitern Sie den Knoten einer Methode, und erweitern Sie dann die **Instanzen** Knoten.
 
-2.  In der **Methodeninstanz hinzufügen** wählen **Finder-Instanz erstellen**.
+2. In der **Methodeninstanz hinzufügen** wählen **Finder-Instanz erstellen**.
 
      Eine neue Methodeninstanz angezeigt wird, unter dem **Instanzen** Knoten.
 
-3.  Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+3. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
 
-4.  In der **Eigenschaften** legen die Eigenschaften der Instanz. Weitere Informationen zu den einzelnen Eigenschaften finden Sie unter [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. In der **Eigenschaften** legen die Eigenschaften der Instanz. Weitere Informationen zu den einzelnen Eigenschaften finden Sie unter [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069596"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Vorgehensweise: Debuggen von ASP.NET-basierten Workflows (Vorgängerversion)
 In diesem Thema wird das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-basierten [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen in der Vorgängerversion von [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] beschrieben, die auf [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] oder [!INCLUDE[wfd1](../includes/wfd1-md.md)] abzielen.  
@@ -28,25 +28,25 @@ In diesem Thema wird das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-m
   
 ### <a name="to-debug-an-aspnet-based-workflow"></a>So debuggen Sie einen ASP.NET-basierten Workflow  
   
-1.  Aktivieren Sie das Debuggen für die ASP.NET-Anwendung durch Festlegen von **debug = "true"** in der Datei "Web.config".  
+1. Aktivieren Sie das Debuggen für die ASP.NET-Anwendung durch Festlegen von **debug = "true"** in der Datei "Web.config".  
   
-2.  Legen Sie die Workflowbibliothek als Startprojekt fest, und legen Sie dann Haltepunkte auf dem Workflow fest.  
+2. Legen Sie die Workflowbibliothek als Startprojekt fest, und legen Sie dann Haltepunkte auf dem Workflow fest.  
   
-3.  Geben Sie die URL der Standardwebseite in den workflowprojekteigenschaften **Debuggen** Option **Start Browser mit externer URL** Textfeld.  
+3. Geben Sie die URL der Standardwebseite in den workflowprojekteigenschaften **Debuggen** Option **Start Browser mit externer URL** Textfeld.  
   
-4.  Wählen Sie **an den Prozess anhängen** auf die **Debuggen** Menü.  
+4. Wählen Sie **an den Prozess anhängen** auf die **Debuggen** Menü.  
   
-5.  Wählen Sie den Prozess aus eine Verbindung mit der **verfügbare Prozesse** Liste.  
+5. Wählen Sie den Prozess aus eine Verbindung mit der **verfügbare Prozesse** Liste.  
   
      Hängen Sie an den w3wp.exe-, den webdev.webserver- oder den aspnet_wp-Prozess an, an dem der Workflow gehostet ist.  
   
-6.  Klicken Sie auf **wählen** neben der **Anhängen an** Textfeld.  
+6. Klicken Sie auf **wählen** neben der **Anhängen an** Textfeld.  
   
      Die **Codetyp auswählen** Dialogfeld wird angezeigt.  
   
-7.  Wählen Sie **diese Codetypen debuggen** , und wählen Sie **Workflow**.  
+7. Wählen Sie **diese Codetypen debuggen** , und wählen Sie **Workflow**.  
   
-8.  Klicken Sie auf **OK**.  
+8. Klicken Sie auf **OK**.  
   
 9. Klicken Sie auf **Anfügen**aus.  
   

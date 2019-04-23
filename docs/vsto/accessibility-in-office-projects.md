@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070042"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
 
@@ -40,21 +40,21 @@ In den meisten Fällen erfüllen die Office-Projekten in Visual Studio Accessibi
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Um Tastenkombinationen für die Multifunktionsleiste Registerkarten und Steuerelemente im Designer anzuzeigen.
 
-1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Optionen**.
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Optionen**.
 
-2.  Erweitern Sie die **Büroanwendungen** Knoten, und wählen **Microsoft Office Excel-Tastatur** oder **Microsoft Office Word-Tastatur**je nach Bedarf.
+2. Erweitern Sie die **Büroanwendungen** Knoten, und wählen **Microsoft Office Excel-Tastatur** oder **Microsoft Office Word-Tastatur**je nach Bedarf.
 
-3.  Wählen Sie **Dynamisches Tastaturschema**.
+3. Wählen Sie **Dynamisches Tastaturschema**.
 
      Es wird eine Meldung angezeigt, die besagt, dass Sie Visual Studio für die Änderung wirksam wird neu gestartet werden müssen.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
-5.  Starten Sie Visual Studio neu, und öffnen Sie Ihr Projekt.
+5. Starten Sie Visual Studio neu, und öffnen Sie Ihr Projekt.
 
-6.  Öffnen Sie den Dokument oder die Arbeitsmappe Designer für das Projekt.
+6. Öffnen Sie den Dokument oder die Arbeitsmappe Designer für das Projekt.
 
-7.  Drücken Sie **F6** die Tastenkombinationen für das Menüband angezeigt werden soll.
+7. Drücken Sie **F6** die Tastenkombinationen für das Menüband angezeigt werden soll.
 
 ## <a name="accessibility-at-runtime"></a>Zugriff zur Laufzeit
 

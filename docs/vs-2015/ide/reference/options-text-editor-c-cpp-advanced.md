@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072635"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
   
  Wird durch eine Summe aus den folgenden Optionen festgelegt:  
   
--   0 – Keine  
+- 0 – Keine  
   
--   1 – Allgemein  
+- 1 – Allgemein  
   
--   2 – Leerlauf  
+- 2 – Leerlauf  
   
--   4 – WorkItem  
+- 4 – WorkItem  
   
--   8 – IntelliSense  
+- 8 – IntelliSense  
   
--   16 – ACPerf  
+- 16 – ACPerf  
   
--   32 – ClassView  
+- 32 – ClassView  
   
 ## <a name="fallback-location"></a>Ausweichpfad  
  Der Ausweichpfad gibt an, wo die SDF- und IntelliSense-Unterstützungsdateien (beispielsweise iPCH) abgelegt werden, wenn der primäre Speicherort (dasselbe Verzeichnis wie die Projektmappe) nicht verwendet wird. Diese Situation kann auftreten, wenn der Benutzer keine Schreibberechtigungen für das Projektmappenverzeichnis hat, oder wenn sich das Projektmappenverzeichnis auf einem langsamen Gerät befindet. Der Standardausweichpfad befindet sich im temporären Verzeichnis des Benutzers.  
