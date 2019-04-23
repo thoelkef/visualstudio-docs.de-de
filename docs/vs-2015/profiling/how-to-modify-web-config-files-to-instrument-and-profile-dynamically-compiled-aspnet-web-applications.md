@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099586"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>So fügen Sie die ASPNetHelper-Assembly als Element „configuration/runtime/assemblyBinding/dependentAssembly“ ein  
   
-1.  Fügen Sie, wenn notwendig, das Element **Runtime** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
+1. Fügen Sie, wenn notwendig, das Element **Runtime** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
      Das Element **Runtime** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **Runtime** haben.  
   
-2.  Fügen Sie, wenn notwendig, das Element **assemblyBinding** als untergeordnetes Element des Elements **Runtime** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
+2. Fügen Sie, wenn notwendig, das Element **assemblyBinding** als untergeordnetes Element des Elements **Runtime** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
      Das Element **Runtime** kann nur ein Element **assemblyBinding** haben.  
   
-3.  Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyBinding** hinzu:  
+3. Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyBinding** hinzu:  
   
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Fügen Sie ein Element **dependentAssembly** als untergeordnetes Element des Elements **assemblyBinding** ein.  
+4. Fügen Sie ein Element **dependentAssembly** als untergeordnetes Element des Elements **assemblyBinding** ein.  
   
      Das Element **dependentAssembly** weist keine Attribute auf.  
   
-5.  Fügen Sie ein Element **assemblyIdentity** als untergeordnetes Element des Elements **dependentAssembly** ein.  
+5. Fügen Sie ein Element **assemblyIdentity** als untergeordnetes Element des Elements **dependentAssembly** ein.  
   
-6.  Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyIdentity** hinzu:  
+6. Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyIdentity** hinzu:  
   
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Fügen Sie ein Element **codeBase** als untergeordnetes Element des Elements **dependentAssembly** ein.  
+7. Fügen Sie ein Element **codeBase** als untergeordnetes Element des Elements **dependentAssembly** ein.  
   
-8.  Fügen Sie den folgenden Attributnamen und -wert zum Element **codeBase** hinzu:  
+8. Fügen Sie den folgenden Attributnamen und -wert zum Element **codeBase** hinzu:  
   
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>So fügen Sie den Profilernachbearbeitungsschritt zum Element „configuration/system.web/compilation“ hinzu  
   
-1.  Fügen Sie, wenn notwendig, das Element **system.web** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
+1. Fügen Sie, wenn notwendig, das Element **system.web** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
      Das Element **system.web** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **system.web** haben.  
   
-2.  Fügen Sie, wenn notwendig, das Element **compilation** als untergeordnetes Element des Elements **system.web** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
+2. Fügen Sie, wenn notwendig, das Element **compilation** als untergeordnetes Element des Elements **system.web** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
      Das Element **system.web** kann nur ein untergeordnetes Element **compilation** haben.  
   
-3.  Entfernen Sie alle vorhandenen Attribute aus dem Element **compilation**, und fügen Sie den folgenden Attributnamen und -wert hinzu:  
+3. Entfernen Sie alle vorhandenen Attribute aus dem Element **compilation**, und fügen Sie den folgenden Attributnamen und -wert hinzu:  
   
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>So fügen Sie Profiler-Speicherorteinstellungen zum Element „configuration/appSettings“ hinzu  
   
-1.  Fügen Sie, wenn notwendig, das Element **appSettings** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
+1. Fügen Sie, wenn notwendig, das Element **appSettings** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
      Das Element **appSettings** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **appSettings** haben.  
   
-2.  Fügen Sie ein Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
+2. Fügen Sie ein Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
   
-3.  Fügen Sie den folgenden Attributnamen und -wert zum Element **add** hinzu:  
+3. Fügen Sie den folgenden Attributnamen und -wert zum Element **add** hinzu:  
   
     |Attributname|Attributwert|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Fügen Sie ein weiteres Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
+4. Fügen Sie ein weiteres Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
   
-5.  Fügen Sie den folgenden Attributnamen und -wert zu diesem Element **add** hinzu:  
+5. Fügen Sie den folgenden Attributnamen und -wert zu diesem Element **add** hinzu:  
   
     |Attributname|Attributwert|  
     |--------------------|---------------------|  

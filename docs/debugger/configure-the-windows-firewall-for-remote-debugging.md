@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100357"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Windows-Firewall für Remotedebuggen konfigurieren
 
@@ -102,13 +102,13 @@ Auf einem Remotecomputer befindet sind der remote-debugging-Tools in:
 
 1. Wählen Sie **eine app durch die Windows-Firewall zulassen**.
 
-1.  Wenn **Remotedebugger** oder **Visual Studio Remote Debugger** nicht angezeigt, unter **zugelassene apps und Features**Option **Ändern der Einstellungen**, und wählen Sie dann **andere app zulassen**.
+1. Wenn **Remotedebugger** oder **Visual Studio Remote Debugger** nicht angezeigt, unter **zugelassene apps und Features**Option **Ändern der Einstellungen**, und wählen Sie dann **andere app zulassen**.
 
-1.  Wenn die Remotedebugger app immer noch in aufgeführt ist die **fügen Sie eine app** wählen Sie im Dialogfeld **Durchsuchen**, und navigieren Sie zu  *\<Visual Studio-Installationsverzeichnis\> \\Common7\\IDE\\Remotedebugger\\\<X86*, *X64*, oder *Appx* \> , abhängig von der geeigneten Architektur für Ihre app. Wählen Sie *msvsmon.exe*, und wählen Sie dann **hinzufügen**.
+1. Wenn die Remotedebugger app immer noch in aufgeführt ist die **fügen Sie eine app** wählen Sie im Dialogfeld **Durchsuchen**, und navigieren Sie zu  *\<Visual Studio-Installationsverzeichnis\> \\Common7\\IDE\\Remotedebugger\\\<X86*, *X64*, oder *Appx* \> , abhängig von der geeigneten Architektur für Ihre app. Wählen Sie *msvsmon.exe*, und wählen Sie dann **hinzufügen**.
 
-1.  In der **Apps** Liste der **Remotedebugger** , die Sie gerade hinzugefügt haben. Wählen Sie **Netzwerktypen**, und wählen Sie dann eine oder mehrere Netzwerktypen, einschließlich des Netzwerktyps für die Remoteverbindung.
+1. In der **Apps** Liste der **Remotedebugger** , die Sie gerade hinzugefügt haben. Wählen Sie **Netzwerktypen**, und wählen Sie dann eine oder mehrere Netzwerktypen, einschließlich des Netzwerktyps für die Remoteverbindung.
 
-1.  Wählen Sie **hinzufügen**, und wählen Sie dann **OK**.
+1. Wählen Sie **hinzufügen**, und wählen Sie dann **OK**.
 
 ## <a name="troubleshooting"></a>Problembehandlung bei der remotedebugverbindung
 

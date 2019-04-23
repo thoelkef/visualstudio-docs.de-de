@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097413"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
 #### <a name="to-change-the-content-installation-source"></a>So ändern Sie die Inhaltsinstallationsquelle  
   
-1.  Wählen Sie auf der Registerkarte **Inhalt verwalten** das Optionsfeld **Datenträger** aus.  
+1. Wählen Sie auf der Registerkarte **Inhalt verwalten** das Optionsfeld **Datenträger** aus.  
   
     > [!NOTE]
     >  Die Option **Datenträger** ist nicht verfügbar, wenn der Administrator keine Berechtigungen zum Ändern der Inhaltsinstallationsquelle erteilt hat. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
   
-2.  Führen Sie einen der folgenden Schritte aus:  
+2. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Geben Sie den Pfad einer MSHA-Datei oder die URL eines Dienstendpunkts ein.  
+    - Geben Sie den Pfad einer MSHA-Datei oder die URL eines Dienstendpunkts ein.  
   
-    -   Klicken Sie auf die Schaltfläche „Durchsuchen“ (**…**), um zu einer MSHA-Datei zu navigieren.  
+    - Klicken Sie auf die Schaltfläche „Durchsuchen“ (**…**), um zu einer MSHA-Datei zu navigieren.  
   
-    -   Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.  
+    - Wählen Sie in der Liste den zuletzt verwendeten Eintrag aus.  
   
 ## <a name="download-and-install-content-locally"></a>Herunterladen und lokales Installieren von Inhalten  
  Sie können Themen ohne eine Internetverbindung anzeigen, wenn Sie die Inhalte auf dem lokalen Computer herunterladen und installieren.  
@@ -66,13 +66,13 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
 #### <a name="to-download-and-install-content"></a>So laden Sie den Inhalt herunter und installieren diesen  
   
-1.  Wählen Sie die Registerkarte **Inhalt verwalten** aus.  
+1. Wählen Sie die Registerkarte **Inhalt verwalten** aus.  
   
-2.  Wählen Sie in der Inhaltsliste den Link **Hinzufügen** aus, der sich neben dem bzw. neben den hinzufügenden Buch bzw. Büchern befindet, die Sie herunterladen und installieren möchten.  
+2. Wählen Sie in der Inhaltsliste den Link **Hinzufügen** aus, der sich neben dem bzw. neben den hinzufügenden Buch bzw. Büchern befindet, die Sie herunterladen und installieren möchten.  
   
      Das Buch wird der Liste **Ausstehende Änderungen** hinzugefügt, und die geschätzte Größe des Buchs oder der Bücher, die Sie angegeben haben, wird unterhalb dieser Liste angezeigt. Da einige Bücher die gleichen Themen enthalten, kann die gesamte Downloadgröße mehrerer Bücher kleiner sein als das Ergebnis der summierten Größe für alle Bücher, die Sie angeben.  
   
-3.  Wählen Sie die Schaltfläche **Aktualisieren**.  
+3. Wählen Sie die Schaltfläche **Aktualisieren**.  
   
      Das Buch oder die Bücher, die Sie angegeben haben, werden mit allen Updates für Bücher installiert, die bereits auf dem Computer vorhanden sind. Installationszeiten schwanken, Sie können jedoch den Status auf der Statusleiste anzeigen.  
   
@@ -86,13 +86,13 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
 #### <a name="to-remove-content"></a>So entfernen Sie Inhalte  
   
-1.  Wählen Sie die Registerkarte **Inhalt verwalten** aus.  
+1. Wählen Sie die Registerkarte **Inhalt verwalten** aus.  
   
-2.  Wählen Sie in der Inhaltsliste den Link **Entfernen** aus, der sich neben dem bzw. neben den zu entfernenden Buch bzw. Büchern befindet.  
+2. Wählen Sie in der Inhaltsliste den Link **Entfernen** aus, der sich neben dem bzw. neben den zu entfernenden Buch bzw. Büchern befindet.  
   
      Das Buch wird der Liste **Ausstehende Änderungen** hinzugefügt.  
   
-3.  Wählen Sie die Schaltfläche **Aktualisieren**.  
+3. Wählen Sie die Schaltfläche **Aktualisieren**.  
   
      Das Buch oder die Bücher, die Sie angegeben haben, werden vom Computer entfernt.  
   
@@ -116,13 +116,13 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
   
 #### <a name="to-move-local-content"></a>So verschieben Sie lokalen Inhalt  
   
-1.  Wählen Sie auf der Registerkarte **Inhalt verwalten** unter **Lokaler Speicherpfad** die Schaltfläche **Verschieben** aus.  
+1. Wählen Sie auf der Registerkarte **Inhalt verwalten** unter **Lokaler Speicherpfad** die Schaltfläche **Verschieben** aus.  
   
      Das Dialogfeld **Inhalt verschieben** wird geöffnet.  
   
-2.  Geben Sie im Textfeld **Nach** einen anderen Speicherort für den Inhalt ein, und wählen Sie dann die Schaltfläche **OK** aus.  
+2. Geben Sie im Textfeld **Nach** einen anderen Speicherort für den Inhalt ein, und wählen Sie dann die Schaltfläche **OK** aus.  
   
-3.  Klicken Sie auf die Schaltfläche **Schließen**, wenn die Inhalte verschoben wurden.  
+3. Klicken Sie auf die Schaltfläche **Schließen**, wenn die Inhalte verschoben wurden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

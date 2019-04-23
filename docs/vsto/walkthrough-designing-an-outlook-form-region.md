@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097426"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Weitere Informationen zu Formularbereichen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).
@@ -26,15 +26,15 @@ ms.locfileid: "58355577"
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
--   Erstellen eines neuen Outlook VSTO-Add-In-Projekts.
+- Erstellen eines neuen Outlook VSTO-Add-In-Projekts.
 
--   Hinzufügen eines Formularbereichs zum VSTO-Add-In-Projekt.
+- Hinzufügen eines Formularbereichs zum VSTO-Add-In-Projekt.
 
--   Entwerfen des Layouts des Formularbereichs.
+- Entwerfen des Layouts des Formularbereichs.
 
--   Anpassen des Verhaltens des Formularbereichs.
+- Anpassen des Verhaltens des Formularbereichs.
 
--   Testen des Outlook-Formularbereichs.
+- Testen des Outlook-Formularbereichs.
 
 > [!NOTE]
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -53,11 +53,11 @@ ms.locfileid: "58355577"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>So erstellen Sie ein neues Outlook VSTO-Add-In-Projekt
 
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], erstellen Sie ein Outlook VSTO-Add-in-Projekt mit dem Namen **MapItAddIn**.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], erstellen Sie ein Outlook VSTO-Add-in-Projekt mit dem Namen **MapItAddIn**.
 
-2.  Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
 
-3.  Speichern Sie das Projekt in einem beliebigen Verzeichnis.
+3. Speichern Sie das Projekt in einem beliebigen Verzeichnis.
 
      Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -66,27 +66,27 @@ ms.locfileid: "58355577"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>So fügen Sie dem VSTO-Add-In-Projekt einen Formularbereich hinzu
 
-1.  In **Projektmappen-Explorer**, wählen die **MapItAddIn** Projekt.
+1. In **Projektmappen-Explorer**, wählen die **MapItAddIn** Projekt.
 
-2.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
+2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Outlook-Formularbereich**, nennen Sie die Datei **"MapIt"**, und klicken Sie dann auf **hinzufügen**.
+3. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Outlook-Formularbereich**, nennen Sie die Datei **"MapIt"**, und klicken Sie dann auf **hinzufügen**.
 
      Die **NewOutlook Formularbereich** -Assistent wird gestartet.
 
-4.  Auf der **wählen, wie der Formularbereich erstellt werden sollen** auf **einen neuen Formularbereich entwerfen**, und klicken Sie dann auf **Weiter**.
+4. Auf der **wählen, wie der Formularbereich erstellt werden sollen** auf **einen neuen Formularbereich entwerfen**, und klicken Sie dann auf **Weiter**.
 
-5.  Auf der **wählen Sie den Typ des zu erstellenden Formularbereichs** auf **Separate**, und klicken Sie dann auf **Weiter**.
+5. Auf der **wählen Sie den Typ des zu erstellenden Formularbereichs** auf **Separate**, und klicken Sie dann auf **Weiter**.
 
      Ein *separate* Formularbereich Fügt eine neue Seite zu einem Outlook-Formular. Weitere Informationen zu Formularbereichstypen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).
 
-6.  Auf der **Geben Sie einen beschreibenden Text, und wählen Sie die Anzeigeeinstellungen** geben **Map It** in die **Namen** Feld.
+6. Auf der **Geben Sie einen beschreibenden Text, und wählen Sie die Anzeigeeinstellungen** geben **Map It** in die **Namen** Feld.
 
      Dieser Name wird auf dem Menüband im Inspektor-Fenster angezeigt, wenn das Kontaktelement geöffnet ist.
 
-7.  Wählen Sie **Inspektoren im Verfassenmodus** und **Inspektoren im Lesemodus**, und klicken Sie dann auf **Weiter**.
+7. Wählen Sie **Inspektoren im Verfassenmodus** und **Inspektoren im Lesemodus**, und klicken Sie dann auf **Weiter**.
 
-8.  Auf der **Geben Sie die Meldungsklassen an, in denen dieser Formularbereich angezeigt werden** deaktivieren **e-Mail-Nachricht**Option **wenden Sie sich an**, und klicken Sie dann auf **abgeschlossen**.
+8. Auf der **Geben Sie die Meldungsklassen an, in denen dieser Formularbereich angezeigt werden** deaktivieren **e-Mail-Nachricht**Option **wenden Sie sich an**, und klicken Sie dann auf **abgeschlossen**.
 
      Ein *"MapIt.cs"* oder *"MapIt.vb"* Datei wird dem Projekt hinzugefügt.
 
@@ -95,17 +95,17 @@ ms.locfileid: "58355577"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>So entwerfen Sie das Layout des Formularbereichs
 
-1.  In **Projektmappen-Explorer**, erweitern Sie die **MapItAddIn** Projekt, und doppelklicken Sie dann auf *"MapIt.cs"* oder *"MapIt.vb"* um den Formularbereich zu öffnen. Designer.
+1. In **Projektmappen-Explorer**, erweitern Sie die **MapItAddIn** Projekt, und doppelklicken Sie dann auf *"MapIt.cs"* oder *"MapIt.vb"* um den Formularbereich zu öffnen. Designer.
 
-2.  Mit der rechten Maustaste in des Designers, und klicken Sie dann auf **Eigenschaften**.
+2. Mit der rechten Maustaste in des Designers, und klicken Sie dann auf **Eigenschaften**.
 
-3.  In der **Eigenschaften** legen **Größe** zu **664, 469**.
+3. In der **Eigenschaften** legen **Größe** zu **664, 469**.
 
      Auf diese Weise wird sichergestellt, dass der Formularbereich groß genug ist, um eine Zuordnung anzuzeigen.
 
-4.  Klicken Sie im Menü **Ansicht** auf **Toolbox**.
+4. Klicken Sie im Menü **Ansicht** auf **Toolbox**.
 
-5.  Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer **WebBrowser** in den Formularbereich.
+5. Aus der **Standardsteuerelementen** Registerkarte die **Toolbox**, Hinzufügen einer **WebBrowser** in den Formularbereich.
 
      Die **WebBrowser** zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist.
 
@@ -143,13 +143,13 @@ ms.locfileid: "58355577"
 
 ### <a name="to-test-the-map-it-form-region"></a>So testen Sie den Map It-Formularbereich
 
-1.  Drücken Sie **F5**, um das Projekt auszuführen.
+1. Drücken Sie **F5**, um das Projekt auszuführen.
 
      Outlook wird geöffnet.
 
-2.  In Outlook auf der **Startseite** auf **neue Elemente**, und klicken Sie dann auf **wenden Sie sich an**.
+2. In Outlook auf der **Startseite** auf **neue Elemente**, und klicken Sie dann auf **wenden Sie sich an**.
 
-3.  Geben Sie im Kontaktformular **Ann Beebe** als Kontakt benennen, und geben Sie dann die folgenden drei Adressen.
+3. Geben Sie im Kontaktformular **Ann Beebe** als Kontakt benennen, und geben Sie dann die folgenden drei Adressen.
 
     |Adresstyp|Adresse|
     |------------------|-------------|
@@ -157,20 +157,20 @@ ms.locfileid: "58355577"
     |**Home**|**1234 North St. Buffalo, NY**|
     |**Andere**|**3456 Main St. Seattle, WA, USA**|
 
-4.  Speichern und schließen Sie das Kontaktelement.
+4. Speichern und schließen Sie das Kontaktelement.
 
-5.  Öffnen Sie erneut die **Ann Beebe** Kontaktelement.
+5. Öffnen Sie erneut die **Ann Beebe** Kontaktelement.
 
     In Outlook können hierzu die **finden** Gruppe, indem Sie entweder das Adressbuch für Kontakte öffnen oder Eingabe Ann Beebe in **Suchen nach Personen**.
 
-6.  In der **anzeigen** Gruppe des Menübands für das Element, klicken Sie auf **Map It** um den Map It-Formularbereich zu öffnen.
+6. In der **anzeigen** Gruppe des Menübands für das Element, klicken Sie auf **Map It** um den Map It-Formularbereich zu öffnen.
 
      Der Map It-Formularbereich wird geöffnet und zeigt die Website für lokale Suche an. Die **Business**, **Startseite**, und **andere** Adressen werden im Testbereich angezeigt. Wählen Sie im Testbereich eine Adresse aus, die Sie zuordnen möchten.
 
 ## <a name="next-steps"></a>Nächste Schritte
  Weitere Informationen zum Anpassen der Benutzeroberfläche einer Outlook-Anwendung finden Sie in diesen Themen:
 
--   Informationen zum Anpassen des Menübands eines Outlook-Elements finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Informationen zum Anpassen des Menübands eines Outlook-Elements finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Zugriff auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)

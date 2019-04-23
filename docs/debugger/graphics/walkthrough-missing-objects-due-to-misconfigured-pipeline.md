@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097608"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines nicht festgelegten Pixelshaders fehlt.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:
 
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.
 
--   Verwenden des Fensters **Grafikpipelinestufen** zum Untersuchen der Wirkung des `DrawIndexed` -Direct3D-API-Aufrufs.
+- Verwenden des Fensters **Grafikpipelinestufen** zum Untersuchen der Wirkung des `DrawIndexed` -Direct3D-API-Aufrufs.
 
--   Untersuchen des Gerätekontexts, um zu bestätigen, dass keine Shaderstufe festgelegt wurde.
+- Untersuchen des Gerätekontexts, um zu bestätigen, dass keine Shaderstufe festgelegt wurde.
 
--   Verwenden des Fensters **Grafikpipelinestufen** in Kombination mit der **Aufrufliste des Grafikereignisses** , um die Suche nach der Ursache des nicht festgelegten Pixelshaders zu unterstützen.
+- Verwenden des Fensters **Grafikpipelinestufen** in Kombination mit der **Aufrufliste des Grafikereignisses** , um die Suche nach der Ursache des nicht festgelegten Pixelshaders zu unterstützen.
 
 ## <a name="scenario"></a>Szenario
  Wenn ein Objekt in einer 3D-App fehlt, hat das manchmal die Ursache, dass eine der Shaderstufen vor dem Rendern des Objekts nicht festgelegt wurde. In Apps mit einfachen Ansprüchen an das Rendering liegt die Ursache für diesen Fehler normalerweise irgendwo in der Aufrufliste des Zeichnen-Befehls des Objekts. Zur Optimierung fassen einige Apps Objekte mit gemeinsamen Shaderprogrammen, Texturen oder anderen Daten allerdings zu Batches zusammen, um Mehraufwand durch häufige Statuswechsel zu minimieren. In diesen Apps kann sich die Ursache des Fehlers im Batchsystem statt in der Aufrufliste des Zeichnen-Befehls verstecken. Das Szenario dieser exemplarischen Vorgehensweise bildet eine App, die einfache Anforderungen an das Rendering stellt, daher lässt sich die Ursache des Fehlers in der Aufrufliste finden.

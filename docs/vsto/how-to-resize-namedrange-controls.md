@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3de20f175ae7300732cd56633aebcdc3e0aa0cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099608"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Vorgehensweise: Ändern der Größe von NamedRange-Steuerelementen
   Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements festlegen, wenn Sie es zu einem Microsoft Office Excel-Dokument hinzufügen. Möglicherweise möchten Sie jedoch zu einem späteren Zeitpunkt die Größe ändern.
@@ -30,32 +30,32 @@ ms.locfileid: "56654034"
 
  In diesem Thema werden die folgenden Aufgaben beschrieben:
 
--   [Ändern der Größe von NamedRange-Steuerelementen zur Entwurfszeit](#designtime)
+- [Ändern der Größe von NamedRange-Steuerelementen zur Entwurfszeit](#designtime)
 
--   [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)
+- [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)
 
--   [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)
+- [Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt](#runtimeaddin)
 
-##  <a name="designtime"></a> Ändern der Größe von NamedRange-Steuerelementen zur Entwurfszeit
+## <a name="designtime"></a> Ändern der Größe von NamedRange-Steuerelementen zur Entwurfszeit
  Sie können die Größe eines benannten Bereichs ändern, indem Sie die Größe im Dialogfeld **Namen definieren** neu definieren.
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>So ändern Sie die Größe eines benannten Bereichs unter Verwendung des Dialogfelds „Namen definieren“
 
-1.  Klicken Sie mit der rechten Maustaste auf ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement.
+1. Klicken Sie mit der rechten Maustaste auf ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement.
 
-2.  Klicken Sie im Kontextmenü auf **Benannte Bereiche verwalten** .
+2. Klicken Sie im Kontextmenü auf **Benannte Bereiche verwalten** .
 
      Das Dialogfeld **Namen definieren** wird geöffnet.
 
-3.  Wählen Sie den benannten Bereich aus, dessen Größe Sie ändern möchten.
+3. Wählen Sie den benannten Bereich aus, dessen Größe Sie ändern möchten.
 
-4.  Deaktivieren Sie das Feld **Bezieht sich auf** .
+4. Deaktivieren Sie das Feld **Bezieht sich auf** .
 
-5.  Wählen Sie die Zellen aus, anhand derer Sie die Größe des benannten Bereichs definieren möchten.
+5. Wählen Sie die Zellen aus, anhand derer Sie die Größe des benannten Bereichs definieren möchten.
 
-6.  Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
-##  <a name="runtimedoclevel"></a> Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene
+## <a name="runtimedoclevel"></a> Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene
  Sie können die Größe eines benannten Bereichs programmgesteuert ändern, indem Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft verwenden.
 
 > [!NOTE]
@@ -63,27 +63,27 @@ ms.locfileid: "56654034"
 
 ### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert
 
-1.  Erstellen Sie in der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **von** ein `Sheet1`-Steuerelement.
+1. Erstellen Sie in der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **von** ein `Sheet1`-Steuerelement.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]
 
-2.  Ändern Sie die Größe des benannten Bereichs, sodass er auch Zelle **B1**umfasst.
+2. Ändern Sie die Größe des benannten Bereichs, sodass er auch Zelle **B1**umfasst.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-##  <a name="runtimeaddin"></a> Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
+## <a name="runtimeaddin"></a> Ändern der Größe von NamedRange-Steuerelementen zur Laufzeit in einem VSTO-Add-in-Projekt
  Sie können die Größe einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement auf jedem geöffneten Arbeitsblatt zur Laufzeit. Weitere Informationen zur Vorgehensweise beim Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins, finden Sie unter [Vorgehensweise: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert
 
-1.  Erstellen Sie in der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **von** ein `Sheet1`-Steuerelement.
+1. Erstellen Sie in der Zelle <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 **von** ein `Sheet1`-Steuerelement.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
      [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]
 
-2.  Ändern Sie die Größe des benannten Bereichs, sodass er auch Zelle **B1**umfasst.
+2. Ändern Sie die Größe des benannten Bereichs, sodass er auch Zelle **B1**umfasst.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]

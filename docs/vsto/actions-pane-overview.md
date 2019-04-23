@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099740"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbares **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder die Microsoft Office Excel-Arbeitsmappe angefügt ist. Der Bereich "Aktionen" innerhalb der Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen, gehostet wird z. B. die **XML-Quelle** Aufgabenbereich in Excel oder dem **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
@@ -61,17 +61,17 @@ ms.locfileid: "56608811"
 
  Um den Aufgabenbereich in der Projektmappe auszublenden, haben Sie mehrere Optionen:
 
--   Legen Sie für Word die <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> Eigenschaft der <xref:Microsoft.Office.Interop.Word.TaskPane> Objekt, das im Aufgabenbereich "Dokumentaktionen", um darstellt **"false"**. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse im Projekt ausgeführt werden.
+- Legen Sie für Word die <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> Eigenschaft der <xref:Microsoft.Office.Interop.Word.TaskPane> Objekt, das im Aufgabenbereich "Dokumentaktionen", um darstellt **"false"**. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse im Projekt ausgeführt werden.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Legen Sie für Excel die <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> -Objekt **"false"**. Das folgende Codebeispiel sollte von der `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
+- Legen Sie für Excel die <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> -Objekt **"false"**. Das folgende Codebeispiel sollte von der `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Sie können auch festlegen, für Word oder Excel, die <xref:Microsoft.Office.Core.CommandBar.Visible%2A> Eigenschaft der Befehlsleiste, die den Aufgabenbereich darstellt **"false"**. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse oder `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
+- Sie können auch festlegen, für Word oder Excel, die <xref:Microsoft.Office.Core.CommandBar.Visible%2A> Eigenschaft der Befehlsleiste, die den Aufgabenbereich darstellt **"false"**. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse oder `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608811"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>So zeigen Sie den Aktionsbereich mithilfe der Benutzeroberfläche von Word oder Excel an
 
-1.  Klicken Sie auf dem Menüband auf die **Ansicht** Registerkarte.
+1. Klicken Sie auf dem Menüband auf die **Ansicht** Registerkarte.
 
-2.  In der **ein-/ausblenden** gruppieren, klicken Sie auf die **Dokumentaktionen** -aus-Schaltfläche.
+2. In der **ein-/ausblenden** gruppieren, klicken Sie auf die **Dokumentaktionen** -aus-Schaltfläche.
 
 ## <a name="program-actions-pane-events"></a>Ereignisse für den Aktionsbereich Programm
  Sie können dem Aktionsbereich mehrere Benutzersteuerelemente hinzufügen und dann Code schreiben, der durch Ein- oder Ausblenden der Benutzersteuerelemente auf Ereignisse im Dokument reagiert. Wenn Sie Ihrem Dokument XML-Schemaelemente zuordnen, können Sie bestimmte Benutzersteuerelemente im Aktionsbereich einblenden, sobald sich der Einfügepunkt innerhalb eines der XML-Elemente befindet. Weitere Informationen finden Sie unter [Vorgehensweise: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) und [Vorgehensweise: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
@@ -101,7 +101,7 @@ ms.locfileid: "56608811"
  Sie können Steuerelemente im Aktionsbereich und Steuerelemente im Dokument an das gleiche Dataset binden. Beispielsweise können Sie eine Master-/Detailbeziehung zwischen den Steuerelementen im Aktionsbereich und den Steuerelementen im Arbeitsblatt erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).
 
 ## <a name="validate-data-in-actions-pane-controls"></a>Überprüfen von Daten in Aktionsbereich-Steuerelementen
- Wenn Sie ein Meldungsfeld im <xref:System.Windows.Forms.Control.Validating>-Ereignishandler eines Steuerelements im Aktionsbereich anzeigen, kann das Ereignis ein zweites Mal ausgelöst werden, wenn sich der Fokus vom Steuerelement auf das Meldungsfeld verlagert. Um dies zu verhindern, verwenden Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement zum Anzeigen von Validierungsfehlermeldungen.
+ Wenn Sie ein Meldungsfeld im <xref:System.Windows.Forms.Control.Validating>-Ereignishandler eines Steuerelements im Aktionsbereich anzeigen, kann das Ereignis ein zweites Mal ausgelöst werden, wenn sich der Fokus vom Steuerelement auf das Meldungsfeld verlagert. Um dies zu verhindern, verwenden Sie ein <xref:System.Windows.Forms.ErrorProvider>-Steuerelement zum Anzeigen von Überprüfungsfehlermeldungen.
 
 ## <a name="user-control-stacking-order"></a>Benutzersteuerelement Stapelreihenfolge
  Wenn Sie mehrere Benutzersteuerelemente verwenden, können Sie Code schreiben, durch den die Benutzersteuerelemente im Aktionsbereich – ob vertikal oder horizontal angedockt – richtig gestapelt werden. Sie können die Stapelreihenfolge der Benutzersteuerelemente im Aktionsbereich mithilfe der <xref:Microsoft.Office.Tools.StackStyle>-Enumeration der <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>-Eigenschaft festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)
@@ -114,7 +114,7 @@ ms.locfileid: "56608811"
 |FromLeft|Stapelt vom linken Rand des Aktionsbereichs.|
 |FromRight|Stapelt vom rechten Rand des Aktionsbereichs.|
 |FromTop|Stapelt von oberen Rand des Aktionsbereichs.|
-|Keine|Es wurde keine Stapelreihenfolge definiert; die Reihenfolge wird vom Entwickler gesteuert.|
+|Keiner|Es wurde keine Stapelreihenfolge definiert; die Reihenfolge wird vom Entwickler gesteuert.|
 
  Im folgenden Code wird die <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>-Eigenschaft festgelegt, um die Benutzersteuerelemente vom oberen Rand des Aktionsbereichs zu stapeln.
 

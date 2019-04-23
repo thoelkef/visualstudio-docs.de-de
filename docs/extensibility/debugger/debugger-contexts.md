@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098934"
 ---
 # <a name="debugger-contexts"></a>Debuggerkontexte
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen, die Debug-Engine (DE) arbeitet gleichzeitig in mehreren unterschiedlichen Kontexten wie folgt:
 
--   Der Codekontext, der die aktuelle Position in der Ausführung eines Programms-Stream beschreibt.
+- Der Codekontext, der die aktuelle Position in der Ausführung eines Programms-Stream beschreibt.
 
--   Die Dokumentation Kontext oder die Position, die die aktuelle Position in einem Quelldokument beschreibt.
+- Die Dokumentation Kontext oder die Position, die die aktuelle Position in einem Quelldokument beschreibt.
 
--   Der Ausdruck Evaluation-Kontext, der den Kontext beschreibt, in dem den Ausdruck Auswertung stattfinden soll.
+- Der Ausdruck Evaluation-Kontext, der den Kontext beschreibt, in dem den Ausdruck Auswertung stattfinden soll.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Codekontext](../../extensibility/debugger/code-context.md) Codekontext behandelt, als eine Adresse im Anweisungsstream eines Programms, in heutigen Laufzeit-Architekturen im Vergleich zu nicht traditionelle Sprachen, in dem Code nicht von Anweisungen, aber auf andere Weise dargestellt werden kann.

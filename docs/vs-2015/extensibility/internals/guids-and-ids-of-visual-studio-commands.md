@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107748"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs der Visual Studio-Befehle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
 ### <a name="special-cases"></a>Sonderfälle
  In den folgenden Fällen den Menütext oder QuickInfo-Text entspricht möglicherweise nicht exakt neuerungen in der Befehlsdefinition.
 
--   Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü in der die P unterstrichen ist.
+- Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü in der die P unterstrichen ist.
 
      Zeichen, die durch das Zeichen "&" im Menü Elementnamen vorangestellt werden angezeigt, unterstrichen angezeigt. VSCT-Dateien wurden jedoch in XML, das das Zeichen "&" verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, das angezeigt werden soll geschrieben werden muss als&amp;". Aus diesem Grund in einer VSCT-Datei die **Drucken** -Befehl angezeigt wird, als "&amp;drucken".
 
--   Befehle, die dynamischer Text, z. B. auf **speichern** *aktuellen Dateinamen*, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.
+- Befehle, die dynamischer Text, z. B. auf **speichern** *aktuellen Dateinamen*, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.
 
      Es ist keine zuverlässige Möglichkeit, die dynamischer Text suchen. Stattdessen finden Sie eine Gruppe, die den gewünschten Befehl von consulting hostet [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), und suchen Sie auf die ID dieser Gruppe. Verfügt die Befehlsdefinition nicht die Gruppe als seine [übergeordnetes Element](../../extensibility/parent-element.md), SharedCmdPlace.vsct und ShellCmdPlace.vsct (oder VsDbgCmdPlace.vsct für Debuggerbefehle) Suchen einer `<CommandPlacement>` -Element, das das übergeordnete Element der legt diesen fest der -Befehl. SharedCmdPlace.vsct, ShellCmdPlace.vsct, andVsDbgCmdPlace.vsct befinden sich in der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\-Ordner.
 

@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096555"
 ---
 # <a name="visio-object-model-overview"></a>Übersicht über das Visio-Objektmodell
   Zur Entwicklung von Office-Projektmappen für Microsoft Office Visio können Sie mit dem Visio-Objektmodell interagieren. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Visio bereitgestellt und im `Microsoft.Office.Interop.Visio`-Namespace definiert werden.
 
  Dieses Thema enthält eine kurze Übersicht über das Visio-Objektmodell. Informationen zur Verwendung des Visio-Objektmodells für bestimmte Aufgaben in Office-Projekten finden Sie unter den folgenden Themen:
 
--   [Arbeiten mit Visio-Dokumenten](../vsto/working-with-visio-documents.md)
+- [Arbeiten mit Visio-Dokumenten](../vsto/working-with-visio-documents.md)
 
--   [Arbeiten mit Visio-shapes](../vsto/working-with-visio-shapes.md)
+- [Arbeiten mit Visio-shapes](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Verstehen von Visio-Objektmodell
  Visio stellt zahlreiche Objekte bereit, mit denen Sie interagieren können. Diese Objekte werden in einer Hierarchie angeordnet, die eng an die Benutzeroberfläche angelehnt ist. Oben in der Hierarchie befindet sich das [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) -Objekt. Dieses Objekt stellt die aktuelle Instanz von Visio dar. Die `Microsoft.Office.Interop.Visio.Application` Objekt enthält die `Microsoft.Office.Interop.Visio.Document` und `Microsoft.Office.Interop.Visio.Page` Objekte als auch die `Microsoft.Office.Interop.Visio.Documents` und `Microsoft.Office.Interop.Visio.Pages` Sammlungen. Jedes dieser Objekte bzw. jede dieser Auflistungen verfügt über zahlreiche Methoden und Eigenschaften, auf die Sie zwecks Bearbeitung und Interaktion zugreifen können.
@@ -40,11 +40,11 @@ ms.locfileid: "56636709"
 
  In den folgenden Abschnitten werden die Objekte der obersten Ebene und ihre Interaktion miteinander kurz beschrieben. Dazu gehören die folgenden Objekte:
 
--   Application-Objekt
+- Application-Objekt
 
--   Document-Objekt
+- Document-Objekt
 
--   Page-Objekt
+- Page-Objekt
 
 ### <a name="application-object"></a>Application-Objekt
  Die Microsoft.Office.Interop.Visio.Application-Objekt stellt die Visio-Anwendung dar und ist das übergeordnete Element aller anderen Objekte. Seine Elemente gelten normalerweise für Visio als Ganzes. Können Sie die Eigenschaften und Methoden der Microsoft.Office.Interop.Visio.Application und `Microsoft.Office.Interop.Visio.ApplicationSettings` Objekte zum Steuern der Visio-Umgebung.

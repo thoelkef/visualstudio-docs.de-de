@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100013"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Erweitern der Funktionalität eines TableAdapter
 
@@ -38,13 +38,13 @@ Im folgende Beispiel wird davon ausgegangen, einen TableAdapter namens `Customer
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Um eine partielle Klasse für einen TableAdapter zu erstellen.
 
-1.  Fügen Sie eine neue Klasse hinzu, indem Sie auf die **Projekt** Menü und auswählen **Klasse hinzufügen**.
+1. Fügen Sie eine neue Klasse hinzu, indem Sie auf die **Projekt** Menü und auswählen **Klasse hinzufügen**.
 
-2.  Nennen Sie die Klasse `CustomersTableAdapterExtended`.
+2. Nennen Sie die Klasse `CustomersTableAdapterExtended`.
 
-3.  Wählen Sie **Hinzufügen** aus.
+3. Wählen Sie **Hinzufügen** aus.
 
-4.  Ersetzen Sie den Code mit den richtigen Namespace und den Namen der partiellen Klasse für das Projekt wie folgt:
+4. Ersetzen Sie den Code mit den richtigen Namespace und den Namen der partiellen Klasse für das Projekt wie folgt:
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

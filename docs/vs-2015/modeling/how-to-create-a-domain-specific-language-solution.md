@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099571"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
   
 3. Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.  
   
-   -   Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können sie sich durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das im befinden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü.  
+   - Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können sie sich durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das im befinden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü.  
   
-   -   Wenn ein anderer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die diese Dateierweiterung wird vollständig auf Ihrem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+   - Wenn ein anderer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die diese Dateierweiterung wird vollständig auf Ihrem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
 4. Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).  
   
@@ -78,7 +78,7 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
    > [!NOTE]
    >  Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.  
   
-##  <a name="settings"></a> Die DSL-Designer-Assistent-Seiten  
+## <a name="settings"></a> Die DSL-Designer-Assistent-Seiten  
  Sie können einige Felder die Standardwerte unverändert lassen. Allerdings stellen Sie sicher, dass Sie das Feld für die Erweiterung festlegen.  
   
 ### <a name="solution-settings-page"></a>Seite "Lösung-Einstellungen"  
@@ -98,15 +98,15 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
   
  Wenn Sie eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden tun:  
   
--   Geben Sie eine andere Dateinamenerweiterung.  
+- Geben Sie eine andere Dateinamenerweiterung.  
   
      \- oder –  
   
--   Zurücksetzen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle Instanz. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.  
+- Zurücksetzen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle Instanz. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.  
   
      \- oder –  
   
--   Wenn eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , deinstallieren sie die Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+- Wenn eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , deinstallieren sie die Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
 ### <a name="product-settings-page"></a>Settings-Produktseite  
  **Was ist der Name des Produkts, das die neue domänenspezifische Sprache gehört?**  

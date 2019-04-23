@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099545"
 ---
 # <a name="create-a-custom-debug-engine"></a>Erstellen einer benutzerdefinierten Debug-engine
 Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestimmten Laufzeit-Architekturen. Es gibt in der Regel nur eine Implementierung von DE pro-Umgebung ausgeführt.
@@ -29,15 +29,15 @@ Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestim
 
  Zur Erstellung einer bereitgestellten Kompatibilitätsrichtlinie gehören die folgenden Schritte aus:
 
-1.  Registrieren einer bereitgestellten Kompatibilitätsrichtlinie in Visual Studio
+1. Registrieren einer bereitgestellten Kompatibilitätsrichtlinie in Visual Studio
 
-2.  Aktivieren Sie zu debuggenden Programm
+2. Aktivieren Sie zu debuggenden Programm
 
-3.  Implementieren Sie die Ausführung und Auswertung
+3. Implementieren Sie die Ausführung und Auswertung
 
-4.  Senden von Ereignissen
+4. Senden von Ereignissen
 
-5.  Richten Sie beenden und trennen
+5. Richten Sie beenden und trennen
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Registrieren eine benutzerdefinierten Debug-Engine](../../extensibility/debugger/registering-a-custom-debug-engine.md) erläutert die Schritte erforderlich, um eine Debug-Engine mit Visual Studio zu registrieren, sodass sie verwendet werden kann.

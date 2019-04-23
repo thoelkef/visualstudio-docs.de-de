@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107891"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Vorgehensweise: Programmgesteuertes Öffnen von Arbeitsmappen
   Die <xref:Microsoft.Office.Interop.Excel.Workbooks> Sammlung in Microsoft Office Excel ermöglicht es mit allen geöffneten Arbeitsmappen funktionieren, und Öffnen von Arbeitsmappen.
@@ -27,7 +27,7 @@ ms.locfileid: "56611892"
 
 ## <a name="to-open-an-existing-workbook"></a>Um einer vorhandenen Arbeitsmappe zu öffnen.
 
-1.  Verwenden der <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Workbooks> Auflistung, die den Pfad zur Arbeitsmappe übergeben.
+1. Verwenden der <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Workbooks> Auflistung, die den Pfad zur Arbeitsmappe übergeben.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
@@ -35,7 +35,7 @@ ms.locfileid: "56611892"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Codebeispiel benötigen Sie Folgendes:
 
--   Eine Arbeitsmappe mit dem Namen `YourWorkbook.xls` muss vorhanden sein, in ein Verzeichnis namens `Test` auf Laufwerk C.
+- Eine Arbeitsmappe mit dem Namen `YourWorkbook.xls` muss vorhanden sein, in ein Verzeichnis namens `Test` auf Laufwerk C.
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)

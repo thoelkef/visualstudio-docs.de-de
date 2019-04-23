@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098583"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Zurücksetzen, Benennen und Wechseln zwischen Fensterlayouts
  Sie können die IDE mit dem Befehl **Fensterlayout zurücksetzen** auf das ursprüngliche Fensterlayout für Ihre Einstellungsauflistung zurücksetzen. Beim Ausführen dieses Befehls geschieht Folgendes:
 
--   Alle Fenster werden an ihre Standardpositionen verschoben.
+- Alle Fenster werden an ihre Standardpositionen verschoben.
 
--   Fenster, die im Standardfensterlayout geschlossen sind, werden geschlossen.
+- Fenster, die im Standardfensterlayout geschlossen sind, werden geschlossen.
 
--   Fenster, die im Standardfensterlayout geöffnet sind, werden geöffnet.
+- Fenster, die im Standardfensterlayout geöffnet sind, werden geöffnet.
 
 ### <a name="create-and-save-custom-layouts"></a>Erstellen und Speichern von benutzerdefinierten Layouts
  Mit Visual Studio 2015 können Sie bis zu 10 benutzerdefinierte Fensterlayouts speichern und schnell zwischen diesen wechseln. Die folgenden Schritte zeigen Ihnen, wie Sie benutzerdefinierte Layouts, mit denen Sie die Vorteile mehrerer Monitore mit angedockten Fenstern und unverankerten Toolfenstern nutzen können, erstellen, speichern, aufrufen und verwalten.
@@ -133,29 +133,29 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Erstellen eines Benutzeroberflächenprojekts und individuelles Anpassen des Layouts
 
-1.  Erstellen Sie im Dialogfeld **Neues Projekt** eine Visual C# WPF-Desktopanwendung, und geben Sie dieser einen beliebigen Namen. Nehmen wir an, dass Sie bei diesem Projekt an der Benutzeroberfläche arbeiten. Daher sollten Sie den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg schieben.
+1. Erstellen Sie im Dialogfeld **Neues Projekt** eine Visual C# WPF-Desktopanwendung, und geben Sie dieser einen beliebigen Namen. Nehmen wir an, dass Sie bei diesem Projekt an der Benutzeroberfläche arbeiten. Daher sollten Sie den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg schieben.
 
-2.  Wenn Sie über mehrere Monitore verfügen, ziehen Sie das **Projektmappen-Explorerfenster** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
+2. Wenn Sie über mehrere Monitore verfügen, ziehen Sie das **Projektmappen-Explorerfenster** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
 
-3.  Drücken Sie **Strg+Alt+X** , um die Toolbox anzuzeigen. Ist das Fenster angedockt, ziehen Sie es so, dass es sich auf dem gewünschten Monitor freischwebend dort befindet, wo Sie es platzieren möchten.
+3. Drücken Sie **Strg+Alt+X** , um die Toolbox anzuzeigen. Ist das Fenster angedockt, ziehen Sie es so, dass es sich auf dem gewünschten Monitor freischwebend dort befindet, wo Sie es platzieren möchten.
 
-4.  Drücken Sie "F5", um Visual Studio in den Debugmodus zu versetzen. Passen Sie die Position der Debugfenster "Auto", "Aufrufliste" und "Ausgabe" an Ihre Anforderungen an. Das Layout, das Sie erstellen, ist sowohl für den Bearbeitungsmodus als auch den Debugmous geeignet.
+4. Drücken Sie "F5", um Visual Studio in den Debugmodus zu versetzen. Passen Sie die Position der Debugfenster "Auto", "Aufrufliste" und "Ausgabe" an Ihre Anforderungen an. Das Layout, das Sie erstellen, ist sowohl für den Bearbeitungsmodus als auch den Debugmous geeignet.
 
-5.  Wenn Sie die Layouts sowohl im Debugmodus als auch im Bearbeitungsmodus Ihren Vorstellungen angepasst haben, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout "Designer".
+5. Wenn Sie die Layouts sowohl im Debugmodus als auch im Bearbeitungsmodus Ihren Vorstellungen angepasst haben, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout "Designer".
 
      Beachten Sie, dass das neue Layout der nächsten Tastenkombination aus der reservierten Liste mit Strg+Alt+1...0 zugewiesen wird.
 
 ##### <a name="create-a-database-project-and-layout"></a>Erstellen eines Datenbankprojekts und eines Layouts
 
-1.  Fügen Sie der Projektmappe ein neues **SQL Server-Datenbankprojekt** hinzu.
+1. Fügen Sie der Projektmappe ein neues **SQL Server-Datenbankprojekt** hinzu.
 
-2.  Rechtsklicken Sie in der Projektmappe auf das neue Projekt, und wählen Sie **View in Object Explorer**. Dadurch wird das Fenster **SQL Server-Objekt-Explorer** angezeigt, mit dem Sie auf Tabellen, Ansichten und andere Objekte in der Datenbank zugreifen können. Dieses Fenster kann entweder schwebend sein oder angedockt bleiben. Passen Sie die anderen Toolfenster wie gewünscht an. Um das Beispiel realistischer zu gestalten, können Sie eine tatsächliche Datenbank hinzufügen. Für diese exemplarische Vorgehensweise ist das jedoch nicht notwendig.
+2. Rechtsklicken Sie in der Projektmappe auf das neue Projekt, und wählen Sie **View in Object Explorer**. Dadurch wird das Fenster **SQL Server-Objekt-Explorer** angezeigt, mit dem Sie auf Tabellen, Ansichten und andere Objekte in der Datenbank zugreifen können. Dieses Fenster kann entweder schwebend sein oder angedockt bleiben. Passen Sie die anderen Toolfenster wie gewünscht an. Um das Beispiel realistischer zu gestalten, können Sie eine tatsächliche Datenbank hinzufügen. Für diese exemplarische Vorgehensweise ist das jedoch nicht notwendig.
 
-3.  Wenn das Layout Ihren Vorstellungen entspricht, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout "DB Project". (Für dieses Projekt ist kein Layout für den Debugmodus erforderlich.)
+3. Wenn das Layout Ihren Vorstellungen entspricht, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout "DB Project". (Für dieses Projekt ist kein Layout für den Debugmodus erforderlich.)
 
 ##### <a name="switch-between-the-layouts"></a>Wechseln zwischen Layouts
 
-1.  Sie können mit Tastenkombinationen zwischen Layouts wechseln, oder wählen Sie alternativ im Hauptmenü **Fenster > Fensterlayout anwenden** aus.
+1. Sie können mit Tastenkombinationen zwischen Layouts wechseln, oder wählen Sie alternativ im Hauptmenü **Fenster > Fensterlayout anwenden** aus.
 
      ![Anwenden von Layout-Menü "Fenster"](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
 ##### <a name="manage-and-roam-your-layouts"></a>Verwalten der Layouts und Ausführen von Roamings
 
-1.  Sie können benutzerdefinierte Layouts entfernen, umbenennen oder neu arrangieren, indem Sie **Fenster > Fensterlayouts verwalten** auswählen. Wenn Sie ein Layout verschieben, wird die Schlüsselbindung automatisch so angepasst, dass die neue Position in der Liste wiedergegeben wird. Die Bindung kann nicht auf andere Weise geändert werden. Daher können Sie maximal 10 Layouts gleichzeitig speichern.
+1. Sie können benutzerdefinierte Layouts entfernen, umbenennen oder neu arrangieren, indem Sie **Fenster > Fensterlayouts verwalten** auswählen. Wenn Sie ein Layout verschieben, wird die Schlüsselbindung automatisch so angepasst, dass die neue Position in der Liste wiedergegeben wird. Die Bindung kann nicht auf andere Weise geändert werden. Daher können Sie maximal 10 Layouts gleichzeitig speichern.
 
      ![Fensterlayouts verwalten](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 

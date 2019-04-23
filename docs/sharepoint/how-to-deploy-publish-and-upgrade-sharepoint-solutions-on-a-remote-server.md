@@ -15,54 +15,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed75a5a6d888f3fc82acf8e7d41ac2ec82007636
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095658"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Vorgehensweise: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Projektmappen auf einem Remoteserver
   Zusätzlich zur Bereitstellung von SharePoint-Lösungen auf dem lokalen System aus, können Sie die SharePoint-sandkastenlösungen Remotestandorten oder lokale SharePoint-Websites veröffentlichen. Die remote veröffentlichen Prozess Kopien der *.wsp* Datei mit dem SharePoint-Server installiert die Lösung und anschließend können Sie die Lösung zu aktivieren. Sie können auch eine Remoteinstallation der SharePoint-Lösung aktualisieren, nachdem Änderungen vorgenommen werden.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Zum Veröffentlichen einer SharePoint-Sandbox-Lösung auf einem remote-SharePoint-server
 
-1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Sandbox SharePoint-Projekt, das Sie veröffentlichen möchten, und wählen Sie dann **veröffentlichen**.
+1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Sandbox SharePoint-Projekt, das Sie veröffentlichen möchten, und wählen Sie dann **veröffentlichen**.
 
-2.  In der **veröffentlichen** Dialogfeld auf die **in SharePoint-Website veröffentlichen** Optionsfeld aus, und geben Sie dann eine URL für eine online veröffentlichen, z. B.: `https://mytestsite.sharepoint.microsoftonline.com`.
+2. In der **veröffentlichen** Dialogfeld auf die **in SharePoint-Website veröffentlichen** Optionsfeld aus, und geben Sie dann eine URL für eine online veröffentlichen, z. B.: `https://mytestsite.sharepoint.microsoftonline.com`.
 
-3.  Wählen Sie die **lösungskatal im Browser öffnen, nach der Veröffentlichung** Optionsfeld aus, um das Anzeigen der Liste der Lösungen in der **Lösungskatalog** Seite nach der Veröffentlichung.
+3. Wählen Sie die **lösungskatal im Browser öffnen, nach der Veröffentlichung** Optionsfeld aus, um das Anzeigen der Liste der Lösungen in der **Lösungskatalog** Seite nach der Veröffentlichung.
 
-4.  Wählen Sie die **veröffentlichen** Schaltfläche.
+4. Wählen Sie die **veröffentlichen** Schaltfläche.
 
-5.  Melden Sie sich an den Remoteserver ist eine Benutzerauthentifizierung erforderlich.
+5. Melden Sie sich an den Remoteserver ist eine Benutzerauthentifizierung erforderlich.
 
      Der Veröffentlichungsstatus angezeigt wird angezeigt, in der Visual Studio **Ausgabe** Fenster. Wenn der Vorgang abgeschlossen wird, wird die Projektmappe (*.wsp*) Datei auf dem SharePoint-Remoteserver installiert ist. Es muss jedoch weiterhin aktiviert werden, bevor sie in SharePoint verwendet werden kann.
 
-6.  Auf der **Lösungskatalog** Seite, wählen Sie die SharePoint-Anwendung aus, und wählen Sie dann im Menüband der **aktivieren** Schaltfläche.
+6. Auf der **Lösungskatalog** Seite, wählen Sie die SharePoint-Anwendung aus, und wählen Sie dann im Menüband der **aktivieren** Schaltfläche.
 
-7.  In der **Lösung aktivieren** wählen Sie im Dialogfeld auf der Multifunktionsleiste die **aktivieren** erneut.
+7. In der **Lösung aktivieren** wählen Sie im Dialogfeld auf der Multifunktionsleiste die **aktivieren** erneut.
 
      Die **Status** Spalte auf die **Lösungskatalog** Seite gibt an, dass die Anwendung aktiv ist.
 
 ## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Aktualisieren eine SharePoint-sandkastenlösung auf einem remote-SharePoint-server
  Wenn eine SharePoint-Sandbox-Lösung auf einem Remoteserver bereits veröffentlicht wurde, wird der folgende Prozess können Sie zum Aktualisieren nach dem vornehmen von Änderungen an die Anwendung in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-1.  Benennen Sie das SharePoint-Paket im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Klicken Sie hierzu in **Projektmappen-Explorer** öffnen Sie das Paket. Er wird in der **Paket-Explorer**.
+1. Benennen Sie das SharePoint-Paket im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Klicken Sie hierzu in **Projektmappen-Explorer** öffnen Sie das Paket. Er wird in der **Paket-Explorer**.
 
-2.  In **Paket-Explorer**in die **Namen** ändern den Paketnamen in einen eindeutigen Namen.
+2. In **Paket-Explorer**in die **Namen** ändern den Paketnamen in einen eindeutigen Namen.
 
-3.  Speichern Sie das Projekt.
+3. Speichern Sie das Projekt.
 
-4.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **veröffentlichen**.
+4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **veröffentlichen**.
 
-5.  In der **veröffentlichen** Dialogfeld auf die **in SharePoint-Website veröffentlichen** Optionsfeld aus, und klicken Sie dann, wenn die URL für den Remoteserver, in dem die Lösung gespeichert ist, nicht vorhanden ist, geben Sie ihn.
+5. In der **veröffentlichen** Dialogfeld auf die **in SharePoint-Website veröffentlichen** Optionsfeld aus, und klicken Sie dann, wenn die URL für den Remoteserver, in dem die Lösung gespeichert ist, nicht vorhanden ist, geben Sie ihn.
 
-6.  Wählen Sie die **lösungskatal im Browser öffnen, nach der Veröffentlichung** Optionsfeld aus, um das Anzeigen der Liste der Lösungen in der **Lösungskatalog** Seite nach der Veröffentlichung.
+6. Wählen Sie die **lösungskatal im Browser öffnen, nach der Veröffentlichung** Optionsfeld aus, um das Anzeigen der Liste der Lösungen in der **Lösungskatalog** Seite nach der Veröffentlichung.
 
-7.  Wählen Sie die **veröffentlichen** Schaltfläche.
+7. Wählen Sie die **veröffentlichen** Schaltfläche.
 
-8.  Melden Sie sich an den Remoteserver ist eine Benutzerauthentifizierung erforderlich.
+8. Melden Sie sich an den Remoteserver ist eine Benutzerauthentifizierung erforderlich.
 
      Wenn Sie mit dem Remoteserver zuletzt angemeldet, möglicherweise Authentifizierung nicht erforderlich.
 

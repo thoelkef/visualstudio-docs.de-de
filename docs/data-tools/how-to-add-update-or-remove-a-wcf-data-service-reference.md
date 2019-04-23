@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
+title: 'Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099532"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden der **Hinzufügen eines Dienstverweises** Dialogfeld zu suchende [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projektmappe lokal auf einem lokalen Netzwerk oder im Internet.
@@ -30,11 +30,11 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Einen Verweis auf einen externen Dienst hinzufügen
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens für das Projekt, Sie fügen Sie den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens für das Projekt, Sie fügen Sie den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
 
      Die **Hinzufügen eines Dienstverweises** Dialogfeld wird angezeigt.
 
-2.  In der **Adresse** , geben Sie die URL für den Dienst, und klicken Sie dann auf **wechseln** für den Dienst zu suchen. Wenn der Dienst benutzersicherheit und das Kennwort implementiert, werden Sie möglicherweise für einen Benutzernamen und Kennwort aufgefordert.
+2. In der **Adresse** , geben Sie die URL für den Dienst, und klicken Sie dann auf **wechseln** für den Dienst zu suchen. Wenn der Dienst benutzersicherheit und das Kennwort implementiert, werden Sie möglicherweise für einen Benutzernamen und Kennwort aufgefordert.
 
     > [!NOTE]
     >  Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.
@@ -43,11 +43,11 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
      Eine Statusanzeige eingeblendet, wenn die Suche durchgeführt wird. Sie können die Suche zu einem beliebigen Zeitpunkt beenden, indem Sie auf **beenden**.
 
-3.  In der **Services** aus, erweitern Sie den Knoten für den Dienst, den Sie verwenden möchten und wählen Sie eine Entitätenmenge.
+3. In der **Services** aus, erweitern Sie den Knoten für den Dienst, den Sie verwenden möchten und wählen Sie eine Entitätenmenge.
 
-4.  In der **Namespace** Geben Sie den Namespace, der für den Verweis verwendet werden sollen.
+4. In der **Namespace** Geben Sie den Namespace, der für den Verweis verwendet werden sollen.
 
-5.  Klicken Sie auf **OK** um den Verweis dem Projekt hinzuzufügen.
+5. Klicken Sie auf **OK** um den Verweis dem Projekt hinzuzufügen.
 
      Ein Dienstclient (Proxy) wird generiert, und Metadaten, die den Dienst beschreibt hinzugefügt wird die *"App.config"* Datei.
 
@@ -74,7 +74,7 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
 ### <a name="to-update-a-service-reference"></a>Um einen Dienstverweis aktualisieren
 
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **Dienstverweis aktualisieren**.
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **Dienstverweis aktualisieren**.
 
      Ein Statusdialogfeld wird angezeigt, während der Verweis wird von ihrem ursprünglichen Speicherort aktualisiert, und der Dienstclient erneut generiert wird, um die Änderungen in den Metadaten widergespiegelt werden.
 
@@ -83,7 +83,7 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
 ### <a name="to-remove-a-service-reference"></a>So entfernen Sie einen Dienstverweis
 
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **löschen**.
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **löschen**.
 
      Client des Diensts aus der Projektmappe entfernt werden, und Metadaten, die den Dienst zu beschreiben, entfernt werden, aus der *"App.config"* Datei.
 

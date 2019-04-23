@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107865"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Formzuordnung Eigenschaften zum Steuern der Sichtbarkeit eines Decorator-Elements  
  Sie können die Sichtbarkeit eines Decorator-Elements steuern, ohne das Schreiben von Programmcode, indem Sie die Zuordnung zwischen der Form und die Domänenklasse in der DSL-Definition konfigurieren. Weitere Informationen finden Sie unter den folgenden Themen:  
   
--   [Vorgehensweise: Steuern der Sichtbarkeit eines Decorator-Elements-umleiten](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Vorgehensweise: Steuern der Sichtbarkeit eines Decorator-Elements-umleiten](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)  
+- [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Machen Sie die Farbe und den Stil einer Form als Eigenschaften verfügbar.  
  In der DSL-Definition mit der Maustaste der formklasse, zeigen Sie auf **verfügbare hinzufügen**, und klicken Sie dann auf eines der Elemente wie z. B. **Füllfarbe**.  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  Diese Methode kann sowohl für Domäneneigenschaften und nicht über den Store-Features, z. B. die Größe der Form verwendet werden.  
   
-##  <a name="OnAssociatedProperty"></a> Verwenden Sie zum Aktualisieren von anderen Funktionen von einer Form AssociateValueWith()  
+## <a name="OnAssociatedProperty"></a> Verwenden Sie zum Aktualisieren von anderen Funktionen von einer Form AssociateValueWith()  
  Für einige Features von einer Form, z. B., ob sie über einen Schatten oder den Pfeilstil einen Connector, verfügt ist es keine integrierte Methode, die Funktion in einer Domäneneigenschaft verfügbar zu machen.  Änderungen an Funktionen unterliegen nicht der Kontrolle über das Transaktionssystem. Aus diesem Grund ist es nicht geeignet für das Aktualisieren mithilfe von Regeln, da Regeln nicht aufgerufen werden, wenn der Benutzer den Befehl "Rückgängig" ausführt.  
   
  Stattdessen können Sie mithilfe solcher Funktionen aktualisieren <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Im folgenden Beispiel wird der Pfeilstil einer Verbindung durch den Wert einer Domäneneigenschaft in der Beziehung gesteuert, in dem der Connector angezeigt:  

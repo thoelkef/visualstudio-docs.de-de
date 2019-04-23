@@ -17,14 +17,14 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095738"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen eines Profilers an einen laufenden Prozess und Trennen eines Profilers an einen laufenden Prozess
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen und Trennen eines Profilers an einen laufenden Prozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu werden oder um von ihm getrennt zu werden, damit das Sampling und Sammeln von Leistungsdaten vereinfacht wird. Sie können diese Methode zum Erstellen eines Profils verwenden, wenn Sie das Sammeln von Daten über Anwendungsladezeiten vermeiden wollen oder nachdem es einen bestimmten Zustand erreicht hat.  
@@ -44,7 +44,7 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
 ### <a name="to-attach-to-a-running-process"></a>So fügen Sie einen Profiler an einen laufenden Prozess an  
   
-1.  Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
+1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
   
      \- oder –  
   
@@ -52,13 +52,13 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
      Das Dialogfeld **Profiler an den Prozess anhängen** wird angezeigt.  
   
-2.  Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.  
+2. Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.  
   
-3.  Klicken Sie auf **Anfügen**.  
+3. Klicken Sie auf **Anfügen**.  
   
 ### <a name="to-detach-from-a-running-process"></a>So trennen Sie den Profiler von einem laufenden Prozess  
   
-1.  Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
+1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
   
      \- oder –  
   
@@ -66,9 +66,9 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
      Das Dialogfeld **Profiler an den Prozess anhängen** wird angezeigt.  
   
-2.  Klicken Sie auf den Imagenamen, von dem Sie den Profiler trennen möchten.  
+2. Klicken Sie auf den Imagenamen, von dem Sie den Profiler trennen möchten.  
   
-3.  Klicken Sie auf **Trennen**.  
+3. Klicken Sie auf **Trennen**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   

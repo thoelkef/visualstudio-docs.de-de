@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faed52971bacdcd08fb8d8769d5b49bd9bf90bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099441"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortieren, Filtern und Gruppieren (XML-Schema-Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,52 +24,52 @@ In diesem Thema wird beschrieben, die über die verfügbaren Optionen die **sort
 ## <a name="filter-options"></a>Filteroptionen  
  Die folgenden Filteroptionen sind verfügbar. In der Standardeinstellung die **Namespaces anzeigen** und **Schemadateien anzeigen** -Option aktiviert ist.  
   
--   **Namespaces anzeigen**.  
+- **Namespaces anzeigen**.  
   
--   **Schemadateien anzeigen**.  
+- **Schemadateien anzeigen**.  
   
--   **Compositors anzeigen (Sequence/Choice/All)**.  
+- **Compositors anzeigen (Sequence/Choice/All)**.  
   
 ## <a name="sorting-options"></a>Sortierungsoptionen  
  Die folgenden Sortierungsoptionen sind verfügbar. Der Standardwert ist **nach Sortiertyp**. Die "Sortieren nach"-Optionen gelten nicht für Dateien und Namespaces.  
   
--   **Nach Typ sortieren**.  
+- **Nach Typ sortieren**.  
   
--   **Nach Namen sortieren**.  
+- **Nach Namen sortieren**.  
   
--   **Nach Dokumentreihenfolge**.  
+- **Nach Dokumentreihenfolge**.  
   
 ### <a name="sort-by-type"></a>Nach Typ sortieren  
  Wenn die **nach Sortiertyp** Option ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert. Knoten sind innerhalb jeder Gruppe alphabetisch sortiert.  
   
-1.  `import`-Knoten  
+1. `import`-Knoten  
   
-2.  `include`-Knoten  
+2. `include`-Knoten  
   
-3.  `redefine`-Knoten  
+3. `redefine`-Knoten  
   
-4.  `attribute`-Knoten  
+4. `attribute`-Knoten  
   
-5.  `attributeGroup`-Knoten  
+5. `attributeGroup`-Knoten  
   
-6.  `complexType`-Knoten  
+6. `complexType`-Knoten  
   
-7.  `simpleType`-Knoten  
+7. `simpleType`-Knoten  
   
-8.  `element`-Knoten  
+8. `element`-Knoten  
   
 9. `group`-Knoten  
   
 ### <a name="sort-by-name"></a>Nach Namen sortieren  
  Wenn die **nach Namen sortieren** Option ausgewählt ist, werden globale Knoten in der folgenden Reihenfolge sortiert:  
   
-1.  `import`-Knoten (in alphabetischer Reihenfolge der Namespaces)  
+1. `import`-Knoten (in alphabetischer Reihenfolge der Namespaces)  
   
-2.  `include`-Knoten (in alphabetischer Reihenfolge der `schemaLocation`-Attribute)  
+2. `include`-Knoten (in alphabetischer Reihenfolge der `schemaLocation`-Attribute)  
   
-3.  `redefine`-Knoten (in alphabetischer Reihenfolge der `schemaLocation`-Attribute)  
+3. `redefine`-Knoten (in alphabetischer Reihenfolge der `schemaLocation`-Attribute)  
   
-4.  Andere globale Knoten in alphabetischer Reihenfolge  
+4. Andere globale Knoten in alphabetischer Reihenfolge  
   
 ### <a name="document-order"></a>Dokumentreihenfolge  
  Die **Dokumentreihenfolge** Option ist verfügbar, wenn die **Schemadateien anzeigen** ausgewählt ist. Wenn **Dokumentreihenfolge** ausgewählt ist, werden globale Knoten in der Reihenfolge, in der sie in der Schemadatei vorkommen, angezeigt.  

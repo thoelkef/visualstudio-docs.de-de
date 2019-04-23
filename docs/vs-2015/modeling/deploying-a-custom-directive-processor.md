@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108359"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Bereitstellen eines benutzerdefinierten Direktivenprozessors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,27 +48,27 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>So entwickeln Sie einen benutzerdefinierten Anweisungsprozessor in einem VSIX-Projekt  
   
-1.  Erstellen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein VSIX-Projekt.  
+1. Erstellen Sie in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ein VSIX-Projekt.  
   
-    -   In der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, erweitern Sie dann **Erweiterbarkeit**. Klicken Sie auf **VSIX-Projekt**.  
+    - In der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, erweitern Sie dann **Erweiterbarkeit**. Klicken Sie auf **VSIX-Projekt**.  
   
-2.  In **"Source.Extension.vsixmanifest"**, legen Sie den Inhaltstyp und die unterstützten Editionen.  
+2. In **"Source.Extension.vsixmanifest"**, legen Sie den Inhaltstyp und die unterstützten Editionen.  
   
-    1.  In der VSIX-manifest-Editor auf die **Assets** Registerkarte **neu** und legen Sie die Eigenschaften des neuen Elements:  
+    1. In der VSIX-manifest-Editor auf die **Assets** Registerkarte **neu** und legen Sie die Eigenschaften des neuen Elements:  
   
          **Inhaltstyp** = **VSPackage**  
   
          **Quellprojekt** = \<*des aktuellen Projekts*>  
   
-    2.  Klicken Sie auf **ausgewählte Editionen** und überprüfen Sie die Typen der Installation, die Sie auf den anweisungsprozessor verwendet werden kann.  
+    2. Klicken Sie auf **ausgewählte Editionen** und überprüfen Sie die Typen der Installation, die Sie auf den anweisungsprozessor verwendet werden kann.  
   
-3.  Fügen Sie eine PKGDEF-Datei hinzu, und legen Sie die Eigenschaften fest, die in die VSIX eingeschlossen werden sollen.  
+3. Fügen Sie eine PKGDEF-Datei hinzu, und legen Sie die Eigenschaften fest, die in die VSIX eingeschlossen werden sollen.  
   
-    1.  Erstellen Sie eine Textdatei, und nennen Sie sie \< *AssemblyName*> PKGDEF.  
+    1. Erstellen Sie eine Textdatei, und nennen Sie sie \< *AssemblyName*> PKGDEF.  
   
          \<*AssemblyName*> ist in der Regel identisch mit dem Namen des Projekts.  
   
-    2.  Wählen Sie die Datei im Projektmappen-Explorer aus, und legen Sie die Eigenschaften wie folgt fest:  
+    2. Wählen Sie die Datei im Projektmappen-Explorer aus, und legen Sie die Eigenschaften wie folgt fest:  
   
          **Buildvorgang** = **Inhalt**  
   
@@ -76,9 +76,9 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
          **In VSIX einbeziehen** = **"true"**  
   
-    3.  Legen Sie den Namen der VSIX fest, und stellen Sie sicher, dass die ID eindeutig ist.  
+    3. Legen Sie den Namen der VSIX fest, und stellen Sie sicher, dass die ID eindeutig ist.  
   
-4.  Fügen Sie der PKGDEF-Datei den folgenden Text hinzu:  
+4. Fügen Sie der PKGDEF-Datei den folgenden Text hinzu:  
   
     ```  
     [$RootKey$\TextTemplating]  
@@ -91,46 +91,46 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
      Ersetzen Sie die folgenden Namen durch eigene Namen: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.  
   
-5.  Fügen Sie dem Projekt die folgenden Verweise hinzu:  
+5. Fügen Sie dem Projekt die folgenden Verweise hinzu:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  Fügen Sie dem Projekt die benutzerdefinierte Direktivenprozessorklasse hinzu.  
+6. Fügen Sie dem Projekt die benutzerdefinierte Direktivenprozessorklasse hinzu.  
   
      Dies ist eine öffentliche Klasse, die <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementieren muss.  
   
 #### <a name="to-install-the-custom-directive-processor"></a>So installieren Sie den benutzerdefinierten Anweisungsprozessor  
   
-1.  Öffnen Sie in Windows-Explorer (Datei-Explor in Windows 8) das Buildverzeichnis (normalerweise "bin\Debug" oder "bin\Release").  
+1. Öffnen Sie in Windows-Explorer (Datei-Explor in Windows 8) das Buildverzeichnis (normalerweise "bin\Debug" oder "bin\Release").  
   
-2.  Wenn Sie den Anweisungsprozessor auf einem anderen Computer installieren möchten, kopieren Sie die VSIX-Datei auf den anderen Computer.  
+2. Wenn Sie den Anweisungsprozessor auf einem anderen Computer installieren möchten, kopieren Sie die VSIX-Datei auf den anderen Computer.  
   
-3.  Doppelklicken Sie auf die VSIX-Datei. Der Installer für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen wird angezeigt.  
+3. Doppelklicken Sie auf die VSIX-Datei. Der Installer für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungen wird angezeigt.  
   
-4.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Direktive besitzt das folgende Format:  
+4. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu. Sie können jetzt Textvorlagen mit Anweisungen ausführen, die auf den benutzerdefinierten Anweisungsprozessor verweisen. Jede Direktive besitzt das folgende Format:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>So deinstallieren Sie den benutzerdefinierten Anweisungsprozessor oder deaktivieren Sie ihn vorübergehend  
   
-1.  In der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+1. In der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
-2.  Wählen Sie die VSIX-Datei, die dem anweisungsprozessor aus, und klicken Sie dann auf **Deinstallieren** oder **deaktivieren**.  
+2. Wählen Sie die VSIX-Datei, die dem anweisungsprozessor aus, und klicken Sie dann auf **Deinstallieren** oder **deaktivieren**.  
   
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Problembehandlung für einen Direktivenprozessor in einer VSIX  
  Die folgenden Hinweise können bei Problemen mit dem Anweisungsprozessor hilfreich sein:  
   
--   Der in der benutzerdefinierten Anweisung angegebene Prozessorname muss dem `CustomDirectiveProcessorName` entsprechen, den Sie in der PKGDEF-Datei angegeben haben.  
+- Der in der benutzerdefinierten Anweisung angegebene Prozessorname muss dem `CustomDirectiveProcessorName` entsprechen, den Sie in der PKGDEF-Datei angegeben haben.  
   
--   Die `IsDirectiveSupported`-Methode muss `true` zurückgeben, wenn der Name der `CustomDirective` an sie übergeben wird.  
+- Die `IsDirectiveSupported`-Methode muss `true` zurückgeben, wenn der Name der `CustomDirective` an sie übergeben wird.  
   
--   Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt, aber das System Sie zur Installation jedoch nicht lässt, löschen Sie die Erweiterung von **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
+- Wenn die Erweiterung im Erweiterungs-Manager nicht angezeigt, aber das System Sie zur Installation jedoch nicht lässt, löschen Sie die Erweiterung von **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateierweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:  
+- Öffnen Sie die VSIX-Datei, und überprüfen Sie den Inhalt. Ändern Sie die Dateierweiterung in .zip, um die Datei zu öffnen. Vergewissern Sie sich, dass sie die DLL-, PKGDEF- und extension.vsixmanifest-Dateien enthält. Die extension.vsixmanifest-Datei sollte die entsprechende Liste im Knoten "SupportedProducts" und einen Knoten "VsPackage" unter dem Knoten "Inhalt" enthalten:  
   
      `<Content>`  
   
@@ -174,15 +174,15 @@ Wenn Sie auf einem Computer einen benutzerdefinierten Anweisungsprozessor in [!I
   
 3. Fügen Sie einen Registrierungsschlüssel mit dem Namen der Anweisungsprozessorklasse hinzu.  
   
-   -   In der Registrierungsstruktur mit der Maustaste der **DirectiveProcessors** Knoten, zeigen Sie auf **neu**, und klicken Sie dann auf **Schlüssel**.  
+   - In der Registrierungsstruktur mit der Maustaste der **DirectiveProcessors** Knoten, zeigen Sie auf **neu**, und klicken Sie dann auf **Schlüssel**.  
   
 4. Fügen Sie im neuen Knoten entsprechend den folgenden Tabellen Zeichenfolgenwerte für "Class" und "CodeBase" oder "Assembly" hinzu.  
   
-   1.  Mit der rechten Maustaste des Knotens, die Sie erstellt haben, zeigen Sie auf **neu**, und klicken Sie dann auf **Zeichenfolgenwert**.  
+   1. Mit der rechten Maustaste des Knotens, die Sie erstellt haben, zeigen Sie auf **neu**, und klicken Sie dann auf **Zeichenfolgenwert**.  
   
-   2.  Bearbeiten Sie den Namen des Werts.  
+   2. Bearbeiten Sie den Namen des Werts.  
   
-   3.  Doppelklicken Sie auf den Namen, und bearbeiten Sie die Daten.  
+   3. Doppelklicken Sie auf den Namen, und bearbeiten Sie die Daten.  
   
    Wenn der benutzerdefinierte Direktivenprozessor nicht im GAC ist, sollten die Registrierungsunterschlüssel den Angaben in der folgenden Tabelle entsprechen:  
   

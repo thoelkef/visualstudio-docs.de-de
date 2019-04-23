@@ -10,12 +10,12 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108157"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-create-a-mef-project"></a>So erstellen Sie ein MEF-Projekt  
   
-1.  Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual C# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekt**.) Nennen Sie die Projektmappe `SignatureHelpTest`.  
+1. Erstellen Sie ein C#-VSIX-Projekt. (In der **neues Projekt** wählen Sie im Dialogfeld **Visual c# / Erweiterbarkeit**, klicken Sie dann **VSIX-Projekt**.) Nennen Sie die Projektmappe `SignatureHelpTest`.  
   
-2.  Fügen Sie eine Elementvorlage Editor Klassifizierer zum Projekt hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Fügen Sie eine Elementvorlage Editor Klassifizierer zum Projekt hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Löschen Sie die vorhandenen Klassendateien.  
+3. Löschen Sie die vorhandenen Klassendateien.  
   
-4.  Fügen Sie die folgenden Verweise dem Projekt hinzu, und stellen Sie sicher, dass **CopyLocal** nastaven NA hodnotu `false`:  
+4. Fügen Sie die folgenden Verweise dem Projekt hinzu, und stellen Sie sicher, dass **CopyLocal** nastaven NA hodnotu `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -56,39 +56,39 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Zur Implementierung der Signaturhilfe Signaturen und Parameter  
   
-1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `SignatureHelpSource`.  
+1. Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `SignatureHelpSource`.  
   
-2.  Fügen Sie die folgenden Importe hinzu.  
+2. Fügen Sie die folgenden Importe hinzu.  
   
      [!code-csharp[VSSDKSignatureHelpTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#1)]
      [!code-vb[VSSDKSignatureHelpTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#1)]  
   
-3.  Fügen Sie eine Klasse, die mit dem Namen `TestParameter` implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
+3. Fügen Sie eine Klasse, die mit dem Namen `TestParameter` implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#2)]
      [!code-vb[VSSDKSignatureHelpTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#2)]  
   
-4.  Fügen Sie einen Konstruktor, der alle Eigenschaften festlegt.  
+4. Fügen Sie einen Konstruktor, der alle Eigenschaften festlegt.  
   
      [!code-csharp[VSSDKSignatureHelpTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#3)]
      [!code-vb[VSSDKSignatureHelpTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#3)]  
   
-5.  Fügen Sie die Eigenschaften der <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
+5. Fügen Sie die Eigenschaften der <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#4)]
      [!code-vb[VSSDKSignatureHelpTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#4)]  
   
-6.  Fügen Sie eine Klasse, die mit dem Namen `TestSignature` implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.  
+6. Fügen Sie eine Klasse, die mit dem Namen `TestSignature` implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#5)]
      [!code-vb[VSSDKSignatureHelpTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#5)]  
   
-7.  Fügen Sie private Felder hinzu.  
+7. Fügen Sie private Felder hinzu.  
   
      [!code-csharp[VSSDKSignatureHelpTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#6)]
      [!code-vb[VSSDKSignatureHelpTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#6)]  
   
-8.  Fügen Sie einen Konstruktor, der die Felder festgelegt und abonniert das <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Ereignis.  
+8. Fügen Sie einen Konstruktor, der die Felder festgelegt und abonniert das <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Ereignis.  
   
      [!code-csharp[VSSDKSignatureHelpTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#7)]
      [!code-vb[VSSDKSignatureHelpTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#7)]  
@@ -133,37 +133,37 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-implement-the-signature-help-source"></a>Um die Signaturhilfe Quelle zu implementieren.  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpSource` implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.  
+1. Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpSource` implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#15)]
      [!code-vb[VSSDKSignatureHelpTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#15)]  
   
-2.  Fügen Sie einen Verweis auf den Textpuffer.  
+2. Fügen Sie einen Verweis auf den Textpuffer.  
   
      [!code-csharp[VSSDKSignatureHelpTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#16)]
      [!code-vb[VSSDKSignatureHelpTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#16)]  
   
-3.  Fügen Sie einen Konstruktor, der dem Textpuffer und der Quellenanbieter Signaturhilfe festlegt.  
+3. Fügen Sie einen Konstruktor, der dem Textpuffer und der Quellenanbieter Signaturhilfe festlegt.  
   
      [!code-csharp[VSSDKSignatureHelpTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#17)]
      [!code-vb[VSSDKSignatureHelpTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#17)]  
   
-4.  Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A>-Methode. In diesem Beispiel werden fest programmierte, aber in eine vollständige Implementierung würden Sie erhalten diese Informationen in der sprachdokumentation.  
+4. Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A>-Methode. In diesem Beispiel werden fest programmierte, aber in eine vollständige Implementierung würden Sie erhalten diese Informationen in der sprachdokumentation.  
   
      [!code-csharp[VSSDKSignatureHelpTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#18)]
      [!code-vb[VSSDKSignatureHelpTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#18)]  
   
-5.  Die Hilfsmethode `CreateSignature()` wird nur zur Veranschaulichung bereitgestellt.  
+5. Die Hilfsmethode `CreateSignature()` wird nur zur Veranschaulichung bereitgestellt.  
   
      [!code-csharp[VSSDKSignatureHelpTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#19)]
      [!code-vb[VSSDKSignatureHelpTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#19)]  
   
-6.  Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>-Methode. In diesem Beispiel sind nur zwei Signaturen, von die jede zwei Parameter verfügt. Diese Methode ist daher nicht erforderlich. In eine größere Implementierung, die in der Quelle mit mehr als eine Signatur-Hilfe verfügbar ist. wird diese Methode verwendet, zu entscheiden, ob die mit der höchsten Priorität Signaturhilfe Quelle eine übereinstimmende Signatur bereitgestellt werden kann. Wenn dies nicht möglich, die Methode gibt null zurück, und die Quelle weiter – mit der höchsten Priorität wird aufgefordert, eine Übereinstimmung anzugeben.  
+6. Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>-Methode. In diesem Beispiel sind nur zwei Signaturen, von die jede zwei Parameter verfügt. Diese Methode ist daher nicht erforderlich. In eine größere Implementierung, die in der Quelle mit mehr als eine Signatur-Hilfe verfügbar ist. wird diese Methode verwendet, zu entscheiden, ob die mit der höchsten Priorität Signaturhilfe Quelle eine übereinstimmende Signatur bereitgestellt werden kann. Wenn dies nicht möglich, die Methode gibt null zurück, und die Quelle weiter – mit der höchsten Priorität wird aufgefordert, eine Übereinstimmung anzugeben.  
   
      [!code-csharp[VSSDKSignatureHelpTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#20)]
      [!code-vb[VSSDKSignatureHelpTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#20)]  
   
-7.  Implementieren Sie die Dispose()-Methode:  
+7. Implementieren Sie die Dispose()-Methode:  
   
      [!code-csharp[VSSDKSignatureHelpTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#21)]
      [!code-vb[VSSDKSignatureHelpTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#21)]  
@@ -173,12 +173,12 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-implement-the-signature-help-source-provider"></a>Zum Implementieren des Quellenanbieter Signaturhilfe  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpSourceProvider` , implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>, und exportieren Sie es mit einer <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text", und ein <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> von vor = "Default".  
+1. Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpSourceProvider` , implementiert <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>, und exportieren Sie es mit einer <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text", und ein <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> von vor = "Default".  
   
      [!code-csharp[VSSDKSignatureHelpTest#22](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#22)]
      [!code-vb[VSSDKSignatureHelpTest#22](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#22)]  
   
-2.  Implementieren <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> durch Instanziieren der `TestSignatureHelpSource`.  
+2. Implementieren <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> durch Instanziieren der `TestSignatureHelpSource`.  
   
      [!code-csharp[VSSDKSignatureHelpTest#23](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#23)]
      [!code-vb[VSSDKSignatureHelpTest#23](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#23)]  
@@ -188,27 +188,27 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-implement-the-command-handler"></a>Die Befehlshandler implementieren.  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpCommand` implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+1. Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpCommand` implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#24](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#24)]
      [!code-vb[VSSDKSignatureHelpTest#24](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#24)]  
   
-2.  Fügen Sie private Felder für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> -Adapter (mit der Sie die Kette der Befehlshandler die Befehlshandler hinzufügen zu können), die Textansicht, die Signaturhilfe Broker und die Sitzung eine <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, und die nächsten <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. Fügen Sie private Felder für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> -Adapter (mit der Sie die Kette der Befehlshandler die Befehlshandler hinzufügen zu können), die Textansicht, die Signaturhilfe Broker und die Sitzung eine <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, und die nächsten <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#25](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#25)]
      [!code-vb[VSSDKSignatureHelpTest#25](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#25)]  
   
-3.  Fügen Sie einen Konstruktor aus, um diese Felder zu initialisieren und die Befehlsketten-Filter der Befehlsfilter hinzu.  
+3. Fügen Sie einen Konstruktor aus, um diese Felder zu initialisieren und die Befehlsketten-Filter der Befehlsfilter hinzu.  
   
      [!code-csharp[VSSDKSignatureHelpTest#26](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#26)]
      [!code-vb[VSSDKSignatureHelpTest#26](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#26)]  
   
-4.  Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode, um die Signaturhilfe Sitzung auslösen, wenn der Befehlsfilter empfängt, eine (Zeichen nach der die bekannte Methodennamen und die Sitzung zu schließen, empfängt eine) Zeichen, während die Sitzung noch aktiv ist. In jedem Fall wird der Befehl weitergeleitet.  
+4. Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode, um die Signaturhilfe Sitzung auslösen, wenn der Befehlsfilter empfängt, eine (Zeichen nach der die bekannte Methodennamen und die Sitzung zu schließen, empfängt eine) Zeichen, während die Sitzung noch aktiv ist. In jedem Fall wird der Befehl weitergeleitet.  
   
      [!code-csharp[VSSDKSignatureHelpTest#27](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#27)]
      [!code-vb[VSSDKSignatureHelpTest#27](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#27)]  
   
-5.  Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode, sodass die It immer den Befehl weiterleitet.  
+5. Implementieren der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode, sodass die It immer den Befehl weiterleitet.  
   
      [!code-csharp[VSSDKSignatureHelpTest#28](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#28)]
      [!code-vb[VSSDKSignatureHelpTest#28](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#28)]  
@@ -218,17 +218,17 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-implement-the-signature-help-command-provider"></a>Den Anbieter für die Signaturhilfe Befehl implementiert  
   
-1.  Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpController` implementiert <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> und exportieren Sie sie mit der <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, und <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.  
+1. Fügen Sie eine Klasse, die mit dem Namen `TestSignatureHelpController` implementiert <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> und exportieren Sie sie mit der <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, und <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#29](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#29)]
      [!code-vb[VSSDKSignatureHelpTest#29](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#29)]  
   
-2.  Importieren der <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (zum Abrufen der <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, bestimmte die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt), wird die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (verwendet das aktuelle Wort gefunden), und die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (um die Sitzung Signaturhilfe auszulösen).  
+2. Importieren der <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (zum Abrufen der <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, bestimmte die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt), wird die <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (verwendet das aktuelle Wort gefunden), und die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (um die Sitzung Signaturhilfe auszulösen).  
   
      [!code-csharp[VSSDKSignatureHelpTest#30](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#30)]
      [!code-vb[VSSDKSignatureHelpTest#30](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#30)]  
   
-3.  Implementieren der <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> Methode durch die Instanziierung der `TestSignatureCommandHandler`.  
+3. Implementieren der <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> Methode durch die Instanziierung der `TestSignatureCommandHandler`.  
   
      [!code-csharp[VSSDKSignatureHelpTest#31](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#31)]
      [!code-vb[VSSDKSignatureHelpTest#31](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#31)]  
@@ -238,13 +238,13 @@ Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in e
   
 #### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Zum Erstellen und Testen der Lösung SignatureHelpTest  
   
-1.  Erstellen Sie die Projektmappe.  
+1. Erstellen Sie die Projektmappe.  
   
-2.  Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
+2. Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
   
-3.  Erstellen Sie eine Textdatei und geben Sie Text an, der das Wort "hinzufügen" sowie eine öffnende Klammer ein.  
+3. Erstellen Sie eine Textdatei und geben Sie Text an, der das Wort "hinzufügen" sowie eine öffnende Klammer ein.  
   
-4.  Nachdem Sie die öffnende Klammer eingeben, sollte eine QuickInfo, die zeigt eine Liste mit den zwei Signaturen für die `add()` Methode.  
+4. Nachdem Sie die öffnende Klammer eingeben, sollte eine QuickInfo, die zeigt eine Liste mit den zwei Signaturen für die `add()` Methode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

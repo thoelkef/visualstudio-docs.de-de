@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108182"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Vorgehensweise: Verwenden der WPF-Strukturschnellansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,35 +33,35 @@ Sie können den WPF Tree visualizer (WPF-Strukturschnellansicht) verwenden, um d
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>So öffnen Sie die WPF-Strukturschnellansicht  
   
-1.  Klicken Sie in einem DataTip, in einem **Überwachungsfenster**, im Fenster **Auto** oder im Fenster **Lokal** neben dem Namen des WPF-Objekts auf den Pfeil neben dem Lupensymbol.  
+1. Klicken Sie in einem DataTip, in einem **Überwachungsfenster**, im Fenster **Auto** oder im Fenster **Lokal** neben dem Namen des WPF-Objekts auf den Pfeil neben dem Lupensymbol.  
   
      Eine Liste von Schnellansichten wird angezeigt.  
   
-2.  Klicken Sie auf **WPF Tree Visualizer** (WPF-Strukturschnellansicht).  
+2. Klicken Sie auf **WPF Tree Visualizer** (WPF-Strukturschnellansicht).  
   
 ### <a name="to-search-the-visual-tree"></a>So durchsuchen Sie die visuelle Struktur  
   
--   Geben Sie im Bereich **Visuelle Struktur** im Feld **Suchen** die Zeichenfolge ein, die Sie suchen möchten.  
+- Geben Sie im Bereich **Visuelle Struktur** im Feld **Suchen** die Zeichenfolge ein, die Sie suchen möchten.  
   
      Der WPF Tree visualizer (WPF-Strukturschnellansicht) zeigt sofort das erste Objekt in der visuellen Struktur an, das zur Zeichenfolge passt, die Sie eingegeben haben. Geben Sie mehr Zeichen ein, um eine genauere Übereinstimmung zu erzielen.  
   
-    -   Klicken Sie auf **Weiter**, um zur nächsten Übereinstimmung innerhalb der visuellen Struktur zu wechseln.  
+    - Klicken Sie auf **Weiter**, um zur nächsten Übereinstimmung innerhalb der visuellen Struktur zu wechseln.  
   
-    -   Klicken Sie auf **Zurück**, um zurück zur vorherigen Übereinstimmung zu wechseln.  
+    - Klicken Sie auf **Zurück**, um zurück zur vorherigen Übereinstimmung zu wechseln.  
   
-    -   Klicken Sie auf **Löschen**, um die Suchkriterien zu löschen.  
+    - Klicken Sie auf **Löschen**, um die Suchkriterien zu löschen.  
   
 ### <a name="to-search-the-properties-list"></a>So durchsuchen Sie die Eigenschaftenliste  
   
--   In der **Eigenschaften** _Name_**:**_Typ_ Bereich der in gesucht werden soll, geben Sie die Zeichenfolge der **filtern**Feld.  
+- In der **Eigenschaften** _Name_**:**_Typ_ Bereich der in gesucht werden soll, geben Sie die Zeichenfolge der **filtern**Feld.  
   
      Die WPF-Strukturschnellansicht zeigt sofort die Eigenschaften an, die zur eingegebenen Zeichenfolge passen, und in der Liste werden nur die Eigenschaften angezeigt, die zur eingegebenen Zeichenfolge passen. Geben Sie mehr Zeichen ein, um eine genauere Übereinstimmung zu erzielen.  
   
-    -   Klicken Sie auf **Löschen**, um die Suchkriterien zu löschen.  
+    - Klicken Sie auf **Löschen**, um die Suchkriterien zu löschen.  
   
 ### <a name="to-close-the-visualizer"></a>So schließen Sie die Schnellansicht  
   
--   Klicken Sie rechts oben im Dialogfeld auf das Symbol **Schließen**.  
+- Klicken Sie rechts oben im Dialogfeld auf das Symbol **Schließen**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Verwenden einer Schnellansicht](../misc/how-to-use-a-visualizer.md)   

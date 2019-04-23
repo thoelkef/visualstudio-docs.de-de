@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097322"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
@@ -74,17 +74,17 @@ Es ist einfach, zeigen Sie die Variablen mithilfe der Debuggerfenster wie die **
 
 #### <a name="to-create-an-object-id"></a>Um eine Objekt-ID zu erstellen.
 
-1.  Legen Sie einen Haltepunkt in der Nähe einer Variablen, die Sie nachverfolgen möchten.
+1. Legen Sie einen Haltepunkt in der Nähe einer Variablen, die Sie nachverfolgen möchten.
 
-2.  Starten Sie den Debugger (**F5**) und die Ausführung am Haltepunkt beendet.
+2. Starten Sie den Debugger (**F5**) und die Ausführung am Haltepunkt beendet.
 
 3. Suchen Sie die Variable in der **"lokal"** Fenster (**Debuggen > Windows > "lokal"**) mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID**.
 
     ![Erstellen Sie eine ObjectID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
+4. Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
 
-5.  Mit der rechten Maustaste der Objekt-ID-Variable, und wählen Sie **Überwachung hinzufügen**.
+5. Mit der rechten Maustaste der Objekt-ID-Variable, und wählen Sie **Überwachung hinzufügen**.
 
 Weitere Informationen finden Sie unter [erstellen Sie eine Objekt-ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Wenn Sie die Arten von Problemen zu debuggen, die für Multithreadanwendungen be
 
 #### <a name="to-show-threads-in-your-source-code"></a>Um Threads in Ihrem Quellcode anzuzeigen.
 
-1.  Während des Debuggens, klicken Sie auf die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") in die **Debuggen** Symbolleiste.
+1. Während des Debuggens, klicken Sie auf die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") in die **Debuggen** Symbolleiste.
 
-2.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile, die Sie sehen eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , das zwei Fäden ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
+2. Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile, die Sie sehen eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , das zwei Fäden ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
 
     Beachten Sie, dass ein Threadmarker teilweise kann, können Sie durch einen Haltepunkt abgedeckt werden.
 
-3.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads.
+3. Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads.
 
     Sie können auch den Speicherort der Threads im Anzeigen der [Fenster "Parallele Stapel"](../debugger/get-started-debugging-multithreaded-apps.md).
 
