@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21761ece78967c7c644deecf947c8aac0027d0c7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4f13ffca7dc39be65f8a36a9b242bf7f0f82dc4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061527"
 ---
 # <a name="automation-model-overview"></a>Übersicht über das Automatisierungsmodell
 Das Automatisierungsmodell besteht aus einem Satz von Objekten, die mit denen Sie ein Visual Studio-add-in oder eine Erweiterung schreiben können. Ein Add-in ist eine Anwendung, die Visual Studio-Umgebung bearbeiten kann, und Automatisieren allgemeiner Aufgaben. Visual Studio-Erweiterung kann Erstellen von benutzerdefinierten Komponenten für Visual Studio oder die Funktionalität des standard-Komponenten wie z. B. den Text-Editor hinzufügen.
@@ -32,13 +32,13 @@ Das Automatisierungsmodell besteht aus einem Satz von Objekten, die mit denen Si
 
  Stellen, in dem Sie die Erweitern des Automatisierungsmodells der Umgebung berücksichtigen können:
 
--   Projekt
+- Projekt
 
--   Dokument
+- Dokument
 
--   Code
+- Code
 
--   Build
+- Build
 
 Weitere Informationen zu Automation finden Sie unter [Automatisierung und Erweiterbarkeit für Visual Studio](../extensibility-in-visual-studio.md). In diesem Dokument und die Dokumente wird Links, um Ihnen zu treffen von Entscheidungen in Bezug auf, wie Sie Automation für das VSPackage bereitgestellt werden sollen.
 

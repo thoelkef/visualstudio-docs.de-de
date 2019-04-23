@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29495fb297670b6b297e17d40bfb2bcdc0025862
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 271d9625ba5c41599af6c92504b3f17a166a2ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061775"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Eingabe und eine neue Textdatei als Ausgabe generiert. Beispielsweise können Sie Textvorlagen um Visual Basic- oder C#-Code zu generieren, oder Sie können einen HTML-Bericht generieren.
@@ -34,22 +34,22 @@ Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Ei
 ## <a name="the-engine"></a>Die Engine
  Das Modul empfängt die Vorlage als eine Zeichenfolge mit dem Host, der alle Dateien verarbeitet, die im Transformationsprozess verwendet werden. Das Modul fragt dann den Host aus, um eine beliebige benutzerdefinierten anweisungsprozessoren und andere Aspekte der Umgebung zu suchen. Die Engine wird dann kompiliert und führt die generierten Transformationsklasse. Das Modul gibt den generierten Text zurück, an den Host, der normalerweise den Text einer Datei speichert.
 
-## <a name="the-host"></a>Der Host
+## <a name="the-host"></a>Hosting
  Der Host ist verantwortlich für alle Elemente, die mit der Umgebung außerhalb des Transformationsvorgangs, einschließlich der folgenden verknüpft:
 
--   Suchen von Text und Binärdateien, die von der Engine oder ein anweisungsprozessor angefordert. Der Host kann es sich um Verzeichnisse und den globalen Assemblycache nach Assemblys durchsuchen. Der Host kann benutzerdefinierten anweisungsprozessor-Code für das Modul suchen. Der Host kann auch suchen und Lesen von Textdateien und ihren Inhalt als Zeichenfolgen zurückgegeben.
+- Suchen von Text und Binärdateien, die von der Engine oder ein anweisungsprozessor angefordert. Der Host kann es sich um Verzeichnisse und den globalen Assemblycache nach Assemblys durchsuchen. Der Host kann benutzerdefinierten anweisungsprozessor-Code für das Modul suchen. Der Host kann auch suchen und Lesen von Textdateien und ihren Inhalt als Zeichenfolgen zurückgegeben.
 
--   Bereitstellen von Listen mit standard-Assemblys und Namespaces, die von der Engine verwendet werden, um die generierten Transformationsklasse zu erstellen.
+- Bereitstellen von Listen mit standard-Assemblys und Namespaces, die von der Engine verwendet werden, um die generierten Transformationsklasse zu erstellen.
 
--   Bereitstellen der Anwendungsdomäne, die verwendet wird, wenn das Modul kompiliert und führt die generierten Transformationsklasse. Eine separate Anwendungsdomäne wird verwendet, um die hostanwendung von Fehlern im Vorlagencode zu schützen.
+- Bereitstellen der Anwendungsdomäne, die verwendet wird, wenn das Modul kompiliert und führt die generierten Transformationsklasse. Eine separate Anwendungsdomäne wird verwendet, um die hostanwendung von Fehlern im Vorlagencode zu schützen.
 
--   Schreiben die generierte Ausgabedatei an.
+- Schreiben die generierte Ausgabedatei an.
 
--   Wenn die standarderweiterung für die generierte Ausgabedatei an.
+- Wenn die standarderweiterung für die generierte Ausgabedatei an.
 
--   Behandeln von Fehlern bei der Textvorlagentransformation. Beispielsweise kann der Host die Fehler in der Benutzeroberfläche anzeigen oder in eine Datei schreiben. (In Visual Studio werden Fehler im Fenster mit Fehlermeldungen angezeigt.)
+- Behandeln von Fehlern bei der Textvorlagentransformation. Beispielsweise kann der Host die Fehler in der Benutzeroberfläche anzeigen oder in eine Datei schreiben. (In Visual Studio werden Fehler im Fenster mit Fehlermeldungen angezeigt.)
 
--   Einen Erforderlicher Parameterwert bereit, wenn ein Benutzer eine Richtlinie aufgerufen hat, ohne einen Wert. Der anweisungsprozessor kann Geben Sie den Namen der Anweisung und der Parameter, und bitten Sie den Host auf einen Standardwert angeben, sofern vorhanden.
+- Einen Erforderlicher Parameterwert bereit, wenn ein Benutzer eine Richtlinie aufgerufen hat, ohne einen Wert. Der anweisungsprozessor kann Geben Sie den Namen der Anweisung und der Parameter, und bitten Sie den Host auf einen Standardwert angeben, sofern vorhanden.
 
 ## <a name="directives-and-directive-processors"></a>Anweisungen und Anweisungsprozessoren
  Eine Direktive ist ein Befehl in der Textvorlage. Es stellt Parameter für den Generierungsprozess bereit. In der Regel definieren Direktiven, die Quelle und Typ des Modells oder andere Eingabe und die Dateinamenerweiterung der Ausgabedatei.

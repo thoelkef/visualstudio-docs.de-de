@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063770"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Wenn Sie eine Datei des Assistenten zum Erstellen, sollten Sie auch die folgenden Probleme.  
 
--   Ein optionales Feld, für das es keine sinnvollen Daten gibt, sollte als Platzhalter 0 (null) enthalten.  
+- Ein optionales Feld, für das es keine sinnvollen Daten gibt, sollte als Platzhalter 0 (null) enthalten.  
 
--   Wenn kein lokalisierter Name angegeben ist, wird der relativen Pfadnamen in der Assistentendatei verwendet.  
+- Wenn kein lokalisierter Name angegeben ist, wird der relativen Pfadnamen in der Assistentendatei verwendet.  
 
--   DLLPath überschreibt CLSID-Paket für den Symbolspeicherort.  
+- DLLPath überschreibt CLSID-Paket für den Symbolspeicherort.  
 
--   Wenn kein Symbol definiert ist, ersetzt die IDE das Standardsymbol einer Datei, die diese Erweiterung hat.  
+- Wenn kein Symbol definiert ist, ersetzt die IDE das Standardsymbol einer Datei, die diese Erweiterung hat.  
 
--   Wenn kein vorgeschlagener Basisname angegeben wird, wird "Project" verwendet.  
+- Wenn kein vorgeschlagener Basisname angegeben wird, wird "Project" verwendet.  
 
--   Wenn Sie die VSZ-Dateien, Ordner oder Vorlagendateien löschen, müssen Sie auch die zugehörigen Datensätze aus der VSDIR-Datei entfernen.  
+- Wenn Sie die VSZ-Dateien, Ordner oder Vorlagendateien löschen, müssen Sie auch die zugehörigen Datensätze aus der VSDIR-Datei entfernen.  
 
 ## <a name="see-also"></a>Siehe auch  
  [Assistenten](../../extensibility/internals/wizards.md)   

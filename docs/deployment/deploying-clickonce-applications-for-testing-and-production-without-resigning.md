@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065505"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Test- und produktionsumgebungen Server ohne erneutes Signieren
 In diesem Artikel wird beschrieben, ein Feature von ClickOnce in .NET Framework Version 3.5, die die Bereitstellung von ClickOnce-Anwendungen über mehrere Speicherorte zu, ohne erneutes Signieren oder Ändern der ClickOnce können-Manifeste eingeführt.
@@ -34,9 +34,9 @@ In diesem Artikel wird beschrieben, ein Feature von ClickOnce in .NET Framework 
 
  Drittanbieter-Entwicklern und ISVs können auf dieses Feature, sich dafür entscheiden erleichtert Ihnen die für ihre Kunden ihre Anwendungen zu aktualisieren. Diese Funktion kann in den folgenden Situationen verwendet werden:
 
--   Wenn eine Anwendung, nicht für die Erstinstallation einer Anwendung zu aktualisieren.
+- Wenn eine Anwendung, nicht für die Erstinstallation einer Anwendung zu aktualisieren.
 
--   Wenn nur eine Konfiguration der Anwendung auf einem Computer vorhanden ist. Wenn eine Anwendung konfiguriert ist, um auf zwei verschiedenen Datenbanken verweisen, können nicht Sie z. B. diese Funktion verwenden.
+- Wenn nur eine Konfiguration der Anwendung auf einem Computer vorhanden ist. Wenn eine Anwendung konfiguriert ist, um auf zwei verschiedenen Datenbanken verweisen, können nicht Sie z. B. diese Funktion verwenden.
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>Bereitstellungsmanifeste "deploymentProvider" ausschließen
  In .NET Framework 2.0 und .NET Framework 3.0, muss jede ClickOnce-Anwendung, die für die offlineverfügbarkeit auf dem System installiert Auflisten einer `deploymentProvider` in das Bereitstellungsmanifest. Die `deploymentProvider` wird bezeichnet als Speicherort für die Aktualisierung; es ist der Speicherort, in dem ClickOnce Anwendungsupdates überprüft. Diese Anforderung sowie die Notwendigkeit von App-Herausgeber ihre Bereitstellungen, sich nur schwer für ein Unternehmen eine ClickOnce-Anwendung von einem Lieferanten oder anderen von Drittanbietern zu aktualisieren. Es erleichtert auch schwieriger zu derselben Anwendung von mehreren Standorten in einem Netzwerk bereitstellen.
@@ -59,7 +59,7 @@ In diesem Artikel wird beschrieben, ein Feature von ClickOnce in .NET Framework 
   Im zweiten Beispiel, die Sie Veröffentlichen einer ClickOnce-Anwendung, der angibt, `deploymentProvider`, und Sie dann entscheiden, um ihn zu entfernen. Nachdem die neue Version ohne `deploymentProvider` wird heruntergeladen, für Clients nicht den Pfad für Updates verwendet wird, bis Sie eine Version Ihrer Anwendung freigeben, die umleiten `deploymentProvider` wiederhergestellt. Wie bei der ersten Beispiel `deploymentProvider` muss zunächst in den aktuellen Speicherort der Update, nicht auf den neuen Pfad verweisen. In diesem Fall, wenn Sie versuchen, fügen Sie eine `deploymentProvider` , die auf http://subdomain.adatum.com/MyApplication/, und klicken Sie dann das nächste Update ein Fehler auftritt.
 
 ## <a name="create-a-deployment"></a>Erstellen einer Bereitstellung
- Schritt-für-Schritt-Anleitungen zum Erstellen von Bereitstellungen, die von verschiedenen Netzwerkorten bereitgestellt werden können, finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationenbeibehält](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ Schritt-für-Schritt-Anleitungen zum Erstellen von Bereitstellungen, die von verschiedenen Netzwerkorten bereitgestellt werden können, finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

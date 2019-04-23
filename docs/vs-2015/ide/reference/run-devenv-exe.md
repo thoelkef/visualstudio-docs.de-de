@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8f941aaff6b4f5f97a298549e91c29ffb19e84ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065674"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="remarks"></a>Anmerkungen  
  Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter startet die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.  
   
--   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.  
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.  
   
--   Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
+- Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
   
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel wird die Projektmappe `MySolution` mithilfe der aktiven Bereitstellungskonfiguration ausgeführt.  

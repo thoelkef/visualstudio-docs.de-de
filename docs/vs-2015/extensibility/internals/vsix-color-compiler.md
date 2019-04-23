@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063672"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -149,15 +149,15 @@ Das Visual Studio-Erweiterung Farbe Compiler-Tool ist eine Konsolenanwendung, di
   
  **Beispiele**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Hinweise  
   
--   Dieses Tool erfordert, dass die neueste Version der VC++-Laufzeit installiert werden.  
+- Dieses Tool erfordert, dass die neueste Version der VC++-Laufzeit installiert werden.  
   
--   Nur einzelne Dateien werden unterstützt. Das massenkonvertieren über Ordnerpfade wird nicht unterstützt.  
+- Nur einzelne Dateien werden unterstützt. Das massenkonvertieren über Ordnerpfade wird nicht unterstützt.  
   
 ## <a name="sample-output"></a>Beispielausgabe:  
  Die PKGDEF-Datei, die vom Tool generierten sollte dieser ähneln dem folgenden Schlüssel:  

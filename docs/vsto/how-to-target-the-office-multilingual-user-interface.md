@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af26cae55a9a13f7aaaeb2297b19c81105f438
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063984"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Vorgehensweise: Die mehrsprachige Benutzeroberfläche von Office als Ziel
   Die Multilingual User Interface (MUI) ist ein Microsoft Office-Feature, das der Endbenutzer die Möglichkeit zum Ändern der Sprache der Benutzeroberfläche (UI) bietet. Beispielsweise kann ein Endbenutzer mit einer englischen Benutzeroberfläche arbeiten die Sprache der Benutzeroberfläche auf Spanisch ändern.
@@ -33,7 +33,7 @@ ms.locfileid: "56635682"
 
 ## <a name="to-check-the-current-office-ui-setting"></a>Überprüfen Sie die aktuelle Einstellung für die Office-Benutzeroberfläche
 
-1.  Verwenden der <xref:System.Threading.Thread.CurrentUICulture%2A> Eigenschaft des aktuellen Threads. Legen Sie die Sprache des Ihre UI-Zeichenfolgen entsprechend die Sprache ein, die die Version von Office, die derzeit auf dem Computer des Benutzers ausgeführt wird.
+1. Verwenden der <xref:System.Threading.Thread.CurrentUICulture%2A> Eigenschaft des aktuellen Threads. Legen Sie die Sprache des Ihre UI-Zeichenfolgen entsprechend die Sprache ein, die die Version von Office, die derzeit auf dem Computer des Benutzers ausgeführt wird.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]

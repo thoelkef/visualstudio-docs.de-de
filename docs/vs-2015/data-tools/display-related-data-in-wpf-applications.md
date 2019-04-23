@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061176"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Anzeigen zugehöriger Daten in WPF-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ In einigen Anwendungen empfiehlt es sich zum Arbeiten mit Daten, die stammen aus
   
 ## <a name="to-create-controls-that-display-related-records"></a>So erstellen Sie Steuerelemente, die verknüpfte Datensätze anzeigen  
   
-1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.  
+1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.  
   
-2.  Klicken Sie auf **Neue Datenquelle hinzufügen**, und führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus.  
+2. Klicken Sie auf **Neue Datenquelle hinzufügen**, und führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus.  
   
-3.  Öffnen Sie den WPF-Designer, und stellen Sie sicher, dass der Designer ein Container enthält, die ein gültiges Ablageziel für die Elemente in der **Datenquellen** Fenster.  
+3. Öffnen Sie den WPF-Designer, und stellen Sie sicher, dass der Designer ein Container enthält, die ein gültiges Ablageziel für die Elemente in der **Datenquellen** Fenster.  
   
      Weitere Informationen über gültige Ablageziele finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-4.  In der **Datenquellen** Fenster, erweitern Sie den Knoten, die die übergeordnete Tabelle darstellt oder ein Objekt in der Beziehung. Die übergeordnete Tabelle oder das Objekt ist auf der Seite "1" einer 1: n Beziehung.  
+4. In der **Datenquellen** Fenster, erweitern Sie den Knoten, die die übergeordnete Tabelle darstellt oder ein Objekt in der Beziehung. Die übergeordnete Tabelle oder das Objekt ist auf der Seite "1" einer 1: n Beziehung.  
   
-5.  Ziehen Sie den übergeordneten Knoten (oder einzelne Elemente im übergeordneten Knoten) aus der **Datenquellen** auf ein gültiges Ablageziel im Designer.  
+5. Ziehen Sie den übergeordneten Knoten (oder einzelne Elemente im übergeordneten Knoten) aus der **Datenquellen** auf ein gültiges Ablageziel im Designer.  
   
      Visual Studio generiert XAML, das neue datengebundene Steuerelemente für jedes Element erstellt, die Sie ziehen. Das XAML fügt auch ein neues <xref:System.Windows.Data.CollectionViewSource> für die übergeordnete Tabelle oder ein Objekt, das die Ressourcen des Ablageziels. Für einige Datenquellen generiert Visual Studio auch Code aus, um die Daten in die übergeordnete Tabelle oder das Objekt laden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  In der **Datenquellen** Fenster Suchen Sie die zugehörige untergeordnete Tabelle oder das Objekt. Verknüpfte untergeordnete Tabellen und Objekte werden als erweiterbare Knoten am unteren Rand des übergeordneten Knotens der Liste der Daten.  
+6. In der **Datenquellen** Fenster Suchen Sie die zugehörige untergeordnete Tabelle oder das Objekt. Verknüpfte untergeordnete Tabellen und Objekte werden als erweiterbare Knoten am unteren Rand des übergeordneten Knotens der Liste der Daten.  
   
-7.  Ziehen Sie den untergeordneten Knoten (oder einzelne Elemente in der untergeordnete Knoten) aus der **Datenquellen** auf ein gültiges Ablageziel im Designer.  
+7. Ziehen Sie den untergeordneten Knoten (oder einzelne Elemente in der untergeordnete Knoten) aus der **Datenquellen** auf ein gültiges Ablageziel im Designer.  
   
      Visual Studio generiert XAML, das neue datengebundene Steuerelemente für jedes der Elemente erstellt, die Sie ziehen. Das XAML fügt auch ein neues <xref:System.Windows.Data.CollectionViewSource> für die untergeordnete Tabelle oder ein Objekt, das die Ressourcen des Ablageziels. Diese neue <xref:System.Windows.Data.CollectionViewSource> an die übergeordnete Tabelle oder ein Objekt, das Sie gerade in den Designer gezogen haben die Eigenschaft gebunden ist. Für einige Datenquellen generiert Visual Studio auch Code aus, um die Daten in die untergeordnete Tabelle oder ein Objekt zu laden.  
   

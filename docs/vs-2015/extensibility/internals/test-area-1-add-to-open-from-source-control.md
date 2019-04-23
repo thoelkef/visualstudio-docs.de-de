@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064855"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie in / öffnen aus der Quellcodeverwaltung hinzu.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von P
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  
  Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen:  
   
--   Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aus der quellcodeverwaltung öffnen: **Datei**, **öffnen**, **Projekt**/**Lösung**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
+- Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aus der quellcodeverwaltung öffnen: **Datei**, **öffnen**, **Projekt**/**Lösung**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
   
--   Öffnen Sie für andere Quellcodeverwaltungs-Plug-ins aus der quellcodeverwaltung: **Datei**, **Quellcodeverwaltung**, **aus Quellcodeverwaltung öffnen**.  
+- Öffnen Sie für andere Quellcodeverwaltungs-Plug-ins aus der quellcodeverwaltung: **Datei**, **Quellcodeverwaltung**, **aus Quellcodeverwaltung öffnen**.  
   
--   Zur quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Quellcodeverwaltungsdatei Lösung hinzugefügt**, **Quellcodeverwaltung**, **ausgewählte Projekte zur QuellcodeverwaltungHinzufügen**.  
+- Zur quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Quellcodeverwaltungsdatei Lösung hinzugefügt**, **Quellcodeverwaltung**, **ausgewählte Projekte zur QuellcodeverwaltungHinzufügen**.  
   
--   Im Kontextmenü (Projekt/Projektmappe), **Projektmappe zur Quellcodeverwaltung hinzufügen**.  
+- Im Kontextmenü (Projekt/Projektmappe), **Projektmappe zur Quellcodeverwaltung hinzufügen**.  
   
--   Fügen Sie aus der quellcodeverwaltung hinzu: **Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**.  
+- Fügen Sie aus der quellcodeverwaltung hinzu: **Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**.  
   
--   Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Hinzufügen von Quelle Steuerelement steht auch auf **Datei**, **hinzufügen**, **vorhandenes Projekt**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
+- Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Hinzufügen von Quelle Steuerelement steht auch auf **Datei**, **hinzufügen**, **vorhandenes Projekt**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
   
     > [!NOTE]
     >  Ein Pfad von einer lokalen Datei oder eine lokale IIS (Webserver) kann in diesem Test verwendet werden.  
   
 ## <a name="expected-behavior"></a>Es wird erwartet  
   
--   Für jede unterstützte Projekttyp muss ein Benutzer können Sie "Hinzufügen" und "Öffnen in" Datenquellen-Steuerelement.  
+- Für jede unterstützte Projekttyp muss ein Benutzer können Sie "Hinzufügen" und "Öffnen in" Datenquellen-Steuerelement.  
   
--   Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *ProjectName*> .vspscc-Datei (Projektdatei Hinweis) erstellt wird. Es enthält Informationen von Ausschluss-Datei Liste und die Verbindungszeichenfolge. Diese Datei kann nicht gelöscht werden, da sie Informationen, die spezifisch für das Projekt enthält.  
+- Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *ProjectName*> .vspscc-Datei (Projektdatei Hinweis) erstellt wird. Es enthält Informationen von Ausschluss-Datei Liste und die Verbindungszeichenfolge. Diese Datei kann nicht gelöscht werden, da sie Informationen, die spezifisch für das Projekt enthält.  
   
--   Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Tripel S)-Datei erstellt wird. Die Textdatei enthält die Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Hinweis-Projektdatei. Diese Datei besteht nur vorübergehend und nur im Quellcode-Verwaltungsdatenbank vorhanden ist.  
+- Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Tripel S)-Datei erstellt wird. Die Textdatei enthält die Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Hinweis-Projektdatei. Diese Datei besteht nur vorübergehend und nur im Quellcode-Verwaltungsdatenbank vorhanden ist.  
   
--   Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank vorhanden ist wird lokal in eine temporäre Datei erstellt. Diese Datei enthält den Pfad aus dem Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.  
+- Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank vorhanden ist wird lokal in eine temporäre Datei erstellt. Diese Datei enthält den Pfad aus dem Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.  
   
--   Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen auf (sehen Sie sich, Get usw.) ausführen.  
+- Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen auf (sehen Sie sich, Get usw.) ausführen.  
   
 ## <a name="test-cases"></a>Testfälle  
  Im folgenden sind bestimmte Testfälle für das Hinzufügen zu / von Testbereich Quellcodeverwaltung öffnen.  

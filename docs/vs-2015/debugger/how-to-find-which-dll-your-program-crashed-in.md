@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060565"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Vorgehensweise: Feststellen Sie, welche DLL Absturz des Programms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ HINWEIS]
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>So ermitteln Sie im Fenster "Module" die Stelle, die einen Absturz verursacht hat  
   
-1.  Notieren Sie die Adresse, an der der Absturz stattgefunden hat.  
+1. Notieren Sie die Adresse, an der der Absturz stattgefunden hat.  
   
-2.  Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Module**.  
+2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Module**.  
   
-3.  Suchen Sie im Fenster **Module** die Spalte **Adresse**. Zur Anzeige der Spalte müssen Sie möglicherweise die Bildlaufleiste verwenden.  
+3. Suchen Sie im Fenster **Module** die Spalte **Adresse**. Zur Anzeige der Spalte müssen Sie möglicherweise die Bildlaufleiste verwenden.  
   
-4.  Klicken Sie im oberen Spaltenbereich auf die Schaltfläche **Adresse**, um die DLLs der Adresse nach zu sortieren.  
+4. Klicken Sie im oberen Spaltenbereich auf die Schaltfläche **Adresse**, um die DLLs der Adresse nach zu sortieren.  
   
-5.  Durchsuchen Sie die sortierte Liste nach der DLL, in deren Adressbereich die vom Absturz betroffene Stelle zu finden ist.  
+5. Durchsuchen Sie die sortierte Liste nach der DLL, in deren Adressbereich die vom Absturz betroffene Stelle zu finden ist.  
   
-6.  Namen und Pfad der DLL finden Sie in der Spalte **Name** bzw. **Pfad**.  
+6. Namen und Pfad der DLL finden Sie in der Spalte **Name** bzw. **Pfad**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Debuggen von systemeigenen DLLs](../debugger/how-to-debug-native-dlls.md)   

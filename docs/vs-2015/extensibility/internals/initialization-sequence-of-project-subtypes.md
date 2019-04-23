@@ -10,12 +10,12 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79bcd3981da8d8aee37e802b2463b4b33b60c430
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5594d54c188c2f561dd66229e808e48068ba41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062703"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Initialisierungssequenz von Projektuntertypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Die Umgebung erstellt ein Projekt durch Aufrufen der Basis projektfactoryimpleme
   
     Im folgenden Abschnitt wird die Initialisierungsschritte.  
   
-   1.  Implementierung der Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> Methodenaufrufe "HrCreateInnerProj'' '-Methode durch die folgende Funktionsdeklaration:  
+   1. Implementierung der Umgebung die <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> Methodenaufrufe "HrCreateInnerProj'' '-Methode durch die folgende Funktionsdeklaration:  
   
        ```  
        HRESULT HrCreateInnerProj  
@@ -50,13 +50,13 @@ Die Umgebung erstellt ein Projekt durch Aufrufen der Basis projektfactoryimpleme
   
         Wenn diese Funktion wird aufgerufen zum ersten Mal, d. h. für den äußeren Projektuntertyp, die Parameter `pOuter` und `pOwner` als übergeben `null` und die Funktion legt fest, den äußeren Projektuntertyp `IUnknown` zu `pOuter`.  
   
-   2.  Als Nächstes die Umgebung ruft `HrCreateInnerProj` -Funktion mit dem zweiten Projekttyp-GUID in der Liste. Diese GUID entspricht der zweiten inneren Projektuntertyp einzelschrittausführung in Richtung Basisprojekts in der Aggregation-Sequenz.  
+   2. Als Nächstes die Umgebung ruft `HrCreateInnerProj` -Funktion mit dem zweiten Projekttyp-GUID in der Liste. Diese GUID entspricht der zweiten inneren Projektuntertyp einzelschrittausführung in Richtung Basisprojekts in der Aggregation-Sequenz.  
   
-   3.  Die `pOuter` verweist jetzt auf die `IUnknown` des äußersten projektuntertyps, und `HrCreateInnerProj` ruft Ihre Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> gefolgt von einem Aufruf für Ihre Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. In <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> Methode, die Sie das steuernde übergeben `IUnknown` des äußersten projektuntertyps, `pOuter`. Das Projekt im Besitz (inneren Projektuntertyp) muss hier die Projekt-Objekt zu erstellen. In der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> übergeben Sie einen Zeiger auf die Implementierung der `IUnknown` des inneren Projekts, das aggregiert wird. Diese beiden Methoden erstellen, das Aggregation-Objekt, und Ihre Implementierungen müssen Sie COM-Aggregationsregeln, um sicherzustellen, dass es sich bei einem Projektuntertyp nicht am Ende ist, einen Verweiszähler auf sich selbst enthält.  
+   3. Die `pOuter` verweist jetzt auf die `IUnknown` des äußersten projektuntertyps, und `HrCreateInnerProj` ruft Ihre Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> gefolgt von einem Aufruf für Ihre Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. In <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> Methode, die Sie das steuernde übergeben `IUnknown` des äußersten projektuntertyps, `pOuter`. Das Projekt im Besitz (inneren Projektuntertyp) muss hier die Projekt-Objekt zu erstellen. In der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> übergeben Sie einen Zeiger auf die Implementierung der `IUnknown` des inneren Projekts, das aggregiert wird. Diese beiden Methoden erstellen, das Aggregation-Objekt, und Ihre Implementierungen müssen Sie COM-Aggregationsregeln, um sicherzustellen, dass es sich bei einem Projektuntertyp nicht am Ende ist, einen Verweiszähler auf sich selbst enthält.  
   
-   4.  `HrCreateInnerProj` Ruft die Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bei dieser Methode führt der Projektuntertyp Initialisierung. Sie können z. B. Projektmappenereignissen in registrieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
+   4. `HrCreateInnerProj` Ruft die Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bei dieser Methode führt der Projektuntertyp Initialisierung. Sie können z. B. Projektmappenereignissen in registrieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
   
-   5.  `HrCreateInnerProj` wird rekursiv aufgerufen werden, bis die letzte GUID (die Basis-Projekt) in der Liste erreicht ist. Für jeden dieser Aufrufe werden die Schritte, bis d, C wiederholt. `pOuter` verweist auf den äußeren Projektuntertyp `IUnknown` für jede Ebene der Aggregation.  
+   5. `HrCreateInnerProj` wird rekursiv aufgerufen werden, bis die letzte GUID (die Basis-Projekt) in der Liste erreicht ist. Für jeden dieser Aufrufe werden die Schritte, bis d, C wiederholt. `pOuter` verweist auf den äußeren Projektuntertyp `IUnknown` für jede Ebene der Aggregation.  
   
    Im folgende Beispiel erläutert die programmgesteuerte in eine ungefähre Darstellung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> -Methode wird von der Umgebung implementiert. Der Code ist nur ein Beispiel. es nicht kompiliert werden soll, und alle fehlerüberprüfung wurde aus Gründen der Übersichtlichkeit entfernt.  
   

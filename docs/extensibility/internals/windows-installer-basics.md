@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066259"
 ---
 # <a name="windows-installer-basics"></a>Grundlagen zu Windows Installer
 Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen oder Softwareprodukte auf dem Computer eines Benutzers, Ausführen dieser Aufgaben in so genannten Windows Installer-Komponenten (manchmal als WICs oder nur Komponenten bezeichnet). Eine GUID identifiziert jedes WIC, die die grundlegende Einheit der Installation und die verweiszählung für Einrichtungen, die mit Windows Installer ist.
@@ -57,15 +57,15 @@ Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen ode
 
 #### <a name="installer-enforced-rules"></a>Erzwungene Installer-Regeln
 
--   Alle Dateien in einer bestimmten Komponente müssen in dasselbe Verzeichnis installiert sein. Im Gegensatz dazu müssen separate Ordner installierte Dateien gehören, um Komponenten zu trennen.
+- Alle Dateien in einer bestimmten Komponente müssen in dasselbe Verzeichnis installiert sein. Im Gegensatz dazu müssen separate Ordner installierte Dateien gehören, um Komponenten zu trennen.
 
--   Es können nur ein Pfad pro Komponente vorhanden sein. Der Schlüsselpfad ist einfach eine Datei oder einen Registrierungsschlüssel Schlüssel, der die ganze Komponente darstellt.
+- Es können nur ein Pfad pro Komponente vorhanden sein. Der Schlüsselpfad ist einfach eine Datei oder einen Registrierungsschlüssel Schlüssel, der die ganze Komponente darstellt.
 
 #### <a name="component-provider-responsibilities"></a>Komponentenanbieter Aufgaben
 
--   Alle zwei Ressourcen, die getrennt in zukünftigen Versionen ausgeliefert werden können, sollte in separate Komponenten vorhanden sein. Ressourcen sollten in der gleichen Komponente gruppiert werden, nur, wenn Sie sicher sind, dass diese Ressourcen getrennt nie ausgeliefert werden. Es wird in der Tat empfohlen, alle primären Ressourcen (z. B. DLLs) in separaten WICs vorhanden sein. Weitere Informationen finden Sie unter [Installationsprogrammkomponenten definieren](/windows/desktop/Msi/defining-installer-components).
+- Alle zwei Ressourcen, die getrennt in zukünftigen Versionen ausgeliefert werden können, sollte in separate Komponenten vorhanden sein. Ressourcen sollten in der gleichen Komponente gruppiert werden, nur, wenn Sie sicher sind, dass diese Ressourcen getrennt nie ausgeliefert werden. Es wird in der Tat empfohlen, alle primären Ressourcen (z. B. DLLs) in separaten WICs vorhanden sein. Weitere Informationen finden Sie unter [Installationsprogrammkomponenten definieren](/windows/desktop/Msi/defining-installer-components).
 
--   Keine Ressource mit versionsverwaltung durch das sollte jemals in mehr als ein WIC liefern.
+- Keine Ressource mit versionsverwaltung durch das sollte jemals in mehr als ein WIC liefern.
 
 ## <a name="see-also"></a>Siehe auch
 - [Was geschieht, wenn die Komponentenregeln unterbrochen werden?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

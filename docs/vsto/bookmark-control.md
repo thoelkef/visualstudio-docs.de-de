@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064010"
 ---
 # <a name="bookmark-control"></a>Bookmark-Steuerelement
   Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Textmarke, die über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann. Die Textmarke kann als Platzhalter verwendet werden, um ein Element oder eine Position in einem Microsoft Office Word-Dokument zu markieren. Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Kombination aus einem <xref:Microsoft.Office.Interop.Word.Bookmark> - und einem <xref:Microsoft.Office.Interop.Word.Range> -Objekt.
@@ -95,19 +95,19 @@ In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ w
 
 Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement verfügbar:
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>Siehe auch
 

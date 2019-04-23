@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6430cd3092f6edbc514c7958e07961ccd234c161
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063009"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer
 Die **Object Relational Designer** (**O/R Designer**) unterstützt das Konzept der Vererbung einer einzelnen Tabelle aus, wie häufig in relationalen Systemen implementierte. Bei der Vererbung einer einzelnen Tabelle gibt es eine einzelne Datenbanktabelle, die Felder sowohl für übergeordnete Informationen als auch für untergeordnete Informationen enthält. Bei relationalen Daten enthält eine Unterscheidungsspalte den Wert, der festlegt, zu welcher Klasse ein bestimmter Datensatz gehört.
@@ -24,27 +24,27 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relatio
 
 ## <a name="to-create-inherited-data-classes"></a>So erstellen Sie geerbte Datenklassen
 
-1.  Öffnen der **O/R Designer** durch Hinzufügen einer **LINQ to SQL-Klassen** Element zu einem vorhandenen Visual Basic oder C# Projekt.
+1. Öffnen der **O/R Designer** durch Hinzufügen einer **LINQ to SQL-Klassen** Element zu einem vorhandenen Visual Basic- oder C#-Projekt.
 
-2.  Ziehen Sie die Tabelle, die Sie als Basisklasse in verwenden möchten die **O/R Designer**.
+2. Ziehen Sie die Tabelle, die Sie als Basisklasse in verwenden möchten die **O/R Designer**.
 
-3.  Ziehen Sie eine zweite Kopie der Tabelle auf die **O/R Designer** und benennen Sie sie. Sie dient als abgeleitete Klasse bzw. Unterklasse.
+3. Ziehen Sie eine zweite Kopie der Tabelle auf die **O/R Designer** und benennen Sie sie. Sie dient als abgeleitete Klasse bzw. Unterklasse.
 
-4.  Klicken Sie in der **Toolbox** auf der Registerkarte **Objektrelationaler Designer** auf **Vererbung**, klicken Sie dann auf die Unterklasse (die umbenannte Tabelle), und stellen Sie eine Verbindung mit der Basisklasse her.
+4. Klicken Sie in der **Toolbox** auf der Registerkarte **Objektrelationaler Designer** auf **Vererbung**, klicken Sie dann auf die Unterklasse (die umbenannte Tabelle), und stellen Sie eine Verbindung mit der Basisklasse her.
 
     > [!NOTE]
     >  Klicken Sie in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie auf die zweite Kopie der in Schritt 3 erstellten Klasse, und klicken Sie dann auf die erste Klasse, die Sie in Schritt 2 erstellt haben. Der Pfeil der Vererbungslinie zeigt auf die erste Klasse.
 
-5.  Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden. Erhalten Sie eine Fehlermeldung, wenn Sie versuchen, die für Zuordnungen verwendete Objekteigenschaften zu löschen: [Eigenschaft \<Eigenschaftenname > kann nicht gelöscht werden, da sie in der Zuordnung teilnimmt \<Zuordnungsname >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden. Erhalten Sie eine Fehlermeldung, wenn Sie versuchen, die für Zuordnungen verwendete Objekteigenschaften zu löschen: [Die Eigenschaft \<Eigenschaftenname > kann nicht gelöscht werden, da sie in der Zuordnung teilnimmt \<Zuordnungsname >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     >  Da eine abgeleitete Klasse die in der Basisklasse definierten Eigenschaften erbt, dürfen in den Klassen nicht dieselben Spalten definiert sein. (Spalten werden als Eigenschaften implementiert.) Sie können die Erstellung von Spalten in der abgeleiteten Klasse ermöglichen, indem Sie in der Basisklasse den Vererbungsmodifizierer für die entsprechende Eigenschaft festlegen. Weitere Informationen finden Sie unter [Grundlagen der Vererbung (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
-6.  Wählen Sie die von-Vererbungszeile in der **O/R Designer**.
+6. Wählen Sie die von-Vererbungszeile in der **O/R Designer**.
 
-7.  In der **Eigenschaften** legen die **Unterscheidungseigenschaft** auf den Namen der Spalte, mit dem die Datensätze in den Klassen unterschieden.
+7. In der **Eigenschaften** legen die **Unterscheidungseigenschaft** auf den Namen der Spalte, mit dem die Datensätze in den Klassen unterschieden.
 
-8.  Legen Sie die Eigenschaft **Abgeleiteter Klassendiskriminatorwert** auf den Wert in der Datenbank fest, der den Datensatz als den geerbten Typ kennzeichnet. (Dies ist der Wert, der in der Unterscheidungsspalte gespeichert und wird verwendet, um die geerbte Klasse gekennzeichnet.)
+8. Legen Sie die Eigenschaft **Abgeleiteter Klassendiskriminatorwert** auf den Wert in der Datenbank fest, der den Datensatz als den geerbten Typ kennzeichnet. (Dies ist der Wert, der in der Unterscheidungsspalte gespeichert und wird verwendet, um die geerbte Klasse gekennzeichnet.)
 
 9. Legen Sie die Eigenschaft **Basisklassen-Diskriminatorwert** auf den Wert fest, der den Datensatz als Basistyp kennzeichnet. (Dies ist der Wert, der in der Unterscheidungsspalte gespeichert und wird verwendet, um die Basisklasse gekennzeichnet.)
 
@@ -53,7 +53,7 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relatio
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mit einer Vererbung für eine einzelne Tabelle (O/R-Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)

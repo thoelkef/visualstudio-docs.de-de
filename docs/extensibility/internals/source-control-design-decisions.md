@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066194"
 ---
 # <a name="source-control-design-decisions"></a>Entwurfsentscheidungen bei der Quellcodeverwaltung
 Die folgenden entwurfsentscheidungen für Projekte berücksichtigen Sie beim Implementieren von Datenquellen-Steuerelement.
@@ -28,11 +28,11 @@ Die folgenden entwurfsentscheidungen für Projekte berücksichtigen Sie beim Imp
 ## <a name="will-the-project-include-special-files"></a>Wird das Projekt, die spezielle Dateien enthalten?
  Eine weitere wichtige Entscheidung ist, ob Ihre Projektstruktur für spezielle Dateien verwendet. Spezielle Dateien sind ausgeblendet, die die Dateien zugrunde liegen, die sichtbar im Projektmappen-Explorer und in das Einchecken und Auschecken Dialogfelder sind. Wenn Sie spezielle Dateien verwenden, beachten Sie Folgendes:
 
-1.  Ordnen Sie keine Gerätedateien, die die Stammknoten des Projekts, d. h. mit dem Projekt die Datei selbst. Die Projektdatei, muss es sich um eine einzelne Datei sein.
+1. Ordnen Sie keine Gerätedateien, die die Stammknoten des Projekts, d. h. mit dem Projekt die Datei selbst. Die Projektdatei, muss es sich um eine einzelne Datei sein.
 
-2.  Wenn spezielle Dateien hinzugefügt, entfernt oder umbenannt werden, in einem Projekt auf die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> müssen Ereignisse ausgelöst werden, wobei das Flag festgelegt, der angibt, die Dateien sind spezielle Dateien. Diese Ereignisse werden von der Umgebung als Reaktion auf das Projekt, das Aufrufen der entsprechenden aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden.
+2. Wenn spezielle Dateien hinzugefügt, entfernt oder umbenannt werden, in einem Projekt auf die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> müssen Ereignisse ausgelöst werden, wobei das Flag festgelegt, der angibt, die Dateien sind spezielle Dateien. Diese Ereignisse werden von der Umgebung als Reaktion auf das Projekt, das Aufrufen der entsprechenden aufgerufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden.
 
-3.  Wenn das Projekt oder die-Editor aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> für eine Datei, die speziellen Dateien, die der Datei zugeordneten nicht automatisch ausgecheckt. Übergeben Sie die speziellen Dateien im zusammen mit der übergeordneten Datei. Die Umgebung erkennt die Beziehung zwischen allen Dateien, die übergeben werden und entsprechend der speziellen Dateien in der Benutzeroberfläche Auschecken ausblenden.
+3. Wenn das Projekt oder die-Editor aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> für eine Datei, die speziellen Dateien, die der Datei zugeordneten nicht automatisch ausgecheckt. Übergeben Sie die speziellen Dateien im zusammen mit der übergeordneten Datei. Die Umgebung erkennt die Beziehung zwischen allen Dateien, die übergeben werden und entsprechend der speziellen Dateien in der Benutzeroberfläche Auschecken ausblenden.
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063542"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
   Sie können angeben, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem der Formularbereich der Nachrichtenklasse jedes Elements zugeordnet. Z. B. Wenn Sie einen Formularbereich am unteren Rand eine e-Mail-Nachricht anfügen möchten, Sie können Zuordnen des Formularbereichs mit den `IPM.Note` message-Klasse.
@@ -50,9 +50,9 @@ ms.locfileid: "56625529"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
  Es gibt zwei Möglichkeiten, eine Nachrichtenklasse aus einen Formularbereich zugeordnet werden soll:
 
--   Verwenden der **neuer Outlook-Formularbereich** Assistenten.
+- Verwenden der **neuer Outlook-Formularbereich** Assistenten.
 
--   Anwenden von Klassenattributen.
+- Anwenden von Klassenattributen.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Verwenden des Assistenten für neue Outlook-Formularbereich
  Klicken Sie auf der letzten Seite des der **neuer Outlook-Formularbereich** Assistenten Sie Standardmeldungsklassen auswählen können, und geben Sie die Namen von benutzerdefinierten Nachrichtenklasse, die dem Formularbereich zugeordnet werden soll.

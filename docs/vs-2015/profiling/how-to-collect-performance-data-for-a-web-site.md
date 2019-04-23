@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060552"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 ### <a name="to-profile-a-web-site-project"></a>Profilieren eines Websiteprojekts  
   
-1.  Öffnen Sie das [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webprojekt in [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] oder [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Öffnen Sie das [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webprojekt in [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] oder [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
+2. Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
   
-3.  Auf der ersten Seite des Assistenten, wählen Sie eine Profilerstellungsmethode, und klicken Sie dann auf **Weiter**. Weitere Informationen zu Profilerstellungsmethoden finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md). Beachten Sie, dass die Parallelitätsschnellansicht Profilerstellungsmethode nicht für Webanwendungen verfügbar ist.  
+3. Auf der ersten Seite des Assistenten, wählen Sie eine Profilerstellungsmethode, und klicken Sie dann auf **Weiter**. Weitere Informationen zu Profilerstellungsmethoden finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md). Beachten Sie, dass die Parallelitätsschnellansicht Profilerstellungsmethode nicht für Webanwendungen verfügbar ist.  
   
-4.  In der Dropdownliste **Welche Anwendung soll für die Profilerstellung als Ziel festgelegt werden?** stellen Sie sicher, dass das aktuelle Projekt ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+4. In der Dropdownliste **Welche Anwendung soll für die Profilerstellung als Ziel festgelegt werden?** stellen Sie sicher, dass das aktuelle Projekt ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-5.  Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
+5. Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
   
-    -   Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
+    - Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
   
-    -   Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
+    - Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
   
-6.  Klicken Sie auf **Weiter**.  
+6. Klicken Sie auf **Weiter**.  
   
-7.  Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
+7. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
   
-8.  Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
+8. Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
   
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hauptfenster.  
   
@@ -90,9 +90,9 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 6. Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
   
-   -   Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
+   - Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
   
-   -   Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
+   - Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
   
 7. Klicken Sie auf **Weiter**.  
   

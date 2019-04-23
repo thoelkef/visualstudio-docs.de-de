@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061579"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ LINQ to SQL-Klassen, die Datenbanktabellen und-Ansichten zugeordnet sind, heiße
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>So erstellen Sie LINQ to SQL-Klassen, die Datenbanktabellen oder -ansichten zugeordnet sind
 
-1.  In **Server**/**Datenbank-Explorer**, erweitern Sie **Tabellen** oder **Ansichten** und suchen Sie die Datenbanktabelle oder anzeigen, Sie möchten Um in Ihrer Anwendung verwenden zu können.
+1. In **Server**/**Datenbank-Explorer**, erweitern Sie **Tabellen** oder **Ansichten** und suchen Sie die Datenbanktabelle oder anzeigen, Sie möchten Um in Ihrer Anwendung verwenden zu können.
 
-2.  Ziehen Sie die Tabelle oder die Ansicht auf den [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Ziehen Sie die Tabelle oder die Ansicht auf den [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Eine Entitätsklasse wird erstellt und auf der Entwurfsoberfläche angezeigt. Die Entitätsklasse verfügt über Eigenschaften, die sich auf die Spalten in der ausgewählten Tabelle oder Ansicht beziehen.
 
@@ -43,22 +43,22 @@ LINQ to SQL-Klassen, die Datenbanktabellen und-Ansichten zugeordnet sind, heiße
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>So erstellen Sie eine Objektdatenquelle auf Grundlage von LINQ to SQL-Entitätsklassen
 
-1.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**, um ein Projekt zu erstellen.
+1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**, um ein Projekt zu erstellen.
 
-2.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
+2. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
-3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
+3. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-4.  Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt**, und klicken Sie dann auf **Weiter**.
+4. Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt**, und klicken Sie dann auf **Weiter**.
 
-5.  Erweitern Sie die Knoten, suchen und wählen Sie die Klasse aus.
+5. Erweitern Sie die Knoten, suchen und wählen Sie die Klasse aus.
 
     > [!NOTE]
     > Wenn die Klasse **Customer** nicht verfügbar ist, beenden Sie den Assistenten, erstellen Sie das Projekt, und führen Sie den Assistenten erneut aus.
 
-6.  Klicken Sie auf **Fertig stellen**, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.
+6. Klicken Sie auf **Fertig stellen**, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.
 
-7.  Ziehen Sie Elemente aus dem Fenster **Datenquellen** auf ein Formular.
+7. Ziehen Sie Elemente aus dem Fenster **Datenquellen** auf ein Formular.
 
 ## <a name="see-also"></a>Siehe auch
 
