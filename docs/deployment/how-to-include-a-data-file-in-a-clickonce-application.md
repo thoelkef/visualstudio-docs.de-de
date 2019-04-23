@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093877"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Vorgehensweise: Hinzufügen einer Datendatei in eine ClickOnce-Anwendung
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung
 Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, hat ein Datenverzeichnis auf dem Zielcomputer lokalen Datenträger, die in dem die Anwendung eine eigene Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten:-Text-Dateien, XML-Dateien oder sogar Microsoft Access-Datenbank (*MDB*) Dateien. Die folgenden Verfahren zeigen, wie zum Hinzufügen einer Datendatei eines beliebigen Typs in Ihrem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>So schließen eine Datendatei mit Mage.exe
@@ -60,25 +60,25 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Eine Datei einschließen, indem Sie MageUI.exe
 
-1.  Fügen Sie die Datei zu Ihrem Anwendungsverzeichnis, mit dem Rest von den Dateien Ihrer Anwendung hinzu.
+1. Fügen Sie die Datei zu Ihrem Anwendungsverzeichnis, mit dem Rest von den Dateien Ihrer Anwendung hinzu.
 
-2.  In der Regel werden Ihrem Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der Bereitstellung der aktuellen Version, z. B. v. 1.0.0.0.
+2. In der Regel werden Ihrem Anwendungsverzeichnis ein Verzeichnis mit der Bezeichnung mit der Bereitstellung der aktuellen Version, z. B. v. 1.0.0.0.
 
-3.  Auf der **Datei** Menü klicken Sie auf **öffnen** sich das Anwendungsmanifest zu öffnen.
+3. Auf der **Datei** Menü klicken Sie auf **öffnen** sich das Anwendungsmanifest zu öffnen.
 
-4.  Wählen Sie die **Dateien** Registerkarte.
+4. Wählen Sie die **Dateien** Registerkarte.
 
-5.  Klicken Sie im Textfeld am oberen Rand der Registerkarte "Geben Sie das Verzeichnis mit den Dateien Ihrer Anwendung, und klicken Sie dann auf **Auffüllen**.
+5. Klicken Sie im Textfeld am oberen Rand der Registerkarte "Geben Sie das Verzeichnis mit den Dateien Ihrer Anwendung, und klicken Sie dann auf **Auffüllen**.
 
      Die Datendatei wird im Raster angezeigt.
 
-6.  Legen Sie die **Dateityp** Wert, der die Datendatei **Daten**.
+6. Legen Sie die **Dateityp** Wert, der die Datendatei **Daten**.
 
-7.  Speichern Sie das Anwendungsmanifest, und klicken Sie dann signieren Sie die Datei erneut.
+7. Speichern Sie das Anwendungsmanifest, und klicken Sie dann signieren Sie die Datei erneut.
 
      *MageUI.exe* werden Sie aufgefordert, die Datei erneut zu signieren.
 
-8.  Das Bereitstellungsmanifest erneut signieren
+8. Das Bereitstellungsmanifest erneut signieren
 
      Sie müssen das Bereitstellungsmanifest erneut signieren, da der Hashwert des Anwendungsmanifests geändert wurde.
 

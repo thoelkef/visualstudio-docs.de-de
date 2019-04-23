@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089977"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Vorgehensweise: Festlegen von Haltepunkten in Workflows
 Wenn Sie [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwenden, können Sie Haltepunkte für die grafischen Workflows genauso festlegen, wie Sie es in Visual Basic oder C#-Code machen würden. Wie erwartet, hält die Workflowausführung an jedem festgelegten Haltepunkt an.  
@@ -32,9 +32,9 @@ Wenn Sie [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwenden, können Sie Haltepu
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>So legen Sie einen Haltepunkt für eine Aktivität in der Entwurfsansicht fest  
   
-1.  Wählen Sie die Aktivität aus, bei der der Debugger unterbrechen soll.  
+1. Wählen Sie die Aktivität aus, bei der der Debugger unterbrechen soll.  
   
-2.  Auf der **Debuggen** , wählen Sie im Menü **Haltepunkt ein/aus**. Ein rotes Symbol wird am oberen linken Rand der Aktivität angezeigt.  
+2. Auf der **Debuggen** , wählen Sie im Menü **Haltepunkt ein/aus**. Ein rotes Symbol wird am oberen linken Rand der Aktivität angezeigt.  
   
      Alternativ können Sie auch die Tastenkombination drücken **F9** Schlüssel nach dem Auswählen der Aktivität, oder Sie können mit der rechten Maustaste in der Aktivitäts und wählen Sie **Haltepunkt** dann **Haltepunkt einfügen**aus dem Kontextmenü.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094423"
 ---
 # <a name="when-to-create-project-types"></a>Gründe für das Erstellen von Projekttypen
 Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Ihre Benutzer. Erstellen einen neuen Projekttyp ist jedoch nicht erforderlich, damit alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anpassungen. Die folgenden Richtlinien sollten leichter bestimmen, ob ein neuer Projekttyp für Ihr Szenario erforderlich ist.
@@ -23,26 +23,26 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
 ## <a name="create-a-new-project-type"></a>Erstellen Sie einen neuen Projekttyp
  Sie müssen einen Projekttyp erstellen, wenn Sie anpassen möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , die in eine oder mehrere der folgenden Methoden verwendet:
 
--   Teilnahme an Build, bereitstellen, Konfigurationen und Datenquellen-Steuerelement.
+- Teilnahme an Build, bereitstellen, Konfigurationen und Datenquellen-Steuerelement.
 
--   Bieten Sie Unterstützung für Remotedebuggen.
+- Bieten Sie Unterstützung für Remotedebuggen.
 
--   Anzeigen der Projektelemente im **Projektmappen-Explorer**.
+- Anzeigen der Projektelemente im **Projektmappen-Explorer**.
 
--   Verwenden der **geöffneten Projekt** oder **neues Projekt** Dialogfeld.
+- Verwenden der **geöffneten Projekt** oder **neues Projekt** Dialogfeld.
 
--   Schachtelung von Projekt zu unterstützen.
+- Schachtelung von Projekt zu unterstützen.
 
 ## <a name="extend-an-existing-project-type"></a>Erweitern Sie einen vorhandenen Projekttyp
  Möglicherweise möchten Sie einen neuen Projekttyp zu erstellen, können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auf folgende Weise ändern oder erweitern das Verhalten eines vorhandenen Projekts-Typs, z. B. die Änderung des Buildprozesses für [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte:
 
--   Arbeiten Sie mit mehreren Dateien als einzelne Einheit ein.
+- Arbeiten Sie mit mehreren Dateien als einzelne Einheit ein.
 
--   Eine einzelne Datei als Hierarchie von untergeordneten Elementen anzeigen.
+- Eine einzelne Datei als Hierarchie von untergeordneten Elementen anzeigen.
 
--   Zeigen Sie einen Befehlskontext um Editoren.
+- Zeigen Sie einen Befehlskontext um Editoren.
 
--   Zeigen Sie einen Dienstkontext für Editoren an.
+- Zeigen Sie einen Dienstkontext für Editoren an.
 
 ## <a name="use-an-existing-project-type"></a>Verwenden Sie einen vorhandenen Projekttyp
  Erstellen eines neuen Projekts ist manchmal nicht erforderlich. Die folgende Tabelle zeigt die Aufgaben, denen Sie nicht, erstellen Sie einen Projekttyp für verfügen.

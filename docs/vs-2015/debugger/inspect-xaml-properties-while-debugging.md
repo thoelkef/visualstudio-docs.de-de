@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101430"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Überprüfen von XAML-Eigenschaften beim Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Verwenden von XAML-Tools mit ausgeführten Anwendungen  
  Sie können diese XAML-Tools sogar dann verwenden, wenn Sie nicht über den Quellcode verfügen. Beim Anfügen an eine ausgeführte XAML-Anwendung können Sie **Visuelle Echtzeitstruktur** auch für die Benutzeroberflächenelemente der Anwendung verwenden. Im Folgenden finden Sie ein Beispiel unter Verwendung derselben WPF-Testanwendung, die wir zuvor verwendet haben.  
   
-1.  Starten Sie die **TestXaml**-Anwendung in der Releasekonfiguration. Das Anfügen an einen in einer **Debug**-Konfiguration ausgeführten Prozess ist nicht möglich.  
+1. Starten Sie die **TestXaml**-Anwendung in der Releasekonfiguration. Das Anfügen an einen in einer **Debug**-Konfiguration ausgeführten Prozess ist nicht möglich.  
   
-2.  Öffnen Sie eine zweite Instanz von Visual Studio, und klicken Sie auf **Debuggen / an den Prozess anhängen**. Suchen Sie in der Liste der verfügbaren Prozesse nach der Datei **TestXaml.exe**, und klicken Sie auf **Anfügen**.  
+2. Öffnen Sie eine zweite Instanz von Visual Studio, und klicken Sie auf **Debuggen / an den Prozess anhängen**. Suchen Sie in der Liste der verfügbaren Prozesse nach der Datei **TestXaml.exe**, und klicken Sie auf **Anfügen**.  
   
-3.  Die Anwendung wird ausgeführt.  
+3. Die Anwendung wird ausgeführt.  
   
-4.  In der zweiten Instanz von Visual Studio, öffnen Sie die **Live Visual Tree** (**Debuggen / Windows / visuelle Echtzeitstruktur**). Es sollten die **TestXaml**-Benutzeroberflächenelemente angezeigt werden, und Sie sollten sie bearbeiten können, während Sie die Anwendung direkt debuggen.
+4. In der zweiten Instanz von Visual Studio, öffnen Sie die **Live Visual Tree** (**Debuggen / Windows / visuelle Echtzeitstruktur**). Es sollten die **TestXaml**-Benutzeroberflächenelemente angezeigt werden, und Sie sollten sie bearbeiten können, während Sie die Anwendung direkt debuggen.

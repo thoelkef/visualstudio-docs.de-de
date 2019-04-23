@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094319"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe des Paket-Designers
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die Standardfeatures von SharePoint auf das Paket in der Projektmappe. Sie können vor der letzten Bereitstellung hinzufügen und Entfernen von SharePoint-Projektelemente und Features so ändern Sie das SharePoint-Paket.
@@ -52,7 +52,7 @@ ms.locfileid: "56608096"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>So entfernen Sie die SharePoint-Funktionen mit der Paket-designer
 
-1.  In der **Elemente in diesem Paket** wählen ein Elements, das Sie verwenden möchten, entfernen Sie aus, und wählen Sie dann die **entfernen** (<) Schaltfläche aus, oder wählen Sie die **alle entfernen** Schaltfläche (<<) entfernen alle Elemente.
+1. In der **Elemente in diesem Paket** wählen ein Elements, das Sie verwenden möchten, entfernen Sie aus, und wählen Sie dann die **entfernen** (<) Schaltfläche aus, oder wählen Sie die **alle entfernen** Schaltfläche (<<) entfernen alle Elemente.
 
      Die SharePoint-Elemente werden in der **Elemente in der Lösung** Liste.
 

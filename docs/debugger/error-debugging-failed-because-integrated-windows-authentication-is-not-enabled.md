@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3844cd13517cff6ce07a463f9ea57a75319a4c09
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102327"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist
 Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authentifizierungsfehlers nicht authentifiziert werden. Dies kann beim Versuch, eine Webanwendung oder einen XML-Webdienst in Einzelschritten auszuführen, auftreten. Eine Ursache dieses Fehlers besteht darin, dass die integrierte Windows-Authentifizierung nicht aktiviert ist. Um sie zu aktivieren, führen Sie die Schritte in "So aktivieren Sie die integrierte Windows-Authentifizierung" aus.
@@ -31,25 +31,25 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 
 ### <a name="to-enable-integrated-windows-authentication"></a>So aktivieren Sie die integrierte Windows-Authentifizierung
 
-1.  Melden Sie sich über ein Administratorkonto beim Webserver an.
+1. Melden Sie sich über ein Administratorkonto beim Webserver an.
 
-2.  Klicken Sie auf **Start** und anschließend auf **Systemsteuerung**.
+2. Klicken Sie auf **Start** und anschließend auf **Systemsteuerung**.
 
-3.  Doppelklicken Sie in der **Systemsteuerung** auf **Verwaltung**.
+3. Doppelklicken Sie in der **Systemsteuerung** auf **Verwaltung**.
 
-4.  Doppelklicken Sie auf **Internetinformationsdienste**.
+4. Doppelklicken Sie auf **Internetinformationsdienste**.
 
-5.  Klicken Sie auf den Webserverknoten.
+5. Klicken Sie auf den Webserverknoten.
 
      Unterhalb des Servernamens wird der Ordner **Websites** geöffnet.
 
-6.  Sie können die Authentifizierung für alle Websites oder für einzelne Websites konfigurieren. Um die Authentifizierung für alle Websites zu konfigurieren, klicken Sie mit der rechten Maustaste auf den Ordner **Websites**, und klicken Sie anschließend auf **Eigenschaften**. Wenn Sie die Authentifizierung für eine einzelne Website konfigurieren möchten, öffnen Sie den Ordner **Websites**, klicken Sie mit der rechten Maustaste auf die gewünschte Website, und klicken Sie anschließend auf **Eigenschaften**.
+6. Sie können die Authentifizierung für alle Websites oder für einzelne Websites konfigurieren. Um die Authentifizierung für alle Websites zu konfigurieren, klicken Sie mit der rechten Maustaste auf den Ordner **Websites**, und klicken Sie anschließend auf **Eigenschaften**. Wenn Sie die Authentifizierung für eine einzelne Website konfigurieren möchten, öffnen Sie den Ordner **Websites**, klicken Sie mit der rechten Maustaste auf die gewünschte Website, und klicken Sie anschließend auf **Eigenschaften**.
 
      Das Dialogfeld **Eigenschaften** wird angezeigt.
 
-7.  Klicken Sie auf die Registerkarte **Verzeichnissicherheit**.
+7. Klicken Sie auf die Registerkarte **Verzeichnissicherheit**.
 
-8.  Klicken Sie im Abschnitt **Anonymer Zugriff und Authentifizierungssteuerung** auf **Bearbeiten**.
+8. Klicken Sie im Abschnitt **Anonymer Zugriff und Authentifizierungssteuerung** auf **Bearbeiten**.
 
      Das Dialogfeld **Authentifizierungsmethoden** wird angezeigt.
 
@@ -63,29 +63,29 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>So aktivieren Sie die integrierte Windows-Authentifizierung unter Windows Vista/IIS 7
 
-1.  Melden Sie sich über ein Administratorkonto beim Webserver an.
+1. Melden Sie sich über ein Administratorkonto beim Webserver an.
 
-2.  Aktivieren Sie die Windows-Authentifizierung und die IIS6-Verwaltungskompatibilität, wenn diese nicht bereits aktiviert wurden, indem Sie folgende Schritte ausführen:
+2. Aktivieren Sie die Windows-Authentifizierung und die IIS6-Verwaltungskompatibilität, wenn diese nicht bereits aktiviert wurden, indem Sie folgende Schritte ausführen:
 
-    1.  Klicken Sie auf **starten**, klicken Sie auf **Systemsteuerung** , und klicken Sie dann auf **Programme**.
+    1. Klicken Sie auf **starten**, klicken Sie auf **Systemsteuerung** , und klicken Sie dann auf **Programme**.
 
-    2.  Klicken Sie unter **Programme und Funktionen** auf **Windows-Funktionen ein- oder ausschalten**.
+    2. Klicken Sie unter **Programme und Funktionen** auf **Windows-Funktionen ein- oder ausschalten**.
 
          Das Dialogfeld Benutzerzugriffssteuerung wird angezeigt und fordert Ihre Bestätigung zum Fortfahren an.
 
-    3.  Klicken Sie auf **Weiter**.
+    3. Klicken Sie auf **Weiter**.
 
          Das Dialogfeld Windows-Funktionen wird angezeigt.
 
-    4.  Erweitern Sie in der Funktionsliste den Knoten **Internetinformationsdienste**.
+    4. Erweitern Sie in der Funktionsliste den Knoten **Internetinformationsdienste**.
 
-    5.  Erweitern Sie unter **Internetinformationsdienste** den Knoten **WWW-Dienste**.
+    5. Erweitern Sie unter **Internetinformationsdienste** den Knoten **WWW-Dienste**.
 
-    6.  Klicken Sie unter **WWW-Dienste** auf **Sicherheit**.
+    6. Klicken Sie unter **WWW-Dienste** auf **Sicherheit**.
 
-    7.  Klicken Sie auf **Windows-Authentifizierung**.
+    7. Klicken Sie auf **Windows-Authentifizierung**.
 
-    8.  Erweitern Sie unter **Internetinformationsdienste** den Knoten **Webverwaltungstools**.
+    8. Erweitern Sie unter **Internetinformationsdienste** den Knoten **Webverwaltungstools**.
 
     9. Erweitern Sie unter **Webverwaltungstools** den Knoten **Kompatibilität mit der IIS 6-Verwaltung**, und aktivieren Sie das Kontrollkästchen **Kompatibilität mit IIS 6-Metabasis und IIS 6-Konfiguration**.
 
@@ -93,19 +93,19 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 
     11. Starten Sie den Computer neu, damit die Änderungen wirksam werden.
 
-3.  Klicken Sie auf **Start** und anschließend auf **Systemsteuerung**.
+3. Klicken Sie auf **Start** und anschließend auf **Systemsteuerung**.
 
-4.  Klicken Sie auf **Klassische Ansicht**, und doppelklicken Sie anschließend auf **Verwaltung**.
+4. Klicken Sie auf **Klassische Ansicht**, und doppelklicken Sie anschließend auf **Verwaltung**.
 
-5.  Doppelklicken Sie in der Spalte **Name** auf **Internetinformationsdienste-Manager**.
+5. Doppelklicken Sie in der Spalte **Name** auf **Internetinformationsdienste-Manager**.
 
-6.  Erweitern Sie in der Spalte **Verbindungen** den Knoten für den Server.
+6. Erweitern Sie in der Spalte **Verbindungen** den Knoten für den Server.
 
      Unterhalb des Servernamens wird der Ordner **Websites** geöffnet.
 
-7.  Erweitern Sie den Knoten **Websites**, und klicken Sie auf die Website, für die Sie die integrierte Windows-Authentifizierung aktivieren möchten.
+7. Erweitern Sie den Knoten **Websites**, und klicken Sie auf die Website, für die Sie die integrierte Windows-Authentifizierung aktivieren möchten.
 
-8.  Der Titel des mittleren Bereichs wird in den Namen der ausgewählten Website geändert. Doppelklicken Sie in diesem Bereich unter der Überschrift **IIS** auf **Authentifizierung**.
+8. Der Titel des mittleren Bereichs wird in den Namen der ausgewählten Website geändert. Doppelklicken Sie in diesem Bereich unter der Überschrift **IIS** auf **Authentifizierung**.
 
      Der Titel des Bereichs wird in **Authentifizierung** geändert.
 

@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951156"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095489"
 ---
 # <a name="add-and-remove-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
 
@@ -32,7 +32,7 @@ Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-D
 
 ### <a name="remove-a-property-page"></a>Entfernen einer Eigenschaftenseite
 
-1.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.
+1. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-D
     }
     ```
 
-2.  Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.
+2. Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-D
 
 ### <a name="add-a-property-page"></a>Hinzufügen einer Eigenschaftenseite
 
-1.  Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.
+1. Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-D
     }
     ```
 
-2.  Registrieren Sie Ihre neue Eigenschaftenseite an.
+2. Registrieren Sie Ihre neue Eigenschaftenseite an.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Einem Projektuntertyp muss häufig zusätzliche Eigenschaftenseiten im Projekt-D
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.
+3. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

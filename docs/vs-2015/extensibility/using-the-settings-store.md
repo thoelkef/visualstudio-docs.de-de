@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094819"
 ---
 # <a name="using-the-settings-store"></a>Verwenden des Einstellungsspeichers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Es gibt zwei Arten von Einstellungen speichern:
 ## <a name="creating-the-example-project"></a>Erstellen das Beispielprojekt  
  In diesem Abschnitt wird gezeigt, wie eine einfache Erweiterung-Projekt mit einem Menübefehl für die Demo erstellt.  
   
-1.  Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt namens `SettingsStoreExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual C# / Erweiterbarkeit**.  
+1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt namens `SettingsStoreExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
   
-2.  Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **SettingsStoreCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **SettingsStoreCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **SettingsStoreCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **SettingsStoreCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>Verwenden die Konfiguration Einstellungen Store  
  Dieser Abschnitt beschreibt das Erkennen und Konfigurationseinstellungen anzeigen.  
@@ -79,11 +79,11 @@ Es gibt zwei Arten von Einstellungen speichern:
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Registrierungs-Editor verwenden, um zu überprüfen, ob Konfigurationseinstellungen  
   
-1.  Öffnen Sie Regedit.exe.  
+1. Öffnen Sie Regedit.exe.  
   
-2.  Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
     >  Stellen Sie sicher, dass Sie den Schlüssel anzeigen, die \14.0Exp_Config\ und nicht \14.0_Config enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, sind Konfigurationseinstellungen in der Registrierungsstruktur "14.0Exp_Config" ein.  
   
-3.  Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "True"**, \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "False"**, dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.
+3. Erweitern Sie den \Installed Products\-Knoten. Wenn die Nachricht in den vorherigen Schritten **Microsoft Windows Phone Developer Tools installiert: "True"**, \Installed Products\ einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll. Wenn die Nachricht **Microsoft Windows Phone Developer Tools installiert: "False"**, dann \Installed Products\ nicht auf einen Knoten für die Microsoft Windows Phone Developer Tools enthalten soll.

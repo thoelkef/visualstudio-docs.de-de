@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092564"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Vorgehensweise: Erstellen einer Assoziation zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Modell Business Data Connectivity (BDC) durch das Erstellen von Zuordnungen definieren. Visual Studio generiert die Methoden, die Consumern des Modells mit Informationen über jede Zuordnung bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen zum Anzeigen von datenbeziehungen in einer Benutzeroberfläche (UI) verwendet werden.
@@ -35,29 +35,29 @@ ms.locfileid: "56645120"
 
 ### <a name="to-create-an-association-between-entities"></a>Zum Erstellen einer Assoziation zwischen Entitäten
 
-1.  Auf der **BusinessDataConnectivity** Registerkarte die **Toolbox**, wählen Sie die **Zuordnung** Element.
+1. Auf der **BusinessDataConnectivity** Registerkarte die **Toolbox**, wählen Sie die **Zuordnung** Element.
 
-2.  Klicken Sie im BDC-Designer wählen Sie die Quellentität, und wählen Sie dann auf die Zielentität.
+2. Klicken Sie im BDC-Designer wählen Sie die Quellentität, und wählen Sie dann auf die Zielentität.
 
      Die **Zuordnungs-Editor** angezeigt wird.
 
-3.  Wenn Sie eine foreign Key-basierten Zuordnung erstellen möchten, wählen Sie die **ist Fremdschlüsselzuordnung** Kontrollkästchen.
+3. Wenn Sie eine foreign Key-basierten Zuordnung erstellen möchten, wählen Sie die **ist Fremdschlüsselzuordnung** Kontrollkästchen.
 
-    1.  In der **Datenquellen-ID:** Spalte die **Bezeichner Zuordnung** , aktivieren Sie den Bezeichner neben jeder übereinstimmenden Typdeskriptor, der angezeigt wird der **Feld** Spalte.
+    1. In der **Datenquellen-ID:** Spalte die **Bezeichner Zuordnung** , aktivieren Sie den Bezeichner neben jeder übereinstimmenden Typdeskriptor, der angezeigt wird der **Feld** Spalte.
 
          Z. B. In der **Datenquellen-ID:** Spalte `ContactID` neben der `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` Typdeskriptor und `ReadItem.salesOrder.SalesOrder.ContactID` Typdeskriptor.
 
-4.  Wenn Sie eine Zuordnung ohne Fremdschlüssel erstellen möchten, deaktivieren Sie die **ist Fremdschlüsselzuordnung** Kontrollkästchen.
+4. Wenn Sie eine Zuordnung ohne Fremdschlüssel erstellen möchten, deaktivieren Sie die **ist Fremdschlüsselzuordnung** Kontrollkästchen.
 
-5.  Klicken Sie auf die Schaltfläche **OK** .
+5. Klicken Sie auf die Schaltfläche **OK** .
 
-6.  Im BDC-Designer wird Sie eine Linie, die die Zuordnung darstellt zwischen die Quellentität und die Zielentität angezeigt.
+6. Im BDC-Designer wird Sie eine Linie, die die Zuordnung darstellt zwischen die Quellentität und die Zielentität angezeigt.
 
      Visual Studio fügt eine Zuordnung Navigator-Methode, um die Dienstklasse vom die Zielentität und der Dienstklasse der Quellentität. Weitere Informationen zur Zuordnung Navigationsmethoden finden Sie unter [unterstützte Vorgänge](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  Fügen Sie Code, der eine Auflistung von Zielentitäten zurückgibt, in der Zuordnung Navigator-Methode der Quellentität.
+7. Fügen Sie Code, der eine Auflistung von Zielentitäten zurückgibt, in der Zuordnung Navigator-Methode der Quellentität.
 
-8.  Fügen Sie Code, der die verwandten Quellentität zurückgibt, in der Zuordnung Navigator-Methode der Zielentität.
+8. Fügen Sie Code, der die verwandten Quellentität zurückgibt, in der Zuordnung Navigator-Methode der Zielentität.
 
      Beispiele für Zuordnung Navigator-Methoden, finden Sie unter [Erstellen einer Assoziation zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).
 

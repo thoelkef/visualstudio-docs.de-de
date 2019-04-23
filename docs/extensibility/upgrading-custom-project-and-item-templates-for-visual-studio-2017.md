@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102626"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren von benutzerdefinierten Projekt- und Elementvorlagen für Visual Studio 2017
 
@@ -32,36 +32,36 @@ Für andere Speicherorte (nicht-Benutzer) müssen Sie eine Datei manifest(.vstma
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Aktualisieren Sie eine VSIX-Erweiterung mit Projekt- oder Elementvorlagen
 
-1.  Öffnen Sie die Projektmappe in Visual Studio 2017. Sie werden aufgefordert, den Code aktualisieren. Klicken Sie auf **OK**.
+1. Öffnen Sie die Projektmappe in Visual Studio 2017. Sie werden aufgefordert, den Code aktualisieren. Klicken Sie auf **OK**.
 
-2.  Nachdem das Upgrade abgeschlossen ist, müssen Sie die Version von des installationsziels ändern. Klicken Sie im VSIX-Projekt, öffnen Sie die Datei "Source.Extension.vsixmanifest", und wählen die **Ziele installieren** Registerkarte. Wenn die **Versionsbereich** Feld **[14.0]**, klicken Sie auf **bearbeiten** und ändern Sie diese Visual Studio 2017 enthalten. Angenommen, Sie können sie festlegen **[14.0,15.0]** zum Installieren der Erweiterung, um entweder Visual Studio 2015 oder Visual Studio 2017 oder **[15.0]** nur Visual Studio 2017 installieren.
+2. Nachdem das Upgrade abgeschlossen ist, müssen Sie die Version von des installationsziels ändern. Klicken Sie im VSIX-Projekt, öffnen Sie die Datei "Source.Extension.vsixmanifest", und wählen die **Ziele installieren** Registerkarte. Wenn die **Versionsbereich** Feld **[14.0]**, klicken Sie auf **bearbeiten** und ändern Sie diese Visual Studio 2017 enthalten. Angenommen, Sie können sie festlegen **[14.0,15.0]** zum Installieren der Erweiterung, um entweder Visual Studio 2015 oder Visual Studio 2017 oder **[15.0]** nur Visual Studio 2017 installieren.
 
-3.  Kompilieren Sie der Code neu.
+3. Kompilieren Sie der Code neu.
 
-4.  Schließen Sie Visual Studio.
+4. Schließen Sie Visual Studio.
 
-5.  Installieren Sie die VSIX-Datei.
+5. Installieren Sie die VSIX-Datei.
 
-6.  Sie können das Update testen, indem Sie wie folgt vorgehen:
+6. Sie können das Update testen, indem Sie wie folgt vorgehen:
 
-    1.  Die Datei, die Überprüfung ändern wird aktiviert, durch den folgenden Registrierungsschlüssel:
+    1. Die Datei, die Überprüfung ändern wird aktiviert, durch den folgenden Registrierungsschlüssel:
 
          **REG hinzufügen hklm\software\microsoft\visualstudio\15.0\VSTemplate/v DisableTemplateScanning/t REG_DWORD/d 1 /reg:32**
 
-    2.  Nachdem Sie den Schlüssel hinzugefügt haben, führen Sie **Devenv/installvstemplates**.
+    2. Nachdem Sie den Schlüssel hinzugefügt haben, führen Sie **Devenv/installvstemplates**.
 
-    3.  Öffnen Sie Visual Studio erneut. Sie sollten Ihre Vorlage am erwarteten Speicherort finden.
+    3. Öffnen Sie Visual Studio erneut. Sie sollten Ihre Vorlage am erwarteten Speicherort finden.
 
     > [!NOTE]
     >  Die Erweiterbarkeit von Visual Studio-Projektvorlagen sind nicht verfügbar, wenn der Registrierungsschlüssel vorhanden ist. Sie müssen den Registrierungsschlüssel löschen (und erneut ausführen **Devenv/installvstemplates**) ihre Verwendung.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Weitere Empfehlungen für die Bereitstellung von Projekt- und Elementvorlagen
 
--   Vermeiden Sie die Verwendung des ZIP-Vorlagendateien. ZIP-Vorlage, die Dateien, um Ressourcen und Inhalte abzurufen, dekomprimiert werden müssen, also Leistungsseite verwendet werden. Stattdessen sollten Sie die Projekt- und Elementvorlagen als einzelne Dateien unter einem eigenen Verzeichnis zur Beschleunigung von Vorlage-Initialisierung bereitstellen. VSIX-Erweiterungen vorliegen werden Buildaufgaben SDK automatisch alle ZIP-Vorlage Entzippen Sie beim Erstellen der VSIX-Datei.
+- Vermeiden Sie die Verwendung des ZIP-Vorlagendateien. ZIP-Vorlage, die Dateien, um Ressourcen und Inhalte abzurufen, dekomprimiert werden müssen, also Leistungsseite verwendet werden. Stattdessen sollten Sie die Projekt- und Elementvorlagen als einzelne Dateien unter einem eigenen Verzeichnis zur Beschleunigung von Vorlage-Initialisierung bereitstellen. VSIX-Erweiterungen vorliegen werden Buildaufgaben SDK automatisch alle ZIP-Vorlage Entzippen Sie beim Erstellen der VSIX-Datei.
 
--   Vermeiden Sie die Verwendung der Ressource "Package" / ID-Einträge für den Namen, Beschreibung und Symbol oder eine Vorschau anzeigen Sie, um nicht benötigte Ressource Laden von Assemblys bei der vorlagenermittlung zu vermeiden. Stattdessen können Sie lokalisierte Manifeste verwenden, einen Vorlageneintrag für jedes Gebietsschema, zu erstellen, die lokalisierten Namen oder Eigenschaften verwendet.
+- Vermeiden Sie die Verwendung der Ressource "Package" / ID-Einträge für den Namen, Beschreibung und Symbol oder eine Vorschau anzeigen Sie, um nicht benötigte Ressource Laden von Assemblys bei der vorlagenermittlung zu vermeiden. Stattdessen können Sie lokalisierte Manifeste verwenden, einen Vorlageneintrag für jedes Gebietsschema, zu erstellen, die lokalisierten Namen oder Eigenschaften verwendet.
 
--   Wenn Sie Vorlagen, die als Dateielemente einschließen, Generierung von Manifesten Ihnen möglicherweise nicht die erwarteten Ergebnisse. In diesem Fall müssen Sie ein manuelles generiertes Manifest für das VSIX-Projekt hinzufügen.
+- Wenn Sie Vorlagen, die als Dateielemente einschließen, Generierung von Manifesten Ihnen möglicherweise nicht die erwarteten Ergebnisse. In diesem Fall müssen Sie ein manuelles generiertes Manifest für das VSIX-Projekt hinzufügen.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Dateiänderungen auf Projekt- und Elementvorlagen
 Wir zeigen die Punkte der Unterschied zwischen dem Visual Studio 2015 und Visual Studio 2017-Versionen von den Vorlagendateien, damit Sie die neuen Dateien korrekt erstellen zu können.

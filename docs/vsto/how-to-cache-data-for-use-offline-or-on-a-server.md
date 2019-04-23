@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094540"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem server
   Sie können ein Datenelement im Dokument zwischengespeichert werden markieren, damit sie verfügbar ist offline. Dies erleichtert auch möglich, dass die Daten in das Dokument durch anderen Code bearbeitet werden, wenn das Dokument auf einem Server gespeichert ist.
@@ -36,28 +36,28 @@ ms.locfileid: "56636514"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Zum Zwischenspeichern von Daten in das Dokument mithilfe von code
 
-1.  Deklarieren Sie ein öffentliches Feld oder eine Eigenschaft für das Datenelement als Member einer Hostelementklasse in Ihrem Projekt, z. B. die `ThisDocumen`t-Klasse in einem Word-Projekt oder die `ThisWorkbook` Klasse in einem Excel-Projekt.
+1. Deklarieren Sie ein öffentliches Feld oder eine Eigenschaft für das Datenelement als Member einer Hostelementklasse in Ihrem Projekt, z. B. die `ThisDocumen`t-Klasse in einem Word-Projekt oder die `ThisWorkbook` Klasse in einem Excel-Projekt.
 
-2.  Anwenden der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> -Attribut auf das Element, markieren Sie das Datenelement in Datencache des Dokuments gespeichert werden. Im folgenden Beispiel wird dieses Attribut einer Felddeklaration für einen <xref:System.Data.DataSet>.
+2. Anwenden der <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> -Attribut auf das Element, markieren Sie das Datenelement in Datencache des Dokuments gespeichert werden. Im folgenden Beispiel wird dieses Attribut einer Felddeklaration für einen <xref:System.Data.DataSet>.
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  Fügen Sie Code zum Erstellen einer Instanz des Datenelements und, sofern zutreffend, um es aus der Datenbank zu laden.
+3. Fügen Sie Code zum Erstellen einer Instanz des Datenelements und, sofern zutreffend, um es aus der Datenbank zu laden.
 
      Das Datenelement wird nur geladen, wenn er erstmals erstellt wird; danach der Cache bleibt mit dem Dokument ein, und müssen Sie anderen Code, um sie zu aktualisieren schreiben.
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>Um ein Dataset im Dokument zwischenspeichern, indem Sie mithilfe des Eigenschaftenfensters
 
-1.  Fügen Sie das Dataset auf das Projekt mithilfe von Tools in Visual Studio-Designer, z. B. durch Hinzufügen einer Datenquelle, dem Projekt mit der **Datenquellen** Fenster.
+1. Fügen Sie das Dataset auf das Projekt mithilfe von Tools in Visual Studio-Designer, z. B. durch Hinzufügen einer Datenquelle, dem Projekt mit der **Datenquellen** Fenster.
 
-2.  Erstellen Sie eine Instanz des Datasets, wenn Sie nicht bereits einen haben, und wählen Sie die Instanz im Designer.
+2. Erstellen Sie eine Instanz des Datasets, wenn Sie nicht bereits einen haben, und wählen Sie die Instanz im Designer.
 
-3.  In der **Eigenschaften** legen die **CacheInDocument** Eigenschaft **"true"**.
+3. In der **Eigenschaften** legen die **CacheInDocument** Eigenschaft **"true"**.
 
      Weitere Informationen finden Sie unter [Eigenschaften in Office-Projekten](../vsto/properties-in-office-projects.md).
 
-4.  In der **Eigenschaften** legen die **Modifizierer** Eigenschaft **öffentliche** (der Standardwert ist **intern**).
+4. In der **Eigenschaften** legen die **Modifizierer** Eigenschaft **öffentliche** (der Standardwert ist **intern**).
 
 ## <a name="see-also"></a>Siehe auch
 - [Zwischenspeichern von Daten](../vsto/caching-data.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090540"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Beispielimplementierung der ausdrucksauswertung
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684974"
 
  Die `IDebugExpressionEvaluator::Parse` führt die folgenden Aufgaben:
 
-1.  [Nur für C++] Analysiert den Ausdruck auf Fehler überprüfen.
+1. [C++ nur] Analysiert den Ausdruck auf Fehler überprüfen.
 
-2.  Instanziiert die Klasse (namens `CParsedExpression` in diesem Beispiel), die ausgeführt wird die `IDebugParsedExpression` Schnittstelle, und speichert Sie in der Klasse den Ausdruck analysiert werden.
+2. Instanziiert die Klasse (namens `CParsedExpression` in diesem Beispiel), die ausgeführt wird die `IDebugParsedExpression` Schnittstelle, und speichert Sie in der Klasse den Ausdruck analysiert werden.
 
-3.  Gibt die `IDebugParsedExpression` -Schnittstelle aus der `CParsedExpression` Objekt.
+3. Gibt die `IDebugParsedExpression` -Schnittstelle aus der `CParsedExpression` Objekt.
 
 > [!NOTE]
 >  In den folgenden Beispielen und das MyCEE-Beispiel wird trennt die ausdrucksauswertung nicht die Analyse bei der Auswertung.
