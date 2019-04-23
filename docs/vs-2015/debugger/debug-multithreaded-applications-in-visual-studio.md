@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054299"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Eine Einführung in die Features für das Threaddebuggen, wobei der Schwerpunkt 
  [Vorgehensweise: Verwenden Sie das GPU-Threadfenster](../debugger/how-to-use-the-gpu-threads-window.md) überprüfen und Verwenden von Threads, die während des Debuggens auf dem GPU ausgeführt werden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
- -   Verwenden Sie Haltepunktfilter, wenn ein Haltepunkt in einem einzelnen Thread platziert werden soll.
+
+[Verwenden von Haltepunkten](../debugger/using-breakpoints.md)
+- Verwenden Sie Haltepunktfilter, wenn ein Haltepunkt in einem einzelnen Thread platziert werden soll.
 
 - Ablaufverfolgungspunkte ermöglichen es Ihnen, die Ausführung des Programms ohne Unterbrechung zu verfolgen. Dies kann beim Untersuchen von Problemen wie Deadlocks hilfreich sein.
 

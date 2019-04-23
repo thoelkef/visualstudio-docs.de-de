@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90c6456789762943422384755212edef1456a499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f85963712fa1b051ea7256e6f805fe8e7c7e70d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056549"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors
 Die VSPackage-Projektvorlage kann einen einfachen, benutzerdefinierten Editor in C++ erstellen. Die VSPackage-Projektvorlage wird C#- oder Visual Basic-Projekte nicht mehr unterstützt. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
@@ -28,21 +28,21 @@ Die VSPackage-Projektvorlage kann einen einfachen, benutzerdefinierten Editor in
 
 ### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>So erstellen Sie eine VSPackage mithilfe der Visual Studio-Paketvorlage
 
-1.  Erstellen Sie ein Projekt mit der Visual Studio-Paket-Vorlage.
+1. Erstellen Sie ein Projekt mit der Visual Studio-Paket-Vorlage.
 
-2.  Wählen Sie die **Editor für benutzerdefinierte** aus, und klicken Sie auf **Weiter**. Die **Editoroptionen** Seite wird angezeigt.
+2. Wählen Sie die **Editor für benutzerdefinierte** aus, und klicken Sie auf **Weiter**. Die **Editoroptionen** Seite wird angezeigt.
 
-3.  Geben Sie den Namen des Editors in die **editorname** Feld. Geben Sie die Dateierweiterung, die Ihr Editor im zugeordnet werden sollen die **Dateierweiterung** Feld. Ihre-Editor ist für Dateien mit dieser Erweiterung verfügbar. Die Dateierweiterung ist nicht für Windows nur für Visual Studio registriert. Geben Sie der Standarddateiname für neue Dokumente erstellt, die mit Ihrem-Editor in die **Standarddateiname** Feld.
+3. Geben Sie den Namen des Editors in die **editorname** Feld. Geben Sie die Dateierweiterung, die Ihr Editor im zugeordnet werden sollen die **Dateierweiterung** Feld. Ihre-Editor ist für Dateien mit dieser Erweiterung verfügbar. Die Dateierweiterung ist nicht für Windows nur für Visual Studio registriert. Geben Sie der Standarddateiname für neue Dokumente erstellt, die mit Ihrem-Editor in die **Standarddateiname** Feld.
 
-4.  Klicken Sie auf **Fertig stellen** , um Ihr VSPackage in dem von Ihnen angegebenen Ordner zu erstellen.
+4. Klicken Sie auf **Fertig stellen** , um Ihr VSPackage in dem von Ihnen angegebenen Ordner zu erstellen.
 
 ### <a name="to-test-your-custom-editor"></a>Zum Testen des benutzerdefinierten Editors
 
-1.  Auf der **Datei** Startmenü **neu** , und klicken Sie dann auf **Datei**.
+1. Auf der **Datei** Startmenü **neu** , und klicken Sie dann auf **Datei**.
 
-2.  In der **installierte Vorlagen** im Bereich der **neue Datei** wählen Sie im Dialogfeld die Dateivorlage, und klicken Sie dann auf die Datei, Sie registriert geben.
+2. In der **installierte Vorlagen** im Bereich der **neue Datei** wählen Sie im Dialogfeld die Dateivorlage, und klicken Sie dann auf die Datei, Sie registriert geben.
 
-3.  Klicken Sie auf **öffnen** anzeigen und bearbeiten das Dokument.
+3. Klicken Sie auf **öffnen** anzeigen und bearbeiten das Dokument.
 
      Der Editor unterstützt Ausschneiden und einfügen, suchen und ersetzen und Open-and-Load-Vorgänge.
 
