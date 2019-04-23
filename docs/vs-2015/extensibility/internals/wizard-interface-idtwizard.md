@@ -11,12 +11,12 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 417988d6c44f6382644905a69fcb29aeb128146e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78867fa94851e373ae4d47cd82cd1084a941638c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053025"
 ---
 # <a name="wizard-interface-idtwizard"></a>Assistentenschnittstelle (IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ STDMETHOD(Execute)(THIS_
   
  Die folgenden Informationen beschreiben die <xref:EnvDTE.IDTWizard> -Schnittstelle, die Assistenten implementieren müssen, um die Arbeiten in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. Die IDE-Aufrufe der <xref:EnvDTE.IDTWizard.Execute%2A> Methode auf und übergeben sie die folgenden Assistenten:  
   
--   Das DTE-Objekt  
+- Das DTE-Objekt  
   
      Das DTE-Objekt ist der Stamm des Automatisierungsmodells.  
   
--   Das Handle für Fenster, um das Dialogfeld wie in der Codesegment gezeigt `hwndOwner ([in] long)`.  
+- Das Handle für Fenster, um das Dialogfeld wie in der Codesegment gezeigt `hwndOwner ([in] long)`.  
   
      Der Assistent verwendet diese `hwndOwner` als übergeordnetes Element für das Dialogfeld des Assistenten.  
   
--   Kontextparameter übergeben auf die Schnittstelle als Variante für SAFEARRAY wie gezeigt in das Codesegment `[in] SAFEARRAY (VARIANT)* ContextParams`.  
+- Kontextparameter übergeben auf die Schnittstelle als Variante für SAFEARRAY wie gezeigt in das Codesegment `[in] SAFEARRAY (VARIANT)* ContextParams`.  
   
      Kontextparameter enthalten ein Array von Werten, die spezifisch für die Art der Assistent gestartet wird und den aktuellen Status des Projekts. Die IDE übergibt die Kontextparameter, um dem Assistenten. Weitere Informationen finden Sie unter [Kontextparameter](../../extensibility/internals/context-parameters.md).  
   
--   Benutzerdefinierte Parameter auf die Schnittstelle als eine Variante für übergeben SAFEARRAY wie gezeigt in das Codesegment `[in] SAFEARRAY (VARIANT)* CustomParams`.  
+- Benutzerdefinierte Parameter auf die Schnittstelle als eine Variante für übergeben SAFEARRAY wie gezeigt in das Codesegment `[in] SAFEARRAY (VARIANT)* CustomParams`.  
   
      Benutzerdefinierte Parameter enthalten, ein Array von benutzerdefinierten Parametern. Eine VSZ-Datei übergibt benutzerdefinierte Parameter an die IDE. Die Werte hängen von der `Param=` Anweisungen. Weitere Informationen finden Sie unter [benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md).  
   
--   Rückgabewerte für die-Schnittstelle  
+- Rückgabewerte für die-Schnittstelle  
   
     ```  
     wizardResultSuccess = -1,  

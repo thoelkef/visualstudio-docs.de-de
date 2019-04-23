@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052804"
 ---
 # <a name="define-packages-and-namespaces"></a>Definieren von Paketen und Namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
   
  [Eigenschaften von Paketen](#Properties)  
   
-##  <a name="Namespaces"></a> Namespaces  
+## <a name="Namespaces"></a> Namespaces  
  Mit Paketen lässt sich Arbeit in unterschiedliche Bereiche aufteilen. Jedes Paket definiert einen Namespace, damit keine Konflikte zwischen Namen auftreten, die in anderen Paketen definiert sind.  
   
  Die Eigenschaft für den qualifizierten Namen jedes Elements ist der qualifizierte Name des Pakets, zu dem es gehört, gefolgt vom eigenen Namen des Elements. Wenn der Name des Pakets `MyPackage` lautet, lautet der qualifizierte Name einer Klasse in dem Paket beispielsweise `MyPackage::MyClass`. Da jedes Element in einem Modell enthalten ist, beginnt jeder qualifizierte Name mit dem Namen des Modells.  
@@ -58,20 +58,20 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
   
  Pakete sind Container. Wenn Sie ein Paket verschieben oder löschen, werden die Klassen, Pakete und andere im Paket definierten Elemente ebenfalls verschoben bzw. gelöscht. Das Gleiche gilt für andere Elemente, die Namespaces definieren.  
   
-##  <a name="Packages"></a> Erstellen und Anzeigen von Paketen  
+## <a name="Packages"></a> Erstellen und Anzeigen von Paketen  
  Sie können ein Paket in einem UML-Klassendiagramm oder im UML-Modell-Explorer erstellen.  
   
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>So erstellen Sie ein Paket in einem UML-Klassendiagramm  
   
-1.  Öffnen Sie ein UML-Klassendiagramm, oder erstellen Sie ein neues UML-Klassendiagramm.  
+1. Öffnen Sie ein UML-Klassendiagramm, oder erstellen Sie ein neues UML-Klassendiagramm.  
   
-2.  Klicken Sie auf die **Paket** Tool.  
+2. Klicken Sie auf die **Paket** Tool.  
   
-3.  Klicken Sie auf eine beliebige Stelle im Diagramm. Eine neue Paketform wird angezeigt.  
+3. Klicken Sie auf eine beliebige Stelle im Diagramm. Eine neue Paketform wird angezeigt.  
   
      Sie können in ein vorhandenes Paket klicken, um ein Paket in einem anderen Paket zu schachteln.  
   
-4.  Geben Sie einen neuen Namen für das Paket ein.  
+4. Geben Sie einen neuen Namen für das Paket ein.  
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>So erstellen Sie ein Paket im UML-Modell-Explorer  
   
@@ -92,12 +92,12 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>So zeigen Sie ein vorhandenes Paket in einem UML-Klassendiagramm an  
   
--   Ziehen Sie das Paket aus dem UML-Modell-Explorer in das Klassendiagramm.  
+- Ziehen Sie das Paket aus dem UML-Modell-Explorer in das Klassendiagramm.  
   
     > [!NOTE]
     >  Hierdurch wird in diesem Diagramm eine Ansicht des Pakets erstellt. In der Ansicht werden nicht unbedingt alle im Paket enthaltenen Elemente angezeigt. Um sicherzustellen, dass der gesamte Inhalt eines Pakets angezeigt wird, zeigen Sie das Paket im UML-Modell-Explorer an.  
   
-##  <a name="Elements"></a> Erstellen von Modellelementen in Paketen  
+## <a name="Elements"></a> Erstellen von Modellelementen in Paketen  
  Es gibt vier Verfahren, mit denen Sie Modellelemente in ein Paket einfügen können:  
   
 - Fügen Sie im UML-Modell-Explorer einem Paket ein neues Element hinzu.  
@@ -112,98 +112,98 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>So erstellen Sie im UML-Modell-Explorer ein Element in einem Paket  
   
-1.  Open **UML-Modell-Explorer**. Auf der **Ansicht** Startmenü **andere Windows**, und klicken Sie dann auf **UML-Modell-Explorer**.  
+1. Open **UML-Modell-Explorer**. Auf der **Ansicht** Startmenü **andere Windows**, und klicken Sie dann auf **UML-Modell-Explorer**.  
   
-2.  Klicken Sie mit der rechten Maustaste auf ein Paket oder Modell, dem Sie ein neues Element hinzufügen möchten.  
+2. Klicken Sie mit der rechten Maustaste auf ein Paket oder Modell, dem Sie ein neues Element hinzufügen möchten.  
   
-3.  Zeigen Sie auf **hinzufügen**, und klicken Sie dann auf die Art des Elements, das Sie hinzufügen möchten.  
+3. Zeigen Sie auf **hinzufügen**, und klicken Sie dann auf die Art des Elements, das Sie hinzufügen möchten.  
   
      Das neue Element wird unter dem Paket angezeigt.  
   
-4.  Geben Sie einen Namen für das neue Element ein.  
+4. Geben Sie einen Namen für das neue Element ein.  
   
     > [!NOTE]
     >  Das neue Element wird in keinem Diagramm angezeigt. Um eine Ansicht des neuen Elements zu erstellen, können Sie es aus dem UML-Modell-Explorer in ein Diagramm ziehen. Das Diagramm muss von einem Diagrammtyp sein, in dem diese Art von Element angezeigt wird.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>So erstellen Sie in einem UML-Klassendiagramm ein Element in einem Paket  
   
-1.  Öffnen Sie ein Klassendiagramm, in dem das Paket angezeigt wird.  
+1. Öffnen Sie ein Klassendiagramm, in dem das Paket angezeigt wird.  
   
-    -   Erstellen Sie ein neues Paket, sofern Sie noch kein neues Paket erstellt haben.  
+    - Erstellen Sie ein neues Paket, sofern Sie noch kein neues Paket erstellt haben.  
   
-    -   Damit wird ein vorhandenes Paket in einem Klassendiagramm angezeigt werden, können Sie das Paket von ziehen **UML-Modell-Explorer** in das Klassendiagramm.  
+    - Damit wird ein vorhandenes Paket in einem Klassendiagramm angezeigt werden, können Sie das Paket von ziehen **UML-Modell-Explorer** in das Klassendiagramm.  
   
-2.  Klicken Sie auf das Tool für eine Klasse, eine Schnittstelle, eine Enumeration oder ein Paket.  
+2. Klicken Sie auf das Tool für eine Klasse, eine Schnittstelle, eine Enumeration oder ein Paket.  
   
-3.  Klicken Sie auf das Paket, in das Sie das neue Element einfügen möchten.  
+3. Klicken Sie auf das Paket, in das Sie das neue Element einfügen möchten.  
   
      Das neue Element wird in dem Paket angezeigt.  
   
 #### <a name="to-create-all-the-elements-of-a-diagram-in-a-specified-package"></a>So erstellen Sie alle Elemente eines Diagramms in einem angegebenen Paket  
   
-1.  Erstellen Sie das Paket, sofern Sie es noch nicht erstellt haben.  
+1. Erstellen Sie das Paket, sofern Sie es noch nicht erstellt haben.  
   
-2.  Öffnen Sie ein Komponentendiagramm, Anwendungsfalldiagramm oder UML-Klassendiagramm.  
+2. Öffnen Sie ein Komponentendiagramm, Anwendungsfalldiagramm oder UML-Klassendiagramm.  
   
-3.  Öffnen Sie die Eigenschaften des Diagramms. Mit der rechten Maustaste in einen leeren Bereich des Diagramms, und klicken Sie dann auf **Eigenschaften**.  
+3. Öffnen Sie die Eigenschaften des Diagramms. Mit der rechten Maustaste in einen leeren Bereich des Diagramms, und klicken Sie dann auf **Eigenschaften**.  
   
-4.  In der **Linked Package** -Eigenschaft, wählen Sie das Paket, das die den Inhalt des Diagramms enthalten soll.  
+4. In der **Linked Package** -Eigenschaft, wählen Sie das Paket, das die den Inhalt des Diagramms enthalten soll.  
   
-5.  Erstellen Sie neue Elemente im Diagramm. Diese werden in das Paket eingefügt.  
+5. Erstellen Sie neue Elemente im Diagramm. Diese werden in das Paket eingefügt.  
   
-    -   Die **qualifizierten Namen** jedes Elements beginnt mit dem qualifizierten Namen des Pakets.  
+    - Die **qualifizierten Namen** jedes Elements beginnt mit dem qualifizierten Namen des Pakets.  
   
-    -   In **UML-Modell-Explorer**, jedes Element wird unter dem Paket angezeigt.  
+    - In **UML-Modell-Explorer**, jedes Element wird unter dem Paket angezeigt.  
   
-##  <a name="Moving"></a> Verschieben von Elementen in und aus Paketen  
+## <a name="Moving"></a> Verschieben von Elementen in und aus Paketen  
  Sie können ein oder mehrere Elemente in ein Paket oder aus einem Paket verschieben.  
   
  Wenn Sie ein Paket verschieben, werden alle Elemente im Paket mit dem Paket verschoben.  
   
 #### <a name="to-move-an-element-into-or-out-of-a-package"></a>So verschieben Sie ein Element in ein Paket oder aus einem Paket  
   
--   Ziehen Sie im UML-Modell-Explorer das Element in die Struktur oder aus der Struktur, deren Stamm das Paket ist.  
+- Ziehen Sie im UML-Modell-Explorer das Element in die Struktur oder aus der Struktur, deren Stamm das Paket ist.  
   
      Der qualifizierte Name des Elements wird geändert, um den Namen des neuen Pakets oder Modells anzugeben, das Besitzer des Modells ist.  
   
      \- oder –  
   
--   Ziehen Sie in einem Klassendiagramm das Element in eine Paketform.  
+- Ziehen Sie in einem Klassendiagramm das Element in eine Paketform.  
   
      Der qualifizierte Name des Elements wird geändert, um den Namen des neuen Pakets anzugeben, das Besitzer des Modells ist.  
   
     > [!NOTE]
     >  Wenn Sie ein Element aus einem Paket in einen leeren Teil des Diagramms ziehen, bleibt das gleiche Paket Besitzer des Elements. So können Sie ein Diagramm erstellen, in dem Elemente aus mehreren Paketen angezeigt werden, ohne die Pakete selbst anzeigen zu müssen.  
   
-##  <a name="Pasting"></a> Einfügen von Elementen in einem Paket  
+## <a name="Pasting"></a> Einfügen von Elementen in einem Paket  
  Sie können ein Element in ein Paket einfügen. Wenn Sie eine Gruppe von zugehörigen Elementen in ein Paket einfügen, werden die Beziehungen zwischen ihnen ebenfalls eingefügt.  
   
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>So fügen Sie in einem UML-Klassendiagramm Elemente in ein Paket ein  
   
-1.  Wählen Sie in einem UML-Klassendiagramm alle Elemente aus, die Sie kopieren möchten. Mit der rechten Maustaste eine davon aus, und klicken Sie dann auf **Kopie**.  
+1. Wählen Sie in einem UML-Klassendiagramm alle Elemente aus, die Sie kopieren möchten. Mit der rechten Maustaste eine davon aus, und klicken Sie dann auf **Kopie**.  
   
-2.  Mit der rechten Maustaste in des Pakets, und klicken Sie dann auf **einfügen**.  
+2. Mit der rechten Maustaste in des Pakets, und klicken Sie dann auf **einfügen**.  
   
     > [!NOTE]
     >  Das Paket kann in einem anderen Diagramm enthalten sein.  
   
-##  <a name="Import"></a> Importbeziehungen zwischen Paketen  
+## <a name="Import"></a> Importbeziehungen zwischen Paketen  
  Sie können eine importbeziehung zwischen Paketen mit definieren die **importieren** Tool.  
   
  Bei einer Importbeziehung sind die im importierten Paket definierten Elemente, d. h. die Elemente am Pfeilende der Beziehung, auch im Paket definiert, aus dem der Import erfolgt. Elemente, deren Sichtbarkeit als definiert ist **Paket** werden auch in der importierenden Pakets angezeigt.  
   
  Erstellen Sie in Importbeziehungen keine Schleifen.  
   
-##  <a name="References"></a> Verweise aus einem Namespace in eine andere  
+## <a name="References"></a> Verweise aus einem Namespace in eine andere  
  Wenn Sie von einem Element in einem Paket auf ein Element eines anderen Pakets verweisen möchten, müssen Sie den qualifizierten Namen des Elements verwenden.  
   
  Angenommen, das Paket `SalesCommon` definiert den Typ `CustomerAddress`. In einem anderen Paket mit dem Namen `RestaurantSales` möchten Sie den Typ `MealOrder` definieren, der über ein Attribut vom Typ „Customer Address“ verfügt. Sie verfügen über zwei Möglichkeiten:  
   
--   Geben Sie den Typ des Attributs mit dem vollqualifizierten Namen `SalesCommon::CustomerAddress` an. Gehen Sie so nur vor, wenn `CustomerAddress` hat seine **Sichtbarkeit** -Eigenschaftensatz auf **öffentliche**.  
+- Geben Sie den Typ des Attributs mit dem vollqualifizierten Namen `SalesCommon::CustomerAddress` an. Gehen Sie so nur vor, wenn `CustomerAddress` hat seine **Sichtbarkeit** -Eigenschaftensatz auf **öffentliche**.  
   
--   Erstellen Sie eine Importbeziehung vom Paket `RestaurantSales` zum Paket `SalesCommon`. Dann können Sie `CustomerAddress` ohne qualifizierten Namen verwenden.  
+- Erstellen Sie eine Importbeziehung vom Paket `RestaurantSales` zum Paket `SalesCommon`. Dann können Sie `CustomerAddress` ohne qualifizierten Namen verwenden.  
   
-##  <a name="Properties"></a> Eigenschaften von Paketen  
+## <a name="Properties"></a> Eigenschaften von Paketen  
  Jedes Paket verfügt über die folgenden Eigenschaften. Klicken Sie zum Anzeigen der Eigenschaften, mit der rechten Maustaste in des Pakets in einem Diagramm oder im UML-Modell-Explorer, und klicken Sie dann auf **Eigenschaften**.  
   
 |Eigenschaft|Standardwert|Beschreibung|  

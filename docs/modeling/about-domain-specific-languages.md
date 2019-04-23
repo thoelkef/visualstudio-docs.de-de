@@ -9,26 +9,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046820"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
-Im Gegensatz zu einer Sprache wie C# oder UML-eine domänenspezifische Sprache (DSL) soll Anweisungen in einer bestimmten Problembereich oder Domäne express.
+Im Gegensatz zu einer Sprache wie c# oder UML-eine domänenspezifische Sprache (DSL) soll Anweisungen in einer bestimmten Problembereich oder Domäne express.
 
 Well-Known DSLs sind reguläre Ausdrücke und SQL. Jede DSL ist viel besser als eine Sprache zum Beschreiben der Vorgänge für Zeichenfolgen oder eine Datenbank, sondern eher schlechter zum Beschreiben von Ideen, die außerhalb der eigenen Bereichs liegen. Einzelne Branchen können auch ihre eigenen DSLs. Z. B. in der Telekommunikationsbranche rufen Sie Beschreibung an auf, die Sprachen, geben die Sequenz der Status in einen Telefonanruf an, und übertragen in der Luft Branche weit verbreitet ist ein Standard, die DSL mit der Flug Buchungen beschrieben werden.
 
 Ihr Unternehmen und Ihr Projekt betreffen auch spezielle Sätze von Konzepten, die mit einer DSL beschrieben werden können. Beispielsweise können Sie eine DSL für eine dieser Anwendungen definieren:
 
--   Planen der Navigationspfade auf einer Website.
+- Planen der Navigationspfade auf einer Website.
 
--   Schaltpläne für elektronische Komponenten.
+- Schaltpläne für elektronische Komponenten.
 
--   Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.
+- Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.
 
 Beim Entwerfen einer DSL, die Sie definieren eine *Domänenklasse* für die einzelnen wichtiger Konzepte, die in der Domäne, z. B. eine Webseite, Lamp oder Flughafen-Check-in –. Sie definieren *domänenbeziehungen* wie Links, über das Netzwerk oder ein Fließband, um die Konzepte miteinander zu verknüpfen.
 
@@ -114,12 +114,12 @@ Eine domänenspezifische Sprache, bieten die folgenden Vorteile:
 
 Die meisten Softwareentwicklungsteams, die einer domänenspezifischen Sprachen verwenden, gehen Sie zum Erstellen und verwenden ihre Modelle:
 
--   Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.
+- Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.
 
--   Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.
+- Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.
 
--   Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.
+- Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.
 
--   Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.
+- Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.
 
--   Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.
+- Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.

@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58962287"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052388"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führ
   
  Einige Threads Besitzregeln zu beachten:  
   
--   Spinlocks sind ungezählte sperren, die klare Thread den Besitz an.  
+- Spinlocks sind ungezählte sperren, die klare Thread den Besitz an.  
   
--   Mutexe und kritische Abschnitte werden Sperren gezählt, die klare Thread den Besitz zu haben.  
+- Mutexe und kritische Abschnitte werden Sperren gezählt, die klare Thread den Besitz zu haben.  
   
--   Semaphoren und Ereignissen werden Sperren gezählt, die keine klare Thread den Besitz aufweisen.  
+- Semaphoren und Ereignissen werden Sperren gezählt, die keine klare Thread den Besitz aufweisen.  
   
 ## <a name="locking-annotations"></a>Sperren von Anmerkungen  
  Die folgende Tabelle enthält die Sperren von Anmerkungen.  

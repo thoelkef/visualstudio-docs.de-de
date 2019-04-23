@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050569"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Exemplarische Vorgehensweise: Schreiben einer Schnellansicht in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,20 +52,20 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>So benennen Sie "Class1.vb" um und fügen "Microsoft.VisualStudio.DebuggerVisualizers" hinzu  
   
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Class1.vb** und dann im Kontextmenü auf **Umbenennen**.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Class1.vb** und dann im Kontextmenü auf **Umbenennen**.  
   
-2.  Ändern Sie den Namen von Class1.vb in einen aussagekräftigeren Namen, zum Beispiel DebuggerSide.vb.  
+2. Ändern Sie den Namen von Class1.vb in einen aussagekräftigeren Namen, zum Beispiel DebuggerSide.vb.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passt die Klassendeklaration in DebuggerSide.vb automatisch an den neuen Dateinamen an.  
   
-3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyFirstVisualizer**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.  
+3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyFirstVisualizer**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.  
   
-4.  Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** den Eintrag „Microsoft.VisualStudio.DebuggerVisualizers.DLL“ aus.  
+4. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** den Eintrag „Microsoft.VisualStudio.DebuggerVisualizers.DLL“ aus.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
-6.  Fügen Sie in DebuggerSide.vb den `Imports`-Anweisungen die folgende Anweisung hinzu:  
+6. Fügen Sie in DebuggerSide.vb den `Imports`-Anweisungen die folgende Anweisung hinzu:  
   
     ```  
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
@@ -105,13 +105,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-add-systemwindowsforms"></a>So fügen Sie System.Windows.Forms hinzu  
   
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.  
   
-2.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** auf den Eintrag **System.Windows.Forms**.  
+2. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** auf den Eintrag **System.Windows.Forms**.  
   
-3.  Klicken Sie auf **OK**.  
+3. Klicken Sie auf **OK**.  
   
-4.  Fügen Sie in DebuggerSide.cs den `Imports`-Anweisungen die folgende Anweisung hinzu:  
+4. Fügen Sie in DebuggerSide.cs den `Imports`-Anweisungen die folgende Anweisung hinzu:  
   
     ```  
     Imports System.Windows.Forms  
@@ -122,7 +122,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>So zeigen Sie die Ausgabe der Schnellansicht in einem Dialogfeld an  
   
-1.  Fügen Sie der `Show`-Methode folgende Codezeile hinzu:  
+1. Fügen Sie der `Show`-Methode folgende Codezeile hinzu:  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -130,20 +130,20 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
      Dieser Beispielcode enthält keine Fehlerbehandlung. Sie sollten die Fehlerbehandlung in einer echten Schnellansicht oder in anderen Anwendungen berücksichtigen.  
   
-2.  Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
+2. Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
   
 ## <a name="add-the-necessary-attribute"></a>Hinzufügen des erforderlichen Attributs  
  Damit sind wir mit dem Code für den Debugger fertig. Ein Schritt fehlt allerdings noch: Das Attribut, das der zu debuggenden Seite mitteilt, welche Auflistung von Klassen die Schnellansicht enthält.  
   
 #### <a name="to-add-the-debugee-side-code"></a>So fügen Sie den Code für die zu debuggende Seite hinzu  
   
-1.  Fügen Sie DebuggerSide.vb den folgenden Attributcode hinzu, und zwar nach den `Imports`-Anweisungen und vor `namespace MyFirstVisualizer`:  
+1. Fügen Sie DebuggerSide.vb den folgenden Attributcode hinzu, und zwar nach den `Imports`-Anweisungen und vor `namespace MyFirstVisualizer`:  
   
     ```  
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
+2. Klicken Sie im Menü **Erstellen** auf **MyFirstVisualizer erstellen**. Das Projekt sollte erfolgreich erstellt werden. Korrigieren Sie alle Buildfehler, bevor Sie fortfahren.  
   
 ## <a name="create-a-test-harness"></a>Erstellen einer Testumgebung  
  Damit ist das Erstellen Ihrer ersten Schnellansicht abgeschlossen. Wenn Sie alle Schritte richtig befolgt haben, können Sie die Schnellansicht problemlos erstellen und in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installieren. Bevor Sie eine Schnellansicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installieren, sollten Sie jedoch durch Tests sicherstellen, dass sie ordnungsgemäß funktioniert. Als Nächstes erstellen Sie eine Testumgebung, in der Sie die Schnellansicht ohne Installation in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausführen können.  
@@ -177,17 +177,17 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in [!INCLUDE[vbprv
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>So fügen Sie MyTestConsole die erforderlichen Verweise hinzu  
   
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.  
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen**.  
   
-2.  Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** den Eintrag „Microsoft.VisualStudio.DebuggerVisualizers“ aus.  
+2. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.NET** den Eintrag „Microsoft.VisualStudio.DebuggerVisualizers“ aus.  
   
-3.  Klicken Sie auf **OK**.  
+3. Klicken Sie auf **OK**.  
   
-4.  Klicken Sie mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie erneut auf **Verweis hinzufügen**.  
+4. Klicken Sie mit der rechten Maustaste auf **MyTestConsole**, und klicken Sie erneut auf **Verweis hinzufügen**.  
   
-5.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Projekte**, und wählen Sie dann „MyFirstVisualizer“ aus.  
+5. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Projekte**, und wählen Sie dann „MyFirstVisualizer“ aus.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Fertigstellen der Testumgebung und Testen der Schnellansicht  
  Als Nächstes fügen Sie den Code hinzu und stellen damit die Testumgebung fertig.  

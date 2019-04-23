@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044186"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
  Gültige Ausdruckssyntax ist folgendermaßen definiert:  
   
--   Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Der Funktionsausdruck, wie z. B. "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   Die "&#124;" ist der OR-Operator.  
+- Die "&#124;" ist der OR-Operator.  
   
--   Die "&" und "+" Zeichen sind beide AND-Operatoren.  
+- Die "&" und "+" Zeichen sind beide AND-Operatoren.  
   
--   Das Zeichen "!" ist der Operator NOT.  
+- Das Zeichen "!" ist der Operator NOT.  
   
--   Klammern erzwingen die Auswertungsreihenfolge.  
+- Klammern erzwingen die Auswertungsreihenfolge.  
   
--   Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.  
+- Eine leerer oder NULL-Ausdruck wird als Übereinstimmung ausgewertet.  
   
--   Projektfunktionen können jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r  
+- Projektfunktionen können jedes Zeichen außer diesen reservierten Zeichen sein: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel werden drei unterschiedliche Vorlagen gezeigt. `Template1` gilt für alle C#-Projekttypen oder jeden anderen Projekttyp, der die `WindowsAppContainer`-Funktion unterstützt. `Template2` gilt für C#-Projekte beliebiger Art. `Template3` gilt für C#-Projekte, die keine `WindowsAppContainer` sind Projekte.  

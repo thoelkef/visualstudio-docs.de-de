@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045328"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-in
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
--   [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
+- [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
 
--   [Hinzufügen und Entfernen von Projektelementen](../ide/adding-and-removing-project-items.md)
+- [Hinzufügen und Entfernen von Projektelementen](../ide/adding-and-removing-project-items.md)
 
--   [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)
 
--   [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
+- [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)
 
--   [Anwendungseigenschaften](../ide/application-properties.md)
+- [Anwendungseigenschaften](../ide/application-properties.md)
 
--   [Verwalten der Signierung von Assemblys und Manifesten](../ide/managing-assembly-and-manifest-signing.md)
+- [Verwalten der Signierung von Assemblys und Manifesten](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Gewusst wie: Angeben eines Anwendungssymbols (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>Siehe auch
  [Visual Studio-IDE](../ide/visual-studio-ide.md)

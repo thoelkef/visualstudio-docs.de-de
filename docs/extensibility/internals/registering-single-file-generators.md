@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047188"
 ---
 # <a name="registering-single-file-generators"></a>Registrieren von Generatoren einzelner Dateien
 Ein benutzerdefiniertes Tool in zur Verfügung stellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie ihn also registrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können instanziieren und verknüpft es mit einem bestimmten Projekttyp.
@@ -38,15 +38,15 @@ Ein benutzerdefiniertes Tool in zur Verfügung stellen [!INCLUDE[vsprvs](../../c
 
 2. Erstellen Sie einen Registrierungsschlüssel in der gewünschten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive unter Generatoren\\*GUID* , in denen *GUID* wird die GUID, die durch der spezifischen Sprache Projektsystem oder Dienst definiert. Der Name des Schlüssels wird der programmgesteuerte Name des benutzerdefinierten Tools. Der benutzerdefinierte Schlüssel hat die folgenden Werte:
 
-   -   (Standard)
+   - (Standard)
 
         Dies ist optional. Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, jedoch empfohlen.
 
-   -   CLSID
+   - CLSID
 
         Erforderlich. Gibt den Bezeichner der Klassenbibliothek von COM-Komponente, die implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Erforderlich. Gibt an, ob die Typen von Dateien, die von diesem benutzerdefinierten Tool erzeugt visuellen Designern zur Verfügung gestellt werden. Der Wert dieses Parameters muss 0 (null) Typen für visuelle Designer nicht verfügbar sind oder (1) 1 für Typen, die für den visuellen Designern verfügbar sein.
 

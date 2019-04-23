@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053012"
 ---
 # <a name="grant-trust-to-documents"></a>Gewähren von Vertrauen für Dokumente
   Ein Projekt auf Dokumentebene verfügt über die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene: Signieren der Manifeste mit einem Zertifikat oder durch Klicken auf die vertrauenswürdige Eingabeaufforderung. Darüber hinaus muss sich das Dokument oder die Arbeitsmappe in einem Verzeichnis befinden, das als vertrauenswürdiger Speicherort festgelegt ist.
@@ -35,13 +35,13 @@ ms.locfileid: "56599661"
 ## <a name="security-considerations-for-office-solutions"></a>Überlegungen zur Sicherheit für Office-Projektmappen
  Es gibt mehrere Sicherheitsaspekte, wenn man überlegt, welche Ordner den vertrauenswürdigen Speicherorten hinzugefügt werden sollen:
 
--   Lokale Ordner werden als sicherer und implizit vertrauenswürdig betrachtet. Remotespeicherorte, wie beispielsweise Dateifreigaben, müssen als vertrauenswürdige Speicherorte festgelegt werden.
+- Lokale Ordner werden als sicherer und implizit vertrauenswürdig betrachtet. Remotespeicherorte, wie beispielsweise Dateifreigaben, müssen als vertrauenswürdige Speicherorte festgelegt werden.
 
--   Wenn Sie den vertrauenswürdigen Speicherorten ein Verzeichnis hinzufügen, wird auf diese Weise nicht nur den Office-Projektmappen, sondern auch dem VBA- und ActiveX-Code die volle Vertrauenswürdigkeit gewährt. Aus diesem Grund das Root-Verzeichnis und die *eigene* Ordner sollte nicht festgelegt werden als vertrauenswürdig.
+- Wenn Sie den vertrauenswürdigen Speicherorten ein Verzeichnis hinzufügen, wird auf diese Weise nicht nur den Office-Projektmappen, sondern auch dem VBA- und ActiveX-Code die volle Vertrauenswürdigkeit gewährt. Aus diesem Grund das Root-Verzeichnis und die *eigene* Ordner sollte nicht festgelegt werden als vertrauenswürdig.
 
--   Obwohl das Dokument selbst durch die Verwendung der vertrauenswürdigen Speicherorte vertrauenswürdig ist, sind zusätzliche Berechtigungen erforderlich, damit die Anpassung als vertrauenswürdig eingestuft wird. Sie können die volle Vertrauenswürdigkeit für die Anpassung mithilfe von Signieren der Manifeste mit einem Zertifikat, klicken Sie auf die vertrauenswürdige Eingabeaufforderung oder installieren die Office-Projektmappe zu erteilen der *Programmdateien* Verzeichnis.
+- Obwohl das Dokument selbst durch die Verwendung der vertrauenswürdigen Speicherorte vertrauenswürdig ist, sind zusätzliche Berechtigungen erforderlich, damit die Anpassung als vertrauenswürdig eingestuft wird. Sie können die volle Vertrauenswürdigkeit für die Anpassung mithilfe von Signieren der Manifeste mit einem Zertifikat, klicken Sie auf die vertrauenswürdige Eingabeaufforderung oder installieren die Office-Projektmappe zu erteilen der *Programmdateien* Verzeichnis.
 
--   Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint Server mithilfe von ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe auf Dokumentebene auf einem SharePoint Server mithilfe von ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Siehe auch
 - [Gewähren von Vertrauen für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md)

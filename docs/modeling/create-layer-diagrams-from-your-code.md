@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046916"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
@@ -43,13 +43,13 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 > [!NOTE]
 > Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
 
-1.  Auf der **Architektur** Menü wählen **neues Abhängigkeitsdiagramm**.
+1. Auf der **Architektur** Menü wählen **neues Abhängigkeitsdiagramm**.
 
-2.  Klicken Sie unter **Vorlagen**, wählen Sie **Abhängigkeitsdiagramm**.
+2. Klicken Sie unter **Vorlagen**, wählen Sie **Abhängigkeitsdiagramm**.
 
-3.  Benennen Sie das Diagramm.
+3. Benennen Sie das Diagramm.
 
-4.  In **zu Modellierungsprojekt hinzufügen**, navigieren Sie zu, und wählen Sie in der Projektmappe ein vorhandenes Modellierungsprojekt aus.
+4. In **zu Modellierungsprojekt hinzufügen**, navigieren Sie zu, und wählen Sie in der Projektmappe ein vorhandenes Modellierungsprojekt aus.
 
      - oder - 
 
@@ -58,7 +58,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
     > [!NOTE]
     > Das Abhängigkeitsdiagramm muss in einem Modellierungsprojekt vorhanden sein. Sie können es allerdings mit Elementen an einer beliebigen Stelle in der Projektmappe verknüpfen.
 
-5.  Stellen Sie sicher, dass sowohl das Modellierungsprojekt und das Dependency-Diagramm zu speichern.
+5. Stellen Sie sicher, dass sowohl das Modellierungsprojekt und das Dependency-Diagramm zu speichern.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Ziehen und ablegen, oder durch Kopieren und Einfügen aus einer Code Map
 
@@ -101,19 +101,19 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 
  Die Zahl auf einer Ebene gibt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch Folgendes, wenn Sie diese Zahl lesen:
 
--   Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
+- Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
 
      Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.
 
--   Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
+- Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
 
 ## <a name="Managing"></a> Verwalten von Links zwischen Ebenen und Artefakten
 
-1.  Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen**.
+1. Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen**.
 
      **Ebenen-Explorer** werden die Artefaktlinks für die ausgewählte Ebene.
 
-2.  Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:
+2. Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:
 
 |**Aktion**|**Im Ebenen-Explorer**|
 |-|-|
@@ -150,11 +150,11 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 ## <a name="Codemaps"></a> Ermitteln von Mustern und Abhängigkeiten in einer Code map
  Beim Erstellen von Abhängigkeitsdiagrammen können Sie auch erstellen **von code Maps**. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe von Projektmappen-Explorer, Klassenansicht oder Objektkatalog können Assemblys, Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weitere Informationen zu Codezuordnungen finden Sie unter den folgenden Themen:
 
--   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
+- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Siehe auch
 

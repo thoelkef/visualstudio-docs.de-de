@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e193f5c8363cda4e3519df45d001a1972865813e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057760"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Syntaxfarben in einem Legacysprachdienst
 
@@ -36,28 +36,28 @@ Visual Studio verwendet einen Farben-Dienst identifizieren die Elemente der Spra
 
 ## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Wie eine VSPackage eine Sprachendienst-Farbauswahl verwendet
 
-1.  Das VSPackage muss entsprechende Sprachdiensts, zum Abrufen den Sprachdienst VSPackage, um die folgenden Schritte ausführen müssen:
+1. Das VSPackage muss entsprechende Sprachdiensts, zum Abrufen den Sprachdienst VSPackage, um die folgenden Schritte ausführen müssen:
 
-    1.  Verwenden Sie ein Objekt, das die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Schnittstelle zum Abrufen des Texts, die eingefärbt werden.
+    1. Verwenden Sie ein Objekt, das die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Schnittstelle zum Abrufen des Texts, die eingefärbt werden.
 
          Text wird in der Regel mithilfe eines Objekts, das implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
 
-    2.  Den Sprachdienst durch Abfragen den Dienstanbieter des VSPackage für die der Sprachdienst-GUID zu erhalten. Dienste für Sprachen werden in der Registrierung über die Dateierweiterung identifiziert.
+    2. Den Sprachdienst durch Abfragen den Dienstanbieter des VSPackage für die der Sprachdienst-GUID zu erhalten. Dienste für Sprachen werden in der Registrierung über die Dateierweiterung identifiziert.
 
-    3.  Zuordnen den Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> Methode.
+    3. Zuordnen den Sprachdienst mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> Methode.
 
-2.  Das VSPackage kann jetzt abrufen und verwenden die Farbauswahl-Objekt wie folgt:
+2. Das VSPackage kann jetzt abrufen und verwenden die Farbauswahl-Objekt wie folgt:
 
     > [!NOTE]
     > VSPackages, die den Kern-Editor verwenden müssen keiner Sprache des Diensts Farbauswahl Objekte explizit abrufen. Sobald eine Instanz von der Kern-Editor eine entsprechende Sprachdienst erhält, führt es alle hier gezeigten farbliche Kennzeichnung von Aufgaben.
 
-    1.  Abrufen der Sprachdienst Farbauswahl-Objekt, das implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>, und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> Schnittstellen, die durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode auf des Sprachdiensts <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt.
+    1. Abrufen der Sprachdienst Farbauswahl-Objekt, das implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>, und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> Schnittstellen, die durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode auf des Sprachdiensts <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt.
 
-    2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um die Farbauswahl-Informationen für einen bestimmten Bereich des Texts zu erhalten.
+    2. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um die Farbauswahl-Informationen für einen bestimmten Bereich des Texts zu erhalten.
 
          <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Gibt ein Array von Werten, eines für jedes Zeichen im Textabschnitt farbig hervorgehoben wird. Die Werte sind Indizes in einer Liste von kolorierbaren Elements, die entweder den kolorierbaren Elements Standardliste vom kerneditor beibehalten oder eine benutzerdefinierte färbbare Elementliste verwaltet vom Sprachdienst selbst ist.
 
-    3.  Verwenden Sie die farbliche Kennzeichnung von Informationen zurückgegeben werden, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um den ausgewählten Text anzuzeigen.
+    3. Verwenden Sie die farbliche Kennzeichnung von Informationen zurückgegeben werden, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um den ausgewählten Text anzuzeigen.
 
 > [!NOTE]
 >  Zusätzlich zur Verwendung von einer Sprachendienst-Farbauswahl, kann eine VSPackage auch die allgemeinen Visual Studio-Text, Farben Mechanismus verwenden. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../../extensibility/using-fonts-and-colors.md).

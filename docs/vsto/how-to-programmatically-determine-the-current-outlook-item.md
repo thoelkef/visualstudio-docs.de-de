@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3608f516eb9206bc5b4c232c227d3e49c2414be7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052505"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Vorgehensweise: Programmgesteuertes Bestimmen des aktuellen Outlook-Elements
   Dieses Beispiel verwendet die `Explorer.SelectionChange` Ereignis, um den Namen des aktuellen Ordners und einige Informationen über das ausgewählte Element anzuzeigen. Der Code zeigt das ausgewählte Element.
@@ -34,7 +34,7 @@ ms.locfileid: "56599752"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Beispiel benötigen Sie Folgendes:
 
--   Termin, wenden Sie sich an und e-Mail-Elemente in Microsoft Office Outlook.
+- Termin, wenden Sie sich an und e-Mail-Elemente in Microsoft Office Outlook.
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)

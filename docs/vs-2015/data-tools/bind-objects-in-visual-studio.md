@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053116"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Binden von Objekten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio bietet die Design-Time-Tools für die Arbeit mit benutzerdefiniert
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Beispiele für die Verwendung von benutzerdefinierter Objekten als Datenquellen
  Es gibt unzählige Möglichkeiten, Ihre Anwendungslogik implementieren, wenn als Datenquelle mit Objekten arbeiten, sind Datenbanken für SQL einige standard-Vorgänge, die mit den Visual Studio – generierten TableAdapter-Objekten vereinfacht werden können. Auf dieser Seite wird erläutert, wie diese Standardprozesse implementieren mit TableAdapters.It dient nicht als Leitfaden zur Erstellung von benutzerdefinierten Objekten. Beispielsweise führen Sie die folgenden standard-Vorgänge unabhängig von der bestimmten Implementierung von den Objekten oder die Anwendungslogik in der Regel aus:
 
--   Laden von Daten in Objekte (in der Regel aus einer Datenbank) aus.
+- Laden von Daten in Objekte (in der Regel aus einer Datenbank) aus.
 
--   Erstellen eine typisierte Auflistung von Objekten.
+- Erstellen eine typisierte Auflistung von Objekten.
 
--   Objekte hinzufügen und Entfernen von Objekten aus einer Auflistung.
+- Objekte hinzufügen und Entfernen von Objekten aus einer Auflistung.
 
--   Die Daten des Objekts wird für Benutzer in einem Formular angezeigt.
+- Die Daten des Objekts wird für Benutzer in einem Formular angezeigt.
 
--   Ändern Bearbeiten/der Daten in einem Objekt.
+- Ändern Bearbeiten/der Daten in einem Objekt.
 
--   Speichern von Daten aus Objekten in der Datenbank.
+- Speichern von Daten aus Objekten in der Datenbank.
 
 > [!NOTE]
 >  Um besser zu verstehen, und geben den Kontext für die Beispiele auf dieser Seite, empfehlen wir, dass Sie die folgenden Aufgaben: [Exemplarische Vorgehensweise: Herstellen einer Verbindung mit Daten in Objekten (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Diese exemplarische Vorgehensweise erstellt, die hier besprochenen Objekte.

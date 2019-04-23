@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049736"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Erstellen eines Klassenbibliothekprojekts für Menübefehle, Gestenhandler oder Überprüfung  
   
-1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
-2.  Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus, und wählen Sie anschließend **Klassenbibliothek**aus.  
+2. Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus, und wählen Sie anschließend **Klassenbibliothek**aus.  
   
 #### <a name="to-create-a-vsix-project"></a>So erstellen Sie ein VSIX-Projekt  
   
-1.  Wenn Sie eine Komponente mit Code erstellen, ist es am einfachsten, zuerst das Klassenbibliotheksprojekt zu erstellen. Diesem Projekt wird der Code hinzugefügt.  
+1. Wenn Sie eine Komponente mit Code erstellen, ist es am einfachsten, zuerst das Klassenbibliotheksprojekt zu erstellen. Diesem Projekt wird der Code hinzugefügt.  
   
-2.  Erstellen eines VSIX-Projekts  
+2. Erstellen eines VSIX-Projekts  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
   
-    2.  Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
+    2. Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
   
-3.  Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
+3. Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
   
-    -   Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
+    - Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
   
-4.  Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Manifest-Editor geöffnet.  
+4. Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Manifest-Editor geöffnet.  
   
-5.  Legen Sie auf der Registerkarte **MetaData** den Namen und die Beschreibungsfelder des VSIX fest.  
+5. Legen Sie auf der Registerkarte **MetaData** den Namen und die Beschreibungsfelder des VSIX fest.  
   
-6.  Klicken Sie auf der Registerkarte **Ziele installieren** auf **Neu** , und legen Sie dann die Visual Studio-Versionen als Ziele fest.  
+6. Klicken Sie auf der Registerkarte **Ziele installieren** auf **Neu** , und legen Sie dann die Visual Studio-Versionen als Ziele fest.  
   
-7.  Fügen Sie Ihre Komponenten auf der Registerkarte **Objekte** der Visual Studio-Erweiterung hinzu.  
+7. Fügen Sie Ihre Komponenten auf der Registerkarte **Objekte** der Visual Studio-Erweiterung hinzu.  
   
-    1.  Wählen Sie **Neu**aus.  
+    1. Wählen Sie **Neu**aus.  
   
-    2.  Legen Sie diese Felder für eine Komponente mit Code im Dialogfeld **Neues Objekt hinzufügen** fest:  
+    2. Legen Sie diese Felder für eine Komponente mit Code im Dialogfeld **Neues Objekt hinzufügen** fest:  
   
         |||  
         |-|-|  
@@ -97,36 +97,36 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
 #### <a name="to-run-an-extension-during-its-development"></a>So führen Sie eine Erweiterung während ihrer Entwicklung aus  
   
-1.  Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.  
+1. Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.  
   
      Das Projekt wird erstellt, und eine neue Instanz von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird im Testmodus gestartet.  
   
-    -   Alternativ können Sie auch **Starten ohne Debugging**auswählen. Dadurch wird das Programm schneller gestartet.  
+    - Alternativ können Sie auch **Starten ohne Debugging**auswählen. Dadurch wird das Programm schneller gestartet.  
   
-2.  Erstellen oder öffnen Sie in der experimentellen Instanz von Visual Studio ein Modellierungsprojekt, und erstellen oder öffnen Sie ein Diagramm.  
+2. Erstellen oder öffnen Sie in der experimentellen Instanz von Visual Studio ein Modellierungsprojekt, und erstellen oder öffnen Sie ein Diagramm.  
   
      Die Erweiterung wird geladen und ausgeführt.  
   
-3.  Wenn Sie **Starten ohne Debugging** ausgewählt haben, den Debugger aber verwenden möchten, wechseln Sie zurück zur Hauptinstanz von Visual Studio. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie im Dialogfeld die experimentelle Instanz von Visual Studio aus, die den Programmnamen **devenv**hat.  
+3. Wenn Sie **Starten ohne Debugging** ausgewählt haben, den Debugger aber verwenden möchten, wechseln Sie zurück zur Hauptinstanz von Visual Studio. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie im Dialogfeld die experimentelle Instanz von Visual Studio aus, die den Programmnamen **devenv**hat.  
   
-##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
+## <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
  Führen Sie die folgenden Schritte aus, um Ihre Erweiterung in der Hauptinstanz von Visual Studio auszuführen, entweder auf dem eigenen Computer oder auf anderen Computern.  
   
-1.  Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom Erweiterungsprojekt erstellt wurde.  
+1. Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom Erweiterungsprojekt erstellt wurde.  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü Ihres Projekts **Ordner in Windows Explorer öffnen**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü Ihres Projekts **Ordner in Windows Explorer öffnen**aus.  
   
-    2.  Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
   
-2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
+2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   
-    -   Der Zielcomputer muss über eine der Editionen von Visual Studio verfügen, die Sie auf der Registerkarte **Installationsziele** von **source.extension.vsixmanifest**angegeben haben.  
+    - Der Zielcomputer muss über eine der Editionen von Visual Studio verfügen, die Sie auf der Registerkarte **Installationsziele** von **source.extension.vsixmanifest**angegeben haben.  
   
-3.  Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
+3. Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
   
      **Installer für Visual Studio-Erweiterungen** wird geöffnet, und die Erweiterung wird installiert.  
   
-4.  Starten Sie Visual Studio.  
+4. Starten Sie Visual Studio.  
   
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung  
   

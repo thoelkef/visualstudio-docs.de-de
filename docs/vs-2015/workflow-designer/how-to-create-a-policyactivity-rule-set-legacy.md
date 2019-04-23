@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050781"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Vorgehensweise: Erstellen eines PolicyActivity-Regelsatzes (Vorgängerversion)
 In diesem Thema wird das Erstellen eines Richtlinienaktivitätsregelsatzes mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben, die auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.  
@@ -32,33 +32,33 @@ In diesem Thema wird das Erstellen eines Richtlinienaktivitätsregelsatzes mithi
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>So wählen Sie einen Regelsatz für eine PolicyActivity-Aktivität aus beziehungsweise erstellen ihn  
   
-1.  Mit der rechten Maustaste die [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), und klicken Sie dann auf **Eigenschaften** zum Öffnen der **Eigenschaften** Fenster.  
+1. Mit der rechten Maustaste die [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), und klicken Sie dann auf **Eigenschaften** zum Öffnen der **Eigenschaften** Fenster.  
   
-2.  Klicken Sie auf die **RuleSetReference** Eigenschaft.  
+2. Klicken Sie auf die **RuleSetReference** Eigenschaft.  
   
-3.  Führen Sie einen der folgenden Schritte aus:  
+3. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Klicken Sie auf die **RuleSetReference** Ellipsen **[...]** , und wählen Sie dann auf einen vorhandenen Regelsatz der [Regel legen Sie im Dialogfeld auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Wechseln Sie dann zu Schritt 10.  
-  
-         - oder -   
-  
-    -   Geben Sie einen Namen für einen Regelsatz ein. Klicken Sie auf die **RuleSetReference** Ellipsen **[...]** , und wählen Sie dann **bearbeiten** in die [Regel legen Sie im Dialogfeld auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+    - Klicken Sie auf die **RuleSetReference** Ellipsen **[...]** , und wählen Sie dann auf einen vorhandenen Regelsatz der [Regel legen Sie im Dialogfeld auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Wechseln Sie dann zu Schritt 10.  
   
          - oder -   
   
-    -   Geben Sie einen Namen für einen Regelsatz ein. Erweitern Sie die **RuleSetReference** Eigenschaft, und wählen Sie die Auslassungspunkte **[...]**  in die **Rulesetdefinition** Eigenschaft.  
+    - Geben Sie einen Namen für einen Regelsatz ein. Klicken Sie auf die **RuleSetReference** Ellipsen **[...]** , und wählen Sie dann **bearbeiten** in die [Regel legen Sie im Dialogfeld auswählen (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+  
+         - oder -   
+  
+    - Geben Sie einen Namen für einen Regelsatz ein. Erweitern Sie die **RuleSetReference** Eigenschaft, und wählen Sie die Auslassungspunkte **[...]**  in die **Rulesetdefinition** Eigenschaft.  
   
          Die [Regel-Editor-Dialogfeld festlegen (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) wird geöffnet.  
   
-4.  In der [Regel-Editor-Dialogfeld festlegen (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), klicken Sie auf **Regel hinzufügen** dem Regelsatz eine neue Regel hinzu.  
+4. In der [Regel-Editor-Dialogfeld festlegen (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), klicken Sie auf **Regel hinzufügen** dem Regelsatz eine neue Regel hinzu.  
   
-5.  Geben Sie die **Namen**, **Priorität**, und **erneute** Eigenschaften, oder behalten Sie die Standardwerte.  
+5. Geben Sie die **Namen**, **Priorität**, und **erneute** Eigenschaften, oder behalten Sie die Standardwerte.  
   
-6.  Geben Sie den Text für die **Bedingung**.  
+6. Geben Sie den Text für die **Bedingung**.  
   
-7.  Geben Sie den Text für die **Then-Aktionen** und **Else-Aktionen**.  
+7. Geben Sie den Text für die **Then-Aktionen** und **Else-Aktionen**.  
   
-8.  Klicken Sie auf **Regel hinzufügen** erneut aus, um eine weitere Regel hinzuzufügen.  
+8. Klicken Sie auf **Regel hinzufügen** erneut aus, um eine weitere Regel hinzuzufügen.  
   
 9. Wenn Sie fertig sind, klicken Sie auf **OK**.  
   

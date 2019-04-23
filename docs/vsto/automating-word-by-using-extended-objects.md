@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050925"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatisieren von Word mithilfe von erweiterten Objekten
   Wenn Sie Word-Projektmappen in Visual Studio entwickeln, können Sie auch *Hostelemente* und *Hoststeuerelemente*in den Projektmappen verwenden. Dies sind Objekte, die bestimmte häufig verwendete Objekte im Word-Objektmodell (das von der primären Interopassembly für Word verfügbar gemacht wird) erweitern. Dazu gehören z. B. die Objekte <xref:Microsoft.Office.Interop.Word.Document> und <xref:Microsoft.Office.Interop.Word.ContentControl> . Die erweiterten Objekte verhalten sich wie die Word-Objekte, auf denen sie basieren, fügen den Objekten jedoch zusätzliche Ereignis- und Datenbindungsfunktionen hinzu.
@@ -46,13 +46,13 @@ ms.locfileid: "56598268"
 
  Weitere Informationen zu den Hoststeuerelementen, die Sie in Word-Projekten verwenden können, finden Sie unter den folgenden Themen:
 
--   [ContentControl-Elemente](../vsto/content-controls.md)
+- [ContentControl-Elemente](../vsto/content-controls.md)
 
--   [Bookmark-Steuerelement](../vsto/bookmark-control.md)
+- [Bookmark-Steuerelement](../vsto/bookmark-control.md)
 
--   [XMLNode-Steuerelement](../vsto/xmlnode-control.md)
+- [XMLNode-Steuerelement](../vsto/xmlnode-control.md)
 
--   [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)
+- [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)

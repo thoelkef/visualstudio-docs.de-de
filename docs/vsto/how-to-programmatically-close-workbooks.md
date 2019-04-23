@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 626f4e2328a208412d1e4e10857f336f37578f51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049281"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Vorgehensweise: Programmgesteuertes Schließen von Arbeitsmappen
   Sie können die aktive Arbeitsmappe schließen, oder eine Arbeitsmappe angeben, die geschlossen werden soll.
@@ -30,14 +30,14 @@ ms.locfileid: "56620069"
 
 ### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>So schließen Sie die aktive Arbeitsmappe in einer Anpassung auf Dokumentebene
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> -Methode auf, um die der Anpassung zugeordnete Arbeitsmappe zu schließen. Um das folgende Codebeispiel zu verwenden, führen sie es in der `Sheet1` -Klasse in einem Projekt auf Dokumentebene für Excel aus.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> -Methode auf, um die der Anpassung zugeordnete Arbeitsmappe zu schließen. Um das folgende Codebeispiel zu verwenden, führen sie es in der `Sheet1` -Klasse in einem Projekt auf Dokumentebene für Excel aus.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]
 
 ### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>So schließen Sie die aktive Arbeitsmappe in einem VSTO-Add-In
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> -Methode auf, um die aktive Arbeitsmappe zu schließen. Um das folgende Codebeispiel zu verwenden, führen sie es in der `ThisAddIn`-Klasse in einem VSTO-Add-In-Projekt für Excel aus.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> -Methode auf, um die aktive Arbeitsmappe zu schließen. Um das folgende Codebeispiel zu verwenden, führen sie es in der `ThisAddIn`-Klasse in einem VSTO-Add-In-Projekt für Excel aus.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
@@ -47,7 +47,7 @@ ms.locfileid: "56620069"
 
 ### <a name="to-close-a-workbook-that-you-specify-by-name"></a>So schließen Sie eine namentlich angegebene Arbeitsmappe
 
-1.  Geben Sie den Namen der Arbeitsmappe als Argument für die <xref:Microsoft.Office.Interop.Excel.Workbooks> -Auflistung an. Im folgenden Codebeispiel wird davon ausgegangen, dass eine Arbeitsmappe mit dem Namen **NewWorkbook** in Excel geöffnet ist.
+1. Geben Sie den Namen der Arbeitsmappe als Argument für die <xref:Microsoft.Office.Interop.Excel.Workbooks> -Auflistung an. Im folgenden Codebeispiel wird davon ausgegangen, dass eine Arbeitsmappe mit dem Namen **NewWorkbook** in Excel geöffnet ist.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
