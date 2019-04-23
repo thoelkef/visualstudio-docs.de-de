@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102756"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieht sich auf .NET-Objekte, die eine Verbindung mit einem Datenspeicher herstellen und die Daten an eine .NET-Anwendung verfügbar machen. Die Visual Studio-Designer können die Ausgabe von der Datenquelle, um die Codebausteine zu generieren, die die Daten zu Forms gebunden wird, wenn Drag & drop-Datenbankobjekte aus nutzen die **Datenquellen** Fenster. Diese Art von Datenquelle kann sein:  
   
--   Eine Klasse in einem Entity Framework-Datenmodell, das eine Art der Datenbank zugeordnet ist.  
+- Eine Klasse in einem Entity Framework-Datenmodell, das eine Art der Datenbank zugeordnet ist.  
   
--   Ein Dataset, das eine Art der Datenbank zugeordnet ist.  
+- Ein Dataset, das eine Art der Datenbank zugeordnet ist.  
   
--   Eine Klasse, die einen Netzwerkdienst, wie z. B. ein Windows Communication Foundation (WCF) Data-Dienst oder einen REST-Dienst darstellt.  
+- Eine Klasse, die einen Netzwerkdienst, wie z. B. ein Windows Communication Foundation (WCF) Data-Dienst oder einen REST-Dienst darstellt.  
   
--   Eine Klasse, die SharePoint-Dienst darstellt.  
+- Eine Klasse, die SharePoint-Dienst darstellt.  
   
--   Eine Klasse oder eine Auflistung in der Projektmappe.  
+- Eine Klasse oder eine Auflistung in der Projektmappe.  
   
 > [!NOTE]
 >  Wenn Sie keine Funktionen für die Datenbindung verwenden, gilt Datasets, die Entity Framework, LINQ to SQL, WCF, oder die SharePoint, das Konzept einer "Datenquelle" nicht. Einfach direkt an die Datenbank mithilfe von die SQLCommand-Objekte eine Verbindung herstellen Sie, und kommunizieren Sie direkt mit der Datenbank.  
@@ -77,11 +77,11 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
   
  Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:  
   
--   WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   WCF-Datendienste. Weitere Informationen finden Sie unter [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- WCF-Datendienste. Weitere Informationen finden Sie unter [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Webdienste.  
+- Webdienste.  
   
     > [!NOTE]
     >  Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.  

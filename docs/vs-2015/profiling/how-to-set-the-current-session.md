@@ -17,14 +17,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102691"
 ---
-# <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen der aktuellen Profilerstellungssitzung
+# <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen des aktuellen Prozesses
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mehrere Leistungssitzungen im **Leistungs-Explorer** öffnen und anschließend eine der sichtbaren Leistungssitzungen als aktuelle Sitzung festlegen.  
@@ -37,7 +37,7 @@ Sie können mehrere Leistungssitzungen im **Leistungs-Explorer** öffnen und ans
   
 ### <a name="to-set-current-performance-session"></a>So legen Sie die aktuelle Leistungssitzung fest  
   
--   Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung und anschließend auf **Als aktuelle Sitzung festlegen**.  
+- Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung und anschließend auf **Als aktuelle Sitzung festlegen**.  
   
      Der Sitzungsname wird in Fettdruck angezeigt.  
   
