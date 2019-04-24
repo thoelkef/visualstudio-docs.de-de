@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780423"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663728"
 ---
 # <a name="toolbox-html-tab"></a>Toolbox, Registerkarte „HTML“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webseiten und Webformulare nützlich sind. Öffnen Sie zuerst ein Dokument zur Bearbeitung im HTML-Designer, um diese Registerkarte anzuzeigen. Klicken Sie im Menü **Ansicht** auf **Toolbox** und dann auf die Registerkarte **HTML**.  
   
  Erstellen Sie eine Instanz eines Tools auf der Registerkarte **HTML**, indem Sie entweder auf das Tool doppelklicken und es zu ihrem Dokument an der aktuellen Einfügemarke hinzufügen oder das Tool auswählen und es an die gewünschte Position auf der Bearbeitungsoberfläche ziehen.  
@@ -55,7 +54,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputButton-Serversteuerelements](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Vorgehensweise: Erstellen von Skripts und Bearbeiten von Ereignishandlern](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Schaltfläche "-Webserversteuerelemente Inhaltszuordnung](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, und <xref:System.Web.UI.WebControls.Button>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputButton-Serversteuerelements](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Vorgehensweise: Erstellen von Skripts und Bearbeiten von Ereignishandlern](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Übersicht über die Button-Webserversteuerelemente](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> und <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Reset)**  
  ![HTMLpageResetButton-Bildschirmabbildung](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -68,7 +67,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputReset-Serversteuerelements](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, und <xref:System.Web.UI.WebControls.Button>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputReset-Serversteuerelements](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton> und <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Submit)**  
  ![HTMLpageToolbarSubmitButton-Bildschirmabbildung](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -81,7 +80,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputSubmit-Serversteuerelements](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, und <xref:System.Web.UI.WebControls.Button>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputSubmit-Serversteuerelements](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton> und <xref:System.Web.UI.WebControls.Button>.  
   
  **Input (Text)**  
  ![HTMLpageToolbarTextField-Bildschirmabbildung](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -94,7 +93,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputText-Serversteuerelements](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Übersicht über das TextBox-Steuerelement](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, und <xref:System.Web.UI.WebControls.TextBox>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputText-Serversteuerelements](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Übersicht über das TextBox-Webserversteuerelement](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText> und <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Überprüfen der Benutzereingabe in ASP.NET-Webseiten](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -110,7 +109,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="File1" type="file" name="File1">  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputFile-Serversteuerelements](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), und <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputFile-Serversteuerelements](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) und <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
 >  Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Überprüfen der Benutzereingabe in ASP.NET-Webseiten](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -142,7 +141,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputCheckBox-Serversteuerelements](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [aktiviert und "CheckBoxList" Webserver-Steuerelemente: Übersicht](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, und <xref:System.Web.UI.WebControls.CheckBox>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputCheckBox-Serversteuerelements](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [Übersicht über die CheckBox- und CheckBoxList-Webserversteuerelemente](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> und <xref:System.Web.UI.WebControls.CheckBox>.  
   
  **Input (Radio)**  
  ![VisualStudioHTMLpageRadioButton-Bildschirmabbildung](../../ide/reference/media/vxradio.gif "vxRadio")  
@@ -155,7 +154,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputRadioButton-Serversteuerelements](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton- und RadioButtonList Webserver-Steuerelemente: Übersicht](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, und <xref:System.Web.UI.WebControls.RadioButton>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputRadioButton-Serversteuerelements](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [Übersicht über die RadioButton- und RadioButtonList-Webserversteuerelemente](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> und <xref:System.Web.UI.WebControls.RadioButton>.  
   
  **Input (Hidden)**  
  ![HTML-Seite, Hidden-Element](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -168,7 +167,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Input-Steuerelemente](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarationssyntax des HtmlInputHidden-Serversteuerelements](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), und <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
+ Weitere Informationen finden Sie unter [Input-Steuerelemente (HTML)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Deklarative Syntax des HtmlInputHidden-Serversteuerelements](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) und <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
   
  **Textarea**  
  ![HTML-Seiten-Toolbox, Text Area](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
@@ -181,7 +180,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- Weitere Informationen finden Sie unter [Deklarationssyntax des HtmlTextArea-Serversteuerelements](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, und <xref:System.Web.UI.WebControls.TextBox>.  
+ Weitere Informationen finden Sie unter [Deklarative Syntax des HtmlTextArea-Serversteuerelements](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> und <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Überprüfen der Benutzereingabe in ASP.NET-Webseiten](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -197,7 +196,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- Weitere Informationen finden Sie unter [Deklarationssyntax des HtmlTable-Serversteuerelements](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Table-, TableRow- und TableCell Web Server Control Overview](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, und <xref:System.Web.UI.WebControls.Table>.  
+ Weitere Informationen finden Sie unter [Deklarative Syntax des HtmlTable-Serversteuerelements](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Übersicht über die Table-, TableRow- und TableCell-Webserversteuerelemente](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable> und <xref:System.Web.UI.WebControls.Table>.  
   
  **Image**  
  ![HTML-Seite, Image-Element](../../ide/reference/media/vximage.gif "vxImage")  
@@ -210,7 +209,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <img alt="" src="">  
 ```  
   
- Weitere Informationen finden Sie unter [Deklarationssyntax des HtmlImage-Serversteuerelements](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Übersicht über das Image-Steuerelement](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, und <xref:System.Web.UI.WebControls.Image>.  
+ Weitere Informationen finden Sie unter [Deklarative Syntax des HtmlImage-Serversteuerelements](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Übersicht über das Image-Webserversteuerelement](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> und <xref:System.Web.UI.WebControls.Image>.  
   
  **Auswählen**  
  ![HTML-Seiten-Toolbox, Dropdownfeld](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -225,7 +224,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
   
  Sie können ein mehrzeiliges `select`-Element erstellen, indem Sie den Wert der size-Eigenschaft erhöhen.  
   
- Weitere Informationen finden Sie unter [Deklarationssyntax des HtmlSelect-Serversteuerelements](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Vorgehensweise: Erstellen von Skripts und Bearbeiten von Ereignishandlern](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [DropDownList-Steuerelement Übersicht über Webserver](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Übersicht über das ListBox-Webserversteuerelement](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, und <xref:System.Web.UI.WebControls.DropDownList>.  
+ Weitere Informationen finden Sie unter [Deklarative Syntax des HtmlSelect-Serversteuerelements](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Vorgehensweise: Erstellen von Skripts und Bearbeiten von Ereignishandlern](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Übersicht über das DropDownList-Webserversteuerelement](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Übersicht über das ListBox-Webserversteuerelement](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> und <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Horizontal Rule**  
  ![HTML-Seite, Horizontal Rule-Element](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -251,7 +250,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
   
- Weitere Informationen finden Sie unter [HTML-Div-Steuerelement](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Übersicht über das Label-Steuerelement](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac), und <xref:System.Web.UI.WebControls.Label>.  
+ Weitere Informationen finden Sie unter [Div-Steuerelement (HTML)](http://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Übersicht über das Label-Webserversteuerelement](http://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) und <xref:System.Web.UI.WebControls.Label>.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Toolbox](../../ide/reference/toolbox.md)   
