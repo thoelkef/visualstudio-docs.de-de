@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834438"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665141"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Melden eines Problems mit Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [melden ein Problems in Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [Melden eines Problems in Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
-Wenn Sie ein Problem mit Visual Studio 2015 auftreten, möchten wir davon erfahren, damit wir das diagnostizieren und beheben können.  Mithilfe des Tools **Problem melden** können Sie detaillierte Informationen zum Problem erfassen und mit wenigen Mausklicks an Microsoft senden.
+Wenn ein Problem mit Visual Studio 2015 auftritt, möchten wir davon erfahren, damit wir das Problem diagnostizieren und beheben können.  Mithilfe des Tools **Problem melden** können Sie detaillierte Informationen zum Problem erfassen und mit wenigen Mausklicks an Microsoft senden.
 
- Microsoft respektiert Ihre Privatsphäre. Weitere Informationen dazu, wie wir Daten behandeln, die Sie uns senden, finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/dn948229).
+Microsoft respektiert Ihre Privatsphäre. Weitere Informationen dazu, wie wir Daten behandeln, die Sie uns senden, finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Öffnen Sie das Tool „Problem melden“
- Klicken Sie auf das Benutzerfeedbacksymbol neben **Schnellstart** in der Titelleiste, oder klicken Sie auf           **Hilfe &#124; Feedback senden &#124; Problem melden**.
 
- ![Menüelement „Problem melden“](../ide/media/report-a-problem-menu-item.png "Menüelement „Problem melden“")
+Klicken Sie auf das Benutzerfeedbacksymbol neben **Schnellstart** in der Titelleiste, oder klicken Sie auf **Hilfe > Feedback senden > Problem melden**.
+
+![Menüelement „Problem melden“](../ide/media/report-a-problem-menu-item.png "Menüelement „Problem melden“")
 
 ## <a name="describe-the-problem"></a>Beschreiben Sie das Problem
 
@@ -43,7 +44,8 @@ Wenn Sie ein Problem mit Visual Studio 2015 auftreten, möchten wir davon erfahr
    ![Dialogfeld „Problem melden“](../ide/media/report-a-problem-dialog.png "Dialogfeld „Problem melden“")
 
 ## <a name="provide-a-screenshot-optional"></a>Fügen Sie einen Screenshot hinzu (optional)
- Wählen Sie **Screenshot einfügen** aus, um Ihren aktuellen Bildschirm an Microsoft zu senden. Mit dem Tool können Sie das Bild so zuschneiden, dass es nur            den Teil des Bildschirms enthält, der das Problem zeigt. Sie können weitere Screenshots oder andere Dateien anfügen, indem Sie auf die Schaltfläche **Weitere Dateien anfügen** klicken.
+
+Wählen Sie **Screenshot einfügen** aus, um Ihren aktuellen Bildschirm an Microsoft zu senden. Mit dem Tool können Sie das Bild so zuschneiden, dass es nur den Teil des Bildschirms enthält, der das Problem zeigt. Sie können weitere Screenshots oder andere Dateien anfügen, indem Sie auf die Schaltfläche **Weitere Dateien anfügen** klicken.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Stellen Sie Ablaufverfolgungsdaten und Heapspeicherabbilder bereit (optional)
 
@@ -60,10 +62,13 @@ Wenn Sie ein Problem mit Visual Studio 2015 auftreten, möchten wir davon erfahr
      ![Aufzeichnen einer Ablaufverfolgungsdatei](../ide/media/record-a-trace-file.png "Aufzeichnen einer Ablaufverfolgungsdatei")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Beschreiben Sie die Problemumgehung, falls vorhanden
- Wenn Sie das Problem umgehen konnten, beschreiben Sie die Problemumgehung in dem für diesen Zweck bereitgestellten Bearbeitungsfeld. Dadurch helfen Sie nicht nur uns bei der Diagnose des Problems, sondern auch anderen Benutzern, bei denen möglicherweise das gleiche Problem auftritt.
+
+Wenn Sie das Problem umgehen konnten, beschreiben Sie die Problemumgehung in dem für diesen Zweck bereitgestellten Bearbeitungsfeld. Dadurch helfen Sie nicht nur uns bei der Diagnose des Problems, sondern auch anderen Benutzern, bei denen möglicherweise das gleiche Problem auftritt.
 
 ## <a name="submit-the-report"></a>Senden Sie den Bericht
- Klicken Sie auf die Schaltfläche zum Senden des Berichts zusammen mit allen Bildern, Ablaufverfolgungs- und Speicherabbilddateien. Wenn die Schaltfläche **Senden** abgeblendet ist, vergewissern Sie sich, dass Sie einen Titel und eine Beschreibung eingegeben haben.
+
+Klicken Sie auf die Schaltfläche zum Senden des Berichts zusammen mit allen Bildern, Ablaufverfolgungs- und Speicherabbilddateien. Wenn die Schaltfläche **Senden** abgeblendet ist, vergewissern Sie sich, dass Sie einen Titel und eine Beschreibung eingegeben haben.
 
 ## <a name="see-also"></a>Siehe auch
- [Sprechen Sie mit uns](../ide/talk-to-us.md)
+
+- [Sprechen Sie mit uns](../ide/talk-to-us.md)

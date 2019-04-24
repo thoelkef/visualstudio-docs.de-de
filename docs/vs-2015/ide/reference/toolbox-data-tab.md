@@ -13,17 +13,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768957"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663913"
 ---
 # <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.  
   
 > [!TIP]

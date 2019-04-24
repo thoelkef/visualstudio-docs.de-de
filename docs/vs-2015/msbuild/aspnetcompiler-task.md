@@ -1,5 +1,5 @@
 ---
-title: AspNetCompiler-Aufgabe | Microsoft-Dokumentation
+title: AspNetCompiler-Aufgabe| Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -19,17 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a82e80f0b23915c30dd491d3986f4a9c765503e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1267ddbb093f59eaa60fae0eef2d83f6b7ba2e24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756535"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654004"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die `AspNetCompiler`-Aufgabe umschließt „aspnet_compiler.exe“, ein Hilfsprogramm zum Vorkompilieren von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendungen.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
