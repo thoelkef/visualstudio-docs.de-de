@@ -32,6 +32,7 @@ sections:
         columns: 2
         items:
           - href: roslyn-analyzers-overview.md
+            html: '<p>Grundlegendes zu .NET-Analysetools</p>'
             html: <p>Grundlegendes zu .NET-Analysetools</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
@@ -59,6 +60,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
+            html: '<p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen</p>'
             html: <p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
@@ -91,6 +93,7 @@ sections:
               src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
             title: C++-Codeanalyse
           - href: code-metrics-values.md
+            html: <p>Erfahren Sie, wie Sie Codemetriken erhalten. Die Benutzererfahrung für Codemetriken bleibt unverändert.</p>
             html: '<p>Erfahren Sie, wie Sie Codemetriken erhalten. Die Benutzererfahrung für Codemetriken bleibt unverändert.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
