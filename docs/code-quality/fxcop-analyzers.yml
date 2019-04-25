@@ -3,7 +3,7 @@ documentType: LandingData
 title: Migrieren von FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools
 metadata:
   title: Dokumentation zur Migration von FxCop
-  description: Erfahren Sie, wie Sie von legacy-FxCop auf .NET Compiler Analyse Tools migrieren.
+  description: Migration von der FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools
   ms.date: 07/18/2018
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -12,7 +12,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 'Erfahren Sie, wie Sie Code zum ersten Mal analysieren oder von FxCop auf die neue Art der Analyse von verwaltetem Code mithilfe der .NET Compiler Analyse Tools migrieren.'
+  description: 'Erfahren Sie, wie Sie Code zum ersten Mal analysieren oder eine Migration von FxCop durchführen, um verwalteten Code mithilfe von nicht statischen Analysetools zu analysieren.'
   aside:
     image:
       alt: Common Management Tasks-logo
@@ -23,7 +23,7 @@ abstract:
 sections:
   - title: Häufig gestellte Fragen
     items:
-      - html: Hier erhalten Sie Antworten auf einige <a href="fxcop-analyzers-faq.md">häufig gestellte Fragen</a> zu den Unterschieden zwischen FxCop und den .NET Compiler Analyse Tools.
+      - html: Hier erhalten Sie Antworten auf einige <a href="fxcop-analyzers-faq.md">häufig gestellte Fragen</a> zu den Unterschieden zwischen FxCop und den .NET Compiler Platform-Analysetools.
   - title: Wenn Sie mit der Codeanalyse noch nicht vertraut sind ...
     items:
       - type: list
@@ -32,17 +32,17 @@ sections:
         columns: 2
         items:
           - href: roslyn-analyzers-overview.md
-            html: '<p>Erfahren Sie, was .NET Analysetools sind.</p>'
+            html: '<p>Grundlegendes zu .NET-Analysetools</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Übersicht über die Analysetools
           - href: install-roslyn-analyzers.md
-            html: '<p>Erfahren Sie, wie Sie .NET Analysetools als NuGet-Paket oder als Visual Studio-Erweiterung installieren.</p>'
+            html: '<p>Erfahren Sie, wie Sie Analysetools als NuGet-Paket oder als Visual Studio-Erweiterung installieren.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Installieren der Analysetools
           - href: use-roslyn-analyzers.md
-            html: '<p>Erfahren Sie, wie Sie die Analysetools verwenden und Verstöße gegen C# - oder Visual Basic-Code Richtlinien unterdrücken.</p>'
+            html: '<p>Erfahren Sie, wie Sie die Analysetools verwenden und Verstöße gegen C# - oder Visual Basic-Coderichtlinien unterdrücken.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
             title: Schweregrad für Regelsatz festlegen und Unterdrücken von Fehlern
@@ -51,7 +51,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Die Verwendung der Befehlszeile
-  - title: Wenn Sie FxCop-Nutzer sind...
+  - title: Wenn Sie FxCop-Benutzer sind...
     items:
       - type: list
         style: cards
@@ -59,12 +59,12 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: '<p>Erfahren Sie, die Unterschiede zwischen der statischen (FxCop) und der Codeanalyse mit den Analysetool Paketen.</p>'
+            html: '<p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Was ist anders?
           - href: install-fxcop-analyzers.md
-            html: '<p>Erfahren Sie, wie das FxCop-Analyse-Paket zu installieren ist.</p>'
+            html: '<p>Erfahren Sie, wie Sie das Paket des FxCop-Analysetools installieren.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Installieren von FxCop-Analysetools
@@ -74,7 +74,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Die Verwendung der Befehlszeile
           - href: analyzer-rule-sets.md
-            html: <p>Informieren Sie sich über Analyzer-Paket Regelsätze.</p>
+            html: <p>Informationen zu Regelsätzen für das Analyzer-Paket.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
             title: Regelsätze
