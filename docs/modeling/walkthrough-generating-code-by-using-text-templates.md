@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055657"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -83,9 +83,9 @@ In diesem Projekt wird eine einzelne Vorlagendatei verwendet, um die Klassen zu 
 
 Sie können diese Technik für jedes Codeprojekt anwenden. Diese exemplarische Vorgehensweise verwendet ein C#-Projekt, und zu Testzwecken verwenden wir eine Konsolenanwendung.
 
-1.  Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
 
-2.  Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.
+2. Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Fügen Sie eine XML-Prototypdatei zum Projekt hinzu
 
@@ -93,13 +93,13 @@ Diese Datei dient dazu, Beispiele der XML-Knotentypen bereitzustellen, die Ihre 
 
 Die Datei sollte Teil des Projekts sein, damit die Vorlage sie lesen kann, aber sie wird nicht in die kompilierte Anwendung integriert werden.
 
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.
 
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** **XML-Datei** aus den **Vorlagen** aus.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **XML-Datei** aus den **Vorlagen** aus.
 
-3.  Fügen Sie der Datei Ihren Beispielinhalt hinzu.
+3. Fügen Sie der Datei Ihren Beispielinhalt hinzu.
 
-4.  In dieser exemplarischen Vorgehensweise benennen Sie die Datei `exampleXml.xml`. Legen Sie als Inhalt der Datei die im vorherigen Abschnitt gezeigten XML-Daten fest.
+4. In dieser exemplarischen Vorgehensweise benennen Sie die Datei `exampleXml.xml`. Legen Sie als Inhalt der Datei die im vorherigen Abschnitt gezeigten XML-Daten fest.
 
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu
 
@@ -131,20 +131,20 @@ Ein umfassender Test könnte die Ausgabe dieser Testfunktion im Vergleich zu dem
 
 Fügen Sie eine Textvorlagendatei hinzu, und legen Sie die Ausgabe-Erweiterung auf *cs*.
 
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.
 
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.
 
-3.  Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.
+3. Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.
 
      Diese Änderung kann den Vorlagencode für den Zugriff auf die Visual Studio-Dienste.
 
-4.  Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
+4. Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
 
-5.  Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
+5. Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,15 +412,15 @@ Um die Klassen neu generieren, wenn die Beispiel-XML-Datei geändert wird, klick
 
 In dieser exemplarischen Vorgehensweise werden verschiedene Techniken und Vorteile der Codegenerierung veranschaulicht:
 
--   *Codegenerierung* ist die Erstellung eines Teils des Quellcodes der Anwendung aus einem *Modell*. Das Modell enthält Informationen in einer zur Anwendungsdomäne passenden Form und kann sich im Laufe der Lebensdauer der Anwendung ändern.
+- *Codegenerierung* ist die Erstellung eines Teils des Quellcodes der Anwendung aus einem *Modell*. Das Modell enthält Informationen in einer zur Anwendungsdomäne passenden Form und kann sich im Laufe der Lebensdauer der Anwendung ändern.
 
--   Starke Typisierung ist ein Vorteil bei der Codegenerierung. Während das Modell Informationen in einer für den Benutzer geeigneten Form darstellt, ermöglicht der generierte Code anderen Teilen der Anwendung den Umgang mit den Informationen über einen Satz von Typen.
+- Starke Typisierung ist ein Vorteil bei der Codegenerierung. Während das Modell Informationen in einer für den Benutzer geeigneten Form darstellt, ermöglicht der generierte Code anderen Teilen der Anwendung den Umgang mit den Informationen über einen Satz von Typen.
 
--   IntelliSense und der Compiler hilft beim Erstellen von Code, der zum Schema des Modells passt – wenn Sie neuen Code schreiben und bei der Aktualisierung des Schemas.
+- IntelliSense und der Compiler hilft beim Erstellen von Code, der zum Schema des Modells passt – wenn Sie neuen Code schreiben und bei der Aktualisierung des Schemas.
 
--   Das Hinzufügen einer einzigen unkomplizierten Vorlagendatei zu einem Projekt kann diese Vorteile bieten.
+- Das Hinzufügen einer einzigen unkomplizierten Vorlagendatei zu einem Projekt kann diese Vorteile bieten.
 
--   Eine Textvorlage kann entwickelt und schnell und schrittweise getestet werden.
+- Eine Textvorlage kann entwickelt und schnell und schrittweise getestet werden.
 
 In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus einer Instanz des Modells generiert, einem repräsentativen Beispiel der XML-Dateien, die die Anwendung verarbeitet. In einem formaleren Ansatz würde das XML-Schema in der Form einer XSD-Datei oder einer domänenspezifischen Sprachdefinition als Vorgabe für die Vorlage dienen. Dieser Ansatz würde es für die Vorlage einfacher machen, Merkmale wie die Multiplizität einer Beziehung zu ermitteln.
 

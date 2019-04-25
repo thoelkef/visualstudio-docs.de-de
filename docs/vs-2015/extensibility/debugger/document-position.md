@@ -10,23 +10,23 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100143"
 ---
 # <a name="document-position"></a>Dokumentposition
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debuggen, eine **dokumentieren Position**:  
   
--   Stellt eine Abstraktion einer Position in einer Quelldatei an, wie die IDE bekannt. Für die meisten Sprachen kann heute eine Dokumentposition als eine Position in einer Quelldatei betrachtet werden.  
+- Stellt eine Abstraktion einer Position in einer Quelldatei an, wie die IDE bekannt. Für die meisten Sprachen kann heute eine Dokumentposition als eine Position in einer Quelldatei betrachtet werden.  
   
--   Beschreibt eine Position in einem Quelldokument einer Debug-Engine.  
+- Beschreibt eine Position in einem Quelldokument einer Debug-Engine.  
   
--   Wird implementiert, indem ein [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) Schnittstelle.  
+- Wird implementiert, indem ein [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) Schnittstelle.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Codekontext](../../extensibility/debugger/code-context.md)   

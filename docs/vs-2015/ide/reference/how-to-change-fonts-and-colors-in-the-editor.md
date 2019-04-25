@@ -15,44 +15,43 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040949"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Vorgehensweise: Ändern von Schriftarten und Farben im Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpassen und die Vorder- und Hintergrundfarben für verschiedene Text-**Anzeigeelemente** ändern. Beim Verändern der Schriftarteinstellungen sollten Sie folgendes bedenken:  
   
--   Die Einstellungen für **Schriftart** und **Größe** gelten global für alle Textelemente in allen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Editoren.  
+- Die Einstellungen für **Schriftart** und **Größe** gelten global für alle Textelemente in allen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Editoren.  
   
--   Die Namen von Schriftarten mit fester Zeichenbreite werden fett aufgeführt.  
+- Die Namen von Schriftarten mit fester Zeichenbreite werden fett aufgeführt.  
   
--   Die Optionen **Elementvordergrund**, **Elementhintergrund** und **Fett** können für jeden Typ Textelement festgelegt werden. Wenn Sie z.B. Farben ändern und für **Kommentar** und **Lesezeichen** **Fett** auswählen, werden andere Typen Textelemente nicht betroffen.  
+- Die Optionen **Elementvordergrund**, **Elementhintergrund** und **Fett** können für jeden Typ Textelement festgelegt werden. Wenn Sie z.B. Farben ändern und für **Kommentar** und **Lesezeichen** **Fett** auswählen, werden andere Typen Textelemente nicht betroffen.  
   
 > [!NOTE]
 >  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, Größe und Farben  
   
-1.  Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.  
+1. Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.  
   
      [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) wird geöffnet.  
   
-2.  Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.  
+2. Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.  
   
-3.  Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.  
+3. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.  
   
-4.  Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.  
+4. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.  
   
     > [!TIP]
     >  Klicken Sie auf **Standardwerte verwenden**, um die Standardeinstellungen wiederherzustellen.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../../ide/customizing-the-editor.md)   

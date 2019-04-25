@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070146"
 ---
 # <a name="register-the-program"></a>Registrieren Sie das Programm
 Nachdem die Debug-Engine einen Port erworben hat, dargestellt durch ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle, im nächsten Schritt aktivieren das Programm debuggt werden wird, um ihn mit dem Port zu registrieren. Nach der Registrierung kann das Programm debuggen, indem Sie eine der folgenden Methoden:
 
--   Der Prozess anfügen, der mit dem Debugger ermöglicht, die vollständige debugging Kontrolle einer ausgeführten Anwendung zu erhalten.
+- Der Prozess anfügen, der mit dem Debugger ermöglicht, die vollständige debugging Kontrolle einer ausgeführten Anwendung zu erhalten.
 
--   Just-in-Time (JIT) Debuggen, was nach der dem Ereignis Debuggen eines Programms, das unabhängig von einem Debugger ausgeführt wird. Wenn die Architektur für die Laufzeit einen Fehler abfängt, wird der Debugger vor dem Betriebssystem benachrichtigt oder Laufzeitumgebung frei, die Arbeitsspeicher- und Ressourcen des fehlerhaften Programms.
+- Just-in-Time (JIT) Debuggen, was nach der dem Ereignis Debuggen eines Programms, das unabhängig von einem Debugger ausgeführt wird. Wenn die Architektur für die Laufzeit einen Fehler abfängt, wird der Debugger vor dem Betriebssystem benachrichtigt oder Laufzeitumgebung frei, die Arbeitsspeicher- und Ressourcen des fehlerhaften Programms.
 
 ## <a name="registering-procedure"></a>Registrieren die Prozedur
 
 ### <a name="to-register-your-program"></a>Registrieren Sie Ihr Programm
 
-1.  Rufen Sie die [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) Methode, die vom Port implementiert.
+1. Rufen Sie die [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) Methode, die vom Port implementiert.
 
      `IDebugPortNotify2::AddProgramNode` erfordert einen Zeiger auf ein [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Schnittstelle.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44b125f44f3345e7bd28a9993a7a44be2e378b53
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 891a0c200b02f8768ef68d1d87649bfd35cf59d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040610"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 Diese Methode ermöglicht Anschlusslieferanten um eine Warnung anzuzeigen, bevor der Benutzer fügt eine unsichere Prozess an.
@@ -33,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Rückgabewert
  Die Rückgabewerte sind wie folgt aus:
 
--   `S_OK`: Das Anfügen an Prozess sicher ist und kein Warnungsdialogfeld wird angezeigt.
+- `S_OK`: Das Anfügen an Prozess sicher ist und kein Warnungsdialogfeld wird angezeigt.
 
--   `S_FALSE`: Anfügen kann ein Sicherheitsproblem sein, und ein Dialogfeld mit einer Warnung angezeigt wird.
+- `S_FALSE`: Anfügen kann ein Sicherheitsproblem sein, und ein Dialogfeld mit einer Warnung angezeigt wird.
 
--   `FAILURE`: Anhängen an Prozess ein Fehler auftritt.
+- `FAILURE`: Anhängen an Prozess ein Fehler auftritt.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

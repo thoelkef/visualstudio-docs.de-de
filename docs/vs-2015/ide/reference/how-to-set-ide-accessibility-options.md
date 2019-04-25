@@ -11,17 +11,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051621"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] umfasst Features zur Unterstützung von Personen mit eingeschränktem Seh- und Schreibvermögen. Zu diesen Features gehören unter anderem das Anpassen von Schriftgröße und -farbe in Editoren, das Ändern der Größe von Text und Schaltflächen in Symbolleisten sowie die automatische Vervollständigung von Methoden- und Parameternamen.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt außerdem Dvorak-Tastaturlayouts, die den Zugriff auf die am häufigsten eingetippten Zeichen vereinfachen. Sie können auch die Standardtastenkombinationen anpassen, die in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verfügbar sind. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
@@ -43,11 +42,11 @@ ms.locfileid: "54803222"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>So ändern Sie die Textgröße in textbasierten Toolfenstern und Editoren  
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
   
-2.  Wählen Sie im Ordner **Umgebung** die Option **Schriftarten und Farben** aus.  
+2. Wählen Sie im Ordner **Umgebung** die Option **Schriftarten und Farben** aus.  
   
-3.  Wählen Sie im Dropdownmenü **Einstellungen anzeigen für** eine Option aus.  
+3. Wählen Sie im Dropdownmenü **Einstellungen anzeigen für** eine Option aus.  
   
      Um die Schriftgröße von Text in einem Editor zu ändern, klicken Sie auf den **Text-Editor**.  
   
@@ -57,16 +56,16 @@ ms.locfileid: "54803222"
   
      Um die Schriftgröße von Text in den Popupfenstern für die automatische Vervollständigung von Anweisungen zu ändern, wählen Sie die Option **Anweisungsvervollständigung** aus.  
   
-4.  Wählen Sie unter **Elemente anzeigen** die Option **Nur Text** aus.  
+4. Wählen Sie unter **Elemente anzeigen** die Option **Nur Text** aus.  
   
-5.  Wählen Sie in der Dropdownliste **Schriftart** eine andere Schriftart aus.  
+5. Wählen Sie in der Dropdownliste **Schriftart** eine andere Schriftart aus.  
   
-6.  Wählen Sie in der Dropdownliste Schriftgrad eine andere **Schriftgröße** aus.  
+6. Wählen Sie in der Dropdownliste Schriftgrad eine andere **Schriftgröße** aus.  
   
     > [!NOTE]
     >  Um die Textgröße für textbasierte Toolfenster und Editoren zurückzusetzen, wählen Sie die Option **Standard verwenden** aus.  
   
-7.  Klicken Sie auf **OK**.  
+7. Klicken Sie auf **OK**.  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>Ändern der in der IDE verwendeten Farben  
  Sie können auch die Standardfarben für Text, Indikatorränder, Leerstellen und Codeelemente im Editor anpassen.  
@@ -76,40 +75,40 @@ ms.locfileid: "54803222"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>So ändern Sie die Farbe von Elementen im Editor  
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
   
-2.  Wählen Sie im Ordner **Umgebung** die Option **Schriftarten und Farben** aus.  
+2. Wählen Sie im Ordner **Umgebung** die Option **Schriftarten und Farben** aus.  
   
-3.  Wählen Sie unter **Einstellungen anzeigen** für die Option **Text-Editor** aus.  
+3. Wählen Sie unter **Einstellungen anzeigen** für die Option **Text-Editor** aus.  
   
-4.  Wählen Sie unter **Elemente anzeigen** das Element aus, das Sie anpassen möchten, z.B. **Nur Text**, **Indikatorrand**, **Sichtbare Leerstellen**, **HTML-Attributname** oder **XML-Attribut**.  
+4. Wählen Sie unter **Elemente anzeigen** das Element aus, das Sie anpassen möchten, z.B. **Nur Text**, **Indikatorrand**, **Sichtbare Leerstellen**, **HTML-Attributname** oder **XML-Attribut**.  
   
-5.  Wählen Sie in den folgenden Steuerelementen Anzeigeoptionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.  
+5. Wählen Sie in den folgenden Steuerelementen Anzeigeoptionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
 ## <a name="toolbars"></a>Symbolleisten  
  Zur Verbesserung der Benutzerfreundlichkeit und Barrierefreiheit der Symbolleisten können Sie Text zu den Symbolleisten-Schaltflächen hinzufügen.  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>So weisen Sie Symbolleisten-Schaltflächen Text zu  
   
-1.  Wählen Sie im Menü **Extras** die Option **Anpassen**.  
+1. Wählen Sie im Menü **Extras** die Option **Anpassen**.  
   
-2.  Wählen Sie im Dialogfeld **Anpassen** die Registerkarte **Befehle** aus.  
+2. Wählen Sie im Dialogfeld **Anpassen** die Registerkarte **Befehle** aus.  
   
-3.  Wählen Sie die Option **Symbolleiste** und anschließend den Namen der Symbolleiste aus, in der sich die Schaltfläche befindet, für die Text angezeigt werden soll.  
+3. Wählen Sie die Option **Symbolleiste** und anschließend den Namen der Symbolleiste aus, in der sich die Schaltfläche befindet, für die Text angezeigt werden soll.  
   
-4.  Wählen Sie in der Liste den Befehl aus, den Sie ändern möchten.  
+4. Wählen Sie in der Liste den Befehl aus, den Sie ändern möchten.  
   
-5.  Wählen Sie **Auswahl ändern** aus.  
+5. Wählen Sie **Auswahl ändern** aus.  
   
-6.  Wählen Sie **Symbol und Text** aus.  
+6. Wählen Sie **Symbol und Text** aus.  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>So ändern Sie den von der Schaltfläche angezeigten Text  
   
-1.  Wählen Sie erneut **Auswahl ändern** aus.  
+1. Wählen Sie erneut **Auswahl ändern** aus.  
   
-2.  Geben Sie direkt neben **Name** eine neue Beschriftung für die ausgewählte Schaltfläche ein.  
+2. Geben Sie direkt neben **Name** eine neue Beschriftung für die ausgewählte Schaltfläche ein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   

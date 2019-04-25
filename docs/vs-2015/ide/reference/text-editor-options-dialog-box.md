@@ -21,30 +21,29 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788098"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649068"
 ---
 # <a name="text-editor-options-dialog-box"></a>Text-Editor-Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Die im Dialogfeld **Optionen** enthaltenen Optionen für den Editor bieten zahlreiche Möglichkeiten, die Darstellung und das Verhalten des Editors anzupassen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Ändern der im Editor verwendeten Schriftarten und Farben](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Vorgehensweise: Ändern der im Editorin Visual Studio verwendeten Schriftarten und Farben](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Erläutert, wie Schriftarten und Farben im Editor geändert werden.  
   
- [Gewusst wie: Verwalten des Zeilenumbruchs im Editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Vorgehensweise: Manage Word Wrap in the Editor (Vorgehensweise: Verwalten von Zeilenumbrüchen im Editor)](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Erläutert Optionen für den Zeilenumbruch.  
   
- [Gewusst wie: Anzeigen von Zeilennummern im Editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Vorgehensweise: Anzeigen von Zeilennummern im Editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Erklärt, wie Zeilennummern aktiviert werden.  
   
- [Gewusst wie: Anzeigen von URLs als Links im Editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Vorgehensweise: Anzeigen von URLs als Links im Editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  Erläutert, wie URLs formatiert werden, damit sie als Links erscheinen.  
   
  [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)  

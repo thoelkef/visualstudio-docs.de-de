@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105616"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projekten hinzufügen können. Zum Öffnen der **Toolbox** klicken Sie im Menü **Ansicht** auf **Toolbox**. Sie können die **Toolbox** andocken und so festlegen, dass sie entweder geöffnet angeheftet oder **Automatisch ausblenden** bleibt.  
   
  Die **Toolbox**-Symbole können in eine Designansicht gezogen bzw. in einem Code-Editor eingefügt werden. Mit beiden Aktionen wird der Basiscode hinzugefügt, mit dem in der aktiven Projektdatei eine Instanz des **Toolboxelements** erstellt wird.  
@@ -39,17 +38,17 @@ Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Si
 ## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten  
  Die folgenden Dokumente enthalten weitere Informationen zu bestimmten **Toolbox**-Registerkarten.  
   
--   [Toolbox, Registerkarte „Daten“](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Toolbox, Registerkarte „Daten“](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Toolbox, Registerkarte „Komponenten“](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Toolbox, Registerkarte „Komponenten“](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [Toolbox, Registerkarte „HTML“](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Toolbox, Registerkarte „HTML“](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Toolbox, Registerkarte „Daten“](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Toolbox, Registerkarte „Daten“](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Toolbox, Registerkarte „Komponenten“](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Toolbox, Registerkarte „Komponenten“](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [Toolbox, Registerkarte „HTML“](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Toolbox, Registerkarte „HTML“](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden der Toolbox](../../ide/using-the-toolbox.md)

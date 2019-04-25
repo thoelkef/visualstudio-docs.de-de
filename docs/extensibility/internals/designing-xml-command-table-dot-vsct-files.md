@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091563"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Entwerfen von XML-Befehlstabellen (VSCT) Befehlsdateien
 Ein XML-Befehl-Tabelle (*VSCT*) Datei beschreibt das Layout und die Darstellung der Befehl-Elemente für ein VSPackage. Befehls-Elemente enthalten, Schaltflächen, Kombinationsfelder, Menüs, Symbolleisten und Gruppen von Elementen für Befehl. Dieser Artikel beschreibt die XML-Befehlsdateien für die Tabelle, wie sie Befehl-Elemente und Menüs auswirken und zu deren Erstellung.
@@ -98,19 +98,19 @@ Können Sie die *vsct.exe* Compiler das Konvertieren einer vorhandenen *CTO* Ein
 ## <a name="vsct-file-design-guidelines"></a>Richtlinien zum Entwerfen von VSCT-Datei
  Erfolgreich Entwurf eine *VSCT* Datei, die folgenden Richtlinien.
 
--   Befehle können nur in Gruppen befinden, Gruppen platziert werden können, nur in Menüs und Menüs in Gruppen nur platziert werden können. Nur die Menüs werden tatsächlich angezeigt, in der IDE, Gruppen und Befehle nicht.
+- Befehle können nur in Gruppen befinden, Gruppen platziert werden können, nur in Menüs und Menüs in Gruppen nur platziert werden können. Nur die Menüs werden tatsächlich angezeigt, in der IDE, Gruppen und Befehle nicht.
 
--   Untermenüs ein Menü können nicht direkt zugewiesen werden, jedoch müssen zugewiesen werden, um eine Gruppe, die wiederum zu einem Menü zugewiesen wird.
+- Untermenüs ein Menü können nicht direkt zugewiesen werden, jedoch müssen zugewiesen werden, um eine Gruppe, die wiederum zu einem Menü zugewiesen wird.
 
--   Befehle, Untermenüs und Gruppen können eine übergeordnete Gruppe oder ein Menü, die mithilfe des übergeordneten Felds ihrer Richtlinie definieren zugewiesen werden.
+- Befehle, Untermenüs und Gruppen können eine übergeordnete Gruppe oder ein Menü, die mithilfe des übergeordneten Felds ihrer Richtlinie definieren zugewiesen werden.
 
--   Organisieren eine Befehlstabelle ausschließlich über die übergeordnete Felder in den Richtlinien ist eine wichtige Einschränkung. Die Anweisungen, die Objekte zu definieren, können nur ein übergeordnetes Argument dauern.
+- Organisieren eine Befehlstabelle ausschließlich über die übergeordnete Felder in den Richtlinien ist eine wichtige Einschränkung. Die Anweisungen, die Objekte zu definieren, können nur ein übergeordnetes Argument dauern.
 
--   Wiederverwenden von Befehlen, Gruppen oder Untermenüs erfordert die Verwendung von eine neue Richtlinie erstellen Sie eine neue Instanz des Objekts durch einen eigenen `GUID:ID` Paar.
+- Wiederverwenden von Befehlen, Gruppen oder Untermenüs erfordert die Verwendung von eine neue Richtlinie erstellen Sie eine neue Instanz des Objekts durch einen eigenen `GUID:ID` Paar.
 
--   Jede `GUID:ID` -Paar muss eindeutig sein. Wiederverwenden eines Befehls, der z. B. in einem Menü, eine Symbolleiste, oder in einem Kontextmenü platziert wurde, erfolgt durch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.
+- Jede `GUID:ID` -Paar muss eindeutig sein. Wiederverwenden eines Befehls, der z. B. in einem Menü, eine Symbolleiste, oder in einem Kontextmenü platziert wurde, erfolgt durch die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.
 
--   Befehle und Untermenüs können auch zu mehreren Gruppen zugewiesen werden, und mehrere Menüs, die mithilfe von Gruppen zugewiesen werden die [Commands-Element](../../extensibility/commands-element.md).
+- Befehle und Untermenüs können auch zu mehreren Gruppen zugewiesen werden, und mehrere Menüs, die mithilfe von Gruppen zugewiesen werden die [Commands-Element](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>Anmerkungen zu dieser VSCT-Datei
  Wenn Sie Änderungen vornehmen einer *VSCT* Datei nach dem Sie sowohl kompilieren Sie ihn und fügen Sie ihn in einer systemeigenen Satelliten-DLL, führen Sie **devenv.exe/Setup /nosetupvstemplates**. Dies erzwingt, dass dies der Fall ist die VSPackage-Ressourcen, die in der experimentellen Registrierung abgelesen werden, und die interne Datenbank, die beschreibt, angegeben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neu erstellt werden.

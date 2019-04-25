@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040843"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Packen und Bereitstellen von SharePoint-Lösungen
   In der Regel wird eine SharePoint-Lösung auf einem SharePoint Server mithilfe einer Lösung-Paketdatei (.wsp) bereitgestellt. Sie können Visual Studio verwenden, um Ihre SharePoint-Projektelemente in Features zu organisieren und zum Erstellen eines Pakets zum Bereitstellen Ihrer SharePoint-Funktionen.
 
  Dieses Thema enthält folgende Informationen:
 
--   [Erstellen von Funktionen und Pakete](#create-features-and-packages)
+- [Erstellen von Funktionen und Pakete](#create-features-and-packages)
 
--   [Feature und toolunterstützung für die paketerstellung](#feature-and-packaging-tool-support)
+- [Feature und toolunterstützung für die paketerstellung](#feature-and-packaging-tool-support)
 
--   [Bereitstellen von SharePoint-Lösungen](#deploy-sharepoint-solutions)
+- [Bereitstellen von SharePoint-Lösungen](#deploy-sharepoint-solutions)
 
--   [Bereitstellen von Dateien in SharePoint-Lösungen](#deploy-files-in-sharepoint-solutions)
+- [Bereitstellen von Dateien in SharePoint-Lösungen](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Erstellen von Funktionen und Pakete
  Sie können Visual Studio verwenden, zum Gruppieren von verwandten SharePoint-Elemente in einem *Feature*. Eine Funktion für die Definition eines Contacts-Liste gehören z. B. die Listeninstanz und die Listendefinition. Sie können diese beiden Elemente in einer einzelnen Funktion für die Bereitstellung kombinieren. Weitere Informationen zu Funktionen finden Sie unter [Baustein: Features](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867563"
 ## <a name="feature-and-packaging-tool-support"></a>Feature und toolunterstützung für die paketerstellung
  Die SharePoint-Entwicklungstools können in Visual Studio Sie um die SharePoint-Dateien schnell in die Features und Lösungspakete für einfachere Bereitstellung zu organisieren. Sie können die folgenden Tools verwenden, so konfigurieren Sie die Lösung und Feature-Paket.
 
--   Funktions-Designer und Paket-Designer.
+- Funktions-Designer und Paket-Designer.
 
--   Paket-Explorer ein Toolfenster.
+- Paket-Explorer ein Toolfenster.
 
--   Projektmappen-Explorer.
+- Projektmappen-Explorer.
 
 ### <a name="feature-designer-and-package-designer"></a>Funktions-Designer und die Paket-designer
  Sie können Funktionen erstellen, Bereiche festlegen und markieren andere Funktionen als Abhängigkeiten mithilfe von Funktions-Designer. Der Designer zeigt auch die endgültige XML-Datei, die jede Funktion beschreibt. Weitere Informationen finden Sie unter [erstellen SharePoint-Funktionen](../sharepoint/creating-sharepoint-features.md).

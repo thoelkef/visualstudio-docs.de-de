@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8f29bcfc8c3f9ecbff436415faf5a787e0ad262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844116"
 ---
 # <a name="value-xelement-dynamic-property"></a>Value (dynamische XElement-Eigenschaft)
 
@@ -29,7 +29,7 @@ elem.Value
 
 Eine <xref:System.String>, die den verketteten Inhalt des Elements darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Diese Eigenschaft entspricht der <xref:System.Xml.Linq.XElement.Value%2A>-Eigenschaft der <xref:System.Xml.Linq.XElement?displayProperty=fullName>-Klasse, wobei diese dynamische Eigenschaft auch Änderungsbenachrichtigungen unterstützt.
 

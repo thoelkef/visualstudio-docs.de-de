@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074817"
 ---
 # <a name="content-model-view"></a>Inhaltsmodellansicht
 
@@ -97,13 +97,13 @@ Sie können ihn Schwenken die Entwurfsoberfläche, mit den Bildlaufleisten oder 
 
 Die Funktion zum Rückgängigmachen bzw. Wiederholen ist in der Inhaltsmodellansicht für folgende Aktionen aktiviert:
 
--   Hinzufügen eines einzelnen Knotens per Drag & Drop
+- Hinzufügen eines einzelnen Knotens per Drag &amp; Drop
 
--   Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer
+- Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer
 
--   Hinzufügen von Knoten aus der Ausgangsansicht
+- Hinzufügen von Knoten aus der Ausgangsansicht
 
--   Löschen einzelner oder mehrerer Knoten
+- Löschen einzelner oder mehrerer Knoten
 
 ## <a name="zoom"></a>Zoom
 
@@ -111,9 +111,9 @@ Zoom ist in der unteren rechten Ecke der Inhaltsmodellansicht verfügbar.
 
 Der Zoomfaktor kann wie folgt gesteuert werden:
 
--   Durch Drücken der **STRG** whell Schlüssel, und drehen Sie die Maus, wenn die Maus über die Oberfläche der Inhaltsmodellansicht zeigt.
+- Durch Drücken der **STRG** whell Schlüssel, und drehen Sie die Maus, wenn die Maus über die Oberfläche der Inhaltsmodellansicht zeigt.
 
--   Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
+- Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
 
 Der Zoomschieberegler ist nicht transparent, wenn Sie es auswählen, zeigen Sie darauf, oder verwenden **STRG** mit dem Mausrad zum Zoomen, in allen anderen Fällen ist er transparent.
 

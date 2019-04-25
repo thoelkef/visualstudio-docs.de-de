@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064829"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Verknüpfen von UML-Modellaktualisierungen mithilfe von Transaktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Wenn Sie eine Erweiterung zu den UML-Designern in Visual Studio definieren, kön
   
  Beachten Sie Folgendes:  
   
--   Sie müssen am Ende der Transaktion immer `Commit()` einschließen. Wenn eine Transaktion verworfen wird, ohne übermittelt worden zu sein, wird die Transaktion zurückgesetzt. Das heißt, dass für das Modell der Zustand zu Beginn der Transaktion wiederhergestellt wird.  
+- Sie müssen am Ende der Transaktion immer `Commit()` einschließen. Wenn eine Transaktion verworfen wird, ohne übermittelt worden zu sein, wird die Transaktion zurückgesetzt. Das heißt, dass für das Modell der Zustand zu Beginn der Transaktion wiederhergestellt wird.  
   
--   Wenn eine Ausnahme auftritt, die innerhalb der Transaktion nicht aufgefangen werden kann, wird die Transaktion zurückgesetzt. Es ist ein häufig verwendetes Muster, den `using`-Block der Transaktion in einen `try…catch`-Block einzuschließen.  
+- Wenn eine Ausnahme auftritt, die innerhalb der Transaktion nicht aufgefangen werden kann, wird die Transaktion zurückgesetzt. Es ist ein häufig verwendetes Muster, den `using`-Block der Transaktion in einen `try…catch`-Block einzuschließen.  
   
--   Sie können Transaktionen verschachteln.  
+- Sie können Transaktionen verschachteln.  
   
--   Sie können jeden nicht leeren Namen für `BeginTransaction()` bereitstellen.  
+- Sie können jeden nicht leeren Namen für `BeginTransaction()` bereitstellen.  
   
--   Nur der UML-Modellspeicher ist von diesen Transaktionen betroffen. Modellerstellungstransaktionen wirken sich nicht auf folgende Elemente aus: Variablen, externe Speicher wie Dateien und Datenbanken, Ebenendiagramme und Codemodelle.  
+- Nur der UML-Modellspeicher ist von diesen Transaktionen betroffen. Modellerstellungstransaktionen wirken sich nicht auf folgende Elemente aus: Variablen, externe Speicher wie Dateien und Datenbanken, Ebenendiagramme und Codemodelle.  
   
 ## <a name="example"></a>Beispiel  
   

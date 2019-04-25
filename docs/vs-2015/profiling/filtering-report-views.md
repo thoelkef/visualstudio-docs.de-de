@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108708"
 ---
 # <a name="filtering-report-views"></a>Filtern von Berichtsansichten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 #### <a name="to-create-a-profiler-report-filter"></a>So erstellen Sie einen Profilerberichtsfilter  
   
-1.  Wenn das Fenster „Performance Report View Filter“ (Filter für die Leistungsbericht-Ansicht) nicht angezeigt wird, klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter anzeigen**.  
+1. Wenn das Fenster „Performance Report View Filter“ (Filter für die Leistungsbericht-Ansicht) nicht angezeigt wird, klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter anzeigen**.  
   
      Der Filter für die Leistungsbericht-Ansicht ist eine Tabelle. Jede Zeile der Tabelle stellt eine Klausel des Filters dar. Sie können einem Filter beliebig viele Klauseln hinzufügen.  
   
-2.  Für jede Klausel, die Sie einem Filter hinzufügen möchten, wählen Sie Werte in den folgenden Feldern einer Zeile aus oder geben diese ein.  
+2. Für jede Klausel, die Sie einem Filter hinzufügen möchten, wählen Sie Werte in den folgenden Feldern einer Zeile aus oder geben diese ein.  
   
     |Feld|Beschreibung|  
     |-----------|-----------------|  
@@ -44,7 +44,7 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
     |**Operator**|Wählen Sie den Operator aus, der die Beziehung angibt, die Sie in der Klausel zwischen dem Feld und dem Wert herstellen möchten.<br /><br /> = Gleich<br /><br /> <> Ungleich<br /><br /> < Kleiner als<br /><br /> > Größer als<br /><br /> <= Kleiner als oder gleich<br /><br /> >= Größer als oder gleich|  
     |**Wert**|Wählen Sie den Wert aus, nach dem gesucht werden soll, oder geben Sie den Wert ein. In einigen Feldern werden die verfügbaren Werte für das Feld aufgeführt.|  
   
-3.  
+3. 
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>So erstellen Sie in der Ansicht für Markierungsberichte einen Profilerberichtsfilter  
   
@@ -66,33 +66,33 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
   
 #### <a name="to-load-an-existing-filter-from-a-file"></a>So laden Sie einen vorhandenen Filter aus einer Datei  
   
-1.  Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter importieren**.  
+1. Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter importieren**.  
   
      Das Dialogfeld **Filter laden** wird angezeigt.  
   
-2.  Geben Sie den Speicherort und den Dateinamen der zu ladenden Filterdatei (.vspf) an.  
+2. Geben Sie den Speicherort und den Dateinamen der zu ladenden Filterdatei (.vspf) an.  
   
 #### <a name="to-execute-a-filter"></a>So führen Sie einen Filter aus  
   
--   Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter ausführen**.  
+- Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter ausführen**.  
   
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>So beenden Sie einen Filter, dessen Ausführung zu lange dauert  
   
--   Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter beenden**.  
+- Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter beenden**.  
   
 #### <a name="to-remove-a-filter-on-a-report-view"></a>So entfernen Sie einen Filter aus einer Berichtsansicht  
   
-1.  Löschen Sie die Klauselzeilen im Filter für die Leistungsbericht-Ansicht.  
+1. Löschen Sie die Klauselzeilen im Filter für die Leistungsbericht-Ansicht.  
   
-2.  Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter ausführen**.  
+2. Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter ausführen**.  
   
 #### <a name="to-save-a-filter-to-a-file"></a>So speichern Sie einen Filter in einer Datei  
   
-1.  Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter exportieren**.  
+1. Klicken Sie auf der Symbolleiste „Leistungsberichtansicht“ auf **Filter exportieren**.  
   
      Das Dialogfeld **Filter speichern** wird angezeigt.  
   
-2.  Geben Sie den Speicherort und den Dateinamen der zu speichernden Filterdatei (.vspf) an.  
+2. Geben Sie den Speicherort und den Dateinamen der zu speichernden Filterdatei (.vspf) an.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)

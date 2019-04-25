@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105726"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace-Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwe
 > [!NOTE]
 >  Der Bereich der Einstellungen auf der **IntelliTrace**-Optionsseite umfasst Visual Studio vollständig, nicht nur Projekte oder Projektmappen. Eine Änderung dieser Einstellungen gilt für alle Instanzen von Visual Studio, alle Debugsitzungen und alle Projekte oder Projektmappen.  
   
-##  <a name="ChooseEvents"></a> Wählen Sie die Ereignisse von IntelliTrace aufgezeichneten  
+## <a name="ChooseEvents"></a> Wählen Sie die Ereignisse von IntelliTrace aufgezeichneten  
  Sie können die Aufzeichnung bestimmter IntelliTrace-Ereignisse aktivieren oder deaktivieren.  
   
  Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln Sie zu **Extras / Optionen / IntelliTrace / IntelliTrace-Ereignisse**. Wählen Sie die Ereignisse, die IntelliTrace aufgezeichnen soll.  
   
-##  <a name="GoingFurther"></a> Sammeln von IntelliTrace-Ereignisse und Aufrufinformationen  
+## <a name="GoingFurther"></a> Sammeln von IntelliTrace-Ereignisse und Aufrufinformationen  
  Diese Option ist nicht standardmäßig aktiviert, IntelliTrace kann Methodenaufrufe jedoch zusammen mit Ereignissen aufzeichnen. Sammeln von methodenbezogenen aktivieren Aufrufe finden Sie unter **Extras / Optionen / IntelliTrace / Allgemein**, und wählen Sie **IntelliTrace-Ereignisse und Aufrufinformationen**.  
   
  Auf diese Weise können Sie den Verlauf der Aufrufliste anzeigen und Aufrufe in Ihrem Code schrittweise durchlaufen. IntelliTrace zeichnet Daten wie z. B. Methodennamen, Methodeneinstiegs- und -Endpunkte sowie bestimmte Parameter- und Rückgabewerte auf.  
@@ -75,14 +75,14 @@ Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwe
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>In IntelliTrace nach einer Zeile oder Methode suchen  
  Sie können nur bei aktivierten Methodenaufrufinformationen nach Methoden suchen. Sie können den IntelliTrace-Verlauf nach einer bestimmten Zeile oder Methode durchsuchen. Während die Ausführung des Debuggers angehalten ist, können Sie mit der rechten Maustaste in den Text der Funktion klicken, um das Kontextmenü anzuzeigen, und auf die Optionen **In IntelliTrace nach dieser Zeile suchen** oder **In IntelliTrace nach dieser Methode suchen** klicken.  
   
-###  <a name="ControlCallData"></a> Steuern der Anzahl der von IntelliTrace aufgezeichneten Aufrufinformationen  
+### <a name="ControlCallData"></a> Steuern der Anzahl der von IntelliTrace aufgezeichneten Aufrufinformationen  
  Standardmäßig erfasst IntelliTrace Informationen für alle Module, die von der Projektmappe verwendet werden. Sie können IntelliTrace so einstellen, dass nur Aufrufinformationen für die Module erfasst werden, die für Sie von Bedeutung sind. In **Extras / Optionen / IntelliTrace / Module**, Sie können angeben, die einzuschließenden oder die Module, IntelliTrace ausgeschlossen werden sollen. IntelliTrace erfasst nur die Ereignisse, die aus den Modulen stammen, die Sie angegeben haben, und die Methodenaufrufe, die in den Modulen aufgetreten sind, die für Sie von Bedeutung sind.  
   
  Um mehrere Module hinzuzufügen, verwenden Sie das Platzhalterzeichen * am Anfang oder am Ende der Zeichenfolge. Als Modulnamen müssen Dateinamen und keine Assemblynamen verwendet werden. Dateipfade werden nicht akzeptiert.  
   
  Versuchen Sie, die Anzahl der Module auf ein Mindestmaß zu beschränken. Sie erhalten eine bessere Leistung, da weniger Daten erfasst werden. Sie erhalten auch weniger Störungen auf der Benutzeroberfläche, da weniger Daten verarbeitet werden müssen.  
   
-##  <a name="SaveSession"></a> IntelliTrace-Daten in Datei speichern  
+## <a name="SaveSession"></a> IntelliTrace-Daten in Datei speichern  
  Sie können die Daten, die von IntelliTrace erfassten speichern möchte **Debuggen / IntelliTrace / IntelliTrace-Sitzung speichern** während Sie Debuggen und die Anwendung befindet sich im Zustand "unterbrochen". Das Menüelement ist deaktiviert, und Sie können die von IntelliTrace erfassten Daten nicht speichern, sofern die Anwendung noch ausgeführt wird oder das Debuggen bereits beendet wurde.  
   
  Sie können IntelliTrace so konfigurieren, automatisch in einer Datei speichern, indem Sie zu **Extras / Optionen / IntelliTrace / erweitert** und **Store IntelliTrace-Aufzeichnungen in diesem Verzeichnis**. Sie können auch eine feste Größe für die generierte Datei konfigurieren, sodass IntelliTrace ältere Daten überschreibt, wenn kein Speicherplatz mehr verfügbar ist. Visual Studio erstellt zwei Dateien für jede IntelliTrace-Sitzung, wenn sie automatisch gespeichert und der Visual Studio-Hostprozess (vshost.exe) aktiviert ist.  

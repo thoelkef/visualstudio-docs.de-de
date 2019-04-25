@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110478"
 ---
 # <a name="view-dom-event-listeners"></a>Anzeigen von DOM-Ereignislistenern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
 #### <a name="to-view-event-listeners"></a>So zeigen Sie Ereignislistener an
 
-1.  Erstellen Sie in Visual Studio eine JavaScript-App auf Grundlage der Projektvorlage "Windows Phone Pivot Application".
+1. Erstellen Sie in Visual Studio eine JavaScript-App auf Grundlage der Projektvorlage "Windows Phone Pivot Application".
 
-2.  Wählen Sie die Vorlage in Visual Studio geöffnet, **Emulator 8.1 WVGA 4 Zoll 512MB** in der Dropdown-Liste auf der Symbolleiste "Debuggen" im Debugger:
+2. Wählen Sie die Vorlage in Visual Studio geöffnet, **Emulator 8.1 WVGA 4 Zoll 512MB** in der Dropdown-Liste auf der Symbolleiste "Debuggen" im Debugger:
 
      ![Debugziel auswählen](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Drücken Sie F5, um die App im Debugmodus auszuführen.
+3. Drücken Sie F5, um die App im Debugmodus auszuführen.
 
-4.  Wechseln Sie in der ausgeführten app zu den **Abschnitt 3** Pivot-Element.
+4. Wechseln Sie in der ausgeführten app zu den **Abschnitt 3** Pivot-Element.
 
-5.  Wechseln Sie zu Visual Studio (ALT+TAB oder F12).
+5. Wechseln Sie zu Visual Studio (ALT+TAB oder F12).
 
-6.  Klicken Sie im DOM Explorer in der rechten oberen Ecke auf `Find`.
+6. Klicken Sie im DOM Explorer in der rechten oberen Ecke auf `Find`.
 
-7.  Typ `ListView`, und drücken Sie dann die EINGABETASTE.
+7. Typ `ListView`, und drücken Sie dann die EINGABETASTE.
 
-8.  Wählen Sie bei Bedarf die **Weiter** Schaltfläche finden die `DIV` Element, dargestellt die `ListView` Steuerelement (dieses Element verfügt über eine `data-win-control` Wert `WinJS.UI.ListView`).
+8. Wählen Sie bei Bedarf die **Weiter** Schaltfläche finden die `DIV` Element, dargestellt die `ListView` Steuerelement (dieses Element verfügt über eine `data-win-control` Wert `WinJS.UI.ListView`).
 
      Das `DIV`-Element sollte nun im DOM Explorer ausgewählt werden.
 
@@ -75,16 +75,16 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
      Die **Ereignisse** Registerkarte zeigt die Ereignislistener für jedes Element, das Sie in der Hierarchieliste auswählen.
 
-###  <a name="Tips"></a> Tipps zur Problembehebung bei Ereignislistenern
+### <a name="Tips"></a> Tipps zur Problembehebung bei Ereignislistenern
  In einigen app-Szenarien müssen Ereignislistener müssen entfernt werden, explizit mit [RemoveEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Verwenden der **Ereignisse** Registerkarte im DOM Explorer zum Überprüfen, ob Ereignislistener beim Ausführen von Code aus dem DOM-Elemente entfernt wurden. Hier sind einige Tipps, wie diese Probleme gelöst werden können:
 
--   Für apps, mit denen des navigationsmodells für Einzelseiten-implementiert, in der Visual Studio [Projektvorlagen](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), es ist nicht in der Regel erforderlich, um für Objekte wie DOM-Elemente, die Teil einer Seite sind, registrierte Ereignislistener zu entfernen. In diesem Szenario haben das DOM-Element und die zugehörigen Ereignislistener dieselbe Lebensdauer und können per Garbage Collection bereinigt werden.
+- Für apps, mit denen des navigationsmodells für Einzelseiten-implementiert, in der Visual Studio [Projektvorlagen](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), es ist nicht in der Regel erforderlich, um für Objekte wie DOM-Elemente, die Teil einer Seite sind, registrierte Ereignislistener zu entfernen. In diesem Szenario haben das DOM-Element und die zugehörigen Ereignislistener dieselbe Lebensdauer und können per Garbage Collection bereinigt werden.
 
--   Falls die Lebensdauer des DOM-Elements oder des Objekts kürzer oder länger ist als die des zugehörigen Ereignislisteners, müssen Sie ggf. die Methode `removeEventListener` aufrufen. Wenn Sie beispielsweise das Ereignis `window.onresize` verwenden, müssen Sie den Ereignislistener entfernen, sobald Sie zur Ereignisbehandlung weg von der Seite navigieren.
+- Falls die Lebensdauer des DOM-Elements oder des Objekts kürzer oder länger ist als die des zugehörigen Ereignislisteners, müssen Sie ggf. die Methode `removeEventListener` aufrufen. Wenn Sie beispielsweise das Ereignis `window.onresize` verwenden, müssen Sie den Ereignislistener entfernen, sobald Sie zur Ereignisbehandlung weg von der Seite navigieren.
 
--   Wenn `removeEventListener` den angegebenen Listener nicht entfernen kann, kann dieser in einer anderen Instanz des Objekts aufgerufen werden. Sie können die [bind-Methode (Funktion)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) Methode, um dieses Problem zu beheben, wenn Sie den Listener hinzufügen.
+- Wenn `removeEventListener` den angegebenen Listener nicht entfernen kann, kann dieser in einer anderen Instanz des Objekts aufgerufen werden. Sie können die [bind-Methode (Funktion)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) Methode, um dieses Problem zu beheben, wenn Sie den Listener hinzufügen.
 
--   Um einen Ereignislistener zu entfernen, die hinzugefügt wurde, indem Sie entweder [bind-Methode (Funktion)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) oder speichern Sie eine Instanz der Funktion mit einer anonymen Funktion, wenn Sie den Listener hinzufügen. Dies ist eine sichere Methode zur Verwendung dieser Vorgehensweise:
+- Um einen Ereignislistener zu entfernen, die hinzugefügt wurde, indem Sie entweder [bind-Methode (Funktion)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) oder speichern Sie eine Instanz der Funktion mit einer anonymen Funktion, wenn Sie den Listener hinzufügen. Dies ist eine sichere Methode zur Verwendung dieser Vorgehensweise:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Sie können einen Ereignislistener nicht mithilfe von `removeEventListener` entfernen, wenn Sie ihn mit dem `obj.on<eventname>`-Attribut hinzugefügt haben, z. B. `window.onresize = handlerFunc`.
+- Sie können einen Ereignislistener nicht mithilfe von `removeEventListener` entfernen, wenn Sie ihn mit dem `obj.on<eventname>`-Attribut hinzugefügt haben, z. B. `window.onresize = handlerFunc`.
 
--   Verwenden Sie die JavaScript-Speicheranalyse zum [JavaScript-Memory](../profiling/javascript-memory.md) in Ihrer app. Ereignislistener, die explizit entfernt werden müssen, erscheinen möglicherweise als Speicherverlust.
+- Verwenden Sie die JavaScript-Speicheranalyse zum [JavaScript-Memory](../profiling/javascript-memory.md) in Ihrer app. Ereignislistener, die explizit entfernt werden müssen, erscheinen möglicherweise als Speicherverlust.
 
 ## <a name="see-also"></a>Siehe auch
 

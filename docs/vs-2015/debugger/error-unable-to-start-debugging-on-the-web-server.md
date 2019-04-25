@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048761"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Wenn Sie versuchen, eine ASP.NET-Anwendung auf einem Webserver zu debuggen, erha
   
 In vielen Fällen tritt dieser Fehler auf, da IIS nicht ordnungsgemäß konfiguriert ist.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
 
 Nach dem Maßnahmen zur Problembehebung detaillierte hier und vor dem erneuten Versuch zum Debuggen, müssen Sie auch IIS zurücksetzen. Sie können Sie dies, indem Sie eine Administrator-Eingabeaufforderung öffnen und Folgendes eingeben `iisreset`, oder Sie können dies im IIS-Manager. 
 
@@ -88,7 +88,6 @@ Wenn Sie eine ältere Version von Visual Studio verwenden:
     Erhöhten in einigen Debugszenarien ASP.NET erforderlich, ein Fehler in älteren Versionen (später korrigiert).
     
 - Wenn mehrere Instanzen von Visual Studio ausführen, öffnen Sie erneut Ihr Projekt in einer Instanz von Visual Studio, und versuchen Sie es erneut.
-   
-  
+
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

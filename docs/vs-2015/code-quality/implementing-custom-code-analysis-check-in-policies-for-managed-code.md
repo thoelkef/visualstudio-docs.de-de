@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088755"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Erstellen Sie den Versionskontrollordner für den Regelsatz-Eincheckrichtlinie  
   
-1.  In [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], erweitern Sie den Team-Projektknoten, und klicken Sie dann auf **Quellcodeverwaltung**.  
+1. In [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], erweitern Sie den Team-Projektknoten, und klicken Sie dann auf **Quellcodeverwaltung**.  
   
-2.  In der **Ordner** Bereich mit der rechten Maustaste in des Teamprojekts, und klicken Sie dann auf **neuer Ordner**.  
+2. In der **Ordner** Bereich mit der rechten Maustaste in des Teamprojekts, und klicken Sie dann auf **neuer Ordner**.  
   
-3.  Die Datenquellen-Steuerelement im Hauptbereich, mit der Maustaste **neuer Ordner**, klicken Sie auf **umbenennen**, und geben Sie einen Namen für den Regelsatz-Ordner.  
+3. Die Datenquellen-Steuerelement im Hauptbereich, mit der Maustaste **neuer Ordner**, klicken Sie auf **umbenennen**, und geben Sie einen Namen für den Regelsatz-Ordner.  
   
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Legen Sie zum Erstellen der Regel-Eincheckrichtlinie  
   
-1.  Auf der **Datei** Startmenü **neu**, und klicken Sie dann auf **Datei**.  
+1. Auf der **Datei** Startmenü **neu**, und klicken Sie dann auf **Datei**.  
   
-2.  In der **Kategorien** auf **allgemeine**.  
+2. In der **Kategorien** auf **allgemeine**.  
   
-3.  In der **Vorlagen** auflisten, doppelklicken Sie auf **Codeanalyse-Regelsatz**.  
+3. In der **Vorlagen** auflisten, doppelklicken Sie auf **Codeanalyse-Regelsatz**.  
   
-4.  Angeben von Regeln, in dem Regelsatz aktiviert sind, und speichern Sie die Regelsatzdatei in der Regel Satz-Ordner, die Sie erstellt haben.  
+4. Angeben von Regeln, in dem Regelsatz aktiviert sind, und speichern Sie die Regelsatzdatei in der Regel Satz-Ordner, die Sie erstellt haben.  
   
      Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md)  
   
 #### <a name="to-add-the-rule-set-file-to-version-control"></a>Hinzufügen die Regel legen Datei zur Versionskontrolle  
   
-1.  In **Quellcodeverwaltungs-Explorer**mit der rechten Maustaste auf den neuen Ordner, und klicken Sie dann auf **Elemente zu Ordner hinzufügen**.  
+1. In **Quellcodeverwaltungs-Explorer**mit der rechten Maustaste auf den neuen Ordner, und klicken Sie dann auf **Elemente zu Ordner hinzufügen**.  
   
      Weitere Informationen finden Sie unter [verwenden der Versionskontrolle](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
-2.  Klicken Sie auf den Regelsatz-Datei, die Sie erstellt haben, und klicken Sie dann auf **Fertig stellen**.  
+2. Klicken Sie auf den Regelsatz-Datei, die Sie erstellt haben, und klicken Sie dann auf **Fertig stellen**.  
   
      Die Datei zur quellcodeverwaltung hinzugefügt und für Sie ausgecheckt.  
   
-3.  In der **Quellcodeverwaltungs-Explorer** Fenster "Klassendetails", mit der rechten Maustaste in des Dateinamens, und klicken Sie dann auf **ausstehende Änderungen einchecken**.  
+3. In der **Quellcodeverwaltungs-Explorer** Fenster "Klassendetails", mit der rechten Maustaste in des Dateinamens, und klicken Sie dann auf **ausstehende Änderungen einchecken**.  
   
-4.  In der **Einchecken** (Dialogfeld), Sie haben die Option zum Hinzufügen eines Kommentars, und klicken Sie dann auf **Einchecken**.  
+4. In der **Einchecken** (Dialogfeld), Sie haben die Option zum Hinzufügen eines Kommentars, und klicken Sie dann auf **Einchecken**.  
   
     > [!NOTE]
     >  Wenn Sie eine Eincheckrichtlinie für die Analyse bereits für das Teamprojekt konfiguriert haben, und Sie ausgewählt haben die **erzwingen, um nur die Dateien enthalten, die Teil der aktuellen Projektmappe eingecheckt**, Sie löst eine Warnung zu Fehler bei Richtlinie. Wählen Sie in das Dialogfeld Richtlinienfehler **Richtlinienfehler überschreiben und organg fortsetzen**. Hinzufügen eines Kommentars erforderliches, und klicken Sie dann auf **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Legen die Regel an Datei als die Check-in-Richtlinie  
   
-1.  Auf der **Team** Startmenü **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
+1. Auf der **Team** Startmenü **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
   
-2.  Klicken Sie auf **Eincheckrichtlinie**, und klicken Sie dann auf **hinzufügen**.  
+2. Klicken Sie auf **Eincheckrichtlinie**, und klicken Sie dann auf **hinzufügen**.  
   
-3.  In der **Eincheckrichtlinie** auflisten, doppelklicken Sie auf **Codeanalyse**, und stellen Sie sicher, dass die **Codeanalyse für verwalteten Code erzwingen** das Kontrollkästchen aktiviert ist.  
+3. In der **Eincheckrichtlinie** auflisten, doppelklicken Sie auf **Codeanalyse**, und stellen Sie sicher, dass die **Codeanalyse für verwalteten Code erzwingen** das Kontrollkästchen aktiviert ist.  
   
-4.  In der **diesen Regelsatz ausführen** auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung >**.  
+4. In der **diesen Regelsatz ausführen** auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung >**.  
   
-5.  Geben Sie den Pfad der Regeldatei Satz Eincheckrichtlinie, in der Versionskontrolle.  
+5. Geben Sie den Pfad der Regeldatei Satz Eincheckrichtlinie, in der Versionskontrolle.  
   
      Der Pfad muss mit der folgenden Syntax entsprechen:  
   
@@ -93,29 +93,29 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
     > [!NOTE]
     >  Kopieren Sie den Pfad, indem Sie eine der folgenden Verfahren in **Quellcodeverwaltungs-Explorer**:  
   
-    -   In der **Ordner** Bereich, klicken Sie auf den Ordner, die Regelsatzdatei enthält. Kopieren Sie den Versionskontrollpfad des Ordners, der angezeigt wird der **Quelle** Feld, und geben Sie den Namen des der Regelsatzdatei manuell.  
+    - In der **Ordner** Bereich, klicken Sie auf den Ordner, die Regelsatzdatei enthält. Kopieren Sie den Versionskontrollpfad des Ordners, der angezeigt wird der **Quelle** Feld, und geben Sie den Namen des der Regelsatzdatei manuell.  
   
-    -   Im Detailfenster mit der Maustaste der Regelsatzdatei, und klicken Sie dann auf **Eigenschaften**. Auf der **allgemeine** Registerkarte, kopieren Sie den Wert in **Servernamen**.  
+    - Im Detailfenster mit der Maustaste der Regelsatzdatei, und klicken Sie dann auf **Eigenschaften**. Auf der **allgemeine** Registerkarte, kopieren Sie den Wert in **Servernamen**.  
   
 ## <a name="synchronizing-code-projects-to-the-check-in-policy-rule-set"></a>Synchronisieren der Codeprojekte den Regelsatz-Eincheckrichtlinie  
  Sie geben Sie eine Team Project-Eincheckrichtlinie Regel als die Codeanalyse-Regelsatz mit einer Projektkonfiguration für Code in das Dialogfeld "Eigenschaften" des Codeprojekts festlegen. Wenn der Regelsatz auf dem gleichen Laufwerk wie der Codeprojekt befindet, wird ein relativer Pfad verwendet, Regelsatz an, wenn der Pfad im Dialogfeld "Datei" ausgewählt ist. Der relative Pfad ermöglicht es den projekteinstellungen für die Eigenschaften auf anderen Computern übertragbar, die ähnlich wie lokalen Version verwenden Steuerungsstrukturen.  
   
 #### <a name="to-specify-a-team-project-rule-set-as-the-rule-set-of-a-code-project"></a>An einem Teamprojekt-Regelsatz, der als dem Regelsatz eines Codeprojekts festlegen  
   
-1.  Rufen Sie ggf. die Eincheckrichtlinie Regel der Ordner "Set" und die Datei aus der Versionskontrolle.  
+1. Rufen Sie ggf. die Eincheckrichtlinie Regel der Ordner "Set" und die Datei aus der Versionskontrolle.  
   
      Sie können diesen Schritt ausführen **Quellcodeverwaltungs-Explorer** durch Rechtsklick auf die Regel festgelegt, Ordner und klicken Sie dann auf **neuste Version abrufen**.  
   
-2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.  
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Codeprojekt, und klicken Sie dann auf **Eigenschaften**.  
   
-3.  **Klicken Sie auf Codeanalyse**.  
+3. **Klicken Sie auf Codeanalyse**.  
   
-4.  Klicken Sie ggf. auf die entsprechenden Optionen in der **Konfiguration** und **Plattform** aufgeführt.  
+4. Klicken Sie ggf. auf die entsprechenden Optionen in der **Konfiguration** und **Plattform** aufgeführt.  
   
-5.  Um die Analyse von Code jedes Mal ausführen, die den Codeprojekt mit der angegebenen Konfiguration erstellt wird, wählen Sie die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen.  
+5. Um die Analyse von Code jedes Mal ausführen, die den Codeprojekt mit der angegebenen Konfiguration erstellt wird, wählen Sie die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen.  
   
-6.  Wenn Code in Komponenten von anderen Unternehmen ignorieren möchten, wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
+6. Wenn Code in Komponenten von anderen Unternehmen ignorieren möchten, wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
   
-7.  In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
+7. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
   
-8.  Geben Sie die lokale Version der Regelsatzdatei der Eincheckrichtlinie.
+8. Geben Sie die lokale Version der Regelsatzdatei der Eincheckrichtlinie.

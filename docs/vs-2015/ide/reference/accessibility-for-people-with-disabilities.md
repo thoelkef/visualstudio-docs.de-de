@@ -13,19 +13,18 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd113acc6c79a6e8307969cbb3ed71705b739a19
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 38a4ea987a1b7514d19433f3da75e269fcaf50ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093760"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Barrierefreiheit für Personen mit Behinderungen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Die folgenden Themen enthalten Informationen zu den Funktionen, Produkten und Diensten, die Menschen mit Behinderungen die Verwendung von Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] erleichtern:  
   
--   [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
+- [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
   
--   [Barrierefreiheitsfunktionen von Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)
+- [Barrierefreiheitsfunktionen von Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea8cc58e5afa6f98bbe07e2b75323449e637f25
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475941"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856419"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: Erstellen Ihrer ersten Anwendung für die Universelle Windows-Plattform in Visual Studio mit XAML und C&#35;
 
@@ -29,7 +29,7 @@ Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Vi
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
 ::: moniker-end
 ::: moniker range="vs-2019"
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
@@ -46,7 +46,7 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
    ![Die Projektvorlage für universelles Windows im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Falls Sie die Projektvorlage **Leere App (universelles Windows)** nicht finden, klicken Sie auf der linken Seite des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**.<br><br>![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“.](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Entwicklung für die universelle Windows-Plattform** aus, und klicken Sie dann auf **Ändern**.<br><br>![Workload für die Entwicklung für die universelle Windows-Plattform im Visual Studio-Installer](media/uwp-dev-workload.png)
+   > Falls Sie die Projektvorlage **Leere App (universelles Windows)** nicht finden, klicken Sie auf der linken Seite des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**.<br><br>![Klicken Sie auf den Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt“](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Entwicklung für die universelle Windows-Plattform** aus, und klicken Sie dann auf **Ändern**.<br><br>![Entwicklungsworkload für die universelle Windows-Plattform im Visual Studio-Installer](media/uwp-dev-workload.png)
 
 1. Übernehmen Sie im Dialogfeld **Neues UWP-Projekt (Universelle Windows-Plattform)** die Standardeinstellungen für **Zielversion** und **Mindestversion**.
 
@@ -61,7 +61,7 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
    ![Screenshot des Bildschirms „Neues Projekt erstellen“](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > Wird die Projektvorlage **Leere App (Universelle Windows-App)** nicht angezeigt, klicken Sie auf den Link **Weitere Tools und Features installieren**.<br><br>![Klicken auf den Link „Weitere Tools und Features installieren“](media/vs-2019/uwp-not-finding.png)<br><br>Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Entwicklung für die universelle Windows-Plattform** aus, und klicken Sie dann auf **Ändern**.<br><br>![Workload für die Entwicklung für die universelle Windows-Plattform im Visual Studio-Installer](media/uwp-dev-workload.png)
+   > Wird die Projektvorlage **Leere App (Universelle Windows-App)** nicht angezeigt, klicken Sie auf den Link **Weitere Tools und Features installieren**.<br><br>![Klicken auf den Link „Weitere Tools und Features installieren“](media/vs-2019/uwp-not-finding.png)<br><br>Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Entwicklung für die universelle Windows-Plattform** aus, und klicken Sie dann auf **Ändern**.<br><br>![Entwicklungsworkload für die universelle Windows-Plattform im Visual Studio-Installer](media/uwp-dev-workload.png)
 
 1. Übernehmen Sie im Dialogfeld **Neues UWP-Projekt (Universelle Windows-Plattform)** die Standardeinstellungen für **Zielversion** und **Mindestversion**.
 
@@ -70,7 +70,7 @@ Erstellen Sie zuerst ein UWP-Projekt (Universelle Windows-Plattform). Der Projek
 
    > [!NOTE]
    > Wenn Sie Visual Studio erstmals zum Erstellen einer UWP-App verwenden, wird möglicherweise ein Dialogfeld **Einstellungen** angezeigt. Wählen Sie **Entwicklermodus**, und wählen Sie dann **Ja**.<br><br>
-   ![Aktivieren Sie den Entwicklermodus im Dialogfeld mit UWP-Einstellungen.](media/enable-developer-mode.png)<br><br>Visual Studio installiert für Sie ein zusätzliches Entwicklermoduspaket. Wenn die Paketinstallation abgeschlossen ist, schließen Sie das Dialogfeld **Einstellungen**.
+   ![Aktivieren des Entwicklermodus im Dialogfeld mit UWP-Einstellungen](media/enable-developer-mode.png)<br><br>Visual Studio installiert für Sie ein zusätzliches Entwicklermoduspaket. Wenn die Paketinstallation abgeschlossen ist, schließen Sie das Dialogfeld **Einstellungen**.
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung
 

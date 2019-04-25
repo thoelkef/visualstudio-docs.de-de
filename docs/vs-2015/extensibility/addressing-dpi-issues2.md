@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049541"
 ---
 # <a name="addressing-dpi-issues"></a>Behandeln von DPI-Problemen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Um die DPI-Hilfsfunktionen in verwaltetem Code zugreifen zu können, die in Visual Studio-Umgebung ausgeführt wird:  
   
--   Das verarbeitende Projekt muss auf die neueste Version der Shell MPF verweisen. Zum Beispiel:  
+- Das verarbeitende Projekt muss auf die neueste Version der Shell MPF verweisen. Zum Beispiel:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Stellen Sie sicher, das Projekt enthält Verweise auf **"System.Windows.Forms"**, **PresentationCore**, und **PresentationUI**.  
+- Stellen Sie sicher, das Projekt enthält Verweise auf **"System.Windows.Forms"**, **PresentationCore**, und **PresentationUI**.  
   
--   Verwenden Sie im Code die **Microsoft.VisualStudio.PlatformUI** -Namespace, und rufen eine statische Funktionen DpiHelper-Klasse. Unterstützter Typen (Punkte, Größen, Rechtecke und So weiter) stehen bereitgestellte Erweiterungsfunktionen, die neue zurückgeben Objekte skaliert. Zum Beispiel:  
+- Verwenden Sie im Code die **Microsoft.VisualStudio.PlatformUI** -Namespace, und rufen eine statische Funktionen DpiHelper-Klasse. Unterstützter Typen (Punkte, Größen, Rechtecke und So weiter) stehen bereitgestellte Erweiterungsfunktionen, die neue zurückgeben Objekte skaliert. Zum Beispiel:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Da WPF die Benutzeroberfläche für den aktuellen DPI-Wert mithilfe der BitmapScalingMode-Eigenschaft, legen Sie für das "UIElement" skaliert wird, sollten ein Image-Steuerelement, das mit einem prescaled Image aus, wie die Quelle zwei- oder dreifache größer als sie aussieht. Im folgenden finden mehrere Möglichkeiten, diesen Effekt Leistungsindikator:  
   
--   Wenn Sie die Dimension des ursprünglichen Bilds bei 100 % kennen, können Sie die genaue Größe des Steuerelements Image angeben. Diese Größen spiegeln, dass die Größe der Benutzeroberfläche vor der Skalierung angewendet wird.  
+- Wenn Sie die Dimension des ursprünglichen Bilds bei 100 % kennen, können Sie die genaue Größe des Steuerelements Image angeben. Diese Größen spiegeln, dass die Größe der Benutzeroberfläche vor der Skalierung angewendet wird.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Wenn die Größe des ursprünglichen Bilds nicht bekannt ist, kann ein LayoutTransform zentral herunterskaliert das endgültige Image-Objekt verwendet werden. Zum Beispiel:  
+- Wenn die Größe des ursprünglichen Bilds nicht bekannt ist, kann ein LayoutTransform zentral herunterskaliert das endgültige Image-Objekt verwendet werden. Zum Beispiel:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>Tipps  
   
-1.  Wenn die Document-Eigenschaft für das WebOC Steuerelement geändert wird, müssen Sie das Dokument mit der Klasse IDocHostUIHandler neu zuordnen.  
+1. Wenn die Document-Eigenschaft für das WebOC Steuerelement geändert wird, müssen Sie das Dokument mit der Klasse IDocHostUIHandler neu zuordnen.  
   
-2.  Wenn die oben genannten nicht funktioniert, besteht ein bekanntes Problem mit der WebOC nicht auswählen, um die Änderung an der DPI-Flag. Die verlässlichste Möglichkeit zur Lösung dieses Problems wird zum Umschalten der optischen Zooms von das WebOC, Bedeutung zwei Aufrufe mit zwei unterschiedlichen Werten für den Zoomprozentwert. Darüber hinaus ist diese problemumgehung erforderlich, kann es erforderlich, um es auszuführen, bei jedem Aufruf Navigieren zu sein.  
+2. Wenn die oben genannten nicht funktioniert, besteht ein bekanntes Problem mit der WebOC nicht auswählen, um die Änderung an der DPI-Flag. Die verlässlichste Möglichkeit zur Lösung dieses Problems wird zum Umschalten der optischen Zooms von das WebOC, Bedeutung zwei Aufrufe mit zwei unterschiedlichen Werten für den Zoomprozentwert. Darüber hinaus ist diese problemumgehung erforderlich, kann es erforderlich, um es auszuführen, bei jedem Aufruf Navigieren zu sein.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

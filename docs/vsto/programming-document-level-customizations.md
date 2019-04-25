@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077757"
 ---
 # <a name="program-document-level-customizations"></a>Programmieren von Anpassungen auf Dokumentebene
   Wenn Sie Microsoft Office Word oder Microsoft Office Excel mit einer Anpassung auf Dokumentebene erweitern, können Sie die folgenden Aufgaben ausführen:
@@ -62,13 +62,13 @@ ms.locfileid: "56624684"
 
 - Projekte auf Dokumentebene für Excel haben mehrere generierte Klassen: eine für die Arbeitsmappe und eine für jedes Arbeitsblatt. Standardmäßig lauten die Namen dieser Klassen folgendermaßen:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   Die generierte Klasse beinhaltet Ereignishandler, die aufgerufen werden, wenn das Dokument geöffnet oder geschlossen wird. Um Code auszuführen, wenn das Dokument geöffnet wird, fügen Sie dem `Startup` -Ereignishandler Code hinzu. Um Code auszuführen, unmittelbar bevor das Dokument geschlossen wird, fügen Sie dem `Shutdown` -Ereignishandler Code hinzu. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 

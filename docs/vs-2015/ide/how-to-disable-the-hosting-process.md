@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040014"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Gewusst wie: Deaktivieren des Hostprozesses
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ Aufrufe an bestimmte APIs können beeinflusst werden, wenn der Hostprozesses akt
   
 4. Deaktivieren Sie das Kontrollkästchen **Visual Studio-Hostprozess aktivieren**.  
   
-   Wenn der Hostprozess deaktiviert ist, sind mehrere Debugfunktionen nicht verfügbar oder weisen eine eingeschränkte Leistung auf. Weitere Informationen finden Sie unter [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md).  
+   Wenn der Hostprozess deaktiviert ist, sind mehrere Debugfeatures nicht verfügbar oder weisen eine eingeschränkte Leistung auf. Weitere Informationen finden Sie unter [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md).  
   
    Generelle Einschränkungen bei deaktiviertem Hostprozess:  
   
--   Die Vorlaufzeit bis zum Start des Debugvorgangs bei [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Anwendungen verlängert sich.  
+- Die Vorlaufzeit bis zum Start des Debugvorgangs bei [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Anwendungen verlängert sich.  
   
--   Die Ausdrucksauswertung zur Entwurfszeit ist nicht verfügbar.  
+- Die Ausdrucksauswertung zur Entwurfszeit ist nicht verfügbar.  
   
--   Das Debuggen teilweise vertrauenswürdiger Anwendungen ist nicht möglich.  
+- Das Debuggen teilweise vertrauenswürdiger Anwendungen ist nicht möglich.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md)   

@@ -9,23 +9,23 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055170"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Vorgehensweise: Hinzufügen von Aktivitäten zur Toolbox
 Aktivitäten können hinzugefügt werden, um die **Toolbox** in der Projektmappe auf verschiedene Weise. Sie können sie innerhalb des aktuellen Projekts hinzufügen oder durch einen Verweis auf ein anderes Projekt oder eine andere Assembly.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>So fügen Sie innerhalb des aktuellen Projekts eine Aktivität hinzu  
   
-1.  Fügen Sie dem aktuellen Workflowprojekt eine neue benutzerdefinierte Aktivität hinzu. [!INCLUDE[crabout](../includes/crabout-md.md)] Hinzufügen einer neuen benutzerdefinierten Aktivität zu Ihrem Projekt finden Sie unter [Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1. Fügen Sie dem aktuellen Workflowprojekt eine neue benutzerdefinierte Aktivität hinzu. [!INCLUDE[crabout](../includes/crabout-md.md)] Hinzufügen einer neuen benutzerdefinierten Aktivität zu Ihrem Projekt finden Sie unter [Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
-2.  Fügen Sie der Aktivität benutzerdefinierte Logik hinzu.  
+2. Fügen Sie der Aktivität benutzerdefinierte Logik hinzu.  
   
-3.  Erstellen Sie das Projekt. Wenn der Build erfolgreich war, eine neue Kategorie in der **Toolbox** mit dem Namen "\<*Projektname*>" mit die benutzerdefinierte Aktivität enthält, die in dieser Kategorie wird angezeigt.  
+3. Erstellen Sie das Projekt. Wenn der Build erfolgreich war, eine neue Kategorie in der **Toolbox** mit dem Namen "\<*Projektname*>" mit die benutzerdefinierte Aktivität enthält, die in dieser Kategorie wird angezeigt.  
   
     > [!NOTE]
     >  Wenn die Toolbox zurückgesetzt wird, werden benutzerdefinierte Aktivitäten entfernt. Dies gilt auch, wenn die Projektmappe erneut erstellt wird. Um die Toolbox erneut mit benutzerdefinierten Aktivitäten aufzufüllen, nachdem sie zurückgesetzt wurde, starten Sie [!INCLUDE[vs2010](../includes/vs2010-md.md)] erneut.  
@@ -38,25 +38,25 @@ Aktivitäten können hinzugefügt werden, um die **Toolbox** in der Projektmappe
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>So fügen eine Aktivität aus einem anderen Projekt hinzu  
   
-1.  Öffnen Sie eine Projektmappe, die mindestens ein Workflowprojekt und entweder ein benutzerdefiniertes Aktivitätsbibliotheksprojekt oder ein anderes Workflowprojekt enthält, in dem eine benutzerdefinierte Aktivität definiert wird.  
+1. Öffnen Sie eine Projektmappe, die mindestens ein Workflowprojekt und entweder ein benutzerdefiniertes Aktivitätsbibliotheksprojekt oder ein anderes Workflowprojekt enthält, in dem eine benutzerdefinierte Aktivität definiert wird.  
   
-2.  Erstellen Sie beide Projekte. Wenn die Erstellung erfolgreich war, eine neue Kategorie in der **Toolbox** mit dem Namen "\<*Projektname*>" mit die benutzerdefinierte Aktivität enthält, die in dieser Kategorie wird angezeigt.  
+2. Erstellen Sie beide Projekte. Wenn die Erstellung erfolgreich war, eine neue Kategorie in der **Toolbox** mit dem Namen "\<*Projektname*>" mit die benutzerdefinierte Aktivität enthält, die in dieser Kategorie wird angezeigt.  
   
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>So fügen Sie eine Aktivität aus einer Assembly der Toolbox hinzu  
   
-1.  Öffnen Sie eine Workflowprojektmappe.  
+1. Öffnen Sie eine Workflowprojektmappe.  
   
-2.  Von der **Tools** , wählen Sie im Menü **Toolboxelemente auswählen...** .  
+2. Von der **Tools** , wählen Sie im Menü **Toolboxelemente auswählen...** .  
   
-3.  In der **Toolboxelemente** wählen Sie im Dialogfeld die **System.Activities-Komponenten** Registerkarte, und klicken Sie auf **durchsuchen...** Navigieren Sie auf die Assembly, die die benutzerdefinierte Aktivität enthält, die Sie hinzufügen möchten.  
+3. In der **Toolboxelemente** wählen Sie im Dialogfeld die **System.Activities-Komponenten** Registerkarte, und klicken Sie auf **durchsuchen...** Navigieren Sie auf die Assembly, die die benutzerdefinierte Aktivität enthält, die Sie hinzufügen möchten.  
   
-4.  Wählen Sie die Assembly, und klicken Sie auf **OK**. Die benutzerdefinierte Aktivitätskomponente wird der Liste der Komponenten hinzugefügt und automatisch ausgewählt.  
+4. Wählen Sie die Assembly, und klicken Sie auf **OK**. Die benutzerdefinierte Aktivitätskomponente wird der Liste der Komponenten hinzugefügt und automatisch ausgewählt.  
   
-    1.  Klicken Sie auf **OK** um das Dialogfeld zu schließen.  
+    1. Klicken Sie auf **OK** um das Dialogfeld zu schließen.  
   
-5.  Wählen Sie zum Anzeigen der Toolbox **Toolbox** aus der **Ansicht** Menü.  
+5. Wählen Sie zum Anzeigen der Toolbox **Toolbox** aus der **Ansicht** Menü.  
   
-6.  Die benutzerdefinierte Aktivität wird in der **Toolbox** unter der Kategorie, die im Fokus war, bevor das Element hinzugefügt wurde. Z. B. wenn die **allgemeine** Kategorie ausgewählt wurde, der **Toolbox** vor dem Hinzufügen des Toolboxelements muss die Aktivität wird angezeigt, unter der **allgemeine** Kategorie.  
+6. Die benutzerdefinierte Aktivität wird in der **Toolbox** unter der Kategorie, die im Fokus war, bevor das Element hinzugefügt wurde. Z. B. wenn die **allgemeine** Kategorie ausgewählt wurde, der **Toolbox** vor dem Hinzufügen des Toolboxelements muss die Aktivität wird angezeigt, unter der **allgemeine** Kategorie.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des Workflow-Designers](../workflow-designer/using-the-workflow-designer.md)

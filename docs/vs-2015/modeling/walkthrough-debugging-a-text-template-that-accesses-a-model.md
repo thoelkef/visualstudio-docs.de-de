@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087117"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
   
 #### <a name="to-create-a-text-template"></a>Zum Erstellen einer Textvorlage  
   
-1.  Erstellen Sie die Projektmappe, und starten Sie ihn in den Debugger ausführen. (Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**, und klicken Sie dann auf die **Debuggen** im Menü klicken Sie auf **Debuggen starten**.) Eine neue Instanz von Visual Studio öffnet das Projekt debuggen.  
+1. Erstellen Sie die Projektmappe, und starten Sie ihn in den Debugger ausführen. (Auf der **erstellen** Menü klicken Sie auf **Projektmappe neu erstellen**, und klicken Sie dann auf die **Debuggen** im Menü klicken Sie auf **Debuggen starten**.) Eine neue Instanz von Visual Studio öffnet das Projekt debuggen.  
   
-2.  Fügen Sie eine Textdatei namens `DebugTest.tt` auf das Projekt debuggen.  
+2. Fügen Sie eine Textdatei namens `DebugTest.tt` auf das Projekt debuggen.  
   
-3.  Stellen Sie sicher, dass die **benutzerdefiniertes Tool** von DebugTest.tt-Eigenschaftensatz auf `TextTemplatingFileGenerator`.  
+3. Stellen Sie sicher, dass die **benutzerdefiniertes Tool** von DebugTest.tt-Eigenschaftensatz auf `TextTemplatingFileGenerator`.  
   
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debuggen von Direktiven, die Zugriff auf ein Modell aus einer Textvorlage  
  Bevor Sie ein Modell über die Anweisungen und Ausdrücke in einer Textvorlage zugreifen können, müssen Sie zuerst auf einen generierten Direktivenprozessor aufrufen. Aufrufen der generierten Direktivenprozessors stellt die Klassen in Ihrem Modell zur Verfügung der Textvorlagencode als Eigenschaften. Weitere Informationen finden Sie unter [zugreifen auf Modelle aus Textvorlagen](../modeling/accessing-models-from-text-templates.md).  
@@ -55,7 +55,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
   
 #### <a name="to-debug-an-incorrect-directive-name"></a>So debuggen Sie einen falschen Namen für die Richtlinie  
   
-1.  Ersetzen Sie den Code in "DebugTest.tt" durch den folgenden Code ein:  
+1. Ersetzen Sie den Code in "DebugTest.tt" durch den folgenden Code ein:  
   
     > [!NOTE]
     >  Der Code enthält einen Fehler. Sie werden den Fehler eingeführt, um es zu debuggen.  
@@ -91,7 +91,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
     #>  
     ```  
   
-2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
   
      Die **Fehlerliste** dieser Fehler angezeigt:  
   
@@ -99,9 +99,9 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
   
      In diesem Fall enthält der Direktive Aufruf einen falschen Namen für die Richtlinie an. Sie haben angegeben `modelRoot` wie den Anweisungsnamen, den richtigen Namen für die Richtlinie ist jedoch `DebuggingTestLanguage`.  
   
-3.  Doppelklicken Sie auf den Fehler in der **Fehlerliste** Fenster aus, um den Code springen.  
+3. Doppelklicken Sie auf den Fehler in der **Fehlerliste** Fenster aus, um den Code springen.  
   
-4.  Um den Code zu korrigieren, ändern Sie den Anweisungsnamen, `DebuggingTestLanguage`.  
+4. Um den Code zu korrigieren, ändern Sie den Anweisungsnamen, `DebuggingTestLanguage`.  
   
      Die Änderung wird hervorgehoben.  
   
@@ -113,13 +113,13 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-5.  In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
+5. In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
   
      Nachdem das System die Textvorlage transformiert und die entsprechende Ausgabedatei generiert. Sie sehen keine Fehler in der **Fehlerliste** Fenster.  
   
 #### <a name="to-debug-an-incorrect-property-name"></a>So debuggen Sie einen Namen für die ungültige Eigenschaft  
   
-1.  Ersetzen Sie den Code in "DebugTest.tt" durch den folgenden Code ein:  
+1. Ersetzen Sie den Code in "DebugTest.tt" durch den folgenden Code ein:  
   
     > [!NOTE]
     >  Der Code enthält einen Fehler. Sie werden den Fehler eingeführt, um es zu debuggen.  
@@ -155,7 +155,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
     #>  
     ```  
   
-2.  In der **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
+2. In der **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
   
      Die **Fehlerliste** Fenster angezeigt, und einer dieser Fehler angezeigt:  
   
@@ -173,9 +173,9 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
     ```  
   
-3.  Doppelklicken Sie auf den Fehler in das Fenster "Fehlerliste", um auf den Code zu springen.  
+3. Doppelklicken Sie auf den Fehler in das Fenster "Fehlerliste", um auf den Code zu springen.  
   
-4.  Um den Code zu korrigieren, ändern Sie den Namen der Eigenschaft, um `LibraryModel` im Textvorlagencode.  
+4. Um den Code zu korrigieren, ändern Sie den Namen der Eigenschaft, um `LibraryModel` im Textvorlagencode.  
   
      Die Änderungen werden hervorgehoben.  
   
@@ -210,6 +210,6 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
     #>  
     ```  
   
-5.  In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
+5. In **Projektmappen-Explorer**mit der rechten Maustaste auf "DebugTest.tt", und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.  
   
      Nachdem das System die Textvorlage transformiert und die entsprechende Ausgabedatei generiert. Sie sehen keine Fehler in der **Fehlerliste** Fenster.

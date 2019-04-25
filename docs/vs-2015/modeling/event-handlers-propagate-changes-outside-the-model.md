@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059902"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Sie können im Visualisierungs- und Modellierungs-SDK, Store-Ereignishandler zum
   
 1. Wählen Sie den Typ des Ereignisses, das Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften des <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht ein Ereignistyp. Am häufigsten verwendeten häufig die Ereignis-Typen sind:  
   
-   -   `ElementAdded` : wird ausgelöst, wenn ein Element des Modells, Beziehungslink "," Form "oder" Verbindung wird erstellt.  
+   - `ElementAdded` : wird ausgelöst, wenn ein Element des Modells, Beziehungslink "," Form "oder" Verbindung wird erstellt.  
   
-   -   ElementPropertyChanged – ausgelöst, wenn der Wert des einem `Normal` Domäneneigenschaft geändert wird. Das Ereignis wird ausgelöst, nur dann, wenn die neuen und alten Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.  
+   - ElementPropertyChanged – ausgelöst, wenn der Wert des einem `Normal` Domäneneigenschaft geändert wird. Das Ereignis wird ausgelöst, nur dann, wenn die neuen und alten Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.  
   
         Es kann nicht an den Rolleneigenschaften angewendet werden, die beziehungslinks entsprechen. Verwenden Sie stattdessen `ElementAdded` die domänenbeziehung zu überwachen.  
   
-   -   `ElementDeleted` – nach einem Modellelement ausgelöst, Beziehung, eine Form oder Verbindung wurde gelöscht. Sie können weiterhin die Eigenschaftswerte des Elements zugreifen, aber es müssen keine Beziehungen zu anderen Elementen.  
+   - `ElementDeleted` – nach einem Modellelement ausgelöst, Beziehung, eine Form oder Verbindung wurde gelöscht. Sie können weiterhin die Eigenschaftswerte des Elements zugreifen, aber es müssen keine Beziehungen zu anderen Elementen.  
   
 2. Fügen Sie eine partielle Klassendefinition für _Ihredsl_**DocData** in einer separaten Codedatei in die **DslPackage** Projekt.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Wenn Sie ein Ereignis, die den Speicher aktualisiert schreiben:  
   
--   Verwendung `store.InUndoRedoOrRollback` um zu vermeiden, Änderungen an Modellelemente in rückgängig. Der Transaktions-Manager wird alles, was in den Speicher wieder in den ursprünglichen Zustand festgelegt.  
+- Verwendung `store.InUndoRedoOrRollback` um zu vermeiden, Änderungen an Modellelemente in rückgängig. Der Transaktions-Manager wird alles, was in den Speicher wieder in den ursprünglichen Zustand festgelegt.  
   
--   Verwendung `store.InSerializationTransaction` um zu vermeiden, Änderungen vornehmen, während das Modell aus einer Datei geladen wird.  
+- Verwendung `store.InSerializationTransaction` um zu vermeiden, Änderungen vornehmen, während das Modell aus einer Datei geladen wird.  
   
--   Ihre Änderungen bewirkt Weitere Ereignisse ausgelöst werden. Stellen Sie sicher, dass Sie eine unendliche Schleife vermeiden.  
+- Ihre Änderungen bewirkt Weitere Ereignisse ausgelöst werden. Stellen Sie sicher, dass Sie eine unendliche Schleife vermeiden.  
   
 ## <a name="store-event-types"></a>Store-Ereignistypen  
  Jeder Ereignistyp entspricht einer Auflistung in Store.EventManagerDirectory. Sie können das Hinzufügen oder Entfernen von Ereignishandlern zu einem beliebigen Zeitpunkt, aber es ist üblich, um sie hinzuzufügen, wenn das Dokument geladen wird.  

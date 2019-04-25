@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053194"
 ---
 # <a name="inside-the-editor"></a>Im editor
 
@@ -152,7 +152,7 @@ Sie können die Position eines Punkts nachverfolgung oder die Spanne des eine Na
 
 #### <a name="content-types"></a>Inhaltstypen
 
-Inhaltstypen werden einen Mechanismus zum Definieren verschiedene Arten von Inhalt an. Ein Inhaltstyp möglich einen Dateityp, z. B. "Text", "Code" oder "binary" oder einen Technologietyp, z. B. "Xml", "Vb" oder "C#". Beispielsweise ist das Wort "using" ein Schlüsselwort in C# und Visual Basic, aber nicht in anderen Programmiersprachen. Daher wäre die Definition dieses Schlüsselwort auf den Inhalt vom Typ "C#" oder "Vb" beschränkt.
+Inhaltstypen werden einen Mechanismus zum Definieren verschiedene Arten von Inhalt an. Ein Inhaltstyp möglich einen Dateityp, z. B. "Text", "Code" oder "binary" oder einen Technologietyp, z. B. "Xml", "Vb" oder "c#". Beispielsweise ist das Wort "using" ein Schlüsselwort in c# und Visual Basic, aber nicht in anderen Programmiersprachen. Daher wäre die Definition dieses Schlüsselwort auf den Inhalt vom Typ "c#" oder "Vb" beschränkt.
 
 Inhaltstypen werden als Filter für die Zusatzelemente und andere Elemente des Editors verwendet. Viele Editor-Funktionen und Erweiterungspunkte werden pro Inhaltstyp definiert. Beispielsweise unterscheidet sich Text Farbgebung für nur-Text-Dateien, XML-Dateien und Visual Basic-Quellcodedateien. Textpuffer werden in der Regel einen Inhaltstyp zugewiesen, wenn sie erstellt wurden, und der Inhaltstyp eines Textpuffers geändert werden kann.
 
@@ -202,19 +202,19 @@ Die Textansicht formatiert eine <xref:Microsoft.VisualStudio.Text.ITextSnapshotL
 
 Die Funktionen des Editors sind so konzipiert, dass die Definition der Funktion von ihrer Implementierung getrennt ist. Der Editor bietet folgende Funktionen:
 
--   Tags und Klassifizierungen
+- Tags und Klassifizierungen
 
--   Zusatzelemente
+- Zusatzelemente
 
--   Projection
+- Projection
 
--   Gliedern
+- Gliedern
 
--   Maus und Tastatur-Bindungen
+- Maus und Tastatur-Bindungen
 
--   Vorgänge und primitive
+- Vorgänge und primitive
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Tags und Klassifizierungen
 
@@ -262,9 +262,9 @@ Eingebettete Zusatzelemente sind Grafiken, die Teil der formatierten Textansicht
 
 Popup Zusatzelemente sind Grafiken, die in einem kleinen Fenster über der Textansicht, z. B. QuickInfos angezeigt werden.
 
-###  <a name="projection"></a> Projektion
+### <a name="projection"></a> Projektion
 
-Projektion ist ein Verfahren zum Erstellen einer anderen Art von Textpuffer, die nicht tatsächlich Text gespeichert, sondern stattdessen kombiniert Text aus anderer Textpuffer. Beispielsweise kann ein Projektionspuffer verwendet werden, um den Text aus zwei anderen Puffer zu verketten und das Ergebnis präsentieren, als ob sie nur ein Puffer wird, oder Teile des Texts in einem Puffer auszublenden. Ein Projektionspuffer kann als einen Quellpuffer in eine andere Projektionspuffer fungieren. Ein Satz von Puffern, die durch Projektion beziehen kann erstellt werden, um Text auf viele verschiedene Arten neu anzuordnen. (Es ist auch bekannt als solche einem *Pufferdiagramm*.) Die Visual Studio-Text-Gliederungsfunktion wird implementiert, mit einem Projektionspuffer So blenden Sie den reduzierten Text aus, und Visual Studio-Editor für ASP.NET-Seiten-Projektion verwendet, um eingebettete Sprachen wie Visual Basic und C# zu unterstützen.
+Projektion ist ein Verfahren zum Erstellen einer anderen Art von Textpuffer, die nicht tatsächlich Text gespeichert, sondern stattdessen kombiniert Text aus anderer Textpuffer. Beispielsweise kann ein Projektionspuffer verwendet werden, um den Text aus zwei anderen Puffer zu verketten und das Ergebnis präsentieren, als ob sie nur ein Puffer wird, oder Teile des Texts in einem Puffer auszublenden. Ein Projektionspuffer kann als einen Quellpuffer in eine andere Projektionspuffer fungieren. Ein Satz von Puffern, die durch Projektion beziehen kann erstellt werden, um Text auf viele verschiedene Arten neu anzuordnen. (Es ist auch bekannt als solche einem *Pufferdiagramm*.) Die Visual Studio-Text-Gliederungsfunktion wird implementiert, mit einem Projektionspuffer So blenden Sie den reduzierten Text aus, und Visual Studio-Editor für ASP.NET-Seiten-Projektion verwendet, um eingebettete Sprachen wie Visual Basic und c# zu unterstützen.
 
 Ein <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> wird erstellt, indem Sie mithilfe von <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Ein Projektionspuffer wird durch eine geordnete Sequenz von dargestellt <xref:Microsoft.VisualStudio.Text.ITrackingSpan> Objekte, die so genannte *Quellspannen*. Der Inhalt der diese Spannen werden als eine Folge von Zeichen dargestellt. Der Textpuffer, die Quellspannen aus dem stammen, heißen *source Puffer*. Clients von einem Projektionspuffer keine Bedenken, dass es einen gewöhnlichen Textpuffer unterscheidet.
 

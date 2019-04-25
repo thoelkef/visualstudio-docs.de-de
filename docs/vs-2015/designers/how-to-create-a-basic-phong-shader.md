@@ -9,36 +9,36 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113754"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders
+# <a name="how-to-create-a-basic-phong-shader"></a>Vorgehensweise: Erstellen eines Standard-Phong-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Beleuchtungsshaders, der das klassische Phong-Beleuchtungsmodell implementiert, verwendet wird.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Knoten in ein Shader-Diagramm  
+- Hinzufügen von Knoten in ein Shader-Diagramm  
   
--   Trennen der Knoten  
+- Trennen der Knoten  
   
--   Verbinden der Knoten  
+- Verbinden der Knoten  
   
 ## <a name="the-phong-lighting-model"></a>Das Phong-Beleuchtungsmodell  
  Das Phong-Beleuchtungsmodell erweitert das Lambert-Beleuchtungsmodell, indem es Glanzlichter hinzufügt, die die reflektierenden Eigenschaften einer Oberfläche simulieren. Die glänzende Komponente sorgt für zusätzliche Beleuchtung aus den gleichen diffusen Lichtquellen, die im Lambert-Beleuchtungsmodell verwendet werden. Jedoch wird sein Beitrag zur endgültigen Farbe unterschiedlich verarbeitet. Aufgrund der Beziehung zwischen der Blickrichtung, der Richtung der Lichtquellen und der Ausrichtung der Oberfläche, wirken sich Glanzlichter auf jede Oberfläche in der Szene unterschiedlich aus. Es ist ein Produkt aus der glänzenden Farbe, der Glanzkraft und Ausrichtung der Oberfläche sowie der Farbe, Intensität und Ausrichtung der Lichtquelle. Oberflächen, die die Lichtquelle direkt auf den Betrachter reflektieren, erhalten die maximale Glanzwirkung, während Oberflächen, die die Lichtquelle vom Betrachter weglenken, keine Wirkung erhalten. Unter dem Phong-Beleuchtungsmodell werden eine oder mehrere glänzende Komponenten kombiniert, um die Farbe und Intensität des Glanzlichts für jeden Punkt auf dem Objekt festzulegen und werden anschließend zum Ergebnis des Lambert-Beleuchtungsmodells hinzugefügt, um die endgültige Farbe des Pixels zu erzeugen.  
   
- Weitere Informationen zu dem Lambert-Beleuchtungsmodell, finden Sie unter [Vorgehensweise: Erstellen eines einfachen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)  
+ Weitere Informationen zum Lambert-Beleuchtungsmodell finden Sie unter [Vorgehensweise: Erstellen Sie einen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
   
  Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.  
   
 #### <a name="to-create-a-phong-shader"></a>So erstellen Sie einen Phong-Shader  
   
-1. Erstellen ein Lambert-Shaders, wie im [Vorgehensweise: Erstellen eines einfachen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)  
+1. Erstellen Sie einen Lambert-Shader wie unter [Vorgehensweise: Erstellen Sie einen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
   
 2. Trennen Sie den Knoten **Lambert** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Lambert** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.  
   
@@ -73,6 +73,6 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
- [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [Vorgehensweise: Erstellen Sie einen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Shader-Designer](../designers/shader-designer.md)   
  [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

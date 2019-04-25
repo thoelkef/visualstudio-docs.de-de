@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043195"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Dieses Thema enthält die folgenden allgemeinen Fehler, die auftreten können, b
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Fehlermeldung "kann nicht zum Abrufen der Anwendung. Dateien fehlt in der Bereitstellung"oder"Anwendungsdownloads unterbrochen wurde für Netzwerkfehler auftreten, und versuchen Sie es später noch Mal"  
  Diese Meldung gibt an, dass eine oder mehrere Dateien verweist auf die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Manifeste können nicht heruntergeladen werden. Die einfachste Möglichkeit zum Debuggen dieses Fehlers ist, um zu versuchen, laden die URL, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] heruntergeladen werden kann. Hier sind einige möglichen Ursachen:  
   
--   Wenn die Protokolldatei meldet, dass "(403) verboten" oder "(404) nicht gefunden," Stellen Sie sicher, dass der Webserver ist so konfiguriert, dass Herunterladen dieser Datei nicht blockiert wird. Weitere Informationen finden Sie unter [Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Wenn die Protokolldatei meldet, dass "(403) verboten" oder "(404) nicht gefunden," Stellen Sie sicher, dass der Webserver ist so konfiguriert, dass Herunterladen dieser Datei nicht blockiert wird. Weitere Informationen finden Sie unter [Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Wenn die .config-Datei vom Server blockiert wird, finden Sie im Abschnitt "Fehler herunterladen, wenn Sie versuchen, installieren Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mit einer .config-Datei" weiter unten in diesem Thema.  
+- Wenn die .config-Datei vom Server blockiert wird, finden Sie im Abschnitt "Fehler herunterladen, wenn Sie versuchen, installieren Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mit einer .config-Datei" weiter unten in diesem Thema.  
   
--   Bestimmen, ob dies aufgetreten ist, da die `deploymentProvider` -URL in das Bereitstellungsmanifest verweist auf einen anderen Speicherort als die URL, die für die Aktivierung verwendet.  
+- Bestimmen, ob dies aufgetreten ist, da die `deploymentProvider` -URL in das Bereitstellungsmanifest verweist auf einen anderen Speicherort als die URL, die für die Aktivierung verwendet.  
   
--   Stellen Sie sicher, dass alle Dateien auf dem Server vorhanden sind; die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Protokoll sollte Ihnen sagen, welche Datei nicht gefunden wurde.  
+- Stellen Sie sicher, dass alle Dateien auf dem Server vorhanden sind; die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Protokoll sollte Ihnen sagen, welche Datei nicht gefunden wurde.  
   
--   Festzustellen Sie, ob es Probleme mit der Netzwerkkonnektivität; Sie können diese Meldung erhalten, wenn es sich bei Ihrem Client-Computer offline geschaltet, während des Downloads.  
+- Festzustellen Sie, ob es Probleme mit der Netzwerkkonnektivität; Sie können diese Meldung erhalten, wenn es sich bei Ihrem Client-Computer offline geschaltet, während des Downloads.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Herunterladen Sie Fehler beim, wenn Sie versuchen, eine ClickOnce-Anwendung zu installieren, die ist von einer config-Datei  
  Standardmäßig enthält eine Visual Basic-Windows-basierte Anwendung eine Datei "App.config". Es wird ein Problem vorhanden sein, wenn ein Benutzer versucht, die von einem Webserver, der Windows Server 2003 verwendet installiert werden, da das Betriebssystem die Installation von .config-Dateien aus Sicherheitsgründen blockiert. Klicken Sie zum Aktivieren der config-Datei installiert werden, **Dateierweiterung ".deploy" verwenden** in die **Veröffentlichungsoptionen** Dialogfeld.  
@@ -67,11 +67,11 @@ Dieses Thema enthält die folgenden allgemeinen Fehler, die auftreten können, b
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Die Anwendung auf dem Server aktualisiert, aber der Client wird das Update nicht heruntergeladen  
  Dieses Problem möglicherweise gelöst werden, indem Sie einen der folgenden Aufgaben:  
   
--   Überprüfen Sie die `deploymentProvider` URL im Bereitstellungsmanifest. Stellen Sie sicher, dass Sie die Bits im am selben Standort aktualisieren, `deploymentProvider` verweist auf.  
+- Überprüfen Sie die `deploymentProvider` URL im Bereitstellungsmanifest. Stellen Sie sicher, dass Sie die Bits im am selben Standort aktualisieren, `deploymentProvider` verweist auf.  
   
--   Vergewissern Sie sich das Updateintervall im Bereitstellungsmanifest. Wenn dieses Intervall auf einem regelmäßigen Intervall, z. B. ein Mal alle sechs Stunden festgelegt ist [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] scannt keine für ein Update, bis dieses Intervall verstrichen ist. Sie können ändern, dass das Manifest, um nach einem Update jedes Mal zu suchen, die die Anwendung gestartet wird. Ändern das Updateintervall ist eine praktische Möglichkeit während der Entwicklungszeit, um zu überprüfen, ob Updates installiert werden, aber er verlangsamt die Aktivierung von Anwendungen.  
+- Vergewissern Sie sich das Updateintervall im Bereitstellungsmanifest. Wenn dieses Intervall auf einem regelmäßigen Intervall, z. B. ein Mal alle sechs Stunden festgelegt ist [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] scannt keine für ein Update, bis dieses Intervall verstrichen ist. Sie können ändern, dass das Manifest, um nach einem Update jedes Mal zu suchen, die die Anwendung gestartet wird. Ändern das Updateintervall ist eine praktische Möglichkeit während der Entwicklungszeit, um zu überprüfen, ob Updates installiert werden, aber er verlangsamt die Aktivierung von Anwendungen.  
   
--   Starten Sie erneut die Anwendung im Startmenü zu verwenden. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Möglicherweise wurde das Update im Hintergrund festgestellt, aber werden Sie aufgefordert, die Bits auf der nächsten Aktivierung zu installieren.  
+- Starten Sie erneut die Anwendung im Startmenü zu verwenden. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Möglicherweise wurde das Update im Hintergrund festgestellt, aber werden Sie aufgefordert, die Bits auf der nächsten Aktivierung zu installieren.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Während des Updates erhalten Sie einen Fehler, der die folgenden Protokolleintrag hat: "Der Verweis in der Bereitstellung entspricht nicht die Identität, die im Manifest Anwendung definierte"  
  Dieser Fehler kann auftreten, da Sie die bereitstellungs- und Anwendungsmanifeste manuell bearbeitet haben und die Beschreibung der Identität einer Assembly in einem Manifest zu nicht mehr synchron mit den anderen verursacht haben. Die Identität einer Assembly besteht aus der Name, Version, Kultur und Token des öffentlichen Schlüssels. Überprüfen Sie die Identity-Beschreibungen in den Manifesten, und beseitigen Sie die Unterschiede.  
@@ -84,9 +84,9 @@ Dieses Thema enthält die folgenden allgemeinen Fehler, die auftreten können, b
   
  Sie sollten die folgenden Schritte ausführen:  
   
--   Stellen Sie sicher, dass die Identität des Bereitstellungsmanifests, des Anwendungsmanifests und der Hauptanwendungsdatei exe-Datei alle eindeutig sind.  
+- Stellen Sie sicher, dass die Identität des Bereitstellungsmanifests, des Anwendungsmanifests und der Hauptanwendungsdatei exe-Datei alle eindeutig sind.  
   
--   Stellen Sie sicher, dass die Dateipfade nicht mehr als 100 Zeichen sind. Wenn Ihre Anwendung Dateipfade, die zu lang sind enthält, können Sie die Einschränkungen für die maximale Pfadlänge überschreiten, die Sie speichern können. Verkürzen Sie die Pfade, und installieren.  
+- Stellen Sie sicher, dass die Dateipfade nicht mehr als 100 Zeichen sind. Wenn Ihre Anwendung Dateipfade, die zu lang sind enthält, können Sie die Einschränkungen für die maximale Pfadlänge überschreiten, die Sie speichern können. Verkürzen Sie die Pfade, und installieren.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath-Einstellungen in der Konfigurationsdatei der Anwendung werden nicht berücksichtigt.  
  Um PrivatePath (Überprüfungspfade Fusion) zu verwenden, muss die Anwendung volle Vertrauenswürdigkeit anfordern. Versuchen Sie das Manifest der Anwendung volle Vertrauenswürdigkeit anfordern, und wiederholen dann erneut zu ändern.  
@@ -115,9 +115,9 @@ Dieses Thema enthält die folgenden allgemeinen Fehler, die auftreten können, b
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Sie haben versucht, sich mit einem Zertifikat in Ihrem Zertifikatspeicher und ein Meldungsfeld der empfangenen leeren  
  In der **Signierung** müssen Sie im Dialogfeld:  
   
--   Wählen Sie **mit gespeichertem Zertifikat signieren**, und  
+- Wählen Sie **mit gespeichertem Zertifikat signieren**, und  
   
--   Wählen Sie ein Zertifikat aus der Liste aus. das erste Zertifikat ist nicht die Standardeinstellung.  
+- Wählen Sie ein Zertifikat aus der Liste aus. das erste Zertifikat ist nicht die Standardeinstellung.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Klicken auf die Schaltfläche "Signieren" löst eine Ausnahme  
  Dieses Problem ist ein bekanntes Problem. Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Manifeste signiert werden müssen. Wählen Sie einfach eine der Signierungsoptionen, und klicken Sie dann auf **OK**.  

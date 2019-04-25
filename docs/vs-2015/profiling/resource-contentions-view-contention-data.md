@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108700"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
 ### <a name="function-values"></a>Funktionswerte  
  Funktionswerte basieren auf den Instanzen der Funktion, die in der im Ausführungspfad dargestellten Ausführungsstruktur aufgetreten sind.  
   
--   Exklusive Werte basieren auf den Ereignissen, die während der Ausführung von Anweisungen im Funktionsrumpf aufgetreten. Aufgetretene Ereignisse in Funktionen, die von der Funktion aufgerufen wurden, sind nicht in den exklusiven Werten enthalten.  
+- Exklusive Werte basieren auf den Ereignissen, die während der Ausführung von Anweisungen im Funktionsrumpf aufgetreten. Aufgetretene Ereignisse in Funktionen, die von der Funktion aufgerufen wurden, sind nicht in den exklusiven Werten enthalten.  
   
--   Inklusive Werte basieren auf den Ereignissen, die aufgetreten sind, als die Funktion ausgeführt wurde, oder eine Funktion, die von der Funktion aufgerufen wurde.  
+- Inklusive Werte basieren auf den Ereignissen, die aufgetreten sind, als die Funktion ausgeführt wurde, oder eine Funktion, die von der Funktion aufgerufen wurde.  
   
 ### <a name="percentage-values"></a>Prozentsatzgröße  
  Prozentwerte basieren auf der Gesamtzeit oder den Konfliktereignissen in den Profilerstellungsdaten. Wenn der Bericht oder die Ansicht der Profilerstellung gefiltert wird, werden nur die blockierte Zeit und Konflikte in der gefilterten Daten als Gesamtwert verwendet.  

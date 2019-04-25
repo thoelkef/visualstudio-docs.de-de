@@ -10,12 +10,12 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056938"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen einer VSCT-Datei
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,32 +34,32 @@ Es gibt mehrere Möglichkeiten, eine XML-basierte Visual Studio Command Table-Ko
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>So erstellen Sie eine neue VSCT-Datei manuell  
   
-1.  Starten Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+1. Starten Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-2.  Auf der **Datei** Startmenü **neu**, und klicken Sie dann auf **Datei**.  
+2. Auf der **Datei** Startmenü **neu**, und klicken Sie dann auf **Datei**.  
   
-3.  In der **Vorlagen** Bereich, klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
+3. In der **Vorlagen** Bereich, klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
   
-4.  Auf der **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"** zum Anzeigen der Eigenschaften der XML-Datei.  
+4. Auf der **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"** zum Anzeigen der Eigenschaften der XML-Datei.  
   
-5.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche zum Durchsuchen (...) für die Schemas-Eigenschaft.  
+5. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche zum Durchsuchen (...) für die Schemas-Eigenschaft.  
   
-6.  Wählen Sie in der Liste der XSD-Schemas das vsct.xsd-Schema. Wenn es sich nicht in der Liste ist, klicken Sie auf **hinzufügen** und suchen Sie dann die Datei auf einem lokalen Laufwerk. Klicken Sie auf **OK** Wenn Sie fertig sind.  
+6. Wählen Sie in der Liste der XSD-Schemas das vsct.xsd-Schema. Wenn es sich nicht in der Liste ist, klicken Sie auf **hinzufügen** und suchen Sie dann die Datei auf einem lokalen Laufwerk. Klicken Sie auf **OK** Wenn Sie fertig sind.  
   
-7.  Geben Sie in der XML-Datei, `<CommandTable` und drücken Sie dann die Registerkarte. Schließen Sie das Tag, indem Sie eingeben `>`.  
+7. Geben Sie in der XML-Datei, `<CommandTable` und drücken Sie dann die Registerkarte. Schließen Sie das Tag, indem Sie eingeben `>`.  
   
      Dadurch wird eine grundlegende VSCT-Datei erstellt.  
   
-8.  Geben Sie die Elemente der XML-Datei, die Sie hinzufügen möchten, die gemäß der [VSCT Schema](../../extensibility/vsct-xml-schema-reference.md). Weitere Informationen finden Sie unter [Authoring. VSCT-Dateien](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Geben Sie die Elemente der XML-Datei, die Sie hinzufügen möchten, die gemäß der [VSCT Schema](../../extensibility/vsct-xml-schema-reference.md). Weitere Informationen finden Sie unter [Authoring. VSCT-Dateien](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>Kompilieren des Codes  
  Einfach eine VSCT-Datei hinzufügen, zu einem Projekt bewirkt nicht kompilieren. Sie müssen es im Buildprozess integrieren.  
   
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Projekt-Kompilierung einer VSCT-Datei hinzu  
   
-1.  Öffnen Sie die Projektdatei im Editor. Wenn das Projekt geladen wird, müssen Sie es zunächst entladen.  
+1. Öffnen Sie die Projektdatei im Editor. Wenn das Projekt geladen wird, müssen Sie es zunächst entladen.  
   
-2.  Hinzufügen einer [ItemGroup-Element](../../msbuild/itemgroup-element-msbuild.md) , das eine VSCTCompile-Element enthält, wie im folgenden Beispiel gezeigt.  
+2. Hinzufügen einer [ItemGroup-Element](../../msbuild/itemgroup-element-msbuild.md) , das eine VSCTCompile-Element enthält, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     <ItemGroup>  
@@ -72,7 +72,7 @@ Es gibt mehrere Möglichkeiten, eine XML-basierte Visual Studio Command Table-Ko
   
      Das ResourceName-Element sollte immer festgelegt werden, um `Menus.ctmenu`.  
   
-3.  Wenn Ihr Projekt eine RESX-Datei enthält, fügen Sie ein EmbeddedResource-Element, das ein Element MergeWithCTO enthält hinzu, wie im folgenden Beispiel gezeigt.  
+3. Wenn Ihr Projekt eine RESX-Datei enthält, fügen Sie ein EmbeddedResource-Element, das ein Element MergeWithCTO enthält hinzu, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -84,9 +84,9 @@ Es gibt mehrere Möglichkeiten, eine XML-basierte Visual Studio Command Table-Ko
   
      Dieses Markup funktionieren im ItemGroup-Element, das eingebettete Ressourcen enthält.  
   
-4.  Öffnen Sie die Paketdatei, die in der Regel mit dem Namen *ProjectName*Package.cs oder *ProjectName*Package.vb, im Editor.  
+4. Öffnen Sie die Paketdatei, die in der Regel mit dem Namen *ProjectName*Package.cs oder *ProjectName*Package.vb, im Editor.  
   
-5.  Fügen Sie für die Paketklasse ein ProvideMenuResource-Attribut hinzu, wie im folgenden Beispiel gezeigt.  
+5. Fügen Sie für die Paketklasse ein ProvideMenuResource-Attribut hinzu, wie im folgenden Beispiel gezeigt.  
   
     ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  

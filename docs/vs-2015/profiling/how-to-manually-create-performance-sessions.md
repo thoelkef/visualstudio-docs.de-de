@@ -15,27 +15,27 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e326bac1138fc03be94c1e6d1a5037e3d1a2f40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068885"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Gewusst wie: Manuelles Erstellen von Leistungssitzungen
+# <a name="how-to-manually-create-performance-sessions"></a>Vorgehensweise: Manuelles Erstellen von Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] öffnen. Weitere Informationen finden Sie unter [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md).  
   
 ### <a name="to-manually-create-a-performance-session"></a>So erstellen Sie manuell eine Leistungssitzung  
   
-1.  Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Neue Leistungssitzung**.  
+1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Neue Leistungssitzung**.  
   
      Es wird eine leere Leistungssitzung im **Leistungs-Explorer** hinzugefügt.  
   
-2.  Klicken Sie mit der rechten Maustaste auf **Ziele**, und klicken Sie anschließend auf **Zielbinärdatei hinzufügen** aus.  
+2. Klicken Sie mit der rechten Maustaste auf **Ziele**, und klicken Sie anschließend auf **Zielbinärdatei hinzufügen** aus.  
   
-3.  Wählen im Dialogfeld **Zielbinärdatei hinzufügen** den Dateinamen aus, und klicken Sie anschließend auf **Öffnen**.  
+3. Wählen im Dialogfeld **Zielbinärdatei hinzufügen** den Dateinamen aus, und klicken Sie anschließend auf **Öffnen**.  
   
      Es wird eine neue Binärdatei hinzugefügt.  
   

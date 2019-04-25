@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0e944d2ed8538a72082bdc52ee72058907ed9d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055300"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinieren von VBA und Anpassungen auf Dokumentebene
   Sie können VBA-Code (Visual Basic for Applications) in einem Dokument verwenden, das Teil einer Dokumentebenenanpassung für Microsoft Office Word oder Microsoft Office Excel ist. Sie können VBA-Code im Dokument über die Anpassungsassembly aufrufen, oder Sie können für Ihr Projekt die Aktivierung des VBA-Codes im Dokument konfigurieren, um Code in der Anpassungsassembly aufzurufen.
@@ -86,17 +86,17 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="requirements"></a>Anforderungen
  Bevor Sie VBA-Code zum Aufrufen aus der Anpassungsassembly aktivieren können, muss das Projekt die folgenden Anforderungen erfüllen:
 
--   Das Dokument muss eine der folgenden Dateinamenerweiterungen haben:
+- Das Dokument muss eine der folgenden Dateinamenerweiterungen haben:
 
-    -   Für Word: *.docm* oder *.doc*
+    - Für Word: *.docm* oder *.doc*
 
-    -   Für Excel: *.xlsm*, *.xltm*, *xls*, oder *.xlt*
+    - Für Excel: *.xlsm*, *.xltm*, *xls*, oder *.xlt*
 
--   Das Dokument muss bereits ein VBA-Projekt mit VBA-Code enthalten.
+- Das Dokument muss bereits ein VBA-Projekt mit VBA-Code enthalten.
 
--   Für den VBA-Code im Dokument muss die Ausführung zulässig sein, ohne dass der Benutzer zum Aktivieren von Makros aufgefordert wird. Sie können die Vertrauenswürdigkeit für die Ausführung des VBA-Codes angeben, indem Sie den Speicherort des Office-Projekts der Liste der vertrauenswürdigen Speicherorte in den Trust Center-Einstellungen für Word oder Excel hinzufügen.
+- Für den VBA-Code im Dokument muss die Ausführung zulässig sein, ohne dass der Benutzer zum Aktivieren von Makros aufgefordert wird. Sie können die Vertrauenswürdigkeit für die Ausführung des VBA-Codes angeben, indem Sie den Speicherort des Office-Projekts der Liste der vertrauenswürdigen Speicherorte in den Trust Center-Einstellungen für Word oder Excel hinzufügen.
 
--   Das Office-Projekt muss mindestens eine öffentliche Klasse mit einem oder mehreren öffentlichen Membern enthalten, die Sie für VBA verfügbar machen.
+- Das Office-Projekt muss mindestens eine öffentliche Klasse mit einem oder mehreren öffentlichen Membern enthalten, die Sie für VBA verfügbar machen.
 
      Sie können Methoden, Eigenschaften und Ereignisse für VBA verfügbar machen. Bei der Klasse, die Sie verfügbar machen können, kann es sich um eine Hostelementklasse (z. B. `ThisDocument` für Word oder `ThisWorkbook` und `Sheet1` für Excel) oder eine andere Klasse handeln, die Sie in Ihrem Projekt definieren. Weitere Informationen zu Hostelementen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
 
@@ -109,11 +109,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
    Hierzu müssen Sie die folgenden Hauptschritte ausführen:
 
-  1.  Machen Sie die Klasse für COM verfügbar.
+  1. Machen Sie die Klasse für COM verfügbar.
 
-  2.  Überschreiben Sie die **GetAutomationObject** -Methode einer Hostelementklasse in Ihrem Projekt, um eine Instanz der Klasse zurückzugeben, die Sie für VBA verfügbar machen.
+  2. Überschreiben Sie die **GetAutomationObject** -Methode einer Hostelementklasse in Ihrem Projekt, um eine Instanz der Klasse zurückzugeben, die Sie für VBA verfügbar machen.
 
-  3.  Legen Sie die **ReferenceAssemblyFromVbaProject** -Eigenschaft einer beliebigen Hostelementklasse im Projekt auf **True**fest. Dadurch wird die Typbibliothek der Anpassungsassembly in die Assembly eingebettet, und dem VBA-Projekt im Dokument wird ein Verweis auf die Typbibliothek hinzugefügt.
+  3. Legen Sie die **ReferenceAssemblyFromVbaProject** -Eigenschaft einer beliebigen Hostelementklasse im Projekt auf **True**fest. Dadurch wird die Typbibliothek der Anpassungsassembly in die Assembly eingebettet, und dem VBA-Projekt im Dokument wird ein Verweis auf die Typbibliothek hinzugefügt.
 
   Ausführliche Anweisungen finden Sie unter [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual Basic-Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) und [Vorgehensweise: Verfügbarmachen von Code für VBA in einem Visual C#&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).
 
@@ -174,7 +174,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  Diese Methode gibt ein Objekt zurück, das für die Klasse steht, die Sie für VBA verfügbar gemacht haben. Die Member und Methodenparameter des zurückgegebenen Objekts werden in IntelliSense angezeigt.
 
-##  <a name="Guidelines"></a> Richtlinien zum Hinzufügen von VBA-Code zum Dokument
+## <a name="Guidelines"></a> Richtlinien zum Hinzufügen von VBA-Code zum Dokument
  Es sind mehrere unterschiedliche Kopien des Dokuments vorhanden, denen Sie VBA-Code hinzufügen können, um Aufrufe für die Anpassung auf Dokumentebene durchführen zu können.
 
  Beim Entwickeln und Testen Ihrer Projektmappe können Sie VBA-Code im Dokument schreiben, das geöffnet wird, während Sie das Projekt in Visual Studio (also das Dokument im Buildausgabeordner) debuggen oder ausführen. Sämtlicher VBA-Code, den Sie diesem Dokument hinzufügen, wird beim nächsten Erstellen des Projekts überschrieben. Visual Studio ersetzt das Dokument im Buildausgabeordner durch eine Kopie des Dokuments aus dem Hauptordner des Projekts.
@@ -201,7 +201,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>Klicken Sie auf dem Computer des Endbenutzers
  Wenn es sich bei den Endbenutzern um VBA-Entwickler handelt, von denen Dienste aufgerufen werden, die Sie in der Anpassung auf Dokumentebene bereitstellen, ist Folgendes möglich: Sie können ihnen mitteilen, wie Ihr Code aufgerufen wird, indem Sie die `CallVSTOAssembly` -Eigenschaft oder die `GetManagedClass` -Methode in ihren Kopien des Dokuments verwenden. Beim Veröffentlichen von Updates auf die Projektmappe wird VBA-Code in das Dokument auf dem Computer des Endbenutzers werden nicht überschrieben, Updates veröffentlicht, weil das Dokument durch nicht geändert wird.
 
-##  <a name="PropertyTasks"></a> Von Hostelementeigenschaften ausgeführte Aufgaben
+## <a name="PropertyTasks"></a> Von Hostelementeigenschaften ausgeführte Aufgaben
  Wenn Sie die Eigenschaften **EnableVbaCallers** und **ReferenceAssemblyFromVbaProject** verwenden, führt Visual Studio unterschiedliche Aufgabensätze aus.
 
 ### <a name="enablevbacallers"></a>Eigenschaften
@@ -229,9 +229,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 2. Es wird ein Verweis auf die folgenden Typbibliotheken im VBA-Projekt im Dokument hinzugefügt:
 
-   -   Die Typbibliothek für die Anpassungsassembly.
+   - Die Typbibliothek für die Anpassungsassembly.
 
-   -   Die Typbibliothek „Microsoft Visual Studio-Tools für Office-Ausführungs-Engine 9.0“. Diese Typbibliothek ist in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]enthalten.
+   - Die Typbibliothek „Microsoft Visual Studio-Tools für Office-Ausführungs-Engine 9.0“. Diese Typbibliothek ist in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]enthalten.
 
    Wenn die **ReferenceAssemblyFromVbaProject** -Eigenschaft wieder auf **False**festgelegt wird, führt Visual Studio die folgenden Aufgaben aus:
 

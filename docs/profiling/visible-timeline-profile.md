@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823464"
 ---
 # <a name="visible-timeline-profile"></a>Sichtbares Zeitachsenprofil
 Das sichtbare Zeitachsenprofil für die Threadblockierungsansicht stellt statistische Informationen und Links für Berichte bereit. Wenn Sie die Ansicht vergrößern oder verkleinern, horizontal Scrollen oder Kanäle aus- oder einblenden, ändern sich die Zahlen in der aktiven Legende entsprechend den gegenwärtig angezeigten Elementen. Um in der Legende einen Bericht zu einem Element anzuzeigen, klicken Sie auf das Element.

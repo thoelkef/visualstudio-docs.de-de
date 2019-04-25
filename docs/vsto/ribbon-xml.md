@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117539"
 ---
 # <a name="ribbon-xml"></a>Multifunktionsleisten-XML
   Das Element "Menüband (XML) können Sie zum Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Element "Menüband (XML), sollten Sie im Menüband auf eine Weise anpassen, die von dem Element" Menüband (visueller Designer) "nicht unterstützt wird. Einen Vergleich der, wie Sie mit jedem Element ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602022"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Definieren des Verhaltens des benutzerdefinierten Menübands
  Sie können Reaktionen auf Benutzeraktionen, wie z. B. das Klicken auf eine Schaltfläche auf dem Menüband durch Erstellen *Rückrufmethoden*. Rückrufmethoden ähneln Ereignissen in Windows Forms-Steuerelementen, werden jedoch durch ein Attribut im XML-Code des Benutzeroberflächenelements identifiziert. Sie schreiben Methoden in der Klasse "Menüband", und ein Steuerelement ruft die Methode auf, die den gleichen Namen wie der Attributwert aufweist. Beispielsweise können Sie eine Rückrufmethode erstellen, die aufgerufen wird, wenn ein Benutzer eine Schaltfläche im Menüband klickt. Zum Erstellen einer Rückrufmethode sind zwei Schritte erforderlich:
 
--   Zuweisen eines Attributs zu einem Steuerelement in der Menüband-XML-Datei, die eine Rückrufmethode in Ihrem Code identifiziert.
+- Zuweisen eines Attributs zu einem Steuerelement in der Menüband-XML-Datei, die eine Rückrufmethode in Ihrem Code identifiziert.
 
--   Definieren der Rückrufmethode in der Klasse "Menüband".
+- Definieren der Rückrufmethode in der Klasse "Menüband".
 
 > [!NOTE]
 >  Für Outlook ist ein zusätzlicher Schritt erforderlich. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602022"
 
  Es gibt viele verschiedene Typen von Rückrufmethoden, die Sie Menüband-Steuerelementen zuweisen können. Eine vollständige Liste der für jedes Steuerelement verfügbaren Rückrufmethoden, finden Sie im technischen Artikel [Anpassen von Office (2007) Multifunktionsleisten-Benutzeroberfläche für Entwickler (Teil 3 von 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Definieren von Rückrufmethoden
+### <a name="CallBackMethods"></a> Definieren von Rückrufmethoden
  Definieren Sie die Rückrufmethoden in der Klasse "Menüband" in der Menüband-Codedatei. Für eine Rückrufmethode gelten mehrere Anforderungen:
 
 - Sie muss als öffentlich deklariert werden.
@@ -93,7 +93,7 @@ ms.locfileid: "56602022"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Referenz zur Menüband XML-Datei
+## <a name="RibbonDescriptorFile"></a> Referenz zur Menüband XML-Datei
  Sie können Ihr benutzerdefinierte Menüband durch Hinzufügen von Elementen und Attributen zur Menüband-XML-Datei definieren. Standardmäßig enthält die Menüband-XML-Datei die folgenden XML-Elemente.
 
 ```xml
@@ -132,8 +132,8 @@ ms.locfileid: "56602022"
 
  Die Standardelemente und -attribute in der Menüband-XML-Datei sind eine kleine Teilmenge der Elemente und Attribute, die verfügbar sind. Eine vollständige Liste der verfügbaren Elemente und Attribute, finden Sie im technischen Artikel [Anpassen von Office (2007) Multifunktionsleisten-Benutzeroberfläche für Entwickler (Teil 2 von 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Referenz zur Menüband-Klasse
- Visual Studio generiert die Klasse "Menüband" in der Menüband-Codedatei. Diese Klasse die Rückrufmethoden für Steuerelemente auf dem Menüband hinzugefügt haben. Diese Klasse implementiert die <xref:Microsoft.Office.Core.IRibbonExtensibility>-Schnittstelle.
+## <a name="RibbonExtensionClass"></a> Referenz zur Menüband-Klasse
+ Visual Studio generiert die Klasse "Menüband" in der Menüband-Codedatei. Diese Klasse die Rückrufmethoden für Steuerelemente auf dem Menüband hinzugefügt haben. Diese Klasse implementiert die <xref:Microsoft.Office.Core.IRibbonExtensibility> -Schnittstelle.
 
  Die folgende Tabelle beschreibt die Standardmethoden in dieser Klasse.
 

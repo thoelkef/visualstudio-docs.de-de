@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067078"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell ist der primäre Agent der Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Shell bietet die erforderliche Funktionalität zum Aktivieren von VSPackages allgemeine Dienste gemeinsam verwenden. Da das architektonische Ziel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] besteht darin, primäre Funktionalität in der VSPackages, steht Ihnen zu die Shell ist ein Framework Grundfunktionen und als auch die Kommunikation zwischen der Komponente VSPackages zu unterstützen.
@@ -38,17 +38,17 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell ist der p
 
 - Überwachung-Shell-Wide-Auswahl, Kontext und Währung. Die Shell verfolgt nach, die folgenden Elementtypen:
 
-  -   Das aktuelle Projekt
+  - Das aktuelle Projekt
 
-  -   Die aktuelle Projektelement oder das aktuelle Element-ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - Die aktuelle Projektelement oder das aktuelle Element-ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   Die aktuelle Auswahl für die **Eigenschaften** Fenster oder `SelectionContainer`
+  - Die aktuelle Auswahl für die **Eigenschaften** Fenster oder `SelectionContainer`
 
-  -   Die UI-Kontext-IDs oder CmdUIGuids, die steuern, die Sichtbarkeit der Befehle, Menüs und Symbolleisten
+  - Die UI-Kontext-IDs oder CmdUIGuids, die steuern, die Sichtbarkeit der Befehle, Menüs und Symbolleisten
 
-  -   Die derzeit aktiven Elemente wie z. B. das aktive Fenster, Dokument und rückgängig-manager
+  - Die derzeit aktiven Elemente wie z. B. das aktive Fenster, Dokument und rückgängig-manager
 
-  -   Die Kontext-Attribute, mit denen dynamische Hilfe
+  - Die Kontext-Attribute, mit denen dynamische Hilfe
 
   Die Shell vermittelt auch die Kommunikation zwischen den installierten VSPackages und Dienste. Es unterstützt die Kernfunktionen von der Shell, und stellt sie zur Verfügung, die alle integrierten VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Diese Core-Features gehören die folgenden Elemente:
 

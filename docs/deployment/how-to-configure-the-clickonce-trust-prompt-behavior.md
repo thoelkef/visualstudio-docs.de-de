@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2869e76b0b5fd70515701352d257530480f0920
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ec30f3200b5a1df587713a2ee2394f52e3fb333
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093214"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit
 Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, ob Benutzer die Option zum Installieren der ClickOnce-Anwendungen, z. B. Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen, konsolenanwendungen, WPF-Browser angegeben werden Anwendungen und Office-Projektmappen. Sie konfigurieren die vertrauenswürdige Eingabeaufforderung durch Festlegen von Registrierungsschlüsseln für jeden Computer des Benutzers.
@@ -53,19 +53,19 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
 
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Um die ClickOnce-vertrauensaufforderung zu aktivieren, indem Sie den Registrierungs-editor
 
-1.  Öffnen Sie den Registrierungs-Editor ein:
+1. Öffnen Sie den Registrierungs-Editor ein:
 
-    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.
+    1. Klicken Sie auf **Start** und dann auf **Ausführen**.
 
-    2.  In der **öffnen** geben `regedit`, und klicken Sie dann auf **OK**.
+    2. In der **öffnen** geben `regedit`, und klicken Sie dann auf **OK**.
 
-2.  Suchen Sie den folgenden Registrierungsschlüssel:
+2. Suchen Sie den folgenden Registrierungsschlüssel:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn aus.
 
-3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugeordneten, in der folgenden Tabelle angezeigten Werten vorhanden sind.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugeordneten, in der folgenden Tabelle angezeigten Werten vorhanden sind.
 
     |Unterschlüssel für Zeichenfolge-Wert|Wert|
     |-------------------------|-----------|
@@ -79,9 +79,9 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
 
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Um die ClickOnce-vertrauensaufforderung programmgesteuert zu aktivieren.
 
-1.  Erstellen Sie ein Visual Basic- oder Visual C# Konsolenanwendung in Visual Studio.
+1. Erstellen Sie eine Visual Basic oder Visual C#-Konsolenanwendung in Visual Studio.
 
-2.  Öffnen der *Program.vb* oder *"Program.cs"* -Datei zur Bearbeitung, und fügen Sie den folgenden Code hinzu.
+2. Öffnen der *Program.vb* oder *"Program.cs"* -Datei zur Bearbeitung, und fügen Sie den folgenden Code hinzu.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -105,26 +105,26 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
     key.Close();
     ```
 
-3.  Erstellen Sie die Anwendung, und führen Sie sie aus.
+3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
 ## <a name="restrict-the-clickonce-trust-prompt"></a>Einschränken der ClickOnce-vertrauensaufforderung
  Schränken Sie die vertrauenswürdige Eingabeaufforderung aus, sodass Lösungen mit Authenticode-Zertifikaten signiert werden müssen, die Identität bekannt waren, bevor eine Entscheidung über die Vertrauenswürdigkeit abgefragt werden.
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Um die ClickOnce-vertrauensaufforderung zu beschränken, indem Sie den Registrierungs-editor
 
-1.  Öffnen Sie den Registrierungs-Editor ein:
+1. Öffnen Sie den Registrierungs-Editor ein:
 
-    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.
+    1. Klicken Sie auf **Start** und dann auf **Ausführen**.
 
-    2.  In der **öffnen** geben `regedit`, und klicken Sie dann auf **OK**.
+    2. In der **öffnen** geben `regedit`, und klicken Sie dann auf **OK**.
 
-2.  Suchen Sie den folgenden Registrierungsschlüssel:
+2. Suchen Sie den folgenden Registrierungsschlüssel:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn aus.
 
-3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugeordneten, in der folgenden Tabelle angezeigten Werten vorhanden sind.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugeordneten, in der folgenden Tabelle angezeigten Werten vorhanden sind.
 
     |Unterschlüssel für Zeichenfolge-Wert|Wert|
     |-------------------------|-----------|
@@ -136,9 +136,9 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Um die ClickOnce-vertrauensaufforderung programmgesteuert zu beschränken.
 
-1.  Erstellen Sie ein Visual Basic- oder Visual C# Konsolenanwendung in Visual Studio.
+1. Erstellen Sie eine Visual Basic oder Visual C#-Konsolenanwendung in Visual Studio.
 
-2.  Öffnen der *Program.vb* oder *"Program.cs"* -Datei zur Bearbeitung, und fügen Sie den folgenden Code hinzu.
+2. Öffnen der *Program.vb* oder *"Program.cs"* -Datei zur Bearbeitung, und fügen Sie den folgenden Code hinzu.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -162,26 +162,26 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
     key.Close();
     ```
 
-3.  Erstellen Sie die Anwendung, und führen Sie sie aus.
+3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
 ## <a name="disable-the-clickonce-trust-prompt"></a>Deaktivieren der ClickOnce-vertrauensaufforderung
  Sie können die vertrauenswürdige Eingabeaufforderung deaktivieren, damit Endbenutzer nicht erhalten, dass die Option zum Installieren von Lösungen, die bereits in ihrer Sicherheitsrichtlinie nicht vertraut wird.
 
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>So deaktivieren Sie die ClickOnce-vertrauensaufforderung mithilfe des Registrierungs-Editors
 
-1.  Öffnen Sie den Registrierungs-Editor ein:
+1. Öffnen Sie den Registrierungs-Editor ein:
 
-    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.
+    1. Klicken Sie auf **Start** und dann auf **Ausführen**.
 
-    2.  In der **öffnen** geben `regedit`, und klicken Sie dann auf **OK**.
+    2. In der **öffnen** geben `regedit`, und klicken Sie dann auf **OK**.
 
-2.  Suchen Sie den folgenden Registrierungsschlüssel:
+2. Suchen Sie den folgenden Registrierungsschlüssel:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn aus.
 
-3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugeordneten, in der folgenden Tabelle angezeigten Werten vorhanden sind.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert**, wenn sie nicht bereits mit den zugeordneten, in der folgenden Tabelle angezeigten Werten vorhanden sind.
 
     |Unterschlüssel für Zeichenfolge-Wert|Wert|
     |-------------------------|-----------|
@@ -193,9 +193,9 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
 
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>So deaktivieren Sie die ClickOnce-vertrauensaufforderung programmgesteuert
 
-1.  Erstellen Sie ein Visual Basic- oder Visual C# Konsolenanwendung in Visual Studio.
+1. Erstellen Sie eine Visual Basic oder Visual C#-Konsolenanwendung in Visual Studio.
 
-2.  Öffnen der *Program.vb* oder *"Program.cs"* -Datei zur Bearbeitung, und fügen Sie den folgenden Code hinzu.
+2. Öffnen der *Program.vb* oder *"Program.cs"* -Datei zur Bearbeitung, und fügen Sie den folgenden Code hinzu.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -220,16 +220,16 @@ Sie können die ClickOnce-vertrauensaufforderung, um zu steuern konfigurieren, o
 
     ```
 
-3.  Erstellen Sie die Anwendung, und führen Sie sie aus.
+3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Trusted application deployment overview (Überblick: Bereitstellen vertrauenswürdiger Anwendungen)](../deployment/trusted-application-deployment-overview.md)
-- [Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Vorgehensweise: Festlegen von benutzerdefinierten Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Vorgehensweise: Festlegen Sie benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [How to: Re-sign application and deployment manifests (Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten)](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf6e693bf216cedf2734d78ca13662739981f235
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092694"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Vorgehensweise: Zuordnung von ListObject-Spalten zu Daten
   Beim Binden eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements an <xref:System.Data.DataTable>sollen möglicherweise nicht alle Spalten in einer Liste angezeigt werden, oder Sie verfügen u. U. über bestimmte Spalten, die nicht an Daten gebunden sind. Durch den Aufruf der <xref:Microsoft.Office.Tools.Excel.ListObject> -Methode können Sie die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> angezeigt werden sollen.
@@ -31,17 +31,17 @@ ms.locfileid: "56639894"
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>So ordnen Sie eine Datentabelle Spalten in einer Liste zu
 
-1.  Erstellen Sie <xref:System.Data.DataTable> auf Klassenebene.
+1. Erstellen Sie <xref:System.Data.DataTable> auf Klassenebene.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2.  Fügen Sie Beispielspalten und Daten in die `Startup` -Ereignishandler von dem `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder `ThisAddIn` Klasse (in einem VSTO-Add-in-Projekt).
+2. Fügen Sie Beispielspalten und Daten in die `Startup` -Ereignishandler von dem `Sheet1` -Klasse (in einem Projekt auf Dokumentebene) oder `ThisAddIn` Klasse (in einem VSTO-Add-in-Projekt).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Das Listenobjekt gebunden werden wird auf das neu erstellte <xref:System.Data.DataTable>, aber die Reihenfolge der Spalten in der Liste variieren je nach der Reihenfolge der <xref:System.Data.DataTable>.
+3. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Das Listenobjekt gebunden werden wird auf das neu erstellte <xref:System.Data.DataTable>, aber die Reihenfolge der Spalten in der Liste variieren je nach der Reihenfolge der <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -51,7 +51,7 @@ ms.locfileid: "56639894"
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>So geben Sie beim Zuordnen von ListObject-Spalten eine nicht zugeordnete Spalte an
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Verwenden Sie eine leere Zeichenfolge, um anzugeben, wo eine nicht zugeordnete Spalte hinzugefügt wird: in diesem Fall zwischen der Spalte für den Titel und der Spalte für den Nachnamen.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> -Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Verwenden Sie eine leere Zeichenfolge, um anzugeben, wo eine nicht zugeordnete Spalte hinzugefügt wird: in diesem Fall zwischen der Spalte für den Titel und der Spalte für den Nachnamen.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]

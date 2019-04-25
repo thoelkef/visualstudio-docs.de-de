@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038711"
 ---
 # <a name="test-area-4-check-in"></a>Testbereich 4: Einchecken
 Quellcodeverwaltung-Plug-in Test Hierunter Senden von aktualisierten Elemente in den Versionsspeicher über die **Einchecken** Befehl.
@@ -33,11 +33,11 @@ Quellcodeverwaltung-Plug-in Test Hierunter Senden von aktualisierten Elemente in
 
 ## <a name="common-expected-behavior"></a>Allgemeine erwartet
 
--   Projekte und Dateien, die zu einer Projektmappe oder das Projekt unter quellcodeverwaltung hinzugefügt werden, der **Einchecken** Dialogfeld und der **Anstehende Eincheckvorgänge** Fenster.
+- Projekte und Dateien, die zu einer Projektmappe oder das Projekt unter quellcodeverwaltung hinzugefügt werden, der **Einchecken** Dialogfeld und der **Anstehende Eincheckvorgänge** Fenster.
 
--   Werden Sie nach der Überprüfung im hinzugefügten Elemente in der quellcodeverwaltung angezeigt.
+- Werden Sie nach der Überprüfung im hinzugefügten Elemente in der quellcodeverwaltung angezeigt.
 
--   Nach der Überprüfung in sind aktualisierte Elemente im Speicher ordnungsgemäß mit Versionen versehen.
+- Nach der Überprüfung in sind aktualisierte Elemente im Speicher ordnungsgemäß mit Versionen versehen.
 
 ## <a name="test-cases"></a>Testfälle
  Im folgenden finden bestimmte Testfälle für den Eincheckvorgang Testbereich.

@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113013"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster "Klassendetails" (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
   
  **Inhalt**  
   
--   [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Verwenden der Maus im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Verwenden der Maus im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Verwenden der Tastatur im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Verwenden der Tastatur im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
+## <a name="MouseClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
  Die folgenden Mausaktionen werden in Klassendiagrammen unterstützt:  
   
 |Mauskombination|Kontext|Beschreibung|  
@@ -49,20 +49,20 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 |STRG + Mausrad|Klassendiagramm|Zoomen|  
 |STRG + UMSCHALT + Klicken|Klassendiagramm|Zoomen|  
   
-##  <a name="MouseClassDetails"></a> Verwenden der Maus im Klassendetailsfenster  
+## <a name="MouseClassDetails"></a> Verwenden der Maus im Klassendetailsfenster  
  Mit einer Maus können Sie auf folgende Weisen die Darstellung des Fensters "Klassendetails" und der in ihm angezeigten Daten ändern:  
   
--   Nach Klicken in einer bearbeitbaren Zelle können Sie den Inhalt dieser Zelle bearbeiten. Ihre Änderungen werden an allen Stellen übernommen, an denen diese Daten gespeichert sind oder angezeigt werden, somit auch im Eigenschaftenfenster und im Quellcode.  
+- Nach Klicken in einer bearbeitbaren Zelle können Sie den Inhalt dieser Zelle bearbeiten. Ihre Änderungen werden an allen Stellen übernommen, an denen diese Daten gespeichert sind oder angezeigt werden, somit auch im Eigenschaftenfenster und im Quellcode.  
   
--   Ein Klicken in eine beliebige Zelle einer Zeile bewirkt, dass im Eigenschaftenfenster die Eigenschaften für das Element angezeigt werden, das durch diese Zeile dargestellt wird.  
+- Ein Klicken in eine beliebige Zelle einer Zeile bewirkt, dass im Eigenschaftenfenster die Eigenschaften für das Element angezeigt werden, das durch diese Zeile dargestellt wird.  
   
--   Um die Breite einer Spalte zu ändern, ziehen Sie die Begrenzung der rechten Seite der Spaltenüberschrift solange, bis die Spalte die von Ihnen gewünschte Breite hat.  
+- Um die Breite einer Spalte zu ändern, ziehen Sie die Begrenzung der rechten Seite der Spaltenüberschrift solange, bis die Spalte die von Ihnen gewünschte Breite hat.  
   
--   Sie können Depot- oder Eigenschaftsknoten erweitern oder reduzieren, indem Sie auf die Pfeilsymbole links neben der Zeile klicken.  
+- Sie können Depot- oder Eigenschaftsknoten erweitern oder reduzieren, indem Sie auf die Pfeilsymbole links neben der Zeile klicken.  
   
--   Das Klassendetailsfenster enthält mehrere Schaltflächen zum Erstellen neuer Member in der aktuellen Klasse sowie zum Navigieren zwischen den Depots der Member im Raster des Klassendetailsfensters. Weitere Informationen finden Sie in den Beschreibungen der Schaltflächen des Klassendetailsfensters.  
+- Das Klassendetailsfenster enthält mehrere Schaltflächen zum Erstellen neuer Member in der aktuellen Klasse sowie zum Navigieren zwischen den Depots der Member im Raster des Klassendetailsfensters. Weitere Informationen finden Sie in den Beschreibungen der Schaltflächen des Klassendetailsfensters.  
   
-##  <a name="KeyboardClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
+## <a name="KeyboardClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
  Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:  
   
 |Key|Kontext|Beschreibung|  
@@ -89,7 +89,7 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 |UMSCHALT+TAB|Alle Kontexte|Navigiert zum vorhergehenden untergeordneten Element desselben übergeordneten Elements (unterstützt Umschließen).|  
 |LEERTASTE|Alle Kontexte|Schaltet die Auswahl für das aktuelle Element um.|  
   
-##  <a name="KeyboardClassDetails"></a> Verwenden der Tastatur im Klassendetailsfenster  
+## <a name="KeyboardClassDetails"></a> Verwenden der Tastatur im Klassendetailsfenster  
   
 > [!NOTE]
 >  Die folgenden Tastenbindungen wurden gewählt, um speziell die Erfahrung des Eingebens von Code zu imitieren.  

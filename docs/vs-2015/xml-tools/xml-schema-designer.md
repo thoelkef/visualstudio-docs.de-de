@@ -9,26 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108699"
 ---
 # <a name="xml-schema-designer"></a>XML-Schema-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie ein Schemaset auf unterschiedlichen Abstraktionsebenen visualisieren können. Der XSD-Designer besteht aus den folgenden Hauptkomponenten:    
   
--   [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) ermöglicht es Ihnen, durchsuchen und Navigieren durch die Struktur von XML-Schema und Suchvorgänge durchführen.  
+- [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md) ermöglicht es Ihnen, durchsuchen und Navigieren durch die Struktur von XML-Schema und Suchvorgänge durchführen.  
   
--   Die [Ausgangsansicht](../xml-tools/start-view.md) ist der Startpunkt für den XSD-Designer, in dieser Ansicht können Sie mit anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets.  
+- Die [Ausgangsansicht](../xml-tools/start-view.md) ist der Startpunkt für den XSD-Designer, in dieser Ansicht können Sie mit anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets.  
   
--   Die [Diagrammansicht](../xml-tools/graph-view.md) ermöglicht es Ihnen, eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten.  
+- Die [Diagrammansicht](../xml-tools/graph-view.md) ermöglicht es Ihnen, eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten.  
   
--   Die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.  
+- Die [Inhaltsmodellansicht](../xml-tools/content-model-view.md) bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)  

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094661"
 ---
 # <a name="xml-editor-intellisense-features"></a>IntelliSense-Funktionen des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio vollständige IntelliSense-Funktionen bereit. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in einem XSD-Dokument  
@@ -86,19 +85,19 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
   
  Dies wird vom XML-Editor für folgende Elemente ausgeführt:  
   
--   Zusammengehörige Start- und Endtags.  
+- Zusammengehörige Start- und Endtags.  
   
--   Ein beliebiges Paar von "\<" oder ">" spitzen Klammern.  
+- Ein beliebiges Paar von "\<" oder ">" spitzen Klammern.  
   
--   Anfang und Ende von Kommentaren.  
+- Anfang und Ende von Kommentaren.  
   
--   Anfang und Ende von Verarbeitungsanweisungen.  
+- Anfang und Ende von Verarbeitungsanweisungen.  
   
--   Anfang und Ende von CDATA-Blöcken.  
+- Anfang und Ende von CDATA-Blöcken.  
   
--   Anfang und Ende von DTD-Deklarationen.  
+- Anfang und Ende von DTD-Deklarationen.  
   
--   Öffnende und schließende Anführungszeichen für Attribute.  
+- Öffnende und schließende Anführungszeichen für Attribute.  
   
 ## <a name="modifying-the-intellisense-options"></a>Ändern der IntelliSense-Optionen  
  Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für Extras/Optionen geändert werden.  
@@ -113,11 +112,11 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
   
 #### <a name="to-change-the-auto-completion-behavior"></a>So ändern Sie das Verhalten bezüglich der automatischen Vervollständigung  
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
   
-2.  Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Sonstiges**.  
+2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Sonstiges**.  
   
-3.  Nehmen Sie alle Änderungen an der **AutoEinfügen** aus, und klicken Sie auf **OK**.  
+3. Nehmen Sie alle Änderungen an der **AutoEinfügen** aus, und klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Editor](../xml-tools/xml-editor.md)   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c878bcc3b0ed2f37f5bb8700b463ac5c1308981
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071355"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Vorgehensweise: Verwenden Sie das GPU-Threadfenster (C++)
 Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu Anwendungen, die auf dem GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,57 +52,57 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
 
 ### <a name="to-display-the-gpu-threads-window"></a>So öffnen Sie das GPU-Threadfenster
 
-1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften**aus.
+1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften**aus.
 
-2.  Wählen Sie im Fenster **Eigenschaftenseiten** für das Projekt unter **Konfigurationseigenschaften** die Option **Debuggen** aus.
+2. Wählen Sie im Fenster **Eigenschaftenseiten** für das Projekt unter **Konfigurationseigenschaften** die Option **Debuggen** aus.
 
-3.  Wählen Sie in der Liste **Zu startender Debugger** die Option **Lokaler Windows-Debugger** aus. Wählen Sie in der Liste **Debuggertyp** die Option **Nur GPU** aus. Sie müssen für diesen Debugger festlegen, im Code, der auf der GPU ausgeführt wird, am Haltepunkt zu unterbrechen.
+3. Wählen Sie in der Liste **Zu startender Debugger** die Option **Lokaler Windows-Debugger** aus. Wählen Sie in der Liste **Debuggertyp** die Option **Nur GPU** aus. Sie müssen für diesen Debugger festlegen, im Code, der auf der GPU ausgeführt wird, am Haltepunkt zu unterbrechen.
 
-4.  Klicken Sie auf die Schaltfläche **OK** .
+4. Klicken Sie auf die Schaltfläche **OK** .
 
-5.  Legen Sie einen Haltepunkt im GPU-Code fest.
+5. Legen Sie einen Haltepunkt im GPU-Code fest.
 
-6.  Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.
+6. Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.
 
-7.  Klicken Sie in der Menüleiste auf **Debuggen**, **Fenster** und **GPU-Threads**.
+7. Klicken Sie in der Menüleiste auf **Debuggen**, **Fenster** und **GPU-Threads**.
 
 ### <a name="to-switch-to-a-different-thread"></a>So wechseln Sie zu einem anderen thread
 
--   Doppelklicken Sie auf die Spalte. (Tastatur: Wählen Sie die Zeile aus, und drücken Sie die EINGABETASTE.)
+- Doppelklicken Sie auf die Spalte. (Tastatur: Wählen Sie die Zeile, und wählen Sie die EINGABETASTE.)
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>So zeigen Sie eine bestimmte Kachel und einen bestimmten Thread an
 
-1.  Klicken Sie im GPU-Threadfenster auf die Schaltfläche **Threadumschaltung erweitern**.
+1. Klicken Sie im GPU-Threadfenster auf die Schaltfläche **Threadumschaltung erweitern**.
 
-2.  Geben Sie die Kachel- und Threadwerte in den Textfeldern an.
+2. Geben Sie die Kachel- und Threadwerte in den Textfeldern an.
 
-3.  Wählen Sie die Schaltfläche mit dem Pfeil darauf aus.
+3. Wählen Sie die Schaltfläche mit dem Pfeil darauf aus.
 
 ### <a name="to-display-or-hide-a-column"></a>So blenden Sie Spalten ein oder aus
 
--   Öffnen Sie das Kontextmenü für das GPU-Threadfenster, klicken Sie auf die Option **Spalten**, und wählen Sie anschließend die Spalte aus, die Sie anzeigen oder ausblenden möchten.
+- Öffnen Sie das Kontextmenü für das GPU-Threadfenster, klicken Sie auf die Option **Spalten**, und wählen Sie anschließend die Spalte aus, die Sie anzeigen oder ausblenden möchten.
 
 ### <a name="to-sort-by-a-column"></a>So sortieren Sie nach Spalte
 
--   Wählen Sie Spaltenüberschrift aus.
+- Wählen Sie Spaltenüberschrift aus.
 
 ### <a name="to-group-threads"></a>So gruppieren Sie Threads
 
--   Öffnen Sie das Kontextmenü für das GPU-Threadfenster, klicken Sie auf **Gruppieren nach**, und wählen Sie dann einen der angezeigten Spaltennamen aus. Wählen Sie **Keine**, um die Gruppierung der Threads aufzuheben.
+- Öffnen Sie das Kontextmenü für das GPU-Threadfenster, klicken Sie auf **Gruppieren nach**, und wählen Sie dann einen der angezeigten Spaltennamen aus. Wählen Sie **Keine**, um die Gruppierung der Threads aufzuheben.
 
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>So können Sie eine Threadzeile einfrieren oder reaktivieren
 
--   Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie dann **Einfrieren** oder **Reaktivieren** aus.
+- Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie dann **Einfrieren** oder **Reaktivieren** aus.
 
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>So können Sie Threadzeile kennzeichnen oder die Kennzeichnung aufheben
 
--   Wählen Sie die Spalte zur Kennzeichnung für den Thread aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Kennzeichnen** oder **Kennzeichnung aufheben** aus.
+- Wählen Sie die Spalte zur Kennzeichnung für den Thread aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Kennzeichnen** oder **Kennzeichnung aufheben** aus.
 
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an
 
--   Wählen Sie im GPU-Threadfenster die Schaltfläche "Kennzeichnen" aus.
+- Wählen Sie im GPU-Threadfenster die Schaltfläche "Kennzeichnen" aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Gewusst wie: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Vorgehensweise: Verwenden des Fensters „Parallele Überwachung“](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

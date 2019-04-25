@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062242"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Verwenden von Sperren  
  Sie können Sperren verwenden, um Schemas, z. B. den folgenden Beispielen zu implementieren:  
   
--   Unterbinden Sie Änderungen an allen Elementen und Beziehungen mit Ausnahme derjenigen, die Kommentare darstellen. Dadurch können Benutzer ein Modell mit Anmerkungen versehen, ohne ihn zu ändern.  
+- Unterbinden Sie Änderungen an allen Elementen und Beziehungen mit Ausnahme derjenigen, die Kommentare darstellen. Dadurch können Benutzer ein Modell mit Anmerkungen versehen, ohne ihn zu ändern.  
   
--   Änderungen in der Standardpartition nicht zulassen, aber Änderungen in der Partition Diagramm zulassen. Die Benutzer kann das Diagramm ändern, aber das zugrunde liegende Modell kann nicht geändert werden.  
+- Änderungen in der Standardpartition nicht zulassen, aber Änderungen in der Partition Diagramm zulassen. Die Benutzer kann das Diagramm ändern, aber das zugrunde liegende Modell kann nicht geändert werden.  
   
--   Unterbinden Sie Änderungen an den Store mit Ausnahme von einer Gruppe von Benutzern, die in einer separaten Datenbank registriert sind. Für andere Benutzer sind das Diagramm und das Modell schreibgeschützt.  
+- Unterbinden Sie Änderungen an den Store mit Ausnahme von einer Gruppe von Benutzern, die in einer separaten Datenbank registriert sind. Für andere Benutzer sind das Diagramm und das Modell schreibgeschützt.  
   
--   Änderungen für das Modell nicht zulassen, wenn eine boolesche Eigenschaft des Diagramms festgelegt ist auf "true". Geben Sie einen Menübefehl, diese Eigenschaft zu ändern. Dadurch wird sichergestellt, Benutzer, die sie keine versehentlich ändert.  
+- Änderungen für das Modell nicht zulassen, wenn eine boolesche Eigenschaft des Diagramms festgelegt ist auf "true". Geben Sie einen Menübefehl, diese Eigenschaft zu ändern. Dadurch wird sichergestellt, Benutzer, die sie keine versehentlich ändert.  
   
--   Nicht zulassen Sie, hinzufügen und Löschen von Elementen und Beziehungen zwischen bestimmten Klassen, doch gestatten Sie eigenschaftenänderungen. Dies bietet Benutzern mit einem festen Formular, in dem sie die Eigenschaften gefüllt werden können.  
+- Nicht zulassen Sie, hinzufügen und Löschen von Elementen und Beziehungen zwischen bestimmten Klassen, doch gestatten Sie eigenschaftenänderungen. Dies bietet Benutzern mit einem festen Formular, in dem sie die Eigenschaften gefüllt werden können.  
   
 ## <a name="lock-values"></a>Lock-Werte  
  Sperren können für eine Store, Partitions- oder einzelne ModelElement festgelegt werden. Sperrt eine `Flags` Enumeration: können kombiniert werden die Werte, die mit "&#124;".  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  Zum Definieren einer Sperrrichtlinie müssen Sie:  
   
--   Erstellen Sie eine Klasse, die das <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> implementiert.  
+- Erstellen Sie eine Klasse, die das <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> implementiert.  
   
--   Fügen Sie dieser Klasse mit den Diensten, die über das docdata-Objekt Ihrer DSL zur Verfügung stehen.  
+- Fügen Sie dieser Klasse mit den Diensten, die über das docdata-Objekt Ihrer DSL zur Verfügung stehen.  
   
 ### <a name="to-define-a-locking-policy"></a>Zum Definieren einer Sperrrichtlinie  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> weist folgende Definition:  

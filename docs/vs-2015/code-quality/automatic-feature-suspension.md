@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045981"
 ---
 # <a name="automatic-feature-suspension"></a>Automatisches Anhalten von Features
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Wenn Ihre verfügbaren Arbeitsspeicher des Systems auf 200 MB oder weniger fäll
 
  In einem wenig Arbeitsspeicher verfügbar ist tritt Folgendes auf:
 
--   Vollständige projektmappenanalyse für Visual C# und Visual Basic ist deaktiviert.
+- Vollständige projektmappenanalyse für Visual C# und Visual Basic ist deaktiviert.
 
--   [Die automatische Speicherbereinigung](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) mit niedriger Latenz im Modus für Visual C# und Visual Basic sind deaktiviert.
+- [Die automatische Speicherbereinigung](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) mit niedriger Latenz im Modus für Visual c# und Visual Basic sind deaktiviert.
 
--   Visual Studio-Caches werden geleert.
+- Visual Studio-Caches werden geleert.
 
 ## <a name="improve-visual-studio-performance"></a>Verbessern der Leistung von Visual Studio
  Tipps und Tricks zur Verbesserung von Visual Studio-Leistung beim Umgang mit großen Projektmappen oder niedriger Arbeitsspeicherstatus, finden Sie unter [Überlegungen zur Leistung bei großen Projektmappen](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ Wenn Ihre verfügbaren Arbeitsspeicher des Systems auf 200 MB oder weniger fäll
 
 Alle Visual Studio-Caches sind sofort geleert, aber neu auffüllen, wenn Sie Visual Studio neu starten oder die aktuellen Sitzung für die Entwicklung fortsetzen beginnt. Die Caches geleert enthalten Caches für die folgenden Features.
 
--   Alle Verweise suchen
+- Alle Verweise suchen
 
--   Navigieren zu
+- Navigieren zu
 
--   Fügen mit hinzu
+- Fügen mit hinzu
 
 Darüber hinaus sind für interne Visual Studio-Vorgänge verwendeten Caches ebenfalls gelöscht.
 

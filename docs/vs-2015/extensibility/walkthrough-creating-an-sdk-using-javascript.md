@@ -8,12 +8,12 @@ ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 39092d309f8924e68016d5eedeb4f78766cfe29c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066948"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mit JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a> Um das SimpleMathVSIX Erweiterungs-SDK-Projekt zu erstellen.  
+## <a name="createSimpleMathVSIX"></a> Um das SimpleMathVSIX Erweiterungs-SDK-Projekt zu erstellen.  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  In der Liste der Kategorien unter **Visual C#-** Option **Erweiterbarkeit**, und wählen Sie dann die **VSIX-Projekt** Vorlage.  
+2. In der Liste der Kategorien unter **Visual C#-** Option **Erweiterbarkeit**, und wählen Sie dann die **VSIX-Projekt** Vorlage.  
   
-3.  In der **Namen** Text geben `SimpleMathVSIX` , und wählen Sie die **OK** Schaltfläche.  
+3. In der **Namen** Text geben `SimpleMathVSIX` , und wählen Sie die **OK** Schaltfläche.  
   
-4.  Wenn die **Visual Studio-Paketassistent** angezeigt wird, wählen Sie die **Weiter** auf auf die Schaltfläche der **Willkommen** Seite, und klicken Sie dann auf **Seite 1 von 7**, wählen Sie die **Fertig stellen** Schaltfläche.  
+4. Wenn die **Visual Studio-Paketassistent** angezeigt wird, wählen Sie die **Weiter** auf auf die Schaltfläche der **Willkommen** Seite, und klicken Sie dann auf **Seite 1 von 7**, wählen Sie die **Fertig stellen** Schaltfläche.  
   
      Obwohl die **Manifest-Designer** geöffnet wird, wir halten diese exemplarische Vorgehensweise einfach durch direktes Ändern der Manifestdatei.  
   
-5.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei "Source.Extension.vsixmanifest" ein, und wählen Sie dann **Ansichtscode**. Verwenden Sie diesen Code, um die vorhandenen Inhalte in der Datei zu ersetzen.  
+5. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei "Source.Extension.vsixmanifest" ein, und wählen Sie dann **Ansichtscode**. Verwenden Sie diesen Code, um die vorhandenen Inhalte in der Datei zu ersetzen.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -63,11 +63,11 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
     </PackageManifest>  
     ```  
   
-6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das SimpleMathVSIX-Projekt, und wählen Sie dann **hinzufügen**, **neues Element**.  
+6. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das SimpleMathVSIX-Projekt, und wählen Sie dann **hinzufügen**, **neues Element**.  
   
-7.  In der **Daten** Kategorie **XML-Datei**, nennen Sie die Datei `SDKManifest.xml`, und wählen Sie die **hinzufügen** Schaltfläche.  
+7. In der **Daten** Kategorie **XML-Datei**, nennen Sie die Datei `SDKManifest.xml`, und wählen Sie die **hinzufügen** Schaltfläche.  
   
-8.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die SDKManifest.xml-Datei aus, und wählen Sie dann **öffnen** zum Anzeigen der Datei in die **XML-Editor**.  
+8. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die SDKManifest.xml-Datei aus, und wählen Sie dann **öffnen** zum Anzeigen der Datei in die **XML-Editor**.  
   
 9. Fügen Sie den folgenden Code zur SDKManifest.xml-Datei.  
   
@@ -98,7 +98,7 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 14. Wählen Sie im Kontextmenü für den Ordner \js\ **hinzufügen**, **neues Element**.  
   
-15. Klicken Sie unter **Visual C#-Elemente**, wählen die **Web** Kategorie, und wählen Sie dann die **JavaScript-Datei** Element. Nennen Sie die Datei `arithmetic.js`, und wählen Sie dann die **hinzufügen** Schaltfläche.  
+15. Klicken Sie unter **Visual c#-Elemente**, wählen die **Web** Kategorie, und wählen Sie dann die **JavaScript-Datei** Element. Nennen Sie die Datei `arithmetic.js`, und wählen Sie dann die **hinzufügen** Schaltfläche.  
   
 16. Fügen Sie den folgenden Code in arithmetic.js:  
   
@@ -128,9 +128,9 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 17. In **Projektmappen-Explorer**, wählen Sie im Kontextmenü für die Datei arithmetic.js **Eigenschaften**. Stellen Sie diese Eigenschaften ändern:  
   
-    -   Legen Sie die **Include in VSIX-Datei** Eigenschaft **"true"**.  
+    - Legen Sie die **Include in VSIX-Datei** Eigenschaft **"true"**.  
   
-    -   Legen Sie die **in Ausgabeverzeichnis kopieren** Eigenschaft **immer kopieren**.  
+    - Legen Sie die **in Ausgabeverzeichnis kopieren** Eigenschaft **immer kopieren**.  
   
 18. In **Projektmappen-Explorer**, wählen Sie im Kontextmenü für das Projekt SimpleMathVSIX **erstellen**.  
   
@@ -140,23 +140,23 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 21. Starten Sie Visual Studio neu.  
   
-##  <a name="createSampleApp"></a> Zum Erstellen einer Beispielapp verwendet, die das SDK  
+## <a name="createSampleApp"></a> Zum Erstellen einer Beispielapp verwendet, die das SDK  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  In der Liste der Kategorien unter **JavaScript**Option **Windows Store**, und wählen Sie dann die **leere App** Vorlage.  
+2. In der Liste der Kategorien unter **JavaScript**Option **Windows Store**, und wählen Sie dann die **leere App** Vorlage.  
   
-3.  In der **Namen** geben `ArithmeticUI`. Klicken Sie auf die Schaltfläche **OK** .  
+3. In der **Namen** geben `ArithmeticUI`. Klicken Sie auf die Schaltfläche **OK** .  
   
-4.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das ArithmeticUI-Projekt, und wählen Sie dann **hinzufügen**, **Verweis**.  
+4. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das ArithmeticUI-Projekt, und wählen Sie dann **hinzufügen**, **Verweis**.  
   
-5.  Klicken Sie unter **Windows**, wählen Sie **Erweiterungen**, und beachten Sie, dass **einfache mathematische** wird angezeigt.  
+5. Klicken Sie unter **Windows**, wählen Sie **Erweiterungen**, und beachten Sie, dass **einfache mathematische** wird angezeigt.  
   
-6.  Wählen Sie die **einfache mathematische** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
+6. Wählen Sie die **einfache mathematische** Kontrollkästchen, und wählen Sie dann die **OK** Schaltfläche.  
   
-7.  In **Projektmappen-Explorer**unter **Verweise**, beachten Sie, dass die **einfache mathematische** Verweis wird angezeigt. Erweitern Sie ihn, und beachten Sie, dass ein \js\-Ordner, der arithmetic.js enthält vorhanden ist. Sie können arithmetic.js, um sicherzustellen, dass es sich bei Ihrem Quellcode installiert wurde, öffnen.  
+7. In **Projektmappen-Explorer**unter **Verweise**, beachten Sie, dass die **einfache mathematische** Verweis wird angezeigt. Erweitern Sie ihn, und beachten Sie, dass ein \js\-Ordner, der arithmetic.js enthält vorhanden ist. Sie können arithmetic.js, um sicherzustellen, dass es sich bei Ihrem Quellcode installiert wurde, öffnen.  
   
-8.  Verwenden Sie den folgenden Code, um den Inhalt des "default.htm" zu ersetzen.  
+8. Verwenden Sie den folgenden Code, um den Inhalt des "default.htm" zu ersetzen.  
   
     ```  
     <!DOCTYPE html>  

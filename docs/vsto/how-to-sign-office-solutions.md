@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101229"
 ---
 # <a name="how-to-sign-office-solutions"></a>Vorgehensweise: Signieren von Office-Projektmappen
   Wenn Sie eine Lösung angemeldet haben, können Sie vertrauen für die Projektmappe, die mithilfe des Zertifikats als Beweis gewähren. Sie können das gleiche Zertifikat für mehrere Lösungen verwenden, und alle Lösungen werden mit keine Erhöhung der Sicherheit richtlinienupdates vertrauenswürdig sein.
@@ -35,15 +35,15 @@ ms.locfileid: "54871662"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Eine Office-Projektmappe mit einem Zertifikat signieren
 
-1.  Auf der **Projekt** Menü klicken Sie auf _SolutionName_**Eigenschaften**.
+1. Auf der **Projekt** Menü klicken Sie auf _SolutionName_**Eigenschaften**.
 
-2.  Klicken Sie auf die Registerkarte **Signierung**.
+2. Klicken Sie auf die Registerkarte **Signierung**.
 
-3.  Wählen Sie **ClickOnce-Manifeste signieren**.
+3. Wählen Sie **ClickOnce-Manifeste signieren**.
 
-4.  Suchen Sie das Zertifikat, indem Sie auf **wählen Sie aus dem Store** oder **aus Datei wählen** , und navigieren Sie zu dem Zertifikat.
+4. Suchen Sie das Zertifikat, indem Sie auf **wählen Sie aus dem Store** oder **aus Datei wählen** , und navigieren Sie zu dem Zertifikat.
 
-5.  Um sicherzustellen, dass das richtige Zertifikat verwendet wird, klicken Sie auf **Weitere Details** die Zertifikatinformationen an.
+5. Um sicherzustellen, dass das richtige Zertifikat verwendet wird, klicken Sie auf **Weitere Details** die Zertifikatinformationen an.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092975"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben erklärt:  
   
--   Anzeigen der Aufruflisten aller Threads in einer Ansicht.  
+- Anzeigen der Aufruflisten aller Threads in einer Ansicht.  
   
--   Anzeigen der Liste der `System.Threading.Tasks.Task`-Instanzen, die in der Anwendung erstellt werden.  
+- Anzeigen der Liste der `System.Threading.Tasks.Task`-Instanzen, die in der Anwendung erstellt werden.  
   
--   Anzeigen der tatsächlichen Aufruflisten mit Aufgaben anstelle von Threads.  
+- Anzeigen der tatsächlichen Aufruflisten mit Aufgaben anstelle von Threads.  
   
--   Navigieren von den Fenstern **Parallele Aufgaben** und **Parallele Stapel** zu Code.  
+- Navigieren von den Fenstern **Parallele Aufgaben** und **Parallele Stapel** zu Code.  
   
--   Skalieren der Fenster durch Gruppieren, Vergrößern/Verkleinern und sonstigen entsprechenden Funktionen.  
+- Skalieren der Fenster durch Gruppieren, Vergrößern/Verkleinern und sonstigen entsprechenden Funktionen.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  In dieser exemplarischen Vorgehensweise wird vorausgesetzt, dass **nur mein Code** aktiviert ist. Klicken Sie im Menü **Extras** auf **Optionen**, und erweitern Sie den Knoten **Debuggen**. Wählen Sie **Allgemein** aus, und wählen Sie dann **Nur eigenen Code aktivieren (nur verwaltet)** aus. Wenn Sie diese Funktion nicht festlegen, können Sie die vorliegende exemplarische Vorgehensweise zwar verwenden, Ihre Ergebnisse weichen jedoch möglicherweise von den Abbildungen ab.  
@@ -65,7 +65,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 1. Zeigen Sie in Visual Studio im Menü **Datei** auf **Neu**, und klicken Sie auf **Projekt**.  
   
-2. In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual C#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
+2. In der **installierte Vorlagen** Bereich, wählen Sie entweder Visual c#, Visual Basic oder Visual C++. Stellen Sie für verwaltete Sprachen sicher, dass im Frameworkfeld [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] angezeigt wird.  
   
 3. Wählen Sie **Konsolenanwendung** , und klicken Sie dann auf **OK**. Behalten Sie die Debugkonfiguration bei (Standardeinstellung).  
   
@@ -88,15 +88,15 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>So zeigen Sie die Aufrufliste eines einzelnen Threads an  
   
-1.  Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Threads**. Docken Sie das Fenster **Threads** am unteren Rand von Visual Studio an.  
+1. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Threads**. Docken Sie das Fenster **Threads** am unteren Rand von Visual Studio an.  
   
-2.  Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Aufrufliste**. Docken Sie das Fenster **Aufrufliste** am unteren Rand von Visual Studio an.  
+2. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Aufrufliste**. Docken Sie das Fenster **Aufrufliste** am unteren Rand von Visual Studio an.  
   
-3.  Doppelklicken Sie im Fenster **Threads** auf einen Thread, um diesen als aktuellen Thread festzulegen. Aktuelle Threads sind durch einen gelben Pfeil gekennzeichnet. Wenn Sie den aktuellen Thread ändern, wird seine Aufrufliste im Fenster **Aufrufliste** angezeigt.  
+3. Doppelklicken Sie im Fenster **Threads** auf einen Thread, um diesen als aktuellen Thread festzulegen. Aktuelle Threads sind durch einen gelben Pfeil gekennzeichnet. Wenn Sie den aktuellen Thread ändern, wird seine Aufrufliste im Fenster **Aufrufliste** angezeigt.  
   
 #### <a name="to-examine-the-parallel-stacks-window"></a>So untersuchen Sie das Fenster Parallele Stapel  
   
-1.  Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Parallele Stapel**. Vergewissern Sie sich, dass im Feld in der oberen linken Ecke **Threads** ausgewählt ist.  
+1. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Parallele Stapel**. Vergewissern Sie sich, dass im Feld in der oberen linken Ecke **Threads** ausgewählt ist.  
   
      Mithilfe der **parallele Stapel** Fenster können Sie mehrere Aufruflisten gleichzeitig in einer Ansicht anzeigen. Die folgende Abbildung zeigt die **parallele Stapel** oben im Fenster der **Aufrufliste** Fenster.  
   
@@ -118,7 +118,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>So setzen Sie die Ausführung bis zum zweiten Haltepunkt fort  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum zweiten Breakpoint fortzusetzen. In der folgenden Abbildung wird die Threadstruktur beim zweiten Haltepunkt dargestellt.  
+1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum zweiten Breakpoint fortzusetzen. In der folgenden Abbildung wird die Threadstruktur beim zweiten Haltepunkt dargestellt.  
   
      ![Fenster "Parallele Stapel", die vielen Branches](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
   
@@ -178,7 +178,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>So setzen Sie die Ausführung bis zum vierten Haltepunkt fort  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum vierten Breakpoint fortzusetzen.  
+1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum vierten Breakpoint fortzusetzen.  
   
      Beachten Sie, wie ein automatischer Bildlauf der Ansicht an die korrekte Position stattfindet. Schalten Sie zwischen Threads im Fenster **Threads** um, oder schalten Sie zwischen Stapelrahmen im Fenster **Aufrufliste** um. Sie werden feststellen, dass immer ein automatischer Bildlauf der Ansicht zum richtigen Frame erfolgt. Deaktivieren Sie die Option **Autom. Bildlauf zu aktuellem Stapelrahmen**, und beobachten Sie den Unterschied.  
   
@@ -196,22 +196,22 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
      Sie können die Stapel auch von oben nach unten angeordnet anstatt von unten nach oben anzeigen. Klicken Sie dazu im Menü **Extras** auf **Optionen**, und aktivieren bzw. deaktivieren Sie anschließend die Option unter dem Knoten **Debuggen**.  
   
-2.  Klicken Sie vor dem Fortfahren im Menü **Debuggen** auf **Debuggen beenden**, um die Ausführung zu beenden.  
+2. Klicken Sie vor dem Fortfahren im Menü **Debuggen** auf **Debuggen beenden**, um die Ausführung zu beenden.  
   
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Verwenden des Fensters Parallele Aufgaben und der Aufgabenansicht des Fensters Parallele Stapel  
  Es empfiehlt sich, vor dem Fortfahren die früheren Prozeduren abzuschließen.  
   
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>So starten Sie die Anwendung neu, bis der erste Haltepunkt erreicht wird  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Debuggen starten**, und warten Sie, bis der erste Breakpoint erreicht wird.  
+1. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**, und warten Sie, bis der erste Breakpoint erreicht wird.  
   
-2.  Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Threads**. Docken Sie das Fenster **Threads** am unteren Rand von Visual Studio an.  
+2. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie dann auf **Threads**. Docken Sie das Fenster **Threads** am unteren Rand von Visual Studio an.  
   
-3.  Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie auf **Aufrufliste**. Docken Sie das Fenster **Aufrufliste** am unteren Rand von Visual Studio an.  
+3. Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie auf **Aufrufliste**. Docken Sie das Fenster **Aufrufliste** am unteren Rand von Visual Studio an.  
   
-4.  Doppelklicken Sie im Fenster **Threads** auf einen Thread, um diesen als aktuellen Thread festzulegen. Aktuelle Threads sind durch einen gelben Pfeil gekennzeichnet. Wenn Sie den aktuellen Thread ändern, werden die anderen Fenster aktualisiert. Nun werden Aufgaben untersucht.  
+4. Doppelklicken Sie im Fenster **Threads** auf einen Thread, um diesen als aktuellen Thread festzulegen. Aktuelle Threads sind durch einen gelben Pfeil gekennzeichnet. Wenn Sie den aktuellen Thread ändern, werden die anderen Fenster aktualisiert. Nun werden Aufgaben untersucht.  
   
-5.  Auf der **Debuggen** Startmenü **Windows** , und klicken Sie dann auf **Parallele Aufgaben**. Die folgende Abbildung zeigt die **Parallele Aufgaben** Fenster.  
+5. Auf der **Debuggen** Startmenü **Windows** , und klicken Sie dann auf **Parallele Aufgaben**. Die folgende Abbildung zeigt die **Parallele Aufgaben** Fenster.  
   
      ![Vier mit Aufgaben im Fenster "Parallele Aufgaben"](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
   
@@ -225,7 +225,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>So setzen Sie die Ausführung bis zum zweiten Haltepunkt fort  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum zweiten Breakpoint fortzusetzen.  
+1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum zweiten Breakpoint fortzusetzen.  
   
      Zuvor die **Status** Artikel haben Sie alle Aufgaben ausgeführt, aber nun werden zwei Aufgaben wartet. Aufgaben können aus vielen anderen Gründen blockiert werden. Zeigen Sie in der Spalte **Status** auf eine wartende Aufgabe, um den Grund für ihre Blockierung anzuzeigen. In der folgenden Abbildung wartet beispielsweise Aufgabe 3 auf Aufgabe 4.  
   
@@ -253,7 +253,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>So setzen Sie die Ausführung bis zum dritten Haltepunkt fort  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum dritten Breakpoint fortzusetzen.  
+1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum dritten Breakpoint fortzusetzen.  
   
      Eine neue Aufgabe, Aufgabe 5, wird nun ausgeführt, und Aufgabe 4 ist nun wartend. Sie können dies überprüfen, indem Sie im Fenster **Status** mit dem Mauszeiger auf die wartende Aufgabe zeigen. In der **übergeordneten** Spalte, beachten Sie, dass Aufgabe 4 ist das übergeordnete Element von Aufgabe 5.  
   
@@ -273,7 +273,7 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>So setzen Sie die Ausführung bis zum vierten Haltepunkt fort  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum dritten Breakpoint fortzusetzen. Klicken Sie auf den Spaltenheader **ID**, um die Einträge nach ID zu sortieren. Die Anzeige entspricht der folgenden Abbildung:  
+1. Klicken Sie im Menü **Debuggen** auf **Weiter**, um die Ausführung bis zum dritten Breakpoint fortzusetzen. Klicken Sie auf den Spaltenheader **ID**, um die Einträge nach ID zu sortieren. Die Anzeige entspricht der folgenden Abbildung:  
   
      ![Aufgaben in 4 Zuständen im Fenster "Parallele Stapel"](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
   

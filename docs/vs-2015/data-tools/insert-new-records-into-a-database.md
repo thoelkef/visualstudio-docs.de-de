@@ -20,17 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043135"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter.Update` Methode oder eines der TableAdapter-DBDirect-Methoden (insbesondere die `TableAdapter.Insert` Methode).
   
  Wenn Ihre Anwendung TableAdapters nicht verwendet werden, können Sie Befehlsobjekte verwenden (z. B. <xref:System.Data.SqlClient.SqlCommand>) zum Einfügen neuer Datensätze in der Datenbank.  
@@ -63,7 +62,7 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe der TableAdapter.Insert-Methode  
   
--   Rufen Sie die `Insert` -Methode, die Werte für jede Spalte als Parameter übergeben.  
+- Rufen Sie die `Insert` -Methode, die Werte für jede Spalte als Parameter übergeben.  
   
     > [!NOTE]
     >  Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.  
@@ -78,7 +77,7 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe von Befehlsobjekten  
   
--   Erstellen Sie ein neues Befehlsobjekt aus, und legen Sie dann die `Connection`, `CommandType`, und `CommandText` Eigenschaften.  
+- Erstellen Sie ein neues Befehlsobjekt aus, und legen Sie dann die `Connection`, `CommandType`, und `CommandText` Eigenschaften.  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

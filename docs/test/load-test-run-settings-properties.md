@@ -1,5 +1,5 @@
 ---
-title: Laden von Laufzeiteinstellungen
+title: Laden von Testlaufeinstellungen
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,20 +8,20 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785896"
 ---
 # <a name="load-test-run-settings-properties"></a>Eigenschaften von Laufzeiteinstellungen für Auslastungstests
 
-Mit den Laufzeiteinstellungen eines Auslastungstests wird eine Vielzahl anderer Einstellungen festgelegt, einschließlich der Dauer des Tests, der Detailstufe der Ergebniserfassung und der während des Testlaufs erfassten Indikatorensätze. Sie können für jeden Auslastungstest mehrere Laufzeiteinstellungen erstellen und speichern. Anschließend können Sie eine bestimmte Einstellung auswählen, die beim Ausführen des Tests verwendet werden soll. Eine Ausgangseinstellung für Testläufe wird beim Erstellen des Auslastungstests mit dem **neuen Auslastungstest-Assistenten** zum Auslastungstest hinzugefügt.
+Mit den Testlaufeinstellungen eines Auslastungstests wird eine Vielzahl anderer Einstellungen festgelegt, einschließlich der Dauer des Tests, der Detailstufe der Ergebniserfassung und der während des Testlaufs erfassten Indikatorensätze. Sie können für jeden Auslastungstest mehrere Testlaufeinstellungen erstellen und speichern. Anschließend können Sie eine bestimmte Einstellung auswählen, die beim Ausführen des Tests verwendet werden soll. Eine Ausgangseinstellung für Testläufe wird beim Erstellen des Auslastungstests mit dem **neuen Auslastungstest-Assistenten** zum Auslastungstest hinzugefügt.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-In den folgenden Tabellen werden die verschiedenen Eigenschaften für Auslastungslaufzeiteinstellungen beschrieben. Sie können diese Eigenschaften ändern, um bestimmte Auslastungstestanforderungen zu erfüllen.
+In den folgenden Tabellen werden die verschiedenen Eigenschaften für Auslastungstestlaufeinstellungen beschrieben. Sie können diese Eigenschaften ändern, um bestimmte Auslastungstestanforderungen zu erfüllen.
 
 Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen für Auslastungstests](../test/configure-load-test-run-settings.md).
 
@@ -29,7 +29,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 
 |Eigenschaft|Definition|
 |-|----------------|
-|**Beschreibung**|Eine Beschreibung der Laufzeiteinstellungen|
+|**Beschreibung**|Eine Beschreibung der Testlaufeinstellungen|
 |**Maximale Anzahl von Fehlern pro Typ**|Die maximale Anzahl von Fehlern pro Typ, die für den Auslastungstest gespeichert werden sollen.<br /><br /> Sie können diese Zahl bei Bedarf erhöhen, gleichzeitig erhöht sich dadurch aber auch die Größe und Verarbeitungszeit für das Auslastungstestergebnis.|
 |**Maximal im Bericht gemeldete Anforderungs-URLs**|Die maximale Anzahl eindeutiger Anforderungs-URLs für Webleistungstests, für die Ergebnisse in diesem Auslastungstest angezeigt werden.<br /><br /> Sie können diese Zahl bei Bedarf erhöhen, gleichzeitig erhöht sich dadurch aber auch die Größe und Verarbeitungszeit für das Auslastungstestergebnis.|
 |**Maximale Anzahl von Schwellenwertverletzungen**|Die maximale Anzahl von Schwellenwertverletzungen, die für diesen Auslastungstest gespeichert werden sollen.<br /><br /> Sie können diese Zahl bei Bedarf erhöhen, gleichzeitig erhöht sich dadurch aber auch die Größe und Verarbeitungszeit für das Auslastungstestergebnis.|
@@ -52,7 +52,7 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |Eigenschaft|Definition|
 |-|----------------|
 |**Speichertyp**|Die Art der Speicherung von Leistungsindikatoren, die in einem Auslastungstest abgerufen werden. Dies sind die Optionen:<br /><br /> -   **Datenbank:** Erfordert eine SQL-Datenbank mit einem **Auslastungstest-Ergebnisspeicher**.<br />-   **Keine**.|
-|**Speicher für Details der zeitlichen Steuerung**|Hiermit wird festgelegt, welche Details im **Auslastungstest-Ergebnisspeicher** gespeichert werden. Es stehen drei Werte zur Verfügung:<br /><br /> -   **AllIndividualDetails:** Einzelne zeitliche Steuerungswerte werden für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, im **Auslastungstest-Ergebnisspeicher** erfasst und gespeichert. Dieser Wert ist erforderlich, wenn Sie beabsichtigen, das **Diagramm für Aktivitäten virtueller Benutzer** im **Auslastungstest-Analyzer** zu verwenden.<br />     Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Keine:** Es werden keine einzelnen zeitlichen Steuerungswerte erfasst. Dies ist der Standardwert für Visual Studio 2013 Update 4 und höhere Releases.<br />-   **StatisticsOnly:** Statt der einzelnen zeitlichen Steuerungswerte für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, werden im **Auslastungstest-Ergebnisspeicher** nur Statistiken erfasst und gespeichert.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
+|**Speicher für Details der zeitlichen Steuerung**|Hiermit wird festgelegt, welche Details im **Auslastungstest-Ergebnisspeicher** gespeichert werden. Es stehen drei Werte zur Verfügung:<br /><br /> -   **AllIndividualDetails:** Einzelne zeitliche Steuerungswerte werden für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, im **Auslastungstest-Ergebnisspeicher** erfasst und gespeichert. Dieser Wert ist erforderlich, wenn Sie beabsichtigen, das **Diagramm für Aktivitäten virtueller Benutzer** im **Auslastungstest-Analyzer** zu verwenden.<br />     Weitere Informationen finden Sie unter [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Keine:** Es werden keine einzelnen zeitlichen Steuerungswerte erfasst. Dies ist der Standardwert für Visual Studio 2013 Update 4 und höhere Versionen.<br />-   **StatisticsOnly:** Statt der einzelnen zeitlichen Steuerungswerte für alle Tests, Transaktionen und Seiten, die während des Auslastungstests ausgeführt bzw. ausgegeben wurden, werden im **Auslastungstest-Ergebnisspeicher** nur Statistiken erfasst und gespeichert.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
 
 ## <a name="sql-tracing-properties"></a>Eigenschaften der SQL-Ablaufverfolgung
 
@@ -88,30 +88,30 @@ Weitere Informationen finden Sie unter [Konfigurieren der Laufzeiteinstellungen 
 |**WebTest-Verbindungsmodell**|Dadurch wird die Verwendung von Verbindungen vom Auslastungstest-Agent zum Webserver für Webleistungstests gesteuert, die innerhalb eines Auslastungstests ausgeführt werden. Es sind drei Webleistungstest-Verbindungsmodelle verfügbar:<br /><br /> – Das Modell **Verbindungen pro Benutzer** simuliert das Verhalten eines Benutzers, der einen realen Browser verwendet. Wenn Internet Explorer 6 oder Internet Explorer 7 simuliert wird, verwendet jeder virtuelle Benutzer, der einen Webleistungstest ausführt, eine oder zwei dedizierte Verbindungen mit dem Webserver. Die erste Verbindung wird hergestellt, wenn im Webleistungstest die erste Anforderung ausgegeben wird. Eine zweite Verbindung wird möglicherweise verwendet, wenn eine Seite mehrere abhängige Anforderungen enthält. Diese Anforderungen werden mithilfe der beiden Verbindungen parallel ausgegeben. Diese Verbindungen werden für nachfolgende Anforderungen im Webleistungstest erneut verwendet. Die Verbindungen werden nach Beendigung des Webleistungstests getrennt. Ein Nachteil dieses Modells ist, dass die Anzahl von Verbindungen, die auf dem Agent-Computer geöffnet bleiben, sehr hoch sein kann (bis zum Zweifachen der Benutzerauslastung). Die Benutzerauslastung, die von einem einzelnen Auslastungstest-Agent gesteuert werden kann, wird daher durch die Ressourcen begrenzt, die zur Unterstützung dieser Verbindungen notwendig sind. Wenn Internet Explorer 8 simuliert wird, werden sechs gleichzeitige Verbindungen unterstützt.<br />– Beim Modell **Verbindungspool** werden die Ressourcen auf dem Auslastungstest-Agent geschont, indem Verbindungen zum Webserver von mehreren virtuellen Benutzern von Webleistungstests gemeinsam verwendet werden. Wenn die Benutzerauslastung die Größe des Verbindungspools übersteigt, werden Verbindungen für die Webleistungstests, die von verschiedenen virtuellen Benutzern ausgeführt werden, gemeinsam verwendet. Dies bedeutet, dass ein Webleistungstest möglicherweise mit dem Auslösen einer Anforderung warten muss, wenn die Verbindung von einem anderen Webleistungstest genutzt wird. Die durchschnittliche Wartezeit für das Senden von Anforderungen durch einen Webleistungstest wird vom Leistungsindikator für die durchschnittliche Verbindungswartezeit des Auslastungstests aufgezeichnet. Dieser Wert sollte weniger als die durchschnittliche Antwortzeit für eine Seite betragen. Ist dies nicht der Fall, ist die Größe des Verbindungspools wahrscheinlich zu klein.<br />– Beim Modell **Verbindung pro Testiteration** wird für jede Testiteration eine dedizierte Verbindung verwendet.|
 |**WebTest-Verbindungspoolgröße**|Gibt die maximale Anzahl von Verbindungen zwischen dem Auslastungstest-Agent und dem Webserver an. Dies gilt nur für das Modell **Verbindungspool**.|
 
-##  <a name="change-run-setting-properties"></a>Ändern der Eigenschaften von Laufzeiteinstellungen
- Sie können dem Auslastungstest weitere Laufzeiteinstellungen mit anderen Eigenschafteneinstellungen hinzufügen, damit Sie den Auslastungstest unter anderen Bedingungen ausführen können. Sie können z. B. eine neue Testeinstellung hinzufügen und eine andere Samplingrate verwenden oder eine längere Ausführungsdauer angeben. Sie können nur jeweils eine Testlaufeinstellung verwenden und müssen diese als aktiv markieren. Ein Beispiel finden Sie unter [Gewusst wie: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+## <a name="change-run-setting-properties"></a>Ändern der Eigenschaften von Laufzeiteinstellungen
+ Sie können dem Auslastungstest weitere Testlaufeinstellungen mit anderen Eigenschafteneinstellungen hinzufügen, damit Sie den Auslastungstest unter anderen Bedingungen ausführen können. Sie können z. B. eine neue Testeinstellung hinzufügen und eine andere Samplingrate verwenden oder eine längere Ausführungsdauer angeben. Sie können nur jeweils eine Testlaufeinstellung verwenden und müssen diese als aktiv markieren. Ein Beispiel finden Sie unter [Gewusst wie: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-### <a name="to-change-run-settings"></a>So ändern Sie Laufzeiteinstellungen
+### <a name="to-change-run-settings"></a>So ändern Sie Testlaufeinstellungen
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
-2.  Erweitern Sie den Ordner **Laufzeiteinstellungen**.
+2. Erweitern Sie den Ordner **Laufzeiteinstellungen**.
 
-3.  Klicken Sie auf einen **Laufzeiteinstellungen**-Knoten.
+3. Klicken Sie auf einen **Laufzeiteinstellungen**-Knoten.
 
-4.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+4. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Das **Eigenschaftenfenster** wird mit den Eigenschaften für die ausgewählte Laufzeiteinstellung angezeigt.
 
-5.  Verwenden Sie das **Eigenschaftenfenster**, um die Laufzeiteinstellungen zu ändern. Ändern Sie beispielsweise die Testlaufdauer in **00:05:00**, um den Test fünf Minuten lang auszuführen.
+5. Verwenden Sie das **Eigenschaftenfenster**, um die Laufzeiteinstellungen zu ändern. Ändern Sie beispielsweise die Testlaufdauer in **00:05:00**, um den Test fünf Minuten lang auszuführen.
 
     > [!NOTE]
     > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
-6.  Speichern Sie den Auslastungstest, wenn Sie das Ändern der Eigenschaften abgeschlossen haben. Klicken Sie im Menü **Datei** auf **Speichern**.
+6. Speichern Sie den Auslastungstest, wenn Sie das Ändern der Eigenschaften abgeschlossen haben. Klicken Sie im Menü **Datei** auf **Speichern**.
 
 > [!NOTE]
-> Zu den Laufzeiteinstellungen gehören auch die Indikatorensatzzuordnungen. Weitere Informationen finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+> Zu den Testlaufeinstellungen gehören auch die Indikatorensatzzuordnungen. Weitere Informationen finden Sie unter [Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="see-also"></a>Siehe auch
 

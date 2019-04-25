@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088625"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens
   In diesem Beispiel wird ein Verweis auf einen benannten benutzerdefinierten Ordner und zeigt dann den Inhalt des Ordners.
@@ -30,7 +30,7 @@ ms.locfileid: "56620888"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Beispiel benötigen Sie Folgendes:
 
--   Ein Ordner mit dem Namen TestFolder.
+- Ein Ordner mit dem Namen TestFolder.
 
 ## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Ordnern](../vsto/working-with-folders.md)

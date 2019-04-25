@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ab342c2d038a0021d94858de916e66456622adb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086766"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Erstellen und Ausführen von Komponententests für Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Die Komponententesttools von Visual Studio 2012 Express für Windows 8 sind dara
 >  In den Themen in diesem Abschnitt wird die Funktionalität von Visual Studio 2012 Express für Windows 8 beschrieben. Visual Studio Ultimate, VS Premium und VS Professional stellen zusätzliche Funktionen für Komponententests bereit.
 >
 > - Mit VS Ultimate, VS Premium und VS Professional können Sie ein beliebiges Drittanbieter- oder Open Source-Komponententest-Framework verwenden, mit dem ein Add-On-Adapter für den Microsoft-Test-Explorer erstellt wurde. Sie können außerdem mit VS Ultimate und VS Premium Codeabdeckungsinformationen für Ihre Tests analysieren und anzeigen.
->   -   In VS Ultimate können Sie Ihre Tests nach jedem Build ausführen. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.
->   -   **JavaScript**. JavaScript-Komponententests sind über die IDE von Visual Studio Express für Windows 8 nicht verfügbar. In Visual Studio Professional, Premium und Ultimate sind JavaScript-Komponententest-Frameworks als Erweiterungen in der Visual Studio Gallery verfügbar. Sie können JavaScript-Code außerdem testen, indem Sie eins der eigenständigen Drittanbieter- oder Open-Source-JavaScript-Komponententest-Frameworks verwenden.
+>   - In VS Ultimate können Sie Ihre Tests nach jedem Build ausführen. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.
+>   - **JavaScript**. JavaScript-Komponententests sind über die IDE von Visual Studio Express für Windows 8 nicht verfügbar. In Visual Studio Professional, Premium und Ultimate sind JavaScript-Komponententest-Frameworks als Erweiterungen in der Visual Studio Gallery verfügbar. Sie können JavaScript-Code außerdem testen, indem Sie eins der eigenständigen Drittanbieter- oder Open-Source-JavaScript-Komponententest-Frameworks verwenden.
 >
 >   Weitere Informationen finden Sie unter [Komponententests für Codes](../test/unit-test-your-code.md) in der MSDN-Bibliothek.
 

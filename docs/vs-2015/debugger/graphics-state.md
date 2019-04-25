@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091784"
 ---
 # <a name="graphics-state"></a>Grafikzustand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
   
 ##### <a name="to-change-the-state-view"></a>So ändern Sie die Statusansicht  
   
--   Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.  
+- Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.  
   
-    -   **API-Eingabestatusansicht anzeigen**  
+    - **API-Eingabestatusansicht anzeigen**  
   
-    -   **Logische Statusansicht anzeigen**  
+    - **Logische Statusansicht anzeigen**  
   
-    -   **Angeheftete Statusansicht anzeigen**  
+    - **Angeheftete Statusansicht anzeigen**  
   
 > [!IMPORTANT]
 >  Sie müssen den Status in den Ansichten **API-Eingabestatus anzeigen** oder **Logischen Status anzeigen** anheften, damit er in der Ansicht **Angeheftete Statusansicht anzeigen** angezeigt wird.  
@@ -67,8 +67,8 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
   
 ##### <a name="to-pin-state-in-place"></a>So heften Sie einen Status an  
   
-1.  Suchen Sie den gewünschten Status im Statusfenster. Sie müssen möglicherweise einen Status auf höherer Ebene erweitern, um die Details zum gewünschten Status anzuzeigen.  
+1. Suchen Sie den gewünschten Status im Statusfenster. Sie müssen möglicherweise einen Status auf höherer Ebene erweitern, um die Details zum gewünschten Status anzuzeigen.  
   
-2.  Platzieren Sie den Cursor auf dem gewünschten Status. Eine Pinsymbol wird auf der linken Seite des Statuselements angezeigt.  
+2. Platzieren Sie den Cursor auf dem gewünschten Status. Eine Pinsymbol wird auf der linken Seite des Statuselements angezeigt.  
   
-3.  Klicken Sie auf das Pinsymbol, um das Statuselement anzuheften.
+3. Klicken Sie auf das Pinsymbol, um das Statuselement anzuheften.

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081228"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
   
 #### <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio  
   
-1.  Melden Sie sich mit einem Microsoft-Konto oder einem Unternehmenskonto bei Visual Studio 2015 an. Ihr Benutzername sollte oben rechts im Fenster angezeigt werden, etwa folgendermaßen:  
+1. Melden Sie sich mit einem Microsoft-Konto oder einem Unternehmenskonto bei Visual Studio 2015 an. Ihr Benutzername sollte oben rechts im Fenster angezeigt werden, etwa folgendermaßen:  
   
      ![Aktuell angemeldeter Benutzer](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Zugreifen auf Ihr Azure-Konto über das Dialogfeld "Verbundenen Dienst hinzufügen"  
   
-1.  Erstellen Sie ein Universal App-Projekt in C#.  
+1. Erstellen Sie ein Universal App-Projekt in C#.  
   
-2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Verbundener Dienst** aus. Der Assistent zum Hinzufügen eines verbundenen Diensts zeigt die Liste der Dienste in dem Azure-Konto an, das mit Ihrer Visual Studio-Anmelde-ID verknüpft ist. Sie müssen sich nicht separat bei Azure anmelden. Allerdings müssen Sie sich beim ersten Versuch, von einem bestimmten Computer auf die Ressourcen eines anderen Kontos zuzugreifen, bei diesem Konto anmelden.  
+2. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Verbundener Dienst** aus. Der Assistent zum Hinzufügen eines verbundenen Diensts zeigt die Liste der Dienste in dem Azure-Konto an, das mit Ihrer Visual Studio-Anmelde-ID verknüpft ist. Sie müssen sich nicht separat bei Azure anmelden. Allerdings müssen Sie sich beim ersten Versuch, von einem bestimmten Computer auf die Ressourcen eines anderen Kontos zuzugreifen, bei diesem Konto anmelden.  
   
     > [!WARNING]
-    >  Wenn Sie auf einem bestimmten Computer zum ersten Mal eine Store-App in Visual Studio 2015 erstellen, werden Sie aufgefordert, den Entwicklungsmodus für das Gerät zu aktivieren. Gehen Sie dazu auf Ihrem Computer zu Einstellungen |  **Updates und Sicherheit &#124; für Entwickler** auf Ihrem Computer. Weitere Informationen finden Sie unter [Aktivieren von Geräten für die Entwicklung](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    >  Wenn dies das erste Mal ist Sie eine Store-app in Visual Studio 2015 auf einem bestimmten Computer erstellen, werden Sie aufgefordert, Ihr Gerät Entwicklungsmodus zu aktivieren, indem Sie auf **Einstellungen &#124; . Updates und Sicherheit &#124; für Entwickler** auf Ihrem Computer. Weitere Informationen finden Sie unter [Aktivieren von Geräten für die Entwicklung](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
-###  <a name="access_azure"></a> Zugreifen auf Azure Active Directory in einem Webprojekt  
+### <a name="access_azure"></a> Zugreifen auf Azure Active Directory in einem Webprojekt  
  Azure AD unterstützt das einmalige Anmelden für Endbenutzer in ASP.NET MVC-Webanwendungen oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten: Benutzer mit Zugriff auf Ihre Active Directory-Domäne können ihre vorhandenen Azure AD-Konten verwenden, um eine Verbindung zu Ihren Webanwendungen herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden. Erstellen Sie eine Webanwendung (**Datei > Neues Projekt > C# > Cloud > ASP.NET-Webanwendung**), um diesen Vorgang in der Praxis zu testen. Wählen Sie im Dialogfeld „Neues ASP.NET-Projekt“ **Authentifizierung ändern**. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.  
   
  ![Dialogfeld „Authentifizierung ändern“ für ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

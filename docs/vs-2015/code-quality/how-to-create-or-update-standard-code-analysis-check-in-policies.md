@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58957713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053155"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Teamp
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Die Check-in Gruppenrichtlinienverwaltungs-Editor öffnen  
   
-1.  In Team Explorer mit der Maustaste den Namen des Teamprojekts, zeigen Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
+1. In Team Explorer mit der Maustaste den Namen des Teamprojekts, zeigen Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
   
-2.  In der **Quellcodeverwaltung** wählen Sie im Dialogfeld die **Eincheckrichtlinie** Registerkarte.  
+2. In der **Quellcodeverwaltung** wählen Sie im Dialogfeld die **Eincheckrichtlinie** Registerkarte.  
   
-3.  Führen Sie einen der folgenden Schritte aus:  
+3. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Klicken Sie auf **hinzufügen** zum Erstellen einer neuen Check-in-Richtlinie.  
+    - Klicken Sie auf **hinzufügen** zum Erstellen einer neuen Check-in-Richtlinie.  
   
-    -   Doppelklicken Sie auf die vorhandene **Codeanalyse** Element in der **Richtlinientyp** Liste, um die Richtlinie zu ändern.  
+    - Doppelklicken Sie auf die vorhandene **Codeanalyse** Element in der **Richtlinientyp** Liste, um die Richtlinie zu ändern.  
   
 ### <a name="to-set-policy-options"></a>Festlegen von Optionen  
   
--   Aktivieren Sie oder deaktivieren Sie die folgenden Optionen:  
+- Aktivieren Sie oder deaktivieren Sie die folgenden Optionen:  
   
     |Option|Beschreibung|  
     |------------|-----------------|  
@@ -58,19 +58,19 @@ Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Teamp
     |**C/C++-Codeanalyse erzwingen (/ analyze)**|Erfordert, dass alle C- oder C++-Projekte erstellt werden, mit dem / analyze-Compileroption, um die Codeanalyse ausgeführt wird, bevor sie eingecheckt werden können.|  
     |**Codeanalyse für verwalteten Code erzwingen**|Erfordert, dass alle verwalteten Projekte odeanalyse ausführen und zu erstellen, bevor sie eingecheckt werden können.|  
   
--  
+- 
   
 ### <a name="to-specify-a-managed-rule-set"></a>Um einen verwalteten Regelsatz anzugeben.  
   
--   Von der **diesen Regelsatz ausführen** aufzulisten, verwenden Sie eine der folgenden Methoden:  
+- Von der **diesen Regelsatz ausführen** aufzulisten, verwenden Sie eine der folgenden Methoden:  
   
-    -   Wählen Sie einen Microsoft-standard-Regelsatz.  
+    - Wählen Sie einen Microsoft-standard-Regelsatz.  
   
-    -   Klicken Sie zum Auswählen eines benutzerdefinierten Regelsatzes auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >**, und geben Sie dann auf den Versionskontrollpfad des Regelsatzes in der Quelle-Browser-Steuerelement. Die Syntax der einen Pfad für die Versionskontrolle ist:  
+    - Klicken Sie zum Auswählen eines benutzerdefinierten Regelsatzes auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >**, und geben Sie dann auf den Versionskontrollpfad des Regelsatzes in der Quelle-Browser-Steuerelement. Die Syntax der einen Pfad für die Versionskontrolle ist:  
   
-    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
+    - **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   Weitere Informationen zum Erstellen und Implementieren einer benutzerdefinierte Eincheckrichtlinie Regel festlegen, finden Sie unter [Implementieren von benutzerdefinierten Eincheckrichtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+    - Weitere Informationen zum Erstellen und Implementieren einer benutzerdefinierte Eincheckrichtlinie Regel festlegen, finden Sie unter [Implementieren von benutzerdefinierten Eincheckrichtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

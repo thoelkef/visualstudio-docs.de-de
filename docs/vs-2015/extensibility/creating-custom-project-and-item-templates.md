@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2e04ca6afaa8e5a290e6c2a3419bb4fa28fd46e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6875e13baa83d349020f50a3fe448a87ec5fd30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114820"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,55 +29,55 @@ Ab Visual Studio 2017, Überprüfung von benutzerdefinierten Projekt- und Elemen
 
 ## <a name="create-a-project-template"></a>Erstellen einer Projektvorlage
 
-1.  Erstellen Sie ein Projekt für die Projektvorlage aus. Finden Sie die Projektvorlage in das **neues Projekt** Dialogfeld in Visual Basic oder Visual C#- **Erweiterbarkeit** Ordner.
+1. Erstellen Sie ein Projekt für die Projektvorlage aus. Finden Sie die Projektvorlage in das **neues Projekt** Dialogfeld in Visual Basic oder Visual C#- **Erweiterbarkeit** Ordner.
 
      Die Vorlage generiert eine Klassendatei, ein Symbol, eine VSTEMPLATE-Datei, einer bearbeitbaren Projektdatei mit dem Namen ProjectTemplate.vbproj oder ProjectTemplate.csproj und einige Dateien, die in der Regel von anderen Projekttypen, eine solche "Resources.resx" Datei, ein "AssemblyInfo" generiert werden Datei und eine Einstellungsdatei. Jede Codedatei enthält allgemeine Ersetzen von Parametern an, falls zutreffend.
 
-2.  Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich. Entfernen Sie die Datei bearbeitet werden, der AssemblyInfo-Datei oder der VSTEMPLATE-Datei nicht.
+2. Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich. Entfernen Sie die Datei bearbeitet werden, der AssemblyInfo-Datei oder der VSTEMPLATE-Datei nicht.
 
-3.  Aktualisieren Sie die VSTEMPLATE-Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
+3. Aktualisieren Sie die VSTEMPLATE-Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
 
-4.  Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
+4. Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
 
-5.  Ändern Sie den generierten Inhalt nach Bedarf.
+5. Ändern Sie den generierten Inhalt nach Bedarf.
 
-6.  Erstellen Sie das Projekt.
+6. Erstellen Sie das Projekt.
 
      Visual Studio erstellt eine ZIP-Datei, die Ihre Vorlage enthält. Es wird nicht bereitgestellt, und es ist nicht verfügbar, in der experimentellen Instanz.
 
 ## <a name="create-an-item-template"></a>Erstellen Sie eine Elementvorlage
 
-1.  Erstellen Sie eine Elementvorlage-Projekt.
+1. Erstellen Sie eine Elementvorlage-Projekt.
 
      Die Vorlage generiert eine Klassendatei, ein Symbol, eine VSTEMPLATE-Datei und ein AssemblyInfo-Datei. Die Klassendatei enthält einige allgemeine Ersetzen von Parametern.
 
-2.  Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich.
+2. Hinzufügen und Entfernen von Elementen aus dem Projekt als für Ihr Projekt erforderlich.
 
-3.  Aktualisieren Sie die VSTEMPLATE-Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
+3. Aktualisieren Sie die VSTEMPLATE-Datei entsprechend alle Hinzufügungen und löschungen. Die [Projekt](../extensibility/project-element-visual-studio-templates.md) -Element muss enthalten eine [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) -Element für jede Datei, die in der Vorlage enthalten sein.
 
-4.  Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
+4. Ändern Sie Ihre Codedateien und anderem benutzerseitigen Inhalt, und fügen Sie entsprechende parameterersetzungen.
 
-5.  Generierten Inhalt nach Bedarf zu ändern.
+5. Generierten Inhalt nach Bedarf zu ändern.
 
-6.  Erstellen Sie das Projekt.
+6. Erstellen Sie das Projekt.
 
      Visual Studio erstellt eine komprimierte Datei, die Ihre Vorlage enthält. Es wird nicht bereitgestellt, und es ist nicht verfügbar, in der experimentellen Instanz.
 
 ## <a name="deploy-the-project-or-item-template"></a>Bereitstellen der Vorlage für Projekt oder Element
 
-1.  Erstellen eines VSIX-Projekts Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
+1. Erstellen eines VSIX-Projekts Weitere Informationen finden Sie unter [VSIX-Projektvorlage](../extensibility/vsix-project-template.md).
 
-2.  Festlegen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.
+2. Festlegen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.
 
-3.  Legen Sie das Projektvorlagenprojekt als Medienobjekt des VSIX-Projekts. Öffnen Sie die vsixmanifest-Datei. Wechseln Sie zu der **Assets** Registerkarte, und klicken Sie auf **neu**.
+3. Legen Sie das Projektvorlagenprojekt als Medienobjekt des VSIX-Projekts. Öffnen Sie die vsixmanifest-Datei. Wechseln Sie zu der **Assets** Registerkarte, und klicken Sie auf **neu**.
 
-    1.  Legen Sie die **Typ** Feld **Microsoft.VisualStudio.ProjectTemplate** oder **Microsoft.VisualStudio.ItemTemplate**.
+    1. Legen Sie die **Typ** Feld **Microsoft.VisualStudio.ProjectTemplate** oder **Microsoft.VisualStudio.ItemTemplate**.
 
-    2.  Wählen Sie für Quelle und das **ein Projekt in der aktuellen Projektmappe** aus, und wählen Sie dann auf das Projekt, das die Vorlage enthält.
+    2. Wählen Sie für Quelle und das **ein Projekt in der aktuellen Projektmappe** aus, und wählen Sie dann auf das Projekt, das die Vorlage enthält.
 
-4.  Erstellen Sie die Projektmappe, und drücken Sie F5. Die experimentelle Instanz angezeigt wird.
+4. Erstellen Sie die Projektmappe, und drücken Sie F5. Die experimentelle Instanz angezeigt wird.
 
-5.  Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei / neu / Projekt**) in den Visual C# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage, die in das Dialogfeld "Neues Element hinzufügen" aufgeführt (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).
+5. Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei / neu / Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage, die in das Dialogfeld "Neues Element hinzufügen" aufgeführt (in der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen / neues Element**).
 
 ## <a name="see-also"></a>Siehe auch
 

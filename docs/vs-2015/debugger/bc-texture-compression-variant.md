@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111232"
 ---
 # <a name="bc-texture-compression-variant"></a>BC-Texturkomprimierungsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Va
   
 - Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt beschreibt eine nicht geänderte Shaderressource. Das bedeutet:  
   
-  -   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
+  - Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
   
-  -   Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
+  - Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
   
-  -   Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
+  - Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
   
-  -   Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
+  - Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
   
 - Die ursprünglichen Daten werden beim Aufruf von `CreateTexture2D` bereitgestellt.  
   

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824190"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten
 
@@ -47,18 +47,18 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 
 ## <a name="to-remove-dependencies-from-projects"></a>So entfernen Sie Abhängigkeiten aus Projekten
 
-1.  Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
+1. Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
 
-2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
+2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
 
      Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.
 
     > [!NOTE]
     > Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.
 
-3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.
+3. Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.
 
-4.  Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
+4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051335"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Debuggen einer app, die nicht Teil von Visual Studio-Projektmappe (C++, C#, Visual Basic F#)
 
@@ -58,7 +58,7 @@ In diesen Fällen können Sie ein Visual Studio-EXE-Projekt für die app zu erst
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>So importieren Sie eine app in einer vorhandenen Visual Studio-Projektmappe
 
-1.  Mit einem C++- C#, oder wählen Sie die Visual Basic-Projektmappe in Visual Studio öffnen **Datei** > **hinzufügen** > **vorhandenes Projekt**.
+1. Mit einem C++, C#, oder wählen Sie die Visual Basic-Projektmappe in Visual Studio öffnen **Datei** > **hinzufügen** > **vorhandenes Projekt**.
 
 1. In der **geöffneten Projekt** wählen Sie im Dialogfeld **alle Projektdateien**, sofern nicht bereits in der Dropdownliste neben ausgewählt, **Dateiname**.
 

@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072635"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt.  
   
  Klicken Sie zum Öffnen dieser Seite im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie **Text-Editor** und **C/C++**, und klicken Sie dann auf **Erweitert**.  
@@ -74,19 +73,19 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
   
  Wird durch eine Summe aus den folgenden Optionen festgelegt:  
   
--   0 – Keine  
+- 0 – Keine  
   
--   1 – Allgemein  
+- 1 – Allgemein  
   
--   2 – Leerlauf  
+- 2 – Leerlauf  
   
--   4 – WorkItem  
+- 4 – WorkItem  
   
--   8 – IntelliSense  
+- 8 – IntelliSense  
   
--   16 – ACPerf  
+- 16 – ACPerf  
   
--   32 – ClassView  
+- 32 – ClassView  
   
 ## <a name="fallback-location"></a>Ausweichpfad  
  Der Ausweichpfad gibt an, wo die SDF- und IntelliSense-Unterstützungsdateien (beispielsweise iPCH) abgelegt werden, wenn der primäre Speicherort (dasselbe Verzeichnis wie die Projektmappe) nicht verwendet wird. Diese Situation kann auftreten, wenn der Benutzer keine Schreibberechtigungen für das Projektmappenverzeichnis hat, oder wenn sich das Projektmappenverzeichnis auf einem langsamen Gerät befindet. Der Standardausweichpfad befindet sich im temporären Verzeichnis des Benutzers.  

@@ -8,21 +8,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed137354ee43b923c5d1508a8c2d5ebe4f754f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042642"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Abrufen von Dienstinformationen aus dem einstellungsspeicher
 Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu finden oder um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
 
 ## <a name="to-list-the-available-services"></a>Die verfügbaren Dienste auflisten
 
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `FindServicesExtension` und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen `FindServicesCommand`. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FindServicesExtension` und fügen Sie dann einen benutzerdefinierten Befehl mit dem Namen `FindServicesCommand`. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  In *FindServicesCommand.cs*, fügen Sie die folgenden using-Anweisungen:
+2. In *FindServicesCommand.cs*, fügen Sie die folgenden using-Anweisungen:
 
     ```vb
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
     using System.Windows.Forms;
     ```
 
-3.  Der Konfigurationsspeicher für die Einstellungen zu erhalten, suchen Sie dann die untergeordnete Sammlung benannte Dienste. Diese Sammlung enthält alle verfügbaren Dienste an. In der `MenuItemCommand` -Methode, entfernen Sie den vorhandenen Code, und Ersetzen Sie ihn durch Folgendes:
+3. Der Konfigurationsspeicher für die Einstellungen zu erhalten, suchen Sie dann die untergeordnete Sammlung benannte Dienste. Diese Sammlung enthält alle verfügbaren Dienste an. In der `MenuItemCommand` -Methode, entfernen Sie den vorhandenen Code, und Ersetzen Sie ihn durch Folgendes:
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -50,9 +50,9 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
     }
     ```
 
-4.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.
 
-5.  In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.
+5. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.
 
      Ein Nachrichtenfeld mit allen Diensten sollte angezeigt werden.
 
@@ -61,7 +61,7 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
 ## <a name="find-a-specific-service"></a>Suchen Sie nach einer bestimmten Dienst
  Sie können auch die <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> Methode, um zu bestimmen, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
 
-1.  Suchen Sie in der MenuItemCallback des Projekts, das Sie im vorherigen Verfahren erstellt haben, den Konfigurationsspeicher für die Einstellungen für die `Services` Sammlung, die die untergeordnete Sammlung mit dem Namen, durch die GUID des Diensts enthält. In diesem Fall sucht es nach den Hilfe-Dienst.
+1. Suchen Sie in der MenuItemCallback des Projekts, das Sie im vorherigen Verfahren erstellt haben, den Konfigurationsspeicher für die Einstellungen für die `Services` Sammlung, die die untergeordnete Sammlung mit dem Namen, durch die GUID des Diensts enthält. In diesem Fall sucht es nach den Hilfe-Dienst.
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -76,8 +76,8 @@ Sie können den einstellungsspeicher verwenden, um alle verfügbaren Dienste zu 
     }
     ```
 
-2.  Erstellen Sie das Projekt, und starten Sie das Debugging.
+2. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
-3.  In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.
+3. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **aufrufen FindServicesCommand**.
 
      Daraufhin sollte eine Meldung mit dem Text **Hilfe-Dienst verfügbar:** gefolgt von **"true"** oder **"false"**. Um diese Einstellung zu überprüfen, können Sie einen Registrierungs-Editor verwenden, wie in den vorherigen Schritten gezeigt.

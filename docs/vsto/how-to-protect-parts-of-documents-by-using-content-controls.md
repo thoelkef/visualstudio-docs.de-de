@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f99494539fc89e41be44f535289100e4af49b03
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103513"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen
   Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie, dass Benutzer Inhalte in diesem Teil des Dokuments ändern oder löschen. Es gibt mehrere Möglichkeiten, Teile eines Microsoft Office Word-Dokuments mithilfe von Inhaltssteuerelementen zu schützen.
@@ -34,26 +34,26 @@ ms.locfileid: "56643612"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-##  <a name="EditDeleteControl"></a> Schützen Sie ein ContentControl-Element
+## <a name="EditDeleteControl"></a> Schützen Sie ein ContentControl-Element
  Sie können verhindern, dass Benutzer bearbeiten oder löschen ein ContentControl-Element, durch Festlegen von Eigenschaften des Steuerelements in einem Projekt auf Dokumentebene zur Entwurfszeit oder zur Laufzeit.
 
  Sie können auch Inhaltssteuerelemente schützen, die Sie einem Dokument zur Laufzeit hinzufügen, indem Sie ein VSTO-Add-In-Projekt verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>So schützen Sie ein Inhaltssteuerelement zur Entwurfszeit
 
-1.  Wählen Sie in dem im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer gehosteten Dokument das Inhaltssteuerelement aus, das Sie schützen möchten.
+1. Wählen Sie in dem im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer gehosteten Dokument das Inhaltssteuerelement aus, das Sie schützen möchten.
 
-2.  In der **Eigenschaften** Fenster legen Sie eine oder beide der folgenden Eigenschaften:
+2. In der **Eigenschaften** Fenster legen Sie eine oder beide der folgenden Eigenschaften:
 
-    -   Um zu verhindern, dass Benutzer das Steuerelement bearbeiten, legen Sie **LockContents** zu **"true"**.
+    - Um zu verhindern, dass Benutzer das Steuerelement bearbeiten, legen Sie **LockContents** zu **"true"**.
 
-    -   Um zu verhindern, dass Benutzer das Steuerelement löschen, legen Sie **LockContentControl** zu **"true"**.
+    - Um zu verhindern, dass Benutzer das Steuerelement löschen, legen Sie **LockContentControl** zu **"true"**.
 
-3.  Klicken Sie auf **OK**.
+3. Klicken Sie auf **OK**.
 
 ### <a name="to-protect-a-content-control-at-runtime"></a>Um ein Inhaltssteuerelement zur Laufzeit zu schützen.
 
-1.  Festlegen der `LockContents` Eigenschaft des Inhaltssteuerelements auf **"true"** zu verhindern, dass Benutzer das Steuerelement bearbeiten, und legen Sie die `LockContentControl` Eigenschaft **"true"** verhindert, dass Benutzer das Steuerelement löschen.
+1. Festlegen der `LockContents` Eigenschaft des Inhaltssteuerelements auf **"true"** zu verhindern, dass Benutzer das Steuerelement bearbeiten, und legen Sie die `LockContentControl` Eigenschaft **"true"** verhindert, dass Benutzer das Steuerelement löschen.
 
      Das folgende Codebeispiel veranschaulicht die Verwendung der <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A>-Eigenschaft und <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A>-Eigenschaft zwei verschiedener <xref:Microsoft.Office.Tools.Word.RichTextContentControl>-Objekte in einem Projekt auf Dokumentebene. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `AddProtectedContentControls` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.
 
@@ -68,29 +68,29 @@ ms.locfileid: "56643612"
 ## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>Schützen Sie einen Teil eines Dokuments, die nicht in einem Inhaltssteuerelement enthalten ist
  Sie können verhindern, dass Benutzer einen Bereich eines Dokuments ändern, indem Sie ihn in <xref:Microsoft.Office.Tools.Word.GroupContentControl> einfügen. Dies ist in den folgenden Szenarien nützlich:
 
--   Sie möchten einen Bereich schützen, der keine Inhaltssteuerelemente enthält.
+- Sie möchten einen Bereich schützen, der keine Inhaltssteuerelemente enthält.
 
--   Sie möchten einen Bereich schützen, der bereits Inhaltssteuerelemente enthält, während der Text oder andere Elemente, die Sie schützen möchten, nicht in den Inhaltssteuerelementen enthalten sind.
+- Sie möchten einen Bereich schützen, der bereits Inhaltssteuerelemente enthält, während der Text oder andere Elemente, die Sie schützen möchten, nicht in den Inhaltssteuerelementen enthalten sind.
 
 > [!NOTE]
 >  Wenn Sie ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> erstellen, das eingebettete Inhaltssteuerelemente enthält, sind die eingebetteten Inhaltssteuerelemente nicht automatisch geschützt. Um zu verhindern, dass Benutzer ein eingebettetes Inhaltssteuerelement bearbeiten, verwenden Sie die **LockContents** -Eigenschaft des Steuerelements.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>So schützen Sie einen Bereich eines Dokuments zur Entwurfszeit
 
-1.  Wählen Sie in dem im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer gehosteten Dokument den Bereich aus, den Sie schützen möchten.
+1. Wählen Sie in dem im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Designer gehosteten Dokument den Bereich aus, den Sie schützen möchten.
 
-2.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
+2. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
     > [!NOTE]
     >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  In der **Steuerelemente** gruppieren, klicken Sie auf die **Gruppe** Dropdown-Schaltfläche, und klicken Sie dann auf **Gruppe**.
+3. In der **Steuerelemente** gruppieren, klicken Sie auf die **Gruppe** Dropdown-Schaltfläche, und klicken Sie dann auf **Gruppe**.
 
      In der `ThisDocument`-Klasse in Ihrem Projekt wird automatisch ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> generiert, das den geschützten Bereich enthält. Ein Rahmen, der das Gruppensteuerelement stellt zur Entwurfszeit sichtbar ist, aber es gibt keinen sichtbaren Rahmen zur Laufzeit.
 
 ### <a name="to-protect-an-area-of-a-document-at-runtime"></a>So schützen Sie einen Bereich eines Dokuments zur Laufzeit
 
-1.  Wählen Sie den zu schützenden Bereich programmgesteuert aus, und rufen Sie dann die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A>-Methode auf, um <xref:Microsoft.Office.Tools.Word.GroupContentControl> zu erstellen.
+1. Wählen Sie den zu schützenden Bereich programmgesteuert aus, und rufen Sie dann die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A>-Methode auf, um <xref:Microsoft.Office.Tools.Word.GroupContentControl> zu erstellen.
 
      Im folgenden Codebeispiel für ein Projekt auf Dokumentebene wird dem ersten Absatz des Dokuments Text hinzugefügt, der erste Absatz ausgewählt und dann <xref:Microsoft.Office.Tools.Word.GroupContentControl> instanziiert. Um diesen Code auszuführen, fügen Sie ihn der `ThisDocument` -Klasse in Ihrem Projekt hinzu und rufen die `ProtectFirstParagraph` -Methode aus dem `ThisDocument_Startup` -Ereignishandler auf.
 

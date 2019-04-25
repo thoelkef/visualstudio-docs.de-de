@@ -6,17 +6,17 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076705"
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .imagemanifest-Datei für die Visual Studio-Image-Diensts und generiert einen Wrapper-Dateien für das Verweisen auf das Image-Manifest-Werte in C++, C#, VB oder VSCT-Dateien für Visual Studio-Erweiterungen. Dieses Tool generiert Wrapper-Dateien, die verwendet werden können, für anfordernde Images aus dem Visual Studio-Image-Dienst direkt oder über APIs die modulmanifest-Werte übergeben, wenn der Code eine eigene Benutzeroberfläche und-Rendering nicht behandelt.  
+Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .imagemanifest-Datei für die Visual Studio-Image-Diensts und generiert einen Wrapper-Dateien für das Verweisen auf das Image-Manifest-Werte in C++, c#, VB oder VSCT-Dateien für Visual Studio-Erweiterungen. Dieses Tool generiert Wrapper-Dateien, die verwendet werden können, für anfordernde Images aus dem Visual Studio-Image-Dienst direkt oder über APIs die modulmanifest-Werte übergeben, wenn der Code eine eigene Benutzeroberfläche und-Rendering nicht behandelt.  
   
 ## <a name="how-to-use-the-tool"></a>Gewusst wie: Verwenden Sie das tool  
  **Syntax**  
@@ -40,17 +40,17 @@ Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .im
   
  **Beispiele**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: Meine:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: Meine:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Hinweise  
   
--   Es wird empfohlen, dass Sie dieses Tool mit bildmanifesten verwenden, die vom Manifest aus Ressourcen Tool generiert wurden.  
+- Es wird empfohlen, dass Sie dieses Tool mit bildmanifesten verwenden, die vom Manifest aus Ressourcen Tool generiert wurden.  
   
--   Das Tool untersucht nur die Symbol-Einträge, die Code-Wrapper erstellt werden. Wenn einem bildmanifest keine Symbole enthält, werden der generierte Code Wrapper leer sein. Liegt ein Bild oder einen Satz von Bildern in das Image-Manifest, die keine Symbole verwenden, werden sie aus dem Codewrapper ausgeschlossen werden.  
+- Das Tool untersucht nur die Symbol-Einträge, die Code-Wrapper erstellt werden. Wenn einem bildmanifest keine Symbole enthält, werden der generierte Code Wrapper leer sein. Liegt ein Bild oder einen Satz von Bildern in das Image-Manifest, die keine Symbole verwenden, werden sie aus dem Codewrapper ausgeschlossen werden.  
   
 ## <a name="sample-output"></a>Beispielausgabe:  
  **C#-Wrapper**  

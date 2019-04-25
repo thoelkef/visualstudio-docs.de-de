@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f71a2f7b316c8257c5741e903bd54cb0288fdcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040995"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_WindowInteractions"></a> Fenster-Interaktionen
+## <a name="BKMK_WindowInteractions"></a> Fenster-Interaktionen
 
 ### <a name="overview"></a>Übersicht
  Die beiden im Hauptfenster-Typen, die in Visual Studio verwendet werden, Dokument-Editoren und Toolfenster. Seltene, aber möglich ist, sind große nicht modale Dialogfelder. Obwohl es sich alle in der Shell nicht modale handelt, sind ihre Muster grundlegend. Dieses Thema behandelt die Differenz zwischen Dokumentfenster und Toolfenster nicht modale Dialogfelder. Modales Dialogfeld Muster finden Sie im [Dialogfelder](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -40,24 +40,24 @@ ms.locfileid: "58961461"
 |**Instanzen**|*Mit mehreren Instanzen*<br /><br /> Einige Editoren können zur gleichen Zeit und verschiedene Dateien bearbeiten, geöffnet sein können, während einige Editoren auch die gleiche Datei in mehrere Editoren geöffnet sein können (mithilfe der **Fenster > Neues Fenster** Befehl).<br /><br /> Ein einzigen Editor möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer) bearbeiten.|*Einzelnen oder mehreren Instanzen*<br /><br /> Inhalt ändern, um widerzuspiegeln Kontext (wie in den Eigenschaften-Browser) oder mithilfe von Push übertragen Fokus/Kontext zu anderen Fenstern (Aufgabenliste, Projektmappen-Explorer).<br /><br /> Sowohl mit mehreren Instanzen als auch Einzelinstanz-Toolfenster sollte mit das aktive Fenster verknüpft sein, es sei denn, es ist ein guter Grund nicht zu.|*Einzel-Instanz*|
 |**Beispiele**|**Text-Editoren**, z. B. Code-Editor<br /><br /> **Entwurfsoberflächen**, z. B. einen Formular-Designer oder eine Oberfläche für die Modellierung<br /><br /> **Steuern des Layouts für Dialogfelder ähnlich**, z. B. der Manifest-Designer|Die **Projektmappen-Explorer** bietet eine Lösung und innerhalb der Projektmappe enthaltenen Projekte<br /><br /> Die **Server-Explorer** wird eine hierarchische Ansicht von Servern und -Verbindungen, die der Benutzer entscheidet, in das Fenster zu öffnen. Öffnen ein Objekt aus der Datenbankhierarchie, z. B. eine Abfrage ein Dokumentfenster geöffnet und ermöglicht dem Benutzer, die Abfrage zu bearbeiten.<br /><br /> Die **Eigenschaftenbrowser** werden Eigenschaften für das Objekt ausgewählt, entweder in einem Dokumentfenster oder ein anderes Toolfenster angezeigt. Die Eigenschaften werden angezeigt, entweder in einer hierarchischen Rasteransicht oder komplexen-ähnliches Dialogfeld-Steuerelemente und ermöglicht dem Benutzer, die Werte für diese Eigenschaften festzulegen.||
 
-##  <a name="BKMK_ToolWindows"></a> Toolfenster
+## <a name="BKMK_ToolWindows"></a> Toolfenster
 
 ### <a name="overview"></a>Übersicht
  Toolfenster unterstützen die Arbeit des Benutzers, das im Dokumentfenster ausgeführt wird. Sie können verwendet werden, um eine Hierarchie anzuzeigen, die eine grundlegende Stammobjekt darstellt, die Visual Studio bereitstellt, und bearbeiten können.
 
  Wenn ein neues Toolfenster in der IDE in Betracht ziehen, sollten Autoren:
 
--   Vorhandene Toolfenster Aufgabe geeignete verwenden und keine neuen erstellen mit ähnlichen Funktionen. Neue Toolfenster sollte nur erstellt werden, wenn sie bieten ein deutlich abweichende "Tool" oder eine Funktionalität, die in ein ähnliches Fenster, oder indem Sie ein vorhandenes Fenster in einem tabellenpivotierung Hub umwandeln kann nicht integriert werden.
+- Vorhandene Toolfenster Aufgabe geeignete verwenden und keine neuen erstellen mit ähnlichen Funktionen. Neue Toolfenster sollte nur erstellt werden, wenn sie bieten ein deutlich abweichende "Tool" oder eine Funktionalität, die in ein ähnliches Fenster, oder indem Sie ein vorhandenes Fenster in einem tabellenpivotierung Hub umwandeln kann nicht integriert werden.
 
--   Verwenden Sie eine standardmäßige Befehlsleiste aus, wenn erforderlich, am oberen Rand des Toolfensters.
+- Verwenden Sie eine standardmäßige Befehlsleiste aus, wenn erforderlich, am oberen Rand des Toolfensters.
 
--   Mit Mustern, die bereits in anderen Toolfenstern für die Steuerelement-Präsentation und Tastatur Navigation konsistent sein.
+- Mit Mustern, die bereits in anderen Toolfenstern für die Steuerelement-Präsentation und Tastatur Navigation konsistent sein.
 
--   Steuerelement-Präsentation in andere Toolfenster konsistent sein.
+- Steuerelement-Präsentation in andere Toolfenster konsistent sein.
 
--   Dokumentspezifische Toolfenster sollte automatisch sichtbar nach Möglichkeit sein, damit sie angezeigt werden, wenn nur das übergeordnete Dokument aktiviert ist.
+- Dokumentspezifische Toolfenster sollte automatisch sichtbar nach Möglichkeit sein, damit sie angezeigt werden, wenn nur das übergeordnete Dokument aktiviert ist.
 
--   Stellen Sie sicher, dass ihre Inhalte Fenster über die Tastatur (Support-unten-Tasten) navigierbar ist.
+- Stellen Sie sicher, dass ihre Inhalte Fenster über die Tastatur (Support-unten-Tasten) navigierbar ist.
 
 #### <a name="tool-window-states"></a>Status für Toolfenster
  Visual Studio-Toolfenster müssen die verschiedenen Zustände, von die einige Benutzer (z. B. das Feature für Automatisches Ausblenden) aktiviert sind. Andere Zustände, wie z. B. automatisch sichtbar, können Sie Toolfenster im richtigen Kontext angezeigt werden soll und auszublenden, wenn Sie nicht benötigt. Es gibt fünf Status für Toolfenster insgesamt.
@@ -131,7 +131,7 @@ ms.locfileid: "58961461"
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Register||
 |**Debugger:** eine Gruppe von Windows für Debuggingaufgaben ausführen und Überwachen von Aktivitäten|Threads||
 
-##  <a name="BKMK_DocumentEditorConventions"></a> Dokument-Editor-Konventionen
+## <a name="BKMK_DocumentEditorConventions"></a> Dokument-Editor-Konventionen
 
 ### <a name="document-interactions"></a>Dokument-Interaktionen
  Die "document gut" ist der größte Bereich in der IDE und ist, in denen der Benutzer in der Regel ihre Aufmerksamkeit liegt der Schwerpunkt für die Durchführung ihrer Aufgaben, die von ergänzenden Toolfenster unterstützt. Dokument-Editoren stellen die grundlegenden Arbeitseinheiten, die der Benutzer öffnet und speichert in Visual Studio dar. Behalten sie eine starke Objektidentität Auswahl mit Projektmappen-Explorer oder in anderen Fenstern für die aktive Hierarchie verknüpft. Der Benutzer sollte sein können, zeigen Sie auf einen dieser Hierarchie-Fenster, und wissen, wo das Dokument enthalten ist und dessen Beziehung zu einem der Projektmappe das Projekt oder einem anderen Stammobjekt, die von einem Visual Studio-Paket bereitgestellt.
@@ -140,21 +140,21 @@ ms.locfileid: "58961461"
 
 #### <a name="common-interactions-for-the-document-well"></a>Allgemeine Aktivitäten, die für das Dokument gut
 
--   Verwalten einer konsistenten Interaktionsmodell in der allgemeinen **neue Datei** und **geöffnete Datei** auftritt.
+- Verwalten einer konsistenten Interaktionsmodell in der allgemeinen **neue Datei** und **geöffnete Datei** auftritt.
 
--   Aktualisieren Sie verwandten Funktionen im zugehörigen Fenster und Menüs, wenn das Dokumentfenster geöffnet wird.
+- Aktualisieren Sie verwandten Funktionen im zugehörigen Fenster und Menüs, wenn das Dokumentfenster geöffnet wird.
 
--   Befehle im Menü werden entsprechend integriert allgemeine Menüs wie z. B. **bearbeiten**, **Format**, und **Ansicht** Menüs. Wenn eine beträchtliche Menge an spezielle Befehle verfügbar sind, kann ein neues Menü der angezeigt wird, nur, wenn das Dokument den Fokus besitzt erstellt werden.
+- Befehle im Menü werden entsprechend integriert allgemeine Menüs wie z. B. **bearbeiten**, **Format**, und **Ansicht** Menüs. Wenn eine beträchtliche Menge an spezielle Befehle verfügbar sind, kann ein neues Menü der angezeigt wird, nur, wenn das Dokument den Fokus besitzt erstellt werden.
 
--   Eine eingebettete Symbolleiste kann am oberen Rand der Editor platziert werden. Dies empfiehlt sich, dass eine separate Symbolleiste, die außerhalb des Editors angezeigt wird.
+- Eine eingebettete Symbolleiste kann am oberen Rand der Editor platziert werden. Dies empfiehlt sich, dass eine separate Symbolleiste, die außerhalb des Editors angezeigt wird.
 
--   Immer eine Auswahl im Projektmappen-Explorer oder ähnliche aktiv verwalten Fenster "Aufrufhierarchie".
+- Immer eine Auswahl im Projektmappen-Explorer oder ähnliche aktiv verwalten Fenster "Aufrufhierarchie".
 
--   Durch Doppelklicken auf ein Dokument im Projektmappen-Explorer sollten dieselbe Aktion wie ausführen **öffnen**.
+- Durch Doppelklicken auf ein Dokument im Projektmappen-Explorer sollten dieselbe Aktion wie ausführen **öffnen**.
 
--   Wenn Sie mehrere Editoren auf einem Dokument verwendet werden kann, muss der Benutzer außer Kraft setzen oder Zurücksetzen der Standardaktion für ein bestimmtes Dokument mit werden die **Öffnen mit** im Dialogfeld, indem Sie mit der rechten Maustaste auf die Datei und auswählen **öffnen Mit** aus dem Kontextmenü.
+- Wenn Sie mehrere Editoren auf einem Dokument verwendet werden kann, muss der Benutzer außer Kraft setzen oder Zurücksetzen der Standardaktion für ein bestimmtes Dokument mit werden die **Öffnen mit** im Dialogfeld, indem Sie mit der rechten Maustaste auf die Datei und auswählen **öffnen Mit** aus dem Kontextmenü.
 
--   Erstellen Sie einen Assistenten in einem Dokument nicht gut.
+- Erstellen Sie einen Assistenten in einem Dokument nicht gut.
 
 ### <a name="user-expectations-for-specific-document-types"></a>Die Erwartungen der Benutzer für bestimmte Dokumenttypen
  Es gibt mehrere unterschiedliche Basistypen von Dokument-Editor, und jede hat eine Reihe von Interaktionen, die für andere Benutzer des gleichen Typs konsistent sind.
@@ -175,71 +175,71 @@ ms.locfileid: "58961461"
 
 #### <a name="text-based-editors"></a>Textbasierte Editoren
 
--   Das Dokument ist Teil der Vorschau Registerkartenmodell, mit dem für die Vorschau des Dokuments ohne ihn zu öffnen.
+- Das Dokument ist Teil der Vorschau Registerkartenmodell, mit dem für die Vorschau des Dokuments ohne ihn zu öffnen.
 
--   Die Struktur des Dokuments kann in einem Begleit-Toolfenster, z. B. eine dokumentgliederung dargestellt werden.
+- Die Struktur des Dokuments kann in einem Begleit-Toolfenster, z. B. eine dokumentgliederung dargestellt werden.
 
--   IntelliSense (falls zutreffend) verhält sich konsistent mit anderer Code-Editoren.
+- IntelliSense (falls zutreffend) verhält sich konsistent mit anderer Code-Editoren.
 
--   Popups oder Unterstützung Benutzeroberfläche führen Sie ähnliche Formate und Muster für die vorhandenen ähnlichen Benutzeroberfläche, wie z.B. CodeLens ein.
+- Popups oder Unterstützung Benutzeroberfläche führen Sie ähnliche Formate und Muster für die vorhandenen ähnlichen Benutzeroberfläche, wie z.B. CodeLens ein.
 
--   Meldungen zum Dokumentstatus werden in einem Infoleisten-Steuerelement am oberen Rand des Dokuments oder in der Statusleiste angezeigt.
+- Meldungen zum Dokumentstatus werden in einem Infoleisten-Steuerelement am oberen Rand des Dokuments oder in der Statusleiste angezeigt.
 
--   Der Benutzer muss sein können, Anpassen die Darstellung von Schriftarten und Farben, die mit einem **Tools > Optionen** Seite der freigegebenen Schriftarten und Farben Seite oder einen bestimmten in den Editor.
+- Der Benutzer muss sein können, Anpassen die Darstellung von Schriftarten und Farben, die mit einem **Tools > Optionen** Seite der freigegebenen Schriftarten und Farben Seite oder einen bestimmten in den Editor.
 
 #### <a name="design-surfaces"></a>Entwurfsoberflächen
 
--   Ein leerer Designer müssen ein Wasserzeichen auf der Oberfläche, der angibt, wie Sie beginnen.
+- Ein leerer Designer müssen ein Wasserzeichen auf der Oberfläche, der angibt, wie Sie beginnen.
 
--   Ansicht-switching-Mechanismen folgen vorhandenen Muster wie z. B. Doppelklicken Sie darauf, einen Code-Editor oder Registerkarten im Dokumentfenster ermöglicht die Interaktion mit beider Bereiche zu öffnen.
+- Ansicht-switching-Mechanismen folgen vorhandenen Muster wie z. B. Doppelklicken Sie darauf, einen Code-Editor oder Registerkarten im Dokumentfenster ermöglicht die Interaktion mit beider Bereiche zu öffnen.
 
--   Hinzufügen von Elementen auf der Entwurfsoberfläche sollte über die Toolbox ausgeführt werden, wenn ein Toolfenster für hochspezifische erforderlich ist.
+- Hinzufügen von Elementen auf der Entwurfsoberfläche sollte über die Toolbox ausgeführt werden, wenn ein Toolfenster für hochspezifische erforderlich ist.
 
--   Elemente auf der Oberfläche folgen ein Modells konsistent Auswahl.
+- Elemente auf der Oberfläche folgen ein Modells konsistent Auswahl.
 
--   Eingebettete Symbolleisten enthalten nur, die nicht häufig-Befehle für die spezifischen Befehle wie z. B. **speichern**.
+- Eingebettete Symbolleisten enthalten nur, die nicht häufig-Befehle für die spezifischen Befehle wie z. B. **speichern**.
 
 #### <a name="dialog-style-editors"></a>Dialogfeld-Stil-Editor
 
--   Steuern des Layouts sollten normale Dialogfeld Layoutkonventionen befolgt werden.
+- Steuern des Layouts sollten normale Dialogfeld Layoutkonventionen befolgt werden.
 
--   Registerkarten im Editor sollten nicht mit der Darstellung der Dokumentregisterkarten übereinstimmen, können sie einen der beiden zulässigen inneren Registerkarte Stile sollten übereinstimmen.
+- Registerkarten im Editor sollten nicht mit der Darstellung der Dokumentregisterkarten übereinstimmen, können sie einen der beiden zulässigen inneren Registerkarte Stile sollten übereinstimmen.
 
--   Benutzer müssen sich mit den Steuerelementen, die mithilfe der Tastatur interagieren können; entweder den Editor wird aktiviert und wechseln mit der Tabulatortaste durch Steuerelemente oder mithilfe von standardmäßigen mnemonischen Zeichen.
+- Benutzer müssen sich mit den Steuerelementen, die mithilfe der Tastatur interagieren können; entweder den Editor wird aktiviert und wechseln mit der Tabulatortaste durch Steuerelemente oder mithilfe von standardmäßigen mnemonischen Zeichen.
 
--   Der Designer sollte die allgemeine Modell speichern verwenden. Keine allgemeinen speichern "oder" Commit-Schaltflächen sollten auf der Oberfläche platziert werden, obwohl andere Schaltflächen geeignet sein können.
+- Der Designer sollte die allgemeine Modell speichern verwenden. Keine allgemeinen speichern "oder" Commit-Schaltflächen sollten auf der Oberfläche platziert werden, obwohl andere Schaltflächen geeignet sein können.
 
 #### <a name="model-designers"></a>Modell-Designer
 
--   Ein leerer Designer müssen ein Wasserzeichen auf der Oberfläche, der angibt, wie Sie beginnen.
+- Ein leerer Designer müssen ein Wasserzeichen auf der Oberfläche, der angibt, wie Sie beginnen.
 
--   Hinzufügen von Elementen auf der Entwurfsoberfläche sollte über die Toolbox ausgeführt werden.
+- Hinzufügen von Elementen auf der Entwurfsoberfläche sollte über die Toolbox ausgeführt werden.
 
--   Elemente auf der Oberfläche folgen ein Modells konsistent Auswahl.
+- Elemente auf der Oberfläche folgen ein Modells konsistent Auswahl.
 
--   Eingebettete Symbolleisten enthalten nur, die nicht häufig-Befehle für die spezifischen Befehle wie z. B. **speichern**.
+- Eingebettete Symbolleisten enthalten nur, die nicht häufig-Befehle für die spezifischen Befehle wie z. B. **speichern**.
 
--   Auf der Oberfläche auf oder ein Wasserzeichen möglicherweise eine Legende angezeigt.
+- Auf der Oberfläche auf oder ein Wasserzeichen möglicherweise eine Legende angezeigt.
 
--   Der Benutzer muss in der Lage, die Darstellung der die Schriftarten/Farben anpassen einer **Tools > Optionen** Seite der freigegebenen Schriftarten und Farben Seite oder einen bestimmten in den Editor.
+- Der Benutzer muss in der Lage, die Darstellung der die Schriftarten/Farben anpassen einer **Tools > Optionen** Seite der freigegebenen Schriftarten und Farben Seite oder einen bestimmten in den Editor.
 
 #### <a name="reports"></a>Berichte
 
--   Berichte werden in der Regel Informationen nur und nicht einbezogen, in dem Modell speichern. Sie enthalten jedoch möglicherweise Interaktionen, wie Links zu anderen relevanten Informationen oder die Abschnitte, die erweitert und reduziert werden.
+- Berichte werden in der Regel Informationen nur und nicht einbezogen, in dem Modell speichern. Sie enthalten jedoch möglicherweise Interaktionen, wie Links zu anderen relevanten Informationen oder die Abschnitte, die erweitert und reduziert werden.
 
--   Die meisten Befehle auf der Oberfläche sollte nicht die Schaltflächen links sein.
+- Die meisten Befehle auf der Oberfläche sollte nicht die Schaltflächen links sein.
 
--   Layout sollten eine Kopfzeile hinzufügen und befolgen Sie die Standardbericht Layout-Richtlinien.
+- Layout sollten eine Kopfzeile hinzufügen und befolgen Sie die Standardbericht Layout-Richtlinien.
 
 #### <a name="dashboards"></a>Dashboards
 
--   Dashboards kein Interaktionsmodell selbst, aber als eine Möglichkeit, eine Vielzahl von anderen Tools zu bieten.
+- Dashboards kein Interaktionsmodell selbst, aber als eine Möglichkeit, eine Vielzahl von anderen Tools zu bieten.
 
--   Sie nicht im Modell speichern teilnehmen.
+- Sie nicht im Modell speichern teilnehmen.
 
--   Benutzer müssen sich für die Interaktion mit den Steuerelementen, die mithilfe der Tastatur und aktivieren den Editor, und wechseln mit der Tabulatortaste durch Steuerelemente oder mithilfe von standardmäßigen mnemonischen Code des können.
+- Benutzer müssen sich für die Interaktion mit den Steuerelementen, die mithilfe der Tastatur und aktivieren den Editor, und wechseln mit der Tabulatortaste durch Steuerelemente oder mithilfe von standardmäßigen mnemonischen Code des können.
 
-##  <a name="BKMK_Dialogs"></a> Dialogfelder
+## <a name="BKMK_Dialogs"></a> Dialogfelder
 
 ### <a name="introduction"></a>Einführung
  Dialogfelder in Visual Studio sollte in der Regel eine einzelne Arbeitseinheit des Benutzers unterstützen, und klicken Sie dann verworfen werden.
@@ -276,33 +276,33 @@ ms.locfileid: "58961461"
 ### <a name="dialog-design"></a>Dialogfeld-Entwurf
  Ausgereifte Dialogfelder berücksichtigen Sie die folgenden Elemente:
 
--   Die Benutzeraufgabe, die unterstützt werden
+- Die Benutzeraufgabe, die unterstützt werden
 
--   Das Dialogfeld Text-Format, Sprache und Terminologie
+- Das Dialogfeld Text-Format, Sprache und Terminologie
 
--   Auswahl des Steuerelements und UI-Konventionen
+- Auswahl des Steuerelements und UI-Konventionen
 
--   Ausrichtung für visuelle Layout-Spezifikation und Kontrolle
+- Ausrichtung für visuelle Layout-Spezifikation und Kontrolle
 
--   Tastaturzugriff
+- Tastaturzugriff
 
 #### <a name="content-organization"></a>Organisation von Inhalten
  Beachten Sie die Unterschiede zwischen diesen grundlegenden Typen von Dialogfeldern:
 
--   [Einfache Dialogfelder](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) Steuerelemente in einem einzelnen modale Fenster darstellen. Die Präsentation kann es sich um Variationen des komplexen Steuerelementmuster, z. B. eine Auswahl des Felds oder einer Symbolleiste enthalten.
+- [Einfache Dialogfelder](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) Steuerelemente in einem einzelnen modale Fenster darstellen. Die Präsentation kann es sich um Variationen des komplexen Steuerelementmuster, z. B. eine Auswahl des Felds oder einer Symbolleiste enthalten.
 
--   [Layered Dialogfelder](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) werden verwendet, um Platz auf dem Bildschirm optimal zu nutzen, wenn ein einzelnes Element der Benutzeroberfläche mehrere Gruppen von Steuerelementen enthält. Das Dialogfeld Gruppierungen "über Registerkarten-Steuerelementen, Steuerelemente für die Seitennavigation oder Schaltflächen schichtenförmige", damit der Benutzer zu einem bestimmten Zeitpunkt finden Sie unter der Gruppe auswählen kann.
+- [Layered Dialogfelder](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) werden verwendet, um Platz auf dem Bildschirm optimal zu nutzen, wenn ein einzelnes Element der Benutzeroberfläche mehrere Gruppen von Steuerelementen enthält. Das Dialogfeld Gruppierungen "über Registerkarten-Steuerelementen, Steuerelemente für die Seitennavigation oder Schaltflächen schichtenförmige", damit der Benutzer zu einem bestimmten Zeitpunkt finden Sie unter der Gruppe auswählen kann.
 
--   [Assistenten](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) eignen sich zum Weiterleiten des Benutzers über eine logische Abfolge von Schritten auf den Abschluss einer Aufgabe. In sequenziellen Bereichen, manchmal Einführung in anderen Workflows ("Branches") eine in den vorherigen Bereich vorgenommenen Auswahl abhängig, werden eine Reihe von Optionen angeboten.
+- [Assistenten](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) eignen sich zum Weiterleiten des Benutzers über eine logische Abfolge von Schritten auf den Abschluss einer Aufgabe. In sequenziellen Bereichen, manchmal Einführung in anderen Workflows ("Branches") eine in den vorherigen Bereich vorgenommenen Auswahl abhängig, werden eine Reihe von Optionen angeboten.
 
-####  <a name="BKMK_SimpleDialogs"></a> Einfache Dialogfelder
+#### <a name="BKMK_SimpleDialogs"></a> Einfache Dialogfelder
  Ein einfaches Dialogfeld ist eine Darstellung der Steuerelemente in einem einzelnen modale Fenster. In dieser Präsentation möglicherweise abweichungen von komplexen Steuerelementmustern, z. B. eine Feldauswahl. Führen Sie für einfache Dialoge das Standardlayout für die allgemeine als auch für bestimmte Layouts für komplexe Steuerelement Gruppierungen erforderlich sind.
 
  ![Einfaches Dialogfeld in Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704 Artikelnr-01_CreateStrongNameKey")
 
  **Erstellen Sie Schlüssel für einen starken Namen wird ein Beispiel für ein einfaches Dialogfeld in Visual Studio.**
 
-####  <a name="BKMK_LayeredDialogs"></a> Überlappende Dialogfelder
+#### <a name="BKMK_LayeredDialogs"></a> Überlappende Dialogfelder
  Überlappende Dialoge enthalten Registerkarten, Dashboards und eingebettete Strukturen. Sie werden verwendet, um Platz zu maximieren, wenn mehrere Gruppen von Steuerelementen in einem einzelnen Element der Benutzeroberfläche angeboten vorhanden sind. Die Gruppierungen geschichtet werden, damit der Benutzer die Gruppierung auf einem beliebigen Zeitpunkt auswählen kann.
 
  Im einfachsten Fall ist der Mechanismus für das Wechseln zwischen Gruppen ein Registerkarten-Steuerelement. Es gibt verschiedene Alternativen zur Verfügung. Festlegen der Priorität und Überlagerung für das am besten geeignete Format auswählen angezeigt.
@@ -313,18 +313,18 @@ ms.locfileid: "58961461"
 
  **Extras > Optionen ist ein Beispiel für ein Dialogfeld mit Ebenen in Visual Studio.**
 
-####  <a name="BKMK_Wizards"></a> Assistenten
+#### <a name="BKMK_Wizards"></a> Assistenten
  Assistenten sind nützlich für das Weiterleiten des Benutzers über eine logische Abfolge von Schritten bei der Durchführung einer Aufgabe. Eine Reihe von Optionen werden in sequenzieller Bereiche angeboten, und der Benutzer muss durch jeden Schritt vor dem Fortfahren zur nächsten fortfahren. Sobald genügend Standardwerte verfügbar sind, werden die **Fertig stellen** Schaltfläche ist aktiviert.
 
  Modale-Assistenten für Aufgaben verwendet werden, die:
 
--   Enthalten Sie, Verzweigungen, wobei unterschiedliche Pfade je nach Benutzerauswahl angeboten werden
+- Enthalten Sie, Verzweigungen, wobei unterschiedliche Pfade je nach Benutzerauswahl angeboten werden
 
--   Enthalten Sie Abhängigkeiten zwischen den Schritten, die in nachfolgende Schritten auf Benutzereingaben aus der vorherigen Schritte ab abhängen
+- Enthalten Sie Abhängigkeiten zwischen den Schritten, die in nachfolgende Schritten auf Benutzereingaben aus der vorherigen Schritte ab abhängen
 
--   Sind ausreichend komplex, dass die Benutzeroberfläche verwendet werden soll, um die angebotenen Optionen sowie die möglichen Ergebnisse in jedem Schritt wird erläutert
+- Sind ausreichend komplex, dass die Benutzeroberfläche verwendet werden soll, um die angebotenen Optionen sowie die möglichen Ergebnisse in jedem Schritt wird erläutert
 
--   Sind transaktional ist, dass eine Reihe von Schritten in ihrer Gesamtheit abgeschlossen werden, bevor ein Commit für Änderungen ausgeführt wird
+- Sind transaktional ist, dass eine Reihe von Schritten in ihrer Gesamtheit abgeschlossen werden, bevor ein Commit für Änderungen ausgeführt wird
 
 ### <a name="common-conventions"></a>Häufig verwendete Konventionen
  Um eine optimale Designs und der Funktionen, die mit Ihrer Dialogen zu erzielen, befolgen Sie diese Konventionen Größe des Dialogfelds, Position, Standards, die Konfiguration der Zugriffssteuerung und Ausrichtung, Benutzeroberfläche Text, Titelleisten, Steuerschaltflächen und Zugriffsschlüssel.
@@ -336,9 +336,9 @@ ms.locfileid: "58961461"
 
  Es gibt zwei Empfehlungen für Dialoge mit änderbarer Größe:
 
-1.  Dass eine Mindestgröße für den Dialog definiert, das für die Gruppe "Steuerelemente" ohne Clipping optimieren und anpassen ist, um sinnvolle Lokalisierung Wachstum zu ermöglichen.
+1. Dass eine Mindestgröße für den Dialog definiert, das für die Gruppe "Steuerelemente" ohne Clipping optimieren und anpassen ist, um sinnvolle Lokalisierung Wachstum zu ermöglichen.
 
-2.  Dass die Größe skaliert Benutzer aus mehreren Sitzungen beibehalten. Z. B. wenn der Benutzer ein Dialogfeld, um 150 % hochskaliert wird, zeigt klicken Sie dann einen nachfolgenden Start des Dialogs 150 %.
+2. Dass die Größe skaliert Benutzer aus mehreren Sitzungen beibehalten. Z. B. wenn der Benutzer ein Dialogfeld, um 150 % hochskaliert wird, zeigt klicken Sie dann einen nachfolgenden Start des Dialogs 150 %.
 
 #### <a name="position"></a>Position
  Dialoge müssen in der IDE beim ersten Start zentriert angezeigt werden. Für nicht veränderbare Größen Dialoge, es ist nicht erforderlich, dass die letzte Position des Dialogs beibehalten werden, sind, sodass er auf den nachfolgenden Starts zentriert angezeigt wird. Für Dialoge mit änderbarer Größe sollte die Größe auf nachfolgenden Starts beibehalten werden. Für Dialoge mit änderbarer Größe, die modale sind, muss die Position nicht persistent gespeichert werden. Anzeigen, sie in der IDE zentriert wird verhindert, dass das Dialogfeld in eine unvorhersehbare oder unbrauchbar Position angezeigt werden, wenn Anzeigekonfiguration des Benutzers geändert wurde. Für nicht modale Dialoge, die neu positioniert werden können, sollten auf nachfolgenden Starts Position des Benutzers beibehalten werden, wie das Dialogfeld häufig als ein wesentlicher Bestandteil eines größeren Workflows verwendet werden kann.
@@ -394,7 +394,7 @@ ms.locfileid: "58961461"
 #### <a name="imagery"></a>Bilder
  Verwenden Sie Bilder nur selten in Dialogfeldern. Verwenden Sie keine große Symbole in Dialogfeldern nur, um Speicherplatz zu verwenden. Verwenden Sie Bilder aus, nur dann, wenn sie ein wichtiger Bestandteil der vermitteln der Nachricht an den Benutzer, z. B. Warnsymbole oder Status Animationen sind.
 
-###  <a name="BKMK_PrioritizingAndLayering"></a> Priorisieren und Schichten
+### <a name="BKMK_PrioritizingAndLayering"></a> Priorisieren und Schichten
 
 #### <a name="prioritizing-your-ui"></a>Priorisieren die Benutzeroberfläche
  Es ist möglicherweise erforderlich, bestimmte Elemente der Benutzeroberfläche in den Vordergrund zu bringen, und platzieren Sie erweiterte Verhalten und die Optionen (einschließlich ungewöhnliche Befehle) in Dialogfeldern. Bringen Sie häufig verwendete Funktionen in den Vordergrund, indem des Arbeitsbereichs für sie und Sichtbarmachung standardmäßig in der Benutzeroberfläche mit einer textbezeichnung, wenn das Dialogfeld angezeigt wird.
@@ -425,7 +425,7 @@ ms.locfileid: "58961461"
 ##### <a name="adaptive-ui"></a>Adaptive Benutzeroberfläche
  Ein- oder Ausblenden der Benutzeroberfläche basierend auf Nutzung oder eine selbst der Benutzeroberfläche ist eine weitere Möglichkeit zur Darstellung der benötigten Benutzeroberfläche gleichzeitig das Ausblenden von anderen Teilen von. Dies sollte nicht in Visual Studio die Algorithmen für die Entscheidung zwischen ein- oder Ausblenden der Benutzeroberfläche können schwierig sein, und die Regeln werden immer für eine beliebige Gruppe von Fällen falsch sein.
 
-##  <a name="BKMK_Projects"></a> Projekte
+## <a name="BKMK_Projects"></a> Projekte
 
 ### <a name="projects-in-the-solution-explorer"></a>Projekte im Projektmappen-Explorer
  Die meisten Projekte werden als anhand von verweisen, Directory-basierte oder gemischte klassifiziert. Alle drei Typen von Projekten werden im Projektmappen-Explorer gleichzeitig unterstützt. Der Stamm der benutzererfahrung bei der Arbeit mit Projekten findet innerhalb dieses Fensters. Obwohl verschiedene Projektknoten Verweis, Verzeichnis oder Projekten im gemischten Modus vom Typ sind, besteht ein allgemeines Interaktionsmuster, das als Ausgangspunkt vor dem in-Projekt – bestimmter Benutzermuster Auseinanderlaufende angewendet werden soll.

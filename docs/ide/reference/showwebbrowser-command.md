@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950645"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 
@@ -44,7 +44,7 @@ View.ShowWebBrowser URL [/new][/ext]
 
  Dies ist optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.
 
 ## <a name="example"></a>Beispiel

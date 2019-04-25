@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066707"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>So stellen Sie die Profilerstellung beim Start der App zurück  
   
-1.  Wählen Sie im Hauptmenü **Debuggen** und dann **Leistung und Diagnose** (Tastatur: Drücken Sie Alt+F2).  
+1. Wählen Sie im Hauptmenü **Debuggen** und dann **Leistung und Diagnose** (Tastatur: Drücken Sie Alt+F2).  
   
-2.  Klicken Sie im Leistungs- und Diagnosehub auf den Link **Einstellungen** neben **GPU-Nutzung**.  
+2. Klicken Sie im Leistungs- und Diagnosehub auf den Link **Einstellungen** neben **GPU-Nutzung**.  
   
-3.  Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.  
+3. Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.  
   
      ![Konfigurieren, wenn die GPU-Nutzungserfassung startet](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
  Wenn Sie die Erfassung von Profilerstellungsinformationen mit dieser Einstellung zurückstellen, steht im unteren Bereich des GPU-Nutzungstoolfensters ein zusätzlicher Link zur Verfügung, wenn Sie die App im GPU-Nutzungstool ausführen. Wählen Sie zum Starten der Erfassung von Profilinformationen den Link **Starten** in der Meldung **Erfassung detaillierter GPU-Nutzungsdaten starten**.  
   
-##  <a name="hwsupport"></a> Unterstützte Hardware und Treiber  
+## <a name="hwsupport"></a> Unterstützte Hardware und Treiber  
  Folgende GPU-Hardware und Treiber werden unterstützt:  
   
 |Hersteller|GPU-Beschreibung|Erforderliche Treiberversion|  
@@ -143,10 +143,10 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 ## <a name="see-also"></a>Siehe auch  
   
--   [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video) (Lösen Sie die großen Grafikprobleme bei Ihrem Spiel mithilfe von DirectX-Tools (Video))](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video) (Lösen Sie die großen Grafikprobleme bei Ihrem Spiel mithilfe von DirectX-Tools (Video))](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [GPU Usage Tool in Visual Studio (video) (GPU-Auslastungstool in Visual Studio (Video))](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [GPU Usage Tool in Visual Studio (video) (GPU-Auslastungstool in Visual Studio (Video))](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog) (GPU-Auslastungstool in Visual Studio 2013 Update 4 CTP1 (Blog))](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog) (GPU-Auslastungstool in Visual Studio 2013 Update 4 CTP1 (Blog))](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [GPU Usage for DirectX in Visual Studio (blog) (GPU-Auslastung für DirectX in Visual Studio (Blog))](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [GPU Usage for DirectX in Visual Studio (blog) (GPU-Auslastung für DirectX in Visual Studio (Blog))](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

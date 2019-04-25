@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104316"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ In [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>So konfigurieren Sie einen Regelsatz für ein .NET Framework-Projekt  
   
-1.  In **Projektmappen-Explorer**, klicken Sie auf das Projekt.  
+1. In **Projektmappen-Explorer**, klicken Sie auf das Projekt.  
   
-2.  Auf der **analysieren** Menü klicken Sie auf **Konfigurieren der Codeanalyse für** *ProjectName*.  
+2. Auf der **analysieren** Menü klicken Sie auf **Konfigurieren der Codeanalyse für** *ProjectName*.  
   
-3.  In der **Konfiguration** und **Plattform** Listen, klicken Sie auf die Build-Konfiguration und die Zielplattform.  
+3. In der **Konfiguration** und **Plattform** Listen, klicken Sie auf die Build-Konfiguration und die Zielplattform.  
   
-4.  Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen. Sie können die Codeanalyse auch manuell ausführen, indem Sie öffnen die **analysieren** klicken und im Menü **Ausführen der Codeanalyse für** *ProjectName*.  
+4. Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen. Sie können die Codeanalyse auch manuell ausführen, indem Sie öffnen die **analysieren** klicken und im Menü **Ausführen der Codeanalyse für** *ProjectName*.  
   
-5.  Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
+5. Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
   
     > [!NOTE]
     >  Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Der Quellcode für ein Formular oder eine Vorlage kann sowohl angezeigt als auch verwaltet werden.  
   
-6.  In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:  
+6. In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:  
   
-    -   Wählen Sie den Regelsatz, den Sie verwenden möchten.  
+    - Wählen Sie den Regelsatz, den Sie verwenden möchten.  
   
-    -   Klicken Sie auf  **\<durchsuchen... >** einen vorhandenen benutzerdefinierten Regelsatz anzugeben, ist nicht in der Liste.  
+    - Klicken Sie auf  **\<durchsuchen... >** einen vorhandenen benutzerdefinierten Regelsatz anzugeben, ist nicht in der Liste.  
   
-    -   Definieren Sie einen benutzerdefinierten Regelsatz.  
+    - Definieren Sie einen benutzerdefinierten Regelsatz.  
   
          Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   

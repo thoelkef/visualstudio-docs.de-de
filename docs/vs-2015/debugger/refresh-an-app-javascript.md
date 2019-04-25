@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e55e108901d9be62531e459f2b7805f86cfe6a08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040640"
 ---
 # <a name="refresh-an-app-javascript"></a>Aktualisieren einer App (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,38 +35,38 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  Aktualisieren hält weder den App-Zustand aufrecht noch reflektiert es die folgenden Änderungen zur App:  
   
--   Paketmanifestdateiänderungen, einschließlich Änderungen an den im Paketmanifest angegebenen Bildern.  
+- Paketmanifestdateiänderungen, einschließlich Änderungen an den im Paketmanifest angegebenen Bildern.  
   
--   Verweisänderungen, wie das Hinzufügen oder Entfernen eines SDK-Verweises, oder Änderungen an den Komponenten für Windows-Runtime (.winmd-Dateien).  
+- Verweisänderungen, wie das Hinzufügen oder Entfernen eines SDK-Verweises, oder Änderungen an den Komponenten für Windows-Runtime (.winmd-Dateien).  
   
--   Ressourcenänderungen, wie Änderungen an den Zeichenfolgen in .resjson-Dateien.  
+- Ressourcenänderungen, wie Änderungen an den Zeichenfolgen in .resjson-Dateien.  
   
--   Projektdateiänderungen, die zu Pfadnamenänderungen, neuen Projektdateien oder gelöschten Dateien führen.  
+- Projektdateiänderungen, die zu Pfadnamenänderungen, neuen Projektdateien oder gelöschten Dateien führen.  
   
--   Projekt- und Elementeigenschaftenänderungen, wie Änderungen am ausgewählten Debugging-Gerät oder Änderungen an der Paketaktion für eine Datei (im Eigenschaftenfenster).  
+- Projekt- und Elementeigenschaftenänderungen, wie Änderungen am ausgewählten Debugging-Gerät oder Änderungen an der Paketaktion für eine Datei (im Eigenschaftenfenster).  
   
 > [!IMPORTANT]
 >  Wenn Sie Verweise oder das Paketmanifest ändern oder andere Änderungen vornehmen, die in der vorangehenden Liste aufgeführt sind, müssen Sie den Debugger beenden und neu starten, um HTML-, CSS- und JavaScript-Quelldateien zu aktualisieren.  
   
 ### <a name="to-refresh-an-app"></a>So aktualisieren Sie eine App  
   
-1.  Erstellen Sie in Visual Studio ein neues Projekt mit der Navigations-App-Projektvorlage.  
+1. Erstellen Sie in Visual Studio ein neues Projekt mit der Navigations-App-Projektvorlage.  
   
      Dies kann eine Windows Store-App, eine Windows Phone Store-App oder eine universelle App sein.  
   
-2.  Wählen Sie bei geöffneter Vorlage in Visual Studio ein Debugziel aus.  
+2. Wählen Sie bei geöffneter Vorlage in Visual Studio ein Debugziel aus.  
   
      Wenn das aktuelle Startprojekt ein Windows Phone-Projekt ist, wählen Sie einen Windows Phone-Emulator als Debugziel aus. Wählen Sie andernfalls **Simulator** oder **lokalen Computer**.  
   
      ![Debugzielliste auswählen](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-3.  Drücken Sie F5, um die App im Debugmodus auszuführen.  
+3. Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
-4.  Wechseln Sie zu Visual Studio. (Drücken Sie F12.)  
+4. Wechseln Sie zu Visual Studio. (Drücken Sie F12.)  
   
-5.  In **Projektmappen-Explorer**in die **Seiten** > **home** -Ordner, öffnen die Datei "Home.HTML".  
+5. In **Projektmappen-Explorer**in die **Seiten** > **home** -Ordner, öffnen die Datei "Home.HTML".  
   
-6.  Ändern Sie den Seitentiteltext von  
+6. Ändern Sie den Seitentiteltext von  
   
     ```html  
     Welcome to yourAppName!  
@@ -78,9 +78,9 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     Hello!  
     ```  
   
-7.  Klicken Sie auf die **Aktualisieren von Windows-app** Schaltfläche an, welche sieht wie folgt aus: ![Windows-app-Schaltfläche "Aktualisieren"](../debugger/media/js-refresh.png "JS_Refresh"). (Oder drücken Sie F4)  
+7. Klicken Sie auf die **Aktualisieren von Windows-app** Schaltfläche an, welche sieht wie folgt aus: ![Windows-app-Schaltfläche "Aktualisieren"](../debugger/media/js-refresh.png "JS_Refresh"). (Oder drücken Sie F4)  
   
-8.  Wechseln Sie zur App. Die App wird erneut geladen, ohne dass der Debugger neu gestartet wird, und der neue Seitentitel wird angezeigt.  
+8. Wechseln Sie zur App. Die App wird erneut geladen, ohne dass der Debugger neu gestartet wird, und der neue Seitentitel wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnellstart: Debug HTML and CSS (Schnellstart: Debuggen von HTML und CSS)](../debugger/quickstart-debug-html-and-css.md)

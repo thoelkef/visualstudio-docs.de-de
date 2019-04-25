@@ -12,27 +12,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d7ac06c15fb3b6e4370a3e785abe2ac94483a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111141"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Formen aus einem .NET-Klassendiagramm (CD-Datei) in andere Dokumente kopieren. Entweder erhalten Sie eine Kopie der Form oder den zugrunde liegenden Code, basierend auf dem Typ des Dokuments, in das Sie sie eingefügt haben. Informationen zum Kopieren von Formen aus UML-Klassendiagrammen in ein Modellierungsprojekt finden Sie unter [Exportieren von Bildern eines Diagramms](../modeling/export-diagrams-as-images.md).  
   
 ### <a name="to-copy-a-single-element"></a>So kopieren Sie ein einzelnes Element  
   
--   Klicken Sie mit der rechten Maustaste auf die Form, und wählen Sie **Bild kopieren** aus.  
+- Klicken Sie mit der rechten Maustaste auf die Form, und wählen Sie **Bild kopieren** aus.  
   
 ### <a name="to-copy-several-elements"></a>So kopieren Sie mehrere Elemente  
   
-1.  Wählen Sie die Formen im Diagramm aus, die Sie kopieren möchten.  
+1. Wählen Sie die Formen im Diagramm aus, die Sie kopieren möchten.  
   
-2.  Klicken Sie mit der rechten Maustaste auf die Auswahl, und wählen Sie **Bild kopieren** aus.  
+2. Klicken Sie mit der rechten Maustaste auf die Auswahl, und wählen Sie **Bild kopieren** aus.  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>So kopieren Sie alle Elemente in einem Klassendiagramm  
   
@@ -44,4 +44,4 @@ Sie können Formen aus einem .NET-Klassendiagramm (CD-Datei) in andere Dokumente
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md)   
- [Gewusst wie: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Vorgehensweise: Exportieren von Klassendiagrammen als Bilder](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

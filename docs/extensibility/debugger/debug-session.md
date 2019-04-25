@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344b8d7af2a89b8a39a1a6686a92f8ea2f4fd573
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5fba342cdddc1b3f5cfed73561ed521a6163f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050875"
 ---
 # <a name="debug-session"></a>Debugsitzung
 Im Hinblick auf die Debugger-Architektur eine *Sitzung*:
 
--   Ist der Satz aller Prozesse, verwandte oder, die gestartet oder aus einer einzelnen Instanz der IDE angefügt wurden.
+- Ist der Satz aller Prozesse, verwandte oder, die gestartet oder aus einer einzelnen Instanz der IDE angefügt wurden.
 
--   Wird durch ein sitzungsbasierter Debug-Manager (SDM) implementiert. Weitere Informationen finden Sie unter [Debuggen Sitzungs-Manager](../../extensibility/debugger/session-debug-manager.md).
+- Wird durch ein sitzungsbasierter Debug-Manager (SDM) implementiert. Weitere Informationen finden Sie unter [Debuggen Sitzungs-Manager](../../extensibility/debugger/session-debug-manager.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Sitzungsbasierter Debug-manager](../../extensibility/debugger/session-debug-manager.md)

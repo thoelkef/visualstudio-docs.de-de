@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063178"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren einer benutzerdefinierten SharePoint-Gestaltungsvorlage und einer Websiteseite mit Bild in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
@@ -36,26 +36,26 @@ ms.locfileid: "56602207"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Die folgenden Komponenten zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie:
 
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
+- Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   SharePoint Designer 2010.
+- SharePoint Designer 2010.
 
 ## <a name="create-items-in-sharepoint-designer"></a>Erstellen von Konfigurationselementen in SharePoint Designer
  Dieses Beispiel zeigt, wie Sie drei Elemente in SharePoint Designer für den Export zu erstellen: eine benutzerdefinierte Gestaltungsvorlage, eine Webseite, die die benutzerdefinierte Gestaltungsvorlage und einer Bilddatei auf der Seite "Website" angezeigt werden verweist. Das Bild wird in den Ordner "/ Images /" in SharePoint hinzugefügt.
 
 #### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>So erstellen eine benutzerdefinierte Gestaltungsvorlage in SharePoint Designer
 
-1.  Wählen Sie in SharePoint Designer, klicken Sie im Navigationsbereich die **Masterseiten** Site-Objekt.
+1. Wählen Sie in SharePoint Designer, klicken Sie im Navigationsbereich die **Masterseiten** Site-Objekt.
 
-2.  Auf der **Masterseiten** im Menüband **leere Gestaltungsvorlage**.
+2. Auf der **Masterseiten** im Menüband **leere Gestaltungsvorlage**.
 
-3.  Wählen Sie die neue Masterseite, und klicken Sie auf die **Masterseiten** im Menüband **Datei bearbeiten**.
+3. Wählen Sie die neue Masterseite, und klicken Sie auf die **Masterseiten** im Menüband **Datei bearbeiten**.
 
-4.  Wählen Sie unten auf der SharePoint Designer, der **Code** Registerkarte.
+4. Wählen Sie unten auf der SharePoint Designer, der **Code** Registerkarte.
 
-5.  Ersetzen Sie das vorhandene Markup durch das folgende Markup an.
+5. Ersetzen Sie das vorhandene Markup durch das folgende Markup an.
 
     ```aspx-csharp
     <%@ Master Language="C#" %>
@@ -76,39 +76,39 @@ ms.locfileid: "56602207"
     </html>
     ```
 
-6.  Speichern Sie die Seite, wählen Sie die **Masterseiten** Registerkarte, und benennen Sie die Masterseite als **mybasic1.master**.
+6. Speichern Sie die Seite, wählen Sie die **Masterseiten** Registerkarte, und benennen Sie die Masterseite als **mybasic1.master**.
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Fügen Sie ein Bild in die Inhaltsdatenbank in SharePoint Designer
  Jetzt können Sie einem Bild zur Anzeige auf der Seite "Website" hinzufügen. Das Bild wird in der SharePoint-Inhaltsdatenbank bereitgestellt.
 
 #### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>Hinzufügen eines Bilds in die Inhaltsdatenbank in SharePoint Designer
 
-1.  Wählen Sie im Navigationsbereich die **alle Dateien** site-Objekt, und wählen Sie in der Strukturansicht, dann die **Images** Ordner.
+1. Wählen Sie im Navigationsbereich die **alle Dateien** site-Objekt, und wählen Sie in der Strukturansicht, dann die **Images** Ordner.
 
-2.  Auf der **alle Dateien** im Menüband **Importdateien**, wählen Sie eine Datei Ihrer Wahl, und wählen Sie dann die **OK** Schaltfläche. In diesem Beispiel die Datei heißt **myimg1.png**.
+2. Auf der **alle Dateien** im Menüband **Importdateien**, wählen Sie eine Datei Ihrer Wahl, und wählen Sie dann die **OK** Schaltfläche. In diesem Beispiel die Datei heißt **myimg1.png**.
 
      Optional können Sie einen Unterordner, um die Bilder organisieren erstellen.
 
-3.  Schließen der **Import** Dialogfeld.
+3. Schließen der **Import** Dialogfeld.
 
 ## <a name="create-a-site-page"></a>Erstellen Sie eine Standort-Seite
  Diese grundlegende-Seite verwendet die benutzerdefinierte Masterseite und zeigt das Bild, das Sie im vorherigen Schritt hinzugefügt haben.
 
 #### <a name="to-create-a-site-page"></a>Zum Erstellen einer Site-Seite
 
-1.  Wählen Sie im Navigationsbereich die **Websiteseiten** Objekt.
+1. Wählen Sie im Navigationsbereich die **Websiteseiten** Objekt.
 
-2.  Auf der **Seiten** im Menüband der **Seite** Schaltfläche der **ASPX** Seite Art, und nennen Sie die neue Datei **mycontentpage1.aspx**.
+2. Auf der **Seiten** im Menüband der **Seite** Schaltfläche der **ASPX** Seite Art, und nennen Sie die neue Datei **mycontentpage1.aspx**.
 
      Optional können Sie einen Unterordner zum Organisieren von Websiteseiten erstellen.
 
-3.  Wählen Sie in der Liste Website Seiten **MyContentPage1.aspx** , öffnen Sie die Seite "Eigenschaften", und wählen Sie dann am unteren Rand der Seite, die **bearbeiten Datei** Link.
+3. Wählen Sie in der Liste Website Seiten **MyContentPage1.aspx** , öffnen Sie die Seite "Eigenschaften", und wählen Sie dann am unteren Rand der Seite, die **bearbeiten Datei** Link.
 
      Wenn eine Meldung angezeigt wird und besagt, dass diese Seite keine Regionen enthält, die im abgesicherten Modus bearbeitet werden und fragt, ob Sie verwenden möchten, öffnen auf dieser Seite im erweiterten Modus, und wählen die **Ja** Schaltfläche.
 
-4.  Wählen Sie am unteren Rand der Seite, die **Code** Schaltfläche.
+4. Wählen Sie am unteren Rand der Seite, die **Code** Schaltfläche.
 
-5.  Ersetzen Sie das vorhandene Markup durch das folgende Markup an.
+5. Ersetzen Sie das vorhandene Markup durch das folgende Markup an.
 
     ```aspx-csharp
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
@@ -124,22 +124,22 @@ ms.locfileid: "56602207"
     </asp:Content>
     ```
 
-6.  Speichern Sie die Seite für die aktualisierten Standorts.
+6. Speichern Sie die Seite für die aktualisierten Standorts.
 
 ## <a name="export-the-items-from-sharepoint"></a>Exportieren Sie die Elemente aus SharePoint
  Exportieren Sie die Elemente aus SharePoint in einer SharePoint-Lösung (*.wsp*) Datei.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Exportieren von Elementen aus SharePoint Designer
 
-1.  Wählen Sie in SharePoint Designer, klicken Sie im Navigationsbereich die **Teamwebsite** -Objekt, und klicken Sie auf die **Standort** im Menüband **als Vorlage speichern**.
+1. Wählen Sie in SharePoint Designer, klicken Sie im Navigationsbereich die **Teamwebsite** -Objekt, und klicken Sie auf die **Standort** im Menüband **als Vorlage speichern**.
 
-2.  In der **als Vorlage speichern** Dialogfeld Geben Sie einen Dateinamen und den Vorlagennamen ein, wählen die **Inhalte einschließen** aus, und wählen Sie dann die **OK** Schaltfläche.
+2. In der **als Vorlage speichern** Dialogfeld Geben Sie einen Dateinamen und den Vorlagennamen ein, wählen die **Inhalte einschließen** aus, und wählen Sie dann die **OK** Schaltfläche.
 
      Dies speichert den Inhalt des Standorts in der *.wsp* Datei.
 
-3.  Wählen Sie nach die Lösung exportiert, die **Lösungskatalog** Link, um die Liste der verfügbaren Lösungsdateien anzuzeigen.
+3. Wählen Sie nach die Lösung exportiert, die **Lösungskatalog** Link, um die Liste der verfügbaren Lösungsdateien anzuzeigen.
 
-4.  Öffnen Sie das Kontextmenü für das neue *.wsp* Datei, und wählen Sie dann **Ziel speichern unter** auf das System zu speichern.
+4. Öffnen Sie das Kontextmenü für das neue *.wsp* Datei, und wählen Sie dann **Ziel speichern unter** auf das System zu speichern.
 
 ## <a name="import-the-items-into-visual-studio"></a>Importieren Sie die Elemente in Visual Studio
  Importieren der *.wsp* in Datei [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Nach dem Importieren des Inhalts können Sie anpassen, weitere Elemente hinzufügen und anschließend bereitstellen.
@@ -150,13 +150,11 @@ ms.locfileid: "56602207"
 
 2. Auf der **zu importierende Elemente auswählen** Seite **Modul** in die **Typ** Spalte, die Kontrollkästchen für die nur die Dateien in der folgenden Tabelle für den Import.
 
-
    | Dateiname | Beschreibung |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | Die benutzerdefinierte Masterseite. |
    | images_ | Die Bilddatei im SharePoint-Dateisystem. |
    | SitePages_ | Die Websiteseite. |
-
 
 3. Wählen Sie die **Fertig stellen** Schaltfläche, um die ausgewählten Elemente zu importieren.
 
@@ -168,9 +166,9 @@ ms.locfileid: "56602207"
 
     Wenn eine master-Seite als Standardgestaltungsvorlage oder benutzerdefinierten Gestaltungsvorlage markiert ist, erhalten Sie einen Fehler bei der Bereitstellung, der besagt, dass die Masterseite kann nicht gelöscht werden. Zur Vermeidung dieses Problems folgende Schritte:
 
-   -   Wenn die vorhandene Masterseite als Standardgestaltungsvorlage festgelegt ist, müssen Sie vorübergehend eine andere Masterseite als Standardgestaltungsvorlage festgelegt. Nachdem Sie die Dateien in SharePoint bereitstellen, legen Sie die neue Masterseite als Standardgestaltungsvorlage.
+   - Wenn die vorhandene Masterseite als Standardgestaltungsvorlage festgelegt ist, müssen Sie vorübergehend eine andere Masterseite als Standardgestaltungsvorlage festgelegt. Nachdem Sie die Dateien in SharePoint bereitstellen, legen Sie die neue Masterseite als Standardgestaltungsvorlage.
 
-   -   Wenn die vorhandene Masterseite als benutzerdefinierte Gestaltungsvorlage festgelegt ist, müssen Sie vorübergehend einen anderen Masterseite als benutzerdefinierte Gestaltungsvorlage festgelegt. Nachdem Sie die Dateien in SharePoint bereitstellen, legen Sie die neue Masterseite als benutzerdefinierte Gestaltungsvorlage.
+   - Wenn die vorhandene Masterseite als benutzerdefinierte Gestaltungsvorlage festgelegt ist, müssen Sie vorübergehend einen anderen Masterseite als benutzerdefinierte Gestaltungsvorlage festgelegt. Nachdem Sie die Dateien in SharePoint bereitstellen, legen Sie die neue Masterseite als benutzerdefinierte Gestaltungsvorlage.
 
 6. Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe bereitstellen**.
 

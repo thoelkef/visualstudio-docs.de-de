@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067182"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Testbereich 2: Rufen aus der Quellcodeverwaltung ab
+# <a name="test-area-2-get-from-source-control"></a>Testbereich 2: Abrufen aus der Quellcodeverwaltung
 Test Hierunter Testfälle für das Abrufen von Elementen aus dem Versionsspeicher über den Get-Befehl. Diese Testfälle können sowohl lokale Pipes und Webprojekte angewendet werden.
 
 ## <a name="command-menu-access"></a>Menüzugriff Befehl
@@ -26,13 +26,13 @@ Test Hierunter Testfälle für das Abrufen von Elementen aus dem Versionsspeiche
 
 ##### <a name="get-latest-version"></a>Neuste Version abrufen:
 
--   **Datei**, **Quellcodeverwaltung**, **neuste Version abrufen**.
+- **Datei**, **Quellcodeverwaltung**, **neuste Version abrufen**.
 
--   **Datei**, **neuste Version abrufen**.
+- **Datei**, **neuste Version abrufen**.
 
--   Klicken Sie im Kontextmenü **neuste Version abrufen**.
+- Klicken Sie im Kontextmenü **neuste Version abrufen**.
 
--   Erhalten: **Datei**, **Quellcodeverwaltung**, **erhalten**.
+- Erhalten: **Datei**, **Quellcodeverwaltung**, **erhalten**.
 
 ## <a name="expected-behavior"></a>Es wird erwartet
 

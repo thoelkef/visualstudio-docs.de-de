@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069388"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Hinzufügen eines Benutzersteuerelements zur Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
 ## <a name="adding-a-wpf-user-control-to-the-solution"></a>Ein WPF-Benutzersteuerelement hinzufügen zur Projektmappe  
  Fügen Sie zunächst ein Windows Presentation Foundation (WPF)-Benutzersteuerelement an die Startseite-Lösung.  
   
-1.  Erstellen Sie eine Startseite verwenden wir erstellt, [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).  
+1. Erstellen Sie eine Startseite verwenden wir erstellt, [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md).  
   
-2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Projektmappe, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Projektmappe, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**.  
   
-3.  Im linken Bereich die **neues Projekt** Dialogfeld erweitern Sie entweder die **Visual Basic** oder **Visual C#-** Knoten, und klicken Sie auf **Windows**. Wählen Sie im mittleren Bereich **WPF-Benutzersteuerelementbibliothek**.  
+3. Im linken Bereich die **neues Projekt** Dialogfeld erweitern Sie entweder die **Visual Basic** oder **Visual C#-** Knoten, und klicken Sie auf **Windows**. Wählen Sie im mittleren Bereich **WPF-Benutzersteuerelementbibliothek**.  
   
-4.  Benennen Sie das Steuerelement `WebUserControl` , und klicken Sie dann auf **OK**.  
+4. Benennen Sie das Steuerelement `WebUserControl` , und klicken Sie dann auf **OK**.  
   
 ## <a name="implementing-the-user-control"></a>Das Benutzersteuerelement implementiert  
- Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzeroberfläche (UI) in XAML, und klicken Sie dann schreiben Sie die CodeBehind-Ereignisse in C# oder einer anderen .NET-Sprache zu.  
+ Um ein WPF-Benutzersteuerelement zu implementieren, erstellen Sie die Benutzeroberfläche (UI) in XAML, und klicken Sie dann schreiben Sie die CodeBehind-Ereignisse in c# oder einer anderen .NET-Sprache zu.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Der XAML für das Benutzersteuerelement schreiben  
   
-1.  Öffnen Sie die XAML-Datei für das Benutzersteuerelement. In der \<Raster >-Element, das Steuerelement die folgenden Zeilendefinitionen hinzugefügt.  
+1. Öffnen Sie die XAML-Datei für das Benutzersteuerelement. In der \<Raster >-Element, das Steuerelement die folgenden Zeilendefinitionen hinzugefügt.  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
   
     ```  
   
-2.  Auf dem hauptblatt `Grid` -Element, fügen Sie die folgenden neuen `Grid` -Element, das ein Textfeld zum Eingeben von Webadressen und eine Schaltfläche zum Festlegen der neuen Adresse enthält.  
+2. Auf dem hauptblatt `Grid` -Element, fügen Sie die folgenden neuen `Grid` -Element, das ein Textfeld zum Eingeben von Webadressen und eine Schaltfläche zum Festlegen der neuen Adresse enthält.  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
     </Grid>  
     ```  
   
-3.  Fügen Sie den folgenden Frames der obersten Ebene `Grid` Elements direkt hinter der `Grid` Element, das die Schaltfläche und ein Textfeld enthält.  
+3. Fügen Sie den folgenden Frames der obersten Ebene `Grid` Elements direkt hinter der `Grid` Element, das die Schaltfläche und ein Textfeld enthält.  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4.  Das folgende Beispiel zeigt die abgeschlossene XAML für das Benutzersteuerelement.  
+4. Das folgende Beispiel zeigt die abgeschlossene XAML für das Benutzersteuerelement.  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -102,11 +102,11 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
   
 #### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Die Code-Behind-Ereignisse für das Benutzersteuerelement schreiben  
   
-1.  Doppelklicken Sie im XAML-Designer auf die **Adresse festlegen** Schaltfläche, die Sie hinzugefügt, auf das Steuerelement haben.  
+1. Doppelklicken Sie im XAML-Designer auf die **Adresse festlegen** Schaltfläche, die Sie hinzugefügt, auf das Steuerelement haben.  
   
      Die Datei "UserControl1.cs" wird im Code-Editor geöffnet.  
   
-2.  Füllen Sie den SetButton_Click-Ereignishandler wie folgt aus.  
+2. Füllen Sie den SetButton_Click-Ereignishandler wie folgt aus.  
   
     ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
@@ -124,14 +124,14 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
   
      Dieser Code legt fest, die Adresse der Webserver, die als Ziel für den Webbrowser in das Textfeld eingegeben wird. Wenn die Adresse nicht gültig ist, löst der Code einen Fehler aus.  
   
-3.  Sie müssen auch das Ereignis WebFrame_Navigated behandeln:  
+3. Sie müssen auch das Ereignis WebFrame_Navigated behandeln:  
   
     ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  
   
-4.  Erstellen Sie die Projektmappe.  
+4. Erstellen Sie die Projektmappe.  
   
 ## <a name="adding-the-user-control-to-the-start-page"></a>Hinzufügen des Benutzersteuerelements zur Startseite  
  Fügen Sie einen Verweis auf die neue Steuerelementbibliothek hinzu, um dieses Steuerelement in der Projektdatei der Startseite auf die Startseitenprojekt verfügbar zu machen. Anschließend können Sie das Steuerelement an das Starten der Seite "-XAML-Markup hinzufügen.  
@@ -174,15 +174,15 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eines DLL-Ver
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testen einer manuell erstellten benutzerdefinierten Startseite  
   
-1.  Kopieren der XAML-Datei und alle unterstützenden Textdateien oder Markup-Dateien, zu der **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  Ordner.  
+1. Kopieren der XAML-Datei und alle unterstützenden Textdateien oder Markup-Dateien, zu der **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  Ordner.  
   
-2.  Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in _Visual Studio-Installationsordner_**\Common7\IDE\ "Privateassemblies"\\**.  
+2. Wenn Ihre Startseite verweist keine Steuerelemente oder Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie sie in _Visual Studio-Installationsordner_**\Common7\IDE\ "Privateassemblies"\\**.  
   
-3.  Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv/rootsuffix Exp** um eine experimentelle Instanz von Visual Studio zu öffnen.  
+3. Geben Sie an einer Visual Studio-Eingabeaufforderung **Devenv/rootsuffix Exp** um eine experimentelle Instanz von Visual Studio zu öffnen.  
   
-4.  Wechseln Sie in der experimentellen Instanz zu den **Extras / Optionen / Umgebung / Start** Seite, und wählen Sie die XAML-Datei aus der **Customize Start Page** Dropdownliste.  
+4. Wechseln Sie in der experimentellen Instanz zu den **Extras / Optionen / Umgebung / Start** Seite, und wählen Sie die XAML-Datei aus der **Customize Start Page** Dropdownliste.  
   
-5.  Klicken Sie im Menü **Ansicht** auf **Startseite**.  
+5. Klicken Sie im Menü **Ansicht** auf **Startseite**.  
   
      Der benutzerdefinierten Startseite sollte angezeigt werden. Wenn Sie Dateien ändern möchten, müssen Sie die experimentelle Instanz schließen, nehmen Sie die Änderungen, kopieren und fügen Sie die geänderten Dateien und öffnen Sie erneut die experimentelle Instanz um die Änderungen anzuzeigen.  
   

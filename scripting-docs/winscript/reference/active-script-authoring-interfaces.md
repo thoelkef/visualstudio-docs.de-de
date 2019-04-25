@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6891a33afcb002e806ff8e4ed529604f69256313
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080292"
 ---
 # <a name="active-script-authoring-interfaces"></a>Active Script-Autorisierungsschnittstellen
 Die Headerdatei ActivAut.h stellt die Schnittstellen, die in diesem Abschnitt aufgeführten bereit.  
@@ -27,15 +27,15 @@ Die Headerdatei ActivAut.h stellt die Schnittstellen, die in diesem Abschnitt au
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  Die folgenden Schnittstellen aktivieren die Webseite zu erstellen:  
   
--   [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)  
+- [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)  
   
--   [IActiveScriptAuthorProcedure-Schnittstelle](../../winscript/reference/iactivescriptauthorprocedure-interface.md)  
+- [IActiveScriptAuthorProcedure-Schnittstelle](../../winscript/reference/iactivescriptauthorprocedure-interface.md)  
   
--   [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)  
+- [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)  
   
--   [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)  
+- [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)  
   
--   [IScriptScriptlet-Schnittstelle](../../winscript/reference/iscriptscriptlet-interface.md)  
+- [IScriptScriptlet-Schnittstelle](../../winscript/reference/iscriptscriptlet-interface.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

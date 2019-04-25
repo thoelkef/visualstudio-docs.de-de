@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110543"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten und der Beziehungen zwischen den Knoten. In der Diagrammansicht kann das Layout des Schemasets auf der Entwurfsoberfläche nicht geändert werden. Die Diagrammansicht enthält auch die Symbolleiste des XML-Schema-Designers und die Breadcrumb-Leiste.  
   
  Das folgende Bild zeigt die Diagrammansicht mit sechs globalen Knoten auf der Entwurfsoberfläche.  
@@ -116,11 +115,11 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 ## <a name="undoredo"></a>Rückgängig/Wiederholen  
  Die Funktion zum Rückgängigmachen bzw. Wiederholen ist in der Diagrammansicht für folgende Aktionen aktiviert:  
   
--   Hinzufügen eines einzelnen Knotens per Drag &amp; Drop  
+- Hinzufügen eines einzelnen Knotens per Drag &amp; Drop  
   
--   Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht  
+- Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht  
   
--   Löschen einzelner oder mehrerer Knoten  
+- Löschen einzelner oder mehrerer Knoten  
   
 ## <a name="zoom"></a>Zoom  
  Die Zoomfunktion befindet sich in der unteren rechten Ecke der Diagrammansicht.  

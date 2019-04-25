@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d3c225df20113308ee7037742ad74efb6a0cc2e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051738"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Die bedingte Kompilierung ist deaktiviert
 Sie haben versucht, die auf eine Variable für die bedingte Kompilierung, ohne zuerst aktivieren, für die bedingte Kompilierung verwenden. Aktivieren der für die bedingte Kompilierung weist die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler interpretiert Bezeichner als bedingte Kompilierungsvariablen mit @ beginnt. Dazu müssen Sie den bedingten Code mit der Anweisung ab:  
@@ -30,7 +30,7 @@ Sie haben versucht, die auf eine Variable für die bedingte Kompilierung, ohne z
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie die folgende Anweisung am Anfang des bedingten Code aus:  
+- Fügen Sie die folgende Anweisung am Anfang des bedingten Code aus:  
   
     ```JavaScript  
     /*@cc_on @*/  

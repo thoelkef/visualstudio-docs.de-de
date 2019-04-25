@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4a839c1d93d89cf6d0502e234f7cb1401a6809
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055404"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Übersicht über Visual Studio-Grafikdiagnose
 Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeichnen und anschließenden Analysieren von Rendering- und Leistungsproblemen in Direct3D-Apps. Die Grafikdiagnose kann für apps verwendet werden, die lokal auf Ihrem Windows PC oder auf einem remote-PC oder Gerät ausgeführt werden.
@@ -59,7 +59,7 @@ Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeich
 
 #### <a name="to-open-the-directx-control-panel"></a>So öffnen Sie die DirectX-Systemsteuerung
 
--   Wählen Sie in der Menüleiste **Debuggen**, **Grafiken** und dann **DirectX-Systemsteuerung** aus.
+- Wählen Sie in der Menüleiste **Debuggen**, **Grafiken** und dann **DirectX-Systemsteuerung** aus.
 
 ## <a name="graphics-analyzer"></a>Grafikanalyse
  Die Visual Studio-Grafikanalyse ist eine eigene Benutzeroberfläche zum Untersuchen von Rendering- und Leistungsproblemen mit bereits erfassten Frames. Die Grafikanalyse umfasst mehrere Tools, mit denen Sie das Renderingverhalten Ihrer App untersuchen und besser verstehen können. Jedes Tool stellt andere Informationen über den untersuchten Frame bereit. Die Tools sind so aufeinander abgestimmt, dass sie die Ursache des Renderingproblems intuitiv eingrenzen, beginnend beim Auftreten des Fehlers im Frame-Puffer.

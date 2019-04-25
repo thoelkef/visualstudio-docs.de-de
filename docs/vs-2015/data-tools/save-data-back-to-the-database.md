@@ -26,17 +26,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961838"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056808"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Das Dataset ist eine in-Memory-Kopie der Daten. Wenn Sie diese Daten ändern, ist es empfiehlt sich, diese Änderungen in der Datenbank zu speichern. Sie führen dies in einer von drei Methoden:  
   
 - Durch Aufrufen einer der `Update` Methoden eines TableAdapters  
@@ -250,11 +249,11 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
  Für die zweite Zeile, jedoch die `Update` Methode automatisch Ruft den Befehl für die richtigen Daten und überträgt ihn an die Datenbank. Die spezielle Syntax der SQL-Anweisung hängt von der SQL-Dialekt der, die von den zugrunde liegenden Datenspeicher unterstützt wird. Die folgenden allgemeinen Merkmale der übertragenen SQL-Anweisung sollten jedoch beachtet werden:  
   
--   Die übertragene SQL-Anweisung ist eine UPDATE-Anweisung. Da der Wert der <xref:System.Data.DataRow.RowState%2A>-Eigenschaft <xref:System.Data.DataRowState> ist, ist es für Adapter offensichtlich, dass sie eine UPDATE-Anweisung verwenden müssen.  
+- Die übertragene SQL-Anweisung ist eine UPDATE-Anweisung. Da der Wert der <xref:System.Data.DataRow.RowState%2A>-Eigenschaft <xref:System.Data.DataRowState> ist, ist es für Adapter offensichtlich, dass sie eine UPDATE-Anweisung verwenden müssen.  
   
--   Die übertragene SQL-Anweisung schließt eine WHERE-Klausel ein, die als Ziel der UPDATE-Anweisung die Zeile angibt, deren Wert `CustomerID = 'c400'` lautet. Durch diesen Teil der SELECT-Anweisung wird die Zielzeile von allen anderen Zeilen unterschieden, da die `CustomerID` der Primärschlüssel der Zieltabelle ist. Die Informationen für die ursprüngliche Version des Datensatzes die WHERE-Klausel abgeleitet wird (`DataRowVersion.Original`), für den Fall, dass die Werte, die erforderlich sind, um die Zeile identifizieren geändert haben.  
+- Die übertragene SQL-Anweisung schließt eine WHERE-Klausel ein, die als Ziel der UPDATE-Anweisung die Zeile angibt, deren Wert `CustomerID = 'c400'` lautet. Durch diesen Teil der SELECT-Anweisung wird die Zielzeile von allen anderen Zeilen unterschieden, da die `CustomerID` der Primärschlüssel der Zieltabelle ist. Die Informationen für die ursprüngliche Version des Datensatzes die WHERE-Klausel abgeleitet wird (`DataRowVersion.Original`), für den Fall, dass die Werte, die erforderlich sind, um die Zeile identifizieren geändert haben.  
   
--   Die übertragene SQL-Anweisung umfasst eine SET-Klausel, mit der der neue Wert geänderter Spalten festgelegt wird.  
+- Die übertragene SQL-Anweisung umfasst eine SET-Klausel, mit der der neue Wert geänderter Spalten festgelegt wird.  
   
     > [!NOTE]
     >  Wenn die `UpdateCommand`-Eigenschaft des TableAdapter auf den Namen einer gespeicherten Prozedur festgelegt wurde, erstellt der Adapter keine SQL-Anweisung. Stattdessen wird die gespeicherte Prozedur mit den entsprechenden übergebenen Parametern aufgerufen.  

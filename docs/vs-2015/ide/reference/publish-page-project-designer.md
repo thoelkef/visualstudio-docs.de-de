@@ -18,17 +18,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778603"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658213"
 ---
 # <a name="publish-page-project-designer"></a>Seite "Veröffentlichen", Projekt-Designer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet.  
   
  Wählen Sie zum Aufrufen der Seite **Veröffentlichen** im **Projektmappenexplorer**einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** .  
@@ -78,18 +77,18 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../../deployment/publishing-clickonce-applications.md)   
- [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Vorgehensweise: Angeben des Speicherorts, an den Visual Studio die Dateien kopiert](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
- [Vorgehensweise: Angeben des Speicherorts für die Installation durch Endbenutzer](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
- [Vorgehensweise: Angeben eines Links für technischen Support](../../deployment/how-to-specify-a-link-for-technical-support.md)   
- [Vorgehensweise: Angeben des Offline- oder Onlineinstallationsmodus von ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
+ [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Vorgehensweise: Geben Sie, in denen Visual Studio die Dateien kopiert an](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Vorgehensweise: Geben Sie den Speicherort, in dem von Endbenutzern installieren](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
+ [Vorgehensweise: Geben Sie einen Link für den technischen Support](../../deployment/how-to-specify-a-link-for-technical-support.md)   
+ [Vorgehensweise: Geben Sie die ClickOnce Offline oder Online-Installationsmodus](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
  [Vorgehensweise: Aktivieren von AutoStart für Installationen von CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)   
  [Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion](../../deployment/how-to-set-the-clickonce-publish-version.md)   
  [Vorgehensweise: Automatisches Erhöhen der ClickOnce-Veröffentlichungsversion](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
- [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)   
  [Vorgehensweise: Ändern der Veröffentlichungssprache einer ClickOnce-Anwendung](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
- [Vorgehensweise: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
+ [Vorgehensweise: Angeben eines Namens für eine ClickOnce-Anwendung im Menü](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [ClickOnce-Sicherheit und Bereitstellung](../../deployment/clickonce-security-and-deployment.md)

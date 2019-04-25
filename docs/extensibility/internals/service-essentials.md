@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070380"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet es sich um einen bestimmten Satz von Schnittstellen für einen anderen VSPackage zu nutzen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist selbst eine Auflistung von VSPackages, die Dienste für andere VSPackages bereitstellt.
@@ -68,15 +68,15 @@ Sie können die meisten Visual Studio-Dienste abrufen, durch Aufrufen der statis
 
 Glücklicherweise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> ordnungsgemäß in den meisten Fällen funktioniert.
 
--   Wenn eine VSPackage ein Dienst, der nur auf einem anderen VSPackage bezeichnet bereitstellt, ist das VSPackage, die die Dienste anfordern positioniert, vor dem VSPackage, das, dass der Dienst geladen werden.
+- Wenn eine VSPackage ein Dienst, der nur auf einem anderen VSPackage bezeichnet bereitstellt, ist das VSPackage, die die Dienste anfordern positioniert, vor dem VSPackage, das, dass der Dienst geladen werden.
 
--   Wenn von einem VSPackage ein Toolfenster erstellt wird, ist das VSPackage positioniert, bevor das Toolfenster erstellt wird.
+- Wenn von einem VSPackage ein Toolfenster erstellt wird, ist das VSPackage positioniert, bevor das Toolfenster erstellt wird.
 
--   Wenn ein Toolfenster erstellt, die von einem VSPackage ein Steuerelementcontainer gehostet wird, ist das VSPackage positioniert, bevor der Steuerelement-Container erstellt wird.
+- Wenn ein Toolfenster erstellt, die von einem VSPackage ein Steuerelementcontainer gehostet wird, ist das VSPackage positioniert, bevor der Steuerelement-Container erstellt wird.
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Um einen Dienst in einem Werkzeugcontainer Fensters oder Steuerelements zu erhalten.
 
--   Fügen Sie diesen Code im Konstruktor, Toolfenster oder Control-Containers an:
+- Fügen Sie diesen Code im Konstruktor, Toolfenster oder Control-Containers an:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

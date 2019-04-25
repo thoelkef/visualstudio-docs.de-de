@@ -1,5 +1,5 @@
 ---
-title: Vervollständigungslisten in C# | Microsoft-Dokumentation
+title: Vervollständigungslisten in c# | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,15 +12,16 @@ caps.latest.revision: 16
 author: BillWagner
 ms.author: wiwagn
 manager: jillfra
-ms.openlocfilehash: d7b0e85646edcc76b445622b97fedb4a1e05428e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9806a5f092ab4924533f67c22d0adf78b99fb8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050724"
 ---
-# <a name="completion-lists-in-c"></a>Vervollständigungslisten in C# #
-Dieser Inhalt wurde verschoben, um [Visual C#-IntelliSense](../ide/visual-csharp-intellisense.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)
+# <a name="completion-lists-in-c"></a>Vervollständigungslisten in C#\#
+
+Dieser Inhalt wurde verschoben, um [Visual C#-IntelliSense](../ide/visual-csharp-intellisense.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)

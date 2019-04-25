@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115990"
 ---
 # <a name="schema-cache"></a>Schemacache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas bereit. Der Schemacache ist global für alle Benutzer auf dem Computer und enthält XML-Standardschemata, die für IntelliSense und die Validierung von XML-Dokumenten verwendet werden.  
 
  Der XML-Editor finden auch in der Projektmappe gespeicherte Schemata, Schemas angegeben der **Schemas** Feld des Dokuments **Eigenschaften** und Schemata identifizierte die `xsi:schemaLocation` und `xsi:noNamespaceSchemaLocation`Attribute.  
 
  In der folgenden Tabelle werden die mit dem XML-Editor installierten Schemata beschrieben.  
-
 
 |     Dateiname      |                                                      Beschreibung                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -111,21 +109,21 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis %InstallRoot%\Xml\Schemas
 
 #### <a name="to-change-the-schema-cache-location"></a>So ändern Sie den Speicherort für den Schemacache  
 
-1.  Von der **Tools** , wählen Sie im Menü **Optionen**.  
+1. Von der **Tools** , wählen Sie im Menü **Optionen**.  
 
-2.  Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und klicken Sie dann auf **Sonstiges**.  
+2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und klicken Sie dann auf **Sonstiges**.  
 
-3.  Klicken Sie auf die **Durchsuchen** Schaltfläche der **Schemas** Feld.  
+3. Klicken Sie auf die **Durchsuchen** Schaltfläche der **Schemas** Feld.  
 
-4.  Wählen Sie den Ordner für den Schemacache aus, und klicken Sie auf **OK**.  
+4. Wählen Sie den Ordner für den Schemacache aus, und klicken Sie auf **OK**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>So fügen Sie ein anderes Verzeichnis für häufig verwendete Schemata hinzu  
 
-1.  Bearbeiten Sie die Datei catalog.xml im Verzeichnis des Schemacaches des XML-Editors.  
+1. Bearbeiten Sie die Datei catalog.xml im Verzeichnis des Schemacaches des XML-Editors.  
 
-2.  Fügen Sie ein neues `<Catalog href="…"/>`-Element hinzu, das auf das Verzeichnis der zusätzlichen Schemata zeigt.  
+2. Fügen Sie ein neues `<Catalog href="…"/>`-Element hinzu, das auf das Verzeichnis der zusätzlichen Schemata zeigt.  
 
-3.  Speichern Sie die Änderungen.  
+3. Speichern Sie die Änderungen.  
 
      Der Katalog wird automatisch neu geladen.  
 

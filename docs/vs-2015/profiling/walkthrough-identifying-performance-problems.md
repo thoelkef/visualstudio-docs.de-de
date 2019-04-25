@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096516"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
  Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schritte aus:  
   
--   Profilerstellung einer Anwendung mithilfe der Samplingmethode  
+- Profilerstellung einer Anwendung mithilfe der Samplingmethode  
   
--   Analysieren der Ergebnisse der Profilerstellung, für die ein Sampling durchgeführt wurde, um ein Leistungsproblem zu lokalisieren und zu beheben  
+- Analysieren der Ergebnisse der Profilerstellung, für die ein Sampling durchgeführt wurde, um ein Leistungsproblem zu lokalisieren und zu beheben  
   
--   Profilerstellung einer Anwendung mithilfe der Instrumentationsmethode  
+- Profilerstellung einer Anwendung mithilfe der Instrumentationsmethode  
   
--   Analysieren der Ergebnisse der Profilerstellung, für die eine Instrumentation durchgeführt wurde, um ein Leistungsproblem zu lokalisieren und zu beheben  
+- Analysieren der Ergebnisse der Profilerstellung, für die eine Instrumentation durchgeführt wurde, um ein Leistungsproblem zu lokalisieren und zu beheben  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
   
 - Grundlegende Kenntnisse über C#.  
   
@@ -51,29 +51,29 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>So führen Sie eine Profilerstellung einer Anwendung mithilfe der Samplingmethode aus  
   
-1.  Öffnen Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] mit Administratorrechten. Die Ausführung als Administrator ist für die Profilerstellung erforderlich.  
+1. Öffnen Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] mit Administratorrechten. Die Ausführung als Administrator ist für die Profilerstellung erforderlich.  
   
-2.  Öffnen Sie die Projektmappe "PeopleTrax".  
+2. Öffnen Sie die Projektmappe "PeopleTrax".  
   
      Die Projektmappe PeopleTrax wird jetzt im Projektmappen-Explorer angezeigt.  
   
-3.  Legen Sie die Einstellung für die Projektkonfiguration auf **Release** fest.  
+3. Legen Sie die Einstellung für die Projektkonfiguration auf **Release** fest.  
   
      Verwenden Sie zum Ermitteln von Leistungsproblemen in der Anwendung nach Möglichkeit einen Releasebuild. Für die Profilerstellung wird ein Releasebuild empfohlen, da bei einem Debugbuild zusätzliche Informationen in den Build kompiliert werden, die die Leistung beeinträchtigen können. Leistungsprobleme werden daher möglicherweise nicht korrekt vermittelt.  
   
-4.  Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
+4. Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
   
      Der Leistungs-Assistent wird angezeigt.  
   
-5.  Vergewissern Sie sich, dass **CPU-Sampling (empfohlen)** ausgewählt ist, und klicken Sie anschließend auf **Weiter**.  
+5. Vergewissern Sie sich, dass **CPU-Sampling (empfohlen)** ausgewählt ist, und klicken Sie anschließend auf **Weiter**.  
   
-6.  Wählen Sie unter **Welche Anwendung soll für die Profilerstellung als Ziel festgelegt werden** die Option „PeopleTrax“ aus, und klicken Sie auf **Weiter**.  
+6. Wählen Sie unter **Welche Anwendung soll für die Profilerstellung als Ziel festgelegt werden** die Option „PeopleTrax“ aus, und klicken Sie auf **Weiter**.  
   
      Das Projekt wird von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] erstellt, und die Profilerstellung für die Anwendung wird gestartet. Das Anwendungsfenster für **PeopleTrax** wird angezeigt.  
   
-7.  Klicken Sie auf **Get People** (Personen abrufen).  
+7. Klicken Sie auf **Get People** (Personen abrufen).  
   
-8.  Klicken Sie auf **Daten exportieren**.  
+8. Klicken Sie auf **Daten exportieren**.  
   
      In Editor wird eine neue Datei angezeigt, die die exportierten Daten aus **PeopleTrax** enthält.  
   
@@ -83,23 +83,23 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 #### <a name="to-analyze-sampled-profiling-results"></a>So analysieren Sie die Ergebnisse der Profilerstellung, für die ein Sampling durchgeführt wurde  
   
-1.  Die Ansicht „Zusammenfassung“ enthält eine Zeitachse mit der CPU-Auslastung für den Zeitraum der Profilerstellung, die Liste **Langsamster Pfad**, die die aktivste Verzweigung der Aufrufstruktur der Anwendung darstellt, sowie die Liste **Funktionen, die die meisten Einzelaufgaben durchführen** mit den Funktionen, die beim Ausführen des Codes im eigenen Funktionstext am stärksten gesampelt wurden.  
+1. Die Ansicht „Zusammenfassung“ enthält eine Zeitachse mit der CPU-Auslastung für den Zeitraum der Profilerstellung, die Liste **Langsamster Pfad**, die die aktivste Verzweigung der Aufrufstruktur der Anwendung darstellt, sowie die Liste **Funktionen, die die meisten Einzelaufgaben durchführen** mit den Funktionen, die beim Ausführen des Codes im eigenen Funktionstext am stärksten gesampelt wurden.  
   
      Überprüfen Sie die Liste **Langsamster Pfad**, und beachten Sie, dass es sich bei der Methode „PeopleNS.People.GetNames“ um die PeopleTrax-Funktion handelt, die dem Ende der Liste am nächsten ist. Aufgrund dieser Position eignet sich das Element besonders gut für eine Analyse. Klicken Sie auf den Funktionsnamen, um in der Ansicht **Funktionsdetails** Details zu „GetNames“ anzuzeigen.  
   
-2.  Die Ansicht **Funktionsdetails** enthält zwei Fenster. Das Fenster "Kostenverteilung" enthält eine grafische Darstellung der ausgeführten Aufgaben der Funktion, eine Darstellung der Aufgaben, die von den aufgerufenen Funktionen ausgeführt wurden, sowie eine Darstellung des Beitrags von Funktionen, von denen die Funktion aufgerufen wurde, zur Anzahl der gesampelten Instanzen. Durch Klicken auf einen Funktionsnamen können Sie die Funktion ändern, die sich im Fokus der Ansicht befindet. So können Sie beispielsweise auf "PeopleNS.People.GetPeople" klicken, um die Funktion "GetPeople" auszuwählen.  
+2. Die Ansicht **Funktionsdetails** enthält zwei Fenster. Das Fenster "Kostenverteilung" enthält eine grafische Darstellung der ausgeführten Aufgaben der Funktion, eine Darstellung der Aufgaben, die von den aufgerufenen Funktionen ausgeführt wurden, sowie eine Darstellung des Beitrags von Funktionen, von denen die Funktion aufgerufen wurde, zur Anzahl der gesampelten Instanzen. Durch Klicken auf einen Funktionsnamen können Sie die Funktion ändern, die sich im Fokus der Ansicht befindet. So können Sie beispielsweise auf "PeopleNS.People.GetPeople" klicken, um die Funktion "GetPeople" auszuwählen.  
   
      Das Fenster **Funktionscodeansicht** enthält den Quellcode für die Funktion (sofern verfügbar). Darüber hinaus werden die speicherintensivsten Zeilen in der ausgewählten Funktion hervorgehoben. Ist "GetNames" ausgewählt, ist zu sehen, dass von dieser Funktion eine Zeichenfolge aus den Anwendungsressourcen gelesen wird und die einzelnen Zeilen in der Zeichenfolge anschließend mithilfe von <xref:System.IO.StringReader> einer <xref:System.Collections.ArrayList> hinzugefügt werden. Diese Funktion kann offenbar nicht optimiert werden.  
   
-3.  Da es sich bei "PeopleNS.People.GetPeople" um den einzigen Aufrufer von "GetNames" handelt, klicken Sie im Fenster "Kostenverteilung" auf "GetPeople", um den Code zu untersuchen. Von dieser Methode wird eine <xref:System.Collections.ArrayList> mit PersonInformationNS.PersonInformation-Objekten aus den Namen der Personen und Unternehmen zurückgegeben, die von "GetNames" erstellt wurden. "GetNames" wird jedoch bei jeder Erstellung des PersonInformation-Objekts zweimal aufgerufen. Wie Sie sehen, lässt sich die Methode auf einfache Weise optimieren, indem die Listen lediglich einmal beim Start der Methode erstellt und während der PersonInformation-Erstellungsschleife indiziert werden.  
+3. Da es sich bei "PeopleNS.People.GetPeople" um den einzigen Aufrufer von "GetNames" handelt, klicken Sie im Fenster "Kostenverteilung" auf "GetPeople", um den Code zu untersuchen. Von dieser Methode wird eine <xref:System.Collections.ArrayList> mit PersonInformationNS.PersonInformation-Objekten aus den Namen der Personen und Unternehmen zurückgegeben, die von "GetNames" erstellt wurden. "GetNames" wird jedoch bei jeder Erstellung des PersonInformation-Objekts zweimal aufgerufen. Wie Sie sehen, lässt sich die Methode auf einfache Weise optimieren, indem die Listen lediglich einmal beim Start der Methode erstellt und während der PersonInformation-Erstellungsschleife indiziert werden.  
   
-4.  Im Code der Beispielanwendung ist eine alternative Version von "GetPeople" enthalten. Fügen Sie den Buildeigenschaften ein Symbol für die bedingte Kompilierung hinzu, um die optimierte Funktion aufzurufen. Klicken Sie im Fenster „Projektmappen-Explorer“ mit der rechten Maustaste auf das Projekt „People“, und klicken Sie anschließend auf **Eigenschaften**. Klicken Sie im Menü der Eigenschaftenseite auf **Erstellen**, und geben Sie anschließend im Textfeld „Conditional compilation symbol“ (Symbol für bedingte Kompilierung) den Text **OPTIMIZED_GETPEOPLE** ein. Im nächsten Build wird die ursprüngliche Methode durch die optimierte Version von "GetPeople" ersetzt.  
+4. Im Code der Beispielanwendung ist eine alternative Version von "GetPeople" enthalten. Fügen Sie den Buildeigenschaften ein Symbol für die bedingte Kompilierung hinzu, um die optimierte Funktion aufzurufen. Klicken Sie im Fenster „Projektmappen-Explorer“ mit der rechten Maustaste auf das Projekt „People“, und klicken Sie anschließend auf **Eigenschaften**. Klicken Sie im Menü der Eigenschaftenseite auf **Erstellen**, und geben Sie anschließend im Textfeld „Conditional compilation symbol“ (Symbol für bedingte Kompilierung) den Text **OPTIMIZED_GETPEOPLE** ein. Im nächsten Build wird die ursprüngliche Methode durch die optimierte Version von "GetPeople" ersetzt.  
   
-5.  Führen Sie die Leistungssitzung erneut aus. Klicken Sie auf der Symbolleiste des Leistungs-Explorers auf **Mit Profilerstellung starten**. Klicken Sie auf **Get People** (Personen abrufen) und anschließend auf **Daten exportieren**. Schließen Sie das angezeigte Editor-Fenster und anschließend die Anwendung "PeopleTrax".  
+5. Führen Sie die Leistungssitzung erneut aus. Klicken Sie auf der Symbolleiste des Leistungs-Explorers auf **Mit Profilerstellung starten**. Klicken Sie auf **Get People** (Personen abrufen) und anschließend auf **Daten exportieren**. Schließen Sie das angezeigte Editor-Fenster und anschließend die Anwendung "PeopleTrax".  
   
      Eine neue Profilerstellungs-Datendatei wird generiert, und im Hauptfenster von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird eine **Zusammenfassung** für die neuen Daten angezeigt.  
   
-6.  Wählen Sie zum Vergleichen der beiden Profilerstellungen im Leistungs-Explorer die beiden Datendateien aus, klicken Sie mit der rechten Maustaste auf die Dateien, und klicken Sie anschließend auf **Leistungsberichte vergleichen**. Im Hauptfenster von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird ein Fenster mit einem Vergleichsbericht angezeigt. Die Spalte **Delta** enthält die Änderung des Leistungswerts der Funktionen vom früheren **Baselinewert** zum späteren **Vergleichswert**. Die zu vergleichenden Werte können in der Dropdownliste **Spalte** ausgewählt werden. Wählen Sie **Inklusive Samplings in %** aus.  
+6. Wählen Sie zum Vergleichen der beiden Profilerstellungen im Leistungs-Explorer die beiden Datendateien aus, klicken Sie mit der rechten Maustaste auf die Dateien, und klicken Sie anschließend auf **Leistungsberichte vergleichen**. Im Hauptfenster von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird ein Fenster mit einem Vergleichsbericht angezeigt. Die Spalte **Delta** enthält die Änderung des Leistungswerts der Funktionen vom früheren **Baselinewert** zum späteren **Vergleichswert**. Die zu vergleichenden Werte können in der Dropdownliste **Spalte** ausgewählt werden. Wählen Sie **Inklusive Samplings in %** aus.  
   
      Beachten Sie, dass bei der GetPeople-Methode und der GetNames-Methode eine beträchtliche Leistungssteigerung zu verzeichnen ist.  
   
@@ -110,25 +110,25 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Profil ein
   
 #### <a name="to-profile-an-existing-application-by-using-the-instrumentation-method"></a>So führen Sie eine Profilerstellung einer vorhandenen Anwendung mithilfe der Instrumentationsmethode durch  
   
-1.  Öffnen Sie ggf. die Anwendung "PeopleTrax" in Visual Studio.  
+1. Öffnen Sie ggf. die Anwendung "PeopleTrax" in Visual Studio.  
   
      Vergewissern Sie sich, dass Sie als Administrator angemeldet sind und die Buildkonfiguration für die Projektmappe auf **Release** festgelegt ist.  
   
-2.  Klicken Sie im Leistungs-Explorer auf **Instrumentierung**.  
+2. Klicken Sie im Leistungs-Explorer auf **Instrumentierung**.  
   
-3.  Klicken Sie auf der Symbolleiste des Leistungs-Explorers auf **Mit Profilerstellung starten**.  
+3. Klicken Sie auf der Symbolleiste des Leistungs-Explorers auf **Mit Profilerstellung starten**.  
   
      Das Projekt wird erstellt, und die Profilerstellung der Anwendung wird gestartet. Das Anwendungsfenster für "PeopleTrax" wird angezeigt.  
   
-4.  Klicken Sie auf **Get People** (Personen abrufen).  
+4. Klicken Sie auf **Get People** (Personen abrufen).  
   
      Im Datenblatt PeopleTrax werden Daten angezeigt.  
   
-5.  Warten Sie etwa 10 Sekunden, und klicken Sie anschließend auf **Daten exportieren**.  
+5. Warten Sie etwa 10 Sekunden, und klicken Sie anschließend auf **Daten exportieren**.  
   
      In **Editor** wird eine neue Datei angezeigt, die eine Liste der Personen aus PeopleTrax enthält. Durch das Warten lässt sich die Datenexportprozedur für die Filterung leichter identifizieren.  
   
-6.  Schließen Sie **Editor**, und schließen Sie dann die Anwendung **PeopleTrax**.  
+6. Schließen Sie **Editor**, und schließen Sie dann die Anwendung **PeopleTrax**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] generiert einen Bericht über die Leistungssitzung (* .vsp).  
   

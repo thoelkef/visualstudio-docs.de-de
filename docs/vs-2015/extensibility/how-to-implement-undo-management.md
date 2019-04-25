@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112610"
 ---
 # <a name="how-to-implement-undo-management"></a>Vorgehensweise: Implementieren von Rückgängig-Verwaltung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Zur Unterstützung von Rückgängig-Verwaltung für einen Single-View-editor  
   
-1.  Rufen Sie `QueryInterface` auf die `IServiceProvider` Schnittstelle für den Fensterrahmen für `IOleUndoManager`, aus dem Dokumentobjekt anzeigen, auf den rückgängig-Manager (`IID_IOLEUndoManager`).  
+1. Rufen Sie `QueryInterface` auf die `IServiceProvider` Schnittstelle für den Fensterrahmen für `IOleUndoManager`, aus dem Dokumentobjekt anzeigen, auf den rückgängig-Manager (`IID_IOLEUndoManager`).  
   
-2.  Wenn eine Ansicht in einen Fensterrahmen positioniert wird, erhält Sie einen Standort-Zeiger ist, die sie, zum Aufrufen verwenden können `QueryInterface` für `IServiceProvider`.  
+2. Wenn eine Ansicht in einen Fensterrahmen positioniert wird, erhält Sie einen Standort-Zeiger ist, die sie, zum Aufrufen verwenden können `QueryInterface` für `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Fälle, in ein Editor für mehrere Ansichten unterstützt  
  Wenn Sie die Trennung von Dokument und Ansicht verfügen, ist normalerweise ein Rückgängig-Manager, die das Dokument selbst zugeordnet. Alle Rückgängig-Komponenten werden auf einer Rückgängig-Manager das dokumentendatenobjekt zugeordneten platziert.  
@@ -48,17 +48,17 @@ Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref
   
 3. Relay Ihre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Aufrufe in den gespeicherten `IOleCommandTarget` Schnittstelle für die folgenden StandardCommandSet97-Befehle:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Rufen Sie `QueryInterface` auf `IOleUndoManager` für `IID_IVsChangeTrackingUndoManager`. Den Zeiger auf Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   

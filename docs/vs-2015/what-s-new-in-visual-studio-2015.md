@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041834"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Neuerungen in Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Weitere Informationen zu den zahlreichen Verbesserungen und neuen Features in Vi
 ## <a name="cross-platform-debugging-support"></a>Unterstützung für plattformübergreifendes Debugging
  Mit Visual Studio können Sie systemeigene mobile Apps erstellen und debuggen, die auf Windows-, IOS- und Android-Geräten ausgeführt werden. Verwenden Sie den [Visual Studio Emulator für Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), oder schließen Sie ein Gerät an, und debuggen Sie Ihren Code direkt in Visual Studio.
 
--   **JavaScript/Cordova**. Verwenden Sie die [Visual Studio-Tools für Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) , um systemeigene Apps für Windows, iOS und Android mit JavaScript zu erstellen.
+- **JavaScript/Cordova**. Verwenden Sie die [Visual Studio-Tools für Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) , um systemeigene Apps für Windows, iOS und Android mit JavaScript zu erstellen.
 
      [Debuggen der App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) in der MSDN-Bibliothek ist eine ausführliche Übersicht über Visual Studio debugging-Unterstützung für Cordova.
 
--   **C#/Xamarin**. Verwenden Sie [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) , um systemeigene Apps für Windows, iOS und Android in Visual Studio mit C# zu erstellen.
+- **C#/Xamarin**. Verwenden Sie [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) , um systemeigene Apps für Windows, iOS und Android in Visual Studio mit C# zu erstellen.
 
      [Debugging](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) und [Debug on Device](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) in den [Xamarin-Entwicklerhandbüchern](http://developer.xamarin.com/guides) beschreiben den Debugvorgang.
 
--   **C++/Android**. Verwenden Sie die [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) -Vorlagen zusammen mit Drittanbietertools wie [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) zum Erstellen von systemeigenen Apps für Windows und Android.
+- **C++/Android**. Verwenden Sie die [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) -Vorlagen zusammen mit Drittanbietertools wie [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) zum Erstellen von systemeigenen Apps für Windows und Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debuggen und Diagnose
 
@@ -140,7 +140,7 @@ Weitere Informationen zu den neuerungen bei der Diagnose finden Sie unter [Neuig
 Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschiedene Arten von Diagnosen und Analysen des Codes durchgeführt werden können:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zu den ersten Schritten finden Sie unter [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips zeigen beim Debuggen die Ausführungszeit von Methoden an, sodass Sie schnell Engpässe erkennen können, ohne den Profiler zu starten. Informationen zum Einstieg finden Sie unter [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Fehlerliste
  Die Fehlerliste kann nun nach einer beliebigen Spalte gefiltert werden. Sie zeigt zudem eine Liveansicht von Fehlern, Warnungen und Codeanalysen für die gesamte C#- oder Visual Basic-Projektmappe an, selbst wenn eine Codeänderung Tausende von Warnungen nach sich zieht. Die neue Fehlerliste ist abwärtskompatibel zur derzeitigen Verwendung. Weitere Informationen finden Sie unter [Error List Window](./ide/reference/error-list-window.md).
@@ -179,18 +179,18 @@ Im Folgenden werden neue oder verbesserte Tools vorgestellt, mit denen verschied
 ### <a name="notification-hub"></a>Notification Hub
  Die Benutzeroberfläche für den Notification Hub wurde optimiert und kann jetzt schneller durchsucht werden. Es wurden weitere Arten von Benachrichtigungen hinzugefügt, z. B. für Leistungsprobleme, Renderingprobleme und Abstürze, und Sie können Visual Studio jetzt anweisen, eine Benachrichtigung nicht mehr anzuzeigen. Weitere Informationen finden Sie unter [Visual Studio-Benachrichtigungen](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln, was mit Ihrem Code geschehen ist (nur Enterprise und Professional Editionen)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Ermitteln Sie, was mit Ihrem Code (nur Enterprise und Professional-Editionen) geschehen ist.
  Bleiben Sie auf Ihre Arbeit konzentriert, während Sie Informationen zum Code suchen, ohne den Editor zu verlassen. Sie können Änderungen und andere Verläufe für Arbeitselemente, Fehler, Codeüberprüfungen usw. für den Code prüfen, der in Visual Studio Team Services (VSTS) oder in Team Foundation Server (TFS) gespeichert ist.
 
  Visual Studio Professional und Visual Studio Enterprise ermöglichen jetzt Folgendes:
 
 - Rufen Sie den Verlauf für eine gesamte Codedatei im Visual Studio-Editor ab.
 
-   ![CodeLens: Abrufen von Codedateidetails](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Codedateidetails abrufen](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Zeigen Sie ein Diagramm mit den Personen an, die Ihren Code geändert haben. Dadurch können Sie Muster bei den Änderungen Ihres Teams erkennen und ihre Auswirkung bewerten.
 
-   ![CodeLens: Anzeigen des Verlaufs von Codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Finden Sie unter Verlaufs von codeänderungen als Diagramm](./ide/media/codelens.png "CodeLens")
 
 - Erkennen Sie ganz leicht, wann der Code zuletzt geändert wurde.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110595"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Erstellen der grundlegenden Darstellung einer Billardkugel mithilfe von Form und Textur  
+- Erstellen der grundlegenden Darstellung einer Billardkugel mithilfe von Form und Textur  
   
--   Hinzufügen von Tiefe durch Verwendung des Lambert-Beleuchtungsmodells  
+- Hinzufügen von Tiefe durch Verwendung des Lambert-Beleuchtungsmodells  
   
--   Optimieren der grundlegenden Darstellung mithilfe von Glanzlichtern  
+- Optimieren der grundlegenden Darstellung mithilfe von Glanzlichtern  
   
--   Erzeugen eines Raumgefühls durch das Spiegeln der Umgebung  
+- Erzeugen eines Raumgefühls durch das Spiegeln der Umgebung  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
+## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie folgende Komponenten und Kenntnisse:  
   
--   Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist  
+- Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist  
   
--   Kenntnisse im Umgang mit dem Bild-Editor in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- Kenntnisse im Umgang mit dem Bild-Editor in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Kenntnisse im Umgang mit dem Shader-Designer in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- Kenntnisse im Umgang mit dem Shader-Designer in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Erstellen der grundlegenden Darstellung mit Form und Textur  
  In der Computergrafik sind die ganz grundlegenden Darstellungselemente Form und Farbe. In einer Computersimulation wird häufig ein 3D-Modell verwendet, um die Form eines Objekts der realen Welt darzustellen. Dann werden Farbdetails auf die Modelloberfläche angewendet, indem eine Texturmap verwendet wird.  
@@ -108,7 +108,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine realistis
   
 - Optional können Sie das Beleuchtungsverhalten anpassen, indem Sie die Eigenschaft **MaterialDiffuse** des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.  
   
-  Weitere Informationen zur Verwendung der Lambert-Beleuchtung im Shader finden Sie unter [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Weitere Informationen darüber, wie Sie das Lambert-Beleuchtungsmodell auf Ihren Shader anwenden, finden Sie unter [ Vorgehensweise: Erstellen Sie einen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
   
   Bei angewendetem Lambert-Beleuchtungsmodell sollte die Billardkugel in etwa folgendermaßen aussehen:  
   

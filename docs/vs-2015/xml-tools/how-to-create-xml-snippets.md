@@ -9,39 +9,38 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101374"
 ---
 # <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.  
   
 ## <a name="to-create-a-new-xml-snippet"></a>So erstellen Sie einen neuen XML-Ausschnitt  
  Erstellen Sie einen neuen XML-Code Codeausschnitt erstellen Sie eine neue XML-Datei, und Verwenden der **Ausschnitt einfügen** Feature.  
   
-1.  Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.  
+1. Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.  
   
-2.  Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
+2. Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
   
-3.  Mit der rechten Maustaste im Editor-Bereich, und wählen Sie **Ausschnitt einfügen**.  
+3. Mit der rechten Maustaste im Editor-Bereich, und wählen Sie **Ausschnitt einfügen**.  
   
-4.  Wählen Sie **Codeausschnitt** aus der Liste und drücken Sie die EINGABETASTE.  
+4. Wählen Sie **Codeausschnitt** aus der Liste und drücken Sie die EINGABETASTE.  
   
-5.  Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.  
+5. Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.  
   
-6.  Von der **Datei** Menü die Option **XMLFile.xml speichern**.  
+6. Von der **Datei** Menü die Option **XMLFile.xml speichern**.  
   
      Die **Datei speichern unter** Dialogfeld wird angezeigt.  
   
-7.  Geben Sie den Namen für den neuen Ausschnitt aus, und wählen Sie **Codeausschnittsdateien** aus der **Dateityp** Dropdownfenster.  
+7. Geben Sie den Namen für den neuen Ausschnitt aus, und wählen Sie **Codeausschnittsdateien** aus der **Dateityp** Dropdownfenster.  
   
-8.  Verwenden der **speichern in** Dropdown-Liste aus, um den Dateispeicherort zu ändern, zu dem Ordner "Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets", und drücken dann **speichern**.  
+8. Verwenden der **speichern in** Dropdown-Liste aus, um den Dateispeicherort zu ändern, zu dem Ordner "Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets", und drücken dann **speichern**.  
   
 ## <a name="snippet-description"></a>Ausschnittbeschreibung  
  In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben. Weitere Informationen zu Schema-Elemente, die von der XML-Ausschnitten verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).  

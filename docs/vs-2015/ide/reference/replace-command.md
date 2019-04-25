@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772234"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664487"
 ---
 # <a name="replace-command"></a>Befehl "Ersetzen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ersetzt Text in Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien ersetzen** im Fenster **Suchen und Ersetzen** verfügbar sind.  
   
 ## <a name="syntax"></a>Syntax  

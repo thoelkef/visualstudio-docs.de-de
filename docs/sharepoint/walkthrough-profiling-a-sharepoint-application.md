@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083419"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Das Profil einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Visual Studio-Profiler ermöglicht Ihnen, Auffinden und beseitigen die teuersten (langsamsten) Teil des Projekts, auch bekannt als die *Langsamster Pfad*.
@@ -40,9 +40,9 @@ ms.locfileid: "57867705"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   Unterstützte Editionen von Microsoft Windows und SharePoint.
+- Unterstützte Editionen von Microsoft Windows und SharePoint.
 
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Erstellen Sie ein SharePoint-Projekt
  Erstellen Sie zunächst eine SharePoint-Projekt.
@@ -72,13 +72,13 @@ ms.locfileid: "57867705"
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>So fügen Sie ein Feature und den Funktionsereignisempfänger hinzu
 
-1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Features** Knoten, wählen Sie **Feature hinzufügen**, und behalten Sie den Standardwert für den Namen **Feature1**.
+1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Features** Knoten, wählen Sie **Feature hinzufügen**, und behalten Sie den Standardwert für den Namen **Feature1**.
 
-2.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignisempfänger hinzufügen**.
+2. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignisempfänger hinzufügen**.
 
      Dadurch wird dem Feature eine Codedatei mit verschiedenen auskommentierten Ereignishandlern hinzugefügt, und die Datei wird für die Bearbeitung geöffnet.
 
-3.  Fügen Sie in der Ereignisempfängerklasse die folgenden Variablendeklarationen hinzu.
+3. Fügen Sie in der Ereignisempfängerklasse die folgenden Variablendeklarationen hinzu.
 
     ```vb
     ' SharePoint site/subsite.
@@ -92,7 +92,7 @@ ms.locfileid: "57867705"
     private string webUrl = "/";
     ```
 
-4.  Ersetzen Sie die `FeatureActivated`-Prozedur durch den folgenden Code.
+4. Ersetzen Sie die `FeatureActivated`-Prozedur durch den folgenden Code.
 
     ```vb
     Public Overrides Sub FeatureActivated(properties As SPFeatureReceiverProperties)
@@ -151,7 +151,7 @@ ms.locfileid: "57867705"
     }
     ```
 
-5.  Fügen Sie die folgende Prozedur unter dem `FeatureActivated`Verfahren.
+5. Fügen Sie die folgende Prozedur unter dem `FeatureActivated`Verfahren.
 
     ```vb
 
@@ -178,11 +178,11 @@ ms.locfileid: "57867705"
     }
     ```
 
-6.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt (**ProfileTest**), und wählen Sie dann **Eigenschaften**.
+6. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für das Projekt (**ProfileTest**), und wählen Sie dann **Eigenschaften**.
 
-7.  In der **Eigenschaften** Dialogfeld auf die **SharePoint** Registerkarte.
+7. In der **Eigenschaften** Dialogfeld auf die **SharePoint** Registerkarte.
 
-8.  In der **aktive Bereitstellungskonfiguration** wählen **keine Aktivierung**.
+8. In der **aktive Bereitstellungskonfiguration** wählen **keine Aktivierung**.
 
      Durch die Auswahl dieser Bereitstellungskonfiguration können Sie später die Funktion in SharePoint manuell aktivieren.
 
@@ -193,21 +193,21 @@ ms.locfileid: "57867705"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>So konfigurieren und stellen Sie die SharePoint-Anwendung bereit
 
-1.  Auf der **analysieren** Menü wählen **Leistungs-Assistenten starten**.
+1. Auf der **analysieren** Menü wählen **Leistungs-Assistenten starten**.
 
-2.  Auf der Seite eins von der **Leistungs-Assistent**, lassen Sie die Methode der profilerstellung als **CPU-Sampling** , und wählen Sie die **Weiter** Schaltfläche.
+2. Auf der Seite eins von der **Leistungs-Assistent**, lassen Sie die Methode der profilerstellung als **CPU-Sampling** , und wählen Sie die **Weiter** Schaltfläche.
 
      Die anderen Profilerstellungsmethoden können in komplexeren Profilerstellungssituationen verwendet werden. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](/visualstudio/profiling/understanding-performance-collection-methods).
 
-3.  Auf der Seite zwei von der **Leistungs-Assistent**, lassen Sie das profilziel **ProfileTest** , und wählen Sie die **Weiter** Schaltfläche.
+3. Auf der Seite zwei von der **Leistungs-Assistent**, lassen Sie das profilziel **ProfileTest** , und wählen Sie die **Weiter** Schaltfläche.
 
      Wenn eine Projektmappe über mehrere Projekte verfügt, werden sie in dieser Liste angezeigt.
 
-4.  Auf Seite drei von der **Leistungs-Assistent**Deaktivieren der **Profilerstellung für Ebeneninteraktion aktivieren** aus, und wählen Sie dann die **Weiter** Schaltfläche.
+4. Auf Seite drei von der **Leistungs-Assistent**Deaktivieren der **Profilerstellung für Ebeneninteraktion aktivieren** aus, und wählen Sie dann die **Weiter** Schaltfläche.
 
      Das Feature Profilerstellung für Ebeneninteraktion (Tier Interaction Profiling, TIP) ist für das Messen der Leistung von Anwendungen, die Datenbanken abfragen, sowie für das Anzeigen der Anzahl der Häufigkeit, wie oft eine Webseite angefordert wird, hilfreich. Da diese Daten für dieses Beispiel nicht erforderlich sind, aktivieren wir dieses Feature nicht.
 
-5.  Auf Seite vier von der **Leistungs-Assistent**, lassen Sie die **profilerstellung nach Abschluss des Assistenten starten** ausgewählt, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+5. Auf Seite vier von der **Leistungs-Assistent**, lassen Sie die **profilerstellung nach Abschluss des Assistenten starten** ausgewählt, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
      Der Assistent ermöglicht die anwendungsprofilerstellung auf dem Server, zeigt der **Leistungs-Explorer** Fenster erstellt, bereitgestellt und die SharePoint-Anwendung ausgeführt wird.
 
@@ -216,19 +216,19 @@ ms.locfileid: "57867705"
 
 ### <a name="to-run-the-sharepoint-application"></a>So führen Sie die SharePoint-Anwendung aus
 
-1.  Öffnen Sie in SharePoint die **Websiteaktionen** Menü, und wählen Sie dann **Standorteinstellungen**.
+1. Öffnen Sie in SharePoint die **Websiteaktionen** Menü, und wählen Sie dann **Standorteinstellungen**.
 
-2.  In der **Websiteaktionen** wählen die **Websitefeatures verwalten** Link.
+2. In der **Websiteaktionen** wählen die **Websitefeatures verwalten** Link.
 
-3.  In der **Features** wählen die **aktivieren** neben **ProfileTest Feature1**.
+3. In der **Features** wählen die **aktivieren** neben **ProfileTest Feature1**.
 
      Aufgrund der in der `FeatureActivated`-Funktion aufgerufenen Leerlaufschleife tritt eine Pause auf, wenn Sie dies vornehmen.
 
-4.  Auf der **Schnellstart** Leiste **listet** , und klicken Sie dann in der **listet** wählen **Ankündigungen**.
+4. Auf der **Schnellstart** Leiste **listet** , und klicken Sie dann in der **listet** wählen **Ankündigungen**.
 
      Beachten Sie, dass der Liste eine neue Ankündigung hinzugefügt wurde, aus der hervorgeht, dass die Funktion aktiviert wurde.
 
-5.  Schließen Sie die SharePoint-Website.
+5. Schließen Sie die SharePoint-Website.
 
      Nach dem Schließen von SharePoint der Profiler erstellt und zeigt ein Beispiel-Profilerstellungsbericht und speichert es als eine VSP-Datei in die **ProfileTest** Ordner des Projekts.
 
@@ -237,19 +237,19 @@ ms.locfileid: "57867705"
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>Zum Anzeigen und Interpretieren der Ergebnisse des Profils
 
-1.  In der **Funktionen, die meisten Einzelaufgaben durchführen** Abschnitt der Beispiel-Berichterstellungsberichts, beachten Sie, dass `TimeCounter` wird am oberen Rand der Liste.
+1. In der **Funktionen, die meisten Einzelaufgaben durchführen** Abschnitt der Beispiel-Berichterstellungsberichts, beachten Sie, dass `TimeCounter` wird am oberen Rand der Liste.
 
      Diese Position deutet darauf hin, dass es sich bei `TimeCounter` um eine der Funktionen mit der höchsten Anzahl an Beispielen gehandelt hat. Hierbei handelt es sich also um einen der größten Leistungsengpässe in der Anwendung. Diese Situation ist nicht überraschend, da dies für Demonstrationszwecke extra so entworfen wurde.
 
-2.  In der **Funktionen, die meisten Einzelaufgaben durchführen** Abschnitt der `ProcessRequest` Link, um die kostenverteilung für anzuzeigen die `ProcessRequest` Funktion.
+2. In der **Funktionen, die meisten Einzelaufgaben durchführen** Abschnitt der `ProcessRequest` Link, um die kostenverteilung für anzuzeigen die `ProcessRequest` Funktion.
 
      In der **aufgerufenen Funktionen** Abschnitt `ProcessRequest`, beachten Sie, dass die **FeatureActiviated** aufgeführt ist als am häufigsten aufgerufene Funktion.
 
-3.  In der **aufgerufenen Funktionen** Abschnitt der **FeatureActivated** Schaltfläche.
+3. In der **aufgerufenen Funktionen** Abschnitt der **FeatureActivated** Schaltfläche.
 
      In der **aufgerufenen Funktionen** Abschnitt **FeatureActivated**, `TimeCounter` aufgeführt ist als am häufigsten aufgerufene Funktion. In der **Funktionscodeansicht** Bereich, der hervorgehobene Code (`TimeCounter`) ist der Hotspot, und gibt an, wo die Korrektur erforderlich ist.
 
-4.  Schließen Sie den Beispiel-Profilerstellungsbericht.
+4. Schließen Sie den Beispiel-Profilerstellungsbericht.
 
      Um den Bericht erneut zu einem beliebigen Zeitpunkt anzuzeigen, öffnen Sie die VSP-Datei in die **Leistungs-Explorer** Fenster.
 
@@ -258,17 +258,17 @@ ms.locfileid: "57867705"
 
 ### <a name="to-fix-the-code-and-reprofile-the-application"></a>So beheben Sie den Code und nehmen eine erneute Profilerstellung der Anwendung vor
 
-1.  Kommentieren Sie im Funktionsereignisempfänger-Code den `TimeCounter`-Methodenaufruf in `FeatureActivated` aus, um zu verhindern, dass er aufgerufen wird.
+1. Kommentieren Sie im Funktionsereignisempfänger-Code den `TimeCounter`-Methodenaufruf in `FeatureActivated` aus, um zu verhindern, dass er aufgerufen wird.
 
-2.  Speichern Sie das Projekt.
+2. Speichern Sie das Projekt.
 
-3.  In **Leistungs-Explorer**, öffnen Sie den Ordner "Ziele" aus, und wählen Sie dann die **ProfileTest** Knoten.
+3. In **Leistungs-Explorer**, öffnen Sie den Ordner "Ziele" aus, und wählen Sie dann die **ProfileTest** Knoten.
 
-4.  Auf der **Leistungs-Explorer** Symbolleiste in der **Aktionen** Registerkarte die **Profilerstellung starten** Schaltfläche.
+4. Auf der **Leistungs-Explorer** Symbolleiste in der **Aktionen** Registerkarte die **Profilerstellung starten** Schaltfläche.
 
      Wenn Sie eine der profilerstellungs-Eigenschaften vor dem erneute profilerstellung der Anwendung ändern möchten, wählen Sie möchten die **Leistungs-Assistenten starten** stattdessen die Schaltfläche.
 
-5.  Befolgen Sie die Anweisungen in der **Ausführen der SharePoint-Anwendung** Abschnitt weiter oben in diesem Thema.
+5. Befolgen Sie die Anweisungen in der **Ausführen der SharePoint-Anwendung** Abschnitt weiter oben in diesem Thema.
 
      Die Funktion sollte nun weitaus schneller aktiviert werden, da der Aufruf der Leerlaufschleife beseitigt wurde. Im Beispiel-Profilerstellungsbericht wird dies berücksichtigt.
 

@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096529"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58947129"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. In Visual Studio-Umgebung konsistent sein.
 
--   Führen Sie die vorhandenen Interaktionsmuster innerhalb der Shell.
+- Führen Sie die vorhandenen Interaktionsmuster innerhalb der Shell.
 
--   Entwerfen Sie Funktionen mit der Shell visual Sprache und handwerkliches können Anforderungen konsistent sein.
+- Entwerfen Sie Funktionen mit der Shell visual Sprache und handwerkliches können Anforderungen konsistent sein.
 
--   Verwenden Sie freigegebene Befehle und Steuerelemente aus, wenn sie vorhanden sind.
+- Verwenden Sie freigegebene Befehle und Steuerelemente aus, wenn sie vorhanden sind.
 
--   Verstehen Sie die Visual Studio und wie die Anwendung Kontext wird und die Benutzeroberfläche steuert.
+- Verstehen Sie die Visual Studio und wie die Anwendung Kontext wird und die Benutzeroberfläche steuert.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Verwenden Sie die Umgebung-Dienst für Schriftarten und Farben.
 
--   Benutzeroberfläche sollte die aktuelle Schriftart umgebungseinstellung berücksichtigen, es sei denn, es für die Anpassung auf der Seite "Schriftarten und Farben" in das Dialogfeld "Optionen" verfügbar gemacht wird.
+- Benutzeroberfläche sollte die aktuelle Schriftart umgebungseinstellung berücksichtigen, es sei denn, es für die Anpassung auf der Seite "Schriftarten und Farben" in das Dialogfeld "Optionen" verfügbar gemacht wird.
 
--   UI-Elemente müssen die VSColor Service mit gemeinsam genutzten Umgebung Token oder featurespezifische-Token verwenden.
+- UI-Elemente müssen die VSColor Service mit gemeinsam genutzten Umgebung Token oder featurespezifische-Token verwenden.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Stellen Sie alle Bilder konsistent mit dem neuen Visual Studio-Stil.
 
--   Führen Sie Visual Studio-Entwurfsprinzipien für Symbole, Symbole und andere Grafik aus.
+- Führen Sie Visual Studio-Entwurfsprinzipien für Symbole, Symbole und andere Grafik aus.
 
--   Platzieren Sie Text in grafischen Elementen nicht.
+- Platzieren Sie Text in grafischen Elementen nicht.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Vom Standpunkt der benutzerorientierten entwerfen.
 
--   Erstellen Sie die Aufgabenverlauf, bevor Sie darin die einzelnen Funktionen.
+- Erstellen Sie die Aufgabenverlauf, bevor Sie darin die einzelnen Funktionen.
 
--   Mit Ihren Benutzern vertraut sein, und machen Sie dieses Wissen in Ihrem-Spezifikationen explizit.
+- Mit Ihren Benutzern vertraut sein, und machen Sie dieses Wissen in Ihrem-Spezifikationen explizit.
 
--   Bei der Überprüfung der Benutzeroberflächenautomatisierungs bewerten Sie die vollständige Benutzeroberfläche als auch die Details.
+- Bei der Überprüfung der Benutzeroberflächenautomatisierungs bewerten Sie die vollständige Benutzeroberfläche als auch die Details.
 
--   Entwerfen Sie die Benutzeroberfläche so, dass sie funktionsfähig und unabhängig vom Gebietsschema oder der Sprache attraktive bleibt.
+- Entwerfen Sie die Benutzeroberfläche so, dass sie funktionsfähig und unabhängig vom Gebietsschema oder der Sprache attraktive bleibt.
 
 ## <a name="screen-resolution"></a>Bildschirmauflösung
 
@@ -69,9 +69,9 @@ ms.locfileid: "58947129"
 
 #### <a name="feature-team-goals"></a>Feature-Team-Ziele
 
--   Warnen Sie Benutzer, dass sie ein Element hinzugefügt haben, die konfiguriert werden müssen.
+- Warnen Sie Benutzer, dass sie ein Element hinzugefügt haben, die konfiguriert werden müssen.
 
--   Zeichnen Sie die Aufmerksamkeit des Benutzers auf die Bereiche, die Eingabe benötigen.
+- Zeichnen Sie die Aufmerksamkeit des Benutzers auf die Bereiche, die Eingabe benötigen.
 
 #### <a name="anti-pattern-solution"></a>Antimuster für Projektmappen
  Platzieren Sie, sobald der Benutzer eine Aktion initiiert hat und bevor sie die Aufgabe abgeschlossen haben, sofort kritische Hand Symbole neben den Bereichen, die Konfiguration erforderlich.
@@ -88,11 +88,11 @@ ms.locfileid: "58947129"
 #### <a name="alternatives"></a>Alternativen
  Eine viel bessere Lösung für dieses Problem wäre auf:
 
--   Erlaubt dem Benutzer eine Deklaration ohne Warnung hinzufügen, und klicken Sie dann sofort zum Festlegen von Eigenschaften für das Element verschieben.
+- Erlaubt dem Benutzer eine Deklaration ohne Warnung hinzufügen, und klicken Sie dann sofort zum Festlegen von Eigenschaften für das Element verschieben.
 
--   Fügen Sie das Symbol "Warnung" (gold Dreieck) Wenn der Fokus aus dem Element, wie z. B. eine andere Deklaration zur Liste hinzufügen oder versuchen, die Registerkarten im Designer zu ändern.
+- Fügen Sie das Symbol "Warnung" (gold Dreieck) Wenn der Fokus aus dem Element, wie z. B. eine andere Deklaration zur Liste hinzufügen oder versuchen, die Registerkarten im Designer zu ändern.
 
--   Wenn der Benutzer versucht, die Registerkarten ändert, vor dem Festlegen von Eigenschaften für alle Deklarationen, pop ein Dialogfeld darauf hingewiesen, dass die Anwendung nicht erstellt werden (oder alle der Auswirkungen), bis die Warnungen aufgelöst werden. Wenn der Benutzer das Dialogfeld schließt und Registerkarten wird trotzdem klicken Sie dann ein Symbol (kritisch oder Warnung, je nach Bedarf) zur Registerkarte "Deklarationen" hinzugefügt.
+- Wenn der Benutzer versucht, die Registerkarten ändert, vor dem Festlegen von Eigenschaften für alle Deklarationen, pop ein Dialogfeld darauf hingewiesen, dass die Anwendung nicht erstellt werden (oder alle der Auswirkungen), bis die Warnungen aufgelöst werden. Wenn der Benutzer das Dialogfeld schließt und Registerkarten wird trotzdem klicken Sie dann ein Symbol (kritisch oder Warnung, je nach Bedarf) zur Registerkarte "Deklarationen" hinzugefügt.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Erzwingen des Benutzers Text zu lesen, vor dem Schließen der Benutzeroberfläche
 
@@ -173,9 +173,9 @@ ms.locfileid: "58947129"
 
    **Eine bessere Lösung:** Stellen Sie die Frage, die der Benutzer aufgefordert werden würde, auf den Link.
 
--   Wie funktionieren die Windows Azure-Dienste?
+- Wie funktionieren die Windows Azure-Dienste?
 
--   Wann benötige ich ein Windows Azure Mobile Services-Projekt?
+- Wann benötige ich ein Windows Azure Mobile Services-Projekt?
 
 #### <a name="using-click-here-for-links"></a>Mithilfe von "Hier klicken", links
  Links sollte erklären sich von selbst. Es ist ein Anti-Muster verwenden "Hier klicken" oder eine ähnliche Variante.

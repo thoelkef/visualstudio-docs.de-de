@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610605"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584557"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
@@ -54,7 +54,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | CscToolPath | Der Pfad von *csc.exe*, dem [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Compiler. |
 | CustomBeforeMicrosoftCommonTargets | Der Name einer Projektdatei oder TARGETS-Datei, die vor dem allgemeinen TARGETS-Import automatisch importiert werden soll. |
 | DebugSymbols | Ein boolescher Wert, der angibt, ob Symbole vom Build generiert werden.<br /><br /> Durch das Festlegen von **-p:DebugSymbols=false** in der Befehlszeile wird die Generierung von Programmdatenbank-Symboldateien (*PDB*-Dateien) deaktiviert. |
-| DebugType | Definiert den Umfang der zu generierenden Debuginformationen. Gültige Werte sind "full", "pdbonly" und "none". |
+| DebugType | Definiert den Umfang der zu generierenden Debuginformationen. Gültige Werte sind „full“, „pdbonly“, „portable“, „embedded“ und „none“. |
 | DefineConstants | Definiert Konstanten für die bedingte Kompilierung. Symbol-Wert-Paare werden durch Semikolons getrennt und mit der folgenden Syntax angegeben:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Die Eigenschaft entspricht dem `/define`-Compilerschalter. |
 | DefineDebug | Ein boolescher Wert, der angibt, ob die DEBUG-Konstante definiert werden soll. |
 | DefineTrace | Ein boolescher Wert, der angibt, ob die TRACE-Konstante definiert werden soll. |

@@ -11,12 +11,12 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5a7602a152054587fa450beae56ad6cbe2c72241
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075453"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Erweitern anderer Teile von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Es gibt viele weitere Teile der Benutzeroberfläche von Visual Studio, die Sie e
 ## <a name="extending-the-toolbox"></a>Erweitern der Toolbox
  Erfahren Sie, wie Sie die neuen Steuerelemente und andere Elemente zur Toolbox hinzufügen und wie Sie mit der Funktionalität der Toolbox:
 
--   [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Erstellen eines WPF-Toolbox-Steuerelements](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Erstellen eines Windows Forms-Toolbox-Steuerelements](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>Erweitern der Statusleiste
  Erfahren Sie, wie Lese- und Schreibberechtigungen für die Statusleiste und die Statusanzeige und Animationen und andere Benutzeroberfläche bereitstellen: [Erweitern der Statusleiste](../extensibility/extending-the-status-bar.md).

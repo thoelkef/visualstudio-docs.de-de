@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102704"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Kommentieren von Code in einem legacy-Sprachdienst
 Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder kommentieren Sie den Code. Ein Kommentar ist einen Textabschnitt, der enthält zusätzliche Informationen zu den Code wird jedoch ignoriert, während der Kompilierung oder Interpretation erfordern.
@@ -26,10 +26,9 @@ Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder 
 ## <a name="comment-styles"></a>Kommentarstile
 Es gibt zwei allgemeine Arten der Kommentar:
 
-1.  Zeilenkommentare, die der Kommentar, in dem in einer einzelnen Zeile ist.
+1. Zeilenkommentare, die der Kommentar, in dem in einer einzelnen Zeile ist.
 
-2.  Block-Kommentare, in dem der Kommentar auf mehrere Zeilen enthalten kann.
-
+2. Block-Kommentare, in dem der Kommentar auf mehrere Zeilen enthalten kann.
 
 Zeilenkommentare haben in der Regel ein (oder die Anfangszeichen), während blockskommentaren sowohl Start-und Endzeichen haben. In c# ein Zeilenkommentar starten z. B. mit `//`, und ein blockskommentar beginnt mit `/*` und endet mit `*/`.
 

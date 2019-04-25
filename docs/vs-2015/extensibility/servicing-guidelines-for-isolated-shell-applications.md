@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097400"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wartungsrichtlinien für Isolated Shell-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Wenn Sie eine Visual Studio isolated Shell-Anwendung verteilen, müssen Sie mög
   
  Wenn Sie benutzerdefinierte Aktionen in einem Installationsprogramm verwenden, müssen Sie sicherstellen, dass jede benutzerdefinierte Installation-Aktion muss eine entsprechende benutzerdefinierte Aktion rückgängig gemacht werden, wenn der Benutzer die Anwendung deinstalliert haben. Wenn Ihr Programm-Installation schlägt fehl, geben Sie die entsprechende benutzerdefinierte Aktion deinstallieren, verlassen entfernen die Anwendung teilweise installiert.  
   
--   Eine benutzerdefinierte Aktion, die auf eine bestimmte Version einer Datei oder einen Hashcode Werte basieren schlägt fehl, wenn Softwareupdates so ändern Sie diese Versionen oder prüfsummenhashwerte. In diesem Fall muss diese Werte von die benutzerdefinierte Aktion manuell aktualisieren. Ein zusätzliches Problem tritt auf, wenn Sie Versionen einer Datei oder einen Hashcode Werte Produktversionen gemeinsam genutzt werden. Vermeiden Sie diese Abhängigkeit an, wann immer möglich.  
+- Eine benutzerdefinierte Aktion, die auf eine bestimmte Version einer Datei oder einen Hashcode Werte basieren schlägt fehl, wenn Softwareupdates so ändern Sie diese Versionen oder prüfsummenhashwerte. In diesem Fall muss diese Werte von die benutzerdefinierte Aktion manuell aktualisieren. Ein zusätzliches Problem tritt auf, wenn Sie Versionen einer Datei oder einen Hashcode Werte Produktversionen gemeinsam genutzt werden. Vermeiden Sie diese Abhängigkeit an, wann immer möglich.  
   
 ### <a name="accounting-for-shared-files"></a>Kontoführung für freigegebene Dateien  
  Freigegebene Dateien haben die gleichen Namen und am gleichen Speicherort durch mehrere Produkte installiert sind. Diese Produkte unterscheiden sich in der Version, Lager halten Unit (SKU) oder beides, und die Produkte können gleichzeitig auf einem Computer vorhanden sein. Allerdings erstellen Sie freigegebene Dateien Wartung Probleme verschiedene Ursachen haben:  
   
--   Aktualisieren freigegebene Dateien kann die Probleme mit der Anwendungskompatibilität, da ein Update für eine Anwendung ändern kann die Version einer Datei ein, die eine zweite Anwendung, die nicht aktualisiert wurde. Installationsprogramme für Produkte, die Dateifreigabe gezählt, Verweise auf die freigegebenen Dateien. Deinstallieren eines Produkts wirkt sich daher nicht auf freigegebene Dateien über verringern die Anzahl der installierten Instanzen aus.  
+- Aktualisieren freigegebene Dateien kann die Probleme mit der Anwendungskompatibilität, da ein Update für eine Anwendung ändern kann die Version einer Datei ein, die eine zweite Anwendung, die nicht aktualisiert wurde. Installationsprogramme für Produkte, die Dateifreigabe gezählt, Verweise auf die freigegebenen Dateien. Deinstallieren eines Produkts wirkt sich daher nicht auf freigegebene Dateien über verringern die Anzahl der installierten Instanzen aus.  
   
--   Das Installationsprogramm Quick Fix Engineering (QFE) wird die Versionen der Dateien auf die Versionen der Produkte, die das QFE-Installationsprogramm verarbeitet zurückgesetzt. Dieser Prozess wird möglicherweise eine Anwendung, die eine aktualisierte, freigegebene Datei übermittelt haben.
+- Das Installationsprogramm Quick Fix Engineering (QFE) wird die Versionen der Dateien auf die Versionen der Produkte, die das QFE-Installationsprogramm verarbeitet zurückgesetzt. Dieser Prozess wird möglicherweise eine Anwendung, die eine aktualisierte, freigegebene Datei übermittelt haben.

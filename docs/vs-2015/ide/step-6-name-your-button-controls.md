@@ -9,14 +9,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059967"
 ---
-# <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
+# <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt haben, hat die IDE diesem Steuerelement automatisch den Namen **pictureBox1**gegeben. Es gibt nur ein Kontrollkästchen, das den Namen **checkBox1**trägt. Bald schreiben Sie einige Codezeilen, die auf das CheckBox- und das PictureBox-Steuerelement verweisen. Da jedes Steuerelement nur einmal vorhanden ist, wissen Sie, was sich hinter den Namen **pictureBox1** oder **checkBox1** im Code verbirgt.  
@@ -26,26 +26,26 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
   
  Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen zugewiesen: **button1**, **button2**, **button3**und **button4**. Anhand der aktuellen Namen können Sie jedoch nicht erkennen, welches Steuerelement die Schaltfläche **Close** ist und welches Steuerelement die Schaltfläche **Show a picture** ist. Daher ist es hilfreich, den Schaltflächen-Steuerelementen aufschlussreichere Namen zu geben.  
   
- ![Link zum Video](../data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 3 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205213) oder im Video 3 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo")eine Videoversion dieses Themas finden Sie unter [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic - Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) oder [Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in C# -Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### <a name="to-name-your-button-controls"></a>So benennen Sie die Schaltflächen-Steuerelemente  
   
-1.  Wählen Sie im Formular die Schaltfläche **Schließen** aus. (Wenn alle Schaltflächen noch auswählt sind, wählen Sie die ESC-TASTE aus, um die Auswahl aufzuheben.) Scrollen Sie im Fenster **Eigenschaften**, bis Sie die Eigenschaft **(Name)** sehen. (Die Eigenschaft **(Name)** befindet sich oben in der Liste, wenn die Eigenschaften alphabetisch sortiert sind.) Ändern Sie den Namen in **closeButton**, wie im folgenden Bild gezeigt.  
+1. Wählen Sie im Formular die Schaltfläche **Schließen** aus. (Wenn alle Schaltflächen noch auswählt sind, wählen Sie die ESC-TASTE aus, um die Auswahl aufzuheben.) Scrollen Sie im Fenster **Eigenschaften**, bis Sie die Eigenschaft **(Name)** sehen. (Die Eigenschaft **(Name)** befindet sich oben in der Liste, wenn die Eigenschaften alphabetisch sortiert sind.) Ändern Sie den Namen in **closeButton**, wie im folgenden Bild gezeigt.  
   
      ![Fenster „Eigenschaften“ mit closeButton-Name](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 Eigenschaftenfenster mit closeButton-Name  
   
     > [!NOTE]
-    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
+    >  Wenn Sie versuchen, den Namen der Schaltfläche **closeButton** so zu ändern, dass ein Leerzeichen zwischen den beiden Wörtern „close“ und „Button“ verwendet wird, zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig.“ Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
   
-2.  Benennen Sie die anderen drei Schaltflächen in **backgroundButton**, **clearButton**und **showButton**um. Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die Steuerelementauswahl-Dropdownliste auswählen. Die neuen Schaltflächennamen werden angezeigt.  
+2. Benennen Sie die anderen drei Schaltflächen in **backgroundButton**, **clearButton**und **showButton**um. Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die Steuerelementauswahl-Dropdownliste auswählen. Die neuen Schaltflächennamen werden angezeigt.  
   
-3.  Doppelklicken Sie im Formular auf die Schaltfläche **Bild anzeigen** . Wählen Sie alternativ die Schaltfläche **Bild anzeigen** im Formular und anschließend die EINGABETASTE aus. Damit öffnet die IDE eine zusätzliche Registerkarte im Hauptfenster mit der Bezeichnung **Form1.cs** (**Form1.vb** bei Verwendung von Visual Basic). Auf dieser Registerkarte wird die Codedatei hinter dem Formular angezeigt, wie im folgenden Bild dargestellt.  
+3. Doppelklicken Sie im Formular auf die Schaltfläche **Bild anzeigen** . Wählen Sie alternativ die Schaltfläche **Bild anzeigen** im Formular und anschließend die EINGABETASTE aus. Damit öffnet die IDE eine zusätzliche Registerkarte im Hauptfenster mit der Bezeichnung **Form1.cs** (**Form1.vb** bei Verwendung von Visual Basic). Auf dieser Registerkarte wird die Codedatei hinter dem Formular angezeigt, wie im folgenden Bild dargestellt.  
   
      ![Form1.cs-Registerkarte mit Visual C&#35;-Code](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode")  
 Form1.cs-Registerkarte mit Visual C#-Code  
   
-4.  Konzentrieren Sie sich auf diesen Teil des Codes. (Wählen Sie bei Verwendung von Visual Basic die Registerkarte **VB** unten aus, um die Visual Basic-Version des Codes anzuzeigen.)  
+4. Konzentrieren Sie sich auf diesen Teil des Codes. (Wählen Sie bei Verwendung von Visual Basic die Registerkarte **VB** unten aus, um die Visual Basic-Version des Codes anzuzeigen.)  
   
      [!code-csharp[VbExpressTutorial1Step6#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step6#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb#1)]  
@@ -55,9 +55,9 @@ Form1.cs-Registerkarte mit Visual C#-Code
     > [!NOTE]
     >  In diesem Lernprogramm wurde der automatisch generierte Visual Basic-Code vereinfacht, indem der zwischen Klammern, (), gesetzte Text entfernt wurde. In diesen Fällen können Sie den gleichen Code entfernen. Das Programm funktioniert so oder so. Für den Rest der Lernprogramme wird automatisch generierter Code vereinfacht, wann immer dies möglich ist.  
   
-5.  Wählen Sie die Registerkarte "Windows Forms-Designer" erneut aus (**Form1.cs [Entwurf]** in Visual C#, **Form1.vb [Entwurf]** in Visual Basic), und öffnen Sie dann die Codedatei für die Schaltfläche **Bild löschen** , um eine Methode für sie im Code des Formulars zu erstellen. Wiederholen Sie diesen Vorgang für die verbleibenden beiden Schaltflächen. Die IDE fügt der Codedatei des Formulars jedes Mal eine neue Methode hinzu.  
+5. Wählen Sie die Registerkarte "Windows Forms-Designer" erneut aus (**Form1.cs [Entwurf]** in Visual C#, **Form1.vb [Entwurf]** in Visual Basic), und öffnen Sie dann die Codedatei für die Schaltfläche **Bild löschen** , um eine Methode für sie im Code des Formulars zu erstellen. Wiederholen Sie diesen Vorgang für die verbleibenden beiden Schaltflächen. Die IDE fügt der Codedatei des Formulars jedes Mal eine neue Methode hinzu.  
   
-6.  Um eine weitere Methode hinzuzufügen, öffnen Sie die Codedatei für das CheckBox-Steuerelement im Windows Forms-Designer, damit die IDE eine `checkBox1_CheckedChanged()` -Methode hinzufügt. Diese Methode wird immer dann aufgerufen, wenn der Benutzer das Kontrollkästchen aktiviert oder deaktiviert.  
+6. Um eine weitere Methode hinzuzufügen, öffnen Sie die Codedatei für das CheckBox-Steuerelement im Windows Forms-Designer, damit die IDE eine `checkBox1_CheckedChanged()` -Methode hinzufügt. Diese Methode wird immer dann aufgerufen, wenn der Benutzer das Kontrollkästchen aktiviert oder deaktiviert.  
   
     > [!NOTE]
     >  Wenn Sie an einem Programm arbeiten, wechseln Sie häufig zwischen dem Code-Editor und dem Windows Forms-Designer. Die IDE vereinfacht die Navigation im Projekt. Öffnen Sie den Windows Forms-Designer mit dem **Projektmappen-Explorer** , indem Sie in Visual C# auf **Form1.cs** oder in Visual Basic auf **Form1.vb** doppelklicken, oder wählen Sie in der Menüleiste **Ansicht**, **Designer**aus.  
@@ -73,10 +73,10 @@ Form1.cs-Registerkarte mit Visual C#-Code
   
      Nachdem Sie für ein Steuerelement einen Ereignishandler hinzugefügt haben, können Sie jederzeit vom Windows Forms-Designer aus zum Steuerelement zurückkehren, indem Sie auf das Steuerelement doppelklicken oder in der Menüleiste **Ansicht**, **Code**auswählen.  
   
-     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Finden Sie unter [Umgestaltung mit Umbenennung (C#)](../csharp-ide/rename-refactoring-csharp.md) oder [Refactoring und Dialogfeld Umbenennen](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) für Weitere Informationen.  
+     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Finden Sie unter [Umgestaltung mit Umbenennen (c#)](../csharp-ide/rename-refactoring-csharp.md) oder [Refactoring und Dialogfeld Umbenennen](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) für Weitere Informationen.  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   
--   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).  
+- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).  
   
--   Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
+- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).

@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093929"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese Funktion fordert den Benutzer einen Projektpfad, d. h. eine Zeichenfolge, die nur für das Quellcodeverwaltungs-Plug-in von Bedeutung ist. Wird aufgerufen, wenn der Benutzer ist:  
   
--   Erstellen eines neuen Projekts  
+- Erstellen eines neuen Projekts  
   
--   Hinzufügen eines vorhandenen Projekts zur Versionskontrolle  
+- Hinzufügen eines vorhandenen Projekts zur Versionskontrolle  
   
--   Es wird versucht, eine vorhandene Versionskontrollprojekt suchen  
+- Es wird versucht, eine vorhandene Versionskontrollprojekt suchen  
   
 ## <a name="syntax"></a>Syntax  
   

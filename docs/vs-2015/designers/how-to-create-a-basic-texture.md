@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076798"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Gewusst wie: Erstellen einer Basistextur
+# <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer Basistextur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Basistextur verwendet wird.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Festlegen der Texturgröße  
+- Festlegen der Texturgröße  
   
--   Festlegen der Vorder -und Hintergrundfarben  
+- Festlegen der Vorder -und Hintergrundfarben  
   
--   Verwenden des Alphakanals (Transparenz)  
+- Verwenden des Alphakanals (Transparenz)  
   
--   Verwenden der Tools **Füllung** und **Ellipse**  
+- Verwenden der Tools **Füllung** und **Ellipse**  
   
--   Festlegen der Tooleigenschaften  
+- Festlegen der Tooleigenschaften  
   
 ## <a name="creating-a-basic-texture"></a>So erstellen Sie eine Basistextur  
  Sie können die Bildbearbeitung zum Erstellen und Ändern von Bildern und Texturen Ihre Spiele und Anwendungen verwenden.  
@@ -88,7 +88,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
   
     ![Die vollständige Textur der Zielscheibe](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)  
+    Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Image Editor](../designers/image-editor.md)

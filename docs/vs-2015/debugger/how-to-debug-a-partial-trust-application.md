@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106864"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Vorgehensweise: Debuggen einer teilweise vertrauenswürdigen Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +45,41 @@ Gilt für für Windows- und Konsolenanwendungen.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>So wählen Sie eine Zone für die teilweise vertrauenswürdige Anwendung aus  
   
-1.  Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
+1. Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
   
-2.  In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
+2. In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
   
-3.  Wählen Sie **ClickOnce-Sicherheitseinstellungen aktivieren**.  
+3. Wählen Sie **ClickOnce-Sicherheitseinstellungen aktivieren**.  
   
-4.  Klicken Sie unter **Zone, die von Ihrer Anwendung installiert werden**, klicken Sie auf das Dropdown-Listenfeld, und wählen Sie die Zone, die Sie der Anwendung simulieren möchten.  
+4. Klicken Sie unter **Zone, die von Ihrer Anwendung installiert werden**, klicken Sie auf das Dropdown-Listenfeld, und wählen Sie die Zone, die Sie der Anwendung simulieren möchten.  
   
      Die **Berechtigungen, die von der Anwendung benötigten** Raster zeigt alle verfügbare Berechtigungen. Das Häkchen zeigt an, welche Berechtigungen die Anwendung besitzt.  
   
-5.  Bei die Zone, die Sie auswählen, **(Benutzerdefiniert)**, wählen Sie die korrekten benutzerdefinierten Einstellungen in der **Einstellung** Spalte die **Berechtigungen** Raster.  
+5. Bei die Zone, die Sie auswählen, **(Benutzerdefiniert)**, wählen Sie die korrekten benutzerdefinierten Einstellungen in der **Einstellung** Spalte die **Berechtigungen** Raster.  
   
-6.  Klicken Sie auf **OK**, um die Eigenschaftenseiten zu schließen.  
+6. Klicken Sie auf **OK**, um die Eigenschaftenseiten zu schließen.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>So fügen Sie eine zusätzliche Berechtigung hinzu, wenn eine Sicherheitsausnahme eintritt  
   
-1.  Die **Ausnahmen-Assistent** Dialogfeld wird angezeigt, mit der Meldung: **SecurityException wurde nicht behandelt.**  
+1. Die **Ausnahmen-Assistent** Dialogfeld wird angezeigt, mit der Meldung: **SecurityException wurde nicht behandelt.**  
   
-2.  In der **Ausnahmen-Assistent** Dialogfeld **Aktionen**, klicken Sie auf **Berechtigung hinzufügen, um das Projekt**.  
+2. In der **Ausnahmen-Assistent** Dialogfeld **Aktionen**, klicken Sie auf **Berechtigung hinzufügen, um das Projekt**.  
   
-3.  Die **Debuggen neu starten** Dialogfeld wird angezeigt.  
+3. Die **Debuggen neu starten** Dialogfeld wird angezeigt.  
   
-    -   Wenn Sie die Debugsitzung mit der neuen Berechtigung neu starten möchten, klicken Sie auf **Ja**.  
+    - Wenn Sie die Debugsitzung mit der neuen Berechtigung neu starten möchten, klicken Sie auf **Ja**.  
   
-    -   Wenn Sie nicht noch neu starten möchten, klicken Sie auf **keine**.  
+    - Wenn Sie nicht noch neu starten möchten, klicken Sie auf **keine**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>So zeigen Sie zusätzliche Berechtigungen an, die beim Debuggen hinzugefügt wurden  
   
-1.  Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
+1. Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
   
-2.  In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
+2. In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
   
-3.  Sehen Sie sich die **Berechtigungen, die von der Anwendung benötigten** Raster. Alle von Ihnen hinzugefügte zusätzliche Berechtigung hat zwei Symbole in der **eingeschlossene** Spalte: das normale Häkchen, das alle eingeschlossenen Berechtigungen aufweisen, und ein zusätzliches Symbol, etwa eine Sprechblase mit dem Buchstaben "i".  
+3. Sehen Sie sich die **Berechtigungen, die von der Anwendung benötigten** Raster. Alle von Ihnen hinzugefügte zusätzliche Berechtigung hat zwei Symbole in der **eingeschlossene** Spalte: das normale Häkchen, das alle eingeschlossenen Berechtigungen aufweisen, und ein zusätzliches Symbol, etwa eine Sprechblase mit dem Buchstaben "i".  
   
-4.  Verwenden Sie die vertikale scrollleiste, um die gesamte anzuzeigen **Berechtigungen, die von der Anwendung benötigten** Raster.  
+4. Verwenden Sie die vertikale scrollleiste, um die gesamte anzuzeigen **Berechtigungen, die von der Anwendung benötigten** Raster.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   

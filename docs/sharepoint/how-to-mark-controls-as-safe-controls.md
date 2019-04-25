@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082034"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen Web-Steuerelemente, die vor der Script-Injection zu schützen und Web-Steuerelemente, die nicht aus. Steuerelemente, geschützt oder *sichere Steuerelemente*, über nicht vertrauenswürdige Benutzer zugegriffen werden kann. Sie können Steuerelemente wie in der Einträge für sicheres Steuerelement-Eigenschaft des SharePoint-Projektelements oder im abgesicherten markieren die **-Paket-Designer** beim Hinzufügen einer Assemblys für das Paket. Weitere Informationen finden Sie unter
@@ -33,47 +33,47 @@ ms.locfileid: "56646420"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>So markieren Sie Steuerelemente wie sicher oder unsicher in der Eigenschaft für sicheres Steuerelement Einträge
 
-1.  Erstellen Sie eine SharePoint-Lösung mit einem Visual Web Part-Projekt.
+1. Erstellen Sie eine SharePoint-Lösung mit einem Visual Web Part-Projekt.
 
-2.  Zwei Steuerelemente zum Webpart hinzufügen: ein Textfeld und eine Schaltfläche. Lassen Sie die Namen bzw. auf die Standardwerte, TextBox1 "und" Button1 ".
+2. Zwei Steuerelemente zum Webpart hinzufügen: ein Textfeld und eine Schaltfläche. Lassen Sie die Namen bzw. auf die Standardwerte, TextBox1 "und" Button1 ".
 
-3.  Fügen Sie zwei Einträge, um des Webparts **Einträge für sicheres Steuerelement** Eigenschaft. Zu diesem Zweck wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben dem **Einträge für sicheres Steuerelement** -Eigenschaft in der  **Eigenschaften** Fenster.
+3. Fügen Sie zwei Einträge, um des Webparts **Einträge für sicheres Steuerelement** Eigenschaft. Zu diesem Zweck wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben dem **Einträge für sicheres Steuerelement** -Eigenschaft in der  **Eigenschaften** Fenster.
 
      Die **Einträge für sicheres Steuerelement** Dialogfeld wird angezeigt.
 
-4.  In der **Einträge für sicheres Steuerelement** Dialogfeld wählen die **hinzufügen** Schaltfläche zweimal, um zwei Einträge für sicheres Steuerelement zum Hinzufügen der **Mitglieder** Bereich: eine für die Schaltfläche und eine für das Textfeld.
+4. In der **Einträge für sicheres Steuerelement** Dialogfeld wählen die **hinzufügen** Schaltfläche zweimal, um zwei Einträge für sicheres Steuerelement zum Hinzufügen der **Mitglieder** Bereich: eine für die Schaltfläche und eine für das Textfeld.
 
-5.  Wählen Sie den ersten Eintrag für sicheres Steuerelement aus, und ändern Sie den Wert des der **sicher** Eigenschaft **"false"**, dessen **Typnamen** Eigenschaft **"Button1"**, und die zugehörige **sicher für Skript** Eigenschaft **"false"**.
+5. Wählen Sie den ersten Eintrag für sicheres Steuerelement aus, und ändern Sie den Wert des der **sicher** Eigenschaft **"false"**, dessen **Typnamen** Eigenschaft **"Button1"**, und die zugehörige **sicher für Skript** Eigenschaft **"false"**.
 
      Dieser Schritt identifiziert das Schaltflächen-Steuerelement als ein nicht sicheres Steuerelement.
 
-6.  Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Lassen Sie den Wert des der **sicher** Eigenschaft als **"true"** und legen Sie seine **Typnamen** Eigenschaft, um **TextBox1** und dessen **sicher Vor Skripteinschleusung** Eigenschaft **"true"**.
+6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Lassen Sie den Wert des der **sicher** Eigenschaft als **"true"** und legen Sie seine **Typnamen** Eigenschaft, um **TextBox1** und dessen **sicher Vor Skripteinschleusung** Eigenschaft **"true"**.
 
      Das Textfeld-Steuerelement ist nun als Steuerelement markiert, die sicher vor skripteinschleusung ist.
 
-7.  Wählen Sie die Schaltfläche **OK** aus, um das Dialogfeld zu schließen.
+7. Wählen Sie die Schaltfläche **OK** aus, um das Dialogfeld zu schließen.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Markieren sichere Steuerelemente in der Paket-Designer
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>So markieren Sie Steuerelemente wie sicher oder unsicher im Paket-Designer
 
-1.  Erstellen Sie eine SharePoint-Lösung mit einem Visual Web Part-Projekt.
+1. Erstellen Sie eine SharePoint-Lösung mit einem Visual Web Part-Projekt.
 
-2.  Zwei Steuerelemente zum Webpart hinzufügen: ein Textfeld und eine Schaltfläche. Lassen Sie die Namen bzw. auf die Standardwerte, TextBox1 "und" Button1 ".
+2. Zwei Steuerelemente zum Webpart hinzufügen: ein Textfeld und eine Schaltfläche. Lassen Sie die Namen bzw. auf die Standardwerte, TextBox1 "und" Button1 ".
 
      Notieren Sie sich den Namespace des Steuerelements aus, da sie später verwendet wird.
 
-3.  Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe** zum Erstellen des Projekts.
+3. Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe** zum Erstellen des Projekts.
 
-4.  Erstellen Sie eine andere SharePoint-Lösung.
+4. Erstellen Sie eine andere SharePoint-Lösung.
 
-5.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die *"Package.Package"* Datei, und wählen Sie dann **öffnen** zum Öffnen der **-Paket-Designer**.
+5. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die *"Package.Package"* Datei, und wählen Sie dann **öffnen** zum Öffnen der **-Paket-Designer**.
 
-6.  In der **-Paket-Designer**, wählen Sie die **erweitert** Registerkarte.
+6. In der **-Paket-Designer**, wählen Sie die **erweitert** Registerkarte.
 
-7.  Klicken Sie unter **zusätzliche Assemblys**, wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **vorhandene Assembly hinzufügen** aus der Liste.
+7. Klicken Sie unter **zusätzliche Assemblys**, wählen Sie die **hinzufügen** Schaltfläche, und wählen Sie dann **vorhandene Assembly hinzufügen** aus der Liste.
 
-8.  In der **vorhandene Assembly hinzufügen** Dialogfeld auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben  **Quellpfad**.
+8. In der **vorhandene Assembly hinzufügen** Dialogfeld auf die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) neben  **Quellpfad**.
 
 9. Wählen Sie die Assembly aus der SharePoint-Lösung, die Sie in Schritt 1 erstellt haben, und wählen Sie dann die **öffnen** Schaltfläche.
 

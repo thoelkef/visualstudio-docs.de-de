@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054793"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,13 +105,13 @@ End Sub
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aktivierte arithmetischen Über-/Unterlauf aktivieren
  Wenn Sie aktiviert arithmetischen Über-/Unterlauf in C# -Code aktivieren, entspricht es umbruchvorgang jede ganze Zahl in einem aktivierten Block.
 
- **So schalten Sie die aktivierten arithmetischen Über-/Unterlauf in C#**
+ **So schalten Sie die aktivierten arithmetischen Über-/Unterlauf in c#**
 
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 
-2.  Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
+2. Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
 
-3.  Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
+3. Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
  <xref:System.OverflowException?displayProperty=fullName> [C#-Operatoren](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked und Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

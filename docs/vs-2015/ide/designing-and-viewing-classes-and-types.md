@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045043"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Entwerfen und Anzeigen von Klassen und Typen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Design, Visualisierung und Umgestaltung von Klassen und anderen Typen in Ihrem C
   
  Hier finden Sie mehr über die Möglichkeiten mit Klassendiagrammen:  
   
--   **Entwerfen**: Bearbeiten Sie den Code Ihres Projekts, indem Sie das Klassendiagramm bearbeiten. Neue Elemente hinzufügen und unerwünschte Elemente löschen. Die Änderungen werden im Code wiedergegeben.  
+- **Entwerfen**: Bearbeiten Sie den Code Ihres Projekts, indem Sie das Klassendiagramm bearbeiten. Neue Elemente hinzufügen und unerwünschte Elemente löschen. Die Änderungen werden im Code wiedergegeben.  
   
--   **Visualisieren**: Erhalten Sie Einblick in die Struktur des Projekts, indem Sie sich die Klassen in Ihrem Projekt in einem Diagramm ansehen. Passen Sie Ihr Diagramm so an, dass Sie sich auf die Projektdetails konzentrieren können, die Sie am meisten interessieren. Speichern Sie das Diagramm später zu Demonstrations- oder Dokumentationszwecken.  
+- **Visualisieren**: Erhalten Sie Einblick in die Struktur des Projekts, indem Sie sich die Klassen in Ihrem Projekt in einem Diagramm ansehen. Passen Sie Ihr Diagramm so an, dass Sie sich auf die Projektdetails konzentrieren können, die Sie am meisten interessieren. Speichern Sie das Diagramm später zu Demonstrations- oder Dokumentationszwecken.  
   
--   **Umgestalten**: Überschreiben Sie Methoden, benennen Sie Bezeichner um, gestalten Sie Parameter um und implementieren Sie Schnittstellen sowie abstrakte Klassen.  
+- **Umgestalten**: Überschreiben Sie Methoden, benennen Sie Bezeichner um, gestalten Sie Parameter um und implementieren Sie Schnittstellen sowie abstrakte Klassen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md)  

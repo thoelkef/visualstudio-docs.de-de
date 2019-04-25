@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082580"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importieren von Elementen aus einer vorhandenen SharePoint-Website
   Mit der Projektvorlage „SharePoint-Lösungspaket importieren“ können Sie Elemente wie Inhaltstypen und Felder aus vorhandenen SharePoint-Websites in einer neuen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projektmappe wiederverwenden. Obwohl Sie die meisten importierten Projektmappen ohne Änderung ausführen können, müssen bestimmte Einschränkungen und Probleme berücksichtigt werden, insbesondere, wenn Sie Elemente nach deren Import ändern.
@@ -119,9 +119,9 @@ ms.locfileid: "56645146"
 
  Wenn dieser Fehler auftritt, wird das Element nicht erstellt. Dieses Problem tritt am häufigsten bei importierten Modulen auf. Um dieses Problem zu vermeiden, gehen Sie wie folgt vor:
 
--   Geben Sie kurze Namen für das Projekt im Dialogfeld **Neues Projekt hinzufügen** ein.
+- Geben Sie kurze Namen für das Projekt im Dialogfeld **Neues Projekt hinzufügen** ein.
 
--   Erstellen Sie das Projekt in einem Speicherort möglichst nahe am Stammordner, um den Pfad kurz zu halten.
+- Erstellen Sie das Projekt in einem Speicherort möglichst nahe am Stammordner, um den Pfad kurz zu halten.
 
 ## <a name="the-sharepointproductversion-attribute"></a>SharePointProductVersion-Attribut
  Wenn Sie eine in einer früheren Version von SharePoint, etwa [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] oder [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], erstellte Projektmappe importieren, ändern Sie entweder den Wert des SharePointProductVersion-Attributs im Paketmanifest in 12.0, oder fügen Sie ein Skript-Manager-Steuerelement in alle importierten Webseiten ein, und belassen Sie die SharePointProductVersion auf 14.0. Andernfalls werden importierte Web Forms (Webformulare) nicht in SharePoint angezeigt.

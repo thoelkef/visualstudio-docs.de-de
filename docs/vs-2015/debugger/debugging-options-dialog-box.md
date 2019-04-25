@@ -25,25 +25,25 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1f3b6f6ee2c5a815bfa4f3a9744b3ad2c8cc690
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b1ab0f4875dcafc14b4b9fb8d3922d26e394c22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116861"
 ---
 # <a name="debugging-options-dialog-box"></a>Debuggen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im Ordner **Debuggen** im Dialogfeld **Optionen** des Menüs **Extras** sind die folgenden Seiten zum Festlegen der Debuggeroptionen enthalten.  
   
--   [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)  
+- [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)  
   
--   [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../debugger/just-in-time-debugging-options-dialog-box.md)  
+- [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../debugger/just-in-time-debugging-options-dialog-box.md)  
   
--   [Ausgabefenster, Debuggen, Dialogfeld "Optionen"](../debugger/output-window-debugging-options-dialog-box.md)  
+- [Ausgabefenster, Debuggen, Dialogfeld "Optionen"](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [Symbole, Debuggen, Dialogfeld „Optionen“](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+- [Symbole, Debuggen, Dialogfeld „Optionen“](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   

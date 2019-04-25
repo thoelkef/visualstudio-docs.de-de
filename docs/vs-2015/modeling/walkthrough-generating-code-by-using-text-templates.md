@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052882"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>So erstellen Sie das Projekt  
   
-1.  Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
   
-2.  Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.  
+2. Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Fügen Sie eine XML-Prototypdatei zum Projekt hinzu  
  Diese Datei dient dazu, Beispiele der XML-Knotentypen bereitzustellen, die Ihre Anwendung lesen können soll. Es kann eine Datei sein, die zum Testen der Anwendung verwendet wird. Die Vorlage erzeugt eine C#-Klasse für jeden Knotentyp in dieser Datei.  

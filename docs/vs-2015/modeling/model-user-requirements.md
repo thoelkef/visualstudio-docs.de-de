@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059850"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
  Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden können. Einen Überblick über die Diagrammtypen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md). Grundlegende Informationen zum Zeichnen von Diagrammen finden Sie [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Beschreibt, wie Ihr System verwendet wird  
+## <a name="UseCases"></a> Beschreibt, wie Ihr System verwendet wird  
  Erstellen Sie Anwendungsfalldiagramme, um zu beschreiben, wer das System verwendet und wofür es verwendet wird. Ein Anwendungsfall stellt ein Ziel von Benutzern des Systems dar und das Verfahren, das sie ausführen, um das Ziel zu erreichen.  
   
  Ein Onlinesystem für den Verkauf von Mahlzeiten beispielsweise muss es Kunden ermöglichen, Gerichte aus einer Speisekarte auszuwählen, und die liefernden Restaurants müssen die Speisekarte aktualisieren können. Sie können dies in einem Anwendungsfalldiagramm zusammenfassen:  
@@ -93,7 +93,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem Anwendungsfalldiagramm|[UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)|  
 |Entwickeln von Code aus Anwendungsfällen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definieren von Begriffen verwendet, um Anforderungen beschreiben.  
+## <a name="RequirementsClasses"></a> Definieren von Begriffen verwendet, um Anforderungen beschreiben.  
  Sie können anhand von UML-Klassendiagrammen ein einheitliches Vokabular der Business-Konzepte entwickeln, das für folgende Zwecke verwendet werden kann:  
   
 - Von den Benutzern selbst, zur Besprechung des Geschäfts, in dem das System eingesetzt wird  
@@ -140,7 +140,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
  In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Die folgenden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung einrichten nicht direktionale Pfeile als Standard: [Beispiel: UML-Domänenmodellierung Features](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.  
   
  Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese schreiben *statischer Geschäftsregeln* als Kommentare, die mit den entsprechenden Klassen in einem konzeptionellen Diagramm verknüpft ist. Zum Beispiel:  
@@ -161,7 +161,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|  
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören Folgende:  
   
 - Leistung  
@@ -180,12 +180,12 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
   Weitere Informationen finden Sie in den folgenden Themen:  
   
-|Thema|Thema|  
+|Thema|Lesen|  
 |--------------------|----------|  
 |Anfügen zusätzlicher Dokumente an Anwendungsfälle|[Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Entwickeln von Code, der Servicequalitätsanforderungen entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Darstellen des Arbeitsablaufs zwischen Benutzern und dem system  
+## <a name="Workflow"></a> Darstellen des Arbeitsablaufs zwischen Benutzern und dem system  
  Sie können ein Aktivitätsdiagramm verwenden, um den Arbeitsablauf zwischen verschiedenen Anwendungsfällen zu zeigen. Es ist häufig nützlich, ein Anforderungsmodell durch Zeichnen eines Aktivitätsdiagramms zu beginnen, das die vom Benutzer ausgeführten Hauptaufgaben zeigt, sowohl im System als auch außerhalb.  
   
  Zum Beispiel:  
@@ -206,7 +206,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem Aktivitätsdiagramm|[UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)|  
 |Entwickeln von Code aus Aktivitätsdiagrammen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Darstellen der Interaktionen zwischen Benutzern und dem system  
+## <a name="Sequences"></a> Darstellen der Interaktionen zwischen Benutzern und dem system  
  Sie können ein Sequenzdiagramm verwenden, um den Austausch von Meldungen zwischen Ihrem System und externen Akteuren oder zwischen Teilen des Systems darzustellen. Dadurch ergibt sich eine Ansicht der Schritte in einem Anwendungsfall, die sehr deutlich die Sequenz der Interaktionen zeigt. Sequenzdiagramme sind besonders nützlich, wenn es mehrere interagierende Parteien in einem Anwendungsfall gibt und wenn Ihr System eine API aufweist.  
   
  Zum Beispiel:  

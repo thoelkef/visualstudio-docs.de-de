@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efdde349a0501af423ad08576fcf82491b59fcfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102582"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debuggen von DLLs in Visual Studio (C#, C++, Visual Basic F#)
 
@@ -50,7 +50,7 @@ Wenn Sie eine Visual Studio-Projektvorlage, zum Erstellen einer app verwenden, [
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Project settings for C# debug configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [How to: Set Debug and Release configurations (Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen)](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md)
 
 ### <a name="set-c-debuggableattribute"></a>Festlegen des C++-Attributs „Debuggable“
 
@@ -86,7 +86,7 @@ Bei C/C++-Projekten können Sie in den Eigenschaftenseiten des Projekts, anstatt
 
 Weitere Informationen zu C++-projekteinstellungen, finden Sie unter [Eigenschaftenseiten (Visual C++)](/cpp/ide/property-pages-visual-cpp).
 
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Erstellen einer Debugversion
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Erstellen einer Debugversion
 
 Stellen Sie sicher, dass eine Debugversion der DLL zu erstellen, bevor Sie das Debuggen starten. Um eine DLL debuggen, muss eine aufrufende app finden, werden die [PDB-Datei](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und alle anderen Dateien, die die DLL benötigt.
 
@@ -94,7 +94,7 @@ Sie können einen benutzerdefinierten BuildTask zum Kopieren von DLL-Dateien zum
 
 Stellen Sie sicher, dass die DLL in den richtigen Speicherort aufrufen. Dies mag, aber wenn eine aufrufende app findet und eine andere Kopie der DLL lädt, wird der Debugger nie die festgelegten Haltepunkte erreicht.
 
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Debuggen einer DLL
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Debuggen einer DLL
 
 Sie können nicht direkt eine DLL-Datei ausführen. Es muss aufgerufen werden, von einer app, in der Regel eine *.exe* Datei. Weitere Informationen finden Sie unter [erstellen und Verwalten von Visual C++-Projekten](/cpp/ide/creating-and-managing-visual-cpp-projects).
 
@@ -117,13 +117,13 @@ Um eine DLL in eine aufrufende app zu debuggen, können Sie folgende Aktionen au
 
   oder
 
-- Fügen Sie an eine app, die bereits bereitgestellten und auf einem Test oder Produktion ausgeführt wird. Verwenden Sie diese Methode für DLLs, auf Websites oder in Web-apps. Weitere Informationen finden Sie unter [How to: Attach to a running process (Vorgehensweise: Anfügen an einen laufenden Prozess)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- Fügen Sie an eine app, die bereits bereitgestellten und auf einem Test oder Produktion ausgeführt wird. Verwenden Sie diese Methode für DLLs, auf Websites oder in Web-apps. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen an einen laufenden Prozess](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 Bevor Sie beginnen, die aufrufende Anwendung debuggen, legen Sie einen Haltepunkt in der DLL. Finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md). Wenn die DLL-Haltepunkt erreicht wird, können Sie den Code durchlaufen und beobachten die Aktion in den einzelnen Zeilen. Weitere Informationen finden Sie unter [Navigieren im Code im Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-Während des Debuggens können Sie die **Module** Fenster, um zu überprüfen, ob die DLLs und *.exe* Laden der app-Dateien. Zum Öffnen der **Module** wählen Sie im Fenster während des Debuggens **Debuggen** > **Windows** > **Module**. Weitere Informationen finden Sie unter [How to: Use the Modules window (Vorgehensweise: Verwenden des Fensters „Module“)](../debugger/how-to-use-the-modules-window.md).
+Während des Debuggens können Sie die **Module** Fenster, um zu überprüfen, ob die DLLs und *.exe* Laden der app-Dateien. Zum Öffnen der **Module** wählen Sie im Fenster während des Debuggens **Debuggen** > **Windows** > **Module**. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md).
 
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Verwenden Sie das "Direktfenster"
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Verwenden Sie das "Direktfenster"
 
 Sie können die **direkt** Fenster aus, um die DLL-Funktionen oder Methoden zur Entwurfszeit auszuwerten. Die **direkt** übernimmt die Rolle des eine aufrufende app.
 
@@ -154,9 +154,9 @@ Zum Beispiel eine Methode testen mit dem Namen `Test` in Klasse `Class1`:
 
    Der Haltepunkt wird erreicht, und Sie können über `Test`. Nach der Ausführung von `Test` befindet sich der Debugger wieder im Entwurfsmodus.
 
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debuggen im gemischten Modus
+## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debuggen im gemischten Modus
 
-Sie können eine aufrufende app für eine DLL in verwaltetem oder systemeigenem Code schreiben. Wenn Ihre native-app, eine verwaltete DLL aufruft, und Sie beide debuggen möchten, können Sie die verwalteten und nativen Debugger in den Projekteigenschaften aktivieren. Die genaue Schritte hängt davon ab, ob Sie über das DLL-Projekt oder das aufrufende app-Projekt debuggen möchten. Weitere Informationen finden Sie unter [How to: Debug in Mixed Mode (Vorgehensweise: Debuggen im gemischten Modus)](../debugger/how-to-debug-in-mixed-mode.md).
+Sie können eine aufrufende app für eine DLL in verwaltetem oder systemeigenem Code schreiben. Wenn Ihre native-app, eine verwaltete DLL aufruft, und Sie beide debuggen möchten, können Sie die verwalteten und nativen Debugger in den Projekteigenschaften aktivieren. Die genaue Schritte hängt davon ab, ob Sie über das DLL-Projekt oder das aufrufende app-Projekt debuggen möchten. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
 
 Sie können auch eine systemeigene DLL aus einem aufrufenden verwalteten Projekt debuggen. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen von verwaltetem und systemeigenem Code](how-to-debug-managed-and-native-code.md).
 

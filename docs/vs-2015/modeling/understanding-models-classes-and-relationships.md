@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108703"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
   
  Um die DSL-Definitionsdiagramm neu anzuordnen, können Sie folgende Aktionen ausführen:  
   
--   Main wechseln und auf Ansichten können Sie mit der **Struktur hier** und **Baum teilen** Befehle. Mit der rechten Maustaste in einer einzelne Domäne-Klasse, um diese Befehle finden Sie unter.  
+- Main wechseln und auf Ansichten können Sie mit der **Struktur hier** und **Baum teilen** Befehle. Mit der rechten Maustaste in einer einzelne Domäne-Klasse, um diese Befehle finden Sie unter.  
   
--   Neu anordnen von Domänenklassen und Formklassen durch Drücken von STRG + nach-oben und STRG + nach-unten.  
+- Neu anordnen von Domänenklassen und Formklassen durch Drücken von STRG + nach-oben und STRG + nach-unten.  
   
--   Klassen, die mithilfe des Symbols auf der rechten oberen Ecke der einzelnen Formen erweitern oder reduzieren.  
+- Klassen, die mithilfe des Symbols auf der rechten oberen Ecke der einzelnen Formen erweitern oder reduzieren.  
   
--   Reduzieren Sie Teile der Struktur, indem Sie auf das Minuszeichen (-) am unteren Rand einer Domänenklasse.  
+- Reduzieren Sie Teile der Struktur, indem Sie auf das Minuszeichen (-) am unteren Rand einer Domänenklasse.  
   
 ## <a name="inheritance"></a>Vererbung  
  Domänenklassen können unter Verwendung der Vererbung definiert werden. Um eine Ableitung von Vererbung zu erstellen, klicken Sie auf das Tool Vererbung, klicken Sie auf die abgeleitete Klasse, und klicken Sie dann auf die Basisklasse. Ein Element des Modells hat alle Eigenschaften, die auf ihrer eigenen Domänenklasse, zusammen mit den Eigenschaften, die für die von der Basisklasse geerbt definiert sind. Es erbt auch die Rollen in Beziehungen.  

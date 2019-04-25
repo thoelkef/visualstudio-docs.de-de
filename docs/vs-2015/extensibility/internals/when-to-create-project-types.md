@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061709"
 ---
 # <a name="when-to-create-project-types"></a>Gründe für das Erstellen von Projekttypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
 ## <a name="create-a-new-project-type"></a>Erstellen Sie einen neuen Projekttyp  
  Sie müssen einen Projekttyp erstellen, wenn Sie anpassen möchten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , die in eine oder mehrere der folgenden Methoden verwendet:  
   
--   Teilnahme an Build, bereitstellen, Konfigurationen und Datenquellen-Steuerelement.  
+- Teilnahme an Build, bereitstellen, Konfigurationen und Datenquellen-Steuerelement.  
   
--   Bieten Sie Unterstützung für Remotedebuggen.  
+- Bieten Sie Unterstützung für Remotedebuggen.  
   
--   Anzeigen der Projektelemente im **Projektmappen-Explorer**.  
+- Anzeigen der Projektelemente im **Projektmappen-Explorer**.  
   
--   Verwenden der **geöffneten Projekt** oder **neues Projekt** Dialogfeld.  
+- Verwenden der **geöffneten Projekt** oder **neues Projekt** Dialogfeld.  
   
--   Schachtelung von Projekt zu unterstützen.  
+- Schachtelung von Projekt zu unterstützen.  
   
 ## <a name="extend-an-existing-project-type"></a>Erweitern Sie einen vorhandenen Projekttyp  
  Möglicherweise möchten Sie einen neuen Projekttyp zu erstellen, können [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auf folgende Weise ändern oder erweitern das Verhalten eines vorhandenen Projekts-Typs, z. B. die Änderung des Buildprozesses für [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte:  
   
--   Arbeiten Sie mit mehreren Dateien als einzelne Einheit ein.  
+- Arbeiten Sie mit mehreren Dateien als einzelne Einheit ein.  
   
--   Eine einzelne Datei als Hierarchie von untergeordneten Elementen anzeigen.  
+- Eine einzelne Datei als Hierarchie von untergeordneten Elementen anzeigen.  
   
--   Zeigen Sie einen Befehlskontext um Editoren.  
+- Zeigen Sie einen Befehlskontext um Editoren.  
   
--   Zeigen Sie einen Dienstkontext für Editoren an.  
+- Zeigen Sie einen Dienstkontext für Editoren an.  
   
 ## <a name="use-an-existing-project-type"></a>Verwenden Sie einen vorhandenen Projekttyp  
  Erstellen eines neuen Projekts ist manchmal nicht erforderlich. Die folgende Tabelle zeigt die Aufgaben, denen Sie nicht, erstellen Sie einen Projekttyp für verfügen.  

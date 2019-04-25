@@ -14,25 +14,26 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794038"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651162"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Wenn Sie Visual Studio 2015 von einer Eingabeaufforderung aus installieren, können Sie die folgenden Befehlszeilenparameter (auch als Schalter bezeichnet) verwenden.
 
 > [!NOTE]
->  Stellen Sie sicher, dass Sie der eigentliche Installer und nicht für die Bootstrapperdatei verwenden. Beispielsweise stellen sicher, dass Sie **`vs_enterprise.exe`** statt Vs_enterprise_*GUID*.exe. Sie können ein Installationsprogramm aus [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+> Stellen Sie sicher, dass Sie der eigentliche Installer und nicht für die Bootstrapperdatei verwenden. Beispielsweise stellen sicher, dass Sie **`vs_enterprise.exe`** statt Vs_enterprise_*GUID*.exe. Sie können ein Installationsprogramm aus [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
 
 ## <a name="list-of-command-line-parameters"></a>Liste der Befehlszeilenparameter
- Bei Visual Studio-Befehlszeilenparametern wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+
+Bei Visual Studio-Befehlszeilenparametern wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -59,7 +60,8 @@ Wenn Sie Visual Studio 2015 von einer Eingabeaufforderung aus installieren, kön
 |**/repair**|Repariert Visual Studio.|
 |**/SuppressRefreshPrompt**|Verhindert die Anzeige des Dialogfeld über verfügbare Updates im Installations-Assistenten. Der Installations-Assistent nimmt automatisch alle erforderlichen und empfohlenen aktualisierten Versionen an.|
 |**/u**<br /><br /> **/Uninstall**|Deinstalliert [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|**/ Uninstall/Force**<br /><br /> **/u /force**|Deinstalliert Visual Studio und alle Funktionen, die mit anderen Produkten gemeinsam genutzt werden. **Warnung:** , wenn Sie diesen Parameter verwenden, andere Produkte, die auf dem gleichen Computer installiert sind möglicherweise nicht mehr ordnungsgemäß.|
+|**/ Uninstall/Force**<br /><br /> **/u /force**|Deinstalliert Visual Studio und alle Funktionen, die mit anderen Produkten gemeinsam genutzt werden. **Warnung:**  Wenn Sie diesen Parameter verwenden, beeinträchtigt dies möglicherweise die Funktionalität anderer Produkte auf dem Computer.|
 
 ## <a name="see-also"></a>Siehe auch
- [Administratorhandbuch für Visual Studio](../install/visual-studio-administrator-guide.md)
+
+- [Administratorhandbuch für Visual Studio](../install/visual-studio-administrator-guide.md)

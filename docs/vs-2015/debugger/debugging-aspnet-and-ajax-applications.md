@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956485"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116783"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debuggen von ASP.NET- und AJAX-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen ähnelt dem Debuggen von Windows Forms oder anderen Windows-Anwendungen, da beide Arten von Anwendungen Steuerelemente und Ereignisse enthalten. Aber es gibt auch grundlegende Unterschiede zwischen den beiden Anwendungsarten:  
   
--   Die Zustandsüberwachung ist in einer Webanwendung komplexer.  
+- Die Zustandsüberwachung ist in einer Webanwendung komplexer.  
   
--   In einer Windows-Anwendung befindet sich der zu debuggende Code meistens an einem Ort. Bei einer Webanwendung kann der Code auf dem Client und auf dem Server vorhanden sein. Obwohl sich der gesamte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Code auf dem Server befindet, kann auf dem Client auch JavaScript- oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code vorhanden sein.  
+- In einer Windows-Anwendung befindet sich der zu debuggende Code meistens an einem Ort. Bei einer Webanwendung kann der Code auf dem Client und auf dem Server vorhanden sein. Obwohl sich der gesamte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Code auf dem Server befindet, kann auf dem Client auch JavaScript- oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code vorhanden sein.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Vorbereitungen zum Debuggen von ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

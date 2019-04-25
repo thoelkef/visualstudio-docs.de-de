@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a3305a12283072e39654833cabc609efa3f5bc2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788390"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Komponententests für generische Methoden
 
@@ -28,20 +28,20 @@ Wenn Visual Studio einen Komponententest für eine generische Klasse generiert, 
 ## <a name="examples"></a>Beispiele
  In den folgenden Beispielen werden Komponententests für Generics veranschaulicht:
 
--   [Bearbeiten von generiertem Testcode](#EditingGeneratedTestCode) Dieses Beispiel besteht aus zwei Abschnitten, „Generierter Testcode“ und „Bearbeiteter Testcode“. Es veranschaulicht, wie der von einer generischen Methode generierte Rohdaten-Testcode bearbeitet wird, um eine hilfreiche Testmethode zu erhalten.
+- [Bearbeiten von generiertem Testcode](#EditingGeneratedTestCode) Dieses Beispiel besteht aus zwei Abschnitten, „Generierter Testcode“ und „Bearbeiteter Testcode“. Es veranschaulicht, wie der von einer generischen Methode generierte Rohdaten-Testcode bearbeitet wird, um eine hilfreiche Testmethode zu erhalten.
 
--   [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied) In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
+- [Verwenden einer Typeinschränkung](#TypeConstraintNotSatisfied) In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet. Die Typeinschränkung wird in diesem Beispiel nicht erfüllt.
 
-###  <a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
+### <a name="EditingGeneratedTestCode"></a> Beispiel 1: Bearbeiten von generiertem Testcode
  Im Testcode in diesem Abschnitt wird eine Code-unter-Test-Methode mit dem Namen `SizeOfLinkedList()` getestet. Diese Methode gibt eine ganze Zahl zurück, die die Anzahl der Knoten in der verknüpften Liste angibt.
 
  Das erste Codebeispiel im Abschnitt „Generierter Testcode“ enthält den unbearbeiteten Testcode, wie er von Visual Studio Enterprise generiert wurde. Das zweite Beispiel im Abschnitt „Bearbeiteter Testcode“ veranschaulicht, wie Sie die Funktionsweise der SizeOfLinkedList-Methode für zwei verschiedene Datentypen, `int` und `char`, testen können.
 
  Dieser Code zeigt zwei Methoden:
 
--   eine Testhilfsmethode, `SizeOfLinkedListTestHelper<T>()`. Der Name einer Testhilfsmethode enthält standardmäßig den Begriff „TestHelper“.
+- eine Testhilfsmethode, `SizeOfLinkedListTestHelper<T>()`. Der Name einer Testhilfsmethode enthält standardmäßig den Begriff „TestHelper“.
 
--   eine Testmethode, `SizeOfLinkedListTest()`. Jede Testmethode wird mit dem TestMethod-Attribut markiert.
+- eine Testmethode, `SizeOfLinkedListTest()`. Jede Testmethode wird mit dem TestMethod-Attribut markiert.
 
 #### <a name="generated-test-code"></a>Generierter Testcode
  Der folgende Testcode wurde von der `SizeOfLinkedList()`-Methode generiert. Da es sich um den unbearbeiteten, generierten Test handelt, muss er geändert werden, damit die SizeOfLinkedList-Methode ordnungsgemäß getestet wird.
@@ -73,22 +73,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Testhilfsmethode
  Die Testhilfsmethode führt die folgenden Schritte aus, die im Code den mit Schritt 1 bis 5 beschrifteten Zeilen entsprechen.
 
-1.  Erstellen einer generischen verknüpften Liste.
+1. Erstellen einer generischen verknüpften Liste.
 
-2.  Anfügen von vier Knoten an die verknüpfte Liste. Der Datentyp des Inhalts dieser Knoten ist unbekannt.
+2. Anfügen von vier Knoten an die verknüpfte Liste. Der Datentyp des Inhalts dieser Knoten ist unbekannt.
 
-3.  Zuweisen der erwarteten Größe der verknüpften Liste zur Variablen `expected`.
+3. Zuweisen der erwarteten Größe der verknüpften Liste zur Variablen `expected`.
 
-4.  Berechnen der tatsächliche Größe der verknüpften Liste und Zuweisen zur Variablen `actual`.
+4. Berechnen der tatsächliche Größe der verknüpften Liste und Zuweisen zur Variablen `actual`.
 
-5.  Vergleichen von `actual` mit `expected` in einer Assert-Anweisung. Wenn die tatsächliche nicht der erwarteten Größe entspricht, ist der Test nicht erfolgreich.
+5. Vergleichen von `actual` mit `expected` in einer Assert-Anweisung. Wenn die tatsächliche nicht der erwarteten Größe entspricht, ist der Test nicht erfolgreich.
 
 ##### <a name="test-method"></a>Testmethode
  Die Testmethode wird in den Code kompiliert, der aufgerufen wird, wenn Sie den Test SizeOfLinkedListTest ausführen. Sie führt die folgenden Schritte aus, die im Code den mit Schritt 6 bis 7 beschrifteten Zeilen entsprechen.
 
-1.  Festlegen von `<int>` beim Aufrufen der Testhilfsmethode, um sicherzustellen, dass der Test für `integer`-Variablen verwendet werden kann.
+1. Festlegen von `<int>` beim Aufrufen der Testhilfsmethode, um sicherzustellen, dass der Test für `integer`-Variablen verwendet werden kann.
 
-2.  Festlegen von `<char>` beim Aufrufen der Testhilfsmethode, um sicherzustellen, dass der Test für `char`-Variablen verwendet werden kann.
+2. Festlegen von `<char>` beim Aufrufen der Testhilfsmethode, um sicherzustellen, dass der Test für `char`-Variablen verwendet werden kann.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -117,8 +117,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 > Bei jeder Ausführung des SizeOfLinkedListTest-Tests wird dessen TestHelper-Methode zweimal aufgerufen. Die Assert-Anweisung muss jedes Mal „true“ ergeben, damit der Test erfolgreich verläuft. Wenn der Test fehlschlägt, ist möglicherweise nicht klar, ob der Fehler durch den Aufruf verursacht wurde, mit dem `<int>` angegeben wurde, oder durch den Aufruf, mit dem `<char>` angegeben wurde. Um dies herauszufinden, könnten Sie die Aufrufliste überprüfen oder Haltepunkte in der Testmethode festlegen und den Test während der Ausführung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen beim Ausführen eines Tests in einer ASP.NET-Projektmappe](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-
-###  <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
+### <a name="TypeConstraintNotSatisfied"></a> Beispiel 2: Verwenden einer Typeinschränkung
  In diesem Beispiel wird ein Komponententest für eine generische Methode veranschaulicht, die eine Typeinschränkung verwendet, die nicht erfüllt wird. Der erste Abschnitt enthält Code aus dem Code-unter-Test-Projekt. Die Typeinschränkung ist hervorgehoben.
 
  Der zweite Abschnitt enthält Code aus dem Testprojekt.

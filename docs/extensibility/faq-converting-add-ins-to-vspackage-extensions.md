@@ -8,18 +8,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077419"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, müssen Sie eine VSIX-Erweiterung zu erstellen. Hier sind die Antworten auf einige häufig gestellten Fragen dazu, wie Sie ein Visual Studio-add-in in einer VSIX-Erweiterung zu konvertieren.
 
 > [!WARNING]
->  Ab Visual Studio 2015 für C# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
+>  Ab Visual Studio 2015 für c# und Visual Basic-Projekte, können Sie mithilfe der VSIX-Projekts und hinzufügen-Elementvorlagen für Menübefehle, Toolfenster und VSPackages. Weitere Informationen finden Sie unter [Neuigkeiten in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
 
 > [!IMPORTANT]
 >  In vielen Fällen können Sie einfach Ihren Code-add-in einem VSIX-Projekt mit einem VSPackage-Projektelement übertragen. Das DTE-Automatisierungsobjekt können Sie durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>-Methode abrufen.
@@ -37,7 +37,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Kann ich meinen Add-In-Projekt in ein VSIX-Projekt konvertieren?
  Ein Add-In Projekt kann nicht direkt in einem VSIX-Projekt nicht konvertiert werden, da die verwendeten Mechanismen in VSIX-Projekte nicht identisch mit denen-Add-in-Projekte sind. Die VSIX-Projektvorlage sowie die richtige Projektelementvorlagen haben viel Code, der es relativ einfach einzurichten und als VSIX-Erweiterung ausgeführt wird.
 
-##  <a name="BKMK_StartDeveloping"></a> Wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?
+## <a name="BKMK_StartDeveloping"></a> Wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?
  Hier ist, wie Sie einer VSIX-Datei vornehmen, die einen Menübefehl hat:
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Um eine VSIX-Erweiterung zu machen, die über einen Menübefehl verfügt
@@ -52,7 +52,7 @@ Add-Ins sind jetzt veraltet. Um eine neue Visual Studio-Erweiterung zu machen, m
 
    Auf der **Tools** Menü (in der experimentellen Instanz) sollte eine Schaltfläche namens **mein Befehlsname**. Wenn Sie diese Schaltfläche auswählen, sollte eine Meldung angezeigt werden: **In TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?
+## <a name="BKMK_RunAddin"></a> Wie kann ich meinen Add-in Code in einem VSPackage ausführen?
 
 Add-In-Code kann auf zwei Arten ausgeführt werden:
 
@@ -158,24 +158,24 @@ Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rück
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Einfügen von Code zur Fensterverwaltung von einem Add-In in ein VSPackage
 
-1.  Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.
+1. Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.
 
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)
+2. Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)
 
-3.  Fügen Sie diese `using`-Anweisungen hinzu:
+3. Fügen Sie diese `using`-Anweisungen hinzu:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:
+4. Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Fügen Sie den Code aus dem Add-In hinzu. Hier ist z. B. Code, der die neue Aufgaben fügt die **Aufgabenliste**, listet die Anzahl der Aufgaben, und klicken Sie dann eine Aufgabe gelöscht.
+5. Fügen Sie den Code aus dem Add-In hinzu. Hier ist z. B. Code, der die neue Aufgaben fügt die **Aufgabenliste**, listet die Anzahl der Aufgaben, und klicken Sie dann eine Aufgabe gelöscht.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ Das Gleiche ist in einem VSPackage möglich. So fügen Sie Add-In-Code zur Rück
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Wie verwalte ich Projekte und Projektmappen in einem VSPackage?
  Wenn das Add-In Projekte und Projektmappen verwaltet, sollte der Code des Add-Ins auch in einem VSPackage funktionieren. Dieser Vorgang zeigt beispielsweise, wie Sie Code hinzufügen können, der das Startprojekt abruft.
 
-1.  Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.
+1. Erstellen Sie eine VSPackage mit einem Menübefehl, wie in der [wie beginne ich mit der Entwicklung von VSIX-Erweiterungen?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) Abschnitt.
 
-2.  Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)
+2. Öffnen Sie die Datei, in der die Definition des VSPackage enthalten ist. (In einem C#-Projekt hat  *\<Projektname > Package.cs*.)
 
-3.  Fügen Sie diese `using`-Anweisungen hinzu:
+3. Fügen Sie diese `using`-Anweisungen hinzu:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:
+4. Suchen Sie die `MenuItemCallback`-Methode. Fügen Sie einen Aufruf zu <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> hinzu, um das <xref:EnvDTE80.DTE2>-Objekt abzurufen:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Fügen Sie den Code aus dem Add-In hinzu. Der folgende Code ruft beispielsweise den Namen eine Startprojekts in einer Projektmappe ab. (Eine Projektmappe mit mehreren Projekten muss geöffnet sein, wenn dieses Paket ausgeführt wird.)
+5. Fügen Sie den Code aus dem Add-In hinzu. Der folgende Code ruft beispielsweise den Namen eine Startprojekts in einer Projektmappe ab. (Eine Projektmappe mit mehreren Projekten muss geöffnet sein, wenn dieses Paket ausgeführt wird.)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

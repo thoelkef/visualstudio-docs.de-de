@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046379"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:  
   
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.  
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.  
   
--   Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen.  
+- Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen.  
   
--   Verwenden des **HLSL-Debuggers** , um den Vertexshader zu überprüfen.  
+- Verwenden des **HLSL-Debuggers** , um den Vertexshader zu überprüfen.  
   
--   Verwenden der **Aufrufliste des Grafikereignisses** , um die Quelle einer falschen HLSL-Konstante zu finden.  
+- Verwenden der **Aufrufliste des Grafikereignisses** , um die Quelle einer falschen HLSL-Konstante zu finden.  
   
 ## <a name="scenario"></a>Szenario  
  Eine der häufigsten Ursachen für ein fehlendes Objekt in einer 3D-App besteht darin, dass der Vertexshader die Scheitelpunkte des Objekts in fehlerhafter oder unerwarteter Weise transformiert – beispielsweise wird das Objekt möglicherweise so skaliert, dass es sehr klein ist, oder so transformiert, dass es nicht vor, sondern hinter der Kamera angezeigt wird.  

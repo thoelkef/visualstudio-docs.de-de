@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106604"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elemente der Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Sie können die registrierungseinstellungen, Laufzeiteinstellungen und Einstiegs
   
  Wenn die Anwendung ausgeführt wird, werden die Registrierungseinträge in der folgenden Reihenfolge definiert:  
   
-1.  Der Schlüssel für die Anwendung wird erstellt.  
+1. Der Schlüssel für die Anwendung wird erstellt.  
   
-2.  Die Registrierung wird von der PKGDEF-Datei der Anwendung durch die Definition der angegebenen Schlüssel und -Einträge aktualisiert.  
+2. Die Registrierung wird von der PKGDEF-Datei der Anwendung durch die Definition der angegebenen Schlüssel und -Einträge aktualisiert.  
   
-3.  Für jedes Paket, das Teil Ihrer Anwendung ist, wird die Registrierung aus der PKGDEF-Datei des Pakets aktualisiert. Jedes Paket ist in der PKGDEF-Datei der Anwendung definiert, durch die $RootKey$ \Packages\\{*VsPackageGuid*} Schlüssel für das Paket.  
+3. Für jedes Paket, das Teil Ihrer Anwendung ist, wird die Registrierung aus der PKGDEF-Datei des Pakets aktualisiert. Jedes Paket ist in der PKGDEF-Datei der Anwendung definiert, durch die $RootKey$ \Packages\\{*VsPackageGuid*} Schlüssel für das Paket.  
   
-4.  Die Registrierung wird aktualisiert, aus dem AppEnvConfig.pkgdef und BaseConfig.pkgdef in die *Visual Studio SDK-Installationspfad*\Common7\IDE\ShellExtensions\Platform-Verzeichnis. Diese Dateien sind Teil von Visual Studio und ihrerseits das verteilbare Paket für Visual Studio Shell (isolierter Modus).  
+4. Die Registrierung wird aktualisiert, aus dem AppEnvConfig.pkgdef und BaseConfig.pkgdef in die *Visual Studio SDK-Installationspfad*\Common7\IDE\ShellExtensions\Platform-Verzeichnis. Diese Dateien sind Teil von Visual Studio und ihrerseits das verteilbare Paket für Visual Studio Shell (isolierter Modus).  
   
-5.  Die Registrierung ist aus der pkgundef-Datei der Anwendung durch das Entfernen der angegebenen Schlüssel und der Einträge aktualisiert.  
+5. Die Registrierung ist aus der pkgundef-Datei der Anwendung durch das Entfernen der angegebenen Schlüssel und der Einträge aktualisiert.  
   
 ## <a name="run-time-settings"></a>Laufzeiteinstellungen  
  Wenn ein Benutzer die isolated Shell-Anwendung startet, ruft er den Einstiegspunkt der Start von Visual Studio-Shell. Anwendungseinstellungen werden definiert, wenn die Anwendung gestartet, wie folgt wird:  

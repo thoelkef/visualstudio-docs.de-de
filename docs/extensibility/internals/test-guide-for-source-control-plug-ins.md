@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf16f79401f4b8df3bafff0f92963510110dff1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061033"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein umfassender Überblick über die am häufigsten verwendeten Tests Bereiche sowie einige der schwierigeren Bereiche, die möglicherweise problematische wird bereitgestellt. In dieser Übersicht ist nicht vorgesehen, um eine vollständige Liste der Testfälle.
@@ -51,55 +51,55 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
 
 ## <a name="test-areas-covered-in-this-section"></a>In diesem Abschnitt behandelten Testbereiche
 
--   [Testbereich 1: Fügen Sie in / öffnen aus der Quellcodeverwaltung hinzu.](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Testbereich 1: Fügen Sie in / öffnen aus der Quellcodeverwaltung hinzu.](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    -   Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen
+    - Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen
 
-    -   Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen
+    - Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen
 
-    -   Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu
+    - Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu
 
--   [Testbereich 2: Rufen aus der Quellcodeverwaltung ab](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Testbereich 2: Rufen aus der Quellcodeverwaltung ab](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
--   [Testbereich 3: Auschecken / Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Testbereich 3: Auschecken / Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    -   Fall 3: Auschecken / Auschecken rückgängig machen
+    - Fall 3: Auschecken / Auschecken rückgängig machen
 
-    -   Groß-/Kleinschreibung 3a: Auschecken
+    - Groß-/Kleinschreibung 3a: Auschecken
 
-    -   Fall 3 b: Offline-Auscheckvorgang
+    - Fall 3 b: Offline-Auscheckvorgang
 
-    -   Fall 3c: / Queryeditquerysave (QEQS.)
+    - Fall 3c: / Queryeditquerysave (QEQS.)
 
-    -   Case-3d: Automatische Auschecken
+    - Case-3d: Automatische Auschecken
 
-    -   Groß-/Kleinschreibung 3e: Rückgängig: Auschecken
+    - Groß-/Kleinschreibung 3e: Rückgängig: Auschecken
 
--   [Testbereich 4: Ankunft](../../extensibility/internals/test-area-4-check-in.md)
+- [Testbereich 4: Ankunft](../../extensibility/internals/test-area-4-check-in.md)
 
-    -   Groß-/Kleinschreibung 4a: Geänderte Elemente
+    - Groß-/Kleinschreibung 4a: Geänderte Elemente
 
-    -   Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien
+    - Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien
 
-    -   Fall 4c: Hinzufügen von Projekten
+    - Fall 4c: Hinzufügen von Projekten
 
--   [Testbereich 5: Quellcodeverwaltung ändern](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Testbereich 5: Quellcodeverwaltung ändern](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    -   Groß-/Kleinschreibung 5a: Binden
+    - Groß-/Kleinschreibung 5a: Binden
 
-    -   Case 5b: Aufheben der Bindung
+    - Case 5b: Aufheben der Bindung
 
-    -   Fall 5c: erneut binden
+    - Fall 5c: erneut binden
 
--   [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)
+- [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)
 
--   [Testbereich 7: Freigeben](../../extensibility/internals/test-area-7-share.md)
+- [Testbereich 7: Freigeben](../../extensibility/internals/test-area-7-share.md)
 
--   [Testbereich 8: Plug-in-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Testbereich 8: Plug-in-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    -   Groß-/Kleinschreibung 8a: Automatische Änderung
+    - Groß-/Kleinschreibung 8a: Automatische Änderung
 
-    -   Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern
+    - Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern
 
 ## <a name="see-also"></a>Siehe auch
 - [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)

@@ -13,21 +13,21 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112480"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Auswahl und Aktualität in der IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) verwaltet Informationen zu Benutzer ausgewählte Objekte derzeit mit der Auswahl *Kontext*. Mit Auswahlkontext können VSPackages Teil in der Währung, die nachverfolgung auf zwei Arten ausführen:  
   
--   Verbreiten Sie Informationen zu Währungen finden Informationen zu den VSPackages in der IDE.  
+- Verbreiten Sie Informationen zu Währungen finden Informationen zu den VSPackages in der IDE.  
   
--   Durch die Überwachung von derzeit aktiven Auswahl von Benutzern in der IDE.  
+- Durch die Überwachung von derzeit aktiven Auswahl von Benutzern in der IDE.  
   
 ## <a name="selection-context"></a>Auswahlkontext  
  Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE Global verfolgt des IDE-Währung, in eine eigene globale Auswahl Context-Objekt. Die folgende Tabelle zeigt die Elemente, die den Auswahlkontext bilden.  
@@ -40,9 +40,9 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumge
   
  Darüber hinaus behält die Umgebung zwei globale Listen:  
   
--   Eine Liste der aktiven UI-Befehls-IDs  
+- Eine Liste der aktiven UI-Befehls-IDs  
   
--   Eine Liste der derzeit aktiven Elementtypen.  
+- Eine Liste der derzeit aktiven Elementtypen.  
   
 ### <a name="window-types-and-selection"></a>Fenstertypen und Auswahl  
  Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organisiert Windows in zwei allgemeine Typen:  
@@ -60,9 +60,9 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumge
 ### <a name="events-and-currency"></a>Ereignisse und Währung  
  Zwei Arten von Ereignissen auftreten, die der Umgebung Konzept der Währung beeinflussen:  
   
--   Ereignisse, die auf globaler Ebene weitergegeben werden, und ändern Sie den Auswahlkontext für Fenster-Frames. Beispiele für diese Art von Ereignissen sind ein untergeordnetes MDI-Fenster geöffnet wird, ein globaler Toolfenster geöffnet wird, oder ein Projekttyp-Toolfenster geöffnet wird.  
+- Ereignisse, die auf globaler Ebene weitergegeben werden, und ändern Sie den Auswahlkontext für Fenster-Frames. Beispiele für diese Art von Ereignissen sind ein untergeordnetes MDI-Fenster geöffnet wird, ein globaler Toolfenster geöffnet wird, oder ein Projekttyp-Toolfenster geöffnet wird.  
   
--   Ereignisse, die die Elemente, die in den Auswahlkontext für Fenster-Frames wird nachverfolgt, zu ändern. Beispiele: Ändern der Auswahl im DocObject oder Ändern der Auswahl in einem Projekttyp-Fenster.  
+- Ereignisse, die die Elemente, die in den Auswahlkontext für Fenster-Frames wird nachverfolgt, zu ändern. Beispiele: Ändern der Auswahl im DocObject oder Ändern der Auswahl in einem Projekttyp-Fenster.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Auswahlkontextobjekte](../../extensibility/internals/selection-context-objects.md)   

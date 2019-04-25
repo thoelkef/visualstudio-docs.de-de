@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097491"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements
   Sie können ein Hoststeuerelement an eine Datenquelle binden und die Datenquelle mit den Änderungen aktualisieren, die im Steuerelement an den Daten vorgenommen werden. In diesem Prozess gibt es zwei Hauptschritte:
@@ -42,7 +42,7 @@ ms.locfileid: "56637593"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Um die in-Memory-Datenquelle zur Laufzeit zu aktualisieren.
 
--   Rufen Sie die <xref:System.Windows.Forms.Binding.WriteValue%2A> -Methode des <xref:System.Windows.Forms.Binding> -Objekts auf, über das das Steuerelement an die Datenquelle gebunden ist.
+- Rufen Sie die <xref:System.Windows.Forms.Binding.WriteValue%2A> -Methode des <xref:System.Windows.Forms.Binding> -Objekts auf, über das das Steuerelement an die Datenquelle gebunden ist.
 
      Im folgenden Beispiel werden Änderungen, die an einem <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement auf einem Excel-Arbeitsblatt vorgenommen wurden, in der Datenquelle gespeichert. Für dieses Beispiel wird davon ausgegangen, dass Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement namens `namedRange1` haben, dessen <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> -Eigenschaft an ein Feld in einer Datenquelle gebunden ist.
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637593"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>So legen Sie mit dem Designer fest, dass ein Steuerelement die In-Memory-Datenquelle automatisch aktualisiert
 
-1.  Öffnen Sie in Visual Studio das Word-Dokument oder die Excel-Arbeitsmappe im Designer.
+1. Öffnen Sie in Visual Studio das Word-Dokument oder die Excel-Arbeitsmappe im Designer.
 
-2.  Klicken Sie auf das Steuerelement, von dem die Datenquelle automatisch aktualisiert werden soll.
+2. Klicken Sie auf das Steuerelement, von dem die Datenquelle automatisch aktualisiert werden soll.
 
-3.  Erweitern Sie im Fenster **Eigenschaften** die **(DataBindings)** -Eigenschaft.
+3. Erweitern Sie im Fenster **Eigenschaften** die **(DataBindings)** -Eigenschaft.
 
-4.  Neben der **(Erweitert)** -Eigenschaft, klicken Sie auf die Schaltfläche mit den Auslassungspunkten (![VisualStudioEllipsesButton-bildschirmabbildung](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton-bildschirmabbildung")).
+4. Neben der **(Erweitert)** -Eigenschaft, klicken Sie auf die Schaltfläche mit den Auslassungspunkten (![VisualStudioEllipsesButton-bildschirmabbildung](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton-bildschirmabbildung")).
 
-5.  Klicken Sie im Dialogfeld **Formatierung und erweiterte Bindung** auf die Dropdownliste **Datenquellen-Aktualisierungsmodus** , und wählen Sie einen der folgenden Werte aus:
+5. Klicken Sie im Dialogfeld **Formatierung und erweiterte Bindung** auf die Dropdownliste **Datenquellen-Aktualisierungsmodus** , und wählen Sie einen der folgenden Werte aus:
 
-    -   Um die Datenquelle zu aktualisieren, wenn das Steuerelement validiert wird, wählen Sie **OnValidation**aus.
+    - Um die Datenquelle zu aktualisieren, wenn das Steuerelement validiert wird, wählen Sie **OnValidation**aus.
 
-    -   Um die Datenquelle zu aktualisieren, wenn sich der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wählen Sie **OnPropertyChanged**aus.
+    - Um die Datenquelle zu aktualisieren, wenn sich der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wählen Sie **OnPropertyChanged**aus.
 
         > [!NOTE]
         >  Die **OnPropertyChanged** -Option gilt nicht für Word-Hoststeuerelemente, da Word keine Benachrichtigungen über Dokument- oder Steuerelementänderungen bereitstellt. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.
 
-6.  Schließen sie das Dialogfeld **Formatierung und erweiterte Bindung** .
+6. Schließen sie das Dialogfeld **Formatierung und erweiterte Bindung** .
 
 ## <a name="update-the-database"></a>Aktualisieren der Datenbank
  Wenn die In-Memory-Datenquelle mit einer Datenbank verknüpft ist, müssen Sie die Datenbank mit den Änderungen an der Datenquelle aktualisieren. Weitere Informationen zum Aktualisieren einer Datenbank finden Sie unter [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md) und [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>So aktualisieren Sie die Datenbank
 
-1.  Rufen Sie die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> -Methode der <xref:System.Windows.Forms.BindingSource> -Instanz für das Steuerelement auf.
+1. Rufen Sie die <xref:System.Windows.Forms.BindingSource.EndEdit%2A> -Methode der <xref:System.Windows.Forms.BindingSource> -Instanz für das Steuerelement auf.
 
      Die <xref:System.Windows.Forms.BindingSource> -Instanz wird automatisch generiert, wenn Sie einem Dokument oder einer Arbeitsmappe zur Entwurfszeit ein datengebundenes Steuerelement hinzufügen. Die <xref:System.Windows.Forms.BindingSource> -Instanz verbindet das Steuerelement mit dem typisierten Dataset im Projekt. Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637593"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  Rufen Sie die `Update` Methode des generierten TableAdapter in Ihrem Projekt.
+2. Rufen Sie die `Update` Methode des generierten TableAdapter in Ihrem Projekt.
 
      Der TableAdapter wird automatisch generiert, wenn Sie ein vom datengebundenen Steuerelement zu einem Dokument oder die Arbeitsmappe zur Entwurfszeit hinzufügen. Der TableAdapter verbindet das typisierte Dataset in Ihrem Projekt mit der Datenbank. Weitere Informationen finden Sie unter [Übersicht über TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 

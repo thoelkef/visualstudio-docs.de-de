@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065388"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 #### <a name="to-create-a-new-wpf-project"></a>So erstellen Sie ein neues WPF-Projekt  
   
-1.  Starten Sie Visual Studio.  
+1. Starten Sie Visual Studio.  
   
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-3.  Erweitern Sie **Visual C#-** oder **Visual Basic**, und wählen Sie dann **Windows**.  
+3. Erweitern Sie **Visual C#-** oder **Visual Basic**, und wählen Sie dann **Windows**.  
   
-4.  Stellen Sie sicher, dass **.NET Framework 4** im Kombinationsfeld am oberen Rand des Dialogfelds ausgewählt ist. Die <xref:System.Windows.Controls.DataGrid> -Steuerelement, das Sie in dieser exemplarischen Vorgehensweise verwenden, ist nur in .NET Framework 4 verfügbar.  
+4. Stellen Sie sicher, dass **.NET Framework 4** im Kombinationsfeld am oberen Rand des Dialogfelds ausgewählt ist. Die <xref:System.Windows.Controls.DataGrid> -Steuerelement, das Sie in dieser exemplarischen Vorgehensweise verwenden, ist nur in .NET Framework 4 verfügbar.  
   
-5.  Wählen Sie die Projektvorlage **WPF-Anwendung** aus.  
+5. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.  
   
-6.  Geben Sie im Feld **Name** `AdventureWorksOrdersViewer`ein.  
+6. Geben Sie im Feld **Name** `AdventureWorksOrdersViewer`ein.  
   
-7.  Klicken Sie auf **OK**.  
+7. Klicken Sie auf **OK**.  
   
      Visual Studio erstellt die `AdventureWorksOrdersViewer` Projekt.  
   
@@ -102,9 +102,9 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 6. Auf der **Datenbankobjekte auswählen** Seite **Tabellen**, und wählen Sie dann die folgenden Tabellen:  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Klicken Sie auf **Fertig stellen**.  
   
@@ -192,15 +192,15 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, in dem
   
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung  
   
-1.  Drücken Sie **F5**.  
+1. Drücken Sie **F5**.  
   
      Die Anwendung wird erstellt und ausgeführt. Überprüfen Sie Folgendes:  
   
-    -   Die **Sales Order ID** Kombinationsfeld zeigt **71774**. Dies ist die erste Bestell-ID in der Entität.  
+    - Die **Sales Order ID** Kombinationsfeld zeigt **71774**. Dies ist die erste Bestell-ID in der Entität.  
   
-    -   Für jede Bestellung wählen Sie in der **Sales Order ID** Kombinationsfeld, detaillierte Bestellinformationen wird angezeigt, der <xref:System.Windows.Controls.DataGrid>.  
+    - Für jede Bestellung wählen Sie in der **Sales Order ID** Kombinationsfeld, detaillierte Bestellinformationen wird angezeigt, der <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Schließen Sie die Anwendung.  
+2. Schließen Sie die Anwendung.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Nach Abschluss dieser exemplarischen Vorgehensweise können Sie Informationen zum Verwenden der **Datenquellen** Fenster in Visual Studio zum Binden von WPF-Steuerelementen an andere Typen von Datenquellen. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelemente an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) und [Binden von WPF-Steuerelemente zu einem Dataset](../data-tools/bind-wpf-controls-to-a-dataset.md).  

@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069457"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Binden von Windows Forms-Steuerelementen an Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windows Forms binden. Um diese datengebundene Steuerelemente zu erstellen, können Sie Elemente aus ziehen die **Datenquellen** auf Windows Forms-Designer in Visual Studio. In diesem Thema werden einige der häufigsten Aufgaben, Tools und Klassen beschrieben, die beim Erstellen von datengebundenen Anwendungen verwendet werden.
 
@@ -42,21 +41,21 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windo
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
--   [Binden von Windows Forms-Steuerelementen an Daten](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Binden von Windows Forms-Steuerelementen an Daten](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [Ausführen eines Commits für aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [Ausführen eines Commits für aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [Erstellen eines Windows Forms zum Suchen von Daten](../data-tools/create-a-windows-form-to-search-data.md)
+- [Erstellen eines Windows Forms zum Suchen von Daten](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [Erstellen eines Windows Forms-Benutzersteuerelements, das die einfache Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [Erstellen eines Windows Forms-Benutzersteuerelements, das die einfache Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [Übergeben von Daten zwischen Formularen](../data-tools/pass-data-between-forms.md)
+- [Übergeben von Daten zwischen Formularen](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource-Komponente
  Die <xref:System.Windows.Forms.BindingSource>-Komponente dient zwei Zwecken. Erstens stellt sie eine Abstraktionsebene bereit, wenn die Steuerelemente auf dem Formular an Daten gebunden werden. Steuerelemente auf dem Formular werden an die <xref:System.Windows.Forms.BindingSource>-Komponente gebunden (also nicht direkt an eine Datenquelle).
@@ -65,11 +64,11 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windo
 
  Weitere Informationen über die <xref:System.Windows.Forms.BindingSource>-Komponente finden Sie unter:
 
--   [BindingSource-Komponente](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource-Komponente](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [Architektur der BindingSource-Komponente](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [Architektur der BindingSource-Komponente](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator-Steuerelement
  Diese Komponente stellt eine Benutzeroberfläche zum Navigieren durch Daten bereit, die von einer Windows-Anwendung angezeigt werden. Weitere Informationen finden Sie unter [BindingNavigator-Steuerelement](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).

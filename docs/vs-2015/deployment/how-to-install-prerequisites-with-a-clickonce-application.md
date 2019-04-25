@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056613"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,31 +41,31 @@ Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen erforder
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Voraussetzungen für die Installation mit einer ClickOnce-Anwendung angeben  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Wählen Sie die **veröffentlichen** Bereich.  
+2. Wählen Sie die **veröffentlichen** Bereich.  
   
-3.  Klicken Sie auf die **Voraussetzungen** die Schaltfläche, um die **Voraussetzungen** Dialogfeld.  
+3. Klicken Sie auf die **Voraussetzungen** die Schaltfläche, um die **Voraussetzungen** Dialogfeld.  
   
-4.  Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
+4. Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
   
-5.  In der **Voraussetzungen** aus, aktivieren Sie die Komponenten, die Sie verwenden möchten, installieren, und klicken Sie dann auf **OK**.  
+5. In der **Voraussetzungen** aus, aktivieren Sie die Komponenten, die Sie verwenden möchten, installieren, und klicken Sie dann auf **OK**.  
   
      Die ausgewählten Komponenten werden verpackt und zusammen mit Ihrer Anwendung veröffentlicht werden.  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>An einen anderen Downloadpfad für erforderliche Komponenten  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Wählen Sie die **veröffentlichen** Bereich.  
+2. Wählen Sie die **veröffentlichen** Bereich.  
   
-3.  Klicken Sie auf die **Voraussetzungen** die Schaltfläche, um die **Voraussetzungen** Dialogfeld.  
+3. Klicken Sie auf die **Voraussetzungen** die Schaltfläche, um die **Voraussetzungen** Dialogfeld.  
   
-4.  Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
+4. Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.  
   
-5.  In der **Geben Sie den Installationsort für erforderliche Komponenten** wählen Sie im Abschnitt **erforderliche Komponenten von folgendem Speicherort herunterladen**.  
+5. In der **Geben Sie den Installationsort für erforderliche Komponenten** wählen Sie im Abschnitt **erforderliche Komponenten von folgendem Speicherort herunterladen**.  
   
-6.  Wählen Sie einen Speicherort aus der Dropdown-Liste, oder geben Sie eine URL, Dateipfad oder FTP-Speicherort, und klicken Sie dann auf **OK.**  
+6. Wählen Sie einen Speicherort aus der Dropdown-Liste, oder geben Sie eine URL, Dateipfad oder FTP-Speicherort, und klicken Sie dann auf **OK.**  
   
     > [!NOTE]
     >  Sie müssen sicherstellen, Installationsprogramme für den angegebenen Komponenten am angegebenen Speicherort vorhanden.  

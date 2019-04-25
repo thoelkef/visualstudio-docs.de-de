@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107787"
 ---
 # <a name="test-area-7-share"></a>Testbereich 7: Freigeben
 Test Hierunter Freigabe Elemente zwischen den Standorten über die **Freigabe** Befehl.
@@ -25,13 +25,13 @@ Test Hierunter Freigabe Elemente zwischen den Standorten über die **Freigabe** 
 
  Freigabe in Ordnern funktioniert, wenn Sie einen Ordner mit mindestens einer Datei unter quellcodeverwaltung darin auswählen. Der Befehl "freigeben" ist deaktiviert, in den folgenden Situationen:
 
--   Wenn der ausgewählte Ordner einen leeren Ordner ist.
+- Wenn der ausgewählte Ordner einen leeren Ordner ist.
 
--   Wenn ein echter Ordner vorhanden ist, aber es wurden keine Quelldateien-Steuerelement enthält.
+- Wenn ein echter Ordner vorhanden ist, aber es wurden keine Quelldateien-Steuerelement enthält.
 
--   Ist ein virtueller Ordner, sind oder nicht Dateien unter quellcodeverwaltung gibt an, ob es ein.
+- Ist ein virtueller Ordner, sind oder nicht Dateien unter quellcodeverwaltung gibt an, ob es ein.
 
--   Wenn es ein Remote-Website-Web-Projekt ist.
+- Wenn es ein Remote-Website-Web-Projekt ist.
 
 ## <a name="command-menu-access"></a>Menüzugriff Befehl
  Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen.
@@ -40,11 +40,11 @@ Test Hierunter Freigabe Elemente zwischen den Standorten über die **Freigabe** 
 
 ## <a name="expected-behavior"></a>Es wird erwartet
 
--   Freigegebene Datei wird im freigegebenen Speicherort angezeigt.
+- Freigegebene Datei wird im freigegebenen Speicherort angezeigt.
 
--   Zeigen die Datenquellen-Steuerelement Version Store Verlauf zeigt, dass Dateien freigegeben werden.
+- Zeigen die Datenquellen-Steuerelement Version Store Verlauf zeigt, dass Dateien freigegeben werden.
 
--   Bearbeiten einer freigegebenen Datei bearbeitet beide Speicherorte der Datei.
+- Bearbeiten einer freigegebenen Datei bearbeitet beide Speicherorte der Datei.
 
 ## <a name="test-cases"></a>Testfälle
  Im folgenden finden bestimmte Testfälle für die Freigabe Testbereich.

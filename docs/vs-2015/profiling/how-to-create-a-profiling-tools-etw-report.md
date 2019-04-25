@@ -9,14 +9,14 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8ad32f3231915c86f9578563ec4c0684435a3ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106500"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Gewusst wie: Erstellen eines ETW-Berichts mit den Profilerstellungstools
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Vorgehensweise: Erstellen einer Profilerstellung ETW-Berichts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In einem ETW-Bericht werden die ETW-Ereignisse aufgeführt, die während einer Leistungssitzung der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (.etl) erfasst. Weitere Informationen zu diesem Bericht finden Sie unter [Bericht der Ereignisablaufverfolgung für Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).  
@@ -24,7 +24,7 @@ In einem ETW-Bericht werden die ETW-Ereignisse aufgeführt, die während einer L
 > [!NOTE]
 >  ETW-Berichte können in der Schnittstelle für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht angezeigt werden.  
   
-- Weitere Informationen zum Erfassen der ETW-Daten über die Schnittstelle für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finden Sie unter [Vorgehensweise: Erfassen von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Weitere Informationen zum Erfassen der ETW-Daten über die Schnittstelle für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finden Sie unter [Vorgehensweise: Sammeln der Ereignisablaufverfolgung für Windows (ETW) Daten](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
 - Informationen zum Erfassen von ETW-Daten über eine Eingabeaufforderung finden Sie unter [VSPerfCmd](../profiling/vsperfcmd.md) und [Events (Ereignisse)](../profiling/events-vsperfcmd.md).  
   
@@ -32,7 +32,7 @@ In einem ETW-Bericht werden die ETW-Ereignisse aufgeführt, die während einer L
   
 ### <a name="to-generate-an-etw-report"></a>So erstellen Sie einen ETW-Bericht  
   
--   Geben Sie im Fenster **Eingabeaufforderung** die folgende Befehlszeile ein:  
+- Geben Sie im Fenster **Eingabeaufforderung** die folgende Befehlszeile ein:  
   
      *ToolsPath* **VSPerfReport** *VSPFile* **/Summary:ETW [/Xml]**  
   

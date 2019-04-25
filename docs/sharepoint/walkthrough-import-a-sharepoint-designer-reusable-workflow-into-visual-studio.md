@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053935"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren eines wiederverwendbaren Workflows in SharePoint Designer 2010 in erstellt eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt.
@@ -48,11 +48,11 @@ ms.locfileid: "56603416"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
+- Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010.
 
 ## <a name="create-target-sharepoint-subsites"></a>Ziel-SharePoint-Unterwebsites erstellen
  Erstellen Sie zunächst zwei neue SharePoint-Unterwebsites: einer der wiederverwendbaren Workflows aus SharePoint Designer, ein weiteres zum Hosten der konvertierte Workflows zu hosten.
@@ -80,27 +80,27 @@ ms.locfileid: "56603416"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>Erstellen ein wiederverwendbares Workflows aus SharePoint Designer
 
-1.  In der **Unterwebsites** Abschnitt der **SPD1** Website ändern.
+1. In der **Unterwebsites** Abschnitt der **SPD1** Website ändern.
 
-2.  Wählen Sie auf dem Menüband der **wieder verwendbaren Workflow** Schaltfläche.
+2. Wählen Sie auf dem Menüband der **wieder verwendbaren Workflow** Schaltfläche.
 
      Das Erstellen eines Wiederverwendbaren Workflows-Assistent wird angezeigt.
 
-3.  In der **Namen** geben **SPD Task Workflow**.
+3. In der **Namen** geben **SPD Task Workflow**.
 
-4.  In der **Inhaltstyp** wählen **Aufgabe**, und wählen Sie dann die **OK** Schaltfläche.
+4. In der **Inhaltstyp** wählen **Aufgabe**, und wählen Sie dann die **OK** Schaltfläche.
 
      Der Workflow wird in der SharePoint Designer-Workflow-Designer geöffnet.
 
-5.  Wählen Sie Schritt 1 im Workflow-Designer, und wählen Sie dann im Menüband der **Bedingung** Schaltfläche.
+5. Wählen Sie Schritt 1 im Workflow-Designer, und wählen Sie dann im Menüband der **Bedingung** Schaltfläche.
 
-6.  Wählen Sie in der Liste der Bedingungen, **Wenn aktuelle Elementfeld gleich Wert ist**.
+6. Wählen Sie in der Liste der Bedingungen, **Wenn aktuelle Elementfeld gleich Wert ist**.
 
      Dieser Schritt fügt eine Bedingung mit dem Namen **Feld Wert gleich**.
 
-7.  In der **Feld Wert gleich** Bedingung, und wählen Sie die **Feld** Link.
+7. In der **Feld Wert gleich** Bedingung, und wählen Sie die **Feld** Link.
 
-8.  Wählen Sie in der Liste der Werte, **Titel**.
+8. Wählen Sie in der Liste der Werte, **Titel**.
 
 9. In der **Feld Wert gleich** Bedingung, und wählen Sie die **Wert** Link.
 
@@ -128,23 +128,23 @@ ms.locfileid: "56603416"
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Speichern und den wiederverwendbaren Workflow bereit
 
-1.  Wählen Sie am Anfang von SharePoint Designer, der **speichern** Schaltfläche, um Ihre Arbeit zu speichern, und wählen Sie dann die **veröffentlichen** für die Bereitstellung von Workflows, der die **SPD1** SharePoint-Website .
+1. Wählen Sie am Anfang von SharePoint Designer, der **speichern** Schaltfläche, um Ihre Arbeit zu speichern, und wählen Sie dann die **veröffentlichen** für die Bereitstellung von Workflows, der die **SPD1** SharePoint-Website .
 
-2.  Wählen Sie im Navigationsbereich die **Workflows** Objekt.
+2. Wählen Sie im Navigationsbereich die **Workflows** Objekt.
 
-3.  Klicken Sie unter **wieder verwendbaren Workflow**, wählen Sie **SPD Task Workflow**.
+3. Klicken Sie unter **wieder verwendbaren Workflow**, wählen Sie **SPD Task Workflow**.
 
-4.  Wählen Sie auf dem Menüband der **als Vorlage speichern** aus, um den Workflow als speichern eine *.wsp* Datei.
+4. Wählen Sie auf dem Menüband der **als Vorlage speichern** aus, um den Workflow als speichern eine *.wsp* Datei.
 
-5.  Öffnen der **SPD1** SharePoint-Website in einem Browser zum Anzeigen der *.wsp* -Datei in SharePoint.
+5. Öffnen der **SPD1** SharePoint-Website in einem Browser zum Anzeigen der *.wsp* -Datei in SharePoint.
 
-6.  Wählen Sie auf der Schnellstartleiste der **Bibliotheken** Link.
+6. Wählen Sie auf der Schnellstartleiste der **Bibliotheken** Link.
 
-7.  In der **Dokumentbibliotheken** Abschnitt der **Websiteobjekten** Link.
+7. In der **Dokumentbibliotheken** Abschnitt der **Websiteobjekten** Link.
 
      Die **SPD Task Workflow** Datei wird zusammen mit anderen Websiteobjekten aufgeführt.
 
-8.  Wählen Sie in der Liste der Dateien den Namen der Datei
+8. Wählen Sie in der Liste der Dateien den Namen der Datei
 
 9. In der **Dateidownload** Dialogfeld wählen die **speichern** Schaltfläche zum Speichern der *.wsp* Datei auf Ihrem lokalen System.
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603416"
 
 11. Da die **Wiederverwendbaren SharePoint 2010-Workflow importieren** Vorlage nicht die Zuordnung-Eigenschaftswerte für den importierten Workflow importieren, müssen Sie sie eingeben. Gehen Sie dazu wie folgt vor:
 
-    1.  In **Projektmappen-Explorer**, wählen Sie die **SPD_Workflow_TestFT** Knoten.
+    1. In **Projektmappen-Explorer**, wählen Sie die **SPD_Workflow_TestFT** Knoten.
 
-    2.  Wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) Schaltfläche neben der Listeneigenschaften an, wie z. B. die **Zielliste** Eigenschaft.
+    2. Wählen Sie die Auslassungspunkte (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")) Schaltfläche neben der Listeneigenschaften an, wie z. B. die **Zielliste** Eigenschaft.
 
-    3.  Geben Sie die fehlenden Werte in den SharePoint Customization Wizard, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+    3. Geben Sie die fehlenden Werte in den SharePoint Customization Wizard, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
 12. Wählen Sie die XOML-Datei, und anschließend auf der Menüleiste die Optionen **Ansicht** > **Designer** um die importierten Workflow im Workflow-Designer anzuzeigen.
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603416"
 
 14. Führen Sie einen der folgenden Schritte aus:
 
-    -   Doppelklicken Sie auf **CodeActivity1** generieren einen Ereignishandler, und zeigen Sie den Code.
+    - Doppelklicken Sie auf **CodeActivity1** generieren einen Ereignishandler, und zeigen Sie den Code.
 
-    -   In der **Eigenschaften** Fenster für **CodeActivity1**, legen Sie den Wert von der **ExecuteCode** Eigenschaft **CodeActivity_ExecuteCode**.
+    - In der **Eigenschaften** Fenster für **CodeActivity1**, legen Sie den Wert von der **ExecuteCode** Eigenschaft **CodeActivity_ExecuteCode**.
 
 15. Fügen Sie die folgenden unter den vorhandenen **mit** oder **Importe** Anweisungen:
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603416"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Bereitstellen des Projekts, und ordnen Sie den workflow
 
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die **F5** Schlüssel ausführen und das konvertierte Workflow-Projekt bereitstellen.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wählen Sie die **F5** Schlüssel ausführen und das konvertierte Workflow-Projekt bereitstellen.
 
-2.  Wählen Sie auf der Schnellstartleiste der **Aufgaben** Link, um die Aufgabenliste anzuzeigen.
+2. Wählen Sie auf der Schnellstartleiste der **Aufgaben** Link, um die Aufgabenliste anzuzeigen.
 
-3.  Auf der **Listentools** Registerkarte die **Elemente** Schaltfläche, und wählen Sie dann die **neues Element** Schaltfläche.
+3. Auf der **Listentools** Registerkarte die **Elemente** Schaltfläche, und wählen Sie dann die **neues Element** Schaltfläche.
 
      Die **Aufgaben - neues Element** Dialogfeld wird geöffnet.
 
-4.  In der **Titel** geben **neue Aufgabe**, und wählen Sie dann die **speichern** Schaltfläche.
+4. In der **Titel** geben **neue Aufgabe**, und wählen Sie dann die **speichern** Schaltfläche.
 
-5.  Auf der **Listentools** Registerkarte die **Liste** Schaltfläche, und wählen Sie dann die **Listeneinstellungen** Schaltfläche.
+5. Auf der **Listentools** Registerkarte die **Liste** Schaltfläche, und wählen Sie dann die **Listeneinstellungen** Schaltfläche.
 
      Die **Listeneinstellungen** Seite wird angezeigt.
 
-6.  In der **Berechtigungen und Verwaltung** Abschnitt der **Workfloweinstellungen** Link.
+6. In der **Berechtigungen und Verwaltung** Abschnitt der **Workfloweinstellungen** Link.
 
      Die **Workfloweinstellungen** Seite wird angezeigt.
 
-7.  Wählen Sie die **fügen Sie einen Workflow** Link.
+7. Wählen Sie die **fügen Sie einen Workflow** Link.
 
-8.  In der **Workflow** wählen **WorkflowImportProject1 - SPD Workflow Test**.
+8. In der **Workflow** wählen **WorkflowImportProject1 - SPD Workflow Test**.
 
 9. In der **Namen** geben **SPD Workflow Test**, und wählen Sie dann die **OK** Schaltfläche.
 

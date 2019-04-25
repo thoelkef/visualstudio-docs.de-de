@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d777752568280d83d021d6143752630845d37c49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086564"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von benutzereinstellungen auf einer Startseite
 
@@ -35,35 +35,35 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
 ## <a name="set-up-the-project"></a>Einrichten des Projekts
 
-1.  Erstellen Sie ein Startseitenprojekt, wie im [erstellen Sie eine benutzerdefinierte Startseite](creating-a-custom-start-page.md). Nennen Sie das Projekt **SaveMySettings**.
+1. Erstellen Sie ein Startseitenprojekt, wie im [erstellen Sie eine benutzerdefinierte Startseite](creating-a-custom-start-page.md). Nennen Sie das Projekt **SaveMySettings**.
 
-2.  In **Projektmappen-Explorer**, fügen Sie dem StartPageControl-Projekt die folgenden Assemblyverweise hinzu:
+2. In **Projektmappen-Explorer**, fügen Sie dem StartPageControl-Projekt die folgenden Assemblyverweise hinzu:
 
-    -   EnvDTE
+    - EnvDTE
 
-    -   EnvDTE80
+    - EnvDTE80
 
-    -   Microsoft.VisualStudio.OLE.Interop
+    - Microsoft.VisualStudio.OLE.Interop
 
-    -   Microsoft.VisualStudio.Shell.Interop.11.0
+    - Microsoft.VisualStudio.Shell.Interop.11.0
 
-3.  Open *"MeinSteuerelement.xaml"*.
+3. Open *"MeinSteuerelement.xaml"*.
 
-4.  Im XAML-Bereich, in der obersten Ebene <xref:System.Windows.Controls.UserControl> Elementdefinition, fügen Sie die folgenden Ereignisdeklaration nach den Namespacedeklarationen hinzu.
+4. Im XAML-Bereich, in der obersten Ebene <xref:System.Windows.Controls.UserControl> Elementdefinition, fügen Sie die folgenden Ereignisdeklaration nach den Namespacedeklarationen hinzu.
 
     ```xml
     Loaded="OnLoaded"
     ```
 
-5.  Klicken Sie in den Entwurfsbereich, klicken Sie auf den Hauptbereich des Steuerelements, und drücken Sie dann **löschen**.
+5. Klicken Sie in den Entwurfsbereich, klicken Sie auf den Hauptbereich des Steuerelements, und drücken Sie dann **löschen**.
 
      Mit diesem Schritt Entfernen der <xref:System.Windows.Controls.Border> -Element und alle Elemente, und lässt Sie nur die obersten Ebene <xref:System.Windows.Controls.Grid> Element.
 
-6.  Von der **Toolbox**, ziehen Sie eine <xref:System.Windows.Controls.StackPanel> Steuerelement zum Raster.
+6. Von der **Toolbox**, ziehen Sie eine <xref:System.Windows.Controls.StackPanel> Steuerelement zum Raster.
 
-7.  Ziehen Sie jetzt eine <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>, und eine Schaltfläche, um die <xref:System.Windows.Controls.StackPanel>.
+7. Ziehen Sie jetzt eine <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>, und eine Schaltfläche, um die <xref:System.Windows.Controls.StackPanel>.
 
-8.  Hinzufügen einer **X: Name** -Attribut für die <xref:System.Windows.Controls.TextBox>, und ein `Click` -Ereignis für die <xref:System.Windows.Controls.Button>, wie im folgenden Beispiel gezeigt.
+8. Hinzufügen einer **X: Name** -Attribut für die <xref:System.Windows.Controls.TextBox>, und ein `Click` -Ereignis für die <xref:System.Windows.Controls.Button>, wie im folgenden Beispiel gezeigt.
 
     ```xml
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -75,15 +75,15 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
 ## <a name="implement-the-user-control"></a>Implementieren Sie das Benutzersteuerelement
 
-1.  In der XAML-Bereich mit der Maustaste der `Click` Attribut der <xref:System.Windows.Controls.Button> -Element, und klicken Sie dann auf **navigieren Sie zum Ereignishandler**.
+1. In der XAML-Bereich mit der Maustaste der `Click` Attribut der <xref:System.Windows.Controls.Button> -Element, und klicken Sie dann auf **navigieren Sie zum Ereignishandler**.
 
      Dieser Schritt öffnet *MyControl.xaml.cs*, und erstellt einen Stub-Ereignishandler für die `Button_Click` Ereignis.
 
-2.  Fügen Sie die folgenden `using` Anweisungen am Anfang der Datei.
+2. Fügen Sie die folgenden `using` Anweisungen am Anfang der Datei.
 
      [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]
 
-3.  Hinzufügen eine privaten `SettingsStore` -Eigenschaft, wie im folgenden Beispiel gezeigt.
+3. Hinzufügen eine privaten `SettingsStore` -Eigenschaft, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     private IVsWritableSettingsStore _settingsStore = null;
@@ -117,7 +117,7 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
      Diese Eigenschaft ruft zunächst einen Verweis auf die <xref:EnvDTE80.DTE2> -Schnittstelle, die das Automatisierungsobjektmodell von enthält die <xref:System.Windows.FrameworkElement.DataContext%2A> der Benutzersteuerelement, und klicken Sie dann verwendet, um eine Instanz des DTE der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> Schnittstelle. Klicken Sie dann wird diese Instanz, um die aktuellen benutzereinstellungen zurück.
 
-4.  Geben Sie die `Button_Click` Ereignis wie folgt.
+4. Geben Sie die `Button_Click` Ereignis wie folgt.
 
     ```csharp
     private void Button_Click(object sender, RoutedEventArgs e)
@@ -134,7 +134,7 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
      Schreibt den Inhalt des Textfelds, das auf ein Feld "MySetting" in einer Auflistung "MySettings" in der Registrierung. Wenn die Auflistung nicht vorhanden ist, wird es erstellt.
 
-5.  Fügen Sie den folgenden Ereignishandler für die `OnLoaded` Ereignis des Steuerelements.
+5. Fügen Sie den folgenden Ereignishandler für die `OnLoaded` Ereignis des Steuerelements.
 
     ```csharp
     private void OnLoaded(Object sender, RoutedEventArgs e)
@@ -148,11 +148,11 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
      Dieser Code legt den Text des Textfelds, das auf den aktuellen Wert des "MySetting" fest.
 
-6.  Erstellen Sie das Benutzersteuerelement.
+6. Erstellen Sie das Benutzersteuerelement.
 
-7.  In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"*.
+7. In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"*.
 
-8.  Legen Sie im manifest-Editor, **Produktname** zu **speichern My Settings Startseite**.
+8. Legen Sie im manifest-Editor, **Produktname** zu **speichern My Settings Startseite**.
 
      Diese Funktion legt den Namen der Startseite fest, wie die in angezeigt werden die **Customize Start Page** Liste der **Optionen** Dialogfeld.
 
@@ -160,27 +160,27 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
 ## <a name="test-the-control"></a>Testen Sie das Steuerelement
 
-1.  Drücken Sie **F5**.
+1. Drücken Sie **F5**.
 
      Die experimentelle Instanz von Visual Studio wird geöffnet.
 
-2.  In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **Optionen**.
+2. In der experimentellen Instanz auf die **Tools** Menü klicken Sie auf **Optionen**.
 
-3.  In der **Umgebung** Knoten, klicken Sie auf **Start**, und dann auf die **Customize Start Page** Liste **[installierte Extension] speichern My Settings Startseite** .
+3. In der **Umgebung** Knoten, klicken Sie auf **Start**, und dann auf die **Customize Start Page** Liste **[installierte Extension] speichern My Settings Startseite** .
 
      Klicken Sie auf **OK**.
 
-4.  Schließen Sie die Startseite, falls er geöffnet ist, und klicken Sie dann auf die **Ansicht** Menü klicken Sie auf **Startseite**.
+4. Schließen Sie die Startseite, falls er geöffnet ist, und klicken Sie dann auf die **Ansicht** Menü klicken Sie auf **Startseite**.
 
-5.  Klicken Sie auf der Startseite auf die **MyControl** Registerkarte.
+5. Klicken Sie auf der Startseite auf die **MyControl** Registerkarte.
 
-6.  Geben Sie in das Textfeld ein **Cat**, und klicken Sie dann auf **Meine Einstellung speichern**.
+6. Geben Sie in das Textfeld ein **Cat**, und klicken Sie dann auf **Meine Einstellung speichern**.
 
-7.  Schließen Sie die Startseite, und öffnen Sie es noch mal.
+7. Schließen Sie die Startseite, und öffnen Sie es noch mal.
 
      Das Wort "Katze" sollte in das Textfeld angezeigt werden.
 
-8.  Ersetzen Sie das Wort "Katze" mit dem Wort "Hund". Klicken Sie nicht auf die Schaltfläche.
+8. Ersetzen Sie das Wort "Katze" mit dem Wort "Hund". Klicken Sie nicht auf die Schaltfläche.
 
 9. Schließen Sie die Startseite, und öffnen Sie es noch mal.
 

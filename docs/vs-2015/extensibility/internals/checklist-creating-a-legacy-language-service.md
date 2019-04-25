@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077523"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
   
 ## <a name="steps-for-creating-a-language-service"></a>Schritte zum Erstellen eines Sprachdiensts  
   
-1.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>-Schnittstelle.  
+1. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>-Schnittstelle.  
   
-    -   In einem VSPackage, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, um den Sprachdienst bereitzustellen.  
+    - In einem VSPackage, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, um den Sprachdienst bereitzustellen.  
   
-    -   Verfügbarmachen von Ihren Sprachdienst für die integrierte Entwicklungsumgebung (IDE) in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung.  
+    - Verfügbarmachen von Ihren Sprachdienst für die integrierte Entwicklungsumgebung (IDE) in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung.  
   
-2.  Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle in der Hauptsprache Dienstklasse.  
+2. Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle in der Hauptsprache Dienstklasse.  
   
      Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle ist der Ausgangspunkt der Interaktion zwischen der Kern-Editor und den Sprachdienst.  
   
@@ -121,7 +121,7 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
   
    Bereitstellen von Kontext für den Editor in einem der folgenden Methoden:  
   
-  -   Bereitstellen von Kontext für Textmarker durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle.  
+  - Bereitstellen von Kontext für Textmarker durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle.  
   
   Geben Sie alle Benutzerkontext durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle.  
   

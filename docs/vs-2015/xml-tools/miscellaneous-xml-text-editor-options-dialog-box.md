@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0181609f083aada564edb585f64ccdaaf104ed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cfebf34b9fc45a94733b4b10cb22b74190ebb127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946965"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667130"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Verschiedenes, XML, Texteditor, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Dialogfeld können Sie die Einstellungen für die automatische Vervollständigung und die Schemaeinstellungen für den XML-Editor ändern. Sie können den Zugriff auf die **Optionen** das Dialogfeld die **Tools** Menü.  
   
 > [!NOTE]
@@ -36,7 +35,7 @@ In diesem Dialogfeld können Sie die Einstellungen für die automatische Vervoll
   
  Standardmäßig ausgewählt.  
   
- **Namespacedeklarationen**  
+ **Namespace declarations (Namespacedeklarationen)**  
  Vom Editor werden im Bedarfsfall automatisch Namespacedeklarationen eingefügt.  
   
  Standardmäßig ausgewählt.  

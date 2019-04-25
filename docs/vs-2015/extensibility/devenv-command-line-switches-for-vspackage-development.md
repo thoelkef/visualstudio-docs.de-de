@@ -17,12 +17,12 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118044"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58960545"
   
  Tasks gehört Folgendes:  
   
--   Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE aus.  
+- Bereitstellen von Anwendungen in vordefinierten Konfigurationen von außerhalb der IDE aus.  
   
--   Erstellen von Projekten mit der Voreinstellung wird automatisch Buildeinstellungen oder Debugkonfigurationen.  
+- Erstellen von Projekten mit der Voreinstellung wird automatisch Buildeinstellungen oder Debugkonfigurationen.  
   
--   Laden die IDE in spezifischen Konfigurationen außerhalb der IDE aus. Darüber hinaus können Sie die IDE beim Start anpassen.  
+- Laden die IDE in spezifischen Konfigurationen außerhalb der IDE aus. Darüber hinaus können Sie die IDE beim Start anpassen.  
   
 ## <a name="guidelines-for-switches"></a>Richtlinien für Switches  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Dokumentation wird beschrieben, die auf Benutzerebene Devenv-Befehlszeilenschalter. Weitere Informationen finden Sie unter [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md). Devenv unterstützt auch zusätzliche Befehlszeilenoptionen, die mit der VSPackage-Entwicklung, Bereitstellung und Debuggen hilfreich sind.  

@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075206"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ Wenn Sie Erweiterungscode für Ebenendiagramme schreiben, können Sie Werte mit 
 > [!IMPORTANT]
 >  Um Eigenschaften anzuzeigen, müssen Sie die folgende Änderung auf jedem Computer vornehmen, in dem Ebeneneigenschaften sichtbar sein sollen.  
 > 
-> 1. Führen Sie mithilfe von Editor **als Administrator ausführen**. Öffnen Sie `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
->    2.  Fügen Sie innerhalb des `Content`-Elements Folgendes hinzu:  
+>  1. Führen Sie mithilfe von Editor **als Administrator ausführen**. Öffnen Sie `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
+>  
+>  2. Fügen Sie innerhalb des `Content`-Elements Folgendes hinzu:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  Unter den **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Developer-Eingabeaufforderung**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. Unter den **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Developer-Eingabeaufforderung**.  
 > 
->    Geben Sie Folgendes ein:  
+>     Geben Sie Folgendes ein:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Starten Sie Visual Studio neu.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Starten Sie Visual Studio neu.  
   
  **Stellen Sie sicher, dass Ihr Code in einem VSIX-Projekt ist.**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:  
   
--   `ILayerModel` - das Modell  
+- `ILayerModel` - das Modell  
   
--   `ILayer` - jede Ebene  
+- `ILayer` - jede Ebene  
   
--   `ILayerDependencyLink` - die Links zwischen Ebenen  
+- `ILayerDependencyLink` - die Links zwischen Ebenen  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Beispiel  
  Der folgende Code entspricht einem typischen benutzerdefinierten Eigenschaftendeskriptor. Er definiert eine boolesche Eigenschaft für das Ebenenmodell (`ILayerModel`), mit dem der Benutzer Werte für eine benutzerdefinierte Validierungsmethode bereitstellen kann.  

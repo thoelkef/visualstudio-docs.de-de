@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793843"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
 
@@ -24,7 +24,7 @@ Mit dem modularen Installationsprogramm von Visual Studio können Sie *Workloads
 
 ::: moniker range="vs-2017"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Window
 
 ## <a name="debug-test-and-improve-your-code"></a>Debuggen, Testen und Verbessern Ihres Codes
 
-Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder auf einem [Geräteemulator](../cross-platform/visual-studio-emulator-for-android.md) zu debuggen. Sie können Ihren Code Anweisung für Anweisung durchlaufen und die Variablen untersuchen. Sie können Haltepunkte setzen, die nur erreicht werden, wenn eine bestimmte Bedingung erfüllt ist. Debugoptionen können im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Tour zu den Debuggerfeatures](../debugger/debugger-feature-tour.md).
+Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder auf einem [Geräteemulator](../cross-platform/visual-studio-emulator-for-android.md) zu debuggen. Sie können Ihren Code Anweisung für Anweisung durchlaufen und die Variablen untersuchen. Sie können Haltepunkte setzen, die nur erreicht werden, wenn eine bestimmte Bedingung erfüllt ist. Debugoptionen können im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
 Sehen Sie sich für weitere Informationen zum Verbessern der Leistung Ihrer Apps das [Profilerstellungsfeature](../profiling/profiling-feature-tour.md) von Visual Studio an.
 

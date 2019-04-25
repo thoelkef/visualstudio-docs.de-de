@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcc6e59f1c87cd0c3a82383ac97a80488ac1168d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074920"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungspakets
   Sie können den Paket-Designer zum Erstellen und Anpassen eines Pakets (*.wsp*). Sie können z. B. SharePoint-Projektelemente und Features hinzufügen, die angeben, wenn der Webserver zurückgesetzt, wenn die Lösung bereitgestellt wird, und den Bereitstellungsservertyp festlegen.
@@ -31,20 +31,20 @@ ms.locfileid: "56602675"
 
 #### <a name="to-open-the-package-designer"></a>Um den Paket-Designer zu öffnen.
 
--   In **Projektmappen-Explorer**, doppelklicken Sie auf **Paket**, oder wählen Sie **Ansicht-Designer** auf das Kontextmenü für **Paket**.
+- In **Projektmappen-Explorer**, doppelklicken Sie auf **Paket**, oder wählen Sie **Ansicht-Designer** auf das Kontextmenü für **Paket**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Die gepackte ManifestfFile anzeigen
  Sie können den Paket-Designer verwenden, ändern und das Generieren der Manifestdatei für gepackten. Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.
 
 #### <a name="to-view-the-xml-source-file"></a>Die XML-Quelldatei anzeigen
 
-1.  In der **-Paket-Designer**, wählen Sie **Manifest**.
+1. In der **-Paket-Designer**, wählen Sie **Manifest**.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>So zeigen Sie die Manifestdatei für gepackte mit Projektmappen-Explorer
 
-1.  Klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
+1. Klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
 
-2.  Erweitern Sie Paket "Package.Package", und öffnen Sie dann die *Package.Template.xml* Datei.
+2. Erweitern Sie Paket "Package.Package", und öffnen Sie dann die *Package.Template.xml* Datei.
 
     > [!NOTE]
     >  Wenn Sie die XML-Manifestdatei für die Paket-Vorlage öffnen, die Dateien werden automatisch überprüft, und können Sie ignorieren, die Warnungen, die in das Fenster "Fehlerliste" angezeigt werden.
@@ -54,13 +54,13 @@ ms.locfileid: "56602675"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Die Manifestvorlage zu ändern, indem Sie mit der XML-Editor
 
-1.  In der **-Paket-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und wählen Sie dann die **im XML-Editor geöffnet** Link.
+1. In der **-Paket-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und wählen Sie dann die **im XML-Editor geöffnet** Link.
 
      Änderungen an den XML-Code werden in der Manifestdatei für gepackte zusammengeführt.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>So ändern Sie die Manifestvorlage mithilfe des Bereichs der Manifestvorlage
 
-1.  In der **-Paket-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und klicken Sie dann ändern Sie den XML-Code, der im Manifest der Template angezeigt wird.
+1. In der **-Paket-Designer**, wählen Sie die **Manifest** Registerkarte, erweitern Sie die **Bearbeitungsoptionen** Knoten, und klicken Sie dann ändern Sie den XML-Code, der im Manifest der Template angezeigt wird.
 
      Änderungen an den XML-Code werden angezeigt, der **Vorschau des Paket-Manifest** Bereich.
 
@@ -72,9 +72,9 @@ ms.locfileid: "56602675"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Paket-manifest-Datei zu überschreiben, durch Deaktivieren des Designers
 
-1.  In der **-Paket-Designer**, wählen Sie die **Manifest** Registerkarte.
+1. In der **-Paket-Designer**, wählen Sie die **Manifest** Registerkarte.
 
-2.  Erweitern Sie die **Bearbeitungsoptionen** Knoten, wählen Sie die **überschreiben generierte XML-"und" Bearbeiten Manifest im XML-Editor** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.
+2. Erweitern Sie die **Bearbeitungsoptionen** Knoten, wählen Sie die **überschreiben generierte XML-"und" Bearbeiten Manifest im XML-Editor** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.
 
      Die Vorlage wird durch die aktuelle Paket-manifest-Datei aktualisiert.
 
@@ -83,7 +83,7 @@ ms.locfileid: "56602675"
 
 #### <a name="to-re-enable-the-designer"></a>Um den Designer erneut zu aktivieren.
 
-1.  In der **-Paket-Designer**, wählen Sie die **manifestbearbeitungen verwerfen und den Designer erneut zu aktivieren** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.
+1. In der **-Paket-Designer**, wählen Sie die **manifestbearbeitungen verwerfen und den Designer erneut zu aktivieren** verknüpfen, und wählen Sie dann die **Ja** Schaltfläche.
 
      Die Vorlage wird mit dem ursprünglichen Text aktualisiert, und alle Änderungen an den XML-Code gehen verloren.
 

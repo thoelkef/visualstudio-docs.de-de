@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063152"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Vorgehensweise: Erweitern des DSL-Designers
 
@@ -26,23 +26,23 @@ Richten Sie ein Projekt, das den Code Ihrer Erweiterung enthält, und ein VSIX-P
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Erstellen Sie eine DSL-Designer-Erweiterungsprojektmappe
 
-1.  Erstellen Sie ein neues Projekt mit der **Klassenbibliothek** Projektvorlage. Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.
+1. Erstellen Sie ein neues Projekt mit der **Klassenbibliothek** Projektvorlage. Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.
 
-2.  Erstellen Sie ein neues **VSIX-Projekt** Projekt.
+2. Erstellen Sie ein neues **VSIX-Projekt** Projekt.
 
      Wählen Sie **zu Projektmappe hinzufügen**.
 
      *"Source.Extension.vsixmanifest"* im VSIX-manifest-Editor wird geöffnet.
 
-3.  Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.
+3. Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.
 
-4.  In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.
+4. In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.
 
-5.  Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.
+5. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.
 
-6.  Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.
+6. Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.
 
-7.  Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:
+7. Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Um eine der Erweiterungen in diesem Thema zu testen, erstellen Sie, und führen 
 
 Um die Erweiterungen zu den wichtigsten Visual Studio, und klicken Sie auf anderen Computern bereitzustellen, gehen Sie folgendermaßen vor:
 
-1.  Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX
+1. Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX
 
-2.  Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.
+2. Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.
 
      Der Visual Studio-Erweiterungs-Manager wird geöffnet, um sicherzustellen, dass die Erweiterung installiert wurde.
 
 Um die Erweiterung zu deinstallieren, gehen Sie folgendermaßen vor:
 
-1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
-2.  Wählen Sie die Erweiterung, oder löschen.
+2. Wählen Sie die Erweiterung, oder löschen.
 
 ## <a name="add-a-shortcut-menu-command"></a>Fügen Sie einen Befehl im Kontextmenü
 

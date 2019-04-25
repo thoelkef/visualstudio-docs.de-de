@@ -14,19 +14,19 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: aa2728306d9e650bf7f8b446b6af5a409a39d0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101560"
 ---
 # <a name="expected-"></a>Erwartet '\@"
 Sie haben versucht, erstellen Sie eine Variable, die Anweisungen für bedingte Kompilierung mit der `@set` -Anweisung, jedoch nicht platziert werden. ein at-Zeichen "**@**" vor dem Variablennamen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Hinzufügen einer at-Zeichen "**@**" unmittelbar vor dem Variablennamen. Zum Beispiel:  
+- Hinzufügen einer at-Zeichen "**@**" unmittelbar vor dem Variablennamen. Zum Beispiel:  
   
     ```JavaScript  
     @set @myvar = 1  
@@ -34,5 +34,5 @@ Sie haben versucht, erstellen Sie eine Variable, die Anweisungen für bedingte K
   
 ## <a name="see-also"></a>Siehe auch  
  [@set Anweisung](../../javascript/reference/at-set-statement-javascript.md)   
- [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [Für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)

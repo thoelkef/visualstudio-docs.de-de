@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430716"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Arbeiten mit Python in Visual Studio
 
@@ -26,9 +26,9 @@ Visual Studio bietet erstklassige Unterstützung für Python. In diesem Tutorial
 
 - [Schritt 0: Installation](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [Schritt 1: Erstellen eines Python-Projekts (dieser Artikel)](#step-1-create-a-new-python-project)
-- [Schritt 2: Schreiben und Ausführen von Code, um mit Visual Studio IntelliSense in der Praxis zu arbeiten](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Schritt 3: Erstellen von weiterem Code im interaktivem REPL-Fenster](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Schritt 4: Ausführen eines abgeschlossenen Programms im Visual Studio-Debugger](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Schritt 2: Writing and running code to see Visual Studio IntelliSense at work (Schreiben und Ausführen von Code, um mit Visual Studio IntelliSense in der Praxis zu arbeiten)](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Schritt 3: Create more code in the interactive REPL window (Erstellen von weiterem Code im interaktivem REPL-Fenster)](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Schritt 4: Run the completed program in the Visual Studio debugger (Ausführen eines abgeschlossenen Programms im Visual Studio-Debugger)](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 - [Schritt 5: Installieren von Paketen und Verwalten von Python-Umgebungen](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Schritt 6: Arbeiten mit Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 

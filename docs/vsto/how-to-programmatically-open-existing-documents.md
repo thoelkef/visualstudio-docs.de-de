@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e31e5307acb8dadd627cc0a7a0c65572c7ab219
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062164"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Vorgehensweise: Programmgesteuertes Öffnen vorhandener Dokumente
   Die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode öffnet die vorhandene Microsoft Office Word-Dokument, das durch einen vollqualifizierten Pfad und Dateiname angegeben. Diese Methode gibt eine <xref:Microsoft.Office.Interop.Word.Document> , der das geöffnete Dokument darstellt.
@@ -27,14 +27,14 @@ ms.locfileid: "56653982"
 
 ## <a name="to-open-a-document"></a>Zum Öffnen eines Dokuments
 
--   Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode der der <xref:Microsoft.Office.Interop.Word.Documents> Sammlung und geben Sie einen Pfad zum Dokument.
+- Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode der der <xref:Microsoft.Office.Interop.Word.Documents> Sammlung und geben Sie einen Pfad zum Dokument.
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
 ## <a name="to-open-a-document-as-read-only"></a>Um ein Dokument als schreibgeschützt zu öffnen.
 
--   Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode, geben Sie einen Pfad zum Dokument, und legen die *ReadOnly* Argument **"true"** im Aufruf Methode.
+- Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> -Methode, geben Sie einen Pfad zum Dokument, und legen die *ReadOnly* Argument **"true"** im Aufruf Methode.
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,7 +42,7 @@ ms.locfileid: "56653982"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Codebeispiel benötigen Sie Folgendes:
 
--   Ein Dokument namens *NewDocument.doc* muss vorhanden sein, in ein Verzeichnis namens *Test* auf Laufwerk C.
+- Ein Dokument namens *NewDocument.doc* muss vorhanden sein, in ein Verzeichnis namens *Test* auf Laufwerk C.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Programmgesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md)

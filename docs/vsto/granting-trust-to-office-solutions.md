@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102522"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Gewähren von Vertrauen für Office-Projektmappen
   Gewähren von Vertrauen für Office-Projektmappen bedeutet, dass Ändern der Sicherheitsrichtlinie von jedem Zielcomputer, die Projektmappenassembly, Anwendungsmanifest, Bereitstellungsmanifest und Dokument zu vertrauen. Office-Projektmappe können Sie oder der Endbenutzer Vertrauenswürdigkeit gewährt werden.
@@ -31,7 +31,7 @@ ms.locfileid: "54871376"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="Signing"></a> Vertrauen Sie der Projektmappe, indem die Anwendungs- und Bereitstellungsmanifeste zu signieren
+## <a name="Signing"></a> Vertrauen Sie der Projektmappe, indem die Anwendungs- und Bereitstellungsmanifeste zu signieren
  Alle-Anwendungsmanifest und-Bereitstellungsmanifest für Office-Lösungen mit einem Zertifikat signiert werden müssen, die den Herausgeber identifiziert. Zertifikate ermöglichen eine Basis zum treffen von Entscheidungen zur Vertrauenswürdigkeit.
 
  Ein temporäres Zertifikat für Sie erstellt und zum Zeitpunkt der Erstellung Vertrauenswürdigkeit gewährt werden, damit die Projektmappe beim Debuggen ausgeführt wird. Wenn Sie eine Lösung, die mit der ein temporäres Zertifikat signiert ist veröffentlichen, werden die Endbenutzer aufgefordert, eine Vertrauensstellung Entscheidung zu treffen.
@@ -40,7 +40,7 @@ ms.locfileid: "54871376"
 
  Wenn ein Entwickler die Lösung mit einem temporären Zertifikat signiert, ein Administrator kann erneut signieren die Anpassung mit einem bekannten und vertrauenswürdigen Zertifikat mit dem Manifest Generation and Editing Tool (*mage.exe*), einer der der Microsoft .NET Framework-Tools. Weitere Informationen zum Signieren von Lösungen finden Sie unter [Vorgehensweise: Signieren von Office-Projektmappen](../vsto/how-to-sign-office-solutions.md) und [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-##  <a name="TrustPrompt"></a>Vertrauen Sie der Projektmappe mithilfe der ClickOnce-vertrauensaufforderung
+## <a name="TrustPrompt"></a>Vertrauen Sie der Projektmappe mithilfe der ClickOnce-vertrauensaufforderung
  [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] fordert den Endbenutzer auf die Vertrauensstellung Entscheidung zu treffen, wenn keine organisationsweite Richtlinie, die das Zertifikat der Projektmappe als vertrauenswürdig eingestuft. Wenn der Benutzer der Projektmappe Vertrauenswürdigkeit gewährt, wird ein Eintrag der Aufnahmeliste erstellt, die eine URL und einen öffentlichen Schlüssel zum Speichern von dieser Entscheidung über die Vertrauenswürdigkeit enthält. Wenn eine vertrauenswürdige Anpassung später ausgeführt wird, wird der Endbenutzer nicht erneut aufgefordert werden.
 
  Administratoren können Deaktivieren der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vertrauenswürdige Eingabeaufforderung oder erfordern, dass die Aufforderung nur für Projektmappen ausgeführt werden, die mit einem Authenticode-Zertifikat signiert sind. Weitere Informationen zum Ändern dieser Einstellungen für die Zonen "Arbeitsplatz" "," LocalIntranet "," Internet "," TrustedSites, und "UntrustedSites finden Sie unter [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).

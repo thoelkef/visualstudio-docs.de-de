@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077497"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Vorgehensweise: Verwenden des Disassembierungsfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Dieses Feature ist nur verfügbar, wenn Debuggen auf Adressebene aktiviert, ist 
   
 ### <a name="to-display-the-disassembly-window"></a>So öffnen Sie das Disassemblierungsfenster  
   
--   Auf der **Debuggen** Menü wählen **Windows**, und klicken Sie auf **Disassembly**.  
+- Auf der **Debuggen** Menü wählen **Windows**, und klicken Sie auf **Disassembly**.  
   
      Der Debugger muss ausgeführt werden oder sich im Unterbrechungsmodus befinden.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>So aktivieren bzw. deaktivieren Sie die Anzeige optionaler Informationen  
   
--   Mit der rechten Maustaste die **Disassembly** Fenster, und aktivieren bzw. deaktivieren Sie die gewünschten Optionen im Kontextmenü die Option.  
+- Mit der rechten Maustaste die **Disassembly** Fenster, und aktivieren bzw. deaktivieren Sie die gewünschten Optionen im Kontextmenü die Option.  
   
      Ein gelber Pfeil am linken Rand kennzeichnet die Position des aktuellen Ausführungspunkts. Bei systemeigenem Code entspricht diese dem Programmzähler der CPU. Diese Position zeigt die nächste Anweisung an, die im Programm ausgeführt wird.  
   

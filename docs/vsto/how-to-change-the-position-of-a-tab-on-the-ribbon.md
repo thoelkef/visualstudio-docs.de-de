@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc628ffd37cd67c080bfd544c77d6189e6eca21a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091901"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Vorgehensweise: Ändern der Position einer Registerkarte des Menübands
   Sie können die Reihenfolge von benutzerdefinierten Registerkarten auf einem Menüband ändern, mit der **Registerkartenauflistungs-Editor**. Benutzerdefinierte Registerkarten können vor oder nach einer integrierten Registerkarte auf dem Menüband angeordnet werden. Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband einer Microsoft Office-Anwendung befindet. Z. B. die **Daten** Registerkarte ist eine integrierte Registerkarte in Excel.
@@ -26,33 +26,33 @@ ms.locfileid: "56641104"
 
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>So ändern Sie die Reihenfolge der Registerkarten auf dem Menüband
 
-1.  Wählen Sie die Menüband-Codedatei (*vb* oder *cs* Datei) in **Projektmappen-Explorer**.
+1. Wählen Sie die Menüband-Codedatei (*vb* oder *cs* Datei) in **Projektmappen-Explorer**.
 
-2.  Auf der **Ansicht** Menü klicken Sie auf **Designer**.
+2. Auf der **Ansicht** Menü klicken Sie auf **Designer**.
 
-3.  Mit der rechten Maustaste in der Menüband-Designer, und klicken Sie dann auf **Eigenschaften**.
+3. Mit der rechten Maustaste in der Menüband-Designer, und klicken Sie dann auf **Eigenschaften**.
 
-4.  In der **Eigenschaften** wählen Sie im Fenster der **Registerkarten** -Eigenschaft, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET mobile-Designer-Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).
+4. In der **Eigenschaften** wählen Sie im Fenster der **Registerkarten** -Eigenschaft, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (![ASP.NET mobile-Designer-Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).
 
      Die **Registerkartenauflistungs-Editor** angezeigt wird.
 
-5.  In der **Registerkartenauflistungs-Editor**in die **Mitglieder** Liste, wählen Sie die Registerkarte, die Sie verschieben, und klicken Sie auf den Pfeil nach oben oder nach-unten-Pfeile, um die Aktivierreihenfolge ändern möchten.
+5. In der **Registerkartenauflistungs-Editor**in die **Mitglieder** Liste, wählen Sie die Registerkarte, die Sie verschieben, und klicken Sie auf den Pfeil nach oben oder nach-unten-Pfeile, um die Aktivierreihenfolge ändern möchten.
 
 ### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Um eine Registerkarte vor oder nach einer integrierten Registerkarte auf dem Menüband positionieren.
 
-1.  Wählen Sie eine benutzerdefinierte Registerkarte im Menüband-Designer.
+1. Wählen Sie eine benutzerdefinierte Registerkarte im Menüband-Designer.
 
-2.  In der **Eigenschaften** Fenster erweitern Sie die **ControlId** -Eigenschaft, und klicken Sie dann sicher, dass der Wert des der **ControlIdType** -Eigenschaftensatz auf **benutzerdefinierte**.
+2. In der **Eigenschaften** Fenster erweitern Sie die **ControlId** -Eigenschaft, und klicken Sie dann sicher, dass der Wert des der **ControlIdType** -Eigenschaftensatz auf **benutzerdefinierte**.
 
-3.  In der **Eigenschaften** Fenster, erweitern Sie die **Position** Eigenschaft.
+3. In der **Eigenschaften** Fenster, erweitern Sie die **Position** Eigenschaft.
 
-4.  Legen Sie die **PositionType** Eigenschaft auf den entsprechenden Wert:
+4. Legen Sie die **PositionType** Eigenschaft auf den entsprechenden Wert:
 
-    -   **BeforeOfficeId** wird die Gruppe vor einer angegebenen integrierten Registerkarte.
+    - **BeforeOfficeId** wird die Gruppe vor einer angegebenen integrierten Registerkarte.
 
-    -   **AfterOfficeId** wird die Gruppe nach einer angegebenen integrierten Registerkarte.
+    - **AfterOfficeId** wird die Gruppe nach einer angegebenen integrierten Registerkarte.
 
-5.  Legen Sie die **OfficeId** Eigenschaft, um die Steuerelement-ID einer integrierten Registerkarte.
+5. Legen Sie die **OfficeId** Eigenschaft, um die Steuerelement-ID einer integrierten Registerkarte.
 
      Eine Liste der Steuerelement-IDs, finden Sie unter [Office 2010-Hilfedateien: Steuerelement-IDs für Office fluent User Interface](http://go.microsoft.com/fwlink/?LinkID=181052).
 

@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092174"
 ---
 # <a name="working-with-xml-data"></a>Arbeiten mit XML-Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio eine große Rolle. Visual Studio enthält Tools und Funktionen, die das Arbeiten mit XML, XSLT und XML-Schemas vereinfachen.  
   
 ## <a name="xml-editor"></a>XML-Editor  
@@ -27,17 +26,17 @@ XML und XML-Technologien spielen beim Verarbeiten von Daten in [!INCLUDE[msCoNam
   
  Folgende zusätzlichen Funktionen sind verfügbar:  
   
--   Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte.  
+- Unterstützung von XML-Ausschnitten, einschließlich schemagenerierter Ausschnitte.  
   
--   Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können.  
+- Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können.  
   
--   Ausführen von XSL-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML.  
+- Ausführen von XSL-Transformationen und Anzeigen der Ergebnisse als Text, XML oder HTML.  
   
--   Generieren von XSD-Schemas (XML-Schemadefinitionssprache) aus dem XML-Instanzdokument.  
+- Generieren von XSD-Schemas (XML-Schemadefinitionssprache) aus dem XML-Instanzdokument.  
   
--   Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung.  
+- Unterstützung für das Bearbeiten von XSLT-Stylesheets, einschließlich IntelliSense-Unterstützung.  
   
--   XML-Schema-Explorer  
+- XML-Schema-Explorer  
   
 ## <a name="xml-schema-designer"></a>XML-Schema-Designer  
  Der XML-Schema-Designer ist in Microsoft Visual Studio 2010 und den XML-Editor integriert, um die Arbeit mit XSD-Schemas (XML-Schemadefinitionssprache) zu ermöglichen.  

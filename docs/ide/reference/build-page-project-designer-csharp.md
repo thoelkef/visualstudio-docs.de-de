@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791668"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkonfigurationseigenschaften des Projekts anzugeben. Diese Seite bezieht sich nur auf [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekte.
@@ -56,12 +56,11 @@ Wenn Sie eine Anwendung als 64-Bit-Anwendung ausführen, wird die Zeigergröße 
 
 Dieses Kontrollkästchen ist nur verfügbar, wenn die folgenden Bedingungen zutreffen:
 
--   Auf der Seite **Erstellen** ist die Liste **Plattformziel** auf **Any CPU** festgelegt.
+- Auf der Seite **Erstellen** ist die Liste **Plattformziel** auf **Any CPU** festgelegt.
 
--   Auf der Seite **Anwendung** wird in der Liste **Ausgabetyp** angegeben, dass das Projekt eine Anwendung ist.
+- Auf der Seite **Anwendung** wird in der Liste **Ausgabetyp** angegeben, dass das Projekt eine Anwendung ist.
 
--   Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.
-
+- Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.
 
 **Unsicheren Code zulassen**: ermöglicht das Kompilieren von Code, der das [unsafe](/dotnet/csharp/language-reference/keywords/unsafe)-Schlüsselwort verwendet. Weitere Informationen finden Sie unter [/unsafe (C# Compiler Options](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

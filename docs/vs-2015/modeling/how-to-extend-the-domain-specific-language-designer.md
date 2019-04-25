@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038905"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Vorgehensweise: Erweitern des DSL-Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ Sie können Erweiterungen in den Designer vornehmen, die Sie verwenden, um die D
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Erstellen Sie eine DSL-Designer-Erweiterungsprojektmappe  
   
-1.  Erstellen eines neuen Projekts mithilfe der Projektvorlage für Klassenbibliothek. In der **neues Projekt** Dialogfeld klicken Sie auf **Visual C#-** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.  
+1. Erstellen eines neuen Projekts mithilfe der Projektvorlage für Klassenbibliothek. In der **neues Projekt** Dialogfeld klicken Sie auf **Visual C#-** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.  
   
      Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.  
   
-2.  Erstellen Sie ein neues Projekt mit der VSIX-Projektvorlage. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann im mittleren Fenster die Option **VSIX-Projekt**.  
+2. Erstellen Sie ein neues Projekt mit der VSIX-Projektvorlage. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann im mittleren Fenster die Option **VSIX-Projekt**.  
   
      Wählen Sie **zu Projektmappe hinzufügen**.  
   
      "Source.Extension.vsixmanifest", die im VSIX-manifest-Editor wird geöffnet.  
   
-3.  Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.  
+3. Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.  
   
-4.  In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.  
+4. In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.  
   
-5.  Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.  
+5. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.  
   
-6.  Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.  
+6. Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.  
   
-7.  Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:  
+7. Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:  
   
      Microsoft.VisualStudio.CoreUtility  
   

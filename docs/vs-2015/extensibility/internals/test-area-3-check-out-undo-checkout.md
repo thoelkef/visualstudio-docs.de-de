@@ -13,12 +13,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067442"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Testbereich 3: Auschecken / Auschecken rückgängig machen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 ##### <a name="check-out"></a>Abreise:  
   
--   **Datei**, **Quellcodeverwaltung**, **Auschecken**.  
+- **Datei**, **Quellcodeverwaltung**, **Auschecken**.  
   
--   **Datei**, **Auschecken**.  
+- **Datei**, **Auschecken**.  
   
--   Klicken Sie im Kontextmenü **Auschecken**.  
+- Klicken Sie im Kontextmenü **Auschecken**.  
   
--   Rückgängig: Auschecken: **Datei**, **Quellcodeverwaltung**, **Rückgängig: Auschecken**.  
+- Rückgängig: Auschecken: **Datei**, **Quellcodeverwaltung**, **Rückgängig: Auschecken**.  
   
 ## <a name="common-expected-behavior"></a>Allgemeine erwartet  
   
--   Nach dem Auschecken werden die Ziel-Dateien bzw. Ordner markiert, als im Versionsspeicher ausgecheckt.  
+- Nach dem Auschecken werden die Ziel-Dateien bzw. Ordner markiert, als im Versionsspeicher ausgecheckt.  
   
--   Der Versionsspeicher Attribute das Auschecken, an den richtigen Benutzer.  
+- Der Versionsspeicher Attribute das Auschecken, an den richtigen Benutzer.  
   
--   Uhrzeit und Datum des Auscheckens sind richtige (pro-Einstellungen des Benutzers).  
+- Uhrzeit und Datum des Auscheckens sind richtige (pro-Einstellungen des Benutzers).  
   
 ## <a name="test-cases"></a>Testfälle  
  Im folgenden finden bestimmte Testfälle für den Testbereich "Auschecken rückgängig: Auschecken /".  
@@ -72,11 +72,11 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
   
--   Können keine **ausschließlich Out** Befehl, wenn Sie aus dem Versionsspeicher verbunden.  
+- Können keine **ausschließlich Out** Befehl, wenn Sie aus dem Versionsspeicher verbunden.  
   
--   Können keine **Rückgängig: Auschecken** Befehl, wenn Sie aus dem Versionsspeicher verbunden.  
+- Können keine **Rückgängig: Auschecken** Befehl, wenn Sie aus dem Versionsspeicher verbunden.  
   
--   **Freigegebenen Auschecken** Befehl funktioniert.  
+- **Freigegebenen Auschecken** Befehl funktioniert.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
@@ -87,13 +87,13 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
   
--   Nach dem Auschecken werden die Ziel-Dateien bzw. Ordner markiert, als im Versionsspeicher ausgecheckt.  
+- Nach dem Auschecken werden die Ziel-Dateien bzw. Ordner markiert, als im Versionsspeicher ausgecheckt.  
   
--   Der Versionsspeicher Attribute der sehen Sie sich an den richtigen Benutzer.  
+- Der Versionsspeicher Attribute der sehen Sie sich an den richtigen Benutzer.  
   
--   Das Datum und Uhrzeit des das Auschecken sind richtige (pro-Einstellungen des Benutzers).  
+- Das Datum und Uhrzeit des das Auschecken sind richtige (pro-Einstellungen des Benutzers).  
   
--   Die lokale Kopie der Zieldatei oder des Ordners kann geschrieben werden.  
+- Die lokale Kopie der Zieldatei oder des Ordners kann geschrieben werden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
@@ -106,13 +106,13 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
   
--   Nach dem Auschecken werden die Ziel-Dateien bzw. Ordner markiert, als im Versionsspeicher ausgecheckt.  
+- Nach dem Auschecken werden die Ziel-Dateien bzw. Ordner markiert, als im Versionsspeicher ausgecheckt.  
   
--   Der Versionsspeicher Attribute der sehen Sie sich an den richtigen Benutzer.  
+- Der Versionsspeicher Attribute der sehen Sie sich an den richtigen Benutzer.  
   
--   Das Datum und Uhrzeit des das Auschecken stimmt (pro-Einstellungen des Benutzers).  
+- Das Datum und Uhrzeit des das Auschecken stimmt (pro-Einstellungen des Benutzers).  
   
--   Die lokale Kopie der Zieldatei oder des Ordners kann geschrieben werden.  
+- Die lokale Kopie der Zieldatei oder des Ordners kann geschrieben werden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
@@ -124,9 +124,9 @@ Quellcodeverwaltung-Plug-in Test Hierunter bearbeiten und Zurücksetzen der Elem
   
 #### <a name="expected-behavior"></a>Es wird erwartet  
   
--   Der Standardwert basiert darauf, dass des Benutzers **lokale Version Auschecken** festlegen. Wenn der Benutzer ausgewählt hat, um die lokale Version auszuchecken, ist die Standardeinstellung für "Auschecken rückgängig" immer wieder in den die Version, die ausgecheckt.  
+- Der Standardwert basiert darauf, dass des Benutzers **lokale Version Auschecken** festlegen. Wenn der Benutzer ausgewählt hat, um die lokale Version auszuchecken, ist die Standardeinstellung für "Auschecken rückgängig" immer wieder in den die Version, die ausgecheckt.  
   
--   Nach Annahme der rückgängig-, die Symbole in **Projektmappen-Explorer** aktualisiert werden, für die betroffenen Dateien und das Element wird aus entfernt die **Anstehende Eincheckvorgänge** Fenster.  
+- Nach Annahme der rückgängig-, die Symbole in **Projektmappen-Explorer** aktualisiert werden, für die betroffenen Dateien und das Element wird aus entfernt die **Anstehende Eincheckvorgänge** Fenster.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  

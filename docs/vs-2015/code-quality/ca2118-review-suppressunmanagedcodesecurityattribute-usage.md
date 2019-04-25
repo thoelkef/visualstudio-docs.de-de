@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059174"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verwendung von SuppressUnmanagedCodeSecurityAttribute prüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58957349"
 
  Die Standardsicherheitsrichtlinie nicht verwaltetem Code auf eine Assembly gewährt Ihnen kein Recht, wenn sie auf dem lokalen Computer ausgeführt wird, oder ein Mitglied einer der folgenden Gruppen ist:
 
--   Meine Computer Internetzonen-Codegruppe
+- Meine Computer Internetzonen-Codegruppe
 
--   Codegruppe von Microsoft starker Name
+- Codegruppe von Microsoft starker Name
 
--   ECMA Strong Name-Codegruppe
+- ECMA Strong Name-Codegruppe
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Überprüfen Sie sorgfältig den Code, um sicherzustellen, dass dieses Attribut absolut notwendig ist. Wenn Sie nicht mit verwaltetem Code Security vertraut sind oder die Sicherheitsaspekte bei der Verwendung dieses Attributs nicht verstehen, aus dem Code entfernen. Wenn das Attribut erforderlich ist, müssen Sie sicherstellen, dass der Aufrufer können nicht für Code in böswilliger Absicht verwendet werden. Wenn Ihr Code keine Berechtigung zum nicht verwalteten Code ausführen, wird dieses Attribut hat keine Auswirkungen und sollte entfernt werden.

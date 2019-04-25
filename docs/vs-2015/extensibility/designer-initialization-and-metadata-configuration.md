@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049256"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und Metadatenkonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
 ### <a name="customizing-initialization"></a>Anpassen von Initialisierung  
  Anpassen von einem Designer, einer Komponente oder ein Designer-Oberfläche umfasst:  
   
-1.  Ändern die Designer-Metadaten und effektiv ändern, wie eine bestimmte <xref:System.Type> zugegriffen oder konvertiert wird.  
+1. Ändern die Designer-Metadaten und effektiv ändern, wie eine bestimmte <xref:System.Type> zugegriffen oder konvertiert wird.  
   
      Dies erfolgt normalerweise über die <xref:System.Drawing.Design.UITypeEditor> oder <xref:System.ComponentModel.TypeConverter> Mechanismen.  
   
      Z. B., wenn <xref:System.Windows.Forms>-Basis-Designer initialisiert werden, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung ändert die <xref:System.Drawing.Design.UITypeEditor> für <xref:System.Web.UI.WebControls.Image> Objekte, die mit dem Designer verwendet, um die Ressourcen-Manager verwenden, um Bitmaps anstatt im Dateisystem zu erhalten.  
   
-2.  Integrieren mit der Umgebung, z. B. durch Abonnieren von Ereignissen oder Abrufen der Konfigurationsinformationen des Projekts. Abrufen von Projektkonfigurationsinformationen und Abonnieren von Ereignissen durch Abrufen der <xref:System.ComponentModel.Design.ITypeResolutionService> Schnittstelle.  
+2. Integrieren mit der Umgebung, z. B. durch Abonnieren von Ereignissen oder Abrufen der Konfigurationsinformationen des Projekts. Abrufen von Projektkonfigurationsinformationen und Abonnieren von Ereignissen durch Abrufen der <xref:System.ComponentModel.Design.ITypeResolutionService> Schnittstelle.  
   
-3.  Änderung der benutzerumgebung durch Aktivieren der entsprechenden **Toolbox** Kategorien oder Beschränken des Designers Anwendbarkeit durch Anwenden einer Instanz von der <xref:System.ComponentModel.ToolboxItemFilterAttribute> Klasse, um den Designer.  
+3. Änderung der benutzerumgebung durch Aktivieren der entsprechenden **Toolbox** Kategorien oder Beschränken des Designers Anwendbarkeit durch Anwenden einer Instanz von der <xref:System.ComponentModel.ToolboxItemFilterAttribute> Klasse, um den Designer.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Designer-Initialisierung von einem VSPackage  
  Eine VSPackage sollte das Designer-Initialisierung von verarbeiten:  

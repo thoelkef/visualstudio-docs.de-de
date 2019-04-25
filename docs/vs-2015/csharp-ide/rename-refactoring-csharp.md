@@ -1,5 +1,5 @@
 ---
-title: Refactoring mit Umbenennen (C#) | Microsoft-Dokumentation
+title: Refactoring mit Umbenennen (c#) | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114729"
 ---
 # <a name="rename-refactoring-c"></a>Umgestaltung durch Umbenennen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58959261"
   
 #### <a name="to-rename-an-identifier"></a>Um einen Bezeichner umbenennen  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1. Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58959261"
     }  
     ```  
   
-2.  Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
+2. Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
   
-3.  Von der **Umgestalten** , wählen Sie im Menü **umbenennen**. Die **umbenennen** Dialogfeld wird angezeigt.  
+3. Von der **Umgestalten** , wählen Sie im Menü **umbenennen**. Die **umbenennen** Dialogfeld wird angezeigt.  
   
      Sie können auch mit der rechten Maustaste des Cursors, zeigen Sie auf **Umgestalten** auf das Kontextmenü, und klicken Sie dann auf **umbenennen** zum Anzeigen der **umbenennen** Dialogfeld.  
   
-4.  In der **neuen Namen** Feld `MethodC`.  
+4. In der **neuen Namen** Feld `MethodC`.  
   
-5.  Wählen Sie die **in Kommentaren suchen** Kontrollkästchen.  
+5. Wählen Sie die **in Kommentaren suchen** Kontrollkästchen.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
-7.  In der **Vorschau der Änderungen** Dialogfeld klicken Sie auf **übernehmen**.  
+7. In der **Vorschau der Änderungen** Dialogfeld klicken Sie auf **übernehmen**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Um einen Bezeichner mit Smarttags umbenennen  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1. Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58959261"
     }  
     ```  
   
-2.  In der Deklaration für `MethodB`, oder geben Sie den Methodenbezeichner RÜCKTASTE. Unterhalb dieser Bezeichner ist eine Smarttag-Aufforderung erscheint.  
+2. In der Deklaration für `MethodB`, oder geben Sie den Methodenbezeichner RÜCKTASTE. Unterhalb dieser Bezeichner ist eine Smarttag-Aufforderung erscheint.  
   
     > [!NOTE]
     >  Refactoring mit Umbenennung mit Smarttags bei der Deklaration eines Bezeichners kann nur aufgerufen werden.  
   
-3.  Geben Sie die Tastenkombination UMSCHALT + ALT + F10, und drücken Sie dann auf den Pfeil nach unten der Smarttag-Menü angezeigt werden soll.  
+3. Geben Sie die Tastenkombination UMSCHALT + ALT + F10, und drücken Sie dann auf den Pfeil nach unten der Smarttag-Menü angezeigt werden soll.  
   
      - oder -   
   
      Zeigen Sie den Mauszeiger auf die Smarttag-Eingabeaufforderung auf das Smarttag angezeigt werden soll. Klicken Sie dann den Mauszeiger auf das Smarttag, und klicken Sie auf den Pfeil nach unten, um die Smarttag-Menü angezeigt werden soll.  
   
-4.  Wählen Sie die **umbenennen "\<identifer1 >', '\<Bezeichner2 >"** Menüelement zum Aufrufen der Umgestaltung mit Umbenennen ohne eine Vorschau der Änderungen an Ihrem Code. Alle Verweise auf  **\<identifer1 >** werden automatisch aktualisiert werden, um  **\<Bezeichner2 >**.  
+4. Wählen Sie die **umbenennen "\<identifer1 >', '\<Bezeichner2 >"** Menüelement zum Aufrufen der Umgestaltung mit Umbenennen ohne eine Vorschau der Änderungen an Ihrem Code. Alle Verweise auf  **\<identifer1 >** werden automatisch aktualisiert werden, um  **\<Bezeichner2 >**.  
   
      - oder -   
   

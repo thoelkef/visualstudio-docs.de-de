@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069434"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Vorgehensweise: Programmgesteuertes Speichern von Visio-Dokumenten
   Es gibt mehrere Methoden zum Speichern von Microsoft Office Visio-Dokumenten:
@@ -35,7 +35,7 @@ ms.locfileid: "56618600"
 
 ### <a name="to-save-a-document"></a>So speichern Sie einen Dokument
 
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Save`-Methode der `Microsoft.Office.Tools.Visio.Document`-Klasse eines zuvor gespeicherten Dokuments auf.
+- Rufen Sie die `Microsoft.Office.Interop.Visio.Document.Save`-Methode der `Microsoft.Office.Tools.Visio.Document`-Klasse eines zuvor gespeicherten Dokuments auf.
 
      Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse im Projekt aus.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618600"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>So speichern Sie das aktive Visio-Dokument unter einem neuen Namen
 
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.SaveAs`-Methode des zu speichernden `Microsoft.Office.Tools.Visio.Document` aus, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens verwenden. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben.
+- Rufen Sie die `Microsoft.Office.Interop.Visio.Document.SaveAs`-Methode des zu speichernden `Microsoft.Office.Tools.Visio.Document` aus, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens verwenden. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben.
 
      Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse im Projekt aus.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618600"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>So speichern Sie ein Dokument unter einem neuen Namen und mit angegebenen Argumenten
 
--   Rufen Sie die `Microsoft.Office.Interop.Visio.Document.SaveAsEx`-Methode des zu speichernden `Microsoft.Office.Tools.Visio.Document` aus, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens verwenden. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird eine Ausnahme ausgelöst.
+- Rufen Sie die `Microsoft.Office.Interop.Visio.Document.SaveAsEx`-Methode des zu speichernden `Microsoft.Office.Tools.Visio.Document` aus, indem Sie einen vollqualifizierten Pfad einschließlich eines Dateinamens verwenden. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird eine Ausnahme ausgelöst.
 
      Im folgenden Codebeispiel wird das aktive Dokument unter einem neuen Namen gespeichert, das Dokument als schreibgeschützt markiert und in der Liste zuletzt verwendeter Dokumente angezeigt. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es von der `ThisAddIn` -Klasse im Projekt aus.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618600"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Für dieses Codebeispiel benötigen Sie Folgendes:
 
--   Zum Speichern eines Dokuments, das einen neuen Namen verfügt, ein Verzeichnis namens `Test` Wohnsitz in die *eigene* Ordner (für Windows XP und früher) oder die *Dokumente* Ordner (für Windows Vista).
+- Zum Speichern eines Dokuments, das einen neuen Namen verfügt, ein Verzeichnis namens `Test` Wohnsitz in die *eigene* Ordner (für Windows XP und früher) oder die *Dokumente* Ordner (für Windows Vista).
 
 ## <a name="see-also"></a>Siehe auch
 - [Visio-Projektmappen](../vsto/visio-solutions.md)

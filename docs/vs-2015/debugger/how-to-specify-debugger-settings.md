@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051455"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Vorgehensweise: Angeben von Debuggereinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Das Debugverhalten kann in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mithilfe
   
 ### <a name="to-set-debugger-options"></a>So legen Sie Debuggeroptionen fest  
   
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+1. Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Öffnen Sie im Dialogfeld **Optionen** den Ordner **Debuggen**.  
+2. Öffnen Sie im Dialogfeld **Optionen** den Ordner **Debuggen**.  
   
-3.  Wählen Sie die gewünschte Optionskategorie im Ordner **Debuggen** aus.  
+3. Wählen Sie die gewünschte Optionskategorie im Ordner **Debuggen** aus.  
   
      Die am häufigsten verwendeten Optionen sind unter der Kategorie **Allgemein** aufgeführt. Weitere Informationen finden Sie unter [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
-4.  Aktivieren oder deaktivieren Sie die gewünschten Optionen. Hilfe zu den Optionen erhalten Sie, indem Sie F1 drücken.  
+4. Aktivieren oder deaktivieren Sie die gewünschten Optionen. Hilfe zu den Optionen erhalten Sie, indem Sie F1 drücken.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Debuggen, Dialogfeld „Optionen“](../debugger/general-debugging-options-dialog-box.md)   

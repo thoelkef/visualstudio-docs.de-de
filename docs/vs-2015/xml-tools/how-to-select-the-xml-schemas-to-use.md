@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091474"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Auswählen der zu verwendenden XML-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas" bereit. Der Schemacache enthält bekannte XML-Schemata, die für IntelliSense und zur Validierung von XML-Dokumenten verwendet werden.  
   
  Die **Schemas** Document-Eigenschaft wird verwendet, um Wählen Sie eine oder mehrere XML-Schema Definition Language (XSD) Schemas verwenden. Sie können damit Schemas aus dem Schemacache auswählen oder ein Schema angeben, das sich nicht im Cache befindet.  
@@ -51,23 +50,23 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>So fügen Sie dem Schemacache ein XML-Schema hinzu  
   
-1.  Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche auf der **Schemas** Feld.  
+1. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche auf der **Schemas** Feld.  
   
-2.  Klicken Sie auf **Hinzufügen**.  
+2. Klicken Sie auf **Hinzufügen**.  
   
      Daraufhin wird die **XSD-Schema öffnen** Dialogfeld.  
   
-3.  Navigieren Sie zu den Schemas, die dem Schemacache hinzugefügt werden sollen, und markieren Sie diese.  
+3. Navigieren Sie zu den Schemas, die dem Schemacache hinzugefügt werden sollen, und markieren Sie diese.  
   
-4.  Klicken Sie auf **Öffnen**.  
+4. Klicken Sie auf **Öffnen**.  
   
      Die Schemas, die dem Schema hinzugefügt und die **verwenden** Spaltenwert wird festgelegt, um **dieses Schema verwenden**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>So löschen Sie ein XML-Schema aus dem Schemacache  
   
-1.  Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche auf der **Schemas** Feld.  
+1. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche auf der **Schemas** Feld.  
   
-2.  Wählen Sie das Schema zu entfernen, und klicken Sie dann auf **entfernen**.  
+2. Wählen Sie das Schema zu entfernen, und klicken Sie dann auf **entfernen**.  
   
      Das Schema wird aus dem In-Memory-Schemacache , jedoch nicht aus dem Dateisystem entfernt.  
   

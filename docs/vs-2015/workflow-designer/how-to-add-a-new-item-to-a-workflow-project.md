@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063624"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt
 Nach der Erstellung eines Workflowprojekts können Sie diesem Projekt Workflowaktivitäten, Designer und andere bekannte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Elemente hinzufügen.  
@@ -30,17 +30,17 @@ Nach der Erstellung eines Workflowprojekts können Sie diesem Projekt Workflowak
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>So fügen Sie ein neues Element zu einem Workflowprojekt hinzu  
   
-1.  Auf der **Projekt** Menü klicken Sie auf **neues Element hinzufügen...** .  
+1. Auf der **Projekt** Menü klicken Sie auf **neues Element hinzufügen...** .  
   
      Die **Hinzufügen eines neuen Elements** Dialogfeld wird geöffnet.  
   
-2.  In der **installierte Vorlagen** wählen Sie im Bereich **Workflow** Gruppe.  
+2. In der **installierte Vorlagen** wählen Sie im Bereich **Workflow** Gruppe.  
   
-3.  Wählen Sie eines der vier Elemente aus. In der vorherigen Tabelle ist die verfügbare Auswahl aufgeführt.  
+3. Wählen Sie eines der vier Elemente aus. In der vorherigen Tabelle ist die verfügbare Auswahl aufgeführt.  
   
-4.  Geben Sie einen geeigneten Namen für das Element in der **Namen** Feld am unteren Rand des Dialogfelds.  
+4. Geben Sie einen geeigneten Namen für das Element in der **Namen** Feld am unteren Rand des Dialogfelds.  
   
-5.  Klicken Sie auf **hinzufügen** um das Element dem aktuellen Workflowprojekt hinzuzufügen.  
+5. Klicken Sie auf **hinzufügen** um das Element dem aktuellen Workflowprojekt hinzuzufügen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen eines Workflowprojekts](../workflow-designer/creating-a-workflow-project.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090022"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "58960071"
   
 - Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt ein Renderziel mit folgenden Eigenschaften beschreibt:  
   
-  -   Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.  
+  - Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.  
   
-  -   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
+  - Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
   
-  -   Das CPUAccessFlags-Member ist auf 0 gesetzt.  
+  - Das CPUAccessFlags-Member ist auf 0 gesetzt.  
   
-  -   Das MipLevels-Member ist auf 1 gesetzt.  
+  - Das MipLevels-Member ist auf 1 gesetzt.  
   
 - Das Gerät unterstützt die angefragte Samplinganzahl (0, 2 oder 4) und Samplingqualität (0) für das angefragte Renderzielformat (Member D3D11_TEXTURE2D_DESC::Format), wie durch `ID3D11Device::CheckMultisampleQualityLevels` festgelegt.  
   

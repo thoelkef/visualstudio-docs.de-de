@@ -8,27 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc9c53055c31e8cfbedb089b48eda4274fe8b9a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081878"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), die der Unthemed sind, führen Sie Standard-Dialogfelder [Windows Desktop Dialogfeld Layout Prinzipien](/windows/desktop/uxguide/win-dialog-box). Wie Visual Studio verschoben wird, um die Benutzeroberfläche zu aktualisieren, müssen einige der bekannteren Dialoge ein neues Design, das sie als Produkt – beim Definieren von Umgebungen herstellt. Diese [Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) Design Darstellung aufweisen.
 
-##  <a name="BKMK_UtilityDialogLayout"></a> Hilfsprogramm Dialogfeldlayout
+## <a name="BKMK_UtilityDialogLayout"></a> Hilfsprogramm Dialogfeldlayout
 
--   Alle Steuerelemente in einem Dialogfeld Hilfsprogramm sollten beginnen am oben links und nach unten übertragen.
+- Alle Steuerelemente in einem Dialogfeld Hilfsprogramm sollten beginnen am oben links und nach unten übertragen.
 
--   Nie Zentrieren von Steuerelementen in einem Dialogfeld, um eine große Fläche auszufüllen.
+- Nie Zentrieren von Steuerelementen in einem Dialogfeld, um eine große Fläche auszufüllen.
 
--   Verwenden Sie die Umgebungsschriftart verwendet für alle den Text des Dialogfelds an. Wenn Sie eine visual-Spezifikation zu schreiben, geben Sie die Umgebungsschriftart verwendet anstelle einer bestimmten Schriftart und Größe. Finden Sie unter [die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Verwenden Sie die Umgebungsschriftart verwendet für alle den Text des Dialogfelds an. Wenn Sie eine visual-Spezifikation zu schreiben, geben Sie die Umgebungsschriftart verwendet anstelle einer bestimmten Schriftart und Größe. Finden Sie unter [die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
--   Verwenden Sie konsistente Steuerung Abstand und die Platzierung, um das Ziel für die Qualität in handwerkliches können zu unterstützen.
+- Verwenden Sie konsistente Steuerung Abstand und die Platzierung, um das Ziel für die Qualität in handwerkliches können zu unterstützen.
 
--   Dialoge können aus einer größeren Anzahl von Steuerelementen, einem eindeutigen Juxtaposition Steuerelemente oder beides komplexer. Können Sie für diese komplexen Situationen ausreichend Abstand zwischen Steuerelement Gruppierungen, Benutzern einen logischen Ablauf zu analysieren.
+- Dialoge können aus einer größeren Anzahl von Steuerelementen, einem eindeutigen Juxtaposition Steuerelemente oder beides komplexer. Können Sie für diese komplexen Situationen ausreichend Abstand zwischen Steuerelement Gruppierungen, Benutzern einen logischen Ablauf zu analysieren.
 
 ### <a name="utility-dialog-layout-examples"></a>Beispiele für die Utility-Dialogfeld-layout
  Alle Dimensionen werden als Pixel ausgedrückt.
@@ -45,11 +45,11 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
 
 #### <a name="margins"></a>Seitenränder
 
--   Alle Dialogfelder müssen einen 12-Pixel-Rahmen um alle Ränder.
+- Alle Dialogfelder müssen einen 12-Pixel-Rahmen um alle Ränder.
 
--   Ränder, innerhalb einer Gruppe sollte 9 Pixel vom Rand des Frames.
+- Ränder, innerhalb einer Gruppe sollte 9 Pixel vom Rand des Frames.
 
--   Ränder, innerhalb eines Registerkarten-Steuerelements sollte 6 Pixel von der Kante des Registersteuerelements sein.
+- Ränder, innerhalb eines Registerkarten-Steuerelements sollte 6 Pixel von der Kante des Registersteuerelements sein.
 
 #### <a name="command-buttons"></a>Befehlsschaltflächen
 
@@ -69,13 +69,13 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
 
 #### <a name="labels"></a>Bezeichnungen
 
--   Linksbündig alle Bezeichnungen.
+- Linksbündig alle Bezeichnungen.
 
--   Für Bezeichnungen, die über ein Steuerelement befinden, sollten sie linksbündig genau mit dem Steuerelement darunter und am Ende die Bezeichnung muss 5 Pixel oberhalb des oberen anderer Steuerelemente (z. B. ein Kombinationsfeld).
+- Für Bezeichnungen, die über ein Steuerelement befinden, sollten sie linksbündig genau mit dem Steuerelement darunter und am Ende die Bezeichnung muss 5 Pixel oberhalb des oberen anderer Steuerelemente (z. B. ein Kombinationsfeld).
 
--   Für Bezeichnungen, die sich auf der linken Seite der Steuerelemente befinden, ist die minimale Breite zwischen dem Bezeichnungsfeld und das Eingabesteuerelement 10 Pixel. Zum Ausrichten von den Inhalt der Textfelder, Kombinationsfelder oder andere Steuerelemente, sollte eine implizite Spalte für die zweite hergestellt werden.
+- Für Bezeichnungen, die sich auf der linken Seite der Steuerelemente befinden, ist die minimale Breite zwischen dem Bezeichnungsfeld und das Eingabesteuerelement 10 Pixel. Zum Ausrichten von den Inhalt der Textfelder, Kombinationsfelder oder andere Steuerelemente, sollte eine implizite Spalte für die zweite hergestellt werden.
 
--   Bezeichnungen großgeschrieben werden, gefolgt von einem Doppelpunkt. Finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Bezeichnungen großgeschrieben werden, gefolgt von einem Doppelpunkt. Finden Sie unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Abstand zwischen Steuerelementen
  Stapeln Sie Steuerelemente relativ. Es gibt keine absolute Richtlinie für den Abstand zwischen Steuerelementen der gestapelt. Die Dichtigkeit zwischen den Steuerelementen kann leicht zwischen Dialogfelder variieren. Der empfohlene Abstand wird 20 Pixel für vertikale Steuerelement bezeichnungs-Paaren und 9 Pixel für die horizontale Steuerelement bezeichnungs-Paaren. Die minimale Steuerelement Abstand für horizontale Paare ist 6 Pixel.
@@ -96,11 +96,11 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
 
 #### <a name="helper-text"></a>Hilfstext
 
--   Ein Dialogfeld kann Hilfetext anzeigen, die Weitere Informationen zu den Zweck des Dialogfelds enthält. Diese kann in der Regel befindet sich am oberen Rand und 1 bis 2 Sätze.
+- Ein Dialogfeld kann Hilfetext anzeigen, die Weitere Informationen zu den Zweck des Dialogfelds enthält. Diese kann in der Regel befindet sich am oberen Rand und 1 bis 2 Sätze.
 
--   Die Länge der Zeile muss eine vertraut Breite für einen Benutzer zu analysieren und zu lesen. Ein Mittel Dialogfeld sollte nicht mehr als 550 Pixel breit sein.
+- Die Länge der Zeile muss eine vertraut Breite für einen Benutzer zu analysieren und zu lesen. Ein Mittel Dialogfeld sollte nicht mehr als 550 Pixel breit sein.
 
-####  <a name="BKMK_InteriorCommandButtons"></a> Innere Befehlsschaltflächen
+#### <a name="BKMK_InteriorCommandButtons"></a> Innere Befehlsschaltflächen
  In komplexeren Dialogfeldern möglicherweise ein internes Steuerelement einen eigenen zugehörigen Schaltflächen, beeinflussen können, wo sich das Dialogfeld "Commit-Schaltflächen befinden.
 
 - Verwenden, die eine vertikale Ausrichtung (Spalte) des inneren beim Schaltflächen **OK**/**Abbrechen** horizontal in der unteren rechten Ecke ausgerichtet sind.
@@ -120,22 +120,22 @@ Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../
 #### <a name="browse-button"></a>[Durchsuchen...] Schaltfläche "
  **[Durchsuchen...]**  Schaltflächen, die ein Textfeld zu folgen sollten schreiben Sie "Durchsuchen..." vollständig einschließlich der mit den Auslassungspunkten. Wenn der Speicherplatz ist eng gesteckt, oder es sind mehrere **[durchsuchen...]**  Schaltflächen auf dem Bildschirm die Schaltfläche mit den können reduziert werden, um nur mit den Auslassungspunkten.
 
-##  <a name="BKMK_ThemedDialogLayout"></a> Dialogfeldlayout
+## <a name="BKMK_ThemedDialogLayout"></a> Dialogfeldlayout
  Design Dialogfelder in Visual Studio haben die Darstellung ein heller und bieten mehr Leerzeichen. Typografie bietet mehr Bedeutung und Interesse sind, bietet weitere open Zeilenabstand und eine Variante der Schriftgrade und Gewichtungen. Wo möglich, Chrome und Titelleisten verringert oder entfernt wurden. Das Layout dieser Dialogfelder sollten dieses grundlegende Muster befolgen:
 
-1.  Der Hintergrund des Dialogfelds ist weiß.
+1. Der Hintergrund des Dialogfelds ist weiß.
 
-2.  In einem mittleren Wert grau ist ein 1-Pixel-Regel-Rahmen vorhanden.
+2. In einem mittleren Wert grau ist ein 1-Pixel-Regel-Rahmen vorhanden.
 
-3.  Der Dialogfeldtitel nicht mehr befindet sich in der Titelleiste, bietet jedoch interessanter und geht es in eine größere Größe. (Finden Sie im Abschnitt Größe Schriftart [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. Der Dialogfeldtitel nicht mehr befindet sich in der Titelleiste, bietet jedoch interessanter und geht es in eine größere Größe. (Finden Sie im Abschnitt Größe Schriftart [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4.  Bezeichnungen, die zusammen mit zusätzlichen Text, z. B. eine Beschreibung, sollte **Umgebungsschriftart + Fettformatierung**.
+4. Bezeichnungen, die zusammen mit zusätzlichen Text, z. B. eine Beschreibung, sollte **Umgebungsschriftart + Fettformatierung**.
 
-5.  Innere Spalten sind durch eine Regel 1 Pixel hellgrau getrennt.
+5. Innere Spalten sind durch eine Regel 1 Pixel hellgrau getrennt.
 
-6.  Standardmäßig Links haben keinen Unterstrich. Haben eine Textfarbe ändern und den Unterstrich, Hover- und den gedrückten Zustand.
+6. Standardmäßig Links haben keinen Unterstrich. Haben eine Textfarbe ändern und den Unterstrich, Hover- und den gedrückten Zustand.
 
-7.  Übernehmen Sie die Schaltflächen (z. B. **OK**/**Abbrechen**) befinden sich in der unteren rechten Ecke.
+7. Übernehmen Sie die Schaltflächen (z. B. **OK**/**Abbrechen**) befinden sich in der unteren rechten Ecke.
 
 ### <a name="themed-dialog-layout-examples"></a>Beispiele für die Design-Dialogfeld-layout
  ![Dialogfeldlayout](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-H_ThemedDialog")

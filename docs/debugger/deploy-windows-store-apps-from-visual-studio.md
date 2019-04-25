@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065739"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von UWP-Apps aus Visual Studio
 
@@ -28,7 +28,7 @@ Die Funktionen zur Bereitstellung von Visual Studio erstellt und registriert UWP
 
 - Handelt es sich bei dem Ziel um ein Remotegerät, kopiert Visual Studio die erforderlichen Dateien auf den Remotecomputer und registriert anschließend die App auf dem Gerät.
 
-Die Bereitstellung erfolgt automatisch, wenn Sie die App von Visual Studio aus mit der Option **Debuggen starten** (Tastatur: F5) oder der Option **Starten ohne Debuggen** (Tastatur: STRG + F5) debuggen. Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
+Bereitstellung erfolgt automatisch, wenn Sie Ihre app aus Visual Studio mit Debuggen die **Debuggen starten** Option (Tastatur: F5) oder die **Starten ohne Debugging** Option (Tastatur: CTRL + F5). Sie können die App auch manuell bereitstellen. Die manuelle Bereitstellung ist in folgenden Szenarios nützlich:
 
 - Ad-Hoc-Tests auf einem lokalen oder Remotecomputer.
 
@@ -36,18 +36,18 @@ Die Bereitstellung erfolgt automatisch, wenn Sie die App von Visual Studio aus m
 
 - Bereitstellen einer App, deren Debugging beim Start durch eine andere App oder Methode erfolgen soll.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Gewusst wie: Bereitstellen einer UWP-app
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Gewusst wie: Bereitstellen einer UWP-app
  Das manuelle Bereitstellen einer App ist ein einfacher Vorgang:
 
-1.  Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)
+1. Wenn Sie ein Remotegerät bereitstellen, geben Sie den Namen oder die IP-Adresse des Geräts auf der Projekteigenschaftenseite des Startprojekts der App an. (Die entsprechenden Schritte sind weiter unten in diesem Thema aufgelistet.)
 
-2.  Wählen Sie auf der Debugger-Symbolleiste von Visual Studio das Bereitstellungsziel aus der Dropdownliste neben der Schaltfläche **Debuggen starten** aus.
+2. Wählen Sie auf der Debugger-Symbolleiste von Visual Studio das Bereitstellungsziel aus der Dropdownliste neben der Schaltfläche **Debuggen starten** aus.
 
      ![Führen Sie auf dem lokalen Computer](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Klicken Sie im Menü **Erstellen** auf **Bereitstellen**.
+3. Klicken Sie im Menü **Erstellen** auf **Bereitstellen**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Festlegen eines Remotegeräts
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Festlegen eines Remotegeräts
 
 **Erforderliche Komponenten**
 
@@ -76,7 +76,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
 
     Die **Remoteverbindung** Dialogfeld zeigt die Geräte im Subnetz des lokalen Netzwerks sowie solche Geräte, die durch ein Ethernetkabel direkt mit dem Visual Studio-Computer verbunden ist.
 
-   **Angeben des Remotegeräts auf einer Visual C++-Projektseite**
+   **Angeben des Remotegeräts in einem visuellen Objekt C++ -Projektseite**
 
    ![C&#43; &#43; Projekteigenschaften für das Remotedebuggen](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -92,7 +92,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
 
 10. Geben Sie den Netzwerknamen des Remotegeräts in das Feld **Remotecomputer** ein oder klicken Sie auf **Suchen** , um das Gerät im Dialogfeld **Remotedebuggerverbindung auswählen** auszuwählen.
 
-##  <a name="BKMK_Deployment_options"></a> Bereitstellungsoptionen
+## <a name="BKMK_Deployment_options"></a> Bereitstellungsoptionen
 
 Sie können die folgenden Bereitstellungsoptionen auf der Debugeigenschaftenseite für das Startprojekt festlegen.
 
@@ -104,7 +104,7 @@ So entfernen Sie die Netzwerkloopbackausnahme aus der App:
 
 - Auf der C# und Debuggen von Visual Basic auf der Seite Deaktivieren der **Netzwerkloopback zulassen** Kontrollkästchen.
 
-- Legen Sie auf der C++-Debug-Eigenschaft der **Netzwerkloopback zulassen** Wert **keine**.
+- Auf der C++ Eigenschaftenseite zum Debuggen, legen Sie die **Netzwerkloopback zulassen** Wert **keine**.
 
 **Nicht starten sondern Debuggen mein Code (C# und Visual Basic) / Anwendung starten (C++)**
 
@@ -112,7 +112,7 @@ So konfigurieren Sie den automatischen Start einer Debugsitzung beim Starten der
 
 - Auf der C# und Debuggen von Visual Basic auf der Seite überprüfen Sie die **nicht starten sondern Debuggen meinen Code** Kontrollkästchen.
 
-- Legen Sie auf der C++-Debug-Eigenschaft der **Anwendung starten** Wert **Ja**.
+- Auf der C++ Eigenschaftenseite zum Debuggen, legen Sie die **Anwendung starten** Wert **Ja**.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103518"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.
@@ -84,9 +84,9 @@ ms.locfileid: "54869670"
 
 - VSTO-Add-In-Ladeverhalten.
 
-  -   Beim Start laden: Gibt an, dass das VSTO-Add-In beim Starten der Office-Anwendung geladen wird.
+  - Beim Start laden: Gibt an, dass das VSTO-Add-In beim Starten der Office-Anwendung geladen wird.
 
-  -   Bedarfsgesteuert laden: Gibt an, dass das VSTO-Add-In nur geladen wird, wenn es für die Anwendung erforderlich ist, wenn z. B. ein Benutzer auf ein Benutzeroberflächenelement klickt, das auf Funktionen im VSTO-Add-In zurückgreift.
+  - Bedarfsgesteuert laden: Gibt an, dass das VSTO-Add-In nur geladen wird, wenn es für die Anwendung erforderlich ist, wenn z. B. ein Benutzer auf ein Benutzeroberflächenelement klickt, das auf Funktionen im VSTO-Add-In zurückgreift.
 
   **Sprache für Veröffentlichung** diese Option wird die Sprache der Microsoft Software-Lizenzbedingungen, und bezieht die Language Packs in der Liste der Voraussetzungen. Sie wirkt sich nicht auf die Sprache der Anpassung aus. Die Sprache im Setupprogramm wird durch die installierten Sprachen von Visual Studio bestimmt.
 

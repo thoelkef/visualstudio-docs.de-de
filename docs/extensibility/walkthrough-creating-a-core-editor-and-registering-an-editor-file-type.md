@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048204"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Exemplarische Vorgehensweise: Erstellen Sie einen Kern-Editor und registrieren einen Dateityp-Editor-
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage zu erstellen, die beginnt die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor eine Datei mit den *.myext* Dateinamenerweiterung geladen wird.
@@ -26,11 +26,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die Visual Studio-Paket-Projektvorlage
  Die VSPackage-Projektvorlage finden Sie an drei verschiedenen Stellen im Dialogfeld **Neues Projekt** :
 
-1.  Unter **Visual Basic Erweiterungen**. Die Standardsprache des Projekts ist Visual Basic.
+1. Unter **Visual Basic Erweiterungen**. Die Standardsprache des Projekts ist Visual Basic.
 
-2.  Unter **C# Erweiterungen**. Die Standardsprache des Projekts ist C#.
+2. Unter **C# Erweiterungen**. Die Standardsprache des Projekts ist C#.
 
-3.  Unter **Andere Projekttypen Erweiterungen**. Die Standardsprache des Projekts ist C++.
+3. Unter **Andere Projekttypen Erweiterungen**. Die Standardsprache des Projekts ist C++.
 
 ### <a name="to-create-the-vspackage"></a>Um das VSPackage zu erstellen.
 

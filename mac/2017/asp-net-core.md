@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933154"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 Eine ASP.NET Core-Anwendung erstellt in ihrer Hauptmethode einen Webserver, indem sie einen Host über eine Instanz von [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) konfiguriert und startet. Dieser Generator bietet Möglichkeiten zur Konfiguration des Hosts. In der Vorlagenanwendung werden die folgenden Konfigurationen verwendet:
 
 * `UseKestrel`: Gibt an, dass der Kestrel-Server von der Anwendung verwendet wird.
@@ -104,8 +105,8 @@ public class Startup
 
 Diese Startup-Klasse muss sich immer an folgende Regeln halten:
 
- - Sie muss immer öffentlich sein.
- - Sie muss die beiden öffentlichen Methoden `ConfigureServices` und `Configure` enthalten
+- Sie muss immer öffentlich sein.
+- Sie muss die beiden öffentlichen Methoden `ConfigureServices` und `Configure` enthalten
 
 Die `ConfigureServices`-Methode definiert die Dienste, die von Ihrer Anwendung verwendet werden.
 
@@ -218,7 +219,6 @@ Um einen Controller hinzuzufügen, führen Sie Folgendes durch:
 9. Wenn Sie zu `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` navigieren und `xxxx` durch den korrekten Port ersetzen, sollte Folgendes angezeigt werden.
 
     ![Ausführen der App im Browser mit Argumenten.](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

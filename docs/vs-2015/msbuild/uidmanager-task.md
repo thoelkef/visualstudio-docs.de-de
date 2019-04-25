@@ -20,17 +20,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4d88841bae804cc68f7557cbed4413b8f754d4b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 497c8f2ff8defd0acdf943f4856f0195e50366ce
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796642"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656829"
 ---
 # <a name="uidmanager-task"></a>UidManager-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisiert oder entfernt eindeutige Bezeichner (UIDs), um alle [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Elemente zu lokalisieren, die in den [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Quelldateien enthalten sind.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -64,4 +63,4 @@ Der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Task überprüft, aktualisie
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Gewusst wie: Lokalisieren einer Anwendung](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [Vorgehensweise: Lokalisieren einer Anwendung](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

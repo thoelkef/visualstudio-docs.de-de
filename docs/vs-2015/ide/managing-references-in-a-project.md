@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057095"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
   
  Sie können einen Verweis auf die folgenden Komponenten-/Diensttypen erstellen:  
   
--   Verweise auf Windows Store-App  
+- Verweise auf Windows Store-App  
   
--   .NET Framework-Klassenbibliotheken oder -Assemblys  
+- .NET Framework-Klassenbibliotheken oder -Assemblys  
   
--   COM-Komponenten  
+- COM-Komponenten  
   
--   Sonstige Assemblys oder Klassenbibliotheken von Projekten in derselben Projektmappe  
+- Sonstige Assemblys oder Klassenbibliotheken von Projekten in derselben Projektmappe  
   
--   XML-Webdienste  
+- XML-Webdienste  
   
 ## <a name="windows-store-app-references"></a>Verweise auf Windows Store-App  
   
@@ -63,9 +63,9 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
   
  Wenn Sie feststellen, dass das Erweiterungs-SDK, auf das von Ihrer Anwendung verwiesen wird, nicht unterstützt wird, müssen Sie folgende Schritte ausführen:  
   
-1.  Schauen Sie sich den Namen des Projekts an, das den Fehler verursacht. Die Plattform, auf die Ihr Projekt abzielt, steht in Klammern neben dem Projektnamen. Beispielsweise bedeutet **MyProjectName (Windows 8.1)**, dass das Projekt **MyProjectName** auf die Plattformversion [!INCLUDE[win81](../includes/win81-md.md)]abzielt.  
+1. Schauen Sie sich den Namen des Projekts an, das den Fehler verursacht. Die Plattform, auf die Ihr Projekt abzielt, steht in Klammern neben dem Projektnamen. Beispielsweise bedeutet **MyProjectName (Windows 8.1)**, dass das Projekt **MyProjectName** auf die Plattformversion [!INCLUDE[win81](../includes/win81-md.md)]abzielt.  
   
-2.  Wechseln Sie zur Website des Anbieters des nicht unterstützten Erweiterungs-SDKs, und installieren Sie die Version des Erweiterungs-SDKs mit Abhängigkeiten, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
+2. Wechseln Sie zur Website des Anbieters des nicht unterstützten Erweiterungs-SDKs, und installieren Sie die Version des Erweiterungs-SDKs mit Abhängigkeiten, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
   
     > [!NOTE]
     >  Eine Möglichkeit, um herauszufinden, ob das zuvor installierte Erweiterungs-SDK Abhängigkeiten von anderen Erweiterungs-SDKs aufweist, besteht darin, Visual Studio neu zu starten. Erstellen Sie dann ein neues C#-Windows Store-Projekt, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Verweis hinzufügen**, wechseln Sie zur Registerkarte **Windows** , wechseln Sie zur Unterregisterkarte **Erweiterungen** , wählen Sie das Erweiterungs-SDK aus, und schauen Sie sich den rechten Bereich des **Verweis-Managers**an. Wenn Abhängigkeiten bestehen, werden sie dort aufgeführt.  
@@ -73,20 +73,20 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
     > [!IMPORTANT]
     >  Wenn Ihr Projekt auf Windows 10 abzielt und das im vorherigen Schritt installierte Erweiterungs-SDK von Microsoft Visual C++ Runtime Package abhängt, lautet die Version von Microsoft Visual C++ Runtime Package, die mit Windows 10 kompatibel ist, v14.0 und wird mit Visual Studio 2015 installiert.  
   
-3.  Wenn das im vorherigen Schritt installierte Erweiterungs-SDK von anderen Erweiterungs-SDKs abhängt, rufen Sie die Websites der entsprechenden Anbieter auf, und installieren Sie die Versionen, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
+3. Wenn das im vorherigen Schritt installierte Erweiterungs-SDK von anderen Erweiterungs-SDKs abhängt, rufen Sie die Websites der entsprechenden Anbieter auf, und installieren Sie die Versionen, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
   
-4.  Starten Sie Visual Studio neu, und öffnen Sie Ihre App.  
+4. Starten Sie Visual Studio neu, und öffnen Sie Ihre App.  
   
-5.  Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** , und wählen Sie **Verweis hinzufügen**  
+5. Klicken Sie im Projekt, das den Fehler verursacht hat, mit der rechten Maustaste auf den Knoten **Verweise** , und wählen Sie **Verweis hinzufügen**  
   
-6.  Klicken Sie auf die Registerkarte **Fenster** und anschließend auf die Unterregisterkarte **Erweiterungen** . Deaktivieren Sie dann die Kontrollkästchen für die alten Erweiterungs-SDKs, und aktivieren Sie die Kontrollkästchen für die neuen Erweiterungs-SDKs. Klicken Sie auf **OK**.  
+6. Klicken Sie auf die Registerkarte **Fenster** und anschließend auf die Unterregisterkarte **Erweiterungen** . Deaktivieren Sie dann die Kontrollkästchen für die alten Erweiterungs-SDKs, und aktivieren Sie die Kontrollkästchen für die neuen Erweiterungs-SDKs. Klicken Sie auf **OK**.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Hinzufügen von Verweisen zur Entwurfszeit  
  Wenn Sie einen Verweis auf eine Assembly im Projekt erstellen, verwendet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] für die Suche der Assembly die folgenden Speicherorte:  
   
--   Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)  
+- Das aktuelle Projektverzeichnis. (Sie können die Assemblys über die Registerkarte **Durchsuchen** suchen.)  
   
--   Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie finden diese Assemblys auf der Registerkarte **Projekte** .)  
+- Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie finden diese Assemblys auf der Registerkarte **Projekte** .)  
   
 > [!NOTE]
 >  Alle Projekte enthalten einen impliziten Verweis auf "mscorlib". Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`.  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6270a761333e671b2fa3e7ea24b26c1a5c8c4aef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2292c80c01bcc94b04842c1f77f92226705873eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068287"
 ---
 # <a name="legacy-language-service-overview"></a>Übersicht über Legacysprachdienste
 Einen Sprachdienst bereitstellt, Editor-Unterstützung, die bestimmte implementiert werden kann [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Funktionen. Die Managed Package Framework (MPF) Sprache Dienstklassen bieten vollständige Unterstützung für häufig verwendete Funktionen und teilweise Unterstützung für andere Funktionen.
@@ -23,71 +23,71 @@ Einen Sprachdienst bereitstellt, Editor-Unterstützung, die bestimmte implementi
 ## <a name="fully-supported-features-in-the-mpf"></a>Vollständig unterstützte Funktionen in das MPF
  Die MPF-Language-Dienstklassen unterstützen die folgenden Funktionen:
 
--   Syntaxhervorhebung
+- Syntaxhervorhebung
 
--   Gliedern
+- Gliedern
 
--   Kommentieren Codeblöcke
+- Kommentieren Codeblöcke
 
--   Überprüfung des Klammergleichgewichts
+- Überprüfung des Klammergleichgewichts
 
--   Codeausschnitte
+- Codeausschnitte
 
--   Benutzerdefinierte Dokumenteigenschaften
+- Benutzerdefinierte Dokumenteigenschaften
 
--   IntelliSense-Parameterinformationen
+- IntelliSense-Parameterinformationen
 
--   IntelliSense Quick Info
+- IntelliSense Quick Info
 
--   IntelliSense-membervervollständigung
+- IntelliSense-membervervollständigung
 
--   Wortvervollständigung IntelliSense
+- Wortvervollständigung IntelliSense
 
 ## <a name="partially-supported-features-in-the-mpf"></a>Teilweise unterstützte Funktionen in das MPF
  Das MPF bietet nur partielle Unterstützung für die folgenden Features. Dies bedeutet, dass Sie die Methoden implementieren müssen, die durch das MPF aufgerufen werden.
 
--   Neuformatieren von Code. Sie geben Sie den Code, der neuformatierung implementiert.
+- Neuformatieren von Code. Sie geben Sie den Code, der neuformatierung implementiert.
 
--   Überprüfen von Haltepunkten durch Identifizieren der gültigen Code umfasst. Sie geben Sie den Code, der die Spannen Code identifiziert.
+- Überprüfen von Haltepunkten durch Identifizieren der gültigen Code umfasst. Sie geben Sie den Code, der die Spannen Code identifiziert.
 
--   Den Debugger unterstützt **"Auto"** Fenster zum Anzeigen von Variablen. Sie geben Sie den Code, der bestimmt, was Sie im Fenster angezeigt.
+- Den Debugger unterstützt **"Auto"** Fenster zum Anzeigen von Variablen. Sie geben Sie den Code, der bestimmt, was Sie im Fenster angezeigt.
 
--   Unterstützung der **Navigationsleiste** für die schnelle Navigation zwischen Typen und Member. Sie implementieren und eine Hilfsklasse, die die Listen in auffüllt Zurückgeben der **Navigationsleiste** Kombinationsfelder angezeigt.
+- Unterstützung der **Navigationsleiste** für die schnelle Navigation zwischen Typen und Member. Sie implementieren und eine Hilfsklasse, die die Listen in auffüllt Zurückgeben der **Navigationsleiste** Kombinationsfelder angezeigt.
 
 ## <a name="implementation"></a>Implementierung
  Führen Sie mehrere Schritte zum Implementieren der Sprachdienst selbst und die Dienst-Sprachfunktionen, die Sie für Ihre Sprache unterstützen möchten. Diese Schritte werden in den folgenden Themen erläutert:
 
--   [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service2.md)
+- [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
--   [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)
+- [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)
 
--   [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
+- [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
 
--   [Zugehörige Klammer in einem Legacysprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
+- [Zugehörige Klammer in einem Legacysprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
 
--   [Gliederung in einem Legacysprachdienst](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
+- [Gliederung in einem Legacysprachdienst](../../extensibility/internals/outlining-in-a-legacy-language-service.md)
 
--   [Kommentieren von Code in einem Legacysprachdienst](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)
+- [Kommentieren von Code in einem Legacysprachdienst](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)
 
--   [Neuformatieren von Code in einem Legacysprachdienst](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)
+- [Neuformatieren von Code in einem Legacysprachdienst](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)
 
--   [Benutzerdefinierte Dokumenteigenschaften in einem Legacysprachdienst](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)
+- [Benutzerdefinierte Dokumenteigenschaften in einem Legacysprachdienst](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)
 
--   [Unterstützen von Codeausschnitten in einem Legacysprachdienst](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+- [Unterstützen von Codeausschnitten in einem Legacysprachdienst](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
 
--   [Unterstützen der Navigationsleiste in einem Legacysprachdienst](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
+- [Unterstützen der Navigationsleiste in einem Legacysprachdienst](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
 
--   [Wortvervollständigung in einem Legacysprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)
+- [Wortvervollständigung in einem Legacysprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)
 
--   [Membervervollständigung in einem Legacysprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)
+- [Membervervollständigung in einem Legacysprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)
 
--   [Parameterinformationen in einem Legacysprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)
+- [Parameterinformationen in einem Legacysprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)
 
--   [QuickInfo in einem Legacysprachdienst](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)
+- [QuickInfo in einem Legacysprachdienst](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)
 
--   [Unterstützen des Auto-Fensters in einem Legacysprachdienst](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)
+- [Unterstützen des Auto-Fensters in einem Legacysprachdienst](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)
 
--   [Überprüfen von Haltepunkten in einem Legacysprachdienst](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
+- [Überprüfen von Haltepunkten in einem Legacysprachdienst](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
 ## <a name="see-also"></a>Siehe auch
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)

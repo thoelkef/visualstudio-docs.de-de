@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044234"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Zum Abfangen eines Klicks auf ein Symbol für Decorator-Element  
   
-1.  Öffnen Sie oder erstellen Sie eine DSL-Projektmappe.  
+1. Öffnen Sie oder erstellen Sie eine DSL-Projektmappe.  
   
-2.  Wählen Sie oder erstellen Sie eine Form, die über ein Symbol für Decorator-Element verfügt, und ordnen sie Sie einer Domänenklasse.  
+2. Wählen Sie oder erstellen Sie eine Form, die über ein Symbol für Decorator-Element verfügt, und ordnen sie Sie einer Domänenklasse.  
   
-3.  In einer Codedatei, die aus den Dateien auf getrennt ist die `GeneratedCode` Ordner, die neue Unterklasse von ImageField erstellen:  
+3. In einer Codedatei, die aus den Dateien auf getrennt ist die `GeneratedCode` Ordner, die neue Unterklasse von ImageField erstellen:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -89,7 +89,7 @@ public partial class MyShape // change
   
      Sie sollten festlegen, behandelt, die auf "true", wenn Sie nicht möchten, dass das Ereignis Containerform übergeben werden soll.  
   
-4.  Überschreiben Sie die InitializeShapeFields-Methode in Ihrer Form Classs, indem Sie die folgende Definition der partiellen Klasse hinzufügen.  
+4. Überschreiben Sie die InitializeShapeFields-Methode in Ihrer Form Classs, indem Sie die folgende Definition der partiellen Klasse hinzufügen.  
   
     ```  
     public partial class MyShape // change  
@@ -116,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Erstellen Sie die Projektmappe, und führen Sie sie aus.  
+1. Erstellen Sie die Projektmappe, und führen Sie sie aus.  
   
-2.  Doppelklicken Sie auf das Symbol auf einer Instanz von der Form. Testnachricht sollte angezeigt werden.  
+2. Doppelklicken Sie auf das Symbol auf einer Instanz von der Form. Testnachricht sollte angezeigt werden.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Abfangen von klickt und zieht in CompartmentShape-Listen  
  Im folgende Beispiel kann Benutzer Elemente in einem Depot-Form neu anordnen, indem Sie sie ziehen. So führen Sie diesen Code aus:  
@@ -135,19 +135,19 @@ public partial class MyShape // change
   
    Zusammenfassend lässt sich sagen funktioniert wie folgt der Code auf. In diesem Beispiel `ClassShape` ist der Name des der Depot-Form.  
   
--   Eine Reihe von Mausereignishandler wird an jede Compartment-Instanz angefügt werden, bei der Erstellung.  
+- Eine Reihe von Mausereignishandler wird an jede Compartment-Instanz angefügt werden, bei der Erstellung.  
   
--   Die `ClassShape.MouseDown` Ereignis speichert das aktuelle Element.  
+- Die `ClassShape.MouseDown` Ereignis speichert das aktuelle Element.  
   
--   Wenn die Maus bewegt aus das aktuelle Element eine Instanz von MouseAction erstellt wurde, die legt den Cursor fest, und die Maus erfasst, bis Sie wieder freigegeben wird.  
+- Wenn die Maus bewegt aus das aktuelle Element eine Instanz von MouseAction erstellt wurde, die legt den Cursor fest, und die Maus erfasst, bis Sie wieder freigegeben wird.  
   
      Um zu vermeiden, behindert mit anderen Aktionen, z. B. durch Festlegen der Text eines Elements wird die MouseAction nicht erstellt, bis die Maus auf das ursprüngliche Element verlassen hat.  
   
      Eine Alternative zum Erstellen einer MouseAction wäre einfach MouseUp lauschen. Allerdings würde dies nicht funktioniert ordnungsgemäß, wenn der Benutzer die Maustaste loslässt, nach außen ziehen. Die MouseAction ist unabhängig davon, in dem die Maustaste wieder loslassen, wird die entsprechende Aktion durchführen können.  
   
--   Wenn die Maus veröffentlicht wird, ordnet MouseAction.MouseUp die Reihenfolge der Links zwischen den Modellelementen neu an.  
+- Wenn die Maus veröffentlicht wird, ordnet MouseAction.MouseUp die Reihenfolge der Links zwischen den Modellelementen neu an.  
   
--   Die Änderung der Reihenfolge einer Rolle wird ausgelöst, eine Regel, die die Anzeige aktualisiert wird. Dieses Verhalten ist bereits definiert, und es ist kein zusätzlicher Code erforderlich.  
+- Die Änderung der Reihenfolge einer Rolle wird ausgelöst, eine Regel, die die Anzeige aktualisiert wird. Dieses Verhalten ist bereits definiert, und es ist kein zusätzlicher Code erforderlich.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  

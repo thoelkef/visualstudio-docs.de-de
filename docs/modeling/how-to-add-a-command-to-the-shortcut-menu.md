@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb8a9990c28d30d00efdfd98bd106dcd12b05c66
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092720"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -50,7 +50,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
    In anderen Fällen können Sie die MEF-Methode zum Definieren von Befehlen in Betracht ziehen. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-##  <a name="VSCT"></a> Deklarieren des Befehls in Commands.Vsct
+## <a name="VSCT"></a> Deklarieren des Befehls in Commands.Vsct
  Menübefehle werden in "DslPackage\Commands.vsct" deklariert. Diese Definitionen definieren die Bezeichnungen der Menüelemente und ihre Position in den Menüs.
 
  Die Datei, die Sie bearbeiten, Commands.vsct, importiert Definitionen aus verschiedenen h-Dateien, die sich im Verzeichnis befinden *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc. Es enthält auch die Datei "GeneratedVsct.vsct", die aus Ihrer DSL-Definition generiert wird.
@@ -59,9 +59,9 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 ### <a name="to-add-the-command"></a>So fügen Sie den Befehl hinzu
 
-1.  In **Projektmappen-Explorer**unter der **DslPackage** Projekt, öffnen Sie Commands.vsct.
+1. In **Projektmappen-Explorer**unter der **DslPackage** Projekt, öffnen Sie Commands.vsct.
 
-2.  Definieren Sie im `Commands`-Element mindestens eine Schaltfläche und eine Gruppe. Ein *Schaltfläche* ist ein Element im Menü. Ein *Gruppe* ist ein Abschnitt im Menü. Fügen Sie folgende Elemente hinzu, um diese Objekte zu definieren:
+2. Definieren Sie im `Commands`-Element mindestens eine Schaltfläche und eine Gruppe. Ein *Schaltfläche* ist ein Element im Menü. Ein *Gruppe* ist ein Abschnitt im Menü. Fügen Sie folgende Elemente hinzu, um diese Objekte zu definieren:
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -90,7 +90,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
     > [!NOTE]
     > Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Der GUID-Namen und ID-Namen werden in tatsächliche GUIDs und numerische IDs im übersetzt die `<Symbols>` Knoten.
 
-3.  Fügen Sie eine Sichtbarkeitseinschränkung für den Befehl hinzu, sodass er nur im Kontext der domänenspezifischen Sprache geladen wird. Weitere Informationen finden Sie unter [VisibilityConstraints-Element](../extensibility/visibilityconstraints-element.md).
+3. Fügen Sie eine Sichtbarkeitseinschränkung für den Befehl hinzu, sodass er nur im Kontext der domänenspezifischen Sprache geladen wird. Weitere Informationen finden Sie unter [VisibilityConstraints-Element](../extensibility/visibilityconstraints-element.md).
 
      Fügen Sie hierzu im `CommandTable`-Element nach dem `Commands`-Element die folgenden Elemente hinzu.
 
@@ -102,7 +102,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
     </VisibilityConstraints>
     ```
 
-4.  Definieren Sie die Namen, die Sie für die GUIDs und IDs verwendet haben. Fügen Sie hierzu im `Symbols`-Element nach dem `CommandTable`-Element ein `Commands`-Element hinzu.
+4. Definieren Sie die Namen, die Sie für die GUIDs und IDs verwendet haben. Fügen Sie hierzu im `Symbols`-Element nach dem `CommandTable`-Element ein `Commands`-Element hinzu.
 
     ```xml
     <Symbols>
@@ -115,37 +115,37 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
     </Symbols>
     ```
 
-5.  Ersetzen Sie `{000...000}` durch eine GUID, die Ihre Gruppen und Menüelemente identifiziert. Um eine neue GUID abzurufen, verwenden die **GUID erstellen** tool die **Tools** Menü.
+5. Ersetzen Sie `{000...000}` durch eine GUID, die Ihre Gruppen und Menüelemente identifiziert. Um eine neue GUID abzurufen, verwenden die **GUID erstellen** tool die **Tools** Menü.
 
     > [!NOTE]
     >  Wenn Sie mehrere Gruppen oder Menüelemente hinzufügen, können Sie dieselbe GUID verwenden. Sie müssen aber neue Werte für `IDSymbols` verwenden.
 
-6.  Ersetzen Sie in dem Code, den Sie aus diesem Verfahren kopiert haben, jedes Vorkommen der folgenden Zeichenfolgen durch Ihre eigenen Zeichenfolgen:
+6. Ersetzen Sie in dem Code, den Sie aus diesem Verfahren kopiert haben, jedes Vorkommen der folgenden Zeichenfolgen durch Ihre eigenen Zeichenfolgen:
 
-    -   `grpidMyMenuGroup`
+    - `grpidMyMenuGroup`
 
-    -   `cmdidMyContextMenuCommand`
+    - `cmdidMyContextMenuCommand`
 
-    -   `guidCustomMenuCmdSet`
+    - `guidCustomMenuCmdSet`
 
-    -   `My Context Menu Command`
+    - `My Context Menu Command`
 
-##  <a name="version"></a> Aktualisieren der Paketversion in Package.tt
+## <a name="version"></a> Aktualisieren der Paketversion in Package.tt
  Immer wenn Sie einen Befehl hinzufügen oder ändern, müssen Sie den `version`-Parameter des Attributs <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> aktualisieren, das auf die Paketklasse angewendet wird, bevor Sie die neue Version der domänenspezifischen Sprache veröffentlichen.
 
  Da die Paketklasse in einer generierten Datei definiert wird, müssen Sie das Attribut in der Textvorlagendatei aktualisieren, aus der die Datei Package.cs generiert wird.
 
 ### <a name="to-update-the-packagett-file"></a>So aktualisieren Sie die Datei Package.tt
 
-1.  In **Projektmappen-Explorer**in die **DslPackage** in-Projekt die **GeneratedCode** Ordner, öffnen Sie die Datei "Package.tt".
+1. In **Projektmappen-Explorer**in die **DslPackage** in-Projekt die **GeneratedCode** Ordner, öffnen Sie die Datei "Package.tt".
 
-2.  Suchen Sie das `ProvideMenuResource`-Attribut.
+2. Suchen Sie das `ProvideMenuResource`-Attribut.
 
-3.  Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Zum Beispiel:
+3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Zum Beispiel:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-##  <a name="CommandSet"></a> Definieren des Verhaltens des Befehls
+## <a name="CommandSet"></a> Definieren des Verhaltens des Befehls
 
 Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist üblicherweise  *\<Ihrdslname >*`CommandSet`. Es ist hilfreich, zunächst überprüfen den Namen der Klasse und ihren Inhalt.
 
@@ -153,15 +153,15 @@ Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.Comma
 
 ### <a name="extend-the-commandset-class"></a>Erweitern Sie die CommandSet-Klasse
 
-1.  Öffnen Sie im Solution Explorer, im DslPackage-Projekt, den Ordner "GeneratedCode". Öffnen Sie dann unter "CommandSet.tt" die generierte Datei "CommandSet.cs". Notieren Sie sich den Namespace und den Namen der ersten dort definierten Klasse. Sie könnten dort z. B. Folgendes sehen:
+1. Öffnen Sie im Projektmappen-Explorer im Projekt "DslPackage" den Ordner "GeneratedCode". Suchen Sie unter "CommandSet.tt" die generierte Datei "CommandSet.cs", und öffnen Sie sie. Notieren Sie sich den Namespace und den Namen der ersten dort definierten Klasse. Es wird beispielsweise Folgendes angezeigt:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  In **DslPackage**, erstellen Sie einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
+2. In **DslPackage**, erstellen Sie einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
 
-3.  Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -221,7 +221,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 Die folgenden Fragmente sind häufig in OnStatus-Methoden nützlich:
 
-- `this.CurrentSelection`. Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
+- `this.CurrentSelection`. Die Form, auf die der Benutzer mit der rechten Maustaste geklickt hat, wird immer in diese Liste aufgenommen. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
 - `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
 
@@ -322,13 +322,13 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>So führen Sie den Befehl aus
 
-1.  Auf der **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **alle Vorlagen transformieren**.
+1. Auf der **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **alle Vorlagen transformieren**.
 
-2.  Drücken Sie **F5** zum Neuerstellen der Projektmappe, und starten Sie das Debuggen der domänenspezifischen Sprache im experimentellen Build.
+2. Drücken Sie **F5** zum Neuerstellen der Projektmappe, und starten Sie das Debuggen der domänenspezifischen Sprache im experimentellen Build.
 
-3.  Öffnen Sie im experimentellen Build ein Beispieldiagramm.
+3. Öffnen Sie im experimentellen Build ein Beispieldiagramm.
 
-4.  Klicken Sie mit der rechten Maustaste auf verschiedene Elemente im Diagramm, um zu überprüfen, ob der Befehl richtig aktiviert bzw. deaktiviert und je nach ausgewähltem Element angezeigt oder ausgeblendet wird.
+4. Klicken Sie mit der rechten Maustaste auf verschiedene Elemente im Diagramm, um zu überprüfen, ob der Befehl richtig aktiviert bzw. deaktiviert und je nach ausgewähltem Element angezeigt oder ausgeblendet wird.
 
 ## <a name="troubleshoot"></a>Problembehandlung
 
@@ -344,11 +344,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **OnStatus-Methode wird nicht aufgerufen.**:
 
--   Vergewissern Sie sich, dass die GUIDs und IDs in Ihrem CommandSet-Code mit denen im Abschnitt "Symbols" von Commands.vsct übereinstimmen.
+- Vergewissern Sie sich, dass die GUIDs und IDs in Ihrem CommandSet-Code mit denen im Abschnitt "Symbols" von Commands.vsct übereinstimmen.
 
--   Überprüfen Sie in Commands.vsct, ob die GUID und ID in jedem Parent-Knoten die richtige übergeordnete Gruppe identifizieren.
+- Überprüfen Sie in Commands.vsct, ob die GUID und ID in jedem Parent-Knoten die richtige übergeordnete Gruppe identifizieren.
 
--   Geben Sie an einer Visual Studio-Eingabeaufforderung Folgendes ein: devenv /rootsuffix exp /setup. Starten Sie dann die Debuginstanz von Visual Studio neu.
+- Geben Sie an einer Visual Studio-Eingabeaufforderung Folgendes ein: devenv /rootsuffix exp /setup. Starten Sie dann die Debuginstanz von Visual Studio neu.
 
 - Durchlaufen Sie die OnStatus-Methode schrittweise, um zu überprüfen, ob "command.Visible" und "command.Enabled" auf True festgelegt sind.
 

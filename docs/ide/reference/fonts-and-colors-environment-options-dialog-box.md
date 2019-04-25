@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790207"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
@@ -42,26 +42,26 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 
 Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach Auswahl eines Elements in dieser Liste können Sie die Farbeinstellungen für das in **Elemente anzeigen** ausgewählte Element anpassen.
 
--   **Text-Editor**
+- **Text-Editor**
 
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Text-Editor“ beeinflussen die Darstellung von Text in Ihrem Standard-Text-Editor. Dokumente, die in einem Text-Editor außerhalb der IDE geöffnet werden, sind von diesen Einstellungen nicht betroffen.
 
--   **Drucker**
+- **Drucker**
 
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Drucker“ beeinflussen die Darstellung von Text in gedruckten Dokumenten.
 
     > [!NOTE]
     > Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.
 
--   **Anweisungsvervollständigung**
+- **Anweisungsvervollständigung**
 
      Ändert den Schriftschnitt und -grad für den Text, der im Popupfeld mit der Anweisungsvervollständigung im Editor angezeigt wird.
 
--   **Editor-QuickInfo**
+- **Editor-QuickInfo**
 
      Ändert den Schriftschnitt und -grad für den Text, der in QuickInfos im Editor angezeigt wird.
 
--   **Umgebungsschriftart**
+- **Umgebungsschriftart**
 
      Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist.
 
@@ -71,7 +71,7 @@ Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schrift
 
      ::: moniker-end
 
--   **[Alle Texttoolfenster]**
+- **[Alle Texttoolfenster]**
 
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe für dieses Element betreffen die Darstellung von Text in Toolfenstern, die über Ausgabebereiche in der IDE verfügen. Beispiele: Ausgabefenster, Befehlsfenster, Direktfenster usw.
 

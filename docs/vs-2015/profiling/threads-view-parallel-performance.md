@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756803"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114794"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
 ## <a name="usage"></a>Verwendung  
  Sie können die Threadansicht unter anderem folgendermaßen verwenden:  
   
--   Gründe identifizieren, warum die Benutzeroberfläche (UI) einer Anwendung in bestimmten Ausführungsphasen nicht reagiert.  
+- Gründe identifizieren, warum die Benutzeroberfläche (UI) einer Anwendung in bestimmten Ausführungsphasen nicht reagiert.  
   
--   Die Zeitdauer identifizieren, die für das Blockieren von Synchronisierung, E/A, Seitenfehlern und anderen Ereignissen aufgewendet wird.  
+- Die Zeitdauer identifizieren, die für das Blockieren von Synchronisierung, E/A, Seitenfehlern und anderen Ereignissen aufgewendet wird.  
   
--   Den Grad der Störung durch andere Prozesse identifizieren, die auf dem System ausgeführt werden.  
+- Den Grad der Störung durch andere Prozesse identifizieren, die auf dem System ausgeführt werden.  
   
--   Lastenausgleichsprobleme bei paralleler Ausführung identifizieren.  
+- Lastenausgleichsprobleme bei paralleler Ausführung identifizieren.  
   
--   Gründe für suboptimale oder nicht vorhandene Skalierbarkeit identifizieren, z.B. warum sich die Leistung einer parallelen Anwendung nicht verbessert, wenn mehr logische Kerne verfügbar sind.  
+- Gründe für suboptimale oder nicht vorhandene Skalierbarkeit identifizieren, z.B. warum sich die Leistung einer parallelen Anwendung nicht verbessert, wenn mehr logische Kerne verfügbar sind.  
   
--   Den Parallelitätsgrad in der Anwendung verstehen, um die Parallelisierung zu unterstützen.  
+- Den Parallelitätsgrad in der Anwendung verstehen, um die Parallelisierung zu unterstützen.  
   
--   Abhängigkeiten zwischen Arbeitsthreads und kritischen Pfaden der Ausführung verstehen.  
+- Abhängigkeiten zwischen Arbeitsthreads und kritischen Pfaden der Ausführung verstehen.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Untersuchen von bestimmten Zeitintervallen und Threads  
  In der Threadansicht wird eine Zeitachse angezeigt. Sie können in der Zeitachse vergrößern und schwenken, um bestimmte Intervalle und Threads der Anwendung zu überprüfen. Die x-Achse gibt die Zeit an und auf der y-Achse gibt es verschiedene Kanäle:  

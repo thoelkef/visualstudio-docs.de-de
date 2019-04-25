@@ -23,22 +23,22 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116614"
 ---
 # <a name="context-operator-c"></a>Kontextoperator (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositionen, Variablennamen oder Ausdrücken verwenden. Der Kontextoperator eignet sich für die Angabe eines Namens außerhalb des Gültigkeitsbereichs, der andernfalls durch einen lokalen Namen verborgen würde.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntax  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntax  
  Es gibt zwei Methoden zum Angeben von Kontext:  
   
-1.  {,,[*module*] } *expression*  
+1. {,,[*module*] } *expression*  
   
      Die Klammern müssen zwei Kommas und den Modulnamen (ausführbare Datei oder DLL) oder den vollständigen Pfad enthalten.  
   
@@ -48,7 +48,7 @@ Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositione
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *module*!*expression*  
+2. *module*!*expression*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -66,12 +66,12 @@ Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositione
   
   Wenn die Ausdrucksauswertung in einem Ausdruck auf ein Symbol trifft, wird in der folgenden Reihenfolge danach gesucht:  
   
-1.  Beginnend mit dem aktuellen Block (in geschweifte Klammern eingeschlossene Anweisungsreihe) vom lexikalischen Gültigkeitsbereich nach außen und weiter zum äußeren, umschließenden Block. Der aktuelle Block entspricht dem Code mit der aktuellen Position (der Adresse des Anweisungszeigers).  
+1. Beginnend mit dem aktuellen Block (in geschweifte Klammern eingeschlossene Anweisungsreihe) vom lexikalischen Gültigkeitsbereich nach außen und weiter zum äußeren, umschließenden Block. Der aktuelle Block entspricht dem Code mit der aktuellen Position (der Adresse des Anweisungszeigers).  
   
-2.  Gültigkeitsbereich der Funktion. Die aktuelle Funktion.  
+2. Gültigkeitsbereich der Funktion. Die aktuelle Funktion.  
   
-3.  Gültigkeitsbereich der Klasse, sofern sich die aktuelle Position innerhalb einer C++-Memberfunktion befindet. Der Klassengültigkeitsbereich umfasst alle Basisklassen. Von der Ausdrucksauswertung werden die normalen Dominanzregeln verwendet.  
+3. Gültigkeitsbereich der Klasse, sofern sich die aktuelle Position innerhalb einer C++-Memberfunktion befindet. Der Klassengültigkeitsbereich umfasst alle Basisklassen. Von der Ausdrucksauswertung werden die normalen Dominanzregeln verwendet.  
   
-4.  Globale Symbole im aktuellen Modul.  
+4. Globale Symbole im aktuellen Modul.  
   
-5.  Öffentliche Symbole im aktuellen Programm.
+5. Öffentliche Symbole im aktuellen Programm.

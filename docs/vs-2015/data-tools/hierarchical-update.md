@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063399"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten Daten (aus einem Dataset mit zwei oder mehr verknüpfte Tabellen) in einer Datenbank beim Verwalten von Regeln für die referenzielle Integrität. *Referenzielle Integrität* bezieht sich auf die Konsistenzregeln, angegeben durch die Einschränkungen in einer Datenbank, die das Verhalten des einfügen, aktualisieren und Löschen von verknüpften Datensätzen zu steuern. Beispielsweise ist es an der referenziellen Integrität, der die Erstellung eines Kundendatensatzes vor Aufträge erstellt werden für diesen Kunden erzwingt.  Weitere Informationen zu Beziehungen in Datasets, finden Sie unter [Beziehungen in Datasets](../data-tools/relationships-in-datasets.md)  
   
  Die hierarchische Aktualisierung-Funktion verwendet einen `TableAdapterManager` zum Verwalten der `TableAdapter`s in einem typisierten Dataset. Die `TableAdapterManager` Komponente ist eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Klasse generiert, sodass es nicht Teil der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Wenn Sie eine Tabelle aus dem Datenquellenfenster auf einem Windows-Formular oder eine WPF-Seite ziehen, wird Visual Studio fügt eine Variable vom Typ TableAdapterManager in das Formular oder die Seite, und es im Designer auf der Komponentenleiste angezeigt. Ausführliche Informationen zu den `TableAdapterManager` Klasse, finden Sie im Abschnitt TableAdapterManager-Verweis [Übersicht über TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
@@ -100,11 +99,11 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>So fügen Sie Code für den Commit übergeordneter Datensätze hinzu, ehe untergeordnete Datensätze hinzufügt werden  
   
-1.  Erstellen Sie einen Ereignishandler für das `OrdersBindingSource.AddingNew`-Ereignis.  
+1. Erstellen Sie einen Ereignishandler für das `OrdersBindingSource.AddingNew`-Ereignis.  
   
-    -   Open **Form1** wählen Sie in der Entwurfsansicht **OrdersBindingSource** wählen Sie in der Komponentenleiste **Ereignisse** in die **Eigenschaften** Fenster und Doppelklicken Sie dann auf die **AddingNew** Ereignis.  
+    - Open **Form1** wählen Sie in der Entwurfsansicht **OrdersBindingSource** wählen Sie in der Komponentenleiste **Ereignisse** in die **Eigenschaften** Fenster und Doppelklicken Sie dann auf die **AddingNew** Ereignis.  
   
-2.  Fügen Sie eine einzige Zeile Code an den Ereignishandler, die Aufrufe der `CustomersBindingSource.EndEdit` Methode. Der Code im Ereignis `OrdersBindingSource_AddingNew` sollte etwa folgendermaßen aussehen:  
+2. Fügen Sie eine einzige Zeile Code an den Ereignishandler, die Aufrufe der `CustomersBindingSource.EndEdit` Methode. Der Code im Ereignis `OrdersBindingSource_AddingNew` sollte etwa folgendermaßen aussehen:  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

@@ -33,16 +33,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4176e01d4419dc777e8381ebcd7dcef0b2c77b14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095034"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], Microsoft-Technologien für die Erstellung verteilter Anwendungen. Dieses Thema enthält eine Einführung in die Dienste von einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Perspektive. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
 
@@ -125,9 +124,9 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
 
 #### <a name="to-select-a-service-endpoint"></a>Auswählen ein Dienstendpunkts
 
-1.  Fügen Sie einen Verweis auf einen WCF-Dienst durch einen Rechtsklick auf den Projektknoten im Projektmappen-Explorer und auswählen **Hinzufügen eines Dienstverweises**
+1. Fügen Sie einen Verweis auf einen WCF-Dienst durch einen Rechtsklick auf den Projektknoten im Projektmappen-Explorer und auswählen **Hinzufügen eines Dienstverweises**
 
-2.  Fügen Sie im Code-Editor einen Konstruktor für den Dienstverweis hinzu:
+2. Fügen Sie im Code-Editor einen Konstruktor für den Dienstverweis hinzu:
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -140,24 +139,24 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
     > [!NOTE]
     >  Ersetzen Sie dies *ServiceReference* mit dem Namespace für den Dienstverweis und *Service1Client* mit dem Namen des Diensts.
 
-3.  Mit den Überladungen des Konstruktors wird eine IntelliSense-Liste angezeigt. Wählen Sie die `endpointConfigurationName As String` überladen.
+3. Mit den Überladungen des Konstruktors wird eine IntelliSense-Liste angezeigt. Wählen Sie die `endpointConfigurationName As String` überladen.
 
-4.  Geben Sie nach der Überladung `=` *ConfigurationName*, wobei *ConfigurationName* ist der Name des Endpunkts, den Sie verwenden möchten.
+4. Geben Sie nach der Überladung `=` *ConfigurationName*, wobei *ConfigurationName* ist der Name des Endpunkts, den Sie verwenden möchten.
 
     > [!NOTE]
     >  Wenn Sie die Namen der verfügbaren Endpunkte nicht kennen, finden Sie sie in der Datei "App.config".
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Um die verfügbaren Endpunkte für einen WCF-Dienst gefunden werden.
 
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei "App.config" für das Projekt, das den Dienstverweis enthält, und klicken Sie dann auf **öffnen**. Die Datei wird im Code-Editor angezeigt.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei "App.config" für das Projekt, das den Dienstverweis enthält, und klicken Sie dann auf **öffnen**. Die Datei wird im Code-Editor angezeigt.
 
-2.  Suchen Sie nach der `<Client>` Tag in der Datei.
+2. Suchen Sie nach der `<Client>` Tag in der Datei.
 
-3.  Suchen Sie unterhalb der `<Client>` Tag für ein Tag, die mit beginnt `<Endpoint>`.
+3. Suchen Sie unterhalb der `<Client>` Tag für ein Tag, die mit beginnt `<Endpoint>`.
 
      Wenn der Dienstverweis über mehrere Endpunkte bereitstellt, werden zwei oder mehr `<Endpoint` Tags.
 
-4.  In der `<EndPoint>` Tag Sie finden eine `name="` *"SomeService"* `"` Parameter (, in denen *"SomeService"* ein Endpunktname). Dies ist der Name für den Endpunkt übergeben werden kann, die die `endpointConfigurationName As String` Überladung des Konstruktors für einen Dienstverweis.
+4. In der `<EndPoint>` Tag Sie finden eine `name="` *"SomeService"* `"` Parameter (, in denen *"SomeService"* ein Endpunktname). Dies ist der Name für den Endpunkt übergeben werden kann, die die `endpointConfigurationName As String` Überladung des Konstruktors für einen Dienstverweis.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Vorgehensweise: Eine Dienstmethode asynchron aufrufen
  Die meisten Methoden in Windows Communication Foundation (WCF)-Dienste können entweder synchron oder asynchron aufgerufen werden. Eine Methode asynchron aufgerufen, ermöglicht der Anwendung, funktionieren weiterhin, während die Methode aufgerufen wird, wenn sie über eine langsame Verbindung ausgeführt wird.
@@ -171,42 +170,42 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
 
 #### <a name="to-call-a-service-method-asynchronously"></a>Eine Dienstmethode asynchron aufrufen.
 
-1.  In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.
+1. In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.
 
-2.  Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.
+2. Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.
 
-3.  In der **Dienstverweis konfigurieren** wählen Sie im Dialogfeld die **asynchrone Vorgänge generieren** Kontrollkästchen.
+3. In der **Dienstverweis konfigurieren** wählen Sie im Dialogfeld die **asynchrone Vorgänge generieren** Kontrollkästchen.
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>Vorgehensweise: Binden von Daten, die von einem Dienst zurückgegeben werden.
  Sie können ebenso, wie Sie eine beliebige andere Datenquelle an ein Steuerelement binden können an ein Steuerelement von einem Windows Communication Foundation (WCF)-Dienst zurückgegebene Daten binden. Wenn Sie einen Verweis auf einen WCF-Dienst hinzufügen, wenn der Dienst zusammengesetzte Typen enthält, die Daten zurückgeben, werden sie automatisch hinzugefügt die **Datenquellen** Fenster.
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Zum Binden eines Steuerelements auf einzelnen Datenfeld, die von einem WCF-Dienst zurückgegeben
 
-1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**. Die **Datenquellen** Fenster wird angezeigt.
+1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**. Die **Datenquellen** Fenster wird angezeigt.
 
-2.  In der **Datenquellen** Fenster, erweitern Sie den Knoten für den Dienstverweis. Alle zusammengesetzten Typen, die vom Dienst zurückgegebenen werden angezeigt.
+2. In der **Datenquellen** Fenster, erweitern Sie den Knoten für den Dienstverweis. Alle zusammengesetzten Typen, die vom Dienst zurückgegebenen werden angezeigt.
 
-3.  Erweitern Sie den Knoten für einen Typ aus. Die Datenfelder für diesen Typ werden angezeigt.
+3. Erweitern Sie den Knoten für einen Typ aus. Die Datenfelder für diesen Typ werden angezeigt.
 
-4.  Wählen Sie ein Feld aus, und klicken Sie auf die Dropdown-Pfeil, um eine Liste der Steuerelemente anzuzeigen, die für den Datentyp zur Verfügung stehen.
+4. Wählen Sie ein Feld aus, und klicken Sie auf die Dropdown-Pfeil, um eine Liste der Steuerelemente anzuzeigen, die für den Datentyp zur Verfügung stehen.
 
-5.  Klicken Sie auf den Typ des Steuerelements, das Sie binden möchten.
+5. Klicken Sie auf den Typ des Steuerelements, das Sie binden möchten.
 
-6.  Ziehen Sie das Feld in ein Formular aus. Das Steuerelement wird hinzugefügt werden, auf das Formular zusammen mit einer <xref:System.Windows.Forms.BindingSource> Komponente und eine <xref:System.Windows.Forms.BindingNavigator> Komponente.
+6. Ziehen Sie das Feld in ein Formular aus. Das Steuerelement wird hinzugefügt werden, auf das Formular zusammen mit einer <xref:System.Windows.Forms.BindingSource> Komponente und eine <xref:System.Windows.Forms.BindingNavigator> Komponente.
 
-7.  Wiederholen Sie Schritte 4, obwohl 6 für alle anderen, die Felder Sie binden möchten.
+7. Wiederholen Sie Schritte 4, obwohl 6 für alle anderen, die Felder Sie binden möchten.
 
 #### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Zum Binden eines Steuerelements zu zusammengesetzter Typ zurückgegeben, die von einem WCF-Dienst
 
-1.  Auf der **Daten** , wählen Sie im Menü **Datenquellen anzeigen**. Die **Datenquellen** Fenster wird angezeigt.
+1. Auf der **Daten** , wählen Sie im Menü **Datenquellen anzeigen**. Die **Datenquellen** Fenster wird angezeigt.
 
-2.  In der **Datenquellen** Fenster, erweitern Sie den Knoten für den Dienstverweis. Alle zusammengesetzten Typen, die vom Dienst zurückgegebenen werden angezeigt.
+2. In der **Datenquellen** Fenster, erweitern Sie den Knoten für den Dienstverweis. Alle zusammengesetzten Typen, die vom Dienst zurückgegebenen werden angezeigt.
 
-3.  Wählen Sie einen Knoten für einen Typ aus, und klicken Sie auf die Dropdown-Pfeil, um eine Liste der verfügbaren Optionen anzuzeigen.
+3. Wählen Sie einen Knoten für einen Typ aus, und klicken Sie auf die Dropdown-Pfeil, um eine Liste der verfügbaren Optionen anzuzeigen.
 
-4.  Klicken Sie auf **DataGridView** zum Anzeigen der Daten in einem Raster oder **Details** zum Anzeigen der Daten in einzelnen Steuerelementen.
+4. Klicken Sie auf **DataGridView** zum Anzeigen der Daten in einem Raster oder **Details** zum Anzeigen der Daten in einzelnen Steuerelementen.
 
-5.  Ziehen Sie den Knoten aus, auf das Formular. Werden die Steuerelemente hinzugefügt werden, auf das Formular zusammen mit einem <xref:System.Windows.Forms.BindingSource> Komponente und eine <xref:System.Windows.Forms.BindingNavigator> Komponente.
+5. Ziehen Sie den Knoten aus, auf das Formular. Werden die Steuerelemente hinzugefügt werden, auf das Formular zusammen mit einem <xref:System.Windows.Forms.BindingSource> Komponente und eine <xref:System.Windows.Forms.BindingNavigator> Komponente.
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Vorgehensweise: Konfigurieren Sie einen Dienst, um die Wiederverwendung von vorhandener Types
  Wenn ein Projekt ein Dienstverweis hinzugefügt wird, werden alle im Dienst definierten Typen im lokalen Projekt generiert. In vielen Fällen dabei doppelte Typen erstellt, wenn ein Dienst verwendet allgemeine [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Typen oder wenn die Typen in einer freigegebenen Bibliothek definiert werden.
@@ -215,21 +214,21 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
 
 #### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Deaktivieren der Typfreigabe in einer einzelnen assembly
 
-1.  In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.
+1. In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.
 
-2.  Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.
+2. Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.
 
-3.  In der **Dienstverweis** wählen Sie im Dialogfeld **Typen in referenzierten Assemblys wiederverwenden**.
+3. In der **Dienstverweis** wählen Sie im Dialogfeld **Typen in referenzierten Assemblys wiederverwenden**.
 
-4.  Wählen Sie das Kontrollkästchen für jede Assembly, in dem Sie die Typfreigabe aktivieren möchten. Um die Typfreigabe für eine Assembly zu deaktivieren, lassen Sie das Kontrollkästchen deaktiviert.
+4. Wählen Sie das Kontrollkästchen für jede Assembly, in dem Sie die Typfreigabe aktivieren möchten. Um die Typfreigabe für eine Assembly zu deaktivieren, lassen Sie das Kontrollkästchen deaktiviert.
 
 #### <a name="to-disable-type-sharing-in-all-assemblies"></a>Deaktivieren der Typfreigabe in allen Assemblys
 
-1.  In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.
+1. In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.
 
-2.  Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.
+2. Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.
 
-3.  In der **Dienstverweis** Dialogfeld das Kontrollkästchen der **Typen in referenzierten Assemblys wiederverwenden** Kontrollkästchen.
+3. In der **Dienstverweis** Dialogfeld das Kontrollkästchen der **Typen in referenzierten Assemblys wiederverwenden** Kontrollkästchen.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

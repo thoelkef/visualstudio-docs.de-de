@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b841298c7d4683059599bb95b145514ab94873
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068855"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Korrelation initialisieren (Dialogfeld)
 Die **Korrelation initialisieren** Dialogfeld wird verwendet, [!INCLUDE[wfd1](../includes/wfd1-md.md)] so bearbeiten Sie die <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft eine <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivität. [!INCLUDE[crdefault](../includes/crdefault-md.md)] die [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) Thema.  
@@ -30,7 +30,7 @@ Die **Korrelation initialisieren** Dialogfeld wird verwendet, [!INCLUDE[wfd1](..
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>So starten Sie das Dialogfeld "Korrelation initialisieren"  
   
--   Klicken Sie auf **Ansicht** auf der **InitializeCorrelation** -Aktivitätsdesigner oder auf ein <xref:System.ServiceModel.Activities.InitializeCorrelation> -Aktivität in [!INCLUDE[wfd2](../includes/wfd2-md.md)] , und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten neben der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> -Eigenschaft in das Eigenschaftenraster.  
+- Klicken Sie auf **Ansicht** auf der **InitializeCorrelation** -Aktivitätsdesigner oder auf ein <xref:System.ServiceModel.Activities.InitializeCorrelation> -Aktivität in [!INCLUDE[wfd2](../includes/wfd2-md.md)] , und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten neben der <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> -Eigenschaft in das Eigenschaftenraster.  
   
 ## <a name="see-also"></a>Siehe auch  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

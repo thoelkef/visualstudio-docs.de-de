@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068703"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Vorgehensweise: Debuggen einer ausführbaren Datei nicht Visual Studio-Projektmappe angehört
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Manchmal kann es erforderlich sein, eine ausführbare Datei zu debuggen, die nic
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>So erstellen Sie ein EXE-Projekt für eine vorhandene ausführbare Datei  
   
-1.  Auf der **Datei** Menü klicken Sie auf **öffnen** , und wählen Sie **Projekt**.  
+1. Auf der **Datei** Menü klicken Sie auf **öffnen** , und wählen Sie **Projekt**.  
   
-2.  In der **geöffneten Projekt** (Dialogfeld), klicken Sie auf die Dropdownliste neben der **Dateiname** , und wählen Sie **alle Projektdateien**.  
+2. In der **geöffneten Projekt** (Dialogfeld), klicken Sie auf die Dropdownliste neben der **Dateiname** , und wählen Sie **alle Projektdateien**.  
   
-3.  Suchen Sie die ausführbare Datei, und klicken Sie auf **OK**.  
+3. Suchen Sie die ausführbare Datei, und klicken Sie auf **OK**.  
   
      Auf diese Weise wird eine temporäre Projektmappe erstellt, in der die ausführbare Datei enthalten ist.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>So importieren Sie eine ausführbare Datei in eine Visual Studio-Projektmappe  
   
-1.  Auf der **Datei** Startmenü **Projekt hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**.  
+1. Auf der **Datei** Startmenü **Projekt hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**.  
   
-2.  In der **vorhandenes Projekt hinzufügen** (Dialogfeld), klicken Sie auf die Dropdownliste neben der **Dateiname** , und wählen Sie **alle Projektdateien**.  
+2. In der **vorhandenes Projekt hinzufügen** (Dialogfeld), klicken Sie auf die Dropdownliste neben der **Dateiname** , und wählen Sie **alle Projektdateien**.  
   
-3.  Suchen Sie die ausführbare Datei, und wählen Sie sie aus.  
+3. Suchen Sie die ausführbare Datei, und wählen Sie sie aus.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
-5.  Starten Sie die ausführbare Datei, indem Sie einen Ausführungsbefehl, z. B. **starten**, aus der **Debuggen** Menü.  
+5. Starten Sie die ausführbare Datei, indem Sie einen Ausführungsbefehl, z. B. **starten**, aus der **Debuggen** Menü.  
   
     > [!NOTE]
     >  EXE-Projekte werden nicht von allen Programmiersprachen unterstützt. Installieren Sie [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], falls Sie diese Funktion benötigen.  

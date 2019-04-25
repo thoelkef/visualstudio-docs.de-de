@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821495"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Vorgehensweise: Verwenden der Auslastungstest-API
 
@@ -30,27 +30,27 @@ Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informatione
 
 ## <a name="to-use-the-loadtesting-namespace"></a>So verwenden Sie den LoadTesting-Namespace
 
-1.  Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Auslastungstest enthält.
+1. Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Auslastungstest enthält.
 
-2.  Fügen Sie Ihrer Testprojektmappe ein Projekt für eine Visual C#- oder Visual Basic-Klassenbibliothek hinzu.
+2. Fügen Sie Ihrer Testprojektmappe ein Projekt für eine Visual C#- oder Visual Basic-Klassenbibliothek hinzu.
 
-3.  Fügen Sie dem Webleistungs- und Auslastungstestprojekt einen Verweis auf das Klassenbibliotheksprojekt hinzu.
+3. Fügen Sie dem Webleistungs- und Auslastungstestprojekt einen Verweis auf das Klassenbibliotheksprojekt hinzu.
 
-4.  Fügen Sie dem Klassenbibliotheksprojekt einen Verweis auf die Microsoft.VisualStudio.QualityTools.LoadTestFramework-DLL hinzu.
+4. Fügen Sie dem Klassenbibliotheksprojekt einen Verweis auf die Microsoft.VisualStudio.QualityTools.LoadTestFramework-DLL hinzu.
 
-5.  Fügen Sie der Klassendatei im Klassenbibliotheksprojekt eine `using`-Anweisung für den <xref:Microsoft.VisualStudio.TestTools.LoadTesting>-Namespace hinzu.
+5. Fügen Sie der Klassendatei im Klassenbibliotheksprojekt eine `using`-Anweisung für den <xref:Microsoft.VisualStudio.TestTools.LoadTesting>-Namespace hinzu.
 
-6.  Erstellen Sie eine öffentliche Klasse, die die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle implementiert.
+6. Erstellen Sie eine öffentliche Klasse, die die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle implementiert.
 
-7.  Erstellen Sie das Projekt.
+7. Erstellen Sie das Projekt.
 
-8.  Fügen Sie das neue Auslastungstest-Plug-In mithilfe des Auslastungstest-Editors hinzu:
+8. Fügen Sie das neue Auslastungstest-Plug-In mithilfe des Auslastungstest-Editors hinzu:
 
-    1.  Klicken Sie mit der rechten Maustaste auf den Stammknoten des Auslastungstests, und klicken Sie anschließend auf **Auslastungstest-Plug-In hinzufügen**.
+    1. Klicken Sie mit der rechten Maustaste auf den Stammknoten des Auslastungstests, und klicken Sie anschließend auf **Auslastungstest-Plug-In hinzufügen**.
 
-    2.  Das Dialogfeld **Auslastungstest-Plug-In hinzufügen** wird angezeigt.
+    2. Das Dialogfeld **Auslastungstest-Plug-In hinzufügen** wird angezeigt.
 
-    3.  Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
+    3. Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
 
         > [!NOTE]
         > Sie können beliebig viele Plug-In-Eigenschaften verfügbar machen. Die Eigenschaften müssen dazu lediglich öffentlich, festlegbar und von einem Basistyp (z. B. "Integer", "Boolean" oder "String") sein. Sie können die Eigenschaften des Auslastungstest-Plug-Ins auch zu einem späteren Zeitpunkt im Fenster **Eigenschaften** bearbeiten.

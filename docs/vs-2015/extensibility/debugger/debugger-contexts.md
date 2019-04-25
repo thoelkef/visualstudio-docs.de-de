@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116237"
 ---
 # <a name="debugger-contexts"></a>Debuggerkontexte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debuggen, die Debug-Engine (DE) arbeitet gleichzeitig in mehreren unterschiedlichen Kontexten wie folgt:  
   
--   Der Codekontext, der die aktuelle Position in der Ausführung eines Programms-Stream beschreibt.  
+- Der Codekontext, der die aktuelle Position in der Ausführung eines Programms-Stream beschreibt.  
   
--   Die Dokumentation Kontext oder die Position, die die aktuelle Position in einem Quelldokument beschreibt.  
+- Die Dokumentation Kontext oder die Position, die die aktuelle Position in einem Quelldokument beschreibt.  
   
--   Der Ausdruck Evaluation-Kontext, der den Kontext beschreibt, in dem den Ausdruck Auswertung stattfinden soll.  
+- Der Ausdruck Evaluation-Kontext, der den Kontext beschreibt, in dem den Ausdruck Auswertung stattfinden soll.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Codekontext](../../extensibility/debugger/code-context.md)  

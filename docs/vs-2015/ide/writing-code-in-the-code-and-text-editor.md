@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077822"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Schreiben von Code im Code- und Text-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Der Visual Studio-Befehl „Navigieren zu“ führt eine zielgerichtete Suche in
     Während der Eingabe werden die Ergebnisse in einer Dropdownliste unterhalb des Textfelds angezeigt.
 1. Um zu einem Element zu wechseln, wählen Sie es in der Liste aus.
 
-
 ### <a name="filter-your-search"></a>Filtern der Suche
 
 Um die Suche, um nur auf Codesymbole zu beschränken, stellen Sie die Abfrage "Navigieren zu" mit einer "\@" Zeichen. Wenn Sie etwa nach `@application` suchen, zeigt Navigieren zu beispielsweise nur Klassen an, die das Wort „application“ enthalten.
@@ -189,45 +188,45 @@ Diese Funktion ist besonders nützlich, wenn Ihr Code lange Namen aufweist.
 
  Informationen über sprachspezifische Editoroptionen finden Sie unter:  
 
--   [Visual Basic-Einstellungen](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Visual Basic-Einstellungen](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Verwenden die Visual Studio-Entwicklungsumgebung für c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Verwenden der Visual Studio-Entwicklungsumgebung für C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Optionen, Text-Editor, JavaScript, Formatierung](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Optionen, Text-Editor, JavaScript, Formatierung](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>In diesem Abschnitt  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+- [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md)  
 
--   [Codierungen und Zeilenumbrüche](../ide/encodings-and-line-breaks.md)  
+- [Codierungen und Zeilenumbrüche](../ide/encodings-and-line-breaks.md)  
 
--   [Gliedern](../ide/outlining.md)  
+- [Gliedern](../ide/outlining.md)  
 
--   [Umgestaltung](../ide/refactoring-in-visual-studio.md)  
+- [Refactoring](../ide/refactoring-in-visual-studio.md)  
 
--   [Produktivitätstipp](../ide/productivity-tips-for-visual-studio.md)  
+- [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+- [Verwenden von IntelliSense](../ide/using-intellisense.md)  
 
--   [Anpassen des Editors](../ide/customizing-the-editor.md)  
+- [Anpassen des Editors](../ide/customizing-the-editor.md)  
 
--   [Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Vorgehensweise: Track Your Code by Customizing the Scrollbar (Vorgehensweise: Nachverfolgen von Code durch Anpassen der Scrollleiste)](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Vorgehensweise: View and Edit Code by Using Peek Definition (Alt+F12) (Vorgehensweise: Anzeigen und Bearbeiten von Code durch Verwenden von „Definition einsehen“)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Ausführen von schnellen Aktionen mit Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Ausführen von schnellen Aktionen mit Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Codeausschnitte](../ide/code-snippets.md)  
+- [Codeausschnitte](../ide/code-snippets.md)  
 
--   [Verwenden der Toolbox](../ide/using-the-toolbox.md)  
+- [Verwenden der Toolbox](../ide/using-the-toolbox.md)  
 
--   [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md)  
+- [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md)  
 
--   [Festlegen von Lesezeichen im Code](../ide/setting-bookmarks-in-code.md)  
+- [Festlegen von Lesezeichen im Code](../ide/setting-bookmarks-in-code.md)  
 
--   [Verwenden der Aufgabenliste](../ide/using-the-task-list.md)  
+- [Verwenden der Aufgabenliste](../ide/using-the-task-list.md)  
 
--   [Änderungen am Code und andere Verläufe ermitteln](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-IDE](../ide/visual-studio-ide.md)

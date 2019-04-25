@@ -10,12 +10,12 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083360"
 ---
 # <a name="inside-the-core-editor"></a>In der Kern-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von m
   
  Die folgenden Bereiche sind einige wichtige Aspekte bei der die Kern-Editor:  
   
--   Textpuffer  
+- Textpuffer  
   
--   Textansicht  
+- Textansicht  
   
--   Codefenster  
+- Codefenster  
   
--   Textmarkierungen  
+- Textmarkierungen  
   
--   Text-manager  
+- Text-manager  
   
--   Integration mit Sprachdienste  
+- Integration mit Sprachdienste  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Instanziieren des Core-Editors mit der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  

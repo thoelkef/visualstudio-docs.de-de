@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039413"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Gewusst wie: Ersetzen von Parametern in einer Vorlage
+# <a name="how-to-substitute-parameters-in-a-template"></a>Vorgehensweise: Ersetzen von Parametern in einer Vorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Vorlagenparameter, etwa Klassennamen und Namespaces, ersetzen, wenn Sie eine Datei auf Basis einer Vorlage erstellen. Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
@@ -29,7 +29,7 @@ Sie können Vorlagenparameter, etwa Klassennamen und Namespaces, ersetzen, wenn 
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>So verwenden Sie einen Parameter, um einen Namespacenamen durch den Projektnamen zu ersetzen  
   
-1.  Fügen Sie den Parameter in eine oder mehrere Codedateien in der Vorlage ein. Beispiel:  
+1. Fügen Sie den Parameter in eine oder mehrere Codedateien in der Vorlage ein. Zum Beispiel:  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ Sie können Vorlagenparameter, etwa Klassennamen und Namespaces, ersetzen, wenn 
     > [!NOTE]
     >  Vorlagenparameter werden im Format $*Parameter*$ geschrieben.  
   
-2.  Suchen Sie in der VSTEMPLATE-Datei der Vorlage nach dem `ProjectItem`-Element, in dem diese Datei enthalten ist.  
+2. Suchen Sie in der VSTEMPLATE-Datei der Vorlage nach dem `ProjectItem`-Element, in dem diese Datei enthalten ist.  
   
-3.  Legen Sie das `ReplaceParameters`-Attribut für das `ProjectItem`-Element auf `true` fest. Beispiel:  
+3. Legen Sie das `ReplaceParameters`-Attribut für das `ProjectItem`-Element auf `true` fest. Zum Beispiel:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

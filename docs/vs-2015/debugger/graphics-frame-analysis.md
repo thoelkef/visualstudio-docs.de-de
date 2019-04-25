@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053532"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   
  Die Anzahl der Wiederholungen der Frame-Analyse ist auf 10 beschränkt. Wenn Ihre Plattform ein aggressives Leistungsmanagement oder Takt-Gating aufweist, kann die Frame-Analyse fehlschlagen und einen Fehler melden, falls der Wiederholungsgrenzwert überschritten wird. Sie können dieses Problem eventuell abschwächen, indem Sie das Leistungsmanagement und die Taktgeschwindigkeit auf weniger aggressive Werte zurücksetzen, wenn die Plattform dies erlaubt.  
   
-##  <a name="HardwareSupport"></a> Hardwaresupport  
+## <a name="HardwareSupport"></a> Hardwaresupport  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Zeitstempel und Okklusionsabfragen  
  Zeitstempel werden auf allen Plattformen unterstützt, die die Frame-Analyse unterstützen. Tiefenokklusionsabfragen – die für den Zähler "Okkludierte Pixel" erforderlich sind – werden auf Plattformen unterstützt, die die Funktionsebene 9.2 oder höher unterstützen.  
@@ -182,7 +182,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 > [!NOTE]
 >  Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen. Solange Sie die API Direct3D 11, Direct3D 11.1 oder Direct3D 11.2 verwenden, können Sie auf jeder gewünschten Funktionsebene arbeiten – die Frame-Analyse funktioniert in jedem Fall.  
   
-##  <a name="Variants"></a> Varianten  
+## <a name="Variants"></a> Varianten  
  Jede Änderung, die die Frame-Analyse an der Art durchführt, in der ein Frame während der Wiedergabe gerendert wird, wird *Variante* genannt. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  
   
 |Variante|Beschreibung|  

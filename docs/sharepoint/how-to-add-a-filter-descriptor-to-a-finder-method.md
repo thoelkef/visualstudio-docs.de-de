@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068664"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Vorgehensweise: Hinzufügen eines Filterdeskriptors zu einer Finder-Methode
   Filterdeskriptoren ermöglichen Consumern des Modells, um Werte an Methoden übergeben werden, bevor sie ausgeführt werden. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617781"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Hinzufügen ein Filterdeskriptors zu einer Finder-Methode
 
-1.  In der **BDC-Methodendetails** Fenster, erweitern Sie den Knoten einer Finder-Methode, erweitern Sie die **Parameter** Knoten, und fügen Sie dann einen Eingabeparameter hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie einen Parameter an eine Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. In der **BDC-Methodendetails** Fenster, erweitern Sie den Knoten einer Finder-Methode, erweitern Sie die **Parameter** Knoten, und fügen Sie dann einen Eingabeparameter hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Fügen Sie einen Parameter an eine Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  In der **Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters.
+2. In der **Methodendetails** Fenster, wählen Sie den Typdeskriptor des Parameters.
 
-3.  Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+3. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
 
-4.  In der **Eigenschaften** legen die **Typnamen** Eigenschaft in einen Datentyp, der für den Filter geeignet ist.
+4. In der **Eigenschaften** legen die **Typnamen** Eigenschaft in einen Datentyp, der für den Filter geeignet ist.
 
      Z. B. möglicherweise einen Filter ein Bestelldatum verwenden, um die Anzahl der von der Methode zurückgegebenen Aufträge zu beschränken. Um den Filter, unterstützen die **Typnamen** Eigenschaft des Typdeskriptors muss festgelegt werden, um **System.DateTime**.
 
-5.  In der **Methodendetails** Fenster, erweitern Sie die **Filterdeskriptoren** Knoten.
+5. In der **Methodendetails** Fenster, erweitern Sie die **Filterdeskriptoren** Knoten.
 
-6.  In **Hinzufügen eines Filterdeskriptors** wählen **Filterdeskriptor erstellen**.
+6. In **Hinzufügen eines Filterdeskriptors** wählen **Filterdeskriptor erstellen**.
 
      Ein neuer Filterdeskriptor wird unterhalb der **Filterdeskriptoren** Knoten.
 
-7.  Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+7. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
 
-8.  In der **Eigenschaften** Fenster, wählen Sie die **Typ** Eigenschaft.
+8. In der **Eigenschaften** Fenster, wählen Sie die **Typ** Eigenschaft.
 
 9. In der Liste für die **Typ** -Eigenschaft, wählen Sie das Filtermuster, die Sie möchten.
 

@@ -1,5 +1,5 @@
 ---
-title: C++ statischem Code Analysis-Store-apps
+title: C++statische Analyse Store-apps
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103874"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analysieren der Qualität des C++-Codes von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 > [!NOTE]
 > In Visual Studio Ultimate, Visual Studio Premium und Visual Studio Professional können Sie sämtliche Funktionen der Codeanalysetools verwenden. Siehe [Analysieren der Anwendungsqualität mit Codeanalysetools](http://msdn.microsoft.com/library/dd264897.aspx) in der MSDN Library.
 
-##  <a name="BKMK_Run"></a> Ausführen der Codeanalyse
+## <a name="BKMK_Run"></a> Ausführen der Codeanalyse
  So führen Sie die Codeanalyse in der Visual Studio-Projektmappe aus
 
 - Wählen Sie im Menü **Build** die Option **Codeanalyse für Lösung ausführen** aus.
@@ -43,7 +43,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    ![Codeanalysefenster](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
+## <a name="BKMK_Analyze"></a> Analysieren und Auflösen von Codeanalysewarnungen
  Um eine bestimmte Warnung zu analysieren, wählen Sie den Titel der Warnung im Fenster "Codeanalyse" aus. Die Warnung wird erweitert, um ausführliche Informationen zum Problem anzuzeigen. Wenn möglich, zeigt die Codeanalyse die Zeilennummer und die Analyselogik an, die zu der Warnung geführt haben.
 
  ![Erweiterte Codeanalysewarnung](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 > [!TIP]
 >  Sie können die Codeanalyse im Codeanalysefenster erneut ausführen. Klicken Sie auf die Schaltfläche **Analysieren**, und wählen Sie dann den Bereich der Analyse aus. Sie können die Analyse für die gesamte Projektmappe oder für ein ausgewähltes Projekt erneut ausführen.
 
-##  <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen
+## <a name="BKMK_Suppress"></a> Unterdrücken der Codeanalysewarnungen
  Mitunter möchten Sie möglicherweise darauf verzichten, eine Codeanalysewarnung zu korrigieren. So kann es beispielsweise vorkommen, dass das Auflösen der Warnung im Verhältnis zur Wahrscheinlichkeit, dass das Problem in einer realen Implementierung des Codes auftritt, eine zu große Bearbeitung des Codes erfordert. Oder Sie gehen davon aus, dass die für die Warnung verwendete Analyse für den jeweiligen Kontext ungeeignet ist. Sie können Warnungen unterdrücken, sodass diese nicht mehr im Codeanalysefenster angezeigt werden.
 
  So unterdrücken Sie eine Warnung
@@ -70,14 +70,13 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 
    Unterdrücken einer Meldung fügt `#pragma(warning:`*WarningId*`)` ein, das die Warnung für die Codezeile unterdrückt.
 
-##  <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
+## <a name="BKMK_Search"></a> Suchen und Filtern der Codeanalyseergebnisse
  Sie können lange Listen mit Warnmeldungen durchsuchen und Warnungen in Projektmappen mit mehreren Projekten filtern.
 
  ![Fenster zum Suchen und Filtern der Codeanalyse](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++-Codeanalysewarnungen
+## <a name="Warnings"></a> C++-Codeanalysewarnungen
  Die Codeanalyse gibt die folgenden Warnungen für C++-Code aus:
-
 
 |                                      Regel                                      |                                                  Beschreibung                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -133,7 +132,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Ungültiger Größenzeichenfolgenparameter                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Ungültiger Größenzeichenfolgenstandort                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.               |
+|                       [C6527](../code-quality/c6527.md)                        |              Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Unbekannter Formatzeichenfolgenstil                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Ungültige Größenangabe: Ausdruck nicht analysierbar                              |
@@ -204,7 +203,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 |                      [C28286](../code-quality/c28286.md)                       |                                    Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.                |
+|                      [C28289](../code-quality/c28289.md)                       |                Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine                |
 |                      [C28290](../code-quality/c28290.md)                       |           Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Ausdrucksoperanden von inkompatiblen Typen für Operator                             |

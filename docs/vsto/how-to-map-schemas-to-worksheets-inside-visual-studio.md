@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057172"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Vorgehensweise: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio
   Sie können ein XML-Schema zu einem Arbeitsblatt zuordnen, während das Arbeitsblatt in Visual Studio geöffnet ist. Sie verwenden den gleichen Microsoft Office Excel-Tools, die Sie verwenden, wenn die Arbeitsmappe außerhalb von Visual Studio geöffnet ist. Das Office-Projekt erstellt die gleichen Objekte, ob Sie das Schema der Tabelle vor dem zuordnen oder nach der Erstellung der Excel-Projektmappe.
@@ -34,28 +34,28 @@ ms.locfileid: "56637372"
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Ordnen Sie eine XML-Schema in ein Excel-Arbeitsblatt in Visual Studio
 
-1.  Öffnen Sie die Excel-Arbeitsmappe oder Vorlage-Projekt in Visual Studio.
+1. Öffnen Sie die Excel-Arbeitsmappe oder Vorlage-Projekt in Visual Studio.
 
-2.  Klicken Sie in das Arbeitsblatt, das den Fokus auf den Designer.
+2. Klicken Sie in das Arbeitsblatt, das den Fokus auf den Designer.
 
-3.  Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
+3. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
     > [!NOTE]
     >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  In der **XML** auf **Quelle**.
+4. In der **XML** auf **Quelle**.
 
      Die **XML-Quelle** Fenster wird geöffnet.
 
-5.  In der **XML-Quelle** Fenster, klicken Sie auf **XML-Zuordnungen**.
+5. In der **XML-Quelle** Fenster, klicken Sie auf **XML-Zuordnungen**.
 
      Die **XML-Zuordnungen** Dialogfeld wird geöffnet.
 
-6.  In der **XML-Zuordnungen** Dialogfeld klicken Sie auf **hinzufügen**.
+6. In der **XML-Zuordnungen** Dialogfeld klicken Sie auf **hinzufügen**.
 
-7.  Navigieren Sie zu der Schemadatei, wählen Sie ihn, und klicken Sie dann auf **öffnen**.
+7. Navigieren Sie zu der Schemadatei, wählen Sie ihn, und klicken Sie dann auf **öffnen**.
 
-8.  Klicken Sie auf **OK**.
+8. Klicken Sie auf **OK**.
 
      Das Schema wird dargestellt, der **XML-Quelle** Fenster. In Ihrem Projekt ein typisiertes <xref:System.Data.DataSet> wird basierend auf dem Schema generiert und ein <xref:System.Windows.Forms.BindingSource> erstellt wird.
 

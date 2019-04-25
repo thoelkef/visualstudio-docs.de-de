@@ -10,12 +10,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 68ab00c03f435ce479c1fe41074509a67a458061
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076824"
 ---
 # <a name="core-interfaces"></a>Wichtige Schnittstellen
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
   
 - Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a> Haltepunkte  
+## <a name="Breakpoints"></a> Haltepunkte  
  Diese Schnittstellen beziehen sich auf die Implementierung und die nachverfolgung von Haltepunkten.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -88,7 +88,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Stellt eine Enumeration dar, über einen Satz von gebundener Haltepunkte.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Stellt eine Enumeration dar, über einen Satz von Breakpoints, die auf einen Speicherbereich konnte nicht gebunden werden.|  
   
-##  <a name="Contexts"></a> Kontexte  
+## <a name="Contexts"></a> Kontexte  
  Diese Schnittstellen stellen verschiedene Arten von Kontexten, in das derzeit debuggte Programm dar.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -102,7 +102,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Stellt einen Stack-Frame-Kontext an einem Haltepunkt oder die Ausnahme dar.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Stellt eine Enumeration über einen Satz von Codekontexte dar.|  
   
-##  <a name="CoreServer"></a> Core-Server  
+## <a name="CoreServer"></a> Core-Server  
  Diese Schnittstellen stellen dar, den Computer, auf dem ein Programm im Debugmodus befindet. Diese implementiert werden, indem [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] jedoch von Debug-Engines in aufgerufen werden kann.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -110,7 +110,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bietet Zugriff auf die Ports und Portanbieter sowie Informationen über den Computer.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Stellt eine [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , unterstützt das Remotedebuggen.|  
   
-##  <a name="DebugEngines"></a> Debug-Engines  
+## <a name="DebugEngines"></a> Debug-Engines  
  Diese Schnittstellen stellen die Debug-Engines und deren zugeordneten Ereignissen dar.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -122,7 +122,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Stellt einen Programm-Knoten, der mehrere Debug-Engines behandelt.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Bietet eine Möglichkeit, das SDM beim Abrufen einer Schnittstelle für die Debug-Engine von einem Thread, Programme oder Stapelrahmen entspricht.|  
   
-##  <a name="Documents"></a> Dokumente  
+## <a name="Documents"></a> Dokumente  
  Diese Schnittstellen stellen Dokumente (Quelldateien) und den zugeordneten Elementen dar.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -137,7 +137,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Stellt ein Textdokument, die von der DE bereitgestellt (abgeleitet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), den tatsächlichen Text bereitstellt.|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Durch die DE gesendet, Änderungen an einer Quelldatei an, die im Arbeitsspeicher befindet.|  
   
-##  <a name="Events"></a> Ereignisse  
+## <a name="Events"></a> Ereignisse  
  Diese Schnittstellen darstellen, alle Ereignisse, die zwischen dem DE und sitzungsbasierter Debug-Manager (SDM) gesendet werden.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -182,7 +182,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Von der DE gesendet, wenn ein Thread zerstört wurde.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Von der DE gesendet, wenn ein Thread seinen Namen geändert wurde.|  
   
-##  <a name="Expressions"></a> Ausdrücke  
+## <a name="Expressions"></a> Ausdrücke  
  Diese Schnittstellen stellen dar, die Ausdrücke in einem bestimmten Kontext ausgewertet werden soll.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -191,7 +191,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Stellt einen Kontext, in dem ein Ausdruck ausgewertet wird. Abgerufen aus der [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Schnittstelle.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Von der DE gesendet, wenn eine asynchrone ausdrucksauswertung abgeschlossen ist.|  
   
-##  <a name="Memory"></a> Arbeitsspeicher  
+## <a name="Memory"></a> Arbeitsspeicher  
  Diese Schnittstellen stellen Sequenzen von Bytes im Arbeitsspeicher dar.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -199,7 +199,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Stellt eine Sequenz von Bytes im Arbeitsspeicher, die aus gelesen oder geschrieben werden können.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Stellt einen Speicherort im Arbeitsspeicher einer Sequenz von Bytes an.|  
   
-##  <a name="Modules"></a> Module  
+## <a name="Modules"></a> Module  
  Diese Schnittstellen stellen dar, ein Modul, das in eine ausführbare Datei entspricht oder. DLL-Datei.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -210,7 +210,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Stellt die Source Server-Informationen, die in einer PDB-Datei enthalten ist.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Stellt eine Enumeration dar, über einen Satz von Modulen, die bekannt sind ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a> Ports  
+## <a name="Ports"></a> Ports  
  Diese Schnittstellen werden die Ports und Portanbieter darstellen.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -230,7 +230,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Stellt eine Enumeration dar, über einen Satz von Ports.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Stellt eine Enumeration über einen Satz von Portanbieter dar.|  
   
-##  <a name="Processes"></a> Prozesse  
+## <a name="Processes"></a> Prozesse  
  Diese Schnittstellen darstellen, Prozesse, die eine einzelne ausführbare Datei, die ein oder mehrere Programme enthält.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -242,7 +242,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Stellt einen Prozess, der nachverfolgt werden muss, welche Sitzung verbunden ist.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Stellt eine Enumeration von einer Reihe von Prozessen auf einem Port dar.|  
   
-##  <a name="Programs"></a> Programme  
+## <a name="Programs"></a> Programme  
  Diese Schnittstellen darstellen, Programme, die logischen Einheiten der Ausführung, die nicht unbedingt eine physische ausführbare Datei oder dieses Moduls entsprechen.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -261,7 +261,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Stellt eine [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) kann, die Schnittstellen Prozess oder Thread hinweg gemarshallt.|  
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Stellt eine Enumeration, der ein Satz von Programmen an.|  
   
-##  <a name="Properties"></a> Eigenschaften  
+## <a name="Properties"></a> Eigenschaften  
  Diese Schnittstellen stellen Eigenschaften ein Wert in einem bestimmten Kontext, in der Regel das Ergebnis der Auswertung eines Ausdrucks dar.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -275,7 +275,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Stellt eine Enumeration dar, über einen Satz von [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen die Variablen, Register, Parameter und Ausdrücke zu beschreiben.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Stellt eine Enumeration dar, über einen Satz von [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Strukturen.|  
   
-##  <a name="StackFrames"></a> Stapelrahmen  
+## <a name="StackFrames"></a> Stapelrahmen  
  Diese Schnittstellen stellen einen Stapelrahmen, einen Kontext dar. in der ein Haltepunkt oder eine Ausnahme aufgetreten ist.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -285,7 +285,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Stellt eine Enumeration dar, über der Menge der [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) Strukturen geben an, die Funktion Aufrufsequenz, die zum Erreichen eines bestimmten Stapelrahmens.|  
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Stellt eine Enumeration dar, über einen Satz von [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen, die Stapelrahmen zu beschreiben.|  
   
-##  <a name="Threads"></a> Threads  
+## <a name="Threads"></a> Threads  
  Diese Schnittstellen darstellen, Threads und deren zugeordneten Ereignissen.  
   
 |Interface|Implementiert von|Beschreibung|  
@@ -296,7 +296,7 @@ Die folgenden Schnittstellen sind die Core-Schnittstellen für die Erweiterung d
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Von der DE gesendet, wenn ein Thread seinen Namen geändert wurde.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Stellt eine Enumeration über eine Reihe von Threads dar.|  
   
-##  <a name="TypeVisualizers"></a> Typ-Schnellansichten  
+## <a name="TypeVisualizers"></a> Typ-Schnellansichten  
  Diese Schnittstellen bieten Unterstützung für Typ-Schnellansichten. Diese Schnittstellen werden in der Regel von einer ausdrucksauswertung implementiert.  
   
 |Interface|Implementiert von|Beschreibung|  

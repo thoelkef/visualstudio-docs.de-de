@@ -14,25 +14,25 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a465345ad7cb70fc21d1a253816162daf939a8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086077"
 ---
 # <a name="invalid-character-javascript"></a>Ungültiges Zeichen (JavaScript)
 Sie erstellt einen Bezeichner mit ein (oder mehrere Zeichen) nicht erkannt als gültig ist, indem die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler. Gültige Zeichen verwenden Sie die folgenden Regeln:  
   
--   Das erste Zeichen muss ein ASCII-Buchstabe (Großbuchstabe oder Kleinbuchstabe) oder einem Unterstrich (_) sein.  
+- Das erste Zeichen muss ein ASCII-Buchstabe (Großbuchstabe oder Kleinbuchstabe) oder einem Unterstrich (_) sein.  
   
--   Nachfolgende Zeichen können es sich um ASCII-Buchstaben, Zahlen oder Unterstriche enthalten sein.  
+- Nachfolgende Zeichen können es sich um ASCII-Buchstaben, Zahlen oder Unterstriche enthalten sein.  
   
--   Der Bezeichner darf kein reserviertes Wort sein.  
+- Der Bezeichner darf kein reserviertes Wort sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition.  
+- Vermeiden Sie die Verwendung von Zeichen, die nicht Teil der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachdefinition.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Variablen](../../javascript/variables-javascript.md)   

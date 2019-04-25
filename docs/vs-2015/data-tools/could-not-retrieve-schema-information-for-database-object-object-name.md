@@ -9,22 +9,21 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fa0c6e6e968f05ed8e2612e330d251ee7251206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 597ed598a9d75e35f552b240f7bbfc1dcb0203e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094871"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Schemainformationen für das Datenbankobjekt konnten nicht abgerufen werden &lt;Objektname&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Diese Nachricht wird meist angezeigt, wenn ein Objekt in **Server Explorer/Datenbank-Explorer** in die Zwischenablage kopiert, aus der Datenbank gelöscht und dann in den Designer eingefügt wird. Da das Datenbankobjekt nicht mehr vorhanden ist, wird diese Meldung angezeigt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
+- Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

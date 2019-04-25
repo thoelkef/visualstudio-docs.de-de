@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050704"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z. B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.  
   
 > [!NOTE]
@@ -47,24 +46,24 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
   
  Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszeilenhilfsprogramme. Die folgenden Syntaxregeln gelten für alle `devenv`-Schalter und ihre Argumente:  
   
--   Befehle beginnen mit `devenv`.  
+- Befehle beginnen mit `devenv`.  
   
--   Bei Schaltern wird nicht zwischen Groß–/Kleinschreibung unterschieden.  
+- Bei Schaltern wird nicht zwischen Groß–/Kleinschreibung unterschieden.  
   
--   Bei Angabe einer Projektmappe oder eines Projekts ist das erste Argument der Name der Projektmappendatei oder der Projektdatei, einschließlich Dateipfad.  
+- Bei Angabe einer Projektmappe oder eines Projekts ist das erste Argument der Name der Projektmappendatei oder der Projektdatei, einschließlich Dateipfad.  
   
--   Wenn das erste Argument eine Datei ist, die keine Projektmappe bzw. kein Projekt ist, wird die Datei im entsprechenden Editor in einer neuen Instanz der IDE geöffnet.  
+- Wenn das erste Argument eine Datei ist, die keine Projektmappe bzw. kein Projekt ist, wird die Datei im entsprechenden Editor in einer neuen Instanz der IDE geöffnet.  
   
--   Wenn Sie anstelle des Namens einer Projektmappendatei den einer Projektdatei angeben, wird der übergeordnete Ordner der Projektdatei von einem `devenv`-Befehl nach einer Projektmappendatei mit demselben Namen durchsucht. Beispielsweise durchsucht der Befehl `devenv /build myproject1.vbproj` den übergeordneten Ordner nach einer Projektmappendatei mit dem Namen "myproject1.sln".  
+- Wenn Sie anstelle des Namens einer Projektmappendatei den einer Projektdatei angeben, wird der übergeordnete Ordner der Projektdatei von einem `devenv`-Befehl nach einer Projektmappendatei mit demselben Namen durchsucht. Beispielsweise durchsucht der Befehl `devenv /build myproject1.vbproj` den übergeordneten Ordner nach einer Projektmappendatei mit dem Namen "myproject1.sln".  
   
     > [!NOTE]
     >  In diesem übergeordneten Ordner darf genau eine Projektmappendatei enthalten sein, die auf dieses Projekt verweist. Wenn der übergeordnete Ordner keine oder zwei bzw. mehr Projektmappendateien enthält, die auf das Projekt verweisen, wird in diesem Ordner eine temporäre Projektmappendatei erstellt, die entsprechend dem Projekt benannt wird und darauf verweist.  
   
--   Dateipfade und Dateinamen, die Leerzeichen enthalten, müssen in doppelte Anführungszeichen ("") eingeschlossen werden. Zum Beispiel: „c:\Projekt A\\“.  
+- Dateipfade und Dateinamen, die Leerzeichen enthalten, müssen in doppelte Anführungszeichen ("") eingeschlossen werden. Zum Beispiel: „c:\Projekt A\\“.  
   
--   Fügen Sie zwischen Schaltern und Argumenten auf der gleichen Zeile ein Leerzeichen ein. Der Befehl **devenv /log output.txt** öffnet z.B. die IDE und gibt alle Protokollinformationen für diese Sitzung in „output.txt“ aus.  
+- Fügen Sie zwischen Schaltern und Argumenten auf der gleichen Zeile ein Leerzeichen ein. Der Befehl **devenv /log output.txt** öffnet z.B. die IDE und gibt alle Protokollinformationen für diese Sitzung in „output.txt“ aus.  
   
--   In `devenv`-Befehlen kann keine Syntax zum Mustervergleich verwendet werden.  
+- In `devenv`-Befehlen kann keine Syntax zum Mustervergleich verwendet werden.  
   
 ## <a name="devenv-switches"></a>Devenv-Schalter  
  Verwenden Sie die folgenden Befehlszeilenschalter, um die IDE anzuzeigen und die beschriebene Aufgabe auszuführen.  

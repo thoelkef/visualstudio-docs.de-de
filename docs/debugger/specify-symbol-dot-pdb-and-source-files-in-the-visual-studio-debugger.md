@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045341"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-Debugger (C#, C++, Visual Basic F#)
 
@@ -76,11 +76,11 @@ Der Debugger sucht auch nach Symboldateien in den folgenden Speicherorten:
 
      Sind Symbolserver, die Sie verwenden können:
 
-     **Öffentliche Microsoft-Symbolserver**: um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern.
+     **Öffentliche Microsoft-Symbolserver**: Um einen Absturz zu debuggen, die während eines Aufrufs einer System-DLL oder einer Drittanbieter-Bibliothek auftritt, benötigen Sie häufig System *PDB* Dateien. System *PDB* Dateien enthalten die Symbole für Windows-DLLs, *.exe* Dateien und Gerätetreiber. Erhalten Sie Symbole für Windows-Betriebssysteme, MDAC, IIS, ISA, und die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] von den öffentlichen Microsoft-Symbolservern.
 
-     **Symbolserver auf einem internen Netzwerk oder auf dem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer.
+     **Symbolserver auf einem internen Netzwerk oder auf Ihrem lokalen Computer**: Ihr Team oder Ihr Unternehmen kann Symbolserver für eigene Produkte und als Cache für Symbole aus externen Quellen erstellen. Sie haben möglicherweise einen Symbolserver auf dem eigenen Computer.
 
-     **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet bereitstellen.
+     **Symbolserver von Drittanbietern**: Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet gewähren.
 
      > [!WARNING]
      > Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, stellen Sie sicher, dass der Symbolserver und den Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie in Bezug auf Sicherheitsrisiken verfügbar gemacht werden.
@@ -128,9 +128,9 @@ Auf der **Tools** > **Optionen** > **Debuggen** > **Symbole** Seite können Sie:
 
 4. Geben Sie die Module, die der Debugger beim Laden aus soll die **Symboldateien (.pdb) Orte für Symboldateien** Wenn gestartet wurde.
 
-   -  Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.
+   - Wählen Sie **alle Module zu laden, es sei denn, der ausgeschlossen** (Standard), um alle Symbole für alle Module auf den Speicherort der Symboldatei, mit Ausnahme von Modulen zu laden, Sie explizit ausschließen. Wählen Sie zum Ausschließen bestimmter Module **Ausgeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module zum ausschließen, und wählen Sie **OK**.
 
-   -  Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.
+   - Um nur Module laden Sie aus der Speicherorte für Symboldateien angeben, wählen **Laden nur angegebene Module**. Wählen Sie **eingeschlossene Module angeben**, wählen die **+** Symbol, geben Sie die Namen der Module, und wählen Sie dann **OK**. Die Symboldateien für andere Module werden nicht geladen werden.
 
 5. Klicken Sie auf **OK**.
 
@@ -155,7 +155,7 @@ Sie können auswählen, zusätzlicher Symboloptionen in **Tools** > **Optionen**
   Sie können die Befehle einschränken, *srcsrv.dll* können aus der app ausführen *PDB* Datei durch Auflisten der zulässigen Befehle in einer Datei namens *srcsrv.ini*. Ort der *srcsrv.ini* -Datei im gleichen Ordner wie *srcsrv.dll* und *devenv.exe*.
 
   >[!IMPORTANT]
-  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Beliebige Befehle eingebettet werden können, in der app- *PDB* -Datei verwenden, also stellen Sie sicher, dass nur die Befehle hinzufügen in ausgeführt werden soll eine *srcsrv.ini* Datei. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
   >Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Angenommen, Sie aufgeführten *cmd.exe* in Ihre *srcsrv.ini*, könnte ein böswilliger Benutzer Parameter angeben, auf *cmd.exe* , das würde machen es gefährlich.
 
@@ -199,7 +199,7 @@ Erstellen Sie mit **/debug** zum Erstellen einer *PDB* Datei. Sie können Anwend
 
 Legen Sie die *"Web.config"* Datei der ASP.NET-Anwendung auf den Debugmodus. Der Debugmodus veranlasst ASP.NET zum Erstellen von Symbolen für dynamisch generierte Dateien und ermöglicht dem Debugger das Anfügen an die ASP.NET-Anwendung. Visual Studio legt dies automatisch beim Starten des Debuggen, wenn Sie Ihr Projekt aus der Webprojekte-Vorlage erstellt haben.
 
-##  <a name="manage-symbols-while-debugging"></a>Verwaltung von Symbolen beim Debuggen
+## <a name="manage-symbols-while-debugging"></a>Verwaltung von Symbolen beim Debuggen
 
 Können Sie die **Module**, **Aufrufliste**, **"lokal"**, **"Auto"**, oder ein beliebiges **Watch** Fenster geladen Symbole, oder Ändern der Symboloptionen während des Debuggens. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Während des Debuggens die **Module** Fenster zeigt die Codemodule, die der Debu
 
 Es gibt mehrere Möglichkeiten für den Debugger zu unterbrechen im Code, der keine verfügbaren Symbol- oder Quelldateien Dateien:
 
--  Code in Einzelschritten ausführen.
--  Unterbrechen Sie im Code von einem Haltepunkt oder einer Ausnahme.
--  Wechseln Sie zu einem anderen Thread.
--  Ändern Sie den Stapelrahmen durch Doppelklicken auf einen Frame in der **Aufrufliste** Fenster.
+- Code in Einzelschritten ausführen.
+- Unterbrechen Sie im Code von einem Haltepunkt oder einer Ausnahme.
+- Wechseln Sie zu einem anderen Thread.
+- Ändern Sie den Stapelrahmen durch Doppelklicken auf einen Frame in der **Aufrufliste** Fenster.
 
 In diesem Fall zeigt der Debugger die **keine Symbole geladen** oder **keine Quelle geladen** Seiten können Sie ermitteln und laden die erforderlichen Symbole oder Quelle aus.
 
@@ -235,11 +235,11 @@ In diesem Fall zeigt der Debugger die **keine Symbole geladen** oder **keine Que
 
 **So verwenden Sie die Dokumentseite keine Symbole geladen, ermitteln und Laden Symbole fehlen:**
 
--   Um den Suchpfad zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **neuen Pfad** oder **neuer VSTS-Pfad** und geben Sie ein oder wählen Sie einen neuen Pfad. Wählen Sie **laden** die Pfade erneut zu suchen und die Symboldatei zu laden, wenn es gefunden wird.
--   Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >**. Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.
--   Zum Öffnen der **Optionen** > **Debuggen** > **Symbole** Seite **Symboleinstellungen ändern**.
--   Um die Disassembly in einem neuen Fenster einmal anzuzeigen, wählen Sie **Disassembly anzeigen**, oder wählen Sie **Dialogfeld "Optionen"** , legen Sie die Option, um die Disassembly immer anzuzeigen, wenn Quell-oder Symboldateien nicht gefunden werden.
--   Um die Speicherorte durchsucht und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.
+- Um den Suchpfad zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **neuen Pfad** oder **neuer VSTS-Pfad** und geben Sie ein oder wählen Sie einen neuen Pfad. Wählen Sie **laden** die Pfade erneut zu suchen und die Symboldatei zu laden, wenn es gefunden wird.
+- Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >**. Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.
+- Zum Öffnen der **Optionen** > **Debuggen** > **Symbole** Seite **Symboleinstellungen ändern**.
+- Um die Disassembly in einem neuen Fenster einmal anzuzeigen, wählen Sie **Disassembly anzeigen**, oder wählen Sie **Dialogfeld "Optionen"** , legen Sie die Option, um die Disassembly immer anzuzeigen, wenn Quell-oder Symboldateien nicht gefunden werden.
+- Um die Speicherorte durchsucht und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.
 
 Wenn der Debugger sucht nach der *PDB-Datei* Datei, nachdem Sie eine der Optionen ausführen und können abrufen, die Quelldatei, die anhand der Informationen in der *PDB-Datei* -Datei, es zeigt die Quelle. Andernfalls zeigt er eine **keine Quelle geladen** Seite das Problem, mit Links zu Aktionen beschrieben, die das Problem möglicherweise behoben.
 
@@ -259,7 +259,6 @@ Sie können Geben Sie die Speicherorte, die der Debugger nach Quelldateien sucht
 1. Klicken Sie unter **Quelldateien nicht suchen**, geben Sie die Namen der Quelldateien, Suche ausgeschlossen werden sollen.
 
 1. Wählen Sie **OK** oder **anwenden**.
-
 
 ## <a name="see-also"></a>Siehe auch
 - [Grundlegendes zu Symboldateien und symboleinstellungen für Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

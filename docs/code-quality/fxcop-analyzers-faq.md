@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816422"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Häufig gestellte Fragen zu FxCop und FxCop-Analysetools
 
@@ -51,6 +51,6 @@ Wenn Sie FxCop-Analysetools installiert haben, aber weiterhin eine Warnung erhal
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über .NET Compiler Platform-Analysetools](roslyn-analyzers-overview.md)
-- [Erste Schritte mit Analysetools](fxcop-analyzers.yml)
-- [Installieren von FxCop-Analysetools](install-fxcop-analyzers.md)
+- [Overview of .NET Compiler Platform analyzers (Übersicht über .NET Compiler Platform-Analysetools)](roslyn-analyzers-overview.md)
+- [Get started with analyzers (Erste Schritte mit Analysetools)](fxcop-analyzers.yml)
+- [Install FxCop analyzers (Installieren von FxCop-Analysetools)](install-fxcop-analyzers.md)

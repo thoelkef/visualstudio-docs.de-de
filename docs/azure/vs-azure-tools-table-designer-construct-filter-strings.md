@@ -1,20 +1,24 @@
 ---
 title: Erstellen von Filterzeichenfolgen für den Tabellen-Designer | Microsoft Docs
 description: Erstellen von Filterzeichenfolgen für den Tabellen-Designer
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/18/2016
-ms.author: ghogen
+origin.date: 11/18/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: d19084e9cfc9813434f5e68829345440763df7e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572235"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Erstellen von Filterzeichenfolgen für den Tabellen-Designer
 ## <a name="overview"></a>Übersicht
@@ -39,9 +43,9 @@ Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstü
 
 Wenn Sie eine Filterzeichenfolge erstellen, sind die folgenden Regeln wichtig:
 
-* Verwenden Sie die logischen Operatoren, um eine Eigenschaft mit einem Wert zu vergleichen. Es ist nicht möglich, eine Eigenschaft mit einem dynamischen Wert zu vergleichen; eine Seite des Ausdrucks muss eine Konstante sein.
-* Bei allen Teilen der Filterzeichenfolge ist die Groß-/Kleinschreibung zu beachten.
-* Der konstante Wert muss den gleichen Datentyp besitzen wie die Eigenschaft, damit vom Filter gültige Ergebnisse zurückgegeben werden. Weitere Informationen zu unterstützten Eigenschaftentypen finden Sie unter [Grundlegendes zum Tabellenspeicherdienst-Datenmodell](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+- Verwenden Sie die logischen Operatoren, um eine Eigenschaft mit einem Wert zu vergleichen. Es ist nicht möglich, eine Eigenschaft mit einem dynamischen Wert zu vergleichen; eine Seite des Ausdrucks muss eine Konstante sein.
+- Bei allen Teilen der Filterzeichenfolge ist die Groß-/Kleinschreibung zu beachten.
+- Der konstante Wert muss den gleichen Datentyp besitzen wie die Eigenschaft, damit vom Filter gültige Ergebnisse zurückgegeben werden. Weitere Informationen zu unterstützten Eigenschaftentypen finden Sie unter [Grundlegendes zum Tabellenspeicherdienst-Datenmodell](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
 ## <a name="filtering-on-string-properties"></a>Filtern nach Zeichenfolgeneigenschaften
 Wenn Sie nach Zeichenfolgeneigenschaften filtern, schließen Sie die Zeichenfolgenkonstante in einfache Anführungszeichen ein.
@@ -90,3 +94,5 @@ Um nach einem DateTime-Wert zu filtern, geben Sie das Schlüsselwort **datetime*
 Im folgenden Beispiel werden Entitäten zurückgegeben, bei denen die CustomerSince-Eigenschaft gleich dem 10. Juli 2008 ist:
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
+
+<!-- Update_Description: update metedata properties -->

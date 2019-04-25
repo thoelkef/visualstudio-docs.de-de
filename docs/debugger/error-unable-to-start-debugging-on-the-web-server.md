@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067130"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 
@@ -51,7 +51,7 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 - [Der Remoteserver hat einen Fehler zurückgegeben.](#server_error)
 - [Debuggen von ASP.NET konnte nicht gestartet](#aspnet)
 - [Der Debugger kann keine Verbindung mit dem Remotecomputer herstellen.](#cannot_connect)
-- [ In der Hilfe werden häufige Konfigurationsfehler erläutert. Die Webseite außerhalb des Debuggers ausgeführt, kann weitere Informationen bereitstellen.](#see_help)
+- [Finden Sie Hilfe für häufige Konfigurationsfehler erläutert. Die Webseite außerhalb des Debuggers ausgeführt, kann weitere Informationen bereitstellen.](#see_help)
 
 ## <a name="IISlist"></a> IIS führt eine Website, die den Start entspricht nicht Url
 
@@ -61,7 +61,7 @@ Die `Unable to start debugging on the Web server` Nachricht ist generisch. In de
 
 ## <a name="web_server_config"></a> Der Webserver ist nicht richtig konfiguriert
 
-- Finden Sie unter [Fehler: der Webserver ist nicht ordnungsgemäß konfiguriert](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- Finden Sie unter [Fehler: Der Webserver ist nicht ordnungsgemäß konfiguriert](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Es konnte keine Verbindung zum webserver
 
@@ -104,7 +104,7 @@ Wenn Sie eine Datei "HOSTS" verwenden, stellen Sie außerdem sicher, dass er ric
 
 - Wenn, das funktioniert nicht, oder Sie Remote Debuggen, führen Sie die Schritte [überprüfen Sie die IIS-Konfiguration](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
 
 Unter Berücksichtigung der hier angegebenen Schritte zur Behebung des Problems und vor dem erneuten Versuch zum Debuggen müssen Sie auch IIS zurücksetzen. Sie können dies durch eine Eingabeaufforderung mit erhöhten Rechten öffnen und eingeben `iisreset`.
 

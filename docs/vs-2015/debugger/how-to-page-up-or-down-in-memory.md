@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109595"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Beim Anzeigen des Speicherinhalts im Fenster **Arbeitsspeicher** oder im Fenster
   
 #### <a name="to-move-up-or-down-one-instruction"></a>So wechseln Sie um eine Anweisung nach oben oder unten  
   
--   Klicken Sie auf den Pfeil am oberen oder unteren Ende der vertikalen Scrollleiste.  
+- Klicken Sie auf den Pfeil am oberen oder unteren Ende der vertikalen Scrollleiste.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Fenster „Arbeitsspeicher“](../debugger/memory-windows.md)   

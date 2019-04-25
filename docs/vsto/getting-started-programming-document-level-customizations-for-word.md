@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056327"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Erste Schritte zum Programmieren von Anpassungen auf Dokumentebene für Word
   Wenn Sie gerade die Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word mit Visual Studio Schritte ersten, ist hier was Sie wissen müssen.
@@ -44,11 +44,11 @@ ms.locfileid: "56631496"
 
  Weitere Informationen finden Sie unter den folgenden Themen:
 
--   [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
+- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)
 
--   [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
+- [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 
--   [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
+- [Hostelemente und Host-Steuerelementen (Übersicht)](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Anpassen der Benutzeroberfläche von Word
  Die meisten Microsoft Office-Projektmappen ändern der Benutzeroberfläche (UI) der Office-Anwendung eine Möglichkeit für Benutzer, für die Interaktion mit der Lösung bereitstellen. Es gibt viele Möglichkeiten, die in denen Sie die Benutzeroberfläche von Word mithilfe einer Anpassung auf Dokumentebene ändern können. Beispielsweise können Sie Steuerelemente hinzufügen, auf dem Menüband, und Sie können einen Aktionsbereich anzeigen. Weitere Informationen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).

@@ -11,17 +11,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7b9d079f2f7c3e50733f5718bde63b42e27b34
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c34b3b4459616cf9a15ce7d5d5710513fad1f284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767314"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656309"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Benachrichtigungen, Umgebung, Dialogfeld „Optionen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mit dieser Option können Sie das Ignorieren von Benachrichtigungen beenden, was Sie zuvor über das Dialogfeld „Benachrichtigungen“ aktiviert haben. Weitere Informationen finden Sie unter [Benachrichtigungen](../../ide/visual-studio-notifications.md).  
   
 ## <a name="see-also"></a>Siehe auch  

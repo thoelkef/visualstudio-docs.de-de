@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a48c0692dcdcc93d58b5909b03b151ed7e1aae2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57ec75ec116b3b107b01a139621d3c59ca8ecac9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094910"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Vorgehensweise: Ändern des Namespace einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Sie können den Namespace einer domänenspezifischen Sprache ändern. Sie müsse
   
 ### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>So ändern Sie den Namespace einer domänenspezifischen Sprache  
   
-1.  In **DSL-Explorer**, klicken Sie auf die **Dsl** Knoten.  
+1. In **DSL-Explorer**, klicken Sie auf die **Dsl** Knoten.  
   
-2.  In der **Eigenschaften** Ändern der **Namespace** Eigenschaft.  
+2. In der **Eigenschaften** Ändern der **Namespace** Eigenschaft.  
   
-3.  Speichern Sie die Projektmappe, und Transformieren Sie die Vorlagen zu.  
+3. Speichern Sie die Projektmappe, und Transformieren Sie die Vorlagen zu.  
   
-4.  Auf der **Projekt** Menü klicken Sie auf **Dsl Eigenschaften**.  
+4. Auf der **Projekt** Menü klicken Sie auf **Dsl Eigenschaften**.  
   
      Die Eigenschaften für das Projekt angezeigt werden.  
   
-5.  Klicken Sie auf die Registerkarte **Anwendung** .  
+5. Klicken Sie auf die Registerkarte **Anwendung** .  
   
-6.  Ändern der **Standardnamespace** Eigenschaft, um den neuen Namespacenamen.  
+6. Ändern der **Standardnamespace** Eigenschaft, um den neuen Namespacenamen.  
   
-7.  Wenn Sie auch den Namen der Assembly ändern möchten, ändern Sie die **Assemblyname (Eigenschaft).**  
+7. Wenn Sie auch den Namen der Assembly ändern möchten, ändern Sie die **Assemblyname (Eigenschaft).**  
   
-8.  Wenn Sie den Assemblynamen geändert haben, öffnen Sie DslPackage\Package.tt, und aktualisieren Sie diese Zeile:  
+8. Wenn Sie den Assemblynamen geändert haben, öffnen Sie DslPackage\Package.tt, und aktualisieren Sie diese Zeile:  
   
      `string dslAssembly = "YourDSLassembly.Dsl.dll";`  
   
@@ -49,9 +49,9 @@ Sie können den Namespace einer domänenspezifischen Sprache ändern. Sie müsse
   
 10. Setzen Sie die experimentelle Instanz Visual Studio zurück.  
   
-    1.  Löschen Sie **\Users\\**_{Ihr Name}_**\AppData\Local\Microsoft\VisualStudio\\\*"exp"**  
+    1. Löschen Sie **\Users\\**_{Ihr Name}_**\AppData\Local\Microsoft\VisualStudio\\\*"exp"**  
   
-    2.  Auf der Windows **starten** Menü wählen **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, **Zurücksetzen der Experimentelle Instanz**.  
+    2. Auf der Windows **starten** Menü wählen **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, **Zurücksetzen der Experimentelle Instanz**.  
   
 11. Auf der **erstellen** Menü wählen **Projektmappe neu erstellen**.  
   

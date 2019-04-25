@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46786b0a11c4be6614732a224b755542b637d662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100234"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Vorgehensweise: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers
 In der Regel eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung wird automatisch gestartet, sobald sie von einem Webserver installiert ist. Aus Gründen der Sicherheit könnten Sie dieses Verhalten deaktivieren, und informieren Benutzer zum Starten der Anwendung aus der **starten** Menü stattdessen. Das folgende Verfahren beschreibt das Deaktivieren der URL-Aktivierung.
@@ -34,17 +34,17 @@ In der Regel eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 #### <a name="to-disable-url-activation-for-your-application"></a>So deaktivieren Sie die URL-Aktivierung für Ihre Anwendung
 
-1.  Mit der rechten Maustaste des Projektnamen in **Projektmappen-Explorer**, und klicken Sie auf **Eigenschaften**.
+1. Mit der rechten Maustaste des Projektnamen in **Projektmappen-Explorer**, und klicken Sie auf **Eigenschaften**.
 
-2.  Auf der **Eigenschaften** klicken Sie auf die **veröffentlichen** Registerkarte.
+2. Auf der **Eigenschaften** klicken Sie auf die **veröffentlichen** Registerkarte.
 
-3.  Klicken Sie auf **Optionen**.
+3. Klicken Sie auf **Optionen**.
 
-4.  Klicken Sie auf **Manifeste**.
+4. Klicken Sie auf **Manifeste**.
 
-5.  Aktivieren Sie das Kontrollkästchen mit der Bezeichnung **blockieren Sie die Anwendung wird über eine URL aktiviert**.
+5. Aktivieren Sie das Kontrollkästchen mit der Bezeichnung **blockieren Sie die Anwendung wird über eine URL aktiviert**.
 
-6.  Stellen Sie die Anwendung bereit.
+6. Stellen Sie die Anwendung bereit.
 
 ## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

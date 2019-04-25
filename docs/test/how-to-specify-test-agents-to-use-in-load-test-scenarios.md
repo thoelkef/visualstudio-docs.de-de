@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786431"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Vorgehensweise: Angeben der in Auslastungstestszenarios zu verwendenden Test-Agents
 
@@ -45,24 +45,24 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>So geben Sie die Agents an, die für ein Szenario verwendet werden sollen
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die zu verwendenden Agents angeben möchten.
+2. Klicken Sie im Ordner **Szenarios** der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die zu verwendenden Agents angeben möchten.
 
-3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Szenariokategorien und -eigenschaften werden im Fenster **Eigenschaften** angezeigt.
 
-4.  Geben Sie im Textfeld für die Eigenschaft **Zu verwendende Agents** die Liste der Agents ein, mit denen das Szenario möglicherweise ausgeführt wird.
+4. Geben Sie im Textfeld für die Eigenschaft **Zu verwendende Agents** die Liste der Agents ein, mit denen das Szenario möglicherweise ausgeführt wird.
 
      Agents müssen durch Kommas getrennt sein, z.B. **Agent1, Agent2, Agent3**. Wenn Sie keine Eigenschaft angeben, verwendet das Szenario alle verfügbaren Agents.
 
     > [!NOTE]
     > Die Eigenschaft **Zu verwendende Agents** wird bei lokalen Testläufen ignoriert. Wenn bei Remotetestläufen keiner der in **Zu verwendende Agents** angegebenen Agents vorhanden ist, werden im Szenario keine Tests ausgeführt.
 
-5.  Klicken Sie nach dem Ändern der Eigenschaft auf im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Zu verwendende Agents** ausführen.
+5. Klicken Sie nach dem Ändern der Eigenschaft auf im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für **Zu verwendende Agents** ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

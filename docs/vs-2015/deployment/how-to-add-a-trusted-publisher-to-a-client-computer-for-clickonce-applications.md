@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080948"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>So fügen Sie ein Zertifikat zum Speicher für vertrauenswürdige Herausgeber unter dem vertrauenswürdigen Stamm hinzu  
   
-1.  Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
+1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
   
-2.  Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
+3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>So fügen Sie ein Zertifikat zum Speicher für vertrauenswürdige Herausgeber unter einem anderen Stamm hinzu  
   
-1.  Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
+1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
   
-2.  Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
+3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

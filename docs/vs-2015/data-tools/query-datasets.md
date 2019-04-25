@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054780"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die FindBy-Methode in der DataTable-Objekt, Schreiben Sie Ihren eigenen Foreach-Schleife über der Tabelle Zeilensammlung oder verwenden Sie [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>DataSet Groß-/Kleinschreibung  
@@ -34,7 +33,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Suchen Sie nach einer Zeile in einem typisierten Dataset mit einem Wert des Primärschlüssels  
   
--   Um eine Zeile zu finden, rufen Sie den stark typisierten `FindBy` Methode, die Primärschlüssel der Tabelle verwendet.  
+- Um eine Zeile zu finden, rufen Sie den stark typisierten `FindBy` Methode, die Primärschlüssel der Tabelle verwendet.  
   
      Im folgenden Beispiel die `CustomerID` Spalte ist der Primärschlüssel von der `Customers` Tabelle. Dies bedeutet, dass die generierte `FindBy` Methode `FindByCustomerID`. Das Beispiel zeigt das Zuweisen von eines bestimmtes <xref:System.Data.DataRow> einer Variablen mithilfe der generierten `FindBy` Methode.  
   
@@ -43,7 +42,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Suchen Sie nach einer Zeile in einer nicht typisierten Dataset mit einem Wert des Primärschlüssels  
   
--   Rufen Sie die <xref:System.Data.DataRowCollection.Find%2A> Methode eine <xref:System.Data.DataRowCollection> Auflistung, die den primären Schlüssel als Parameter übergeben.  
+- Rufen Sie die <xref:System.Data.DataRowCollection.Find%2A> Methode eine <xref:System.Data.DataRowCollection> Auflistung, die den primären Schlüssel als Parameter übergeben.  
   
      Das folgende Beispiel zeigt, wie Sie eine neue Zeile deklarieren `foundRow` und weisen sie den Rückgabewert der <xref:System.Data.DataRowCollection.Find%2A> Methode. Wenn der primäre Schlüssel gefunden wird, wird der Inhalt des Spaltenindex 1 in einem Meldungsfeld angezeigt.  
   
@@ -54,7 +53,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Zum Suchen von Zeilen, die basierend auf den Werten in einer beliebigen Spalte  
   
--   Datentabellen werden erstellt, mit der<xref:System.Data.DataTable.Select%2A> Methode, die ein Array von zurückgibt <xref:System.Data.DataRow>s, basierend auf dem Ausdruck, die an die <xref:System.Data.DataTable.Select%2A> Methode. Weitere Informationen zu gültige Ausdrücken erstellen, finden Sie im Abschnitt "Ausdruckssyntax" der Seite über die <xref:System.Data.DataColumn.Expression%2A> Eigenschaft.  
+- Datentabellen werden erstellt, mit der<xref:System.Data.DataTable.Select%2A> Methode, die ein Array von zurückgibt <xref:System.Data.DataRow>s, basierend auf dem Ausdruck, die an die <xref:System.Data.DataTable.Select%2A> Methode. Weitere Informationen zu gültige Ausdrücken erstellen, finden Sie im Abschnitt "Ausdruckssyntax" der Seite über die <xref:System.Data.DataColumn.Expression%2A> Eigenschaft.  
   
      Das folgende Beispiel zeigt, wie Sie mit der <xref:System.Data.DataTable.Select%2A> Methode der <xref:System.Data.DataTable> nach bestimmten Zeilen gesucht.  
   
@@ -83,14 +82,14 @@ Darüber hinaus müssen beide Tabellen mit Daten für alle Datensätze zurückge
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Die untergeordneten Datensätze eines ausgewählten übergeordneten Datensatzes zurückgegeben.  
   
--   Aufrufen der <xref:System.Data.DataRow.GetChildRows%2A> Methode eines bestimmten `Customers` Daten Zeile aus, und geben Sie eine Matrix von Zeilen aus der `Orders` Tabelle:  
+- Aufrufen der <xref:System.Data.DataRow.GetChildRows%2A> Methode eines bestimmten `Customers` Daten Zeile aus, und geben Sie eine Matrix von Zeilen aus der `Orders` Tabelle:  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Um den übergeordneten Datensatz der ausgewählten untergeordneten Datensatzes zurückzugeben.  
   
--   Rufen Sie die <xref:System.Data.DataRow.GetParentRow%2A> Methode eines bestimmten `Orders` eine Datenzeile und zurückgeben, die eine einzelne Zeile aus der `Customers` Tabelle:  
+- Rufen Sie die <xref:System.Data.DataRow.GetParentRow%2A> Methode eines bestimmten `Orders` eine Datenzeile und zurückgeben, die eine einzelne Zeile aus der `Customers` Tabelle:  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111180"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Bewährte Entwicklungsmethoden für COM, VSTO und VBA-add-ins in Office
   Wenn Sie COM, VSTO oder VBA-add-ins für Office entwickeln, führen Sie die besten Entwicklungsmethoden in diesem Artikel beschrieben.   Dadurch wird sichergestellt:
 
--  Kompatibilität von Add-Ins über verschiedene Versionen und Bereitstellungen von Office.
--  Geringere Komplexität der Add-in-Bereitstellung für Ihre Benutzer und IT-Administratoren.
--  Unbeabsichtigte Installation oder zur Laufzeit Fehler des add-Ins werden nicht ausgeführt.
+- Kompatibilität von Add-Ins über verschiedene Versionen und Bereitstellungen von Office.
+- Geringere Komplexität der Add-in-Bereitstellung für Ihre Benutzer und IT-Administratoren.
+- Unbeabsichtigte Installation oder zur Laufzeit Fehler des add-Ins werden nicht ausgeführt.
 
 >Hinweis: Mithilfe der [Desktop-Brücke](/windows/uwp/porting/desktop-to-uwp-root) Vorbereitung auf den COM-VSTO oder VBA-add-in für den Windows Store wird nicht unterstützt. COM, VSTO und VBA-add-ins können nicht in den Windows Store oder den Office Store verteilt werden.
 

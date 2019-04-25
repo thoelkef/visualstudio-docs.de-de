@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043457"
 ---
 # <a name="saving-a-standard-document"></a>Speichern eines Standarddokuments
 Die Umgebung verarbeitet die speichern, speichern unter, und speichern Sie alle Befehle. Wenn ein Benutzer auswählt **speichern**, **speichern unter**, oder **alle speichern** aus der **Datei** Menü oder schließt die Projektmappe, wodurch eine  **Speichern Sie alle**, der folgende Prozess durchgeführt.
@@ -50,11 +50,11 @@ Die Umgebung verarbeitet die speichern, speichern unter, und speichern Sie alle 
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>So ändern Sie den Besitzer auf das Projekt verschiedene Dateien
 
-1.  Dienst für die Abfrage die <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> Schnittstelle.
+1. Dienst für die Abfrage die <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> Schnittstelle.
 
      Ein Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> zurückgegeben wird.
 
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) Methode, um das Dokument an die neue Hierarchie übertragen. Diese Methode wird von die Hierarchie Ausführen den Befehl Speichern unter aufgerufen.
+2. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) Methode, um das Dokument an die neue Hierarchie übertragen. Diese Methode wird von die Hierarchie Ausführen den Befehl Speichern unter aufgerufen.
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

@@ -3,7 +3,7 @@ documentType: LandingData
 title: Migrieren von FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools
 metadata:
   title: Dokumentation zur Migration von FxCop
-  description: Migration von der FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools
+  description: Migration von der FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools.
   ms.date: 07/18/2018
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -33,6 +33,7 @@ sections:
         items:
           - href: roslyn-analyzers-overview.md
             html: '<p>Grundlegendes zu .NET-Analysetools</p>'
+            html: <p>Grundlegendes zu .NET-Analysetools</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Übersicht über die Analysetools
@@ -60,6 +61,7 @@ sections:
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
             html: '<p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen</p>'
+            html: <p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Was ist anders?
@@ -92,6 +94,7 @@ sections:
             title: C++-Codeanalyse
           - href: code-metrics-values.md
             html: <p>Erfahren Sie, wie Sie Codemetriken erhalten. Die Benutzererfahrung für Codemetriken bleibt unverändert.</p>
+            html: '<p>Erfahren Sie, wie Sie Codemetriken erhalten. Die Benutzererfahrung für Codemetriken bleibt unverändert.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
             title: Codemetrik

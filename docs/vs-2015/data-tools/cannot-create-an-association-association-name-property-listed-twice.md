@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091576"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – Eigenschaft ist zweimal aufgelistet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden. Die folgende Eigenschaft ist mehrmals aufgelistet: \<Eigenschaftenname>.  
   
  Zuordnungen werden im Dialogfeld **Zuordnungs-Editor** von den ausgewählten **Zuordnungseigenschaften** definiert. Eigenschaften können für jede Klasse in der Zuordnung nur einmal aufgelistet werden.  
@@ -28,13 +27,13 @@ Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden. Die folgende Eigensc
   
 ### <a name="to-resolve-this-condition"></a>So lösen Sie dieses Problem  
   
--   Untersuchen Sie die Meldung, und notieren Sie die in der Meldung angegebene Eigenschaft.  
+- Untersuchen Sie die Meldung, und notieren Sie die in der Meldung angegebene Eigenschaft.  
   
--   Klicken Sie auf **OK**, um das Meldungsfeld zu schließen.  
+- Klicken Sie auf **OK**, um das Meldungsfeld zu schließen.  
   
--   Überprüfen Sie die **Zuordnungseigenschaften**, und entfernen Sie die doppelten Einträge.  
+- Überprüfen Sie die **Zuordnungseigenschaften**, und entfernen Sie die doppelten Einträge.  
   
--   Klicken Sie auf **OK**.  
+- Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

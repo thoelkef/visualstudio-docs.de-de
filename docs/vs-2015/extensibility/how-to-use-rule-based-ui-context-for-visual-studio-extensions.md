@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947434"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664313"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
 |ActiveProjectCapability:\<Expression>|Der Begriff ist "true", wenn aktive Projektfunktionen entspricht dem angegebenen Ausdruck. Ein Ausdruck kann sein, etwa VB &#124; CSharp|
 |SolutionHasProjectCapability:\<Expression>|Ähnlich wie im oben genannten jedoch Ausdruck ist true, wenn Lösung alle geladenes Projekt, das mit dem Ausdruck übereinstimmt.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Der Begriff ist true, wenn eine Lösung verfügt über Projekt, das flavored ist (aggregiert) und verfügt über eine Flavor Übereinstimmung den angegebenen Projekttyp GUID.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Kompatibilität mit versionsübergreifende-Erweiterung
  Regel, die je Benutzeroberflächenkontexte ist ein neues Feature in Visual Studio 2015 und würde nicht mit früheren Versionen portiert werden. Dadurch wird ein Problem mit den Erweiterungen/Paketen, die auf mehrere Versionen von Visual Studio werden ausgerichtet, automatisch geladen werden, in Visual Studio 2013 und frühere Versionen, aber profitieren von einer Regel auf Basis der Benutzeroberfläche-Kontexte, um zu verhindern, wird automatisch geladen in Visual Studio 2015 erstellt.

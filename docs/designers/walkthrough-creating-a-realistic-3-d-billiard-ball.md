@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844612"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 
@@ -23,11 +23,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mithilfe d
 
 Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie folgende Komponenten und Kenntnisse:
 
--   Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist
+- Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist
 
--   Kenntnisse im Umgang mit der Bildbearbeitung in Visual Studio
+- Kenntnisse im Umgang mit der Bildbearbeitung in Visual Studio
 
--   Kenntnisse im Umgang mit dem Shader-Designer in Visual Studio
+- Kenntnisse im Umgang mit dem Shader-Designer in Visual Studio
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Erstellen der grundlegenden Darstellung mit Form und Textur
 

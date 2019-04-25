@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075323"
 ---
-# <a name="historical-debugging-c-visual-basic-c"></a>Verlaufsbezogenes debugging (C#, Visual Basic, C++)
+# <a name="historical-debugging-c-visual-basic-c"></a>Verlaufsbezogenes debugging (C#, Visual Basic C++)
 
 Das verlaufsbezogene Debuggen ist ein Debug-Modus, der von den durch IntelliTrace erfassten Informationen abhängig ist. Dadurch können Sie die Ausführung Ihrer Anwendung rückwärts und vorwärts durchlaufen und ihren Status überprüfen.
 
@@ -31,8 +31,8 @@ Das verlaufsbezogene Debuggen ist ein Debug-Modus, der von den durch IntelliTrac
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Wie beginne ich mit dem verlaufsbezogenen Debuggen?
 
- IntelliTrace ist standardmäßig aktiviert. Sie müssen lediglich lediglich entscheiden, welche Ereignisse und Funktionsaufrufe für Sie von Interesse sind, und gibt an, ob Sie Momentaufnahmen des Zustands vollständige Anwendung anzeigen möchten. Weitere Informationen zum Definieren von Elementen, die Sie suchen möchten, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md). Unterstützung von Funktionen variiert je nach Sprache und die app Typ.
+IntelliTrace ist standardmäßig aktiviert. Sie müssen lediglich lediglich entscheiden, welche Ereignisse und Funktionsaufrufe für Sie von Interesse sind, und gibt an, ob Sie Momentaufnahmen des Zustands vollständige Anwendung anzeigen möchten. Weitere Informationen zum Definieren von Elementen, die Sie suchen möchten, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md). Unterstützung von Funktionen variiert je nach Sprache und die app Typ.
 
- - Zum Anzeigen von Momentaufnahmen mit verlaufsbezogenen Debuggen finden Sie unter [überprüfen Sie die vorherigen app-Status, die mit IntelliTrace](../debugger/view-historical-application-state.md)
- - So untersuchen Sie Variablen, und Navigieren im Code finden Sie unter [untersuchen Ihrer app mit verlaufsbezogenem debugging](../debugger/historical-debugging-inspect-app.md)
- - Weitere Informationen zum Debuggen mit IntelliTrace-Ereignissen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Zum Anzeigen von Momentaufnahmen mit verlaufsbezogenen Debuggen finden Sie unter [überprüfen Sie die vorherigen app-Status, die mit IntelliTrace](../debugger/view-historical-application-state.md)
+- So untersuchen Sie Variablen, und Navigieren im Code finden Sie unter [untersuchen Ihrer app mit verlaufsbezogenem debugging](../debugger/historical-debugging-inspect-app.md)
+- Weitere Informationen zum Debuggen mit IntelliTrace-Ereignissen finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

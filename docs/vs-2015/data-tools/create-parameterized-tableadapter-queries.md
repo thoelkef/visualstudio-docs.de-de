@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039287"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Erstellen Sie parametrisierte TableAdapter-Abfragen im Dataset-Designer. Sie kö
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Erstellen Sie eine parametrisierte Abfrage beim Entwerfen eines datengebundenen Formulars  
   
-1.  Wählen Sie ein Steuerelement auf dem Formular, das bereits an ein Dataset gebunden ist. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Wählen Sie ein Steuerelement auf dem Formular, das bereits an ein Dataset gebunden ist. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  Auf der **Daten** , wählen Sie im Menü**Abfrage hinzufügen**.  
+2. Auf der **Daten** , wählen Sie im Menü**Abfrage hinzufügen**.  
   
-3.  Füllen Sie das Dialogfeld **Suchkriterien-Generator** aus, und fügen Sie dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung hinzu.  
+3. Füllen Sie das Dialogfeld **Suchkriterien-Generator** aus, und fügen Sie dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung hinzu.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Fügen Sie eine Abfrage zu einem vorhandenen datengebundenen Formular  
   
@@ -91,11 +91,11 @@ Würde dies eine Abfrage auf einem TableAdapter, können Sie alle Aufträge Abfr
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Aktivieren Sie eine Abfrage, um null-Werte akzeptiert  
   
-1.  In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die null-Parameterwerte annehmen muss.  
+1. In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die null-Parameterwerte annehmen muss.  
   
-2.  In der **Eigenschaften** wählen Sie im Fenster **Parameter**. Drücken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.  
+2. In der **Eigenschaften** wählen Sie im Fenster **Parameter**. Drücken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.  
   
-3.  Wählen Sie den Parameter, die null-Werte zulässt, und legen Sie die **AllowDbNull** Eigenschaft `true`.  
+3. Wählen Sie den Parameter, die null-Werte zulässt, und legen Sie die **AllowDbNull** Eigenschaft `true`.  
   
 ## <a name="see-also"></a>Siehe auch
 

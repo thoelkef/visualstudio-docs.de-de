@@ -12,14 +12,14 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 09d423ab5f46f27e9dee4ce15f4b6dbec74d0124
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097751"
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)
+# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Fügen Sie Ihrem Projekt in Visual C# .NET, Visual Basic .NET oder C++ ein Klassendiagramm hinzu, damit Sie Klassen und andere Typen entwerfen, bearbeiten und umgestalten können. Sie können verschiedene Teile des Codes in einem Projekt visualisieren, indem Sie dem Projekt mehrere Klassendiagramme hinzufügen.  
@@ -28,30 +28,30 @@ Fügen Sie Ihrem Projekt in Visual C# .NET, Visual Basic .NET oder C++ ein Klass
   
 ### <a name="to-add-a-blank-class-diagram-to-a-project"></a>So fügen Sie einem Projekt ein leeres Klassendiagramm hinzu  
   
-1.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen. Wählen Sie anschließend **Neues Element hinzufügen** oder **Hinzufügen**, **Neues Element** aus.  
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen. Wählen Sie anschließend **Neues Element hinzufügen** oder **Hinzufügen**, **Neues Element** aus.  
   
-2.  Wählen Sie aus der Vorlagenliste das **Klassendiagramm** aus. Bei Visual C++-Projekten finden Sie diese Vorlagen unter **Vorlagen** und dort unter **Dienstprogramm**.  
+2. Wählen Sie aus der Vorlagenliste das **Klassendiagramm** aus. Bei Visual C++-Projekten finden Sie diese Vorlagen unter **Vorlagen** und dort unter **Dienstprogramm**.  
   
      Das Klassendiagramm wird im Klassen-Designer geöffnet. Im Projektmappen-Explorer wird es in der Projekthierarchie als Datei mit der Erweiterung CD angezeigt. Verwenden Sie den Klassen-Designer-Werkzeugkasten, um Formen und Linien in das Diagramm zu ziehen.  
   
-3.  Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.  
+3. Wiederholen Sie diese Schritte, um weitere Klassendiagramme hinzuzufügen.  
   
 ### <a name="to-add-a-class-diagram-based-on-existing-types"></a>So fügen Sie ein auf vorhandenen Typen basierendes Klassendiagramm hinzu  
   
-1.  Öffnen Sie im Projektmappen-Explorer das Klassendatei-Kontextmenü, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.  
+1. Öffnen Sie im Projektmappen-Explorer das Klassendatei-Kontextmenü, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.  
   
-     - oder -  
+     - oder -   
   
      Öffnen Sie in **Klassenansicht** das Kontextmenü für den Namespace oder Typ, und wählen Sie anschließend **Klassendiagramm anzeigen** aus.  
   
 ### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>So zeigen Sie alle Inhalte eines Projekts in einem Klassendiagramm an  
   
-1.  Klicken Sie im Projektmappen-Explorer oder in der Klassenansicht mit der rechten Maustaste auf das Projekt, und wählen Sie **Anzeigen** und anschließend **Klassendiagramm anzeigen** aus.  
+1. Klicken Sie im Projektmappen-Explorer oder in der Klassenansicht mit der rechten Maustaste auf das Projekt, und wählen Sie **Anzeigen** und anschließend **Klassendiagramm anzeigen** aus.  
   
      Daraufhin wird ein automatisch ausgefülltes Klassendiagramm erstellt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer](../ide/how-to-create-types-by-using-class-designer.md)   
+ [Vorgehensweise: Erstellen von Typen mit Klassen-Designer](../ide/how-to-create-types-by-using-class-designer.md)   
  [Vorgehensweise: Anzeigen von vorhandenen Typen (Klassen-Designer)](../ide/how-to-view-existing-types-class-designer.md)   
  [Entwerfen von Klassen und Typen (Klassen-Designer)](../ide/designing-classes-and-types-class-designer.md)   
  [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)   

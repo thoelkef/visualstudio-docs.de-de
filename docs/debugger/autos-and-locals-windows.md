@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103094"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Prüfen Sie die Variablen im Auto und lokal
 
@@ -56,9 +56,9 @@ In nativem C++-Code müssen Sie möglicherweise den Kontext eines Variablennamen
 >[!CAUTION]
 >Stellen Sie sicher, dass Sie die Folgen kennen, bevor Sie Werte und Ausdrücke ändern. Mögliche Probleme sind:
 >
->-   Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Angenommen, bewerten `var1 = ++var2` ändert sich der Wert beider `var1` und `var2`. Diese Ausdrücke haben [Nebenwirkungen](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Nebeneffekte können zu unerwarteten Ergebnissen führen, wenn Sie nicht bewusst sind.
+>- Die Auswertung bestimmter Ausdrücke kann zur Änderung des Werts einer Variablen führen oder sich auf den Programmzustand auswirken. Angenommen, bewerten `var1 = ++var2` ändert sich der Wert beider `var1` und `var2`. Diese Ausdrücke haben [Nebenwirkungen](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Nebeneffekte können zu unerwarteten Ergebnissen führen, wenn Sie nicht bewusst sind.
 >
->-   Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch scheinbar harmlose bearbeiten kann ändert einige Bits in der Gleitkommavariable führen.
+>- Das Bearbeiten von Gleitkommawerten kann aufgrund der Dezimal-zu-Binär-Konvertierung von Nachkommastellen zu geringfügigen Ungenauigkeiten führen. Auch scheinbar harmlose bearbeiten kann ändert einige Bits in der Gleitkommavariable führen.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Suchen Sie im Fenster "Auto" oder "lokal"
@@ -85,9 +85,9 @@ Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn der Haltepun
 
 ## <a name="bkmk_whatvariables"></a> Variablen im Fenster "Auto" (C#, C++, Visual Basic, Python)
 
- Unterschiedliche Sprachen anzeigen verschiedene Variablen in der **Auto** Fenster.
+Unterschiedliche Sprachen anzeigen verschiedene Variablen in der **Auto** Fenster.
 
- - In C# und Visual Basic wird im Fenster **Auto** jede Variable angezeigt, die in der aktuellen oder vorherigen Zeile verwendet wird. In C# oder Visual Basic-code, die folgenden vier Variablen deklariert:
+- In C# und Visual Basic wird im Fenster **Auto** jede Variable angezeigt, die in der aktuellen oder vorherigen Zeile verwendet wird. In C# oder Visual Basic-code, die folgenden vier Variablen deklariert:
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn der Haltepun
 
    Der Wert der `c` ist 0, da die Zeile `c = 3` noch nicht ausgeführt.
 
- - In C++ die **Auto** Fenster zeigt die Variablen in drei Zeilen vor der aktuellen Zeile, an dem die Ausführung angehalten. Beispielsweise in C++-Code deklarieren Sie sechs Variablen:
+- In C++ die **Auto** Fenster zeigt die Variablen in drei Zeilen vor der aktuellen Zeile, an dem die Ausführung angehalten. Beispielsweise in C++-Code deklarieren Sie sechs Variablen:
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. Wenn der Haltepun
 
     Die Variable `e` ist nicht initialisiert, weil die Zeile `e = 5` noch nicht ausgeführt.
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  In .NET und C++-Code untersuchen Sie Rückgabewerte in der **Auto** Fenster über einen Methodenaufruf oder Schritt. Anzeigen von Methodenaufruf zurück Werte nützlich sein, wenn sie nicht in lokalen Variablen gespeichert werden. Eine Methode kann als Parameter oder Rückgabewert eine andere Methode verwendet werden.
 
  Das folgende C# Code fügt die Rückgabewerte von zwei Funktionen:
@@ -164,6 +164,6 @@ Die Rückgabewerte der an die `sumVars()` und `subtractVars()` Methodenaufrufe i
 ## <a name="see-also"></a>Siehe auch
 
 - [Was bedeutet „Debuggen“?](../debugger/what-is-debugging.md)
-- [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md)
+- [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)
 - [Ein erster Blick auf das Debuggen](../debugger/debugger-feature-tour.md)
 - [Debuggerfenster](../debugger/debugger-windows.md)

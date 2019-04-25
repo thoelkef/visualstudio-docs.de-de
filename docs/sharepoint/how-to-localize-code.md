@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066285"
 ---
 # <a name="how-to-localize-code"></a>Vorgehensweise: Lokalisieren von code
   In nicht lokalisiertem Code werden hartcodierte Zeichenfolgenwerte verwendet. Zum Lokalisieren der Codezeichenfolgen werden diese durch Aufrufe von <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ersetzt – einer Methode zum Verweisen auf lokalisierte Ressourcen.
@@ -27,30 +27,30 @@ ms.locfileid: "56639813"
 
 #### <a name="to-localize-code"></a>So lokalisieren Sie Code
 
-1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für ein Projekt, und wählen Sie dann **hinzufügen** > **Modul**.
+1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für ein Projekt, und wählen Sie dann **hinzufügen** > **Modul**.
 
      Wählen Sie die **Ressourcendatei** Vorlage.
 
     > [!NOTE]
     >  Fügen Sie die Ressourcendatei einem SharePoint-Projektelement hinzu, damit die Eigenschaft "Bereitstellungstyp" verfügbar ist. Diese Eigenschaft ist später in dieser Prozedur erforderlich.
 
-2.  Benennen Sie die Ressourcendatei der Standardsprache der mit einem *resx* -Erweiterung, z. B. *MyAppResources.resx*.
+2. Benennen Sie die Ressourcendatei der Standardsprache der mit einem *resx* -Erweiterung, z. B. *MyAppResources.resx*.
 
-3.  Wiederholen Sie die Schritte 1 und 2, um dem SharePoint-Projektelement separate Ressourcendateien hinzuzufügen: jeweils eine für jede lokalisierte Sprache.
+3. Wiederholen Sie die Schritte 1 und 2, um dem SharePoint-Projektelement separate Ressourcendateien hinzuzufügen: jeweils eine für jede lokalisierte Sprache.
 
      Verwenden Sie für jede lokalisierte Ressourcendatei den gleichen Basisnamen, aber fügen Sie jeweils die Kultur-ID hinzu. Z. B. Namen, eine für Deutsch lokalisierte Ressource *MyAppResources.de-DE.resx*.
 
-4.  Öffnen Sie die einzelnen Ressourcendateien, und fügen Sie ihnen lokalisierte Zeichenfolgen hinzu. Verwenden Sie in jeder Datei die gleichen Zeichenfolgen-IDs.
+4. Öffnen Sie die einzelnen Ressourcendateien, und fügen Sie ihnen lokalisierte Zeichenfolgen hinzu. Verwenden Sie in jeder Datei die gleichen Zeichenfolgen-IDs.
 
-5.  Ändern Sie den Wert, der die **Bereitstellungstyp** Eigenschaft der einzelnen Ressourcendateien auf **AppGlobalResource** , dazu führen, dass jede Datei, um den Ordner "App_GlobalResources" des Servers bereitstellen.
+5. Ändern Sie den Wert, der die **Bereitstellungstyp** Eigenschaft der einzelnen Ressourcendateien auf **AppGlobalResource** , dazu führen, dass jede Datei, um den Ordner "App_GlobalResources" des Servers bereitstellen.
 
-6.  Lassen Sie den Wert, der die **Buildvorgang** Eigenschaft der einzelnen Dateien **eingebettete Ressource**.
+6. Lassen Sie den Wert, der die **Buildvorgang** Eigenschaft der einzelnen Dateien **eingebettete Ressource**.
 
      Eingebettete Ressourcen werden in die DLL des Projekts kompiliert.
 
-7.  Erstellen Sie das Projekt, um die Satelliten-DLLs für die Ressource zu erstellen.
+7. Erstellen Sie das Projekt, um die Satelliten-DLLs für die Ressource zu erstellen.
 
-8.  In der **-Paket-Designer**, wählen Sie die **erweitert** Registerkarte, und fügen Sie dann die Satellitenassembly hinzu.
+8. In der **-Paket-Designer**, wählen Sie die **erweitert** Registerkarte, und fügen Sie dann die Satellitenassembly hinzu.
 
 9. In der **Speicherort** Feld, das einen Kultur-ID-Ordner den Pfad zum Speicherort, z. B. voranstellen *de-DE\\\<Projektelementname >. "Resources.dll"-Datei*.
 

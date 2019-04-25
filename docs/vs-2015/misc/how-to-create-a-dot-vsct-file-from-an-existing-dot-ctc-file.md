@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117851"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Vorgehensweise: Erstellen Sie ein. VSCT-Datei aus einem vorhandenen. CTC-Datei
 Sie können eine XML-basierte VSCT-Datei anhand einer vorhandenen CTC-Quelldatei erstellen. Dabei können Sie das neue XML-basierte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Command Table-Compilerformat (VSCT) nutzen.  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>So erstellen Sie eine VSCT-Datei anhand einer CTC-Datei  
   
-1.  Rufen Sie eine Kopie der Sprache Perl ab.  
+1. Rufen Sie eine Kopie der Sprache Perl ab.  
   
-2.  Rufen Sie eine Kopie des Perl-Skripts "convertctctovsct.pl" ab, in der Regel im Verzeichnis der  *\<Visual Studio SDK-Installationspfad >* \VisualStudioIntegration\Tools\bin-Ordner.  
+2. Rufen Sie eine Kopie des Perl-Skripts "convertctctovsct.pl" ab, in der Regel im Verzeichnis der  *\<Visual Studio SDK-Installationspfad >* \VisualStudioIntegration\Tools\bin-Ordner.  
   
-3.  Rufen Sie eine Kopie der CTC-Quelldatei ab, die Sie konvertieren möchten.  
+3. Rufen Sie eine Kopie der CTC-Quelldatei ab, die Sie konvertieren möchten.  
   
-4.  Speichern Sie die Dateien im selben Verzeichnis.  
+4. Speichern Sie die Dateien im selben Verzeichnis.  
   
-5.  Navigieren Sie im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Eingabeaufforderungsfenster zu dem Verzeichnis.  
+5. Navigieren Sie im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Eingabeaufforderungsfenster zu dem Verzeichnis.  
   
-6.  Geben Sie Folgendes ein:  
+6. Geben Sie Folgendes ein:  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

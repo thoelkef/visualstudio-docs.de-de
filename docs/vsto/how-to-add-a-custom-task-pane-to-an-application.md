@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b531fdbbd637d2d505d44ea27bcdfb5350ad36a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039829"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Vorgehensweise: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung
   Sie können den oben aufgeführten Anwendungen mithilfe des VSTO-Add-Ins einen benutzerdefinierten Aufgabenbereich hinzufügen. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).
@@ -32,24 +32,24 @@ ms.locfileid: "56616780"
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>So fügen Sie einer Anwendung einen benutzerdefinierten Aufgabenbereich hinzu
 
-1.  Öffnen oder erstellen Sie ein VSTO-Add-In-Projekt für eine der oben aufgeführten Anwendungen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Öffnen oder erstellen Sie ein VSTO-Add-In-Projekt für eine der oben aufgeführten Anwendungen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
+2. Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
 
-3.  In der **neues Element hinzufügen** Dialogfeld ändern den Namen des neuen Benutzersteuerelements in **MyUserControl**, und klicken Sie dann auf **hinzufügen**.
+3. In der **neues Element hinzufügen** Dialogfeld ändern den Namen des neuen Benutzersteuerelements in **MyUserControl**, und klicken Sie dann auf **hinzufügen**.
 
      Das Benutzersteuerelement wird im Designer geöffnet.
 
-4.  Hinzufügen einer oder mehrerer Windows Forms-Steuerelemente aus der **Toolbox** auf das Benutzersteuerelement.
+4. Hinzufügen einer oder mehrerer Windows Forms-Steuerelemente aus der **Toolbox** auf das Benutzersteuerelement.
 
-5.  Öffnen der **"ThisAddIn.cs"** oder **"ThisAddIn.vb"** Codedatei.
+5. Öffnen der **"ThisAddIn.cs"** oder **"ThisAddIn.vb"** Codedatei.
 
-6.  Fügen Sie der `ThisAddIn` -Klasse folgenden Code hinzu. Dieser Code deklariert Instanzen von `MyUserControl` und <xref:Microsoft.Office.Tools.CustomTaskPane> als Member der `ThisAddIn` -Klasse.
+6. Fügen Sie der `ThisAddIn` -Klasse folgenden Code hinzu. Dieser Code deklariert Instanzen von `MyUserControl` und <xref:Microsoft.Office.Tools.CustomTaskPane> als Member der `ThisAddIn` -Klasse.
 
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
 
-7.  Fügen Sie dem `ThisAddIn_Startup`-Ereignishandler den folgenden Code hinzu. Durch diesen Code wird ein neuer <xref:Microsoft.Office.Tools.CustomTaskPane> erstellt, indem der `MyUserControl` -Auflistung das `CustomTaskPanes` -Objekt hinzugefügt wird. Durch den Code wird auch der Aufgabenbereich angezeigt.
+7. Fügen Sie dem `ThisAddIn_Startup`-Ereignishandler den folgenden Code hinzu. Durch diesen Code wird ein neuer <xref:Microsoft.Office.Tools.CustomTaskPane> erstellt, indem der `MyUserControl` -Auflistung das `CustomTaskPanes` -Objekt hinzugefügt wird. Durch den Code wird auch der Aufgabenbereich angezeigt.
 
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]

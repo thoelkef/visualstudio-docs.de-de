@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047397"
 ---
 # <a name="manage-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
 
@@ -25,11 +25,11 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
 
 ### <a name="navigate-the-shared-project"></a>Wechseln Sie das freigegebene Projekt
 
-1.  Erstellen Sie ein C#-VSIX-Projekt mit dem Namen **TestUniversalProject**. (**Datei** > **neue** > **Projekt** und dann **c#**  >   **Erweiterbarkeit** > **Visual Studio-Paket**). Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage (auf der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element** , navigieren Sie zu **Erweiterbarkeit**). Nennen Sie die Datei **TestUniversalProject**.
+1. Erstellen Sie ein C#-VSIX-Projekt mit dem Namen **TestUniversalProject**. (**Datei** > **neue** > **Projekt** und dann **c#**  >   **Erweiterbarkeit** > **Visual Studio-Paket**). Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage (auf der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element** , navigieren Sie zu **Erweiterbarkeit**). Nennen Sie die Datei **TestUniversalProject**.
 
-2.  Hinzufügen eines Verweises auf *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* und *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (in der **Erweiterungen** Abschnitt).
+2. Hinzufügen eines Verweises auf *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* und *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (in der **Erweiterungen** Abschnitt).
 
-3.  Open *TestUniversalProject.cs* und fügen Sie die folgenden `using` Anweisungen:
+3. Open *TestUniversalProject.cs* und fügen Sie die folgenden `using` Anweisungen:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     using System.Windows.Forms;
     ```
 
-4.  In der `TestUniversalProject` Klasse hinzufügen, ein privates Feld, das auf die **Ausgabe** Fenster.
+4. In der `TestUniversalProject` Klasse hinzufügen, ein privates Feld, das auf die **Ausgabe** Fenster.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     }
     ```
 
-5.  Legen Sie den Verweis auf den Ausgabebereich in TestUniversalProject-Konstruktor:
+5. Legen Sie den Verweis auf den Ausgabebereich in TestUniversalProject-Konstruktor:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     }
     ```
 
-6.  Entfernen Sie den vorhandenen Code aus der `ShowMessageBox` Methode:
+6. Entfernen Sie den vorhandenen Code aus der `ShowMessageBox` Methode:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     }
     ```
 
-7.  Erhalten Sie das DTE-Objekt, das wir für verschiedene Zwecke in dieser exemplarischen Vorgehensweise verwenden können. Stellen Sie außerdem sicher, dass eine Projektmappe geladen wird, wenn auf die Schaltfläche geklickt wird.
+7. Erhalten Sie das DTE-Objekt, das wir für verschiedene Zwecke in dieser exemplarischen Vorgehensweise verwenden können. Stellen Sie außerdem sicher, dass eine Projektmappe geladen wird, wenn auf die Schaltfläche geklickt wird.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     }
     ```
 
-8.  Suchen Sie das freigegebene Projekt. Das freigegebene Projekt ist eine reine Container. nicht erstellen oder Ausgaben generieren. Die folgende Methode sucht das erste freigegebene Projekt in der Projektmappe durch Suchen nach den <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, das freigegebene Projekt kann.
+8. Suchen Sie das freigegebene Projekt. Das freigegebene Projekt ist eine reine Container. nicht erstellen oder Ausgaben generieren. Die folgende Methode sucht das erste freigegebene Projekt in der Projektmappe durch Suchen nach den <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, das freigegebene Projekt kann.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Verwalten der freigegebenen Elemente im plattformprojekt
 
-1.  Suchen Sie die freigegebene Elemente im plattformprojekt. Die Elemente im freigegebenen Projekt, das im plattformprojekt als freigegebene Elemente angezeigt wird. Nicht sichtbar in der **Projektmappen-Explorer**, aber Sie können Schritt für Schritt die Projekthierarchie, um sie zu finden. Die folgende Methode führt die Hierarchie und alle freigegebenen Elemente erfasst. Es gibt optional die Beschriftung der einzelnen Elemente. Die freigegebene Elemente werden durch die neue Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
+1. Suchen Sie die freigegebene Elemente im plattformprojekt. Die Elemente im freigegebenen Projekt, das im plattformprojekt als freigegebene Elemente angezeigt wird. Nicht sichtbar in der **Projektmappen-Explorer**, aber Sie können Schritt für Schritt die Projekthierarchie, um sie zu finden. Die folgende Methode führt die Hierarchie und alle freigegebenen Elemente erfasst. Es gibt optional die Beschriftung der einzelnen Elemente. Die freigegebene Elemente werden durch die neue Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     }
     ```
 
-2.  In der `ShowMessageBox` -Methode den folgenden Code zum durchlaufen die Plattform Hierarchie Projektelemente hinzufügen. Fügen Sie ihn in das `foreach` Block.
+2. In der `ShowMessageBox` -Methode den folgenden Code zum durchlaufen die Plattform Hierarchie Projektelemente hinzufügen. Fügen Sie ihn in das `foreach` Block.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  Lesen Sie die freigegebene Elemente. Die freigegebene Elemente, die im plattformprojekt als ausgeblendete verknüpfte Dateien angezeigt, und Sie können alle Eigenschaften als normale verknüpfte Dateien lesen. Der folgende Code liest den vollständigen Pfad des ersten freigegebenen Elements.
+3. Lesen Sie die freigegebene Elemente. Die freigegebene Elemente, die im plattformprojekt als ausgeblendete verknüpfte Dateien angezeigt, und Sie können alle Eigenschaften als normale verknüpfte Dateien lesen. Der folgende Code liest den vollständigen Pfad des ersten freigegebenen Elements.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  Probieren Sie es aus. Drücken Sie **F5** die experimentelle Instanz zu starten. Erstellen einer C# universelle Hub-app-Projekt in der experimentellen Instanz (in der **neues Projekt** Dialogfeld **Visual C#**   >  **Windows**  >  **Windows 8** > **universelle** > **Hub-App**) wechseln Sie zu der **Tools** Menü, und klicken Sie auf  **Rufen Sie TestUniversalProject**, und überprüfen Sie dann den Text in die **Ausgabe** Bereich. Es sollte nun etwa Folgendes angezeigt werden:
+4. Probieren Sie es aus. Drücken Sie **F5** die experimentelle Instanz zu starten. Erstellen einer C# universelle Hub-app-Projekt in der experimentellen Instanz (in der **neues Projekt** Dialogfeld **Visual C#**   >  **Windows**  >  **Windows 8** > **universelle** > **Hub-App**) wechseln Sie zu der **Tools** Menü, und klicken Sie auf  **Rufen Sie TestUniversalProject**, und überprüfen Sie dann den Text in die **Ausgabe** Bereich. Es sollte nun etwa Folgendes angezeigt werden:
 
     ```
     Found shared project: HubApp.Shared

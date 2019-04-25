@@ -27,33 +27,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083074"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debuggen von Webanwendungen: Fehler und Problembehandlung
 Beim Debuggen von Webanwendungen können folgende Fehler auftreten.
 
--   [Problembehandlung](../debugger/debugging-web-applications-troubleshooting.md)
+- [Problembehandlung](../debugger/debugging-web-applications-troubleshooting.md)
 
--   [Fehler: Site verwendet IP-Adresse](../debugger/error-site-uses-ip-address.md)
+- [Fehler: Site verwendet IP-Adresse](../debugger/error-site-uses-ip-address.md)
 
--   [Fehler: Fehler bei einer Sicherheitsüberprüfung, weil der IIS-Verwaltungsdienst nicht reagiert hat](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+- [Fehler: Fehler bei einer Sicherheitsüberprüfung, weil der IIS-Verwaltungsdienst nicht reagiert hat](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
 
--   [Fehler: ASP.NET ist nicht installiert](../debugger/error-aspnet-not-installed.md)
+- [Fehler: ASP.NET ist nicht installiert](../debugger/error-aspnet-not-installed.md)
 
--   [Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+- [Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
 
--   [Fehler: Der Webserver ist nicht richtig konfiguriert](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- [Fehler: Der Webserver ist nicht richtig konfiguriert](../debugger/error-the-web-server-is-not-configured-correctly.md)
 
--   [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [Fehler: Der Webserver wurde gesperrt und blockiert das DEBUG-Verb](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
--   [Fehler: Timeout während des Debuggens von Webdiensten](../debugger/error-timeout-while-debugging-web-services.md)
+- [Fehler: Timeout während des Debuggens von Webdiensten](../debugger/error-timeout-while-debugging-web-services.md)
 
--   [Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

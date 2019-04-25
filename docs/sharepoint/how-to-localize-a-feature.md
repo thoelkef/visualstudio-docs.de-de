@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d811b27f810ac9becf23513a25937e1a265d305
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074636"
 ---
 # <a name="how-to-localize-a-feature"></a>Vorgehensweise: Lokalisieren einer Funktion
   Standardmäßig die featuretitel und Beschreibungen, verwenden die hartcodierten Zeichenfolgenwerte. Um den Funktionstitel und die Beschreibung lokalisieren möchten, ersetzen Sie die Zeichenfolgen mit Ausdrücken, die lokalisierte Ressourcen zu verweisen.
@@ -27,21 +27,21 @@ ms.locfileid: "56639088"
 
 #### <a name="to-localize-a-feature"></a>Zum Lokalisieren einer Funktion
 
-1.  In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Feature1** Knoten, und wählen Sie dann **Funktionsressource hinzufügen**.
+1. In **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die **Feature1** Knoten, und wählen Sie dann **Funktionsressource hinzufügen**.
 
-2.  In der **Ressource hinzufügen** Dialogfeld wählen **invarianten Sprache** aus der Liste als Kultur für die Funktionsressourcendatei der Standardsprache.
+2. In der **Ressource hinzufügen** Dialogfeld wählen **invarianten Sprache** aus der Liste als Kultur für die Funktionsressourcendatei der Standardsprache.
 
-3.  Wiederholen Sie den vorherigen Schritt für jede lokalisierte Sprache, und wählen die Sprachen Ihrer Wahl für das lokalisierte Feature Ressourcendateien.
+3. Wiederholen Sie den vorherigen Schritt für jede lokalisierte Sprache, und wählen die Sprachen Ihrer Wahl für das lokalisierte Feature Ressourcendateien.
 
      Separates Feature Ressourcendateien werden erstellt: eine für die Standardsprache und eine für jede lokalisierte Sprache, die Sie unterstützen möchten.
 
-4.  Öffnen Sie alle Ressourcen im Ressourcen-Editor, und geben Sie dann die Zeichenfolgen-IDs und ihre Werte.
+4. Öffnen Sie alle Ressourcen im Ressourcen-Editor, und geben Sie dann die Zeichenfolgen-IDs und ihre Werte.
 
      Geben Sie beispielsweise in der Standard-Funktionsressourcendatei eine Zeichenfolgen-ID der **Titel** mit einem Wert von **Meine Funktionstitel**, und ein zweites Zeichenfolgen-ID des **Beschreibung** mit einem Wert von **Meine Featurebeschreibung**. Verwenden Sie für jede lokalisierte Ressourcendatei die gleiche Zeichenfolgen-IDs, die in der Standard-Feature-Ressource verwendet allerdings Geben Sie lokalisierte Zeichenfolgen für die Werte ein.
 
-5.  Nachdem Sie alle Werte der eingegeben haben, öffnen Sie das Kontextmenü für das Feature (z. B. *"Feature1.Feature"*), und wählen Sie dann **Ansicht-Designer** um das Feature in der Funktions-Designer zu öffnen.
+5. Nachdem Sie alle Werte der eingegeben haben, öffnen Sie das Kontextmenü für das Feature (z. B. *"Feature1.Feature"*), und wählen Sie dann **Ansicht-Designer** um das Feature in der Funktions-Designer zu öffnen.
 
-6.  Zum Lokalisieren der **Titel** und **Beschreibung** Felder in der Funktion verwenden Sie das folgende Format, Werte in die Felder einzugeben:
+6. Zum Lokalisieren der **Titel** und **Beschreibung** Felder in der Funktion verwenden Sie das folgende Format, Werte in die Felder einzugeben:
 
      `$Resources:` *Zeichenfolgen-ID*
 
@@ -49,9 +49,9 @@ ms.locfileid: "56639088"
 
      Die Zeichenfolgen-IDs muss denen entsprechen, die in den Ressourcendateien verwendet werden.
 
-7.  Wählen Sie die **F5** Schlüssel zu erstellen und Ausführen der Anwendung.
+7. Wählen Sie die **F5** Schlüssel zu erstellen und Ausführen der Anwendung.
 
-8.  Öffnen Sie in SharePoint die **Websiteaktionen** Menü wählen **Standorteinstellungen**, und dann auf die **Websiteaktionen** "die Option" der **Websitefunktionen verwalten** Link.
+8. Öffnen Sie in SharePoint die **Websiteaktionen** Menü wählen **Standorteinstellungen**, und dann auf die **Websiteaktionen** "die Option" der **Websitefunktionen verwalten** Link.
 
 9. Legen Sie die Anzeigesprache in SharePoint auf eine Sprache fest, die nicht der Standardsprache entspricht.
 

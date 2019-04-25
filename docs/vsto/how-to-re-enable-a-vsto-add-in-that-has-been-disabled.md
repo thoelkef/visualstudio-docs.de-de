@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85a3ba42f4e22016f487e4a4024e4cfd6736be06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095066"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Vorgehensweise: Reaktivieren Sie ein VSTO-Add-in, das deaktiviert wurde
   VSTO-Add-Ins, die ein unerwartetes Verhalten aufweisen, können von Microsoft Office-Anwendungen deaktiviert werden. Wenn Ihr VSTO-Add-In beim Debuggen von der Anwendung nicht geladen wird, wurde das VSTO-Add-In von der Anwendung möglicherweise hart oder weich deaktiviert.
@@ -33,21 +33,21 @@ ms.locfileid: "56617495"
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>So aktivieren Sie ein VSTO-Add-In erneut
 
-1.  Klicken Sie in der Anwendung auf Registerkarte **Datei** .
+1. Klicken Sie in der Anwendung auf Registerkarte **Datei** .
 
-2.  Klicken Sie auf die Schaltfläche *ApplicationName* **-Optionen** .
+2. Klicken Sie auf die Schaltfläche *ApplicationName* **-Optionen** .
 
-3.  Klicken Sie im Bereich "Kategorien" auf **Add-Ins**.
+3. Klicken Sie im Bereich "Kategorien" auf **Add-Ins**.
 
-4.  Überprüfen Sie im Detailbereich, ob das VSTO-Add-In in der Liste **Deaktivierte Anwendungs-Add-Ins** angezeigt wird.
+4. Überprüfen Sie im Detailbereich, ob das VSTO-Add-In in der Liste **Deaktivierte Anwendungs-Add-Ins** angezeigt wird.
 
      In der Spalte **Name** ist der Name der Assembly und in der Spalte **Speicherort** der vollständige Pfad des Anwendungsmanifests angegeben.
 
-5.  Klicken Sie im Feld **Verwalten** auf **Deaktivierte Elemente**, und klicken Sie dann auf **Gehe zu**.
+5. Klicken Sie im Feld **Verwalten** auf **Deaktivierte Elemente**, und klicken Sie dann auf **Gehe zu**.
 
-6.  Wählen Sie das VSTO-Add-In aus, und klicken Sie auf **Aktivieren**.
+6. Wählen Sie das VSTO-Add-In aus, und klicken Sie auf **Aktivieren**.
 
-7.  Klicken Sie auf **Schließen**.
+7. Klicken Sie auf **Schließen**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Weich deaktivierte VSTO-Add-ins
  Die weiche Deaktivierung kann auftreten, wenn ein VSTO-Add-In einen Fehler erzeugt, der nicht zur unerwarteten Beendigung der Anwendung führt. Ein VSTO-Add-In kann von einer Anwendung z. B. weich deaktiviert werden, wenn es einen Ausnahmefehler auslöst, während der <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignishandler ausgeführt wird.
@@ -57,21 +57,21 @@ ms.locfileid: "56617495"
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>So aktivieren Sie ein VSTO-Add-In erneut
 
-1.  Klicken Sie in der Anwendung auf Registerkarte **Datei** .
+1. Klicken Sie in der Anwendung auf Registerkarte **Datei** .
 
-2.  Klicken Sie auf die Schaltfläche *ApplicationName* **-Optionen** .
+2. Klicken Sie auf die Schaltfläche *ApplicationName* **-Optionen** .
 
-3.  Klicken Sie im Bereich "Kategorien" auf **Add-Ins**.
+3. Klicken Sie im Bereich "Kategorien" auf **Add-Ins**.
 
-4.  Überprüfen Sie im Detailbereich, ob das VSTO-Add-In in der Liste **Inaktive Anwendungs-Add-Ins** angezeigt wird.
+4. Überprüfen Sie im Detailbereich, ob das VSTO-Add-In in der Liste **Inaktive Anwendungs-Add-Ins** angezeigt wird.
 
      In der Spalte **Name** ist der Name der Assembly und in der Spalte **Speicherort** der vollständige Pfad des Anwendungsmanifests angegeben.
 
-5.  Klicken Sie im Feld **Verwalten** auf **COM-Add-Ins**, und klicken Sie dann auf **Gehe zu**.
+5. Klicken Sie im Feld **Verwalten** auf **COM-Add-Ins**, und klicken Sie dann auf **Gehe zu**.
 
-6.  Aktivieren Sie im Dialogfeld **COM-Add-Ins** das Kontrollkästchen neben dem deaktivierten VSTO-Add-In.
+6. Aktivieren Sie im Dialogfeld **COM-Add-Ins** das Kontrollkästchen neben dem deaktivierten VSTO-Add-In.
 
-7.  Klicken Sie auf **OK**.
+7. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 - [Erstellen von Office-Projektmappen](../vsto/building-office-solutions.md)

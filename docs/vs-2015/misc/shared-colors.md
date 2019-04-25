@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117175"
 ---
 # <a name="shared-colors"></a>Konsistente Farben
 Fügen Sie hier eine Einleitung ein.  
@@ -24,40 +24,40 @@ Fügen Sie hier eine Einleitung ein.
   
  Stellen Sie sicher, dass Sie die Tokennamen ordnungsgemäß verwenden:  
   
--   **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Das Kombinationsfeld und die Animation erfüllen unterschiedliche Funktionen, und wenn sich die dem Kombinationsfeld zugeordnete Farbe ändert, eignet sie sich möglicherweise nicht mehr für Ihr Animationselement. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.  
+- **Verwenden Sie Tokennamen nach Funktion und nicht nach Farbe.** Die gemeinsam verwendeten Farben sind bestimmten Benutzeroberflächenelementen zugeordnet und sollten ausschließlich für gleiche oder ähnliche Features verwendet werden. Beispielsweise sollten Sie die Farbe eines gedrückten Kombinationsfelds nicht für eine animierte drehende Statusanzeige verwenden, nur weil Ihnen die Farbe gefällt. Das Kombinationsfeld und die Animation erfüllen unterschiedliche Funktionen, und wenn sich die dem Kombinationsfeld zugeordnete Farbe ändert, eignet sie sich möglicherweise nicht mehr für Ihr Animationselement. Die konsistente Verwendung von Farben bietet den Benutzern eine Orientierungshilfe und schließt Verwechslungen aus.  
   
--   **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination aus.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn keine zugeordnete Textfarbe vorhanden ist, sollte diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt wird, nicht verwendet werden. Andere Kombinationen aus Text- und Hintergrundfarbe können dazu führen, dass die Benutzeroberfläche unlesbar wird.  
+- **Verwenden Sie Hintergrund- und Textfarben in der richtigen Kombination aus.** Den Hintergrundfarben, die für die Verwendung mit Text vorgesehen sind, ist eine Textfarbe zugeordnet. Verwenden Sie keine anderen als die für diesen Hintergrund angegebenen Textfarben. Wenn keine zugeordnete Textfarbe vorhanden ist, sollte diese Hintergrundfarbe auf Oberflächen, auf denen erwartungsgemäß Text angezeigt wird, nicht verwendet werden. Andere Kombinationen aus Text- und Hintergrundfarbe können dazu führen, dass die Benutzeroberfläche unlesbar wird.  
   
--   **Verwenden Sie steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände einiger Visual Studio-Steuerelemente sind keine separaten Rahmen- und Hintergrundfarben verfügbar. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.  
+- **Verwenden Sie steuerelementfarben, die für die jeweilige Position geeignet sind.** Für bestimmte Zustände einiger Visual Studio-Steuerelemente sind keine separaten Rahmen- und Hintergrundfarben verfügbar. Stattdessen werden diese Farben von den dahinter liegenden Oberflächen übernommen. Stellen Sie sicher, dass Sie für die Position, an der Sie das Steuerelement platzieren, immer geeignete Tokennamen verwenden.  
   
 > [!IMPORTANT]
 >  Verwenden Sie keine Token aus den Kategorien "Startseite" oder "Cider".  
   
 ### <a name="command-structures"></a>Befehlsstrukturen  
   
-####  <a name="BKMK_CommandMenus"></a> Menüs  
+#### <a name="BKMK_CommandMenus"></a> Menüs  
  Menüs können an mehreren Stellen in Visual Studio 2013 vorkommen: in der Hauptmenüleiste, eingebettet in Dokument- oder Toolfenster oder beim Rechtsklicken an verschiedenen Stellen der IDE. Die Implementierungen von Menüs, die anderen Benutzeroberflächenelementen zugeordnet sind, werden im Abschnitt des entsprechenden Elements erläutert. Sie sollten immer die von der Visual Studio-Umgebung bereitgestellte Standardmenüimplementierung verwenden. In einigen seltenen Fällen haben Sie jedoch möglicherweise keinen Zugriff auf die Visual Studio-Standardmenüs. Verwenden Sie in diesen Situationen die folgenden Tokennamen, um sicherzustellen, dass die Benutzeroberfläche mit anderen Menüs in Visual Studio konsistent ist.  
   
  ![(Rote Linie) der Menüs](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
   
- Empfohlen...  
- -   für die Erstellung eines benutzerdefinierten Menüs  
+Empfohlen...  
+- für die Erstellung eines benutzerdefinierten Menüs  
   
 - für eine neue Benutzeroberflächenkomponente, die auf die Visual Studio-Menüs abgestimmt werden soll.  
   
-  Nicht empfohlen...  
-  als ausschließliche Hintergrundfarbe. Verwenden Sie immer die angegebene Kombination aus Hintergrund-/Vordergrundfarbe.  
+Nicht empfohlen...  
+als ausschließliche Hintergrundfarbe. Verwenden Sie immer die angegebene Kombination aus Hintergrund-/Vordergrundfarbe.  
   
 ##### <a name="menu-title"></a>Menütitel  
  Menütitel bestehen aus einem Hintergrund, einem Rahmen und dem Titeltext sowie einer optionalen Glyphe, die normalerweise für Menüs in einer Befehlsleiste verwendet wird.  
   
  ![Menütitel (rote Linie,)](../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")  
   
- Empfohlen...  
- für die Erstellung eines benutzerdefinierten Menütitels  
+Empfohlen...  
+für die Erstellung eines benutzerdefinierten Menütitels  
   
- Nicht empfohlen...  
- -   für Elemente, die nicht grundsätzlich auf den Menütitel abgestimmt sein sollen  
+Nicht empfohlen...  
+- für Elemente, die nicht grundsätzlich auf den Menütitel abgestimmt sein sollen  
   
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
@@ -105,9 +105,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für alle Dropdownlisten, die von einer Menü- oder Befehlsleiste geöffnet werden.  
   
- Nicht empfohlen...  
- -   für Dropdownlisten, die in einem anderen Kontext vorkommen  
-  
+Nicht empfohlen...  
+- für Dropdownlisten, die in einem anderen Kontext vorkommen  
+
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
   **Default**  
@@ -159,10 +159,10 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für Positionen, an denen eine eingebettete Befehlsleiste benötigt wird, die Standardimplementierung der Visual Studio-Befehlsleiste jedoch nicht verwendet werden kann.  
   
- Nicht empfohlen...  
- -   für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Befehlsleiste aufweisen  
-  
--   für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden  
+Nicht empfohlen...  
+- für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Befehlsleiste aufweisen  
+
+- für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden  
   
 ##### <a name="command-bar-group"></a>Befehlsleistengruppe  
  Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Steuerelemente und kann eine beliebige Anzahl von Schaltflächen, unterteilten Schaltflächen, Dropdownmenüs, Kombinationsfeldern oder Menüs enthalten. Die Farben dieser Steuerelemente lassen sich anhand separater Tokennamen unterscheiden und werden an anderer Stelle in dieser Anleitung einzeln erörtert. Eine Trennlinie wird verwendet, um eine Befehlsleistengruppe in verwandte Untergruppen aufzuteilen.  
@@ -172,9 +172,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für Positionen, an denen eine eingebettete Befehlsleiste benötigt wird, die Standardimplementierung der Visual Studio-Befehlsleiste jedoch nicht verwendet werden kann.  
   
- Nicht empfohlen...  
- -   für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Befehlsleiste aufweisen  
-  
+Nicht empfohlen...  
+- für Benutzeroberflächenelemente, die keine Ähnlichkeit mit einer Befehlsleiste aufweisen  
+
 - für andere Befehlsleistenkomponenten als diejenigen, für die Tokennamen festgelegt wurden  
   
   **Standard** (kein weiterer Zustand)  
@@ -194,9 +194,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für alle Schaltflächen, die auf einer Befehlsleiste platziert werden.  
   
- Nicht empfohlen...  
- -   für Steuerelemente, die ihren eigenen Tokennamen haben  
-  
+Nicht empfohlen...  
+- für Steuerelemente, die ihren eigenen Tokennamen haben  
+
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
   **Default**  
@@ -237,21 +237,21 @@ Fügen Sie hier eine Einleitung ein.
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Vordergrund (Text)|`Environment.CommandBarTextInactive`|  
 |![Befehlssymbol, deaktiviert](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Deaktiviertes Befehlssymbol**|Rahmen|Nicht zutreffend|  
   
-#####  <a name="BKMK_CommandComboBox"></a> Kombinationsfeld  
+##### <a name="BKMK_CommandComboBox"></a> Kombinationsfeld  
   
 > [!IMPORTANT]
 >  Kombinationsfelder ähneln Dropdowns, enthalten im Unterschied dazu jedoch einen bearbeitbaren Textbereich. Wenn Ihr Dropdown keinen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)beschriebenen Farbtoken.  
   
  ![Kombinationsfeld (rote Linie,)](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
- Empfohlen...  
- -   für die Erstellung benutzerdefinierter Kombinationsfelder  
-  
+Empfohlen...  
+- für die Erstellung benutzerdefinierter Kombinationsfelder  
+
 - für die Erstellung eines Befehlsleisten-Steuerelements, das Ähnlichkeit mit einem Kombinationsfeld hat.  
-  
-  Nicht empfohlen...  
-  -   für Elemente, die nicht grundsätzlich auf die Befehlsleisten-Benutzeroberfläche abgestimmt sein müssen  
-  
+
+Nicht empfohlen...  
+- für Elemente, die nicht grundsätzlich auf die Befehlsleisten-Benutzeroberfläche abgestimmt sein müssen  
+
 - wenn Sie Zugriff auf ein formatiertes Kombinationsfeld haben  
   
   **Default**  
@@ -315,7 +315,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Das Kombinationsfeld&#47;löschen&#45;gedrückt deaktiviert](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdown-Schaltfläche**|Hintergrund|Keiner|  
 |![Das Kombinationsfeld&#47;löschen&#45;gedrückt deaktiviert](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Dropdown-Schaltfläche**|Vordergrund (Glyphe)|`Environment.ComboBoxDisabledGlyph`|  
   
-#####  <a name="BKMK_CommandDropDown"></a> Dropdown-Liste  
+##### <a name="BKMK_CommandDropDown"></a> Dropdown-Liste  
   
 > [!IMPORTANT]
 >  Dropdowns ähneln Kombinationsfeldern, enthalten im Unterschied dazu jedoch keinen bearbeitbaren Textbereich. Wenn Ihr Dropdown einen bearbeitbaren Textbereich enthält, verwenden Sie die unter [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)beschriebenen Farbtoken.  
@@ -325,9 +325,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für die Erstellung benutzerdefinierter Dropdownlisten-Steuerelemente  
   
- Nicht empfohlen...  
- -   für Elemente, die keine Ähnlichkeit mit einer Dropdownliste haben  
-  
+Nicht empfohlen...  
+- für Elemente, die keine Ähnlichkeit mit einer Dropdownliste haben  
+
 - für Kombinationsfelder oder unterteilte Schaltflächen  
   
   **Default**  
@@ -389,9 +389,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für die Erstellung einer benutzerdefinierten unterteilten Schaltfläche  
   
- Nicht empfohlen...  
- -   für alle anderen Arten von Schaltflächen  
-  
+Nicht empfohlen...  
+- für alle anderen Arten von Schaltflächen  
+
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
   **Default**  
@@ -555,7 +555,7 @@ Fügen Sie hier eine Einleitung ein.
   für die Erstellung benutzerdefinierter Dokumentregisterkarten  
   
   Nicht empfohlen...  
-  -   für vorläufige Registerkarten (Vorschau)  
+  - für vorläufige Registerkarten (Vorschau)  
   
 - für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
@@ -603,9 +603,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  wenn Sie eine vorläufige Vorschau erstellen und Elemente mit der Farbe der aktuellen Vorschauregisterkarte übereinstimmen sollen.  
   
- Nicht empfohlen...  
- -   für alle Arten von Dokumenten oder Registerkarten, die nicht vorläufig sind (Vorschau)  
-  
+Nicht empfohlen...  
+- für alle Arten von Dokumenten oder Registerkarten, die nicht vorläufig sind (Vorschau)  
+
 - für Benutzeroberflächen, die bei einer Designaktualisierung der Shell nicht automatisch geändert werden sollen  
   
   **Ausgewählte vorschauregisterkarte: Mit Fokus**  
@@ -647,12 +647,12 @@ Fügen Sie hier eine Einleitung ein.
   
  ![Overflow redline](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
- Empfohlen...  
- für die Erstellung einer benutzerdefinierten Dokumentüberlauf-Schaltfläche  
-  
- Nicht empfohlen...  
- -   für Benutzeroberflächen, die keine Ähnlichkeit mit einer Überlaufschaltfläche haben  
-  
+Empfohlen...  
+für die Erstellung einer benutzerdefinierten Dokumentüberlauf-Schaltfläche  
+
+Nicht empfohlen...  
+- für Benutzeroberflächen, die keine Ähnlichkeit mit einer Überlaufschaltfläche haben  
+
 - für Überlaufschaltflächen auf der Befehlsleiste  
   
   **Default**  
@@ -757,9 +757,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für Schaltflächen auf der Benutzeroberfläche, die Farbtoken aus den Toolfenster-Titelleisten verwenden.  
   
- Nicht empfohlen...  
- -   für Schaltflächen, die an anderer Stelle angezeigt werden  
-  
+Nicht empfohlen...  
+- für Schaltflächen, die an anderer Stelle angezeigt werden  
+
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
   **Default**  
@@ -879,7 +879,7 @@ Fügen Sie hier eine Einleitung ein.
   für das Entwerfen eines benutzerdefinierten Suchfelds  
   
   Nicht empfohlen...  
-  -   für Elemente, die kein Suchfeld darstellen  
+  - für Elemente, die kein Suchfeld darstellen  
   
 - für Elemente, die nicht generell auf die Suchfeld-Benutzeroberfläche abgestimmt sein sollen  
   
@@ -961,14 +961,14 @@ Fügen Sie hier eine Einleitung ein.
   
  ![Suche&#45;nach unten (rote Linie)](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")  
   
- Empfohlen...  
- -   für die Erstellung einer benutzerdefinierten Dropdownliste im Suchfeld  
-  
+Empfohlen...  
+- für die Erstellung einer benutzerdefinierten Dropdownliste im Suchfeld  
+
 - bei Verwendung der richtigen Tokennamen für die entsprechenden Listenkomponenten  
-  
-  Nicht empfohlen...  
-  -   für Dropdownlisten, die in anderen Kontexten angezeigt werden  
-  
+
+Nicht empfohlen...  
+- für Dropdownlisten, die in anderen Kontexten angezeigt werden  
+
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
   **Standard (kein weiterer Zustand)**  
@@ -1117,7 +1117,7 @@ Fügen Sie hier eine Einleitung ein.
 |![Bildlaufleisten-Taste gedrückt](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Hintergrund|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Auf dieselbe Farbe wie die Bildlaufleiste festgelegt|  
 |![Bildlaufleisten-Taste gedrückt](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Bildlaufpfeil**|Vordergrund (Glyphe)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-####  <a name="BKMK_TreeView"></a> Strukturansicht  
+#### <a name="BKMK_TreeView"></a> Strukturansicht  
  Mehrere Toolfenster, einschließlich Projektmappen-Explorer, Server-Explorer und Klassenansicht, implementieren ein hierarchisches Organisationsschema, dessen Farben über Farbnamen in der TreeView-Kategorie gesteuert werden. Alle Elemente in einer Strukturansicht haben Hintergrund- und Textfarben. Elemente mit geschachtelten untergeordneten Elementen verfügen außerdem über Glyphen, die anzeigen, ob das Element erweitert oder reduziert ist.  
   
  ![Tree view redline](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1125,9 +1125,9 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für alle Projekte zur Implementierung einer hierarchischen Organisationsstruktur  
   
- Nicht empfohlen...  
- -   für Elemente, die keine Ähnlichkeit mit einer Strukturansicht haben  
-  
+Nicht empfohlen...  
+- für Elemente, die keine Ähnlichkeit mit einer Strukturansicht haben  
+
 - für eine andere als die angegebene Kombination aus Hintergrund-/Vordergrundfarbe  
   
   **Default**  
@@ -1284,12 +1284,12 @@ Fügen Sie hier eine Einleitung ein.
 #### <a name="drop-boxcombo-box-controls"></a>Dropdownlisten-/Kombinationsfeld-Steuerelement  
  ![Drop&#45;unten&#47;(rote Linie) der im Kombinationsfeld](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
   
- Empfohlen...  
- für Dropdownlisten und Kombinationsfelder, die Teil des Dokumentursprungs sind.  
-  
- Nicht empfohlen...  
- -   für Benutzeroberflächenelemente, die keine Dropdownliste und kein Kombinationsfeld sind  
-  
+Empfohlen...  
+für Dropdownlisten und Kombinationsfelder, die Teil des Dokumentursprungs sind.  
+
+Nicht empfohlen...  
+- für Benutzeroberflächenelemente, die keine Dropdownliste und kein Kombinationsfeld sind  
+
 - für eine [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) oder ein [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) in der Befehlsleiste  
   
   **Default**  
@@ -1420,14 +1420,14 @@ Fügen Sie hier eine Einleitung ein.
   
  ![(Rote Linie) der Manifest-Designer](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")  
   
- Empfohlen...  
- -   für Designer, die Ähnlichkeit mit dem Manifest-Designer haben.  
-  
+Empfohlen...  
+- für Designer, die Ähnlichkeit mit dem Manifest-Designer haben.  
+
 - anstelle allgemeiner Registerkarten-Steuerelemente, die im oberen Bereich eines Editors im Dokumentursprung angezeigt werden.  
-  
-  Nicht empfohlen...  
-  -   bei Verwendung von mehr als sechs Registerkarten  
-  
+
+Nicht empfohlen...  
+- bei Verwendung von mehr als sechs Registerkarten  
+
 - für Benutzeroberflächenelemente, die nicht wie der Manifest-Designer aufgebaut sind  
   
 |Zustand|Komponente|Element|Tokenname: Category.Color|  
@@ -1521,10 +1521,10 @@ Fügen Sie hier eine Einleitung ein.
  Empfohlen...  
  für Bereiche, die an den Hintergrund der Visual Studio-Umgebung angepasst werden sollen.  
   
- Nicht empfohlen...  
- -   als Füllung für Bereiche, die keine Hintergrundoberflächen sind  
-  
--   als Hintergrund, auf dem Vordergrundelemente platziert werden sollen  
+Nicht empfohlen...  
+- als Füllung für Bereiche, die keine Hintergrundoberflächen sind  
+
+- als Hintergrund, auf dem Vordergrundelemente platziert werden sollen  
   
 |Komponente|Element|Tokenname: Category.Color|  
 |---------------|-------------|--------------------------------|  
@@ -1542,9 +1542,9 @@ Fügen Sie hier eine Einleitung ein.
   
  ![(Rote Linie) der Befehlsablage](../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")  
   
- Empfohlen...  
- -   für Bereiche, in denen Menüs oder Symbolleisten platziert werden.  
-  
+Empfohlen...  
+- für Bereiche, in denen Menüs oder Symbolleisten platziert werden.  
+
 - mit dem richtigen Hintergrund / Vordergrund token Kombination aus.  
   
   Nicht empfohlen...  

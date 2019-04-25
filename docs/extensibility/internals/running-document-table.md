@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060825"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer internen Struktur der ausgeführten Dokumententabelle (RDT) aufgerufen. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob diese Dokumente derzeit bearbeitet wird. Ein Dokument ist ein Element, das gespeichert wird, einschließlich der Dateien in einem Projekt oder der Hauptprojektdatei (z. B. eine VCXPROJ-Datei).
@@ -52,9 +52,9 @@ Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer interne
 
  Die IDE verwendet auch den RDT an diesem (Verschieben in den Vordergrund) einem geöffneten Dokument, wenn ein Benutzer das Dokument anfordert. Weitere Informationen finden Sie unter [Anzeigen von Dateien mithilfe des Befehls der geöffneten Datei](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Bestimmt, ob eine Datei geöffnet, in der RDT ist, führen Sie eine der folgenden.
 
--   Abfrage für den dokumentmoniker (d. h. der vollständigen Dokuments-Pfad), um herauszufinden, ob das Element geöffnet ist.
+- Abfrage für den dokumentmoniker (d. h. der vollständigen Dokuments-Pfad), um herauszufinden, ob das Element geöffnet ist.
 
--   Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.
+- Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.
 
 ## <a name="see-also"></a>Siehe auch
 - [RDT_ReadLock-Verwendung](../../extensibility/internals/rdt-readlock-usage.md)

@@ -16,17 +16,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051582"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
@@ -52,48 +51,48 @@ ms.locfileid: "54782620"
   
 #### <a name="to-set-dialog-box-options-from-the-keyboard"></a>So legen Sie das Dialogfeld „Optionen“ mit der Tastatur fest  
   
-1.  Verwenden Sie **TAB** oder **UMSCHALT + TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.  
+1. Verwenden Sie **TAB** oder **UMSCHALT + TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.  
   
-2.  So ändern Sie die Einstellungen der Optionen  
+2. So ändern Sie die Einstellungen der Optionen  
   
-    -   Verwenden Sie für Optionsfelder **NACH-OBEN** und **NACH-UNTEN**, um die Auswahl zu ändern.  
+    - Verwenden Sie für Optionsfelder **NACH-OBEN** und **NACH-UNTEN**, um die Auswahl zu ändern.  
   
-    -   Verwenden Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.  
+    - Verwenden Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.  
   
-    -   Verwenden Sie für Dropdownlisten **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.  
+    - Verwenden Sie für Dropdownlisten **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.  
   
-    -   Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.  
+    - Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.  
   
-    -   Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownliste in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.  
+    - Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownliste in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.  
   
 ## <a name="window-and-file-navigation"></a>Navigation von Fenstern und Dateien  
  Die IDE bietet mehrere Möglichkeiten, mit denen Sie mit der Tastatur zwischen Fenstern von Tools und Dokumenten wechseln können. Darüber hinaus können Sie Fenster mit der Tastatur zu verschiedenen Stellen verschieben und dort andocken.  
   
 #### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>So navigieren Sie mit der Tastatur zwischen Fenstern und Dateien in der IDE  
   
--   Um zwischen Dateien in einem Editor oder Designer zu wechseln, drücken Sie STRG + TAB, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen. Drücken Sie EINGABE, um zur markierten Datei zu navigieren.  
+- Um zwischen Dateien in einem Editor oder Designer zu wechseln, drücken Sie STRG + TAB, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen. Drücken Sie EINGABE, um zur markierten Datei zu navigieren.  
   
--   Um zwischen angedockten Toolfenstern zu wechseln, drücken Sie ALT + F7, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen. Drücken Sie EINGABE, um zum markierten Fenster zu navigieren.  
+- Um zwischen angedockten Toolfenstern zu wechseln, drücken Sie ALT + F7, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen. Drücken Sie EINGABE, um zum markierten Fenster zu navigieren.  
   
 #### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>So verschieben und docken Sie Toolfenster mit der Tastatur an  
   
-1.  Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.  
+1. Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.  
   
-2.  Klicken Sie im Menü **Fenster** auf **Andockbar**.  
+2. Klicken Sie im Menü **Fenster** auf **Andockbar**.  
   
-3.  Drücken Sie **ALT** + **LEERTASTE**, und klicken Sie dann auf **Verschieben**.  
+3. Drücken Sie **ALT** + **LEERTASTE**, und klicken Sie dann auf **Verschieben**.  
   
      Die Führungsraute fürs Andocken wird angezeigt.  
   
-4.  Verwenden Sie die **PFEILTASTEN**, um das Fenster an eine neue Stelle zu verschieben.  
+4. Verwenden Sie die **PFEILTASTEN**, um das Fenster an eine neue Stelle zu verschieben.  
   
      Der Mauszeiger bewegt sich mit dem Fenster, während Sie die **PFEILTASTEN** verwenden.  
   
-5.  Wenn Sie die neue Stelle erreicht haben, verwenden Sie die **PFEILTASTEN**, um den Mauszeiger zur korrekten Stelle der Führungsraute zu bewegen.  
+5. Wenn Sie die neue Stelle erreicht haben, verwenden Sie die **PFEILTASTEN**, um den Mauszeiger zur korrekten Stelle der Führungsraute zu bewegen.  
   
      Der Umriss des Toolfensters wird an der neuen Dockstelle angezeigt.  
   
-6.  Drücken Sie die **EINGABETASTE**.  
+6. Drücken Sie die **EINGABETASTE**.  
   
      Das Toolfenster springt zur neuen angedockten Stelle.  
   

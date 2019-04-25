@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094663"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 
@@ -57,13 +57,13 @@ In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm 
 
 - So verbinden Sie Aktivitäten:
 
-    1.  Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.
+    1. Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.
 
-    2.  Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.
+    2. Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.
 
-    3.  Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.
+    3. Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.
 
-    4.  Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.
+    4. Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.
 
 Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:
 
@@ -82,8 +82,8 @@ Standardmäßig gelten die Standardtastenkombinationen zum Bearbeiten von Text i
    - Ausschneiden
    - Kopieren
    - Einfügen
-   - Alle auswählen
-   - Rückgängigmachen
+   - Alles auswählen
+   - undo
    - Wiederholen
 
 - Um die Tastenkombinationen für Befehle zum Ausdruck bearbeiten im Workflow-Designer in Visual Studio neu zuordnen, bearbeiten Sie die Tastenkombinationen im Workflow-Designer-Bereich. In den Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

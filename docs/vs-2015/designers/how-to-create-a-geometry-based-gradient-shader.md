@@ -9,27 +9,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071719"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language zum Erstellen eines geometriebasierten Farbverlauf-Shaders verwendet wird. Dieser Shader skaliert einen konstanten RGB-Farbwert anhand der Höhe von jedem Punkt eines Objekts im Raum.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Knoten in ein Shader-Diagramm  
+- Hinzufügen von Knoten in ein Shader-Diagramm  
   
--   Einstellen der Knoteneigenschaften  
+- Einstellen der Knoteneigenschaften  
   
--   Trennen der Knoten  
+- Trennen der Knoten  
   
--   Verbinden der Knoten  
+- Verbinden der Knoten  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Erstellen eines geometriebasierten Farbverlauf-Shaders  
  Sie können einen geometriebasierten Farbverlauf-Shader implementieren, indem Sie die Position des Pixels in Ihrem Shader aufnehmen. Ein Pixel enthält in Schattierungssprachen mehr Informationen als nur seine Farbe und Position auf einem 2D-Bildschirm. Ein Pixel, das als ein *Fragment* in manchen Systemen bekannt ist, ist eine Auflistung von Werten, das die Oberfläche beschreibt, die einem Pixel entspricht. Der Shader, der in diesem Dokument beschriebenen wird, nutzt die Höhe der einzelnen Pixel eines 3D-Objekts im Raum, um die endgültige Ausgabe des Fragments zu beeinflussen.  

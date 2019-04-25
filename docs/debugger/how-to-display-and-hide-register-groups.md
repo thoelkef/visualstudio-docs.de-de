@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037819"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Vorgehensweise: Anzeigen und Ausblenden von Registergruppen (C#, C++, Visual Basic F#)
 
@@ -37,9 +37,9 @@ Aus Gründen der Übersichtlichkeit werden Register im Fenster **Register** in G
 
 ## <a name="display-or-hide-register-groups"></a>Anzeigen oder Ausblenden von Registergruppen
 
-1.  Klicken Sie mit der rechten Maustaste in das Fenster **Register**.
+1. Klicken Sie mit der rechten Maustaste in das Fenster **Register**.
 
-2.  Wählen Sie im Kontextmenü die Registergruppen aus, die Sie anzeigen oder ausblenden möchten.
+2. Wählen Sie im Kontextmenü die Registergruppen aus, die Sie anzeigen oder ausblenden möchten.
 
      Registergruppen, die von der zum Debuggen verwendeten Hardware nicht unterstützt werden, sind im Kontextmenü deaktiviert und können folglich nicht ausgewählt werden.
 

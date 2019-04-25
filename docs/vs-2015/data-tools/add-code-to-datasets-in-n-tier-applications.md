@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106669"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
 
-1.  Suchen Sie das Projekt mit der XSD-Datei (das Dataset).
+1. Suchen Sie das Projekt mit der XSD-Datei (das Dataset).
 
-2.  Wählen Sie die **XSD** Datei, um das Dataset öffnen.
+2. Wählen Sie die **XSD** Datei, um das Dataset öffnen.
 
-3.  Mit der rechten Maustaste in der Datentabelle, Sie fügen Sie Code (den Tabellennamen in der Titelleiste), und wählen Sie dann möchten **Ansichtscode**.
+3. Mit der rechten Maustaste in der Datentabelle, Sie fügen Sie Code (den Tabellennamen in der Titelleiste), und wählen Sie dann möchten **Ansichtscode**.
 
      Eine partielle Klasse wird erstellt und im Code-Editor geöffnet.
 
-4.  Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.
+4. Fügen Sie Code innerhalb der Deklaration der partiellen Klasse.
 
      Das folgende Beispiel zeigt, wo die CustomersDataTable NorthwindDataSet Code hinzufügen:
 

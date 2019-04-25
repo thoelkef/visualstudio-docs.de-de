@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074491"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Vorgehensweise: Hinzufügen von Befehlen zu Kontextmenüs
   In diesem Thema wird veranschaulicht, wie Befehle in einem Kontextmenü Menüelemente in einer Office-Anwendung hinzugefügt werden, mithilfe eines VSTO-Add-Ins.
@@ -27,26 +27,26 @@ ms.locfileid: "56598179"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>So fügen Sie in Office einem Kontextmenü Befehle hinzu
 
-1.  Fügen Sie ein **Menüband-XML** -Element einem Projekt auf Dokumentebene oder einem VSTO-Add-In-Projekt hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md). In
+1. Fügen Sie ein **Menüband-XML** -Element einem Projekt auf Dokumentebene oder einem VSTO-Add-In-Projekt hinzu. Weitere Informationen finden Sie unter [Vorgehensweise: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md). In
 
-2.  **Projektmappen-Explorer**wählen Sie **ThisAddIn.cs** oder **ThisAddIn.vb**aus.
+2. **Projektmappen-Explorer**wählen Sie **ThisAddIn.cs** oder **ThisAddIn.vb**aus.
 
-3.  Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
+3. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die **ThisAddin** -Klassendatei wird im Code-Editor geöffnet.
 
-4.  Fügen Sie der Klasse **ThisAddin** den folgenden Code hinzu. Mit diesem Code wird die `CreateRibbonExtensibilityObject`-Methode überschrieben und der Office-Anwendung die Menüband-XML-Klasse zurückgegeben.
+4. Fügen Sie der Klasse **ThisAddin** den folgenden Code hinzu. Mit diesem Code wird die `CreateRibbonExtensibilityObject`-Methode überschrieben und der Office-Anwendung die Menüband-XML-Klasse zurückgegeben.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. In der Standardeinstellung die Menüband-XML-Datei heißt *Ribbon1.xml*.
+5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. In der Standardeinstellung die Menüband-XML-Datei heißt *Ribbon1.xml*.
 
-6.  Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
+6. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die Menüband-XML-Datei wird im Code-Editor geöffnet.
 
-7.  Fügen Sie im Code-Editor den XML-Code hinzu, der das Kontextmenü und das Steuerelement beschreibt, das Sie dem Kontextmenü hinzufügen möchten.
+7. Fügen Sie im Code-Editor den XML-Code hinzu, der das Kontextmenü und das Steuerelement beschreibt, das Sie dem Kontextmenü hinzufügen möchten.
 
      Im folgenden Beispiel werden dem Kontextmenü für ein Word-Dokument ein Schaltflächen-, ein Menü- und ein Katalog-Steuerelement hinzugefügt. Die Steuerelement-ID dieses Kontextmenüs lautet „ContextMenuText“. Eine vollständige Liste der Office 2010-Kontextmenü-Steuerelement IDs finden Sie unter [Office 2010-Hilfedateien: Steuerelement-IDs für Office fluent User Interface](http://go.microsoft.com/fwlink/?LinkID=181052).
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598179"
     </customUI>
     ```
 
-8.  Wählen Sie im **Projektmappen-Explorer**die Datei **MyRibbon.cs** oder **MyRibbon.vb**aus.
+8. Wählen Sie im **Projektmappen-Explorer**die Datei **MyRibbon.cs** oder **MyRibbon.vb**aus.
 
 9. Fügen Sie eine Rückrufmethode, die `Ribbon1` -Klasse für jedes Steuerelement, das Sie behandeln möchten.
 

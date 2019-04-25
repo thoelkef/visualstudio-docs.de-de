@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12391f16e2797941cf83177aa1c83ed0dd2c0045
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053417"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Vorgehensweise: Programmgesteuertes Schützen von Arbeitsmappen
   Sie können eine Microsoft Office Excel-Arbeitsmappe schützen, sodass Benutzer hinzufügen oder Löschen von Arbeitsblättern und Schutz für die Arbeitsmappe auch programmgesteuert aufheben können nicht. Optional können Sie ein Kennwort angeben, gibt an, ob die Struktur (Benutzer können keine Tabellen verschieben) werden soll, und gibt an, ob die Fenster der Arbeitsmappe geschützt werden sollen.
@@ -37,14 +37,14 @@ ms.locfileid: "56644600"
 
 ### <a name="to-protect-a-workbook"></a>Eine Arbeitsmappe schützen
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> Methode der Arbeitsmappe und ein Kennwort enthalten. Um das folgende Codebeispiel verwenden möchten, führen Sie es der `ThisWorkbook` -Klasse, nicht in einer Sheet-Klasse.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> Methode der Arbeitsmappe und ein Kennwort enthalten. Um das folgende Codebeispiel verwenden möchten, führen Sie es der `ThisWorkbook` -Klasse, nicht in einer Sheet-Klasse.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
      [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
 
 ### <a name="to-unprotect-a-workbook"></a>Zum Aufheben des Schutzes von einer Arbeitsmappe
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> Methode und übergeben ein Kennwort ein, wenn dies erforderlich ist. Um das folgende Codebeispiel verwenden möchten, führen Sie es der `ThisWorkbook` -Klasse, nicht in einer Sheet-Klasse.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> Methode und übergeben ein Kennwort ein, wenn dies erforderlich ist. Um das folgende Codebeispiel verwenden möchten, führen Sie es der `ThisWorkbook` -Klasse, nicht in einer Sheet-Klasse.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
@@ -53,14 +53,14 @@ ms.locfileid: "56644600"
 
 ### <a name="to-protect-a-workbook"></a>Eine Arbeitsmappe schützen
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> Methode der Arbeitsmappe und ein Kennwort enthalten. Dieses Codebeispiel verwendet die aktive Arbeitsmappe. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> Methode der Arbeitsmappe und ein Kennwort enthalten. Dieses Codebeispiel verwendet die aktive Arbeitsmappe. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
 
 ### <a name="to-unprotect-a-workbook"></a>Zum Aufheben des Schutzes von einer Arbeitsmappe
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> Methode der aktiven Arbeitsmappe, und übergeben Sie ein Kennwort erforderlich. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> Methode der aktiven Arbeitsmappe, und übergeben Sie ein Kennwort erforderlich. Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn` -Klasse im Projekt aus.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]

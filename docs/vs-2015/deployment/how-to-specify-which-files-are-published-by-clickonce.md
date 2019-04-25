@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046954"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,80 +38,80 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
  Dateien mit der **Buildvorgang** -Eigenschaftensatz auf **Content** werden als Dateien der Anwendung bestimmt und wird als Standardeinstellung markiert. Sie können enthalten, ausgeschlossen oder als Datendateien markiert werden. Die Ausnahmen sind wie folgt aus:  
   
--   Datendateien, z. B. SQL-Datenbank (MDF- und MDB) und XML-Dateien werden standardmäßig als Datendateien gekennzeichnet.  
+- Datendateien, z. B. SQL-Datenbank (MDF- und MDB) und XML-Dateien werden standardmäßig als Datendateien gekennzeichnet.  
   
--   Verweise auf Assemblys (DLL-Dateien) werden wie folgt gekennzeichnet, wenn Sie den Verweis hinzufügen: Wenn **lokale Kopie** ist **"false"**, er ist standardmäßig als erforderliche Assembly gekennzeichnet (**Voraussetzung (Auto)**), die muss im GAC vorhanden sein, bevor die Anwendung installiert wird. Wenn **lokale Kopie** ist **"true"**, die Assembly ist standardmäßig als eine Anwendungsassembly gekennzeichnet (**einschließen (Auto)**) und in den Ordner der Anwendung, bei der Installation kopiert werden. Ein COM-Verweis wird angezeigt, der **Anwendungsdateien** Dialogfeld Feld (als OCX-Datei) nur, wenn die **isoliert** -Eigenschaftensatz auf **"true"**. Standardmäßig werden sie berücksichtigt.  
+- Verweise auf Assemblys (DLL-Dateien) werden wie folgt gekennzeichnet, wenn Sie den Verweis hinzufügen: Wenn **lokale Kopie** ist **"false"**, er ist standardmäßig als erforderliche Assembly gekennzeichnet (**Voraussetzung (Auto)**), die muss im GAC vorhanden sein, bevor die Anwendung installiert wird. Wenn **lokale Kopie** ist **"true"**, die Assembly ist standardmäßig als eine Anwendungsassembly gekennzeichnet (**einschließen (Auto)**) und in den Ordner der Anwendung, bei der Installation kopiert werden. Ein COM-Verweis wird angezeigt, der **Anwendungsdateien** Dialogfeld Feld (als OCX-Datei) nur, wenn die **isoliert** -Eigenschaftensatz auf **"true"**. Standardmäßig werden sie berücksichtigt.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Dateien im Dialogfeld für die Dateien der Anwendung hinzufügen  
   
-1.  Wählen Sie eine Datei im **Projektmappen-Explorer**.  
+1. Wählen Sie eine Datei im **Projektmappen-Explorer**.  
   
-2.  Ändern Sie im Fenster Eigenschaften die **Buildvorgang** Eigenschaft, um die **Content** Wert.  
+2. Ändern Sie im Fenster Eigenschaften die **Buildvorgang** Eigenschaft, um die **Content** Wert.  
   
 ### <a name="to-exclude-files-from-clickonce-publishing"></a>So schließen Sie Dateien von ClickOnce-Veröffentlichung  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
+3. Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
-4.  In der **Anwendungsdateien** Dialogfeld Feld, wählen Sie die Datei, die Sie ausschließen möchten.  
+4. In der **Anwendungsdateien** Dialogfeld Feld, wählen Sie die Datei, die Sie ausschließen möchten.  
   
-5.  In der **Veröffentlichungsstatus** die Option **ausschließen** aus der Dropdown-Liste.  
+5. In der **Veröffentlichungsstatus** die Option **ausschließen** aus der Dropdown-Liste.  
   
 ### <a name="to-mark-files-as-data-files"></a>So markieren Sie die Dateien als Datendateien  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
+3. Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
-4.  In der **Anwendungsdateien** Dialogfeld Feld, wählen Sie die Datei, die Sie als Daten markieren möchten.  
+4. In der **Anwendungsdateien** Dialogfeld Feld, wählen Sie die Datei, die Sie als Daten markieren möchten.  
   
-5.  In der **Veröffentlichungsstatus** die Option **Datendatei** aus der Dropdown-Liste.  
+5. In der **Veröffentlichungsstatus** die Option **Datendatei** aus der Dropdown-Liste.  
   
 ### <a name="to-mark-files-as-prerequisites"></a>Dateien als erforderliche Komponente aktivieren  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
+3. Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
-4.  In der **Anwendungsdateien** Dialogfeld wählen die Assembly (DLL-Datei), die Sie als erforderliche Komponente markieren möchten. Beachten Sie, dass Ihre Anwendung einen Verweis auf die Anwendungsassembly in der Reihenfolge, in der Liste angezeigt.  
+4. In der **Anwendungsdateien** Dialogfeld wählen die Assembly (DLL-Datei), die Sie als erforderliche Komponente markieren möchten. Beachten Sie, dass Ihre Anwendung einen Verweis auf die Anwendungsassembly in der Reihenfolge, in der Liste angezeigt.  
   
-5.  In der **Veröffentlichungsstatus** die Option **erforderliche** aus der Dropdown-Liste.  
+5. In der **Veröffentlichungsstatus** die Option **erforderliche** aus der Dropdown-Liste.  
   
 ### <a name="to-add-a-new-file-group"></a>Eine neue Dateigruppe hinzufügen  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
+3. Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
-4.  In der **Anwendungsdateien** wählen Sie im Dialogfeld die **Gruppe** Feld für eine Datei, die Sie in der neuen Gruppe einschließen möchten.  
+4. In der **Anwendungsdateien** wählen Sie im Dialogfeld die **Gruppe** Feld für eine Datei, die Sie in der neuen Gruppe einschließen möchten.  
   
     > [!NOTE]
     >  Dateien müssen die **Buildvorgang** -Eigenschaftensatz auf **Content** vor den Dateinamen in angezeigt werden die **Anwendungsdateien** im Dialogfeld.  
   
-5.  In der **Downloadgruppe** die Option  **\<neu... >** aus der Dropdown-Liste.  
+5. In der **Downloadgruppe** die Option  **\<neu... >** aus der Dropdown-Liste.  
   
-6.  In der **neue Gruppe** Dialogfeld Geben Sie einen Namen für die Gruppe, und klicken Sie dann auf **OK**.  
+6. In der **neue Gruppe** Dialogfeld Geben Sie einen Namen für die Gruppe, und klicken Sie dann auf **OK**.  
   
 ### <a name="to-add-a-file-to-a-group"></a>Um eine Datei zu einer Gruppe hinzuzufügen.  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.  
   
-3.  Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
+3. Klicken Sie auf die **Anwendungsdateien** die Schaltfläche, um die **Anwendungsdateien** Dialogfeld.  
   
-4.  In der **Anwendungsdateien** wählen Sie im Dialogfeld die **Gruppe** Feld für eine Datei, die Sie in der neuen Gruppe einschließen möchten.  
+4. In der **Anwendungsdateien** wählen Sie im Dialogfeld die **Gruppe** Feld für eine Datei, die Sie in der neuen Gruppe einschließen möchten.  
   
-5.  In der **Downloadgruppe** Feld, wählen Sie eine Gruppe aus der Dropdown-Liste.  
+5. In der **Downloadgruppe** Feld, wählen Sie eine Gruppe aus der Dropdown-Liste.  
   
     > [!NOTE]
     >  Sie können nicht geändert werden die **Downloadgruppe** für Dateien, die für die Ausführung der Anwendung erforderlich sind.  

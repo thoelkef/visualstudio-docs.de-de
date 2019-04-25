@@ -11,30 +11,29 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090758"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mit dem [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Element. Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.  
   
  Das *ItemDefinitionGroup*-Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:  
   
--   Sie können globale Standardmetadaten für Elemente außerhalb eines Ziels definieren. Das heißt, für alle Elemente des angegebenen Typs gelten die gleichen Metadaten.  
+- Sie können globale Standardmetadaten für Elemente außerhalb eines Ziels definieren. Das heißt, für alle Elemente des angegebenen Typs gelten die gleichen Metadaten.  
   
--   Elementtypen können mehrere Definitionen aufweisen. Wenn dem Typ weitere Metadatenspezifikationen hinzugefügt werden, hat die letzte Spezifikation Vorrang. \(Die Metadaten folgen der gleichen Importreihenfolge wie Eigenschaften.\)  
+- Elementtypen können mehrere Definitionen aufweisen. Wenn dem Typ weitere Metadatenspezifikationen hinzugefügt werden, hat die letzte Spezifikation Vorrang. \(Die Metadaten folgen der gleichen Importreihenfolge wie Eigenschaften.\)  
   
--   Metadaten können additiv sein. Zum Beispiel werden CDefines-Werte bedingt akkumuliert, abhängig von den festgelegten Eigenschaften. Beispielsweise `MT;STD_CALL;DEBUG;UNICODE`.  
+- Metadaten können additiv sein. Zum Beispiel werden CDefines-Werte bedingt akkumuliert, abhängig von den festgelegten Eigenschaften. Beispielsweise `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Metadaten können entfernt werden.  
+- Metadaten können entfernt werden.  
   
--   Bedingungen können verwendet werden, um das Einschließen der Metadaten zu steuern.  
+- Bedingungen können verwendet werden, um das Einschließen der Metadaten zu steuern.  
   
 ## <a name="item-metadata-default-values"></a>Standardwerte von Elementmetadaten  
  Elementmetadaten, die in ItemDefinitionGroup definiert werden, sind nur eine Deklaration der Standardmetadaten. Die Metadaten finden nur dann Anwendung, wenn Sie ein Element definieren, das zum Einschließen der Metadatenwerte ItemGroup verwendet.  
@@ -67,21 +66,21 @@ ms.locfileid: "54796672"
 ## <a name="value-sources"></a>Wertquellen  
  Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschiedenen Quellen stammen:  
   
--   PropertyGroup-Eigenschaft  
+- PropertyGroup-Eigenschaft  
   
--   Element aus ItemDefinitionGroup  
+- Element aus ItemDefinitionGroup  
   
--   Elementtransformation für ein ItemDefinitionGroup-Element  
+- Elementtransformation für ein ItemDefinitionGroup-Element  
   
--   Umgebungsvariable  
+- Umgebungsvariable  
   
--   Globale Eigenschaft \(von der MSBuild.exe-Befehlszeile\)  
+- Globale Eigenschaft \(von der MSBuild.exe-Befehlszeile\)  
   
--   Reservierte Eigenschaft  
+- Reservierte Eigenschaft  
   
--   Bekannte Metadaten über ein Element aus ItemDefinitionGroup  
+- Bekannte Metadaten über ein Element aus ItemDefinitionGroup  
   
--   CDATA-Abschnitt \<\!\[CDATA\[Dies hier wird nicht analysiert.\]\]\>  
+- CDATA-Abschnitt \<\!\[CDATA\[Dies hier wird nicht analysiert.\]\]\>  
   
 > [!NOTE]
 >  Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.  

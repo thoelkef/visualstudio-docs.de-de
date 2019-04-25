@@ -11,21 +11,21 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085856"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, indem Sie sie veröffentlichen Freigeben einer *privaten Katalog* im Intranet für Ihre Organisation wie folgt:  
   
--   Erstellen Sie ein Atom (RSS-Feeds) entsprechend konfigurierten zentral (Repository) in Ihrem Intranet. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Atom-Feed für einen privaten Katalog](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+- Erstellen Sie ein Atom (RSS-Feeds) entsprechend konfigurierten zentral (Repository) in Ihrem Intranet. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Atom-Feed für einen privaten Katalog](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
--   Verteilen Sie eine PKGDEF-Datei, die den privaten Katalog beschreibt. Es wird empfohlen, diese Konfiguration für Administratoren, die einen privaten Katalog auf mehreren Computern gleichzeitig eine Verbindung herstellen möchten.  
+- Verteilen Sie eine PKGDEF-Datei, die den privaten Katalog beschreibt. Es wird empfohlen, diese Konfiguration für Administratoren, die einen privaten Katalog auf mehreren Computern gleichzeitig eine Verbindung herstellen möchten.  
   
 ## <a name="adding-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Hinzufügen eines privaten Katalogs Erweiterungen und Updates in Visual Studio  
  Wenn Sie ein privater Katalog verfügbar ist, können Sie ihn zum Hinzufügen **Erweiterungen und Updates** in Visual Studio.  
@@ -34,19 +34,19 @@ Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, indem Si
   
 #### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Um einen privaten Katalog mit den Erweiterungen und Updates hinzuzufügen  
   
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
+1. Wählen Sie in der Menüleiste **Extras**, **Optionen**.  
   
-2.  In der **Umgebung** Knoten **Erweiterungen und Updates**.  
+2. In der **Umgebung** Knoten **Erweiterungen und Updates**.  
   
-3.  Wählen Sie die Schaltfläche **Hinzufügen** aus.  
+3. Wählen Sie die Schaltfläche **Hinzufügen** aus.  
   
-4.  In der **Namen** Geben Sie einen Namen für den privaten Katalog, z. B. `My Gallery`.  
+4. In der **Namen** Geben Sie einen Namen für den privaten Katalog, z. B. `My Gallery`.  
   
-5.  In der **URL** Geben Sie die URL des Atom-feed oder SharePoint-Website, die den privaten Katalog hostet.  
+5. In der **URL** Geben Sie die URL des Atom-feed oder SharePoint-Website, die den privaten Katalog hostet.  
   
-    1.  Wenn der Host ein Atom-feed ist, die eine Verbindung mit dem privaten Katalog her, die URL ähnelt dieser: http://www.mywebsite/mygallery/atom.xml.  Diese URL kann auf eine Datei oder einen Netzwerkpfad verweisen.  
+    1. Wenn der Host ein Atom-feed ist, die eine Verbindung mit dem privaten Katalog her, die URL ähnelt dieser: http://www.mywebsite/mygallery/atom.xml.  Diese URL kann auf eine Datei oder einen Netzwerkpfad verweisen.  
   
-    2.  Wenn der Host auf einer SharePoint-Website ist, die URL ähnelt dieser: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.  
+    2. Wenn der Host auf einer SharePoint-Website ist, die URL ähnelt dieser: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.  
   
 ### <a name="managing-private-galleries"></a>Verwalten von Private Kataloge  
  Ein Administrator kann einen privaten Katalog auf mehreren Computern gleichzeitig zur Verfügung durch Ändern der Registrierungs des Systems auf jedem Computer. Um dies zu erreichen, erstellen Sie eine PKGDEF-Datei, die die neuen Registrierungsschlüssel und deren Werte beschreibt.  Das Format dieser Datei lautet wie folgt aus.  
@@ -72,11 +72,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Suchen und Installieren von Erweiterungen über einen privaten Katalog  
   
-1.  Wählen Sie auf der Menüleiste **Tools**, **Erweiterungen und Updates** aus.  
+1. Wählen Sie auf der Menüleiste **Tools**, **Erweiterungen und Updates** aus.  
   
-2.  Wählen Sie im linken Bereich **Onlineerweiterungen**, und wählen Sie dann **Meine Galerie**.  
+2. Wählen Sie im linken Bereich **Onlineerweiterungen**, und wählen Sie dann **Meine Galerie**.  
   
-3.  Wählen Sie im rechten Bereich eine Erweiterung, und wählen Sie dann die **herunterladen** Schaltfläche.  
+3. Wählen Sie im rechten Bereich eine Erweiterung, und wählen Sie dann die **herunterladen** Schaltfläche.  
   
 ## <a name="updating-extensions-from-a-private-gallery"></a>Aktualisieren von Erweiterungen aus einer privaten Galerie  
  Neue Versionen von Visual Studio-Erweiterungen in den privaten Katalog bereitgestellt werden, können Sie die Erweiterungen aktualisieren, die Sie installiert haben. Die folgenden Schritte verwenden, einen privaten Katalog mit dem Namen `My Repository`.  
@@ -85,11 +85,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Um eine installierte Erweiterung mithilfe eines privaten Katalogs zu aktualisieren.  
   
-1.  Wählen Sie auf der Menüleiste **Tools**, **Erweiterungen und Updates** aus.  
+1. Wählen Sie auf der Menüleiste **Tools**, **Erweiterungen und Updates** aus.  
   
-2.  Wählen Sie im linken Bereich **Updates**, und wählen Sie dann **mein Repository**.  
+2. Wählen Sie im linken Bereich **Updates**, und wählen Sie dann **mein Repository**.  
   
-3.  Wählen Sie im rechten Bereich eine Erweiterung, und wählen Sie dann die **Update** Schaltfläche.  
+3. Wählen Sie im rechten Bereich eine Erweiterung, und wählen Sie dann die **Update** Schaltfläche.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)   

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099142"
 ---
-# <a name="how-to-start-spy"></a>Gewusst wie: Starten von Spy++
+# <a name="how-to-start-spy"></a>Vorgehensweise: Starten von Spy++
 
 Sie können Spy++ aus Visual Studio oder an einer Eingabeaufforderung starten.
 
@@ -26,12 +26,12 @@ Sie können Spy++ aus Visual Studio oder an einer Eingabeaufforderung starten.
 > [!NOTE]
 >  Sie können nur eine Instanz von Spy++ ausführen. Wenn Sie versuchen, eine zweite Instanz gestartet, wird nur die aktuell ausgeführte Instanz aus, um den Fokus erhalten.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Spy++-müssen die folgenden Komponenten ein. Sie können diese Komponenten aus Visual Studio-Installer auswählen, durch Auswählen der **Einzelkomponenten** Registerkarte, und wählen Sie dann die folgenden Komponenten.
 
-* Wählen Sie unter Debuggen und Testen von **C++-Profilerstellungstools**
-* Wählen Sie unter Entwicklungsaktivitäten, **Visual Studio C++-Kernfeatures**
+* Wählen Sie unter Debuggen und Testen von  **C++ Profilerstellungstools**
+* Wählen Sie unter Entwicklungsaktivitäten, **Visual Studio C++ Kernfeatures**
 
 Wenn Sie keine Änderungen vorgenommen haben, führen Sie die Anweisungen zum Installieren dieser Komponenten.
 
@@ -46,9 +46,9 @@ Da Spy++ unabhängig voneinander ausgeführt wird, nachdem Sie ihn starten, kön
 
 ## <a name="start-spy-at-a-command-prompt"></a>Starten von Spy++ an einer Eingabeaufforderung
 
-1.  Ein Eingabeaufforderungsfenster wechseln Sie zu dem Ordner, der spyxx.exe enthält. In der Regel ist der Pfad zu diesem Ordner... \\ *Visual Studio-Installationsordner*\Common7\Tools\\.
+1. Ein Eingabeaufforderungsfenster wechseln Sie zu dem Ordner, der spyxx.exe enthält. In der Regel ist der Pfad zu diesem Ordner... \\ *Visual Studio-Installationsordner*\Common7\Tools\\.
 
-2.  Geben Sie **spyxx.exe** ein.
+2. Geben Sie **spyxx.exe** ein.
 
 ## <a name="see-also"></a>Siehe auch
 - [Verwenden von Spy++](../debugger/using-spy-increment.md)

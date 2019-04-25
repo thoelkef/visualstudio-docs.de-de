@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110504"
 ---
 # <a name="how-to-edit-xml-files"></a>Vorgehensweise: Bearbeiten von XML-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenständige XML-Datei oder für eine einem Visual Studio-Projekt zugeordnete Datei verwendet werden. Der XML-Editor ist den folgenden Dateierweiterungen zugeordnet: .config, .dtd, .xml, .xsd, .xdr, .xsl, .xslt und .vssettings. Dem XML-Editor wird auch jeder andere Dateityp mit XML- bzw. DTD-Inhalten zugeordnet, für den kein bestimmter Editor registriert ist.  
   
 > [!NOTE]
@@ -27,45 +26,45 @@ Der XML-Editor ist der neue Editor für XML-Dateien. Er kann für eine eigenstä
   
 ### <a name="to-edit-an-xml-file"></a>So bearbeiten Sie eine XML-Datei  
   
-1.  Doppelklicken Sie auf die Datei, die Sie bearbeiten möchten.  
+1. Doppelklicken Sie auf die Datei, die Sie bearbeiten möchten.  
   
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>So fügen Sie einem Projekt eine neue XML-Datei hinzu  
   
-1.  Von der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.  
+1. Von der **Projekt** , wählen Sie im Menü **neues Element hinzufügen**.  
   
-2.  Wählen Sie **XML-Datei** aus der **Vorlagen** Bereich.  
+2. Wählen Sie **XML-Datei** aus der **Vorlagen** Bereich.  
   
-3.  Geben Sie den Dateinamen in der **Namen** Feld, und drücken Sie **hinzufügen**.  
+3. Geben Sie den Dateinamen in der **Namen** Feld, und drücken Sie **hinzufügen**.  
   
      Die XML-Datei wird dem Projekt hinzugefügt und im XML-Editor geöffnet. Die Datei enthält die XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8" ?>`.  
   
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>So fügen Sie einem Projekt eine vorhandene XML-Datei hinzu  
   
-1.  Von der **Projekt** , wählen Sie im Menü **vorhandenes Element hinzufügen**.  
+1. Von der **Projekt** , wählen Sie im Menü **vorhandenes Element hinzufügen**.  
   
      Die **vorhandenes Element hinzufügen** Dialogfeld wird angezeigt.  
   
-2.  Wählen Sie eine XML-Datei, und drücken Sie **hinzufügen**.  
+2. Wählen Sie eine XML-Datei, und drücken Sie **hinzufügen**.  
   
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>So erstellen Sie eine neue XML- oder XSLT-Datei  
   
-1.  Von der **Datei** , wählen Sie im Menü **neu**.  
+1. Von der **Datei** , wählen Sie im Menü **neu**.  
   
      Die **neue Datei** Dialogfeld wird angezeigt.  
   
-2.  Wählen Sie **XML-Datei** , erstellen eine neue XML-Datei, oder wählen Sie **XSLT-Datei** um ein neues XSLT-Stylesheet zu erstellen.  
+2. Wählen Sie **XML-Datei** , erstellen eine neue XML-Datei, oder wählen Sie **XSLT-Datei** um ein neues XSLT-Stylesheet zu erstellen.  
   
-3.  Klicken Sie auf **Öffnen**.  
+3. Klicken Sie auf **Öffnen**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>So erstellen Sie ein Projekt für XML-Dateien  
   
-1.  Von der **Datei** , wählen Sie im Menü **neu**, und wählen Sie dann **Projekt**.  
+1. Von der **Datei** , wählen Sie im Menü **neu**, und wählen Sie dann **Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  Wählen Sie die Codesprache Ihrer Wahl wählen **leeres Projekt**, und klicken Sie auf **OK**.  
+2. Wählen Sie die Codesprache Ihrer Wahl wählen **leeres Projekt**, und klicken Sie auf **OK**.  
   
-3.  Fügen Sie dem Projekt XML-Dateien hinzu.  
+3. Fügen Sie dem Projekt XML-Dateien hinzu.  
   
      Der XML-Editor sucht die dem Projekt hinzugefügten Schemata und verwendet sie für die Validierung und für IntelliSense in allen XML-, Schema- oder XSLT-Dateien, die Sie bearbeiten, während das Projekt geöffnet ist.  
   

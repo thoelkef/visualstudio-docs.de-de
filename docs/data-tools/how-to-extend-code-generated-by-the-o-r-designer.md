@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code'
+title: 'Vorgehensweise: Erweitern von mit dem O/R-Designer erstelltem Code'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ff7dfc9a83028b866f7601b9b41c685262356ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066246"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von durch den O/R-Designer erstellten Code
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von mit dem O/R-Designer erstelltem Code
 Vom generierten Code der **O/R Designer** erneut generiert wird, wenn Änderungen an die Entitätsklassen und andere Objekte auf der Designeroberfläche vorgenommen werden. Aufgrund dieser erneuten Codegenerierung wird in der Regel jeglicher Code, der zum generierten Code hinzugefügt wurde, überschrieben, sobald vom Designer neuer Code generiert wird. Die **O/R Designer** bietet die Möglichkeit, Dateien mit partiellen Klassen zu generieren, in dem Sie hinzufügen können, Sie Code, der nicht überschrieben werden. Ein Beispiel für das Hinzufügen eigenen Codes, die vom generierten Code der **O/R Designer** ist Hinzufügen der datenvalidierung zu LINQ to SQL (Entität)-Klassen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -24,28 +24,28 @@ Vom generierten Code der **O/R Designer** erneut generiert wird, wenn Änderunge
 
 ### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>So erstellen Sie eine partielle Klasse und fügen Code zu einer Entitätsklasse hinzu
 
-1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer** oder **Datenbank-Explorer**.)
+1. Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer** oder **Datenbank-Explorer**.)
 
-2.  Klicken Sie im **O/R-Designer** mit der rechten Maustaste auf die Klasse, der Sie Validierungen hinzufügen möchten, und klicken Sie dann auf **Code anzeigen**.
+2. Klicken Sie im **O/R-Designer** mit der rechten Maustaste auf die Klasse, der Sie Validierungen hinzufügen möchten, und klicken Sie dann auf **Code anzeigen**.
 
      Der Code-Editor wird mit einer partiellen Klasse für die ausgewählte Entitätsklasse geöffnet.
 
-3.  Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für die Entitätsklasse hinzu.
+3. Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für die Entitätsklasse hinzu.
 
 ## <a name="add-code-to-a-datacontext"></a>Fügen Sie Code zu einem DataContext hinzu.
 
 ### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>So erstellen Sie eine partielle Klasse und fügen Code zu einem DataContext hinzu
 
-1.  Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer** oder **Datenbank-Explorer**.)
+1. Öffnen oder erstellen Sie eine neue LINQ to SQL-Klassendatei (**dbml** Datei) in der **O/R Designer**. (Doppelklicken Sie auf die **dbml** Datei **Projektmappen-Explorer** oder **Datenbank-Explorer**.)
 
-2.  In der **O/R Designer**mit der rechten Maustaste auf einen leeren Bereich im Designer, und klicken Sie dann auf **Ansichtscode**.
+2. In der **O/R Designer**mit der rechten Maustaste auf einen leeren Bereich im Designer, und klicken Sie dann auf **Ansichtscode**.
 
      Der Code-Editor wird mit einer partiellen Klasse für den DataContext geöffnet.
 
-3.  Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für den DataContext hinzu.
+3. Fügen Sie Ihren Code zur Deklaration der partiellen Klasse für den DataContext hinzu.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

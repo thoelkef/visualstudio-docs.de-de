@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050309"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Vorgehensweise: Verwenden des parallelen Überwachungsfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ Im parallelen Überwachungsfenster können Sie gleichzeitig die Werte anzeigen, 
   
 ### <a name="to-display-the-parallel-watch-window"></a>So zeigen Sie das parallele Überwachungsfenster an  
   
-1.  Legen Sie einen Haltepunkt im Code fest.  
+1. Legen Sie einen Haltepunkt im Code fest.  
   
-2.  Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
+2. Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
   
-3.  Klicken Sie in der Menüleiste auf **Debuggen**, **Fenster**, **Parallele Überwachung**, und wählen Sie dann ein Überwachungsfenster aus. Sie können bis zu vier Fenster öffnen.  
+3. Klicken Sie in der Menüleiste auf **Debuggen**, **Fenster**, **Parallele Überwachung**, und wählen Sie dann ein Überwachungsfenster aus. Sie können bis zu vier Fenster öffnen.  
   
 ### <a name="to-add-a-watch-expression"></a>So fügen Sie einen Überwachungsausdruck hinzu  
   
--   Wählen Sie  **\<Überwachung hinzufügen >** und geben Sie einen Überwachungsausdruck.  
+- Wählen Sie  **\<Überwachung hinzufügen >** und geben Sie einen Überwachungsausdruck.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>So Kennzeichnen Sie einen Thread bzw. haben die Kennzeichnung auf  
   
--   Wählen Sie die Spalte zur Kennzeichnung für die Zeile, oder öffnen Sie das Kontextmenü für den Thread aus, und wählen Sie **Flag** oder **Flag**.  
+- Wählen Sie die Spalte zur Kennzeichnung für die Zeile, oder öffnen Sie das Kontextmenü für den Thread aus, und wählen Sie **Flag** oder **Flag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
--   Wählen Sie die Schaltfläche "nur gekennzeichnete Threads anzeigen" in der oberen linken Ecke des der **parallele Überwachung** Fenster.  
+- Wählen Sie die Schaltfläche "nur gekennzeichnete Threads anzeigen" in der oberen linken Ecke des der **parallele Überwachung** Fenster.  
   
 ### <a name="to-switch-frames"></a>So wechseln Sie Frames  
   
--   Doppelklicken Sie auf die Framespalte. (Tastatur: Wählen Sie die Zeile, und drücken Sie die EINGABETASTE.)  
+- Doppelklicken Sie auf die Framespalte. (Tastatur: Wählen Sie die Zeile, und drücken Sie die EINGABETASTE.)  
   
 ### <a name="to-sort-a-column"></a>So sortieren Sie eine Spalte  
   
--   Wählen Sie Spaltenüberschrift aus.  
+- Wählen Sie Spaltenüberschrift aus.  
   
 ### <a name="to-group-threads"></a>So gruppieren Sie Threads  
   
--   Öffnen Sie das Kontextmenü für das parallele Überwachungsfenster, wählen Sie die Option **Gruppieren nach** aus, und wählen Sie dann das entsprechende Untermenüelement aus.  
+- Öffnen Sie das Kontextmenü für das parallele Überwachungsfenster, wählen Sie die Option **Gruppieren nach** aus, und wählen Sie dann das entsprechende Untermenüelement aus.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>So frieren Sie Threads ein oder reaktivieren sie  
   
--   Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie dann **Einfrieren** oder **Reaktivieren** aus.  
+- Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie dann **Einfrieren** oder **Reaktivieren** aus.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>So exportieren Sie Daten in das parallele Überwachungsfenster  
   
--   Wählen Sie die Schaltfläche **In Excel öffnen** aus, und wählen Sie dann **Exportieren nach CSV** oder **In Excel öffnen** aus.  
+- Wählen Sie die Schaltfläche **In Excel öffnen** aus, und wählen Sie dann **Exportieren nach CSV** oder **In Excel öffnen** aus.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>So filtern Sie nach einem booleschen Ausdruck  
   
--   Geben Sie im Feld **Nach booleschem Ausdruck filtern** einen booleschen Ausdruck ein. Vom Debugger wird der Ausdruck für jeden Threadkontext ausgewertet. Nur Zeilen mit einem Wert von `true` werden angezeigt.  
+- Geben Sie im Feld **Nach booleschem Ausdruck filtern** einen booleschen Ausdruck ein. Vom Debugger wird der Ausdruck für jeden Threadkontext ausgewertet. Nur Zeilen mit einem Wert von `true` werden angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

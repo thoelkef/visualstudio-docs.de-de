@@ -27,12 +27,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58961467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059590"
 ---
 # <a name="memory-windows"></a>Fenster "Arbeitsspeicher"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der 
   
 #### <a name="to-open-a-memory-window"></a>So öffnen Sie ein Arbeitsspeicherfenster  
   
-1.  Beginnen Sie mit dem Debuggen, sofern Sie den Debugmodus noch nicht ausgewählt haben.  
+1. Beginnen Sie mit dem Debuggen, sofern Sie den Debugmodus noch nicht ausgewählt haben.  
   
-2.  In der **Debuggen** Startmenü **Windows**. Zeigen Sie dann auf **Arbeitsspeicher** , und klicken Sie dann auf **Arbeitsspeicher 1**, **Arbeitsspeicher 2**, **Arbeitsspeicher 3**, oder **Arbeitsspeicher 4**. (Low-Level-Editionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nur ein einzelnes **Arbeitsspeicher** Fenster. Wenn Sie eine dieser Editionen verwenden, klicken Sie einfach **Arbeitsspeicher**.)  
+2. In der **Debuggen** Startmenü **Windows**. Zeigen Sie dann auf **Arbeitsspeicher** , und klicken Sie dann auf **Arbeitsspeicher 1**, **Arbeitsspeicher 2**, **Arbeitsspeicher 3**, oder **Arbeitsspeicher 4**. (Low-Level-Editionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nur ein einzelnes **Arbeitsspeicher** Fenster. Wenn Sie eine dieser Editionen verwenden, klicken Sie einfach **Arbeitsspeicher**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Paging im Fenster "Arbeitsspeicher"  
  Die **Arbeitsspeicher** Fenster hat eine vertikale Bildlaufleiste, die in einer nicht dem Standard entsprechende Weise verwendet wird. Der Adressbereich eines modernen Computers ist sehr groß, und eine Suche kann leicht fehlschlagen, wenn Sie das Bildlauffeld der Bildlaufleiste an eine zufällige Position ziehen. Aus diesem Grunde verhält sich das Bildlauffeld, als wäre es beidseitig mit einer Zugfeder verbunden, und verbleibt stets in der Mitte der Bildlaufleiste. In Anwendungen, die in systemeigenem Code geschrieben sind, können Sie einen Bildlauf nach oben oder unten durchführen; die Durchführung eines freien Bildlaufs ist jedoch nicht möglich.  
@@ -56,33 +56,33 @@ Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der 
   
 #### <a name="to-page-up-or-down-in-memory"></a>So führen Sie im Speicher einen Bildlauf nach oben oder nach unten durch  
   
-1.  Klicken Sie unter dem Ziehpunkt in der vertikalen Scrollleiste, um einen Bildlauf nach unten auszuführen (Navigieren zu einer höheren Speicheradresse).  
+1. Klicken Sie unter dem Ziehpunkt in der vertikalen Scrollleiste, um einen Bildlauf nach unten auszuführen (Navigieren zu einer höheren Speicheradresse).  
   
-2.  Für einen Bildlauf nach oben (Navigieren zu einer niedrigeren Speicheradresse) klicken Sie über dem Bildlauffeld auf der vertikalen Bildlaufleiste.  
+2. Für einen Bildlauf nach oben (Navigieren zu einer niedrigeren Speicheradresse) klicken Sie über dem Bildlauffeld auf der vertikalen Bildlaufleiste.  
   
 ## <a name="selecting-a-memory-location"></a>Auswählen eines Arbeitsspeicherorts  
  Wenn Sie sofort zu einer ausgewählten Speicherbereich wechseln möchten, erreichen Sie dies mithilfe eines Drag & Drop-Vorgangs oder bearbeiten den Wert in der **Adresse** Feld. Die **Adresse** Feld akzeptiert nicht nur numerische Werte, sondern auch Ausdrücke, die als Adressen ausgewertet. In der Standardeinstellung die **Arbeitsspeicher** Fenster behandelt eine **Adresse** Ausdruck als live-Ausdruck, der Ausführung des Programms erneut ausgewertet wird. Live-Ausdrücke können sehr hilfreich sein. Sie können beispielsweise dazu verwendet werden, den Speicher anzuzeigen, auf den ein Zeiger verweist.  
   
 #### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>So wählen Sie einen Arbeitsspeicherort per Drag &amp; Drop aus  
   
-1.  Wählen Sie in einem beliebigen Fenster eine Speicheradresse oder eine Zeigervariable aus, die eine Speicheradresse enthält.  
+1. Wählen Sie in einem beliebigen Fenster eine Speicheradresse oder eine Zeigervariable aus, die eine Speicheradresse enthält.  
   
-2.  Ziehen Sie die Adresse oder ein Zeiger auf die **Arbeitsspeicher** Fenster.  
+2. Ziehen Sie die Adresse oder ein Zeiger auf die **Arbeitsspeicher** Fenster.  
   
 #### <a name="to-select-a-memory-location-by-editing"></a>So wählen Sie eine Speicheradresse durch Eingeben aus  
   
-1.  In der **Arbeitsspeicher** wählen Sie im Fenster der **Adresse** Feld.  
+1. In der **Arbeitsspeicher** wählen Sie im Fenster der **Adresse** Feld.  
   
-2.  Geben oder fügen Sie die Adresse, die Sie verwenden möchten, finden Sie unter, und drücken dann die **EINGABETASTE**.  
+2. Geben oder fügen Sie die Adresse, die Sie verwenden möchten, finden Sie unter, und drücken dann die **EINGABETASTE**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Ändern der Anzeigemethode für Informationen im Fenster "Arbeitsspeicher"  
  Die Art und Weise der Anzeige des Speicherinhalts im Fenster **Arbeitsspeicher** kann angepasst werden. Standardmäßig wird der Speicherinhalt in Form einer ganzen Zahl mit 1 Byte im Hexadezimalformat angezeigt. Die Anzahl der Spalten wird automatisch durch die aktuelle Breite des Fensters bestimmt.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>So ändern Sie das Format des Speicherinhalts  
   
-1.  Mit der rechten Maustaste die **Arbeitsspeicher** Fenster.  
+1. Mit der rechten Maustaste die **Arbeitsspeicher** Fenster.  
   
-2.  Wählen Sie das gewünschte Format aus.  
+2. Wählen Sie das gewünschte Format aus.  
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>So ändern Sie die Anzahl der Spalten im Fenster "Arbeitsspeicher"  
   
@@ -104,9 +104,9 @@ Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der 
   
 #### <a name="to-toggle-the-toolbar"></a>So blenden Sie die Symbolleiste ein oder aus  
   
-1.  Mit der rechten Maustaste ein **Arbeitsspeicher** Fenster.  
+1. Mit der rechten Maustaste ein **Arbeitsspeicher** Fenster.  
   
-2.  Klicken Sie im Kontextmenü auf **Symbolleiste anzeigen**.  
+2. Klicken Sie im Kontextmenü auf **Symbolleiste anzeigen**.  
   
      Je nach ihrem vorherigen Zustand wird die Symbolleiste ein- bzw. ausgeblendet.  
   
@@ -115,9 +115,9 @@ Die **Arbeitsspeicher** Fenster bietet einen Einblick in den Speicherplatz, der 
   
 #### <a name="to-follow-a-pointer-through-memory"></a>So verfolgen Sie einen Zeiger im Arbeitsspeicher  
   
-1.  In der **Arbeitsspeicher** Fenster **Adresse** geben einen Zeigerausdruck. Die Zeigervariable muss sich im aktuellen Gültigkeitsbereich befinden. Je nach verwendeter Sprache müssen Sie u. U. den entsprechenden Verweis aufheben.  
+1. In der **Arbeitsspeicher** Fenster **Adresse** geben einen Zeigerausdruck. Die Zeigervariable muss sich im aktuellen Gültigkeitsbereich befinden. Je nach verwendeter Sprache müssen Sie u. U. den entsprechenden Verweis aufheben.  
   
-2.  Drücken Sie die **EINGABETASTE**.  
+2. Drücken Sie die **EINGABETASTE**.  
   
      Jetzt, wenn Sie verwenden einen Ausführungsbefehl wie z. B. **Schritt**, die Speicheradresse, die angezeigt wird, wird automatisch entsprechend der zeigerbewegung geändert.  
   

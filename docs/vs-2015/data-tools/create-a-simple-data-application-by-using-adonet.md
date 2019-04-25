@@ -14,18 +14,17 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58957705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047424"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus, beispielsweise Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual C# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.  
+Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus, beispielsweise Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual c# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.  
   
  Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf eine sehr schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.  
   
@@ -34,17 +33,17 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
   
  **Inhalt**  
   
--   [Die Beispieldatenbank einrichten](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Die Beispieldatenbank einrichten](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Die Formulare erstellen und Hinzufügen von Steuerelementen](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Die Formulare erstellen und Hinzufügen von Steuerelementen](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Die Verbindungszeichenfolge Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Die Verbindungszeichenfolge Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Abrufen der Verbindungszeichenfolge](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Abrufen der Verbindungszeichenfolge](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Der Code für die Formulare schreiben](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Der Code für die Formulare schreiben](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Testen Sie Ihre Anwendung](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Testen Sie Ihre Anwendung](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Erstellen der Anwendung benötigen Sie:  
@@ -57,12 +56,12 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
   
 - Die Verbindungszeichenfolge für die Datenbank, nachdem Sie sie eingerichtet haben. Sie finden diesen Wert durch Öffnen **Objekt-Explorer von SQL Server**, öffnen Sie das Kontextmenü für die Datenbank, indem **Eigenschaften**, und klicken Sie dann ein Bildlauf der **"ConnectionString"** Eigenschaft.  
   
-  In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio IDE vertraut sind und eine Windows Forms-Anwendung erstellen, diesem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in diesen Formularen einfügen, Eigenschaften für diese Steuerelemente einrichten und einfache Ereignisse programmieren können. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual C# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) vor der Installation in diesem Thema.  
+  In diesem Thema wird davon ausgegangen, dass Sie mit der grundlegenden Funktionalität der Visual Studio IDE vertraut sind und eine Windows Forms-Anwendung erstellen, diesem Projekt Formulare hinzufügen, Schaltflächen und andere Steuerelemente in diesen Formularen einfügen, Eigenschaften für diese Steuerelemente einrichten und einfache Ereignisse programmieren können. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual c# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) vor der Installation in diesem Thema.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Die Beispieldatenbank einrichten  
+## <a name="BKMK_setupthesampledatabase"></a> Die Beispieldatenbank einrichten  
  Die Beispieldatenbank für diese exemplarische Vorgehensweise besteht aus den Tabellen "Customer" und "Orders". Die Tabellen enthalten anfangs keine Daten, aber Sie fügen Daten hinzu, wenn Sie die von Ihnen erstellte Anwendung ausführen. Die Datenbank hat auch fünf einfache gespeicherte Prozeduren. [Erstellen Sie eine SQL­Datenbank mithilfe eines Skripts](../data-tools/create-a-sql-database-by-using-a-script.md) enthält ein Transact-SQL-Skript, das die Tabellen, die Primär- und Fremdschlüssel-Schlüssel, die Einschränkungen und die gespeicherten Prozeduren erstellt.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Die Formulare erstellen und Hinzufügen von Steuerelementen  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Die Formulare erstellen und Hinzufügen von Steuerelementen  
   
 1. Erstellen Sie ein Projekt für eine Windows Forms-Anwendung, und nennen Sie sie SimpleDataApp.  
   
@@ -70,11 +69,11 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
   
 2. Fügen Sie dem Projekt zwei Windows-Formulare hinzu, sodass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:  
   
-   -   Navigation  
+   - Navigation  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.  
   
@@ -120,33 +119,33 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
 |Schaltfläche|Name = btnFillOrder|  
 |Schaltfläche|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Die Verbindungszeichenfolge Store  
+## <a name="BKMK_storetheconnectionstring"></a> Die Verbindungszeichenfolge Store  
  Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Um zu vermeiden, die Zeichenfolge in jedem Formular manuell einzugeben, speichern Sie die Zeichenfolge in der Datei "App.config" in Ihrem Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode über ein beliebiges Formular in Ihrer Anwendung aufgerufen wird.  
   
  Sie finden die Verbindungszeichenfolge in **Objekt-Explorer von SQL Server** durch einen Rechtsklick auf die Datenbank, indem **Eigenschaften**, und suchen Sie dann die ConnectionString-Eigenschaft. Verwenden Sie STRG + A, um die Zeichenfolge auszuwählen.  
   
-1.  In **Projektmappen-Explorer**, wählen die **Eigenschaften** Knoten unter dem Projekt, und wählen Sie dann **Settings.settings**.  
+1. In **Projektmappen-Explorer**, wählen die **Eigenschaften** Knoten unter dem Projekt, und wählen Sie dann **Settings.settings**.  
   
-2.  In der **Namen** Spalte Geben Sie `connString`.  
+2. In der **Namen** Spalte Geben Sie `connString`.  
   
-3.  In der **Typ** Liste **(Verbindungszeichenfolge)**.  
+3. In der **Typ** Liste **(Verbindungszeichenfolge)**.  
   
-4.  In der **Bereich** Liste **Anwendung**.  
+4. In der **Bereich** Liste **Anwendung**.  
   
-5.  In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.  
+5. In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.  
   
 > [!NOTE]
 >  In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Abrufen der Verbindungszeichenfolge  
+## <a name="BKMK_retrievetheconnectionstring"></a> Abrufen der Verbindungszeichenfolge  
   
-1.  Wählen Sie auf der Menüleiste **Projekt** > **Verweis hinzufügen**, und dann einen Verweis auf "System.Configuration.dll" hinzuzufügen.  
+1. Wählen Sie auf der Menüleiste **Projekt** > **Verweis hinzufügen**, und dann einen Verweis auf "System.Configuration.dll" hinzuzufügen.  
   
-2.  Wählen Sie auf der Menüleiste **Projekt** > **Klasse hinzufügen** fügen dem Projekt eine Klassendatei, und nennen Sie die Datei `Utility`.  
+2. Wählen Sie auf der Menüleiste **Projekt** > **Klasse hinzufügen** fügen dem Projekt eine Klassendatei, und nennen Sie die Datei `Utility`.  
   
      Visual Studio erstellt die Datei und zeigt sie im **Projektmappen-Explorer**.  
   
-3.  Ersetzen Sie den Platzhaltercode in der Datei "Utility" durch folgenden Code. Beachten Sie die nummerierten Kommentare (mit vorangestelltem "Uti-"), die die Abschnitte des Codes kennzeichnen. In der Tabelle, die unter dem Code steht, werden wesentliche Punkte aufgeführt.  
+3. Ersetzen Sie den Platzhaltercode in der Datei "Utility" durch folgenden Code. Beachten Sie die nummerierten Kommentare (mit vorangestelltem "Uti-"), die die Abschnitte des Codes kennzeichnen. In der Tabelle, die unter dem Code steht, werden wesentliche Punkte aufgeführt.  
   
     ```csharp  
     using System;  
@@ -218,16 +217,16 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
     |-------------|-----------------|  
     |Util-1|Fügen Sie den `System.Configuration` -Namespace hinzu.|  
     |Util-2|Definieren Sie die Variable `returnValue`, und initialisieren Sie sie mit `null` (C#) oder `Nothing` (Visual Basic).|  
-    |Util-3|Obwohl Sie eingegeben haben `connString` als Namen für die Verbindungszeichenfolge in der **Eigenschaften** Fenster müssen Sie angeben `"SimpleDataApp.Properties.Settings.connString"` (C#) oder `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) im Code.|  
+    |Util-3|Obwohl Sie eingegeben haben `connString` als Namen für die Verbindungszeichenfolge in der **Eigenschaften** Fenster müssen Sie angeben `"SimpleDataApp.Properties.Settings.connString"` (c#) oder `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) im Code.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Der Code für die Formulare schreiben  
+## <a name="BKMK_writethecodefortheforms"></a> Der Code für die Formulare schreiben  
  Dieser Abschnitt enthält kurze Übersichten über den Zweck der einzelnen Formulare sowie den Code, der die Formulare erstellt. Nummerierte Kommentare kennzeichnen die Codeabschnitte.  
   
 ### <a name="navigation-form"></a>Navigationsformular  
  Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die Schaltfläche **Konto hinzufügen** öffnet das NewCustomer-Formular. Die Schaltfläche **Auftrag ausfüllen oder abbrechen** öffnet das FillOrCancel-Formular. Die Schaltfläche **Beenden** schließt die Anwendung.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Das Navigationsformular als Startformular festlegen  
- Wenn Sie C# in nutzen **Projektmappen-Explorer**, öffnen Sie die Datei "Program.cs", und ändern Sie dann die `Application.Run` Zeile: `Application.Run(new Navigation());`  
+ Wenn Sie c# in nutzen **Projektmappen-Explorer**, öffnen Sie die Datei "Program.cs", und ändern Sie dann die `Application.Run` Zeile: `Application.Run(new Navigation());`  
   
  Wenn Sie in Visual Basic verwenden **Projektmappen-Explorer**öffnen die **Eigenschaften** wählen Sie im Fenster der **Anwendung** Registerkarte, und wählen Sie dann  **"Simpledataapp.Navigation"** in die **Startformular** Liste.  
   
@@ -1140,5 +1139,5 @@ End Namespace
 |FC-8|Fügen Sie dem Click-Ereignishandler den Code für `btnFillOrder` hinzu. Dieser Code führt die gespeicherte Prozedur `Sales.uspFillOrder` aus.|  
 |FC-9|Erstellen Sie eine Methode, um sicherzustellen, dass `OrderID` ist bereit zum Übermitteln von als Parameter an die `SqlCommand` Objekt.<br /><br /> -Stellen Sie sicher, dass eine ID in eingegeben wurde `txtOrderID`.<br />– Verwenden Sie `Regex.IsMatch` um eine einfache Überprüfung für nicht ganzzahlige Zeichen zu definieren.<br />– Sie deklariert die `parsedOrderID` -Variable unter FC-2.<br />– Wenn die Eingabe gültig ist, konvertieren Sie den Text in eine ganze Zahl ein, und speichern Sie den Wert in der `parsedOrderID` Variable.<br />-Umschließen der `isOrderID` Methode, um die `btnFindByOrderID`, `btnCancelOrder`, und `btnFillOrder` Click-Ereignishandler.|  
   
-##  <a name="BKMK_testyourapplication"></a> Testen Sie Ihre Anwendung  
+## <a name="BKMK_testyourapplication"></a> Testen Sie Ihre Anwendung  
  Wählen Sie die F5-Taste zum Erstellen und Testen Ihre Anwendung aus, nachdem Sie die einzelnen Click-Ereignishandler code und dann nach dem Abschluss der Codierung.

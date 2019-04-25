@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio 2015 | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Automatisches Anwenden von Product Keys bei der Bereitstellung von Visual Studio 2015 | Microsoft-Dokumentation'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,22 +10,22 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834847"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656725"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Vorgehensweise: Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [automatisch Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Sie können den Product Key programmgesteuert als Teil eines Skripts anwenden, das zum Automatisieren der Bereitstellung von Visual Studio 2015 verwendet wird. Product Keys können während der Installation von Visual Studio oder nach der abgeschlossenen Installation auf einem Gerät programmgesteuert festgelegt werden.
 
 ## <a name="apply-the-license-during-installation"></a>Anwenden der Lizenz während der Installation
- Verwenden Sie den/ProductKey-Parameter, um einen Product Key beim Setupvorgang von Visual Studio anzuwenden. Dieser Setupparameter kann mit dem /Silent-Parameter verwendet werden, um Visual Studio in einem bereits lizenzierten Status für den Endbenutzer zu installieren. Öffnen Sie zum Testen des "/ProductKey"-Parameters eine Eingabeaufforderung. Führen Sie das Setupprogramm ("vs_enterprise.exe" oder "vs_professional.exe") aus, und legen Sie den "/ProductKey"-Parameter mit einem Product Key (25 Zeichen) fest, der keine Bindestriche enthält:
+ Verwenden Sie den/ProductKey-Parameter, um einen Product Key beim Setupvorgang von Visual Studio anzuwenden. Dieser Setupparameter kann mit dem /Silent-Parameter verwendet werden, um Visual Studio in einem bereits lizenzierten Status für den Endbenutzer zu installieren. Öffnen Sie zum Testen des "/ProductKey"-Parameters eine Eingabeaufforderung. Führen Sie das Setupprogramm (z.B. „vs_enterprise.exe“ oder „vs_professional.exe“) aus, und legen Sie den „/ProductKey“-Parameter mit einem Product Key (25 Zeichen) fest, der keine Bindestriche enthält:
 
  Dies ist eine Beispielbefehl für die Installation von Visual Studio 2015 Enterprise mit Product Key AAAAABBBBBCCCCCDDDDDEEEEEEE:
 
@@ -34,11 +34,11 @@ Sie können den Product Key programmgesteuert als Teil eines Skripts anwenden, d
 ## <a name="apply-the-license-after-installation"></a>Anwenden der Lizenz nach der Installation
  Sie können eine installierte Version von Visual Studio mit einem Product Key aktivieren, indem Sie das Hilfsprogramm „storePID.exe“ auf den Zielcomputern im automatischen Modus verwenden. „StorePID.exe“ ist ein Hilfsprogramm, das zusammen mit Visual Studio unter **\<Laufwerksbuchstabe>:\\\Programme (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe** installiert wird.
 
- Führen Sie das Hilfsprogramm „storePID.exe“ mit erhöhten Rechten aus, indem Sie entweder einen System Center-Agent oder eine Eingabeaufforderung mit erhöhten Rechten gefolgt vom Product Key (einschließlich der Bindestriche) und dem Microsoft Product Code (MPC) verwenden. Schließen Sie unbedingt die Bindestriche in den Product Key mit ein.
+ Führen Sie das Hilfsprogramm „storePID.exe“ mit erhöhten Rechten aus, indem Sie entweder einen System Center-Agent oder eine Eingabeaufforderung mit erhöhten Rechten gefolgt vom Product Key (einschließlich der Bindestriche) und dem Microsoft Product Code (MPC) verwenden. Schließen Sie unbedingt die Gedankenstriche in den Product Key mit ein!
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
- Dies ist eine Beispielbefehlszeile für die Installation von Visual Studio 2015 Enterprise mit einem MPC von 07060 und dem Product Key "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE":
+ Dies ist eine Beispielbefehlszeile für die Installation von Visual Studio 2015 Enterprise mit einem MPC von 07060 und dem Product Key „AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE“:
 
  `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 07060`
 
@@ -54,9 +54,10 @@ Sie können den Product Key programmgesteuert als Teil eines Skripts anwenden, d
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Weitere Informationen zum Abrufen eines Product Key finden Sie unter [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).
+Weitere Informationen zum Abrufen eines Product Key finden Sie unter [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).
 
- Wenn der Product Key im Hilfsprogramm „StorePID.exe“ erfolgreich angewendet wurde, wird 0 zurückgegeben. Wenn Fehler gefunden werden, wird eine Zahl zwischen 1 und 6 zurückgegeben.
+Wenn der Product Key im Hilfsprogramm „StorePID.exe“ erfolgreich angewendet wurde, wird 0 zurückgegeben. Wenn Fehler gefunden werden, wird eine Zahl zwischen 1 und 6 zurückgegeben.
 
 ## <a name="see-also"></a>Siehe auch
- [Installieren von Visual Studio](../install/install-visual-studio-2015.md)
+
+- [Installieren von Visual Studio](../install/install-visual-studio-2015.md)

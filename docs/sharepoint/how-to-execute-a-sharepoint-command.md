@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db95754fd27820e0686f65a22393f51510467fb6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049187"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Vorgehensweise: Führen Sie einen SharePoint-Befehl
   Wenn Sie das Serverobjektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie erstellen eine benutzerdefinierte *SharePoint-Befehls* zum Aufrufen der API. Nachdem Sie den Befehl zu definieren und mit der SharePoint-Tools-Erweiterung bereitgestellt haben, kann die Erweiterung den Befehl in der SharePoint-Serverobjektmodell aufrufen ausführen. Um den Befehl auszuführen, verwenden Sie eine der Methoden der ExecuteCommand ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt.
@@ -26,21 +26,21 @@ ms.locfileid: "56631184"
 
 ### <a name="to-execute-a-sharepoint-command"></a>Zum Ausführen eines SharePoint-Befehls
 
-1.  Erhalten Sie in der SharePoint-Tools-Erweiterung eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt. Die Möglichkeit, die Sie erhalten eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt abhängig ist, auf den Typ der Erweiterung, die Sie erstellen:
+1. Erhalten Sie in der SharePoint-Tools-Erweiterung eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt. Die Möglichkeit, die Sie erhalten eine <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt abhängig ist, auf den Typ der Erweiterung, die Sie erstellen:
 
-    -   Verwenden Sie in einer Erweiterung der SharePoint-Projektsystem die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> Eigenschaft.
+    - Verwenden Sie in einer Erweiterung der SharePoint-Projektsystem die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> Eigenschaft.
 
          Weitere Informationen zu Project-System-Erweiterungen, finden Sie unter [Erweitern der SharePoint-Projektsystem](../sharepoint/extending-the-sharepoint-project-system.md).
 
-    -   In einer Erweiterung von der **SharePoint-Verbindungen** Knoten im **Server-Explorer**, verwenden Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> Eigenschaft. Zum Abrufen einer <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> -Objekts die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> Eigenschaft.
+    - In einer Erweiterung von der **SharePoint-Verbindungen** Knoten im **Server-Explorer**, verwenden Sie die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> Eigenschaft. Zum Abrufen einer <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> -Objekts die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> Eigenschaft.
 
          Weitere Informationen zu **Server-Explorer** -Erweiterungen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
-    -   Verwenden Sie im Code, der nicht Teil einer Erweiterung der SharePoint-Tools, z. B. ein Projektvorlagen-Assistent, ist die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> Eigenschaft.
+    - Verwenden Sie im Code, der nicht Teil einer Erweiterung der SharePoint-Tools, z. B. ein Projektvorlagen-Assistent, ist die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> Eigenschaft.
 
          Weitere Informationen zu den Projektdienst abrufen, finden Sie unter [verwenden SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md).
 
-2.  Rufen Sie eine der Methoden der ExecuteCommand der <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt. Übergeben Sie den Namen des Befehls, die Sie auf das erste Argument der Methode ExecuteCommand ausführen möchten. Wenn der Befehl einen benutzerdefinierten Parameter verfügt, übergeben Sie diesen Parameter an das zweite Argument der ExecuteCommand-Methode.
+2. Rufen Sie eine der Methoden der ExecuteCommand der <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekt. Übergeben Sie den Namen des Befehls, die Sie auf das erste Argument der Methode ExecuteCommand ausführen möchten. Wenn der Befehl einen benutzerdefinierten Parameter verfügt, übergeben Sie diesen Parameter an das zweite Argument der ExecuteCommand-Methode.
 
      Es gibt eine andere ExecuteCommand Überladung für jeden unterstützten Befehlssignatur. Die folgende Tabelle enthält die unterstützten Signaturen und die Überladung auf, um für jede Signatur verwenden.
 
@@ -61,11 +61,11 @@ ms.locfileid: "56631184"
 
  Beachten Sie die folgenden Details über den Aufruf der <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> Methode:
 
--   Der erste Parameter gibt den Befehl, den aufgerufen werden soll. Diese Zeichenfolge mit dem Wert übereinstimmt, die Sie zum Übergeben der <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> in der Befehlsdefinition.
+- Der erste Parameter gibt den Befehl, den aufgerufen werden soll. Diese Zeichenfolge mit dem Wert übereinstimmt, die Sie zum Übergeben der <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> in der Befehlsdefinition.
 
--   Der zweite Parameter ist der Wert, den an den benutzerdefinierten zweiten Parameter des Befehls übergeben werden sollen. In diesem Fall ist der vollständige Pfad des der *.wsp* -Datei, die zur SharePoint-Website aktualisiert wird.
+- Der zweite Parameter ist der Wert, den an den benutzerdefinierten zweiten Parameter des Befehls übergeben werden sollen. In diesem Fall ist der vollständige Pfad des der *.wsp* -Datei, die zur SharePoint-Website aktualisiert wird.
 
--   Der Code übergibt die nicht den impliziten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> Parameter an den Befehl. Dieser Parameter wird übergeben an den Befehl automatisch, wenn Sie den Befehl über eine Erweiterung der SharePoint-Projektsystem oder eine Erweiterung von Aufrufen der **SharePoint-Verbindungen** Knoten **Server-Explorer**. In anderen Typen von Projektmappen, z. B. in einem Projekt-Assistenten, die implementiert die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> -Schnittstelle, die dieser Parameter ist **null**.
+- Der Code übergibt die nicht den impliziten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> Parameter an den Befehl. Dieser Parameter wird übergeben an den Befehl automatisch, wenn Sie den Befehl über eine Erweiterung der SharePoint-Projektsystem oder eine Erweiterung von Aufrufen der **SharePoint-Verbindungen** Knoten **Server-Explorer**. In anderen Typen von Projektmappen, z. B. in einem Projekt-Assistenten, die implementiert die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> -Schnittstelle, die dieser Parameter ist **null**.
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  In diesem Beispiel erfordert einen Verweis auf der Microsoft.VisualStudio.SharePoint-Assembly.

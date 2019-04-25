@@ -11,21 +11,21 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0a5b008df683694a20cce360fbd5e779e408d8
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58956019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058655"
 ---
 # <a name="security-of-text-templates"></a>Sicherheit von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Textvorlagen haben die folgenden Sicherheitsaspekte:  
   
--   Textvorlagen sind anfällig für Einfügen von beliebigem Code.  
+- Textvorlagen sind anfällig für Einfügen von beliebigem Code.  
   
--   Wenn der Mechanismus, den vom Host verwendet wird, finden Sie einen anweisungsprozessor nicht sicher ist, könnte ein böswilliger Direktivenprozessor ausgeführt werden.  
+- Wenn der Mechanismus, den vom Host verwendet wird, finden Sie einen anweisungsprozessor nicht sicher ist, könnte ein böswilliger Direktivenprozessor ausgeführt werden.  
   
 ## <a name="arbitrary-code"></a>Beliebigen Code  
  Wenn Sie eine Vorlage schreiben, Sie können Code einfügen, alle innerhalb der \<## > Tags. Dies kann beliebigen Code innerhalb einer Textvorlage ausgeführt werden.  

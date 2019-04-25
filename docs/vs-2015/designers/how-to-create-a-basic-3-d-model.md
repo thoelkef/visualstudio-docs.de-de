@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108307"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Vorgehensweise: Erstellen eines 3D-Basismodells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ba
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Objekten in einer Szene  
+- Hinzufügen von Objekten in einer Szene  
   
--   Flächen und Kanten auswählen  
+- Flächen und Kanten auswählen  
   
--   Übertragen der Auswahl  
+- Übertragen der Auswahl  
   
--   Verwenden der Tools **Unterteilen von Flächen** und **Extrudieren von Flächen**  
+- Verwenden der Tools **Unterteilen von Flächen** und **Extrudieren von Flächen**  
   
--   Verwenden des Befehls **Triangulieren**  
+- Verwenden des Befehls **Triangulieren**  
   
 ## <a name="creating-a-basic-3-d-model"></a>Erstellen eines 3D-Basismodells  
  Sie können den Modell-Editor zum Erstellen und Ändern von 3D-Modellen und -Szenen für Ihre Spiele und Apps verwenden. Die folgenden Schritte zeigen, wie Sie den Modell-Editor verwenden, um ein vereinfachtes 3D-Modell eines Hauses zu erstellen. Ein vereinfachtes Modell kann als Ersatz für die endgültigen Grafikobjekte verwendet werden, die noch erstellt werden. Es dient als ein Gitter zur Kollisionserkennung oder als ein Modell mit niedrigen Details, das verwendet wird, wenn ein Objekt, das es darstellt, zu weit weg ist, um von detaillierterem Rendering zu profitieren.  

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796763"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857839"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Entwickeln von JavaScript- und TypeScript-Code in Visual Studio ohne Projektmappen oder Projekte
 
@@ -27,7 +27,7 @@ Mit Visual Studio 2017 wurde die Möglichkeit eingeführt, [Code ohne Projekte o
 Klicken Sie zunächst in der Symbolleiste auf **Datei** > **Öffnen** > **Ordner**. Im Projektmappen-Explorer werden alle Dateien im Ordner angezeigt und Sie können die Dateien zum Bearbeiten öffnen. Im Hintergrund werden die Dateien indiziert, um NPM-Features und Features zum Kompilieren und Debuggen zu aktivieren.
 
 > [!IMPORTANT]
-> Für viele in diesem Artikel beschriebene Features ist Visual Studio 2017 Version 15.8 erforderlich, so auch für die NPM-Integration.
+> Für viele in diesem Artikel beschriebene Features ist Visual Studio 2017 Version 15.8 oder höher erforderlich, so auch für die npm-Integration.
 
 ## <a name="npm-integration"></a>NPM-Integration
 

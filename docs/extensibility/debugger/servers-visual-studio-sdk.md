@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111778"
 ---
 # <a name="servers-visual-studio-sdk"></a>Server (Visual Studio SDK)
 Architektur der Debugger eine *Server*:
 
--   Ist ein Container für Ports und Portanbieter und Ports und Portanbieter kommuniziert, auf die sitzungsbasierter Debug-Manager (SDM) und die Debug-Engines.
+- Ist ein Container für Ports und Portanbieter und Ports und Portanbieter kommuniziert, auf die sitzungsbasierter Debug-Manager (SDM) und die Debug-Engines.
 
--   Können Sie sich selbst identifizieren, anhand des Namens und listet die Ports und Portanbieter.
+- Können Sie sich selbst identifizieren, anhand des Namens und listet die Ports und Portanbieter.
 
--   Wird durch dargestellt eine [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) -Schnittstelle, die nur von Visual Studio (eine Instanz eines Servers für jede Instanz von Visual Studio ausgeführt wird) implementiert wird.
+- Wird durch dargestellt eine [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) -Schnittstelle, die nur von Visual Studio (eine Instanz eines Servers für jede Instanz von Visual Studio ausgeführt wird) implementiert wird.
 
 ## <a name="see-also"></a>Siehe auch
 - [Ports](../../extensibility/debugger/ports.md)

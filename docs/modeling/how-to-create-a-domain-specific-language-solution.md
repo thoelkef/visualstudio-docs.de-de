@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051348"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mit speziellen Visual Studio-Projektmappe erstellt.
@@ -54,9 +54,9 @@ Bevor Sie dieses Verfahren starten können, werden installieren Sie diese Kompon
 
 3. Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.
 
-   -   Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können diese out durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das in das Menü "Visual Studio SDK" gefunden werden kann.
+   - Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können diese out durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das in das Menü "Visual Studio SDK" gefunden werden kann.
 
-   -   Wenn eine andere Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+   - Wenn eine andere Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
 4. Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).
 
@@ -85,15 +85,15 @@ Geben Sie eine neue Dateierweiterung ein.
 
  Wenn Sie eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden tun:
 
--   Geben Sie eine andere Dateinamenerweiterung.
+- Geben Sie eine andere Dateinamenerweiterung.
 
      \- oder –
 
--   Zurücksetzen der experimentellen Instanz von Visual Studio. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.
+- Zurücksetzen der experimentellen Instanz von Visual Studio. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.
 
      \- oder –
 
--   Wenn Sie eine Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, deinstallieren Sie es aus. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+- Wenn Sie eine Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, deinstallieren Sie es aus. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
 ### <a name="product-settings-page"></a>Settings-Produktseite
  **Was ist der Name des Produkts, das die neue domänenspezifische Sprache gehört?**

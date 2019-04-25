@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105063"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
   Referenzinformationen zu den Elementen in Aktivitätsdiagrammen finden Sie unter [UML-Aktivitätsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-activity-diagrams-reference.md).  
   
-##  <a name="Relationships"></a> Beziehung zu anderen Diagrammen  
+## <a name="Relationships"></a> Beziehung zu anderen Diagrammen  
  Wenn Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäftsprozess oder die Art und Weise der Verwendung des Systems durch Benutzer zu beschreiben, können Sie ein Anwendungsfalldiagramm zeichnen, das eine andere Ansicht der gleichen Informationen liefert. Im Anwendungsfalldiagramm zeichnen Sie Aktionen als Anwendungsfälle. Weisen Sie den Anwendungsfällen den gleichen Namen zu wie den entsprechenden Aktionen. Die Anwendungsfallansicht bietet Ihnen folgende Vorteile:  
   
 - Sie können in einem Diagramm mithilfe einer Includes-Beziehung darstellen, wie größere Aktionen/Anwendungsfälle aus kleineren Aktionen/Anwendungsfällen zusammengesetzt sind.  
@@ -56,51 +56,51 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
   In einem Aktivitätsdiagramm können Sie den Fluss der zwischen Aktionen übergebenen Daten darstellen. Finden Sie im Abschnitt [Beschreiben des Datenflusses](#DataFlows). Ein Aktivitätsdiagramm beschreibt jedoch nicht die Struktur der Daten. Zu diesem Zweck können Sie ein UML-Klassendiagramm zeichnen. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Aktivitätsdiagrammen  
+## <a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Aktivitätsdiagrammen  
  Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-draw-an-activity-diagram"></a>So zeichnen Sie ein Aktivitätsdiagramm  
   
-1.  Auf der **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
+1. Auf der **Architektur** Menü klicken Sie auf **neues UML- oder Ebenendiagramm**.  
   
-2.  Klicken Sie unter **Vorlagen**, klicken Sie auf **UML-Aktivitätsdiagramm**.  
+2. Klicken Sie unter **Vorlagen**, klicken Sie auf **UML-Aktivitätsdiagramm**.  
   
-3.  Benennen Sie das Diagramm.  
+3. Benennen Sie das Diagramm.  
   
-4.  In **zu Modellierungsprojekt hinzufügen**, wählen Sie ein vorhandenes Modellierungsprojekt aus, in der Projektmappe oder **Neues Modellierungsprojekt erstellen**.  
+4. In **zu Modellierungsprojekt hinzufügen**, wählen Sie ein vorhandenes Modellierungsprojekt aus, in der Projektmappe oder **Neues Modellierungsprojekt erstellen**.  
   
 #### <a name="to-draw-elements-on-an-activity-diagram"></a>So zeichnen Sie Elemente in einem Aktivitätsdiagramm  
   
-1.  Ziehen Sie Elemente aus der Toolbox in das Diagramm.  
+1. Ziehen Sie Elemente aus der Toolbox in das Diagramm.  
   
      Fügen Sie zunächst die Hauptaktivitäten in das Diagramm ein, verbinden Sie sie, und nehmen Sie dann letzte Änderungen vor, indem Sie z. B. den Start- und Endknoten hinzufügen.  
   
     > [!NOTE]
     >  Sie können keine vorhandenen Elemente aus dem UML-Modell-Explorer in das Diagramm ziehen.  
   
-2.  Gehen Sie folgendermaßen vor, um die Elemente zu verbinden:  
+2. Gehen Sie folgendermaßen vor, um die Elemente zu verbinden:  
   
-    1.  In der **Aktivitätsdiagramm** Toolbox klicken Sie auf **Connector**.  
+    1. In der **Aktivitätsdiagramm** Toolbox klicken Sie auf **Connector**.  
   
-    2.  Klicken Sie im Diagramm auf das Quellelement.  
+    2. Klicken Sie im Diagramm auf das Quellelement.  
   
-    3.  Klicken Sie auf das Zielelement.  
+    3. Klicken Sie auf das Zielelement.  
   
         > [!NOTE]
         >  Um ein Tool mehrmals zu verwenden, doppelklicken Sie in der Toolbox auf das Tool.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>So verschieben Sie eine Aktivität in ein anderes Paket  
   
--   In **UML-Modell-Explorer**, ziehen Sie die Aktivität in einem Paket.  
+- In **UML-Modell-Explorer**, ziehen Sie die Aktivität in einem Paket.  
   
      \- oder –  
   
--   In **UML-Modell-Explorer**mit der rechten Maustaste auf die Aktivität, und klicken Sie auf **Ausschneiden**. Klicken Sie dann mit der rechten Maustaste in des Pakets, und klicken Sie auf **einfügen**.  
+- In **UML-Modell-Explorer**mit der rechten Maustaste auf die Aktivität, und klicken Sie auf **Ausschneiden**. Klicken Sie dann mit der rechten Maustaste in des Pakets, und klicken Sie auf **einfügen**.  
   
     > [!NOTE]
     >  Die Aktivität wird erst dann im UML-Modell-Explorer angezeigt, wenn Sie dem Diagramm das erste Element hinzufügen.  
   
-##  <a name="SimpleControlFlow"></a> Beschreiben der Ablaufsteuerung  
+## <a name="SimpleControlFlow"></a> Beschreiben der Ablaufsteuerung  
  Ein Aktivitätsdiagramm beschreibt einen Geschäftsprozess oder einen Softwarealgorithmus als eine Reihe von Aktionen. Konnektorpfeile stellen dar, wie die Kontrolle nacheinander von einer Aktion an die nächste übergeben wird. Normalerweise kann eine Aktion erst gestartet werden, nachdem die vorherige Aktion abgeschlossen wurde.  
   
  In der folgenden Beispielabbildung wird gezeigt, wie Sie eine Sequenz von Aktionen mit Aktionen, Konnektoren, Verzweigungen und Schleifen darstellen können. In den folgenden Abschnitten wird jedes Element ausführlicher erläutert.  
@@ -124,18 +124,18 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
 ### <a name="describing-decisions-and-loops"></a>Beschreiben von Entscheidungen und Schleifen  
   
--   Verwenden einer **Entscheidungsknoten** (3) einen Punkt an, in dem das Ergebnis einer Entscheidung den nächsten Schritt bestimmt. Sie können beliebig viele ausgehende Pfade zeichnen.  
+- Verwenden einer **Entscheidungsknoten** (3) einen Punkt an, in dem das Ergebnis einer Entscheidung den nächsten Schritt bestimmt. Sie können beliebig viele ausgehende Pfade zeichnen.  
   
--   Wenn Sie mithilfe des Aktivitätsdiagramms einen Teil einer Anwendung definieren, sollten Sie die Wächter (4) definieren, um eindeutig anzugeben, unter welchen Bedingungen die einzelnen Pfade verwendet werden sollten. Mit der rechten Maustaste in des Connectors, klicken Sie auf **Eigenschaften**, und klicken Sie in der **Eigenschaften** geben einen Wert für die **Guard** Feld.  
+- Wenn Sie mithilfe des Aktivitätsdiagramms einen Teil einer Anwendung definieren, sollten Sie die Wächter (4) definieren, um eindeutig anzugeben, unter welchen Bedingungen die einzelnen Pfade verwendet werden sollten. Mit der rechten Maustaste in des Connectors, klicken Sie auf **Eigenschaften**, und klicken Sie in der **Eigenschaften** geben einen Wert für die **Guard** Feld.  
   
--   Es ist nicht immer erforderlich, die Wächter zu definieren. Wenn Sie z. B. mithilfe des Aktivitätsdiagramms einen Geschäftsprozess oder ein Interaktionsprotokoll beschreiben, definiert eine Verzweigung den Bereich von Optionen, die für den Benutzer oder die interagierenden Komponenten verfügbar sind.  
+- Es ist nicht immer erforderlich, die Wächter zu definieren. Wenn Sie z. B. mithilfe des Aktivitätsdiagramms einen Geschäftsprozess oder ein Interaktionsprotokoll beschreiben, definiert eine Verzweigung den Bereich von Optionen, die für den Benutzer oder die interagierenden Komponenten verfügbar sind.  
   
--   Verwenden einer **Zusammenführungsknoten** (5), um zwei oder mehr alternative Flüsse zusammenzuführen, die an verzweigt eine **Entscheidungsknoten**.  
+- Verwenden einer **Zusammenführungsknoten** (5), um zwei oder mehr alternative Flüsse zusammenzuführen, die an verzweigt eine **Entscheidungsknoten**.  
   
     > [!NOTE]
     >  Verwenden Sie eine **Zusammenführungsknoten** um alternative Flüsse, statt Sie zusammen an einer Aktion zusammenzuführen. Im Beispiel ist es nicht korrekt für die Verbindung den Entscheidungsknoten direkt zurück an **Menüpunkt wählen**. Der Grund hierfür ist, dass eine Aktion erst gestartet wird, wenn alle Kontrollthreads an allen Eingangskonnektoren angekommen sind. Daher sollten Sie nur parallele Flüsse an einer Aktion zusammenführen. Weitere Informationen finden Sie unter [parallele Flüsse](#Concurrent).  
   
--   Beschreiben Sie Schleifen mithilfe von Verzweigungen, wie im Beispiel gezeigt.  
+- Beschreiben Sie Schleifen mithilfe von Verzweigungen, wie im Beispiel gezeigt.  
   
     > [!NOTE]
     >  Versuchen Sie, Schleifen wie in Programmcode in einer sinnvollen Struktur zu schachteln. Wenn Sie einen vorhandenen Geschäftsprozess beschreiben, lassen sich hierdurch eventuell Verbesserungsmöglichkeiten erkennen.  
@@ -143,13 +143,13 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="starting-the-activity"></a>Starten der Aktivität  
  Es gibt zwei Möglichkeiten, Einstiegspunkte einer Aktivität anzugeben:  
   
--   **Startknoten**  
+- **Startknoten**  
   
      Erstellen Sie eine **Startknoten** (6), um die erste Aktion der Aktivität anzugeben.  
   
      Diese Methode ist besonders hilfreich, wenn Sie eine Unteraktivität beschreiben, oder wenn Sie nicht explizit angeben müssen, wodurch die Aktivität ausgelöst wird. Beispielsweise beginnt die Aktivität „Gericht bestellen“ zweifelsfrei, wenn ein Kunde hungrig wird.  
   
--   **Ereignisknoten akzeptieren**  
+- **Ereignisknoten akzeptieren**  
   
      Erstellen Sie **Knoten zum Akzeptieren eines Ereignisses**, wie im Abschnitt beschriebene [parallele Flüsse](#Concurrent), um den Anfang eines Threads anzugeben, der auf ein bestimmtes Ereignis, z. B. eine Benutzereingabe reagiert. Geben Sie keinen eingehenden Fluss für den Knoten an. Wenn kein eingehender Fluss angegeben wird, bedeutet dies, dass bei jedem Eintreten des Ereignisses ein Thread gestartet wird.  
   
@@ -158,9 +158,9 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="ending-the-activity"></a>Beenden der Aktivität  
  Verwenden einer **Aktivitätsendknoten** (7), um das Ende einer Aktivität anzugeben.  
   
--   Wenn ein Kontrollthread erreicht eine **Aktivitätsendknoten**, alle Aktivitäten des gleichzeitigen Aktionen und Unteraktivitäten zu beenden.  
+- Wenn ein Kontrollthread erreicht eine **Aktivitätsendknoten**, alle Aktivitäten des gleichzeitigen Aktionen und Unteraktivitäten zu beenden.  
   
--   Sie können mehrere Aktivitätsendknoten verwenden, um durch eine geringere Anzahl von Konnektoren die Übersichtlichkeit zu verbessern.  
+- Sie können mehrere Aktivitätsendknoten verwenden, um durch eine geringere Anzahl von Konnektoren die Übersichtlichkeit zu verbessern.  
   
 ### <a name="interrupting-the-activity"></a>Unterbrechen der Aktivität  
  Um zu beschreiben, wie der normale Fluss einer Aktivität unterbrochen werden kann, beispielsweise wenn sich der Benutzer entscheidet, den Vorgang abzubrechen, können Sie einen Knoten zum Akzeptieren eines Ereignisses erstellen, der auf dieses Ereignis lauscht. Weitere Informationen finden Sie im Abschnitt [parallele Flüsse](#Concurrent). Erstellen Sie eine Ablaufsteuerung von diesem Knoten zu einem Aktivitätsendknoten (7).  
@@ -174,12 +174,12 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
   Einfache Formen sind kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.  
   
-##  <a name="DataFlows"></a> Beschreiben des Datenflusses  
+## <a name="DataFlows"></a> Beschreiben des Datenflusses  
  Sie können die eingehenden und ausgehenden Daten einer Aktivität auf zweierlei Weise beschreiben:  
   
--   Verwenden einer **-Objekt Knoten**. Dies ist die einfachste Methode, um die zwischen Aktivitäten fließenden Informationen zu beschreiben. Ein Objektknoten ist mit einer Variablen in einem Programm vergleichbar. Er stellt ein Element dar, das einen oder mehrere Werte speichert, die zwischen Aktionen übergeben werden.  
+- Verwenden einer **-Objekt Knoten**. Dies ist die einfachste Methode, um die zwischen Aktivitäten fließenden Informationen zu beschreiben. Ein Objektknoten ist mit einer Variablen in einem Programm vergleichbar. Er stellt ein Element dar, das einen oder mehrere Werte speichert, die zwischen Aktionen übergeben werden.  
   
--   Verwenden einer **Ausgabe Pin** und **Eingabe der Pin**. Mit dieser Methode können Sie die Ausgaben einer Aktion und die Eingaben einer anderen Aktion getrennt beschreiben. Pins sind mit Parametern in einem Programm vergleichbar. Pins stellen Ports dar, an denen Objekte in eine Aktion eintreten und eine Aktion verlassen können.  
+- Verwenden einer **Ausgabe Pin** und **Eingabe der Pin**. Mit dieser Methode können Sie die Ausgaben einer Aktion und die Eingaben einer anderen Aktion getrennt beschreiben. Pins sind mit Parametern in einem Programm vergleichbar. Pins stellen Ports dar, an denen Objekte in eine Aktion eintreten und eine Aktion verlassen können.  
   
     > [!NOTE]
     >  Einen Überblick über die in diesem Abschnitt verwendeten Elemente finden Sie im Datenfluss Abschnitt des Themas finden Sie unter [UML-Aktivitätsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-activity-diagrams-reference.md).  
@@ -207,17 +207,17 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Sie können angeben, wie die Elemente in einem Puffer gespeichert werden, indem Sie Eigenschaften des Objektknotens festlegen:  
   
--   Legen Sie die **Bestellung** Eigenschaft:  
+- Legen Sie die **Bestellung** Eigenschaft:  
   
-    -   **Ungeordnete** an eine zufällige oder nicht angegebene Reihenfolge. (Standardeinstellung)  
+    - **Ungeordnete** an eine zufällige oder nicht angegebene Reihenfolge. (Standardeinstellung)  
   
-    -   **Geordnete** eine Reihenfolge nach einem bestimmten Schlüssel angegeben.  
+    - **Geordnete** eine Reihenfolge nach einem bestimmten Schlüssel angegeben.  
   
-    -   **FIFO-Prinzip** an eine Bestellung von First in, First out.  
+    - **FIFO-Prinzip** an eine Bestellung von First in, First out.  
   
-    -   **LIFO** eine Reihenfolge der Last in, First Out angegeben.  
+    - **LIFO** eine Reihenfolge der Last in, First Out angegeben.  
   
--   Legen Sie die **Obergrenze** Eigenschaft, um die maximale Anzahl von Objekten, die enthalten sein können im Puffer anzugeben. Der Standardwert ist *. Dies bedeutet, dass keine Begrenzung definiert ist.  
+- Legen Sie die **Obergrenze** Eigenschaft, um die maximale Anzahl von Objekten, die enthalten sein können im Puffer anzugeben. Der Standardwert ist *. Dies bedeutet, dass keine Begrenzung definiert ist.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Beschreiben des Datenflusses mit Eingabe- und Ausgabepins  
  Verwenden einer **Ausgabepin** und **Eingabepin** auf die Ausgaben einer Aktion und die Eingaben einer anderen Aktion getrennt beschreiben.  
@@ -236,16 +236,16 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Alternativ können Sie angeben, dass der Objektfluss eine Transformation einschließt, mit der Daten vom Typ des Ausgabepins in den Typ des Eingabepins (oder umgekehrt) konvertiert werden. Die häufigste Transformation dieser Art extrahiert einfach den entsprechenden Teil aus einem größeren Typ. Im Beispiel in der Abbildung wird eine Transformation vorausgesetzt, die die Lieferadresse aus den Bestellungsdetails extrahiert.  
   
-##  <a name="Details"></a> Definieren einer Aktion im Detail  
+## <a name="Details"></a> Definieren einer Aktion im Detail  
  Sie können nicht nur das normalerweise zu erzielende Ergebnis einer Aktion anhand ihres Namens angeben, sondern einer Aktion mit den folgenden Methoden auch weitere Informationen hinzufügen:  
   
--   Schreiben Sie eine ausführlichere Beschreibung in der **Text** Eigenschaft. Sie können z. B. ein Fragment von Programmcode oder Pseudocode oder eine vollständige Beschreibung der erzielten Ergebnisse schreiben.  
+- Schreiben Sie eine ausführlichere Beschreibung in der **Text** Eigenschaft. Sie können z. B. ein Fragment von Programmcode oder Pseudocode oder eine vollständige Beschreibung der erzielten Ergebnisse schreiben.  
   
--   Ersetzen Sie die Aktion durch eine Aktion zum Aufrufen eines Verhaltens, und beschreiben Sie das ausführliche Verhalten in einem eigenen Aktivitätsdiagramm. Finden Sie unter [Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens](#Subactivities).  
+- Ersetzen Sie die Aktion durch eine Aktion zum Aufrufen eines Verhaltens, und beschreiben Sie das ausführliche Verhalten in einem eigenen Aktivitätsdiagramm. Finden Sie unter [Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens](#Subactivities).  
   
--   Legen Sie der Aktion des **Local Postconditions** und **Local Preconditions** Eigenschaften, die ihr Ergebnis ausführlicher zu beschreiben. Weitere Informationen finden Sie unter [Definieren von Nachbedingungen und Vorbedingungen](#Postcondition).  
+- Legen Sie der Aktion des **Local Postconditions** und **Local Preconditions** Eigenschaften, die ihr Ergebnis ausführlicher zu beschreiben. Weitere Informationen finden Sie unter [Definieren von Nachbedingungen und Vorbedingungen](#Postcondition).  
   
-###  <a name="Subactivities"></a> Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens  
+### <a name="Subactivities"></a> Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens  
  Sie können das Verhalten einer Aktion mithilfe eines eigenen Aktivitätsdiagramms ausführlich beschreiben. Ein aufgerufenes Verhalten ist ein Aktivitätsdiagramm, das im Hauptaktivitätsdiagramm durch eine Aktion zum Aufrufen eines Verhaltens dargestellt wird. Sie können mit der Aktion zum Aufrufen eines Verhaltens auch Verhalten beschreiben, das unterschiedlichen Aktivitäten gemeinsam ist, sodass Sie die Unteraktivität nicht mehrmals zeichnen müssen.  
   
  In der folgenden Abbildung zeigt Diagramm 1 eine Aktivität, die über eine Aktion zum Aufrufen eines Verhaltens verfügt, und Diagramm 2 zeigt das Unteraktivitätsdiagramm, in dem das aufgerufene Verhalten dargestellt wird.  
@@ -254,22 +254,22 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>So beschreiben Sie eine Unteraktivität mit einer Aktion zum Aufrufen eines Verhaltens  
   
-1.  Erstellen Sie das Diagramm für die untergeordnete Aktivität, in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**.  
+1. Erstellen Sie das Diagramm für die untergeordnete Aktivität, in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **neues Element**.  
   
-2.  In der **neues Element hinzufügen** Dialogfeld **Vorlagen** klicken Sie auf **Aktivitätsdiagramm** und klicken Sie in der **Namen** geben den Namen, den Sie zuweisen möchten. Ihre **Verhaltensaktion zum Aufrufen eines**.  
+2. In der **neues Element hinzufügen** Dialogfeld **Vorlagen** klicken Sie auf **Aktivitätsdiagramm** und klicken Sie in der **Namen** geben den Namen, den Sie zuweisen möchten. Ihre **Verhaltensaktion zum Aufrufen eines**.  
   
-3.  Zeichnen Sie den ausführlichen Arbeitsfluss für die Unteraktivität. Dies ist das aufgerufene Verhalten.  
+3. Zeichnen Sie den ausführlichen Arbeitsfluss für die Unteraktivität. Dies ist das aufgerufene Verhalten.  
   
-    -   Im Diagramm aufgerufene Unteraktivität der **Startknoten** angibt, wo die Kontrolle beginnt, wenn das aufgerufene Verhalten aufgerufen wird. Die **Aktivitätsendknoten** zeigt, in dem Steuerelement an die übergeordnete Aktivität zurückgeben soll.  
+    - Im Diagramm aufgerufene Unteraktivität der **Startknoten** angibt, wo die Kontrolle beginnt, wenn das aufgerufene Verhalten aufgerufen wird. Die **Aktivitätsendknoten** zeigt, in dem Steuerelement an die übergeordnete Aktivität zurückgeben soll.  
   
-4.  Legen Sie die **Verhalten** Eigenschaft der **Aktion zum Aufrufen eines Verhaltens** zum Verweisen auf das Diagramm aufgerufene Verhalten.  
+4. Legen Sie die **Verhalten** Eigenschaft der **Aktion zum Aufrufen eines Verhaltens** zum Verweisen auf das Diagramm aufgerufene Verhalten.  
   
     > [!NOTE]
     >  Das Unteraktivitätsdiagramm muss über Elemente verfügen, oder das Diagramm nicht zur Verfügung, in der Dropdown-Liste für die **Verhalten** Eigenschaft. Darüber hinaus das Dreizacksymbol erscheinen nicht auf Ihre **Aktion zum Aufrufen eines Verhaltens** Form erst nach dem Festlegen der **Verhalten** Eigenschaft.  
   
-5.  Legen Sie die **Is Synchronous** Eigenschaft der Aktion, um anzugeben, ob Ihre Aktivität wartet, bis die aufgerufene Aktivität abgeschlossen.  
+5. Legen Sie die **Is Synchronous** Eigenschaft der Aktion, um anzugeben, ob Ihre Aktivität wartet, bis die aufgerufene Aktivität abgeschlossen.  
   
-    -   Setzen Sie **Is Synchronous** auf "false", Sie sind an, dass der Fluss mit der nächsten Aktion fortgesetzt werden kann, bevor die aufgerufene Aktivität abgeschlossen ist. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.  
+    - Setzen Sie **Is Synchronous** auf "false", Sie sind an, dass der Fluss mit der nächsten Aktion fortgesetzt werden kann, bevor die aufgerufene Aktivität abgeschlossen ist. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.  
   
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Beschreiben des Datenflusses in und aus Unteraktivitäten  
  Sie können den Datenfluss in und aus Unteraktivitäten auf die gleiche Weise wie die Verwendung von Parametern in Software beschreiben.  
@@ -285,7 +285,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
   ![Pins werden beim Aufrufen eines Verhaltens Aktivitätsparametern zugeordnet](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
-###  <a name="Postcondition"></a> Definieren von Nachbedingungen und Vorbedingungen  
+### <a name="Postcondition"></a> Definieren von Nachbedingungen und Vorbedingungen  
  Können Sie die **Local Postconditions** und **Local Preconditions** Eigenschaften ausführlich das Ergebnis einer Aktion angeben. Diese Eigenschaften beschreiben die Auswirkung der Aktion, jedoch nicht, wie die Auswirkung erreicht wird.  
   
  Um diese Eigenschaften festlegen, mit der rechten Maustaste in der Aktions aus, und klicken Sie dann auf **Eigenschaften**. Geben Sie Werte in die Eigenschaftenfelder im Eigenschaftenfenster ein.  
@@ -311,15 +311,15 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 ### <a name="describing-calls-to-operations"></a>Beschreiben der Aufrufe von Vorgängen  
  Im Allgemeinen beschreibt eine Aktion Arbeit, die von einer beliebigen Kombination von Personen, Software oder Computern ausgeführt wird. Sie können jedoch mit einer Aktion zum Aufrufen eines Vorgangs den Aufruf einer bestimmten Softwaremethode oder -funktion beschreiben.  
   
--   Legen Sie den Namen der Aktion zum Aufrufen eines Vorgangs fest, um anzugeben, welcher Vorgang für welches Objekt bzw. welche Komponente aufgerufen wird.  
+- Legen Sie den Namen der Aktion zum Aufrufen eines Vorgangs fest, um anzugeben, welcher Vorgang für welches Objekt bzw. welche Komponente aufgerufen wird.  
   
--   Fügen Sie der Aktion zum Aufrufen eines Vorgangs Eingabe- und Ausgabepins hinzu, um Parameter und Rückgabewerte zu beschreiben.  
+- Fügen Sie der Aktion zum Aufrufen eines Vorgangs Eingabe- und Ausgabepins hinzu, um Parameter und Rückgabewerte zu beschreiben.  
   
--   Sie können festlegen, die **Is Synchronous** Eigenschaft der Aktion, um anzugeben, ob Ihre Aktivität wartet, bis der Vorgang abgeschlossen.  
+- Sie können festlegen, die **Is Synchronous** Eigenschaft der Aktion, um anzugeben, ob Ihre Aktivität wartet, bis der Vorgang abgeschlossen.  
   
-    -   Setzen Sie **Is Synchronous** auf "false", Sie sind an, dass der Fluss mit der nächsten Aktion fortgesetzt werden kann, bevor der aufgerufene Vorgang abgeschlossen ist. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.  
+    - Setzen Sie **Is Synchronous** auf "false", Sie sind an, dass der Fluss mit der nächsten Aktion fortgesetzt werden kann, bevor der aufgerufene Vorgang abgeschlossen ist. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.  
   
-##  <a name="Concurrent"></a> Parallele Flüsse  
+## <a name="Concurrent"></a> Parallele Flüsse  
  Können Sie die **Gabelungsknoten** und **Joinknoten** um zwei oder mehr Threads von Aktivitäten beschreiben, die zur gleichen Zeit ausgeführt werden kann.  
   
  ![Die Zweig- und Joinknoten zeigen gleichzeitige Flüsse](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")  
@@ -336,22 +336,22 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 #### <a name="sending-a-signal"></a>Senden eines Signals  
  Verwenden Sie eine Aktion zum Senden eines Signals (3), um anzugeben, dass ein Signal oder eine Meldung an andere Aktivitäten oder Prozesse gesendet wird. Geben Sie mit dem Namen der Aktion an, welche Art von Meldung von der Aktion gesendet wird.  
   
--   Die Kontrolle wird sofort an die nächste Aktion in der Ablaufsteuerung übergeben, sofern vorhanden.  
+- Die Kontrolle wird sofort an die nächste Aktion in der Ablaufsteuerung übergeben, sofern vorhanden.  
   
--   Sie können mit einer Aktion zum Senden eines Signals nicht beschreiben, wie der Prozess auf zurückgegebene Informationen reagiert. Verwenden Sie hierzu eine eigene Aktion zum Akzeptieren eines Ereignisses.  
+- Sie können mit einer Aktion zum Senden eines Signals nicht beschreiben, wie der Prozess auf zurückgegebene Informationen reagiert. Verwenden Sie hierzu eine eigene Aktion zum Akzeptieren eines Ereignisses.  
   
--   Sie können den eingehenden Datenfluss einer Aktion zum Senden eines Signals darstellen, um anzugeben, welche Daten mit der ausgehenden Meldung gesendet werden können. Weitere Informationen finden Sie unter [Beschreiben des Datenflusses](#DataFlows).  
+- Sie können den eingehenden Datenfluss einer Aktion zum Senden eines Signals darstellen, um anzugeben, welche Daten mit der ausgehenden Meldung gesendet werden können. Weitere Informationen finden Sie unter [Beschreiben des Datenflusses](#DataFlows).  
   
 #### <a name="waiting-for-a-signal-or-event"></a>Warten auf ein Signal oder Ereignis  
  Verwenden Sie eine Aktion zum Akzeptieren eines Ereignisses (4), um anzugeben, dass diese Aktivität auf ein externes Ereignis oder eine externe eingehende Meldung wartet. Geben Sie mit dem Namen der Aktion den Typ des Ereignisses an, auf das die Aktion wartet.  
   
--   Um darzustellen, dass die Aktivität an einem bestimmten Punkt im Fluss auf ein externes Ereignis oder eine externe Meldung wartet, zeichnen Sie an der entsprechenden Stelle in der Aktivität eine Aktion zum Akzeptieren eines Ereignisses mit einem eingehenden Fluss.  
+- Um darzustellen, dass die Aktivität an einem bestimmten Punkt im Fluss auf ein externes Ereignis oder eine externe Meldung wartet, zeichnen Sie an der entsprechenden Stelle in der Aktivität eine Aktion zum Akzeptieren eines Ereignisses mit einem eingehenden Fluss.  
   
--   Um darzustellen, dass die Aktivität jederzeit auf ein externes Ereignis oder eine externe Meldung reagieren kann, zeichnen Sie eine Aktion zum Akzeptieren eines Ereignisses ohne eingehenden Fluss. Wenn das benannte externe Ereignis eintritt, beginnt in der Aktivität ein neuer Thread beginnend mit der Aktion zum Akzeptieren eines Ereignisses.  
+- Um darzustellen, dass die Aktivität jederzeit auf ein externes Ereignis oder eine externe Meldung reagieren kann, zeichnen Sie eine Aktion zum Akzeptieren eines Ereignisses ohne eingehenden Fluss. Wenn das benannte externe Ereignis eintritt, beginnt in der Aktivität ein neuer Thread beginnend mit der Aktion zum Akzeptieren eines Ereignisses.  
   
--   Sie können mithilfe einer Aktion zum Akzeptieren eines Ereignisses keinen vom Absender des Signals zurückgegebenen Wert beschreiben. Verwenden Sie hierzu eine eigene Aktion zum Senden eines Signals.  
+- Sie können mithilfe einer Aktion zum Akzeptieren eines Ereignisses keinen vom Absender des Signals zurückgegebenen Wert beschreiben. Verwenden Sie hierzu eine eigene Aktion zum Senden eines Signals.  
   
--   Sie können ausgehende Datenflüsse der Aktion darstellen, um zu zeigen, wie die Aktivität empfangene Daten des Signals verarbeitet. Wenn Sie mehr als ein Ausgabe-Flow anzeigen möchten, legen Sie die **IsUnmarshall** Eigenschaft von die Ereignisaktion akzeptieren, was bedeutet, dass die Aktion das eingehende Signal in seine einzelnen Komponenten analysiert. Weitere Informationen finden Sie unter [Beschreiben des Datenflusses](#DataFlows).  
+- Sie können ausgehende Datenflüsse der Aktion darstellen, um zu zeigen, wie die Aktivität empfangene Daten des Signals verarbeitet. Wenn Sie mehr als ein Ausgabe-Flow anzeigen möchten, legen Sie die **IsUnmarshall** Eigenschaft von die Ereignisaktion akzeptieren, was bedeutet, dass die Aktion das eingehende Signal in seine einzelnen Komponenten analysiert. Weitere Informationen finden Sie unter [Beschreiben des Datenflusses](#DataFlows).  
   
 ### <a name="describing-multiple-data-flows"></a>Beschreiben von mehreren Datenflüssen  
  Sie können mehrere ausgehende Ablaufsteuerungen oder Objektflüsse einer Aktion zeichnen, um anzugeben, dass am Ende der Aktion mehrere Threads entstehen. Das Resultat ähnelt dem Ergebnis einer Gabelung, mit der Ausnahme, dass Sie eine Kombination von Ablaufsteuerungen und Objektflüssen verwenden können.  
@@ -398,31 +398,31 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
 - Fügen Sie einen Kommentar an den Eingabe- oder Ausgabepin an.  
   
-  -   Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie beginnen, den Kommentar mit <\<**Transformation**>> oder <\<**Auswahl**>>.  
+  - Um diese Beschreibung von einem allgemeinen Kommentar zu unterscheiden, können Sie beginnen, den Kommentar mit <\<**Transformation**>> oder <\<**Auswahl**>>.  
   
 - Geben Sie die Details der Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an.  
   
-  -   Wenn Sie diese Methode verwenden, fügen Sie auch einen Kommentar an, um für die Leser deutlich zu machen, dass die Transformation definiert wurde.  
+  - Wenn Sie diese Methode verwenden, fügen Sie auch einen Kommentar an, um für die Leser deutlich zu machen, dass die Transformation definiert wurde.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>So geben Sie eine Transformation oder Auswahl in einem eigenen Aktivitätsdiagramm an  
   
 1. Erstellen Sie ein neues Aktivitätsdiagramm, in dem der Transformations- oder Auswahlfluss beschrieben werden soll.  
   
-   -   In **Projektmappen-Explorer**, mit der rechten Maustaste in des Projekts, zeigen Sie auf **hinzufügen**, klicken Sie auf **neues Element**, und klicken Sie dann auf **Aktivitätsdiagramm**. Weisen Sie dem Diagramm einen entsprechenden Namen für den Transformations- oder Auswahlfluss zu. Klicken Sie auf **Hinzufügen**.  
+   - In **Projektmappen-Explorer**, mit der rechten Maustaste in des Projekts, zeigen Sie auf **hinzufügen**, klicken Sie auf **neues Element**, und klicken Sie dann auf **Aktivitätsdiagramm**. Weisen Sie dem Diagramm einen entsprechenden Namen für den Transformations- oder Auswahlfluss zu. Klicken Sie auf **Hinzufügen**.  
   
 2. Führen Sie im neuen Diagramm die folgenden Schritte aus:  
   
-   1.  Erstellen Sie zwei Aktivitätsparameterknoten, einen für den Eingabefluss und einen für die Ausgabe.  
+   1. Erstellen Sie zwei Aktivitätsparameterknoten, einen für den Eingabefluss und einen für die Ausgabe.  
   
-   2.  Erstellen Sie mit Objektflüssen verbundene Aktionen. Dies veranschaulicht die Funktionsweise der Transformation oder Auswahl.  
+   2. Erstellen Sie mit Objektflüssen verbundene Aktionen. Dies veranschaulicht die Funktionsweise der Transformation oder Auswahl.  
   
 3. Führen Sie in jedem Diagramm, in dem Sie die Transformation oder Auswahl verwenden möchten, die folgenden Schritte aus:  
   
-   1.  Erstellen Sie einen Objektfluss, d. h. einen Konnektor zu oder von einem Eingabepin, Ausgabepin, Objektknoten oder Aktivitätsparameterknoten.  
+   1. Erstellen Sie einen Objektfluss, d. h. einen Konnektor zu oder von einem Eingabepin, Ausgabepin, Objektknoten oder Aktivitätsparameterknoten.  
   
-   2.  Mit der rechten Maustaste des Objektfluss, und klicken Sie dann auf **Eigenschaften**.  
+   2. Mit der rechten Maustaste des Objektfluss, und klicken Sie dann auf **Eigenschaften**.  
   
-   3.  In der **Transformation** oder **Auswahl** -Eigenschaft, wählen Sie das Diagramm, in dem Sie den Transformations- oder Auswahlfluss angegeben haben.  
+   3. In der **Transformation** oder **Auswahl** -Eigenschaft, wählen Sie das Diagramm, in dem Sie den Transformations- oder Auswahlfluss angegeben haben.  
   
    Sie können auch eine Auswahl für einen Objektknoten sowie für einzelne Eingabe- und Ausgabepins definieren. Definieren Sie eine Auswahlaktivität wie oben beschrieben, und legen Sie dann die **Auswahl** Eigenschaft des Objektknotens oder Eingabe- oder Ausgabepin.  
   

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065108"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf. Die Eigenschaften weisen keine übereinstimmenden Typen auf: \<Eigenschaftennamen>.  
   
  Zuordnungen werden im Dialogfeld **Zuordnungs-Editor** von den ausgewählten **Zuordnungseigenschaften** definiert. Eigenschaften auf jeder Seite der Zuordnung müssen den gleichen Datentyp haben.  
@@ -28,13 +27,13 @@ Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – die Eigenschaften
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-1.  Notieren Sie die in der Meldung genannten Eigenschaften.  
+1. Notieren Sie die in der Meldung genannten Eigenschaften.  
   
-2.  Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
+2. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.  
   
-3.  Überprüfen Sie die **Zuordnungseigenschaften**, und wählen Sie Eigenschaften des gleichen Datentyps aus.  
+3. Überprüfen Sie die **Zuordnungseigenschaften**, und wählen Sie Eigenschaften des gleichen Datentyps aus.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen einer Zuordnung (Beziehung) zwischen LINQ to SQL-Klassen (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

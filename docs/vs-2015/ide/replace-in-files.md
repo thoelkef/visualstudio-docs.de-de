@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082593"
 ---
 # <a name="replace-in-files"></a>In Dateien ersetzen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54779241"
   
 ### <a name="to-display-replace-in-files"></a>So zeigen Sie „In Dateien ersetzen“ an  
   
-1.  Erweitern Sie im Menü **Bearbeiten** das Fenster **Suchen und Ersetzen**.  
+1. Erweitern Sie im Menü **Bearbeiten** das Fenster **Suchen und Ersetzen**.  
   
-2.  Wählen Sie **In Dateien ersetzen** aus.  
+2. Wählen Sie **In Dateien ersetzen** aus.  
   
      - oder -  
   

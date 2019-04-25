@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074751"
 ---
 # <a name="vsix-color-editor"></a>VSIX-Farb-Editor
 Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von Farben für Visual Studio. Das Tool kann auch Design-Ressourcenschlüssel generieren, damit, dass die Farben im Code verwendet werden können. Dieses Tool eignet sich zum Ausführen von Farben für Visual Studio-Erweiterung, die Designs unterstützt. Mit diesem Tool kann PKGDEF und XML-Dateien öffnen. Visual Studio-Designs (.vstheme-Dateien) können mit Visual Studio Extension-Farb-Editor verwendet werden, durch die Dateierweiterung in XML zu ändern. Darüber hinaus können .vstheme-Dateien in einer aktuellen XML-Datei importiert werden.
@@ -28,13 +28,13 @@ Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von
 
  Ein Token für die Farbe besteht aus vier Elemente:
 
--   **Kategoriename:** Eine logische Gruppierung für einen Satz von Farben. Verwenden Sie den Kategorienamen einer vorhandenen aus, wenn Sie Farben, die spezifisch auf die gewünschte UI-Element oder eine Gruppe von Elementen der Benutzeroberfläche sind bereits vorhanden sind.
+- **Kategoriename:** Eine logische Gruppierung für einen Satz von Farben. Verwenden Sie den Kategorienamen einer vorhandenen aus, wenn Sie Farben, die spezifisch auf die gewünschte UI-Element oder eine Gruppe von Elementen der Benutzeroberfläche sind bereits vorhanden sind.
 
--   **Tokenname:** Ein beschreibender Namen für die Farbe, token und legt ihn fest. Umfassen, Hintergrund und Tokennamen Vordergrund (Text) als auch alle ihre Status, und diese sollten benannt werden, damit es ist leicht zu erkennen, die Paare und die Zustände, denen sie gelten.
+- **Tokenname:** Ein beschreibender Namen für die Farbe, token und legt ihn fest. Umfassen, Hintergrund und Tokennamen Vordergrund (Text) als auch alle ihre Status, und diese sollten benannt werden, damit es ist leicht zu erkennen, die Paare und die Zustände, denen sie gelten.
 
--   **RGB-Werte (oder Blasen angeordnet):** Erforderlich für jedes farbige Design. Immer erstellen Sie Hintergrund- und RGB-Werte in Paare. Farben werden für die Hintergrund-/Vordergrundfarbe gekoppelt, sodass die Textfarbe (Vordergrund) immer vor dem Hintergrund gelesen werden, auf denen es gezeichnet wird. Diese Farben werden verknüpft und werden zusammen verwendet werden, in der Benutzeroberfläche. Wenn der Hintergrund nicht für die Verwendung mit Text vorgesehen ist, ist Sie eine Vordergrundfarbe nicht definiert.
+- **RGB-Werte (oder Blasen angeordnet):** Erforderlich für jedes farbige Design. Immer erstellen Sie Hintergrund- und RGB-Werte in Paare. Farben werden für die Hintergrund-/Vordergrundfarbe gekoppelt, sodass die Textfarbe (Vordergrund) immer vor dem Hintergrund gelesen werden, auf denen es gezeichnet wird. Diese Farben werden verknüpft und werden zusammen verwendet werden, in der Benutzeroberfläche. Wenn der Hintergrund nicht für die Verwendung mit Text vorgesehen ist, ist Sie eine Vordergrundfarbe nicht definiert.
 
--   **System-Farbname:** Für die Verwendung im hohen Kontrast angezeigt werden.
+- **System-Farbname:** Für die Verwendung im hohen Kontrast angezeigt werden.
 
 ## <a name="how-to-use-the-tool"></a>Gewusst wie: Verwenden Sie das tool
  So weit wie möglich ist, und falls zutreffend, sollten vorhandene Visual Studio-Farben anstatt neue wiederverwendet werden. Allerdings sollte in Fällen, in denen keine richtigen Farben definiert sind, benutzerdefinierte Farben erstellt werden um eine Erweiterung Design kompatibel zu halten.
@@ -67,7 +67,7 @@ Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von
 
 - Aktiv
 
-- inaktiv
+- Inaktiv
 
 - MouseOver
 
@@ -75,7 +75,7 @@ Das Visual Studio-Erweiterung Farb-Editor-Tool kann erstellen und Bearbeiten von
 
 - Ausgewählt
 
-- Focused (Mit Fokus)
+- Focused
 
   Beispiele für einige Tokennamen für Teile des Listenelement-Steuerelements:
 

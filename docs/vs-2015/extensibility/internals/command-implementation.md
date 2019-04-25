@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067832"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der folgenden Flags:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl unterstützt wird.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl unterstützt wird.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl nicht sichtbar sein soll.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl nicht sichtbar sein soll.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl eingeschaltet ist, und es wird angezeigt, die überprüft wurden.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl eingeschaltet ist, und es wird angezeigt, die überprüft wurden.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl aktiviert ist.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl aktiviert ist.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer, und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer, und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).  
   
 - Wenn der Befehl definiert wurde, in der VSCT-Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:  
   
-  -   Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.  
+  - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.  
   
-  -   Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.  
+  - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.  
   
   Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.  
   

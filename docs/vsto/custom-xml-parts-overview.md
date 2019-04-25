@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052778"
 ---
 # <a name="custom-xml-parts-overview"></a>Übersicht über benutzerdefinierte XML-Teile
   Sie können XML-Daten für einige Microsoft Office-Anwendungen in Dokumente einbetten. Wenn Sie XML-Daten in ein Dokument einbetten, werden die Daten als eine *benutzerdefinierten XML-Abschnitt*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616221"
 
  Weitere Informationen zur Struktur von Open XML und benutzerdefinierten XML-Elementen finden Sie in den folgenden Artikeln:
 
--   [Einführung in die Office (2007) Open XML-Dateiformate](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Einführung in die Office (2007) Open XML-Dateiformate](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Vorgehensweise: Bearbeiten von Dokumenten im Open XML-Formate](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Vorgehensweise: Bearbeiten von Dokumenten im Open XML-Formate](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [Exemplarische Vorgehensweise: Word 2007 XML-format](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [Exemplarische Vorgehensweise: Word 2007 XML-format](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Erstellen von Dokumenten in Word 2007 Open XML-Formaten](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Erstellen von Dokumenten in Word 2007 Open XML-Formaten](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Excel, Word und PowerPoint ermöglichen auch die Verwendung benutzerdefinierter XML-Elemente in Dokumenten, die in den binären Dateiformaten gespeichert werden. Wenn ein Dokument in einem binären Format gespeichert wird, können Sie benutzerdefinierte XML-Elemente jedoch nicht hinzufügen oder ändern, ohne die jeweilige Microsoft Office-Anwendung zu starten.
@@ -66,9 +66,9 @@ ms.locfileid: "56616221"
 
  Wenn Sie ein benutzerdefiniertes XML-Element mit Visual Studio erstellen möchten, fügen Sie der Auflistung  <xref:Microsoft.Office.Core.CustomXMLParts> im Dokument ein neues <xref:Microsoft.Office.Core.CustomXMLPart>-Objekt hinzu. Weitere Informationen finden Sie unter den folgenden Themen:
 
--   [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Vorgehensweise: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Ändern von XML-Elemente ohne die Office-Anwendung starten
  Sie können ein benutzerdefiniertes XML-Element hinzufügen oder ändern, ohne Excel, PowerPoint oder Word zu starten. Dies ist hilfreich, wenn Sie mit XML-Daten in einem Dokument auf einem Computer arbeiten möchten, auf dem keine Microsoft Office-Anwendungen installiert sind (z. B. auf einem Server).

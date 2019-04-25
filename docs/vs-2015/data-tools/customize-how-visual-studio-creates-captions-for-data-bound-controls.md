@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58961455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079479"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf den Windows Forms-Designer, der eine besondere Überlegungen kommt ins Spiel: die Spaltennamen in den sind neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter sind miteinander verkettete gefunden Sie werden. Sie können anpassen, dass die Möglichkeit, die in der diese Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte im die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data Designer** Registrierungsschlüssel.
 
@@ -61,21 +60,21 @@ Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsof
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>So ändern Sie das intelligente Untertitel Verhalten des Fensters Datenquellen
 
-1.  Öffnen Sie ein Befehlsfenster, indem Sie auf **starten** und dann **ausführen**.
+1. Öffnen Sie ein Befehlsfenster, indem Sie auf **starten** und dann **ausführen**.
 
-2.  Typ `regedit` in die **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
+2. Typ `regedit` in die **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
 
-3.  Erweitern Sie die **HKEY_CURRENT_USER** Knoten.
+3. Erweitern Sie die **HKEY_CURRENT_USER** Knoten.
 
-4.  Erweitern Sie die **Software** Knoten.
+4. Erweitern Sie die **Software** Knoten.
 
-5.  Erweitern Sie die **Microsoft** Knoten.
+5. Erweitern Sie die **Microsoft** Knoten.
 
-6.  Erweitern Sie die **VisualStudio** Knoten.
+6. Erweitern Sie die **VisualStudio** Knoten.
 
-7.  Mit der rechten Maustaste die **10.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
+7. Mit der rechten Maustaste die **10.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
 
-8.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionExpression`.
+8. Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionExpression`.
 
 9. Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionReplacement`.
 
@@ -97,21 +96,21 @@ Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsof
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>So deaktivieren Sie die intelligenten Untertitel-Funktion
 
-1.  Öffnen Sie ein Befehlsfenster, indem Sie auf **starten** und dann **ausführen**.
+1. Öffnen Sie ein Befehlsfenster, indem Sie auf **starten** und dann **ausführen**.
 
-2.  Typ `regedit` in die **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
+2. Typ `regedit` in die **ausführen** (Dialogfeld), und klicken Sie auf **OK**.
 
-3.  Erweitern Sie die **HKEY_CURRENT_USER** Knoten.
+3. Erweitern Sie die **HKEY_CURRENT_USER** Knoten.
 
-4.  Erweitern Sie die **Software** Knoten.
+4. Erweitern Sie die **Software** Knoten.
 
-5.  Erweitern Sie die **Microsoft** Knoten.
+5. Erweitern Sie die **Microsoft** Knoten.
 
-6.  Erweitern Sie die **VisualStudio** Knoten.
+6. Erweitern Sie die **VisualStudio** Knoten.
 
-7.  Mit der rechten Maustaste die **10.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
+7. Mit der rechten Maustaste die **10.0** Knoten, und erstellen Sie ein neues **Schlüssel** mit dem Namen `Data Designers`.
 
-8.  Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionExpression`.
+8. Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionExpression`.
 
 9. Mit der rechten Maustaste die **Datendesigner** Knoten, und erstellen Sie ein neues **Zeichenfolgenwert** mit dem Namen `SmartCaptionReplacement`.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098887"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../i
   
 - Stellen Sie sicher, dass Sie den Pfad des Windows-Symbolcaches festgelegt haben. Führen Sie eine der folgenden Schritte durch, um den Symbolcachepfad festzulegen:  
   
-  -   Legen Sie die Debugger-> Symbole-Option im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE auf den richtigen Pfad fest.  
+  - Legen Sie die Debugger-> Symbole-Option im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE auf den richtigen Pfad fest.  
   
-  -   Fügen Sie der VSPerfReport-Befehlszeile die Option -symbolpath hinzu, um Ihre Symbole einzuschließen.  
+  - Fügen Sie der VSPerfReport-Befehlszeile die Option -symbolpath hinzu, um Ihre Symbole einzuschließen.  
   
 - Wenn keine Symbole in [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] angezeigt werden, stellen Sie sicher, dass Sie den Symbolserver ordnungsgemäß für den ASP-Server eingerichtet haben.  
   

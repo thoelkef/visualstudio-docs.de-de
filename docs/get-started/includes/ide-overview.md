@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342749"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807605"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -91,22 +91,24 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ![Visual Studio, Member-Liste](../media/intellisense-list-members.png)
 
-- [Schnellstart](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Suchfeld
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld **Schnellstart** finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert **Schnellstart** Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionen wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie den Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
 
    > [!TIP]
-   > Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld **Schnellstart** zu wechseln.
+   > Verwenden Sie die Tastenkombination **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
 
    ::: moniker range="vs-2017"
 
    ![Suchfeld „Schnellstart“ in Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Weitere Informationen finden Sie unter [Schnellstart](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Suchfeld „Schnellstart“ in Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+   ![Suchfeld in Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

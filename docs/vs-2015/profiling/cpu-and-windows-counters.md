@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046247"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -104,24 +104,24 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>So zeigen Sie eine Liste aller Windows-Indikatoren an, die auf der aktuellen Plattform unterstützt werden  
   
-1.  Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
+1. Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
   
-2.  Klicken Sie auf **Windows-Indikatoren**.  
+2. Klicken Sie auf **Windows-Indikatoren**.  
   
-3.  Wählen Sie **Windows-Indikatoren auflisten** aus.  
+3. Wählen Sie **Windows-Indikatoren auflisten** aus.  
   
-4.  Wählen Sie aus der Liste **Indikatorkategorie** eine Gruppe von Leistungsindikatoren aus. Der Windows-Leistungsindikator für die Gruppe wird im Listenfeld angezeigt.  
+4. Wählen Sie aus der Liste **Indikatorkategorie** eine Gruppe von Leistungsindikatoren aus. Der Windows-Leistungsindikator für die Gruppe wird im Listenfeld angezeigt.  
   
-     **Hinweis:** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.  
+     **Hinweis**: Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorsammlung zurückzukehren.  
   
 ### <a name="command-line"></a>Befehlszeile  
  Mit dem Befehlszeilentool [VSPerfCmd](../profiling/vsperfcmd.md) können Sie die auf einem Computer verfügbaren CPU-Indikatoren in der Befehlszeile aufführen.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>So führen Sie die CPU-Indikatoren auf, die auf der aktuellen Plattform unterstützt werden  
   
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.  
+1. Öffnen Sie ein Eingabeaufforderungsfenster.  
   
-2.  Typ  
+2. Typ  
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
@@ -133,4 +133,4 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
  [Übersichten](../profiling/overviews-performance-tools.md)   
  [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)   
  [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)   
- [Gewusst wie: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)
+ [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)

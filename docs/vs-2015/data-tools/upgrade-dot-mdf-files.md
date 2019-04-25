@@ -22,17 +22,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079907"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisieren, nachdem Sie eine neuere Version von Visual Studio installiert. Es enthält Anweisungen für die folgenden Aufgaben:  
   
 - Ein Upgrade für eine Datenbankdatei um eine neuere Version von SQL Server Express LocalDB zu verwenden.  
@@ -55,15 +54,15 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
   
  Vor dem upgrade einer Datenbank sollten Sie der folgenden Kriterien:  
   
--   Aktualisieren Sie nicht, wenn Sie auf das Projekt in einer älteren Version und eine neuere Version von Visual Studio arbeiten möchten.  
+- Aktualisieren Sie nicht, wenn Sie auf das Projekt in einer älteren Version und eine neuere Version von Visual Studio arbeiten möchten.  
   
--   Aktualisieren Sie nicht, wenn Ihre Anwendung in Umgebungen verwendet werden, die SQL Server Express anstelle von LocalDB verwenden.  
+- Aktualisieren Sie nicht, wenn Ihre Anwendung in Umgebungen verwendet werden, die SQL Server Express anstelle von LocalDB verwenden.  
   
--   Wenn Ihre Anwendung Remoteverbindungen verwendet nicht aktualisiert werden, da LocalDB nicht akzeptieren.  
+- Wenn Ihre Anwendung Remoteverbindungen verwendet nicht aktualisiert werden, da LocalDB nicht akzeptieren.  
   
--   Aktualisieren Sie nicht, wenn Ihre Anwendung auf Internet Information Services (IIS) basiert.  
+- Aktualisieren Sie nicht, wenn Ihre Anwendung auf Internet Information Services (IIS) basiert.  
   
--   Erwägen Sie ein Upgrade aus, wenn Sie datenbankanwendungen in einer sandboxumgebung testen möchten, aber nicht, eine Datenbank zu verwalten möchten.  
+- Erwägen Sie ein Upgrade aus, wenn Sie datenbankanwendungen in einer sandboxumgebung testen möchten, aber nicht, eine Datenbank zu verwalten möchten.  
   
 ### <a name="to-upgrade-a-database-file"></a>Upgrade von einer Datenbankdatei  
   
@@ -71,17 +70,17 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
   
 2. In der **Verbindung hinzufügen** Dialogfeld geben die folgende Informationen:  
   
-   -   **Datenquelle**: `Microsoft SQL Server (SqlClient)`  
+   - **Datenquelle**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **Servername**:  
+   - **Servername**:  
   
-       -   Verwenden Sie die Standard-Version: `(localdb)\MSSQLLocalDB`.  Dies wird geben ProjectV12 oder ProjectV13, je nachdem, welche Version von Visual Studio installiert ist und wann die erste LocalDB-Instanz erstellt wurde. Die **MSSQLLocalDB** Knoten **Objekt-Explorer von SQL Server** zeigt, welche Version sie verweist auf.  
+       - Verwenden Sie die Standard-Version: `(localdb)\MSSQLLocalDB`.  Dies wird geben ProjectV12 oder ProjectV13, je nachdem, welche Version von Visual Studio installiert ist und wann die erste LocalDB-Instanz erstellt wurde. Die **MSSQLLocalDB** Knoten **Objekt-Explorer von SQL Server** zeigt, welche Version sie verweist auf.  
   
-       -   Um eine bestimmte Version verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 LocalDB 2014 ist und V13 LocalDB 2016.  
+       - Um eine bestimmte Version verwenden: `(localdb)\ProjectsV12` oder `(localdb)\ProjectsV13`, wobei V12 LocalDB 2014 ist und V13 LocalDB 2016.  
   
-   -   **Anfügen einer Datenbankdatei**: Der physische Pfad der primären MDF-Datei.  
+   - **Anfügen einer Datenbankdatei**: Der physische Pfad der primären MDF-Datei.  
   
-   -   **Der logische Name**: Der Name, die Sie mit der Datei verwenden möchten.  
+   - **Der logische Name**: Der Name, die Sie mit der Datei verwenden möchten.  
   
 3. Klicken Sie auf die Schaltfläche **OK**.  
   
@@ -103,11 +102,11 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Mit der Datenbank in Visual Studio arbeiten, aber behalten ihre Kompatibilität mit SQL Server Express  
   
--   Öffnen Sie in Visual Studio das Projekt, ohne dass eine Aktualisierung.  
+- Öffnen Sie in Visual Studio das Projekt, ohne dass eine Aktualisierung.  
   
-    -   Um das Projekt auszuführen, wählen Sie die F5-Taste.  
+    - Um das Projekt auszuführen, wählen Sie die F5-Taste.  
   
-    -   Um die Datenbank zu bearbeiten, öffnen Sie die MDF-Datei in **Projektmappen-Explorer**, und erweitern Sie im Knoten **Server-Explorer** zum Arbeiten mit Ihrer Datenbank.  
+    - Um die Datenbank zu bearbeiten, öffnen Sie die MDF-Datei in **Projektmappen-Explorer**, und erweitern Sie im Knoten **Server-Explorer** zum Arbeiten mit Ihrer Datenbank.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Um SQL Server Express, die Standard-Datenbank-Engine zu machen.  
   

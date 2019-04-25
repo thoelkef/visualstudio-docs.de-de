@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054767"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, z. B. einem Editor oder Designer, die Mitgliedschaft in und Darstellung der **Toolbox**zu verwalten.  
@@ -27,9 +27,9 @@ Das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ermöglicht einem VSPackage, 
   
  Die Unterstützung ist begrenzt auf Editoren und Designer, die Folgendes erfordern:  
   
-1.  Die Implementierung eines Factoryobjekts zum Bereitstellen von Instanzen des Editors oder Designers. Weitere Informationen zum Implementieren von einem Designer- oder Editor-Factoryobjekt finden Sie unter [Editor Factories](../extensibility/editor-factories.md).  
+1. Die Implementierung eines Factoryobjekts zum Bereitstellen von Instanzen des Editors oder Designers. Weitere Informationen zum Implementieren von einem Designer- oder Editor-Factoryobjekt finden Sie unter [Editor Factories](../extensibility/editor-factories.md).  
   
-2.  Die Registrierung der Toolbox-Registerkarte, die automatisch aktiviert wird, wenn der Editor bzw. Designer angezeigt wird.  
+2. Die Registrierung der Toolbox-Registerkarte, die automatisch aktiviert wird, wenn der Editor bzw. Designer angezeigt wird.  
   
 ## <a name="controlling-the-toolbox"></a>Steuern der Toolbox  
  Durch Erweiterung der Automatisierungsunterstützung stellt das [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] folgende Schnittstellen bereit, damit VSPackages die Verwaltung der **Toolbox** besser steuern können.  

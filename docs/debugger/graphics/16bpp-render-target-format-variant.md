@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075791"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 Bit pro Pixel-Renderzielformat-Variante
 Setzt das Pixelformat für alle Renderziele und Hintergrundpuffer auf DXGI_FORMAT_B5G6R5_UNORM.
@@ -45,14 +45,14 @@ Anwendungen, die Teil einer Swapkette erläutert haben ein Hintergrundpuffer-For
 
    GPU-Architekturen, die Kachel-Rendering-Techniken verwenden sehen beachtliche Leistungsvorteile mithilfe eines 16 Bit pro Pixel-Frame-Puffer-Formats. Diese Verbesserung ist, da ein größerer Teil der Framepuffer im Puffercache für jede Kachel in der lokalen Frame eingepasst werden kann. Kachel-Rendering-Architekturen sind manchmal in GPUs in mobilen Handsets und Tablet-Computern zu finden; außerhalb dieser Nische kommen sie selten vor.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Das Renderzielfomat wird mit jedem Aufruf von `ID3D11Device::CreateTexture2D`, der ein Renderziel erstellt, auf DXGI_FORMAT_B5G6R5_UNORM zurückgesetzt. Vor allem wird das Format überschrieben, wenn das in pDesc übergebene D3D11_TEXTURE2D_DESC-Objekt eines der folgenden Renderziele beschreibt:
 
--   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_TARGET gesetzt.
+- Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_TARGET gesetzt.
 
--   Für das BindFlags-Member ist das Flag D3D11_BIND_DEPTH_STENCIL gelöscht.
+- Für das BindFlags-Member ist das Flag D3D11_BIND_DEPTH_STENCIL gelöscht.
 
--   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.
+- Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.
 
 ## <a name="restrictions-and-limitations"></a>Einschränkungen
  Da das Format B5G6R5 über keinen Alpha-Kanal verfügt, werden Alpha-Inhalte von dieser Variante nicht beibehalten. Wenn das Rendering Ihrer App einen Alpha-Kanal in Ihrem Renderziel erfordert, können Sie nicht einfach zum Format B5G6R5 wechseln.

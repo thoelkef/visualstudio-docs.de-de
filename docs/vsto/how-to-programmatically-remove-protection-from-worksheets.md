@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd071a10ab456014190df4f84d6a0bff13c859b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ccf7de70c3ef741119ec22f8fa9bc76868a47030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084218"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Vorgehensweise: Programmgesteuertes Aufheben des Schutzes von Arbeitsblättern
   Sie können den Schutz programmgesteuert aus einem Microsoft Office Excel-Arbeitsblatt entfernen.
@@ -31,14 +31,14 @@ ms.locfileid: "56604843"
 
 ## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>So heben Sie den Schutz eines Arbeitsblatts bei der Anpassung auf Dokumentebene auf
 
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> Methode des Arbeitsblatts, und übergeben Sie das Kennwort bei Bedarf. In diesem Beispiel wird davon ausgegangen, dass Sie mit einem Arbeitsblatt namens `Sheet1`arbeiten.
+1. Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> Methode des Arbeitsblatts, und übergeben Sie das Kennwort bei Bedarf. In diesem Beispiel wird davon ausgegangen, dass Sie mit einem Arbeitsblatt namens `Sheet1`arbeiten.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
 
 ## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>Zum Aufheben des Schutzes von einem Arbeitsblatt in einem VSTO-Add-in
 
-1.  Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> Methode des aktiven Arbeitsblatts, und übergeben Sie das Kennwort bei Bedarf.
+1. Rufen Sie die <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> Methode des aktiven Arbeitsblatts, und übergeben Sie das Kennwort bei Bedarf.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]

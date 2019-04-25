@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045615"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Vorgehensweise: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen
 
@@ -35,13 +35,13 @@ Diese Prozedur verwendet das Windows Software Development Kit (SDK) Tool MageUI.
 
 ### <a name="to-disable-url-activation-for-your-application"></a>So deaktivieren Sie die URL-Aktivierung für Ihre Anwendung
 
-1.  Öffnen Sie Ihr Bereitstellungsmanifest in „MageUI.exe“. Wenn Sie noch kein Manifest erstellt haben, führen Sie die Schritte in [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Öffnen Sie Ihr Bereitstellungsmanifest in „MageUI.exe“. Wenn Sie noch kein Manifest erstellt haben, führen Sie die Schritte in [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.
+2. Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.
 
-3.  Deaktivieren Sie das Kontrollkästchen **Anwendung nach dem Installieren automatisch ausführen**.
+3. Deaktivieren Sie das Kontrollkästchen **Anwendung nach dem Installieren automatisch ausführen**.
 
-4.  Speichern und signieren Sie das Manifest.
+4. Speichern und signieren Sie das Manifest.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769222"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668118"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -98,7 +97,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
   - `HomeSite`: Gibt an, dass die erforderliche Komponente vom Komponentenanbieter gehostet wird.  
   
-  - `Relative`: Gibt an, dass sich die erforderliche Komponente am gleichen Speicherort der Anwendung befindet.  
+  - `Relative`: Gibt an, dass die erforderliche Komponente am gleichen Speicherort der Anwendung.  
   
   - `Absolute`: Gibt an, dass sich alle Komponenten bei einer zentralisierten URL befinden. Dieser Wert sollte zusammen mit dem Eingabeparameter `ComponentsUrl` verwendet werden.  
   

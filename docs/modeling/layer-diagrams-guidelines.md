@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090116"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeitsdiagramme: Richtlinien
 
@@ -39,21 +39,21 @@ Die folgenden Schritte bieten einen Überblick zu Abhängigkeitsdiagrammen im En
 > [!NOTE]
 > Die Schritte entsprechen ungefähr der tatsächlichen Reihenfolge. Wahrscheinlich werden Sie die Aufgaben überlappend ausführen, die Reihenfolge Ihrer eigenen Situation anpassen und am Anfang jeder Iteration im Projekt nochmals auf die Beschreibung der Schritte zurückkommen.
 
-1.  [Erstellen Sie ein Abhängigkeitsdiagramm](#Create) für die gesamte Anwendung oder für eine Ebene in der Anwendung.
+1. [Erstellen Sie ein Abhängigkeitsdiagramm](#Create) für die gesamte Anwendung oder für eine Ebene in der Anwendung.
 
-2.  [Ebenen definieren, um die wichtigsten Funktionsbereiche oder Komponenten darzustellen](#CreateLayers) Ihrer Anwendung. Benennen Sie diese Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Wenn Sie Visual Studio-Projektmappe haben, können Sie eine Auflistung von einzelnen Ebenen zuordnen *Artefakte*, z. B. Projekte, Namespaces, Dateien und So weiter.
+2. [Ebenen definieren, um die wichtigsten Funktionsbereiche oder Komponenten darzustellen](#CreateLayers) Ihrer Anwendung. Benennen Sie diese Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Wenn Sie Visual Studio-Projektmappe haben, können Sie eine Auflistung von einzelnen Ebenen zuordnen *Artefakte*, z. B. Projekte, Namespaces, Dateien und So weiter.
 
-3.  [Ermitteln Sie die vorhandenen Abhängigkeiten](#Generate) zwischen Ebenen.
+3. [Ermitteln Sie die vorhandenen Abhängigkeiten](#Generate) zwischen Ebenen.
 
-4.  [Bearbeiten Sie die Ebenen und Abhängigkeiten](#EditArchitecture) anzuzeigenden der aktualisierten Entwurf, der den Code entsprechend angezeigt werden soll.
+4. [Bearbeiten Sie die Ebenen und Abhängigkeiten](#EditArchitecture) anzuzeigenden der aktualisierten Entwurf, der den Code entsprechend angezeigt werden soll.
 
-5.  [Entwerfen Sie neue Bereiche der Anwendung](#NewAreas) Ebenen erstellen, um die wichtigsten architekturblöcke oder-Komponenten darzustellen, und Definieren von Abhängigkeiten, um anzuzeigen, wie jede Ebene die anderen verwendet.
+5. [Entwerfen Sie neue Bereiche der Anwendung](#NewAreas) Ebenen erstellen, um die wichtigsten architekturblöcke oder-Komponenten darzustellen, und Definieren von Abhängigkeiten, um anzuzeigen, wie jede Ebene die anderen verwendet.
 
-6.  [Bearbeiten Sie das Layout und die Darstellung des Diagramms](#EditLayout) können Sie es mit Kollegen erörtern.
+6. [Bearbeiten Sie das Layout und die Darstellung des Diagramms](#EditLayout) können Sie es mit Kollegen erörtern.
 
-7.  [Überprüfen Sie den Code anhand des Diagramms Abhängigkeit](#Validate) um die Konflikte zwischen dem Code und die Architektur, die Sie benötigen.
+7. [Überprüfen Sie den Code anhand des Diagramms Abhängigkeit](#Validate) um die Konflikte zwischen dem Code und die Architektur, die Sie benötigen.
 
-8.  [Aktualisieren Sie den Code der neuen Architektur entspricht](#UpdateCode). Führen Sie die Entwicklung und Umgestaltung von Code in Iterationen durch, bis bei der Validierung keine Konflikte auftreten.
+8. [Aktualisieren Sie den Code der neuen Architektur entspricht](#UpdateCode). Führen Sie die Entwicklung und Umgestaltung von Code in Iterationen durch, bis bei der Validierung keine Konflikte auftreten.
 
 9. [Schließen Sie ebenenvalidierung im Buildprozess](#BuildValidation) , stellen Sie sicher, dass der Code weiterhin dem Entwurf entspricht.
 
@@ -79,11 +79,11 @@ Bei der Aktualisierung einer nicht vertrauten Anwendung können Sie auch Codezuo
 
 Thema
 
--   [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)
+- [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
+- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Vorhandene Abhängigkeiten zwischen Ebenen ermitteln
 
@@ -123,13 +123,13 @@ Wenn dies nicht der Fall ist, wird der Code so ändern Sie während seiner Leben
 
 Wenn Sie mit der Entwicklung eines neuen Projekts oder eines neuen Bereichs in einem neuen Projekt beginnen, können Sie Ebenen und Abhängigkeiten zeichnen, um die Hauptkomponenten zu identifizieren, bevor Sie mit dem Entwickeln des Codes beginnen.
 
--   **Zeigen Sie identifizierbare architektonische Muster** in Ihre Abhängigkeitsdiagramme, falls möglich. Beispielsweise kann ein Abhängigkeitsdiagramm, das eine Desktopanwendung beschreibt Ebenen wie Präsentation, Domänenlogik und Data Store enthalten. Ein Abhängigkeitsdiagramm, das eine einzelne Funktion in einer Anwendung umfasst möglicherweise Ebenen, wie z. B. Modell, Ansicht und Controller. Weitere Informationen zu solchen Mustern finden Sie unter [Patterns & Practices: Anwendungsarchitektur](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Zeigen Sie identifizierbare architektonische Muster** in Ihre Abhängigkeitsdiagramme, falls möglich. Beispielsweise kann ein Abhängigkeitsdiagramm, das eine Desktopanwendung beschreibt Ebenen wie Präsentation, Domänenlogik und Data Store enthalten. Ein Abhängigkeitsdiagramm, das eine einzelne Funktion in einer Anwendung umfasst möglicherweise Ebenen, wie z. B. Modell, Ansicht und Controller. Weitere Informationen zu solchen Mustern finden Sie unter [Patterns & Practices: Anwendungsarchitektur](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Erstellen Sie ein Codeartefakt für jede Ebene** wie z. B. einen Namespace, Klasse oder Komponente. Dies vereinfacht das Verfolgen des Codes und das Verknüpfen der Codeartefakte mit den Ebenen. Verknüpfen Sie jedes Artefakt mit der entsprechenden Ebene, sobald Sie das Artefakt erstellen.
+- **Erstellen Sie ein Codeartefakt für jede Ebene** wie z. B. einen Namespace, Klasse oder Komponente. Dies vereinfacht das Verfolgen des Codes und das Verknüpfen der Codeartefakte mit den Ebenen. Verknüpfen Sie jedes Artefakt mit der entsprechenden Ebene, sobald Sie das Artefakt erstellen.
 
--   **Sie müssen nicht die meisten Klassen und andere Artefakte mit Ebenen verknüpfen** , da sie zu größeren Artefakten z. B. Namespaces liegen, den Sie bereits mit Ebenen verknüpft haben.
+- **Sie müssen nicht die meisten Klassen und andere Artefakte mit Ebenen verknüpfen** , da sie zu größeren Artefakten z. B. Namespaces liegen, den Sie bereits mit Ebenen verknüpft haben.
 
--   **Erstellen Sie ein neues Diagramm für ein neues Feature**. In der Regel werden ein oder mehrere Abhängigkeitsdiagramme, die die gesamte Anwendung beschreibt. Wenn Sie eine neue Funktion in der Anwendung entwerfen, ändern Sie nicht die vorhandenen Diagramme, und fügen Sie ihnen keine Elemente hinzu. Erstellen Sie stattdessen ein eigenes Diagramm, das die neuen Teile des Codes wiedergibt. Das neue Diagramm kann beispielsweise Ebenen für die Präsentation, Domänenlogik und Datenbank der neuen Funktion enthalten.
+- **Erstellen Sie ein neues Diagramm für ein neues Feature**. In der Regel werden ein oder mehrere Abhängigkeitsdiagramme, die die gesamte Anwendung beschreibt. Wenn Sie eine neue Funktion in der Anwendung entwerfen, ändern Sie nicht die vorhandenen Diagramme, und fügen Sie ihnen keine Elemente hinzu. Erstellen Sie stattdessen ein eigenes Diagramm, das die neuen Teile des Codes wiedergibt. Das neue Diagramm kann beispielsweise Ebenen für die Präsentation, Domänenlogik und Datenbank der neuen Funktion enthalten.
 
      Wenn Sie die Anwendung erstellen, wird der Code sowohl anhand des allgemeinen Diagramms als auch anhand des ausführlicheren Funktionsdiagramms überprüft.
 
@@ -137,11 +137,11 @@ Wenn Sie mit der Entwicklung eines neuen Projekts oder eines neuen Bereichs in e
 
 Bearbeiten Sie Darstellung und Layout des Diagramms, um die Suche nach Ebenen und Abhängigkeiten sowie Diskussionen mit Teammitgliedern zu vereinfachen. Führen Sie hierzu die folgenden Schritte aus:
 
--   Ändern der Größe, Formen und Positionen von Ebenen
+- Ändern der Größe, Formen und Positionen von Ebenen
 
--   Ändern der Farben von Ebenen und Abhängigkeiten
+- Ändern der Farben von Ebenen und Abhängigkeiten
 
-    -   Wählen Sie eine oder mehrere Ebenen oder Abhängigkeiten, mit der rechten Maustaste und klicken Sie dann auf **Eigenschaften**. In der **Eigenschaften** Fenster Bearbeiten der **Farbe** Eigenschaft.
+    - Wählen Sie eine oder mehrere Ebenen oder Abhängigkeiten, mit der rechten Maustaste und klicken Sie dann auf **Eigenschaften**. In der **Eigenschaften** Fenster Bearbeiten der **Farbe** Eigenschaft.
 
 ## <a name="Validate"></a> Überprüfen Sie den Code anhand des Diagramms
 
@@ -149,17 +149,17 @@ Wenn Sie das Diagramm bearbeitet haben, können Sie es mit dem Code jederzeit ma
 
 Thema
 
--   [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)
+- [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Schließen Sie Ebenenvalidierung im Buildprozess](#BuildValidation)
+- [Schließen Sie Ebenenvalidierung im Buildprozess](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Aktualisieren Sie den Code, um ihn an die neue Architektur anzupassen
 
 In der Regel treten Fehler beim ersten, Code für ein aktualisiertes Abhängigkeitsdiagramm zu überprüfen. Diese Fehler können mehrere Ursachen haben:
 
--   Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.
+- Ein Artefakt wurde der falschen Ebene zugewiesen. Verschieben Sie in diesem Fall das Artefakt.
 
--   Von einem Artefakt (beispielsweise einer Klasse) wird eine andere Klasse auf eine Weise verwendet, die einen Konflikt mit der Architektur zur Folge hat. Gestalten Sie in diesem Fall den Code um, um die Abhängigkeit zu entfernen.
+- Von einem Artefakt (beispielsweise einer Klasse) wird eine andere Klasse auf eine Weise verwendet, die einen Konflikt mit der Architektur zur Folge hat. Gestalten Sie in diesem Fall den Code um, um die Abhängigkeit zu entfernen.
 
 Aktualisieren Sie zum Beheben dieser Fehler den Code, bis bei der Validierung keine Fehler mehr angezeigt werden. Dies ist normalerweise ein iterativer Vorgang. Weitere Informationen zu diesen Fehlern finden Sie unter [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md).
 

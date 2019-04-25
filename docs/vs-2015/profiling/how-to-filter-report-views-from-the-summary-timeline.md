@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50958671d327013254b0a19e3dda160b1b3035e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce9b74012be35433c26f8446f36246dbe93f6442
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044247"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ Sie können die Daten filtern, die in Leistungsberichten angezeigt werden, indem
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Filtern eines Profilerstellungsberichts aus dem Zeitachsendiagramm der Zusammenfassungsansicht  
   
-1.  Klicken Sie im Zeitachsendiagramm der Zusammenfassungsansicht auf einen Punkt der Zeitachse, halten Sie die Maustaste gedrückt, und ziehen Sie die Maus zu einen anderem Punkt auf der Zeitachse.  
+1. Klicken Sie im Zeitachsendiagramm der Zusammenfassungsansicht auf einen Punkt der Zeitachse, halten Sie die Maustaste gedrückt, und ziehen Sie die Maus zu einen anderem Punkt auf der Zeitachse.  
   
      Die Region, die Sie markiert haben, wird schattiert.  
   
-2.  Klicken Sie auf **Nach Auswahl filtern**.
+2. Klicken Sie auf **Nach Auswahl filtern**.

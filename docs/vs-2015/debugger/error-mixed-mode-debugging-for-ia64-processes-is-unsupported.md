@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 99c65e6178fa774f18765dba4b877a57bc2a5f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9073edad55a648286a068df5e368e08893ff0a3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071381"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Fehler: Debuggen im gemischten Modus wird auf Windows 64-Bit-Plattformen nicht unterstützt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debugger unterstützt das Debug
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Erstellen Sie eine 32-Bit-Version der Anwendung zum Debuggen.  
+- Erstellen Sie eine 32-Bit-Version der Anwendung zum Debuggen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Einrichten der Remotetools auf dem Gerät](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

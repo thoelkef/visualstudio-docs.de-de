@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066779"
 ---
 # <a name="graphics-event-list"></a>Grafikereignisliste
 Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die Direct3D-Ereignisse zu untersuchen, die während des Renderings eines Frames Ihres Spiels oder Ihrer App aufgezeichnet wurden.
@@ -49,7 +49,7 @@ Verwenden Sie die Grafikereignisliste in der Visual Studio-Grafikanalyse, um die
 
 ##### <a name="to-change-the-event-list-view-mode"></a>So ändern Sie den Ansichtsmodus der Ereignisliste
 
--   In der **Graphics Event List** suchen Sie oben im Fenster, die Liste der Ereignisse, die **Ansicht** Dropdownliste und wählen Sie entweder die **Zeitachse** anzeigen oder die **GPU-Arbeit** anzeigen.
+- In der **Graphics Event List** suchen Sie oben im Fenster, die Liste der Ereignisse, die **Ansicht** Dropdownliste und wählen Sie entweder die **Zeitachse** anzeigen oder die **GPU-Arbeit** anzeigen.
 
 ### <a name="filtering-events"></a>Filtern von Ereignissen
  Sie können mithilfe des Feldes "Suchen" in der oberen rechten Ecke des Fensters **Grafikereignisliste** die Ereignisliste so filtern, dass sie nur Ereignisse enthält, in deren Namen bestimmte Schlüsselwörter vorkommen. Sie können einzelne Schlüsselwörter wie `Vertex`(s. Abbildung oben) oder mehrere Schlüsselwörter angeben, indem Sie eine durch Semikola getrennte Liste wie z.B. `Draw;Primitive`erstellen. Diese findet alle Ereignisse, in deren Namen entweder `Draw` oder `Primitive` vorkommt. Suchen sind leerzeichenspezifisch -– `VSSet` und `VS Set` sind z.B. verschiedene Suchvorgänge. Stellen Sie daher sicher, dass Sie Ihre Suchen sorgfältig ausführen.
@@ -104,7 +104,6 @@ Visual Studio 2017 und höhere Versionen enthalten die **Ressourcenverlauf** Fen
 ![Ressourcenverlauf](media/gfx_diag_resource_history.png)
 
 In diesem Fenster können Sie den Verlauf des ausgewählten Elements in der Ereignisliste an.  Die Dropdownliste oben kann verwendet werden, auf andere Elemente, die den Verlauf anzuzeigen.  Die obere Hälfte des Fensters enthält die **Framesetupereignisse**.  Hierbei handelt es sich um die Ereignisse, die in fallen die *erstellen* Datentyps der Kategorie und Aufrufe, die in der Regel zu initialisieren und die Ressource zu erstellen.  Der unteren Hälfte des Fensters enthält die **Frameereignisse** Abschnitt.  Diese sind die normalen lesen und Schreiben von Ereignissen, die bei der Nutzung der Ressource auftreten.
-
 
 | Spalte | Beschreibung |
 |-----------| - |

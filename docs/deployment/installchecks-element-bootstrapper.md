@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645926"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666454"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; -Element (Bootstrapper)
 Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Tests mit dem lokalen Computer aus, um sicherzustellen, dass alle erforderlichen Komponenten für eine Anwendung installiert wurden.
@@ -97,7 +97,6 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 
  `FileCheck` keine Elemente enthält, und weist folgende Attribute.
 
-
 | Attribut | Beschreibung |
 |-----------------| - |
 | `Property` | Erforderlich. Der Name der Eigenschaft zum Speichern des Ergebnisses. Diese Eigenschaft verwiesen werden kann, in einem Test unter der `InstallConditions` -Element, das ein untergeordnetes Element von der `Command` Element. Weitere Informationen finden Sie unter [ \<Befehle >-Element](../deployment/commands-element-bootstrapper.md). |
@@ -141,7 +140,7 @@ Die `InstallChecks` Element unterstützt das Starten von einer Vielzahl von Test
 |`FileName`|Dies ist optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass der Wert aus dem Registrierungsschlüssel einen Verzeichnispfad ein, und dieser Name wird an ihn angefügt. Wenn nicht angegeben, wird angenommen, dass der Rückgabewert aus der Registrierung den vollständigen Pfad zu einer Datei enthalten.|
 |`SearchDepth`|Dies ist optional. Die Tiefe am dem Unterordner für die angegebene Datei gesucht werden soll. Die Suche ist die Tiefe. Der Standardwert ist 0 (null) und die Suche zum Ordner obersten Ebene, die durch den Registrierungsschlüssel-Wert angegeben werden schränkt.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Untergeordneten Elemente `InstallChecks` definieren Sie die auszuführenden Tests, die sie nicht ausgeführt. Um die Tests auszuführen, müssen Sie erstellen `Command` Elemente unterhalb der `Commands` Element.
 
 ## <a name="example"></a>Beispiel

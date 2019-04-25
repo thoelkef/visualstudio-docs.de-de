@@ -16,32 +16,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: af174762ca9c31a95c0abb10ff6a5d2bdaf21e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 052149783f93c1bf2f394be2fac9f6a51c9c0cf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100910"
 ---
 # <a name="office-ui-customization"></a>Anpassung der Office-Benutzeroberfläche
   Sie können die Benutzeroberfläche (UI) von Microsoft Office-Anwendungen anpassen, indem Sie die Office Developer Tools in Visual Studio verwenden. In diesem Thema werden die Funktionen der Benutzeroberfläche, die Sie anpassen können, in den folgenden Abschnitten beschrieben:
 
--   [Vergleich der Funktionen der Benutzeroberfläche](#Comparison)
+- [Vergleich der Funktionen der Benutzeroberfläche](#Comparison)
 
--   [Aktionsbereiche und benutzerdefinierte Aufgabenbereiche](#Actions)
+- [Aktionsbereiche und benutzerdefinierte Aufgabenbereiche](#Actions)
 
--   [Benutzerdefinierte Multifunktionsleisten-Benutzeroberfläche](#Ribbon)
+- [Benutzerdefinierte Multifunktionsleisten-Benutzeroberfläche](#Ribbon)
 
--   [Backstage-Ansicht](#Backstage)
+- [Backstage-Ansicht](#Backstage)
 
--   [Outlook-Formularbereichen](#FormRegion)
+- [Outlook-Formularbereichen](#FormRegion)
 
--   [Steuerelemente in Dokumenten](#Controls)
+- [Steuerelemente in Dokumenten](#Controls)
 
--   [Kontextmenüs](#Shortcut)
+- [Kontextmenüs](#Shortcut)
 
-##  <a name="Comparison"></a> Vergleich der Funktionen der Benutzeroberfläche
- In der folgenden Tabelle werden die wichtigsten Funktionen der Benutzeroberfläche verglichen, die Sie in Microsoft Office-Projekten anpassen können.
+## <a name="Comparison"></a> Vergleich der Funktionen der Benutzeroberfläche
+ In der folgenden Tabelle werden die wichtigsten Features der Benutzeroberfläche verglichen, die Sie in Microsoft Office-Projekten anpassen können.
 
 |Feature|Unterstützte Projekttypen|Unterstützte Microsoft Office-Anwendungen|
 |-------------|-----------------------------|---------------------------------------------|
@@ -53,7 +53,7 @@ ms.locfileid: "56628012"
 |Steuerelemente in Dokumenten|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> Word|
 |Kontextmenüs|Anpassungen auf Dokumentebene<br /><br /> VSTO-Add-Ins|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|
 
-##  <a name="Actions"></a> Aktionsbereiche und benutzerdefinierte Aufgabenbereiche
+## <a name="Actions"></a> Aktionsbereiche und benutzerdefinierte Aufgabenbereiche
  Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Fast alle Microsoft Office-Anwendungen enthalten integrierte Aufgabenbereiche. Ein Beispiel für einen Aufgabenbereich ist der Hilfe-Aufgabenbereich in Word.
 
  Die Office-Entwicklungstools in Visual Studio bieten zwei unterschiedliche Wege zum Anpassen von Aufgabenbereichen:
@@ -66,33 +66,33 @@ ms.locfileid: "56628012"
 
   Weitere Informationen zu Aktionsbereichen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md). Weitere Informationen zu benutzerdefinierten Aufgabenbereichen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).
 
-##  <a name="Ribbon"></a> Benutzerdefinierte Multifunktionsleisten-Benutzeroberfläche
- Sie können die Menüband-Benutzeroberfläche so anpassen, dass Funktionen bereitgestellt werden, die Sie Anwendungen in Office hinzufügen. Das Menüband dient zum Organisieren von verwandten Befehlen (in Form von Steuerelementen), damit sie leichter zu finden sind. Sie können Ihre eigenen Menübandregisterkarten und -gruppen erstellen, um Benutzern Zugriff auf Funktionen zu gewähren, die Sie in Ihrer Projektmappe bereitstellen. Auf die meisten Funktionen, auf die in früheren Versionen des Microsoft Office-Systems über die Menüs und Symbolleisten zugegriffen wurde, kann jetzt über das Menüband zugegriffen werden.
+## <a name="Ribbon"></a> Benutzerdefinierte Multifunktionsleisten-Benutzeroberfläche
+ Sie können die Menüband-Benutzeroberfläche so anpassen, dass Funktionen bereitgestellt werden, die Sie Anwendungen in Office hinzufügen. Das Menüband dient zum Organisieren von verwandten Befehlen (in Form von Steuerelementen), damit sie leichter zu finden sind. Sie können Ihre eigenen Menübandregisterkarten und -gruppen erstellen, um Benutzern Zugriff auf Funktionen zu gewähren, die Sie in Ihrer Projektmappe bereitstellen. Auf die meisten Features, auf die in früheren Versionen des Microsoft Office-Systems über die Menüs und Symbolleisten zugegriffen wurde, kann jetzt über das Menüband zugegriffen werden.
 
  Weitere Informationen finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
 
-##  <a name="Backstage"></a> Backstage-Ansicht
+## <a name="Backstage"></a> Backstage-Ansicht
  In Office-Anwendungen auf die **Datei** Registerkarte wird die Backstage-Ansicht geöffnet. In der Backstage-Ansicht sind Aufgaben und Aktionen der Dateiebene kombiniert. Sie ersetzt ähnliche Funktionen, die im Microsoft Office-System 2007 über die Microsoft Office-Schaltfläche zugänglich waren. Die Backstage-Ansicht ist per XML vollständig erweiterbar.
 
  In Visual Studio werden kein Designer bzw. keine APIs zum Anpassen der Backstage-Ansicht bereitgestellt. Jedoch wenn Sie beim Hinzufügen einer **Menüband (XML)** Element Office-Projekt, können Sie XML in der Menüband-XML-Datei zum Anpassen der Backstage-Ansicht hinzufügen. Weitere Informationen zu **Menüband (XML)** Elemente finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md).
 
  Weitere Informationen zum Anpassen der Backstage-Ansicht finden Sie unter [Einführung in die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182189) und [anpassen die Office 2010-Backstage-Ansicht für Entwickler](http://go.microsoft.com/fwlink/?LinkId=182188).
 
-##  <a name="FormRegion"></a> Outlook-Formularbereichen
+## <a name="FormRegion"></a> Outlook-Formularbereichen
  Verwenden Sie Formularbereiche, um standardmäßigen Microsoft Office Outlook-Formularen benutzerdefinierte Funktionen hinzuzufügen. Sie können Formularbereiche erstellen, mit denen beliebige vorhandene Formulare um zusätzliche Felder oder Steuerelemente erweitert werden. Wenn Sie mit den Office-Entwicklungstools in Visual Studio einen neuen Formularbereich erstellen, können Sie im Formularbereich nur Windows Forms-Steuerelemente verwenden. Wenn Sie einen Formularbereich importieren, der in Outlook entworfen wurde, können Sie nur systemeigene Outlook-Steuerelemente verwenden.
 
  Sie können Formularbereiche erstellen, die verschiedene Bereiche der Outlook-Benutzeroberfläche einnehmen. Benachbarte Formularbereiche werden beispielsweise unten auf der ersten Seite eines Formulars angezeigt, und jeder benachbarte Formularbereich ist reduzierbar. Sie können auch einen separaten Formularbereich hinzufügen, der als vollständige zusätzliche Formularseite angezeigt wird und in allen vorhandenen Standardformularen oder benutzerdefinierten Formularen verwendet werden kann.
 
  Weitere Informationen finden Sie unter [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md).
 
-##  <a name="Controls"></a> Steuerelemente in Dokumenten
+## <a name="Controls"></a> Steuerelemente in Dokumenten
  Sie können Word-Dokumenten und Excel-Arbeitsblättern viele verschiedene Steuerelemente hinzufügen. Es kann beispielsweise sein, dass Sie einem Dokument ein Steuerelement für die Datumsauswahl hinzufügen möchten, damit Benutzer Datumsangaben im Standardformat eingeben können, oder dass Sie eine Schaltfläche in ein Arbeitsblatt einfügen möchten, mit dem Daten an eine Datenbank gesendet werden können.
 
  Wenn Sie Projekte auf Dokumentebene für Excel oder Word entwickeln, können Sie Visual Studio-Designer Steuerelemente in das Dokument oder die Arbeitsmappe in Ihrem Projekt zur Entwurfszeit hinzufügen, oder Sie können Steuerelemente programmgesteuert zur Laufzeit hinzufügen. Wenn Sie VSTO-Add-in-Projekte für Excel oder Word entwickeln, können Sie auf allen geöffneten Dokumenten oder Arbeitsmappen zur Laufzeit programmgesteuert Steuerelemente hinzufügen.
 
  Weitere Informationen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md) und [Windows forms-Steuerelemente in der Übersicht über Office-Dokumente](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-##  <a name="Shortcut"></a> Kontextmenüs
+## <a name="Shortcut"></a> Kontextmenüs
  Ein Kontextmenü wird angezeigt, wenn Sie in einem Dokument oder einem Anwendungsfenster mit der rechten Maustaste klicken. Sie können festlegen, dass nach dem Eintreten eines Ereignisses ein Kontextmenü angezeigt wird, z. B. nach dem Rechtsklick eines Benutzers auf ein Dokument, eine Arbeitsmappe oder ein Hoststeuerelement. Sie können einem Kontextmenü verschiedene andere Menübefehle oder Steuerelemente hinzufügen. Erstellen von Kontextmenüs mithilfe von XML Wenn Sie beim Hinzufügen einer **Menüband (XML)** Element Office-Projekt, können Sie die Menüband-XML-Datei zum Erstellen von Kontextmenüs XML hinzufügen. Weitere Informationen zur Verwendung von XML zum Erstellen von Kontextmenüs finden Sie unter [Vorgehensweise: Hinzufügen von Befehlen zu Kontextmenüs](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
 ## <a name="see-also"></a>Siehe auch

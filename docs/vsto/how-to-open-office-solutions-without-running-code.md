@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117199"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Vorgehensweise: Öffnen Sie Office-Projektmappen ohne die Ausführung von code
   Mit Erweiterungen durch verwalteten Code erstellte eine Microsoft Office-Projektmappe ausgeführt wird, auch wenn die sicherheitseinstellung in der Endbenutzer Office-Anwendung auf hoch festgelegt ist. Dies ist da die Sicherheit von Microsoft .NET Framework, nicht von Microsoft Office verwaltet wird.
@@ -36,7 +36,7 @@ ms.locfileid: "56616130"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>So umgehen Sie die Assembly mithilfe der UMSCHALT-Taste
 
--   Öffnen von Dokumenten und Arbeitsmappen aus der **Datei** Menü bei gedrückter der **UMSCHALT** Schlüssel, um zu verhindern, dass Word und Excel Initialisierungsereignisse auslösen, während das Dokument geöffnet wird.
+- Öffnen von Dokumenten und Arbeitsmappen aus der **Datei** Menü bei gedrückter der **UMSCHALT** Schlüssel, um zu verhindern, dass Word und Excel Initialisierungsereignisse auslösen, während das Dokument geöffnet wird.
 
     > [!NOTE]
     >  Wenn Sie ein Dokument oder eine Arbeitsmappe öffnen die **Einstieg** Aufgabenbereich gedrückt **UMSCHALT** wird den Code nicht umgangen. Darüber hinaus verhindert die UMSCHALTTASTE gedrückt gehalten nicht Ereignisse ausgelöst werden, nachdem das Dokument geöffnet ist.
@@ -45,7 +45,7 @@ ms.locfileid: "56616130"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Um eine Assembly zu umgehen, indem Sie das Umbenennen oder entfernen
 
--   Wenn Sie die erforderlichen Berechtigungen auf dem Computer haben, in dem die Assembly befindet, können Sie umbenennen oder entfernen Sie die Assembly, sodass das Dokument oder die Arbeitsmappe gefunden werden kann. Dadurch wird ein Fehler ausgelöst wird, jedes Mal, wenn das Office-Dokument geöffnet wird.
+- Wenn Sie die erforderlichen Berechtigungen auf dem Computer haben, in dem die Assembly befindet, können Sie umbenennen oder entfernen Sie die Assembly, sodass das Dokument oder die Arbeitsmappe gefunden werden kann. Dadurch wird ein Fehler ausgelöst wird, jedes Mal, wenn das Office-Dokument geöffnet wird.
 
      Wenn die Lösung von mehreren Personen verwendet wird, verhindert diese Methode die Projektmappe ausgeführt wird für alle. Dies kann nützlich sein, wenn ein Problem, im Code oder einem Server auf die verwiesen wird gefunden wird, und Sie alle Benutzer aus der Ausführung beenden möchten.
 

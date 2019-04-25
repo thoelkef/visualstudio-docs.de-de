@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052531"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexe Datenbindung in einem Projekt auf Dokumentebene. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server-Datenbank binden.
@@ -40,20 +40,20 @@ ms.locfileid: "56643105"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Zugriff auf einen Server mit der Beispieldatenbank Northwind-SQL Server.
+- Zugriff auf einen Server mit der Beispieldatenbank Northwind-SQL Server.
 
--   Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.
+- Berechtigungen zum Lesen und Schreiben in SQL Server-Datenbank.
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
  Der erste Schritt ist ein Excel-Workbook-Projekt zu erstellen.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1.  Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine komplexe Datenbindung**. Wählen Sie im Assistenten **ein neues Dokument erstellen**.
+1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine komplexe Datenbindung**. Wählen Sie im Assistenten **ein neues Dokument erstellen**.
 
      Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643105"
 
 #### <a name="to-add-a-list-object"></a>Ein List-Objekt hinzufügen
 
-1.  Überprüfen Sie, ob die **Meine komplexe Daten Binding.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit **Sheet1** angezeigt.
+1. Überprüfen Sie, ob die **Meine komplexe Daten Binding.xlsx** Arbeitsmappe geöffnet, in der Visual Studio-Designer ist mit **Sheet1** angezeigt.
 
-2.  Öffnen der **Datenquellen** Fenster, und wählen die **Mitarbeiter** Knoten.
+2. Öffnen der **Datenquellen** Fenster, und wählen die **Mitarbeiter** Knoten.
 
-3.  Klicken Sie auf den Dropdown-Pfeil, der angezeigt wird.
+3. Klicken Sie auf den Dropdown-Pfeil, der angezeigt wird.
 
-4.  Wählen Sie **ListObject** in der Dropdown-Liste.
+4. Wählen Sie **ListObject** in der Dropdown-Liste.
 
-5.  Ziehen Sie die **Mitarbeiter** Tabelle in Zelle **A6**.
+5. Ziehen Sie die **Mitarbeiter** Tabelle in Zelle **A6**.
 
      Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement mit dem Namen `EmployeesListObject` ist in der Zelle erstellt **A6**. Zur gleichen Zeit eine <xref:System.Windows.Forms.BindingSource> mit dem Namen `EmployeesBindingSource`, ein Tabellenadapter und eine <xref:System.Data.DataSet> Instanz werden dem Projekt hinzugefügt. Das Steuerelement gebunden ist, um die <xref:System.Windows.Forms.BindingSource>, das wiederum gebunden ist die <xref:System.Data.DataSet> Instanz.
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643105"
 
 ### <a name="to-save-changes-to-the-database"></a>Um Änderungen an der Datenbank speichern
 
-1.  Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `button`, und fügen Sie den folgenden Code, um alle Änderungen zu speichern, die im Dataset in der Datenbank vorgenommen wurden.
+1. Hinzufügen eines ereignishandlers für das <xref:System.Windows.Forms.Control.Click> Ereignis die `button`, und fügen Sie den folgenden Code, um alle Änderungen zu speichern, die im Dataset in der Datenbank vorgenommen wurden.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643105"
 
 ### <a name="to-test-the-data-binding"></a>Um die Datenbindung zu testen.
 
--   Drücken Sie **F5**.
+- Drücken Sie **F5**.
 
      Stellen Sie sicher, dass das List-Objekt mit Daten aus, wenn die Arbeitsmappe geöffnet wird ausgefüllt ist, die **Mitarbeiter** Tabelle.
 
 ### <a name="to-modify-data"></a>Zum Ändern von Daten
 
-1.  Klicken Sie auf die Zelle **B7**, die den Namen enthalten **Davolio**.
+1. Klicken Sie auf die Zelle **B7**, die den Namen enthalten **Davolio**.
 
-2.  Geben Sie den Namen **Anderson**, und drücken Sie dann die **EINGABETASTE**.
+2. Geben Sie den Namen **Anderson**, und drücken Sie dann die **EINGABETASTE**.
 
 ### <a name="to-modify-a-column-header"></a>So ändern Sie eine Spaltenüberschrift
 
-1.  Klicken Sie auf die Zelle, die den Spaltenkopf enthält **"LastName"**.
+1. Klicken Sie auf die Zelle, die den Spaltenkopf enthält **"LastName"**.
 
-2.  Typ **Nachname**, mit einem Leerzeichen zwischen den beiden Wörtern, und drücken Sie dann die **EINGABETASTE**.
+2. Typ **Nachname**, mit einem Leerzeichen zwischen den beiden Wörtern, und drücken Sie dann die **EINGABETASTE**.
 
 ### <a name="to-save-data"></a>Zum Speichern von Daten
 
-1.  Klicken Sie auf **speichern** auf dem Arbeitsblatt.
+1. Klicken Sie auf **speichern** auf dem Arbeitsblatt.
 
-2.  Beenden Sie Excel. Klicken Sie auf **keine** bei der Aufforderung zum Speichern der Änderungen Sie vorgenommen haben.
+2. Beenden Sie Excel. Klicken Sie auf **keine** bei der Aufforderung zum Speichern der Änderungen Sie vorgenommen haben.
 
-3.  Drücken Sie **F5** auf das Projekt erneut ausgeführt.
+3. Drücken Sie **F5** auf das Projekt erneut ausgeführt.
 
      Das List-Objekt mit Daten gefüllt der **Mitarbeiter** Tabelle.
 
-4.  Beachten Sie, dass der Name in Zelle **B7** ist immer noch **Anderson**, d.h. die Daten zu ändern, dass Sie bereits erstellt und in der Datenbank gespeichert. Die Kopfzeile der Spalte **"LastName"** hat die an ihrer ursprünglichen Form ohne Leerzeichen, geändert werden, da die Kopfzeile der Spalte nicht auf die Datenbank gebunden ist und Sie nicht die Änderungen in das Arbeitsblatt speichern.
+4. Beachten Sie, dass der Name in Zelle **B7** ist immer noch **Anderson**, d.h. die Daten zu ändern, dass Sie bereits erstellt und in der Datenbank gespeichert. Die Kopfzeile der Spalte **"LastName"** hat die an ihrer ursprünglichen Form ohne Leerzeichen, geändert werden, da die Kopfzeile der Spalte nicht auf die Datenbank gebunden ist und Sie nicht die Änderungen in das Arbeitsblatt speichern.
 
 ### <a name="to-add-new-rows"></a>Zum Hinzufügen von neuer Zeilen
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643105"
 
 ### <a name="to-delete-rows"></a>Zum Löschen von Zeilen
 
--   Mit der rechten Maustaste in den Wert 16 (Zeile 16) auf der linken Seite des Arbeitsblatts, und klicken Sie dann auf **löschen**.
+- Mit der rechten Maustaste in den Wert 16 (Zeile 16) auf der linken Seite des Arbeitsblatts, und klicken Sie dann auf **löschen**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Um die Zeilen in der Liste sortieren
 
-1.  Wählen Sie eine Zelle in der Liste.
+1. Wählen Sie eine Zelle in der Liste.
 
      Pfeilschaltflächen werden in jeder Kopfzeile der Spalte angezeigt.
 
-2.  Klicken Sie auf den Pfeil in der **Nachname** Spaltenüberschrift.
+2. Klicken Sie auf den Pfeil in der **Nachname** Spaltenüberschrift.
 
-3.  Klicken Sie auf **Aufsteigend sortieren**.
+3. Klicken Sie auf **Aufsteigend sortieren**.
 
      Die Zeilen sind alphabetisch nach Nachnamen sortiert.
 
 ### <a name="to-filter-information"></a>Um Informationen zu filtern
 
-1.  Wählen Sie eine Zelle in der Liste.
+1. Wählen Sie eine Zelle in der Liste.
 
-2.  Klicken Sie auf den Pfeil in der **Titel** Spaltenüberschrift.
+2. Klicken Sie auf den Pfeil in der **Titel** Spaltenüberschrift.
 
-3.  Klicken Sie auf **Vertriebsmitarbeiter**.
+3. Klicken Sie auf **Vertriebsmitarbeiter**.
 
      Die Liste enthält nur die Zeilen, die **Vertriebsmitarbeiter** in die **Titel** Spalte.
 
-4.  Klicken Sie auf den Pfeil in der **Titel** erneut die Kopfzeile der Spalte.
+4. Klicken Sie auf den Pfeil in der **Titel** erneut die Kopfzeile der Spalte.
 
-5.  Klicken Sie auf **(alle)**.
+5. Klicken Sie auf **(alle)**.
 
      Der Filter wird entfernt, und alle Zeilen angezeigt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
  In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen des Bindens einer Tabelle in einer Datenbank an ein Listenobjekt. Die folgenden Aufgaben könnten sich daran anschließen:
 
--   Daten zwischengespeichert, so dass sie offline verwendet werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Daten zwischengespeichert, so dass sie offline verwendet werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Die Lösung bereit. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
+- Die Lösung bereit. Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).
 
--   Erstellen Sie eine Master/Detail-Beziehung zwischen einem Feld und eine Tabelle an. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Erstellen Sie eine Master/Detail-Beziehung zwischen einem Feld und eine Tabelle an. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie eine master-Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)

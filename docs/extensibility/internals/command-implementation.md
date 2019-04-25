@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089752"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 Um einen Befehl in einem VSPackage implementieren, müssen Sie die folgenden Aufgaben ausführen:
 
-1.  In der *VSCT* Datei, eine Befehlsgruppe einrichten, und fügen Sie den Befehl hinzu. Weitere Informationen finden Sie unter [Visual Studio-Befehlstabellen (VSCT) Befehlsdateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. In der *VSCT* Datei, eine Befehlsgruppe einrichten, und fügen Sie den Befehl hinzu. Weitere Informationen finden Sie unter [Visual Studio-Befehlstabellen (VSCT) Befehlsdateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Registrieren Sie den Befehl in Visual Studio.
+2. Registrieren Sie den Befehl in Visual Studio.
 
-3.  Implementieren Sie den Befehl.
+3. Implementieren Sie den Befehl.
 
 In den folgenden Abschnitten wird erläutert, wie registrieren und Befehle implementieren.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>QueryStatus-Methoden
  Wenn Sie entweder implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode oder der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> -Methode, die Kontrollkästchen für die GUID des Befehls, der der Befehl angehört und die ID des Befehls. Befolgen Sie die nachstehenden Richtlinien:
 
--   Wenn die GUID nicht erkannt wird, muss Ihre Implementierung der beiden Methoden zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Wenn die GUID nicht erkannt wird, muss Ihre Implementierung der beiden Methoden zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Wenn Ihre Implementierung der beiden Methoden, erkennt die GUID, jedoch nicht den Befehl implementiert hat, sollte die Methode zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Wenn Ihre Implementierung der beiden Methoden, erkennt die GUID, jedoch nicht den Befehl implementiert hat, sollte die Methode zurückgeben <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der Folgendes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Flags:
+- Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der Folgendes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Flags:
 
-    -   `OLECMDF_SUPPORTED`: Der Befehl wird unterstützt.
+    - `OLECMDF_SUPPORTED`: Der Befehl wird unterstützt.
 
-    -   `OLECMDF_INVISIBLE`: Der Befehl sollten nicht sichtbar sein.
+    - `OLECMDF_INVISIBLE`: Der Befehl sollten nicht sichtbar sein.
 
-    -   `OLECMDF_LATCHED`: Der Befehl eingeschaltet ist und wird angezeigt, die überprüft wurden.
+    - `OLECMDF_LATCHED`: Der Befehl eingeschaltet ist und wird angezeigt, die überprüft wurden.
 
-    -   `OLECMDF_ENABLED`: Der Befehl ist aktiviert.
+    - `OLECMDF_ENABLED`: Der Befehl ist aktiviert.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: Der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.
 
-    -   `OLECMDF_NINCHED`: Mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).
+    - `OLECMDF_NINCHED`: Mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).
 
--   Wenn der Befehl, in definiert wurde der *VSCT* -Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:
+- Wenn der Befehl, in definiert wurde der *VSCT* -Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:
 
-    -   Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.
+    - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.
 
-    -   Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.
+    - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.
 
 Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.
 

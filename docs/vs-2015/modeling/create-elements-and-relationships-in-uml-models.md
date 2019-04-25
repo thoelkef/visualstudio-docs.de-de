@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099272"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Erstellen von Elementen und Beziehungen in UML-Modellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>So erstellen Sie eine Zuordnung  
   
-1.  Rufen Sie den Besitzer der Zuordnung ab. Dabei handelt es sich normalerweise um das Paket oder Modell, in dem das Quellende der Beziehung enthalten ist.  
+1. Rufen Sie den Besitzer der Zuordnung ab. Dabei handelt es sich normalerweise um das Paket oder Modell, in dem das Quellende der Beziehung enthalten ist.  
   
-2.  Rufen Sie die erforderliche Create-Methode für den Besitzer auf.  
+2. Rufen Sie die erforderliche Create-Methode für den Besitzer auf.  
   
-3.  Legen Sie die Eigenschaften der Beziehung fest, z. B. den Namen.  
+3. Legen Sie die Eigenschaften der Beziehung fest, z. B. den Namen.  
   
      Zum Beispiel:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Legen Sie die Eigenschaften der beiden Enden der Beziehung fest. Es sind immer zwei `MemberEnds` vorhanden. Zum Beispiel:  
+4. Legen Sie die Eigenschaften der beiden Enden der Beziehung fest. Es sind immer zwei `MemberEnds` vorhanden. Zum Beispiel:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  Wenn Sie ein Element aus einem Modell löschen, gilt Folgendes:  
   
--   Jede Beziehung, die mit dem Element verknüpft ist, wird ebenfalls gelöscht.  
+- Jede Beziehung, die mit dem Element verknüpft ist, wird ebenfalls gelöscht.  
   
--   Jede Form, die das Element im Diagramm dargestellt hat, wird ebenfalls gelöscht.  
+- Jede Form, die das Element im Diagramm dargestellt hat, wird ebenfalls gelöscht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   

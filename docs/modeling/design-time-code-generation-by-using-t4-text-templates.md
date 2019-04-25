@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090419"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 Während der Entwurfszeit T4-Textvorlagen können Programmcode und andere Dateien in Ihrem Visual Studio-Projekt zu generieren. In der Regel schreiben Sie die Vorlagen, damit sie den Code variieren, die sie gemäß den Daten aus generieren eine *Modell*. Ein Modell ist eine Datei oder Datenbank, die wichtige Informationen zu den Anforderungen Ihrer Anwendung enthält.
@@ -141,9 +141,9 @@ Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe vo
 
 #### <a name="to-generate-program-code-or-resources"></a>So generieren Sie Programmcode oder Ressourcen
 
-1.  Ändern Sie die output-Direktive, um eine Datei des entsprechenden Typs zu generieren, z. B. .cs, .vb, .resx oder .xml.
+1. Ändern Sie die output-Direktive, um eine Datei des entsprechenden Typs zu generieren, z. B. .cs, .vb, .resx oder .xml.
 
-2.  Fügen Sie Code ein, durch den der benötigte Projektmappencode generiert wird. Fügen Sie z. B. folgenden Code ein, wenn Sie drei Deklarationen für Felder für ganze Zahlen in einer Klasse generieren möchten:
+2. Fügen Sie Code ein, durch den der benötigte Projektmappencode generiert wird. Fügen Sie z. B. folgenden Code ein, wenn Sie drei Deklarationen für Felder für ganze Zahlen in einer Klasse generieren möchten:
 
     ```csharp
 
@@ -176,7 +176,7 @@ Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe vo
 
     ```
 
-3.  Speichern Sie die Datei, und überprüfen Sie die generierte Datei, die nun den folgenden Code enthält:
+3. Speichern Sie die Datei, und überprüfen Sie die generierte Datei, die nun den folgenden Code enthält:
 
     ```csharp
     class MyGeneratedClass {
@@ -341,12 +341,10 @@ Warning("A warning message");
 
 4. Überprüfen Sie die folgenden Eigenschaften der **TT** Datei:
 
-
    | | |
    |-|-|
    | **Benutzerdefiniertes Tool =** | **TextTemplatingFileGenerator** |
    | **Buildvorgang =** | **Keine** |
-
 
 5. Fügen Sie am Anfang der Datei die folgenden Zeilen ein:
 

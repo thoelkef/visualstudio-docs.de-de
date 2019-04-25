@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081865"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Nur Benutzercode mit nur mein Code Debuggen
 
@@ -81,23 +81,23 @@ Wenn Ausnahmen der ersten Chance für die Ausnahme aktiviert sind, wird der aufr
 
 ## <a name="BKMK_C___Just_My_Code"></a> „Nur eigenen Code“ in C++
 
-Ab Visual Studio 2017 Version 15.8 "," nur eigenen Code für den Code schrittweise ausführen, wird ebenfalls unterstützt. Dieses Feature erfordert auch die Verwendung der [/JMC (nur mein Codedebuggen)](/cpp/build/reference/jmc) Compilerschalter. Der Schalter ist standardmäßig in C++-Projekten aktiviert. Für **Aufrufliste** Fenster, und rufen stack-Unterstützung in Just My Code, der /JMC Switch ist nicht erforderlich.
+Ab Visual Studio 2017 Version 15.8 "," nur eigenen Code für den Code schrittweise ausführen, wird ebenfalls unterstützt. Dieses Feature erfordert auch die Verwendung der [/JMC (nur mein Codedebuggen)](/cpp/build/reference/jmc) Compilerschalter. Der Schalter ist standardmäßig aktiviert, in C++ Projekte. Für **Aufrufliste** Fenster, und rufen stack-Unterstützung in Just My Code, der /JMC Switch ist nicht erforderlich.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Um als Benutzercode klassifiziert werden, muss die PDB-Datei für die Binärdatei mit dem Benutzercode vom Debugger geladen werden (verwenden Sie die **Module** Fenster aus, um dies zu überprüfen).
 
-Für aufruflistenverhaltens, wie die **Aufrufliste** nur mein Code in C++-Fenster berücksichtigt nur diese Funktionen werden *nicht benutzerseitiger Code*:
+Für aufruflistenverhaltens, wie die **Aufrufliste** nur mein Code im Fenster C++ berücksichtigt nur diese Funktionen werden *nicht benutzerseitiger Code*:
 
 - Funktionen mit entfernten Quellinformationen in ihrer Symboldatei.
 - Funktionen, bei denen die Symboldateien angeben, dass keine Quelldatei vorhanden ist, die dem Stapelrahmen entspricht.
 - Funktionen, die im angegebenen  *\*natjmc* Dateien in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
 
-Für das Schrittverhalten für Code, nur mein Code in C++ nur diese Funktionen werden berücksichtigt *nicht benutzerseitiger Code*:
+Für Code Schrittverhalten, nur mein Code in C++ berücksichtigt nur diese Funktionen werden *nicht benutzerseitiger Code*:
 
 - Funktionen, die für die die die entsprechenden PDB-Datei nicht im Debugger geladen wurde.
 - Funktionen, die im angegebenen  *\*natjmc* Dateien in die *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* Ordner.
 
 > [!NOTE]
-> Für Code zum schrittweisen Unterstützung in nur mein Code muss C++-Code mit dem MSVC-Compiler in Visual Studio 15.8 Vorschau 3 oder höher kompiliert werden, und der Compilerschalter /JMC muss aktiviert sein (es ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Anpassen von C++-Aufrufliste und code Schrittverhalten](#BKMK_CPP_Customize_call_stack_behavior)) und [Blogbeitrag](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Für Code mit einer älteren Version des Compilers, kompiliert *natstepfilter* Dateien sind die einzige Möglichkeit zum Anpassen von Code in Einzelschritten, die unabhängig vom nur mein Code ist. Finden Sie unter [Anpassen von C++-Schrittverhalten](#BKMK_CPP_Customize_stepping_behavior).
+> Für die Code zum schrittweisen Unterstützung in Just My Code C++ Code muss mit dem MSVC-Compiler in Visual Studio 15.8 Vorschau 3 oder höher kompiliert werden, und der Compilerschalter /JMC muss aktiviert sein (es ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [anpassen C++ Aufrufliste und code Schrittverhalten](#BKMK_CPP_Customize_call_stack_behavior)) und [Blogbeitrag](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Für Code mit einer älteren Version des Compilers, kompiliert *natstepfilter* Dateien sind die einzige Möglichkeit zum Anpassen von Code in Einzelschritten, die unabhängig vom nur mein Code ist. Finden Sie unter [anpassen C++ Schrittverhalten](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Beim C++ Debuggen:
 
@@ -110,9 +110,9 @@ Wenn der Debugger im Nichtbenutzercode unterbricht (Sie verwenden, z. B. **Debug
 
 Wenn der Debugger eine Ausnahme trifft, wird es, ob es im Benutzer- oder nicht-benutzerseitiger Code ist auf die Ausnahme, beendet. **Vom Benutzercode unbehandelt** "Optionen" der **Ausnahmeeinstellungen** im Dialogfeld werden ignoriert.
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Anpassen von C++-Aufrufliste und Code in Einzelschritten Verhalten
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Anpassen von C++ Aufrufliste und code Schrittverhalten
 
-Bei C++-Projekten können Sie angeben, die Module, Quelldateien und Funktionen der **Aufrufliste** Fenster als Nichtbenutzercode behandelt, durch Angabe im  *\*natjmc* Dateien. Diese Anpassung gilt auch für Code in Einzelschritten, wenn Sie den aktuellen Compiler verwenden (siehe [C++ nur mein Code](#BKMK_CPP_User_and_non_user_code)).
+Bei C++-Projekten können Sie angeben, die Module, Quelldateien und Funktionen der **Aufrufliste** Fenster als Nichtbenutzercode behandelt, durch Angabe im  *\*natjmc* Dateien. Diese Anpassung gilt auch für Code in Einzelschritten, wenn Sie den aktuellen Compiler verwenden (siehe [ C++ nur mein Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Fügen Sie dem Ordner *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* die *NATJMC*-Datei hinzu, um Nichtbenutzercode aller Benutzer des Visual Studio-Computers anzugeben.
 - Um Nichtbenutzercode für einen einzelnen Benutzer anzugeben, fügen die *natjmc* -Datei in die *%USERPROFILE%\My Dokumente\\< Visual Studio-Version\>\Visualizers* Ordner.
@@ -160,7 +160,7 @@ Ein *natjmc* Datei ist eine XML-Datei mit folgender Syntax:
 |`Module`|Dies ist optional. Der Name oder der vollständige Pfad zu dem Modul, das die Funktion enthält. Sie können dieses Attribut verwenden, um Funktionen mit demselben Namen zu unterscheiden.|
 |`ExceptionImplementation`|Bei Festlegung auf `true` zeigt die Aufrufliste die Funktion an, die die Ausnahme und nicht diese Funktion ausgelöst hat.|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Anpassen des schrittverhaltens C++ unabhängig von Einstellungen für nur mein Code
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Anpassen von C++ Schrittverhalten unabhängig von Einstellungen für nur mein Code
 
 In C++-Projekten können Sie angeben, Funktionen überspringen sind, indem sie als Nichtbenutzercode in auflisten  *\*natstepfilter* Dateien. In der aufgeführten Funktionen  *\*natstepfilter* Dateien sind nicht nur mein Code Einstellungen abhängig.
 
@@ -188,11 +188,11 @@ Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
 |Element|Beschreibung|
 |-------------|-----------------|
 |`Function`|Erforderlich. Gibt eine oder mehreren Funktionen als Nichtbenutzerfunktionen an.|
-|`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|
+|`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Zum Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|
 |`Module`|Dies ist optional. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Pfad zu dem Modul angibt, das die Funktion enthält. Die Groß- und Kleinschreibung wird bei der Übereinstimmung nicht berücksichtigt.|
 |`Action`|Erforderlich. Einer dieser Werte, bei denen die Groß-/Kleinschreibung beachtet werden muss.<br /><br /> `NoStepInto`  – weist den Debugger an die Funktion zu überspringen.<br /> `StepInto`  – weist den Debugger an die Funktion in Einzelschritten, überschreiben Sie alle anderen `NoStepInto` für die übereinstimmende Funktion.|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> „Nur eigenen Code“ in JavaScript
+## <a name="BKMK_JavaScript_Just_My_Code"></a> „Nur eigenen Code“ in JavaScript
 
 <a name="BKMK_JS_User_and_non_user_code"></a> „Nur eigenen Code“ in JavaScript steuert die Einzelschrittausführung und die Aufruflistenanzeige durch Kategorisieren von Code in einer dieser Klassifizierungen:
 
@@ -205,10 +205,10 @@ Ein *natstepfilter* Datei ist eine XML-Datei mit folgender Syntax:
 Der JavaScript-Debugger klassifiziert Code als Benutzer oder Benutzer in dieser Reihenfolge:
 
 1. Die Standard-Klassifikationen.
-   -   Durch die Übergabe einer Zeichenfolge an der vom Host bereitgestellten ausgeführten Skripts `eval` Funktion **MyCode**.
-   -   Skript ausgeführt, indem eine Zeichenfolge übergeben, die `Function` Konstruktor ist **LibraryCode**.
-   -   Skript in einem frameworkverweis, wie z. B. WinJS oder das Azure SDK ist **LibraryCode**.
-   -   Skript ausgeführt, indem eine Zeichenfolge übergeben, die `setTimeout`, `setImmediate`, oder `setInterval` Functions **UnrelatedCode**.
+   - Durch die Übergabe einer Zeichenfolge an der vom Host bereitgestellten ausgeführten Skripts `eval` Funktion **MyCode**.
+   - Skript ausgeführt, indem eine Zeichenfolge übergeben, die `Function` Konstruktor ist **LibraryCode**.
+   - Skript in einem frameworkverweis, wie z. B. WinJS oder das Azure SDK ist **LibraryCode**.
+   - Skript ausgeführt, indem eine Zeichenfolge übergeben, die `setTimeout`, `setImmediate`, oder `setInterval` Functions **UnrelatedCode**.
 
 2. Klassifizierungen angegeben, die für alle Visual Studio-JavaScript-Projekte in der *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* Datei.
 

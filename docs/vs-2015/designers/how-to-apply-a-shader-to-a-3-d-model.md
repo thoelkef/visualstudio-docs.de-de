@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094776"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor verwendet wird, um einen 
   
  In diesem Dokument wird die folgende Aktivität veranschaulicht:  
   
--   Anwenden eines Shaders auf ein 3D-Modell  
+- Anwenden eines Shaders auf ein 3D-Modell  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>Anwenden eines Shaders auf ein 3D-Modell  
  Sie können einen Shadereffekt auf ein 3D-Modell anwenden, um ihm ein interessantes Aussehen zu verleihen.  
@@ -32,7 +32,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor verwendet wird, um einen 
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>Anwenden eines Shaders auf ein 3D-Modell  
   
-1. Beginnen Sie mit einer 3D-Szene, die ein oder mehrere Modelle enthält. Wenn Sie keine geeignete 3D-Szene haben, erstellen Sie eine wie in beschrieben [Vorgehensweise: Erstellen ein 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md). Sie müssen ebenso über einen DGSL-Shader verfügen, den Sie auf das Modell anwenden können. Wenn Sie keinen geeigneten Shader haben, erstellen Sie eine wie in beschrieben [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) und stellen Sie sicher, dass Sie es in einer Datei gespeichert haben, bevor Sie fortfahren.  
+1. Beginnen Sie mit einer 3D-Szene, die ein oder mehrere Modelle enthält. Wenn Sie keine geeignete 3D-Szene haben, erstellen Sie eine wie in beschrieben [Vorgehensweise: Erstellen ein 3D-Basismodells](../designers/how-to-create-a-basic-3-d-model.md). Sie müssen ebenso über einen DGSL-Shader verfügen, den Sie auf das Modell anwenden können. Wenn kein geeigneter Shader vorhanden ist, erstellen Sie einen wie unter [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) und stellen Sie sicher, dass Sie es in einer Datei gespeichert haben, bevor Sie fortfahren.  
   
 2. Wählen Sie das Modell, auf das Sie den Shader anwenden möchten, im Modus **Auswählen** aus. Anschließend legen Sie im Fenster **Eigenschaften** unter der Eigenschaft **Dateiname** in der Eigenschaftsgruppe **Effekt** den DGSL-Shader fest, den Sie auf das Modell anwenden möchten.  
   

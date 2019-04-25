@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064842"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Gewusst wie: Auswählen von Dateien für den Buildvorgang
+# <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.  
   
 ## <a name="specifying-inputs"></a>Angeben von Eingaben  
@@ -33,7 +32,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-declare-items-individually"></a>So deklarieren Sie Elemente einzeln  
   
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -46,7 +45,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-declare-multiple-items"></a>So deklarieren Sie mehrere Elemente  
   
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -67,19 +66,19 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle JPG-Dateien im Verzeichnis „Images“ bzw. in Unterverzeichnissen ein  
   
--   Verwenden Sie das folgende `Include`-Attribut:  
+- Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle JPG-Dateien ein, die mit „img“ beginnen  
   
--   Verwenden Sie das folgende `Include`-Attribut:  
+- Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>So schließen Sie alle Dateien in Verzeichnissen ein, die mit „jpgs“ enden  
   
--   Ändern Sie eines der folgenden `Include`-Attribute:  
+- Ändern Sie eines der folgenden `Include`-Attribute:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -92,7 +91,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>So verwenden Sie alle Visual C#- oder Visual Basic-Dateien als Eingabe  
   
--   Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
@@ -174,5 +173,5 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [How to: Exclude Files from the Build (Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang)](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
+ [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Elemente](../msbuild/msbuild-items.md)

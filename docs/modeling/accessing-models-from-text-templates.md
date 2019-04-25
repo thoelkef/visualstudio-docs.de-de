@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040689"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 Mithilfe von Textvorlagen können Sie Berichtsdateien Quellcodedateien und anderen Textdateien, die für DSL-Modelle basieren erstellen. Grundlegende Informationen zu Textvorlagen finden Sie [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Die Textvorlagen funktioniert im experimentellen Modus während des Debuggens Ihrer DSL, und es funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  Der DSL-anweisungsprozessor führt zwei grundlegenden Aufgaben aus:
 
--   Effektiv in der Vorlage, die Ihre DSL verweist auf Assembly "und" Import-Anweisungen eingefügt. So können Sie Ihre Domänenklassen im Vorlagencode zu verwenden.
+- Effektiv in der Vorlage, die Ihre DSL verweist auf Assembly "und" Import-Anweisungen eingefügt. So können Sie Ihre Domänenklassen im Vorlagencode zu verwenden.
 
--   Es lädt die Datei, die Sie, in angeben der `requires` -Parameter und legt eine Eigenschaft `this` , der auf das Stammelement des geladenen Modell verweist.
+- Es lädt die Datei, die Sie, in angeben der `requires` -Parameter und legt eine Eigenschaft `this` , der auf das Stammelement des geladenen Modell verweist.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Überprüfen das Modell vor der Ausführung der Vorlage
  Sie können veranlassen, dass das Modell, das überprüft werden, bevor die Vorlage ausgeführt wird.

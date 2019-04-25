@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065544"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Shell ist der primäre Agent
   
 - Überwachung-Shell-Wide-Auswahl, Kontext und Währung. Die Shell verfolgt nach, die folgenden Elementtypen:  
   
-  -   Das aktuelle Projekt  
+  - Das aktuelle Projekt  
   
-  -   Die aktuelle Projektelement oder das aktuelle Element-ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Die aktuelle Projektelement oder das aktuelle Element-ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   Die aktuelle Auswahl für die **Eigenschaften** Fenster oder `SelectionContainer`  
+  - Die aktuelle Auswahl für die **Eigenschaften** Fenster oder `SelectionContainer`  
   
-  -   Die UI-Kontext-IDs oder CmdUIGuids, die steuern, die Sichtbarkeit der Befehle, Menüs und Symbolleisten  
+  - Die UI-Kontext-IDs oder CmdUIGuids, die steuern, die Sichtbarkeit der Befehle, Menüs und Symbolleisten  
   
-  -   Die derzeit aktiven Elemente wie z. B. das aktive Fenster, Dokument und rückgängig-manager  
+  - Die derzeit aktiven Elemente wie z. B. das aktive Fenster, Dokument und rückgängig-manager  
   
-  -   Die Kontext-Attribute, mit denen dynamische Hilfe  
+  - Die Kontext-Attribute, mit denen dynamische Hilfe  
   
   Die Shell vermittelt auch die Kommunikation zwischen den installierten VSPackages und Dienste. Es unterstützt die Kernfunktionen von der Shell, und stellt sie zur Verfügung, die alle integrierten VSPackages [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Diese Core-Features gehören die folgenden Elemente:  
   

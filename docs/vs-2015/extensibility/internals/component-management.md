@@ -11,12 +11,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090445"
 ---
 # <a name="component-management"></a>Verwaltung von Komponenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Einheiten von Aufgaben in der Windows Installer werden als Windows Installer-Kom
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Richtlinien der Erstellung von Setup für Seite-an-Seite-Installation  
   
--   Author-Dateien und Registrierungsschlüssel, die für die Versionen, die in ihren eigenen Komponenten freigegeben werden.  
+- Author-Dateien und Registrierungsschlüssel, die für die Versionen, die in ihren eigenen Komponenten freigegeben werden.  
   
      Dadurch können Sie ganz einfach auf die nächste Version zu verwenden. Die Datei z. B. Typbibliotheken, die global registriert sind Erweiterungen, andere Elemente in HKEY_CLASSES_ROOT und So weiter registriert.  
   
--   Gruppieren Sie gemeinsam genutzte Komponenten werden in separaten Mergemodule.  
+- Gruppieren Sie gemeinsam genutzte Komponenten werden in separaten Mergemodule.  
   
      Dadurch können Sie vom Autor ordnungsgemäß Seite-an-Seite für die Zukunft.  
   
--   Installieren Sie die freigegebenen Dateien und Registrierungsschlüsseln mithilfe der gleichen Windows Installer-Komponenten über Versionen hinweg.  
+- Installieren Sie die freigegebenen Dateien und Registrierungsschlüsseln mithilfe der gleichen Windows Installer-Komponenten über Versionen hinweg.  
   
      Wenn Sie eine andere Komponente verwenden, werden Dateien und Registrierungseinträge deinstalliert, wenn eine mit versionsverwaltung durch das VSPackage wird deinstalliert, aber einem anderen VSPackage ist weiterhin installiert werden.  
   
--   Mischen Sie versioniert und freigegebene Elemente in der gleichen Komponente nicht.  
+- Mischen Sie versioniert und freigegebene Elemente in der gleichen Komponente nicht.  
   
      Auf diese Weise macht es unmöglich, freigegebene Elemente zu einem globalen Speicherort und Versionselementen, isolierte Standorte zu installieren.  
   
--   Haben Sie keine freigegebenen Registrierungsschlüssel, die auf Dateien Versionsnummern verweisen.  
+- Haben Sie keine freigegebenen Registrierungsschlüssel, die auf Dateien Versionsnummern verweisen.  
   
      Wenn Sie dies tun, werden bei der Installation von einem anderen mit versionsverwaltung durch das VSPackage die gemeinsam verwendeten Schlüssel überschrieben. Wenn Sie die zweite Version entfernen, ist die Datei, die auf der der Schlüssel verweist nicht mehr vorhanden.  
   

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076028"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 
@@ -125,9 +125,9 @@ Die Benutzeroberfläche für diese Anwendung besteht aus den folgenden:
 
 ### <a name="to-add-controls-to-the-form"></a>So fügen Sie dem Formular Steuerelemente hinzu
 
-1.  Open `Form1` in der Entwurfsansicht.
+1. Open `Form1` in der Entwurfsansicht.
 
-2.  Von der **Toolbox**, ziehen Sie die folgenden Steuerelemente im Formular:
+2. Von der **Toolbox**, ziehen Sie die folgenden Steuerelemente im Formular:
 
     - Eine <xref:System.Windows.Forms.DataGridView> Steuerelement
 
@@ -135,7 +135,7 @@ Die Benutzeroberfläche für diese Anwendung besteht aus den folgenden:
 
     - Zwei <xref:System.Windows.Forms.Button> Steuerelemente
 
-3.  Legen Sie die folgenden Eigenschaften fest:
+3. Legen Sie die folgenden Eigenschaften fest:
 
     |Steuerelement|Eigenschaft|Einstellung|
     |-------------|--------------|-------------|
@@ -150,44 +150,44 @@ Die Benutzeroberfläche für diese Anwendung besteht aus den folgenden:
 
 In diesem Schritt erstellen Sie ein neues Dataset mit dem Namen `authors`. Weitere Informationen über Datasets finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1.  In **Projektmappen-Explorer**, wählen Sie die Quelldatei für **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche der **Projektmappen-Explorer** die Symbolleiste.
+1. In **Projektmappen-Explorer**, wählen Sie die Quelldatei für **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche der **Projektmappen-Explorer** die Symbolleiste.
 
-2.  Von der [Toolbox, Registerkarte "Daten"](../ide/reference/toolbox-data-tab.md), ziehen Sie eine **DataSet** auf **Form1**.
+2. Von der [Toolbox, Registerkarte "Daten"](../ide/reference/toolbox-data-tab.md), ziehen Sie eine **DataSet** auf **Form1**.
 
-3.  In der **Dataset hinzufügen** wählen Sie im Dialogfeld **nicht typisiertes Dataset**, und wählen Sie dann **OK**.
+3. In der **Dataset hinzufügen** wählen Sie im Dialogfeld **nicht typisiertes Dataset**, und wählen Sie dann **OK**.
 
      **"DataSet1"** wird der Komponentenleiste hinzugefügt.
 
-4.  In der **Eigenschaften** legen die **Namen** und <xref:System.Data.DataSet.DataSetName%2A> Eigenschaften für`AuthorsDataSet`.
+4. In der **Eigenschaften** legen die **Namen** und <xref:System.Data.DataSet.DataSetName%2A> Eigenschaften für`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Erstellen Sie den Ereignishandler zum Lesen von XML-Datei in das dataset
 
 Die **XML lesen** Schaltfläche liest die XML-Datei in das Dataset. Klicken Sie dann legt Eigenschaften fest, auf die <xref:System.Windows.Forms.DataGridView> -Steuerelement, das sie an das Dataset zu binden.
 
-1.  In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche der **Projektmappen-Explorer** Symbolleiste.
+1. In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche der **Projektmappen-Explorer** Symbolleiste.
 
-2.  Wählen Sie die **XML lesen** Schaltfläche.
+2. Wählen Sie die **XML lesen** Schaltfläche.
 
      Die **Code-Editor** wird geöffnet, auf die `ReadXmlButton_Click` -Ereignishandler.
 
-3.  Geben Sie den folgenden Code in die `ReadXmlButton_Click` -Ereignishandler:
+3. Geben Sie den folgenden Code in die `ReadXmlButton_Click` -Ereignishandler:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  In der `ReadXMLButton_Click` Ereignishandlercode, Änderung der `filepath =` Eintrag auf den richtigen Pfad.
+4. In der `ReadXMLButton_Click` Ereignishandlercode, Änderung der `filepath =` Eintrag auf den richtigen Pfad.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Erstellen Sie den Ereignishandler, um das Schema in das Textfeld anzuzeigen.
 
 Die **Schema anzeigen** Schaltfläche erstellt eine <xref:System.IO.StringWriter> -Objekt, mit dem Schema gefüllt ist, und wird angezeigt, in, der <xref:System.Windows.Forms.TextBox>Steuerelement.
 
-1.  In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche.
+1. In **Projektmappen-Explorer**Option **Form1**, und wählen Sie dann die **Ansicht-Designer** Schaltfläche.
 
-2.  Wählen Sie die **Schema anzeigen** Schaltfläche.
+2. Wählen Sie die **Schema anzeigen** Schaltfläche.
 
      Die **Code-Editor** wird geöffnet, auf die `ShowSchemaButton_Click` -Ereignishandler.
 
-3.  Fügen im `ShowSchemaButton_Click`-Ereignishandler den folgenden Code ein.
+3. Fügen im `ShowSchemaButton_Click`-Ereignishandler den folgenden Code ein.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -196,13 +196,13 @@ Die **Schema anzeigen** Schaltfläche erstellt eine <xref:System.IO.StringWriter
 
 Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wie erwartet ausfällt.
 
-1.  Wählen Sie **F5** zum Ausführen der Anwendung.
+1. Wählen Sie **F5** zum Ausführen der Anwendung.
 
-2.  Wählen Sie die **XML lesen** Schaltfläche.
+2. Wählen Sie die **XML lesen** Schaltfläche.
 
      DataGridView zeigt den Inhalt der XML-Datei.
 
-3.  Wählen Sie die **Schema anzeigen** Schaltfläche.
+3. Wählen Sie die **Schema anzeigen** Schaltfläche.
 
      Das Textfeld zeigt die XML-Schema für die XML-Datei.
 

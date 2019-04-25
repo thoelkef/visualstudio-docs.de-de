@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117928"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML-Schemas und Daten in Anpassungen auf Dokumentebene
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
@@ -40,16 +40,16 @@ ms.locfileid: "54875449"
 
  Es gibt zwei Hauptobjekten:
 
--   XML-Schema (XSD-Datei). Für jedes Schema in der Arbeitsmappe wird dem Projekt mit Visual Studio ein Schema hinzugefügt. Dies wird als ein Projektelement mit der Erweiterung XSD in **Projektmappen-Explorer**.
+- XML-Schema (XSD-Datei). Für jedes Schema in der Arbeitsmappe wird dem Projekt mit Visual Studio ein Schema hinzugefügt. Dies wird als ein Projektelement mit der Erweiterung XSD in **Projektmappen-Explorer**.
 
--   Eine typisierte <xref:System.Data.DataSet>-Klasse. Diese Klasse wird basierend auf dem Schema erstellt. Dieses Dataset-Klasse werden in **Klassenansicht**.
+- Eine typisierte <xref:System.Data.DataSet>-Klasse. Diese Klasse wird basierend auf dem Schema erstellt. Dieses Dataset-Klasse werden in **Klassenansicht**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objekte, die erstellt, wenn die Elemente des Schemas zu Excel-Arbeitsblättern zugeordnet sind
  Beim Zuordnen einer Schema-Element aus der **XML-Quelle** Aufgabenbereich zu einem Arbeitsblatt, Visual Studio automatisch mehrere Objekte erstellt, und fügt sie dem Projekt hinzu:
 
--   Steuerelemente Für jedes zugeordnete Objekt in der Arbeitsmappe eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement (für nicht wiederholte Schemaelemente) oder ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement (für sich wiederholende Elemente des Schemas) in das Programmiermodell, das erstellt wird. Die <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement kann nur durch Löschen von Zuordnungen und die zugeordneten Objekte aus der Arbeitsmappe gelöscht werden. Weitere Informationen zu Steuerelementen, finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
+- Steuerelemente Für jedes zugeordnete Objekt in der Arbeitsmappe eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement (für nicht wiederholte Schemaelemente) oder ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement (für sich wiederholende Elemente des Schemas) in das Programmiermodell, das erstellt wird. Die <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement kann nur durch Löschen von Zuordnungen und die zugeordneten Objekte aus der Arbeitsmappe gelöscht werden. Weitere Informationen zu Steuerelementen, finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Bei der Erstellung einer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> durch ein nicht wiederholendes Schemaelement zuordnen, in das Arbeitsblatt, ein <xref:System.Windows.Forms.BindingSource> wird erstellt und die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement gebunden ist, die <xref:System.Windows.Forms.BindingSource>. Sie müssen das Binden der <xref:System.Windows.Forms.BindingSource> mit einer Instanz von der Datenquelle, die dem Schema zugeordnet, auf das Dokument, z. B. eine Instanz des typisierten <xref:System.Data.DataSet> -Klasse, die erstellt wurde. Erstellen Sie die Bindung durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften, die in verfügbar gemacht werden die **Eigenschaften** Fenster.
+- BindingSource. Bei der Erstellung einer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> durch ein nicht wiederholendes Schemaelement zuordnen, in das Arbeitsblatt, ein <xref:System.Windows.Forms.BindingSource> wird erstellt und die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement gebunden ist, die <xref:System.Windows.Forms.BindingSource>. Sie müssen das Binden der <xref:System.Windows.Forms.BindingSource> mit einer Instanz von der Datenquelle, die dem Schema zugeordnet, auf das Dokument, z. B. eine Instanz des typisierten <xref:System.Data.DataSet> -Klasse, die erstellt wurde. Erstellen Sie die Bindung durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften, die in verfügbar gemacht werden die **Eigenschaften** Fenster.
 
     > [!NOTE]
     >  Die <xref:System.Windows.Forms.BindingSource> wird nicht für erstellt <xref:Microsoft.Office.Tools.Excel.ListObject> Objekte. Sie müssen manuell binden die <xref:Microsoft.Office.Tools.Excel.ListObject> an die Datenquelle durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften in der **Eigenschaften** Fenster.

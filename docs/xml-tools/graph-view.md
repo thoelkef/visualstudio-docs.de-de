@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079707"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -120,11 +120,11 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die Funktion zum Rückgängigmachen bzw. Wiederholen ist in der Diagrammansicht für folgende Aktionen aktiviert:
 
--   Hinzufügen eines einzelnen Knotens per Drag & Drop
+- Hinzufügen eines einzelnen Knotens per Drag &amp; Drop
 
--   Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht
+- Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht
 
--   Löschen einzelner oder mehrerer Knoten
+- Löschen einzelner oder mehrerer Knoten
 
 ## <a name="zoom"></a>Zoom
 
@@ -132,9 +132,9 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Der Zoomfaktor kann wie folgt gesteuert werden:
 
--   Durch Drücken der **STRG** whell Schlüssel, und drehen Sie die Maus, wenn die Maus über die Oberfläche der Diagrammansicht zeigt.
+- Durch Drücken der **STRG** whell Schlüssel, und drehen Sie die Maus, wenn die Maus über die Oberfläche der Diagrammansicht zeigt.
 
--   Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
+- Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
 
 Der Zoomschieberegler ist nicht transparent, wenn Sie es auswählen, zeigen Sie darauf, oder verwenden **STRG** mit dem Mausrad zum Zoomen, in allen anderen Fällen ist er transparent.
 

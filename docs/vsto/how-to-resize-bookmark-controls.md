@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090718"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Vorgehensweise: Größe von Bookmark-Steuerelementen
   Die Größe eines <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements legen Sie fest, wenn Sie es einem Microsoft Office Word-Dokument hinzufügen. Sie können dessen Größe aber auch zu einem späteren Zeitpunkt ändern.
@@ -47,15 +47,15 @@ ms.locfileid: "56644951"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>So ändern Sie zur Entwurfszeit die Größe eines Lesezeichens in einem Projekt auf Dokumentebene
 
-1.  Wählen Sie das Lesezeichen im Fenster **Eigenschaften** aus.
+1. Wählen Sie das Lesezeichen im Fenster **Eigenschaften** aus.
 
-2.  Vergrößern oder verkleinern Sie den Wert der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> -Eigenschaft.
+2. Vergrößern oder verkleinern Sie den Wert der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> -Eigenschaft.
 
-3.  Vergrößern oder verkleinern Sie den Wert der <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> -Eigenschaft.
+3. Vergrößern oder verkleinern Sie den Wert der <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> -Eigenschaft.
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Zum Ändern der Größe eines Lesezeichens in einem Projekt auf Dokumentebene zur Laufzeit
 
-1.  Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> und <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Eigenschaften eine <xref:Microsoft.Office.Tools.Word.Bookmark> Sie erstellt haben, zur Laufzeit oder zur Entwurfszeit.
+1. Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> und <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Eigenschaften eine <xref:Microsoft.Office.Tools.Word.Bookmark> Sie erstellt haben, zur Laufzeit oder zur Entwurfszeit.
 
      Im folgenden Codebeispiel werden dem Anfang eines Lesezeichens namens `SampleBookmark`fünf Zeichen hinzugefügt. Für diesen Code wird davon ausgegangen, dass sich vor dem Lesezeichen mindestens fünf Textzeichen befinden.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644951"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Zum Ändern der Größe eines Lesezeichens in einem VSTO-Add-in-Projekt zur Laufzeit
 
-1.  Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> und <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Eigenschaften eine <xref:Microsoft.Office.Tools.Word.Bookmark> Sie zur Laufzeit erstellt.
+1. Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> und <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> Eigenschaften eine <xref:Microsoft.Office.Tools.Word.Bookmark> Sie zur Laufzeit erstellt.
 
      Im folgenden Codebeispiel wird ein <xref:Microsoft.Office.Tools.Word.Bookmark> -Objekt erstellt, das den Text aus dem ersten Absatz des aktiven Dokuments enthält. Anschließend werden am Anfang und am Ende des <xref:Microsoft.Office.Tools.Word.Bookmark>-Objekts fünf Zeichen entfernt.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644951"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>So erstellen Sie zur Entwurfszeit ein Lesezeichen in einem Projekt auf Dokumentebene
 
-1.  Markieren Sie den Text, der in das neue <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement eingefügt werden soll.
+1. Markieren Sie den Text, der in das neue <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement eingefügt werden soll.
 
-2.  Klicken Sie im Menü **Einfügen** auf **Lesezeichen**.
+2. Klicken Sie im Menü **Einfügen** auf **Lesezeichen**.
 
-3.  Geben Sie im Dialogfeld **Lesezeichen** den Namen des Lesezeichens ein, dessen Größe Sie ändern möchten, und klicken Sie auf **Hinzufügen**.
+3. Geben Sie im Dialogfeld **Lesezeichen** den Namen des Lesezeichens ein, dessen Größe Sie ändern möchten, und klicken Sie auf **Hinzufügen**.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Hinzufügen von Lesezeichen-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

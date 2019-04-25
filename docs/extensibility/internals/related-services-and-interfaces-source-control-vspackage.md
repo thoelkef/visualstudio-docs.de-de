@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062047"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
 Dieser Abschnitt enthält alle VSPackage sammlungsbezogene Schnittstellen in der Quellcode der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Das Quellcodeverwaltungs-VSPackage implementiert einige dieser Schnittstellen und andere um Aufgaben der quellcodeverwaltung zu erreichen.
@@ -30,13 +30,13 @@ Dieser Abschnitt enthält alle VSPackage sammlungsbezogene Schnittstellen in der
 
  Schnittstellen sind:
 
--   Erforderlich: Die entsprechende Entität (Datenquellen-Steuerelement VSPackage, Quellcode-Verwaltungsstub Projekt) muss die Schnittstelle implementieren.
+- Erforderlich: Die entsprechende Entität (Datenquellen-Steuerelement VSPackage, Quellcode-Verwaltungsstub Projekt) muss die Schnittstelle implementieren.
 
--   Empfohlen: Die Entität sollten diese Schnittstelle implementieren; Andernfalls kann Quellcodeverwaltungsfunktionen beschränkt sein.
+- Empfohlen: Die Entität sollten diese Schnittstelle implementieren; Andernfalls kann Quellcodeverwaltungsfunktionen beschränkt sein.
 
--   Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.
+- Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.
 
-| Schnittstelle | Zweck | Implementiert von | Implementiert werden? |
+| Interface | Zweck | Implementiert von | Implementiert werden? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Editoren rufen Sie diese Schnittstelle vor dem ändern oder Speichern einer Datei. Das Datenquellen-Steuerelement VSPackage kann die Datei auschecken oder verweigern den Vorgang aus, wenn das Auschecken fehlschlägt. | Datenquellen-Steuerelement VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Diese Schnittstelle bietet grundlegende Quellcodeverwaltungsfunktionen für Projekte, wie z. B. registrieren und Aufheben der Registrierung für Projekte mit quellcodeverwaltung und bieten Unterstützung für grundlegende Quellcodeverwaltungssymbole an. | Datenquellen-Steuerelement VSPackage | Erforderlich |

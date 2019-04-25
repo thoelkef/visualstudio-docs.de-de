@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050500"
 ---
 # <a name="detect-system-requirements"></a>Ermitteln von Systemanforderungen
 Eine VSPackage funktioniert nicht, es sei denn, die Visual Studio installiert ist. Wenn Sie Microsoft Windows Installer, zum Verwalten der Installation von einem VSPackage verwenden, können Sie das Installationsprogramm aus, um festzustellen, ob die Installation von Visual Studio konfigurieren. Sie können auch damit das System für andere Anforderungen, z. B. überprüfen, eine bestimmte Version von Windows oder einer bestimmten Menge an RAM konfigurieren.
@@ -24,11 +24,11 @@ Eine VSPackage funktioniert nicht, es sei denn, die Visual Studio installiert is
 ## <a name="detect-visual-studio-editions"></a>Erkennen von Visual Studio-Editionen
  Um zu bestimmen, ob eine Edition von Visual Studio installiert ist, überprüfen, ob der Wert des der **installieren** Registrierungsschlüssel ist *(REG_DWORD) 1* im entsprechenden Ordner, in der folgenden Tabelle genannten. Beachten Sie, dass eine Hierarchie von Visual Studio-Editionen:
 
-1.  Enterprise
+1. Enterprise
 
-2.  Professionell
+2. Professionell
 
-3.  Community
+3. Community
 
 Wenn eine neuere Version installiert ist, werden die Registrierungsschlüssel für diese Edition ebenfalls wie bei früheren Versionen hinzugefügt. D. h., wenn die Enterprise Edition installiert ist, die **installieren** Schlüssel nastaven NA hodnotu *1* für Unternehmen sowie für die Editionen Professional und Community. Aus diesem Grund müssen Sie nur auf der aktuellsten Version zu überprüfen, die Sie benötigen.
 

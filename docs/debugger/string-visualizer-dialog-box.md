@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366782"
 ---
-# <a name="string-visualizer-dialog-box"></a>Zeichenfolgen-Schnellansicht (Dialogfeld)
+# <a name="string-visualizer-dialog-box"></a>Dialogfeld „Zeichenfolgen-Schnellansicht“
 
 Während des Debuggens in Visual Studio können Sie Zeichenfolgen mit der integrierten Zeichenfolgen-Schnellansicht anzeigen. Die Zeichenfolgen-Schnellansicht zeigt Zeichenfolgen, die für ein Trinkgeld- oder -Debugger-Fenster von Daten zu lang sind. Sie können auch Sie falsch formatierte Zeichenfolgen zu identifizieren.
 

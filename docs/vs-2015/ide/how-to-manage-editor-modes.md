@@ -25,14 +25,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095541"
 ---
-# <a name="how-to-manage-editor-modes"></a>Gewusst wie: Verwalten von Editormodi
+# <a name="how-to-manage-editor-modes"></a>Vorgehensweise: Verwalten von Editormodi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können den Visual Studio Code-Editor in verschiedenen Anzeigemodi verwenden.  
@@ -45,27 +45,27 @@ Sie können den Visual Studio Code-Editor in verschiedenen Anzeigemodi verwenden
   
 #### <a name="to-enable-full-screen-mode"></a>So können Sie den Vollbildmodus aktivieren  
   
--   Drücken Sie auf ALT + UMSCHALT + EINGABE, um den **Vollbildmodus** zu starten oder zu beenden.  
+- Drücken Sie auf ALT + UMSCHALT + EINGABE, um den **Vollbildmodus** zu starten oder zu beenden.  
   
      – oder –  
   
--   Geben Sie im Feld **Befehl** den Befehl `View.Fullscreen` ein.  
+- Geben Sie im Feld **Befehl** den Befehl `View.Fullscreen` ein.  
   
 ## <a name="enabling-virtual-space-mode"></a>Aktivieren des Modus für virtuelle Leerzeichen  
  Im Modus für **virtuelle Leerzeichen** werden Leerzeichen am Ende jeder Codezeile eingefügt. Aktivieren Sie diese Option, um Kommentare immer an derselben Stelle neben dem Markup einzufügen.  
   
 #### <a name="to-enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen  
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
   
-2.  Erweitern Sie den Ordner **Text-Editor** und klicken Sie auf **Alle Sprachen**, um diese Option global anzuwenden, oder entscheiden Sie sich für den Ordner einer bestimmten Sprache. (Um z.B. Zeilennummern nur für Visual Basic zu aktivieren, klicken Sie auf die Optionen „Basic“, „Text-Editor“.)  
+2. Erweitern Sie den Ordner **Text-Editor** und klicken Sie auf **Alle Sprachen**, um diese Option global anzuwenden, oder entscheiden Sie sich für den Ordner einer bestimmten Sprache. (Um z.B. Zeilennummern nur für Visual Basic zu aktivieren, klicken Sie auf die Optionen „Basic“, „Text-Editor“.)  
   
-3.  Klicken Sie auf die Option **Allgemein** und dann unter **Einstellungen** auf **Enable Virtual Space** (Virtuelle Leerzeichen aktivieren).  
+3. Klicken Sie auf die Option **Allgemein** und dann unter **Einstellungen** auf **Enable Virtual Space** (Virtuelle Leerzeichen aktivieren).  
   
     > [!NOTE]
     >  **Virtuelle Leerzeichen** sind im Modus **Spaltenauswahl** aktiviert. Wenn der Modus für **virtuelle Leerzeichen** nicht aktiviert ist, wird die Einfügemarke vom Ende einer Zeile direkt zum ersten Zeichen der nächsten verschoben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../ide/customizing-the-editor.md)   
- [How to: Arrange and Dock Windows (Vorgehensweise: Anordnen und Andocken von Fenstern)](../misc/how-to-arrange-and-dock-windows.md)   
+ [Vorgehensweise: Anordnen und Andocken von Windows](../misc/how-to-arrange-and-dock-windows.md)   
  [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

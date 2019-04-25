@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e3254c3716cd1c3aaeaa6ca76b33c95f525186
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071446"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Vorgehensweise: Programmgesteuertes suchen und Ersetzen von Text in Dokumenten
   Das <xref:Microsoft.Office.Interop.Word.Find>-Objekt ist ein Element des <xref:Microsoft.Office.Interop.Word.Selection>- und des <xref:Microsoft.Office.Interop.Word.Range>-Objekts, und Sie können eines dieser Objekte verwenden, um in Microsoft Office Word-Dokumenten nach Text zu suchen. Der Befehl "Ersetzen" ist eine Erweiterung des Befehls "Suchen".
@@ -101,20 +101,20 @@ ms.locfileid: "56610631"
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>So suchen Sie nach Text und ersetzen Text in Dokumenten
 
-1.  Fügen Sie den folgenden Beispielcode der Klasse `ThisDocument` oder `ThisAddIn` im Projekt hinzu.
+1. Fügen Sie den folgenden Beispielcode der Klasse `ThisDocument` oder `ThisAddIn` im Projekt hinzu.
 
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
      Die Klasse <xref:Microsoft.Office.Interop.Word.Find> verfügt über eine Methode <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A>, und die Klasse <xref:Microsoft.Office.Interop.Word.Replacement> verfügt ebenfalls über eine eigene Methode <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>. Bei der Sie suchen und Ersetzen-Vorgänge durchführen, müssen Sie die Methode ClearFormatting beider Objekte verwenden. Wenn Sie nur das <xref:Microsoft.Office.Interop.Word.Find>-Objekt verwenden, erhalten Sie ggf. unerwartete Ergebnisse im Ersetzungstext.
 
-2.  Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> des <xref:Microsoft.Office.Interop.Word.Find>-Objekts, um jedes gefundene Element zu ersetzen. Verwenden Sie zum Angeben der zu ersetzenden Elemente den *ersetzen* Parameter. Dieser Parameter kann einen der folgenden <xref:Microsoft.Office.Interop.Word.WdReplace>-Werte aufweisen:
+2. Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> des <xref:Microsoft.Office.Interop.Word.Find>-Objekts, um jedes gefundene Element zu ersetzen. Verwenden Sie zum Angeben der zu ersetzenden Elemente den *ersetzen* Parameter. Dieser Parameter kann einen der folgenden <xref:Microsoft.Office.Interop.Word.WdReplace>-Werte aufweisen:
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> ersetzt alle gefundenen Elemente.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> ersetzt alle gefundenen Elemente.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> ersetzt keines der gefundenen Elemente.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> ersetzt keines der gefundenen Elemente.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> ersetzt das erste gefundene Element.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> ersetzt das erste gefundene Element.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Programmgesteuertes Festlegen von Suchoptionen in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)

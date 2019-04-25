@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092863"
 ---
 # <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Projektmappen
   Sie können die Ereignisanzeige in Windows verwenden, um Ausnahmemeldungen anzuzeigen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgezeichnet werden, wenn Sie Office-Lösungen installieren oder deinstallieren. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben.
@@ -32,19 +32,19 @@ ms.locfileid: "56628883"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Lesen Sie das Ereignisprotokoll in Windows Server 2003 und Windows XP
 
-1.  Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.
+1. Öffnen Sie in der Systemsteuerung das Hilfsprogramm **Verwaltung**.
 
-2.  Starten Sie **Ereignisanzeige**.
+2. Starten Sie **Ereignisanzeige**.
 
-3.  Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung**aus.
+3. Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung**aus.
 
-4.  Klicken Sie im Menü **Ansicht** auf **Filter**.
+4. Klicken Sie im Menü **Ansicht** auf **Filter**.
 
-5.  Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0**aus.
+5. Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0**aus.
 
-6.  Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096**ein.
+6. Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096**ein.
 
-7.  Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.
+7. Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Lesen Sie das Ereignisprotokoll in Windows 7, Windows Vista und Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628883"
 
 ### <a name="to-disable-the-event-log"></a>So deaktivieren Sie das Ereignisprotokoll
 
-1.  Öffnen Sie in der Systemsteuerung das Hilfsprogramm **System**.
+1. Öffnen Sie in der Systemsteuerung das Hilfsprogramm **System**.
 
-2.  Klicken Sie auf der Registerkarte **Erweitert** auf **Umgebungsvariablen**.
+2. Klicken Sie auf der Registerkarte **Erweitert** auf **Umgebungsvariablen**.
 
-3.  Klicken Sie im Bereich **Systemvariablen** auf **Neu**.
+3. Klicken Sie im Bereich **Systemvariablen** auf **Neu**.
 
-4.  Geben Sie im Dialogfeld **Neue Systemvariable** in das Feld **Variablenname** den Namen **VSTO_EVENTLOGDISABLED** ein.
+4. Geben Sie im Dialogfeld **Neue Systemvariable** in das Feld **Variablenname** den Namen **VSTO_EVENTLOGDISABLED** ein.
 
-5.  Geben Sie in das Feld **Variablenwert** den Wert **1**ein.
+5. Geben Sie in das Feld **Variablenwert** den Wert **1**ein.
 
-6.  Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 - [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)

@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046085"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Sie können ein VSIX-Paket lokalisieren, indem eine Extension.vsixlangpack-Datei
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Die Include in VSIX-Eigenschaft festlegen  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Extension.vsixlangpack-Datei, und klicken Sie dann auf **Eigenschaften**.  
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Extension.vsixlangpack-Datei, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie im Eigenschaftenraster auf **Include in VSIX-Datei**, und legen Sie dessen Wert auf `true`.  
+2. Klicken Sie im Eigenschaftenraster auf **Include in VSIX-Datei**, und legen Sie dessen Wert auf `true`.  
   
 ## <a name="example"></a>Beispiel  
   

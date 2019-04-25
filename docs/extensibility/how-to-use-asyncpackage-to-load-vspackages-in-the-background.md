@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113962"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Vorgehensweise: Verwenden von AsyncPackage zum Laden von VSPackages im Hintergrund
 Laden und initialisieren ein Visual Studio-Paket können auf dem Datenträger-e/a führen. Wenn diese e/a im UI-Thread auftritt, kann es zu Probleme mit der Reaktionsfähigkeit führen. Um dieses Problem zu beheben, Visual Studio 2015 eingeführt, die <xref:Microsoft.VisualStudio.Shell.AsyncPackage> Klasse, die das Laden des Pakets in einem Hintergrundthread ermöglicht.
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Konvertieren Sie einen vorhandenen VSPackage in von AsyncPackage
  Der Großteil der Arbeit entspricht dem Erstellen eines neuen **von AsyncPackage**. Führen Sie die Schritte 1 bis 5. Außerdem müssen Sie besondere Vorsicht mit den folgenden Empfehlungen nutzen:
 
-1.  Denken Sie daran, entfernen Sie die `Initialize` außer Kraft setzen, die Sie in Ihrem Paket haben.
+1. Denken Sie daran, entfernen Sie die `Initialize` außer Kraft setzen, die Sie in Ihrem Paket haben.
 
-2.  Vermeiden von Deadlocks: Dies kann bei RPCs in Ihrem Code ausgeblendet. die jetzt in einem Hintergrundthread ausgeführt. Stellen sicher, dass wenn Sie RPC vornehmen (z. B. **"GetService"**), müssen Sie entweder (1) wechseln, an den primären Thread oder (2) verwenden die asynchrone Version der API eine vorhanden ist (z. B. **GetServiceAsync**).
+2. Vermeiden von Deadlocks: Dies kann bei RPCs in Ihrem Code ausgeblendet. die jetzt in einem Hintergrundthread ausgeführt. Stellen sicher, dass wenn Sie RPC vornehmen (z. B. **"GetService"**), müssen Sie entweder (1) wechseln, an den primären Thread oder (2) verwenden die asynchrone Version der API eine vorhanden ist (z. B. **GetServiceAsync**).
 
-3.  Wechseln Sie nicht zwischen den Threads zu häufig. Versuchen Sie es, um die Arbeit zu lokalisieren, die in einem Hintergrundthread reduzieren die Ladezeit auftreten können.
+3. Wechseln Sie nicht zwischen den Threads zu häufig. Versuchen Sie es, um die Arbeit zu lokalisieren, die in einem Hintergrundthread reduzieren die Ladezeit auftreten können.
 
 ## <a name="querying-services-from-asyncpackage"></a>Abfragen von Diensten von AsyncPackage
  Ein **von AsyncPackage** kann oder möglicherweise je nach den Aufrufer nicht asynchron geladen. Zum Beispiel

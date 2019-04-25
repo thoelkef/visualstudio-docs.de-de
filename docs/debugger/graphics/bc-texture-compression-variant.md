@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094085"
 ---
 # <a name="bc-texture-compression-variant"></a>BC-Texturkomprimierungsvariante
 Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Variation von B8G8R8X8, B8G8R8A8 oder R8G8B8A8 ist.
@@ -23,18 +23,18 @@ Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Va
 
  Wenn Ihre Texturen für eine Blockkomprimierung geeignet sind und die Farben nicht perfekt wiedergegeben werden müssen, können Sie ein blockkomprimiertes Format verwenden, um den Speicherverbrauch zu reduzieren und weniger Bandbreite in Anspruch zu nehmen.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die Komprimierung von Texturen mit einem Blockkomprimierungsformat geschieht bei jedem Aufruf von `ID3DDevice::CreateTexture2D`, mit dem eine Quelltextur erstellt wird. Texturen werden vor allem in folgenden Fällen komprimiert:
 
 - Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt beschreibt eine nicht geänderte Shaderressource. Das bedeutet:
 
-  -   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.
+  - Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.
 
-  -   Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.
+  - Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.
 
-  -   Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.
+  - Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.
 
-  -   Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.
+  - Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.
 
 - Die ursprünglichen Daten werden beim Aufruf von `CreateTexture2D` bereitgestellt.
 

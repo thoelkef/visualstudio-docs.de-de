@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100585"
 ---
 # <a name="create-a-settings-category"></a>Erstellen einer Einstellungskategorie
 
@@ -33,11 +33,11 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
 
 ### <a name="to-create-a-settings-category"></a>Zum Erstellen einer Einstellungskategorie
 
-1.  Abschließen der [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md).
+1. Abschließen der [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md).
 
-2.  Öffnen der *VSPackage.resx* Datei, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:
+2. Öffnen der *VSPackage.resx* Datei, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:
 
-    |name|Wert|
+    |Name|Wert|
     |----------|-----------|
     |106|Meine Kategorie|
     |107|Meine Einstellungen|
@@ -48,7 +48,7 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
     > [!NOTE]
     >  Dieser drei nur die Namen der Kategorie erscheint nicht in der **Einstellungen importieren und exportieren** Assistenten.
 
-3.  In *MyToolsOptionsPackage.cs*, Hinzufügen einer `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.
+3. In *MyToolsOptionsPackage.cs*, Hinzufügen einer `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,39 +78,39 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
     > [!NOTE]
     >  Die `OptionPageGrid` Kategorie mit dem Namen "My Category" ist jetzt besteht aus den zwei Eigenschaften, `OptionInteger` und `OptionFloat`.
 
-4.  Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die `MyToolsOptionsPackage` -Klasse und weisen Sie ihm die CategoryName "My Category", geben sie den Objektnamen "My Settings" und IsToolsOptionPage auf "true" festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID, auf die entsprechenden Zeichenfolgenressource, die IDs zuvor erstellt haben.
+4. Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die `MyToolsOptionsPackage` -Klasse und weisen Sie ihm die CategoryName "My Category", geben sie den Objektnamen "My Settings" und IsToolsOptionPage auf "true" festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID, auf die entsprechenden Zeichenfolgenressource, die IDs zuvor erstellt haben.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollte angezeigt werden, **Meine Rasterseite** verfügt jetzt über Ganzzahl- und Float-Werte.
+5. Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollte angezeigt werden, **Meine Rasterseite** verfügt jetzt über Ganzzahl- und Float-Werte.
 
 ## <a name="examine-the-settings-file"></a>Überprüfen Sie die Einstellungsdatei
  In diesem Abschnitt exportieren Sie Eigenschaftswerte für die Kategorie, in eine Datei. Sie untersuchen Sie die Datei und importieren Sie dann die Werte wieder in die Eigenschaftskategorie.
 
-1.  Starten Sie das Projekt im Debugmodus durch Drücken von **F5**. Dadurch wird die experimentelle Instanz gestartet.
+1. Starten Sie das Projekt im Debugmodus durch Drücken von **F5**. Dadurch wird die experimentelle Instanz gestartet.
 
-2.  Öffnen der **Tools** > **Optionen** Dialogfeld.
+2. Öffnen der **Tools** > **Optionen** Dialogfeld.
 
-3.  Erweitern Sie in der Strukturansicht im linken Bereich **My Category** , und klicken Sie dann auf **Meine Rasterseite**.
+3. Erweitern Sie in der Strukturansicht im linken Bereich **My Category** , und klicken Sie dann auf **Meine Rasterseite**.
 
-4.  Ändern Sie den Wert der **OptionFloat** zu 3,1416 und **OptionInteger** bis 12. Klicken Sie auf **OK**.
+4. Ändern Sie den Wert der **OptionFloat** zu 3,1416 und **OptionInteger** bis 12. Klicken Sie auf **OK**.
 
-5.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.
+5. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.
 
      Die **Einstellungen importieren und exportieren** -Assistent wird angezeigt.
 
-6.  Stellen Sie sicher, dass **ausgewählte umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **Weiter**.
+6. Stellen Sie sicher, dass **ausgewählte umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **Weiter**.
 
      Die **Einstellungen für den Export** Seite wird angezeigt.
 
-7.  Klicken Sie auf **Meine Einstellungen**.
+7. Klicken Sie auf **Meine Einstellungen**.
 
      Die **Beschreibung** Änderungen an **OptionInteger und OptionFloat**.
 
-8.  Stellen Sie sicher, dass **Meine Einstellungen** ist die einzige Kategorie, die ausgewählt ist, und klicken Sie dann auf **Weiter**.
+8. Stellen Sie sicher, dass **Meine Einstellungen** ist die einzige Kategorie, die ausgewählt ist, und klicken Sie dann auf **Weiter**.
 
      Die **Name der Datei** Seite wird angezeigt.
 

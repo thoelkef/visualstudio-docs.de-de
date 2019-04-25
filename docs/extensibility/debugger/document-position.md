@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051790"
 ---
 # <a name="document-position"></a>Dokumentposition
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen, eine *dokumentieren Position*:
 
--   Stellt eine Abstraktion einer Position in einer Quelldatei an, wie die IDE bekannt. Für die meisten Sprachen kann heute eine Dokumentposition als eine Position in einer Quelldatei betrachtet werden.
+- Stellt eine Abstraktion einer Position in einer Quelldatei an, wie die IDE bekannt. Für die meisten Sprachen kann heute eine Dokumentposition als eine Position in einer Quelldatei betrachtet werden.
 
--   Beschreibt eine Position in einem Quelldokument einer Debug-Engine.
+- Beschreibt eine Position in einem Quelldokument einer Debug-Engine.
 
--   Wird implementiert, indem ein [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) Schnittstelle.
+- Wird implementiert, indem ein [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) Schnittstelle.
 
 ## <a name="see-also"></a>Siehe auch
 - [Codekontext](../../extensibility/debugger/code-context.md)

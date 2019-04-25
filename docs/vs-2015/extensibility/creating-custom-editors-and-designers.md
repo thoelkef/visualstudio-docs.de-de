@@ -11,12 +11,12 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064387"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Erstellen von benutzerdefinierten Editoren und Designern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio kann auf verschiede
 ## <a name="editor-design-decisions"></a>Editor-Entwurfsentscheidungen  
  Die folgenden Entwurfsfragen helfen Ihnen, wählen Sie den Typ des Editors, die beste für Ihre Anwendung geeignet sind:  
   
--   Wird Ihre Anwendung die Daten in Dateien oder nicht speichern? Wenn sie die Daten in Dateien gespeichert werden, werden sie in einem benutzerdefinierten oder standardmäßigen Format?  
+- Wird Ihre Anwendung die Daten in Dateien oder nicht speichern? Wenn sie die Daten in Dateien gespeichert werden, werden sie in einem benutzerdefinierten oder standardmäßigen Format?  
   
      Wenn Sie ein standard-Dateiformat verwenden, werden andere Projekttypen zusätzlich zu Ihrem Projekt zu öffnen und Daten für sie Lese-/Schreibberechtigung. Wenn Sie ein benutzerdefiniertes Dateiformat verwenden, jedoch werden nur die Art Ihres Projekts zu öffnen und Daten für sie Lese-/Schreibberechtigung.  
   
      Wenn Ihr Projekt Dateien verwendet, sollten Sie in der standard-Editor anpassen. Wenn Ihr Projekt keine Dateien verwendet, aber stattdessen Elemente in einer Datenbank oder anderen Repository verwendet, sollten Sie einen benutzerdefinierten Editor erstellen.  
   
--   Muss Ihr Editor für ActiveX-Steuerelemente hosten?  
+- Muss Ihr Editor für ActiveX-Steuerelemente hosten?  
   
      Wenn Ihr Editor für ActiveX-Steuerelemente hostet, dann implementieren einen direkten Aktivierung-Editor, wie unter [direkte Aktivierung](../misc/in-place-activation.md). Wenn es kein ActiveX-Steuerelemente gehostet wird, klicken Sie dann entweder einen vereinfachten einbetten Editor verwenden oder Anpassen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Standard-Editor.  
   
--   Wird als Editor verwenden, die mehrere Ansichten unterstützt? Wenn Ansichten des Editors zur gleichen Zeit wie der Standard-Editor angezeigt werden soll, müssen Sie auch mehrere Ansichten unterstützen.  
+- Wird als Editor verwenden, die mehrere Ansichten unterstützt? Wenn Ansichten des Editors zur gleichen Zeit wie der Standard-Editor angezeigt werden soll, müssen Sie auch mehrere Ansichten unterstützen.  
   
      Wenn Ihr Editor mehrere Ansichten zu unterstützen muss, müssen die Dokumentdaten und dokumentenansichtsobjekten für den Editor separate Objekte sein. Weitere Informationen finden Sie unter [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
      Wenn Ihr Editor mehrere Ansichten unterstützt, möchten Sie verwenden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] core-Anmerkung des Text-Puffer-Implementierung (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Objekt) für Ihre dokumentendatenobjekt? D.h., möchten Sie Ihre-Editor-Ansicht Seite-an-Seite mit Unterstützung der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor? Die Möglichkeit hierzu ist die Grundlage für das Forms-Designer...  
   
--   Wenn Sie einen externen Editor hosten müssen, kann der Editor eingebettet werden in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
+- Wenn Sie einen externen Editor hosten müssen, kann der Editor eingebettet werden in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
   
      Wenn sie eingebettet werden kann, erstellen Sie ein Hostfenster für den externen Editor, und rufen Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Methode, und legen die <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumerationswert zu `DP_External`. Wenn der Editor kann nicht eingebettet werden, wird die IDE automatisch ein separates Fenster dafür erstellt.  
   

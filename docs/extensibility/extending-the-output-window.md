@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041079"
 ---
 # <a name="extend-the-output-window"></a>Erweitern Sie im Ausgabefenster
 Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff. Visual Studio verfügt über diesen integrierten Bereichen: **Erstellen Sie**, Nachrichten zu Builds, welche Projekte kommunizieren und **allgemeine**, in dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Nachrichten über die IDE kommuniziert. Projekte Abrufen eines Verweises auf die **erstellen** Bereich automatisch über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellenmethoden und Visual Studio bietet direkten Zugriff auf die **allgemeine** Bereich über die <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> -Dienst. Zusätzlich zu den integrierten Bereichen können Sie erstellen und verwalten Ihre eigenen benutzerdefinierten Bereiche.
@@ -25,22 +25,22 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>Erstellen Sie eine Erweiterung, die den Ausgabebereich verwendet.
  Sie können eine Erweiterung erstellen, die verschiedene Aspekte des Ausgabebereichs ausführt.
 
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen `TestOutput` mit einem Menübefehl mit dem Namen **TestOutput**. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TestOutput` mit einem Menübefehl mit dem Namen **TestOutput**. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Fügen Sie die folgenden Verweise hinzu:
+2. Fügen Sie die folgenden Verweise hinzu:
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  In *TestOutput.cs*, fügen Sie die folgenden using-Anweisung:
+3. In *TestOutput.cs*, fügen Sie die folgenden using-Anweisung:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  In *TestOutput.cs*, löschen Sie die `ShowMessageBox` Methode. Fügen Sie den folgenden Methodenstub hinzu:
+4. In *TestOutput.cs*, löschen Sie die `ShowMessageBox` Methode. Fügen Sie den folgenden Methodenstub hinzu:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }
     ```
 
-5.  Ändern Sie im Konstruktor TestOutput der Befehlshandler in OutputCommandHandler ein. Hier ist das Teil, das die Befehle hinzugefügt:
+5. Ändern Sie im Konstruktor TestOutput der Befehlshandler in OutputCommandHandler ein. Hier ist das Teil, das die Befehle hinzugefügt:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ Die **Ausgabe** Fenster ist eine Sammlung von Textbereichen Lese-/Schreibzugriff
     }
     ```
 
-6.  In den folgenden Abschnitten haben verschiedene Methoden, die verschiedene Methoden zum Umgang mit den Ausgabebereich anzeigen. Sie können Text, der diese Methoden Aufrufen der `OutputCommandHandler()` Methode. Beispielsweise der folgende Code fügt die `CreatePane()` -Methode anhand der Angaben im nächsten Abschnitt.
+6. In den folgenden Abschnitten haben verschiedene Methoden, die verschiedene Methoden zum Umgang mit den Ausgabebereich anzeigen. Sie können Text, der diese Methoden Aufrufen der `OutputCommandHandler()` Methode. Beispielsweise der folgende Code fügt die `CreatePane()` -Methode anhand der Angaben im nächsten Abschnitt.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

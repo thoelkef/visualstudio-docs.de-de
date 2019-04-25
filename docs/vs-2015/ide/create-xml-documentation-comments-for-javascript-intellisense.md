@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 613a1ac89242daeee9b6647f63946eae23c9af1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079278"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Erstellen von XML-Dokumentationskommentaren für JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54802057"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Zum Erstellen von XML-Dokumentationskommentaren für JavaScript-Funktion  
   
--   Fügen Sie in der Funktion [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md) Elemente, und stellen Sie jedes Element voran drei Schrägstriche (/ / /).  
+- Fügen Sie in der Funktion [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md) Elemente, und stellen Sie jedes Element voran drei Schrägstriche (/ / /).  
   
     > [!NOTE]
     >  Jedes Element muss sich in einer einzelnen Zeile.  
@@ -52,7 +52,7 @@ ms.locfileid: "54802057"
     }  
     ```  
   
--   Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer einer Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
+- Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer einer Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
   
     ```javascript  
     var areaVal = getArea(  
@@ -62,7 +62,7 @@ ms.locfileid: "54802057"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>Zum Erstellen von XML-Dokumentationskommentare für ein JavaScript-Feld  
   
--   Fügen Sie in einer Konstruktordefinition Funktion oder das Objekt eine [ \<Feld >](../ide/field-javascript.md) Element vorangestellt drei Schrägstrichen (/ / /).  
+- Fügen Sie in einer Konstruktordefinition Funktion oder das Objekt eine [ \<Feld >](../ide/field-javascript.md) Element vorangestellt drei Schrägstrichen (/ / /).  
   
      Das folgende Beispiel zeigt die Verwendung der `<field>` Element in einer Konstruktorfunktion. Weitere Beispiele finden Sie unter [ \<Feld >](../ide/field-javascript.md).  
   
@@ -73,13 +73,13 @@ ms.locfileid: "54802057"
     }  
     ```  
   
--   Um die XML-Dokumentationskommentare anzuzeigen, erstellen Sie ein Objekt mithilfe des Function-Konstruktors, die markiert ist, mit XML-Dokumentationskommentare, wie im folgenden Beispiel aus.  
+- Um die XML-Dokumentationskommentare anzuzeigen, erstellen Sie ein Objekt mithilfe des Function-Konstruktors, die markiert ist, mit XML-Dokumentationskommentare, wie im folgenden Beispiel aus.  
   
     ```javascript  
     var eng = new Engine();  
     ```  
   
--   Geben Sie auf der nächsten Zeile den Namen des Objekts und eines Zeitraums zum Anzeigen der IntelliSense-Informationen für das Feld ein.  
+- Geben Sie auf der nächsten Zeile den Namen des Objekts und eines Zeitraums zum Anzeigen der IntelliSense-Informationen für das Feld ein.  
   
     ```javascript  
     eng.  
@@ -87,7 +87,7 @@ ms.locfileid: "54802057"
   
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>Zum Erstellen von XML-Dokumentationskommentaren für einer überladenen Funktion  
   
-1.  Fügen Sie in der Funktion ein [ \<Signatur >](../ide/signature-javascript.md) -Element für jede Überladung. Fügen Sie in der folgenden Elemente, die andere Elemente, z. B. `<summary>`, `<param>`, und `<returns>`, jedes Element mit drei Schrägstrichen (/ / /) vor.  
+1. Fügen Sie in der Funktion ein [ \<Signatur >](../ide/signature-javascript.md) -Element für jede Überladung. Fügen Sie in der folgenden Elemente, die andere Elemente, z. B. `<summary>`, `<param>`, und `<returns>`, jedes Element mit drei Schrägstrichen (/ / /) vor.  
   
      Das folgende Beispiel zeigt eine überladene JavaScript-Funktion. In diesem Beispiel unterscheiden sich die Überladungen von Parametertyp ein.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "54802057"
     }  
     ```  
   
-2.  Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
+2. Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
   
     ```javascript  
     calc(  
@@ -115,7 +115,7 @@ ms.locfileid: "54802057"
   
 ### <a name="to-create-localized-intellisense"></a>Um lokalisierte IntelliSense zu erstellen.  
   
-1.  Erstellen Sie eine XML-Datei, die Dokumentationskommentare im OpenAjax MessageBundle-Format enthält.  
+1. Erstellen Sie eine XML-Datei, die Dokumentationskommentare im OpenAjax MessageBundle-Format enthält.  
   
     > [!IMPORTANT]
     >  MessageBundle ist das empfohlene Format. Dieses Format wird nicht in der Microsoft Ajax oder in winmd-Dateien unterstützt. Informationen zur Verwendung der Alternative `VSDoc` formatieren, finden Sie unter [ \<Loc >](../ide/loc-javascript.md).  
@@ -131,14 +131,14 @@ ms.locfileid: "54802057"
   
     ```  
   
-2.  Fügen Sie in der JS-Datei den folgenden Code ein. Die `<loc>` Element muss vor allen möglichen Skripts deklariert werden, und folgt den gleichen Regeln für die Verwendung als die `<reference>` Element. Weitere Informationen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [ \<Loc >](../ide/loc-javascript.md).  
+2. Fügen Sie in der JS-Datei den folgenden Code ein. Die `<loc>` Element muss vor allen möglichen Skripts deklariert werden, und folgt den gleichen Regeln für die Verwendung als die `<reference>` Element. Weitere Informationen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [ \<Loc >](../ide/loc-javascript.md).  
   
     ```javascript  
     /// <loc filename="messageFilename.xml" format="messagebundle"/>  
   
     ```  
   
-3.  Fügen Sie in der JS-Datei XML-dokumentationselemente und standardbeschreibungen aus. Legen Sie die `locid` Attributwerte entsprechend den entsprechenden `name` Attributwerte aus der sidecardatei. Die standardbeschreibungen werden durch lokalisierte IntelliSense-Informationen ersetzt werden, sofern diese verfügbar ist.  
+3. Fügen Sie in der JS-Datei XML-dokumentationselemente und standardbeschreibungen aus. Legen Sie die `locid` Attributwerte entsprechend den entsprechenden `name` Attributwerte aus der sidecardatei. Die standardbeschreibungen werden durch lokalisierte IntelliSense-Informationen ersetzt werden, sofern diese verfügbar ist.  
   
     ```javascript  
     function add(a,b)   
@@ -150,7 +150,7 @@ ms.locfileid: "54802057"
   
     ```  
   
-4.  Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion an, wie im folgenden Beispiel aus:  
+4. Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion an, wie im folgenden Beispiel aus:  
   
     ```javascript  
     add(  

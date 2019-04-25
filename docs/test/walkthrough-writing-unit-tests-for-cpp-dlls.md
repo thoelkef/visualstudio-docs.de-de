@@ -7,36 +7,36 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 65bbaf015e2d4b0dc8dd66c33656e62c4b9b0102
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819795"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
 In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C++-DLL mithilfe der Test-First-Methode entwickeln können. Die grundlegenden Schritte werden im Folgenden beschrieben:
 
-1.  [Erstellen Sie eines nativen Testprojekts](#create_test_project). Das Testprojekt befindet sich in derselben Projektmappe wie das DLL-Projekt.
+1. [Erstellen Sie eines nativen Testprojekts](#create_test_project). Das Testprojekt befindet sich in derselben Projektmappe wie das DLL-Projekt.
 
-2.  [Erstellen eines DLL-Projekts](#create_dll_project) In dieser exemplarischen Vorgehensweise wird eine neue DLL erstellt, die Vorgehensweise für das Testen einer vorhandenen DLL ist aber ähnlich.
+2. [Erstellen eines DLL-Projekts](#create_dll_project) In dieser exemplarischen Vorgehensweise wird eine neue DLL erstellt, die Vorgehensweise für das Testen einer vorhandenen DLL ist aber ähnlich.
 
-3.  [Machen Sie die DLL-Funktionen für die Tests sichtbar](#make_functions_visible).
+3. [Machen Sie die DLL-Funktionen für die Tests sichtbar](#make_functions_visible).
 
-4.  [Erweitern Sie iterativ die Tests](#iterate). Es wird empfohlen, nach dem Prinzip „Rot-Grün-Überarbeitung“ (Red-Green-Refactor) vorzugehen, bei dem die Entwicklung des Codes durch Tests geleitet wird.
+4. [Erweitern Sie iterativ die Tests](#iterate). Es wird empfohlen, nach dem Prinzip „Rot-Grün-Überarbeitung“ (Red-Green-Refactor) vorzugehen, bei dem die Entwicklung des Codes durch Tests geleitet wird.
 
-5.  [Debuggen Sie Tests, bei denen Fehler aufgetreten sind](#debug). Sie können die Tests im Debugmodus ausführen.
+5. [Debuggen Sie Tests, bei denen Fehler aufgetreten sind](#debug). Sie können die Tests im Debugmodus ausführen.
 
-6.  [Nehmen Sie Überarbeitungen vor, ohne die Tests zu verändern](#refactor). „Überarbeiten“ bedeutet Verbessern der Struktur des Codes, ohne das externe Verhalten zu ändern. Damit wird zur Verbesserung der Leistung, Erweiterbarkeit oder Lesbarkeit des Codes beigetragen. Da es nicht die Absicht ist, das Verhalten zu ändern, ändern Sie die Tests bei der Überarbeitung des Codes nicht. Mit den Tests können Sie sicherstellen, dass Sie keine Fehler einbauen, während Sie den Code umgestalten.
+6. [Nehmen Sie Überarbeitungen vor, ohne die Tests zu verändern](#refactor). „Überarbeiten“ bedeutet Verbessern der Struktur des Codes, ohne das externe Verhalten zu ändern. Damit wird zur Verbesserung der Leistung, Erweiterbarkeit oder Lesbarkeit des Codes beigetragen. Da es nicht die Absicht ist, das Verhalten zu ändern, ändern Sie die Tests bei der Überarbeitung des Codes nicht. Mit den Tests können Sie sicherstellen, dass Sie keine Fehler einbauen, während Sie den Code umgestalten.
 
-7.  [Testabdeckung](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Komponententests sind hilfreicher, wenn sie mehr vom Code ausführen. Sie können ermitteln, welche Teile des Codes von den Tests verwendet wurden.
+7. [Testabdeckung](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Komponententests sind hilfreicher, wenn sie mehr vom Code ausführen. Sie können ermitteln, welche Teile des Codes von den Tests verwendet wurden.
 
-8.  [Isolieren Sie Einheiten von externen Ressourcen](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). In der Regel ist eine DLL abhängig von anderen Komponenten des Systems, das Sie entwickeln, wie z. B. anderen DLLs, Datenbanken, oder Remotesubsystemen. Es ist hilfreich, jede Einheit isoliert von seinen Abhängigkeiten zu testen. Externe Komponenten können bewirken, dass Tests langsamer ausgeführt werden. Während der Entwicklung sind die anderen Komponenten möglicherweise noch nicht vollständig.
+8. [Isolieren Sie Einheiten von externen Ressourcen](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). In der Regel ist eine DLL abhängig von anderen Komponenten des Systems, das Sie entwickeln, wie z. B. anderen DLLs, Datenbanken, oder Remotesubsystemen. Es ist hilfreich, jede Einheit isoliert von seinen Abhängigkeiten zu testen. Externe Komponenten können bewirken, dass Tests langsamer ausgeführt werden. Während der Entwicklung sind die anderen Komponenten möglicherweise noch nicht vollständig.
 
-##  <a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
+## <a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
 
-1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
      Erweitern Sie im Dialogfeld **Installiert** > **Vorlagen** > **Visual C++** > **Test**.
 
@@ -46,23 +46,23 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      ![Erstellen eines C++-Komponententestprojekts](../test/media/utecpp01.png)
 
-2.  Überprüfen Sie im neuen Projekt **unittest1.cpp**.
+2. Überprüfen Sie im neuen Projekt **unittest1.cpp**.
 
      ![Testprojekt mit TEST&#95;CLASS und TEST&#95;METHOD](../test/media/utecpp2.png)
 
      Beachten Sie Folgendes:
 
-    -   Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}`verwendet wird.
+    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}`verwendet wird.
 
          Sie müssen keine herkömmliche Funktionssignatur schreiben. Die Signatur wird durch das Makro TEST_METHOD erstellt. Das Makro generiert eine Instanzfunktion ohne Rückgabe. Es generiert außerdem eine statische Funktion, die Informationen zur Testmethode zurückgibt. Diese Informationen ermöglichen dem Test-Explorer, die Methode zu finden.
 
-    -   Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}`verwendet wird.
+    - Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}`verwendet wird.
 
          Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden.
 
-3.  Stellen Sie sicher, dass die Tests im Test-Explorer ausgeführt werden:
+3. Stellen Sie sicher, dass die Tests im Test-Explorer ausgeführt werden:
 
-    1.  Fügen Sie den Testcode ein:
+    1. Fügen Sie den Testcode ein:
 
         ```cpp
         TEST_METHOD(TestMethod1)
@@ -73,7 +73,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          Beachten Sie, dass die `Assert` -Klasse mehrere statische Methoden zur Verfügung stellt, die Sie verwenden können, um Ergebnisse in den Testmethoden zu überprüfen.
 
-    2.  Klicken Sie im Menü **Test** auf **Ausführen** > **Alle Tests**.
+    2. Klicken Sie im Menü **Test** auf **Ausführen** > **Alle Tests**.
 
          Der Test wird erstellt und ausgeführt.
 
@@ -83,27 +83,27 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png)
 
-##  <a name="create_dll_project"></a> Erstellen eines DLL-Projekts
+## <a name="create_dll_project"></a> Erstellen eines DLL-Projekts
 
-1.  Erstellen Sie ein **Visual C++** -Projekt mithilfe der Vorlage **Win32-Projekt** .
+1. Erstellen Sie ein **Visual C++** -Projekt mithilfe der Vorlage **Win32-Projekt** .
 
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
      ![Erstellen eines C++-Win32-Projekts](../test/media/utecpp05.png)
 
-2.  Wählen Sie **DLL** und **Symbole exportieren** im Win32-Anwendungs-Assistenten aus.
+2. Wählen Sie **DLL** und **Symbole exportieren** im Win32-Anwendungs-Assistenten aus.
 
      Die Option **Symbole exportieren** generiert ein komfortables Makro, das Sie verwenden können, um exportierte Methoden zu deklarieren.
 
      ![C++-Projektassistent mit den Einstellungen "DLL" und "Symbole exportieren"](../test/media/utecpp06.png)
 
-3.  Deklarieren Sie eine exportierte Funktion in der Prinzipaldatei *.h*:
+3. Deklarieren Sie eine exportierte Funktion in der Prinzipaldatei *.h*:
 
      ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png)
 
      Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4.  Fügen Sie in der Prinzipaldatei *CPP* einen minimalen Text für die Funktion hinzu:
+4. Fügen Sie in der Prinzipaldatei *CPP* einen minimalen Text für die Funktion hinzu:
 
     ```cpp
         // Find the square root of a number.
@@ -113,15 +113,15 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
         }
     ```
 
-##  <a name="make_functions_visible"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
+## <a name="make_functions_visible"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
 
 1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
-   1.  Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise**.
+   1. Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise**.
 
         ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
 
-   2.  Wählen Sie **Neuen Verweis hinzufügen**.
+   2. Wählen Sie **Neuen Verweis hinzufügen**.
 
         Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
 
@@ -163,9 +163,9 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-##  <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
+## <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
-1.  Fügen Sie einen neuen Test hinzu:
+1. Fügen Sie einen neuen Test hinzu:
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -184,7 +184,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     >
     > Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2.  Erstellen Sie erst die Projektmappe, und klicken Sie dann im **Test-Explorer** auf **Alle ausführen**.
+2. Erstellen Sie erst die Projektmappe, und klicken Sie dann im **Test-Explorer** auf **Alle ausführen**.
 
      Beim neuen Test tritt ein Fehler auf.
 
@@ -193,7 +193,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
 
-3.  Erweitern Sie Ihren DLL-Code, damit der neue Test erfolgreich durchgeführt werden kann:
+3. Erweitern Sie Ihren DLL-Code, damit der neue Test erfolgreich durchgeführt werden kann:
 
     ```cpp
     #include <math.h>
@@ -212,7 +212,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     }
     ```
 
-4.  Erstellen Sie die Projektmappe, und wählen Sie dann im **Test-Explorer** die Option **Alle ausführen** aus.
+4. Erstellen Sie die Projektmappe, und wählen Sie dann im **Test-Explorer** die Option **Alle ausführen** aus.
 
      Beide Tests sind erfolgreich.
 
@@ -221,9 +221,9 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     > [!TIP]
     > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-##  <a name="debug"></a> Einen nicht bestandenen Test debuggen
+## <a name="debug"></a> Einen nicht bestandenen Test debuggen
 
-1.  Fügen Sie einen anderen Test hinzu:
+1. Fügen Sie einen anderen Test hinzu:
 
     ```cpp
     #include <stdexcept>
@@ -256,23 +256,23 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
     }
     ```
 
-2.  Erstellen Sie die Projektmappe, und wählen Sie **Alle ausführen**.
+2. Erstellen Sie die Projektmappe, und wählen Sie **Alle ausführen**.
 
-3.  Öffnen Sie den Test, bei dessen Ausführung ein Fehler aufgetreten ist, oder doppelklicken Sie auf diesen.
+3. Öffnen Sie den Test, bei dessen Ausführung ein Fehler aufgetreten ist, oder doppelklicken Sie auf diesen.
 
      Die Assertation, bei der ein Fehler aufgetreten ist, wird gekennzeichnet. Die Fehlermeldung wird im Detailbereich vom **Test-Explorer** angezeigt.
 
      ![Fehler bei NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-4.  Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
+4. Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
-    1.  Legen Sie einen Haltepunkt am Anfang der SquareRoot-Funktion fest.
+    1. Legen Sie einen Haltepunkt am Anfang der SquareRoot-Funktion fest.
 
-    2.  Wählen Sie im Kontextmenü des nicht erfolgreichen Tests **Ausgewählte Tests debuggen**.
+    2. Wählen Sie im Kontextmenü des nicht erfolgreichen Tests **Ausgewählte Tests debuggen**.
 
          Wenn die Ausführung am Haltepunkt angehalten wird, führen Sie den Code schrittweise aus.
 
-5.  Fügen Sie Code in der Funktion ein, die Sie entwickeln:
+5. Fügen Sie Code in der Funktion ein, die Sie entwickeln:
 
     ```cpp
 
@@ -288,17 +288,16 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
     ```
 
-6.  Alle Tests sind nun erfolgreich.
+6. Alle Tests sind nun erfolgreich.
 
      ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
 > Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
+## <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
 
-##  <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern
-
-1.  Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:
+1. Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:
 
     ```cpp
     // old code:
@@ -308,7 +307,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
     ```
 
-2.  Erstellen Sie die Projektmappe, und wählen Sie **Alle ausführen**, um sicherzustellen, dass Sie keinen Fehler eingefügt haben.
+2. Erstellen Sie die Projektmappe, und wählen Sie **Alle ausführen**, um sicherzustellen, dass Sie keinen Fehler eingefügt haben.
 
     > [!TIP]
     > Mit einem guten Satz von Komponententests haben Sie die Gewissheit, dass Sie keine Fehler beim Ändern des Codes eingefügt haben.
@@ -317,11 +316,11 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ## <a name="next-steps"></a>Nächste Schritte
 
--   **Isolation.** Die meisten DLLs sind von anderen Subsystemen abhängig, z. B. Datenbanken und anderen DLLs. Häufig werden diese anderen Komponenten parallel entwickelt. Um Komponententests zu ermöglichen während die anderen Komponenten noch nicht verfügbar sind, müssen Sie Pseudoobjekte ersetzen oder
+- **Isolation.** Die meisten DLLs sind von anderen Subsystemen abhängig, z. B. Datenbanken und anderen DLLs. Häufig werden diese anderen Komponenten parallel entwickelt. Um Komponententests zu ermöglichen während die anderen Komponenten noch nicht verfügbar sind, müssen Sie Pseudoobjekte ersetzen oder
 
--   **Buildüberprüfungstests.** Tests können auf dem Buildserver des Teams in festgelegten Intervallen ausgeführt werden. Dadurch wird sichergestellt, dass Fehler nicht eingefügt werden, wenn die Arbeit von Teammitgliedern integriert wird.
+- **Buildüberprüfungstests.** Tests können auf dem Buildserver des Teams in festgelegten Intervallen ausgeführt werden. Dadurch wird sichergestellt, dass Fehler nicht eingefügt werden, wenn die Arbeit von Teammitgliedern integriert wird.
 
--   **Einchecktests.** Sie können festlegen, dass mehrere Tests ausgeführt werden, bevor jedes Teammitglied Code in die Quellcodeverwaltung eincheckt. In der Regel ist dies eine Teilmenge des vollständigen Satzes von Buildüberprüfungstests.
+- **Einchecktests.** Sie können festlegen, dass mehrere Tests ausgeführt werden, bevor jedes Teammitglied Code in die Quellcodeverwaltung eincheckt. In der Regel ist dies eine Teilmenge des vollständigen Satzes von Buildüberprüfungstests.
 
      Sie können auch eine Untergrenze der Codeabdeckung vorgeben.
 

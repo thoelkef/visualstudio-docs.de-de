@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117680"
 ---
 # <a name="evaluating-locals"></a>Auswerten von lokalen Elementen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58961394"
   
  Diese Funktionalität des Abrufen des Werts eines lokalen Elements wird in eine Hilfsfunktion gekapselt, die die folgenden Aufgaben ausführt:  
   
-1.  Bindet die `IDebugField` Objekt in den Speicher zum Abrufen einer `IDebugObject` Objekt.  
+1. Bindet die `IDebugField` Objekt in den Speicher zum Abrufen einer `IDebugObject` Objekt.  
   
-2.  Ruft den Wert aus dem Arbeitsspeicher. Dieser Wert wird als eine Reihe von Bytes dargestellt.  
+2. Ruft den Wert aus dem Arbeitsspeicher. Dieser Wert wird als eine Reihe von Bytes dargestellt.  
   
-3.  Formatiert den Wert basierend auf den lokalen Typ.  
+3. Formatiert den Wert basierend auf den lokalen Typ.  
   
-4.  Gibt ein generisches Objekt, das den lokalen Wert enthält. In C# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
+4. Gibt ein generisches Objekt, das den lokalen Wert enthält. In c# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
  Dies ist eine Implementierung einer Funktion, die den Wert einer lokalen in verwaltetem Code abruft.  

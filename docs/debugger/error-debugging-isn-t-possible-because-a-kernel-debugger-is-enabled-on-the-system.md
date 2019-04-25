@@ -1,5 +1,5 @@
 ---
-title: 'Fehler: Das Debuggen ist&#39;t möglich, da ein Kerneldebugger, auf dem System aktiviert ist | Microsoft-Dokumentation'
+title: 'Fehler: Debuggen ist&#39;t möglich, da ein Kerneldebugger, auf dem System aktiviert ist | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096971"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Das Debuggen ist&#39;t möglich, da ein Kerndebugger auf dem System aktiviert ist
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Fehler: Debuggen ist&#39;t möglich, da ein Kerndebugger auf dem System aktiviert ist
 Beim Debuggen von verwaltetem Code kann die folgende Fehlermeldung ausgegeben werden:
 
 ```cmd
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>So deaktivieren Sie Kerneldebugging in der aktuellen Sitzung
 
--   Geben Sie an der Eingabeaufforderung Folgendes ein:
+- Geben Sie an der Eingabeaufforderung Folgendes ein:
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>So deaktivieren Sie Kerneldebugging für alle Sitzungen (Windows Vista und Windows 7)
 
-1.  Geben Sie an der Eingabeaufforderung Folgendes ein:
+1. Geben Sie an der Eingabeaufforderung Folgendes ein:
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  Starten Sie den Computer neu.
+2. Starten Sie den Computer neu.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>So deaktivieren Sie Kerneldebuggen für alle Sitzungen (andere Windows-Betriebssysteme)
 
-1.  Suchen Sie die Datei „boot.ini“ auf dem Systemlaufwerk (normalerweise C:\\). Die Datei "boot.ini" ist möglicherweise versteckt installiert und schreibgeschützt. Verwenden Sie zur Anzeige der Datei daher folgenden Befehl:
+1. Suchen Sie die Datei „boot.ini“ auf dem Systemlaufwerk (normalerweise C:\\). Die Datei "boot.ini" ist möglicherweise versteckt installiert und schreibgeschützt. Verwenden Sie zur Anzeige der Datei daher folgenden Befehl:
 
     ```cmd
     dir /ASH
     ```
 
-2.  Öffnen Sie "boot.ini" im Editor, und entfernen Sie die folgenden Optionen:
+2. Öffnen Sie "boot.ini" im Editor, und entfernen Sie die folgenden Optionen:
 
     ```cmd
     /debug
@@ -88,13 +88,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  Starten Sie den Computer neu.
+3. Starten Sie den Computer neu.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>So debuggen Sie mit dem Kerneldebugger
 
-1.  Wenn der Kerneldebugger verknüpft ist, werden Sie in einer Meldung gefragt, ob Sie das Debuggen fortsetzen möchten. Klicken Sie auf die Schaltfläche, um den Vorgang fortzusetzen.
+1. Wenn der Kerneldebugger verknüpft ist, werden Sie in einer Meldung gefragt, ob Sie das Debuggen fortsetzen möchten. Klicken Sie auf die Schaltfläche, um den Vorgang fortzusetzen.
 
-2.  Sie erhalten möglicherweise einen `User break exception(Int 3).`-Wert. Geben Sie in diesem Fall den folgenden Befehl für den Kerneldebugger ein, um das Debuggen fortzusetzen:
+2. Sie erhalten möglicherweise einen `User break exception(Int 3).`-Wert. Geben Sie in diesem Fall den folgenden Befehl für den Kerneldebugger ein, um das Debuggen fortzusetzen:
 
      `gn`
 

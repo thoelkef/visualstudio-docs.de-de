@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096132"
 ---
 # <a name="vsix-project-template"></a>VSIX-Projektvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,37 +48,37 @@ Sie können die VSIX-Projektvorlage verwenden, um eine oder mehrere Visual Studi
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Um eine Erweiterung mithilfe eines VSIX-Projekts zu verpacken.  
   
-1.  Erstellen Sie die Projekte, aus denen die Erweiterung besteht.  
+1. Erstellen Sie die Projekte, aus denen die Erweiterung besteht.  
   
-2.  Erstellen Sie ein VSIX-Projekt mithilfe der **VSIX-Projekt** Vorlage.  
+2. Erstellen Sie ein VSIX-Projekt mithilfe der **VSIX-Projekt** Vorlage.  
   
      "Source.Extension.vsixmanifest" wird geöffnet, **Manifest-Designer**.  
   
-3.  Auf der **Assets** Registerkarte die **neu** Schaltfläche.  
+3. Auf der **Assets** Registerkarte die **neu** Schaltfläche.  
   
      Die **neue Anlage hinzufügen** Dialogfeld wird angezeigt.  
   
-4.  In der **Typ** Liste, wählen Sie den Typ der hinzuzufügenden Erweiterung.  
+4. In der **Typ** Liste, wählen Sie den Typ der hinzuzufügenden Erweiterung.  
   
-5.  Um ein Element-Erweiterung oder Inhalt hinzuzufügen, die in der aktuellen Projektmappe (z. B. eine Item-Vorlage oder eine kompilierte Assembly) enthalten ist, führen Sie die folgenden Schritte aus:  
+5. Um ein Element-Erweiterung oder Inhalt hinzuzufügen, die in der aktuellen Projektmappe (z. B. eine Item-Vorlage oder eine kompilierte Assembly) enthalten ist, führen Sie die folgenden Schritte aus:  
   
-    1.  In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
+    1. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
   
-    2.  In der **Projekt** Liste, wählen Sie den Namen der Erweiterung.  
+    2. In der **Projekt** Liste, wählen Sie den Namen der Erweiterung.  
   
-    3.  In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
+    3. In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
   
-6.  Zum Hinzufügen einer Erweiterung oder Content-Element, das nicht in der aktuellen Projektmappe enthalten ist, führen Sie die folgenden Schritte aus:  
+6. Zum Hinzufügen einer Erweiterung oder Content-Element, das nicht in der aktuellen Projektmappe enthalten ist, führen Sie die folgenden Schritte aus:  
   
-    1.  In der **Quelle** , und wählen Sie im Listenfeld **Datei im Dateisystem**.  
+    1. In der **Quelle** , und wählen Sie im Listenfeld **Datei im Dateisystem**.  
   
-    2.  In der **Pfad** Feld, geben Sie den vollständigen Pfad der kompilierten oder komprimierten Erweiterungsdatei oder verwenden Sie die **Durchsuchen** Schaltfläche, um die Datei zu suchen.  
+    2. In der **Pfad** Feld, geben Sie den vollständigen Pfad der kompilierten oder komprimierten Erweiterungsdatei oder verwenden Sie die **Durchsuchen** Schaltfläche, um die Datei zu suchen.  
   
-    3.  In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
+    3. In der **Einbetten in diesem Ordner** Geben Sie den Namen eines Ordners, in dem das Asset einbetten, und wählen Sie dann die **OK** Schaltfläche.  
   
-7.  Wenn Sie Ihr Paket zusätzliche Erweiterungen gehören möchten, fügen sie auf die gleiche Weise hinzu.  
+7. Wenn Sie Ihr Paket zusätzliche Erweiterungen gehören möchten, fügen sie auf die gleiche Weise hinzu.  
   
-8.  Erstellen Sie die Projektmappe.  
+8. Erstellen Sie die Projektmappe.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt eine VSIX-Datei mit einer VSIX-manifest-Datei, eine [Content_Types] .xml-Datei und alle Ressourcen Erweiterung, die Sie dem Projekt hinzugefügt.  
   

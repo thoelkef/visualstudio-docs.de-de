@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a04daa909c712a0e721597ba93a03328e8414539
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090731"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Vorgehensweise: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
@@ -36,34 +36,34 @@ ms.locfileid: "56598868"
 
 ### <a name="to-add-an-xmlnodes-control-to-a-document"></a>Hinzufügen von XMLNodes-Steuerelement zu einem Dokument
 
-1.  Klicken Sie in das Dokument in Visual Studio-Designer, auf dem Menüband auf die **Developer** Registerkarte.
+1. Klicken Sie in das Dokument in Visual Studio-Designer, auf dem Menüband auf die **Developer** Registerkarte.
 
     > [!NOTE]
     >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-2.  In der **XML** auf **Schema**.
+2. In der **XML** auf **Schema**.
 
      Die **Vorlagen und Add-Ins** Dialogfeld wird geöffnet.
 
-3.  Klicken Sie auf die **XML-Schema** Registerkarte.
+3. Klicken Sie auf die **XML-Schema** Registerkarte.
 
-4.  Klicken Sie auf **Schema hinzufügen**.
+4. Klicken Sie auf **Schema hinzufügen**.
 
      Die **Schema hinzufügen** Dialogfeld wird geöffnet.
 
-5.  Wählen Sie ein XML-Schema, das sich wiederholende Elemente des Schemas und klicken Sie auf **öffnen**.
+5. Wählen Sie ein XML-Schema, das sich wiederholende Elemente des Schemas und klicken Sie auf **öffnen**.
 
      Die **Schema Einstellungen** Dialogfeld wird angezeigt.
 
-6.  Weisen Sie einen Alias, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.
+6. Weisen Sie einen Alias, oder klicken Sie auf **OK** das Schema ohne Alias hinzufügen.
 
      Das Schema wird hinzugefügt, um die **Schema hinzufügen** Dialogfeld.
 
-7.  In der **Schema hinzufügen** Dialogfeld klicken Sie auf **OK**.
+7. In der **Schema hinzufügen** Dialogfeld klicken Sie auf **OK**.
 
      Die **XML-Struktur** Aufgabe wird geöffnet.
 
-8.  Klicken Sie auf der sich wiederholendes Schemaelement auf die **XML-Struktur** Aufgabenbereich, um es dem Dokument hinzuzufügen.
+8. Klicken Sie auf der sich wiederholendes Schemaelement auf die **XML-Struktur** Aufgabenbereich, um es dem Dokument hinzuzufügen.
 
      Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement erstellt und dem Projekt hinzugefügt.
 

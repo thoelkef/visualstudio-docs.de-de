@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: e76f3dfdb6ce8890387a85be474bac4d0f605777
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106279"
 ---
 # <a name="image-service-and-catalog"></a>Bilddienst und-Katalog
 Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg auf den Dienst für Visual Studio-Images und Image-Katalog, die in Visual Studio 2015 eingeführt.
@@ -104,7 +104,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 
 |||
 |-|-|
-|**Unterelement**|**Definition**|
+|**Subelement**|**Definition**|
 |Importieren|Importiert die Symbole der angegebenen Manifestdatei zur Verwendung in das aktuelle manifest|
 |GUID|Das Symbol eine GUID darstellt, und Formatieren der GUID übereinstimmen|
 |ID|Das Symbol eine ID dar und muss eine nicht negative ganze Zahl sein|
@@ -131,7 +131,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |System|Die *"Windows\System32"* Ordner|
 |WinDir|Der Wert der Umgebungsvariable "WinDir"|
 
- **Bild**
+ **Image**
 
  Die \<Image >-Element definiert ein Bild, das einen Moniker verwiesen werden kann. Die GUID und ID, die zusammen bilden die Image-Moniker. Der Moniker für das Image muss innerhalb der gesamten Abbildbibliothek eindeutig sein. Wenn mehr als ein Bild ein angegebenes Monikers verfügt, wird die erste Bedingung, die beim Erstellen der Bibliotheks gefunden, die beibehalten werden.
 
@@ -151,7 +151,7 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 |ID|[Erforderlich] Die ID-Teil der Image-moniker|
 |AllowColorInversion|[Optional, Standardwert "true"] Gibt an, ob das Bild seine Farben umgekehrt programmgesteuert, wenn auf einen dunklen Hintergrund verwendet werden kann.|
 
- **Source**
+ **Quelle**
 
  Die \<Source >-Element definiert ein einzelnes Abbild quellmedienobjekt (XAML und PNG).
 
@@ -216,88 +216,88 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 ### <a name="first-steps-managed"></a>Erste Schritte (verwaltet)
  Um den Dienst Images verwenden zu können, müssen Sie Ihrem Projekt Verweise auf einige oder alle der folgenden Assemblys hinzufügen:
 
--   *Microsoft.VisualStudio.ImageCatalog.dll*
+- *Microsoft.VisualStudio.ImageCatalog.dll*
 
-    -   Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**.
+    - Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**.
 
--   *Microsoft.VisualStudio.Imaging.dll*
+- *Microsoft.VisualStudio.Imaging.dll*
 
-    -   Erforderlich, wenn Sie **CrispImage** und **ImageThemingUtilities** in Ihrer WPF-UI.
+    - Erforderlich, wenn Sie **CrispImage** und **ImageThemingUtilities** in Ihrer WPF-UI.
 
--   *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
+- *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
 
-    -   Erforderlich, wenn Sie die **ImageMoniker** und **"ImageAttributes"** Typen.
+    - Erforderlich, wenn Sie die **ImageMoniker** und **"ImageAttributes"** Typen.
 
-    -   **EmbedInteropTypes** sollte festgelegt werden, auf "true".
+    - **EmbedInteropTypes** sollte festgelegt werden, auf "true".
 
--   *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
+- *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
 
-    -   Erforderlich, wenn Sie die **IVsImageService2** Typ.
+    - Erforderlich, wenn Sie die **IVsImageService2** Typ.
 
-    -   **EmbedInteropTypes** sollte festgelegt werden, auf "true".
+    - **EmbedInteropTypes** sollte festgelegt werden, auf "true".
 
--   *Microsoft.VisualStudio.Utilities.dll*
+- *Microsoft.VisualStudio.Utilities.dll*
 
-    -   Erforderlich, wenn Sie die **BrushToColorConverter** für die **ImageThemingUtilities.ImageBackgroundColor** in Ihrer WPF-UI.
+    - Erforderlich, wenn Sie die **BrushToColorConverter** für die **ImageThemingUtilities.ImageBackgroundColor** in Ihrer WPF-UI.
 
--   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*
+- *Microsoft.VisualStudio.Shell.\<VSVersion>.0*
 
-    -   Erforderlich, wenn Sie die **IVsUIObject** Typ.
+    - Erforderlich, wenn Sie die **IVsUIObject** Typ.
 
--   *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
+- *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
 
-    -   Erforderlich, wenn Sie die Windows Forms-bezogene UI-Hilfsprogramme verwenden.
+    - Erforderlich, wenn Sie die Windows Forms-bezogene UI-Hilfsprogramme verwenden.
 
-    -   **EmbedInteropTypes** sollte festgelegt werden, auf "true"
+    - **EmbedInteropTypes** sollte festgelegt werden, auf "true"
 
 ### <a name="first-steps-native"></a>Erste Schritte (systemeigen)
  Um den Dienst Images verwenden zu können, müssen Sie einige oder alle der folgenden Header zu Ihrem Projekt hinzufügen:
 
--   **KnownImageIds.h**
+- **KnownImageIds.h**
 
-    -   Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**, jedoch nicht verwenden die **ImageMoniker** Typ, z. B. wenn die Rückgabe von Werten **IVsHierarchy GetGuidProperty**oder **GetProperty** aufrufen.
+    - Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**, jedoch nicht verwenden die **ImageMoniker** Typ, z. B. wenn die Rückgabe von Werten **IVsHierarchy GetGuidProperty**oder **GetProperty** aufrufen.
 
--   **KnownMonikers.h**
+- **KnownMonikers.h**
 
-    -   Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**.
+    - Erforderlich, wenn Sie den integrierten Image-Katalog **KnownMonikers**.
 
--   **ImageParameters140.h**
+- **ImageParameters140.h**
 
-    -   Erforderlich, wenn Sie die **ImageMoniker** und **"ImageAttributes"** Typen.
+    - Erforderlich, wenn Sie die **ImageMoniker** und **"ImageAttributes"** Typen.
 
--   **VSShell140.h**
+- **VSShell140.h**
 
-    -   Erforderlich, wenn Sie die **IVsImageService2** Typ.
+    - Erforderlich, wenn Sie die **IVsImageService2** Typ.
 
--   **ImageThemingUtilities.h**
+- **ImageThemingUtilities.h**
 
-    -   Erforderlich, wenn Sie nicht den Image-Dienst verarbeiten Designs für Sie lassen können.
+    - Erforderlich, wenn Sie nicht den Image-Dienst verarbeiten Designs für Sie lassen können.
 
-    -   Verwenden Sie diesen Header nicht, wenn der Bilddienst Ihr Image-Design verarbeiten kann.
+    - Verwenden Sie diesen Header nicht, wenn der Bilddienst Ihr Image-Design verarbeiten kann.
 
 ::: moniker range="vs-2017"
--   **VSUIDPIHelper.h**
+- **VSUIDPIHelper.h**
 
-    -   Erforderlich, wenn Sie die DPI-Hilfsprogramme verwenden, um den aktuellen DPI-Wert zu erhalten.
+    - Erforderlich, wenn Sie die DPI-Hilfsprogramme verwenden, um den aktuellen DPI-Wert zu erhalten.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
--   **VsDpiAwareness.h**  
+- **VsDpiAwareness.h**  
 
-    -   Erforderlich, wenn Sie die DPI-Awareness-Hilfsprogramme verwenden, um den aktuellen DPI-Wert zu erhalten.  
+    - Erforderlich, wenn Sie die DPI-Awareness-Hilfsprogramme verwenden, um den aktuellen DPI-Wert zu erhalten.  
 
 ::: moniker-end
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>Wie schreibe ich die neuen WPF-UI?
 
-1.  Beginnen Sie mit der in der obigen erforderlichen Assemblyverweise hinzufügen zunächst die Schritte im Abschnitt zu Ihrem Projekt aus. Sie müssen nicht alle davon hinzufügen, fügen Sie also nur die Verweise, die Sie benötigen. (Hinweis: Wenn Sie verwenden, oder haben Zugriff auf **Farben** anstelle von **Pinsel**, können Sie den Verweis auf überspringen **Dienstprogramme**, da Sie den Konverter nicht benötigen.)
+1. Beginnen Sie mit der in der obigen erforderlichen Assemblyverweise hinzufügen zunächst die Schritte im Abschnitt zu Ihrem Projekt aus. Sie müssen nicht alle davon hinzufügen, fügen Sie also nur die Verweise, die Sie benötigen. (Hinweis: Wenn Sie verwenden, oder haben Zugriff auf **Farben** anstelle von **Pinsel**, können Sie den Verweis auf überspringen **Dienstprogramme**, da Sie den Konverter nicht benötigen.)
 
-2.  Wählen Sie das gewünschte Abbild aus, und rufen Sie den Moniker. Verwenden Sie eine **KnownMoniker**, oder verwenden Sie Ihre eigenen, wenn Sie Ihre eigenen benutzerdefinierten Images und Moniker verfügen.
+2. Wählen Sie das gewünschte Abbild aus, und rufen Sie den Moniker. Verwenden Sie eine **KnownMoniker**, oder verwenden Sie Ihre eigenen, wenn Sie Ihre eigenen benutzerdefinierten Images und Moniker verfügen.
 
-3.  Hinzufügen **CrispImages** zu Ihrem XAML. (Siehe Beispiel unten).
+3. Hinzufügen **CrispImages** zu Ihrem XAML. (Siehe Beispiel unten).
 
-4.  Legen Sie die **ImageThemingUtilities.ImageBackgroundColor** Eigenschaft in Ihrer Hierarchie der Benutzeroberfläche. (Dies sollte festgelegt werden, an dem Speicherort, in dem die Hintergrundfarbe ist bekannt, nicht unbedingt auf, die **CrispImage**.) (Siehe Beispiel unten).
+4. Legen Sie die **ImageThemingUtilities.ImageBackgroundColor** Eigenschaft in Ihrer Hierarchie der Benutzeroberfläche. (Dies sollte festgelegt werden, an dem Speicherort, in dem die Hintergrundfarbe ist bekannt, nicht unbedingt auf, die **CrispImage**.) (Siehe Beispiel unten).
 
 ```xaml
 <Window
@@ -323,19 +323,19 @@ Dieser Richtlinie enthält Anleitungen und bewährte Methoden für den Umstieg a
 
  Aktualisieren von vorhandenen WPF-UI ist ein relativ einfacher Prozess, der aus drei grundlegenden Schritten besteht:
 
-1.  Ersetzen Sie den gesamten \<Image >-Elemente in der Benutzeroberfläche mit \<CrispImage > Elemente.
+1. Ersetzen Sie den gesamten \<Image >-Elemente in der Benutzeroberfläche mit \<CrispImage > Elemente.
 
-2.  Ändern Sie die quellattributen Moniker-Attributen.
+2. Ändern Sie die quellattributen Moniker-Attributen.
 
-    -   Wenn das Image sich nie ändert, und Sie **KnownMonikers**, klicken Sie dann statisch zu binden, ist diese Eigenschaft die **KnownMoniker**. (Siehe Beispiel oben).
+    - Wenn das Image sich nie ändert, und Sie **KnownMonikers**, klicken Sie dann statisch zu binden, ist diese Eigenschaft die **KnownMoniker**. (Siehe Beispiel oben).
 
-    -   Wenn das Image sich nie ändert, und Sie Ihr eigenes benutzerdefinierte Image verwenden, klicken Sie dann statisch binden Sie an Ihre eigenen Moniker.
+    - Wenn das Image sich nie ändert, und Sie Ihr eigenes benutzerdefinierte Image verwenden, klicken Sie dann statisch binden Sie an Ihre eigenen Moniker.
 
-    -   Wenn das Bild ändern kann, binden Sie die Moniker-Attribut auf eine Code-Eigenschaft, die auf eigenschaftsänderungen benachrichtigt.
+    - Wenn das Bild ändern kann, binden Sie die Moniker-Attribut auf eine Code-Eigenschaft, die auf eigenschaftsänderungen benachrichtigt.
 
-3.  Legen Sie an einer beliebigen Stelle in der Hierarchie der Benutzeroberfläche, **ImageThemingUtilities.ImageBackgroundColor** , stellen Sie sicher, dass farbumkehrung ordnungsgemäß funktioniert.
+3. Legen Sie an einer beliebigen Stelle in der Hierarchie der Benutzeroberfläche, **ImageThemingUtilities.ImageBackgroundColor** , stellen Sie sicher, dass farbumkehrung ordnungsgemäß funktioniert.
 
-    -   Dies erfordert möglicherweise die Verwendung der **BrushToColorConverter** Klasse. (Siehe Beispiel oben).
+    - Dies erfordert möglicherweise die Verwendung der **BrushToColorConverter** Klasse. (Siehe Beispiel oben).
 
 ## <a name="how-do-i-update-win32-ui"></a>Wie aktualisiere ich die Win32-Benutzeroberfläche?
  Fügen Sie Folgendes an Ihrem Code immer angezeigt, das Rohdaten laden von Bildern zu ersetzen. Wechseln Sie Werte für die Rückgabe von HBITMAPs nicht im Vergleich zu HICONs im Vergleich zu HIMAGELIST je nach Bedarf.
@@ -350,6 +350,7 @@ CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
  **Das Image angefordert**
 
 ::: moniker range="vs-2017"
+
 ```cpp  
 ImageAttributes attr = { 0 };  
 attr.StructSize      = sizeof(attributes);  
@@ -367,9 +368,11 @@ CComPtr<IVsUIObject> spImg;
 // Replace this KnownMoniker with your desired ImageMoniker  
 spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
 ```  
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
 ```cpp 
 UINT dpiX, dpiY;
 HWND hwnd = // get the HWND where the image will be displayed
@@ -391,6 +394,7 @@ CComPtr<IVsUIObject> spImg;
 // Replace this KnownMoniker with your desired ImageMoniker  
 spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
 ```  
+
 ::: moniker-end
 
 ## <a name="how-do-i-update-winforms-ui"></a>Wie aktualisiere ich WinForms UI?
@@ -413,6 +417,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
  **Fordern Sie das image**
 
 ::: moniker range="vs-2017"
+
 ```csharp  
 ImageAttributes attributes = new ImageAttributes  
 {  
@@ -434,9 +439,11 @@ IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
 // Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
 ```  
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
 ```csharp  
 Control control = // get the control where the image will be displayed
 
@@ -460,6 +467,7 @@ IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
 // Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
 ```  
+
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Wie verwende ich die Image-Moniker in ein neues Toolfenster?
@@ -501,18 +509,18 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 3. Der Toolfenster-Registerkarte bei die Registerkarten klein (auch in verwendet die **STRG**+**Registerkarte** Fenster Switcher).
 
-   1.  Entfernen Sie diese Zeilen (sofern vorhanden) im Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:
+   1. Entfernen Sie diese Zeilen (sofern vorhanden) im Konstruktor für die abgeleitete Klasse die **ToolWindowPane** Typ:
 
        ```csharp
        this.BitmapResourceID = <Value>;
        this.BitmapIndex = <Value>;
        ```
 
-   2.  Finden Sie in Schritt #1, der die "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.
+   2. Finden Sie in Schritt #1, der die "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.
 
 4. Der Befehl, um das Fenster zu öffnen.
 
-   -   Finden Sie in Schritt #2 von der "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.
+   - Finden Sie in Schritt #2 von der "Wie verwende ich Image Moniker in ein neues Toolfenster?" weiter oben.
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Wie verwende ich die Image-Moniker in einer VSCT-Datei?
  Aktualisieren Ihrer *VSCT* Datei wie in den kommentierten Zeilen, die unten angegeben:
@@ -630,27 +638,27 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 1. Führen Sie die **ManifestFromResources** -Tool, und übergeben sie den Bildstreifen. Dadurch wird ein Manifest für den Bereichsstreifen.
 
-   -   Empfohlen: Geben Sie einen nicht standardmäßigen-Namen für das Manifest an deren Verwendung anpassen.
+   - Empfohlen: Geben Sie einen nicht standardmäßigen-Namen für das Manifest an deren Verwendung anpassen.
 
 2. Wenn Sie nur verwenden **KnownMonikers**, führen Sie Folgendes:
 
-   -   Ersetzen Sie die \<Images >-Abschnitt des Manifests mit \<Bilder / >.
+   - Ersetzen Sie die \<Images >-Abschnitt des Manifests mit \<Bilder / >.
 
-   -   Entfernen Sie alle Teilbild-IDs (alles, was \<Imagestrip-Name > _ ##).
+   - Entfernen Sie alle Teilbild-IDs (alles, was \<Imagestrip-Name > _ ##).
 
-   -   Empfohlen: Benennen Sie die AssetsGuid und Image Strip-Symbol an die Verwendung anpassen.
+   - Empfohlen: Benennen Sie die AssetsGuid und Image Strip-Symbol an die Verwendung anpassen.
 
-   -   Ersetzen Sie jeden **ContainedImage**GUID mit $(ImageCatalogGuid), ersetzen Sie jeden **ContainedImage**ID mit der $(\<Moniker >), und fügen Sie das externe = "true"-Attribut, um jede **ContainedImage**
+   - Ersetzen Sie jeden **ContainedImage**GUID mit $(ImageCatalogGuid), ersetzen Sie jeden **ContainedImage**ID mit der $(\<Moniker >), und fügen Sie das externe = "true"-Attribut, um jede **ContainedImage**
 
-       -   \<der Moniker > ersetzt werden soll, mit der **KnownMoniker** , entspricht das Bild jedoch mit der "KnownMonikers". Entfernt aus dem Namen.
+       - \<der Moniker > ersetzt werden soll, mit der **KnownMoniker** , entspricht das Bild jedoch mit der "KnownMonikers". Entfernt aus dem Namen.
 
-   -   Hinzufügen < Import Manifest="$(ManifestFolder)\\< Relative Installationspfad Dir, *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> am Anfang der \<Symbole > Abschnitt.
+   - Hinzufügen < Import Manifest="$(ManifestFolder)\\< Relative Installationspfad Dir, *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> am Anfang der \<Symbole > Abschnitt.
 
-       -   Der relative Pfad wird durch den Speicherort für die Bereitstellung während der Einrichtung für das Manifest erstellen definierten bestimmt.
+       - Der relative Pfad wird durch den Speicherort für die Bereitstellung während der Einrichtung für das Manifest erstellen definierten bestimmt.
 
 3. Führen Sie die **ManifestToCode** Wrapper generieren, damit der vorhandene Code einen Moniker verfügt, können mit den Image-Dienst für den Bildstreifen abzufragen.
 
-   -   Empfohlen: Geben Sie nicht standardmäßige Namen für den Wrapper und Namespaces zu ihrer Verwendung entsprechen.
+   - Empfohlen: Geben Sie nicht standardmäßige Namen für den Wrapper und Namespaces zu ihrer Verwendung entsprechen.
 
 4. Alle der hinzufügt, Erstellung, Setup und Bereitstellung und anderen Änderungen am Code, mit der Image-Dienst und die neuen Dateien arbeiten.
 
@@ -707,11 +715,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **Ich möchte nicht HIMAGELISTs zu unterstützen**
 
-1.  Ermitteln, welche **KnownMonikers** , die Bilder in Ihrem Bildstreifen entsprechen, oder erstellen Sie eigene Moniker für die Bilder in Ihrem Bildstreifen.
+1. Ermitteln, welche **KnownMonikers** , die Bilder in Ihrem Bildstreifen entsprechen, oder erstellen Sie eigene Moniker für die Bilder in Ihrem Bildstreifen.
 
-2.  Aktualisieren Sie alle Zuordnung, die Sie verwendet, um das Abbild auf dem erforderlichen Index in den Bildstreifen zu verwenden. die Moniker zu erhalten.
+2. Aktualisieren Sie alle Zuordnung, die Sie verwendet, um das Abbild auf dem erforderlichen Index in den Bildstreifen zu verwenden. die Moniker zu erhalten.
 
-3.  Aktualisieren Sie Ihren Code, um den Dienst Images zu verwenden, um Moniker über die aktualisierte Zuordnung anzufordern. (Dies kann bedeuten, Aktualisieren auf **CrispImages** für verwalteten Code oder Anfordern von HBITMAPs nicht oder HICONs aus der Image-Dienst und sie für systemeigenen Code übergeben.)
+3. Aktualisieren Sie Ihren Code, um den Dienst Images zu verwenden, um Moniker über die aktualisierte Zuordnung anzufordern. (Dies kann bedeuten, Aktualisieren auf **CrispImages** für verwalteten Code oder Anfordern von HBITMAPs nicht oder HICONs aus der Image-Dienst und sie für systemeigenen Code übergeben.)
 
 ## <a name="testing-your-images"></a>Testen Ihre images
  Sie können das Bildbibliotheks-Viewer-Tool verwenden, testen Sie Ihr Image-Manifeste, um sicherzustellen, dass alles richtig erstellt wurde. Sie finden das Tool in der [Visual Studio 2015 SDK](visual-studio-sdk.md). Dokumentation zu diesem und anderen Tools finden Sie [hier](https://aka.ms/VSImageThemeTools).
@@ -740,19 +748,19 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>FAQ
 
--   Bestehen Abhängigkeiten, die Sie, beim Laden von einschließen muss \<Verweis Include="Microsoft.VisualStudio.*. Interop.14.0.DesignTime"/ >?
+- Bestehen Abhängigkeiten, die Sie, beim Laden von einschließen muss \<Verweis Include="Microsoft.VisualStudio.*. Interop.14.0.DesignTime"/ >?
 
-    -   Legen Sie EmbedInteropTypes = "true", auf alle Interop-DLL-Dateien.
+    - Legen Sie EmbedInteropTypes = "true", auf alle Interop-DLL-Dateien.
 
--   Wie stelle ich einem bildmanifest mit my-Erweiterung bereit?
+- Wie stelle ich einem bildmanifest mit my-Erweiterung bereit?
 
-    -   Hinzufügen der *.imagemanifest* Datei zum Projekt.
+    - Hinzufügen der *.imagemanifest* Datei zum Projekt.
 
-    -   Legen Sie "Include in VSIX-Datei" auf "true" fest.
+    - Legen Sie "Include in VSIX-Datei" auf "true" fest.
 
--   Ich habe meine Projektsystem CPS wird aktualisiert. Was ist mit passiert **ImageName** und **StockIconService**?
+- Ich habe meine Projektsystem CPS wird aktualisiert. Was ist mit passiert **ImageName** und **StockIconService**?
 
-    -   Diese wurden entfernt, wenn CPS aktualisiert wurde, dass Sie Moniker verwenden. Sie müssen nicht mehr Aufrufen der **StockIconService**, übergeben Sie einfach die gewünschte **KnownMoniker** an die Methode oder Eigenschaft mit der **ToProjectSystemType()** Erweiterungsmethode in Die CPS-Hilfsprogramme. Finden Sie eine Zuordnung von **ImageName** zu **KnownMonikers** unten:
+    - Diese wurden entfernt, wenn CPS aktualisiert wurde, dass Sie Moniker verwenden. Sie müssen nicht mehr Aufrufen der **StockIconService**, übergeben Sie einfach die gewünschte **KnownMoniker** an die Methode oder Eigenschaft mit der **ToProjectSystemType()** Erweiterungsmethode in Die CPS-Hilfsprogramme. Finden Sie eine Zuordnung von **ImageName** zu **KnownMonikers** unten:
 
         |||
         |-|-|
@@ -820,7 +828,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|
         |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|
 
-    -   Ich habe meine Vervollständigungsanbieter für die Liste wird aktualisiert. Was **KnownMonikers** übereinstimmen, auf das alte **StandardGlyphGroup** und **StandardGlyph** Werte?
+    - Ich habe meine Vervollständigungsanbieter für die Liste wird aktualisiert. Was **KnownMonikers** übereinstimmen, auf das alte **StandardGlyphGroup** und **StandardGlyph** Werte?
 
         ||||
         |-|-|-|

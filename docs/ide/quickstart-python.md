@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953860"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
 In dieser fünf- bis zehnminütigen Einführung in Visual Studio als Python-IDE erstellen Sie eine einfache Python-Webanwendung, die auf dem Flask-Framework basiert. Sie erstellen das Projekt über einzelne Schritte, in denen Sie mehr über die grundlegenden Features von Visual Studio erfahren.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen. Wählen Sie im Installer die Workload **Python-Entwicklung** aus.
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen. Wählen Sie im Installer die Workload **Python-Entwicklung** aus.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen. Wählen Sie im Installer die Workload **Python-Entwicklung** aus.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
@@ -193,7 +203,7 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
 Glückwunsch zum Ausführen Ihrer ersten Python-App über Visual Studio! Dabei haben Sie mehr über das Verwenden von Visual Studio als Python-IDE erfahren.
 
 > [!div class="nextstepaction"]
-> [Bereitstellen der App in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Deploy the app to Azure App Service (Bereitstellen der App in Azure App Service)](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 Da die Schritte, die Sie in diesem Schnellstart befolgt haben, relativ allgemein sind, können und sollten diese automatisiert werden. Visual Studio-Projektvorlagen sind für diese Automatisierungen zuständig. Führen Sie den [Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage](../python/quickstart-02-python-in-visual-studio-project-from-template.md) durch. Dort wird veranschaulicht, wie eine Web-App in weniger Schritten erstellt wird, die der ähnelt, die Sie in diesem Artikel erstellt haben.
 

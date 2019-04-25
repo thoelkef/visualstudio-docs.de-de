@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101027"
 ---
 # <a name="properties-window-overview"></a>Übersicht über Eigenschaftenfenster
 Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für Objekte, die in der zwei Haupttypen von Windows verfügbar in ausgewählten der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE). Diese beiden Arten von Windows sind:
 
--   Toolfenster, z. B. den Projektmappen-Explorer, Klassenansicht und Objekt-browser
+- Toolfenster, z. B. den Projektmappen-Explorer, Klassenansicht und Objekt-browser
 
--   Dokumentfenster mit, wie Editoren und Designern die Forms-Designer-Editor für XML und HTML-editor
+- Dokumentfenster mit, wie Editoren und Designern die Forms-Designer-Editor für XML und HTML-editor
 
 ## <a name="using-the-properties-window"></a>Mithilfe des Eigenschaftenfensters
  Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehrerer ausgewählter Elemente. Wenn mehrere Elemente ausgewählt sind, wird die Schnittmenge aller Eigenschaften für alle ausgewählten Objekte angezeigt.

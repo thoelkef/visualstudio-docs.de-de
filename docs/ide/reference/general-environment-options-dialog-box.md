@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790134"
 ---
 # <a name="options-dialog-box-environment--general"></a>Dialogfeld „Optionen“: Umgebung \> Allgemein
 
@@ -70,7 +70,7 @@ Gibt an, ob Visual Studio die Anpassung der visuellen Darstellung automatisch fe
 
 ::: moniker-end
 
-**Umfassende visuelle Clientdarstellung aktivieren**
+**Enable rich client experience** (Umfassende visuelle Clientdarstellung aktivieren)
 
 Aktiviert die vollständige visuelle Darstellung von Visual Studio, u. a. mit Farbverläufen und Animationen. Deaktiviert diese Option bei Verwendung von Remotedesktopverbindungen oder älteren Grafikkarten, da diese Funktionen in solchen Fällen zu einer schlechteren Leistung führen können. Diese Option ist nur verfügbar, wenn Sie die Option **Visuelle Darstellung automatisch basierend auf der Clientleistung anpassen** deaktivieren.
 
@@ -102,5 +102,5 @@ Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)
+- [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
 - [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

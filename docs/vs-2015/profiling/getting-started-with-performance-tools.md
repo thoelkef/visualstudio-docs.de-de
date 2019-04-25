@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078979"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ Dieser Abschnitt enthält eine Übersicht über die Begriffe und Aufgaben, die b
   
  In diesen Tools können Leistungsdaten auf unterschiedliche Weise erfasst und analysiert werden. In vielen Fällen ist die beste Methode, um zu beginnen, jedoch die Standardeinstellungen des Leistungs-Assistenten zu verwenden, der es Ihnen ermöglicht, Anwendungsstatistiken zu sammeln, die auf Leistungsprobleme in Ihrem Code zeigen können.  
   
--   *Leistungswarnungen* benachrichtigen Sie bei allgemeinen Codierungsproblemen. Warnungen werden im Fehlerfenster von Visual Studio angezeigt. Sie können von der Warnung zum Quellcode und zu ausführlichen Hilfethemen navigieren, die Ihnen helfen, effizienteren Code zu schreiben.  
+- *Leistungswarnungen* benachrichtigen Sie bei allgemeinen Codierungsproblemen. Warnungen werden im Fehlerfenster von Visual Studio angezeigt. Sie können von der Warnung zum Quellcode und zu ausführlichen Hilfethemen navigieren, die Ihnen helfen, effizienteren Code zu schreiben.  
   
--   In den Leistungsberichten stehen Ansichten für verschiedene Ebenen der Anwendungsstruktur (von Quellcodezeilen bis hin zu Prozessen) sowie Programmausführungsdaten (von aufzurufenden und aufgerufenen Funktionen einer bestimmten Funktion bis hin zur Aufrufstruktur der gesamten Anwendung) zur Verfügung.  
+- In den Leistungsberichten stehen Ansichten für verschiedene Ebenen der Anwendungsstruktur (von Quellcodezeilen bis hin zu Prozessen) sowie Programmausführungsdaten (von aufzurufenden und aufgerufenen Funktionen einer bestimmten Funktion bis hin zur Aufrufstruktur der gesamten Anwendung) zur Verfügung.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
 |Aufgabe|Verwandter Inhalt|  
 |----------|---------------------|  
-|**Schnelles Erstellen eines Profils für eine Anwendung oder Website:** Mit dem Leistungs-Assistenten können Sie eine Profilerstellungssitzung für eine Visual Studio-Projektmappe oder eine Website konfigurieren und ausführen.|-   [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Erstellen eines Profils für eine Anwendung ohne Assistent:** Informationen zur Verwendung von Eigenschaftenseiten der Leistungssitzung, um eine Leistungssitzung zu erstellen.|-   [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Übung:** Praxiserfahrung durch Profilerstellung für eine Beispielanwendung.|-   [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**Schnelles Erstellen eines Profils einer Anwendung oder Website:** Verwenden Sie den Leistungs-Assistenten zum Konfigurieren und Ausführen einer Profilerstellungssitzung für eine Visual Studio-Projektmappe oder eine Website.|-   [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**Profil für eine Anwendung ohne Assistent:** Erfahren Sie, um die Eigenschaftenseiten der leistungssitzung verwenden, um eine leistungssitzung zu erstellen.|-   [Vorgehensweise: Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**Versuch es:** Praxiserfahrung durch profilerstellung für eine beispielanwendung.|-   [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax-Beispiel](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersichten](../profiling/overviews-performance-tools.md)   

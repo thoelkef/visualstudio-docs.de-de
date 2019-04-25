@@ -12,12 +12,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095062"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung ei
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>So ändern Sie die Darstellung eines Menübefehls  
   
-1.  Befolgen Sie die Anweisungen in [Ändern des Texts eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md) So erstellen Sie ein Menüelement namens `New Text`.  
+1. Befolgen Sie die Anweisungen in [Ändern des Texts eines Menübefehls](../extensibility/changing-the-text-of-a-menu-command.md) So erstellen Sie ein Menüelement namens `New Text`.  
   
-2.  Fügen Sie in der Datei ChangeMenuText.cs die folgenden using-Anweisung:  
+2. Fügen Sie in der Datei ChangeMenuText.cs die folgenden using-Anweisung:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  Fügen Sie in der Datei ChangeMenuTextPackageGuids.cs die folgende Zeile hinzu:  
+3. Fügen Sie in der Datei ChangeMenuTextPackageGuids.cs die folgende Zeile hinzu:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  Ersetzen Sie den Code in der ShowMessageBox-Methode durch den folgenden, in der Datei ChangeMenuText.cs:  
+4. Ersetzen Sie den Code in der ShowMessageBox-Methode durch den folgenden, in der Datei ChangeMenuText.cs:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung ei
     }  
     ```  
   
-5.  Abrufen den Befehl, der aktualisiert werden sollen die <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Objekt aus, und legen Sie dann die entsprechenden Eigenschaften für das Command-Objekt. Beispielsweise wird die folgende Methode der angegebenen Befehlssatz aus einem VSPackage-Befehl verfügbar oder nicht verfügbar. Im folgenden Code werden das Menü, das Element mit dem Namen `New Text` nicht verfügbar, nachdem sie bereits geklickt wurde.  
+5. Abrufen den Befehl, der aktualisiert werden sollen die <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> Objekt aus, und legen Sie dann die entsprechenden Eigenschaften für das Command-Objekt. Beispielsweise wird die folgende Methode der angegebenen Befehlssatz aus einem VSPackage-Befehl verfügbar oder nicht verfügbar. Im folgenden Code werden das Menü, das Element mit dem Namen `New Text` nicht verfügbar, nachdem sie bereits geklickt wurde.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,11 +80,11 @@ Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung ei
     }  
     ```  
   
-6.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio sollte angezeigt werden.  
+6. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio sollte angezeigt werden.  
   
-7.  Auf der **Tools** Menü klicken Sie auf die **aufrufen ChangeMenuText** Befehl. Zu diesem Zeitpunkt ist der Name des Befehls **aufrufen ChangeMenuText**, sodass die Befehlshandler ChangeMyCommand() nicht aufruft.  
+7. Auf der **Tools** Menü klicken Sie auf die **aufrufen ChangeMenuText** Befehl. Zu diesem Zeitpunkt ist der Name des Befehls **aufrufen ChangeMenuText**, sodass die Befehlshandler ChangeMyCommand() nicht aufruft.  
   
-8.  Auf der **Tools** Menü jetzt angezeigt werden sollte **neuen Text**. Klicken Sie auf **neuen Text**. Der Befehl sollte jetzt abgeblendet.  
+8. Auf der **Tools** Menü jetzt angezeigt werden sollte **neuen Text**. Klicken Sie auf **neuen Text**. Der Befehl sollte jetzt abgeblendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)   

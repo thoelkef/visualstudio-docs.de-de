@@ -29,31 +29,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111804"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen (C#, Visual Basic, C++, JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Erstellen von einer visuellen Zuordnung der Aufrufliste beim Debuggen (C#, Visual Basic C++, JavaScript)
 
 Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell zu verfolgen. Sie können Notizen auf der Code Map vermerken, um das Verhalten des Codes zu verfolgen, sodass Sie sich auf das Suchen von Fehlern konzentrieren können.
 
-Eine exemplarische Vorgehensweise die diesem Video aus: [Video. Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Eine exemplarische Vorgehensweise die diesem Video aus: [Video: Debuggen Sie visuelles mit Code Map-debuggerintegration (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Details zu Befehlen und Aktionen, die Sie mit Code Maps verwenden können, finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Sie können Erstellen von Code maps nur in [Visual Studio Enterprise-Edition](https://visualstudio.microsoft.com/downloads/).
+>Sie können Erstellen von Code maps nur in [Visual Studio Enterprise-Edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 So sieht ein kurzen Blick auf eine Code Map aus:
 
  ![Debuggen mit Aufruflisten in Code Maps](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a> Abbilden der Aufrufliste
+## <a name="MapStack"></a> Abbilden der Aufrufliste
 
-1. In einem Visual Studio Enterprise C#, Visual Basic, C++ oder JavaScript-Projekt, das Debuggen starten, indem Sie die Auswahl **Debuggen** > **Debuggen starten** oder durch Drücken **F5**.
+1. In einem Visual Studio Enterprise C#, Visual Basic C++, oder JavaScript-Projekt, das Debuggen starten, indem Sie die Auswahl **Debuggen** > **Debuggen starten** oder durch Drücken **F5** .
 
 1. Wählen Sie nach Ihrer app in den Unterbrechungsmodus wechselt oder Sie eine Funktion schrittweise, **Debuggen** > **Code Map**, oder drücken Sie **STRG**+**UMSCHALT** +**`**.
 
@@ -89,11 +89,11 @@ Um das Layout der Zuordnung steuern möchten, wählen Sie die **Layout** Menü a
 
 In der **Layout** Menü können Sie:
 
--   Ändern Sie das Standardlayout.
--   Beenden Sie die Zuordnung durch Aufheben der Auswahl automatisch neu anordnen **Automatisches Layout beim Debugging**.
--   Die Zuordnung so wenig wie möglich neu anzuordnen, wenn Sie Elemente, wählen Sie hierzu von hinzufügen **inkrementelles Layout**.
+- Ändern Sie das Standardlayout.
+- Beenden Sie die Zuordnung durch Aufheben der Auswahl automatisch neu anordnen **Automatisches Layout beim Debugging**.
+- Die Zuordnung so wenig wie möglich neu anzuordnen, wenn Sie Elemente, wählen Sie hierzu von hinzufügen **inkrementelles Layout**.
 
-##  <a name="MakeNotes"></a> Erstellen von Notizen zum Code
+## <a name="MakeNotes"></a> Erstellen von Notizen zum Code
 
 Sie können Kommentare, um nachzuverfolgen, was geschieht im Code hinzufügen.
 
@@ -103,7 +103,7 @@ Um eine neue Zeile in einem Kommentar hinzuzufügen, drücken Sie die **UMSCHALT
 
  ![Kommentar zu Aufrufliste in Code Map hinzufügen](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> Aktualisieren der Code Map mit der nächsten Aufrufliste
+## <a name="UpdateMap"></a> Aktualisieren der Code Map mit der nächsten Aufrufliste
 
 Wie Sie Ihre app in eine Funktion zum nächsten Haltepunkt oder Schritt ausführen, wird die Zuordnung neue Aufruflisten automatisch hinzugefügt.
 
@@ -111,7 +111,7 @@ Wie Sie Ihre app in eine Funktion zum nächsten Haltepunkt oder Schritt ausführ
 
 Wählen Sie zum Beenden der Zuordnung neue Aufruflisten automatisch hinzufügt ![anzeigen Aufrufliste auf Code Map automatisch](../debugger/media/debuggermap_automaticupdateicon.gif "anzeigen Aufrufliste auf Code Map automatisch") auf der Symbolleiste der Codeübersicht. Die Zuordnung weiterhin vorhandene Aufruflisten zu markieren. Um die aktuelle Aufrufliste manuell zur Karte hinzufügen möchten, drücken Sie die **STRG**+**UMSCHALT**+**`**.
 
-##  <a name="AddRelatedCode"></a> Hinzufügen von zugehörigem Code zur Code Map
+## <a name="AddRelatedCode"></a> Hinzufügen von zugehörigem Code zur Code Map
 
 Nun, da Sie in einer Karte haben C# oder Visual Basic können Sie Elemente wie Felder, Eigenschaften und andere Methoden, um nachzuverfolgen, was geschieht im Code hinzufügen.
 
@@ -134,7 +134,7 @@ Setzen Sie das Erstellen der Zuordnung fort, um weiteren Code anzuzeigen.
 
  ![Methoden, mit denen ein Feld in der Aufruflisten-Code Map](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> Suchen von Fehlern mithilfe der Code Map
+## <a name="FindBugs"></a> Suchen von Fehlern mithilfe der Code Map
  Durch die Visualisierung des Codes können Sie Fehler schneller finden. Nehmen wir beispielsweise an, dass Sie einen Fehler in einer Zeichnung app untersuchen. Wenn Sie eine Linie zeichnen und versuchen, sie rückgängig zu machen, geschieht nichts, bis Sie eine andere Zeile zeichnen.
 
  Legen Sie die Haltepunkte `clear`, `undo` und `Repaint` fest, starten Sie das Debugging, und erstellen Sie eine Zuordnung wie die folgende:

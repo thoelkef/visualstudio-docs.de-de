@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086584"
 ---
 # <a name="convert-dialog-box"></a>Dialogfeld "Konvertieren"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mithilfe des Dialogfelds **Konvertieren** können Sie ein Konvertierungstool auswählen, um ein neues Projekt aus einem alten zu erstellen. Sie können z.B. ein [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)]-Projekt aus einem Visual Basic 6-Projekt erstellen. Sie können auch den [Visual Studio-Projektkonverter](http://go.microsoft.com/fwlink/?LinkID=246465)verwenden, der auf der CodePlex-Website verfügbar ist, um Projekte zu upgraden, die in früheren Versionen von Visual Studio erstellt wurden.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  
@@ -34,11 +33,11 @@ Mithilfe des Dialogfelds **Konvertieren** können Sie ein Konvertierungstool aus
   
 #### <a name="to-access-the-convert-dialog-box"></a>So greifen Sie auf das Dialogfeld „Konvertieren“ zu  
   
-1.  Wählen Sie in der Menüleiste **Datei**, **Öffnen**, **Konvertieren**aus.  
+1. Wählen Sie in der Menüleiste **Datei**, **Öffnen**, **Konvertieren**aus.  
   
      Es wird eine Liste der Codekonvertierungstools angezeigt, die aktuell verfügbar sind.  
   
-2.  Wählen Sie das Tool aus, das für Ihre Anwendung geeignet ist.  
+2. Wählen Sie das Tool aus, das für Ihre Anwendung geeignet ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [NOTINBUILD – Vorgehensweise: Upgraden eines Projekts von Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   

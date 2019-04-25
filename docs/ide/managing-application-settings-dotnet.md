@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537315"
 ---
 # <a name="manage-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 
@@ -84,9 +84,9 @@ Wenn benutzerspezifische Einstellungen zur Laufzeit geändert wurden, z.B. beim 
 
 Es wird dringend empfohlen, dass Sie mit dem `My.Settings`-Objekt und der *SETTINGS*-Standarddatei auf Einstellungen zugreifen. Dies ist deshalb wichtig, da Sie mithilfe des **Einstellungs-Designers** den Einstellungen Eigenschaften zuweisen können und Benutzereinstellungen vor dem Beenden der Anwendung automatisch gespeichert werden. Die Visual Basic-Anwendung kann jedoch direkt auf Einstellungen zugreifen. In diesem Fall müssen Sie die `MySettings`-Klasse aufrufen und eine benutzerdefinierte *SETTINGS*-Datei im Stammordner des Projekts verwenden. Sie müssen die Benutzereinstellungen wie bei einer C#-Anwendung vor dem Beenden der Anwendung speichern. Informationen hierzu finden Sie im folgenden Abschnitt.
 
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Zugreifen auf oder Ändern von Anwendungseinstellungen in C# zur Laufzeit
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 
 In Programmiersprachen außer Visual Basic, z.B. in C#, müssen Sie direkt auf die `Settings`-Klasse zugreifen. Dies wird im folgenden [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Beispiel veranschaulicht.
 

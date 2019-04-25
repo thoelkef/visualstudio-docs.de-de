@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324785"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515189"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -56,7 +56,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie einen vorhandenen Ordner mit *R
 
 1. Erstellen Sie wie im vorherigen Abschnitt ein neues Projekt in Visual Studio.
 1. Kopieren Sie die Dateien in den Projektordner.
-1. Klicken Sie im Projektmappen-Explorer von Visual Studio mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen** > **Vorhandene Elemente** aus, und navigieren Sie zu den Dateien, die Sie hinzufügen möchten. Diese Dateien werden in Ihrer Projektstruktur angezeigt, nachdem Sie auf **OK** geklickt haben.
+1. Klicken Sie im Projektmappen-Explorer von Visual Studio mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen** > **Vorhandenes Element** aus, und navigieren Sie zu den Dateien, die Sie hinzufügen möchten. Diese Dateien werden in Ihrer Projektstruktur angezeigt, nachdem Sie auf **OK** geklickt haben.
 1. Klicken Sie zum Organisieren von Code in Unterordnern mit der rechten Maustaste auf das Projekt, und wählen Sie zunächst **Hinzufügen** > **Neuer Ordner** aus. Kopieren Sie Ihre Dateien anschließend in diesen Ordner, und fügen Sie diese vorhandenen Elemente in Schritt 3 hinzu.
 
 ## <a name="project-properties"></a>Projekteigenschaften

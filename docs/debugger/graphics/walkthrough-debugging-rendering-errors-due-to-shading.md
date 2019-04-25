@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091329"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Grafikdiagnose, um ein Objekt zu untersuchen, die aufgrund eines shaderfehlers falsche Farbe hat.
 
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:
 
--   Auswerten des Grafikprotokolldokuments, um die Pixel zu identifizieren, für die das Problem auftritt
+- Auswerten des Grafikprotokolldokuments, um die Pixel zu identifizieren, für die das Problem auftritt
 
--   Verwenden des Fensters **Grafikpixelverlauf** , um den Pixelstatus genauer zu untersuchen
+- Verwenden des Fensters **Grafikpixelverlauf** , um den Pixelstatus genauer zu untersuchen
 
--   Verwenden des **HLSL-Debuggers** , um den Pixel- und den Vertexshader zu überprüfen
+- Verwenden des **HLSL-Debuggers** , um den Pixel- und den Vertexshader zu überprüfen
 
 ## <a name="scenario"></a>Szenario
  Eine falsche Farbgebung von Objekten tritt häufig auf, wenn ein Vertexshader einem Pixelshader falsche oder unvollständige Informationen übergibt.

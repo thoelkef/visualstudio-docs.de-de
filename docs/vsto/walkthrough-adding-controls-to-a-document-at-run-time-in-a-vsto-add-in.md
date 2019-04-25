@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070068"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in
   Sie können Steuerelemente jedem geöffneten Microsoft Office Word-Dokument mithilfe eines VSTO-Add-Ins hinzufügen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie das Menüband verwenden, um Benutzer hinzufügen können eine <xref:Microsoft.Office.Tools.Word.Controls.Button> oder <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu einem Dokument.
@@ -42,18 +42,18 @@ ms.locfileid: "56645874"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-a-new-word-add-in-project"></a>Erstellen eines neuen Word-Add-in-Projekts
  Beginnen Sie, indem Sie ein Word-VSTO-Add-In-Projekt erstellen.
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>So erstellen Sie ein neues Word-VSTO-Add-In-Projekt
 
-1.  Erstellen Sie ein VSTO-Add-in-Projekt für Word, mit dem Namen **WordDynamicControls**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein VSTO-Add-in-Projekt für Word, mit dem Namen **WordDynamicControls**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Fügen Sie einen Verweis auf die Assembly **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** hinzu. Dieser Verweis ist erforderlich, um später in dieser exemplarischen Vorgehensweise dem Dokument programmgesteuert ein Windows Forms-Steuerelement hinzuzufügen.
+2. Fügen Sie einen Verweis auf die Assembly **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** hinzu. Dieser Verweis ist erforderlich, um später in dieser exemplarischen Vorgehensweise dem Dokument programmgesteuert ein Windows Forms-Steuerelement hinzuzufügen.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-document"></a>Geben Sie eine Benutzeroberfläche zum Hinzufügen von Steuerelementen zu einem Dokument
  Fügen Sie dem Menüband in Word eine benutzerdefinierte Registerkarte hinzu. Benutzer können Kontrollkästchen auf der Registerkarte aktivieren, um einem Dokument Steuerelemente hinzuzufügen.
@@ -78,21 +78,17 @@ ms.locfileid: "56645874"
 
 8. Ändern Sie im Fenster **Eigenschaften** die folgenden Eigenschaften:
 
-
    | Eigenschaft | Wert |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **Bezeichnung** | **Schaltfläche hinzufügen** |
 
-
 9. Fügen Sie **group1**ein zweites Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
-
 
    | Eigenschaft | Wert |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Bezeichnung** | **Rich-Text-Steuerelement hinzufügen** |
-
 
 10. Doppelklicken Sie im Menüband-Designer auf **Schaltfläche hinzufügen**.
 
@@ -111,19 +107,19 @@ ms.locfileid: "56645874"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>So fügen Sie Steuerelemente auf dem aktiven Dokument hinzu oder entfernen diese
 
-1.  In **Projektmappen-Explorer**, doppelklicken Sie auf *"ThisAddIn.cs"* oder *"ThisAddIn.vb"* zum Öffnen der Datei im Code-Editor.
+1. In **Projektmappen-Explorer**, doppelklicken Sie auf *"ThisAddIn.cs"* oder *"ThisAddIn.vb"* zum Öffnen der Datei im Code-Editor.
 
-2.  Fügen Sie der `ThisAddIn`-Klasse folgenden Code hinzu. Mit diesem Code werden ein <xref:Microsoft.Office.Tools.Word.Controls.Button> - und ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt deklariert, die den Steuerelementen entsprechen, die dem Dokument hinzugefügt werden.
+2. Fügen Sie der `ThisAddIn` -Klasse folgenden Code hinzu. Mit diesem Code werden ein <xref:Microsoft.Office.Tools.Word.Controls.Button> - und ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt deklariert, die den Steuerelementen entsprechen, die dem Dokument hinzugefügt werden.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3.  Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Schaltfläche hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
+3. Fügen Sie der `ThisAddIn` -Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Schaltfläche hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4.  Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Rich-Text-Steuerelement hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
+4. Fügen Sie der `ThisAddIn` -Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Rich-Text-Steuerelement hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -133,12 +129,12 @@ ms.locfileid: "56645874"
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>So entfernen Sie das Button-Steuerelement, wenn das Dokument gespeichert wird
 
-1.  In der *"ThisAddIn.cs"* oder *"ThisAddIn.vb"* Codedatei, fügen Sie die folgende Methode der `ThisAddIn` Klasse. Diese Methode ist ein Ereignishandler für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis. Wenn dem gespeicherten Dokument ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement zugeordnet ist, ruft der Ereignishandler das Hostelement ab und entfernt das <xref:Microsoft.Office.Tools.Word.Controls.Button> -Steuerelement, wenn es vorhanden ist.
+1. In der *"ThisAddIn.cs"* oder *"ThisAddIn.vb"* Codedatei, fügen Sie die folgende Methode der `ThisAddIn` Klasse. Diese Methode ist ein Ereignishandler für das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis. Wenn dem gespeicherten Dokument ein <xref:Microsoft.Office.Tools.Word.Document> -Hostelement zugeordnet ist, ruft der Ereignishandler das Hostelement ab und entfernt das <xref:Microsoft.Office.Tools.Word.Controls.Button> -Steuerelement, wenn es vorhanden ist.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
 
-2.  In C# fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code ist in C# erforderlich, um den `Application_DocumentBeforeSave` -Ereignishandler mit dem <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis zu verbinden.
+2. In C# fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code ist in C# erforderlich, um den `Application_DocumentBeforeSave` -Ereignishandler mit dem <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis zu verbinden.
 
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]
 
@@ -147,7 +143,7 @@ ms.locfileid: "56645874"
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Zum Hinzufügen oder entfernen steuert, wenn der Benutzer die Kontrollkästchen im Menüband klickt
 
-1.  In der *MyRibbon.cs* oder *MyRibbon.vb* Codedatei, ersetzen Sie den generierten `addButtonCheckBox_Click` und `addRichTextCheckBox_Click` -Ereignishandler durch den folgenden Code. Dieser Code definiert diese Ereignishandler neu, sodass aus ihnen die `ToggleButtonOnDocument` - und die `ToggleRichTextControlOnDocument` -Methode aufgerufen werden, die Sie der `ThisAddIn` -Klasse früher in dieser exemplarischen Vorgehensweise hinzugefügt haben.
+1. In der *MyRibbon.cs* oder *MyRibbon.vb* Codedatei, ersetzen Sie den generierten `addButtonCheckBox_Click` und `addRichTextCheckBox_Click` -Ereignishandler durch den folgenden Code. Dieser Code definiert diese Ereignishandler neu, sodass aus ihnen die `ToggleButtonOnDocument` - und die `ToggleRichTextControlOnDocument` -Methode aufgerufen werden, die Sie der `ThisAddIn` -Klasse früher in dieser exemplarischen Vorgehensweise hinzugefügt haben.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -157,34 +153,34 @@ ms.locfileid: "56645874"
 
 ### <a name="to-test-the-solution"></a>So testen Sie die Projektmappe
 
-1.  Drücken Sie **F5** um Ihr Projekt auszuführen.
+1. Drücken Sie **F5** um Ihr Projekt auszuführen.
 
-2.  Drücken Sie in das aktive Dokument **EINGABETASTE** mehrmals Hinzufügen neuer leere Absätze des Dokuments.
+2. Drücken Sie in das aktive Dokument **EINGABETASTE** mehrmals Hinzufügen neuer leere Absätze des Dokuments.
 
-3.  Wählen Sie den ersten Absatz aus.
+3. Wählen Sie den ersten Absatz aus.
 
-4.  Klicken Sie auf die Registerkarte **Add-Ins** .
+4. Klicken Sie auf die Registerkarte **Add-Ins** .
 
-5.  Klicken Sie in der Gruppe **Steuerelemente hinzufügen** auf **Schaltfläche hinzufügen**.
+5. Klicken Sie in der Gruppe **Steuerelemente hinzufügen** auf **Schaltfläche hinzufügen**.
 
      Im ersten Absatz wird eine Schaltfläche angezeigt.
 
-6.  Wählen Sie den letzten Absatz aus.
+6. Wählen Sie den letzten Absatz aus.
 
-7.  Klicken Sie in der Gruppe **Steuerelemente hinzufügen** auf **Rich-Text-Steuerelement hinzufügen**.
+7. Klicken Sie in der Gruppe **Steuerelemente hinzufügen** auf **Rich-Text-Steuerelement hinzufügen**.
 
      Dem letzten Absatz wird ein Rich-Text-Inhaltssteuerelement hinzugefügt.
 
-8.  Speichern Sie das Dokument.
+8. Speichern Sie das Dokument.
 
      Die Schaltfläche wird aus dem Dokument entfernt.
 
 ## <a name="next-steps"></a>Nächste Schritte
  In den folgenden Themen erhalten Sie weitere Informationen zu Steuerelementen in VSTO-Add-Ins:
 
--   Ein Beispiel, das veranschaulicht, wie viele andere Typen von Steuerelementen zu einem Dokument zur Laufzeit hinzufügen und die Steuerelemente neu erstellt, wenn das Dokument erneut geöffnet wird, finden Sie im Word-Add-In dynamischen Steuerelemente Beispiel am [Office-Entwicklung-Beispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).
+- Ein Beispiel, das veranschaulicht, wie viele andere Typen von Steuerelementen zu einem Dokument zur Laufzeit hinzufügen und die Steuerelemente neu erstellt, wenn das Dokument erneut geöffnet wird, finden Sie im Word-Add-In dynamischen Steuerelemente Beispiel am [Office-Entwicklung-Beispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md).
 
--   Eine exemplarische Vorgehensweise, das Hinzufügen von Steuerelementen zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins für Excel veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
+- Eine exemplarische Vorgehensweise, das Hinzufügen von Steuerelementen zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins für Excel veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit in VSTO-add-in-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Word-Projektmappen](../vsto/word-solutions.md)

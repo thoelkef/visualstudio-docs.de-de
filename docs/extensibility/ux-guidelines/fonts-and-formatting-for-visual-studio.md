@@ -8,37 +8,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096256"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
+## <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart verwendet
  Alle Schriftarten in Visual Studio müssen der Benutzer für die Anpassung verfügbar gemacht werden. Dies erfolgt in erster Linie durch die **Schriftarten und Farben** auf der Seite die **Tools > Optionen** Dialogfeld. Die drei Hauptkategorien der schriftarteinstellungen sind:
 
--   **Umgebungsschriftart** – die primären Schriftart für die IDE (integrated Development Environment), für alle Elemente der Benutzeroberfläche, einschließlich der Dialogfelder, Menüs, Toolfenster und Dokumentfenster. Standardmäßig ist die Umgebungsschriftart verwendet, eine Systemschriftart gebunden, die als 9 pt Segoe UI in aktuellen Versionen von Windows angezeigt wird. Verwenden eine Schriftart für alle Elemente der Benutzeroberfläche trägt dazu bei eine einheitlichen Schriftart Darstellung in der IDE.
+- **Umgebungsschriftart** – die primären Schriftart für die IDE (integrated Development Environment), für alle Elemente der Benutzeroberfläche, einschließlich der Dialogfelder, Menüs, Toolfenster und Dokumentfenster. Standardmäßig ist die Umgebungsschriftart verwendet, eine Systemschriftart gebunden, die als 9 pt Segoe UI in aktuellen Versionen von Windows angezeigt wird. Verwenden eine Schriftart für alle Elemente der Benutzeroberfläche trägt dazu bei eine einheitlichen Schriftart Darstellung in der IDE.
 
--   **Text-Editor** -Elementen, die Surface im Code und andere textbasierte Editoren im Text-Editor angepasst werden können, auf der Seite **Tools > Optionen**.
+- **Text-Editor** -Elementen, die Surface im Code und andere textbasierte Editoren im Text-Editor angepasst werden können, auf der Seite **Tools > Optionen**.
 
--   **Bestimmte Sammlungen** -Designerfenster, die bieten Anpassung ihrer Elemente der Benutzeroberfläche, Schriftarten, die speziell für ihren Entwurf kann ausgesetzt Oberfläche in ihre eigenen Seite "Einstellungen" in **Tools > Optionen**.
+- **Bestimmte Sammlungen** -Designerfenster, die bieten Anpassung ihrer Elemente der Benutzeroberfläche, Schriftarten, die speziell für ihren Entwurf kann ausgesetzt Oberfläche in ihre eigenen Seite "Einstellungen" in **Tools > Optionen**.
 
 ### <a name="editor-font-customization-and-resizing"></a>-Editor-Schriftart Anpassung und Ändern der Größe
  Benutzer häufig vergrößern oder verkleinern die Größe und/oder die Farbe des Texts im Editor nach Präferenz, unabhängig von der Benutzeroberfläche für die allgemeine. Da die Umgebungsschriftart für Elemente verwendet wird, die innerhalb oder als Teil einer Designer/Editor angezeigt werden kann, ist es wichtig, um das erwartete Verhalten zu beachten, wenn Sie eine der folgenden Klassifizierungen Schriftart geändert wird.
 
  Beim Erstellen der UI-Elemente, die angezeigt werden im Editor, aber sind nicht Teil der *Inhalt*, es ist wichtig, die Umgebungsschriftart verwendet und nicht für die Schriftart des Texts zu verwenden, sodass Elemente in einer vorhersagbaren Weise angepasst.
 
-1.  Für den Codetext im Editor die mit der Einstellung "Code Text Schriftart" Größe und zur Zoomstufe für den EditorText zu reagieren.
+1. Für den Codetext im Editor die mit der Einstellung "Code Text Schriftart" Größe und zur Zoomstufe für den EditorText zu reagieren.
 
-2.  Alle anderen Elemente der Benutzeroberfläche gebunden werden sollte, um die umgebungseinstellung für die Schriftart und reagieren auf eine beliebige globale Änderungen in der Umgebung. Dies umfasst (aber ist nicht beschränkt auf):
+2. Alle anderen Elemente der Benutzeroberfläche gebunden werden sollte, um die umgebungseinstellung für die Schriftart und reagieren auf eine beliebige globale Änderungen in der Umgebung. Dies umfasst (aber ist nicht beschränkt auf):
 
-    -   Text in Kontextmenüs
+    - Text in Kontextmenüs
 
-    -   Text in einem Editor, das Zusatzelement wie Glühbirne Menütext Schnellsuche-Editor-Bereich, und navigieren Sie zum Bereich
+    - Text in einem Editor, das Zusatzelement wie Glühbirne Menütext Schnellsuche-Editor-Bereich, und navigieren Sie zum Bereich
 
-    -   Bezeichnen von Text in Dialogfeldern, z. B. **in Dateien suchen** oder **Umgestalten**
+    - Bezeichnen von Text in Dialogfeldern, z. B. **in Dateien suchen** oder **Umgestalten**
 
 ### <a name="accessing-the-environment-font"></a>Zugreifen auf die Umgebungsschriftart verwendet
  Im einheitlichen Modus oder WinForms-Code, die Umgebungsschriftart erfolgen kann durch Aufrufen der Methode `IUIHostLocale::GetDialogFont` nach Abfragen der Schnittstelle aus der `SID_SUIHostLocale` Service.
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-###  <a name="BKMK_Formatting"></a> Formatierung (Skalierung/in Fettdruck zu setzen)-Referenz
+### <a name="BKMK_Formatting"></a> Formatierung (Skalierung/in Fettdruck zu setzen)-Referenz
  Einige Dialogfelder erfordern bestimmte Text fett formatiert wird, oder eine andere Größe als die Umgebungsschriftart verwendet. Zuvor, Schriftarten, die größer als die Umgebungsschriftart programmiert wurde, als "`environment font +2`" oder ähnlich. Verwenden die bereitgestellten Codeausschnitte werden hohe DPI-Monitore unterstützen und sicherstellen, dass es sich bei Anzeigetext immer an die richtige Größe und Gewicht (z. B. "Light" oder "semilight als") angezeigt wird.
 
 > **Hinweis: Bevor Sie die Formatierung anwenden, stellen Sie sicher Sie folgen den Anleitungen unter [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -300,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Um die Schriftart zurückzusetzen, klicken Sie auf "Standard verwenden" unter **Tools > Optionen > Umgebung > Schriftarten und Farben**.
 
-##  <a name="BKMK_TextStyle"></a> Textstil
+## <a name="BKMK_TextStyle"></a> Textstil
  Textformat bezieht sich auf den Schriftgrad, Gewichtung und Groß-/Kleinschreibung. Leitfaden für die Implementierung, finden Sie unter [die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Text Groß-/Kleinschreibung
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Großgeschrieben
  Großgeschrieben ist die Großschreibung-Methode zum Schreiben in die nur das erste Wort des Satzes groß geschrieben wird, sowie alle Eigennamen und das Pronomen "I". Im Allgemeinen ist die großgeschrieben einfacher für eine weltweite Zielgruppe zu lesen, insbesondere wenn der Inhalt von einem Computer übersetzt wird. Verwenden Sie bei der Satz:
 
-1.  **Statusleistenmeldungen.** Diese sind einfach, kurz gesagt, und geben Sie nur die Statusinformationen. Beispiel: "Project-Datei laden"
+1. **Statusleistenmeldungen.** Diese sind einfach, kurz gesagt, und geben Sie nur die Statusinformationen. Beispiel: "Project-Datei laden"
 
-2.  **Alle anderen Elemente der Benutzeroberfläche**, z. B. Bezeichnungen, Kontrollkästchen, Optionsfelder und Einträge aufzulisten. Beispiel: "Alle Elemente in der Liste auswählen"
+2. **Alle anderen Elemente der Benutzeroberfläche**, z. B. Bezeichnungen, Kontrollkästchen, Optionsfelder und Einträge aufzulisten. Beispiel: "Alle Elemente in der Liste auswählen"
 
 ### <a name="text-formatting"></a>Formatieren von Text
  Standardtextformatierung an, die in Visual Studio 2013 wird gesteuert, indem [die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Dieser Dienst trägt dazu bei eine einheitlichen Schriftart Darstellung in der IDE (integrated Development Environment), und Sie müssen ihn verwenden, um eine konsistente Umgebung für Ihre Benutzer zu gewährleisten.
@@ -373,36 +373,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Fett formatierter text
  Fett formatierter Text ist in Visual Studio nur selten verwendet und für die reserviert werden sollten:
 
--   Frage Bezeichnungen in Assistenten
+- Frage Bezeichnungen in Assistenten
 
--   Festlegen des aktiven Projekts im Projektmappen-Explorer
+- Festlegen des aktiven Projekts im Projektmappen-Explorer
 
--   überschreiben die Werte in das Toolfenster "Eigenschaften"
+- überschreiben die Werte in das Toolfenster "Eigenschaften"
 
--   bestimmte Ereignisse in den Dropdownlisten für die Visual Basic-editor
+- bestimmte Ereignisse in den Dropdownlisten für die Visual Basic-editor
 
--   Server erstellte Inhalte in der dokumentgliederung für Webseiten
+- Server erstellte Inhalte in der dokumentgliederung für Webseiten
 
--   Abschnittsheadern in komplexen Dialog oder Designer-Benutzeroberfläche
+- Abschnittsheadern in komplexen Dialog oder Designer-Benutzeroberfläche
 
 #### <a name="italics"></a>Kursiv
  Visual Studio verwendet entweder "Kursiv" oder "Fett kursiv formatierten Text nicht.
 
 #### <a name="color"></a>Farbe
 
--   Blau ist für Links (Navigation und Befehle) reserviert und sollte nie für die Ausrichtung verwendet werden.
+- Blau ist für Links (Navigation und Befehle) reserviert und sollte nie für die Ausrichtung verwendet werden.
 
--   Größere Überschriften (Umgebungsschriftart x mit 155 % oder höher) können für diese Zwecke zugewiesen werden:
+- Größere Überschriften (Umgebungsschriftart x mit 155 % oder höher) können für diese Zwecke zugewiesen werden:
 
-    -   Um visuelle Elemente, die Signatur von Visual Studio-Benutzeroberfläche bereitzustellen.
+    - Um visuelle Elemente, die Signatur von Visual Studio-Benutzeroberfläche bereitzustellen.
 
-    -   Die Aufmerksamkeit auf einen bestimmten Bereich
+    - Die Aufmerksamkeit auf einen bestimmten Bereich
 
-    -   Die Textfarbe der standardumgebung dunkel grau/schwarzen Rahmen anbieten.
+    - Die Textfarbe der standardumgebung dunkel grau/schwarzen Rahmen anbieten.
 
--   Farbe in Überschriften sollten vorhandene Visual Studio markenfarben, in erster Linie die wichtigsten Violett, #FF68217A nutzen.
+- Farbe in Überschriften sollten vorhandene Visual Studio markenfarben, in erster Linie die wichtigsten Violett, #FF68217A nutzen.
 
--   Bei Verwendung von Farbe in Überschriften müssen eingehalten werden die [Windows Farbe Richtlinien](/windows/desktop/uxguide/vis-color), einschließlich Kontrastverhältnis und weitere Überlegungen für die Barrierefreiheit.
+- Bei Verwendung von Farbe in Überschriften müssen eingehalten werden die [Windows Farbe Richtlinien](/windows/desktop/uxguide/vis-color), einschließlich Kontrastverhältnis und weitere Überlegungen für die Barrierefreiheit.
 
 ### <a name="font-size"></a>Schriftgrad
  Entwurf von Visual Studio-Benutzeroberfläche verfügt über eine hellere Darstellung mit mehr Leerzeichen. Wo möglich, Chrome und Titelleisten verringert oder entfernt wurden. Während die informationsdichte in Visual Studio erforderlich ist, weiterhin Typografie wichtig ist, mit dem Schwerpunkt offenere Zeilenabstand und eine Variante der Schriftgrade und Gewichtungen.
@@ -474,11 +474,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Abstand und Abstände
  Überschriften erfordern eingerahmt um ihnen die entsprechenden Betonung zu gewähren. Dieser Speicherplatz variiert je nach Größe und weiteren neuerungen in der Nähe der Überschrift, z. B. eine horizontale Linie oder einer Zeile des Texts in die Umgebungsschriftart verwendet wird.
 
--   Die ideale Auffüllung für eine Überschrift selbst sollte 90 % des Speicherplatzes Höhe Großbuchstaben Zeichen sein. Z. B. eine 28 pt Segoe UI Light-Überschrift hat eine Obergrenze-Höhe der 26 pt aus, und die Auffüllung sollte ungefähr 23 pt oder etwa 31 Pixel sein.
+- Die ideale Auffüllung für eine Überschrift selbst sollte 90 % des Speicherplatzes Höhe Großbuchstaben Zeichen sein. Z. B. eine 28 pt Segoe UI Light-Überschrift hat eine Obergrenze-Höhe der 26 pt aus, und die Auffüllung sollte ungefähr 23 pt oder etwa 31 Pixel sein.
 
--   Der minimale Abstand zu einer Überschrift sollte es sich um 50 % der Zeichenhöhe Großbuchstaben sein. Weniger Speicherplatz kann verwendet werden, wenn eine Regel oder ein anderes Element eine enge Anpassung eine Überschrift begleitet wird.
+- Der minimale Abstand zu einer Überschrift sollte es sich um 50 % der Zeichenhöhe Großbuchstaben sein. Weniger Speicherplatz kann verwendet werden, wenn eine Regel oder ein anderes Element eine enge Anpassung eine Überschrift begleitet wird.
 
--   Fett formatiertem Umgebung Schriftart Text sollte es sich um Standard-Zeilenabstand Höhe und Abstand folgen.
+- Fett formatiertem Umgebung Schriftart Text sollte es sich um Standard-Zeilenabstand Höhe und Abstand folgen.
 
 ## <a name="see-also"></a>Siehe auch
 

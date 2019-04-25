@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080604"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Bereitstellen einer Ebenenmodellerweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ Andere Benutzer von Visual Studio können Ebenenmodellierungserweiterungen insta
   
 #### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung  
   
-1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.  
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.  
   
-2.  Klicken Sie auf den Namen der Erweiterung, und klicken Sie dann auf **Deinstallieren**.  
+2. Klicken Sie auf den Namen der Erweiterung, und klicken Sie dann auf **Deinstallieren**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Installieren einer Erweiterung auf einem Team Foundation Build-Server  
  Auf [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]-Servern ist Visual Studio normalerweise nicht installiert, daher können Sie VSIX nicht durch Doppelklicken installieren. Die Installation von [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] schließt einige Komponenten ein, die das Ausführen einer VSIX-Erweiterung ermöglichen, Sie müssen die Erweiterung jedoch manuell installieren.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>So installieren Sie die Ebenenerweiterung auf einem [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]-Server  
   
-1.  Kopieren der **VSIX** Dateien vom Entwicklungscomputer auf den [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Computer.  
+1. Kopieren der **VSIX** Dateien vom Entwicklungscomputer auf den [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Computer.  
   
      Speichern Sie die VSIX-Datei in einem der folgenden Speicherorte:  
   
-    -   So führen Sie die Installation für alle Benutzer und Dienste aus:  
+    - So führen Sie die Installation für alle Benutzer und Dienste aus:  
   
          %ProgramFiles%\Microsoft Visual Studio [Version]\Common7\IDE\Extensions\Microsoft  
   
-    -   So führen Sie die Installation nur für den Netzwerkdienst aus, der [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ausführt:  
+    - So führen Sie die Installation nur für den Netzwerkdienst aus, der [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ausführt:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Wenn Sie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] zur Ausführung im interaktiven Modus für einen bestimmten Benutzer konfiguriert haben, können Sie die Installation nur für diesen Benutzer ausführen:  
+    - Wenn Sie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] zur Ausführung im interaktiven Modus für einen bestimmten Benutzer konfiguriert haben, können Sie die Installation nur für diesen Benutzer ausführen:  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  %LocalAppData% ist in der Regel *DriveName*: Benutzer*Benutzername*AppDataLocal.  
   
-2.  Erweitern Sie jede VSIX-Datei in einen Ordner am gleichen Speicherort:  
+2. Erweitern Sie jede VSIX-Datei in einen Ordner am gleichen Speicherort:  
   
-    1.  Ändern Sie die Dateierweiterung von **VSIX** zu **ZIP**.  
+    1. Ändern Sie die Dateierweiterung von **VSIX** zu **ZIP**.  
   
-    2.  Extrahieren Sie den Inhalt der ZIP-Datei in einen Ordner.  
+    2. Extrahieren Sie den Inhalt der ZIP-Datei in einen Ordner.  
   
-    3.  Löschen Sie die ZIP-Datei.  
+    3. Löschen Sie die ZIP-Datei.  
   
-3.  Starten Sie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]neu.
+3. Starten Sie [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]neu.

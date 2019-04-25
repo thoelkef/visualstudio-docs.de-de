@@ -11,12 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990547"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategien für die Problembehandlung bei Testcontrollern und Test-Agents in Auslastungstests
 
@@ -24,7 +24,7 @@ Dieser Artikel behandelt einige der häufigsten Probleme, die Ihnen bei der Arbe
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Leistungsindikatoren auf Test-Agent-Computern können nicht erfasst werden
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Leistungsindikatoren auf Test-Agent-Computern können nicht erfasst werden
 
 Beim Ausführen eines Auslastungstests können Fehler auftreten, wenn Sie versuchen, eine Verbindung zu einem Test-Agent-Computer herzustellen und Leistungsindikatoren zu erfassen. Der Remoteregistrierungsdienst ist dafür zuständig, einem Remotecomputer Leistungsindikatordaten zur Verfügung zu stellen. Auf manchen Betriebssystemen wird der Remoteregistrierungsdienst nicht automatisch gestartet. Um dieses Problem zu beheben, starten Sie den Remoteregistrierungsdienst manuell.
 
@@ -39,11 +39,11 @@ Sie können den Umfang der Protokollierung auf einem Testcontrollercomputer steu
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>So legen Sie die Protokollierungsebene auf einem Testcontrollercomputer fest
 
-1.  Beenden Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net stop vsttcontroller` ein.
+1. Beenden Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net stop vsttcontroller` ein.
 
-2.  Öffnen Sie die Datei *QTController.exe.config*. Diese Datei befindet sich im Installationsverzeichnis des Controllers.
+2. Öffnen Sie die Datei *QTController.exe.config*. Diese Datei befindet sich im Installationsverzeichnis des Controllers.
 
-3.  Bearbeiten Sie den Eintrag für den `EqtTraceLevel`-Schalter im Abschnitt Systemdiagnose der Datei. Der Code sollte diesem ähneln:
+3. Bearbeiten Sie den Eintrag für den `EqtTraceLevel`-Schalter im Abschnitt Systemdiagnose der Datei. Der Code sollte diesem ähneln:
 
     ```xml
     <system.diagnostics>
@@ -64,23 +64,23 @@ Sie können den Umfang der Protokollierung auf einem Testcontrollercomputer steu
     </system.diagnostics>
     ```
 
-4.  Speichern Sie die Datei.
+4. Speichern Sie die Datei.
 
-5.  Starten Sie den Controllerdienst. Geben Sie in der Eingabeaufforderung `net start vsttcontroller` ein.
+5. Starten Sie den Controllerdienst. Geben Sie in der Eingabeaufforderung `net start vsttcontroller` ein.
 
 Dies gilt für den Testcontroller, den Test-Agent-Dienst und den Test-Agent-Prozess. Beim Diagnostizieren von Problemen ist es hilfreich, die Protokollierung für alle drei Prozesse zu aktivieren. Die Vorgehensweise zum Festlegen der Protokollierungsebene entspricht für alle drei Prozesse der Vorgehensweise, die zuvor für den Testcontroller beschrieben wurde. Verwenden Sie die folgenden Konfigurationsdateien, um die Protokollierungsebenen für den Test-Agent-Dienst und den Agent-Prozess festzulegen.
 
--   *QTController.exe.config* Controllerdienst
+- *QTController.exe.config* Controllerdienst
 
--   *QTAgentService.exe.config* Agent-Dienst
+- *QTAgentService.exe.config* Agent-Dienst
 
--   *QTDCAgent(32).exe.config* Agent-Datenadapterprozess für 32-Bit-Architektur
+- *QTDCAgent(32).exe.config* Agent-Datenadapterprozess für 32-Bit-Architektur
 
--   *QTDCAgent(64).exe.config* Agent-Datenadapterprozess für 64-Bit-Architektur
+- *QTDCAgent(64).exe.config* Agent-Datenadapterprozess für 64-Bit-Architektur
 
--   *QTAgent (32).exe.config* Agent-Testprozess für 32-Bit-Architektur
+- *QTAgent (32).exe.config* Agent-Testprozess für 32-Bit-Architektur
 
--   *QTAgent (64).exe.config* Agent-Testprozess für 64-Bit-Architektur
+- *QTAgent (64).exe.config* Agent-Testprozess für 64-Bit-Architektur
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Binden eines Testcontrollers an einen Netzwerkadapter
 
@@ -97,25 +97,25 @@ Um diesen Fehler zu beheben, muss der Testcontroller an einen der Netzwerkadapte
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>So erhalten Sie die IP-Adresse des Netzwerkadapters
 
-1.  Klicken Sie auf **Start** und dann auf **Ausführen**.
+1. Klicken Sie auf **Start** und dann auf **Ausführen**.
 
      Das Dialogfeld **Ausführen** wird angezeigt.
 
-2.  Geben Sie `cmd` ein, und klicken Sie anschließend auf **OK**.
+2. Geben Sie `cmd` ein, und klicken Sie anschließend auf **OK**.
 
      Eine Eingabeaufforderung wird geöffnet.
 
-3.  Geben Sie `ipconfig /all` ein.
+3. Geben Sie `ipconfig /all` ein.
 
      Die IP-Adressen für Ihre Netzwerkadapter werden angezeigt. Notieren Sie sich die IP-Adresse des Netzwerkadapters, an den Sie den Controller binden möchten.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>So binden Sie einen Testcontroller an einen Netzwerkadapter
 
-1.  Beenden Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net stop vsttcontroller` ein.
+1. Beenden Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net stop vsttcontroller` ein.
 
-2.  Öffnen Sie die Datei *QTController.exe.config*. Diese Datei befindet sich im folgenden Verzeichnis: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Öffnen Sie die Datei *QTController.exe.config*. Diese Datei befindet sich im folgenden Verzeichnis: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-3.  Fügen Sie den Anwendungseinstellungen einen Eintrag für die `BindTo`-Eigenschaft hinzu. Geben Sie die IP-Adresse des Netzwerkadapters an, an den Sie den Controller binden möchten. Der Code sollte diesem ähneln:
+3. Fügen Sie den Anwendungseinstellungen einen Eintrag für die `BindTo`-Eigenschaft hinzu. Geben Sie die IP-Adresse des Netzwerkadapters an, an den Sie den Controller binden möchten. Der Code sollte diesem ähneln:
 
     ```xml
     <appSettings>
@@ -129,13 +129,13 @@ Um diesen Fehler zu beheben, muss der Testcontroller an einen der Netzwerkadapte
     </appSettings>
     ```
 
-4.  Speichern Sie die Datei.
+4. Speichern Sie die Datei.
 
-5.  Starten Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net start vsttcontroller` ein.
+5. Starten Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net start vsttcontroller` ein.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>So verbinden Sie einen Test-Agent mit einem gebundenen Controller
 
--   Installieren Sie den Test-Agent erneut. Geben Sie dieses Mal die IP-Adresse des Testcontrollers anstelle des Namens des Testcontrollers an.
+- Installieren Sie den Test-Agent erneut. Geben Sie dieses Mal die IP-Adresse des Testcontrollers anstelle des Namens des Testcontrollers an.
 
 Dies gilt für den Testcontroller, den Test-Agent-Dienst und den Test-Agent-Prozess. Die `BindTo`-Eigenschaft muss für jeden Prozess festgelegt werden, der auf einem Computer mit mehr als einem Netzwerkadapter ausgeführt wird. Die Vorgehensweise zum Festlegen der `BindTo`-Eigenschaft entspricht für alle drei Prozesse der Vorgehensweise, die zuvor für den Testcontroller beschrieben wurde. Zum Festlegen der Protokollierungsebenen für den Test-Agent-Dienst und den Test-Agent-Prozess verwenden Sie die Konfigurationsdateien, die unter [Festlegen der Protokollierungsebene auf einem Testcontrollercomputer](#set-the-logging-level-on-a-test-controller-computer) aufgeführt sind.
 

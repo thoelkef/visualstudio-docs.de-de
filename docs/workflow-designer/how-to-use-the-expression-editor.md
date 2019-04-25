@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117251"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks Editors
 
@@ -36,18 +36,18 @@ Die **Ausdrucks-Editor** verhält sich wie folgt:
 
 ## <a name="use-the-expression-editor"></a>Verwenden des Ausdrucks-Editors
 
-1.  Öffnen Sie in Visual Studio ein neues oder vorhandenes Workflowprojekt aus.
+1. Öffnen Sie in Visual Studio ein neues oder vorhandenes Workflowprojekt aus.
 
-2.  Fügen Sie dem Workflow z. B. die <xref:System.Activities.Statements.Assign>-Aktivität hinzu.
+2. Fügen Sie dem Workflow z. B. die <xref:System.Activities.Statements.Assign>-Aktivität hinzu.
 
     > [!NOTE]
     > Mehrere Workflowaktivitäten verfügen über Ausdrucks-Editoren. Ausdrucks-TextBlock-Steuerelemente werden auch im Variablen-Designer, Argument-Designer und dem dynamischen Argument-Designer angezeigt. Die <xref:System.Activities.Statements.Assign>-Aktivität wird als Beispiel verwendet.
 
-3.  Klicken Sie im Aktivitätsdesigner für die <xref:System.Activities.Statements.Assign>-Aktivität auf den linken Ausdrucks-Editor.
+3. Klicken Sie im Aktivitätsdesigner für die <xref:System.Activities.Statements.Assign>-Aktivität auf den linken Ausdrucks-Editor.
 
      Die grauen Wasserzeichen Zeichenfolgen  **\<auf >** und  **\<VB-Ausdruck eingeben >** sind die standardtextzeichenfolgen für Ausdrucks-Editoren in der <xref:System.Activities.Statements.Assign> Aktivität.
 
-4.  Geben Sie einen Ausdruck ein. Wenn Sie eine Zeichenfolge eingeben, setzen Sie diese unbedingt in Anführungszeichen. Wenn Sie das Ausdrucksargument an eine Variable zu binden, lassen Sie die Anführungszeichen weg.
+4. Geben Sie einen Ausdruck ein. Wenn Sie eine Zeichenfolge eingeben, setzen Sie diese unbedingt in Anführungszeichen. Wenn Sie das Ausdrucksargument an eine Variable zu binden, lassen Sie die Anführungszeichen weg.
 
      Wenn Sie fertig sind, wählen Sie eine Region oder einen Bereich außerhalb der Ausdrucks-Editor, um den Fokus auf einen anderen Teil des Designers zu verlagern. Verschieben des Fokus bewirkt, dass der Compiler den Ausdruck zu überprüfen, wie zuvor beschrieben.
 

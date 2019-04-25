@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789121"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -39,7 +39,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Neues Projekt hinzufügen|AddProj|File.AddNewProject|
 |[Befehl "Alias"](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
-|Fenster |Auto|Debug.Autos|
+|Fenster |Autos|Debug.Autos|
 |"Haltepunkte" (Fenster)|bl|Debug.Breakpoints|
 |Haltepunkt ein/aus|bp|Debug.ToggleBreakPoint|
 |Aufruflistenfenster|CallStack|Debug.CallStack|
@@ -64,8 +64,8 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) als Unicode|du|Debug.ListMemory /Unicode|
 |[Befehl "Anweisung auswerten"](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Schließen|Schließen|File.Exit|
-|Auswahl formatieren|format|Edit.FormatSelection|
-|Ganzer Bildschirm|FullScreen|View.FullScreen|
+|Auswahl formatieren|Format|Edit.FormatSelection|
+|Vollbild|FullScreen|View.FullScreen|
 |[Befehl "Start"](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Befehl "Gehe zu"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Gehe zu Klammer|GotoBrace|Edit.GotoBrace|
@@ -118,7 +118,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |Fenster „Toolbox“|Toolbox|View.Toolbox|
 |[Befehl "Disassemblierung auflisten"](../../ide/reference/list-disassembly-command.md)|n|Debug.ListDisassembly|
 |In Großbuchstaben umwandeln|Ucase|Edit.MakeUppercase|
-|Rückgängig|undo|Edit.Undo|
+|undo|Rückgängig machen|Edit.Undo|
 |Tabstopps aus Auswahl entfernen|Tabstopps entfernen|Edit.UntabifySelection|
 |Überwachungsfenster|Überwachen|Debug.WatchN|
 |Umschalten des Zeilenumbruchs|WordWrap|Edit.ToggleWordWrap|

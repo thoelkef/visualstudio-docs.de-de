@@ -9,22 +9,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09df214f5537ac81c7fb9802a34b48ee01ceb75b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f79b57d01a091e3617e7470297aa6205aa4e20e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041859"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Der Designer kann während des Debuggens nicht geändert werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Diese Meldung wird angezeigt, wenn Elemente im O/R-Designer geändert werden, während die Anwendung im Debugmodus ausgeführt wird. Wenn die Anwendung im Debugmodus ausgeführt wird, ist der O/R-Designer schreibgeschützt.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Klicken Sie auf **Debuggen beenden** auf die **Debuggen** Menü.  
+- Klicken Sie auf **Debuggen beenden** auf die **Debuggen** Menü.  
   
      Das Debuggen der Anwendung wird beendet, und Elemente im O/R-Designer können geändert werden.  
   
