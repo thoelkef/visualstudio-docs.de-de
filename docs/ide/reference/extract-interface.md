@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791239"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring des Extrahierens einer Schnittstelle
 
@@ -58,13 +58,11 @@ Dieses Refactoring gilt für:
 
    ![Schnittstelle extrahieren](media/extractinterface-dialog-same-file.png)
 
-
    | Feld | Beschreibung |
    | - | - |
    | **Name der neuen Schnittstelle** | Der Name der zu erstellenden Schnittstelle. Dieser Name ist standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
    | **Neuer Dateiname** | Der Name der generierten Datei, die die Schnittstelle enthalten wird. Wie beim Namen der Schnittstelle ist dies standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. Sie können für die Option auch **Add to current file** (Aktueller Datei hinzufügen) auswählen. |
    | **Öffentliche Member zum Bilden einer Schnittstelle auswählen** | Die in der Schnittstelle zu extrahierenden Elemente. Sie können beliebig viele Elemente auswählen. |
-
 
 4. Klicken Sie auf **OK**.
 
@@ -73,15 +71,13 @@ Dieses Refactoring gilt für:
    - C#:
 
       ![Resultierende Klasse: C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Resultierende Schnittstelle: C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
       ![Resultierende Klasse: Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Resultierende Schnittstelle: Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Siehe auch

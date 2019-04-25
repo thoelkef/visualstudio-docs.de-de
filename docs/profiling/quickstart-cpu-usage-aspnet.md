@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810100"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (ASP.NET)
 
@@ -153,30 +153,30 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
+## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
 
-1.  Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile im `Simple`-Konstruktor fest:
+1. Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile im `Simple`-Konstruktor fest:
 
     `for (int i = 0; i < 200; i++)`
 
     Legen Sie einen Haltepunkt fest, indem Sie in den Bundsteg links neben der Codezeile klicken.
 
-1.  Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende des `Simple`-Konstruktors fest:
+1. Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende des `Simple`-Konstruktors fest:
 
      ![Haltepunkte für die Profilerstellung festlegen](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
 
-1.  Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
+1. Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
-1.  Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
+1. Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
 
-1.  Wenn die Anwendung geladen wurde, klicken Sie auf den Link **About** (Info) oben auf der Webseite, um den neuen Code auszuführen.
+1. Wenn die Anwendung geladen wurde, klicken Sie auf den Link **About** (Info) oben auf der Webseite, um den neuen Code auszuführen.
 
-1.  Sehen Sie sich die Ansicht **Zusammenfassung** der Diagnosetools an.
+1. Sehen Sie sich die Ansicht **Zusammenfassung** der Diagnosetools an.
 
-1.  Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
+1. Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
 
      ![Diagnosetools ermöglichen die CPU-Profilerstellung](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
      Wenn Sie auf **CPU-Profilerstellung aufzeichnen** klicken, zeichnet Visual Studio auf, welche Funktionen ausgeführt werden und wie lange dies dauert. Außerdem stellt das Programm ein Zeitachsendiagramm bereit, mit dem Sie bestimmte Segmente der Samplingsitzung genauer betrachten können. Diese gesammelten Daten können jedoch nur angezeigt werden, wenn die Anwendung an einem Haltepunkt angehalten wird.
 
-6.  Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
+6. Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
 
      Jetzt verfügen Sie über Leistungsdaten für Ihre Anwendung, die speziell für den Codebereich gelten, der zwischen den beiden Haltepunkten liegt.
 

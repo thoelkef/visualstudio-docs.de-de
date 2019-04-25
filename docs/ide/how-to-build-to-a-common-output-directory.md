@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547818"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Vorgehensweise: Erstellen in einem gemeinsamen Ausgabeverzeichnis
 
@@ -26,13 +26,13 @@ Standardmäßig erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>So legen Sie alle Ausgaben in einem gemeinsamen Verzeichnis ab
 
-1.  Klicken Sie auf ein Projekt in der Projektmappe.
+1. Klicken Sie auf ein Projekt in der Projektmappe.
 
-2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
 
-3.  Klicken Sie je nach Art des Projekts auf die Registerkarte **Kompilieren** oder **Erstellen**, und legen Sie den **Ausgabepfad** für alle Projekte in der Projektmappe auf denselben Ordner fest.
+3. Klicken Sie je nach Art des Projekts auf die Registerkarte **Kompilieren** oder **Erstellen**, und legen Sie den **Ausgabepfad** für alle Projekte in der Projektmappe auf denselben Ordner fest.
 
-4.  Wiederholen Sie die Schritte 1 bis 3 für alle Projekte in der Projektmappe.
+4. Wiederholen Sie die Schritte 1 bis 3 für alle Projekte in der Projektmappe.
 
 ## <a name="see-also"></a>Siehe auch
 

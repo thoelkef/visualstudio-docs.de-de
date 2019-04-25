@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccafda4600e08436e88bc66f8fd9177cc73401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557449"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Suchen Sie Themen mithilfe des Help Viewer-Indexes
 
@@ -30,14 +30,14 @@ Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten
 
 Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:
 
--   Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.
+- Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.
 
     Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.
 
     > [!NOTE]
     > Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text _enthalten_. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text _beginnen_.
 
--   Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.
+- Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.
 
     Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.
 
@@ -47,33 +47,33 @@ Das Verwenden des Indexes ist unkompliziert. Allerdings kann das Beherrschen der
 
 ### <a name="general-guidelines"></a>Allgemeine Richtlinien
 
--   Scrollen Sie durch die Indexeinträge. Nicht alle Themen werden auf die gleiche Weise indiziert, und das Thema, das Ihnen am meisten helfen könnte, könnte sich in der Liste weiter oben oder unten als erwartet befinden.
+- Scrollen Sie durch die Indexeinträge. Nicht alle Themen werden auf die gleiche Weise indiziert, und das Thema, das Ihnen am meisten helfen könnte, könnte sich in der Liste weiter oben oder unten als erwartet befinden.
 
--   Lassen Sie Artikel wie „ein“ oder „die“ weg, da der Index sie ignoriert.
+- Lassen Sie Artikel wie „ein“ oder „die“ weg, da der Index sie ignoriert.
 
--   Kehren Sie die Reihenfolge der eingegebenen Wörter um, wenn Sie die erwarteten Einträge nicht finden.
+- Kehren Sie die Reihenfolge der eingegebenen Wörter um, wenn Sie die erwarteten Einträge nicht finden.
 
     Wenn z. B. für „Debuggen von Inlineassemblycode“ keine relevanten Einträge angezeigt werden, versuchen Sie es mit „Assemblycode, inline debuggen“.
 
--   Verwenden Sie Filter mit der Registerkarte **Index**, um die Anzahl der Ergebnisse zu verringern.
+- Verwenden Sie Filter mit der Registerkarte **Index**, um die Anzahl der Ergebnisse zu verringern.
 
 ### <a name="syntax-tips"></a>Tipps zur Syntax
 
 Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, versuchen Sie Folgendes:
 
--   Geben Sie die ersten Buchstaben bzw. den Stamm des Worts ein. Durch die Eingabe einer Teilzeichenfolge gelangen Sie zu Themen, die mit Stichwörtern im Singular oder Plural indiziert wurden.
+- Geben Sie die ersten Buchstaben bzw. den Stamm des Worts ein. Durch die Eingabe einer Teilzeichenfolge gelangen Sie zu Themen, die mit Stichwörtern im Singular oder Plural indiziert wurden.
 
     Geben Sie z.B. „Eigenschaft“, um die Suche nach „Eigenschaften“ und „Eigenschaft“ zu starten.
 
--   Geben Sie Partizipformen des Verbs für die Aufgabe ein, die Sie erledigen möchten. Um spezifischere Indexeinträge zu finden, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.
+- Geben Sie Partizipformen des Verbs für die Aufgabe ein, die Sie erledigen möchten. Um spezifischere Indexeinträge zu finden, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.
 
     Geben Sie zum Beispiel „ausgeführt“ ein, um mehr Einträge zu erhalten, oder „ausgeführte Programme“, um weniger Einträge abzurufen.
 
--   Geben Sie eigenständige Adjektive ein. Um die Ergebnisse zu begrenzen, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.
+- Geben Sie eigenständige Adjektive ein. Um die Ergebnisse zu begrenzen, fügen Sie ein Wort an, das genau das beschreibt, was Sie suchen.
 
     Geben Sie beispielsweise „COM +“ ein, um eine Vielzahl von Einträgen zu erhalten, oder „COM+-Komponenten“, um weniger Einträge abzurufen.
 
--   Geben Sie ein Synonym des Worts oder Verbs ein, das Sie suchen.
+- Geben Sie ein Synonym des Worts oder Verbs ein, das Sie suchen.
 
     Wenn Sie beispielsweise den Begriff „Erstellung“ eingegeben haben, versuchen Sie es stattdessen mit „erstellen“.
 

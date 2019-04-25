@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795211"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generieren eines Konstruktors in Visual Studio
 
@@ -30,11 +30,11 @@ Diese Codegenerierung gilt für:
 
 **Vorgehensweise**: Es gibt mehrere Möglichkeiten zum Generieren eines Konstruktors:
 
-   - [Generieren eines Konstruktors und Auswählen von Membern](#pick)
-   - [Generieren eines Konstruktors über ausgewählte Felder](#selection)
-   - [Generieren eines Konstruktors aus der neuen Verwendung](#usage)
-   - [Hinzufügen eines Parameters zu einem vorhandenen Konstruktor](#addparameter)
-   - [Erstellen und Initialisieren eines Felds bzw. einer Eigenschaft anhand eines Konstruktorparameters](#create)
+- [Generieren eines Konstruktors und Auswählen von Membern](#pick)
+- [Generieren eines Konstruktors über ausgewählte Felder](#selection)
+- [Generieren eines Konstruktors aus der neuen Verwendung](#usage)
+- [Hinzufügen eines Parameters zu einem vorhandenen Konstruktor](#addparameter)
+- [Erstellen und Initialisieren eines Felds bzw. einer Eigenschaft anhand eines Konstruktorparameters](#create)
 
 ## <a id = "pick"></a> Generieren eines Konstruktors und Auswählen von Membern (nur in C#)
 

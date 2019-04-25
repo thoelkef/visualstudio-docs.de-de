@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539178"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Übersicht über die Analyse von verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Die Codeanalyse für verwalteten Code analysiert verwaltete Assemblys und erstel
 ## <a name="ide-integrated-development-environment-integration"></a>Integration in die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE)  
  Entwickler können die Codeanalyse im Projekt entweder automatisch oder manuell ausführen.  
   
- Wenn die Codeanalyse bei jeder Projekterstellung ausgeführt werden soll, aktivieren Sie auf der Eigenschaftenseite des Projekts das Kontrollkästchen **Enable Code Analysis on Build (defines CODE_ANALYSIS constant)** (Codeanalyse beim Erstellen aktivieren (definiert die CODE_ANALYSIS-Konstante)). Weitere Informationen finden Sie unter [How to: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Wenn die Codeanalyse bei jeder Projekterstellung ausgeführt werden soll, aktivieren Sie auf der Eigenschaftenseite des Projekts das Kontrollkästchen **Enable Code Analysis on Build (defines CODE_ANALYSIS constant)** (Codeanalyse beim Erstellen aktivieren (definiert die CODE_ANALYSIS-Konstante)). Weitere Informationen finden Sie unter [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
- Um die Codeanalyse in einem Projekt manuell auszuführen, klicken Sie im Menü **Analysieren** auf **Codeanalyse für _Projektname_** ausführen. Weitere Informationen finden Sie unter [How to: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Um die Codeanalyse in einem Projekt manuell auszuführen, klicken Sie im Menü **Analysieren** auf **Codeanalyse für _Projektname_** ausführen. Weitere Informationen finden Sie unter [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
 ## <a name="rule-sets"></a>Regelsätze  
  Codeanalyseregeln für verwalteten Code werden in *Regelsätze* gruppiert. Sie können einen Standardregelsatz von Microsoft verwenden, oder Sie können eine benutzerdefinierte Regel erstellen, um eine bestimmte Anforderung zu erfüllen. Weitere Informationen finden Sie unter [Using Rule Sets to Group Code Analysis Rules (Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln)](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
@@ -63,8 +63,8 @@ Die Codeanalyse für verwalteten Code analysiert verwaltete Assemblys und erstel
   Die Einhaltung dieser Vorgaben können Sie durch das Definieren von Eincheckrichtlinien gewährleisten. Weitere Informationen finden Sie unter [Verbessern der Codequalität mit Eincheckrichtlinien für das Teamprojekt](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Team Build-Integration  
- Sie können die integrierten Funktionen des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Sie können die integrierten Features des Buildsystems verwenden, um das Analysetool im Rahmen des Buildprozesses auszuführen. Weitere Informationen finden Sie unter [Build the application (Erstellen der Anwendung)](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Using Rule Sets to Group Code Analysis Rules (Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln)](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
- [How to: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+ [Vorgehensweise: Enable and Disable Automatic Code Analysis (Vorgehensweise: Aktivieren und Deaktivieren der automatischen Codeanalyse)](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

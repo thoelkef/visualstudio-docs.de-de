@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783613"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 
@@ -37,7 +37,7 @@ Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelem
 
  ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
-1.  Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.
+1. Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelem
     }
     ```
 
-2.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> sowie <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> des Barrierefreiheitsobjekts.
+2. Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> sowie <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> des Barrierefreiheitsobjekts.
 
-3.  Implementieren Sie ein anderes Barrierefreiheitsobjekt für das untergeordnete Steuerelement, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft des Steuerelements, um das Objekt für die Barrierefreiheit zurückzugeben.
+3. Implementieren Sie ein anderes Barrierefreiheitsobjekt für das untergeordnete Steuerelement, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft des Steuerelements, um das Objekt für die Barrierefreiheit zurückzugeben.
 
-4.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> sowie <xref:System.Windows.Forms.AccessibleObject.Select%2A> für das Barrierefreiheitsobjekt des untergeordneten Steuerelements.
+4. Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> sowie <xref:System.Windows.Forms.AccessibleObject.Select%2A> für das Barrierefreiheitsobjekt des untergeordneten Steuerelements.
 
 > [!NOTE]
 > Dieses Thema beginnt mit dem Barrierefreiheitsbeispiel für das <xref:System.Windows.Forms.AccessibleObject>. Aufbauend auf dieses Beispiel werden anschließend die restlichen Prozeduren erläutert. Zum Erstellen einer funktionierenden Version des Barrierefreiheitsbeispiels entwickeln Sie eine Konsolenanwendung und ersetzen dann den Code in *Program.cs* durch den Beispielcode. Fügen Sie Verweise auf Barrierefreiheit, System.Drawing und System.Windows.Forms hinzu. Ändern Sie das **Einbetten von Interop-Typen** für die Barrierefreiheit in **FALSE**, um eine Buildwarnung zu beseitigen. Sie können den Ausgabetyp des Projekts von **Konsolenanwendung** in **Windows-Anwendung** ändern, damit beim Ausführen der Anwendung kein Konsolenfenster angezeigt wird.
@@ -182,19 +182,19 @@ Der Eigenschaftenanbieter und der Aktionsfilter werden in einem Erweiterungspake
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>So debuggen Sie den Eigenschaftenanbieter oder Aktionsfilter
 
-1.  Erstellen Sie die Debugversion des Erweiterungspakets, und kopieren Sie die *DLL*- und *PDB*-Dateien nach *%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Erstellen Sie die Debugversion des Erweiterungspakets, und kopieren Sie die *DLL*- und *PDB*-Dateien nach *%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Führen Sie die Anwendung aus (nicht im Debugger.)
+2. Führen Sie die Anwendung aus (nicht im Debugger.)
 
-3.  Führen Sie den Test-Generator für codierte UI aus
+3. Führen Sie den Test-Generator für codierte UI aus
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Fügen Sie den Debugger an den codedUITestBuilder-Prozess an.
+4. Fügen Sie den Debugger an den codedUITestBuilder-Prozess an.
 
-5.  Legen Sie im Code Haltepunkte fest.
+5. Legen Sie im Code Haltepunkte fest.
 
-6.  Erstellen Sie im Test-Generator für codierte UI Asserts zum Testen des Eigenschaftenanbieters und Aufzeichnungsaktionen zum Testen der Aktionsfilter.
+6. Erstellen Sie im Test-Generator für codierte UI Asserts zum Testen des Eigenschaftenanbieters und Aufzeichnungsaktionen zum Testen der Aktionsfilter.
 
 ## <a name="see-also"></a>Siehe auch
 

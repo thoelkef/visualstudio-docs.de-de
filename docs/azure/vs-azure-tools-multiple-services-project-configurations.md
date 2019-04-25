@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b8930d288b5f37d59f3c14657aee045a6a95fb96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555301"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -28,7 +28,6 @@ Konfigurationseinstellungen werden in Visual Studio mithilfe der Eigenschaftense
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
 Informationen zu den zugrunde liegenden Schemas für die Dienstdefinition und die Dienstkonfigurationsdateien finden Sie in den Artikeln zu [CSDEF (XML-Schema)](/azure/cloud-services/schema-csdef-file) und [CSCFG (XML-Schema)](/azure/cloud-services/schema-cscfg-file). Weitere Informationen zur Dienstkonfiguration finden Sie unter [Gewusst wie: Konfigurieren von Clouddiensten](/azure/cloud-services/cloud-services-how-to-configure-portal).
-
 
 ## <a name="configuration-page"></a>Seite "Konfiguration"
 
