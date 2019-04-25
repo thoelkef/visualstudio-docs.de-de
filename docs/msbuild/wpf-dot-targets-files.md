@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c61e305868045664af7333bbb7dcce0beed54370
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778033"
 ---
 # <a name="wpf-targets-files"></a>TARGETS-Dateien von WPF
 [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] erweitert [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] durch Hinzufügen einer Gruppe von [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)]-spezifischen Aufgaben, die in einer speziellen *TARGETS*-Datei kombiniert werden: *Microsoft.WinFX.targets*. In dieser Datei sind die [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)]-Aufgaben kombiniert, die zum Erstellen eines [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)]-Projekts in [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] erforderlich sind.

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824242"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen
 
@@ -54,69 +54,69 @@ Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden S
 
 ## <a name="create-a-project-configuration"></a>Erstellen einer Projektkonfiguration
 
-1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-2.  Wählen Sie in der Spalte **Projekt** ein Projekt aus.
+2. Wählen Sie in der Spalte **Projekt** ein Projekt aus.
 
-3.  Wählen Sie im Dropdownmenü **Konfiguration** für dieses Projekt die Option **Neu** aus.
+3. Wählen Sie im Dropdownmenü **Konfiguration** für dieses Projekt die Option **Neu** aus.
 
      Das Dialogfeld **Neue Projektkonfiguration** wird angezeigt.
 
-4.  Geben Sie im Feld **Name** einen Namen für die neue Konfiguration ein.
+4. Geben Sie im Feld **Name** einen Namen für die neue Konfiguration ein.
 
-5.  Wenn Sie die Eigenschafteneinstellungen aus einer bereits vorhandenen Projektkonfiguration verwenden möchten, wählen Sie eine Konfiguration aus der Dropdownliste **Copy settings from** (Einstellungen kopieren von) aus.
+5. Wenn Sie die Eigenschafteneinstellungen aus einer bereits vorhandenen Projektkonfiguration verwenden möchten, wählen Sie eine Konfiguration aus der Dropdownliste **Copy settings from** (Einstellungen kopieren von) aus.
 
-6.  Um gleichzeitig eine Projektmappen-weite Konfiguration zu erstellen, aktivieren Sie das Kontrollkästchen **Create new solution configuration** (Neue Projektmappenkonfigurationen erstellen).
+6. Um gleichzeitig eine Projektmappen-weite Konfiguration zu erstellen, aktivieren Sie das Kontrollkästchen **Create new solution configuration** (Neue Projektmappenkonfigurationen erstellen).
 
 ## <a name="rename-a-project-configuration"></a>Umbenennen einer Projektkonfiguration
 
-1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-2.  Wählen Sie in der Spalte **Projekt** das Projekt aus, das über die Projektkonfiguration verfügt, die Sie umbenennen möchten.
+2. Wählen Sie in der Spalte **Projekt** das Projekt aus, das über die Projektkonfiguration verfügt, die Sie umbenennen möchten.
 
-3.  Wählen Sie im Dropdownmenü **Konfiguration** für dieses Projekt die Option **Bearbeiten** aus.
+3. Wählen Sie im Dropdownmenü **Konfiguration** für dieses Projekt die Option **Bearbeiten** aus.
 
      Das Dialogfeld **Projektkonfigurationen bearbeiten** wird angezeigt.
 
-4.  Markieren Sie den Projektkonfigurationsnamen, den Sie ändern möchten.
+4. Markieren Sie den Projektkonfigurationsnamen, den Sie ändern möchten.
 
-5.  Wählen Sie **Umbenennen** aus, und geben Sie einen neuen Namen ein.
+5. Wählen Sie **Umbenennen** aus, und geben Sie einen neuen Namen ein.
 
 ## <a name="create-and-modify-solution-wide-build-configurations"></a>Erstellen und Ändern von Projektmappen-weiten Buildkonfigurationen
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>So erstellen Sie eine Projektmappen-weite Buildkonfiguration
 
-1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-2.  Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die Option **Neu** aus.
+2. Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die Option **Neu** aus.
 
      Das Dialogfeld **Neue Projektmappenkonfiguration** wird angezeigt.
 
-3.  Geben Sie im Textfeld **Name** einen Namen für die neue Konfiguration ein.
+3. Geben Sie im Textfeld **Name** einen Namen für die neue Konfiguration ein.
 
-4.  Wenn Sie die Einstellungen aus einer bereits vorhandenen Projektmappenkonfiguration verwenden möchten, wählen Sie eine Konfiguration aus der Dropdownliste **Copy settings from** (Einstellungen kopieren von) aus.
+4. Wenn Sie die Einstellungen aus einer bereits vorhandenen Projektmappenkonfiguration verwenden möchten, wählen Sie eine Konfiguration aus der Dropdownliste **Copy settings from** (Einstellungen kopieren von) aus.
 
-5.  Um Projektkonfigurationen gleichzeitig zu erstellen, aktivieren Sie das Kontrollkästchen **Neue Projektkonfigurationen erstellen**.
+5. Um Projektkonfigurationen gleichzeitig zu erstellen, aktivieren Sie das Kontrollkästchen **Neue Projektkonfigurationen erstellen**.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>So benennen Sie eine Projektmappen-weite Buildkonfiguration um
 
-1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-2.  Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die Option **Bearbeiten** aus.
+2. Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die Option **Bearbeiten** aus.
 
      Das Dialogfeld **Projektmappenkonfigurationen bearbeiten** wird angezeigt.
 
-3.  Markieren Sie den Namen der umzubenennenden Projektmappenkonfiguration.
+3. Markieren Sie den Namen der umzubenennenden Projektmappenkonfiguration.
 
-4.  Wählen Sie **Umbenennen** aus, und geben Sie einen neuen Namen ein.
+4. Wählen Sie **Umbenennen** aus, und geben Sie einen neuen Namen ein.
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>So ändern Sie eine Projektmappen-weite Buildkonfiguration
 
-1.  Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
-2.  Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die gesuchte Konfiguration aus.
+2. Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die gesuchte Konfiguration aus.
 
-3.  Wählen Sie im Bereich **Projektkontexte** für jedes Projekt die gewünschte **Konfiguration** und **Plattform** aus, und klicken Sie auf **Erstellen** oder **Bereitstellen**.
+3. Wählen Sie im Bereich **Projektkontexte** für jedes Projekt die gewünschte **Konfiguration** und **Plattform** aus, und klicken Sie auf **Erstellen** oder **Bereitstellen**.
 
 ## <a name="see-also"></a>Siehe auch
 

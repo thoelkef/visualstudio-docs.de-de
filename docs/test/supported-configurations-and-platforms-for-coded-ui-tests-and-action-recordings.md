@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431225"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen
 
@@ -27,7 +27,7 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 
 **Anforderungen**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Unterstützte Konfigurationen
 
@@ -40,7 +40,6 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 
 > [!NOTE]
 > Die*Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.
-
 
 ## <a name="platform-support"></a>Plattformunterstützung
 

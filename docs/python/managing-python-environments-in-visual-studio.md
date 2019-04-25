@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536754"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Erstellen und Verwalten von Python-Umgebungen in Visual Studio
 
@@ -33,7 +33,7 @@ In Visual Studio unter Windows verwenden Sie das Fenster **Python-Umgebungen** w
 Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, finden Sie das allgemeine Hintergrundwissen in den folgenden Artikeln:
 
 - [Arbeiten mit Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Installieren der Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
+- [Installieren von Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md)
 
 > [!Note]
 > Sie können Umgebungen für Python-Code nicht verwalten, der nur als Ordner über **Datei** > **Öffnen** > **Ordner** geöffnet wurde. Stattdessen [erstellen Sie ein Python-Projekt aus vorhandenem Code](quickstart-01-python-in-visual-studio-project-from-existing-code.md), um die Umgebungsfeatures von Visual Studio nutzen zu können.
@@ -270,4 +270,4 @@ Wenn Sie eine Umgebung korrigieren möchten, die über keine Reparaturoption ver
 - [Auswählen eines Interpreters für ein Projekt](selecting-a-python-environment-for-a-project.md)
 - [Verwenden von „requirements.txt“ für Abhängigkeiten](managing-required-packages-with-requirements-txt.md)
 - [Suchpfade](search-paths.md)
-- [Referenz zum Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)
+- [Das Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md)

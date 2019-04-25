@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777747"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
@@ -169,4 +169,4 @@ Verwenden Sie das Suchfeld, um nach einem gewünschten Knoten zu suchen, und ver
 In diesem Tutorial haben Sie gelernt, wie CPU-Auslastungsdaten gesammelt und analysiert werden. Wenn Sie die [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md) bereits abgeschlossen haben, sollten Sie sich einen Überblick darüber verschaffen, wie die Speicherauslastung in Ihren Apps analysiert werden kann.
 
 > [!div class="nextstepaction"]
-> [Profilerstellung zur Speicherauslastung in Visual Studio](../profiling/memory-usage.md)
+> [Profilerstellung zur Arbeitsspeicherverwendung in Visual Studio](../profiling/memory-usage.md)

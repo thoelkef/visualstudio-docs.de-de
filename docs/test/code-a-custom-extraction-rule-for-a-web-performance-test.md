@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822936"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kodieren einer benutzerdefinierten Extraktionsregel für einen Webleistungstest
 
@@ -31,24 +31,24 @@ Sie können eigene Extraktionsregeln erstellen. Leiten Sie hierzu Ihre Regeln vo
 
 ## <a name="to-create-a-custom-extraction-rule"></a>So erstellen Sie eine benutzerdefinierte Extraktionsregel
 
-1.  Öffnen Sie ein Testprojekt, das einen Webleistungstest enthält.
+1. Öffnen Sie ein Testprojekt, das einen Webleistungstest enthält.
 
-2.  (Optional) Erstellen Sie ein separates Klassenbibliotheksprojekt zum Speichern der Extraktionsregel.
+2. (Optional) Erstellen Sie ein separates Klassenbibliotheksprojekt zum Speichern der Extraktionsregel.
 
     > [!IMPORTANT]
     > Die Klasse kann im selben Projekt erstellt werden, in dem sich die Tests befinden. Wenn die Regel erneut verwendet werden soll, wird jedoch empfohlen, ein separates Klassenbibliotheksprojekt zu erstellen, in dem die Regel gespeichert wird. Wenn Sie ein separates Projekt erstellen, müssen Sie die optionalen Schritte in dieser Prozedur ausführen.
 
-3.  (Optional) Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf Microsoft.VisualStudio.QualityTools.WebTestFramework dll hinzu.
+3. (Optional) Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf Microsoft.VisualStudio.QualityTools.WebTestFramework dll hinzu.
 
-4.  Erstellen Sie eine von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>-Klasse abgeleitete Klasse. Implementieren Sie den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*>-Member und den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>-Member.
+4. Erstellen Sie eine von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>-Klasse abgeleitete Klasse. Implementieren Sie den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*>-Member und den <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>-Member.
 
-5.  (Optional) Erstellen Sie das neue Klassenbibliotheksprojekt.
+5. (Optional) Erstellen Sie das neue Klassenbibliotheksprojekt.
 
-6.  (Optional) Fügen Sie im Testprojekt einen Verweis auf das Klassenbibliotheksprojekt mit der benutzerdefinierten Extraktionsregel hinzu.
+6. (Optional) Fügen Sie im Testprojekt einen Verweis auf das Klassenbibliotheksprojekt mit der benutzerdefinierten Extraktionsregel hinzu.
 
-7.  Öffnen Sie im Testprojekt einen Webleistungstest im **Webleistungstest-Editor**.
+7. Öffnen Sie im Testprojekt einen Webleistungstest im **Webleistungstest-Editor**.
 
-8.  Um die benutzerdefinierte Extraktionsregel hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Webleistungstest-Anforderung, und wählen Sie **Extraktionsregel hinzufügen** aus.
+8. Um die benutzerdefinierte Extraktionsregel hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Webleistungstest-Anforderung, und wählen Sie **Extraktionsregel hinzufügen** aus.
 
      Das Dialogfeld **Extraktionsregel hinzufügen** wird angezeigt. Die benutzerdefinierte Validierungsregel wird in der Liste **Regel auswählen** zusammen mit den vordefinierten Validierungsregeln angezeigt. Wählen Sie die benutzerdefinierte Extraktionsregel aus, und klicken Sie auf **OK**.
 

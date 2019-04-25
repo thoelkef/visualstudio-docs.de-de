@@ -11,12 +11,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949964"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Vorgehensweise: Importieren von Auslastungstestergebnissen in ein Repository
 
@@ -28,21 +28,21 @@ Sie können Auslastungstestergebnisse aus dem Auslastungstest-Editor im Dialogfe
 
 ## <a name="to-import-results-into-a-repository"></a>So importieren Sie Ergebnisse in ein Repository
 
-1.  Öffnen Sie in einem Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
+1. Öffnen Sie in einem Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2.  Klicken Sie auf der eingebetteten Symbolleiste auf **Ergebnisse öffnen und verwalten**.
+2. Klicken Sie auf der eingebetteten Symbolleiste auf **Ergebnisse öffnen und verwalten**.
 
      Das Dialogfeld **Auslastungstestergebnisse öffnen und verwalten** wird angezeigt.
 
-3.  Wählen Sie in **Controllernamen für die Suche nach Auslastungstestergebnissen eingeben** einen Controller aus. Wählen Sie **\<lokal>** aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
+3. Wählen Sie in **Controllernamen für die Suche nach Auslastungstestergebnissen eingeben** einen Controller aus. Wählen Sie **\<lokal>** aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
 
      Wenn Auslastungstestergebnisse verfügbar sind, werden diese in der Liste **Auslastungstestergebnisse** angezeigt. Die Spalten lauten **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description** (Zeit, Dauer, Benutzer, Ergebnis, Test und Beschreibung). Unter **Test** ist der Name des Tests und unter **Beschreibung** die optionale Beschreibung angegeben, die vor der Ausführung des Tests hinzugefügt werden kann.
 
-4.  Wählen Sie **Importieren** aus.
+4. Wählen Sie **Importieren** aus.
 
      Das Dialogfeld **Auslastungstestergebnisse importieren** wird angezeigt.
 
-5.  Geben Sie im Feld **Dateiname** den Namen einer archivierten Testergebnisdatei ein, und klicken Sie dann auf **Öffnen**.
+5. Geben Sie im Feld **Dateiname** den Namen einer archivierten Testergebnisdatei ein, und klicken Sie dann auf **Öffnen**.
 
      \- oder –
 

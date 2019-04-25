@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553624"
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 
@@ -31,7 +31,7 @@ In der Regel repliziert der lokale Computer die Ausführung der installierten Ap
 >[!NOTE]
 >Für die Verwendung des [Leistungsprofilers](../profiling/profiling-feature-tour.md) ist Windows 7 oder höher erforderlich.
 
-##  <a name="collect-cpu-usage-data"></a>Erfassen von CPU-Auslastungsdaten
+## <a name="collect-cpu-usage-data"></a>Erfassen von CPU-Auslastungsdaten
 
 1. Legen Sie im Visual Studio-Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Computer** aus.
 
@@ -51,7 +51,6 @@ In der Regel repliziert der lokale Computer die Ausführung der installierten Ap
 
    ![CPU-Auslastungsbericht](../profiling/media/cpu_use_wt_report.png "CPU Usage report")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>Analysieren des CPU-Auslastungsberichts
 
 Der Diagnosebericht wird nach **CPU gesamt** vom höchsten zum niedrigsten Wert sortiert. Ändern Sie die Sortierreihenfolge oder sortieren Sie eine Spalte, indem Sie auf die Spaltenüberschrift klicken. Verwenden Sie die Dropdownliste **Filter**, um das Anzeigen von Threads zu aktivieren bzw. deaktivieren. Verwenden Sie das Feld **Suchen**, um nach einem bestimmten Thread oder Knoten zu suchen.
@@ -60,7 +59,7 @@ Der Diagnosebericht wird nach **CPU gesamt** vom höchsten zum niedrigsten Wert 
 Ab Visual Studio 2019 können Sie auf die Schaltflächen **Langsamsten Pfad erweitern**  und **Langsamsten Pfad anzeigen** klicken, um die Funktionsaufrufe anzuzeigen, die den höchsten Prozentsatz der CPU in der Ansicht der Aufrufstruktur verwenden.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> Datenspalten der CPU-Auslastung
+### <a name="BKMK_Call_tree_data_columns"></a> Datenspalten der CPU-Auslastung
 
 |||
 |-|-|
@@ -68,11 +67,11 @@ Ab Visual Studio 2019 können Sie auf die Schaltflächen **Langsamsten Pfad erwe
 |**Eigen-CPU [Einheit, %]**|![Eigen % Gleichung](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Die Millisekunden und der prozentuale CPU-Anteil, der im ausgewählten Zeitbereich durch Aufrufe der Funktion verwendet wurde. Die von der Funktion aufgerufenen Funktionen sind dabei ausgeschlossen.|
 |**Modul**|Der Name des Moduls, das die Funktion enthält.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Die Aufrufstruktur der CPU-Auslastung
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Die Aufrufstruktur der CPU-Auslastung
 
 Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knoten aus. Es öffnet sich die Seite **CPU-Auslastung** in der Ansicht **Aufrufer/Aufgerufener**. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option **Aufrufstruktur** aus.
 
-####  <a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur
+#### <a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur
 
 ::: moniker range=">=vs-2019"
 ![Struktur der Aufrufstruktur](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Call tree structure")
@@ -88,7 +87,7 @@ Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knote
 |![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Die untergeordneten Elemente des Knotens der zweiten Ebene sind die Benutzercodemethoden und asynchronen Routinen, die vom System- und Frameworkcode der zweiten Ebene aufgerufen oder erstellt werden.|
 |![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Untergeordnete Knoten einer Methode enthalten nur Daten für die Aufrufe der übergeordneten Methode. Wenn **Externen Code anzeigen** deaktiviert ist, können App-Methoden auch den Knoten **[Externer Code]** enthalten.|
 
-####  <a name="BKMK_External_Code"></a> Externer Code
+#### <a name="BKMK_External_Code"></a> Externer Code
 
 System- und Frameworkfunktionen, die von Ihrem Code ausgeführt werden, werden als *externer Code* bezeichnet. Funktionen mit externem Code starten und beenden die App, zeichnen die Benutzeroberfläche, steuern das Threading und stellen der App weitere Dienste auf unterer Ebene bereit. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die Aufrufstruktur „CPU-Auslastung“ die externen Funktionen einer Benutzermethode in einem **[Externer Code]**-Knoten sammelt.
 
@@ -109,7 +108,7 @@ Verwenden Sie das Suchfeld, um einen Funktionsnamen zu finden. Zeigen Sie auf di
 ![Suche nach verschachteltem externem Code](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchrone Funktionen in der Aufrufstruktur der CPU-Auslastung
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchrone Funktionen in der Aufrufstruktur der CPU-Auslastung
 
  Wenn der Compiler auf eine asynchrone Methode trifft, erstellt er eine versteckte Klasse zum Steuern der Ausführung der Methode. Vom Konzept her ist die Klasse ein Zustandsautomat. Die Klasse verfügt über vom Compiler generierte Funktionen, die die ursprünglichen Methoden sowie die Rückrufe, Planer und Iteratoren, die für deren Ausführung erforderlich sind, asynchron aufrufen. Wenn eine übergeordnete Methode die ursprüngliche Methode aufruft, entfernt der Compiler die Methode aus dem Ausführungskontext der übergeordneten Methode und führt die Methoden der ausgeblendeten Klasse im Kontext des System- und Frameworkcodes durch, der die Ausführung der App steuert. Die asynchronen Methoden werden oft, jedoch nicht immer, in einem oder mehreren verschiedenen Threads ausgeführt. Dieser Code wird in der Aufrufstruktur **CPU-Auslastung** als untergeordnete Elemente des Knotens **[Externer Code]** direkt unter dem obersten Knoten der Struktur angezeigt.
 

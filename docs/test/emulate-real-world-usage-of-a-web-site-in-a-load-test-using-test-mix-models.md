@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785735"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells
 
@@ -28,18 +28,18 @@ Mit dem Auslastungstest-Editor oder dem Assistenten für Testmischungsmodelle k�
 
 Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungstestszenario angeben:
 
--   **Auf Grundlage der Gesamtzahl der Tests:** Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert. Weitere Informationen finden Sie in [Prozentsatz nach gestarteten Tests](#BasedOnTestsStarted).
+- **Auf Grundlage der Gesamtzahl der Tests:** Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert. Weitere Informationen finden Sie in [Prozentsatz nach gestarteten Tests](#BasedOnTestsStarted).
 
--   **Auf Grundlage der Anzahl der virtuellen Benutzer:** Bestimmt den Prozentsatz von virtuellen Benutzern, die einen bestimmten Webleistungs- oder Komponententest ausführen werden. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, mit der zugewiesenen Verteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf dem Prozentsatz von Benutzern, die einen bestimmten Test ausführen, basiert. Weitere Informationen finden Sie unter [Prozentsatz nach virtuellen Benutzern](#PercentageBasedonVirtualUsers).
+- **Auf Grundlage der Anzahl der virtuellen Benutzer:** Bestimmt den Prozentsatz von virtuellen Benutzern, die einen bestimmten Webleistungs- oder Komponententest ausführen werden. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, mit der zugewiesenen Verteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf dem Prozentsatz von Benutzern, die einen bestimmten Test ausführen, basiert. Weitere Informationen finden Sie unter [Prozentsatz nach virtuellen Benutzern](#PercentageBasedonVirtualUsers).
 
--   **Auf Grundlage der Benutzergeschwindigkeit:** Im Verlauf des Auslastungstests wird jeder Webleistungstest oder Komponententest so oft wie angegeben pro Benutzer und pro Stunde ausgeführt. Verwenden Sie dieses Testmischungsmodell, wenn Sie möchten, dass virtuelle Benutzer im Laufe des Auslastungstests Tests mit einer bestimmten Geschwindigkeit ausführen. Weitere Informationen finden Sie unter [Bestimmen der Geschwindigkeit bei der Testmischung](#PacingTestMix).
+- **Auf Grundlage der Benutzergeschwindigkeit:** Im Verlauf des Auslastungstests wird jeder Webleistungstest oder Komponententest so oft wie angegeben pro Benutzer und pro Stunde ausgeführt. Verwenden Sie dieses Testmischungsmodell, wenn Sie möchten, dass virtuelle Benutzer im Laufe des Auslastungstests Tests mit einer bestimmten Geschwindigkeit ausführen. Weitere Informationen finden Sie unter [Bestimmen der Geschwindigkeit bei der Testmischung](#PacingTestMix).
 
     > [!TIP]
     > Wann wählen Sie **Testmischungsprozentsatz** und wann **Prozentsatz nach virtuellen Benutzern** aus? Der Unterschied zwischen diesen beiden Auswahlmöglichkeiten kommt zum Tragen, wenn einige Tests in der Testmischung länger dauern als andere Tests. In dieser Situation sollten Sie vorzugsweise **Prozentsatz nach virtuellen Benutzern** auswählen. Durch diese Auswahl können Sie einen Testlauf vermeiden, bei dem eine hohe Wahrscheinlichkeit besteht, dass zu viele Benutzer Tests von langer Dauer ausführen. Wenn die Tests jedoch alle eine ähnliche Dauer haben, ist die Auswahl von **Testmischungsprozentsatz** sicherer.
 
--   **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequenzielle Reihenfolge](#SequentialOrder).
+- **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist. Weitere Informationen finden Sie unter [Sequenzielle Reihenfolge](#SequentialOrder).
 
-###  <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
+### <a name="BasedOnTestsStarted"></a> Prozentsatz nach gestarteten Tests
  Für jeden Test in der Mischung können Sie einen Prozentsatz angeben, durch den bestimmt wird, wie häufig der Test als nächster Test zur Ausführung ausgewählt wird. Beispielsweise können die folgenden Prozentsatzwerte drei Tests zugewiesen werden:
 
 - TestA (50 %)
@@ -50,10 +50,10 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
   Wenn Sie diese Einstellung verwenden, basiert der nächste zu startende Test auf den zugewiesenen Prozentsätzen. Dabei wird die Anzahl der virtuellen Benutzer, die die einzelnen Tests gerade ausführen, nicht berücksichtigt.
 
-###  <a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
+### <a name="PercentageBasedonVirtualUsers"></a> Prozentsatz nach virtuellen Benutzern
  Dieses Testmischungsmodell bestimmt den Prozentsatz virtueller Benutzer, die einen bestimmten Test ausführen. Wenn Sie dieses Testmischungsmodell verwenden, basiert der nächste zu startende Test nicht nur auf den zugewiesenen Prozentsätzen, sondern auch auf dem Prozentsatz der virtuellen Benutzer, die derzeit einen bestimmten Test ausführen. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, so genau wie möglich mit der zugewiesenen Verteilung überein.
 
-###  <a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
+### <a name="PacingTestMix"></a> Bestimmen der Geschwindigkeit bei der Testmischung
  Wenn Sie eine Geschwindigkeit für die Testmischung angeben, legen Sie für jeden Test in der Testmischung und für jeden virtuellen Benutzer eine Testausführungsgeschwindigkeit fest. Diese Geschwindigkeit wird für jeden Test durch die Anzahl von Tests ausgedrückt, die pro Stunde von jedem virtuellen Benutzer ausgeführt werden. Beispielsweise können Sie diesen Tests folgende Geschwindigkeiten bei der Testmischung zuweisen:
 
 - Test A: 4 Tests pro Benutzer und Stunde
@@ -79,11 +79,11 @@ Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungst
 
   Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-###  <a name="SequentialOrder"></a> Sequenzielle Reihenfolge
+### <a name="SequentialOrder"></a> Sequenzielle Reihenfolge
  Wenn die Option "Basierend auf sequenzieller Testreihenfolge" aktiviert ist, führt jeder virtuelle Benutzer alle Tests in dem Szenario in der Reihenfolge aus, in der die Tests definiert wurden.
 
 ## <a name="test-iterations-property"></a>Eigenschaft „Testiterationen“
- In den Laufzeiteinstellungseigenschaften können Sie einen Wert für die Testiterationen-Eigenschaft angeben. Dieser Wert entspricht der Anzahl von Testiterationen, die in einem Auslastungstest ausgeführt werden sollen. Nachdem die angegebene Anzahl von Testiterationen gestartet wurde, werden unabhängig von den Einstellungen beliebiger Auslastungsprofile keine zusätzlichen Testiterationen gestartet. Nachdem die angegebene Anzahl der Testiterationen abgeschlossen wurde, wird der Auslastungstest beendet. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+ In den Testlaufeinstellungseigenschaften können Sie einen Wert für die Testiterationen-Eigenschaft angeben. Dieser Wert entspricht der Anzahl von Testiterationen, die in einem Auslastungstest ausgeführt werden sollen. Nachdem die angegebene Anzahl von Testiterationen gestartet wurde, werden unabhängig von den Einstellungen beliebiger Auslastungsprofile keine zusätzlichen Testiterationen gestartet. Nachdem die angegebene Anzahl der Testiterationen abgeschlossen wurde, wird der Auslastungstest beendet. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Initialisierungs- und Beendigungstests
  Sie können Tests auswählen, die am Anfang und Ende der Auslastungstestsitzung jedes virtuellen Benutzers ausgeführt werden sollen. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
