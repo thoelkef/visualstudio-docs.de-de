@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren einer netzwerkbasierten Installation
 description: Erfahren Sie, wie Sie eine netzwerkbasierte Installation von Visual Studio mit dem Befehl „--layout“ aktualisieren.
-ms.date: 2/22/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475980"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790406"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualisieren einer netzwerkbasierten Installation von Visual Studio
 
@@ -30,44 +30,55 @@ Es ist möglich, ein Layout für die Netzwerkinstallation von Visual Studio mit 
 
 Wenn Sie die Netzwerkinstallationsfreigabe mit den neuesten Updates aktualisieren möchten, führen Sie den Befehl `--layout` aus, um aktualisierte Pakete schrittweise herunterzuladen.
 
-**Neues in 15.3:** Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert.  Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben. Wenn Sie jedoch ein Layout einer früheren Version verwenden, sollten Sie dieselben Befehlszeilenparameter verwenden, die Sie beim ersten Erstellen des Layouts für die Netzwerkinstallation verwendet haben (d.h. dieselben Workloads und Sprachen), um den Inhalt zu aktualisieren.
+::: moniker range="vs-2017"
 
-Wenn Sie ein Layout in einer Dateifreigabe hosten, sollten Sie eine private Kopie des Layouts aktualisieren (z.B. c:\vs2017offline) und diese, nachdem alle aktualisierten Inhalte heruntergeladen wurden, in Ihre Dateifreigabe kopieren (z.B. \\server\products\VS2017). Wenn Sie dies nicht tun, ist es wahrscheinlicher, dass Benutzer, die das Setup ausführen, während Sie das Layout aktualisieren, nicht alle Inhalte aus dem Layout erhalten, da es noch nicht vollständig aktualisiert wurde.
+**Neues in 15.3:** Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert. Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben. Wenn Sie jedoch ein Layout einer früheren Version verwenden, sollten Sie dieselben Befehlszeilenparameter verwenden, die Sie beim ersten Erstellen des Layouts für die Netzwerkinstallation verwendet haben (d.h. dieselben Workloads und Sprachen), um den Inhalt zu aktualisieren.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wenn Sie beim Erstellen des Netzwerklayouts ein partielles Layout ausgewählt haben, werden diese Einstellungen gespeichert. Alle zukünftigen Layoutbefehle verwenden die vorherigen Optionen und alle neuen, die Sie angeben.
+
+::: moniker-end
+
+Wenn Sie ein Layout in einer Dateifreigabe hosten, sollten Sie eine private Kopie des Layouts aktualisieren (z. B. c:\vsoffline) und diese, nachdem alle aktualisierten Inhalte heruntergeladen wurden, in Ihre Dateifreigabe kopieren (z. B. \\server\products\VS). Wenn Sie dies nicht tun, ist es wahrscheinlicher, dass Benutzer, die das Setup ausführen, während Sie das Layout aktualisieren, nicht alle Inhalte aus dem Layout erhalten, da es noch nicht vollständig aktualisiert wurde.
 
 Hier finden Sie einige ausführliche Beispiele für das Erstellen und Aktualisieren eines Layouts:
 
 * Hier ist erst einmal ein Beispiel für die Erstellung eines Layouts mit nur einer Workload für Englisch:
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * So aktualisieren Sie dasselbe Layout auf eine neuere Version. Sie müssen dazu keine zusätzlichen Befehlszeilenparameter angeben. Die vorherigen Einstellungen wurden gespeichert und werden durch nachfolgende Layoutbefehle in diesem Layoutordner verwendet.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout
+  vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * So ändern Sie Ihr Layout unbeaufsichtigt in eine neuere Version. Der Layoutvorgang führt den Setupprozess in einem neuen Konsolenfenster aus. Das Fenster bleibt geöffnet, sodass sich die Benutzer das endgültige Ergebnis und ggf. eine Zusammenfassung der aufgetretenen Fehler ansehen können. Wenn Sie einen Layoutvorgang unbeaufsichtigt durchführen (wenn Sie z.B. über ein Skript verfügen, das regelmäßig ausgeführt wird, um ihr Layout auf die aktuelle Version zu aktualisieren), verwenden Sie den Parameter `--passive`, und der Vorgang schließt das Fenster automatisch.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --passive
+  vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* So fügen Sie eine zusätzliche Workload und lokalisierte Sprachen hinzu.  (Mit diesem Befehl wird die Azure-Workload hinzugefügt.)  Nun sind sowohl der verwaltete Desktop und Azure in diesem Layout enthalten.  Die Sprachressourcen für Englisch und Deutsch sind für all diese Workloads enthalten.  Außerdem wird das Layout auf die neueste Version aktualisiert.
+* So fügen Sie eine zusätzliche Workload und lokalisierte Sprachen hinzu.  (Mit diesem Befehl wird die Workload *Azure-Entwicklung* hinzugefügt.)  Nun sind sowohl der verwaltete Desktop und Azure in diesem Layout enthalten.  Die Sprachressourcen für Englisch und Deutsch sind für all diese Workloads enthalten.  Außerdem wird das Layout auf die neueste Version aktualisiert.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > Ein Updatevorgang installiert keine neu hinzugefügten optionalen Komponenten, auch wenn Sie diese in den add-Abschnitt einer [Antwortdatei](automated-installation-with-response-file.md) einfügen. Das liegt daran, dass der add-Vorgang während eines Updates nicht verwendet wird.<br>
+    > Ein Updatevorgang installiert keine neu hinzugefügten optionalen Komponenten, auch wenn Sie diese in den add-Abschnitt einer [Antwortdatei](automated-installation-with-response-file.md) einfügen. Das liegt daran, dass der add-Vorgang während eines Updates nicht verwendet wird.
+    >
     > **Problemumgehung:** Führen Sie einen separaten modify-Vorgang nach einem Upgrade aus, um die fehlenden Komponenten zu installieren.
 
-* Und so wird eine zusätzliche Workload und die lokalisierte Sprache hinzugefügt, ohne die Version zu aktualisieren. (Mit diesem Befehl wird die ASP.NET & Web-Workload hinzugefügt.)  Nun sind der verwaltete Desktop, Azure und die ASP.NET & Web-Workloads in diesem Layout enthalten. Die Sprachressourcen für Englisch, Deutsch und Französisch sind auch für all diese Workloads enthalten.  Das Layout wurde bei der Ausführung dieses Befehls jedoch nicht auf die neueste verfügbare Version aktualisiert. Es bleibt weiterhin in der vorhandenen Version.
+* Und so wird eine zusätzliche Workload und die lokalisierte Sprache hinzugefügt, ohne die Version zu aktualisieren. (Mit diesem Befehl wird die Workload *ASP.NET und Webentwicklung* hinzugefügt.)  Nun sind der verwaltete Desktop, Azure und die ASP.NET & Webentwicklungsworkloads in diesem Layout enthalten. Die Sprachressourcen für Englisch, Deutsch und Französisch sind auch für all diese Workloads enthalten.  Das Layout wurde bei der Ausführung dieses Befehls jedoch nicht auf die neueste verfügbare Version aktualisiert. Es bleibt weiterhin in der vorhandenen Version.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>Gewusst wie: Bereitstellen eines Updates auf Clientcomputern
@@ -78,9 +89,22 @@ Je nach Konfiguration Ihrer Netzwerkumgebung kann ein Update entweder von einem 
   * Führen Sie den Visual Studio-Installer aus.
   * Klicken Sie auf **Aktualisieren**.
 
+::: moniker range="vs-2017"
+
 * Administratoren können Clientbereitstellungen von Visual Studio ohne Benutzereingriff mit zwei separaten Befehlen aktualisieren:
   * Aktualisieren Sie zunächst den Visual Studio-Installer: <br>```vs_enterprise.exe --quiet --update```
   * Aktualisieren Sie anschließend die Visual Studio-Anwendung selbst: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* Administratoren können Clientbereitstellungen von Visual Studio ohne Benutzereingriff mit zwei separaten Befehlen aktualisieren:
+  * Aktualisieren Sie zunächst den Visual Studio-Installer: <br>```vs_enterprise.exe --quiet --update```
+  * Aktualisieren Sie anschließend die Visual Studio-Anwendung selbst: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 
 > [!NOTE]
 > Verwenden Sie den Befehl [vswhere.exe](tools-for-managing-visual-studio-instances.md), um den Installationspfad einer vorhandenen Instanz von Visual Studio auf einem Clientcomputer zu bestimmen.
@@ -99,7 +123,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 Die Datei „vs_enterprise.exe“ kann innerhalb von „layoutDir“ aufgerufen werden.
 
 > [!NOTE]
-> Einige wichtige Metadatendateien, die für die Option `--verify` erforderlich sind, müssen im Layoutofflinecache vorhanden sein. Wenn diese Metadatendateien fehlen, kann "--verify" nicht ausgeführt werden, und das Setup gibt einen Fehler aus. Wenn dieser Fehler bei Ihnen auftritt, erstellen Sie ein neues Offlinelayout in einem anderen Ordner (oder im selben Offlinecacheordner). Führen Sie dazu den gleichen Layoutbefehl aus, mit dem Sie das anfängliche Offlinelayout erstellt haben. Beispielsweise `Vs_enterprise.exe --layout <layoutDir>`.
+> Einige wichtige Metadatendateien, die für die Option `--verify` erforderlich sind, müssen im Layoutofflinecache vorhanden sein. Wenn diese Metadatendateien fehlen, kann "--verify" nicht ausgeführt werden, und das Setup gibt einen Fehler aus. Wenn dieser Fehler bei Ihnen auftritt, erstellen Sie ein neues Offlinelayout in einem anderen Ordner (oder im selben Offlinecacheordner). Führen Sie dazu den gleichen Layoutbefehl aus, mit dem Sie das anfängliche Offlinelayout erstellt haben. Beispielsweise `vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft liefert in regelmäßigen Abständen Updates für Visual Studio. Ihr neues Layout hat möglicherweise nicht die gleiche Version wie das anfängliche Layout.
 
@@ -137,7 +161,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 Sie können „vs_enterprise.exe“ auch innerhalb von &lt;layoutDir&gt; aufrufen. Im Folgenden ein Beispiel:
 
 ```cmd
-c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
+c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
 Wenn Sie diesen Befehl ausführen, analysiert das Setup Ihren Offlinecacheordner, um die Liste der Dateien zu suchen, die entfernt werden. Sie haben dann die Gelegenheit, die Dateien, die gelöscht werden sollen, zu überprüfen und den Löschvorgang zu bestätigen.

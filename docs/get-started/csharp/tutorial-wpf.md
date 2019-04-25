@@ -2,7 +2,8 @@
 title: 'Tutorial: „Hallo Welt“-App mit Windows Presentation Foundation (WPF) in C#'
 description: Erstellen Sie eine einfache Windows Desktop.NET-App in C# mit Visual Studio mit dem Windows Presentation Foundation (WPF) UI-Framework.
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 03/28/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325187"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856874"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
@@ -28,7 +29,7 @@ In diesem Tutorial lernen Sie sich viele Tools, Dialogfelder und Designer kennen
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Konfigurieren der IDE
@@ -47,7 +48,7 @@ Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten u
 
 ::: moniker range=">=vs-2019"
 
-Wenn Sie Visual Studio starten, wird zunächst das Startfenster geöffnet. Klicken Sie auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+Wenn Sie Visual Studio starten, wird zunächst das Startfenster geöffnet. Klicken Sie auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen. Ihnen werden Toolfenster, Menüs und Symbolleisten sowie das Hauptfenster angezeigt. Toolfenster werden auf der linken und rechten Seite des Anwendungsfensters angedockt und enthalten oben ein Suchfeld, die Menüleiste und die Standardsymbolleiste. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
 ::: moniker-end
 
@@ -55,41 +56,54 @@ Wenn Sie Visual Studio starten, wird zunächst das Startfenster geöffnet. Klick
 
 Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein Projekt und eine Projektmappe. In diesem Beispiel erstellen Sie eine Windows Presentation Foundations-Projektmappe (WPF).
 
+::: moniker range="vs-2017"
+
 1. Erstellen Sie ein neues Projekt. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-     ::: moniker range="vs-2017"
      ![Wählen Sie auf der Menüleiste "Datei", "Neu", "Projekt" aus.](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     [Wählen Sie in der Menüleiste „Datei > Neu > Projekt“ aus.](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
-2. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual C#** > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**, und wählen Sie **OK** aus.
+1. Klicken Sie im Dialogfeld **Neues Projekt** auf **Installiert** > **Visual C#** > **Windows-Desktop**, und wählen Sie anschließend die Vorlage **WPF-App (.NET Framework)** aus. Nennen Sie das Projekt **HelloWPFApp**, und wählen Sie **OK** aus.
 
      ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/exploreide-newprojectcsharp.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-2. Suchen Sie auf dem Bildschirm **Neues Projekt erstellen** nach „WPF“, und wählen Sie **WPF-App (.NET Framework)** und anschließend **Weiter** aus.
-
-   ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
-
-3. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
-::: moniker-end
 
 Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
 
-::: moniker range="vs-2017"
 ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/vs-2019/exploreide-hellowpfappfiles.png)
-::: moniker-end
 
 > [!NOTE]
 > Weitere Informationen zu XAML (eXtensible Application Markup Language) finden Sie auf der Seite [Übersicht über XAML für WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Eigenschaften** (Menü **Ansicht** ) können Sie Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen und ändern.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Öffnen Sie Visual Studio 2019.
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/start-window-create-new-project.png)
+
+
+2. Suchen Sie auf dem Bildschirm **Neues Projekt erstellen** nach „WPF“, und wählen Sie **WPF-App (.NET Framework)** und anschließend **Weiter** aus.
+
+   ![Screenshot: Vorlage für eine WPF-App im Dialogfeld „Neues Projekt erstellen“](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
+
+3. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
+
+   ![Screenshot: Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ mit „HelloWPFApp“](./media/vs-2019/exploreide-nameproject.png)
+
+Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
+
+![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
+> [!NOTE]
+> Weitere Informationen zu XAML (eXtensible Application Markup Language) finden Sie auf der Seite [Übersicht über XAML für WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
+
+Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Wählen Sie dazu im Menü **Ansicht** die Option **Eigenschaftenfenster** aus. Sie können dann die Optionen für Projektelemente, Steuerelemente und andere Elemente in einer Anwendung anzeigen lassen und ändern.
+
+::: moniker-end
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Ändern des Namens der Datei „MainWindow.xaml“
 
@@ -109,7 +123,7 @@ Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein <xref:Sys
 
 ### <a name="add-a-textblock-control"></a>Hinzufügen eines TextBlock-Steuerelements
 
-1. Drücken Sie **STRG**+**Q**, um **Schnellstart** aufzurufen, und geben Sie **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
+1. Geben Sie **STRG**+**Q** ein, um das Suchfeld zu aktivieren, und geben Sie dort den Begriff **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
 
 2. Erweitern Sie in der **Toolbox** den Knoten **Häufig verwendete WPF-Steuerelemente**, damit das TextBlock-Steuerelement angezeigt wird.
 

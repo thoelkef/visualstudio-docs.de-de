@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324080"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790679"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -102,22 +102,24 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ::: moniker-end
 
-- [Schnellstart](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Suchfeld
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld **Schnellstart** finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert **Schnellstart** Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
 
    > [!TIP]
-   > Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld **Schnellstart** zu wechseln.
+   > Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
 
    ::: moniker range="vs-2017"
 
    ![Suchfeld „Schnellstart“ in Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Weitere Informationen finden Sie unter [Schnellstart](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Suchfeld „Schnellstart“ in Visual Studio 2019](media/vs-2019/quick-launch.png)
+   ![Screenshot: Suchfeld in Visual Studio 2019](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 
@@ -281,7 +283,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Im Dialogfeld **Neues Projekt** werden mehrere *Projektvorlagen* angezeigt. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
 
-1. Wählen Sie unterhalb von **Visual Basic**die Kategorie**.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)**. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
+1. Wählen Sie unterhalb von **Visual Basic** die Kategorie **.NET Core** aus, und wählen Sie dann die Vorlage **Konsolen-App (.NET Core)**. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
 
    ![.NET Core-App-Vorlage](media/overview-npd.png)
 

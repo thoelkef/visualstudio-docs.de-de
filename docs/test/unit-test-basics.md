@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416369"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647413"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -78,7 +78,7 @@ Der nun vorliegende Code kann getestet werden.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Erstellen von Komponententestprojekten und Testmethoden
 
-Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen.
+Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen. Wenn Sie Komponententests mit dem Framework eines Drittanbieters erstellen möchten, muss eine dieser Erweiterungen installiert sein: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) oder [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generieren des Komponententestprojekts und der Komponententest-Stubs
 
@@ -88,7 +88,7 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
 
 2. Klicken Sie auf **OK**, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Benennen des Komponententestprojekts und der Komponententests jedoch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
 
-    ![Mit der rechten Maustaste in den Editor klicken und „Komponententests erstellen“ auswählen](../test/media/createunittestsdialog.png)
+    ![Screenshot: Dialogfeld „Komponententests erstellen“ in Visual Studio](../test/media/create-unit-tests.png)
 
 3. Die Komponententest-Stubs werden in einem neuen Komponententestprojekt für alle Methoden in der Klasse erstellt.
 

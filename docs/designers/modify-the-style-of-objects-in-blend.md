@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955309"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647452"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 
@@ -20,7 +20,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
 
 Wenn Sie Einstellungen oder Gruppen von Einstellungen erneut verwendet werden, erstellen Sie eine wieder verwendbare Ressource. Dies könnte ein *Stil*, eine *Vorlage* oder etwas so einfaches wie eine benutzerdefinierte Farbe sein. Sie können auch ein Steuerelement unterschiedlich basierend auf seine Status anzeigen. Beispielsweise wird eine Schaltfläche grün, wenn der Benutzer darauf klickt.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinsel: Aussehen eines Objekts ändern
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinsel: Ändern des Aussehens eines Objekts
 
 Anwenden eines Pinsels bei einem Objekt, dessen Darstellung geändert werden soll.
 
@@ -78,15 +78,15 @@ Im Dialogfeld **Stilressource erstellen** können Sie entweder den Stil oder die
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Anwenden von Stilen oder Vorlagen für ein Steuerelement
 
-Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), wählen Sie **Vorlage bearbeiten** und dann **Ressource anwenden**.
+Klicken Sie mit der rechten Maustaste auf ein Objekt im Fenster [Objekte und Zeitachsen](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), und wählen Sie **Vorlage bearbeiten** und dann **Ressource anwenden** aus.
 
 ![Menü „Ressource anwenden“](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements
 
-Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
+Wählen Sie das Steuerelement aus, und suchen Sie im Fenster [Eigenschaften](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie erst auf **Erweiterte Optionen** und dann im Kontextmenü auf **Zurücksetzen**.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf deren Status
+## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf dessen Status
 
 Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie können eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.
 
@@ -94,7 +94,7 @@ Steuerelemente können über unterschiedliche visuelle Darstellungen basierend a
 
 **Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Verwalten des Zustands der WPF-Steuerelemente](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressourcen: Farben, Stile und Vorlagen erstellen und später erneut verwenden
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressourcen: Erstellen von Farben, Stilen und Vorlagen und deren spätere Wiederverwendung
 
 Sie können fast alles in Ihrem Projekt in eine Ressource konvertieren. Eine Ressource ist ein Objekt, das an unterschiedlichen Stellen in Ihrer Anwendung wiederverwendet werden kann. Sie können z. B. eine Farbe einmal erstellen, sie in eine Ressource konvertieren und dann diese Farbe auf mehrere Objekte anwenden. Um die Farbe aller dieser Objekte zu ändern, ändern Sie einfach die Farbressource.
 

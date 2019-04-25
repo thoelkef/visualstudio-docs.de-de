@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504418"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen für das Debuggen
@@ -48,7 +48,7 @@ Sie können festlegen, dass die folgenden **allgemeine** Optionen:
 
 Unter Umständen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Code in abgefangen `mscorlib` und nicht von der common Language Runtime. Diese Option beeinträchtigt nicht das Unterbrechen bei von `mscorlib` aufgefangenen Ausnahmen.
 
-**Debugging auf Adressebene aktivieren**: Aktiviert erweiterte Funktionen für das Debuggen auf Adressebene (das Fenster Disassembly, das Fenster **Register** und Adresshaltepunkte).
+**Debugging auf Adressebene aktivieren**: Aktiviert erweiterte Funktionen für das Debuggen auf Adressebene (das Fenster **Disassembly**, das Fenster **Register** und Adresshaltepunkte).
 
 - **Disassembly anzeigen, wenn die Quelle nicht verfügbar ist**:   Zeigt automatisch die **Disassembly** Fenster beim Debuggen von Code für die die Quelle nicht verfügbar ist.
 
@@ -74,7 +74,7 @@ Unter Umständen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Code in 
 **Quellserverunterstützung aktivieren**: Weist den Visual Studio-Debugger an, die Quelldateien aus den Quellservern abzurufen, die das SrcSrv-Protokoll (`srcsrv.dll`) implementieren. Team Foundation Server und die Debugtools für Windows sind zwei Quellserver, die das Protokoll implementieren. Weitere Informationen zum SrcSrv-Setup finden Sie unter den [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) Dokumentation. Darüber hinaus finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 > [!IMPORTANT]
-> Da das Lesen von PDB-Dateien beliebigen Code in den Dateien ausführen kann, vergewissern Sie sich, dass Sie dem Server vertrauen können.
+> Da das Lesen von *PDB*-Dateien beliebigen Code in den Dateien ausführen kann, vergewissern Sie sich, dass Sie dem Server vertrauen können.
 
 - **Diagnosemeldungen für Quellserver im Ausgabefenster drucken**:   Wenn die Quellserverunterstützung aktiviert ist, aktiviert diese Einstellung die diagnostische Anzeige.
 
@@ -93,7 +93,7 @@ Unter Umständen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Code in 
 
 **Quelldateien müssen exakt mit der Originalversion übereinstimmen**: Fordert den Debugger auf, zu prüfen, ob die Quelldatei mit der Version des Quellcodes übereinstimmt, mit dem die ausführbare Datei erstellt wurde, die Sie debuggen. Wenn die Version nicht übereinstimmt, werden Sie aufgefordert, eine übereinstimmende Quelle zu suchen. Wenn keine übereinstimmende Quelle gefunden wird, wird der Quellcode während des Debuggens nicht angezeigt.
 
-**Gesamten Text aus Ausgabefenster an das Direktfenster umleiten**: Sendet alle Debuggermeldungen, die normalerweise im Ausgabefenster angezeigt werden, an das **Direktfenster**.
+**Gesamten Text aus Ausgabefenster an das Direktfenster umleiten**: Sendet alle Debuggermeldungen, die normalerweise im **Ausgabefenster** angezeigt werden, an das **Direktfenster**.
 
 **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen**: Deaktiviert alle Anpassungen von Objektstrukturansichten. Weitere Informationen zu ansichtsanpassungen finden Sie unter [Erstellen benutzerdefinierter Ansichten von verwalteten Objekten](../debugger/create-custom-views-of-dot-managed-objects.md).
 
