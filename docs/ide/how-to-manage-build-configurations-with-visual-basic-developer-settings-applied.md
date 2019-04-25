@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4f1ef20a376c0f77f8ecbbea87ad9769870d60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430290"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Vorgehensweise: Verwalten von Buildkonfigurationen mit aktivierten Visual Basic Developer-Einstellungen
 
@@ -29,16 +29,16 @@ Standardmäßig werden alle Optionen für die Buildkonfiguration ausgeblendet, w
 
 Standardmäßig blenden die Visual Basic-Entwicklereinstellungen die Option aus, das Dialogfeld **Konfigurations-Manager** und die Listen **Konfiguration** und **Plattform** im [Projekt-Designer](../ide/reference/application-page-project-designer-visual-basic.md) zu öffnen.
 
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.
+1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2.  Erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
+2. Erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.
 
     > [!NOTE]
     > Der Knoten **Allgemein** ist auch sichtbar, wenn die Option **Alle Einstellungen anzeigen** deaktiviert ist. Wenn Sie alle verfügbaren Optionen anzeigen möchten, klicken Sie auf **Alle Einstellungen anzeigen**.
 
-3.  Klicken Sie auf **Erweiterte Buildkonfigurationen anzeigen**.
+3. Klicken Sie auf **Erweiterte Buildkonfigurationen anzeigen**.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
      Der **Konfigurations-Manager** ist nun im Menü **Erstellen** verfügbar, und die Listen **Konfiguration** und **Plattform** werden im **Projekt-Designer** angezeigt.
 

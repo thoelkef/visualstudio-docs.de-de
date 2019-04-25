@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817635"
 ---
 # <a name="link-task"></a>Link-Aufgabe
 Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei (*.exe*) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 ## <a name="parameters"></a>Parameter
  Im Folgenden werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Optionaler **String[]**-Parameter.
 
@@ -51,7 +51,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [LINK-Eingabedateien](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Optionaler **String[]**-Parameter.
 
@@ -59,7 +59,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Optionaler **String[]**-Parameter.
 
@@ -67,7 +67,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Manifestabhängigkeiten angeben)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Siehe auch [Konfigurationsdateien des Verlegers](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Optionaler **String**-Parameter.
 
@@ -75,7 +75,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [Linkeroptionen](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Optionaler **String[]**-Parameter.
 
@@ -83,7 +83,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ASSEMBLYMODULE (MSIL-Modul zur Assembly hinzufügen)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Optionaler **Boolean**-Parameter.
 
@@ -91,7 +91,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ALLOWISOLATION (Manifestsuche)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Optionaler **Boolean**-Parameter.
 
@@ -99,7 +99,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Optionaler **String[]**-Parameter.
 
@@ -107,13 +107,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ASSEMBLYLINKRESOURCE (Mit .NET Framework-Ressource verknüpfen)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Impliziter **boolescher** Parameter.
 
      Ermöglicht die Nachverfolgung tieferer Dateien, um das inkrementelle Verhalten des Links zu erfassen. Gibt immer `true` zurück.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Optionaler **String**-Parameter.
 
@@ -121,7 +121,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/BASE (Basisadresse)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Optionaler **Boolean**-Parameter.
 
@@ -129,7 +129,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Dieser Parameter hat keine entsprechende Linkeroption.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Optionaler **String**-Parameter.
 
@@ -137,17 +137,17 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **Standard** - *\<none>*
+    - **Standard** - *\<none>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     Weitere Informationen finden Sie unter [/CLRIMAGETYPE (CLR-Bildtyp angeben)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Optionaler **String**-Parameter.
 
@@ -155,15 +155,15 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **Aktiviert** - **/CLRSupportLastError**
+    - **Aktiviert** - **/CLRSupportLastError**
 
-    -   **Deaktiviert** - **/CLRSupportLastError:NO**
+    - **Deaktiviert** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Weitere Informationen finden Sie unter [/CLRSUPPORTLASTERROR (Letzten Fehlercode für PInvoke-Aufrufe beibehalten)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Optionaler **String**-Parameter.
 
@@ -171,15 +171,15 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Weitere Informationen finden Sie unter [/CLRTHREADATTRIBUTE (CLR-Threadattribut festlegen)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Optionaler **Boolean**-Parameter.
 
@@ -187,7 +187,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
     Weitere Informationen finden Sie unter [/CLRUNMANAGEDCODECHECK (Hinzufügen von SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      Optionaler **String**-Parameter.
 
@@ -195,17 +195,17 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, der einer Linkeroption entspricht.
 
-    -   **Aktiviert** - **/FUNCTIONPADMIN**
+    - **Aktiviert** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Weitere Informationen finden Sie unter [/FUNCTIONPADMIN (Hotpatchfähiges Image erstellen)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Optionaler **Boolean**-Parameter.
 
@@ -213,7 +213,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/NXCOMPAT (kompatibel mit Datenausführungsverhinderung)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Optionaler **String[]**-Parameter.
 
@@ -221,7 +221,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/DELAYLOAD (Laden von Import verzögern)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Optionaler **Boolean**-Parameter.
 
@@ -229,7 +229,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/DELAYSIGN (Assembly teilweise signieren)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Treiber**
+- **Treiber**
 
      Optionaler **String**-Parameter.
 
@@ -237,17 +237,17 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Treiber** - **/Driver**
+    - **Treiber** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     Weitere Informationen finden Sie unter [/DRIVER (Treiber für den Kernelmodus von Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Optionaler **String[]**-Parameter.
 
@@ -255,7 +255,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ASSEMBLYRESOURCE (Verwaltete Ressource einbetten)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Optionaler **Boolean**-Parameter.
 
@@ -263,7 +263,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `ICF[= iterations]`-Argument der [/OPT (Optimierungen)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Optionaler **Boolean**-Parameter.
 
@@ -271,7 +271,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Optionaler **String**-Parameter.
 
@@ -279,7 +279,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ENTRY (Symbol für Einstiegspunkt)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Optionaler **Boolean**-Parameter.
 
@@ -287,7 +287,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/FIXED (Feste Basisadresse)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Optionaler **String**-Parameter.
 
@@ -295,15 +295,15 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **Aktiviert** - **/FORCE**
+    - **Aktiviert** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     Weitere Informationen finden Sie unter [//FORCE (Dateiausgabe erzwingen)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Optionaler **String[]**-Parameter.
 
@@ -311,7 +311,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/INCLUDE (Symbolverweise erzwingen)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Optionaler **String**-Parameter.
 
@@ -319,7 +319,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ORDER (Reihenfolge von Funktionen festlegen)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Optionaler **Boolean**-Parameter.
 
@@ -327,7 +327,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/DEBUG (Debuginfo generieren)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Optionaler **Boolean**-Parameter.
 
@@ -335,7 +335,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/MANIFEST (Paralleles Assemblymanifest erstellen)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Optionaler **Boolean**-Parameter.
 
@@ -343,7 +343,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen hierzu finden Sie unter [/MAP (Zuordnungsdatei generieren)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Optionaler **String**-Parameter.
 
@@ -351,7 +351,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `commit`-Argument in [/HEAP (Heapgröße festlegen)](/cpp/build/reference/heap-set-heap-size). Siehe auch den **HeapReserveSize**-Parameter.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Optionaler **String**-Parameter.
 
@@ -359,7 +359,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `reserve`-Argument in [/HEAP (Heapgröße festlegen)](/cpp/build/reference/heap-set-heap-size). Siehe auch den Parameter **HeapCommitSize** in dieser Tabelle.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Optionaler **Boolean**-Parameter.
 
@@ -367,7 +367,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Optionaler **Boolean**-Parameter.
 
@@ -375,7 +375,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/IGNOREIDL (Attribute nicht in MIDL verarbeiten)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Optionaler **Boolean**-Parameter.
 
@@ -383,7 +383,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Dieser Parameter entspricht keiner Linkeroption.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Optionaler **String[]**-Parameter.
 
@@ -391,7 +391,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Optionaler **Boolean**-Parameter.
 
@@ -399,13 +399,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/SAFESEH (Image verfügt über sichere Ausnahmehandler)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Ein benutzerdefinierter Importbibliotheksname, der den Standard-Bibliotheksnamen ersetzt.
 
      Weitere Informationen finden Sie unter [/IMPLIB (Name der Importbibliothek)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Optionaler **String**-Parameter.
 
@@ -413,7 +413,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/KEYCONTAINER (Schlüsselcontainer zum Signieren einer Assembly festlegen)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Siehe auch den Parameter **KeyFile** in dieser Tabelle.
 
--   **KeyFile**
+- **KeyFile**
 
      Optionaler **String**-Parameter.
 
@@ -421,7 +421,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/KEYFILE (Schlüsselcontainer oder Schlüsselpaar zum Signieren einer Assembly festlegen)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Siehe auch den Parameter **KeyContainer**.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Optionaler **Boolean**-Parameter.
 
@@ -429,7 +429,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/LARGEADDRESSAWARE (Umfangreiche Adressen verarbeiten)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Optionaler **Boolean**-Parameter.
 
@@ -437,7 +437,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/DLL (DLL erstellen)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Optionaler **String**-Parameter.
 
@@ -445,17 +445,17 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     Weitere Informationen finden Sie unter [/ERRORREPORT (Interne Linkerfehler melden)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Optionaler **Boolean**-Parameter.
 
@@ -463,7 +463,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/INCREMENTAL (inkrementell verknüpfen)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Optionaler **Boolean**-Parameter.
 
@@ -471,7 +471,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Dieser Parameter entspricht keiner Linkeroption.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Optionaler **Boolean**-Parameter.
 
@@ -479,7 +479,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem`STATUS`-Argument in [/LTCG (Code zur Verknüpfungszeit generieren)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Optionaler **String**-Parameter.
 
@@ -487,21 +487,21 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Weitere Informationen finden Sie unter [/LTCG (Code zur Verknüpfungszeit generieren)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Optionaler **String**-Parameter.
 
@@ -509,7 +509,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/MANIFESTFILE (Manifestdatei benennen)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Optionaler **Boolean**-Parameter.
 
@@ -517,13 +517,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `EXPORTS`-Argument in [/MAPINFO (Daten in Zuordnungsdatei einfügen)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Optionaler **String**-Parameter.
 
      Ändert den Standardnamen der Zuordnungsdatei in den angegebenen Dateinamen.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Optionaler **String**-Parameter.
 
@@ -531,7 +531,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/IDLOUT (Namen der MIDL-Ausgabedateien)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Optionaler **String**-Parameter.
 
@@ -539,7 +539,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/MERGE (Abschnitte kombinieren)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Optionaler **String**-Parameter.
 
@@ -547,13 +547,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/MIDL (Optionen für MIDL-Befehlszeile festlegen)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Optionaler **String**-Parameter.
 
      Gibt die mindestens erforderliche Version des Subsystems an. Die Argumente sind Dezimalzahlen im Bereich von 0 bis 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Optionaler **String**-Parameter.
 
@@ -561,7 +561,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/DEF (Moduldefinitionsdatei festlegen)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Optionaler **String**-Parameter.
 
@@ -569,7 +569,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/STUB (Name der MS-DOS-Stubdatei)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Optionaler **Boolean**-Parameter.
 
@@ -577,13 +577,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/NOENTRY (Kein Einstiegspunkt)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Impliziter **String[]**-Parameter.
 
      Gibt die Objektdateien an, die verknüpft sind.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Optionaler **Boolean**-Parameter.
 
@@ -591,7 +591,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `REF`-Argument der [/OPT (Optimierungen)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Optionaler **String**-Parameter.
 
@@ -599,19 +599,19 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/OUT (Ausgabedateiname)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Optionaler **Boolean**-Parameter.
 
      Wenn `true` und Ausgabe registrieren aktiviert ist, erzwingen die Registrierungsschreibvorgänge die Umleitung von **HKEY_CLASSES_ROOT** nach **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Optionaler `ITaskItem[]` -Parameter.
 
      Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Optionaler **Boolean**-Parameter.
 
@@ -619,7 +619,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ALLOWBIND (DLL-Bindung verhindern)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profil**
+- **Profil**
 
      Optionaler **boolescher** Parameter.
 
@@ -627,7 +627,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/PROFILE (Leistungstools-Profiler)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Optionaler **String**-Parameter.
 
@@ -635,7 +635,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/PGD (Datenbank für profilgesteuerte Optimierungen angeben)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Optionaler **String**-Parameter.
 
@@ -643,7 +643,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/PDB (Programmdatenbank verwenden)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Optionaler **Boolean**-Parameter.
 
@@ -651,13 +651,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/DYNAMICBASE (Address Space Layout Randomization verwenden)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Optionaler **Boolean**-Parameter.
 
      `true` registriert die primäre Ausgabe dieses Builds.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Optionaler **Integer**-Parameter.
 
@@ -665,7 +665,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/ALIGN (Abschnittsausrichtung)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Optionaler **Boolean**-Parameter.
 
@@ -673,7 +673,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/RELEASE (Prüfsumme festlegen)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Optionaler **String**-Parameter.
 
@@ -681,29 +681,29 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Weitere Informationen finden Sie unter [/VERBOSE (Statusmeldungen ausgeben)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Sources**
+- **Sources**
 
      Erforderlicher `ITaskItem[]` -Parameter.
 
      Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Optionaler **String**-Parameter.
 
@@ -711,7 +711,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/SECTION (Abschnittsattribute angeben)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Optionaler **String**-Parameter.
 
@@ -719,7 +719,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `commit`-Argument in [/STACK (Stapelreservierungen)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Optionaler **String**-Parameter.
 
@@ -727,7 +727,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `reserve`-Argument in [/STACK (Stapelreservierungen)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Optionaler **String**-Parameter.
 
@@ -735,7 +735,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/PDBSTRIPPED (Private Symbole entfernen)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
      Optionaler **String**-Parameter.
 
@@ -743,29 +743,29 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Konsole** - **/SUBSYSTEM:CONSOLE**
+    - **Konsole** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Nativ** - **/SUBSYSTEM:NATIVE**
+    - **Nativ** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI-Anwendung** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI-Anwendung** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI-Startdiensttreiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI-Startdiensttreiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI-ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI-ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI-Laufzeit** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI-Laufzeit** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Weitere Informationen finden Sie unter [/SUBSYSTEM (Subsystem angeben)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Optionaler **Boolean**-Parameter.
 
@@ -773,7 +773,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `NOBIND`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Optionaler **Boolean**-Parameter.
 
@@ -781,7 +781,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `UNLOAD`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Optionaler **Boolean**-Parameter.
 
@@ -789,7 +789,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/NOLOGO (Startbanner unterdrücken) (Linker)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Optionaler **Boolean**-Parameter.
 
@@ -797,7 +797,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `CD`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Siehe auch den **SwapRunFromNET**-Parameter.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Optionaler **Boolean**-Parameter.
 
@@ -805,7 +805,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `NET`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Siehe auch den **SwapRunFromCD**-Parameter in dieser Tabelle.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Optionaler **String**-Parameter.
 
@@ -813,33 +813,33 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     Weitere Informationen finden Sie unter [/MACHINE (Zielplattform angeben)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Optionaler **Boolean**-Parameter.
 
@@ -847,13 +847,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/TSAWARE (An Terminalserver gebundene Anwendung erstellen)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Optionaler **String**-Parameter.
 
      Gibt das Verzeichnis des Nachverfolgungsprotokolls an.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Optionaler **Boolean**-Parameter.
 
@@ -861,7 +861,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/WX (Linkerwarnungen als Fehler behandeln)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Optionaler **Boolean**-Parameter.
 
@@ -869,7 +869,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/NOASSEMBLY (MSIL-Modul erstellen)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Optionaler **String**-Parameter.
 
@@ -877,7 +877,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/TLBOUT (TLB-Datei benennen)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Optionaler **Integer**-Parameter.
 
@@ -885,7 +885,7 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter [/TLBID (Ressourcen-ID für TypeLib festlegen)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Optionaler **String**-Parameter.
 
@@ -893,15 +893,15 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Weitere Informationen finden Sie unter dem `level`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Optionaler **Boolean**-Parameter.
 
@@ -909,13 +909,13 @@ Umschließt das Visual C++-Linkertool (*link.exe*). Das Linkertool ist ein Tool,
 
      Weitere Informationen finden Sie unter dem `uiAccess`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Optionaler **Boolean**-Parameter.
 
      Bei `true` werden die Eingaben in das Bibliothekstool eher verwendet als die Bibliotheksdatei selbst, wenn Bibliotheksausgaben von Projektabhängigkeiten verknüpft sind.
 
--   **Version**
+- **Version**
 
      Optionaler **String**-Parameter.
 

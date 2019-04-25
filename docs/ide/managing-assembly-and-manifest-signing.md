@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538240"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 
@@ -72,5 +72,5 @@ Weitere Informationen zum Signieren von Manifesten finden Sie unter [Vorgehenswe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Assemblys mit starkem Namen](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Strong-named assemblies (C++/CLI) (Assemblys mit starkem Namen (C++/CLI))](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Assemblys mit starken Namen](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblys mit starken Namen (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

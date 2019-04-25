@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569679"
 ---
 # <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.
@@ -86,7 +86,6 @@ Während der Auswertungsphase eines Builds werden importierte Dateien in der Rei
 - Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen.
 
 - Elemente werden in der Reihenfolge definiert und geändert, in der sie vorkommen.
-
 
 Während der Ausführungsphase eines Builds werden in Zielen definierte Eigenschaften und Elemente gemeinsam in einer einzigen Phase in der Reihenfolge ausgewertet, in der sie vorkommen.
 

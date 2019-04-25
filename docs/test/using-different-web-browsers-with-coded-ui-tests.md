@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973018"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -24,13 +24,13 @@ Installieren Sie die [Selenium components for Coded UI Cross Browser (Selenium-K
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Folgendes wird auf allen Webbrowsern unterstützt:
 
--   [Hinzufügen von benutzerdefiniertem Code für Steuerfunktionen](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) wie Eigenschaften, Suche und Playback-Waiter
+- [Hinzufügen von benutzerdefiniertem Code für Steuerfunktionen](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) wie Eigenschaften, Suche und Playback-Waiter
 
--   Popups und Dialogfelder
+- Popups und Dialogfelder
 
--   [Ausführen von einfachem JavaScript ohne Rückgabetyp](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Ausführen von einfachem JavaScript ohne Rückgabetyp](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Flexibilität der Suche (mithilfe der intelligenten Übereinstimmung) und [Leistungsverbesserungen](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Flexibilität der Suche (mithilfe der intelligenten Übereinstimmung) und [Leistungsverbesserungen](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Warum sollte ich Tests der programmierten UI in mehreren Webbrowsertypen durchführen?
 
@@ -78,17 +78,17 @@ Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten U
 
 Um das Debuggen der Webanwendung zu aktivieren, müssen Sie die folgenden Konfigurationsoptionen ausführen:
 
-1.  Nur meinen Code aktivieren:
+1. Nur meinen Code aktivieren:
 
-    1.  Klicken Sie im Menü **Tools** auf **Optionen**, und wählen Sie dann **Debuggen** aus.
+    1. Klicken Sie im Menü **Tools** auf **Optionen**, und wählen Sie dann **Debuggen** aus.
 
-    2.  Wählen Sie **Nur meinen Code aktivieren** aus.
+    2. Wählen Sie **Nur meinen Code aktivieren** aus.
 
-2.  Deaktivieren der CLR-Ausnahmen:
+2. Deaktivieren der CLR-Ausnahmen:
 
-    1.  Wählen Sie im Menü **Debuggen** die Option **Ausnahmen** aus.
+    1. Wählen Sie im Menü **Debuggen** die Option **Ausnahmen** aus.
 
-    2.  Deaktivieren Sie in den **Common Language Runtime-Ausnahmen** die Option **Vom Benutzercode unbehandelt**.
+    2. Deaktivieren Sie in den **Common Language Runtime-Ausnahmen** die Option **Vom Benutzercode unbehandelt**.
 
 Wenn die Option zum Ändern von `BrowserWindow.CurrentBrowser` im Test der programmierten UI nicht angezeigt wird, kann es sein, dass Sie eine Version von Visual Studio verwenden, die Tests der programmierten UI mit verschiedenen Browsern nicht unterstützt. Sie müssen Visual Studio Enterprise Edition verwenden, um solche Tests der programmierten UI verwenden zu können.
 

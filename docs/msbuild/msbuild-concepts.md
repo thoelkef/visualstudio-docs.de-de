@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842788"
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Buildplattform Software erstellen soll. Verwenden Sie Eigenschaften, Elemente, Aufgaben und Ziele, um die jeweiligen Komponenten im Build festzulegen und anzugeben, wie sie erstellt werden sollen.

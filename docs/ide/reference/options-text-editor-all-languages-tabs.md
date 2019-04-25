@@ -42,11 +42,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997156"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Optionen, Text-Editor, Alle Sprachen, Tabstopps
 
@@ -59,7 +59,7 @@ Wenn auf den Optionsseiten von „Tabstopps“ für bestimmte Programmiersprache
 
 ## <a name="indenting"></a>Einzug
 
-Keine
+Keiner
 
 Wenn diese Option aktiviert ist, werden neue Zeilen nicht eingezogen. Die Einfügemarke wird in der ersten Spalte einer neuen Zeile platziert.
 

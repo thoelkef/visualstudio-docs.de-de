@@ -13,25 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a634bd83a55d4e646874cce5546e2a7310afb2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b88268ba0ed8b1c324eda08ec3db969e088f279
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539248"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Vorgehensweise: Serialisieren von Symbolinformationen
 Sie können Symbole serialisieren, die zum Analysieren Ihrer Anwendung erforderlich sind. Die Serialisierung von Symbolen fügt Symbole in die *VSP-Datei* ein. Durch das Einfügen von Symbolinformationen in die *VSP-Datei* können andere Personen einen Leistungsbericht analysieren, ohne Zugriff auf die Originalsymbole zu haben. Wenn Symbole nicht serialisiert werden, müssen die instrumentierte *EXE-* und *PDB-Dateien* zum Analysieren der *VSP-Datei* vorhanden sein.
 
 ### <a name="to-automatically-serialize-symbol-information"></a>So serialisieren Sie automatisch Symbolinformationen
 
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.
+1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
      Das Dialogfeld **Optionen** wird angezeigt.
 
-2.  Klicken Sie auf **Leistungstools**.
+2. Klicken Sie auf **Leistungstools**.
 
-3.  Wählen Sie unter **Allgemeine Einstellungen** **Symbolinformationen automatisch serialisieren** aus.
+3. Wählen Sie unter **Allgemeine Einstellungen** **Symbolinformationen automatisch serialisieren** aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

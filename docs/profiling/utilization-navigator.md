@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823483"
 ---
 # <a name="utilization-navigator"></a>Auslastungsnavigator
 Mit dem Auslastungsnavigator können Sie in der Nebenläufigkeitsschnellansicht ein Zeitintervall in einer Ablaufverfolgung auswählen. In der Nebenläufigkeitsschnellansicht wird die Auslastung der CPU-Kerne durch den Zielprozess im Verlauf der Zeit angezeigt. Damit lassen sich CPU-Auslastungsmuster leichter erkennen. Zudem können die Auslastungsdaten mit den Daten in anderen Ansichten verglichen werden. Der Auslastungsnavigator wird in der Nebenläufigkeitsschnellansicht in allen Ansichten im oberen Bereich angezeigt. Der Auslastungsnavigator ist in der folgenden Abbildung dargestellt.

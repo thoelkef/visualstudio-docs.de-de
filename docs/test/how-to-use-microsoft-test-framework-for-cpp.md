@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970349"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
 Das Microsoft-Komponententest-Framework für C++ ist standardmäßig in der Workload **Desktopentwicklung mit C++** enthalten.
 
-##  <a name="separate_project"></a> Schreiben von Komponententests in einem separaten Projekt
+## <a name="separate_project"></a> Schreiben von Komponententests in einem separaten Projekt
 
 In der Regel führen Sie Ihren Testcode in einem eigenen Projekt in derselben Projektmappe aus, in der sich der Code befindet, den Sie testen möchten. Weitere Informationen zum Einrichten und Konfigurieren eines neuen Testprojekts finden Sie unter [Writing Unit Tests for C/C++ (Schreiben von Komponententests für C/C++)](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Schreiben von Komponententests im gleichen Projekt
+## <a name="same_project"></a> Schreiben von Komponententests im gleichen Projekt
 
 In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer DLL) sollten Sie die Tests im gleichen Projekt wie das Programm erstellen, das Sie testen. So schreiben Sie Komponententests im gleichen Projekt:
 
@@ -32,16 +32,14 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
    2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus:
 
-
       | Verzeichnis | Eigenschaft |
       |-| - |
       | **Includeverzeichnisse** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Bibliotheksverzeichnisse** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. Fügen Sie eine C++-Komponententestdatei hinzu:
 
-   -   Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann mit der Linken auf **Hinzufügen** > **Neues Element** > **C++-Komponententest**.
+   - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann mit der Linken auf **Hinzufügen** > **Neues Element** > **C++-Komponententest**.
 
 ## <a name="write-the-tests"></a>Schreiben der Tests
 

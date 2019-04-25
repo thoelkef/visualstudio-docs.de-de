@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431096"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner
 

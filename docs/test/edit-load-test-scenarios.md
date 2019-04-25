@@ -1,5 +1,5 @@
 ---
-title: Auslastungstestszenarien
+title: Auslastungstestszenarios
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 647548a59c965b6feacb994efa041ecd5b6c6b91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786165"
 ---
 # <a name="edit-load-test-scenarios"></a>Bearbeiten von Auslastungstestszenarios
 
@@ -29,13 +29,13 @@ Sie können z. B. eine E-Commerce-Website testen, deren Internet-Front-End von 
 
 Alle Erstkonfigurationsoptionen und -einstellungen, die Sie angeben, wenn Sie einen Auslastungstest erstellen, können später im **Auslastungstest-Editor** geändert werden. Sie können auch neue Szenarios, Laufzeiteinstellungen und Indikatorensätze zu einem Auslastungstest hinzufügen.
 
-![Auslastungstestszenarien](../test/media/loadtesteditinscenarios.png)
+![Auslastungstestszenarios](../test/media/loadtesteditinscenarios.png)
 
 Szenarien enthalten folgende Komponenten:
 
 |Begriff|Definition|
 |-|-|
-|Browsermix|Simuliert den Zugriff virtueller Benutzer auf eine Website über verschiedene Webbrowser.|
+|Browsermischung|Simuliert den Zugriff virtueller Benutzer auf eine Website über verschiedene Webbrowser.|
 |Auslastungsmuster|Gibt die Anzahl von während eines Auslastungstests aktiven virtuellen Benutzern sowie die Rate an, mit der neue Benutzer gestartet werden. Zum Beispiel Einzelschritt, Konstante oder Zielbasiert.|
 |Testmischungsmodell|Gibt die Wahrscheinlichkeit an, dass ein virtueller Benutzers einen bestimmten Test in einem Auslastungstestszenario ausführt. Beispiel: 20% Wahrscheinlichkeit der Ausführung von TestA und 80% Wahrscheinlichkeit der Ausführung von TestB. Das Testmischungsmodell sollte den Zielen des Tests für ein bestimmtes Szenario entsprechen.|
 |Testmischung|Die Testmischung setzt sich aus der Auswahl von Webleistungs- und Komponententests, die im Szenario enthalten sind, und der Verteilung dieser Tests zusammen.|

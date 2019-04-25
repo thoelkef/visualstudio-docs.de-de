@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821811"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Erstellen eines Bildanzeigeprogramms
 
 In diesem Lernprogramm erstellen Sie ein Programm, das ein Bild aus einer Datei lädt und in einem Fenster anzeigt. Sie erfahren, wie Sie mithilfe des **Windows Forms-Designers** Steuerelemente, z.B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars stufenlos ändern können. Sie fangen auch an, Code zu schreiben. Sie lernen Folgendes:
 
--   Erstellen Sie ein neues Projekt.
+- Erstellen Sie ein neues Projekt.
 
--   Testen (Debuggen) einer Anwendung
+- Testen (Debuggen) einer Anwendung
 
--   Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular
+- Hinzufügen grundlegender Steuerelemente, z. B. Kontrollkästchen und Schaltflächen, zu einem Formular
 
--   Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts
+- Positionieren von Steuerelementen auf einem Formular mithilfe von Layouts
 
--   Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.
+- Hinzufügen der Dialogfelder **Datei öffnen** und **Farbe** zu einem Formular.
 
--   Schreiben von Code mithilfe von IntelliSense und Codeausschnitten
+- Schreiben von Code mithilfe von IntelliSense und Codeausschnitten
 
--   Schreiben von Ereignishandlermethoden
+- Schreiben von Ereignishandlermethoden
 
 Am Ende sieht das Programm wie in der folgenden Abbildung aus:
 

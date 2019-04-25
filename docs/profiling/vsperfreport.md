@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581267"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Das VSPerfReport-Befehlszeilentool wird zum Erstellen von Berichten mithilfe von Profilerstellungs-Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet. Das Standardberichtsformat ist eine *CSV-Datei*.

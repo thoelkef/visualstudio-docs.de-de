@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778571"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Optionen, Text-Editor, JavaScript, IntelliSense
 Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die **IntelliSense**-Seite, indem Sie **Tools** > **Optionen** in der Menüleiste auswählen und anschließend **Text-Editor** > **JavaScript** > **IntelliSense** erweitern.
@@ -59,7 +59,6 @@ Diese Option gibt die Reihenfolge an, in der Dateien in den Kontext des Sprachdi
 > [!CAUTION]
 > Wenn ein Objekt ohne Einschränkung in zwei oder mehr impliziten Verweisen definiert ist, wird der letzte Verweis in dieser Liste verwendet, um das Objekt zu definieren.
 
-
 **Fügen Sie der Gruppe einen Verweis hinzu**
 
 Diese Option bietet die Möglichkeit, nach zusätzlichen IntelliSense-JS-Dateien zu suchen und solche Dateien hinzuzufügen.
@@ -70,8 +69,6 @@ Wenn dieses Kontrollkästchen aktiviert ist und Sie eine JavaScript-Datei außer
 
 > [!NOTE]
 > Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.
-
-
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777638"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
 Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.
@@ -36,13 +36,13 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der **XSD**-Aufgabe beschrieben.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Optionaler **String**-Parameter.
 
      Eine Liste von Optionen, wie in der Befehlszeile angegeben. Zum Beispiel „/\<Option1> /\<Option2> /\<Option#>“. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      Optionaler **String**-Parameter.
 
@@ -50,11 +50,11 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer XSD-Option entspricht.
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Sprache**
+- **Sprache**
 
      Optionaler **String**-Parameter.
 
@@ -62,25 +62,25 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
      Wählen Sie zwischen **CS** (C#, der Standard), **VB** (Visual Basic) und **JS** (JScript) aus. Sie können auch einen vollqualifizierten Namen für eine Klasse angeben, die `System.CodeDom.Compiler.CodeDomProvider Class` implementiert.
 
--   **Namespace**
+- **Namespace**
 
      Optionaler **String**-Parameter.
 
      Gibt den Laufzeitnamespace für die generierten Typen an.
 
--   **Sources**
+- **Sources**
 
      Erforderlicher `ITaskItem[]` -Parameter.
 
      Definiert ein Array von MSBuild-Quelldateielementen, die verbraucht und von Aufgaben ausgegeben werden können.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Optionaler **Boolean**-Parameter.
 
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Optionaler **String**-Parameter.
 

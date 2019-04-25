@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834306"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung
 Bei der Instrumentationsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Profilerstellungstools wird Profilerstellungscode in eine Kopie eines Moduls eingefügt. Der Code zeichnet während der Profilerstellung jeden Funktionseinstieg, jedes Funktionsende und jeden Funktionsaufruf im Modul auf. Mithilfe der Instrumentationsmethode können ausführliche Zeitsteuerungsdaten zu einem Abschnitt des Codes erfasst werden. Zudem werden mit dieser Methode die Auswirkungen von Eingabe- und Ausgabeoperationen auf die Leistung der Anwendung besser verständlich.
 
  Sie können die Instrumentationsmethode mit einem der folgenden Verfahren angeben:
 
--   Wählen Sie auf der ersten Seite des Profilerstellungs-Assistenten **Instrumentation**aus.
+- Wählen Sie auf der ersten Seite des Profilerstellungs-Assistenten **Instrumentation**aus.
 
--   Klicken Sie auf der Symbolleiste **Leistungs-Explorer** in der Liste **Methode** auf **Instrumentation**.
+- Klicken Sie auf der Symbolleiste **Leistungs-Explorer** in der Liste **Methode** auf **Instrumentation**.
 
--   Wählen Sie auf der Seite **Allgemein** im Dialogfeld „Eigenschaften“ für die Leistungssitzung **Instrumentation**aus.
+- Wählen Sie auf der Seite **Allgemein** im Dialogfeld „Eigenschaften“ für die Leistungssitzung **Instrumentation**aus.
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
  Weitere Optionen können Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld

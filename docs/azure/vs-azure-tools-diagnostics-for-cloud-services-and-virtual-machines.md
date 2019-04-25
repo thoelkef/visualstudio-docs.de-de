@@ -1,19 +1,21 @@
 ---
 title: Einrichten der Diagnose für Azure Cloud Services und virtuelle Azure-Computer | Microsoft-Dokumentation
 description: Erfahren Sie mehr über das Einrichten der Diagnose für das Debuggen von Azure-Clouddiensten und virtuellen Azure-Computern (VMs) in Visual Studio.
-author: ghogen
+author: mikejo5000
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556418"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -154,6 +156,7 @@ Wenn Sie Azure SDK 2.5 verwenden und eine benutzerdefinierte Datenquelle angeben
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Leistungsindikatoren
 Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
 

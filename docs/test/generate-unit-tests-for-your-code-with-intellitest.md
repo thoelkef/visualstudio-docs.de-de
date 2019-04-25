@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec9d40d889964c3b0f369b87d8cd2c2312aaea18
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950750"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generieren von Komponententests für Code mit IntelliTest
 
@@ -38,9 +38,9 @@ Die Menübefehle **IntelliTest erstellen** und **IntelliTest ausführen**:
 
 Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstellen Sie Komponententests](#NoRun) andernfalls, bevor Sie sie generieren.
 
-1.  Öffnen Sie Ihre Projektmappe in Visual Studio. Öffnen Sie dann die Klassendatei, welche die zu testenden Methoden enthält.
+1. Öffnen Sie Ihre Projektmappe in Visual Studio. Öffnen Sie dann die Klassendatei, welche die zu testenden Methoden enthält.
 
-2.  Klicken Sie mit der rechten Maustaste auf eine Methode im Code, und wählen Sie **IntelliTest ausführen** , um Komponententests für den Code in der Methode zu generieren.
+2. Klicken Sie mit der rechten Maustaste auf eine Methode im Code, und wählen Sie **IntelliTest ausführen** , um Komponententests für den Code in der Methode zu generieren.
 
      ![Klicken Sie mit der rechten Maustaste auf Ihre Methode, um Komponententests zu generieren.](../test/media/runpex.png)
 
@@ -56,7 +56,7 @@ Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstelle
 
 ## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Beibehalten: Speichern der Komponententests als Regressionssammlung
 
-1.  Wählen Sie die Datenzeilen aus, die Sie mit dem parametrisierten Komponententest in einem Testprojekt speichern möchten.
+1. Wählen Sie die Datenzeilen aus, die Sie mit dem parametrisierten Komponententest in einem Testprojekt speichern möchten.
 
      ![Wählen Sie „Tests“ aus, klicken Sie mit der rechten Maustaste, und wählen Sie „Speichern“ aus.](../test/media/savepextests.png)
 
@@ -70,13 +70,13 @@ Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstelle
 
 ## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Hilfe: Verwenden von IntelliTest für die Codeuntersuchung
 
-1.  Wenn Ihr Code komplizierter ist, hilft Ihnen IntelliTest bei der Untersuchung des Codes. Ein Beispiel: Sie verwenden eine Methode, die eine Schnittstelle als Parameter hat, und diese Schnittstelle wird von mehreren Klassen implementiert. Dann ermittelt IntelliTest diese Klassen und gibt eine Warnung aus.
+1. Wenn Ihr Code komplizierter ist, hilft Ihnen IntelliTest bei der Untersuchung des Codes. Ein Beispiel: Sie verwenden eine Methode, die eine Schnittstelle als Parameter hat, und diese Schnittstelle wird von mehreren Klassen implementiert. Dann ermittelt IntelliTest diese Klassen und gibt eine Warnung aus.
 
      Rufen Sie die Warnungen auf, um zu entscheiden, was zu tun ist.
 
      ![Warnungen anzeigen](../test/media/pexviewwarning.png)
 
-2.  Nachdem Sie den Code untersucht haben und wissen, was Sie testen möchten, können Sie die Warnung beheben, indem Sie die Klassen wählen, mit denen die Schnittstelle getestet werden soll.
+2. Nachdem Sie den Code untersucht haben und wissen, was Sie testen möchten, können Sie die Warnung beheben, indem Sie die Klassen wählen, mit denen die Schnittstelle getestet werden soll.
 
      ![Fix (Beheben)Klicken Sie mit der rechten Maustaste auf die Warnung, und wählen „Beheben“ aus.](../test/media/pexfixwarning.png)
 
@@ -84,7 +84,7 @@ Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstelle
 
      `[assembly: PexUseType(typeof(Camera))]`
 
-3.  Jetzt können Sie IntelliTest erneut ausführen, um einen parametrisierten Komponententest und Testdaten zu generieren, wobei nur die korrigierte Klasse verwendet wird.
+3. Jetzt können Sie IntelliTest erneut ausführen, um einen parametrisierten Komponententest und Testdaten zu generieren, wobei nur die korrigierte Klasse verwendet wird.
 
      ![IntelliTest zum Generieren der Testdaten erneut ausführen](../test/media/pexwarningsfixed.png)
 
@@ -92,7 +92,7 @@ Die Typen müssen öffentlich sein, um Komponententests zu generieren. [Erstelle
 
 Geben Sie die allgemeine Beziehung zwischen Eingaben und Ausgaben an, die von den generierten Komponententests überprüft werden soll. Diese Spezifikation ist in einer Methode gekapselt, die wie eine Testmethode aussieht, aber universell quantifiziert ist. Dies ist die parametrisierte Komponententestmethode, und alle Assertionen, die Sie vornehmen, müssen für alle möglichen Eingabewerte gelten, die IntelliTest generieren kann.
 
-##  <a name="q--a"></a>Fragen und Antworten
+## <a name="q--a"></a>Fragen und Antworten
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Frage: Kann IntelliTest für nicht verwalteten Code verwendet werden?
 
@@ -104,13 +104,13 @@ Geben Sie die allgemeine Beziehung zwischen Eingaben und Ausgaben an, die von de
 
  Wenn Sie einen Test haben, der bestanden wird, wenn bestimmte Ausnahmen ausgelöst werden, können Sie je nach Ihren Anforderungen auf Ebene der Testmethode, der Testklasse oder der Assembly eines der folgenden Attribute festlegen:
 
--   **PexAllowedExceptionAttribute**
+- **PexAllowedExceptionAttribute**
 
--   **PexAllowedExceptionFromTypeAttribute**
+- **PexAllowedExceptionFromTypeAttribute**
 
--   **PexAllowedExceptionFromTypeUnderTestAttribute**
+- **PexAllowedExceptionFromTypeUnderTestAttribute**
 
--   **PexAllowedExceptionFromAssemblyAttribute**
+- **PexAllowedExceptionFromAssemblyAttribute**
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Frage: Kann ich dem parametrisierten Komponententest Annahmen hinzufügen?
 
@@ -128,7 +128,7 @@ Geben Sie die allgemeine Beziehung zwischen Eingaben und Ausgaben an, die von de
 
  Wenn Sie eine Assertion hinzufügen und IntelliTest erneut ausführen, wird geprüft, ob die Assertion gültig ist; falls nicht, schlägt der Test fehl.
 
-###  <a name="NoRun"></a> Frage: Kann ich parametrisierte Komponententests generieren, ohne zuerst IntelliTest auszuführen?
+### <a name="NoRun"></a> Frage: Kann ich parametrisierte Komponententests generieren, ohne zuerst IntelliTest auszuführen?
 
 **Antwort:** Ja, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen** aus.
 
@@ -147,13 +147,11 @@ Testframeworkerweiterungen sind auch in Visual Studio Marketplace verfügbar:
 * [NUnit-Erweiterung für die Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [xUnit.net-Erweiterung für die Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
-
 Wenn Sie Visual Studio neu gestartet und Ihre Projektmappe geöffnet haben, klicken Sie mit der rechten Maustaste auf die Klasse oder Methode, und wählen Sie dann **IntelliTest erstellen**aus. Wählen Sie hier das installierte Framework aus:
 
 ![Auswählen eines anderen Komponententest-Frameworks für IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
 Führen Sie dann IntelliTest aus, um einzelne Komponententests in den zugehörigen *G.CS*-Dateien zu generieren.
-
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Frage: Kann ich mehr darüber erfahren, wie die Tests generiert werden?
 

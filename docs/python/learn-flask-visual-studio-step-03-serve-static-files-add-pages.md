@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957184"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 
@@ -285,7 +285,7 @@ Die folgenden Schritte veranschaulichen die Vererbung:
 
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 
-- [Bereitstellen der Web-App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Bereitstellen der App für Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Weitere Informationen zu den Funktionen der Jinja-Vorlagen (z.B. Ablaufsteuerung) finden Sie in der [Dokumentation zum Jinja-Vorlagen-Designer](http://jinja.pocoo.org/docs/2.10/templates) unter jinja.pocoo.org.
 - Weitere Informationen zur Verwendung von `url_for` finden Sie in der Dokumentation zu Flask-Anwendungsobjekten (flask.pocoo.org) unter [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for).
 - Quellcode für das Tutorial auf GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
