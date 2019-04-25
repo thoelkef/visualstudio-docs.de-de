@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069510"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>So wechseln Sie zu bestimmten Dateien im Editor
 
--   Drücken Sie STRG+TAB, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter STRG-TASTE so oft die TAB-TASTE, bis die gewünschte Datei ausgewählt ist.
+- Drücken Sie STRG+TAB, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter STRG-TASTE so oft die TAB-TASTE, bis die gewünschte Datei ausgewählt ist.
 
     > [!TIP]
     >  Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Dateien** navigieren, halten Sie STRG+UMSCHALT gedrückt, und drücken Sie die TAB-TASTE.
 
      \- oder –
 
--   Klicken Sie in der oberen rechten Ecke des Editors auf die Schaltfläche **Aktive Dateien**, und wählen Sie eine Datei aus der Liste aus, zu der Sie wechseln möchten.
+- Klicken Sie in der oberen rechten Ecke des Editors auf die Schaltfläche **Aktive Dateien**, und wählen Sie eine Datei aus der Liste aus, zu der Sie wechseln möchten.
 
      \- oder –
 
--   Wählen Sie auf der Menüleiste **Fenster** **Fenster** aus.
+- Wählen Sie auf der Menüleiste **Fenster** **Fenster** aus.
 
--   Wählen Sie in der Liste die Datei aus, die Sie anzeigen möchten, und wählen Sie dann **Aktivieren**.
+- Wählen Sie in der Liste die Datei aus, die Sie anzeigen möchten, und wählen Sie dann **Aktivieren**.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Navigieren zwischen Toolfenstern in der IDE
  Mit dem **IDE-Navigator** können Sie auch zwischen den Toolfenstern navigieren, die in der IDE geöffnet sind. Je nachdem, in welcher Reihenfolge Sie durch die Toolfenster navigieren möchten, können Sie den **IDE-Navigator** über einen von zwei Befehlen aufrufen. Der Befehl `Window.PreviousToolWindowNav` ermöglicht es Ihnen, zu der zuletzt verwendeten Datei zu navigieren, und der Befehl `Window.NextToolWindowNav` ermöglicht Ihnen die Navigation in umgekehrter Reihenfolge. In den allgemeinen Entwicklungseinstellungen ist dem Befehl `Window.PreviousDocumentWindowNav` die Tastenkombination UMSCHALT+ALT+F7 zugewiesen und dem Befehl `Window.NextDocumentWindowNav` die Tastenkombination ALT+F7.
@@ -86,7 +86,7 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>So wechseln Sie zu einem bestimmten Toolfenster in der IDE
 
--   Drücken Sie ALT+F7, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter ALT-TASTE so oft die Taste F7, bis das gewünschte Fenster ausgewählt ist.
+- Drücken Sie ALT+F7, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter ALT-TASTE so oft die Taste F7, bis das gewünschte Fenster ausgewählt ist.
 
     > [!TIP]
     >  Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Toolfenster** navigieren, halten Sie UMSCHALT+ ALT gedrückt, und drücken Sie die Taste F7.

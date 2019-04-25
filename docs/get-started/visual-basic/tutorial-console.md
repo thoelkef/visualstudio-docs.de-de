@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416162"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857592"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Erste Schritte mit Visual Basic in Visual Studio
 
@@ -33,7 +33,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker range="vs-2019"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -99,11 +99,11 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    >
    > ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise „[Projekt erstellen](#create-a-project)“ zurück.
 
 1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *WhatIsYourName* ein. Wählen Sie anschließend **Erstellen** aus.
 
-   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „WhatIsYourName“](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „WhatIsYourName“](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio öffnet Ihr neues Projekt.
 
@@ -262,10 +262,10 @@ Eine Konsolen-App nimmt eine Eingabe und zeigt die Ausgabe in einem Befehlszeile
 Damit haben Sie das Tutorial erfolgreich abgeschlossen. Weitere Informationen finden Sie im folgenden Tutorial.
 
 > [!div class="nextstepaction"]
-> [Erstellen einer Klassenbibliothek mit Visual Basic und dem .NET Core SDK in Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Erstellen einer .NET Standard-Bibliothek mit Visual Basic und .NET Core SDK in Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Exemplarische Vorgehensweisen für Visual Basic](/dotnet/visual-basic/walkthroughs)
+* [Exemplarische Vorgehensweisen für Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Sprachreferenz zu Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [IntelliSense für Visual Basic-Codedateien](../../ide/visual-basic-specific-intellisense.md)

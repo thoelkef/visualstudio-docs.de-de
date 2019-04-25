@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194692"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857163"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten zugeordneten Ressourcen im Visual Studio Cloud-Explorer
 
@@ -24,11 +24,11 @@ Der Cloud-Explorer setzt wie das [Azure-Portal](http://go.microsoft.com/fwlink/p
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Visual Studio 2017 oder höher (siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) mit der ausgewählten **Azure-Workload**. Sie können auch eine frühere Version von Visual Studio mit dem [Microsoft Azure SDK für .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) verwenden.
+* Visual Studio 2017 oder höher (siehe [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) mit der ausgewählten **Azure-Workload**. Sie können auch eine frühere Version von Visual Studio mit dem [Microsoft Azure SDK für .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) verwenden.
 * Microsoft Azure-Konto: Wenn Sie noch nicht über ein Konto verfügen, können Sie sich [für eine kostenlose Testversion registrieren](http://go.microsoft.com/fwlink/?LinkId=623901) oder Ihre [Visual Studio-Abonnentenvorteile aktivieren](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Drücken Sie zum Anzeigen des Cloud-Explorers **STRG**+**Q**, um **Schnellstart** aufzurufen, und geben Sie **Cloud-Explorer** ein.
+> Wenn der Cloud-Explorer angezeigt werden soll, drücken Sie **STRG**+**Q**, um das Suchfeld zu aktivieren, und geben Sie dort dann **Cloud-Explorer** ein.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Hinzufügen eines Azure-Kontos zum Cloud-Explorer
 

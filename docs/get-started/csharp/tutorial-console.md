@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e35e3815ebb0fb4c8ed4aca376f519d9720a01b7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416170"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856780"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -34,7 +34,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 ::: moniker range="vs-2019"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -597,7 +597,7 @@ namespace Calculator
 Damit haben Sie das Tutorial erfolgreich abgeschlossen. Wenn Sie weitere Informationen erhalten möchten, fahren Sie mit den folgenden Tutorials fort.
 
 > [!div class="nextstepaction"]
-> [C#-Tutorials](/dotnet/csharp/tutorials/)
+> [Weitere C#-Tutorials](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>Siehe auch
 

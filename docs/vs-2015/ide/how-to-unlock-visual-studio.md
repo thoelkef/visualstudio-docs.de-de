@@ -1,5 +1,5 @@
 ---
-title: Entsperren von Visual Studio 2015 | Microsoft-Dokumentation"
+title: Entsperren von Visual Studio 2015 | Microsoft-Dokumentation
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072551"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Entsperren von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldung in bei der IDE-Schnittstelle können Sie den Testzeitraum bis auf 90 Tage erweitern. Um Visual Studio weiterhin zu verwenden, können Sie die IDE-Schnittstelle entsperren, indem Sie
 
-1.  ein Onlineabonnement verwenden.
+1. ein Onlineabonnement verwenden.
 
-2.  einen Product Key eingeben.
+2. einen Product Key eingeben.
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>So entsperren Sie Visual Studio mithilfe eines Onlineabonnements
  So entsperren Sie Visual Studio mithilfe eines MSDN- oder Visual Studio-Onlineabonnements, das mit einem Microsoft-Konto, einem Geschäfts- oder Schulkonto verknüpft ist:
 
-1.  Klicken Sie auf die Schaltfläche „Anmelden“ in der rechten oberen Ecke der IDE-Schnittstelle (oder wechseln Sie zu „Datei“> „Kontoeinstellungen“, um das Dialogfeld „Kontoeinstellungen“ zu öffnen, und klicken Sie auf die Schaltfläche „Anmelden“).
+1. Klicken Sie auf die Schaltfläche „Anmelden“ in der rechten oberen Ecke der IDE-Schnittstelle (oder wechseln Sie zu „Datei“> „Kontoeinstellungen“, um das Dialogfeld „Kontoeinstellungen“ zu öffnen, und klicken Sie auf die Schaltfläche „Anmelden“).
 
-2.  Geben Sie die Anmeldeinformationen für ein Microsoft-Konto oder ein Geschäfts- bzw. Schulkonto ein. Visual Studio sucht dann nach einem MSDN- oder Visual Studio Team Services-Abonnement, das mit Ihrem Konto verknüpft ist.
+2. Geben Sie die Anmeldeinformationen für ein Microsoft-Konto oder ein Geschäfts- bzw. Schulkonto ein. Visual Studio sucht dann nach einem MSDN- oder Visual Studio Team Services-Abonnement, das mit Ihrem Konto verknüpft ist.
 
 > [!IMPORTANT]
 >  Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto im Team Explorer-Toolfenster herstellen. Wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto herstellen, können Sie sich mithilfe von Microsoft- oder Geschäfts- bzw. Schulkonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>So entsperren Sie Visual Studio mit einem Product Key
 
-1.  Wählen Sie **Datei > Kontoeinstellungen** aus, um das Dialogfeld „Kontoeinstellungen“ zu öffnen, und klicken Sie auf den Link „**Mit einem Product Key lizenzieren**“.
+1. Wählen Sie **Datei > Kontoeinstellungen** aus, um das Dialogfeld „Kontoeinstellungen“ zu öffnen, und klicken Sie auf den Link „**Mit einem Product Key lizenzieren**“.
 
-2.  Geben Sie den Product Key an der dafür vorgesehenen Stelle ein.
+2. Geben Sie den Product Key an der dafür vorgesehenen Stelle ein.
 
 > [!TIP]
 >  Vorabversionen von Visual Studio verfügen über keine Product Keys. Sie müssen sich bei der IDE-Schnittstelle anmelden, um Vorabversionen zu verwenden.
@@ -68,9 +68,9 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
 ### <a name="updating-expired-licenses"></a>Aktualisieren abgelaufener Lizenzen
  Wenn Ihr Abonnement vollständig abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie folgende Schritte ausführen:
 
-1.  Sie müssen Ihr Abonnement verlängern. Wechseln Sie für weitere Informationen über die verwendete Lizenz zu Datei > und dem Dialogfeld „Kontoeinstellungen“. Die Lizenzinformationen werden auf der rechten Seite dieses Dialogfensters angezeigt.
+1. Sie müssen Ihr Abonnement verlängern. Wechseln Sie für weitere Informationen über die verwendete Lizenz zu Datei > und dem Dialogfeld „Kontoeinstellungen“. Die Lizenzinformationen werden auf der rechten Seite dieses Dialogfensters angezeigt.
 
-2.  Wenn Sie über ein anderes mit einem anderen Konto verknüpftes Abonnement verfügen, fügen Sie dieses Konto der Liste „Alle Konten“ auf der linken Seite unter „Datei“ im Dialogfenster „Kontoeinstellungen“ hinzu, indem Sie auf den Link „Kontos hinzufügen“ klicken.
+2. Wenn Sie über ein anderes mit einem anderen Konto verknüpftes Abonnement verfügen, fügen Sie dieses Konto der Liste „Alle Konten“ auf der linken Seite unter „Datei“ im Dialogfenster „Kontoeinstellungen“ hinzu, indem Sie auf den Link „Kontos hinzufügen“ klicken.
 
 ## <a name="see-also"></a>Siehe auch
  [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md)

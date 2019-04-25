@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223389"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856592"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
 Sie können mithilfe von Visual Studio JavaScript- und TypeScript-Code debuggen. Sie können Breakpoints festlegen und erreichen, den Debugger anfügen, Variablen untersuchen, die Aufrufliste anzeigen und andere Debugfeatures verwenden.
 
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 ## <a name="debug-server-side-script"></a>Debuggen von serverseitigen Skripts
 
@@ -60,6 +60,11 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
     `chrome.exe --remote-debugging-port=9222`
 
     Dadurch wird Chrome mit aktiviertem Debuggen gestartet.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie in der **Debuggen**-Symbolleiste die Option **Browserauswahl…** und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Wechseln Sie zu Visual Studio, und legen Sie in Ihrem Quellcode einen Breakpoint fest. (Legen Sie den Breakpoint in einer Codezeile fest, in der dies zulässig ist, also z. B. in einer `return`-Anweisung oder einer `var`-Deklaration.)
 
@@ -101,7 +106,7 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
     * Wenn Sie Code in einer transpilierten JavaScript-Datei (z. B. *app-bundle.js*) unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *Dateiname.js.map*.
 
      > [!TIP]
-     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie in Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
+     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angefügt haben, können Sie schnell erneut an diesen Prozess anfügen, indem Sie **Debuggen** > **Erneut an Prozess anfügen** auswählen.
 
 ## <a name="generate_sourcemaps"></a> Generieren von Quellzuordnungen zum Debuggen
 

@@ -3,16 +3,16 @@ title: Einführung in Azure Functions
 description: Verwenden von Azure-Funktionen in Visual Studio für Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 04/02/2019
+ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857242"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568372"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -20,7 +20,7 @@ Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – 
 
 ## <a name="requirements"></a>Anforderungen
 
-Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** und höheren Versionen enthalten.
+Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** enthalten.
 
 Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azure-Abonnement, das Sie kostenlos über [https://azure.com/free](https://azure.com/free) erhalten.
 
@@ -34,10 +34,6 @@ Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azur
 3. Wählen Sie die anfängliche Azure Functions-Vorlage, die Sie verwenden möchten, geben den Funktionsnamen ein, und klicken Sie auf **Weiter**.
 
     ![Dialogfeld „Neues Projekt“ mit Azure Functions-Vorlagen](media/azure-functions-image2.png)
-
-    > [!TIP]
-    > Obwohl die gebündelte Azure Functions-Runtime und die Vorlagen (CLI) so aktuell wie möglich gehalten werden, veralten sie unvermeidlich. Bei der Erstellung eines neuen Projekts in Azure Functions, überprüft Visual Studio für Mac, ob CLI-Updates vorhanden sind, und informiert Sie gegebenenfalls (siehe Bild unten). Klicken Sie einfach auf die Schaltfläche, um die aktualisierten Vorlagen herunterzuladen.
-    > ![Screenshot: Dialogfeld „Neues Projekt“ mit dem Hinweis, dass Azure Functions-Updates verfügbar sind](media/azure-functions-update.png)
 
     Abhängig vom Typ der von Ihnen gewählten Funktion werden Sie auf der nächsten Seite aufgefordert, Details wie beispielsweise Zugriffsrechte einzugeben, wie im folgenden Bild dargestellt:
 
@@ -103,9 +99,12 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
     |Einstellung  |Beschreibung  |
     |---------|---------|
     |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
-    |**Abonnement**|Das zu verwendende Azure-Abonnement.|
+    |**Abonnement**|Das zu verwendende Azure-Abonnement|
     |**[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)**|Der Name der Ressourcengruppe, in der Ihre Funktions-App erstellt werden soll. Wählen Sie **+** aus, um eine neue Ressourcengruppe zu erstellen.|
-    |**[Service-Plan](/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
+    |**[Serviceplan](/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
+
+    > [!CAUTION]
+    > In der Version 7.6 von Visual Studio für Mac gibt es einen Fehler, der dazu führt, dass bei der Veröffentlichung ein Bereitstellungsfehler auftritt. Dies ist der Fall, wenn Sie einen benutzerdefinierten Serviceplan erstellen möchten, bei dem **Preise** auf **Verbrauch** gesetzt ist. Dies wird in der nächsten Dienstversion behoben.
 
 5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
 
@@ -117,11 +116,14 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
     ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image12.png)
 
+> [!CAUTION]
+> Es gibt einen Fehler in der Version 7.6 von Visual Studio für Mac, bei dem `FUNCTIONS_EXTENSION_VERSION` nicht korrekt auf „beta“ gesetzt ist, was bedeutet, dass Ihre Funktion möglicherweise nicht ausgeführt wird. Um dies zu beheben, wechseln Sie zu den [Functions-App-Einstellungen](#function-app-settings) und ändern den Wert für `FUNCTIONS_EXTENSION_VERSION` von „-1“ in „beta“.
+
 ## <a name="function-app-settings"></a>Funktions-App-Einstellungen
 
 Alle Einstellungen, die Sie in der Datei local.settings.json hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
 
-Wenn Sie auf Ihre App-Einstellungen zugreifen möchten, wechseln Sie zum Azure-Portal unter [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Wählen Sie unter **Funktions-Apps** die Option **Funktions-Apps** aus, und markieren Sie Ihren Funktionsnamen:
+Um auf Ihre App-Einstellungen zuzugreifen, wechseln Sie zum Azure-Portal unter [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Wählen Sie unter **Funktions-Apps** die Option **Funktions-Apps** aus, und markieren Sie Ihren Funktionsnamen:
 
 ![Azure Functions-Menü](media/azure-functions-image9.png)
 
@@ -131,7 +133,7 @@ Wählen Sie auf der Registerkarte **Übersicht** unter **Konfigurierte Features*
 
 Von hier aus können Sie Anwendungseinstellungen für die Funktions-App festlegen, d.h. neue Anwendungseinstellungen hinzufügen oder bestehende ändern:
 
-![Screenshot: Bereich für Anwendungseinstellungen im Azure-Portal](media/azure-functions-image11.png)
+![Bereich für Anwendungseinstellungen im Azure-Portal](media/azure-functions-image11.png)
 
 Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCTIONS_EXTENSION_VERSION`. Beim Veröffentlichen aus Visual Studio für Mac sollte dieser Wert auf **beta** gesetzt sein.
 
