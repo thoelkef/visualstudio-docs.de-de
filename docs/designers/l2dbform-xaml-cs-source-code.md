@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893137"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs-Quellcode
 
-Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei *L2DBForm.xaml.cs*. Die in dieser Datei enthaltene <legacyBold>L2XDBForm</legacyBold>-Teilklasse kann in die folgenden drei logischen Abschnitte unterteilt werden: Datenmember und die Ereignishandler `OnRemove` und `OnAddBook` für das Klicken auf Schaltflächen.
+Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei *L2DBForm.xaml.cs*. Die in dieser Datei enthaltene L2XDBForm`OnRemove`-Teilklasse kann in die folgenden drei logischen Abschnitte unterteilt werden: Datenmember und die Ereignishandler `OnAddBook` und  für das Klicken auf Schaltflächen.
 
 ## <a name="data-members"></a>Datenmember
 
 Für die Zuordnung dieser Klasse zu den in *L2DBForm.xaml* verwendeten Fensterressourcen werden zwei private Datenmember verwendet.
 
--   Die `myBooks`-Namespacevariable wird mit `"http://www.mybooks.com"` initialisiert.
+- Die `myBooks`-Namespacevariable wird mit `"http://www.mybooks.com"` initialisiert.
 
--   Der `bookList`-Member wird im Konstruktor mit der folgenden Zeile in die CDATA-Zeichenfolge in *L2DBForm.xaml* initialisiert:
+- Der `bookList`-Member wird im Konstruktor mit der folgenden Zeile in die CDATA-Zeichenfolge in *L2DBForm.xaml* initialisiert:
 
     ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -35,11 +35,11 @@ Für die Zuordnung dieser Klasse zu den in *L2DBForm.xaml* verwendeten Fensterre
 
 Diese Methode enthält die folgenden drei Anweisungen:
 
--   Die erste Bedingungsanweisung wird zur Eingabevalidierung verwendet.
+- Die erste Bedingungsanweisung wird zur Eingabevalidierung verwendet.
 
--   Die zweite Anweisung erstellt aus den Zeichenfolgenwerten, die der Benutzer im Benutzeroberflächenabschnitt **Add New Book** eingegeben hat, ein neues <xref:System.Xml.Linq.XElement>.
+- Die zweite Anweisung erstellt aus den Zeichenfolgenwerten, die der Benutzer im Benutzeroberflächenabschnitt **Add New Book** eingegeben hat, ein neues <xref:System.Xml.Linq.XElement>.
 
--   Die letzte Anweisung fügt dem Datenanbieter in *L2DBForm.xaml* dieses neue Buchelement hinzu. Daraufhin aktualisiert die dynamische Datenbindung automatisch die Benutzeroberfläche mit diesem neuen Element. Zusätzlicher, vom Benutzer bereitgestellter Code ist nicht erforderlich.
+- Die letzte Anweisung fügt dem Datenanbieter in *L2DBForm.xaml* dieses neue Buchelement hinzu. Daraufhin aktualisiert die dynamische Datenbindung automatisch die Benutzeroberfläche mit diesem neuen Element. Zusätzlicher, vom Benutzer bereitgestellter Code ist nicht erforderlich.
 
 ## <a name="onremove-event-handler"></a>Ereignishandler „OnRemove“
 
@@ -47,13 +47,13 @@ Der `OnRemove`-Handler ist aus zwei Gründen komplizierter als der `OnAddBook`-H
 
 Die Hauptarbeit wird aber mit dem Entfernen des ausgewählten Buchelements von lediglich zwei Anweisungen ausgeführt:
 
--   Zunächst wird das dem aktuell ausgewählten Element im Listenfeld zugeordnete Buchelement abgerufen:
+- Zunächst wird das dem aktuell ausgewählten Element im Listenfeld zugeordnete Buchelement abgerufen:
 
     ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   Anschließend wird dieses Element aus dem Datenanbieter gelöscht:
+- Anschließend wird dieses Element aus dem Datenanbieter gelöscht:
 
     ```csharp
     selBook.Remove();

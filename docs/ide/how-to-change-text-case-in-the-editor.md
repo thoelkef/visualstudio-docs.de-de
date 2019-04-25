@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824216"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
 
@@ -27,11 +27,11 @@ Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Klein
 
 ## <a name="to-switch-text-to-upper-case"></a>So ändern Sie Text in Großbuchstaben
 
-1.  Markieren Sie den Text, den Sie konvertieren möchten.
+1. Markieren Sie den Text, den Sie konvertieren möchten.
 
-2.  Wählen Sie im Menü **Bearbeiten** die Option **Erweitert** aus.
+2. Wählen Sie im Menü **Bearbeiten** die Option **Erweitert** aus.
 
-3.  Klicken Sie auf **In Großbuchstaben umwandeln**, um Text in Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
+3. Klicken Sie auf **In Großbuchstaben umwandeln**, um Text in Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
 
     - oder -
 

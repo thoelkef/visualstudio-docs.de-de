@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894184"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Vorgehensweise: Erstellen eines einfachen 3D-Modells
 
 In diesem Artikel wird gezeigt, wie der Modell-Editor zum Erstellen eines einfachen 3D-Modells verwendet wird. Folgende Aktivitäten werden beschrieben:
 
--   Hinzufügen von Objekten in einer Szene
+- Hinzufügen von Objekten in einer Szene
 
--   Flächen und Kanten auswählen
+- Flächen und Kanten auswählen
 
--   Übertragen der Auswahl
+- Übertragen der Auswahl
 
--   Verwenden der Tools **Unterteilen von Flächen** und **Extrudieren von Flächen**
+- Verwenden der Tools **Unterteilen von Flächen** und **Extrudieren von Flächen**
 
--   Verwenden des Befehls **Triangulieren**
+- Verwenden des Befehls **Triangulieren**
 
 ## <a name="create-a-basic-3d-model"></a>Erstellen eines einfachen 3D-Modells
  Sie können den Modell-Editor zum Erstellen und Ändern von 3D-Modellen und -Szenen für Ihre Spiele und Apps verwenden. Die folgenden Schritte zeigen, wie Sie den Modell-Editor verwenden, um ein vereinfachtes 3D-Modell eines Hauses zu erstellen. Ein vereinfachtes Modell kann als Ersatz für die endgültigen Grafikobjekte verwendet werden, die noch erstellt werden. Es dient als ein Gitter zur Kollisionserkennung oder als ein Modell mit niedrigen Details, das verwendet wird, wenn ein Objekt, das es darstellt, zu weit weg ist, um von detaillierterem Rendering zu profitieren.

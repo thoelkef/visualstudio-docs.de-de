@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815469"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systemvoraussetzungen für den Visual Studio-Emulator für Android
 
@@ -26,7 +26,7 @@ Das Setup-Programm versucht bei der Installation des Emulators, diese Voraussetz
 > [!IMPORTANT]
 > Das Setup-Programm für den Emulator überprüft die Voraussetzungen zum Ausführen von Visual Studio-Emulator für Android. Es zeigt Warnungen an, wenn die erforderlichen Komponenten nicht vorhanden sind, es benötigt sie jedoch nicht.
 
-##  <a name="Checklist"></a> Kurze Checkliste
+## <a name="Checklist"></a> Kurze Checkliste
 
 Es folgt eine kurze Checkliste zu den Anforderungen zum Ausführen des Visual Studio-Emulators für Android. Ausführlichere Informationen finden Sie in den nachfolgenden Abschnitten in diesem Thema.
 
@@ -50,11 +50,11 @@ Hyper-V-Anforderungen
 
 - Das BIOS muss folgende Funktionen unterstützen:
 
-  -   Hardwareunterstützte Virtualisierung
+  - Hardwareunterstützte Virtualisierung
 
-  -   SLAT (Second Level Address Translation)
+  - SLAT (Second Level Address Translation)
 
-  -   Datenausführungsverhinderung (DEP, Data Execution Prevention)
+  - Datenausführungsverhinderung (DEP, Data Execution Prevention)
 
 - Unter Windows muss Hyper-V aktiviert ist und ausgeführt werden.
 

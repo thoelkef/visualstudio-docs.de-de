@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995239"
 ---
 # <a name="open-file-command"></a>Befehl „Datei öffnen“
 
@@ -51,7 +51,7 @@ Geben Sie zum Öffnen einer Datei im Quellcode-Editor für das Argument /e:`edit
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Bei der automatischen Vervollständigung wird während der Eingabe eines Pfads versucht, den richtigen Pfad und Dateinamen zu finden.
 

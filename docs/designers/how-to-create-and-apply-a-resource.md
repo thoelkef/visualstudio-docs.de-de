@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b27afce3f27b2a6325f3ee59f5220bac68275c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6622285d985d75c547428163b0b6cdaa8f699fe0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897584"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
 Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren Einheiten namens Ressourcen gespeichert. Stile ermöglichen es Ihnen, Elementeigenschaften festzulegen und diese Einstellungen für ein konsistentes Erscheinungsbild für mehrere Elemente wiederzuverwenden. Eine [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiert die Darstellung eines Steuerelements und kann auch als Ressource angewendet werden. Weitere Informationen finden Sie unter [Schnellstart: Styling controls (Formatieren von Steuerelementen)](http://go.microsoft.com/fwlink/?LinkID=248239) und [QuickStart: Control templates (Schnellstart: Steuerelementvorlagen)](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -25,27 +25,27 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
 ### <a name="to-create-a-new-resource"></a>So erstellen Sie eine neue Ressource
 
-1.  Erstellen Sie mit einer im XAML-Designer geöffneten XAML-Datei ein Element, oder wählen Sie ein Element im Fenster "Dokumentgliederung" aus.
+1. Erstellen Sie mit einer im XAML-Designer geöffneten XAML-Datei ein Element, oder wählen Sie ein Element im Fenster "Dokumentgliederung" aus.
 
-2.  Wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker aus, der als Feldsymbol rechts neben einem Eigenschaftswert angezeigt wird, und wählen Sie dann **In neue Ressource konvertieren** aus. Ein weißes Feldsymbol gibt einen Standardwert an, und ein schwarzes Feldsymbol gibt in der Regel an, dass eine lokale Ressource angewendet wurde.
+2. Wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker aus, der als Feldsymbol rechts neben einem Eigenschaftswert angezeigt wird, und wählen Sie dann **In neue Ressource konvertieren** aus. Ein weißes Feldsymbol gibt einen Standardwert an, und ein schwarzes Feldsymbol gibt in der Regel an, dass eine lokale Ressource angewendet wurde.
 
      Das Dialogfeld für das Erstellen einer Ressource wird angezeigt. Dieses Dialogfeld wird angezeigt, wenn Sie eine Ressource mit einem Pinsel erstellen:
 
      ![Dialogfeld "Ressource erstellen"](../designers/media/xaml_create_resource.png)
 
-3.  Geben Sie im Feld **Name (Schlüssel)** einen Schlüsselnamen ein. Dies ist der Name, den Sie verwenden können, wenn Sie möchten, dass andere Elemente auf die Ressource verweisen.
+3. Geben Sie im Feld **Name (Schlüssel)** einen Schlüsselnamen ein. Dies ist der Name, den Sie verwenden können, wenn Sie möchten, dass andere Elemente auf die Ressource verweisen.
 
-4.  Wählen Sie unter **Definieren in** die Option aus, die angibt, wo die Ressource definiert werden soll:
+4. Wählen Sie unter **Definieren in** die Option aus, die angibt, wo die Ressource definiert werden soll:
 
-    -   Damit die Ressource für alle Dokumente in der Anwendung verfügbar ist, wählen Sie **Anwendung** aus.
+    - Damit die Ressource für alle Dokumente in der Anwendung verfügbar ist, wählen Sie **Anwendung** aus.
 
-    -   Damit die Ressource nur für das aktuelle Dokument zur Verfügung steht, wählen Sie **Dieses Dokument** aus.
+    - Damit die Ressource nur für das aktuelle Dokument zur Verfügung steht, wählen Sie **Dieses Dokument** aus.
 
-    -   Um die Ressource nur für das Element zur Verfügung zu stellen, aus dem die Ressource oder die dazugehörigen untergeordneten Elemente erstellt wurden, wählen Sie **Dieses Dokument** und anschließend in der Dropdownliste **Element**: **Name** aus.
+    - Um die Ressource nur für das Element zur Verfügung zu stellen, aus dem die Ressource oder die dazugehörigen untergeordneten Elemente erstellt wurden, wählen Sie **Dieses Dokument** und anschließend in der Dropdownliste **Element**: **Name** aus.
 
-    -   Um die Ressource in einer Ressourcenverzeichnisdatei zu definieren, die in anderen Projekten wiederverwendet werden kann, klicken Sie auf **Ressourcenverzeichnis**, und wählen Sie dann eine vorhandene Ressourcenverzeichnisdatei, z.B. **StandardStyles.xaml**, in der Dropdownliste aus.
+    - Um die Ressource in einer Ressourcenverzeichnisdatei zu definieren, die in anderen Projekten wiederverwendet werden kann, klicken Sie auf **Ressourcenverzeichnis**, und wählen Sie dann eine vorhandene Ressourcenverzeichnisdatei, z.B. **StandardStyles.xaml**, in der Dropdownliste aus.
 
-5.  Klicken Sie auf **OK**, um die Ressource zu erstellen und auf das Element anzuwenden, aus dem Sie sie erstellt haben.
+5. Klicken Sie auf **OK**, um die Ressource zu erstellen und auf das Element anzuwenden, aus dem Sie sie erstellt haben.
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>So wenden Sie eine Ressource auf ein Element oder auf eine Eigenschaft an
 
@@ -66,11 +66,11 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
 
 ### <a name="to-edit-a-resource"></a>So bearbeiten Sie eine Ressource
 
-1.  Wählen Sie ein Element auf der Zeichenfläche oder im Fenster "Dokumentgliederung" aus.
+1. Wählen Sie ein Element auf der Zeichenfläche oder im Fenster "Dokumentgliederung" aus.
 
-2.  Wählen Sie den Eigenschaftenmarker „Standard“ oder „Lokal“ rechts neben der Eigenschaft im Eigenschaftenfenster aus, und wählen Sie dann **Ressource bearbeiten** zum Öffnen des Dialogfelds **Ressource bearbeiten** aus.
+2. Wählen Sie den Eigenschaftenmarker „Standard“ oder „Lokal“ rechts neben der Eigenschaft im Eigenschaftenfenster aus, und wählen Sie dann **Ressource bearbeiten** zum Öffnen des Dialogfelds **Ressource bearbeiten** aus.
 
-3.  Ändern Sie die Optionen für die Ressource.
+3. Ändern Sie die Optionen für die Ressource.
 
 ## <a name="see-also"></a>Siehe auch
 

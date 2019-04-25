@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950175"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Vorgehensweise: Erstellen eines Anforderungsebenen-Plug-Ins
 
@@ -30,23 +30,23 @@ Sie können benutzerdefinierte Webleistungstestanforderungs-Plug-Ins mit den auf
 
 ## <a name="to-create-a-request-level-plug-in"></a>So erstellen Sie ein Anforderungsebenen-Plug-In
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, wählen Sie **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, wählen Sie **Hinzufügen** aus, und klicken Sie anschließend auf **Neues Projekt**.
 
 2. Erstellen Sie ein neues **Klassenbibliotheksprojekt**.
 
-3.  Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
+3. Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-4.  Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus. Klicken Sie dann auf **OK**.
+4. Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus. Klicken Sie dann auf **OK**.
 
      Der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird zum Ordner **Verweise** im **Projektmappen-Explorer** hinzugefügt.
 
-5.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Anforderungstest-Plug-In für den Webleistungstest hinzufügen möchten. Klicken Sie auf **Verweis hinzufügen**.
+5. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Anforderungstest-Plug-In für den Webleistungstest hinzufügen möchten. Klicken Sie auf **Verweis hinzufügen**.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-6.  Klicken Sie auf die Registerkarte **Projekte**, wählen Sie das **Klassenbibliotheksprojekt** aus, und klicken Sie anschließend auf **OK**.
+6. Klicken Sie auf die Registerkarte **Projekte**, wählen Sie das **Klassenbibliotheksprojekt** aus, und klicken Sie anschließend auf **OK**.
 
 7. Schreiben Sie im **Code-Editor** den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> abgeleitet wird.
 

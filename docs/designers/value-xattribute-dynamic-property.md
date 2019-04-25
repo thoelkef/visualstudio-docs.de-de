@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892819"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (dynamische XAttribute-Eigenschaft)
 
@@ -38,7 +38,7 @@ Ein <xref:System.String>-Objekt, das den Wert dieses Attributs enthält.
 | - |---------------|
 |<xref:System.ArgumentNullException>|Wenn dieser Ausnahmetyp festgelegt wird, ist `value` `null`.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Diese Eigenschaft entspricht der <xref:System.Xml.Linq.XAttribute.Value%2A>-Eigenschaft der <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>-Klasse, wobei diese dynamische Eigenschaft auch Änderungsbenachrichtigungen unterstützt.
 

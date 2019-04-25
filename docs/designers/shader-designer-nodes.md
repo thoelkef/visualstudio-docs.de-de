@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844228"
 ---
 # <a name="shader-designer-nodes"></a>Shader-Designer-Knoten
 Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschiedenen Shader-Designer-Knoten, die Sie zum Erstellen von grafischen Effekten verwenden können.
@@ -27,15 +27,15 @@ Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschi
 ### <a name="promotion-of-inputs"></a>Heraufstufung von Eingaben
  Da der Shader-Designer letztendlich HLSL-Quellcode generieren muss, damit der Effekt in einem Spiel oder einer App verwendet werden kann, sind Shader-Designerknoten Teil der Regeln zur Typerweiterung, die HLSL verwendet. Da die Grafikhardware hauptsächlich mit Gleitkommawerten arbeitet, ist die Typerweiterung zwischen verschiedenen Typen (z.B. von `int` auf `float` oder von `float` auf `double`) eher ungewöhnlich. Da Grafikhardware den gleichen Vorgang auf mehrere Informationspakete gleichzeitig anwendet, findet eine andere Art der Heraufstufung statt, bei der kürzere Eingabewerte erweitert werden, um sie an die längsten Eingabewerte anzugleichen. Auf welche Weise die Eingabe verlängert wird hängt von deren Typ und dem Vorgang an sich ab:
 
--   **Wenn der kleinere Typ ein Skalarwert ist, dann:**
+- **Wenn der kleinere Typ ein Skalarwert ist, dann:**
 
      Ist der Wert des Skalars in einen Vektor repliziert, der die gleiche Größe hat wie die größere Eingabe. Beispielsweise wird die Skalareingabe 5,0 zum Vektor (5,0, 5,0, 5,0), wenn die längste Eingabe des Vorgangs ein Drei-Elemente-Vektor ist, unabhängig davon, um welchen Vorgang es sich handelt.
 
--   **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang multiplikativ ist (\*, /, %, etc.), dann:**
+- **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang multiplikativ ist (\*, /, %, etc.), dann:**
 
      Wird der Wert des Vektors in die führenden Elemente eines Vektors kopiert, der der Größe der größeren Eingabe entspricht, und die nachstehenden Elemente sind auf 1,0 festgelegt. Beispielsweise wird die Vektoreingabe (5,0, 5,0) zum Vektor (5,0, 5,0, 1,0, 1,0), wenn er von einem Vier-Elemente-Vektor multipliziert werden soll. Dabei bleiben jeweils die dritten und vierten Elemente der Ausgabe erhalten, indem das neutrale Element der Multiplikation 1,0 verwendet wird.
 
--   **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang additiv ist (+, –, etc.), dann:**
+- **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang additiv ist (+, –, etc.), dann:**
 
      Der Wert des Vektors wird in die führenden Elemente eines Vektors kopiert, der der Größe der größeren Eingabe entspricht, und die nachstehenden Elemente sind auf 0,0 festgelegt. Beispielsweise wird die Vektoreingabe (5,0, 5,0) zum Vektor (5,0, 5,0, 0,0, 0,0), wenn er von einem Vier-Elemente-Vektor multipliziert werden soll. Dabei bleiben jeweils die dritten und vierten Elemente der Ausgabe erhalten, indem die additive Identität 0,0 verwendet wird.
 

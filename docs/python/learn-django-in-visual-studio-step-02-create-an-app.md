@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958183"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -51,8 +51,8 @@ Verwenden Sie eine der Methoden, und erstellen Sie eine App mit dem Namen „Hel
 | Element | Beschreibung |
 | --- | --- |
 | **\_\_init\_\_.py** | Die Datei, die die App als Paket identifiziert. |
-| **Migrationen** | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei *\_\_init\_\_.py* (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
-| **Vorlagen** | Ein Ordner für Django-Seitenvorlagen, der eine einzelne *index.html*-Datei in einem Ordner enthält, dessen Name mit dem der App übereinstimmt. (In Visual Studio 2017 Version 15.7 und früher ist die Datei direkt unter *Vorlagen* enthalten und Schritt 2-4 weist Sie an, den Unterordner zu erstellen.) Vorlagen sind HTML-Blöcke, in denen Sichten Informationen hinzufügen können, um eine Seite dynamisch zu rendern. „Variablen“ von Seitenvorlagen, z.B. `{{ content }}` in *index.html*, sind Platzhalter für dynamische Werte, wie später in diesem Artikel (Schritt 2) erläutert wird. Django-Apps erstellen in der Regel einen Namespace für ihre Vorlagen, indem sie sie in einen Unterordner stellen, der mit dem Namen der App übereinstimmt. |
+| **Migrations** | Ordner, in dem Django Skripts speichert, die die Datenbank aktualisieren und an den Änderungen an Modellen ausrichten. Anschließend wenden die Migrationstools von Django die notwendigen Änderungen auf Vorversionen der Datenbank an, sodass sie mit den aktuellen Modellen übereinstimmen. Mithilfe von Migrationen konzentrieren Sie sich weiterhin auf Ihre Modelle und lassen Django das zugrunde liegende Datenbankschema verarbeiten. Migrationen werden in Schritt 6 erörtert. Momentan enthält der Ordner einfach eine Datei *\_\_init\_\_.py* (die angibt, dass der Ordner ein eigenes Python-Paket definiert). |
+| **Templates** (Vorlagen) | Ein Ordner für Django-Seitenvorlagen, der eine einzelne *index.html*-Datei in einem Ordner enthält, dessen Name mit dem der App übereinstimmt. (In Visual Studio 2017 Version 15.7 und früher ist die Datei direkt unter *Vorlagen* enthalten und Schritt 2-4 weist Sie an, den Unterordner zu erstellen.) Vorlagen sind HTML-Blöcke, in denen Sichten Informationen hinzufügen können, um eine Seite dynamisch zu rendern. „Variablen“ von Seitenvorlagen, z.B. `{{ content }}` in *index.html*, sind Platzhalter für dynamische Werte, wie später in diesem Artikel (Schritt 2) erläutert wird. Django-Apps erstellen in der Regel einen Namespace für ihre Vorlagen, indem sie sie in einen Unterordner stellen, der mit dem Namen der App übereinstimmt. |
 | **admin.py** | Python-Datei, in die Sie die Verwaltungsschnittstelle (siehe Schritt 6) der App erweitern, mit der Sie ein Seeding für Daten in einer Datenbank ausführen und Daten in einer Datenbank bearbeiten können. Diese Datei enthält zunächst nur die Anweisung `from django.contrib import admin`. Django enthält standardmäßig eine Standard-Verwaltungsschnittstelle über Einträge in der Datei *settings.py* des Django-Projekts, die Sie durch Auskommentieren vorhandener Einträge in *urls.py* aktivieren können. |
 | **apps.py** | Ein Python-Datei, die eine Konfigurationsklasse für die App definiert (weitere Informationen finden Sie im Anschluss an die Tabelle). |
 | **models.py** | Modelle sind Datenobjekte, die von Funktionen identifiziert werden, über die Ansichten mit der zugrunde liegenden Datenbank der App interagieren (siehe Schritt 6). Django stellt die Datenbankverbindungsschicht bereit, sodass sich Apps nicht selbst mit diesen Details befassen müssen. Die Datei *models.py* ist ein Standard-Ausgangspunkt für die Erstellung Ihrer Modelle und enthält zunächst nur die Anweisung `from django.db import models`. |

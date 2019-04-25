@@ -33,11 +33,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817583"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.
@@ -59,7 +59,7 @@ Wenn diese Option aktiviert ist, wird eine vertikale Scrollleiste angezeigt, mit
 
 Wählen Sie aus, ob die vertikale Scrollleiste die folgenden Anmerkungen anzeigen soll:
 
-- wird geändert
+- Änderungen
 - Markierungen
 - Fehler
 - Position der Einfügemarke

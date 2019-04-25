@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429001"
 ---
 # <a name="how-to-manage-editor-windows"></a>Vorgehensweise: Verwalten von Editor-Fenstern
 
@@ -33,9 +33,9 @@ Eine Instanz eines Editorfensters kann für die einfachere Bearbeitung in zwei s
 
 ### <a name="to-split-a-pane"></a>So teilen Sie einen Bereich
 
-1.  Klicken Sie in das Editorfenster, um dort den Fokus zu setzen.
+1. Klicken Sie in das Editorfenster, um dort den Fokus zu setzen.
 
-2.  Wählen Sie im Menü **Fenster** die Option **Teilen** aus.
+2. Wählen Sie im Menü **Fenster** die Option **Teilen** aus.
 
      Der Bearbeitungsbereich ist in zwei Bereiche aufgeteilt, die durch eine Teilerleiste getrennt sind. Sie können in jedem Bereich unabhängig scrollen, um verschiedene Teile des aktiven Dokuments gleichzeitig anzuzeigen und zu bearbeiten. Alle Änderungen, die in einem Bereich vorgenommen werden, spiegeln sich auch im anderen wider.
 
@@ -44,7 +44,7 @@ Eine Instanz eines Editorfensters kann für die einfachere Bearbeitung in zwei s
 
 ### <a name="to-return-to-single-pane-view"></a>So kehren Sie in die Anzeige mit nur einem Bereich zurück
 
--   Wählen Sie im Menü **Fenster** die Option **Teilung aufheben** aus.
+- Wählen Sie im Menü **Fenster** die Option **Teilung aufheben** aus.
 
 ## <a name="create-new-windows"></a>Erstellen neuer Fenster
 

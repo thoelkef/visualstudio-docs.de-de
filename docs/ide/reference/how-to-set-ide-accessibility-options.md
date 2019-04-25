@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789799"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen
 
@@ -46,11 +46,11 @@ ms.locfileid: "56317184"
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>So ändern Sie die Textgröße in textbasierten Toolfenstern und Editoren
 
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
-2.  Wählen Sie im Ordner **Umgebung** die Option **Schriftarten und Farben** aus.
+2. Wählen Sie im Ordner **Umgebung** die Option **Schriftarten und Farben** aus.
 
-3.  Wählen Sie im Dropdownmenü **Einstellungen anzeigen für** eine Option aus.
+3. Wählen Sie im Dropdownmenü **Einstellungen anzeigen für** eine Option aus.
 
      Um die Schriftgröße von Text in einem Editor zu ändern, klicken Sie auf den **Text-Editor**.
 
@@ -60,16 +60,16 @@ ms.locfileid: "56317184"
 
      Um die Schriftgröße von Text in den Popupfenstern für die automatische Vervollständigung von Anweisungen zu ändern, wählen Sie die Option **Anweisungsvervollständigung** aus.
 
-4.  Wählen Sie unter **Elemente anzeigen** die Option **Nur Text** aus.
+4. Wählen Sie unter **Elemente anzeigen** die Option **Nur Text** aus.
 
-5.  Wählen Sie in der Dropdownliste **Schriftart** eine andere Schriftart aus.
+5. Wählen Sie in der Dropdownliste **Schriftart** eine andere Schriftart aus.
 
-6.  Wählen Sie in der Dropdownliste Schriftgrad eine andere **Schriftgröße** aus.
+6. Wählen Sie in der Dropdownliste Schriftgrad eine andere **Schriftgröße** aus.
 
     > [!NOTE]
     > Um die Textgröße für textbasierte Toolfenster und Editoren zurückzusetzen, wählen Sie die Option **Standard verwenden** aus.
 
-7.  Klicken Sie auf **OK**.
+7. Klicken Sie auf **OK**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Ändern der Farben, die in der IDE verwendet werden
 
@@ -80,17 +80,17 @@ ms.locfileid: "56317184"
 
 #### <a name="to-change-the-color-of-items-in-the-editor"></a>So ändern Sie die Farbe von Elementen im Editor
 
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
-2.  Klicken Sie im Ordner **Umgebung** auf die Option **Schriftarten und Farben**.
+2. Klicken Sie im Ordner **Umgebung** auf die Option **Schriftarten und Farben**.
 
-3.  Wählen Sie unter **Einstellungen anzeigen** für die Option **Text-Editor** aus.
+3. Wählen Sie unter **Einstellungen anzeigen** für die Option **Text-Editor** aus.
 
-4.  Wählen Sie unter **Elemente anzeigen** das Element aus, das Sie anpassen möchten, z.B. **Nur Text**, **Indikatorrand**, **Sichtbare Leerstellen**, **HTML-Attributname** oder **XML-Attribut**.
+4. Wählen Sie unter **Elemente anzeigen** das Element aus, das Sie anpassen möchten, z.B. **Nur Text**, **Indikatorrand**, **Sichtbare Leerstellen**, **HTML-Attributname** oder **XML-Attribut**.
 
-5.  Wählen Sie die Anzeigeeinstellungen in den folgenden Optionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.
+5. Wählen Sie die Anzeigeeinstellungen in den folgenden Optionen aus: **Elementvordergrund**, **Elementhintergrund** und **Fett**.
 
-6.  Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
 ## <a name="toolbars"></a>Symbolleisten
 
@@ -98,23 +98,23 @@ ms.locfileid: "56317184"
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>So weisen Sie Symbolleisten-Schaltflächen Text zu
 
-1.  Wählen Sie im Menü **Extras** die Option **Anpassen**.
+1. Wählen Sie im Menü **Extras** die Option **Anpassen**.
 
-2.  Wählen Sie im Dialogfeld **Anpassen** die Registerkarte **Befehle** aus.
+2. Wählen Sie im Dialogfeld **Anpassen** die Registerkarte **Befehle** aus.
 
-3.  Wählen Sie die Option **Symbolleiste** und anschließend den Namen der Symbolleiste aus, in der sich die Schaltfläche befindet, für die Text angezeigt werden soll.
+3. Wählen Sie die Option **Symbolleiste** und anschließend den Namen der Symbolleiste aus, in der sich die Schaltfläche befindet, für die Text angezeigt werden soll.
 
-4.  Wählen Sie in der Liste den Befehl aus, den Sie ändern möchten.
+4. Wählen Sie in der Liste den Befehl aus, den Sie ändern möchten.
 
-5.  Wählen Sie **Auswahl ändern** aus.
+5. Wählen Sie **Auswahl ändern** aus.
 
-6.  Wählen Sie **Symbol und Text** aus.
+6. Wählen Sie **Symbol und Text** aus.
 
 ### <a name="to-modify-the-displayed-text-in-a-button"></a>So ändern Sie den in einer Schaltfläche angezeigten Text
 
-1.  Wählen Sie erneut **Auswahl ändern** aus.
+1. Wählen Sie erneut **Auswahl ändern** aus.
 
-2.  Geben Sie direkt neben **Name** eine neue Beschriftung für die ausgewählte Schaltfläche ein.
+2. Geben Sie direkt neben **Name** eine neue Beschriftung für die ausgewählte Schaltfläche ein.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779018"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Optionen, Text-Editor, HTML (Web Forms), Formatierung
 
@@ -41,7 +41,6 @@ Diese Optionen geben an, wie beim Markup für Webserversteuerelemente mit der Gr
 |**Kleinbuchstaben**|Elementnamen werden in Kleinbuchstaben umformatiert.|
 |**Assemblydefinition**|Die Groß-/Kleinschreibung eines Elements wird dadurch bestimmt, wie dieses in der entsprechenden Typklasse definiert ist.|
 
-
 **Clienttag, Clientattribute**
 
 Diese Optionen geben an, ob bei der automatischen Formatierung die Schreibweise der Namen von HTML-Attributen und -Eigenschaften in Groß- oder Kleinschreibung geändert wird oder nicht.
@@ -51,7 +50,6 @@ Diese Optionen geben an, ob bei der automatischen Formatierung die Schreibweise 
 |**Wie eingegeben**|Die Groß-/Kleinschreibung des Attributs entspricht Ihren Eingaben.|
 |**Großbuchstaben**|Die Namen der Attribute werden in Großbuchstaben umformatiert.|
 |**Kleinbuchstaben**|Die Namen der Attribute werden in Kleinbuchstaben umformatiert.|
-
 
 ## <a name="automatic-formatting-options"></a>Automatische Formatierungsoptionen
 
@@ -65,7 +63,6 @@ Diese Optionen legen fest, ob der Quellansicht-Editor während der automatischen
 - **Anführungszeichen für Attributwerte bei der Eingabe einfügen**
 
    Bei Auswahl dieser Option werden Attribute bei der Eingabe automatisch vom Editor in Anführungszeichen eingeschlossen (z.B.: ID="Select1"). Wenn Sie Anführungszeichen manuell in das Markup einfügen möchten, können Sie diese Option deaktivieren.
-
 
    > [!NOTE]
    > Unabhängig von der Auswahl dieser Option bleiben alle im Markup vorhandenen Anführungszeichen erhalten. Anführungszeichen werden niemals entfernt.

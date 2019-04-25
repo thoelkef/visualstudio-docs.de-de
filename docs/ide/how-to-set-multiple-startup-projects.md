@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988bc52cbf163c4b7e0f4c8d821a769f21df0413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4675977872057010e4279f88739981505bf73e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946869"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Vorgehensweise: Festlegen mehrerer Startprojekte
 
@@ -23,13 +23,13 @@ In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des 
 
 ## <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest
 
-1.  Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (oberster Knoten).
+1. Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (oberster Knoten).
 
-2.  Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften**. Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.
+2. Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften**. Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.
 
-3.  Erweitern Sie den Knoten **Allgemeine Eigenschaften**, und klicken Sie auf **Startprojekt**.
+3. Erweitern Sie den Knoten **Allgemeine Eigenschaften**, und klicken Sie auf **Startprojekt**.
 
-4.  Klicken Sie auf die Option **Mehrere Startprojekte**, und legen Sie die entsprechenden Aktionen fest.
+4. Klicken Sie auf die Option **Mehrere Startprojekte**, und legen Sie die entsprechenden Aktionen fest.
 
 ## <a name="see-also"></a>Siehe auch
 

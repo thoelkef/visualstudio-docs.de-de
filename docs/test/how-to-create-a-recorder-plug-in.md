@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950253"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Vorgehensweise: Erstellen eines Aufzeichnungs-Plug-Ins
 
@@ -33,20 +33,20 @@ In den folgenden Prozeduren wird beschrieben, wie Sie den rudimentären Code fü
 
 ### <a name="to-create-a-recorder-plug-in"></a>So erstellen Sie ein Aufzeichnungs-Plug-In
 
-1.  Öffnen Sie eine Projektmappe, die das Webleistungs- und Auslastungstestprojekt mit dem Webleistungstest enthält, für den Sie ein Aufzeichnungs-Plug-In erstellen möchten.
+1. Öffnen Sie eine Projektmappe, die das Webleistungs- und Auslastungstestprojekt mit dem Webleistungstest enthält, für den Sie ein Aufzeichnungs-Plug-In erstellen möchten.
 
-2.  Fügen Sie der Projektmappe ein neues **Klassenbibliotheksprojekt** hinzu.
+2. Fügen Sie der Projektmappe ein neues **Klassenbibliotheksprojekt** hinzu.
 
-3.  Klicken Sie im **Projektmappen-Explorer** im Ordner des neuen Klassenbibliotheksprojekts mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
+3. Klicken Sie im **Projektmappen-Explorer** im Ordner des neuen Klassenbibliotheksprojekts mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
     > [!TIP]
     > Ein Beispiel für den Ordner eines neuen Klassenbibliothekprojekts ist **RecorderPlugins**.
 
      Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-4.  Wählen Sie die Registerkarte **.NET** aus.
+4. Wählen Sie die Registerkarte **.NET** aus.
 
-5.  Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus und klicken dann auf **OK**.
+5. Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus und klicken dann auf **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird im **Projektmappen-Explorer** zum Ordner **Verweise** hinzugefügt.
 
@@ -88,11 +88,11 @@ Nachdem Sie das Aufzeichnungs-Plug-In kompiliert haben, speichern Sie die sich e
 
 ### <a name="execute-the-recorder-plug-in"></a>Ausführen des Aufzeichnungs-Plug-Ins
 
-1.  Erstellen Sie einen neuen Webleistungstest.
+1. Erstellen Sie einen neuen Webleistungstest.
 
      Das Dialogfeld **WebTestRecordPlugins aktivieren** wird angezeigt.
 
-2.  Aktivieren Sie das Kontrollkästchen für das Aufzeichnungs-Plug-In, und klicken Sie auf **OK**.
+2. Aktivieren Sie das Kontrollkästchen für das Aufzeichnungs-Plug-In, und klicken Sie auf **OK**.
 
      Nachdem der Webleistungstest die Aufzeichnung abgeschlossen hat, wird das neue Aufzeichnungs-Plug-In ausgeführt.
 

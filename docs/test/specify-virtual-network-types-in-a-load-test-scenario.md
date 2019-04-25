@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990656"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Angeben von virtuellen Netzwerktypen in einem Auslastungstestszenario
 
@@ -41,17 +41,17 @@ Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test
 
 Visual Studio verwendet eine softwarebasierte echte Netzwerkemulation für alle Testtypen, einschließlich Auslastungstests. Wahre Netzwerkemulation simuliert Netzwerkbedingungen durch direkte Bearbeitung der Netzwerkpakete. Der wahre Netzwerkemulator kann das Verhalten von Kabel- und Funknetzwerken mit einem zuverlässigen physischen Kanal (z. B. einem Ethernet) emulieren. Die folgenden Netzwerkattribute werden in wahre Netzwerkemulation integriert:
 
--   Round-Trip-Zeit für das Netzwerk (Wartezeit)
+- Round-Trip-Zeit für das Netzwerk (Wartezeit)
 
--   Die Menge an verfügbarer Bandbreite
+- Die Menge an verfügbarer Bandbreite
 
--   Warteschlangenverhalten
+- Warteschlangenverhalten
 
--   Paketverlust
+- Paketverlust
 
--   Neuanordnung von Paketen
+- Neuanordnung von Paketen
 
--   Fehlerweitergabe
+- Fehlerweitergabe
 
 Wahre Netzwerkemulation bietet auch Flexibilität beim Filtern von Netzwerkpaketen auf Grundlage von IP-Adressen oder Protokollen, z. B. TCP, UDP und ICMP.
 
@@ -59,30 +59,30 @@ Wahre Netzwerkemulation kann von netzwerkbasierten Anwendungsentwicklern und Tes
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>So fügen Sie einem Szenario neue Netzwerke hinzu
 
-1.  Klicken Sie während des Angebens der Netzwerkmischung für ein Szenario auf **Hinzufügen**.
+1. Klicken Sie während des Angebens der Netzwerkmischung für ein Szenario auf **Hinzufügen**.
 
      Dem Raster wird ein neuer Netzwerkeintrag hinzugefügt.
 
     > [!NOTE]
     > Klicken Sie mit der rechten Maustaste auf ein bereits vorhandenes Szenario, und klicken Sie anschließend auf **Netzwerkmischung bearbeiten**, um das Dialogfeld **Netzwerkmischung bearbeiten** anzuzeigen.
 
-2.  Wählen Sie in der Spalte **Netzwerktyp** den Pfeil für den neuen Eintrag aus. Wählen Sie den gewünschten Netzwerktyp aus.
+2. Wählen Sie in der Spalte **Netzwerktyp** den Pfeil für den neuen Eintrag aus. Wählen Sie den gewünschten Netzwerktyp aus.
 
-3.  (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Wenn Sie keine weiteren Netzwerke hinzufügen möchten, klicken Sie auf **OK**.
+4. Wenn Sie keine weiteren Netzwerke hinzufügen möchten, klicken Sie auf **OK**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>So entfernen Sie Netzwerke aus einem Szenario
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
-2.  Klicken Sie mit der rechten Maustaste auf das Szenario, aus dem ein Netzwerk entfernt werden soll, und klicken Sie auf **Netzwerkmischung bearbeiten**. Das Dialogfeld **Netzwerkmischung bearbeiten** wird angezeigt.
+2. Klicken Sie mit der rechten Maustaste auf das Szenario, aus dem ein Netzwerk entfernt werden soll, und klicken Sie auf **Netzwerkmischung bearbeiten**. Das Dialogfeld **Netzwerkmischung bearbeiten** wird angezeigt.
 
-3.  Wählen Sie das Netzwerk im Raster aus, und klicken Sie dann auf **Entfernen**.
+3. Wählen Sie das Netzwerk im Raster aus, und klicken Sie dann auf **Entfernen**.
 
-4.  (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben. Weitere Details finden Sie in den [Informationen zur Mischungssteuerung](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Wenn Sie keine weiteren Netzwerke entfernen möchten, klicken Sie auf **OK**.
+5. Wenn Sie keine weiteren Netzwerke entfernen möchten, klicken Sie auf **OK**.
 
 ## <a name="about-the-mix-control"></a>Informationen zur Mischungssteuerung
 

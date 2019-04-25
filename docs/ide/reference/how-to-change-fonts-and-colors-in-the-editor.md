@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789591"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben
 
@@ -33,20 +33,20 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, -größe und -farben
 
-1.  Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.
+1. Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.
 
      [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) wird geöffnet.
 
-2.  Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
+2. Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
 
-3.  Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.
+3. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.
 
-4.  Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
+4. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
 
     > [!TIP]
     > Klicken Sie auf **Standardwerte verwenden**, um die Standardeinstellungen wiederherzustellen.
 
-5.  Klicken Sie auf **OK**.
+5. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 
