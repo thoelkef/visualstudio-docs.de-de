@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 100e303df62a1ca9855b891915e43f1fe020555e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28535db3e129029d6767ac969d121ee4cbb1aec5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416543"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.  
   
 > [!IMPORTANT]
->  CommentMarkProfile-Methoden können nur mit der Instrumentierung verwendet werden.  
+> CommentMarkProfile-Methoden können nur mit der Instrumentierung verwendet werden.  
   
 ## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  

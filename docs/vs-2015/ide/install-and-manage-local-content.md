@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412355"
 ---
 # <a name="install-and-manage-local-content"></a>Installieren und Verwalten von lokalen Inhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
 1. Wählen Sie auf der Registerkarte **Inhalt verwalten** das Optionsfeld **Datenträger** aus.  
   
     > [!NOTE]
-    >  Die Option **Datenträger** ist nicht verfügbar, wenn der Administrator keine Berechtigungen zum Ändern der Inhaltsinstallationsquelle erteilt hat. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
+    > Die Option **Datenträger** ist nicht verfügbar, wenn der Administrator keine Berechtigungen zum Ändern der Inhaltsinstallationsquelle erteilt hat. Weitere Informationen finden Sie im [Help Viewer-Administratorhandbuch](../ide/help-viewer-administrator-guide.md).  
   
 2. Führen Sie einen der folgenden Schritte aus:  
   
@@ -60,7 +60,7 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
  Sie können Themen ohne eine Internetverbindung anzeigen, wenn Sie die Inhalte auf dem lokalen Computer herunterladen und installieren.  
   
 > [!IMPORTANT]
->  Zum Installieren von Inhalt müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt.  
+> Zum Installieren von Inhalt müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt.  
   
  Wenn die Visual Studio IDE auf eine andere Sprache als Englisch eingestellt ist, können Sie englische Inhalte, lokalisierte Inhalte oder beides installieren. Es werden jedoch keine Inhalte angezeigt, wenn Sie nur die englische Version installieren und im Dialogfeld **Viewer-Optionen** das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen** deaktivieren.  
   
@@ -80,7 +80,7 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
  Sie können Speicherplatz sparen, indem Sie unerwünschten Inhalt vom Computer entfernen.  
   
 > [!IMPORTANT]
->  Um Inhalte entfernen zu können, müssen Sie über Administratorberechtigungen verfügen.  
+> Um Inhalte entfernen zu können, müssen Sie über Administratorberechtigungen verfügen.  
   
  Es wird kein Inhalt angezeigt, wenn die Sprache von Visual Studio IDE nicht auf Englisch festgelegt ist, Sie lokalisierte Inhalte entfernen und das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen** im Dialogfeld **Viewer-Optionen** deaktiviert ist.  
   
@@ -100,7 +100,7 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
  Auf der Statusleiste wird angegeben, wann Updates für den installierten Inhalt verfügbar sind.  
   
 > [!IMPORTANT]
->  Wenn Sie Help Viewer verwenden möchten, um automatisch nach Onlineupdates zu suchen, öffnen Sie das Dialogfeld **Viewer-Optionen**, und aktivieren Sie dann das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltupdates suchen**.  
+> Wenn Sie Help Viewer verwenden möchten, um automatisch nach Onlineupdates zu suchen, öffnen Sie das Dialogfeld **Viewer-Optionen**, und aktivieren Sie dann das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltupdates suchen**.  
   
 #### <a name="to-update-local-content"></a>So aktualisieren Sie lokale Inhalte  
   
@@ -112,7 +112,7 @@ Durch Verwendung des Microsoft Help Viewer können Sie den Hilfeinhalt, der auf 
  Sie können Speicherplatz sparen, indem Sie installierten Inhalt vom lokalen Computer in eine Netzwerkfreigabe oder in eine andere Partition auf dem lokalen Computer verschieben.  
   
 > [!IMPORTANT]
->  Zum Verschieben von Inhalt müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt.  
+> Zum Verschieben von Inhalt müssen Sie sich mit einem Konto anmelden, das über Administratorberechtigungen verfügt.  
   
 #### <a name="to-move-local-content"></a>So verschieben Sie lokalen Inhalt  
   
