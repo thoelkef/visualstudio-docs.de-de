@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445624"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
     `Hello, world!`  
   
    > [!NOTE]
-   >  Wenn Ihnen die „Hallo“-Nachricht nicht angezeigt wird, speichern Sie die Projektdatei erneut, und führen Sie anschließend die „Hallo“-Aufgabe aus.  
+   > Wenn Ihnen die „Hallo“-Nachricht nicht angezeigt wird, speichern Sie die Projektdatei erneut, und führen Sie anschließend die „Hallo“-Aufgabe aus.  
   
    Durch den Wechsel zwischen dem Code-Editor und dem **Eingabeaufforderungsfenster** können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   

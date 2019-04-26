@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436795"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668190"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann mehrere Elementlisten anhand desselben Elementmetadatenelements in Batches unterteilen. Dadurch können verschiedene Elementlisten einfacher in Batches unterteilt werden, um mehrere Assemblys zu erstellen. Beispielsweise kann eine Elementliste mit CS-Dateien, die in Anwendungsbatches und einen Assemblybatch unterteilt sind, sowie eine Elementliste mit Ressourcendateien vorhanden sein, die in ein Anwendungsbatch und ein Assemblybatch unterteilt ist. In diesem Fall können Sie die Batchverarbeitung nutzen, um diese Elementlisten an eine Aufgabe zu übergeben und sowohl die Anwendung als auch die Assembly zu erstellen.  
   
 > [!NOTE]
->  Wenn eine Elementliste, die an eine Aufgabe übergeben wird, keine Elemente mit dem Metadatenelement enthält, auf das verwiesen wird, werden sämtliche Elemente in dieser Elementliste an jeden Batch übergeben.  
+> Wenn eine Elementliste, die an eine Aufgabe übergeben wird, keine Elemente mit dem Metadatenelement enthält, auf das verwiesen wird, werden sämtliche Elemente in dieser Elementliste an jeden Batch übergeben.  
   
  Im untenstehenden Beispiel wird dargestellt, wie Sie mehrere Elementlisten anhand von Elementmetadatenelementen in Batches unterteilen können. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt. Dadurch, dass `%(Number)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt, und jeder Batch wird einzeln an eine Aufgabe übergeben.  
   

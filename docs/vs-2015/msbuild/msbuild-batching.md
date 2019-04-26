@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439377"
 ---
 # <a name="msbuild-batching"></a>MSBuild-Batchverarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664335"
  Sie geben an, dass [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die Batchverarbeitung mit einer Aufgabe ausführen soll, indem Sie die Notation %(*ItemMetaDataName*) in einem der Attribute der Aufgabe verwenden. Im folgenden Beispiel wird die `Example`-Elementliste basierend auf dem `Color`-Elementmetadatenwert in Batches aufgeteilt, und alle Batches werden separat an die `MyTask`-Aufgabe übergeben.  
   
 > [!NOTE]
->  Wenn Sie an keiner anderen Stelle in den Attributen der Aufgabe auf die Elementliste verweisen oder der Metadatenname mehrdeutig sein kann, können Sie die Notation %(*ItemCollection.ItemMetaDataName*) verwenden, um die Elementmetadaten vollständig für die Batchverarbeitung zu qualifizieren.  
+> Wenn Sie an keiner anderen Stelle in den Attributen der Aufgabe auf die Elementliste verweisen oder der Metadatenname mehrdeutig sein kann, können Sie die Notation %(*ItemCollection.ItemMetaDataName*) verwenden, um die Elementmetadaten vollständig für die Batchverarbeitung zu qualifizieren.  
   
 ```  
 <Project  

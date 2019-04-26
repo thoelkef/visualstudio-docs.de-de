@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419796"
 ---
 # <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59663913"
 Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.  
   
 > [!TIP]
->  Durch Ausführen des Assistenten zum Konfigurieren von Datenquellen werden die meisten Datenelemente automatisch erstellt und konfiguriert. Weitere Informationen finden Sie unter [Erstellen von Datenanwendungen mit Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Durch Ausführen des Assistenten zum Konfigurieren von Datenquellen werden die meisten Datenelemente automatisch erstellt und konfiguriert. Weitere Informationen finden Sie unter [Erstellen von Datenanwendungen mit Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche  
  Um direkt zur .NET Framework-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn das Element in der **Toolbox** hervorgehoben ist, oder klicken Sie auf das Element in der Komponentenleiste des Designers.  

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412307"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
 - [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], wenn Sie in einer AJAX-fähigen ASP.NET-Webanwendung arbeiten.
 
     > [!NOTE]
-    >  Skripts in Ereignishandlerattributen für HTML-Elemente oder in `href`-Attributen definierte Skripts werden von IntelliSense nicht unterstützt.
+    > Skripts in Ereignishandlerattributen für HTML-Elemente oder in `href`-Attributen definierte Skripts werden von IntelliSense nicht unterstützt.
 
 ## <a name="ProcessingIntelliSenseInformation"></a> Verarbeiten von IntelliSense-Informationen
  Um JavaScript-IntelliSense bereitzustellen, führt der Sprachdienst die folgenden Vorgänge aus:
@@ -189,7 +189,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  Bei Skripts innerhalb von Webdienstdateien (.asmx) in Webanwendungsprojekten (WAP) wird JavaScript-IntelliSense nicht unterstützt.
+> Bei Skripts innerhalb von Webdienstdateien (.asmx) in Webanwendungsprojekten (WAP) wird JavaScript-IntelliSense nicht unterstützt.
 
  Das folgende Beispiel zeigt, wie auf ein seitenbasiertes Skript verwiesen wird.
 
@@ -233,18 +233,18 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
   In den meisten Szenarien müssen Sie Verweisgruppen nicht ändern. Wenn Sie Änderungen vornehmen möchten, können Sie Konfigurationseinstellungen für JavaScript-Code-Editor verwenden, um die in den Verweisgruppen enthaltenen Dateien anzugeben. Anleitungen zur Verwendung dieser Funktion finden Sie unter [Optionen, Text-Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
->  Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte und für IntelliSense-[Erweiterungen](#Extensibility) bereitzustellen. Sie können diese Funktion auch für Skripts verwenden, die mithilfe des Skriptladeprogramms zur Laufzeit geladen werden müssen.
+> Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte und für IntelliSense-[Erweiterungen](#Extensibility) bereitzustellen. Sie können diese Funktion auch für Skripts verwenden, die mithilfe des Skriptladeprogramms zur Laufzeit geladen werden müssen.
 
 ### <a name="remote-file-references"></a>Remotedateiverweise
  Sie können Visual Studio anweisen, die JavaScript-Remotedateien herunterzuladen, auf die in einer JavaScript-Datei verwiesen wird, um IntelliSense-Unterstützung für die Remotedatei oder die Bibliothek bereitzustellen. Wenn Sie diese Funktion verwenden, werden die Dateien herunterladen, wenn Sie sie als Verweis in die JavaScript-Datei einschließen.
 
 > [!NOTE]
->  Außer für Webprojekte ist diese Funktion nur für JavaScript-Dateien verfügbar, die außerhalb des Kontexts eines Projekts geöffnet sind. Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.
+> Außer für Webprojekte ist diese Funktion nur für JavaScript-Dateien verfügbar, die außerhalb des Kontexts eines Projekts geöffnet sind. Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.
 
  Anleitungen zur Verwendung dieser Funktion finden Sie unter [Optionen, Text-Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!WARNING]
->  Wenn Sie diese Funktion aktivieren und einen Rückgang der Leistung im Code-Editor feststellen, wird empfohlen, sie zu deaktivieren.
+> Wenn Sie diese Funktion aktivieren und einen Rückgang der Leistung im Code-Editor feststellen, wird empfohlen, sie zu deaktivieren.
 
 ### <a name="XMLDocComments"></a> XML-Dokumentationskommentare
  XML-Dokumentationskommentare sind Textbeschreibungen von Codeelementen, die Sie dem Skript hinzufügen. Diese Textbeschreibungen werden in IntelliSense angezeigt, wenn Sie auf das kommentierte Skript verweisen. Sie können beispielsweise Informationen zu den Parametern und dem Rückgabewert einer Funktion bereitzustellen. XML-Dokumentationskommentare sind nur in den Dateien, Assemblys und Diensten verfügbar, auf die verwiesen wurde. Weitere Informationen finden Sie unter [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md) und [Erstellen von JavaScript-XML-Dokumentationskommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
@@ -263,7 +263,7 @@ IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schrei
  JavaScript-IntelliSense wird außerdem von ASP.NET AJAX unterstützt. ASP.NET AJAX umfasst ein Clientframework, durch das die in ECMAScript (JavaScript) verfügbaren Standardtypen erweitert werden. Damit JavaScript-IntelliSense Einzelheiten zu ASP.NET AJAX-Objekten bereitstellen kann, müssen XML-Dokumentationskommentare über [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] hinzugefügt werden. Diese XML-Dokumentationskommentare werden angezeigt, wenn Sie Typen und Member aus der ASP.NET AJAX-Bibliothek verwenden.
 
 > [!NOTE]
->  Private Member werden nicht von JavaScript-IntelliSense angezeigt. Private Member werden in ASP.NET-AJAX als Member gekennzeichnet, die mit einem Unterstrich (_) beginnen.
+> Private Member werden nicht von JavaScript-IntelliSense angezeigt. Private Member werden in ASP.NET-AJAX als Member gekennzeichnet, die mit einem Unterstrich (_) beginnen.
 
 ## <a name="Extensibility"></a> JavaScript-IntelliSense-Erweiterbarkeit
  Der JavaScript Language Service stellt Objekte und Funktionen bereit, die es Ihnen ermöglichen, die IntelliSense-Erfahrung für diejenigen Entwickler zu verändern, die Bibliotheken von Drittanbietern verwenden. Diese Funktionen sind besonders nützlich, wenn der Standardsprachdienst nicht alle Informationen liefern kann, die Sie für Kunden bereitstellen möchten. Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).

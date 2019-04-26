@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416830"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten
       Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
   
      > [!NOTE]
-     >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
+     > Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
   
    - Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
   

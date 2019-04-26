@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405671"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Gewusst wie: Anzeigen von Zeilennummern im Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60088261"
 Sie können die Zeilennummerierung im Code ein- oder ausblenden.  
   
 > [!NOTE]
->  Abhängig von den aktiven Einstellungen unterscheiden sich die Dialogfelder und Menübefehle auf dem Bildschirm unter Umständen von den hier beschriebenen Dialogfeldern und Menübefehlen. Klicken Sie im Menü **Extras > Einstellungen importieren und exportieren**, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Abhängig von den aktiven Einstellungen unterscheiden sich die Dialogfelder und Menübefehle auf dem Bildschirm unter Umständen von den hier beschriebenen Dialogfeldern und Menübefehlen. Klicken Sie im Menü **Extras > Einstellungen importieren und exportieren**, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Anzeigen von Zeilennummern im Code  
  Die Zeilennummern werden nicht in den Code eingefügt; sie dienen lediglich als Anhaltspunkte. Wenn Zeilennummern ausgedruckt werden sollen, müssen Sie im Dialogfeld **Drucken** das Kontrollkästchen **Zeilennummern einschließen** aktivieren.  
@@ -39,7 +39,7 @@ Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 2. ![Optionen zum Anzeigen von Zeilennummern im Editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
->  Abhängig von der Sprache oder den Einstellungen müssen Sie möglicherweise im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren, um den Unterknoten **Alle Sprachen** anzuzeigen.  
+> Abhängig von der Sprache oder den Einstellungen müssen Sie möglicherweise im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren, um den Unterknoten **Alle Sprachen** anzuzeigen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../../ide/customizing-the-editor.md)   

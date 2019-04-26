@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443371"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Arbeiten mit Visual C++-Code (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Klassen-Designer zeigt eine visuelle Entwurfsoberfläche, ein sogenanntes *Klass
 - TypeDef  
   
 > [!NOTE]
->  Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md).  
+> Dies ist nicht identisch mit dem UML-Klassendiagramm, das Sie in einem Modellierungsprojekt erstellt können. Weitere Informationen finden Sie unter [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Behandlung von Problemen bei der Typauflösung und Anzeige  
   

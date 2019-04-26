@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435095"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Entsperren von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
 2. Geben Sie die Anmeldeinformationen für ein Microsoft-Konto oder ein Geschäfts- bzw. Schulkonto ein. Visual Studio sucht dann nach einem MSDN- oder Visual Studio Team Services-Abonnement, das mit Ihrem Konto verknüpft ist.
 
 > [!IMPORTANT]
->  Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto im Team Explorer-Toolfenster herstellen. Wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto herstellen, können Sie sich mithilfe von Microsoft- oder Geschäfts- bzw. Schulkonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
+> Visual Studio sucht automatisch nach mit dem Konto verknüpften Onlineabonnements, wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto im Team Explorer-Toolfenster herstellen. Wenn Sie eine Verbindung mit einem Visual Studio Team Services-Konto herstellen, können Sie sich mithilfe von Microsoft- oder Geschäfts- bzw. Schulkonten anmelden. Wenn ein Onlineabonnement für dieses Benutzerkonto vorhanden ist, wird die IDE-Schnittstelle automatisch durch Visual Studio für Sie entsperrt.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>So entsperren Sie Visual Studio mit einem Product Key
 
@@ -43,7 +43,7 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
 2. Geben Sie den Product Key an der dafür vorgesehenen Stelle ein.
 
 > [!TIP]
->  Vorabversionen von Visual Studio verfügen über keine Product Keys. Sie müssen sich bei der IDE-Schnittstelle anmelden, um Vorabversionen zu verwenden.
+> Vorabversionen von Visual Studio verfügen über keine Product Keys. Sie müssen sich bei der IDE-Schnittstelle anmelden, um Vorabversionen zu verwenden.
 
 ## <a name="addressing-license-problem-states"></a>Beheben von Lizenzproblemen
 
@@ -63,7 +63,7 @@ Sie können Visual Studio bis zu 30 Tage lang kostenlos testen. Bei der Anmeldun
    Wenn Sie Ihre Anmeldeinformationen nicht erneut eingeben, läuft Ihr Token ab. In diesem Fall wird Ihnen über das das Dialogfeld „Kontoeinstellungen“ mitgeteilt, in wie vielen Tagen Ihr Token endgültig abläuft. Nachdem das Token abgelaufen ist, müssen Sie Ihre Anmeldeinformationen für dieses Konto oder diese Lizenz mithilfe einer anderen der oben genannten Methoden erneut eingeben, bevor Sie Visual Studio weiterhin verwenden können.
 
 > [!IMPORTANT]
->  Bei Verwendung von Visual Studio für einen längeren Zeitraum in Umgebungen mit wenig oder keinem Internetzugang sollten Sie einen Product Key verwenden, um Visual Studio zu entsperren, um Unterbrechungen zu vermeiden.
+> Bei Verwendung von Visual Studio für einen längeren Zeitraum in Umgebungen mit wenig oder keinem Internetzugang sollten Sie einen Product Key verwenden, um Visual Studio zu entsperren, um Unterbrechungen zu vermeiden.
 
 ### <a name="updating-expired-licenses"></a>Aktualisieren abgelaufener Lizenzen
  Wenn Ihr Abonnement vollständig abgelaufen ist und Sie keine Zugriffsrechte mehr für Visual Studio besitzen, müssen Sie folgende Schritte ausführen:

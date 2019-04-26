@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059252"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 >  Die Symbolauflösung kann zeitaufwendig sein, insbesondere wenn sie einen Remotedateispeicherort mit zahlreichen Assemblys verwendet. Daher sollten Sie erwägen, die Remote-PDB-Dateien an denselben lokalen Speicherort wie die Binärdateien (DLL- und EXE-Dateien) zu kopieren.  
   
 ### <a name="excluding-and-including"></a>Ausschließen und Einschließen  
- Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Beispiel:  
+ Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Zum Beispiel:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +115,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
    Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet.  
   
-   Beispiel:  
+   Zum Beispiel:  
   
 ```xml  
 <ModulePaths>  
@@ -183,11 +183,11 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>So passen Sie Laufzeiteinstellungen in einem Befehlszeilentest an  
  Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Einstellungsdatei ist ein Parameter dieses Hilfsprogramms. Weitere Informationen finden Sie unter [Verwenden von VSTest.console über die Befehlszeile](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Starten der Visual Studio Developer-Eingabeaufforderung:  
+1. Starten der Visual Studio Developer-Eingabeaufforderung:  
   
      Klicken Sie im Windows-Menü **Start** auf **Alle Programme**, **Microsoft Visual Studio**, **Visual Studio-Tools** und **Developer-Eingabeaufforderung**.  
   
-2.  Führen Sie Folgendes aus:  
+2. Führen Sie Folgendes aus:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
 3. Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Wählen Sie die **RUNSETTINGS**-Datei aus.  
   
-   - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Testquelle** angezeigt. Beim Versuch, das Feld **Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
+   - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Testquelle** angezeigt. Beim Versuch, das Feld Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
   
       Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
   
    Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.  
   
-##  <a name="sample"></a> Beispiel für eine RUNSETTINGS-Datei:  
+## <a name="sample"></a> Beispiel für eine RUNSETTINGS-Datei:  
  Kopieren Sie diesen Code, und passen Sie ihn Ihren Anforderungen entsprechend an. Dies ist die standardmäßige RUNSETTINGS-Datei.  
   
  (Informationen zu anderen Verwendungsmöglichkeiten der RUNSETTINGS-Datei, finden Sie unter [Konfigurieren von Komponententests mithilfe einer .runsettings-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  

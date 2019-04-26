@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438138"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   Beachten Sie, dass der Name des Programmdateiordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name \Programme\\; auf einem x64-Computer lautet der Name \Programme(x86)\\. Ungeachtet der Systemarchitektur wird der Ordner "Programme" in dieser exemplarischen Vorgehensweise als "%ProgramFiles%" bezeichnet.  
   
 > [!NOTE]
->  Auf dem Buildcomputer müssen sich alle relevanten Dateien auf dem gleichen Laufwerk befinden. Der Laufwerkbuchstabe des Laufwerks darf sich allerdings von dem Laufwerkbuchstaben für das Laufwerk, in dem Visual Studio auf dem Hostcomputer installiert ist, unterscheiden. Auf jeden Fall müssen Sie den Speicherort der Dateien berücksichtigen, wenn Sie , wie weiter unten in diesem Dokument beschrieben, Registrierungseinträge erstellen.  
+> Auf dem Buildcomputer müssen sich alle relevanten Dateien auf dem gleichen Laufwerk befinden. Der Laufwerkbuchstabe des Laufwerks darf sich allerdings von dem Laufwerkbuchstaben für das Laufwerk, in dem Visual Studio auf dem Hostcomputer installiert ist, unterscheiden. Auf jeden Fall müssen Sie den Speicherort der Dateien berücksichtigen, wenn Sie , wie weiter unten in diesem Dokument beschrieben, Registrierungseinträge erstellen.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>So kopieren Sie die Windows SDK-Dateien auf den Buildcomputer  
   
@@ -223,7 +223,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
 1. Identifizieren Sie den übergeordneten Ordner für Registrierungseinträge. Alle Registrierungseinträge werden unter dem gleichen übergeordneten Schlüssel erstellt. Auf einem x86-Computer lautet der übergeordnete Schlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. Auf einem x64-Computer lautet der übergeordnete Schlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\“. Ungeachtet der Systemarchitektur wird der übergeordnete Schlüssel in dieser exemplarischen Vorgehensweise als "%RegistryRoot%" bezeichnet.  
   
    > [!NOTE]
-   >  Wenn sich die Architektur des Hostcomputers von der Ihres Buildcomputers unterscheidet, stellen Sie sicher, dass der entsprechende übergeordneten Schlüssel auf jedem Computer verwendet wird. Dies ist insbesondere dann wichtig, wenn Sie den Exportvorgang automatisieren.  
+   > Wenn sich die Architektur des Hostcomputers von der Ihres Buildcomputers unterscheidet, stellen Sie sicher, dass der entsprechende übergeordneten Schlüssel auf jedem Computer verwendet wird. Dies ist insbesondere dann wichtig, wenn Sie den Exportvorgang automatisieren.  
    >   
    >  Wenn Sie auf dem Buildcomputer zudem einen anderen Laufwerkbuchstaben als auf dem Hostcomputer verwenden, stellen Sie sicher, die Registrierungseinträge entsprechend zu ändern, damit sie übereinstimmen.  
   
@@ -334,7 +334,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
      **gacutil -i \<file>**  
   
     > [!NOTE]
-    >  Möglicherweise ist zum vollständigen Installieren einer Assembly in den GAC ein Neustart erforderlich.  
+    > Möglicherweise ist zum vollständigen Installieren einer Assembly in den GAC ein Neustart erforderlich.  
   
 ## <a name="BuildingProjects"></a> Erstellen von Projekten  
  Sie können Team Foundation Build zum Erstellen von [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projekten und Projektmappen verwenden, oder Sie können sie in der Befehlszeile erstellen. Bei der Verwendung von Team Foundation Build zum Erstellen von Projekten wird die der Systemarchitektur entsprechende ausführbare MSBuild-Datei aufgerufen.  In der Befehlszeile können Sie entweder die MSBuild-Version mit 32-Bit oder mit 64-Bit verwenden, und Sie können die MSBuild-Architektur auswählen, indem Sie die PATH-Umgebungsvariable festlegen oder direkt die architekturspezifische ausführbare MSBuild-Datei aufrufen.  
@@ -346,17 +346,17 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
  Weitere Informationen zum Verwenden von MSBuild an der Befehlszeile finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)  
   
 > [!NOTE]
->  Zum Erstellen von [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projekten müssen Sie die "v110"-Plattform Toolsets verwenden. Wenn Sie die [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projektdateien nicht bearbeiten möchten, können Sie die Plattform Toolset mithilfe dieses Befehlszeilenarguments festlegen:  
+> Zum Erstellen von [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projekten müssen Sie die "v110"-Plattform Toolsets verwenden. Wenn Sie die [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Projektdateien nicht bearbeiten möchten, können Sie die Plattform Toolset mithilfe dieses Befehlszeilenarguments festlegen:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Erstellen der Buildumgebung zum Einchecken in die Quellcodeverwaltung  
  Sie können eine Buildumgebung erstellen, die auf verschiedenen Computern bereitgestellt werden kann, ohne dass Dateien in den GAC installiert oder Registrierungseinstellungen geändert werden müssen. Die folgenden Schritte stellen nur eine Möglichkeit dar, das zu erreichen. Passen Sie diese Schritte den eindeutigen Eigenschaften der aktuellen Buildumgebung an.  
   
 > [!NOTE]
->  Sie müssen den inkrementellen Buildvorgang deaktivieren, sodass von der Datei "tracker.exe" während eines Builds kein Fehler ausgelöst wird. Legen Sie zum Deaktivieren des inkrementellen Buildvorgangs diesen Buildparameter fest:  
+> Sie müssen den inkrementellen Buildvorgang deaktivieren, sodass von der Datei "tracker.exe" während eines Builds kein Fehler ausgelöst wird. Legen Sie zum Deaktivieren des inkrementellen Buildvorgangs diesen Buildparameter fest:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>So erstellen Sie eine Buildumgebung, die in die Quellcodeverwaltung eingecheckt werden kann  
   

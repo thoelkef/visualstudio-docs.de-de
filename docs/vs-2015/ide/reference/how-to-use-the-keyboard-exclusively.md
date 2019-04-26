@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405914"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60051582"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Toolbox-Steuerelementen  
  Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Designer in der Toolbox einfügen.  

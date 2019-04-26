@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432997"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIPs) und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Mit dem Windows Multilingual User Interface Packs (LIP) können Sie eine Sprachv
  Visual Studio verwendet ein einheitliches Sprachpaket. Um mehr als eine Sprachversion dieser Produkte zu installieren, müssen Sie das vollständige Sprachenprodukt zuerst installieren und dann ein oder mehrere Sprachpakete einrichten.
 
 > [!NOTE]
->  Visual Studio unterstützt nicht die Installation mehrerer Sprachversionen des vollständigen Sprachenprodukts auf demselben Computer. Wenn Sie ein vollständiges Sprachenprodukt installiert haben, müssen Sie die Sprachversionen mithilfe von Sprachpaketen hinzufügen. Sie können immer noch mehrere vollständige Sprachenprodukte der Express-Editionen auf demselben Computer installieren.
+> Visual Studio unterstützt nicht die Installation mehrerer Sprachversionen des vollständigen Sprachenprodukts auf demselben Computer. Wenn Sie ein vollständiges Sprachenprodukt installiert haben, müssen Sie die Sprachversionen mithilfe von Sprachpaketen hinzufügen. Sie können immer noch mehrere vollständige Sprachenprodukte der Express-Editionen auf demselben Computer installieren.
 
 ### <a name="support-for-code-pages"></a>Unterstützung für Codepages
  In einigen Visual Studio-Tools wird Text nicht korrekt angezeigt, wenn er Zeichen enthält, die nicht in der aktuellen Codepage verfügbar sind. Stattdessen werden Fragezeichen oder fehlerhafter Text angezeigt. Die folgenden Tools oder Bereiche sind betroffen:
@@ -76,7 +76,7 @@ Mit dem Windows Multilingual User Interface Packs (LIP) können Sie eine Sprachv
 1. Klicken Sie auf **Start** und dann auf **Systemsteuerung**. Rufen Sie die **Regions- und Sprachoptionen** (oder **Region** in [!INCLUDE[win8](../includes/win8-md.md)]) auf.
 
     > [!NOTE]
-    >  Sie müssen auf dem Computer als Administrator angemeldet sein, um die folgenden Schritte auszuführen.
+    > Sie müssen auf dem Computer als Administrator angemeldet sein, um die folgenden Schritte auszuführen.
 
 2. Klicken Sie auf die Registerkarte **Erweitert**.
 
@@ -88,7 +88,7 @@ Mit dem Windows Multilingual User Interface Packs (LIP) können Sie eine Sprachv
  Wenn Sie mehrere Sprachversionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf demselben Computer installieren, wird die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche standardmäßig auf **Wie Microsoft Windows** gesetzt. Diese Einstellung gibt an, dass [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] den Text für die Benutzeroberfläche in der als Anzeigesprache für das Betriebssystem angegebenen Sprache anzeigt.
 
 > [!NOTE]
->  Wenn Visual Studio auf die Verwendung von **Wie Microsoft Windows** festgelegt ist und das entsprechende Visual Studio-Sprachpaket nicht installiert ist, verwendet Visual Studio die Sprache der ersten Visual Studio-Installation.
+> Wenn Visual Studio auf die Verwendung von **Wie Microsoft Windows** festgelegt ist und das entsprechende Visual Studio-Sprachpaket nicht installiert ist, verwendet Visual Studio die Sprache der ersten Visual Studio-Installation.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>So legen Sie die in Visual Studio für den Benutzeroberflächentext verwendete Sprache fest
 

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441654"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
  Wenn Sie einen Punkt in einem Ausführungssegment auswählen, durchsucht die Parallelitätsschnellansicht die relevante Aufrufliste nach diesem Zeitpunkt, zeigt dann darüber ein schwarzes Caretzeichen an sowie die Aufrufliste selbst auf der Registerkarte **Aktueller Stapel**. Sie können auf dem Ausführungssegment mehrere Punkte auswählen.  
   
 > [!NOTE]
->  Die Parallelitätsschnellansicht ist möglicherweise nicht in der Lage, eine Auswahl auf einem Ausführungssegment aufzulösen. In der Regel tritt dies auf, wenn die Dauer des Segments weniger als eine Millisekunde beträgt.  
+> Die Parallelitätsschnellansicht ist möglicherweise nicht in der Lage, eine Auswahl auf einem Ausführungssegment aufzulösen. In der Regel tritt dies auf, wenn die Dauer des Segments weniger als eine Millisekunde beträgt.  
   
  Um ein Ausführungsprofil für alle aktivierten (nicht ausgeblendeten) Threads im aktuell ausgewählten Zeitraum zu erhalten, wählen Sie in der aktiven Legende die Schaltfläche **Ausführung** aus.  
   

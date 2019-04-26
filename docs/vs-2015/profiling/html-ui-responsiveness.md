@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438389"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 4. Optional können Sie dem Code mit [Markieren von Code zur Analyse](#ProfileMark).  
   
     > [!TIP]
-    >  Benutzermarkierungen können das Identifizieren eines Problems mit der Reaktionsfähigkeit während der Anzeige der Profilerdaten erleichtern. Sie können z. B. am Anfang und Ende eines Codeabschnitts, der ein Reaktionsfähigkeitsproblem verursacht, eine Benutzermarkierung hinzufügen.  
+    > Benutzermarkierungen können das Identifizieren eines Problems mit der Reaktionsfähigkeit während der Anzeige der Profilerdaten erleichtern. Sie können z. B. am Anfang und Ende eines Codeabschnitts, der ein Reaktionsfähigkeitsproblem verursacht, eine Benutzermarkierung hinzufügen.  
   
 5. Führen Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler aus, indem Sie den Anweisungen im vorherigen Abschnitt folgen.  
   
@@ -127,7 +127,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
     - Andere in der [Profiler event reference](#ProfilerEvents)angegebene Ereignisse.  
   
     > [!TIP]
-    >  Die nützlichsten Informationen im Profiler werden im Zeitachsendetaildiagramm angezeigt.  
+    > Die nützlichsten Informationen im Profiler werden im Zeitachsendetaildiagramm angezeigt.  
   
 12. Wenn ein Bereich im Diagramm der CPU-Auslastung oder im Diagramm des visuellen Durchsatzes (FPS) ausgewählt ist, wählen Sie **Vergrößern** aus (entweder die Schaltfläche oder das Kontextmenü), um ausführlichere Informationen abzurufen. Die Zeitachse für das Diagramm ändert sich und zeigt nur den ausgewählten Zeitraum an.  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  Die Beschreibung des Ereignisses wird als QuickInfo angezeigt, wenn Sie den Mauszeiger über die Benutzermarkierung bewegen. Sie können so viele Benutzermarkierungen hinzufügen wie erforderlich.  
   
 > [!NOTE]
->  `console.timeStamp`, ein Chrome-Befehl, wird ebenfalls als Benutzermarkierung angezeigt.  
+> `console.timeStamp`, ein Chrome-Befehl, wird ebenfalls als Benutzermarkierung angezeigt.  
   
  Die folgende Abbildung zeigt das Diagnoselineal mit einer einzelnen Benutzermarkierung und der QuickInfo an.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  Im CPU-Auslastungsdiagramm wird die Zeit angezeigt, die auf allen App-Threads aufgewendet wird. Dabei werden die CPU-Auslastungs-Werte für eine oder mehrere CPUs in einem einzelnen Prozentwert zusammengefasst. Der CPU-Auslastungswert überschreitet möglicherweise 100 Prozent, wenn mehr als eine CPU verwendet wird.  
   
 > [!NOTE]
->  Die GPU-Auslastung wird nicht im Diagramm angezeigt.  
+> Die GPU-Auslastung wird nicht im Diagramm angezeigt.  
   
  In diesem Beispiel wird das Diagramm der CPU-Auslastung illustriert:  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  Im Diagramm werden die Aufgaben des UI-Threads und die Aufgaben an Hintergrundthreads angezeigt, die langsame visuelle Aktualisierungen verursachen können. Im Diagramm werden folgende Aspekte nicht angezeigt: Just-In-Time-Aufgaben in JavaScript, asynchrone GPU-Aufgaben, Aufgaben, die außerhalb des Hostprozesses ausgeführt werden (wie RuntimeBroker.exe- und dwm.exe-Aufgaben) oder Aufgaben für Bereiche der Windows Runtime, die noch nicht für die Profilerstellung instrumentiert wurden (wie Datenträger-E/A).  
   
 > [!TIP]
->  Wenn ein Ereignis in einem Hintergrundthread auftritt, wird die Thread-ID in Klammern neben dem Ereignisnamen angezeigt.  
+> Wenn ein Ereignis in einem Hintergrundthread auftritt, wird die Thread-ID in Klammern neben dem Ereignisnamen angezeigt.  
   
  Dieses Beispiel zeigt, wie das Zeitachsendetaildiagramm aussieht, wenn der Ereignislistener für ein DOM-Klickereignis ausgewählt wird:  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - Für Zeitgeber, Ereignislistener (DOM-Ereignisse), Layoutereignisse und Animationsframerückrufe werden eine farbkodierte Zusammenfassung des ausgewählten Ereignisses und alle untergeordneten Elemente im Abschnitt **Zusammenfassung der inklusiven Zeit** (der farbkodierte Ring) angezeigt. Jedes farbcodierte Segment des Bilds stellt einen Ereignistyp dar. QuickInfo geben den Ereignistypnamen an.  
   
     > [!TIP]
-    >  Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.  
+    > Das Diagramm mit den Zeitachsendetails und **Zusammenfassung der inklusiven Zeit** können Ihnen dabei helfen, Optimierungsbereiche zu identifizieren. Wenn beide Ansichten viele kleine Aufgaben anzeigen, ist das Ereignis eventuell ein Kandidat für die Optimierung. Beispielsweise kann es sein, dass eine App häufig DOM-Elemente aktualisiert, was zu Layout- und HTML-Analyseereignissen führt. Sie können die Leistung möglicherweise optimieren, indem Sie eine Batchverarbeitung einrichten.  
   
 ### <a name="FilterTimelineDetails"></a> Filtern der Zeitachsendetails  
  Sie können die Ansicht in den Zeitachsendetails für ein bestimmtes Ereignis filtern. Wählen Sie dazu in dessen Kontextmenü **Für Ereignis filtern** aus. Wenn Sie diese Option auswählen, wird die Zeitachsen- und Rasteransicht auf das ausgewählte Ereignis beschränkt. Auch die Auswahl im CPU-Auslastungsdiagramm wird auf das bestimmte Ereignis beschränkt.  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  Um UI-Threadaktivität auszufiltern, deaktivieren Sie die Option **UI-Aktivität** .  
   
 > [!TIP]
->  Deaktivieren Sie diese Option, und wählen Sie die Option "Netzwerkdatenverkehr" aus, um Probleme im Zusammenhang mit Netzwerklatenz zu untersuchen.  
+> Deaktivieren Sie diese Option, und wählen Sie die Option "Netzwerkdatenverkehr" aus, um Probleme im Zusammenhang mit Netzwerklatenz zu untersuchen.  
   
  Um Benutzermaße auszufiltern, deaktivieren Sie die Option **Benutzermaße** . Benutzermaße sind Ereignisse der obersten Ebene ohne untergeordnete Elemente.  
   

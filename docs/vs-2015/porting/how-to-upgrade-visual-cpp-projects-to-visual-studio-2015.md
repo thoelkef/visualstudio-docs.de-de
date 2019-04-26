@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425890"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Gewusst wie: Upgrade von Visual C++-Projekten auf Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Beim ersten Öffnen eines Visual C++-Projekts, das in einer früheren Version vo
     - Sie können das Projekt aktualisieren, indem Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die Berechtigung erteilen, die weiter hinten in diesem Thema beschriebenen Änderungen vorzunehmen. Wenn Ihre Projektmappe mehrere Visual C++-Projekte enthält, müssen Sie alle aktualisieren.
 
         > [!NOTE]
-        >  Wenn Sie die Aktualisierung bei der ersten Aufforderung ablehnen, können Sie das Projekt später aktualisieren. Wählen Sie dazu die Option **VC++Projekt aktualisieren** im Menü **Projekt** aus. Wenn der Befehl nicht angezeigt wird, ist kein Update erforderlich.
+        > Wenn Sie die Aktualisierung bei der ersten Aufforderung ablehnen, können Sie das Projekt später aktualisieren. Wählen Sie dazu die Option **VC++Projekt aktualisieren** im Menü **Projekt** aus. Wenn der Befehl nicht angezeigt wird, ist kein Update erforderlich.
 
 ## <a name="upgrading-a-visual-c-project"></a>Aktualisieren eines Visual C++-Projekts
  Wenn Sie zulassen, dass [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] das Projekt automatisch aktualisiert, werden möglicherweise die folgenden Änderungen vorgenommen:

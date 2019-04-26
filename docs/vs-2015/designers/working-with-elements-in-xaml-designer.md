@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403457"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers E
      Wenn Sie ein Rand-Adorner öffnen und der gegenüberliegende Rand nicht festgelegt ist, wird der gegenüberliegende Rand auf den richtigen Wert gemäß der Position des Elements auf der Zeichenfläche festgelegt. Für gegenüberliegende Ränder wie die Ränder **Links** und **Rechts** wird stets mindestens eine Eigenschaft festgelegt.  
   
     > [!IMPORTANT]
-    >  Elemente, die innerhalb irgendwelcher Layoutcontainers platziert werden, wie beispielsweise ein <xref:Windows.UI.Xaml.Controls.Canvas>, haben keine Randfunktionsindikatoren. Elemente, die innerhalb eines <xref:Windows.UI.Xaml.Controls.StackPanel> platziert werden, haben Funktionsindikatoren für entweder die linken und rechten Ränder oder für die oberen und unteren Ränder, abhängig von der Ausrichtung des `StackPanel`.  
+    > Elemente, die innerhalb irgendwelcher Layoutcontainers platziert werden, wie beispielsweise ein <xref:Windows.UI.Xaml.Controls.Canvas>, haben keine Randfunktionsindikatoren. Elemente, die innerhalb eines <xref:Windows.UI.Xaml.Controls.StackPanel> platziert werden, haben Funktionsindikatoren für entweder die linken und rechten Ränder oder für die oberen und unteren Ränder, abhängig von der Ausrichtung des `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Elemente gruppieren und dessen Gruppierung aufheben  
  Durch die Gruppierung von zwei oder mehr Elementen im XAML-Designer wird ein neuer Layoutcontainer erstellt und die betreffenden Elemente innerhalb dieses Containers platziert. Durch die gemeinsame Platzierung von zwei oder mehr Elementen in einem Layoutcontainer wird Ihnen ermöglicht, die Gruppe einfach auszuwählen, zu bewegen und zu transformieren, so als ob die Elemente innerhalb dieser Gruppe ein Element wären. Die Gruppierung ist auch zur Bestimmung von Elementen nützlich, die in irgend einer Weise im Verhältnis zueinander stehen, wie die Schaltflächen, die ein Navigationselement ergeben. Wenn Sie die Gruppierung für Elemente aufheben, löschen Sie einfach den Layoutcontainer, welcher die Elemente enthielt.  
@@ -106,7 +106,7 @@ Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers E
 2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Elemente, zeigen Sie auf **Gruppieren in**, und klicken Sie dann auf den Typ des Layoutcontainers, in dem die Gruppe platziert werden soll.  
   
     > [!TIP]
-    >  Bei der Auswahl von <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> oder <xref:Windows.UI.Xaml.Controls.ScrollViewer>, um die Elemente zu gruppieren, werden die Elemente in einem neuen <xref:Windows.UI.Xaml.Controls.Grid>-Bereich innerhalb von <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> oder <xref:Windows.UI.Xaml.Controls.ScrollViewer> platziert. Wenn Sie die Gruppierung von Elementen in einem dieser Layoutcontainer aufheben, werden nur das <xref:Windows.UI.Xaml.Controls.Viewbox>, der <xref:Windows.UI.Xaml.Controls.Border> oder der <xref:Windows.UI.Xaml.Controls.ScrollViewer> gelöscht, und der Bereich <xref:Windows.UI.Xaml.Controls.Grid> wird beibehalten. Löschen Sie den `Grid`-Bereich, heben Sie die Gruppierung der Elemente erneut auf.  
+    > Bei der Auswahl von <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> oder <xref:Windows.UI.Xaml.Controls.ScrollViewer>, um die Elemente zu gruppieren, werden die Elemente in einem neuen <xref:Windows.UI.Xaml.Controls.Grid>-Bereich innerhalb von <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> oder <xref:Windows.UI.Xaml.Controls.ScrollViewer> platziert. Wenn Sie die Gruppierung von Elementen in einem dieser Layoutcontainer aufheben, werden nur das <xref:Windows.UI.Xaml.Controls.Viewbox>, der <xref:Windows.UI.Xaml.Controls.Border> oder der <xref:Windows.UI.Xaml.Controls.ScrollViewer> gelöscht, und der Bereich <xref:Windows.UI.Xaml.Controls.Grid> wird beibehalten. Löschen Sie den `Grid`-Bereich, heben Sie die Gruppierung der Elemente erneut auf.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>So heben Sie die Gruppierung von Elementen auf und löschen das Layout  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15c57de4a8f51283692b21bcaa148c86bb4deb2d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f9f42fd4b43ec9aaced9d47d0c5670e6f0b0d711
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435171"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Gewusst wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Sie können die Deklaration einer Klasse oder Struktur auf mehrere Deklarationen
  In den folgenden Beispielen wird die Definition der `Employee`-Klasse auf zwei Deklarationen aufgeteilt, die jeweils eine andere Prozedur definieren. Die beiden partiellen Definitionen aus dem Beispiel können in einer Quelldatei oder in zwei unterschiedlichen Quelldateien enthalten sein.  
   
 > [!NOTE]
->  Visual Basic verwendet partielle Klassendefinitionen, um generierten Code von Visual Studio von Code zu trennen, der vom Benutzer erstellt wurde. Der Code wird in diskrete Quelldateien aufgeteilt. Zum Beispiel definiert der **Windows Form-Designer** partielle Klassen für Steuerelemente, z.B. `Form`. Sie sollten den generierten Code in diesen Steuerelementen nicht ändern.  
+> Visual Basic verwendet partielle Klassendefinitionen, um generierten Code von Visual Studio von Code zu trennen, der vom Benutzer erstellt wurde. Der Code wird in diskrete Quelldateien aufgeteilt. Zum Beispiel definiert der **Windows Form-Designer** partielle Klassen für Steuerelemente, z.B. `Form`. Sie sollten den generierten Code in diesen Steuerelementen nicht ändern.  
   
  Weitere Informationen über partielle Typen in Visual Basic finden Sie unter [Partial (Partiell)](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).  
   

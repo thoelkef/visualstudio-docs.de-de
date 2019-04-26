@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435249"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60069510"
 Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenstern und Dateien entworfen. Je nach persönlichen Vorlieben und den jeweiligen Projektanforderungen stehen Ihnen hierfür verschiedene Möglichkeiten zur Verfügung. Sie können im Editor durch geöffnete Dateien oder in der IDE durch alle aktiven Toolfenster navigieren. Außerdem können Sie im Editor direkt zu allen geöffneten Dateien wechseln, und zwar unabhängig von der Reihenfolge, in der Sie zuletzt verwendet wurden. Diese Funktionen ermöglichen es Ihnen, in der IDE produktiver zu arbeiten.
 
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** geschrieben. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** geschrieben. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
  Fast jeder Menübefehl in Visual Studio verfügt über eine Tastenkombination. Sie können außerdem eigene benutzerdefinierte Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
@@ -48,7 +48,7 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
 - Um geöffnete Dokumente in umgekehrter Reihenfolge zu aktivieren, drücken Sie STRG+UMSCHALT+MINUS.
 
   > [!NOTE]
-  >  Die Optionen **Rückwärts navigieren** und **Vorwärts navigieren** befinden sich auch im Menü **Ansicht**.
+  > Die Optionen **Rückwärts navigieren** und **Vorwärts navigieren** befinden sich auch im Menü **Ansicht**.
 
   Um im Editor zu einer bestimmten geöffneten Datei zu navigieren, egal wann diese zuletzt verwendet wurde, können Sie auch den **IDE-Navigator**, die Liste **Aktive Dateien** im Editor oder das Dialogfeld **Fenster** verwenden.
 
@@ -59,14 +59,14 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
   Der Befehl `Window.PreviousDocumentWindowNav` ermöglicht es Ihnen, zu der zuletzt verwendeten Datei zu navigieren, und der Befehl `Window.NextDocumentWindowNav` ermöglicht Ihnen die Navigation in umgekehrter Reihenfolge. In den allgemeinen Entwicklungseinstellungen ist dem Befehl `Window.PreviousDocumentWindowNav` die Tastenkombination STRG+UMSCHALT+TAB zugewiesen und dem Befehl `Window.NextDocumentWindowNav` die Tastenkombination STRG+TAB.
 
 > [!NOTE]
->  Wenn dem Befehl in der von Ihnen verwendeten Einstellungskombination noch keine Tastenkombination zugewiesen ist, können Sie auf der Seite **Tastatur** des Dialogfelds **Optionen** selbst einen Befehl zuweisen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Wenn dem Befehl in der von Ihnen verwendeten Einstellungskombination noch keine Tastenkombination zugewiesen ist, können Sie auf der Seite **Tastatur** des Dialogfelds **Optionen** selbst einen Befehl zuweisen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>So wechseln Sie zu bestimmten Dateien im Editor
 
 - Drücken Sie STRG+TAB, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter STRG-TASTE so oft die TAB-TASTE, bis die gewünschte Datei ausgewählt ist.
 
     > [!TIP]
-    >  Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Dateien** navigieren, halten Sie STRG+UMSCHALT gedrückt, und drücken Sie die TAB-TASTE.
+    > Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Dateien** navigieren, halten Sie STRG+UMSCHALT gedrückt, und drücken Sie die TAB-TASTE.
 
      \- oder –
 
@@ -82,14 +82,14 @@ Die integrierte Entwicklungsumgebung (IDE) wurde zum Navigieren zwischen Fenster
  Mit dem **IDE-Navigator** können Sie auch zwischen den Toolfenstern navigieren, die in der IDE geöffnet sind. Je nachdem, in welcher Reihenfolge Sie durch die Toolfenster navigieren möchten, können Sie den **IDE-Navigator** über einen von zwei Befehlen aufrufen. Der Befehl `Window.PreviousToolWindowNav` ermöglicht es Ihnen, zu der zuletzt verwendeten Datei zu navigieren, und der Befehl `Window.NextToolWindowNav` ermöglicht Ihnen die Navigation in umgekehrter Reihenfolge. In den allgemeinen Entwicklungseinstellungen ist dem Befehl `Window.PreviousDocumentWindowNav` die Tastenkombination UMSCHALT+ALT+F7 zugewiesen und dem Befehl `Window.NextDocumentWindowNav` die Tastenkombination ALT+F7.
 
 > [!NOTE]
->  Wenn dem Befehl in der von Ihnen verwendeten Einstellungskombination noch keine Tastenkombination zugewiesen ist, können Sie auf der Seite **Tastatur** des Dialogfelds **Optionen** selbst einen Befehl zuweisen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Wenn dem Befehl in der von Ihnen verwendeten Einstellungskombination noch keine Tastenkombination zugewiesen ist, können Sie auf der Seite **Tastatur** des Dialogfelds **Optionen** selbst einen Befehl zuweisen. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>So wechseln Sie zu einem bestimmten Toolfenster in der IDE
 
 - Drücken Sie ALT+F7, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter ALT-TASTE so oft die Taste F7, bis das gewünschte Fenster ausgewählt ist.
 
     > [!TIP]
-    >  Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Toolfenster** navigieren, halten Sie UMSCHALT+ ALT gedrückt, und drücken Sie die Taste F7.
+    > Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Toolfenster** navigieren, halten Sie UMSCHALT+ ALT gedrückt, und drücken Sie die Taste F7.
 
 ## <a name="see-also"></a>Siehe auch
  [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md) [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md)
