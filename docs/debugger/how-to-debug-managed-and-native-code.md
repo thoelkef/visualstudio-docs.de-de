@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847914"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
@@ -44,7 +44,7 @@ Visual Studio muss in den folgenden Workloads installiert sein:
 - **Desktopentwicklung mit C++**
 - Entweder **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung**, je nachdem, welchen App-Typ Sie erstellen möchten
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
 Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Wählen Sie im Visual Studio-Installer die benötigten Workloads aus, und klicken Sie dann auf **Modify** (Anpassen).
 
@@ -55,7 +55,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Leeres Projekt** ein, wählen Sie **Vorlagen** und dann **Neues leeres Projekt erstellen** für C++ aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Leeres Projekt** ein, wählen Sie **Vorlagen** und dann **Neues leeres Projekt erstellen** für C++ aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Andere** aus, und wählen Sie dann im mittleren Bereich **Leeres Projekt** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
@@ -132,7 +132,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** für C# aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** für C# aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
     Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
     ::: moniker-end
@@ -193,7 +193,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Core-App
 
-In den meisten Visual Studio 2017-Versionen müssen Sie die Datei *launchSettings.json* statt der Projekteigenschaften verwenden, um das Debuggen im gemischten Modus für nativen Code in einer :NET Core-App zu aktivieren. In diesem [GitHub-Issue](https://github.com/dotnet/project-system/issues/1125) finden Sie UI-Updates für dieses Feature.
+In den meisten Visual Studio Versionen ab Visual Studio 2017 müssen Sie die Datei *launchSettings.json* statt der Projekteigenschaften verwenden, um das Debuggen im gemischten Modus für nativen Code in einer .NET Core-App zu aktivieren. In diesem [GitHub-Issue](https://github.com/dotnet/project-system/issues/1125) finden Sie UI-Updates für dieses Feature.
 
 1. Erweitern Sie im **Projektmappen-Explorer** die **Eigenschaften**, und öffnen Sie die Datei *launchSettings.json*.
 

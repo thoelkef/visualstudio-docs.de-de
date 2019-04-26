@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997799"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualisieren von Visual Studio auf die neueste Version
 
@@ -264,5 +264,5 @@ Sie können nach einem Update suchen und es dann von der Menüleiste oder dem Su
 
 * [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualisieren von Visual Studio für Mac](/visualstudio/mac/update)
-* [Ändern von Visual Studio 2017](modify-visual-studio.md)
+* [Ändern von Visual Studio](modify-visual-studio.md)
 * [Deinstallieren von Visual Studio](uninstall-visual-studio.md)

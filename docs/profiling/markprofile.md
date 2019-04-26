@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430935"
 ---
 # <a name="markprofile"></a>MarkProfile
 Die `MarkProfile`-Methode fügt eine Profilmarkierung in die *VSP*-Datei ein. Damit die Markierung eingefügt wird, muss die Profilerstellung für den Thread, der die `MarkProfile`-Funktion enthält, auf ON festgelegt sein.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ (Profil markieren) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare mit dem Mark-Befehl oder mit API-Funktionen (CommentMarkAtProfile, CommentMarkProfile, oder MarkProfile) eingefügt werden.
 
 > [!IMPORTANT]
->  Die MarkProfile-Methode sollte nur mit der Instrumentierungsprofilerstellung verwendet werden.
+> Die MarkProfile-Methode sollte nur mit der Instrumentierungsprofilerstellung verwendet werden.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework-Entsprechung
  *Microsoft.VisualStudio.Profiler.dll*

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977360"
 ---
 # <a name="how-to-build-incrementally"></a>Vorgehensweise: Inkrementelles Erstellen
 Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor erstellte Komponenten, die noch immer auf dem neuesten Stand sind, nicht neu erstellt werden. Wenn alle Ziele jedes mal neu erstellt werden, braucht jeder Build sehr lange, bis er abgeschlossen wird. Um inkrementelle Builds zu aktivieren (es werden nur Builds mit den Zielen neu erstellt, die zuvor noch nicht erstellt wurden oder mit Zielen, die nicht mehr aktuell sind) kann [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) die Zeitstempel der Eingabedateien mit jenen der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Es muss jedoch eine 1:1-Zuordnung zwischen Eingaben und Ausgaben bestehen. Sie können Transformationen verwenden, damit Ziele diese direkte Zuordnung identifizieren können. Weitere Informationen zu Transformationen finden Sie unter [MSBuild Transforms (Transformationen)](../msbuild/msbuild-transforms.md).
@@ -61,7 +61,6 @@ Das folgende Beispiel verwendet ein Projekt, das Hilfedateien für ein hypotheti
 - `GenerateContentFiles`: Konvertiert *TXT*-Dateien in *CONTENT*-Dateien.
 
 - `BuildHelp`: Kombiniert *CONTENT*-Dateien und XML-Metadatendateien, um die finale *HELP*-Datei zu erstellen.
-
 
 Das Projekt verwendet Transformationen, um eine 1:1-Zuordnung zwischen Eingaben und Ausgaben in der `GenerateContentFiles`-Ausgabe zu erstellen. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md). Es wird ebenso festgelegt, dass das `Output`-Element automatisch die Ausgaben der `GenerateContentFiles`-Aufgabe als Eingaben für die `BuildHelp`-Aufgabe verwendet.
 

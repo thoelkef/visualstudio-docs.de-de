@@ -17,44 +17,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975267"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer
 
 Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie sie in einem Klassendiagramm. Vorhandene Typen finden Sie unter [Vorgehensweise: Anzeigen von vorhandenen Typen](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Erstellen eines neuen Typs
+## <a name="CreateType"></a> Erstellen eines neuen Typs
 
-1.  Ziehen Sie in der **Toolbox** unter **Klassen-Designer** eines der folgenden Elemente in ein Klassendiagramm:
+1. Ziehen Sie in der **Toolbox** unter **Klassen-Designer** eines der folgenden Elemente in ein Klassendiagramm:
 
-    -   **Klasse** oder **Abstrakte Klasse**
+    - **Klasse** oder **Abstrakte Klasse**
 
-    -   **Enum**
+    - **Enum**
 
-    -   **Interface**
+    - **Interface**
 
-    -   **Struktur** (VB) oder **Struct** (C#)
+    - **Struktur** (VB) oder **Struct** (C#)
 
-    -   **Delegate**
+    - **Delegate**
 
-    -   **Modul** (nur VB)
+    - **Modul** (nur VB)
 
-2.  Benennen Sie den Typ. Wählen Sie dann seine Zugriffsebene aus.
+2. Benennen Sie den Typ. Wählen Sie dann seine Zugriffsebene aus.
 
-3.  Wählen Sie die Datei aus, in der Sie den anfänglichen Code für den Typ hinzufügen möchten:
+3. Wählen Sie die Datei aus, in der Sie den anfänglichen Code für den Typ hinzufügen möchten:
 
-    -   Wählen Sie **Neue Datei erstellen aus**, um eine neue Klassendatei zu erstellen und dem aktuellen Projekt hinzuzufügen, und benennen Sie die Datei.
+    - Wählen Sie **Neue Datei erstellen aus**, um eine neue Klassendatei zu erstellen und dem aktuellen Projekt hinzuzufügen, und benennen Sie die Datei.
 
-    -   Um Code für eine vorhandene Datei hinzuzufügen, wählen Sie **Zu vorhandener Datei hinzufügen** aus.
+    - Um Code für eine vorhandene Datei hinzuzufügen, wählen Sie **Zu vorhandener Datei hinzufügen** aus.
 
          Wenn Ihre Projektmappe ein Projekt enthält, das Code über mehrere App hinweg freigibt, können Sie einem Klassendiagramm in dem App-Projekt einen neuen Typ hinzufügen, jedoch nur, wenn die entsprechende Klassendatei im gleichen App-Projekt ist oder im freigegebenen Projekt enthalten ist.
 
-4.  Fügen Sie jetzt andere Elemente hinzu, um den Typ zu definieren:
+4. Fügen Sie jetzt andere Elemente hinzu, um den Typ zu definieren:
 
     |||
     |-|-|
@@ -67,7 +67,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
      Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
+## <a name="CustAttributeType"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typ
 
 1. Klicken Sie in einem Klassendiagramm auf die Form des Typs.
 
@@ -77,7 +77,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
    Die benutzerdefinierten Attribute werden auf den Typ angewendet.
 
-##  <a name="CustAttributeMember"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typmember
+## <a name="CustAttributeMember"></a> Anwenden eines benutzerdefinierten Attributs auf einen Typmember
 
 1. Klicken Sie in einem Klassendiagramm in der Form des entsprechenden Typs auf den Namen des Members oder im Klassendetailsfenster auf die entsprechende Zeile.
 

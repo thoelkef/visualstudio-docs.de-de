@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975176"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Vorgehensweise: Implementieren einer Schnittstelle im Klassen-Designer
 
@@ -27,9 +27,9 @@ Im **Klassen-Designer** können Sie eine Schnittstelle im Klassendiagramm implem
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>So implementieren Sie eine Schnittstelle, indem Sie eine Vererbungszeile zeichnen
 
-1.  Zeigen Sie im Klassendiagramm die Schnittstelle und die Klasse an, die die Schnittstelle implementieren.
+1. Zeigen Sie im Klassendiagramm die Schnittstelle und die Klasse an, die die Schnittstelle implementieren.
 
-2.  Zeichnen Sie eine Vererbungszeile von der Klasse und der Schnittstelle.
+2. Zeichnen Sie eine Vererbungszeile von der Klasse und der Schnittstelle.
 
      Neben der Klasse wird ein Lolli-Symbol angezeigt, und eine Bezeichnung mit dem Schnittstellennamen macht die Vererbungsbeziehung kenntlich. Visual Studio generiert Stubs für alle Schnittstellenmember.
 
@@ -37,14 +37,14 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Create Inheritance Betwe
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>So implementieren Sie eine Schnittstelle aus dem Fenster „Klassenansicht“
 
-1.  Zeigen Sie im Klassendiagramm die Klasse an, die die Schnittstelle implementieren soll.
+1. Zeigen Sie im Klassendiagramm die Klasse an, die die Schnittstelle implementieren soll.
 
-2.  Öffnen Sie die **Klassenansicht**, und suchen Sie die Schnittstelle.
+2. Öffnen Sie die **Klassenansicht**, und suchen Sie die Schnittstelle.
 
     > [!TIP]
     > Wenn die **Klassenansicht** nicht geöffnet ist, öffnen Sie **Klassenansicht** über das Menü **Ansicht**, oder drücken Sie **STRG**+**UMSCHALT**+**C**.
 
-3.  Ziehen Sie den Schnittstellenknoten in die Klassenform im Diagramm.
+3. Ziehen Sie den Schnittstellenknoten in die Klassenform im Diagramm.
 
      Neben der Klasse wird ein Lolli-Symbol angezeigt, und eine Bezeichnung mit dem Schnittstellennamen macht die Vererbungsbeziehung kenntlich. Visual Studio generiert Stubs für alle Schnittstellenmember. Dann wird die Schnittstelle implementiert.
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972992"
 ---
 # <a name="help-viewer-administrator-guide"></a>Administratorhandbuch für Help Viewer
 
@@ -45,13 +45,13 @@ Weitere Informationen zur Befehlszeilensyntax von *HlpCtntMgr.exe* finden Sie un
 
 Anforderungen:
 
--   Clientcomputer müssen Zugriff auf das Internet haben.
+- Clientcomputer müssen Zugriff auf das Internet haben.
 
--   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.
+- Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.
 
 Zu beachten:
 
--   Die Hilfe bleibt standardmäßig online gespeichert.
+- Die Hilfe bleibt standardmäßig online gespeichert.
 
 ### <a name="example"></a>Beispiel
 
@@ -59,13 +59,13 @@ Im folgenden Beispiel werden englische Inhalte für Visual Studio auf einem Clie
 
 #### <a name="to-install-english-content-from-the-internet"></a>So installieren Sie englischsprachige Inhalte über das Internet
 
-1.  Klicken Sie auf **Start** und dann auf **Ausführen**.
+1. Klicken Sie auf **Start** und dann auf **Ausführen**.
 
-2.  Geben Sie folgenden Pfad ein:
+2. Geben Sie folgenden Pfad ein:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  Drücken Sie die **EINGABETASTE**.
+3. Drücken Sie die **EINGABETASTE**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Bereitstellen der vorinstallierten lokalen Hilfeinhalte auf Clientcomputern
 
@@ -73,16 +73,16 @@ Sie können Inhalte von einem Onlinespeicherort auf einem Computer installieren 
 
 Anforderungen:
 
--   Der Computer, auf dem Sie den Inhalt installieren, muss mit dem Internet verbunden sein.
+- Der Computer, auf dem Sie den Inhalt installieren, muss mit dem Internet verbunden sein.
 
--   Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.
+- Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.
 
     > [!TIP]
     > Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte **Inhalt verwalten** im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../help-viewer/behavior-overrides.md).
 
 Zu beachten:
 
--   Die Hilfe bleibt standardmäßig online gespeichert.
+- Die Hilfe bleibt standardmäßig online gespeichert.
 
 ### <a name="create-the-content-set"></a>Erstellen der Inhalte
 
@@ -104,23 +104,23 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
 
 #### <a name="to-download-the-content"></a>So laden Sie die Inhalte herunter
 
-1.  Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.
+1. Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.
 
-2.  Navigieren Sie unter **Empfohlene Dokumentation** oder **Verfügbare Dokumentation** zu den Dokumentationen, die Sie herunterladen möchten, und klicken Sie auf **Hinzufügen**.
+2. Navigieren Sie unter **Empfohlene Dokumentation** oder **Verfügbare Dokumentation** zu den Dokumentationen, die Sie herunterladen möchten, und klicken Sie auf **Hinzufügen**.
 
-3.  Klicken Sie auf **Aktualisieren**.
+3. Klicken Sie auf **Aktualisieren**.
 
 Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern bereitgestellt werden kann.
 
 #### <a name="to-package-the-content"></a>So verpacken Sie die Inhalte
 
-1.  Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren. Beispiel: *C:\VSHelp*.
+1. Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren. Beispiel: *C:\VSHelp*.
 
-2.  Öffnen Sie *cmd.exe* mit Administratorberechtigungen.
+2. Öffnen Sie *cmd.exe* mit Administratorberechtigungen.
 
-3.  Navigieren Sie zu dem in Schritt 1 erstellten Ordner.
+3. Navigieren Sie zu dem in Schritt 1 erstellten Ordner.
 
-4.  Geben Sie folgenden Pfad ein:
+4. Geben Sie folgenden Pfad ein:
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern b
 
 ### <a name="deploy-the-content"></a>Bereitstellen der Inhalte
 
-1.  Erstellen Sie eine Netzwerkfreigabe, und kopieren Sie die Hilfeinhalte dorthin.
+1. Erstellen Sie eine Netzwerkfreigabe, und kopieren Sie die Hilfeinhalte dorthin.
 
      Kopieren Sie beispielsweise den Inhalt von *C:\VSHelp* nach *\\\myserver\VSHelp*.
 
-2.  Erstellen Sie eine *BAT-Datei* für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen. Beispiel:
+2. Erstellen Sie eine *BAT-Datei* für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen. Beispiel:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern b
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Führen Sie die *BAT-Datei* auf den lokalen Computern aus, auf denen Sie die Hilfeinhalte installieren möchten.
+3. Führen Sie die *BAT-Datei* auf den lokalen Computern aus, auf denen Sie die Hilfeinhalte installieren möchten.
 
 ## <a name="see-also"></a>Siehe auch
 

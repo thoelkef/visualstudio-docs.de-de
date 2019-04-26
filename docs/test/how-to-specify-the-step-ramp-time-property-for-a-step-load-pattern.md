@@ -8,12 +8,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821090"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Vorgehensweise: Angeben der Schrittverlaufszeiteigenschaft für ein detailliertes Auslastungsmuster
 
@@ -30,15 +30,15 @@ Die Eigenschaft **Schrittverlaufszeit** wird nur mit einem Schrittauslastungsmus
 
 Ein schrittweises Auslastungsmuster wird zum Erhöhen der Auslastung auf den Servern während der Ausführung des Auslastungstests verwendet, um zu verdeutlichen, wie sich die Leistung bei Erhöhen der Benutzerauslastung ändert. Wenn Sie z. B. die Leistung der Server beim Erhöhen der Benutzerauslastung auf 2.000 Benutzer anzeigen möchten, können Sie einen 10-stündigen Auslastungstest mit einem schrittweisen Auslastungsmuster mit den folgenden Eigenschaften ausführen:
 
--   Benutzeranzahl (ursprünglich): 100
+- Benutzeranzahl (ursprünglich): 100
 
--   Maximale Benutzeranzahl: 2000
+- Maximale Benutzeranzahl: 2000
 
--   Schrittdauer (Sekunden): 1800
+- Schrittdauer (Sekunden): 1800
 
--   Schrittverlaufszeit (Sekunden): 20
+- Schrittverlaufszeit (Sekunden): 20
 
--   Benutzeranzahl pro Schritt: 100
+- Benutzeranzahl pro Schritt: 100
 
 Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) mit einer Benutzerauslastung von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt.
 
@@ -49,24 +49,24 @@ Die Eigenschaft **Schrittverlaufszeit** ermöglicht es, dass die Steigerung von 
 
 ## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>So bearbeiten Sie die Eigenschaft „Schrittverlaufszeit“ für ein detailliertes Auslastungsmuster
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Öffnen Sie im Ordner **Szenarios** der Auslastungsteststruktur den Szenarioknoten, für den die Schrittverlaufszeit angegeben werden soll.
+2. Öffnen Sie im Ordner **Szenarios** der Auslastungsteststruktur den Szenarioknoten, für den die Schrittverlaufszeit angegeben werden soll.
 
-3.  Klicken Sie auf den Knoten **Schrittweises Auslastungsmuster**.
+3. Klicken Sie auf den Knoten **Schrittweises Auslastungsmuster**.
 
     > [!NOTE]
     > Das Auslastungsmuster für das Szenario muss ein schrittweises Auslastungsmuster sein. Falls dies nicht der Fall ist, zeigt das Auslastungsmuster den Auslastungsmustertyp an, der dem Szenario derzeit zugeordnet ist. Weitere Informationen finden Sie unter [Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+4. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Szenariokategorien und -eigenschaften werden im **Eigenschaftenfenster** angezeigt.
 
-5.  Legen Sie den Wert für die Eigenschaft **Schrittverlaufszeit** fest, indem Sie eine Zahl für die Sekunden der einzelnen Schritte eingeben, um die von der Eigenschaft **Benutzeranzahl pro Schritt** angegebenen Benutzer allmählich hinzuzufügen.
+5. Legen Sie den Wert für die Eigenschaft **Schrittverlaufszeit** fest, indem Sie eine Zahl für die Sekunden der einzelnen Schritte eingeben, um die von der Eigenschaft **Benutzeranzahl pro Schritt** angegebenen Benutzer allmählich hinzuzufügen.
 
-6.  Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für die **Schrittverlaufszeit** ausführen.
+6. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf **Speichern**. Sie können anschließend den Auslastungstest mit dem neuen Wert für die **Schrittverlaufszeit** ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

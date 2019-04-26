@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d3e3b1d646b16a50251c97d3268faaa4775d4664
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 172f4a367aa520ebd0fac62d25007713c47e5801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386275"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profilerbefehlszeile
 In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools gehörenden Befehlszeilentools verwenden können, um mithilfe der Instrumentierungsprofilerstellungs-Methode ausführliche Daten zur .NET-Speicherbelegung und Objektlebensdauer für eine dynamisch kompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung zu erfassen.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
  Wenn Sie Leistungsdaten aus einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung erfassen möchten, müssen Sie die *web.config*-Datei der Zielanwendung bearbeiten, um das [VSInstr.exe](../profiling/vsinstr.md)-Tool zu aktivieren, damit die Dateien der dynamisch kompilierten Anwendung instrumentiert werden können. Verwenden Sie dann das [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md)-Tool, um den Server zu konfigurieren, der die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung hostet, und aktivieren Sie die Profilerstellung für den .NET-Speicher, indem Sie passende Umgebungsvariablen festlegen. Starten Sie anschließend den Computer neu.
 
@@ -31,11 +31,11 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Konfigurieren der ASP.NET-Webanwendung und des Webservers
 
-1.  Bearbeiten Sie die *web.config*-Datei der Zielanwendung. Weitere Informationen finden Sie unter [How to: Modify web.config files to instrument and profile dynamically compiled ASP.NET web applications (Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen)](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Bearbeiten Sie die *web.config*-Datei der Zielanwendung. Weitere Informationen finden Sie unter [How to: Modify web.config files to instrument and profile dynamically compiled ASP.NET web applications (Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen)](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2.  Öffnen Sie ein Eingabeaufforderungsfenster auf dem Computer, der die Webanwendung hostet.
+2. Öffnen Sie ein Eingabeaufforderungsfenster auf dem Computer, der die Webanwendung hostet.
 
-3.  Initialisieren Sie die Umgebungsvariablen für die Profilerstellung. Typ:
+3. Initialisieren Sie die Umgebungsvariablen für die Profilerstellung. Typ:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** aktiviert die Sammlung von Daten zur Speicherbelegung.
+    - **/globaltracegc** aktiviert die Sammlung von Daten zur Speicherbelegung.
 
-    -   **/globaltracegclife** aktiviert die Sammlung von Daten zur Speicherbelegung und zur Objektlebensdauer.
+    - **/globaltracegclife** aktiviert die Sammlung von Daten zur Speicherbelegung und zur Objektlebensdauer.
 
-4.  Starten Sie den Computer neu.
+4. Starten Sie den Computer neu.
 
 ## <a name="run-the-profiling-session"></a>Ausführen der Profilerstellungssitzung
 
@@ -64,7 +64,7 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.
 
    > [!NOTE]
-   >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.
+   > Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.
 
    | Option | Beschreibung |
    | - | - |
@@ -76,7 +76,6 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
 
-
 2. Starten Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung auf die gewohnte Weise.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
@@ -84,7 +83,7 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
+- Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
     |Option|Beschreibung|
     |------------|-----------------|
@@ -92,7 +91,7 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|
 
--   Sie können auch die Option **VSPerfCmd.exe**[/mark](../profiling/mark.md) verwenden, um eine Profilmarkierung in die Datendatei einzufügen. Der Befehl **/mark** fügt einen Bezeichner, einen Zeitstempel und eine optionale benutzerdefinierte Textzeichenfolge hinzu. Mit Markierungen können die Daten in Profilerberichten und Datenansichten gefiltert werden.
+- Sie können auch die Option **VSPerfCmd.exe**[/mark](../profiling/mark.md) verwenden, um eine Profilmarkierung in die Datendatei einzufügen. Der Befehl **/mark** fügt einen Bezeichner, einen Zeitstempel und eine optionale benutzerdefinierte Textzeichenfolge hinzu. Mit Markierungen können die Daten in Profilerberichten und Datenansichten gefiltert werden.
 
 ## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
  Wenn Sie eine Profilerstellungssitzung beenden möchten, schließen Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung, und halten Sie die IIS an, um den Profilerstellungsprozess abzubrechen. Fahren Sie anschließend den Profiler herunter. Starten Sie dann die IIS neu.
@@ -118,13 +117,13 @@ In diesem Artikel erfahren Sie, wie Sie die zu [!INCLUDE[vsprvs](../code-quality
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>Wiederherstellen der Anwendungs- und Computerkonfiguration
 
-1.  Ersetzen Sie die *web.config*-Datei durch eine Kopie der ursprünglichen Datei.
+1. Ersetzen Sie die *web.config*-Datei durch eine Kopie der ursprünglichen Datei.
 
-2.  (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
+2. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
 
      **VSPerfCmd /globaloff**
 
-3.  Starten Sie den Computer neu.
+3. Starten Sie den Computer neu.
 
 ## <a name="see-also"></a>Siehe auch
 - [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430797"
 ---
 # <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
 Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt. Noch macht das Programm nicht viel. Es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an. Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.
@@ -22,40 +22,40 @@ Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausfü
 
 ## <a name="to-run-your-program"></a>So führen Sie das Programm aus
 
-1.  Verwenden Sie eine der folgenden Methoden, um das Programm auszuführen.
+1. Verwenden Sie eine der folgenden Methoden, um das Programm auszuführen.
 
-    -   Drücken Sie die Taste **F5**.
+    - Drücken Sie die Taste **F5**.
 
-    -   Klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen starten**.
+    - Klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen starten**.
 
-    -   Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
+    - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
 
          ![Schaltfläche „Debugging starten“ in der Symbolleiste](../ide/media/express_icondebug.png)
  Schaltfläche **Debugging starten** auf der Symbolleiste
 
-2.  Visual Studio führt das Programm aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Diagramm wird das Programm gezeigt, das Sie soeben erstellt haben. Das Programm wird ausgeführt, und Sie werden es bald ergänzen.
+2. Visual Studio führt das Programm aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Diagramm wird das Programm gezeigt, das Sie soeben erstellt haben. Das Programm wird ausgeführt, und Sie werden es bald ergänzen.
 
      ![Windows Form-Anwendungsprogramm wird ausgeführt](../ide/media/express_firstrun.png)
  **Windows Form-Anwendungsprogramm** wird ausgeführt
 
-3.  Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und schauen Sie sich die neue Symbolleiste an. Zusätzliche Schaltflächen werden auf der Symbolleiste angezeigt, wenn ein Programm ausgeführt wird. Mit diesen Schaltflächen können Sie Aufgaben ausführen, wie z. B. ein Programm beenden und starten. Außerdem helfen sie Ihnen, alle evtl. vorhandenen Fehler zu ermitteln. Für dieses Beispiel verwenden wir sie nur, um das Programm zu starten und zu beenden.
+3. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und schauen Sie sich die neue Symbolleiste an. Zusätzliche Schaltflächen werden auf der Symbolleiste angezeigt, wenn ein Programm ausgeführt wird. Mit diesen Schaltflächen können Sie Aufgaben ausführen, wie z. B. ein Programm beenden und starten. Außerdem helfen sie Ihnen, alle evtl. vorhandenen Fehler zu ermitteln. Für dieses Beispiel verwenden wir sie nur, um das Programm zu starten und zu beenden.
 
      ![Debugsymbolleiste](../ide/media/express_debugtoolbar.png)
 **Debugsymbolleiste**
 
-4.  Verwenden Sie eine der folgenden Methoden, um das Programm zu beenden.
+4. Verwenden Sie eine der folgenden Methoden, um das Programm zu beenden.
 
-    -   Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen beenden** aus.
+    - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen beenden** aus.
 
-    -   Klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen beenden** aus.
+    - Klicken Sie in der Menüleiste auf **Debuggen** > **Debuggen beenden** aus.
 
-    -   Schließen Sie das **Form1**-Fenster, indem Sie auf die Schaltfläche mit dem **X** in der oberen rechten Ecke des Fensters klicken.
+    - Schließen Sie das **Form1**-Fenster, indem Sie auf die Schaltfläche mit dem **X** in der oberen rechten Ecke des Fensters klicken.
 
     > [!NOTE]
-    >  Wenn Sie das Programm von der IDE heraus ausführen, wird dies als „Debuggen“ bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
+    > Wenn Sie das Programm von der IDE heraus ausführen, wird dies als „Debuggen“ bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).
+- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 3: Festlegen der Formulareigenschaften](../ide/step-3-set-your-form-properties.md).
 
--   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md).
+- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts](../ide/step-1-create-a-windows-forms-application-project.md).

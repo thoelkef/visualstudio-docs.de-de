@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979314"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme
 
@@ -35,7 +35,7 @@ Die IntelliTrace-Daten werden in einer Datei mit der Erweiterung *.iTrace* gespe
 Die in der IntelliTrace-Datei gesammelten Daten können zur Erhöhung der Debugproduktivität beitragen, da die Zeit zum Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzt wird. Da Sie die IntelliTrace-Datei für eine andere Person freigeben können, die die lokale Sitzung auf ihrem Computer replizieren kann, wird darüber hinaus die Wahrscheinlichkeit gemindert, dass ein Fehler nicht reproduziert werden kann.
 
 > [!NOTE]
-> Wenn Sie IntelliTrace in den Testeinstellungen aktivieren, ist das Sammeln von Code Coverage-Daten nicht möglich.
+> Wenn Sie IntelliTrace in den Testeinstellungen aktivieren, ist das Sammeln von Codeabdeckungsdaten nicht möglich.
 
 > [!WARNING]
 > Die Funktionsweise des Adapters für diagnostische Daten besteht in der Instrumentierung eines verwalteten Prozesses, der nach dem Laden des ersten Tests für den Testlauf ausgeführt werden muss. Wenn der zu überwachende Prozess bereits gestartet wurde, werden keine IntelliTrace-Dateien gesammelt, da der Prozess bereits ausgeführt wird. Stellen Sie zur Vermeidung dieses Problems sicher, dass der Prozess beendet wird, bevor die Tests geladen werden. Starten Sie dann den Prozess nach dem Laden der Tests oder dem Starten des ersten Tests.
@@ -51,11 +51,11 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>So konfigurieren Sie die zu sammelnden Daten mit dem IntelliTrace-Adapter für diagnostische Daten
 
-1.  Wählen Sie die Rolle aus, die zum Sammeln von IntelliTrace-Daten verwendet werden soll.
+1. Wählen Sie die Rolle aus, die zum Sammeln von IntelliTrace-Daten verwendet werden soll.
 
-2.  Wählen Sie **IntelliTrace** aus.
+2. Wählen Sie **IntelliTrace** aus.
 
-3.  Wenn Sie IntelliTrace für eine Webclientrolle oder für eine ASP.NET-Webanwendung hinzufügen, müssen Sie auch **ASP.NET-Clientproxy für IntelliTrace und Testauswirkung** auswählen.
+3. Wenn Sie IntelliTrace für eine Webclientrolle oder für eine ASP.NET-Webanwendung hinzufügen, müssen Sie auch **ASP.NET-Clientproxy für IntelliTrace und Testauswirkung** auswählen.
 
      Dieser Proxy ermöglicht das Erfassen von Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten.
 
@@ -64,22 +64,22 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  Wählen Sie **Konfigurieren** für **IntelliTrace** aus, um die standardmäßigen IntelliTrace-Einstellungen zu ändern.
+4. Wählen Sie **Konfigurieren** für **IntelliTrace** aus, um die standardmäßigen IntelliTrace-Einstellungen zu ändern.
 
      Das Dialogfeld zum Konfigurieren der zu sammelnden Daten wird angezeigt.
 
     > [!WARNING]
-    > Wenn Sie das Sammeln von IntelliTrace-Daten aktivieren, können keine Code Coverage-Daten gesammelt werden.
+    > Wenn Sie das Sammeln von IntelliTrace-Daten aktivieren, können keine Codeabdeckungsdaten gesammelt werden.
 
-5.  Wählen Sie die Registerkarte **Allgemein** aus. Wählen Sie **Nur IntelliTrace-Ereignisse** aus, um beim Testen signifikante Diagnoseereignisse mit minimalen Auswirkungen auf die Leistung aufzuzeichnen.
+5. Wählen Sie die Registerkarte **Allgemein** aus. Wählen Sie **Nur IntelliTrace-Ereignisse** aus, um beim Testen signifikante Diagnoseereignisse mit minimalen Auswirkungen auf die Leistung aufzuzeichnen.
 
      - oder - 
 
      Wählen Sie **IntelliTrace events and call information** (IntelliTrace-Ereignisse und Aufrufinformationen) aus, um Diagnoseereignisse und die Ablaufverfolgung auf Methodenebene unter Anzeige von Aufrufinformationen aufzuzeichnen. Diese Ebene der Ablaufverfolgung kann sich beim Ausführen der Tests auf die Leistung auswirken.
 
-6.  Wenn Sie Daten aus der ASP.NET-Anwendung sammeln möchten, die für Internetinformationsdienste ausgeführt wird, aktivieren Sie die Option **Collect data from ASP.NET applications that are running on Internet Information Services** (Daten von ASP.NET-Anwendungen sammeln, die auf Internetinformationsdiensten ausgeführt werden). Installieren und konfigurieren Sie den Test-Agent auf der Webserverrolle. Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
+6. Wenn Sie Daten aus der ASP.NET-Anwendung sammeln möchten, die für Internetinformationsdienste ausgeführt wird, aktivieren Sie die Option **Collect data from ASP.NET applications that are running on Internet Information Services** (Daten von ASP.NET-Anwendungen sammeln, die auf Internetinformationsdiensten ausgeführt werden). Installieren und konfigurieren Sie den Test-Agent auf der Webserverrolle. Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).
 
-7.  Wählen Sie die Registerkarte **Module** aus. Wählen Sie entweder **Collect data from all modules except for the following** (Daten aus allen Modulen mit Ausnahme der folgenden auflisten) aus, und fügen Sie der Liste der Module ein Modul mit der Option **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit der Option **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Module einschließen, mit Ausnahme der von Ihnen angegebenen Module.
+7. Wählen Sie die Registerkarte **Module** aus. Wählen Sie entweder **Collect data from all modules except for the following** (Daten aus allen Modulen mit Ausnahme der folgenden auflisten) aus, und fügen Sie der Liste der Module ein Modul mit der Option **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit der Option **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Module einschließen, mit Ausnahme der von Ihnen angegebenen Module.
 
      - oder - 
 
@@ -88,9 +88,9 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
     > [!NOTE]
     > Wählen Sie nach Möglichkeit die bestimmten Prozesse aus, die Sie überwachen möchten. Dies wird für eine optimale Leistung empfohlen.
 
-8.  Wählen Sie die Registerkarte **Prozesse** aus. Wählen Sie **Collect data from all processes except for the following** (Daten von allen Prozessen mit Ausnahme der folgenden sammeln) aus, und fügen Sie der Liste der Prozesse einen Prozess mit **Hinzufügen** hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Prozesse einschließen, mit Ausnahme der von Ihnen angegebenen Prozesse.
+8. Wählen Sie die Registerkarte **Prozesse** aus. Wählen Sie **Collect data from all processes except for the following** (Daten von allen Prozessen mit Ausnahme der folgenden sammeln) aus, und fügen Sie der Liste der Prozesse einen Prozess mit **Hinzufügen** hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Prozesse einschließen, mit Ausnahme der von Ihnen angegebenen Prozesse.
 
-     - oder -
+     - oder - 
 
      Wählen Sie **Nur Daten von den angegebenen Prozessen sammeln** aus, und fügen Sie der Liste der Prozesse mit **Hinzufügen** einen Prozess hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie die gewünschten Prozesse genau angeben.
 

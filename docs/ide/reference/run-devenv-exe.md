@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22c56e3dc4272fd927cc060f5a5a9972e5b8e6ca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945515"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -46,7 +46,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
   Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter startet die IDE und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.
 

@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996207"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Vorgehensweise: Verwenden der SDK-Parallelitätsschnellansichtsmarker
 Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwendet werden, um Spannen zu erstellen und Flags, Nachrichten und Warnungen zu schreiben.
 
 ### <a name="to-use-c"></a>C++ verwenden
 
-1.  Fügen Sie die Unterstützung mit SDK-Parallelitätsschnellansichtsmarker zu Ihrer Anwendung hinzu. Weitere Informationen finden Sie unter [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md).
+1. Fügen Sie die Unterstützung mit SDK-Parallelitätsschnellansichtsmarker zu Ihrer Anwendung hinzu. Weitere Informationen finden Sie unter [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md).
 
-2.  Fügen Sie eine `include` und `using`-Anweisung für das SDK hinzu.
+2. Fügen Sie eine `include` und `using`-Anweisung für das SDK hinzu.
 
     ```C++
 
@@ -31,7 +31,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
 
     ```
 
-3.  Fügen Sie den Code hinzu, um drei Spannen in der Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Die Methoden zum Schreiben von Flags, Nachrichten und Warnungen sind Mitglieder der [marker_series](../profiling/marker-series-class.md)-Klasse. Der Konstruktor für die [span](../profiling/span-class.md)-Klasse erfordert ein `marker_series`-Objekt, sodass jede Spanne einer bestimmten Markerreihe zugeordnet ist. Ein `span` endet, wenn er gelöscht wird.
+3. Fügen Sie den Code hinzu, um drei Spannen in der Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Die Methoden zum Schreiben von Flags, Nachrichten und Warnungen sind Mitglieder der [marker_series](../profiling/marker-series-class.md)-Klasse. Der Konstruktor für die [span](../profiling/span-class.md)-Klasse erfordert ein `marker_series`-Objekt, sodass jede Spanne einer bestimmten Markerreihe zugeordnet ist. Ein `span` endet, wenn er gelöscht wird.
 
     ```C++
 
@@ -50,11 +50,11 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
 
     ```
 
-4.  Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen**aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Parallelitätsschnellansicht.
+4. Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen**aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Parallelitätsschnellansicht.
 
      ![Parallelitätsschnellansicht mit 3 Markern und Warnungen](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
-5.  Fügen Sie den Code hinzu, um zusätzliche, benutzerdefinierte Markerreihen zu erstellen, indem der Konstruktor für `marker_series` aufgerufen wird, der einen Zeichenfolgennamen für die Markerreihe annimmt.
+5. Fügen Sie den Code hinzu, um zusätzliche, benutzerdefinierte Markerreihen zu erstellen, indem der Konstruktor für `marker_series` aufgerufen wird, der einen Zeichenfolgennamen für die Markerreihe annimmt.
 
     ```C++
 
@@ -74,15 +74,15 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
 
     ```
 
-6.  Starten Sie das aktuelle Projekt, um die Parallelitätsschnellansicht anzuzeigen. Die zwei Markerreihen werden in ihren eigenen Bereichen in der Threadansicht angezeigt. In der folgenden Abbildung werden die zwei neuen Spannen gezeigt.
+6. Starten Sie das aktuelle Projekt, um die Parallelitätsschnellansicht anzuzeigen. Die zwei Markerreihen werden in ihren eigenen Bereichen in der Threadansicht angezeigt. In der folgenden Abbildung werden die zwei neuen Spannen gezeigt.
 
      ![Parallelitätsschnellansicht mit 3 benutzerdefinierten Markerreihen](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>So verwenden Sie Visual Basic oder C\#
 
-1.  Fügen Sie die Unterstützung mit SDK-Parallelitätsschnellansichtsmarker zu Ihrer Anwendung hinzu. Weitere Informationen finden Sie unter [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md).
+1. Fügen Sie die Unterstützung mit SDK-Parallelitätsschnellansichtsmarker zu Ihrer Anwendung hinzu. Weitere Informationen finden Sie unter [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md).
 
-2.  Fügen Sie eine `using` oder `Imports`-Anweisung für das SDK hinzu.
+2. Fügen Sie eine `using` oder `Imports`-Anweisung für das SDK hinzu.
 
     ```VB
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
@@ -93,7 +93,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3.  Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>-Objekt, indem Sie die statische `EnterSpan`-Methode aufrufen. Um in die Standardreihe zu schreiben, verwenden Sie die statischen Methoden zum Schreiben der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>-Klasse.
+3. Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>-Objekt, indem Sie die statische `EnterSpan`-Methode aufrufen. Um in die Standardreihe zu schreiben, verwenden Sie die statischen Methoden zum Schreiben der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>-Klasse.
 
     ```VB
 
@@ -134,11 +134,11 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     alertSpan.Leave();
     ```
 
-4.  Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen**aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Threadansicht der Parallelitätsschnellansicht.
+4. Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen**aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Threadansicht der Parallelitätsschnellansicht.
 
      ![Parallelitätsschnellansicht mit Markern und Warnungen](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5.  Fügen Sie Code hinzu, um benutzerdefinierte Markerreihen mithilfe der statischen <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>-Methode zu erstellen. Die <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>-Klasse enthält Methoden zum Erstellen von Spannen und zum Schreiben von Flags, Meldungen und Warnungen.
+5. Fügen Sie Code hinzu, um benutzerdefinierte Markerreihen mithilfe der statischen <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>-Methode zu erstellen. Die <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>-Klasse enthält Methoden zum Erstellen von Spannen und zum Schreiben von Flags, Meldungen und Warnungen.
 
     ```VB
 
@@ -172,7 +172,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     messageSeriesSpan.Leave();
     ```
 
-6.  Starten Sie das aktuelle Projekt, um die Parallelitätsschnellansicht anzuzeigen. Die drei Markerreihen werden in ihren eigenen Bereichen in der Threadansicht angezeigt. Die folgende Abbildung zeigt die drei neuen Spannen.
+6. Starten Sie das aktuelle Projekt, um die Parallelitätsschnellansicht anzuzeigen. Die drei Markerreihen werden in ihren eigenen Bereichen in der Threadansicht angezeigt. Die folgende Abbildung zeigt die drei neuen Spannen.
 
      ![Parallelitätsschnellansicht mit 3 benutzerdefinierten Markerreihen](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 

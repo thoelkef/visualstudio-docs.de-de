@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deeb74e8e8763feb62b0cc21fcfbfbf3c6b220ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979886"
 ---
 # <a name="shutdown"></a>Shutdown
 Die Option **Shutdown** (Herunterfahren) wartet darauf, dass ein aktueller Profilerstellungsprozess beendet oder getrennt wird. Anschließend deaktiviert die Option die Profilerstellung und schließt die Profilerstellungs-Datendatei. Die **Shutdown**-Option muss der letzte Befehl einer Profilerstellung sein.
@@ -29,8 +29,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```
 
 #### <a name="parameters"></a>Parameter
- `Timeout`
- -   (Optional) Die Option wird, wenn angegeben, nach der angegebenen Zeit in Sekunden zurückgegeben, ohne dass der Profiler deaktiviert oder die Profilerstellungs-Datendatei geschlossen wird.
+`Timeout`
+- (Optional) Die Option wird, wenn angegeben, nach der angegebenen Zeit in Sekunden zurückgegeben, ohne dass der Profiler deaktiviert oder die Profilerstellungs-Datendatei geschlossen wird.
 
 ## <a name="see-also"></a>Siehe auch
 - [VSPerfCmd](../profiling/vsperfcmd.md)

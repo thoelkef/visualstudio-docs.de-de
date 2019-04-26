@@ -14,20 +14,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965940"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
 
-In diesem Tutorial lernen Sie sich viele Tools, Dialogfelder und Designer kennen, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
+Beim Durcharbeiten dieses Tutorial machen Sie sich mit vielen Tools, Dialogfeldern und Designern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Nun fügen wir der Anwendung drei Arten von Steuerelementen hinzu: ein <xref:Sys
 
 ### <a name="add-a-textblock-control"></a>Hinzufügen eines TextBlock-Steuerelements
 
-1.  Geben Sie **STRG**+**Q** ein, um das Suchfeld zu aktivieren, und geben Sie dort den Begriff **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
+1. Geben Sie **STRG**+**Q** ein, um das Suchfeld zu aktivieren, und geben Sie dort den Begriff **Toolbox** ein. Wählen Sie in der Ergebnisliste **Ansicht > Toolbox** aus.
 
 2. Erweitern Sie in der **Toolbox** den Knoten **Häufig verwendete WPF-Steuerelemente**, damit das TextBlock-Steuerelement angezeigt wird.
 
@@ -302,5 +302,5 @@ Damit haben Sie das Tutorial erfolgreich abgeschlossen. Sie finden die *EXE*-Dat
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Neues in Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+- [Neuerungen in Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Produktivitätstipps](../../ide/productivity-tips-for-visual-studio.md)

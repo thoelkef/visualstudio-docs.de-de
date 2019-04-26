@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959515"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
@@ -227,6 +227,6 @@ Indem Sie auf einen beliebigen Namen doppelklicken oder einen Namen mit den Pfei
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Formatierung](formatting-python-code.md)
-- [Umgestaltung](refactoring-python-code.md)
-- [Verwenden eines Linters](linting-python-code.md)
+- [Formatting](formatting-python-code.md)
+- [Refactoring](refactoring-python-code.md)
+- [Use a linter (Verwenden eines Linters)](linting-python-code.md)

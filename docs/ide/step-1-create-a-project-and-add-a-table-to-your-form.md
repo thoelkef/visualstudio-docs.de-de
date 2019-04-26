@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979554"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 
@@ -47,9 +47,9 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
 4. Legen Sie im Fenster **Eigenschaften** die folgenden Formulareigenschaften fest.
 
-   1.  Ändern Sie die Eigenschaft **Text** des Formulars von **Form1** in **Matching Game** (Gesellschaftsspiel). Dieser Text wird oben im Spielfenster angezeigt.
+   1. Ändern Sie die Eigenschaft **Text** des Formulars von **Form1** in **Matching Game** (Gesellschaftsspiel). Dieser Text wird oben im Spielfenster angezeigt.
 
-   2.  Legen Sie die Größe des Formulars auf eine Breite von 550 Pixeln und eine Höhe von 550 Pixeln fest. Hierzu können Sie entweder die Eigenschaft **Size** (Größe) auf **550, 550** festlegen oder die Ecke des Formulars ziehen, bis die richtige Größe in der rechten unteren Ecke der integrierten Entwicklungsumgebung (IDE) angezeigt wird.
+   2. Legen Sie die Größe des Formulars auf eine Breite von 550 Pixeln und eine Höhe von 550 Pixeln fest. Hierzu können Sie entweder die Eigenschaft **Size** (Größe) auf **550, 550** festlegen oder die Ecke des Formulars ziehen, bis die richtige Größe in der rechten unteren Ecke der integrierten Entwicklungsumgebung (IDE) angezeigt wird.
 
 5. Zeigen Sie die Toolbox an, indem Sie die Registerkarte **Toolbox** auf der linken Seite der IDE auswählen.
 
@@ -76,19 +76,19 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
     Während das TableLayoutPanel-Steuerelement ausgewählt ist, öffnen Sie die Toolbox, und fügen Sie ein <xref:System.Windows.Forms.Label>-Steuerelement (aus der Kategorie **Allgemeine Steuerelemente**) in der oberen linken TableLayoutPanel-Zelle hinzu. Das Label-Steuerelement sollte jetzt in der IDE ausgewählt sein. Legen Sie die folgenden Eigenschaften für das Bezeichnungsfeld fest:
 
-   1.  Stellen Sie sicher, dass die Eigenschaft **BackColor** des Bezeichnungsfelds auf **CornflowerBlue** festgelegt ist.
+   1. Stellen Sie sicher, dass die Eigenschaft **BackColor** des Bezeichnungsfelds auf **CornflowerBlue** festgelegt ist.
 
-   2.  Legen Sie die **AutoSize**-Eigenschaft auf **False** fest.
+   2. Legen Sie die **AutoSize**-Eigenschaft auf **False** fest.
 
-   3.  Legen Sie die Eigenschaft **Dock** auf **Fill** fest.
+   3. Legen Sie die Eigenschaft **Dock** auf **Fill** fest.
 
-   4.  Legen Sie die Eigenschaft **TextAlign** (Textausrichtung) auf **MiddleCenter** (Zellenmitte) fest, indem Sie neben der Eigenschaft erst die Dropdownschaltfläche und dann die mittlere Schaltfläche wählen. Dadurch wird sichergestellt, dass das Symbol in der Mitte der Zelle angezeigt wird
+   4. Legen Sie die Eigenschaft **TextAlign** (Textausrichtung) auf **MiddleCenter** (Zellenmitte) fest, indem Sie neben der Eigenschaft erst die Dropdownschaltfläche und dann die mittlere Schaltfläche wählen. Dadurch wird sichergestellt, dass das Symbol in der Mitte der Zelle angezeigt wird
 
-   5.  Wählen Sie die Eigenschaft **Font** (Schriftart) aus. Eine Schaltfläche mit einem Auslassungszeichen (**…**) wird angezeigt.
+   5. Wählen Sie die Eigenschaft **Font** (Schriftart) aus. Eine Schaltfläche mit einem Auslassungszeichen (**…**) wird angezeigt.
 
-   6.  Klicken Sie auf die Schaltfläche mit Auslassungspunkten, und legen Sie **Schrift** auf **Webdings**, **Schriftschnitt** auf **Fett** und **Größe** auf **48** fest.
+   6. Klicken Sie auf die Schaltfläche mit Auslassungspunkten, und legen Sie **Schrift** auf **Webdings**, **Schriftschnitt** auf **Fett** und **Größe** auf **48** fest.
 
-   7.  Legen Sie die Eigenschaft **Text** der Bezeichnung auf den Buchstaben **c** fest.
+   7. Legen Sie die Eigenschaft **Text** der Bezeichnung auf den Buchstaben **c** fest.
 
         Die linke obere Zelle im TableLayoutPanel sollte jetzt einen großen schwarzen Kasten enthalten, der mittig in einem blauen Hintergrund zentriert ist.
 
@@ -106,6 +106,6 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Um zum Übersichtsthema zurückzukehren, beachten Sie [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md).
+- Um zum Übersichtsthema zurückzukehren, beachten Sie [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md).

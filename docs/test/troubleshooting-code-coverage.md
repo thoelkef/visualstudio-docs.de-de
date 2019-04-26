@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990502"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 
@@ -22,7 +22,7 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
 
 Wenn Sie im Menü **Test** den Befehl **Code Coverage analysieren** auswählen, und der Buildvorgang sowie die Tests erfolgreich ausgeführt werden, sollte im Fenster **Code Coverage** eine Ergebnisliste angezeigt werden. Sie müssen möglicherweise die Elemente erweitern, um die Details anzuzeigen.
 
-![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png)
+![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png)
 
 Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -43,9 +43,9 @@ Lösung&mdash;Wählen Sie im Test-Explorer **Alle ausführen** aus, um zu überp
 
 Wenn Sie die Tests ändern und erneut ausführen, können das vorherige Code Coverage-Ergebnis und die Codefarbe der alten Ausführung noch sichtbar sein.
 
-1.  Führen Sie "Codeabdeckung analysieren" aus.
+1. Führen Sie "Codeabdeckung analysieren" aus.
 
-2.  Stellen Sie sicher, dass Sie das aktuelle Resultset im Fenster **Code Coverage-Ergebnisse** ausgewählt haben.
+2. Stellen Sie sicher, dass Sie das aktuelle Resultset im Fenster **Code Coverage-Ergebnisse** ausgewählt haben.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>PDB-Dateien (Symboldateien) sind nicht verfügbar
 
@@ -91,17 +91,17 @@ Erklärung: Sie können die Komponententests mit einer benutzerdefinierten *RUNS
 
 Lösung&mdash;Es gibt zwei mögliche Fehlertypen:
 
--   **XML-Fehler**
+- **XML-Fehler**
 
      Öffnen Sie die *RUNSETTINGS*-Datei im XML-Editor von Visual Studio. Suchen Sie nach Fehlerhinweisen.
 
--   **Fehler in regulärem Ausdruck**
+- **Fehler in regulärem Ausdruck**
 
      Jede Zeichenfolge in der Datei ist ein regulärer Ausdruck. Überprüfen Sie jede auf Fehler, und suchen Sie insbesondere nach Folgendem:
 
-    -   Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`
+    - Nicht übereinstimmende Klammern (...) oder Klammern ohne Escapezeichen \\(...\\). Wenn eine Klammer in der Suchzeichenfolge übereinstimmen soll, müssen Sie diese mit einem Escapezeichen versehen. Verwenden Sie beispielsweise zum Abgleichen einer Funktion: `.*MyFunction\(double\)`
 
-    -   Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`
+    - Sternchen oder Pluszeichen am Anfang eines Ausdrucks. Verwenden Sie einen Punkt gefolgt von einem Sternchen, damit jede Zeichenfolge übereinstimmt: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Benutzerdefinierte Datei ".runsettings" mit falschen Ausschlüssen
 

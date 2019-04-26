@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf64c2fae940de74978fb2d6c10ce380ed3958d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447255"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Bericht der Ereignisablaufverfolgung für Windows (ETW)
 In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-Ereignisse aufgeführt, die in einer Leistungssitzung für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (*ETL*) erfasst.
 
 > [!NOTE]
->  ETW-Berichte werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstellen nicht angezeigt.
+> ETW-Berichte werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstellen nicht angezeigt.
 
 - Weitere Informationen zum Erfassen der ETW über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Schnittstelle mithilfe von Profilerstellungstools finden Sie unter [Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
 

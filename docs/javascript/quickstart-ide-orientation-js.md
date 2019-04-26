@@ -8,18 +8,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840981"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
 In dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio unternehmen wir eine Tour durch einige der Fenster, Menüs und andere Funktionen der Benutzeroberfläche.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
@@ -112,13 +122,13 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 ![Ausgabefenster in Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Schnellstart
+## <a name="search-box"></a>Suchfeld
 
-Das Feld **Schnellstart** bietet eine schnelle und einfache Möglichkeit, fast alle Aufgaben in Visual Studio auszuführen. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
+Das Suchfeld bietet eine schnelle und einfache Möglichkeit, fast alle Aufgaben in Visual Studio auszuführen. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
 
-1. Geben Sie im Feld **Schnellstart** **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
+1. Geben Sie im Suchfeld den Suchbegriff **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
 
-   ![Feld „Schnellstart“ in Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Suchfeld in Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    Das Dialogfeld **Optionen** wird mit der Seite **Erstellen und ausführen** geöffnet.
 
@@ -132,7 +142,7 @@ Das Feld **Schnellstart** bietet eine schnelle und einfache Möglichkeit, fast a
 
 ## <a name="send-feedback-menu"></a>Menü „Feedback senden“
 
-Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verbesserung des Produkts haben, können Sie das Menü **Feedback senden** im oberen Bereich des Visual Studio-Fensters neben dem Feld **Schnellstart** verwenden.
+Wenn Sie Probleme bei der Verwendung von Visual Studio oder Vorschläge zur Verbesserung des Produkts haben, können Sie das Menü **Feedback senden** ganz oben im Visual Studio-Fenster verwenden.
 
 ![Menü „Feedback senden“ in Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

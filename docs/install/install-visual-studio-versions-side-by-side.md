@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974721"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 
@@ -38,7 +38,7 @@ Bevor Sie Versionen parallel installieren, sollten Sie sich mit folgenden Beding
 
 * Wenn Sie Visual Studio 2019 verwenden, um eine Projektmappe zu öffnen, die in Visual Studio 2017 erstellt wurde, können Sie die Projektmappe später erneut in der früheren Version öffnen und ändern, sofern Sie keine Funktionen implementiert haben, die für Visual Studio 2019 spezifisch sind.
 
-* Wenn Sie versuchen, eine Projektmappe mit Visual Studio 2019 zu öffnen, die mit Visual Studio 2017 oder einer früheren Version erstellt wurde, müssen Sie möglicherweise Ihre Projekte und Dateien ändern, damit diese mit Visual Studio 2019 kompatibel sind. Weitere Informationen finden Sie unter [Projektmigration und Upgradereferenz für Visual Studio 2017](../porting/port-migrate-upgrade-visual-studio-projects-2019.md).
+* Wenn Sie versuchen, eine Projektmappe mit Visual Studio 2019 zu öffnen, die mit Visual Studio 2017 oder einer früheren Version erstellt wurde, müssen Sie möglicherweise Ihre Projekte und Dateien ändern, damit diese mit Visual Studio 2019 kompatibel sind. Weitere Informationen finden Sie unter [Projektmigration und Upgradereferenz für Visual Studio 2017](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ::: moniker-end
 
@@ -77,17 +77,17 @@ Sprachspezifische Informationen finden Sie im entsprechenden Thema in der folgen
 
 | Sprache | Thema |
 |--------------|-----------|
-| Visual Basic | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [Entwickeln mit Visual F# in Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2019) |
+| Visual Basic | [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [Entwickeln mit Visual F# in Visual Studio](../ide/fsharp-visual-studio.md) |
 | C++ | [Vorgehensweise: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/). |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Installieren von Visual Studio](install-visual-studio.md?view=vs-2019)
-* [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [Installieren von Visual Studio](install-visual-studio.md)
+* [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Erstellen von isolierten Anwendungen und parallelen Assemblys (C/C++)](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

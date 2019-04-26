@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438191"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für Zielplattformen
 
@@ -35,20 +35,20 @@ Mit dem **Konfigurations-Manager** können Sie für ein Projekt schnell eine neu
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>So konfigurieren Sie ein Projekt für eine 64-Bit-Plattform
 
-1.  Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.
+1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.
 
-2.  Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen**.
+2. Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen**.
 
-    1.  Wählen Sie **Neu** aus, wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird.
+    1. Wählen Sie **Neu** aus, wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird.
 
          Das Dialogfeld **Neue Projektmappenplattform** wird angezeigt.
 
-    2.  Wählen Sie in der Liste **Neue Plattform eingeben oder auswählen** **x64** aus.
+    2. Wählen Sie in der Liste **Neue Plattform eingeben oder auswählen** **x64** aus.
 
         > [!NOTE]
-        >  Wenn Sie die Konfiguration neu benennen, müssen Sie möglicherweise die Einstellungen für die gewünschte Zielplattform im **Projekt-Designer** konfigurieren.
+        > Wenn Sie die Konfiguration neu benennen, müssen Sie möglicherweise die Einstellungen für die gewünschte Zielplattform im **Projekt-Designer** konfigurieren.
 
-    3.  Wenn Sie die Einstellungen aus der aktuellen Plattformkonfiguration kopieren möchten, wählen Sie diese aus, und wählen Sie anschließend die Schaltfläche **OK** aus.
+    3. Wenn Sie die Einstellungen aus der aktuellen Plattformkonfiguration kopieren möchten, wählen Sie diese aus, und wählen Sie anschließend die Schaltfläche **OK** aus.
 
 Es werden die Eigenschaften für alle Projekte mit der 64-Bit-Plattform als Zielplattform aktualisiert, und der nächste Build des Projekts wird für 64-Bit-Plattformen optimiert.
 

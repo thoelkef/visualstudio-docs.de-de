@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971444"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
 
@@ -48,12 +48,14 @@ Führen Sie die folgenden Schritte durch, um das Skript auszuführen:
     ```bash
     cd /location/of/file
     ```
+
 3. Machen Sie das Skript ausführbar, und führen Sie es mit **sudo** aus:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Löschen Sie schließlich das Deinstallationsskript.
 
 ### <a name="net-core-script"></a>.NET Core-Skript
@@ -68,12 +70,14 @@ Führen Sie die folgenden Schritte durch, um das Skript auszuführen:
     ```bash
     cd /location/of/file
     ```
+
 3. Machen Sie das Skript ausführbar, und führen Sie es mit **sudo** aus:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Löschen Sie schließlich das .NET Core-Deinstallationsskript.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
@@ -104,7 +108,6 @@ Sie können auch das folgende Verzeichnis entfernen, das verschiedene Xamarin-Da
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Deinstallieren des Mono SDK (MDK)
 
@@ -195,10 +198,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 Für frühere Versionen müssen Sie folgende Artefakte manuell entfernen:
 
-* Löschen Sie die Workbooks-App unter `"/Applications/Xamarin Workbooks.app"`
-* Löschen Sie die Inspector-App unter `"Applications/Xamarin Inspector.app"`
-* Löschen Sie die Add-ins `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` und `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Löschen Sie Inspector und die unterstützenden Dateien hier: `/Library/Frameworks/Xamarin.Interactive.framework` und `/Library/Frameworks/Xamarin.Inspector.framework`
+* Löschen Sie die Workbooks-App unter `"/Applications/Xamarin Workbooks.app"`.
+* Löschen Sie die Inspector-App unter `"Applications/Xamarin Inspector.app"`.
+* Löschen Sie die Add-ins `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` und `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`.
+* Löschen Sie Inspector und die unterstützenden Dateien hier: `/Library/Frameworks/Xamarin.Interactive.framework` und `/Library/Frameworks/Xamarin.Inspector.framework`.
 
 ## <a name="uninstall-the-xamarin-profiler"></a>Deinstallieren von Xamarin Profiler
 

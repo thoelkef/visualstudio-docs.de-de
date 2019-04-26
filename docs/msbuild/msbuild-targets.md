@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004577"
 ---
 # <a name="msbuild-targets"></a>MSBuild-Ziele
 Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der Buildprozess kann in kleinere Einheiten aufgeteilt werden. Ein Ziel kann beispielsweise alle Dateien im Ausgabeverzeichnis zur Vorbereitung auf den Build löschen, während ein anderes die Eingaben für das Projekt kompiliert und diese in einem leeren Verzeichnis platziert. Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).
@@ -45,15 +45,15 @@ Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der B
 ## <a name="target-build-order"></a>Buildreihenfolge für Ziele
  Ziele müssen geordnet werden, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt. Es gibt mehrere Möglichkeiten, um die Reihenfolge anzugeben, in der die Ziele ausgeführt werden.
 
--   Ursprüngliche Ziele
+- Ursprüngliche Ziele
 
--   Standardziele
+- Standardziele
 
--   Erstes Ziel
+- Erstes Ziel
 
--   Zielabhängigkeiten
+- Zielabhängigkeiten
 
--   `BeforeTargets` und `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` und `AfterTargets` (MSBuild 4.0)
 
 Ein Ziel wird während eines einzelnen Builds nie zweimal ausgeführt, auch wenn ein nachfolgendes Ziel im Build von diesem abhängt. Sobald ein Ziel ausgeführt wird, ist sein Beitrag zum Build abgeschlossen.
 

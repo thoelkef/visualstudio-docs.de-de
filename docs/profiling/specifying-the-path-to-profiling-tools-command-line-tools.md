@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979834"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Angeben des Pfads zu Befehlszeilentools für Profilerstellungstools
 
@@ -34,21 +34,21 @@ Der Pfad der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/v
 Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest.
 
 ::: moniker range=">=vs-2019"
--   Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
+- Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
      (nativ) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
+- Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
      (nativ) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
+- Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
      (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
+- Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:
 
      (nativ) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (verwaltet) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

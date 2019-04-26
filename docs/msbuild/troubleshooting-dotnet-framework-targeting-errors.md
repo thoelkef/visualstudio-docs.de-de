@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 041a04827ee904f309b62b8fb875198cc8991b34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434152"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Problembehandlung bei .NET Framework-Zielversionsfehlern
 Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftreten könnten, und wie Sie diese Fehler auflösen können.
@@ -51,7 +51,7 @@ Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftre
 ```
 
 > [!NOTE]
->  Nach Schließen und erneutem Öffnen des Projekts sollten Sie es auch neu erstellen, um sicherzustellen, dass alle Verweise ordnungsgemäß aufgelöst werden.
+> Nach Schließen und erneutem Öffnen des Projekts sollten Sie es auch neu erstellen, um sicherzustellen, dass alle Verweise ordnungsgemäß aufgelöst werden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md)

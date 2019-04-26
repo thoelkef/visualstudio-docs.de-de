@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830062"
 ---
 # <a name="modules-view---contention-data"></a>Modulansicht: Konfliktdaten
 Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitätsdaten an, die in den Profilerstellungsdaten abgefragt wurden. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen der Module, in denen Konfliktereignisse aufgetreten sind, werden unter dem Modulknoten aufgeführt.

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6486fc204942553a58e437d56fc7d0ffee548b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425485"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger
 
@@ -41,7 +41,7 @@ ms.locfileid: "56630391"
  Seiten werden häufig in Massenauslagerungsvorgängen vom Datenträger gelesen oder auf den Datenträger geschrieben. Die Anzahl der geänderten Seiten pro Sekunde ist häufig deutlich größer als beispielsweise die Anzahl der Seiten-Schreibvorgänge pro Sekunde. Der Grund hierfür ist, dass die geänderten Seiten pro Sekunde auch geänderte Datenseiten aus dem Systemdateicache beinhalten. ist jedoch nicht immer einfach, den direkt für die Auslagerung verantwortlichen Prozess oder den Grund für die Auslagerung zu ermitteln.
 
 > [!NOTE]
->  Diese Regel wird ausgelöst, wenn die Auslagerung des aktiven Speichers eine sehr hohe Rate erreicht. Wenn die Auslagerungsrate zwar beträchtlich, aber nicht übermäßig hoch ist, wird stattdessen die Informationsregel [DA0017: High rates of paging active memory to disk (Hohe Rate an Auslagerung von aktivem Speicher auf den Datenträger)](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) ausgelöst.
+> Diese Regel wird ausgelöst, wenn die Auslagerung des aktiven Speichers eine sehr hohe Rate erreicht. Wenn die Auslagerungsrate zwar beträchtlich, aber nicht übermäßig hoch ist, wird stattdessen die Informationsregel [DA0017: High rates of paging active memory to disk (Hohe Rate an Auslagerung von aktivem Speicher auf den Datenträger)](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) ausgelöst.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) zu navigieren. Suchen Sie die Spalte **Arbeitsspeicher\Seiten/s**. Überprüfen Sie, ob die Auslagerung von E/A-Aktivitäten in bestimmten Phasen der Programmausführung besonders häufig auftritt.

@@ -8,16 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59559f6d870a6291a00c74ff2be5737123fe076
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c763e24ae79591f4c9779421da9e41cf8f710e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968118"
 ---
 # <a name="profiling-tools-usage-rules"></a>Verwendungsregeln für Profilerstellungstools
 Leistungsregeln in der Kategorie Verwendung der Profilerstellungstools bieten eine Anleitung für die Verwendung des Profiler zur effektivsten Datensammlung.
-
 
 | | |
 | - | - |

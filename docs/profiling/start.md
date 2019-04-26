@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979678"
 ---
 # <a name="start"></a>Starten
 Die **Start**-Option ist eine *VSPerfCmd.exe*-Option, die den Profiler mit der angegebenen Profilerstellungsmethode initialisiert.
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>Parameter
  `Method` muss einem der folgenden Schlüsselwörter entsprechen:
 
--   **TRACE**: Gibt die Instrumentationsmethode an.
+- **TRACE**: Gibt die Instrumentationsmethode an.
 
--   **SAMPLE**: Gibt die Samplingmethode an.
+- **SAMPLE**: Gibt die Samplingmethode an.
 
--   **COVERAGE**: Gibt die Abdeckung des Codes an.
+- **COVERAGE**: Gibt die Abdeckung des Codes an.
 
--   **CONCURRENCY**: Gibt die Ressourcenkonfliktmethode an.
+- **CONCURRENCY**: Gibt die Ressourcenkonfliktmethode an.
 
 ## <a name="required-options"></a>Erforderliche Optionen
  Die Option **Ausgabe** muss angegeben werden, wenn **Start** auf der Befehlszeilen angegeben wird.
