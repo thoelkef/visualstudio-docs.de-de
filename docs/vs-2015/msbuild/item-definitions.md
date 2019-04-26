@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433586"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090758"
  Elementmetadaten, die in ItemDefinitionGroup definiert werden, sind nur eine Deklaration der Standardmetadaten. Die Metadaten finden nur dann Anwendung, wenn Sie ein Element definieren, das zum Einschließen der Metadatenwerte ItemGroup verwendet.  
   
 > [!NOTE]
->  In mehreren Beispielen in diesem Thema wird ein ItemDefinitionGroup-Element angezeigt, wobei die entsprechende ItemGroup-Definition aus Gründen der Übersichtlichkeit weggelassen wird.  
+> In mehreren Beispielen in diesem Thema wird ein ItemDefinitionGroup-Element angezeigt, wobei die entsprechende ItemGroup-Definition aus Gründen der Übersichtlichkeit weggelassen wird.  
   
  Explizit in einem ItemGroup-Element definierte Metadaten haben Vorrang vor Metadaten in einem ItemDefinitionGroup-Element. Metadaten in einem ItemDefinitionGroup-Element werden nur auf nicht definierte Metadaten in einem ItemGroup-Element angewendet. Beispiel:  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090758"
  In diesem Beispiel wird das Standardmetadatum "m" auf das Element "i" angewendet, da das Metadatum "m" nicht explizit durch das Element "i" definiert wird. Das Standardmetadatum "n" wird jedoch nicht auf das Element "i" angewendet, da das Metadatum "n" bereits durch Element "i" definiert ist.  
   
 > [!NOTE]
->  Bei XML-Elementen und XML-Parameternamen muss die Groß\-/Kleinschreibung beachtet werden. Bei Elementmetadaten und Element\//Eigenschaftennamen muss die Groß\-/Kleinschreibung nicht beachtet werden. Daher sollten ItemDefinitionGroup-Elemente, deren Namen sich nur durch die Groß-/Kleinschreibung unterscheiden, als gleiches ItemGroup behandelt werden.  
+> Bei XML-Elementen und XML-Parameternamen muss die Groß\-/Kleinschreibung beachtet werden. Bei Elementmetadaten und Element\//Eigenschaftennamen muss die Groß\-/Kleinschreibung nicht beachtet werden. Daher sollten ItemDefinitionGroup-Elemente, deren Namen sich nur durch die Groß-/Kleinschreibung unterscheiden, als gleiches ItemGroup behandelt werden.  
   
 ## <a name="value-sources"></a>Wertquellen  
  Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschiedenen Quellen stammen:  
@@ -83,7 +83,7 @@ ms.locfileid: "60090758"
 - CDATA-Abschnitt \<\!\[CDATA\[Dies hier wird nicht analysiert.\]\]\>  
   
 > [!NOTE]
->  Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.  
+> Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.  
   
 ## <a name="additive-and-multiple-definitions"></a>Additive und mehrfache Definitionen  
  Wenn Sie Definitionen hinzufügen oder mehrere ItemDefinitionGroups verwenden, beachten Sie Folgendes:  
@@ -128,7 +128,7 @@ ms.locfileid: "60090758"
  In diesem Beispiel wird der bereits definierte Wert für die Metadaten „m“ \(m1\) dem neuen Wert \(m2\) hinzugefügt, sodass der Endwert „m1;m2“ lautet.  
   
 > [!NOTE]
->  Dies kann auch im gleichen ItemDefinitionGroup auftreten.  
+> Dies kann auch im gleichen ItemDefinitionGroup auftreten.  
   
  Wenn Sie die bereits definierten Metadaten überschreiben, hat die letzte Spezifikation Vorrang. Im folgenden Beispiel ändert sich der endgültige Wert der Metadaten "m" von "m1" in "m1a".  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090758"
  In diesem Fall werden die Standardmetadaten "m1" für Element "i" nur dann eingeschlossen, wenn der Wert der "Configuration"-Eigenschaft "Debug" lautet.  
   
 > [!NOTE]
->  In Bedingungen werden nur lokale Metadatenverweise unterstützt.  
+> In Bedingungen werden nur lokale Metadatenverweise unterstützt.  
   
  Verweise auf Metadaten, die in einem früheren ItemDefinitionGroup definiert sind, sind für das Element lokal, nicht für die Definitionsgruppe. Das heißt, der Umfang der Verweise ist elementspezifisch. Beispiel:  
   

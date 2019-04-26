@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d4895da5247cbfba2263b3b298850086ed16c9b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442466"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54761442"
 Die VSPerfCmd.exe-Option **PF** legt das Profilerstellungsereignis fest, das auf Seitenfehler gesampelt wird, und optional wird die Anzahl der Zyklen in einem Samplingintervall vom Standard „10“ auf einen anderen Wert geändert.  
   
 > [!NOTE]
->  PF kann nicht in 64-Bit-Systemen verwendet werden.  
+> PF kann nicht in 64-Bit-Systemen verwendet werden.  
   
  **Hinweis:** **PF** wird auf 64-Bit-Computern nicht unterstützt und kann nur in einer Befehlszeile verwendet werden, die auch die Optionen **Launch** oder **Attach** enthält.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433056"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Gewusst wie: Erstellen und Ausführen einer unbeaufsichtigten Installation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
      Der Netzwerkpfad der Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entspricht \\\\*ServerName*\IDEinstall\\*Product*.exe.
 
     > [!NOTE]
-    >  Die Installation schlägt möglicherweise fehl, wenn eine Pfad- und Dateinamenkombination 260 Zeichen überschreitet. Die maximale Länge eines Pfads in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] beträgt 221 Zeichen.  Der Name des lokalen Pfads sollte 70 Zeichen nicht überschreiten, und der Name des Netzwerkpfads sollte 39 Zeichen nicht überschreiten.
+    > Die Installation schlägt möglicherweise fehl, wenn eine Pfad- und Dateinamenkombination 260 Zeichen überschreitet. Die maximale Länge eines Pfads in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] beträgt 221 Zeichen.  Der Name des lokalen Pfads sollte 70 Zeichen nicht überschreiten, und der Name des Netzwerkpfads sollte 39 Zeichen nicht überschreiten.
 
      Bei der Installation treten möglicherweise auch dann Fehler auf, wenn die Ordnernamen im Pfad eingebettete Leerzeichen aufweisen (beispielsweise „\\\\*ServerName*\IDE install“ oder „\\\\*ServerName*\Visual Studio\\“).
 
@@ -46,16 +46,16 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
  Zum Bereitstellen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im unbeaufsichtigten Modus müssen Sie die Datei „AdminDeployment.xml“ ändern. Dafür müssen Sie die Datei „AdminDeployment.xml“ erstellen, indem Sie den Befehlszeilenparameter `/CreateAdminFile` *\<<Dateispeicherort>* verwenden. Mit dieser Datei können Sie dann entweder eine Bereitstellung von Visual Studio mithilfe von Push in das Netzwerk übertragen oder die Datei mithilfe von Pull in eine Installation übertragen, wenn Sie die Datei in das Verzeichnis " *Laufwerk*:\IDEinstall\packages" einfügen. Die Datei AdminDeployment.xml ist nicht spezifisch für ein Betriebssystem, eine Architektur, eine Edition von Visual Studio oder eine Betriebssystemsprache.
 
 > [!CAUTION]
->  In manchen Fällen werden Elemente, die in der Datei "AdminDeployment.xml" als ausgewählt aufgeführt sind, nicht installiert. Um dieses Problem zu beheben, platzieren sie die mit "Selected="yes"" markierten Elemente am **Ende** der Datei "AdminDeployment.xml".
+> In manchen Fällen werden Elemente, die in der Datei "AdminDeployment.xml" als ausgewählt aufgeführt sind, nicht installiert. Um dieses Problem zu beheben, platzieren sie die mit "Selected="yes"" markierten Elemente am **Ende** der Datei "AdminDeployment.xml".
 >
->  Wenn Sie die optionalen Abhängigkeiten eines Elements nicht installieren möchten, müssen Sie zuerst das übergeordnete Element auswählen und dann die Auswahl der optionalen Abhängigkeiten nach dem übergeordneten Element aufheben, wie im folgenden Screenshot gezeigt:
+> Wenn Sie die optionalen Abhängigkeiten eines Elements nicht installieren möchten, müssen Sie zuerst das übergeordnete Element auswählen und dann die Auswahl der optionalen Abhängigkeiten nach dem übergeordneten Element aufheben, wie im folgenden Screenshot gezeigt:
 >
->  ![Installationselemente am Ende der AdminDeployment.xml-Datei ](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Installationselemente am Ende der AdminDeployment.xml-Datei ](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Eine weitere Möglichkeit besteht darin, die optionalen untergeordneten Elemente eines übergeordneten Elements einfach auszuschließen, d. h., keine mit "Selected="no"" markierten Elemente einzuschließen. Allerdings müssen alle Elemente mit "Selected="yes"" weiterhin am Ende der Datei "AdminDeployment.xml" platziert werden.
+> Eine weitere Möglichkeit besteht darin, die optionalen untergeordneten Elemente eines übergeordneten Elements einfach auszuschließen, d. h., keine mit "Selected="no"" markierten Elemente einzuschließen. Allerdings müssen alle Elemente mit "Selected="yes"" weiterhin am Ende der Datei "AdminDeployment.xml" platziert werden.
 
 > [!IMPORTANT]
->  Während der Installation startet der Computer möglicherweise mehrere Male erneut. Nach dem Neustart müssen Sie zum Ausführen der Installation sich wieder mit demselben Benutzerkonto anmelden, mit dem Sie angemeldet waren, bevor der Computer neu gestartet wurde. Automatische Neustarts können vermieden werden, indem die erforderlichen Komponenten vor dem Ausführen einer unbeaufsichtigten Installation vorinstalliert werden. Weitere Informationen finden Sie im Abschnitt: "Vermeiden eines Neustarts während des Setups" im [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
+> Während der Installation startet der Computer möglicherweise mehrere Male erneut. Nach dem Neustart müssen Sie zum Ausführen der Installation sich wieder mit demselben Benutzerkonto anmelden, mit dem Sie angemeldet waren, bevor der Computer neu gestartet wurde. Automatische Neustarts können vermieden werden, indem die erforderlichen Komponenten vor dem Ausführen einer unbeaufsichtigten Installation vorinstalliert werden. Weitere Informationen finden Sie im Abschnitt: "Vermeiden eines Neustarts während des Setups" im [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
 
  Das AdminDeployment-Dateischema enthält die folgenden Elemente:
 
@@ -71,7 +71,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
 |BundleCustomizations|NoCacheOnlyMode|yes&#124;default|Verhindert, dass der Paket-Cache vorab gefüllt wird.|
 
 > [!WARNING]
->  Die Installationsanwendung berücksichtigt den Auswahlzustand eines auswählbaren Elements, selbst wenn es ausgeblendet ist. Wenn Sie beispielsweise ein wählbares Element immer installieren möchten, können Sie es als ausgeblendet und ausgewählt markieren.
+> Die Installationsanwendung berücksichtigt den Auswahlzustand eines auswählbaren Elements, selbst wenn es ausgeblendet ist. Wenn Sie beispielsweise ein wählbares Element immer installieren möchten, können Sie es als ausgeblendet und ausgewählt markieren.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Erstellen einer unbeaufsichtigten Installation von Visual Studio
 
@@ -100,7 +100,7 @@ Sie können die Installationsanwendung für [!INCLUDE[vsprvs](../includes/vsprvs
  Wenn Sie **Systemsteuerung** öffnen und die Installationsanwendung erneut ausführen, können Sie Funktionen von Visual Studio ändern, Programmiersprachen deinstallieren und Visual Studio reparieren bzw. deinstallieren.
 
 > [!NOTE]
->  Sie müssen über Administratoranmeldeinformationen auf dem lokalen Computer verfügen, um den Wartungsmodus zu verwenden.
+> Sie müssen über Administratoranmeldeinformationen auf dem lokalen Computer verfügen, um den Wartungsmodus zu verwenden.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Verwalten einer Installation auf einem Clientcomputer
 

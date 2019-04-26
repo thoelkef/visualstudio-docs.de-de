@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432308"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
   Wenn eine Tastenkombinationen einem Befehl im globalen Kontext und in keinem anderen zugewiesen ist, ruft diese Tastenkombination immer diesen Befehl auf. Aber eine Tastenkombination kann einem Befehl im globalen Kontext und einem anderen Befehl in einem speziellen Kontext zugewiesen werden. Wenn Sie eine solche Tastenkombination in dem speziellen Kontext verwenden, ruft sie den Befehl für diesen Kontext auf und nicht den Befehl für den globalen Kontext.
 
 > [!NOTE]
->  Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Dieses Thema bezieht sich auf **Allgemeine Entwicklungseinstellungen**.
+> Je nach Ihren Einstellungen und der Edition von Visual Studio ändern sich möglicherweise auch die Namen und Positionen von Menübefehlen oder die Optionen in Dialogfeldern. Dieses Thema bezieht sich auf **Allgemeine Entwicklungseinstellungen**.
 
 ## <a name="bkmk_identify"></a> Nachschlagen einer Tastenkombination
 
@@ -91,12 +91,12 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
      Wählen Sie beispielsweise **Global** aus, wenn die Tastenkombination in allen Zusammenhängen funktionieren soll. Sie können jede Tastenkombination verwenden, die in keinem anderen Editor (als Global) zugeordnet ist. Andernfalls wird die Tastenkombination vom Editor überschrieben.
 
     > [!NOTE]
-    >  Folgende Tasten können im Gültigkeitsbereich **Global** nicht in einer Tastenkombination verwendet werden: DRUCK/S-ABF, ROLLEN, PAUSE/UNTBR, TAB, FESTSTELLTASTE, EINFG, POS1, ENDE, BILD-AUF, BILD-AB, die WINDOWS-TASTE, die ANWENDUNGSTASTE, alle PFEILTASTEN sowie die EINGABETASTE, NUM, ENTF bzw. ENTF im Tastenblock und STRG+ALT+ENTF.
+    > Folgende Tasten können im Gültigkeitsbereich **Global** nicht in einer Tastenkombination verwendet werden: DRUCK/S-ABF, ROLLEN, PAUSE/UNTBR, TAB, FESTSTELLTASTE, EINFG, POS1, ENDE, BILD-AUF, BILD-AB, die WINDOWS-TASTE, die ANWENDUNGSTASTE, alle PFEILTASTEN sowie die EINGABETASTE, NUM, ENTF bzw. ENTF im Tastenblock und STRG+ALT+ENTF.
 
 6. Geben Sie in das Feld **Press shortcut key(s)** (Tastenkombination drücken) die Tastenkombination ein, die Sie verwenden möchten.
 
     > [!NOTE]
-    >  Sie können eine Tastenkombination erstellen, die einen Buchstaben mit der ALT-TASTE, der STRG-TASTE oder mit beiden kombiniert. Sie können auch eine Tastenkombination erstellen, welche die UMSCHALTTASTE und einen Buchstaben mit der ALT-TASTE, der STRG-TASTE oder mit beiden kombiniert.
+    > Sie können eine Tastenkombination erstellen, die einen Buchstaben mit der ALT-TASTE, der STRG-TASTE oder mit beiden kombiniert. Sie können auch eine Tastenkombination erstellen, welche die UMSCHALTTASTE und einen Buchstaben mit der ALT-TASTE, der STRG-TASTE oder mit beiden kombiniert.
 
      Wenn eine Tastenkombination bereits einem anderen Befehl zugeordnet ist, wird sie im Feld **Tastenkombination wird momentan verwendet von** angezeigt. In diesem Fall löschen Sie die Tastenkombination mit der RÜCKTASTE und versuchen es mit einer anderen Tastenkombination.
 
@@ -105,7 +105,7 @@ Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese T
 7. Klicken Sie auf **Zuweisen**.
 
     > [!NOTE]
-    >  Wenn Sie eine andere Tastenkombination für einen Befehl angeben, klicken Sie auf die Schaltfläche **Zuweisen** und dann auf **Abbrechen**. Damit wird das Dialogfeld geschlossen, aber die Änderung bleibt bestehen.
+    > Wenn Sie eine andere Tastenkombination für einen Befehl angeben, klicken Sie auf die Schaltfläche **Zuweisen** und dann auf **Abbrechen**. Damit wird das Dialogfeld geschlossen, aber die Änderung bleibt bestehen.
 
 ## <a name="bkmk_transfer"></a> Freigeben benutzerdefinierter Tastenkombinationen
  Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie in eine Datei exportieren und die Datei dann anderen Benutzern zur Verfügung stellen, sodass diese die Daten importieren können.

@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434276"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091608"
 Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leistungsbericht** der integrierten Entwicklungsumgebung (integrated Development Environment (IDE)) der Visual Studio Team System Development Edition anzeigen. Die Profilerstellungsdaten werden in VSP- und VSPS-Dateien gespeichert. In den Anzeigefenstern für Berichte können Sie Leistungsprobleme der Anwendung anzeigen und analysieren.  
   
 > [!CAUTION]
->  Eine Datei mit Profilerstellungsdaten enthält vertrauliche Informationen, wie z.B. den Computernamen, die Version des Betriebssystems, Dateipfade, Informationen im Arbeitsspeicher und andere Informationen zur Computerinstallation. Sie sollten die genaue Kontrolle über die Verteilung der Daten, sowohl im nativen VSP-Format und beim Export in einer CSV- oder XML-Datei beibehalten.  
+> Eine Datei mit Profilerstellungsdaten enthält vertrauliche Informationen, wie z.B. den Computernamen, die Version des Betriebssystems, Dateipfade, Informationen im Arbeitsspeicher und andere Informationen zur Computerinstallation. Sie sollten die genaue Kontrolle über die Verteilung der Daten, sowohl im nativen VSP-Format und beim Export in einer CSV- oder XML-Datei beibehalten.  
 >   
->  Wenn Ablaufverfolgungsdaten als Teil der Leistungssitzung gesammelt werden, scheinen die zusätzlichen Informationen in der Protokolldatei der Ablaufverfolgung (.etl) angezeigt zu werden. Diese Informationen umfassen Ihren Domänen- und Benutzernamen; aus diesem Grund sollten Sie die genaue Kontrolle über die Verteilung der Protokolldatei beibehalten.  
+> Wenn Ablaufverfolgungsdaten als Teil der Leistungssitzung gesammelt werden, scheinen die zusätzlichen Informationen in der Protokolldatei der Ablaufverfolgung (.etl) angezeigt zu werden. Diese Informationen umfassen Ihren Domänen- und Benutzernamen; aus diesem Grund sollten Sie die genaue Kontrolle über die Verteilung der Protokolldatei beibehalten.  
   
 ## <a name="performance-report-window"></a>Leistungsberichtfenster  
  Das Leistungsberichtfenster ist ein Toolfenster, die zum Anzeigen, Verwalten und Filtern von Leistungsdaten verwendet wird und ein anpassbares Abfragesteuerelement enthält.  
