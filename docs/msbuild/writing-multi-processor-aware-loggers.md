@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443137"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Schreiben von multiprozessorfähigen Protokollierungen
 Die Fähigkeit von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Buildereignisprotokollierung erhöhen. In einer Umgebung mit nur einem Prozessor gehen Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise bei der Protokollierung ein. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. Um diese verarbeiten zu können, bietet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] eine neue multiprozessorfähige Protokollierung und ein neues Protokollierungsmodell. Außerdem können Sie benutzerdefinierte „Weiterleitungsprotokollierungen“ erstellen.
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  Es gibt zwei Möglichkeiten für die Verwendung der verteilten Protokollierung:
 
--   Passen Sie die vordefinierte Weiterleitungsprotokollierung <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> an.
+- Passen Sie die vordefinierte Weiterleitungsprotokollierung <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> an.
 
--   Schreiben Sie eine eigene benutzerdefinierte Weiterleitungsprotokollierung.
+- Schreiben Sie eine eigene benutzerdefinierte Weiterleitungsprotokollierung.
 
 Sie können ConfigurableForwardingLogger an Ihre Anforderungen anpassen. Rufen Sie hierzu die Protokollierung in der Befehlszeile mit *MSBuild.exe* auf, und führen Sie die Buildereignisse auf, die von der Protokollierung an den zentralen Knoten weitergeleitet werden sollen.
 
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  Ein Sternchen (*) muss zum Trennen der beiden Protokollierungsnamen im `-dl`-Schalter verwendet werden.
+> Ein Sternchen (*) muss zum Trennen der beiden Protokollierungsnamen im `-dl`-Schalter verwendet werden.
 
  Die Verwendung von ConfigurableForwardingLogger ist mit der Verwendung anderer Protokollierungen identisch (wie in [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) erläutert), mit der Ausnahme, dass die ConfigurableForwardingLogger-Protokollierung statt der normalen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Protokollierung angehängt wird und dass Sie als Parameter die Ereignisse festlegen, die ConfigurableForwardingLogger an den zentralen Knoten weiterleiten soll.
 

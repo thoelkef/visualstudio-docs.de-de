@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811476"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -82,7 +82,6 @@ Wenn Sie einen Incident online einreichen, werden Sie zunächst aufgefordert, si
    > Screenshot: ![Technischer Support-Vorteil-Einreichung: Vertrag hinzufügen](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
 4. Geben Sie Ihre **Zugriffs-ID** und **Vertrags-ID** ein.  Klicken Sie auf **Hinzufügen**.
-
 
    > [!div class="mx-imgBorder"]
    > Screenshot: ![Technischer Support-Vorteil-Einreichung: Vertrags-ID hinzufügen](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

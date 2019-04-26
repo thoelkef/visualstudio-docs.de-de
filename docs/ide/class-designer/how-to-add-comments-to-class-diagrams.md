@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975533"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen
 
@@ -31,9 +31,9 @@ Sie können die Größe einer Kommentarform ändern, jedoch nicht andere Aspekte
 
 ## <a name="to-add-a-comment"></a>So fügen Sie ein Kommentar hinzu
 
-1.  Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.
+1. Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.
 
-2.  Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.
+2. Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.
 
 ## <a name="see-also"></a>Siehe auch
 

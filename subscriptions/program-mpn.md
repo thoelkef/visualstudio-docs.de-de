@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Einzelheiten zu den angebotenen Abonnements, geltenden Regeln und der Anzahl der in MPN angebotenen Abonnements
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945400"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Visual Studio-Abonnements für Partner in Microsoft Partner Network (MPN)
 Partner, die eine Kompetenz erwerben oder das Action Pack in MPN kaufen, sind dazu berechtigt, Visual Studio-Abonnements zu verwenden. Diese Abonnements werden pro Benutzer lizenziert und gelten nur, wenn sie einem bestimmten benannten Benutzer zugewiesen sind, der für ein Partnerunternehmen arbeitet.
@@ -43,7 +43,6 @@ Unabhängig davon, wie viele Kompetenzen ein Partner erwirbt, wird die Anzahl vo
 | Maximaler Vorteil für Partner mit Silber-Kompetenzen                   | Maximaler Vorteil für Partner mit mindestens einer Gold-Kompetenz               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 Visual Studio Enterprise-Abonnements pro Land; 75 weltweit          | 50 Visual Studio Enterprise-Abonnements pro Land; 150 weltweit         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Abonnements für Partner, die das Action Pack erwerben
 Partner mit einer Kompetenz sind nicht dazu berechtigt, das Action Pack zu erwerben. Es kann nur ein Action Pack pro Partner erworben werden.

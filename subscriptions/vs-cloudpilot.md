@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über den CloudPilot-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948387"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Der CloudPilot-Vorteil in Visual Studio-Abonnements
 
@@ -44,18 +44,17 @@ Mit CloudPilot von UnifyCloud können Entwickler Anwendungen schnell und unkompl
    > [!NOTE]
    > Pro Organisation sind zehn Aktivierungen des CloudPilot-Vorteils zulässig. Diese können von einem beliebigen Abonnement eingelöst werden, egal ob Visual Studio Enterprise oder Visual Studio Professional.  Wenn in Ihrer Organisation bereits zehn Aktivierung durchgeführt wurden, können Sie den CloudPilot-Vorteil nicht aktivieren. Sie erhalten eine E-Mail von UnifyCloud mit weiteren Informationen.
 
- 0. Als Nächstes wird eine Produktseite angezeigt, die Sie über die wichtigsten Punkte zu CloudPilot informiert.  Klicken Sie in der oberen rechten Ecke auf **Navigate to CloudPilot** (Zu CloudPilot navigieren), um zum CloudPilot-Portal zu gelangen.
+0. Als Nächstes wird eine Produktseite angezeigt, die Sie über die wichtigsten Punkte zu CloudPilot informiert.  Klicken Sie in der oberen rechten Ecke auf **Navigate to CloudPilot** (Zu CloudPilot navigieren), um zum CloudPilot-Portal zu gelangen.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot-Produktseite](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  Das ist alles!  Dann wird das CloudPilot-Portal angezeigt, und Sie können Ihren CloudPilot-Vorteil nutzen, um Ihre Anwendungen zu Microsoft Azure zu migrieren.
+0. Das ist alles!  Dann wird das CloudPilot-Portal angezeigt, und Sie können Ihren CloudPilot-Vorteil nutzen, um Ihre Anwendungen zu Microsoft Azure zu migrieren.
 
-0.  Sobald Ihr Konto erstellt wurde, erhalten Sie eine E-Mail vom UnifyCloud-VSS-Support mit einer Bestätigung der erfolgreichen Erstellung Ihres Kontos.
+0. Sobald Ihr Konto erstellt wurde, erhalten Sie eine E-Mail vom UnifyCloud-VSS-Support mit einer Bestätigung der erfolgreichen Erstellung Ihres Kontos.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot-Bestätigungs-E-Mail](_img/vs-cloudpilot/vs-cloudpilot-email.png)
-
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -69,25 +68,21 @@ Mit CloudPilot von UnifyCloud können Entwickler Anwendungen schnell und unkompl
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-
-
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei der Verwendung von CloudPilot?  Sehen Sie sich diese Ressourcen an:
+- Benötigen Sie Hilfe bei der Verwendung von CloudPilot?  Sehen Sie sich diese Ressourcen an:
     - [Wenden Sie sich an UnifyCloud](https://www.unifycloud.com/contacts/), wenn Sie Fragen zu UnifyCloud-Produkten haben.
     - [CloudPilot-Benutzerhandbuch](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
 
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

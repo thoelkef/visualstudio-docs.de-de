@@ -1,37 +1,30 @@
-items:
 - name: Visual Studio-Containertools
   href: index.yml
-  items:
-  - name: Übersicht
-    href: overview.md
-  - name: Schnellstart
-    items:
-    - name: Containertools in Visual Studio
-      href: container-tools.md
-    expanded: true
-  - name: Tutorials
-    items:
-    - name: 'Tutorial: Multicontainer-App mit Docker Compose'
-      href: tutorial-multicontainer.md
-    - name: 'Tutorial: Kubernetes in Visual Studio'
-      href: tutorial-kubernetes-tools.md
-    expanded: true
-  - name: Gewusst wie
-    items:
-    - name: Debuggen von Apps in einem lokalen Docker-Container
-      href: edit-and-refresh.md
-    - name: Bereitstellung in einer Containerregistrierung
-      href: hosting-web-apps-in-docker.md
-    - name: Bereitstellen in Azure App Service
-      href: deploy-app-service.md
-    - name: Konfigurieren von Containertools
-      href: container-tools-configure.md
-  - name: Problembehandlung
-    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537688"
+  items:
+    - name: Übersicht
+      href: overview.md
+    - name: Schnellstart
+      expanded: true
+      items:
+        - name: Containertools in Visual Studio
+          href: container-tools.md
+    - name: Tutorials
+      expanded: true
+      items:
+        - name: 'Tutorial: Multicontainer-App mit Docker Compose'
+          href: tutorial-multicontainer.md
+        - name: 'Tutorial: Kubernetes in Visual Studio'
+          href: tutorial-kubernetes-tools.md
+    - name: Gewusst wie
+      items:
+        - name: Debuggen von Apps in einem lokalen Docker-Container
+          href: edit-and-refresh.md
+        - name: Bereitstellung in einer Containerregistrierung
+          href: hosting-web-apps-in-docker.md
+        - name: Bereitstellen in Azure App Service
+          href: deploy-app-service.md
+        - name: Konfigurieren von Containertools
+          href: container-tools-configure.md
+    - name: Problembehandlung
+      href: troubleshooting-docker-errors.md
