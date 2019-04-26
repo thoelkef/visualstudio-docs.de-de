@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Registrieren Sie sich, um das MSDN Magazine-Abonnement zu erhalten, das in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 3de620413610294072511f1e6e5e498fa64973a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947354"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Der MSDN Magazine-Vorteil in Visual Studio-Abonnements
 
 Umfassende Behandlung von Microsoft-Technologien für praktische Lösungen realistischer Probleme.  Je nach Abonnement haben Sie Anspruch auf das gedruckte Magazin oder auf einen früheren Zugriff auf die digitale Version.
-
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 Die für die Aktivierung Ihres Vorteils erforderlichen Schritte hängen von der Edition ab, die Sie auswählen.
@@ -25,15 +24,14 @@ Die für die Aktivierung Ihres Vorteils erforderlichen Schritte hängen von der 
 ### <a name="digital-edition"></a>Digitale Ausgabe
 Die digitale Ausgabe ist für Visual Studio Dev Essentials-Mitglieder verfügbar.
 
-1.  Melden Sie sich unter [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, um auf die digitale Ausgabe von MSDN Magazine zuzugreifen.
-2.  Suchen Sie im Abschnitt „Professionelle Entwicklung“ die Kachel “MSDN Magazine“, und klicken Sie auf **Zugreifen**.
+1. Melden Sie sich unter [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, um auf die digitale Ausgabe von MSDN Magazine zuzugreifen.
+2. Suchen Sie im Abschnitt „Professionelle Entwicklung“ die Kachel “MSDN Magazine“, und klicken Sie auf **Zugreifen**.
 
 ### <a name="printed-edition"></a>Druckausgabe
 1. Melden Sie sich unter [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, um Ihr MSDN Magazine-Abonnement zu starten.
 2. Suchen Sie im Abschnitt „Professionelle Entwicklung“ die Kachel „MSDN Magazine“, und klicken Sie auf der Kachel des MSDN Magazine-Abonnements auf **Abonnieren**. (Klicken Sie in der unteren rechten Ecke der Kachel auf das Ausrufezeichen, um auf die digitale Edition zuzugreifen.)
    > [!div class="mx-imgBorder"]
    > ![Kachel des Vorteils „MSDN Magazine“](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. Wählen Sie auf der MSDN Magazine-Seite Ihre bevorzugte Abonnementart aus.  Sie können die kostenlose digitale Version unabhängig von Ihrem Wohnort auswählen.  Die gedruckte Version ist für Personen in den USA kostenlos verfügbar.  Die Versandgebühren gelten für die gedruckte Version, die an Adressen außerhalb der USA versendet wird.
    > [!div class="mx-imgBorder"]
@@ -65,9 +63,8 @@ Die digitale Ausgabe ist für Visual Studio Dev Essentials-Mitglieder verfügbar
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

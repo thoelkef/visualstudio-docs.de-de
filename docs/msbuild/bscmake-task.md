@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385816"
 ---
 # <a name="bscmake-task"></a>BscMake-Aufgabe
 > [!IMPORTANT]
->  BscMake wird nicht mehr von der Visual Studio-IDE verwendet werden. Seit Visual Studio 2008 werden Browseinformationen automatisch in einer *SDF*-Datei im *Projektmappenordner* gespeichert.
+> BscMake wird nicht mehr von der Visual Studio-IDE verwendet werden. Seit Visual Studio 2008 werden Browseinformationen automatisch in einer *SDF*-Datei im *Projektmappenordner* gespeichert.
 
  Führt das Microsoft-Wartungshilfsprogramm zum Durchsuchen von Informationen aus (*bscmake.exe*).  Das Tool *bscmake.exe* erstellt eine Browseinformationsdatei (*.bsc*) von Quellbrowserdateien (*.sbr*), die während der Kompilierung erstellt werden. Verwenden Sie den **Objektkatalog**, um eine *BSC*-Datei anzuzeigen. Weitere Informationen finden Sie unter [BSCMAKE-Referenz](/cpp/build/reference/bscmake-reference).
 

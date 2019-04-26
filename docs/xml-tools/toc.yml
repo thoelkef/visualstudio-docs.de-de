@@ -1,123 +1,116 @@
-items:
 - name: XML-Tools in Visual Studio
   href: xml-tools-in-visual-studio.md
   items:
-  - name: XML-Editor
-    href: xml-editor.md
-    items:
-    - name: Validierung von XML-Dokumenten
-      href: xml-document-validation.md
-    - name: IntelliSense-Features des XML-Editors
-      href: xml-editor-intellisense-features.md
-    - name: XML-Ausschnitte
-      href: xml-snippets.md
+    - name: XML-Editor
+      href: xml-editor.md
       items:
-      - name: Verwenden von XML-Ausschnitten
-        href: how-to-use-xml-snippets.md
-      - name: Generieren eines Ausschnitts aus einem XML-Schema
-        href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
-      - name: Erstellen von XML-Ausschnitten
-        href: how-to-create-xml-snippets.md
-    - name: Bearbeiten von XSLT-Stylesheets
-      href: editing-xslt-style-sheets.md
-    - name: Schemacache
-      href: schema-cache.md
-    - name: Aufgaben im XML-Editor
+        - name: Validierung von XML-Dokumenten
+          href: xml-document-validation.md
+        - name: IntelliSense-Features des XML-Editors
+          href: xml-editor-intellisense-features.md
+        - name: XML-Ausschnitte
+          href: xml-snippets.md
+          items:
+            - name: Verwenden von XML-Ausschnitten
+              href: how-to-use-xml-snippets.md
+            - name: Generieren eines Ausschnitts aus einem XML-Schema
+              href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
+            - name: Erstellen von XML-Ausschnitten
+              href: how-to-create-xml-snippets.md
+        - name: Bearbeiten von XSLT-Stylesheets
+          href: editing-xslt-style-sheets.md
+        - name: Schemacache
+          href: schema-cache.md
+        - name: Aufgaben im XML-Editor
+          items:
+            - name: 'Exemplarische Vorgehensweise: Verwenden von Features des XML-Editors'
+              href: walkthrough-using-xml-editor-features.md
+            - name: Auswählen der zu verwendenden XML-Schemas
+              href: how-to-select-the-xml-schemas-to-use.md
+            - name: Erstellen eines XML-Schemas aus einem XML-Dokument
+              href: how-to-create-an-xml-schema-from-an-xml-document.md
+            - name: Ausführen einer XSLT-Transformation im XML-Editor
+              href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
+            - name: Bearbeiten von XML-Dateien
+              href: how-to-edit-xml-files.md
+            - name: Exemplarische Vorgehensweisen für XSLT
+              items:
+                - name: XSLT-IntelliSense
+                  href: walkthrough-using-xslt-intellisense.md
+                - name: XSLT-Hierarchie
+                  href: walkthrough-using-xslt-hierarchy.md
+        - name: XML-Dateieigenschaften
+          href: xml-document-properties-properties-window.md
+        - name: XML-Schemas (Dialogfeld)
+          href: xml-schemas-dialog-box.md
+    - name: XML-Schema-Designer
+      href: xml-schema-designer.md
       items:
-      - name: 'Exemplarische Vorgehensweise: Verwenden von Features des XML-Editors'
-        href: walkthrough-using-xml-editor-features.md
-      - name: Auswählen der zu verwendenden XML-Schemas
-        href: how-to-select-the-xml-schemas-to-use.md
-      - name: Erstellen eines XML-Schemas aus einem XML-Dokument
-        href: how-to-create-an-xml-schema-from-an-xml-document.md
-      - name: Ausführen einer XSLT-Transformation im XML-Editor
-        href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
-      - name: Bearbeiten von XML-Dateien
-        href: how-to-edit-xml-files.md
-      - name: Exemplarische Vorgehensweisen für XSLT
-        items:
-        - name: XSLT-IntelliSense
-          href: walkthrough-using-xslt-intellisense.md
-        - name: XSLT-Hierarchie
-          href: walkthrough-using-xslt-hierarchy.md
-    - name: XML-Dateieigenschaften
-      href: xml-document-properties-properties-window.md
-    - name: XML-Schemas (Dialogfeld)
-      href: xml-schemas-dialog-box.md
-  - name: XML-Schema-Designer
-    href: xml-schema-designer.md
-    items:
-    - name: XML-Schema-Explorer
-      href: xml-schema-explorer.md
+        - name: XML-Schema-Explorer
+          href: xml-schema-explorer.md
+          items:
+            - name: Durchsuchen des Schemasets
+              href: searching-the-schema-set.md
+            - name: 'Sortieren, Filtern und Gruppieren'
+              href: sorting-filtering-and-grouping-xml-schema-explorer.md
+            - name: Kontextmenüs
+              href: context-menus-xml-schema-explorer.md
+            - name: Integration von XML-Literalen
+              href: integration-of-xml-literals-with-xml-schema-explorer.md
+        - name: Arbeitsbereich des XML-Schema-Designers
+          href: xml-schema-designer-workspace.md
+          items:
+            - name: Ausgangsansicht
+              href: start-view.md
+            - name: Inhaltsmodellansicht
+              href: content-model-view.md
+            - name: Diagrammansicht
+              href: graph-view.md
+        - name: Integration in den XML-Editor
+          href: integration-with-xml-editor.md
+        - name: Aufgaben im XML-Schema-Designer
+          items:
+            - name: Erstellen und Bearbeiten einer XSD-Schemadatei
+              href: how-to-create-and-edit-an-xsd-schema-file.md
+            - name: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
+              href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
+            - name: Hinzufügen von Knoten aus Schemaset-Suchergebnissen zum Arbeitsbereich
+              href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
+            - name: Wechseln zwischen Ansichten und dem XML-Editor
+              href: how-to-switch-between-views-and-the-xml-editor.md
+            - name: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich
+              href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
+            - name: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
+              href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
+            - name: Übersicht zu Schemasets
+              href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
+            - name: Untersuchen des Inhaltsmodells von Knoten
+              href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
+            - name: Verwenden des XML-Schema-Designers mit XML-Literalen
+              href: how-to-use-the-xml-schema-designer-with-xml-literals.md
+            - name: Ausgeben von Diagrammen
+              href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
+            - name: XSD-Beispieldateien
+              href: sample-xsd-files.md
+              items:
+                - name: Einfaches Schema
+                  href: sample-xsd-file-simple-schema.md
+                - name: Bestellungsschema
+                  href: sample-xsd-file-purchase-order-schema.md
+                - name: Beziehungen
+                  href: sample-xsd-file-relationships.md
+    - name: Debuggen von XSLT-Code
+      href: debugging-xslt.md
       items:
-      - name: Durchsuchen des Schemasets
-        href: searching-the-schema-set.md
-      - name: Sortieren, Filtern und Gruppieren
-        href: sorting-filtering-and-grouping-xml-schema-explorer.md
-      - name: Kontextmenüs
-        href: context-menus-xml-schema-explorer.md
-      - name: Integration von XML-Literalen
-        href: integration-of-xml-literals-with-xml-schema-explorer.md
-    - name: Arbeitsbereich des XML-Schema-Designers
-      href: xml-schema-designer-workspace.md
-      items:
-      - name: Ausgangsansicht
-        href: start-view.md
-      - name: Inhaltsmodellansicht
-        href: content-model-view.md
-      - name: Diagrammansicht
-        href: graph-view.md
-    - name: Integration in den XML-Editor
-      href: integration-with-xml-editor.md
-    - name: Aufgaben im XML-Schema-Designer
-      items:
-      - name: Erstellen und Bearbeiten einer XSD-Schemadatei
-        href: how-to-create-and-edit-an-xsd-schema-file.md
-      - name: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
-        href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
-      - name: Hinzufügen von Knoten aus Schemaset-Suchergebnissen zum Arbeitsbereich
-        href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
-      - name: Wechseln zwischen Ansichten und dem XML-Editor
-        href: how-to-switch-between-views-and-the-xml-editor.md
-      - name: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich
-        href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
-      - name: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
-        href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
-      - name: Übersicht zu Schemasets
-        href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
-      - name: Untersuchen des Inhaltsmodells von Knoten
-        href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
-      - name: Verwenden des XML-Schema-Designers mit XML-Literalen
-        href: how-to-use-the-xml-schema-designer-with-xml-literals.md
-      - name: Ausgeben von Diagrammen
-        href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
-      - name: XSD-Beispieldateien
-        href: sample-xsd-files.md
-        items:
-        - name: Einfaches Schema
-          href: sample-xsd-file-simple-schema.md
-        - name: Bestellungsschema
-          href: sample-xsd-file-purchase-order-schema.md
-        - name: Beziehungen
-          href: sample-xsd-file-relationships.md
-  - name: Debuggen von XSLT-Code
-    href: debugging-xslt.md
-    items:
-    - name: 'Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets'
-      href: walkthrough-debug-an-xslt-style-sheet.md
-    - name: Auswerten eines XPath-Ausdrucks
-      href: how-to-evaluate-an-xpath-expression.md
-    - name: Benutzeroberfläche des XSLT-Debuggers
-      href: debugger-user-interface-xslt.md
-    - name: XSLT-Standardvorlage
-      href: xslt-default-templates.md
-    - name: XSLT-Profiler
-      href: xslt-profiler.md
-  - name: Sicherheitsüberlegungen zu XML
-    href: security-considerations-when-working-with-xml-data.md
-ms.openlocfilehash: 9d651c9402a1cd7bc7d1ebfe81c9fec151d065a0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525413"
+        - name: 'Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets'
+          href: walkthrough-debug-an-xslt-style-sheet.md
+        - name: Auswerten eines XPath-Ausdrucks
+          href: how-to-evaluate-an-xpath-expression.md
+        - name: Benutzeroberfläche des XSLT-Debuggers
+          href: debugger-user-interface-xslt.md
+        - name: XSLT-Standardvorlage
+          href: xslt-default-templates.md
+        - name: XSLT-Profiler
+          href: xslt-profiler.md
+    - name: Sicherheitsüberlegungen zu XML
+      href: security-considerations-when-working-with-xml-data.md

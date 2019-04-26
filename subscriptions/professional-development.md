@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Erfahren Sie mehr über die Vorteile zum professionellen Entwickeln, die in Visual Studio-Abonnements enthalten sind
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007698"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>In Visual Studio-Abonnements verfügbare Vorteile für professionelle Entwicklung
 

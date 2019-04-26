@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-Abonnement aktivieren, das in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947281"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
 Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht verfügbarer bzw. sich weiterentwickelnder Anwendungen und Systeme.  Der Vorteil beinhaltet ein kostenloses Abonnement mit einer Laufzeit von sechs Monaten.  Am Ende Ihres sechsmonatigen Abonnements sind Sie für einen Rabatt von 25 % auf den Preis eines Jahresabonnements qualifiziert.
-
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -30,7 +29,6 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 3. Sie werden zur Parasoft-Website umgeleitet. Dort können Sie ein Konto erstellen.  Stellen Sie Ihre Kontaktinformationen bereit, und klicken sie auf **Weiter**.
    > [!div class="mx-imgBorder"]
    > ![Parasoft-Vorteil: Konto erstellen](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Sobald Sie ein Konto erstellt haben, wird Ihnen eine Benachrichtigung angezeigt, dass die Anweisungen zum Herunterladen Ihnen per E-Mail gesendet wurden.  (Denken Sie daran, Ihren Spamordner oder Junk-E-Mail-Ordner zu überprüfen, wenn die E-Mail in Ihrem Posteingang nicht angezeigt wird.)
 
@@ -83,14 +81,12 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 
 <sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
-
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei Parasoft-Produkten?  Sehen Sie sich diese Ressourcen an:
+- Benötigen Sie Hilfe bei Parasoft-Produkten?  Sehen Sie sich diese Ressourcen an:
     - Technischer Support: https://www.parasoft.com/support/
     - Parasoft-Ressourcencenter: https://www.parasoft.com/resources/
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

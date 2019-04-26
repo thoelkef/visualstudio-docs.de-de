@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784419"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 
@@ -59,7 +59,7 @@ Wenn Sie die Datei *UIMap.uitest* öffnen, die Ihrem Test der programmierten UI 
 
 Mit dem **Editor für Tests der programmierten UI** können Sie den Visual C#- und Visual Basic-basierten Test der programmierten UI anzeigen und bearbeiten.
 
-![Kontextmenü mit Test-Generator der programmierten UI](../test/media/editcodeduitest.png)
+![Kontextmenü mit Test-Generator für codierte UI](../test/media/editcodeduitest.png)
 
 Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für *UIMap.uitest*, und klicken Sie auf **Öffnen**. Der Test der programmierten UI wird im **Editor für Tests der programmierten UI** angezeigt. Sie können nun aufgezeichnete Methoden, Aktionen und entsprechende Steuerelemente im Test der programmierten UI anzeigen und bearbeiten.
 
