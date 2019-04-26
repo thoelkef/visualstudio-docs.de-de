@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432614"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungs-I
  In diesem Thema wird beschrieben, wie die Konfigurationsdatei „web.config“ zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen geändert werden kann.  
   
 > [!NOTE]
->  Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder Sie ein vorkompiliertes Modul [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] instrumentieren möchten, brauchen Sie die web.config-Datei nicht zu ändern.  
+> Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder Sie ein vorkompiliertes Modul [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] instrumentieren möchten, brauchen Sie die web.config-Datei nicht zu ändern.  
   
  Der Stamm einer web.config-Datei ist das Element **configuration**. Sie müssen zum Instrumentieren und Erstellen eines Profils von einer dynamisch kompilierten [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung folgende Elemente ändern oder hinzufügen:  
   
