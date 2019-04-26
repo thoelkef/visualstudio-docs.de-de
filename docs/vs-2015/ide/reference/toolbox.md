@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419742"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Die **Toolbox** zeigt Symbole für Steuerelemente und andere Elemente an, die Si
  In der **Toolbox** werden nur Elemente angezeigt, die sich für den Dateityp eignen, in dem Sie arbeiten. Sie können eine Suche in der Toolbox durchführen, um die Elemente, die angezeigt werden, zu filtern. Wenn das Projekt ein Steuerelement erfordert, das vom Client Profile nicht unterstützt wird, können Sie durch Bearbeiten der Projekteigenschaften für das Projekt festlegen, dass das gesamte Framework als Ziel festgelegt wird.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Hilfe zu Toolboxregisterkarten  
  Die folgenden Dokumente enthalten weitere Informationen zu bestimmten **Toolbox**-Registerkarten.  

@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071161"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
 ## <a name="defining-a-validation-extension"></a>Definieren einer Validierungserweiterung  
  Um eine Validierungserweiterung für einen UML-Designer zu erstellen, müssen Sie eine Klasse erstellen, welche die Validierungseinschränkungen definiert, und diese Klasse in eine Visual Studio-Integrationserweiterung (VSIX, Visual Studio Integration Extension) einbetten. Die VSIX fungiert als Container zum Installieren der Einschränkung. Es gibt zwei alternative Methoden zur Definition einer Validierungserweiterung:  
   
--   **Erstellen einer validierungserweiterung innerhalb der eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Validierungseinschränkungen nicht mit anderen Erweiterungstypen, z. B. Menübefehlen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten. Sie können mehrere Einschränkungen in einer Klasse definieren.  
+- **Erstellen einer validierungserweiterung innerhalb der eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Validierungseinschränkungen nicht mit anderen Erweiterungstypen, z. B. Menübefehlen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten. Sie können mehrere Einschränkungen in einer Klasse definieren.  
   
--   **Erstellen Sie separater Validierungsklassen und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.  
+- **Erstellen Sie separater Validierungsklassen und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>So erstellen Sie eine Validierungserweiterung in der eigenen VSIX  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>So erstellen Sie eine separate Validierungseinschränkung in einem Klassenbibliotheksprojekt  
   
-1.  Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.  
+1. Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.  
   
-    1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
+    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
-    2.  Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.  
+    2. Erweitern Sie unter **Installierte Vorlagen**entweder **Visual C#** oder **Visual Basic**, und wählen Sie anschließend in der mittleren Spalte **Klassenbibliothek**aus.  
   
-2.  Erstellen Sie ein VSIX-Projekt, sofern die Projektmappe noch kein VSIX-Projekt enthält:  
+2. Erstellen Sie ein VSIX-Projekt, sofern die Projektmappe noch kein VSIX-Projekt enthält:  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option  **Hinzufügen**und dann **Neues Projekt**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option  **Hinzufügen**und dann **Neues Projekt**aus.  
   
-    2.  Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Klicken Sie in der mittleren Spalte auf **VSIX Project**.  
+    2. Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Klicken Sie in der mittleren Spalte auf **VSIX Project**.  
   
-3.  Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
+3. Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
   
-    -   Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
+    - Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
   
-4.  Fügen Sie in **source.extension.vsixmanifest**unter **Inhalt**das Klassenbibliotheksprojekt als MEF-Komponente hinzu:  
+4. Fügen Sie in **source.extension.vsixmanifest**unter **Inhalt**das Klassenbibliotheksprojekt als MEF-Komponente hinzu:  
   
-    1.  Legen Sie auf der Registerkarte **MetaData** einen Namen für VSIX fest.  
+    1. Legen Sie auf der Registerkarte **MetaData** einen Namen für VSIX fest.  
   
-    2.  Legen Sie auf der Registerkarte **Ziele installieren** die Visual Studio-Versionen als Ziele fest.  
+    2. Legen Sie auf der Registerkarte **Ziele installieren** die Visual Studio-Versionen als Ziele fest.  
   
-    3.  Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:  
+    3. Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:  
   
          **Typ** = **MEF-Komponente**  
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>So definieren Sie die Validierungsklasse  
   
-1.  Dieses Verfahren ist nicht erforderlich, wenn Sie eine Validierungsklasse mit einer eigenen VSIX aus der Validierungsprojektvorlage erstellt haben.  
+1. Dieses Verfahren ist nicht erforderlich, wenn Sie eine Validierungsklasse mit einer eigenen VSIX aus der Validierungsprojektvorlage erstellt haben.  
   
-2.  Fügen Sie im Projekt der Validierungsklasse Verweise auf die folgenden [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] -Assemblys hinzu:  
+2. Fügen Sie im Projekt der Validierungsklasse Verweise auf die folgenden [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] -Assemblys hinzu:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  Fügen Sie dem Klassenbibliotheksprojekt eine Datei hinzu, die einen ähnlichen Code enthält, wie das folgende Beispiel.  
+3. Fügen Sie dem Klassenbibliotheksprojekt eine Datei hinzu, die einen ähnlichen Code enthält, wie das folgende Beispiel.  
   
-    -   Jede Validierungseinschränkung ist in einer Methode enthalten, die mit einem bestimmten Attribut markiert ist. Die Methode akzeptiert einen Parameter eines Modellelementtyps. Wenn die Validierung aufgerufen wird, wendet das Validierungsframework die einzelnen Validierungsmethoden auf jedes Modellelement an, das ihrem Parametertyp entspricht.  
+    - Jede Validierungseinschränkung ist in einer Methode enthalten, die mit einem bestimmten Attribut markiert ist. Die Methode akzeptiert einen Parameter eines Modellelementtyps. Wenn die Validierung aufgerufen wird, wendet das Validierungsframework die einzelnen Validierungsmethoden auf jedes Modellelement an, das ihrem Parametertyp entspricht.  
   
-    -   Sie können diese Methoden in beliebige Klassen und Namespaces einfügen. Ändern Sie sie nach Bedarf.  
+    - Sie können diese Methoden in beliebige Klassen und Namespaces einfügen. Ändern Sie sie nach Bedarf.  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> Ausführen einer Validierungseinschränkung  
+## <a name="Executing"></a> Ausführen einer Validierungseinschränkung  
  Führen Sie die Validierungsmethoden zu Testzwecken im Debugmodus aus.  
   
 #### <a name="to-test-the-validation-constraint"></a>So testen Sie die Validierungseinschränkung  
   
-1.  Drücken Sie **F5**oder wählen Sie im Menü **Debug** die Option **Debugging starten**.  
+1. Drücken Sie **F5**oder wählen Sie im Menü **Debug** die Option **Debugging starten**.  
   
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
      **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
   
-    -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
+    - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
-    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge im Feld Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
+    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge im Feld **Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
+2. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
   
-3.  So richten Sie einen Test für die Beispieleinschränkung aus dem vorherigen Abschnitt ein  
+3. So richten Sie einen Test für die Beispieleinschränkung aus dem vorherigen Abschnitt ein  
   
-    1.  Öffnen Sie ein Klassendiagramm.  
+    1. Öffnen Sie ein Klassendiagramm.  
   
-    2.  Erstellen Sie eine Klasse, und fügen Sie zwei Attribute hinzu, die denselben Namen aufweisen.  
+    2. Erstellen Sie eine Klasse, und fügen Sie zwei Attribute hinzu, die denselben Namen aufweisen.  
   
-4.  Wählen Sie im Kontextmenü des Diagramms **Überprüfen**aus.  
+4. Wählen Sie im Kontextmenü des Diagramms **Überprüfen**aus.  
   
-5.  Alle Fehler im Modell werden im Fehlerfenster angezeigt.  
+5. Alle Fehler im Modell werden im Fehlerfenster angezeigt.  
   
-6.  Doppelklicken Sie auf den Fehlerbericht. Wenn die im Bericht erwähnten Elemente auf dem Bildschirm sichtbar sind, werden sie hervorgehoben.  
+6. Doppelklicken Sie auf den Fehlerbericht. Wenn die im Bericht erwähnten Elemente auf dem Bildschirm sichtbar sind, werden sie hervorgehoben.  
   
      **Problembehandlung bei**: Wenn die **überprüfen** Befehl nicht im Menü angezeigt, stellen Sie sicher, dass:  
   
-    -   Das Überprüfungsprojekt ist im VSIX-Projekt in **source.extensions.manifest** auf der Registerkarte **Objekte** als MEF-Komponente aufgeführt.  
+    - Das Überprüfungsprojekt ist im VSIX-Projekt in **source.extensions.manifest** auf der Registerkarte **Objekte** als MEF-Komponente aufgeführt.  
   
-    -   An die Validierungsmethoden sind das richtige `Export` -Attribut und das richtige `ValidationMethod` -Attribut angefügt.  
+    - An die Validierungsmethoden sind das richtige `Export` -Attribut und das richtige `ValidationMethod` -Attribut angefügt.  
   
-    -   `ValidationCategories.Menu` befindet sich auf das Argument für die `ValidationMethod` -Attribut, und es besteht aus mit anderen Werten, die mit logischen OR (&#124;).  
+    - `ValidationCategories.Menu` befindet sich auf das Argument für die `ValidationMethod` -Attribut, und es besteht aus mit anderen Werten, die mit logischen OR (&#124;).  
   
-    -   Die Parameter aller `Import` -Attribute und `Export` -Attribute sind gültig.  
+    - Die Parameter aller `Import` -Attribute und `Export` -Attribute sind gültig.  
   
-##  <a name="Implementing"></a> Auswerten der Einschränkung  
+## <a name="Implementing"></a> Auswerten der Einschränkung  
  Die Validierungsmethode sollte bestimmen, ob die anzuwendende Validierungseinschränkung den Wert true oder false hat. Bei "true" soll keine Aktion erfolgen. Bei "false" sollte ein Fehler gemeldet werden, indem die vom `ValidationContext` -Parameter bereitgestellten Methoden verwendet werden.  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> Koordinieren mehrerer Validierungen  
+### <a name="ContextCache"></a> Koordinieren mehrerer Validierungen  
  Wenn die Validierung aufgerufen wird (z. B. vom Benutzer über ein Diagrammmenü), wird jede Validierungsmethode auf jedes Modellelement angewendet. Dies bedeutet, dass dieselbe Methode für einen einzelnen Aufruf des Validierungsframeworks viele Male auf verschiedene Elemente angewendet werden kann.  
   
  Dies stellt ein Problem für Validierungen dar, die sich mit den Beziehungen zwischen Elementen beschäftigen. Sie können z. B. eine Validierung schreiben, die von einem Anwendungsfall ausgeht und die **include** -Beziehungen durchläuft, um sicherzustellen, dass keine Schleifen vorhanden sind. Wenn die Methode jedoch auf jeden Anwendungsfall in einem Modell angewendet wird, das über viele **include** -Links verfügt, ist es wahrscheinlich, dass immer die gleichen Bereiche des Modells verarbeitet werden.  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Abrufen eines Werts.|  
 |`Context.GetValue<T>()`|Abrufen eines Werts des angegebenen Typs|  
   
-##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
+## <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
   
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung  
   
-1.  Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom VSIX-Projekt erstellt wurde.  
+1. Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom VSIX-Projekt erstellt wurde.  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.  
   
-    2.  Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
   
-2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
+2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   
-    -   Der Zielcomputer muss über eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] verfügen, die Sie in **source.extension.vsixmanifest**.  
+    - Der Zielcomputer muss über eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] verfügen, die Sie in **source.extension.vsixmanifest**.  
   
-3.  Öffnen Sie auf dem Zielcomputer die **.vsix** -Datei.  
+3. Öffnen Sie auf dem Zielcomputer die **.vsix** -Datei.  
   
      **Installer für Visual Studio-Erweiterungen** wird geöffnet, und die Erweiterung wird installiert.  
   
-4.  Starten Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], bzw. starten Sie die Anwendung neu.  
+4. Starten Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], bzw. starten Sie die Anwendung neu.  
   
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="Example"></a> Beispiel  
+## <a name="Example"></a> Beispiel  
  In diesem Beispiel wird nach Schleifen in der Abhängigkeitsbeziehung zwischen Elementen gesucht.  
   
  Die Validierung erfolgt für Speichervorgänge und für den Menübefehl zum Überprüfen.  

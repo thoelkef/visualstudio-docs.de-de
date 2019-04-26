@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446688"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  Die Option, die Sie auswählen, hängt davon ab, welche der drei Typen der Profilerstellung Sie verwenden: Sampling, Instrumentierung oder die globale Profilerstellung. Eine separate Option ist erforderlich, um Ebeneninteraktionsdaten in die Profilerstellungsdaten einzuschließen. Die Syntax für jede Option wird in den folgenden Tabellen beschrieben.  
   
 > [!NOTE]
->  Wenn Sie mit der Profilerstellung fertig sind, führen Sie **VSPerfCLREnv** mit der Option **/off** oder **/globaloff** aus, um die für die Profilerstellung erforderlichen Umgebungsvariablen zu löschen. Weitere Informationen finden Sie in den hier dargestellten VSPerfCLREnv-Optionen zum Löschen von Umgebungseinstellungen.  
+> Wenn Sie mit der Profilerstellung fertig sind, führen Sie **VSPerfCLREnv** mit der Option **/off** oder **/globaloff** aus, um die für die Profilerstellung erforderlichen Umgebungsvariablen zu löschen. Weitere Informationen finden Sie in den hier dargestellten VSPerfCLREnv-Optionen zum Löschen von Umgebungseinstellungen.  
   
  **VSPerfCLREnv-Optionen zum Einschließen von Ebeneninteraktionsdaten**  
   
 > [!WARNING]
->  Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]angezeigt werden.  
+> Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]angezeigt werden.  
   
  Die Profilerstellung für die Ebeneninteraktion bietet zusätzliche Informationen zu ADO.NET-Abfragen in mehrstufigen Anwendungen. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt. Interaktionsdaten können zu jeder Profilerstellung hinzugefügt werden, unabhängig von der Profilerstellungsmethode.  
   

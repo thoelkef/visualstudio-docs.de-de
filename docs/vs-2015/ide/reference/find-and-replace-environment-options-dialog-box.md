@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 305a19ed08c58d6858c95a3f1109cdf4877d848f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437177"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Suchen und Ersetzen, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59661763"
 Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Meldungsfelder und andere Aspekte eines Such- und Ersetzungsvorgangs zu steuern. Sie können über das Menü **Extras** auf dieses Dialogfeld zugreifen, indem Sie auf **Optionen** klicken, **Umgebung** erweitern und anschließend auf **Suchen und Ersetzen** klicken. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **Informationsmeldungen anzeigen**  
@@ -39,7 +39,7 @@ Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Meldungsfelder un
  Wenn Sie die Option **Diese Meldung immer anzeigen** nur für einige Informationsmeldungen in **Suchen und Ersetzen** deaktiviert haben, aber nicht für alle, wird das Kontrollkästchen **Informationsmeldungen anzeigen** zum Ausfüllen angezeigt, ist aber nicht aktiviert. Deaktivieren Sie diese Option, und aktivieren Sie sie erneut, wenn Sie alle optionalen Meldungen in **Suchen und Ersetzen** wiederherstellen möchten.  
   
 > [!NOTE]
->  Diese Option hat keine Auswirkungen auf Informationsmeldungen in **Suchen und Ersetzen**, bei denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
+> Diese Option hat keine Auswirkungen auf Informationsmeldungen in **Suchen und Ersetzen**, bei denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
   
  **Warnmeldungen anzeigen**  
  Aktivieren Sie diese Option, um alle Warnmeldungen zu „Suchen und Ersetzen“ anzuzeigen, bei denen die Option **Diese Meldung immer anzeigen** aktiviert ist. Wenn Sie z.B. entschieden haben, die Warnmeldung zu **Alle ersetzen** nicht anzuzeigen, die erscheint, wenn Sie versuchen, Ersetzungen in Dateien vorzunehmen, die nicht für die Bearbeitung geöffnet sind, würde diese Meldung durch Auswahl dieser Option wieder angezeigt werden, wenn Sie versuchen „Alle ersetzen“ durchzuführen.  
@@ -49,7 +49,7 @@ Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Meldungsfelder un
  Wenn Sie die Option **Diese Meldung immer anzeigen** nur für einige Warnmeldungen in **Suchen und Ersetzen** deaktiviert haben, aber nicht für alle, wird das Kontrollkästchen **Warnmeldungen anzeigen** zum Ausfüllen angezeigt, ist aber nicht aktiviert. Deaktivieren Sie diese Option, und aktivieren Sie sie erneut, wenn Sie alle optionalen Meldungen in **Suchen und Ersetzen** wiederherstellen möchten.  
   
 > [!NOTE]
->  Diese Option hat keine Auswirkungen auf Warnmeldungen in **Suchen und Ersetzen**, bei denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
+> Diese Option hat keine Auswirkungen auf Warnmeldungen in **Suchen und Ersetzen**, bei denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
   
  **Suchtext automatisch aus Editor übernehmen**  
  Wählen Sie diese Option, um den Text auf beiden Seiten der Einfügemarke des Editors in das Feld **Suchen nach** einzufügen, wenn Sie eine Ansicht des Fensters **Suchen und Ersetzen** im Menü **Bearbeiten** auswählen. Deaktivieren Sie diese Option, um das letzte Suchmuster aus der vorherigen Suche als Zeichenfolge für das Feld **Suchen nach** zu verwenden.  

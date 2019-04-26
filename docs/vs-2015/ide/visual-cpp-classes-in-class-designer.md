@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443178"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787075"
 Der Klassen-Designer unterstützt C++-Klassen und visualisiert native C++-Klassen auf die gleiche Weise wie Visual Basic- und Visual C#-Klassenformen, mit Ausnahme, dass C++-Klassen über mehrere Vererbungsbeziehungen verfügen können. Sie können die Klassenform erweitern, um mehr Felder und Methoden in der Klasse anzuzeigen, oder sie aus Platzgründen reduzieren.  
   
 > [!NOTE]
->  Der Klassen-Designer unterstützt keine Unions (eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist).  
+> Der Klassen-Designer unterstützt keine Unions (eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist).  
   
 ## <a name="simple-inheritance"></a>Einfache Vererbung  
  Wenn Sie mehr als eine Klasse in ein Klassendiagramm ziehen, und die Klassen verfügen über eine Klassenvererbungsbeziehung, werden sie durch einen Pfeil verbunden. Der Pfeil zeigt in Richtung der Basisklasse. Wenn z.B. die folgenden Klassen in einem Klassendiagramm angezeigt werden, werden sie durch einen Pfeil verbunden, der von B nach A zeigt:  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Durch einen Rechtsklick auf eine Klassenform und anschließend durch Klicken auf **Basisklassen anzeigen**, wird die Basisklasse für die ausgewählte Klasse angezeigt,  
   
 > [!NOTE]
->  Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
+> Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
   
  Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [(NOTINBUILD) Mehrfachvererbung](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) und [Mehrere Basisklassen](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445613"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
  Aufgaben im Build-Ziel werden sequenziell ausgeführt. In diesem Fall bildet die `Csc`-Aufgabe des Visual C#-Compilers die einzige Aufgabe. Erwartet wird eine Liste zu kompilierender Quelldateien, angegeben durch den Wert des `Compile`-Elements. Das `Compile`-Element verweist nur auf eine einzelne Quelldatei, Helloworld.cs.  
   
 > [!NOTE]
->  Im Elementelement können Sie wie folgt mithilfe des Platzhalterzeichens Sternchen (*) auf alle Dateien mit der Dateinamenerweiterung .cs verweisen:  
+> Im Elementelement können Sie wie folgt mithilfe des Platzhalterzeichens Sternchen (*) auf alle Dateien mit der Dateinamenerweiterung .cs verweisen:  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  Die Verwendung von Platzhalterzeichen wird jedoch nicht empfohlen, da Debugging und selektive Zielauswahl erschwert werden, wenn Quelldateien hinzugefügt oder gelöscht werden.  
+> Die Verwendung von Platzhalterzeichen wird jedoch nicht empfohlen, da Debugging und selektive Zielauswahl erschwert werden, wenn Quelldateien hinzugefügt oder gelöscht werden.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Erweitern des Pfads um MSBuild  
  Auf MSBuild können Sie erst zugreifen, wenn Sie die PATH-Umgebungsvariable um den .NET Framework-Ordner erweitert haben.  
@@ -182,9 +182,9 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
      Die Meldung **Hello, world!** sollte angezeigt werden.  
   
 > [!NOTE]
->  Weitere Details zum Build werden angezeigt, wenn Sie den Ausführlichkeitsgrad erhöhen. Wenn Sie den Ausführlichkeitsgrad auf "Detailliert" festzulegen, geben Sie an der Eingabeaufforderung einen der beiden folgenden Befehle ein:  
+> Weitere Details zum Build werden angezeigt, wenn Sie den Ausführlichkeitsgrad erhöhen. Wenn Sie den Ausführlichkeitsgrad auf "Detailliert" festzulegen, geben Sie an der Eingabeaufforderung einen der beiden folgenden Befehle ein:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>Hinzufügen von Buildeigenschaften  
  Sie können der Projektdatei Buildeigenschaften hinzufügen, um den Build genauer steuern zu können. Fügen Sie jetzt die folgenden Eigenschaften hinzu:  
@@ -243,17 +243,17 @@ Programmiersprachen für das .NET Framework verwenden MSBuild-Projektdateien zum
 ```  
   
 > [!NOTE]
->  Es wird empfohlen, den umgekehrten Schrägstrich (\\) als Pfadtrennzeichen am Ende des Ordnernamens bei der Angabe im Element `OutputPath` anzufügen und nicht im Attribut `OutputAssembly` der Aufgabe `Csc`. Daher eignet sich  
+> Es wird empfohlen, den umgekehrten Schrägstrich (\\) als Pfadtrennzeichen am Ende des Ordnernamens bei der Angabe im Element `OutputPath` anzufügen und nicht im Attribut `OutputAssembly` der Aufgabe `Csc`. Daher eignet sich  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  besser als  
+> besser als  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Testen der Buildeigenschaften  
  Nun können Sie die Anwendung mithilfe der Projektdatei erstellen, in der Sie über Buildeigenschaften den Ausgabeordner und den Anwendungsnamen angegeben haben.  

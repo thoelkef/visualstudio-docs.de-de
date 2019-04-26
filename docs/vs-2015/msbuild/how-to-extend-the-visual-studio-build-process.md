@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108595"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Gewusst wie: Erweitern des Visual Studio-Buildvorgangs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Reihe von .targets-Dateien von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] definiert, die in die Projektdatei importiert werden. Eine dieser importierten Dateien (Microsoft.Common.targets) kann erweitert werden, um Ihnen das Ausführen benutzerdefinierter Aufgaben in unterschiedlichen Phasen während des Buildprozesses zu ermöglichen. In diesem Thema werden die zwei Methoden erläutert, mit denen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess erweitert werden kann:
 
--   Überschreiben bestimmter, in „Microsoft.Common.targets“ vordefinierter Ziele
+- Überschreiben bestimmter, in „Microsoft.Common.targets“ vordefinierter Ziele
 
--   Überschreiben der DependsOn-Eigenschaften, die in „Microsoft.Common.targets“ definiert sind
+- Überschreiben der DependsOn-Eigenschaften, die in „Microsoft.Common.targets“ definiert sind
 
 ## <a name="overriding-predefined-targets"></a>Überschreiben vordefinierter Ziele
  Die Datei „Microsoft.Common.targets“ enthält einen Satz vordefinierter, leerer Ziele, die vor und nach einigen der wichtigsten Ziele im Buildprozess aufgerufen werden. Beispielsweise ruft [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] das `BeforeBuild`-Ziel vor dem `CoreBuild`-Hauptziel und das `AfterBuild`-Ziel nach dem `CoreBuild`-Ziel auf. Die leeren Ziele in „Microsoft.Common.targets“ führen standardmäßig keine Aktionen aus. Sie können aber ihr Standardverhalten überschreiben, indem Sie die Ziele definieren, die eine Projektdatei enthalten soll, die „Microsoft.Common.targets“ importiert. Auf diese Weise können Sie den Buildprozess mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgaben besser steuern.
@@ -109,13 +109,13 @@ Der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Buildprozess wird durch eine Re
 
 #### <a name="to-override-a-dependson-property"></a>So überschreiben Sie eine DependsOn-Eigenschaft
 
-1.  Identifizieren Sie eine vordefiniertes DependsOn-Eigenschaft in „Microsoft.Common.targets“, die Sie überschreiben möchten. In der folgenden Tabelle finden Sie eine Liste der Eigenschaften der häufig überschriebenen DependsOn-Eigenschaften.
+1. Identifizieren Sie eine vordefiniertes DependsOn-Eigenschaft in „Microsoft.Common.targets“, die Sie überschreiben möchten. In der folgenden Tabelle finden Sie eine Liste der Eigenschaften der häufig überschriebenen DependsOn-Eigenschaften.
 
-2.  Definieren Sie eine andere Instanz der Eigenschaft oder Eigenschaften am Ende der Projektdatei. Schließen Sie die ursprüngliche Eigenschaft, z.B. `$(BuildDependsOn)`, in die neue Eigenschaft ein.
+2. Definieren Sie eine andere Instanz der Eigenschaft oder Eigenschaften am Ende der Projektdatei. Schließen Sie die ursprüngliche Eigenschaft, z.B. `$(BuildDependsOn)`, in die neue Eigenschaft ein.
 
-3.  Definieren Sie Ihre benutzerdefinierten Ziele vor oder nach der Eigenschaftsdefinition.
+3. Definieren Sie Ihre benutzerdefinierten Ziele vor oder nach der Eigenschaftsdefinition.
 
-4.  Erstellen Sie die Projektdatei.
+4. Erstellen Sie die Projektdatei.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Häufig überschriebene DependsOn-Eigenschaften
 
