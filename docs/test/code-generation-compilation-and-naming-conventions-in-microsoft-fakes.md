@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822760"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 
@@ -20,8 +20,8 @@ In diesem Artikel werden Optionen und Probleme der Fakes-Codegenerierung und -Co
 
 **Anforderungen**
 
--   Visual Studio Enterprise
--   Ein .NET Framework-Projekt
+- Visual Studio Enterprise
+- Ein .NET Framework-Projekt
 
 > [!NOTE]
 > .NET Standard-Projekte werden nicht unterstützt.
@@ -62,23 +62,23 @@ Beispielsweise werden durch die folgende *FAKES*-Datei Stubs für Typen unter de
 
 Von den Filterzeichenfolgen wird eine einfache Grammatik verwendet, um zu definieren, wie der Abgleich ausgeführt werden soll:
 
--   Bei Filtern wird standardmäßig die Groß-/Kleinschreibung nicht berücksichtigt. Filter führen einen Abgleich untergeordneter Zeichenfolgen aus:
+- Bei Filtern wird standardmäßig die Groß-/Kleinschreibung nicht berücksichtigt. Filter führen einen Abgleich untergeordneter Zeichenfolgen aus:
 
      `el` findet "hello"
 
--   Durch das Hinzufügen von `!` am Ende des Filters wird die Groß-/Kleinschreibung genau beachtet:
+- Durch das Hinzufügen von `!` am Ende des Filters wird die Groß-/Kleinschreibung genau beachtet:
 
      `el!` findet "hello" nicht
 
      `hello!` findet "hello"
 
--   Durch das Hinzufügen von `*` am Ende des Filters wird das Präfix der Zeichenfolge berücksichtigt:
+- Durch das Hinzufügen von `*` am Ende des Filters wird das Präfix der Zeichenfolge berücksichtigt:
 
      `el*` findet "hello" nicht
 
      `he*` findet "hello"
 
--   Mehrere Filter in einer durch Semikolons getrennten Liste werden als eine Disjunktion kombiniert:
+- Mehrere Filter in einer durch Semikolons getrennten Liste werden als eine Disjunktion kombiniert:
 
      `el;wo` findet "hello" und "world"
 
@@ -114,9 +114,9 @@ Der Fakes-Code-Generator generiert Shim-Typen und Stub-Typen für Typen, die fü
 
  Wenn die Shim-Assembly einen starken Namen hat und auf interne Typen der Assembly zugegriffen werden soll:
 
--   Es müssen sowohl die Testassembly als auch die Fakes-Assembly einen starken Namen haben.
+- Es müssen sowohl die Testassembly als auch die Fakes-Assembly einen starken Namen haben.
 
--   Fügen Sie den **InternalsVisibleToAttribute**-Attributen in den Shim-Assemblys die öffentlichen Schlüssel der Testassembly und der Fakes-Assembly hinzu. Im Folgenden wird gezeigt, wie die Beispielattribute im Shim-Assemblycode bei einer Shim-Assembly mit einem starken Namen aussehen würden:
+- Fügen Sie den **InternalsVisibleToAttribute**-Attributen in den Shim-Assemblys die öffentlichen Schlüssel der Testassembly und der Fakes-Assembly hinzu. Im Folgenden wird gezeigt, wie die Beispielattribute im Shim-Assemblycode bei einer Shim-Assembly mit einem starken Namen aussehen würden:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Die Kompilierung von Fakes-Assemblys kann die Buildzeit erheblich verlängern. S
 
 Fügen Sie in den Komponententestprojekten einen Verweis auf die kompilierten Fakes-Assemblys hinzu, die sich im Projektordner unter „FakesAssemblies“ befinden.
 
-1.  Erstellen Sie eine neue Klassenbibliothek mit der .NET-Laufzeitversion, die mit Ihren Testprojekten übereinstimmt. Nennen wir sie „Fakes.Prebuild“. Entfernen Sie die Datei *class1.cs* aus dem Projekt, da diese nicht benötigt wird.
+1. Erstellen Sie eine neue Klassenbibliothek mit der .NET-Laufzeitversion, die mit Ihren Testprojekten übereinstimmt. Nennen wir sie „Fakes.Prebuild“. Entfernen Sie die Datei *class1.cs* aus dem Projekt, da diese nicht benötigt wird.
 
-2.  Fügen Sie Verweise auf alle Systemassemblys und Assemblys von Drittanbietern hinzu, für die Sie Fakes benötigen.
+2. Fügen Sie Verweise auf alle Systemassemblys und Assemblys von Drittanbietern hinzu, für die Sie Fakes benötigen.
 
-3.  Fügen Sie jeder Assembly und jedem Build eine *FAKES*-Datei hinzu.
+3. Fügen Sie jeder Assembly und jedem Build eine *FAKES*-Datei hinzu.
 
-4.  Aus dem Testprojekt
+4. Aus dem Testprojekt
 
-    -   Stellen Sie sicher, dass es einen Verweis auf die Fakes-Runtime-DLL gibt:
+    - Stellen Sie sicher, dass es einen Verweis auf die Fakes-Runtime-DLL gibt:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Fügen Sie für jede Assembly, für die Sie Fakes erstellt haben, einen Verweis auf die entsprechende DLL-Datei im Ordner *Fakes.Prebuild\FakesAssemblies* des Projekts hinzu.
+    - Fügen Sie für jede Assembly, für die Sie Fakes erstellt haben, einen Verweis auf die entsprechende DLL-Datei im Ordner *Fakes.Prebuild\FakesAssemblies* des Projekts hinzu.
 
 ### <a name="avoid-assembly-name-clashing"></a>Vermeiden von Konflikten bei Assemblynamen
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Die folgenden Regeln werden rekursiv angewendet:
 
--   Da Fakes C# zur Generierung der Fakes-Assemblys verwendet, wird jedes Zeichen, das ein ungültiges C#-Token erzeugen würde, mit einem "_" (Unterstrich) versehen.
+- Da Fakes C# zur Generierung der Fakes-Assemblys verwendet, wird jedes Zeichen, das ein ungültiges C#-Token erzeugen würde, mit einem "_" (Unterstrich) versehen.
 
--   Wenn ein resultierender Name einen Konflikt mit einem Mitglied des deklarierenden Typs verursacht, wird ein Nummerierungsschema verwendet, indem ein zweistelliger Indikator angefügt wird, der mit „01“ beginnt.
+- Wenn ein resultierender Name einen Konflikt mit einem Mitglied des deklarierenden Typs verursacht, wird ein Nummerierungsschema verwendet, indem ein zweistelliger Indikator angefügt wird, der mit „01“ beginnt.
 
 ## <a name="see-also"></a>Siehe auch
 
