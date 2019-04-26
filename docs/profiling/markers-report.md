@@ -1,44 +1,47 @@
 ---
 title: Markerbericht | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.markers
 ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 765fd6db153f30ad312ea873919a20e5f885b158
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430944"
 ---
 # <a name="markers-report"></a>Markerbericht
-Der Markerbericht führt die Marker im angezeigten Zeitrahmen auf.  Das Schwenken, Zoomen oder Ausblenden von Bereichen führt, möglicherweise dazu, das Marker angezeigt werden oder wieder ausgeblendet werden. Der Bericht enthält folgende Informationen über jeden Marker:
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-- Die Startzeit, relativ zum Beginn der Ablaufverfolgung.
-
-- Die Dauer. Die Dauer beträgt 0 (null) für Flags und Nachrichten, da sie einen Zeitpunkt darstellen.
-
-- Die ID des Threads, der sie generiert hat.
-
-- Die Ereignisablaufverfolgung (ETW) für den Windows-Anbieter, der diese generiert hat.
-
-- Die Markerreihe aus die er geschrieben wurde.
-
-- Die Kategorie der Ereignisse, denen er angehört.
-
-- Die Wichtigkeitsstufe.
-
-- Der Typ (span, flag oder message).
-
-- Eine allgemeine Beschreibung der Bedeutung.
-
-  Wählen Sie die Schaltfläche **Exportieren** aus, um den Markerbericht als CSV-Datei zu speichern. Sie können die Daten in der CSV-Datei mit anderen Apps oder Tools verwenden.
-
+Der Markerbericht führt die Marker im angezeigten Zeitrahmen auf.  Das Schwenken, Zoomen oder Ausblenden von Bereichen führt, möglicherweise dazu, das Marker angezeigt werden oder wieder ausgeblendet werden. Der Bericht enthält folgende Informationen über jeden Marker:  
+  
+- Die Startzeit, relativ zum Beginn der Ablaufverfolgung.  
+  
+- Die Dauer. Die Dauer beträgt 0 (null) für Flags und Nachrichten, da sie einen Zeitpunkt darstellen.  
+  
+- Die ID des Threads, der sie generiert hat.  
+  
+- Die Ereignisablaufverfolgung (ETW) für den Windows-Anbieter, der diese generiert hat.  
+  
+- Die Markerreihe aus die er geschrieben wurde.  
+  
+- Die Kategorie der Ereignisse, denen er angehört.  
+  
+- Die Wichtigkeitsstufe.  
+  
+- Der Typ (span, flag oder message).  
+  
+- Eine allgemeine Beschreibung der Bedeutung.  
+  
+  Wählen Sie die Schaltfläche **Exportieren** aus, um den Markerbericht als CSV-Datei zu speichern. Sie können die Daten in der CSV-Datei mit anderen Apps oder Tools verwenden.  
+  
 > [!NOTE]
->  Der Markerbericht kann 1.000 Marker anzeigen. Um alle Marker anzuzeigen, exportieren Sie den vollständigen Bericht in eine CSV-Datei.
+> Der Markerbericht kann 1.000 Marker anzeigen. Um alle Marker anzuzeigen, exportieren Sie den vollständigen Bericht in eine CSV-Datei.

@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437856"
 ---
 # <a name="msbuild-task"></a>MSBuild-Aufgabe
 Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekte aus einem anderen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt.
 
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der `MSBuild` -Aufgabe beschrieben.
-
 
 | Parameter | Beschreibung |
 |-----------------------------------| - |
@@ -66,7 +65,7 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5: Mit „Properties“ und „AdditionalProperties“ werden in dieser Version jedoch zwei neue reservierte Metadatenelemente bereitgestellt, mit denen Sie auf flexible Weise unterschiedliche Eigenschaften für verschiedene Projekte übergeben können, die mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) erstellt werden.
 
 > [!NOTE]
->  Diese neuen Metadatenelemente gelten nur für Elemente, die im Attribut „Projects“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden.
+> Diese neuen Metadatenelemente gelten nur für Elemente, die im Attribut „Projects“ der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden.
 
 ## <a name="multi-processor-build-benefits"></a>Buildvorteile bei mehreren Prozessoren
  Einer der Hauptvorteile bei der Verwendung dieser neuen Metadaten zeigt sich, wenn Sie Projekte gleichzeitig auf einem System mit mehreren Prozessoren erstellen. Mithilfe der Metadaten können Sie alle Projekte in einem einzelnen Aufruf der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) konsolidieren, ohne eine Batchverarbeitung oder bedingte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben ausführen zu müssen. Und wenn Sie nur eine einzige [MSBuild-Aufgabe](../msbuild/msbuild-task.md) aufrufen, werden alle im Attribut „Projects“ aufgelisteten Projekte gleichzeitig erstellt. (Dies gilt allerdings nur, wenn das `BuildInParallel=true`-Attribut in der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) vorhanden ist.) Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
@@ -75,7 +74,7 @@ Erstellt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
  Beim Erstellen mehrerer Projektmappendateien mithilfe der [MSBuild-Aufgabe](../msbuild/msbuild-task.md) werden häufig nur unterschiedliche Buildkonfigurationen verwendet. Möglicherweise möchten Sie die Projektmappe a1 mithilfe der Debugkonfiguration und Projektmappe a2 mithilfe der Releasekonfiguration erstellen. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 würde diese Projektdatei wie folgt aussehen:
 
 > [!NOTE]
->  Im folgenden Beispiel stellt „…“ zusätzliche Projektmappendateien dar.
+> Im folgenden Beispiel stellt „…“ zusätzliche Projektmappendateien dar.
 
 ### <a name="aproj"></a>a.proj
 
