@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 798318f55c6f5db599f39a653a4d9ed5edbed8f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077939"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ Diese Seite beschreibt, wie Sie Visual Studio 2015 installieren, wenn Sie nicht 
 > [!IMPORTANT]
 > Wenn auf Ihrem Offlinecomputer Windows 7 SP1 oder Windows Server 2008 R2 ausgeführt wird, finden Sie spezielle Anweisungen dazu im Abschnitt [Problembehandlung bei einer Offlineinstallation](#BKMK_tshoot) in diesem Thema.  Sie müssen diesen Anweisungen folgen, *bevor* Sie Visual Studio 2015 installieren.
 
-##  <a name="BKMK_Offline"></a> Installieren durch Erstellen einer Offlineinstallation
+## <a name="BKMK_Offline"></a> Installieren durch Erstellen einer Offlineinstallation
 
 #### <a name="to-create-an-offline-installation-layout"></a>So erstellen Sie ein Layout für die Offlineinstallation
 
-1.  Wählen Sie die Edition von Visual Studio aus, die Sie von der Downloadseite [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) installieren möchten.
+1. Wählen Sie die Edition von Visual Studio aus, die Sie von der Downloadseite [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) installieren möchten.
 
-2.  Nachdem Sie das Installationsprogramm an einen Speicherort in Ihrem Dateisystem heruntergeladen haben, führen Sie „\<Name der ausführbaren Datei>/layout“ aus.
+2. Nachdem Sie das Installationsprogramm an einen Speicherort in Ihrem Dateisystem heruntergeladen haben, führen Sie „\<Name der ausführbaren Datei>/layout“ aus.
 
      Führen Sie zum Beispiel `vs_enterprise.exe /layout D:\VisualStudio2015` aus.
 
      Mit dem `/layout`-Switch können Sie fast alle Installationspakete herunterladen und nicht nur diejenigen, die für den Downloadcomputer vorgesehen sind. Mit diesem Ansatz erhalten Sie die Dateien, die Sie benötigen, um dieses Installationsprogramm überall ausführen. Darüber hinaus sind sie möglicherweise hilfreich, wenn Sie Komponenten installieren möchten, die ursprünglich nicht installiert wurden.
 
-3.  Nachdem Sie diesen Befehl ausgeführt haben, wird ein Dialogfeld angezeigt, in dem Sie den Ordner ändern können, in dem das Layout für die Offlineinstallation gespeichert werden soll.   Klicken Sie anschließend auf die Schaltfläche **Herunterladen**.
+3. Nachdem Sie diesen Befehl ausgeführt haben, wird ein Dialogfeld angezeigt, in dem Sie den Ordner ändern können, in dem das Layout für die Offlineinstallation gespeichert werden soll.   Klicken Sie anschließend auf die Schaltfläche **Herunterladen**.
 
      Wenn der Paketdownload erfolgreich durchgeführt wurde, sollte die folgende Meldung angezeigt werden: **Setup wurde erfolgreich abgeschlossen! Alle angegebenen Komponenten wurden erfolgreich abgerufen.**
 
-4.  Suchen Sie den Ordner, den Sie zuvor angegeben haben (z.B. „D:\VisualStudio2015“). Dieser Ordner enthält alles, was Sie zum Kopieren an einen freigegebenen Speicherort oder auf Installationsmedien benötigen.
+4. Suchen Sie den Ordner, den Sie zuvor angegeben haben (z.B. „D:\VisualStudio2015“). Dieser Ordner enthält alles, was Sie zum Kopieren an einen freigegebenen Speicherort oder auf Installationsmedien benötigen.
 
     > [!CAUTION]
     > Aktuell unterstützt das Android SDK keine Oberfläche zur Offlineinstallation. Wenn Sie die Setupelemente des Android SDKs auf einem Computer installieren, der keine Internetverbindung aufweist, tritt bei der Installation möglicherweise ein Fehler auf. Weitere Informationen finden Sie im Abschnitt „Problembehandlung bei einer Offlineinstallation“ in diesem Thema.
 
-5.  Führen Sie die Installation vom Dateispeicherort oder von den Installationsmedien aus.
+5. Führen Sie die Installation vom Dateispeicherort oder von den Installationsmedien aus.
 
 ## <a name="updating-an-offline-installation"></a>Aktualisieren einer Offlineinstallation
  Microsoft hat mehrere Updates für Visual Studio 2015 veröffentlicht. Zum Aktualisieren Ihrer Visual Studio-Installation laden Sie einfach die gewünschte Edition von der Downloadseite [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) herunter. Führen Sie anschließend die Schritte in diesem Thema zum Erstellen eines neuen Layouts für die Offlineinstallation aus, und verwenden Sie dann dieses Layout, um Ihre Kopie von Visual Studio 2015 zu aktualisieren.
 
-##  <a name="BKMK_tshoot"></a> Problembehandlung bei einer Offlineinstallation
+## <a name="BKMK_tshoot"></a> Problembehandlung bei einer Offlineinstallation
  Wenn Sie eine Offlineinstallation aus dem Offlineinstallationscache ausführen, werden möglicherweise Fehlermeldungen angezeigt, die darauf hinweisen, dass einige Komponenten und Pakete nicht installiert werden können. Die folgende Tabelle enthält mögliche Lösungen für diese Szenarien.
 
 | Komponente oder Paket | Lösung |
