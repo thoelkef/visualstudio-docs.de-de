@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cea673bdf0378c5ce2c5e3e1925139523b498a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdc03624b2260870ca43643caa995db5621dbec9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975189"
 ---
 # <a name="how-to-print-class-diagrams"></a>Vorgehensweise: Drucken von Klassendiagrammen
 
@@ -24,9 +24,9 @@ Sie können ein Klassendiagramm mithilfe der Druckfunktion von Visual Studio dru
 
 ## <a name="to-print-a-class-diagram"></a>So drucken Sie ein Klassendiagramm
 
-1.  Öffnen Sie das Klassendiagramm.
+1. Öffnen Sie das Klassendiagramm.
 
-2.  Klicken Sie im Menü **Datei** auf **Drucken**.
+2. Klicken Sie im Menü **Datei** auf **Drucken**.
 
 Es wird das gesamte Klassendiagramm gedruckt. Sie müssen möglicherweise die Einstellungen im Dialogfeld **Seite einrichten** anpassen, um das Diagramm in der passenden Größe zu drucken.
 

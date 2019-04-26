@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831442"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile
 Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools hängen von verschiedenen Faktoren ab, beispielsweise von der Art der Anwendung, für die ein Profil erstellt werden soll, von der Profilerstellungsmethode, die Sie verwenden möchten, sowie davon, ob die Zielanwendung in nativem Code oder in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Code geschrieben ist.
@@ -37,17 +37,17 @@ Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprv
 
  **Art der Zielanwendung**
 
--   [Eigenständige .NET Framework-Komponenten](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [Eigenständige .NET Framework-Komponenten](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [Native, eigenständige Komponenten](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [Native, eigenständige Komponenten](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [Statisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Statisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [Dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Dynamisch kompilierte ASP.NET-Webanwendungen](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [.NET-Dienste](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [.NET-Dienste](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [Native Dienste](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Native Dienste](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Verwenden von .NET-Arbeitsspeichermethoden zur Sammlung von Daten zur Speicherbelegung und Objektlebensdauer
  Die .NET Arbeitsspeichermethode der Profilerstellungstools ermöglicht das Sammeln von Speicherbelegungsdaten für [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sowie von Informationen zur Lebensdauer von Objekten in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

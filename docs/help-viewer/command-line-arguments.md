@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824683"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Befehlszeilenargumente für den Hilfeinhalts-Manager
 
 Sie können angeben, wie lokale Hilfeinhalte bereitgestellt und verwaltet werden sollen. Verwenden Sie dazu Befehlszeilenargumente für den Hilfeinhalts-Manager (*HlpCtntMgr.exe*). Sie müssen Skripts für dieses Befehlszeilentool mit Administratorberechtigungen ausführen. Die Skripts können nicht als Dienst ausgeführt werden. Mit diesem Tool können Sie folgende Aufgaben ausführen:
 
--   Hinzufügen oder Aktualisieren lokaler Hilfeinhalte von Datenträgern oder aus der Cloud
+- Hinzufügen oder Aktualisieren lokaler Hilfeinhalte von Datenträgern oder aus der Cloud
 
--   Entfernen lokaler Hilfeinhalte
+- Entfernen lokaler Hilfeinhalte
 
--   Verschieben des lokalen Hilfeinhaltsspeichers
+- Verschieben des lokalen Hilfeinhaltsspeichers
 
--   Automatisches Hinzufügen, Aktualisieren, Entfernen oder Verschieben lokaler Hilfeinhalte
+- Automatisches Hinzufügen, Aktualisieren, Entfernen oder Verschieben lokaler Hilfeinhalte
 
 Syntax:
 

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969097"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -59,7 +59,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 - Muss als Teil der `devenv`-Befehle `/Build`, `/Clean`, `/Rebuild` oder `/Deploy` verwendet werden.
 

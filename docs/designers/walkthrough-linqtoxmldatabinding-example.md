@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892544"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel
 In dieser exemplarischen Vorgehensweise wird das Beispiel „LinqToXmlDataBinding“ beschrieben, und es werden einige wichtige Aspekte seiner beiden primären Quelldateien *L2DBForm.xaml* und *L2DBForm.xaml.cs* erläutert.
@@ -21,10 +21,10 @@ In dieser exemplarischen Vorgehensweise wird das Beispiel „LinqToXmlDataBindin
 ## <a name="prerequisites"></a>Erforderliche Komponenten
  Bevor Sie sich diese exemplarische Vorgehensweise durchlesen, empfehlen wir dringend, das unter [Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md) beschriebene LinqToXmlDataBinding-Programm zu kompilieren und auszuführen.
 
-## <a name="remarks"></a>Hinweise
- Das <legacyBold>LinqToXmlDataBinding</legacyBold>-Programm ist eine WPF-Anwendung (Windows Presentation Foundation), die aus C#- und XAML-Quelldateien besteht. Es enthält ein eingebettetes XML-Dokument, das eine Liste von Büchern definiert. Das Programm versetzt den Benutzer in die Lage, diese Einträge anzuzeigen, hinzuzufügen, zu löschen und zu bearbeiten. Das Programm setzt sich aus den folgenden beiden primären Quelldateien zusammen:
+## <a name="remarks"></a>Anmerkungen
+ Das LinqToXmlDataBinding-Programm ist eine WPF-Anwendung (Windows Presentation Foundation), die aus C#- und XAML-Quelldateien besteht. Es enthält ein eingebettetes XML-Dokument, das eine Liste von Büchern definiert. Das Programm versetzt den Benutzer in die Lage, diese Einträge anzuzeigen, hinzuzufügen, zu löschen und zu bearbeiten. Das Programm setzt sich aus den folgenden beiden primären Quelldateien zusammen:
 
-- *L2DBForm.xaml* enthält den XAML-Deklarationscode für die Benutzeroberfläche des Hauptfensters. Außerdem enthält die Datei den Abschnitt <legacyBold>Window.Resources</legacyBold>, in dem ein Datenanbieter und ein eingebettetes XML-Dokument für die Bücherlisten definiert sind.
+- *L2DBForm.xaml* enthält den XAML-Deklarationscode für die Benutzeroberfläche des Hauptfensters. Außerdem enthält die Datei den Abschnitt Window.Resources, in dem ein Datenanbieter und ein eingebettetes XML-Dokument für die Bücherlisten definiert sind.
 
 - *L2DBForm.xaml.cs* enthält die Initialisierungs- und Ereignisbehandlungsmethoden, die der Benutzeroberfläche zugeordnet sind.
 
@@ -42,8 +42,8 @@ In dieser exemplarischen Vorgehensweise wird das Beispiel „LinqToXmlDataBindin
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md)|Enthält den Inhalt und die Beschreibung des XAML-Codes in der Datei <legacyBold>L2DBForm.xaml</legacyBold>.|
-|[L2DBForm.xaml.cs-Quellcode](../designers/l2dbform-xaml-cs-source-code.md)|Enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei <legacyBold>L2DBForm.xaml.cs</legacyBold>.|
+|[L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md)|Enthält den Inhalt und die Beschreibung des XAML-Codes in der Datei L2DBForm.xaml.|
+|[L2DBForm.xaml.cs-Quellcode](../designers/l2dbform-xaml-cs-source-code.md)|Enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei L2DBForm.xaml.cs.|
 
 ## <a name="see-also"></a>Siehe auch
 

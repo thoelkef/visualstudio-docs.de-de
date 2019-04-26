@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f01f0fd090bdfdef1f09f0446980756232a3abf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974275"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln paralleler Daten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine ASP.NET-Anwendung angefügt wird und Parallelitätsdaten für Prozesse und Threads erfasst werden können.
@@ -45,21 +45,20 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
 
-
 2. Starten Sie die ASP.NET-Anwendung wie gewohnt.
 
 3. Fügen Sie den Profiler an den ASP.NET-Arbeitsprozess an, indem Sie den folgenden Befehl eingeben:**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]
 
-   -   `PID` gibt die ID oder den Namen des ASP.NET-Arbeitsprozesses an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
+   - `PID` gibt die ID oder den Namen des ASP.NET-Arbeitsprozesses an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dieser Parameter ist optional.
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dieser Parameter ist optional.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
  Während die Anwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit *VSPerfCmd.exe*-Optionen starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Mit den VSPerfCmd-Optionspaaren in der folgenden Tabelle wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
+- Mit den VSPerfCmd-Optionspaaren in der folgenden Tabelle wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
     |Option|Beschreibung|
     |------------|-----------------|
@@ -72,11 +71,11 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-1.  Trennen Sie den Profiler von der Zielanwendung, indem Sie die Anwendung schließen oder an einer Eingabeaufforderung Folgendes eingeben:
+1. Trennen Sie den Profiler von der Zielanwendung, indem Sie die Anwendung schließen oder an einer Eingabeaufforderung Folgendes eingeben:
 
      **VSPerfCmd /detach**
 
-2.  Beenden Sie den Profiler, indem Sie den folgenden Befehl an der Eingabeaufforderung eingeben:
+2. Beenden Sie den Profiler, indem Sie den folgenden Befehl an der Eingabeaufforderung eingeben:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

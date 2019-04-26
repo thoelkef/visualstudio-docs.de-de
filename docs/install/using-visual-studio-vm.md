@@ -2,7 +2,7 @@
 title: Verwenden von Visual Studio auf einem virtuellen Azure-Computer
 titleSuffix: ''
 description: Erfahren Sie, wie Visual Studio auf einem virtuellen Azure-Computer verwendet wird
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951494"
 ---
 # <a id="top"> </a> Visual Studio-Images in Azure
 
@@ -32,12 +32,12 @@ Neu bei Azure? [Kostenloses Azure-Konto erstellen](https://azure.microsoft.com/f
 
 ## <a name="what-configurations-and-versions-are-available"></a>Welche Konfigurationen und Versionen sind verfügbar?
 
-Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual Studio 2017 und Visual Studio 2015.  Vor kurzem wurde die Unterstützung von Vorschauversionen der kommenden Hauptversion Visual Studio 2019 hinzugefügt.  Für jedes Release einer Hauptversion finden Sie die ursprünglich herausgegebene Version (RTW) und die zuletzt aktualisierten Versionen.  Jede dieser Versionen ist in den Editionen Visual Studio Enterprise und Visual Studio Community erhältlich.  Diese Images werden mindestens monatlich aktualisiert, sodass sie die neuesten Visual Studio- und Windows-Updates enthalten.  Zwar bleiben die Namen der Images unverändert, die Beschreibung zu jedem Image beinhaltet aber dessen installierte Produktversion und das Statusdatum des Images.
+Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual Studio 2019, Visual Studio 2017 und Visual Studio 2015.  Für jedes Release einer Hauptversion finden Sie die ursprünglich herausgegebene Version (RTW) und die zuletzt aktualisierten Versionen.  Jede dieser Versionen ist in den Editionen Visual Studio Enterprise und Visual Studio Community erhältlich.  Diese Images werden mindestens monatlich aktualisiert, sodass sie die neuesten Visual Studio- und Windows-Updates enthalten.  Zwar bleiben die Namen der Images unverändert, die Beschreibung zu jedem Image beinhaltet aber dessen installierte Produktversion und das Statusdatum des Images.
 
 | Releaseversion                                              | Editionen                     |     Produktversion      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: Vorschauversion (RC3)                      |           Enterprise         |    Version 16.0.0 RC3    |
-| Visual Studio 2017: Aktuellste Version (Version 15.9)                    |    Enterprise, Community     |      Version 15.9.9      |
+|       Visual Studio 2019: RTW                                |    Enterprise, Community     |      Version 16.0.0      |
+| Visual Studio 2017: Aktuellste Version (Version 15.9)                    |    Enterprise, Community     |      Version 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Version 15.0.22     |
 |   Visual Studio 2015: Aktuellste Version (Update 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Keiner             | (Aus dem Wartungsfenster gelaufen)  |
@@ -77,13 +77,13 @@ Wenn die Images ein Visual Studio-Feature nicht enthalten, das Sie benötigen, g
 
 Azure bietet eine umfangreiche Palette an VM-Größen. Da Visual Studio eine leistungsstarke Multithread-Anwendung ist, empfiehlt sich eine VM-Größe von mindestens zwei Prozessoren und 7 GB Arbeitsspeicher. Die folgenden VM-Größen werden für die Visual Studio-Images empfohlen:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Weitere Informationen zu den aktuellen Computergrößen finden Sie unter [Größen für virtuelle Windows-Computer in Azure](/azure/virtual-machines/windows/sizes).
 

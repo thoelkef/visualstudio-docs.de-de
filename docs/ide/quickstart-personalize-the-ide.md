@@ -7,18 +7,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a43ade295d14934f452123407f9896eebdaf26c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953390"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalisieren der Visual Studio-IDE und des Editors
 
 In diesem 5- bis 10-minütigen Tutorial erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
 

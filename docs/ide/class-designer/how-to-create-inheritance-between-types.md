@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975371"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Erstellen der Vererbung zwischen Typen im Klassen-Designer
 
@@ -26,21 +26,21 @@ Verbinden Sie den Basistyp mit seinem abgeleiteten Typ bzw. seinen abgeleiteten 
 
 ## <a name="to-create-an-inheritance-between-types"></a>So erstellen Sie eine Vererbung zwischen Typen
 
-1.  Öffnen Sie vom Projekt im **Projektmappen-Explorer** aus eine Klassendiagrammdatei (CD-Datei).
+1. Öffnen Sie vom Projekt im **Projektmappen-Explorer** aus eine Klassendiagrammdatei (CD-Datei).
 
      Wenn Sie noch nicht über ein Klassendiagramm verfügen, erstellen Sie eines. Weitere Informationen finden Sie unter [How to: Add Class Diagrams to Projects (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten)](how-to-add-class-diagrams-to-projects.md).
 
-2.  Klicken Sie in der **Toolbox** unter **Klassen-Designer** auf **Vererbung**.
+2. Klicken Sie in der **Toolbox** unter **Klassen-Designer** auf **Vererbung**.
 
-3.  Zeichnen Sie im Klassendiagramm eine Vererbungslinie zwischen den gewünschten Typen. Beginnen Sie folgendermaßen:
+3. Zeichnen Sie im Klassendiagramm eine Vererbungslinie zwischen den gewünschten Typen. Beginnen Sie folgendermaßen:
 
-    -   Von einer abgeleiteten Klasse zur Basisklasse
+    - Von einer abgeleiteten Klasse zur Basisklasse
 
-    -   Von einer implementierenden Klasse zur implementierten Schnittstelle
+    - Von einer implementierenden Klasse zur implementierten Schnittstelle
 
-    -   Von einer erweiternden Schnittstelle zu einer erweiterten Schnittstelle
+    - Von einer erweiternden Schnittstelle zu einer erweiterten Schnittstelle
 
-4.  Wenn Sie über einen abgeleiteten Typ eines generischen Typs verfügen, können Sie optional auf die Vererbungslinie klicken. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Type Arguments** so fest, dass sie mit dem Typ übereinstimmt, den der generische Typ aufweisen soll.
+4. Wenn Sie über einen abgeleiteten Typ eines generischen Typs verfügen, können Sie optional auf die Vererbungslinie klicken. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Type Arguments** so fest, dass sie mit dem Typ übereinstimmt, den der generische Typ aufweisen soll.
 
     > [!NOTE]
     > Wenn eine übergeordnete abstrakte Klasse mindestens einen abstrakten Member enthält, so werden alle abstrakten Member als nicht abstrakte vererbende Klassen implementiert.

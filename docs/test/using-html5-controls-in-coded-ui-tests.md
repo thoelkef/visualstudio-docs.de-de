@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973104"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 
@@ -22,7 +22,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
  **Anforderungen**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!WARNING]
 > In Versionen vor Internet Explorer 10 konnten Tests der programmierten UI im Vergleich zum Internet Explorer-Prozess mit einer höheren Berechtigungsstufe ausgeführt werden. Beim Ausführen von Tests der programmierten UI in Internet Explorer 10 müssen sowohl der Prozess für Tests der programmierten UI als auch der Internet Explorer-Prozess dieselbe Berechtigungsstufe aufweisen. Dies liegt an sichereren AppContainer-Features in Internet Explorer 10.
@@ -53,7 +53,6 @@ Unter [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEle
 
 > [!NOTE]
 > Die Zeitdauer für das Suchen und Anhalten kann erheblich sein. Während der Wiedergabe wartet der Test der programmierten UI bis zur in `(TimeSpan)` angegebenen Zeit, bevor die Audiodatei angehalten wird. Wenn die angegebene Zeit unter bestimmten Ausnahmefällen verstrichen ist, bevor der Befehl „Pause“ aktiviert wurde, wird eine Ausnahme zurückgegeben.
-
 
 ## <a name="video-control"></a>Videosteuerelement
  **Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956452"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 
@@ -82,11 +82,11 @@ Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzu
 
  Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, geben Sie den Namen im Feld **Importierte Namespaces** ein, der den Namespace ersetzen soll, und klicken Sie anschließend auf diese Schaltfläche, um den neuen Namespace zu ändern. Die Schaltfläche ist nur dann aktiviert, wenn der ausgewählte Namespace ein Namespace ist, den Sie der Liste mit der Schaltfläche **Benutzerimport hinzufügen** hinzugefügt haben. Sie können Folgendes hinzufügen:
 
--   Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>
+- Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>
 
--   Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`
+- Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`
 
--   XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`
+- XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`
 
 ## <a name="see-also"></a>Siehe auch
 

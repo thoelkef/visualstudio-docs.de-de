@@ -8,24 +8,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821622"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung
 
 In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss. Sie lernen Folgendes:
 
--   Generieren von Zufallszahlen mithilfe der <xref:System.Random>-Klasse.
+- Generieren von Zufallszahlen mithilfe der <xref:System.Random>-Klasse.
 
--   Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, mithilfe eines <xref:System.Windows.Forms.Timer>-Steuerelements.
+- Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, mithilfe eines <xref:System.Windows.Forms.Timer>-Steuerelements.
 
--   Steuern des Programmablaufs mit `if else`-Anweisungen.
+- Steuern des Programmablaufs mit `if else`-Anweisungen.
 
--   Ausführen grundlegender arithmetischer Operationen im Code.
+- Ausführen grundlegender arithmetischer Operationen im Code.
 
 Nach Abschluss der Übung sieht das Quiz wie die folgende Abbildung aus, enthält jedoch andere Zahlen:
 

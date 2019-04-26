@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983041"
 ---
 # <a name="enable-subscription"></a>Aktivieren des Abonnements
 
@@ -40,9 +40,9 @@ Derzeit gibt es keine Möglichkeit, einen Produktschlüssel zu verwenden, um Pro
 
 > [!NOTE]
 > Offlineaktivierung ist für Visual Studio für Mac nicht verfügbar.
-> Um Ihr Abonnement von Visual Studio 2017 für Mac Professional oder Enterprise zu aktivieren, müssen Sie bei der Anmeldung mit dem Internet verbunden sein.
+> Für die Aktivierung Ihres Abonnements von Visual Studio 2019 für Mac Professional oder Enterprise müssen Sie bei der Anmeldung mit dem Internet verbunden sein.
 
-Wenn Sie Visual Studio Enterprise 2017 für Mac für Computer ohne Internetverbindung erworben haben, können Sie Visual Studio für Mac weiterhin ohne Aktivierung verwenden. Xamarin Inspector, Xamarin Profiler und eingebettete Assemblyfunktionen stehen so jedoch nicht zur Verfügung.
+Wenn Sie Visual Studio Enterprise 2019 für Mac für Computer ohne Internetverbindung erworben haben, können Sie Visual Studio für Mac weiterhin ohne Aktivierung verwenden. Xamarin Inspector, Xamarin Profiler und eingebettete Assemblyfeatures stehen so jedoch nicht zur Verfügung.
 
 ## <a name="see-also"></a>Siehe auch
 

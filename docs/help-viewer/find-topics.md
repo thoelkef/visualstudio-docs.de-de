@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824284"
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen von Themen
 
@@ -23,18 +23,18 @@ Klicken Sie im **Help Viewer**-Fenster auf die Registerkarte **Suche**, oder dr�
 
 ## <a name="to-perform-a-full-text-search"></a>So führen Sie eine Volltextsuche aus
 
-1.  Geben Sie in das Suchfeld das Wort ein, nach dem Sie suchen möchten.
+1. Geben Sie in das Suchfeld das Wort ein, nach dem Sie suchen möchten.
 
-2.  Falls Sie logische oder erweiterte Suchoperatoren verwenden, geben Sie in der Abfrage an, um welche es sich dabei handelt. Verwenden Sie jedoch keine Operatoren, um die verfügbare Hilfe zu durchsuchen.
+2. Falls Sie logische oder erweiterte Suchoperatoren verwenden, geben Sie in der Abfrage an, um welche es sich dabei handelt. Verwenden Sie jedoch keine Operatoren, um die verfügbare Hilfe zu durchsuchen.
 
     > [!NOTE]
     > Im Dialogfeld **Viewer-Optionen** können Sie zusätzliche Einstellungen angeben, z.B. die maximale Anzahl der Suchergebnisse, die gleichzeitig angezeigt werden sollen, oder ob englischsprachige Inhalte enthalten sein dürfen, wenn das primäre Gebietsschema nicht Englisch ist.
 
-3.  Drücken Sie die **EINGABETASTE**.
+3. Drücken Sie die **EINGABETASTE**.
 
      Eine Suche gibt standardmäßig maximal 200 Treffer zurück. Diese werden im Suchergebnisbereich angezeigt. Je nach Inhalt werden möglicherweise zusätzliche Versionsinformationen zu jedem Treffer angezeigt.
 
-4.  Um sich ein Thema anzeigen zu lassen, klicken Sie in der Ergebnisliste auf den Titel.
+4. Um sich ein Thema anzeigen zu lassen, klicken Sie in der Ergebnisliste auf den Titel.
 
 ## <a name="full-text-search-tips"></a>Tipps für die Volltextsuche
 
@@ -66,11 +66,11 @@ Sie können die Suchergebnisse weiter eingrenzen, indem Sie erweiterte Suchopera
 
 Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedrigeren Rang von Suchergebnissen in der Ergebnisliste auszuweisen. Allgemein:
 
-1.  Inhalte, die Suchwörter im Titel enthalten, haben einen höheren Rang als Inhalte, auf die das nicht zutrifft.
+1. Inhalte, die Suchwörter im Titel enthalten, haben einen höheren Rang als Inhalte, auf die das nicht zutrifft.
 
-2.  Inhalte die Suchwörter in großer Nähe zueinander enthalten, erhalten einen höheren Rang als Inhalte, auf die das nicht zugrifft.
+2. Inhalte die Suchwörter in großer Nähe zueinander enthalten, erhalten einen höheren Rang als Inhalte, auf die das nicht zugrifft.
 
-3.  Inhalte, die eine höhere Dichte der Suchwörter aufweisen, erhalten einen höheren Rang als Inhalte mit einer geringeren Dichte der Suchwörter.
+3. Inhalte, die eine höhere Dichte der Suchwörter aufweisen, erhalten einen höheren Rang als Inhalte mit einer geringeren Dichte der Suchwörter.
 
 ### <a name="stopwords"> Bei der Suche ignorierte Wörter (Stoppwörter) </a>
 

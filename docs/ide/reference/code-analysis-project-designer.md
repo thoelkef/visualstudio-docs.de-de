@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569724"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
 Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool erstellt Berichte zu Informationen zu Ihren Assemblys, wie z.B. Verstöße gegen die Programmier- und Entwurfsregeln, die in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegt sind.

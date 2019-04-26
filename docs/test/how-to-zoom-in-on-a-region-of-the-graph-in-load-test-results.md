@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821202"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen
 
@@ -51,17 +51,17 @@ Bevor Sie die Anzeige eines Diagramms durch Vergrößern bzw. Verkleinern oder e
 
 So zeigen Sie Diagramme an:
 
-1.  Führen Sie einen Auslastungstest bis zum Ende aus.
+1. Führen Sie einen Auslastungstest bis zum Ende aus.
 
-2.  Klicken Sie nach Abschluss des Auslastungstestlaufs im Dialogfeld zur Anzeige der Ergebnisse im Speicher für Auslastungstestergebnisse auf **Ja**.
+2. Klicken Sie nach Abschluss des Auslastungstestlaufs im Dialogfeld zur Anzeige der Ergebnisse im Speicher für Auslastungstestergebnisse auf **Ja**.
 
      \- oder –
 
      Zeigen Sie die Details eines zuvor ausgeführten Auslastungstests an. Weitere Informationen finden Sie unter [Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Klicken Sie auf **Diagramme**, wenn die Diagramme nicht angezeigt werden.
+3. Klicken Sie auf **Diagramme**, wenn die Diagramme nicht angezeigt werden.
 
-4.  Wenn keine Zoomleisten angezeigt werden, klicken Sie auf **Zoomsteuerelemente anzeigen**.
+4. Wenn keine Zoomleisten angezeigt werden, klicken Sie auf **Zoomsteuerelemente anzeigen**.
 
      Zwei Zoomleisten sind für jedes Diagramm verfügbar. Die Zoomleiste, durch die die vertikale Skala gesteuert wird, wird links vom Diagramm angezeigt. Die Zoomleiste, durch die horizontale Skala gesteuert wird, wird unterhalb des Diagramms angezeigt.
 
@@ -73,21 +73,21 @@ Wenn mehrere Diagramme angezeigt werden, können Sie sie synchronisieren, sodass
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>So synchronisieren Sie das Zoomen und Durchführen eines Bildlaufs
 
-1.  Klicken Sie im **Auslastungstest-Analyzer** auf **Horizontale Zoomsteuerelemente synchronisieren**.
+1. Klicken Sie im **Auslastungstest-Analyzer** auf **Horizontale Zoomsteuerelemente synchronisieren**.
 
      Wenn die Schaltfläche **Horizontale Zoomsteuerelemente synchronisieren** aktiviert ist und Sie in der Zeitskala eines einzelnen Diagramms zoomen und scrollen, wird auch für die Zeitskala der übrigen Diagramme ein Zoom- und Scrollvorgang ausgeführt.
 
-2.  Klicken Sie erneut auf **Horizontale Zoomsteuerelemente synchronisieren**.
+2. Klicken Sie erneut auf **Horizontale Zoomsteuerelemente synchronisieren**.
 
      Wenn die Schaltfläche **Horizontale Zoomsteuerelemente synchronisieren** nicht aktiviert ist und Sie in der Zeitskala eines einzelnen Diagramms zoomen und scrollen, wirkt sich dies nur auf dieses Diagramm aus.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>So zoomen und führen Sie einen Bildlauf für einen Bereich des Diagramms aus
 
-1.  Ziehen Sie auf der Zoomleiste unterhalb eines Diagramms den linken Handle nach rechts.
+1. Ziehen Sie auf der Zoomleiste unterhalb eines Diagramms den linken Handle nach rechts.
 
      Dadurch wird der letzte Teil des Testlaufs vergrößert. Entsprechend werden frühere Teile des Testlaufs vergrößert, wenn Sie den rechten Handle nach links ziehen.
 
-2.  Um die Ansicht eines bestimmten Bereichs zu vergrößern, schieben Sie beide Handles zur Mitte eines Diagramms.
+2. Um die Ansicht eines bestimmten Bereichs zu vergrößern, schieben Sie beide Handles zur Mitte eines Diagramms.
 
      Je näher die beiden Handles beieinander liegen, desto kürzere und detailliertere Segmente des Auslastungstests werden bei zunehmender Vergrößerung angezeigt.
 
@@ -107,9 +107,9 @@ Wenn mehrere Diagramme angezeigt werden, können Sie sie synchronisieren, sodass
 
 ### <a name="to-zoom-out"></a>So verkleinern Sie die Ansicht
 
-1.  Klicken Sie mit der rechten Maustaste auf ein vergrößertes Diagramm.
+1. Klicken Sie mit der rechten Maustaste auf ein vergrößertes Diagramm.
 
-2.  Wählen Sie im Kontextmenü **Horizontal verkleinern** aus.
+2. Wählen Sie im Kontextmenü **Horizontal verkleinern** aus.
 
      Die Ansicht wird verkleinert und enthält den gesamten Auslastungstestlauf.
 

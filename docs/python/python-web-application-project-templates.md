@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954814"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 
@@ -113,7 +113,7 @@ Die Vorlage **Bottle-Webprojekt** enthält Codebausteine, die die erforderliche 
 
 - Gruppe **Debugserverbefehl**:
   - **Befehl**: `bottle` (Modul)
-  - **Argumente** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumente**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debuggen verwenden.
 
@@ -147,5 +147,5 @@ Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbil
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Referenz für Python-Elementvorlagen](python-item-templates.md)
+- [Python item templates reference (Referenz für Python-Elementvorlagen)](python-item-templates.md)
 - [Veröffentlichen in Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

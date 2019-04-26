@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10db157aa5c75f1fde083ac12cd19fd1b02e91ec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970821"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference-Aufgabe
 Bestimmt alle Assemblys, die von den angegebenen Assemblys abhängig sind, inklusive Abhängigkeiten zweiter und `n`ter Ordnung.
@@ -81,25 +81,25 @@ Bestimmt alle Assemblys, die von den angegebenen Assemblys abhängig sind, inklu
 ## <a name="warnings"></a>Warnungen
  Die folgenden Warnungen werden protokolliert:
 
--   `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
+- `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
 
--   `ResolveAssemblyReference.SuggestedRedirects`
+- `ResolveAssemblyReference.SuggestedRedirects`
 
--   `ResolveAssemblyReference.FoundConflicts`
+- `ResolveAssemblyReference.FoundConflicts`
 
--   `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
+- `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
 
--   `ResolveAssemblyReference.UnifiedPrimaryReference`
+- `ResolveAssemblyReference.UnifiedPrimaryReference`
 
--   `ResolveAssemblyReference.PrimaryReference`
+- `ResolveAssemblyReference.PrimaryReference`
 
--   `ResolveAssemblyReference.UnifiedDependency`
+- `ResolveAssemblyReference.UnifiedDependency`
 
--   `ResolveAssemblyReference.UnificationByAutoUnify`
+- `ResolveAssemblyReference.UnificationByAutoUnify`
 
--   `ResolveAssemblyReference.UnificationByAppConfig`
+- `ResolveAssemblyReference.UnificationByAppConfig`
 
--   `ResolveAssemblyReference.UnificationByFrameworkRetarget`
+- `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>Anmerkungen
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).

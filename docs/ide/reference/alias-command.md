@@ -16,19 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e55b27ebc3a0a9690e04e19e53b65a7aa44834de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791843"
 ---
 # <a name="alias-command"></a>Befehl "Alias"
 Erstellt einen neuen Alias für einen vollständigen Befehl, einen vollständigen Befehl und seine Argumente oder für einen anderen Alias.
 
 > [!TIP]
 > Bei Eingabe von `>alias` ohne Argumente wird die aktuelle Liste der Aliase mit den jeweiligen Definitionen angezeigt.
-
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,7 +45,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  /reset ist optional. Setzt die Liste der vordefinierten Aliase auf die ursprünglichen Einstellungen zurück. Das bedeutet, dass alle vordefinierten Aliase wiederhergestellt und alle benutzerdefinierten Aliase entfernt werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Da Aliase Befehle darstellen, müssen sie sich am Anfang der Befehlszeile befinden.
 
  Wenn Sie diesen Befehl geben, sollten Sie die Schalter unmittelbar nach dem Befehl hinzufügen und nicht erst nach den Aliasen, da der Schalter andernfalls als Teil der Aliaszeichenfolge einbezogen wird.

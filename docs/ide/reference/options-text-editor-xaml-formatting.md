@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f92dc12dfb9e9f8fb1ec3d3910edf7102342f69b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969253"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Optionen, Text-Editor, XAML, Formatierung
 
@@ -44,13 +44,13 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 
 Die automatische Formatierung kann auftreten, wenn eines der folgenden Ereignisse erkannt wird.
 
--   Bei Vervollständigung des Endtags oder eines einfachen Tags
+- Bei Vervollständigung des Endtags oder eines einfachen Tags
 
--   Bei Vervollständigung des Starttags
+- Bei Vervollständigung des Starttags
 
--   Bei Einfügen aus der Zwischenablage
+- Bei Einfügen aus der Zwischenablage
 
--   Formatieren von Tastaturbefehlen
+- Formatieren von Tastaturbefehlen
 
 Sie können angeben, welche Ereignisse automatische Formatierung verursachen.
 
@@ -146,7 +146,6 @@ Leerzeilen im Elementinhalt werden nicht entfernt.
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 
