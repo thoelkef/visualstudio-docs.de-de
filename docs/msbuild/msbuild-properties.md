@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443592"
 ---
 # <a name="msbuild-properties"></a>MSBuild-Eigenschaften
 Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet werden können. Sie sind hilfreich, um Werte an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen wird.
@@ -54,7 +54,7 @@ Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet w
  Verwenden Sie die [Eigenschaftenfunktionen](../msbuild/property-functions.md) „System.Environment.GetEnvironmentVariable“, um den aktuellen Wert von Umgebungsvariablen aus einem generierten Tool abzurufen. Die bevorzugte Methode ist jedoch, den Aufgabenparameter <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> zu verwenden. Die Umgebungseigenschaften, die in diesem Zeichenfolgenarray festgelegt sind, können an das generierte Tool übergeben werden, ohne die Systemumgebungsvariablen zu beeinflussen.
 
 > [!TIP]
->  Nicht alle Umgebungsvariablen werden gelesen, um sie zu anfänglichen Eigenschaften zu machen. Jede Umgebungsvariable, deren Name kein gültiger MSBuild-Eigenschaftenname ist (z.B. "386"), wird ignoriert.
+> Nicht alle Umgebungsvariablen werden gelesen, um sie zu anfänglichen Eigenschaften zu machen. Jede Umgebungsvariable, deren Name kein gültiger MSBuild-Eigenschaftenname ist (z.B. "386"), wird ignoriert.
 
  Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>Erstellen von Eigenschaften während der Ausführung
  Eigenschaften außerhalb von `Target`-Elementen werden die Werte im Rahmen der Auswertungsphase eines Builds zugewiesen. Während der anschließenden Ausführungsphase können die Eigenschaften erstellt oder geändert werden, wie nachfolgend veranschaulicht:
 
--   Eigenschaften können von einer beliebigen Aufgabe ausgegeben werden. Das [Task](../msbuild/task-element-msbuild.md)-Element muss über ein untergeordnetes [Output](../msbuild/output-element-msbuild.md)-Element mit einem `PropertyName`-Attribut verfügen, um eine Eigenschaft auszugeben.
+- Eigenschaften können von einer beliebigen Aufgabe ausgegeben werden. Das [Task](../msbuild/task-element-msbuild.md)-Element muss über ein untergeordnetes [Output](../msbuild/output-element-msbuild.md)-Element mit einem `PropertyName`-Attribut verfügen, um eine Eigenschaft auszugeben.
 
--   Eigenschaften lassen sich mithilfe der [CreateProperty](../msbuild/createproperty-task.md)-Aufgabe ausgeben. Diese Verwendung ist veraltet.
+- Eigenschaften lassen sich mithilfe der [CreateProperty](../msbuild/createproperty-task.md)-Aufgabe ausgeben. Diese Verwendung ist veraltet.
 
--   Ab .NET Framework 3.5 können `Target`-Elemente mit Eigenschaftendeklarationen in `PropertyGroup`-Elementen enthalten sein.
+- Ab .NET Framework 3.5 können `Target`-Elemente mit Eigenschaftendeklarationen in `PropertyGroup`-Elementen enthalten sein.
 
 ## <a name="store-xml-in-properties"></a>Speichern von XML in Eigenschaften
  Eigenschaften können beliebigen XML-Code enthalten, um die Übergabe von Werten an Aufgaben oder das Anzeigen von Protokollierungsinformationen zu unterstützen. Im folgenden Beispiel wird die `ConfigTemplate`-Eigenschaft veranschaulicht, die über einen Wert verfügt, der XML- und andere Eigenschaftenverweise enthält. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ersetzt die Eigenschaftenverweise durch ihre jeweiligen Eigenschaftswerte. Eigenschaftswerte werden in der Reihenfolge zugewiesen, in der sie angezeigt werden. `$(MySupportedVersion)`, `$(MyRequiredVersion)` und `$(MySafeMode)` sollten in diesem Beispiel daher bereits definiert worden sein.

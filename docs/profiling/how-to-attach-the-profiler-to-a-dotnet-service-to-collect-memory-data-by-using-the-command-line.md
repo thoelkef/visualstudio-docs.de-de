@@ -9,21 +9,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 579579c24355a3bcc240a710c07f2163b5b5c231
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac577908dea4e8bdfa97c2c4ac7e009392010012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433860"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um den Profiler an einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst anzufügen und Speicherdaten zu erfassen. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.
 
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 >
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
  Um Arbeitsspeicherdaten von einem [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst zu erfassen, verwenden Sie das [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md)-Tool, um die entsprechenden Umgebungsvariablen auf dem Computer zu initialisieren, der den Dienst hostet. Der Computer muss neu gestartet werden, um ihn für die Profilerstellung zu konfigurieren.
 
@@ -68,7 +68,7 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
      Sie können mindestens eine der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.
 
    > [!NOTE]
-   >  Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.
+   > Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.
 
    | Option | Beschreibung |
    | - | - |
@@ -80,21 +80,20 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt. |
 
-
 8. Fügen Sie den Profiler an den Dienst an. Typ:
 
     **VSPerfCmd** [/attach](../profiling/attach.md) **:**{`PID`|`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
-   -   Geben Sie entweder die Prozess-ID oder den Prozessnamen des Diensts an. Die Prozess-IDs und die Namen aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
+   - Geben Sie entweder die Prozess-ID oder den Prozessnamen des Diensts an. Die Prozess-IDs und die Namen aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
-   -   **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
+   - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
  Wenn der Dienst ausgeführt wird, können Sie die *VSPerfCmd.exe*-Optionen verwenden, um das Schreiben der Daten in die Profilerdatendatei zu starten und zu beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
     |Option|Beschreibung|
     |------------|-----------------|
@@ -107,23 +106,23 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:
+1. Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:
 
-    -   Beenden Sie den Dienst.
+    - Beenden Sie den Dienst.
 
          - oder - 
 
-    -   Geben Sie **VSPerfCmd /detach** ein.
+    - Geben Sie **VSPerfCmd /detach** ein.
 
-2.  Schließen Sie den Profiler. Typ:
+2. Schließen Sie den Profiler. Typ:
 
      **VSPerfCmd /shutdown**
 
-3.  (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
+3. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
 
      **VSPerfClrEnv /globaloff**
 
-4.  Starten Sie den Computer neu.
+4. Starten Sie den Computer neu.
 
 ## <a name="see-also"></a>Siehe auch
 - [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

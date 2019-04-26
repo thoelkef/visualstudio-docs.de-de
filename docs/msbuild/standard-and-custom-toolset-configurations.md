@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440036"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 Ein MSBuild-Toolset enthält Verweise auf Aufgaben, Zielen und Tools, die Sie verwenden können, um ein Anwendungsprojekt zu erstellen. MSBuild umfasst ein Standardtoolset, Sie können jedoch auch benutzerdefinierte Toolsets erstellen. Informationen zum Angeben eines Toolsets finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
@@ -68,7 +68,7 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
  Die `VisualStudioVersion`-Buildeigenschaft gibt an, ob ein Unter-Toolset aktiv wird. Beispielsweise gibt der `VisualStudioVersion`-Wert "12.0" das MSBuild 12.0-Unter-Toolset an. Weitere Informationen finden Sie im Abschnitt zu Unter-Toolsets unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
->  Es wird empfohlen, diese Einstellungen nicht zu ändern. Sie können jedoch auch eigene Einstellungen hinzufügen und computerübergreifende benutzerdefinierte Toolsetdefinitionen festlegen, wie im nächsten Abschnitt beschrieben.
+> Es wird empfohlen, diese Einstellungen nicht zu ändern. Sie können jedoch auch eigene Einstellungen hinzufügen und computerübergreifende benutzerdefinierte Toolsetdefinitionen festlegen, wie im nächsten Abschnitt beschrieben.
 
 ## <a name="custom-toolset-definitions"></a>Benutzerdefinierte Toolsetdefinitionen
  Wenn ein Standardtoolset die Buildanforderungen nicht erfüllt, können Sie ein benutzerdefiniertes Toolset erstellen. Angenommen, Sie haben ein Buildlaborszenario, in dem Sie ein eigenes System zum Erstellen von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projekten benötigen. Mit einem benutzerdefinierten Toolset können Sie dem `ToolsVersion`-Attribut beim Erstellen von Projekten oder Ausführen von *MSBuild.exe* benutzerdefinierte Werte zuweisen. Auf diese Weise können Sie die `$(MSBuildToolsPath)`-Eigenschaft verwenden, um *TARGETS*-Dateien von diesem Verzeichnis zu importieren, sowie benutzerdefinierte Toolseteigenschaften definieren, die für jedes Projekt verwendet werden können, das dieses Toolset verwendet.
@@ -97,12 +97,12 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
 ```
 
 > [!NOTE]
->  Richtig gelesen ist `<configSections>` der erste Unterabschnitt im Abschnitt `<configuration>`.
+> Richtig gelesen ist `<configSections>` der erste Unterabschnitt im Abschnitt `<configuration>`.
 
  `ToolsetConfigurationSection` ist ein benutzerdefinierter Konfigurationsabschnitt, der von jedem MSBuild-Host für die benutzerdefinierte Konfiguration verwendet werden kann. Wenn Sie ein benutzerdefiniertes Toolset verwenden, muss ein Host keine Aktionen durchführen, um die Build-Engine zu initialisieren, sondern nur die Einträge in der Konfigurationsdatei zur Verfügung stellen. Indem Sie Einträge in der Registrierung definieren, können Sie computerübergreifende Toolsets angeben, die für *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und alle Hosts von MSBuild angewendet werden können.
 
 > [!NOTE]
->  Wenn in einer Konfigurationsdatei die Einstellungen für eine `ToolsVersion` definiert werden, die bereits in der Registrierung definiert ist, werden diese beiden Definitionen nicht zusammengeführt. Die Definition in der Konfigurationsdatei hat Priorität, und die Einstellungen in der Registrierung für diese `ToolsVersion` werden ignoriert.
+> Wenn in einer Konfigurationsdatei die Einstellungen für eine `ToolsVersion` definiert werden, die bereits in der Registrierung definiert ist, werden diese beiden Definitionen nicht zusammengeführt. Die Definition in der Konfigurationsdatei hat Priorität, und die Einstellungen in der Registrierung für diese `ToolsVersion` werden ignoriert.
 
  Die folgenden Eigenschaften sind für den Wert der `ToolsVersion`, die in Projekten verwendet wird, spezifisch:
 

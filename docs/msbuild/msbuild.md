@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437858"
 ---
 # <a name="msbuild"></a>MSBuild
 Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, ist aber nicht von Visual Studio abhängig. Wenn Sie *msbuild.exe* im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.
@@ -27,30 +27,30 @@ Das [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]
 
  Die folgenden Beispiele veranschaulichen, wann Sie Builds über die MSBuild-Befehlszeile anstelle der Visual Studio-IDE ausführen sollten.
 
--   Visual Studio ist nicht installiert. ([MSBuild ohne Visual Studio herunterladen](https://visualstudio.microsoft.com/downloads/?q=build+tools))
+- Visual Studio ist nicht installiert. ([MSBuild ohne Visual Studio herunterladen](https://visualstudio.microsoft.com/downloads/?q=build+tools))
 
--   Sie möchten die 64-Bit-Version von MSBuild verwenden. Diese Version von MSBuild ist normalerweise nicht erforderlich, ermöglicht MSBuild jedoch den Zugriff auf mehr Arbeitsspeicher.
+- Sie möchten die 64-Bit-Version von MSBuild verwenden. Diese Version von MSBuild ist normalerweise nicht erforderlich, ermöglicht MSBuild jedoch den Zugriff auf mehr Arbeitsspeicher.
 
--   Sie möchten einen Build in mehreren Prozessen ausführen. Sie können die IDE jedoch verwenden, um die gleichen Ergebnisse in Projekten in C++ und C# zu erzielen.
+- Sie möchten einen Build in mehreren Prozessen ausführen. Sie können die IDE jedoch verwenden, um die gleichen Ergebnisse in Projekten in C++ und C# zu erzielen.
 
--   Sie möchten das Buildsystem ändern. Möglicherweise möchten Sie z. B. die folgenden Aktionen aktivieren:
+- Sie möchten das Buildsystem ändern. Möglicherweise möchten Sie z. B. die folgenden Aktionen aktivieren:
 
-    -   Dateien vorverarbeiten, bevor sie den Compiler erreichen.
+    - Dateien vorverarbeiten, bevor sie den Compiler erreichen.
 
-    -   Kopieren Sie die Buildausgaben an eine andere Stelle.
+    - Kopieren Sie die Buildausgaben an eine andere Stelle.
 
-    -   Erstellen Sie komprimierte Dateien aus den Buildausgaben.
+    - Erstellen Sie komprimierte Dateien aus den Buildausgaben.
 
-    -   Führen Sie einen Nachverarbeitungsschritt durch. Beispielsweise können Sie eine Assembly mit einer anderen Version stempeln.
+    - Führen Sie einen Nachverarbeitungsschritt durch. Beispielsweise können Sie eine Assembly mit einer anderen Version stempeln.
 
 Sie können Code in der Visual Studio-IDE schreiben, aber Builds mit MSBuild ausführen. Des Weiteren können Sie Code in der IDE auf dem Entwicklungscomputer erstellen, jedoch eine MSBuild-Befehlszeile verwenden, um Code zu erstellen, der von mehreren Entwicklern integriert wird.
 
 > [!NOTE]
->  Sie können Team Foundation Build verwenden, um die Anwendung automatisch zu kompilieren, zu testen und bereitzustellen. Das Buildsystem kann Builds automatisch ausführen, wenn Entwickler Code z. B. als Teil einer fortlaufenden Integrationsstrategie oder gemäß einem Zeitplan (z. B. bei einem Build für einen nächtlichen Buildüberprüfungstest) einchecken. Team Foundation Build kompiliert den Code mithilfe von MSBuild. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+> Sie können Team Foundation Build verwenden, um die Anwendung automatisch zu kompilieren, zu testen und bereitzustellen. Das Buildsystem kann Builds automatisch ausführen, wenn Entwickler Code z. B. als Teil einer fortlaufenden Integrationsstrategie oder gemäß einem Zeitplan (z. B. bei einem Build für einen nächtlichen Buildüberprüfungstest) einchecken. Team Foundation Build kompiliert den Code mithilfe von MSBuild. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
  Dieses Thema enthält eine Übersicht über MSBuild. Ein Einführungstutorial finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-##  <a name="use-msbuild-at-a-command-prompt"></a>Verwenden von MSBuild an einer Eingabeaufforderung
+## <a name="use-msbuild-at-a-command-prompt"></a>Verwenden von MSBuild an einer Eingabeaufforderung
  Übergeben Sie eine Projektdatei mit den entsprechenden Befehlszeilenoptionen an *MSBuild.exe*, um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] an einer Eingabeaufforderung auszuführen. Über Befehlszeilenoptionen können Sie Eigenschaften festlegen, bestimmte Ziele ausführen und weitere Optionen für die Steuerung des Buildprozesses festlegen. Beispielsweise verwenden Sie die folgende Befehlszeilensyntax zum Erstellen der Datei *MyProj.proj*, deren `Configuration`-Eigenschaft auf `Debug` festgelegt ist.
 
 ```cmd
@@ -60,14 +60,14 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  Weitere Informationen zu Befehlszeilenoptionen in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] finden Sie in der [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
 
 > [!IMPORTANT]
->  Bevor Sie ein Projekt herunterladen, bestimmen Sie die Vertrauenswürdigkeit des Codes.
+> Bevor Sie ein Projekt herunterladen, bestimmen Sie die Vertrauenswürdigkeit des Codes.
 
-##  <a name="project-file"></a>Projektdatei
+## <a name="project-file"></a>Projektdatei
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet ein einfaches und erweiterbares XML-basiertes Projektdateiformat. Mithilfe des [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateiformats können Entwickler die zu erstellenden Elemente beschreiben. Darüber hinaus lässt sich damit beschreiben, wie diese Elemente für verschiedene Betriebssysteme und Konfigurationen erstellt werden müssen. Zusätzlich können Entwickler im Projektdateiformat wiederverwendbare Buildregeln erstellen, die in separate Dateien unterteilt werden können, um Builds im Produkt über verschiedene Projekte hinweg konsistent auszuführen.
 
  In den folgenden Abschnitten werden einige der Grundelemente des [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateiformats beschrieben. Ein Tutorial zum Erstellen einer einfachen Projektdatei finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-###  <a name="BKMK_Properties"></a> Eigenschaften
+### <a name="BKMK_Properties"></a> Eigenschaften
  Eigenschaften stellen Schlüssel/Wert-Paare dar, die zur Konfiguration von Builds verwendet werden können. Eigenschaften werden deklariert, indem ein Element mit dem Namen der jeweiligen Eigenschaft als untergeordnetes Element eines [PropertyGroup](../msbuild/propertygroup-element-msbuild.md)-Elements erstellt wird. Durch den folgenden Code wird beispielsweise die Eigenschaft `BuildDir` mit dem Wert `Build` erstellt.
 
 ```xml
@@ -86,7 +86,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild Properties (MSBuild-Eigenschaften)](../msbuild/msbuild-properties.md).
 
-###  <a name="BKMK_Items"></a> Elemente
+### <a name="BKMK_Items"></a> Elemente
  Elemente sind Eingaben in das Buildsystem und stellen in der Regel Dateien dar. Elemente werden auf der Grundlage benutzerdefinierter Elementnamen in Elementtypen gruppiert. Diese Elementtypen können als Parameter für Aufgaben verwendet werden, die mithilfe der einzelnen Elemente die Schritte des Buildprozesses ausführen.
 
  In der Projektdatei werden Elemente deklariert, indem ein Element mit dem Namen des jeweiligen Elementtyps als untergeordnetes Element eines [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Elements erstellt wird. Im folgenden Code wird z. B. der Elementtyp `Compile` mit zwei Dateien erstellt.
@@ -111,7 +111,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Elemente können mit Platzhalterzeichen deklariert werden und zusätzliche Metadaten für erweiterte Buildszenarios enthalten. Weitere Informationen zu Elementen finden Sie unter [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente).
 
-###  <a name="BKMK_Tasks"></a> Aufgaben
+### <a name="BKMK_Tasks"></a> Aufgaben
  Aufgaben sind Einheiten ausführbaren Codes, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Aufgaben können wiederverwendet werden, auch von verschiedenen Entwicklern in unterschiedlichen Projekten.
 
  Die Ausführungslogik einer Aufgabe wird in verwaltetem Code geschrieben und [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mithilfe des [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements zugeordnet. Sie können eine eigene Aufgabe schreiben, indem Sie einen verwalteten Typ erstellen, der die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen zum Erstellen von Aufgaben finden Sie unter [Schreiben von Aufgaben](../msbuild/task-writing.md).
@@ -128,7 +128,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).
 
-###  <a name="BKMK_Targets"></a>Ziele
+### <a name="BKMK_Targets"></a>Ziele
  Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert und Abschnitte der Projektdatei als Einstiegspunkte in den Buildprozess verfügbar gemacht. Ziele werden oft in logischen Abschnitten gruppiert, um ihre Lesbarkeit zu erhöhen und Erweiterungen zu ermöglichen. Wenn die Buildschritte in Ziele unterteilt werden, können Sie einen Teil des Buildprozesses in anderen Zielen aufrufen, ohne diesen Codeabschnitt in jedes Ziel kopieren zu müssen. Wenn mehrere Einstiegspunkte in den Buildprozess die Erstellung von Verweisen erfordern, können Sie beispielsweise ein Ziel erstellen, durch das Verweise erstellt werden, und dieses Ziel anschließend über jeden Einstiegspunkt ausführen, für den es erforderlich ist.
 
  Ziele werden in der Projektdatei mithilfe des [Target](../msbuild/target-element-msbuild.md)-Elements deklariert. Der folgende Code erstellt z.B. ein Ziel mit dem Namen `Compile`, das anschließend die [Csc](../msbuild/csc-task.md)-Aufgabe mit der im vorangehenden Beispiel deklarierten Elementliste aufruft.
@@ -141,7 +141,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  In fortgeschritteneren Szenarios können Ziele die zwischen verschiedenen Zielen bestehenden Beziehungen beschreiben und Abhängigkeitsanalysen durchführen. Wenn das jeweilige Ziel aktuell ist, können daher ganze Bereiche des Buildprozesses übersprungen werden. Weitere Informationen zu Zielen finden Sie unter [Targets (MSBuild-Ziele)](../msbuild/msbuild-targets.md).
 
-##  <a name="build-logs"></a>Buildprotokolle
+## <a name="build-logs"></a>Buildprotokolle
  Sie können Buildfehler, Warnungen und Meldungen in der Konsole oder auf anderen Ausgabegeräten protokollieren. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) und [Protokollierung in MSBuild](../msbuild/logging-in-msbuild.md).
 
 ## <a name="use-msbuild-in-visual-studio"></a>Verwenden von MSBuild in Visual Studio
@@ -149,20 +149,20 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-##  <a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen
+## <a name="BKMK_Multitargeting"></a>Festlegen von Zielversionen
  Mit Visual Studio können Sie eine Anwendung zur Ausführung in verschiedenen Versionen von .NET Framework kompilieren. Beispielsweise können Sie die gleiche Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform und für die Ausführung in .NET Framework 4.5 auf einer 64-Bit-Plattform kompilieren. Die Möglichkeit, für mehr als ein Framework zu kompilieren, wird Festlegung von Zielversionen genannt.
 
  In Folgenden sind einige Vorteile der Festlegung auf mehrere Zielversionen aufgeführt:
 
--   Sie können Anwendungen entwickeln, die auf frühere Versionen von .NET Framework abzielen, z. B. Version 2.0, 3.0 oder 3.5.
+- Sie können Anwendungen entwickeln, die auf frühere Versionen von .NET Framework abzielen, z. B. Version 2.0, 3.0 oder 3.5.
 
--   Sie können neben .NET Framework auch auf andere Frameworks abzielen, z. B. auf das Silverlight-Framework.
+- Sie können neben .NET Framework auch auf andere Frameworks abzielen, z. B. auf das Silverlight-Framework.
 
--   Sie können auf ein *Frameworkprofil* abzielen, das einer vordefinierten Teilmenge eines Zielframeworks entspricht.
+- Sie können auf ein *Frameworkprofil* abzielen, das einer vordefinierten Teilmenge eines Zielframeworks entspricht.
 
--   Sie können ebenfalls auf neu veröffentlichte Service Packs für die aktuelle .NET Framework-Version abzielen.
+- Sie können ebenfalls auf neu veröffentlichte Service Packs für die aktuelle .NET Framework-Version abzielen.
 
--   Durch die Festlegung von Zielversionen wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.
+- Durch die Festlegung von Zielversionen wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.
 
 Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multitargeting-overview.md) (Festlegen von Zielversionen).
 

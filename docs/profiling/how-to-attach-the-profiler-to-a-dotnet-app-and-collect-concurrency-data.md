@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bf1194b2ffede351dab214c6191a599d725db3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b4703b2dd86056b2c79b8e50f8169a0b9fd9648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431529"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Parallelitätsdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine ausgeführte eigenständige .NET Framework-(Client-)Anwendung angefügt wird und wie Parallelitätsdaten zu Prozessen und Threads gesammelt werden.
 
 > [!NOTE]
->  Informationen zum Pfad zu den Profilerstellungstools finden Sie unter [Exemplarische Vorgehensweise: Verwenden von Profiler-APIs](../profiling/walkthrough-using-profiler-apis.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Informationen zum Pfad zu den Profilerstellungstools finden Sie unter [Exemplarische Vorgehensweise: Verwenden von Profiler-APIs](../profiling/walkthrough-using-profiler-apis.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads für Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
  Während der Profiler an die Anwendung angefügt ist, können Sie die Datensammlung anhalten und fortsetzen. Der Profiler darf nicht mehr an die Anwendung angefügt sein und muss explizit beendet werden, um eine Profilerstellungssitzung zu beenden.
 
@@ -28,9 +28,9 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>So fügen Sie den Profiler an eine aktive .NET Framework-Anwendung an
 
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.
+1. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-2.  Starten Sie den Profiler. Typ:
+2. Starten Sie den Profiler. Typ:
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency  /output:** `OutputFile` [`Options`]
 
@@ -44,24 +44,24 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
     |[/automark](../profiling/automark.md) **:** `Interval`|Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.|
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt.|
 
-3.  Starten Sie die Zielanwendung auf die gewohnte Weise.
+3. Starten Sie die Zielanwendung auf die gewohnte Weise.
 
-4.  Fügen Sie den Profiler an die Zielanwendung an. Typ:
+4. Fügen Sie den Profiler an die Zielanwendung an. Typ:
 
      **VSPerfCmd /attach:** `PID` [**/lineoff**] [**/targetclr:**`Version`]
 
-    -   `PID` gibt die Prozess-ID der Zielanwendung an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
+    - `PID` gibt die Prozess-ID der Zielanwendung an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
-    -   [/lineoff](../profiling/lineoff.md) deaktiviert die Erfassung der Zeilennummerndaten.
+    - [/lineoff](../profiling/lineoff.md) deaktiviert die Erfassung der Zeilennummerndaten.
 
-    -   [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
+    - [/targetclr](../profiling/targetclr.md) **:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
  Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit Option *VSPerfCmd.exe* starten und beenden. Durch die Steuerung der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Mit den folgenden *VSPerfCmd.exe*-Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
+- Mit den folgenden *VSPerfCmd.exe*-Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
     |Option|Beschreibung|
     |------------|-----------------|
@@ -74,14 +74,14 @@ In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilent
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:
+1. Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:
 
-    -   Geben Sie **VSPerfCmd /detach** ein.
+    - Geben Sie **VSPerfCmd /detach** ein.
 
-         - oder -
+         - oder - 
 
-    -   Schließen Sie die Zielanwendung.
+    - Schließen Sie die Zielanwendung.
 
-2.  Schließen Sie den Profiler. Typ:
+2. Schließen Sie den Profiler. Typ:
 
      VSPerfCmd[/shutdown](../profiling/shutdown.md)
