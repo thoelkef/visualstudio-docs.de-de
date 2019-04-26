@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998232"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Erweitern von Visual Studio für Mac
 
@@ -81,10 +81,10 @@ Befehlserweiterungen werden durch das Hinzufügen von Einträgen zum Erweiterung
 
 Der Erweiterungsknoten enthält ein path-Attribut, das den Erweiterungspunkt angibt, in den er eingebettet ist, in diesem Fall `/MonoDevelop/Ide/Commands/Edit`. Darüber hinaus fungiert er als übergeordneter Knoten für den Befehl. Der Befehlsknoten verfügt über die folgenden Attribute:
 
-*   **id**: Gibt den Bezeichner für diesen Befehl an. Befehlsbezeichner müssen als Enumerationsmember deklariert werden und werden dazu verwendet, Befehle mit Befehlselementen zu verbinden.
-*   **_label**: Der Text, der in Menüs angezeigt werden soll.
-*   **_description**: Der Text, der als QuickInfo für Symbolleistenschaltflächen angezeigt werden soll.
-*   **defaultHandler**: Gibt die `CommandHandler`-Klasse an, die den Befehl steuert.
+* **id**: Gibt den Bezeichner für diesen Befehl an. Befehlsbezeichner müssen als Enumerationsmember deklariert werden und werden dazu verwendet, Befehle mit Befehlselementen zu verbinden.
+* **_label**: Der Text, der in Menüs angezeigt werden soll.
+* **_description**: Der Text, der als QuickInfo für Symbolleistenschaltflächen angezeigt werden soll.
+* **defaultHandler**: Gibt die `CommandHandler`-Klasse an, die den Befehl steuert.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ Dadurch werden der Befehl und das Befehlselement verknüpft: Das Befehlselement 
 
 Informationen zum Umfang der Bereiche, die für die Entwicklung verfügbar sind, finden Sie unter [Extension Tree Reference (Referenz zur Erweiterungsstruktur)](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) und [API Overview (API-Übersicht)](http://monodevelop.com/Developers/Articles/API_Overview). Beim Erstellen von ausgeweiteten Erweiterungspaketen lesen Sie sich auch [Entwicklerartikel](http://monodevelop.com/Developers/Articles) durch. Nachfolgend finden Sie eine partielle Liste von Bereichen für die Anpassung:
 
-*   Pads
-*   Tastenzuordnungsschemas
-*   Richtlinien
-*   Codeformatierungsprogramme
-*   Projektdateiformate
-*   Panel „Einstellungen“
-*   Panel „Optionen“
-*   Debuggerprotokolle
-*   Debuggerschnellansichten
-*   Arbeitsbereichlayouts
-*   Projektmappenpad-Strukturknoten
-*   Seitenränder des Quellcode-Editors
-*   Unittest-Engines
-*   Codegeneratoren
-*   Codeausschnitte
-*   Zielframeworks
-*   Ziellaufzeit
-*   VCS-Back-Ends
-*   Umgestaltung
-*   Ausführungshandler
-*   Syntaxhervorhebung
+* Pads
+* Tastenzuordnungsschemas
+* Richtlinien
+* Codeformatierungsprogramme
+* Projektdateiformate
+* Panel „Einstellungen“
+* Panel „Optionen“
+* Debuggerprotokolle
+* Debuggerschnellansichten
+* Arbeitsbereichlayouts
+* Projektmappenpad-Strukturknoten
+* Seitenränder des Quellcode-Editors
+* Unittest-Engines
+* Codegeneratoren
+* Codeausschnitte
+* Zielframeworks
+* Ziellaufzeit
+* VCS-Back-Ends
+* Umgestaltung
+* Ausführungshandler
+* Syntaxhervorhebung
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 

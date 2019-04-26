@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817787"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) umfasst die folgenden Eigenschaften:
@@ -50,7 +50,6 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
    Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
 
    ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Markieren
 
@@ -82,19 +81,19 @@ Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die si
 
 **Automatische Strukturierung und Einrückung des Programmcodes:** Der Text-Editor formatiert den Code entsprechend neu. Wenn diese Option aktiviert ist, führt der Code-Editor die folgenden Aufgaben durch:
 
--   Ausrichten des Codes an der richtigen Tabulatorposition
+- Ausrichten des Codes an der richtigen Tabulatorposition
 
--   Ändern der Groß-/Kleinschreibung von Schlüsselwörtern, Variablen und Objekten in die richtige Schreibweise
+- Ändern der Groß-/Kleinschreibung von Schlüsselwörtern, Variablen und Objekten in die richtige Schreibweise
 
--   Hinzufügen eines fehlenden `Then` zu einer `If...Then`-Anweisung
+- Hinzufügen eines fehlenden `Then` zu einer `If...Then`-Anweisung
 
--   Hinzufügen von Klammern zu Funktionsaufrufen
+- Hinzufügen von Klammern zu Funktionsaufrufen
 
--   Hinzufügen fehlender Anführungszeichen am Ende von Zeichenfolgen
+- Hinzufügen fehlender Anführungszeichen am Ende von Zeichenfolgen
 
--   Neuformatieren der exponentiellen Notation
+- Neuformatieren der exponentiellen Notation
 
--   Neuformatieren von Datumsangaben
+- Neuformatieren von Datumsangaben
 
 **Automatisches Einfügen von End-Konstruktionen**
 

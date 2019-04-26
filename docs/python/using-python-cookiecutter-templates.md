@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832154"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
@@ -82,7 +82,7 @@ Cookiecutter-Optionen stehen über **Extras** > **Optionen** > **Cookiecutter** 
 | Option | Beschreibung |
 | --- | --- |
 | **URL des empfohlenen Feeds** | Der Speicherort des empfohlenen Vorlagenfeeds. Hierbei kann es sich um eine URL oder den Pfad zu einer lokalen Datei handeln. Lassen Sie die URL leer, um den standardmäßigen, von Microsoft kuratierten Feed zu verwenden. Der Feed bietet eine einfache, durch Zeilenumbrüche getrennte Liste mit Vorlagenspeicherorten. Um Änderungen am kuratierten Feed anzufordern, führen Sie eine Pullanforderung in der [Quelle in GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) aus. |
-| **Hilfe anzeigen** | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
+| **Anzeigen von Hilfe** | Steuert die Sichtbarkeit der Hilfeinformationsleiste am oberen Rand des Cookiecutter-Fensters. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Optimieren von Cookiecutter-Vorlagen für Visual Studio
 

@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445741"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Übersicht über die Festlegung von Zielversionen mit MSBuild
 Mit MSBuild können Sie eine Anwendung kompilieren, die auf verschiedenen Versionen von .NET Framework und auf verschiedenen Systemplattformen ausgeführt werden kann. Beispielsweise können Sie die gleiche Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform und für die Ausführung in .NET Framework 4.5 auf einer 64-Bit-Plattform kompilieren.
 
 > [!IMPORTANT]
->  Trotz des Namens „Festlegung von Zielversionen“ hat ein Projekt immer nur jeweils ein Framework und eine Plattform als Ziel.
+> Trotz des Namens „Festlegung von Zielversionen“ hat ein Projekt immer nur jeweils ein Framework und eine Plattform als Ziel.
 
  Dies sind einige Funktionen von MSBuild für die Festlegung von Zielversionen:
 
--   Sie können Anwendungen entwickeln, die auf frühere Versionen von .NET Framework abzielen, z. B. Version 2.0, 3.5 oder 4.
+- Sie können Anwendungen entwickeln, die auf frühere Versionen von .NET Framework abzielen, z. B. Version 2.0, 3.5 oder 4.
 
--   Sie können neben .NET Framework auch auf andere Frameworks abzielen, z. B. auf das Silverlight-Framework.
+- Sie können neben .NET Framework auch auf andere Frameworks abzielen, z. B. auf das Silverlight-Framework.
 
--   Sie können auf ein *Frameworkprofil* abzielen, das einer vordefinierten Teilmenge eines Zielframeworks entspricht.
+- Sie können auf ein *Frameworkprofil* abzielen, das einer vordefinierten Teilmenge eines Zielframeworks entspricht.
 
--   Sie können ebenfalls auf neu veröffentlichte Service Packs für die aktuelle .NET Framework-Version abzielen.
+- Sie können ebenfalls auf neu veröffentlichte Service Packs für die aktuelle .NET Framework-Version abzielen.
 
--   Durch die Festlegung von Zielversionen mit MSBuild wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.
+- Durch die Festlegung von Zielversionen mit MSBuild wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.
 
 ## <a name="target-framework-and-platform"></a>Zielframework und -plattform
  Ein *Zielframework* ist die Version von .NET Framework, in der ein erstelltes Projekt ausgeführt werden soll, und eine *Zielplattform* ist die Systemplattform, auf der das erstellte Projekt ausgeführt werden soll.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist (x86). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet. Weitere Informationen finden Sie unter [Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).

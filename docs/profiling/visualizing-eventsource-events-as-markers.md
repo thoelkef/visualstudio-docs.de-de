@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422091"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marker angezeigt werden. Zudem kann festgelegt werden, wie die Marker angezeigt werden. Registrieren Sie die ETW-Anbieter-GUID über das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), um die EventSource-Marker anzuzeigen. In der Nebenläufigkeitsschnellansicht werden für die Darstellung von EventSource-Ereignissen als [Flag-Marker](../profiling/flag-markers.md), [Bereichsmarker](../profiling/span-markers.md) und [Meldungsmarker](../profiling/message-markers.md) Standardkonventionen verwendet. Durch Hinzufügen von benutzerdefinierten Feldern zu den Ereignissen, können Sie festlegen, wie EventSource-Ereignisse angezeigt werden. Weitere Informationen zu Markern finden Sie unter [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md). Weitere Informationen zu EventSource-Ereignissen finden Sie unter <xref:System.Diagnostics.Tracing>.
@@ -23,11 +23,11 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 
 ### <a name="marker-type"></a>Markertyp
 
-1.  Ereignisse mit dem [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start oder win:Stop werden als Anfang bzw. Ende eines Bereichs behandelt.  Geschachtelte oder überlappende Bereiche können nicht angezeigt werden. Ereignispaare, die mit einem Thread beginnen und mit einem anderen enden, können nicht angezeigt werden.
+1. Ereignisse mit dem [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start oder win:Stop werden als Anfang bzw. Ende eines Bereichs behandelt.  Geschachtelte oder überlappende Bereiche können nicht angezeigt werden. Ereignispaare, die mit einem Thread beginnen und mit einem anderen enden, können nicht angezeigt werden.
 
-2.  Ein Ereignis, mit einem anderen Opcode als win:Start oder win:Stop wird als Flag-Marker behandelt, sofern für die [Ebene](/windows/desktop/WES/defining-severity-levels) (Feld EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) nicht win:Verbose oder höher festgelegt ist.
+2. Ein Ereignis, mit einem anderen Opcode als win:Start oder win:Stop wird als Flag-Marker behandelt, sofern für die [Ebene](/windows/desktop/WES/defining-severity-levels) (Feld EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) nicht win:Verbose oder höher festgelegt ist.
 
-3.  In allen anderen Fällen wird das Ereignis als Meldung behandelt.
+3. In allen anderen Fällen wird das Ereignis als Meldung behandelt.
 
 ### <a name="importance"></a>Wichtigkeit
  In der folgenden Tabelle wird das Verhältnis zwischen Ereignisebene und Markerwichtigkeit definiert.
@@ -91,7 +91,7 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
  Verwenden Sie das Feld cvSpanId, eine ganze Zahl, um Ereignisse passend zusammenzustellen. Der Wert der einzelnen Paare aus Start-/Stoppereignissen, die einen Bereich darstellen, müssen eindeutig sein. Für nebenläufigen Code müssen in der Regel Synchronisierungsprimitive wie <xref:System.Threading.Interlocked.Exchange%2A> verwendet werden, um sicherzustellen, dass der Schlüssel (der für CvSpanID verwendete Wert) richtig angegeben wird.
 
 > [!NOTE]
->  Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.
+> Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

@@ -4,17 +4,19 @@ description: Erfahren Sie, wie Rollen für Azure-Clouddienste mithilfe von Visua
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552449"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -48,6 +50,8 @@ Sie können einen Azure-Clouddienst vom Projektmappen-Explorer in Visual Studio 
 
     > [!IMPORTANT]
     > Wenn Sie eine bestimmte Dienstkonfiguration auswählen, sind einige Eigenschaften deaktiviert, da sie nur für alle Konfigurationen festgelegt werden können. Um diese Eigenschaften zu bearbeiten, müssen Sie **Alle Konfigurationen** auswählen.
+    >
+    >
 
     ![Dienstkonfigurationsliste für einen Azure-Clouddienst](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -255,7 +259,7 @@ Der folgende Code zeigt ein Beispiel für das Schreiben einer Textdatei in den l
 
 Um die durch den Code im vorhergehenden Abschnitt erstellte Datei anzuzeigen, führen Sie die folgenden Schritte aus:
 
-1.  Klicken Sie im Windows-Infobereich mit der rechten Maustaste auf das Azure-Symbol, und wählen Sie dann im Kontextmenü **Serveremulator-UI anzeigen** aus.
+1. Klicken Sie im Windows-Infobereich mit der rechten Maustaste auf das Azure-Symbol, und wählen Sie dann im Kontextmenü **Serveremulator-UI anzeigen** aus.
 
     ![Azure-Serveremulator anzeigen](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

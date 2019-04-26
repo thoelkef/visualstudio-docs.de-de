@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Häufig gestellte Fragen zur Migration der Volume License Service Center-Verwaltung
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427974"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration der Verwaltung von Visual Studio-Abonnements
 
@@ -44,7 +44,7 @@ Ja.  In diesem Prozess gibt es zwei Phasen. Durch das Einrichten (oder Onboardin
 ### <a name="what-is-the-onboarding-process"></a>Was ist der Onboardingprozess?
 Eine E-Mail wird an die primären Kontakte und Ansprechpartner gesendet, um sie aufzufordern, den Onboardingprozess durchzuführen.
 Anweisungen für den Prozess finden Sie weiter unten.
-1. **Ermitteln Sie Ihre öffentliche Kundennummer, und melden Sie sich an:**
+1. **Die eigene öffentliche Kundennummer ermitteln und sich damit anmelden:**
 
     a. Die E-Mail an die primären Kontakte und Ansprechpartner enthält jeweils einen persönlichen Link sowie die letzten drei Ziffern ihrer öffentlichen Kundennummer (Public Customer Number, PCN).*
 
@@ -54,7 +54,7 @@ Anweisungen für den Prozess finden Sie weiter unten.
 
     d. Als Nächstes müssen sie die PCN eingeben.
 
-2. **Richten Sie Ihre Administratoren ein:**
+2. **Ihre Administratoren einrichten:**
 
     Nach dem Eingeben der PCN wird die Seite aufgerufen, auf sie der Superadministratoren und Administratoren (vormals Abonnement-Manager) hinzufügen können. Im Idealfall sollte dies vor dem Migrationsdatum Ihrer Organisation durchgeführt werden, damit bei der Verwaltung Ihrer Abonnements keine Unterbrechungen auftreten.
 

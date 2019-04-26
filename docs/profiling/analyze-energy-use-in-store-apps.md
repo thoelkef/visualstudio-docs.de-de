@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777185"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analysieren des Energieverbrauchs in UWP-Apps
 
@@ -64,6 +64,7 @@ Ein vollständig geladener Akku in einem Tablet verfügt z. B. über eine bestim
 
 Beispielcode finden Sie im Windows SDK-Beispiel [LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
+::: moniker range="vs-2017"
 **Hinzufügen von Markierungen zu JavaScript-Code**
 
 Um Benutzermarkierungen hinzuzufügen, fügen Sie Ihrem Code an den gewünschten Positionen den folgenden Code hinzu:
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* ist eine Zeichenfolge, die die Meldung enthält, die in der QuickInfo der Benutzermarkierung angezeigt werden soll.
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>Konfigurieren der Umgebung für die Profilerstellung
  Um gute Schätzungen zu erhalten, sollten Sie für den Energieverbrauch der App auf einem Gerät mit geringer Leistung, das durch Akkus betrieben wird, ein Profil erstellen. Da Visual Studio auf den meisten dieser Geräte nicht ausgeführt wird, müssen Sie den Visual Studio-Computer mithilfe der Visual Studio-Remotetools mit dem Gerät verbinden. Um eine Verbindung mit einem Remotegerät herzustellen, müssen Sie sowohl das Visual Studio-Projekt und als auch das Remotegerät konfigurieren. Weitere Informationen finden Sie unter [Ausführen von UWP-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).
@@ -86,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Sammeln von Energieprofildaten für die App
 
-1.  Wählen Sie im Menü **Debuggen** die Option **Diagnose ohne Debugging starten**.
+1. Wählen Sie im Menü **Debuggen** die Option **Diagnose ohne Debugging starten**.
 
      ![„Energieverbrauch“ im Diagnosehub auswählen](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Wählen Sie **Energieverbrauch** und dann **Starten**aus.
+2. Wählen Sie **Energieverbrauch** und dann **Starten**aus.
 
     > [!NOTE]
     > Wenn Sie den Profiler **Energieverbrauch** starten, wird möglicherweise das Fenster **Benutzerkontensteuerung** angezeigt, im dem Sie zur Eingabe Ihrer Berechtigung zur Ausführung von *VsEtwCollector.exe* aufgefordert werden. Klicken Sie auf **Ja**.
 
-3.  Führen Sie Ihre App aus, um Daten zu sammeln.
+3. Führen Sie Ihre App aus, um Daten zu sammeln.
 
-4.  Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.
+4. Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.
 
      ![Sammeln von Daten beenden](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Weitere Ressourcen
 
-- In den Abschnitten **Verbindungsstatus und Kostenverwaltung** für [C#/VB/C++ und XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) und [JavaScript und HTML](/previous-versions/windows/apps/hh452983(v=win.10)) werden die Windows-APIs beschrieben, die Informationen zur Netzwerkkonnektivität bereitstellen, die Ihre App nutzen kann, damit Sie die Kosten für den Netzwerkdatenverkehr reduzieren können.
+- In den Abschnitten **Verbindungsstatus und Kostenverwaltung** für [C#, VB, C++ und XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) werden die Windows-APIs beschrieben, die Informationen zur Netzwerkkonnektivität bereitstellen, die Ihre App nutzen kann, damit Sie die Kosten für den Netzwerkdatenverkehr reduzieren können.
 
    Mit dem Visual Studio-Simulator für UWP-Apps können Sie Datenverbindungseigenschaften der APIs für Netzwerkinformationen simulieren. Weitere Informationen finden Sie unter [Ausführen von UWP-Apps im Simulator](../debugger/run-windows-store-apps-in-the-simulator.md).
 
-- Mit den Tools **JavaScript-Funktionstiming** und **CPU-Auslastung** können Sie die CPU-Last reduzieren, wenn diese von ineffizienten Funktionen verursacht wird. Weitere Informationen finden Sie unter [Profilerstellung für die Anwendungsleistung in Visual Studio](../profiling/beginners-guide-to-performance-profiling.md).
+- Mit den Tools für die **CPU-Auslastung** können Sie die CPU-Last reduzieren, wenn diese von ineffizienten Funktionen verursacht wird. Weitere Informationen finden Sie unter [Profilerstellung für die Anwendungsleistung in Visual Studio](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Siehe auch
 

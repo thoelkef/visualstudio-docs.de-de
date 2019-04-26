@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415997"
 ---
 # <a name="windows-script-engines"></a>Windows Script-Engines
 Um eine Windows Script-Engine zu implementieren, erstellen Sie ein OLE COM-Objekt, das die folgenden Schnittstellen unterstützt.  
@@ -31,7 +31,7 @@ Um eine Windows Script-Engine zu implementieren, erstellen Sie ein OLE COM-Objek
 |IPersist*|Bietet Persistenzunterstützung. Die Implementierung mindestens einer der folgenden Schnittstellen ist erforderlich, wenn [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) nicht implementiert ist.<br /><br /> IPersistStorage: Bietet Unterstützung für das Attribut „DATA={url}“ im OBJECT-Tag.<br /><br /> IPersistStreamInit: Bietet Unterstützung für das gleiche Attribut wie `IPersistStorage` sowie für das Attribut „DATA="string-encoded byte stream"“ im OBJECT-Tag.<br /><br /> IPersistPropertyBag: Bietet Unterstützung für das Attribut „PARAM=“ im OBJECT-Tag.|  
   
 > [!NOTE]
->  Es ist möglich, dass die Skript-Engine nie aufgerufen wird, um einen Skriptzustand mit `IPersist*` zu speichern oder wiederherzustellen. Stattdessen wird [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) verwendet, indem [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) aufgerufen wird, um ein leeres Skript zu erstellen. Anschließend werden Scriptlets hinzugefügt und mit [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) mit Ereignissen verbunden, und allgemeiner Code wird mit [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) hinzugefügt. Nichtsdestoweniger sollte eine Skript-Engine mindestens eine `IPersist*`-Schnittstelle (bevorzugt `IPersistStreamInit`) vollständig implementieren, da andere Hostanwendungen diese möglicherweise verwenden möchten.  
+> Es ist möglich, dass die Skript-Engine nie aufgerufen wird, um einen Skriptzustand mit `IPersist*` zu speichern oder wiederherzustellen. Stattdessen wird [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) verwendet, indem [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) aufgerufen wird, um ein leeres Skript zu erstellen. Anschließend werden Scriptlets hinzugefügt und mit [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) mit Ereignissen verbunden, und allgemeiner Code wird mit [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) hinzugefügt. Nichtsdestoweniger sollte eine Skript-Engine mindestens eine `IPersist*`-Schnittstelle (bevorzugt `IPersistStreamInit`) vollständig implementieren, da andere Hostanwendungen diese möglicherweise verwenden möchten.  
   
  In den folgenden Abschnitten wird die Implementierung einer Windows-Skript-Engine ausführlicher beschrieben.  
   

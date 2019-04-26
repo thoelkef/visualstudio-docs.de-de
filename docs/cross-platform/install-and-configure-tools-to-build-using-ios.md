@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818493"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
@@ -66,13 +66,13 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> Installieren des Remote-Agents für iOS
+## <a name="Install"></a> Installieren des Remote-Agents für iOS
 
 Wenn Sie Visual C++ for Cross-Platform Mobile Development installieren, kann Visual Studio mit [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)kommunizieren. Dies ist ein Remote-Agent, der auf Ihrem Mac ausgeführt wird und mit dem Dateien übertragen, die iOS-App erstellt und ausgeführt sowie Debugbefehle gesendet werden können.
 
 Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderlichen Komponenten](#prerequisites) vorhanden sind und [Visual C++ für die plattformübergreifende Mobile-Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) installiert ist.
 
-###  <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten
+### <a name="DownloadInstall"></a> Herunterladen und Installieren des Remote-Agenten
 
 - Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:
 
@@ -87,11 +87,11 @@ Stellen Sie vor der Installation des Remote-Agents sicher, dass alle [erforderli
 
 Wenn Sie auf eine neue Version von Visual Studio aktualisiert haben, müssen Sie diese Aktualisierung auch auf dem Remote-Agent vornehmen. Wiederholen Sie die Schritte zum Herunterladen und Installieren des Remote-Agents, um diesen zu aktualisieren.
 
-##  <a name="Start"></a> Starten des Remote-Agents
+## <a name="Start"></a> Starten des Remote-Agents
 
 Der Remote-Agent muss ausgeführt werden, damit Visual Studio den iOS-Code erstellen und ausführen kann. Visual Studio muss mit dem Remote-Agent gekoppelt werden, bevor eine Kommunikation stattfinden kann. Standardmäßig wird der Remote-Agent im Modus für sichere Verbindung ausgeführt. Dazu muss Visual Studio mit einer PIN gekoppelt werden.
 
-###  <a name="RemoteAgentStartServer"></a> So starten Sie den Remote-Agenten
+### <a name="RemoteAgentStartServer"></a> So starten Sie den Remote-Agenten
 
 - Geben Sie über die Terminal-App auf Ihrem Mac Folgendes ein:
 
@@ -127,7 +127,7 @@ Sobald Sie den Remote-Agenten gestartet haben, können Sie ihn von Visual Studio
 
 - Drücken Sie im Terminalfenster, in dem „vcremote“ ausgeführt wird, **UMSCHALT**+**C**.
 
-##  <a name="ConfigureVS"></a> Konfigurieren des Remote-Agents in Visual Studio
+## <a name="ConfigureVS"></a> Konfigurieren des Remote-Agents in Visual Studio
 
 Um von Visual Studio aus eine Verbindung mit dem Remote-Agent herzustellen, müssen Sie die Remotekonfiguration in den Visual Studio-Optionen angeben.
 
@@ -164,7 +164,7 @@ Um von Visual Studio aus eine Verbindung mit dem Remote-Agent herzustellen, müs
 
 Visual Studio verwendet jedes Mal dieselben Information, um die Verbindung mit dem Remote-Agent auf Ihrem Mac herzustellen. Es ist nicht erforderlich, Visual Studio erneut mit dem Remote-Agent zu koppeln, es sei denn, Sie generieren ein neues Sicherheitszertifikat auf Ihrem Mac oder ändern dessen Hostnamen oder IP-Adresse.
 
-##  <a name="GeneratePIN"></a> Generate a new security PIN
+## <a name="GeneratePIN"></a> Generate a new security PIN
 
 Wenn Sie den Remote-Agent erstmals starten, ist die generierte PIN für einen begrenzten Zeitraum (standardmäßig 10 Minuten) gültig. Wenn Sie Visual Studio nicht vor Ablauf dieses Zeitraums mit dem Remote-Agent koppeln, müssen Sie eine neue PIN generieren.
 
@@ -178,7 +178,7 @@ Wenn Sie den Remote-Agent erstmals starten, ist die generierte PIN für einen be
 
    Der Remote-Agent generiert eine neue temporäre PIN. Wiederholen Sie die Schritte unter [Konfigurieren des Remote-Agents in Visual Studio](#ConfigureVS), um Visual Studio mithilfe der neuen PIN zu koppeln.
 
-##  <a name="GenerateCert"></a> Generieren eines neuen Serverzertifikats
+## <a name="GenerateCert"></a> Generieren eines neuen Serverzertifikats
 
 Aus Sicherheitsgründen sind die Serverzertifikate, die Visual Studio mit dem Remote-Agent koppeln, an die IP oder den Hostnamen Ihres Macs gebunden. Wenn sich diese Werte geändert haben, müssen Sie ein neues Serverzertifikat generieren und anschließend Visual Studio mit den neuen Werte neu konfigurieren.
 
@@ -200,7 +200,7 @@ Aus Sicherheitsgründen sind die Serverzertifikate, die Visual Studio mit dem Re
 
 1. Wiederholen Sie die Schritte unter [Konfigurieren des Remote-Agents in Visual Studio](#ConfigureVS), um Visual Studio mithilfe der neuen PIN zu koppeln.
 
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
 Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfigurieren. Beispielsweise können Sie den Port zum Überwachen der Build-Anforderungen und die maximale Anzahl an Builds angeben, die auf dem Dateisystem verwaltet werden sollen. Die Standardgrenze ist 10 Builds. Der Remote-Agent entfernt beim Herunterfahren die überzähligen Builds.
 
@@ -236,4 +236,4 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Installieren der plattformübergreifenden Mobile-Entwicklung mit Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

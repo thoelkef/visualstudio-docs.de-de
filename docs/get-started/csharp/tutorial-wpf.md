@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426416"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
 In diesem Tutorial lernen Sie sich viele Tools, Dialogfelder und Designer kennen, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine Anwendung „Hello, World“, entwerfen die Benutzeroberfläche, fügen Code hinzu und debuggen Fehler. Gleichzeitig erfahren Sie mehr über das Arbeiten in der integrierten Entwicklungsumgebung ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
@@ -83,8 +83,7 @@ Nachdem Sie das Projekt erstellt haben, können Sie es anpassen. Im Fenster **Ei
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../../get-started/media/vs-2019/start-window-create-new-project.png)
 
 2. Suchen Sie auf dem Bildschirm **Neues Projekt erstellen** nach „WPF“, und wählen Sie **WPF-App (.NET Framework)** und anschließend **Weiter** aus.
 

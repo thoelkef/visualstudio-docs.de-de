@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553381"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -52,14 +52,14 @@ Um JavaScript-Dateien zu kompilieren, muss eine `tsconfig.json`-Datei hinzugefü
 
 Die erforderlichen Einstellungen für die tsconfig-Datei werden im Folgenden beschrieben:
 
- - `allowJs`: Dieser Wert muss auf `true` festgelegt werden, damit JavaScript-Dateien erkannt werden. Der Standardwert ist `false`, da TypeScript in JavaScript kompiliert, und der Compiler sollte keine Dateien enthalten, die sie soeben kompiliert haben.
- - `outDir`: Dieser Wert sollte auf einen Speicherort festgelegt werden, der nicht im Projekt enthalten ist, damit die ausgegebenen JavaScript-Dateien nicht erkannt und anschließend in das Projekt einbezogen werden (siehe `exclude`).
- - `module`: Wenn Sie Module verwenden, weist diese Einstellung den Compiler an, welches Modulformat der ausgegebene Code verwenden sollte (z.B. `commonjs` für Knoten oder Bundler wie Browserify).
- - `exclude`: Diese Einstellung gibt die Ordner an, die nicht im Projekt eingeschlossen werden sollen.
- Sowohl der Ausgabeort als auch Ordner, die nicht Teil des Projekts sind, wie z.B. `node_modules` oder `temp`, sollten zu dieser Einstellung hinzugefügt werden.
- - `enableAutoDiscovery`: Diese Einstellung ermöglicht die automatische Erkennung und das Herunterladen von Definitionsdateien, wie zuvor beschrieben.
- - `compileOnSave`: Diese Einstellung weist den Compiler an, ob er jederzeit neu kompilieren soll, wenn eine Quelldatei in Visual Studio gespeichert ist.
- - `typeAcquisition`: Diese Einstellungen legen das Verhalten der automatischen Typübernahme fest. Weitere Informationen finden Sie in [diesem Abschnitt](/visualstudio/ide/javascript-intellisense#Auto).
+- `allowJs`: Dieser Wert muss auf `true` festgelegt werden, damit JavaScript-Dateien erkannt werden. Der Standardwert ist `false`, da TypeScript in JavaScript kompiliert, und der Compiler sollte keine Dateien enthalten, die sie soeben kompiliert haben.
+- `outDir`: Dieser Wert sollte auf einen Speicherort festgelegt werden, der nicht im Projekt enthalten ist, damit die ausgegebenen JavaScript-Dateien nicht erkannt und anschließend in das Projekt einbezogen werden (siehe `exclude`).
+- `module`: Wenn Sie Module verwenden, weist diese Einstellung den Compiler an, welches Modulformat der ausgegebene Code verwenden sollte (z.B. `commonjs` für Knoten oder Bundler wie Browserify).
+- `exclude`: Diese Einstellung gibt die Ordner an, die nicht im Projekt eingeschlossen werden sollen.
+Sowohl der Ausgabeort als auch Ordner, die nicht Teil des Projekts sind, wie z.B. `node_modules` oder `temp`, sollten zu dieser Einstellung hinzugefügt werden.
+- `enableAutoDiscovery`: Diese Einstellung ermöglicht die automatische Erkennung und das Herunterladen von Definitionsdateien, wie zuvor beschrieben.
+- `compileOnSave`: Diese Einstellung weist den Compiler an, ob er jederzeit neu kompilieren soll, wenn eine Quelldatei in Visual Studio gespeichert ist.
+- `typeAcquisition`: Diese Einstellungen legen das Verhalten der automatischen Typübernahme fest. Weitere Informationen finden Sie in [diesem Abschnitt](/visualstudio/ide/javascript-intellisense#Auto).
 
 Um JavaScript-Dateien in CommonJS-Module zu konvertieren und diese in einen `./out`-Ordner abzulegen, können Sie z.B. die folgende `tsconfig.json`-Datei verwenden:
 

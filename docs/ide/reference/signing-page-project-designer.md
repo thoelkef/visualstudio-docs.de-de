@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950538"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendungs- und Bereitstellungsmanifeste zu signieren. Außerdem können sie damit die Assembly signieren (Signierung mit starkem Namen).
@@ -93,7 +93,6 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 
 > [!NOTE]
 > Beim Signieren einer Assembly haben Sie möglicherweise nicht immer Zugriff auf einen privaten Schlüssel. Eine Organisation kann z.B. ein streng geheim gehaltenes Schlüsselpaar verwenden, auf das Entwickler nicht täglich zugreifen können. Möglicherweise steht der öffentliche Schlüssel zur Verfügung, während der Zugriff auf den privaten Schlüssel nur einigen Wenigen erlaubt ist. In einem solchen Fall können Sie die *verzögerte* oder *Teilsignierung* verwenden, um den öffentlichen Schlüssel bereitzustellen. Dadurch wird das Hinzufügen des privaten Schlüssels solange verzögert, bis die Assembly übergeben wird.
-
 
 ## <a name="see-also"></a>Siehe auch
 

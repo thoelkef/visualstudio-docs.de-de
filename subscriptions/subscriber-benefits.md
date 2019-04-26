@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
 searchscope: VS Subscription
 ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427792"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
@@ -32,7 +32,7 @@ Wir bieten wir Ihnen Zugang zu einigen der besten Onlineschulungen, die von Bran
 - Entwurf von Datenbanklösungen für SQL Server von Microsoft Virtual Academy
 - LinkedIn Learning bietet Zugang zu den Personen, Informationen und Fähigkeiten, mit denen Sie sich von der Masse abheben können.
 
-## <a name="support"></a>Unterstützung
+## <a name="support"></a>Support
 Als Visual Studio-Abonnent haben Sie außerdem Zugriff auf verschiedene Supportangeboten, falls Sie Fragen haben oder technische Unterstützung benötigen.
 - Kostenpflichtige Abonnements umfassen Zugang zu technischem Support einschließlich Problemlösung für Tools und Anwendungen, die in Entwicklungs-/Testumgebungen ausgeführt werden.
 - Benötigen Sie technische Dokumentation oder Produktinformationen?  Über den Chat-Dienst Concierge erhalten Sie sofort Hilfe.

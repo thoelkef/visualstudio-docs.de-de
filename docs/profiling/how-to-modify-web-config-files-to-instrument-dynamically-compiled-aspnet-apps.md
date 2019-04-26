@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422924"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
 Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungs-Instrumentierungsmethode verwenden, um detaillierte Zeitsteuerdaten, .NET-Speicherbelegungsdaten und .NET-Objektlebensdauerdaten von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen zu sammeln.
@@ -21,7 +21,7 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
  In diesem Thema wird beschrieben, wie die Konfigurationsdatei *web.config* zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen geändert werden kann.
 
 > [!NOTE]
->  Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder ein vorkompiliertes [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Modul instrumentieren möchten, brauchen Sie die *web.config*-Datei nicht zu ändern.
+> Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder ein vorkompiliertes [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Modul instrumentieren möchten, brauchen Sie die *web.config*-Datei nicht zu ändern.
 
  Der Stamm einer *web.config*-Datei ist das Element **configuration**. Zum Instrumentieren und Erstellen eines Profils von einer dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung müssen Sie folgende Elemente ändern oder hinzufügen:
 
@@ -45,11 +45,9 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 
 3. Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyBinding** hinzu:
 
-
    | Attributname | Attributwert |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Fügen Sie ein Element **dependentAssembly** als untergeordnetes Element des Elements **assemblyBinding** ein.
 
@@ -59,13 +57,11 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 
 6. Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyIdentity** hinzu:
 
-
    | Attributname | Attributwert |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. Fügen Sie ein Element **codeBase** als untergeordnetes Element des Elements **dependentAssembly** ein.
 
@@ -100,15 +96,15 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>So fügen Sie den Profilernachbearbeitungsschritt zum Element „configuration/system.web/compilation“ hinzu
 
-1.  Fügen Sie, wenn notwendig, das Element **system.web** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.
+1. Fügen Sie, wenn notwendig, das Element **system.web** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.
 
      Das Element **system.web** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **system.web** haben.
 
-2.  Fügen Sie, wenn notwendig, das Element **compilation** als untergeordnetes Element des Elements **system.web** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.
+2. Fügen Sie, wenn notwendig, das Element **compilation** als untergeordnetes Element des Elements **system.web** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.
 
      Das Element **system.web** kann nur ein untergeordnetes Element **compilation** haben.
 
-3.  Entfernen Sie alle vorhandenen Attribute aus dem Element **compilation**, und fügen Sie den folgenden Attributnamen und -wert hinzu:
+3. Entfernen Sie alle vorhandenen Attribute aus dem Element **compilation**, und fügen Sie den folgenden Attributnamen und -wert hinzu:
 
     |Attributname|Attributwert|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
 
 3. Fügen Sie den folgenden Attributnamen und -wert zum Element **add** hinzu:
 
-
    | Attributname | Attributwert |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Fügen Sie ein weiteres Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.
 
@@ -157,7 +151,6 @@ Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profil
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` ist der Pfad der ausführbaren Profilerdatei. Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

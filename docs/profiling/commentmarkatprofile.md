@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407564"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Die `CommentMarkAtProfile`-Methode fügt der *VSP-Datei* einen Zeitstempelwert, eine numerische Markierung und eine Kommentarzeichenfolge hinzu. Der Zeitstempelwert kann verwendet werden, um externe Ereignisse zu synchronisieren. Damit die Markierung und der Kommentar eingefügt werden, muss die Profilerstellung für den Thread, der die Funktion CommentMarkAtProfile enthält, auf ON festgelegt sein.
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ (Profil markieren) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare mit dem Mark-Befehl oder mit API-Funktionen (CommentMarkAtProfile, CommentMarkProfile, oder MarkProfile) eingefügt werden. Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.
 
 > [!IMPORTANT]
->  CommentMarkAtProfile-Methoden sollten nur mit der Instrumentierung verwendet werden.
+> CommentMarkAtProfile-Methoden sollten nur mit der Instrumentierung verwendet werden.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework-Entsprechung
  *Microsoft.VisualStudio.Profiler.dll*

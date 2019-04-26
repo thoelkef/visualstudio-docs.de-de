@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793156"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Barrierefreiheitsfeatures in Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318588"
 
 Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgenden Funktionen Visual Studio für den Zugang für Personen mit Behinderungen:
 
--   Symbolleisten-Schaltfläche und ein Textvergrößerung
+- Symbolleisten-Schaltfläche und ein Textvergrößerung
 
--   Textgrößenoptionen in den Editoren
+- Textgrößenoptionen in den Editoren
 
--   Anpassen der Farbe in den Editoren
+- Anpassen der Farbe in den Editoren
 
--   Anpassen von Tastenkombinationen
+- Anpassen von Tastenkombinationen
 
--   Automatische Vervollständigung für Methoden und Parameter
+- Automatische Vervollständigung für Methoden und Parameter
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Barrierefreiheit für Visual Studio für Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Neben den Eingabehilfen und Dienstprogrammen in Windows erleichtern die folgende
 
 Weitere Informationen finden Sie unter den folgenden Themen:
 
--   [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Tipps und Tricks zur Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Tipps und Tricks zur Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Vorgehensweise: Ändern von Schriftarten und Farben](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Siehe auch
 
