@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002565"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
@@ -29,13 +29,13 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generieren eines codierten Webleistungstests
 
-1.  Wenn Sie keinen Webleistungstest erstellt haben, finden Sie weitere Informationen unter [Record a web performance test (Aufzeichnen eines Webleistungstests)](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Wenn Sie keinen Webleistungstest erstellt haben, finden Sie weitere Informationen unter [Record a web performance test (Aufzeichnen eines Webleistungstests)](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Generieren Sie den codierten Test.
+2. Generieren Sie den codierten Test.
 
      ![Generieren eines codierten Webleistungstests](../test/media/web_test_coded_generate.png)
 
-3.  Geben Sie dem Test einen Namen.
+3. Geben Sie dem Test einen Namen.
 
      ![Einen Namen für den codierten Webleistungstest eingeben](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 
      Im Code können Sie sehen, dass die GetRequestEnumerator()-Methode in C# bzw. die Run()-Methode in Visual Basic jede Validierungsregel und jede Webanforderung enthält, die im umcodierten Test enthalten war.
 
-4.  Um zu demonstrieren, wie einfacher Code hinzugefügt wird, führen Sie einen Bildlauf zum Ende der Methode durch, und fügen Sie nach dem Code für die letzte Webanforderung folgenden Code hinzu:
+4. Um zu demonstrieren, wie einfacher Code hinzugefügt wird, führen Sie einen Bildlauf zum Ende der Methode durch, und fügen Sie nach dem Code für die letzte Webanforderung folgenden Code hinzu:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
     End If
     ```
 
-5.  Erstellen Sie die Projektmappe, um sicherzustellen, dass der benutzerdefinierte Code kompiliert werden kann.
+5. Erstellen Sie die Projektmappe, um sicherzustellen, dass der benutzerdefinierte Code kompiliert werden kann.
 
-6.  Führen Sie den Test aus.
+6. Führen Sie den Test aus.
 
      ![Ausführung des codierten Webleistungstests](../test/media/web_test_coded_generate_run.png)
 

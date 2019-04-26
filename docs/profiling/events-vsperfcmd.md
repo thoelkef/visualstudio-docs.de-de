@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff97e69b3dea8de9e13c351aa199bc81bdf733c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62d4e2431ab2dbc2ca74944ac1717fe6c3169287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440098"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 Die *VSPerfCmd.exe*-Option **Events** steuert die Protokollierung der Ereignisablaufverfolgung für Windows (ETW). ETW-Daten werden in einer ETL-Datei gespeichert, die von der Profiler-Datendatei getrennt ist. Die Daten können in einem Bericht mithilfe des Befehls „[VSPerfReport ](../profiling/vsperfreport.md) /summary: etw“ angezeigt werden.
@@ -62,14 +62,14 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ## <a name="remarks"></a>Anmerkungen
 
 > [!NOTE]
->  Wenn CLR-ETW-Ereignisse aktiviert sind, werden im Bericht in der Ablaufverfolgungsansicht auch zusätzliche Startdaten gesammelt. Mit dem folgenden Befehl vermeiden Sie, dass Startereignisse im Bericht angezeigt werden:
+> Wenn CLR-ETW-Ereignisse aktiviert sind, werden im Bericht in der Ablaufverfolgungsansicht auch zusätzliche Startdaten gesammelt. Mit dem folgenden Befehl vermeiden Sie, dass Startereignisse im Bericht angezeigt werden:
 
 ```cmd
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```
 
 > [!IMPORTANT]
->  Wenn Sie Startereignisse nicht ausschließen, werden sie als GUIDs im Bericht angezeigt, weil sie nicht in der MOF-Datei (Managed Object Format) aufgeführt werden. Weitere Informationen finden Sie auf der folgenden Microsoft-Website: [Sample Managed Object Format (MOF) file (MOF-Beispieldatei (Managed Object Format))](http://go.microsoft.com/fwlink/?linkid=37118).
+> Wenn Sie Startereignisse nicht ausschließen, werden sie als GUIDs im Bericht angezeigt, weil sie nicht in der MOF-Datei (Managed Object Format) aufgeführt werden. Weitere Informationen finden Sie auf der folgenden Microsoft-Website: [Sample Managed Object Format (MOF) file (MOF-Beispieldatei (Managed Object Format))](http://go.microsoft.com/fwlink/?linkid=37118).
 
 ## <a name="see-also"></a>Siehe auch
 - [VSPerfCmd](../profiling/vsperfcmd.md)

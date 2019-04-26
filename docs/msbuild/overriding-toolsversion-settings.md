@@ -11,21 +11,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 500a36a34dd3c371ec72ed379c1de5f5821818be
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 151e714a00a3030c2ed502a739c54c28e5ae75d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006748"
 ---
 # <a name="override-toolsversion-settings"></a>Überschreiben von ToolsVersion-Einstellungen
 Sie können das Toolset für Projekte und Projektmappen auf drei verschiedene Arten ändern:
 
-1.  durch Verwendung des `-ToolsVersion`-Schalters (oder kurz `-tv`) beim Erstellen des Projekts oder der Projektmappe in der Befehlszeile.
+1. durch Verwendung des `-ToolsVersion`-Schalters (oder kurz `-tv`) beim Erstellen des Projekts oder der Projektmappe in der Befehlszeile.
 
-2.  durch Verwendung des `ToolsVersion`-Parameters in der MSBuild-Aufgabe.
+2. durch Verwendung des `ToolsVersion`-Parameters in der MSBuild-Aufgabe.
 
-3.  durch Festlegen der `$(ProjectToolsVersion)`-Eigenschaft für ein Projekt in einer Projektmappe. So können Sie ein Projekt in einer Projektmappe mit einer anderen Toolsetversion erstellen als der, die in anderen Projekten verwendet wird.
+3. durch Festlegen der `$(ProjectToolsVersion)`-Eigenschaft für ein Projekt in einer Projektmappe. So können Sie ein Projekt in einer Projektmappe mit einer anderen Toolsetversion erstellen als der, die in anderen Projekten verwendet wird.
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Überschreiben der ToolsVersion-Einstellungen von Projekten und Projektmappen in Befehlszeilenbuilds
  Obwohl Visual Studio-Projekte normalerweise mit der in der Projektdatei angegebenen ToolsVersion erstellt werden, können Sie den Schalter `-ToolsVersion` (oder `-tv`) in der Befehlszeile verwenden, um diesen Wert zu überschreiben und so alle Projekte und deren projektübergreifende Abhängigkeiten mit einem anderen Toolset zu erstellen. Beispiel:
@@ -41,7 +41,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Überschreiben der ToolsVersion-Einstellung mit dem ToolsVersion-Parameter der MSBuild-Aufgabe
  Die MSBuild-Aufgabe dient einem Projekt primär dazu, ein anderes Projekt zu erstellen. Damit die MSBuild-Aufgabe ein Projekt mit einer anderen ToolsVersion als der im Projekt angegebenen erstellen kann, stellt sie einen optionalen Aufgabenparameter mit dem Namen `ToolsVersion` zur Verfügung. Im folgenden Beispiel wird die Verwendung dieses Parameters veranschaulicht:
 
-1.  Erstellen Sie eine Datei namens *projectA.proj*, die den folgenden Code enthält:
+1. Erstellen Sie eine Datei namens *projectA.proj*, die den folgenden Code enthält:
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -59,7 +59,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     </Project>
     ```
 
-2.  Erstellen Sie eine weitere Datei namens *projectB.proj*, die den folgenden Code enthält:
+2. Erstellen Sie eine weitere Datei namens *projectB.proj*, die den folgenden Code enthält:
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -73,13 +73,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     </Project>
     ```
 
-3.  Geben Sie an einer Eingabeaufforderung den folgenden Befehl ein:
+3. Geben Sie an einer Eingabeaufforderung den folgenden Befehl ein:
 
     ```cmd
     msbuild projectA.proj -t:go -toolsversion:3.5
     ```
 
-4.  Die folgende Ausgabe wird angezeigt. Bei `projectA` überschreibt die `-toolsversion:3.5`-Einstellung in der Befehlszeile die `ToolsVersion=12.0`-Einstellung im `Project`-Tag.
+4. Die folgende Ausgabe wird angezeigt. Bei `projectA` überschreibt die `-toolsversion:3.5`-Einstellung in der Befehlszeile die `ToolsVersion=12.0`-Einstellung im `Project`-Tag.
 
      `ProjectB` wird durch eine Aufgabe in `projectA` aufgerufen. Diese Aufgabe enthält die `ToolsVersion=2.0`, die die anderen `ToolsVersion`-Einstellungen für `projectB` überschreibt.
 
@@ -97,31 +97,31 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ## <a name="order-of-precedence"></a>Rangfolge
  Die Rangfolge, vom Höchsten zum Niedrigsten, mit der `ToolsVersion` bestimmt wird, ist:
 
-1.  Das `ToolsVersion`-Attribut in der MSBuild-Aufgabe, die zum Erstellen des Projekts verwendet wird (soweit zutreffend).
+1. Das `ToolsVersion`-Attribut in der MSBuild-Aufgabe, die zum Erstellen des Projekts verwendet wird (soweit zutreffend).
 
-2.  Der Schalter `-toolsversion` (oder `-tv`), der im msbuild.exe-Befehl verwendet wird, falls vorhanden.
+2. Der Schalter `-toolsversion` (oder `-tv`), der im msbuild.exe-Befehl verwendet wird, falls vorhanden.
 
-3.  Wenn die Umgebungsvariable `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` festgelegt ist, verwenden Sie die aktuelle `ToolsVersion`.
+3. Wenn die Umgebungsvariable `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` festgelegt ist, verwenden Sie die aktuelle `ToolsVersion`.
 
-4.  Wenn die Umgebungsvariable `MSBUILDTREATHIGHERTOOLSVERSIONASCURRENT` festgelegt ist und die in der Projektdatei definierte `ToolsVersion` größer als die aktuelle `ToolsVersion` ist, verwenden Sie die aktuelle `ToolsVersion`.
+4. Wenn die Umgebungsvariable `MSBUILDTREATHIGHERTOOLSVERSIONASCURRENT` festgelegt ist und die in der Projektdatei definierte `ToolsVersion` größer als die aktuelle `ToolsVersion` ist, verwenden Sie die aktuelle `ToolsVersion`.
 
-5.  Wenn die Umgebungsvariable `MSBUILDLEGACYDEFAULTTOOLSVERSION` festgelegt ist oder wenn `ToolsVersion` nicht festgelegt ist, werden die folgenden Schritte verwendet:
+5. Wenn die Umgebungsvariable `MSBUILDLEGACYDEFAULTTOOLSVERSION` festgelegt ist oder wenn `ToolsVersion` nicht festgelegt ist, werden die folgenden Schritte verwendet:
 
-    1.  Das Attribut `ToolsVersion` des [Project](../msbuild/project-element-msbuild.md)-Elements der Projektdatei. Wenn dieses Attribut nicht vorhanden ist, wird angenommen, dass es sich um die aktuelle Version handelt.
+    1. Das Attribut `ToolsVersion` des [Project](../msbuild/project-element-msbuild.md)-Elements der Projektdatei. Wenn dieses Attribut nicht vorhanden ist, wird angenommen, dass es sich um die aktuelle Version handelt.
 
-    2.  Die standardmäßige Toolsversion in der *MSBuild.exe.config*-Datei.
+    2. Die standardmäßige Toolsversion in der *MSBuild.exe.config*-Datei.
 
-    3.  Die standardmäßige Toolsversion in der Registrierung. Weitere Informationen finden Sie unter [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md).
+    3. Die standardmäßige Toolsversion in der Registrierung. Weitere Informationen finden Sie unter [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md).
 
-6.  Wenn die Umgebungsvariable `MSBUILDLEGACYDEFAULTTOOLSVERSION` nicht festgelegt ist, werden die folgenden Schritte verwendet:
+6. Wenn die Umgebungsvariable `MSBUILDLEGACYDEFAULTTOOLSVERSION` nicht festgelegt ist, werden die folgenden Schritte verwendet:
 
-    1.  Wenn die Umgebungsvariable `MSBUILDDEFAULTTOOLSVERSION` auf eine vorhandene `ToolsVersion` festgelegt ist, verwenden Sie diese Version.
+    1. Wenn die Umgebungsvariable `MSBUILDDEFAULTTOOLSVERSION` auf eine vorhandene `ToolsVersion` festgelegt ist, verwenden Sie diese Version.
 
-    2.  Wenn `DefaultOverrideToolsVersion` in *MSBuild.exe.config* festgelegt ist, verwenden Sie diese Version.
+    2. Wenn `DefaultOverrideToolsVersion` in *MSBuild.exe.config* festgelegt ist, verwenden Sie diese Version.
 
-    3.  Wenn `DefaultOverrideToolsVersion` in der Registrierung festgelegt ist, verwenden Sie diese Version.
+    3. Wenn `DefaultOverrideToolsVersion` in der Registrierung festgelegt ist, verwenden Sie diese Version.
 
-    4.  Andernfalls verwenden Sie die aktuelle `ToolsVersion`.
+    4. Andernfalls verwenden Sie die aktuelle `ToolsVersion`.
 
 ## <a name="see-also"></a>Siehe auch
 - [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)

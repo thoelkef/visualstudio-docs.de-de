@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c30a7d89065a7fbea9781d1972dc01fedd5c742
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438201"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Vorgehensweise: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)
 
@@ -29,22 +29,22 @@ Das Importieren eines Namespace ermöglicht Ihnen die Verwendung von Elementen a
 
 ### <a name="to-add-an-imported-namespace"></a>So fügen Sie einen importierten Namespace hinzu
 
-1.  Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
 
-2.  Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
+2. Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
 
-3.  Aktivieren Sie in der Liste **Importierte Namespaces** das Kontrollkästchen für den Namespace, den Sie hinzufügen möchten.
+3. Aktivieren Sie in der Liste **Importierte Namespaces** das Kontrollkästchen für den Namespace, den Sie hinzufügen möchten.
 
     > [!NOTE]
-    >  Der Namespace muss sich in einer Komponente befinden, auf die verwiesen wird, damit er importiert werden kann. Wenn der Namespace nicht in der Liste angezeigt wird, müssen Sie einen Verweis auf die Komponente hinzufügen, in der er enthalten ist. Weitere Informationen finden Sie unter [Verwalten von Verweisen in einem Projekt](managing-references-in-a-project.md).
+    > Der Namespace muss sich in einer Komponente befinden, auf die verwiesen wird, damit er importiert werden kann. Wenn der Namespace nicht in der Liste angezeigt wird, müssen Sie einen Verweis auf die Komponente hinzufügen, in der er enthalten ist. Weitere Informationen finden Sie unter [Verwalten von Verweisen in einem Projekt](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>So entfernen Sie einen importierten Namespace
 
-1.  Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
 
-2.  Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
+2. Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
 
-3.  Deaktivieren Sie in der Liste **Importierte Namespaces** das Kontrollkästchen für den Namespace, den Sie entfernen möchten.
+3. Deaktivieren Sie in der Liste **Importierte Namespaces** das Kontrollkästchen für den Namespace, den Sie entfernen möchten.
 
 ## <a name="user-imports"></a>Benutzerimporte
  Mithilfe von Benutzerimporten können Sie anstatt des gesamten Namespace eine bestimmte Klasse innerhalb eines Namespace importieren. Beispiel: Ihre Anwendung verfügt über einen Import für den <xref:System.Diagnostics>-Namespace, Sie sind aber nur interessiert an der `Debug`-Klasse innerhalb dieses Namespace. Sie können <xref:System.Diagnostics.Debug> als Benutzerimport definieren und anschließend den Import für <xref:System.Diagnostics> löschen.
@@ -53,28 +53,28 @@ Das Importieren eines Namespace ermöglicht Ihnen die Verwendung von Elementen a
 
 ### <a name="to-add-a-user-import"></a>So fügen Sie einen Benutzerimport hinzu
 
-1.  Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
 
-2.  Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
+2. Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
 
-3.  Geben Sie im Textfeld unter der Liste **Importierte Namespaces** den vollständigen Namen des Namespace inklusive Stammnamespace ein, den Sie importieren möchten.
+3. Geben Sie im Textfeld unter der Liste **Importierte Namespaces** den vollständigen Namen des Namespace inklusive Stammnamespace ein, den Sie importieren möchten.
 
-4.  Klicken Sie auf die Schaltfläche **Benutzerimport hinzufügen**, um den Namespace der Liste **Importierte Namespaces** hinzuzufügen.
+4. Klicken Sie auf die Schaltfläche **Benutzerimport hinzufügen**, um den Namespace der Liste **Importierte Namespaces** hinzuzufügen.
 
     > [!NOTE]
     > Die Schaltfläche **Benutzerimport hinzufügen** wird deaktiviert, wenn der Namespace mit einem Namespace übereinstimmt, der sich bereits auf der Liste befindet, da Sie einen Import nicht zweimal hinzufügen können.
 
 ### <a name="to-update-a-user-import"></a>So aktualisieren Sie einen Benutzerimport
 
-1.  Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf den Knoten **Mein Projekt** für das Projekt.
 
-2.  Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
+2. Klicken Sie im **Projekt-Designer** auf die Registerkarte **Verweise**.
 
-3.  Wählen Sie in der Liste **Importierte Namespaces** den Namespace aus, den Sie ändern möchten.
+3. Wählen Sie in der Liste **Importierte Namespaces** den Namespace aus, den Sie ändern möchten.
 
-4.  Geben Sie im Textfeld unter der Liste **Importierte Namespaces** den Namen für den neuen Namespace ein.
+4. Geben Sie im Textfeld unter der Liste **Importierte Namespaces** den Namen für den neuen Namespace ein.
 
-5.  Klicken Sie auf die Schaltfläche **Benutzerimport aktualisieren**, um den Namespace in der Liste **Importierte Namespaces** zu aktualisieren.
+5. Klicken Sie auf die Schaltfläche **Benutzerimport aktualisieren**, um den Namespace in der Liste **Importierte Namespaces** zu aktualisieren.
 
 ## <a name="see-also"></a>Siehe auch
 

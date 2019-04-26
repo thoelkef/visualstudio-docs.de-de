@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386188"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.
@@ -42,7 +42,7 @@ Damit Dateien für einen Build eingeschlossen werden können, müssen sie in ein
 
 #### <a name="to-declare-multiple-items"></a>So deklarieren Sie mehrere Elemente
 
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ Sie können in einer Projektdatei die Notation „@()“ in Aufgaben verwenden, 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben verwenden, wie z.B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:
+> Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben verwenden, wie z.B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

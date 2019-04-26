@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439989"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthalten ist, finden Sie unter [MSBuild Task Reference](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
 
  Es gibt zwei Ansätze zur Implementierung einer Aufgabe:
 
--   Implementieren Sie die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle direkt.
+- Implementieren Sie die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle direkt.
 
--   Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Task> ab, die in der Assembly *Microsoft.Build.Utilities.dll* definiert ist. „Task“ implementiert „ITask“ und stellt Standardimplementierungen einiger „ITask“-Elemente dar. Darüber hinaus wird die Protokollierung vereinfacht.
+- Leiten Sie Ihre Klasse von der Hilfsklasse <xref:Microsoft.Build.Utilities.Task> ab, die in der Assembly *Microsoft.Build.Utilities.dll* definiert ist. „Task“ implementiert „ITask“ und stellt Standardimplementierungen einiger „ITask“-Elemente dar. Darüber hinaus wird die Protokollierung vereinfacht.
 
 In beiden Fällen müssen Sie Ihrer Klasse eine Methode mit dem Namen `Execute` hinzufügen. Dabei handelt es sich um die Methode, die aufgerufen wird, wenn eine Aufgabe ausgeführt wird. Sie nimmt keine Parameter und gibt einen `Boolean`-Wert zurück: `true`, wenn die Aufgabe erfolgreich ausgeführt wurde oder `false`, wenn sie fehlgeschlagen ist. Im folgenden Beispiel wird eine Aufgabe dargestellt, die keine Aktion ausführt, aber `true` zurückgibt.
 
@@ -97,7 +97,7 @@ namespace MyTasks
  Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Datei *Microsoft.Common.Tasks* ist eine Projektdatei mit einer Liste von `UsingTask`-Elementen, die alle Aufgaben registrieren, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden. Diese Datei wird automatisch beim Erstellen von Projekten mit eingeschlossen. Wenn eine Aufgabe, die in *Microsoft.Common.Tasks* registriert wird, ebenfalls in der aktuellen Projektdatei registriert wird, hat die aktuelle Projektdatei Vorrang. Das heißt, Sie können eine Standardaufgabe mit Ihrer eigenen Aufgabe, die denselben Namen hat, außer Kraft setzen.
 
 > [!TIP]
->  Es wird Ihnen eine Liste mit Aufgaben angezeigt, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden, wenn Sie die Inhalte der *Microsoft.Common.Tasks* abrufen.
+> Es wird Ihnen eine Liste mit Aufgaben angezeigt, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bereitgestellt werden, wenn Sie die Inhalte der *Microsoft.Common.Tasks* abrufen.
 
 ## <a name="raise-events-from-a-task"></a>Auslösen von Ereignissen aus einer Aufgabe
  Wenn Ihre Aufgabe aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitet wird, können Sie eine der folgenden Hilfsmethoden für die <xref:Microsoft.Build.Utilities.Task>-Klasse verwenden, damit ein Ereignis ausgelöst wird, das von allen registrierten Protokollierungen abgefangen und angezeigt wird:

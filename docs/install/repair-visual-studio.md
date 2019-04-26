@@ -1,5 +1,5 @@
 ---
-title: Reparieren von Visual Studio
+title: Reparieren Sie Visual Studio.
 titleSuffix: ''
 description: Hier erfahren Sie, wie Sie eine Installation von Visual Studio 2017 reparieren.
 ms.date: 03/30/2019
@@ -12,14 +12,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973212"
 ---
-# <a name="repair-visual-studio"></a>Reparieren von Visual Studio
+# <a name="repair-visual-studio"></a>Reparieren Sie Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -75,12 +75,11 @@ Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fe
 
 ::: moniker-end
 
-
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
 * [Installieren von Visual Studio](install-visual-studio.md)
-* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
 * [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
 * [Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern](troubleshooting-installation-issues.md)

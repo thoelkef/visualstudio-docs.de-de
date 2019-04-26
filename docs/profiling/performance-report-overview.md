@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432007"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leistungsbericht** der integrierten Entwicklungsumgebung (integrated Development Environment (IDE)) der Visual Studio Team System Development Edition anzeigen. Die Profilerstellungsdaten werden in VSP- und VSPS-Dateien gespeichert. In den Anzeigefenstern für Berichte können Sie Leistungsprobleme der Anwendung anzeigen und analysieren.
 
 > [!CAUTION]
->  Eine Datei mit Profilerstellungsdaten enthält vertrauliche Informationen, wie z.B. den Computernamen, die Version des Betriebssystems, Dateipfade, Informationen im Arbeitsspeicher und andere Informationen zur Computerinstallation. Sie sollten die genaue Kontrolle über die Verteilung der Daten beibehalten, sowohl im nativen *VSP*-Format als auch beim Export in eine *CSV*- oder *XML*-Datei.
+> Eine Datei mit Profilerstellungsdaten enthält vertrauliche Informationen, wie z.B. den Computernamen, die Version des Betriebssystems, Dateipfade, Informationen im Arbeitsspeicher und andere Informationen zur Computerinstallation. Sie sollten die genaue Kontrolle über die Verteilung der Daten beibehalten, sowohl im nativen *VSP*-Format als auch beim Export in eine *CSV*- oder *XML*-Datei.
 >
->  Wenn Ablaufverfolgungsdaten als Teil der Leistungssitzung gesammelt werden, werden möglicherweise zusätzliche Informationen in der Protokolldatei der Ablaufverfolgung (*ETL*-Datei) angezeigt. Diese Informationen umfassen Ihren Domänen- und Benutzernamen; aus diesem Grund sollten Sie die genaue Kontrolle über die Verteilung der Protokolldatei beibehalten.
+> Wenn Ablaufverfolgungsdaten als Teil der Leistungssitzung gesammelt werden, werden möglicherweise zusätzliche Informationen in der Protokolldatei der Ablaufverfolgung (*ETL*-Datei) angezeigt. Diese Informationen umfassen Ihren Domänen- und Benutzernamen; aus diesem Grund sollten Sie die genaue Kontrolle über die Verteilung der Protokolldatei beibehalten.
 
 ## <a name="performance-report-window"></a>Leistungsberichtfenster
  Das Leistungsberichtfenster ist ein Toolfenster, die zum Anzeigen, Verwalten und Filtern von Leistungsdaten verwendet wird und ein anpassbares Abfragesteuerelement enthält.
@@ -79,19 +79,19 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
 ## <a name="customizable-filter-control"></a>Anpassbares Filtersteuerelement
  Das anpassbare Filtersteuerelement verfügt über die folgenden Optionen:
 
--   **Filter importieren**: ruft eine zuvor gespeicherte benutzerdefinierte Abfrage ab.
+- **Filter importieren**: ruft eine zuvor gespeicherte benutzerdefinierte Abfrage ab.
 
--   **Filter exportieren**: speichert die benutzerdefinierte Abfrage am angegebenen Speicherort.
+- **Filter exportieren**: speichert die benutzerdefinierte Abfrage am angegebenen Speicherort.
 
--   **Abfrage durchführen**: führt die Abfrage durch, wie im benutzerdefinierten Abfragesteuerelement angezeigt.
+- **Abfrage durchführen**: führt die Abfrage durch, wie im benutzerdefinierten Abfragesteuerelement angezeigt.
 
--   **Abfrage beenden**: beendet die Ausführung einer Abfrage, die ausgeführt wird. Diese Schaltfläche ist nicht verfügbar, wenn keine Abfrage ausgeführt wird.
+- **Abfrage beenden**: beendet die Ausführung einer Abfrage, die ausgeführt wird. Diese Schaltfläche ist nicht verfügbar, wenn keine Abfrage ausgeführt wird.
 
--   **Abfrage anzeigen**: blendet das benutzerdefinierte Steuerelement ein/aus.
+- **Abfrage anzeigen**: blendet das benutzerdefinierte Steuerelement ein/aus.
 
--   **Analysierte Daten speichern**: speichert den Bericht zusammen mit der aktuellen Analyse als VSPS-Datei.
+- **Analysierte Daten speichern**: speichert den Bericht zusammen mit der aktuellen Analyse als VSPS-Datei.
 
--   **Exportieren**: speichert den aktuellen Bericht im CVS-Format oder als XML-formatierte Datei mit Optionen, die verschiedenen Ansichten zu speichern.
+- **Exportieren**: speichert den aktuellen Bericht im CVS-Format oder als XML-formatierte Datei mit Optionen, die verschiedenen Ansichten zu speichern.
 
 ## <a name="see-also"></a>Siehe auch
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

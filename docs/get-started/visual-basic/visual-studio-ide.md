@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966549"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -104,10 +104,10 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
 - Suchfeld
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionen wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie den Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
 
    > [!TIP]
-   > Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
+   > Verwenden Sie die Tastenkombination **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
 
    ::: moniker range="vs-2017"
 
@@ -119,7 +119,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ::: moniker range=">=vs-2019"
 
-   ![Screenshot: Suchfeld in Visual Studio 2019](media/vs-2019/quick-launch.png)
+   ![Suchfeld in Visual Studio 2019](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 
@@ -197,7 +197,7 @@ In diesem Abschnitt erstellen Sie ein einfaches Projekt, um einige Dinge auszupr
 
 ::: moniker range="vs-2017"
 
-[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
+[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
 
 ::: moniker-end
 

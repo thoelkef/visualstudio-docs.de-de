@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979239"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Vorgehensweise: Erstellen eines datengesteuerten Komponententests
 
@@ -27,27 +27,27 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
 
 Das Erstellen eines datengesteuerten Komponententests umfasst die folgenden Schritte:
 
-1.  Erstellen Sie eine Datenquelle, die die Werte enthält, die Sie in der Testmethode verwenden. Die Datenquelle kann jeder Typ sein, der auf dem Computer registriert ist, auf dem der Test ausgeführt wird.
+1. Erstellen Sie eine Datenquelle, die die Werte enthält, die Sie in der Testmethode verwenden. Die Datenquelle kann jeder Typ sein, der auf dem Computer registriert ist, auf dem der Test ausgeführt wird.
 
-2.  Fügen Sie der Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld sowie eine öffentliche `TestContext`-Eigenschaft hinzu.
+2. Fügen Sie der Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld sowie eine öffentliche `TestContext`-Eigenschaft hinzu.
 
-3.  Erstellen Sie eine Komponententestmethode, und fügen Sie ihr ein <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Attribut an.
+3. Erstellen Sie eine Komponententestmethode, und fügen Sie ihr ein <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Attribut an.
 
-4.  Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.
+4. Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.
 
 ## <a name="the-method-under-test"></a>Die zu testende Methode
 
 Nehmen wir zum Beispiel an, dass Sie über Folgendes verfügen:
 
-1.  Eine Lösung mit dem Namen `MyBank`, die Transaktionen für verschiedene Kontenarten akzeptiert und verarbeitet.
+1. Eine Lösung mit dem Namen `MyBank`, die Transaktionen für verschiedene Kontenarten akzeptiert und verarbeitet.
 
-2.  Ein Projekt mit dem Namen `BankDb` in `MyBank`, das die Transaktionen für Konten verwaltet.
+2. Ein Projekt mit dem Namen `BankDb` in `MyBank`, das die Transaktionen für Konten verwaltet.
 
-3.  Eine Klasse mit dem Namen `Maths` im Projekt `DbBank`, die die mathematische Funktionen ausführt, um sicherzustellen, dass jede Transaktion für die Bank vorteilhaft ist.
+3. Eine Klasse mit dem Namen `Maths` im Projekt `DbBank`, die die mathematische Funktionen ausführt, um sicherzustellen, dass jede Transaktion für die Bank vorteilhaft ist.
 
-4.  Ein Komponententestprojekt mit dem Namen `BankDbTests`, um das Verhalten der Komponente `BankDb` zu testen.
+4. Ein Komponententestprojekt mit dem Namen `BankDbTests`, um das Verhalten der Komponente `BankDb` zu testen.
 
-5.  Eine Komponentententestklasse mit dem Namen `MathsTests`, um das Verhalten von Klasse `Maths` zu testen.
+5. Eine Komponentententestklasse mit dem Namen `MathsTests`, um das Verhalten von Klasse `Maths` zu testen.
 
 Eine Methode in `Maths`, die zwei ganze Zahlen mithilfe einer Schleife hinzufügt, wird getestet:
 

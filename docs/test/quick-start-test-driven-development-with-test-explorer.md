@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002155"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 
@@ -57,7 +57,6 @@ Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visua
 > [!IMPORTANT]
 > Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.
 
-
 > [!NOTE]
 > Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
@@ -95,15 +94,15 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
 
 4. Generieren Sie die Methode von dem Test.
 
-   1.  Platzieren Sie den Cursor auf `Rooter`, und klicken Sie im Kontextmenü auf **Generieren** > **Neuer Typ**.
+   1. Platzieren Sie den Cursor auf `Rooter`, und klicken Sie im Kontextmenü auf **Generieren** > **Neuer Typ**.
 
-   2.  Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
+   2. Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.
 
-   3.  Platzieren Sie den Cursor auf `SquareRoot`, und klicken Sie im Kontextmenü auf **Generieren**  > **Methodenstub**.
+   3. Platzieren Sie den Cursor auf `SquareRoot`, und klicken Sie im Kontextmenü auf **Generieren**  > **Methodenstub**.
 
 5. Führen Sie den Komponententest aus.
 
-   1.  Klicken Sie im Menü **Test** auf **Komponententests ausführen** > **Alle Tests**.
+   1. Klicken Sie im Menü **Test** auf **Komponententests ausführen** > **Alle Tests**.
 
         Die Projektmappe wird erstellt und ausgeführt.
 
@@ -123,7 +122,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Sorgen Sie dafür, dass der Test nach jeder Änderung erfolgreich verläuft.
 
-1.  Verbessern Sie in *MyMath\Rooter.cs* den Code von `SquareRoot`:
+1. Verbessern Sie in *MyMath\Rooter.cs* den Code von `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -132,7 +131,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
      }
     ```
 
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
      Der Code wird erstellt, und der Test wird ausgeführt.
 
@@ -142,7 +141,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Fügen Sie Tests hinzu, um den Eingabebereich zu erweitern
 
-1.  Um sich sicherer sein zu können, dass Ihr Code in allen Fällen funktioniert, fügen Sie Tests hinzu, die einen größeren Bereich an Eingabewerten testen.
+1. Um sich sicherer sein zu können, dass Ihr Code in allen Fällen funktioniert, fügen Sie Tests hinzu, die einen größeren Bereich an Eingabewerten testen.
 
     > [!TIP]
     > Vermeiden Sie, vorhandene erfolgreiche Tests zu ändern. Fügen Sie stattdessen lieber neue Tests hinzu. Ändern Sie vorhandene Tests nur, wenn sich die Benutzeranforderungen ändern. Dieses Vorgehen hilft sicherzustellen, dass durch die Erweiterung des Codes keine vorhandene Funktionalität verloren geht.
@@ -173,13 +172,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
     }
     ```
 
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
      Der neue Test schlägt fehl, obwohl der erste Test weiterhin erfolgreich verläuft.
 
      Um die Fehlerursache herauszufinden, wählen Sie den fehlgeschlagenen Test aus. Wählen Sie dann im unteren Teil des Test-Explorers das oberste Element der **Stapelüberwachung**aus.
 
-3.  Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Schreiben Sie den Code der `MyMath.Rooter` -Klasse neu:
+3. Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Schreiben Sie den Code der `MyMath.Rooter` -Klasse neu:
 
     ```csharp
     public double SquareRoot(double input)
@@ -195,13 +194,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
     }
     ```
 
-4.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+4. Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
      Beide Tests sind nun erfolgreich.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Hinzufügen von Tests für Sonderfälle
 
-1.  Fügen Sie einen Test für negative Eingaben hinzu:
+1. Fügen Sie einen Test für negative Eingaben hinzu:
 
     ```csharp
     [TestMethod]
@@ -220,15 +219,15 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
      }
     ```
 
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+2. Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
      Die zu testende Methode bildet eine Schleife und muss manuell abgebrochen werden.
 
-3.  Wählen Sie **Abbrechen**aus.
+3. Wählen Sie **Abbrechen**aus.
 
      Der Test wird nach 10 Sekunden beendet.
 
-4.  Beheben Sie den Code der Methode:
+4. Beheben Sie den Code der Methode:
 
     ```csharp
 
@@ -241,13 +240,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
     ...
     ```
 
-5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.
+5. Wählen Sie im Test-Explorer **Alle ausführen**aus.
 
      Alle Tests sind erfolgreich.
 
 #### <a name="refactor-without-changing-tests"></a>Den Code umgestalten, ohne Tests zu ändern
 
-1.  Vereinfachen Sie den Code, ohne jedoch die Tests zu ändern.
+1. Vereinfachen Sie den Code, ohne jedoch die Tests zu ändern.
 
     > [!TIP]
     > Eine *Umgestaltung* ist eine Änderung, die vorgenommen wird, damit der Code besser funktioniert oder verständlicher wird. Eine Umgestaltung sieht nicht vor, das Verhalten des Codes zu ändern. Deshalb werden die Tests nicht geändert.
@@ -276,7 +275,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode i
     }
     ```
 
-2.  Wählen Sie **Alle ausführen**aus.
+2. Wählen Sie **Alle ausführen**aus.
 
      Alle Tests sind weiterhin erfolgreich.
 

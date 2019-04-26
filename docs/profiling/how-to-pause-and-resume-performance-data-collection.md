@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442239"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Profilerstellungsdaten interaktiv steuern.
@@ -25,17 +25,17 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
  ![Profilerstellungs-Sitzungsseite](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
->  Sie können die Leistungssitzung auch mit angehaltener Profilerstellung starten und die Profilaustellung zu einem späteren Zeitpunkt in der Programmausführung fortsetzen. Wählen Sie zum Starten der Leistungssitzung bei angehaltener Profilerstellung im Menü **Debuggen** den Befehl **Leistungsanalyse mit angehaltener Profilerstellung starten** aus.
+> Sie können die Leistungssitzung auch mit angehaltener Profilerstellung starten und die Profilaustellung zu einem späteren Zeitpunkt in der Programmausführung fortsetzen. Wählen Sie zum Starten der Leistungssitzung bei angehaltener Profilerstellung im Menü **Debuggen** den Befehl **Leistungsanalyse mit angehaltener Profilerstellung starten** aus.
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>So können Sie die Profilerstellung anhalten, fortsetzen oder beenden
 
--   Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:
+- Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:
 
-    -   Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.
+    - Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.
 
-    -   Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.
+    - Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.
 
-    -   Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.
+    - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)

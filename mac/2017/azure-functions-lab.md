@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933851"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -104,6 +104,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Entfernen Sie die vorhandene `Run`-Methode, und fügen Sie folgende Methode als Azure-Funktion zur Klasse hinzu:
 
     ```csharp
@@ -119,6 +120,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
         return x + y;
     }
     ```
+
 1. Im Folgenden werden die einzelnen Schritte der Methodendefinition durchlaufen.
 
     Zunächst sehen Sie ein **FunctionName**-Attribut, das diese Methode als Azure-Funktion markiert. Dieses Attribut kennzeichnet den öffentlichen Namen der Funktion. Der Attributname muss nicht dem tatsächlichen Methodennamen entsprechen.
@@ -180,6 +182,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     return x + y;
     ```
+
 1. Führen Sie die Anwendung aus.
 
 1. Kehren Sie in das Browserfenster zurück, und fügen Sie die Zeichenfolge `/?x=2&y=3` an die URL an. Die vollständige URL sollte nun `http://localhost:7071/api/Add?x=2&y=3` lauten. Navigieren Sie zur neuen URL.
@@ -188,10 +191,9 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 1. Beenden Sie die Debugsitzung.
 
-
 ## <a name="exercise-4-working-with-functionjson"></a>Übung 4: Arbeiten mit function.json
 
-1.  In einer vorherigen Übung wurde bereits erwähnt, dass Visual Studio für Mac eine Auftragsfunktion für die in der Bibliothek definierte Azure-Funktion generiert hat. Dies ist darin begründet, dass Azure Functions die Methodenattribute nicht zur Laufzeit verwendet, sondern eine Dateisystemkonvention zur Kompilierzeit, um zu konfigurieren, wo und wie Azure-Funktionen zur Verfügung gestellt werden. Klicken Sie im **Lösungspad** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Im Finder anzeigen** aus.
+1. In einer vorherigen Übung wurde bereits erwähnt, dass Visual Studio für Mac eine Auftragsfunktion für die in der Bibliothek definierte Azure-Funktion generiert hat. Dies ist darin begründet, dass Azure Functions die Methodenattribute nicht zur Laufzeit verwendet, sondern eine Dateisystemkonvention zur Kompilierzeit, um zu konfigurieren, wo und wie Azure-Funktionen zur Verfügung gestellt werden. Klicken Sie im **Lösungspad** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Im Finder anzeigen** aus.
 
      ![Option „Im Finder anzeigen“](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
         return x + y;
     }
     ```
+
 1. Drücken Sie **F5**, um das Projekt zu erstellen und auszuführen.
 
 1. Wenn der Build abgeschlossen ist und die Plattform gestartet wurde, wird nun angezeigt, dass eine zweite Route für Anforderungen verfügbar ist, die der neu hinzugefügten Methode zugeordnet ist:
@@ -316,6 +319,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
         public int Sum { get; set; }
     }
     ```
+
 1. Fügen Sie innerhalb der **Add**-Klasse folgenden Code hinzu, um eine weitere Funktion einzuführen. Beachten Sie, dass diese bisher einzigartig ist, da keine HTTP-Antwort enthalten ist. Die letzte Zeile gibt ein neues **TableRow**-Element zurück, das mit einigen wichtigen Informationen (**PartitionKey** und **RowKey**) aufgefüllt wird, damit es und seine Parameter und Summen später leichter abgerufen werden können. Der Code innerhalb der Mode verwendet ebenfalls **TraceWriter**, damit einfacher nachzuvollziehen ist, wann Funktionen ausgeführt werden.
 
     ```csharp
@@ -341,6 +345,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
         };
     }
     ```
+
 1. Drücken Sie **F5**, um das Projekt zu erstellen und auszuführen.
 
 1. Navigieren Sie in der Registerkarte des Browsers zu **http://localhost:7071/api/Process/4/6**. Dadurch wird eine weitere Meldung der Warteschlange hinzugefügt, die schließlich dazu führen soll, dass der Tabelle eine weitere Zeile hinzugefügt wird.
@@ -363,6 +368,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Fügen Sie folgenden Code am Anfang der Methode hinzu. Wenn **TableRow** nicht NULL ist, ist das Ergebnis für den angeforderten Vorgang bereits vorhanden und kann sofort zurückgegeben werden. Andernfalls wird die Funktion wie bisher fortgesetzt. Dies ist zwar nicht die zuverlässigste Methode, um Daten zurückzugeben, aber sie veranschaulicht, dass Sie komplexe Vorgänge mit wenig Code auf mehreren skalierbaren Ebenen orchestrieren können.
 
     ```csharp
@@ -372,6 +378,7 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
         return null;
     }
     ```
+
 1. Drücken Sie **F5**, um das Projekt zu erstellen und auszuführen.
 
 1. Aktualisieren Sie in der Registerkarte des Browsers die URL unter **http://localhost:7071/api/Process/4/6**. Da die Tabellenzeile für diesen Datensatz vorhanden ist, sollte die Rückgabe sofort und ohne Fehler erfolgen. Da es keine HTTP-Ausgabe gibt, wird die Ausgabe im Terminal angezeigt.
@@ -409,4 +416,3 @@ Häufig ist der Dienst, den Sie erstellen, wesentlich komplexer als das, was in 
 ## <a name="summary"></a>Zusammenfassung
 
 In diesem Tutorial haben Sie mehr über die ersten Schritte beim Erstellen von Azure Functions mithilfe von Visual Studio für Mac erfahren.
-

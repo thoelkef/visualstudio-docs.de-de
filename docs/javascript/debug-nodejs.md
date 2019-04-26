@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438010"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -62,8 +62,10 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
     Dadurch wird Chrome mit aktiviertem Debuggen gestartet.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie in der **Debuggen**-Symbolleiste die Option **Browserauswahl…** und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Wechseln Sie zu Visual Studio, und legen Sie in Ihrem Quellcode einen Breakpoint fest. (Legen Sie den Breakpoint in einer Codezeile fest, in der dies zulässig ist, also z. B. in einer `return`-Anweisung oder einer `var`-Deklaration.)

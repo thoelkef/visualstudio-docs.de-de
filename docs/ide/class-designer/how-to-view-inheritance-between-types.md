@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975098"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Anzeigen der Vererbung zwischen Typen im Klassen-Designer
 
@@ -27,9 +27,9 @@ Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp u
 
 ## <a name="to-find-the-base-type"></a>So finden Sie den Basistyp
 
-1.  Klicken Sie im Klassendiagramm auf den Typ, für den Sie die Basisklasse oder -schnittstelle anzeigen möchten.
+1. Klicken Sie im Klassendiagramm auf den Typ, für den Sie die Basisklasse oder -schnittstelle anzeigen möchten.
 
-2.  Wählen Sie im Menü **Klassendiagramm** auf die Option **Basisklasse anzeigen** oder die Option **Basisschnittstelle anzeigen**.
+2. Wählen Sie im Menü **Klassendiagramm** auf die Option **Basisklasse anzeigen** oder die Option **Basisschnittstelle anzeigen**.
 
      Die Basisklasse oder die Basisschnittstelle des Typs werden im Diagramm angezeigt. Eventuell verborgene Vererbungszeilen werden jetzt zwischen den beiden Formen angezeigt.
 
@@ -37,9 +37,9 @@ Sie können auch mit der rechten Maustaste auf den Typ klicken, dessen Basistyp 
 
 ## <a name="to-find-the-derived-types"></a>So finden Sie die abgeleiteten Typen
 
-1.  Klicken Sie im Klassendiagramm auf den Typ, für den Sie die abgeleiteten Klassen oder Schnittstellen anzeigen möchten.
+1. Klicken Sie im Klassendiagramm auf den Typ, für den Sie die abgeleiteten Klassen oder Schnittstellen anzeigen möchten.
 
-2.  Wählen Sie im Menü **Klassendiagramm** die Option **Abgeleitete Klassen anzeigen** oder **Abgeleitete Schnittstellen anzeigen**.
+2. Wählen Sie im Menü **Klassendiagramm** die Option **Abgeleitete Klassen anzeigen** oder **Abgeleitete Schnittstellen anzeigen**.
 
      Im Diagramm werden die abgeleiteten Klassen oder Schnittstellen des Typs angezeigt. Eventuell verborgene Vererbungszeilen werden jetzt zwischen den Formen angezeigt.
 

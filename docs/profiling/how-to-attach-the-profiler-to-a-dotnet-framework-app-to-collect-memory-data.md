@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 459b495ea6f440a670c9a257566b19a1bc8756dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439643"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten über die Befehlszeile
 
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der Visual Studio-Profilerstellungstools an eine aktive eigenständige .NET Framework-Clientanwendung angefügt wird und Arbeitsspeicherdaten erfasst werden können.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
 Zum Anfügen an eine .NET Framework-Anwendung und Sammeln von Arbeitsspeicherdaten müssen Sie mit dem Tool [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) die entsprechenden Umgebungsvariablen initialisieren, bevor die Zielanwendung gestartet wird. Wenn der Profiler an die Anwendung angefügt ist, können Sie die Datensammlung mit dem *VSPerfCmd.exe*-Tool anhalten und fortsetzen.
 
@@ -55,14 +55,12 @@ Um eine Profilerstellungssitzung zu beenden, muss der Profiler von allen profili
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.
 
-
      | Option | Beschreibung |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte „Prozesse“ in der Spalte „Benutzername“ des Windows Task-Managers aufgeführt. |
      | [/crosssession | /cs](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Sitzungen. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte Prozesse in der Spalte Sitzungs-ID des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. |
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
      | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
-
 
 4. Starten Sie die Zielanwendung ggf. in der üblichen Weise.
 

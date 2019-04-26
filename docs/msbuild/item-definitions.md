@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006779"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mit dem [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Element. Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.

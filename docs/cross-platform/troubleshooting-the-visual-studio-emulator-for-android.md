@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6ddded653314463f6ff4460b10543c6a21f15d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403041"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Problembehandlung beim Visual Studio-Emulator für Android
 Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen helfen, die bei der Verwendung des Visual Studio-Emulators für Android auftreten können.
@@ -25,56 +25,56 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
  Dieses Thema enthält folgende Abschnitte:
 
--   [Vor der Installation](#BeforeYouStart)
+- [Vor der Installation](#BeforeYouStart)
 
--   [Fehler bei der Installation des Emulators](#NoInstall)
+- [Fehler bei der Installation des Emulators](#NoInstall)
 
--   [Keine Verbindung zu Netzwerk-Zielen in einer Domäne oder im Unternehmensnetzwerk](#DomainNetwork)
+- [Keine Verbindung zu Netzwerk-Zielen in einer Domäne oder im Unternehmensnetzwerk](#DomainNetwork)
 
--   [Keine Verbindung zu Netzwerk-Zielen möglich, wenn die Netzwerkeinstellungen eine manuelle Konfiguration erfordern](#ManualNetworkConfig)
+- [Keine Verbindung zu Netzwerk-Zielen möglich, wenn die Netzwerkeinstellungen eine manuelle Konfiguration erfordern](#ManualNetworkConfig)
 
--   [Der Emulator startet langsam, kann wegen einer Zeitüberschreitung nicht gestartet werden oder bei der App-Bereitstellung ist ein Fehler aufgetreten](#SlowStart)
+- [Der Emulator startet langsam, kann wegen einer Zeitüberschreitung nicht gestartet werden oder bei der App-Bereitstellung ist ein Fehler aufgetreten](#SlowStart)
 
--   [Fehler beim Starten des Emulators](#NoStart2)
+- [Fehler beim Starten des Emulators](#NoStart2)
 
--   [Emulator fails to start (first use)](#NoStart)
+- [Emulator fails to start (first use)](#NoStart)
 
--   [Der Computer kann nach der Installation des Emulators nicht mehr gestartet werden](#NoBoot)
+- [Der Computer kann nach der Installation des Emulators nicht mehr gestartet werden](#NoBoot)
 
--   [Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt](#ADB)
+- [Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt](#ADB)
 
--   [Der Emulator hängt, da er den UDP-Port nicht einrichten konnte](#XamarinPlayer)
+- [Der Emulator hängt, da er den UDP-Port nicht einrichten konnte](#XamarinPlayer)
 
--   [Der Debugger kann nicht an ein Xamarin-Projekt angefügt werden](#Skylake)
+- [Der Debugger kann nicht an ein Xamarin-Projekt angefügt werden](#Skylake)
 
--   [Fehler beim Ausführen einer App, die Google Play-Dienste benötigt, durch den Emulator](#GooglePlay)
+- [Fehler beim Ausführen einer App, die Google Play-Dienste benötigt, durch den Emulator](#GooglePlay)
 
--   [Es ist jedoch nicht möglich, eine Datei, ein APK oder eine flashbare ZIP-Datei per Drag-and-Drop zu verschieben.](#DragAndDrop)
+- [Es ist jedoch nicht möglich, eine Datei, ein APK oder eine flashbare ZIP-Datei per Drag-and-Drop zu verschieben.](#DragAndDrop)
 
--   [Auflösung des Screenshots ist falsch](#Resolution)
+- [Auflösung des Screenshots ist falsch](#Resolution)
 
--   [Beim Rendern der OpenGL-Inhalte durch den Emulator ist ein Fehler aufgetreten](#OpenGL)
+- [Beim Rendern der OpenGL-Inhalte durch den Emulator ist ein Fehler aufgetreten](#OpenGL)
 
--   [Der Emulator reagiert nicht auf Multitouch-Gesten](#Multitouch)
+- [Der Emulator reagiert nicht auf Multitouch-Gesten](#Multitouch)
 
--   [Supportressourcen](#Support)
+- [Supportressourcen](#Support)
 
-##  <a name="BeforeYouStart"></a> Vor der Installation
+## <a name="BeforeYouStart"></a> Vor der Installation
  Bevor Sie mit der Problembehandlung beginnen, kann es sinnvoll sein, folgende Themen zu überprüfen:
 
--   [Systemanforderungen für den Visual Studio-Emulator für Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Systemanforderungen für den Visual Studio-Emulator für Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
-##  <a name="NoInstall"></a> Fehler bei der Installation des Emulators
+## <a name="NoInstall"></a> Fehler bei der Installation des Emulators
  Wenn Hyper-V auf Ihrem System nicht installiert ist, wird bei dem Versuch, den Emulator zu installieren, die folgende Meldung angezeigt: Sie müssen einen Computer verwenden, der HyperV unterstützt, und HyperV muss aktiviert sein.
 
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Diese Meldung betrifft sowohl den Visual Studio Emulator für Android als auch den Windows Phone-Emulator. Windows 8.1 und Windows 10 unterstützen den Emulator
+> Diese Meldung betrifft sowohl den Visual Studio Emulator für Android als auch den Windows Phone-Emulator. Windows 8.1 und Windows 10 unterstützen den Emulator
 
  Wenn diese Meldung angezeigt wird, überprüfen Sie die [Systemanforderungen für den Visual Studio-Emulator für Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md), um zu prüfen, ob Sie den Emulator ausführen können.
 
-##  <a name="DomainNetwork"></a> Keine Verbindung zu Netzwerk-Zielen in einer Domäne oder im Unternehmensnetzwerk
+## <a name="DomainNetwork"></a> Keine Verbindung zu Netzwerk-Zielen in einer Domäne oder im Unternehmensnetzwerk
  Der Visual Studio-Emulator für Android wird im Netzwerk als separates Gerät mit eigener IP-Adresse angezeigt. Es ist mit keiner Windows-Domäne verknüpft und das Gerät gibt keine Domänen- oder Arbeitsgruppen-Anmeldeinformationen auf dem Hostcomputer frei.
 
  Wenn Ihr Netzwerk eine Domänen- oder Arbeitsgruppen-Autorisierung für die grundlegende Netzwerk- und Internetkonnektivität erfordert, wenden Sie sich wegen einer Ausnahme an Ihren IT-Administrator. Mithilfe dieser Ausnahme kann Ihr Entwicklungscomputer als Grenzcomputer dienen und zum Akzeptieren von nicht der Domäne beigetretenen Netzwerkgeräten verwendet werden.
@@ -83,15 +83,15 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
 #### <a name="to-view-the-emulators-mac-addresses"></a>So zeigen Sie die MAC-Adressen des Emulators an
 
-1.  Ausführen des Emulators
+1. Ausführen des Emulators
 
-2.  Klicken Sie in der Symbolleiste des Emulators auf die Chevronschaltfläche (>>), um das Fenster „zusätzliche Tools“ zu öffnen.
+2. Klicken Sie in der Symbolleiste des Emulators auf die Chevronschaltfläche (>>), um das Fenster „zusätzliche Tools“ zu öffnen.
 
-3.  Klicken Sie im Fenster „zusätzliche Tools“ auf die Registerkarte „Netzwerk“.
+3. Klicken Sie im Fenster „zusätzliche Tools“ auf die Registerkarte „Netzwerk“.
 
-4.  Suchen Sie auf der Seite „Netzwerk“ die physische Adresseinträge aus.
+4. Suchen Sie auf der Seite „Netzwerk“ die physische Adresseinträge aus.
 
-##  <a name="ManualNetworkConfig"></a> Keine Verbindung zu Netzwerk-Zielen möglich, wenn die Netzwerkeinstellungen eine manuelle Konfiguration erfordern
+## <a name="ManualNetworkConfig"></a> Keine Verbindung zu Netzwerk-Zielen möglich, wenn die Netzwerkeinstellungen eine manuelle Konfiguration erfordern
  Zum Herstellen einer Verbindung zu Netzwerk-Zielen über den Emulator muss Ihr Netzwerk folgende Anforderungen erfüllen:
 
 - DHCP. Emulator erfordert DHCP, da er sich selbst als separates Gerät im Netzwerk mit eigener IP-Adresse konfiguriert.
@@ -100,45 +100,45 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   Wenn Ihr Netzwerk manuell konfigurierte Einstellungen erfordert, wenden Sie sich an Ihren IT-Administrator, um zu bestimmen, wie Sie die Netzwerkkonnektivität für den Emulator aktivieren können.
 
-##  <a name="SlowStart"></a> Der Emulator startet langsam, kann wegen einer Zeitüberschreitung nicht gestartet werden oder bei der App-Bereitstellung ist ein Fehler aufgetreten
+## <a name="SlowStart"></a> Der Emulator startet langsam, kann wegen einer Zeitüberschreitung nicht gestartet werden oder bei der App-Bereitstellung ist ein Fehler aufgetreten
  Unter bestimmten Bedingungen dauert der Start des Emulators einige Minuten oder beim Starten ist aufgrund einer Zeitüberschreitung ein Fehler aufgetreten. Wenn der Emulator nicht gestartet werden kann, wird folgende Meldung angezeigt: `App deployment failed. Please try again`. Folgende Bedingungen können zu diesem Fehler führen.
 
--   Das Ausführen des Visual Studio-Emulators für Android über eine startfähige, virtuelle Festplatte. Diese Konfiguration wird nicht unterstützt.
+- Das Ausführen des Visual Studio-Emulators für Android über eine startfähige, virtuelle Festplatte. Diese Konfiguration wird nicht unterstützt.
 
--   Eine fehlerhafte Festplatte. Erwägen Sie, das CHKDSK-Programm auszuführen.
+- Eine fehlerhafte Festplatte. Erwägen Sie, das CHKDSK-Programm auszuführen.
 
--   Eine Festplatte, die defragmentiert werden muss. Erwägen Sie, das Laufwerk zu defragmentieren.
+- Eine Festplatte, die defragmentiert werden muss. Erwägen Sie, das Laufwerk zu defragmentieren.
 
--   Eine Festplatte, die fast voll ist. Überprüfen Sie den auf dem Laufwerk verfügbaren Speicherplatz.
+- Eine Festplatte, die fast voll ist. Überprüfen Sie den auf dem Laufwerk verfügbaren Speicherplatz.
 
--   Aufgrund von anderen ausgeführten Anwendungen ist nicht genügend Arbeitsspeicher verfügbar. Reduzieren Sie die Anzahl der Anwendungen, die Arbeitsspeicher verbrauchen, oder erhöhen die Größe des Arbeitsspeichers.
+- Aufgrund von anderen ausgeführten Anwendungen ist nicht genügend Arbeitsspeicher verfügbar. Reduzieren Sie die Anzahl der Anwendungen, die Arbeitsspeicher verbrauchen, oder erhöhen die Größe des Arbeitsspeichers.
 
--   In der Regel alle Faktoren, die zu einer Leistungsschwächung des Systems beitragen. Beginnen Sie die Problembehandlung mit der Komponente, die die niedrigste Bewertung im Windows-Leistungsindex besitzt, diesen finden Sie auf der Seite "Leistungsinformationen und Tools" der Systemsteuerung.
+- In der Regel alle Faktoren, die zu einer Leistungsschwächung des Systems beitragen. Beginnen Sie die Problembehandlung mit der Komponente, die die niedrigste Bewertung im Windows-Leistungsindex besitzt, diesen finden Sie auf der Seite "Leistungsinformationen und Tools" der Systemsteuerung.
 
-##  <a name="NoStart2"></a> Fehler beim Starten des Emulators
+## <a name="NoStart2"></a> Fehler beim Starten des Emulators
  Wenn der Emulator zuvor funktioniert hat, aber jetzt nicht funktioniert, arbeiten Sie die folgenden Aufgaben durch. Wenn Sie den Emulator zum ersten Mal verwenden, lesen Sie [Emulator fails to start (first use)](#NoStart) , bevor Sie die nächsten Schritte ausführen.
 
--   Entfernen Sie alle anderen Hyper-V-Instanzen des Emulators.
+- Entfernen Sie alle anderen Hyper-V-Instanzen des Emulators.
 
-    1.  Schließen Sie Visual Studio.
+    1. Schließen Sie Visual Studio.
 
-    2.  Öffnen Sie den Hyper-V-Manager, und beenden Sie alle Hyper-V-Instanzen des Emulators (virtuelle Computer), die bereits ausgeführt werden und möglicherweise beschädigt sind.
+    2. Öffnen Sie den Hyper-V-Manager, und beenden Sie alle Hyper-V-Instanzen des Emulators (virtuelle Computer), die bereits ausgeführt werden und möglicherweise beschädigt sind.
 
-    3.  Löschen Sie im Hyper-V-Manager alle anderen Emulator-VMs.
+    3. Löschen Sie im Hyper-V-Manager alle anderen Emulator-VMs.
 
-    4.  Starten Sie den Computer neu.
+    4. Starten Sie den Computer neu.
 
--   Stellen Sie sicher, dass Sie über mindestens 4 GB Systemspeicher verfügen und dass diese nicht von anderen ressourcenintensiven Programmen und Prozessen in Anspruch genommen werden (versuchen Sie z.B. alle Browserfenster zu schließen).
+- Stellen Sie sicher, dass Sie über mindestens 4 GB Systemspeicher verfügen und dass diese nicht von anderen ressourcenintensiven Programmen und Prozessen in Anspruch genommen werden (versuchen Sie z.B. alle Browserfenster zu schließen).
 
--   Öffnen Sie im Hyper-V-Manager den Manager für virtuelle Switches, und überprüfen Sie, ob zwei Netzwerkswitches vorhanden sind; überprüfen Sie, ob der erste der interne Switch und der zweite der externe Switch ist.
+- Öffnen Sie im Hyper-V-Manager den Manager für virtuelle Switches, und überprüfen Sie, ob zwei Netzwerkswitches vorhanden sind; überprüfen Sie, ob der erste der interne Switch und der zweite der externe Switch ist.
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      Wenn das Setup fehlerhaft ist und Sie Windows 10 verwenden, können Sie versuchen, [Netzwerkgeräte mit dem Befehl netcfg –d erneut zu installieren](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (Abschnitt 6).
 
--   Wenn sich das Problem mit diesen Schritten nicht beheben lässt, finden Sie unter [Emulator fails to start (first use)](#NoStart) Informationen zur Software von Drittanbietern, die möglicherweise zu Konflikten mit dem Emulator führen.
+- Wenn sich das Problem mit diesen Schritten nicht beheben lässt, finden Sie unter [Emulator fails to start (first use)](#NoStart) Informationen zur Software von Drittanbietern, die möglicherweise zu Konflikten mit dem Emulator führen.
 
-##  <a name="NoStart"></a> Emulator fails to start (first use)
+## <a name="NoStart"></a> Emulator fails to start (first use)
  Wenn der Emulator nicht gestartet wird, gehen Sie die folgenden Aufgaben durch, um das Problem zu ermitteln und zu beheben.
 
 - Stellen Sie sicher, dass die Mindesthardwareanforderungen erfüllt sind und die BIOS-Einstellungen korrekt sind.
@@ -151,21 +151,21 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   3. Vergewissern Sie sich in den BIOS-Einstellungen Ihres Computers, dass alle Virtualisierungstechnologien aktiviert sind. Die genauen BIOS-Beschreibungen können je nach Hardwarehersteller variieren. Aktivieren Sie folgende Funktionen:
 
-     -   SLAT (Second Level Address Translation)
+     - SLAT (Second Level Address Translation)
 
-     -   EPT (Extended Page Tables) (Intel)
+     - EPT (Extended Page Tables) (Intel)
 
-     -   NPT (Nested Page Tables) (AMD)
+     - NPT (Nested Page Tables) (AMD)
 
-     -   RVI (Rapid Virtualization Indexing) (AMD)
+     - RVI (Rapid Virtualization Indexing) (AMD)
 
-     -   VMX (ein Intel-Akronym für die Angabe hardwaregestützter Virtualisierungsunterstützung)
+     - VMX (ein Intel-Akronym für die Angabe hardwaregestützter Virtualisierungsunterstützung)
 
-     -   SMX (ein AMD-Akronym für die Angabe hardwaregestützter Virtualisierungsunterstützung)
+     - SMX (ein AMD-Akronym für die Angabe hardwaregestützter Virtualisierungsunterstützung)
 
-     -   XD (Execute Disable) (Intel); Diese Funktion muss aktiviert sein
+     - XD (Execute Disable) (Intel); Diese Funktion muss aktiviert sein
 
-     -   NX (No Execute)(AMD); Diese Funktion muss aktiviert sein.
+     - NX (No Execute)(AMD); Diese Funktion muss aktiviert sein.
 
   4. Wenn Sie die folgenden Optionen im BIOS aktiviert sind, deaktivieren Sie sie.
 
@@ -217,21 +217,21 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   3. Für diesen Adapter sollten nur die folgenden Elemente unter **diese Verbindung verwendet folgende Elemente** ausgewählt werden:
 
-     -   Client für Microsoft-Netzwerke
+     - Client für Microsoft-Netzwerke
 
-     -   QoS-Paketplaner
+     - QoS-Paketplaner
 
-     -   Datei- und Druckerfreigabe für Microsoft-Netzwerke
+     - Datei- und Druckerfreigabe für Microsoft-Netzwerke
 
-     -   Microsoft LLDP-Protokolltreiber
+     - Microsoft LLDP-Protokolltreiber
 
-     -   E/A-Treiber für Verbindungsschicht-Topologieerkennungszuordnung
+     - E/A-Treiber für Verbindungsschicht-Topologieerkennungszuordnung
 
-     -   Antwort für Verbindungsschicht-Topologieerkennung
+     - Antwort für Verbindungsschicht-Topologieerkennung
 
-     -   Internetprotokoll Version 6 (TCP/IPv6)
+     - Internetprotokoll Version 6 (TCP/IPv6)
 
-     -   Internetprotokoll Version 4 (TCP/IPv4)
+     - Internetprotokoll Version 4 (TCP/IPv4)
 
   4. Deaktivieren Sie die Auswahl aller anderen Elemente.
 
@@ -245,7 +245,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
     Starten Sie jetzt den Emulator. Es sollte funktionieren.
 
-##  <a name="NoBoot"></a> Der Computer kann nach der Installation des Emulators nicht mehr gestartet werden
+## <a name="NoBoot"></a> Der Computer kann nach der Installation des Emulators nicht mehr gestartet werden
  Dieses Problem kann auftreten, wenn folgende Bedingungen erfüllt sind:
 
 - Ihr Computer verfügt über ein Gigabyte-Motherboard
@@ -256,7 +256,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   Weitere Informationen finden Sie in folgendem Artikel in der Wissensdatenbank: [Boot failure after installation of Hyper-V role on Gigabyte systems (Startfehler nach der Installation der Hyper-V-Rolle auf GIGABYTE-Systemen)](https://support.microsoft.com/en-us/kb/2693144).
 
-##  <a name="ADB"></a> Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt
+## <a name="ADB"></a> Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt
  Wenn der Emulator ausgeführt wird, jedoch anscheinend nicht mit der ADB (Android Debug Bridge) verbunden ist oder in Android-Tools nicht angezeigt wird, die ADB verwenden (z. B. Android Studio oder Eclipse), müssen Sie möglicherweise den Ort anpassen, an dem der Emulator nach ADB sucht. Der Emulator verwendet zum Ermitteln des Speicherorts Ihres Android SDK einen Registrierungsschlüssel und sucht in dem Verzeichnis nach der \platform-tools\adb.exe-Datei. So ändern Sie den vom Emulator verwendeten Android-SDK-Pfad:
 
 - Öffnen Sie den Registrierungs-Editor, indem Sie im Kontextmenü der Startschaltfläche **Ausführen** auswählen, im Dialogfeld `regedit` eingeben und **OK**auswählen.
@@ -267,50 +267,50 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   Starten den Emulator neu, nun sollte Ihnen angezeigt werden, dass der Emulator mit ADB und entsprechenden Android-Tools verbunden ist.
 
-##  <a name="XamarinPlayer"></a> Der Emulator hängt, da er den UDP-Port nicht einrichten konnte
- Dieses Problem tritt möglicherweise aufgrund von Inkompatibilität mit Xamarin Player auf. Wenn der Emulator nicht zu reagieren scheint oder Sie die Fehlermeldung „The emulator is unable to connect to the device operating system: Couldn't set up the UDP port.  Some functionality might be disabled.“ (Der Emulator kann keine Verbindung zum Betriebssystem des Geräts herstellen: Der UDP-Port konnte nicht eingerichtet werden. Einige Funktionen sind möglicherweise deaktiviert.) sehen, liegt bei Ihnen möglicherweise dieses Problem vor. Führen Sie die folgenden Schritte aus:
+## <a name="XamarinPlayer"></a> Der Emulator hängt, da er den UDP-Port nicht einrichten konnte
+ Dieses Problem tritt möglicherweise aufgrund von Inkompatibilität mit Xamarin Player auf. Wenn der Emulator nicht zu reagieren scheint oder Sie die Fehlermeldung „The emulator is unable to connect to the device operating system: Couldn't set up the UDP port.  Einige Funktionen sind möglicherweise deaktiviert“, liegt bei Ihnen möglicherweise dieses Problem vor. Führen Sie die folgenden Schritte aus:
 
-1.  Deinstallieren Sie Xamarin
+1. Deinstallieren Sie Xamarin
 
-2.  Vergewissern Sie sich, dass Virtual Box entfernt wurde (Xamarin Player wird in Virtual Box ausgeführt).
+2. Vergewissern Sie sich, dass Virtual Box entfernt wurde (Xamarin Player wird in Virtual Box ausgeführt).
 
-3.  Wechseln Sie zum Geräte-Manager, wählen Sie die Option zum Anzeigen von ausgeblendeten Geräten aus, und löschen Sie alles mit Ausnahme der physischen Netzwerkkarten.
+3. Wechseln Sie zum Geräte-Manager, wählen Sie die Option zum Anzeigen von ausgeblendeten Geräten aus, und löschen Sie alles mit Ausnahme der physischen Netzwerkkarten.
 
-4.  Nachdem Sie alle nicht physischen Netzwerkadapter entfernt haben, können Sie versuchen, Hyper-V zu deinstallieren und erneut zu installieren.
+4. Nachdem Sie alle nicht physischen Netzwerkadapter entfernt haben, können Sie versuchen, Hyper-V zu deinstallieren und erneut zu installieren.
 
-##  <a name="Skylake"></a> Debugger kann nicht an ein Xamarin-Projekt angefügt werden
+## <a name="Skylake"></a> Debugger kann nicht an ein Xamarin-Projekt angefügt werden
  Wenn Sie Windows 10 mit Intel Skylake-Prozessoren nutzen, können Xamarin-Apps möglicherweise nicht im Emulator ausgeführt werden oder der Visual Studio-Debugger kann nicht an sie angefügt werden. Der Grund dafür ist ein Problem mit Hyper-V und Skylake-Prozessoren. Führen Sie zur Problemumgehung folgende Schritte aus.
 
-1.  Öffnen Sie den Hyper-V-Manager und wählen Sie den virtuellen Computer für das Emulatorprofil aus, das Sie verwenden.
+1. Öffnen Sie den Hyper-V-Manager und wählen Sie den virtuellen Computer für das Emulatorprofil aus, das Sie verwenden.
 
-2.  Wählen Sie **Delete Saved State** (Gespeicherten Status löschen) aus (unten rechts).
+2. Wählen Sie **Delete Saved State** (Gespeicherten Status löschen) aus (unten rechts).
 
-3.  Wählen Sie **Settings...** (Einstellungen...).
+3. Wählen Sie **Settings...** (Einstellungen...).
 
-4.  Erweitern Sie den Prozessorknoten und wählen Sie **Kompatibilität**.
+4. Erweitern Sie den Prozessorknoten und wählen Sie **Kompatibilität**.
 
-5.  Aktivieren Sie **Migrate to a physical computer with a different processor version** (Zu einem physischen Computer mit einer anderen Prozessorversion migrieren).
+5. Aktivieren Sie **Migrate to a physical computer with a different processor version** (Zu einem physischen Computer mit einer anderen Prozessorversion migrieren).
 
-6.  Starten Sie den Dienst neu (unter **Actions**(Aktionen)) und versuchen Sie es erneut.
+6. Starten Sie den Dienst neu (unter **Actions**(Aktionen)) und versuchen Sie es erneut.
 
-##  <a name="GooglePlay"></a> Fehler beim Ausführen einer App, die Google Play-Dienste benötigt, durch den Emulator
+## <a name="GooglePlay"></a> Fehler beim Ausführen einer App, die Google Play-Dienste benötigt, durch den Emulator
  Der Emulator wird nicht mit den Bibliotheken für Google Play-Dienste bereitgestellt. Der Emulator unterstützt jedoch die Drag-and-Drop-Installation von flashbaren ZIP-Dateien.
 
-##  <a name="DragAndDrop"></a> Es ist jedoch nicht möglich, eine Datei, ein APK oder eine flashbare ZIP-Datei per Drag-and-Drop zu verschieben.
+## <a name="DragAndDrop"></a> Es ist jedoch nicht möglich, eine Datei, ein APK oder eine flashbare ZIP-Datei per Drag-and-Drop zu verschieben.
  Der Emulator verwendet die ADB.exe, um die Dateiübertragung beim Ausführen von Drag & Drop einer Datei auf dem Bildschirm zu vereinfachen. Wenn beim Drag & Drop einer Datei ein Fehler auftritt, liegt das wahrscheinlich daran, dass der Emulator nicht mit der ADB.exe verbunden ist. Führen Sie zum Beheben des Fehlers die Schritte unter [Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt](#ADB).
 
-##  <a name="Resolution"></a> Auflösung des Screenshots ist falsch
+## <a name="Resolution"></a> Auflösung des Screenshots ist falsch
  Wenn Sie mit der Registerkarte „Screenshot“ im Fenster **zusätzliche Tools** einen Screenshot ersteleln und die erzeugte Datei eine unerwartete Größe besitzt, müssen Sie möglicherweise die Zoomstufe des Bildschirms anpassen, bevor Sie auf **Aufnehmen**klicken. Der Emulator erstellt Screenshots in der Auflösung des Bildschirms auf Ihrem Host-PC-Monitor.
 
-##  <a name="OpenGL"></a> Beim Rendern der OpenGL-Inhalte durch den Emulator ist ein Fehler aufgetreten
+## <a name="OpenGL"></a> Beim Rendern der OpenGL-Inhalte durch den Emulator ist ein Fehler aufgetreten
  Der Emulator rendert OpenGL-Inhalte mithilfe des GPU des Host-Computers und verwendet das ANGLE-Projekt zum Konvertieren dieser Aufrufe in und aus DirectX. Wenn die Anwendung auf einem Gerät ordnungsgemäß, jedoch im Emulator falsch rendert, liegt das wahrscheinlich daran, dass das Gerät den falschen OpenGL-Aufruf (z. B. anhand von Shader-Variablen, die nicht übereinstimmen) mindert.
 
-##  <a name="Multitouch"></a> Der Emulator reagiert nicht auf Multitouch-Gesten
+## <a name="Multitouch"></a> Der Emulator reagiert nicht auf Multitouch-Gesten
  In einigen Fällen startet der Emulator und reagiert nicht auf Multitouch-Gestern über die direkte Interaktion Ihrer berührungsgesteuerten Anzeige oder mithilfe eines Multi-Touch-Tools in der Symbolleiste des Emulators. Wenn dies der Fall ist, klicken Sie in der Emulator-Symbolleiste auf die Schaltfläche **Drehen** , und versuchen Sie die Multi-Touch-Geste erneut zu verwenden. Wenn das Problem weiterhin besteht, informieren Sie sich im Thema [Beim Rendern der OpenGL-Inhalte durch den Emulator ist ein Fehler aufgetreten](#OpenGL) .
 
-##  <a name="Support"></a> Supportressourcen
+## <a name="Support"></a> Supportressourcen
  Wenn Ihr Hostcomputer die Systemanforderungen erfüllt und Sie ein Problem feststellen, das in diesem Handbuch zur Problembehandlung nicht erörtert wird, müssen Sie Folgendes vornehmen:
 
--   Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) und "visual-studio".
+- Stellen Sie eine Frage zu StackOverflow unter Verwendung der Tags [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) und "visual-studio".
 
--   Melden Sie ein Problem mithilfe des Tools „Lächeln senden“ in Visual Studio oder im Emulator-Manager.
+- Melden Sie ein Problem mithilfe des Tools „Lächeln senden“ in Visual Studio oder im Emulator-Manager.

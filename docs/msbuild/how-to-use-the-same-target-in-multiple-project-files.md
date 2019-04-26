@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38ebb717b351bacdb5704b72af25320fd98763c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977176"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien
 Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien autorisiert haben, haben Sie möglicherweise festgestellt, dass Sie die gleichen Aufgaben und Ziele in verschiedenen Projektdateien verwenden müssen. Statt die vollständige Beschreibung dieser Aufgaben oder Ziele in jede Projektdatei einzuschließen, können Sie ein Ziel in einer separaten Projektdatei speichern und dieses Projekt anschließend in einem beliebigen anderen Projekt importieren, in dem das Ziel verwendet werden muss.
@@ -26,13 +26,13 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 
 #### <a name="to-import-a-project"></a>So importieren Sie ein Projekt
 
-1.  Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.
+1. Definieren Sie in der importierten Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.
 
-2.  Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:
+2. Verwenden Sie das `Import`-Element zum Importieren des Projekts. Beispiel:
 
      `<Import Project="MyCommon.targets"/>`
 
-3.  Definieren Sie nach dem `Import`-Element alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.
+3. Definieren Sie nach dem `Import`-Element alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.
 
 ## <a name="order-of-evaluation"></a>Reihenfolge der Auswertung
  Wenn [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ein `Import`-Element erreicht, wird das importierte Projekt effektiv in das importierte Projekt an den Speicherort des `Import`-Elements eingefügt. Aus diesem Grund kann der Speicherort des `Import`-Elements Auswirkungen auf die Werte der Eigenschaften und Elemente haben. Die Eigenschaften und Elemente, die durch das importierte Projekt festgelegt wurden, und die Eigenschaften und Elemente, die vom importierten Projekt verwendet werden, müssen bekannt sein.
@@ -74,11 +74,11 @@ Wenn Sie mehrere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 
 #### <a name="use-the-following-approach-when-importing-projects"></a>Gehen Sie beim Importieren von Projekten wie folgt vor
 
-1.  Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.
+1. Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, die als Parameter für Eigenschaften und Elemente im importierten Projekt verwendet werden.
 
-2.  Importieren Sie das Projekt.
+2. Importieren Sie das Projekt.
 
-3.  Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.
+3. Definieren Sie in der Projektdatei alle Eigenschaften und Elemente, mit denen Standarddefinitionen von Eigenschaften und Elementen im importierten Projekt überschrieben werden müssen.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Codebeispiel wird die Datei *MyCommon.targets* dargestellt, die im zweiten Codebeispiel importiert wird. Die *TARGETS*-Datei wertet Eigenschaften des importierten Projekts für die Konfiguration des Builds aus.

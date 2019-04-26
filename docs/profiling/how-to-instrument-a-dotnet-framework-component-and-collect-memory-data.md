@@ -8,19 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b49f87013671d459c0cd5843b9ecb4c4a0b3ae74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06fd67a62e37b3e498272fcc629b479b50c42944
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436753"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Vorgehensweise: Instrumentieren einer eigenständigen .NET Framework-Komponente und Sammeln von Speicherdaten über die Befehlszeile mit dem Profiler
 In diesem Artikel wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools eine .NET Framework-Komponente einer eigenständigen Anwendung wie eine EXE- oder eine DLL-Datei instrumentiert wird und wie Arbeitsspeicherinformationen mit dem Profiler gesammelt werden.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
-
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
  Um Arbeitsspeicherdaten einer .NET Framework-Komponente mit der Instrumentierungsmethode zu erfassen, verwenden Sie das Tool [VSInstr.exe](../profiling/vsinstr.md), um eine instrumentierte Version der Komponente und des Tools [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) zu generieren und Profilerstellungs-Umgebungsvariablen zu initialisieren. Danach starten Sie den Profiler mit dem Tool *VSPerfCmd.exe*.
 
@@ -40,7 +39,7 @@ In diesem Artikel wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE
 
     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
 
-   -   Mit den Optionen **/tracegc** und **/tracegclife** werden die Umgebungsvariablen so initialisiert, dass entweder nur Daten zur Speicherbelegung oder Daten zur Speicherbelegung und der Objektlebensdauer gesammelt werden.
+   - Mit den Optionen **/tracegc** und **/tracegclife** werden die Umgebungsvariablen so initialisiert, dass entweder nur Daten zur Speicherbelegung oder Daten zur Speicherbelegung und der Objektlebensdauer gesammelt werden.
 
        |Option|Beschreibung|
        |------------|-----------------|
@@ -67,7 +66,6 @@ In diesem Artikel wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE
    | [/counter](../profiling/counter.md) **:** `Config` | Sammelt Informationen aus dem in Config angegebenen Prozessorleistungsindikator. Informationen zu Leistungsindikatoren werden den Daten hinzugefügt, die bei jedem Profilerstellungsereignis gesammelt werden. |
    | [Ereignisse](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
 
-
 5. Starten Sie die Zielanwendung über das Eingabeaufforderungsfenster.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
@@ -75,7 +73,7 @@ In diesem Artikel wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
     |Option|Beschreibung|
     |------------|-----------------|
@@ -88,13 +86,13 @@ In diesem Artikel wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-1.  Schließen Sie die Zielanwendung.
+1. Schließen Sie die Zielanwendung.
 
-2.  Schließen Sie den Profiler. Typ:
+2. Schließen Sie den Profiler. Typ:
 
      **VSPerfCmd /shutdown**
 
-3.  (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
+3. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
 
      **VSPerfCmd /off**
 

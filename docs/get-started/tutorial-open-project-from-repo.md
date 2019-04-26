@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944123"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Öffnen eines Projekts von einem Repository aus
 
@@ -27,7 +27,7 @@ In diesem Tutorial verwenden Sie Visual Studio, um erstmalig eine Verbindung mit
 
 ::: moniker range="vs-2017"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 1. Wählen Sie im Startfenster **Code klonen oder auschecken** aus.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
 1. Geben Sie den Repositoryspeicherort ein, und klicken Sie dann auf **Klonen**.
 
@@ -140,7 +140,7 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 1. Wählen Sie im Startfenster **Code klonen oder auschecken** aus.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
 1. Klicken Sie im Abschnitt **Repository durchsuchen** auf **Azure DevOps**.
 
@@ -185,5 +185,5 @@ Wenn Sie mit dem Codieren mit Visual Studio loslegen möchten, können Sie sich 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Azure DevOps Services: Get started with Azure Repos and Visual Studio (Azure DevOps Services: Erste Schritte mit Azure Repos und Visual Studio)](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: Erste Schritte mit Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Erste Schritte mit Azure Repos und Visual Studio)
+- [Microsoft Learn: Get started with Azure DevOps](/learn/modules/get-started-with-devops/) (Microsoft Learn: Erste Schritte mit Azure DevOps)

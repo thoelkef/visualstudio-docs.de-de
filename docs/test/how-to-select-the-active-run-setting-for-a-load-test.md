@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949941"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Vorgehensweise: Auswählen der aktiven Laufzeiteinstellungen für einen Auslastungstest
 
@@ -26,28 +26,28 @@ Ein Auslastungstest kann mehrere *Laufzeiteinstellungen* enthalten. Laufzeiteins
 > [!NOTE]
 > Eine vollständige Liste der Laufzeiteinstellungseigenschaften und deren Beschreibungen finden Sie unter [Eigenschaften von Laufzeiteinstellungen für Auslastungstests](../test/load-test-run-settings-properties.md).
 
-Wenn Ihr Auslastungstest im Ordner **Laufzeiteinstellungen** nur einen Laufzeiteinstellungsknoten enthält, handelt es sich bei diesem Knoten immer um den aktiven Knoten. Wenn der Auslastungstest mehrere Laufzeiteinstellungsknoten enthält, können Sie den Knoten auswählen, der bei der Ausführung des Auslastungstests verwendet werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Wenn Ihr Auslastungstest im Ordner **Laufzeiteinstellungen** nur einen Laufzeiteinstellungsknoten enthält, handelt es sich bei diesem Knoten immer um den aktiven Knoten. Wenn der Auslastungstest mehrere Testlaufeinstellungsknoten enthält, können Sie den Knoten auswählen, der bei der Ausführung des Auslastungstests verwendet werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von weiteren Laufzeiteinstellungen zu einem Auslastungstest](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 Im **Auslastungstest-Editor** wird die aktive Testlaufeinstellung durch das Suffix "[Aktiv]" gekennzeichnet.
 
 ## <a name="select-the-active-run-setting"></a>Auswählen der aktiven Testlaufeinstellung
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
-2.  Erweitern Sie den Ordner **Laufzeiteinstellungen**.
+2. Erweitern Sie den Ordner **Laufzeiteinstellungen**.
 
-3.  Klicken Sie mit der rechten Maustaste auf den Laufzeiteinstellungsknoten, der der aktive Knoten sein soll, und klicken Sie anschließend auf **Als aktiv festlegen**.
+3. Klicken Sie mit der rechten Maustaste auf den Laufzeiteinstellungsknoten, der der aktive Knoten sein soll, und klicken Sie anschließend auf **Als aktiv festlegen**.
 
      Im **Auslastungstest-Editor** wird der betroffene Laufzeiteinstellungsknoten mit dem Suffix „[Aktiv]“ gekennzeichnet.
 
      Die ausgewählte Testlaufeinstellung wird und bleibt aktiv, bis Sie eine andere Testlaufeinstellung als aktiv festlegen.
 
 > [!NOTE]
-> Sie können die aktive Testlaufeinstellung überschreiben, indem Sie eine Umgebungsvariable mit dem Namen `Test.UseRunSetting=<run setting name>` festlegen. Dies ist sinnvoll, wenn Sie einen Auslastungstest von der Befehlszeile oder von einer Batchdatei aus ausführen. Sie können hierdurch verschiedene Laufzeiteinstellungen auswählen, ohne den Auslastungstest zu öffnen.
+> Sie können die aktive Testlaufeinstellung überschreiben, indem Sie eine Umgebungsvariable mit dem Namen `Test.UseRunSetting=<run setting name>` festlegen. Dies ist sinnvoll, wenn Sie einen Auslastungstest von der Befehlszeile oder von einer Batchdatei aus ausführen. Sie können hierdurch verschiedene Testlaufeinstellungen auswählen, ohne den Auslastungstest zu öffnen.
 
 ## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Angeben der zu verwendenden Testlaufeinstellung über die Befehlszeile
 
-Sie können die Standardlaufzeiteinstellungen im Auslastungstest überschreiben, indem Sie eine Umgebungsvariable über die Befehlszeile festlegen:
+Sie können die Standardtestlaufeinstellungen im Auslastungstest überschreiben, indem Sie eine Umgebungsvariable über die Befehlszeile festlegen:
 
 **Set Test.UseRunSetting=PreProdEnvironment**
 

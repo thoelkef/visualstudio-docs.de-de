@@ -1,7 +1,7 @@
 ---
 title: Installation und Verwendung hinter einer Firewall oder einem Proxy
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Whitelist setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974708"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -102,7 +102,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | GitHub-Repositoryinformationen | api.github.com | https | 443 | Erforderlich zum Abrufen zusätzlicher Informationen zu Bower-Paketen. |
 | Weblinter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Explorer-Vorlage<br>Erkennung <br><br>Cookiecutter <br>Explorer-Projekt<br> Erstellung | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Wird zum Ermitteln von Onlinevorlagen im empfohlenen Feed sowie in GitHub-Repositorys verwendet. <br><br>Dient zum Erstellen eines Projekts aus einer Cookiecutter-Vorlage, die eine einmalige Installation eines Cookiecutter-Python-Pakets aus dem Python-Paketindex (PyPI) erfordert. |
-| Python-Paket <br>Erkennung<br><br>Python-Paket <br>Verwaltung<br><br>Python <br>Neues Projekt <br>Vorlagen | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br> Wird zur Erstellung verwendet. <br><br>Wird zum Auflösen der folgenden Python-Projektvorlagen im Dialogfeld für ein neues Projekt in Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
+| Python-Paket <br>Erkennung<br><br>Python-Paket <br>Verwaltung<br><br>Neu <br>Python <br> Projekt <br>Vorlagen | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br>Wird zum Auflösen der folgenden neuen Python-Projektvorlagen für Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
 | Office Web <br>Add-In <br> Manifest <br>Überprüfung <br>Dienst | verificationservice.osi.office.net | https | 443 | Wird zum Validieren von Manifesten für Office Web-Add-Ins verwendet. |
 | SharePoint- und  <br>Office-Add-ins | sharepoint.com | https | 443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online verwendet. |
 | Workflow-Manager- <br>Testdienst-<br> Host | | http | 12292 | Eine Firewall, die zum Testen von SharePoint-Add-Ins mit Workflows automatisch erstellt wird. |
@@ -141,6 +141,7 @@ Hier sind einige weitere Supportoptionen:
 
 ## <a name="see-also"></a>Siehe auch
 
+* [Anforderungen an die Konnektivität für Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Erstellen einer Netzwerkinstallation von Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Beheben von Netzwerkfehlern in Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
