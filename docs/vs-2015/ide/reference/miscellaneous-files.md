@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441699"
 ---
 # <a name="miscellaneous-files"></a>Verschiedene Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Mit den [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Editoren können Sie una
  Im Ordner Verschiedene Dateienwerden die Dateien als Links dargestellt. Obwohl dieser Ordner nicht Bestandteil einer Projektmappe ist, werden beim Öffnen einer Projektmappe abhängig von den Einstellungen für den Ordner einige oder alle der verschiedenen Dateien erneut geöffnet, die beim letzten Schließen der Projektmappe geöffnet waren.  
   
 > [!NOTE]
->  Bei einigen Dateien, die im Ordner Verschiedene Dateien nicht angezeigt werden, handelt es sich um Dateien, die innerhalb der DIE nicht geändert werden können, z. B. ZIP-Dateien und DOC-Dateien. Die IDE verfolgt keine Dateien, die nur über einen externen Editor geändert werden können.  
+> Bei einigen Dateien, die im Ordner Verschiedene Dateien nicht angezeigt werden, handelt es sich um Dateien, die innerhalb der DIE nicht geändert werden können, z. B. ZIP-Dateien und DOC-Dateien. Die IDE verfolgt keine Dateien, die nur über einen externen Editor geändert werden können.  
   
 ## <a name="commands-available-in-the-ide"></a>In der IDE verfügbare Befehle  
  Die Menüs und Symbolleisten sowie die darin enthaltenen Befehle ändern sich in Abhängigkeit des Formats der geöffneten Datei. Beispielsweise wird beim Öffnen einer Textdatei die Symbolleiste Text-Editor angezeigt, und die zugehörigen Befehle sind verfügbar. Wenn Sie dann eine XML-Schemadatei öffnen, wird die Symbolleiste XML-Schema angezeigt. Beim Bearbeiten des XML-Schemas sind die Befehle der Symbolleiste Text-Editor (bzw. die Symbolleiste selbst) nicht verfügbar. Das XML-Schema ist das aktive Fenster und weist somit den aktuellen Auswahlkontext auf. Wenn Sie zwischen einer Projektdatei und einer der verschiedenen Dateien wechseln, werden alle projektbezogenen Befehle ausgeblendet. Nur die Befehle, die sich direkt auf die verschiedene Datei beziehen, werden angezeigt.  

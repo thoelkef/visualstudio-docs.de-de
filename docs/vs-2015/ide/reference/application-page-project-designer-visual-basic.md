@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433765"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Wenn Sie den **Stammnamespace** löschen, können Sie die Namespacestruktur Ihres Projekts im Code festlegen.  
   
 > [!NOTE]
->  Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
  Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace-Anweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
@@ -57,7 +57,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Der Standardwert entspricht dem Zielframework, das im Dialogfeld **Neues Projekt** angegeben wurde.  
   
 > [!NOTE]
->  Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.  
+> Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.  
   
  Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -69,7 +69,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
+> Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
  Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   

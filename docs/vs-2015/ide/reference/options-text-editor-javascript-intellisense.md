@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432987"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Optionen, Text-Editor, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einst
  Wenn dieses Kontrollkästchen aktiviert ist und Sie eine JavaScript-Datei haben, die nicht im Kontext eines Projekts geöffnet ist, lädt Visual Studio remote JavaScript-Dateien herunter, auf die in der Datei verwiesen wird mit dem Ziel, IntelliSense-Informationen bereitzustellen. Wenn diese Option aktiviert ist, werden Dateien heruntergeladen, wenn Sie diese als Verweis in der JavaScript-Datei eingeschlossen haben.  
   
 > [!NOTE]
->  Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.  
+> Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.  
   
 ## <a name="statement-completion"></a>Anweisungsvervollständigung  
  Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisungsvervollständigung zu ändern.  
@@ -74,7 +74,7 @@ Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einst
   Diese Option gibt die Reihenfolge an, in der Dateien in den Kontext des Sprachdiensts geladen werden. Sie können die Reihenfolge konfigurieren, indem Sie die Schaltflächen **Entfernen**, **Nach oben**und **Nach unten** verwenden. Damit IntelliSense ordnungsgemäß funktioniert, muss eine Datei, die von einer anderen abhängig ist, im Anschluss an diese geladen werden.  
   
 > [!CAUTION]
->  Wenn ein Objekt ohne Einschränkung in zwei oder mehr impliziten Verweisen definiert ist, wird der letzte Verweis in dieser Liste verwendet, um das Objekt zu definieren.  
+> Wenn ein Objekt ohne Einschränkung in zwei oder mehr impliziten Verweisen definiert ist, wird der letzte Verweis in dieser Liste verwendet, um das Objekt zu definieren.  
   
  **Fügen Sie der Gruppe einen Verweis hinzu**  
  Diese Option bietet die Möglichkeit, nach zusätzlichen IntelliSense-JS-Dateien zu suchen und solche Dateien hinzuzufügen.  

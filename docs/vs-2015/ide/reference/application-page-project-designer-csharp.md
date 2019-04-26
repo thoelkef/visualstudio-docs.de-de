@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c1c463e95ab81c0331b12aaea692afe7005eff9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437257"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Standardmäßig entspricht der Wert dem Zielframework, das Sie im Dialogfeld **Neues Projekt** ausgewählt haben.  
   
 > [!NOTE]
->  Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
+> Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
   
  Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -62,7 +62,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können diese Option für Projektmappen festlegen, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
+> Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
  Weitere Informationen über die Eigenschaft **Anwendungstyp** finden Sie unter [/target (C#-Compileroptionen)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   

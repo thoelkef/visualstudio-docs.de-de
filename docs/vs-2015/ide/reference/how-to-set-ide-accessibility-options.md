@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405625"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051621"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt außerdem Dvorak-Tastaturlayouts, die den Zugriff auf die am häufigsten eingetippten Zeichen vereinfachen. Sie können auch die Standardtastenkombinationen anpassen, die in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verfügbar sind. Weitere Informationen finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Editoren, Dialogfelder und Toolfenster  
  Standardmäßig wird in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] für Dialogfelder und Toolfenster die gleiche Schriftgröße und Schriftfarbe wie für das Betriebssystem verwendet. Die Farbeinstellungen für den Rahmen der IDE, die Dialogfelder, Symbolleisten und Toolfenster basieren auf einem Farbschema: hell oder dunkel. Sie können das aktuelle Farbschema unter [Allgemein, Umgebung, Dialogfeld "Optionen"](../../ide/reference/general-environment-options-dialog-box.md) ändern.  
@@ -63,7 +63,7 @@ ms.locfileid: "60051621"
 6. Wählen Sie in der Dropdownliste Schriftgrad eine andere **Schriftgröße** aus.  
   
     > [!NOTE]
-    >  Um die Textgröße für textbasierte Toolfenster und Editoren zurückzusetzen, wählen Sie die Option **Standard verwenden** aus.  
+    > Um die Textgröße für textbasierte Toolfenster und Editoren zurückzusetzen, wählen Sie die Option **Standard verwenden** aus.  
   
 7. Klicken Sie auf **OK**.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051621"
  Sie können auch die Standardfarben für Text, Indikatorränder, Leerstellen und Codeelemente im Editor anpassen.  
   
 > [!NOTE]
->  Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke <strong>ALT+</strong>Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.  
+> Um in allen Anwendungsfenstern des Betriebssystems kontrastreiche Farben zu verwenden, drücken Sie Linke <strong>ALT+</strong>Linke **UMSCHALT+DRUCK**. Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] geöffnet ist, schließen und öffnen Sie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], damit die hohen Kontraste ordnungsgemäß übernommen werden.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>So ändern Sie die Farbe von Elementen im Editor  
   
