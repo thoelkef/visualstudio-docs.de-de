@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785088"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -49,7 +49,7 @@ Bietet grundlegende Informationen und Befehle für die Umgebung:
 | **Diese Umgebung zum Standard für neue Projekte machen** | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio (2017 Version 15.5 und früher) kurzzeitig nicht mehr reagiert, während es die IntelliSense-Datenbank lädt. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
 | **Website des Verteilers besuchen** | Öffnen eine von der Python-Verteilung bereitgestellt URL in einem Browser. Python 3.x öffnet beispielsweise python.org. |
 | **Interaktives Fenster öffnen** | Öffnet das [interaktive Fenster (REPL)](python-interactive-repl-in-visual-studio.md) für diese Umgebung in Visual Studio und wendet alle [Startskripts (siehe unten)](#startup-scripts) an. |
-| **Interaktive Skripts** | Siehe [Startskripte](#startup-scripts). |
+| **Interaktive Skripts untersuchen** | Siehe [Startskripte](#startup-scripts). |
 | **Interaktiven IPython-Modus verwenden** | Wenn diese Option aktiviert ist, wird das **interaktive** Fenster standardmäßig mit IPython geöffnet. Dadurch sind Inline-Plots und erweiterte IPython-Syntax möglich, wie z.B. `name?` zum Anzeigen der Hilfe und `!command` für Shellbefehle. Diese Option wird empfohlen, wenn Sie eine Verteilung von Anaconda verwenden, da diese zusätzliche Pakete erfordert. Weitere Informationen finden Sie unter [Verwenden von IPython im interaktiven Fenster](interactive-repl-ipython.md). |
 | **In PowerShell öffnen** | Öffnet den Interpreter in einem Befehlsfenster von PowerShell. |
 | (Ordner- und Programmverknüpfungen) | Bieten Ihnen schnellen Zugriff auf den Installationsordner der Umgebung und die Interpreter *python.exe* und *pythonw.exe*. Ersterer wird im Windows Explorer geöffnet, die anderen beiden in einem Konsolenfenster. |

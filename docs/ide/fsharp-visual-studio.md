@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793408"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Entwickeln mit Visual F# in Visual Studio
 
@@ -148,7 +148,7 @@ In der folgenden Tabelle sind die Features zusammengefasst, die beim Debuggen vo
 
 Weitere Informationen zum Visual Studio-Debugger finden Sie unter [Debugging in Visual Studio](../debugger/index.md).
 
-## <a name="additional-tools"></a>Zusätzliche Tools
+## <a name="additional-tools"></a>Weitere Tools
 
 In der folgenden Tabelle ist die Unterstützung für F# in Visual Studio-Tools zusammengefasst.
 

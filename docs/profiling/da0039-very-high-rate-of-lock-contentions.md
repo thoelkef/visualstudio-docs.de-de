@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444862"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Sehr hohes Maß an Sperrkonflikten
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639023"
  Diese Regel wird ausgelöst, wenn die während der Profilerstellung ermittelten Werte auf ein sehr hohes Maß an Sperrkonflikten hindeuten. Durch Sperrkonflikte verzögert sich die Ausführung von Threads, von denen auf die Sperre gewartet wird. Es empfiehlt sich, selbst eine recht geringe Anzahl von Sperrkonflikten in Komponenten- oder Auslastungstests zu untersuchen, die auf weniger leistungsfähiger Hardware ausgeführt werden.
 
 > [!NOTE]
->  Wenn die Rate der gemeldeten Sperrkonflikte in den Daten für die Profilerstellung zwar beträchtlich, aber nicht übermäßig hoch ist, wird anstelle dieser Warnmeldung die Informationsmeldung [DA0038: Hohes Maß an Sperrkonflikten](../profiling/da0038-high-rate-of-lock-contentions.md) angezeigt.
+> Wenn die Rate der gemeldeten Sperrkonflikte in den Daten für die Profilerstellung zwar beträchtlich, aber nicht übermäßig hoch ist, wird anstelle dieser Warnmeldung die Informationsmeldung [DA0038: Hohes Maß an Sperrkonflikten](../profiling/da0038-high-rate-of-lock-contentions.md) angezeigt.
 
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise zur Überprüfung einer Warnung
  Doppelklicken Sie auf die Meldung, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren.  Suchen Sie die Spalte **NET CLR-Sperren und Threads\Konfliktrate/s**. Überprüfen Sie, ob Sperrkonflikte in bestimmten Phasen der Programmausführung besonders häufig auftreten.

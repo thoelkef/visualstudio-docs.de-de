@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445298"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 
@@ -56,13 +56,13 @@ Sie können MSBuild in Visual Studio oder im **Befehlsfenster** ausführen. In d
 
 **So überprüfen Sie die Projektdatei**
 
-1.  Klicken Sie im **Projektmappen-Explorer** auf den Projektknoten **BuildApp**.
+1. Klicken Sie im **Projektmappen-Explorer** auf den Projektknoten **BuildApp**.
 
-2.  Im **Eigenschaftenbrowser** wird als **Projektdatei**-Eigenschaft *BuildApp.csproj* angezeigt. Alle Projektdateien werden mit dem Suffix *PROJ* benannt. Wenn Sie ein Visual Basic-Projekt erstellt hätten, wäre der Projektdateiname *BuildApp.vbproj*.
+2. Im **Eigenschaftenbrowser** wird als **Projektdatei**-Eigenschaft *BuildApp.csproj* angezeigt. Alle Projektdateien werden mit dem Suffix *PROJ* benannt. Wenn Sie ein Visual Basic-Projekt erstellt hätten, wäre der Projektdateiname *BuildApp.vbproj*.
 
-3.  Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Projekt entladen**.
+3. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Projekt entladen**.
 
-4.  Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten, klicken Sie dann auf **BuildApp.csproj bearbeiten**.
+4. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten, klicken Sie dann auf **BuildApp.csproj bearbeiten**.
 
      Die Projektdatei wird im Code-Editor angezeigt.
 
@@ -130,7 +130,7 @@ Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Einga
  Führen Sie MSBuild über die **Developer-Eingabeaufforderung** für Visual Studio aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter -target oder -t, um das Ziel auszuwählen.
 
 > [!NOTE]
->  In den folgenden Abschnitten wird die **Developer-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.
+> In den folgenden Abschnitten wird die **Developer-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.
 
 **So erstellen Sie das Ziel**
 
@@ -156,7 +156,7 @@ Die Message-Aufgabe erfordert den Zeichenfolgenwert des Text-Attributs als Einga
     ```
 
 > [!NOTE]
->  Wenn stattdessen `The target "HelloWorld" does not exist in the project` angezeigt wird, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.
+> Wenn stattdessen `The target "HelloWorld" does not exist in the project` angezeigt wird, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.
 
  Durch Wechsel zwischen Code-Editor und dem Befehlsfenster können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.
 
@@ -222,20 +222,24 @@ $(PropertyName)
 4. Prüfen Sie die Ausgabe. Die folgenden beiden Zeilen sollten angezeigt werden (die Version von .NET Framework kann abweichen):
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
->  Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.
+> Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.
 
 ### <a name="conditional-properties"></a>Bedingte Eigenschaften
 
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **So legen Sie einen Eigenschaftswert an der Befehlszeile fest**
 
-1.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
+1. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:
+2. Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:
 
     ```
     Configuration is Release.
@@ -333,7 +337,7 @@ Weitere Informationen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuil
 Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).
 
 > [!NOTE]
->  Dateipfade werden relativ zum Ordner mit der MSBuild-Projektdatei angegeben.
+> Dateipfade werden relativ zum Ordner mit der MSBuild-Projektdatei angegeben.
 
 ## <a name="examine-item-type-values"></a>Untersuchen der Elementtypwerte
 
@@ -381,21 +385,21 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
 
 **So zeigen Sie Elementtypwerte auf jeweils eigenen Zeilen an**
 
-1.  Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:
+1. Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  Speichern Sie die Projektdatei.
+2. Speichern Sie die Projektdatei.
 
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:
+4. Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:
 
     ```
     Compile item type contains Form1.cs

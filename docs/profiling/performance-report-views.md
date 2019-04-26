@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794399"
 ---
 # <a name="performance-report-views"></a>Leistungsberichtansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools. Ansichten von Profilerstellungs-Datendateien werden in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-IDE angezeigt. Berichte werden mithilfe des [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilentools erstellt.

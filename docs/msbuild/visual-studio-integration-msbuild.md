@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445383"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration in Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Einige Elementtypnamen sind spezifisch für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , werden jedoch in diesem Dropdownmenü nicht aufgeführt.
+> Einige Elementtypnamen sind spezifisch für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , werden jedoch in diesem Dropdownmenü nicht aufgeführt.
 
 ## <a name="in-process-compilers"></a>Prozessinterne Compiler
  Aus Gründen der Leistungssteigerung wird in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nach Möglichkeit die prozessinterne Version des [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] -Compilers verwendet. (Nicht zutreffend für [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Dazu müssen die folgenden Bedingungen erfüllt sein:
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>IntelliSense zur Entwurfszeit
  Zum Aufrufen der IntelliSense-Unterstützung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vor dem Generieren einer Ausgabeassembly in einem Build müssen die folgenden Bedingungen erfüllt sein:
 
--   Ein Ziel mit dem Namen `Compile`muss vorliegen.
+- Ein Ziel mit dem Namen `Compile`muss vorliegen.
 
--   Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss die Kompilieraufgabe für das Projekt aufgerufen werden, z. B. `Csc` oder `Vbc`.
+- Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss die Kompilieraufgabe für das Projekt aufgerufen werden, z. B. `Csc` oder `Vbc`.
 
--   Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss der Compiler so eingerichtet werden, dass alle erforderlichen Parameter für IntelliSense, vor allem alle Verweise, empfangen werden.
+- Über das `Compile` -Ziel oder eine der zugehörigen Abhängigkeiten muss der Compiler so eingerichtet werden, dass alle erforderlichen Parameter für IntelliSense, vor allem alle Verweise, empfangen werden.
 
--   Die im Abschnitt [Prozessinterne Compiler](#in-process-compilers) aufgeführten Bedingungen müssen erfüllt sein.
+- Die im Abschnitt [Prozessinterne Compiler](#in-process-compilers) aufgeführten Bedingungen müssen erfüllt sein.
 
 ## <a name="build-solutions"></a>Erstellen von Projektmappen
  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]wird die Anordnung der Projektmappendateien und Projektbuilds über [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gesteuert. Beim Erstellen einer Projektmappe an der Befehlszeile mit *msbuild.exe* analysiert [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] die Projektmappendatei und ordnet die Projektbuilds an. In beiden Fällen werden die Projekte einzeln in der Reihenfolge der Abhängigkeiten erstellt. Gleichzeitig werden Verweise zwischen Projekten nicht durchlaufen. Wenn hingegen einzelne Projekte mit *msbuild.exe* erstellt werden, werden Verweise zwischen Projekten durchlaufen.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Zielausführung zur Entwurfszeit
  In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wird beim Laden eines Projekts versucht, Ziele mit bestimmten Namen auszuführen. Zu diesen Zielen gehören `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` und `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] führt diese Ziele aus, sodass der Compiler zum Bereitstellen von IntelliSense initialisiert, der Debugger initialisiert und die im Projektmappen-Explorer angezeigten Verweise aufgelöst werden können. Wenn die Ziele nicht vorhanden sind, wird das Projekt ordnungsgemäß geladen und erstellt, bei Vorgängen zur Entwurfszeit in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] können jedoch nicht alle Funktionen ausgeführt werden.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Bearbeiten von Projektdateien in Visual Studio
+## <a name="edit-project-files-in-visual-studio"></a>Bearbeiten von Projektdateien in Visual Studio
  Wenn Sie ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projekt direkt bearbeiten möchten, können Sie die Projektdatei im XML-Editor von Visual Studio von öffnen.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>So entladen und bearbeiten Sie eine Projektdatei in Visual Studio
 
-1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen**aus.
+1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen**aus.
 
      Das Projekt ist als **(nicht verfügbar)** gekennzeichnet.
 
-2.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Projektdatei> bearbeiten** aus.
+2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **\<Projektdatei> bearbeiten** aus.
 
      Die Projektdatei wird im XML-Editor von Visual Studio geöffnet.
 
-3.  Bearbeiten, speichern und schließen Sie dann die Projektdatei.
+3. Bearbeiten, speichern und schließen Sie dann die Projektdatei.
 
-4.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.
+4. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung
  Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter *\<Visual Studio-Installationsverzeichnis>\Xml\Schemas\1033\MSBuild* befindet.

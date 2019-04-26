@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9159ccec69bd6e8cad0290b092f38434b495fc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8bdc4c106ff8d6f1740fb53e0e3552f64b069fb5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949089"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung
 
@@ -29,17 +29,17 @@ Das Vergleichsspiel funktioniert wie folgt:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>So fügen Sie jeder Bezeichnung einen Click-Ereignishandler hinzu
 
-1.  Öffnen Sie das Formular im **Windows Forms-Designer**. Wählen Sie *Form1.cs* oder *Form1.vb* im **Projektmappen-Explorer** aus. Klicken Sie in der Menüleiste auf **Ansicht** > **Designer**.
+1. Öffnen Sie das Formular im **Windows Forms-Designer**. Wählen Sie *Form1.cs* oder *Form1.vb* im **Projektmappen-Explorer** aus. Klicken Sie in der Menüleiste auf **Ansicht** > **Designer**.
 
-2.  Wählen Sie das erste Bezeichnungsfeld-Steuerelement, um es zu markieren. Halten Sie dann **STRG** gedrückt, während Sie nacheinander die anderen Bezeichnungen wählen. Achten Sie darauf, dass jede Bezeichnung ausgewählt wird.
+2. Wählen Sie das erste Bezeichnungsfeld-Steuerelement, um es zu markieren. Halten Sie dann **STRG** gedrückt, während Sie nacheinander die anderen Bezeichnungen wählen. Achten Sie darauf, dass jede Bezeichnung ausgewählt wird.
 
-3.  Wählen Sie die Schaltfläche **Ereignisse** auf der Symbolleiste im Fenster **Eigenschaften**, um die Seite **Ereignisse** im Fenster **Eigenschaften** anzuzeigen. Führen Sie einen Bildlauf nach unten bis zum **Click**-Ereignis durch, und geben Sie **label_Click** ein, wie in der folgenden Abbildung dargestellt.
+3. Wählen Sie die Schaltfläche **Ereignisse** auf der Symbolleiste im Fenster **Eigenschaften**, um die Seite **Ereignisse** im Fenster **Eigenschaften** anzuzeigen. Führen Sie einen Bildlauf nach unten bis zum **Click**-Ereignis durch, und geben Sie **label_Click** ein, wie in der folgenden Abbildung dargestellt.
 
      ![Anzeige des Click-Ereignisses im Eigenschaftenfenster](../ide/media/express_labelclick.png)
 
-4.  Drücken Sie die **EINGABETASTE**. Die IDE fügt dem Code einen -`Click`Ereignishandler mit dem Namen `label_Click()` hinzu und verknüpft diesen mit jeder Bezeichnung im Formular.
+4. Drücken Sie die **EINGABETASTE**. Die IDE fügt dem Code einen -`Click`Ereignishandler mit dem Namen `label_Click()` hinzu und verknüpft diesen mit jeder Bezeichnung im Formular.
 
-5.  Fügen Sie den Rest des Codes wie folgt ein:
+5. Fügen Sie den Rest des Codes wie folgt ein:
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
@@ -52,10 +52,10 @@ Das Vergleichsspiel funktioniert wie folgt:
 
      Diese Methode überprüft zuerst, ob `clickedLabel` erfolgreich von einem Objekt in ein Label-Steuerelement umgewandelt wurde. Falls hierbei ein Fehler auftritt, lautet der Wert `null` (C#) bzw. `Nothing` (Visual Basic). Der Rest des Codes in der Methode soll dann nicht mehr ausgeführt werden. Als Nächstes überprüft die Methode mithilfe der **ForeColor**-Eigenschaft die Textfarbe des gewählten Bezeichnungsfelds. Wenn die Textfarbe des Bezeichnungsfelds Schwarz ist, wurde das Symbol bereits ausgewählt und die Methode muss abgebrochen werden. (Dies ist Aufgabe der `return`-Anweisung: Sie weist das Programm an, die Ausführung der Methode zu beenden.) Andernfalls ist das Symbol nicht ausgewählt worden, und das Programm ändert die Textfarbe des Bezeichnungsfelds in Schwarz.
 
-6.  Klicken Sie in der Menüleiste auf **Datei** > **Alle speichern**, um Ihre Arbeit zu speichern. Klicken Sie anschließend in der Menüleiste auf **Debuggen** > **Debuggen starten**, um das Programm auszuführen. Es wird ein leeres Formular mit einem blauen Hintergrund angezeigt. Wählen Sie eine der Zellen im Formular, und eines der Symbole sollte sichtbar werden. Setzten Sie die Auswahl mit anderen Stellen im Formular fort. Wenn Sie die Symbole wählen, sollten diese angezeigt werden.
+6. Klicken Sie in der Menüleiste auf **Datei** > **Alle speichern**, um Ihre Arbeit zu speichern. Klicken Sie anschließend in der Menüleiste auf **Debuggen** > **Debuggen starten**, um das Programm auszuführen. Es wird ein leeres Formular mit einem blauen Hintergrund angezeigt. Wählen Sie eine der Zellen im Formular, und eines der Symbole sollte sichtbar werden. Setzten Sie die Auswahl mit anderen Stellen im Formular fort. Wenn Sie die Symbole wählen, sollten diese angezeigt werden.
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Den nächsten Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Bezeichnungsverweisen](../ide/step-5-add-label-references.md).
+- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 5: Hinzufügen von Bezeichnungsverweisen](../ide/step-5-add-label-references.md).
 
--   Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung](../ide/step-3-assign-a-random-icon-to-each-label.md).

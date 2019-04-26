@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445805"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrieren von .NET Framework-Erweiterungen
 Sie können eine Assembly entwickeln, die eine bestimmte Version von .NET Framework erweitert. Damit die Assembly im Dialogfeld **Verweise hinzufügen** in Visual Studio angezeigt wird, müssen Sie den Ordner, in dem sie enthalten ist, zur Systemregistrierung hinzufügen.
@@ -27,7 +27,7 @@ Sie können eine Assembly entwickeln, die eine bestimmte Version von .NET Framew
  Registrieren Sie diesen Ordner mithilfe des folgenden Schlüssels: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**. Weisen Sie dem Schlüssel diesen Standardwert zu: **C:\TreyResearch\Extensions4**.
 
 > [!NOTE]
->  Die Buildnummer der Version von .NET Framework kann abweichen.
+> Die Buildnummer der Version von .NET Framework kann abweichen.
 
  Verwenden Sie den Wow6432-Knoten, um wie im folgenden Beispiel eine 32-Bit-Assembly auf einem 64-Bit-Computer zu registrieren: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.
 

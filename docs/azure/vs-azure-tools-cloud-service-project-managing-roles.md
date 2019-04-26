@@ -4,17 +4,19 @@ description: Erfahren Sie, wie Sie Rollen in Azure-Clouddiensten mit Visual Stud
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c982d999f3fa974db6ea409ee85e3bb7bbc57414
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550960"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Verwalten von Rollen in Azure-Clouddiensten mit Visual Studio
 Nach dem Erstellen des Azure-Clouddiensts können Sie ihm neue Rollen hinzufügen oder vorhandene Rollen daraus entfernen. Darüber hinaus können Sie ein vorhandenes Projekt importieren und es in eine Rolle konvertieren. Sie können z. B. eine ASP.NET-Webanwendung importieren und sie als Webrolle festlegen.
@@ -28,7 +30,7 @@ Mit den folgenden Schritten können Sie eine Web- oder Workerrolle einem Azure-C
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten **Rollen**, um das Kontextmenü anzuzeigen. Wählen Sie im Kontextmenü die Option **Hinzufügen** und dann eine vorhandene Web- oder Workerrolle in der aktuellen Projektmappe aus, oder erstellen Sie ein Web- oder Workerrollenprojekt. Sie können auch ein entsprechendes Projekt auswählen, z.B. ein ASP.NET-Webanwendungsprojekt, und es einem Rollenprojekt zuordnen.
 
-   ![Menüoptionen zum Hinzufügen einer Rolle zu einem Azure-Clouddienstprojekt](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+    ![Menüoptionen zum Hinzufügen einer Rolle zu einem Azure-Clouddienstprojekt](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Entfernen einer Rolle aus einem Azure-Clouddienst
 Mit den folgenden Schritten können Sie eine Web- oder Workerrolle aus einem Azure-Clouddienstprojekt in Visual Studio entfernen.
@@ -41,7 +43,7 @@ Mit den folgenden Schritten können Sie eine Web- oder Workerrolle aus einem Azu
 
 1. Klicken Sie mit der rechten Maustaste auf den zu entfernenden Knoten, und wählen Sie im Kontextmenü die Option **Entfernen** aus.
 
-   ![Menüoptionen zum Hinzufügen einer Rolle zu einem Azure-Clouddienst](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+    ![Menüoptionen zum Hinzufügen einer Rolle zu einem Azure-Clouddienst](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Erneutes Hinzufügen einer Rolle zu einem Azure-Clouddienstprojekt
 Wenn Sie eine Rolle aus Ihrem Clouddienstprojekt entfernen, sie aber später wieder zum Projekt hinzufügen möchten, werden nur die Rollendeklaration und grundlegende Attribute wie Endpunkte und Diagnoseinformationen hinzugefügt. Der Datei `ServiceDefinition.csdef` oder der Datei `ServiceConfiguration.cscfg` werden keine zusätzlichen Ressourcen oder Verweise hinzugefügt. Wenn Sie diese Informationen hinzufügen möchten, müssen Sie sie diesen Dateien manuell erneut hinzufügen.
