@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428127"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 
@@ -39,8 +39,6 @@ In dieser exemplarischen Vorgehensweise wird eine C#-Anwendung verwendet, um die
 
  Für verwalteten Code befinden sich die Profiler-APIs in *Microsoft.VisualStudio.Profiler.dll*. Diese DLL befindet sich im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Für 64-Bit-Apps lautet der Pfad zum Ordner *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Profiler>.
 
-
-
 ## <a name="prerequisites"></a>Erforderliche Komponenten
  In dieser exemplarischen Vorgehensweise wird angenommen, dass Ihre Entwicklungsumgebung so konfiguriert ist, dass sie Debuggen und Sampling unterstützt. In den folgenden Artikeln wird eine Übersicht über diese Vorgehensweise gegeben:
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>So erstellen Sie Code für die Profilerstellung
 
-1.  Erstellen Sie je nach Vorliebe entweder ein neues C#-Projekt in Visual Studio, oder verwenden Sie einen Befehlszeilenbuild.
+1. Erstellen Sie je nach Vorliebe entweder ein neues C#-Projekt in Visual Studio, oder verwenden Sie einen Befehlszeilenbuild.
 
     > [!NOTE]
-    >  Der Build muss auf die Bibliothek *Microsoft.VisualStudio.Profiler.dll* verweisen, die im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* gespeichert ist.
+    > Der Build muss auf die Bibliothek *Microsoft.VisualStudio.Profiler.dll* verweisen, die im Verzeichnis *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* gespeichert ist.
 
-2.  Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:
+2. Kopieren Sie den folgenden Code, und fügen Sie ihn in das Projekt ein:
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>So erfassen Sie Daten in der Befehlszeile und rufen diese ab
 
-1.  Kompilieren sie eine Debugversion des Beispielcodes, den Sie bereits in der Prozedur „Creating Code to Profile“ („Erstellen von Code für die Profilerstellung“) erstellt haben.
+1. Kompilieren sie eine Debugversion des Beispielcodes, den Sie bereits in der Prozedur „Creating Code to Profile“ („Erstellen von Code für die Profilerstellung“) erstellt haben.
 
-2.  Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen und eine verwaltete Anwendung zu profilen:
+2. Geben Sie den folgenden Befehl ein, um die entsprechenden Umgebungsvariablen festzulegen und eine verwaltete Anwendung zu profilen:
 
      **VsPerfCLREnv /traceon**
 
-3.  Geben Sie folgenden Befehl ein: **VSInstr \<Dateiname>.exe**
+3. Geben Sie folgenden Befehl ein: **VSInstr \<Dateiname>.exe**
 
-4.  Geben Sie folgenden Befehl ein: **VSPerfCmd /start:trace /output:\<Dateiname>.vsp**
+4. Geben Sie folgenden Befehl ein: **VSPerfCmd /start:trace /output:\<Dateiname>.vsp**
 
-5.  Geben Sie folgenden Befehl ein: **VSPerfCmd /globaloff**
+5. Geben Sie folgenden Befehl ein: **VSPerfCmd /globaloff**
 
-6.  Führen Sie das Programm aus.
+6. Führen Sie das Programm aus.
 
-7.  Geben Sie folgenden Befehl ein: **VSPerfCmd /shutdown**
+7. Geben Sie folgenden Befehl ein: **VSPerfCmd /shutdown**
 
-8.  Geben Sie folgenden Befehl ein: **VSPerfReport /calltrace:\<Dateiname>.vsp**
+8. Geben Sie folgenden Befehl ein: **VSPerfReport /calltrace:\<Dateiname>.vsp**
 
      Eine *CSV-Datei* wird im aktuellen Verzeichnis zusammen mit den erfassten Leistungsdaten erstellt.
 

@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957856"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
 
-**Vorheriger Schritt: [Use the full Django Web Project template (Verwenden Sie die vollständige Vorlage „Django-Webprojekt“)](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Vorheriger Schritt: [Verwenden der vollständigen Vorlage „Django-Webprojekt“](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Da die Authentifizierung eine allgemeine Voraussetzung für Web-Apps ist, enthält die Vorlage „Django-Webprojekt“ einen grundlegenden Authentifizierungsablauf. (Die Vorlage „Fragt ein Django-Webprojekt ab“ aus Schritt 6 dieses Tutorials umfasst auch den gleichen Ablauf.) Bei Verwendung einer der Django-Projektvorlagen enthält Visual Studio die erforderlichen Module für die Authentifizierung der *settings.py* des Django-Projekts.
 
@@ -211,7 +211,7 @@ Antwort: Das `{% csrf_token %}`-Tag enthält den integrierten [Schutz vor der we
 ## <a name="next-steps"></a>Nächste Schritte
 
 > [!div class="nextstepaction"]
-> [Verwenden der Django-Webprojektvorlage für Umfragen](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+> [Use the Polls Django Web Project template (Verwenden der Vorlage „Fragt ein Django-Webprojekt ab“)](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
 ## <a name="go-deeper"></a>Ausführlichere Informationen
 

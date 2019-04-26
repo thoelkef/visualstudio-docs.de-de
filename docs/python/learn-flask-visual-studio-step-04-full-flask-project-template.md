@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957251"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
 
@@ -169,6 +169,7 @@ Die Datei *\_\_init\_\_.py* der App enthält folgende Zeile:
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 Im Ordner *templates* finden Sie *.jade*-Dateien anstelle von *.html-Vorlagen*, und die Ansichten in *views.py* verweisen auf diese Dateien, wenn sie `flask.render_template` aufrufen. Davon abgesehen ist der Code der Ansichten identisch.
 
 Wenn Sie eine der *.jade*-Dateien öffnen, sehen Sie den kompakteren Ausdruck einer Vorlage. Hier sehen Sie beispielsweise die Inhalte von *templates/layout.jade*, wie sie von der Vorlage „Flask/Jade-Webprojekt“ erstellt wurden:

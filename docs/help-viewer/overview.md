@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975692"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -73,7 +73,7 @@ In der Inhaltsliste wird angezeigt, welche Bücher Sie installieren können bzw.
 > [!NOTE]
 > Die Funktionalität der Registerkarte **Inhalt verwalten** unterscheidet sich möglicherweise, wenn der Help Viewer-Administrator diese Features deaktiviert oder kein Internetzugang verfügbar ist.
 
-### <a name="toolbar-buttons"></a>Schaltflächen der Symbolleiste
+### <a name="toolbar-buttons"></a>Schaltflächen auf der Symbolleiste
 
 Die Symbolleiste im **Help Viewer-Fenster** enthält die folgenden Schaltflächen:
 

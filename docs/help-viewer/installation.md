@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824620"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installieren von Microsoft Help Viewer
 
@@ -31,11 +31,11 @@ Help Viewer ist eine optionale Installationskomponente von Visual Studio. Um die
 
 1. Klicken Sie auf die Schaltfläche **Bearbeiten**, um die Installation von Microsoft Help Viewer zu starten.
 
-Zudem können Sie Microsoft Help Viewer ganz leicht über das Feld **Schnellstart** installieren:
+Zudem können Sie Microsoft Help Viewer ganz leicht über das Suchfeld installieren:
 
-1. Geben Sie **help viewer** in das Feld **Schnellstart** in der Titelleiste von Visual Studio ein.
+1. Drücken Sie **STRG**+**Q**, und geben Sie dann **help viewer** in das Suchfeld ein.
 
-   ![Feld „Schnellstart“](media/installation/quick-launch.png)
+   ![Suchfeld](media/installation/quick-launch.png)
 
 1. Wählen Sie das Ergebnis **Help Viewer (Einzelne Komponente)** aus.
 

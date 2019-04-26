@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957514"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform für Python (und andere Sprachen), die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu testen und die App anschließend zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und dem Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Codevervollständigungstools, interaktive REPL-Umgebungen und weitere Features zur Erleichterung der Softwareentwicklung.
 
-[![VVisual Studio mit einem Python-Projekt(media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio mit einem Python-Projekt](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und einigen wichtigen Toolfenstern, die Sie wahrscheinlich verwenden:
 
@@ -56,7 +56,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ![Membervervollständigung mit Visual Studio IntelliSense](media/code-editing-completions-simple.png)
 
-- [Umgestaltung](refactoring-python-code.md)
+- [Refactoring](refactoring-python-code.md)
 
    Wenn Sie mit der rechten Maustaste auf den Code klicken und **Schnellaktionen und Refactorings...** auswählen, stellt Visual Studio Vorgänge wie das intelligente Umbenennen von Variablen, das Extrahieren von Codezeilen in eine neue Methode und das Ändern der Reihenfolge von Methodenparametern zur Verfügung.
 
@@ -118,7 +118,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
     ![Leistungsbericht für Profilerstellung](media/profiling-results.png)
 
-- [Unittests](unit-testing-python-in-visual-studio.md)
+- [Komponententests](unit-testing-python-in-visual-studio.md)
 
     Visual Studio unterstützt das Ermitteln, Ausführen und Debuggen von Komponententests in der IDE.
 

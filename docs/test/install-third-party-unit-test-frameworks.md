@@ -1,70 +1,36 @@
 ---
 title: Installieren von Frameworks für Komponententests von Drittanbietern
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978662"
 ---
 # <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
 
-Im Visual Studio-Test-Explorer kann jedes beliebige Framework für Komponententests ausgeführt werden, für den eine Adapterschnittstelle für den Explorer entwickelt wurde. Das Installationsprogramm des Frameworks installiert die Binarys und fügt Visual Studio-Projektvorlagen für die von ihm unterstützten Sprachen hinzu. Wenn Sie ein Projekt mit der Vorlage erstellen, wird das Framework beim Test-Explorer registriert. Eine Visual Studio-Projektmappe kann Komponententestprojekte enthalten, die verschiedene Frameworks verwenden und verschiedene Zielsprachen aufweisen. Der Test-Explorer kann sie alle ausführen.
+Der Visual Studio-Test-Explorer kann Tests aus beliebigen Frameworks für Komponententests ausführen, für die eine Adapterschnittstelle entwickelt wurde. Beim Installieren des Frameworks werden die Binärdateien kopiert und die Visual Studio-Projektvorlagen für die unterstützten Sprachen werden hinzugefügt. Wenn Sie ein Projekt mit der Vorlage erstellen, wird das Framework beim Test-Explorer registriert.
 
-[MSTest](getting-started-with-unit-testing.md) ist das Testframework von Visual Studio und wird standardmäßig mit Visual Studio installiert.
+Eine Visual Studio-Projektmappe kann Komponententestprojekte enthalten, die verschiedene Frameworks verwenden und verschiedene Zielsprachen aufweisen.
+
+[MSTest](getting-started-with-unit-testing.md) ist das Testframework von Visual Studio und wird standardmäßig installiert.
 
 ## <a name="acquire-frameworks"></a>Herunterladen von Frameworks
 
-Sie können Komponententest-Frameworks von Drittanbietern oder [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) herunterladen und mithilfe des Visual Studio-Erweiterungs-Managers installieren. Frameworks können außerdem von anderen Websites, wie etwa der Website des Frameworks, heruntergeladen werden.
+Installieren Sie Drittanbieterframeworks für Komponententests mithilfe des **NuGet-Paket-Managers**.
 
-### <a name="install-from-visual-studio"></a>Installieren aus Visual Studio
+1. Klicken Sie mit der rechten Maustaste auf das Projekt, das Ihren Testcode enthalten soll, und wählen Sie die Option **NuGet-Pakete verwalten** aus.
 
-::: moniker range="vs-2017"
+2. Suchen Sie im **NuGet-Paket-Manager** nach dem Testframework, das Sie installieren möchten, und klicken Sie dann auf **Installieren**.
 
-1. Wählen Sie **Extras** > **Erweiterungen und Updates** aus.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Wählen Sie **Erweiterungen** > **Erweiterungen verwalten** aus.
-
-::: moniker-end
-
-2. Erweitern Sie **Online** > **Visual Studio Marketplace** > **Extras**, und wählen Sie dann **Testing** aus.
-
-3. Suchen Sie das Framework in der Liste.
-
-4. Wählen Sie das Framework und dann **Herunterladen** aus.
-
-Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Installation aus dem Web
-
-Wenn Sie das Framework kennen, für das Sie sich interessieren:
-
-1. Öffnen Sie [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. Geben Sie den Namen des Frameworks im Feld **Suchen** ein.
-
-3. Wählen Sie in der Ergebnisliste das Framework aus, um im **Visual Studio Marketplace** zur Seite für das Tool zu gelangen.
-
-So durchsuchen Sie eine Liste der Frameworks und anderer Testtools:
-
-1. Öffnen Sie [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. Klicken Sie unter **Nach Kategorie/Sammlung filtern**, auf **Alle anzeigen**.
-
-3. Erweitern Sie in der Liste **Kategorie** (als **Anzeigen** gekennzeichnet) den Knoten **Extras**, und klicken Sie auf **Testen**.
-
-4. Wählen Sie in der Ergebnisliste ein Framework aus, um zu einer **Visual Studio Marketplace**-Seite für das Tool zu gelangen.
+   ![NuGet-Paket-Manager in Visual Studio](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>Aktualisieren auf die neuesten Testadapter
 

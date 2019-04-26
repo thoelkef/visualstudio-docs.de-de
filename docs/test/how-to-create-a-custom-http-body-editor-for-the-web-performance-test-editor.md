@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950266"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -23,9 +23,9 @@ Sie können einen benutzerdefinierten Inhalts-Editor erstellen, der Ihnen ermög
 
 Sie können diese Arten von Editoren implementieren:
 
--   **Zeichenfolgeninhalts-Editor:** Wird mit der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>-Schnittstelle implementiert.
+- **Zeichenfolgeninhalts-Editor:** Wird mit der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>-Schnittstelle implementiert.
 
--   **Binärer Inhalts-Editor:** Wird mit der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>-Schnittstelle implementiert.
+- **Binärer Inhalts-Editor:** Wird mit der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>-Schnittstelle implementiert.
 
 Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace enthalten.
 
@@ -210,7 +210,7 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>So fügen Sie ein IBinaryHttpBodyEditorPlugin zur Klasse hinzu
 
--   Schreiben oder kopieren Sie den folgenden Code unter der XmlMessageEditor-Klasse, die in der vorherigen Prozedur hinzugefügt wurde, um die Msbin1MessageEditor-Klasse von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>-Schnittstelle zu instanziieren und die erforderlichen Methoden zu implementieren:
+- Schreiben oder kopieren Sie den folgenden Code unter der XmlMessageEditor-Klasse, die in der vorherigen Prozedur hinzugefügt wurde, um die Msbin1MessageEditor-Klasse von der <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>-Schnittstelle zu instanziieren und die erforderlichen Methoden zu implementieren:
 
     ```csharp
     /// <summary>

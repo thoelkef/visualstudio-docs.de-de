@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968596"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Seite "Kompilieren", Projekt-Designer (Visual Basic)
 
@@ -70,11 +70,11 @@ Mithilfe der folgenden Einstellungen können Sie die Compilerkonfigurationsoptio
 
  **Option Strict** gibt an, ob die strikte Typsemantik erzwungen werden soll. Wenn die **Option Strict** **Ein** ist, führen die folgenden Bedingungen zu einem Kompilierzeitfehler:
 
--   Implizite Eingrenzungskonvertierungen
+- Implizite Eingrenzungskonvertierungen
 
--   Spätes Binden
+- Spätes Binden
 
--   Implizites Typisierung der Ergebnisse in einem `Object`-Typ
+- Implizites Typisierung der Ergebnisse in einem `Object`-Typ
 
 Implizite Eingrenzungskonvertierungsfehler treten auf, wenn eine implizite Datentypkonvertierung vorhanden ist, die eine Eingrenzungskonvertierung ist. Weitere Informationen finden Sie unter [Option Strict-Anweisung](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Implizite und explizite Konvertierungen](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) und [Erweiternde und eingrenzende Konvertierungen](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
@@ -91,11 +91,11 @@ Wenn Sie ein Projekt erstellen, wird die **Option Strict**-Einstellung in der Se
 **Einzelne Option Strict-Warnungen**
 Der Abschnitt **Warnungskonfigurationen** auf der Seite **Kompilieren** verfügt über Einstellungen, die mit den drei Bedingungen übereinstimmen, die einen Kompilierzeitfehler auslösen, wenn `Option Strict` aktiviert ist. Die drei Einstellungen sind die folgenden:
 
--   **Implizite Konvertierung**
+- **Implizite Konvertierung**
 
--   **Späte Bindung; Aufruf könnte zur Laufzeit einen Fehler verursachen**
+- **Späte Bindung; Aufruf könnte zur Laufzeit einen Fehler verursachen**
 
--   **Impliziter Typ; Objekt wird angenommen**
+- **Impliziter Typ; Objekt wird angenommen**
 
 Wenn Sie **Option Strict** auf **Ein** festlegen, werden alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt. Wenn Sie **Option Strict** auf **Aus** festlegen werden alle drei Einstellungen auf **Keine** festgelegt.
 
@@ -127,11 +127,11 @@ Die Ausführung als 64-Bit-Anwendung verdoppelt die Zeigergröße und kann zu Ko
 
 Dieses Kontrollkästchen ist nur verfügbar, wenn die folgenden Bedingungen zutreffen:
 
--   Auf der Seite **Kompilieren** ist die Liste **Ziel-CPU** auf **Beliebige CPU** festgelegt.
+- Auf der Seite **Kompilieren** ist die Liste **Ziel-CPU** auf **Beliebige CPU** festgelegt.
 
--   Auf der Seite **Anwendung** wird in der Liste **Anwendungstyp** angegeben, dass das Projekt eine Anwendung ist.
+- Auf der Seite **Anwendung** wird in der Liste **Anwendungstyp** angegeben, dass das Projekt eine Anwendung ist.
 
--   Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.
+- Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.
 
 **Warning configurations:** (Warnungskonfigurationen) In dieser Tabelle sind Buildbedingungen und die jeweils entsprechenden Benachrichtigungsstufen **Keine**, **Warnung** oder **Fehler** aufgeführt.
 
@@ -158,7 +158,6 @@ Diese Option ist nicht für Windows-Anwendungs- und Konsolenanwendungsprojekte v
 **Buildereignisse:** Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Buildereignisse** zuzugreifen. Verwenden Sie dieses Dialogfeld, um die Präbuild- und Postbuild-Konfigurationsanweisungen für das Projekt anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie unter [Dialogfeld „Buildereignisse“ (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Erweiterte Compileroptionen:** Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Erweiterte Compilereinstellungen** zuzugreifen. Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie im [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
-
 
 ## <a name="see-also"></a>Siehe auch
 

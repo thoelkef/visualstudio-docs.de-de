@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840030"
 ---
 # <a name="windows-script-interfaces"></a>Windows-Skriptschnittstellen
 
@@ -62,21 +62,21 @@ Die folgende Abbildung zeigt die Interaktion zwischen einem Windows Script Host 
 
 In der folgenden Liste sind die Schritte, die Teil der Interaktion zwischen Host und Engine sind, angegeben.
 
-1.  Erstellen eines Projekts. Der Host lädt ein Projekt oder ein Dokument. (Dieser Schritt ist für Windows Script nicht relevant, aber aus Gründen der Vollständigkeit hier aufgeführt.)
+1. Erstellen eines Projekts. Der Host lädt ein Projekt oder ein Dokument. (Dieser Schritt ist für Windows Script nicht relevant, aber aus Gründen der Vollständigkeit hier aufgeführt.)
 
-2.  Erstellen der Windows Script-Engine. Der Host ruft `CoCreateInstance` auf, um eine neue Windows Script-Engine zu erstellen. Dabei gibt er den Klassenbezeichner (CLSID) der zu verwendenden bestimmten Skript-Engine an. Beispielsweise empfängt der HTML-Browser des Internet Explorers den Klassenbezeichner der Skript-Engine über das Attribut CLSID= des HTML-Tags \<OBJECT&gt;.
+2. Erstellen der Windows Script-Engine. Der Host ruft `CoCreateInstance` auf, um eine neue Windows Script-Engine zu erstellen. Dabei gibt er den Klassenbezeichner (CLSID) der zu verwendenden bestimmten Skript-Engine an. Beispielsweise empfängt der HTML-Browser des Internet Explorers den Klassenbezeichner der Skript-Engine über das Attribut CLSID= des HTML-Tags \<OBJECT&gt;.
 
-3.  Laden des Skripts. Wenn die Skriptinhalte beibehalten wurden, ruft der Host die `IPersist*::Load`-Methode der Skript-Engine auf, um ihm den Behälter zur Speicherung des Skripts, den Datenstrombehälter oder den Eigenschaftenbehälter zuzuführen. Andernfalls verwendet der Host entweder die `IPersist*::InitNew`-Methode oder die [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md)-Methode, um ein Skript mit dem Wert NULL zu erstellen. Ein Host, der ein Skript in Textform verwaltet, kann mithilfe von [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) dem Skripttext die Skript-Engine zuführen, nachdem er zuvor `IActiveScriptParse::InitNew` aufgerufen hat.
+3. Laden des Skripts. Wenn die Skriptinhalte beibehalten wurden, ruft der Host die `IPersist*::Load`-Methode der Skript-Engine auf, um ihm den Behälter zur Speicherung des Skripts, den Datenstrombehälter oder den Eigenschaftenbehälter zuzuführen. Andernfalls verwendet der Host entweder die `IPersist*::InitNew`-Methode oder die [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md)-Methode, um ein Skript mit dem Wert NULL zu erstellen. Ein Host, der ein Skript in Textform verwaltet, kann mithilfe von [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) dem Skripttext die Skript-Engine zuführen, nachdem er zuvor `IActiveScriptParse::InitNew` aufgerufen hat.
 
-4.  Hinzufügen benannter Elemente. Für jedes benannte Element der obersten Ebene (z.B. Seiten und Formulare), das in den Skript-Engine-Namespace importiert wurde, ruft der Host die [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md)-Methode auf, um im Namespace der Engine einen Eintrag zu erstellen. Dieser Schritt ist nicht erforderlich, wenn die benannten Elemente der obersten Ebene bereits Teil des persistenten Status jenes Skripts sind, das in Schritt 3 geladen wurde. Ein Host verwendet nicht die Methode `IActiveScript::AddNamedItem`, um benannte Elemente der unteren Ebene (z.B. Steuerelemente auf einer HTML-Seite) hinzuzufügen; stattdessen ruft die Engine Elemente der unteren Ebene indirekt über Elemente aus der obersten Ebene ab, indem sie die Hostschnittstellen `ITypeInfo` und `IDispatch` nutzt.
+4. Hinzufügen benannter Elemente. Für jedes benannte Element der obersten Ebene (z.B. Seiten und Formulare), das in den Skript-Engine-Namespace importiert wurde, ruft der Host die [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md)-Methode auf, um im Namespace der Engine einen Eintrag zu erstellen. Dieser Schritt ist nicht erforderlich, wenn die benannten Elemente der obersten Ebene bereits Teil des persistenten Status jenes Skripts sind, das in Schritt 3 geladen wurde. Ein Host verwendet nicht die Methode `IActiveScript::AddNamedItem`, um benannte Elemente der unteren Ebene (z.B. Steuerelemente auf einer HTML-Seite) hinzuzufügen; stattdessen ruft die Engine Elemente der unteren Ebene indirekt über Elemente aus der obersten Ebene ab, indem sie die Hostschnittstellen `ITypeInfo` und `IDispatch` nutzt.
 
-5.  Ausführen des Skripts. Der Host bringt die Engine dazu, das Skript auszuführen, indem er in der [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md)-Methode das Flag „SCRIPTSTATE_CONNECTED“ festlegt. So ähnlich wie mit einer skriptbasierten `main()`-Funktion könnte mit diesem Aufruf vermutlich jegliche Form von Konstruktionsarbeit einer Skript-Engine durchgeführt werden, einschließlich statischer Bindung, Einbinden mit Ereignissen (siehe unten) und Ausführen von Code.
+5. Ausführen des Skripts. Der Host bringt die Engine dazu, das Skript auszuführen, indem er in der [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md)-Methode das Flag „SCRIPTSTATE_CONNECTED“ festlegt. So ähnlich wie mit einer skriptbasierten `main()`-Funktion könnte mit diesem Aufruf vermutlich jegliche Form von Konstruktionsarbeit einer Skript-Engine durchgeführt werden, einschließlich statischer Bindung, Einbinden mit Ereignissen (siehe unten) und Ausführen von Code.
 
-6.  Abrufen von Elementinformationen. Jedes Mal, wenn die Skript-Engine einem Element der obersten Ebene ein Symbol zuordnen muss, ruft sie die [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md)-Methode auf, die daraufhin Informationen über das Element zurückgibt.
+6. Abrufen von Elementinformationen. Jedes Mal, wenn die Skript-Engine einem Element der obersten Ebene ein Symbol zuordnen muss, ruft sie die [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md)-Methode auf, die daraufhin Informationen über das Element zurückgibt.
 
-7.  Einbinden mit Ereignissen. Bevor Sie das eigentliche Skript starten, stellt die Skript-Engine über die `IConnectionPoint`-Schnittstelle eine Verbindung zu den Ereignissen aller relevanten Objekte her.
+7. Einbinden mit Ereignissen. Bevor Sie das eigentliche Skript starten, stellt die Skript-Engine über die `IConnectionPoint`-Schnittstelle eine Verbindung zu den Ereignissen aller relevanten Objekte her.
 
-8.  Aufrufen von Eigenschaften und Methoden. Während das Skript ausgeführt wird, erstellt die Skript-Engine bei benannten Objekten mithilfe von `IDispatch::Invoke` oder anderen Standardmechanismen der OLE-Bindung Verweise auf Methoden und Eigenschaften.
+8. Aufrufen von Eigenschaften und Methoden. Während das Skript ausgeführt wird, erstellt die Skript-Engine bei benannten Objekten mithilfe von `IDispatch::Invoke` oder anderen Standardmechanismen der OLE-Bindung Verweise auf Methoden und Eigenschaften.
 
 ## <a name="windows-script-terms"></a>Windows Script-Begriffe
 
