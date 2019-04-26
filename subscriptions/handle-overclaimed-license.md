@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren mit zu häufig in Anspruch genommenen Abonnements umgehen.
 searchscope: VS Subscription
 ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580012"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Umgang mit zu häufig in Anspruch genommenen Abonnements
 

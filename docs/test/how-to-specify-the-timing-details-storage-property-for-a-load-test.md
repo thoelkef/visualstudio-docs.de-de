@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970637"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung
 
@@ -47,15 +47,15 @@ Sie können den Wert der Eigenschaft **Speicher für Details der zeitlichen Steu
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>So konfigurieren Sie die Speichereigenschaft für Zeitsteuerungsdetails in einem Auslastungstest
 
-1.  Öffnen Sie im Auslastungstest-Editor einen Auslastungstest.
+1. Öffnen Sie im Auslastungstest-Editor einen Auslastungstest.
 
-2.  Erweitern Sie den Knoten **Laufzeiteinstellungen** im Auslastungstest.
+2. Erweitern Sie den Knoten **Laufzeiteinstellungen** im Auslastungstest.
 
-3.  Wählen Sie die Laufzeiteinstellungen, die Sie konfigurieren möchten, z.B. **Run Settings1[Active]** (Laufzeiteinstellungen1[Aktiv]).
+3. Wählen Sie die Laufzeiteinstellungen, die Sie konfigurieren möchten, z.B. **Run Settings1[Active]** (Laufzeiteinstellungen1[Aktiv]).
 
-4.  Öffnen Sie das Fenster **Eigenschaften**. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+4. Öffnen Sie das Fenster **Eigenschaften**. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
-5.  Wählen Sie unter der Kategorie **Ergebnisse** die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aus, und wählen Sie dann **Alle einzelnen Details** aus.
+5. Wählen Sie unter der Kategorie **Ergebnisse** die Eigenschaft **Speicher für Details der zeitlichen Steuerung** aus, und wählen Sie dann **Alle einzelnen Details** aus.
 
      Nachdem Sie die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** konfiguriert haben, können Sie Ihren Auslastungstest ausführen und das **Diagramm für die Aktivitäten virtueller Benutzer** anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797942"
 ---
 # <a name="perftips"></a>PerfTips
 Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnosetools** helfen Ihnen beim Überwachen und Analysieren der Leistung Ihrer App während des Debuggens.
@@ -32,27 +32,27 @@ Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnos
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   Die **Haltepunkt** -Zeitachse kennzeichnet die Haltepunkte, die während der Debugsitzung ermittelt wurden. Klicken Sie auf ein Ereignis, um die **Debugger** -Detailliste auszuwählen.
+- Die **Haltepunkt** -Zeitachse kennzeichnet die Haltepunkte, die während der Debugsitzung ermittelt wurden. Klicken Sie auf ein Ereignis, um die **Debugger** -Detailliste auszuwählen.
 
--   Das Diagramm **CPU-Auslastung** zeigt die Änderung in der CPU übergreifend über alle Prozessorkerne in der Debugsitzung an.
+- Das Diagramm **CPU-Auslastung** zeigt die Änderung in der CPU übergreifend über alle Prozessorkerne in der Debugsitzung an.
 
--   Die Liste **Ereignisse** des **Debugger** -Detailbereichs enthält Elemente für jeden Haltepunkt.
+- Die Liste **Ereignisse** des **Debugger** -Detailbereichs enthält Elemente für jeden Haltepunkt.
 
--   Die Spalte **Dauer** eines Haltepunkt-Ereignisses zeigt die verstrichene Zeit zwischen Ereignis und dem vorherigen Haltepunkt an.
+- Die Spalte **Dauer** eines Haltepunkt-Ereignisses zeigt die verstrichene Zeit zwischen Ereignis und dem vorherigen Haltepunkt an.
 
 ## <a name="turn-perftips-on-or-off"></a>Aktivieren oder Deaktivieren von PerfTips
  So aktivieren oder deaktivieren Sie PerfTips:
 
-1.  Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.
+1. Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.
 
-2.  Markieren Sie **PerfTip für verstrichene Zeit beim Debuggen anzeigen**oder heben Sie die Auswahl auf.
+2. Markieren Sie **PerfTip für verstrichene Zeit beim Debuggen anzeigen**oder heben Sie die Auswahl auf.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Aktivieren oder deaktivieren Sie das Fenster „Diagnosetools“
  Zum Aktivieren oder deaktivieren das Fenster „Diagnosetools“:
 
-1.  Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.
+1. Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.
 
-2.  Aktivieren oder deaktivieren Sie **Aktivieren der Diagnosetools während des Debuggens**.
+2. Aktivieren oder deaktivieren Sie **Aktivieren der Diagnosetools während des Debuggens**.
 
 ## <a name="see-also"></a>Siehe auch
 - [Profilerstellung in Visual Studio](../profiling/index.md)

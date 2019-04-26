@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899166"
+---
 
 1. Klicken Sie auf dem Computer, auf dem das ASP.NET-Projekt in Visual Studio geöffnet ist, erst mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer und anschließend mit der linken auf **Veröffentlichen**.
 

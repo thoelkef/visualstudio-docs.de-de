@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie etwas über Probleme, die bei der Anmeldung bei Visual Studio-Abonnements auftreten können.
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008050"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Probleme beim Anmelden bei Visual Studio-Abonnements
 Um Ihr Visual Studio-Abonnement zu nutzen, müssen Sie sich zuerst anmelden.  Je nach Abonnement haben Sie es entweder mit einem Microsoft-Konto (MSA) oder einer Azure Active Directory-Identität (AAD) eingerichtet.  In diesem Artikel werden einige der Probleme besprochen, die beim Anmelden bei Ihrem Abonnement auftreten können.
@@ -55,7 +55,6 @@ Wenn Sie eine oder mehrere Identitäten (MSA oder AAD) löschen, die mit Ihrem A
 Um Auswirkungen auf Ihren Abonnementzugriff zu vermeiden, können Sie eine der folgenden Methoden verwenden.
 - Stellen Sie ein einziges Identitätsverwaltungssystem bereit – entweder MSA oder AAD, aber nicht beide.
 - Ordnen Sie die AAD- und MSA-Identitäten über den Mandanten zu.
-
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Weitere Informationen zum Verknüpfen von MSA- und AAD-Konten innerhalb von AAD finden Sie unter [Hinzufügen von Azure Active Directory B2B-Zusammenarbeitsbenutzern über das Azure-Portal](/azure/active-directory/b2b/add-users-administrator).

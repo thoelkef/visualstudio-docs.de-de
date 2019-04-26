@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978509"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 
@@ -20,10 +20,8 @@ Partner im [Cloud Solution Provider](https://partner.microsoft.com/cloud-solutio
 
 [Vergleich von Optionen für Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
-
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -84,7 +82,6 @@ So sind die Inhalte der Arbeitsmappe zu interpretieren:
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Abonnement                         | Monatliches Visual Studio Enterprise-Abonnement   |
 | Visual Studio     | Professionell           |  Abonnement                         | Monatliches Visual Studio Professional-Abonnement |
-
 
 Es wird ein Rabatt von 5 % auf die sechste Einheit jedes Visual Studio-Abonnements angeboten, die Sie (für einen bestimmten Kunden) in einem bestimmten Monat kaufen. Deshalb werden Ihnen zwei Zeilen für jede Abonnementoption angezeigt. Die eine Zeile zeigt einen „mindestens erforderlichen Wert“ von 0 an, der als Basispreis für die erste bis fünfte Einheit zu interpretieren ist. Die andere Zeile zeigt einen „mindestens erforderlichen Wert“ von 5 an. Dabei handelt es sich also um den Rabattpreis, der ab der sechsten Einheit gilt.
 

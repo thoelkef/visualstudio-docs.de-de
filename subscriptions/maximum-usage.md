@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie sich die maximale Anzahl zugewiesener Abonnements im Visual Studio-Verwaltungsportal anzeigen lassen können.
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965405"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Verwenden des Features „Maximum Usage“ (Maximale Auslastung) zur Übersicht der Anzahl zugewiesener Abonnements
 
@@ -32,7 +32,7 @@ So können Sie sich die maximale Anzahl zugewiesener Abonnements für jede Verei
     > [!div class="mx-imgBorder"]
     > ![Screenshot: „Maximum Usage Summary“ (Zusammenfassung der maximalen Auslastung)](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  Wenn Sie sich die höchste Zahl an zugewiesenen Abonnements währen der gesamten Dauer der Vereinbarung ansehen möchten, klicken Sie auf die Registerkarte **Full-Term** (Gesamte Dauer).
+4. Wenn Sie sich die höchste Zahl an zugewiesenen Abonnements währen der gesamten Dauer der Vereinbarung ansehen möchten, klicken Sie auf die Registerkarte **Full-Term** (Gesamte Dauer).
 
 ## <a name="viewing-assignment-history"></a>Überblick über den Zuweisungsverlauf
 

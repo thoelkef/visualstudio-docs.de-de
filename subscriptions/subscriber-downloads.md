@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Erfahren Sie, wie Sie Microsoft-Produkte, die zu Ihrem Visual Studio-Abonnement gehören, finden und herunterladen können.
 searchscope: VS Subscription
 ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953715"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Verwenden von Abonnentendownloads für Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.

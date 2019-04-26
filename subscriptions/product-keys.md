@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977719"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -53,7 +53,6 @@ Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Pr
 
 Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
 
-
 ### <a name="product-key-types"></a>Product Key-Typen
 
 |    Schlüsseltyp           |    Beschreibung                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Sie können einen Schlüssel von der Downloadseite des Produkts anfordern. Alter
 
 ### <a name="claiming-product-keys"></a>Inanspruchnahme von Product Keys
 Nur Abonnenten mit aktiven Abonnements können Produkte herunterladen und Product Keys in Anspruch nehmen.  Sie können Ihre in Anspruch genommenen Schlüssel von der Seite [Product Keys](https://my.visualstudio.com/productkeys) herunterladen, während Ihr Abonnement aktiv ist.
-
 
 So nehmen Sie einen Product Key in Anspruch:
 1. Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können.

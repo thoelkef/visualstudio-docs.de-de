@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Erfahren Sie, wie Sie Visual Studio-Abonnements für Ihre Organisation integrieren, nachdem die Migration zum Verwaltungsportal durchgeführt wurde.
 searchscope: VS Subscription
 ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008207"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Onboarding von Visual Studio-Abonnements nach der Migration Ihrer Organisation zum Verwaltungsportal
 

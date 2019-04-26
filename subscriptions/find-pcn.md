@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihre „Öffentliche Kundennummer“ (Public Customer Number, PCN) oder Autorisierungsnummer finden.
 searchscope: VS Subscription
 ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946124"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Wie finde ich meine „Öffentliche Kundennummer“ (Public Customer Number, PCN) oder Autorisierungsnummer?
 

@@ -112,7 +112,7 @@
             - name: Speichern von Daten mithilfe von Transaktionen
               href: save-data-by-using-a-transaction.md
               items:
-                - name: 'Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion'
+                - name: 'Exemplarische Vorgehensweise: Speichern von Daten in einer Transaktion'
                   href: save-data-in-a-transaction.md
             - name: Speichern von Daten in einer Datenbank (mehrere Tabellen)
               href: save-data-to-a-database-multiple-tables.md

@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Open- und Open License-Migration zum Verwaltungsportal für Visual Studio-Abonnements.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821730"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Open- und Open License-Migration zum neuen Verwaltungsportal für Visual Studio-Abonnements
 
@@ -38,7 +38,6 @@ Damit Partner und Kunden Abonnements im [Verwaltungsportal für Visual Studio-Ab
 
 - Damit Partner Abonnements im Namen von Kunden verwalten können, müssen sie sich im Verwaltungsportal registrieren. Die verschiedenen Zugriffsmöglichkeiten sind im Folgenden aufgeführt (und ähneln dem Hinzufügen einer Open License).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Hinzufügen einer neuen Lizenz durch bestehende Partner
 
 Dies gilt für Partner, die bereits auf das [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) zugreifen können, aber Open License-Bestellungen mit Visual Studio-Abonnements aufgegeben haben, die sie verwalten müssen.
@@ -48,7 +47,6 @@ Dies gilt für Partner, die bereits auf das [Verwaltungsportal für Visual Studi
 - Dann wählt er die Dropdownliste der Vereinbarung aus und scrollt nach unten bis zur Option **Neue Open License**.
 
 - Im Popupfenster gibt der Partner die Autorisierungsnummer, die Lizenznummer und die E-Mail-Adresse des Kunden gemäß den Angaben in der Vereinbarung ein, aktiviert das Kontrollkästchen und klickt dann auf **Senden**.
-
 
 > [!NOTE]
 > Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
@@ -67,7 +65,6 @@ Dies gilt für neue Partner, die neue Open License-Bestellungen aufgeben und sic
 
 - Daraufhin kann der Partner Abonnements für diese Open License verwalten.
 
-
 > [!NOTE]
 > Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
 
@@ -80,7 +77,6 @@ Dieses Szenario gilt für neue Partner, die bereits neue Open License-Bestellung
 - Eine Fehlermeldung weist darauf hin, dass er kein bekannter Benutzer ist.
 
 - Der Partner muss die Registrierungsoption **OLP-Partner** auswählen, die bei der Bestellung verwendete Autorisierungsnummer, Lizenznummer und E-Mail-Adresse des Kunden eingeben, das Kontrollkästchen aktivieren und auf **Senden** klicken.
-
 
 > [!NOTE]
 > Der Kunde erhält eine Benachrichtigungs-E-Mail, in der er informiert wird, dass ein Partner zur Open License hinzugefügt wurde. Die Zugriffsrechte des Partners können durch den Kunden bei Bedarf wieder entzogen werden.
