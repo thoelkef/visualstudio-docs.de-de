@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b2de537b17b68461c16f886c1eab706d2438ff6c
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972416"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Messen der Anwendungsleistung über die Befehlszeile
 
@@ -87,7 +87,3 @@ VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;
 ## <a name="permissions"></a>Berechtigungen
 
 Um eine Anwendung zu profilen, die erweiterte Berechtigungen benötigt, müssen Sie eine Eingabeaufforderung mit erhöhten Rechten verwenden.
-
-
-
-

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0366fed1a405acfa600e9af594e32c1ab47346
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04f85cf678052427ca5395c8b33c4786c2316de0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443621"
 ---
 # <a name="msbuild-targets-files"></a>TARGETS-Dateien von MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] umfasst mehrere *TARGETS*-Dateien, die Elemente, Eigenschaften, Ziele und Aufgaben für allgemeine Szenarios enthalten. Diese Dateien werden in die meisten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektdateien automatisch importiert, um Lesbarkeit und Verwaltung zu vereinfachen.
@@ -31,7 +31,7 @@ ms.locfileid: "56623748"
  Der `$(MSBuildToolsPath)`-Wert gibt den Pfad dieser allgemeinen *TARGETS*-Dateien an. Handelt es sich um die `ToolsVersion` 4.0, befinden sich die Dateien im folgenden Speicherort: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
->  Informationen zum Erstellen eigener Ziele finden Sie unter [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele). Wie Sie mithilfe des `Import`-Elements eine Projektdatei in eine andere Projektdatei einfügen können, wird unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md) und [Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md) erklärt.
+> Informationen zum Erstellen eigener Ziele finden Sie unter [Targets](../msbuild/msbuild-targets.md) (MSBuild-Ziele). Wie Sie mithilfe des `Import`-Elements eine Projektdatei in eine andere Projektdatei einfügen können, wird unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md) und [Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md) erklärt.
 
 ## <a name="common-targets-files"></a>Allgemeine TARGETS-Dateien
 

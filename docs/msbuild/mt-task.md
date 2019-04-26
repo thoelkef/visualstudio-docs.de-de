@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437839"
 ---
 # <a name="mt-task"></a>MT-Aufgabe
 Umschließt das Microsoft-Manifesttool *mt.exe*. Weitere Informationen finden Sie unter [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Umschließt das Microsoft-Manifesttool *mt.exe*. Weitere Informationen finden Si
  In der folgenden Tabelle werden die Parameter der **MT**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 > [!NOTE]
->  In der *mt.exe*-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich (**-**) verwendet, in diesem Artikel jedoch ein Schrägstrich (**/**). Beide Präfixe sind zulässig.
+> In der *mt.exe*-Dokumentation wird als Präfix für Befehlszeilenoptionen ein Bindestrich (**-**) verwendet, in diesem Artikel jedoch ein Schrägstrich (**/**). Beide Präfixe sind zulässig.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|

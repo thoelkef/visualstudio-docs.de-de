@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975665"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 
@@ -89,5 +89,5 @@ Detailinformationen zum Erstellen von TextMate-Grammatiken finden Sie unter [Tex
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
+- [Walkthrough: Create a code snippet (Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts)](../ide/walkthrough-creating-a-code-snippet.md)
 - [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)

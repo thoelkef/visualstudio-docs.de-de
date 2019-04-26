@@ -8,12 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979418"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer
 
@@ -25,9 +25,9 @@ Die folgenden Prozeduren veranschaulichen das Anzeigen des **Diagramms für Akti
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>So zeigen Sie das Diagramm für Aktivitäten virtueller Benutzer in den Auslastungstestergebnissen an
 
-1.  Konfigurieren Sie zum Anzeigen der virtuellen Benutzerdaten zunächst die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung**, die dem Auslastungstest zugeordnet ist. Führen Sie anschließend den Auslastungstest aus.
+1. Konfigurieren Sie zum Anzeigen der virtuellen Benutzerdaten zunächst die Einstellung **Alle einzelnen Details** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung**, die dem Auslastungstest zugeordnet ist. Führen Sie anschließend den Auslastungstest aus.
 
-2.  Nach dem Ausführen des Auslastungstests wird die Zusammenfassungsseite mit den Testergebnissen angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Benutzerdetails**.
+2. Nach dem Ausführen des Auslastungstests wird die Zusammenfassungsseite mit den Testergebnissen angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Benutzerdetails**.
 
      - oder - 
 

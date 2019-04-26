@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420810"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Verwenden des Visual Studio 2019-Vorteils
 
 Als Visual Studio-Abonnent haben Sie Zugriff auf die Visual Studio-IDE.  Die genaue Version richtet sich nach der Stufe Ihres Abonnements.  Der Vorteil wird auf der Seite [Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) im Abonnentenportal als Kachel in der Kategorie „Tools“ (Extras) angezeigt.
-
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -56,8 +55,10 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 14. Visual Studio wird geöffnet. Sie können nun mit der Verwendung von Visual Studio beginnen.
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Einstieg in Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Berechtigung
@@ -75,12 +76,10 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
-
 ## <a name="support-resources"></a>Supportressourcen
--  Wenn Sie Hilfe bei Visual Studio IDE benötigen, sehen Sie sich die folgenden Ressourcen an:
+- Wenn Sie Hilfe bei Visual Studio IDE benötigen, sehen Sie sich die folgenden Ressourcen an:
     - Technischer Support: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Dokumentation](/visualstudio/)
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.

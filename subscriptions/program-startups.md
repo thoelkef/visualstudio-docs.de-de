@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Details zu den Abonnements, die über das Microsoft für Startups-Programm angeboten werden.
 searchscope: VS Subscription
 ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007783"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio-Abonnements, die für Startups angeboten werden
 Qualifizierte Startups, die dem Microsoft für Startups-Programm beitreten, können fünf [monatliche Cloud-Abonnements für Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/) verdienen. Dabei handelt es sich um die gleichen Abonnements, die auch kommerziell angeboten werden, jedoch ohne spezielle Einschränkungen. Jedes Abonnement muss einem Endbenutzer (der dem lizenzierten Benutzer entspricht) zugewiesen werden, bevor ein Benutzer Visual Studio ausführen kann und in Azure DevOps Services als Visual Studio Enterprise-Abonnent erkannt wird.

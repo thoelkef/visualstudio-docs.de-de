@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948241"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Einrichten eines Azure Dev/Test-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
@@ -31,11 +31,9 @@ Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Te
    > [!div class="mx-imgBorder"]
    > ![Anmeldung bei Azure PAYG](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. Geben Sie dann die Abrechnungsinformationen für Ihr Konto an, und klicken Sie auf **Weiter**.  (Dies stellt die Kreditkarte dar, auf der Ihre Azure-Käufe abgerechnet werden.)
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG-Bezahlung](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. Aktivieren Sie im Abschnitt „Vereinbarung“ das Kontrollkästchen, um den Abonnementvertrag, die Angebotsdetails und die Datenschutzbestimmungen zu akzeptieren, und klicken Sie auf **Kaufen**.
 

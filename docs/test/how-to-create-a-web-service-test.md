@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950136"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Vorgehensweise: Erstellen eines Webdiensttests
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>So testen Sie einen Webdienst
 
-1.  Erstellen Sie einen neuen Webleistungstest. Sobald der Browser geöffnet wird, klicken Sie auf **Beenden**.
+1. Erstellen Sie einen neuen Webleistungstest. Sobald der Browser geöffnet wird, klicken Sie auf **Beenden**.
 
-2.  Klicken Sie im **Webleistungstest-Editor** mit der rechten Maustaste auf den Webleistungstest, und wählen Sie **Webdienstanforderung hinzufügen** aus.
+2. Klicken Sie im **Webleistungstest-Editor** mit der rechten Maustaste auf den Webleistungstest, und wählen Sie **Webdienstanforderung hinzufügen** aus.
 
-3.  Geben Sie als **URL**-Eigenschaft der neuen Anforderung den Namen des Webdiensts ein, z.B. **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Geben Sie als **URL**-Eigenschaft der neuen Anforderung den Namen des Webdiensts ein, z.B. **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Öffnen Sie ein neues Browserfenster, und geben Sie in der *Adressensymbolleiste* die URL der **ASMX**-Seite ein. Wählen Sie die zu testende Methode aus, und überprüfen Sie die SOAP-Meldung. Sie enthält eine `SOAPAction`.
+4. Öffnen Sie ein neues Browserfenster, und geben Sie in der *Adressensymbolleiste* die URL der **ASMX**-Seite ein. Wählen Sie die zu testende Methode aus, und überprüfen Sie die SOAP-Meldung. Sie enthält eine `SOAPAction`.
 
-5.  Klicken Sie im **Webleistungstest-Editor** mit der rechten Maustaste auf die Anforderung, und wählen Sie **Header hinzufügen** aus, um einen neuen Header hinzuzufügen. Geben Sie `SOAPAction` in der **Name**-Eigenschaft ein. Geben Sie in der **Wert**-Eigenschaft den in `SOAPAction` angezeigten Wert ein, beispielsweise `"http://tempuri.org/CheckStatus"`.
+5. Klicken Sie im **Webleistungstest-Editor** mit der rechten Maustaste auf die Anforderung, und wählen Sie **Header hinzufügen** aus, um einen neuen Header hinzuzufügen. Geben Sie `SOAPAction` in der **Name**-Eigenschaft ein. Geben Sie in der **Wert**-Eigenschaft den in `SOAPAction` angezeigten Wert ein, beispielsweise `"http://tempuri.org/CheckStatus"`.
 
-6.  Erweitern Sie den URL-Knoten im Editor, wählen Sie den **Zeichenfolgentext**-Knoten aus und geben Sie in das Feld **Inhaltstyp** den Wert `text/xml` ein.
+6. Erweitern Sie den URL-Knoten im Editor, wählen Sie den **Zeichenfolgentext**-Knoten aus und geben Sie in das Feld **Inhaltstyp** den Wert `text/xml` ein.
 
-7.  Kehren Sie zum Browser aus Schritt 4 zurück. Wählen Sie die XML-Komponente der SOAP-Anforderung aus der Webdienst-Beschreibungsseite aus, und kopieren Sie diese in die Zwischenablage.
+7. Kehren Sie zum Browser aus Schritt 4 zurück. Wählen Sie die XML-Komponente der SOAP-Anforderung aus der Webdienst-Beschreibungsseite aus, und kopieren Sie diese in die Zwischenablage.
 
-8.  Der XML-Inhalt ähnelt dem folgenden Beispiel:
+8. Der XML-Inhalt ähnelt dem folgenden Beispiel:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

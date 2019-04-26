@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950051"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer
 
 Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer** mit den folgenden Namespaces erweitern:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 Darüber hinaus müssen Sie einen Verweis auf die LoadTestPackage-DLL hinzufügen, die sich im Ordner *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies* befindet.
 
@@ -109,31 +109,31 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>So erstellen Sie ein Steuerelement, das im Webleistungstest-Ergebnisviewer verwendet werden soll
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
 
 2. Erstellen Sie ein neues **Windows Forms-Steuerelementbibliothek**-Projekt.
 
-3.  Ziehen Sie <xref:System.Windows.Forms.DataGridView> aus der **Toolbox** auf die userControl1-Oberfläche.
+3. Ziehen Sie <xref:System.Windows.Forms.DataGridView> aus der **Toolbox** auf die userControl1-Oberfläche.
 
 4. Klicken Sie auf das Aktionstagsymbol (![Smarttag-Glyphe](../test/media/vs_winformsmttagglyph.gif)) in der oberen rechten Ecke von <xref:System.Windows.Forms.DataGridView>, und führen Sie die folgenden Schritte aus:
 
-    1.  Klicken Sie auf **In übergeordnetem Container andocken**.
+    1. Klicken Sie auf **In übergeordnetem Container andocken**.
 
-    2.  Deaktivieren Sie die Kontrollkästchen **Hinzufügen aktivieren**, **Bearbeiten aktivieren**, **Löschen aktivieren** und **Neuanordnung von Spalten aktivieren**.
+    2. Deaktivieren Sie die Kontrollkästchen **Hinzufügen aktivieren**, **Bearbeiten aktivieren**, **Löschen aktivieren** und **Neuanordnung von Spalten aktivieren**.
 
-    3.  Klicken Sie auf **Spalte hinzufügen**.
+    3. Klicken Sie auf **Spalte hinzufügen**.
 
          Das Dialogfeld **Spalte hinzufügen** wird angezeigt.
 
-    4.  Wählen Sie in der Dropdownliste **Typ** den Eintrag **DataGridViewTextBoxColumn** aus.
+    4. Wählen Sie in der Dropdownliste **Typ** den Eintrag **DataGridViewTextBoxColumn** aus.
 
-    5.  Löschen Sie den Text „Column1“ in **Headertext**.
+    5. Löschen Sie den Text „Column1“ in **Headertext**.
 
-    6.  Wählen Sie **Hinzufügen** aus.
+    6. Wählen Sie **Hinzufügen** aus.
 
-    7.  Klicken Sie auf **Schließen**.
+    7. Klicken Sie auf **Schließen**.
 
-5.  Ändern Sie im **Eigenschaftenfenster** die Eigenschaft **(Name)** von <xref:System.Windows.Forms.DataGridView> in **resultControlDataGridView**.
+5. Ändern Sie im **Eigenschaftenfenster** die Eigenschaft **(Name)** von <xref:System.Windows.Forms.DataGridView> in **resultControlDataGridView**.
 
 6. Klicken Sie mit der rechten Maustaste auf der Designoberfläche, und wählen Sie **Code anzeigen** aus.
 
@@ -158,21 +158,21 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Hinzufügen von Code zu „WebPerfTestResultsViewerAddin“
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im WebPerfTestResultsViewerAddin-Projekt auf den Knoten **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im WebPerfTestResultsViewerAddin-Projekt auf den Knoten **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
-2.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **.NET**.
+2. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **.NET**.
 
-3.  Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** und **System.Windows.Forms** aus.
+3. Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** und **System.Windows.Forms** aus.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
-5.  Klicken Sie mit der rechten Maustaste erneut auf den Knoten **Verweise**, und wählen Sie die Option **Verweis hinzufügen** aus.
+5. Klicken Sie mit der rechten Maustaste erneut auf den Knoten **Verweise**, und wählen Sie die Option **Verweis hinzufügen** aus.
 
-6.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Durchsuchen**.
+6. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **Durchsuchen**.
 
-7.  Klicken Sie auf die Dropdownschaltfläche für **Suchen in**, navigieren Sie zu *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*, und wählen Sie die Datei *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* aus.
+7. Klicken Sie auf die Dropdownschaltfläche für **Suchen in**, navigieren Sie zu *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*, und wählen Sie die Datei *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* aus.
 
-8.  Klicken Sie auf **OK**.
+8. Klicken Sie auf **OK**.
 
 9. Klicken Sie mit der rechten Maustaste auf den Knoten des WebPerfTestResultsViewerAddin-Projekts, und wählen Sie **Verweis hinzufügen** aus.
 
@@ -254,28 +254,28 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Hinzufügen von Code WebPerfTestResultsViewerControl
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten des Projekts „WebPerfTestResultsViewerControl“, und wählen Sie **Eigenschaften** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten des Projekts „WebPerfTestResultsViewerControl“, und wählen Sie **Eigenschaften** aus.
 
-2.  Klicken Sie auf die Registerkarte **Anwendung**, dann auf die Dropdownliste **Zielframework**, und wählen Sie **.NET Framework 4** aus. Schließen Sie anschließend die **Eigenschaften**.
+2. Klicken Sie auf die Registerkarte **Anwendung**, dann auf die Dropdownliste **Zielframework**, und wählen Sie **.NET Framework 4** aus. Schließen Sie anschließend die **Eigenschaften**.
 
      Dies ist erforderlich, damit die DLL-Verweise unterstützt werden, die zum Erweitern des **Webleistungstestergebnis-Viewers** erforderlich sind.
 
-3.  Klicken Sie im **Projektmappen-Explorer** im Projekt „WebPerfTestResultsViewerControl“ mit der rechten Maustaste auf den Knoten **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
+3. Klicken Sie im **Projektmappen-Explorer** im Projekt „WebPerfTestResultsViewerControl“ mit der rechten Maustaste auf den Knoten **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
-4.  Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **.NET**.
+4. Klicken Sie im Dialogfeld **Verweis hinzufügen** auf die Registerkarte **.NET**.
 
-5.  Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus.
+5. Scrollen Sie nach unten, und wählen Sie **Microsoft.VisualStudio.QualityTools.WebTestFramework** aus.
 
-6.  Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
-7.  Fügen Sie der Datei *UserControl1.cs* die folgenden using-Anweisungen hinzu:
+7. Fügen Sie der Datei *UserControl1.cs* die folgenden using-Anweisungen hinzu:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Fügen Sie die aufgerufene Update-Methode hinzu, die ein WebTestRequestResult-Objekt von der WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged-Methode in der Datei *Connect.cs* übergeben hat. Die Update-Methode füllt DataGridView mit verschiedenen Eigenschaften auf, die in WebTestRequestResult übergeben wurden.
+8. Fügen Sie die aufgerufene Update-Methode hinzu, die ein WebTestRequestResult-Objekt von der WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged-Methode in der Datei *Connect.cs* übergeben hat. Die Update-Methode füllt DataGridView mit verschiedenen Eigenschaften auf, die in WebTestRequestResult übergeben wurden.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 ### <a name="to-build-the-solution"></a>So erstellen Sie die Projektmappe
 
--   Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+- Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrieren des WebPerfTestResultsViewerAddin-Add-Ins
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>So registrieren Sie das Add-In mithilfe des Add-In-Managers
 
-1.  Klicken Sie im Menü **Extras** auf **Add-In-Manager**.
+1. Klicken Sie im Menü **Extras** auf **Add-In-Manager**.
 
-2.  Das Dialogfeld **Add-In-Manager** wird angezeigt.
+2. Das Dialogfeld **Add-In-Manager** wird angezeigt.
 
-3.  Aktivieren Sie in der Spalte **Verfügbare Add-Ins** das Kontrollkästchen des Add-Ins „WebPerfTestResultsViewerAddin“, und deaktivieren Sie die Kontrollkästchen in den Spalten **Start** und **Befehlszeile**.
+3. Aktivieren Sie in der Spalte **Verfügbare Add-Ins** das Kontrollkästchen des Add-Ins „WebPerfTestResultsViewerAddin“, und deaktivieren Sie die Kontrollkästchen in den Spalten **Start** und **Befehlszeile**.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Ausführen des Webleistungstests mithilfe des erstellten WebPerfTestResultsViewerAddin-Add-Ins
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>So führen Sie das neue VS-Add-In für die Webtest-Ergebnisansicht aus
 
-1.  Führen Sie den Webleistungstest aus. Im **Webleistungstest-Ergebnisviewer** wird die neue Registerkarte „Beispiel“ des WebPerfTestResultsViewerAddin-Add-Ins angezeigt.
+1. Führen Sie den Webleistungstest aus. Im **Webleistungstest-Ergebnisviewer** wird die neue Registerkarte „Beispiel“ des WebPerfTestResultsViewerAddin-Add-Ins angezeigt.
 
-2.  Wählen Sie die Registerkarte, um die in DataGridView enthaltenen Eigenschaften anzuzeigen.
+2. Wählen Sie die Registerkarte, um die in DataGridView enthaltenen Eigenschaften anzuzeigen.
 
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit
 
@@ -336,9 +336,9 @@ Außerdem können Sie auf dieser Seite die Ordner festlegen, in denen Visual Stu
 
  Folgende Einstellungen befinden sich auf der Optionsseite für die Sicherheit von Add-Ins:
 
--   **Allow Add-in components to load.** (Laden von Add-In-Komponenten zulassen.) Standardmäßig ausgewählt. Wenn das Kontrollkästchen aktiviert ist, können Add-Ins in Visual Studio geladen werden. Wenn das Kontrollkästchen deaktiviert ist, können keine Add-Ins in Visual Studio geladen werden.
+- **Allow Add-in components to load.** (Laden von Add-In-Komponenten zulassen.) Standardmäßig ausgewählt. Wenn das Kontrollkästchen aktiviert ist, können Add-Ins in Visual Studio geladen werden. Wenn das Kontrollkästchen deaktiviert ist, können keine Add-Ins in Visual Studio geladen werden.
 
--   **Allow Add-in components to load from a URL.** (Laden von Add-In-Komponenten von einer URL zulassen.) Standardmäßig nicht ausgewählt. Wenn das Kontrollkästchen aktiviert ist, können Add-Ins von externen Websites geladen werden. Wenn das Kontrollkästchen deaktiviert ist, können keine Remote-Add-Ins in Visual Studio geladen werden. Wenn aus irgendeinem Grund ein Add-In nicht geladen werden kann, dann kann es auch nicht aus dem Web geladen werden. Diese Einstellung steuert lediglich das Laden der Add-In-DLL. Die *.Addin*-Registrierungsdateien müssen sich immer auf dem lokalen System befinden.
+- **Allow Add-in components to load from a URL.** (Laden von Add-In-Komponenten von einer URL zulassen.) Standardmäßig nicht ausgewählt. Wenn das Kontrollkästchen aktiviert ist, können Add-Ins von externen Websites geladen werden. Wenn das Kontrollkästchen deaktiviert ist, können keine Remote-Add-Ins in Visual Studio geladen werden. Wenn aus irgendeinem Grund ein Add-In nicht geladen werden kann, dann kann es auch nicht aus dem Web geladen werden. Diese Einstellung steuert lediglich das Laden der Add-In-DLL. Die *.Addin*-Registrierungsdateien müssen sich immer auf dem lokalen System befinden.
 
 ## <a name="see-also"></a>Siehe auch
 

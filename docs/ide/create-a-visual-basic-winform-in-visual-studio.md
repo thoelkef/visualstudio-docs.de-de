@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 511305bd335bfb982590db2c52c35fabbfc7b841
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976842"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Erstellen einer Windows Forms-App in Visual Studio mit Visual Basic
 
@@ -26,7 +26,7 @@ Mithilfe dieser kurzen Einführung in die integrierte Entwicklungsumgebung (IDE)
 
 ::: moniker range="vs-2017"
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld den Begriff *Windows Forms* ein. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann aus der Liste der Plattformen **Windows** aus. 
 
@@ -154,5 +154,5 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic](quickstart-visual-basic-console.md)
-* [Weitere Informationen zu IntelliSense für Visual Basic-Codedateien](visual-basic-specific-intellisense.md)
+* [Schnellstart: Erstellen einer Konsolenanwendung in Visual Studio mit Visual Basic](quickstart-visual-basic-console.md)
+* [Erfahren Sie mehr über Visual Basic IntelliSense](visual-basic-specific-intellisense.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0699d74f67b3e43b65ab79d29acd4fb4e953666
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969724"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Funktionsansicht: .NET-Speicherinstrumentierungsdaten
 In der Funktionsansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, die mithilfe der Instrumentierungsmethode erfasst wurden, werden die Funktionen angezeigt, die während der Profilerstellungsausführung Arbeitsspeicher belegt haben. In der Funktionszeile werden die Größe und die Anzahl der Speicherbelegungen sowie die Zeiterfassungsdaten für die Funktion angezeigt.

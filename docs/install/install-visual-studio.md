@@ -2,7 +2,7 @@
 title: Installieren von Visual Studio
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
-ms.date: 03/30/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b45778cfbf34a6703de365bcf2a85be994a05173
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974949"
 ---
 # <a name="install-visual-studio"></a>Installieren von Visual Studio
 
@@ -105,7 +105,7 @@ Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu di
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
@@ -182,7 +182,6 @@ Wenn Sie nicht das Feature für Workloads verwenden möchten, um Ihre Visual Stu
   ![Visual Studio 2019: Installieren einzelner Komponenten](media/vs-2019/vs-installer-individual-components.png "Installieren einzelner Visual Studio-Komponenten")
 
 ::: moniker-end
-
 
 ## <a name="step-6---install-language-packs-optional"></a>Schritt 6: Installieren von Language Packs (optional)
 
@@ -261,8 +260,8 @@ Weitere Informationen finden Sie auf der Seite [Auswählen der Installationspfad
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
-* [Ändern von Visual Studio 2017](modify-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
+* [Ändern von Visual Studio](modify-visual-studio.md)
 * [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
 * [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

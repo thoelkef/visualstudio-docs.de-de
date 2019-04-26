@@ -1,21 +1,21 @@
 ---
-ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b8903ecc6f0bdb1ee24f5b8b7b724311c903e4ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58051759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927714"
 ---
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) mit den passenden Workloads für Ihre bevorzugte Sprache:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) mit den passenden Workloads für Ihre bevorzugte Sprache:
   * ASP.NET: **ASP.NET und Webentwicklung**
   * Node.js: **Node.js-Entwicklung**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) mit den zu der von Ihnen bevorzugten Sprache passenden Workloads:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) mit den zu der von Ihnen bevorzugten Sprache passenden Workloads:
   * ASP.NET: **ASP.NET und Webentwicklung**
   * Node.js: **Node.js-Entwicklung**
 ::: moniker-end

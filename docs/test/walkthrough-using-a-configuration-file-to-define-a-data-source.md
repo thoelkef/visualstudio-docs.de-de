@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976207"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
@@ -52,7 +52,7 @@ Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes
 
 3. Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
 
-##  <a name="define-a-custom-configuration-section"></a>Definieren eines benutzerdefinierten Konfigurationsabschnitts
+## <a name="define-a-custom-configuration-section"></a>Definieren eines benutzerdefinierten Konfigurationsabschnitts
 
 Sehen Sie sich die Datei *app.config* an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
 

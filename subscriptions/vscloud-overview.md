@@ -7,15 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
 searchscope: VS Subscription
-ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978901"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
-
 
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“**.
 
@@ -65,12 +64,12 @@ Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verw
 
 ## <a name="manage-subscriptions"></a>Abbrechen der Erneuerungen von erworbenen Cloudabonnements
 
-*   So ändern Sie die Anzahl der erworbenen Abonnements:
+* So ändern Sie die Anzahl der erworbenen Abonnements:
 
 > [!div class="mx-imgBorder"]
 > ![Ändern von Abonnements](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Senken Sie die Anzahl der Abonnements auf null (0), um diese Abonnements zu kündigen. Sie werden nicht am Anfang des nächsten Abrechnungszyklus erneuert (der erste Tag des nächsten Monats bei monatlichen Abonnements, alle zwölf Monate bei jährlichen Cloudabonnements).
+* Senken Sie die Anzahl der Abonnements auf null (0), um diese Abonnements zu kündigen. Sie werden nicht am Anfang des nächsten Abrechnungszyklus erneuert (der erste Tag des nächsten Monats bei monatlichen Abonnements, alle zwölf Monate bei jährlichen Cloudabonnements).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Erwerben Sie jetzt Cloudabonnements
 

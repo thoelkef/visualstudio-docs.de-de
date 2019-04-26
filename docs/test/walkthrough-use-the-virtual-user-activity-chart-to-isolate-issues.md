@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976218"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
@@ -26,19 +26,19 @@ Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten 
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Schließen Sie diese Verfahren ab:
+- Schließen Sie diese Verfahren ab:
 
-    -   [Aufzeichnen und Ausführen eines Webleistungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+    - [Aufzeichnen und Ausführen eines Webleistungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    -   [Erstellen und Ausführen eines Auslastungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Erstellen und Ausführen eines Auslastungstests](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Öffnen der in vorherigen exemplarischen Vorgehensweisen erstellten Projektmappe „ColorWebApp“
 
-1.  Öffnen Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 
-2.  Öffnen Sie die Projektmappe **ColorWebApp**, die *LoadTest1.loadtest* enthält. Dieser Auslastungstest ergibt sich aus der Durchführung der Schritte in den drei exemplarischen Vorgehensweisen, die am Anfang dieses Themas im Abschnitt zu den erforderlichen Komponenten und Voraussetzungen aufgeführt sind.
+2. Öffnen Sie die Projektmappe **ColorWebApp**, die *LoadTest1.loadtest* enthält. Dieser Auslastungstest ergibt sich aus der Durchführung der Schritte in den drei exemplarischen Vorgehensweisen, die am Anfang dieses Themas im Abschnitt zu den erforderlichen Komponenten und Voraussetzungen aufgeführt sind.
 
      Bei den verbleibenden Schritten in dieser exemplarischen Vorgehensweise wird von einer Webanwendung mit dem Namen ColorWebApp, einem Webleistungstest mit dem Namen *ColorWebAppTest.webtest* und einem Auslastungstest mit dem Namen *LoadTest1.loadtest* ausgegangen.
 
@@ -46,7 +46,7 @@ Mit dem Diagramm für Aktivitäten virtueller Benutzer können die Aktivitäten 
 
 Führen Sie den Auslastungstest aus, um Aktivitätsdaten von virtuellen Benutzern zu sammeln.
 
--   Klicken Sie in der Symbolleiste im **Auslastungstest-Editor** auf die Schaltfläche **Ausführen**. Die Ausführung von "LoadTest1" beginnt.
+- Klicken Sie in der Symbolleiste im **Auslastungstest-Editor** auf die Schaltfläche **Ausführen**. Die Ausführung von "LoadTest1" beginnt.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isolieren von Problemen im Diagramm für Aktivitäten virtueller Benutzer
 
@@ -54,11 +54,11 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>So verwenden Sie das Diagramm für Aktivitäten virtueller Benutzer in den Auslastungstestergebnissen
 
-1.  Nachdem die Ausführung des Auslastungstests abgeschlossen wurde, wird die Seite **Zusammenfassung** für die Auslastungstestergebnisse im **Auslastungstest-Analyzer** angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Diagramme**.
+1. Nachdem die Ausführung des Auslastungstests abgeschlossen wurde, wird die Seite **Zusammenfassung** für die Auslastungstestergebnisse im **Auslastungstest-Analyzer** angezeigt. Klicken Sie auf der Symbolleiste auf die Schaltfläche **Diagramme**.
 
      Die Ansicht "Diagramme" wird angezeigt.
 
-2.  Klicken Sie im Diagramm **Seitenantwortzeit** mit der rechten Maustaste auf eine Stelle neben einem der Symbole für Schwellenwertverletzungen, und wählen Sie die Option **Zu Benutzerdetail wechseln** aus.
+2. Klicken Sie im Diagramm **Seitenantwortzeit** mit der rechten Maustaste auf eine Stelle neben einem der Symbole für Schwellenwertverletzungen, und wählen Sie die Option **Zu Benutzerdetail wechseln** aus.
 
     > [!NOTE]
     > Sie können die Schaltfläche **Details** in der Symbolleiste des **Auslastungstest-Editors** verwenden, um auch das Diagramm für Benutzeraktivitäten zu öffnen. Wenn Sie jedoch die Option **Zu Benutzerdetail wechseln** verwenden, wird im **Diagramm für Aktivitäten virtueller Benutzer** automatisch die Ansicht des Teils des Tests vergrößert, auf den Sie im Diagramm mit der rechten Maustaste geklickt haben.
@@ -67,37 +67,37 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
      Auf der y-Achse stellen die horizontalen Elemente einzelne virtuelle Benutzer dar. Die x-Achse zeigt die Zeitachse für den Auslastungstestlauf an.
 
-3.  Stellen Sie im Tool **Zoom zum Zeitraum** unter dem **Diagramm für Aktivitäten virtueller Benutzer** die linken und rechten Schieberegler so ein, dass sich beide in der Nähe des Symbols für die Schwellenwertverletzung befinden. Hierdurch wird die Zeitskala im **Diagramm für Aktivitäten virtueller Benutzer** geändert.
+3. Stellen Sie im Tool **Zoom zum Zeitraum** unter dem **Diagramm für Aktivitäten virtueller Benutzer** die linken und rechten Schieberegler so ein, dass sich beide in der Nähe des Symbols für die Schwellenwertverletzung befinden. Hierdurch wird die Zeitskala im **Diagramm für Aktivitäten virtueller Benutzer** geändert.
 
-4.  Aktivieren Sie in der **Detaillegende** das Kontrollkästchen **(Fehler hervorheben)**. Der virtuelle Benutzer, der die Schwellenwertverletzung verursacht hat, wird hervorgehoben.
+4. Aktivieren Sie in der **Detaillegende** das Kontrollkästchen **(Fehler hervorheben)**. Der virtuelle Benutzer, der die Schwellenwertverletzung verursacht hat, wird hervorgehoben.
 
-5.  Deaktivieren Sie im Bereich **Filterergebnisse** die Kontrollkästchen **Erfolgreiche Ergebnisse anzeigen** und **HttpError**, aber lassen Sie das Kontrollkästchen **ValidationRuleError** aktiviert.
+5. Deaktivieren Sie im Bereich **Filterergebnisse** die Kontrollkästchen **Erfolgreiche Ergebnisse anzeigen** und **HttpError**, aber lassen Sie das Kontrollkästchen **ValidationRuleError** aktiviert.
 
      Im **Diagramm für Aktivitäten virtueller Benutzer** werden nur diejenigen virtuellen Benutzer angezeigt, die mehr als drei Sekunden auf der Seite *Red.aspx* verbracht haben. Dieser Wert wurde in der vorherigen exemplarischen Vorgehensweise über die Schwellenwertverletzung konfiguriert.
 
-6.  Zeigen Sie mit der Maus auf die horizontale Linie, die den virtuellen Benutzer mit dem Validierungsregelfehler für die Schwellenwertverletzung darstellt.
+6. Zeigen Sie mit der Maus auf die horizontale Linie, die den virtuellen Benutzer mit dem Validierungsregelfehler für die Schwellenwertverletzung darstellt.
 
-7.  Eine QuickInfo mit den folgenden Informationen wird angezeigt:
+7. Eine QuickInfo mit den folgenden Informationen wird angezeigt:
 
-    -   **Benutzer-ID**
+    - **Benutzer-ID**
 
-    -   **Szenario**
+    - **Szenario**
 
-    -   **Test**
+    - **Test**
 
-    -   **Ergebnis**
+    - **Ergebnis**
 
-    -   **Network**
+    - **Network**
 
-    -   **Startzeit**
+    - **Startzeit**
 
-    -   **Dauer**
+    - **Dauer**
 
-    -   **Agent**
+    - **Agent**
 
-    -   **Testprotokoll**
+    - **Testprotokoll**
 
-8.  Beachten Sie, dass **Testprotokoll** ein Link ist. Klicken Sie auf den Link **Testprotokoll**.
+8. Beachten Sie, dass **Testprotokoll** ein Link ist. Klicken Sie auf den Link **Testprotokoll**.
 
 9. Der Webleistungstest „ColorWebTest“, der dem Protokoll zugeordnet ist, wird im **Webleistungstestergebnis-Viewer** geöffnet. So können Sie isolieren, wo die Schwellenwertverletzungen aufgetreten sind.
 
