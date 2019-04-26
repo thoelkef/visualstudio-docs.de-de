@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c5897c6ffc2b4530ce74b29114c84cd3556f25cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437565"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Anpassen der Startseite für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
     - Installieren Sie sie über [Visual Studio Marketplace](https://marketplace.visualstudio.com/), von einer anderen Website oder einer Seite im lokalen Intranet.
 
         > [!NOTE]
-        >  Wenn Sie eine Seite installieren möchten, die für eine frühere Version von Visual Studio verwendet wird, können Sie die Seite mit Visual Studio SDK aktualisieren. Weitere Informationen finden Sie unter [How to: Upgrade a Visual Studio Custom Start Page (Vorgehensweise: Durchführen eines Upgrades für eine benutzerdefinierte Visual Studio-Startseite)](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
+        > Wenn Sie eine Seite installieren möchten, die für eine frühere Version von Visual Studio verwendet wird, können Sie die Seite mit Visual Studio SDK aktualisieren. Weitere Informationen finden Sie unter [How to: Upgrade a Visual Studio Custom Start Page (Vorgehensweise: Durchführen eines Upgrades für eine benutzerdefinierte Visual Studio-Startseite)](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
 
          Öffnen Sie eine VSIX-Datei, die eine benutzerdefinierte Startseite enthält, oder kopieren Sie die Startseitendateien und fügen Sie sie auf dem Computer in den Ordner **%USERPROFILE%\Eigene Dateien\Visual Studio 2015\StartPages** ein.
 
@@ -59,7 +59,7 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 4. Wählen Sie in der Liste **Startseite anpassen** die gewünschte Seite aus.
 
 > [!NOTE]
->  Wenn ein Fehler in einer benutzerdefinierten Startseite Visual Studio zum Absturz bringt, können Sie Visual Studio im abgesicherten Modus starten und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Wenn ein Fehler in einer benutzerdefinierten Startseite Visual Studio zum Absturz bringt, können Sie Visual Studio im abgesicherten Modus starten und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Siehe auch
  [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Erstellen einer eigenen Startseite](../misc/creating-your-own-start-page.md)

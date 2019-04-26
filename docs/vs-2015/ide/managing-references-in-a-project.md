@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424536"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 2. Wechseln Sie zur Website des Anbieters des nicht unterstützten Erweiterungs-SDKs, und installieren Sie die Version des Erweiterungs-SDKs mit Abhängigkeiten, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
   
     > [!NOTE]
-    >  Eine Möglichkeit, um herauszufinden, ob das zuvor installierte Erweiterungs-SDK Abhängigkeiten von anderen Erweiterungs-SDKs aufweist, besteht darin, Visual Studio neu zu starten. Erstellen Sie dann ein neues C#-Windows Store-Projekt, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Verweis hinzufügen**, wechseln Sie zur Registerkarte **Windows** , wechseln Sie zur Unterregisterkarte **Erweiterungen** , wählen Sie das Erweiterungs-SDK aus, und schauen Sie sich den rechten Bereich des **Verweis-Managers**an. Wenn Abhängigkeiten bestehen, werden sie dort aufgeführt.  
+    > Eine Möglichkeit, um herauszufinden, ob das zuvor installierte Erweiterungs-SDK Abhängigkeiten von anderen Erweiterungs-SDKs aufweist, besteht darin, Visual Studio neu zu starten. Erstellen Sie dann ein neues C#-Windows Store-Projekt, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Verweis hinzufügen**, wechseln Sie zur Registerkarte **Windows** , wechseln Sie zur Unterregisterkarte **Erweiterungen** , wählen Sie das Erweiterungs-SDK aus, und schauen Sie sich den rechten Bereich des **Verweis-Managers**an. Wenn Abhängigkeiten bestehen, werden sie dort aufgeführt.  
   
     > [!IMPORTANT]
-    >  Wenn Ihr Projekt auf Windows 10 abzielt und das im vorherigen Schritt installierte Erweiterungs-SDK von Microsoft Visual C++ Runtime Package abhängt, lautet die Version von Microsoft Visual C++ Runtime Package, die mit Windows 10 kompatibel ist, v14.0 und wird mit Visual Studio 2015 installiert.  
+    > Wenn Ihr Projekt auf Windows 10 abzielt und das im vorherigen Schritt installierte Erweiterungs-SDK von Microsoft Visual C++ Runtime Package abhängt, lautet die Version von Microsoft Visual C++ Runtime Package, die mit Windows 10 kompatibel ist, v14.0 und wird mit Visual Studio 2015 installiert.  
   
 3. Wenn das im vorherigen Schritt installierte Erweiterungs-SDK von anderen Erweiterungs-SDKs abhängt, rufen Sie die Websites der entsprechenden Anbieter auf, und installieren Sie die Versionen, die mit der Version der Plattform kompatibel sind, auf die Ihr Projekt abzielt.  
   
@@ -89,9 +89,9 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 - Andere Projektverzeichnisse in der gleichen Projektmappe. (Sie finden diese Assemblys auf der Registerkarte **Projekte** .)  
   
 > [!NOTE]
->  Alle Projekte enthalten einen impliziten Verweis auf "mscorlib". Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`.  
+> Alle Projekte enthalten einen impliziten Verweis auf "mscorlib". Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`.  
 >   
->  Alle Projekte in Visual Studio 2010 enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.  
+> Alle Projekte in Visual Studio 2010 enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Verweise auf freigegebene Komponenten zur Laufzeit  
  Zur Laufzeit müssen sich Komponenten entweder im Ausgabepfad des Projekts oder im [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) befinden. Wenn das Projekt einen Verweis auf ein Objekt enthält, der sich nicht an einem dieser Orte befindet, müssen Sie den Verweis beim Erstellen des Projekts in den Ausgabepfad des Projekts kopieren. Die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft gibt an, ob diese Kopie erstellt werden muss. Wenn der Wert **True**lautet, wird der Verweis beim Erstellen des Projekts in das Projektverzeichnis kopiert. Wenn der Wert **False**ist, wird der Verweis nicht kopiert.  
@@ -111,7 +111,7 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
  Wenn Sie ein Projekt haben, das eine Assembly erstellt, müssen Sie auf das Projekt verweisen und keinen Dateiverweis verwenden (siehe unten). Der Vorteil eines Verweises zwischen Projekten liegt darin, dass eine Abhängigkeit zwischen den Projekten im Buildsystem erzeugt wird. Das abhängige Projekt wird erstellt, wenn es sich seit der letzten Erstellung des verweisenden Projekts geändert hat. Bei Dateiverweisen wird keine Buildabhängigkeit erstellt, d. h., das verweisende Projekt kann ohne Erstellen des abhänigen Projekts erstellt werden, und der Verweis kann veraltet sein. (Das heißt, das Projekt kann auf eine vorher erstellte Version des Projekts verweisen.) Dies kann dazu führen, dass im BIN-Verzeichnis mehrere Versionen einer einzigen DLL erforderlich sind, was jedoch nicht möglich ist. Wenn dieser Konflikt auftritt, wird eine Meldung wie die folgende angezeigt: [Fehler: Die Abhängigkeit „Datei“ in Projekt „Projekt“ kann nicht in das Ausführungsverzeichnis kopiert werden, da sie den Verweis „Datei“ überschreiben würde](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Weitere Informationen finden Sie unter [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) und [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Anstelle eines Projekt-zu-Projekt-Verweises wird ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.  
+> Anstelle eines Projekt-zu-Projekt-Verweises wird ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.  
   
 ## <a name="file-references"></a>Dateiverweise  
  Dateiverweise sind direkte Verweise auf Assemblys außerhalb des Kontexts eines Visual Studio-Projekts. Sie erstellen diese mithilfe der Registerkarte **Durchsuchen** im **Verweis-Manager**. Verwenden Sie einen Dateiverweis, wenn Sie nur eine Assembly oder Komponente haben und nicht über das Projekt verfügen, das dies als Ausgabe erstellt.  

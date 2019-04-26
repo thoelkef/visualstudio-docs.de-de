@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422900"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Gewusst wie: Erstellen und Bearbeiten von Konfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. 
 - Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die Projektmappe, und wählen Sie dann **Konfigurations-Manager** aus.  
   
   > [!NOTE]
-  >  Wenn der Befehl **Konfigurations-Manager** nicht im Kontextmenü angezeigt wird, suchen Sie auf der Menüleiste im Menü **Erstellen**. Wenn der Befehl dort auch nicht angezeigt wird, wählen Sie auf der Menüleiste **Extras**, **Optionen** aus, und erweitern Sie anschließend im linken Bereich des Dialogfelds **Optionen** die Optionen **Projekte und Projektmappen**, **Allgemein**, und aktivieren Sie im rechten Bereich das Kontrollkästchen **Erweiterte Buildkonfigurationen anzeigen**.  
+  > Wenn der Befehl **Konfigurations-Manager** nicht im Kontextmenü angezeigt wird, suchen Sie auf der Menüleiste im Menü **Erstellen**. Wenn der Befehl dort auch nicht angezeigt wird, wählen Sie auf der Menüleiste **Extras**, **Optionen** aus, und erweitern Sie anschließend im linken Bereich des Dialogfelds **Optionen** die Optionen **Projekte und Projektmappen**, **Allgemein**, und aktivieren Sie im rechten Bereich das Kontrollkästchen **Erweiterte Buildkonfigurationen anzeigen**.  
   
    Sie können im Dialogfeld **Konfigurations-Manager** die Dropdownliste **Konfiguration der aktuellen Projektmappe** verwenden, um eine Projektmappen-weite Buildkonfiguration auszuwählen, eine vorhandene zu ändern oder eine neue Konfiguration zu erstellen. Sie können die Dropdownliste **Aktive Projektmappenplattform** verwenden, um die Plattform auszuwählen, auf die die Konfiguration ausgerichtet ist, eine vorhandene zu ändern, oder eine neue Plattform hinzuzufügen. Im Bereich **Projektkontexte** werden die Projekte in der Projektmappe aufgeführt. Für jedes Projekt können Sie eine projektspezifische Konfiguration und Plattform auswählen, vorhandene ändern oder eine neue Konfiguration erstellen bzw. eine neue Plattform hinzufügen. Sie können auch Kontrollkästchen aktivieren, die angeben, ob jedes Projekt bei Verwendung der Projektmappe-weiten Konfiguration zum Erstellen oder Bereitstellen der Projektmappe eingeschlossen wird.  
   

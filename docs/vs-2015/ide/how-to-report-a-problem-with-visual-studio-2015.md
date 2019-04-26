@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083648"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Melden eines Problems mit Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Klicken Sie auf das Benutzerfeedbacksymbol neben **Schnellstart** in der Titelle
 
 ## <a name="describe-the-problem"></a>Beschreiben Sie das Problem
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Geben Sie einen aussagekräftigen Namen für das Problem an, der uns die Weiterleitung an das richtige Visual Studio-Team erleichtert.
 
@@ -49,15 +49,15 @@ Wählen Sie **Screenshot einfügen** aus, um Ihren aktuellen Bildschirm an Micro
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Stellen Sie Ablaufverfolgungsdaten und Heapspeicherabbilder bereit (optional)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  Ablaufverfolgungs- und Heapspeicherabbild-Dateien sind sehr nützlich für die Diagnose von Problemen.   Wir schätzen es sehr, wenn Sie das Tool „Problem melden“ verwenden, um die Schritte zum Reproduzieren des Problems zu erfassen und die Daten an Microsoft zu senden.
+1. Ablaufverfolgungs- und Heapspeicherabbild-Dateien sind sehr nützlich für die Diagnose von Problemen.   Wir schätzen es sehr, wenn Sie das Tool „Problem melden“ verwenden, um die Schritte zum Reproduzieren des Problems zu erfassen und die Daten an Microsoft zu senden.
 
-2.  Klicken Sie auf das Chevron neben **Zeichnen Sie Ihre Aktionen auf, damit das Problem reproduziert werden kann**. Wenn das Problem dazu führt, dass Visual Studio hängt oder abstürzt, öffnen Sie einer andere Instanz von Visual Studio, und wählen Sie die Option aus der Listenansicht aus.
+2. Klicken Sie auf das Chevron neben **Zeichnen Sie Ihre Aktionen auf, damit das Problem reproduziert werden kann**. Wenn das Problem dazu führt, dass Visual Studio hängt oder abstürzt, öffnen Sie einer andere Instanz von Visual Studio, und wählen Sie die Option aus der Listenansicht aus.
 
-3.  Klicken Sie auf **Aufzeichnung starten** , und führen Sie die Schritte zum Reproduzieren des Problems aus. Wenn Sie fertig sind, klicken Sie im unverankerten Fenster auf die Schaltfläche **Aufzeichnung beenden** .
+3. Klicken Sie auf **Aufzeichnung starten** , und führen Sie die Schritte zum Reproduzieren des Problems aus. Wenn Sie fertig sind, klicken Sie im unverankerten Fenster auf die Schaltfläche **Aufzeichnung beenden** .
 
-4.  Warten Sie einige Minuten, bis Visual Studio die aufgezeichneten Informationen erfasst und gepackt hat. Das Dialogfeld sieht nach Abschluss des Erfassungsprozesses in etwa wie folgt aus:
+4. Warten Sie einige Minuten, bis Visual Studio die aufgezeichneten Informationen erfasst und gepackt hat. Das Dialogfeld sieht nach Abschluss des Erfassungsprozesses in etwa wie folgt aus:
 
      ![Aufzeichnen einer Ablaufverfolgungsdatei](../ide/media/record-a-trace-file.png "Aufzeichnen einer Ablaufverfolgungsdatei")
 

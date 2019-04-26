@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445655"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
  Umgebungsvariablen, Befehlszeileneigenschaften und Eigenschaften auf Projektebene können im gesamten `UsingTask`-Element referenziert werden, wenn es in der Projektdatei angezeigt wird, und zwar entweder explizit oder mithilfe einer importierten Projektdatei. Weitere Informationen finden Sie unter [Tasks](../msbuild/msbuild-tasks.md) (MSBuild-Aufgaben).  
   
 > [!NOTE]
->  Eigenschaften auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der TASKS-Dateien stammt, die global in der MSBuild-Engine registriert sind. Eigenschaften auf Projektebene sind nicht global in MSBuild.  
+> Eigenschaften auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der TASKS-Dateien stammt, die global in der MSBuild-Engine registriert sind. Eigenschaften auf Projektebene sind nicht global in MSBuild.  
   
  In MSBuild 4.0 kann das Laden mithilfe von Aufgaben aus .overridetask-Dateien erfolgen.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437583"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109811"
 Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anwendung erforderlich sind. Wenn Sie ein Projekt erstellen, indem Sie über das Hauptmenü den Befehl **Datei &#124; Neu &#124; Projekt** auswählen, erstellt [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Projektmappe, die das Projekt enthält. Danach können Sie der Projektmappe nach Bedarf weitere neue oder vorhandene Projekte hinzufügen. Sie können Projekte aus vorhandenen Codedateien erstellen, und Sie können temporäre Projekte erstellen (nur .NET), die gelöscht werden, wenn Sie diese nicht mehr benötigen.  
   
 > [!NOTE]
->  Die Beschreibungen in diesem Thema basieren auf der Visual Studio Community-Edition. Die Dialogfelder und Menübefehle können von den hier beschriebenen abweichen (je nach Ihren aktiven Einstellungen oder der Visual Studio-Edition). Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die Beschreibungen in diesem Thema basieren auf der Visual Studio Community-Edition. Die Dialogfelder und Menübefehle können von den hier beschriebenen abweichen (je nach Ihren aktiven Einstellungen oder der Visual Studio-Edition). Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Erstellen eines Projekts aus einer installierten-Projektvorlage  
  Wählen Sie im Hauptmenü den Befehl **Datei &#124; Neu &#124; Projekt** aus, um das Dialogfeld „Neues Projekt“ anzuzeigen. Wählen Sie im linken Bereich unter **Installiert &#124; Vorlagen** die Programmiersprache und Plattform oder Technologie aus, und wählen Sie dann im mittleren Bereich eine der verfügbaren Vorlagen aus.  
@@ -42,7 +42,7 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
  Wenn Sie eine Sammlung von unabhängigen Quelldateien haben, können Sie einfach ein Projekt erstellen, das diese enthält. Wählen Sie **Datei &#124; Neu &#124; Projekt aus vorhandenem Code** aus, um den Assistenten **Neues Projekt aus vorhandenen Codedateien erstellen** zu starten, und befolgen Sie die Anweisungen.  
   
 > [!TIP]
->  Diese Option funktioniert am besten für relativ einfache Auflistungen von Dateien.  
+> Diese Option funktioniert am besten für relativ einfache Auflistungen von Dateien.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Erstellen eines temporären Projekts (C# und Visual Basic)  
  Durch Arbeiten mit temporären Projekten können Sie ein .NET-Projekt erstellen und mit diesem experimentieren, ohne einen Speicherort anzugeben. Wenn Sie ein Projekt erstellen, wählen Sie einfach einen Projekttyp und eine Vorlage aus, und geben Sie im Dialogfeld **Neues Projekt** einen Namen an. Während Sie an dem temporären Projekt arbeiten, können Sie es jederzeit speichern oder verwerfen.  
@@ -83,7 +83,7 @@ Projekte sind logische Container für alle Elemente, die zum Erstellen Ihrer Anw
  Sie können eine Projektmappe dauerhaft löschen, jedoch aber nicht in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bevor Sie eine Projektmappe löschen, verschieben Sie alle Projekte, die möglicherweise wiederverwendet werden sollen, in eine andere Projektmappe. Löschen Sie dann im Datei-Explorer das Verzeichnis, in dem die SLN- und die SUO-Projektmappendateien gespeichert sind.  
   
 > [!NOTE]
->  Die SUO-Datei ist eine versteckte Datei, die bei Verwendung der standardmäßigen Datei-Explorer-Einstellungen nicht angezeigt wird.  
+> Die SUO-Datei ist eine versteckte Datei, die bei Verwendung der standardmäßigen Datei-Explorer-Einstellungen nicht angezeigt wird.  
   
 ##### <a name="to-delete-a-solution"></a>So löschen Sie eine Projektmappe  
   
