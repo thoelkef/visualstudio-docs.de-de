@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846372"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace-Funktionen (C#, Visual Basic, C++)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace-Funktionen (C#, Visual Basic C++)
 
 Sie können IntelliTrace verwenden, um Ereignisse und Methodenaufrufe Ihrer Anwendung aufzuzeichnen, mit deren Hilfe Sie den Status (Aufruflisten- und lokale Variablenwerte) zu unterschiedlichen Punkten in der Ausführung ermitteln können. Starten Sie das Debugging wie gewohnt – IntelliTrace ist standardmäßig aktiviert, und im neuen Fenster **Diagnosetools** unter der Registerkarte **Ereignisse** werden Ihnen die von IntelliTrace erfassten Informationen angezeigt. Wählen Sie ein Ereignis aus, und klicken Sie auf **Verlaufsbezogenes Debugging aktivieren**, um die Aufrufliste und lokal erfasste Informationen für dieses Ereignis anzuzeigen.
 
@@ -46,7 +46,7 @@ Sie können die Aufzeichnung bestimmter IntelliTrace-Ereignisse aktivieren oder 
 
 Wenn Sie gerade einen Debugging-Vorgang ausführen, beenden Sie diesen. Wechseln Sie zu **Tools > Optionen > IntelliTrace > IntelliTrace-Ereignisse**. Wählen Sie die Ereignisse, die IntelliTrace aufgezeichnen soll.
 
-## <a name="Snapshots"></a> Sammeln von Momentaufnahmen (C#, Visual Basic, C++)
+## <a name="Snapshots"></a> Sammeln von Momentaufnahmen (C#, Visual Basic C++)
 
 Dies ist nicht standardmäßig aktiviert, jedoch IntelliTrace kann Momentaufnahmen von Ihrer Anwendung bei jedem Breakpoint und Debuggerschritt-Schritt-Ereignis erfassen, und Sie können diese Momentaufnahmen in eine verlaufsdebugsitzung anzeigen. Eine Momentaufnahme bietet Ihnen einen Überblick über Ihre vollständigem Anwendungszustand. Um die Erfassung von Momentaufnahmen zu aktivieren, wechseln Sie zu **Tools > Optionen > IntelliTrace > allgemeine**, und wählen Sie **IntelliTrace-Momentaufnahmen (verwaltet und systemeigen)**. Weitere Informationen finden Sie unter [Untersuchen von vorherigen App-Zuständen mithilfe von IntelliTrace](../debugger/view-historical-application-state.md).
 
@@ -92,7 +92,7 @@ Um mehrere Module hinzuzufügen, verwenden Sie das Platzhalterzeichen * am Anfan
 
 Versuchen Sie, die Anzahl der Module auf ein Mindestmaß zu beschränken. Sie erhalten eine bessere Leistung, da weniger Daten erfasst werden. Sie erhalten auch weniger Störungen auf der Benutzeroberfläche, da weniger Daten verarbeitet werden müssen.
 
-## <a name="SaveSession"></a> IntelliTrace-Daten in Datei speichern (C#, Visual Basic, C++)
+## <a name="SaveSession"></a> IntelliTrace-Daten in Datei speichern (C#, Visual Basic C++)
 
 Sie können die von IntelliTrace erfassten Daten speichern, indem Sie während des Debuggens zu **Debuggen > IntelliTrace > IntelliTrace-Sitzung speichern** wechseln, solange die Anwendung unterbrochen ist. Das Menüelement ist deaktiviert, und Sie können die von IntelliTrace erfassten Daten nicht speichern, sofern die Anwendung noch ausgeführt wird oder das Debuggen bereits beendet wurde.
 

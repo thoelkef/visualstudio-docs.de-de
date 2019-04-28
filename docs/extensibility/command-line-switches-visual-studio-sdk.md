@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891380"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Befehlszeilenschalter (Visual Studio SDK)
 *Devenv.exe*, die ausführbare Datei, die beginnt die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE), unterstützt die Befehlszeilenoptionen, speziell für die Entwicklung von VSPackages. VSPackages können auch eigene Schalter in der Devenv-Befehlszeile zur Verfügung. In den folgenden Themen bieten Informationen zur Verwendung von Befehlszeilenoptionen in der IDE verwenden.

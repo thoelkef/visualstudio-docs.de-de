@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810752"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange-Steuerelement
   Die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement ist ein Bereich, der erstellt wird, nur, wenn ein nicht wiederholendes Schemaelement einer Zelle in Microsoft Office Excel zugeordnet ist. Z. B., wenn die `maxOccurs` Attribut eines Schemaelements gleich 1. Nachdem Visual Studio den zugeordneten XML-Bereich erstellt wurde, können Sie dafür programmieren, direkt ohne das Objektmodell von Excel zu durchlaufen. Sie können nur löschen, eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement innerhalb von Excel aus, wenn die elementzuordnung entfernt wird.

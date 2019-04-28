@@ -1,48 +1,49 @@
 ---
 title: IDebugOutputStringEvent2::GetString | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugOutputStringEvent2::GetString
 helpviewer_keywords:
 - IDebugOutputStringEvent2::GetString
 ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: d310df2e30a0c6e2b59bb561c2cfdcb8a7ac6254
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842775"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
-Ruft die anzeigbare Meldung ab.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```cpp
-HRESULT GetString( 
-   BSTR* pbstrString
-);
-```
-
-```csharp
-int GetString( 
-   out string pbstrString
-);
-```
-
-#### <a name="parameters"></a>Parameter
- `pbstrString`
-
- [out] Die anzeigbare Nachricht zurückgegeben.
-
-## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
-
-## <a name="see-also"></a>Siehe auch
-- [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)
+Ruft die anzeigbare Meldung ab.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT GetString(   
+   BSTR* pbstrString  
+);  
+```  
+  
+```csharp  
+int GetString(   
+   out string pbstrString  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `pbstrString`  
+ [out] Die anzeigbare Nachricht zurückgegeben.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929664"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Problembehandlung von Haltepunkten in Visual Studio-Debugger
 
@@ -35,7 +35,7 @@ Wechseln Sie zu der **Module** Fenster (**Debuggen** > **Windows** > **Module**)
 
 * Wenn Ihr Modul nicht geladen ist, überprüfen Sie Folgendes ein, um die Ursache zu ermitteln:
   * Vergewissern Sie sich, dass Sie den richtigen Prozess debuggen.
-  * Überprüfen, ob Sie die richtige Art von Code Debuggen. Sie können herausfinden, welche Art von Code, die der Debugger so konfiguriert ist, dass das Debuggen in der **Prozesse** Fenster (**Debuggen** > **Windows**  >  **Prozesse**). Angenommen, Sie debuggen möchten C# code, vergewissern Sie sich, dass der Debugger für den entsprechenden .NET Framework konfiguriert ist (z. B. verwaltet (v4\*) im Vergleich zu verwalteter (v2\*/v3\*) im Vergleich zu verwalteter (CoreCLR)) .
+  * Überprüfen, ob Sie die richtige Art von Code Debuggen. Sie können herausfinden, welche Art von Code, die der Debugger so konfiguriert ist, dass das Debuggen in der **Prozesse** Fenster (**Debuggen** > **Windows**  >  **Prozesse**). Z. B. Wenn Sie versuchen, C#-Code zu debuggen, vergewissern Sie sich, dass der Debugger für den entsprechenden .NET Framework konfiguriert ist (z. B. verwaltet (v4\*) im Vergleich zu verwalteter (v2\*/v3\*) im Vergleich zu verwalteter (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… der aktuelle Quellcode unterscheidet sich von der Version, erstellt in..."
 

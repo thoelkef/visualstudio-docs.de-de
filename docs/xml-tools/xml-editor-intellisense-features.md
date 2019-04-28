@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807969"
 ---
-# <a name="xml-editor-intellisense-features"></a>XML-Editor IntelliSense-Funktionen
+# <a name="xml-editor-intellisense-features"></a>IntelliSense-Features des XML-Editors
 
 Der XML-Editor stellt die vollständigen IntelliSense-Funktionen bereit, vergleichbar mit anderen verfügbaren Spracheditoren in Visual Studio. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.
 
@@ -111,7 +111,7 @@ Die IntelliSense-Features und die automatische Vervollständigung sind in der St
 
 Die **Automatisches Einfügen** Teil der **Sonstiges** -Seite steuert das folgende Verhalten:
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |-|-----------------|
 |Tags schließen|Fügt schließende Tags für neue Elemente ein.|
 |Attributanführungszeichen|Fügt beim Eingeben eines neuen Attributnamens Anführungszeichen für den Attributwert ein.|

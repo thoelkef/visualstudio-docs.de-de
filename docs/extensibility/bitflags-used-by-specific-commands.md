@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891686"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Von bestimmten Befehlen verwendete Bitflags
 Das Verhalten einer Reihe von Funktionen in der Quelle-Plug-in-API kann durch Festlegen von einem oder mehreren Bits in einem einzelnen Wert geändert werden. Diese Werte werden als Bitflags bezeichnet. Die verschiedenen Bitflags, die von der Quelle-Plug-in-API verwendet, werden hier beschrieben gruppiert, die von der Funktion, die sie verwendet.

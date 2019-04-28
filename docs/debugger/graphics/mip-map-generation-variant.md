@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895598"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
 Aktiviert Mipmaps auf Texturen, die keine Renderziele sind.
@@ -25,7 +25,7 @@ Für 3D-Szenen empfehlen wir Mipmaps, wenn Speicher verfügbar ist, um die zusä
 
 Wenn diese Variante zu einer deutlichen Leistungssteigerung führt, zeigt dies an, dass Sie Texturen ohne Aktivierung von Mipmaps verwenden und deshalb den Texturcache nicht optimal nutzen.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Mipmap-Erzeugung wird bei jedem Aufruf von `ID3D11Device::CreateTexture2D` erzwungen, der eine Quelltextur erstellt. MipMap-Erzeugung wird insbesondere erzwungen, wenn das D3D11_TEXTURE2D_DESC-Objekt übergeben `pDesc` beschreibt eine nicht geänderte Shaderressource, das ist:
 
 - Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.

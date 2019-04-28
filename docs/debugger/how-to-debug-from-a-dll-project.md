@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847983"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Gewusst wie: Debuggen über ein DLL-Projekt in Visual Studio (C#, C++, Visual Basic F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Vorgehensweise: Debuggen über ein DLL-Projekt in Visual Studio (C#, C++, Visual Basic F#)
 
 Eine Möglichkeit zum Debuggen eines DLL-Projekts ist an die aufrufende Anwendung in den Projekteigenschaften der DLL. Anschließend können Sie das Debuggen über das DLL-Projekt selbst starten. Für diese Methode funktioniert muss die app derselben DLL-Datei am gleichen Speicherort wie das aufrufen, die Sie konfigurieren. Wenn die app findet und eine andere Version der DLL lädt, wird nicht in dieser Version Haltepunkte enthalten. Andere Methoden zum Debuggen von DLLs, finden Sie unter [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md).
 
-Wenn Ihre verwaltete app, eine systemeigene DLL aufruft oder Ihre native app, eine verwaltete DLL aufruft, können Sie sowohl die DLL und die aufrufende Anwendung debuggen. Weitere Informationen finden Sie unter [How to: Debug in Mixed Mode (Vorgehensweise: Debuggen im gemischten Modus)](../debugger/how-to-debug-in-mixed-mode.md).
+Wenn Ihre verwaltete app, eine systemeigene DLL aufruft oder Ihre native app, eine verwaltete DLL aufruft, können Sie sowohl die DLL und die aufrufende Anwendung debuggen. Weitere Informationen finden Sie unter [Vorgehensweise: Debuggen im gemischten Modus](../debugger/how-to-debug-in-mixed-mode.md).
 
 Nativer und verwaltete DLL-Projekten haben unterschiedliche Einstellungen an die aufrufende apps.
 
@@ -53,7 +53,7 @@ Nativer und verwaltete DLL-Projekten haben unterschiedliche Einstellungen an die
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Geben Sie eine aufrufende app in ein verwaltetes DLL-Projekt
 
-1. Wählen Sie die C# oder Visual Basic-DLL-Projekt im **Projektmappen-Explorer**. Wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
+1. Wählen Sie das C#- oder Visual Basic-DLL-Projekt in **Projektmappen-Explorer**. Wählen Sie die **Eigenschaften** Symbol, drücken Sie **Alt**+**EINGABETASTE**, oder mit der rechten Maustaste, und wählen Sie **Eigenschaften**.
 
 1. Stellen Sie sicher, dass das Feld **Konfiguration** am oberen Rand des Fensters auf **Debuggen** festgelegt ist.
 
@@ -67,7 +67,7 @@ Nativer und verwaltete DLL-Projekten haben unterschiedliche Einstellungen an die
 
 1. Fügen Sie alle erforderlichen Befehlszeilenargumente in die **Befehlszeilenargumente** oder **Anwendungsargumente** Feld.
 
-   ![C#Fenster "Eigenschaften" Debuggen](../debugger/media/dbg-debugging-properties-dll-csharp.png " C# Debuggen Eigenschaftenfenster")
+   ![C# -Code Debuggen Eigenschaftenfenster](../debugger/media/dbg-debugging-properties-dll-csharp.png "C#-Eigenschaften von Debug-Fenster")
 
 1. Verwendung **Datei** > **ausgewählte Elemente speichern** oder **STRG**+**S** um Änderungen zu speichern.
 

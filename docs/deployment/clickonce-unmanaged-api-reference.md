@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900272"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referenz zur nicht verwalteten API für ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht verwaltete öffentliche APIs aus dfshim.dll.
@@ -44,7 +44,7 @@ ms.locfileid: "56633797"
 ### <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, 0 x 80020009 (DISP_E_EXCEPTION).
 
-### <a name="remarks"></a>Anmerkungen
+### <a name="remarks"></a>Hinweise
  Durch Aufrufen von CleanOnlineAppCache startet die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] service, sofern er nicht bereits ausgeführt wird.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -68,7 +68,7 @@ ms.locfileid: "56633797"
 ### <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. andernfalls gibt ein HRESULT, das den Fehler darstellt. Gibt HRESULTFROMWIN32 zurück, wenn ein Puffer zu klein ist.
 
-### <a name="remarks"></a>Anmerkungen
+### <a name="remarks"></a>Hinweise
  Zeiger darf nicht null sein. `pcwzActivationUrl` und `pcwzPathToDeploymentManifest` darf nicht leer sein.
 
  Es ist der Verantwortung des Aufrufers, um die Aktivierungs-URL zu bereinigen. Beispielsweise Zeichen das Escapezeichen hinzufügen, wo sie benötigt werden, oder entfernen die Abfragezeichenfolge.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892232"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>Text Datenzugriffsebenen mithilfe der legacy-API
 Eine Textebene kapselt normalerweise einen Aspekt des Textlayouts. Beispielsweise blendet eine Ebene "-Funktion-at-a-Time" Text vor und nach einer Funktion, die die Einfügemarke (Einfügemarke) enthält.

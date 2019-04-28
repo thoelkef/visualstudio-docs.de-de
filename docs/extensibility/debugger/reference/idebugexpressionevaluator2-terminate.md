@@ -1,60 +1,62 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 3ef5f17354e45327a87ee77e5b437409719094e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873976"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-Beendet und die ausdrucksauswertung bereinigt.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```cpp
-HRESULT Terminate (
-    void
-);
-```
-
-```csharp
-int Terminate ();
-```
-
-## <a name="return-value"></a>Rückgabewert
-Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
-
-## <a name="remarks"></a>Hinweise
-Weist die ausdrucksauswertung Wenn es bereinigt wird.
-
-## <a name="example"></a>Beispiel
-Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **ExpressionEvaluatorPackage** -Objekt, das macht die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) Schnittstelle.
-
-```cpp
-STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
-{
-    // scan the namespaces contained and delete
-    EEExtensionMethodCache **ppChild = NULL;
-    m_HashExtensionMethodCache.ResetHashIterator();
-    while (ppChild = m_HashExtensionMethodCache.IterateHash())
-    {
-        delete *ppChild;
-    }
-    return VBEEImplicitVariables::Terminate();
-}
-```
-
-## <a name="see-also"></a>Siehe auch
-- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Beendet und die ausdrucksauswertung bereinigt.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT Terminate (  
+    void  
+);  
+```  
+  
+```csharp  
+int Terminate ();  
+```  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+  
+## <a name="remarks"></a>Hinweise  
+ Weist die ausdrucksauswertung Wenn es bereinigt wird.  
+  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **ExpressionEvaluatorPackage** -Objekt, das macht die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) Schnittstelle.  
+  
+```cpp#  
+STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)  
+{  
+    // scan the namespaces contained and delete  
+    EEExtensionMethodCache **ppChild = NULL;  
+    m_HashExtensionMethodCache.ResetHashIterator();  
+    while (ppChild = m_HashExtensionMethodCache.IterateHash())  
+    {  
+        delete *ppChild;  
+    }  
+    return VBEEImplicitVariables::Terminate();  
+}  
+```  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

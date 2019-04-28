@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910150"
 ---
 # <a name="custom-tools"></a>Benutzerdefinierte tools
 *Benutzerdefinierte Tools* können Sie ein Tool mit einem Element in einem Projekt verknüpfen und das Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei-Generatoren*, werden häufig zum Konvertierer implementieren, das Generieren von Code aus und umgekehrt verwendet. Beispielsweise Erstellen von Einzeldatei-Generatoren [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus der *Settings* und *resx* Dateien. Der generierte Quellcode enthält die stark typisierten Zugriff auf die Daten in die *Settings* und *resx* Dateien. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.

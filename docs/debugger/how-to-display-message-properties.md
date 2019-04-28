@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894312"
 ---
-# <a name="how-to-display-message-properties"></a>Gewusst wie: Anzeigen von Meldungseigenschaften
+# <a name="how-to-display-message-properties"></a>Vorgehensweise: Anzeigen von Meldungseigenschaften
 Um weitere Informationen zu einer Nachricht aufgeführt [Ansicht "Nachrichten"](../debugger/messages-view.md), verwenden Sie die [im Dialogfeld "Eigenschaften" Nachricht](../debugger/message-properties-dialog-box.md).
 
 ### <a name="to-open-a-message-properties-dialog-box"></a>So öffnen Sie das Dialogfeld Eigenschaften der Nachricht

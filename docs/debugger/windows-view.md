@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900857"
 ---
 # <a name="windows-view"></a>Fensteransicht
 Wenn Sie erstmalig Spy++ öffnen, zeigt Windows-Ansicht eine Struktur mit allen Windows- und Steuerelemente im System. Werden die Fenster-Handle und die Klasse angezeigt. Das aktuelle Desktopfenster ist am Anfang der Struktur. Alle anderen Fenster sind untergeordnete Elemente des Desktops, und anhand der Hierarchie Standardfenster aufgeführt sind. Gleichgeordnete Fenster werden im erweiterbaren Listen unter der übergeordneten Elemente eingezogen angezeigt.
@@ -31,9 +31,9 @@ Wenn Sie erstmalig Spy++ öffnen, zeigt Windows-Ansicht eine Struktur mit allen 
  Windows-Ansicht den Fokus hat, können Sie das Suchtool im Verwenden der [Fenster Meldungssuche (Dialogfeld)](../debugger/window-search-dialog-box.md) zum Anzeigen von Informationen in einem beliebigen geöffneten Fenster auf Ihrem System.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Gewusst wie: Verwenden des Suchtools](../debugger/how-to-use-the-finder-tool.md) zeigt, wie dieses Tool Windows für die Eigenschaften oder Meldungen überprüft.
+ [Vorgehensweise: Verwenden des Suchtools](../debugger/how-to-use-the-finder-tool.md) zeigt, wie dieses Tool Windows für die Eigenschaften oder Meldungen überprüft.
 
- [Gewusst wie: Suchen nach einem Fenster in der Windows-Ansicht](../debugger/how-to-search-for-a-window-in-windows-view.md) wird erläutert, wie Sie ein bestimmtes Fenster in der Windows-Ansicht.
+ [Vorgehensweise: Suchen nach einem Fenster in der Windows-Ansicht](../debugger/how-to-search-for-a-window-in-windows-view.md) wird erläutert, wie Sie ein bestimmtes Fenster in der Windows-Ansicht.
 
  [Vorgehensweise: Anzeigen von Fenstereigenschaften](../debugger/how-to-display-window-properties.md) m Verfahren zum Öffnen das Dialogfeld "Eigenschaften".
 

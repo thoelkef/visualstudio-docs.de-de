@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823993"
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
 
@@ -58,7 +58,7 @@ Bildformen haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, das mit dem Bild-Form generiert (`none`, `abstract` oder `sealed`).|none|
 |Basisbildform|Die Basisklasse dieser Form.|(keine)|
-|name|Der Name dieser Form.|Aktuelle name|
+|Name|Der Name dieser Form.|Aktuelle name|
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Der Ort, in dem die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|none|
 |Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<none>|

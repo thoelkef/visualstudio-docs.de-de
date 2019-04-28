@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896619"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ in Visual Studio-debugger
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ in Visual Studio-Debugger
 Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch**, **"Auto"**, und **"lokal"** Windows mithilfe von Formatbezeichnern.
 
 Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und sogar in den Quellcodefenstern. Wenn Sie auf einem Ausdruck in diesen Fenstern anhalten, das Ergebnis wird in einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Die DataTip-Anzeige entspricht dem Formatbezeichner.
@@ -62,7 +62,7 @@ Sie können anzeigen, und wählen Sie aus einer Liste der verfügbaren Formatbez
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Formatbezeichner
-Die folgenden Tabellen beschreiben die Formatbezeichner angegeben, die Sie in Visual Studio verwenden können. Fett formatierte Bezeichner werden nur unterstützt, für den neuen Debugger und nicht für das Interop-Debuggen mit C++ / CLI.
+Die folgenden Tabellen beschreiben die Formatbezeichner angegeben, die Sie in Visual Studio verwenden können. Fett formatierte Bezeichner werden nur unterstützt, für den neuen Debugger und nicht für das interop-Debuggen mit C++/CLI.
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,7 +167,7 @@ Wenn Sie über einen Zeiger für ein Objekt verfügen, das Sie als Array anzeige
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|
 |!|RAW-Format wird ignoriert, Anpassungen Ansicht Typ von Daten|\<Benutzerdefinierte Darstellung>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim interop-Debuggen mit C++ / CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim interop-Debuggen mit C++/CLI
 Die folgende Tabelle beschreibt die Formatierungssymbole, die für Speicherbereiche verwendet. Bezeichner für Speicherbereiche können mit beliebigen Werten oder Ausdrücken verwendet werden, die als Speicherbereiche ausgewertet werden.
 
 |Symbol|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|
