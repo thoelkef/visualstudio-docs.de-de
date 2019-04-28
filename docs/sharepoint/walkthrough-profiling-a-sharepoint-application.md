@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834010"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Das Profil einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Visual Studio-Profiler ermöglicht Ihnen, Auffinden und beseitigen die teuersten (langsamsten) Teil des Projekts, auch bekannt als die *Langsamster Pfad*.

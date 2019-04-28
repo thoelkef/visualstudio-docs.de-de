@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545829"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.
 
@@ -38,7 +38,7 @@ Diese Regel nur sucht standardmäßig an extern sichtbare Namespaces, Typen und 
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können C#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
+Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten nicht übereinstimmen, Schlüsselwörter, die von Sprachen definiert sind, die die common Language Runtime abzielen. Abhängig von der Sprache, die verwendet wird und das Schlüsselwort, können c#-Compilerfehlern und Mehrdeutigkeiten bei die Bibliothek mit erschweren.
 
 Diese Regel überprüft für Schlüsselwörter in den folgenden Sprachen:
 

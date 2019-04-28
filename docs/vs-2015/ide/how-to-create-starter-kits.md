@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429343"
 ---
-# <a name="how-to-create-starter-kits"></a>Gewusst wie: Erstellen von Starter Kits
+# <a name="how-to-create-starter-kits"></a>Vorgehensweise: Erstellen von Starterkits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ein Starter Kit enthält Code für eine vollständige Anwendung und Dokumentation darüber, wie die Anwendung geändert oder erweitert wird. Das Erstellen eines Starter Kits erfolgt fast genauso wie das Erstellen einer normalen Projektvorlage. Der einzige Unterschied besteht darin, dass ein Starter Kit Dokumentationsdateien enthält, die geöffnet werden, wenn ein Projekt basierend auf dem Starter Kit erstellt wird.  
@@ -47,10 +47,10 @@ Ein Starter Kit enthält Code für eine vollständige Anwendung und Dokumentatio
   
  Die folgenden Themen enthalten Informationen zum Erstellen von Vorlagen.  
   
- [Gewusst wie: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)  
+ [Vorgehensweise: Create Project Templates (Vorgehensweise: Erstellen von Projektvorlagen)](../ide/how-to-create-project-templates.md)  
  Es wird erklärt, wie der **Assistent zum Exportieren von Vorlagen** zum Erstellen einer Vorlage verwendet wird.  
   
- [Gewusst wie: Aktualisieren vorhandener Vorlagen](../ide/how-to-update-existing-templates.md)  
+ [Vorgehensweise: Aktualisieren vorhandener Vorlagen](../ide/how-to-update-existing-templates.md)  
  Es wird beschrieben, wie eine exportierte Vorlage bearbeitet wird. Verwenden Sie dieses Verfahren zum Ändern der VSTEMPLATE-Datei, um Ihr Starter Kit anzupassen.  
   
 ## <a name="see-also"></a>Siehe auch  

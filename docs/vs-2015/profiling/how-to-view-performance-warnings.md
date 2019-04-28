@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382d8660adc482a2ab6c7417cf795f84b6fa9e25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420120"
 ---
-# <a name="how-to-view-performance-warnings"></a>Gewusst wie: Anzeigen von Leistungswarnungen
+# <a name="how-to-view-performance-warnings"></a>Vorgehensweise: Anzeigen von Leistungswarnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Leistungswarnungen der Profilerstellungstools von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] weisen auf Probleme in einer Anwendung, für die ein Profil erstellt wird, hin, die die Programmausführung verlangsamen können. Warnungen können auch anzeigen, dass Sie möglicherweise die Sammlungsmethoden ändern sollten, um nützlichere Daten zu erfassen. Leistungswarnungen werden automatisch in einer Profilerstellungssitzung generiert und im Fenster **Fehlerliste** angezeigt, wenn eine Datei mit Profilerstellungsdaten in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE geöffnet wird.  

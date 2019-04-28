@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859478"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 Projekttypen müssen die Verzeichnisse registrieren, wo sich ihre Projekt- und Projekt Vorlagen befinden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Bestimmt die Registrierungsinformationen Ihrer Projekttypen zugeordnet, was für die anzuzeigenden in die **neues Projekt hinzufügen** und **neues Element hinzufügen** Dialogfelder.
