@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823542"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
 Sie können den Regelsatz von Microsoft verwaltete empfohlene Regeln auf die kritischsten Probleme in Ihrem verwalteten Code, einschließlich potenzieller Sicherheitslücken, Anwendungsabstürze und anderen wichtigen Logik- und Designfehlern konzentrieren. Sie sollten diesen Regelsatz in alle benutzerdefinierten Regelsätze, die Sie für Ihre Projekte erstellen einschließen.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823904"
 ---
 # <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
 Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlichkeitsbereiche teilen ein Diagramms in vertikale oder horizontale Bereiche. Sie können andere Formen, die innerhalb von Verantwortlichkeitsbereichen angezeigt werden, definieren. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -37,7 +37,7 @@ Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlich
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, das mit der Swimlane generiert (`none`, `abstract` oder `sealed`).|none|
 |Basisswimlane|Die Basisklasse dieser swimlane.|(keine)|
-|name|Der Name dieser swimlane.|Aktuelle name|
+|Name|Der Name dieser swimlane.|Aktuelle name|
 |Namespace|Der Namespace, der dieser Swimlane zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Wie die QuickInfo definiert ist (`fixed`, `variable`, oder `none`). Wenn `fixed`, klicken Sie dann den Wert, der die `Fixed Tooltip Text` Eigenschaft verwendet wird; Wenn `variable`, und klicken Sie dann die QuickInfo in benutzerdefiniertem Code definiert ist.|\<none>|
 |Hinweise|Informelle Hinweise, die dieser Swimlane zugeordnet sind.|\<none>|

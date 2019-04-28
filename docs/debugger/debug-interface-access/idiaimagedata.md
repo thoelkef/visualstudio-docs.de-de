@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828509"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Stellt die Details der Basis Position und Offsets dieses Moduls oder dieser Images an.
@@ -37,7 +37,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaImageData`.
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Ruft die Position im virtuellen Arbeitsspeicher des Bilds ab.|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Ruft die Speicheradresse, in dem das Abbild basieren soll.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Einige Debug-Streams (XDATA, PDATA) enthalten, Kopien der Daten, die auch in das Abbild gespeichert wird. Diese Streamen von Daten, die Objekte können, für abgefragt werden die `IDiaImageData` Schnittstelle. Finden Sie im Abschnitt "Hinweise für Aufrufer" in diesem Thema.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer

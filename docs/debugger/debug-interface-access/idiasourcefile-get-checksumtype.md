@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832281"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Ruft den Typ von Prüfsumme ab.
@@ -38,7 +38,7 @@ HRESULT get_checksumType ( 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Der Checksum-Typ ist ein Wert, der eine Prüfsumme der Prüfsummenalgorithmus zugeordnet werden kann. Beispielsweise kann das Standardformat der PDB-Datei in der Regel einen der folgenden Werte aufweisen:
 
 |Typ von Prüfsumme an|CryptoAPI-Bezeichnung|Beschreibung|

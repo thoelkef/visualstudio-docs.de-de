@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1928667be38cc2b0aa56800ca66924d6159f0c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853525"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (Debug Interface Access SDK)
 Symbole mit `SymTagTypedef` Tags führen Namen für andere Typen.
@@ -54,7 +54,7 @@ Symbole mit `SymTagTypedef` Tags führen Namen für andere Typen.
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|Die ID des Symbols Form virtuelle Tabelle.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Wenn diese Typdefinition als flüchtig gekennzeichnet ist.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Da eine Typdefinition eine Klasse, Zeiger oder den benutzerdefinierten Typ (UDT) darstellen kann, gibt das Symbol für eine Typdefinition die gleichen Eigenschaften wie eines dieser anderen Typen von Symbolen.
 
 ## <a name="see-also"></a>Siehe auch

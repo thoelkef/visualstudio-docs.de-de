@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6c434bf85ecbb00373de0f7f3914a6807391f6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838014"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Ruft die untergeordneten Elemente des Symbols, die an einer bestimmten Adresse gültig sind.
@@ -58,7 +58,7 @@ HRESULT findChildrenExByAddr ( 
 ## <a name="return-value"></a>Rückgabewert
  Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die lokalen Symbole, die zurückgegeben werden enthalten Informationen zum aktiven Bereich.
 
 ## <a name="requirements"></a>Anforderungen

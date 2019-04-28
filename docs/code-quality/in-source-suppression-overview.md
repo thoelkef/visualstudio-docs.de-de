@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825819"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Unterdrücken von codeanalysewarnungen
 
@@ -27,7 +27,7 @@ Es ist häufig nützlich, um anzugeben, dass eine Warnung nicht anwendbar ist. D
 
 Die <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut ist ein conditional-Attribut, das in der Assembly mit verwaltetem Code, den IL-Metadaten enthalten ist, nur dann, wenn das Symbol für die CODE_ANALYSIS-Kompilierung zum Zeitpunkt der Kompilierung definiert wird.
 
-In C++ / CLI, verwenden Sie die Makros Zertifizierungsstelle\_UNTERDRÜCKEN\_Nachricht oder einer Zertifizierungsstelle\_GLOBAL\_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.
+In C++/CLI, verwenden Sie die Makros Zertifizierungsstelle\_UNTERDRÜCKEN\_Nachricht oder einer Zertifizierungsstelle\_GLOBAL\_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.
 
 > [!NOTE]
 > Sie sollten nicht im Quellcode-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die Metadaten für die Unterdrückung im Quellcode versehentlich Protokollversand. Darüber hinaus kann aufgrund der Verarbeitungskosten Unterdrückung im Quellcode, die Leistung Ihrer Anwendung beeinträchtigt werden.

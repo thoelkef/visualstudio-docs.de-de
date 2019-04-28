@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833546"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Wird geöffnet und überprüft, ob die Programmdatenbankdatei (.pdb) der bereitgestellten Signaturinformationen entspricht, und bereitet die PDB-Datei als Datenquelle Debuggen.
@@ -62,7 +62,7 @@ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die
 |E_INVALIDARG|Ungültiger Parameter.|
 |E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Eine PDB-Datei enthält sowohl die Signatur als auch die Age-Werte. Diese Werte werden in .exe oder .dll-Datei repliziert, die die PDB-Datei entspricht. Vor der Vorbereitung der Datenquelle, überprüft diese Methode an, dass die Signatur und das Alter des benannten PDB-Datei mit die angegebenen Werten übereinstimmen.
 
 Verwenden Sie zum Laden einer PDB-Datei ohne Überprüfung der [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) Methode.

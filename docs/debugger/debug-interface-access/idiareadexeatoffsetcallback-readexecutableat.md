@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828204"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Liest die angegebene Anzahl von Bytes beginnend beim angegebenen Offset aus einer ausführbaren Datei an.
@@ -50,7 +50,7 @@ HRESULT ReadExecutableAt ( 
 
 [in, out] Ein Array, das sich aus der Datei gelesenen Bytes gefüllt wird.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Diese Methode wird von der Code für die Unterstützung von DIA Datenbytes aus einer ausführbaren Datei, die über einen Offset absolute Datei laden aufgerufen. Diese Methode wird aufgerufen, Unterstützung des der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode.
 
 ## <a name="see-also"></a>Siehe auch

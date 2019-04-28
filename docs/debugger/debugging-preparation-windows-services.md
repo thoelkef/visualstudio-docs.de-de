@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e734a500d12c15022421383743c1fe1f45794d1b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852580"
 ---
-# <a name="debugging-preparation-windows-services"></a>Vorbereitung zum Debuggen: Windows-Dienste
+# <a name="debugging-preparation-windows-services"></a>Vorbereitung des Debugvorgangs: Windows-Dienste
 Ein Windows-Dienst ist ein Programm, das unter Microsoft Windows im Hintergrund ausgeführt wird. Beispiele hierfür sind der Telnet-Dienst und der Windows-Zeitdienst, durch den die auf dem Computer angezeigte Systemuhrzeit aktualisiert wird. Da ein Windows-Dienst innerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht lauffähig ist, muss er im Kontext des Dienststeuerungs-Managers ausgeführt werden. Weitere Informationen finden Sie unter [Erstellen von Windows-Diensten](/dotnet/framework/windows-services/how-to-create-windows-services), [Debuggen von Windows-Dienstanwendungen](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) und [Entwickeln von Windows-Dienstanwendungen](/dotnet/framework/windows-services/index).
 
 ## <a name="see-also"></a>Siehe auch
@@ -32,4 +32,4 @@ Ein Windows-Dienst ist ein Programm, das unter Microsoft Windows im Hintergrund 
 - [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Projekteinstellungen für C#-Debugkonfigurationen](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Gewusst wie: Debuggen der OnStart-Methode](../debugger/how-to-debug-the-onstart-method.md)
+- [Vorgehensweise: Debuggen der OnStart-Methode](../debugger/how-to-debug-the-onstart-method.md)

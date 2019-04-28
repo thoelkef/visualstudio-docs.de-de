@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833618"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Listet die verschiedenen Elemente der Frame in der Datenquelle enthalten sind.
@@ -43,7 +43,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaEnumFrameData`.
 |[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Gibt einen Frame relative virtuelle Adresse (RVA) zurück.|
 |[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Gibt einen Frame virtuelle Adresse (VA) zurück.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Rufen Sie diese Schnittstelle aus der [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) Methode. Siehe das Beispiel für Details.

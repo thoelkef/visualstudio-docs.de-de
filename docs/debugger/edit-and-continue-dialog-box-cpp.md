@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851423"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
 Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenommenen Änderungen am nativen Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit "Bearbeiten und Fortfahren" Änderungen an systemeigenem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).

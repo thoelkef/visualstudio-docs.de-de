@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0bff81499fe8ea66ce5d4f50616adfec44d3002
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839627"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Liest `BSTR` Werte in einem Eigenschaftensatz.
@@ -43,7 +43,7 @@ HRESULT ReadBSTR ( 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `BSTR`.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Ein `BSTR` wird von Windows als 0 (null) endende Breite Zeichenfolge definiert.
 
 ## <a name="see-also"></a>Siehe auch

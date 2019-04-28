@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833453"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Listet die verschiedenen Stapelrahmen verfügbar.
@@ -29,7 +29,7 @@ Listet die verschiedenen Stapelrahmen verfügbar.
 |[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Ruft eine angegebene Anzahl von Stack-Frame-Elemente aus der Enumerationssequenz ab.|
 |[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Rufen Sie diese Schnittstelle durch Aufrufen der [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) oder [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) Methoden.

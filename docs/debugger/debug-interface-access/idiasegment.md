@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839432"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Ordnet Daten aus der Anzahl der im Abschnitt Segmente des Adressraums.
@@ -43,7 +43,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaSegment`.
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Ruft die relative virtuelle Adresse (RVA) des Anfangs des Abschnitts ab.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Ruft die virtuelle Adresse (VA), der den Anfang des Abschnitts ab.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Da die DIA-SDK bereits Übersetzungen aus der Abschnittoffset im zu relativen virtuellen Adressen ausführt, werden nicht die meisten Anwendungen stellen die Informationen in der segmentzuordnung.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer

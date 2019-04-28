@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825788"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Vorgehensweise: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften
   Die oben aufgeführten Microsoft Office-Anwendung bieten integrierte Eigenschaften, die mit Dokumenten gespeichert werden. Darüber hinaus können Sie benutzerdefinierte Dokumenteigenschaften erstellen und ändern, falls Sie zusätzliche Informationen mit dem Dokument speichern möchten.

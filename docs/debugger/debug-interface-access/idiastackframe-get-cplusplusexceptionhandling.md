@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839061"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 Ruft ein Flag, das angibt, ob C++-Ausnahmebehandlung in Kraft ist.
@@ -33,12 +33,12 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parameter
  `pRetVal`
 
-[out] Gibt `TRUE` Wenn C++-Ausnahmebehandlung, die für diesen Frame; gültig ist, andernfalls `FALSE`.
+[out] Gibt `TRUE` Wenn C++ Behandlung von Ausnahmen aktiviert für diesen Frame ist; andernfalls `FALSE`.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  C++-Ausnahmebehandlung ist nicht identisch mit strukturierten oder System-Ausnahmebehandlung.
 
  Um festzustellen, ob die strukturierte Ausnahmebehandlung in Kraft ist, rufen Sie die [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) Methode.

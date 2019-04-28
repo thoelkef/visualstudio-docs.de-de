@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816610"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Entwurfsrichtlinienregeln für verwalteten Code
 Der Regelsatz Microsoft erweiterte Regeln für Entwurfsrichtlinien Erweitert auf die grundlegenden Regeln für Entwurfsrichtlinien, die Fehler bezüglich Verwendbarkeit und wartbarkeit zu maximieren, die gemeldet werden. Besonderes Augenmerk wird auf Benennungsrichtlinien gelegt. Sie sollten diesen Regelsatz Wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie höchste Standards für das Schreiben von Code, der leicht zu warten ist erzwingen möchten.

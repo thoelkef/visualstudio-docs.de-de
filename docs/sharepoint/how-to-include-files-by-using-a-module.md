@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813643"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Vorgehensweise: Schließen Sie Dateien mithilfe eines Moduls
   *Module* (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Module) sind Container, die Ihnen ermöglichen, z. B. Gestaltungsvorlagen ASPX-Dateien, Textdateien oder Bilder in SharePoint bereitstellen.

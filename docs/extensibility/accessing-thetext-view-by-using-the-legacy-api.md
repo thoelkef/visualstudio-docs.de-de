@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892154"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Zugriff auf die Textansicht mit der legacy-API
 Eine Textansicht ist eine Darstellung des Texts, der in einem Textpuffer gespeichert ist. Sie können die Textansicht zugreifen, mit der legacy-API, wie im folgenden Abschnitt gezeigt.

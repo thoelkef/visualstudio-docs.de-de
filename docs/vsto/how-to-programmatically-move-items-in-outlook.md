@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812560"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Vorgehensweise: Programmgesteuertes Verschieben von Elementen in Outlook
   In diesem Beispiel verschiebt ungelesene e-Mail-Nachrichten aus der **Posteingang** in einen Ordner namens **Test**. Im Beispiel wird nur die Nachrichten, die das Wort **Test** in die `Subject` Feld.

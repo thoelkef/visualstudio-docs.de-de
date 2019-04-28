@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909986"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Erstellen von Projektinstanzen mithilfe von projektfactorys
 Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden eine *Projektzuordnungsinstanz* zum Erstellen von Instanzen von Project-Objekte. Eine Projektzuordnungsinstanz ähnelt einer standard-Klassenfactory für cocreatable COM-Objekte. Project-Objekte sind jedoch nicht cocreatable; Sie können nur erstellt werden, mithilfe einer Projektfactory.

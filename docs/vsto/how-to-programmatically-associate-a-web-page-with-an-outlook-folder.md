@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e83f8b7f6bcdb790b5e545aa76426bc05f0735f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817308"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Vorgehensweise: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner
   In diesem Beispiel wird überprüft, für einen Ordner mit dem Namen `HtmlView` in Microsoft Office Outlook. Wenn der Ordner nicht vorhanden ist, wird der Code erstellt den Ordner, und weist sie eine Webseite. Wenn der Ordner vorhanden ist, zeigt den Code der Inhalt des Ordners an.

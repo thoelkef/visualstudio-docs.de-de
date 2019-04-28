@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc3edfabe041804a632b919eff4e565be9cc5e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848603"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio-Grafikdiagnose
 Visual Studio*Grafikdiagnose* ist ein Satz von Tools zum Aufzeichnen, und klicken Sie dann Analysieren von Rendering- und Leistungsproblemen in Direct3D-apps. Die Grafikdiagnose kann für Apps verwendet werden, die lokal auf Ihrem Windows-PC, in einem Windows-Geräteemulator oder auf einem Remotecomputer oder-gerät ausgeführt werden.

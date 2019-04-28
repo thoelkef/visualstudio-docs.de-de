@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839692"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Liest `BOOL` Werte in einem Eigenschaftensatz.
@@ -43,7 +43,7 @@ HRESULT ReadBOOL ( 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt `E_INVALIDARG` ist die Eigenschaft nicht vom Typ `BOOL`.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Für einheitliche Ergebnisse interpretiert die `BOOL` Wert, sodass Werte ungleich NULL sind `TRUE` und 0 (null) ist `FALSE`.
 
 ## <a name="see-also"></a>Siehe auch

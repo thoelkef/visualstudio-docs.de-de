@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851255"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Bearbeiten und Fortfahren (Visual Basic)
 Bearbeiten und Fortfahren ist ein Feature von [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)]-Debuggen, mit dem Sie den Code ändern können, während der Unterbrechungsmodus ausgeführt wird. Nachdem Codebearbeitungen übernommen wurden, können Sie die Ausführung mit den neuen Änderungen fortsetzen und deren Auswirkung beobachten.
@@ -45,7 +45,7 @@ Bearbeiten und Fortfahren ist ein Feature von [!INCLUDE [vbprvb](../code-quality
  In den Themen zu diesem Abschnitt finden Sie weitere Informationen darüber, wie diese Funktion verwendet wird, und welche Arten von Änderungen nicht zulässig sind.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Gewusst wie: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und Fortfahren](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) wird erläutert, wie codebearbeitungen im Unterbrechungsmodus anwenden.
+ [Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit bearbeiten und Fortfahren](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) wird erläutert, wie codebearbeitungen im Unterbrechungsmodus anwenden.
 
  [Unterstützte Codeänderungen (C# und Visual Basic)](../debugger/supported-code-changes-csharp.md) wird beschrieben, welche Arten von Bearbeitungen werden, können nicht ausgeführt werden, [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] bearbeiten und fortfahren.
 

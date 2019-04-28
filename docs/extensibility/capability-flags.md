@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 12dfcdf646d6584890e8f78cbe561a84d6f00752
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891635"
 ---
 # <a name="capability-flags"></a>Funktionsflags
 Die SCC_CAP_*Xxx* Flags sind die Bitflags, die an die Funktionen des eines Quellcodeverwaltungs-Plug-in verwendet. Die SCC_EXCAP_*Xxx* Flags sind inkrementelle Flags, die erweiterten Funktionen anzugeben, und klicken Sie in ganzzahlige Werte aufgelöst werden.

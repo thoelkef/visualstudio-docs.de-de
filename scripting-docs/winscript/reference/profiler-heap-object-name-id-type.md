@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ae6565f955e9b835ee4683e0344ff72fb94657a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823891"
 ---
 # <a name="profilerheapobjectnameid-type"></a>PROFILER_HEAP_OBJECT_NAME_ID-Typ
 Die ID des Namens des Heapobjekts. Verwendet [PROFILER_HEAP_OBJECT-Struktur](../../winscript/reference/profiler-heap-object-structure.md).  

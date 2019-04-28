@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830369"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Listet die über die Adresse der verschiedenen Symbole in der Datenquelle.
@@ -40,7 +40,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaEnumSymbolsByAddr`.
 |[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Ruft die vorherige Symbole in der Reihenfolge nach Adresse ab. Aktualisiert die Position des Enumerators durch die Anzahl von Elementen abgerufen.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Erstellt eine Kopie eines Objekts.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Diese Schnittstelle bietet nach Adresse angeordneten Symbole. Arbeiten mit Symbolen, die nach Typ gruppiert sind, z. B. `SymTagUDT` (UDT) oder `SymTagBaseClass`, verwenden Sie die [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) Schnittstelle.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c31dc8b9ced1ca36b96c73ff8e19fa8c08d98cc5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863807"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Erweitern von Eigenschaften und des Eigenschaftenfensters
 Die **Eigenschaften** Fenster wird verwendet, um die zur Entwurfszeit Eigenschaften und Ereignissen ausgewählter Objekte anzeigen und bearbeiten.

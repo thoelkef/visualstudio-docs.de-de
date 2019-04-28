@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849128"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Exemplarische Vorgehensweise: Debuggen eines Compute-Shaders mithilfe der Grafikdiagnose
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Studio-Grafikdiagnosetools zur Untersuchung eines Compute-Shaders verwendet werden, der falsche Ergebnisse generiert.

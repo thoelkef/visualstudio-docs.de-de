@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829845"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Wird geöffnet, und bereitet die Debug-Daten, die der Datei.exe/.dll zugeordnet.
@@ -57,7 +57,7 @@ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die
 |E_INVALIDARG|Ungültiger Parameter.|
 |E_UNEXPECTED|Die Datenquelle wurde bereits vorbereitet.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die debugheader der Datei.exe/.dll benennt den Speicherort der zugeordneten Debuggen.
 
 Diese Methode liest den debugheader und sucht dann nach und bereitet die Debug-Daten. Der Status der Suche kann optional gemeldet und durch Rückrufe gesteuert werden. Z. B. die [idialoadcallback:: Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) wird aufgerufen, wenn die `IDiaDataSource::loadDataForExe` Methode findet und ein Debugverzeichnis verarbeitet.

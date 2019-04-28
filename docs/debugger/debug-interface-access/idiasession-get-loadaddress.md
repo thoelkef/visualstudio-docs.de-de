@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4fed7653b5f1a270d2e297cdd2b59366b5b563c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839185"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 Ruft ab die Ladeadresse für die ausführbare Datei, die die Symbole in diesem Symbolspeicher entspricht.
@@ -38,7 +38,7 @@ HRESULT get_loadAddress ( 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die zurückgegebene Adresse ist immer 0 (null), es sei denn, speziell darauf eingestellt mithilfe der [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) Methode.
 
 ## <a name="see-also"></a>Siehe auch

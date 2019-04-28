@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797178"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Keine unnötigen Umwandlungen.
 
@@ -41,7 +41,7 @@ Für die vollständige Analyse durch diese Regel muss der getestete Assembly mit
 ## <a name="rule-description"></a>Regelbeschreibung
 Doppelte Umwandlungen beeinträchtigen die Leistung, insbesondere wenn die Umwandlungen in kompakten Iterationsanweisungen ausgeführt werden. Für explizite doppelte Umwandlungsvorgänge speichern Sie das Ergebnis der Umwandlung in eine lokale Variable, und verwenden Sie die lokale Variable anstelle der doppelten Umwandlungsvorgänge.
 
-Wenn der C#- `is` Operator wird verwendet, um zu testen, ob die Umwandlung erfolgreich ist, bevor die eigentliche Umwandlung ausgeführt wird, sollten Sie erwägen, das Ergebnis der `as` Operator stattdessen. Dies bietet dieselbe Funktionalität ohne die implizite Umwandlung von ausgeführten Vorgang die `is` Operator. In C# 7.0 und höher verwenden die `is` -Operator mit [Musterabgleich](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) zum Überprüfen der typkonvertierung und wandeln Sie den Ausdruck auf eine Variable dieses Typs in einem Schritt.
+Wenn der C#- `is` Operator wird verwendet, um zu testen, ob die Umwandlung erfolgreich ist, bevor die eigentliche Umwandlung ausgeführt wird, sollten Sie erwägen, das Ergebnis der `as` Operator stattdessen. Dies bietet dieselbe Funktionalität ohne die implizite Umwandlung von ausgeführten Vorgang die `is` Operator. In c# 7.0 und höher verwenden die `is` -Operator mit [Musterabgleich](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) zum Überprüfen der typkonvertierung und wandeln Sie den Ausdruck auf eine Variable dieses Typs in einem Schritt.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung der Methode um die Anzahl der Cast-Vorgänge zu minimieren.

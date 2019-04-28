@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc2d0f0863ae4b9083c0fb56873eb18b665c7c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816343"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Vorgehensweise: Anpassen des Codeanalysewörterbuchs
 Codeanalyse mithilfe ein integriertes Wörterbuch Bezeichner im Code Rechtschreibung, grammatische Groß-/Kleinschreibung und andere Benennungskonventionen für die .NET Framework-Richtlinien auf Fehler überprüft. Sie können eine benutzerdefiniertes Wörterbuch XML-Datei hinzufügen, entfernen oder Ändern der Begriffe, Abkürzungen und Akronyme, die dem integrierten Wörterbuch erstellen.

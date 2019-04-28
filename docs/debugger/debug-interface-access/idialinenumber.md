@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829019"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Greift auf die Informationen, die den Prozess der Zuordnung zwischen einen Block von Bytes des Image-Texts und die Zeilennummer einer Quell-Datei beschreibt.
@@ -48,7 +48,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaLineNumber`.
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Ruft ein Flag, der angibt, dass diese Zeileninformationen den Beginn einer Anweisung in der Programmquelle beschreibt ab.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Ruft ab, der eindeutige Bezeichner für die Kompiliereinheit, die diese Zeile beigetragen haben.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Rufen Sie diese Schnittstelle durch Aufrufen der [idiaenumlinenumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) oder [idiaenumlinenumbers:: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) Methoden.

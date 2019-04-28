@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815823"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte
 Sie können konfigurieren, welche Regeln das Codeanalysetool verwendet, um den Code in jede Konfiguration des Projekts zu analysieren. Darüber hinaus können Sie weiterleiten, Codeanalyse, um Warnungen zu Code zu unterdrücken, die generiert und von einem Drittanbieter-Tool zu Ihrem Projekt hinzugefügt wurde.
