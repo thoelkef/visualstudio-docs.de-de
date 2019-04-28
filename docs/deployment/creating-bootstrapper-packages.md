@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900230"
 ---
 # <a name="create-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
 Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermittlung und die Installation von weitervertreibbaren Komponenten wie Windows Installer (*MSI*-Format) und ausführbaren Programmen konfiguriert werden kann. Das Installationsprogramm wird auch als Bootstrapper bezeichnet. Der Bootstrapper wird mithilfe einer Reihe von XML-Manifesten programmiert, mit denen die Metadaten zur Verwaltung der Komponenteninstallation angegeben werden.  Jede verteilbare Komponente "oder" Prerequisite, angezeigt, die der **Voraussetzungen** im Dialogfeld für ClickOnce ist ein Bootstrapperpaket. Bei einem Bootstrapperpaket handelt es sich um eine Gruppe von Verzeichnissen und Dateien, die Manifestdateien enthalten, mit denen beschrieben wird, wie die erforderliche Komponente installiert werden muss.
@@ -58,7 +58,7 @@ Nachdem diese Dateien erstellt wurden, platzieren Sie die Produktmanifestdatei i
         package.xml
     ```
 
-Kopieren Sie anschließend die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines lokalisierten Bootstrappakets](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+Kopieren Sie anschließend die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 
@@ -95,7 +95,7 @@ Sie können die Bereitstellung von verteilbaren Dateien in Setupprojekten auch d
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format benannt wird: *\<Unternehmensname>.\<Komponentenname>.RedistList.xml*. Beispiel: Wenn die Komponente „DataWidgets“ heißt und von der Firma Acme stammt, nennen Sie die Datei *Acme.DataWidgets.RedistList.xml*. Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:
+Die verteilbare Liste ist eine XML-Datei, die Sie entsprechend dem folgenden Format benennen sollten: *\<Name des Unternehmens >. \<Komponentenname >. RedistList.xml*. Beispiel: Wenn die Komponente „DataWidgets“ heißt und von der Firma Acme stammt, nennen Sie die Datei *Acme.DataWidgets.RedistList.xml*. Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -105,7 +105,7 @@ Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format 
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Prerequisites dialog box (Dialogfeld „Erforderliche Komponenten“)](../ide/reference/prerequisites-dialog-box.md)
 - [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)
 - [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](http://go.microsoft.com/fwlink/?LinkId=107537)

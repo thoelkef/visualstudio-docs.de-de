@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900922"
 ---
 # <a name="window-search-dialog-box"></a>Dialogfeld "Fenstersuche"
 Mithilfe dieses Dialogfelds zu finden, und wählen Sie den Knoten für ein bestimmtes Intervall in [Windows-Ansicht](../debugger/windows-view.md). Zum Anzeigen dieses Dialogfeld können Sie Sie mit den Fokus auf das Fenster "Windows". Wählen Sie dann **Fenster Suchen** aus der **Suche** Menü.

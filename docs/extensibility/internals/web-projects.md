@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c0e796632966c43c052f70fc872d550b57ad7d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856971"
 ---
 # <a name="web-projects"></a>Webprojekte
 Ein Web-Projektsystem ist ein Projektsystem, das Webprojekte erstellt. Webprojekte erstellen wiederum die Webanwendungen. Sie können eine Webseite, die mit herkömmlichen Programmiersprachen wie Programmieren [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], zu sammeln und Verarbeitung von einem Benutzer, in einer Datenbank zu speichern und so weiter. Webseiten mit den zugehörigen Code werden als intelligente Webseiten bezeichnet.

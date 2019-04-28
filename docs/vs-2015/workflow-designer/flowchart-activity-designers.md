@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943391"
 ---
 # <a name="flowchart-activity-designers"></a>Flussdiagramm-Aktivitätsdesigner
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zum Verwalten von Flussdiagrammen innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850116"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Fehler: Mit SQL Server auf dem Remotecomputer konnte keine Verbindung hergestellt werden
 Keine Verbindung mit SQL Server auf dem Remotecomputer *Namen*. Zugriff verweigert. Vergewissern Sie sich, dass Sie den Remotedebugger auf dem Remotecomputer installiert haben. Wenn sich der Remotecomputer nicht in einer Domäne befindet oder Visual Studio als lokales Konto ausgeführt wird, muss auf dem Remotecomputer ein Konto vorhanden sein, dessen Benutzername und Kennwort mit dem lokalen Konto übereinstimmen.

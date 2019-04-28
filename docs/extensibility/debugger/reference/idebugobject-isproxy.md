@@ -1,50 +1,51 @@
 ---
 title: IDebugObject::IsProxy | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - IDebugObject::IsProxy
 - IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 037245524446ded2ec250f1d4a04e21bf5924a61
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918456"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
-Bestimmt, ob das Objekt über einen transparenten Proxy ist.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```cpp
-HRESULT IsProxy (
-   BOOL* pfIsProxy
-);
-```
-
-```csharp
-int IsProxy (
-   out bool pfIsProxy
-);
-```
-
-#### <a name="parameters"></a>Parameter
- `pfIsProxy`
-
- [out] `TRUE` ist das Objekt einen transparenten Proxy ist; andernfalls `FALSE`.
-
-## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
-
-## <a name="remarks"></a>Hinweise
- Diese Methode wird von der standardmäßigen C++-Debug-Engine implementiert.
-
-## <a name="see-also"></a>Siehe auch
-- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Bestimmt, ob das Objekt über einen transparenten Proxy ist.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT IsProxy (  
+   BOOL* pfIsProxy  
+);  
+```  
+  
+```csharp  
+int IsProxy (  
+   out bool pfIsProxy  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `pfIsProxy`  
+ [out] `TRUE` ist das Objekt einen transparenten Proxy ist; andernfalls `FALSE`.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
+  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird von der standardmäßigen C++-Debug-Engine implementiert.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
