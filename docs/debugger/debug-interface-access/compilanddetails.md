@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555246"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Compiland-Informationen zwischen Symbole mit aufgeteilt ist eine `SymTagCompiland` Tag (niedrige Detail) und ein `SymTagCompilandDetails` Tag (hohe Detail). `SymTagCompilandDetails` erfordert zusätzliche Symbole werden geladen. Sie bietet jedoch eine Fülle von Informationen zu der Kompiliereinheit, die nicht verfügbar ist eine `SymTagCompiland` Symbol.
@@ -50,7 +50,7 @@ Compiland-Informationen zwischen Symbole mit aufgeteilt ist eine `SymTagCompilan
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Index-ID des Symbols.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Gibt `SymTagCompilandDetails` (eines der [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) Werte).|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Compiler stammen, sind häufig in einem Formular als ein zweiphasiges Compiler bezeichnet. In einigen Compilerversionen wird jedem Durchlauf durch ein separates Programm behandelt. Diese werden als Front-End- und Back-End-Compiler, daher die Symboleigenschaften für Back-End und Front-End-Versionsnummern bezeichnet.
 
 ## <a name="see-also"></a>Siehe auch

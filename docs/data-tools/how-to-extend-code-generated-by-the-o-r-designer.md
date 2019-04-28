@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566995"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Vorgehensweise: Erweitern von mit dem O/R-Designer erstelltem Code
 Vom generierten Code der **O/R Designer** erneut generiert wird, wenn Änderungen an die Entitätsklassen und andere Objekte auf der Designeroberfläche vorgenommen werden. Aufgrund dieser erneuten Codegenerierung wird in der Regel jeglicher Code, der zum generierten Code hinzugefügt wurde, überschrieben, sobald vom Designer neuer Code generiert wird. Die **O/R Designer** bietet die Möglichkeit, Dateien mit partiellen Klassen zu generieren, in dem Sie hinzufügen können, Sie Code, der nicht überschrieben werden. Ein Beispiel für das Hinzufügen eigenen Codes, die vom generierten Code der **O/R Designer** ist Hinzufügen der datenvalidierung zu LINQ to SQL (Entität)-Klassen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen](../data-tools/how-to-add-validation-to-entity-classes.md).

@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568541"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank (Windows Forms)
 
 Sie können mit einer Access-Datenbank verbinden (entweder ein *mdf* Datei oder ein *ACCDB* Datei) mithilfe von Visual Studio. Nachdem Sie die Verbindung definiert haben, werden die Daten im Fenster **Datenquellen** angezeigt. Von dort können Sie Tabellen oder Ansichten auf die Formulare ziehen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Verwenden dieser Prozeduren benötigen Sie ein Windows Forms-Anwendungsprojekt und entweder eine Access-Datenbank (*ACCDB*-Datei) oder eine Datenbank unter Access 2000–2003 (*MDB*-Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
 

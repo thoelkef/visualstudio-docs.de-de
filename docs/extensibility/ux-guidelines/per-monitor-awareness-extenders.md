@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793637"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Unterstützung für die Monitorspezifische dpi-Erkennung für Visual Studio-Extender
 Versionen vor Visual Studio-2019 mussten die DPI-Wert-Awareness-Kontext auf System fähig ist, anstatt monitorspezifische dpi-DPI-bewusst (PMA) festgelegt. System Awareness auf führte zu einer beeinträchtigten Visualisierung (z. B. unscharf Schriftarten oder Symbolsatz) auftreten, wenn musste, dass Visual Studio über Monitore mit verschiedenen Skalierungsfaktoren oder Remote in Computern mit verschiedenen Anzeigekonfigurationen z. B. (unterschiedliche Rendern Windows-Skalierung).

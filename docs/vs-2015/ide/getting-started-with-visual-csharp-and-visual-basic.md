@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Visual C# und Visual Basic | Microsoft-Dokumentation
+title: Erste Schritte mit Visual c# und Visual Basic | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584695"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Erste Schritte mit Visual C# und Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Auch wenn Sie noch keine Erfahrung mit Visual C# oder Microsoft Visual Basic bes
  Informationen zu Visual C++ finden Sie in diesen [Visual C++-Artikeln](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  Lernen Sie die grundlegenden Fenster in der Visual Studio-IDE kennen, passen Sie die Entwicklungsumgebung an Ihre Erfordernisse an, indem Sie Einstellungen konfigurieren, und erstellen Sie dann ein einfaches Programm.  
   
  [Tutorial 1: Erstellen eines Bildanzeigeprogramms](../ide/tutorial-1-create-a-picture-viewer.md)  

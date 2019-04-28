@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929791"
 ---
 # <a name="spy-help"></a>Spy++-Hilfe
 Die Dokumentation für das Spy++-Hilfsprogramm umfasst zwei Gruppen von allgemeinen Themen auf mithilfe von Spy++ und auf die Spy++-Ansichten. Dies sind die Spy++-Referenz folgt bietet weitere Details für jede im Kontextmenü verfügbaren Befehl und das Dialogfeld.

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565172"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Es wurden Änderungen am Dialogfeld 'Verhalten konfigurieren' vorgenommen, die nicht übernommen wurden
 
 Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden. Möchten Sie die Änderungen übernehmen?
 

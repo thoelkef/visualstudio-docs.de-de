@@ -22,18 +22,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929769"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
 Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhängen** und klicken auf die Schaltfläche **Auswählen**.
 
  **Den Typ der zu debuggenden Codetyp automatisch bestimmen** die entsprechende Debugger wird basierend auf die Art des ausgeführten Codetyps ausgewählt.
 
- **Diese Codetypen debuggen:** aus der Liste aus, wählen Sie den Typ des Codes, die Sie debuggen möchten.
+ **Diese Codetypen debuggen:** Wählen Sie den zu debuggenden Codetyp in der angegebenen Liste aus.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

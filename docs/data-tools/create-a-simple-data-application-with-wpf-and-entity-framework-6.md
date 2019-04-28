@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568655"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
@@ -58,7 +58,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
 ## <a name="create-the-model"></a>Erstellen des Modells
 
-1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Klicken Sie im linken Bereich unter der C# Knoten, wählen Sie **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
+1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie im linken Bereich unter dem C#-Knoten **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
 
    ![Neues Element zu Entity Framework-Modell](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -72,7 +72,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
     ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Der Assistent generiert die C# Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind einfache alte C# Klassen und sie werden wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
+5. Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind plain old C#-Klassen und sind wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
 
       ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -353,7 +353,7 @@ Ersetzen Sie als Nächstes die gesamte äußere Raster mit diesem Markup:
 
 In Windows Forms-Anwendungen erhalten Sie ein BindingNavigator-Objekt mit den Schaltflächen zur Navigation Zeilen in einer Datenbank und für grundlegende CRUD-Vorgänge ausführen. WPF bietet keine BindingNavigator, aber es ist einfach genug, um eines zu erstellen. Sie führen, die mit den Schaltflächen in einem horizontalen StackPanel, und ordnen die Schaltflächen mit Befehlen, die an Methoden in der CodeBehind-gebunden sind.
 
-Stehen die Befehlslogik vieren Teilen: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) die Befehlshandler im Code-Behind.
+Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, (3) die Schaltflächen und (4) die Befehlshandler im Code-Behind.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Hinzufügen von Befehlen, Bindungen und Schaltflächen in XAML
 
