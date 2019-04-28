@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861584"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Kommentieren von Code in einem legacy-Sprachdienst
 Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder kommentieren Sie den Code. Ein Kommentar ist einen Textabschnitt, der enthält zusätzliche Informationen zu den Code wird jedoch ignoriert, während der Kompilierung oder Interpretation erfordern.

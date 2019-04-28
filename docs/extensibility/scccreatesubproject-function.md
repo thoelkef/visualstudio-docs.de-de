@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f27226e768d639706e5db777b52a0e4957f70e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433291"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject-Funktion
 Diese Funktion erstellt ein Unterprojekt mit dem angegebenen Namen unter einem vorhandenen übergeordneten-Projekt, das gemäß der `lpParentProjPath` Argument.

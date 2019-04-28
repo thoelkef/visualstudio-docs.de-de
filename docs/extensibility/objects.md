@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433525"
 ---
 # <a name="objects"></a>erzwingen
 Die folgenden Referenzinformationen wird erläutert, Objekte, die zum Erstellen einer Instanz des Texteditors Core verwendet werden.

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 47fc6336b45e5ad2a333c9afa3dfb7acd11c9a4d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422804"
 ---
 # <a name="model-editor-examples"></a>Beispiele für den Modell-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

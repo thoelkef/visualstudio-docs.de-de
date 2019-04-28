@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537432"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK-Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,31 +200,31 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
  Für Visual Studio-Assistenten verwendet.  
   
  <xref:VSLangProj>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj2>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj80>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj90>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj100>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj110>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:VSLangProj140>  
- Für die Automatisierung von C# und Visual Basic-Projekt verwendet.  
+ Für die Automatisierung von c# und Visual Basic-Projekt verwendet.  
   
  <xref:Microsoft.VisualStudio.Language.CallHierarchy>  
- Für C# und Visual Basic-Automatisierung verwendet.  
+ Für c# und Visual Basic-Automatisierung verwendet.  
   
  <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>  
- Für C# und Visual Basic-Automatisierung verwendet.  
+ Für c# und Visual Basic-Automatisierung verwendet.  
   
  <xref:Microsoft.VisualStudio.Threading>  
  Für Visual Studio threading verwendet.  

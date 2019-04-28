@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 9f3764e7e7965fb9efe46a8404273de9adde4a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422800"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Ereignishandler korrekt deklarieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58959656"
 ## <a name="rule-description"></a>Regelbeschreibung
  Ereignishandlermethoden nehmen zwei Parameter an. Die erste ist vom Typ <xref:System.Object?displayProperty=fullName> und ist mit dem Namen "Sender". Dies ist das Objekt, durch das das Ereignis ausgelöst wurde. Der zweite Parameter ist vom Typ <xref:System.EventArgs?displayProperty=fullName> und trägt die Bezeichnung 'e'. Dies sind die Daten, die dem Ereignis zugeordnet sind. Wenn das Ereignis ausgelöst wird, wenn eine Datei geöffnet ist, enthält die Daten z. B. in der Regel den Namen der Datei.
 
- Ereignishandlermethoden sollten keinen Wert zurückgibt. In der Programmiersprache C# wird dies durch den Rückgabetyp angegeben `void`. Ein Ereignishandler kann mehrere Methoden in mehrere Objekte aufrufen. Wenn die Methoden zum Zurückgeben eines Werts zulässig wäre, würde würde die Rückgabe mehrerer Werte für jedes Ereignis auftreten, und nur der Wert der letzten Methode, die aufgerufen wurde verfügbar.
+ Ereignishandlermethoden sollten keinen Wert zurückgibt. In der Programmiersprache c# wird dies durch den Rückgabetyp angegeben `void`. Ein Ereignishandler kann mehrere Methoden in mehrere Objekte aufrufen. Wenn die Methoden zum Zurückgeben eines Werts zulässig wäre, würde würde die Rückgabe mehrerer Werte für jedes Ereignis auftreten, und nur der Wert der letzten Methode, die aufgerufen wurde verfügbar.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Signatur, Rückgabetyp oder Parameternamen des Delegaten. Weitere Informationen finden Sie im folgende Beispiel.
