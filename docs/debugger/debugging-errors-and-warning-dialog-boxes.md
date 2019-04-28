@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852092"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Debugfehler und Warnmeldungen
 Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen einer Anwendung auftreten können.
@@ -57,7 +57,7 @@ Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen eine
  [Fehler: Das Debuggen ist nicht möglich, da ein Kerndebugger auf dem System aktiviert ist](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debugging Script and Web: Errors and Troubleshooting (Debuggen von Skript und Web: Fehler und Problembehandlung)](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debuggen von Skript- und Web: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Fehler beim Remotedebuggen](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
