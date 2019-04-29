@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583489"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857813"
 Möchten Sie von einer vorherigen Version von Visual Studio aktualisieren? Visual Studio 2017 bietet Ihnen folgende Vorteile: Beispiellose Produktivität für alle Entwickler, Apps und Plattformen. Verwenden Sie Visual Studio 2017 zum Entwickeln von Apps für Android, iOS, Windows, Linux, das Web und die Cloud. Schnelles Codieren, einfaches Debuggen und einfache Diagnose, häufige Tests und zuverlässige Releases. Sie können Visual Studio auch durch Erstellen eigener Erweiterungen erweitern und anpassen. Verwenden Sie die Versionskontrolle, agile Prozesse, und steigern Sie die Effizienz bei der Zusammenarbeit mit diesem Release!
 
 >[!div class="button"]
->[Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Herunterladen von Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Dies ist eine allgemeine Zusammenfassung aller Änderungen, die seit der vorherigen Version, Visual Studio 2015, vorgenommen wurden:
 
@@ -108,11 +108,11 @@ Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiteru
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „Roamed“ (Roaming erfolgt)](media/vs2017ide-roamedicon.png) **_Roamed (Roaming erfolgt):_** Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_**: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol für „Roamed and Installed“ (Roaming und Installation erfolgt)](media/vs2017ide-roamedinstalledicon.png) **_Roamed an Installed (Roaming und Installation erfolgt):_** Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
+* ![Symbol „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_**: Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol für „Installiert“](media/vs2017ide-installedicon.png) **_Installiert:_** Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol „Installiert](media/vs2017ide-installedicon.png) **_Installiert_**: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -371,9 +371,11 @@ Wir aktualisieren Visual Studio 2017 häufig mit neuen Features, die die Entwick
 
 Sie möchten mehr über unsere Pläne für Visual Studio 2017 erfahren? Weitere Informationen finden Sie auf der Seite [Visual Studio-Roadmap](/visualstudio/productinfo/vs2018-roadmap).
 
+Und schauen Sie sich auch unsere neueste Version von [Visual Studio 2019](whats-new-visual-studio-2019.md) an.
+
 ## <a name="contact-us"></a>Kontakt
 
- Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedback unserer Kunden ernst nehmen. Es gibt den Anstoß zu vielen unserer Initiativen.
+Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedback unserer Kunden ernst nehmen. Es gibt den Anstoß zu vielen unserer Initiativen.
 
 Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen oder mehr über Optionen zur Produktunterstützung erfahren möchten, finden Sie weitere Informationen auf der Seite [Talk to Us (Sprechen Sie mit uns)](talk-to-us.md).
 
@@ -383,10 +385,10 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Visual Studio 2017 release notes (Visual Studio 2017: Versionshinweise)](/visualstudio/releasenotes/vs2017-relnotes)
+* [Visual Studio 2017 – Anmerkungen zu dieser Version](/visualstudio/releasenotes/vs2017-relnotes)
 * [Neuigkeiten im Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
-* [What's new in Visual C++ (Neues in Visual C++)](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Neues in C#](/dotnet/csharp/whats-new)
-* [What‘s new for TFS (Neues für Team Foundation Server)](/tfs/server/whats-new?view=vsts)
+* [Neues für Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Neues in Visual Studio für Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Neues in Visual Studio 2019](whats-new-visual-studio-2019.md)

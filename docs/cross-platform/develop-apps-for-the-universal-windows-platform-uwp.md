@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819566"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 
@@ -38,11 +38,25 @@ Die Entwicklungstools für universelle Windows-Apps verfügen über Emulatoren, 
 
 Hier finden Sie die Liste erforderlicher Softwarekomponenten:
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 unterstützt die UWP-Entwicklung nur unter Windows 10. Weitere Informationen finden Sie unter [Platform targeting](/visualstudio/productinfo/vs2017-compatibility-vs) (Zielplattformen) und [Systemanforderungen](/visualstudio/productinfo/vs2017-system-requirements-vs) auf Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Sie benötigen ebenso die Entwicklungsworkload von Universelle Windows-Plattform.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Sie benötigen ebenso die Entwicklungsworkload von Universelle Windows-Plattform.
 
      ![UWP-Workload](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 unterstützt die UWP-Entwicklung nur unter Windows 10. Weitere Informationen finden Sie unter [Platform targeting](/visualstudio/releases/2019/compatibility/) (Zielplattformen) und [Systemanforderungen](/visualstudio/releases/2019/system-requirements/) auf Visual Studio.
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Sie benötigen ebenso die Entwicklungsworkload von Universelle Windows-Plattform.
+
+     ![UWP-Workload](media/uwp_workload.png)
+
+::: moniker-end
 
 Nach der Installation der Software müssen Sie Ihr Windows 10-Gerät für die Entwicklung aktivieren. Weitere Informationen finden Sie unter [Aktivieren von Geräten für die Entwicklung](/windows/uwp/get-started/enable-your-device-for-development). Eine Entwicklerlizenz für jedes Windows 10-Gerät wird nicht mehr benötigt.
 

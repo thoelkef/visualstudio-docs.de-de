@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557319"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
 Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Member großgeschrieben oder asynchrone Methoden mit „Async“ enden müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der **Fehlerliste** oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
 
-Namenskonventionen sollten in der *EDITORCONFIG-Datei* von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird.
+Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird. Wenn es jedoch mehrere *Regeleigenschaften* mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang. Weitere Informationen finden Sie unter [Dateihierarchie und Rangfolge](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 

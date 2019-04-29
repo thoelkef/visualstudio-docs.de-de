@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821077"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -61,12 +61,12 @@ Hier einige Beispiele:
 |Übereinstimmung mit einer Wortgrenze|\b (Außerhalb einer Zeichenklasse gibt `\b` eine Wortgrenze, innerhalb einer Zeichenklasse gibt `\b` eine Rücktaste an.)|`\bin` findet „in“ in „inside“, jedoch nicht „pinto“.|
 |Übereinstimmung mit Zeilenumbruch (d.h. ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile).|\r?\n|`End\r?\nBegin` findet „End“ und „Begin“ nur, wenn „End“ als letzte Zeichenfolge in einer Zeile vorkommt und „Begin“ als erste Zeichenfolge in der nächsten Zeile.|
 |Übereinstimmung mit beliebigem alphanumerischen Zeichen|\w|`a\wd` findet „add“ und „a1d“, jedoch nicht „a d“.|
-|Übereinstimmung mit beliebigem Leerzeichen.|(?([^\r\n])\s)|`Public\sInterface` findet den Begriff „Public Interface“.|
+|Übereinstimmung mit beliebigem Leerzeichen.|\s|`Public\sInterface` findet den Begriff „Public Interface“.|
 |Übereinstimmung mit beliebigem numerischen Zeichen|\d|`\d` findet „3“ in „3456“, „2“ in „23“ und „1“ in „1“.|
 |Übereinstimmung mit einem Unicode-Zeichen|"\uXXXX", wobei "XXXX"den Unicode-Zeichenwert angibt.|`\u0065` findet das Zeichen „e“.|
 |Übereinstimmung mit einem Bezeichner|\b[\_\w-[0-9]][\_\w]*\b|Findet „type1“, jedoch nicht „&type1“ oder „#define“.|
 |Übereinstimmung mit einer Zeichenfolge in Anführungszeichen|((\\".+?\\")&#124;('.+?'))|Übereinstimmung mit einer beliebigen Zeichenfolge in einfachen oder doppelten Anführungszeichen|
-|Übereinstimmung mit einer Hexadezimalzahl|\b0[xX]([0-9a-fA-F]\)\b|Findet "0xc67f", jedoch nicht "0xc67fc67f".|
+|Übereinstimmung mit einer Hexadezimalzahl|\b0[xX]([0-9a-fA-F]+\)\b|Entspricht „0xc67f“, jedoch nicht „0xc67g“.|
 |Übereinstimmung mit ganzen Zahlen und Dezimalzahlen|\b[0-9]*\\.\*[0-9]+\b|Findet "1.333".|
 
 > [!TIP]
