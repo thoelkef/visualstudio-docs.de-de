@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007502"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Funktion enthält kein gültiges prototype-Objekt.
 Sie haben versucht, verwenden Sie **Instanceof** zu bestimmen, ob ein Objekt von einer bestimmten Funktion-Klasse abgeleitet wurde, aber Sie neu des Objekts definiert `prototype` Eigenschaft entweder als `null`, oder ein externes Objekt-Typ (beide ungültig [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekte). Ein externes Objekt kann es sich um ein Objekt aus dem Host-Objektmodell (z. B. Internet Explorer Dokument oder Window-Objekt) oder ein externes COM-Objekt sein.  

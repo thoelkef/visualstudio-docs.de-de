@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996994"
 ---
 # <a name="edit-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
 
-Der XML-Editor kann auch verwendet werden, zum Bearbeiten von XSLT-Stylesheets. Sie können die Vorteile der Standardfunktionen des Editors nutzen, z. B. IntelliSense, Gliedern, XML-Ausschnitte usw. Außerdem gibt es auch neue Features, die die Entwicklung in XSLT erleichtern.
+Der XML-Editor kann auch verwendet werden, zum Bearbeiten von XSLT-Stylesheets. Sie können die Vorteile der Standardfunktionen des Editors nutzen, z. B. IntelliSense, Gliedern, XML-Ausschnitte usw. Außerdem gibt es auch neue Funktionen, die die Entwicklung in XSLT erleichtern.
 
-## <a name="xslt-features"></a>XSLT-Features
+## <a name="xslt-features"></a>XSLT-Funktionen
 
 In der folgenden Tabelle werden die für die Arbeit mit XSLT-Stylesheets spezifischen Features beschrieben.
 

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935704"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Klont die aktuelle Skript-Engine (minus alle aktuellen Ausführungsstatus), eine geladene Skript-Engine, die keine Standort in den aktuellen Thread zurückgibt. Die Eigenschaften dieses neue Skriptmodul werden mit den Eigenschaften identisch sein, die, denen die ursprüngliche Skript-Engine in wäre, wenn sie zurück zum initialisierten Zustand umgestellt wurden.  

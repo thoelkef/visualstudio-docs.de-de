@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939579"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatisieren von Excel mithilfe von erweiterten Objekten
   Wenn Sie Excel-Projektmappen in Visual Studio entwickeln, können Sie auch *Hostelemente* und *Hoststeuerelemente*in den Projektmappen verwenden. Dies sind Objekte, die bestimmte häufig verwendete Objekte im Excel-Objektmodell (das von der primären Interopassembly für Excel verfügbar gemacht wird) erweitern. Dazu gehören z. B. die Objekte <xref:Microsoft.Office.Interop.Excel.Worksheet> und <xref:Microsoft.Office.Interop.Excel.Range> . Die erweiterten Objekte verhalten sich wie die Excel-Objekte, auf denen sie basieren, fügen den Objekten jedoch zusätzliche Ereignis- und Datenbindungsfunktionen hinzu.

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d1ba2a1276ba5c752b712c6131048546ca8f69ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977461"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Dialogfeld '.NET-Typ suchen und auswählen' (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **durchsuchen, und wählen Sie einen .NET-Typ** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  

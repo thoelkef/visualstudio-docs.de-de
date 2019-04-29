@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982630"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Durch diese Vorgehensweise können Sie sicherstellen, dass die Anforderungen, die für die Benutzer und andere Projektbeteiligte wichtig sind, getestet werden. Außerdem können Sie dadurch die Tests schneller aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.

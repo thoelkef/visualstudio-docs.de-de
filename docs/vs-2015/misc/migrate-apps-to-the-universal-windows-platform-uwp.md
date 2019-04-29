@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001297"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrieren von Apps in die universelle Windows-Plattform (UWP)
 Nehmen Sie die erforderlichen manuellen Änderungen an Ihren vorhandenen Projektdateien für Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual Studio 2015 RC erstellte universelle Windows-Apps vor, damit sie mit Visual Studio 2015 RTM verwendet werden können. (Wenn Sie über eine universelle Windows 8.1-App mit einem Windows-Anwendungsprojekt und einem Windows Phone-Projekt verfügen, müssen Sie die Schritte befolgen, um jedes Projekt zu migrieren).  

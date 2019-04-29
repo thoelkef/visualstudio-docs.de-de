@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929066"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;AssemblyIdentity&gt; -Element (ClickOnce-Bereitstellung)
 Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
@@ -50,7 +50,7 @@ Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../deployment
 |`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itaniumprozessoren gegeben.|
 |`type`|Erforderlich. Für die Kompatibilität mit Windows-Seite-an-Seite-installationstechnologie. Der einzige zulässige Wert ist `win32`.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="example"></a>Beispiel
  Das folgende Codebeispiel veranschaulicht ein `assemblyIdentity` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978372"
 ---
 # <a name="secure-deployment"></a>Sichere Bereitstellung
   Wenn Sie eine Office-Projektmappe erstellen, wird Ihrem Entwicklungscomputer automatisch aktualisiert, um in Ihrem Projekt zum Ausführen des Codes zu ermöglichen. Wenn Sie Ihre Lösung bereitstellen, Sie müssen jedoch bereitstellen Beweise auf der eine Entscheidung über die Vertrauenswürdigkeit basieren, indem Sie die Projektmappe mit einem Zertifikat signieren oder die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vorgelegt. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md).

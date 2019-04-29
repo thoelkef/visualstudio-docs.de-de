@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c761fccfafae4af864264cc5b9d103d09b61710
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994450"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generieren von Code für eine domänenspezifische Sprache
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bietet eine leistungsstarke Möglichkeit zum Generieren von Code, Dokumenten, Konfigurationsdateien und andere Artefakte aus Daten, die in Modellen dargestellt. Mithilfe von [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], können Sie einen Satz von Klassen, die Ihre Daten darstellen, erstellen und Sie können den Textvorlagen in schreiben Klassen, deren Namen und Eigenschaften stellen die Daten.
@@ -42,7 +42,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] bietet eine leistungss
 
  Beschreibt, wie Sie Problembehandlung und Debuggen in einer Textvorlage, die auf einer domänenspezifischen Sprache verweist.
 
- [Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Anweisungsprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  Beschreibt, wie die Verbindung mit einem generierten Direktivenprozessor einen benutzerdefinierten Host.
 

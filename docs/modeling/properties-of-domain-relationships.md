@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2693994c9ead711f3bb536d0e37f485bc00047b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998912"
 ---
 # <a name="properties-of-domain-relationships"></a>Eigenschaften von Domänenbeziehungen
 Die Eigenschaften in der folgenden Tabelle sind mit einer domänenbeziehung verknüpft. Informationen des domänenbeziehungen finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -29,7 +29,7 @@ Die Eigenschaften in der folgenden Tabelle sind mit einer domänenbeziehung verk
 |Duplikate zulässt|Wenn `True`, doppelte Links die domänenbeziehung zwischen den gleichen zwei Elementen erstellt werden kann.|`False`|
 |Basisbeziehungen|Wenn die domänenbeziehung abgeleitet ist, die basisbeziehung die domänenbeziehung.|\<none>|
 |Einbetten von ist|Wenn `True`, die domänenbeziehung gibt eine einbettende Beziehung. Wenn `False`, die Beziehung ist eine verweisbeziehung.|\<both>|
-|name|Der Name der domänenbeziehung.|Aktuelle name|
+|Name|Der Name der domänenbeziehung.|Aktuelle name|
 |Namespace|Der Namespace, der die domänenbeziehung zugeordnet ist.|Aktuellen namespace|
 |Hinweise|Informelle Hinweise, die die domänenbeziehung zugeordnet sind.|\<none>|
 |Beschreibung|Die Beschreibung, die wird verwendet, um Code zu dokumentieren, die in der Benutzeroberfläche des generierten Designers verwendet wird.|\<none>|

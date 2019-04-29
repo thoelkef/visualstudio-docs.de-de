@@ -17,19 +17,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952686"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Erstellen von Elementvorlagen und Projektvorlagen für SharePoint-Projektelemente
-  Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie es mit einer Elementvorlage oder einer Projektvorlage zuordnen. Diese Zuordnung ermöglicht anderen Entwicklern das Projektelement in Visual Studio verwenden. Sie können auch einen Assistenten für die Vorlage erstellen.
 
- Visual Studio umfasst z. B. keine Projektvorlage oder Elementvorlage für das Hinzufügen eines Felds zu einer SharePoint-Website. Sie können definieren ein SharePoint-Projektelementtyps, das ein Feld darstellt und erstellen dann eine Item-Vorlage, mit denen andere Entwickler das Field-Element zu einer SharePoint-Projekt hinzufügen. Oder Sie können eine Projektvorlage aus, damit Entwickler ein neues SharePoint-Projekt erstellen können, die das Field-Element erstellen. In beiden Fällen können Sie auch einen Assistenten angeben, der angezeigt wird, wenn der Entwickler Ihre Vorlage zu verwenden. Mit diesem Assistenten können Sie Informationen von Entwicklern so konfigurieren Sie das neue Element oder Projekt sammeln.
+Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie es mit einer Elementvorlage oder einer Projektvorlage zuordnen. Diese Zuordnung ermöglicht anderen Entwicklern das Projektelement in Visual Studio verwenden. Sie können auch einen Assistenten für die Vorlage erstellen.
 
- Elementvorlagen und Projektvorlagen sind *ZIP* Dateien, die Dateien, die von Visual Studio verwendet werden enthalten, um ein Projektelement oder das Projekt zu erstellen. Weitere Informationen zu den Grundlagen von Elementvorlagen und Projektvorlagen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
+Visual Studio umfasst z. B. keine Projektvorlage oder Elementvorlage für das Hinzufügen eines Felds zu einer SharePoint-Website. Sie können definieren ein SharePoint-Projektelementtyps, das ein Feld darstellt und erstellen dann eine Item-Vorlage, mit denen andere Entwickler das Field-Element zu einer SharePoint-Projekt hinzufügen. Oder Sie können eine Projektvorlage aus, damit Entwickler ein neues SharePoint-Projekt erstellen können, die das Field-Element erstellen. In beiden Fällen können Sie auch einen Assistenten angeben, der angezeigt wird, wenn der Entwickler Ihre Vorlage zu verwenden. Mit diesem Assistenten können Sie Informationen von Entwicklern so konfigurieren Sie das neue Element oder Projekt sammeln.
+
+Elementvorlagen und Projektvorlagen sind *ZIP* Dateien, die Dateien, die von Visual Studio verwendet werden enthalten, um ein Projektelement oder das Projekt zu erstellen. Weitere Informationen zu den Grundlagen von Elementvorlagen und Projektvorlagen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
 
 ## <a name="create-item-templates"></a>Erstellen von Elementvorlagen
  Wenn Sie eine Elementvorlage für eine SharePoint-Projektelement erstellen, gibt es einige Dateien, die immer erforderlich sind, und optionale Dateien, die von bestimmten Typen von Projektelementen verwendet werden können. Eine exemplarische Vorgehensweise, die zeigt, wie Sie einen SharePoint-Projektelementtyp definieren und das Erstellen einer Elementvorlage für finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie benutzerdefinierte Aktionsprojektelement, mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -44,7 +45,6 @@ ms.locfileid: "57868034"
 
  Die folgende Tabelle enthält einige der am häufigsten verwendeten optionalen Dateien, die in der Elementvorlage aufgenommen werden können. Einige Typen von Projektelementen möglicherweise andere Dateien, die hier nicht aufgeführt.
 
-
 | Optionale Datei | Beschreibung |
 |----------------------| - |
 | *Elements.xml* | Ein *"Feature"-Element* Datei. Diese Datei definiert die Benutzeroberfläche und das Verhalten der Anpassung des Projektelements erstellt. Jede Anpassung, z. B. Listeninstanzen, Inhaltstypen und benutzerdefinierte Aktionen verfügt über ein anderes Schema, das den Inhalt dieser Datei definiert. Weitere Informationen finden Sie unter [Baustein: Features](http://go.microsoft.com/fwlink/?LinkId=169183) und [Feature Schemas](http://go.microsoft.com/fwlink/?LinkId=169192). |
@@ -52,7 +52,7 @@ ms.locfileid: "57868034"
 | *.webpart* | Ein *Webpartdefinition* Datei. Diese Datei enthält die Einstellungen der Eigenschaft für ein Webpart. Weitere Informationen finden Sie unter [Baustein: Webparts](http://go.microsoft.com/fwlink/?LinkId=177791). |
 | *.ascx* | Eine ASP.NET UserControl-Datei. Diese Datei definiert die Benutzeroberfläche des ein visuelles Webpart an. |
 | *.aspx* | Eine Datei der ASP.NET-Seite. Diese Datei enthält die XML-Markup, das eine Seite "Anwendung" definiert. |
-| *cs* oder *vb* Dateien | Dieser Codedateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell, das die von Visual C# oder Visual Basic-Code, z. B. Anwendungsseiten, Webparts und Workflows zugegriffen werden kann. |
+| *cs* oder *vb* Dateien | Dieser Codedateien definieren das Verhalten des SharePoint-Anpassungen, die ein Programmiermodell, das die von Visual c# oder Visual Basic-Code, z. B. Anwendungsseiten, Webparts und Workflows zugegriffen werden kann. |
 
 ## <a name="create-project-templates"></a>Erstellen von Projektvorlagen
  Wenn Sie eine SharePoint-Projektvorlage erstellen, gibt es einige Dateien, die immer erforderlichen und optionalen Dateien sind, die von bestimmten Typen von Projekten verwendet werden kann. SharePoint-Projekte enthalten in der Regel mindestens eine SharePoint-Projektelement. Dies ist jedoch nicht erforderlich. Sie können z. B. eine SharePoint-Projektvorlage definieren, die nur für die Bereitstellung von SharePoint-Lösungen, die in anderen Projekten erstellt verwendet werden soll.
@@ -72,7 +72,7 @@ ms.locfileid: "57868034"
 
 |Optionale Datei|Beschreibung|
 |-------------------|-----------------|
-|SharePoint-Projektelemente|Sie können eine oder mehrere SPDATA-Dateien einschließen, die SharePoint-Projektelementtypen definieren. Jede *SPDATA* Datei muss ein entsprechendes haben <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Implementierung in einer Erweiterungsassembly, die im VSIX-Paket mit der Projektvorlage enthalten ist. Weitere Informationen finden Sie unter [Erstellen von Elementvorlagen](#createitemtemplates).<br /><br /> SharePoint-Projekte enthalten in der Regel mindestens eine SharePoint-Projektelement. Dies ist jedoch nicht erforderlich.|
+|SharePoint-Projektelemente|Sie können eine oder mehrere SPDATA-Dateien einschließen, die SharePoint-Projektelementtypen definieren. Jede *SPDATA* Datei muss ein entsprechendes haben <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Implementierung in einer Erweiterungsassembly, die im VSIX-Paket mit der Projektvorlage enthalten ist. Weitere Informationen finden Sie unter [Erstellen von Elementvorlagen](#create-item-templates).<br /><br /> SharePoint-Projekte enthalten in der Regel mindestens eine SharePoint-Projektelement. Dies ist jedoch nicht erforderlich.|
 |*\<featureName>.feature*|Diese Datei definiert eine SharePoint-Funktion, die verwendet wird, um mehrere Projektelemente für die Bereitstellung zu gruppieren. Wenn Sie die Funktions-Designer verwenden, um ein Feature in Ihrem Projekt anzupassen, speichert Visual Studio Daten über das Feature in dieser Datei. Wenn Sie die Projektelemente in andere Funktionen gruppieren möchten, können Sie mehrere einschließen *.feature* Dateien.<br /><br /> Wenn Sie eine benutzerdefinierte SharePoint-Projektvorlage erstellen, es wird empfohlen, dass Sie nur den mindestens erforderlichen Inhalt in den einzelnen einschließen *.feature* -Datei, und Sie Features konfigurieren, werden mithilfe der APIs in der <xref:Microsoft.VisualStudio.SharePoint.Features> -Namespace in eine Erweiterung, die mit der Projektvorlage zugeordnet ist. Wenn Sie dies tun, Ihre Projektvorlage ist geschützt, über zukünftige Änderungen an der Struktur des der *.feature* Datei. Ein Beispiel für die Vorgehensweise: Erstellen einer *.feature* Inhalt der Datei mit nur einem Minimum erforderlich sind, finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Wenn Sie ändern möchten, eine *.feature* Datei direkt, Sie können den Inhalt überprüfen, indem Sie mit dem Schema auf *%Programme (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
 |*\<featureName>.Template.xml*|Diese Datei bildet die Grundlage für die Manifestdatei des Features (*"Feature.xml"*) für jede Funktion, die aus dem Projekt generiert wird. Sie können die Inhalte dieser Datei hinzufügen, sollten Sie ein Verhalten angeben, die nicht von Benutzern der Art Ihres Projekts geändert werden soll. Weitere Informationen finden Sie unter [Baustein: Features](http://go.microsoft.com/fwlink/?LinkId=169183) und ["Feature.xml"](http://go.microsoft.com/fwlink/?LinkId=177795) Dateien.<br /><br /> Wenn Sie ein Lösungspaket aus dem Projekt erstellen, führt Visual Studio den Inhalt der einzelnen  *\<FeatureName > .feature* Datei und  *\<FeatureName >. Template.XML* -Dateien in ein Feature der Manifestdatei. Weitere Informationen zum Erstellen von Lösungspaketen finden Sie unter [Vorgehensweise: Erstellen eines SharePoint-Lösungspakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

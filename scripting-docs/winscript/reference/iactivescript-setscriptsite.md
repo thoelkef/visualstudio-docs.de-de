@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935553"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
 Informiert die Skript-Engine, der die [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle-Website, die vom Host bereitgestellt wird. Rufen Sie diese Methode vor allen anderen [IActiveScript](../../winscript/reference/iactivescript.md) Schnittstellenmethoden verwendet wird.  

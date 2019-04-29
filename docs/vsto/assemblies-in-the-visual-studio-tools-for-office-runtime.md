@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1e4d9932e64cbbd862c5784073ed4dbe7cb85709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944839"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblys in Visual Studio Tools for Office-Laufzeit
   Wenn Sie ein Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] -Assemblys hinzu, die für den Projekttyp und das Ziel-.NET Framework des Projekts verwendet werden. In den Office-Erweiterungen für .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]und [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]sind verschiedene Assemblys vorhanden. Weitere Informationen zu den Office-Erweiterungen, finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).

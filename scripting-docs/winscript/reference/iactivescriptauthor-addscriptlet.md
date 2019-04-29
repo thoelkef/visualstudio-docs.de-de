@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935457"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
 Fügt einen Code-Scriptlet als untergeordnetes Element der Stammebene `IScriptNode` Objekt. Auf dem Host ist der vollqualifizierte Name des Scriptlets nur zwei Ebenen zulässig.  

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c708dea61246b361620d5dcf05437ff68f1ba42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974153"
 ---
 # <a name="properties-of-model-elements"></a>Eigenschaften von Modellelementen
 Dieser Abschnitt enthält die Eigenschaften, die Sie im Eigenschaftenfenster angezeigt, wenn Sie ein Element in der DSL-Definitionsdiagramm oder im DSL-Explorer auswählen.

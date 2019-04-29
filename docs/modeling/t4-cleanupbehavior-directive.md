@@ -1,5 +1,5 @@
 ---
-title: T4 CleanUpBehavior-Anweisung
+title: T4 CleanUpBehavior-Direktive
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 27df15c0b935ff4bae497940c095dba1598bc4c1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964104"
 ---
-# <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior-Anweisung
+# <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior-Direktive
 
 Wenn die appDomain nach der Verarbeitung einer Textvorlage gelöscht werden soll, nehmen Sie die folgende Zeile mit auf:
 
@@ -26,4 +26,4 @@ Textvorlagen werden in einer appDomain getrennt vom Hostprozess verarbeitet. In 
 
 Dadurch verlangsamt sich zwar die Textverarbeitung, es wird jedoch sichergestellt, dass Ressourcen verworfen werden.
 
-Diese Direktiven funktionieren nur auf dem Visual Studio-Host.
+Diese Anweisungen funktionieren nur auf dem Visual Studio-Host.

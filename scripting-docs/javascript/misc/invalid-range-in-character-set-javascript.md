@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007047"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Ungültiger Bereich im Zeichensatz (JavaScript)
 Sie haben versucht, die einen regulären Ausdruck mit einem ungültigen Zeichen Set-Adressbereich zu erstellen. Zeichensätze müssen zwischen einzelnen Zeichen, z. B. a-Z oder 0-9 liegen; Zeichenklassen in regulären Ausdrücken wie z. B. \w können nicht in einem Zeichensatz einbezogen werden. Das erste Zeichen im Bereich muss auch vor dem zweiten Zeichen im Bereich stammen. Zum Beispiel:  

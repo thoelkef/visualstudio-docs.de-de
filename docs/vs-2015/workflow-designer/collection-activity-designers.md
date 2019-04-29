@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b1cb65a2c1eec8df194136bb5a4bffb358696e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977266"
 ---
 # <a name="collection-activity-designers"></a>Auflistungsaktivitätsdesigner
 Die Auflistungsaktivitätsdesigner werden verwendet, um Aktivitäten zu erstellen und zu konfigurieren, die zur Verwaltung von Auflistungen dienen. Die in diesem Abschnitt und der folgenden Tabelle enthaltenen Themen bieten Anleitungen dazu, wie die Aktivitäts- und Vorlagen-Designer von [!INCLUDE[wfd2](../includes/wfd2-md.md)] verwendet werden.  

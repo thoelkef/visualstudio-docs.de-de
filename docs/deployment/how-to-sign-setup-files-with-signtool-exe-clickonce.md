@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928411"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit „SignTool.exe“ (ClickOnce)
 Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.

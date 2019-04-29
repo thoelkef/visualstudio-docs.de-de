@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964286"
 ---
 # <a name="properties-of-compartment-shapes"></a>Eigenschaften von Depotformen
 Depot-Formen sind eine Form, die Sie verwenden können, um eine Domänenklasse in einer domänenspezifischen Sprache anzuzeigen. Sie können die Depots reduzieren und erweitern.
@@ -41,9 +41,9 @@ Depot-Formen sind eine Form, die Sie verwenden können, um eine Domänenklasse i
 |Benutzerdefinierte Attribute|Verwendet, um die Attribute der Quellklasse Code hinzufügen, die von dieser depotform generiert wird|\<none>|
 |Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, das mit der Depot-Form generiert (`none`, `abstract` oder `sealed`).|Keine|
+|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, das mit der Depot-Form generiert (`none`, `abstract` oder `sealed`).|Keiner|
 |Basisdepotform|Die Basisklasse dieser Form.|(keine)|
-|name|Der Name dieser Form.|Aktuelle name|
+|Name|Der Name dieser Form.|Aktuelle name|
 |Namespace|Der Namespace, der diese Form zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|none|
 |Hinweise|Informelle Hinweise, die mit dieser Form verknüpft sind.|\<none>|

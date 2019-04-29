@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 729fafd1f6dfdf889293c9686f455be8de5a81fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970374"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrieren von Office-Projektmappen zu .NET Framework 4 oder höher
   Wenn das Zielframework eines Office-Projekts, um geändert wird die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder später von einer früheren Version von .NET Framework, einige zusätzliche Schritte möglicherweise erforderlich, um anzugeben, dass die Lösung auf Entwicklungs- und Endbenutzer-Computern ausgeführt. Weitere Informationen finden Sie unter [auf erforderliche Änderungen für das Ausführen von Office-Projekten, die auf .NET Framework 4 oder .NET Framework 4.5 migriert werden](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).

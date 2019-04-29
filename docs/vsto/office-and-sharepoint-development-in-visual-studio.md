@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970429"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office und SharePoint-Entwicklung in Visual Studio
   Sie können Microsoft Office und SharePoint erweitern, indem Sie eine einfache App oder ein Add-In erstellen, die Benutzer im [Office Store](https://store.office.com/) oder einem Unternehmenskatalog herunterladen, oder indem sie eine.NET Framework-basierte Lösung erstellen, die von Benutzern auf einem Computer installiert wird.

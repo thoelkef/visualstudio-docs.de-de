@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58961487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976988"
 ---
 # <a name="creating-a-workflow-project"></a>Erstellen eines Workflowprojekts
 Workflows, [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Workflowdienste, benutzerdefinierte Aktivitäten und benutzerdefinierte Aktivitätsdesigner können mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagen erstellt werden. In diesem Abschnitt wird beschrieben, wie Bibliotheken und Anwendungen mit den Projektvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt werden.  

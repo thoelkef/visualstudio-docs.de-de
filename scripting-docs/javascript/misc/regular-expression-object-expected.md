@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a42cf4b76f4de6d4170f7ef85dafc00841964cfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006420"
 ---
 # <a name="regular-expression-object-expected"></a>Reguläres Ausdrucksobjekt erwartet
 Sie haben versucht, rufen Sie die **RegExp.prototype.ToString-Methode** oder **RegExp.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `RegExp`. Das Objekt dieser Art von Aufruf muss vom Typ `RegExp`.  

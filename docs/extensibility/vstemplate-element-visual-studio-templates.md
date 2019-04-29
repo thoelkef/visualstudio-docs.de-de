@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f9dc06b287485d857c18214ade500e63ff8032b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953230"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate-Element (Visual Studio-Vorlagen)
 Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 798cb2e7a8526e97a3d97240e181ef2e35ed21b1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956059"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Anpassung&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `customization` -Element des `vstov4` -Namespace beschreibt eine bestimmte Office-Projektmappe. Die untergeordneten Elemente sind für Anpassungen auf Dokumentebene und für VSTO-Add-Ins unterschiedlich.

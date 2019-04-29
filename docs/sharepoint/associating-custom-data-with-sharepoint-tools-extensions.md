@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987978"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen
   Sie können benutzerdefinierte Daten auf bestimmte Objekte in der SharePoint-Tools-Erweiterungen hinzufügen. Dies ist nützlich, wenn Daten in einem Teil der Erweiterung, die Sie später von anderem Code in Ihrer Erweiterung zugreifen möchten. Statt eine benutzerdefinierte Weise speichern und Abrufen von Daten zu implementieren, können die Daten in Ihrer Erweiterung mit einem Objekt zuordnen und klicken Sie dann die Daten aus demselben Objekt später abrufen.

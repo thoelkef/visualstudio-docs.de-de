@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008246"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Überprüfen und Debuggen von SharePoint-code
-Mit IntelliTrace und Unittests können Sie die SharePoint-Lösungen leichter debuggen und sicherstellen, dass jede Methode in ihnen ordnungsgemäß funktioniert. Sie können diese Funktionen für SharePoint-Projekte in Visual Studio verwenden, indem Sie die gleichen Schritte wie für andere Typen von Projekten.
+Mit IntelliTrace und Komponententests können Sie die SharePoint-Lösungen leichter debuggen und sicherstellen, dass jede Methode in ihnen ordnungsgemäß funktioniert. Sie können diese Funktionen für SharePoint-Projekte in Visual Studio verwenden, indem Sie die gleichen Schritte wie für andere Typen von Projekten.
 
 ## <a name="intellitrace"></a>IntelliTrace
 Mit IntelliTrace können Sie nicht nur den aktuellen Zustand der SharePoint-Lösung bestimmen, sondern auch in der Vergangenheit aufgetretene Ereignisse sowie den Kontext, in dem sie aufgetreten sind. Sie können zwischen verschiedenen Zeitpunkten in Ihrer SharePoint-Lösung, an denen relevante Ereignisse erfasst wurden, hin und her navigieren und die Zustände und Werte von Variablen an jedem Punkt überprüfen. Indem Sie diese dynamische Navigation verwenden, können Sie die SharePoint-Lösungen schneller und einfacher debuggen, ohne zahlreiche Haltepunkte festzulegen. Sie können auch die Debugsitzung in einem IntelliTrace-Protokoll speichern (*ITRACE*) Datei, öffnen Sie es später noch Mal in Visual Studio Enterprise und führen Sie nach einem Absturz zu debuggen. Die *ITRACE* -Datei enthält ausführliche Informationen, wann und wo bestimmte SharePoint-Fehler aufgetreten ist, so, dass Sie einfacher herausfinden, was den Fehler verursacht. Die Informationen in den *ITRACE* Datei ist eine Teilmenge des vollständigen Fehlerprotokolls, das die vereinheitlichten Protokollierungsdiensts (ULS) in SharePoint erstellt. Diese Informationen umfassen Ereignisse, die für SharePoint spezifisch sind, wie z. B. wenn ein Benutzerprofil geöffnet oder geschlossen wird und wenn Eigenschaften in einem SharePoint-Projekt geladen, gelesen oder geändert werden. Sie können konfigurieren, welche Ereignisse IntelliTrace aufzeichnet. Weitere Informationen finden Sie unter [Verwenden gespeicherter IntelliTrace-Daten](../debugger/using-saved-intellitrace-data.md).

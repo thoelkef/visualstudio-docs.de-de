@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979061"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty-Schnittstelle
 Wird verwendet, um eine hierarchische Eigenschaft der Entität im Debugmodus befindlichen beschreiben, die über einen Namen, Typ und Wert verfügt. In den meisten Fällen `IDebugProperty` wird verwendet, um das Ergebnis der Auswertung von Ausdrücken, Auswertung der Anweisung oder Register Evaluation beschreiben.  

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008328"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivität
   In dieser exemplarischen Vorgehensweise veranschaulicht, wie eine benutzerdefinierte Aktivität für eine Website-Ebene mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Workflowdokumentbibliothek auf Siteebene Workflows gelten für die gesamte Website, nicht nur eine Liste auf der Website.) Die benutzerdefinierte Aktivität wird eine Liste der Ankündigungen-Sicherung erstellt und kopiert dann den Inhalt dieser Liste hinein.

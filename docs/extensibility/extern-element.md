@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911894"
 ---
 # <a name="extern-element"></a>Extern-element
 Das Element "extern" verweist auf alle externen Header (*h*)-Dateien zum Zusammenführen mit der *VSCT* Datei zum Zeitpunkt der Kompilierung. Die Dateien, die zusammengeführt werden muss auf dem Include-Pfad, dem VSCT-Compiler zugewiesen oder mithilfe einer ["Include"-Element](../extensibility/include-element.md). Die Dateien sind möglicherweise andere *VSCT* Dateien oder C++-Headerdateien.

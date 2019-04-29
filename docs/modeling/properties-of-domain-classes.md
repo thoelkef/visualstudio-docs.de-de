@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb66a0d497c86091f689f119e57a5230f125e8de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999197"
 ---
 # <a name="properties-of-domain-classes"></a>Eigenschaften von Domänenklassen
 Domänenklassen werden die Eigenschaften in der folgenden Tabelle sind. Weitere Informationen zu den Domänenklassen, finden Sie unter [Grundlegendes zu Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ Domänenklassen werden die Eigenschaften in der folgenden Tabelle sind. Weitere 
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der von der Domänenklasse generiert wird (`none`, `abstract` oder `sealed`).|`none`|
 |Basisklasse|Wenn diese Domänenklasse abgeleitet ist, den Namen der Basisklasse.|\<none>|
-|name|Der Name dieser Domänenklasse.|Aktuelle name|
+|Name|Der Name dieser Domänenklasse.|Aktuelle name|
 |Namespace|Der Namespace dieser Domänenklasse.|Aktuellen namespace|
 |Hinweise|Informelle Hinweise, die mit dieser Domäne verknüpft sind.|\<none>|
 |Beschreibung|Die Beschreibung, die zum Dokumentieren der Benutzeroberflächenautomatisierungs des generierten Designers verwendet wird.|\<none>|

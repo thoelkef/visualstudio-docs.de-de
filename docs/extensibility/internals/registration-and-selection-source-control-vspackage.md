@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908903"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage)
 Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfügbar machen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Wenn mehr als eine quellcodeverwaltung VSPackage registriert ist, kann der Benutzer, die VSPackages, laden Sie zur richtigen Zeit jeweils auswählen. Finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md) für Weitere Informationen zu VSPackages und wie Sie sie zu registrieren.

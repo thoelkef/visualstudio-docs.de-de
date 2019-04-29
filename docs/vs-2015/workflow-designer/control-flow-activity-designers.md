@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977310"
 ---
 # <a name="control-flow-activity-designers"></a>Ablaufsteuerungsaktivitätsdesigner
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  

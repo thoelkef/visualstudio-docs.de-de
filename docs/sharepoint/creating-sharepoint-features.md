@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952742"
 ---
 # <a name="create-sharepoint-features"></a>Erstellen von SharePoint-features
   Sie können eine SharePoint-Funktion verwenden, zum Gruppieren verwandter Elemente der SharePoint-Projekt zur einfacheren Bereitstellung. Sie können Funktionen erstellen, Bereiche festlegen und andere Funktionen als Abhängigkeiten zu markieren, mit dem SharePoint-Funktions-Designer. Der Designer generiert außerdem ein Manifest, eine XML-Datei handelt, die jede Funktion beschreibt.

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993546"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in Visual Studio bieten eine gute Möglichkeit für das Generieren von Text beliebiger Art. Sie können Textvorlagen verwenden, um Text zu generieren, zur Laufzeit als Teil Ihrer Anwendung und zur Entwurfszeit aus, um einige der Projektcode zu generieren. Dieses Thema fasst zusammen, die am häufigsten gestellte "Gewusst...?" Fragen.
