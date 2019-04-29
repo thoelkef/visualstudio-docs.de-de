@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929937"
 ---
 # <a name="threads-view"></a>Threadansicht
 In der Threadansicht wird eine flache Liste aller Threads, die Windows auf Ihrem System zugeordnet. Die Thread-ID und den Modulnamen für jeden Thread werden angezeigt. Prozesse sind nicht enthalten, aber Sie finden den Prozess, der einen ausgewählten Thread besitzt.

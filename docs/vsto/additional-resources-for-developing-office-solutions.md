@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953179"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Zusätzliche Ressourcen für die Entwicklung von Office-Projektmappen
   Die Microsoft Office-Entwicklertools in Visual Studio stellen nur eine von vielen Methoden zum Erweitern von Office-Anwendungen dar. Office-Anwendungen verfügen auch über einige integrierte Features, z. B. Open XML-Formate, die nicht von den Office-Entwicklertools in Visual Studio oder in dieser Dokumentation behandelt werden.

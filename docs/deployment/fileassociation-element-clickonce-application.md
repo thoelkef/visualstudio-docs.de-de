@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928522"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;FileAssociation&gt; -Element (ClickOnce-Anwendung)
 Gibt eine Dateierweiterung mit der Anwendung zugeordnet werden soll.
@@ -47,7 +47,7 @@ Gibt eine Dateierweiterung mit der Anwendung zugeordnet werden soll.
 |`progid`|Erforderlich. Ein Name, den Dateityp eindeutig identifiziert.|
 |`defaultIcon`|Erforderlich. Gibt das Symbol für Dateien mit dieser Erweiterung verwenden. Die Symboldatei muss angegeben werden, mithilfe der [ \<Datei > Element](../deployment/file-element-clickonce-application.md) innerhalb der [ \<Assembly >-Element](../deployment/assembly-element-clickonce-application.md) , enthält dieses Element.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Dieses Element muss enthalten einen XML-Namespace-Verweis auf "Urn: Schemas-Microsoft-com:clickonce.v1". Wenn die `<fileAssociation>` Element wird verwendet, müssen sie nach dem stammen die `<application>` Element in seinem übergeordneten [ \<Assembly >-Element](../deployment/assembly-element-clickonce-application.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] überschreibt keine vorhandenen dateizuordnungen. Eine ClickOnce-Anwendung kann jedoch die Dateierweiterung für den aktuellen Benutzer überschreiben. Nach der Deinstallation der ClickOnce-Anwendung ClickOnce löscht die dateizuordnung für den Benutzer und die Zuordnung pro Computer wieder aktiv ist.

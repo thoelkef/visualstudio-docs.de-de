@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77a7138e436002a0fda4e9ab72222821d2c9809e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909029"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrieren eines Legacysprachdiensts
 Die folgenden Abschnitte enthalten Listen der Registrierungseinträge für die verschiedenen Sprach Dienstoptionen verfügbaren in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -27,7 +27,7 @@ Die folgenden Abschnitte enthalten Listen der Registrierungseinträge für die v
 ## <a name="registry-entries-for-language-service-options"></a>Registrierungseinträge für den Dienst der Sprachoptionen
  Die *Stamm der VS-Reg*\Languages\Language Services\\*Sprachenname* Schlüssel kann die folgenden Werte enthalten.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ|*\<GUID>*|Die GUID des Sprachdiensts.|
 |LangResID|REG_DWORD|0x0-0xffff|Ressourcenbezeichner ("RESID") für den Namen lokalisierter Text, der die Sprache eine Zeichenfolge.|
@@ -64,7 +64,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>Registrierungseinträge für Sprachen von Debuggeroptionen
  Die *Stamm der VS-Reg*\Languages\Language Services\\*Sprachenname*\Debugger Sprachen\\*GUID*\ Schlüssel kann Folgendes beinhalten Werte.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ|Text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name dieses Schlüssels ist eine GUID eines ausdrucksauswerters, die einen entsprechenden Eintrag in  *\<VS Reg-Stamm >* \AD7Metrics\Expression Ausdrucksauswertung.|
 
@@ -83,7 +83,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Registrierungseinträge für Editor-Tools-Optionen
  Sie können Registrierungsschlüssel unter dem Schlüssel EditorToolsOptions für Eigenschaftenseiten und die Eigenschaftsknoten hinzufügen. Diese Schlüssel und deren Werte identifizieren Sie die Eigenschaftenseiten in der **Optionen** Dialogfeld (auf der **Tools** Menü), werden verwendet, um den Sprachdienst zu konfigurieren. Im folgenden Beispiel *Seitennamen* ist der Name der auf einer Eigenschaftenseite und *Knotenname* befindet sich auf der Namen eines Knotens in der Struktur der **Optionen** Dialogfeld. Die seiteneintrag und die Knoten-Eintrag müssen separat angegeben werden.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ|ResID|Der lokalisierte Anzeigename von dieser Seite. Der Name kann es sich um Literaltext oder #`nnn`, wobei `nnn` ist eine Zeichenfolge-Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackage.|
 |Package|REG_SZ|*GUID*|Die GUID des VSPackage, das diese Optionsseite implementiert.|
@@ -117,7 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Registrierungseinträge für die Optionen für Namen Dateierweiterung
  Der Eintrag für die Erweiterung sollte es sich um den Punkt, z. B. ".myext" enthalten.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ|*GUID*|Dienst-GUID für den Standard-Sprachdienst für diesen Dateityp des Name-Erweiterung.|
 
@@ -134,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>Registrierungseinträge für Editor-Optionen
  Die *Stamm der VS-Reg*\Editors-Schlüssel kann die folgenden Werte enthalten:
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ|""|Nicht verwendet; Sie können Ihren Namen für die Dokumentation hier einfügen.|
 |DefaultToolboxTab|REG_SZ|""|Name der Toolboxregisterkarte, der als Standard festlegen, wenn der Editor aktiv ist.|
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Registrierungseinträge für die logische Ansicht-Optionen
  Die *Stamm der VS-Reg*\Editors\\ *-Editor-GUI >* \LogicalViews-Schlüssel kann die folgenden Werte enthalten.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ||Nicht verwendet.|
 |*\<GUID>*|REG_SZ|""|Schlüssel, der die unterstützten logischen Ansichten. Sie können beliebig viele verwenden, wie Sie benötigen. Der Name des Registrierungseintrags ist von Bedeutung, nicht den Wert, der immer eine leere Zeichenfolge ist.|
@@ -181,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Registrierungseinträge für die Erweiterung des Editors-Optionen
  Die *Stamm der VS-Reg*\Editors\\*Editor GUID*\Extensions-Schlüssel kann die folgenden Werte enthalten. Die Dateinamenerweiterung ist nicht mit der führenden Punkt enthalten.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |(Standard)|REG_SZ||Nicht verwendet.|
 |*\<ext>*|REG_DWORD|0-0xffffffff|Relative Priorität von Erweiterungen. Wenn zwei oder mehr Sprachen die gleiche Erweiterung verwenden, wird die Sprache der höheren Priorität ausgewählt.|
@@ -207,7 +207,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  Diese Registrierungseinträge erfolgt über die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.
 
-|name|Typ|Bereich|Beschreibung|
+|Name|Typ|Bereich|Beschreibung|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Unterstützung für IntelliSense-Vorgänge.|
 |MatchBraces|REG_DWORD|0-1|Unterstützung für die entsprechende Sprachpaare z. B. von geschweiften Klammern und runde sowie eckige Klammern.|

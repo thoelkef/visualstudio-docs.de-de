@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956029"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Daten in Exemplarische Vorgehensweisen für Office-Lösungen
   In den folgenden exemplarischen Vorgehensweisen wird das Arbeiten mit Daten in Anpassungen auf Dokumentebene und in VSTO-Add-Ins für Microsoft Office Word und Microsoft Office Excel veranschaulicht.

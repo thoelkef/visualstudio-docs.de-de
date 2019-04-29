@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966912"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner
   Einige verwendete häufig Ordner in SharePoint, wie z. B. Bilder und Layouts, tief in der Dateihierarchie eingebettet sind. Sie können diese Ordner in einem SharePoint-Projekt leichter Zugriffsberechtigung zuordnen. Zugeordnete Ordner sind Ordner in der SharePoint-Projekt, die den physischen Speicherort der Dateien bei der Installation von SharePoint-Server entsprechen.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 159708bfad49e6a4a303363c6a0e9dd83b23d8e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961259"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Vorgehensweise: Einrichten von Konfigurationsinformationen für eine Office-Projektmappe
   Sie können Konfigurationsdateien verwenden, um Einstellungen zu konfigurieren, die spezifisch für Ihre Office-Projektmappen sind. Sie können Einstellungen wie z. B. assemblybindungsrichtlinien, Remotingobjekte, Debug und Trace-Einstellungen angeben.
