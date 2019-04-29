@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007465"
 ---
 # <a name="illegal-assignment-javascript"></a>Ungültige Zuweisung (JavaScript)
 Sie versucht, ein schreibgeschützter Bezeichner einen Wert zuweisen. Sie können nicht auf einen nur-Lese Bezeichner einen Wert zuweisen. Beispielsweise definiert die Host-Objekte und externe COM-Objekten.  

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 41ab039d33155769eac13469a65f2a35c8ed7324
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778605"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typen, die native Ressourcen besitzen, müssen gelöscht werden können.
 

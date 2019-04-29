@@ -191,6 +191,8 @@
               href: how-to-open-standard-editors.md
             - name: Öffnen von Editoren für geöffnete Dokumente
               href: how-to-open-editors-for-open-documents.md
+        - name: Leitfaden für die Migration von XAML-Designer-Erweiterbarkeit
+          href: xaml-designer-extensibility-migration.md
 - name: Erweitern von Projekten
   href: extending-projects.md
   items:
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: Shell (integriert oder isoliert)
   href: 'https://vspartner.com/pages/vsshells'
-- name: Bereitstellen von Visual Studio-Erweiterungen
+- name: Ausliefern von Visual Studio-Erweiterungen
   href: shipping-visual-studio-extensions.md
   items:
     - name: VSIX-Projektvorlage
