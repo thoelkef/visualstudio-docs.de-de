@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410140"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Erstellen Sie eine Erweiterung mit einer Editor-Elementvorlage
 Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfachen Editor-Erweiterungen zu erstellen, die Klassifizierungen, Zusatzelemente und Ränder im Editor hinzu. Die Editor-Elementvorlagen sind für Visual c# oder Visual Basic-VSIX-Projekte verfügbar.
@@ -63,7 +63,7 @@ Sie können Vorlagen verwenden, die enthalten sind, im Visual Studio SDK einfach
  Die Editor Viewport Zusatzelement-Vorlage erstellt eine Relative Viewport-Zusatzelement eine violette Feld hinzu, die einen roten Rahmen auf der oberen rechten Ecke des Viewports hat.
 
 > [!NOTE]
->  Die **Viewport** ist der Bereich der Textansicht, die derzeit angezeigt wird.
+> Die **Viewport** ist der Bereich der Textansicht, die derzeit angezeigt wird.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Eine Erweiterung des Viewports Zusatzelement mithilfe der Editor Viewport Zusatzelement-Vorlage erstellen
 

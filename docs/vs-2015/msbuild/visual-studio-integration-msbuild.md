@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445639"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  Einige Elementtypnamen sind spezifisch für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], werden jedoch in diesem Dropdownmenü nicht aufgeführt.  
+> Einige Elementtypnamen sind spezifisch für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], werden jedoch in diesem Dropdownmenü nicht aufgeführt.  
   
 ## <a name="in-process-compilers"></a>Prozessinterne Compiler  
  Aus Gründen der Leistungssteigerung wird in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nach Möglichkeit die prozessinterne Version des [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Compilers verwendet. (Nicht zutreffend für [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Dazu müssen die folgenden Bedingungen erfüllt sein:  

@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436734"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspakete
   Nachdem Sie eine SharePoint-Lösung in Visual Studio entwickelt haben, können Sie die Paketdatei (.wsp) auf einem lokalen SharePoint-Server bereitstellen oder veröffentlichen es auf einem Remote- oder lokalen SharePoint-Server. Wenn Sie die Dateien bereitstellen, können Sie anpassen, wie die Paketdateien (.wsp) bereitgestellt werden.
 
 > [!NOTE]
->  Derzeit können nur Sandbox-Lösungen auf remote-SharePoint-Server veröffentlicht werden. Weitere Informationen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).
+> Derzeit können nur Sandbox-Lösungen auf remote-SharePoint-Server veröffentlicht werden. Weitere Informationen finden Sie unter [Überlegungen zu sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Bereitstellen, veröffentlichen und aktualisieren
  *Bereitstellen von* bezieht sich auf einer SharePoint-Lösungsdatei, die aus einem SharePoint-Projekt in Visual Studio erstellt werden, um einen lokalen Host kopieren. Sie können in einer bereitgestellten Lösung konfigurieren die Schritten zur Bereitstellung, z. B. Wiederverwendung Pool (Internet Information Services, IIS) aktivieren die Projektmappe nach der Bereitstellung und so weiter. Verwenden Sie zum Bereitstellen der **bereitstellen** Befehl die **erstellen** Menü. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) und [Vorgehensweise: Bereitstellen und veröffentlichen Sie eine SharePoint-Lösung auf einer lokalen SharePoint-Website](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

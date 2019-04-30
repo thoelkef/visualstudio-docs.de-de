@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419467"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Vorgehensweise: Anpassen einer integrierten Registerkarte
   Einer integrierten Registerkarte können Gruppen und Steuerelemente hinzugefügt werden. Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband einer Microsoft Office-Anwendung befindet. Z. B. die **Daten** Registerkarte ist eine integrierte Registerkarte in Excel. Wenn Sie eine benutzerdefinierte Gruppe erstellen, wird diese auf der Registerkarte an letzter Stelle angezeigt. Sie können die Gruppe aber an eine beliebige Position auf der Registerkarte verschieben.
@@ -26,14 +26,14 @@ ms.locfileid: "60075661"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Sie können einer integrierten Registerkarte Gruppen hinzufügen, die integrierten Gruppen jedoch nicht von einer integrierten Registerkarte entfernen.
+> Sie können einer integrierten Registerkarte Gruppen hinzufügen, die integrierten Gruppen jedoch nicht von einer integrierten Registerkarte entfernen.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>So fügen Sie einer integrierten Registerkarte Gruppen hinzu
 
 1. Mit der rechten Maustaste in der Menüband-Codedatei **Projektmappen-Explorer**, und klicken Sie dann auf **Ansicht-Designer**.
 
     > [!NOTE]
-    >  Wenn Sie nicht in der Menüband-Codedatei angezeigt wird **Projektmappen-Explorer**, müssen Sie hinzufügen, eine **Element "Menüband"** zu Ihrem Projekt. Weitere Informationen finden Sie unter [How to: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Wenn Sie nicht in der Menüband-Codedatei angezeigt wird **Projektmappen-Explorer**, müssen Sie hinzufügen, eine **Element "Menüband"** zu Ihrem Projekt. Weitere Informationen finden Sie unter [How to: Erste Schritte beim Anpassen des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Mit der rechten Maustaste in eine beliebige Registerkarte im Menüband-Designer, und klicken Sie dann auf **Eigenschaften**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075661"
 5. Von der **Steuerelemente für Office-Menübänder** Registerkarte die **Toolbox**, ziehen Sie Gruppen auf der Registerkarte ".
 
     > [!NOTE]
-    >  Integrierte Gruppen werden im Designer nicht angezeigt. Die einzige Möglichkeit, zu bestimmen, ob Sie mit einer integrierten Registerkarte arbeiten aus diesem Grund ist, untersuchen die **ControlId** -Eigenschaft auf der Registerkarte.
+    > Integrierte Gruppen werden im Designer nicht angezeigt. Die einzige Möglichkeit, zu bestimmen, ob Sie mit einer integrierten Registerkarte arbeiten aus diesem Grund ist, untersuchen die **ControlId** -Eigenschaft auf der Registerkarte.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>So ordnen Sie Gruppen auf einer integrierten Registerkarte an
 

@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384067"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  Sie können in einem MFC-Programm verwenden [CMemoryState](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) um eine Beschreibung aller Objekte im Heap zu sichern, die nicht freigegeben wurden. `DumpAllObjectsSince` sichert alle seit dem letzten [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)aufgerufen. Wurde kein `Checkpoint` -Aufruf durchgeführt, gibt `DumpAllObjectsSince` alle momentan im Arbeitsspeicher enthaltenen Objekte sowie Elemente, die kein Objekt darstellen, aus.  
   
 > [!NOTE]
->  Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)aktiviert werden.  
+> Bevor MFC-Objektdumps erstellt werden können, muss die [Diagnosenachverfolgung](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)aktiviert werden.  
   
 > [!NOTE]
->  In MFC wird von allen Objekten, die Speicherverluste verursachen, beim Beenden des Programms automatisch ein Dump erstellt. Daher ist kein Code zum Erstellen von Objektdumps am Programmende erforderlich.  
+> In MFC wird von allen Objekten, die Speicherverluste verursachen, beim Beenden des Programms automatisch ein Dump erstellt. Daher ist kein Code zum Erstellen von Objektdumps am Programmende erforderlich.  
   
  Durch den folgenden Code werden alle Objekte auf Speicherverluste getestet, indem die beiden Speicherzustände verglichen und bei Auftreten von Verlusten alle Objekte gesichert werden.  
   

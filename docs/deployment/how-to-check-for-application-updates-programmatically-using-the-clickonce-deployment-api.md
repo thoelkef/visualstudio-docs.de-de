@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e1f1b923b395121fb5671088d99421a79c45fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406600"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Vorgehensweise: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung
 ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem er bereitgestellt wurde. In der ersten Methode können Sie die ClickOnce-Bereitstellung automatisch nach Updates, die in bestimmten Intervallen suchen konfigurieren. In der zweiten Methode schreiben Sie Code, verwendet der <xref:System.Deployment.Application.ApplicationDeployment> Klasse, um nach Updates suchen auf der Grundlage von Ereignissen, wie eine benutzeranforderung.
@@ -30,7 +30,7 @@ ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem e
  Um eine ClickOnce-Anwendung programmgesteuert aktualisieren, müssen Sie einen Speicherort auf Updates angeben. Dies wird manchmal als Bereitstellungsanbieter bezeichnet. Weitere Informationen zum Festlegen dieser Eigenschaft finden Sie unter [auswählen eine Strategie für ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
 
 > [!NOTE]
->  Sie können auch das Verfahren unten, um die Anwendung von einem Speicherort bereitstellen, aber von einem anderen aktualisieren. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
+> Sie können auch das Verfahren unten, um die Anwendung von einem Speicherort bereitstellen, aber von einem anderen aktualisieren. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
 
 ### <a name="to-check-for-updates-programmatically"></a>Programmgesteuert nach Updates suchen
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4679b4e9cf9356921be47afb726c45216974ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b53748546633f8944ef0bd47ebc01326b322165e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417113"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten
 Wenn Sie eine neue Dokumentenansicht verfügen, können Sie ihn an ein vorhandenes dokumentendatenobjekt anfügen können.
@@ -37,7 +37,7 @@ Wenn Sie eine neue Dokumentenansicht verfügen, können Sie ihn an ein vorhanden
 4. Wenn Sie in diesem Dokument schließen, ruft Visual Studio ein zweites Mal der Editorfactory. In diesem Aufruf die `DocDataExisting` Parameter gleich NULL ist. Die Implementierung der Factory-Editors kann dann das dokumentendatenobjekt in Ihren eigenen Editor öffnen.
 
    > [!NOTE]
-   >  Bestimmt, ob Sie ein vorhandenes dokumentendatenobjekt arbeiten können, können Sie auch private Kenntnisse über die schnittstellenimplementierung durch Umwandeln der einen Zeiger auf die tatsächliche [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Klasse Ihrer privaten Implementierung. Alle standard-Editoren implementieren beispielsweise `IVsPersistFileFormat`, erbt von <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Sie können daher Aufrufen `QueryInterface` für <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, Klassen-ID und die Klassen-ID für das vorhandene dokumentendatenobjekt Ihrer Implementierung der übereinstimmt, und Sie das dokumentendatenobjekt arbeiten können.
+   > Bestimmt, ob Sie ein vorhandenes dokumentendatenobjekt arbeiten können, können Sie auch private Kenntnisse über die schnittstellenimplementierung durch Umwandeln der einen Zeiger auf die tatsächliche [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Klasse Ihrer privaten Implementierung. Alle standard-Editoren implementieren beispielsweise `IVsPersistFileFormat`, erbt von <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Sie können daher Aufrufen `QueryInterface` für <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, Klassen-ID und die Klassen-ID für das vorhandene dokumentendatenobjekt Ihrer Implementierung der übereinstimmt, und Sie das dokumentendatenobjekt arbeiten können.
 
 ## <a name="robust-programming"></a>Stabile Programmierung
  Wenn Visual Studio ruft die Implementierung von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> -Methode es übergibt wieder einen Zeiger auf die vorhandenen dokumentendatenobjekts in der `punkDocDataExisting` -Parameters, sofern eine vorhanden ist. Überprüfen Sie das dokumentendatenobjekt zurückgegeben `punkDocDataExisting` zu bestimmen, ob das dokumentendatenobjekt geeignet, für den Editor, wie im Hinweis in Schritt 4 des Verfahrens in diesem Thema beschrieben ist. Wenn es eignet sich, Ihre Editorfactory sollte eine zweite Ansicht für die Daten bereitstellen, wie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md). Wenn dies nicht der Fall ist, dann sollte eine entsprechende Fehlermeldung angezeigt.

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446704"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert is
  In diesem Beispielprojekt liest eine Vorlage eine Beispiel-XML-Datei und generiert Klassen, die jedem Knotentyp entsprechen. Bei handgeschriebenem Code können Sie diese Klassen verwenden, um in der XML-Datei zu navigieren. Sie können Ihre Anwendung auch mit anderen Dateien ausführen, die die gleichen Knotentypen verwenden. Die XML-Beispieldatei dient dazu, Beispiele für alle Knotentypen bereitzustellen, für die Ihre Anwendung gedacht ist.  
   
 > [!NOTE]
->  Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.  
+> Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.  
   
  Hier ist die Beispieldatei:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.  
   
    > [!NOTE]
-   >  Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.  
+   > Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.  
   
 3. Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.  
   

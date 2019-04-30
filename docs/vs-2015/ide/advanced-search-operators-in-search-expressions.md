@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408408"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Erweiterte Suchoperatoren in Suchausdrücken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "54775573"
 Mithilfe von erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalten verfeinern, indem Sie aus einfachen Suchausdrücken komplexere erstellen. Wie die folgende Tabelle zeigt, schränken diese Operatoren den Kontext ein, in dem eine Abfrage ausgeführt wird.  
   
 > [!WARNING]
->  Sie müssen erweiterte Suchoperatoren mit einem abschließenden Doppelpunkt eingeben. Es dürfen sich keine Leerzeichen zwischen dem Suchoperator und dem Doppelpunkt befinden, damit die Suchmaschine diesen erkennen kann.  
+> Sie müssen erweiterte Suchoperatoren mit einem abschließenden Doppelpunkt eingeben. Es dürfen sich keine Leerzeichen zwischen dem Suchoperator und dem Doppelpunkt befinden, damit die Suchmaschine diesen erkennen kann.  
   
-|Suchen nach|Verwendung|Beispiel|Ergebnis|  
+|Suchen nach|Mit|Beispiel|Ergebnis|  
 |-------------------|---------|-------------|------------|  
 |Eine Benennung im Titel des Themas|title:|title:binaryreader|Themen, die „binaryreader“ im Titel enthalten.|  
 |Eine Benennung in einem Codebeispiel|code:|code:readdouble|Themen, die „readdouble“ in einem Codebeispiel enthalten.|  
@@ -40,10 +40,10 @@ Mithilfe von erweiterten Suchoperatoren können Sie Ihre Suche nach Inhalten ver
   
  Sie können den Operator code: verwenden, um Inhalt zu einer beliebigen Programmiersprache zu suchen. Es werden allerdings nur Ergebnisse für Inhalt zurückgegeben, der mit einer spezifischen Programmiersprache markiert ist. Die folgende Tabelle enthält die Programmiersprachen, die dieser Operator unterstützt:  
   
-|Programmiersprache|Verwendung|  
+|Programmiersprache|Mit|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> oder<br /><br /> code:visualbasic|  
-|C#|code:C#<br /><br /> oder<br /><br /> code:csharp|  
+|C#|code:c#<br /><br /> oder<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> oder<br /><br /> code:c++<br /><br /> oder<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> oder<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> oder<br /><br /> code:js|  

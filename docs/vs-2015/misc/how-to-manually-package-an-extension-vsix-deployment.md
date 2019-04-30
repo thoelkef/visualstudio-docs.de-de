@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442854"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
 Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung für die Bereitstellung zu verpacken. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
@@ -29,7 +29,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
  Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
   
 > [!NOTE]
->  Die Namen der Dateien in VSIX-Paketen darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Die Namen der Dateien in VSIX-Paketen darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>So erstellen Sie manuell ein VSIX-Paket  
   

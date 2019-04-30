@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436417"
 ---
 # <a name="create-sharepoint-solutions"></a>Erstellen von SharePoint-Lösungen
   Visual Studio bietet eine Alternative zur Erstellung von SharePoint-Anwendungen mithilfe von SharePoint Designer. Mit Funktionen wie erweiterten Debugtools, IntelliSense, Anweisungsvervollständigung und Projektvorlagen ermöglicht Visual Studio eine schnelle SharePoint-Entwicklung. Visual Studio nutzt auch erweiterte .NET Framework-basierte Tools und Sprachen. Sie können SharePoint-Projekte mit Visual Basic oder Visual C# entwickeln, und Sie können Apps für SharePoint-Projekte entwickeln, indem Sie JavaScript verwenden.
@@ -25,7 +25,7 @@ ms.locfileid: "57869914"
  Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) und [Erstellen von Apps für SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Erfahren Sie, wie Sie das neue [SharePoint-Add-In-Modell](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) verwenden können, um die SharePoint-Erfahrungen Ihrer Benutzer zu erweitern. Diese Add-Ins belegen nur wenig Arbeitsspeicher im Vergleich zu SharePoint-Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
+> Erfahren Sie, wie Sie das neue [SharePoint-Add-In-Modell](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) verwenden können, um die SharePoint-Erfahrungen Ihrer Benutzer zu erweitern. Diese Add-Ins belegen nur wenig Arbeitsspeicher im Vergleich zu SharePoint-Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
 
 |||
 |-|-|

@@ -1,45 +1,47 @@
 ---
 title: 'Idiasymbol:: Get_timestamp | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_timeStamp method
 ms.assetid: 5d707b76-dbaa-4d88-86c3-6f3672cc6d4c
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 726c452abe8f435ab05e3e6a5606b21fb8d9eba1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399867"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-Ruft den Zeitstempel der zugrunde liegenden ausführbaren Datei ab.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```C++
-HRESULT get_timeStamp ( 
-   DWORD* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parameter
- `pRetVal`
-
-[out] Gibt den Zeitstempel der zugrunde liegenden ausführbaren Datei.
-
-## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
-
+Ruft den Zeitstempel der zugrunde liegenden ausführbaren Datei ab.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT get_timeStamp (   
+   DWORD* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `pRetVal`  
+ [out] Gibt den Zeitstempel der zugrunde liegenden ausführbaren Datei.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
+  
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
-
-## <a name="see-also"></a>Siehe auch
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

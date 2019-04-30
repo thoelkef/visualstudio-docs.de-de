@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440585"
 ---
 # <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML-Ausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
  Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Ausschnitt einfügen** Befehl.  
   
 > [!NOTE]
->  Die **Ausschnitt einfügen** Befehl ist auch über die Tastenkombination (STRG + K, anschließend STRG + X) verfügbar.  
+> Die **Ausschnitt einfügen** Befehl ist auch über die Tastenkombination (STRG + K, anschließend STRG + X) verfügbar.  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>So fügen Sie Ausschnitte über das Kontextmenü ein  
   
@@ -60,7 +60,7 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
 4. Drücken Sie die TAB-Taste zweimal, um den XML-Ausschnitt aufzurufen.  
   
 > [!NOTE]
->  Möglicherweise können XML-Ausschnitte in einigen Fällen nicht aufgerufen werden. Wenn Sie z. B. versuchen, ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens einzufügen, generiert der Editor keinen XML-Ausschnitt. Wenn ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens verwendet wird, sind die erforderlichen Attribute oder Unterelemente nicht vorhanden, sodass der Editor über keine Daten zum Einfügen verfügt.  
+> Möglicherweise können XML-Ausschnitte in einigen Fällen nicht aufgerufen werden. Wenn Sie z. B. versuchen, ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens einzufügen, generiert der Editor keinen XML-Ausschnitt. Wenn ein `xs:complexType`-Element innerhalb eines `xs:element`-Knotens verwendet wird, sind die erforderlichen Attribute oder Unterelemente nicht vorhanden, sodass der Editor über keine Daten zum Einfügen verfügt.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>So fügen Sie Ausschnitte mithilfe von Abkürzungsnamen ein  
   
@@ -76,7 +76,7 @@ Mithilfe der folgenden zwei Befehle im Kontextmenü des XML-Editors können Sie 
  Die folgenden Verfahren wird beschrieben, wie Sie den Zugriff auf die **Umschließen mit** Befehl.  
   
 > [!NOTE]
->  Die **Umschließen mit** Befehl steht auch über die Tastenkombination (STRG + K, anschließend STRG + S).  
+> Die **Umschließen mit** Befehl steht auch über die Tastenkombination (STRG + K, anschließend STRG + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>So verwenden Sie "Umgeben mit" über das Kontextmenü  
   

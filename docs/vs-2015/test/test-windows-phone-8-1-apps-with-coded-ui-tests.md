@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387013"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ Verwenden Sie diese exemplarische Vorgehensweise zum Erstellen von UI-Tests für
      Öffnen Sie im Projektmappen-Explorer die Datei "CodedUITest1.vb". Klicken Sie im Testmethodencode "CodedUITestMethod1()" mit der rechten Maustaste den Aufruf für die Assertionsmethode, der automatisch hinzugefügt wurde `Me.UIMap.AssertMethod1()` und wählen Sie **Gehe zu Definition**. Hierdurch wird die Datei "UIMap.Designer.vb" im Code-Editor geöffnet, sodass Sie den hinzugefügten Code für die Assert-Methode und die Steuerelemente sehen können.  
   
     > [!WARNING]
-    >  Die Dateien "UIMap.designer.cs" oder "UIMap.Designer.vb" sollten nicht direkt geändert werden. Andernfalls werden die an der Datei vorgenommenen Änderungen bei jedem Generieren des Tests überschrieben.  
+    > Die Dateien "UIMap.designer.cs" oder "UIMap.Designer.vb" sollten nicht direkt geändert werden. Andernfalls werden die an der Datei vorgenommenen Änderungen bei jedem Generieren des Tests überschrieben.  
   
      **Assert-Methode**  
   

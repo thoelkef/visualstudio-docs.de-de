@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93df780aee27b794a991a023f559f64a806de046
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c82d77a617461a8d01d06fd2a502d2fef8399906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408689"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
  Da Sie MEF-Komponente für das VSPackage hinzufügen, müssen Sie beide Arten von Ressourcen im Manifest angeben.  
   
 > [!NOTE]
->  Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Zum Verweisen auf den MEF-Komponente auf das VSPackage-Projekt  
   
@@ -724,4 +724,4 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
      Fourscore...  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

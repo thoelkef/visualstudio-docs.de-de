@@ -21,12 +21,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7b7a95af1922f5ad57d15fb53dcba561a9f139e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9608643801255d6c2cbf278cbfd96908f1f3911d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444074"
 ---
 # <a name="debugging-deployed-web-applications"></a>Debuggen bereitgestellter Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Wenn Sie eine Webanwendung debuggen müssen, die auf einem Produktionsserver aus
  Um eine bereitgestellte und ausgeführte Anwendung über [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu debuggen, müssen Sie den Debugger an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess anhängen und sicherstellen, dass der Debugger auf Symbole für die Anwendung zugreifen kann. Außerdem müssen Sie die Quelldateien für die Anwendung lokalisieren und öffnen. Weitere Informationen finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md), und [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md).  
   
 > [!NOTE]
->  Viele [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen verweisen auf DLLs, die Geschäftslogik oder sonstigen nützlichen Code enthalten. Durch einen solchen Verweis wird die DLL automatisch vom lokalen Computer in den Ordner \bin des virtuellen Verzeichnisses der Webanwendung kopiert. Beim Debuggen sollten Sie beachten, dass die Webanwendung nicht auf die Kopie der DLL auf dem lokalen Computer, sondern auf diese Kopie der DLL verweist.  
+> Viele [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen verweisen auf DLLs, die Geschäftslogik oder sonstigen nützlichen Code enthalten. Durch einen solchen Verweis wird die DLL automatisch vom lokalen Computer in den Ordner \bin des virtuellen Verzeichnisses der Webanwendung kopiert. Beim Debuggen sollten Sie beachten, dass die Webanwendung nicht auf die Kopie der DLL auf dem lokalen Computer, sondern auf diese Kopie der DLL verweist.  
   
  Das Anhängen an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess unterscheidet sich nicht vom Anhängen an einen beliebigen anderen Remoteprozess. Wenn das passende Projekt nicht geöffnet ist, wird nach dem Anhängen ein Dialogfeld angezeigt, sobald die Anwendung unterbrochen wird. Dieses Dialogfeld fordert Sie auf, den Speicherort der Quelldateien der Anwendung anzugeben. Der im Dialogfeld eingegebene Dateiname muss mit dem Dateinamen übereinstimmen, der in den Debugsymbolen (auf dem Webserver) angegeben ist. Weitere Informationen finden Sie unter [Anfügen an ausgeführte Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   

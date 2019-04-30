@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389707"
 ---
 # <a name="capturing-graphics-information"></a>Aufzeichnen von Grafikinformationen
 Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual Studio-Grafikanalyse zum Diagnostizieren von Rendering- und Leistungsproblemen verwenden können.
@@ -40,7 +40,7 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual St
 - Drücken Sie auf der Tastatur die Taste "Druck" aus.
 
   > [!NOTE]
-  >  Während eine App unter **Grafikdiagnose** ausgeführt wird, kann die Taste DRUCK nur verwendet werden, um Frames von Grafikinformationen aufzuzeichnen – die übliche Tastenfunktion wird nicht ausgeführt. Dieses Verhalten bleibt bestehen, bis Sie die Aufzeichnung von Grafikinformationen beenden (üblicherweise durch Beenden des Debuggings oder das normale Verlassen der App), auch wenn der Fokus auf einer anderen Anwendung liegt.
+  > Während eine App unter **Grafikdiagnose** ausgeführt wird, kann die Taste DRUCK nur verwendet werden, um Frames von Grafikinformationen aufzuzeichnen – die übliche Tastenfunktion wird nicht ausgeführt. Dieses Verhalten bleibt bestehen, bis Sie die Aufzeichnung von Grafikinformationen beenden (üblicherweise durch Beenden des Debuggings oder das normale Verlassen der App), auch wenn der Fokus auf einer anderen Anwendung liegt.
 
 - Wählen Sie in der Visual Studio-Aufnahmeschnittstellen die Schaltfläche **Frame erfassen** unterhalb der Zeitachse **Diagnosesitzung**, oder wählen Sie die große Schaltfläche **Frame erfassen** unterhalb des Verantwortlichkeitsbereichs **Frames pro Sekunde** und rechts von zuvor erfassten Frames aus. Beide Schaltflächen werden in der folgenden Abbildung hervorgehoben.
 

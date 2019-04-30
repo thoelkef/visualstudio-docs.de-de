@@ -12,12 +12,12 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82443e5b9380eef93abf26248871b5d98d68e68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403270"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58955789"
 Diese Schnittstelle stellt eine Stack-Frame-Eigenschaft, einer Dokumenteigenschaft Programm oder eine andere Eigenschaft. Die Eigenschaft ist in der Regel das Ergebnis der Auswertung eines Ausdrucks.  
   
 > [!NOTE]
->  Diese Verwendung von "Property" dürfen nicht verwechselt werden mit, d. h. einer Membervariablen einer Klasse, obwohl ein `IDebugProperty2` können solche Entität darstellen.  
+> Diese Verwendung von "Property" dürfen nicht verwechselt werden mit, d. h. einer Membervariablen einer Klasse, obwohl ein `IDebugProperty2` können solche Entität darstellen.  
   
 ## <a name="syntax"></a>Syntax  
   

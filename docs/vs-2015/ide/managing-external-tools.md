@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445425"
 ---
 # <a name="managing-external-tools"></a>Verwalten von externen Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 6. WCF Service Configuration Editor: Ermöglicht Ihnen das Erstellen und Ändern von Konfigurationseinstellungen für WCF-Dienste.  
   
 > [!WARNING]
->  Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Hinzufügen von neuen Tools  
  So können im Menü **Extras** ein externes Tool hinzufügen. Öffnen Sie das Dialogfeld **Externe Tools**, und klicken Sie auf **Hinzufügen**. Geben Sie dann die Informationen ein. Beispielsweise führt der folgende Eintrag dazu, dass Windows Explorer in dem Verzeichnis der Datei geöffnet wird, das Sie zurzeit in Visual Studio geöffnet haben:  
@@ -100,7 +100,7 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
  Bei den folgenden Argumente handelt es sich um Visual Studio-Variablen, beim Starten eines externen Tools zugewiesen werden. Links zu externen Tools, z.B. Editor oder Spy++, können im Menü **Extras** mithilfe des Dialogfelds „Externe Tools“ aufgeführt werden.  
   
 > [!NOTE]
->  In der IDE-Statusleiste werden die Variablen "Aktuelle Zeile" und "Aktuelle Spalte" angezeigt, um die Position der Einfügemarke im aktiven Code-Editor anzuzeigen. Die Variable "Aktueller Text" gibt den an dieser Stelle ausgewählten Text oder Code zurück.  
+> In der IDE-Statusleiste werden die Variablen "Aktuelle Zeile" und "Aktuelle Spalte" angezeigt, um die Position der Einfügemarke im aktiven Code-Editor anzuzeigen. Die Variable "Aktueller Text" gibt den an dieser Stelle ausgewählten Text oder Code zurück.  
   
 |Name|Argument|Beschreibung|  
 |----------|--------------|-----------------|  

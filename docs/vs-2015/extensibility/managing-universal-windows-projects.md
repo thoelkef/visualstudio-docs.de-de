@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412334"
 ---
 # <a name="managing-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     ```  
   
     > [!IMPORTANT]
-    >  Wenn der Benutzer in der experimentellen Instanz ein C++ universal Windows app-Projekt geöffnet, in der obige Code eine Ausnahme ausgelöst. Dies ist ein bekanntes Problem. Um die Ausnahme zu vermeiden, ersetzen die `foreach` oben durch den folgenden block:  
+    > Wenn der Benutzer in der experimentellen Instanz ein C++ universal Windows app-Projekt geöffnet, in der obige Code eine Ausnahme ausgelöst. Dies ist ein bekanntes Problem. Um die Ausnahme zu vermeiden, ersetzen die `foreach` oben durch den folgenden block:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
 9. Ändern Sie das freigegebene Element an. Sie können freigegebene Elemente in ein Plattform-Projekt nicht ändern; Stattdessen müssen Sie sie im freigegebenen Projekt ändern, die die tatsächlichen Kontoinhaber dieser Elemente ist. Sie erhalten die entsprechenden Element-ID im freigegebenen Projekt mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, legen sie den vollständigen Pfad des freigegebenen Elements. Dann können Sie das freigegebene Element ändern. Die Änderung wird an die Plattformprojekte weitergegeben.  
   
     > [!IMPORTANT]
-    >  Sie sollten herausfinden, ob ein Projektelement eines freigegebenen Elements ist, bevor Sie Sie ändern.  
+    > Sie sollten herausfinden, ob ein Projektelement eines freigegebenen Elements ist, bevor Sie Sie ändern.  
   
      Die folgende Methode wird der Name einer Projektdatei für das Element geändert.  
   

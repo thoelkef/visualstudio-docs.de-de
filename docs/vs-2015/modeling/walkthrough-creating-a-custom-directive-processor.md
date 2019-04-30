@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446751"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. Erstellen Sie in Visual Studio ein Visual C#- oder Visual Basic-Klassenbibliothekprojekt mit dem Namen "CustomDP".  
 
     > [!NOTE]
-    >  Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungsprojekt (VSIX) zu verwenden und eine PKGDEF-Datei in die Erweiterung einzuschließen. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
+    > Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, ein [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterungsprojekt (VSIX) zu verwenden und eine PKGDEF-Datei in die Erweiterung einzuschließen. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
 
@@ -619,7 +619,7 @@ End Property
  Bevor Sie eine Richtlinie aus einer Textvorlage in aufrufen können [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], müssen Sie einen Registrierungsschlüssel für den anweisungsprozessor hinzufügen.  
 
 > [!NOTE]
->  Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX) zu definieren, die eine PKGDEF-Datei und die Assembly enthält. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
+> Wenn Sie den Anweisungsprozessor auf mehreren Computern installieren möchten, empfiehlt es sich, eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung (VSIX) zu definieren, die eine PKGDEF-Datei und die Assembly enthält. Weitere Informationen finden Sie unter [bereitstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/deploying-a-custom-directive-processor.md).  
 
  Schlüssel für Direktivenprozessoren befinden sich unter folgendem Pfad in der Registrierung:  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schlüssel für den benutzerdefinierten Anweisungsprozessor hinzu.  
 
 > [!CAUTION]
->  Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Sichern Sie alle wichtigen Daten auf dem Computer, bevor Sie Änderungen an der Registrierung vornehmen.  
+> Durch eine fehlerhafte Bearbeitung der Registrierung kann das System ernsthaft beschädigt werden. Sichern Sie alle wichtigen Daten auf dem Computer, bevor Sie Änderungen an der Registrierung vornehmen.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>So fügen Sie einen Registrierungsschlüssel für den Anweisungsprozessor hinzu  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Fügen Sie einen neuen Schlüssel mit dem Namen "CustomDirectiveProcessor" hinzu.  
 
    > [!NOTE]
-   >  Diesen Namen verwenden Sie im Feld "Prozessor" der benutzerdefinierten Anweisungen. Dieser Name muss nicht mit dem Namen der Direktive, dem Namen der Direktivenprozessorklasse oder des Direktivenprozessornamespaces übereinstimmen.  
+   > Diesen Namen verwenden Sie im Feld "Prozessor" der benutzerdefinierten Anweisungen. Dieser Name muss nicht mit dem Namen der Direktive, dem Namen der Direktivenprozessorklasse oder des Direktivenprozessornamespaces übereinstimmen.  
 
 4. Fügen Sie einen neuen Zeichenfolgenwert mit dem Namen "Class" und dem Wert CustomDP.CustomDirectiveProcessor für den Namen der neuen Zeichenfolge hinzu.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Erstellen Sie eine Textdatei namens `DocFile.xml` mit einem Text-Editor (z. B. Editor).  
 
     > [!NOTE]
-    >  Diese Datei kann an einem beliebigen Speicherort erstellt werden (z. B. C:\Test\DocFile.xml).  
+    > Diese Datei kann an einem beliebigen Speicherort erstellt werden (z. B. C:\Test\DocFile.xml).  
 
 2. Fügen Sie folgenden Text in der Textdatei ein:  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Ändern Sie den Inhalt von "TestDP.tt" in den folgenden Text.  
 
     > [!NOTE]
-    >  Achten Sie darauf, ersetzen Sie die Zeichenfolge <`YOUR PATH>` durch den Pfad zu der Datei "DocFile.xml".  
+    > Achten Sie darauf, ersetzen Sie die Zeichenfolge <`YOUR PATH>` durch den Pfad zu der Datei "DocFile.xml".  
 
      Die Sprache der Textvorlage muss nicht mit der Sprache des Anweisungsprozessors identisch sein.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  In diesem Beispiel ist der Wert des `Processor`-Parameters `CustomDirectiveProcessor`. Der Wert des `Processor`-Parameters muss dem Namen des Registrierungsschlüssels des Prozessors entsprechen.  
+    > In diesem Beispiel ist der Wert des `Processor`-Parameters `CustomDirectiveProcessor`. Der Wert des `Processor`-Parameters muss dem Namen des Registrierungsschlüssels des Prozessors entsprechen.  
 
 5. Klicken Sie im Menü **Datei** auf **Alle speichern**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Ersetzen Sie den Code in "TestDP.tt" durch den folgenden Code. Der HTML-Code ist hervorgehoben. Stellen Sie sicher, dass die Zeichenfolge ersetzen `YOUR PATH` durch den Pfad zu der Datei "DocFile.xml".  
 
     > [!NOTE]
-    >  Zusätzliche \<#-Starttags und #>-Endtags trennen den Anweisungscode von den HTML-Tags.  
+    > Zusätzliche \<#-Starttags und #>-Endtags trennen den Anweisungscode von den HTML-Tags.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

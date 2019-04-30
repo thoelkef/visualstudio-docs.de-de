@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444185"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorgängerversion)
 In diesem Thema wird das Festlegen von Haltepunkten in [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)] verwenden, wenn Ihre [!INCLUDE[wf2](../includes/wf2-md.md)]-Anwendungen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen muss.  
@@ -39,7 +39,7 @@ In diesem Thema wird das Festlegen von Haltepunkten in [!INCLUDE[wf](../includes
      Mit dieser Option können Sie auch während eines Debugvorgangs einen neuen Haltepunkt festlegen, wenn der Debugger an einem Haltepunkt anhält.  
   
     > [!NOTE]
-    >  Das Festlegen von Haltepunkten für aufgerufene Workflows wird nicht unterstützt.  
+    > Das Festlegen von Haltepunkten für aufgerufene Workflows wird nicht unterstützt.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>So legen Sie einen Haltepunkt mit der Option "Neuer Haltepunkt" im Menü "Debuggen" fest  
   
@@ -52,7 +52,7 @@ In diesem Thema wird das Festlegen von Haltepunkten in [!INCLUDE[wf](../includes
 3. Geben Sie den Namen einer Aktivität in der **Funktion** Textfeld mit der folgenden Syntax: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Optional, anstatt den Aktivitätsnamen im der **Funktion** Textfeld können Sie einen Haltepunkt festlegen, indem Sie den absoluten Pfad der Workflowaktivität angeben. Nehmen wir beispielsweise an, Sie haben eine workflowlösung, die mit dem Namen **WorkflowConsoleApplication1** und einen Workflow in der Projektmappe, die mit dem Namen **Workflow1** , verwendet eine Aktivität namens **Delay1**. Sie können den Aktivitätsnamen **Delay1** , oder geben Sie den Pfad als **Delay1:WorkflowConsoleApplication1.Workflow1** oder **Delay1:WorkflowConsoleApplication1.Workflow1: {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Optional, anstatt den Aktivitätsnamen im der **Funktion** Textfeld können Sie einen Haltepunkt festlegen, indem Sie den absoluten Pfad der Workflowaktivität angeben. Nehmen wir beispielsweise an, Sie haben eine workflowlösung, die mit dem Namen **WorkflowConsoleApplication1** und einen Workflow in der Projektmappe, die mit dem Namen **Workflow1** , verwendet eine Aktivität namens **Delay1**. Sie können den Aktivitätsnamen **Delay1** , oder geben Sie den Pfad als **Delay1:WorkflowConsoleApplication1.Workflow1** oder **Delay1:WorkflowConsoleApplication1.Workflow1: {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Wählen Sie die **mit IntelliSense** Kontrollkästchen, um den Funktionsnamen zu überprüfen.  
   

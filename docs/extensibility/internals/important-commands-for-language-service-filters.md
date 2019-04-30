@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ade4bdfce2cd01864075e02648f233622cafc61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418427"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Wichtige Befehle für Sprachdienstfilter
 Wenn Sie einen voll funktionsfähiges Service Sprachfilter erstellen möchten, sollten Sie behandeln die folgenden Befehle aus. Die vollständige Liste der Befehls-IDs wird definiert, der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Enumeration für verwalteten Code und den Stdidcmd.h-Header-Datei für nicht verwaltete [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Code. Sie finden die Datei Stdidcmd.h in *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc.
@@ -24,7 +24,7 @@ Wenn Sie einen voll funktionsfähiges Service Sprachfilter erstellen möchten, s
 ## <a name="commands-to-handle"></a>Befehle zum Handle
 
 > [!NOTE]
->  Es ist nicht erforderlich, um für jeden Befehl in der folgenden Tabelle filtern.
+> Es ist nicht erforderlich, um für jeden Befehl in der folgenden Tabelle filtern.
 
 |Befehl|Beschreibung|
 |-------------|-----------------|

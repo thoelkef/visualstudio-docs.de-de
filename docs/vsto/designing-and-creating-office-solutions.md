@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441842"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Projektmappen
 
@@ -54,7 +54,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
   Wenn Visual Studio das Ziel-.NET Framework für das Projekt ändert, und Sie ClickOnce zum Bereitstellen Ihrer Lösung verwenden, stellen Sie sicher, dass Sie auch, die entsprechende Version von .NET Framework in Auswählen der **Voraussetzungen** Dialogfeld. Diese Auswahl wird nicht automatisch geändert, wenn Sie das Zielframework für das Projekt ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der erforderlichen Komponenten auf Endbenutzercomputern zum Ausführen von Office-Projektmappen](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.
+> Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Verstehen Sie, wenn Sie die Office-PIAs auf Endbenutzercomputern erforderlich sind
  In der Standardeinstellung primären Office-Interopassemblys (PIAs) müssen nicht auf Endbenutzercomputern installiert sein, wenn die **Embed Interop Types** jedes Office PIA-Verweises im Projekt-Eigenschaftensatz auf **"true"**, Das ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit wird die eingebetteten Typinformationen statt der PIAs zum Aufrufen von COM-basierten Objektmodell der Office-Anwendung. Weitere Informationen, wie die Typen aus PIAs in Ihre Projektmappe eingebettet sind, finden Sie unter [Typäquivalenz und eingebettete interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

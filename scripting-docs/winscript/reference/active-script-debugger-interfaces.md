@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422461"
 ---
 # <a name="active-script-debugger-interfaces"></a>Active Script-Debuggerschnittstellen
 Die Headerdateien "activdbg.h" und "activdbg100.h" stellen die in diesem Abschnitt aufgeführten Schnittstellen, Enumerationen und Strukturen bereit. Sie dienen dem Debuggen von Skripts.  
   
 > [!NOTE]
->  Die `IJSDebug*`-Schnittstellen und die `IEnumJsStackFrames`-Schnittstelle waren erstmalig in Internet Explorer 11 für das Debuggen von systemeigenem Code mit Skript enthalten. Die Headerdatei für diese Schnittstellen ist "jscript9diag.h".  
+> Die `IJSDebug*`-Schnittstellen und die `IEnumJsStackFrames`-Schnittstelle waren erstmalig in Internet Explorer 11 für das Debuggen von systemeigenem Code mit Skript enthalten. Die Headerdatei für diese Schnittstellen ist "jscript9diag.h".  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  Die folgenden Schnittstellen ermöglichen sprachneutrales, hostneutrales Debuggen:  

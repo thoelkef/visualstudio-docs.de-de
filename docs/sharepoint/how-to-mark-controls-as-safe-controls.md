@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443074"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Vorgehensweise: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen Web-Steuerelemente, die vor der Script-Injection zu schützen und Web-Steuerelemente, die nicht aus. Steuerelemente, geschützt oder *sichere Steuerelemente*, über nicht vertrauenswürdige Benutzer zugegriffen werden kann. Sie können Steuerelemente wie in der Einträge für sicheres Steuerelement-Eigenschaft des SharePoint-Projektelements oder im abgesicherten markieren die **-Paket-Designer** beim Hinzufügen einer Assemblys für das Paket. Weitere Informationen finden Sie unter
@@ -27,7 +27,7 @@ ms.locfileid: "60082034"
 - [Datei "Web.config" Ändern der Einstellungen](http://go.microsoft.com/fwlink/?LinkId=178965) und [Registrieren einer Web Part-Assembly als sicheres Steuerelement](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Diese Prozeduren sind zur Veranschaulichung. Markieren von Steuerelementen sicher sind, nur, wenn Sie sicher sind, dass sie geschützt sind.
+> Diese Prozeduren sind zur Veranschaulichung. Markieren von Steuerelementen sicher sind, nur, wenn Sie sicher sind, dass sie geschützt sind.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Sichere Steuerelemente in der Eigenschaft für sicheres Steuerelement Einträge markieren
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082034"
     |Sicher vor Skripteinschleusung|Lassen Sie die **sicher für Skript** Kontrollkästchen deaktivieren.|
 
     > [!NOTE]
-    >  Die **Assemblyname** Wert für Assemblys, die über eine hinzugefügt wurden die **erweitert** Registerkarte die **-Paket-Designer** kann kein Token zu sein, es muss eine Assembly mit starkem Namen. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Assemblys mit starkem Namen](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > Die **Assemblyname** Wert für Assemblys, die über eine hinzugefügt wurden die **erweitert** Registerkarte die **-Paket-Designer** kann kein Token zu sein, es muss eine Assembly mit starkem Namen. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Assemblys mit starkem Namen](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Wählen Sie die **Registerkarte** Taste, um einen anderen Eintrag für sicheres Steuerelement zu erstellen.
 

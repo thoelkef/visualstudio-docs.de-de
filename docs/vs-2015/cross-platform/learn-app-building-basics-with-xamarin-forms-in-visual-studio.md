@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444522"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Erlernen von Grundlagen der App-Erstellung mit Xamarin.Forms in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Nachdem Sie die Schritte in [Setup and install](../cross-platform/setup-and-inst
 - [Fertigstellen der Benutzeroberfläche mit einem homogenen Aussehen und Verhalten über Plattformen hinweg](#finish)
 
 > [!TIP]
->  Den vollständigen Quellcode dieses Projekts finden Sie im [Repository „xamarin-forms-samples“ auf GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Den vollständigen Quellcode dieses Projekts finden Sie im [Repository „xamarin-forms-samples“ auf GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Einrichten der Projektmappe
  Mit diesen Schritten erstellen Sie eine Xamarin.Forms-Projektmappe, die eine PCL für freigegebenen Code und zwei zusätzliche NuGet-Pakete enthält.
@@ -59,7 +59,7 @@ Nachdem Sie die Schritte in [Setup and install](../cross-platform/setup-and-inst
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: das Projekt, das den nativen Phone-Code enthält.
 
     > [!NOTE]
-    >  Natürlich können Sie die Projekte für Plattformen löschen, die Sie nicht als Zielplattform vorgesehen haben. Im Rahmen dieser exemplarischen Vorgehensweise beziehen wir uns auf die Android-, iOS- und Windows Phone 8.1-Projekte. Das Arbeiten mit den UWP- und Windows 8.1-Projekten ist dem Arbeiten mit dem Windows Phone 8.1-Projekt sehr ähnlich.
+    > Natürlich können Sie die Projekte für Plattformen löschen, die Sie nicht als Zielplattform vorgesehen haben. Im Rahmen dieser exemplarischen Vorgehensweise beziehen wir uns auf die Android-, iOS- und Windows Phone 8.1-Projekte. Das Arbeiten mit den UWP- und Windows 8.1-Projekten ist dem Arbeiten mit dem Windows Phone 8.1-Projekt sehr ähnlich.
 
      Innerhalb eines systemeigenen Projekts haben Sie Zugriff auf den systemeigenen Designer für die entsprechende Plattform und können nach Bedarf plattformspezifische Bildschirme und Funktionen implementieren.
 

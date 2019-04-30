@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420689"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Prüfliste: Erstellen Sie einen Dienst der legacysprache
 Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müssen zum Erstellen eines Sprachdiensts für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Kern-Editor. Integrieren Sie Ihren Sprachdienst in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie eine Debug-ausdrucksauswertung erstellen. Weitere Informationen finden Sie unter [schreiben Sie eine CLR-ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in die [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -61,7 +61,7 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
     Befehle, die verarbeitet werden müssen, hängen von der Dienste, die bereitgestellt werden. Weitere Informationen finden Sie unter [wichtige Befehle für Language service Filter](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
     > [!NOTE]
-    >  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.
+    > Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.
 
 - Anweisungsvervollständigung
 

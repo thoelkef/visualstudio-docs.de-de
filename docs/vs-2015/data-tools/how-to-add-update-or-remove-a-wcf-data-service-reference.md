@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387035"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 2. In der **Adresse** , geben Sie die URL für den Dienst, und klicken Sie dann auf **wechseln** für den Dienst zu suchen. Wenn der Dienst benutzersicherheit und das Kennwort implementiert, werden Sie möglicherweise für einen Benutzernamen und Kennwort aufgefordert.  
   
     > [!NOTE]
-    >  Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.  
+    > Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.  
   
      Sie können auch auswählen, die URL aus der **Adresse** Liste, die vorherigen 15 URLs gespeichert, an dem gültigen Dienstmetadaten gefunden.  
   
@@ -91,7 +91,7 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
      Der Dienstclient aus der Projektmappe entfernt werden, und aus der Datei "App.config" die Metadaten, die den Dienst beschreibt entfernt werden.  
   
     > [!NOTE]
-    >  Jeglicher Code, der den Dienstverweis Verweise müssen manuell entfernt werden.  
+    > Jeglicher Code, der den Dienstverweis Verweise müssen manuell entfernt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

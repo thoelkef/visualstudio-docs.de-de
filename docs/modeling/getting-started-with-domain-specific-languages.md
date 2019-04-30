@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442375"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
@@ -294,7 +294,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
          Legen Sie dessen Namen, z. B. **Town**.
 
         > [!NOTE]
-        >  Jede Domänenklasse mit Ausnahme des Stamms des Modells muss das Ziel mindestens einer einbettenden Beziehung sein, oder es muss eine Klasse, die das Ziel einer Einbettung erben. Aus diesem Grund ist es häufig praktisch eine Domänenklasse erstellen, mit dem Tool für die einbettende Beziehung.
+        > Jede Domänenklasse mit Ausnahme des Stamms des Modells muss das Ziel mindestens einer einbettenden Beziehung sein, oder es muss eine Klasse, die das Ziel einer Einbettung erben. Aus diesem Grund ist es häufig praktisch eine Domänenklasse erstellen, mit dem Tool für die einbettende Beziehung.
 
     2. Fügen Sie eine Domäneneigenschaft auf die neue Klasse, z. B. **Namen**.
 
@@ -305,7 +305,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
          ![DSL-Definitionsfragment: Stammbaumstamm](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Verweisbeziehungen darstellen Querverweise von einem Teil der Modellstruktur auf einen anderen.
+        > Verweisbeziehungen darstellen Querverweise von einem Teil der Modellstruktur auf einen anderen.
 
 3. Fügen Sie eine Form vom Typ zur Darstellung von Städten in den Diagrammen Modell hinzu.
 

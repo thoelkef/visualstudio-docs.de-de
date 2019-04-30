@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405830"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält
 Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird der Kunde musste früher das Bereitstellungsmanifest aktualisieren und erneut signieren. Weiterhin ist die bevorzugte Methode in den meisten Fällen .NET Framework 3.5 ermöglicht Ihnen die Erstellung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungen, die von Kunden bereitgestellt werden können, ohne dass ein neues Bereitstellungsmanifest erneut zu generieren. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Test- und produktionsumgebungen Server ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
  Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung und geben Sie ihm für einem Kunden zum Veröffentlichen und bereitstellen, wird die Anwendung des Kunden Brandinginformationen verwenden oder Ihr branding beibehalten kann. Z. B., wenn die Anwendung eine einzelne geschützte Anwendung ist, möchten Sie Ihr branding beibehalten. Wenn die Anwendung hoch für jeden Kunden angepasst wird, empfiehlt es sich mit branding des Kunden. .NET Framework 3.5 können Sie Ihr branding beibehalten, Herausgeberinformationen und Security-Signatur, wenn Sie eine bereitzustellende Anwendung für eine Organisation geben. Weitere Informationen finden Sie unter [erstellen, ClickOnce-Anwendungen für andere bereitstellen](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  In dieser exemplarischen Vorgehensweise erstellen Sie Bereitstellungen manuell entweder das Befehlszeilentool *Mage.exe* oder dem grafischen Tool *MageUI.exe*. Weitere Informationen zur manuellen Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> In dieser exemplarischen Vorgehensweise erstellen Sie Bereitstellungen manuell entweder das Befehlszeilentool *Mage.exe* oder dem grafischen Tool *MageUI.exe*. Weitere Informationen zur manuellen Bereitstellung finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Ausführen der Schritte in dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
@@ -51,7 +51,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
 2. Erstellen Sie ein Verzeichnis namens nach der aktuellen Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.
 
    > [!NOTE]
-   >  Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.
+   > Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.
 
 3. Erstellen Sie ein Unterverzeichnis mit dem Namen **Bin** und kopieren Sie alle Ihre Anwendungsdateien, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien.
 
@@ -101,7 +101,7 @@ Bei der Erstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndpteccli
 3. Erstellen Sie ein Unterverzeichnis für die aktuelle Version der Bereitstellung. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, wählen Sie wahrscheinlich **1.0.0.0**.
 
    > [!NOTE]
-   >  Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.
+   > Die Version der Bereitstellung kann sich von der Version der Anwendungsdateien unterscheiden.
 
 4. Verschieben der \\ **Bin** Verzeichnis in das Verzeichnis, das Sie in Schritt 2 erstellt haben.
 

@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442705"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
  Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentlichungseigenschaften entsprechend festlegen. Wenn Sie z.B. einen Schlüssel zum Signieren der ClickOnce-Anwendung angeben möchten, können Sie dies im **Projekt-Designer** auf der Seite **Signierung** vornehmen. Weitere Informationen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation ältere Versionen der Anwendung in einen Ordner mit dem Namen Archiv in dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.  
+> Wenn Sie mit ClickOnce mehrere Versionen einer Anwendung installieren, verschiebt die Installation ältere Versionen der Anwendung in einen Ordner mit dem Namen Archiv in dem von Ihnen angegebenen Veröffentlichungsort. Durch dieses Archivieren älterer Versionen wird sichergestellt, dass im Installationsverzeichnis keine Ordner älterer Versionen verbleiben.  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>So veröffentlichen Sie auf einer Dateifreigabe oder unter einem Pfad  
   
@@ -83,7 +83,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
 4. Klicken Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.  
   
    > [!NOTE]
-   >  Falls Sie die Installation ausgeführt werden soll, wenn die CD-ROM in das Laufwerk eingelegt wird, öffnen Sie im **Projekt-Designer** die Seite **Veröffentlichen** und klicken auf die Schaltfläche **Optionen**. Wählen Sie in den **Veröffentlichungsoptionen** des Assistenten dann die Option **Bei CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** aus.  
+   > Falls Sie die Installation ausgeführt werden soll, wenn die CD-ROM in das Laufwerk eingelegt wird, öffnen Sie im **Projekt-Designer** die Seite **Veröffentlichen** und klicken auf die Schaltfläche **Optionen**. Wählen Sie in den **Veröffentlichungsoptionen** des Assistenten dann die Option **Bei CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** aus.  
   
 5. Wenn Sie Ihre Anwendung auf einer CD-ROM veröffentlichen, können Sie dennoch Updates auf einer Website zur Verfügung stellen. Wählen Sie auf der Seite **Die Anwendung überprüft folgenden Speicherort auf Updates** eine Updateoption aus:  
   
@@ -98,7 +98,7 @@ Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen 
     Der Veröffentlichungsstatus wird im Statusinfobereich angezeigt.  
   
    > [!NOTE]
-   >  Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.  
+   > Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   

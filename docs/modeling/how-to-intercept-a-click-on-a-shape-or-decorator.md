@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445188"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator
 Die folgenden Prozeduren veranschaulichen Gewusst wie: Abfangen ein Klicks auf eine Form oder ein Symbol für Decorator-Element. Sie können abfangen, Klicks, Doppelklicks, zieht, und andere anwendungsstiftbewegungen, und stellen Sie das Element reagieren.
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Legen Sie `e.Handled` zu `true`, es sei denn, der das Ereignis, die dem Shape / Diagramm übergeben werden soll.
+> Legen Sie `e.Handled` zu `true`, es sei denn, der das Ereignis, die dem Shape / Diagramm übergeben werden soll.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Abfangen von Klicks auf Decorator-Elemente
  Image-Decorator-Elemente werden auf einer Instanz von ImageField-Klasse, übertragen die eine OnDoubleClick-Methode verfügt. Sie können die Klicks abfangen, wenn Sie eine Unterklasse ImageField schreiben. Die Felder werden in der Methode InitializeShapeFields eingerichtet. Aus diesem Grund müssen Sie diese Methode zum Instanziieren Ihrer Unterklasse anstelle der regulären ImageField ändern. Die InitializeShapeFields-Methode wird in den generierten Code der Shape-Klasse. Sie können die Shape-Klasse überschreiben, wenn Sie festlegen, die `Generates Double Derived` Eigenschaft wie im folgenden Verfahren beschrieben.

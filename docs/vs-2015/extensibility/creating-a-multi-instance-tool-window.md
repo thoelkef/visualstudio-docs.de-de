@@ -11,12 +11,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa0acb706d0b5cb6a37578ab6cb7b707850c5949
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dcdfe3f6e488514bb2ee1ca950e952b16039b42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433843"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Erstellen eines Toolfensters mit mehreren Instanzen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Sie können ein Toolfenster programmieren, sodass sie mehrere Instanzen gleichze
 1. Erstellen Sie ein Projekt mit dem Namen **MultiInstanceToolWindow** mithilfe der VSIX-Projektvorlage aus, und fügen Sie der Elementvorlage ein benutzerdefiniertes Tool-Fenster, der mit dem Namen **MIToolWindow**.  
   
     > [!NOTE]
-    >  Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="making-a-tool-window-multi-instance"></a>Machen ein Tool-Fenster mit mehreren Instanzen  
   

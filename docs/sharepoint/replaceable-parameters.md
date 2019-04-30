@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422913"
 ---
 # <a name="replaceable-parameters"></a>Ersetzbare Parameter
   Ersetzbare Parameter oder *Token*, kann in Projektdateien verwendet werden, um Werte für SharePoint-Projektmappenelemente bereitzustellen, deren tatsächliche Werte werden nicht zur Entwurfszeit bekannt. Sie sind ähnlich wie in der Funktion die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vorlagentoken. Weitere Informationen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
@@ -48,7 +48,7 @@ ms.locfileid: "56611866"
 ## <a name="tokens-list"></a>Tokenliste
  Die folgende Tabelle enthält die verfügbaren Token.
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |----------|-----------------|
 |$SharePoint.Project.FileName$|Die Namen der Projektdatei, z. B. *NewProj.csproj*.|
 |$SharePoint.Project.FileNameWithoutExtension$|Der Name der enthaltenden Projektdatei ohne die Dateinamenerweiterung. Zum Beispiel: "NewProj".|
@@ -86,7 +86,7 @@ ms.locfileid: "56611866"
   Sie können jedoch zusätzliche Erweiterungen zur Liste hinzufügen. Hinzufügen einer `<TokenReplacementFileExtensions>` Element alle PropertyGroup in der SharePoint-Projektdatei, bevor Sie definiert ist, die \<Import > von der SharePoint-Targets-Datei.
 
 > [!NOTE]
->  Da tokenersetzung tritt auf, nachdem ein Projekt kompiliert wurde, sollten Sie keine Dateierweiterungen für Dateitypen, die, wie z. B. kompiliert werden, hinzufügen *cs*, *vb* oder *resx*. Token werden nur in Dateien ersetzt, die nicht kompiliert werden.
+> Da tokenersetzung tritt auf, nachdem ein Projekt kompiliert wurde, sollten Sie keine Dateierweiterungen für Dateitypen, die, wie z. B. kompiliert werden, hinzufügen *cs*, *vb* oder *resx*. Token werden nur in Dateien ersetzt, die nicht kompiliert werden.
 
  Um beispielsweise die Dateinamenerweiterungen Weitere Erweiterungen hinzufügen (*.myextension* und *.yourextension*) der Liste der Dateinamenerweiterungen tokenersetzung, würden Sie Folgendes zu einem Projekt hinzufügen (*csproj* ) Datei:
 

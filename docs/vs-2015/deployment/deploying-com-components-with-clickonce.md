@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422770"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
 2. In der **neues Projekt** wählen Sie im Dialogfeld die **Visual Basic** Knoten, und wählen ein **ActiveX DLL** Projekt. Geben Sie im Feld **Name** `VB6Hello`ein.  
   
     > [!NOTE]
-    >  Nur ActiveX DLL und ActiveX-Steuerelement die Projekttypen werden mit COM ohne Registrierung unterstützt. ActiveX-EXE und ActiveX-Dokument-Projekttypen werden nicht unterstützt.  
+    > Nur ActiveX DLL und ActiveX-Steuerelement die Projekttypen werden mit COM ohne Registrierung unterstützt. ActiveX-EXE und ActiveX-Dokument-Projekttypen werden nicht unterstützt.  
   
 3. In **Projektmappen-Explorer**, doppelklicken Sie auf **"Class1.vb"** um den Text-Editor zu öffnen.  
   
@@ -80,7 +80,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
 5. Erstellen Sie die Komponente an. Von der **erstellen** Menü klicken Sie auf **Projektmappe**.  
   
 > [!NOTE]
->  COM ohne Registrierung unterstützt nur die DLLs und COM steuert Projekttypen zur Verfügung. Sie können keine EXE-Dateien mit COM ohne Registrierung verwenden.  
+> COM ohne Registrierung unterstützt nur die DLLs und COM steuert Projekttypen zur Verfügung. Sie können keine EXE-Dateien mit COM ohne Registrierung verwenden.  
   
  Jetzt können Sie eine Windows-basierte Anwendung erstellen und fügen einen Verweis auf die COM-Komponente hinzu.  
   
@@ -128,7 +128,7 @@ Bereitstellung von älteren COM-Komponenten wurde normalerweise eine schwierige 
    Jetzt auf, wenn Sie F5 drücken, wird die Anwendung funktioniert wie erwartet, aber es wird jetzt unter registrierungsfreies COM ausgeführt Um nachzuweisen, Aufheben der Registrierung der Komponente VB6Hello.dll, und führen RegFreeComDemo1.exe außerhalb von Visual Studio-IDE. Dieses Mal, wenn die Schaltfläche geklickt wird, funktioniert es weiterhin aus. Wenn Sie vorübergehend das Anwendungsmanifest umbenennen, tritt ein Fehler erneut.  
   
 > [!NOTE]
->  Sie können das Fehlen einer COM-Komponente simulieren, indem Sie vorübergehend deren Registrierung aufheben. Öffnen Sie eine Eingabeaufforderung, wechseln Sie zu Ihrem Ordner "System", durch Eingabe `cd /d %windir%\system32`, dann heben Sie die Komponente, indem Sie eingeben `regsvr32 /u VB6Hello.dll`. Sie können es erneut registrieren, indem Sie die Eingabe `regsvr32 VB6Hello.dll`.  
+> Sie können das Fehlen einer COM-Komponente simulieren, indem Sie vorübergehend deren Registrierung aufheben. Öffnen Sie eine Eingabeaufforderung, wechseln Sie zu Ihrem Ordner "System", durch Eingabe `cd /d %windir%\system32`, dann heben Sie die Komponente, indem Sie eingeben `regsvr32 /u VB6Hello.dll`. Sie können es erneut registrieren, indem Sie die Eingabe `regsvr32 VB6Hello.dll`.  
   
  Der letzte Schritt ist zum Veröffentlichen der Anwendung mit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   

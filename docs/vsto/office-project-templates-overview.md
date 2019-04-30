@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438772"
 ---
 # <a name="office-project-templates-overview"></a>Übersicht über Office-Projektvorlagen
   Die Entwicklertools für Microsoft Office in Visual Studio enthalten Projektvorlagen für das Erstellen folgender Typen von Office-Lösungen:
@@ -77,7 +77,7 @@ ms.locfileid: "60054572"
   Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen verhalten sich ebenso wie die Projektvorlagen für Word-Dokumente und Excel-Arbeitsmappen. Die Word-Vorlagen- und Excel-Vorlagen-Projektvorlagen erleichtern Benutzern jedoch die Erstellung neuer lokaler Dokumente oder Arbeitsmappenkopien der benutzerdefinierten Vorlage in der Projektmappe. Die Funktionen in der Projektmappe sind in dem neuen Dokument verfügbar, das der Benutzer aus der Vorlage erstellt.
 
 > [!NOTE]
->  Word-Vorlagen, die auf Erweiterungen durch verwalteten Code verweisen, können nicht als globale VSTO-Add-Ins verwendet werden. Die Assembly wird nicht aufgerufen, wenn die Vorlage aus dem Word-Verzeichnis „Startup“ geladen wird. Weitere Informationen finden Sie unter [Einschränkungen bei globalen Vorlagen und Excel-Add-ins (XLA-Dateien)](#Limitations)
+> Word-Vorlagen, die auf Erweiterungen durch verwalteten Code verweisen, können nicht als globale VSTO-Add-Ins verwendet werden. Die Assembly wird nicht aufgerufen, wenn die Vorlage aus dem Word-Verzeichnis „Startup“ geladen wird. Weitere Informationen finden Sie unter [Einschränkungen bei globalen Vorlagen und Excel-Add-ins (XLA-Dateien)](#Limitations)
 
  Weitere Informationen für die ersten Schritte mit diesen Projekttypen finden Sie in den folgenden Themen:
 

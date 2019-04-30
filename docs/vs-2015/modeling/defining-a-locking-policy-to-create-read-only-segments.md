@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422656"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
  Sie können darüber hinaus als Autor einer DSL und definieren eine *Sperrrichtlinie.* Eine Sperrrichtlinie definiert, welche Sperren zulässigen, nicht zulässig oder erforderlich sind. Wenn Sie eine DSL veröffentlichen, können Sie z. B. Drittanbieter-Entwickler so erweitern, mit neuen Befehlen empfehlen. Aber Sie können auch eine Sperrrichtlinie verwenden, um zu verhindern, dass Sie den schreibgeschützten Status des angegebenen Teile des Modells ändern.  
   
 > [!NOTE]
->  Eine Sperrrichtlinie kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für externe Entwickler, sondern bietet keine hohe Sicherheit.  
+> Eine Sperrrichtlinie kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für externe Entwickler, sondern bietet keine hohe Sicherheit.  
   
  Weitere Informationen und Beispiele finden Sie unter den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Website.  
   

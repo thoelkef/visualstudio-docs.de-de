@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386887"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ In diesem Artikel wird beschrieben, wie Sie [!INCLUDE[vsprvs](../includes/vsprvs
 3. Wählen Sie unter **Konfigurationseigenschaften** die Option **Allgemein** aus. Legen Sie dann im Eigenschaftenraster unter **Allgemein** die Eigenschaft **Elementtyp** auf den entsprechenden Inhaltspipeline-Elementtyp fest. Wählen Sie z.B. für eine Bild- oder Texturdatei **Pipeline für Bildinhalte** aus.  
   
    > [!IMPORTANT]
-   >  Standardmäßig geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Inhaltspipeline-Quelldateien für 3D-Modelle und visuelle Shadergrafiken wird standardmäßig der richtige **Elementtyp** vorgeschlagen.  
+   > Standardmäßig geht [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Inhaltspipeline-Quelldateien für 3D-Modelle und visuelle Shadergrafiken wird standardmäßig der richtige **Elementtyp** vorgeschlagen.  
   
 4. Klicken Sie auf die Schaltfläche **OK** .  
   
@@ -203,7 +203,7 @@ cbuffer MiscVars : register(b3)
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|  
-|[Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|  
+|[Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|  
 |[Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder JavaScript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|  
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Ressourcen bereitstellt, inklusive Texturen und Bilder, 3D Modelle sowie Shader werden beschrieben.|  
 |[Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Das Exportieren eines Shaders vom Shader-Designer wird beschrieben.|

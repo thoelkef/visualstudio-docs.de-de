@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444361"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importieren von Elementen aus einer vorhandenen SharePoint-Website
   Mit der Projektvorlage „SharePoint-Lösungspaket importieren“ können Sie Elemente wie Inhaltstypen und Felder aus vorhandenen SharePoint-Websites in einer neuen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projektmappe wiederverwenden. Obwohl Sie die meisten importierten Projektmappen ohne Änderung ausführen können, müssen bestimmte Einschränkungen und Probleme berücksichtigt werden, insbesondere, wenn Sie Elemente nach deren Import ändern.
 
 > [!NOTE]
->  Wenn Sie wiederverwendbare Workflows importieren möchten, verwenden Sie die Projektvorlage „Wiederverwendbaren Workflow importieren“. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Richtlinien für das Importieren von wiederverwendbaren Workflows](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Wenn Sie wiederverwendbare Workflows importieren möchten, verwenden Sie die Projektvorlage „Wiederverwendbaren Workflow importieren“. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Richtlinien für das Importieren von wiederverwendbaren Workflows](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Unterstützte SharePoint-Lösungen
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] unterstützt uneingeschränkt das Importieren von Projektmappen, die in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] oder [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]erstellt wurden.

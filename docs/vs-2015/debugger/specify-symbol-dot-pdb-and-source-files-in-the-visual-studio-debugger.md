@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447300"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Angeben von Symbol(PDB)- und Quelldateien im Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
 4. Um die Ladeleistung von Symbolen zu verbessern, geben Sie im Feld **Symbole in diesem Verzeichnis zwischenspeichern** den Pfad eines lokalen Verzeichnisses ein, in das Symbole von Symbolservern kopiert werden können.
 
    > [!NOTE]
-   >  Platzieren Sie den Symbolcache nicht in einem geschützten Ordner (z. B. im C:\Windows-Ordner oder einem Unterordner). Verwenden Sie stattdessen einen Ordner mit Lese-/Schreibzugriff.
+   > Platzieren Sie den Symbolcache nicht in einem geschützten Ordner (z. B. im C:\Windows-Ordner oder einem Unterordner). Verwenden Sie stattdessen einen Ordner mit Lese-/Schreibzugriff.
 
    **Angeben des symbolladeverhaltens**
 
@@ -116,7 +116,7 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
  Drittanbieter von Windows-Anwendungen und Bibliotheken können Zugriff auf Symbolserver im Internet gewähren. Sie können die URL dieser Symbolserver auch auf der Seite **Optionen**/**Symbole** eingeben.
 
 > [!NOTE]
->  Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, vergewissern Sie sich, dass der Symbolserver und der zugehörige Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie möglicherweise Sicherheitsbedrohungen ausgesetzt sein.
+> Wenn Sie einen anderen Symbolserver als die öffentlichen Microsoft-Symbolserver verwenden, vergewissern Sie sich, dass der Symbolserver und der zugehörige Pfad vertrauenswürdig sind. Da Symboldateien beliebigen ausführbaren Code enthalten können, können Sie möglicherweise Sicherheitsbedrohungen ausgesetzt sein.
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Suchen und Laden von Symbolen beim Debuggen
  Wenn sich der Debugger im Unterbrechungsmodus befindet, können Sie Symbole für ein Modul laden, das vorher durch Debuggeroptionen ausgeschlossen wurde oder das der Compiler nicht finden konnte. Sie können Symbole von den Kontextmenüs in den Fenstern "Aufrufliste", "Module", "Lokal" und "Auto" sowie in allen Überwachungsfenstern laden. Wenn der Debugger einen Code unterbricht, der keine verfügbaren Symbol- oder Quelldateien hat, wird ein Dokumentfenster geöffnet. Hier können Sie Informationen zu fehlenden Dateien suchen und Aktionen ausführen, um sie zu finden und zu laden.
@@ -224,7 +224,7 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
  Wenn es auf dem lokalen Computer keinen Quellcode gibt oder die PDB-Datei nicht mit dem Quellcode übereinstimmt, können Sie eine Anwendung mithilfe des Quellservers debuggen. Der Quellserver nimmt Dateianforderungen entgegen und gibt die entsprechenden Dateien zurück. Quellserver wird mittels einer DLL-Datei mit der Bezeichnung srcsrv.dll ausgeführt. Der Quellserver liest die PDB-Datei der Anwendung. Diese Datei enthält Verweise auf das Quellcoderepository sowie Befehle zum Abrufen von Quellcode aus dem Repository. Sie können einschränken, welche Befehle aus der PDB-Datei der Anwendung ausgeführt werden dürfen, indem Sie die zulässigen Befehle in der Datei "srcsrv.ini" auflisten. Diese Datei muss sich im selben Verzeichnis befinden wie die Dateien "srcsrv.dll" und "devenv.exe".
 
 > [!IMPORTANT]
->  In der PDB-Datei der Anwendung können beliebige Befehle eingebettet sein. Deshalb sollten Sie sicherstellen, dass Sie der Datei "srcsrv.ini" nur die Befehle hinzufügen, die ausführt werden dürfen. Beim Versuch, einen nicht in der Datei srcsvr.ini enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Beispielsweise kann bei Vertrauenswürdigkeit für den Befehl cmd.exe ein böswilliger Benutzer Parameter angeben, die den Befehl gefährlich machen.
+> In der PDB-Datei der Anwendung können beliebige Befehle eingebettet sein. Deshalb sollten Sie sicherstellen, dass Sie der Datei "srcsrv.ini" nur die Befehle hinzufügen, die ausführt werden dürfen. Beim Versuch, einen nicht in der Datei srcsvr.ini enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Es wird keine Validierung für Befehlsparameter durchgeführt, seien Sie deshalb bei vertrauenswürdigen Befehlen vorsichtig. Beispielsweise kann bei Vertrauenswürdigkeit für den Befehl cmd.exe ein böswilliger Benutzer Parameter angeben, die den Befehl gefährlich machen.
 
  **So aktivieren Sie die Verwendung eines Quellservers**
 

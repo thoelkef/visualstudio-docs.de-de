@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446228"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ausführen von Komponententests für Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104175"
 In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Explorers in Microsoft Visual Studio ausführen.
 
 > [!NOTE]
->  In den Themen in diesem Abschnitt wird die Funktionalität von Visual Studio Express für Windows 8 beschrieben. Visual Studio Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.
+> In den Themen in diesem Abschnitt wird die Funktionalität von Visual Studio Express für Windows 8 beschrieben. Visual Studio Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.
 >
 > - Sie können ein beliebiges Drittanbieter- oder Open Source-Framework für Komponententests verwenden, mit dem ein Add-On-Adapter für den Microsoft-Test-Explorer erstellt wurde. Sie können außerdem Codeabdeckungsinformationen für Ihre Tests analysieren und anzeigen.
 >   - Führen Sie Ihre Tests nach jedem Build aus. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.
@@ -118,7 +118,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
 
    > [!NOTE]
-   >  Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
+   > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
 
 2. Wählen Sie im Test-Explorer die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
 

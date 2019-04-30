@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415155"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützen mehrere Konfigurationen, die debuggten, ausführen und/oder bereitgestellten erstellt werden können. Eine Konfiguration ist ein Build mit einer benannten Menge von Eigenschaften, in der Regel Compilerschalter und Dateispeicherorte beschrieben. Neue Lösungen enthalten standardmäßig zwei Konfigurationen *Debuggen* und *Version*. Diese Konfigurationen können angewendet werden, verwenden die Standardeinstellungen, oder geändert, um spezifische Lösung und/oder Anforderungen zu erfüllen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als eine Komponente des direktes. Projekte müssen nicht mehrere Konfigurationen, jedoch zu unterstützen. Wenn nur eine Konfiguration vorhanden ist, wird die Konfiguration aller Projektmappenkonfigurationen zugeordnet.
@@ -36,7 +36,7 @@ Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterst
 |*MyConfig*|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|
 
 > [!NOTE]
->  Sie können nicht erstellt werden ein *MyConfig* Projektmappenkonfiguration, die von einer Win32-Plattform werden ausgeschlossen, es sei denn, Sie für das Projekt entwickeln Win32 nicht unterstützt.
+> Sie können nicht erstellt werden ein *MyConfig* Projektmappenkonfiguration, die von einer Win32-Plattform werden ausgeschlossen, es sei denn, Sie für das Projekt entwickeln Win32 nicht unterstützt.
 
  Wählt aus den Satz von Projektkonfigurationen, die erstellt, ausführen, Debuggen oder bereitgestellt wird, ändern die aktive Konfiguration für eine Lösung in dieser Lösung. Angenommen, Sie ändern, dass die aktive Projektmappenkonfiguration aus *Version* zu *Debuggen*, in der Projektmappe alle Projekte werden automatisch erstellt, mit der Projekte Konfiguration angegeben, der Debug-Konfiguration der Lösung. Die Projekte-Konfigurationen werden auch als *Debuggen* , wenn der Benutzer die manuelle Änderungen im Konfigurations-Manager der Umgebung vorgenommen hat.
 

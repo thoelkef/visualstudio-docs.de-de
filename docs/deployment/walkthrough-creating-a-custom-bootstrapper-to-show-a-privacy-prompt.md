@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1973d5d71308cc5fda6e48acfc60d256775ff2cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406861"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
 Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, wenn Assemblys mit neueren Versionen und die Assemblyversionen verfügbar sind. Um sicherzustellen, dass Ihre Kunden, die dieses Verhalten zu gestatten, können Sie eine datenschutzeingabeaufforderung anzuzeigen. Sie können dann auswählen, ob gewähren der Berechtigung für die Anwendung zum automatischen Aktualisieren verwendet wird. Wenn die Anwendung nicht zulässig ist, automatisch zu aktualisieren, wird es nicht installiert.
@@ -125,7 +125,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
     6. In der **Startobjekt** wählen Sie im Dropdownmenü **Module1**.
 
        > [!NOTE]
-       >  Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+       > Deaktivieren das Anwendungsframework deaktiviert Features wie z. B. die visuellen Windows XP-Stile, Anwendungsereignisse, Splash-Bildschirm, einzelinstanzanwendung und vieles mehr. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
        Visual C# -Code nur für Entwickler:
 
@@ -151,12 +151,12 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
 1. Erstellen Sie ein Verzeichnis mit dem Namen **UpdateConsentDialog** in die *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
 
     > [!NOTE]
-    >  Möglicherweise Administratorrechte verfügen, um diesen Ordner zu erstellen.
+    > Möglicherweise Administratorrechte verfügen, um diesen Ordner zu erstellen.
 
 2. In der *UpdateConsentDialog* Verzeichnis erstellen Sie ein Unterverzeichnis mit dem Namen *En*.
 
     > [!NOTE]
-    >  Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema. Beispielsweise können Sie die Unterverzeichnisse für den fr und de Gebietsschemas hinzufügen. Diese Verzeichnisse würde die Zeichenfolgen für Französisch und Deutsch und Language Packs bei Bedarf enthalten.
+    > Erstellen Sie ein neues Verzeichnis für jedes Gebietsschema. Beispielsweise können Sie die Unterverzeichnisse für den fr und de Gebietsschemas hinzufügen. Diese Verzeichnisse würde die Zeichenfolgen für Französisch und Deutsch und Language Packs bei Bedarf enthalten.
 
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Schritt 2: Die product.xml-manifest-Datei erstellen
 
@@ -221,7 +221,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
 4. Erstellen Sie ein Dokument namens *eula.rtf* für die Software-Lizenzbedingungen.
 
     > [!NOTE]
-    >  Die Software-Lizenzbedingungen sollte Informationen zu Lizenzierung, zu GEWÄHRLEISTUNGEN, Schulden und vor Ort geltenden Gesetze enthalten. Diese Dateien sollten gebietsschemaspezifische, also stellen Sie sicher, dass die Datei in einem Format gespeichert wird, die MBCS oder UNICODE-Zeichen unterstützt. Wenden Sie sich an Ihre rechtsabteilung über den Inhalt der Software-Lizenzbedingungen.
+    > Die Software-Lizenzbedingungen sollte Informationen zu Lizenzierung, zu GEWÄHRLEISTUNGEN, Schulden und vor Ort geltenden Gesetze enthalten. Diese Dateien sollten gebietsschemaspezifische, also stellen Sie sicher, dass die Datei in einem Format gespeichert wird, die MBCS oder UNICODE-Zeichen unterstützt. Wenden Sie sich an Ihre rechtsabteilung über den Inhalt der Software-Lizenzbedingungen.
 
 5. Speichern Sie das Dokument in das Unterverzeichnis "En" die *UpdateConsentDialog* Bootstrapperverzeichnis.
 
@@ -241,7 +241,7 @@ Sie können konfigurieren, dass ClickOnce-Anwendungen automatisch aktualisiert, 
 4. Wählen Sie **aktualisieren Zustimmungsdialogfeld**.
 
     > [!NOTE]
-    >  Sie müssen möglicherweise schließen und öffnen Visual Studio, um die Update-Zustimmungsdialogfeld im Dialogfeld "erforderliche Komponenten" finden Sie unter.
+    > Sie müssen möglicherweise schließen und öffnen Visual Studio, um die Update-Zustimmungsdialogfeld im Dialogfeld "erforderliche Komponenten" finden Sie unter.
 
 5. Klicken Sie auf **OK**.
 

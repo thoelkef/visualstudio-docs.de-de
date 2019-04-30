@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9531e3e36c6689e4a162649fcb9364067e5f6a13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc268136e898b7ef348b2910e080323347eb5716
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438627"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Aufrufen von Code in einem VSTO-Add-in aus VBA
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Objekt in einem VSTO-Add-In für andere Microsoft Office-Projektmappen verfügbar gemacht wird, einschließlich Visual Basic for Applications (VBA) und COM-VSTO-Add-Ins.
@@ -113,7 +113,7 @@ ms.locfileid: "60106617"
 3. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
     > [!NOTE]
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. Klicken Sie in der Gruppe **Code** auf **Visual Basic**.
 

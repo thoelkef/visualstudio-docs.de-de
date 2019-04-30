@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1306629a33b668104c3159c1ed2d5840cc4a3801
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447107"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen
   Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Erstellen von Microsoft Office-Projektmappen benötigen.
@@ -35,7 +35,7 @@ ms.locfileid: "56623644"
  Informationen zum Sichern von Anwendungen finden Sie unter [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).
 
 > [!NOTE]
->  Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
+> Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 

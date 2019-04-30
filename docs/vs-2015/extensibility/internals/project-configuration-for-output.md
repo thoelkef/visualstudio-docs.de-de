@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443883"
 ---
 # <a name="project-configuration-for-output"></a>Projektkonfiguration für die Ausgabe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Jeder Konfiguration kann es sich um einen Satz von Erstellungsvorgängen unterst
  Das Konstrukt entwickelt, durch die Implementierung `IVsOutputGroup` können Projekte auf Gruppe Ausgaben entsprechend der Verwendung. Beispielsweise kann eine DLL-Datei mit der Programmdatenbank (PDB) gruppiert werden.  
   
 > [!NOTE]
->  Eine PDB-Datei enthält Debuginformationen aus, und es erstellt, wenn die Option "Debuginfo generieren" angegeben wird, wenn Sie die .dll oder .exe erstellen. Die PDB-Datei wird in der Regel für Debug-Projektkonfiguration generiert.  
+> Eine PDB-Datei enthält Debuginformationen aus, und es erstellt, wenn die Option "Debuginfo generieren" angegeben wird, wenn Sie die .dll oder .exe erstellen. Die PDB-Datei wird in der Regel für Debug-Projektkonfiguration generiert.  
   
  Das Projekt muss die gleiche Anzahl von Gruppen für jede Konfiguration, die dies unterstützen, zurückgeben, auch wenn die Anzahl von Ausgaben in einer Gruppe enthaltene Konfiguration auf Konfiguration variieren. Z. B. des Projekts Matt DLL möglicherweise mattd.dll und mattd.pdb in Debug-Konfiguration enthalten, jedoch nur matt.dll in Retail-Konfiguration.  
   

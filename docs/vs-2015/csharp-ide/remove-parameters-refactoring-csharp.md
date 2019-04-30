@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444620"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Umgestaltung "Parameter entfernen" (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045797"
  Führen Sie den Parameter entfernen-Vorgang durch erste Positionieren des Cursors auf eine Methode, Indexer oder Delegat. Während der Cursor an der Position, zum Aufrufen des Remove `Parameters` -Vorgang, klicken Sie auf die **Umgestalten** Menü, drücken Sie die Tastenkombination, oder wählen Sie im Kontextmenü den Befehl.  
   
 > [!NOTE]
->  Sie können nicht den ersten Parameter einer Erweiterungsmethode entfernen.  
+> Sie können nicht den ersten Parameter einer Erweiterungsmethode entfernen.  
   
 ### <a name="to-remove-parameters"></a>Um Parameter zu entfernen.  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045797"
  Sie können die Parameter aus der Deklaration einer Methode oder ein Methodenaufruf entfernen. Positionieren Sie des Cursors in der Deklaration oder Delegaten Name der Methode aus, und rufen Sie die Parameter zu entfernen.  
   
 > [!CAUTION]
->  Entfernen Sie die Parameter ermöglicht, die Sie entfernen einen Parameter, der auf die verwiesen wird im Text der das Element, sondern die Verweise auf diesen Parameter nicht im Methodentext entfernt werden. Dies kann in Ihren Code zu Buildfehlern führen. Sie können jedoch die **Vorschau der Änderungen** Dialogfeld Überprüfung des Codes vor dem Ausführen des Umgestaltungsvorgangs.  
+> Entfernen Sie die Parameter ermöglicht, die Sie entfernen einen Parameter, der auf die verwiesen wird im Text der das Element, sondern die Verweise auf diesen Parameter nicht im Methodentext entfernt werden. Dies kann in Ihren Code zu Buildfehlern führen. Sie können jedoch die **Vorschau der Änderungen** Dialogfeld Überprüfung des Codes vor dem Ausführen des Umgestaltungsvorgangs.  
   
  Wenn ein Parameter, die entfernt werden, während des Aufrufs einer Methode geändert wird, wird das Entfernen des Parameters auch die Änderung entfernt. Z. B. wenn ein Methodenaufruf werden von geändert  
   

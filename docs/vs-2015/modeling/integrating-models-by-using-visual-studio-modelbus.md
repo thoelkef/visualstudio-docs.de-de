@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441008"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrieren von Modellen mit Visual Studio-ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041288"
  Mit ModelBus können Sie einen eindeutigen Verweis auf ein Modell oder ein bestimmtes Element in einem Modell erstellen. Dieser Verweis kann außerhalb des Modells gespeichert werden, beispielweise in einem Element eines anderen Modells. Wenn zu einem späteren Zeitpunkt ein Tool Zugriff auf das Element benötigt, wird das entsprechende Modell in der Modellbusinfrastruktur geladen und das Element zurückgegeben. Bei Bedarf können Sie das Modell dem Benutzer zeigen. Wenn am vorherigen Speicherort kein Zugriff auf die Datei möglich ist, wird der Benutzer von ModelBus aufgefordert, nach der Datei zu suchen. Findet der Benutzer die Datei, korrigiert ModelBus alle Verweise auf die Datei.
 
 > [!NOTE]
->  In der aktuellen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Implementierung von ModelBus müssen die verknüpften Modelle Elemente in der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe sein.
+> In der aktuellen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Implementierung von ModelBus müssen die verknüpften Modelle Elemente in der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe sein.
 
  Weitere Informationen und Beispielcode finden Sie unter:
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041288"
 5. Klicken Sie auf **OK**, und klicken Sie dann auf **alle Vorlagen transformieren** in der Symbolleiste des Projektmappen-Explorer.
 
     > [!WARNING]
-    >  Wenn Sie kein gültiges Modell bzw. keine gültige Entität ausgewählt haben, hat die Schaltfläche "OK" keine Wirkung, auch wenn sie so aussieht, als wäre sie aktiviert.
+    > Wenn Sie kein gültiges Modell bzw. keine gültige Entität ausgewählt haben, hat die Schaltfläche "OK" keine Wirkung, auch wenn sie so aussieht, als wäre sie aktiviert.
 
 6. Wenn Sie eine Liste von Zieltypen wie "Company.FamilyTree.Person" angegeben haben, müssen Sie einen Assemblyverweis auf das DSL-Projekt hinzufügen, indem Sie auf die DLL der Ziel-DSL verweisen, beispielsweise "Company.FamilyTree.Dsl.dll".
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041288"
 3. Fügen Sie im Debuggingprojekt in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Dateien hinzu, die Instanzen der beiden DSLs sind.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus kann nur Verweise auf Modelle auflösen, die Elemente in der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe sind. Sie können beispielsweise keinen Verweis auf eine Modelldatei in einem anderen Teil Ihres Dateisystems erstellen.
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus kann nur Verweise auf Modelle auflösen, die Elemente in der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe sind. Sie können beispielsweise keinen Verweis auf eine Modelldatei in einem anderen Teil Ihres Dateisystems erstellen.
 
 4. Erstellen Sie einige Elemente und Links in der Instanz der verfügbar gemachten DSL, und speichern Sie sie.
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041288"
  Zum Erstellen eines Elementverweises benötigen Sie einen Adapter für die Modelldatei und ein Element, auf das Sie verweisen möchten.
 
 > [!NOTE]
->  Mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus können Sie nur Verweise auf Elemente in der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe erstellen.
+> Mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus können Sie nur Verweise auf Elemente in der gleichen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe erstellen.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importieren der verfügbar gemachten DSL-Assemblys
  Fügen Sie im Consumerprojekt Projektverweise auf die DSL und die ModelBusAdapter-Assemblys der verfügbar gemachten DSL hinzu.
@@ -197,7 +197,7 @@ using System.Linq;
  Vom AdapterManager können Sie einen Adapter abrufen, der Zugriff auf einzelne Elemente im Modell bietet.
 
 > [!NOTE]
->  Sie müssen einen Adapter löschen, wenn Sie damit fertig sind. Sie erreichen dies am einfachsten mit einer `using`-Anweisung. Dies wird anhand des folgenden Beispiels veranschaulicht.
+> Sie müssen einen Adapter löschen, wenn Sie damit fertig sind. Sie erreichen dies am einfachsten mit einer `using`-Anweisung. Dies wird anhand des folgenden Beispiels veranschaulicht.
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

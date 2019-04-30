@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437609"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 |Modul (nur VB)|Methode, Eigenschaft, Feld, Ereignis, Konstruktor, Konstante|  
   
 > [!NOTE]
->  Erhöhen Sie die Präzision von Eigenschaftsdeklarationen durch automatisch implementierte Eigenschaften (nur C#), wenn in den Get- und Set-Zugriffsmethoden der Eigenschaft keine zusätzliche Logik erforderlich ist. Um die vollständige Signatur anzuzeigen, wählen Sie im Menü **Klassendiagramm** die Option **Memberformat ändern** aus, und klicken anschließend auf **Vollständige Signatur anzeigen**. Weitere Informationen über automatisch implementierte Eigenschaften finden Sie unter [Automatisch implementierte Eigenschaften](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Erhöhen Sie die Präzision von Eigenschaftsdeklarationen durch automatisch implementierte Eigenschaften (nur C#), wenn in den Get- und Set-Zugriffsmethoden der Eigenschaft keine zusätzliche Logik erforderlich ist. Um die vollständige Signatur anzuzeigen, wählen Sie im Menü **Klassendiagramm** die Option **Memberformat ändern** aus, und klicken anschließend auf **Vollständige Signatur anzeigen**. Weitere Informationen über automatisch implementierte Eigenschaften finden Sie unter [Automatisch implementierte Eigenschaften](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
@@ -85,10 +85,10 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 - Klassendetailsfenster  
   
 > [!NOTE]
->  Mit den in diesem Abschnitt beschriebenen Verfahren können Sie außerdem Konstruktoren und Destruktoren erstellen. Beachten Sie, dass es sich bei Konstruktoren und Destruktoren um spezielle Methodenformen handelt, die in Formen im Klassendiagramm im Depot **Methoden** und im Raster des Klassendetailsfenster im Abschnitt **Methoden** angezeigt werden.  
+> Mit den in diesem Abschnitt beschriebenen Verfahren können Sie außerdem Konstruktoren und Destruktoren erstellen. Beachten Sie, dass es sich bei Konstruktoren und Destruktoren um spezielle Methodenformen handelt, die in Formen im Klassendiagramm im Depot **Methoden** und im Raster des Klassendetailsfenster im Abschnitt **Methoden** angezeigt werden.  
   
 > [!NOTE]
->  Der Parameter ist die einzige Entität, die Sie einem Delegaten hinzufügen können. Das Verfahren 'So erstellen Sie einen Member mithilfe der Symbolleiste des Klassendetailsfensters' kann für diese Aktion nicht angewendet werden.  
+> Der Parameter ist die einzige Entität, die Sie einem Delegaten hinzufügen können. Das Verfahren 'So erstellen Sie einen Member mithilfe der Symbolleiste des Klassendetailsfensters' kann für diese Aktion nicht angewendet werden.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>So erstellen Sie einen Member mit dem Klassen-Designer  
   
@@ -182,7 +182,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 3. Bearbeiten Sie die Werte in den Feldern des Rasters im Klassendetailsfenster. Drücken Sie nach jeder Änderung die EINGABETASTE, oder aktivieren Sie auf andere Weise ein anderes Feld, z. B. durch Drücken der TAB-TASTE. Die Änderungen sind im Code sofort sichtbar.  
   
     > [!NOTE]
-    >  Wenn Sie nur den Namen eines Members ändern möchten, können Sie dafür die direkte Bearbeitung verwenden.  
+    > Wenn Sie nur den Namen eines Members ändern möchten, können Sie dafür die direkte Bearbeitung verwenden.  
   
 ## <a name="AddMethodParams"></a> Hinzufügen von Parametern zu Methoden  
  Fügen Sie Methoden Parameter hinzu, indem Sie das Klassendetailsfenster verwenden. Parameter können als erforderlich oder optional konfiguriert werden. Wenn ein Wert für die Eigenschaft **Optional Default** angegeben wird, wird der Designer angewiesen, Code als optionalen Parameter zu generieren.  
@@ -216,10 +216,10 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
   Das Fenster "Eigenschaften" zeigt die gleichen Parametereigenschaften im Klassendetailsfenster angezeigt: **Name**, **Typ**, **Modifizierer**, **Zusammenfassung** sowie die Eigenschaft **Optional Default** (Optionaler Standard). Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.  
   
 > [!NOTE]
->  Informationen zum Hinzufügen eines Parameters zu einem Delegaten finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Informationen zum Hinzufügen eines Parameters zu einem Delegaten finden Sie unter [Erstellen von Membern](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Ein Destruktor ist zwar eine Methode, kann jedoch nicht über Parameter verfügen.  
+> Ein Destruktor ist zwar eine Methode, kann jedoch nicht über Parameter verfügen.  
   
 ### <a name="HowToAddParameterToMethod"></a> So fügen Sie einer Methode einen Parameter hinzu  
   
@@ -254,7 +254,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 4. Geben Sie im Eigenschaftenfenster einen Wert für die Eigenschaft **Optional Default** ein. Wenn Sie die "Optional Default"-Eigenschaft eines Parameters festlegen, wird dieser Parameter optional.  
   
     > [!NOTE]
-    >  Optionale Parameter müssen in der Parameterliste die letzten Parameter sein.  
+    > Optionale Parameter müssen in der Parameterliste die letzten Parameter sein.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Hinweise zur Verwendung von Klassendetails  
  Beachten Sie die folgenden Tipps zur Verwendung des Klassendetailsfensters.  

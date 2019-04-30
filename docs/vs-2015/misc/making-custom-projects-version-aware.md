@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422727"
 ---
 # <a name="making-custom-projects-version-aware"></a>Bewirken, dass benutzerdefinierte Projekte versionsfähig werden
 In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte dieses Typs in mehreren Versionen von Visual Studio geladen werden. Sie können aber auch verhindern, dass Projekte dieses Typs in einer früheren Version von Visual Studio geladen werden. Außerdem können Sie für dieses Projekt ermöglichen, sich selbst für eine neuere Version zu identifizieren für den Fall, dass das Projekt repariert, konvertiert oder als veraltet deklariert werden muss.  
@@ -37,7 +37,7 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
 6. `VSPUVF_PROJECT_DEPRECATED`: Gibt an, dass dieses Projekt nicht mehr unterstützt wird.  
   
 > [!NOTE]
->  Um Verwirrung zu vermeiden, sollten Sie Upgradeflags nicht kombinieren, wenn Sie diese festlegen. Beispielsweise sollten Sie keinen mehrdeutigen Upgradestatus wie etwas `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`erstellen.  
+> Um Verwirrung zu vermeiden, sollten Sie Upgradeflags nicht kombinieren, wenn Sie diese festlegen. Beispielsweise sollten Sie keinen mehrdeutigen Upgradestatus wie etwas `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`erstellen.  
   
  In einer Projektkonfiguration kann die Funktion `UpgradeProjectFlavor_CheckOnly` aus der `IVsProjectFlavorUpgradeViaFactory2` -Schnittstelle implementiert werden. Damit diese Funktion funktioniert, muss sie von der bereits erwähnten `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` -Implementierung aufgerufen werden. Dieser Aufruf ist im Visual Basic- oder C#-Basisprojektsystem bereits implementiert. Anhand des Ergebnisses dieser Funktion können Projektkonfigurationen ebenfalls die Upgradeanforderungen eines Projekts ermitteln, zusätzlich zu dem, was das Basisprojektsystem ermittelt hat. Ims Dialogfeld für Kompatibilität wird die schwerwiegendere der beiden Anforderungen angezeigt.  
   
@@ -72,7 +72,7 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
      Wenn Sie diesen Code implementieren, wird ein Dialogfeld zur Projektkompastibilität angezeigt. In dem ein Dialogfeld wird Benutzer aufgefordert, die Berechtigung zu erteilen, alle angegebenen Projekte als nicht kompatibel zu kennzeichnen. Stimmt der Benutzer zu, gibt `AskForUserConsentToBreakAssetCompat` den Wert `S_OK`zurück. Andernfalls gibt `AskForUserConsentToBreakAssetCompat` den Wert `OLE_E_PROMPTSAVECANCELLED`zurück.  
   
     > [!WARNING]
-    >  In den meisten Fällen enthält das `IVsHierarchy` -Array nur ein Element.  
+    > In den meisten Fällen enthält das `IVsHierarchy` -Array nur ein Element.  
   
 3. Wenn `AskForUserConsentToBreakAssetCompat` den Wert `S_OK`zurückgibt, nimmt die Komponente die Änderungen vor, die die Kompatibilität beseitigen, oder die Komponente akzeptiert diese Änderungen.  
   
@@ -98,7 +98,7 @@ In Ihrem benutzerdefinierte Projektsystem können Sie zulassen, dass Projekte di
      Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Sie müssen die `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft implementieren, damit ein Projekt als kompatibel oder nicht kompatibel gekennzeichnet werden kann. Wird für das Projektsystem beispielsweise eine MSBuild-Projektdatei verwendet, fügen Sie der Projektdatei eine `<MinimumVisualStudioVersion>` -Buildeigenschaft hinzu, die denselben Wert hat wie die entsprechende `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft.  
+> Sie müssen die `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft implementieren, damit ein Projekt als kompatibel oder nicht kompatibel gekennzeichnet werden kann. Wird für das Projektsystem beispielsweise eine MSBuild-Projektdatei verwendet, fügen Sie der Projektdatei eine `<MinimumVisualStudioVersion>` -Buildeigenschaft hinzu, die denselben Wert hat wie die entsprechende `VSHPROPID_MinimumDesignTimeCompatVersion` -Eigenschaft.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Ermitteln, ob ein Projekt nicht kompatibel ist  
  Für ein Projekt, das nicht mit der aktuellen Version von Visual Studio kompatibel ist, muss verhindert werden, dass es geladen wird. Darüber hinaus kann ein Projekt, das nicht kompatibel ist, weder ein Upgrade durchlaufen noch repariert werden. Daher muss ein Projekt zweimal auf Kompatibilität überprüft werden: erstmals, wenn es für ein Upgrade oder eine Reparatur berücksichtigt wird, und zweitens, bevor es geladen wird.  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    Die neuen Implementierungen in `IVsProjectUpgradeViaFactory4` und `IVsProjectFlavorUpgradeViaFactory2` ermöglichen es, den Migrationstyp genauer anzugeben.  
   
 > [!NOTE]
->  Sie können das Ergebnis der Kompatibilitätsüberprüfung durch die `UpgradeProject_CheckOnly` -Methode zwischenspeichern, sodass es auch für den späteren Aufruf von `CreateProject`verwendet werden kann.  
+> Sie können das Ergebnis der Kompatibilitätsüberprüfung durch die `UpgradeProject_CheckOnly` -Methode zwischenspeichern, sodass es auch für den späteren Aufruf von `CreateProject`verwendet werden kann.  
   
  Wenn beispielsweise die Methoden `UpgradeProject_CheckOnly` und `CreateProject` , die für ein [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] mit SP1-Projektsystem geschrieben sind, eine Projektdatei auswerten und feststellen, dass die `<MinimumVisualStudioVersion>` -Buildeigenschaft den Wert „11.0“ hat, wird das Projekt von Visual Studio 2010 mit SP1 nicht geladen. Darüber hinaus würde der **Projektmappen-Navigator** angeben, dass das Projekt „nicht kompatibel“ ist, und würde es nicht laden.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445580"
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
  Führen Sie MSBuild an der **Visual Studio-Eingabeaufforderung** aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter /target oder /t, um das Ziel auszuwählen.  
   
 > [!NOTE]
->  In den folgenden Abschnitten wird die **Visual Studio-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.  
+> In den folgenden Abschnitten wird die **Visual Studio-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.  
   
 #### <a name="to-build-the-target"></a>So erstellen Sie das Ziel  
   
@@ -154,12 +154,12 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
     ```  
   
 > [!NOTE]
->  Wenn stattdessen `The target "HelloWorld" does not exist in the project` angezeigt wird, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
+> Wenn stattdessen `The target "HelloWorld" does not exist in the project` angezeigt wird, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
   
  Durch Wechsel zwischen Code-Editor und dem Befehlsfenster können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   
 > [!NOTE]
->  Wenn Sie msbuild ohne den Befehlsschalter /t ausführen, erstellt msbuild das vom DefaultTarget-Attribut des Project-Elements angegebene Ziel, in diesem Fall "Build". Damit wird die Windows Forms-Anwendung BuildApp.exe erstellt.  
+> Wenn Sie msbuild ohne den Befehlsschalter /t ausführen, erstellt msbuild das vom DefaultTarget-Attribut des Project-Elements angegebene Ziel, in diesem Fall "Build". Damit wird die Windows Forms-Anwendung BuildApp.exe erstellt.  
   
 ## <a name="build-properties"></a>Buildeigenschaften  
  Buildeigenschaften sind Name-Wert-Paare, anhand derer der Build ausgeführt wird. Am Anfang der Projektdatei sind bereits mehrere Buildeigenschaften definiert:  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
+> Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
   
 ### <a name="conditional-properties"></a>Bedingte Eigenschaften  
  Viele Eigenschaften, z. B. Configuration, werden bedingt definiert, das heißt, im Eigenschaftenelement wird das Condition-Attribut angezeigt. Bedingte Eigenschaften werden nur definiert oder erneut definiert, wenn die Bedingung "true" ergibt. Nicht definierten Eigenschaften wird der Standardwert, eine leere Zeichenfolge, zugewiesen. Ein auf ein Objekt angewendeter  
@@ -319,7 +319,7 @@ $(PropertyName)
  Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Dateipfade werden relativ zum Ordner mit der MSBuild-Projektdatei angegeben.  
+> Dateipfade werden relativ zum Ordner mit der MSBuild-Projektdatei angegeben.  
   
 ## <a name="examining-item-type-values"></a>Untersuchen von Elementtypwerten  
  Werte eines Elementtyps rufen Sie mit der folgenden Syntax ab, wobei ItemType den Name des Elementtyps darstellt:  

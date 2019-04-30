@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441585"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
 4. In der **Anwendungsdateien** wählen Sie im Dialogfeld die **Gruppe** Feld für eine Datei, die Sie in der neuen Gruppe einschließen möchten.  
   
     > [!NOTE]
-    >  Dateien müssen die **Buildvorgang** -Eigenschaftensatz auf **Content** vor den Dateinamen in angezeigt werden die **Anwendungsdateien** im Dialogfeld.  
+    > Dateien müssen die **Buildvorgang** -Eigenschaftensatz auf **Content** vor den Dateinamen in angezeigt werden die **Anwendungsdateien** im Dialogfeld.  
   
 5. In der **Downloadgruppe** die Option  **\<neu... >** aus der Dropdown-Liste.  
   
@@ -114,7 +114,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
 5. In der **Downloadgruppe** Feld, wählen Sie eine Gruppe aus der Dropdown-Liste.  
   
     > [!NOTE]
-    >  Sie können nicht geändert werden die **Downloadgruppe** für Dateien, die für die Ausführung der Anwendung erforderlich sind.  
+    > Sie können nicht geändert werden die **Downloadgruppe** für Dateien, die für die Ausführung der Anwendung erforderlich sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   

@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444116"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Verwenden des Zustandsautomatworkflow-Designers der Vorgängerversion
 Wenn erstellen Sie ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010](../includes/vs2010-md.md)] abzielt der [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], Sie können auch eine verwenden die **Konsolenanwendung für Zustandsautomatworkflows Zustand** oder die  **Status der Workflowbibliothek** legacy-Projektvorlage. Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow-Designer-Benutzeroberfläche der Vorgängerversion angezeigt. Weitere Informationen zu den älteren zustandsautomatprojektvorlagen, finden Sie unter [Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomat-Workflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -53,9 +53,9 @@ Wenn erstellen Sie ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010
  Wenn Sie ein neues ziehen **StateActivity** auf der Workflowentwurfsoberfläche, können Sie hinzufügen [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), oder zusätzliche **StateActivity** Aktivitäten als untergeordnete Aktivitäten.  
   
 > [!CAUTION]
->  Wenn Sie das Zustandsautomatworkflow-Designers verwenden, um Workflows zu erstellen, müssen Sie die Struktur des Workflows, die Sie entwerfen mit überwachen die **Dokumentgliederung** Fenster "Berichtsansicht". Die Ansicht der Struktur des zustandsautomatenworkflows in der **Dokumentgliederung** spiegelt die logische Struktur der Aktivitäten in der Workflowmarkupdatei anzeigen. Die physische Struktur der Workflowaktivitäten gemäß Darstellung auf der Entwurfsoberfläche spiegelt möglicherweise nicht die logische Struktur der Aktivitäten in der Workflowmarkupdatei wider.  
+> Wenn Sie das Zustandsautomatworkflow-Designers verwenden, um Workflows zu erstellen, müssen Sie die Struktur des Workflows, die Sie entwerfen mit überwachen die **Dokumentgliederung** Fenster "Berichtsansicht". Die Ansicht der Struktur des zustandsautomatenworkflows in der **Dokumentgliederung** spiegelt die logische Struktur der Aktivitäten in der Workflowmarkupdatei anzeigen. Die physische Struktur der Workflowaktivitäten gemäß Darstellung auf der Entwurfsoberfläche spiegelt möglicherweise nicht die logische Struktur der Aktivitäten in der Workflowmarkupdatei wider.  
 >   
->  Zum Öffnen der **Dokumentgliederung** Fenster auf die **Ansicht** , zeigen Sie auf **andere Windows**, und wählen Sie dann **Dokumentgliederung**.  
+> Zum Öffnen der **Dokumentgliederung** Fenster auf die **Ansicht** , zeigen Sie auf **andere Windows**, und wählen Sie dann **Dokumentgliederung**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomat-Workflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

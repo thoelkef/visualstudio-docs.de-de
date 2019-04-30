@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439661"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 2. Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 8**und dann entweder **Universell** oder **Windows Phone-Apps**aus.  
   
     > [!IMPORTANT]
-    >  Die in diesem Thema gezeigten Ergebnisse der Speicherauslastung werden für eine Windows 8-App getestet.  
+    > Die in diesem Thema gezeigten Ergebnisse der Speicherauslastung werden für eine Windows 8-App getestet.  
   
 3. Wählen Sie dann im mittleren Bereich die Projektvorlage **Leere App** aus.  
   
@@ -55,7 +55,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     ```  
   
     > [!IMPORTANT]
-    >  Wenn Sie eine Vorlage für universelle Windows 8.1-Apps verwenden, müssen Sie HTML- und CSS-Code sowohl in den ".Windows"- als auch in den ".WindowsPhone"-Projekten aktualisieren.  
+    > Wenn Sie eine Vorlage für universelle Windows 8.1-Apps verwenden, müssen Sie HTML- und CSS-Code sowohl in den ".Windows"- als auch in den ".WindowsPhone"-Projekten aktualisieren.  
   
 6. Öffnen Sie default.css, und fügen Sie den folgenden CSS-Code hinzu:  
   
@@ -137,7 +137,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 1. Wählen Sie auf der Symbolleiste **Debuggen** in der Liste **Debuggen starten** das Debugziel für das aktualisierte Projekt aus, entweder die Windows Phone-Emulatoren oder den **Simulator**.  
   
    > [!TIP]
-   >  Für eine Windows Store-App können Sie in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. Allerdings liegt der Vorteil des Emulators oder Simulators darin, dass Sie ihn neben Visual Studio platzieren und problemlos zwischen der laufenden App und der JavaScript-Speicheranalyse wechseln können. Weitere Informationen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md) und [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Für eine Windows Store-App können Sie in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. Allerdings liegt der Vorteil des Emulators oder Simulators darin, dass Sie ihn neben Visual Studio platzieren und problemlos zwischen der laufenden App und der JavaScript-Speicheranalyse wechseln können. Weitere Informationen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md) und [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   
@@ -152,7 +152,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     Bei Auswahl dieser Schaltfläche funktioniert der Ereignishandlercode in "default.js" so, dass ein Speicherverlust hervorgerufen wird. Dies wird zu Diagnosezwecken verwendet.  
   
    > [!TIP]
-   >  Durch die Wiederholung des Szenarios, das Sie auf einen Speicherverlust testen möchten, wird es einfacher, irrelevante Informationen herauszufiltern. Dazu zählen beispielsweise Objekte, die dem Heap während des Startens der App oder beim Laden einer Seite hinzugefügt werden.  
+   > Durch die Wiederholung des Szenarios, das Sie auf einen Speicherverlust testen möchten, wird es einfacher, irrelevante Informationen herauszufiltern. Dazu zählen beispielsweise Objekte, die dem Heap während des Startens der App oder beim Laden einer Seite hinzugefügt werden.  
   
 5. Wechseln Sie aus der ausgeführten App zu Visual Studio (ALT+TAB).  
   
@@ -171,14 +171,14 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     ![Baseline-Momentaufnahme und Momentaufnahme 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  Der Windows Phone-Emulator zeigt keinen Screenshot von der App zum Zeitpunkt der Momentaufnahme.  
+   > Der Windows Phone-Emulator zeigt keinen Screenshot von der App zum Zeitpunkt der Momentaufnahme.  
   
 9. Wechseln Sie zur App, und wählen Sie die Schaltfläche **Speicherverlust** erneut aus.  
   
 10. Wechseln Sie zu Visual Studio, und wählen Sie zum dritten Mal **Heap-Momentaufnahme erstellen** aus.  
   
     > [!TIP]
-    >  Indem eine dritte Momentaufnahme in diesem Workflow aufgenommen wird, können Sie Änderungen zwischen der Baselinemomentaufnahme zur zweiten Momentaufnahme herausfiltern, die mit Arbeitsspeicherverlusten nichts zu tun haben. Es gibt z. B. möglicherweise erwartete Änderungen, wie Aktualisieren von Kopf- und Fußzeilen auf einer Seite, die einige Änderungen bei der Speicherauslastung generiert, aber mit Arbeitsspeicherverlusten nicht in Verbindung steht.  
+    > Indem eine dritte Momentaufnahme in diesem Workflow aufgenommen wird, können Sie Änderungen zwischen der Baselinemomentaufnahme zur zweiten Momentaufnahme herausfiltern, die mit Arbeitsspeicherverlusten nichts zu tun haben. Es gibt z. B. möglicherweise erwartete Änderungen, wie Aktualisieren von Kopf- und Fußzeilen auf einer Seite, die einige Änderungen bei der Speicherauslastung generiert, aber mit Arbeitsspeicherverlusten nicht in Verbindung steht.  
   
      Diese Abbildung zeigt Momentaufnahme Nr. 2 und Momentaufnahme Nr. 3.  
   
@@ -191,7 +191,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     - Die Heapgröße (angezeigt durch den roten Pfeil nach oben auf der linken Seite) hat sich verglichen mit Momentaufnahme Nr. 1 um mehrere KB erhöht.  
   
       > [!IMPORTANT]
-      >  Die genauen Speicherauslastungswerte für die Heapgröße hängen vom Debugziel ab.  
+      > Die genauen Speicherauslastungswerte für die Heapgröße hängen vom Debugziel ab.  
   
     - Die Anzahl der Objekte im Heap (angezeigt durch den roten Pfeil nach oben auf der rechten Seite) hat sich verglichen mit Momentaufnahme Nr. 1 erhöht. Ein Objekt wurde hinzugefügt (+ 1), und es wurden keine Objekte entfernt (– 0).  
   
@@ -222,7 +222,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
       An diesem Punkt sind Kenntnisse der app nützlich zur Verfügung: Auswählen der **Speicherverlust** Schaltfläche sollte ein DIV-Element zu entfernen und ein Element hinzugefügt, der Code scheint also nicht richtig zu funktionieren (d. h. er weist Speicher). Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
   
     > [!TIP]
-    >  Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global` -Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen**aus.  
+    > Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global` -Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen**aus.  
   
 ## <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
   

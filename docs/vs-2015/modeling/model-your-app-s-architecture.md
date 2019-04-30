@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417782"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
  Ein Modell soll die Mehrdeutigkeiten in Beschreibungen in natürlicher Sprache reduzieren und Ihnen und Ihren Kollegen helfen, den Entwurf visuell darzustellen sowie alternative Entwürfe zu erörtern. Ein Modell sollte zusammen mit anderen Dokumenten oder Diskussionen verwendet werden. Ein Modell an sich stellt keine vollständige Spezifikation der Architektur dar.  
   
 > [!NOTE]
->  In diesem gesamten Thema wird als „System“ die Software bezeichnet, die Sie entwickeln. Dabei kann es sich um eine umfangreiche Sammlung vieler Software- und Hardwarekomponenten, eine einzelne Anwendung oder einen Teil einer Anwendung handeln.  
+> In diesem gesamten Thema wird als „System“ die Software bezeichnet, die Sie entwickeln. Dabei kann es sich um eine umfangreiche Sammlung vieler Software- und Hardwarekomponenten, eine einzelne Anwendung oder einen Teil einer Anwendung handeln.  
   
  Die Architektur eines Systems kann in zwei Bereiche unterteilt werden:  
   

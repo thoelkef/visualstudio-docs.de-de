@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: af68c595134aa52979d68065de1249124ca8bca0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009288"
 ---
 # <a name="walkthroughs-using-word"></a>Exemplarische Vorgehensweisen mit Word
   Die folgenden exemplarischen Vorgehensweisen zeigen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Automatisieren von Microsoft Office Word und Anpassen der Benutzeroberfläche (User Interface, UI) verwenden können.

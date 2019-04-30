@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411466"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  Sie können auch eine gewöhnliche, von Hand geschriebene Klasse als Basisklasse verwenden. Die Basisklasse muss die von der abgeleiteten Klasse verwendeten Methoden beinhalten.  
   
 > [!WARNING]
->  Wenn Sie die Attribute `inherits` und `hostspecific` zusammen verwenden, geben Sie hostspecific="trueFromBase" in der abgeleiteten Klasse sowie host="true" in der Basisklasse an. Dies vermeidet eine doppelte Definition der Eigenschaft `Host` im generierten Code.  
+> Wenn Sie die Attribute `inherits` und `hostspecific` zusammen verwenden, geben Sie hostspecific="trueFromBase" in der abgeleiteten Klasse sowie host="true" in der Basisklasse an. Dies vermeidet eine doppelte Definition der Eigenschaft `Host` im generierten Code.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Vererbung in einer Entwurfszeittextvorlage  
  Eine Entwurfszeit-Textvorlage ist eine Datei für die **benutzerdefiniertes Tool** nastaven NA hodnotu **TextTemplatingFileGenerator**. Die Vorlage generiert eine Ausgabedatei mit Code oder Text, die einen Teil des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekts bildet. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.  

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: jillfra
-ms.openlocfilehash: 9952cc804e548896fb4dec9f6c1a447835ba251e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 284a0da3aaf0b88f7f0d2c7fc3983ca3c6aacbc6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415272"
 ---
 # <a name="in-place-activation"></a>Direkte Aktivierung
 Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müssen Sie die Editor-Ansicht entweder als ActiveX-Steuerelement oder als aktives Dokumentdatenobjekt mithilfe des Modells für die direkte Aktivierung implementieren.
@@ -22,7 +22,7 @@ Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müss
  Wenn Sie ein ActiveX-Steuerelement implementieren, können Sie andere eingebettete Objekte hosten. Wenn Sie ein Dokumentdatenobjekt implementieren, wird die Möglichkeit zur Verwendung von ActiveX-Steuerelementen durch den Fensterrahmen begrenzt.
 
 > [!NOTE]
->  Die Schnittstellen <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> erlauben eine Trennung von Daten und Ansicht. Allerdings wird diese Funktionalität von Visual Studio nicht unterstützt, und diese Schnittstellen werden nur zur Darstellung des Dokumentansichtsobjekts verwendet.
+> Die Schnittstellen <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> erlauben eine Trennung von Daten und Ansicht. Allerdings wird diese Funktionalität von Visual Studio nicht unterstützt, und diese Schnittstellen werden nur zur Darstellung des Dokumentansichtsobjekts verwendet.
 
  Editoren, die den <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> -Dienst verwenden, können über den Aufruf der Methoden der durch den <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> -Dienst implementierten <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> -Schnittstelle für die Integration von Menüs, Symbolleisten und Befehlen sorgen. Editoren können auch noch andere Visual Studio-Funktionen wie die Auswahlnachverfolgung und die Rückgängig-Funktion mit der entsprechenden Schrittverwaltung bereitstellen. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).
 
@@ -32,7 +32,7 @@ Wenn die Editor-Ansicht ActiveX- oder andere aktive Steuerelemente hostet, müss
  ![In&#45;Activation-Editor platzieren](../extensibility/media/vsinplaceactivationeditor.gif "VsInPlaceActivationEditor") direkten Aktivierung Editor
 
 > [!NOTE]
->  Von den Objekten in dieser Zeichnung ist nur das `CYourEditorFactory` -Objekt zum Erstellen eines Standard-Editors erforderlich. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> nicht implementieren, da Ihr Editor wahrscheinlich über einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).
+> Von den Objekten in dieser Zeichnung ist nur das `CYourEditorFactory` -Objekt zum Erstellen eines Standard-Editors erforderlich. Wenn Sie einen benutzerdefinierten Editor erstellen, müssen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> nicht implementieren, da Ihr Editor wahrscheinlich über einen eigenen Mechanismus für die dauerhafte Speicherung verfügt. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md).
 
  Alle Schnittstellen, die zum Erstellen eines Editors für die direkte Aktivierung implementiert werden, werden an einem einzelnen `CYourEditorDocument` -Objekt angezeigt. Diese Konfiguration unterstützt jedoch nur eine einzige Ansicht der Dokumentdaten. Weitere Informationen zur Unterstützung von mehreren Ansichten der Dokumentdaten finden Sie unter [unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md).
 

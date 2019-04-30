@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422723"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definieren von Validierungseinschränkungen für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Sie können Validierungseinschränkungen definieren, die testen, ob das Modell e
     Weitere Informationen finden Sie unter [Auswerten der Validierungseinschränkung](#Implementing).  
   
    > [!IMPORTANT]
-   >  Stellen Sie sicher, dass die **.cs** -Dateien die folgende `using` -Anweisung enthalten:  
+   > Stellen Sie sicher, dass die **.cs** -Dateien die folgende `using` -Anweisung enthalten:  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  Die Validierungsmethode sollte bestimmen, ob die anzuwendende Validierungseinschränkung den Wert true oder false hat. Bei "true" soll keine Aktion erfolgen. Bei "false" sollte ein Fehler gemeldet werden, indem die vom `ValidationContext` -Parameter bereitgestellten Methoden verwendet werden.  
   
 > [!NOTE]
->  Validierungsmethoden sollten das Modell nicht ändern. Es gibt keine Garantie, wann oder in welcher Reihenfolge die Einschränkungen ausgeführt werden. Wenn Sie Informationen zwischen aufeinander folgenden Ausführungen einer Validierungsmethode innerhalb einer Validierungsausführung übergeben müssen, können Sie den unter [Koordinieren mehrerer Validierungen](#ContextCache)beschriebenen Kontextcache verwenden.  
+> Validierungsmethoden sollten das Modell nicht ändern. Es gibt keine Garantie, wann oder in welcher Reihenfolge die Einschränkungen ausgeführt werden. Wenn Sie Informationen zwischen aufeinander folgenden Ausführungen einer Validierungsmethode innerhalb einer Validierungsausführung übergeben müssen, können Sie den unter [Koordinieren mehrerer Validierungen](#ContextCache)beschriebenen Kontextcache verwenden.  
   
  Wenn Sie z. B. sicherstellen möchten, dass der Name jedes Typs (Klasse, Schnittstelle oder Enumerator) mindestens drei Zeichen lang ist, können Sie die folgende Methode verwenden:  
   

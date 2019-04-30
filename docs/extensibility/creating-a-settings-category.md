@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411330"
 ---
 # <a name="create-a-settings-category"></a>Erstellen einer Einstellungskategorie
 
@@ -46,7 +46,7 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
      Dadurch wird die Ressourcen erstellt, diesem Namen der Kategorie "My Category", Objekt "My Settings" und die Beschreibung der Kategorien "OptionInteger und OptionFloat".
 
     > [!NOTE]
-    >  Dieser drei nur die Namen der Kategorie erscheint nicht in der **Einstellungen importieren und exportieren** Assistenten.
+    > Dieser drei nur die Namen der Kategorie erscheint nicht in der **Einstellungen importieren und exportieren** Assistenten.
 
 3. In *MyToolsOptionsPackage.cs*, Hinzufügen einer `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.
 
@@ -76,7 +76,7 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
     ```
 
     > [!NOTE]
-    >  Die `OptionPageGrid` Kategorie mit dem Namen "My Category" ist jetzt besteht aus den zwei Eigenschaften, `OptionInteger` und `OptionFloat`.
+    > Die `OptionPageGrid` Kategorie mit dem Namen "My Category" ist jetzt besteht aus den zwei Eigenschaften, `OptionInteger` und `OptionFloat`.
 
 4. Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die `MyToolsOptionsPackage` -Klasse und weisen Sie ihm die CategoryName "My Category", geben sie den Objektnamen "My Settings" und IsToolsOptionPage auf "true" festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID, auf die entsprechenden Zeichenfolgenressource, die IDs zuvor erstellt haben.
 

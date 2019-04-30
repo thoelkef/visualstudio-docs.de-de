@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442360"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -118,7 +118,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 5. Ersetzen Sie `{000...000}` durch eine GUID, die Ihre Gruppen und Menüelemente identifiziert. Um eine neue GUID abzurufen, verwenden die **GUID erstellen** tool die **Tools** Menü.
 
     > [!NOTE]
-    >  Wenn Sie mehrere Gruppen oder Menüelemente hinzufügen, können Sie dieselbe GUID verwenden. Sie müssen aber neue Werte für `IDSymbols` verwenden.
+    > Wenn Sie mehrere Gruppen oder Menüelemente hinzufügen, können Sie dieselbe GUID verwenden. Sie müssen aber neue Werte für `IDSymbols` verwenden.
 
 6. Ersetzen Sie in dem Code, den Sie aus diesem Verfahren kopiert haben, jedes Vorkommen der folgenden Zeichenfolgen durch Ihre eigenen Zeichenfolgen:
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Verwenden Sie denselben GUID-Wert, wie Sie in eingefügt **Commands.vsct**.
 
 > [!NOTE]
->  Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.
+> Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.
 
  Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()` wird einmalig bei der Initialisierung des Diagramms aufgerufen:
 

@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422537"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Beschreiben des Kontrollflusses mit Fragmenten in UML-Sequenzdiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
  Ein kombiniertes Fragment besteht aus einem oder mehreren *Interaktionsoperanden*, in die jeweils eine oder mehrere Meldungen, Interaktionsverwendungen oder kombinierte Fragmente eingeschlossen sind.  
   
 > [!NOTE]
->  In diesem Thema geht es um Fragmente in Sequenzdiagrammen. Weitere Informationen über das Lesen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen über das Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
+> In diesem Thema geht es um Fragmente in Sequenzdiagrammen. Weitere Informationen über das Lesen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-sequence-diagrams-reference.md). Weitere Informationen über das Zeichnen von UML-Sequenzdiagrammen finden Sie unter [UML Sequence Diagrams: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Kombinierte Fragment mit zwei Interaktionsoperanden](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
 3. Sie können jeden Interaktionsoperanden einzeln auswählen, indem Sie darauf klicken. In diesem Beispiel ist der oberste Interaktionsoperand ausgewählt, sodass seine Begrenzung zu sehen ist. Normalerweise ist nur die Trennlinie zwischen Interaktionsoperanden sichtbar.  
   
     > [!NOTE]
-    >  Um den obersten Interaktionsoperanden auszuwählen, dürfen Sie nicht zu nah am oberen Rand des kombinierten Fragments klicken.  
+    > Um den obersten Interaktionsoperanden auszuwählen, dürfen Sie nicht zu nah am oberen Rand des kombinierten Fragments klicken.  
   
 4. Wächter. Sie können jeden Interaktionsoperanden mit einem Wächter versehen. Dieser beschreibt die Bedingung, unter der die Meldungen im Interaktionsoperanden ausgeführt werden.  
   
@@ -57,7 +57,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
 1. Wählen Sie eine Meldung oder eine Sequenz von Meldungen aus, die alle an der gleichen Lebenslinie oder Vorkommnisausführung beginnen.  
   
    > [!NOTE]
-   >  Wenn Sie mehrere Meldungen auswählen, müssen diese eine ununterbrochene Sequenz bilden.  
+   > Wenn Sie mehrere Meldungen auswählen, müssen diese eine ununterbrochene Sequenz bilden.  
   
 2. Klicken Sie mit der rechten Maustaste auf eine der Meldungen, zeigen Sie auf **Umschließen mit**, und klicken Sie dann auf die gewünschte Art von kombiniertem Fragment, z. B. **Kombiniertes Alt-Fragment**.  
   
@@ -100,7 +100,7 @@ In einem UML-Sequenzdiagramm können Sie mithilfe von *kombinierten Fragmenten* 
 - Klicken Sie mit der rechten Maustaste in den Titel des kombinierten Fragments, und klicken Sie dann auf **Eigenschaften**.  
   
     > [!NOTE]
-    >  Verschiedene Arten von kombinierten Fragmenten verfügen über unterschiedliche Eigenschaften.  
+    > Verschiedene Arten von kombinierten Fragmenten verfügen über unterschiedliche Eigenschaften.  
   
 ## <a name="KindsOfFragment"></a> Arten von kombinierten Fragmenten  
   

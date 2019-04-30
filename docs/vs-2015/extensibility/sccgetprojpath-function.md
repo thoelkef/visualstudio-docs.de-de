@@ -12,12 +12,12 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446872"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ SCCRTN SccGetProjPath (
  Für `lpUser`, die IDE möglicherweise übergeben Sie einen Benutzernamen ein, oder es möglicherweise einfach übergeben eines Zeigers auf eine leere Zeichenfolge. Ist ein Benutzername, sollte das Quellcodeverwaltungs-Plug-in als Standard verwenden. Allerdings, wenn kein Name übergeben wurde, oder wenn Fehler bei der Anmeldung mit dem angegebenen Namen, den-Plug-in sollte den Benutzer auffordern für eine Anmeldung und übergeben Sie der Namen wieder `lpUser` gültigen Anmeldeinformationen empfängt. Da das plug-in dieser Zeichenfolge ändern kann, die IDE wird immer ein Puffer der Größe (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  Die erste Aktion, die die IDE führt möglicherweise ein Aufruf der `SccOpenProject` Funktion oder die `SccGetProjPath` Funktion. Daher haben beide eine identische `lpUser` -Parameter, der das Quellcodeverwaltungs-Plug-in, um die Benutzer entweder zum Zeitpunkt ermöglicht. Auch wenn die Rückgabe der Funktion ein Fehler weist darauf hin, müssen die-Plug-in dieser Zeichenfolge durch einen gültigen Anmeldenamen ausfüllen.  
+> Die erste Aktion, die die IDE führt möglicherweise ein Aufruf der `SccOpenProject` Funktion oder die `SccGetProjPath` Funktion. Daher haben beide eine identische `lpUser` -Parameter, der das Quellcodeverwaltungs-Plug-in, um die Benutzer entweder zum Zeitpunkt ermöglicht. Auch wenn die Rückgabe der Funktion ein Fehler weist darauf hin, müssen die-Plug-in dieser Zeichenfolge durch einen gültigen Anmeldenamen ausfüllen.  
   
  `lpLocalPath` ist das Verzeichnis, in dem sich der Benutzer auf das Projekt zeigt. Es kann keine leere Zeichenfolge sein. Wenn kein Verzeichnis, die aktuell definiert (wie im Falle eines Benutzers, bei dem Versuch, ein Projekt aus dem Quellcodeverwaltungssystem herunterladen) vorhanden ist und `bAllowChangePath` ist `TRUE`, das Quellcodeverwaltungs-Plug-in kann Benutzer zur Eingabe auffordern oder eine andere Methode zum Platzieren der Zeichenfolge in Besitz `lpLocalPath`. Wenn `bAllowChangePath` ist `FALSE`, das plug-in sollte nicht ändern Sie die Zeichenfolge, da der Benutzer bereits im angegebenen Verzeichnis arbeitet.  
   
