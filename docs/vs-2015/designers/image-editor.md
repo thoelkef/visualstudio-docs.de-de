@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434405"
 ---
 # <a name="image-editor"></a>Bildbearbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
  Bevor Sie mit dem soeben erstellten Bild zu arbeiten beginnen, können Sie seine Standardkonfiguration ändern. Beispielsweise können Sie seine Abmessungen oder das verwendete Farbformat ändern. Weitere Informationen zur Konfiguration dieser und anderer Bildeigenschaften finden Sie unter [Bildeigenschaften](#ImageProperties).  
   
 > [!NOTE]
->  Bevor Sie Ihre Arbeit speichern, legen Sie die Eigenschaft **Farbformat** fest, wenn Sie ein bestimmtes Farbformat verwenden möchten. Sie können die Komprimierungseinstellungen anpassen, wenn Sie die Datei zum ersten Mal speichern oder **Speichern unter** auswählen, sofern das Dateiformat die Komprimierung unterstützt.  
+> Bevor Sie Ihre Arbeit speichern, legen Sie die Eigenschaft **Farbformat** fest, wenn Sie ein bestimmtes Farbformat verwenden möchten. Sie können die Komprimierungseinstellungen anpassen, wenn Sie die Datei zum ersten Mal speichern oder **Speichern unter** auswählen, sofern das Dateiformat die Komprimierung unterstützt.  
   
 ## <a name="working-with-the-image-editor"></a>Arbeiten mit der Bildbearbeitung  
  In diesem Abschnitt wird beschrieben, wie Sie mit dem Bild-Editor Texturen und Bilder erstellen und ändern.  
@@ -166,7 +166,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../includes/v
 |Tiefensegment|Das aktuelle Tiefensegment. Nur das erste Tiefensegment kann angezeigt werden, alle anderen Segmente gehen beim Speichern des Bilds verloren.|  
   
 > [!NOTE]
->  Die Eigenschaft **Drehen um** kann auf alle Tools und ausgewählte Bereiche angewendet werden und wird daher immer zusammen mit anderen Tooleigenschaften am unteren Rand des Fensters **Eigenschaften** angezeigt. **Drehen um** wird immer angezeigt, da das gesamte Bild implizit ausgewählt ist, wenn keine andere Auswahl oder kein aktives Tool vorhanden ist. Weitere Informationen zur Eigenschaft **Drehen um** finden Sie unter [Tooleigenschaften](#ToolProperties).  
+> Die Eigenschaft **Drehen um** kann auf alle Tools und ausgewählte Bereiche angewendet werden und wird daher immer zusammen mit anderen Tooleigenschaften am unteren Rand des Fensters **Eigenschaften** angezeigt. **Drehen um** wird immer angezeigt, da das gesamte Bild implizit ausgewählt ist, wenn keine andere Auswahl oder kein aktives Tool vorhanden ist. Weitere Informationen zur Eigenschaft **Drehen um** finden Sie unter [Tooleigenschaften](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Ändern der Bildgröße  
  Es gibt folgende zwei Möglichkeiten, die Größe eines Bilds zu ändern. In beiden Fällen verwendet die Bildbearbeitung eine bilineare Interpolation, um das Bild neu zu berechnen.  

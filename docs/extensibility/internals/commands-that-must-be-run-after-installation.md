@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418711"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Befehle, die nach der Installation ausgeführt werden muss
 Wenn Sie die Erweiterung durch Bereitstellen einer *MSI* -Datei, die Sie ausführen müssen **Devenv/Setup** im Rahmen der Installation in der Reihenfolge für Visual Studio, um Ihre Erweiterungen zu ermitteln.
 
 > [!NOTE]
->  Die Informationen in diesem Thema gelten für Suchen *devenv.exe* mit Visual Studio 2008 und früheren Versionen. Informationen zum Ermitteln von *devenv.exe* mit höheren Versionen von Visual Studio finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).
+> Die Informationen in diesem Thema gelten für Suchen *devenv.exe* mit Visual Studio 2008 und früheren Versionen. Informationen zum Ermitteln von *devenv.exe* mit höheren Versionen von Visual Studio finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).
 
 ## <a name="find-devenvexe"></a>Suchen von devenv.exe
  Finden Sie jede Version des *devenv.exe* aus der Registrierung zu Werten, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Installationsprogramme schreiben, verwenden die RegLocator-Tabelle und AppSearch Tabellen die Registrierungswerte als Eigenschaften zu speichern. Weitere Informationen finden Sie unter [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md).
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Zeilen der RegLocator devenv.exe aus verschiedenen Versionen von Visual Studio zu suchen.
 
-|Signatur|Stammverzeichnis|Key|name|Typ|
+|Signatur|Stammverzeichnis|Key|Name|Typ|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -68,7 +68,7 @@ Wenn Sie die Erweiterung durch Bereitstellen einer *MSI* -Datei, die Sie ausfüh
  Benutzerdefinierte Aktionen müssen in die Tabelle InstallExecuteSequence Planung für die Ausführung bei der Installation erstellt werden. Verwenden Sie die entsprechende Eigenschaft in jeder Zeile der Spalte Bedingung, um zu verhindern, dass die benutzerdefinierte Aktion ausgeführt werden, wenn diese Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nicht auf dem System installiert ist.
 
 > [!NOTE]
->  Eigenschaften für NULL-Wert ergeben `False` bei der Verwendung in Bedingungen.
+> Eigenschaften für NULL-Wert ergeben `False` bei der Verwendung in Bedingungen.
 
  Der Wert von der Sequence-Spalte für jede benutzerdefinierte Aktion hängt von anderen Sequence-Werte in der Windows Installer-Paket ab. Sequence-Werte muss so, dass die *devenv.exe* benutzerdefinierte Aktionen, die als ausführen wie möglich, um unmittelbar vor der Standardaktion InstallFinalize zu schließen.
 

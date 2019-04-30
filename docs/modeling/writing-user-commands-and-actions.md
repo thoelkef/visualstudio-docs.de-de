@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00da6f72bfafcc62075bc06739e4daec0fe45994
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951203"
 ---
 # <a name="writing-user-commands-and-actions"></a>Schreiben von Benutzerbefehlen und -aktionen
 Sie können eine domänenspezifische Sprache individuell anpassen, indem Sie Befehle zum Diagramm hinzufügen und indem eine Reaktion auf Gesten wie etwa bei Drag & Drop-, Klick- oder Doppelklickereignissen vorgesehen wird.

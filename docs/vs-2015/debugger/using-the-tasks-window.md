@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 934073e5d266c2ddf645acd7dddcfb13711f92de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437705"
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werd
  ![Fenster "Parallele Aufgaben"](../debugger/media/parallel-tasks-window.png "Parallel_Tasks_Window")  
   
 > [!NOTE]
->  In verwaltetem Code wird ein <xref:System.Threading.Tasks.Task>-Objekt mit dem Status <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> oder <xref:System.Threading.Tasks.TaskStatus> möglicherweise nicht im Aufgabenfenster angezeigt, wenn sich verwaltete Threads in einem Standby- oder Verknüpfungszustand befinden.  
+> In verwaltetem Code wird ein <xref:System.Threading.Tasks.Task>-Objekt mit dem Status <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> oder <xref:System.Threading.Tasks.TaskStatus> möglicherweise nicht im Aufgabenfenster angezeigt, wenn sich verwaltete Threads in einem Standby- oder Verknüpfungszustand befinden.  
   
 ## <a name="tasks-column-information"></a>Informationen in der Spalte „Aufgaben“  
  In den Spalten im Fenster **Aufgaben** sind die folgenden Informationen angegeben.  

@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431161"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Erstellen und Verwalten von Datenbanken und Data-Tier-Anwendungen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 WICHTIG]
->  Die Datenbankprojekte, die in früheren Versionen von enthalten waren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stehen nun in [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] Tools. Weitere Informationen finden Sie unter [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Die Datenbankprojekte, die in früheren Versionen von enthalten waren [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stehen nun in [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] Tools. Weitere Informationen finden Sie unter [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  Können Sie zum Erstellen neuer Datenbanken, Datenbankprojekte neue datenebenenanwendungen (DACs), und Aktualisieren von vorhandenen Datenbanken und Data-Tier-Anwendungen. Sowohl für Datenbankprojekte als auch für DAC-Projekten können Sie Version Control "und" Project-Management-Techniken auf Ihrer Datenbankentwicklung zu ähnelt der Vorgehensweise anwenden, dass Sie diese Techniken auf verwaltetem oder systemeigenem Code anwenden. Sie können Ihr Entwicklungsteam, das Verwalten von Änderungen an Datenbanken und Datenbankserver durch Erstellen einer *DAC-Projekt*, *Datenbankprojekt*, oder ein *Serverprojekt* und Versionskontrolle. Mitglieder Ihres Teams können dann sehen Sie sich zu machen, erstellen und Testen von Änderungen in Dateien eine *isolierten Entwicklungsumgebung*, oder, bevor sie mit dem Team freigeben. Damit können die Codequalität zu gewährleisten, kann Ihr Team Fertig stellen und alle Änderungen für eine bestimmte Version der Datenbank in einer Stagingumgebung zu testen, bevor Sie die Änderungen in der produktionsumgebung bereitstellen.
 

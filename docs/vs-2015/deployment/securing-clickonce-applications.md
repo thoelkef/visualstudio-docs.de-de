@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445027"
 ---
 # <a name="securing-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076197"
  Übergeben Sie Argumente, die über eine Abfragezeichenfolge abgerufen wurden, nie an eine Datenbank oder an die Befehlszeile, ohne die Argumente auf ihre Sicherheit zu überprüfen. Unsichere Argumente sind Argumente, die Datenbank- oder Befehlszeilen-Escapezeichen enthalten, mit denen böswillige Benutzer die Möglichkeit erhalten können, Ihre Anwendung für die Ausführung beliebiger Befehle zu manipulieren.  
   
 > [!NOTE]
->  Abfragezeichenfolgenargumente sind die einzige Möglichkeit, Argumente beim Starten an eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung zu übergeben. Über die Befehlszeile können Sie keine Argumente an eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung übergeben.  
+> Abfragezeichenfolgenargumente sind die einzige Möglichkeit, Argumente beim Starten an eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung zu übergeben. Über die Befehlszeile können Sie keine Argumente an eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung übergeben.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Bereitstellen von verborgenen Assemblys  
  Unter Umständen möchten Sie Ihre Anwendung mit Dotfuscator verbergen, damit andere nicht mit Reverse Engineering den Code ermitteln können. Das Verbergen von Assemblys ist jedoch nicht in den Visual Studio-IDE- oder ClickOnce-Bereitstellungsprozess integriert. Daher müssen Sie die Anwendung außerhalb des Bereitstellungsprozesses verbergen, unter Umständen nach dem Build. Nach der Erstellung des Projekts führen Sie die folgenden Schritte manuell außerhalb von Visual Studio aus:  

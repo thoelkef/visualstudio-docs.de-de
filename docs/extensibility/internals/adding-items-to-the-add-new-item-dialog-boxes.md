@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418692"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Fügen Sie Elemente hinzu, um das Dialogfeld "Neues Element hinzufügen"
 Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dialogfeld beginnt mit dem Registrierungsschlüssel. Siehe die folgenden Registrierungseinträge, die **AddItemTemplates** Abschnitt enthält den Pfad und Name des Verzeichnisses in der die Elemente zur Verfügung gestellt der **neues Element hinzufügen** Dialogfeld abgelegt werden.
 
 > [!NOTE]
->  In der Tabelle, die unmittelbar nach dem Codesegment enthält weitere Informationen zu den Registrierungseintrag an.
+> In der Tabelle, die unmittelbar nach dem Codesegment enthält weitere Informationen zu den Registrierungseintrag an.
 
  In diesem Abschnitt befindet sich unter **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -42,7 +42,7 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Bestimmt die Sortierreihenfolge im Knoten "Struktur" der Dateien angezeigt, der **neues Element hinzufügen** Dialogfeld. |
 
 > [!NOTE]
->  Die GUIDS für die Visual c# und Visual Basic-Projekttypen lauten wie folgt aus:
+> Die GUIDS für die Visual c# und Visual Basic-Projekttypen lauten wie folgt aus:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ Der Prozess zum Hinzufügen von Elementen, die **neues Element hinzufügen** Dia
  Aber Sie müssen nicht alles in einem haben *VSDIR* Datei. Sie haben eine *VSDIR* -Datei für jedes Element in das Verzeichnis. Weitere Informationen finden Sie unter [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md) und [Directory Beschreibung (VSDIR)-Vorlagendateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  Die *VSDIR* Dateien in den Verzeichnissen der Vorlage sind optional. Sollten Sie einfach ein Projektelement im Verzeichnis eingefügt, und zeigt es im der **neues Element hinzufügen** im Dialogfeld können Sie diese Datei ablegen, in dem im angegebenen Vorlagenverzeichnis die **TemplatesDir** Anweisung. Die Datei wird dann im rechten Bereich angezeigt werden die **neues Element hinzufügen** im Dialogfeld für das betreffende Projekt. Wenn jedoch eine lokalisierte Beschriftung für die Datei oder ein Symbol angezeigt werden sollen, Sie müssen enthalten mindestens eine *VSDIR* -Datei in das Verzeichnis für Vorlagen.
+> Die *VSDIR* Dateien in den Verzeichnissen der Vorlage sind optional. Sollten Sie einfach ein Projektelement im Verzeichnis eingefügt, und zeigt es im der **neues Element hinzufügen** im Dialogfeld können Sie diese Datei ablegen, in dem im angegebenen Vorlagenverzeichnis die **TemplatesDir** Anweisung. Die Datei wird dann im rechten Bereich angezeigt werden die **neues Element hinzufügen** im Dialogfeld für das betreffende Projekt. Wenn jedoch eine lokalisierte Beschriftung für die Datei oder ein Symbol angezeigt werden sollen, Sie müssen enthalten mindestens eine *VSDIR* -Datei in das Verzeichnis für Vorlagen.
 
 ## <a name="group-project-items"></a>Gruppe von Projektelementen
  Wenn Vorlagengruppen in Ordnern im enthalten soll die **neues Element hinzufügen** Dialogfeld-Box-Struktur, benötigen Sie darin enthaltenen Unterverzeichnisse unter dem Stammverzeichnis für die Vorlage mit den Elementen. Wenn die **neues Element hinzufügen** im Dialogfeld für Benutzer angezeigt wird, wird auch die Unterordner und können sie Projektelemente aus.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840703"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Beschreibt die Eigenschaften einer Instanz des Symbols.
@@ -220,7 +220,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaSymbol`.
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Ruft die ID der virtuellen Tabelle Form des Symbols ab.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Ruft ein Flag, der angibt, ob der benutzerdefinierte Datentyp "volatile" ist.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Rufen Sie diese Schnittstelle, indem Sie eine der folgenden Methoden aufrufen:

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439696"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Exemplarische Vorgehensweise: Befehlszeilen-Profilerstellung mit Instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Diese exemplarische Vorgehensweise führt Sie durch die Profilerstellung einer e
  Bei der Instrumentierung handelt es sich um eine Profilerstellungsmethode, bei der speziell erstellte Versionen der Binärdateien, für die das Profil erstellt wird, Testfunktionen erhalten, die Zeitsteuerungsdaten zum Funktionseinstieg und -ende in einem instrumentierten Modul sammeln. Da diese Profilerstellungsmethode invasiver als das Sampling ist, fällt der Mehraufwand höher aus. Instrumentierte Binärdateien sind zudem größer als Binärdateien für eine Debug- oder Releaseversion und nicht für die Bereitstellung vorgesehen.  
   
 > [!NOTE]
->  Senden Sie keine instrumentierten Binärdateien an Ihre Kunden. Instrumentierte Binärdateien können verschiedene Risiken bergen. Die Binärdateien enthalten Informationen, die das Reverse Engineering sowie Sicherheitsrisiken für Ihre Anwendung erleichtern.  
+> Senden Sie keine instrumentierten Binärdateien an Ihre Kunden. Instrumentierte Binärdateien können verschiedene Risiken bergen. Die Binärdateien enthalten Informationen, die das Reverse Engineering sowie Sicherheitsrisiken für Ihre Anwendung erleichtern.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>So führen Sie eine Profilerstellung einer PeopleTrax-Anwendung mithilfe der Instrumentierungsmethode durch  
   

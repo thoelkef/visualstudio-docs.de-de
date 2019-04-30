@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419519"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Vorgehensweise: Verfügbarmachen von Code für VBA in einem visuellen Objekt C# Projekt
   Sie können Code in einem Visual C#-Projekt in Visual Basic für Applikationen (VBA) Code verfügbar machen, wenn Sie möchten, dass die zwei Arten von Code für die Interaktion mit anderen.
@@ -42,7 +42,7 @@ ms.locfileid: "56604478"
     Weitere Informationen zu den Dokument-Dateiformaten, die Makros zu unterstützen, finden Sie unter [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).
 
    > [!NOTE]
-   >  Diese Funktion kann in Word-Vorlagenprojekten nicht verwendet werden.
+   > Diese Funktion kann in Word-Vorlagenprojekten nicht verwendet werden.
 
 2. Stellen Sie sicher, dass VBA-Code in das Dokument ohne Aufforderung des Benutzers zum Aktivieren von Makros ausgeführt werden darf. Sie können die Vertrauenswürdigkeit für die Ausführung des VBA-Codes angeben, indem Sie den Speicherort des Office-Projekts der Liste der vertrauenswürdigen Speicherorte in den Trust Center-Einstellungen für Word oder Excel hinzufügen.
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604478"
 10. Wählen Sie im Fenster **Eigenschaften** die **ReferenceAssemblyFromVbaProject** -Eigenschaft aus, und ändern Sie den Wert in **True**.
 
     > [!NOTE]
-    >  Wenn die Arbeitsmappe oder das Dokument ist nicht bereits VBA-Code enthält, oder ist im Dokument VBA-Code nicht vertrauenswürdig ist und ausgeführt, Sie eine Fehlermeldung beim Festlegen erhalten der **ReferenceAssemblyFromVbaProject** Eigenschaft **"true"**. Dies liegt daran, dass Visual Studio das VBA-Projekt im Dokument in dieser Situation nicht ändern kann.
+    > Wenn die Arbeitsmappe oder das Dokument ist nicht bereits VBA-Code enthält, oder ist im Dokument VBA-Code nicht vertrauenswürdig ist und ausgeführt, Sie eine Fehlermeldung beim Festlegen erhalten der **ReferenceAssemblyFromVbaProject** Eigenschaft **"true"**. Dies liegt daran, dass Visual Studio das VBA-Projekt im Dokument in dieser Situation nicht ändern kann.
 
 11. Klicken Sie in der Meldung, die angezeigt wird, auf **OK** . Diese Nachricht daran erinnert Sie, dass wenn Sie hinzufügen, VBA code für die Arbeitsmappe oder Dokument beim Ausführen des Projekts aus [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], der VBA-Code verloren das nächste Mal, die Sie das Projekt erstellen. Dies ist, da das Dokument im Build ausgegeben, dass jedes Mal überschrieben wird, die Sie das Projekt erstellen.
 

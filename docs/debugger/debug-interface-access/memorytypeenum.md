@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855128"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Gibt den Typ des Speichers auf.
@@ -42,7 +42,7 @@ enum MemoryTypeEnum {
 
 `MemTypeAny` Greift auf jede Art von Speicher zu.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Werte in dieser Enumeration werden zum Übergeben der [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) Methode, um den Zugriff auf verschiedene Arten von Speicher zu beschränken.
 
 ## <a name="requirements"></a>Anforderungen

@@ -1,5 +1,5 @@
 ---
-title: T4-Parameter-Anweisung
+title: T4-Parameter-Direktive
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d781358258457dc12a3657cf3ff76273315219c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 4252ad81747576366c0873f2ad65646ee7af7f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422944"
 ---
-# <a name="t4-parameter-directive"></a>T4-Parameter-Anweisung
+# <a name="t4-parameter-directive"></a>T4-Parameter-Direktive
 
 In einer Visual Studio-Textvorlage die `parameter` Richtlinie deklariert Eigenschaften im Vorlagencode, die von Werten aus dem externen Kontext übergeben initialisiert werden. Sie können diese Werte festlegen, wenn Sie Code schreiben, die TextTransformation aufruft.
 
@@ -99,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Abrufen von Argumenten von TextTemplate.exe
 
 > [!IMPORTANT]
->  Die `parameter` Richtlinie ist nicht in festgelegten Werte abgerufen werden die `-a` Parameter, der die `TextTransform.exe` Hilfsprogramm. Um diese Werte zu erhalten, legen Sie `hostSpecific="true"` in die `template` Richtlinie, und verwenden Sie `this.Host.ResolveParameterValue("","","argName")`.
+> Die `parameter` Richtlinie ist nicht in festgelegten Werte abgerufen werden die `-a` Parameter, der die `TextTransform.exe` Hilfsprogramm. Um diese Werte zu erhalten, legen Sie `hostSpecific="true"` in die `template` Richtlinie, und verwenden Sie `this.Host.ResolveParameterValue("","","argName")`.

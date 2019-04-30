@@ -14,12 +14,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387570"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX-Manifest-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58946140"
  Zum Öffnen der **VSIX-Manifest-Designer**, suchen Sie eine Datei "Source.Extension.vsixmanifest" in **Projektmappen-Explorer**, und öffnen Sie die Datei. Wenn die Datei keine gültigen XML-Code enthält, wird der manifest-Designer nicht geöffnet werden.  
   
 > [!NOTE]
->  "Source.Extension.vsixmanifest" wird an "Extension.vsixmanifest" ausgegeben, wenn das Paket erstellt wird.  
+> "Source.Extension.vsixmanifest" wird an "Extension.vsixmanifest" ausgegeben, wenn das Paket erstellt wird.  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  Die **VSIX-Manifest-Designer** enthält vier Abschnitte, die diese Elemente der obersten Ebene des Schemas entsprechen:  

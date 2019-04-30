@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b6c5dcbd3601a6075097a44d2cd5dd625b4a87
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799492"
 ---
 # <a name="symbols-element"></a>Symbols-Element
 Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für nicht verwalteten Code, diese Informationen in der Regel stammen aus den Headerdateien, die vom angegebenen [Extern-Element](../extensibility/extern-element.md). Verwalteten Code verwendet die untergeordneten Elemente des Symbols-Element, um diese Informationen zu definieren.
@@ -41,7 +41,7 @@ Definiert GUIDs und IDs, die durch andere VSCT-Elemente verwendet werden. Für n
 
 |Attribut|Beschreibung|
 |---------------|-----------------|
-|Keine||
+|Keiner||
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

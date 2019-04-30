@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583945"
 ---
 # <a name="late-binding-in-office-solutions"></a>Spätes Binden in Office-Projektmappen
   Einige Typen in der Objektmodelle von Office-Anwendungen bieten Funktionen, die über die Funktionen mit späten Bindung verfügbar ist. Beispielsweise werden einige Methoden und Eigenschaften können je nach Kontext der Office-Anwendung verschiedene Objekttypen zurückgeben, und einige Typen können verschiedene Methoden oder Eigenschaften in unterschiedlichen Kontexten verfügbar machen.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438825"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse
   Können Sie die `ServerDocument` -Klasse in der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] mehrere Aspekte von Anpassungen auf Dokumentebene, zu verwalten, auch wenn Microsoft Office Word und Microsoft Office Excel nicht installiert werden. Sie können die folgenden Aufgaben ausführen:
@@ -38,7 +38,7 @@ ms.locfileid: "60045486"
  Weitere Informationen zu Visual Studio 2010-Tools für Office-Laufzeit und die Office-Erweiterungen für .NET Framework finden Sie unter [Visual Studio-Tools für Office-laufzeitübersicht](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Wenn Sie eine ältere Anwendung verfügen, verwendet der `ServerDocument` -Klasse in der `Visual Studio Tools for Office` System (Version 3.0 Common Language Runtime), wird die `Visual Studio Tools for Office` System (Version 3.0 Runtime) muss installiert sein, auf Computern, auf denen die Anwendung ausgeführt. Die `Visual Studio 2010 Tools for Office runtime` dieser Anwendungen kann nicht ausgeführt werden.
+> Wenn Sie eine ältere Anwendung verfügen, verwendet der `ServerDocument` -Klasse in der `Visual Studio Tools for Office` System (Version 3.0 Common Language Runtime), wird die `Visual Studio Tools for Office` System (Version 3.0 Runtime) muss installiert sein, auf Computern, auf denen die Anwendung ausgeführt. Die `Visual Studio 2010 Tools for Office runtime` dieser Anwendungen kann nicht ausgeführt werden.
 
 ## <a name="CachedData"></a> Arbeiten Sie mit im Dokument zwischengespeicherten Daten
  Die `ServerDocument`-Klasse stellt Member bereit, die Sie verwenden können, um mit dem Datencache in angepassten Dokumenten zu arbeiten. Weitere Informationen über zwischengespeicherte Daten finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md) und [Zugriff auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).

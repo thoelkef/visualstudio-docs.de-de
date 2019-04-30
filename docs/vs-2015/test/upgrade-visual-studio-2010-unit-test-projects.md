@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445907"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Upgrade der Komponententestprojekte von Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Zu [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] gehört die Testpr
  Mit [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] werden für Komponententests verschiedene Änderungen eingeführt. Aufgrund dieser Änderungen sollten Sie die Kompatibilitätsprobleme kennen, die zwischen früheren Versionen von Visual Studio und [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] auftreten. Eine wichtige Änderung bei Komponententests ist die, dass [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] jetzt mehrere Testprojektvorlagen enthält, darunter auch eine Komponententestprojektvorlage. Diese neue Komponententestprojektvorlage enthält neue Komponententests. Darüber hinaus können Komponententests auch in eine andere Komponententestvorlage mit dem Namen Projektvorlage für Tests der programmierten UI aufgenommen werden. Weitere Informationen finden Sie unter [Upgrading Tests from Earlier Versions of Visual Studio (Upgrade der Tests von früheren Visual Studio-Versionen)](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). In den neuen Komponententestprojekten ist die Datei mit Testeinstellungen nicht mehr standardmäßig enthalten. Dadurch wurde die Leistung der Komponententests verbessert. Zur Gewährleistung der Kompatibilität können Sie dennoch bereits vorhandene Testprojekte verwenden, die Sie mit Visual Studio 2010 erstellt haben. Es wird jedoch empfohlen, die mit dem Testprojekt verknüpfte Testeinstellungsdatei zur Verbesserung der Leistung zu entfernen, sofern Sie diese Datei nicht für einen bestimmten Zweck benötigen. So sollten Sie die Testeinstellungsdatei beispielsweise nicht entfernen, wenn die Komponententests in einer verteilten Umgebung ausgeführt werden oder wenn bestimmte Diagnosedaten erfasst werden müssen. Bei Bedarf können Sie auch die neue Komponententestprojektvorlage oder die Projektvorlage für Tests der programmierten UI manuell mit einer Testeinstellungsdatei erweitern.
 
 > [!NOTE]
->  Vorhandene Komponententests in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1-Testprojekten können problemlos in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 und [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] verwendet werden. Beim Öffnen eines Visual Studio 2010-Testprojekts mit Ihren Komponententests in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oder umgekehrt werden an den Testprojektdateien keine Änderungen vorgenommen.
+> Vorhandene Komponententests in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1-Testprojekten können problemlos in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 und [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] verwendet werden. Beim Öffnen eines Visual Studio 2010-Testprojekts mit Ihren Komponententests in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oder umgekehrt werden an den Testprojektdateien keine Änderungen vorgenommen.
 
 > [!CAUTION]
->  C++/CLI-Projekte, die das 11.0-Toolset nutzen, d.h. in Visual Studio 2012 erstellte Projekte, können in Visual Studio 2010 nicht geöffnet werden. Diese Einschränkung gilt für alle C++/CLI-Projekte, nicht nur für C++/CLI-Komponententestprojekte.
+> C++/CLI-Projekte, die das 11.0-Toolset nutzen, d.h. in Visual Studio 2012 erstellte Projekte, können in Visual Studio 2010 nicht geöffnet werden. Diese Einschränkung gilt für alle C++/CLI-Projekte, nicht nur für C++/CLI-Komponententestprojekte.
 
 > [!NOTE]
->  Die neuen Komponententests können mit dem Befehl vstest.console.exe über die Befehlszeile ausgeführt werden. Weitere Informationen zur Verwendung des Befehls vstest.console.exe finden Sie unter [VSTest.Console.exe command-line options (Befehlszeilenoptionen für VSTest.Console.exe )](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11). Alternativ können Sie den Befehl mit dem Hilfe-Schalter ausführen: **vstest.console.exe /?**. Ihre vorhandenen Komponententests können Sie weiterhin mit dem Befehl MStest.exe ausführen. Weitere Informationen finden Sie unter [Run automated tests from the command line using MSTest (Ausführen von automatisierten Tests über die Befehlszeile mithilfe von MSTest)](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) und [Befehlszeilenoptionen für MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> Die neuen Komponententests können mit dem Befehl vstest.console.exe über die Befehlszeile ausgeführt werden. Weitere Informationen zur Verwendung des Befehls vstest.console.exe finden Sie unter [VSTest.Console.exe command-line options (Befehlszeilenoptionen für VSTest.Console.exe )](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11). Alternativ können Sie den Befehl mit dem Hilfe-Schalter ausführen: **vstest.console.exe /?**. Ihre vorhandenen Komponententests können Sie weiterhin mit dem Befehl MStest.exe ausführen. Weitere Informationen finden Sie unter [Run automated tests from the command line using MSTest (Ausführen von automatisierten Tests über die Befehlszeile mithilfe von MSTest)](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) und [Befehlszeilenoptionen für MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Eine weitere wichtige Änderung stellt der neue Test-Explorer dar. Einige Testfenster, wie etwa das Testansichtsfenster, die Sie von früheren Versionen von Visual Studio kennen, sind in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nicht mehr enthalten. Mit dem Test-Explorer können Entwickler und Teams die Komponententests besser in ihre Verfahren für die Softwareentwicklung integrieren. Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausführen von Komponententests mit dem Test-Explorer)](../test/run-unit-tests-with-test-explorer.md).
 

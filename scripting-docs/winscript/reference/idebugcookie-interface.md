@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974513"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie-Schnittstelle
 Ermöglicht die Debug-Cookies festgelegt werden, für die Verwendung mit der `IMachineDebugManagerCookie` Schnittstelle. Weitere Informationen finden Sie unter [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md). Diese Schnittstelle wird durch den Prozess Debug-Manager (PDM) implementiert und von der Skriptdebugger genutzt werden.  

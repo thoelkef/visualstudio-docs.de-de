@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440398"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit
   Sie können eine Microsoft Office Word-Dokument und Microsoft Office Excel-Arbeitsmappe zur Laufzeit Steuerelemente hinzugefügt. Sie können auch zur Laufzeit entfernen. Steuerelemente, die Sie hinzufügen oder entfernen zur Laufzeit heißen *dynamische Steuerelemente*.
@@ -74,7 +74,7 @@ ms.locfileid: "60075804"
  Statische Steuerelemente zur Laufzeit kann nicht entfernt werden. Wenn Sie versuchen, ein statisches Steuerelement mit der `Delete`- oder der `Remove`-Methode zu entfernen, wird eine <xref:Microsoft.Office.Tools.CannotRemoveControlException> ausgelöst.
 
 > [!NOTE]
->  Vermeiden Sie es, Steuerelemente im `Shutdown` -Ereignishandlerzeitraum des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das `Shutdown` -Ereignis ausgelöst wird. Wenn Sie Steuerelemente vor dem Schließen des Dokuments entfernen möchten, fügen Sie den Code dem Ereignishandler für ein anderes Ereignis hinzu, z. B. <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> oder <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> für Word oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> für Excel.
+> Vermeiden Sie es, Steuerelemente im `Shutdown` -Ereignishandlerzeitraum des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das `Shutdown` -Ereignis ausgelöst wird. Wenn Sie Steuerelemente vor dem Schließen des Dokuments entfernen möchten, fügen Sie den Code dem Ereignishandler für ein anderes Ereignis hinzu, z. B. <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> oder <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> für Word oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>oder <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> für Excel.
 
 ## <a name="HostControls"></a> Hinzufügen von Hoststeuerelementen zu Dokumenten
 
@@ -103,7 +103,7 @@ Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dy
  Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dynamisch erstellten Windows Forms-Steuerelemente aus dem Dokument entfernt. Sie können der Projektmappe Code hinzufügen, damit die Steuerelemente neu erstellt werden, wenn das Dokument erneut geöffnet wird. Wenn Sie dynamische Windows Forms-Steuerelemente mithilfe eines VSTO-Add-Ins erstellen, werden die ActiveX-Wrapper für die Steuerelemente im Dokument beibehalten. Weitere Informationen finden Sie unter [beibehalten von dynamischen Steuerelementen in Office-Dokumente](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
 > [!NOTE]
->  Windows Forms-Steuerelemente können geschützten Dokumenten nicht programmgesteuert hinzugefügt werden. Wenn Sie den Schutz eines Word-Dokuments oder Excel-Arbeitsblatts programmgesteuert aufheben, um ein Steuerelement hinzuzufügen, müssen Sie zusätzlichen Code zum Entfernen des ActiveX-Wrappers des Steuerelements beim Schließen des Dokuments schreiben. Der ActiveX-Wrapper des Steuerelements wird nicht automatisch aus geschützten Dokumenten gelöscht.
+> Windows Forms-Steuerelemente können geschützten Dokumenten nicht programmgesteuert hinzugefügt werden. Wenn Sie den Schutz eines Word-Dokuments oder Excel-Arbeitsblatts programmgesteuert aufheben, um ein Steuerelement hinzuzufügen, müssen Sie zusätzlichen Code zum Entfernen des ActiveX-Wrappers des Steuerelements beim Schließen des Dokuments schreiben. Der ActiveX-Wrapper des Steuerelements wird nicht automatisch aus geschützten Dokumenten gelöscht.
 
 ### <a name="add-custom-controls"></a>Hinzufügen von benutzerdefinierten Steuerelementen
  Wenn Sie ein <xref:System.Windows.Forms.Control> hinzufügen möchten, das von den verfügbaren Hilfsmethoden nicht unterstützt wird, z. B. ein benutzerdefiniertes Benutzersteuerelement, verwenden Sie folgende Methoden:

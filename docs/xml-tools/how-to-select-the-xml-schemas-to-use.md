@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007394"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Wählen Sie die XML-Schemas verwenden
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Auswählen der zu verwendenden XML-Schemas
 
 Der XML-Editor stellt einen Schemacache im Verzeichnis der *%VSInstallDir%\xml\Schemas* Verzeichnis. Der Schemacache enthält bekannte XML-Schemata, die für IntelliSense und zur Validierung von XML-Dokumenten verwendet werden.
 

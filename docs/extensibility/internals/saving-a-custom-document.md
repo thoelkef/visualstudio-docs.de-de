@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427466"
 ---
 # <a name="saving-a-custom-document"></a>Speichern eines benutzerdefinierten Dokuments
 Umgebungshandles der **speichern**, **speichern**, und **Alles speichern** Befehle. Wenn ein Benutzer klickt **speichern**, **speichern**, **oder speichern Sie alle** auf die **Datei** Menü oder schließt die Projektmappe, wodurch alle speichern, die folgenden erfolgt.
@@ -39,7 +39,7 @@ Umgebungshandles der **speichern**, **speichern**, und **Alles speichern** Befeh
      Bei einem benutzerdefinierten Editor ist die Kommunikation zwischen das dokumentendatenobjekt und das Projekt privat. Daher werden speziellen persistenzaspekte zwischen diesen beiden Objekten behandelt.
 
     > [!NOTE]
-    >  Wenn Sie Ihre eigenen Persistenz implementieren, müssen Sie unbedingt Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> Methode, um Zeit zu sparen. Diese Methode überprüft, um sicherzustellen, dass sie zum Speichern der Datei sicher ist (z. B. die Datei ist nicht schreibgeschützt).
+    > Wenn Sie Ihre eigenen Persistenz implementieren, müssen Sie unbedingt Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> Methode, um Zeit zu sparen. Diese Methode überprüft, um sicherzustellen, dass sie zum Speichern der Datei sicher ist (z. B. die Datei ist nicht schreibgeschützt).
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

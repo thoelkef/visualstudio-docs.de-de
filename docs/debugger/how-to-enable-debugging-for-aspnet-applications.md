@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848386"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debuggen von ASP.NET- oder ASP.NET Core-apps in Visual Studio
 
@@ -184,9 +184,9 @@ Es gibt verschiedene Möglichkeiten zum Veröffentlichen von apps in IIS. Diese 
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von ASP.NET: Systemanforderungen](aspnet-debugging-system-requirements.md)
-- [Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto](how-to-run-the-worker-process-under-a-user-account.md)
-- [Gewusst wie: Herausfinden des ASP.NET-Prozessnamens](how-to-find-the-name-of-the-aspnet-process.md)
+- [Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto](how-to-run-the-worker-process-under-a-user-account.md)
+- [Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](how-to-find-the-name-of-the-aspnet-process.md)
 - [Debug deployed web applications (Debuggen bereitgestellter Webanwendungen)](debugging-deployed-web-applications.md)
 - [Exemplarische Vorgehensweise: Debuggen eines Web Forms](walkthrough-debugging-a-web-form.md)
-- [Gewusst wie: Debuggen von ASP.NET-Ausnahmen](how-to-debug-aspnet-exceptions.md)
-- [Debug web applications: Errors and troubleshooting (Debuggen von Webanwendungen: Fehler und Problembehandlung)](debugging-web-applications-errors-and-troubleshooting.md)
+- [Vorgehensweise: Debuggen von ASP.NET-Ausnahmen](how-to-debug-aspnet-exceptions.md)
+- [Debuggen von Webanwendungen: Fehler und Problembehandlung](debugging-web-applications-errors-and-troubleshooting.md)

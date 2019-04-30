@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000324"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Vorgehensweise: Programmgesteuertes Suchen eines bestimmten Kontakts
   Dieses Beispiel durchsucht einen Outlook-Kontaktordner über den Vor- und Nachnamen nach einem bestimmten Kontakt. Im Beispiel wird vorausgesetzt, dass ein Kontakt namens **John Evans** im Kontaktordner vorhanden ist.

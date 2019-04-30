@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445367"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms-Steuerelemente in Office-Dokumente – Übersicht
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word Sie können Windows Forms-Steuerelemente in das Dokument oder die Arbeitsmappe in Ihrem Projekt zur Entwurfszeit hinzufügen, oder Sie können diese Steuerelemente programmgesteuert zur Laufzeit hinzufügen. Sie können diese Steuerelemente programmgesteuert zu allen geöffneten Dokumenten oder Arbeitsblatt zur Laufzeit in einem VSTO-Add-in für Excel oder Word hinzufügen.
@@ -109,7 +109,7 @@ Auf einem Windows Form.
 - **Vertikalen Abstand ausgleichen**
 
 > [!NOTE]
->  In Word-Projekten sind diese Schaltflächen nur aktiviert, wenn die ausgewählten Steuerelemente nicht am Text ausgerichtet sind. Standardmäßig werden Steuerelemente, die Sie dem Dokument zur Entwurfszeit hinzufügen, am Text ausgerichtet.
+> In Word-Projekten sind diese Schaltflächen nur aktiviert, wenn die ausgewählten Steuerelemente nicht am Text ausgerichtet sind. Standardmäßig werden Steuerelemente, die Sie dem Dokument zur Entwurfszeit hinzufügen, am Text ausgerichtet.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Verhindern Sie, dass die alte Daten in Excel-Arbeitsmappen angezeigt werden, während des Ladens
  Wenn Sie Dokumenten oder Arbeitsmappen zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, verbleiben die Steuerelemente im Dokument, wenn der Benutzer das Dokument schließt. Steuerelemente, die zur Entwurfszeit hinzufügt wurden, werden auch als *statische*Steuerelemente bezeichnet.

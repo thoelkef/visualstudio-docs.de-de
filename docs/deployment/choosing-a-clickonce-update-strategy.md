@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406823"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Auswählen einer Strategie für die ClickOnce-Aktualisierung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann automatische Anwendungsupdates bereitstellen. Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung liest in regelmäßigen Abständen die Bereitstellungsmanifestdatei, um zu prüfen, ob Anwendungsupdates verfügbar sind. Falls verfügbar, wird die neue Version der Anwendung heruntergeladen und ausgeführt. Aus Leistungsgründen werden nur die Dateien heruntergeladen, die sich geändert haben.
@@ -31,10 +31,10 @@ ms.locfileid: "56608491"
  Außerdem können Sie bestimmen, wie oft die Anwendung nach Updates suchen soll, und Sie können Updates als obligatorisch kennzeichnen.
 
 > [!NOTE]
->  Für Anwendungsupdates ist eine Netzwerkverbindung erforderlich. Wenn keine Netzwerkverbindung vorhanden ist, wird die Anwendung unabhängig von der ausgewählten Updatestrategie ausgeführt, ohne nach Updates zu suchen.
+> Für Anwendungsupdates ist eine Netzwerkverbindung erforderlich. Wenn keine Netzwerkverbindung vorhanden ist, wird die Anwendung unabhängig von der ausgewählten Updatestrategie ausgeführt, ohne nach Updates zu suchen.
 
 > [!NOTE]
->  In .NET Framework 2.0 und .NET Framework 3.0, jedes Mal, wenn Ihre Anwendung Überprüfungen für Updates, vor oder nach dem Start oder mithilfe der \<XRef: System.Deployment.Application >-APIs, die Sie festlegen müssen `deploymentProvider` im Bereitstellungsmanifest. Das `deploymentProvider`-Element entspricht in Visual Studio dem Feld **Updatepfad**, das sich im Dialogfeld **Updates** der Registerkarte **Veröffentlichen** befindet. Diese Regel wird in .NET Framework 3.5 gelockert. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> In .NET Framework 2.0 und .NET Framework 3.0, jedes Mal, wenn Ihre Anwendung Überprüfungen für Updates, vor oder nach dem Start oder mithilfe der \<XRef: System.Deployment.Application >-APIs, die Sie festlegen müssen `deploymentProvider` im Bereitstellungsmanifest. Das `deploymentProvider`-Element entspricht in Visual Studio dem Feld **Updatepfad**, das sich im Dialogfeld **Updates** der Registerkarte **Veröffentlichen** befindet. Diese Regel wird in .NET Framework 3.5 gelockert. Weitere Informationen finden Sie unter [Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
 ## <a name="check-for-updates-after-application-startup"></a>Nach dem Start der Anwendung nach Updates suchen
  Bei dieser Strategie versucht die Anwendung während der Ausführung, die Datei mit dem Bereitstellungsmanifest im Hintergrund aufzufinden und zu lesen. Wenn ein Update verfügbar ist, wird der Benutzer beim nächsten Ausführen der Anwendung aufgefordert, das Update zu herunterladen und zu installieren.
@@ -76,7 +76,7 @@ ms.locfileid: "56608491"
  In bestimmten Situationen ist es erforderlich, dass die Benutzer ausschließlich eine aktualisierte Version der Anwendung ausführen. Angenommen, Sie nehmen eine Änderung an einer externen Ressource vor, z. B. an einem Webdienst, aufgrund derer die ältere Version der Anwendung nicht mehr ordnungsgemäß funktioniert. In dieser Situation würden Sie das Update als obligatorisch kennzeichnen und damit verhindern, dass Benutzer die ältere Version ausführen.
 
 > [!NOTE]
->  Auch wenn mit den anderen Updatestrategien Updates als obligatorisch gekennzeichnet werden können, ist es nur mit der Aktivierung von **Vor Start der Anwendung** möglich, das Ausführen einer älteren Version zu verhindern. Wenn das obligatorische Update beim Start ermittelt wird, muss der Benutzer entweder das Update akzeptieren oder die Anwendung schließen.
+> Auch wenn mit den anderen Updatestrategien Updates als obligatorisch gekennzeichnet werden können, ist es nur mit der Aktivierung von **Vor Start der Anwendung** möglich, das Ausführen einer älteren Version zu verhindern. Wenn das obligatorische Update beim Start ermittelt wird, muss der Benutzer entweder das Update akzeptieren oder die Anwendung schließen.
 
  Um ein Update als obligatorisch zu kennzeichnen, klicken Sie im Dialogfeld **Anwendungsupdates** auf **Geben Sie die mindestens erforderliche Version für diese Anwendung an**. Geben Sie anschließend die Veröffentlichungsversion an (**Hauptversion**, **Nebenversion**, **Build**, **Revision**). Sie gibt die niedrigste Versionsnummer der Anwendung an, die installiert werden kann.
 
@@ -122,4 +122,4 @@ ms.locfileid: "56608491"
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Secure ClickOnce applications (Sichern von ClickOnce-Anwendungen)](../deployment/securing-clickonce-applications.md)
 - [How ClickOnce performs application updates (Ausführen von Anwendungsupdates durch ClickOnce)](../deployment/how-clickonce-performs-application-updates.md)
-- [How to: Manage updates for a ClickOnce application (Vorgehensweise: Verwalten von Updates für ClickOnce-Anwendungen)](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Vorgehensweise: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

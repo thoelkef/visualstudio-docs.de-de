@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446965"
 ---
 # <a name="ribbon-overview"></a>Übersicht über das Menüband
   Die Multifunktionsleiste ist eine Möglichkeit zum Organisieren verwandter Befehle, damit sie leichter zu finden sind. Befehle werden als Steuerelemente auf dem Menüband angezeigt. Steuerelemente sind in organisiert *Gruppen* entlang einer horizontalen Leiste am oberen Rand eines Anwendungsfensters. Verwandte Gruppen sind auf Registerkarten organisiert.
@@ -49,7 +49,7 @@ ms.locfileid: "60040145"
 - Fügen Sie einer benutzerdefinierten oder integrierten Registerkarte benutzerdefinierte Gruppen hinzu.
 
   > [!NOTE]
-  >  Eine integrierte Registerkarte oder Gruppe ist, die auf dem Menüband einer Microsoft Office-Anwendung ist bereits vorhanden. Z. B. die **Daten** Registerkarte ist eine integrierte Registerkarte in Excel. Die **Verbindungen** Gruppe ist eine integrierte Gruppe auf die **Daten** Registerkarte.
+  > Eine integrierte Registerkarte oder Gruppe ist, die auf dem Menüband einer Microsoft Office-Anwendung ist bereits vorhanden. Z. B. die **Daten** Registerkarte ist eine integrierte Registerkarte in Excel. Die **Verbindungen** Gruppe ist eine integrierte Gruppe auf die **Daten** Registerkarte.
 
 - Fügen Sie einer benutzerdefinierten Gruppe benutzerdefinierte Steuerelemente hinzu.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040145"
 - Erstellen von Menübändern für Outlook *Inspektoren*. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Ein Inspektor ist ein Fenster, das geöffnet wird, wenn der Benutzer bestimmte Aufgaben ausführt, z. B. eine E-Mail verfasst.
+    > Ein Inspektor ist ein Fenster, das geöffnet wird, wenn der Benutzer bestimmte Aufgaben ausführt, z. B. eine E-Mail verfasst.
 
 - Wählen Sie, welches Menüband zur Laufzeit angezeigt.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040145"
  Überschreiben, um ein Menüband zur Laufzeit auszuwählen, die `CreateRibbonExtensibilityObject` -Methode in der die `ThisAddin`, `ThisWorkbook`, oder `ThisDocument` Klasse des Projekts, und geben Sie im Menüband aus, die Sie anzeigen möchten. Das folgende Beispiel überprüft den Wert eines Felds mit dem Namen `myCondition` und das entsprechende Menüband zurückgegeben.
 
 > [!NOTE]
->  In diesem Beispiel verwendete Syntax gibt ein Menüband, die mithilfe der **Menüband (visueller Designer)** Element. Die Syntax für die Rückgabe eines Menübands, die mit einem **Menüband (XML)** Element ist etwas anders. Weitere Informationen zur Rückgabe einer **Menüband (XML)** Element, finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md).
+> In diesem Beispiel verwendete Syntax gibt ein Menüband, die mithilfe der **Menüband (visueller Designer)** Element. Die Syntax für die Rückgabe eines Menübands, die mit einem **Menüband (XML)** Element ist etwas anders. Weitere Informationen zur Rückgabe einer **Menüband (XML)** Element, finden Sie unter [Menüband-XML-](../vsto/ribbon-xml.md).
 
  Fügen Sie den folgenden Code hinzu:
 

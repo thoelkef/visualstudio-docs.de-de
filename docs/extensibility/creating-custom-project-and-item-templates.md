@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926431"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Erstellen von benutzerdefinierten Projekt- und Elementvorlagen
 
@@ -80,7 +80,7 @@ Für Szenarien für einfache Vorlage erstellen, sollten Sie verwenden die **Vorl
 
 4. Die Projektmappe erstellen, und drücken Sie **F5**. Die experimentelle Instanz angezeigt wird.
 
-5. Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei** > **neu**  >  **Projekt**) in den Visual C# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage aufgeführt, die der **neues Element hinzufügen** Dialogfeld. Anzeigen der **neues Element hinzufügen** Dialogfeld aus der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen** > **neues Element**).
+5. Für ein Projektvorlagenprojekt, sollte Ihre Projektvorlage aufgeführt, die der **neues Projekt** Dialogfeld (**Datei** > **neu**  >  **Projekt**) in den Visual c# oder Visual Basic-Knoten. Für ein Elementvorlagenprojekt, sollte die Elementvorlage aufgeführt, die der **neues Element hinzufügen** Dialogfeld. Anzeigen der **neues Element hinzufügen** Dialogfeld aus der **Projektmappen-Explorer**, wählen Sie den Projektknoten, und klicken Sie auf **hinzufügen** > **neues Element**).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442427"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generieren von Code aus UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
 2. In der **Eigenschaften** Fenster, wählen Sie den Dropdown-Pfeil in der **Stereotype** -Eigenschaft, und wählen Sie dann das Kontrollkästchen für den Stereotyp, den Sie anwenden möchten.  
 
    > [!TIP]
-   >  Wenn die C#-Stereotype nicht angezeigt werden, aktivieren Sie das C#-Profil für das Modell oder ein Paket, das die Modellelemente enthält, für die Sie sich interessieren. Wählen Sie das Paket oder der Stamm des Modells in **UML-Modell-Explorer**. Klicken Sie dann in der **Eigenschaften** Fenster wählen **Profil**, und aktivieren Sie dann das C#-Profil.  
+   > Wenn die C#-Stereotype nicht angezeigt werden, aktivieren Sie das C#-Profil für das Modell oder ein Paket, das die Modellelemente enthält, für die Sie sich interessieren. Wählen Sie das Paket oder der Stamm des Modells in **UML-Modell-Explorer**. Klicken Sie dann in der **Eigenschaften** Fenster wählen **Profil**, und aktivieren Sie dann das C#-Profil.  
 
 3. Erweitern Sie die **Stereotype** Eigenschaft, um die zusätzlichen Eigenschaften anzuzeigen, die Sie festlegen können.  
 
@@ -144,7 +144,7 @@ Verwenden Sie zum Generieren von Visual c#-.NET-Code aus UML-Klassendiagrammen i
  Für ein Modellelement können mehrere Vorlagen übernommen werden. Sie können mehr als eine Datei aus jedem Modellelement generieren.  
 
 > [!NOTE]
->  Die Bindungen am Stamm des Modells fungieren für alle Elemente im Modell als Standard. Öffnen Sie zum Anzeigen dieser standardbindungen **UML-Modell-Explorer**. Öffnen Sie das Modellierungsprojekt-Kontextmenü, und wählen Sie dann **Codegenerierung einrichten**. Alternativ können Sie den Stamm des Modells im UML-Modell-Explorer auswählen. Wählen Sie im Eigenschaftenfenster **[...]**  in die **Text Template Bindings** Eigenschaft. Die Bindungen werden nicht angezeigt, bis Sie verwendet haben, die **Code generieren** mindestens einmal Befehl. Vorlagenbindungen können keinem Diagramm angefügt werden.  
+> Die Bindungen am Stamm des Modells fungieren für alle Elemente im Modell als Standard. Öffnen Sie zum Anzeigen dieser standardbindungen **UML-Modell-Explorer**. Öffnen Sie das Modellierungsprojekt-Kontextmenü, und wählen Sie dann **Codegenerierung einrichten**. Alternativ können Sie den Stamm des Modells im UML-Modell-Explorer auswählen. Wählen Sie im Eigenschaftenfenster **[...]**  in die **Text Template Bindings** Eigenschaft. Die Bindungen werden nicht angezeigt, bis Sie verwendet haben, die **Code generieren** mindestens einmal Befehl. Vorlagenbindungen können keinem Diagramm angefügt werden.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>So fügen Sie Textvorlagenbindungen an ein Paket oder anderes Modellelement an  
 

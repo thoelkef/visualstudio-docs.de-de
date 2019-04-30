@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414741"
 ---
 # <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
 Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL), in Visual Studio anpassen. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.
@@ -59,7 +59,7 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
  Um eine Eigenschaft weiterzuleiten, definieren Sie einen Typdeskriptor für die Domäne an. Wenn Sie eine domänenbeziehung zwischen zwei Domänenklassen haben, können Sie einen Typdeskriptor für die Domäne, in der ersten Klasse auf den Wert einer Domäneneigenschaft in der zweiten Domänenklasse eine Domäneneigenschaft fest. Für, wenn Sie z. B. eine Beziehung zwischen einer **Buch** Domänenklasse und ein **Autor** Domänenklasse, können Sie eine domänentypdeskriptor stellen die **Namen** Eigenschaft eine Des Buchs **Autor** im Eigenschaftenfenster angezeigt werden, wenn der Benutzer das Buch auswählt.
 
 > [!NOTE]
->  Eigenschaft Weiterleitung hat Auswirkungen auf die nur im Eigenschaftenfenster aus, wenn der Benutzer ein Modell bearbeitet werden. Es werden keine Domäneneigenschaft auf der empfangenden Klasse definiert. Wenn Sie die weitergeleiteten Domäneneigenschaft in andere Teile der DSL-Definition oder im Programmcode zugreifen möchten, müssen Sie das Element für die Weiterleitung zugreifen.
+> Eigenschaft Weiterleitung hat Auswirkungen auf die nur im Eigenschaftenfenster aus, wenn der Benutzer ein Modell bearbeitet werden. Es werden keine Domäneneigenschaft auf der empfangenden Klasse definiert. Wenn Sie die weitergeleiteten Domäneneigenschaft in andere Teile der DSL-Definition oder im Programmcode zugreifen möchten, müssen Sie das Element für die Weiterleitung zugreifen.
 
  Das folgende Verfahren wird davon ausgegangen, dass Sie eine DSL erstellt haben. Die ersten Schritten werden die Voraussetzungen zusammengefasst.
 
@@ -117,7 +117,7 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
         Ein neuer Eintrag wird unter der **Domänentypen** Knoten.
 
        > [!WARNING]
-       >  Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.
+       > Das Menüelement ist nicht für den Stammknoten des DSL, die **Domänentypen** Knoten.
 
    2. Legen Sie den Namen und den Namespace des neuen Typs im Eigenschaftenfenster an.
 
@@ -177,7 +177,7 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
   Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
->  Fügen Sie den Code in einer separaten Codedatei in die **Dsl** Projekt.
+> Fügen Sie den Code in einer separaten Codedatei in die **Dsl** Projekt.
 
  Zum Beispiel:
 
@@ -207,7 +207,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Sie können eine Liste von Werten für einen Benutzer zur Auswahl bereitstellen.
 
 > [!NOTE]
->  Diese Technik bietet es sich um eine Liste von Werten, die zur Laufzeit ändern können. Wenn Sie eine Liste angeben, die nicht geändert wird, können Sie stattdessen einen enumerierten Typ mit dem Typ der Eigenschaft "Domain" Ihre mithilfe.
+> Diese Technik bietet es sich um eine Liste von Werten, die zur Laufzeit ändern können. Wenn Sie eine Liste angeben, die nicht geändert wird, können Sie stattdessen einen enumerierten Typ mit dem Typ der Eigenschaft "Domain" Ihre mithilfe.
 
  Um eine Liste von Standardwerten zu definieren, fügen Sie für Ihre Domäneneigenschaft ein CLR-Attribut, das die folgende Form aufweist:
 

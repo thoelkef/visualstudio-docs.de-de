@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436275"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs der Visual Studio-Symbolleisten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58958089"
 Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, und der Gruppen enthalten. Diese Werte werden in der VSCT-Dateien definiert, die als Teil der Visual Studio SDK installiert sind. Weitere Informationen finden Sie unter [IDE-Defined Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Viele der in Symbolleisten in Visual Studio zur Verfügung sind nicht definiert, von Visual Studio und ihrer GUID und ID-Werte sind nicht öffentlich. Dieses Thema enthält nur die Symbolleisten, die in Visual Studio SDK VSCT-Dateien definiert sind.
+> Viele der in Symbolleisten in Visual Studio zur Verfügung sind nicht definiert, von Visual Studio und ihrer GUID und ID-Werte sind nicht öffentlich. Dieses Thema enthält nur die Symbolleisten, die in Visual Studio SDK VSCT-Dateien definiert sind.
 
  Weitere Informationen zum Arbeiten mit IDE-Objekten, die in der VSCT-Dateien definiert sind, finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
 
@@ -110,7 +110,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
  Symbolleisten können angezeigt werden direkt in der IDE oder in Toolfenstern wie z. B. **Projektmappen-Explorer**. Da das Toolfenster nicht in der VSCT-Dateien definiert sind, müssen die Symbolleisten des Toolfensters nicht definierte übergeordneten Elementen. Stattdessen werden diese im Code platziert. Die folgende Tabelle zeigt die Symbolleisten, die Toolfenster in der IDE angezeigt werden und die darin enthaltenen Befehlsgruppen.
 
 > [!NOTE]
->  Verwenden Sie die GUID, Symbolleisten und Gruppen `guidSHLMainMenu`, sofern nicht anders angegeben, mit der GUID: ID-Syntax. Eine GUID für eine Symbolleiste angegeben ist, gilt er auch den Gruppen, die von dieser Symbolleiste abgeleitet.
+> Verwenden Sie die GUID, Symbolleisten und Gruppen `guidSHLMainMenu`, sofern nicht anders angegeben, mit der GUID: ID-Syntax. Eine GUID für eine Symbolleiste angegeben ist, gilt er auch den Gruppen, die von dieser Symbolleiste abgeleitet.
 
 |Toolfenster|Symbolleiste|Gruppen|
 |-----------------|-------------|------------|

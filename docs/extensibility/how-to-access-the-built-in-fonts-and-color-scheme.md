@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415517"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbe ccheme
 Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein Schema von Schriftarten und Farben, die im Editor-Fenster zugeordnet ist. Sie erreichen dieses Schema über die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Schnittstelle.
@@ -39,7 +39,7 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio verfügt über ein 
      Diese GUID wird verwendet, um eine Kategorie eindeutig zu identifizieren. Diese Kategorie wird wiederverwendet, die IDE Standard-Schriftarten und Farben-Spezifikation.
 
     > [!NOTE]
-    >  Beim Abrufen von Daten von Schriftart und Farbe mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> oder andere Schnittstellen, VSPackages verwenden diese GUID, um integrierte Informationen zu verweisen.
+    > Beim Abrufen von Daten von Schriftart und Farbe mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> oder andere Schnittstellen, VSPackages verwenden diese GUID, um integrierte Informationen zu verweisen.
 
 2. Die Kategorie der Name muss eine Zeichenfolgentabelle in die VSPackage Ressourcen hinzugefügt werden (*RC*) Datei, sodass sie lokalisiert werden kann, je nach Bedarf, wenn Sie in der IDE angezeigt.
 

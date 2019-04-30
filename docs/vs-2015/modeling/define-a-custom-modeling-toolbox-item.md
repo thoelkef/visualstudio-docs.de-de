@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433183"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
 - Ein Paar von Klassen, das durch eine Zuordnung verknüpft ist, um das Observer-Muster darzustellen.  
   
 > [!NOTE]
->  Sie können diese Methode verwenden, um Elementtools zu erstellen. Das heißt, Sie können Tools erstellen, die Sie aus der Toolbox in ein Diagramm ziehen. Sie können keine Connector-Tools erstellen.  
+> Sie können diese Methode verwenden, um Elementtools zu erstellen. Das heißt, Sie können Tools erstellen, die Sie aus der Toolbox in ein Diagramm ziehen. Sie können keine Connector-Tools erstellen.  
   
 ## <a name="DefineTool"></a> Definieren ein benutzerdefinierten Modellierungstools  
   
@@ -136,7 +136,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
  Sie können die Bitmapdatei in Visual Studio bearbeiten und ihre Höhe und Breite im Eigenschaftenfenster auf 16 festlegen.  
   
 > [!NOTE]
->  Wenn Sie beginnen, eine TBXINFO-Datei zu verwenden, nachdem Sie mit der alleinigen Verwendung von Diagrammdateien experimentiert haben, stellen sie möglicherweise fest, dass die Toolbox sowohl die alten als auch die neuen Versionen eines Toolboxelements enthält. Dies kann auch auftreten, wenn der Name der Diagrammdatei in der TBXINFO-Datei falsch eingegeben wurde. Wählen Sie in diesem Fall auf das Kontextmenü der Toolbox **Toolbox zurücksetzen**. Die benutzerdefinierten Toolboxelemente werden ausgeblendet. Starten Sie Visual Studio neu; daraufhin werden die richtigen benutzerdefinierten Elemente angezeigt.  
+> Wenn Sie beginnen, eine TBXINFO-Datei zu verwenden, nachdem Sie mit der alleinigen Verwendung von Diagrammdateien experimentiert haben, stellen sie möglicherweise fest, dass die Toolbox sowohl die alten als auch die neuen Versionen eines Toolboxelements enthält. Dies kann auch auftreten, wenn der Name der Diagrammdatei in der TBXINFO-Datei falsch eingegeben wurde. Wählen Sie in diesem Fall auf das Kontextmenü der Toolbox **Toolbox zurücksetzen**. Die benutzerdefinierten Toolboxelemente werden ausgeblendet. Starten Sie Visual Studio neu; daraufhin werden die richtigen benutzerdefinierten Elemente angezeigt.  
   
 ## <a name="Extension"></a> Gewusst wie: Verteilen von Toolboxelementen in Visual Studio-Erweiterung  
  Sie können Toolboxelemente an andere verteilen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Benutzer, indem Sie sie in einem Visual Studio-Erweiterung (VSIX) verpacken. Sie können Befehle, Profile und andere Erweiterungen in der gleichen VSIX-Datei verpacken. Weitere Informationen finden Sie unter [Bereitstellen von Visual Studio-Erweiterungen](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
     - Wählen Sie im Projektmappen-Explorer auf das Kontextmenü des VSIX-Projekts **hinzufügen**, **vorhandenes Element**. Klicken Sie im Dialogfeld festlegen **Objekttyp: Alle Dateien**. Suchen Sie die Dateien, wählen sie alle aus, und wählen Sie dann **hinzufügen**.  
   
         > [!NOTE]
-        >  In diesem Projekt können die Diagrammdateien nicht im Modell-Editor geöffnet werden.  
+        > In diesem Projekt können die Diagrammdateien nicht im Modell-Editor geöffnet werden.  
   
 5. Legen Sie die folgenden Eigenschaften aller Dateien fest, die Sie gerade hinzugefügt haben. Sie können ihre Eigenschaften gleichzeitig festlegen, indem Sie alle im Projektmappen-Explorer auswählen. Achten Sie darauf, dass Sie keine Änderungen an den Eigenschaften der anderen Dateien im Projekt vornehmen.  
   
@@ -185,7 +185,7 @@ Für die einfache Erstellung eines Elements oder einer Gruppe von Elementen gem�
     - Typ = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Dies ist keine der Optionen in der Dropdownliste. Sie müssen sie über die Tastatur eingeben.  
+        > Dies ist keine der Optionen in der Dropdownliste. Sie müssen sie über die Tastatur eingeben.  
   
     - **Quelle** = **Datei im Dateisystem**.  
   

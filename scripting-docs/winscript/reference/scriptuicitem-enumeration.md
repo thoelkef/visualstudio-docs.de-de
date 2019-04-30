@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bd454780b4360daf844697ad92ab8a4e9da29317
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840134"
 ---
 # <a name="scriptuicitem-enumeration"></a>SCRIPTUICITEM-Enumeration
 Stellt den Typ des UI-Elements dar. Verwendet die [iactivescriptsiteuicontrol:: Getuibehavior-Methode](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).  

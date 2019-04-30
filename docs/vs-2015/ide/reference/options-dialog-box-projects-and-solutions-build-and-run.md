@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433679"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ In diesem Dialogfeld können Sie die maximale Anzahl von Visual C++- oder Visual
   
  **Beim Ausführen, bei nicht aktuellen Projekten**  
  > [!NOTE]
->  Diese Liste gilt nur für [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekte.  
+> Diese Liste gilt nur für [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekte.  
   
  In der Standardeinstellung wird eine Meldung angezeigt, wenn eine Projektkonfiguration veraltet ist, wenn Sie die F5-Taste drücken oder **Debuggen** > **Start** in der Menüleiste auswählen. Sie können angeben, ob das Projekt trotzdem erstellt werden soll und ob die Meldung angezeigt wird. Verwenden Sie diese Option, um anzugeben, ob die Meldung angezeigt wird, und wie das Buildverhalten sein soll, wenn die Meldung nicht angezeigt wird.  
   
@@ -54,7 +54,7 @@ In diesem Dialogfeld können Sie die maximale Anzahl von Visual C++- oder Visual
  Wenn Buildfehler beim Start eines Builds über das Menü **Erstellen** auftreten, wird eine Meldung angezeigt. Sie können angeben, ob Sie mit dem Starten der Anwendung fortfahren möchten und ob die Nachricht jedes Mal angezeigt wird, wenn diese Buildfehler auftreten. Verwenden Sie diese Option, um anzugeben, ob die Meldung angezeigt wird und wie das Verhalten sein soll, wenn die Meldung nicht angezeigt wird.  
   
 > [!NOTE]
->  Diese Option gilt nur für [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekte.  
+> Diese Option gilt nur für [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekte.  
   
  **Zum Starten auffordern**  
  Zeigt jedes Mal ein Meldungsfeld an, wenn diese Buildfehler auftreten.  
@@ -73,7 +73,7 @@ In diesem Dialogfeld können Sie die maximale Anzahl von Visual C++- oder Visual
   
  **Ausführlichkeit der Protokolldatei des MSBuild-Projektbuilds**  
  > [!NOTE]
->  Diese Option gilt nur für Visual C++-Projekte.  
+> Diese Option gilt nur für Visual C++-Projekte.  
   
  Bestimmt, wie viele Informationen in die Buildprotokolldatei geschrieben werden, die sich unter „\\...\\*ProjectName*\Debug\\*ProjectName*.log.  
   

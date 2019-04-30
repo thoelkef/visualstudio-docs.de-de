@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8601b4f072c206ab19fdcb4a7248e79784af934a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546810"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Paket-GUIDs von Visual Studio-Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Sie können die folgenden GUIDs in der pkgundef-Datei Ihrer isolierten Shell-Anw
 |Webbrowser|Visual Studio Web-Browser-Paket|{E8B06F41-6D01-11D2-AA7D-00C04F990343}|
 ||Web Application-Projekt-Factory, für die Ansicht im Webbrowser-Funktionen|{349C5851-65DF-11DA-9384-00065B846F21}|
 |Binär-Editor|Binär-Editor von Visual Studio-Paket|{5B98C2C0-CD7B-11D0-92DF-00A0C9138C45}|
-|Windows Forms-Designer|Windows Forms Designer Hosting-Pakets|{68939055-38E0-4D17-92CB-8909710D8178}|
+|Windows Forms-Designer|Windows Forms Designer Hosting-Pakets|{68939055-38E0-4D17-92CB-8909710D8178}|
 ||Windows Forms-Designer-Paket|{7494682B-37A0-11D2-A273-00C04F8EF4FF}|
 ||Windows Forms-Ressourcen-Designer-Paket|{7B5D447B-0B12-41EA-A84E-C822034422D4}|
 ||Konfigurationspaket für Windows Forms-Anwendung|{80C7728B-70A6-4528-8669-73E02D1B9C41}|

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007442"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>Diese Eigenschaft oder Methode wird vom Objekt nicht unterstützt
 Sie haben eine Eigenschaft oder eine Methode angegeben, die für dieses Objekt nicht vorhanden ist. Nicht alle Objekte unterstützen alle Eigenschaften und Methoden.  

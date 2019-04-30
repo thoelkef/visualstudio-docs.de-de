@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6cc01c6506c4a3fca85029a8dcaf08607427ea4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956204"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Dokumentschutz in Projektmappen auf Anwendungsebene
   Sie können die Schutzfunktionen von Microsoft Office Word und Microsoft Office Excel in Projekten auf Dokumentebene verwenden. Diese Features blockieren nicht autorisierte Benutzer Änderungen an geschützten Teile eines Dokuments.

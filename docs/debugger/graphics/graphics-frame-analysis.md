@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388716"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.
@@ -111,7 +111,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Mit den Hardwarezähler-Informationen erhalten Sie eine sehr detaillierte Übersicht über das spezifische Hardwareplattform-Verhalten für jeden Zeichnen-Befehl, die Ihnen hilft, die Gründe für Leistungsengpässe sehr genau zu ermitteln.
 
 > [!NOTE]
->  Verschiedene Hardwareplattformen unterstützen verschiedene Zähler; es gibt keinen Standard. Welche Zähler vorhanden sind und was sie darstellen, wird allein von jedem GPU-Hersteller entschieden.
+> Verschiedene Hardwareplattformen unterstützen verschiedene Zähler; es gibt keinen Standard. Welche Zähler vorhanden sind und was sie darstellen, wird allein von jedem GPU-Hersteller entschieden.
 
 ### <a name="marker-regions-and-events"></a>Markerbereiche und Ereignisse
  Die Frame-Analyse unterstützt benutzerdefinierte Ereignismarker und Ereignisgruppen. Sie werden in der Tabelle Zusammenfassung und in der Tabelle Detail angezeigt.
@@ -132,13 +132,13 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 
  Die Anzahl der Wiederholungen der Frame-Analyse ist auf 10 beschränkt. Wenn Ihre Plattform ein aggressives Leistungsmanagement oder Takt-Gating aufweist, kann die Frame-Analyse fehlschlagen und einen Fehler melden, falls der Wiederholungsgrenzwert überschritten wird. Sie können dieses Problem eventuell abschwächen, indem Sie das Leistungsmanagement und die Taktgeschwindigkeit auf weniger aggressive Werte zurücksetzen, wenn die Plattform dies erlaubt.
 
-##  <a name="HardwareSupport"></a> Hardwaresupport
+## <a name="HardwareSupport"></a> Hardwaresupport
 
 ### <a name="timestamps-and-occlusion-queries"></a>Zeitstempel und Okklusionsabfragen
  Zeitstempel werden auf allen Plattformen unterstützt, die die Frame-Analyse unterstützen. Tiefenokklusionsabfragen – die für den Zähler "Okkludierte Pixel" erforderlich sind – werden auf Plattformen unterstützt, die die Funktionsebene 9.2 oder höher unterstützen.
 
 > [!NOTE]
->  Obwohl Zeitstempel auf allen Plattformen unterstützt werden, die Frame-Analyse unterstützen, ist die Genauigkeit und Konsistenz der Zeitstempel von Plattform zu Plattform unterschiedlich.
+> Obwohl Zeitstempel auf allen Plattformen unterstützt werden, die Frame-Analyse unterstützen, ist die Genauigkeit und Konsistenz der Zeitstempel von Plattform zu Plattform unterschiedlich.
 
 ### <a name="gpu-counters"></a>GPU-Zähler
  Die Unterstützung für GPU-Hardwarezähler ist hardwareabhängig.
@@ -150,7 +150,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   Keine andere Plattform, die die Frame-Analyse unterstützt, sammelt GPU-Hardwarezähler.
 
 > [!NOTE]
->  Da GPU Hardware-Ressourcen Hardwareindikatoren sind, dauert es mehrere Durchgänge um den vollständigen Satz der Hardware-Leistungsindikatoren für jede Rendering-Variante zu erfassen. Daher ist die Reihenfolge, in der die GPU-Leistungsindikatoren erfasst wurden, nicht angegeben.
+> Da GPU Hardware-Ressourcen Hardwareindikatoren sind, dauert es mehrere Durchgänge um den vollständigen Satz der Hardware-Leistungsindikatoren für jede Rendering-Variante zu erfassen. Daher ist die Reihenfolge, in der die GPU-Leistungsindikatoren erfasst wurden, nicht angegeben.
 
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien
  Bestimmte Verwendungsarten der Frame-Analyse werden nicht unterstützt oder sind einfach nicht sinnvoll.
@@ -159,18 +159,18 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Wenn Sie in der Grafikanalyse eine Grafikprotokolldatei wiedergeben, die eine höhere Funktionsebene verwendet, als der Wiedergabecomputer unterstützt, fällt die Wiedergabe automatisch auf WARP zurück. In der Frame-Analyse fällt sie nicht explizit auf WARP zurück und erzeugt einen Fehler. WARP ist sinnvoll zur Untersuchung der Korrektheit Ihrer Direct3D-App, aber nicht zur Untersuchung von deren Leistung.
 
 > [!NOTE]
->  Obwohl es wichtig ist, die Probleme mit verschiedenen Funktionsebenen zu bedenken, können Sie Grafikprotokolldateien in verschiedenen Hardwarekonfigurationen und auf verschiedenen Geräten erfassen und abspielen. Das grafikprotokoll kann abgespielt, solange Sie die Protokolldatei keine APIs enthält oder Funktionsebenen verwendet, die auf dem wiedergabecomputer unterstützt werden.
+> Obwohl es wichtig ist, die Probleme mit verschiedenen Funktionsebenen zu bedenken, können Sie Grafikprotokolldateien in verschiedenen Hardwarekonfigurationen und auf verschiedenen Geräten erfassen und abspielen. Das grafikprotokoll kann abgespielt, solange Sie die Protokolldatei keine APIs enthält oder Funktionsebenen verwendet, die auf dem wiedergabecomputer unterstützt werden.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 und niedriger
  Wenn Ihre App die API Direct3D 10 aufruft, kann die Frame-Analyse sie nicht erkennen oder profilieren, auch wenn sie von anderen Grafikanalysetools erkannt und verwendet wird.
 
 > [!NOTE]
->  Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen.
+> Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen.
 
 ### <a name="warp"></a>WARP
  Die Frame-Analyse ist zur Profilierung und Verbesserung der Renderingleistung auf echter Hardware gedacht. Frame-Analyse auf WARP-Geräten ausgeführt werden, wird nicht verhindert, aber es ist nicht in der Regel eine lohnende Unternehmung, da es sich bei Ausführung von WARP auf einer High-End-CPU langsamer als auch den leistungsschwächsten modernen GPUs ist und WARP-Leistung je nach der bestimmten CPU stark variieren können dieser ausgeführt wird.
 
-##  <a name="Variants"></a> Varianten
+## <a name="Variants"></a> Varianten
  Jede Änderung, die die Frame-Analyse an der Art durchführt, in der ein Frame während der Wiedergabe gerendert wird, wird *Variante* genannt. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:
 
 |Variante|Beschreibung|
@@ -189,4 +189,4 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
 |**Viertel-Texturdimensionen**|Reduziert die Texturdimensionen auf allen Texturen, die keine Renderziele sind, in jeder Dimension auf ein Viertel ihrer ursprünglichen Größe. Eine Textur der Größe 256x128 wird z. B. auf 64x32 Texel reduziert.<br /><br /> Weitere Informationen finden Sie unter [Halb-/Viertel-Texturdimensionsvariante](half-quarter-texture-dimensions-variant.md).|
 |**BC-Texturkomprimierung**|Aktiviert die Blockkomprimierung auf allen Texturen mit der Pixelformatvariante B8G8R8X8, B8G8R8A8 oder R8G8B8A8. Varianten im Format B8G8R8X8 werden mit BC1 komprimiert; die Formatvarianten B8G8R8A8 und R8G8B8A8 werden mit BC3 komprimiert.<br /><br /> Weitere Informationen finden Sie unter [BC-Texturkomprimierungsvariante](bc-texture-compression-variant.md).|
 
- Das Ergebnis für die meisten Varianten ist präskriptiv: "Die Reduzierung der Texturgröße um die Hälfte ist um 25 % schneller" oder "Die Aktivierung von 2x MSAA ist nur um 2 % langsamer". Andere Variationen können mehr Interpretation erfordern – z, B. wenn die Variante, die die Viewport-Dimensionen in 1x1 ändert, zu einer bedeutenden Leistungssteigerung führt. Dies kann bedeuten, dass das Rendering durch eine geringe Füllrate verlangsamt wird. Andererseits kann es, falls keine bedeutende Leistungsänderung auftritt, bedeuten, dass das Rendering durch die Scheitelpunktverarbeitung verlangsamt wird.
+ Das Ergebnis für die meisten Varianten ist präskriptiv: "Verringern der Texturgröße um die Hälfte ist 25 Prozent schneller" oder "Aktivierung von 2 X MSAA ist nur 2 % langsamer". Andere Variationen können mehr Interpretation erfordern – z, B. wenn die Variante, die die Viewport-Dimensionen in 1x1 ändert, zu einer bedeutenden Leistungssteigerung führt. Dies kann bedeuten, dass das Rendering durch eine geringe Füllrate verlangsamt wird. Andererseits kann es, falls keine bedeutende Leistungsänderung auftritt, bedeuten, dass das Rendering durch die Scheitelpunktverarbeitung verlangsamt wird.

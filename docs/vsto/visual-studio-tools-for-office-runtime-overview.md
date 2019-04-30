@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982325"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio-Tools für Office-laufzeitübersicht
   Um Projektmappen auszuführen, die mit den Microsoft Office Developer Tools in Visual Studio erstellt werden, muss Visual Studio 2010-Tools für Office-Laufzeit auf Endbenutzercomputern installiert sein. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren der Visual Studio-Tools für Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010-Tools für Office-Laufzeit besteht aus zwei Hauptkomponenten:

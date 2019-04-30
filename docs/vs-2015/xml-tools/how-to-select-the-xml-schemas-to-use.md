@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d897fe074c0215d462ff81ccd33e7d71487b1282
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433102"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Vorgehensweise: Auswählen der zu verwendenden XML-Schemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
  Die von Ihnen ausgewählten Schemas werden zusammen mit den anderen XML-Dokumenteigenschaften in der versteckten Projektmappen-Benutzeroptionendatei (.suo) abgespeichert. Daher müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.  
   
 > [!NOTE]
->  Der Editor kann mithilfe eines Inlineschemas oder eines Schemas, auf das von dem `xsd:schemaLocation`-Attribut verwiesen wird, die Validierung vornehmen. Weitere Informationen finden Sie unter [XML-Dokumentvalidierung](../xml-tools/xml-document-validation.md).  
+> Der Editor kann mithilfe eines Inlineschemas oder eines Schemas, auf das von dem `xsd:schemaLocation`-Attribut verwiesen wird, die Validierung vornehmen. Weitere Informationen finden Sie unter [XML-Dokumentvalidierung](../xml-tools/xml-document-validation.md).  
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>So wählen Sie ein XML-Schema aus dem Schemacache aus  
   
@@ -71,7 +71,7 @@ Der XML-Editor stellt einen Schemacache im Verzeichnis "%InstallDir%\Xml\Schemas
      Das Schema wird aus dem In-Memory-Schemacache , jedoch nicht aus dem Dateisystem entfernt.  
   
     > [!NOTE]
-    >  Wenn Sie einen Verweis auf das Schema über noch einen `schemaLocation` Attribut oder ein entsprechendes `targetNamespace` klicken Sie dann **entfernen** funktioniert nicht in dieser Situation aufgrund der automatischen Zuordnung. In diesem Fall wird empfohlen, Sie das Schema als markieren **ausgewählte Schemas nicht verwenden** in die **verwenden** Spalte.  
+    > Wenn Sie einen Verweis auf das Schema über noch einen `schemaLocation` Attribut oder ein entsprechendes `targetNamespace` klicken Sie dann **entfernen** funktioniert nicht in dieser Situation aufgrund der automatischen Zuordnung. In diesem Fall wird empfohlen, Sie das Schema als markieren **ausgewählte Schemas nicht verwenden** in die **verwenden** Spalte.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schema Cache](../xml-tools/schema-cache.md)   

@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388350"
 ---
-# <a name="how-to-stop-code-changes"></a>Gewusst wie: Anhalten von Codeänderungen
+# <a name="how-to-stop-code-changes"></a>Vorgehensweise: Anhalten von Codeänderungen
 Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.
 
 > [!CAUTION]
->  Das Anhalten von Änderungen in verwaltetem Code kann zu unerwarteten Ergebnissen führen. Die Übernahme von Änderungen in verwaltetem Code ist gewöhnlich ein schneller Vorgang, sodass selten die Notwendigkeit besteht, ihn anzuhalten.
+> Das Anhalten von Änderungen in verwaltetem Code kann zu unerwarteten Ergebnissen führen. Die Übernahme von Änderungen in verwaltetem Code ist gewöhnlich ein schneller Vorgang, sodass selten die Notwendigkeit besteht, ihn anzuhalten.
 
 ### <a name="to-stop-applying-code-changes"></a>So beenden Sie das Übernehmen von Codeänderungen
 

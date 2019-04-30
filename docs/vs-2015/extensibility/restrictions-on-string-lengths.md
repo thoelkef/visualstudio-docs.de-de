@@ -10,12 +10,12 @@ ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7abc4290f784808f98b2c5833c896866ab51799
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: dc6ff1e77a9a973e184384d98ef8b880aaa2f005
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432534"
 ---
 # <a name="restrictions-on-string-lengths"></a>Einschränkungen für die Längen von Zeichenfolgen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Die Source-Plug-in-API schränkt die Längen der Zeichenfolgen, die in verschied
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
->  Länge schließt nicht das abschließende `null`. Schließen Sie andere Konstanten mit dem Suffix "_Größe" anstelle von "_LEN" Speicherplatz für das abschließende `null`.  
+> Länge schließt nicht das abschließende `null`. Schließen Sie andere Konstanten mit dem Suffix "_Größe" anstelle von "_LEN" Speicherplatz für das abschließende `null`.  
   
 |Konstante|Wert|  
 |--------------|-----------|  

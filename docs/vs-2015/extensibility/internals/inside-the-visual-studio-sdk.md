@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443895"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Generalisierte Überblick über die Architektur der Visual Studio
  Vorlagen enthalten die Projektstruktur und den grundlegenden Dateien, die erforderlich sind, um eine bestimmte Art von Anwendung "," Steuerelement ","-Bibliothek "oder"-Klasse zu erstellen. Wenn Sie Software entwickeln, die eine der Vorlagen gleicht möchten, erstellen Sie ein Projekt, das in der Vorlage basiert, und ändern Sie dann die Dateien in diesem Projekt.  
   
 > [!NOTE]
->  Diese Architektur wird nicht unterstützt, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte. Informationen über das Erstellen [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] -Projektvorlagen, finden Sie unter [Entwerfen eines Assistenten](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Diese Architektur wird nicht unterstützt, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte. Informationen über das Erstellen [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] -Projektvorlagen, finden Sie unter [Entwerfen eines Assistenten](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

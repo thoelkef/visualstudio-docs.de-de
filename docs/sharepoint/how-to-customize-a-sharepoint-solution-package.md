@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420196"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungspakets
   Sie können den Paket-Designer zum Erstellen und Anpassen eines Pakets (*.wsp*). Sie können z. B. SharePoint-Projektelemente und Features hinzufügen, die angeben, wenn der Webserver zurückgesetzt, wenn die Lösung bereitgestellt wird, und den Bereitstellungsservertyp festlegen.
@@ -47,7 +47,7 @@ ms.locfileid: "60074920"
 2. Erweitern Sie Paket "Package.Package", und öffnen Sie dann die *Package.Template.xml* Datei.
 
     > [!NOTE]
-    >  Wenn Sie die XML-Manifestdatei für die Paket-Vorlage öffnen, die Dateien werden automatisch überprüft, und können Sie ignorieren, die Warnungen, die in das Fenster "Fehlerliste" angezeigt werden.
+    > Wenn Sie die XML-Manifestdatei für die Paket-Vorlage öffnen, die Dateien werden automatisch überprüft, und können Sie ignorieren, die Warnungen, die in das Fenster "Fehlerliste" angezeigt werden.
 
 ## <a name="change-the-manifest-template"></a>Ändern Sie die Manifestvorlage
  Sie können den XML-Code für die App-Pakete Manifestdatei im XML-Editor von Visual Studio oder im Bereich Manifestvorlage ändern. Alle Änderungen an den XML-Code werden in der App-Pakete Manifestdatei für das Paket zusammengeführt.
@@ -68,7 +68,7 @@ ms.locfileid: "60074920"
  Sie können den Paket-Designer zu deaktivieren und erstellen die *"Manifest.xml"* Datei manuell. Zum ersten Mal ausführen dieser Prozedur werden die aktuellen Einstellungen im Paket-Designer in der Paket-Vorlage XML-Datei gespeichert. Anschließend können Sie ändern oder überschreiben Sie den XML-Code.
 
 > [!NOTE]
->  Wenn Sie hinzufügen oder Entfernen von SharePoint-Projektelemente und-Funktionen in der XML-Datei während der Paket-Designer deaktiviert ist, sind nicht diese Projektelemente und-Funktionen verpackt.
+> Wenn Sie hinzufügen oder Entfernen von SharePoint-Projektelemente und-Funktionen in der XML-Datei während der Paket-Designer deaktiviert ist, sind nicht diese Projektelemente und-Funktionen verpackt.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Paket-manifest-Datei zu überschreiben, durch Deaktivieren des Designers
 

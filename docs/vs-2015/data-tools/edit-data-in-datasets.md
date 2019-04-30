@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425389"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60105005"
      Diese Methode den Datensatz nicht physisch entfernt werden. Stattdessen wird den Datensatz für die Löschung markiert.  
   
     > [!NOTE]
-    >  Wenn Sie die Count-Eigenschaft des erhalten eine <xref:System.Data.DataRowCollection>, das Rekursionsergebnis enthält Datensätze, die für die Löschung markiert wurden. Um eine genaue Anzahl der Datensätze zu erhalten, die zum Löschen markiert sind nicht, können Sie eine Schleife mit dem Blick auf die Auflistung der <xref:System.Data.DataRow.RowState%2A> Eigenschaft jedes Datensatzes. (Zum Löschen markierte Einträge enthalten ein <xref:System.Data.DataRow.RowState%2A> von <xref:System.Data.DataRowState>.) Alternativ können Sie erstellen eine Datenansicht eines Datasets, die Filter auf die Zeile (Zustand) basieren, und erhalten von dort aus die Count-Eigenschaft.  
+    > Wenn Sie die Count-Eigenschaft des erhalten eine <xref:System.Data.DataRowCollection>, das Rekursionsergebnis enthält Datensätze, die für die Löschung markiert wurden. Um eine genaue Anzahl der Datensätze zu erhalten, die zum Löschen markiert sind nicht, können Sie eine Schleife mit dem Blick auf die Auflistung der <xref:System.Data.DataRow.RowState%2A> Eigenschaft jedes Datensatzes. (Zum Löschen markierte Einträge enthalten ein <xref:System.Data.DataRow.RowState%2A> von <xref:System.Data.DataRowState>.) Alternativ können Sie erstellen eine Datenansicht eines Datasets, die Filter auf die Zeile (Zustand) basieren, und erhalten von dort aus die Count-Eigenschaft.  
   
      Das folgende Beispiel zeigt das Aufrufen der <xref:System.Data.DataRow.Delete%2A> Methode zum Kennzeichnen der ersten Zeile in der `Customers` Tabelle als gelöscht:  
   

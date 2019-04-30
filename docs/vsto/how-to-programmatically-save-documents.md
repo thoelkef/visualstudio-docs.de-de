@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419455"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Vorgehensweise: Programmgesteuertes Speichern von Dokumenten
   Es gibt mehrere Möglichkeiten, Microsoft Office Word-Dokumente zu speichern. Sie können ein Dokument speichern, ohne den Namen des Dokuments zu ändern, oder Sie können ein Dokument mit einem neuen Namen speichern.
@@ -54,14 +54,14 @@ ms.locfileid: "60056275"
  Verwenden Sie die SaveAs-Methode, um ein Dokument mit einem neuen Namen zu speichern. Sie können diese Methode verwenden die <xref:Microsoft.Office.Tools.Word.Document> Hostelement in ein Projekt auf Dokumentebene für Word oder eines systemeigenen <xref:Microsoft.Office.Interop.Word.Document> Objekt in jeder Word-Projekt. Diese Methode erfordert, dass Sie den neuen Dateinamen angeben, aber andere Argumente optional sind.
 
 > [!NOTE]
->  Wenn Sie Anzeigen der **SaveAs** Dialogfeld in der die <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignishandler des `ThisDocument` und legen Sie die *Abbrechen* Parameter, um **"false"**, kann die Anwendung unerwartet beendet. Setzen Sie die *Abbrechen* Parameter **"true"**, wird eine Fehlermeldung angezeigt, der angibt, dass die automatische Speicherung deaktiviert wurde.
+> Wenn Sie Anzeigen der **SaveAs** Dialogfeld in der die <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignishandler des `ThisDocument` und legen Sie die *Abbrechen* Parameter, um **"false"**, kann die Anwendung unerwartet beendet. Setzen Sie die *Abbrechen* Parameter **"true"**, wird eine Fehlermeldung angezeigt, der angibt, dass die automatische Speicherung deaktiviert wurde.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Um das Dokument mit einer Anpassung auf Dokumentebene mit einem neuen Namen zu speichern.
 
 1. Rufen Sie die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode der `ThisDocument` Klasse in Ihrem Projekt mit einem vollqualifizierten Pfad und Dateiname. Wenn der Ordner bereits eine Datei dieses Namens enthält, wird die Datei automatisch überschrieben. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es über die `ThisDocument` -Klasse aus.
 
     > [!NOTE]
-    >  Die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode löst eine Ausnahme aus, wenn ein Zielverzeichnis nicht vorhanden ist oder liegen andere Probleme vor, das Speichern einer Datei. Es hat sich bewährt, verwenden Sie eine **try … Catch** -Block um die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode oder in ein aufrufende Methode.
+    > Die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode löst eine Ausnahme aus, wenn ein Zielverzeichnis nicht vorhanden ist oder liegen andere Probleme vor, das Speichern einer Datei. Es hat sich bewährt, verwenden Sie eine **try … Catch** -Block um die <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Methode oder in ein aufrufende Methode.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056275"
      Im folgenden Codebeispiel wird speichert das aktive Dokument unter einem neuen Namen ein. Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es aus der Klasse `ThisDocument` oder `ThisAddIn` in Ihrem Projekt aus.
 
     > [!NOTE]
-    >  Die <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Methode löst eine Ausnahme aus, wenn ein Zielverzeichnis nicht vorhanden ist oder liegen andere Probleme vor, das Speichern einer Datei. Es hat sich bewährt, verwenden Sie eine **try … Catch** -Block um die <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Methode oder in ein aufrufende Methode.
+    > Die <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Methode löst eine Ausnahme aus, wenn ein Zielverzeichnis nicht vorhanden ist oder liegen andere Probleme vor, das Speichern einer Datei. Es hat sich bewährt, verwenden Sie eine **try … Catch** -Block um die <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Methode oder in ein aufrufende Methode.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

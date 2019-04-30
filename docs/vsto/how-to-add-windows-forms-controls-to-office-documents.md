@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427491"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Vorgehensweise: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten
   Sie können Microsoft Office Excel- und Microsoft Office Word-Dokumenten Windows Forms-Steuerelemente in Projekten auf Dokumentebene zur Entwurfszeit hinzufügen. Zur Laufzeit können Sie Steuerelemente in Anpassungen auf Dokumentebene und VSTO-Add-ins hinzufügen. Sie können Ihrem Arbeitsblatt z. B. ein <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox>-Steuerelement hinzufügen, um den Benutzern die Auswahl aus einer Liste von Optionen zu ermöglichen.
@@ -49,7 +49,7 @@ ms.locfileid: "60047110"
 2. In der **Standardsteuerelementen** Registerkarte die **Toolbox**, klicken Sie auf das Steuerelement, das Sie hinzufügen möchten, und ziehen Sie es in das Dokument.
 
     > [!NOTE]
-    >  Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>So ziehen ein Windows Forms-Steuerelement auf das Dokument
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047110"
      Das Steuerelement wird dem Dokument mit der angegebenen Größe und Position hinzugefügt.
 
     > [!NOTE]
-    >  Wenn Sie in Excel ein Steuerelement auswählen, wird Ihnen **=EMBED("WinForms.Control.Host","")** in die **Bearbeitungsleiste**. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird Ihnen **=EMBED("WinForms.Control.Host","")** in die **Bearbeitungsleiste**. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>So fügen Sie dem Dokument ein Windows Forms-Steuerelement durch einfaches Klicken auf das Steuerelement hinzu
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047110"
      Das Steuerelement wird dem Dokument mit der Standardgröße hinzugefügt.
 
     > [!NOTE]
-    >  Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>So fügen Sie dem Dokument ein Windows Forms-Steuerelement durch Doppelklicken auf das Steuerelement hinzu
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047110"
      Das Steuerelement wird dem Dokument in der Mitte des Dokuments oder des aktiven Bereichs hinzugefügt.
 
     > [!NOTE]
-    >  Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Um das Dokument ein Windows Forms-Steuerelement hinzufügen, indem Sie die EINGABETASTE drücken
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047110"
      Das Steuerelement wird dem Dokument in der Mitte des Dokuments oder des aktiven Bereichs hinzugefügt.
 
     > [!NOTE]
-    >  Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ## <a name="runtimedoclevel"></a> Hinzufügen von Steuerelementen zur Laufzeit in Projekten auf Dokumentebene
  Sie können Windows Forms-Steuerelementen zu einem Dokument zur Laufzeit programmgesteuert hinzufügen. Verwenden Sie in Word die Methoden der <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A>-Eigenschaft der `ThisDocument`-Klasse. Verwenden Sie in Excel die Methoden der <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> Eigenschaft eine `Sheet` *n* Klasse. Jede Methode verfügt über mehrere Überladungen, mit denen Sie die Position des Steuerelements auf unterschiedliche Weisen angeben können.
@@ -125,7 +125,7 @@ ms.locfileid: "60047110"
 1. Verwenden Sie eine Methode mit dem Namen hinzufügen\<*Steuerelementklasse*> (wobei *Steuerelementklasse* ist der Klassenname des Steuerelements in Windows Forms, die Sie hinzufügen wie z. B., möchten <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    >  In VSTO-Add-in-Projekte, die auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher müssen Sie hinzufügen, einen Verweis auf die *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* oder *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* Assembly, bevor Sie das Add zugreifen können\<*Steuerelementklasse*> Methoden.
+    > In VSTO-Add-in-Projekte, die auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher müssen Sie hinzufügen, einen Verweis auf die *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* oder *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* Assembly, bevor Sie das Add zugreifen können\<*Steuerelementklasse*> Methoden.
 
      Das folgende Codebeispiel veranschaulicht das Hinzufügen von <xref:Microsoft.Office.Tools.Word.Controls.Button> im ersten Absatz des aktiven Dokuments mithilfe eines Word-VSTO-Add-Ins.
 

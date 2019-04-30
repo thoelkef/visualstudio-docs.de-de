@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813735"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Vorgehensweise: Abrufen von Daten für einen integrierten SharePoint-Knoten im Server-Explorer
   Für jeden integrierten SharePoint-Knoten im **Server-Explorer**, Sie können Daten abrufen, für die zugrunde liegende SharePoint-Komponente, die vom Knoten dargestellt. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

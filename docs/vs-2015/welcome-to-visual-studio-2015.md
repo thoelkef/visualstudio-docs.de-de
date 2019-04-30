@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383427"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Willkommen bei Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067728"
 Willkommen bei Visual Studio! Hier finden Sie alles, was Sie zum Erstellen hervorragender Geräte- oder Desktop-Apps für das Web und in der Cloud benötigen. Schreiben Sie Code für iOS, Android und Windows in einer einzigen IDE. Nutzen Sie das hervorragende IntelliSense, einfache Codenavigation, schnelle Builds und rasche Bereitstellung. Visual Studio steigert Ihre Produktivität und erleichtert Ihre Arbeit allein oder als Teil eines größeren Teams.
 
 > [!NOTE]
->  Klicken Sie hier, um die Anmerkungen zu [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)zu erhalten.
+> Klicken Sie hier, um die Anmerkungen zu [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)zu erhalten.
 >
->  Klicken Sie hier, um die Anmerkungen zu [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) zu lesen.
+> Klicken Sie hier, um die Anmerkungen zu [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) zu lesen.
 
  Laden Sie [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) kostenlos herunter, um sofort mit dem Erstellen von Code zu beginnen. Wenn Sie eine plattformübergreifende Entwicklung vornehmen möchten, installieren Sie die optionalen Pakete. (In [anderen Editionen von Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)finden Sie mehr Features.)
 

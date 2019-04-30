@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01e85c0257d372fa9b27ec5f031aae61132f7edc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928908"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickler, die ClickOnce-Bereitstellungen erstellen möchten. Viele von ihnen Packen Sie einfach ihre Anwendung mithilfe von ClickOnce und leiten dann die Dateien für einen Kunden, wie z. B. ein großes Unternehmen. Der Kunde ist dafür verantwortlich sind, zum Hosten der Anwendung im Netzwerk. Dieses Thema behandelt einige der Probleme, die sich solche Bereitstellungen in Versionen von .NET Framework vor Version 3.5. Klicken Sie dann beschrieben eine neue Projektmappe, die mithilfe der neuen "Verwenden von Manifest für die Vertrauensstellung"-Funktion in .NET Framework 3.5. Schließlich endet er mit empfohlenen Vorgehensweisen zum Erstellen von ClickOnce-Bereitstellungen für Kunden, die noch ältere Versionen von .NET Framework verwenden.
@@ -56,7 +56,7 @@ Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickl
 
  Verwenden ein selbstsigniertes Zertifikat für das Bereitstellungsmanifest bietet mehrere Vorteile. Durch den Wegfall des Kunden zum Abrufen oder erstellen ihre eigenen Authenticode-Zertifikat, `<useManifestForTrust>` vereinfacht die Bereitstellung für den Kunden, während den Entwickler, ihre eigenen branding Identität für die Anwendung zu erhalten. Das Ergebnis ist eine Reihe von signierten Bereitstellungen, die sicherer und verfügen über eindeutige Identitäten. Dadurch werden Konflikte, die von der Bereitstellung von der gleichen Anwendung für mehrere Kunden auftreten kann.
 
- Ausführliche Informationen zur Vorgehensweise: erstellen eine ClickOnce-Bereitstellung mit `<useManifestForTrust>` aktiviert ist, finden Sie [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationenbeibehält](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ Ausführliche Informationen zur Vorgehensweise: erstellen eine ClickOnce-Bereitstellung mit `<useManifestForTrust>` aktiviert ist, finden Sie [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
 
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Wie funktioniert das Anwendungsmanifest für die Vertrauensstellung zur Laufzeit
  Um ein besseres Verständnis der Funktionsweise der mit dem Anwendungsmanifest für die Vertrauensstellung zur Laufzeit zu erhalten, erwägen Sie das folgende Beispiel aus. Eine ClickOnce-Anwendung, die .NET Framework 3.5 ausgerichtet ist, wird von Microsoft erstellt. Das Anwendungsmanifest verwendet die `<useManifestForTrust>` Element und wird von Microsoft signiert. Adventure Works signiert das Bereitstellungsmanifest mithilfe eines selbstsignierten Zertifikats. Adventure Works-Clients so konfiguriert werden, dass um jede Anwendung, die von Microsoft signiert zu vertrauen.

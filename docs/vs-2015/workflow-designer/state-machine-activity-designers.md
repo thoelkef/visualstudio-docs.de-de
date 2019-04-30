@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949161"
 ---
 # <a name="state-machine-activity-designers"></a>Zustandsautomatenaktivitäts-Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] umfasst eine Reihe von Aktivitäts-Designern, die Sie beim Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäts-Designer, die verwendet werden, um Zustandsautomatenworkflows zu erstellen und zu verwalten. In den folgenden Themen werden diese Designer beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  

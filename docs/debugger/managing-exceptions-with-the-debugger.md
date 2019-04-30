@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846586"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
 
@@ -100,7 +100,7 @@ Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster
 
   Es zeigt jedoch nicht die `here` Zeile.
 
-- Ein C# -Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
+- Eine C#-Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
 
   ```csharp
   public class Class1
@@ -223,7 +223,7 @@ So fügen Sie bedingte Ausnahmen hinzu:
 ## <a name="see-also"></a>Siehe auch
 
 - [Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Gewusst wie: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Gewusst wie: Verwenden von nativen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Vorgehensweise: Use native run-time checks (Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen)](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Use run-time checks without the C run-time library (Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek)](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564098"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 Wenn der Debugger die Ausführung aufgrund einer Ausnahme unterbrochen wird, wird Ihnen die **Ausnahmen-Hilfe**, in der Standardeinstellung. Wenn Sie deaktiviert haben die **Ausnahmen-Hilfe** in die **Optionen** im Dialogfeld wird Ihnen die **Ausnahmen-Assistent** (C# oder Visual Basic) oder die  **Ausnahme** (Dialogfeld) (C++).

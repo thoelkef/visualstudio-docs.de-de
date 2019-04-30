@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444584"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113078"
 - Die Anforderungen für die Installation finden Sie unter [Visual Studio 2015 – Systemanforderungen](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
   > [!IMPORTANT]
-  >  Wenn Sie Windows 7 oder Windows Server 2008 R2 verwenden, können Sie Code für klassische Windows-Anwendungen, Android Native Activity-Apps und -Bibliotheken sowie Apps und Codebibliotheken für iOS, jedoch keine Windows Store- oder universellen Windows-Apps entwickeln.  
+  > Wenn Sie Windows 7 oder Windows Server 2008 R2 verwenden, können Sie Code für klassische Windows-Anwendungen, Android Native Activity-Apps und -Bibliotheken sowie Apps und Codebibliotheken für iOS, jedoch keine Windows Store- oder universellen Windows-Apps entwickeln.  
   
   Zum Erstellen von Anwendungen für bestimmte Plattformen bestehen einige zusätzliche Anforderungen:  
   
@@ -75,12 +75,12 @@ ms.locfileid: "60113078"
 4. Wenn die Installation abgeschlossen ist, schließen Sie den Installer und starten Sie Ihren Computer neu. Einige Setupaktionen für die Komponenten von Drittanbietern sind erst nach dem Neustart Ihres Computers aktiv.  
   
     > [!IMPORTANT]
-    >  Der Neustart ist erforderlich, um sicherzustellen, dass alles korrekt installiert ist.  
+    > Der Neustart ist erforderlich, um sicherzustellen, dass alles korrekt installiert ist.  
   
      Wenn der Microsoft Visual Studio-Emulator für die Android-Komponente nicht installiert werden konnte, ist auf Ihrem Computer möglicherweise Hyper-V nicht aktiviert. Verwenden Sie die Control Panel-Anwendung **Windows-Features aktivieren oder deaktivieren**, um Hyper-V zu aktivieren; führen Sie danach den Visual Studio-Installer erneut aus.  
   
     > [!NOTE]
-    >  Wenn Ihr Computer oder die Version Ihres Windows-Betriebssystems Hyper-V nicht unterstützt, können Sie die Komponente „Microsoft Visual Studio-Emulator für Android“ verwenden. Die Home Edition der Windows-Betriebssysteme unterstützt Hyper-V nicht.  
+    > Wenn Ihr Computer oder die Version Ihres Windows-Betriebssystems Hyper-V nicht unterstützt, können Sie die Komponente „Microsoft Visual Studio-Emulator für Android“ verwenden. Die Home Edition der Windows-Betriebssysteme unterstützt Hyper-V nicht.  
   
 5. Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**&gt; **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60113078"
  Wenn Sie bei der Installation der Option „Visual C++ Mobile Development“ keine Drittanbieterabhängigkeit mit dem Visual Studio-Installer installieren, können Sie diese später mithilfe der Schritte in [Install the tools](#InstallTheTools)installieren. Sie können die Abhängigkeiten auch unabhängig von Visual Studio installieren oder aktualisieren.  
   
 > [!CAUTION]
->  Sie können die Abhängigkeiten mit Ausnahme von Java in beliebiger Reihenfolge installieren. Sie müssen vor der Installation des Android SDK das JDK installieren und konfigurieren.  
+> Sie können die Abhängigkeiten mit Ausnahme von Java in beliebiger Reihenfolge installieren. Sie müssen vor der Installation des Android SDK das JDK installieren und konfigurieren.  
   
  Lesen Sie die folgenden Informationen und verwenden Sie die folgenden Links, um Abhängigkeiten manuell zu installieren.  
   

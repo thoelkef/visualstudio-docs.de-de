@@ -13,12 +13,12 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 585208150047b32adfdac916146268751a2a1287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441225"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Einfärben der Syntax in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Farbliche Markierung der Syntax ist ein Feature, das bewirkt, dass verschiedene 
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="implementation"></a>Implementierung  
  Die farbliche Kennzeichnung zur Unterstützung des managed Package Framework (MPF) enthält die <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle. Diese Klasse interagiert mit einer <xref:Microsoft.VisualStudio.Package.IScanner> zur Ermittlung des Tokens und Farben. Weitere Informationen zu den Scanner, finden Sie unter [Legacy-Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). Die <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse kennzeichnet jedes Zeichen des Tokens mit den Informationen für die Farbe, und gibt diese Informationen zum Anzeigen der Quelldatei-Editor.  
@@ -39,10 +39,10 @@ Farbliche Markierung der Syntax ist ein Feature, das bewirkt, dass verschiedene 
  Um Ihre eigenen benutzerdefinierten kolorierbaren Elemente angeben möchten, müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> und <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Die erste Methode gibt die Anzahl der benutzerdefinierten kolorierbaren Elemente, die der Sprachdienst unterstützt, und die zweite das benutzerdefinierte färbbare Element anhand des Indexes ab. Sie erstellen die Standardliste der benutzerdefinierten kolorierbaren Elemente. Im Konstruktor des Sprachdiensts alles, was Sie tun müssen ist Geben Sie jede kolorierbaren Elements mit einem Namen. Visual Studio behandelt automatisch den Fall, in denen der Benutzer einen anderen Satz von einfärbbaren Elementen auswählt. Dieser Name wird in angezeigt der **Schriftarten und Farben** Eigenschaftenseite auf die **Optionen** im Dialogfeld (verfügbar in Visual Studio **Tools** Menü) und bestimmt, welche dieser Name die Farbe, die ein Benutzer außer Kraft gesetzt hat. Auswahl des Benutzers werden in einem Cache in der Registrierung gespeichert und der Farbname zugreifen. Die **Schriftarten und Farben** auf der Seite zeigt eine Liste aller Farbnamen in alphabetischer Reihenfolge, damit Sie Ihre benutzerdefinierten Farben gruppieren können, jeder Farbname durch den Namen Ihres Language; abgrenzen, indem Sie z. B. "**TestLanguage kommentierten**"und"**TestLanguage - Schlüsselwort**". Oder Sie können Ihre kolorierbaren Elemente nach Typ gruppieren "**Kommentar (TestLanguage)**"und"**Schlüsselwort (TestLanguage)**". Eine Gruppierung nach Sprachnamen wird bevorzugt.  
   
 > [!CAUTION]
->  Es wird dringend empfohlen, dass Sie die Namen der Sprache in den kolorierbaren Elements-Namen, um Konflikte mit vorhandenen kolorierbaren Elementnamen zu vermeiden einschließen.  
+> Es wird dringend empfohlen, dass Sie die Namen der Sprache in den kolorierbaren Elements-Namen, um Konflikte mit vorhandenen kolorierbaren Elementnamen zu vermeiden einschließen.  
   
 > [!NOTE]
->  Wenn Sie während der Entwicklung den Namen eines Ihrer Farben ändern, müssen Sie den Cache zurücksetzen, den Visual Studio erstmals erstellt, die Sie Farben auf die zugegriffen wurde. Dazu können Sie mit der **Zurücksetzen der experimentellen Struktur** Befehl der Visual Studio SDK-Programme.  
+> Wenn Sie während der Entwicklung den Namen eines Ihrer Farben ändern, müssen Sie den Cache zurücksetzen, den Visual Studio erstmals erstellt, die Sie Farben auf die zugegriffen wurde. Dazu können Sie mit der **Zurücksetzen der experimentellen Struktur** Befehl der Visual Studio SDK-Programme.  
   
  Beachten Sie, dass das erste Element in der Liste der kolorierbaren Elemente nie darauf verwiesen wird. Visual Studio stellt immer die Standardfarben für Text und die Attribute für dieses Element. Die einfachste Möglichkeit für den Umgang mit diesem ist ein Platzhalter färbbares Element als erstes Element angeben.  
   

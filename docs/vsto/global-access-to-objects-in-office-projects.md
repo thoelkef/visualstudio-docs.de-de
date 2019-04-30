@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427944"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globaler Zugriff auf Objekte in Office-Projekten
   Wenn Sie ein Office-Projekt erstellen, generiert Visual Studio im Projekt automatisch eine Klasse mit dem Namen `Globals` . Mit der `Globals` -Klasse können Sie von beliebigem Code im Projekt aus zur Laufzeit auf mehrere verschiedene Projektelemente zugreifen.
@@ -74,7 +74,7 @@ ms.locfileid: "60066766"
  Code, der versucht, den `Globals` -Klasse, bevor das Dokument oder ein VSTO-Add-in initialisiert wird möglicherweise eine Laufzeitausnahme auslösen. So kann beispielsweise die Verwendung von `Globals` beim Deklarieren einer Variablen auf Klassenebene fehlschlagen, da die `Globals` -Klasse vor der Instanziierung des deklarierten Objekts möglicherweise noch nicht mit Verweisen auf alle Hostelemente initialisiert wurde.
 
 > [!NOTE]
->  Die `Globals` -Klasse wird zur Entwurfszeit nie initialisiert, vom Designer werden jedoch Steuerelementinstanzen erstellt. Dies bedeutet, dass, wenn Sie ein Benutzersteuerelement erstellen, die eine Eigenschaft verwendet die `Globals` Klasse von innerhalb einer Benutzersteuerelementklasse, Sie müssen überprüfen, ob die Eigenschaft zurückgibt **null** bevor Sie versuchen, das zurückgegebene Objekt verwenden.
+> Die `Globals` -Klasse wird zur Entwurfszeit nie initialisiert, vom Designer werden jedoch Steuerelementinstanzen erstellt. Dies bedeutet, dass, wenn Sie ein Benutzersteuerelement erstellen, die eine Eigenschaft verwendet die `Globals` Klasse von innerhalb einer Benutzersteuerelementklasse, Sie müssen überprüfen, ob die Eigenschaft zurückgibt **null** bevor Sie versuchen, das zurückgegebene Objekt verwenden.
 
 ## <a name="see-also"></a>Siehe auch
 - [Zugriff auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)

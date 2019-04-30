@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439959"
 ---
 # <a name="rename-refactoring-c"></a>Umgestaltung durch Umbenennen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114729"
 **Benennen Sie** ist ein refactoring Feature in der Visual Studio integrierte Entwicklungsumgebung (IDE), die eine einfache Möglichkeit zum Umbenennen der Bezeichner für Codesymbole wie Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen bereitstellt. **Benennen Sie** kann verwendet werden, um die Namen in den Kommentaren und Zeichenfolgen zu ändern und so ändern Sie die Deklarationen und Aufrufe eines Bezeichners.  
   
 > [!NOTE]
->  Bei Verwendung der Quellcodeverwaltung für Visual Studio erhalten Sie die neueste Version von Quellen, bevor Sie versuchen, führen Sie die Umgestaltung mit Umbenennen.  
+> Bei Verwendung der Quellcodeverwaltung für Visual Studio erhalten Sie die neueste Version von Quellen, bevor Sie versuchen, führen Sie die Umgestaltung mit Umbenennen.  
   
  Refactoring mit Umbenennung ist über die folgenden Visual Studio-Funktionen verfügbar:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114729"
 2. In der Deklaration für `MethodB`, oder geben Sie den Methodenbezeichner RÜCKTASTE. Unterhalb dieser Bezeichner ist eine Smarttag-Aufforderung erscheint.  
   
     > [!NOTE]
-    >  Refactoring mit Umbenennung mit Smarttags bei der Deklaration eines Bezeichners kann nur aufgerufen werden.  
+    > Refactoring mit Umbenennung mit Smarttags bei der Deklaration eines Bezeichners kann nur aufgerufen werden.  
   
 3. Geben Sie die Tastenkombination UMSCHALT + ALT + F10, und drücken Sie dann auf den Pfeil nach unten der Smarttag-Menü angezeigt werden soll.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114729"
  Wenn **Überladungen umbenennen** aktiviert ist, benennt die Refactor-Engine `Derived.Method(int i)` überlädt `Derived.Method()`, `Base.Method(int i)` , da sie von außer Kraft gesetzt wird `Derived.Method(int i)`, und `Base.Method()` da es sich um eine Überladung der handelt. `Base.Method(int i)`.  
   
 > [!NOTE]
->  Wenn Sie ein Element, die in einer referenzierten Assembly definiert wurde umbenennen, erklärt ein Dialogfeld an, dass es sich bei Umbenennung Erstellungsfehlern führen.  
+> Wenn Sie ein Element, die in einer referenzierten Assembly definiert wurde umbenennen, erklärt ein Dialogfeld an, dass es sich bei Umbenennung Erstellungsfehlern führen.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Durch Umbenennen der Eigenschaften von anonymen Typen  
  Wenn Sie eine Eigenschaft in anonymen Typen umbenennen, werden die Eigenschaften in anderen anonymen Typen Umbenennungsvorgang, die die gleichen Eigenschaften verfügen. Die folgenden Beispiele veranschaulichen dieses Verhalten.  

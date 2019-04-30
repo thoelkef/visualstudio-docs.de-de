@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970808"
 ---
 # <a name="properties-of-connectors"></a>Eigenschaften von Konnektoren
 Verbinder repräsentieren domänenbeziehungen in einen generierten Designer.
@@ -27,8 +27,8 @@ Verbinder repräsentieren domänenbeziehungen in einen generierten Designer.
 |-|-|-|
 |Farbe|Die Farbe dieses Verbinders.|Schwarz|
 |Dash-Format|Der Strichstil für die Zeile für diesen Connector (einfarbig, Bindestrich, Punkt, DashDot, Strich oder Benutzerdefiniert).|Basis|
-|Quellendlinienstärke|Die quellendlinienstärke für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|
-|Zielendlinienart|Die zielendlinienart für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|
+|Quellendlinienstärke|Die quellendlinienstärke für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keiner|
+|Zielendlinienart|Die zielendlinienart für diesen Connector (HollowArrow EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keiner|
 |Textfarbe|Die Farbe, die für Text-Decorators verwendet wird, die mit diesem Connector verknüpft sind.|Schwarz|
 |Stärke|Die Stärke der Linie für dieses Verbinders, gemessen in Zoll.|0.03125|
 |Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|
@@ -37,7 +37,7 @@ Verbinder repräsentieren domänenbeziehungen in einen generierten Designer.
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse in der Code ein, die vom Connector generiert wird (`none`, `abstract` oder `sealed`).|none|
 |Basisverbinder|Die Basisklasse dieses Verbinders.|(keine)|
-|name|Der Name dieses Verbinders.|Aktuelle name|
+|Name|Der Name dieses Verbinders.|Aktuelle name|
 |Namespace|Der Namespace, der diesen Connector zugeordnet ist.|Aktuellen namespace|
 |QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn fest, klicken Sie dann den Wert des der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet, wenn die Variable, klicken Sie dann die QuickInfo wird im benutzerdefinierten Code definiert.|\<none>|
 |Hinweise|Informelle Hinweise, die mit diesem Connector verknüpft sind.|\<none>|

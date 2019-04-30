@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442958"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Bearbeiten von UML-Sequenzdiagrammen mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Es gibt zwei Arten von Sequenzdiagrammen: manuell in einem UML-Modellierungsprojekt erstellte, und solche, die aus Programmcode generiert wurden. Verwenden Sie die `UmlMode` -Eigenschaft, um zu ermitteln, welches Sequenzdiagramm Sie haben.  
   
 > [!NOTE]
->  Diese Eigenschaft false nur bei Sequenzdiagrammen zurück, die aus Code mit Visual Studio 2013 und früheren Versionen generiert wurden. Dies schließt code-generierte Sequenzdiagramme ein, die von 2013 und früheren Versionen migriert wurden. Diese Version von Visual Studio unterstützt nicht das Generieren von neuen Sequenzdiagrammen.  
+> Diese Eigenschaft false nur bei Sequenzdiagrammen zurück, die aus Code mit Visual Studio 2013 und früheren Versionen generiert wurden. Dies schließt code-generierte Sequenzdiagramme ein, die von 2013 und früheren Versionen migriert wurden. Diese Version von Visual Studio unterstützt nicht das Generieren von neuen Sequenzdiagrammen.  
   
  Wenn Sie beispielsweise einen Menübefehl erstellen möchten, der nur in UML-Sequenzdiagrammen sichtbar ist, kann die `QueryStatus()` -Methode die folgende Anweisung enthalten:  
   

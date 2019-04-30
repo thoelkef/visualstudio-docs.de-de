@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415450"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Vorgehensweise: Aktualisieren von Visual Studio-Erweiterung
 Sie können mithilfe von Visual Studio-Erweiterung auf Ihrem System aktualisieren **Erweiterungen und Updates** um die aktualisierte Version zu installieren. Wenn Sie eine aktualisierte Version der Erweiterung erstellen, können Sie es angeben, wie durch das Erhöhen der Versionsnummer im VSIX-Manifest aktualisiert.
@@ -43,7 +43,7 @@ Sie können mithilfe von Visual Studio-Erweiterung auf Ihrem System aktualisiere
 1. Öffnen Sie in Visual Studio die Projektmappe für die Erweiterung, die Sie aktualisieren möchten. Stellen Sie die Änderungen.
 
     > [!IMPORTANT]
-    >  Unsigned alle Benutzererweiterungen nicht automatisch aktualisiert werden. Sie sollten immer Ihre Erweiterungen signieren.
+    > Unsigned alle Benutzererweiterungen nicht automatisch aktualisiert werden. Sie sollten immer Ihre Erweiterungen signieren.
 
 2. In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"*.
 
@@ -58,7 +58,7 @@ Sie können mithilfe von Visual Studio-Erweiterung auf Ihrem System aktualisiere
      Können Sie aktivieren oder deaktivieren Sie die automatische Überprüfung auf Updates am unteren Rand der **Updates** Bereich (**aktiviert bzw. deaktiviert die automatische Erkennung der verfügbaren Updates**), welche Änderungen an der **überprüfen Updates** festlegen in **Tools** > **Optionen** > **Umgebung**  >  **Erweiterungen und Updates**.
 
     > [!NOTE]
-    >  Ab Visual Studio 2015 Update 2 können Sie angeben können (im **Tools** > **Optionen** > **Umgebung**  >  **Erweiterungen und Updates**) gibt an, ob automatische Updates für Erweiterungen pro Benutzer, alle Benutzererweiterungen oder beides (Standardeinstellung) werden sollen.
+    > Ab Visual Studio 2015 Update 2 können Sie angeben können (im **Tools** > **Optionen** > **Umgebung**  >  **Erweiterungen und Updates**) gibt an, ob automatische Updates für Erweiterungen pro Benutzer, alle Benutzererweiterungen oder beides (Standardeinstellung) werden sollen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)

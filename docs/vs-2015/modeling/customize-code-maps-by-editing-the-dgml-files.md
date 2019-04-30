@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433327"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
  Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn die Zuordnung Teil von Visual Studio-Projektmappe ist, wählen Sie diese in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü, und wählen **Öffnen mit**, **XML (Text)-Editor**.  
   
 > [!NOTE]
->  Um Codeübersichten erstellen zu können, müssen Sie über Visual Studio Enterprise verfügen. Wenn Sie eine Code Map in Visual Studio bearbeiten, werden alle nicht verwendeten DGML-Elemente und -Attribute beim Speichern der DGML-Datei gelöscht. Zudem werden automatisch Codeelemente erstellt, wenn Sie neue Links manuell hinzufügen. Wenn Sie die DGML-Datei speichern, werden möglicherweise alle Attribute, die Sie einem Element hinzugefügt haben, in alphabetischer Reihenfolge angeordnet.  
+> Um Codeübersichten erstellen zu können, müssen Sie über Visual Studio Enterprise verfügen. Wenn Sie eine Code Map in Visual Studio bearbeiten, werden alle nicht verwendeten DGML-Elemente und -Attribute beim Speichern der DGML-Datei gelöscht. Zudem werden automatisch Codeelemente erstellt, wenn Sie neue Links manuell hinzufügen. Wenn Sie die DGML-Datei speichern, werden möglicherweise alle Attribute, die Sie einem Element hinzugefügt haben, in alphabetischer Reihenfolge angeordnet.  
   
 ## <a name="OrganizeNodes"></a> Gruppencodeelemente  
  Sie können neue Gruppen hinzufügen oder vorhandene Knoten in eine Gruppe konvertieren.  
@@ -120,7 +120,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
 - Gruppen von Codeelementen und Links auf der Grundlage bestimmter Bedingungen  
   
 > [!TIP]
->  Wenn Sie sich wiederholende Stile für viele Codeelemente oder Links verwenden, sollten Sie in Betracht ziehen, eine Kategorie auf die Codeelemente oder Links anzuwenden und dann einen Stil auf diese Kategorie anzuwenden. Weitere Informationen finden Sie unter [Zuweisen von Kategorien zu Codeelementen und Links](#AssignCategories) und [Zuweisen von Eigenschaften zu Codeelementen und Links](#AssignProperties).  
+> Wenn Sie sich wiederholende Stile für viele Codeelemente oder Links verwenden, sollten Sie in Betracht ziehen, eine Kategorie auf die Codeelemente oder Links anzuwenden und dann einen Stil auf diese Kategorie anzuwenden. Weitere Informationen finden Sie unter [Zuweisen von Kategorien zu Codeelementen und Links](#AssignCategories) und [Zuweisen von Eigenschaften zu Codeelementen und Links](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>So wenden Sie einen benutzerdefinierten Stil auf einen einzelnes Codeelement an  
   
@@ -558,7 +558,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
  Sie können Dokumente oder URLs mit Codeelementen oder Links verknüpfen, indem Sie die DGML-Datei der Map bearbeiten und ein `Reference`-Attribut für ein Codeelement zum `<Node/>`-Element und für einen Link zum `<Link/>`-Element hinzufügen. Anschließend können Sie den Inhalt über das Codeelement bzw. den Link öffnen und anzeigen. Das `Reference`-Attribut gibt den Pfad dieses Inhalts an. Dabei kann es sich um einen relativ zum Ort der DGML-Datei angegebenen Pfad oder um einen absoluten Pfad handeln.  
   
 > [!CAUTION]
->  Wenn Sie relative Pfade verwenden und die DGML-Datei an einen anderen Speicherort verschoben wird, können diese Pfade nicht mehr aufgelöst werden. Wenn Sie versuchen, den verknüpften Inhalt zu öffnen und anzuzeigen, gibt eine Fehlermeldung an, dass der Inhalt nicht angezeigt werden kann.  
+> Wenn Sie relative Pfade verwenden und die DGML-Datei an einen anderen Speicherort verschoben wird, können diese Pfade nicht mehr aufgelöst werden. Wenn Sie versuchen, den verknüpften Inhalt zu öffnen und anzuzeigen, gibt eine Fehlermeldung an, dass der Inhalt nicht angezeigt werden kann.  
   
  Möglicherweise möchten Sie die folgenden Codeelemente verknüpfen:  
   
@@ -583,7 +583,7 @@ Um eine Code Map anzupassen, können Sie eine DGML-Datei (Directed Graph Markup 
    - Fügen Sie im `<Node/>`- oder `<Link/>`-Element ein `Reference`-Attribut hinzu, um den Ort des Codeelements anzugeben.  
   
      > [!NOTE]
-     >  Pro Element kann nur ein `Reference`-Attribut verwendet werden.  
+     > Pro Element kann nur ein `Reference`-Attribut verwendet werden.  
   
      Zum Beispiel:  
   

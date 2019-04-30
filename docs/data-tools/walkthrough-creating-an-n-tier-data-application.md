@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564800"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung
 *N-Tier*-Datenanwendungen sind Anwendungen, die auf Daten zugreifen und in mehrere logische Ebenen (oder *Tiers*) aufgeteilt sind. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenschicht enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. Weitere Informationen finden Sie unter [Übersicht über N-schichtige datenanwendungen](../data-tools/n-tier-data-applications-overview.md).
@@ -92,7 +92,7 @@ In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Erstellen Sie eine separate Klassenbibliothek für die TableAdapter-Steuerelemente
 
-1. Mit der rechten Maustaste auf die Projektmappe im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Projekt**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
 2. In der **neues Projekt** im Dialogfeld im mittleren Bereich wählen **Klassenbibliothek**.
 
@@ -164,7 +164,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie auf die Datenz
 
 ### <a name="to-create-a-new-wcf-service-application"></a>So erstellen Sie eine neue WCF-Dienstanwendung
 
-1. Mit der rechten Maustaste auf die Projektmappe im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Projekt**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
 2. In der **neues Projekt** im Dialogfeld im linken Bereich auf **WCF**. Wählen Sie im mittleren Bereich **WCF-Dienstbibliothek**.
 
@@ -288,7 +288,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie auf die Datenz
 
 ### <a name="to-create-the-presentation-tier-project"></a>So erstellen Sie das Präsentationsebenenprojekt
 
-1. Mit der rechten Maustaste auf die Projektmappe im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Projekt**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
 2. In der **neues Projekt** im Dialogfeld im linken Bereich auf **Windows Desktop**. Wählen Sie im mittleren Bereich **Windows Forms-App**.
 

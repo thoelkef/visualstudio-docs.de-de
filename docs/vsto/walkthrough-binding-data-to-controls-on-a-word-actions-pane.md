@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438697"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht die Datenbindung an Steuerelemente in einem Aktionsbereich in Word. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
@@ -38,7 +38,7 @@ ms.locfileid: "60063607"
 - Zeigen Sie im Aktionsbereich beim Öffnen der Anwendung.
 
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
@@ -78,7 +78,7 @@ ms.locfileid: "60063607"
 1. Wenn die **Datenquellen** Fenster ist nicht sichtbar ist, zeigen Sie es an, indem in der Menüleiste die Optionen **Ansicht** > **Other Windows**  >   **Datenquellen**.
 
    > [!NOTE]
-   >  Wenn **Datenquellen anzeigen** ist nicht verfügbar ist, klicken Sie auf das Word-Dokument, und klicken Sie dann erneut.
+   > Wenn **Datenquellen anzeigen** ist nicht verfügbar ist, klicken Sie auf das Word-Dokument, und klicken Sie dann erneut.
 
 2. Klicken Sie auf **neue Datenquelle hinzufügen** zum Starten der **Assistenten zur Datenquellenkonfiguration**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063607"
 4. Wählen Sie `SuppliersBindingNavigator` in die **Komponente** Taskleiste, und drücken Sie **löschen**. Verwenden Sie nicht die `SuppliersBindingNavigator` in dieser exemplarischen Vorgehensweise.
 
     > [!NOTE]
-    >  Löschen der `SuppliersBindingNavigator` entfernt nicht der gesamte Code, der für sie generiert wurde. Sie können diesen Code entfernen.
+    > Löschen der `SuppliersBindingNavigator` entfernt nicht der gesamte Code, der für sie generiert wurde. Sie können diesen Code entfernen.
 
 5. Verschieben Sie im Kombinationsfeld, damit es unter der Bezeichnung und die Änderung ist die **Größe** Eigenschaft **171, 21**.
 

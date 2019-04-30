@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898132"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigkeiten, indem Sie erforderliche beschreibt eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Beispiele für externe Abhängigkeiten sind die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und der Microsoft Data Access Components (MDAC). Eine Paketdatei ist vergleichbar mit der einer Produktdatei, aber es wird verwendet, um die Kultur abhängige Komponenten einer Abhängigkeit, wie lokalisierte Assemblys, lizenzvereinbarungen und Dokumentation zu installieren.
@@ -39,15 +39,15 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigke
 
 |Element|Beschreibung|Attribute|
 |-------------|-----------------|----------------|
-|[\<Produkt >-Element](../deployment/product-element-bootstrapper.md)|Element der obersten Ebene erforderlich für Produktdateien.|Keiner|
-|[\<Package >-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für die Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts >-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element, für die Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt.|Keiner|
-|[\<InstallChecks >-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen auf dem lokalen Computer ausführen, während der Installation überprüft die Abhängigkeit.|Keiner|
-|[\<Befehle >-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen, wie beschrieben `InstallChecks`, und gibt an, welches Paket installiert die Überprüfung sollte fehlschlagen.|Keiner|
-|[\<"PackageFiles" >-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Listet die Pakete, die durch diese Installation installiert werden können.|Keiner|
-|[\<Zeichenfolgen >-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen der Produkte und Fehler Zeichenfolgen.|Keiner|
+|[\<Product>-Element](../deployment/product-element-bootstrapper.md)|Element der obersten Ebene erforderlich für Produktdateien.|Keiner|
+|[\<Package>-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für die Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[\<RelatedProducts>-Element](../deployment/relatedproducts-element-bootstrapper.md)|Optionales Element, für die Produktdateien. Die anderen Produkte, die dieses Produkt installiert oder hängt.|Keiner|
+|[\<InstallChecks>-Element](../deployment/installchecks-element-bootstrapper.md)|Erforderliches Element. Listen auf dem lokalen Computer ausführen, während der Installation überprüft die Abhängigkeit.|Keiner|
+|[\<Commands>-Element](../deployment/commands-element-bootstrapper.md)|Erforderliches Element.  Führt eine oder mehrere installationsüberprüfungen, wie beschrieben `InstallChecks`, und gibt an, welches Paket installiert die Überprüfung sollte fehlschlagen.|Keiner|
+|[\<PackageFiles>-Element](../deployment/packagefiles-element-bootstrapper.md)|Erforderliches Element. Listet die Pakete, die durch diese Installation installiert werden können.|Keiner|
+|[\<Strings>-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen der Produkte und Fehler Zeichenfolgen.|Keiner|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Das Paketschema wird durch *Setup.exe*, ein Stub-Programm, das vom Bootstrap-Aufgabe, die wenig hartcodierte Logik selbst enthält MS Build generiert wurde. Das Schema Laufwerke jeden Aspekt des Installationsprozesses.
 
  `InstallChecks` die Tests sollten, die setup.exe das Vorhandensein eines bestimmten Pakets ausführen. `PackageFiles` Listet alle Pakete, die der Setupvorgang zu installieren, ein bestimmten Test durchgeführt werden soll. Jeder Befehlseintrag unter Befehle führt einer der beschriebenen Tests `InstallChecks`, und gibt an, welche `PackageFile` ausführen sollte der Test fehl. Sie können die `Strings` Element Produktnamen und Fehlermeldungen zu lokalisieren, damit Sie eine einmalige Installation binäre verwenden können, um Ihre Anwendung für eine beliebige Anzahl von Sprachen zu installieren.

@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436631"
 ---
 # <a name="registering-a-project-type"></a>Registrieren eines Projekttyps
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge a
  Im folgenden Beispiel wird die Anweisungen aus der Registrierung geben Sie Standardpfade für, und Daten, falls zutreffend, gefolgt von einer Tabelle, die Einträge aus dem Registrierungsskript "for each-Anweisung enthält. Die Tabellen enthalten die skripteinträgen und zusätzliche Informationen zu den Anweisungen.  
   
 > [!NOTE]
->  Die folgenden Informationen in der Registrierung richtet sich an ein Beispiel für den Typ und Zweck der Einträge in der Registrierungsskripts, die Sie zum Registrieren der Art Ihres Projekts geschrieben werden. Die tatsächliche Eingaben und deren Verwendung variieren basierend auf den spezifischen Anforderungen der Art Ihres Projekts. Sie sollten überprüfen Sie die Beispielen zu suchen, die den Typ des Projekts sehr ähnlich, die Sie entwickeln, und überprüfen Sie dann das Registrierungsskript für dieses Beispiel.  
+> Die folgenden Informationen in der Registrierung richtet sich an ein Beispiel für den Typ und Zweck der Einträge in der Registrierungsskripts, die Sie zum Registrieren der Art Ihres Projekts geschrieben werden. Die tatsächliche Eingaben und deren Verwendung variieren basierend auf den spezifischen Anforderungen der Art Ihres Projekts. Sie sollten überprüfen Sie die Beispielen zu suchen, die den Typ des Projekts sehr ähnlich, die Sie entwickeln, und überprüfen Sie dann das Registrierungsskript für dieses Beispiel.  
   
  Die folgenden Beispiele stammen aus HKEY_CLASSES_ROOT.  
   

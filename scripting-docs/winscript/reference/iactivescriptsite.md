@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992565"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Vom Host zum Erstellen einer Website für die Windows-Skript-Engine implementiert. In der Regel werden diese Website der Container aller Objekte zugeordnet, die an das Skript (z. B. ActiveX-Steuerelemente) sichtbar sind. Dieser Container entsprechen in der Regel in das Dokument oder eine Seite angezeigt wird. Microsoft Internet Explorer würden z. B. solche einen Container für jedes HTML-Seite angezeigt wird erstellen. Jede ActiveX-Steuerelement (oder ein anderes Automatisierungsobjekt) auf der Seite, und die Skript-Engine selbst innerhalb dieses Containers aufzählbare wäre.  

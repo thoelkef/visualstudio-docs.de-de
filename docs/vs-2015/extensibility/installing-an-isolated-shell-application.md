@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414542"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
 2. Identifizieren Sie die Komponenten, die die Shell und Ihre Shell-Anwendung, wie im folgenden Beispiel gezeigt erfordern.  
   
     > [!NOTE]
-    >  Einige Elemente können sich auf Definitionen in anderen Dateien WXS beziehen.  
+    > Einige Elemente können sich auf Definitionen in anderen Dateien WXS beziehen.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
         ```  
   
     > [!NOTE]
-    >  Erforderliche Abhängigkeiten für die Shell (isoliert)-Anwendungen sind: DebuggerProxy, MasterPkgDef, Ressourcen (insbesondere die .winprf-Datei), Anwendung und PkgDefs.  
+    > Erforderliche Abhängigkeiten für die Shell (isoliert)-Anwendungen sind: DebuggerProxy, MasterPkgDef, Ressourcen (insbesondere die .winprf-Datei), Anwendung und PkgDefs.  
   
 ### <a name="registry-entries"></a>Registrierungseinträge  
  Die Shell (isoliert)-Projektvorlage enthält ein *ProjectName*reg-Datei für die Registrierungsschlüssel für die Installation zusammenführen. Diese Registrierungseinträge müssen die MSI-Datei für die Installation und Bereinigung Zwecke angehören. Außerdem müssen Sie entsprechende Registrierung Blöcke in ApplicationRegistry.wxs erstellen.  
@@ -211,7 +211,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
  Um zu bestimmen, ob Visual Studio Shell (isoliert) installiert werden müssen, sollten Sie zunächst zu bestimmen, ob es bereits installiert ist, anhand des Registrierungswerts von HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
   
 > [!NOTE]
->  Diese Werte werden auch vom Shell-Erkennung im Product.wxs Block gelesen werden.  
+> Diese Werte werden auch vom Shell-Erkennung im Product.wxs Block gelesen werden.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder gibt den Speicherort der Visual Studio-Shell installiert wurde, und sehen Sie sich für die Dateien an.  
   

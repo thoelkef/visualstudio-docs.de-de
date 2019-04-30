@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406774"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und -Bereitstellung
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist eine bereitstellungstechnologie, mit dem Sie selbst aktualisierende Windows-basierte Anwendungen erstellen, die installiert und mit minimalem Benutzereingriff ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual entwickelt haben C#. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist eine bereitstellungstechnologie, mit dem Sie selbst aktualisierende Windows-basierte Anwendungen erstellen, die installiert und mit minimalem Benutzereingriff ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben. Informationen zum Bereitstellen von Visual C++-Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung löst drei grundlegende Probleme:
 
@@ -54,13 +54,13 @@ ms.locfileid: "56612906"
  Codezugriffssicherheit wird der Zugriff beschränkt, den Code auf geschützte Ressourcen hat. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" die Berechtigungen einschränken. Verwenden der **Sicherheit** auf der Seite die **ProjectDesigner** zum Anfordern der Zone, die für die Anwendung geeignet. Sie können auch Anwendungen mit eingeschränkten Berechtigungen zum Emulieren der endbenutzererfahrung Debuggen. Weitere Informationen finden Sie unter [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>ClickOnce-Vertrauensaufforderung
- Wenn eine Anwendung mehr Berechtigungen als können die Zone anfordert, kann der Endbenutzer aufgefordert werden, eine Vertrauensstellung Entscheidung zu treffen. Benutzer können entscheiden, ob es sich bei ClickOnce-Anwendungen wie z. B. Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen, konsolenanwendungen, XAML-Browseranwendungen und Office-Projektmappen vertrauenswürdig ist und ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce Vertrauenswürdigkeit auffordern](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Wenn eine Anwendung mehr Berechtigungen als können die Zone anfordert, kann der Endbenutzer aufgefordert werden, eine Vertrauensstellung Entscheidung zu treffen. Benutzer können entscheiden, ob es sich bei ClickOnce-Anwendungen wie z. B. Windows Forms-Anwendungen, Windows Presentation Foundation-Anwendungen, konsolenanwendungen, XAML-Browseranwendungen und Office-Projektmappen vertrauenswürdig ist und ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="how-clickonce-deployment-works"></a>Wie funktioniert die ClickOnce-Bereitstellung?
  Die wichtigsten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsarchitektur basiert auf zwei XML-Manifestdateien: ein Anwendungsmanifest sowie ein Bereitstellungsmanifest. Die Dateien werden verwendet, um zu beschreiben, von dem die ClickOnce-Anwendungen installiert sind, wie sie aktualisiert werden und wann sie aktualisiert werden.
 
 ### <a name="publish-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
- Das Anwendungsmanifest beschreibt die Anwendung selbst. Dies schließt die Assemblys, die Abhängigkeiten und Dateien, aus denen die Anwendung, die erforderlichen Berechtigungen und den Speicherort, in denen Updates zur Verfügung stehen. Der Anwendungsentwickler erstellt das Anwendungsmanifest mit dem Webpublishing-Assistenten in Visual Studio oder das Manifest Generation and Editing Tool (*Mage.exe*) in der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Weitere Informationen finden Sie unter [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Das Anwendungsmanifest beschreibt die Anwendung selbst. Dies schließt die Assemblys, die Abhängigkeiten und Dateien, aus denen die Anwendung, die erforderlichen Berechtigungen und den Speicherort, in denen Updates zur Verfügung stehen. Der Anwendungsentwickler erstellt das Anwendungsmanifest mit dem Webpublishing-Assistenten in Visual Studio oder das Manifest Generation and Editing Tool (*Mage.exe*) in der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  In dem Bereitstellungsmanifest wird die Bereitstellung der Anwendung beschrieben. Dies schließt den Speicherort des Anwendungsmanifests und die Version der Anwendung, die von Clients ausgeführt werden soll.
 
@@ -75,13 +75,13 @@ ms.locfileid: "56612906"
  Kann die Anwendung des Benutzers hinzugefügt werden **starten** Menü und die **Software** Gruppe der **Systemsteuerung**. Im Gegensatz zu anderen bereitstellungstechnologien wird nichts hinzugefügt die **Programmdateien** Ordner oder die Registrierung und keine Administratorrechte für die Installation erforderlich sind
 
 > [!NOTE]
->  Es ist auch möglich, die verhindern, dass die Anwendung hinzugefügt wird die **starten** Menü und **Software** Gruppe faktisch somit Verhalten sich wie eine Webanwendung. Weitere Informationen finden Sie unter [auswählen eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).
+> Es ist auch möglich, die verhindern, dass die Anwendung hinzugefügt wird die **starten** Menü und **Software** Gruppe faktisch somit Verhalten sich wie eine Webanwendung. Weitere Informationen finden Sie unter [auswählen eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 ### <a name="update-clickonce-applications"></a>Aktualisieren Sie die ClickOnce-Anwendungen
  Wenn die Anwendungsentwickler eine aktualisierte Version der Anwendung erstellen, sie ein neues Anwendungsmanifest generieren und Dateien an einen Bereitstellungsspeicherort kopieren, in der Regel ein gleichgeordneter Ordner in den ursprünglichen Bereitstellungsordner der Anwendung. Der Administrator aktualisiert das Bereitstellungsmanifest, zeigen Sie auf den Speicherort der neuen Version der Anwendung.
 
 > [!NOTE]
->  Die **Veröffentlichungs-Assistenten** in Visual Studio zum Ausführen dieser Schritte verwendet werden.
+> Die **Veröffentlichungs-Assistenten** in Visual Studio zum Ausführen dieser Schritte verwendet werden.
 
  Neben dem Bereitstellungsspeicherort enthält das Bereitstellungsmanifest auch einen Updatespeicherort (eine Webseite oder Datei-Netzwerkfreigabe), in dem sich die Anwendung nach aktualisierten Versionen sucht. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Veröffentlichen von** Eigenschaften werden verwendet, um anzugeben, wann und wie oft die Anwendung nach Updates suchen soll. Aktualisierungsverhalten kann im Bereitstellungsmanifest angegeben werden, oder es kann angezeigt werden, als Auswahlmöglichkeit für den Benutzer in der Benutzeroberfläche der Anwendung, von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] APIs. Außerdem können die Eigenschaften zum **Veröffentlichen** verwendet werden, um Updates als obligatorisch zu kennzeichnen oder die Anwendung auf eine frühere Version zurückzusetzen. Weitere Informationen finden Sie unter [Auswählen einer Strategie der ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -94,8 +94,8 @@ ms.locfileid: "56612906"
 |Tool|Beschreibung|
 |----------|-----------------|
 |[Seite „Sicherheit“, Projekt-Designer](../ide/reference/security-page-project-designer.md)|Meldet die Anwendungs- und Bereitstellungsmanifeste.|
-|[Seite „Veröffentlichen“, Projekt-Designer](../ide/reference/publish-page-project-designer.md)|Generiert und bearbeitet die Anwendungs- und Bereitstellungsmanifeste für Visual Basic und Visual C# Anwendungen.|
-|[*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generiert die Anwendungs- und Bereitstellungsmanifeste für Visual Basic, Visual C#, und Visual C++-Anwendungen.<br /><br /> Meldet, und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.<br /><br /> Können von batchskripten und der Eingabeaufforderung ausgeführt werden.|
+|[Seite „Veröffentlichen“, Projekt-Designer](../ide/reference/publish-page-project-designer.md)|Generiert und bearbeitet die Anwendungs- und Bereitstellungsmanifeste für Visual Basic und Visual C#-Anwendungen.|
+|[*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generiert die Anwendungs- und Bereitstellungsmanifeste für Visual Basic, Visual c# und Visual C++-Anwendungen.<br /><br /> Meldet, und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.<br /><br /> Können von batchskripten und der Eingabeaufforderung ausgeführt werden.|
 |[*MageUI.exe* (Manifest Generation and Editing Tool, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Wird generiert, und die Anwendungs- und Bereitstellungsmanifeste bearbeitet.<br /><br /> Meldet, und die Anwendungs- und Bereitstellungsmanifeste erneut signiert.|
 |[GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)|Generiert das Anwendungsmanifest an.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild-Referenz](../msbuild/msbuild-reference.md).|
 |[GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)|Generiert das Bereitstellungsmanifest.<br /><br /> Kann von MSBuild ausgeführt werden. Weitere Informationen finden Sie unter [MSBuild-Referenz](../msbuild/msbuild-reference.md).|

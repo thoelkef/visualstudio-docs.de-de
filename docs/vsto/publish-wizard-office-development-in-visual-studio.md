@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce0be90be111d458229189c2a06624bd726ac05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447066"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungsassistent (Office-Entwicklung in Visual Studio)
   Verwenden der **Veröffentlichungs-Assistenten** um Projektmappendateien an einen bestimmten Speicherort zu kopieren, Erstellen der Manifestdateien sowie ein Setupprogramm erstellen.
@@ -46,7 +46,7 @@ ms.locfileid: "56604830"
   Standardmäßig ist der Ort der Veröffentlichung *http://localhost/projectname/* Wenn IIS installiert, oder das Verzeichnis "publish\" verwendet, wenn Sie dies tun nicht IIS installiert haben.
 
 > [!NOTE]
->  Es sind weitere Überlegungen, wenn es sich bei dem Ziel-PC Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer mit der Option für lokale Veröffentlichung sein. Darüber hinaus ist der Standardspeicherort immer das *veröffentlichen\\*  Verzeichnis, unabhängig davon, ob IIS installiert ist.
+> Es sind weitere Überlegungen, wenn es sich bei dem Ziel-PC Windows Vista ausgeführt wird. Sie müssen ein Administrator auf dem Windows Vista-Computer mit der Option für lokale Veröffentlichung sein. Darüber hinaus ist der Standardspeicherort immer das *veröffentlichen\\*  Verzeichnis, unabhängig davon, ob IIS installiert ist.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Was ist der Standardpfad für die Installation auf Computern von Endbenutzern?
  Der Installationspfad ist optional. Sie können den Installationspfad später festlegen, falls gewünscht. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Installationspfads einer Office-Projektmappe](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).

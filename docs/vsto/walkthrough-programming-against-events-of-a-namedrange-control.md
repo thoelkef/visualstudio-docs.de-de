@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446922"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements
   In dieser exemplarischen Vorgehensweise veranschaulicht das Hinzufügen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement zu einem Microsoft Office Excel-Arbeitsblatt und das Programmieren der Ereignisse mithilfe von Office-Entwicklungstools in Visual Studio.
@@ -37,7 +37,7 @@ ms.locfileid: "60049931"
 - Testen Sie das Projekt ein.
 
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
@@ -119,7 +119,7 @@ ms.locfileid: "60049931"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Da durch Doppelklicken auf eine Zelle in einem Excel-Bereich den Bearbeitungsmodus versetzt, wird eine <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> Ereignis tritt auf, wenn die Auswahl außerhalb des Bereichs verschoben wird, selbst wenn keine Änderungen an Text aufgetreten ist.
+    > Da durch Doppelklicken auf eine Zelle in einem Excel-Bereich den Bearbeitungsmodus versetzt, wird eine <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> Ereignis tritt auf, wenn die Auswahl außerhalb des Bereichs verschoben wird, selbst wenn keine Änderungen an Text aufgetreten ist.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Fügen Sie Code zum Antworten auf die SelectionChange-Ereignis
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049931"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Da bewirkt, die Auswahl zum Verschieben in den Bereich durch Doppelklicken auf eine Zelle in einem Excel-Bereich dass eine <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> Ereignis tritt auf, bevor Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> Ereignis auftritt.
+    > Da bewirkt, die Auswahl zum Verschieben in den Bereich durch Doppelklicken auf eine Zelle in einem Excel-Bereich dass eine <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> Ereignis tritt auf, bevor Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> Ereignis auftritt.
 
 ## <a name="test-the-application"></a>Testen der Anwendung
  Nun können Sie die Arbeitsmappe, um zu überprüfen, ob dieser Text beschreibt die Ereignisse des Testen einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement wird in einen anderen benannten Bereich eingefügt, wenn die Ereignisse ausgelöst werden.

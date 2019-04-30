@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437167"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656023"
 Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Änderungen am Farbschema gelten noch nicht für die Sitzung, in der Sie die Änderungen vorgenommen haben. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.  
   
@@ -56,7 +56,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
    Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Drucker“ beeinflussen die Darstellung von Text in gedruckten Dokumenten.  
   
   > [!NOTE]
-  >  Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.  
+  > Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.  
   
 - **Anweisungsvervollständigung**  
   
@@ -75,7 +75,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
    Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe für dieses Element betreffen die Darstellung von Text in Toolfenstern, die über Ausgabebereiche in der IDE verfügen. Beispiele: Ausgabefenster, Befehlsfenster, Direktfenster usw.  
   
   > [!NOTE]
-  >  Änderungen am Text von Elementen unter **[Alle Texttoolfenster]** gelten noch nicht für die Sitzung, in der Sie sie vornehmen. Sie können diese Änderungen auswerten, indem Sie eine andere Instanz von Visual Studio öffnen.  
+  > Änderungen am Text von Elementen unter **[Alle Texttoolfenster]** gelten noch nicht für die Sitzung, in der Sie sie vornehmen. Sie können diese Änderungen auswerten, indem Sie eine andere Instanz von Visual Studio öffnen.  
   
   **Standardwerte verwenden**  
   Setzt die Schriftart- und Farbwerte des unter **Einstellungen anzeigen für** ausgewählten Listenelements zurück. Die Schaltfläche **Verwenden** wird angezeigt, wenn auch andere Anzeigeschemas ausgewählt werden können. Sie können z. B. zwischen zwei Schemas für den Drucker wählen.  
@@ -90,7 +90,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
   Listet die Elemente auf, für die Sie die Vorder- und Hintergrundfarbe ändern können.  
   
 > [!NOTE]
->  Standardmäßig wird das Element **Nur-Text** angezeigt. Daher werden Eigenschaften, die **Nur-Text** zugewiesen sind, von anderen Anzeigeelementen zugewiesenen Eigenschaften überschrieben. Wenn Sie beispielsweise **Nur-Text** die Farbe Blau zuweisen und **Bezeichner** die Farbe Grün, werden alle Bezeichner in Grün angezeigt. In diesem Beispiel überschreiben die Eigenschaften für **Bezeichner** die Eigenschaften für **Nur-Text**.  
+> Standardmäßig wird das Element **Nur-Text** angezeigt. Daher werden Eigenschaften, die **Nur-Text** zugewiesen sind, von anderen Anzeigeelementen zugewiesenen Eigenschaften überschrieben. Wenn Sie beispielsweise **Nur-Text** die Farbe Blau zuweisen und **Bezeichner** die Farbe Grün, werden alle Bezeichner in Grün angezeigt. In diesem Beispiel überschreiben die Eigenschaften für **Bezeichner** die Eigenschaften für **Nur-Text**.  
   
  Hier einige Anzeigeelemente:  
   
@@ -214,7 +214,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
  Zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe für das in der Liste „Elemente anzeigen“ ausgewählte Element festlegen können.  
   
 > [!NOTE]
->  Die Möglichkeit zum Definieren benutzerdefinierter Farben kann durch die Farbeinstellungen des Bildschirms eingeschränkt sein. Wenn Ihr Computer beispielsweise auf 256 Farben festgelegt ist und Sie eine benutzerdefinierte Farbe im Dialogfeld **Farbe** auswählen, verwendet die IDE standardmäßig die ähnlichste verfügbare **Grundfarbe** und zeigt die Farbe Schwarz im Vorschaufeld **Farbe** an.  
+> Die Möglichkeit zum Definieren benutzerdefinierter Farben kann durch die Farbeinstellungen des Bildschirms eingeschränkt sein. Wenn Ihr Computer beispielsweise auf 256 Farben festgelegt ist und Sie eine benutzerdefinierte Farbe im Dialogfeld **Farbe** auswählen, verwendet die IDE standardmäßig die ähnlichste verfügbare **Grundfarbe** und zeigt die Farbe Schwarz im Vorschaufeld **Farbe** an.  
   
  **Elementhintergrund**  
  Bietet eine Farbpalette, aus der Sie eine Hintergrundfarbe für das im Feld **Elemente anzeigen** ausgewählte Element wählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.  

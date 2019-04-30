@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436305"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs und IDs der Visual Studio-Menüs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -173,14 +173,14 @@ Dieses Thema listet die GUID und ID-Werte, der die Menüs und Gruppen in der Men
 |Gruppieren|ID|
 |-----------|--------|
 |Proben|IDG_VS_HELP_SAMPLES|
-|Support|IDG_VS_HELP_SUPPORT|
+|Unterstützung|IDG_VS_HELP_SUPPORT|
 |Info|IDG_VS_HELP_ABOUT|
 
 ## <a name="submenus-of-visual-studio-menus"></a>Untermenüs des Visual Studio-Menüs
  Die folgende Hierarchie veranschaulicht die Untermenüs, die die Menüs auf der Menüleiste von Visual Studio zugeordnet sind. Da nur eine Gruppe ein Menüs als das übergeordnete Element verfügen kann, muss jedem Untermenü aus einer Gruppe in einem Menü, anstatt direkt über das Menü abgeleitet werden. Weitere Informationen über die Beziehung zwischen Menüs, Untermenüs und Gruppen finden Sie unter [Hinzufügen eines Untermenüs zu einem Menü](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Die Namen der Menüs in der Menüleiste von Visual Studio werden nicht separat in dieser Hierarchie angezeigt, da sie wie folgt von der Namenskonvention für Gruppen in der IDE abgeleitet werden können: IDG_VS_*Menünamen*_*Gruppenname*.
+> Die Namen der Menüs in der Menüleiste von Visual Studio werden nicht separat in dieser Hierarchie angezeigt, da sie wie folgt von der Namenskonvention für Gruppen in der IDE abgeleitet werden können: IDG_VS_*Menünamen*_*Gruppenname*.
 
 |Übergeordnete Gruppe|Untermenü|Untergeordnete Gruppen|
 |------------------|-------------|------------------|

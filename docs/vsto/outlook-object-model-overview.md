@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442395"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt eine E-Mail dar.
@@ -65,7 +65,7 @@ ms.locfileid: "60061930"
   Um eine Instanz von der <xref:Microsoft.Office.Interop.Outlook.Application> Objekt, verwenden Sie das Feld "Anwendung" von der `ThisAddIn` Klasse im Projekt. Weitere Informationen finden Sie unter [Programm VSTO-Add-ins](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
->  Damit Sicherheitswarnungen vermieden werden, wenn Sie die Eigenschaften und Methoden, die von der Outlook-Objektmodellschutz blockiert sind verwenden können, erhalten Sie Outlook-Objekte aus dem Feld Anwendung, der die `ThisAddIn` Klasse. Weitere Informationen finden Sie unter [besondere sicherheitsüberlegungen für Office-Projektmappen](../vsto/specific-security-considerations-for-office-solutions.md).
+> Damit Sicherheitswarnungen vermieden werden, wenn Sie die Eigenschaften und Methoden, die von der Outlook-Objektmodellschutz blockiert sind verwenden können, erhalten Sie Outlook-Objekte aus dem Feld Anwendung, der die `ThisAddIn` Klasse. Weitere Informationen finden Sie unter [besondere sicherheitsüberlegungen für Office-Projektmappen](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Explorer-Objekt
  Das <xref:Microsoft.Office.Interop.Outlook.Explorer> -Objekt stellt ein Fenster dar, in dem der Inhalt eines Ordners angezeigt wird, der Elemente wie E-Mails, Aufgaben oder Termine enthält. Das <xref:Microsoft.Office.Interop.Outlook.Explorer> -Objekt enthält Methoden und Eigenschaften, die Sie zum Ändern des Fensters verwenden können, sowie Ereignisse, die bei einer Änderung des Fensters ausgelöst werden.

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439985"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60090022"
  Wenn das MSAA auf Ihrer App nicht bereits aktualisiert ist, dann zeigen die Varianten 2x MSAA und 4x MSAA die relative Auswirkung einer Aktivierung in Ihrer App auf die Leistung an. Wenn die Auswirkung in akzeptabler Weise niedrig ist, können Sie MSAA aktivieren, um die Bildqualität ihrer App zu steigern.  
   
 > [!NOTE]
->  Ihre Hardware unterstützt MSAA eventuell nicht vollständig für alle Formate. Wenn für eine dieser Varianten eine Hardwarebeschränkung gilt, die nicht umgangen werden kann, wird die entsprechende Spalte in der Leistungszusammenfassungstabelle leer gelassen und eine Fehlermeldung ausgegeben.  
+> Ihre Hardware unterstützt MSAA eventuell nicht vollständig für alle Formate. Wenn für eine dieser Varianten eine Hardwarebeschränkung gilt, die nicht umgangen werden kann, wird die entsprechende Spalte in der Leistungszusammenfassungstabelle leer gelassen und eine Fehlermeldung ausgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Varianten überschreiben die Samplinganzahl- und die Samplingqualitäts-Argumente auf Aufrufen von `ID3DDevice::CreateTexture2D`, die Renderziele erstellen. Diese Parameter werden insbesondere überschrieben, wenn:  

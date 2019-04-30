@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436566"
 ---
 # <a name="support-for-settings-categories"></a>Unterstützung für Einstellungskategorien
 Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
  In der Strukturansicht im Navigationsbereich auf dieser Seite sind die Kategorien aufgeführt. Eine Kategorie ist eine Gruppe von verwandten Einstellungen, die als „benutzerdefinierter Einstellungspunkt“ angezeigt werden, d.h. als ein Kontrollkästchen. Verwenden Sie diese Kontrollkästchen, um die Kategorien auszuwählen, die in einer VSETTINGS-Datei dauerhaft gespeichert werden. Der Assistent ermöglicht das Benennen der VSETTINGS-Datei und das Angeben ihres Pfads.  
   
 > [!NOTE]
->  Die Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und individuelle Einstellungsnamen werden nicht im Assistenten angezeigt.  
+> Die Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und individuelle Einstellungsnamen werden nicht im Assistenten angezeigt.  
   
  Das Managed Package Framework (MPF) unterstützt die Erstellung von Einstellungskategorien mit einem Minimum an zusätzlichem Code.  
   
@@ -48,7 +48,7 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
  Der Registrierungspfad der Einstellungskategorie wird durch die Kombination von <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, dem Wort, UserSettings, der Einstellungskategorie und dem Namen des benutzerdefinierten Einstellungspunkts festgelegt. Die Namen der Einstellungskategorie und des benutzerdefinierten Einstellungspunkts werden verknüpft und durch einen Unterstrich getrennt, um den kanonischen, nicht lokalisierten Namen zu bilden, der in der Registrierung erscheint. Wenn die Einstellungskategorie z.B. „My Category“ ist, der benutzerdefinierte Einstellungspunkt „My Settings“ ist, und ApplicationRegistryRoot ist „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp“, dann verfügt die Einstellungskategorie über den Registrierungsschlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings“.  
   
 > [!NOTE]
->  Der kanonische Name wird nicht in einer Benutzeroberfläche angezeigt. Er wird verwendet, um einen lesbaren Namen der Einstellungskategorie zuzuordnen, so wie ein programmatischer Bezeichner (ProgID).  
+> Der kanonische Name wird nicht in einer Benutzeroberfläche angezeigt. Er wird verwendet, um einen lesbaren Namen der Einstellungskategorie zuzuordnen, so wie ein programmatischer Bezeichner (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Das Attribut der Einstellungskategorie  
  Die <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> bestimmt die Zuordnung von Kategorien zu benutzerdefinierten einstellungspunkten im der **-Import- und Exportassistenten Einstellungen** durch Zuordnen einer Kategorie mit dem VSPackage, das es bereitstellt. Betrachten Sie das folgende Codefragment:  

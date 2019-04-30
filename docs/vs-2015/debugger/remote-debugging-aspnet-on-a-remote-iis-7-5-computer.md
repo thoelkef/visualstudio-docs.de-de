@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446077"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS-Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Nachdem sie installiert ist, stellen Sie sicher, dass der Remotedebugger auf dem
 1. Kopieren Sie das ASP.NET-Projektverzeichnis vom Visual Studio-Computer in ein lokales Verzeichnis (das wir **C:\Publish**nennen) auf dem Windows Server-Computer. Sie können das Projekt manuell kopieren, verwenden von Xcopy, Web Deploy, Robocopy, Powershell oder andere Optionen.
 
     > [!CAUTION]
-    >  Wenn Sie den Code oder die Neuerstellung ändern möchten, müssen Sie erneut veröffentlichen und wiederholen Sie diesen Schritt. Die ausführbare Datei, die Sie auf den Remotecomputer kopiert haben, muss genau mit der lokalen Quelle und den lokalen Symbolen übereinstimmen.
+    > Wenn Sie den Code oder die Neuerstellung ändern möchten, müssen Sie erneut veröffentlichen und wiederholen Sie diesen Schritt. Die ausführbare Datei, die Sie auf den Remotecomputer kopiert haben, muss genau mit der lokalen Quelle und den lokalen Symbolen übereinstimmen.
 1. Stellen Sie sicher, dass in der Datei „web.config“ die richtige Version von .NET Framework aufgeführt ist.  Beispielsweise wird standardmäßig auf Windows Server 2008 R2 installierte .NET Framework-Version ist 4.0.30319, aber wir haben eine ASP.NET 4.5.2 erstellt Version. Wenn eine app für ASP.NET 4.0 auf dem Windows Server-Computer ausgeführt wird, müssen Sie die Version zu ändern:
   
     ```xml

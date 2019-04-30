@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436245"
 ---
 # <a name="making-commands-available"></a>Verfügbarmachen von Befehlen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
 - Aktivieren von Kontext `GUID`s ein- und ausschalten (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
   
     > [!CAUTION]
-    >  Stellen Sie sicher, dass das VSPackage nicht den Status der alle vorhandenen Kontext-GUID auswirkt, da andere VSPackages möglicherweise von ihnen abhängig sind.  
+    > Stellen Sie sicher, dass das VSPackage nicht den Status der alle vorhandenen Kontext-GUID auswirkt, da andere VSPackages möglicherweise von ihnen abhängig sind.  
   
 ## <a name="example"></a>Beispiel  
  Ein VSPackage-Befehl im folgende Beispiel wird veranschaulicht, die dynamische Sichtbarkeit eines Befehls, der von befehlskontexte verwaltet wird, ohne dass das VSPackage geladen wird.  

@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439738"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
      Fügen Sie zunächst die Hauptaktivitäten in das Diagramm ein, verbinden Sie sie, und nehmen Sie dann letzte Änderungen vor, indem Sie z. B. den Start- und Endknoten hinzufügen.  
   
     > [!NOTE]
-    >  Sie können keine vorhandenen Elemente aus dem UML-Modell-Explorer in das Diagramm ziehen.  
+    > Sie können keine vorhandenen Elemente aus dem UML-Modell-Explorer in das Diagramm ziehen.  
   
 2. Gehen Sie folgendermaßen vor, um die Elemente zu verbinden:  
   
@@ -87,7 +87,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
     3. Klicken Sie auf das Zielelement.  
   
         > [!NOTE]
-        >  Um ein Tool mehrmals zu verwenden, doppelklicken Sie in der Toolbox auf das Tool.  
+        > Um ein Tool mehrmals zu verwenden, doppelklicken Sie in der Toolbox auf das Tool.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>So verschieben Sie eine Aktivität in ein anderes Paket  
   
@@ -98,7 +98,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 - In **UML-Modell-Explorer**mit der rechten Maustaste auf die Aktivität, und klicken Sie auf **Ausschneiden**. Klicken Sie dann mit der rechten Maustaste in des Pakets, und klicken Sie auf **einfügen**.  
   
     > [!NOTE]
-    >  Die Aktivität wird erst dann im UML-Modell-Explorer angezeigt, wenn Sie dem Diagramm das erste Element hinzufügen.  
+    > Die Aktivität wird erst dann im UML-Modell-Explorer angezeigt, wenn Sie dem Diagramm das erste Element hinzufügen.  
   
 ## <a name="SimpleControlFlow"></a> Beschreiben der Ablaufsteuerung  
  Ein Aktivitätsdiagramm beschreibt einen Geschäftsprozess oder einen Softwarealgorithmus als eine Reihe von Aktionen. Konnektorpfeile stellen dar, wie die Kontrolle nacheinander von einer Aktion an die nächste übergeben wird. Normalerweise kann eine Aktion erst gestartet werden, nachdem die vorherige Aktion abgeschlossen wurde.  
@@ -112,7 +112,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 - Erstellen Sie eine **Aktion** (1) für jede Hauptaufgabe, die von einem Benutzer, das System oder beiden gemeinsam ausgeführt wird.  
   
   > [!NOTE]
-  >  Versuchen Sie, den Prozess oder Algorithmus mit nur einigen wenigen Aktionen zu beschreiben. Sie können **Aktionen zum Aufrufen eines Verhaltens** jede Aktion in einem eigenen Diagramm ausführlicher definieren, wie in beschrieben [Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens](#Subactivities).  
+  > Versuchen Sie, den Prozess oder Algorithmus mit nur einigen wenigen Aktionen zu beschreiben. Sie können **Aktionen zum Aufrufen eines Verhaltens** jede Aktion in einem eigenen Diagramm ausführlicher definieren, wie in beschrieben [Beschreiben von Unteraktivitäten mit Aktionen zum Aufrufen eines Verhaltens](#Subactivities).  
   
 - Stellen Sie sicher, dass der Titel jeder Aktion das standardmäßige Resultat der Aktion eindeutig angibt.  
   
@@ -133,12 +133,12 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 - Verwenden einer **Zusammenführungsknoten** (5), um zwei oder mehr alternative Flüsse zusammenzuführen, die an verzweigt eine **Entscheidungsknoten**.  
   
     > [!NOTE]
-    >  Verwenden Sie eine **Zusammenführungsknoten** um alternative Flüsse, statt Sie zusammen an einer Aktion zusammenzuführen. Im Beispiel ist es nicht korrekt für die Verbindung den Entscheidungsknoten direkt zurück an **Menüpunkt wählen**. Der Grund hierfür ist, dass eine Aktion erst gestartet wird, wenn alle Kontrollthreads an allen Eingangskonnektoren angekommen sind. Daher sollten Sie nur parallele Flüsse an einer Aktion zusammenführen. Weitere Informationen finden Sie unter [parallele Flüsse](#Concurrent).  
+    > Verwenden Sie eine **Zusammenführungsknoten** um alternative Flüsse, statt Sie zusammen an einer Aktion zusammenzuführen. Im Beispiel ist es nicht korrekt für die Verbindung den Entscheidungsknoten direkt zurück an **Menüpunkt wählen**. Der Grund hierfür ist, dass eine Aktion erst gestartet wird, wenn alle Kontrollthreads an allen Eingangskonnektoren angekommen sind. Daher sollten Sie nur parallele Flüsse an einer Aktion zusammenführen. Weitere Informationen finden Sie unter [parallele Flüsse](#Concurrent).  
   
 - Beschreiben Sie Schleifen mithilfe von Verzweigungen, wie im Beispiel gezeigt.  
   
     > [!NOTE]
-    >  Versuchen Sie, Schleifen wie in Programmcode in einer sinnvollen Struktur zu schachteln. Wenn Sie einen vorhandenen Geschäftsprozess beschreiben, lassen sich hierdurch eventuell Verbesserungsmöglichkeiten erkennen.  
+    > Versuchen Sie, Schleifen wie in Programmcode in einer sinnvollen Struktur zu schachteln. Wenn Sie einen vorhandenen Geschäftsprozess beschreiben, lassen sich hierdurch eventuell Verbesserungsmöglichkeiten erkennen.  
   
 ### <a name="starting-the-activity"></a>Starten der Aktivität  
  Es gibt zwei Möglichkeiten, Einstiegspunkte einer Aktivität anzugeben:  
@@ -182,7 +182,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 - Verwenden einer **Ausgabe Pin** und **Eingabe der Pin**. Mit dieser Methode können Sie die Ausgaben einer Aktion und die Eingaben einer anderen Aktion getrennt beschreiben. Pins sind mit Parametern in einem Programm vergleichbar. Pins stellen Ports dar, an denen Objekte in eine Aktion eintreten und eine Aktion verlassen können.  
   
     > [!NOTE]
-    >  Einen Überblick über die in diesem Abschnitt verwendeten Elemente finden Sie im Datenfluss Abschnitt des Themas finden Sie unter [UML-Aktivitätsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-activity-diagrams-reference.md).  
+    > Einen Überblick über die in diesem Abschnitt verwendeten Elemente finden Sie im Datenfluss Abschnitt des Themas finden Sie unter [UML-Aktivitätsdiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Beschreiben des Datenflusses mit Objektknoten  
  Die meisten Ablaufsteuerungen übertragen Daten. Beispielsweise überträgt der Ausgabefluss der Aktion „Kunde gibt Details an“ einen Verweis auf die Lieferadresse.  
@@ -198,7 +198,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
  Sie können festlegen, die **Typ** des Objektknotens im Eigenschaftenfenster angezeigt. Der Typ kann ein primitiver Typ wie z. B. „Integer“ oder eine Klasse, Schnittstelle oder Enumeration sein, die Sie in einem Klassendiagramm definiert haben. Sie können z. B. die Klasse „Lieferadresse“ mit den Attributen „Anschrift“, „Ort“ usw. zusammen mit einer Zuordnung zur Klasse „Kunde“ erstellen. Weitere Informationen finden Sie unter [UML Class Diagrams: Richtlinien](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Wenn Sie den Namen eines Typs, die noch nicht definiert wurde eingeben, wird ein Element hinzugefügt werden, unter **nicht spezifizierte Typen** im UML-Modell-Explorer. Wenn Sie anschließend einen Typ dieses Namens in einem Klassendiagramm definieren, setzen Sie den Typ des Objektknotens zurück, sodass er auf den neuen Typ verweist.  
+> Wenn Sie den Namen eines Typs, die noch nicht definiert wurde eingeben, wird ein Element hinzugefügt werden, unter **nicht spezifizierte Typen** im UML-Modell-Explorer. Wenn Sie anschließend einen Typ dieses Namens in einem Klassendiagramm definieren, setzen Sie den Typ des Objektknotens zurück, sodass er auf den neuen Typ verweist.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Puffern von Daten in Objektknoten  
  Ein Objektknoten kann als Puffer für mehrere Objekte fungieren. In der folgenden Abbildung zeigt die Ablaufsteuerung, dass der Benutzer die Schleife „[weitere auswählen]“ (1) mehrfach durchlaufen kann, während die vom Benutzer ausgewählten Gerichte im Objektknoten „Gewählte Gerichte“ (2) gesammelt werden. Wenn schließlich die Auswahl durch den Benutzer abgeschlossen ist, geht die Kontrolle an die Aktion „Bestellung bestätigen“ (3) über, mit der die vollständige Liste der ausgewählten Elemente aus dem Puffer „Gewählte Gerichte“ akzeptiert wird.  
@@ -265,7 +265,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 4. Legen Sie die **Verhalten** Eigenschaft der **Aktion zum Aufrufen eines Verhaltens** zum Verweisen auf das Diagramm aufgerufene Verhalten.  
   
     > [!NOTE]
-    >  Das Unteraktivitätsdiagramm muss über Elemente verfügen, oder das Diagramm nicht zur Verfügung, in der Dropdown-Liste für die **Verhalten** Eigenschaft. Darüber hinaus das Dreizacksymbol erscheinen nicht auf Ihre **Aktion zum Aufrufen eines Verhaltens** Form erst nach dem Festlegen der **Verhalten** Eigenschaft.  
+    > Das Unteraktivitätsdiagramm muss über Elemente verfügen, oder das Diagramm nicht zur Verfügung, in der Dropdown-Liste für die **Verhalten** Eigenschaft. Darüber hinaus das Dreizacksymbol erscheinen nicht auf Ihre **Aktion zum Aufrufen eines Verhaltens** Form erst nach dem Festlegen der **Verhalten** Eigenschaft.  
   
 5. Legen Sie die **Is Synchronous** Eigenschaft der Aktion, um anzugeben, ob Ihre Aktivität wartet, bis die aufgerufene Aktivität abgeschlossen.  
   
@@ -279,7 +279,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
 - Erstellen Sie in das Unteraktivitätsdiagramm, ein **Aktivitätsparameterknoten** (2) für jeden Eingabe- und Ausgabepin in der aufrufenden Aktion. Weisen Sie jedem Knoten den gleichen Namen wie dem entsprechenden Pin zu.  
   
   > [!NOTE]
-  >  Ein Aktivitätsparameterknoten ähnelt einem Objektknoten. Um welche Art von Knoten zu überprüfen, die Sie prüfen, mit der rechten Maustaste des Knotens, und klicken Sie dann auf **Eigenschaften**. Der Typ des Knotens wird in der Kopfzeile des Eigenschaftenfensters angezeigt.  
+  > Ein Aktivitätsparameterknoten ähnelt einem Objektknoten. Um welche Art von Knoten zu überprüfen, die Sie prüfen, mit der rechten Maustaste des Knotens, und klicken Sie dann auf **Eigenschaften**. Der Typ des Knotens wird in der Kopfzeile des Eigenschaftenfensters angezeigt.  
   
 - Zeichnen Sie im Unteraktivitätsdiagramm Konnektoren, die den Fluss von Objekten in die oder aus den einzelnen Aktivitätsparameterknoten darstellen.  
   

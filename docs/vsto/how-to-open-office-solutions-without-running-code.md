@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441760"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Vorgehensweise: Öffnen Sie Office-Projektmappen ohne die Ausführung von code
   Mit Erweiterungen durch verwalteten Code erstellte eine Microsoft Office-Projektmappe ausgeführt wird, auch wenn die sicherheitseinstellung in der Endbenutzer Office-Anwendung auf hoch festgelegt ist. Dies ist da die Sicherheit von Microsoft .NET Framework, nicht von Microsoft Office verwaltet wird.
@@ -39,7 +39,7 @@ ms.locfileid: "60117199"
 - Öffnen von Dokumenten und Arbeitsmappen aus der **Datei** Menü bei gedrückter der **UMSCHALT** Schlüssel, um zu verhindern, dass Word und Excel Initialisierungsereignisse auslösen, während das Dokument geöffnet wird.
 
     > [!NOTE]
-    >  Wenn Sie ein Dokument oder eine Arbeitsmappe öffnen die **Einstieg** Aufgabenbereich gedrückt **UMSCHALT** wird den Code nicht umgangen. Darüber hinaus verhindert die UMSCHALTTASTE gedrückt gehalten nicht Ereignisse ausgelöst werden, nachdem das Dokument geöffnet ist.
+    > Wenn Sie ein Dokument oder eine Arbeitsmappe öffnen die **Einstieg** Aufgabenbereich gedrückt **UMSCHALT** wird den Code nicht umgangen. Darüber hinaus verhindert die UMSCHALTTASTE gedrückt gehalten nicht Ereignisse ausgelöst werden, nachdem das Dokument geöffnet ist.
 
      Diese Methode ist nützlich, wenn Sie ein Dokument, um Änderungen vorzunehmen, ohne den Code ausführen und ändern zunächst das Dokument öffnen möchten.
 

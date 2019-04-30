@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388587"
 ---
 # <a name="graphics-pixel-history"></a>Grafikpixelverlauf
 Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie sich Direct3D-Ereignisse, die während eines Frames Ihres Spiels oder Ihre App auftreten, auf ein bestimmtes Pixel auswirken.
@@ -59,7 +59,7 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 3. Folgen sie unter dem entsprechenden Primitiv dem Shader-Titellink (folgen Sie beispielsweise dem Link **Vertex Shader obj:30**), um den Quellcode des Vertex-Shaders anzuzeigen.
 
     > [!TIP]
-    >  Die Objektnummer **obj:30** identifiziert diesen Shader über die gesamte Grafikanalyseoberfläche hinweg, beispielsweise in der Objekttabelle und im Pipelinestufenfenster.
+    > Die Objektnummer **obj:30** identifiziert diesen Shader über die gesamte Grafikanalyseoberfläche hinweg, beispielsweise in der Objekttabelle und im Pipelinestufenfenster.
 
 ##### <a name="to-debug-a-shader"></a>Um einen Shader zu debuggen
 

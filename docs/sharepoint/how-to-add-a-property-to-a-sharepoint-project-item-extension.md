@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967226"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Vorgehensweise: Hinzufügen einer Eigenschaft zu einer SharePoint-projektelementerweiterung
   Sie können eine projektelementerweiterung verwenden, zum Hinzufügen einer Eigenschaft zu SharePoint-Projektelements, das in Visual Studio bereits installiert ist. Die Eigenschaft wird in der **Eigenschaften** anzeigen, wenn das Projektelement in ausgewählt ist **Projektmappen-Explorer**.

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431284"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Entwerfen eines Business Data Connectivity-Modells
   Sie können ein Modell für den Business Data Connectivity (BDC)-Dienst entwickeln, durch das Hinzufügen von Entitäten und Methoden auf eine Modelldatei. Eine Entität beschreibt eine Auflistung von Datenfeldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Methode führt eine Aufgabe wie das Hinzufügen, löschen oder Aktualisieren von Daten, die von den Entitäten dargestellt. Weitere Informationen finden Sie unter [Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628415"
  Sie können auch Codezugriffssicherheits-Berechtigungen für einzelne Modelle oder externe Inhaltstypen festlegen. Weitere Informationen zum Festlegen der Sicherheitsberechtigungen eines Modells finden Sie unter [BDC-Modell-Management](http://go.microsoft.com/fwlink/?LinkID=178884). Weitere Informationen dazu, wie Sie die Sicherheitsberechtigungen von einem externen Inhaltstyp festgelegt werden, finden Sie unter [externe Verwaltung dieser Inhaltstypen](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Verwenden Sie diese Einstellungen, um das Debuggen einer Lösung auf dem lokalen SharePoint-Server. Weitere Informationen zum Konfigurieren des SharePoint-Server der produktionsumgebung BDC-bezogene Einstellungen finden Sie unter [Geschäftsdaten-Verbindungsdienste Sicherheitsübersicht](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Verwenden Sie diese Einstellungen, um das Debuggen einer Lösung auf dem lokalen SharePoint-Server. Weitere Informationen zum Konfigurieren des SharePoint-Server der produktionsumgebung BDC-bezogene Einstellungen finden Sie unter [Geschäftsdaten-Verbindungsdienste Sicherheitsübersicht](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Zurückziehen von Modellen, die beschädigt
  Zum ersten Mal beim Starten des Debuggers, stellt Visual Studio das gesamte Modell für SharePoint bereit. Danach für jedes Mal aktualisiert Visual Studio das Modell in SharePoint mit den Änderungen, die Sie zwischen den Bereitstellungen vornehmen.

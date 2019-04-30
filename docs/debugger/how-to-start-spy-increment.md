@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387531"
 ---
 # <a name="how-to-start-spy"></a>Vorgehensweise: Starten von Spy++
 
@@ -24,7 +24,7 @@ Sie können Spy++ aus Visual Studio oder an einer Eingabeaufforderung starten.
  Wenn Sie Starten von Spy++, wenn eine Nachricht angezeigt wird, um zu Fragen, berechtigt, Änderungen auf dem Computer, auf **Ja**.
 
 > [!NOTE]
->  Sie können nur eine Instanz von Spy++ ausführen. Wenn Sie versuchen, eine zweite Instanz gestartet, wird nur die aktuell ausgeführte Instanz aus, um den Fokus erhalten.
+> Sie können nur eine Instanz von Spy++ ausführen. Wenn Sie versuchen, eine zweite Instanz gestartet, wird nur die aktuell ausgeführte Instanz aus, um den Fokus erhalten.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
@@ -42,7 +42,7 @@ Auf der **Tools** , wählen Sie im Menü **Spy++**.
 Da Spy++ unabhängig voneinander ausgeführt wird, nachdem Sie ihn starten, können Sie Visual Studio schließen.
 
 > [!NOTE]
->  Wenn Sie Nachrichten mit Spy++, führt dies möglicherweise langsamer ausgeführt, das Betriebssystem.
+> Wenn Sie Nachrichten mit Spy++, führt dies möglicherweise langsamer ausgeführt, das Betriebssystem.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Starten von Spy++ an einer Eingabeaufforderung
 

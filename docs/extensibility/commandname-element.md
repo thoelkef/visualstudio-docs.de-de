@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cc67cc9e50c73e5ab3c8579be8833648a01079c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926883"
 ---
 # <a name="commandname-element"></a>CommandName-element
 Die `CommandName` Element gibt den Text, der angezeigt wird, in der Kategorie "Tastatur" in der **Optionen** im Dialogfeld und klicken Sie in der **Befehle** Liste der **anpassen** Dialogfeld Box.

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946614"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>"continue" ist außerhalb der Schleife unzulässig
 Sie haben versucht, Sie verwenden die **weiterhin** Anweisung außerhalb einer Schleife. Die **weiterhin** -Anweisung kann nur innerhalb des Texts a: verwendet werden  

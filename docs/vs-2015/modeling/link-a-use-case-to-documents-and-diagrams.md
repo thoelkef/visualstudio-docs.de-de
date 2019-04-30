@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440968"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Sie können einen Anwendungsfall in einem Anwendungsfalldiagramm mit einem ander
 3. Das neue Artefakt aus, und geben oder fügen Sie die URL in die **Hyperlink** Eigenschaft.  
   
     > [!NOTE]
-    >  Wenn Sie einen Dateipfad angeben möchten, empfiehlt sich, eine Datei auszuwählen, entweder in einem gemeinsamen Arbeitsbereich (beginnend mit "\\\\"), oder eine Datei in Visual Studio-Projektmappe. Dadurch wird sichergestellt, dass der Dateipfad auf dem Computer eines anderen Teammitglieds oder beim Verschieben der Projektmappe seine Gültigkeit behält. Um ein Dokument wie z. B. ein Word-Dokument der Projektmappe hinzuzufügen, mit der rechten Maustaste in der Projektmappe im Projektmappen-Explorer, zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **vorhandenes Element**.  
+    > Wenn Sie einen Dateipfad angeben möchten, empfiehlt sich, eine Datei auszuwählen, entweder in einem gemeinsamen Arbeitsbereich (beginnend mit "\\\\"), oder eine Datei in Visual Studio-Projektmappe. Dadurch wird sichergestellt, dass der Dateipfad auf dem Computer eines anderen Teammitglieds oder beim Verschieben der Projektmappe seine Gültigkeit behält. Um ein Dokument wie z. B. ein Word-Dokument der Projektmappe hinzuzufügen, mit der rechten Maustaste in der Projektmappe im Projektmappen-Explorer, zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **vorhandenes Element**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)   

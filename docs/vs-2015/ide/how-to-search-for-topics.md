@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435210"
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen nach Themen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Mit der Volltextsuche können Sie alle Themen suchen, die ein bestimmtes Wort en
 2. Falls Sie logische oder erweiterte Suchoperatoren verwenden, geben Sie in der Abfrage an, um welche es sich dabei handelt. Verwenden Sie jedoch keine Operatoren, um die verfügbare Hilfe zu durchsuchen.  
   
     > [!NOTE]
-    >  Im Dialogfeld **Viewer-Optionen** können Sie zusätzliche Einstellungen angeben, z.B. die maximale Anzahl der Suchergebnisse, die gleichzeitig angezeigt werden sollen, oder ob englischsprachige Inhalte enthalten sein dürfen, wenn das primäre Gebietsschema nicht Englisch ist.  
+    > Im Dialogfeld **Viewer-Optionen** können Sie zusätzliche Einstellungen angeben, z.B. die maximale Anzahl der Suchergebnisse, die gleichzeitig angezeigt werden sollen, oder ob englischsprachige Inhalte enthalten sein dürfen, wenn das primäre Gebietsschema nicht Englisch ist.  
   
 3. Drücken Sie die EINGABETASTE.  
   

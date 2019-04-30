@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419483"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Vorgehensweise: Programmgesteuertes Speichern von Arbeitsmappen
   Es gibt mehrere Möglichkeiten, eine Arbeitsmappe zu speichern. Sie können eine Arbeitsmappe speichern, ohne den Pfad zu ändern. Wenn die Arbeitsmappe noch nicht gespeichert wurde, sollten Sie sie unter Angabe eines Pfads speichern. Ohne expliziten Pfad speichert Microsoft Office Excel die Datei unter dem bei der Erstellung angegebenen Namen im aktuellen Ordner. Sie können auch eine Kopie der Arbeitsmappe speichern, ohne die geöffnete Arbeitsmappe im Arbeitsspeicher zu ändern.
@@ -46,7 +46,7 @@ ms.locfileid: "60093058"
  Sie können die angegebene Arbeitsmappe an einem neuen Speicherort oder unter einem neuen Namen speichern und optional ein Dateiformat, ein Kennwort, einen Zugriffsmodus und mehr angeben.
 
 > [!NOTE]
->  Möglicherweise möchten Sie legen die <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> Eigenschaft, um **"false"** vor dem Speichern der Arbeitsmappe unter einem neuen Pfad ein, da in einigen Formaten speichern Interaktion erforderlich ist. Wenn diese Eigenschaft auf **"false"** bewirkt, dass Excel alle Standardeinstellungen verwendet.
+> Möglicherweise möchten Sie legen die <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> Eigenschaft, um **"false"** vor dem Speichern der Arbeitsmappe unter einem neuen Pfad ein, da in einigen Formaten speichern Interaktion erforderlich ist. Wenn diese Eigenschaft auf **"false"** bewirkt, dass Excel alle Standardeinstellungen verwendet.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>So speichern Sie eine Arbeitsmappe, die einer Anpassung auf Dokumentebene zugeordnet ist
 

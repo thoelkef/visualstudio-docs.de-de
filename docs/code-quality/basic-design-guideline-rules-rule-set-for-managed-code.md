@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571367"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Regelsatz für die einfachen Entwurfsrichtlinienregeln für verwalteten Code
 Sie können die grundlegende Microsoft-Regeln für Entwurfsrichtlinien Regelsatz, der sich auf das konzentrieren, wodurch der Code leichter zu verstehen und verwenden. Sie sollten diesen Regelsatz, wenn Ihr Projekt Bibliothekscode umfasst oder wenn Sie bewährte Methoden für Code, der leicht zu warten ist, erzwingen möchten, enthalten.

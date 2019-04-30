@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900534"
 ---
 # <a name="clickonce-cache-overview"></a>Übersicht über den ClickOnce-Cache
 Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen an, ob sie lokal installiert oder online gehostete befinden sich auf dem Clientcomputer in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Anwendung *Cache*. Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Cache ist eine verborgene Verzeichnisse im Verzeichnis lokalen Einstellungen des aktuellen Benutzers Ordner "Dokumente und Einstellungen". Dieser Cache enthält alle die Dateien der Anwendung, einschließlich Assemblys, Konfigurationsdateien, Anwendung und der benutzereinstellungen und Verzeichnis "Data". Der Cache ist auch zuständig für die Migration von Daten im Verzeichnis der Anwendung auf die neueste Version. Weitere Informationen zur Datenmigration finden Sie unter [zugreifen auf lokale und Remotedaten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).

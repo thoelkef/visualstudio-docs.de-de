@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a85062b2012f44e8a3d7ff2356f8c053bc28ef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0016ca267b3eaf2535896aab1ee58a470a192c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399450"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Ruft den Offset des Symbolspeicherort ab. Verwenden, wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) ist `LocIsRegRel` oder `LocIsBitField`.
@@ -39,9 +39,9 @@ HRESULT get_offset ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
 
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Der Offset wird von einem bestimmten bekannten Punkt zuvor ermittelt. Z. B. den Offset für einen `LocIsBitField` Speicherorttyp ist in der Regel am Anfang der enthaltenden Klasse.
 
 ## <a name="requirements"></a>Anforderungen

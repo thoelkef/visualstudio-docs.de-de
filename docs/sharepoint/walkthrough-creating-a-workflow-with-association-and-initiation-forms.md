@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430377"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie einen grundlegenden sequenziellen Workflow erstellen, der die Verwendung von Zuordnungs-und Initiierungsformularen beinhaltet. Hierbei handelt es sich um ASPX-Formulare, mit denen Parameter für die zu einem Workflow hinzugefügt werden, wenn es zuerst von der SharePoint-Administrator (Zuordnungsformular) zugeordnet ist und der Workflow gestartet wird, durch den Benutzer (des Initiierungsformulars).
@@ -50,9 +50,9 @@ ms.locfileid: "60081735"
 - Wird den Workflow manuell gestartet.
 
 > [!NOTE]
->  Obwohl in dieser exemplarischen Vorgehensweise ein sequenzielles Workflowprojekt verwendet wird, ist der Prozess für der Zustandsautomatworkflows identisch.
+> Obwohl in dieser exemplarischen Vorgehensweise ein sequenzielles Workflowprojekt verwendet wird, ist der Prozess für der Zustandsautomatworkflows identisch.
 >
->  Darüber hinaus kann auf Ihrem Computer angezeigt, andere Namen oder Speicherorte für die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Elemente der Benutzeroberfläche in den folgenden Anweisungen. Die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Version und die Einstellungen, die Sie verwenden, bestimmen diese Elemente. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Darüber hinaus kann auf Ihrem Computer angezeigt, andere Namen oder Speicherorte für die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Elemente der Benutzeroberfläche in den folgenden Anweisungen. Die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Version und die Einstellungen, die Sie verwenden, bestimmen diese Elemente. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
@@ -134,7 +134,7 @@ ms.locfileid: "60081735"
 3. Erweitern Sie die **ExpenseReportAssocForm.aspx** Datei **Projektmappen-Explorer** seinen abhängigen Dateien angezeigt.
 
     > [!NOTE]
-    >  Wenn Ihr Projekt in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], müssen Sie auswählen, die **alle Dateien anzeigen** Schaltfläche, um diesen Schritt auszuführen.
+    > Wenn Ihr Projekt in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], müssen Sie auswählen, die **alle Dateien anzeigen** Schaltfläche, um diesen Schritt auszuführen.
 
 4. Öffnen Sie das Kontextmenü für die ExpenseReportAssocForm.aspx-Datei, und wählen **Ansichtscode**.
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081735"
     ```
 
     > [!NOTE]
-    >  Ersetzen Sie im Code, `somedomain\\someuser` mit einer Domäne und den Namen, die für die eine Aufgabe, z. B. erstellt werden "`Office\\JoeSch`". Zu Testzwecken ist es am einfachsten, das Konto zu verwenden, die für die Entwicklung verwendet werden.
+    > Ersetzen Sie im Code, `somedomain\\someuser` mit einer Domäne und den Namen, die für die eine Aufgabe, z. B. erstellt werden "`Office\\JoeSch`". Zu Testzwecken ist es am einfachsten, das Konto zu verwenden, die für die Entwicklung verwendet werden.
 
 3. Unterhalb der `MethodInvoking` -Methode, fügen Sie im folgenden Beispiel hinzu:
 

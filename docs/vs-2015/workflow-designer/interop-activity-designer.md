@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952047"
 ---
 # <a name="interop-activity-designer"></a>Interop-Aktivitätsdesigner
 Die **Interop** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Interop> Aktivität.  
@@ -29,7 +29,7 @@ Die **Interop** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer
   
  Die [Migration](../workflow-designer/migration-activity-designers.md) Kategorie, enthält die <xref:System.Activities.Statements.Interop> Aktivität nur wird in der **Toolbox** Wenn Ihr Projekt, das vollständige abzielt [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)].  
   
- Für C#-Projekten können Sie erneut das Projekt, um die Verwendung des vollständigen anwenden [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] durch Rechtsklick auf das Projekt in der **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Anwendung** Registerkarte die **.NET Framework 4** option die **Zielframework**. Wählen Sie die **Ja** Schaltfläche der **Änderung des Zielframeworks** Dialogfeld, in dem Sie aufgefordert werden, die diese Änderung zu bestätigen.  
+ Für c#-Projekten können Sie erneut das Projekt, um die Verwendung des vollständigen anwenden [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] durch Rechtsklick auf das Projekt in der **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Anwendung** Registerkarte die **.NET Framework 4** option die **Zielframework**. Wählen Sie die **Ja** Schaltfläche der **Änderung des Zielframeworks** Dialogfeld, in dem Sie aufgefordert werden, die diese Änderung zu bestätigen.  
   
  Für VB-Projekte können Sie das Projekt, um die Verwendung des vollständigen erneut anwenden [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] mit der rechten Maustaste auf das Projekt in der **Projektmappen-Explorer** und **Eigenschaften**. Auf der **Kompilieren** Registerkarte, klicken Sie auf die **Advanced Compile Options** Schaltfläche. Wählen Sie **.Net Framework 4** aus der **Zielframeworkliste** , und klicken Sie dann auf **OK**. Klicken Sie auf die **Ja** Schaltfläche der **Änderung des Zielframeworks** Dialogfeld, in dem Sie aufgefordert werden, die diese Änderung zu bestätigen.  
   

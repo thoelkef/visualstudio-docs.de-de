@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409987"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projektsystems, Teil 1
 In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quellcodedateien und anderen Ressourcen zu organisieren. Projekte werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Quellcode bereitstellen und Verweise auf die Web Services, Datenbanken und andere Ressourcen erstellen.
@@ -25,7 +25,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
  Projekte werden in Projektdateien definiert, z. B. eine *csproj* -Datei für ein Visual Basic#-Projekt. Sie können Ihren eigenen Projekttyp erstellen, die Ihre eigenen Projekt-Dateierweiterung aufweist. Weitere Informationen zu Projekttypen, finden Sie unter [Projekttypen](../extensibility/internals/project-types.md).
 
 > [!NOTE]
->  Wenn Sie Visual Studio mit einem benutzerdefinierten Projekttyp erweitern müssen, sollten Sie dringend nutzen die [Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem) (VSPS) der hat einer Reihe von Vorteilen, die über ein Projektsystem von Grund auf neu erstellen:
+> Wenn Sie Visual Studio mit einem benutzerdefinierten Projekttyp erweitern müssen, sollten Sie dringend nutzen die [Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem) (VSPS) der hat einer Reihe von Vorteilen, die über ein Projektsystem von Grund auf neu erstellen:
 >
 > - Einfacher integrieren.  Sogar ein grundlegenden Projektsystems erfordert Tausende von Codezeilen erforderlich.  Die Kosten für die Integration auf ein paar Klicks Nutzung VSPS reduziert werden, bevor Sie es an Ihre Bedürfnisse anpassen möchten.
 > - Einfachere Verwaltung.  Durch die Nutzung VSPS, müssen Sie nur Ihren eigenen Szenarios zu verwalten.  Wir kümmern uns um die Wartung der alle von der Project-System-Infrastruktur.
@@ -35,7 +35,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
  In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein Projekt zu erstellen, die die Projekt-Dateinamenerweiterung *.myproj*. In dieser exemplarischen Vorgehensweise, die aus dem vorhandenen Visual C#-Projektsystem nutzt Teile.
 
 > [!NOTE]
->  Weitere Beispiele von Erweiterungsprojekten finden Sie unter [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples).
+> Weitere Beispiele von Erweiterungsprojekten finden Sie unter [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples).
 
  In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführen:
 
@@ -101,7 +101,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
    ```
 
    > [!IMPORTANT]
-   >  Dies ist nicht das endgültige Format des der *"Program.cs"* Code, der die Ersetzung mit dem Parameter in einem späteren Schritt behandelt werden werden. Möglicherweise Kompilierungsfehler, jedoch so lange, wie der Datei **BuildAction** ist **Content**, Sie sollten in der Lage zu erstellen, und führen das Projekt wie gewohnt.
+   > Dies ist nicht das endgültige Format des der *"Program.cs"* Code, der die Ersetzung mit dem Parameter in einem späteren Schritt behandelt werden werden. Möglicherweise Kompilierungsfehler, jedoch so lange, wie der Datei **BuildAction** ist **Content**, Sie sollten in der Lage zu erstellen, und führen das Projekt wie gewohnt.
 
 7. Speichern Sie die Datei.
 
@@ -110,7 +110,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
 9. In der *Projects\SimpleProject* Ordner hinzufügen, eine XML-Datei mit dem Namen *SimpleProject.myproj*.
 
    > [!NOTE]
-   >  Die Dateinamenerweiterung für alle Projekte dieses Typs ist *.myproj*. Wenn Sie sie ändern möchten, müssen Sie es überall ändern, die sie in der exemplarischen Vorgehensweise erwähnt wird.
+   > Die Dateinamenerweiterung für alle Projekte dieses Typs ist *.myproj*. Wenn Sie sie ändern möchten, müssen Sie es überall ändern, die sie in der exemplarischen Vorgehensweise erwähnt wird.
 
 10. Ersetzen Sie den vorhandenen Inhalt durch die folgenden Zeilen ein.
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  Vergessen Sie nicht den umgekehrten Schrägstrich am Ende des Pfads.
+        > Vergessen Sie nicht den umgekehrten Schrägstrich am Ende des Pfads.
 
     3. Laden Sie das Projekt ein.
 

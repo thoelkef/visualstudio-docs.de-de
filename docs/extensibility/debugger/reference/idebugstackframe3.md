@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9310ff6dff36e09b5d0db356659ada427dd3a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412567"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Diese Schnittstelle erweitert [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , abgefangene Ausnahmen zu behandeln.
@@ -50,7 +50,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  Durch das Abfangen einer Ausnahme an, kann der Debugger kann den Benutzer Änderungen vornehmen, um den Status des gedebuggten Programm und dann die Ausführung an der Stelle, wo die Ausnahme ausgelöst wurde, fortgesetzt.
 
 > [!NOTE]
->  Abgefangene Ausnahmen sind nur in verwaltetem Code, also in einem Programm zulässig, die unter der Common Language Runtime (CLR) ausgeführt wird.
+> Abgefangene Ausnahmen sind nur in verwaltetem Code, also in einem Programm zulässig, die unter der Common Language Runtime (CLR) ausgeführt wird.
 
  Eine Debug-Engine gibt an, dass es abfangender Ausnahmen unterstützt, durch Festlegen von "MetricExceptions" auf einen Wert von 1 zur Laufzeit mithilfe der `SetMetric` Funktion. Weitere Informationen finden Sie unter [SDK-Hilfsprogramme zum Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
 

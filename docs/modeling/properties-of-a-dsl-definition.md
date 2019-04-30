@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964299"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
 DslDefinition-Eigenschaften wird definiert, *Domain-Specific Languge* Eigenschaften wie z. B. versionsnummerierung Definition. DslDefinition Eigenschaften werden in der **Eigenschaften** anzeigen, wenn Sie einen offenen Bereich des Diagramms im klicken Sie auf die *domänenspezifischen Sprachdesigner*.
@@ -28,7 +28,7 @@ DslDefinition-Eigenschaften wird definiert, *Domain-Specific Languge* Eigenschaf
 |Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentlich oder intern ist.|public|
 |Benutzerdefinierte Attribute|Benutzerdefinierter Attribute für die Domänenklasse.<br /><br /> **Beachten Sie** verwenden Sie die Schaltfläche zum Durchsuchen, um ein Attribut hinzuzufügen.|\<none>|
 |Firmenname|Der Name des aktuellen Unternehmensnamens in der systemregistrierung.|Aktuelle Unternehmensname|
-|name|Der Name dieser Domänenklasse.|Aktuelle name|
+|Name|Der Name dieser Domänenklasse.|Aktuelle name|
 |Namespace|Mit dieser Domäne verbundene den Namespace.|Aktuellen namespace|
 |Paket-Guid|Die Guid für das für diese DSL generierte Visual Studio-Paket.|\<none>|
 |Paket-Namespace|Der Namespace für das für diese DSL generierte Visual Studio-Paket.|\<none>|

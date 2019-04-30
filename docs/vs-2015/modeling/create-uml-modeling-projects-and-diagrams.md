@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc537e76e87e519019cfbb1c3f612eb0a4bd6181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433361"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Erstellen von UML-Modellierungsprojekten und -diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
  UML-Modellierungsdiagramme und Ebenendiagramme können nur in einem Modellierungsprojekt vorhanden sein. Jedes Modellierungsprojekt enthält ein freigegebenes UML-Modell und mehrere UML-Diagramme. Jedes Diagramm ist eine Teilansicht des Modells. Das UML-Modell enthält alle Elemente der UML-Diagramme und kann mit dem UML-Modell-Explorer angezeigt werden. Weitere Informationen über Modelle und ihre Beziehungen zu Diagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md). Weitere Informationen zu Modellierungsprojekten unter Versionskontrolle finden Sie unter [Verwalten von Modellen und Diagrammen unter Versionskontrolle](../modeling/manage-models-and-diagrams-under-version-control.md) und [Strukturieren der modellierungslösung](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Es gibt eine andere Art von Diagramm, das .NET Klassendiagramm, das verwendet wird, um Programmcode visuell darzustellen. Weitere Informationen finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="CreatingModelingDiagrams"></a> Erstellen Sie ein Diagramm in einem Modellierungsprojekt  
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -76,7 +76,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
 1. In **Projektmappen-Explorer**, klicken Sie auf den modellierungs-Projektknoten.  
   
     > [!NOTE]
-    >  Das Modellierungsprojekt enthält einen Modelldefinitionsordner mit dem Namen **ModelDefinition**.  
+    > Das Modellierungsprojekt enthält einen Modelldefinitionsordner mit dem Namen **ModelDefinition**.  
   
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
   
@@ -87,7 +87,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
      Das Modellierungsdiagramm wird geöffnet und im Modellierungsprojekt angezeigt.  
   
     > [!CAUTION]
-    >  Vorhandene Diagrammdateien dürfen nicht hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden. Dies bewirkt, dass Elemente aus den kopierten Diagrammen ausgeblendet werden oder Fehler auftreten, wenn Sie die Diagramme öffnen. Die Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem es erstellt wurde. Ein UML-Diagramm ist eine Ansicht des Modells, das zum zum zugehörigen Modellierungsprojekt gehört. Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm. Weitere Informationen finden Sie unter [Problembehandlung bei Modellierungsprojekten und-Diagrammen](#TroubleshootingModelingProjects).  
+    > Vorhandene Diagrammdateien dürfen nicht hinzugefügt, kopiert oder zu anderen Modellierungsprojekten oder anderen Speicherorten in der Projektmappe gezogen werden. Dies bewirkt, dass Elemente aus den kopierten Diagrammen ausgeblendet werden oder Fehler auftreten, wenn Sie die Diagramme öffnen. Die Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem es erstellt wurde. Ein UML-Diagramm ist eine Ansicht des Modells, das zum zum zugehörigen Modellierungsprojekt gehört. Um eine Diagrammdatei zu kopieren, erstellen Sie ein neues Diagramm, und kopieren Sie die Elemente des Quelldiagramms in das neue Diagramm. Weitere Informationen finden Sie unter [Problembehandlung bei Modellierungsprojekten und-Diagrammen](#TroubleshootingModelingProjects).  
   
 #### <a name="to-create-a-blank-modeling-project"></a>So erstellen Sie ein leeres Modellierungsprojekt  
   
@@ -111,7 +111,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
      Das Diagramm wird aus dem Projekt und dem Dateisystem entfernt. Die im Diagramm angezeigten Elemente werden nicht entfernt, von **UML-Modell-Explorer**.  
   
     > [!NOTE]
-    >  Jedes Diagramm weist zwei Dateien auf, von denen eine der anderen untergeordnet ist. Wenn Sie z. B. ein Komponentendiagramm mit dem Namen `CD1` haben, sollten Sie die Datei mit dem Namen `CD1.componentdiagram` löschen. Die untergeordnete Datei mit dem Namen `CD1.componentdiagram.layout` wird automatisch gelöscht.  
+    > Jedes Diagramm weist zwei Dateien auf, von denen eine der anderen untergeordnet ist. Wenn Sie z. B. ein Komponentendiagramm mit dem Namen `CD1` haben, sollten Sie die Datei mit dem Namen `CD1.componentdiagram` löschen. Die untergeordnete Datei mit dem Namen `CD1.componentdiagram.layout` wird automatisch gelöscht.  
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Vorübergehendes Ausschließen eines Diagramms aus einem Projekt  
   
@@ -120,14 +120,14 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
      Das Diagramm wird aus dem Projekt entfernt. Es wird nicht aus dem Dateisystem entfernt.  
   
     > [!NOTE]
-    >  Die im Diagramm angezeigten Elemente werden nicht entfernt, von **UML-Modell-Explorer**.  
+    > Die im Diagramm angezeigten Elemente werden nicht entfernt, von **UML-Modell-Explorer**.  
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Ein vorübergehend ausgeschlossenes Diagramm in einem Projekt wiederherstellen  
   
 1. In **Projektmappen-Explorer**, klicken Sie auf den modellierungs-Projektknoten.  
   
     > [!NOTE]
-    >  Das Modellierungsprojekt enthält einen Modelldefinitionsordner mit dem Namen **ModelDefinition**.  
+    > Das Modellierungsprojekt enthält einen Modelldefinitionsordner mit dem Namen **ModelDefinition**.  
   
 2. Auf der **Projekt** Menü klicken Sie auf **vorhandenes Element hinzufügen**.  
   
@@ -136,7 +136,7 @@ UML-Modelle helfen Ihnen, Softwaresysteme zu verstehen, zu besprechen und zu ent
      Das Modellierungsdiagramm wird geöffnet und im Modellierungsprojekt angezeigt.  
   
     > [!NOTE]
-    >  Jedes Diagramm verfügt über ein Paar von Dateien im Dateisystem. Wählen Sie keine Datei mit der Erweiterung `.layout`. Darüber hinaus bietet Visual Studio keine Unterstützung für das Hinzufügen vorhandener UML-Diagramme zu mehreren Modellierungsprojekten. Jede Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem sie erstellt wurde. Ein UML-Diagramm ist eine Ansicht eines Modells, das zum zum zugehörigen Modellierungsprojekt gehört.  
+    > Jedes Diagramm verfügt über ein Paar von Dateien im Dateisystem. Wählen Sie keine Datei mit der Erweiterung `.layout`. Darüber hinaus bietet Visual Studio keine Unterstützung für das Hinzufügen vorhandener UML-Diagramme zu mehreren Modellierungsprojekten. Jede Diagrammdatei muss im Modellierungsprojekt geöffnet werden, in dem sie erstellt wurde. Ein UML-Diagramm ist eine Ansicht eines Modells, das zum zum zugehörigen Modellierungsprojekt gehört.  
   
 ## <a name="NonModelDiagrams"></a> Diagramme, die keine Modellierungsprojekte erfordern  
  Die folgenden Arten von Diagrammen sind nicht Teil eines Modellierungsprojekts:  

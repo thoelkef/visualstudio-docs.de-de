@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1e4c462780f7026329ff7a5d22c86dbb6058dc5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410151"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Gibt einen Enumerator von ausdruckskontexten, die von dieser Komponente bezeichnet.  
@@ -50,7 +50,7 @@ HRESULT EnumExpressionContexts(
  Prozessbasierten Debug-Manager verwendet diese Methode, um alle globalen ausdruckskontexten, die einem bestimmten Thread suchen.  
   
 > [!NOTE]
->  Diese Methode wird der Thread von Interesse aus aufgerufen. Es obliegt dem Implementierer, identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurückgeben.  
+> Diese Methode wird der Thread von Interesse aus aufgerufen. Es obliegt dem Implementierer, identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurückgeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IProvideExpressionContexts-Schnittstelle](../../winscript/reference/iprovideexpressioncontexts-interface.md)

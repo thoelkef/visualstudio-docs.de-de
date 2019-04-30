@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415723"
 ---
 # <a name="register-the-program"></a>Registrieren Sie das Programm
 Nachdem die Debug-Engine einen Port erworben hat, dargestellt durch ein [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle, im nächsten Schritt aktivieren das Programm debuggt werden wird, um ihn mit dem Port zu registrieren. Nach der Registrierung kann das Programm debuggen, indem Sie eine der folgenden Methoden:
@@ -38,7 +38,7 @@ Nachdem die Debug-Engine einen Port erworben hat, dargestellt durch ein [IDebugP
      Das folgende Beispiel zeigt die Debug-Engine, das Programm gestartet und mit einem Port zu registrieren.
 
     > [!NOTE]
-    >  Dieses Codebeispiel ist nicht die einzige Möglichkeit zum Starten und Fortsetzen eines Prozesses; Dieser Code ist in erster Linie ein Beispiel für ein Programm mit einem Port zu registrieren.
+    > Dieses Codebeispiel ist nicht die einzige Möglichkeit zum Starten und Fortsetzen eines Prozesses; Dieser Code ist in erster Linie ein Beispiel für ein Programm mit einem Port zu registrieren.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

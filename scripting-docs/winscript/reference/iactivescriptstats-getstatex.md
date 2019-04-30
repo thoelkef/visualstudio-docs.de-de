@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f1585e335fac0072eba48494bf8c27736a47f41
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442776"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Gibt eine benutzerdefiniertes Skript für Statistik zurück.  
@@ -59,7 +59,7 @@ HRESULT GetStatEx(
  Diese Methode ermöglicht es sich um ein benutzerdefiniertes Skript-Engine zum Zurückgeben von Statistiken auf einen benutzerdefinierten Host sinnvoll.  
   
 > [!NOTE]
->  Diese Methode wird derzeit nicht implementiert.  
+> Diese Methode wird derzeit nicht implementiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

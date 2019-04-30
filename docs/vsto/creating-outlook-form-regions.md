@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445571"
 ---
 # <a name="create-outlook-form-regions"></a>Erstellen von Outlook-Formularbereichen
   Formularbereiche können zum Anpassen von Microsoft Office Outlook-Formularen verwendet werden. Visual Studio bietet erweiterte Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.
@@ -90,7 +90,7 @@ ms.locfileid: "60092759"
 - Outlook Form Storage (*OFS*) Datei.
 
     > [!NOTE]
-    >  Diese Datei wird dem Projekt nur hinzugefügt, wenn Sie einen Formularbereich importieren, der in Outlook entworfenen wurde.
+    > Diese Datei wird dem Projekt nur hinzugefügt, wenn Sie einen Formularbereich importieren, der in Outlook entworfenen wurde.
 
 #### <a name="form-region-factory-class"></a>Formularbereichsfactory-Klasse
  Die Formularbereich-Codedatei enthält eine partielle Klasse, die die <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory>-Schnittstelle implementiert. Dies ist die Formularbereichsfactory-Klasse. Die Formularbereichsfactory-Klasse ist für das Erstellen neuer Instanzen des Formularbereichs verantwortlich.
@@ -110,7 +110,7 @@ ms.locfileid: "60092759"
  Der Formularbereich-Designer unterstützt Sie beim Entwerfen des Layouts und des Erscheinungsbilds eines Formularbereichs. Sie können verwaltete Steuerelemente auf die Oberfläche des Designers gezogen, doppelklicken Sie auf die Steuerelemente, um Ereignishandler zu öffnen, und legen Sie Eigenschaften der **Eigenschaften** Fenster.
 
 > [!NOTE]
->  Sie finden die Eigenschaften, die Einfluss auf die des Formularbereichs in Outlook unter der **Manifest** Knoten in der **Eigenschaften** Fenster.
+> Sie finden die Eigenschaften, die Einfluss auf die des Formularbereichs in Outlook unter der **Manifest** Knoten in der **Eigenschaften** Fenster.
 
  Der Formularbereich-Designer ist nur verfügbar, wenn Sie auswählen, **einen neuen Formularbereich entwerfen** in die **wählen, wie der Formularbereich erstellt werden sollen** auf der Seite die **neuer Outlook-Formularbereich** Der Assistent.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092759"
  Sie können die Eigenschaften von Formularbereichen in der Methode `InitializeManifest` der Formularbereichsfactory-Klasse ändern.
 
 > [!NOTE]
->  Um einen Formularbereich zu importieren, müssen Sie in einem Projekt arbeiten, das als Ziel dieselbe Version von Outlook verwendet, die Sie auf dem Entwicklungscomputer installiert haben. Z. B. Wenn Sie Outlook 2010 installiert haben, importieren ein Formular Region funktioniert nur in einem Projekt erstellt wurde mithilfe der **Outlook 2010-Add-in** Projektvorlage.
+> Um einen Formularbereich zu importieren, müssen Sie in einem Projekt arbeiten, das als Ziel dieselbe Version von Outlook verwendet, die Sie auf dem Entwicklungscomputer installiert haben. Z. B. Wenn Sie Outlook 2010 installiert haben, importieren ein Formular Region funktioniert nur in einem Projekt erstellt wurde mithilfe der **Outlook 2010-Add-in** Projektvorlage.
 
 ### <a name="update-an-imported-form-regions-design"></a>Aktualisieren eines importierten Formularbereichs-Entwurf
  Sie können Steuerelemente für den Formularbereich hinzufügen, entfernen oder ändern. Bevor Sie diese Aufgaben ausführen, erstellen Sie eine Sicherung des Codes, den Sie der Formularbereich-Codedatei hinzugefügt haben. Öffnen Sie dann die *OFS* Datei in Outlook, ändern Sie den Formularbereich und speichern Sie die Änderungen. Verwenden der **neuer Outlook-Formularbereich** Assistenten, um die geänderte importieren *OFS* Datei. Anschließend können Sie Ihren Code in die neue Formularbereich-Codedatei einfügen.

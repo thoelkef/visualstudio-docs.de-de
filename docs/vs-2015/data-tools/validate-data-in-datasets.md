@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424814"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "60047136"
   Standardmäßig löst jede Änderung an einer Spalte aus diesem Grund vier Ereignisse. Die erste ist die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse für die spezifische Spalte, die geändert wird. Als Nächstes werden die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse. Falls mehrere Änderungen an der Zeile durchgeführt werden, werden die Ereignisse für jede Änderung ausgelöst werden.  
   
 > [!NOTE]
->  Der Datenzeile <xref:System.Data.DataRow.BeginEdit%2A> Methode deaktiviert die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse nach jeder Änderung der einzelnen Spalten. Das Ereignis wird in diesem Fall nicht ausgelöst, bis die <xref:System.Data.DataRow.EndEdit%2A> Methode wurde aufgerufen, wenn die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden nur einmal ausgelöst. Weitere Informationen finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+> Der Datenzeile <xref:System.Data.DataRow.BeginEdit%2A> Methode deaktiviert die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse nach jeder Änderung der einzelnen Spalten. Das Ereignis wird in diesem Fall nicht ausgelöst, bis die <xref:System.Data.DataRow.EndEdit%2A> Methode wurde aufgerufen, wenn die <xref:System.Data.DataTable.RowChanging> und <xref:System.Data.DataTable.RowChanged> Ereignisse werden nur einmal ausgelöst. Weitere Informationen finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
  Das Ereignis, das Sie auswählen, hängt davon ab, wie präzise die Validierung werden sollen. Wenn es wichtig ist, dass Sie Fehler abfangen, sofort bei einer Spalte ändert, Buildüberprüfung mithilfe der <xref:System.Data.DataTable.ColumnChanging> Ereignis. Verwenden Sie andernfalls die <xref:System.Data.DataTable.RowChanging> -Ereignis, das dazu führen, dass gleichzeitig mehrere Fehler abgefangen. Darüber hinaus, wenn Ihre Daten so strukturiert ist, dass der Wert einer Spalte basierend auf dem Inhalt einer anderen Spalte überprüft wird, dann führen Sie die Überprüfung während der <xref:System.Data.DataTable.RowChanging> Ereignis.  
   
@@ -86,7 +86,7 @@ ms.locfileid: "60047136"
 ## <a name="validate-data-during-column-changes"></a>Validieren von Daten während Spaltenänderungen  
   
 > [!NOTE]
->  Die **Dataset-Designer** erstellt eine partielle Klasse, die in die Überprüfung Logik zu einem Dataset hinzugefügt werden kann. Die vom Designer generierte Dataset nicht löschen oder ändern Sie Code in der partiellen Klasse.  
+> Die **Dataset-Designer** erstellt eine partielle Klasse, die in die Überprüfung Logik zu einem Dataset hinzugefügt werden kann. Die vom Designer generierte Dataset nicht löschen oder ändern Sie Code in der partiellen Klasse.  
   
  Sie können Daten validieren, wenn der Wert in einer Datenspalte geändert wird, indem er auf die <xref:System.Data.DataTable.ColumnChanging> Ereignis. Wenn ausgelöst, wird dieses Ereignis übergibt ein Ereignisargument (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), enthält den Wert, der für die aktuelle Spalte vorgeschlagen werden wird. Basierend auf den Inhalt der `e.ProposedValue`, können Sie:  
   
@@ -108,7 +108,7 @@ ms.locfileid: "60047136"
 2. Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird der <xref:System.Data.DataTable.RowChanging>-Ereignishandler der <xref:System.Data.DataTable> in der Datei für die partielle Klasse des Datasets automatisch erstellt.  
   
     > [!TIP]
-    >  Doppelklicken Sie links neben den Tabellennamen, um den Ereignishandler für Zeilenänderungen zu erstellen. Wenn Sie den Tabellennamen doppelklicken, können Sie es bearbeiten.  
+    > Doppelklicken Sie links neben den Tabellennamen, um den Ereignishandler für Zeilenänderungen zu erstellen. Wenn Sie den Tabellennamen doppelklicken, können Sie es bearbeiten.  
   
      [!code-vb[VbRaddataValidating#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb#3)]  
   
@@ -119,7 +119,7 @@ ms.locfileid: "60047136"
 2. Doppelklicken Sie auf die Titelleiste der zu validierenden Tabelle. Durch diese Aktion wird eine Datei für die partielle Klasse der <xref:System.Data.DataTable> erstellt.  
   
     > [!NOTE]
-    >  Der **DataSet-Designer** erstellt nicht automatisch einen Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis. Sie müssen eine Methode zum Behandeln von erstellen die <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Tabelle Initialisierungsmethode einzubinden.  
+    > Der **DataSet-Designer** erstellt nicht automatisch einen Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis. Sie müssen eine Methode zum Behandeln von erstellen die <xref:System.Data.DataTable.RowChanging> Ereignis und Ausführen von Code, um das Ereignis in der Tabelle Initialisierungsmethode einzubinden.  
   
 3. Kopieren Sie den folgenden Code in die partielle Klasse:  
   
@@ -147,7 +147,7 @@ ms.locfileid: "60047136"
  Jede Zeile in einer Datentabelle verfügt über eine <xref:System.Data.DataRow.RowState%2A> Eigenschaft, die überwacht den aktuellen Zustand der Zeile mit den Werten in der <xref:System.Data.DataRowState> Enumeration. Sie können die geänderte Zeilen aus einer Tabelle Datasets oder eines zurückkehren, indem die `GetChanges` Methode eine <xref:System.Data.DataSet> oder <xref:System.Data.DataTable>. Sie können überprüfen, ob Änderungen vorhanden, vor dem Aufruf sind `GetChanges` durch Aufrufen der <xref:System.Data.DataSet.HasChanges%2A> -Methode eines Datasets. Weitere Informationen zum Verwenden von <xref:System.Data.DataSet.HasChanges%2A> finden Sie unter [Vorgehensweise: Überprüfen auf geänderte Zeilen](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
->  Nachdem ein Dataset oder eine Datentabelle commit von Änderungen (durch Aufrufen der <xref:System.Data.DataSet.AcceptChanges%2A> Methode), wird die `GetChanges` Methode keine Daten zurückgibt. Wenn Ihre Anwendung geänderte Zeilen verarbeiten muss, müssen Sie die Änderungen vor dem Aufruf verarbeiten die `AcceptChanges` Methode.  
+> Nachdem ein Dataset oder eine Datentabelle commit von Änderungen (durch Aufrufen der <xref:System.Data.DataSet.AcceptChanges%2A> Methode), wird die `GetChanges` Methode keine Daten zurückgibt. Wenn Ihre Anwendung geänderte Zeilen verarbeiten muss, müssen Sie die Änderungen vor dem Aufruf verarbeiten die `AcceptChanges` Methode.  
   
  Aufrufen der <xref:System.Data.DataSet.GetChanges%2A> Methodenrückgabe einer Datasets oder einer Tabelle eine neue Datasets oder eines-Tabelle, die nur Datensätze enthält, die geändert wurden. Wenn Sie bestimmte Datensätze abrufen möchten – z. B. nur neue oder geänderte Datensätze – können Sie einen Wert von übergeben die <xref:System.Data.DataRowState> -Enumeration als Parameter an die `GetChanges` Methode.  
   
@@ -189,7 +189,7 @@ ms.locfileid: "60047136"
  Wenn an Datenzeilen Änderungen vorgenommen werden, werden im Dataset sowohl die ursprüngliche (<xref:System.Data.DataRowVersion>) als auch die neue (<xref:System.Data.DataRowVersion>) Version der Zeile beibehalten. Vor dem Aufruf der `AcceptChanges`-Methode kann die Anwendung z. B. auf die verschiedenen (in der <xref:System.Data.DataRowVersion>-Enumeration definierten) Versionen eines Datensatzes zugreifen und die Änderungen entsprechend verarbeiten.  
   
 > [!NOTE]
->  Verschiedene Versionen einer Zeile vorhanden sind, erst nach Abschluss der Bearbeitung und bevor sie die `AcceptChanges` -Methode aufgerufen wurde. Nach dem Aufruf der `AcceptChanges`-Methode sind die ursprüngliche und die aktuelle Version identisch.  
+> Verschiedene Versionen einer Zeile vorhanden sind, erst nach Abschluss der Bearbeitung und bevor sie die `AcceptChanges` -Methode aufgerufen wurde. Nach dem Aufruf der `AcceptChanges`-Methode sind die ursprüngliche und die aktuelle Version identisch.  
   
  Wenn Sie den <xref:System.Data.DataRowVersion>-Wert zusammen mit dem Spaltenindex (oder dem Spaltennamen als Zeichenfolge) übergeben, wird der Wert der spezifischen Zeilenversion aus dieser Spalte zurückgegeben. Die geänderte Spalte identifiziert wird, während die <xref:System.Data.DataTable.ColumnChanging> und <xref:System.Data.DataTable.ColumnChanged> Ereignisse. Dies ist ein guter Zeitpunkt für die verschiedenen Zeilenversionen zu Validierungszwecken zu untersuchen. Jedoch wenn Sie haben die Einschränkungen vorübergehend ausgesetzt, diese Ereignisse wird nicht ausgelöst werden und Sie programmgesteuert müssen Identifizieren der Spalten geändert haben. Sie können dazu die <xref:System.Data.DataTable.Columns%2A>-Auflistung durchlaufen und die unterschiedlichen <xref:System.Data.DataRowVersion>-Werte vergleichen.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c063235d69a59caf2c41c0db0ddc566c97cc95be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383964"
 ---
 # <a name="mip-map-generation-variant"></a>Mipmap-Generierungsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  Bitte bedenken Sie, dass bei einer Bereitstellung der ursprünglichen Daten auf `CreateTexture2D` ein D3D11_SUBRESOURCE_DATA-Objekt für jede Mip-Ebene erstellt werden muss.  
   
 > [!NOTE]
->  Wenn Sie Ihre eigenen Inhalte auf Mip-Ebene bereitstellen möchten, anstatt sie automatisch zu erzeugen, müssen Sie Ihre Texturen mithilfe eines Bildeditors erstellen, der Mipmap-Texturen unterstützt, und dann die Datei laden und die Mip-Ebenen an `CreateTexture2D` übergeben.  
+> Wenn Sie Ihre eigenen Inhalte auf Mip-Ebene bereitstellen möchten, anstatt sie automatisch zu erzeugen, müssen Sie Ihre Texturen mithilfe eines Bildeditors erstellen, der Mipmap-Texturen unterstützt, und dann die Datei laden und die Mip-Ebenen an `CreateTexture2D` übergeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Halb-/Viertel-Texturdimensionsvariante](../debugger/half-quarter-texture-dimensions-variant.md)

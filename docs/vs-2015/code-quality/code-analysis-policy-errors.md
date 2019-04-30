@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 9b61d7d9718e9557ef153474718542f889ad7629
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576740"
 ---
 # <a name="code-analysis-policy-errors"></a>Richtlinienfehler bei der Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

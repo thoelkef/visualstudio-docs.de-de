@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967395"
 ---
 # <a name="extend-sharepoint-project-items"></a>Erweitern von SharePoint-Projektelemente
   Erstellen Sie eine projektelementerweiterung, wenn Sie möchten eine Art von SharePoint-Projektelement Funktionen hinzu, die in Visual Studio bereits installiert ist. Sie können z. B. erstellen eine Erweiterung für die integrierte **Ereignisempfänger** oder **Listendefinition** Projektelemente in Visual Studio, oder Sie können eine Erweiterung für einen benutzerdefinierten Projektelementtyp erstellen. Sie können auch eine Erweiterung für alle Arten von SharePoint-Projektelemente erstellen.

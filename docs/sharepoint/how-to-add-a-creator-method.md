@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443578"
 ---
 # <a name="how-to-add-a-creator-method"></a>Vorgehensweise: Hinzufügen einer Creator-Methode
   Eine Creator-Methode fügt neue Daten an die Datenquelle einer Entität. Der Business Data Connectivity (BDC)-Dienst ruft diese Methode auf, wenn Benutzer die **neues Element** Schaltfläche der **Menüband** einer Liste, die für das Modell basiert. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,7 +58,7 @@ ms.locfileid: "56619315"
 5. Fügen Sie Code, der Creator-Methode, die Daten der Datenquelle hinzugefügt. Das folgende Beispiel fügt einen Kontakt mit der AdventureWorks-Beispieldatenbank für SQL Server.
 
    > [!NOTE]
-   >  Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
+   > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

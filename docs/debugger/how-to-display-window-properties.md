@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906751"
 ---
-# <a name="how-to-display-window-properties"></a>Gewusst wie: Anzeigen von Fenstereigenschaften
+# <a name="how-to-display-window-properties"></a>Vorgehensweise: Anzeigen von Fenstereigenschaften
 Um weitere Informationen zu einem Fenster in aufgeführt [Windows-Ansicht](../debugger/windows-view.md), verwenden Sie die [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md).
 
 ### <a name="to-open-the-window-properties-dialog-box"></a>Öffnen Sie das Dialogfeld "Fenstereigenschaften"

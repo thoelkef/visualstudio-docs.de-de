@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432032"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -84,9 +84,9 @@ Weitere Informationen zu IntelliCode finden Sie im Blogbeitrag [Code more, scrol
 
 Neben einem neuen Integritätsindikator für Dokumente gibt es auch einen neuen Befehl für die Codebereinigung. Mit diesem neuen Befehl können Sie Warnungen und Vorschläge mit nur einem Knopfdruck ermitteln und anschließend beheben bzw. umsetzen.
 
-Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorrekturen vorgenommen, die unter [aktuelle Einstellungen](code-styles-and-quick-actions.md), [EDITORCONFIG-Dateien](create-portable-custom-editor-options.md) oder [Roslyn-Analysetools](../code-quality/roslyn-analyzers-overview.md) vorgeschlagen werden.
+Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorrekturen vorgenommen, die von [aktuellen Einstellungen](code-styles-and-quick-actions.md) und [EDITORCONFIG-Dateien](create-portable-custom-editor-options.md) vorgeschlagen werden.
 
-   ![Screenshot: Das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
+   ![Screenshot: das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
 
 Sie können auch Korrektursammlungen als Profil speichern. Wenn Sie z.B. einige spezielle Korrekturen haben, die Sie beim Programmieren häufig anwenden, und eine weitere umfangreiche Korrektursammlung, die vor einem Code Review angewendet wird, können Sie Profile für diese verschiedenen Aufgaben konfigurieren.
 
@@ -168,6 +168,12 @@ ASP.NET Core-Anwendungen und Desktopanwendungen, die auf einem virtuellen Azure 
 
 Weitere Informationen finden Sie auf der Seite [Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md) und in dem Blogbeitrag [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Einführung in Time Travel Debugging für Visual Studio Enterprise 2019).
 
+## <a name="whats-next"></a>Ausblick
+
+Wir aktualisieren Visual Studio 2019 häufig mit neuen Features, die die Entwicklung immer weiter verbessern. Weitere Informationen zu unseren aktuellen Innovationen finden Sie im [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/). Was wir zurzeit in der Vorschau veröffentlicht haben, können Sie den [Visual Studio 2019 Preview Release Notes](/visualstudio/releases/2019/release-notes-preview/) (Anmerkungen zu Vorschauversionen in Visual Studio 2019) entnehmen.
+
+Sie möchten mehr über unsere Pläne für Visual Studio 2019 erfahren? Weitere Informationen finden Sie in der [Visual Studio-Roadmap](/visualstudio/productinfo/vs-roadmap/).
+
 ## <a name="give-us-feedback"></a>Geben Sie uns Feedback
 
 Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedback unserer Kunden ernst nehmen. Es gibt den Anstoß zu vielen unserer Initiativen.
@@ -179,7 +185,7 @@ Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedb
 ## <a name="see-also"></a>Siehe auch
 
 * [Ankündigung von Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
-* [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes/)
+* [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes/)
 * [Neuigkeiten im Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Die Vorschauversion von Visual Studio 2019 für Mac ist jetzt verfügbar.](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
-* [Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)
+* [Visual Studio 2019 für Mac ist jetzt verfügbar.](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft Connect(); 2018 conference (Microsoft Connect(); 2018-Konferenz)](https://www.microsoft.com/connectevent)

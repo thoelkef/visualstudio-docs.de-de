@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445725"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio-Shell (integriert)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Die Visual Studio integrierte Shell umfasst die integrierte Entwicklungsumgebung
  Die Visual Studio integrierte Shell ist tatsächlich eine Kombination aus der Visual Studio isolierte Shell und eine weitere Installation der integrierten Shell bestimmte Komponenten einzuschließen.  Ihre Anwendung für die integrierte Shell von aufzunehmen sowohl das isolierte Shell redistributable Package vom [Microsoft Visual Studio Shell (isoliert) Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616022) sowie das integrierte Shell redistributable Package von [Microsoft Visual Studio Shell (integriert) Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
->  Bevor Sie die verteilbaren Pakete von isolated und die integrated Shell zugreifen können, werden Sie aufgefordert, einer kurzen Kundenumfrage auszufüllen.  Nach dem Ausfüllen der Umfrage, werden Sie auf eine Visual Studio Connect-Seite mit Links zum Herunterladen der verteilbaren Pakets weitergeleitet werden.  Die Download-Links finden Sie bei nachfolgenden Besuchen der Visual Studio Connect-Website unter der **Programme &#124; VISUAL STUDIO 2015 INTEGRATED und ISOLATED SHELL** Registerkarte.  
+> Bevor Sie die verteilbaren Pakete von isolated und die integrated Shell zugreifen können, werden Sie aufgefordert, einer kurzen Kundenumfrage auszufüllen.  Nach dem Ausfüllen der Umfrage, werden Sie auf eine Visual Studio Connect-Seite mit Links zum Herunterladen der verteilbaren Pakets weitergeleitet werden.  Die Download-Links finden Sie bei nachfolgenden Besuchen der Visual Studio Connect-Website unter der **Programme &#124; VISUAL STUDIO 2015 INTEGRATED und ISOLATED SHELL** Registerkarte.  
   
  Wenn Sie die integrierte Shell-Anwendung auf dem gleichen Computer wie die Vollversion von Visual Studio installieren, werden Ihrer Anwendung Komponenten direkt in Visual Studio integriert werden.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b7050c205b3fc2192e38fa9481d1e3c04c81642
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df3faba1309b5a26316b615042492f96b9401a01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423220"
 ---
 # <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartAddressSection ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
->  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
+> Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
   
 ## <a name="remarks"></a>Hinweise  
  Die gebildet, indem Sie den Abschnitt und den Offset-Adresse ist der Anfang des Bereichs, in dem das Symbol gültig ist.  

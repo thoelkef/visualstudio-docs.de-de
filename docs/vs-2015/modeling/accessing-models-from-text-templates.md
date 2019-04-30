@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442873"
 ---
 # <a name="accessing-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110491"
 Mithilfe von Textvorlagen können Sie Berichtsdateien Quellcodedateien und anderen Textdateien, die für DSL-Modelle basieren erstellen. Grundlegende Informationen zu Textvorlagen finden Sie [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Die Textvorlagen funktioniert im experimentellen Modus während des Debuggens Ihrer DSL, und es funktioniert auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.  
   
 > [!NOTE]
->  Bei der Erstellung einer DSL-Projektmappe, die Text-Beispielvorlage  **\*TT** -Dateien im Projekt Debuggen generiert werden. Wenn Sie die Namen der Domänenklassen ändern, funktioniert diese Vorlagen nicht mehr. Dennoch, sie enthalten die grundlegenden Anweisungen, die Sie benötigen und Beispiele, die Sie aktualisieren können, um Ihre DSL zu entsprechen.  
+> Bei der Erstellung einer DSL-Projektmappe, die Text-Beispielvorlage  **\*TT** -Dateien im Projekt Debuggen generiert werden. Wenn Sie die Namen der Domänenklassen ändern, funktioniert diese Vorlagen nicht mehr. Dennoch, sie enthalten die grundlegenden Anweisungen, die Sie benötigen und Beispiele, die Sie aktualisieren können, um Ihre DSL zu entsprechen.  
   
  So greifen Sie auf ein Modell aus einer Textvorlage  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> Zugreifen auf mehrere Modelle aus einer Textvorlage  
   
 > [!NOTE]
->  Diese Methode können Sie mehrere Modelle in der gleichen Vorlage zu lesen, aber ModelBus-Verweise nicht unterstützt. Modelle, die von der ModelBus-Verweise angezeigt werden, finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+> Diese Methode können Sie mehrere Modelle in der gleichen Vorlage zu lesen, aber ModelBus-Verweise nicht unterstützt. Modelle, die von der ModelBus-Verweise angezeigt werden, finden Sie unter [mithilfe von Visual Studio-ModelBus in einer Textvorlage](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
  Wenn Sie mehr als einem Modell mit der gleichen Textvorlage zugreifen möchten, müssen Sie die generierte Direktivenprozessor einmal für jedes Modell aufrufen. Geben Sie den Dateinamen der einzelnen Modelle in der `requires` Parameter. Sie müssen angeben, die Namen, die Sie für die Stammklasse für die Domäne in verwenden möchten die `provides` Parameter. Sie müssen angeben, unterschiedliche Werte für die `provides` Parameter in jedem von der Anweisung aufrufen. Nehmen wir beispielsweise an, dass Sie drei Modelldateien, die aufgerufen wird, Library.xyz School.xyz und Work.xyz verfügen. Um sie mit der gleichen Textvorlage zuzugreifen, müssen Sie drei-Direktive Aufrufe schreiben, die die unten aufgeführten ähneln.  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  Dieser Beispielcode ist für eine Sprache, die für die Lösungsvorlage für die minimale Sprache basiert.  
+> Dieser Beispielcode ist für eine Sprache, die für die Lösungsvorlage für die minimale Sprache basiert.  
   
  Um die Modelle in der Textvorlage zugreifen möchten, können Sie jetzt Code ähnelt dem Code im folgenden Beispiel schreiben.  
   

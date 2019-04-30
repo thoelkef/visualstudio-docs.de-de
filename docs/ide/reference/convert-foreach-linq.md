@@ -1,5 +1,5 @@
 ---
-title: Konvertieren von ForEach-Schleifen in LINQ
+title: Konvertieren einer ForEach-Schleife in LINQ
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,43 +9,43 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968477"
 ---
-# <a name="convert-foreach-loop-to-linq"></a>Konvertieren von ForEach-Schleifen in LINQ
+# <a name="convert-a-foreach-loop-to-linq"></a>Konvertieren einer ForEach-Schleife in LINQ
 
 Dieses Refactoring gilt für:
 
 - C#
 
-**Beschreibung:** Hiermit können Sie Ihre ForEach-Schleifen mithilfe von IEnumerables in das Format von LINQ-Abfragen oder -Aufrufen (auch bekannt als LINQ-Methode) konvertieren.
+**Beschreibung:** Hiermit können Sie Ihre *ForEach*-Schleife, die eine IEnumerable verwendet, in das Format von LINQ-Abfragen oder -Aufrufen (auch bekannt als LINQ-Methode) konvertieren.
 
-**Hintergrund:** Wenn Sie über eine ForEach-Schleife verfügen, die eine IEnumerable-Schnittstelle nutzt, die als LINQ-Abfrage gelesen werden soll.
+**Hintergrund:** Sie verfügen über eine ForEach-Schleife, die eine IEnumerable-Schnittstelle nutzt, und diese Schleife soll als LINQ-Abfrage gelesen werden.
 
-**Vorteile**: In einigen Fällen bevorzugen Benutzer die Verwendung der LINQ-Syntax anstelle einer ForEach-Schleife. Durch [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) wird eine Abfrage zu einem erstklassigen Sprachkonstrukt in C#. Mit LINQ kann die Menge an Code in einer Datei reduziert werden, wodurch sie einfacher zu lesen wird und verschiedene Datenquellen mit ähnlichen Abfrageausdrucksmustern zugelassen werden.
+**Vorteile**: Es soll eine LINQ-Syntax anstelle einer ForEach-Schleife verwendet werden. Durch [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) wird eine Abfrage zu einem erstklassigen Sprachkonstrukt in C#. Mit LINQ kann die Menge an Code in einer Datei reduziert werden, wodurch dieser Code einfacher zu lesen ist und verschiedene Datenquellen mit ähnlichen Abfrageausdrucksmustern zugelassen werden.
 
 > [!NOTE]
-> Die LINQ-Syntax ist in der Regel weniger leistungsfähig als ForEach-Schleifen. Es ist wichtig, dass Sie sich der möglichen Leistungseinbußen bewusst sind, wenn Sie die Lesbarkeit Ihres Codes mit LINQ verbessern.
+> Die LINQ-Syntax ist in der Regel weniger effizient als ForEach-Schleifen. Es ist gut, sich über alle Leistungseinbußen im Klaren zu sein, die auftreten können, wenn Sie LINQ zur Verbesserung der Lesbarkeit Ihres Codes verwenden.
 
-## <a name="convert-foreach-loop-to-linq-refactoring"></a>Refactoring: Konvertieren einer ForEach-Schleife in LINQ
+## <a name="convert-a-foreach-loop-to-linq-refactoring"></a>Refactoring: Konvertieren einer ForEach-Schleife in LINQ
 
 1. Platzieren Sie Ihren Cursor im Schlüsselwort `foreach`.
 
-    ![ForEach-Schleife mit IEnumerable](media/convert-foreach-to-LINQ.png)
+    ![ForEach-Schleife mit IEnumerable – Beispiel](media/convert-foreach-to-LINQ.png)
 
 2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 
-   ![Menü zum Konvertieren in LINQ](media/convert-foreach-to-LINQ-codefix.png)
+   ![Menü zum Konvertieren in LINQ – Beispiel](media/convert-foreach-to-LINQ-codefix.png)
 
-3. Wählen Sie **Convert to LINQ** (In LINQ konvertieren) oder **Convert to Linq (call form)** (In LINQ konvertieren (Aufrufformat)) aus.
+3. Wählen Sie **In LINQ konvertieren** oder **In LINQ konvertieren (Aufrufformat)** aus.
 
-   ![Ergebnis der LINQ-Abfrage](media/convert-foreach-to-LINQ-result.png)
+   ![Ergebnis der LINQ-Abfrage – Beispiel](media/convert-foreach-to-LINQ-result.png)
    
-   ![Resultierendes LINQ-Aufrufformat](media/convert-foreach-to-LINQ-callform-result.png)
+   ![Resultierendes LINQ-Aufrufformat – Beispiel](media/convert-foreach-to-LINQ-callform-result.png)
    
 ### <a name="sample-code"></a>Beispielcode
 
@@ -77,6 +77,6 @@ public class Class1
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Umgestaltung](../refactoring-in-visual-studio.md)
-- [Vorschau der Änderungen](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Fenster „Vorschau der Änderungen“](../../ide/preview-changes.md)
 - [Tipps für .NET-Entwickler](../../ide/visual-studio-2017-for-dotnet-developers.md)

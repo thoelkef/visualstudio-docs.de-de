@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436511"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von SmartTags
 Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Infor
  Obwohl Smarttags Bestandteil der IntelliSense-Implementierung im Editor sind, können Sie Smarttags implementieren, indem Sie eine Unterklasse für <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> erstellen und dann die Schnittstellen <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> und <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> implementieren.  
   
 > [!NOTE]
->  Andere Arten von Tags können auf ähnliche Weise implementiert werden.  
+> Andere Arten von Tags können auf ähnliche Weise implementiert werden.  
   
  Die folgende exemplarische Vorgehensweise zeigt, wie Sie ein Smarttag erstellen, die für das aktuelle Wort angezeigt wird, und verfügt über zwei empfohlene Aktionen: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
   
@@ -183,4 +183,4 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Infor
 5. Wenn Sie die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

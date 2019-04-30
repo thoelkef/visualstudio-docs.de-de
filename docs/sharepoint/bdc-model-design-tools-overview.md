@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387720"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Übersicht über Entwurfstools für BDC-Modell
   Sie können ein Business Data Connectivity (BDC)-Modell mit dem BDC-Designer, entwerfen die **BDC-Methodendetails** Fenster und die **BDC-Explorer**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596567"
  Auswählen von Knoten in der **BDC-Explorer**, Eigenschaften der einzelnen Knoten, die Sie auswählen, werden in der **Eigenschaften** Fenster. Viele dieser Eigenschaften entsprechen den Attributen in der Datei des Modells. Sie können das Modell suchen, indem Sie das Suchfeld am oberen Rand verwenden die **BDC-Explorer**.
 
 > [!NOTE]
->  Die **BDC-Explorer** Bezeichner, benutzerdefinierte Eigenschaften, lokalisierte Zeichenfolgen, Zuordnungsgruppen, Aktionen, Filterdeskriptoren, Zugriffssteuerungslisten für die Aktion und die Werte der Standardparameter nicht angezeigt.
+> Die **BDC-Explorer** Bezeichner, benutzerdefinierte Eigenschaften, lokalisierte Zeichenfolgen, Zuordnungsgruppen, Aktionen, Filterdeskriptoren, Zugriffssteuerungslisten für die Aktion und die Werte der Standardparameter nicht angezeigt.
 
 ### <a name="define-type-descriptors"></a>Definieren von typbeschreibungen
  Verwenden der **BDC-Explorer** typbeschreibungen definiert. Der BDC-Explorer können Sie definieren einen Typdeskriptor einmal, und klicken Sie dann wiederverwenden, Typdeskriptor an anderer Stelle in Ihrem Modell. Zu diesem Zweck einen Typdeskriptor kopieren und fügen Sie es auf alle anderen Parameter, oder Typdeskriptor.
 
 > [!NOTE]
->  Änderungen an einer ursprünglichen Typdeskriptor wirken sich nicht auf die Kopien von diesem Typdeskriptor aus.
+> Änderungen an einer ursprünglichen Typdeskriptor wirken sich nicht auf die Kopien von diesem Typdeskriptor aus.
 
  Weitere Informationen finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

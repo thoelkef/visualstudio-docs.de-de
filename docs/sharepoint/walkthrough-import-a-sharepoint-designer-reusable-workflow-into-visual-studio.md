@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446595"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren eines wiederverwendbaren Workflows in SharePoint Designer 2010 in erstellt eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt.
@@ -124,7 +124,7 @@ ms.locfileid: "60053935"
  Da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] können nur importieren *.wsp* -Dateien, müssen Sie den wieder verwendbaren Workflow als speichern eine *.wsp* Datei, und vor dem Import in für SharePoint bereitstellen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 > [!IMPORTANT]
->  Wenn Sie einen Laufzeitfehler, die den folgenden Schritten erhalten haben, müssen Sie das Verfahren auf einem System ausführen, die zur SharePoint-Website zugreifen.
+> Wenn Sie einen Laufzeitfehler, die den folgenden Schritten erhalten haben, müssen Sie das Verfahren auf einem System ausführen, die zur SharePoint-Website zugreifen.
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Speichern und den wiederverwendbaren Workflow bereit
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053935"
 6. In der **neue Projektquelle angeben** Seite, navigieren Sie zum Speicherort auf dem System, in dem Sie zuvor gespeichert haben, die *.wsp* Datei, öffnen Sie die Datei, und wählen Sie dann die **Weiter** Schaltfläche ".
 
    > [!NOTE]
-   >  Wählen Sie die **Fertig stellen** Schaltfläche, um alle verfügbaren Elemente im Importieren der *.wsp* Datei.
+   > Wählen Sie die **Fertig stellen** Schaltfläche, um alle verfügbaren Elemente im Importieren der *.wsp* Datei.
 
     Dies zeigt eine Liste der verfügbaren für das Importieren von wiederverwendbaren Workflows aus.
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053935"
 12. In der **Starten eines neuen Workflows** Abschnitt, und wählen Sie den Link, um **SPD Workflow Test**, und wählen Sie dann die **starten** Schaltfläche, um den Workflow zu initiieren.
 
     > [!NOTE]
-    >  Alternativ Sie können automatisch einen Workflow mit einer Liste eine Zuordnung von den workfloweinstellungs-Assistenten ausführen und Festlegen des Workflows automatisch zuordnen.
+    > Alternativ Sie können automatisch einen Workflow mit einer Liste eine Zuordnung von den workfloweinstellungs-Assistenten ausführen und Festlegen des Workflows automatisch zuordnen.
 
      Beachten Sie, dass zwei Aktionen, die vom Workflow ausgeführt werden: Ihr Name wird in der Aufgabe **zugewiesen an** Spalte und eine Ankündigung angezeigt wird, der **Ankündigungen** Liste.
 

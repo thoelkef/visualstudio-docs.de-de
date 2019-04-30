@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007434"
 ---
 # <a name="javascript-object-expected"></a>JavaScript-Objekt erwartet
 Sie haben versucht, eine nicht - übergeben von[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt, das eine integrierte Funktion, die erwartet eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt. Verschiedene integrierte Funktionen erfordern, Objekte, die im [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (im Gegensatz zu Objekten, die durch den Hostnamen oder eine externe Komponente, wie ein Steuerelement definiert).  

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426554"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
  Um eine benutzerdefinierte Regel für ein Teamprojekt zu erstellen, Sie für den Regelsatz-Eincheckrichtlinie einen speziellen Ordner zuerst erstellen **Quellcodeverwaltungs-Explorer**. Dann erstellen die Regelsatzdatei und fügen Sie die Datei zur Versionskontrolle hinzu. Abschließend geben Sie den Regelsatz, der als das Einchecken Codeanalyserichtlinie für das Teamprojekt.  
   
 > [!NOTE]
->  Um einen Ordner in einem Teamprojekt zu erstellen, müssen Sie zuerst das Stammverzeichnis des Projekts Team an einem Speicherort auf dem lokalen Computer zuordnen. Weitere Informationen finden Sie unter [erstellen und Verwenden von Arbeitsbereichen (ALT)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Um einen Ordner in einem Teamprojekt zu erstellen, müssen Sie zuerst das Stammverzeichnis des Projekts Team an einem Speicherort auf dem lokalen Computer zuordnen. Weitere Informationen finden Sie unter [erstellen und Verwenden von Arbeitsbereichen (ALT)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Erstellen Sie den Versionskontrollordner für den Regelsatz-Eincheckrichtlinie  
   
@@ -72,7 +72,7 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
 4. In der **Einchecken** (Dialogfeld), Sie haben die Option zum Hinzufügen eines Kommentars, und klicken Sie dann auf **Einchecken**.  
   
     > [!NOTE]
-    >  Wenn Sie eine Eincheckrichtlinie für die Analyse bereits für das Teamprojekt konfiguriert haben, und Sie ausgewählt haben die **erzwingen, um nur die Dateien enthalten, die Teil der aktuellen Projektmappe eingecheckt**, Sie löst eine Warnung zu Fehler bei Richtlinie. Wählen Sie in das Dialogfeld Richtlinienfehler **Richtlinienfehler überschreiben und organg fortsetzen**. Hinzufügen eines Kommentars erforderliches, und klicken Sie dann auf **OK**.  
+    > Wenn Sie eine Eincheckrichtlinie für die Analyse bereits für das Teamprojekt konfiguriert haben, und Sie ausgewählt haben die **erzwingen, um nur die Dateien enthalten, die Teil der aktuellen Projektmappe eingecheckt**, Sie löst eine Warnung zu Fehler bei Richtlinie. Wählen Sie in das Dialogfeld Richtlinienfehler **Richtlinienfehler überschreiben und organg fortsetzen**. Hinzufügen eines Kommentars erforderliches, und klicken Sie dann auf **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Legen die Regel an Datei als die Check-in-Richtlinie  
   
@@ -91,7 +91,7 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  Kopieren Sie den Pfad, indem Sie eine der folgenden Verfahren in **Quellcodeverwaltungs-Explorer**:  
+    > Kopieren Sie den Pfad, indem Sie eine der folgenden Verfahren in **Quellcodeverwaltungs-Explorer**:  
   
     - In der **Ordner** Bereich, klicken Sie auf den Ordner, die Regelsatzdatei enthält. Kopieren Sie den Versionskontrollpfad des Ordners, der angezeigt wird der **Quelle** Feld, und geben Sie den Namen des der Regelsatzdatei manuell.  
   

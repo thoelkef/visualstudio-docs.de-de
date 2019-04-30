@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859176"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer internen Struktur der ausgeführten Dokumententabelle (RDT) aufgerufen. Diese Liste enthält alle geöffneten Dokumente im Arbeitsspeicher, unabhängig davon, ob diese Dokumente derzeit bearbeitet wird. Ein Dokument ist ein Element, das gespeichert wird, einschließlich der Dateien in einem Projekt oder der Hauptprojektdatei (z. B. eine VCXPROJ-Datei).

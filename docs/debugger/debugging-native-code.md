@@ -21,38 +21,38 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851905"
 ---
 # <a name="debugging-native-code"></a>Debuggen von systemeigenem Code
 In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Veranschaulicht, wie Visual Studio-Debugger, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md)).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Gewusst wie: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md) erhalten Sie Tipps zum Debuggen von optimierten Codes, insbesondere eine nicht optimierte Version des Programms, standardoptimierungseinstellungen für Debug- und Releasekonfigurationen, Debuggen und Tipps für das Suchen von Fehlern, die für die nur im optimierten Code (Aktivieren der Optimierung in einer Debugbuildkonfiguration) angezeigt.
+ [Vorgehensweise: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md) erhalten Sie Tipps zum Debuggen von optimierten Codes, insbesondere eine nicht optimierte Version des Programms, standardoptimierungseinstellungen für Debug- und Releasekonfigurationen, Debuggen und Tipps für das Suchen von Fehlern, die nur für die in optimiertem Code (Aktivieren der Optimierung in einer Debugbuildkonfiguration) angezeigt.
 
  [DebugBreak und __debugbreak](../debugger/debugbreak-and-debugbreak.md) wird beschrieben, die Win32 `DebugBreak` Funktion, und enthält einen Link zum betreffenden Referenzthema im Plattform-SDK. Dort wird auch die systeminterne Funktion `__debugbreak` beschrieben.
 
- [C/C++-Assertionen](../debugger/c-cpp-assertions.md) erläutert assertionsanweisungen, deren Funktionsweise, die Vorteile Ihrer Verwendung (von logikfehlern, Überprüfen der Ergebnisse einer Operation und Testen von Fehlerzuständen), die Interaktion mit `_DEBUG`, und die Arten von Assertionen in unterstützt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [C /C++ Assertionen](../debugger/c-cpp-assertions.md) erläutert assertionsanweisungen, deren Funktionsweise, die Vorteile Ihrer Verwendung (von logikfehlern, Überprüfen der Ergebnisse einer Operation und Testen von Fehlerzuständen), die Interaktion mit `_DEBUG`, und die Arten von Assertionen in unterstützt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
- [Gewusst wie: Debuggen von Inline-Assemblycode](../debugger/how-to-debug-inline-assembly-code.md) kurze Anweisungen zur Verwendung des Fensters Disassembly an die Assemblyanweisungen und die Fenster "Register" Anzeigen von Registerinhalten und stellt Links zu Themen über diese Fenster.
+ [Vorgehensweise: Debuggen von Inline-Assemblycode](../debugger/how-to-debug-inline-assembly-code.md) kurze Anweisungen zur Verwendung des Fensters Disassembly an die Assemblyanweisungen und die Fenster "Register" Anzeigen von Registerinhalten und stellt Links zu Themen über diese Fenster.
 
  [MFC-Debugverfahren](../debugger/mfc-debugging-techniques.md) enthält Links zu Debugtechniken für MFC‑Programme, darunter: AfxDebugBreak, das TRACE-Makro, Erkennen von Speicherverlusten in MFC, MFC‑Assertionen und Verringern der Größe eines MFC-Debugbuilds.
 
  [CRT-Debugverfahren](../debugger/crt-debugging-techniques.md) enthält Links zu Debugtechniken für die C-Laufzeitbibliothek, einschließlich der Verwendung der CRT-Debugbibliothek, Makros für die berichterstellung, Unterschiede zwischen Malloc und _malloc_dbg, Schreiben von Hookfunktionen und CRT-Debugheap.
 
- [Debuggen von systemeigenem Code häufig gestellte Fragen zur](../debugger/debugging-native-code-faqs.md) finden Sie Antworten auf häufig gestellte Fragen zum Debuggen von Visual C++-Programmen
+ [Debuggen von systemeigenem Code häufig gestellte Fragen zur](../debugger/debugging-native-code-faqs.md) finden Sie Antworten auf häufig gestellte Fragen zum Debuggen von Visual C++ Programme
 
  [Debuggen von COM und ActiveX-](../debugger/com-and-activex-debugging.md) enthält Informationen zum Debuggen von COM und ActiveX-Anwendungen, einschließlich Tools Sie für COM können und ActiveX-Debuggen.
 
- [Gewusst wie: Debuggen von Injiziertem Code](../debugger/how-to-debug-injected-code.md) bietet Hinweise zum Debuggen von Code, der Attribute verwendet. Zu den behandelten Themen gehören das Aktivieren von Quellcodeanmerkungen, das Anzeigen von eingefügtem Code sowie das Anzeigen des Disassemblycodes am aktuellen Ausführungspunkt.
+ [Vorgehensweise: Debuggen von Injiziertem Code](../debugger/how-to-debug-injected-code.md) bietet Hinweise zum Debuggen von Code, der Attribute verwendet. Zu den behandelten Themen gehören das Aktivieren von Quellcodeanmerkungen, das Anzeigen von eingefügtem Code sowie das Anzeigen des Disassemblycodes am aktuellen Ausführungspunkt.
 
  [Exemplarische Vorgehensweise: Debuggen einer Parallelanwendung](../debugger/walkthrough-debugging-a-parallel-application.md) beschreibt, wie die **Parallele Aufgaben** und **parallele Stapel** Toolfenster zum Debuggen einer parallelen Anwendung.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Visual C++-Projekttypen](../debugger/debugging-preparation-visual-cpp-project-types.md) enthält Links zu Themen, in denen beschrieben, wie Debuggen die systemeigener Projekttypen, die von der Visual C++-Projektvorlagen erstellt werden.
+ [Visual C++ Projekttypen](../debugger/debugging-preparation-visual-cpp-project-types.md) enthält Links zu Themen, Gewusst wie: Debuggen der systemeigener Projekttypen, die von der Visualisierung erstellt C++ -Projektvorlagen.
 
  [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) erläutert, wie Sie native und verwaltete DLLs zu debuggen.
 

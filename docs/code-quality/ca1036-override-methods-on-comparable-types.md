@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12b00c202373310b04021a46e74af2af7e10d535
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778995"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Methoden bei vergleichbaren Typen überschreiben.
 
@@ -49,7 +49,7 @@ Um einen Verstoß gegen diese Regel zu beheben, außer Kraft setzen <xref:System
 - op_LessThan
 - op_GreaterThan
 
-Sind in C# wie folgt die Token, die verwendet werden, um diese Operatoren darstellen:
+Sind in c# wie folgt die Token, die verwendet werden, um diese Operatoren darstellen:
 
 ```csharp
 ==

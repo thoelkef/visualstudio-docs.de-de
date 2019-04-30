@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421498"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator-Elements* ist ein Symbol oder eine Textzeile, die für eine Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können das Decorator-angezeigt und nicht mehr angezeigt, abhängig von der Zustand der Eigenschaften im Modell. Für eine Form, die eine Person darstellt, können Sie z. B. unterschiedliche Symbole haben, die je nach Geschlecht der Person, die Anzahl der untergeordneten Elemente angezeigt werden und so weiter.

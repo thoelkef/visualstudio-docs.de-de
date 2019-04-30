@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76b3a3b4c1cbc3c5f3e9c3fddaca2be79d3f5851
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1d4214dea16c1e8a96ece7428f9ea73640025a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443675"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
 Bestimmt, ob die Diagnose für diese Anwendung unterstützt werden. Wenn [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) für das Objekt, das Implementieren dieser Schnittstelle mit einem Wert ungleich NULL aufgerufen wurde [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) gibt `true`. Wenn nicht der Fall, gibt `false` und Aufrufe von [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) fehl.  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsSetup-Schnittstelle](../../winscript/reference/iwebappdiagnosticssetup-interface.md) wird implementiert von PDM V11. 0 und höher. Im activdbg100 wurde gefunden.  
+> [IWebAppDiagnosticsSetup-Schnittstelle](../../winscript/reference/iwebappdiagnosticssetup-interface.md) wird implementiert von PDM V11. 0 und höher. Im activdbg100 wurde gefunden.  
   
 ## <a name="syntax"></a>Syntax  
   

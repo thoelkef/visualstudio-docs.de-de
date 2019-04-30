@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 426adc0cd150d5867760a8570df5777fec8260a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859251"
 ---
 # <a name="registering-vspackages"></a>Registrieren von VSPackages
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basiert auf der PKGDEF-Dateien, um zu beschreiben, und suchen Sie eine VSPackage. Eine PKGDEF-Datei enthält alle Registrierungsinformationen, die andernfalls in die systemregistrierung hinzugefügt werden. Verwaltete VSPackages registriert sind, indem Sie das Hinzufügen von Attributen zum Quellcode und die [CreatePkgDef-Hilfsprogramm](../../extensibility/internals/createpkgdef-utility.md) auf die resultierende Assembly zum Generieren einer PKGDEF-Datei.

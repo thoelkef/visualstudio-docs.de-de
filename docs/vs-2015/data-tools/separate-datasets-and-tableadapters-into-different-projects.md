@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425097"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Aufteilen von DataSets und TableAdapters in verschiedene Projekte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](http://ms
 1. Öffnen Sie eine Projektmappe, die ein DataSet (XSD-Datei) enthält.  
   
    > [!NOTE]
-   >  Wenn die Projektmappe das Projekt keinen ist in dem Sie den Dataset-Code zu trennen möchten, erstellen Sie das Projekt oder fügen Sie ein vorhandenes Projekt zur Projektmappe hinzu.  
+   > Wenn die Projektmappe das Projekt keinen ist in dem Sie den Dataset-Code zu trennen möchten, erstellen Sie das Projekt oder fügen Sie ein vorhandenes Projekt zur Projektmappe hinzu.  
   
 2. Doppelklicken Sie auf ein typisiertes Dataset-Datei (XSD-Datei) in **Projektmappen-Explorer** , öffnen Sie das Dataset in den **Dataset-Designer**.  
   
@@ -54,7 +54,7 @@ Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](http://ms
     Nachdem Sie das Projekt auswählen, in dem Sie den Dataset-Code generieren möchten, die **Datasetdatei** -Eigenschaft mit einem standardmäßigen Dateinamen aufgefüllt. Sie können diesen Namen bei Bedarf ändern. Wenn Sie den Dataset-Code in einem bestimmten Verzeichnis generieren möchten, können Sie in der **Projektordner**-Eigenschaft den Namen des Ordners angeben.  
   
    > [!NOTE]
-   >  Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.  
+   > Bei einer Abtrennung der Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.  
   
 6. Speichern Sie das DataSet.  
   
@@ -63,7 +63,7 @@ Typisierte Datasets wurden weiterentwickelt, damit die [TableAdapters](http://ms
    Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code eine separate Klassendatei in jedem Projekt angelegt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen dem Namen DatasetName.Designer.vb (oder DatasetName.Designer.cs), enthält die `TableAdapter` Code. Das Projekt, das angegeben die **Dataset-Projekt** Eigenschaft verfügt über eine Datei mit dem Namen dem Namen DatasetName.DataSet.Designer.vb (oder DatasetName.DataSet.Designer.cs), die den Dataset-Code enthält.  
   
 > [!NOTE]
->  Um die generierte Klassendatei anzuzeigen, wählen Sie das Dataset oder `TableAdapter` Projekt. Klicken Sie auf **Projektmappen-Explorer**Option **alle Dateien anzeigen** .  
+> Um die generierte Klassendatei anzuzeigen, wählen Sie das Dataset oder `TableAdapter` Projekt. Klicken Sie auf **Projektmappen-Explorer**Option **alle Dateien anzeigen** .  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über N-Tier-Data-Anwendungen](../data-tools/n-tier-data-applications-overview.md)   

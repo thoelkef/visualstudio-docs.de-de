@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852992b3e7553ee07b2834d7253cd41dd46f4e8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415911"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen für die Implementierung von Debug-Engines, ausdrucksauswertung und Symbol-Anbieter in C++.
 
 > [!NOTE]
->  Es gibt keine verwalteten Versionen dieser Funktionen und-Deklarationen zu diesem Zeitpunkt.
+> Es gibt keine verwalteten Versionen dieser Funktionen und-Deklarationen zu diesem Zeitpunkt.
 
 ## <a name="overview"></a>Übersicht
  In der Reihenfolge für die Debug-Engines, ausdrucksauswertung und Symbol-Anbieter von Visual Studio verwendet werden müssen sie registriert werden. Dies erfolgt durch Festlegen von Registrierungsunterschlüsseln und Einträge, auch bekannt als "Einstellung Metriken". Die folgenden globalen Funktionen dienen, den Prozess der Aktualisierung dieser Metriken zu vereinfachen. Finden Sie im Abschnitt Registrierungspfaden das Layout der einzelnen Registrierungsunterschlüssel finden, die von diesen Funktionen aktualisiert wird.
@@ -237,7 +237,7 @@ HRESULT EnumMetricSections(
  Die Metriken aus gelesen und geschrieben, um die Registrierung in der `VisualStudio` Unterschlüssel.
 
 > [!NOTE]
->  In den meisten Fällen, werden die Metriken auf dem Schlüssel HKEY_LOCAL_MACHINE geschrieben. In einigen Fällen allerdings wird HKEY_CURRENT_USER der Ziel-Schlüssel sein. Dbgmetric.lib behandelt beide Schlüssel. Wenn eine Metrik zu erhalten, sucht es HKEY_CURRENT_USER zuerst, dann HKEY_LOCAL_MACHINE. Wenn sie eine Metrik festlegen, ist, wird ein Parameter der obersten Ebene Schlüssels zu.
+> In den meisten Fällen, werden die Metriken auf dem Schlüssel HKEY_LOCAL_MACHINE geschrieben. In einigen Fällen allerdings wird HKEY_CURRENT_USER der Ziel-Schlüssel sein. Dbgmetric.lib behandelt beide Schlüssel. Wenn eine Metrik zu erhalten, sucht es HKEY_CURRENT_USER zuerst, dann HKEY_LOCAL_MACHINE. Wenn sie eine Metrik festlegen, ist, wird ein Parameter der obersten Ebene Schlüssels zu.
 
  *[Registrierungsschlüssel]*\
 
@@ -269,7 +269,7 @@ HRESULT EnumMetricSections(
 |*[Metrikwert]*|Der Wert, der die Metrik zugewiesen wird. Der Typ, der den Wert (Zeichenfolge, Zahl, usw.) haben soll, hängt von der Metrik ab.|
 
 > [!NOTE]
->  Alle GUIDs werden gespeichert, in das Format der `{GUID}`. Beispielsweise `{123D150B-FA18-461C-B218-45B3E4589F9B}`.
+> Alle GUIDs werden gespeichert, in das Format der `{GUID}`. Beispielsweise `{123D150B-FA18-461C-B218-45B3E4589F9B}`.
 
 ### <a name="debug-engines"></a>Debug-Engines
  Im folgenden finden die Organisation der Debug-Engines Metriken in der Registrierung. `Engine` Um der metrischen Typnamen für eine Debug-Engine und entspricht *[Metriktyp]* in der Registrierungsteilstruktur der oben genannten.
@@ -348,7 +348,7 @@ HRESULT EnumMetricSections(
  Im folgenden finden die Organisation der Expression Evaluator Metriken in der Registrierung. `ExpressionEvaluator` Um der Metriktyp-Namen für die ausdrucksauswertung und entspricht *[Metriktyp]*.
 
 > [!NOTE]
->  Den Metriktyp für `ExpressionEvaluator` ist in dbgmetric.h, nicht definiert, da davon ausgegangen wird, dass die entsprechenden Ausdruck Ausdrucksauswertungsfehler Metrik Funktionen alle metrikänderungen für ausdrucksauswertungen durchlaufen werden (das Layout der `ExpressionEvaluator` Unterschlüssel ist ein wenig kompliziert, damit die Details in dbgmetric.lib ausgeblendet sind).
+> Den Metriktyp für `ExpressionEvaluator` ist in dbgmetric.h, nicht definiert, da davon ausgegangen wird, dass die entsprechenden Ausdruck Ausdrucksauswertungsfehler Metrik Funktionen alle metrikänderungen für ausdrucksauswertungen durchlaufen werden (das Layout der `ExpressionEvaluator` Unterschlüssel ist ein wenig kompliziert, damit die Details in dbgmetric.lib ausgeblendet sind).
 
  `ExpressionEvaluator`\
 

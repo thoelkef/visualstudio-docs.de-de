@@ -3,78 +3,74 @@ title: Zugriff
 description: In diesem Artikel werden die Barrierefreiheitsfunktionen in Visual Studio für Mac eingeführt, und es wird erklärt, wie sie aktiviert werden können.
 author: conceptdev
 ms.author: crdun
-ms.date: 08/15/2017
+ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985309"
 ---
 # <a name="accessibility"></a>Zugriff
 
-Neben den Barrierefreiheitsfunktionen und Hilfsprogrammen in macOS bietet Visual Studio für Mac folgende Features, um Personen mit Behinderungen den Zugang zu erleichtern:
+Visual Studio für Mac bietet die folgenden Barrierefreiheitsfunktionen, um Personen mit Behinderungen den Zugang zu erleichtern:
 
 - Vergrößern des Texts in Lösungspads und Editor-Pads
 - Textgrößenoptionen in den Editoren
 - Anpassen der Farbe in den Editoren
+- Tastaturnavigation
 - Anpassen von Tastenkombinationen
 - Codevervollständigung für Methoden und Parameter
 
+Zusätzlich zu diesen Features bietet Apple eine Reihe von Tools, die Benutzer mit besonderen Anforderungen unterstützen, wie VoiceOver und Diktat.
+
 Weitere Informationen zu Barrierefreiheitsfunktionen in macOS finden Sie auf der [Website von Apple](https://www.apple.com/accessibility/mac/).
 
-## <a name="using-accessibility-features-in-visual-studio-for-mac"></a>Verwenden von Barrierefreiheitsfunktionen in Visual Studio für Mac
+## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Aktivieren von macOS-Hilfstechnologien in Visual Studio für Mac
 
-Die Barrierefreiheitsfunktionen in Visual Studio für Mac sind standardmäßig deaktiviert. Führen Sie folgende Schritte aus, um sie zu aktivieren:
+Die Unterstützung von Visual Studio für Mac für macOS-Hilfstechnologien ist standardmäßig deaktiviert. Um sie zu aktivieren, gehen Sie folgendermaßen vor:
 
-1. Wechseln Sie zu **Visual Studio > Einstellungen > Weiter > Barrierefreiheit**.
+1. Wechseln Sie zu **Visual Studio (Menü) > Einstellungen > Weiter > Barrierefreiheit**.
 
-2. Aktivieren Sie das Kontrollkästchen **Barrierefreiheit aktivieren**, wie im folgenden Diagramm gezeigt:
+2. Aktivieren Sie das Kontrollkästchen **Barrierefreiheit aktivieren**:
 
-    ![Kontrollkästchen „Barrierefreiheit aktivieren“](media/accessibility-image1.png)
+   ![Einstellungen „Barrierefreiheit aktivieren“](media/accessibility-preferences.png)
 
-3. Klicken Sie auf die Schaltfläche **Visual Studio neu starten**, um die Barrierefreiheitsfunktionen zu aktivieren.
-
-Alternativ dazu können Sie die Barrierefreiheitsfunktionen über die Befehlszeile aktivieren. Geben Sie im Terminal folgenden Befehl ein:
-
-```bash
-defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
-```
-
-Nach dem Aktivieren der Barrierefreiheit müssen Sie Visual Studio neu starten.
+3. Wählen Sie die Schaltfläche **Visual Studio neu starten**, um Visual Studio neu zu starten und die Unterstützung für Apple-Hilfstechnologien zu aktivieren.
 
 ## <a name="how-to-use-keyboard-navigation"></a>Vorgehensweise: Verwenden der Tastaturnavigation
 
-Die Tastaturnavigation kann aktiviert werden, indem unter **Systemeinstellungen > Tastatur > Kurzbefehle** die Tastatursteuerung auf die Option **Alle Steuerungen** festgelegt wird:
+Die Unterstützung der Tastaturnavigation ist direkt in macOS integriert, aber um die umfassendste Erfahrung zu haben, sollten Sie macOS so einstellen, dass es durch **Alle Steuerelemente** navigiert:
 
-![Systemeinstellungen in macOS](media/accessibility-image2.png)
+![Systemeinstellungen – Tastatur – Alle Steuerelemente](media/accessibility-preferences-keyboard.png)
 
-Durch Festlegen der Tastatursteuerung wird das Fokusrechteck aktiviert. Sie können Steuerelemente folgendermaßen auswählen:
+Wenn Sie **Vollständiger Tastaturzugriff** auf **Alle Steuerelemente** festlegen, können Sie durch alle Steuerelemente in einem Fenster oder Dialogfenster navigieren. Sie können Steuerelemente folgendermaßen auswählen:
 
 - Drücken der TABULATORTASTE, um vorwärts durch Steuerelemente zu navigieren
 - Drücken der UMSCHALTTASTE + TABULATORTASTE, um rückwärts durch Steuerelemente zu navigieren
 - Drücken der Pfeiltasten, um in Richtung der Pfeile zwischen Steuerelementen zu navigieren
+- Registerkarte „Steuerelement“ aus den Textbereichsfeldern
+- Durch Drücken der Leertaste wird das Steuerelement aktiviert, auf dem momentan der Fokus liegt.
 
-Durch Drücken der Leertaste wird das Steuerelement mit dem Fokus aktiviert.
+## <a name="how-to-enable-and-use-voiceover"></a>Vorgehensweise: Aktivieren und Verwenden von VoiceOver
 
-## <a name="how-to-enable-and-use-voice-over"></a>Vorgehensweise: Aktivieren und Verwenden von VoiceOver
+Zu Aktivieren oder Deaktivieren von VoiceOver, drücken Sie auf **&#8984; + F5**.
 
-Aktivieren oder deaktivieren Sie VoiceOver, indem Sie **BEFEHLSTASTE + F5** drücken.
+VoiceOver-Befehle werden in diesem Handbuch als **VO+*Taste*** angezeigt, wobei **VO** sich auf den Modifizierer bezieht, der im **VoiceOver -Hilfsprogramm** eingestellt ist. Standardmäßig wird **Strg + Alt** als Modifizierer verwendet. Abhängig von Ihrem VoiceOver-Modifizierer bedeutet **VO + M** beispielsweise **Strg + Alt + M**. Aus Gründen der Übersichtlichkeit werden Pfeiltasten als **Links** und **Rechts** usw. bezeichnet.
 
-Um zwischen VoiceOver-Befehlen der Benutzeroberfläche zu navigieren, verwenden Sie folgende Befehle:
+Verwenden Sie die folgenden Tastenkombinationen, um durch die Benutzeroberfläche von Visual Studio für Mac zu navigieren:
 
-- Bewegen des VoiceOver-Cursors zwischen Steuerelementen: **STRG + ALT + Linke Pfeiltaste bzw. rechte Pfeiltaste**
+- **VO + Rechts/Links**: Navigieren zwischen den Elementen der Benutzeroberfläche
+    - VoiceOver sagt die Bezeichnung und die Art des Steuerelements an und erklärt die Interaktion mit ihm.
+- **VO + UMSCHALT + Nach unten / Nach oben**: Schritt in Element/aus Element
+    - Sobald Sie sich in einem Element befinden, können Sie mit **VO + Links/Rechts** durch die Elemente innerhalb dieses Elements navigieren.
+- **VO + Leertaste**: Auswählen/Interagieren mit einem Steuerelement
+- **VO + M**: Interagieren mit der Visual Studio für Mac-Menüleiste
 
-   VoiceOver liest die Namen der Steuerelemente sowie einige Informationen und mögliche Aktionen vor.
+Weitere Informationen zur Verwendung von VoiceOver und eine umfassende Liste von Befehlen finden Sie in den folgenden Anleitungen:
 
-- Geben Sie Gruppen und Steuerelemente ein (z.B. Lösungspad, Toolbox und andere Pads): **STRG + ALT + UMSCHALTTASTE + Pfeiltaste nach unten**
-
-   Wenn Sie sich innerhalb eines Steuerelements befinden, können Sie **STRG + ALT + Pfeiltasten** verwenden, um darin zu navigieren.
-
-Allgemeine Informationen zur Verwendung von VoiceOver in macOS finden Sie in folgenden Leitfäden:
-
-- [VoiceOver-Einführungshandbuch](https://help.apple.com/voiceover/info/guide/10.12/)
+- [Apple VoiceOver – Erste Schritte](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web)
 - [VoiceOver Commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (VoiceOver-Befehle in macOS)
 
 ## <a name="see-also"></a>Siehe auch

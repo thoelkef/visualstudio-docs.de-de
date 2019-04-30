@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437939"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053532"
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.  
   
 > [!IMPORTANT]
->  Die Grafikanalyse unterstützt die Frame-Analyse für Apps, die Direct3D 11 auf unterstützten Plattformen, einschließlich Windows 10, verwenden. Die Frame-Analyse wird derzeit nicht für Apps unterstützt, die Direct3D 12 verwenden.  
+> Die Grafikanalyse unterstützt die Frame-Analyse für Apps, die Direct3D 11 auf unterstützten Plattformen, einschließlich Windows 10, verwenden. Die Frame-Analyse wird derzeit nicht für Apps unterstützt, die Direct3D 12 verwenden.  
   
 ## <a name="frame-analysis"></a>Frame-Analyse  
  Für die Frame-Analyse werden die Informationen verwendet, die zu Diagnosezwecken in einer Grafikprotokolldatei erfasst wurden – hier jedoch zu dem Zweck, die Renderingleistung zusammenzufassen. Die Leistungsinformationen werden während der Erfassung nicht im Protokoll gespeichert, aber später während der Frame-Analyse durch Timing von Ereignissen und Sammlung von Statistiken erstellt, wenn der Frame wiedergegeben wird. Dieser Ansatz weist einige Vorteile gegenüber der Aufzeichnung der Leistungsinformationen während der Erfassung auf:  
@@ -118,7 +118,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Mit den Hardwarezähler-Informationen erhalten Sie eine sehr detaillierte Übersicht über das spezifische Hardwareplattform-Verhalten für jeden Zeichnen-Befehl, die Ihnen hilft, die Gründe für Leistungsengpässe sehr genau zu ermitteln.  
   
 > [!NOTE]
->  Verschiedene Hardwareplattformen unterstützen verschiedene Zähler; es gibt keinen Standard. Welche Zähler vorhanden sind und was sie darstellen, wird allein von jedem GPU-Hersteller entschieden.  
+> Verschiedene Hardwareplattformen unterstützen verschiedene Zähler; es gibt keinen Standard. Welche Zähler vorhanden sind und was sie darstellen, wird allein von jedem GPU-Hersteller entschieden.  
   
 ### <a name="marker-regions-and-events"></a>Markerbereiche und Ereignisse  
  Die Frame-Analyse unterstützt benutzerdefinierte Ereignismarker und Ereignisgruppen. Sie werden in der Tabelle Zusammenfassung und in der Tabelle Detail angezeigt.  
@@ -145,7 +145,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Zeitstempel werden auf allen Plattformen unterstützt, die die Frame-Analyse unterstützen. Tiefenokklusionsabfragen – die für den Zähler "Okkludierte Pixel" erforderlich sind – werden auf Plattformen unterstützt, die die Funktionsebene 9.2 oder höher unterstützen.  
   
 > [!NOTE]
->  Obwohl Zeitstempel auf allen Plattformen unterstützt werden, die Frame-Analyse unterstützen, ist die Genauigkeit und Konsistenz der Zeitstempel von Plattform zu Plattform unterschiedlich.  
+> Obwohl Zeitstempel auf allen Plattformen unterstützt werden, die Frame-Analyse unterstützen, ist die Genauigkeit und Konsistenz der Zeitstempel von Plattform zu Plattform unterschiedlich.  
   
 ### <a name="gpu-counters"></a>GPU-Zähler  
  Die Unterstützung für GPU-Hardwarezähler ist hardwareabhängig.  
@@ -159,7 +159,7 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
   Keine andere Plattform, die die Frame-Analyse unterstützt, sammelt GPU-Hardwarezähler.  
   
 > [!NOTE]
->  Da GPU Hardware-Ressourcen Hardwareindikatoren sind, dauert es mehrere Durchgänge um den vollständigen Satz der Hardware-Leistungsindikatoren für jede Rendering-Variante zu erfassen. Daher ist die Reihenfolge, in der die GPU-Leistungsindikatoren erfasst wurden, nicht angegeben.  
+> Da GPU Hardware-Ressourcen Hardwareindikatoren sind, dauert es mehrere Durchgänge um den vollständigen Satz der Hardware-Leistungsindikatoren für jede Rendering-Variante zu erfassen. Daher ist die Reihenfolge, in der die GPU-Leistungsindikatoren erfasst wurden, nicht angegeben.  
   
 ### <a name="windows-phone"></a>Windows Phone  
  Zeitstempel, Okklusionsabfragen und GPU-Hardwarezähler werden nur von Windows Phone-Handsets unterstützt, die ursprünglich mit Windows Phone 8.1 geliefert wurden. Diese Frame-Analyse benötigt diese, um die Grafikprotokolldatei wiedergeben zu können. Windows Phone-Handsets, die ursprünglich mit Windows Phone 8 geliefert wurden, unterstützen die Frame-Analyse nicht, selbst wenn sie auf Windows Phone 8.1 aktualisiert wurden.  
@@ -174,13 +174,13 @@ Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Ana
  Wenn Sie in der Grafikanalyse eine Grafikprotokolldatei wiedergeben, die eine höhere Funktionsebene verwendet, als der Wiedergabecomputer unterstützt, fällt die Wiedergabe automatisch auf WARP zurück. In der Frame-Analyse fällt sie nicht explizit auf WARP zurück und erzeugt einen Fehler. WARP ist sinnvoll zur Untersuchung der Korrektheit Ihrer Direct3D-App, aber nicht zur Untersuchung von deren Leistung.  
   
 > [!NOTE]
->  Obwohl es wichtig ist, die Probleme mit verschiedenen Funktionsebenen zu bedenken, können Sie Grafikprotokolldateien in verschiedenen Hardwarekonfigurationen und auf verschiedenen Geräten erfassen und abspielen. Sie können z. B. Grafikinformationen auf einem Windows Phone erfassen und auf einem Desktop-Computer abspielen. Auch das umgekehrte Verfahren wird unterstützt. In beiden Fällen kann die Grafikprotokolldatei abgespielt werden, solange sie keine APIs enthält oder Funktionsebenen verwendet, die nicht auf dem Wiedergabecomputer unterstützt werden.  
+> Obwohl es wichtig ist, die Probleme mit verschiedenen Funktionsebenen zu bedenken, können Sie Grafikprotokolldateien in verschiedenen Hardwarekonfigurationen und auf verschiedenen Geräten erfassen und abspielen. Sie können z. B. Grafikinformationen auf einem Windows Phone erfassen und auf einem Desktop-Computer abspielen. Auch das umgekehrte Verfahren wird unterstützt. In beiden Fällen kann die Grafikprotokolldatei abgespielt werden, solange sie keine APIs enthält oder Funktionsebenen verwendet, die nicht auf dem Wiedergabecomputer unterstützt werden.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 und niedriger  
  Die Frame-Analyse wird nur für die API Direct3D 11 unterstützt. Wenn Ihre App die API Direct3D 10 aufruft, kann die Frame-Analyse sie nicht erkennen oder profilieren, auch wenn sie von anderen Grafikanalysetools erkannt und verwendet wird. Wenn Ihre App sowohl die API Direct3D11 als auch die API Direct3D 10 unterstützt, werden nur die Direct3D 11-Aufrufe profiliert  
   
 > [!NOTE]
->  Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen. Solange Sie die API Direct3D 11, Direct3D 11.1 oder Direct3D 11.2 verwenden, können Sie auf jeder gewünschten Funktionsebene arbeiten – die Frame-Analyse funktioniert in jedem Fall.  
+> Dies gilt nur für Aufrufe der Direct3D-API, die Sie verwenden, nicht für Funktionsebenen. Solange Sie die API Direct3D 11, Direct3D 11.1 oder Direct3D 11.2 verwenden, können Sie auf jeder gewünschten Funktionsebene arbeiten – die Frame-Analyse funktioniert in jedem Fall.  
   
 ## <a name="Variants"></a> Varianten  
  Jede Änderung, die die Frame-Analyse an der Art durchführt, in der ein Frame während der Wiedergabe gerendert wird, wird *Variante* genannt. Die Varianten, die die Frame-Analyse untersucht, entsprechen allgemeinen, relativ einfachen Änderungen, die Sie vornehmen können, um die Renderingleistung oder die visuelle Qualität Ihrer App zu verbessern – z. B. Reduzierung der Größe von Texturen, Verwendung von Texturkomprimierungen oder Aktivierung verschiedener Arten von Anti-Aliasing. Varianten überschreiben den normalen Rendering-Kontext und die Parameter Ihrer App. Hier finden Sie eine Zusammenfassung:  

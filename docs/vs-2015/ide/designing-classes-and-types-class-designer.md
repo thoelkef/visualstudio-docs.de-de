@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437535"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Entwerfen von Klassen und Typen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,22 +25,22 @@ ms.locfileid: "54795511"
 Mit **Klassen-Designer** können Sie nicht nur Klassen und Typen darstellen, sondern Sie können diese auch entwerfen. In den folgenden Themen wird die Vorgehensweise beschrieben.  
   
 > [!NOTE]
->  Wenn Sie mit Klassen-Designer arbeiten, sollten Sie den ausgegebenen Code vor der Ausführung immer überprüfen, um sicherzustellen, dass der Code für Ihren Sicherheitskontext geeignet ist.  
+> Wenn Sie mit Klassen-Designer arbeiten, sollten Sie den ausgegebenen Code vor der Ausführung immer überprüfen, um sicherzustellen, dass der Code für Ihren Sicherheitskontext geeignet ist.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Erstellen von Typen mit dem Klassen-Designer](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Beschreibt die Verwendung des Klassendiagramms zum Erstellen eines Typs.  
   
- [Gewusst wie: Erstellen der Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Vorgehensweise: Erstellen der Vererbung zwischen Typen im Klassen-Designer](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
  Beschreibt, wie eine Vererbungsbeziehung zwischen Typen definiert wird.  
   
- [Gewusst wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen im Klassen-Designer](../ide/how-to-create-associations-between-types-class-designer.md)  
   
  Beschreibt, wie Zuordnungen im Klassendiagramm definiert werden.  
   
- [Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Vorgehensweise: Visualisieren einer Collectionzuordnung im Klassen-Designer](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Erläutert das Definieren einer Auflistungszuordnung in Klassen-Designer.  
   

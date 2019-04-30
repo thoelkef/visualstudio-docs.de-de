@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427908"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
   Um ein Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzuzufügen, müssen Sie zuerst erstellen Sie ein Windows Forms-Benutzersteuerelement. Anschließend fügen das Benutzersteuerelement, um die <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft der `ThisDocument.ActionsPane` Feld (Wort) oder `ThisWorkbook.ActionsPane` Feld (Excel) in Ihrem Projekt.
@@ -28,7 +28,7 @@ ms.locfileid: "60085843"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Erstellen des Benutzersteuerelements
  Das folgende Verfahren zeigt, wie Benutzersteuerelemente in einem Word oder Excel-Projekt. Es fügt auch eine Schaltfläche auf das Benutzersteuerelement, das Text in das Dokument oder Arbeitsmappe schreibt, wenn darauf geklickt wird.
@@ -42,12 +42,12 @@ ms.locfileid: "60085843"
 3. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Aktionsbereich-Steuerelements**, nennen Sie sie **HelloControl**, und klicken Sie auf **hinzufügen**.
 
     > [!NOTE]
-    >  Sie können alternativ Hinzufügen einer **Benutzersteuerelement** Element zu Ihrem Projekt. Die Klassen generiert, indem die **Aktionsbereich-Steuerelements** und **Benutzersteuerelement** Elemente sind funktional äquivalent.
+    > Sie können alternativ Hinzufügen einer **Benutzersteuerelement** Element zu Ihrem Projekt. Die Klassen generiert, indem die **Aktionsbereich-Steuerelements** und **Benutzersteuerelement** Elemente sind funktional äquivalent.
 
 4. Von der **Windows Forms** Registerkarte die **Toolbox** ziehen Sie eine **Schaltfläche** Steuerelement auf das Steuerelement.
 
     > [!NOTE]
-    >  Wenn das Steuerelement nicht im Designer angezeigt wird, doppelklicken klicken Sie auf **HelloControl** in **Projektmappen-Explorer**.
+    > Wenn das Steuerelement nicht im Designer angezeigt wird, doppelklicken klicken Sie auf **HelloControl** in **Projektmappen-Explorer**.
 
 5. Fügen Sie den Code der <xref:System.Windows.Forms.Control.Click> -Ereignishandler der Schaltfläche. Das folgende Beispiel zeigt Code für Microsoft Office Word-Dokument.
 

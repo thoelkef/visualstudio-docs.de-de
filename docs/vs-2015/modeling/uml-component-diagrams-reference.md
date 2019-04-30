@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424381"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML-Komponentendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ In Visual Studio eine *Komponentendiagramm* zeigt die Teile eines Entwurfs für 
  Weitere Informationen zur Verwendung von Komponentendiagrammen während des Entwurfsprozesses finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  In diesem Thema werden die Elemente beschrieben, die Sie in Komponentendiagrammen verwenden können. Weitere Informationen finden Sie unter Informationen zum Zeichnen von Komponentendiagrammen finden Sie [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md). Weitere Informationen zum allgemeinen Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+> In diesem Thema werden die Elemente beschrieben, die Sie in Komponentendiagrammen verwenden können. Weitere Informationen finden Sie unter Informationen zum Zeichnen von Komponentendiagrammen finden Sie [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md). Weitere Informationen zum allgemeinen Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Lesen von Komponentendiagrammen  
  In der folgenden Tabelle werden die Elemente beschrieben, die Sie in einem Komponentendiagramm verwenden können, sowie ihre Haupteigenschaften. Eine vollständige Liste der Eigenschaften der Elemente, finden Sie unter [Eigenschaften von Elementen in UML-Komponentendiagrammen](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424909"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
   Sie können auch aufgefordert, eine Datei zu aktualisieren, die über eine frühere Version von SQL Server Express oder LocalDB erstellt wurde, wenn die Version der Datei nicht kompatibel mit der Instanz von SQL Server Express oder LocalDB, die derzeit installiert ist. Um das Problem zu beheben, fordert Visual Studio Sie auf die Datei zu aktualisieren.  
   
 > [!IMPORTANT]
->  Es wird empfohlen, dass Sie die Datenbankdatei sichern, bevor Sie ein Upgrade durchführen.  
+> Es wird empfohlen, dass Sie die Datenbankdatei sichern, bevor Sie ein Upgrade durchführen.  
   
 > [!WARNING]
->  Wenn Sie eine MDF-Datei, die in LocalDB 2014 (V12) 32-Bit auf LocalDB 2016 (V13) erstellt wurde aktualisieren, werden Sie nicht die Datei erneut in der 32-Bit-Version von LocalDB öffnen können.  In Update 2 ist LocalDB V13 nur 64 Bit.  
+> Wenn Sie eine MDF-Datei, die in LocalDB 2014 (V12) 32-Bit auf LocalDB 2016 (V13) erstellt wurde aktualisieren, werden Sie nicht die Datei erneut in der 32-Bit-Version von LocalDB öffnen können.  In Update 2 ist LocalDB V13 nur 64 Bit.  
   
  Vor dem upgrade einer Datenbank sollten Sie der folgenden Kriterien:  
   

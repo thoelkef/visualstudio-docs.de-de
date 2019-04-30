@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433428"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Durchsuchen und Neuanordnen von Code Maps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Ordnen Sie Elemente in Codeübersichten neu an, damit sie leichter zu lesen sind
 - Ein Aggregatlink stellt alle gleichgerichteten Beziehungen zwischen zwei Gruppen dar.  
   
 > [!TIP]
->  Gruppenübergreifende Links werden in der Übersicht standardmäßig nur für ausgewählte Knoten angezeigt. Um dieses Verhalten zum Anzeigen oder Ausblenden von aggregatlinks zwischen Gruppen zu ändern, klicken Sie auf **Layout** auf den Code Symbolleiste zugeordnet, und wählen Sie **erweitert**, klicken Sie dann **alle gruppenübergreifenden Links anzeigen** oder **Alle gruppenübergreifenden Links ausblenden**. Finden Sie unter [ausblenden oder Einblenden von Knoten und Links](#HidingShowing) Weitere Details.  
+> Gruppenübergreifende Links werden in der Übersicht standardmäßig nur für ausgewählte Knoten angezeigt. Um dieses Verhalten zum Anzeigen oder Ausblenden von aggregatlinks zwischen Gruppen zu ändern, klicken Sie auf **Layout** auf den Code Symbolleiste zugeordnet, und wählen Sie **erweitert**, klicken Sie dann **alle gruppenübergreifenden Links anzeigen** oder **Alle gruppenübergreifenden Links ausblenden**. Finden Sie unter [ausblenden oder Einblenden von Knoten und Links](#HidingShowing) Weitere Details.  
   
 |**Aktion**|**Führen Sie diese Schritte aus**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Ordnen Sie Elemente in Codeübersichten neu an, damit sie leichter zu lesen sind
  Wenn Knoten ausgeblendet werden, werden sie von Layoutalgorithmen nicht berücksichtigt. Gruppenübergreifende Links werden standardmäßig ausgeblendet. Gruppenübergreifende Links sind einzelne Links, durch die Knoten über Gruppen hinweg verbunden sind. Beim Reduzieren von Gruppen werden alle gruppenübergreifenden Links in der Übersicht zu einzelnen Links zwischen Gruppen aggregiert. Wenn Sie eine Gruppe erweitern und Knoten in der Gruppe auswählen, werden gruppenübergreifende Links angezeigt, die die Abhängigkeiten in dieser Gruppe darstellen.  
   
 > [!CAUTION]
->  Vergewissern Sie sich, dass alle Knoten bzw. gruppenübergreifenden Links, die andere Benutzer sehen sollen, eingeblendet sind, bevor Sie eine Übersicht für Benutzer von Visual Studio Professional freigeben, die in Visual Studio Enterprise erstellt wurde. Andernfalls können diese Benutzer diese Elemente nicht einblenden.  
+> Vergewissern Sie sich, dass alle Knoten bzw. gruppenübergreifenden Links, die andere Benutzer sehen sollen, eingeblendet sind, bevor Sie eine Übersicht für Benutzer von Visual Studio Professional freigeben, die in Visual Studio Enterprise erstellt wurde. Andernfalls können diese Benutzer diese Elemente nicht einblenden.  
   
 ### <a name="to-hide-or-show-nodes"></a>So blenden Sie Knoten ein oder aus  
   
@@ -153,7 +153,7 @@ Ordnen Sie Elemente in Codeübersichten neu an, damit sie leichter zu lesen sind
  Sie können in einer Übersicht mehr oder weniger Elemente anzeigen, um Detailinformationen einzublenden oder die Übersicht zu vereinfachen. Sie können Elemente auch entfernen und ihnen Kommentare hinzufügen.  
   
 > [!CAUTION]
->  Vergewissern Sie sich vor dem Freigeben einer mit Visual Studio Enterprise erstellten Übersicht für Benutzer von Visual Studio Professional, dass alle Codeelemente in der Übersicht angezeigt werden, die für andere angezeigt werden sollen. Andernfalls können diese Benutzer gelöschte Codeelemente nicht abrufen.  
+> Vergewissern Sie sich vor dem Freigeben einer mit Visual Studio Enterprise erstellten Übersicht für Benutzer von Visual Studio Professional, dass alle Codeelemente in der Übersicht angezeigt werden, die für andere angezeigt werden sollen. Andernfalls können diese Benutzer gelöschte Codeelemente nicht abrufen.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Hinzufügen eines Knotens für ein Codeelement  
   
@@ -267,7 +267,7 @@ Ordnen Sie Elemente in Codeübersichten neu an, damit sie leichter zu lesen sind
 3. Wählen Sie die Kategorie oder Eigenschaft nicht in der Liste enthalten, **+** in die **Legende** Feld aus, und wählen Sie dann **Knoteneigenschaft**, **Knotenkategorie** , **Verbindungseigenschaft**, oder **verknüpfen Kategorie**. Wählen Sie dann die Eigenschaft oder Kategorie aus. Die Kategorie oder Eigenschaft wird jetzt der **Legende** Feld.  
   
     > [!NOTE]
-    >  Zum Erstellen und ein Codeelement eine Kategorie oder Eigenschaft zuweisen, können Sie die DGML-Datei der Map bearbeiten. finden Sie unter [Anpassen von Code maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Zum Erstellen und ein Codeelement eine Kategorie oder Eigenschaft zuweisen, können Sie die DGML-Datei der Map bearbeiten. finden Sie unter [Anpassen von Code maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. In der **Legende** Feld, klicken Sie auf das Symbol neben der Kategorie oder Eigenschaft, die Sie hinzugefügt haben, oder Sie ändern möchten.  
   
@@ -290,7 +290,7 @@ Ordnen Sie Elemente in Codeübersichten neu an, damit sie leichter zu lesen sind
     |Bestimmte Farbe oder bestimmtes Symbol|Öffnen Sie die Liste für Kategorie- bzw. Eigenschaftswerte. Wählen Sie eine Farbe oder ein Symbol aus.|  
   
     > [!NOTE]
-    >  Können Sie neu anordnen, löschen oder vorübergehend deaktiviert Stile in die **Legende** Feld. Finden Sie unter [der Legende im Bearbeitungsfeld](#ModifyLegend).  
+    > Können Sie neu anordnen, löschen oder vorübergehend deaktiviert Stile in die **Legende** Feld. Finden Sie unter [der Legende im Bearbeitungsfeld](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Bearbeiten Sie die Felds "Legende"  
  Können Sie neu anordnen, löschen oder vorübergehend deaktiviert Stile in die **Legende** Feld:  

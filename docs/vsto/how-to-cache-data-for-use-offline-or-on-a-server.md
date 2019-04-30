@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419704"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Vorgehensweise: Zwischenspeichern von Daten für die Verwendung, offline ist oder auf einem server
   Sie können ein Datenelement im Dokument zwischengespeichert werden markieren, damit sie verfügbar ist offline. Dies erleichtert auch möglich, dass die Daten in das Dokument durch anderen Code bearbeitet werden, wenn das Dokument auf einem Server gespeichert ist.
@@ -32,7 +32,7 @@ ms.locfileid: "60094540"
  Sie können ein Datenelement zwischengespeichert werden, wenn das Datenelement in Ihrem Code deklariert ist, oder, bei Verwendung von markieren eine <xref:System.Data.DataSet>, durch Festlegen einer Eigenschaft in der **Eigenschaften** Fenster. Wenn Sie ein Datenelement zwischenspeichern, die keinem <xref:System.Data.DataSet> oder <xref:System.Data.DataTable>, stellen Sie sicher, dass es sich um die Kriterien für die Zwischenspeicherung im Dokument erfüllt. Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).
 
 > [!NOTE]
->  Datasets, die mit Visual Basic, der als gekennzeichnet sind erstellt **Cached** und **WithEvents** (einschließlich Datasets, die von gezogen werden die **Datenquellen** Fenster oder **Toolbox** verfügen, die die **CacheInDocument** -Eigenschaftensatz auf **"true"**) haben Sie einen Unterstrich als Präfix versehen im Cache. Wenn Sie ein Dataset erstellen, und nennen Sie sie z. B. **Kunden**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> wird als Name **_Customers** im Cache. Bei Verwendung von <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> um diese zwischengespeicherten Element zuzugreifen, müssen Sie angeben **_Customers** anstelle von **Kunden**.
+> Datasets, die mit Visual Basic, der als gekennzeichnet sind erstellt **Cached** und **WithEvents** (einschließlich Datasets, die von gezogen werden die **Datenquellen** Fenster oder **Toolbox** verfügen, die die **CacheInDocument** -Eigenschaftensatz auf **"true"**) haben Sie einen Unterstrich als Präfix versehen im Cache. Wenn Sie ein Dataset erstellen, und nennen Sie sie z. B. **Kunden**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> wird als Name **_Customers** im Cache. Bei Verwendung von <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> um diese zwischengespeicherten Element zuzugreifen, müssen Sie angeben **_Customers** anstelle von **Kunden**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Zum Zwischenspeichern von Daten in das Dokument mithilfe von code
 

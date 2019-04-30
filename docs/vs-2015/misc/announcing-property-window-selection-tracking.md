@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002456"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Ankündigen der Auswahlnachverfolgung im Eigenschaftenfenster
 Wenn Sie zusammenarbeiten möchten die **Eigenschaften** Fenster oder der **Eigenschaft** -Seiten, z. B. ein Formular, Text oder eine Auswahl, die für die Sie Eigenschaften anzeigen möchten haben Sie vollständige Informationen zur Verwendung müssen Sie Koordinieren Sie die Auswahl. Beispielsweise müssen Sie wissen, ob Sie einfach- oder Mehrfachauswahl verfügen. Dann müssen Sie Ihre Auswahltyp (einzelne oder mehrere) mit der IDE bekanntgeben zu können die <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> Schnittstelle. Diese Schnittstelle bietet Informationen, die erforderlich sind, durch die **Eigenschaften** Fenster.  

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846114"
 ---
 # <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
 Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu einer bestimmten Nachricht. Um das Dialogfeld anzuzeigen, den Fokus auf ein [Meldungsansicht](../debugger/messages-view.md) Fenster. Wählen Sie einen in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.

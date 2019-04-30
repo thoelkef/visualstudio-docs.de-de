@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424499"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML-Klassendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> In diesem Thema geht es um UML-Klassendiagramme. Es gibt noch eine andere Art von Klassendiagramm, das erstellt und verwendet wird, um Programmcode visuell darzustellen. Finden Sie unter [entwerfen und Anzeigen von Klassen und Typen](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="Using"></a> Verwenden von UML-Klassendiagrammen  
  Sie können ein UML-Klassendiagramm für viele verschiedene Zwecke verwenden:  
@@ -82,7 +82,7 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
  Referenzinformationen zu den Elementen in UML-Klassendiagrammen finden Sie unter [UML-Klassendiagramme: Reference (Referenz zu UML-Klassendiagrammen)](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
->  Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+> Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-uml-class-diagram"></a>So erstellen Sie ein UML-Klassendiagramm  
   
@@ -185,7 +185,7 @@ In Visual Studio können Sie eine *UML-Klassendiagramm* um Datentypen und ihre B
   Sie können auch den Namen eines Typs schreiben, den Sie im Modell noch nicht definiert haben. Der Name wird er unter **nicht spezifizierte Typen** im UML-Modell-Explorer.  
   
 > [!NOTE]
->  Wenn Sie anschließend im Modell eine Klasse oder Schnittstelle mit diesem Namen definieren, verweisen ältere Attribute und Operationen weiterhin auf das Element in "Nicht spezifizierte Typen". Wenn Sie diese älteren Komponenten ändern möchten, damit sie auf die neue Klasse verweisen, müssen Sie für jedes Attribut bzw. jede Operation den Typ zurücksetzen und die neue Klasse im Dropdownmenü auswählen.  
+> Wenn Sie anschließend im Modell eine Klasse oder Schnittstelle mit diesem Namen definieren, verweisen ältere Attribute und Operationen weiterhin auf das Element in "Nicht spezifizierte Typen". Wenn Sie diese älteren Komponenten ändern möchten, damit sie auf die neue Klasse verweisen, müssen Sie für jedes Attribut bzw. jede Operation den Typ zurücksetzen und die neue Klasse im Dropdownmenü auswählen.  
   
 #### <a name="multiple-types"></a>Mehrere Typen  
  Sie können eine Multiplizität für beliebige Attribute, Vorgänge oder Parametertypen festlegen.  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Bei jedem Typ kann es sich um im Modell definierte Typen, Standardtypen wie "Ganze Zahl" oder "Zeichenfolge" oder den Namen eines neuen Typs handeln, den Sie noch nicht definiert haben.  
   
 > [!NOTE]
->  Wenn Sie einen Namen ohne einen Typ in eine Parameterliste schreiben, wird anstelle seines Typs der Name des Parameters angegeben. In diesem Beispiel werden "MenuItem" und "Integer" zu den Namen von zwei Parametern mit nicht angegebenen Typen:  
+> Wenn Sie einen Namen ohne einen Typ in eine Parameterliste schreiben, wird anstelle seines Typs der Name des Parameters angegeben. In diesem Beispiel werden "MenuItem" und "Integer" zu den Namen von zwei Parametern mit nicht angegebenen Typen:  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  Um die Multiplizität eines Typs in einer Signatur festzulegen, schreiben Sie die Multiplizität in eckigen Klammern nach dem Typnamen, z. B.:  
   

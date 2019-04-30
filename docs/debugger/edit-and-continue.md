@@ -22,20 +22,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851022"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Bearbeiten von Code und Debugging in Visual Studio fortzusetzen (C#, VB, C++)
-Mit Bearbeiten und Fortfahren sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, indem Sie einen Ausführungsbefehl wie **Weiter** oder **Schritt**, bearbeiten und Fortfahren automatisch wendet die codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Bearbeiten Sie Code und fortfahren Sie Debuggen in Visual Studio (c#, VB, C++)
+Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms mit einem Ausführungsbefehl wie **Fortfahren** oder **Schrittweise** fortsetzen, übernimmt „Bearbeiten und Fortfahren“ automatisch die Codeänderungen mit einigen Einschränkungen. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.
 
  Dieser Abschnitt schließt folgende Themen ein:
 
- [Gewusst wie: Aktivieren und Deaktivieren von "Bearbeiten und Fortfahren"](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+ [Vorgehensweise: Enable and Disable Edit and Continue (Vorgehensweise: Aktivieren und Deaktivieren von „Bearbeiten und Fortfahren“)](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
- [Gewusst wie: Anhalten von Codeänderungen](../debugger/how-to-stop-code-changes.md)
+ [Vorgehensweise: Stop Code Changes (Vorgehensweise: Anhalten von Codeänderungen)](../debugger/how-to-stop-code-changes.md)
 
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
 

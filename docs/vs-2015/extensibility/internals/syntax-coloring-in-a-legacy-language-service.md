@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441270"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Syntaxfarben in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103575"
 Einfache Farbauswahl-Modell  
   
 > [!NOTE]
->  Der Dienst für die Syntaxfarben unterscheidet sich von den allgemeinen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Mechanismus zum farbigen Anzeigen von Text. Weitere Informationen zu den allgemeinen [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Mechanismus unterstützen die farbliche Kennzeichnung, finden Sie unter [Verwenden von Schriftarten und Farben](../../extensibility/using-fonts-and-colors.md).  
+> Der Dienst für die Syntaxfarben unterscheidet sich von den allgemeinen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Mechanismus zum farbigen Anzeigen von Text. Weitere Informationen zu den allgemeinen [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Mechanismus unterstützen die farbliche Kennzeichnung, finden Sie unter [Verwenden von Schriftarten und Farben](../../extensibility/using-fonts-and-colors.md).  
   
  Neben der Farbauswahl kann der Sprachdienst benutzerdefinierte kolorierbare Elemente bereitstellen, die vom Editor durch Werbung dienen, dass sie benutzerdefinierte kolorierbare Elemente bereitstellt. Implementieren Sie hierzu die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Schnittstelle für das gleiche Objekt, das implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle. Es gibt die Anzahl der benutzerdefinierten kolorierbaren Elemente zurück, wenn der Editor aufruft der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> -Methode, und es gibt ein einzelne benutzerdefiniertes kolorierbare Element zurück, wenn der Editor Ruft die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Methode.  
   
@@ -51,7 +51,7 @@ Einfache Farbauswahl-Modell
 2. Das VSPackage kann jetzt abrufen und verwenden die Farbauswahl-Objekt wie folgt:  
   
     > [!NOTE]
-    >  VSPackages, die den Kern-Editor verwenden keiner Sprache des Diensts Farbauswahl Objekte explizit abrufen. Sobald eine Instanz von der Kern-Editor eine entsprechende Sprachdienst erhält, führt es alle hier gezeigten farbliche Kennzeichnung von Aufgaben.  
+    > VSPackages, die den Kern-Editor verwenden keiner Sprache des Diensts Farbauswahl Objekte explizit abrufen. Sobald eine Instanz von der Kern-Editor eine entsprechende Sprachdienst erhält, führt es alle hier gezeigten farbliche Kennzeichnung von Aufgaben.  
   
     1. Abrufen der Sprachdienst Farbauswahl-Objekt, das implementiert die `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> Schnittstellen, die durch Aufrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode auf des Sprachdiensts <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Objekt.  
   
@@ -62,13 +62,13 @@ Einfache Farbauswahl-Modell
     3. Verwenden Sie die farbliche Kennzeichnung von Informationen zurückgegeben werden, indem die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Methode, um den ausgewählten Text anzuzeigen.  
   
 > [!NOTE]
->  Neben der Verwendung einer Sprachendienst-Farbauswahl können eine VSPackage können Sie auch die allgemeine [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Farben Mechanismus Text. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../../extensibility/using-fonts-and-colors.md).  
+> Neben der Verwendung einer Sprachendienst-Farbauswahl können eine VSPackage können Sie auch die allgemeine [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Farben Mechanismus Text. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md)  
  Erläutert, wie ein Editor zugreift, einer editortooloptionsseite des Sprachdiensts farbige syntaxmarkierung und welche der Sprachdienst müssen implementieren, um Syntax zu unterstützen färben.  
   
- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Vorgehensweise: Verwenden von integrierten einfärbbaren Elementen](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Veranschaulicht, wie mit integrierten kolorierbaren Elemente des sprachdienstes.  
   
  [Benutzerdefinierte einfärbbare Elemente](../../extensibility/internals/custom-colorable-items.md)  

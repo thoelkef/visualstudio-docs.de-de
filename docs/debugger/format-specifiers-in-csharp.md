@@ -1,5 +1,5 @@
 ---
-title: Die Formatbezeichner im Debugger (C#) | Microsoft-Dokumentation
+title: Die Formatbezeichner im Debugger (c#) | Microsoft-Dokumentation
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,13 +26,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849858"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# in Visual Studio-Debugger
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in c# in Visual Studio-debugger
 Sie können das Format, in dem ein Wert, im angezeigt wird, Ändern der **Watch** mithilfe von Formatbezeichnern. Sie können auch die Formatbezeichner in der **direkt** Fenster die **Befehl** Fenster im [Ablaufverfolgungspunkte](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), und in den Quellcodefenstern. Wenn Sie auf einem Ausdruck in diesen Fenstern anhalten, erscheint das Ergebnis einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) in der Anzeige des angegebenen Formats.
 
 Um einen Formatbezeichner verwenden, geben Sie in des Variablen Ausdrucks gefolgt von einem Komma und den entsprechenden Bezeichner.

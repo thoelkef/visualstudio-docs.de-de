@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437463"
 ---
 # <a name="validate-your-uml-model"></a>Überprüfen des UML-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
 - **Validierungsbefehl.** Klicken Sie zum Aufrufen der Validierung zu einem beliebigen Zeitpunkt auf **UML-Modell überprüfen** auf die **Architektur** Menü.  
   
   > [!NOTE]
-  >  Der Befehl wird nur angezeigt, wenn Validierungseinschränkungen installiert sind.  
+  > Der Befehl wird nur angezeigt, wenn Validierungseinschränkungen installiert sind.  
   
 - **Beim Speichern eines Modells.** Validierungseinschränkungen können beim Speichern des Modells angewendet werden. Mithilfe dieser Einschränkungen soll sichergestellt werden, dass Sie kein Modell speichern, das gemäß der Interpretation durch das Projekt ungültig ist.  
   

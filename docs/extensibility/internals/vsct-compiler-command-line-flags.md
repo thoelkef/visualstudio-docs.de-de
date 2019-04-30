@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf68857aca2d94f8a929f8191fb32b8d67cbbb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fe73a4d66d57ae362d4b99d10aca9170971f17b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429638"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT-Compiler-Befehlszeilenflags
 Der Visual Studio Befehl Tabelle (VSCT)-Compiler bietet Befehlszeilenschalter, um sicherzustellen, dass erfolgreiche Kompilierung der VSCT-Dateien.
@@ -50,7 +50,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
->  Die Zeichen - (Bindestrich) und / (Schrägstrich) sind beide akzeptierte Notation zum Angeben der Befehlszeilenparameter.
+> Die Zeichen - (Bindestrich) und / (Schrägstrich) sind beide akzeptierte Notation zum Angeben der Befehlszeilenparameter.
 
  Zulässige Kennzeichen und ihre Bedeutung sind wie folgt.
 
@@ -59,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Geben Sie keine zusätzlichen definierten Symbole.|
 |-I|Geben Sie die zusätzliche Pfade enthalten, die beim Auflösen von Dateiverweisen verwendet werden soll.|
 |-L|Geben Sie die <xref:System.Globalization.CultureInfo> Kulturnamen, z. B. "En-US".|
-|-E|Ausgeben C# Objekte in den angegebenen Namespace für Elemente des Befehls, gefolgt von [C&#124;H&#124;N]:*Filename*, C = C#, H C++-Header, N = = Namespace. Der Namespace ist für C#-Code erforderlich.|
+|-E|Ausgeben C# Objekte in den angegebenen Namespace für Elemente des Befehls, gefolgt von [C&#124;H&#124;N]:*Filename*, C = C#, H = C++ -Header, N = Namespace. Der Namespace ist für C#-Code erforderlich.|
 |-v|Ausführliche Ausgabe.|
 
  Der Schalter – L weist den Compiler an, wählen Sie eine Gruppe von Zeichenfolgen, die den binären CTO-Datei zu erstellen, das entspricht, dem angegebenen <xref:System.Globalization.CultureInfo> Kulturname. Der Name der angegebenen Kultur sollte die Language-Attribut von einem oder mehreren entsprechen [Strings-Element](../../extensibility/strings-element.md) in der VSCT-Datei. Wenn ein Zeichenfolgen-Element keine Language-Attribut aufweist, wird es aus dem entsprechenden geerbt [CommandTable-Element](../../extensibility/commandtable-element.md).

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431235"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Vorgehensweise: Hinzufügen und Entfernen von Funktionen und Elementen in einem Paket mithilfe der Paket-Explorer
   Um ein Paket zum Bereitstellen von SharePoint-Elemente und Funktionen zu konfigurieren, können Sie die Paket-Explorer. Sie können die SharePoint-Projektelemente und-Funktionen in der WSP-Datei anpassen.
@@ -51,7 +51,7 @@ ms.locfileid: "60104459"
     - Öffnen Sie das Kontextmenü für eine Funktion, und wählen **Ausschneiden**, öffnen Sie das Kontextmenü für das Projekt, das Sie verschieben Sie die Funktion, und wählen Sie dann möchten **einfügen**.
 
     > [!NOTE]
-    >  Gehen Sie folgendermaßen vor, wenn Sie über mehr als eine SharePoint-Projekt in der Projektmappe verfügen.
+    > Gehen Sie folgendermaßen vor, wenn Sie über mehr als eine SharePoint-Projekt in der Projektmappe verfügen.
 
 ## <a name="validate-a-feature-or-package"></a>Überprüfen Sie, ein Feature oder Paket
  Sie können potenzielle Probleme in der SharePoint-Funktionen und Pakete identifizieren, indem Sie die Dateien überprüfen. Warnungen und Fehler werden im Fenster "Ausgabe" und Fenster "Fehlerliste" angezeigt.

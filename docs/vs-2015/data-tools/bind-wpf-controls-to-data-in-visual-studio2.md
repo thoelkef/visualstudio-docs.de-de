@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437039"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
      Um ein anderes Steuerelement auszuwählen, klicken Sie auf den Dropdownpfeil neben dem Element, und wählen Sie ein Steuerelement aus. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Wenn eine bestimmte Spalte oder Eigenschaft nicht angezeigt werden soll, erweitern Sie das Element, um seine untergeordneten Elemente anzuzeigen. Klicken Sie auf den Dropdownpfeil neben der Spalte oder Eigenschaft, die Sie nicht möchten, um anzuzeigen, und klicken Sie dann auf **keine**.
+    > Wenn eine bestimmte Spalte oder Eigenschaft nicht angezeigt werden soll, erweitern Sie das Element, um seine untergeordneten Elemente anzuzeigen. Klicken Sie auf den Dropdownpfeil neben der Spalte oder Eigenschaft, die Sie nicht möchten, um anzuzeigen, und klicken Sie dann auf **keine**.
 
 3. Ziehen Sie das Element auf einen gültigen Container im Designer, z. B. ein <xref:System.Windows.Controls.Grid>. Weitere Informationen zu gültigen Containern finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
 2. Klicken Sie auf den Dropdown-Pfeil neben dem Element, und wählen Sie **Details**.
 
     > [!NOTE]
-    >  Wenn eine bestimmte Spalte oder Eigenschaft nicht angezeigt werden soll, erweitern Sie das Element, um seine untergeordneten Elemente anzuzeigen. Klicken Sie auf den Dropdownpfeil neben der Spalte oder Eigenschaft, die Sie nicht möchten, um anzuzeigen, und klicken Sie dann auf **keine**.
+    > Wenn eine bestimmte Spalte oder Eigenschaft nicht angezeigt werden soll, erweitern Sie das Element, um seine untergeordneten Elemente anzuzeigen. Klicken Sie auf den Dropdownpfeil neben der Spalte oder Eigenschaft, die Sie nicht möchten, um anzuzeigen, und klicken Sie dann auf **keine**.
 
 3. Ziehen Sie das Element auf einen gültigen Container im Designer, z. B. ein <xref:System.Windows.Controls.Grid>. Weitere Informationen zu gültigen Containern finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generiert [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] und Code zum Binden des Steuerelements auf die Daten. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Wenn das Steuerelement bereits an Daten gebunden ist, wird die Datenbindung für das Steuerelement auf das Element zurückgesetzt, das zuletzt auf das Steuerelement gezogen wurde.
+    > Wenn das Steuerelement bereits an Daten gebunden ist, wird die Datenbindung für das Steuerelement auf das Element zurückgesetzt, das zuletzt auf das Steuerelement gezogen wurde.
 
 ## <a name="see-also"></a>Siehe auch
  [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md) [Anzeigen verknüpfter Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md) [Binden von WPF-Steuerelemente zu einem Dataset](../data-tools/bind-wpf-controls-to-a-dataset.md) [Binden von WPF-Steuerelemente an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

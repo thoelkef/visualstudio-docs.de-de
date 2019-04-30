@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1dca1ce2504d557050adc1cb015eb7c6da056c70
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925693"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Ereignisquellen (Visual Studio SDK)
 Es gibt zwei Quellen von Ereignissen: die Debug-Engine (DE) und die Sitzung Debug-Manager (SDM). Aus einer bereitgestellten Kompatibilitätsrichtlinie gesendete Ereignisse verfügen über eine nicht-NULL-Engine, Ereignissen ab, das SDM eine NULL-Engine.

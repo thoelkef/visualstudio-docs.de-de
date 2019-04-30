@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427400"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Masterseite oder eines Designs
   Sie können Seiten auf Ihrer SharePoint-Website ein einheitliches Erscheinungsbild verleihen durch Erstellen und Verwenden von Masterseiten und Designs. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht für diese Elemente stellen Vorlagen bereit, aber Sie können sie in SharePoint Designer erstellen und importieren Sie sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](http://go.microsoft.com/fwlink/?LinkID=182095) auf der Microsoft-Website.
@@ -48,7 +48,7 @@ ms.locfileid: "60081905"
 8. Wenn Sie eine Masterseite hinzugefügt haben, ändern die **Bereitstellungskonfliktlösung** auf **automatische** in die Eigenschaften des Moduls.
 
     > [!NOTE]
-    >  Fehler können auftreten, wenn der Name der Masterseite ist identisch mit den Namen einer vorhandenen master-Seite, die als Standardgestaltungsvorlage oder benutzerdefinierten Gestaltungsvorlage markiert ist. Informationen zum Beheben dieses Problems finden Sie unter [Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Fehler können auftreten, wenn der Name der Masterseite ist identisch mit den Namen einer vorhandenen master-Seite, die als Standardgestaltungsvorlage oder benutzerdefinierten Gestaltungsvorlage markiert ist. Informationen zum Beheben dieses Problems finden Sie unter [Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. Öffnen Sie im Modul *"Elements.xml"*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081905"
      Der Wert **Web** bedeutet, die die Masterseite nur für die Website angewendet werden, die derzeit im Projekt angegeben ist. Der Wert **Site** bedeutet, dass die Masterseite auf der aktuellen Websitesammlung anwendet, umfasst alle Unterwebsites und das Stamm-Web. Die anderen Werte gelten nicht.
 
     > [!NOTE]
-    >  Da nur auf Ebene der Websitesammlung Designs angewendet werden, es wird empfohlen, dass Sie nicht im Rahmen eines Designs auf irgendetwas außer festlegen **Site**. Fehler können auftreten, wenn ein Design in einem untergeordneten Standort verwendet wird.
+    > Da nur auf Ebene der Websitesammlung Designs angewendet werden, es wird empfohlen, dass Sie nicht im Rahmen eines Designs auf irgendetwas außer festlegen **Site**. Fehler können auftreten, wenn ein Design in einem untergeordneten Standort verwendet wird.
 
 12. Wählen Sie auf der Menüleiste **erstellen** > **Projektmappe bereitstellen**.
 

@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ca9d7841671c44702b883cc8efcc23e803ea8fe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412870"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Weiterhin die Ausführung dieses Programms aus einem beendeten Zustand. Alle vorherigen Ausführungsstatus (z. B. in einem Schritt) wird beibehalten, und das Programm gestartet wird, erneut ausführen.
 
 > [!NOTE]
->  Diese Methode ist veraltet. Verwenden der [Weiter](../../../extensibility/debugger/reference/idebugprocess3-continue.md) Methode stattdessen.
+> Diese Methode ist veraltet. Verwenden der [Weiter](../../../extensibility/debugger/reference/idebugprocess3-continue.md) Methode stattdessen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,7 +51,7 @@ int Continue( 
  Diese Methode wird aufgerufen, für dieses Programm unabhängig davon, wie viele Programme debuggt werden oder welches Programm das Stopping-Ereignis generiert. Die Implementierung muss behalten den vorherigen Ausführungsstatus (z. B. in einem Schritt) und die Ausführung wird fortgesetzt, als wären es nie vor dem Abschluss der vorherigen Ausführung beendet haben. Wenn ein Thread in diesem Programm einen Schritt-für-Vorgang durchführen wurde und wurde beendet, weil ein anderes Programm beendet werden soll, und klicken Sie dann diese Methode aufgerufen wurde, muss die Anwendung, also der ursprüngliche Prozedurschritten-Vorgang abgeschlossen.
 
 > [!WARNING]
->  Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
+> Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

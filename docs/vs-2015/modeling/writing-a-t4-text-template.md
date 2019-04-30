@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446718"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Sie können überall dort einen Textblock einfügen, wo eine `Write();`-Anweisung im Code zulässig wäre.  
   
 > [!NOTE]
->  Wenn Sie einen Textblock innerhalb einer verbundanweisung, z. B. einer Schleife oder Bedingung einbetten, verwenden Sie immer geschweifte Klammern {...} den Textblock enthalten.  
+> Wenn Sie einen Textblock innerhalb einer verbundanweisung, z. B. einer Schleife oder Bedingung einbetten, verwenden Sie immer geschweifte Klammern {...} den Textblock enthalten.  
   
 ### <a name="expression-control-blocks"></a>Ausdruckskontrollblöcke  
  Durch einen Ausdruckskontrollblock wird ein Ausdruck ausgewertet und in eine Zeichenfolge konvertiert. Diese Zeichenfolge wird in die Ausgabedatei eingefügt.  

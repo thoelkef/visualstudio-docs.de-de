@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab2081d5f75eea3ad23db4151f43ed882bdf74cc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554986"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 Gibt den Zielprozessor.
@@ -94,7 +94,7 @@ typedef enum CV_CPU_TYPE_e {
 } CV_CPU_TYPE_e;
 ```
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) Methode.
 
 ## <a name="requirements"></a>Anforderungen

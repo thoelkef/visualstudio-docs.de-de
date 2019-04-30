@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409546"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die zu einem Workflowprojekt von einem Workflow abgeleitete Daten angezeigt werden. Er baut auf das Projekt, das in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -295,7 +295,7 @@ ms.locfileid: "60083029"
     ```
 
     > [!WARNING]
-    >  Achten Sie darauf, dass "TestServer" im Code mit dem Namen eines gültigen Servers ersetzen, auf dem SharePoint ausgeführt wird.
+    > Achten Sie darauf, dass "TestServer" im Code mit dem Namen eines gültigen Servers ersetzen, auf dem SharePoint ausgeführt wird.
 
 ## <a name="test-the-application-page"></a>Testen Sie die Seite "Anwendung"
  Als Nächstes zu bestimmen, ob die Seite "Anwendung" der Ausgabedaten ordnungsgemäß angezeigt.

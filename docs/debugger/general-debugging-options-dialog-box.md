@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399398"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen für das Debuggen
 
@@ -85,7 +85,7 @@ Unter Umständen 2 und 3 wird die Ausnahme gelegentlich von verwaltetem Code in 
 **Quelllinkunterstützung aktivieren**: Weist den Visual Studio-Debugger zum Herunterladen der Quelldateien für *PDB* Dateien, die Informationen der Link "Quelle" enthalten. Weitere Informationen zu den Link "Quelle", finden Sie unter den [quellenspezifikation-Verknüpfung](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Da der Link "Quelle" werden Dateien, die über http oder Https heruntergeladen haben, stellen Sie sicher, dass Sie vertrauen den *PDB* Datei.
+> Da der Link "Quelle" werden Dateien, die über http oder Https heruntergeladen haben, stellen Sie sicher, dass Sie vertrauen den *PDB* Datei.
 
 - **Für alle Quellenlinkanforderungen Fallback auf die Authentifizierung über die Git-Anmeldeinformationsverwaltung durchführen**:   Wenn Unterstützung für Quelllink aktiviert ist und eine Anforderung der Link "Quelle" schlägt die Authentifizierung fehl, ruft Visual Studio klicken Sie dann Git Credential Manager.
 

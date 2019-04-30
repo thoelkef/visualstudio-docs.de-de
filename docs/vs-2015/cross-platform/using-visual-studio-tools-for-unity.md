@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443361"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
      ![Dieses Symbol zeigt an, dass VSTU mit Unity verbunden ist](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Wenn das Steckersymbol mit einem Häkchen angezeigt wird, sind Sie bereits mit einer Unity-Instanz verbunden.  
+> Wenn das Steckersymbol mit einem Häkchen angezeigt wird, sind Sie bereits mit einer Unity-Instanz verbunden.  
   
  Das Dialogfeld **Unity-Instanz auswählen** zeigt Informationen zu jeder Unity-Instanz, mit der Sie eine Verbindung herstellen können.  
   
@@ -136,7 +136,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
  Die Portnummer für den UDP-Socket, über den diese Instanz von Unity kommuniziert.  
   
 > [!IMPORTANT]
->  Da Visual Studio-Tools für Unity und die Unity-Instanz über einen UDP-Netzwerksocket kommunizieren, werden Sie ggf. von Ihrer Firewall dazu befragt. In diesem Fall müssen Sie die Verbindung autorisieren, damit VSTU und Unity kommunizieren können.  
+> Da Visual Studio-Tools für Unity und die Unity-Instanz über einen UDP-Netzwerksocket kommunizieren, werden Sie ggf. von Ihrer Firewall dazu befragt. In diesem Fall müssen Sie die Verbindung autorisieren, damit VSTU und Unity kommunizieren können.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Debuggen eines Projekts in einem Unity-Player  
  Sie können Visual Studio-Tools für Unity mit Ihrer in einem eigenständigen Player ausgeführten App verbinden, wenn Sie nicht den Unity-Editor ausführen oder plattformspezifische Probleme beheben möchten.  
@@ -154,7 +154,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
 - Wählen Sie im Unity Web Player im Kontextmenü **Release Channel** (Releasekanal) aus, und stellen Sie sicher, dass die Option **Development** (Entwicklung) aktiviert ist.  
   
   > [!IMPORTANT]
-  >  Ab Unity 4.2 ist das Kontextmenüelement **Release Channel** nur im Web Player-Kontextmenü verfügbar, wenn beim Öffnen des Kontextmenüs die **ALT**-Taste gedrückt wird. Wenn der Web Player unter Mac OS X ausgeführt wird, drücken Sie stattdessen die **Optionstaste**.  
+  > Ab Unity 4.2 ist das Kontextmenüelement **Release Channel** nur im Web Player-Kontextmenü verfügbar, wenn beim Öffnen des Kontextmenüs die **ALT**-Taste gedrückt wird. Wenn der Web Player unter Mac OS X ausgeführt wird, drücken Sie stattdessen die **Optionstaste**.  
   
   Stellen Sie sicher, dass Sie mit der Unity-Instanz verbunden sind, die Sie debuggen möchten. Informationen hierzu finden Sie im Abschnitt [Verbinden von Visual Studio mit Unity](#connecting-visual-studio-to-unity).  
   
@@ -162,7 +162,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Integrations- und Produktivitätsf
  Viele Unity-Entwickler schreiben Codekomponenten als externe DLLs, damit die Funktionalität, die sie entwickeln, einfach mit anderen Projekten gemeinsam genutzt werden kann. Durch Visual Studio-Tools für Unity wird das reibungslose Debuggen von Code in diese DLLs mit anderem Code in Ihrem Unity-Projekt erleichtert.  
   
 > [!NOTE]
->  Derzeit unterstützt Visual Studio-Tools für Unity nur verwaltete DLLs. Das Debuggen von DLLs mit systemeigenem Code, z. B. mit C++-Code, wird nicht unterstützt.  
+> Derzeit unterstützt Visual Studio-Tools für Unity nur verwaltete DLLs. Das Debuggen von DLLs mit systemeigenem Code, z. B. mit C++-Code, wird nicht unterstützt.  
   
  Beachten Sie, dass bei dem hier beschriebenen Szenario davon ausgegangen wird, dass Sie den Quellcode haben, d. h. dass Sie eigenen Code aus erster Hand entwickeln oder wiederverwenden oder über Quellcode für eine Drittanbieterbibliothek verfügen und dessen Bereitstellung in Ihrem Unity-Projekt als DLL planen. Dieses Szenario beschreibt nicht das Debuggen einer DLL, für die Sie nicht über den Quellcode verfügen.  
   

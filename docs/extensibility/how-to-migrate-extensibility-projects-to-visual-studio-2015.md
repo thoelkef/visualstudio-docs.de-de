@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415278"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2015
 Hier ist die Erweiterung zu aktualisieren.
 
 > [!IMPORTANT]
->  Wenn Sie beabsichtigen, eine Version der Erweiterungsprojektmappe für eine frühere Version von Visual Studio verwalten, achten Sie darauf, dass Sie eine Kopie zu erstellen, bevor Sie ein Upgrade durchführen. Es kann schwierig sein, die aktualisierte Version den ursprünglichen Zustand zurückzukehren sein.
+> Wenn Sie beabsichtigen, eine Version der Erweiterungsprojektmappe für eine frühere Version von Visual Studio verwalten, achten Sie darauf, dass Sie eine Kopie zu erstellen, bevor Sie ein Upgrade durchführen. Es kann schwierig sein, die aktualisierte Version den ursprünglichen Zustand zurückzukehren sein.
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>So aktualisieren eine Lösung für die Erweiterbarkeit
 
@@ -52,4 +52,4 @@ Hier ist die Erweiterung zu aktualisieren.
 5. Sie können auch wechseln, die NuGet-Version von Visual Studio SDK-Buildtools zu verwenden. Dieses NuGet-Paket ist [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) und nach dem Hinzufügen zu Ihrem Projekt wird die erforderlichen Tools und Dateien mit der Sie Ihr Erweiterungsprojekt auf einem Computer ohne das VS-SDK installiert erstellen können.
 
 > [!NOTE]
->  Es ist nicht erforderlich, dass Sie der vorhandenen Erweiterbarkeit-Projekte zur Verwendung von NuGet-Referenz-Assemblys und Tools aktualisieren.  Sie können weiterhin zum Erstellen mithilfe von Verweisassemblys und Tools, die mit dem Visual Studio SDK installiert.
+> Es ist nicht erforderlich, dass Sie der vorhandenen Erweiterbarkeit-Projekte zur Verwendung von NuGet-Referenz-Assemblys und Tools aktualisieren.  Sie können weiterhin zum Erstellen mithilfe von Verweisassemblys und Tools, die mit dem Visual Studio SDK installiert.

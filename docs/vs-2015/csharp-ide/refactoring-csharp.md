@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444527"
 ---
 # <a name="refactoring-c"></a>Refactoring (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
  Wenn der Compiler verfügt nicht über ein vollständiges Verständnis einer des Programms, und es ist möglich, dass die umgestaltungs-Engine alle entsprechenden Verweise nicht aktualisiert werden kann, wird das Dialogfeld "Warnung" angezeigt. Das Dialogfeld "Warnung" bietet außerdem die Gelegenheit für Sie Ihren Code in Vorschau anzeigen, die **Vorschau der Änderungen** (Dialogfeld), bevor Sie Änderungen zu übernehmen.  
   
 > [!NOTE]
->  Wenn eine Methode einen Syntaxfehler enthält (die die IDE mit einer roten wellenförmigen Unterstreichung angibt), aktualisiert die umgestaltungs-Engine keine Verweise auf ein Element innerhalb der betreffenden Methode. Das folgende Beispiel veranschaulicht dieses Verhalten.  
+> Wenn eine Methode einen Syntaxfehler enthält (die die IDE mit einer roten wellenförmigen Unterstreichung angibt), aktualisiert die umgestaltungs-Engine keine Verweise auf ein Element innerhalb der betreffenden Methode. Das folgende Beispiel veranschaulicht dieses Verhalten.  
   
  In der Standardeinstellung bei Ausführung ein Umgestaltungsvorgangs ohne Vorschau Verweis ändert ein Kompilierungsfehler in Ihrem Programm erkannt, und die Entwicklungsumgebung zeigt das Dialogfeld "Warnung".  
   

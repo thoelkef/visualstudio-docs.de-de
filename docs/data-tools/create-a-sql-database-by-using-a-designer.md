@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569970"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Eine Datenbank erstellen und Hinzufügen von Tabellen in Visual Studio
 
 Sie können Visual Studio zum Erstellen und Aktualisieren einer lokalen Datenbankdatei in SQL Server Express LocalDB verwenden. Sie können auch eine Datenbank erstellen, durch Ausführen von Transact-SQL-Anweisungen in der **Objekt-Explorer von SQL Server** Toolfenster in Visual Studio. In diesem Thema erstellen wir eine *mdf* -Datei und fügen Sie Tabellen und Schlüsseln mit der Tabellen-Designer.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die optionale **datenspeicherung und-Verarbeitung** arbeitsauslastung in Visual Studio installiert. Öffnen Sie sie zur Installation **Visual Studio-Installer** , und wählen Sie **weitere** > **ändern** neben der Version von Visual Studio, die Sie ändern möchten (Wenn Sie haben mehr als eine Version installiert). Auf der **Workloads** Registerkarte **Web und Cloud**, wählen Sie **datenspeicherung und-Verarbeitung**, und klicken Sie dann auf **ändern** die Workload hinzufügen Visual Studio.
 

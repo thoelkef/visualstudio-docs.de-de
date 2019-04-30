@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434470"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Stile und Vorlagen für Elemente im XAML-Designer werden in wieder verwendbaren 
    - Anwenden eines Stils oder einer Steuerelementvorlagenressource auf ein Steuerelement Öffnen Sie das Kontextmenü für ein Steuerelement im Fenster „Dokumentgliederung“, wählen Sie **Vorlage bearbeiten** oder **Zusätzliche Vorlagen bearbeiten** und dann **Ressource anwenden** aus. Wählen Sie anschließend den Namen der Steuerelementvorlage aus der angezeigten Liste aus.  
   
      > [!NOTE]
-     >  **Vorlage bearbeiten** wird verwendet, um Steuerelementvorlagen anzuwenden. **Zusätzliche Vorlage bearbeiten** wird verwendet, um andere Vorlagentypen anzuwenden.  
+     > **Vorlage bearbeiten** wird verwendet, um Steuerelementvorlagen anzuwenden. **Zusätzliche Vorlage bearbeiten** wird verwendet, um andere Vorlagentypen anzuwenden.  
   
      Ressourcen können immer dann angewendet werden, wenn sie kompatibel sind. So kann eine Pinselressource beispielsweise auf die **Foreground**-Eigenschaft eines <xref:Windows.UI.Xaml.Controls.TextBox>-Steuerelements angewendet werden.  
   

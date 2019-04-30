@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431094"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
  Verwenden Sie das Feld cvSpanId, eine ganze Zahl, um Ereignisse passend zusammenzustellen. Der Wert der einzelnen Paare aus Start-/Stoppereignissen, die einen Bereich darstellen, müssen eindeutig sein. Für nebenläufigen Code müssen in der Regel Synchronisierungsprimitive wie <xref:System.Threading.Interlocked.Exchange%2A> verwendet werden, um sicherzustellen, dass der Schlüssel (der für CvSpanID verwendete Wert) richtig angegeben wird.  
   
 > [!NOTE]
->  Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.  
+> Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md)

@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847694"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio-Projekte verfügen über separate Release- und Debugkonfiguration
 
 In der Debugkonfiguration kompiliert Ihr Programm mit vollständigen symbolischen Debuginformationen und ohne Optimierung. Die Optimierung gestaltet das Debuggen etwas schwieriger, da die Beziehung zwischen Quellcode und generierten Anweisungen komplexer ist.
 
-Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Für verwalteten Code und C++-Code, Debuginformationen in PDB-Dateien generiert werden kann [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
+Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Für verwalteten Code und C++ Code Debuginformationen in PDB-Dateien generiert werden kann [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
 
 Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
 
@@ -71,9 +71,9 @@ Sie können auch Symboldateien (.pdb) und was generiert Debuginformationen einsc
 
 Jeder Projekttyp möglicherweise eine andere Art der Festlegen dieser Optionen.
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generieren von Symboldateien für eine C#, ASP.NET und Visual Basic-Projekt
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generieren von Symboldateien für ein C#-, ASP.NET und Visual Basic-Projekt
 
-Ausführliche Informationen zu projekteinstellungen für die Debugkonfigurationen in C# oder Visual Basic finden Sie unter [Projekteinstellungen für eine C# Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md) oder [Projekteinstellungen für eine Visual Basic-Debuggen Konfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Ausführliche Informationen zu projekteinstellungen für die Debugkonfigurationen in c# oder Visual Basic, finden Sie unter [projekteinstellungen für C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md) oder [projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
@@ -87,9 +87,9 @@ Ausführliche Informationen zu projekteinstellungen für die Debugkonfiguratione
 
 6. In der **Debuginformationen** Liste (oder die **Debuginfo generieren** Liste in Visual Basic), wählen Sie **vollständige**, **Pdb-only**, oder **Portable**.
 
-   Die portable ist das neueste Cross-Platform-Format für .NET Core. Weitere Informationen zu Optionen finden Sie unter [Dialogfeld Erweiterte Buildeinstellungen (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+   Die portable ist das neueste Cross-Platform-Format für .NET Core. Weitere Informationen zu Optionen finden Sie unter [Dialogfeld "Erweiterte Buildeinstellungen" (c#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-   ![Generieren von PDB-Dateien für Builds in C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![Generieren von PDB-Dateien für Builds in c#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. Erstellen Sie das Projekt.
 

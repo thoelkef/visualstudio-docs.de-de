@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580699"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,9 +87,9 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  **Anzeige** Gibt die verschiedenen Anzeigegrößen und Auflösungen für die App an.
 
- **Ausrichtung** Gibt die verschiedenen Ausrichtungen für die App an: **Querformat** oder **Hochformat**.
+ **Ausrichtung** gibt die verschiedenen Ausrichtungen für die app: **Querformat** oder **Hochformat**.
 
- **Rand** Gibt die verschiedenen Randausrichtungen für die App an: **Beide**, **Links**, **Rechts** oder **Keine**.
+ **Edge** gibt die verschiedenen randausrichtungen für Ihre app an: **Beide**, **Links**, **Rechts**oder **Keine**.
 
  **Hoher Kontrast** Zeigt eine Vorschau der App anhand der gewählten Kontrasteinstellung an. Diese Einstellung überschreibt, sofern der Wert nicht auf **Standard**festgelegt ist, die in App.xaml. festgelegte `RequestedTheme` -Eigenschaft.
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555129"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Gibt den Bereich, Sichtbarkeit (Zugriffsebene) von Memberfunktionen und Variablen.
@@ -39,7 +39,7 @@ CV_protected Member hat Zugriff geschützt werden.
 
 CV_public Element verfügt über öffentlichen Zugriff.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die `friend` Zugriffsspezifizierer ist hier nicht enthalten, da sie in der Regel von nicht-Memberfunktionen verwendet wird, die Zugriff auf private oder geschützte Elemente der Klasse haben. Verwenden der [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) Methode zum Suchen von Symbolen mit `SymTagFriend` Zugriff.
 
 ## <a name="requirements"></a>Anforderungen

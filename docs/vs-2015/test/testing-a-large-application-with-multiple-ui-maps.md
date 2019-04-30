@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18180ee3277cdff60d11c0ae35e8aa3c990764de
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386045"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test 
     Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.  
   
    > [!NOTE]
-   >  Sie müssen sich in einem Test-Projekt der programmierten UI befinden, um eine neue Testzuordnung der programmierten UI hinzufügen zu können.  
+   > Sie müssen sich in einem Test-Projekt der programmierten UI befinden, um eine neue Testzuordnung der programmierten UI hinzufügen zu können.  
   
 3. Wählen Sie **Testzuordnung der programmierten UI** aus der Liste.  
   

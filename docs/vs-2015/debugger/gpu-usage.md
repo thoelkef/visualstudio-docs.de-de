@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437956"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 - Ein Grafikprozessor und Treiber, die die erforderliche zeitliche Timinginstrumentierung unterstützen.  
   
   > [!NOTE]
-  >  Weitere Informationen zu unterstützter Hardware und unterstützten Treibern finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) am Ende dieses Dokuments.  
+  > Weitere Informationen zu unterstützter Hardware und unterstützten Treibern finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) am Ende dieses Dokuments.  
   
   Weitere Informationen zu Anforderungen für die Grafikdiagnose finden Sie unter [Erste Schritte](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
     ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
+   > Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
   
 3. Wählen Sie die blaue Schaltfläche **Start** am unteren Rand des Leistungs- und Diagnosehubs, um Ihre App unter den ausgewählten Tools auszuführen.  
   
@@ -110,7 +110,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 |**Thread-ID**|Die Thread-ID, von der das Ereignis stammt.|  
   
 > [!IMPORTANT]
->  Windows 8.1 ist für Ereignisattribute erforderlich. Wenn GPU oder Treiber nicht die erforderlichen Instrumentationsfeatures unterstützen, werden darüber hinaus alle Ereignisse mit dem Zusatz „ohne Attribute“ aufgeführt. Stellen Sie sicher, dass Ihr GPU-Treiber aktualisiert ist, und versuchen Sie es erneut, wenn dieses Problem auftritt. Weitere Informationen finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) weiter unten.  
+> Windows 8.1 ist für Ereignisattribute erforderlich. Wenn GPU oder Treiber nicht die erforderlichen Instrumentationsfeatures unterstützen, werden darüber hinaus alle Ereignisse mit dem Zusatz „ohne Attribute“ aufgeführt. Stellen Sie sicher, dass Ihr GPU-Treiber aktualisiert ist, und versuchen Sie es erneut, wenn dieses Problem auftritt. Weitere Informationen finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) weiter unten.  
   
 ## <a name="gpu-usage-settings"></a>GPU-Nutzungseinstellungen  
  Sie können das GPU-Nutzungstool so konfigurieren, dass die Erfassung von Profilerstellungsinformationen zurückgestellt wird, und nicht bereits beim Appstart beginnt. Da die Größe der Profilerstellungsinformationen beträchtlich sein kann, ist dies hilfreich, dass es erst zu einem späteren Zeitpunkt zur Verlangsamung der Leistung Ihrer App kommt.  
@@ -126,7 +126,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
      ![Konfigurieren, wenn die GPU-Nutzungserfassung startet](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.  
+> Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.  
   
  Wenn Sie die Erfassung von Profilerstellungsinformationen mit dieser Einstellung zurückstellen, steht im unteren Bereich des GPU-Nutzungstoolfensters ein zusätzlicher Link zur Verfügung, wenn Sie die App im GPU-Nutzungstool ausführen. Wählen Sie zum Starten der Erfassung von Profilinformationen den Link **Starten** in der Meldung **Erfassung detaillierter GPU-Nutzungsdaten starten**.  
   

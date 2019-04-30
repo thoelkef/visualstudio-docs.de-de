@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557215"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
@@ -45,7 +45,7 @@ Es gibt drei unterstützte Kategorien für .NET-Codierungskonventionen:
 
    Regeln für das Layout und die Struktur Ihres Codes, um diesen lesbarer zu machen. Beispielsweise können Sie Regeln hinsichtlich der geschweiften Klammern (Allman) angeben, oder es werden Leerzeichen in Steuerblöcken bevorzugt.
 
-- [Namenskonventionen ](../ide/editorconfig-naming-conventions.md)
+- [Namenskonventionen](../ide/editorconfig-naming-conventions.md)
 
    Regeln für die Benennung von Codeelementen. Sie können beispielsweise angeben, dass die `async`-Methoden mit „Async“ enden müssen.
 
@@ -70,7 +70,7 @@ Schweregrad | Effekt
 Die folgende Liste enthält die zulässigen Einstellungen für Sprachcodeformate:
 
 - Einstellungen für das .NET-Codeformat
-    - [„This.“ „This.“ und „Me.“](#this_and_me)
+    - [Qualifizierer „This.“ und „Me.“](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -113,7 +113,7 @@ Die folgende Liste enthält die zulässigen Einstellungen für Sprachcodeformate
         - csharp\_style\_expression\_bodied_properties
         - csharp\_style\_expression\_bodied_indexers
         - csharp\_style\_expression\_bodied_accessors
-    - [Musterabgleich](#pattern_matching)
+    - [Mustervergleich](#pattern_matching)
         - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
         - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
     - [Inline-Variablendeklarationen](#inlined_variable_declarations)
@@ -329,13 +329,14 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Diese Regel akzeptiert nicht den Wert **TRUE** oder **FALSE**, sondern einen Wert aus der folgenden Tabelle:
+Diese Regel akzeptiert einen Wert aus der folgenden Tabelle:
 
 | Wert | Beschreibung |
 | ----- |:----------- |
 | always | Es wird bevorzugt, dass Zugriffsmodifizierer angegeben werden |
-| for\_non\_interface_members | Es wird bevorzugt, dass Zugriffsmodifizierer deklariert werden (außer für Members von öffentlichen Schnittstellen). Dies entspricht **always** und fungiert als zukünftige Korrekturhilfe, falls Standard-Schnittstellenmethoden in C# hinzugefügt werden. |
+| for\_non\_interface_members | Es wird bevorzugt, dass Zugriffsmodifizierer deklariert werden (außer für Members von öffentlichen Schnittstellen). (Dies entspricht **always** und fungiert als zukünftige Korrekturhilfe, falls Standard-Schnittstellenmethoden in C# hinzugefügt werden.) |
 | never | Es wird bevorzugt, dass Zugriffsmodifizierer nicht angegeben werden |
+| omit_if_default | Bevorzugen Sie die Angabe von Zugriffsmodifizierern, außer wenn es sich um den Standardmodifizierer handelt. |
 
 Codebeispiele:
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -1391,7 +1390,7 @@ Sie geben entweder **TRUE** (dieses Format bevorzugen) oder **FALSE** (dieses Fo
 In der folgenden Liste werden die Regeln für Formatierungskonventionen angezeigt, die in Visual Studio verfügbar sind:
 
 - .NET-Formatierungseinstellungen
-    - [Using-Direktiven organisieren](#usings)
+    - [Organisieren von Using-Direktiven](#usings)
         - dotnet_sort_system_directives_first
         - dotnet_separate_import_directive_groups
 - C#-Formatierungseinstellungen

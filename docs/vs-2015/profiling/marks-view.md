@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562851"
 ---
 # <a name="marks-view"></a>Markierungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ In der Ansicht "Markierungen" werden Sampling- und ETW-Ereignisse angezeigt, die
   
  Die bereits im Bericht enthaltenen Standardmarkierungen kennzeichnen den Start und das Ende des Programms.  
   
- In dieser Ansicht werden auch Windows-Indikatordaten von automatisch generierten Markierungen dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md).  
+ In dieser Ansicht werden auch Windows-Indikatordaten von automatisch generierten Markierungen dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md).  
   
  Um zwischen zwei Markierungen einen Filter zu erstellen, wählen Sie die Markierungen aus, klicken mit der rechten Maustaste und klicken dann auf **Filter für Markierungen hinzufügen** oder auf **Filter für Zeitstempel hinzufügen**.  
   

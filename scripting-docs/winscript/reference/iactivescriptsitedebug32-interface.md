@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: e7937311e01274570e34bd639a0dc5f68206a3aa
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992444"
 ---
 # <a name="iactivescriptsitedebug32-interface"></a>IActiveScriptSiteDebug32-Schnittstelle
 Implementieren von Smart Hosts die `IActiveScriptSiteDebug32` Benutzeroberfläche, die dokumentverwaltung ausführen und Debuggen teilnehmen. Die `IActiveScriptSite` Objekt in der Regel stellt eine Implementierung der `IActiveScriptSiteDebug32` Schnittstelle. Wenn dies geschehen ist, rufen Sie die `IActiveScriptSite::QueryInterface` Methode zum Abrufen der `IActiveScriptSiteDebug32` Schnittstelle.  

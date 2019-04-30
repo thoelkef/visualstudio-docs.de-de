@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444836"
 ---
 # <a name="adding-a-tool-window"></a>Hinzufügen eines Toolfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie zum Erstellen eines To
 1. Erstellen Sie ein Projekt mit dem Namen **FirstToolWin** mithilfe der VSIX-Projektvorlage aus, und fügen Sie der Elementvorlage ein benutzerdefiniertes Tool-Fenster, der mit dem Namen **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Hinzufügen eines Steuerelements zu des Toolfensters  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      Der erste benannte Parameter `Style` und sein Wert ist `Tabbed`, was bedeutet, dass das Fenster eine Registerkarte in einem vorhandenen Fenster ist. Die dockingposition wird angegeben, indem die `Window` n diesem Fall die GUID des Parameters, kann die **Projektmappen-Explorer**.  
   
     > [!NOTE]
-    >  Weitere Informationen zu den Arten von Fenstern in der IDE finden Sie unter <xref:EnvDTE.vsWindowType>.  
+    > Weitere Informationen zu den Arten von Fenstern in der IDE finden Sie unter <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Testen das Toolfenster  
   

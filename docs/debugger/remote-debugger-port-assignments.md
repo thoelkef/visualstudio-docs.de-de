@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903043"
 ---
 # <a name="remote-debugger-port-assignments"></a>Remotedebugger - Portzuweisungen
 Der Visual Studio-Remotedebugger kann als Anwendung oder als Hintergrunddienst ausgeführt werden. Bei der Ausführung als Anwendung wird standardmäßig der folgende Port zugewiesen:
@@ -54,12 +54,12 @@ Der Visual Studio-Remotedebugger kann als Anwendung oder als Hintergrunddienst a
  Wenn die 64-Bit-Version des Remotedebuggers gestartet wird, verwendet er die Main Standardport (4022) standardmäßig.  Wenn Sie einen 32-Bit-Prozess debuggen, startet die 64-Bit-Version des Remotedebuggers eine 32-Bit-Version des Remotedebuggers über Port 4023 (wichtigsten Port Anzahl um 1 erhöht). Wenn Sie den 32-Bit-Remotedebugger ausführen, wird Port 4022 und nicht Port 4023 verwendet.
 :::moniker-end
 
- Dieser Port ist über die Befehlszeile konfigurierbar: **Msvsmon /wow64port \<Portnummer>**.
+ Dieser Port kann über die Befehlszeile konfiguriert werden: **"Msvsmon" /wow64port \<Portnummer >**.
 
 ## <a name="the-discovery-port"></a>Port für die Ermittlung
  UDP 3702 wird für die Suche nach ausgeführten Instanzen des Remotedebuggers im Netzwerk verwendet (z. B. bei **Suchen** im Dialogfeld **An den Prozess anhängen** ). Er wird nur für die Ermittlung von Computern verwendet, auf denen der Remotedebugger ausgeführt wird, und ist daher optional, wenn Sie den Computernamen oder die IP-Adresse des Zielcomputers auf andere Weise ermitteln können. Da dies der Standardport für die Ermittlung ist, kann die Portnummer nicht konfiguriert werden.
 
- Wenn Sie die Ermittlung nicht aktivieren möchten, können Sie msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten:  **msvsmon /nodiscovery**.
+ Wenn Sie nicht, um die Ermittlung zu aktivieren möchten, können Sie Msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten:  **Msvsmon/nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Remotedebugger-Ports in Azure
  Die folgenden Ports werden vom Remotedebugger in Azure verwendet. Die Ports im Clouddienst werden den Ports auf den einzelnen virtuellen Computern zugeordnet. Bei allen Ports handelt es sich um TCP-Ports.

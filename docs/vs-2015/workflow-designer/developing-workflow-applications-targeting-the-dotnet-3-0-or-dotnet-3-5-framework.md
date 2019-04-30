@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cd7252605fd8c642c0bb331667543b1c67f9d95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938496"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] stellt die [!INCLUDE[wfd1](../includes/wfd1-md.md)]-Anwendungen zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen bereit, die auf [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] abzielen. Der Designer verwendet die vertraute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche für die grafische Erstellung und das Debuggen von Workflowanwendungen.  

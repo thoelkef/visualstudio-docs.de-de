@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437434"
 ---
 # <a name="attaching-after-a-launch"></a>Anfügen nach einem Start
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Nachdem ein Programm gestartet wurde, kann die Debugsitzung die Debug-Engine (DE
 - Wenn es zum Vereinfachen der Kommunikation zwischen dem Code und das Programm sinnvoller, erstellt gemeinsam die Runtime-Umgebung die DE. Dies bewirkt, dass das SDM in einem Adressraum, und die DE-Laufzeitumgebung und Programm zusammen in einer anderen. Dies ist typisch für einer bereitgestellten Kompatibilitätsrichtlinie, die mit einem Interpreter zum Ausführen von Skripts Sprachen implementiert wird.  
   
     > [!NOTE]
-    >  Wie die DE für das Programm angefügt wird, ist implementierungsabhängig. Kommunikation zwischen dem Code und das Programm ist auch abhängig von der Implementierung.  
+    > Wie die DE für das Programm angefügt wird, ist implementierungsabhängig. Kommunikation zwischen dem Code und das Programm ist auch abhängig von der Implementierung.  
   
 ## <a name="implementation"></a>Implementierung  
  Programmgesteuert, wenn der Sitzungs-Manager (SDM) zuerst empfängt die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das das Programm gestartet wird, ruft der [Anfügen](../../extensibility/debugger/reference/idebugprogram2-attach.md) Methode auf und übergibt es ein [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das später verwendet, um Debugereignisse zurück, das SDM zu übergeben. Die `IDebugProgram2::Attach` -Methode ruft dann die [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Methode. Weitere Informationen zu den SDM wie empfängt die `IDebugProgram2` Benutzeroberfläche, siehe [Benachrichtigen des Ports](../../extensibility/debugger/notifying-the-port.md).  

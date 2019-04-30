@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428736"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Benachrichtigungssysteme
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - Innerhalb einer Registerkarte "Dokument"
 
 > [!IMPORTANT]
->  Es ist möglich, die position einer Infoleiste, um eine Nachricht zum globalen Kontext zu gewähren. Dies wird zwischen Symbolleisten und Dokumentursprung angezeigt. Dies wird nicht empfohlen, da es Probleme mit "wechseln und ruck" bewirkt, dass der IDE und sollte vermieden werden, es sei denn, absolut notwendig und zweckmäßig.
+> Es ist möglich, die position einer Infoleiste, um eine Nachricht zum globalen Kontext zu gewähren. Dies wird zwischen Symbolleisten und Dokumentursprung angezeigt. Dies wird nicht empfohlen, da es Probleme mit "wechseln und ruck" bewirkt, dass der IDE und sollte vermieden werden, es sei denn, absolut notwendig und zweckmäßig.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Platzieren eine Infoleiste in einem ToolWindowPane
  Die ToolWindowPane.AddInfoBar(IVsInfoBar)-Methode kann verwendet werden, eine Infoleiste eines Toolfensters hinzu. Diese API kann entweder ein IVsInfoBar (welche InfoBarModel ist eine standardmäßige Implementierung), hinzufügen oder eine IVsUIElement.

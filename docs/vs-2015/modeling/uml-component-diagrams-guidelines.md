@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424447"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-Komponentendiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
  Weitere Informationen zur Verwendung von Komponentendiagrammen während des Entwurfsprozesses finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+> Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>So erstellen Sie ein Komponentendiagramm  
   
@@ -157,7 +157,7 @@ Sie können in Visual Studio zeichnen eine *Komponentendiagramm* um die Struktur
          Eine angebotene Schnittstelle wird auf der Komponente angezeigt. Daneben wird ein Aktionstag angezeigt.  
   
         > [!NOTE]
-        >  Bei Verwendung von **einfügen** anstelle von **Verweis einfügen**, eine neue Schnittstelle mit einem neuen Namen erstellt werden.  
+        > Bei Verwendung von **einfügen** anstelle von **Verweis einfügen**, eine neue Schnittstelle mit einem neuen Namen erstellt werden.  
   
     3. Wenn Sie eine erforderliche Schnittstelle erstellen möchten, klicken Sie auf das Aktionstag, und klicken Sie dann auf **in erforderliche Schnittstelle konvertieren**.  
   

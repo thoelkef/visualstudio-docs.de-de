@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423826"
 ---
 # <a name="project-configuration-for-building"></a>Projektkonfiguration beim Erstellen
 Die Liste der Konfigurationen für eine bestimmte Lösung wird im Dialogfeld Projektmappenkonfigurationen verwaltet.
@@ -26,7 +26,7 @@ Die Liste der Konfigurationen für eine bestimmte Lösung wird im Dialogfeld Pro
  Wenn der Benutzer eine neue Projektmappenkonfiguration, die mit dem Namen MyConfig2 erstellt, bindet Projekt1 die Debug-Konfiguration an die Projektmappenkonfiguration standardmäßig an. "Projekt2" wird außerdem die MyConfig2-Konfiguration auf die Projektmappenkonfiguration standardmäßig gebunden.
 
 > [!NOTE]
->  Die Bindung ist Groß-/Kleinschreibung.
+> Die Bindung ist Groß-/Kleinschreibung.
 
  Wenn der Benutzer wählt die **Mehrfachauswahl** Element in der Dropdown-Konfigurationsliste die Umgebung zeigt das Dialogfeld, das die Liste mit verfügbaren Konfigurationen bereitstellt.
 
@@ -43,7 +43,7 @@ Die Liste der Konfigurationen für eine bestimmte Lösung wird im Dialogfeld Pro
  Projektabhängigkeiten bestimmt die Reihenfolge, in der Projekte erstellen. Verwenden Sie die Registerkarte "Ziele" im Dialogfeld, um die genaue Reihenfolge anzeigen, in der Projekte in einer Projektmappe erstellen, und verwenden die Registerkarte "Abhängigkeiten", um die Buildreihenfolge zu ändern.
 
 > [!NOTE]
->  Projekte in der Liste, auf denen die Kontrollkästchen ausgewählt, aber werden abgeblendet angezeigt wurde von der Umgebung aufgrund der expliziten Abhängigkeiten, die gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> Schnittstellen und kann nicht geändert werden. Z. B. Hinzufügen eines Projektverweises aus einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt in ein anderes Projekt fügt automatisch eine Buildabhängigkeit, die nur entfernt werden kann, indem Sie nacheinander den Verweis auf. Projekte, deren Kontrollkästchen deaktiviert sind und abgeblendet angezeigt werden, können nicht ausgewählt werden, da auf diese Weise eine Abhängigkeitsschleife erstellt würde (z. B. Projekt1 wäre hängt von "Projekt2" und "Projekt2" wäre Projekt1 abhängig), würde die Builds installieren.
+> Projekte in der Liste, auf denen die Kontrollkästchen ausgewählt, aber werden abgeblendet angezeigt wurde von der Umgebung aufgrund der expliziten Abhängigkeiten, die gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> Schnittstellen und kann nicht geändert werden. Z. B. Hinzufügen eines Projektverweises aus einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt in ein anderes Projekt fügt automatisch eine Buildabhängigkeit, die nur entfernt werden kann, indem Sie nacheinander den Verweis auf. Projekte, deren Kontrollkästchen deaktiviert sind und abgeblendet angezeigt werden, können nicht ausgewählt werden, da auf diese Weise eine Abhängigkeitsschleife erstellt würde (z. B. Projekt1 wäre hängt von "Projekt2" und "Projekt2" wäre Projekt1 abhängig), würde die Builds installieren.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Buildprozesse umfassen die typische kompilieren und Verknüpfen von Operationen, die mit einem einzelnen Buildbefehl aufgerufen werden. Zwei andere Buildprozesse können auch unterstützt werden: eine saubere Operation So löschen Sie alle Ausgabeelemente aus einem vorherigen Build und eine Überprüfung auf dem neuesten Stand, um festzustellen, ob ein Output-Element in einer Konfiguration geändert hat.
 

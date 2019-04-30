@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444057"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752912"
 Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.exe) verwenden, um die Ablaufverfolgung aus der Befehlszeile zu sammeln und diese in Concurrency Visualizer für Visual Studio anzuzeigen. Die Tools können auf Computern verwendet werden, auf denen Visual Studio nicht installiert ist.  
   
 > [!NOTE]
->  Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Zuvor war das Programm Bestandteil von Visual Studio.) Sie können die [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) aus dem Download Center herunterladen.  
+> Seit Visual Studio 2013 ist Concurrency Visualizer eine optionale Erweiterung. (Zuvor war das Programm Bestandteil von Visual Studio.) Sie können die [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) aus dem Download Center herunterladen.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Befehlszeilenprogramm Concurrency Visualizer herunterladen  
  Zum Herunterladen und Installieren des Befehlszeilenprogramms rufen Sie [Concurrency Visualizer Collection Tools für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) auf, und folgen Sie den Anweisungen. Standardmäßig wird CVCollectionCmd.exe in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ auf x64 computers) installiert.  
@@ -57,7 +57,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
  Wenn Sie CVCollectionCmd für die Auflistung der Ablaufverfolgung verwenden und die Einstellungen anpassen möchten, dann verwenden Sie eine Konfigurationsdatei, um diese festzulegen.  
   
 > [!NOTE]
->  Wenn Sie Visual Studio für die Auflistung der Ablaufverfolgung verwenden, dann verändern Sie die Konfigurationsdatei nicht direkt.  Nutzen Sie stattdessen das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dafür.  
+> Wenn Sie Visual Studio für die Auflistung der Ablaufverfolgung verwenden, dann verändern Sie die Konfigurationsdatei nicht direkt.  Nutzen Sie stattdessen das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dafür.  
   
  Erstellen Sie für Änderungen an den Auflistungseinstellung eine Konfigurationsdatei auf dem Rechner, auf dem das Dienstprogramm CVCollectionCmd ausgeführt wird. Sie können die Konfigurationsdatei neu erstellen oder auf den Computer kopieren, auf dem Visual Studio installiert ist und sie anschließend anpassen. Die Datei heißt `UserConfig.xml` und befindet sich im Ordner **Local AppData** . Wenn Sie das Dienstprogramm ausführen, verwenden Sie die Option "Config" zusammen mit dem Befehl "Starten", "Anfügen" oder "Analysieren".  Geben Sie in dem der Option "Config" zugeordneten Parameter den Pfad zur Konfigurationsdatei an.  
   
@@ -76,7 +76,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 |MarkerProvider|Gibt einen einzelnen Markeranbieter an.|Muss folgende Elemente enthalten:<br /><br /> - Ebene<br />- GUID<br />- Name<br /><br /> Kann folgende Elemente enthalten:<br /><br /> - Kategorien<br />- IsEnabled|  
 |Ebene|Legt den Wert für die Bedeutung eines MarkerProviders fest.|- Niedrig<br />- Normal<br />- Hoch<br />- Kritisch<br />- Alles|  
 |GUID|Der Globally Unique Identifier des ETW-Markeranbieters.|Ein GUID.|  
-|name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
+|Name|Gibt die Beschreibung des Markeranbieters an.|Eine Zeichenfolge.|  
 |Kategorien|Gibt die für den Markeranbieter erfassten Kategorien an.|Eine durch Kommas getrennte Zeichenfolge oder eine Reihe von Zahlen.|  
 |IsEnabled|Gibt einen Wert an der festlegt, ob der Markeranbieter für die Auflistung aktiviert ist.|- TRUE<br />- FALSE|  
 |FilterConfig|Gibt die Liste der Konfigurationsoptionen der ETW-Ereignisse an, die aus der Auflistung gefiltert werden.|Kann folgende Elemente enthalten:<br /><br /> - CollectClrEvents<br />- ClrCollectionOptions<br />- CollectSampleEvents<br />- CollectGpuEvents<br />- CollectFileIO|  

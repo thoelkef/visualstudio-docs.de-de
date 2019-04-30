@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838479"
 ---
 # <a name="debugging-xslt"></a>Debugging von XSLT
 
@@ -86,7 +86,7 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="xslt-profiler"></a>XSLT-profiler
+## <a name="xslt-profiler"></a>XSLT-Profiler
 
 Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) ist ein Tool, mit dem Entwickler, die messen, auswerten und leistungsbezogener Probleme im XSLT-Code durch das Erstellen von ausführlichen XSLT-Leistungsberichten. Weitere Informationen finden Sie unter [XSLT-Profiler](../xml-tools/xslt-profiler.md).
 

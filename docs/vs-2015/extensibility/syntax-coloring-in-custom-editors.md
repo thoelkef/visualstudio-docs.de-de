@@ -10,12 +10,12 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e82c8b6268affc4fb473c799d973c66db69c111b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a0233873ba5d6ea2fca746f8e12f4bf693b79da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444068"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual Studio-Umgebung SDK-Editoren, einschließlich der Kern-Editor, verwenden 
 3. Verwenden Sie die farbliche Kennzeichnung von Informationen vom <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> neu zu zeichnen und den Text anzuzeigen.  
   
 > [!NOTE]
->  Zusätzlich zur Verwendung einer editortooloptionsseite des Sprachdiensts Farbauswahl, können eine VSPackage die allgemeinen Text syntaxkennzeichnung Mechanismus für Visual Studio-Umgebung SDK verwenden. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).  
+> Zusätzlich zur Verwendung einer editortooloptionsseite des Sprachdiensts Farbauswahl, können eine VSPackage die allgemeinen Text syntaxkennzeichnung Mechanismus für Visual Studio-Umgebung SDK verwenden. Weitere Informationen zu diesen Mechanismus, finden Sie unter [Verwenden von Schriftarten und Farben](../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Syntaxfarben in einem Legacysprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

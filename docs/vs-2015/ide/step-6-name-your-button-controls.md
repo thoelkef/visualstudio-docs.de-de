@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442491"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059967"
 Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt haben, hat die IDE diesem Steuerelement automatisch den Namen **pictureBox1**gegeben. Es gibt nur ein Kontrollkästchen, das den Namen **checkBox1**trägt. Bald schreiben Sie einige Codezeilen, die auf das CheckBox- und das PictureBox-Steuerelement verweisen. Da jedes Steuerelement nur einmal vorhanden ist, wissen Sie, was sich hinter den Namen **pictureBox1** oder **checkBox1** im Code verbirgt.  
   
 > [!NOTE]
->  In Visual Basic beginnen die Namen von Steuerelementen automatisch mit einem großen Anfangsbuchstaben. Daher lauten die Namen dort **PictureBox1**, **CheckBox1**usw.  
+> In Visual Basic beginnen die Namen von Steuerelementen automatisch mit einem großen Anfangsbuchstaben. Daher lauten die Namen dort **PictureBox1**, **CheckBox1**usw.  
   
  Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen zugewiesen: **button1**, **button2**, **button3**und **button4**. Anhand der aktuellen Namen können Sie jedoch nicht erkennen, welches Steuerelement die Schaltfläche **Close** ist und welches Steuerelement die Schaltfläche **Show a picture** ist. Daher ist es hilfreich, den Schaltflächen-Steuerelementen aufschlussreichere Namen zu geben.  
   
@@ -36,7 +36,7 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
 Eigenschaftenfenster mit closeButton-Name  
   
     > [!NOTE]
-    >  Wenn Sie versuchen, den Namen der Schaltfläche **closeButton** so zu ändern, dass ein Leerzeichen zwischen den beiden Wörtern „close“ und „Button“ verwendet wird, zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig.“ Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
+    > Wenn Sie versuchen, den Namen der Schaltfläche **closeButton** so zu ändern, dass ein Leerzeichen zwischen den beiden Wörtern „close“ und „Button“ verwendet wird, zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig.“ Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
   
 2. Benennen Sie die anderen drei Schaltflächen in **backgroundButton**, **clearButton**und **showButton**um. Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die Steuerelementauswahl-Dropdownliste auswählen. Die neuen Schaltflächennamen werden angezeigt.  
   
@@ -53,14 +53,14 @@ Form1.cs-Registerkarte mit Visual C#-Code
      Sie betrachten Code mit dem Namen `showButton_Click()`. Die IDE hat ihn dem Code des Formulars hinzugefügt, als Sie die Codedatei für die Schaltfläche **showButton** geöffnet haben. Wenn Sie zur Entwurfszeit die Codedatei für ein Steuerelement in einem Formular öffnen, wird Code für das Steuerelement generiert, wenn er nicht bereits vorhanden ist. Dieser Code, als *Methode*bezeichnet, wird ausgeführt, wenn Sie das Programm ausführen und das Steuerelement auswählen, in diesem Fall die Schaltfläche **Bild anzeigen** .  
   
     > [!NOTE]
-    >  In diesem Lernprogramm wurde der automatisch generierte Visual Basic-Code vereinfacht, indem der zwischen Klammern, (), gesetzte Text entfernt wurde. In diesen Fällen können Sie den gleichen Code entfernen. Das Programm funktioniert so oder so. Für den Rest der Lernprogramme wird automatisch generierter Code vereinfacht, wann immer dies möglich ist.  
+    > In diesem Lernprogramm wurde der automatisch generierte Visual Basic-Code vereinfacht, indem der zwischen Klammern, (), gesetzte Text entfernt wurde. In diesen Fällen können Sie den gleichen Code entfernen. Das Programm funktioniert so oder so. Für den Rest der Lernprogramme wird automatisch generierter Code vereinfacht, wann immer dies möglich ist.  
   
 5. Wählen Sie die Registerkarte "Windows Forms-Designer" erneut aus (**Form1.cs [Entwurf]** in Visual C#, **Form1.vb [Entwurf]** in Visual Basic), und öffnen Sie dann die Codedatei für die Schaltfläche **Bild löschen** , um eine Methode für sie im Code des Formulars zu erstellen. Wiederholen Sie diesen Vorgang für die verbleibenden beiden Schaltflächen. Die IDE fügt der Codedatei des Formulars jedes Mal eine neue Methode hinzu.  
   
 6. Um eine weitere Methode hinzuzufügen, öffnen Sie die Codedatei für das CheckBox-Steuerelement im Windows Forms-Designer, damit die IDE eine `checkBox1_CheckedChanged()` -Methode hinzufügt. Diese Methode wird immer dann aufgerufen, wenn der Benutzer das Kontrollkästchen aktiviert oder deaktiviert.  
   
     > [!NOTE]
-    >  Wenn Sie an einem Programm arbeiten, wechseln Sie häufig zwischen dem Code-Editor und dem Windows Forms-Designer. Die IDE vereinfacht die Navigation im Projekt. Öffnen Sie den Windows Forms-Designer mit dem **Projektmappen-Explorer** , indem Sie in Visual C# auf **Form1.cs** oder in Visual Basic auf **Form1.vb** doppelklicken, oder wählen Sie in der Menüleiste **Ansicht**, **Designer**aus.  
+    > Wenn Sie an einem Programm arbeiten, wechseln Sie häufig zwischen dem Code-Editor und dem Windows Forms-Designer. Die IDE vereinfacht die Navigation im Projekt. Öffnen Sie den Windows Forms-Designer mit dem **Projektmappen-Explorer** , indem Sie in Visual C# auf **Form1.cs** oder in Visual Basic auf **Form1.vb** doppelklicken, oder wählen Sie in der Menüleiste **Ansicht**, **Designer**aus.  
   
      Im Folgenden sehen Sie den neuen Code, der im Code-Editor angezeigt wird.  
   

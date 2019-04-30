@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007718"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint-Projektelementschema
   Visual Studio verwendet die SharePoint-Projektelementschema So überprüfen den Inhalt der *SPDATA* Dateien. Ein *SPDATA* Datei gibt den Inhalt und Verhalten des SharePoint-Projektelements. Weitere Informationen zum Inhalt der SharePoint-Projektelemente, finden Sie unter [Erstellen von Vorlagen und Projektvorlagen für SharePoint-Projektelemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08fd68d99841d2877a2b32fe71968ea05e8db427
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583131"
 ---
 # <a name="functions-view"></a>Funktionsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ In der Funktionsansicht werden die Funktionen aufgelistet, die während der Prof
   
  Funktionen werden in der Regel nach Namen aufgeführt. Um Funktionen nach Modulen zu sortieren, klicken Sie mit der rechten Maustaste in das Fenster „Funktionsansicht“, und klicken Sie anschließend auf **In Modulansicht anzeigen**. So wird in die Modulansicht gewechselt.  
   
- Um Spalten hinzuzufügen oder zu entfernen, klicken Sie mit der rechten Maustaste in das Berichtsfenster, und klicken Sie dann auf **Spalten hinzufügen/entfernen**. Zusätzlich können Sie die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in der Berichtsansicht der Profilerstellungstools](../profiling/how-to-customize-report-view-columns.md).  
+ Um Spalten hinzuzufügen oder zu entfernen, klicken Sie mit der rechten Maustaste in das Berichtsfenster, und klicken Sie dann auf **Spalten hinzufügen/entfernen**. Zusätzlich können Sie die Daten durch Klicken auf einen Spaltennamen sortieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md).  
   
  Welche Spalten in der Funktionsansicht verfügbar sind, ist abhängig von der Profilerstellungsmethode (Sampling oder Instrumentierung), die zum Sammeln der Daten verwendet wurde, und davon, ob in der Profilerstellungsausführung .NET-Arbeitsspeicherdaten gesammelt wurden.  
   

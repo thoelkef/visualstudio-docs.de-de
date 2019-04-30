@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949517"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415810"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Verwenden der benutzerdefinierten Aktivität in einem Workflow
 
-1.  Erstellen Sie das Projekt durch Drücken von **STRG**+**UMSCHALT**+**B**.
+1. Erstellen Sie das Projekt durch Drücken von **STRG**+**UMSCHALT**+**B**.
 
-2.  In **Projektmappen-Explorer**öffnen **"Workflow1.xaml"** im Designer.
+2. In **Projektmappen-Explorer**öffnen **"Workflow1.xaml"** im Designer.
 
-3.  Ziehen Sie eine **MyForEach** Aktivität aus der Toolbox auf die Designeroberfläche. Die Aktivität ist in einem Abschnitt der Toolbox mit dem gleichen Namen wie das Projekt.
+3. Ziehen Sie eine **MyForEach** Aktivität aus der Toolbox auf die Designeroberfläche. Die Aktivität ist in einem Abschnitt der Toolbox mit dem gleichen Namen wie das Projekt.
 
-4.  Legen Sie die **Elemente** Eigenschaft der **MyForEach** Aktivität **new Object [] {1, "Abc"}**.
+4. Legen Sie die **Elemente** Eigenschaft der **MyForEach** Aktivität **new Object [] {1, "Abc"}**.
 
-5.  Ziehen Sie eine <xref:System.Activities.Statements.WriteLine> Aktivität aus der **primitive** Abschnitt der Toolbox auf die **Delegate: Body** Teil der **MyForEach** Aktivität.
+5. Ziehen Sie eine <xref:System.Activities.Statements.WriteLine> Aktivität aus der **primitive** Abschnitt der Toolbox auf die **Delegate: Body** Teil der **MyForEach** Aktivität.
 
-6.  Legen Sie die **Text** Eigenschaft der <xref:System.Activities.Statements.WriteLine> Aktivität **Argument.ToString()**.
+6. Legen Sie die **Text** Eigenschaft der <xref:System.Activities.Statements.WriteLine> Aktivität **Argument.ToString()**.
 
 Wenn der Workflow ausgeführt wird, wird die Konsole die folgende Ausgabe:
 

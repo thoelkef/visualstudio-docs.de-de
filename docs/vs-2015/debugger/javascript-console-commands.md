@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431431"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   
 > [!NOTE]
->  Wenn das Fenster während einer Debugsitzung nicht verfügbar ist, stellen Sie sicher, dass der Debuggertyp in den Debugeigenschaften für das Projekt auf **Script** festgelegt ist.  
+> Wenn das Fenster während einer Debugsitzung nicht verfügbar ist, stellen Sie sicher, dass der Debuggertyp in den Debugeigenschaften für das Projekt auf **Script** festgelegt ist.  
   
 ## <a name="console-object-commands"></a>Konsolenobjektbefehle  
  Diese Tabelle zeigt die Syntax für `console` -Objektbefehle, die Sie im JavaScript-Konsolenfenster oder zum Senden von Meldungen aus dem Code an die Konsole verwenden können. Dieses Objekt stellt mehrere Formulare bereit, damit Sie nach Bedarf zwischen Informationsmeldungen und Fehlermeldungen unterscheiden können.  
@@ -43,7 +43,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Sie können die längere Befehlsform `window.console.[command]` verwenden, wenn Sie Verwechslungen mit lokalen console-Objekten vermeiden müssen.  
   
 > [!TIP]
->  Ältere Versionen von Visual Studio unterstützen nicht den vollständigen Satz von Befehlen. Wenden Sie IntelliSense auf das Console-Objekt an, um schnell Informationen zu unterstützten Befehle zu erhalten.  
+> Ältere Versionen von Visual Studio unterstützen nicht den vollständigen Satz von Befehlen. Wenden Sie IntelliSense auf das Console-Objekt an, um schnell Informationen zu unterstützten Befehle zu erhalten.  
   
 |Befehl|Beschreibung|Beispiel|  
 |-------------|-----------------|-------------|  

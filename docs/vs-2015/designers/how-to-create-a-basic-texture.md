@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438413"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer Basistextur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 5. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllung**. Halten Sie anschließend die Umschalttaste gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Indem die Umschalttaste verwendet wird, ersetzt der Alphawert der Füllfarbe die Farbe im Bild; ansonsten wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.  
   
    > [!IMPORTANT]
-   >  Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.  
+   > Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.  
   
 6. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.  
   
@@ -70,7 +70,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 11. Zeichnen Sie mithilfe des Tools **Ellipse** einen Kreis von Pixelkoordinate `(3, 3)` bis Pixelkoordinate `(508, 508)`. Sie können während dem Zeichnen die Umschalttaste drücken und gedrückt halten, um den Kreis einfacher zu zeichnen.  
   
     > [!NOTE]
-    >  Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt.  
+    > Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt.  
   
 12. Ändern Sie die Hintergrundfarbe. Legen Sie **R** auf `44`, **G** auf `165`, **B** auf `211` und **A** auf `255` fest.  
   

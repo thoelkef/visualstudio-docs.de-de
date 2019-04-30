@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996801"
 ---
 # <a name="properties-of-decorators"></a>Eigenschaften von Decorators
 Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Formen oder Konnektoren im Diagramm angezeigt werden können. Die folgenden Tabellen zeigen die Eigenschaften für die drei Arten von Decorator-Element. Einige Eigenschaften werden nur auf das Form-Decorator-Elemente oder nur auf die Connector-Decorator-Elemente angezeigt.
@@ -26,7 +26,7 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 |Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |DisplayName|Der Name des Decorator-Elements, der im generierten Designer angezeigt wird.|Erweitern Reduzieren-Decorator-Element|
-|name|Der Name des Decorator-Elements.|ExpandCollapseDecorator|
+|Name|Der Name des Decorator-Elements.|ExpandCollapseDecorator|
 |Hinweise|Informelle Hinweise, die dieses Decorator-Element zugeordnet sind.|\<none>|
 |HorizontalOffset|Der horizontale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
@@ -40,7 +40,7 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 |-|-|-|
 |DefaultIcon|Der Pfad der Datei Symbol oder Bild, die angezeigt werden soll.|\<none>|
 |DisplayName|Der Name des Decorator-Elements, der im generierten Designer angezeigt werden.|Symbol für Decorator-Element|
-|name|Der Name des Decorator-Elements.|IconDecorator|
+|Name|Der Name des Decorator-Elements.|IconDecorator|
 |Hinweise|Informelle Hinweise, die das Decorator-Element zugeordnet sind.|\<none>|
 |HorizontalOffset|Der horizontale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
@@ -56,7 +56,7 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 |DisplayName|Der Name des Decorator-Elements, der im generierten Designer angezeigt werden.|Bezeichnung|
 |FontSize|Der Schriftgrad für den Text, der im Decorator-Element angezeigt wird.|8|
 |FontStyle|Der Schriftschnitt für den Text, der im Decorator-Element angezeigt wird.|Regulär|
-|name|Der Name des Decorator-Elements.|Bezeichnung|
+|Name|Der Name des Decorator-Elements.|Bezeichnung|
 |Hinweise|Informelle Hinweise, die das Decorator-Element zugeordnet sind.|\<none>|
 |HorizontalOffset|Der horizontale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|

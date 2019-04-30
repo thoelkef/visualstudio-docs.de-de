@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388576"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines nicht festgelegten Pixelshaders fehlt.
@@ -61,7 +61,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     Im Fenster **Grafikpipelinestufen** zeigt die Stufe **Eingabeassembler** die Geometrie des Objekts vor dem Transformieren, und die Stufe **Vertexshader** zeigt das gleiche Objekt nach dem Transformieren. Beachten Sie in diesem Szenario, dass das Fenster **Grafikpipelinestufen** für einen der Zeichnen-Befehle die Stufen **Eingabeassembler** und  **Vertexshader** , nicht jedoch die Stufe **Pixelshader** anzeigt.
 
    > [!NOTE]
-   >  Wenn das Objekt in weiteren Pipelinestufen verarbeitet wird – beispielsweise im Hullshader, dem Domainshader oder dem Geometryshader – kann die Ursache des Problems in jeder von ihnen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.
+   > Wenn das Objekt in weiteren Pipelinestufen verarbeitet wird – beispielsweise im Hullshader, dem Domainshader oder dem Geometryshader – kann die Ursache des Problems in jeder von ihnen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.
 
 4. Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** an, dass die Geometrie an die GPU ausgegeben (worauf das Vorhandensein der Stufe **Eingabeassembler** hinweist) und transformiert wurde (worauf die Stufe **Vertexshader** hinweist), aber nicht im Renderziel erscheint, da anscheinend kein aktiver Pixelshader vorhanden ist (worauf das Fehlen der Stufe **Pixelshader** hinweist). In diesem Szenario können Sie sogar die Silhouette des fehlenden Objekts in der Stufe **Ausgabezusammenführung** sehen:
 
@@ -84,7 +84,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 1. Suchen Sie den `PSSetShader` -Befehl, der dem fehlenden Objekt entspricht. Geben Sie im Fenster **Grafikereignisliste** die Zeichenfolge "Draw;PSSetShader" im Feld **Suchen** in der oberen rechten Ecke des Fensters **Grafikereignisliste** ein. Dadurch wird die Liste so gefiltert, dass sie nur PSSetShader-Ereignisse sowie Ereignisse mit "Draw" im Titel enthält. Wählen Sie den ersten `PSSetShader` -Aufruf aus, der vor dem Zeichnen-Befehl des fehlenden Objekts erscheint.
 
    > [!NOTE]
-   >  `PSSetShader` wird im Fenster **Grafikereignisliste** nicht angezeigt, wenn es in diesem Frame nicht festgelegt wurde. Normalerweise tritt dieser Fall nur ein, wenn für alle Objekte nur ein Pixelshader verwendet wird oder der `PSSetShader` -Aufruf während dieses Frames unabsichtlich ausgelassen wurde. In beiden Fällen empfiehlt es sich, den Quellcode der Apps nach `PSSetShader` -Aufrufen zu durchsuchen und traditionelle Debugtechniken zu verwenden, um das Verhalten der Aufrufe zu untersuchen.
+   > `PSSetShader` wird im Fenster **Grafikereignisliste** nicht angezeigt, wenn es in diesem Frame nicht festgelegt wurde. Normalerweise tritt dieser Fall nur ein, wenn für alle Objekte nur ein Pixelshader verwendet wird oder der `PSSetShader` -Aufruf während dieses Frames unabsichtlich ausgelassen wurde. In beiden Fällen empfiehlt es sich, den Quellcode der Apps nach `PSSetShader` -Aufrufen zu durchsuchen und traditionelle Debugtechniken zu verwenden, um das Verhalten der Aufrufe zu untersuchen.
 
 2. Öffnen Sie das Fenster **Aufrufliste des Grafikereignisses** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Aufrufliste des Grafikereignisses**aus.
 
@@ -93,7 +93,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     ![Der Code, der den PixelShader nicht initialisiert](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  Wenn Sie die Quelle des NULL-Werts durch einfaches Untersuchen der Aufrufliste nicht finden können, empfiehlt es sich, für den `PSSetShader` -Aufruf einen bedingten Haltepunkt festzulegen, damit der Programmablauf unterbrochen wird, wenn der Pixelshader auf NULL festgelegt wird. Starten Sie anschließend die App im Debugmodus erneut, und verwenden Sie herkömmliche Debugtechniken, um die Quelle des NULL-Werts zu ermitteln.
+   > Wenn Sie die Quelle des NULL-Werts durch einfaches Untersuchen der Aufrufliste nicht finden können, empfiehlt es sich, für den `PSSetShader` -Aufruf einen bedingten Haltepunkt festzulegen, damit der Programmablauf unterbrochen wird, wenn der Pixelshader auf NULL festgelegt wird. Starten Sie anschließend die App im Debugmodus erneut, und verwenden Sie herkömmliche Debugtechniken, um die Quelle des NULL-Werts zu ermitteln.
 
    Um das Problem zu beheben, weisen Sie den richtigen Pixelshader zu, indem Sie den ersten Parameter des `ID3D11DeviceContext::PSSetShader` -API-Aufrufs verwenden.
 

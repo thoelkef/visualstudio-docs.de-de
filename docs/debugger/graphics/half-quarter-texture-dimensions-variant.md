@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895624"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Halb-/Viertel-Texturdimensionsvariante
 Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
@@ -27,7 +27,7 @@ Reduziert die Texturdimensionen auf Texturen, die keine Renderziele sind.
 
  Wenn Ihre Texturen mehr GPU-Speicher belegen, als verfügbar ist, können Sie die Größe der Texturen ändern, sollten aber vorher überlegen, dafür geeignete Texturen zu komprimieren. Wie kleinere Texturen verbrauchen auch komprimierte Texturen weniger Speicher, so dass eine Auslagerung in den Systemspeicher nicht notwendig ist, aber die Farbtreue sinkt ebenfalls. Die Komprimierung ist nicht für alle Texturen geeignet – z. B. nicht für Texturen mit deutlichen Farbvariationen in einem kleinen Bereich. Aber für viele Texturen lässt sich mit der Komprimierung eine allgemeine Bildqualität besser aufrechterhalten als durch Reduzierung ihrer Größe.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Texturdimensionen werden mit jedem Aufruf von `ID3D11Device::CreateTexture2D`, der eine Quelltextur erzeugt, reduziert. Texturdimensionen werden vor allem reduziert, wenn das in `pDesc` übergebene D3D11_TEXTURE2D_DESC-Objekt eine in einem Rendering beschriebene Textur beschreibt, z. B.:
 
 - Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419614"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Vorgehensweise: Erstellen von Office-Projekten in Visual Studio
   Sie können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Erstellen von VSTO-Add-in und Dokumentebene Anpassungen für Microsoft Office-Anwendungen. Weitere Informationen zu diesen Projekttypen finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -44,7 +44,7 @@ ms.locfileid: "57868171"
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
    > [!NOTE]
-   >  Standardmäßig wird für Office-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt. Weitere Informationen finden Sie unter [.NET Framework-Clientprofil](/dotnet/framework/deployment/client-profile).
+   > Standardmäßig wird für Office-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt. Weitere Informationen finden Sie unter [.NET Framework-Clientprofil](/dotnet/framework/deployment/client-profile).
 
 2. Erweitern Sie im Vorlagenbereich unter dem Knoten für die Sprache, die Sie verwenden möchten, **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868171"
 4. Wählen Sie in der Liste der Projektvorlagen eine VSTO-Add-In-Projektvorlage aus. Eine Liste der verfügbaren VSTO-Add-in-Projektvorlagen, finden Sie unter [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Wenn Projektvorlagen nicht sichtbar sind bei der Auswahl der **Office-Add-ins** Knoten stellen Sie sicher, dass **.NET Framework 4** oder höher im Kombinationsfeld am oberen Rand des Dialogfelds ausgewählt ist. Office-Projektvorlagen sind für beide .NET Framework-Versionen sichtbar.
+   > Wenn Projektvorlagen nicht sichtbar sind bei der Auswahl der **Office-Add-ins** Knoten stellen Sie sicher, dass **.NET Framework 4** oder höher im Kombinationsfeld am oberen Rand des Dialogfelds ausgewählt ist. Office-Projektvorlagen sind für beide .NET Framework-Versionen sichtbar.
 
 5. In der **Namen** geben einen Namen für das Projekt. Dieser Projektname wird standardmäßig auch für die Projektmappenname verwendet.
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868171"
    - Prozentzeichen (%)
 
    > [!NOTE]
-   >  Öffnen Sie in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]-Projekt nur in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] erstellte oder in dieses Format konvertierte Dokumente. Öffnen Sie entsprechend in einem Word 2010-Projekt nur in Word 2010 erstellte oder in dieses Format konvertierte Dokumente. Bestimmte Funktionen werden im Dokument deaktiviert, wenn Sie ein Dokument öffnen, das in einer früheren Word-Version erstellt wurde. Wenn Sie Code schreiben, von dem diese Funktionen verwendet werden, können Fehler im Projekt auftreten. Zum Konvertieren eines Dokuments, öffnen Sie es in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder Word 2010, auf die **Datei** Registerkarte im Menüband **Informationen** > **konvertieren**.
+   > Öffnen Sie in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]-Projekt nur in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] erstellte oder in dieses Format konvertierte Dokumente. Öffnen Sie entsprechend in einem Word 2010-Projekt nur in Word 2010 erstellte oder in dieses Format konvertierte Dokumente. Bestimmte Funktionen werden im Dokument deaktiviert, wenn Sie ein Dokument öffnen, das in einer früheren Word-Version erstellt wurde. Wenn Sie Code schreiben, von dem diese Funktionen verwendet werden, können Fehler im Projekt auftreten. Zum Konvertieren eines Dokuments, öffnen Sie es in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder Word 2010, auf die **Datei** Registerkarte im Menüband **Informationen** > **konvertieren**.
 
 8. Klicken Sie auf **Fertig stellen**.
 

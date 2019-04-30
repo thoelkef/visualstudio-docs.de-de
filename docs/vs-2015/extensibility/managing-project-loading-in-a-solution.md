@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426452"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Verwalten des Ladens von Projekten in einer Projektmappe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  Wenn die projektmappenlastmanager, zum Verwalten von Projektmappen im Allgemeinen werden geladen vorgesehen ist, kann es als Teil eines VSPackage implementiert werden. Das Paket sollte auf Autoload festgelegt werden, durch das Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> für das VSPackage, mit dem Wert <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Die projektmappenlastmanager kann dann aktiviert werden, der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
 > [!NOTE]
->  Weitere Informationen zu Automatisches Laden von Paketen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
+> Weitere Informationen zu Automatisches Laden von Paketen finden Sie unter [Laden von VSPackages](../extensibility/loading-vspackages.md).  
   
  Da Visual Studio nur die letzten projektmappenlastmanager zu aktivierenden erkennt, sollten allgemeine Lösung Load-Manager, ob vor dem Aktivieren der selbst ein vorhandenen Load-Manager ist nicht immer erkennen. Wenn der Aufruf von GetProperty() für den Dienst der Lösung für <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> gibt `null`, es gibt keine aktiven projektmappenlademanager. Wenn es nicht null zurückgibt, überprüfen Sie, ob das Objekt Ihrer projektmappenlastmanager identisch ist.  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: das Aufrufen dieser Methode erzwingt, dass das Projekt im `guidProjectID` geladen, bevor die Methode zurückgibt.  
   
 > [!NOTE]
->  sein. Standardmäßig nur die Projekte, die die Anforderung geladen und Hintergrund ladeprioritäten geladen sind, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag wird an die Methode übergeben, werden alle Projekte geladen werden, außer denjenigen, die markiert sind, um explizit zu laden.
+> sein. Standardmäßig nur die Projekte, die die Anforderung geladen und Hintergrund ladeprioritäten geladen sind, aber wenn die <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> Flag wird an die Methode übergeben, werden alle Projekte geladen werden, außer denjenigen, die markiert sind, um explizit zu laden.

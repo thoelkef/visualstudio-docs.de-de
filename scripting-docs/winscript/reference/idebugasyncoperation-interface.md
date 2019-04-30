@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 820ecc40924ace4153b76f46c8b8fd1603512ebb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821782"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation-Schnittstelle
 Implementiert den prozessbasierten Debugmanager der `IDebugAsyncOperation` Schnittstelle. Eine Sprach-Engine Ruft die `IDebugApplication::CreateAsyncDebugOperation` Methode, um einen Verweis auf diese Schnittstelle abzurufen. Die Sprach-Engine können die `IDebugAsyncOperation` Schnittstelle, um asynchronen Zugriff auf einen synchronen Debugvorgang bereitzustellen.  

@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446748"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
  Sie können einem benutzerdefinierten Host schreiben, sollten Sie verwenden die *Textvorlagen-Transformationsprozess* Funktionalität außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder wenn Sie diese Funktion in benutzerdefinierte Tools integrieren möchten. Um einen benutzerdefinierten Host zu erstellen, müssen Sie eine Klasse erstellen, die von <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> erbt. Die Dokumentation der einzelnen Methoden finden Sie unter <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung oder ein -Paket schreiben, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu erstellen. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung oder ein -Paket schreiben, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu erstellen. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  In dieser exemplarischen Vorgehensweise werden u. a. die folgenden Aufgaben beschrieben:  
   
@@ -732,7 +732,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
 2. Fügen Sie der Datei die folgende Zeile hinzu:  
   
     > [!NOTE]
-    >  Die Programmiersprache der Textvorlage muss nicht mit der Sprache des benutzerdefinierten Hosts identisch sein.  
+    > Die Programmiersprache der Textvorlage muss nicht mit der Sprache des benutzerdefinierten Hosts identisch sein.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
+    > Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
   
 3. Geben Sie ein Leerzeichen ein.  
   
@@ -796,7 +796,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Anstatt die Adresse einzugeben, können Sie in die Datei "TestTemplate.tt" navigieren, in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
+    > Anstatt die Adresse einzugeben, können Sie in die Datei "TestTemplate.tt" navigieren, in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
   
      Die benutzerdefinierte Hostanwendung wird ausgeführt und schließt den Textvorlagen-Transformationsprozess ab.  
   

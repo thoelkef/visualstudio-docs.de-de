@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5178ff7becc318b4f5b796046118bccb83129a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433782"
 ---
 # <a name="c-library-reference"></a>C Bibliotheksverweis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54797011"
 Dieser Abschnitt enthält Referenzinformationen für die Parallelitätsschnellansicht SDK.  
   
 > [!NOTE]
->  Der C-Sprachstandard reserviert die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, für Implementierungen wie Bibliotheken. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
+> Der C-Sprachstandard reserviert die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, für Implementierungen wie Bibliotheken. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [CvCreateDefaultMarkerSeriesOfDefaultProvider-Funktion](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  

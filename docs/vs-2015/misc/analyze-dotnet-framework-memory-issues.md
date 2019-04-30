@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444665"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analysieren von .NET Framework-Arbeitsspeicherproblemen
 Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio Speicherverluste und ineffiziente Arbeitsspeichernutzung in .NET Framework-Code. Die mindestens erforderliche .NET Framework-Version für den Zielcode ist .NET Framework 4.5.  
@@ -59,7 +59,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
  Das arbeitsspeicheranalysetool analysiert Informationen in *Dumpdateien* , die Heapinformationen enthalten. Sie können Dumpdateien in Visual Studio erstellen oder Sie können ein Tool wie [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) aus [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Finden Sie unter [Was ist ein Speicherabbild, und wie erstelle ich eine?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Blog des Visual Studio Debugger Team.  
   
 > [!NOTE]
->  Die meisten Tools können Dumpinformationen mit oder ohne vollständige Heapspeicherdaten sammeln. Die Speicheranalyse von Visual Studio erfordert vollständige Heapinformationen.  
+> Die meisten Tools können Dumpinformationen mit oder ohne vollständige Heapspeicherdaten sammeln. Die Speicheranalyse von Visual Studio erfordert vollständige Heapinformationen.  
   
  **Sammeln Sie einen Dump von Visual Studio**  
   

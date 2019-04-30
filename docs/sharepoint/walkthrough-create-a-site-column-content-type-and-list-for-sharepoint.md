@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430697"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
   Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.
@@ -112,7 +112,7 @@ ms.locfileid: "60057731"
 6. Nach dem Inhaltstyp-Designer angezeigt wird, in der **Spalten** Registerkarte, fügen Sie die drei Spalten, die Sie zuvor definiert site hinzu: **Name des Patienten**, **Patienten-ID**, und **Doktor Namen**. Um diese Spalten hinzuzufügen, wählen Sie das erste Listenfeld in der Liste der Spalten Site unter **Anzeigenamen**, und wählen Sie dann jede Spalte in der Liste eine zu einem Zeitpunkt.
 
     > [!TIP]
-    >  Um die Websitespalten schneller auswählen, wird die Liste durch die ersten paar Buchstaben des Namens der Spalte Eingabe gefiltert.
+    > Um die Websitespalten schneller auswählen, wird die Liste durch die ersten paar Buchstaben des Namens der Spalte Eingabe gefiltert.
 
 7. Zusätzlich zu den drei benutzerdefinierte Websitespalten hinzufügen, die **Kommentare** Websitespalte aus der Liste der Site-Spalten.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057731"
      Die der benutzerdefinierten Listenspalte gilt nur für diese Liste. Wenn Sie eine der benutzerdefinierten Listenspalte zu einer Liste hinzufügen, ein neuen Listeninhaltstyp, einschließlich aller Spalten in der Liste hinzugefügt erstellt und als die Standardliste festgelegt.
 
     > [!TIP]
-    >  Wenn Sie eine Spalte aus der Liste der Websitespalten auswählen, wird eine bestehende Websitespalte verwendet. Jedoch wenn Sie einen Spalte Name-Wert eingeben, ohne alle Spalten in der Liste auswählen, wird eine benutzerdefinierte Liste-Spalte erstellt, selbst wenn eine Spalte mit dem gleichen Namen bereits in der Liste vorhanden ist.
+    > Wenn Sie eine Spalte aus der Liste der Websitespalten auswählen, wird eine bestehende Websitespalte verwendet. Jedoch wenn Sie einen Spalte Name-Wert eingeben, ohne alle Spalten in der Liste auswählen, wird eine benutzerdefinierte Liste-Spalte erstellt, selbst wenn eine Spalte mit dem gleichen Namen bereits in der Liste vorhanden ist.
 
      Optional, statt den Datentyp für die benutzerdefinierte Listenspalte **einzelne Textzeile**, Sie können den Datentyp für diese Spalte stattdessen für die Suche festlegen und ihre Werte aus einer Tabelle oder einer anderen Liste abgerufen werden sollen. Informationen über die Suchspalten, finden Sie unter [Liste-Beziehungen in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) und [Suchvorgänge und Liste Beziehungen](http://go.microsoft.com/fwlink/?LinkID=224995).
 

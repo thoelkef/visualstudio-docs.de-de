@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437098"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die En
 - **Zyklomatische Komplexität** – misst die strukturelle Komplexität des Codes. Es wird durch die Berechnung der Anzahl der unterschiedlichen Codepfaden im Datenfluss des Programms erstellt. Ein Programm, das komplexe ablaufsteuerung hat ist benötigen weitere Tests gute Code Coverage zu erreichen und schlechter zu verwalten.  
   
     > [!NOTE]
-    >  In einigen Fällen, der Berechnung die zyklomatische Komplexität für eine Methode im [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] unterscheidet sich von früheren Versionen. Weitere Informationen finden Sie unter "Änderungen in Visual Studio 2010 Komplexität Berechnungen Codeabschnitt" [Problembehandlung für Codemetrikfehler](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > In einigen Fällen, der Berechnung die zyklomatische Komplexität für eine Methode im [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] unterscheidet sich von früheren Versionen. Weitere Informationen finden Sie unter "Änderungen in Visual Studio 2010 Komplexität Berechnungen Codeabschnitt" [Problembehandlung für Codemetrikfehler](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Vererbungstiefe** – gibt die Anzahl von Klassendefinitionen, die auf den Stamm der Hierarchie von Klassen erweitern. Je tiefer sich der Hierarchie der schwieriger zu verstehen, in denen bestimmte Methoden und Felder definiert sind möglicherweise oder / und neu definiert.  
   

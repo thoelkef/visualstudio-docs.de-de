@@ -1,6 +1,6 @@
 ---
 title: Analyzer-Regelsätze
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387702"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Regelsätze für Roslyn-Analysetools
 
@@ -25,7 +25,7 @@ Wenn Sie über ältere "FxCop" statische Codeanalyse zu Roslyn-Analysetools migr
 
 ## <a name="use-analyzer-rule-sets"></a>Verwenden von Regelsätzen für analyzer
 
-Nach dem [installieren ein NuGet-Pakets Analyzer](install-roslyn-analyzers.md), suchen Sie die vordefinierten Regeln in der *Rulesets* Verzeichnis, z. B. *% USERPROFILE%\\.nuget\packages\ Microsoft.codequality.Analyzers\<Version > \rulesets*. Von dort Sie können ziehen und ablegen, oder kopieren und einfügen, eine oder mehrere der die Rulesets mit Ihrem Visual Studio-Projekt in **Projektmappen-Explorer**.
+Nach dem [installieren ein NuGet-Pakets Analyzer](install-roslyn-analyzers.md), suchen Sie die vordefinierten Regeln in der *Rulesets* Verzeichnis. Z. B., wenn Sie einen Verweis auf die `Microsoft.CodeAnalysis.FxCopAnalyzers` Analyzer zu verpacken, und klicken Sie dann finden Sie die Rulesets Verzeichnis unter *% USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<Version \>\rulesets*. Von dort Sie können ziehen und ablegen, oder kopieren und einfügen, eine oder mehrere der die Rulesets mit Ihrem Visual Studio-Projekt in **Projektmappen-Explorer**.
 
 Um einen Regelsatz zu den aktiven Regelsatz für die Analyse zu machen, mit der Maustaste, auf das Projekt im **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**. Wählen Sie in den Eigenschaftenseiten des Projekts, das **Codeanalyse** Registerkarte. Klicken Sie unter **diesen Regelsatz ausführen**Option **Durchsuchen**, und wählen Sie dann den gewünschten Regelsatz, den Sie in das Projektverzeichnis kopiert. Jetzt sehen Sie nur Verletzungen von Namensregeln für solche Regeln, die im ausgewählten Regelsatz aktiviert sind.
 
@@ -54,7 +54,7 @@ Die [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Micro
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Analyzer – häufig gestellte Fragen](analyzers-faq.md)
+- [FAQ zu Analysetools](analyzers-faq.md)
 - [Overview of .NET Compiler Platform analyzers (Übersicht über .NET Compiler Platform-Analysetools)](roslyn-analyzers-overview.md)
 - [Installieren von Analysen](install-roslyn-analyzers.md)
 - [Verwenden von Analysen](use-roslyn-analyzers.md)

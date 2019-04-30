@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426478"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Ausführen von Windows Store-Apps auf einem Remotecomputer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
  Standardmäßig verwendet der Remotedebugger die Windows-Authentifizierung.  
   
 > [!WARNING]
->  Sie haben außerdem die Möglichkeit, den Remotedebugger im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus "Ohne Authentifizierung" nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.  
+> Sie haben außerdem die Möglichkeit, den Remotedebugger im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus "Ohne Authentifizierung" nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.  
   
 ## <a name="BKMK_DirectConnect"></a> Herstellen einer direkten Verbindung mit einem Remotegerät  
  Um eine direkte Verbindung mit einem Remotegerät herzustellen, schließen Sie den Visual Studio-Computer mit einem Standardethernetkabel an das Gerät an. Wenn das Gerät keinen Ethernet-Anschluss besitzt, können Sie für die Verbindung mit dem Kabel einen USB-Ethernet-Adapter verwenden.  
@@ -74,15 +74,15 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> Installieren der Remotetools  
   
 > [!NOTE]
->  **Versionen und Updates**  
+> **Versionen und Updates**  
 >   
->  Die **Remotetools für Visual Studio 2015** werden für frühere Versionen von Visual Studio nicht unterstützt.  
+> Die **Remotetools für Visual Studio 2015** werden für frühere Versionen von Visual Studio nicht unterstützt.  
 >   
->  Es wird empfohlen, die Updateversion der Remotetools für Visual Studio 2015 zu installieren, die der Updateversion Ihrer Visual Studio-Installation entspricht.  
+> Es wird empfohlen, die Updateversion der Remotetools für Visual Studio 2015 zu installieren, die der Updateversion Ihrer Visual Studio-Installation entspricht.  
 >   
->  Der Visual Studio-Debugger ist mit einer beliebigen Kombination von Versionen von Visual Studio 2015 und den Remotetools für Visual Studio 2015 kompatibel. Für die neuesten Funktionen in Visual Studio sind jedoch sowohl Visual Studio als auch die Remotetools in der jeweils aktuellsten Version erforderlich.  
+> Der Visual Studio-Debugger ist mit einer beliebigen Kombination von Versionen von Visual Studio 2015 und den Remotetools für Visual Studio 2015 kompatibel. Für die neuesten Funktionen in Visual Studio sind jedoch sowohl Visual Studio als auch die Remotetools in der jeweils aktuellsten Version erforderlich.  
 >   
->  Für andere Diagnosetools sind möglicherweise die gleichen Versionen der Remotetools und von Visual Studio erforderlich.  
+> Für andere Diagnosetools sind möglicherweise die gleichen Versionen der Remotetools und von Visual Studio erforderlich.  
   
  **Installieren der Remotedebugkomponenten auf einem Remotegerät**  
   
@@ -101,7 +101,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Starten des Remotedebugmonitors  
   
 > [!NOTE]
->  Da der Remotedebugger die Firewall konfiguriert, um die Kommunikation mit dem Visual Studio-Host zu ermöglichen, müssen Sie Administrator auf dem Remotegerät sein, wenn Sie den Remotedebugger zum ersten Mal starten.  
+> Da der Remotedebugger die Firewall konfiguriert, um die Kommunikation mit dem Visual Studio-Host zu ermöglichen, müssen Sie Administrator auf dem Remotegerät sein, wenn Sie den Remotedebugger zum ersten Mal starten.  
   
  Nachdem Sie die Remotetools installiert haben, wählen Sie **Remote Debugger** auf dem Bildschirm **Start** aus. Beim ersten Start des Remotedebuggers wird das Dialogfeld **Konfiguration für Remotedebugging** angezeigt.  
   
@@ -125,7 +125,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
    2. Wählen Sie **Berechtigungen** aus, um Benutzer mit Berechtigungen für das Remotedebuggen hinzuzufügen oder zu entfernen.  
   
        > [!NOTE]
-       >  Berechtigungen müssen jedem Benutzerkonto gewährt werden, von dem ein Remotedebuggen vorgenommen wird.  
+       > Berechtigungen müssen jedem Benutzerkonto gewährt werden, von dem ein Remotedebuggen vorgenommen wird.  
   
    Mit dem **Konfigurations-Assistent für Remote Debugger** können Sie erweiterte Optionen für den Remotedebugger fest. Um den Assistenten zu öffnen, wählen Sie im Startbildschirm **Konfigurations-Assistent für Remote Debugger** aus.  
   
@@ -141,7 +141,7 @@ Bezieht sich nur auf Windows] (.. /Image/windows_only_content.png "Windows_only_
  Im Dialogfeld werden nur die Geräte aufgelistet, die sich im lokalen Teilnetz von Visual Studio-Computers befinden und die den Remotedebugger ausführen.  
   
 > [!TIP]
->  Sollten Sie Probleme beim Herstellen einer Verbindung mit einem Remotegerät haben, versuchen Sie, die IP-Adresse des Geräts einzugeben. Um die IP-Adresse eines Geräts zu bestimmen, öffnen Sie ein Befehlsfenster, und geben Sie dann **ipconfig**ein. Die IP-Adresse wird als **IPv4 Address**aufgeführt.  
+> Sollten Sie Probleme beim Herstellen einer Verbindung mit einem Remotegerät haben, versuchen Sie, die IP-Adresse des Geräts einzugeben. Um die IP-Adresse eines Geräts zu bestimmen, öffnen Sie ein Befehlsfenster, und geben Sie dann **ipconfig**ein. Die IP-Adresse wird als **IPv4 Address**aufgeführt.  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Auswählen des Remotegeräts für C#- und Visual Basic-Projekte  
  ![Verwaltete Projekteigenschaften für Remotedebugging](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

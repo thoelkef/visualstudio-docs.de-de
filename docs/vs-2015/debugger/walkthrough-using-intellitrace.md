@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444265"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Exemplarische Vorgehensweise: Verwenden von IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
 5. Starten Sie das Debuggen wie gewohnt. (Drücken Sie **F5** , oder klicken Sie auf **Debuggen / Debugging starten**.  
   
     > [!TIP]
-    >  Halten Sie während des Debuggens die Fenster **Lokal** und **Auto** geöffnet, um die Werte darin anzuzeigen und aufzuzeichnen.  
+    > Halten Sie während des Debuggens die Fenster **Lokal** und **Auto** geöffnet, um die Werte darin anzuzeigen und aufzuzeichnen.  
   
 6. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen / Fenster / IntelliTrace-Ereignisse**.  
   
@@ -87,7 +87,7 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
 1. Aktivieren Sie Aufrufauflistung ein. Wählen Sie unter **Extras / Optionen / IntelliTrace / Allgemein**die Option **IntelliTrace-Ereignis- und -Aufrufinformationen**aus. IntelliTrace beginnt beim Start der nächsten Debugsitzung mit dem Sammeln dieser Informationen.  
   
     > [!TIP]
-    >  Dies kann zu einer Verlangsamung der Anwendung und zu einer Vergrößerung aller auf dem Datenträger gespeicherten IntelliTrace-Protokolldateien (ITRACE-Dateien) führen. Um möglichst viele Aufrufdaten abzurufen, die Auswirkungen jedoch möglichst gering zu halten, zeichnen Sie nur die Daten aus den Modulen auf, die für Sie von Interesse sind. Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Extras / Optionen / IntelliTrace / Erweitert**, und geben Sie die maximale Menge an Datenträgerspeicherplatz an. Der Standardwert ist 250 MB.  
+    > Dies kann zu einer Verlangsamung der Anwendung und zu einer Vergrößerung aller auf dem Datenträger gespeicherten IntelliTrace-Protokolldateien (ITRACE-Dateien) führen. Um möglichst viele Aufrufdaten abzurufen, die Auswirkungen jedoch möglichst gering zu halten, zeichnen Sie nur die Daten aus den Modulen auf, die für Sie von Interesse sind. Um die maximale Größe der ITRACE-Dateien zu ändern, wechseln Sie zu **Extras / Optionen / IntelliTrace / Erweitert**, und geben Sie die maximale Menge an Datenträgerspeicherplatz an. Der Standardwert ist 250 MB.  
   
 2. Beginnen Sie mit dem Debuggen der im vorherigen Abschnitt erstellten C#-Konsolenanwendung. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen / Fenster / IntelliTrace-Ereignisse**.  
   
@@ -98,6 +98,6 @@ Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereigniss
      Wählen Sie einen der Funktionsaufrufe aus, und doppelklicken Sie darauf. Nun sollten die Einstiegs- und Endpunkte der Funktion sowie die Aufrufe des aktuellen Aufrufs in anderen Funktionen und die vom Aufruf ausgelösten IntelliTrace-Ereignisse angezeigt werden. Wenn Sie das verlaufsbezogene Debugging nicht aktiviert haben, wird es mit dieser Aktion aktiviert. Weitere Informationen zum verlaufsbezogenen Debuggen finden Sie unter [Historical Debugging](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Wie Sie sehen, sind einige Aufrufe abgeblendet. Dies liegt daran, dass IntelliTrace keine Daten aus den entsprechenden Modulen aufgezeichnet hat. Um diese Daten anzuzeigen, lassen Sie IntelliTrace Daten aus diesen Modulen sammeln. Informationen zum Angeben von Modulen, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
+    > Wie Sie sehen, sind einige Aufrufe abgeblendet. Dies liegt daran, dass IntelliTrace keine Daten aus den entsprechenden Modulen aufgezeichnet hat. Um diese Daten anzuzeigen, lassen Sie IntelliTrace Daten aus diesen Modulen sammeln. Informationen zum Angeben von Modulen, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Nächste Schritte

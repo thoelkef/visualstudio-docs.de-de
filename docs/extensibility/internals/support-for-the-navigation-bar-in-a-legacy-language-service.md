@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858113"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützen der Navigationsleiste in einem Legacysprachdienst
 Die Navigationsleiste am oberen Rand die Editor-Ansicht zeigt die Typen und Member in der Datei an. Typen werden angezeigt, in der linken Dropdownliste aus, und Elemente werden in der rechten Dropdownliste angezeigt. Wenn der Benutzer einen Typ auswählt, wird die Einfügemarke in der ersten Zeile des Typs platziert. Wenn der Benutzer ein Element auswählt, wird die Einfügemarke in die Definition des Elements platziert. Die Dropdown-Felder werden entsprechend die aktuelle Position der Einfügemarke aktualisiert.
