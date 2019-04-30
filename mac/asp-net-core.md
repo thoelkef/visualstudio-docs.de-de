@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985633"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
@@ -63,6 +63,7 @@ Die leere Projektvorlage zum Erstellen einer ASP.NET Core-Anwendung erstellt ein
                 .UseStartup<Startup>();
     }
 ```
+
 Eine ASP.NET Core-Anwendung erstellt in ihrer Hauptmethode einen Webserver, indem sie einen Host über eine Instanz von [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) konfiguriert und startet. Dieser Generator bietet Möglichkeiten zur Konfiguration des Hosts. In der Vorlagenanwendung werden die folgenden Konfigurationen verwendet:
 
 * `.UseStartup<Startup>()`: Gibt die Startup-Klasse an.
@@ -106,8 +107,8 @@ Die Startup-Klasse für Ihre Anwendung wird in der `UseStartup()`-Methode im `Cr
 
 Diese Startup-Klasse muss sich immer an folgende Regeln halten:
 
- - Sie muss immer öffentlich sein.
- - Sie muss die beiden öffentlichen Methoden enthalten: `ConfigureServices` und `Configure`
+- Sie muss immer öffentlich sein.
+- Sie muss die beiden öffentlichen Methoden `ConfigureServices` und `Configure` enthalten
 
 Die `ConfigureServices`-Methode definiert die Dienste, die von Ihrer Anwendung verwendet werden.
 
@@ -220,7 +221,6 @@ Um einen Controller hinzuzufügen, führen Sie Folgendes durch:
 9. Wenn Sie zu `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` navigieren und `xxxx` durch den korrekten Port ersetzen, sollte Folgendes angezeigt werden.
 
     ![Ausführen der App im Browser mit Argumenten.](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

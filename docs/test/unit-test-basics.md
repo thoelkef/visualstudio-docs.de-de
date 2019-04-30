@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990279"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -82,9 +82,12 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generieren des Komponententestprojekts und der Komponententest-Stubs
 
-1. Klicken Sie im Code-Editorfenster mit der rechten Maustaste, und wählen Sie im Kontextmenü die Option **Komponententests erstellen**.
+1. Klicken Sie im Code-Editorfenster mit der rechten Maustaste, und wählen Sie im Kontextmenü die Option [**Komponententests erstellen**](create-unit-tests-menu.md) aus.
 
-    ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png)
+   ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für das .NET Framework (aber nicht für .NET Core) zur Verfügung.
 
 2. Klicken Sie auf **OK**, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Benennen des Komponententestprojekts und der Komponententests jedoch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
 
@@ -127,17 +130,17 @@ Ein Komponententestprojekt entspricht in der Regel der Struktur eines einzelnen 
 
    So erstellen Sie den Verweis auf das Codeprojekt
 
-   1.  Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
+   1. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
 
-   2.  Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
 
-   3.  Öffnen Sie im Dialogfeld **Verweis-Manager** den Knoten **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
+   3. Öffnen Sie im Dialogfeld **Verweis-Manager** den Knoten **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
 
 Jedes Komponententestprojekt enthält Klassen, die die Namen der Klassen im Codeprojekt widerspiegeln. In diesem Beispiel enthält das Projekt `AccountsTests` die folgenden Klassen:
 
--   Die`AccountInfoTests` -Klasse enthält die Komponententestmethoden für die `AccountInfo` -Klasse im Projekt `Accounts` .
+- Die`AccountInfoTests` -Klasse enthält die Komponententestmethoden für die `AccountInfo` -Klasse im Projekt `Accounts` .
 
--   Die`CheckingAccountTests` -Klasse enthält die Komponententestmethoden für die `CheckingAccount` -Klasse.
+- Die`CheckingAccountTests` -Klasse enthält die Komponententestmethoden für die `CheckingAccount` -Klasse.
 
 ## <a name="write-your-tests"></a>Erstellen der Tests
 
@@ -185,11 +188,11 @@ Beachten Sie, dass in `Withdraw_ValidAmount_ChangesBalance` eine explizite `Asse
 
 Weitere Informationen zu den Microsoft-Komponententest-Frameworks finden Sie in einem der folgenden Themen:
 
--   [Ausführen von Komponententests für Code](unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](unit-test-your-code.md)
 
--   [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
+- [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Verwenden des MSTest-Frameworks in Komponententests](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Verwenden des MSTest-Frameworks in Komponententests](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Festlegen von Timeouts für Komponententests
 
@@ -260,12 +263,12 @@ Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausf�
 
 **Antwort:** Mit dem **Test-Explorer** können Sie Debugsitzungen für Ihre Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
 
-1.  Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
+1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
 
     > [!NOTE]
     > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
 
-2.  Wählen Sie im **Test-Explorer** die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
+2. Wählen Sie im **Test-Explorer** die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
 
 Erfahren Sie mehr über das [Debuggen von Komponententests](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Erfahren Sie mehr über [Codeabdeckung](../test/using-code-coverage-to-determine
 
 Microsoft Fakes verwendet zwei Ansätze zum Erstellen von Ersatzklassen für externe Abhängigkeiten:
 
-1.  *Stubs* generieren Ersatzklassen, die von der übergeordneten Schnittstelle der Abhängigkeitszielklasse abgeleitet werden. Stubmethoden können als Ersatz für öffentliche virtuelle Methoden der Zielklasse verwendet werden.
+1. *Stubs* generieren Ersatzklassen, die von der übergeordneten Schnittstelle der Abhängigkeitszielklasse abgeleitet werden. Stubmethoden können als Ersatz für öffentliche virtuelle Methoden der Zielklasse verwendet werden.
 
-2.  *Shims* verwenden die Laufzeitinstrumentation, um Aufrufe einer Zielmethode zu einer Shim-Ersatzmethode für nicht virtuelle Methoden umzuleiten.
+2. *Shims* verwenden die Laufzeitinstrumentation, um Aufrufe einer Zielmethode zu einer Shim-Ersatzmethode für nicht virtuelle Methoden umzuleiten.
 
 Bei beiden Ansätzen verwenden Sie die generierten Delegaten von Aufrufen der Abhängigkeitsmethode, um das Verhalten festzulegen, das Sie in der Testmethode haben möchten.
 

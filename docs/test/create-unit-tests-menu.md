@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Stubs für Komponententestmethoden
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,32 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965469"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
 
-Mit dem Befehl **Unittests erstellen** von Visual Studio können Sie Stubs für Unittestmethoden erstellen. Diese Funktion ermöglicht die leichte Konfiguration von Testprojekten, Testklassen und des darin enthaltenen Testmethodenstubs.
+Mit dem Befehl **Komponententests erstellen** werden Stubs für Komponententestmethoden erstellt. Diese Funktion ermöglicht die leichte Konfiguration von Testprojekten, Testklassen und des darin enthaltenen Testmethodenstubs.
 
-## <a name="availability-and-extensions"></a>Verfügbarkeit und Erweiterungen
+> [!NOTE]
+> Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für das .NET Framework (aber nicht für .NET Core) zur Verfügung.
 
-Der Menübefehl **Unittests erstellen**:
-
-* ist in den Editionen Community, Professional und Enterprise von Visual Studio 2015 und höher verfügbar
-
-* unterstützt nur C#-Code, der das .NET Framework als Ziel hat
-
-* ist erweiterbar und unterstützt das Ausgeben von Tests im Format MSTest, MSTest V2, NUnit und xUnit.
-
-* ist noch nicht für .NET Core-Projekte verfügbar.
+Der Menübefehl **Komponententests erstellen** ist erweiterbar und kann zum Generieren von Tests für MSTest, MSTest V2, NUnit und xUnit verwendet werden.
 
 ## <a name="get-started"></a>Erste Schritte
 
-Beginnen Sie, indem Sie eine Methode, einen Typ oder einen Namespace im Code.Editor im zu testenden Projekt auswählen. Öffnen Sie dann das Kontextmenü, und klicken Sie auf **Unittests erstellen**. Das Dialogfeld **Komponententests erstellen** wird geöffnet, in dem Sie die Erstelloptionen für den neuen Komponententests auswählen können.
+Beginnen Sie, indem Sie eine Methode, einen Typ oder einen Namespace im Code-Editor im zu testenden Projekt auswählen, klicken Sie mit der rechten Maustaste auf diesen, und wählen Sie dann **Komponententests erstellen** aus. Das Dialogfeld **Komponententests erstellen** wird geöffnet. Dort können Sie konfigurieren, wie die Tests erstellt werden sollen.
 
 ![Verwenden des Befehls „Unittests erstellen“](media/createunittestcommand.png)
 
@@ -46,34 +39,16 @@ Wenn Sie diese Tests im Rahmen des Testautomatisierungsprozesses ausführen möc
 
 ## <a name="use-third-party-unit-test-frameworks"></a>Verwenden von Frameworks für Komponententests von Drittanbietern
 
-Mit Visual Studio können Sie Unittest mit jedem Testframework leicht erstellen. Zur Installation anderer Frameworks:
+Installieren Sie eine der folgenden Testframeworkerweiterungen aus dem Visual Studio Marketplace, um automatisch Komponententests für NUnit oder xUnit zu generieren:
 
-::: moniker range="vs-2017"
-
-1. Wählen Sie **Extras** > **Erweiterungen und Updates** aus.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Wählen Sie **Erweiterungen** > **Erweiterungen verwalten** aus.
-
-::: moniker-end
-
-2. Erweitern Sie **Online** > **Visual Studio Marketplace** > **Extras**, und wählen Sie dann **Testing** aus.
-
-![Verwenden von Testframeworks von Drittanbietern](media/createunittestfx.png)
-
-Testframeworkerweiterungen sind im Visual Studio Marketplace verfügbar:
-
-* [NUnit-Erweiterung für die Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [xUnit.net-Erweiterung für die Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [NUnit-Erweiterung für Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [xUnit.net-Erweiterung für Testgeneratoren](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 ## <a name="when-should-i-use-this-feature"></a>Wann ist diese Funktion sinnvoll?
 
-Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der wenig oder keine Testabdeckung und keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Im Prinzip implementiert sie einen Ansatz, der den [intelligenten Komponententests](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
+Verwenden Sie dieses Feature, wenn Sie Komponententests erstellen müssen, insbesondere wenn Sie vorhandenen Code testen, der wenig oder keine Testabdeckung und keine Dokumentation aufweist. Also dort, wo es sehr eingeschränkte oder gar keine Codespezifikationen gibt. Im Prinzip implementiert es einen Ansatz, der den [intelligenten Komponententests](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) ähnelt, die das beobachtete Verhalten des Codes charakterisieren.
 
-Diese Funktion kann jedoch auch auf Situationen angewendet werden, in denen der Entwickler beginnt, indem er Code schreibt und diesen dann dazu verwendet, die Unittests zu bootstrappen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Unittestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
+Dieses Feature kann jedoch auch angewendet werden, wenn ein Entwickler Code schreibt und diesen anschließend nutzt, um Bootstraps für Komponententests auszuführen. Es kann sein, dass der Entwickler beim Codieren schnell einen Stub für Komponententestmethoden für einen bestimmten Codeteil erstellen möchte (mit einer entsprechenden Testklasse und einem entsprechenden Testprojekt).
 
 ## <a name="see-also"></a>Siehe auch
 

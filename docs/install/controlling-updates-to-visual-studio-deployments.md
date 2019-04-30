@@ -1,7 +1,7 @@
 ---
 title: Steuern von Updates für Bereitstellungen
 description: Erfahren Sie, wie Sie ändern, wo Visual Studio nach einem Update sucht, wenn die Installation aus einem Netzwerk stammt.
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54adaf3cdcbb8e15ada46a660de59f9b578e15f8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974187"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen
 
@@ -33,53 +33,88 @@ In der Standardeinstellung sucht Visual Studio weiterhin online nach Updates, se
 Wenn Sie direkt steuern möchten, wo Visual Studio nach Updates sucht, können Sie den dazu verwendeten Speicherort ändern. Sie können kontrollieren, auf welche Version Ihre Benutzer aktualisiert werden. Gehen Sie dazu folgendermaßen vor:
 
 1. Erstellen Sie ein Offlinelayout:
+
    ```cmd
-   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. Kopieren Sie es in die Dateifreigabe, in der es gehostet werden soll:
+
    ```cmd
-   xcopy /e C:\vs2017offline \\server\share\VS2017
+   xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. Ändern Sie im Layout die Datei „response.json“ und den Wert von `channelUri` so, dass er auf eine Kopie der Datei „channelManifest.json“ zeigt, die der Administrator steuert.
 
    Umgekehrte Schrägstriche im Wert müssen wie im folgenden Beispiel dargestellt mit Escapezeichen versehen werden:
 
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
    Nun können Endbenutzer das Setup über diese Freigabe für die Installation von Visual Studio ausführen.
+
    ```cmd
-   \\server\share\VS2017\vs_enterprise.exe
+   \\server\share\VS\vs_enterprise.exe
    ```
 
 Wenn ein Unternehmensadministrator bestimmt, dass die Benutzer ein Update auf eine neuere Version von Visual Studio vornehmen sollten, kann er [den Layoutspeicherort wie folgt aktualisieren](update-a-network-installation-of-visual-studio.md), dass die aktualisierten Dateien einbezogen werden.
 
 1. Verwenden Sie einen Befehl wie den folgenden:
+
    ```cmd
-   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. Stellen Sie sicher, dass die Datei „response.json“ im aktualisierten Layout weiterhin wie folgt Ihre Anpassungen enthält, insbesondere die Änderung von „channelUri“:
+
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
-   Vorhandene Installationen von Visual Studio in diesem Layout suchen in `\\server\share\VS2017\ChannelManifest.json` nach Updates. Wenn diese Datei „channelManifest.json“ aktueller als in der Installation des Benutzers ist, benachrichtigt Visual Studio den Benutzer, dass ein Update verfügbar ist.
+
+   Vorhandene Installationen von Visual Studio in diesem Layout suchen in `\\server\share\VS\ChannelManifest.json` nach Updates. Wenn diese Datei „channelManifest.json“ aktueller als in der Installation des Benutzers ist, benachrichtigt Visual Studio den Benutzer, dass ein Update verfügbar ist.
 
    Bei neuen Installationen wird die aktualisierte Version von Visual Studio direkt und automatisch aus dem Layout installiert.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Steuern der Benachrichtigungen in der Visual Studio IDE
 
+::: moniker range="vs-2017"
+
 Wie zuvor beschrieben, überprüft Visual Studio den Speicherort, von dem aus es installiert wurde (z.B. Netzwerkfreigabe oder Internet), um zu prüfen, ob Updates verfügbar sind. Sobald ein Update verfügbar ist, benachrichtigt Visual Studio den Benutzer mit einem Benachrichtigungshinweis rechts oben im Fenster.
 
- ![Benachrichtigungshinweis für Updates](media/notification-flag.png)
+   ![Benachrichtigungshinweis für Updates](media/notification-flag.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wie zuvor beschrieben, überprüft Visual Studio den Speicherort, von dem aus es installiert wurde (z.B. Netzwerkfreigabe oder Internet), um zu prüfen, ob Updates verfügbar sind. Sobald ein Update verfügbar ist, benachrichtigt Visual Studio den Benutzer mit einem Benachrichtigungssymbol unten rechts im Fenster.
+
+   ![Das Benachrichtigungssymbol in der Visual Studio-IDE](media/vs-2019/notification-bar.png "Das Benachrichtigungssymbol in der Visual Studio-IDE")
+
+::: moniker-end
 
 Sie können die Benachrichtigungen deaktivieren, wenn Sie nicht möchten, dass Benutzer über Updates benachrichtigt werden. (Sie können Benachrichtigungen beispielsweise deaktivieren, wenn Sie Updates über einen zentralen Softwareverteilungsmechanismus übermitteln.)
+
+::: moniker range="vs-2017"
 
 Da Visual Studio 2017 [Registrierungseinträge in einer privaten Registrierung speichert](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), lässt sich die Registrierung nicht auf die übliche Weise direkt bearbeiten. Visual Studio bietet jedoch das Hilfsprogramm `vsregedit.exe`, mit dessen Hilfe Sie die Visual Studio-Einstellungen ändern können. Sie können Benachrichtigungen mit folgendem Befehl deaktivieren:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Da Visual Studio 2019 [Registrierungseinträge in einer privaten Registrierung speichert](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), lässt sich die Registrierung nicht auf die übliche Weise direkt bearbeiten. Visual Studio bietet jedoch das Hilfsprogramm `vsregedit.exe`, mit dessen Hilfe Sie die Visual Studio-Einstellungen ändern können. Sie können Benachrichtigungen mit folgendem Befehl deaktivieren:
+
+```cmd
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
+```
+
+::: moniker-end
 
 (Achten Sie darauf, dass Sie das Verzeichnis ersetzen, damit es der installierten Instanz entspricht, die Sie bearbeiten möchten.)
 
@@ -94,3 +129,4 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Tools zum Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)
+* [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)

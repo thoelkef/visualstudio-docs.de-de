@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985025"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -37,7 +37,7 @@ Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azur
 
     > [!TIP]
     > Obwohl die gebündelte Azure Functions-Runtime und die Vorlagen (CLI) so aktuell wie möglich gehalten werden, veralten sie unvermeidlich. Bei der Erstellung eines neuen Projekts in Azure Functions, überprüft Visual Studio für Mac, ob CLI-Updates vorhanden sind, und informiert Sie gegebenenfalls (siehe Bild unten). Klicken Sie einfach auf die Schaltfläche, um die aktualisierten Vorlagen herunterzuladen.
-    > ![Screenshot: Dialogfeld „Neues Projekt“ mit dem Hinweis, dass Azure Functions-Updates verfügbar sind](media/azure-functions-update.png)
+    > ![Dialogfeld „Neues Projekt“ mit dem Hinweis, dass Azure Functions-Updates verfügbar sind](media/azure-functions-update.png)
 
     Abhängig vom Typ der von Ihnen gewählten Funktion werden Sie auf der nächsten Seite aufgefordert, Details wie beispielsweise Zugriffsrechte einzugeben, wie im folgenden Bild dargestellt:
 
@@ -103,9 +103,9 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
     |Einstellung  |Beschreibung  |
     |---------|---------|
     |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
-    |**Abonnement**|Das zu verwendende Azure-Abonnement.|
+    |**Abonnement**|Das zu verwendende Azure-Abonnement|
     |**[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)**|Der Name der Ressourcengruppe, in der Ihre Funktions-App erstellt werden soll. Wählen Sie **+** aus, um eine neue Ressourcengruppe zu erstellen.|
-    |**[Service-Plan](/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
+    |**[Serviceplan](/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
 
 5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
 
@@ -147,9 +147,7 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
     - Http POST CRUD
     - HTTP-Trigger mit Parametern
 
-
 - **Timer**: Führen Sie eine Bereinigung oder andere Stapelaufgaben für einen vordefinierten Zeitplan aus. Diese Vorlage beinhaltet zwei Felder: ein Name und ein Zeitplan, bei dem es sich um einen CRON-Ausdruck handelt, der aus sechs Feldern besteht. Weitere Informationen finden Sie unter [Erstellen einer Funktion in Azure, die von einem Timer ausgelöst wird](/azure/azure-functions/functions-create-scheduled-function).
-
 
 - **Queue Trigger**: eine Funktion, die auf Meldungen antwortet, wenn diese in die Azure Storage-Warteschlange aufgenommen werden. Neben dem Funktionsnamen beinhaltet diese Vorlage einen **Pfad** (den Namen der Warteschlange, aus der die Meldung gelesen wird) und die Speicherkonto-**Verbindung** (der Name der App-Einstellung mit der Verbindungszeichenfolge des Speicherkontos). Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Queue Storage ausgelöst wird](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
