@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417564"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 In der **Eigenschaften** Fenster, Dialogfelder und Designern, z. B. den Variablen-Designer, bei der Auswahl **nach Typen suchen...** eine Liste der Datentypen, stammt die **durchsuchen, und wählen Sie einen .NET** (Dialogfeld) (in abgekürzter Form als "Typbrowser" bezeichnet). In diesem Dialogfeld können Sie einen Typ aus der Strukturansicht der referenzierten Assemblys und Projekte auswählen.  
@@ -31,7 +31,7 @@ In der **Eigenschaften** Fenster, Dialogfelder und Designern, z. B. den Variable
 - Beim Hinzufügen einer catch-Anweisung für die <xref:System.Activities.Statements.TryCatch>-Aktivität.  
   
 > [!NOTE]
->  Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Finden Sie unter [verzweigte Arrays](http://go.microsoft.com/fwlink/?LinkId=195226) und [mehrdimensionale Arrays](http://go.microsoft.com/fwlink/?LinkId=195227) Details.  
+> Der Typbrowser kann verzweigte Visual Basic-Arraytypen, aber keine mehrdimensionalen Arraytypen anzeigen. Finden Sie unter [verzweigte Arrays](http://go.microsoft.com/fwlink/?LinkId=195226) und [mehrdimensionale Arrays](http://go.microsoft.com/fwlink/?LinkId=195227) Details.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Auswählen eines Werts oder eines Verweistyps im Typbrowser  
   

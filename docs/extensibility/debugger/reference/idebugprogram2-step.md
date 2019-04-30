@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc54f8a01e1bd8c7a35779fdcec66bcb64d01379
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412858"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Führt einen Schritt aus.
 
 > [!NOTE]
->  Diese Methode ist veraltet. Verwenden der [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode stattdessen.
+> Diese Methode ist veraltet. Verwenden der [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode stattdessen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -63,7 +63,7 @@ int Step( 
  Für den Fall, dass alle Threadsynchronisierung oder die Kommunikation zwischen Threads vorhanden ist, sollten andere Threads im Programm ausführen, wird ein Prozedurschritt ein bestimmter Thread ausgeführt.
 
 > [!WARNING]
->  Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
+> Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383417"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
     Klicken Sie auf im Menü Datei auf **ausgewählte Elemente speichern** können Sie die Projektdatei mit Informationen zu den Regelsatz aus, die Sie ausgewählt und dessen Einstellungen.  
   
    > [!TIP]
-   >  In einer realen Situation wird empfohlen, für die Priorisierung der Probleme, die Sie mit der Codeanalyse möchten verwenden für den Einstieg die **Mindestregeln** Regelsatz und beheben Sie die gewünschten Probleme und klicken Sie dann inkrementell hinzufügen Weitere Regeln oder Regelsätze legt fest, zu finden und beheben Sie die zusätzliche Probleme.  
+   > In einer realen Situation wird empfohlen, für die Priorisierung der Probleme, die Sie mit der Codeanalyse möchten verwenden für den Einstieg die **Mindestregeln** Regelsatz und beheben Sie die gewünschten Probleme und klicken Sie dann inkrementell hinzufügen Weitere Regeln oder Regelsätze legt fest, zu finden und beheben Sie die zusätzliche Probleme.  
   
    Als Nächstes werden Sie Code hinzufügen, auf die Klassenbibliothek, die verwendet wird, um Verstöße gegen die CA1704 veranschaulichen "Bezeichner sollten korrekt geschrieben werden" Codeanalyseregel. Weitere Informationen finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

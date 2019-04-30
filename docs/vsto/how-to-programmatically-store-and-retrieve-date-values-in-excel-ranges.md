@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419280"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Vorgehensweise: Programmgesteuertes speichern und Abrufen von Datumswerten in Excel-Bereichen
   Sie können das Speichern und Abrufen von Werten in einer <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein systemeigenes Excel-Bereich-Objekt.
@@ -34,7 +34,7 @@ ms.locfileid: "60082905"
  Wenn Sie einen Datumswert, der am oder nach dem in einem Bereich mit der Office-Entwicklungstools in Visual Studio die 1/1/1900 liegt speichern, wird es in OLE Automation (OA)-Format gespeichert. Verwenden Sie die <xref:System.DateTime.FromOADate%2A> Methode zum Abrufen des Werts von OLE Automation (OA) Datumsangaben. Wenn das Datum älter als 1/1/1900 liegt, wird es als Zeichenfolge gespeichert.
 
 > [!NOTE]
->  Excel-Daten unterscheiden sich von OLE-Automatisierung Datumsangaben für die ersten zwei Monate 1900. Es gibt auch Unterschiede Wenn die **1904-Datumswerte** Option aktiviert ist. In den folgenden Codebeispielen werden diese Unterschiede nicht berücksichtigt.
+> Excel-Daten unterscheiden sich von OLE-Automatisierung Datumsangaben für die ersten zwei Monate 1900. Es gibt auch Unterschiede Wenn die **1904-Datumswerte** Option aktiviert ist. In den folgenden Codebeispielen werden diese Unterschiede nicht berücksichtigt.
 
 ## <a name="use-a-namedrange-control"></a>Verwenden Sie ein NamedRange-Steuerelement
 

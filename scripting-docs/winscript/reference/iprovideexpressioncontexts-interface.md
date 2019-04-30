@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b40825884b3c63af6be6d8bc852a5da4805f8975
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b6ec0d5e17b0d3527252352c2e789adfac4fa859
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410049"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>IProvideExpressionContexts-Schnittstelle
 Bietet eine Möglichkeit zum Aufzählen von Ausdruckskontexten, die von einer bestimmten Komponente bekannt sind. Skript-Engines werden in der Regel diese Schnittstelle implementieren.  
@@ -26,7 +26,7 @@ Bietet eine Möglichkeit zum Aufzählen von Ausdruckskontexten, die von einer be
  Prozessbasierten Debug-Manager verwendet diese Schnittstelle, um alle globalen ausdruckskontexten, die einem bestimmten Thread suchen.  
   
 > [!NOTE]
->  Diese Schnittstelle wird von innerhalb des relevanten Threads aufgerufen werden. Es obliegt dem Implementierer, identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurückgeben.  
+> Diese Schnittstelle wird von innerhalb des relevanten Threads aufgerufen werden. Es obliegt dem Implementierer, identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurückgeben.  
   
 ## <a name="methods"></a>Methoden  
  Zusätzlich zu den von geerbten Methoden `IUnknown`, `IProvideExpressionContexts` Schnittstelle verfügbar macht, die folgenden Methoden.  

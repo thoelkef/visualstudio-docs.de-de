@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416347"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste 
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
     > [!WARNING]
-    >  Sie müssen die entsprechende Version von Visual Studio verwenden, um C++/CLI-Komponententestprojekte für eine frühere Version von .NET Framework für C++ zu erstellen. Sie müssen Service Pack 1 von [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] und [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] installieren, um z.B. auf .NET Framework 3.5 abzuleiten.  
+    > Sie müssen die entsprechende Version von Visual Studio verwenden, um C++/CLI-Komponententestprojekte für eine frühere Version von .NET Framework für C++ zu erstellen. Sie müssen Service Pack 1 von [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] und [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] installieren, um z.B. auf .NET Framework 3.5 abzuleiten.  
   
 2. Klicken Sie unter **Installierte Vorlagen**auf **Visual C ++**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
   

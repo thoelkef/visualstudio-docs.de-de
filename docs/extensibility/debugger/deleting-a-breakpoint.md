@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22cada0aaf77edd241992229c2bd6733be3ccc81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a8f2a4047fb44e2967e281becd90c78f66de9fdb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410017"
 ---
 # <a name="deleting-a-breakpoint"></a>Löschen eines Haltepunkts
 Im folgenden beschreibt den Prozess, wenn einen ausstehenden Haltepunkt zu löschen:
@@ -25,7 +25,7 @@ Im folgenden beschreibt den Prozess, wenn einen ausstehenden Haltepunkt zu lösc
  Ruft die Sitzungs-Debug-Manager (SDM) die [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) Methode, um den ausstehenden Haltepunkt, und alle gebundener Haltepunkte entfernen daraus gebunden.
 
 > [!NOTE]
->  Ein einzelnen gebundener Haltepunkt auch gelöscht werden, durch einen Aufruf von [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Ein einzelnen gebundener Haltepunkt auch gelöscht werden, durch einen Aufruf von [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Aufrufen von debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

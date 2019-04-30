@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412134"
 ---
 # <a name="properties-of-domain-properties"></a>Eigenschaften von Domäneneigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58955505"
 Ein *Domäneneigenschaft* ist eine Funktion eines Modellelements dar, die einen Wert enthalten kann. So kann die Domänenklasse `Person` beispielsweise die Eigenschaften `Name` und `BirthDate` aufweisen. In der DSL-Definition werden die Domäneneigenschaften im Domänenklassenfeld im Diagramm und unter der Domänenklasse im DSL-Explorer aufgelistet. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).  
   
 > [!NOTE]
->  Der Begriff "Eigenschaft" umfasst zwei Verwendungen. Ein *Domäneneigenschaft* ist eine Funktion, die Sie in einer Domänenklasse definieren. Im Gegensatz dazu viele Elemente einer DSL müssen *Eigenschaften*, die finden Sie in der **Eigenschaften** Fenster in der DSL-Definition. Jede Domäneneigenschaft besitzt beispielsweise einen Satz von Eigenschaften, die im vorliegenden Thema beschrieben werden.  
+> Der Begriff "Eigenschaft" umfasst zwei Verwendungen. Ein *Domäneneigenschaft* ist eine Funktion, die Sie in einer Domänenklasse definieren. Im Gegensatz dazu viele Elemente einer DSL müssen *Eigenschaften*, die finden Sie in der **Eigenschaften** Fenster in der DSL-Definition. Jede Domäneneigenschaft besitzt beispielsweise einen Satz von Eigenschaften, die im vorliegenden Thema beschrieben werden.  
   
  Wenn ein Benutzer während der Laufzeit Instanzen der Domänenklasse erstellt, können die Werte der Domäneneigenschaften im Eigenschaftenfenster betrachtet und auf den Formen dargestellt werden.  
   

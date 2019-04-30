@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386005"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
  Festlegen der Reihenfolge zum Durchführen von Aktualisierungen legt die Reihenfolge der Person, die eingefügt, aktualisiert und gelöscht, müssen alle geänderten Daten in allen Tabellen eines Datasets zu speichern. Wenn das hierarchische Update aktiviert ist, werden zuerst die Einfüge-, dann die Update- und anschließend die Löschvorgänge durchgeführt. Der `TableAdapterManager` stellt die `UpdateOrder`-Eigenschaft bereit, die Sie setzen können, um zuerst die Updates und dann die Einfüge- und Löschvorgänge durchzuführen.  
   
 > [!NOTE]
->  Es ist wichtig zu verstehen, dass die Aktualisierungsreihenfolge für alle Vorgänge gilt. D.h., wenn Updates ausgeführt werden, einfügungen und löschungen klicken Sie dann für alle Tabellen im Dataset erfolgen.  
+> Es ist wichtig zu verstehen, dass die Aktualisierungsreihenfolge für alle Vorgänge gilt. D.h., wenn Updates ausgeführt werden, einfügungen und löschungen klicken Sie dann für alle Tabellen im Dataset erfolgen.  
   
  Festlegen der `UpdateOrder` -Eigenschaft, nach dem Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf ein Formular, wählen Sie die `TableAdapterManager` in der Komponentenleiste, und legen Sie dann die `UpdateOrder` -Eigenschaft in der **Eigenschaften** Fenster. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen der Reihenfolge beim Durchführen einer hierarchischen Aktualisierung](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
  Manchmal möchten Sie das DataSet jedoch möglicherweise aus der Sicherungskopie wiederherstellen, Ein Beispiel dafür auftreten, wenn es sich bei Verwendung von automatisch inkrementierten Werten. Angenommen, einen Vorgang nicht erfolgreich ist, automatisch inkrementierten Werten im Dataset nicht zurückgesetzt und weiterhin, dass das Dataset automatisch inkrementierten Werten erstellen. Dadurch wird eine Lücke in den Nummerierung, die möglicherweise nicht in der Anwendung. Für Fälle, in denen dies zu einem Problem führt, stellt der `TableAdapterManager` die `BackupDataSetBeforeUpdate`-Eigenschaft bereit, durch die das vorhandene DataSet beim Fehlschlagen der Transaktion durch eine Sicherungskopie ersetzt wird.  
   
 > [!NOTE]
->  Die Sicherungskopie ist nur im Arbeitsspeicher, während die `TableAdapterManager.UpdateAll` Methode ausgeführt wird. Daher keinen programmgesteuerten Zugriff auf dieses gesicherte Dataset vorhanden ist, da sie das ursprüngliche Dataset ersetzt oder den Gültigkeitsbereich verlässt, sobald die `TableAdapterManager.UpdateAll` Methode die Ausführung abgeschlossen ist.  
+> Die Sicherungskopie ist nur im Arbeitsspeicher, während die `TableAdapterManager.UpdateAll` Methode ausgeführt wird. Daher keinen programmgesteuerten Zugriff auf dieses gesicherte Dataset vorhanden ist, da sie das ursprüngliche Dataset ersetzt oder den Gültigkeitsbereich verlässt, sobald die `TableAdapterManager.UpdateAll` Methode die Ausführung abgeschlossen ist.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Ändern Sie den generierten speichern-Code, um die hierarchische Aktualisierung ausgeführt wird  
  Speichern Sie die Änderungen der verknüpften Tabellen im Dataset in der Datenbank, indem Sie die Methode `TableAdapterManager.UpdateAll` aufrufen und den Namen des Datasets übergeben, der die verknüpften Tabellen enthält. Führen Sie zum Beispiel die Methode `TableAdapterManager.UpdateAll(NorthwindDataset)` aus, um Aktualisierungen von allen Tabellen im NorthwindDataset zur Back-End-Datenbank zu senden.  
@@ -81,7 +81,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
  Der generierte Speichern-Code enthält eine Codezeile, die die Methode `CustomersBindingSource.EndEdit` aufruft. Genauer gesagt ruft der <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Methode des ersten <xref:System.Windows.Forms.BindingSource>zum Formular hinzugefügt wird. Dieser Code wird also nur generiert, für die erste Tabelle, die von gezogen wird die **Datenquellen** auf das Formular. Der Aufruf <xref:System.Windows.Forms.BindingSource.EndEdit%2A> führt ein Commit aller Änderungen durch, die in irgendeinem datengebundenen Steuerelement ablaufen, das derzeit bearbeitet wird. Wenn also ein datengebundenes Steuerelement den Fokus noch besitzt und Sie auf **Speichern** klicken, werden alle ausstehenden Bearbeitungen in diesem Steuerelement committet, bevor der eigentliche Speichervorgang durchgeführt wird (die `TableAdapterManager.UpdateAll`-Methode).  
   
 > [!NOTE]
->  Der Dataset-Designer fügt nur die `BindingSource.EndEdit` Code für die erste Tabelle, die auf dem Formular abgelegt wird. Sie müssen deshalb eine Codezeile zum Aufruf der `BindingSource.EndEdit`-Methode für jede verknüpfte Tabelle auf dem Formular hinzufügen. Für diese exemplarische Vorgehensweise heißt das, dass Sie einen Aufruf zur `OrdersBindingSource.EndEdit`-Methode hinzufügen müssen.  
+> Der Dataset-Designer fügt nur die `BindingSource.EndEdit` Code für die erste Tabelle, die auf dem Formular abgelegt wird. Sie müssen deshalb eine Codezeile zum Aufruf der `BindingSource.EndEdit`-Methode für jede verknüpfte Tabelle auf dem Formular hinzufügen. Für diese exemplarische Vorgehensweise heißt das, dass Sie einen Aufruf zur `OrdersBindingSource.EndEdit`-Methode hinzufügen müssen.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>So aktualisieren Sie den Code für einen Commit der Änderungen zu den verknüpften Tabellen vor dem Speichern  
   
@@ -95,7 +95,7 @@ Hierarchisches Update * bezieht sich auf das Zurückspeichern der aktualisierten
    Neben dem Commit für Änderungen an einer verknüpften untergeordneten Tabelle vor dem Speichern in einer Datenbank müssen Sie vielleicht einen einen Commit der neue erstellten übergeordneten Datensätze durchführen, ehe Sie neue untergeordnete Datensätze dem Dataset hinzufügen. Anders ausgedrückt müssen Sie möglicherweise den neuen übergeordneten Datensatz (Customer) dem Dataset hinzufügen, ehe es die Fremdschlüsseleinschränkungen ermöglichen, dass dem Dataset neue untergeordnete Datensätze (Bestellungen) hinzugefügt werden können. Das erreichen Sie, indem Sie das untergeordnete `BindingSource.AddingNew`-Ereignis verwenden.  
   
 > [!NOTE]
->  Müssen Sie den commit übergeordneter Datensätze je nach für den Typ des Steuerelements, das zum Binden an die Datenquelle verwendet wird. In dieser exemplarischen Vorgehensweise verwenden Sie einzelne Steuerelemente, zum Binden an die übergeordnete Tabelle. Dies erfordert zusätzlichen Code, um den neuen übergeordneten Datensatz zu übernehmen. Wenn die übergeordneten Datensätze stattdessen, in einem komplexen Bindungssteuerelement angezeigt wurden wie der <xref:System.Windows.Forms.DataGridView>, ist dieser zusätzliche <xref:System.Windows.Forms.BindingSource.EndEdit%2A> aufrufen, für der übergeordneten Datensatz nicht erforderlich sein würde. Das liegt daran, dass die zugrunde liegende Datenbindungsfunktion des Steuerelements den Commit neuer Datensätze übernimmt.  
+> Müssen Sie den commit übergeordneter Datensätze je nach für den Typ des Steuerelements, das zum Binden an die Datenquelle verwendet wird. In dieser exemplarischen Vorgehensweise verwenden Sie einzelne Steuerelemente, zum Binden an die übergeordnete Tabelle. Dies erfordert zusätzlichen Code, um den neuen übergeordneten Datensatz zu übernehmen. Wenn die übergeordneten Datensätze stattdessen, in einem komplexen Bindungssteuerelement angezeigt wurden wie der <xref:System.Windows.Forms.DataGridView>, ist dieser zusätzliche <xref:System.Windows.Forms.BindingSource.EndEdit%2A> aufrufen, für der übergeordneten Datensatz nicht erforderlich sein würde. Das liegt daran, dass die zugrunde liegende Datenbindungsfunktion des Steuerelements den Commit neuer Datensätze übernimmt.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>So fügen Sie Code für den Commit übergeordneter Datensätze hinzu, ehe untergeordnete Datensätze hinzufügt werden  
   

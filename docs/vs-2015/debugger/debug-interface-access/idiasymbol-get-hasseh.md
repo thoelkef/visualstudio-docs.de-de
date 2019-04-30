@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33c3cabed451f7117a1d4914d0efe5fdcc5b64dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 659bfc8d01183d58bf122118891fff70a44b77dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410405"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, das angibt, ob die Funktion enthält [Structured Exception Handling (C/C++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (z. B. __try /\__except-Blöcke).  
+Ruft ein Flag, das angibt, ob die Funktion enthält [strukturierte Ausnahmebehandlung (C# /C++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (z. B. __try /\__except-Blöcke).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -41,7 +41,7 @@ HRESULT get_hasSEH(
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="requirements"></a>Anforderungen  
   

@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388600"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertexschattierung
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines Fehlers fehlt, der in der Vertexshader-Stufe auftritt.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:
 
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.
 
--   Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen.
+- Verwenden des Fensters **Grafikpipelinestufen** , um die Wirkung der `DrawIndexed` -Direct3D-API-Aufrufe zu prüfen.
 
--   Verwenden des **HLSL-Debuggers** , um den Vertexshader zu überprüfen.
+- Verwenden des **HLSL-Debuggers** , um den Vertexshader zu überprüfen.
 
--   Verwenden der **Aufrufliste des Grafikereignisses** , um die Quelle einer falschen HLSL-Konstante zu finden.
+- Verwenden der **Aufrufliste des Grafikereignisses** , um die Quelle einer falschen HLSL-Konstante zu finden.
 
 ## <a name="scenario"></a>Szenario
  Eine der häufigsten Ursachen für ein fehlendes Objekt in einer 3D-App besteht darin, dass der Vertexshader die Scheitelpunkte des Objekts in fehlerhafter oder unerwarteter Weise transformiert – beispielsweise wird das Objekt möglicherweise so skaliert, dass es sehr klein ist, oder so transformiert, dass es nicht vor, sondern hinter der Kamera angezeigt wird.
@@ -61,7 +61,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     Im Fenster **Grafikpipelinestufen** zeigt die **Eingabeassembler** -Stufe die Geometrie des Objekts vor dem Transformieren, und die **Vertexshader** -Stufe zeigt dasselbe Objekt nach dem Transformieren. In diesem Fall wissen Sie, dass Sie das fehlende Objekt gefunden haben, wenn es in der **Eingabeassembler** -Stufe angezeigt wird, und wenn in der **Vertexshader** -Stufe nichts angezeigt wird.
 
    > [!NOTE]
-   >  Wenn das Objekt in weiteren Geometriestufen verarbeitet wird – beispielsweise in der Hullshader-, Domainshader- oder Geometryshader-Stufe –, kann die Ursache des Problems in diesen Stufen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.
+   > Wenn das Objekt in weiteren Geometriestufen verarbeitet wird – beispielsweise in der Hullshader-, Domainshader- oder Geometryshader-Stufe –, kann die Ursache des Problems in diesen Stufen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.
 
 4. Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** , dass die Geometrie zwar an die GPU übergeben wurde (gekennzeichnet durch die Eingabeassembler-Miniaturansicht), jedoch nicht im Renderziel angezeigt wird, weil auf der Vertexshader-Stufe ein Problem aufgetreten ist (gekennzeichnet durch die Vertexshader-Miniaturansicht):
 
@@ -104,7 +104,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     ![Der Code, der den Konstantenpuffer festlegt](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.
+   > Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.
 
    Nachdem Sie die Position, an der der Konstantenpuffer gefüllt wird, gefunden und festgestellt haben, dass dessen Werte aus der Variablen `m_marbleConstantBufferData` stammen, müssen Sie im nächsten Schritt herausfinden, wo der `m_marbleConstantBufferData.projection`-Member mit den Nullen gefüllt wird. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.
 

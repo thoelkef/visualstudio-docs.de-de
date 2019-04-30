@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422449"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
  In einem Modell kann z. B. ein Workflow entweder als Tabelle oder Diagramm definiert sein. Anhand des Modells können Sie die Software generieren, die den Workflow ausführt. Wenn sich die Anforderungen der Benutzer ändern, kann der neue Workflow problemlos mit den Benutzern besprochen werden. Die erneute Generierung des Codes anhand des Workflows ist zuverlässiger als die manuelle Aktualisierung des Codes.  
   
 > [!NOTE]
->  Ein *Modell* ist eine Datenquelle, die einen bestimmten Aspekt einer Anwendung beschreibt. Ein Modell kann ein beliebiges Format in einem beliebigen Datei- oder Datenbanktyp aufweisen. Es muss kein bestimmtes Format besitzen, wie z. B. ein UML-Modell oder ein domänenspezifisches Sprachmodell. Typische Modelle werden als Tabellen oder XML-Dateien dargestellt.  
+> Ein *Modell* ist eine Datenquelle, die einen bestimmten Aspekt einer Anwendung beschreibt. Ein Modell kann ein beliebiges Format in einem beliebigen Datei- oder Datenbanktyp aufweisen. Es muss kein bestimmtes Format besitzen, wie z. B. ein UML-Modell oder ein domänenspezifisches Sprachmodell. Typische Modelle werden als Tabellen oder XML-Dateien dargestellt.  
   
  Sie sind wahrscheinlich bereits mit der Codegenerierung vertraut. Beim Definieren von Ressourcen in einem **resx** Datei Ihre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Lösung, die einen Satz von Klassen und Methoden wird automatisch generiert. Durch die Ressourcendatei können die Ressourcen einfacher und zuverlässiger bearbeitet werden als dies beim Bearbeiten der Klassen und Methoden möglich wäre. Mithilfe von Textvorlagen können Sie Code auf die gleiche Weise aus einer selbst entworfenen Quelle generieren.  
   
@@ -74,7 +74,7 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
 6. In **Projektmappen-Explorer**, erweitern Sie den Vorlagendateiknoten und sehen Sie eine Datei mit der Erweiterung **.txt**. Die Datei enthält den Text, der von der Vorlage generiert wird.  
   
     > [!NOTE]
-    >  Ist Ihr Projekt eine Visual Basic-Projekt ist, klicken Sie auf **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.  
+    > Ist Ihr Projekt eine Visual Basic-Projekt ist, klicken Sie auf **alle Dateien anzeigen** um die Ausgabedatei anzuzeigen.  
   
 ### <a name="regenerating-the-code"></a>Erneutes Generieren des Codes  
  In den folgenden Fällen wird eine Vorlage ausgeführt, wobei die untergeordnete Datei generiert wird:  
@@ -141,9 +141,9 @@ T4-Entwurfszeittextvorlagen ermöglichen es Ihnen, Programmcode und andere Datei
   Die Vorlage wird ausgeführt und an den Haltepunkten angehalten. Sie können Variablen prüfen und den Code ganz normal durchlaufen.  
   
 > [!TIP]
->  Mit `debug="true"` wird die Zuordnung des generierten Codes zur Textvorlage genauer, indem mehr Direktiven zur Zeilennummerierungsdirektive in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.  
+> Mit `debug="true"` wird die Zuordnung des generierten Codes zur Textvorlage genauer, indem mehr Direktiven zur Zeilennummerierungsdirektive in den generierten Code eingefügt werden. Wenn Sie diese auslassen, wird die Ausführung möglicherweise durch die Haltepunkte im falschen Zustand angehalten.  
 >   
->  Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.  
+> Sie können jedoch die Klausel in der template-Anweisung lassen, auch wenn Sie nicht debuggen. Dies verursacht nur einen sehr geringen Leistungsverlust.  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generieren von Code oder Ressourcen für die Projektmappe  
  Abhängig vom Modell können verschiedene Programmdateien generiert werden. Ein Modell ist eine Eingabequelle wie eine Datenbank, eine Konfigurationsdatei, ein UML- oder DSL-Modell oder eine andere Quelle. Normalerweise generieren Sie mehrere Programmdateien aus dem gleichen Modell. Sie erstellen zu diesem Zweck eine Vorlagendatei für jede generierte Programmdatei und lassen das gleiche Modell von allen Vorlagen lesen.  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Eine Textvorlage wird in ihrer eigene App-Domäne ausgeführt, und der Zugriff auf Dienste erfolgt durch Marshalling. Unter diesen Umständen ist GetCOMService() zuverlässiger als GetService().  
+> Eine Textvorlage wird in ihrer eigene App-Domäne ausgeführt, und der Zugriff auf Dienste erfolgt durch Marshalling. Unter diesen Umständen ist GetCOMService() zuverlässiger als GetService().  
   
 ## <a name="Regenerating"></a> Automatisches Erneutes Generieren des Codes  
  In der Regel werden mehrere Dateien in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe mit einem Eingabemodell generiert. Jede Datei wird aus einer eigenen Vorlage generiert, die Vorlagen verweisen jedoch alle auf das gleiche Modell.  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 686239ed719a74cc91d9aec1412c81f38ecdd956
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387473"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlichen Konfigurationen. Einige der wichtigsten zusammengesetzte Muster in Visual Studio im Hinblick auf Konsistenz sind:
@@ -431,7 +431,7 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
  Das Hauptkonzept im Listenauswahl ist, dass es basiert auf der Zeile, was bedeutet, dass bei einer die gesamte Zeile Auswahl wird ausgewählt ist, als eine Einheit. Im Gegensatz dazu können Raster bestimmte Zellen ausgewählt werden, ohne Auswirkungen auf andere Aspekte der Zeile. Raster können auch eine Hierarchie von geschachtelten Zeilen (z. B. in einem des Treegrid-Standardsteuerelements) enthalten, mit denen die gesamte Zweige der Hierarchie ausgewählt und durch die Interaktion mit die übergeordneten Zeilen deaktiviert werden. Auswahl in Listen wird durch eine einfache Hervorhebungsfarbe für die gesamte Zeile der Daten angezeigt. Fokus wird angezeigt, von einem gepunkteten einem Pixel-Rahmen um das aktuelle bearbeitbare Zeile oder Zelle (Zeile, wenn alle Zellen schreibgeschützt sind).
 
 > [!NOTE]
->  **Fokus** und **Auswahl** sind unterschiedliche Konzepte. *Fokus* ist ein Hinweis auf die Benutzeroberfläche Element als Ziel verwendet wird um die Eingaben, die nicht explizit an einem anderen Objekt gerichtet erhalten, während er sich *Auswahl* bezieht sich auf den Status eines Objekts Aufnahme in einen Satz von Objekten auf dem nachfolgenden Vorgänge stattfinden können.
+> **Fokus** und **Auswahl** sind unterschiedliche Konzepte. *Fokus* ist ein Hinweis auf die Benutzeroberfläche Element als Ziel verwendet wird um die Eingaben, die nicht explizit an einem anderen Objekt gerichtet erhalten, während er sich *Auswahl* bezieht sich auf den Status eines Objekts Aufnahme in einen Satz von Objekten auf dem nachfolgenden Vorgänge stattfinden können.
 
  Auswahl der in Listen möglicherweise zusammenhängenden, zusammenhanglos, oder die Region. Wenn mehrere Elemente ausgewählt sind, zugelassen, zusammenhängende und nicht zusammenhängenden Auswahl sollte immer unterstützt werden, und bei der Unterstützung für die Auswahl der Region (Feld) ist optional. Auswahl der Region werden durch Ziehen in den Leerraum des Texts Liste initiiert.
 

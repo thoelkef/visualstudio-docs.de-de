@@ -16,26 +16,26 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 619d70b79d75cc45add0d541cd081d9ac0f258d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cce51860b335e16fe507b20e41a5adba0b3fa278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418207"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Auswählen einer Strategie für die ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung. Es hängt primär von der Art der bereitzustellenden Anwendung ab, welche Strategie Sie auswählen. Folgende Strategien sind verfügbar:  
   
--   Installation aus dem Web oder einer Netzwerkfreigabe  
+- Installation aus dem Web oder einer Netzwerkfreigabe  
   
--   Installation von einer CD  
+- Installation von einer CD  
   
--   Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe  
+- Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe  
   
     > [!NOTE]
-    >  Neben einer Bereitstellungsstrategie empfiehlt es sich außerdem, eine Strategie zum Bereitstellen von Anwendungsupdates auszuwählen. Weitere Informationen finden Sie unter [Auswählen einer Strategie der ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
+    > Neben einer Bereitstellungsstrategie empfiehlt es sich außerdem, eine Strategie zum Bereitstellen von Anwendungsupdates auszuwählen. Weitere Informationen finden Sie unter [Auswählen einer Strategie der ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 ## <a name="install-from-the-web-or-a-network-share"></a>Installation aus dem Web oder einer Netzwerkfreigabe  
  Bei dieser Strategie wird die Anwendung auf einem Webserver oder in einer Dateifreigabe im Netzwerk bereitgestellt. Benutzer installieren die Anwendung, indem sie auf ein Symbol auf einer Webseite klicken oder auf ein Symbol in der Dateifreigabe doppelklicken. Die Anwendung wird dann auf den Computer des Endbenutzers heruntergeladen, installiert und gestartet. Dem Menü **Start** und unter **Software** in der **Systemsteuerung** werden Elemente hinzugefügt.  
@@ -61,7 +61,7 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
  Diese Strategie ähnelt der ersten Strategie. Die Anwendung verhält sich jedoch wie eine Webanwendung. Wenn der Benutzer auf einer Webseite auf einen Link klickt (oder in einer Dateifreigabe auf ein Symbol doppelklickt), wird die Anwendung gestartet. Beim Beenden der Anwendung ist diese auf dem lokalen Computer nicht mehr verfügbar. Dem Menü **Start** und unter **Software** in der **Systemsteuerung** wird nichts hinzugefügt.  
   
 > [!NOTE]
->  Technisch gesehen wird die Anwendung in einen Anwendungscache auf dem lokalen Computer heruntergeladen und dort installiert, genauso wie eine Webanwendung in den Webcache heruntergeladen wird. Wie beim Webcache werden die Dateien letztendlich aus dem Anwendungscache gelöscht. Der Benutzer empfindet es jedoch so, als ob die Anwendung aus dem Web oder der Dateifreigabe ausgeführt wird.  
+> Technisch gesehen wird die Anwendung in einen Anwendungscache auf dem lokalen Computer heruntergeladen und dort installiert, genauso wie eine Webanwendung in den Webcache heruntergeladen wird. Wie beim Webcache werden die Dateien letztendlich aus dem Anwendungscache gelöscht. Der Benutzer empfindet es jedoch so, als ob die Anwendung aus dem Web oder der Dateifreigabe ausgeführt wird.  
   
  Diese Strategie funktioniert am besten bei Anwendungen, die selten verwendet werden, z. B. ein Tool zum Berechnen von Lohnzusatzleistungen für Angestellte, das i. d. R. nur einmal im Jahr ausgeführt wird.  
   

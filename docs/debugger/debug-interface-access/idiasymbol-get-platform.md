@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbcad8902a2c3ce86b1127d9317a3901c655372
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df21b974489004a27847e307089b1a65715b076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401123"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 Ruft ab den Plattformtyp aus, für den der Kompiliereinheit kompiliert wurde.
@@ -39,7 +39,7 @@ HRESULT get_platform ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
 
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

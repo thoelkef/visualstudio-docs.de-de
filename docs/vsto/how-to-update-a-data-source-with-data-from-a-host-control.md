@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421015"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements
   Sie können ein Hoststeuerelement an eine Datenquelle binden und die Datenquelle mit den Änderungen aktualisieren, die im Steuerelement an den Daten vorgenommen werden. In diesem Prozess gibt es zwei Hauptschritte:
@@ -61,7 +61,7 @@ ms.locfileid: "60097491"
    - Um die Datenquelle aktualisiert, wenn der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wird diese Eigenschaft auf System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged fest.
 
      > [!NOTE]
-     >  Die System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged-Option gilt nicht für Word-Hoststeuerelemente, da Word keine Angebot Dokument- oder steuerelementänderungen Benachrichtigungen ist. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.
+     > Die System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged-Option gilt nicht für Word-Hoststeuerelemente, da Word keine Angebot Dokument- oder steuerelementänderungen Benachrichtigungen ist. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.
 
      Im folgenden Beispiel wird ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement so konfiguriert, dass die Datenquelle automatisch aktualisiert wird, wenn sich der Wert im Steuerelement ändert. Für dieses Beispiel wird davon ausgegangen, dass Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement namens `namedRange1` haben, dessen <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> -Eigenschaft an ein Feld in einer Datenquelle gebunden ist.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097491"
     - Um die Datenquelle zu aktualisieren, wenn sich der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wählen Sie **OnPropertyChanged**aus.
 
         > [!NOTE]
-        >  Die **OnPropertyChanged** -Option gilt nicht für Word-Hoststeuerelemente, da Word keine Benachrichtigungen über Dokument- oder Steuerelementänderungen bereitstellt. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.
+        > Die **OnPropertyChanged** -Option gilt nicht für Word-Hoststeuerelemente, da Word keine Benachrichtigungen über Dokument- oder Steuerelementänderungen bereitstellt. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.
 
 6. Schließen sie das Dialogfeld **Formatierung und erweiterte Bindung** .
 

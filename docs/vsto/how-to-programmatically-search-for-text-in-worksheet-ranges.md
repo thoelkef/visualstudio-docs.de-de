@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419545"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Vorgehensweise: Programmgesteuertes suchen Sie nach Text in Arbeitsblattbereichen
   Die <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode der <xref:Microsoft.Office.Interop.Excel.Range> -Objekt ermöglicht es Ihnen, um nach Text innerhalb des Bereichs zu suchen. Dieser Text kann auch sein, eine der Fehlerzeichenfolgen, die in einer Arbeitsblattzelle, wie z. B. auftreten können `#NULL!` oder `#VALUE!`. Weitere Informationen zu den Fehlerzeichenfolgen finden Sie unter [Zelle Fehlerwerte](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616975"
  Im folgende Beispiel durchsucht einen Bereich, der mit dem Namen `Fruits` und ändert die Schriftart für die Zellen, die das Wort "Apples" enthalten. Dieses Verfahren verwendet auch die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode, die die zuvor festgelegten verwendet Suchen Sie die Einstellungen für die Suche wiederholen. Sie geben die Zelle nach der gesucht werden soll, und die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> -Methode übernimmt den Rest.
 
 > [!NOTE]
->  Die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode Suche zurück zum Anfang des Suchbereichs umschließt, das Ende des Bereichs erreicht wurde. Ihr Code muss stellen Sie sicher, dass die Suche in einer Endlosschleife nicht um umbrochen wird. Die Beispielprozedur zeigt eine Möglichkeit, mithilfe der <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Eigenschaft.
+> Die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Methode Suche zurück zum Anfang des Suchbereichs umschließt, das Ende des Bereichs erreicht wurde. Ihr Code muss stellen Sie sicher, dass die Suche in einer Endlosschleife nicht um umbrochen wird. Die Beispielprozedur zeigt eine Möglichkeit, mithilfe der <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> Eigenschaft.
 
  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden die Find-Methode in einem Excel-Add-in? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

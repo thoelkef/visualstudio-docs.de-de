@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415172"
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte kolorierbare Elemente
 Sie können die Liste der Typen überschreiben, durch die Implementierung der benutzerdefinierten kolorierbaren Elemente als Teil Ihrer Sprachdienst für die farbliche Kennzeichnung, z. B. Schlüsselwörter und Kommentare.
@@ -28,11 +28,11 @@ Sie können die Liste der Typen überschreiben, durch die Implementierung der be
  Da die IDE überschreibungen der kolorierbaren Elemente, die in verarbeitet der **Schriftarten und Farben** (Dialogfeld), müssen Sie nur jedes benutzerdefiniertes färbbares Element mit einem Namen angeben. Dieser Name ist scheinbar in der **Anzeigeelemente** Liste. Die kolorierbaren Elemente werden in alphabetischer Reihenfolge angezeigt. Um den Sprachdienst benutzerdefinierte kolorierbare Elemente zu gruppieren, können Sie z. B. den Namen durch den Sprachnamen Ihres beginnen **NewLanguage - Kommentar** und **NewLanguage - Schlüsselwort**.
 
 > [!CAUTION]
->  Der Name der Sprache aufzunehmen im Namen kolorierbaren Elements zum Vermeiden von Konflikten mit vorhandenen Namen der kolorierbaren Elements. Wenn Sie den Namen eines kolorierbaren Elemente während der Entwicklung ändern, müssen Sie den Cache zurücksetzen, der erstmalig erstellt wurde, die der kolorierbaren Elemente zugegriffen wurde. Sie können den experimentellen Cache mit Zurücksetzen der **CreateExpInstance** -Tool, das mit Visual Studio SDK, in der Regel im Verzeichnis installiert wird:
+> Der Name der Sprache aufzunehmen im Namen kolorierbaren Elements zum Vermeiden von Konflikten mit vorhandenen Namen der kolorierbaren Elements. Wenn Sie den Namen eines kolorierbaren Elemente während der Entwicklung ändern, müssen Sie den Cache zurücksetzen, der erstmalig erstellt wurde, die der kolorierbaren Elemente zugegriffen wurde. Sie können den experimentellen Cache mit Zurücksetzen der **CreateExpInstance** -Tool, das mit Visual Studio SDK, in der Regel im Verzeichnis installiert wird:
 >
->  *C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  Um den Cache zurückzusetzen, geben Sie **CreateExpInstance/Reset**. Weitere Informationen zu **CreateExpInstance**, finden Sie unter [CreateExpInstance-Hilfsprogramm](../../extensibility/internals/createexpinstance-utility.md).
+> Um den Cache zurückzusetzen, geben Sie **CreateExpInstance/Reset**. Weitere Informationen zu **CreateExpInstance**, finden Sie unter [CreateExpInstance-Hilfsprogramm](../../extensibility/internals/createexpinstance-utility.md).
 
  Das erste Element in der Liste der kolorierbaren Elemente wird nie auf die verwiesen wird. Das erste Element entspricht einem kolorierbaren Elementindex 0 (null) und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] der Standardfarben für Text und die Attribute für dieses Element immer bereitgestellt. Die einfachste Möglichkeit für den Umgang mit diesem nicht referenzierte Element ist ein Platzhalter färbbares Element in der Liste als erstes Element angeben.
 

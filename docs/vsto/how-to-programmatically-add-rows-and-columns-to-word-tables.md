@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419579"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen
   In einer Microsoft Office Word-Tabelle werden die Zellen in Zeilen und Spalten angeordnet. Sie können die <xref:Microsoft.Office.Interop.Word.Rows.Add%2A>-Methode des <xref:Microsoft.Office.Interop.Word.Rows>-Objekts verwenden, um der Tabelle Zeilen hinzuzufügen, und die <xref:Microsoft.Office.Interop.Word.Columns.Add%2A>-Methode des <xref:Microsoft.Office.Interop.Word.Columns>-Objekts, um Spalten hinzuzufügen.
@@ -30,7 +30,7 @@ ms.locfileid: "60078018"
  Die folgenden Codebeispiele können in einer Anpassung auf Dokumentebene verwendet werden. Wenn Sie diese Beispiele verwenden möchten, führen Sie den Code von der `ThisDocument`-Klasse im Projekt aus. In diesen Beispielen wird davon ausgegangen, dass das mit der Anpassung verknüpfte Dokument bereits über mindestens eine Tabelle verfügt.
 
 > [!IMPORTANT]
->  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe einer der folgenden Projektvorlagen erstellen:
+> Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe einer der folgenden Projektvorlagen erstellen:
 >
 > - Word 2013-Dokument
 > - Word 2013-Vorlage
@@ -57,9 +57,9 @@ ms.locfileid: "60078018"
  Die folgenden Codebeispiele können in einem VSTO-Add-In verwendet werden. Wenn Sie diese Beispiele verwenden möchten, führen Sie sie von der `ThisAddIn`-Klasse im Projekt aus. In diesen Beispielen wird davon ausgegangen, dass das aktive Dokument bereits über mindestens eine Tabelle verfügt.
 
 > [!IMPORTANT]
->  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe der VSTO-Add-In-Vorlagen für Word erstellen.
+> Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe der VSTO-Add-In-Vorlagen für Word erstellen.
 >
->  Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Word** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um Zeilen und Spalten zu Tabellen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+> Wenn Sie einen anderen Typ von Projekt diese Aufgabe ausführen möchten, müssen Sie hinzufügen, einen Verweis auf die **Microsoft.Office.Interop.Word** Assembly vorliegt und Sie müssen Klassen aus dieser Assembly verwenden, um Zeilen und Spalten zu Tabellen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für die primäre interop-Assembly von Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
 
 ### <a name="to-add-a-row-to-a-table"></a>So fügen Sie einer Tabelle eine Zeile hinzu
 
