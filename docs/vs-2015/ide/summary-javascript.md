@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zusammenfassung&gt; (JavaScript) | Microsoft-Dokumentation'
+title: '&lt;summary&gt; (JavaScript) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81d41918d61bbe95cfe19d2382535449a47deb8c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431419"
 ---
-# <a name="ltsummarygt-javascript"></a>&lt;Zusammenfassung&gt; (JavaScript)
+# <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gibt die Beschreibung für eine Funktion oder Methode an.  
@@ -33,13 +33,13 @@ Gibt die Beschreibung für eine Funktion oder Methode an.
   
 #### <a name="parameters"></a>Parameter  
  `locid`  
- Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über die Funktion oder Methode. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Element.  
+ Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über die Funktion oder Methode. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Element [\<loc>](../ide/loc-javascript.md) angegeben wird.  
   
  `description`  
  Dies ist optional. Eine Beschreibung der Funktion oder Methode.  
   
 ## <a name="remarks"></a>Anmerkungen  
- Die Elemente verwendet, um Funktionen, mit Anmerkungen versehen, darunter [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md), muss im Funktionstext vor allen Anweisungen platziert werden.  
+ Die Elemente, die verwendet werden, um Funktionen, wie unter anderem [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) und [\<returns>](../ide/returns-javascript.md), mit Anmerkungen zu versehen und müssen vor allen Anweisungen in den Funktionstext eingefügt werden.  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird die Verwendung des `<summary>`-Elements veranschaulicht.  
