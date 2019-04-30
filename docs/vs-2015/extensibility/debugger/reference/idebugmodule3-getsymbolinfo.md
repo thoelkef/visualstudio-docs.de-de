@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426353"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  Wenn die Methode erfolgreich ist, gibt es `S_OK`ist, andernfalls einen Fehlercode zurückgegeben.  
   
 > [!NOTE]
->  Die zurückgegebene Zeichenfolge (in der `MODULE_SYMBOL_SEARCH_INFO` Struktur) kann leer sein. auch wenn `S_OK` zurückgegeben wird. In diesem Fall gab es keine Suchinformationen zurückgegeben.  
+> Die zurückgegebene Zeichenfolge (in der `MODULE_SYMBOL_SEARCH_INFO` Struktur) kann leer sein. auch wenn `S_OK` zurückgegeben wird. In diesem Fall gab es keine Suchinformationen zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn die `bstrVerboseSearchInfo` Feld der `MODULE_SYMBOL_SEARCH_INFO` Struktur ist nicht leer, und es enthält eine Liste von Pfaden, die durchsucht und die Ergebnisse dieser Suche. Die Liste wird mit einem Pfad, gefolgt von Auslassungspunkte ("…"), gefolgt von dem Ergebnis formatiert. Wenn mehr als ein Paar der Path-Ergebnis vorhanden ist, wird jedes Paar von ein Paar aus "\r\n" (Wagenrücklauf/Zeilenvorschub) getrennt. Das Muster sieht folgendermaßen aus:  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  In diesem Beispiel gibt diese Methode drei Pfade mit drei unterschiedliche Ergebnisse zurück. Jede Zeile wird mit einem Paar aus Wagenrücklauf/Zeilenvorschub beendet. Die Beispielausgabe gibt nur die Ergebnisse der Suche als einzelne Zeichenfolge.  
   
 > [!NOTE]
->  Einem statusergebnis ist alles, was unmittelbar nach dem "..." bis zum Ende der Zeile.  
+> Einem statusergebnis ist alles, was unmittelbar nach dem "..." bis zum Ende der Zeile.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

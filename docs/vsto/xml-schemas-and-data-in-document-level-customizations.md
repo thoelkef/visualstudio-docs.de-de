@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421696"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML-Schemas und Daten in Anpassungen auf Dokumentebene
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
@@ -33,7 +33,7 @@ ms.locfileid: "60117928"
  Visual Studio verfügbar gemacht werden Elemente des Schemas in Anpassungen auf Dokumentebene als Steuerelemente in das Programmiermodell zugeordnet. Für Excel fügt Visual Studio-Unterstützung für das Binden von Steuerelementen an Daten in Datenbanken, Webdienste und Objekte. Für Word und Excel fügt Visual Studio-Unterstützung für Aktionsbereiche, die mit einem zugeordneten Schema-Dokument verwendet werden kann, um eine verbesserte benutzerfreundlichkeit für Ihre Lösungen zu erstellen. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  Sie können keine mehrteiligen XML-Schemas in Excel-Projektmappen verwenden.
+> Sie können keine mehrteiligen XML-Schemas in Excel-Projektmappen verwenden.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Objekte, die erstellt, wenn Sie Schemas mit Excel-Arbeitsmappen verbunden sind
  Wenn Sie ein Schema mit einer Arbeitsmappe anfügen, werden von Visual Studio automatisch mehrere Objekte erstellt und dem Projekt hinzugefügt. Diese Objekte sollten nicht gelöscht werden mithilfe von Visual Studio-Tools, das, weil sie von Excel verwaltet werden ist. Um diese zu löschen, entfernen Sie die zugeordneten Elemente aus dem Arbeitsblatt aus, oder trennen Sie das Schema mithilfe von Excel-Tools.
@@ -52,13 +52,13 @@ ms.locfileid: "60117928"
 - BindingSource. Bei der Erstellung einer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> durch ein nicht wiederholendes Schemaelement zuordnen, in das Arbeitsblatt, ein <xref:System.Windows.Forms.BindingSource> wird erstellt und die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement gebunden ist, die <xref:System.Windows.Forms.BindingSource>. Sie müssen das Binden der <xref:System.Windows.Forms.BindingSource> mit einer Instanz von der Datenquelle, die dem Schema zugeordnet, auf das Dokument, z. B. eine Instanz des typisierten <xref:System.Data.DataSet> -Klasse, die erstellt wurde. Erstellen Sie die Bindung durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften, die in verfügbar gemacht werden die **Eigenschaften** Fenster.
 
     > [!NOTE]
-    >  Die <xref:System.Windows.Forms.BindingSource> wird nicht für erstellt <xref:Microsoft.Office.Tools.Excel.ListObject> Objekte. Sie müssen manuell binden die <xref:Microsoft.Office.Tools.Excel.ListObject> an die Datenquelle durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften in der **Eigenschaften** Fenster.
+    > Die <xref:System.Windows.Forms.BindingSource> wird nicht für erstellt <xref:Microsoft.Office.Tools.Excel.ListObject> Objekte. Sie müssen manuell binden die <xref:Microsoft.Office.Tools.Excel.ListObject> an die Datenquelle durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften in der **Eigenschaften** Fenster.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office zugeordnet, Schemas und das Visual Studio-Datenquellen-Fenster
  Sowohl die zugeordneten Schema-Funktionalität von Office und Visual Studio **Datenquellen** Fenster können Sie die präsentieren von Daten in einem Excel-Arbeitsblatt für die berichterstellung oder zu bearbeiten. In beiden Fällen können Sie Datenelemente in das Excel-Arbeitsblatt ziehen. Beide Methoden Steuerelemente erstellen, die über Daten gebunden sind eine <xref:System.Windows.Forms.BindingSource> mit einer Datenquelle, z. B. eine <xref:System.Data.DataSet> oder einen Webdienst.
 
 > [!NOTE]
->  Wenn Sie einem Arbeitsblatt ein sich wiederholendes Schemaelement zuordnen, erstellt Visual Studio eine <xref:Microsoft.Office.Tools.Excel.ListObject>. Die <xref:Microsoft.Office.Tools.Excel.ListObject> nicht automatisch an Daten gebunden ist die <xref:System.Windows.Forms.BindingSource>. Sie müssen manuell binden die <xref:Microsoft.Office.Tools.Excel.ListObject> an die Datenquelle durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften in der **Eigenschaften** Fenster.
+> Wenn Sie einem Arbeitsblatt ein sich wiederholendes Schemaelement zuordnen, erstellt Visual Studio eine <xref:Microsoft.Office.Tools.Excel.ListObject>. Die <xref:Microsoft.Office.Tools.Excel.ListObject> nicht automatisch an Daten gebunden ist die <xref:System.Windows.Forms.BindingSource>. Sie müssen manuell binden die <xref:Microsoft.Office.Tools.Excel.ListObject> an die Datenquelle durch Festlegen der <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> Eigenschaften in der **Eigenschaften** Fenster.
 
  Die folgende Tabelle zeigt einige der Unterschiede zwischen den beiden Methoden.
 

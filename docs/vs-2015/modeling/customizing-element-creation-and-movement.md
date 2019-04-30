@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433272"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
    Sie können beispielsweise Eigenschaften im zusammengeführten-Element festlegen, mit Daten aus die neue Position in das Modell.  
   
 > [!NOTE]
->  Wenn Sie benutzerdefinierte Zusammenführung von Code schreiben, wirkt sich dies nur Zusammenführungen, die mit diesem EMD ausgeführt werden. Wenn andere EMDs, die die gleiche Art von Objekt zusammenführen, oder bei anderen benutzerdefinierter Code, der diese Objekte erstellt werden, ohne die EMD wird dann sie nicht von Ihrem benutzerdefinierten Merge Code betroffen sind.  
+> Wenn Sie benutzerdefinierte Zusammenführung von Code schreiben, wirkt sich dies nur Zusammenführungen, die mit diesem EMD ausgeführt werden. Wenn andere EMDs, die die gleiche Art von Objekt zusammenführen, oder bei anderen benutzerdefinierter Code, der diese Objekte erstellt werden, ohne die EMD wird dann sie nicht von Ihrem benutzerdefinierten Merge Code betroffen sind.  
 >   
->  Wenn Sie sicherstellen, dass ein neues Element oder eine neue Beziehung immer von Ihrem benutzerdefinierten Code verarbeitet wird, können Sie definieren eine `AddRule` in der einbettenden Beziehung und eine `DeleteRule` für das Element die Domänenklasse. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).  
+> Wenn Sie sicherstellen, dass ein neues Element oder eine neue Beziehung immer von Ihrem benutzerdefinierten Code verarbeitet wird, können Sie definieren eine `AddRule` in der einbettenden Beziehung und eine `DeleteRule` für das Element die Domänenklasse. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Beispiel: Definieren eine EMD ohne benutzerdefinierten code  
  Im folgende Beispiel ermöglicht Benutzern, die ein Element und einen Connector zur gleichen Zeit zu erstellen, indem Sie Sie aus der Toolbox auf eine vorhandene Form ziehen. Im Beispiel wird eine EMD der DSL-Definition hinzugefügt. Vor dieser Änderung ist können die Benutzer Tools auf das Diagramm, jedoch nicht auf vorhandene Formen ziehen.  

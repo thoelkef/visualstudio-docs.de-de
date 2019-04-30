@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0365c253626546d824459c580fdf2be1b87ed4ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829088"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Ruft ein Flag, das angibt, ob die Behandlung von Ausnahmen aktiviert ist.
@@ -38,10 +38,10 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="return-value"></a>Rückgabewert
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Behandlung von Ausnahmen wird häufiger als strukturierte Ausnahmebehandlung bezeichnet.
 
- Um zu bestimmen, wenn die C++-Ausnahmebehandlung gültig ist, rufen Sie die [idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) Methode.
+ Bestimmt, ob C++ Behandlung von Ausnahmen in Kraft ist, rufen Sie die [idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) Methode.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447233"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  Die folgende Tabelle zeigt die Methoden der `IDiaSymbol`.  
   
 > [!NOTE]
->  Symbole, aussagekräftige Daten für nur einige dieser Methoden, abhängig von der Typ des Symbols zurück. Wenn eine Methode zurückgibt `S_OK`, und klicken Sie dann diese Methode sinnvolle Daten zurückgegeben hat.  
+> Symbole, aussagekräftige Daten für nur einige dieser Methoden, abhängig von der Typ des Symbols zurück. Wenn eine Methode zurückgibt `S_OK`, und klicken Sie dann diese Methode sinnvolle Daten zurückgegeben hat.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  Dieses Beispiel zeigt, wie die lokalen Variablen für eine Funktion an eine angegebene relative virtuelle Adresse angezeigt wird. Es zeigt auch, wie Symbole verschiedener Typen miteinander verknüpft sind.  
   
 > [!NOTE]
->  `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
+> `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

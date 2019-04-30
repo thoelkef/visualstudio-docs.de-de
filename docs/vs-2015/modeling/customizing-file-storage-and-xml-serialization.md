@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433267"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
  Sie können auch den Programmcode für eine erweiterte Anpassung schreiben.  
   
 > [!NOTE]
->  Wenn das Modell in einem bestimmten Format gespeichert werden soll, aber Sie nicht über dieses Formular erneut laden müssen, sollten Sie mithilfe von Textvorlagen Ausgabe aus dem Modell, anstatt eine benutzerdefinierte Serialisierung-Schema zu generieren. Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Wenn das Modell in einem bestimmten Format gespeichert werden soll, aber Sie nicht über dieses Formular erneut laden müssen, sollten Sie mithilfe von Textvorlagen Ausgabe aus dem Modell, anstatt eine benutzerdefinierte Serialisierung-Schema zu generieren. Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>Modell und die Diagrammdateien  
  Jedes Modell wird in der Regel in zwei Dateien gespeichert:  

@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443963"
 ---
 # <a name="addressing-dpi-issues"></a>Behandeln von DPI-Problemen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Verwenden Sie nicht die Hilfsfunktionen in auf Modulebene Klassen- oder Instanzebene statischen Variablen. Die Bibliothek verwendet auch statische Variablen für die Threadsynchronisierung, und Sie möglicherweise treten Probleme auf Order-Initialisierung. Konvertieren Sie diese statische Variablen in nicht statischen Membervariablen oder umschlossen in eine Funktion (sodass sie beim ersten Zugriff erstellt abrufen).  
+> Verwenden Sie nicht die Hilfsfunktionen in auf Modulebene Klassen- oder Instanzebene statischen Variablen. Die Bibliothek verwendet auch statische Variablen für die Threadsynchronisierung, und Sie möglicherweise treten Probleme auf Order-Initialisierung. Konvertieren Sie diese statische Variablen in nicht statischen Membervariablen oder umschlossen in eine Funktion (sodass sie beim ersten Zugriff erstellt abrufen).  
   
  Um die DPI-Hilfsfunktionen in verwaltetem Code zugreifen zu können, die in Visual Studio-Umgebung ausgeführt wird:  
   

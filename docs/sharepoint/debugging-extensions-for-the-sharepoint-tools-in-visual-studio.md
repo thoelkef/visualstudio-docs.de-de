@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443522"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debuggen von Erweiterungen für SharePoint-Tools in Visual Studio
   Sie können SharePoint-Tools-Erweiterungen in der experimentellen Instanz oder in der regulären Instanz von Visual Studio debuggen. Wenn Sie Fehler im Verhalten einer Erweiterung beheben müssen, können Sie auch Registrierungswerte ändern, um weitere Fehlerinformationen anzuzeigen und die Ausführung von SharePoint-Befehlen durch Visual Studio zu konfigurieren.
@@ -102,7 +102,7 @@ ms.locfileid: "60094397"
 3. In der **verfügbare Prozesse** wählen *vssphost.exe*.
 
     > [!NOTE]
-    >  Wenn vssphost.exe nicht in der Liste angezeigt wird, müssen Sie starten die *vssphost4.exe* verarbeiten, in der Instanz von Visual Studio, die in der Sie die Erweiterung ausgeführt werden. In der Regel führen Sie dazu eine Aktion aus, durch die eine Verbindung von Visual Studio mit der SharePoint-Website auf dem Entwicklungscomputer hergestellt wird. Z. B. Visual Studio startet *vssphost4.exe* beim Erweitern eines Website-Verbindungsknoten (einen Knoten, eine Website-URL angezeigt, wird) unter den **SharePoint-Verbindungen** Knoten in der **Server-Explorer**  Fenster, oder wenn Sie bestimmte SharePoint-Projektelemente, z. B. hinzufügen **Listeninstanz** oder **Ereignisempfänger** Elemente zu einer SharePoint-Projekt.
+    > Wenn vssphost.exe nicht in der Liste angezeigt wird, müssen Sie starten die *vssphost4.exe* verarbeiten, in der Instanz von Visual Studio, die in der Sie die Erweiterung ausgeführt werden. In der Regel führen Sie dazu eine Aktion aus, durch die eine Verbindung von Visual Studio mit der SharePoint-Website auf dem Entwicklungscomputer hergestellt wird. Z. B. Visual Studio startet *vssphost4.exe* beim Erweitern eines Website-Verbindungsknoten (einen Knoten, eine Website-URL angezeigt, wird) unter den **SharePoint-Verbindungen** Knoten in der **Server-Explorer**  Fenster, oder wenn Sie bestimmte SharePoint-Projektelemente, z. B. hinzufügen **Listeninstanz** oder **Ereignisempfänger** Elemente zu einer SharePoint-Projekt.
 
 4. Wählen Sie die **Anfügen** Schaltfläche.
 

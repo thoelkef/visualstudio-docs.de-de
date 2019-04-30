@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427435"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Vorgehensweise: Hinzufügen von XMLMappedRange-Steuerelementen zu Arbeitsblättern
   Wenn Sie ein XML-Element auf eine Zelle in der Microsoft Office Excel zuordnen, fügt Visual Studio automatisch eine <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement Ihrem Arbeitsblatt.
@@ -26,7 +26,7 @@ ms.locfileid: "60085715"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist nicht verfügbar, auf die **Toolbox** oder **Datenquellen** Fenster. Darüber hinaus kann nicht erstellt <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> programmgesteuert gesteuert werden.
+> Die <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist nicht verfügbar, auf die **Toolbox** oder **Datenquellen** Fenster. Darüber hinaus kann nicht erstellt <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> programmgesteuert gesteuert werden.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Zum Hinzufügen von XMLMappedRange-Steuerelement zu einem Arbeitsblatt
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085715"
 3. Auf der **Developer** auf **Quelle**.
 
     > [!NOTE]
-    >  Wenn die **Developer** Registerkarte ist nicht auf dem Menüband angezeigt, müssen Sie es aktivieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Wenn die **Developer** Registerkarte ist nicht auf dem Menüband angezeigt, müssen Sie es aktivieren. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen der Registerkarte "Entwickler" auf dem Menüband](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      Die **XML-Quelle** Aufgabenbereich angezeigt wird.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085715"
      Ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> erstellt und dem Projekt hinzugefügt.
 
     > [!NOTE]
-    >  Wenn Sie ein übergeordnetes Element von Ziehen die **XML-Quelle** klicken Sie im Aufgabenbereich eine <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement wird erstellt.
+    > Wenn Sie ein übergeordnetes Element von Ziehen die **XML-Quelle** klicken Sie im Aufgabenbereich eine <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement wird erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 - [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md)

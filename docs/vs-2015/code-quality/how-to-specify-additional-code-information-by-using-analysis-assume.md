@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426643"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__analysis_assume“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Sie können Hinweise an, die das Codeanalysetool für C/C++-Code angeben, die de
  Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird "true", an dem Punkt ist, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable.  
   
 > [!NOTE]
->  `__analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `__analysis_assume` als keine Aktion definiert ist.  
+> `__analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `__analysis_assume` als keine Aktion definiert ist.  
   
 ## <a name="example"></a>Beispiel  
  Der folgende code verwendet `__analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837822"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Ruft die untergeordneten Elemente des Symbols ab.
@@ -53,7 +53,7 @@ HRESULT findChildren ( 
 ## <a name="return-value"></a>Rückgabewert
  Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls einen Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Diese Methode entspricht dem Aufrufen der [idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md) -Methode mit diesem Symbol als ersten Parameter.
 
 ## <a name="see-also"></a>Siehe auch

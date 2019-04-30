@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832554"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Ermöglicht eine Clientanwendung Bytes einer ausführbaren Datei gemäß anhand der Dateiposition angeben.
@@ -35,7 +35,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 |------------|-----------------|
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Liest die angegebene Anzahl von Bytes beginnend beim angegebenen Offset aus einer ausführbaren Datei an.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die Client-Anwendung implementiert diese Schnittstelle, um die Bytes der ausführbaren Datei mit einem absoluten Offset in der ausführbaren Datei Datei bereitzustellen. Um eine relative virtuelle Adresse zu verwenden, implementieren die [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) Schnittstelle.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer

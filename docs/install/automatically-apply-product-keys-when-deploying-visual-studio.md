@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51cd23fad1aa6964e0d27c20218a13a824ce318d
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974214"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio
 
@@ -48,20 +48,22 @@ Sie können eine installierte Version von Visual Studio mit einem Product Key ak
 
 ::: moniker range="vs-2017"
 
- Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2017 Enterprise mit dem MPC 08860 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
+Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2017 Enterprise mit dem MPC 08860 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
 
- ```cmd
- "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
- ```
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
- Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2019 Enterprise mit dem MPC 09260 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
+Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2019 Enterprise mit dem MPC 09260 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
 
- ```cmd
- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
- ```
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
+```
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446993"
 ---
 # <a name="ribbon-object-model-overview"></a>Übersicht über das Menüband-Objektmodell
   Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ein stark typisierten Objektmodell, mit denen Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit zur Verfügung. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Weitere Informationen finden Sie unter [legen fest, die schreibgeschützt werden](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040715"
  Die folgende Tabelle zeigt die Eigenschaften, die nur vor dem Laden des Menübands festgelegt werden können.
 
 > [!NOTE]
->  Sie können Sie die Eigenschaften der Steuerelemente in dynamischen Menüs jederzeit festlegen. Diese Tabelle ist in diesem Fall nicht gültig.
+> Sie können Sie die Eigenschaften der Steuerelemente in dynamischen Menüs jederzeit festlegen. Diese Tabelle ist in diesem Fall nicht gültig.
 
 |Eigenschaft|Menüband-Steuerelementklasse|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040715"
  Sofern Sie über bedingte Logik verfügen, mit der alle diese Eigenschaften auf einen anderen Wert festgelegt werden, wenn andere Instanzen des Menübands erstellt werden, bleibt dieser Code ohne Wirkung.
 
 > [!NOTE]
->  Sicherstellen, dass die **Namen** -Eigenschaft für jedes Steuerelement, das Sie einem Outlook-Menüband hinzufügen festgelegt ist. Wenn Sie einem Outlook-Menüband zur Laufzeit ein Steuerelement hinzugefügt haben, müssen Sie diese Eigenschaft im Code festlegen. Wenn Sie ein Steuerelement zu einem Outlook-Menüband zur Entwurfszeit hinzufügen, wird die Name-Eigenschaft automatisch festgelegt.
+> Sicherstellen, dass die **Namen** -Eigenschaft für jedes Steuerelement, das Sie einem Outlook-Menüband hinzufügen festgelegt ist. Wenn Sie einem Outlook-Menüband zur Laufzeit ein Steuerelement hinzugefügt haben, müssen Sie diese Eigenschaft im Code festlegen. Wenn Sie ein Steuerelement zu einem Outlook-Menüband zur Entwurfszeit hinzufügen, wird die Name-Eigenschaft automatisch festgelegt.
 
 ## <a name="ribbon-control-events"></a>Menüband-Steuerelementereignisse
  Jede Steuerelementklasse beinhaltet mindestens ein Ereignis. In der folgenden Tabelle werden diese Ereignisse beschrieben.

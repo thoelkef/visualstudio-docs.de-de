@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441513"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Projekte in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützen mehrer
 |MyConfig|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|  
   
 > [!NOTE]
->  Sie können keine Projektmappenkonfiguration "MyConfig" erstellen, die eine Plattform für die "Win32" ausschließt, es sei denn, das Projekt, die, das Sie Anzielen, Win32 nicht unterstützt.  
+> Sie können keine Projektmappenkonfiguration "MyConfig" erstellen, die eine Plattform für die "Win32" ausschließt, es sei denn, das Projekt, die, das Sie Anzielen, Win32 nicht unterstützt.  
   
  Ändern die aktive Konfiguration für eine Lösung wählt den Satz von Projektkonfigurationen, die erstellt, ausführen, Debuggen oder bereitgestellt werden, in dieser Lösung. Wenn Sie die aktive Projektmappenkonfiguration aus Release in Debug ändern, werden in der Projektmappe alle Projekte z. B. automatisch mit der Projekte Konfiguration angegeben, in der Projektmappe-Debug-Konfiguration erstellt. Die Projekte-Konfigurationen sind in der Regel auch benannte Debuggen, wenn der Benutzer die manuelle Änderungen im Konfigurations-Manager der Umgebung vorgenommen hat.  
   

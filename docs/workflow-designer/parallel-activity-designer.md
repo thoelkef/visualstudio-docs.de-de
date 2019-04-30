@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002773"
 ---
 # <a name="parallel-activity-designer"></a>Parallel-Aktivitätsdesigner
 
@@ -33,7 +33,7 @@ Zugriff die **parallele** Aktivitäts-Designer in der **Ablaufsteuerung** Katego
 
 Die **parallele** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** und sich der Workflow-Designer-Oberfläche gelöscht werden, wo Aktivitätsdesigner normalerweise, z. B. in einer platziertwerden**Sequenz** Aktivitäts-Designer. Nach dem Workflow-Designer ablegen, erstellt er eine <xref:System.Activities.Statements.Parallel> -Aktivität, die in der Standardeinstellung enthält ein <xref:System.Activities.Activity.DisplayName%2A> von **Parallel**
 
-Eine Aktivität zum Hinzufügen der <xref:System.Activities.Statements.Parallel.Branches%2A> Auflistung von der parallel-Aktivität, ziehen Sie in beliebigen anderen Aktivitätsdesigner aus der **Toolbox** und legen Sie es auf dem Dreieck innerhalb der **parallele** Aktivitäts-Designer. Die Dreiecke flankieren die in den Branches enthaltenen Aktivitäten. Zusätzliche Aktivitäten können hinzugefügt werden, indem diese Prozedur wiederholt wird. Die Aktivitäten können neu angeordnet werden, per Drag & Drop in die **parallele** Aktivitäts-Designer.
+Eine Aktivität zum Hinzufügen der <xref:System.Activities.Statements.Parallel.Branches%2A> Auflistung von der parallel-Aktivität, ziehen Sie in beliebigen anderen Aktivitätsdesigner aus der **Toolbox** und legen Sie es auf dem Dreieck innerhalb der **parallele** Aktivitäts-Designer. Die Dreiecke flankieren die in den Verzweigungen enthaltenen Aktivitäten. Zusätzliche Aktivitäten können hinzugefügt werden, indem diese Prozedur wiederholt wird. Die Aktivitäten können neu angeordnet werden, per Drag & Drop in die **parallele** Aktivitäts-Designer.
 
 ### <a name="parallel-activity-properties-in-the-workflow-designer"></a>Eigenschaften der Parallel-Aktivität im Workflow-Designer
 

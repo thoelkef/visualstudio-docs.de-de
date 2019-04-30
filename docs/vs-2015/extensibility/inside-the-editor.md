@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414614"
 ---
 # <a name="inside-the-editor"></a>Im Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Der Editor besteht aus einer Reihe von verschiedenen Subsysteme enthalten, die d
  Sie können den Inhalt einer Textmomentaufnahme als eine Folge von Zeichen oder als eine Sequenz von Zeilen anzeigen. Zeichen und Zeilen sind, dass beide indiziert, beginnend mit 0 (null). Eine leerer Text-Momentaufnahme enthält keine Zeichen und eine leere Zeile. Eine Linie als Trennzeichen dient eine beliebige gültige Unicode-Line-Break-Zeichen-Sequenz oder vom Anfang oder Ende des Puffers. Zeilenumbruchzeichen werden explizit in der Textmomentaufnahme dargestellt, und die Zeilenumbrüche in einer Textmomentaufnahme müssen nicht alle identisch sein.  
   
 > [!NOTE]
->  Weitere Informationen zu den Zeilenumbruchzeichen in Visual Studio-Editor, finden Sie unter [Codierungen und Zeilenumbrüche](../ide/encodings-and-line-breaks.md).  
+> Weitere Informationen zu den Zeilenumbruchzeichen in Visual Studio-Editor, finden Sie unter [Codierungen und Zeilenumbrüche](../ide/encodings-and-line-breaks.md).  
   
  Eine Textzeile wird dargestellt, indem ein <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> -Objekt, das von einer Textmomentaufnahme, die für eine bestimmte Zeilennummer oder einer bestimmten Zeichenposition abgerufen werden kann.  
   

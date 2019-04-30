@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436851"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053155"
 Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Teamprojekt mithilfe der Eincheckrichtlinie für die Analyse ausgeführt werden. Codeanalyse erfordert, kann die Qualität des Codes verbessern, die in die CodeBase überprüft wird.  
   
 > [!NOTE]
->  Dieses Feature ist nur verfügbar, wenn Sie Team Foundation Server verwenden.  
+> Dieses Feature ist nur verfügbar, wenn Sie Team Foundation Server verwenden.  
   
  Eincheckrichtlinien für die Analyse in den teamprojekteinstellungen festgelegt werden und gelten für jedes Codeprojekt im Teamprojekt. Codeanalysen werden bei Projekten mit Code in der Projektdatei (XXPROJ) für das Codeprojekt konfiguriert. Codeanalysen werden auf dem lokalen Computer ausgeführt. Wenn Sie eine Eincheckrichtlinie für die Analyse ermöglichen, Dateien in einem Codeprojekt, die eingecheckt werden, nach ihrer letzten Bearbeitung kompiliert werden müssen und eine Codeanalyse ausgeführt werden, mindestens enthält müssen die Regeln in den teamprojekteinstellungen auf dem Computer ausgeführt werden, in c Änderungen es wurden vorgenommen.  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431246"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Vorgehensweise: Hinzufügen einer Entitätstyps zu einem Modell
   Um eine Entität zu erstellen, fügen Sie ein Steuerelement für die Entität aus der Visual Studio **Toolbox** in den Designer für Business Data Connectivity (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089457"
      Ein neuer Bezeichner wird für die Entität angezeigt.
 
     > [!NOTE]
-    >  Sie können den Namen der Entität und den Bezeichner im Ändern der **Eigenschaften** Fenster.
+    > Sie können den Namen der Entität und den Bezeichner im Ändern der **Eigenschaften** Fenster.
 
 4. Definieren Sie die Felder der Entität in einer Klasse ein. Sie können eine neue Klasse zum Projekt hinzufügen oder verwenden Sie eine vorhandene Klasse, die mit anderen Tools wie z. B. den Object Relational Designer (O/R Designer) erstellt. Das folgende Beispiel zeigt eine Entitätsklasse, wenden Sie sich an.
 

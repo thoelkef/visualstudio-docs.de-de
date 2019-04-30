@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442629"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das S
 IntelliSense-Fenster  
   
     > [!NOTE]
-    >  Das IntelliSense-Fenster wird nur angezeigt, wenn Sie Code manuell eingeben. Beim Einfügen von kopiertem Code wird es nicht angezeigt.  
+    > Das IntelliSense-Fenster wird nur angezeigt, wenn Sie Code manuell eingeben. Beim Einfügen von kopiertem Code wird es nicht angezeigt.  
   
      Der Code (samt Kommentar) ist einfacher zu verstehen, wenn Sie sich diesen in kleinen Abschnitten ansehen. Sie können in Programmen `List`-Objekte verwenden, um viele Elemente unterschiedlichen Typs zu speichern. Eine Liste kann Zahlen, Wahr/Falsch-Werte, Text oder andere Objekte enthalten. Sie können auch ein `List`-Objekt verwenden, das andere `List`-Objekte enthält. Die Bestandteile der Liste werden als *Elemente* bezeichnet, und jede Liste enthält nur einen Typ von Element. Eine Liste für Zahlen kann somit nur Zahlen enthalten. Sie können einer solchen Liste keinen Text hinzufügen. Ebenso ist es nicht möglich, einer Liste mit Wahr/Falsch-Werten Zahlen hinzuzufügen.  
   
@@ -51,7 +51,7 @@ IntelliSense-Fenster
      Wenn Sie einen Auflistungsinitialisierer mit einer `new`-Anweisung verwenden, füllt das Programm das neue `List`-Objekt nach seiner Erstellung mit dem Inhalt, der zwischen den geschweiften Klammern angegeben ist. In diesem Fall erhalten Sie eine Liste mit Zeichenfolgen namens **icons** (Symbole). Diese Liste wird so initialisiert, dass sie 16 Zeichenfolgen enthält. Jede dieser Zeichenfolgen ist ein einzelner Buchstabe. Die Buchstaben entsprechen jeweils den Symbolen, die unter den Bezeichnungen angezeigt werden. Das Spiel verfügt also über ein Paar Ausrufezeichen, ein Paar von N-Buchstaben, ein Paar Kommas usw. (Wenn für diese Zeichen die Schriftart Webdings festgelegt wird, werden sie als Symbole dargestellt, beispielsweise als Bus, Fahrrad, Spinne usw.) Das `List`-Objekt verfügt insgesamt über sechzehn Zeichenfolgen, eine für jede Zelle im TableLayoutPanel-Steuerelement.  
   
     > [!NOTE]
-    >  In Visual Basic erhalten Sie das gleiche Ergebnis, aber die Zeichenfolgen werden zuerst in ein temporäres Array eingefügt, das dann in ein `List`-Objekt konvertiert wird. Ein Array ähnelt einer Liste, aber Arrays werden z. B. mit einer festen Größe erstellt. Listen können kürzer oder länger werden, was für dieses Programm wichtig ist.  
+    > In Visual Basic erhalten Sie das gleiche Ergebnis, aber die Zeichenfolgen werden zuerst in ein temporäres Array eingefügt, das dann in ein `List`-Objekt konvertiert wird. Ein Array ähnelt einer Liste, aber Arrays werden z. B. mit einer festen Größe erstellt. Listen können kürzer oder länger werden, was für dieses Programm wichtig ist.  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   

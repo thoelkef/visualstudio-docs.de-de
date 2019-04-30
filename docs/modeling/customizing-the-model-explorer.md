@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445839"
 ---
 # <a name="customizing-the-model-explorer"></a>Anpassen des Modell-Explorers
 Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie folgt ändern:
@@ -59,7 +59,7 @@ Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie 
     Im Explorer sollte angezeigt werden drei **Actor** Knoten mit dem Symbol.
 
 > [!NOTE]
->  Wenn Sie ein Symbol "Knoten" für jedes Element festgelegt haben, die im generierten-Explorer angezeigt wird, werden alle Explorer-Knoten das Symbol angezeigt. Wenn das Symbol "keine" festgelegt wurde, werden der Knoten das Standardsymbol angezeigt.
+> Wenn Sie ein Symbol "Knoten" für jedes Element festgelegt haben, die im generierten-Explorer angezeigt wird, werden alle Explorer-Knoten das Symbol angezeigt. Wenn das Symbol "keine" festgelegt wurde, werden der Knoten das Standardsymbol angezeigt.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Ändern des Namens angezeigt, die auf einem Explorerknoten
  Sie können ändern, wie die Namen von Modellelementen im Explorer angezeigt werden. Das folgende Verfahren zeigt, wie Sie den Namen des Anzeigen der **Aufgabe** auf den verwiesen wird durch eine **Kommentar** im Knoten "Kommentar".

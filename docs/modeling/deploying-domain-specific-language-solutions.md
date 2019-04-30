@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c17160fec7a1e8240edafc28174f1675946b5a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834195"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Bereitstellen von domänenspezifischen Sprachlösungen
 Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. Visual Studio muss bereits auf dem Zielcomputer installiert werden.

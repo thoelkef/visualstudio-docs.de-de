@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436770"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Von den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools wird
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Daten können mit der Sampling- oder der Instrumentationsmethode zur Profilerstellung gesammelt werden.  
   
@@ -42,7 +42,7 @@ Von den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools wird
 - Wenn Sie die Instrumentationsmethode verwenden, verfolgt der Profiler nur die .NET-Speicherbelegungen und Objekte, die von den instrumentierten Modulen generiert werden.  
   
 > [!IMPORTANT]
->  Wenn Sie .NET-Arbeitsspeicherdaten (Belegungen und/oder Objektlebensdauern) mithilfe der Samplingmethode sammeln, werden alle vom Benutzer angegebenen Samplingereignisse ignoriert, und die entsprechenden Speicherbelegungsereignisse werden verwendet, um Daten zu sammeln.  
+> Wenn Sie .NET-Arbeitsspeicherdaten (Belegungen und/oder Objektlebensdauern) mithilfe der Samplingmethode sammeln, werden alle vom Benutzer angegebenen Samplingereignisse ignoriert, und die entsprechenden Speicherbelegungsereignisse werden verwendet, um Daten zu sammeln.  
   
  Wenn Sie die Profilerstellung für die .NET-Speicherbelegung aktivieren, aktivieren Sie auch die Speicherbelegungsansicht. Wenn Sie die Profilerstellung für .NET-Lebensdauerdaten aktivieren, aktivieren Sie auch die Objektlebensdaueransicht. Weitere Informationen finden Sie unter [.NET-Speicherbelegungsansicht](../profiling/dotnet-memory-allocations-view.md) und [Objektlebensdaueransicht](../profiling/object-lifetime-view.md).  
   

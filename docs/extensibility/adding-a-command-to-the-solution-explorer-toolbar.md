@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410161"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls auf der Symbolleiste des Projektmappen-Explorer
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche zum Hinzufügen der **Projektmappen-Explorer** Symbolleiste.
@@ -27,7 +27,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
  Weitere Informationen zu Menüs, Symbolleistenbefehle und *VSCT* finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
->  Verwenden von XML-Command Table (*VSCT*) anstelle der Konfiguration der Befehl-Dateien (*CTC*) Dateien definieren, wie Menüs und Befehle in Ihre VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Verwenden von XML-Command Table (*VSCT*) anstelle der Konfiguration der Befehl-Dateien (*CTC*) Dateien definieren, wie Menüs und Befehle in Ihre VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. VSCT) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

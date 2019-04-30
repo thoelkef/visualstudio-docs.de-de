@@ -2,7 +2,7 @@
 title: Administratorhandbuch für Visual Studio
 titleSuffix: ''
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
-ms.date: 03/30/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951349"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -99,3 +99,4 @@ Weitere Informationen über Kundenfeedbackeinstellungen finden Sie auf der Seite
 * [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Steuern von Updates für Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md)
 * [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)
+* [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)

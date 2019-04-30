@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966756"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Vorgehensweise: Erstellen eines Ereignisempfängers
   Durch das Erstellen *Ereignisempfänger*, können Sie reagieren, wenn ein Benutzer mit SharePoint-Elemente wie Listen oder Listenelemente interagiert. Beispielsweise kann der Code in einem Ereignisempfänger ausgelöst werden, wenn ein Benutzer der Kalender geändert, oder einen Namen aus einer Liste "Kontakte löscht". Anhand der in diesem Thema erhalten Sie, wie Sie eine Listeninstanz eine Ereignisempfänger hinzufügen.

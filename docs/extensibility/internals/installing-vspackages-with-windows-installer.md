@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9cd5f25e1e87ba3db360b328b4f5a245697cba45
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860265"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installieren von VSPackages mit Windows Installer
 Integrieren Ihr VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erfordert mehr als nur kopieren von Dateien auf dem Computer eines Benutzers. Ihre VSPackage Installer muss installieren Sie das VSPackage und dessen abhängigen Dateien hinzu, und registrieren und integrieren Sie sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Das VSPackage kann nutzen Integrationsfeatures wie z. B. das Anzeigen eines Symbols auf die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] splash-Bildschirm und Informationen zum Dialogfeld.

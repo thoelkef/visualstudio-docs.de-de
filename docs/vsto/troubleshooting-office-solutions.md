@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978262"
 ---
 # <a name="troubleshoot-office-solutions"></a>Problembehandlung bei Office-Projektmappen
   Dieser Abschnitt enthält Tipps zur Lösung allgemeiner Probleme, die beim Erstellen von Projektmappen mithilfe von Office-Entwicklungstools in Visual Studio auftreten können.

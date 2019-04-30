@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439806"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Erweiterungspunkte für den Sprachdienst und den Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Verwenden Sie zum Zuordnen eines Inhaltstyps mit einer Dateinamenerweiterung <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.  
   
 > [!NOTE]
->  In Visual Studio Dateinamenerweiterungen Weitere Erweiterungen registriert sind, mithilfe der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> auf ein Sprachpaket für den Dienst. Die <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ordnet einen MEF-Inhaltstyp eine Dateinamenerweiterung, die auf diese Weise registriert wurde.  
+> In Visual Studio Dateinamenerweiterungen Weitere Erweiterungen registriert sind, mithilfe der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> auf ein Sprachpaket für den Dienst. Die <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ordnet einen MEF-Inhaltstyp eine Dateinamenerweiterung, die auf diese Weise registriert wurde.  
   
  Um die Dateinamenerweiterung der Content-Type-Definition exportieren, müssen Sie die folgenden Attribute einschließen:  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: ein Zusatzelement zugeordnet.  
   
   > [!NOTE]
-  >  Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, finden Sie unter der Definition HighlightWordTag in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).  
+  > Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, finden Sie unter der Definition HighlightWordTag in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: zugeordneten Regionen, die erweitert oder reduziert werden, in der Gliederung werden können.  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Verweisen auf den Namen, die, den Sie in das Name-Attribut der Klasse (nicht den Anzeigenamen) festlegen, zum Anwenden dieser Formatdefinition, die ein Tag.  
   
 > [!NOTE]
->  Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, finden Sie unter der HighlightWordFormatDefinition-Klasse in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).  
+> Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, finden Sie unter der HighlightWordFormatDefinition-Klasse in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Erweitern von Randsteuerelementen  
  Zusatzelemente definieren die visuelle Effekte, die hinzugefügt werden können entweder auf den Text, der in einer Textansicht angezeigt wird, oder zeigen Sie auf den Text selbst. Sie können Ihre eigenen Zusatzelement definieren, als jede Art von <xref:System.Windows.UIElement>.  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Darüber hinaus müssen Sie einen Anbieter der gleichen Art implementieren:  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Sie müssen den Anbieter zusammen mit den folgenden Attributen exportieren:  
   
@@ -555,7 +555,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  [Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>Implementieren einen IntelliSense-Controller  
  Wenn einen Controller anpassen möchten, müssen Sie implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> Schnittstelle. Darüber hinaus müssen Sie einen Controller-Anbieter zusammen mit den folgenden Attributen implementieren:  

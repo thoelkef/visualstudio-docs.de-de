@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab8e0712e5bb6f504b5b71a5ef6a3eca59167cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e45d6cadbc74ddcc7b46ee53d2d8cdc8cce63a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434221"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Öffnen Sie ein dynamisches Tool-Fenster
 Toolfenster werden in der Regel von einem Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. In einigen Fällen kann jedoch ein Toolfenster erforderlich, das geöffnet wird, wenn ein bestimmten Benutzeroberflächenkontext gilt, und wird geschlossen, wenn der UI-Kontext nicht mehr gilt. Diese Typen von Toolfenstern heißen *dynamische* oder *automatisch sichtbar*.
 
 > [!NOTE]
->  Eine Liste der vordefinierten benutzeroberflächenkontexte, finden Sie unter <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>.
+> Eine Liste der vordefinierten benutzeroberflächenkontexte, finden Sie unter <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>.
 
  Wenn Sie ein dynamischen Toolfensters beim Start zu öffnen und es ist möglich, für die Erstellung fehlschlägt, müssen Sie implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> Schnittstelle, und Testen Sie die fehlerbedingungen in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> Methode. In der Reihenfolge für die Shell zu wissen, dass Sie ein dynamisches Tool-Fenster verfügen, die beim Start geöffnet werden soll, müssen Sie Hinzufügen der `SupportsDynamicToolOwner` Wert (auf 1 festgelegt) Ihrer Registrierung des Pakets. Dieser Wert ist nicht Bestandteil des Standards <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, daher müssen Sie ein benutzerdefiniertes Attribut, um es hinzuzufügen, erstellen. Weitere Informationen zu benutzerdefinierten Attributen finden Sie unter [verwenden ein benutzerdefinierten registrierungsattributs zum Registrieren einer Erweiterung](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension).
 
  Verwendung <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> um ein Toolfenster zu öffnen. Das Toolfenster wird erstellt, je nach Bedarf.
 
 > [!NOTE]
->  Ein dynamisches Tool-Fenster kann vom Benutzer geschlossen werden. Sollten Sie einen Menübefehl zu erstellen, damit der Benutzer das Toolfenster öffnen kann, sollte der Menübefehl in den gleichen UI-Kontext aktiviert werden, die die Toolfenster und deaktiviert, die andernfalls geöffnet wird.
+> Ein dynamisches Tool-Fenster kann vom Benutzer geschlossen werden. Sollten Sie einen Menübefehl zu erstellen, damit der Benutzer das Toolfenster öffnen kann, sollte der Menübefehl in den gleichen UI-Kontext aktiviert werden, die die Toolfenster und deaktiviert, die andernfalls geöffnet wird.
 
 ## <a name="to-open-a-dynamic-tool-window"></a>Um ein dynamisches Tool-Fenster öffnen
 

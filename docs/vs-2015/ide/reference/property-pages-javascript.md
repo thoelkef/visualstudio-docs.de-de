@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436880"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  Verwenden Sie die folgenden Optionen, um die allgemeinen Eigenschaften des Projekts festzulegen.  
   
 > [!NOTE]
->  Einige Optionen sind nur für Windows Store-Apps verfügbar.  
+> Einige Optionen sind nur für Windows Store-Apps verfügbar.  
   
  **Ausgabepfad**  
  Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird der absolute Pfad im Projekt gespeichert. Der Standardpfad ist "bin\Debug".  
@@ -62,7 +62,7 @@ Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie kö
  Verwenden Sie die folgenden Optionen, um die Eigenschaften für das Debugverhalten im Projekt festzulegen.  
   
 > [!NOTE]
->  Einige Optionen sind nur für Windows Store-Apps verfügbar.  
+> Einige Optionen sind nur für Windows Store-Apps verfügbar.  
   
  **Zu startender Debugger**  
  Gibt den Standardhost für den Debugger an.  

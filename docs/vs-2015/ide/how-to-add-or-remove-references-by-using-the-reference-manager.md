@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445673"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen oder Entfernen von verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 - Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  In Visual Studio 2015 wird anstelle eines Projektverweises ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.  
+    > In Visual Studio 2015 wird anstelle eines Projektverweises ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>So zeigen Sie eine Assembly im Dialogfeld "Verweis hinzufügen" an  
   
@@ -181,7 +181,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
  Ein SDK ist eine Auflistung von Dateien, die Visual Studio als einzelne Komponente behandelt. Auf der Erweiterungsregisterkarte werden SDKs, die sich auf das Projekt beziehen, über das das Dialogfeld **Verweis-Manager** aufgerufen wurde, als einzelne Einträge aufgeführt. Wenn er einem Projekt hinzugefügt wird, wird der gesamte SDK-Inhalt von Visual Studio so verwendet, dass der Benutzer keine weiteren Aktionen ausführen muss, um den SDK-Inhalt in IntelliSense, in der Toolbox, in Designern, im Objektkatalog, im Build, bei der Bereitstellung, beim Debuggen und beim Packen zu nutzen. Informationen über das Anzeigen Ihres SDKs auf der Registerkarte „Erweiterungen“ finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Wenn ein Projekt auf ein SDK verweist, das von einem anderen SKD abhängt, verwendet Visual Studio das zweite SDK nur, wenn der Benutzer einen Verweis auf das zweite SDK manuell hinzufügt. Wenn ein Benutzer ein SDK auf der Registerkarte **Erweiterungen** auswählt, kann der Benutzer mithilfe des Dialogfelds **Verweis-Manager** SDK-Abhängigkeiten identifizieren, indem nicht nur der Name und die Version des SDKs, sondern auch der Name aller SDK-Abhängigkeiten im Detailbereich aufgelistet werden. Wenn ein Benutzer die Abhängigkeiten nicht identifiziert und nur dieses SDK hinzufügt, fordert MSBuild den Benutzer auf, die Abhängigkeiten hinzuzufügen.  
+> Wenn ein Projekt auf ein SDK verweist, das von einem anderen SKD abhängt, verwendet Visual Studio das zweite SDK nur, wenn der Benutzer einen Verweis auf das zweite SDK manuell hinzufügt. Wenn ein Benutzer ein SDK auf der Registerkarte **Erweiterungen** auswählt, kann der Benutzer mithilfe des Dialogfelds **Verweis-Manager** SDK-Abhängigkeiten identifizieren, indem nicht nur der Name und die Version des SDKs, sondern auch der Name aller SDK-Abhängigkeiten im Detailbereich aufgelistet werden. Wenn ein Benutzer die Abhängigkeiten nicht identifiziert und nur dieses SDK hinzufügt, fordert MSBuild den Benutzer auf, die Abhängigkeiten hinzuzufügen.  
   
  Wenn ein Projekttyp keine **Erweiterungen** unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.  
   
@@ -207,7 +207,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
     ```  
   
     > [!NOTE]
-    >  Wenn Sie die Eigenschaft hinzufügen, wird der Build ggf. langsamer ausgeführt.  
+    > Wenn Sie die Eigenschaft hinzufügen, wird der Build ggf. langsamer ausgeführt.  
   
 ## <a name="recent"></a>Zuletzt  
  Assemblys, COM, Windows und Durchsuchen unterstützen jeweils eine Registerkarte "Aktuell", auf der die Liste der Komponenten aufgeführt werden, die Projekten kürzlich hinzugefügt wurden.  

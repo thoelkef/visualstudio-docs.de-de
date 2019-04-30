@@ -12,12 +12,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a1fb236a4ce3b88f97dd94867b8ff5b7403db328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437910"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Der Member IntelliSense-Vervollständigung wird eine QuickInfo, die eine Liste d
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="how-it-works"></a>So funktioniert es  
  Es folgen die beiden Möglichkeiten, die mit die MPF-Klassen, in denen eine Memberliste angezeigt wird:  
@@ -38,7 +38,7 @@ Der Member IntelliSense-Vervollständigung wird eine QuickInfo, die eine Liste d
   
 - Die <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Vervollständigungszeichen Element und legt einen token Trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> für dieses Zeichen.  
   
-  Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In C# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.  
+  Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In c# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.  
   
 ### <a name="the-intellisense-member-list-command"></a>Der IntelliSense-Member-List-Befehl  
  Die <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse und die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode wiederum ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode-Parser, mit der Analyse Grund des <xref:Microsoft.VisualStudio.Package.ParseReason>.  
@@ -97,7 +97,7 @@ namespace TestLanguagePackage
   
  Der Parser aufgerufen wird und <xref:Microsoft.VisualStudio.Package.ParseReason> oder <xref:Microsoft.VisualStudio.Package.ParseReason> Wenn ein Element auf Zeichen eingegeben wird. Den Speicherort, der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt ist, sofort, nachdem das Element ausgewählt haben Zeichen. Der Parser muss die Namen aller Elemente erfasst werden, die in einer Memberliste zum jeweiligen Zeitpunkt im Quellcode angezeigt werden können. Klicken Sie dann analysiert der Parser die aktuelle Zeile aus, um den Bereich zu ermitteln, die, den der Benutzer das Element auf Zeichen zugeordnet möchte.  
   
- Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In C# geschrieben, betrachten Sie die Membervariable `languageService` aufweist eine Art von `LanguageService`eingeben **LanguageService.** erstellt eine Liste aller Member der `LanguageService` Klasse. Auch in C# eingeben **dies.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.  
+ Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In C# geschrieben, betrachten Sie die Membervariable `languageService` aufweist eine Art von `LanguageService`eingeben **LanguageService.** erstellt eine Liste aller Member der `LanguageService` Klasse. Auch in c# eingeben **dies.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.  
   
 ### <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt eine Möglichkeit zum Auffüllen einer <xref:Microsoft.VisualStudio.Package.Declarations> Liste. Dieser Code setzt voraus, dass der Parser eine Deklaration erstellt und fügt es der Liste hinzu, durch den Aufruf einer `AddDeclaration` Methode für die `TestAuthoringScope` Klasse.  

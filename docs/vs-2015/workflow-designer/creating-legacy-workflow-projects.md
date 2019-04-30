@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976970"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Erstellen von Legacyworkflowprojekten
 In diesem Abschnitt wird beschrieben, wie Workflowprojekte mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] erstellt werden, die von  bereitgestellt wird. Die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)] zielt auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ab. Sie finden auch Informationen zur Verwendung der in der nachstehenden Tabelle aufgeführten Workflowprojektvorlagen.  

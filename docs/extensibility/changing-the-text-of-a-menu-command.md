@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92e06345164b9ad147c6ba204773efaa7180b943
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891612"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>Ändern Sie den Text eines Menübefehls
 Die folgenden Schritte zeigen, wie Sie mithilfe der Beschriftung eines Menübefehls Ändern der <xref:System.ComponentModel.Design.IMenuCommandService> Service.

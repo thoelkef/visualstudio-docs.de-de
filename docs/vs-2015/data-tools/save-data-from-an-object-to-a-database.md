@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425060"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
  Standardmäßig werden die DBDirect-Methoden auf einem TableAdapter erstellt, die direkt in der Datenbank ausgeführt werden können. Diese Methoden können direkt aufgerufen werden und erfordern keine <xref:System.Data.DataSet> oder <xref:System.Data.DataTable> Objekte Änderungen abstimmen, um Updates in einer Datenbank zu senden.  
   
 > [!NOTE]
->  Wenn Sie einen TableAdapter konfigurieren, muss die Hauptabfrage genügend Informationen für die DBDirect-Methoden, die erstellt werden, angeben. Z. B. wenn ein TableAdapter zum Abfragen von Daten aus einer Tabelle, die nicht über eine primäre Schlüsselspalte definiert verfügt konfiguriert ist, wird es nicht DBDirect-Methoden generiert.  
+> Wenn Sie einen TableAdapter konfigurieren, muss die Hauptabfrage genügend Informationen für die DBDirect-Methoden, die erstellt werden, angeben. Z. B. wenn ein TableAdapter zum Abfragen von Daten aus einer Tabelle, die nicht über eine primäre Schlüsselspalte definiert verfügt konfiguriert ist, wird es nicht DBDirect-Methoden generiert.  
   
 |TableAdapter-DBDirect-Methode|Beschreibung|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
 - Ändern Sie die Datensätze durch Aufrufen der `TableAdapter.Update` -Methode, indem Sie die neuen Werte zur Aktualisierung des Datensatzes übergeben und in den ursprünglichen Werten den Datensatz gesucht.  
   
     > [!NOTE]
-    >  Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Update` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
+    > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Update` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
   
      Das folgende Beispiel aktualisiert einen vorhandenen Datensatz in die `Customers` Tabelle übergeben Sie die neuen und ursprünglichen Werte in der `Customer` -Objekt an die `TableAdapter.Update` Methode.  
   
@@ -69,7 +69,7 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
 - Löschen Sie die Datensätze durch Aufrufen der `TableAdapter.Delete` -Methode und übergeben die ursprünglichen Werte den Datensatz gesucht.  
   
     > [!NOTE]
-    >  Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Delete` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
+    > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Delete` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
   
      Das folgende Beispiel löscht einen Datensatz aus der `Customers` Tabelle übergeben Sie die ursprünglichen Werte in der `Customer` -Objekt an die `TableAdapter.Delete` Methode.  
   

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37633d02f4b7a9a140b41058a39369fde7f64002
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951156"
 ---
 # <a name="controls-on-office-documents"></a>Steuerelemente für Office-Dokumente
   Sie können die Office-Entwicklungstools in Visual Studio zum Hinzufügen von Windows Forms-Steuerelementen und *Hoststeuerelementen* zu Word-Dokumenten und Excel-Arbeitsblättern verwenden. Hoststeuerelemente sind Objekte, mit denen verschiedene Objekte der Benutzeroberfläche (UI) in den Word- und Excel-Objektmodellen erweitert werden.

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415506"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Vorgehensweise: Standard-Text-Marker hinzufügen
 Verwenden Sie das folgende Verfahren zum Erstellen der standardmäßigen Text Markertypen im Lieferumfang der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor.
@@ -27,7 +27,7 @@ Verwenden Sie das folgende Verfahren zum Erstellen der standardmäßigen Text Ma
      Geben Sie in diesem Methodenaufruf einen Markertyp, einen Textbereich, den Marker aus, zu erstellen und ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle. Diese Methode gibt dann einen Zeiger auf die neu erstellte textmarkierung. Markertypen stammen aus der <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> Enumeration. Geben Sie eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstelle, wenn Sie über Markerereignissen informiert werden möchten.
 
     > [!NOTE]
-    >  Erstellen Sie auf dem Hauptbenutzeroberflächen-Thread nur Textmarkierungen. Der Kern-Editor basiert auf dem Inhalt des Textpuffers Textmarkierungen zu erstellen und der Textpuffer ist nicht threadsicher.
+    > Erstellen Sie auf dem Hauptbenutzeroberflächen-Thread nur Textmarkierungen. Der Kern-Editor basiert auf dem Inhalt des Textpuffers Textmarkierungen zu erstellen und der Textpuffer ist nicht threadsicher.
 
 ## <a name="add-a-custom-command"></a>Fügen Sie einen benutzerdefinierten Befehl hinzu
  Implementieren der `IVsTextMarkerClient` Schnittstelle und Angeben eines Zeigers, von einem Marker verbessert die markerverhalten auf verschiedene Weise. Erstens können Sie die Tipps für Ihre Marke zu generieren und Ausführen von Befehlen. Dadurch können Sie ereignisbenachrichtigungen für die einzelnen Marker erhalten und erstellen ein benutzerdefiniertes Kontextmenü über die Markierung. Verwenden Sie das folgende Verfahren, das Marker-Kontextmenü einen benutzerdefinierten Befehl hinzu.

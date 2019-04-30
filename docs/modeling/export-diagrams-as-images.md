@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994536"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
 In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschützten Formaten, damit Sie freigeben können Projektbeteiligte, Benutzer oder Projektteammitglieder nicht die gleiche Version von Visual Studio verwenden.

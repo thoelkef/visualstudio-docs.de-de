@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440023"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können für den Benutzer auf das Diagramm und in Ihrer Sprache-Explorer angezeigt werden, und können über Programmcode zugegriffen werden. Unterscheiden sich jedoch die Eigenschaften auf die Weise, dass ihre Werte gespeichert werden.
@@ -50,7 +50,7 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
      Dsl\GeneratedCode\DomainClasses.cs oder DomainRelationships.cs wird geöffnet. Über den hervorgehobenen Methodenaufruf, ein Kommentar aufgefordert, eine Implementierung für Get bereitstellen*YourProperty*().
 
     > [!NOTE]
-    >  Diese Datei wird aus "DslDefinition.DSL" generiert. Wenn Sie diese Datei bearbeiten, Ihre Änderungen verloren das nächste Mal, die Sie klicken **alle Vorlagen transformieren**. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
+    > Diese Datei wird aus "DslDefinition.DSL" generiert. Wenn Sie diese Datei bearbeiten, Ihre Änderungen verloren das nächste Mal, die Sie klicken **alle Vorlagen transformieren**. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
 
 6. Erstellen oder öffnen Sie eine Datei in einem separaten Ordner, z. B. CustomCode\\*YourDomainClass*. Cs.
 

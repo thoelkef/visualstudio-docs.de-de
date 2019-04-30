@@ -1,5 +1,5 @@
 ---
-title: 'Generieren neuer Projekte: In die Hintergründe, Teil 2 | Microsoft-Dokumentation'
+title: 'Neue Projektgenerierung: In die Hintergründe, Teil 2 | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909322"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Generieren neuer Projekte: In die Hintergründe Teil 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2
 
 In [Generieren neuer Projekte: In die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) erläutert, wie die **neues Projekt** Dialogfeld Feld wird gefüllt. Angenommen, Sie haben ausgewählt eine **Visual C#-Windows-Anwendung**, ausgefülltes der **Namen** und **Speicherort** Textfelder, und klicken auf OK.
 
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Generieren neuer Projekte: In die Hintergründe Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

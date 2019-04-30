@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425402"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
 5. Hinzufügen von Code zum Anzeigen des XML-Schemas auf Grundlage der XML-Datei in eine <xref:System.Windows.Forms.TextBox> Steuerelement  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü**Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Menübefehle, die Sie sehen, die je nach Ihren aktiven Einstellungen oder die Edition in der Hilfe beschriebenen unterscheiden kann, das Sie verwenden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü**Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  In diesem Schritt erstellen Sie ein Visual Basic oder Visual C#-Projekt, das in dieser exemplarischen Vorgehensweise enthält.  

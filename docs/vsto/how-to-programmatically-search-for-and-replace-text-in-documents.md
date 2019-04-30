@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962027"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Vorgehensweise: Programmgesteuertes suchen und Ersetzen von Text in Dokumenten
   Das <xref:Microsoft.Office.Interop.Word.Find>-Objekt ist ein Element des <xref:Microsoft.Office.Interop.Word.Selection>- und des <xref:Microsoft.Office.Interop.Word.Range>-Objekts, und Sie können eines dieser Objekte verwenden, um in Microsoft Office Word-Dokumenten nach Text zu suchen. Der Befehl "Ersetzen" ist eine Erweiterung des Befehls "Suchen".

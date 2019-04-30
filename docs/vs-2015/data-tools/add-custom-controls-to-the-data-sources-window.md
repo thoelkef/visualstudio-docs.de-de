@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429108"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
  Weitere Informationen zum Auswählen von datengebundenen Steuerelementen für die Erstellung für Elemente in der **Datenquellen** Fenster finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Die Liste der bindungsfähige Steuerelemente für einen Datentyp anpassen  
  Zum Hinzufügen oder entfernen Steuerelemente aus der Liste der verfügbaren Steuerelemente für Elemente in der **Datenquellen** Fenster, das einen bestimmten Datentyp, der die folgenden Schritte ausführen zu müssen.  
@@ -66,7 +66,7 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
 5. In der **zugeordnete Steuerelemente** wählen jedes Steuerelement, das Sie für den ausgewählten Datentyp verfügbar sein soll, oder heben Sie die Auswahl aller Steuerelemente, die Sie aus der Liste entfernen möchten.  
   
     > [!NOTE]
-    >  Wenn das Steuerelement, das Sie auswählen möchten nicht, in angezeigt wird der **zugeordnete Steuerelemente** Feld müssen Sie das Steuerelement zur Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu der Liste der zugeordneten Steuerelemente für einen Datentyp](#addingcontrols).  
+    > Wenn das Steuerelement, das Sie auswählen möchten nicht, in angezeigt wird der **zugeordnete Steuerelemente** Feld müssen Sie das Steuerelement zur Liste hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu der Liste der zugeordneten Steuerelemente für einen Datentyp](#addingcontrols).  
   
 6. Klicken Sie auf **OK**.  
   
@@ -94,7 +94,7 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
 3. In der **zugeordnete Steuerelemente** Feld, das Steuerelement, das Sie gerade hinzugefügt haben, um die **Toolbox** sollte jetzt angezeigt werden.  
   
     > [!NOTE]
-    >  Nur Steuerelemente, die sich innerhalb der aktuellen Projektmappe oder in einer referenzierten Assembly befinden, können die Liste mit den zugehörigen Steuerelementen hinzugefügt werden. (Die Steuerelemente müssen auch eines der Attribute für die Datenbindung in der vorherigen Tabelle implementieren.) Um Daten an ein benutzerdefiniertes Steuerelement zu binden, die in nicht verfügbar ist die **Datenquellen** Fenster ziehen Sie das Steuerelement aus der **Toolbox** auf der Entwurfsoberfläche, und ziehen Sie dann das Element, das aus binden die **Daten Quellen** Fenster auf das Steuerelement.  
+    > Nur Steuerelemente, die sich innerhalb der aktuellen Projektmappe oder in einer referenzierten Assembly befinden, können die Liste mit den zugehörigen Steuerelementen hinzugefügt werden. (Die Steuerelemente müssen auch eines der Attribute für die Datenbindung in der vorherigen Tabelle implementieren.) Um Daten an ein benutzerdefiniertes Steuerelement zu binden, die in nicht verfügbar ist die **Datenquellen** Fenster ziehen Sie das Steuerelement aus der **Toolbox** auf der Entwurfsoberfläche, und ziehen Sie dann das Element, das aus binden die **Daten Quellen** Fenster auf das Steuerelement.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

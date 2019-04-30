@@ -1,5 +1,5 @@
 ---
-title: Projekteinstellungen für eine C++-Debug-Konfiguration
+title: Projekteinstellungen für eine C++ debug-Konfiguration
 ms.custom: seodec18
 ms.date: 11/26/2018
 ms.topic: reference
@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407885"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Projekteinstellungen für eine C++-Debugkonfiguration
 Sie können die projekteinstellungen für eine C- oder Visual C++-Debugkonfiguration im Ändern der **Eigenschaftenseiten** Dialogfeld wie in beschrieben [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.
 
 > [!NOTE]
->  Die debugprojekteinstellungen in der **Konfigurationseigenschaften/Debugging** Kategorie unterscheiden sich für UWP-apps und Komponenten, die in C++ geschrieben sind. Finden Sie unter [Starten einer Debugsitzung (VB, C#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+> Die debugprojekteinstellungen in der **Konfigurationseigenschaften/Debugging** Kategorie unterscheiden sich für UWP-apps und Komponenten, die geschrieben werden, in C++. Finden Sie unter [Starten einer Debugsitzung (VB, c#, C++ und XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
  Jede Debugeigenschafteneinstellung wird automatisch geschrieben und in der Datei "pro Benutzer" gespeichert (. vcxproj.user) für Ihre Lösung, wenn Sie die Projektmappe speichern.
 
@@ -142,8 +142,8 @@ Sie können die projekteinstellungen für eine C- oder Visual C++-Debugkonfigura
 | **Remoteservername** (Remote-Windows-Debugger) | Gibt den Namen eines anderen Remotecomputers an, auf dem Sie eine Anwendung debuggen möchten.<br /><br /> Das RemoteMachine-Buildmakro wird auf den Wert dieser Eigenschaft festgelegt. Weitere Informationen hierzu finden Sie unter [Makros für Buildbefehle und -eigenschaften](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Verbindung** (Remote-Windows-Debugger) | Ermöglicht es Ihnen, für das Remotedebugging zwischen den Verbindungstypen "Standard" und "Ohne Authentifizierung" zu wechseln. Geben Sie im Feld **Remoteservername** den Namen des Remotecomputers an. Folgende Verbindungstypen stehen zur Verfügung:<br /><br /> -   **Remote mit Windows-Authentifizierung**<br />-   **Remote ohne Authentifizierung**<br /><br /> **Hinweis:** Der Remotecomputer ist durch das Remotedebuggen ohne Authentifizierung möglicherweise anfällig für Sicherheitsverletzungen. Der Windows-Authentifizierungsmodus ist sicherer.<br /><br /> Weitere Informationen finden Sie unter [Remote Debugging setup (Einrichten des Remotedebuggens)](../debugger/remote-debugging.md). |
 | **HTTP-URL** (Webdienst- und Webbrowserdebugger) | Gibt die URL zu dem Projekt an, das Sie debuggen. |
-| **Debuggertyp** | Gibt den Typ des zu verwendenden Debuggers an: **Nur nativ**, **Nur verwaltet**, **Nur GPU**, **Gemischt**, **Automatisch** (Standard) oder **Skript**.<br /><br /> -   Die Einstellung **Nur nativ** eignet sich für nicht verwalteten C++-Code.<br />-   Die Einstellung **Nur verwaltet** ist für Code konzipiert, der in der Common Language Runtime ausgeführt wird (verwalteter Code).<br />-   Mit **Gemischt** werden Debugger sowohl für verwalteten als auch für nicht verwalteten Code aufgerufen.<br />-   Die Einstellung **Automatisch** legt den Debuggertyp anhand von Compilerdaten und EXE-Daten fest.<br />-   **Skript** ruft einen Debugger für Skripts auf.<br />-   Die Einstellung **Nur GPU** ist für C++ AMP-Code vorgesehen, der auf einem GPU-Gerät oder im DirectX-Referenzraster ausgeführt wird. Finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md). |
-| **Umgebung** (lokaler Windows-Debugger und Remote Windows-Debugger) | Gibt die Umgebungsvariablen für das Programm an, das Sie debuggen. Verwenden Sie die standardmäßige Umgebungsvariablensyntax (z. B. `PATH="%SystemRoot%\..."`). Je nach Einstellung der **Zusammenführungsumgebung** überschreiben diese Variablen die Systemumgebung oder werden mit der Systemumgebung zusammengeführt. Wenn Sie in der Spalte "Einstellungen" klicken, wird "Bearbeiten...". Wählen Sie diesen Link, um Umgebungsvariablen zu bearbeiten. |
+| **Debuggertyp** | Gibt den Typ des zu verwendenden Debuggers an: **Nur systemeigen**, **nur verwaltet**, **nur GPU**, **gemischt**, **automatisch** (Standard), oder **Skript**.<br /><br /> -   Die Einstellung **Nur nativ** eignet sich für nicht verwalteten C++-Code.<br />-   Die Einstellung **Nur verwaltet** ist für Code konzipiert, der in der Common Language Runtime ausgeführt wird (verwalteter Code).<br />-   Mit **Gemischt** werden Debugger sowohl für verwalteten als auch für nicht verwalteten Code aufgerufen.<br />-   Die Einstellung **Automatisch** legt den Debuggertyp anhand von Compilerdaten und EXE-Daten fest.<br />-   **Skript** ruft einen Debugger für Skripts auf.<br />-   Die Einstellung **Nur GPU** ist für C++ AMP-Code vorgesehen, der auf einem GPU-Gerät oder im DirectX-Referenzraster ausgeführt wird. Finden Sie unter [Debuggen von GPU-Code](../debugger/debugging-gpu-code.md). |
+| **Umgebung** (lokaler Windows-Debugger und Remote Windows-Debugger) | Gibt die Umgebungsvariablen für das Programm an, das Sie debuggen. Verwenden Sie die standardmäßige Umgebungsvariablensyntax (z. B. `PATH="%SystemRoot%\..."`). Je nach Einstellung der **Zusammenführungsumgebung** überschreiben diese Variablen die Systemumgebung oder werden mit der Systemumgebung zusammengeführt. Wenn Sie in der Spalte Einstellungen klicken Sie auf eine "Bearbeiten..." wird angezeigt. Wählen Sie diesen Link, um Umgebungsvariablen zu bearbeiten. |
 | **Zusammenführungsumgebung** (Lokaler Windows-Debugger) | Legt fest, ob die in dem Feld **Umgebung** angegebenen Variablen mit der vom verwendeten Betriebssystem definierten Umgebung zusammengeführt werden. Die Standardeinstellung ist "Ja". |
 | **SQL-Debugging** (alle außer MPI-Clusterdebugger) | Ermöglicht das Debuggen von SQL-Prozeduren über die [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Anwendung. Die Standardeinstellung ist "Nein". |
 | **Debuggingbeschleunigungstyp** (nur GPU-Debugging) | Gibt das für das Debugging zu verwendende GPU-Gerät an. Durch die Installation von Gerätetreibern für kompatible GPU-Geräte werden zusätzliche Optionen hinzugefügt. Die Standardeinstellung lautet **GPU – Softwareemulator**. |
@@ -188,6 +188,6 @@ Zum Debuggen von DLLs, die außerhalb des Projekts sind, finden Sie unter [Debug
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
 - [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
-- [Erstellen und Verwalten von Visual C++-Projekten](/cpp/ide/creating-and-managing-visual-cpp-projects)
+- [Erstellen und Verwalten von Visual C++ Projekte](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
 - [Gängige Makros für Buildbefehle und -eigenschaften](/cpp/ide/common-macros-for-build-commands-and-properties)

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0135d9f782976f1d6ad6e2e09dc95c27cc66d846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976738"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Debuggen von Workflows mit dem Workflow-Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] bietet die Möglichkeit, Workflows und benutzerdefinierte Aktivitäten zu debuggen. Vorgang und Verhalten sind dem des [!INCLUDE[vs2010](../includes/vs2010-md.md)]-Standarddebuggers ähnlich. In den Themen in diesem Abschnitt wird beschrieben, wie Sie die gewohnten Debugprozeduren ausführen sowie XAML und Ausdrücke debuggen können.  

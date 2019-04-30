@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786307"
 ---
 # <a name="isetnextstatement-interface"></a>ISetNextStatement-Schnittstelle
 Diese Schnittstelle wird von einem Interpreter, um den prozessbasierten Debugmanager zum Aktualisieren der aktuellen Anweisung zu ermöglichen, implementiert. Sie wird aus einem Stapel-Frame-Objekt implementiert, und das PDM erhält, diese Schnittstelle über QueryInterface.  

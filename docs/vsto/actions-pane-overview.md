@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440386"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbares **Dokumentaktionen** Aufgabenbereich, der an ein bestimmtes Microsoft Office Word-Dokument oder die Microsoft Office Excel-Arbeitsmappe angefügt ist. Der Bereich "Aktionen" innerhalb der Office-Aufgabenbereich zusammen mit weiteren integrierten Aufgabenbereichen, gehostet wird z. B. die **XML-Quelle** Aufgabenbereich in Excel oder dem **Formatvorlagen und Formatierung** Aufgabenbereich in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
@@ -30,7 +30,7 @@ ms.locfileid: "60099740"
  Sie können einen Aktionsbereich nur in einer Anpassung auf Dokumentebene für Word oder Excel erstellen. In einem VSTO-Add-In können Sie keinen Aktionsbereich erstellen. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekt Typ](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Der Aktionsbereich unterscheidet sich von benutzerdefinierten Aufgabenbereichen. Benutzerdefinierte Aufgabenbereiche sind der Anwendung und keinem bestimmten Dokument zugeordnet. Sie können benutzerdefinierte Aufgabenbereiche in VSTO-Add-Ins für einige Microsoft Office-Anwendungen erstellen. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).
+> Der Aktionsbereich unterscheidet sich von benutzerdefinierten Aufgabenbereichen. Benutzerdefinierte Aufgabenbereiche sind der Anwendung und keinem bestimmten Dokument zugeordnet. Sie können benutzerdefinierte Aufgabenbereiche in VSTO-Add-Ins für einige Microsoft Office-Anwendungen erstellen. Weitere Informationen finden Sie unter [von benutzerdefinierten Aufgabenbereichen](../vsto/custom-task-panes.md).
 
  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden Sie die WPF-Steuerelemente in einem Excel-Aktionsbereich? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099740"
 2. Fügen Sie dem <xref:System.Windows.Forms.UserControl> Windows Forms-Steuerelemente durch Verwendung des Designers oder durch Schreiben von Code hinzu.
 
    > [!NOTE]
-   >  Sie können dem Aktionsbereich auch WPF-Steuerelemente hinzufügen, indem Sie dem Windows Forms-<xref:System.Windows.Forms.UserControl> ein WPF-<xref:System.Windows.Controls.UserControl> hinzufügen. Weitere Informationen finden Sie unter [verwenden WPF-Steuerelemente in Office-Projektmappen](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Sie können dem Aktionsbereich auch WPF-Steuerelemente hinzufügen, indem Sie dem Windows Forms-<xref:System.Windows.Forms.UserControl> ein WPF-<xref:System.Windows.Controls.UserControl> hinzufügen. Weitere Informationen finden Sie unter [verwenden WPF-Steuerelemente in Office-Projektmappen](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Fügen Sie den im `ActionsPane`-Feld enthaltenen Steuerelementen der `ThisWorkbook`-Klasse (für Excel) oder der `ThisDocument`-Klasse (für Word) eine Instanz des benutzerdefinierten Steuerelements im Projekt hinzu.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099740"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Endbenutzer können den Aufgabenbereich jederzeit manuell neu positionieren. Es gibt keine Möglichkeit sicherzustellen, dass der Aufgabenbereich an der Position angedockt bleibt, die Sie programmgesteuert festlegen. Allerdings können Sie Änderungen in Bezug auf die Ausrichtung suchen und sicherstellen, dass die Steuerelemente im Aktionsbereich in der richtigen Richtung gestapelt sind. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Endbenutzer können den Aufgabenbereich jederzeit manuell neu positionieren. Es gibt keine Möglichkeit sicherzustellen, dass der Aufgabenbereich an der Position angedockt bleibt, die Sie programmgesteuert festlegen. Allerdings können Sie Änderungen in Bezug auf die Ausrichtung suchen und sicherstellen, dass die Steuerelemente im Aktionsbereich in der richtigen Richtung gestapelt sind. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Festlegen der <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> und <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> Eigenschaften der <xref:Microsoft.Office.Tools.ActionsPane> seiner Position nicht geändert werden, da die <xref:Microsoft.Office.Tools.ActionsPane> Objekt in den Aufgabenbereich eingebettet ist.
 

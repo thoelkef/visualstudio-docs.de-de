@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434440"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Vorgehensweise: Modell 3D-Geländes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
 2. Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
    > [!TIP]
-   >  Sie können das Ebenenobjekt auf der Entwurfsoberfläche umrahmen, um damit einfacher arbeiten zu können. Klicken Sie im Modus **Auswählen** auf das Ebenenobjekt und anschließend auf der Symbolleiste des Modell-Editors auf die Schaltfläche **Rahmenobjekt**  
+   > Sie können das Ebenenobjekt auf der Entwurfsoberfläche umrahmen, um damit einfacher arbeiten zu können. Klicken Sie im Modus **Auswählen** auf das Ebenenobjekt und anschließend auf der Symbolleiste des Modell-Editors auf die Schaltfläche **Rahmenobjekt**  
   
 3. Gehen Sie in den Flächenauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Fläche auswählen** aus.  
   
@@ -62,7 +62,7 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ge
 7. Ändern Sie einen Punkt, um eine Geländefunktion zu erstellen. Klicken Sie im Punktauswahlmodus auf einen der Punkte und wählen Sie anschließend auf der Symbolleiste des Modell-Editors das Tool **Übertragen** aus. Ein Feld, das den Punkt darstellt, wird auf der Entwurfsoberfläche angezeigt. Verwenden Sie den grünen Pfeil, um das Feld zu verschieben, wodurch die Punkthöhe verändert wird. Wiederholen Sie diesen Schritt für verschiedene Punkte, um interessante Geländefunktionen zu erstellen.  
   
    > [!TIP]
-   >  Sie können mehrere Punkte gleichzeitig auswählen, um sie auf einmal zu bearbeiten.  
+   > Sie können mehrere Punkte gleichzeitig auswählen, um sie auf einmal zu bearbeiten.  
   
    Das Geländemodell ist fertig. Hier ist noch einmal das fertige Modell, bei dem eine Phong-Schattierung angewandt wurde.  
   

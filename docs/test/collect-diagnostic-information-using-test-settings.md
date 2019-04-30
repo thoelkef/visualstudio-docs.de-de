@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823014"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Erfassen von Diagnoseinformationen mithilfe von Testeinstellungen
 
 Sie können *Testeinstellungen* in Visual Studio verwenden, um zusätzliche Daten zu sammeln, während Sie Ihre Tests ausführen. Sie können z. B. ein Video bei der Testdurchführung aufzeichnen. Es gibt für folgende Zwecke Adapter für diagnostische Daten:
 
--   Erfassen jedes Aktionsschritts auf der Benutzeroberfläche im Textformat
+- Erfassen jedes Aktionsschritts auf der Benutzeroberfläche im Textformat
 
--   Aufzeichnen jeder Aktion auf der Benutzeroberfläche zur Wiedergabe
+- Aufzeichnen jeder Aktion auf der Benutzeroberfläche zur Wiedergabe
 
--   Erfassen von Systeminformationen
+- Erfassen von Systeminformationen
 
--   Erfassen von Ereignisprotokolldaten
+- Erfassen von Ereignisprotokolldaten
 
--   Sammeln von IntelliTrace-Daten, um bei der Isolierung nicht reproduzierbarer Fehler zu helfen
+- Sammeln von IntelliTrace-Daten, um bei der Isolierung nicht reproduzierbarer Fehler zu helfen
 
 Adapter für diagnostische Daten können auch verwendet werden, um das Verhalten eines Testcomputers zu ändern. So können Sie beispielsweise mit einer Testeinstellung in Visual Studio verschiedene Engpässe in der Netzwerktopologie emulieren, um die Leistung der Anwendung Ihres Teams auszuwerten.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432673"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Vorgehensweise: Limit Instrumentation auf bestimmte DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 7. Dies ist optional. Klicken Sie mit der rechten Maustaste auf **Ziele** und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere DLL-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.  
   
     > [!NOTE]
-    >  Geben Sie nicht die ausführbare Datei (.exe) an, die die DLLs ausführt.  
+    > Geben Sie nicht die ausführbare Datei (.exe) an, die die DLLs ausführt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   

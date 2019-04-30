@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415482"
 ---
 # <a name="how-to-implement-undo-management"></a>Vorgehensweise: Implementieren von Rückgängig-Verwaltung
 Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, die von der Umgebung implementiert wird. Rückgängig-Verwaltung unterstützen, implementieren separate Rückgängig-Komponenten (d. h. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, mehrere einzelne Schritte enthalten kann.
@@ -75,7 +75,7 @@ Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref
    Die `OleUndoManager` Klasse stellt eine einzelnen Rückgängig-Stack-Instanz dar. Es ist daher ein Rückgängig-Manager-Objekt pro Datenentität, die für das Rückgängigmachen oder Wiederholen nachverfolgt wird.
 
 > [!NOTE]
->  Während die rückgängig-Manager-Serverobjekt umfassend von Text-Editor verwendet wird, ist es eine allgemeine Komponente, die keine bestimmte Unterstützung für den Text-Editor verfügt. Wenn Sie mehrstufige rückgängig- oder Wiederholen-Vorgang unterstützen möchten, können Sie dieses Objekt, zu diesem Zweck.
+> Während die rückgängig-Manager-Serverobjekt umfassend von Text-Editor verwendet wird, ist es eine allgemeine Komponente, die keine bestimmte Unterstützung für den Text-Editor verfügt. Wenn Sie mehrstufige rückgängig- oder Wiederholen-Vorgang unterstützen möchten, können Sie dieses Objekt, zu diesem Zweck.
 
 ## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

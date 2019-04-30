@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437508"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60068872"
 Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie diese Standardtastenkombinationen verwenden. Eine vollständige Liste von Befehlen, denen Standardtastenkombinationen zugeordnet sind, finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
->  Sie können die Tastenkombination für jeden Befehl nachschlagen, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
+> Sie können die Tastenkombination für jeden Befehl nachschlagen, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
 
  **Inhalt**
 

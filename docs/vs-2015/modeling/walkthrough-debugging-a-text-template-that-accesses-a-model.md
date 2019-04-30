@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446735"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087117"
 Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, erhalten Sie möglicherweise Fehler, wenn die Engine die Vorlage auf den Quellcode oder transformiert bei der Kompilierung des generierten Codes. Die folgende exemplarische Vorgehensweise veranschaulicht einige der Dinge, die Sie tun können, um das Debuggen einer Textvorlage.  
   
 > [!NOTE]
->  Weitere Informationen zu Vorlagen im Allgemeinen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Weitere Informationen zum Debuggen von Textvorlagen finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer Textvorlage](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+> Weitere Informationen zu Vorlagen im Allgemeinen finden Sie unter [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Weitere Informationen zum Debuggen von Textvorlagen finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer Textvorlage](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Lösung einer domänenspezifischen Sprache  
  In diesem Verfahren erstellen Sie eine domänenspezifische Sprache-Lösung, die die folgenden Merkmale aufweist:  
@@ -58,7 +58,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
 1. Ersetzen Sie den Code in "DebugTest.tt" durch den folgenden Code ein:  
   
     > [!NOTE]
-    >  Der Code enthält einen Fehler. Sie werden den Fehler eingeführt, um es zu debuggen.  
+    > Der Code enthält einen Fehler. Sie werden den Fehler eingeführt, um es zu debuggen.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ Wenn Sie ändern oder Hinzufügen von Textvorlagen in einer DSL-Projektmappe, er
 1. Ersetzen Sie den Code in "DebugTest.tt" durch den folgenden Code ein:  
   
     > [!NOTE]
-    >  Der Code enthält einen Fehler. Sie werden den Fehler eingeführt, um es zu debuggen.  
+    > Der Code enthält einen Fehler. Sie werden den Fehler eingeführt, um es zu debuggen.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

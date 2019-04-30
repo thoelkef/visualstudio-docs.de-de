@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435006"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Ihrer DSL-Definition ist eine Plattform, auf der Sie einen Reihe leistungsstarke
  `} }`  
   
 > [!NOTE]
->  Um Methoden in einer generierten Klasse zu überschreiben, Schreiben von Code immer in eine Datei, die von die generierten Dateien getrennt ist. In der Regel ist die Datei in einem Ordner enthalten, mit dem Namen CustomCode. Wenn Sie Änderungen an den generierten Code vornehmen, geht diese verloren, wenn Sie den Code aus der DSL-Definition erneut generieren.  
+> Um Methoden in einer generierten Klasse zu überschreiben, Schreiben von Code immer in eine Datei, die von die generierten Dateien getrennt ist. In der Regel ist die Datei in einem Ordner enthalten, mit dem Namen CustomCode. Wenn Sie Änderungen an den generierten Code vornehmen, geht diese verloren, wenn Sie den Code aus der DSL-Definition erneut generieren.  
   
  Geben Sie zum Ermitteln von welche Methoden Sie außer Kraft setzen können **überschreiben** in der Klasse, gefolgt von einem Leerzeichen. Die IntelliSense-QuickInfo informiert Sie, welche Methoden überschrieben werden können.  
   

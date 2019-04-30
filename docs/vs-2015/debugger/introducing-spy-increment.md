@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d7a758a40ed5cee6a42994170ca35188e942db7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431458"
 ---
 # <a name="introducing-spy"></a>Einführung in Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Mit Spy++ können Sie die folgenden Aufgaben ausführen:
   Sie können in verschiedenen Spy++-Fenstern einen Rechtsklick ausführen, um ein Kontextmenü mit häufig verwendeten Befehlen anzuzeigen. Welche Befehle angezeigt werden, hängt davon ab, wo sich der Zeiger befindet. Wenn Sie zum Beispiel in der Fensteransicht mit der rechten Maustaste auf einen Eintrag klicken, das ausgewählte Fenster sichtbar ist und Sie anschließend im Kontextmenü auf **Hervorheben** klicken, blinkt der Rahmen des ausgewählten Fensters auf, sodass Sie es leichter finden können.  
   
 > [!NOTE]
->  Es gibt zwei weitere Hilfsprogramme, die Spy++ ähneln: PView, das Informationen über Prozesse und Threads und DDESPY anzeigt. EXE-Datei, Sie können die (DDE, Dynamic Data Exchange)-Nachrichten zu überwachen.  
+> Es gibt zwei weitere Hilfsprogramme, die Spy++ ähneln: PView, das Informationen über Prozesse und Threads und DDESPY anzeigt. EXE-Datei, Sie können die (DDE, Dynamic Data Exchange)-Nachrichten zu überwachen.  
   
 ## <a name="64-bit-operating-systems"></a>64-Bit-Betriebssysteme  
  Es gibt zwei Versionen von Spy++. Die erste Version namens Spy++ (spyxx.exe) dient zum Anzeigen von Nachrichten an ein Fenster, das in einem 32-Bit-Prozess ausgeführt wird. Visual Studio wird z.B. in einem 32-Bit-Prozess ausgeführt. Sie können Spy++ daher dazu verwenden, um Nachrichten an den **Projektmappen-Explorer**anzuzeigen. Da die Standardkonfiguration für die meisten Builds in Visual Studio in einem 32-Bit-Prozess ausgeführt wird, ist diese erste Version von Spy++ diejenige, die im Menü unter **Extras** in Visual Studio verfügbar ist.  
@@ -52,7 +52,7 @@ Mit Spy++ können Sie die folgenden Aufgaben ausführen:
  Sie können beide Versionen von Spy++ direkt über die Befehlszeile ausführen.  
   
 > [!NOTE]
->  Obwohl der Dateiname von Spy++ (64-Bit) „amd“ enthält, kann die Datei auf allen x64-Betriebssystemen von Windows aufgeführt werden.  
+> Obwohl der Dateiname von Spy++ (64-Bit) „amd“ enthält, kann die Datei auf allen x64-Betriebssystemen von Windows aufgeführt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Spy++](../debugger/using-spy-increment.md)   

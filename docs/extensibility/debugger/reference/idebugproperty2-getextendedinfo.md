@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869533"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Ruft Informationen für die Eigenschaft erweitert werden.
@@ -55,7 +55,7 @@ int GetExtendedInfo ( 
 
  Die folgenden GUIDs werden in der Regel von dieser Methode erkannt (die GUID-Werte sind für C#-Code angegeben, da der Name nicht in einer beliebigen Assembly verfügbar ist). Zusätzliche GUIDs können für die interne Verwendung erstellt werden.
 
-|name|GUID|Beschreibung|
+|Name|GUID|Beschreibung|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Gibt eine `IUnknown` Schnittstelle, um das Dokument. In der Regel die [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle erhalten Sie von dieser `IUnknown` Schnittstelle.|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Gibt eine `IUnknown` Schnittstelle, um den Dokumentenkontext. In der Regel die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle erhalten Sie von dieser `IUnknown` Schnittstelle.|

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418633"
 ---
 # <a name="elimination-of-sak-files"></a>Beseitigung von ~ SAK-Dateien
 Im Datenquellen-Steuerelement-Plug-in-API 1.2 die *~ SAK* Dateien wurden durch funktionsflags ersetzt, und neue Funktionen, die erkennen, ob eine Quelle steuern-Plug-in unterstützt die *MSSCCPRJ* Datei- und freigegebene ausgecheckte Elemente nicht.
@@ -48,7 +48,7 @@ Die IDE kann für Plug-ins, die erweiterten Funktionen in die Datenquellen-Steue
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  Wenn dieser Registrierungsschlüssel, um festgelegt ist *DWORD: 00000000*, dies entspricht dem Schlüssel, die nicht vorhandene wird und Visual Studio weiterhin versucht wird, um die temporären Dateien zu erstellen. Jedoch, wenn der Registrierungsschlüssel, um festgelegt ist *DWORD: 00000001*, versucht Visual Studio nicht zur Erstellung der temporären Dateien. Stattdessen es wird davon ausgegangen, dass das Quellcodeverwaltungs-Plug-in nicht unterstützt. die *MSSCCPRJ.SCC* Datei und nicht freigegebene ausgecheckte Elemente nicht unterstützt.
+> Wenn dieser Registrierungsschlüssel, um festgelegt ist *DWORD: 00000000*, dies entspricht dem Schlüssel, die nicht vorhandene wird und Visual Studio weiterhin versucht wird, um die temporären Dateien zu erstellen. Jedoch, wenn der Registrierungsschlüssel, um festgelegt ist *DWORD: 00000001*, versucht Visual Studio nicht zur Erstellung der temporären Dateien. Stattdessen es wird davon ausgegangen, dass das Quellcodeverwaltungs-Plug-in nicht unterstützt. die *MSSCCPRJ.SCC* Datei und nicht freigegebene ausgecheckte Elemente nicht unterstützt.
 
 ## <a name="see-also"></a>Siehe auch
 - [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

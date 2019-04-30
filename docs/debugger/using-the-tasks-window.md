@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901588"
 ---
-# <a name="using-the-tasks-window-c-visual-basic-c"></a>Verwenden das Fenster "Aufgaben" (C#, Visual Basic, C++)
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>Verwenden das Fenster "Aufgaben" (C#, Visual Basic C++)
 
 Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werden jedoch Informationen zu jedem <xref:System.Threading.Tasks.Task?displayProperty=fullName>-, [task_handle](/cpp/parallel/concrt/reference/task-group-class)- oder [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10))-Objekt anstatt für die einzelnen Threads angezeigt. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden.
 
@@ -68,7 +68,7 @@ In den Spalten im Fenster **Aufgaben** sind die folgenden Informationen angegebe
  ![Ansicht "Kontextmenü" im Fenster "Aufgaben"](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Sortieren von Aufgaben
- Wenn Sie Aufgaben nach Spaltenkriterien sortieren möchten, klicken Sie auf den Spaltenheader. Beispielsweise, indem Sie auf die **ID** Spaltenüberschrift klicken, können Sie die Aufgaben nach Aufgaben-ID sortieren: Und so weiter. Klicken Sie erneut auf den Spaltenheader, um die Sortierreihenfolge umzukehren. Die aktuelle Sortierspalte und die Sortierreihenfolge werden durch einen Pfeil in der Spalte angegeben.
+ Wenn Sie Aufgaben nach Spaltenkriterien sortieren möchten, klicken Sie auf den Spaltenheader. Beispielsweise, indem Sie auf die **ID** Spaltenüberschrift klicken, können Sie die Aufgaben nach Aufgaben-ID sortieren: 1,2,3,4,5 und So weiter. Klicken Sie erneut auf den Spaltenheader, um die Sortierreihenfolge umzukehren. Die aktuelle Sortierspalte und die Sortierreihenfolge werden durch einen Pfeil in der Spalte angegeben.
 
 ## <a name="grouping-tasks"></a>Gruppieren von Aufgaben
  Sie können Aufgaben nach jeder Spalte in der Listenansicht gruppieren. Wenn Sie beispielsweise mit der rechten Maustaste auf den Spaltenheader **Status** klicken und anschließend auf **Gruppieren nach** > **[*Status*]** klicken, können Sie alle Aufgaben gruppieren, die denselben Status aufweisen. Beispielsweise können Sie schnell erkennen, Tasks erwartet, sodass Sie untersuchen können, welchen Gründen diese blockiert werden. Sie können auch Gruppen reduzieren, die während der Debugsitzung nicht von Interesse sind. Auf die gleiche Weise können Sie nach den anderen Spalten gruppieren. Eine Gruppe kann gekennzeichnet bzw. die Kennzeichnung einer Gruppe kann aufgehoben werden, indem Sie auf die Schaltfläche neben dem Gruppenheader klicken. In der folgenden Abbildung wird das Fenster **Aufgaben** im gruppierten Modus dargestellt.

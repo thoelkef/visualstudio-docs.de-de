@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426948"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
    Beispiele finden Sie in der [Visualisierungs- und Modellierungs-SDK-Website](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
->  Sie können auch das Verhalten einiger vorhandener Befehle wie Ausschneiden, Einfügen, Alle auswählen und Drucken ändern, indem Sie die entsprechenden Methoden in "CommandSet.cs" überschreiben. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+> Sie können auch das Verhalten einiger vorhandener Befehle wie Ausschneiden, Einfügen, Alle auswählen und Drucken ändern, indem Sie die entsprechenden Methoden in "CommandSet.cs" überschreiben. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern ein Standardmenübefehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="defining-a-command-using-mef"></a>Definieren eines Befehls mit MEF  
  Managed Extension Framework (MEF) bietet eine alternative Möglichkeit, Menübefehle im Diagrammmenü zu definieren. Sein Hauptzweck besteht darin, Ihnen oder anderen Personen die Erweiterung einer DSL zu ermöglichen. Benutzer können entweder nur die DSL oder die DSL und Erweiterungen installieren. Nach dem anfänglichen Aufwand der Aktivierung von MEF für die DSL vereinfacht MEF jedoch das Definieren von Kontextmenübefehlen.  
@@ -90,7 +90,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
     ```  
   
     > [!NOTE]
-    >  Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Der GUID-Namen und ID-Namen werden in tatsächliche GUIDs und numerische IDs im übersetzt die `<Symbols>` Knoten.  
+    > Jede Schaltfläche oder Gruppe wird durch eine GUID und eine ganzzahlige ID identifiziert. Sie können mehrere Gruppen und Schaltflächen mit derselben GUID erstellen. Alle Gruppen und Schaltflächen müssen jedoch unterschiedliche IDs aufweisen. Der GUID-Namen und ID-Namen werden in tatsächliche GUIDs und numerische IDs im übersetzt die `<Symbols>` Knoten.  
   
 3. Fügen Sie eine Sichtbarkeitseinschränkung für den Befehl hinzu, sodass er nur im Kontext der domänenspezifischen Sprache geladen wird. Weitere Informationen finden Sie unter [VisibilityConstraints-Element](../extensibility/visibilityconstraints-element.md).  
   
@@ -120,7 +120,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen, d
 5. Ersetzen Sie `{000...000}` durch eine GUID, die Ihre Gruppen und Menüelemente identifiziert. Um eine neue GUID abzurufen, verwenden die **GUID erstellen** tool die **Tools** Menü.  
   
     > [!NOTE]
-    >  Wenn Sie mehrere Gruppen oder Menüelemente hinzufügen, können Sie dieselbe GUID verwenden. Sie müssen aber neue Werte für `IDSymbols` verwenden.  
+    > Wenn Sie mehrere Gruppen oder Menüelemente hinzufügen, können Sie dieselbe GUID verwenden. Sie müssen aber neue Werte für `IDSymbols` verwenden.  
   
 6. Ersetzen Sie in dem Code, den Sie aus diesem Verfahren kopiert haben, jedes Vorkommen der folgenden Zeichenfolgen durch Ihre eigenen Zeichenfolgen:  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Verwenden Sie denselben GUID-Wert, wie Sie in eingefügt **Commands.vsct**.  
   
 > [!NOTE]
->  Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.  
+> Wenn Sie den Abschnitt "Symbols" in der VSCT-Datei ändern, müssen Sie auch diese Deklarationen entsprechend ändern. Außerdem sollten Sie die Versionsnummer in Package.tt erhöhen.  
   
  Registrieren Sie Ihre Menübefehle im Rahmen dieses Befehlssatzes. `GetMenuCommands()` wird einmalig bei der Initialisierung des Diagramms aufgerufen:  
   

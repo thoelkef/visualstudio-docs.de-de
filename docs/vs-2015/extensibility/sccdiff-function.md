@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432464"
 ---
 # <a name="sccdiff-function"></a>SccDiff-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Das Quellcodeverwaltungs-Plug-In können Leistung zu optimieren, basierte auf einer Prüfsumme oder einen Zeitstempel anstelle der Byte-pro-Byte-Vergleich für aufgerufen werden, indem Sie Alternative `SCC_DIFF_CONTENTS`: Diese Formen des Vergleichs werden offensichtlich schneller, aber weniger zuverlässig. Nicht alle Quellcode-Verwaltungssysteme können diese Vergleichsmethoden alternative unterstützen, und das plug-in möglicherweise beim ausweichen auf einen Vergleich der Inhalte. Alle Quellcodeverwaltungs-Plug-ins muss mindestens einen Vergleich Inhalt unterstützen.  
   
 > [!NOTE]
->  Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.  
+> Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.  
   
 |`fOption`|Bedeutung|  
 |---------------|-------------|  

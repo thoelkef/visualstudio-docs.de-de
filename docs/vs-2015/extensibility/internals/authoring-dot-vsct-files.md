@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437670"
 ---
 # <a name="authoring-vsct-files"></a>Erstellen. VSCT-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
     Festlegen der `guid` und `id` Attribute der `Menu` -Element, und legen die `type` -Attribut auf die Art des Menüs werden sollen. Sie können auch festlegen, die `priority` Attribut zu, um die relative Position des Menüs in der übergeordneten Gruppe herzustellen.  
   
    > [!NOTE]
-   >  Die `priority` Attribut gelten nicht für Symbolleisten und Kontextmenüs.  
+   > Die `priority` Attribut gelten nicht für Symbolleisten und Kontextmenüs.  
   
 2. Alle Befehle in Visual Studio-IDE müssen von Befehlsgruppen gehostet werden, die die direkten untergeordneten Elemente von Menüs und Symbolleisten sind. Wenn Sie neue Menüs oder Symbolleisten der IDE hinzufügen, müssen diese neue Befehlsgruppen enthalten. Sie können auch Befehlsgruppen zu vorhandenen Menüs und Symbolleisten hinzufügen, sodass Sie Ihre Befehle visuell gruppieren können.  
   
@@ -99,14 +99,14 @@ Diesem Dokument wird erläutert, wie Sie eine VSCT-Datei zum Hinzufügen von Men
    1. Legen Sie die `guid` und `id` Attribute der einzelnen `Button` -Element, und legen anschließend die `type` -Attribut auf die Art der gewünschte Schaltfläche. Sie können auch festlegen, die `priority` Attribut zu, um die relative Position des Befehls in der übergeordneten Gruppe herzustellen.  
   
       > [!NOTE]
-      >  Verwendung `type="button"` für standardmäßigen Menübefehle und Schaltflächen in Symbolleisten.  
+      > Verwendung `type="button"` für standardmäßigen Menübefehle und Schaltflächen in Symbolleisten.  
   
    2. In der `Button` -Element, Hinzufügen einer [Zeichenfolgen](../../extensibility/strings-element.md) -Element, enthält eine [ButtonText](../../extensibility/buttontext-element.md) Element und ein [CommandName](../../extensibility/commandname-element.md) Element. Die `ButtonText` -Element stellt die textbezeichnung für ein Menüelement oder die QuickInfo für eine Symbolleisten-Schaltfläche bereit. Die `CommandName` Element enthält den Namen des Befehls, der auch im Befehl verwenden.  
   
    3. Wenn der Befehl ein Symbol verfügt, erstellen eine [Symbol](../../extensibility/icon-element.md) Element in der `Button` -Element, und legen dessen `guid` und `id` Attribute der `Bitmap` -Element für das Symbol.  
   
       > [!NOTE]
-      >  Symbolleisten-Schaltflächen müssen Symbole.  
+      > Symbolleisten-Schaltflächen müssen Symbole.  
   
       Weitere Informationen finden Sie unter [MenuCommands im Vergleich. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   

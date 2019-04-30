@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974981"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 
@@ -320,9 +320,6 @@ Ein Textwert ist erforderlich. Dieser Text bezeichnet den eindeutigen Bezeichner
 
 Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt verwendet werden.
 
-> [!NOTE]
-> Das `Import`-Element wird nur für Visual Basic-Projekte unterstützt.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt v
 ## <a name="imports-element"></a>Imports-Element
 
 Gruppiert einzelne `Import`-Elemente.
-
-> [!NOTE]
-> Das `Imports`-Element wird nur für Visual Basic-Projekte unterstützt.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Literale und Objekte können kein **ID**-Element mit dem Wert „selected“ ode
 
 ## <a name="namespace-element"></a>Namespace-Element
 
-Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschnitts importiert werden muss. Der im `Namespace`-Element angegebene Namespace wird automatisch einer `Imports`-Anweisung am Anfang des Codes hinzugefügt, sofern er nicht bereits vorhanden ist.
-
-> [!NOTE]
-> Das `Namespace`-Element wird nur für Visual Basic-Projekte unterstützt.
+Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschnitts importiert werden muss. Der im `Namespace`-Element angegebene Namespace wird automatisch einer `using`- oder `Imports`-Anweisung am Anfang des Codes hinzugefügt, sofern er nicht bereits vorhanden ist.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ Gibt an, wie Visual Studio den Codeausschnitt einfügt.
 
 Der Textwert muss einer der folgenden Werte sein:
 
--   `SurroundsWith`: Der Codeausschnitt kann ein ausgewähltes Codeelement umschließen.
+- `SurroundsWith`: Der Codeausschnitt kann ein ausgewähltes Codeelement umschließen.
 
--   `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.
+- `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.
 
--   `Refactoring`: Der Codeausschnitt wird während des C#-Refactorings verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.
+- `Refactoring`: Der Codeausschnitt wird während des C#-Refactorings verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.
 
 ## <a name="snippettypes-element"></a>SnippetTypes-Element
 

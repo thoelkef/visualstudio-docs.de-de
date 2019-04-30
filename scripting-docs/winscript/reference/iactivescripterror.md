@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954992"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 Ein Objekt, das diese Schnittstelle implementiert wird, übergeben die [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) -Methode auf, wenn die Skript-Engine einen nicht behandelten Fehler auftritt. Der Host ruft dann die Methoden für dieses Objekt zum Abrufen von Informationen über den Fehler, die aufgetreten sind.  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b52628b016893353c83e998a1e395118807a31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406616"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.
@@ -40,23 +40,23 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien (*.exe*) und die Assemblys der Anwendung befinden.
 
 > [!NOTE]
->  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z.B. Dokumente, zu speichern.
+> Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z.B. Dokumente, zu speichern.
 
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Markieren von Datendateien in einer ClickOnce-Verteilung
- Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [How to: Include a Data File in a ClickOnce Application (Vorgehensweise: Hinzufügen einer Datendatei zu einer ClickOnce-Anwendung)](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
 #### <a name="read-from-and-write-to-the-data-directory"></a>Lesen und Schreiben in das Datenverzeichnis
  Zum Lesen aus dem Datenverzeichnis muss Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung eine Leseberechtigung anfordern; analog dazu erfordert das Schreiben in das Verzeichnis eine Schreibberechtigung. Ihre Anwendung verfügt automatisch über diese Berechtigung, wenn sie für die Ausführung mit voller Vertrauenswürdigkeit konfiguriert ist. Weitere Informationen zum Erhöhen von Berechtigungen für die Anwendung unter Verwendung der Berechtigungserweiterung oder der Bereitstellung vertrauenswürdiger Anwendungen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
->  Wenn Ihre Organisation die Bereitstellung vertrauenswürdiger Anwendungen nicht verwendet und die Berechtigungserweiterung deaktiviert hat, schlägt die Assertion der Berechtigungen fehl.
+> Wenn Ihre Organisation die Bereitstellung vertrauenswürdiger Anwendungen nicht verwendet und die Berechtigungserweiterung deaktiviert hat, schlägt die Assertion der Berechtigungen fehl.
 
  Nachdem die Anwendung über diese Berechtigungen verfügt, kann sie auf das Datenverzeichnis zugreifen, indem sie Methodenaufrufe für Klassen innerhalb von <xref:System.IO>verwendet. Den Pfad des Datenverzeichnisses innerhalb einer Windows Forms [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung erhalten Sie mithilfe der in der <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> -Eigenschaft von <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> definierten <xref:System.Deployment.Application.ApplicationDeployment>-Eigenschaft. Dies ist die einfachste und empfohlene Möglichkeit, auf Ihre Daten zuzugreifen. Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit einer Textdatei mit dem Namen *CSV.txt* vorgehen, die Sie als Datendatei in die Bereitstellung aufgenommen haben.
 
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
 
- Weitere Informationen über die Kennzeichnung von Dateien in der Bereitstellung als Datendateien finden Sie unter [Vorgehensweise: Hinzufügen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Weitere Informationen über die Kennzeichnung von Bereitstellungsdateien als Datendateien finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
  Sie können den Pfad zum Datenverzeichnis auch mit den relevanten Variablen in der <xref:System.Windows.Forms.Application> -Klasse wie z. B. <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>abrufen.
 
@@ -109,4 +109,4 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 
 ## <a name="see-also"></a>Siehe auch
 
-- [How to: Include a Data File in a ClickOnce Application (Vorgehensweise: Hinzufügen einer Datendatei zu einer ClickOnce-Anwendung)](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+- [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

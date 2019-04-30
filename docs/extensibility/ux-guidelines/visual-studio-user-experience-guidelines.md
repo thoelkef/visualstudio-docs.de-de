@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553652"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
 Führen Sie den Visual Studio User Experience Guidelines, wenn Sie neue Funktionen für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen über allgemeine Benutzer-Modelle und interaktionsmustern, damit Designer neue Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die nahtlose und einheitliche, in der Entwicklungsumgebung sind.

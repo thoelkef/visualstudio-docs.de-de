@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440802"
 ---
 # <a name="vspackage-registration"></a>VSPackage-Registrierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ ms.locfileid: "60074557"
 VSPackages müssen empfehlen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , dass diese installiert werden und sollte geladen werden. Dieser Prozess erfolgt durch das Schreiben von Informationen in der Registrierung. Das ist ein typischer Auftrag eines Installationsprogramms.  
   
 > [!NOTE]
->  Es ist eine akzeptierte Methode während der Entwicklung von VSPackage selbstregistrierung verwenden. Allerdings [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] Partner darf nicht ihre Produkte mithilfe der Self-Registrierung als Teil des Setups ausgeliefert.  
+> Es ist eine akzeptierte Methode während der Entwicklung von VSPackage selbstregistrierung verwenden. Allerdings [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] Partner darf nicht ihre Produkte mithilfe der Self-Registrierung als Teil des Setups ausgeliefert.  
   
  Registrierungseinträge in einer Windows Installer-Paket werden in der Regel in der Tabelle der Registrierung vorgenommen. Sie können Erweiterungen auch in der Tabelle für die Registrierung registrieren. Windows Installer bietet jedoch integrierten Unterstützung durch den Programmbezeichner (ProgId), Klasse, Erweiterung und Verb-Tabellen. Weitere Informationen finden Sie unter [Datenbanktabellen](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Achten Sie darauf, dass Ihre Einträge in der Registrierung der Komponente zugeordnet sind, die für Ihre gewählte Strategie zur Seite-an-Seite geeignet ist. Registrierungseinträge für eine freigegebene Datei sollte z. B. Windows Installer-Komponente der Datei zugeordnet werden. Auch sollte Registrierungseinträge für eine Datei hängt von der Version dieser Datei der Komponente zugeordnet sein. Andernfalls installieren oder deinstallieren Sie das VSPackage für eine Version der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] konnte Ihr VSPackage in anderen Versionen unterbrechen. Weitere Informationen finden Sie unter [unterstützt mehrere Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
 > [!NOTE]
->  Die einfachste Möglichkeit zum Verwalten der Registrierung werden die gleichen Daten in die gleichen Dateien für entwicklerregistrierung und Installation-Registrierung verwenden. Beispielsweise können einige Installer-Entwicklungstools-Datei in der .reg-Format zum Zeitpunkt der Erstellung nutzen. Wenn Entwickler verwalten die reg-Dateien für ihre eigenen tägliche Entwicklung und Debuggen, die gleichen Dateien können im Installer automatisch eingeschlossen. Wenn Sie nicht automatisch Daten freigeben können, müssen Sie sicherstellen, dass des Installationsprogramms, Kopie der Registrierungsdaten aktuell ist.  
+> Die einfachste Möglichkeit zum Verwalten der Registrierung werden die gleichen Daten in die gleichen Dateien für entwicklerregistrierung und Installation-Registrierung verwenden. Beispielsweise können einige Installer-Entwicklungstools-Datei in der .reg-Format zum Zeitpunkt der Erstellung nutzen. Wenn Entwickler verwalten die reg-Dateien für ihre eigenen tägliche Entwicklung und Debuggen, die gleichen Dateien können im Installer automatisch eingeschlossen. Wenn Sie nicht automatisch Daten freigeben können, müssen Sie sicherstellen, dass des Installationsprogramms, Kopie der Registrierungsdaten aktuell ist.  
   
 ## <a name="registering-unmanaged-vspackages"></a>Registrieren von nicht verwalteten VSPackages  
  Nicht verwaltete VSPackages (einschließlich der von der Visual Studio-Paketvorlage generierten) verwenden Sie im ATL-Stil RGS-Dateien zum Speichern von Informationen zur produktregistrierung. Das Format der RGS-Datei bezieht sich auf ATL und können nicht in der Regel als genutzt werden – durch eine Installation mit dem authoring-Tool ist. Registrierungsinformationen für das VSPackage-Installationsprogramm muss separat verwaltet werden. Beispielsweise können Entwickler Dateien in der .reg-Format mit RGS dateiänderungen synchronisiert. Reg-Dateien können mit "regedit" zusammengeführt werden, für die Entwicklung oder durch ein Installationsprogramm genutzt werden.  
@@ -40,7 +40,7 @@ VSPackages müssen empfehlen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , d
  Das RegPkg-Tool liest die Registrierungsattribute in ein verwaltetes VSPackage und können entweder die Informationen direkt in der Registrierung oder Write-reg-Format-Dateien, die durch ein Installationsprogramm genutzt werden können.  
   
 > [!NOTE]
->  Das RegPkg-Tool ist keine weitervertreibbare Komponente verfügbar und kann nicht verwendet werden, um ein VSPackage auf dem System eines Benutzers zu registrieren.  
+> Das RegPkg-Tool ist keine weitervertreibbare Komponente verfügbar und kann nicht verwendet werden, um ein VSPackage auf dem System eines Benutzers zu registrieren.  
   
 ## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Warum sollten VSPackages nicht bei der Installation registrieren  
  Wenn Sie Ihre VSPackage-Installationsprogramme sollte nicht auf selbstregistrierung verlassen. Auf den ersten Blick scheint eine VSPackage Registrierungswerte beibehalten, nur im VSPackage selbst eine gute Idee. Angesichts der Tatsache, dass Entwickler die Registrierungswerte verfügbar für die routinemäßige Arbeit und testen, es sinnvoll ist, vermeiden, dass eine separate Kopie der Registrierungsdaten im Installer. Das Installationsprogramm kann für das VSPackage zum Schreiben von Registrierungswerten basieren.  

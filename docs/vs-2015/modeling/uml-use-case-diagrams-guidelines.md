@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424308"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-Anwendungsfalldiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
 ## <a name="BasicSteps"></a> Grundlegende Schritte zum Zeichnen von Anwendungsfalldiagrammen  
   
 > [!NOTE]
->  Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+> Ausführliche Schritte zum Erstellen der Modellierungsdiagramme beschrieben sind [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>So erstellen Sie ein neues Anwendungsfalldiagramm  
   
@@ -133,7 +133,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
  Der spezialisierte Akteur kann über seine eigenen zusätzlichen Anwendungsfälle verfügen, die für die anderen Akteure nicht verfügbar sind.  
   
 > [!CAUTION]
->  Sie sollten keine Schleifen aus Generalisierungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.  
+> Sie sollten keine Schleifen aus Generalisierungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.  
   
 ### <a name="alternative-actor-icons"></a>Alternative Akteursymbole  
  Sie können benutzerdefinierte Symbole verwenden, um anstelle des standardmäßigen Strichmännchens einen Akteur darzustellen. Sie können es z. B. so ändern, dass es wie ein Gerät , ein Restaurant, eine Bank usw. aussieht.  
@@ -160,7 +160,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
  ![Anwendungsfall 1: 1 mit Akteur](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  Die Multiplizitäten einer Zuordnung in einem Anwendungsfalldiagramm sind ausgeblendet, wenn beide **1**.  
+> Die Multiplizitäten einer Zuordnung in einem Anwendungsfalldiagramm sind ausgeblendet, wenn beide **1**.  
   
  Wird standardmäßig jede Multiplizität **1**. Bei einer strengen Auslegung des Modells bedeutet eine Multiplizität von 1, dass z. B. nur jeweils ein Kunde an der Bestellung eines Gerichts beteiligt ist und dass jeder Kunde nur jeweils ein Gericht bestellt.  
   
@@ -197,7 +197,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
    - **\\*** Um Zustand, der NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.  
   
 > [!NOTE]
->  Viele Teams geben in Anwendungsfalldiagrammen keine Informationen zur Multiplizität an und behalten für die Multiplizitäten den Standardwert 1 bei. Stattdessen geben sie die Informationen in separaten Beschreibungen der Anwendungsfälle an. In diesem Fall werden alle Multiplizitäten in den Anwendungsfalldiagrammen ausgeblendet.  
+> Viele Teams geben in Anwendungsfalldiagrammen keine Informationen zur Multiplizität an und behalten für die Multiplizitäten den Standardwert 1 bei. Stattdessen geben sie die Informationen in separaten Beschreibungen der Anwendungsfälle an. In diesem Fall werden alle Multiplizitäten in den Anwendungsfalldiagrammen ausgeblendet.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Verwenden eine Akteurs oder eines Anwendungsfalls in mehreren Diagrammen  
  Sie können die gleichen Akteure und Anwendungsfälle in mehreren Diagrammen anzeigen. Zum Beispiel:  
@@ -215,7 +215,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
 3. Ziehen Sie einen Akteur oder Anwendungsfall aus **Modell-Explorer** in das neue Diagramm.  
   
     > [!NOTE]
-    >  Wenn Sie einen bereits zugeordneten Akteur und Anwendungsfall im neuen Diagramm anordnen, wird die Zuordnung dazwischen in dem neuen Diagramm automatisch angezeigt.  
+    > Wenn Sie einen bereits zugeordneten Akteur und Anwendungsfall im neuen Diagramm anordnen, wird die Zuordnung dazwischen in dem neuen Diagramm automatisch angezeigt.  
   
 ## <a name="Details"></a> Beschreiben von Anwendungsfällen  
  Ein Anwendungsfall stellt Folgendes dar:  
@@ -277,7 +277,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
 3. Das neue Artefakt aus, und geben oder fügen Sie die URL in die **Hyperlink** Eigenschaft.  
   
 > [!NOTE]
->  Sie können auf ein Artefakt doppelklicken, um das Diagramm oder das Dokument zu öffnen, mit dem es verknüpft ist.  
+> Sie können auf ein Artefakt doppelklicken, um das Diagramm oder das Dokument zu öffnen, mit dem es verknüpft ist.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Verknüpfen von Anwendungsfällen mit Arbeitsaufgaben  
  Wenn Ihr Projekt verwendet [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] und [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], Sie können jeden Anwendungsfall mit einer Arbeitsaufgabe in verknüpfen [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Wie Sie diesen Links finden Sie unter [Verknüpfen von Modellelementen und Arbeitsaufgaben](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
  Verwenden Sie eine **Include** Beziehung zu zeigen, dass ein Anwendungsfall beschreibt einige der Details eines anderen. In der Abbildung **zum Bestellen einer Mahlzeit** enthält **Zahlen**, **wählen Sie im Menü**, und **Menüpunkt wählen**. Jeder der enthaltenen ausführlicheren Anwendungsfälle ist ein Schritt, den der Akteur oder die Akteure ggf. ausführen müssen, um das Gesamtziel des einschließenden Anwendungsfalls zu erreichen. Der Pfeil sollte auf den ausführlicheren eingeschlossenen Anwendungsfall zeigen.  
   
 > [!CAUTION]
->  Sie sollten keine Schleifen aus Beziehungen vom Typ „Einschließen“ erstellen, die dazu führen, dass ein Anwendungsfall sich selbst enthält. Schleifen können zu Fehlern führen.  
+> Sie sollten keine Schleifen aus Beziehungen vom Typ „Einschließen“ erstellen, die dazu führen, dass ein Anwendungsfall sich selbst enthält. Schleifen können zu Fehlern führen.  
   
  Sie können eingeschlossene Anwendungsfälle freigeben. Im Beispiel die **zum Bestellen einer Mahlzeit** und **Bewertungen abonnieren** Anwendungsfälle bieten **Zahlen**.  
   
@@ -346,7 +346,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
  Z. B. **Zahlen** generalisiert **bezahlen mit Kreditkarte** und **bar bezahlen**.  
   
 > [!CAUTION]
->  Sie sollten keine Schleifen aus Generalisierungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.  
+> Sie sollten keine Schleifen aus Generalisierungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.  
   
  Mithilfe von spezialisierten Anwendungsfällen können Sie andere Methoden anzeigen, mit denen das System das gleiche Ziel erreichen kann.  
   
@@ -374,7 +374,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
  ![Ein Anwendungsfall, die einen anderen erweitert](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  Sie sollten keine Schleifen aus Erweiterungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.  
+> Sie sollten keine Schleifen aus Erweiterungsbeziehungen erstellen, die dazu führen, dass ein Akteur sich selbst generalisiert. Schleifen können zu Fehlern führen.  
   
  Z. B. die **Anmeldung** Anwendungsfall einer typischen Website zählen **Registrieren neuer Benutzer** -nur wenn der Benutzer verfügt jedoch nicht bereits ein Konto.  
   
@@ -391,7 +391,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
    3. Klicken Sie auf den erweiterten Anwendungsfall (**Anmeldung** im Beispiel).  
   
        > [!NOTE]
-       >  Vermeiden Sie es, im Diagramm eine Schleife von Erweiterungsbeziehungen zu erstellen. Ein Anwendungsfall darf keine Erweiterung von sich selbst darstellen.  
+       > Vermeiden Sie es, im Diagramm eine Schleife von Erweiterungsbeziehungen zu erstellen. Ein Anwendungsfall darf keine Erweiterung von sich selbst darstellen.  
   
 3. Verschieben Sie die relevanten Schritte in das Szenario der Erweiterung, falls Sie für den erweiterten Anwendungsfall bereits Szenarios erstellt haben.  
   
@@ -425,7 +425,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
    Klicken Sie zum Erstellen eines neuen Anwendungsfall direkt in einem Subsystem **Anwendungsfall** klicken Sie dann in der Toolbox in das Subsystem.  
   
 > [!NOTE]
->  Die **Themen** Eigenschaft eines Anwendungsfalls gibt an, welchem Subsystem dieser enthalten ist.  
+> Die **Themen** Eigenschaft eines Anwendungsfalls gibt an, welchem Subsystem dieser enthalten ist.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Anwendungsfälle außerhalb des Systembereichs  
  Es ist häufig nützlich, Anwendungsfälle in das Diagramm einzubeziehen, die Teil des Geschäftsablaufs sind, aber nicht mit dem in der Entwicklung befindlichen System verarbeitet werden. Auf diese Weise können Entwickler den Kontext ihrer Arbeit besser verstehen. „Gericht liefern“ kann z. B. als Anwendungsfall mit den Akteuren Restaurant und Kunde angezeigt werden, jedoch außerhalb der Verantwortung der Website für die Essensbestellung.  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406808"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets
 Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Bootstrapperpakets erstellen, indem Sie mindestens zwei Dateien für jedes Gebietsschema erstellen: eine Datei mit Softwarelizenzbedingungen (z.B. *eula.rtf*) und ein Paketmanifest (*package.xml*).
@@ -31,7 +31,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 3. Erstellen Sie ein Paketmanifest mit dem Namen *package.xml*, aktualisieren Sie die Zeichenfolgen und die Kultur, und legen Sie die Datei in dem neuen Ordner ab. Wenn Sie bereits ein Bootstrapperpaket von Visual Studio in der Zielsprache erstellt haben, können Sie die Visual Studio-Datei *package.xml* kopieren und in diesem Schritt ändern.
 
 > [!NOTE]
->  Wenn Sie ein Setup-Projekt zur Bereitstellung von Anwendungen verwenden, können Sie Ihre Anwendung durch Ändern der **Localization**-Eigenschaft lokalisieren.
+> Wenn Sie ein Setup-Projekt zur Bereitstellung von Anwendungen verwenden, können Sie Ihre Anwendung durch Ändern der **Localization**-Eigenschaft lokalisieren.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

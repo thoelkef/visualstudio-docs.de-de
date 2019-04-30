@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426600"
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Unterdrückung im Quellcode ist die Möglichkeit, unterdrücken oder ignorieren 
  Sie sollten nicht im Quellcode-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die Metadaten für die Unterdrückung im Quellcode versehentlich zu versenden. Aufgrund der Verarbeitungskosten Unterdrückung im Quellcode kann auch die Leistung Ihrer Anwendung beeinträchtigt werden, durch die Unterdrückung im Quellcode-Metadaten einschließen.  
   
 > [!NOTE]
->  Sie müssen zum Weitergeben Code diese Attribute selbst keine. Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Das Menüelement ist nicht für C++-Code verfügbar.  
+> Sie müssen zum Weitergeben Code diese Attribute selbst keine. Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Das Menüelement ist nicht für C++-Code verfügbar.  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage-Attributs  
  Wenn Sie mit der rechten Maustaste einer Codeanalyse-Warnung in der **Fehlerliste** , und klicken Sie dann auf **Nachrichten unterdrücken**, **SuppressMessage** Attribut hinzugefügt wird, in Ihrem Code oder auf der Globale Unterdrückungen-Datei des Projekts.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Wenn Sie eine Warnung mit dem Namespace-Gültigkeitsbereich unterdrücken, unterdrückt sie die Warnung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.  
+> Wenn Sie eine Warnung mit dem Namespace-Gültigkeitsbereich unterdrücken, unterdrückt sie die Warnung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.  
   
  Durch einen expliziten Bereich angeben, kann jede Unterdrückung ausgedrückt werden. Diese Unterdrückungen müssen auf globaler Ebene befinden. Sie können nicht auf Memberebene Unterdrückung angeben, durch das ergänzen eines Typs.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Target enthält immer den vollqualifizierten Namen.  
+> Target enthält immer den vollqualifizierten Namen.  
   
 ## <a name="global-suppression-file"></a>Globale Unterdrückungsdatei  
  Der globale Unterdrückungsdatei verwaltet Unterdrückungen, die entweder auf globaler Ebene Unterdrückungen oder Unterdrückungen, die kein Ziel angeben. Unterdrückungen auf Verletzungen der Assembly werden z. B. in dieser Datei gespeichert. Darüber hinaus werden einige ASP.NET Unterdrückungen in dieser Datei gespeichert, da projekteinstellungen nicht für Code für ein Formular verfügbar sind. Eine globale Unterdrückungsdatei erstellt und hinzugefügt zu Ihrem Projekt zum ersten Mal, die Sie auswählen der **In Projektunterdrückungsdatei** Möglichkeit, die **Nachrichten unterdrücken** Befehl in das Fenster "Fehlerliste". Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

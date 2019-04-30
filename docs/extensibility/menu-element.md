@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 20c54e5059c337d5593fcc1da7faa420b0b32a39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806454"
 ---
 # <a name="menu-element"></a>Menu-element
 Definiert ein Menüelement. Dies sind die sechs Arten von Menüs: Kontext, Menüs, MenuController, MenuControllerLatched, Symbolleisten und ToolWindowToolbar.

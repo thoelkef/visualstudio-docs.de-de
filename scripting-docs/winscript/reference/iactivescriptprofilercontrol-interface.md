@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 86f4fb8dea97930f717800a14a27740b76eb6c2e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993058"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl-Schnittstelle
 Durch die Skript-Engine, die profilerstellung unterstützt implementiert. In der Regel auf ein Objekt, implementiert die `IActiveScriptProfilerControl` implementiert auch die [IActiveScript](../../winscript/reference/iactivescript.md) Schnittstelle. In diesem Fall erhalten Sie ein Handle für die `IActiveScriptProfilerControl` Schnittstelle durch Aufrufen der `IUnknown::QueryInterface` Methode für das Objekt. Die Schnittstelle enthält die erforderlichen Methoden für das Beenden und starten die profilerstellung auf die Skript-Engine.  

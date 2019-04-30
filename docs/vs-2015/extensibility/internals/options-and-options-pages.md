@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438956"
 ---
 # <a name="options-and-options-pages"></a>Optionen und Optionsseiten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Auf **Optionen** auf die **Tools** Menü geöffnet wird die **Optionen** Dialogf
 - <xref:System.ComponentModel.DescriptionAttribute> Bestimmt, die Beschreibung der Option.  
   
   > [!NOTE]
-  >  Entsprechende Attribute, SRCategory, LocDisplayName SRDescription, verwenden von Zeichenfolgenressourcen für die Lokalisierung und werden definiert, der [verwalteten projektbeispiel](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Entsprechende Attribute, SRCategory, LocDisplayName SRDescription, verwenden von Zeichenfolgenressourcen für die Lokalisierung und werden definiert, der [verwalteten projektbeispiel](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Betrachten Sie das folgende Codefragment:  
   
@@ -86,4 +86,4 @@ Auf **Optionen** auf die **Tools** Menü geöffnet wird die **Optionen** Dialogf
  Der Registrierungspfad der Automatisierungseigenschaft wird bestimmt durch Kombinieren von <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, das Wort, AutomationProperties und die Optionen-Seite Eigenschaftenkategorien und-Namen. Wenn die Seite "Optionen" My Category-Kategorie, den Namen Meine Rasterseite hat z. B. und <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, und klicken Sie dann auf die Automatisierungseigenschaft hat den Registrierungsschlüssel HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Kategorie\Eigener der Rasterseite.  
   
 > [!NOTE]
->  Der kanonische Name, meine Category.My Rasterseite, ist der Wert des Unterschlüssels Name dieses Schlüssels.
+> Der kanonische Name, meine Category.My Rasterseite, ist der Wert des Unterschlüssels Name dieses Schlüssels.

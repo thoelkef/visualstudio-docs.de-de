@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430967"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navigieren im Code mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
  Verwenden Sie zum Beenden auf jede Codezeile (jede Anweisung) während des Debuggens die **F11** Tastenkombination (oder **Debuggen** / **Einzelschritt** im Menü).  
   
 > [!TIP]
->  Wie Sie jede Codezeile ausführen, können Sie Variablen, deren Werte angezeigt werden soll, oder verwenden Sie zeigen die ["lokal"](../debugger/autos-and-locals-windows.md) und [Überwachen](../debugger/autos-and-locals-windows.md) Windows überwachen Sie ihre Werte ändern.  
+> Wie Sie jede Codezeile ausführen, können Sie Variablen, deren Werte angezeigt werden soll, oder verwenden Sie zeigen die ["lokal"](../debugger/autos-and-locals-windows.md) und [Überwachen](../debugger/autos-and-locals-windows.md) Windows überwachen Sie ihre Werte ändern.  
   
  Hier sind einige Details über das Verhalten des **Einzelschritt**:  
   
@@ -87,7 +87,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
 |**UMSCHALT+F11**|**Ausführen bis Rücksprung**|**Ausführen bis Rücksprung** wird weiter ausgeführt, Code und hält die Ausführung bei Rückgabe von der aktuelle Funktion (der Debugger überspringt über die aktuelle Funktion).|  
   
 > [!TIP]
->  Wenn Sie den Einstiegspunkt in Ihrer app finden möchten, beginnen Sie mit **F10** oder **F11**. Diese Befehle sind häufig hilfreich, wenn Sie den app-Status überprüfen oder versuchen, Weitere Informationen zu der Ausführungsablauf.  
+> Wenn Sie den Einstiegspunkt in Ihrer app finden möchten, beginnen Sie mit **F10** oder **F11**. Diese Befehle sind häufig hilfreich, wenn Sie den app-Status überprüfen oder versuchen, Weitere Informationen zu der Ausführungsablauf.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Führen Sie bis zu einer bestimmten Position oder Funktion aus  
  Häufig die bevorzugte Methode für das Debuggen von Code diese Methoden sind hilfreich, wenn man genau, welchen Code Sie überprüfen möchten, oder mindestens Sie wissen, in dem Sie debuggen möchten.  
@@ -140,7 +140,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
 - Setzen Sie den Cursor im dissamblyfenster auf die Assemblyanweisung, die Sie verwenden möchten, führen Sie als Nächstes der rechten Maustaste auf ein, und wählen Sie **Festlegen der nächsten Anweisung**.  
   
 > [!CAUTION]
->  Das Festlegen der nächsten Anweisung bewirkt, dass der Programmzähler direkt zur neuen Position springt. Seien Sie daher vorsichtig, wenn Sie diesen Befehl verwenden.  
+> Das Festlegen der nächsten Anweisung bewirkt, dass der Programmzähler direkt zur neuen Position springt. Seien Sie daher vorsichtig, wenn Sie diesen Befehl verwenden.  
 > 
 > - Anweisungen zwischen den alten und neuen Ausführungspunkten werden nicht ausgeführt.  
 >   - Wenn Sie den Ausführungspunkt rückwärts verschieben, werden dazwischenliegende Anweisungen nicht rückgängig gemacht.  
@@ -149,7 +149,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
 >   - Wenn die Funktion "Bearbeiten und Fortfahren" aktiviert ist, schlägt das Ausführen der Option **Nächste Anweisung festlegen** fehl, wenn Sie Änderungen vorgenommen haben, die von "Bearbeiten und Fortfahren" nicht sofort neu zugeordnet werden können. Dies kann auftreten, wenn Sie z. B. Code in einem catch-Block bearbeitet haben. Dann wird die Fehlermeldung angezeigt, dass der Vorgang nicht unterstützt wird.  
 > 
 > [!NOTE]
->  In verwaltetem Code können Sie die nächste Anweisung unter den folgenden Bedingungen nicht verschieben:  
+> In verwaltetem Code können Sie die nächste Anweisung unter den folgenden Bedingungen nicht verschieben:  
 > 
 > - Die nächste Anweisung und die aktuelle Anweisung befinden sich in verschiedenen Methoden.  
 >   - Das Debuggen wurde über Just-In-Time-Debuggen gestartet.  
@@ -166,7 +166,7 @@ Mit Befehlen und Tastenkombinationen zum Navigieren im Code im Debugger vertraut
  Wenn nur mein Code deaktiviert ist, der Debugger einen Einzelschritt in nicht-benutzerseitigen Code und nicht-benutzerseitigen Code wird in den Debuggerfenstern angezeigt.  
   
 > [!NOTE]
->  Nur mein Code wird in Geräteprojekten nicht unterstützt.  
+> Nur mein Code wird in Geräteprojekten nicht unterstützt.  
   
  **Schrittweise Ausführung von Systemaufrufen**  
   

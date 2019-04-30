@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c040df103bac464e4f440f23674da966063f0ae
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 0991f27077cf3ac3eb5cbfdcbb409fd5903d9a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446377"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110-Schnittstelle
 Die `IDebugApplication110` Schnittstelle erweitert die Funktionalität der [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md). Sie können eine Instanz dieser Schnittstelle abrufen, indem Sie QueryInterface aufrufen, bei der Implementierung der [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
->  Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
+> Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="methods"></a>Methoden  
  Die `IDebugApplication110`-Schnittstelle macht die folgenden Methoden verfügbar:  

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806108"
 ---
 # <a name="parent-element"></a>Übergeordnetes Element
 Das übergeordnete Element eines Felds Schaltfläche oder ein Kombinationsfeld kann nur eine Gruppe sein. Das übergeordnete Element eines Menü oder einer Gruppe kann einem anderen Menü oder einer Gruppe sein. In einem [CommandPlacement-Element](../extensibility/commandplacement-element.md), dieses Element ist erforderlich; in allen anderen Fällen ist er optional. Wenn dieses Element nicht angegeben ist, das übergeordnete Element des `Group_Undefined:0` wird abgeleitet werden.
@@ -38,7 +38,7 @@ Das übergeordnete Element eines Felds Schaltfläche oder ein Kombinationsfeld k
 |id|Erforderlich. ID des GUID/ID Befehlsbezeichner.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
- Keine
+ Keiner
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

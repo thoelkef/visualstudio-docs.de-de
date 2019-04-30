@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 47647910b53b5f86b828ec87c62019b76204f124
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911560"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Vorgehensweise: Unterdrücken von dateiänderungsbenachrichtigungen
 Wenn die physische Datei, die den Textpuffer darstellt geändert wurde, wird ein Dialogfeld anzeigt, mit der Meldung **möchten Sie die folgenden Elemente speichern?** Dies wird als dateiänderungsbenachrichtigung bezeichnet. Wenn viele Änderungen in der Datei werden möchten, kann jedoch dieses Dialogfeld können Sie immer wieder anzeigen schnell lästig werden.

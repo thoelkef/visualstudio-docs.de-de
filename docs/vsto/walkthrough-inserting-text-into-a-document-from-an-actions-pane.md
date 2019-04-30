@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414280"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Bereich "Aktionen" in Microsoft Office Word-Dokument erstellt wird. Der Bereich "Aktionen" enthält zwei Steuerelemente, die Benutzereingaben erfassen, und klicken Sie dann den Text an das Dokument senden.
@@ -34,7 +34,7 @@ ms.locfileid: "60088521"
 - Der Bereich "Aktionen" angezeigt, wenn die Anwendung wird geöffnet.
 
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
@@ -78,7 +78,7 @@ ms.locfileid: "60088521"
 2. Wählen Sie das Wort **Namen**, ohne die Absatzmarke, und klicken Sie auf **OK**.
 
     > [!NOTE]
-    >  Die Absatzmarke sollte außerhalb des Lesezeichens. Wenn Absatzmarken nicht im Dokument angezeigt werden, klicken Sie auf die **Tools** Startmenü **Microsoft Office Word-Tools** , und klicken Sie dann auf **Optionen**. Klicken Sie auf die **Ansicht** , und wählen Sie die **Absatzmarken** Kontrollkästchen in der **Formatierungszeichen** Teil der **Optionen** im Dialogfeld.
+    > Die Absatzmarke sollte außerhalb des Lesezeichens. Wenn Absatzmarken nicht im Dokument angezeigt werden, klicken Sie auf die **Tools** Startmenü **Microsoft Office Word-Tools** , und klicken Sie dann auf **Optionen**. Klicken Sie auf die **Ansicht** , und wählen Sie die **Absatzmarken** Kontrollkästchen in der **Formatierungszeichen** Teil der **Optionen** im Dialogfeld.
 
 3. In der **Eigenschaften** Ändern der **Namen** Eigenschaft **Bookmark1** zu **ShowName**.
 

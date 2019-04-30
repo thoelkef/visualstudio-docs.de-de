@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428826"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
 Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) kann Projekt- und Eigenschaften anzuzeigen. Sie können eine Eigenschaftenseite für Ihren eigenen Projekttyp bereitstellen, sodass der Benutzer die Eigenschaften für die Anwendung festlegen kann.
@@ -51,7 +51,7 @@ Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includ
  Es ist die Verantwortung für das Projekt, um die Eigenschaften und Konfiguration der Projektdatei beibehalten.
 
 > [!NOTE]
->  Ein Projekt kann Persistenz durch Beibehalten von nur Eigenschaftswerte optimieren, die von ihren Standardwerten abweichen.
+> Ein Projekt kann Persistenz durch Beibehalten von nur Eigenschaftswerte optimieren, die von ihren Standardwerten abweichen.
 
 ## <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
  Die `Microsoft.VisualStudio.Package.SettingsPage` -Klasse implementiert die Eigenschaftenseiten für Projekt und die Konfiguration. Die standardmäßige Implementierung des `SettingsPage` öffentliche Eigenschaften zu einem Benutzer in einem generischen Eigenschaftenraster bietet. Die `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` Methode wählt von abgeleitete Klassen `SettingsPage` für Projekt Eigenschaftenrastern. Die `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` Methode wählt von abgeleitete Klassen `SettingsPage` für die Konfiguration von Eigenschaftenrastern. Ihr Projekttyp sollten diese Methoden zum Wählen Sie der entsprechenden Eigenschaftenseiten überschreiben.
@@ -63,7 +63,7 @@ Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includ
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` und `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` Konfigurationseigenschaften beibehalten.
 
   > [!NOTE]
-  >  Die Implementierungen der `Microsoft.VisualStudio.Package.SettingsPage` und `Microsoft.VisualStudio.Package.ProjectNode` Klassen geben mit der `Microsoft.Build.BuildEngine` (MSBuild) Methoden zum Abrufen und Festlegen der Projekt- und Eigenschaften aus der Projektdatei.
+  > Die Implementierungen der `Microsoft.VisualStudio.Package.SettingsPage` und `Microsoft.VisualStudio.Package.ProjectNode` Klassen geben mit der `Microsoft.Build.BuildEngine` (MSBuild) Methoden zum Abrufen und Festlegen der Projekt- und Eigenschaften aus der Projektdatei.
 
   Die Klasse, die Sie eine von Ableitung `SettingsPage` müssen implementieren `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` und `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` Projekt oder die Konfiguration von Eigenschaften der Projektdatei beibehalten werden.
 
@@ -81,7 +81,7 @@ Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includ
  Die <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, und <xref:System.ComponentModel.DescriptionAttribute> Attribute bestimmen das Layout, Bezeichnung und Beschreibung der Projekt- und Eigenschaften in einer generischen Eigenschaftenseite. Diese Attribute bestimmen Sie die Kategorie, zeigen bzw. Name und Beschreibung der Option.
 
 > [!NOTE]
->  Entsprechende Attribute, SRCategory, LocDisplayName SRDescription, verwenden von Zeichenfolgenressourcen für die Lokalisierung und sind in definiert [MPF für Visual Studio 2013-Projekte –](https://github.com/tunnelvisionlabs/MPFProj10).
+> Entsprechende Attribute, SRCategory, LocDisplayName SRDescription, verwenden von Zeichenfolgenressourcen für die Lokalisierung und sind in definiert [MPF für Visual Studio 2013-Projekte –](https://github.com/tunnelvisionlabs/MPFProj10).
 
  Betrachten Sie das folgende Codefragment:
 

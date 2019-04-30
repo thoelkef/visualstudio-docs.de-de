@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443545"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
   Ein *Anwendungsseite* ist eine ASP.NET Web-Seite, die für die Verwendung in einer SharePoint-Website entwickelt wurde. Anwendungsseiten sind ein spezieller Typ von der ASP.NET-Seite. Der Hauptunterschied zwischen einer Anwendungsseite und einer standardmäßigen ASP.NET-Seite ist, dass eine Anwendungsseite Inhalt enthält, das mit einer SharePoint-Masterseite zusammengeführt wird. Eine Masterseite ermöglicht Anwendungsseiten zur Darstellung und Verhalten wie andere Seiten auf einer Website freigeben.
@@ -36,7 +36,7 @@ ms.locfileid: "56644444"
  Anwendungsseiten nicht möglich. Eine Anwendungsseite ist jedoch die beste Seite erstellen, wenn Sie die benutzerdefinierten Code enthalten soll. Obwohl Sie benutzerdefinierten Code auf einer Webseite hinzufügen können, beendet der Code ausgeführt, wenn der Benutzer die Seite mit Tools wie SharePoint Designer anpasst.
 
 > [!NOTE]
->  Visual Studio bietet keine Vorlagen, mit denen Sie Seiten der Website für eine SharePoint-Website zu erstellen. Weitere Informationen finden Sie unter [SharePoint Seitentypen](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Visual Studio bietet keine Vorlagen, mit denen Sie Seiten der Website für eine SharePoint-Website zu erstellen. Weitere Informationen finden Sie unter [SharePoint Seitentypen](http://go.microsoft.com/fwlink/?LinkID=211584).
 
 ## <a name="create-an-application-page"></a>Erstellen einer Anwendungsseite
  Fügen Sie zum Erstellen einer Anwendungsseite einer **Anwendungsseite** einem SharePoint-Projekt. Wenn Sie eine Anwendungsseite erstellen, fügt Visual Studio die folgenden Ordner zu Ihrem Projekt hinzu:
@@ -58,7 +58,7 @@ ms.locfileid: "56644444"
  Entwerfen Sie den Inhalt der Seite für eine Anwendung, indem Sie mit dem Ansicht-Designers in Visual Studio. Dieser Designer wird angezeigt, wenn Sie die Seite "Anwendung" in Ihrem Projekt öffnen (indem Sie darauf doppelklicken oder indem Sie das Kontextmenü öffnen und dann auf **öffnen**) und wählen Sie dann die **Entwurf** Schaltfläche am unteren Rand der Editor.
 
 > [!NOTE]
->  Sie können die Seite entwerfen nur in der **Quelle** Ansicht des Designers. Die **Entwurf** Ansicht des Designers für Anwendungsseiten deaktiviert ist.
+> Sie können die Seite entwerfen nur in der **Quelle** Ansicht des Designers. Die **Entwurf** Ansicht des Designers für Anwendungsseiten deaktiviert ist.
 
  Sie können eine Anwendungsseite Debuggen, ebenso wie Sie andere SharePoint-Projektelemente in Visual Studio debuggen. Wenn Sie den Visual Studio-Debugger starten, wird von Visual Studio die SharePoint-Website geöffnet.
 

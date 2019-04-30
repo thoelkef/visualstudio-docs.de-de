@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3c557a155c68b3a45e2b96aceee8ddcfcaa1d82e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874624"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Diese Schnittstelle stellt einen Fehler oder Warnung Haltepunkt, z. B. die Gründe, warum der ausstehenden Haltepunkt (Code nicht geladen werden, noch usw.) nicht gebunden wurde, ein ungültiger Ausdruck oder einen ungültigen Speicherort.

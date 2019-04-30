@@ -12,12 +12,12 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446775"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ SCCRTN SccPopulateList (
  Rufen Sie das plug-in weiterhin die `pfnPopulate` Funktion, die hinzugefügt und werden die Dateien, gelöscht, bis sie abgeschlossen ist, und gibt dann zurück, aus der `SccPopulateList` Funktion. Die IDE kann dann die Liste angezeigt. Die `lpStatus` Array stellt alle Dateien in der ursprünglichen Liste, die von der IDE übergebenen dar. Die Callback-Funktion verwenden die-Plug-in fügt automatisch den Status aller dieser Dateien zudem zu machen.  
   
 > [!NOTE]
->  Ein Quellcodeverwaltungs-Plug-in verfügt immer über die Möglichkeit, die umgehend von dieser Funktion, verlassen die Liste unverändert zurückgeben. Wenn ein plug-in diese Funktion implementiert, können sie dies angeben, durch Festlegen der `SCC_CAP_POPULATELIST` Funktion Bitflag in der erste Aufruf der [SccInitialize](../extensibility/sccinitialize-function.md). Standardmäßig sollten das plug-in immer davon ausgehen, dass alle Elemente übergeben werden Dateien sind. Jedoch, wenn die IDE legt die `SCC_PL_DIR` -flag in der `fOptions` -Parameter sind, dass alle Elemente übergeben werden Verzeichnisse berücksichtigt werden. Das plug-in sollten hinzufügen, alle Dateien, die gehören in den Verzeichnissen. Die IDE wird nie eine Mischung von Dateien und Verzeichnissen übergeben.  
+> Ein Quellcodeverwaltungs-Plug-in verfügt immer über die Möglichkeit, die umgehend von dieser Funktion, verlassen die Liste unverändert zurückgeben. Wenn ein plug-in diese Funktion implementiert, können sie dies angeben, durch Festlegen der `SCC_CAP_POPULATELIST` Funktion Bitflag in der erste Aufruf der [SccInitialize](../extensibility/sccinitialize-function.md). Standardmäßig sollten das plug-in immer davon ausgehen, dass alle Elemente übergeben werden Dateien sind. Jedoch, wenn die IDE legt die `SCC_PL_DIR` -flag in der `fOptions` -Parameter sind, dass alle Elemente übergeben werden Verzeichnisse berücksichtigt werden. Das plug-in sollten hinzufügen, alle Dateien, die gehören in den Verzeichnissen. Die IDE wird nie eine Mischung von Dateien und Verzeichnissen übergeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   

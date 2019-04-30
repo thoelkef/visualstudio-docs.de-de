@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3bec39ca044b0558dfeb9603137571a61c96548
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e710f0ca097ef1808abc661e16cdff34c82bd348
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418476"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Vorgehensweise: Unterstützen der ausgeblendeten Text in einem legacy-Sprachdienst
 Sie können Regionen ausgeblendetem Text, zusätzlich zur konturenbereiche erstellen. Ausgeblendeten Text Regionen können Client-gesteuert oder Editor-gesteuert werden und werden verwendet, um einen Bereich des Texts ganz ausblenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist die **nur Skript** Ansicht im HTML-Editor.
@@ -35,13 +35,13 @@ Sie können Regionen ausgeblendetem Text, zusätzlich zur konturenbereiche erste
      Ein Zeiger auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Objekt zurückgegeben.
 
     > [!NOTE]
-    >  Beim Aufruf `CreateHiddenTextSession`, Sie können einen ausgeblendeten textclient angeben (d. h. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Der verborgene textclient benachrichtigt Sie ausgeblendeten Text oder Gliederung erweitert oder wird, durch den Benutzer reduziert.
+    > Beim Aufruf `CreateHiddenTextSession`, Sie können einen ausgeblendeten textclient angeben (d. h. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Der verborgene textclient benachrichtigt Sie ausgeblendeten Text oder Gliederung erweitert oder wird, durch den Benutzer reduziert.
 
 4. Rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> , fügen Sie eine oder mehrere neue Kontur Regionen zu einem Zeitpunkt angeben der folgenden Informationen in den `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) Parameter:
 
     1. Geben Sie den Wert `hrtConcealed` in die `iType` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur, um anzugeben, dass Sie einen Gliederungsbereich, anstatt einen ausgeblendeten Bereich erstellen.
 
         > [!NOTE]
-        >  Wenn verdeckten Regionen ausgeblendet sind, zeigt der Editor automatisch Zeilen in der ausgeblendeten Bereiche an, dass ihr Vorhandensein aus.
+        > Wenn verdeckten Regionen ausgeblendet sind, zeigt der Editor automatisch Zeilen in der ausgeblendeten Bereiche an, dass ihr Vorhandensein aus.
 
     2. Gibt an, ob der Bereich ist die Client-gesteuert oder Editor gesteuert werden, in der `dwBehavior` Mitglied der <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> Struktur. Die intelligente Gliederung Implementierung kann eine Mischung aus und Client-editorgesteuert Gliederung und ausgeblendeter Text Regionen enthalten.

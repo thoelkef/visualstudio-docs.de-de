@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437686"
 ---
 # <a name="view-dom-event-listeners"></a>Anzeigen von DOM-Ereignislistenern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Die Liste der **Ereignisse** Registerkarte ist dynamisch. Wenn Sie einen Ereignislistener hinzufügen, während die App ausgeführt wird, wird der neue Ereignislistener dort angezeigt. Informationen zum Hinzufügen und Entfernen von Ereignislistenern finden Sie unter [Tipps zur Problembehebung bei Ereignislistenern](#Tips) in diesem Thema.
 
 > [!NOTE]
->  Ereignislistener für Codeelemente, die DOM-Elemente, wie z. B. nicht `xhr`, nicht angezeigt, auf die **Ereignisse** Registerkarte.
+> Ereignislistener für Codeelemente, die DOM-Elemente, wie z. B. nicht `xhr`, nicht angezeigt, auf die **Ereignisse** Registerkarte.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Anzeigen von Ereignislistenern für DOM-Elemente
  Dieses Beispiel zeigt eine Windows Phone-App. Die hier beschriebenen DOM Explorer-Funktionen werden auch für Windows Store-Apps unterstützt.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795994"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden geschweiften Klammern
 Implementieren Sie die Sprache basierende Funktionen, z. B., Zuordnung von geschweiften Klammern durch definieren die geschweiften Klammern, die übereinstimmen sollten, und die übereinstimmenden geschweiften Klammern einer Textmarkierungstag hinzugefügt wird, wenn sich die Einfügemarke eines die geschweiften Klammern befindet. Sie können geschweifte Klammern im Kontext einer Sprache, eigene Dateinamenerweiterung und Inhaltstyp definieren, Tags definieren und Anwenden der zu, die geben oder Anwenden von Tags zu einem vorhandenen Inhaltstyp (z. B. "Text"). Die folgende exemplarische Vorgehensweise zeigt, wie Tags aus, um den Inhaltstyp "Text" Zugehörige Klammer angewendet wird.

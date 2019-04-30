@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444876"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Hinzufügen einer Liste „Zuletzt verwendet“ zu einem Untermenü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ Diese exemplarische Vorgehensweise baut auf Demonstrationen in [Hinzufügen eine
 2. Auf der **TestMenu** Menü klicken Sie auf **aufrufen TestCommand**. Dies zeigt ein Meldungsfeld an, der angibt, dass es sich bei der Auswahl des Befehls.  
   
     > [!NOTE]
-    >  Dieser Schritt ist erforderlich, um das VSPackage zu laden und Anzeigen von der MRU-Liste ordnungsgemäß zu erzwingen. Wenn Sie diesen Schritt überspringen, wird die MRU-Liste nicht angezeigt.  
+    > Dieser Schritt ist erforderlich, um das VSPackage zu laden und Anzeigen von der MRU-Liste ordnungsgemäß zu erzwingen. Wenn Sie diesen Schritt überspringen, wird die MRU-Liste nicht angezeigt.  
   
 3. Auf der **Testmenü** Menü klicken Sie auf **Untermenü**. Eine Liste mit vier Elementen wird am Ende der im Untermenü unter ein Trennzeichen angezeigt. Beim Klicken auf **Element 3**, ein Meldungsfeld angezeigt werden soll, und der Text, "Ausgewählte Element 3" angezeigt. (Wenn die Liste der vier Elemente nicht angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen im vorherigen Schritt ausgeführt haben.)  
   

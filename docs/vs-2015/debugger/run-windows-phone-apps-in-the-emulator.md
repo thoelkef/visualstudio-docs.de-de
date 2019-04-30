@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442324"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Ausführen von Windows Phone-Apps im Emulator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Si
    Wenn der ausgewählte Emulator bereits ausgeführt wird, wird Ihre App im ausgeführten Emulator bereitgestellt und gestartet. Es kann jeweils nur eine Instanz jedes Emulators ausgeführt werden.  
   
 > [!TIP]
->  Wenn Sie Ihre App im Emulator testen, lassen Sie den Emulator zwischen Debugsitzungen geöffnet, damit Sie die App schnell erneut ausführen können.  
+> Wenn Sie Ihre App im Emulator testen, lassen Sie den Emulator zwischen Debugsitzungen geöffnet, damit Sie die App schnell erneut ausführen können.  
   
 ### <a name="BKMK_vs"></a> Ausführen einer app über Visual Studio  
   

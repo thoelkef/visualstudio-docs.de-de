@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435852"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Übermäßige GC-CPU-Zeit
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Übermäßige GC-CPU-Zeit.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Regel-Id | DA0024 |  
@@ -42,7 +42,7 @@ Regel-Id | DA0024 |
  Diese Regel wird ausgelöst, wenn für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung übermäßig viel Zeit aufgewendet wird.  
   
 > [!NOTE]
->  Wenn der Anteil der Zeit Garbagecollection aufgewendet ist von Bedeutung, aber nicht übermäßig viel im Vergleich zur gesamten anwendungsverarbeitung, die [DA0023: Hohe GC-CPU-Zeit](../profiling/da0023-high-gc-cpu-time.md) Warnung wird ausgelöst, anstelle dieser Regel.  
+> Wenn für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung viel, jedoch nicht übermäßig viel Zeit aufgewendet wird, wird anstelle dieser Regel die Warnung [DA0023: Hohe GC-CPU-Zeit](../profiling/da0023-high-gc-cpu-time.md) ausgelöst.  
   
 ## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren. Suchen Sie die Spalte **.NET CLR-Speicher\\GC-Zeitdauer in Prozent**. Überprüfen Sie, ob der Mehraufwand für die Garbage Collection bei verwaltetem Speicher in bestimmten Phasen der Programmausführung besonders häufig auftritt. Vergleichen Sie die Werte der Spalte „GC-Zeitdauer in Prozent“ mit der Garbage Collection-Rate aus den Spalten **Auflistungsanzahl der Generation 0**, **Auflistungsanzahl der Generation 1** und **Auflistungsanzahl der Generation 2**.  

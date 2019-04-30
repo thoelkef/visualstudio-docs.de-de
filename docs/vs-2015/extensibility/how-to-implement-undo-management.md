@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435953"
 ---
 # <a name="how-to-implement-undo-management"></a>Vorgehensweise: Implementieren von Rückgängig-Verwaltung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,9 +77,9 @@ Die primäre Schnittstelle für die rückgängig-Verwaltung verwendet wird <xref
    Die `OleUndoManager` Klasse stellt eine einzelnen Rückgängig-Stack-Instanz dar. Es ist daher ein Rückgängig-Manager-Objekt pro Datenentität, die für das Rückgängigmachen oder Wiederholen nachverfolgt wird.  
   
 > [!NOTE]
->  Während die rückgängig-Manager-Serverobjekt umfassend von Text-Editor verwendet wird, ist es eine allgemeine Komponente, die keine bestimmte Unterstützung für den Text-Editor verfügt. Wenn Sie mehrstufige rückgängig- oder Wiederholen-Vorgang unterstützen möchten, können Sie dieses Objekt, zu diesem Zweck.  
+> Während die rückgängig-Manager-Serverobjekt umfassend von Text-Editor verwendet wird, ist es eine allgemeine Komponente, die keine bestimmte Unterstützung für den Text-Editor verfügt. Wenn Sie mehrstufige rückgängig- oder Wiederholen-Vorgang unterstützen möchten, können Sie dieses Objekt, zu diesem Zweck.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Vorgehensweise: Deaktivieren des Rückgängig-Stapels](../extensibility/how-to-clear-the-undo-stack.md)
+ [Vorgehensweise: Leeren des Stapels zum Rückgängigmachen](../extensibility/how-to-clear-the-undo-stack.md)

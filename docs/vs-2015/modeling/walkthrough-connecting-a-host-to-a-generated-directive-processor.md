@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446774"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
  In dieser exemplarischen Vorgehensweise erweitern Sie Ihren benutzerdefinierten Host, damit sie Textvorlagen unterstützt, die anweisungsprozessoren aufrufen. Wenn Sie eine domänenspezifische Sprache definieren, generiert er eine *anweisungsprozessor* für das Domänenmodell. Der anweisungsprozessor erleichtert es Benutzern Zugriff auf das Modell, mindert die Notwendigkeit, schreiben die Assembly und import-Direktiven in den Vorlagen Vorlagen schreiben.  
   
 > [!WARNING]
->  Diese exemplarische Vorgehensweise baut auf [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md). Führen Sie zunächst diese exemplarischen Vorgehensweise.  
+> Diese exemplarische Vorgehensweise baut auf [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts](../modeling/walkthrough-creating-a-custom-text-template-host.md). Führen Sie zunächst diese exemplarischen Vorgehensweise.  
   
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:  
   
@@ -68,7 +68,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 2. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
    > [!IMPORTANT]
-   >  Dieser Schritt generiert den anweisungsprozessor und den Schlüssel für sie in der Registrierung hinzugefügt.  
+   > Dieser Schritt generiert den anweisungsprozessor und den Schlüssel für sie in der Registrierung hinzugefügt.  
   
 3. Klicken Sie im Menü **Debuggen** auf **Debuggen starten**.  
   
@@ -120,7 +120,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 5. Suchen Sie den Code für die Eigenschaft `StandardAssemblyReferences`, und Ersetzen Sie ihn durch den folgenden Code:  
   
     > [!NOTE]
-    >  In diesem Schritt fügen Sie Verweise auf die Assemblys, die von der generierten Direktivenprozessor erforderlich sind, die dem Host unterstützt werden.  
+    > In diesem Schritt fügen Sie Verweise auf die Assemblys, die von der generierten Direktivenprozessor erforderlich sind, die dem Host unterstützt werden.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 6. Suchen Sie den Code für die Funktion `ResolveDirectiveProcessor`, und Ersetzen Sie ihn durch den folgenden Code:  
   
     > [!IMPORTANT]
-    >  Dieser Code enthält hartcodierte Verweise auf den Namen der generierten Direktivenprozessor, zu der Sie eine Verbindung herstellen möchten. Sie können problemlos wandle die Liste Weitere allgemeine, in diesem Fall für alle anweisungsprozessoren in der Registrierung aufgeführte und versucht, eine Übereinstimmung zu finden. In diesem Fall würde der Host mit jeder generierten Direktivenprozessor funktionieren.  
+    > Dieser Code enthält hartcodierte Verweise auf den Namen der generierten Direktivenprozessor, zu der Sie eine Verbindung herstellen möchten. Sie können problemlos wandle die Liste Weitere allgemeine, in diesem Fall für alle anweisungsprozessoren in der Registrierung aufgeführte und versucht, eine Übereinstimmung zu finden. In diesem Fall würde der Host mit jeder generierten Direktivenprozessor funktionieren.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
 2. Fügen Sie folgenden Text in der Textdatei ein:  
   
     > [!NOTE]
-    >  Die Programmiersprache der Textvorlage muss nicht mit der des benutzerdefinierten Hosts übereinstimmen.  
+    > Die Programmiersprache der Textvorlage muss nicht mit der des benutzerdefinierten Hosts übereinstimmen.  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer**, und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
+    > Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer**, und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
   
 3. Geben Sie ein Leerzeichen ein.  
   
@@ -336,7 +336,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Anstatt die Adresse einzugeben, können Sie auf die Datei TestTemplateWithDP.txt durchsuchen in **Windows Explorer**, und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
+    > Anstatt die Adresse einzugeben, können Sie auf die Datei TestTemplateWithDP.txt durchsuchen in **Windows Explorer**, und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
   
      Die benutzerdefinierte hostanwendung wird ausgeführt und startet das Textvorlagen-Transformationsprozess ab.  
   

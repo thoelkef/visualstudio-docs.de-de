@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405798"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
 Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , oder Sie müssen erweiterte Bereitstellungsfunktionen, wie z. B. die Bereitstellung einer vertrauenswürdigen Anwendung verwenden Sie die *Mage.exe* Befehlszeilentool, mit Ihrem Erstellen[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste. In dieser exemplarischen Vorgehensweise wird beschrieben, wie zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe der Befehlszeilenversion (*Mage.exe*) oder die grafische Version (*MageUI.exe*) der dem Manifest Generation und Bearbeitungstool verwenden.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
  In dieser exemplarischen Vorgehensweise hat einige Voraussetzungen und Optionen, die Sie vor dem Erstellen einer Bereitstellungstyps auswählen müssen.
 
 - Installieren Sie *Mage.exe* und *MageUI.exe*.
@@ -43,7 +43,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
 
 - Bestimmen Sie, wie die Bereitstellung verteilt wird.
 
-   Distribution-Optionen enthalten: Web, Dateifreigabe oder CD. Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
+   Die Distribution-Optionen umfassen: Web-, Dateifreigabe oder CD. Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
 - Bestimmen Sie, ob die Anwendung mit erhöhten Rechten ein Maß an Vertrauenswürdigkeit erfordert.
 
@@ -54,13 +54,13 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
    Sie sollten Ihre Bereitstellung mit einem Authenticode-Zertifikat signieren. Sie können ein Testzertifikat generieren, indem Sie mithilfe von Visual Studio *MageUI.exe*, oder *MakeCert.exe* und *Pvk2Pfx.exe* Tools, oder Sie können ein Zertifikat aus einem Zertifikat abrufen Zertifizierungsstelle (CA). Wenn Sie die Bereitstellung vertrauenswürdiger Anwendungen verwenden möchten, müssen Sie auch eine einmalige Installation des Zertifikats auf allen Clientcomputern ausführen. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  Sie können auch die Bereitstellung mit einem CNG-Zertifikat signieren, die Sie von einer Zertifizierungsstelle erhalten können.
+  > Sie können auch die Bereitstellung mit einem CNG-Zertifikat signieren, die Sie von einer Zertifizierungsstelle erhalten können.
 
 - Stellen Sie sicher, dass die Anwendung nicht über ein Manifest mit UAC-Informationen verfügt.
 
    Sie müssen bestimmen, ob Ihre Anwendung ein Manifest mit der Benutzerkontensteuerung (UAC) Informationen, z. B. enthält eine `<dependentAssembly>` Element. Um ein Anwendungsmanifest zu untersuchen, können Sie die Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) Hilfsprogramm.
 
-   Wenn Ihre Anwendung ein Manifest mit UAC-Informationen enthält, müssen Sie es erneut ohne die UAC-Informationen erstellen. Für eine C# Projekt in Visual Studio, öffnen Sie die Projekteigenschaften, und wählen Sie die Registerkarte "Anwendung". In der **Manifest** Dropdown-Liste **Anwendung ohne Manifest erstellen**. Für eine Visual Basic-Projekt in Visual Studio, öffnen Sie die Projekteigenschaften, wählen Sie die Registerkarte "Anwendung", und klicken Sie auf **UAC-Anzeigeeinstellungen**. In der Manifestdatei geöffnet ist, entfernen Sie alle Elemente innerhalb der einzelnen `<asmv1:assembly>` Element.
+   Wenn Ihre Anwendung ein Manifest mit UAC-Informationen enthält, müssen Sie es erneut ohne die UAC-Informationen erstellen. Öffnen Sie für ein C#-Projekt in Visual Studio die Projekteigenschaften, und wählen Sie die Registerkarte "Anwendung". In der **Manifest** Dropdown-Liste **Anwendung ohne Manifest erstellen**. Für eine Visual Basic-Projekt in Visual Studio, öffnen Sie die Projekteigenschaften, wählen Sie die Registerkarte "Anwendung", und klicken Sie auf **UAC-Anzeigeeinstellungen**. In der Manifestdatei geöffnet ist, entfernen Sie alle Elemente innerhalb der einzelnen `<asmv1:assembly>` Element.
 
 - Bestimmen Sie, ob die Anwendung erforderlichen Komponenten auf dem Clientcomputer erforderlich ist.
 
@@ -73,7 +73,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
 2. Erstellen Sie in das Bereitstellungsverzeichnis, die, das Sie gerade erstellt haben, ein Versionsunterverzeichnis. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, benennen Sie im Versionsunterverzeichnis **1.0.0.0**.
 
    > [!NOTE]
-   >  Die Version der Bereitstellung kann sich von der Version der Anwendung sein.
+   > Die Version der Bereitstellung kann sich von der Version der Anwendung sein.
 
 3. Kopieren Sie alle Ihre Anwendungsdateien im Versionsunterverzeichnis, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien. Bei Bedarf können Sie zusätzliche Unterverzeichnisse erstellen, die zusätzliche Dateien enthalten.
 
@@ -86,7 +86,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
    ```
 
    > [!NOTE]
-   >  Achten Sie darauf, dass Sie nach dem den Punkt (.) enthalten die `-FromDirectory` auswählen, um das aktuelle Verzeichnis angibt. Wenn Sie nicht über den Punkt beinhalten, müssen Sie den Pfad an den Anwendungsdateien angeben.
+   > Achten Sie darauf, dass Sie nach dem den Punkt (.) enthalten die `-FromDirectory` auswählen, um das aktuelle Verzeichnis angibt. Wenn Sie nicht über den Punkt beinhalten, müssen Sie den Pfad an den Anwendungsdateien angeben.
 
 6. Melden Sie das Anwendungsmanifest mit dem Authenticode-Zertifikat. Ersetzen Sie dies *mycert.pfx* durch den Pfad zu der Zertifikatsdatei. Ersetzen Sie dies *Passwd* durch das Kennwort für Ihre Zertifikatdatei.
 
@@ -121,7 +121,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
 2. Erstellen Sie in das Bereitstellungsverzeichnis, die, das Sie gerade erstellt haben, ein Versionsunterverzeichnis. Ist dies das erste Mal, dass Sie die Anwendung bereitstellen möchten, benennen Sie im Versionsunterverzeichnis **1.0.0.0**.
 
    > [!NOTE]
-   >  Die Version der Bereitstellung unterscheidet sich wahrscheinlich von der Version Ihrer Anwendung.
+   > Die Version der Bereitstellung unterscheidet sich wahrscheinlich von der Version Ihrer Anwendung.
 
 3. Kopieren Sie alle Ihre Anwendungsdateien im Versionsunterverzeichnis, einschließlich der ausführbaren Dateien, Assemblys, Ressourcen und -Datendateien. Bei Bedarf können Sie zusätzliche Unterverzeichnisse erstellen, die zusätzliche Dateien enthalten.
 
@@ -177,7 +177,7 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
 
 25. Wenn Sie ein Zertifikat als Datei im Dateisystem gespeichert haben, verwenden Sie die **mit Zertifikatsdatei signieren** aus, und wählen Sie das Zertifikat aus dem Dateisystem mit den Auslassungspunkten (**...** ) Schaltfläche. Geben Sie dann das Zertifikatkennwort ein.
 
-     - oder -
+     - oder - 
 
      Wenn das Zertifikat im Zertifikatspeicher der von Ihrem Computer aus zugegriffen werden kann gehalten wird, wählen Sie die **mit gespeichertem Zertifikat signieren** aus, und wählen Sie das Zertifikat in der Liste.
 

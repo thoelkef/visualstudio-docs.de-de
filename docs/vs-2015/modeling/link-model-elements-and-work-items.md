@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440958"
 ---
 # <a name="link-model-elements-and-work-items"></a>Verknüpfen von Modellelementen und Arbeitselementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Sie müssen Team Explorer zum Erstellen und Öffnen von Links verwenden. Vergewissern Sie sich, dass das Modellierungsprojekt und die Diagramme in die Versionskontrolle eingecheckt werden, damit andere Benutzer verknüpfte Diagramme öffnen können.  
+> Sie müssen Team Explorer zum Erstellen und Öffnen von Links verwenden. Vergewissern Sie sich, dass das Modellierungsprojekt und die Diagramme in die Versionskontrolle eingecheckt werden, damit andere Benutzer verknüpfte Diagramme öffnen können.  
   
  Sie können unter anderem Folgendes verknüpfen:  
   
@@ -61,7 +61,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
 - Diagramme. Wählen Sie einen leeren Bereich des Diagramms aus, um ein Diagramm auszuwählen.  
   
 > [!WARNING]
->  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
+> Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
   
 - [Eine Verbindung mit einem Teamprojekt herstellen](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
      Visual Studio verknüpft das Modellelement mit dem neuen Arbeitselement. Ein Symbol wird auf dem Modellelement oder in seiner Nähe angezeigt.  
   
 > [!WARNING]
->  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
+> Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
   
 ## <a name="LinkExisting"></a> Verknüpfen eines Modellelements mit einer vorhandenen Arbeitsaufgabe  
  Wenn Sie Modellelemente mit Arbeitselementen verknüpfen, beginnen Sie beim Modellelement, nicht beim Arbeitselement.  
@@ -123,7 +123,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
      Nach der Verknüpfung weist die Eigenschaft **Arbeitselemente** des Modellelements eine größere Zahl als zuvor auf. Es wird auch ein Symbol auf dem Modellelement oder in seiner Nähe angezeigt.  
   
 > [!WARNING]
->  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
+> Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
   
 ## <a name="OpenWorkItem"></a> Arbeitsaufgaben anzeigen, die mit einem Modellelement verknüpften  
   
@@ -132,7 +132,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
 2. Öffnen Sie das Kontextmenü für das Modellelement auf dem Modellierungsdiagramm oder im **UML-Modell-Explorer**. Wählen Sie die Option **Arbeitselemente anzeigen** aus, um die Liste verknüpfter Arbeitselemente anzuzeigen.  
   
     > [!NOTE]
-    >  Es werden nur die Arbeitselemente vom aktuell verbundenen Server angezeigt. Wenn keine Arbeitselemente angezeigt werden, müssen Sie sich vergewissern, dass Sie in **Team Explorer**mit dem richtigen Server verbunden sind.  
+    > Es werden nur die Arbeitselemente vom aktuell verbundenen Server angezeigt. Wenn keine Arbeitselemente angezeigt werden, müssen Sie sich vergewissern, dass Sie in **Team Explorer**mit dem richtigen Server verbunden sind.  
   
 ## <a name="ViewLinkedModels"></a> Anzeigen von Modellelementen mit einer Arbeitsaufgabe verknüpft  
  Sie können Modellierungsdiagramme und Elemente anzeigen, die in Visual Studio Team Services und in Team Foundation Server 2012 oder höher mit einen Arbeitselement verknüpft sind. Beispielsweise könnte ein Arbeitselement mit Klassenmodellen verknüpft sein, um den Entwurf der neuen zu implementierenden Klassen zu veranschaulichen.  
@@ -140,7 +140,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
 1. Vergewissern Sie sich in **Team Explorer**, dass eine Verbindung mit dem Teamprojekt hergestellt wurde, in dem die Modellelemente mit dem Arbeitselement verknüpft sind.  
   
     > [!NOTE]
-    >  Sie können nur Team Explorer und nicht Team Web Access zum Anzeigen verknüpfter Modellelemente verwenden. Vergewissern Sie sich, dass der Arbeitsbereich dem Modellierungsprojekt zugeordnet wird, das die Modellierungsdiagramme oder -elemente enthält. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen. Weitere Informationen finden Sie unter [Problembehandlung](#Troubleshooting) und [Erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Sie können nur Team Explorer und nicht Team Web Access zum Anzeigen verknüpfter Modellelemente verwenden. Vergewissern Sie sich, dass der Arbeitsbereich dem Modellierungsprojekt zugeordnet wird, das die Modellierungsdiagramme oder -elemente enthält. Wenn Sie noch über keinen Arbeitsbereich verfügen, müssen Sie ihn erstellen. Weitere Informationen finden Sie unter [Problembehandlung](#Troubleshooting) und [Erstellen und Verwenden von Arbeitsbereichen](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Öffnen Sie das Arbeitselement, und wählen Sie **Links** aus. Öffnen Sie unter **Modelllink**das Kontextmenü für das verknüpfte Modellelement. Wählen Sie **Verknüpftes Element öffnen**aus.  
   
@@ -160,7 +160,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
     2. Wählen Sie in der Eigenschaft **Arbeitselemente** die Schaltfläche mit den Auslassungszeichen **[…]**.  
   
         > [!NOTE]
-        >  Es werden nur die Arbeitselemente auf dem aktuellen Server angezeigt. Wenn die Liste leer ist, die Anzahl von Arbeitselementen jedoch nicht 0 ist, überprüfen Sie, ob in **Team Explorer**eine Verbindung mit dem richtigen Server besteht.  
+        > Es werden nur die Arbeitselemente auf dem aktuellen Server angezeigt. Wenn die Liste leer ist, die Anzahl von Arbeitselementen jedoch nicht 0 ist, überprüfen Sie, ob in **Team Explorer**eine Verbindung mit dem richtigen Server besteht.  
   
 3. Deaktivieren Sie unter der Option für **Links zu Arbeitselementen entfernen**die ausgewählten Elemente, deren Verknüpfung Sie aufheben möchten. Klicken Sie auf **OK**.  
   

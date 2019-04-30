@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 217cef39fb3f8564d4ac51878e515622706811ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431541"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Typen nicht als Verweis übergeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58956412"
  Zwar sind in aller Munde und häufig verwendet, die richtige Anwendung der Rückgabewerte `out` und `ref` Parameter erfordert, mittlere Design- und Fertigkeiten im coding. Entwurf für eine Breite Zielgruppe master arbeiten mit Benutzern nicht erwarten sollten Entwickler von Bibliotheken `out` oder `ref` Parameter.
 
 > [!NOTE]
->  Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
+> Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, die von einem Werttyp verursacht wird, müssen Sie die Methode, die das Objekt als ihren Rückgabewert zurück. Wenn die Methode mehrere Werte zurückgeben muss, Umgestalten Sie, um eine einzelne Instanz eines Objekts zurück, der die Werte enthält.

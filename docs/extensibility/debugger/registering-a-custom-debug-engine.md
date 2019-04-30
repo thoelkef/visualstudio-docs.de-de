@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb9b7d406e7638a73e9c4db4974d493aa1d38e92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 25b38f008df47dd2912fef042424e4c3d42becd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415658"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrieren einer benutzerdefinierten Debug-engine
 Die Debug-Engine muss registrieren sich selbst als eine Klassenfactory, die folgenden COM-Konventionen als auch mit Visual Studio über den Visual Studio-Registrierungsunterschlüssel zu registrieren.
 
 > [!NOTE]
->  Sie finden ein Beispiel für eine Debug-Engine in diesem Beispiel TextInterpreter registrieren als Teil des basiert die [Lernprogramm: Erstellen einer DebugEngine, die mithilfe von ATL-COM-](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Sie finden ein Beispiel für eine Debug-Engine in diesem Beispiel TextInterpreter registrieren als Teil des basiert die [Lernprogramm: Erstellen einer DebugEngine, die mithilfe von ATL-COM-](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
 
 ## <a name="dll-server-process"></a>DLL-Server-Prozess
  Eine Debug-Engine ist in der Regel in eine eigene DLL als ein COM-Server eingerichtet. Daher muss die Debug-Engine die CLSID des Klassenfactory mit COM registrieren, bevor Visual Studio darauf zugreifen können. Registrieren Sie anschließend die Debug-Engine muss selbst mit Visual Studio, um alle Eigenschaften (als Metriken andernfalls bezeichnet) herstellen die Debug-engine unterstützt. Die Auswahl der Metriken, die in den Visual Studio-Registrierungsunterschlüssel geschrieben, die den Funktionen, die die Debug-Engine unterstützt abhängig ist.
@@ -32,7 +32,7 @@ Die Debug-Engine muss registrieren sich selbst als eine Klassenfactory, die folg
  Das folgende Beispiel (aus dem TextInterpreter-Beispiel) zeigt, wie Sie mit der `SetMetric` Funktion (aus *dbgmetric.lib*), um die Registrierung einer Debug-Engine mit Visual Studio. Die Metriken, die übergeben wird, werden auch definiert *dbgmetric.lib*.
 
 > [!NOTE]
->  TextInterpreter ist es sich um einen einfachen Debug-Engine. Es ist nicht dafür konfiguriert, und registriert daher keine – andere Features. Eine vollständige Debug-Engine müsste eine Liste mit `SetMetric` Aufrufe oder deren äquivalent, eine für jede Funktion die Debug-Engine unterstützt.
+> TextInterpreter ist es sich um einen einfachen Debug-Engine. Es ist nicht dafür konfiguriert, und registriert daher keine – andere Features. Eine vollständige Debug-Engine müsste eine Liste mit `SetMetric` Aufrufe oder deren äquivalent, eine für jede Funktion die Debug-Engine unterstützt.
 
 ```
 // Define base registry subkey to Visual Studio.

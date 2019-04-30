@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443131"
 ---
 # <a name="properties-of-domain-properties"></a>Eigenschaften von Domäneneigenschaften
 Ein *Domäneneigenschaft* ist eine Funktion eines Modellelements dar, die einen Wert enthalten kann. So kann die Domänenklasse `Person` beispielsweise die Eigenschaften `Name` und `BirthDate` aufweisen. In der DSL-Definition werden die Domäneneigenschaften im Domänenklassenfeld im Diagramm und unter der Domänenklasse im DSL-Explorer aufgelistet. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
->  Der Begriff "Eigenschaft" umfasst zwei Verwendungen. Ein *Domäneneigenschaft* ist eine Funktion, die Sie in einer Domänenklasse definieren. Im Gegensatz dazu viele Elemente einer DSL müssen *Eigenschaften*, die finden Sie in der **Eigenschaften** Fenster in der DSL-Definition. Jede Domäneneigenschaft besitzt beispielsweise einen Satz von Eigenschaften, die im vorliegenden Thema beschrieben werden.
+> Der Begriff "Eigenschaft" umfasst zwei Verwendungen. Ein *Domäneneigenschaft* ist eine Funktion, die Sie in einer Domänenklasse definieren. Im Gegensatz dazu viele Elemente einer DSL müssen *Eigenschaften*, die finden Sie in der **Eigenschaften** Fenster in der DSL-Definition. Jede Domäneneigenschaft besitzt beispielsweise einen Satz von Eigenschaften, die im vorliegenden Thema beschrieben werden.
 
  Wenn ein Benutzer während der Laufzeit Instanzen der Domänenklasse erstellt, können die Werte der Domäneneigenschaften im Eigenschaftenfenster betrachtet und auf den Formen dargestellt werden.
 

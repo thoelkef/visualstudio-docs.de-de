@@ -12,12 +12,12 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96953d77e82dfcec79257da47845ece8281ec869
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd0018df4efb023357e10ab8050f6cf5e9eba1fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438215"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mit dem Befehl „Datei öffnen“
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Dat
     - Wenn die Datei nicht geöffnet ist, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> Abfragen jedes Projekt, um zu bestimmen, welches Projekt die Datei öffnen kann.  
   
         > [!NOTE]
-        >  In der Projekt-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, geben Sie einen Prioritätswert, der die Stufe gibt an, an dem das Projekt die Datei geöffnet. Priority-Werte finden Sie in der <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration.  
+        > In der Projekt-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, geben Sie einen Prioritätswert, der die Stufe gibt an, an dem das Projekt die Datei geöffnet. Priority-Werte finden Sie in der <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Enumeration.  
   
 2. Jedes Projekt gibt eine Prioritätsstufe, die die Wichtigkeit gibt an, es wird auf das Projekt die Datei geöffnet wird.  
   
@@ -57,4 +57,4 @@ Die folgenden Schritte beschreiben, wie verarbeitet die IDE die **geöffnete Dat
  [Anzeigen von Dateien mit Öffnen mit (Befehl)](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Sie öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)   
- [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+ [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)

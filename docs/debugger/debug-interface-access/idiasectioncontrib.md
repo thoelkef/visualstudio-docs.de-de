@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eada57433b37f759da51ecdb380e530f3fb77fdf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839471"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Abgerufen, die einen Beitrag Abschnitt beschreiben, ein zusammenhängender Speicherblock, also auf das Abbild von einem Kompiliereinheit beigetragenen.
@@ -58,7 +58,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaSectionContrib`.
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Ruft die CRC-Wert für die Umsetzungsinformationen für den Abschnitt ab.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Ruft den Compiland-Bezeichner für den Abschnitt ab.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
 Diese Schnittstelle wird abrufen durch Aufrufen der [idiaenumsectioncontribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) und [idiaenumsectioncontribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) Methoden. Finden Sie unter den [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Schnittstelle für ein Beispiel zum Abrufen von der `IDiaSectionContrib` Schnittstelle.

@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435239"
 ---
 # <a name="how-to-implement-nested-projects"></a>Vorgehensweise: Implementieren von geschachtelten Projekten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Bei der Erstellung ein geschachtelten Projekts-Typs vorhanden sind eine zusätzl
 1. Die integrierte Entwicklungsumgebung (IDE) lädt des übergeordneten Projekts Project-Datei und Start-Informationen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle. Das übergeordnete Projekt wird erstellt und zur Projektmappe hinzugefügt.  
   
    > [!NOTE]
-   >  An diesem Punkt ist es zu früh im Prozess für das übergeordnete Projekt, das geschachtelte Projekt erstellt werden, da das übergeordnete Projekt erstellt werden muss, bevor die untergeordneten Projekte erstellt werden können. Das übergeordnete Projekt Einstellungen für die untergeordneten Projekte anwenden und untergeordneten Projekte können Informationen aus der übergeordneten Projekten abrufen, bei Bedarf, nach der Sequenz. Diese Sequenz ist, wenn es von Clients wie z.B. quellcodeverwaltung (SCC) und der Projektmappen-Explorer auf benötigt wird.  
+   > An diesem Punkt ist es zu früh im Prozess für das übergeordnete Projekt, das geschachtelte Projekt erstellt werden, da das übergeordnete Projekt erstellt werden muss, bevor die untergeordneten Projekte erstellt werden können. Das übergeordnete Projekt Einstellungen für die untergeordneten Projekte anwenden und untergeordneten Projekte können Informationen aus der übergeordneten Projekten abrufen, bei Bedarf, nach der Sequenz. Diese Sequenz ist, wenn es von Clients wie z.B. quellcodeverwaltung (SCC) und der Projektmappen-Explorer auf benötigt wird.  
   
     Das übergeordnete Projekt warten muss, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> Methode, um die von der IDE aufgerufen werden, bevor sie die geschachtelten (untergeordnet) Projekte erstellen kann.  
   
@@ -57,7 +57,7 @@ Bei der Erstellung ein geschachtelten Projekts-Typs vorhanden sind eine zusätzl
     Wenn es nicht bereits vorhanden ist, erstellt das übergeordnete Projekt eine GUID für jede geschachtelte Projekt durch den Aufruf `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` eine COM-API wird aufgerufen werden, wenn eine GUID ist, erstellt werden. Weitere Informationen finden Sie unter `CoCreateGuid` und GUIDs in der MSDN Library.  
+   > `CoCreateGuid` eine COM-API wird aufgerufen werden, wenn eine GUID ist, erstellt werden. Weitere Informationen finden Sie unter `CoCreateGuid` und GUIDs in der MSDN Library.  
   
     Das übergeordnete Projekt speichert diese GUID in der Projektdatei das nächste Mal abgerufen werden soll, das sie in der IDE geöffnet ist. Finden Sie unter Schritt 4 für Weitere Informationen über das Aufrufen der `AddVirtualProjectEX` zum Abrufen der `guidProjectID` für das untergeordnete Projekt.  
   
@@ -66,7 +66,7 @@ Bei der Erstellung ein geschachtelten Projekts-Typs vorhanden sind eine zusätzl
      Da über- und untergeordneten Projekte programmgesteuert instanziiert werden, können Sie die Eigenschaften für geschachtelte Projekte an diesem Punkt festlegen.  
   
     > [!NOTE]
-    >  Nicht nur erhalten Sie die Kontextinformationen aus dem geschachtelten Projekt, sondern können auch gefragt, ob das übergeordnete Projekt einen beliebigen Kontext für dieses Element durch die Überprüfung hat <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Auf diese Weise können Sie zusätzliche Attribute der dynamischen Hilfe und Menüoptionen, die bestimmten einzelnen geschachtelten Projekten hinzufügen.  
+    > Nicht nur erhalten Sie die Kontextinformationen aus dem geschachtelten Projekt, sondern können auch gefragt, ob das übergeordnete Projekt einen beliebigen Kontext für dieses Element durch die Überprüfung hat <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Auf diese Weise können Sie zusätzliche Attribute der dynamischen Hilfe und Menüoptionen, die bestimmten einzelnen geschachtelten Projekten hinzufügen.  
   
 10. Die Hierarchie wird erstellt, für die Anzeige im Projektmappen-Explorer mit einem Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> Methode.  
   

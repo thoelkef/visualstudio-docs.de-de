@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 694b4dd1531dc196d06ba46eb8c5b77f66052bc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436231"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Anzeigen eines UML-Modells in Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ In diesem Thema:
  `Context.CurrentDiagram as IClassDiagram;`  
   
 > [!NOTE]
->  Eine Instanz von `IDiagram` (und der Untertypen wie `IClassDiagram`) ist nur innerhalb der verarbeiteten Befehls gültig. Es wird nicht empfohlen, ein `IDiagram`-Objekt in einer Variablen zu speichern, die beim Zurückgeben der Steuerung beibehalten wird.  
+> Eine Instanz von `IDiagram` (und der Untertypen wie `IClassDiagram`) ist nur innerhalb der verarbeiteten Befehls gültig. Es wird nicht empfohlen, ein `IDiagram`-Objekt in einer Variablen zu speichern, die beim Zurückgeben der Steuerung beibehalten wird.  
   
  Weitere Informationen finden Sie unter [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   

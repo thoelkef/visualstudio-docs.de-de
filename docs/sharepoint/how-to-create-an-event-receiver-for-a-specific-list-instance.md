@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408556"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Vorgehensweise: Erstellen eines Ereignisempfängers für eine bestimmte Listeninstanz
   Ein Ereignisempfänger für Liste Instanz reagiert auf Ereignisse, die in einer beliebigen Instanz von einer Listendefinition auftreten. Auch wenn die ereignisvorlage für den Empfänger nicht die Zielgruppenadressierung von eine bestimmte Listeninstanz aktiviert wird, können Sie einen Ereignisempfänger ändern, der auf einer Listendefinition Reaktion auf Ereignisse in eine bestimmte Listeninstanz begrenzt ist.
@@ -43,7 +43,7 @@ ms.locfileid: "60094345"
 6. In der **welche Art von-Ereignisempfänger verwenden sollen?** wählen **Listenelementereignisse**.
 
     > [!NOTE]
-    >  Sie können auch eine andere Art von Ereignisempfänger, die für die Listendefinition einer, z. B. Bereiche auswählen **Listen-e-Mail-Ereignisse** oder **Listenworkflowereignisse**.
+    > Sie können auch eine andere Art von Ereignisempfänger, die für die Listendefinition einer, z. B. Bereiche auswählen **Listen-e-Mail-Ereignisse** oder **Listenworkflowereignisse**.
 
 7. In der **welche Artikel befinden sollte, die Ereignisquelle?** wählen **Ankündigungen**.
 

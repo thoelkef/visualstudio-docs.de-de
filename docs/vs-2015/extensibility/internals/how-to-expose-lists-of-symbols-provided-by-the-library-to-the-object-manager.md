@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431650"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek für den Objekt-Manager bereitgestellt werden
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Die Tools zum Durchsuchen von Symbolen **Klassenansicht**, **Objektkatalog**, **
  Eine Bibliothek kann die Anforderungen für Daten erhalten, wenn das Tool wird aufgerufen, der Knoten erweitert ist oder die Ansicht wird aktualisiert. Wenn ein Tool zum Durchsuchen von Symbolen zum ersten Mal aufgerufen wird, fordert der Objekt-Manager die Bibliothek, um die Liste der obersten Ebene bereitgestellt werden. Wenn ein Benutzer einen Listenknoten erweitert, bietet die Bibliothek eine Liste der untergeordneten Elemente unter diesem Knoten an. Jedes Objekt-Manager-Abfrage enthält einen Index des relevanten Elements. Um eine neue Liste anzuzeigen, muss der Objekt-Manager bestimmen, wie viele Elemente in der Liste den Typ der Elemente, deren Namen, Barrierefreiheit und andere Eigenschaften sind.  
   
 > [!NOTE]
->  Folgende verwalteter Code wird gezeigt, wie Listen von Symbolen durch die Implementierung der zu der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die Objekt-Manager Ruft die Methoden dieser Benutzeroberfläche und verwendet die erhaltenen Daten zum Auffüllen von oder aktualisieren die Tools zum Durchsuchen von Symbolen.  
+> Folgende verwalteter Code wird gezeigt, wie Listen von Symbolen durch die Implementierung der zu der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die Objekt-Manager Ruft die Methoden dieser Benutzeroberfläche und verwendet die erhaltenen Daten zum Auffüllen von oder aktualisieren die Tools zum Durchsuchen von Symbolen.  
 >   
->  Verwenden Sie für systemeigenen Code Symbol-anbieterimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstelle.  
+> Verwenden Sie für systemeigenen Code Symbol-anbieterimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstelle.  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Bereitstellen von Listen von Symbolen, um den Objekt-Manager  
   

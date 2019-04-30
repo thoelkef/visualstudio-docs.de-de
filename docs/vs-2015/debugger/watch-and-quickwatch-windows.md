@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444227"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Fenster "Überwachen" und "Schnellüberwachung"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Es kann durchaus sein, dass Sie das Verhalten eines bestimmten Objekts beobachten möchten. Beispielsweise möchten Sie ein Objekt nachverfolgen, auf das eine lokale Variable verweist, nachdem diese Variable den Gültigkeitsbereich verlassen hat. In C# und Visual Basic können Sie Objekt-IDs für bestimmte Instanzen von Verweistypen erstellen und diese im Fenster "Überwachen" und in Haltepunktbedingungen verwenden. Die Objekt-ID wird von den Debugdiensten der CLR (Common Language Runtime) generiert und dem Objekt zugeordnet.  
   
 > [!NOTE]
->  Objekt-IDs erstellen Weak-Verweise und verhindern nicht, dass das Objekt in die Garbage Collection aufgenommen wird. Sie gelten nur für die aktuelle Debugsitzung.  
+> Objekt-IDs erstellen Weak-Verweise und verhindern nicht, dass das Objekt in die Garbage Collection aufgenommen wird. Sie gelten nur für die aktuelle Debugsitzung.  
   
  Im folgenden Code erstellt eine Methode eine `Person` mithilfe einer lokalen Variablen. Den Namen der `Person`finden Sie in einer anderen Methode heraus:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Setzen Sie das Debugging fort. Wenn die Ausführung in der `DoSomething()` Methode anhält, wird im Fenster **Überwachen** das Objekt `Person` angezeigt.  
   
 > [!NOTE]
->  Wenn Sie die Eigenschaften des Objekts anzeigen möchten, z. B. `Person.Name` im oben stehenden Beispiel, muss die Eigenschaftenauswertung aktiviert sein.  
+> Wenn Sie die Eigenschaften des Objekts anzeigen möchten, z. B. `Person.Name` im oben stehenden Beispiel, muss die Eigenschaftenauswertung aktiviert sein.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Verwenden von Registern im Fenster "Überwachen" (nur C++)  
  Wenn Sie nativen Code Debuggen, können Sie sowohl Registernamen als auch Variablennamen mit hinzufügen  **$ \<RegisterName >** oder  **@ \<RegisterName >**.  Weitere Informationen finden Sie unter [Pseudovariables](../debugger/pseudovariables.md).  

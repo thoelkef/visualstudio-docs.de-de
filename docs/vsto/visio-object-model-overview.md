@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438760"
 ---
 # <a name="visio-object-model-overview"></a>Übersicht über das Visio-Objektmodell
   Zur Entwicklung von Office-Projektmappen für Microsoft Office Visio können Sie mit dem Visio-Objektmodell interagieren. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Visio bereitgestellt und im `Microsoft.Office.Interop.Visio`-Namespace definiert werden.
@@ -67,7 +67,7 @@ ms.locfileid: "60096555"
  Alle Objekte und Member in der VBA-Objektmodellreferenz entsprechen Typen und Membern in der primären Interopassembly (PIA) für Visio. Z. B. die `Document` Objekt in der VBA-Objektmodellreferenz entspricht dem Microsoft.Office.Interop.Visio.Document-Typ in der Visio-PIA. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten Visio VSTO-Add-In-Projekt verwenden möchten.
 
 > [!NOTE]
->  Derzeit ist keine Referenzdokumentation für die primäre Interopassembly für Visio verfügbar.
+> Derzeit ist keine Referenzdokumentation für die primäre Interopassembly für Visio verfügbar.
 
  Verwandte Codebeispiele und weitere Tools zum Erstellen von Visio-Projektmappen finden Sie [Visio 2010 Software Development Kits](http://go.microsoft.com/fwlink/?LinkId=196501).
 

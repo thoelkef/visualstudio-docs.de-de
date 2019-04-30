@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436526"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parameter-Marshalling für Visual Studio-Interopassemblys
 VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen oder von nicht verwalteten COM-Code aufgerufen werden. In der Regel Methodenargumente umgewandelt oder gemarshallt werden, automatisch von der interop-Marshaller. Allerdings können keine Argumente manchmal nicht in einer unkomplizierten Weise transformiert werden. In diesen Fällen werden die interop-Assembly-Methode Prototyp-Parameter verwendet, um die COM-Funktionsparameter so weit wie möglich entsprechen. Weitere Informationen finden Sie unter [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -46,7 +46,7 @@ VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen od
  In manchen Fällen eine COM-Schnittstelle generiert eine `IUnknown` Objekt und der COM-Schnittstelle anschließend übergibt es als Typ `void **`. Diese Schnittstellen sind besonders wichtig, da, wenn die Variable, als definiert ist [out] ein, in der IDL-Datei, und klicken Sie dann die `IUnknown` Objekt ist mit verweiszählung der `AddRef` Methode. Ein Arbeitsspeicherverlust tritt auf, wenn das Objekt nicht ordnungsgemäß behandelt wird.  
   
 > [!NOTE]
->  Ein `IUnknown` durch die COM-Schnittstelle erstellt wird und in einer Variablen [Out] zurückgegeben bewirkt, dass einen Speicherverlust, wenn sie nicht explizit freigegeben wird.  
+> Ein `IUnknown` durch die COM-Schnittstelle erstellt wird und in einer Variablen [Out] zurückgegeben bewirkt, dass einen Speicherverlust, wenn sie nicht explizit freigegeben wird.  
   
  Verwaltete Methoden, die die Behandlung solcher Objekte behandeln <xref:System.IntPtr> als Zeiger auf ein `IUnknown` Objekt aus, und rufen Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um das Objekt abzurufen. Der Aufrufer sollte dann den Rückgabewert in den Datentyp geeignet ist umgewandelt. Wenn das Objekt nicht mehr benötigt wird, rufen Sie <xref:System.Runtime.InteropServices.Marshal.Release%2A> , diese freizugeben.  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  Die folgenden Methoden sind bekannte übergeben `IUnknown` Zeiger-Objekt als Typ <xref:System.IntPtr>. Verarbeiten Sie diese Option aus, wie in diesem Abschnitt beschrieben.  
+> Die folgenden Methoden sind bekannte übergeben `IUnknown` Zeiger-Objekt als Typ <xref:System.IntPtr>. Verarbeiten Sie diese Option aus, wie in diesem Abschnitt beschrieben.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

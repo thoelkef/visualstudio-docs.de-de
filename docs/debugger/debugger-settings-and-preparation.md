@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852743"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist. Wenn Sie das Programm mithilfe von Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, werden diese Einstellungen in der Debugkonfiguration automatisch korrekt eingestellt.
@@ -37,11 +37,11 @@ In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen s
 
  [Konsolenprojekte](../debugger/debugging-preparation-console-projects.md) enthält Anweisungen zum Konfigurieren von Konsolenprojekten für das Debuggen.
 
- [Gewusst wie: Debuggen einer ausführbaren Datei nicht Teil einer Visual Studio-Projektmappe](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) wird erläutert, wie das Debuggen einer ausführbaren Datei, die nicht als Teil eines Visual Studio-Projekts erstellt wird.
+ [Vorgehensweise: Debuggen einer ausführbaren Datei nicht Teil einer Visual Studio-Projektmappe](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) wird erläutert, wie das Debuggen einer ausführbaren Datei, die nicht als Teil eines Visual Studio-Projekts erstellt wird.
 
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md) beschreibt das Debuggen von 64-Bit-Anwendungen.
 
- [Gewusst wie: Angeben einer .NET Framework-Version für Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) beschreibt einen Registrierungsschlüssel an, dass zum Debugger, welche Version verwendet.
+ [Vorgehensweise: Geben Sie eine .NET Framework-Version für Debuggen](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) beschreibt einen Registrierungsschlüssel an, dass zum Debugger, welche Version verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

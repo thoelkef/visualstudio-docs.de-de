@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905255"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Erste Schritte mit dem Momentaufnahmedebugger
 
@@ -33,7 +33,7 @@ Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnah
 
     Eine violette Sechseck wird angezeigt, in dem Sie auf der linken Seite klicken.
 
-2. Klicken Sie auf **Sammlung starten** um die andockpunkt zu aktivieren.
+2. Klicken Sie auf **Sammlung starten**, um den Andockpunkt zu aktivieren.
 
 ### <a name="open-a-snapshot"></a>Öffnen Sie eine Momentaufnahme
 
@@ -47,7 +47,7 @@ Der Momentaufnahmedebugger erfasst Momentaufnahmen Ihrer Anwendung. Momentaufnah
 
 In dieser Ansicht können Sie auf Variablen DataTips anzuzeigen, verwenden Sie die lokalen Variablen, Überwachungselemente, und rufen Sie zeigen, Aufrufliste und auch Auswerten von Ausdrücken.
 
-Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Standardmäßig wird nur eine Momentaufnahme pro andockpunkt erfasst. Nachdem eine Momentaufnahme erfasst wurde, wird der andockpunkt, also deaktiviert. Wenn Sie eine andere Momentaufnahme an die andockpunkt erfassen möchten, können Sie die andockpunkt wieder aktivieren, indem Sie auf **Upgradesammlung**.
+Die Website selbst ist noch aktiv, und Endbenutzer sind nicht betroffen. Standardmäßig wird nur eine Momentaufnahme pro andockpunkt erfasst. Nachdem eine Momentaufnahme erfasst wurde, wird der andockpunkt, also deaktiviert. Wenn Sie eine andere Momentaufnahme an dem Andockpunkt erfassen möchten, können Sie den Andockpunkt durch Klicken auf **Sammlung aktualisieren** wieder aktivieren.
 
 ### <a name="set-a-logpoint"></a>Legen Sie eine Protokollpunkt
 
@@ -57,7 +57,7 @@ Die Website selbst noch aktiv ist, und Endbenutzer sind nicht betroffen. Standar
 
     ![Andockpunkt Bedingungen](../media/snapshot-startpage-logpoint.png)
 
-3. In der **Nachricht** Geben Sie eine protokollmeldung, die Sie protokollieren möchten. Sie können auch Variablen in der protokollmeldung auswerten, indem Sie sie in geschweiften Klammern platzieren.
+3. In der **Nachricht** Geben Sie eine protokollmeldung, die Sie protokollieren möchten. Sie können auch Variablen in der Protokollmeldung auswerten, indem Sie sie in geschweiften Klammern platzieren.
 
     Auf Wunsch **an Ausgabefenster senden**, die Meldung im Fenster "Diagnosetools" angezeigt, wenn die protokollpunkt erreicht wird.
 

@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429197"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -318,7 +318,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
   In der folgenden Tabelle werden zusätzliche Teilzeichenfolgen in der Anmerkungsname, der die Bedeutung der Anmerkung genauer bestimmen eingefügt.  Die verschiedenen Teilzeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, und `_to_`.  
   
 > [!IMPORTANT]
->  Wenn die Schnittstelle, die Sie kommentieren sind COM ist, verwenden Sie com-Form von diese Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.  
+> Wenn die Schnittstelle, die Sie kommentieren sind COM ist, verwenden Sie com-Form von diese Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.  
   
  **Anmerkungen und Beschreibungen**  
   
@@ -474,7 +474,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
      Der Parameter, ein Feld oder Ergebnis wird im Bereich (inklusiv) von `low` zu `hi`.  Äquivalent zu `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` , die auf das mit Anmerkungen versehene Objekt zusammen mit den entsprechenden vorab Zustand, oder nach dem Status Bedingungen angewendet wird.  
   
     > [!IMPORTANT]
-    >  Obwohl die Namen "in" und "out", die Semantik der enthalten `_In_` und `_Out_` führen **nicht** gelten diese Anmerkungen.  
+    > Obwohl die Namen "in" und "out", die Semantik der enthalten `_In_` und `_Out_` führen **nicht** gelten diese Anmerkungen.  
   
 - `_Pre_equal_to_(expr)`  
   

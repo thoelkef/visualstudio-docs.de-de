@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851752"
 ---
 # <a name="debugging-wcf-services"></a>Debuggen von WCF-Diensten
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Einschränkungen beim WCF-Debugging](../debugger/limitations-on-wcf-debugging.md) beschreibt Beschränkungen beim Debuggen von WCF.
 
- [Gewusst wie: Einzelschritt in WCF-Dienste](../debugger/how-to-step-into-wcf-services.md) erläutert die Debuggerunterstützung für die schrittweise Ausführung eines WCF-Diensts.
+ [Vorgehensweise: Schritt in WCF-Dienste](../debugger/how-to-step-into-wcf-services.md) erläutert die Debuggerunterstützung für die schrittweise Ausführung eines WCF-Diensts.
 
- [Gewusst wie: Debuggen eines WCF-Diensts für selbstgehostete](../debugger/how-to-debug-a-self-hosted-wcf-service.md) wird beschrieben, wie Sie einen WCF-Dienst zu debuggen, die außerhalb von IIS ausgeführt wird oder die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Entwicklungsserver.
+ [Vorgehensweise: Debuggen eines WCF-Diensts für selbstgehostete](../debugger/how-to-debug-a-self-hosted-wcf-service.md) wird beschrieben, wie Sie einen WCF-Dienst zu debuggen, die außerhalb von IIS ausgeführt wird oder die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Entwicklungsserver.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggersicherheit](../debugger/debugger-security.md)

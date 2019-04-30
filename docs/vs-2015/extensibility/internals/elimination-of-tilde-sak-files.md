@@ -12,12 +12,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70efef9232bd7e9baf317e59111e59e9f98bf46b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 751acf4e5f56b7b477f05ab71571e0becd566649
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436324"
 ---
 # <a name="elimination-of-sak-files"></a>Beseitigung von ~SAK-Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Im Datenquellen-Steuerelement-Plug-in-API 1.2 die ~ SAK-Dateien wurden durch fun
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateTemporaryFilesInSourceControl" = DWORD: 00000001  
   
 > [!NOTE]
->  Wenn dieser Registrierungsschlüssel auf DWORD: 00000000 festgelegt ist, dies entspricht dem Schlüssel, die nicht vorhandene wird und Visual Studio weiterhin versucht wird, um die temporären Dateien zu erstellen. Jedoch, wenn der Registrierungsschlüssel auf DWORD: 00000001 festgelegt ist, Visual Studio versucht nicht, die temporären Dateien zu erstellen. Stattdessen wird angenommen, dass das Quellcodeverwaltungs-Plug-in die MSSCCPRJ nicht unterstützt wird. SCC-Datei und nicht freigegebene ausgecheckte Elemente nicht unterstützt.  
+> Wenn dieser Registrierungsschlüssel auf DWORD: 00000000 festgelegt ist, dies entspricht dem Schlüssel, die nicht vorhandene wird und Visual Studio weiterhin versucht wird, um die temporären Dateien zu erstellen. Jedoch, wenn der Registrierungsschlüssel auf DWORD: 00000001 festgelegt ist, Visual Studio versucht nicht, die temporären Dateien zu erstellen. Stattdessen wird angenommen, dass das Quellcodeverwaltungs-Plug-in die MSSCCPRJ nicht unterstützt wird. SCC-Datei und nicht freigegebene ausgecheckte Elemente nicht unterstützt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Neuigkeiten in API-Version 1.2 des Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

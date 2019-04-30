@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten und Fortfahren (Visual C#) | Microsoft-Dokumentation
+title: Bearbeiten und Fortfahren (Visual c#) | Microsoft-Dokumentation
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851009"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C#)
  Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen. Im Ausführmodus ist der Quellcode-Editor schreibgeschützt.
@@ -36,8 +36,8 @@ ms.locfileid: "56685364"
 
  Wenn „Bearbeiten und Fortfahren“ aktiviert ist, werden unterstützte Änderungen automatisch übernommen, wenn Sie einen Ausführungsbefehl des Debuggers verwenden (z.B. **Weiter**, **Schritt**, **Nächste Anweisung festlegen**) oder eine Funktionsauswertung im Debuggerfenster durchführen.
 
- Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten und Fortfahren (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Vorgehensweise: Verwenden von „Bearbeiten und fortfahren“ (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Unterstützte Codeänderungen (C# und Visual Basic)](../debugger/supported-code-changes-csharp.md)

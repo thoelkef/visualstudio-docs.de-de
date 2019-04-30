@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950347"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 
@@ -52,12 +52,12 @@ In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, di
 |clrversion|Aktuelle Version der Common Language Runtime (CLR).|
 |ext_*|Fügen Sie das Präfix `ext_` zu einem beliebigen Parameter hinzu, um auf die Variablen der übergeordneten Vorlage zu verweisen. Beispielsweise `ext_safeprojectname`.|
 |guid[1-10]|Eine GUID zum Ersetzen der Projekt-GUID in einer Projektdatei. Sie können bis zu zehn eindeutige GUIDs (z.B. `guid1`) angeben.|
-|itemname|Der vom Benutzer im Dialogfeld **Neues Element hinzufügen** angegebene Name|
+|itemname|Der Name der Datei, in der der Parameter verwendet wird.|
 |machinename|Der aktuelle Computername (z. B. Computer01).|
 |projectname|Der Name, der vom Benutzer bei der Erstellung des Projekts angegeben wurde.|
 |registeredorganization|Der Registrierungsschlüsselwert aus HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Der Stammnamespace des aktuellen Projekts. Dieser Parameter gilt nur für Elementvorlagen.|
-|safeitemname|Der vom Benutzer im Dialogfeld **Neues Element hinzufügen** angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden|
+|safeitemname|Wie `itemname`, jedoch wurden alle unsicheren Zeichen und Leerzeichen entfernt.|
 |safeprojectname|Der vom Benutzer beim Erstellen des Projekts angegebene Name, aus dem alle unsicheren Zeichen sowie Leerzeichen entfernt wurden.|
 |Uhrzeit|Die aktuelle Uhrzeit im Format TT/MM/JJJJ 00:00:00.|
 |SpecificSolutionName|Der Name der Projektmappe. Wenn "Projektmappenverzeichnis erstellen" aktiviert ist, verfügt `SpecificSolutionName` über den Projektmappennamen. Wenn "Projektmappenverzeichnis erstellen" nicht aktiviert ist, ist `SpecificSolutionName` leer.|

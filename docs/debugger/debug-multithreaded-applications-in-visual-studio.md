@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f2fc8b6acd38393cf9fefb1c5581ab4d1a0712
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852925"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuggen von Multithreadanwendungen in Visual Studio
 Ein Thread ist eine Sequenz von Anweisungen, die auf die das Betriebssystem Prozessorzeit gewährt. Jeder Prozess, der im Betriebssystem ausgeführt wird, umfasst mindestens einen Thread. Prozesse, die über mehr als einen Thread verfügen, werden als Multithreadprozesse bezeichnet.
@@ -40,11 +40,11 @@ Multithreading kann neue potenzielle Fehlertypen eingeführt. Z. B. zwei oder me
 
 Visual Studio bietet verschiedene Tools für Verwendung beim Debuggen von Multithreadanwendungen.
 
-- Für Threads, die wichtigsten Tools zum Debuggen von Threads sind die **Threads** , Threadmarker in Quellcodefenstern der **parallele Stapel** Fenster die **parallele Überwachung** Fenster, und die **Debugspeicherort** Symbolleiste. Informationen zu den **Threads** Fenster und **Debugspeicherort** Symbolleiste finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md). Informationen zum Verwenden der **parallele Stapel** und **parallele Überwachung** Windows finden Sie unter [erste Schritte zum Debuggen einer Multithreadanwendung](../debugger/get-started-debugging-multithreaded-apps.md). Beide Themen zeigen, wie Threadmarker verwendet wird.
+- Für Threads, die wichtigsten Tools zum Debuggen von Threads sind die **Threads** , Threadmarker in Quellcodefenstern der **parallele Stapel** Fenster die **parallele Überwachung** Fenster, und die **Debugspeicherort** Symbolleiste. Informationen zu den **Threads** Fenster und **Debugspeicherort** Symbolleiste finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md). Informationen zum Verwenden der **parallele Stapel** und **parallele Überwachung** Windows finden Sie unter [erste Schritte zum Debuggen einer Multithreadanwendung](../debugger/get-started-debugging-multithreaded-apps.md). Beide Themen zeigen, wie Threadmarker verwendet wird.
 
 - Für Code, verwendet der [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) oder [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), sind die wichtigsten Tools zum Debuggen der **parallele Stapel** Fenster, das **Parallele Überwachung** Fenster, und die **Aufgaben** Fenster, in dem auch JavaScript unterstützt. Informationen zum Einstieg finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung](../debugger/walkthrough-debugging-a-parallel-application.md) und [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
-- Zum Debuggen von Threads auf der GPU, die das primäre Tool ist das **GPU-Threads** Fenster. Finden Sie unter [Vorgehensweise: Verwenden von GPU-Threadfenster](../debugger/how-to-use-the-gpu-threads-window.md).
+- Zum Debuggen von Threads auf der GPU, die das primäre Tool ist das **GPU-Threads** Fenster. Weitere Informationen finden Sie unter [How to: Use the GPU Threads window (Vorgehensweise: Verwenden des Fensters „GPU-Threads“)](../debugger/how-to-use-the-gpu-threads-window.md)
 
 - Für Prozesse, die wichtigsten Tools sind die **an den Prozess anhängen** im Dialogfeld die **Prozesse** Fenster, und die **Debugspeicherort** Symbolleiste.
 
@@ -66,7 +66,7 @@ Listet die Features der Tools zum Debuggen von Threads und Prozessen.
 
 Erläutert das Debuggen mehrerer Prozesse.
 
- [Walkthrough: Debug using the Threads window (Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“)](../debugger/how-to-use-the-threads-window.md)
+ [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md).
 
 Exemplarische Vorgehensweise, die zeigt, wie Sie mit der **Threads** Fenster und die **Debugspeicherort** Symbolleiste.
 
@@ -74,15 +74,15 @@ Exemplarische Vorgehensweise, die zeigt, wie Sie mit der **Threads** Fenster und
 
 Exemplarische Vorgehensweise, die zeigt, wie Sie mit der **parallele Stapel** und **Aufgaben** Windows.
 
- [Gewusst wie: Wechseln zu einem anderen Thread während des Debuggings](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Vorgehensweise: Switch to another thread while debugging (Vorgehensweise: Wechseln zu einem anderen Thread während des Debuggens)](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
 Mehrere Möglichkeiten, um den Debugkontext zu einem anderen Thread zu wechseln.
 
- [Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md)
+ [Vorgehensweise: Flag and unflag threads (Vorgehensweise: Kennzeichnen von Threads und Aufheben der Kennzeichnung)](../debugger/how-to-flag-and-unflag-threads.md)
 
 Markieren oder Kennzeichnen von Threads, die beim Debuggen besondere Aufmerksamkeit erhalten sollen.
 
- [How to: Debug on a high-performance cluster (Vorgehensweise: Debuggen eines Hochleistungsclusters)](../debugger/how-to-debug-on-a-high-performance-cluster.md)
+ [Vorgehensweise: Debug on a high-performance cluster (Vorgehensweise: Debuggen auf einem Hochleistungscluster)](../debugger/how-to-debug-on-a-high-performance-cluster.md)
 
 Techniken zum Debuggen einer Anwendung, die auf einem Hochleistungscluster ausgeführt wird.
 
@@ -90,11 +90,11 @@ Techniken zum Debuggen einer Anwendung, die auf einem Hochleistungscluster ausge
 
 Einfache Techniken, die beim Debuggen systemeigener Threads hilfreich sein können.
 
- [Gewusst wie: Festlegen eines Threadnamens in nativem Code](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Vorgehensweise: Set a thread name in native code (Vorgehensweise: Festlegen eines Threadnamens in nativem Code)](../debugger/how-to-set-a-thread-name-in-native-code.md)
 
 Geben Sie Ihrem Thread einen Namen, der im Fenster **Threads** angezeigt wird.
 
- [Gewusst wie: Festlegen eines Threadnamens in verwaltetem Code](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Vorgehensweise: Set a thread name in managed code (Vorgehensweise: Festlegen eines Threadnamens in verwaltetem Code)](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 Geben Sie Ihrem Thread einen Namen, der im Fenster **Threads** angezeigt wird.
 

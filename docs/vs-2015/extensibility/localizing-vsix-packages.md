@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439756"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Sie können ein VSIX-Paket lokalisieren, indem eine Extension.vsixlangpack-Datei
  Extension.vsixlangpack  
   
 > [!NOTE]
->  Die VSIX-unterstützt-Projektvorlagen in der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generieren Sie ein VSIX-Manifest, und nennen Sie sie "Source.Extension.vsixmanifest". Wenn Visual Studio das Projekt erstellt wurde, kopiert er den Inhalt der Datei in "Extension.vsixmanifest" im VSIX-Paket.  
+> Die VSIX-unterstützt-Projektvorlagen in der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generieren Sie ein VSIX-Manifest, und nennen Sie sie "Source.Extension.vsixmanifest". Wenn Visual Studio das Projekt erstellt wurde, kopiert er den Inhalt der Datei in "Extension.vsixmanifest" im VSIX-Paket.  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Die Extension.vsixlangpack-Datei  
  Die Extension.vsixlangpack-Datei der [Schema für das VSIX-Sprachpaket](../extensibility/vsx-language-pack-schema-reference.md). Dieses Schema verfügt über eine [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) Root-Element, und diese vier untergeordneten Elemente: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), und [Lizenz](../extensibility/license-element-vsix-language-pack-schema.md). Diese untergeordneten Elemente entsprechen den `Name`, `Description`, `MoreInfoURL`, und `License` untergeordnete Elemente des der `Identifier` -Element der Datei "Extension.vsixmanifest".  

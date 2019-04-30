@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434481"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Vorgehensweise: Debuggen einer ausführbaren Datei nicht Visual Studio-Projektmappe angehört
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Manchmal kann es erforderlich sein, eine ausführbare Datei zu debuggen, die nic
 5. Starten Sie die ausführbare Datei, indem Sie einen Ausführungsbefehl, z. B. **starten**, aus der **Debuggen** Menü.  
   
     > [!NOTE]
-    >  EXE-Projekte werden nicht von allen Programmiersprachen unterstützt. Installieren Sie [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], falls Sie diese Funktion benötigen.  
+    > EXE-Projekte werden nicht von allen Programmiersprachen unterstützt. Installieren Sie [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], falls Sie diese Funktion benötigen.  
   
      Wenn Sie eine ausführbare Datei ohne den Quellcode debuggen, sind die verfügbaren Debugfunktionen eingeschränkt, und zwar abhängig davon, ob es sich um ein Anhängen an eine laufende ausführbare Datei handelt, oder ob die ausführbare Datei einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe hinzufügt wird. Wenn die ausführbare Datei ohne Debuginformationen in einem kompatiblen Format erstellt wurde, sind die verfügbaren Funktionen noch weiter eingeschränkt. Falls der Quellcode verfügbar ist, empfiehlt es sich, den Quellcode in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu importieren und ein Debugbuild der ausführbaren Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu erstellen.  
   

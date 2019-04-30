@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436122"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Hinzufügen von Benutzeroberflächenelementen mit VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Eine VSPackage hinzufügen (UI) Elemente der Benutzeroberfläche, z. B. Menüs, 
  Element der obersten Ebene der `Symbols` Abschnitt ist die [GuidSymbol-Element](../../extensibility/guidsymbol-element.md). `GuidSymbol` kartenelemente Namen zu GUIDs, die von der IDE verwendet werden, um Pakete und ihre Bestandteile zu identifizieren.  
   
 > [!NOTE]
->  GUIDs werden automatisch von der Visual Studio-Paketvorlage generiert. Sie können auch eine eindeutige GUID erstellen, indem Sie auf **GUID erstellen** auf die **Tools** Menü.  
+> GUIDs werden automatisch von der Visual Studio-Paketvorlage generiert. Sie können auch eine eindeutige GUID erstellen, indem Sie auf **GUID erstellen** auf die **Tools** Menü.  
   
  Die erste `GuidSymbol` -Element, "Guid [Paketname] Pkg", ist die GUID des Pakets selbst. Dies ist die GUID, die von Visual Studio zum Laden des Pakets verwendet wird. Es ist in der Regel keine untergeordneten-Elemente enthalten.  
   

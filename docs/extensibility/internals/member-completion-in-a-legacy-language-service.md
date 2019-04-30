@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909167"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 
@@ -38,7 +38,7 @@ Es folgen die beiden Möglichkeiten, die mit die MPF-Klassen, in denen eine Memb
 
 - Die <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Vervollständigungszeichen Element und legt einen token Trigger [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) für dieses Zeichen.
 
-Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In C# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.
+Ein Vervollständigungszeichen Member gibt an, dass ein Mitglied aus einer Klasse, Struktur oder eines Enumerationswerts folgen. In c# oder Visual Basic ist der Member Vervollständigungszeichen z. B. eine `.`, während in C++ das Zeichen entweder eine `.` oder `->`. Der Triggerwert wird festgelegt, wenn das Element auf Zeichen überprüft wird.
 
 ### <a name="the-intellisense-member-list-command"></a>Der IntelliSense-Member-List-Befehl
 
@@ -103,7 +103,7 @@ Für den Abschluss der Member die <xref:Microsoft.VisualStudio.Package.Source> -
 
 Der Parser aufgerufen wird und [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) oder [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) Wenn ein Element auf Zeichen eingegeben wird. Den Speicherort, der <xref:Microsoft.VisualStudio.Package.ParseRequest> Objekt ist, sofort, nachdem das Element ausgewählt haben Zeichen. Der Parser muss die Namen aller Elemente erfasst werden, die in einer Memberliste zum jeweiligen Zeitpunkt im Quellcode angezeigt werden können. Klicken Sie dann analysiert der Parser die aktuelle Zeile aus, um den Bereich zu ermitteln, die, den der Benutzer das Element auf Zeichen zugeordnet möchte.
 
-Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In C# geschrieben, betrachten Sie die Membervariable `languageService` aufweist eine Art von `LanguageService`eingeben **LanguageService.** erstellt eine Liste aller Member der `LanguageService` Klasse. Auch in C# eingeben **dies.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.
+Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In C# geschrieben, betrachten Sie die Membervariable `languageService` aufweist eine Art von `LanguageService`eingeben **LanguageService.** erstellt eine Liste aller Member der `LanguageService` Klasse. Auch in c# eingeben **dies.** erstellt eine Liste aller Member der Klasse im aktuellen Bereich.
 
 ### <a name="parser-example"></a>Parser-Beispiel
 

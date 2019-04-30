@@ -10,12 +10,12 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe6870046d1dd15c7bc5795dd82d393272ca6b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434374"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrieren eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Sie können eine legacysprachdiensten auf eine neuere Version von Visual Studio 
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Migrieren Sie eine Visual Studio 2008 Language Service-Lösung auf eine höhere Version  
  Die folgenden Schritte zeigen, wie Sie eine Visual Studio 2008-Beispiel, das mit dem Namen RegExLanguageService anpassen. Sie finden dieses Beispiel in einer Visual Studio 2008 SDK-Installation in der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\-Ordner.  
   
 > [!IMPORTANT]
->  Wenn es sich bei der Sprachdienst Farben nicht definiert, müssen Sie explizit festlegen <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> zu `true` für das VSPackage:  
+> Wenn es sich bei der Sprachdienst Farben nicht definiert, müssen Sie explizit festlegen <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> zu `true` für das VSPackage:  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965270"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint
 
@@ -40,7 +40,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 - Testen des Webparts in SharePoint.
 
     > [!NOTE]
-    > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
+    > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
@@ -89,7 +89,7 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Fügen Sie der `WebPart1`-Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Felder deklariert:
+3. Fügen Sie der `WebPart1` -Klasse folgenden Code hinzu. Mit diesem Code werden die folgenden Felder deklariert:
 
    - Ein Datenraster, um Mitarbeiter im Webpart anzuzeigen.
 
@@ -102,12 +102,12 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Fügen Sie der `WebPart1`-Klasse folgenden Code hinzu. In diesem Code wird dem Webpart eine benutzerdefinierte Eigenschaft mit dem Namen `DataFilePath` hinzugefügt. Eine benutzerdefinierte Eigenschaft ist eine Eigenschaft, die vom Benutzer in SharePoint festgelegt werden kann. Diese Eigenschaft ruft den Speicherort einer XML-Datendatei ab, die zum Auffüllen des Datenrasters verwendet wird, und legt diesen Speicherort fest.
+4. Fügen Sie der `WebPart1` -Klasse folgenden Code hinzu. In diesem Code wird dem Webpart eine benutzerdefinierte Eigenschaft mit dem Namen `DataFilePath` hinzugefügt. Eine benutzerdefinierte Eigenschaft ist eine Eigenschaft, die vom Benutzer in SharePoint festgelegt werden kann. Diese Eigenschaft ruft den Speicherort einer XML-Datendatei ab, die zum Auffüllen des Datenrasters verwendet wird, und legt diesen Speicherort fest.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
-5. Ersetzen Sie die `CreateChildControls`-Methode durch folgenden Code: Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+5. Ersetzen Sie die `CreateChildControls` -Methode durch folgenden Code: Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
    - Fügt das Datenraster und die Bezeichnung hinzu, die Sie im vorherigen Schritt deklariert haben.
 
@@ -116,7 +116,7 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Fügen Sie der `WebPart1`-Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
+6. Fügen Sie der `WebPart1` -Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben ausgeführt:
 
    - Erstellt ein Verb, das im Verbmenü des gerenderten Webparts angezeigt wird.
 

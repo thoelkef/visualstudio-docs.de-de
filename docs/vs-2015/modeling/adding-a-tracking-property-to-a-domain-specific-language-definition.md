@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432390"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
  Implementieren der `GetCustomProperties` Methode für den Typdeskriptor für den `ExampleModel` Domänenklasse.  
   
 > [!NOTE]
->  Der Code, der der DSL-Tools für die benutzerdefinierten Typdeskriptor für generieren `ExampleModel` Aufrufe `GetCustomProperties`, aber der DSL-Tools generieren keine Code, der die Methode implementiert.  
+> Der Code, der der DSL-Tools für die benutzerdefinierten Typdeskriptor für generieren `ExampleModel` Aufrufe `GetCustomProperties`, aber der DSL-Tools generieren keine Code, der die Methode implementiert.  
   
  Definieren diese Methode erstellt die nachverfolgungs-Eigenschaftendeskriptor für den Namespace-Eigenschaft. Bereitstellen der Attribute, die für die Eigenschaft für die Überwachung ermöglicht außerdem die **Eigenschaften** Fenster aus, um die Eigenschaft richtig angezeigt.  
   
@@ -344,7 +344,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
  Implementieren der `GetCustomElementsValue` -Methode für die `ExampleModel` Domänenklasse.  
   
 > [!NOTE]
->  Der Code, der für die DSL-Tools generieren `ExampleModel` Aufrufe `GetCustomElementsValue`, aber der DSL-Tools generieren keine Code, der die Methode implementiert.  
+> Der Code, der für die DSL-Tools generieren `ExampleModel` Aufrufe `GetCustomElementsValue`, aber der DSL-Tools generieren keine Code, der die Methode implementiert.  
   
  Definieren der `GetCustomElementsValue` Methode enthält die Logik für die Eigenschaft berechnet CustomElements `ExampleModel`. Diese Methode zählt die Anzahl der `ExampleElement` Domänenklassen, die einen Namespace, die Eigenschaft, die einen Benutzer aktualisierte Wert und gibt eine Zeichenfolge, die diese Zahl als einen Anteil der insgesamt Elemente im Modell darstellt.  
   
@@ -425,7 +425,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
  Außerdem hinzufügen, Speicher für und Methoden zum Abrufen und festlegen, die Eigenschaft Namespace benutzerdefinierten Speicher, der die `ExampleElement` Domänenklasse.  
   
 > [!NOTE]
->  Der Code, der für die DSL-Tools generieren `ExampleModel` Ruft die Get und set-Methoden, die DSL-Tools generieren jedoch keine Code, der die Methoden implementiert.  
+> Der Code, der für die DSL-Tools generieren `ExampleModel` Ruft die Get und set-Methoden, die DSL-Tools generieren jedoch keine Code, der die Methoden implementiert.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Die Methode für den benutzerdefinierten Typdeskriptor hinzufügen  
   
@@ -591,7 +591,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
  Fügen Sie Code, um das benutzerdefinierte Verhalten der nach dem Laden für XML-Serialisierung unterstützen.  
   
 > [!NOTE]
->  Der Code, der DSL-Tools Aufrufe generieren die `OnPostLoadModel` und `OnPostLoadModelAndDiagram` Methoden der DSL-Tools generieren jedoch keine Code, der diese Methoden implementiert.  
+> Der Code, der DSL-Tools Aufrufe generieren die `OnPostLoadModel` und `OnPostLoadModelAndDiagram` Methoden der DSL-Tools generieren jedoch keine Code, der diese Methoden implementiert.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Hinzufügen von Code zur Unterstützung von benutzerdefinierten Verhaltens nach dem Laden  
   

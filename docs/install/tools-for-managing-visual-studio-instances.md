@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935411"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Tools zum Erkennen und Verwalten von Visual Studio-Instanzen
 
@@ -39,11 +39,12 @@ Darüber hinaus stellt die [Setupkonfigurations-API](<xref:Microsoft.VisualStudi
 
 ## <a name="using-vswhereexe"></a>Verwenden von „vswhere.exe“
 
-`vswhere.exe` wird in Visual Studio (ab Visual Studio 2017, Version 15.2 und höheren Versionen) automatisch eingeschlossen, alternativ können Sie sie von [der vswhere-Releaseseite](https://github.com/Microsoft/vswhere/releases) herunterladen. Verwenden Sie `vswhere -?`, um Hilfeinformationen zum Tool zu erhalten. Dieser Befehl zeigt beispielsweise alle Releases von Visual Studio, einschließlich früherer Produktversionen und Vorabversionen, und gibt die Ergebnisse im JSON-Format zurück:
+`vswhere.exe`wird in Visual Studio (ab Visual Studio 2017, Version 15.2 und höheren Versionen) automatisch eingeschlossen, alternativ können Sie sie von [der vswhere-Releaseseite](https://github.com/Microsoft/vswhere/releases) herunterladen. Verwenden Sie `vswhere -?`, um Hilfeinformationen zum Tool zu erhalten. Dieser Befehl zeigt beispielsweise alle Releases von Visual Studio, einschließlich früherer Produktversionen und Vorabversionen, und gibt die Ergebnisse im JSON-Format zurück:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ Da diese Einträge nicht in der globalen Registrierung gespeichert werden, gibt 
 1. Wählen Sie den Knoten `HKEY_LOCAL_MACHINE` aus.
 
 1. Wählen Sie im Hauptmenü des Registrierungs-Editors **Datei** > **Struktur laden...** und dann die private Registrierungsdatei aus, die im Ordner **AppData\Local** gespeichert ist. Beispiel:
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

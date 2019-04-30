@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433356"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Anpassen des Modells mit Profilen und Stereotypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In Visual Studio können Sie die standardmäßigen UML-Modellelemente wie z. B.
  ![Ein UML-Klasse mit Stereotyp. ](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  Wenn Sie ein Modell mithilfe eines Profils erstellen und dann das Modell für einen anderen Benutzer freigeben, werden für diesen die Stereotype nur angezeigt, wenn auf dem Computer des Benutzers das gleiche Profil installiert ist.  
+> Wenn Sie ein Modell mithilfe eines Profils erstellen und dann das Modell für einen anderen Benutzer freigeben, werden für diesen die Stereotype nur angezeigt, wenn auf dem Computer des Benutzers das gleiche Profil installiert ist.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   

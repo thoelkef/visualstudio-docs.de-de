@@ -1,55 +1,57 @@
 ---
 title: 'Idiasymbol:: Get_classparentid | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_classParentId method
 ms.assetid: f11e3ccb-215d-418c-b8c3-e63159234915
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: cdcba0ea274930f5806d077947bad09b7716f0ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70b6b49ab8a493102d10c03291a326ae0d23a747
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402139"
 ---
 # <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
-Ruft den übergeordneten Klassenbezeichner des Symbols ab.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```C++
-HRESULT get_classParentId ( 
-   DWORD* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parameter
- `pRetVal`
-
-[out] Gibt die übergeordnete Klasse-ID, des Symbols zurück.
-
-## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
-
+Ruft den übergeordneten Klassenbezeichner des Symbols ab.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT get_classParentId (   
+   DWORD* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `pRetVal`  
+ [out] Gibt die übergeordnete Klasse-ID, des Symbols zurück.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+  
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
-
-## <a name="remarks"></a>Anmerkungen
- Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.
-
-## <a name="requirements"></a>Anforderungen
-
-|Anforderung|Beschreibung|
-|-----------------|-----------------|
-|Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
-
-## <a name="see-also"></a>Siehe auch
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+  
+## <a name="remarks"></a>Hinweise  
+ Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  
+  
+## <a name="requirements"></a>Anforderungen  
+  
+|Anforderung|Beschreibung|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
+|Version:|DIA-SDK V7. 0|  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436488"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Besondere sicherheitsüberlegungen für Office-Projektmappen
   Die von Microsoft .NET Framework und Microsoft Office bereitgestellten Sicherheitsfeatures können in Office-Projektmappen zum Schutz vor möglichen Sicherheitsbedrohungen beitragen. In diesem Thema werden einige dieser Bedrohungen erläutert und Empfehlungen bereitgestellt, wie sich vor diesen Bedrohungen schützen lässt. Es beinhaltet auch Informationen dazu, wie sich Microsoft Office-Sicherheitseinstellungen auf Office-Projektmappen auswirken.
@@ -74,7 +74,7 @@ ms.locfileid: "60081319"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Wenn Outlook mit Exchange verwendet wird, ist es nicht möglich, durch ein Abrufen aller Outlook-Objekte aus `ThisAddIn.Application` sicherzustellen, dass Ihr VSTO-Add-In auf das gesamte Outlook-Objektmodell zugreifen kann. Z. B. Wenn Exchange-Administrator Outlook legt automatisch auf Verweigern Sie alle Zugriffsversuche auf Adressinformationen über das Outlook-Objektmodell, und klicken Sie dann die Outlook im vorherigen Codebeispiel wird die Eigenschaft für den Zugriff auf nicht zulässig ist, obwohl im Codebeispiel wird verwendet das vertrauenswürdige `ThisAddIn.Application` Feld.
+> Wenn Outlook mit Exchange verwendet wird, ist es nicht möglich, durch ein Abrufen aller Outlook-Objekte aus `ThisAddIn.Application` sicherzustellen, dass Ihr VSTO-Add-In auf das gesamte Outlook-Objektmodell zugreifen kann. Z. B. Wenn Exchange-Administrator Outlook legt automatisch auf Verweigern Sie alle Zugriffsversuche auf Adressinformationen über das Outlook-Objektmodell, und klicken Sie dann die Outlook im vorherigen Codebeispiel wird die Eigenschaft für den Zugriff auf nicht zulässig ist, obwohl im Codebeispiel wird verwendet das vertrauenswürdige `ThisAddIn.Application` Feld.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Geben Sie die Add-ins vertraut, wenn Exchange verwendet wird
  Wenn Outlook mit Exchange verwendet wird, können Administratoren angeben, dass bestimmte VSTO-Add-Ins unabhängig vom Objektmodellschutz ausgeführt werden können. Outlook-VSTO-Add-Ins, die als Office-Projektmappen in Visual Studio erstellt wurden, können nicht einzeln als vertrauenswürdig festgelegt werden, sondern nur als Gruppe.

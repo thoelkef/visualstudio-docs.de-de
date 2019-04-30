@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446568"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 Gibt einen Bereich von Zeichen, die mithilfe von hinzugefügt wurden die `IDebugDocumentHelper::AddDeferredText` Methode im ursprünglichen Hostdokument.  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  Diese Methode zurückgeben kann `E_NOTIMPL`, wenn der Host nicht aufruft `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
->  Diese Methode gibt den Text des ursprünglichen Dokuments zurück. Der Host ist nicht von verfolgt werden Änderungen oder andere Änderungen am Dokument.  
+> Diese Methode gibt den Text des ursprünglichen Dokuments zurück. Der Host ist nicht von verfolgt werden Änderungen oder andere Änderungen am Dokument.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHost-Schnittstelle](../../winscript/reference/idebugdocumenthost-interface.md)   

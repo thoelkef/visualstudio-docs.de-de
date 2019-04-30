@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b833353beb009bb4eabbf000d45e0eb44a5794f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837874"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Ruft die untergeordneten Elemente des Symbols ab. Die lokalen Symbole, die zurückgegeben werden enthalten Informationen zum live-Bereich, aus, wenn das Programm bei Verwendung der Optimierung kompiliert wird, auf.
@@ -53,7 +53,7 @@ HRESULT findChildrenEx ( 
 ## <a name="return-value"></a>Rückgabewert
  Gibt `S_OK` Wenn mindestens ein untergeordnetes Element des Symbols wurde gefunden, oder gibt zurück, `S_FALSE` , wenn keine untergeordneten Elemente gefunden wurden; andernfalls wird ein Fehlercode zurückgegeben.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Diese Methode ist die erweiterte Version des [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).
 
 ## <a name="requirements"></a>Anforderungen

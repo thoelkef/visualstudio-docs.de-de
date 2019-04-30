@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420427"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der Parser konvertiert eine Textzeile in ein Array der kolorierbaren Elemente, und gibt die Typen von Sicherheitstoken für diese kolorierbaren Elemente zurück. Der Parser sollte Tokentypen zurückgeben, die eine Liste der kolorierbaren Elemente angehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zeigt jede kolorierbaren Elements im Code-Fenster gemäß der Attribute, die von der Farbauswahl-Objekt zugeordnet wird, dem entsprechenden Tokentyp an.
@@ -27,7 +27,7 @@ Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren von Syntaxfarben finden Sie unter [Exemplarische Vorgehensweise: Markieren von Text](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Schritte, gefolgt von einem Editor zum farbigen Anzeigen von Text
 
@@ -63,7 +63,7 @@ Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der
  Das managed Package Framework (MPF) stellt alle Klassen, die erforderlich sind, um eine Farbauswahl zu implementieren. Sprachdienstklasse sollten erben die <xref:Microsoft.VisualStudio.Package.LanguageService> -Klasse und die erforderlichen Methoden zu implementieren. Sie müssen einen Scanner und Parser angeben, durch die Implementierung der <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle und eine Instanz dieser Schnittstelle vom Zurückgeben der <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> Methode (eine der Methoden, die in implementiert werden müssen die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse). Weitere Informationen finden Sie unter [einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Vorgehensweise: Verwenden von integrierten einfärbbaren Elementen](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Benutzerdefinierte einfärbbare Elemente](../../extensibility/internals/custom-colorable-items.md)
 - [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

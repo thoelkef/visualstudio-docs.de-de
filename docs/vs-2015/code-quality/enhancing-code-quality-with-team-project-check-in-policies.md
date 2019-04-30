@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437071"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Verbessern der Codequalität mit Eincheckrichtlinien für das Teamprojekt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Wenn Sie Team Foundation-Versionskontrolle (TFVC) verwenden, können Sie Einchec
 - **Typen von Arbeitselementen**: Erfordert, dass eine oder mehrere Arbeitsaufgaben mit dem Eincheckvorgang verknüpft werden.  
   
 > [!IMPORTANT]
->  Eincheckrichtlinien können nur verwendet werden, wenn eine Verbindung mit [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]besteht.  
+> Eincheckrichtlinien können nur verwendet werden, wenn eine Verbindung mit [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]besteht.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   

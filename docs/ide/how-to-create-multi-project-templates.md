@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Vorlagen mit mehreren Projekten
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430496"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 
@@ -67,6 +67,19 @@ Die *VSTEMPLATE*-Stammdatei für eine Vorlage mit mehreren Projekten unterscheid
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> Wenn Sie möchten, dass nur die Vorlage mit mehreren Projekten im Dialogfenster des neuen Projekts angezeigt wird und nicht die darin enthaltenen Einzelprojekte, markieren Sie die inneren Vorlagen als [ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md). Beispiel:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Erstellen einer Vorlage mit mehreren Projekten aus einer vorhandenen Projektmappe
 
@@ -177,6 +190,6 @@ In diesem Beispiel wird das **SolutionFolder**-Element verwendet, um die Projekt
 
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
 - [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
-- [Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit)](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio Template Schema Reference (Extensibility) (Schemareferenz zu Vorlagen für Visual Studio (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md)
 - [SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

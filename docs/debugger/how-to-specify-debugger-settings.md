@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847509"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Vorgehensweise: Angeben von Debuggereinstellungen
 Das Debugverhalten kann in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe verschiedener Einstellungen angepasst werden. Sie können z. B. festlegen, wie Variablen angezeigt werden sollen, ob bestimmte Warnungen ausgegeben werden, wie Haltepunkte festgelegt werden und welchen Einfluss Unterbrechungen auf gegenwärtig ausgeführte Programme haben. Die Debuggereinstellungen werden im Dialogfeld **Optionen** festgelegt.

@@ -10,11 +10,11 @@ ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822580"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Ermitteln des Standardnamespaces eines Projekts
 Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], wenn die `CustomToolNamespace` Eigenschaft wird festgelegt, auf die Eingabedatei, klicken Sie dann den Wert der `CustomToolNamespace` wird der Wert, der der Namespace-Standardparameter, die an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Methode. Andernfalls die `wszDefaultNamespace` übergebene Parameter `Generate` ist immer gleich den Stamm-Namespace. Weitere Informationen zu Namespaces finden Sie unter [Namespace Schlüsselwörter](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  

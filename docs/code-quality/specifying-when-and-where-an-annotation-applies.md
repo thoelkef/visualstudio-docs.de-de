@@ -14,11 +14,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825226"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Angeben, wann und wo eine Anmerkung gültig ist
 Wenn eine Anmerkung bedingte ist, kann es andere Anmerkungen an, die an die Analyse erforderlich.  Beispielsweise verfügt eine Funktion eine Variable, die entweder synchron oder asynchron sein kann, verhält sich die Funktion wie folgt: In den synchronen Fall immer schließlich erfolgreich ist, aber bei asynchronen Vorgängen einen Fehler gemeldet, wenn er sofort nicht ordnungsgemäß ausgeführt werden. Wenn die Funktion synchron aufgerufen wird, bietet das Überprüfen des Ergebniswerts kein Wert, der Code-Analyzer, da er würde nicht zurückgegeben haben.  Wenn die Funktion wird asynchron aufgerufen, und das Ergebnis der Funktion nicht aktiviert ist, kann jedoch ein schwerwiegender Fehler auftreten. Dieses Beispiel veranschaulicht eine Situation, in dem Sie mithilfe, der `_When_` Anmerkung – weiter unten in diesem Artikel beschriebenen – zu aktivieren.

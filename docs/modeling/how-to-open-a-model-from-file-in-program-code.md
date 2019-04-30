@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445136"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Vorgehensweise: Öffnen eines Modells aus einer Datei im Programmcode
 Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.
@@ -31,7 +31,7 @@ Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.
 3. Im Fenster für die Projekteigenschaften auf die **Anwendung** Registerkarte die **Zielframework** Feld **.NET Framework 4**.
 
 > [!NOTE]
->  Müssen Sie möglicherweise dazu, auch wenn Sie **.NET Framework 4** in das Dialogfeld für die Erstellung des Projekts. Das Zielframework sollte nicht **.NET Framework 4 Client Profile**.
+> Müssen Sie möglicherweise dazu, auch wenn Sie **.NET Framework 4** in das Dialogfeld für die Erstellung des Projekts. Das Zielframework sollte nicht **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Verweise
  Sie müssen diese Verweise zu Ihrem Visual Studio-Webanwendungsprojekt hinzuzufügen:

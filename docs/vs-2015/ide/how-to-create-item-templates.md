@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417018"
 ---
 # <a name="how-to-create-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template
      Die Dateien für die Vorlage werden einer ZIP-Datei hinzugefügt und in das von Ihnen im Dialogfeld angegebene Verzeichnis kopiert. Der Standardspeicherort ist der Ordner **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Meine exportierten Vorlagen\\**.  
   
     > [!WARNING]
-    >  In älteren Version von Visual Studio ist der Standardspeicherort **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Templates\ItemTemplates**.  
+    > In älteren Version von Visual Studio ist der Standardspeicherort **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>So aktivieren Sie die Elementvorlage, die in einem Store-Projekt verwendet werden soll  
   
@@ -155,7 +155,7 @@ Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template
   
 7. Wählen Sie im Windows-Explorer die Dateien aus, die in Ihrer Vorlage enthalten sein sollen, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf „Senden an“, und klicken Sie dann auf „ZIP-komprimierten Ordner“. Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.  
   
-8. Kopieren Sie die ZIP-Datei, und fügen Sie sie in dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2015 ist ..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio 2015\Templates\ItemTemplates\\ das Standardverzeichnis. Weitere Informationen finden Sie unter Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen.  
+8. Kopieren Sie die ZIP-Datei, und fügen Sie sie in dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2015 ist ..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio 2015\Templates\ItemTemplates\\ das Standardverzeichnis. Weitere Informationen finden Sie unter „Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   

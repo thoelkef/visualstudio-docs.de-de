@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434651"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 Diese Funktion ruft eine Kopie einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zur Bearbeitung ab. In den meisten Systemen werden die Dateien als schreibgeschützt markiert.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  Die `SCC_GET_ALL` Flag kombiniert werden können, mit der `SCC_GET_RECURSIVE` Flag, um alle Dateien in den angegebenen Verzeichnissen und auch alle Unterverzeichnisse abzurufen.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` sollte nie übergeben werden, ohne `SCC_GET_ALL`. Beachten Sie, dass bei Verzeichnissen *C:\A* und *C:\A\B* werden bei einem rekursiven Get übergeben *C:\A\B* und allen seinen Unterverzeichnisse tatsächlich zweimal abgerufen werden soll. Es obliegt der IDE – und nicht den Quellcode-Plug-ins, um sicherzustellen, dass Duplikate, wie diese aus dem Array gespeichert werden.
+> `SCC_GET_RECURSIVE` sollte nie übergeben werden, ohne `SCC_GET_ALL`. Beachten Sie, dass bei Verzeichnissen *C:\A* und *C:\A\B* werden bei einem rekursiven Get übergeben *C:\A\B* und allen seinen Unterverzeichnisse tatsächlich zweimal abgerufen werden soll. Es obliegt der IDE – und nicht den Quellcode-Plug-ins, um sicherzustellen, dass Duplikate, wie diese aus dem Array gespeichert werden.
 
  Schließlich auch, wenn ein Quellcode-Plug-in angegebene die `SCC_CAP_GET_NOUI` Flag bei der Initialisierung, der angibt, dass er verfügt nicht über eine Benutzeroberfläche für einen Get-Befehl, der diese Funktion kann noch von der IDE zum Abrufen von Dateien aufgerufen werden. Das Flag bedeutet einfach, dass die IDE wird ein Get-Menüelement nicht angezeigt, dass das plug-in nicht erwartet, dass keine Benutzeroberfläche bereitstellt.
 

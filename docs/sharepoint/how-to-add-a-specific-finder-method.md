@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431267"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Vorgehensweise: Hinzufügen einer bestimmten Finder-Methode
   Sie können eine einzelne Entitätsinstanz zurück, durch das Erstellen einer *spezifische Finder* Methode. Der Business Data Connectivity (BDC)-Dienst führt die spezifische Finder-Methode auf, wenn ein Benutzer eine Entität in einem Business Data-Webpart oder eine externe Liste auswählt. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615285"
 5. Konfigurieren Sie den Typdeskriptor des Parameters zurück, als Typ einen Deskriptor einer Entität. Informationen zum Typ einen Deskriptor einer Entität zu erstellen, finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Sie müssen diesen Schritt ausführen, wenn Sie die Entität eine Finder-Methode hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der Finder-Methode definiert.
+   > Sie müssen diesen Schritt ausführen, wenn Sie die Entität eine Finder-Methode hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der Finder-Methode definiert.
 
    > [!NOTE]
-   >  Wenn das Feld "ID" des Entitätstyps ein Feld in einer Datenbanktabelle, der automatisch generiert wird darstellt, legen Sie die **schreibgeschützte** Eigenschaft des Bezeichnerfelds, **"true"**.
+   > Wenn das Feld "ID" des Entitätstyps ein Feld in einer Datenbanktabelle, der automatisch generiert wird darstellt, legen Sie die **schreibgeschützte** Eigenschaft des Bezeichnerfelds, **"true"**.
 
 6. In der **Methodendetails** Fenster, wählen Sie die Methodeninstanz der Methode.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615285"
      Im folgende Beispiel wird ein Kontakt aus der AdventureWorks-Beispieldatenbank für SQL Server zurückgegeben.
 
      > [!NOTE]
-     >  Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
+     > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

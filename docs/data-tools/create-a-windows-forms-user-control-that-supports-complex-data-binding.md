@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567636"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt
 
@@ -51,7 +51,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie:
 
 - Fügen Sie das neue Steuerelement hinzu, indem Sie es vom Fenster **Datenquellen** auf **Form1** ziehen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 

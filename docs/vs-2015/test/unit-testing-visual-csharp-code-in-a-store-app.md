@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445931"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Unittests von Visual C#-Code in einer Store-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
  In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen.  
   
 > [!NOTE]
->  Visual Studio-Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.  
+> Visual Studio-Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.  
 > 
 > - Sie können ein beliebiges Drittanbieter- und Open Source-Framework für Komponententest verwenden, mit dem ein Add-On-Adapter für den Microsoft-Test-Explorer erstellt wurde. Sie können auch Codeabdeckungsinformationen für die Tests analysieren und anzeigen.  
 >   - Führen Sie Ihre Tests nach jedem Build aus.  
@@ -211,7 +211,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
     ```  
   
     > [!TIP]
-    >  Es wird empfohlen, keine Tests zu ändern, die erfolgreich abgeschlossen wurden. Fügen Sie stattdessen einen neuen Test hinzu, aktualisieren Sie den Code, damit der Test erfolgreich ist, und fügen Sie dann einen weiteren Test hinzu, usw.  
+    > Es wird empfohlen, keine Tests zu ändern, die erfolgreich abgeschlossen wurden. Fügen Sie stattdessen einen neuen Test hinzu, aktualisieren Sie den Code, damit der Test erfolgreich ist, und fügen Sie dann einen weiteren Test hinzu, usw.  
     >   
     >  Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.  
   
@@ -222,7 +222,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
      ![Fehler beim RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Überprüfen Sie unmittelbar nach dem Schreiben eines Tests, dass er fehlschlägt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.  
+    > Überprüfen Sie unmittelbar nach dem Schreiben eines Tests, dass er fehlschlägt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.  
   
 4. Erweitern Sie den Code unter dem Test, damit der neue Test erfolgreich ist. Ändern Sie die `SqareRoot`-Funktion in **Rooter.cs** zu Folgendem:  
   
@@ -247,7 +247,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
      Alle drei Tests sind jetzt erfolgreich.  
   
 > [!TIP]
->  Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.  
+> Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen  
   
@@ -332,7 +332,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 2. Wählen Sie **Alle ausführen** aus, um die umgestaltete Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.  
   
 > [!TIP]
->  Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.  
+> Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.  
   
  **Gestalten Sie den Testcode um, um doppelten Code zu vermeiden.**  
   
@@ -365,4 +365,4 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 2. Wählen Sie **Alle ausführen** aus, um die umgestaltete Methode zu testen und zu überprüfen, dass Sie keinen Fehler eingeführt haben.  
   
 > [!NOTE]
->  Wenn Sie eine Hilfsmethode zu einer Testklasse hinzufügen, dürfen Sie nicht das `[TestMethod]`-Attribut zur Methode hinzufügen. Die auszuführende Methode wird vom Test-Explorer nicht registriert.
+> Wenn Sie eine Hilfsmethode zu einer Testklasse hinzufügen, dürfen Sie nicht das `[TestMethod]`-Attribut zur Methode hinzufügen. Die auszuführende Methode wird vom Test-Explorer nicht registriert.

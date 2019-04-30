@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426306"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
  Wie bereits früher in diesem Thema beschrieben, verwendet MSBuild einen Registrierungsschlüssel, um den Pfad der grundlegenden Tools anzugeben. Wenn der Schlüssel einen Unterschlüssel hat, verwendet MSBuild ihn, um den Pfad eines Unter-Toolsets anzugeben, das zusätzliche Tools enthält. In diesem Fall wird das Toolset definiert, indem die in beiden Schlüsseln definierten Eigenschaftendefinitionen kombiniert werden.  
   
 > [!NOTE]
->  Wenn bei Toolseteigenschaftennamen Konflikte auftreten, überschreibt der Wert, der für den Unterschlüsselpfad definiert ist, den Wert, der für den Stammschlüsselpfad definiert ist.  
+> Wenn bei Toolseteigenschaftennamen Konflikte auftreten, überschreibt der Wert, der für den Unterschlüsselpfad definiert ist, den Wert, der für den Stammschlüsselpfad definiert ist.  
   
  Unter-Toolsets werden bei Vorhandensein der Buildeigenschaft `VisualStudioVersion` aktiv. Diese Eigenschaft verwendet einen der folgenden Werte:  
   

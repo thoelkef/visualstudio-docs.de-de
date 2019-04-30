@@ -10,12 +10,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432547"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateierweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzug
   Wann immer möglich, registrieren Sie ein standard-Verb. Die Wahl üblicherweise ist das Open-Verb. Verwenden Sie das Edit-Verb, nur, wenn Sie ein klaren Unterschied zwischen dem Öffnen der Datei, und Bearbeiten der Datei vorhanden ist. Beispielsweise wird eine HTM-Datei öffnen im Browser während der Bearbeitung einer HTM-Datei einen HTML-Editor wird gestartet. Standard-Verben sind mit dem Gebietsschema des Betriebssystems lokalisiert.  
   
 > [!NOTE]
->  Wenn Standardverben registrieren zu können, der Standardwert für den geöffneten Schlüssel nicht festgelegt werden. Standardmäßig ist der Wert enthält die Zeichenfolge für die Sie im Menü. Das Betriebssystem stellt diese Zeichenfolge für Standardverben bereit.  
+> Wenn Standardverben registrieren zu können, der Standardwert für den geöffneten Schlüssel nicht festgelegt werden. Standardmäßig ist der Wert enthält die Zeichenfolge für die Sie im Menü. Das Betriebssystem stellt diese Zeichenfolge für Standardverben bereit.  
   
  Projektdateien registriert werden soll, um eine neue Instanz der starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Wenn ein Benutzer öffnet die Datei. Das folgende Beispiel veranschaulicht eine standard-Verb-Registrierung für ein [!INCLUDE[csprcs](../includes/csprcs-md.md)] Projekt.  
   
@@ -111,7 +111,7 @@ Die Zuordnung der Erweiterung zu einer Anwendung hat normalerweise eine bevorzug
  Das Standard-Verb ist die Aktion, die ausgeführt wird, wenn ein Benutzer eine Datei in Windows Explorer doppelklickt. Das Standard-Verb ist das Verb, die als Standardwert für den HKEY_CLASSES_ROOT angegebene\\*progid*\Shell Schlüssel. Wenn kein Wert angegeben ist, wird das Standardverb das erste Verb in der HKEY_CLASSES_ROOT angegebenen\\*progid*\Shell Schlüsselliste.  
   
 > [!NOTE]
->  Wenn Sie das Standard-Verb für eine Erweiterung in einer Bereitstellung für die Seite-an-Seite ändern möchten, sollten Sie die Auswirkungen auf die Installation und Deinstallation. Während der Installation wird der ursprüngliche Standardwert überschrieben.  
+> Wenn Sie das Standard-Verb für eine Erweiterung in einer Bereitstellung für die Seite-an-Seite ändern möchten, sollten Sie die Auswirkungen auf die Installation und Deinstallation. Während der Installation wird der ursprüngliche Standardwert überschrieben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwalten von parallelen Dateizuordnungen](../extensibility/managing-side-by-side-file-associations.md)

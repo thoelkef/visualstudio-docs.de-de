@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981061"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in einem Projekt auf Dokumentebene
   Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der Datenbindung in einem Projekt auf Dokumentebene. Ein einzelnes Datenfeld in einer SQL Server-Datenbank ist an einen benannten Bereich in Microsoft Office Excel gebunden. In der exemplarischen Vorgehensweise wird gezeigt, wie Steuerelemente hinzufügen, die Ihnen ermöglichen, führen Sie einen Bildlauf durch alle Datensätze in der Tabelle.

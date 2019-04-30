@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433154"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definieren eines Gestenhandlers in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
 3. Fügen Sie dem Projekt eine Klassendatei hinzu, und legen Sie deren Inhalt auf den folgenden Code fest.  
   
    > [!NOTE]
-   >  Ändern Sie die Namespace- und Klassennamen entsprechend den jeweiligen Anforderungen.  
+   > Ändern Sie die Namespace- und Klassennamen entsprechend den jeweiligen Anforderungen.  
   
    ```  
    using System.ComponentModel.Composition;  
@@ -243,7 +243,7 @@ In Visual Studio können Sie Befehle definieren, die ausgeführt werden, wenn Be
   
    - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
   
-   - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
+   - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie "Eigenschaften" aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** aus. Stellen Sie sicher, dass die Zeichenfolge im Feld **Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   

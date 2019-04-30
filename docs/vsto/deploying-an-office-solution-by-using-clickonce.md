@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441857"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projektmappe mit ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Aus diesem Grund sollten Sie erwägen, mithilfe von Windows Installer (*MSI*), wenn mehr als ein Benutzer die Lösung auf dem gleichen Computer ausgeführt wird.
@@ -83,7 +83,7 @@ ms.locfileid: "60060736"
 9. Wenn Ihre Lösung mit .NET Framework 4.5 ausgerichtet ist, wählen Sie auch die **Visual Studio 2010-Tools für Office-Laufzeit** Kontrollkästchen.
 
     > [!NOTE]
-    >  Standardmäßig nicht das Kontrollkästchen angezeigt. Damit es angezeigt wird, müssen Sie ein Bootstrapperpaket erstellen. Finden Sie unter [erstellen Sie ein Bootstrapperpaket für ein Office 2013 VSTO-Add-in mit Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
+    > Standardmäßig nicht das Kontrollkästchen angezeigt. Damit es angezeigt wird, müssen Sie ein Bootstrapperpaket erstellen. Finden Sie unter [erstellen Sie ein Bootstrapperpaket für ein Office 2013 VSTO-Add-in mit Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
 10. Klicken Sie unter **Geben Sie den Installationsort für erforderliche Komponenten**, wählen Sie eine der Optionen, die angezeigt werden, und wählen Sie dann die **OK** Schaltfläche.
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060736"
 11. Wählen Sie die **Updates** Schaltfläche, die angeben, wie oft Sie jedes Endbenutzers VSTO-Add-in oder die Anpassung soll nach Updates suchen, und wählen Sie dann die **OK** Schaltfläche.
 
     > [!NOTE]
-    >  Wenn Sie mithilfe einer CD oder eines Wechsellaufwerks bereitstellen möchten, wählen Sie die **nie nach Updates suchen** Optionsfeld aus.
+    > Wenn Sie mithilfe einer CD oder eines Wechsellaufwerks bereitstellen möchten, wählen Sie die **nie nach Updates suchen** Optionsfeld aus.
 
      Informationen dazu, wie Sie ein Update veröffentlichen, finden Sie unter [Veröffentlichen eines Updates](#Update).
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060736"
       ![Struktur des Veröffentlichungsordners](../vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")
 
     > [!NOTE]
-    >  ClickOnce hängt die *".deploy"* Erweiterung auf Assemblys, damit eine gesicherte Installation von Internet Information Services (IIS) die Dateien aufgrund einer unsicheren Dateierweiterung blockiert. Wenn der Benutzer die Projektmappe installiert, entfernt ClickOnce die *".deploy"* Erweiterung.
+    > ClickOnce hängt die *".deploy"* Erweiterung auf Assemblys, damit eine gesicherte Installation von Internet Information Services (IIS) die Dateien aufgrund einer unsicheren Dateierweiterung blockiert. Wenn der Benutzer die Projektmappe installiert, entfernt ClickOnce die *".deploy"* Erweiterung.
 
 14. Kopieren Sie die Projektmappendateien an den Installationspfad, den Sie zuvor in dieser Prozedur angegeben haben.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060736"
 6. In der **MIME-Typ** Fenster eingeben **".VSTO"** als Erweiterung und geben Sie **Application/X-ms-Vsto** als MIME-Geben Sie an, und klicken Sie dann die neuen Einstellungen anzuwenden.
 
     > [!NOTE]
-    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Sie müssen die Datenträgercache des Browsers leeren und anschließend versuchen, öffnen die *".VSTO"* -Datei erneut.
+    > Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Sie müssen die Datenträgercache des Browsers leeren und anschließend versuchen, öffnen die *".VSTO"* -Datei erneut.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 7,0 hinzu
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060736"
     ```
 
     > [!NOTE]
-    >  Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Sie müssen die Datenträgercache des Browsers leeren und anschließend versuchen, öffnen die *".VSTO"* -Datei erneut.
+    > Damit die Änderungen wirksam werden, müssen Sie den WWW-Publishingdienst neu starten oder abwarten, bis der Arbeitsprozess wiederverwendet wird. Sie müssen die Datenträgercache des Browsers leeren und anschließend versuchen, öffnen die *".VSTO"* -Datei erneut.
 
 ## <a name="Put"></a> Kopieren des Dokuments einer Projektmappe auf der Endbenutzer Computer (nur Anpassungen auf Dokumentebene)
  Sie können das Dokument der Projektmappe auf dem Computer des Endbenutzers kopieren, indem Sie eine Aktion nach der Bereitstellung zu erstellen. Der Benutzer nicht auf diese Weise manuell kopieren Sie das Dokument vom Installationspfad auf ihren Computer nach der Installation Ihrer Lösung. Sie müssen, erstellen Sie eine Klasse, die die Aktion nach der Bereitstellung definiert, erstellen und veröffentlichen Sie die Projektmappe, das Anwendungsmanifest ändern und die Anwendung und das Bereitstellungsmanifest erneut signieren.
@@ -300,7 +300,7 @@ ms.locfileid: "60060736"
     ```
 
     > [!NOTE]
-    >  Ersetzen Sie im vorherigen Beispiel "mostrecentversionnumber" durch die Versionsnummer der zuletzt veröffentlichten Version der Projektmappe (z. B. **1_0_0_4**).
+    > Ersetzen Sie im vorherigen Beispiel "mostrecentversionnumber" durch die Versionsnummer der zuletzt veröffentlichten Version der Projektmappe (z. B. **1_0_0_4**).
 
      Die Meldung "ExcelWorkbook.vsto erfolgreich signiert" wird angezeigt.
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060736"
   Um den Installationspfad einer Projektmappe zu ändern, müssen Sie das Setupprogramm aktualisieren, das dann von den Benutzern ausgeführt werden muss. Bei Anpassungen auf Dokumentebene müssen Benutzer außerdem eine Eigenschaft in dem Dokument aktualisieren, das auf den neuen Speicherort verweist.
 
 > [!NOTE]
->  Wenn Sie keine Benutzer dazu auffordern, ihre Dokumenteigenschaften zu aktualisieren möchten, lassen Sie die Benutzer das aktualisierte Dokument vom Installationspfad zu erhalten.
+> Wenn Sie keine Benutzer dazu auffordern, ihre Dokumenteigenschaften zu aktualisieren möchten, lassen Sie die Benutzer das aktualisierte Dokument vom Installationspfad zu erhalten.
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>So ändern Sie den Installationspfad im Setupprogramm
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060736"
    ```
 
    > [!NOTE]
-   >  Wenn eine Meldung angezeigt wird, dass die Signatur der ausführbaren Datei ungültig gemacht wird, ist das Zertifikat, das zum Signieren der Projektmappe verwendet wurde, nicht mehr gültig, und der Herausgeber ist unbekannt. In diesem Fall müssen Benutzer bestätigen, dass die Quelle der Projektmappe vertrauenswürdig ist, bevor sie sie installieren können.
+   > Wenn eine Meldung angezeigt wird, dass die Signatur der ausführbaren Datei ungültig gemacht wird, ist das Zertifikat, das zum Signieren der Projektmappe verwendet wurde, nicht mehr gültig, und der Herausgeber ist unbekannt. In diesem Fall müssen Benutzer bestätigen, dass die Quelle der Projektmappe vertrauenswürdig ist, bevor sie sie installieren können.
 
    > [!NOTE]
-   >  Um den aktuellen Wert der URL anzuzeigen, führen Sie `setup.exe /url` aus.
+   > Um den aktuellen Wert der URL anzuzeigen, führen Sie `setup.exe /url` aus.
 
    Bei Anpassungen auf Dokumentebene müssen Benutzer das Dokument öffnen und aktualisieren Sie dann die _AssemblyLocation-Eigenschaft. Die folgenden Schritte beschreiben, wie Benutzer diese Aufgabe ausführen können.
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060736"
      Wenn ein Benutzer das nächste Mal die Anwendung oder das benutzerdefinierte Dokument öffnet, wird die Änderung des Bereitstellungsmanifests erkannt. Die frühere Version der Office-Projektmappe wird vom ClickOnce-Cache ausgeführt.
 
 > [!NOTE]
->  Lokale Daten werden für nur eine vorherige Version einer Projektmappe gespeichert. Wenn Sie zwei Versionen zurücksetzen, wird die lokale Daten nicht beibehalten. Weitere Informationen zu lokalen Daten finden Sie unter [Zugriff auf lokale und remote-Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+> Lokale Daten werden für nur eine vorherige Version einer Projektmappe gespeichert. Wenn Sie zwei Versionen zurücksetzen, wird die lokale Daten nicht beibehalten. Weitere Informationen zu lokalen Daten finden Sie unter [Zugriff auf lokale und remote-Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
 ## <a name="see-also"></a>Siehe auch
 

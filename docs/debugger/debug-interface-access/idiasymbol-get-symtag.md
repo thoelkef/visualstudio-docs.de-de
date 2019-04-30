@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258203c8f78a009e398468857cd090c916c15885
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bdd4ed102718a1c81be55c848a2d3c891c0ba99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400860"
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 Ruft die Klassifizierung der Symbol-Typ ab.
@@ -39,7 +39,7 @@ HRESULT get_symTag ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
 
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
 
 ## <a name="example"></a>Beispiel
 

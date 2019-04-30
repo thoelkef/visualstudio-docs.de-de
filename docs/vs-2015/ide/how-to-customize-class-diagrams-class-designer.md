@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416859"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
  Beispielsweise können Sie den Zoomfaktor eines gesamten Klassendiagramms einstellen, die Gruppierung und Sortierung einzelner Typmember ändern, Beziehungen anzeigen oder ausblenden, und einzelne Typen oder mehrere Typen gemeinsam an eine beliebige Position auf dem Diagramm verschieben.  
   
 > [!NOTE]
->  Durch das Anpassen der Art und Weise, wie Formen im Diagramm angezeigt werden, wird der zugrunde liegende Code für die im Diagramm angezeigten Typen nicht geändert.  
+> Durch das Anpassen der Art und Weise, wie Formen im Diagramm angezeigt werden, wird der zugrunde liegende Code für die im Diagramm angezeigten Typen nicht geändert.  
   
  Abschnitte, die Typmember enthalten, wie beispielsweise der Abschnitt "Eigenschaften" in einer Klasse, werden als Depots bezeichnet. Sie können einzelne Depots und Typmember anzeigen oder ausblenden.  
   
@@ -64,7 +64,7 @@ Sie können die Art und Weise ändern, in der in Klassendiagrammen Informationen
      Geben Sie einen bestimmten Zoomwert an. Sie können die Dropdownliste **Zoom** verwenden oder einen gültigen Zoomfaktor eingeben (der gültige Bereich liegt bei 10 % bis 400 %).  
   
     > [!NOTE]
-    >  Das Ändern des Zoomfaktors wirkt sich nicht auf die Skalierung des ausgedruckten Klassendiagramms aus.  
+    > Das Ändern des Zoomfaktors wirkt sich nicht auf die Skalierung des ausgedruckten Klassendiagramms aus.  
   
 ## <a name="CustomizeGroupingSorting"></a> Anpassen der Gruppierung und Sortierung von Typmembern  
   

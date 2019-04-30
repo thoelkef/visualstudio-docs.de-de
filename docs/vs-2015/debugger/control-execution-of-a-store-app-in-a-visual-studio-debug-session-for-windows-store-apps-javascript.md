@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437757"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Steuern der Ausführung einer Store-App in einer Visual Studio-Debugsitzung für Windows Store-Apps (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio-Debugger n
  **Debugger-Tastenkombinationen.** Die Navigation im Visual Studio-Debugger wurde sowohl für die Maus als auch für die Tastatur optimiert. Für viele Schritte in diesem Thema werden die Zugriffstasten oder Tastenkombinationen in Klammern angeführt. Beispielsweise (Tastatur: F5) gibt an, mit die Taste, die F5 gestartet oder setzt die Ausführung des Debuggers, tippen.
 
 > [!NOTE]
->  **Das Modulmuster.**
+> **Das Modulmuster.**
 >
->  Windows Store-Apps verwenden häufig das JavaScript- *Modulmuster* , um Daten und Funktionen auf einer Seite zu kapseln. Das Modulmuster verwendet einen einzelnen selbstausführenden und anonymen Abschluss, um die Funktionen der Seite vom globalen Namespace zu trennen. Im Rahmen dieses Themas bezeichnen wir diese Funktion als *Modul*.
+> Windows Store-Apps verwenden häufig das JavaScript- *Modulmuster* , um Daten und Funktionen auf einer Seite zu kapseln. Das Modulmuster verwendet einen einzelnen selbstausführenden und anonymen Abschluss, um die Funktionen der Seite vom globalen Namespace zu trennen. Im Rahmen dieses Themas bezeichnen wir diese Funktion als *Modul*.
 
 ## <a name="in-this-topic"></a>In diesem Thema
  Sie lernen Folgendes:

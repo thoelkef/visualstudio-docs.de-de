@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431444"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Just-In-Time-Debuggen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Die Aktionen, die Sie abwartet, wenn Sie sehen, dass die Visual Studio Just-in-T
 5. Schließen der **Registrierungs-Editor** Fenster.
 
 > [!NOTE]
->  Wenn Sie versuchen, das Just-In-Time-Debuggen für eine serverseitige app zu deaktivieren und diese Schritte das Problem nicht beheben kann, serverseitige debugging in den Einstellungen des IIS-Anwendung deaktivieren Sie, und wiederholen Sie.
+> Wenn Sie versuchen, das Just-In-Time-Debuggen für eine serverseitige app zu deaktivieren und diese Schritte das Problem nicht beheben kann, serverseitige debugging in den Einstellungen des IIS-Anwendung deaktivieren Sie, und wiederholen Sie.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>So aktivieren Sie das Just-In-Time-Debuggen für ein Windows Form
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  In der Reihenfolge für dieses Verfahren funktioniert einer [Releasekonfiguration](../debugger/how-to-set-debug-and-release-configurations.md), Sie deaktivieren möchten [nur mein Code](../debugger/just-my-code.md). Klicken Sie in Visual Studio auf **Extras / Optionen**. In der **Optionen** wählen Sie im Dialogfeld **Debuggen**. Entfernen Sie das Kontrollkästchen **nur meinen Code aktivieren**.
+> In der Reihenfolge für dieses Verfahren funktioniert einer [Releasekonfiguration](../debugger/how-to-set-debug-and-release-configurations.md), Sie deaktivieren möchten [nur mein Code](../debugger/just-my-code.md). Klicken Sie in Visual Studio auf **Extras / Optionen**. In der **Optionen** wählen Sie im Dialogfeld **Debuggen**. Entfernen Sie das Kontrollkästchen **nur meinen Code aktivieren**.
 
  Erstellen Sie die Projektmappe (Wählen Sie in Visual Studio **Build / Jektmappe**). Sie können entweder das Debuggen oder der Release-Konfiguration auswählen. Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Klicken Sie nicht auf **Abbrechen**! Nach wenigen Sekunden sehen Sie zwei Schaltflächen, **Debuggen** und **Programm schließen**. Klicken Sie auf **Debuggen**.
 
 > [!CAUTION]
->  Wenn Ihre Anwendung nicht vertrauenswürdigen Code enthält, wird ein Dialogfeld mit einer sicherheitswarnung angezeigt. In diesem Dialogfeld können Sie festlegen, ob das Debuggen fortgesetzt werden soll. Bevor Sie mit dem Debuggen fortfahren, entscheiden Sie, ob Sie den Code als vertrauenswürdig einstufen. Haben Sie den Code selbst geschrieben? Vertrauen Sie dem Programmierer? Wenn die Anwendung auf einem Remotecomputer ausgeführt wird, erkennen Sie den Namen des Prozesses? Selbst wenn die Anwendung lokal ausgeführt wird, bedeutet dies nicht unbedingt, dass sie als vertrauenswürdig eingestuft werden kann. Wägen Sie die Wahrscheinlichkeit von schädlichem Code, die auf Ihrem Computer ausgeführt werden soll. Wenn Sie sich entscheiden, dass der Code Sie möchten "Debug" vertrauenswürdig ist, klicken Sie auf **Debuggen**. Klicken Sie anderenfalls auf **nicht Debuggen**.
+> Wenn Ihre Anwendung nicht vertrauenswürdigen Code enthält, wird ein Dialogfeld mit einer sicherheitswarnung angezeigt. In diesem Dialogfeld können Sie festlegen, ob das Debuggen fortgesetzt werden soll. Bevor Sie mit dem Debuggen fortfahren, entscheiden Sie, ob Sie den Code als vertrauenswürdig einstufen. Haben Sie den Code selbst geschrieben? Vertrauen Sie dem Programmierer? Wenn die Anwendung auf einem Remotecomputer ausgeführt wird, erkennen Sie den Namen des Prozesses? Selbst wenn die Anwendung lokal ausgeführt wird, bedeutet dies nicht unbedingt, dass sie als vertrauenswürdig eingestuft werden kann. Wägen Sie die Wahrscheinlichkeit von schädlichem Code, die auf Ihrem Computer ausgeführt werden soll. Wenn Sie sich entscheiden, dass der Code Sie möchten "Debug" vertrauenswürdig ist, klicken Sie auf **Debuggen**. Klicken Sie anderenfalls auf **nicht Debuggen**.
 
  Die **Just-in-Time-Debugger von Visual Studio** Fenster wird angezeigt:
 

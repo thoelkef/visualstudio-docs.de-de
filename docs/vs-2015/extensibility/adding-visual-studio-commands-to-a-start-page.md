@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429016"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  Die `x:` Alias, der dem XAML-Schema verweist, muss sich am Anfang aller Befehle.  
+> Die `x:` Alias, der dem XAML-Schema verweist, muss sich am Anfang aller Befehle.  
   
  Legen Sie den Wert von der `Command` Eigenschaft, um solche Befehle, die aus zugegriffen werden kann die **Befehl** Fenster. Eine Liste der verfügbaren Befehle, finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Sie können die Befehle von registrierte VSPackages aufrufen, indem Sie mit derselben Syntax, die verwendet wird, um andere Visual Studio-Befehle aufrufen. Wenn eine installierte VSPackage fügt z. B. eine **auf der Startseite** Befehl die **Ansicht** im Menü können Sie diesen Befehl aufrufen, indem Sie die Einstellung `CommandParameter` zu `View.HomePage`.  
   
 > [!NOTE]
->  Wenn Sie einen Befehl, der ein VSPackage zugeordnet ist aufrufen, muss das Paket geladen werden, wenn der Befehl aufgerufen wird.  
+> Wenn Sie einen Befehl, der ein VSPackage zugeordnet ist aufrufen, muss das Paket geladen werden, wenn der Befehl aufgerufen wird.  
   
 ## <a name="adding-commands-from-assemblies"></a>Hinzufügen von Befehlen von Assemblys  
  Zum Aufrufen eines Befehls an, aus einer Assembly oder den Zugriff von Code in einem VSPackage, die nicht mit einem Menübefehl zugeordnet ist, müssen Sie erstellen Sie einen Alias für die Assembly und rufen Sie dann auf den Alias.  
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Sie müssen die Kopie der Assembly und fügen Sie ihn in... \\ *Visual Studio-Installationsordner*\Common7\IDE\PrivateAssemblies\ um sicherzustellen, dass es geladen wird, bevor sie aufgerufen wird.  
+> Sie müssen die Kopie der Assembly und fügen Sie ihn in... \\ *Visual Studio-Installationsordner*\Common7\IDE\PrivateAssemblies\ um sicherzustellen, dass es geladen wird, bevor sie aufgerufen wird.  
   
 ## <a name="adding-commands-with-the-dte-object"></a>Hinzufügen von Befehlen mit dem DTE-Objekt  
  Sie können das DTE-Objekt auf einer Startseite auf, sowohl im Markup als auch im Code zugreifen.  

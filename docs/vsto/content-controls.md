@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445597"
 ---
 # <a name="content-controls"></a>ContentControl-Elemente
   Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Features aufweisen:
@@ -72,7 +72,7 @@ ms.locfileid: "60062177"
   In Projekten auf Dokumentebene können Sie dem Dokument Inhaltssteuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 > [!NOTE]
->  Sie können Inhaltssteuerelemente nur in Dokumenten verwenden, die im Open XML-Format gespeichert werden. Können keine ContentControl-Elemente in Dokumenten, die in das Word 97-2003-Dokument gespeichert werden (*.doc*) Format.
+> Sie können Inhaltssteuerelemente nur in Dokumenten verwenden, die im Open XML-Format gespeichert werden. Können keine ContentControl-Elemente in Dokumenten, die in das Word 97-2003-Dokument gespeichert werden (*.doc*) Format.
 
 ## <a name="types-of-content-controls"></a>Typen von Inhaltssteuerelementen
  Es gibt neun verschiedene Typen von Inhaltssteuerelementen, die Sie Dokumenten hinzufügen können. Die meisten der Inhaltssteuerelemente besitzen einen entsprechenden Typ im Namespace <xref:Microsoft.Office.Tools.Word>. Sie können auch einen generischen Namespace <xref:Microsoft.Office.Tools.Word.ContentControl> verwenden, der eines der verfügbaren Inhaltssteuerelemente darstellen kann. Eine exemplarische Vorgehensweise, die zeigt, wie die einzelnen verfügbaren Inhaltssteuerelemente verwendet werden, finden Sie unter [Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
@@ -137,7 +137,7 @@ ms.locfileid: "60062177"
   Wenn sich der Bereich, den Sie schützen möchten, nicht innerhalb eines Inhaltssteuerelements befindet, oder wenn Sie einen Bereich schützen möchten, der Inhaltssteuerelemente und andere Inhaltstypen enthält, können Sie den gesamten Bereich in einem <xref:Microsoft.Office.Tools.Word.GroupContentControl> positionieren. Im Gegensatz zu anderen Inhaltssteuerelementen stellt ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> keine Benutzeroberfläche zur Verfügung, die für den Benutzer sichtbar ist. Sein einziger Zweck besteht darin, einen Bereich zu definieren, den Benutzern nicht bearbeiten können.
 
 > [!NOTE]
->  Wenn Sie ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> erstellen, das eingebettete Inhaltssteuerelemente enthält, sind die eingebetteten Inhaltssteuerelemente nicht automatisch geschützt. Verwenden Sie die **LockContents** -Eigenschaft jedes eingebetteten Steuerelements verwenden, um zu verhindern, dass Benutzer ihren Inhalt zu bearbeiten.
+> Wenn Sie ein <xref:Microsoft.Office.Tools.Word.GroupContentControl> erstellen, das eingebettete Inhaltssteuerelemente enthält, sind die eingebetteten Inhaltssteuerelemente nicht automatisch geschützt. Verwenden Sie die **LockContents** -Eigenschaft jedes eingebetteten Steuerelements verwenden, um zu verhindern, dass Benutzer ihren Inhalt zu bearbeiten.
 
  Weitere Informationen zur Verwendung von Inhaltssteuerelementen zum Schützen von Teilen von Dokumenten finden Sie unter [Vorgehensweise: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
@@ -170,7 +170,7 @@ ms.locfileid: "60062177"
  Inhaltssteuerelemente unterstützen auch bidirektionale Datenbindung, bei der Änderungen im Steuerelement in der Datenquelle aktualisiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 > [!NOTE]
->  Inhaltssteuerelemente unterstützen keine komplexe Datenbindung. Wenn Sie ein <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> oder <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> mithilfe des Windows Forms-Datenmodells an eine Datenquelle binden, wird Benutzern beim Klicken auf das Steuerelement nur ein einziger Wert angezeigt. Wenn Sie diese Steuerelemente an einen Satz von Datenwerten binden möchten, aus denen Benutzer auswählen können, können Sie diese Steuerelemente an Elemente in einem benutzerdefinierten XML-Abschnitt binden.
+> Inhaltssteuerelemente unterstützen keine komplexe Datenbindung. Wenn Sie ein <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> oder <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> mithilfe des Windows Forms-Datenmodells an eine Datenquelle binden, wird Benutzern beim Klicken auf das Steuerelement nur ein einziger Wert angezeigt. Wenn Sie diese Steuerelemente an einen Satz von Datenwerten binden möchten, aus denen Benutzer auswählen können, können Sie diese Steuerelemente an Elemente in einem benutzerdefinierten XML-Abschnitt binden.
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte
  Sie können einige Inhaltssteuerelemente an Elemente in benutzerdefinierten XML-Abschnitten binden, die im Dokument eingebettet sind. Weitere Informationen zu benutzerdefinierten XML-Elementen, finden Sie unter [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md).

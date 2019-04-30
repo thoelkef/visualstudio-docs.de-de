@@ -11,12 +11,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408465"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Anweisungsvervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Anweisungsvervollständigung wird mit dem der Sprachdienst Benutzern, die abgesc
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren der Anweisungsvervollständigung finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="implementing-statement-completion"></a>Implementieren von Anweisungsvervollständigung  
  Im Kern-Editor wird aktiviert, Anweisungsvervollständigung eine spezielle Benutzeroberfläche, die interaktiv hilft Ihnen, noch einfacher und schnell Code zu schreiben. Anweisungsvervollständigung hilft mit relevanten Objekte oder Klassen, wenn sie benötigt werden, wodurch Sie bestimmte Elemente daran erinnern zu müssen, oder müssen in einem Hilfethema für den Verweis nachgeschlagen werden vermieden werden.  

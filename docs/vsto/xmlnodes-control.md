@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421537"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes-Steuerelement
   **Wichtige** die Informationen in diesem Thema nach Microsoft Word festgelegt ist, ausschließlich für die Vorteile und die Verwendung von Einzelpersonen und Organisationen, die außerhalb der Vereinigten Staaten und seine Gebiete befinden oder mit, dargestellten oder entwickeln Programme, auf denen ausgeführt wird, im Zusammenhang mit benutzerdefinierten XML-Code aus Microsoft Word Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden, wenn Microsoft eine Implementierung von bestimmten Funktionen entfernt. Diese Informationen in Bezug auf Microsoft Word kann nicht gelesen oder durch Einzelpersonen oder Organisationen, die in den Vereinigten Staaten oder der Gebiete, die mithilfe von, oder Entwickeln von Anwendungen, die Microsoft Word-Produkte ausgeführt werden, die von Microsoft, nach dem 10. Januar 2010 lizenziert wurden verwendet werden ; Diese Produkte verhält nicht als Produkte, die vor diesem Datum lizenziert oder erworben und für die Verwendung außerhalb der USA lizenziert.
@@ -30,7 +30,7 @@ ms.locfileid: "60090579"
  Nachdem Visual Studio die Auflistung von XML-Knoten erstellt wurde, können Sie das Steuerelement direkt ohne Durchlaufen von Word-Objektmodell programmieren. Die <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement kann nur durch das Entfernen der elementzuordnung aus dem Dokument gelöscht werden.
 
 > [!NOTE]
->  Wenn Sie ein untergeordnetes Element des zugreifen der <xref:Microsoft.Office.Tools.Word.XMLNodes> steuern, über die <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> -Eigenschaft wird ein <xref:Microsoft.Office.Interop.Word.XMLNode> Objekt anstelle eines <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Wenn Sie ein untergeordnetes Element des zugreifen der <xref:Microsoft.Office.Tools.Word.XMLNodes> steuern, über die <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> -Eigenschaft wird ein <xref:Microsoft.Office.Interop.Word.XMLNode> Objekt anstelle eines <xref:Microsoft.Office.Tools.Word.XMLNode> Steuerelement. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="bind-data-to-the-control"></a>Binden von Daten an das Steuerelement
  Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement die Datenbindung nicht unterstützt. Grund hierfür ist die <xref:Microsoft.Office.Tools.Word.XMLNodes> Steuerelement enthält keine Funktionen für die komplexe Datenbindung und einfache Datenbindung nicht darstellen kann sich wiederholende Daten.

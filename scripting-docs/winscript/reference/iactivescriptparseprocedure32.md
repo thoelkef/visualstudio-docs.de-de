@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 10cdff328216d06a3326dd3595ef8fc78bc9cfc9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993149"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Wenn die Windows-Skript-Engine die Quellcodetexts Verfahren für das Skript hinzugefügt werden kann, implementiert die `IActiveScriptParseProcedure32` Schnittstelle. Für interpretierte Skriptsprachen, die keine unabhängige erstellungsumgebung, z. B. VBScript, stellt dies einen alternativen Mechanismus (außer `IActiveScriptParse32` oder `IPersist`*) Skript-Prozeduren für den Namespace hinzufügen.  

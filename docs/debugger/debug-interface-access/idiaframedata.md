@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830294"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Stellt die Details zu einem Stapelrahmen.
@@ -52,7 +52,7 @@ Die folgende Tabelle zeigt die Methoden der `IDiaFrameData`.
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Ruft frame-Data-Schnittstelle für eine einschließende Funktion.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Führt die stapelentladung und gibt den aktuellen Status von Registern in einer Stackwalk-Frame-Schnittstelle zurück.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Die Details für einen Frame verfügbar sind für die der Ausführungspunkte innerhalb des Adressbereichs, der durch die Adresse und Block-Länge angegeben.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer

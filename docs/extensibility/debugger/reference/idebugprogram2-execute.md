@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04e1fc6ebaef7f514bf61251aec67554a18db4b0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 29839e2f2adb4a0e560b5b58d4226fd61596128c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412865"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Weiterhin die Ausführung dieses Programms aus einem beendeten Zustand. Alle vorherigen Ausführungsstatus (z. B. in einem Schritt) deaktiviert ist, und das Programm gestartet wird, erneut ausführen.
 
 > [!NOTE]
->  Diese Methode ist veraltet. Verwenden der [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) Methode stattdessen.
+> Diese Methode ist veraltet. Verwenden der [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) Methode stattdessen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,7 +44,7 @@ int Execute();
  Wenn der Benutzer die Ausführung von Status "beendet" in ein anderes Programm Thread startet, wird diese Methode für dieses Programm aufgerufen. Diese Methode wird auch aufgerufen, wenn der Benutzer wählt die **starten** Befehl die **Debuggen** Menü in der IDE. Die Implementierung dieser Methode ist möglicherweise so einfach wie das Aufrufen der [fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md) Methode für den aktuellen Thread im Programm.
 
 > [!WARNING]
->  Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
+> Senden Sie eine Beenden-Ereignis oder ein sofort (synchron) Ereignis [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) bei der Verarbeitung dieser Aufruf ist; andernfalls der Debugger wird, reagiert.
 
 ## <a name="see-also"></a>Siehe auch
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

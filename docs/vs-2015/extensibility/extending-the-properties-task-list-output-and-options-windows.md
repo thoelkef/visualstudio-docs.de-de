@@ -15,12 +15,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b215d969ba7898923e98f063a47132125d82119b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443905"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Erweitern der Fenster für Eigenschaften, Aufgabenlisten, Ausgaben und Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vor
 1. Erstellen Sie ein Projekt mit dem Namen **"Todolist"** mithilfe der VSIX-Projektvorlage aus, und fügen Sie der Elementvorlage ein benutzerdefiniertes Tool-Fenster, der mit dem Namen **TodoWindow**.  
   
     > [!NOTE]
-    >  Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="set-up-the-tool-window"></a>Richten Sie das Toolfenster  
  Fügen Sie ein Textfeld, geben Sie ein neues ToDo-Element, eine Schaltfläche, um das neue Element zur Liste hinzuzufügen, und ein ListBox-Element zum Anzeigen von Elementen in der Liste hinzu.  
@@ -43,7 +43,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vor
 1. Löschen Sie die Schaltfläche "," ein, und "StackPanel-Steuerelemente in TodoWindow.xaml von der UserControl.  
   
     > [!NOTE]
-    >  Dies wird nicht gelöscht. die **button1_Click** Ereignishandler, die Sie in einem späteren Schritt wiederverwendet.  
+    > Dies wird nicht gelöscht. die **button1_Click** Ereignishandler, die Sie in einem späteren Schritt wiederverwendet.  
   
 2. Von der **alle WPF-Steuerelemente** Teil der **Toolbox**, ziehen Sie eine **Canvas** Steuerelement zum Raster.  
   

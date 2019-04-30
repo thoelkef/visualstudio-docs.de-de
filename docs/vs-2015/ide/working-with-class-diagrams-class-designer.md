@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443405"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Arbeiten mit Klassendiagrammen (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,35 +30,35 @@ Klassendiagramme vereinfachen das Verständnis der Klassenstruktur von Projekten
   
  Der erste Schritt beim Präsentieren von Projektinformationen ist das Erstellen eines Klassendiagramms, das anzeigt, was Sie anzeigen möchten. Weitere Informationen finden Sie unter [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md). Sie können für ein Projekt mehrere Klassendiagramme erstellen, mit denen eine andere Ansicht des Projekts, eine ausgewählte Teilmenge der Projekttypen oder eine ausgewählte Teilmenge der Mitgliedstypen angezeigt werden.  
   
- Neben der Definition der einzelnen Klassendiagramme, können Sie auch die Art ändern, mit der die Informationen präsentiert werden; Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md).  
+ Neben der Definition der einzelnen Klassendiagramme, können Sie auch die Art ändern, mit der die Informationen präsentiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md).  
   
  Nach dem Tunen eines oder mehrerer Klassendiagramme können Sie sie in Microsoft Office-Dokumente kopieren und drucken oder als Bilddateien exportieren. Weitere Informationen finden Sie unter [Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [Vorgehensweise: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md) und [Vorgehensweise: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
->  Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Änderung der Projektstruktur oder verschobenen Quelldateien im Projekt dazu führen kann, dass der Klassen-Designer den Typ, insbesondere den Quelltyp eines TypeDef-, Basisklassen oder Zuordnungstypen verliert. Es wird möglicherweise ein Fehler angezeigt, z.B. **Dieser Typ kann im Klassen-Designer nicht angezeigt werden**. In diesem Fall ziehen Sie den geänderten oder verschobenen Quellcode in das Klassendiagramm, um ihn erneut anzuzeigen.  
+> Klassen-Designer verfolgt nicht den Speicherort der Quelldateien, so dass die Änderung der Projektstruktur oder verschobenen Quelldateien im Projekt dazu führen kann, dass der Klassen-Designer den Typ, insbesondere den Quelltyp eines TypeDef-, Basisklassen oder Zuordnungstypen verliert. Es wird möglicherweise ein Fehler angezeigt, z.B. **Dieser Typ kann im Klassen-Designer nicht angezeigt werden**. In diesem Fall ziehen Sie den geänderten oder verschobenen Quellcode in das Klassendiagramm, um ihn erneut anzuzeigen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+ [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
  Beschreibt das Hinzufügen von Klassendiagrammen zu Projekten.  
   
- [Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)](../ide/how-to-customize-class-diagrams-class-designer.md)  
+ [Vorgehensweise: Anpassen von Klassendiagrammen](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
  Stellt Informationen zum Anpassen von Klassendiagrammen bereit.  
   
- [Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)  
+ [Vorgehensweise: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)  
   
  Erläutert, wie aus einem Klassendiagramm in einem Office-Dokument kopiert wird.  
   
- [Gewusst wie: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)  
+ [Vorgehensweise: Exportieren von Klassendiagrammen als Bilder](../ide/how-to-export-class-diagrams-as-images-class-designer.md)  
   
  Beschreibt, wie Klassendiagramme als Bilder exportiert werden.  
   
- [Gewusst wie: Drucken von Klassendiagrammen (Klassen-Designer)](../ide/how-to-print-class-diagrams-class-designer.md)  
+ [Vorgehensweise: Drucken von Klassendiagrammen](../ide/how-to-print-class-diagrams-class-designer.md)  
   
  Erklärt, wie Klassendiagramme gedruckt werden.  
   
- [Gewusst wie: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
+ [Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
   
  Beschreibt, wie zu einem Klassendiagramm Kommentare hinzugefügt werden.  
   

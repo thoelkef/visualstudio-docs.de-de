@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 54ab774b5c30529173f1acfc68b649d9f21c5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979935"
 ---
 # <a name="active-script-interfaces"></a>Active Script-Schnittstellen
 Die Headerdatei ActivScp.h enthält die Schnittstellen, Enumerationen und Fehlercodes, die in diesem Abschnitt aufgeführten.  

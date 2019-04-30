@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387499"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
  Wenn Sie ein UML-Diagramm oder ein Ebenendiagramm lesen möchten, benötigen Sie daher auch Zugriff auf das Modellierungsprojekt, in dem es erstellt wurde. Dafür können Sie entweder aus [!INCLUDE[esprscc](../includes/esprscc-md.md)] auf das Projekt zugreifen oder eine Kopie der Projektdateien abrufen.  
   
 > [!NOTE]
->  Dies gilt nicht für Codezuordnungen und .NET-Klassendiagramme, die aus Code generiert wurden. Diese Diagramme können unabhängig von einem Modellierungsprojekt angezeigt werden.  
+> Dies gilt nicht für Codezuordnungen und .NET-Klassendiagramme, die aus Code generiert wurden. Diese Diagramme können unabhängig von einem Modellierungsprojekt angezeigt werden.  
   
  Um ein UML-Diagramm oder ein Ebenendiagramm zu lesen, benötigen Sie mindestens die folgenden Dateien:  
   
 - Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Für Ebenendiagramme sollten Sie auch die Datei mit dem Namen haben _MyDiagram_**. layerdiagram.suppressions**.  
+    > Für Ebenendiagramme sollten Sie auch die Datei mit dem Namen haben _MyDiagram_**. layerdiagram.suppressions**.  
   
 - Die Modellierungsprojektdatei (**MyModel.modelproj**)  
   

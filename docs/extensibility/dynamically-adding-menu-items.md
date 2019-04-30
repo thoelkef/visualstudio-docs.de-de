@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912519"
 ---
 # <a name="dynamically-add-menu-items"></a>Hinzufügen von Menüelementen
 Sie können Menüelemente zur Laufzeit hinzufügen, durch Angabe der `DynamicItemStart` Befehl Flag für die Definition eines Platzhalter-Schaltfläche in der Visual Studio-Befehlstabelle (*VSCT*) Datei, und dann (im Code) definieren, die Anzahl der anzuzeigenden Menüelemente und behandeln die Befehle an. Wenn das VSPackage geladen wird, wird der Platzhalter durch die dynamische Menüelemente ersetzt.

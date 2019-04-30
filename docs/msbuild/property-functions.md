@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788541"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
 In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Auswertung von MSBuild-Skripts verwendet werden. Eigenschaftenfunktionen können immer dann verwendet werden, wenn Eigenschaften vorhanden sind. Im Gegensatz zu Aufgaben können Eigenschaftenfunktionen außerhalb von Zielen verwendet werden, und sie werden ausgewertet, bevor Ziele ausgeführt werden.
 
  Sie können die Systemzeit lesen, Zeichenfolgen vergleichen, reguläre Ausdrücke abgleichen und viele weitere Aktionen im Buildskript ausführen, ohne MSBuild-Aufgaben zu verwenden. MSBuild versucht, eine Zeichenfolge in eine Zahl und eine Zahl in eine Zeichenfolge zu konvertieren und nimmt je nach Bedarf andere Konvertierungen vor.
+ 
+Zeichenfolgenwerte, die von Eigenschaftsfunktionen zurückgegeben werden, haben als [Sonderzeichen](msbuild-special-characters.md) ein Escapezeichen. Wenn Sie möchten, dass der Wert so behandelt wird, als wäre er direkt in der Projektdatei platziert, verwenden Sie `$([MSBuild]::Unescape())`, um die Sonderzeichen zu entfernen.
 
 ## <a name="property-function-syntax"></a>Syntax einer Eigenschaftenfunktion
 
@@ -175,7 +177,7 @@ Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 |string MakeRelative(string basePath, string path)|Macht `path` relativ zu `basePath`. Bei `basePath` muss es sich um ein absolutes Verzeichnis handeln. Wenn `path` nicht relativ gemacht werden kann, wird dieses wörtlich zurückgegeben. Vergleichbar zu `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Geben Sie die Zeichenfolge im Parameter „DefaultValue“ nur zurück, wenn der Parameter „ConditionValue“ leer ist. Geben Sie ansonsten ist den Wert ConditionValue zurück.|
 
-##  <a name="nested-property-functions"></a>Geschachtelte Eigenschaftenfunktionen
+## <a name="nested-property-functions"></a>Geschachtelte Eigenschaftenfunktionen
 
 Sie können Eigenschaftenfunktionen kombinieren, um komplexere Funktionen zu erstellen, wie das folgende Beispiel zeigt.
 

@@ -13,11 +13,11 @@ ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
 ms.openlocfilehash: 4bfda342952820b4472a1f826273a7b9075faa9a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963972"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Hinzufügen von Mobile Services mithilfe von Visual Studio verbundene Dienste
 Mit Visual Studio 2015, Sie können eine Verbindung herstellen mit Azure Mobile Services mithilfe der **verbundenen Dienst hinzufügen** Dialogfeld. Sie können von jedem verbinden C# Client-app, JavaScript-Apps oder plattformübergreifende Cordova-app. Nachdem Sie eine Verbindung herstellen, können Sie erstellen und auf Daten zugreifen, benutzerdefinierte APIs und geplante Aufträge erstellen oder Hinzufügen von Unterstützung für Pushbenachrichtigungen.  Der Vorgang für verbundene Dienste fügt alle entsprechenden Verweise und den Verbindungscode hinzu. Sie können auch nutzen, integrierte Unterstützung für die Authentifizierung mit einer Vielzahl von beliebten identitätsschemas wie Azure AD, Facebook, Twitter und Microsoft-Accounts.

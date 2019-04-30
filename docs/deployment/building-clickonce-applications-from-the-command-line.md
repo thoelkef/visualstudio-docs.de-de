@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929155"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, der nur die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.
@@ -33,7 +33,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
  Ein "Ziel" ist ein Indikator dafür, dass MSBuild zum Verarbeiten des Befehls. Die wichtigsten Ziele sind das Ziel "Build" und das Ziel "publish". Das Build-Ziel ist das Äquivalent zur Auswahl des Builds-Befehl (oder drücken Sie F5), in der IDE. Wenn Sie nur das Projekt erstellen möchten, können Sie diese erreichen, die durch Eingabe `msbuild`. Dieser Befehl funktioniert, da das Build-Ziel als Standardziel für alle Projekte, die vom [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Dies bedeutet, dass Sie nicht explizit benötigen, geben Sie das Build-Ziel. Aus diesem Grund geben `msbuild` den gleichen Vorgang wie das Eingeben von `msbuild /target:build`.
 
- Die `/target:publish` weist MSBuild an das Veröffentlichungsziel aufrufen. Das Veröffentlichungsziel hängt von der Build-Ziel. Dies bedeutet, dass der Veröffentlichungsvorgang eine Obermenge des Buildvorgangs. Angenommen, Sie zu einem der in Visual Basic eine Änderung vorgenommen oder C# Quelldateien, die entsprechende Assembly werden durch den Veröffentlichungsvorgang automatisch neu erstellt werden.
+ Die `/target:publish` weist MSBuild an das Veröffentlichungsziel aufrufen. Das Veröffentlichungsziel hängt von der Build-Ziel. Dies bedeutet, dass der Veröffentlichungsvorgang eine Obermenge des Buildvorgangs. Z. B. Wenn Sie auf eine der quellcodeverwaltung für Ihre Visual Basic oder C#-Dateien eine Änderung vorgenommen haben, wird die entsprechende Assembly automatisch durch den Veröffentlichungsvorgang neu erstellt werden.
 
  Weitere Informationen zum Generieren einer vollständiges [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung über das Befehlszeilentool "Mage.exe" zum Erstellen Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest, finden Sie unter [Exemplarische Vorgehensweise: Manuelles bereitstellen eine ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 

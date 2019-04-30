@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561763"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Projekt aktualisieren, Optionen (Dialogfeld)
   Auf der Seite **Projekt-Upgrade** geben Sie an, ob Visual Studio automatisch VSTO-Add-In-Projekte für die Version von Office ändert, die auf dem Entwicklungscomputer installiert ist.

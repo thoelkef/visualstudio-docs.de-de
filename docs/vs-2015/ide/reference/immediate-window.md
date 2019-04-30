@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437121"
 ---
 # <a name="immediate-window"></a>Direktfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
  Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.  
   
 > [!NOTE]
->  Wenn Sie einen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.  
+> Wenn Sie einen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.  
   
 ## <a name="design-time-expression-evaluation"></a>Ausdrucksauswertung zur Entwurfszeit  
  Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine zur Entwurfszeit auszuführen.  

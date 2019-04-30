@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917501"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 Diese Methode informiert dem Prozess, dass eine Sitzung nicht mehr Debuggen des Prozesses ist.

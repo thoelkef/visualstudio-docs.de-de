@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430850"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104329"
 Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Microsoft Help Viewer auf einem lokalen Computer installieren und anzeigen.  
   
 > [!WARNING]
->  Help Viewer wird gemeinsam mit Visual Studio installiert. Wenn Sie Hilfeartikel nicht auf der MSDN-Downloadwebsite, sondern in Help Viewer zu lesen, wechseln Sie zum Menü **Hilfe** in Visual Studio, wählen Sie **Hilfeeinstellungen festlegen** aus, und klicken Sie dann auf **In Help Viewer starten**. Die offline bereitgestellten Themen für eine bestimmte Visual Studio-Version sind erst nach dem endgültigen Release dieser Version verfügbar.  
+> Help Viewer wird gemeinsam mit Visual Studio installiert. Wenn Sie Hilfeartikel nicht auf der MSDN-Downloadwebsite, sondern in Help Viewer zu lesen, wechseln Sie zum Menü **Hilfe** in Visual Studio, wählen Sie **Hilfeeinstellungen festlegen** aus, und klicken Sie dann auf **In Help Viewer starten**. Die offline bereitgestellten Themen für eine bestimmte Visual Studio-Version sind erst nach dem endgültigen Release dieser Version verfügbar.  
   
  Sie haben folgende Möglichkeiten:  
   

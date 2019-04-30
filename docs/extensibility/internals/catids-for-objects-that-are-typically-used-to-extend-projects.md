@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910695"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden
 Die folgende Tabelle enthält CATIDs, mit denen erweitern `Project` und `ProjectItem` Automatisierung von Objekten für die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], und [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekte. In diesen CATIDs definiert *VSLangProj.olb*.

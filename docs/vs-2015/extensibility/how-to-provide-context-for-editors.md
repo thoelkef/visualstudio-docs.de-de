@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435895"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Vorgehensweise: Bereitstellen von Kontext für Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt,
      Wenn die **dynamische Hilfe** Fenster Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> , um anzugeben, dass es aktualisiert, Editor oder Designer aktualisiert den Kontext entsprechend der übergeordneten Kontextsammlung sowohl für alle unterkontextbehälter zu diesem Zeitpunkt.  
   
     > [!NOTE]
-    >  Die `SetDirty` Kennzeichen auf automatisch eingestellt ist `true` jedes Mal, wenn Kontext hinzugefügt oder entfernt Sie aus dem kontextbehälter. Die **dynamische Hilfe** Fenster nur Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> auf den kontextbehälter Wenn die `SetDirty` ergebniskennzeichen auf `true`. Er wird zurückgesetzt, um `false` nach dem Update.  
+    > Die `SetDirty` Kennzeichen auf automatisch eingestellt ist `true` jedes Mal, wenn Kontext hinzugefügt oder entfernt Sie aus dem kontextbehälter. Die **dynamische Hilfe** Fenster nur Aufrufe <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> auf den kontextbehälter Wenn die `SetDirty` ergebniskennzeichen auf `true`. Er wird zurückgesetzt, um `false` nach dem Update.  
   
 3. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> , um die Sammlung von aktiven Kontext Kontext hinzuzufügen oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> Kontext zu entfernen.  
   
@@ -75,7 +75,7 @@ Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt,
  Wenn Sie Ihren eigenen Editor schreiben, müssen Sie alle drei der Verfahren in diesem Thema, um den Kontext für den Editor bieten abschließen.  
   
 > [!NOTE]
->  Um ein Editor oder Designer-Fenster ordnungsgemäß zu aktivieren und stellen Sie sicher, dass das Befehlsrouting ordnungsgemäß aktualisiert wird, müssen Sie aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> auf die Komponente, für das Fokusfenster zu erleichtern.  
+> Um ein Editor oder Designer-Fenster ordnungsgemäß zu aktivieren und stellen Sie sicher, dass das Befehlsrouting ordnungsgemäß aktualisiert wird, müssen Sie aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> auf die Komponente, für das Fokusfenster zu erleichtern.  
   
  Die SEID ist eine Auflistung von Eigenschaften, die sich ändern, die basierend auf der Auswahl. SEID Informationen sind über die globale Auswahl zur Verfügung. Die globale Auswahl ist in von ausgelöste Ereignisse verknüpft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> -Schnittstelle, und hat eine Liste aller Elemente, die ausgewählt werden, (aktuellen-Editor, aktuellen Toolfensters, aktuellen Hierarchie und So weiter).  
   

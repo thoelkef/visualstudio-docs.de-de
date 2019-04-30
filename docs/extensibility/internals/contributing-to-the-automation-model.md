@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ebe9a3d1c314a8e3b15ae7588f38abfd50518d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910684"
 ---
 # <a name="contribute-to-the-automation-model"></a>Mitwirken Sie am Automatisierungsmodell
 Visual Studio bietet eine Reihe von Automatisierungsschnittstellen für die Umgebung anzupassen. Das Automatisierungsmodell ist das Objektmodell, das Benutzer zum Erstellen von Visual Studio-add-ins und-Erweiterungen ermöglicht.

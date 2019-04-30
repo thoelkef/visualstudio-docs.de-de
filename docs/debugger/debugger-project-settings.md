@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852695"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst. Diese Einstellungen bestimmen beispielsweise Folgendes: Welche Verzeichnisse vom Debugger durchsucht werden, mit welchem Befehl bzw. welchen Befehlsargumenten das Programm gestartet wird und welche Art von Debuginformationen für das Programm erstellt werden. Sie können diese Einstellungen im Dialogfeld **Eigenschaftenseiten** ändern.
@@ -29,11 +29,11 @@ Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst.
  In diesem Abschnitt wird beschrieben, welche Optionen verfügbar sind und wie sie festgelegt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [Gewusst wie: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md) beschreibt Debuggereinstellungen im der **Optionen** Dialogfeld.
+ [Vorgehensweise: Angeben von Debuggereinstellungen](../debugger/how-to-specify-debugger-settings.md) beschreibt Debuggereinstellungen im der **Optionen** Dialogfeld.
 
- [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md) beschreibt die **Debuggen** und **Version** Einstellungen, und wie Sie zwischen diesen wechseln.
+ [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md) beschreibt die **Debuggen** und **Version** Einstellungen, und wie Sie zwischen diesen wechseln.
 
- [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md) enthält Eigenschaften, die zur Verfügung, in der **Eigenschaftenseiten** für C- oder C++-Projekte im Dialogfeld.
+ [Projekteinstellungen für eine C++ Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md) enthält Eigenschaften, die zur Verfügung, in der **Eigenschaftenseiten** im Dialogfeld für C oder C++ Projekte.
 
  [Projekteinstellungen für C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) enthält Eigenschaften, die zur Verfügung, in der **Eigenschaftenseiten** Dialogfeld C# Projekte.
 

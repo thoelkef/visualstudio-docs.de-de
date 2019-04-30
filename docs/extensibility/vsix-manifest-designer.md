@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411103"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX-Manifest-Designer
 Ändert eine VSIX-Paket-manifest-Datei, die legt das Verhalten bei der Installation für Visual Studio-Erweiterung.
@@ -29,7 +29,7 @@ ms.locfileid: "56722862"
  Zum Öffnen der **VSIX-Manifest-Designer**, Suchen einer *"Source.Extension.vsixmanifest"* Datei **Projektmappen-Explorer**, und öffnen Sie die Datei. Wenn die Datei keine gültigen XML-Code enthält, wird nicht im manifest-Designer öffnen.
 
 > [!NOTE]
->  Die *"Source.Extension.vsixmanifest"* wird in die Ausgabedatei zu *"Extension.vsixmanifest"* Wenn das Paket erstellt wurde.
+> Die *"Source.Extension.vsixmanifest"* wird in die Ausgabedatei zu *"Extension.vsixmanifest"* Wenn das Paket erstellt wurde.
 
 ## <a name="uielement-list"></a>UIElement-Liste
  Die **VSIX-Manifest-Designer** enthält vier Abschnitte, die diese Elemente der obersten Ebene des Schemas entsprechen:

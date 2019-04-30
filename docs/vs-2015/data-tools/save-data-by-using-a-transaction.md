@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425087"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Speichern von Daten mithilfe von Transaktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Speichern Sie Daten in einer Transaktion mithilfe der <xref:System.Transactions>
  Projekte werden nicht mit einem Verweis auf die System.Transactions-Assembly erstellt, daher müssen Sie manuell einen Verweis zu Projekten hinzufügen, die Transaktionen verwenden.  
   
 > [!NOTE]
->  Die <xref:System.Transactions> Namespace wird in Windows 2000 oder höher unterstützt.  
+> Die <xref:System.Transactions> Namespace wird in Windows 2000 oder höher unterstützt.  
   
  Die einfachste Möglichkeit zum Implementieren einer Transaktions ist die Instanziierung einer <xref:System.Transactions.TransactionScope> -Objekt in ein `using` Anweisung. (Weitere Informationen finden Sie unter [Using-Anweisung](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), und [using-Anweisung](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) Der Code, in wird, der `using` Anweisung, die in der Transaktion beteiligt ist.  
   

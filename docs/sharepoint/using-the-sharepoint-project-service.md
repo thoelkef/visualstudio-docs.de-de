@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007938"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Verwenden Sie die SharePoint-Projektdiensts
   Das SharePoint-Projektsystem beinhaltet einen Projektdienst, den Sie verwenden können, um mit dem Projektsystem zusammenhängende Aufgaben auszuführen. Der Projektdienst ist ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>-Objekt.
@@ -35,7 +35,7 @@ ms.locfileid: "56619978"
 |Zugriff auf alle die Bereitstellungsschritte, die für SharePoint-Projekte verfügbar sind (einschließlich integrierter und benutzerdefinierter Bereitstellungsschritte).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A>-Eigenschaft.|
 |Zugriff auf Ereignisse, die ausgelöst werden, wenn ein Entwickler Code in einem SharePoint-Projekt umgestaltet.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A>-Eigenschaft.|
 |Führen Sie eine benutzerdefinierte *SharePoint-Befehls* in der SharePoint-Serverobjektmodell aufruft. Weitere Informationen zu SharePoint-Befehlen finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>-Eigenschaft.|
-|Konvertieren eines Typs im SharePoint-Projektsystem in einen Typ im Visual Studio-Automatisierungsobjektmodell oder -Integrationsobjektmodell und umgekehrt. Weitere Informationen finden Sie unter [Konvertieren zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>-Methode.|
+|Konvertieren eines Typs im SharePoint-Projektsystem in einen Typ im Visual Studio-Automatisierungsobjektmodell oder -Integrationsobjektmodell und umgekehrt. Weitere Informationen finden Sie unter [Konvertieren zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> -Methode.|
 |Schreiben von Nachrichten an die **Ausgabe** Fenster oder **Fehlerliste** Fenster in Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A>-Eigenschaft.|
 |Zugriff auf andere in Visual Studio verfügbare Dienste.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A>-Eigenschaft.|
 |Abrufen des Pfads zum Installationsordner der lokalen SharePoint-Website, der zum Debuggen der Projektmappe verwendet wird.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A>-Eigenschaft.|

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961490"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Vorgehensweise: Ändern der Größe Steuerelementen innerhalb der Arbeitsblattzellen
   Wenn Sie die Spalten oder Zeilen in einem Arbeitsblatt Größe, die Größe ändern alle Hoststeuerelemente in den Zellen automatisch an die Höhe oder Breite der Zelle, die Größe geändert wurde. Windows Forms-Steuerelemente sind standardmäßig nicht automatisch angepasst.

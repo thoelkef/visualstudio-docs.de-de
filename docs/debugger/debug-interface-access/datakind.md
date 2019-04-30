@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554921"
 ---
 # <a name="datakind"></a>DataKind
 Gibt an, die bestimmten Bereich eines Datenwerts.
@@ -60,7 +60,7 @@ DataIsStaticMember Datenelement ist eine statische Klasse-Variable.
 
 DataIsConstant Datenelement ist ein konstanter Wert.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) Methode.
 
 ## <a name="requirements"></a>Anforderungen

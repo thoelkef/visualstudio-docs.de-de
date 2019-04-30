@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982422"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in
   Sie können Steuerelemente jedem geöffneten Microsoft Office Word-Dokument mithilfe eines VSTO-Add-Ins hinzufügen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie das Menüband verwenden, um Benutzer hinzufügen können eine <xref:Microsoft.Office.Tools.Word.Controls.Button> oder <xref:Microsoft.Office.Tools.Word.RichTextContentControl> zu einem Dokument.

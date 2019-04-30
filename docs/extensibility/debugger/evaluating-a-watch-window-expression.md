@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52df78eea2f8dac5f513514348fbc9cd435c989a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409826"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Auswerten eines überwachungsfensterausdrucks
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Wenn die Ausführung angehalten wird, ruft Visual Studio die Debug-Engine (DE), um zu bestimmen, den aktuellen Wert der einzelnen Ausdrücke in der Liste sehen Sie sich an. Die DE wertet jeden Ausdruck, der mit einer ausdrucksauswertung (EE) und Visual Studio zeigt an, dessen Wert in der **Watch** Fenster.
 
@@ -45,7 +45,7 @@ ms.locfileid: "60094969"
  Da beim Analysieren eines komplexen Ausdrucks viel länger als das Auswerten von es in Anspruch nehmen kann, wird der Prozess der Auswertung eines Ausdrucks in zwei Schritte unterteilt: (1) Analyse der Ausdruck "und" 2 ") auszuwerten den analysierten Ausdruck. Auf diese Weise kann Auswertung viele Male vorkommen, aber der Ausdruck muss nur einmal analysiert werden. Die analysierte intermediären Ausdrucks wird zurückgegeben, aus der EE in ein [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt, das wiederum gekapselt und von der DE als zurückgegeben wird ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) Objekt. Die `IDebugExpression` Objekt verzögert alle Auswertung der `IDebugParsedExpression` Objekt.
 
 > [!NOTE]
->  Es ist nicht notwendig, für eine EE dieser zweistufige Prozess befolgen, obwohl Visual Studio Dies setzt voraus. die EE analysieren und Auswerten von in der gleichen Schritt kann bei [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) aufgerufen wird (Dies ist die MyCEE, z. B. Funktionsweise des Beispiels). Wenn Ihre Sprache komplexe Ausdrücke bilden kann, empfiehlt es sich, den Schritt der Analyse von der bewertungsschritt zu trennen. Dies kann die Leistung in Visual Studio-Debugger verbessern, wenn viele Ausdrücke zu beobachten sind angezeigt werden.
+> Es ist nicht notwendig, für eine EE dieser zweistufige Prozess befolgen, obwohl Visual Studio Dies setzt voraus. die EE analysieren und Auswerten von in der gleichen Schritt kann bei [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) aufgerufen wird (Dies ist die MyCEE, z. B. Funktionsweise des Beispiels). Wenn Ihre Sprache komplexe Ausdrücke bilden kann, empfiehlt es sich, den Schritt der Analyse von der bewertungsschritt zu trennen. Dies kann die Leistung in Visual Studio-Debugger verbessern, wenn viele Ausdrücke zu beobachten sind angezeigt werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Beispielimplementierung der ausdrucksauswertung](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) im MyCEE-Beispiel verwendet, um den Prozess der Auswertung des Ausdrucks zu durchlaufen.

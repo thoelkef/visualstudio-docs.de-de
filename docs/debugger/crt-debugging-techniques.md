@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564034"
 ---
 # <a name="crt-debugging-techniques"></a>CRT-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von Programmen hilfreich sein, die die C-Laufzeitbibliothek verwenden.
@@ -56,5 +56,5 @@ Die folgenden Debugverfahren können beim Debuggen von Programmen hilfreich sein
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-- [Debuggen von nativem Code](../debugger/debugging-native-code.md) -werden einige allgemeine Debugprobleme und Techniken für C- und C++-Anwendungen erläutert.
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md) -beschreibt einige allgemeine Debugprobleme und Techniken für C und C++ Anwendungen.
 - [Debuggersicherheit](../debugger/debugger-security.md) -Empfehlungen für mehr Sicherheit beim Debuggen.

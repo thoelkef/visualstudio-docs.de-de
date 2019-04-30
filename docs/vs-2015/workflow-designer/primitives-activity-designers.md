@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "59001160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971276"
 ---
 # <a name="primitives-activity-designers"></a>Primitive Aktivitätsdesigner
 Primitive Aktivitätsdesigner werden verwendet, um verschiedene Aktivitäten im <xref:System.Activities.Statements>-Namespace zu erstellen und zu konfigurieren, z. B. Assign und Delay. Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Aktivitäts- und Vorlagen-Designer.  

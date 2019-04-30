@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430127"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
 4. Öffnen der **Ausgabe** Fenster der Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tritt ein Fehler, die auf das VSPackage lädt. Informationen, warum das VSPackage nicht laden kann in diesem Fenster angezeigt werden.  
   
     > [!NOTE]
-    >  Wenn Sie die experimentelle Version von starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE), überprüfen Sie die **Ausgabe** Fenster beider Versionen.  
+    > Wenn Sie die experimentelle Version von starten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE), überprüfen Sie die **Ausgabe** Fenster beider Versionen.  
   
 5. Überprüfen Sie das Aktivitätsprotokoll.  
   
@@ -87,7 +87,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
     4. Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** oder drücken Sie F5.  
   
         > [!NOTE]
-        >  Wenn Sie ein Projekt debuggen, erstellen Sie oder Laden Sie jetzt eine vorhandene Instanz des Projekts.  
+        > Wenn Sie ein Projekt debuggen, erstellen Sie oder Laden Sie jetzt eine vorhandene Instanz des Projekts.  
   
 2. Verwenden des Aktivitätsprotokolls an.  
   

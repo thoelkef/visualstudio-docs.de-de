@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1e34fa5d4f49d0dfa415e0ac47e55cea236307e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435284"
 ---
 # <a name="setup-and-install"></a>Setup und Installation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Zum Erstellen von systemeigenen iOS- Android- und Windows-Apps aus einer gemeins
 Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xamarin haben, posten Sie Ihre Frage auf [forums.xamarin.com](http://forums.xamarin.com/).
   
 > [!NOTE]
->  Seit dem 31. März 2016 ist Xamarin ohne zusätzliche Kosten im Lieferumfang aller Editionen von Visual Studio enthalten. Eine separate Lizenz ist nicht erforderlich. Xamarin Studio Community für Mac ist auch für Studenten, OSS-Entwickler und kleine Teams kostenlos. Beachten Sie, dass Sie für vorhandene Installationen von Visual Studio, die mit früheren Xamarin-Lizenzen konfiguriert sind, Xamarin auf Version 4.0.3.214 oder höher aktualisieren müssen. Informationen hierzu finden Sie unter **Extras > Optionen > Xamarin > Sonstige**, klicken Sie auf **Jetzt prüfen**, und laden Sie das Update 4.0.3.214 herunter. Wenn Sie Visual Studio neu starten, wechseln Sie zu **Extras > Xamarin-Konto...**. Dort sollten Sie den aktualisierten Status sehen.  
+> Seit dem 31. März 2016 ist Xamarin ohne zusätzliche Kosten im Lieferumfang aller Editionen von Visual Studio enthalten. Eine separate Lizenz ist nicht erforderlich. Xamarin Studio Community für Mac ist auch für Studenten, OSS-Entwickler und kleine Teams kostenlos. Beachten Sie, dass Sie für vorhandene Installationen von Visual Studio, die mit früheren Xamarin-Lizenzen konfiguriert sind, Xamarin auf Version 4.0.3.214 oder höher aktualisieren müssen. Informationen hierzu finden Sie unter **Extras > Optionen > Xamarin > Sonstige**, klicken Sie auf **Jetzt prüfen**, und laden Sie das Update 4.0.3.214 herunter. Wenn Sie Visual Studio neu starten, wechseln Sie zu **Extras > Xamarin-Konto...**. Dort sollten Sie den aktualisierten Status sehen.  
   
  **In diesem Thema:**  
   
@@ -56,7 +56,7 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
 ## <a name="windows"></a> Windows-Setup (Visual Studio und Xamarin)  
   
 > [!TIP]
->  Diese Anweisungen gelten für Visual Studio 2015. Um Xamarin mit Visual Studio 2013 (Update 2 erforderlich ist) zu verwenden, führen Sie die Schritte für die [direkte Installation von Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) aus.  
+> Diese Anweisungen gelten für Visual Studio 2015. Um Xamarin mit Visual Studio 2013 (Update 2 erforderlich ist) zu verwenden, führen Sie die Schritte für die [direkte Installation von Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) aus.  
   
 1. [Laden Sie das Installationsprogramm für eine beliebige Edition von Visual Studio 2015 herunter, und führen Sie es aus](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional oder Enterprise). Visual Studio 2015 Community ist die kostenlose Edition; die Editionen Professional und Enterprise können als Testversion 30 Tage, nachdem Sie eine Lizenz gekauft haben, verwendet werden.  
   
@@ -83,7 +83,7 @@ Wenn Sie nach dem Setup und der Installation Probleme mit der Verwendung von Xam
     ![Überprüfung auf Xamarin-Updates in den Visual Studio-Optionen](../cross-platform/media/cross-plat-xamarin-setup-3.png "Plattformübergreifendes Xmarin-Setup 3")  
   
    > [!NOTE]
-   >  Wie bereits erwähnt, müssen Sie Xamarin auf Version 4.0.3.214 oder höher aktualisieren, um Probleme mit früheren Xamarin-Lizenzen zu vermeiden.  
+   > Wie bereits erwähnt, müssen Sie Xamarin auf Version 4.0.3.214 oder höher aktualisieren, um Probleme mit früheren Xamarin-Lizenzen zu vermeiden.  
 
    Wenn Sie unter **Tools > Optionen** keine Option für Xamarin sehen, überprüfen Sie die Installation erneut, oder starten Sie Visual Studio neu. Sie können auch Xamarin im Dialogfeld „Optionen“ suchen.
       

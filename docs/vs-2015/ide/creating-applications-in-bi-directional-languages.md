@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437590"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104979"
 Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibrichtung von rechts nach links, einschließlich Arabisch und Hebräisch, korrekt anzeigen. Für einige Funktionen können Sie ganz einfach Eigenschaften festlegen. In anderen Fällen müssen Features im Code implementiert werden.  
   
 > [!NOTE]
->  Um bidirektionale Sprachen anzeigen und eingeben zu können, müssen Sie mit einer Windows-Version arbeiten, in der die entsprechende Sprache konfiguriert ist. Entweder sollten Sie also eine englischsprachige Windows-Version und das entsprechende Sprachpaket installiert haben, oder Sie verwenden die entsprechende lokalisierte Windows-Version.  
+> Um bidirektionale Sprachen anzeigen und eingeben zu können, müssen Sie mit einer Windows-Version arbeiten, in der die entsprechende Sprache konfiguriert ist. Entweder sollten Sie also eine englischsprachige Windows-Version und das entsprechende Sprachpaket installiert haben, oder Sie verwenden die entsprechende lokalisierte Windows-Version.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen  
   
@@ -66,7 +66,7 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 - Dateiinhalt. Sie können mit Unicode codierte Dateien oder Dateien mit einer ausgewählten Codepage öffnen und speichern.  
   
     > [!NOTE]
-    >  Der Code-Editor ist ein Sonderfall. Einzelheiten finden Sie weiter unten.  
+    > Der Code-Editor ist ein Sonderfall. Einzelheiten finden Sie weiter unten.  
   
 - Datenelemente. Diese Elemente werden im **Server-Explorer** korrekt angezeigt, und Sie können sie bearbeiten.  
   
@@ -79,10 +79,10 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 - Code und normaler Text. Im Code-Editor, der gleichzeitig der Text-Editor ist, können Sie mithilfe von Arabisch oder Hebräisch Klassen, Funktionen, Variablen, Eigenschaften, Zeichenfolgenliterale, Attribute usw. benennen. Allerdings unterstützt der Editor keine Lesefolge von rechts nach links; der Text beginnt immer am linken Rand.  
   
     > [!TIP]
-    >  Es wird empfohlen, Zeichenfolgenliterale in Ressourcendateien abzulegen und sie nicht fest in Programmen zu codieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Lokalisieren von Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Es wird empfohlen, Zeichenfolgenliterale in Ressourcendateien abzulegen und sie nicht fest in Programmen zu codieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Lokalisieren von Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  Die Verweise auf die in diesen Sprachen benannten Objekte müssen konsistent sein. Wenn Sie z. B. bei der Benennung einer arabischen Variablen Kashida verwenden, müssen Sie dies auch tun, wenn Sie auf diese Variable verweisen, sonst werden Fehler verursacht.  
+    > Die Verweise auf die in diesen Sprachen benannten Objekte müssen konsistent sein. Wenn Sie z. B. bei der Benennung einer arabischen Variablen Kashida verwenden, müssen Sie dies auch tun, wenn Sie auf diese Variable verweisen, sonst werden Fehler verursacht.  
   
 - Codekommentare. Sie können Kommentare in Arabisch oder Hebräisch erstellen. Sie können diese Sprachen auch im Kommentarerstellungstool verwenden.  
   

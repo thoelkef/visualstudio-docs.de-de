@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e421c65e83bca88c01ea58cfd5cc402c6011cb23
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907739"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Verwenden von Code Maps zum Debuggen von Anwendungen
 
@@ -48,7 +48,7 @@ Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps könn
  ![Code Map &#45; Suchen von Code](../modeling/media/codemapstoryboardpaint1.png)
 
 ## <a name="start-mapping-the-code"></a>Die Codezuordnung starten
- Nun beginnen Sie mit dem Mapping der `undo`-Methode und ihrer Beziehungen. Fügen Sie im Code-Editor die `undo`-Methode und die Felder, auf die sie verweist, zu einer neuen Codezuordnung hinzu. Wenn Sie eine neue Zuordnung erstellen, kann es einige Zeit dauern, den Code zu indizieren. Aufgrund der Indizierung können spätere Vorgänge schneller ausgeführt werden.
+ Nun beginnen Sie mit dem Mapping der `undo`-Methode und ihrer Beziehungen. Fügen Sie im Code-Editor die `undo`-Methode und die Felder, auf die sie verweist, zu einer neuen Code Map hinzu. Wenn Sie eine neue Zuordnung erstellen, kann es einige Zeit dauern, den Code zu indizieren. Aufgrund der Indizierung können spätere Vorgänge schneller ausgeführt werden.
 
  ![Code Map &#45; -Methode und verwandte Felder anzeigen](../modeling/media/codemapstoryboardpaint3.png)
 
@@ -72,7 +72,7 @@ Details zu den Befehlen und Aktionen, die Sie bei der Arbeit mit Code Maps könn
 
  ![Code Map &#45; "alle Verweise suchen"](../modeling/media/codemapstoryboardpaint6.png)
 
- ![Öffnen einer Code Map aus dem Code-Editor](../modeling/media/codemapstoryboardpaint6a.png)
+ ![Öffnen einer Codezuordnung aus dem Code-Editor](../modeling/media/codemapstoryboardpaint6a.png)
 
 > [!NOTE]
 > Wenn Sie Elemente aus einem Projekt hinzufügen, das von mehreren Apps wie Windows Phone oder Windows Store gemeinsam genutzt wird, werden diese Elemente immer mit dem derzeit aktiven App-Projekt in der Map angezeigt. Wenn Sie also den Kontext auf ein anderes App-Projekt ändern, ändert sich auch der Kontext auf der Map für alle neu hinzugefügte Elemente aus dem freigegebenen Projekt. Vorgänge, die Sie mit einem Element in der Zuordnung ausführen, gelten nur für solche Elemente, die denselben Kontext gemeinsam verwenden.

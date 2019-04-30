@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864143"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren
 Ein benutzerdefinierter Editor besteht aus zwei Teilen: ein dokumentdatenobjekt und eine dokumentenansichtsobjekt. Wie die Namen schon sagen, stellt das dokumentendatenobjekt die Textdaten, die angezeigt werden. Auf ähnliche Weise stellt das dokumentenansichtsobjekt (oder "View") ein oder mehrere Fenster, in dem das dokumentendatenobjekt angezeigt.

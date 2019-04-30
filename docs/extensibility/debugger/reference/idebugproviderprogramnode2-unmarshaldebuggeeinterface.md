@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 86c20e7c6828cfbf3ec31ba5dcbec9c7ee8478df
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869359"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.
@@ -45,7 +45,7 @@ int UnmarshalDebuggeeInterface(
 
  `ppvObject`
 
- [out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] diese direkt in den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.
+ [out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] dies direkt auf den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f2f9111acf656bf882a3d506fe95b8361f3693ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006207"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Der zu codierende URI enthält ein ungültiges Zeichen.
 Sie haben versucht, eine Zeichenfolge als URI (Uniform Resource Identifier) zu codieren, aber es ungültige Zeichen enthalten. Obwohl die meisten Zeichen innerhalb von Zeichenfolgen in URIs konvertiert werden ungültig sind, sind einige Unicode-Zeichenfolgen nicht zulässig.  

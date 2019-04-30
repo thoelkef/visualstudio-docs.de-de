@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417170"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen von Schriftart- und farbanbieters für die farbliche Kennzeichnung von text
 Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Benutzeroberfläche (UI) hängt von den Typ des Projekts, die Technologie und Developer-Einstellungen. Die **Schriftarten und Farben** auf der Seite werden die Einstellungen gespeichert.
@@ -24,7 +24,7 @@ Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Ben
  Die meisten Implementierungen, die farbige Text anzeigen müssen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> und die zugehörigen Schnittstellen, für die darstellen, abgerufen und das Speichern von Text Einstellungen anzuzeigen.
 
 > [!NOTE]
->  Beim Anpassen der Kern-Editor (welche unterstützt die **Text EditorCategory**), es wird empfohlen, die Farbgebung-Technologie in den Sprachdienst zu verwenden. Weitere Informationen finden Sie unter [Übersicht über die Schriftart- und farbeinstellungen](../extensibility/font-and-color-overview.md).
+> Beim Anpassen der Kern-Editor (welche unterstützt die **Text EditorCategory**), es wird empfohlen, die Farbgebung-Technologie in den Sprachdienst zu verwenden. Weitere Informationen finden Sie unter [Übersicht über die Schriftart- und farbeinstellungen](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Schriftart und Farbe Standardinformationen zu erhalten
  Alle der **Schriftarten und Farben** Einstellungen von einem beliebigen Fenster, das Anzeigen von Text sollte angegeben werden, der **Anzeigeelemente** eines **Kategorie**. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld "Optionen" im Feld](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

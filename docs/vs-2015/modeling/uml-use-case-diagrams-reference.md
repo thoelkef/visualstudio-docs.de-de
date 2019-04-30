@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424319"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML-Anwendungsfalldiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In Visual Studio eine *Anwendungsfalldiagramm* zusammengefasst, die Ihre Anwendu
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  In diesem Thema werden die Elemente beschrieben, die in Anwendungsfalldiagrammen verfügbar sind. Weitere Informationen über das Zeichnen von Anwendungsfalldiagrammen finden Sie unter [UML-Anwendungsfalldiagrammen: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md). Weitere Informationen zum Erstellen und Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+> In diesem Thema werden die Elemente beschrieben, die in Anwendungsfalldiagrammen verfügbar sind. Weitere Informationen über das Zeichnen von Anwendungsfalldiagrammen finden Sie unter [UML-Anwendungsfalldiagrammen: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md). Weitere Informationen zum Erstellen und Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Lesen von Anwendungsfalldiagrammen  
  In den Tabellen in den folgenden Abschnitten werden die Elemente, die in einem Anwendungsfalldiagramm verfügbar sind, zusammen mit ihren Haupteigenschaften beschrieben. Eine vollständige Liste der Eigenschaften, finden Sie unter [Eigenschaften von Elementen in UML-Anwendungsfalldiagrammen](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  

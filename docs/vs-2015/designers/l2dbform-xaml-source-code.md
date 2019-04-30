@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403488"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml-Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>Beschreibung  
   
 > [!NOTE]
->  Wir empfehlen, den folgenden Code in einen Code-Editor, z. B. den C#-Quellcode-Editor in Visual Studio, zu kopieren, weil dort die Zeilennummern einfacher zu verfolgen sind.  
+> Wir empfehlen, den folgenden Code in einen Code-Editor, z. B. den C#-Quellcode-Editor in Visual Studio, zu kopieren, weil dort die Zeilennummern einfacher zu verfolgen sind.  
   
 ### <a name="code"></a>Code  
   
@@ -242,5 +242,5 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
  Den C#-Quellcode für die den WPF-Benutzeroberflächenelementen zugeordneten Ereignishandler finden Sie unter [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiels](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

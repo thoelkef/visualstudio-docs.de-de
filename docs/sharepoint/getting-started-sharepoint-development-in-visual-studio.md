@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557133"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Erste Schritte (SharePoint-Entwicklung in Visual Studio)
   Dieser Abschnitt bietet Ihnen Unterstützung bei den ersten Schritten mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , um SharePoint-Lösungen zu entwickeln, die die Vorteile von [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]nutzen.

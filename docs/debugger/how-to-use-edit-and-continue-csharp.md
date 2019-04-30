@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 515068f29045ef92ee7d2323f752ba2185f28cac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906270"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ [C#]
 Sie können mit bearbeiten und Fortfahren stellen und Anwenden von Änderungen auf Ihren Code im Unterbrechungsmodus befindet, während des Debuggings, beenden und neu starten der Debugsitzung ohne.
 
 Bearbeitung und-Fortsetzung für C# erfolgt automatisch, wenn Sie codeänderungen im Unterbrechungsmodus vornehmen und dann fortfahren, Debuggen, indem Sie mithilfe von **Weiter**, **Schritt**, oder **Festlegen der nächsten Anweisung**, oder für die Auswertung einer Funktion in einem Debuggerfenster.

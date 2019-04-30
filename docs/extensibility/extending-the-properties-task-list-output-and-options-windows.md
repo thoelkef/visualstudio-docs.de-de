@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417238"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Erweitern Sie die Eigenschaften, Aufgabenliste, Ausgabe und Optionen für windows
 Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vorgehensweise zeigt, wie Informationen über das Toolfenster in ein neues Integration **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite sowie das Schreiben in die **Aufgabenliste** und **Ausgabe** Windows.
@@ -33,7 +33,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vor
 1. Erstellen Sie ein Projekt mit dem Namen **"Todolist"** mithilfe der VSIX-Projektvorlage aus, und fügen Sie der Elementvorlage ein benutzerdefiniertes Tool-Fenster, der mit dem Namen **TodoWindow**.
 
     > [!NOTE]
-    >  Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Weitere Informationen zu eine Erweiterung mit einem Toolfenster erstellen, finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Richten Sie das Toolfenster
  Fügen Sie ein Textfeld, geben Sie ein neues ToDo-Element, eine Schaltfläche, um das neue Element zur Liste hinzuzufügen, und ein ListBox-Element zum Anzeigen von Elementen in der Liste hinzu.
@@ -41,7 +41,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vor
 1. In *TodoWindow.xaml*, löschen Sie die Schaltfläche "," ein, und "StackPanel-Steuerelemente aus das UserControl-Steuerelement.
 
     > [!NOTE]
-    >  Dies wird nicht gelöscht. die **button1_Click** Ereignishandler, die Sie in einem späteren Schritt wiederverwendet.
+    > Dies wird nicht gelöscht. die **button1_Click** Ereignishandler, die Sie in einem späteren Schritt wiederverwendet.
 
 2. Von der **alle WPF-Steuerelemente** Teil der **Toolbox**, ziehen Sie eine **Canvas** Steuerelement zum Raster.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430336"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern Sie Server-Explorer, um die Anzeige von Webparts
   In Visual Studio können Sie die **SharePoint-Verbindungen** Knoten **Server-Explorer** um Komponenten auf SharePoint-Websites anzuzeigen. Allerdings **Server-Explorer** nicht einige Komponenten werden standardmäßig angezeigt. Erweitern Sie in dieser exemplarischen Vorgehensweise **Server-Explorer** , damit es den Webpartkatalog auf zeigt jeweils die SharePoint-Website verbunden.
@@ -40,7 +40,7 @@ ms.locfileid: "60040571"
 - Das Debuggen und Testen der Erweiterung.
 
 > [!NOTE]
->  Eine andere Version der in dieser exemplarischen Vorgehensweise, die das Clientobjektmodell statt dessen das Serverobjektmodell für SharePoint verwendet werden soll, finden Sie unter [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Eine andere Version der in dieser exemplarischen Vorgehensweise, die das Clientobjektmodell statt dessen das Serverobjektmodell für SharePoint verwendet werden soll, finden Sie unter [Exemplarische Vorgehensweise: Rufen Sie in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:
@@ -75,7 +75,7 @@ ms.locfileid: "60040571"
 3. In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann die **Erweiterbarkeit** Knoten.
 
     > [!NOTE]
-    >  Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
+    > Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
 
 4. Wählen Sie am oberen Rand des Dialogfelds, **.NET Framework 4.5** in der Liste der Versionen von .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040571"
 1. Klicken Sie im Projekt WebPartNodeExtension öffnen Sie SiteNodeExtension-Codedatei, und fügen Sie den folgenden Code hinein.
 
     > [!NOTE]
-    >  Nachdem Sie diesen Code hinzufügen, muss das Projekt einige Kompilierungsfehler, aber allerdings verschwinden fügen Sie Code bei in späteren Schritten fest.
+    > Nachdem Sie diesen Code hinzufügen, muss das Projekt einige Kompilierungsfehler, aber allerdings verschwinden fügen Sie Code bei in späteren Schritten fest.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040571"
 1. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
     > [!WARNING]
-    >  An diesem Punkt möglicherweise das Projekt WebPartNode einen Buildfehler, da die VSIX-manifest-Datei einen Wert für Autor hat. Dieser Fehler verschwindet, wenn Sie einen Wert in späteren Schritten hinzufügen.
+    > An diesem Punkt möglicherweise das Projekt WebPartNode einen Buildfehler, da die VSIX-manifest-Datei einen Wert für Autor hat. Dieser Fehler verschwindet, wenn Sie einen Wert in späteren Schritten hinzufügen.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Erstellen Sie ein VSIX-Paket zum Bereitstellen der Erweiterung
  Zum Bereitstellen der Erweiterung erstellen Sie anhand des VSIX-Projekts in der Lösung ein VSIX-Paket. Konfigurieren Sie zuerst das VSIX-Paket durch Ändern der Datei source.extension.vsixmanifest im VSIX-Projekt ein. Erstellen Sie anschließend das VSIX-Paket, indem Sie die Lösung erstellen.
@@ -290,7 +290,7 @@ ms.locfileid: "60040571"
 6. In der **Typ** wählen **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040571"
 10. In der **Typ** geben **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Dieses Element gibt eine benutzerdefinierte Erweiterung, die in der Visual Studio-Erweiterung enthalten sein sollen. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Dieses Element gibt eine benutzerdefinierte Erweiterung, die in der Visual Studio-Erweiterung enthalten sein sollen. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. In der **Quelle** wählen die **ein Projekt in der aktuellen Projektmappe** Listenelement.
 

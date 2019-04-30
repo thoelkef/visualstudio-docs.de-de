@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436493"
 ---
 # <a name="ribbon-xml"></a>Multifunktionsleisten-XML
   Das Element "Menüband (XML) können Sie zum Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Element "Menüband (XML), sollten Sie im Menüband auf eine Weise anpassen, die von dem Element" Menüband (visueller Designer) "nicht unterstützt wird. Einen Vergleich der, wie Sie mit jedem Element ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117539"
 - Definieren der Rückrufmethode in der Klasse "Menüband".
 
 > [!NOTE]
->  Für Outlook ist ein zusätzlicher Schritt erforderlich. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> Für Outlook ist ein zusätzlicher Schritt erforderlich. Weitere Informationen finden Sie unter [anpassen ein Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Eine exemplarische Vorgehensweise, die das Automatisieren eine Anwendung über das Menüband veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierte Registerkarte mit Menüband-XML-](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

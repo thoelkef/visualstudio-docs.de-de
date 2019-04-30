@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564722"
 ---
 # <a name="create-custom-data-visualizers"></a>Erstellen von benutzerdefinierten Daten-Schnellansichten
  Ein *Schnellansicht* ist Teil der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Debugger-Benutzeroberfläche, die eine Variable oder ein Objekt in einer entsprechend seinem Datentyp angezeigt. Beispielsweise wird eine HTML-Schnellansicht eine HTML-Zeichenfolge interpretiert und das Ergebnis zeigt, wie es in einem Browserfenster angezeigt wird. Eine Bitmapschnellansicht interpretiert eine Bitmapstruktur und zeigt die Grafik aus, die es darstellt. Einige Schnellansichten können Sie sowie das Anzeigen der Daten ändern.

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430469"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projektelements definiert und sie eine Elementvorlage in Visual Studio ordnen, möchten Sie auch einen Assistenten für die Vorlage bereitzustellen. Sie können den Assistenten verwenden, zum Sammeln von Informationen von Benutzern, wenn sie Ihre Vorlage verwenden, um eine neue Instanz des Projektelements zu einem Projekt hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -34,7 +34,7 @@ ms.locfileid: "60081137"
 - Debuggen und Testen des Assistenten
 
 > [!NOTE]
->  Sie können ein Beispiel von [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , die zeigt, wie benutzerdefinierte Aktivitäten für einen Workflow zu erstellen.
+> Sie können ein Beispiel von [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , die zeigt, wie benutzerdefinierte Aktivitäten für einen Workflow zu erstellen.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
  Um diese exemplarische Vorgehensweise durchführen zu können, müssen Sie zunächst die Projektmappe "CustomActionProjectItem" erstellen, gehen Sie [Exemplarische Vorgehensweise: Erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081137"
 2. Ersetzen Sie in der XAML-Ansicht das aktuelle durch folgendes XAML. Die XAML definiert eine Benutzeroberfläche, die eine Überschrift enthält, die zum Angeben des Verhaltens der benutzerdefinierten Aktion und die Navigationsschaltflächen am unteren Rand des Fensters steuert.
 
     > [!NOTE]
-    >  Nachdem Sie diesen Code hinzufügen, müssen Ihr Projekt einige Kompilierungsfehler. Diese Fehler werden durch Code behoben, den Sie in späteren Schritten hinzufügen.
+    > Nachdem Sie diesen Code hinzufügen, müssen Ihr Projekt einige Kompilierungsfehler. Diese Fehler werden durch Code behoben, den Sie in späteren Schritten hinzufügen.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  Das Fenster, das in diesem XAML erstellt wird ergibt sich aus der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse. Wenn Sie ein benutzerdefiniertes WPF-Dialogfeld zu Visual Studio hinzufügen, wird empfohlen, dass Sie Ihrem Dialogfeld ableiten, von dieser Klasse ein einheitliches Aussehen mit anderen Dialogfeldern in Visual Studio und zur Vermeidung von Problemen, die andernfalls mit modalen Dialogfeldern auftreten können. Weitere Informationen finden Sie unter [erstellen und Verwalten von modalen Dialogfeldern](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Das Fenster, das in diesem XAML erstellt wird ergibt sich aus der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Basisklasse. Wenn Sie ein benutzerdefiniertes WPF-Dialogfeld zu Visual Studio hinzufügen, wird empfohlen, dass Sie Ihrem Dialogfeld ableiten, von dieser Klasse ein einheitliches Aussehen mit anderen Dialogfeldern in Visual Studio und zur Vermeidung von Problemen, die andernfalls mit modalen Dialogfeldern auftreten können. Weitere Informationen finden Sie unter [erstellen und Verwalten von modalen Dialogfeldern](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Wenn Sie ein Visual Basic-Projekt entwickeln, entfernen Sie die `ItemTemplateWizard` Namespace aus der `WizardWindow` Class-Name in der `x:Class` Attribut des der `Window` Element. Dieses Element befindet sich in der ersten XAML-Zeile. Wenn Sie fertig sind, sollte die erste Zeile den folgenden Code ähneln:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081137"
      Die benutzerdefinierte Aktion wird verpackt und bereitgestellt werden, auf die SharePoint-Website, die gemäß der **Website-URL** Eigenschaft des Projekts, und der Webbrowser öffnet die Standardseite der Website.
 
     > [!NOTE]
-    >  Wenn die **Skriptdebugging deaktiviert** wählen Sie im angezeigten Dialogfeld die **Ja** Schaltfläche.
+    > Wenn die **Skriptdebugging deaktiviert** wählen Sie im angezeigten Dialogfeld die **Ja** Schaltfläche.
 
 2. Wählen Sie im Bereich Listen der SharePoint-Website die **Aufgaben** Link.
 

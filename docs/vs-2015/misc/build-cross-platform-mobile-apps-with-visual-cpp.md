@@ -10,11 +10,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 860ca971d8c3e42ef6d690c7f55b3ce2716b1c4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946816"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Erstellen Sie plattformübergreifende mobile apps mit Visual C++
 Sie können mit Visual C++ für die plattformübergreifende Mobilgeräteentwicklung plattformübergreifenden Code für Android-, iOS- und Windows-Geräte schreiben. Dies ist eine optionale Funktion in Visual Studio 2015, die eine plattformübergreifende Entwicklung für iOS, Android und Windows mithilfe von Visual C++ ermöglicht.  

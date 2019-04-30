@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434080"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen erforder
  Anstatt Verpacken und veröffentlichen die Voraussetzungen, können Sie auch einen Downloadspeicherort für die Komponenten angeben. Z. B. statt, einschließlich Voraussetzungen, die mit jeder Anwendung, die Sie veröffentlichen, können einer zentralen Dateifreigabe oder die Webadresse an, die die Installationsprogramme für alle Ihre Komponenten enthält, bei der Installation werden die Komponenten heruntergeladen und aus diesem Speicherort installiert.  
   
 > [!IMPORTANT]
->  Sie sollten auf Ihrem Entwicklungscomputer erforderliche Installer-Pakete hinzufügen, vor dem Veröffentlichen Ihrer ersten [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+> Sie sollten auf Ihrem Entwicklungscomputer erforderliche Installer-Pakete hinzufügen, vor dem Veröffentlichen Ihrer ersten [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Erforderliche Komponenten werden verwaltet die **Voraussetzungen** klicken Sie im Dialogfeld aus zugegriffen werden kann die **veröffentlichen** im Bereich der **Projekt-Designer**.  
   
 > [!NOTE]
->  Zusätzlich zu den vordefinierten Liste der Voraussetzungen können Sie eigene Komponenten zur Liste hinzufügen. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
+> Zusätzlich zu den vordefinierten Liste der Voraussetzungen können Sie eigene Komponenten zur Liste hinzufügen. Weitere Informationen finden Sie unter [Bootstrapperpakete erstellen](../deployment/creating-bootstrapper-packages.md).  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Voraussetzungen für die Installation mit einer ClickOnce-Anwendung angeben  
   
@@ -68,7 +68,7 @@ Alle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendungen erforder
 6. Wählen Sie einen Speicherort aus der Dropdown-Liste, oder geben Sie eine URL, Dateipfad oder FTP-Speicherort, und klicken Sie dann auf **OK.**  
   
     > [!NOTE]
-    >  Sie müssen sicherstellen, Installationsprogramme für den angegebenen Komponenten am angegebenen Speicherort vorhanden.  
+    > Sie müssen sicherstellen, Installationsprogramme für den angegebenen Komponenten am angegebenen Speicherort vorhanden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   

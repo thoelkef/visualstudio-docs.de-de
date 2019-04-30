@@ -1,52 +1,54 @@
 ---
 title: 'Idiasymbol:: Get_code | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_code method
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 97494785db3a74f12316a7a26b114fb1f41bae08
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4616751a6d0e78a1d27afb1e3553109cd82d3ec7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402195"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
-Ruft ein Flag, das angibt, ob das Symbol auf eine Adresse verweist.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntax
-
-```C++
-HRESULT get_code ( 
-   BOOL* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parameter
- `pRetVal`
-
-[out] Gibt `TRUE` , wenn das Symbol auf eine Adresse verwiesen wird, andernfalls `FALSE`.
-
-## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.
-
+Ruft ein Flag, das angibt, ob das Symbol auf eine Adresse verweist.  
+  
+## <a name="syntax"></a>Syntax  
+  
+```cpp#  
+HRESULT get_code (   
+   BOOL* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parameter  
+ `pRetVal`  
+ [out] Gibt `TRUE` , wenn das Symbol auf eine Adresse verwiesen wird, andernfalls `FALSE`.  
+  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
+  
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.
-
-## <a name="requirements"></a>Anforderungen
-
-|Anforderung|Beschreibung|
-|-----------------|-----------------|
-|Header:|dia2.h|
-|Version:|DIA-SDK V7. 0|
-
-## <a name="see-also"></a>Siehe auch
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+  
+## <a name="requirements"></a>Anforderungen  
+  
+|Anforderung|Beschreibung|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
+|Version:|DIA-SDK V7. 0|  
+  
+## <a name="see-also"></a>Siehe auch  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

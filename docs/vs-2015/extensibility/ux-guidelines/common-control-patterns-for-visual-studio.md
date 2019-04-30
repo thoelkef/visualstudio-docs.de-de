@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430043"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040830"
  Einige Schaltflächen sollten immer ein Bild und nie enthalten Text zum Einsparen von Speicherplatz und Lokalisierung-Probleme zu vermeiden. Diese werden häufig in Feld dateiöffnungs- und andere sortierbaren Listen verwendet.
 
 > [!NOTE]
->  Benutzer müssen diese Schaltflächen (es gibt keine Zugriffsschlüssel) die Registerkarte, daher platzieren Sie sie in einer sinnvollen Reihenfolge. Ordnen Sie die Name-Eigenschaft der Schaltfläche, um die Aktion, die es dauert, sodass Bildschirmsprachausgaben richtig Schaltflächenaktion interpretiert.
+> Benutzer müssen diese Schaltflächen (es gibt keine Zugriffsschlüssel) die Registerkarte, daher platzieren Sie sie in einer sinnvollen Reihenfolge. Ordnen Sie die Name-Eigenschaft der Schaltfläche, um die Aktion, die es dauert, sodass Bildschirmsprachausgaben richtig Schaltflächenaktion interpretiert.
 
 |||
 |-|-|

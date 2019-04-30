@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429212"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Vorgehensweise: Anpassen einer SharePoint-Funktion
   Sie können erstellen und Anpassen von SharePoint-Funktionen mithilfe der Funktions-Designer in Visual Studio. Sie können z. B. Festlegen des Gültigkeitsbereichs der Funktion und weitere Funktionen als Abhängigkeiten hinzufügen. Standardmäßig wird die Funktions-Designer geöffnet, wenn Sie ein neues Feature in Projektmappen-Explorer oder im SharePoint-Paket-Explorer hinzufügen.
@@ -49,7 +49,7 @@ ms.locfileid: "60067260"
 2. Erweitern Sie Features FeatureName, FeatureName.feature erweitern und anschließend öffnen Sie dann die  *\<FeatureName >. Template.XML* Datei.
 
     > [!NOTE]
-    >  Wenn Sie die Funktion Vorlage XML-Manifestdatei öffnen, die Dateien werden automatisch überprüft, und die Warnungen, die in das Fenster "Fehlerliste" angezeigt werden, können ignoriert werden.
+    > Wenn Sie die Funktion Vorlage XML-Manifestdatei öffnen, die Dateien werden automatisch überprüft, und die Warnungen, die in das Fenster "Fehlerliste" angezeigt werden, können ignoriert werden.
 
 ## <a name="change-the-manifest-template"></a>Ändern Sie die Manifestvorlage
  Sie können den XML-Code für die Manifestdatei des Features, in der XML-Editor von Visual Studio oder im Bereich Manifestvorlage ändern. Alle Änderungen an den XML-Code wird in der Manifestdatei für gepackte zusammengeführt, für die Funktion. Beispielsweise empfiehlt es sich so ändern Sie die Manifestvorlage um eine Funktionseigenschaft anzupassen.
@@ -70,7 +70,7 @@ ms.locfileid: "60067260"
  Sie können der Funktions-Designer zu deaktivieren, und erstellen die *"Feature.xml"* Datei manuell. Zum ersten Mal ausführen dieser Prozedur werden die aktuellen Einstellungen in der Funktions-Designer in der Funktion Vorlage XML-Datei gespeichert. Anschließend können Sie ändern oder überschreiben Sie den XML-Code.
 
 > [!NOTE]
->  Wenn Sie hinzufügen oder Entfernen von SharePoint-Projektelemente in der XML-Datei während der Funktions-Designer deaktiviert ist, werden diese Projektelemente nicht gepackt.
+> Wenn Sie hinzufügen oder Entfernen von SharePoint-Projektelemente in der XML-Datei während der Funktions-Designer deaktiviert ist, werden diese Projektelemente nicht gepackt.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Paket-manifest-Datei zu überschreiben, durch Deaktivieren des Designers
 

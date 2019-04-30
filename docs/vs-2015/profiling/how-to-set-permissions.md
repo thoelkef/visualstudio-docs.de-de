@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440591"
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erfo
   Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wenn ein Administrator ihnen Zugriff auf die Softwaretreiber für die Profilerstellungsgstools erteilt. Die letzte Prozedur, „So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung“, beschreibt, wie Sie den Zugriff auf diesen Treiber gewähren.  
   
 > [!NOTE]
->  Sie benötigen Administratorberechtigungen, um die Schritte in diesen Prozeduren ausführen zu können.  
+> Sie benötigen Administratorberechtigungen, um die Schritte in diesen Prozeduren ausführen zu können.  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen  
   

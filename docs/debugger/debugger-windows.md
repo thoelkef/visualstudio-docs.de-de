@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852500"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Erfahren Sie mehr über Windows der Debugger in Visual Studio
 
@@ -30,13 +30,13 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Schnellüberwachung|UMSCHALT+F9|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|STRG+ALT+V, A|[Fenster „Auto“ und „Lokal“](../debugger/autos-and-locals-windows.md)|
 |Locals|STRG+ALT+V, L|[Fenster „Auto“ und „Lokal“](../debugger/autos-and-locals-windows.md)|
-|Aufruflisten|STRG+ALT+C|[Gewusst wie: Verwenden des Fensters „Aufrufliste“](../debugger/how-to-use-the-call-stack-window.md)|
+|Aufruflisten|STRG+ALT+C|[Vorgehensweise: Use the Call Stack Window (Vorgehensweise: Verwenden des Fensters Aufrufliste)](../debugger/how-to-use-the-call-stack-window.md)|
 |Direkt|STRG+ALT+I|[Direktfenster](../ide/reference/immediate-window.md)|
 |Parallele Stapel|STRG+UMSCHALT+D, S|[Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)|
 |Parallele Überwachung|STRG+UMSCHALT+D, (1, 2, 3, 4)|[Get started Debugging Multithreaded Applications (Erste Schritte zum Debuggen von Multithreadanwendungen)](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Threads|STRG+ALT+H|[Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md)|
-|Module|STRG+ALT+U|[Gewusst wie: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)|
-|GPU-Threads|-|[Gewusst wie: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Module|STRG+ALT+U|[Vorgehensweise: Verwenden des Modulfensters](../debugger/how-to-use-the-modules-window.md)|
+|GPU-Threads|-|[Vorgehensweise: Verwenden des Fensters „GPU-Threads“](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Aufgaben|STRG+UMSCHALT+D, K|[Verwenden des Fensters „Aufgaben“](../debugger/using-the-tasks-window.md)|
 |Python Debug Interactive|UMSCHALT+ALT+I|[Interaktive Python-REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript-Konsole|STRG+ALT+V, C|[Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
@@ -45,8 +45,8 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Echtzeit-Eigenschaften-Explorer|-|[Überprüfen von XAML-Eigenschaften beim Debuggen](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Prozesse|STRG+ALT+Z|[Debuggen von Threads und Prozessen](../debugger/debug-threads-and-processes.md)|
 |Arbeitsspeicher|STRG+ALT+M, (1, 2, 3, 4)|[Fenster "Arbeitsspeicher"](../debugger/memory-windows.md)|
-|Disassemblierung|STRG+ALT+D|[Gewusst wie: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)|
-|Register|STRG+ALT+G|[Gewusst wie: Verwenden des Fensters "Register"](../debugger/how-to-use-the-registers-window.md)|
+|Disassemblierung|STRG+ALT+D|[Vorgehensweise: Verwenden des Disassembierungsfensters](../debugger/how-to-use-the-disassembly-window.md)|
+|Register|STRG+ALT+G|[Vorgehensweise: Verwenden des Fensters „Register“](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Siehe auch
 

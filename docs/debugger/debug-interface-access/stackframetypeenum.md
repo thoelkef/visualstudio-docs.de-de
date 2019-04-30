@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854830"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Gibt den Stack-Frame-Typ.
@@ -48,7 +48,7 @@ enum StackFrameTypeEnum {
 
 `FrameTypeUnknown` Frame aus, der kein Debuginformationen vorhanden wären.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.
 
 ## <a name="requirements"></a>Anforderungen

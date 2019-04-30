@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417134"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Vorgehensweise: Öffnen von projektspezifischen Editoren
 Wenn eine Elementdatei, die von einem Projekt geöffnet wird systemintern auf den bestimmten Editor für das Projekt gebunden ist, muss das Projekt die Datei öffnen, mit einem projektspezifischen-Editor. Die Datei kann nicht auf den Mechanismus der IDE für das Auswählen eines Editors delegiert werden. Anstatt einen standard-Bitmap-Editor zu verwenden, können Sie z. B. diese projektspezifischer Editor-Option verwenden, an einem bestimmten Bitmap-Editor, der Informationen in der Datei, die dem Projekt eindeutig ist, erkennt.
@@ -29,7 +29,7 @@ Wenn eine Elementdatei, die von einem Projekt geöffnet wird systemintern auf de
 1. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> Methode (`RDT_EditLock`) zu bestimmen, ob die Datei (dokumentdatenobjekt) bereits geöffnet ist.
 
     > [!NOTE]
-    >  Weitere Informationen zu Dokumentdaten und dokumentenansichtsobjekten finden Sie unter [Dokumentieren von Daten und das Dokument anzeigen, in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Weitere Informationen zu Dokumentdaten und dokumentenansichtsobjekten finden Sie unter [Dokumentieren von Daten und das Dokument anzeigen, in benutzerdefinierten Editoren](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Wenn die Datei bereits geöffnet ist, diesem die Datei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> -Methode und geben einen Wert von IDO_ActivateIfOpen für den `grfIDO` Parameter.
 

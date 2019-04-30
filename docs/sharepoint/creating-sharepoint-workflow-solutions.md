@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443525"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Erstellen von SharePoint-Workflow-Projektmappen
 
@@ -57,7 +57,7 @@ Weitere Informationen zu SharePoint, finden Sie unter [Microsoft SharePoint-Prod
  Nachdem Sie den Workflow erstellt haben, können Sie seine Eigenschaften im Eigenschaftenfenster ändern. Obwohl die meisten Workfloweigenschaften direkt im Eigenschaftenfenster geändert werden können, einige erfordern Sie eine Schaltfläche klicken (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile-Designer Ellipse")), Ändern Sie deren Werte an. Diese Schaltfläche, Neustart der **SharePoint Customization Wizard**. Nach dem vornehmen der Eigenschaft-Wert ändert, wählen Sie die **Fertig stellen** Schaltfläche, um sie abzuschließen.
 
 > [!NOTE]
->  Die **Workflowtyp** -Eigenschaft ist schreibgeschützt und kann nicht geändert werden. Wenn Sie den Workflow ändern möchten, müssen Sie einen anderen Workflow erstellen.
+> Die **Workflowtyp** -Eigenschaft ist schreibgeschützt und kann nicht geändert werden. Wenn Sie den Workflow ändern möchten, müssen Sie einen anderen Workflow erstellen.
 
 ## <a name="design-a-sharepoint-workflow"></a>Entwerfen eines SharePoint-Workflows
  Nachdem Sie alle Schritte in den Geschäftsprozess definieren, verwenden Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Workflow-Designer zum Entwerfen des SharePoint-Workflows. Um den Designer zu öffnen, doppelklicken Sie auf Workflow1.cs klicken oder Workflow1.vb in **Projektmappen-Explorer**, oder öffnen Sie das Kontextmenü für eine dieser Dateien, und wählen Sie dann **öffnen**.

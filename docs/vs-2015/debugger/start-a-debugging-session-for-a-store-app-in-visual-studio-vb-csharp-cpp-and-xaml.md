@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440438"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Starten einer Debugsitzung für eine Store-App in Visual Studio (VB, C#, C++ und XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  In diesem Thema wird beschrieben, wie eine Debugsitzung für Store-Apps ausgeführt wird, die in XAML und Visual C++, Visual C# oder Visual Basic programmiert sind. Das Debuggen einer Anwendung umfasst sowohl das Konfigurieren der Debugsitzung als auch die Auswahl der Methode für den Anwendungsstart.
 
 > [!NOTE]
->  In JavaScript und HTML geschriebene apps finden Sie unter [Starten einer Debugsitzung (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> In JavaScript und HTML geschriebene apps finden Sie unter [Starten einer Debugsitzung (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> In diesem Thema
  [Die einfache Methode zum Starten des Debuggings](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     ![Select Remotedebuggerverbindung Dialogfeld](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  Durch das Dialogfeld **Remotedebuggerverbindung auswählen** werden Computer auf dem Subnetz des lokalen Netzwerks sowie solche Computer angezeigt, die direkt mit dem Visual Studio-Computer durch ein Ethernetkabel verbunden sind. Um einen anderen Computer anzugeben, geben Sie den Namen im Feld **Computername** ein.
+  > Durch das Dialogfeld **Remotedebuggerverbindung auswählen** werden Computer auf dem Subnetz des lokalen Netzwerks sowie solche Computer angezeigt, die direkt mit dem Visual Studio-Computer durch ein Ethernetkabel verbunden sind. Um einen anderen Computer anzugeben, geben Sie den Namen im Feld **Computername** ein.
 
   ![Gilt nur für Windows Phone](../debugger/media/phone-only-content.png "Phone_only_content")
 
@@ -210,7 +210,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Standardmäßig müssen Sie zum Auszuführen des Remotedebuggers Anmeldeinformationen angeben.
 
 > [!IMPORTANT]
->  Sie haben die Möglichkeit, den Remotedebugger im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus "Ohne Authentifizierung" nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
+> Sie haben die Möglichkeit, den Remotedebugger im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus "Ohne Authentifizierung" nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
 
  Um die Authentifizierungsanforderung zu entfernen, gehen Sie wie folgt vor:
 
@@ -250,7 +250,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Um festzulegen, dass die App im Debugmodus ausgeführt wird, gehen sie folgendermaßen vor:
 
 > [!NOTE]
->  Die App darf nicht ausgeführt werden, wenn Sie mit dieser Prozedur beginnen.
+> Die App darf nicht ausgeführt werden, wenn Sie mit dieser Prozedur beginnen.
 
 1. Wählen Sie im Menü **Debuggen** die Option **Debuggen Installed App Package**.
 

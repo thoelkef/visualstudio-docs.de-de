@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88a6266a3f5910def0bf5041a37f89c2b3d67416
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414463"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Installieren von Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
  Wenn Sie das VS SDK in Visual Studio-Installation aufnehmen möchten, müssen Sie eine benutzerdefinierte Installation.  
   
 > [!NOTE]
->  In der Installationsdatei, heißt das Visual Studio SDK **Visual Studio-Erweiterbarkeitstools**.  
+> In der Installationsdatei, heißt das Visual Studio SDK **Visual Studio-Erweiterbarkeitstools**.  
   
 1. Starten Sie die Visual Studio 2015-Installation. Sie können eine beliebige Edition von Visual Studio mit Ausnahme von Express installieren.  
   

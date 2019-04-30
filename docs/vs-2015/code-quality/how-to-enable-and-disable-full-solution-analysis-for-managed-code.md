@@ -11,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436839"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren Sie und deaktivieren Sie der vollständigen Projektmappenanalyse für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
->  Dieses Thema gilt nur für Visual Studio 2015 Update 3 RC und höher.  
+> Dieses Thema gilt nur für Visual Studio 2015 Update 3 RC und höher.  
   
  *Vollständige projektmappenanalyse* ist ein Visual Studio-Feature, können Sie auswählen, ob bei der Codeanalyse nur in open-Visual c# oder Visual Basic-Dateien in der Projektmappe oder in einer offenen und geschlossenen Visual c# oder Visual Basic-Dateien in der Projektmappe angezeigt.  
   

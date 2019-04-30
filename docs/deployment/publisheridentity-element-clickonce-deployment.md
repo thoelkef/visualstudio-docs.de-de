@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927538"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;PublisherIdentity&gt; -Element (ClickOnce-Bereitstellung)
 Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.
@@ -49,7 +49,7 @@ Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signi
 
 ## <a name="exceptions"></a>Ausnahmen
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 
 ## <a name="requirements"></a>Anforderungen
 

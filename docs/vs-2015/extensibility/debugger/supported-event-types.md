@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446440"
 ---
 # <a name="supported-event-types"></a>Unterstützte Ereignistypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Debuggen in Visual Studio unterstützt derzeit die folgenden Ereignistypen aus:
     Die Schnittstellen [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) und [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sind Beispiele für Beenden-Ereignisse.  
   
   > [!NOTE]
-  >  Asynchrones beenden-Ereignisse werden nicht unterstützt. Es ist ein Fehler, wenn eine asynchrone Stopping-Ereignis zu senden.  
+  > Asynchrones beenden-Ereignisse werden nicht unterstützt. Es ist ein Fehler, wenn eine asynchrone Stopping-Ereignis zu senden.  
   
 ## <a name="discussion"></a>Diskussion  
  Die tatsächliche Implementierung der Ereignisse hängt von den Entwurf Ihrer DE ab. Der Typ jedes Ereignisses gesendet haben, richtet sich nach der Attribute, die festgelegt werden, wenn Sie die DE entwerfen. Beispielsweise kann ein DE senden ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) als ein asynchrones Ereignis, während eine andere als eine Beenden-Ereignis senden kann.  
@@ -53,7 +53,7 @@ Debuggen in Visual Studio unterstützt derzeit die folgenden Ereignistypen aus:
  Die folgende Tabelle gibt an, welche Programm- und Thread-Parameter für die Ereignisse sowie die Ereignistypen erforderlich sind. Jedes Ereignis kann synchron sein. Kein Ereignis muss synchron sein.  
   
 > [!NOTE]
->  Die [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle ist für alle Ereignisse erforderlich.  
+> Die [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle ist für alle Ereignisse erforderlich.  
   
 |event|IDebugProgram2|IDebugThread2|Beenden von Ereignissen|  
 |-----------|--------------------|-------------------|---------------------|  

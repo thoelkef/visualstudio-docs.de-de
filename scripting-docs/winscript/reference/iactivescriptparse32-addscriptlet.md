@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954886"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 Das Skript wird ein Code-Scriptlet hinzugefügt. Diese Methode wird verwendet, in Umgebungen, in dem die persistente Status jenes Skripts ist eng mit dem Hostdokument verknüpft, und der Host ist verantwortlich für das Wiederherstellen von Skript, Umweg über ein `IPersist*` Schnittstelle. Die primäre Beispiele sind HTML-Skriptsprachen, mit denen Skriptlets eingebettet, die im HTML-Dokument an systeminterne Ereignisse angefügt werden können (z. B. ONCLICK="button1.text='Exit" ").  

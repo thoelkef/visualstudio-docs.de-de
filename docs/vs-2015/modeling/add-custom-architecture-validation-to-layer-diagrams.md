@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432406"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturüberprüfung zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
  Wenn der Benutzer den Befehl **Architektur überprüfen** für ein Ebenendiagramm auswählt, wird die Standardvalidierungsmethode aufgerufen, anschließend folgen alle installierten Validierungserweiterungen.  
   
 > [!NOTE]
->  Die Validierung in einem Ebenendiagramm ist nicht mit einer Validierung in UML-Diagrammen vergleichbar. In einem Ebenendiagramm dient sie hauptsächlich dazu, das Diagramm mit dem Programmcode in anderen Teilen der Projektmappe zu vergleichen.  
+> Die Validierung in einem Ebenendiagramm ist nicht mit einer Validierung in UML-Diagrammen vergleichbar. In einem Ebenendiagramm dient sie hauptsächlich dazu, das Diagramm mit dem Programmcode in anderen Teilen der Projektmappe zu vergleichen.  
   
  Sie können die Ebenenvalidierungserweiterung in eine Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können. Sie können entweder das Validierungssteuerelement allein in eine VSIX einfügen, oder Sie können es in der gleichen VSIX mit anderen Erweiterungen kombinieren. Schreiben Sie den Code für das Validierungssteuerelement in einem eigenen Visual Studio-Projekt und nicht im gleichen Projekt wie andere Erweiterungen.  
   
 > [!WARNING]
->  Nachdem Sie ein Überprüfungsprojekt erstellt haben, kopieren Sie den [Beispielcode](#example) am Ende dieses Themas und bearbeiten diesen dann Ihren Anforderungen entsprechend.  
+> Nachdem Sie ein Überprüfungsprojekt erstellt haben, kopieren Sie den [Beispielcode](#example) am Ende dieses Themas und bearbeiten diesen dann Ihren Anforderungen entsprechend.  
   
 ## <a name="requirements"></a>Anforderungen  
  Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     Mit dieser Vorlage wird ein Projekt mit einem kleinen Beispiel erstellt.  
   
    > [!WARNING]
-   >  Makethe Vorlage ordnungsgemäß funktioniert:  
+   > Makethe Vorlage ordnungsgemäß funktioniert:  
    > 
    > - Bearbeiten Sie Aufrufe zu `LogValidationError` , um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes`zu entfernen.  
    >   - Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im erwähnten [Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 4. Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
    > [!NOTE]
-   >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+   > Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
 5. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** -Datei im Ordner *bin\\*. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
@@ -115,7 +115,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 7. Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
     > [!NOTE]
-    >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+    > Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
 8. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei. (Datei-Explorer in Windows 8.)  
   
@@ -147,7 +147,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 - Wenn Sie einen Fehler entdecken, können Sie ihn mit `LogValidationError()`melden.  
   
   > [!WARNING]
-  >  Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.  
+  > Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.  
   
   Wenn der Benutzer den Menübefehl **Architektur überprüfen** aufruft, werden die Ebenen und ihre Artefakte vom Ebenenlaufzeitsystem analysiert, und es wird ein Diagramm erstellt. Das Diagramm besteht aus vier Teilen:  
   
@@ -162,7 +162,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture` -Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.  
   
 > [!NOTE]
->  Dies ist nicht mit dem Validierungsprozess gleichzusetzen, der auf UML-Diagramme angewendet wird und auch nicht mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.  
+> Dies ist nicht mit dem Validierungsprozess gleichzusetzen, der auf UML-Diagramme angewendet wird und auch nicht mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.  
   
  Validierungsmethoden sollten das zu überprüfende Ebenenmodell oder den Code nicht ändern.  
   

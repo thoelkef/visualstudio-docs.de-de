@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440944"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Verwalten von Modellen und Diagrammen unter Versionskontrolle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Besondere Sorgfalt ist erforderlich, wenn mehrere Benutzer am gleichen Modellierungsprojekt arbeiten. Erfahren Sie, wie Sie [Modelle in mittelgroßen oder großen Projekten organisieren](../modeling/structure-your-modeling-solution.md)können.  
+> Besondere Sorgfalt ist erforderlich, wenn mehrere Benutzer am gleichen Modellierungsprojekt arbeiten. Erfahren Sie, wie Sie [Modelle in mittelgroßen oder großen Projekten organisieren](../modeling/structure-your-modeling-solution.md)können.  
   
 ## <a name="ModelingProjects"></a> Dateien in einem Modellierungsprojekt  
  Mehrere Benutzer können gleichzeitig an einem Modellierungsprojekt arbeiten, solange sie an unterschiedlichen Dateien arbeiten.  
@@ -42,7 +42,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
     - **DiagramName.classdiagram.layout** – Wenn diese Datei gelöscht wird, werden die Formen weiterhin im Diagramm angezeigt, aber ihre Größen und Positionen gehen verloren. Jede Layoutdatei ist einer Diagrammdatei untergeordnet. Um diese anzuzeigen, klicken Sie im Projektmappen-Explorer neben der Diagrammdatei auf [+].  
   
 > [!NOTE]
->  Es ist wichtig, die Konsistenz zwischen den Dateien beizubehalten. Wenn Sie z. B. die Quellcodeverwaltung verwenden, um Änderungen in einer UML-Datei zurückzusetzen, sollten Sie die entsprechenden Änderungen in den *DIAGRAM- und LAYOUT-Dateien gleichzeitig zurücksetzen. Elemente im dargestellt ein. \*Diagrammdatei verloren, wenn sie nicht auch in einem UML-Datei dargestellt werden.  
+> Es ist wichtig, die Konsistenz zwischen den Dateien beizubehalten. Wenn Sie z. B. die Quellcodeverwaltung verwenden, um Änderungen in einer UML-Datei zurückzusetzen, sollten Sie die entsprechenden Änderungen in den *DIAGRAM- und LAYOUT-Dateien gleichzeitig zurücksetzen. Elemente im dargestellt ein. \*Diagrammdatei verloren, wenn sie nicht auch in einem UML-Datei dargestellt werden.  
   
 ## <a name="Shared"></a> Arbeiten an freigegebenen Modellierungsprojekten  
  So minimieren Sie Konflikte bei der gleichzeitigen Arbeit an verschiedenen Teilen eines Projekts:  
@@ -68,7 +68,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
 - Schließen Sie vor dem Ausführen eines **Get** -Vorgangs stets alle Diagramme.  
   
     > [!NOTE]
-    >  Wenn beim Ausführen eines **Get**-Vorgangs eine Datei geöffnet ist und der Vorgang zu lokalen Änderungen führt, werden Sie aufgefordert, die Datei neu zu laden. Klicken Sie in diesem Fall auf **Nein**, und laden Sie dann das vollständige Projekt neu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Modellierungsprojektknoten, klicken Sie auf **Projekt entladen**und dann auf **Projekt erneut laden**.  
+    > Wenn beim Ausführen eines **Get**-Vorgangs eine Datei geöffnet ist und der Vorgang zu lokalen Änderungen führt, werden Sie aufgefordert, die Datei neu zu laden. Klicken Sie in diesem Fall auf **Nein**, und laden Sie dann das vollständige Projekt neu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Modellierungsprojektknoten, klicken Sie auf **Projekt entladen**und dann auf **Projekt erneut laden**.  
   
 ### <a name="Exclusive"></a> Änderungen, die exklusiven Zugriff auf das Modell erfordern.  
  Bevor Sie die folgenden Arten von Änderungen vornehmen, müssen Sie sicherstellen, dass für das gesamte Projekt eine Auschecksperre gilt.  
@@ -94,7 +94,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
      Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Zielordner oder das Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie anschließend auf **Vorhandenes Element**. Wählen Sie im Dialogfeld die Diagrammdatei aus, und klicken Sie dann auf **Hinzufügen**. Die Layoutdatei wird automatisch hinzugefügt.  
   
     > [!NOTE]
-    >  Sie können die Datei nicht in ein anderes Projekt verschieben.  
+    > Sie können die Datei nicht in ein anderes Projekt verschieben.  
   
 ## <a name="Merging"></a> Zusammenführen von Änderungen in Modelldateien und Diagrammen  
  Nachdem mehrere Benutzer gleichzeitig an einem Modell gearbeitet haben, werden Sie von [!INCLUDE[esprscc](../includes/esprscc-md.md)] aufgefordert, die Änderungen in den Modelldateien zusammenzuführen. Durch das Arbeiten an separaten Projekten, wie in den vorherigen Abschnitten beschrieben, können die meisten Zusammenführungen vermieden werden. Normalerweise können die restlichen Konflikte auf sichere Weise automatisch zusammengeführt werden. Die folgenden Arten von Änderungen sollten keine Schwierigkeiten verursachen:  

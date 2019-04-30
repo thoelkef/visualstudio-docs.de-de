@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854765"
 ---
 # <a name="symbol-locations"></a>Symbolspeicherorte
 Die meisten Symbole haben einen definierten Speicherort in der Abbilddatei an. Ein Symbol für den Speicherort wird angegeben, mit einem Wert aus der [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) Enumeration. Das Symbol unterstützen möglicherweise weitere Eigenschaften abhängig von ihrem Speicherort.
@@ -27,7 +27,7 @@ Die meisten Symbole haben einen definierten Speicherort in der Abbilddatei an. E
 
 |Standorttyp|Zusätzliche Eigenschaften|
 |-------------------|---------------------------|
-|`LocIsNull`|Keine|
+|`LocIsNull`|none|
 |`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol:: Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (sofern es sich um eine relative virtuelle Adressen aktiviert sind)<br /><br /> [Idiasymbol:: Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (wenn die Abbildbasis zu ungleich NULL festgelegt wurde)|
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|

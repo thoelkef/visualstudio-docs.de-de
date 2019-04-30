@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433289"
 ---
 # <a name="customizing-deletion-behavior"></a>Anpassen des Löschverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Beim Löschen eines Elements werden normalerweise die verwandten Elemente ebenfa
  Über die Optionen in der DSL-Definitionsdatei können Sie nur wählen, ob die Löschung an einen unmittelbaren Nachbarn weitergegeben wird. Um ein komplexeres Schema für die Löschweitergabe zu implementieren, können Sie Programmcode schreiben.  
   
 > [!NOTE]
->  Um Ihrer DSL-Definition Programmcode hinzuzufügen, erstellen Sie eine separate Codedatei in die **Dsl** Projekt, und Schreiben partielle Definitionen, um die Klassen im Ordner generierter Code zu erweitern. Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Um Ihrer DSL-Definition Programmcode hinzuzufügen, erstellen Sie eine separate Codedatei in die **Dsl** Projekt, und Schreiben partielle Definitionen, um die Klassen im Ordner generierter Code zu erweitern. Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Definieren eines Löschabschlusses  
  Beim Löschvorgang wird anhand die Klasse _Ihrmodell_**DeleteClosure** , welche Elemente ausgehend von einer Anfangsauswahl gelöscht werden. `ShouldVisitRelationship()` und `ShouldVisitRolePlayer()` werden wiederholt aufgerufen, wobei das Diagramm der Beziehungen durchlaufen wird. Diese Methoden können Sie überschreiben. An "ShouldVisitRolePlayer" wird die Identität eines Links und des Elements in einer der Rollen des Links übergeben. Es sollte einen der folgenden Werte zurückgeben:  
@@ -213,7 +213,7 @@ partial class Artist
      Weitere Informationen finden Sie unter [Handler weitergegeben werden Änderungen außerhalb der Ereignismodell](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Nachdem ein Element gelöscht wurde, können Sie noch auf die Werte seiner Domäneneigenschaften zugreifen, aber nicht mehr durch Beziehungslinks navigieren. Legen Sie dagegen ein Deleted-Ereignis für eine Beziehung fest, können Sie auch auf die beiden Elemente zugreifen, die die Rollen der Beziehung innehatten. Wenn Sie daher auf die Löschung eines Modellelements antworten möchten, aber auf ein Element zugreifen möchten, mit dem es verknüpft war, legen Sie ein Delete-Ereignis für die Beziehung statt für die Domänenklasse des Modellelements fest.  
+    > Nachdem ein Element gelöscht wurde, können Sie noch auf die Werte seiner Domäneneigenschaften zugreifen, aber nicht mehr durch Beziehungslinks navigieren. Legen Sie dagegen ein Deleted-Ereignis für eine Beziehung fest, können Sie auch auf die beiden Elemente zugreifen, die die Rollen der Beziehung innehatten. Wenn Sie daher auf die Löschung eines Modellelements antworten möchten, aber auf ein Element zugreifen möchten, mit dem es verknüpft war, legen Sie ein Delete-Ereignis für die Beziehung statt für die Domänenklasse des Modellelements fest.  
   
 ### <a name="example-deletion-rules"></a>Beispiele für Löschregeln  
   

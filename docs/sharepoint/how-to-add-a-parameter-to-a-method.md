@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967233"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Vorgehensweise: Fügen Sie einen Parameter einer Methode
   Verwenden Sie einen Parameter aus, um Informationen an die Methode übergeben oder Informationen aus einer Methode zurückgegeben werden sollen. Alle Methoden müssen über mindestens einen Parameter haben. Weitere Informationen zum Entwerfen eines Parameters, den Typ der Methode zu unterstützen, die Sie erstellen möchten, finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).

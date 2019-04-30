@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007138"
 ---
 # <a name="invalid-character-javascript"></a>Ungültiges Zeichen (JavaScript)
 Sie erstellt einen Bezeichner mit ein (oder mehrere Zeichen) nicht erkannt als gültig ist, indem die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler. Gültige Zeichen verwenden Sie die folgenden Regeln:  

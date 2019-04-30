@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444349"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639920"
  Für die Lokalisierung einer Lösung werden die hartcodierten Zeichenfolgen aus dem Code entfernt und in Ressourcendateien zusammengefasst. Eine Ressourcendatei ist ein [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]--basierte Datei mit einer *resx* Erweiterung. Die Ressourcendatei enthält die übersetzten Versionen der in der Lösung verwendeten Zeichenfolgen. Weitere Informationen finden Sie unter [Ressourcen in Anwendungen](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  Fügen Sie Ressourcendateien von SharePoint-Lösungen ausschließlich Zeichenfolgenressourcen hinzu. Zwar ermöglicht der Ressourcen-Editor auch das Hinzufügen von Ressourcen, bei denen es sich nicht um Zeichenfolgen handelt, diese Ressourcen werden jedoch nicht für SharePoint bereitgestellt.
+> Fügen Sie Ressourcendateien von SharePoint-Lösungen ausschließlich Zeichenfolgenressourcen hinzu. Zwar ermöglicht der Ressourcen-Editor auch das Hinzufügen von Ressourcen, bei denen es sich nicht um Zeichenfolgen handelt, diese Ressourcen werden jedoch nicht für SharePoint bereitgestellt.
 
 ## <a name="resource-files"></a>Ressourcendateien
  Drei Arten von Ressourcendateien stehen zur Verfügung: Standarddateien, sprachunabhängige Dateien und sprachspezifische Dateien.
@@ -64,9 +64,9 @@ ms.locfileid: "56639920"
 $Resources:String ID
 ```
 
- Funktionsressourcen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] werden immer mit "Resources" benannt. Wenn Sie eine andere Sprache als die invariante Sprache auswählen, wird dem Ressourcendateinamen die Kultur [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] hinzugefügt. Z. B. Wenn Sie eine Ressourcendatei für Invariante Sprache (Standard)-Funktion hinzufügen, es heißt *"Resources.resx"*. Wenn Sie eine sprachspezifische Funktionsressource hinzufügen, durch Auswahl einer Kultur Japanisch (Japan), kann die Datei heißt *Resources.ja-JP.resx*. Der Name einer Funktionsressourcendatei wird automatisch zugewiesen und kann nicht geändert werden.
+ Funktionsressourcen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] werden immer mit „Resources“ benannt. Wenn Sie eine andere Sprache als die invariante Sprache auswählen, wird dem Ressourcendateinamen die Kultur [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] hinzugefügt. Z. B. Wenn Sie eine Ressourcendatei für Invariante Sprache (Standard)-Funktion hinzufügen, es heißt *"Resources.resx"*. Wenn Sie eine sprachspezifische Funktionsressource hinzufügen, durch Auswahl einer Kultur Japanisch (Japan), kann die Datei heißt *Resources.ja-JP.resx*. Der Name einer Funktionsressourcendatei wird automatisch zugewiesen und kann nicht geändert werden.
 
- Der Bereich von Funktionsressourcen ist für die Funktion lokal, der sie hinzugefügt werden. Um Ressourcen zu erstellen, die von jeder Funktions- oder Elementdatei-Datei in der Projektmappe verwendet werden kann, fügen einen **globale Ressourcendatei** Projektelement anstelle einer Funktionsressourcendatei Datei. Die **globale Ressourcendatei** Projektelement befindet sich in der **2010** Ordner unter **SharePoint** in die **neues Element hinzufügen** Dialogfeld. Das Bereitstellungsziel globaler Ressourcendateien ist der Ordner "\Resources" des SharePoint-Stammordners.
+ Der Bereich von Funktionsressourcen ist für die Funktion, der sie hinzugefügt werden, lokal. Um Ressourcen zu erstellen, die von jeder Funktions- oder Elementdatei-Datei in der Projektmappe verwendet werden kann, fügen einen **globale Ressourcendatei** Projektelement anstelle einer Funktionsressourcendatei Datei. Die **globale Ressourcendatei** Projektelement befindet sich in der **2010** Ordner unter **SharePoint** in die **neues Element hinzufügen** Dialogfeld. Das Bereitstellungsziel globaler Ressourcendateien ist der Ordner "\Resources" des SharePoint-Stammordners.
 
 ### <a name="localize-aspx-page-markup"></a>Lokalisieren von ASPX-Seitenmarkup
  Zum Lokalisieren von [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seiten Sie dem Projekt drei Ressourcendatei-Projektelemente hinzufügen: eins für Englisch, Deutsch und Japanisch. Wenn Sie nicht zum Lokalisieren von Code, neben dem Markup verfügen, können Sie stattdessen globale Ressourcendateien hinzufügen.
@@ -76,7 +76,7 @@ $Resources:String ID
  Legen Sie die **Bereitstellungstyp** Eigenschaft der einzelnen Ressourcendateien auf **AppGlobalResource**. Dadurch werden die Ressourcendateien im Ordner "App_GlobalResources" bereitgestellt und stehen somit allen ASPX-Seiten und -Steuerelementen in der Lösung zur Verfügung. Der Ordner "App_GlobalResources" befindet sich im C:\inetpub\wwwroot\wss\VirtualDirectories\\< Portnummer\>\App_GlobalResources.
 
 > [!NOTE]
->  Verschieben Sie bei Verwendung nicht globaler Ressourcendateien die nicht globalen Ressourcendateien in den Projektelementordner, um die Eigenschaft "Bereitstellungstyp" und andere SharePoint-spezifische Eigenschaften zu aktivieren.
+> Verschieben Sie bei Verwendung nicht globaler Ressourcendateien die nicht globalen Ressourcendateien in den Projektelementordner, um die Eigenschaft "Bereitstellungstyp" und andere SharePoint-spezifische Eigenschaften zu aktivieren.
 
  Ressourcendateien für ASPX-Markup können auch zum Lokalisieren von Code verwendet werden. Wenn Sie mithilfe der Ressourcen neben ASPX-Markup auch Code lokalisieren, belassen Sie die Einstellung der Eigenschaft "Buildvorgang" der einzelnen Dateien auf "Eingebettete Ressource", damit die Ressource in eine Satellitenassembly kompiliert wird. Wenn dagegen mit den Ressourcendateien ausschließlich Markup lokalisiert wird, können Sie optional die Einstellung für "Buildvorgang" zu "Inhalt" ändern, um zu verhindern, dass die Datei in die Hauptanwendungsassembly kompiliert wird.
 

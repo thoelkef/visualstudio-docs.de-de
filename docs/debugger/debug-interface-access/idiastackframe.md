@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838092"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Zeigt die Eigenschaften ein Stapelrahmen.
@@ -50,7 +50,7 @@ Im folgenden finden Methoden, die von dieser Schnittstelle unterstützt:
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Ruft ein Flag, das angibt, dass die Behandlung von Ausnahmen aktiviert ist.|
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Ruft den Frametyp ab.|
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Ein Stapelrahmen ist eine Abstraktion eines Funktionsaufrufs während seiner Ausführung.
 
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer

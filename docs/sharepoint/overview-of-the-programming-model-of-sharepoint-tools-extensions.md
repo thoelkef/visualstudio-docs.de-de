@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421290"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von SharePoint-tools extensions
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Funktionen in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie sie miteinander zu verwenden, um das Erweiterungen für die SharePoint-Tools erstellen.
@@ -50,7 +50,7 @@ ms.locfileid: "60038469"
 - *Visual Studio Automatisierungs- und integrationsobjektmodelle-Objektmodelle*. Verwenden Sie diesen Objektmodelle, um auf Visual Studio-Funktionen zuzugreifen, die nicht im Bereich des Objektmodells der SharePoint-Tools liegen.
 
     > [!NOTE]
-    >  Mit dem SharePoint-Projektdienst können Sie einige Objekte des SharePoint-Tools-Objektmodells in Automatisierungs- und Integratonsobjektmodelle von Visual Studio konvertieren und umgekehrt. Weitere Informationen finden Sie unter [Konvertieren zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > Mit dem SharePoint-Projektdienst können Sie einige Objekte des SharePoint-Tools-Objektmodells in Automatisierungs- und Integratonsobjektmodelle von Visual Studio konvertieren und umgekehrt. Weitere Informationen finden Sie unter [Konvertieren zwischen SharePoint-Projektsystemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 - *SharePoint Server und Client-Objektmodelle*. Mit diesen Objektmodellen können Sie eine SharePoint-Website ändern oder Daten aus einer SharePoint-Website im Kontext einer SharePoint-Tools-Erweiterung abrufen.
 

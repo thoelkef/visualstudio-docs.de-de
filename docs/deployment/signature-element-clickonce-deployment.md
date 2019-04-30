@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927488"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signatur&gt; -Element (ClickOnce-Bereitstellung)
 Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.
@@ -33,7 +33,7 @@ Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digita
 </Signature>
 ```
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
  Signieren ein Bereitstellungsmanifest mithilfe eines Signatur-Envelope ist optional, jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie die Empfehlung des World Wide Web Consortium "XML Signature Syntax and Processing" die am beschrieben [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).
 
  Wenn Sie das Manifest signieren möchten, müssen die Hashes für alle Dateien angegeben werden. Ein Manifest mit Dateien, die nicht hinzugefügt werden kann nicht signiert werden, da der Benutzer den Inhalt nicht gehashten Format vorliegen Dateien nicht überprüfen können.

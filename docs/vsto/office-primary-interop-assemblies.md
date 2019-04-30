@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447095"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
@@ -84,7 +84,7 @@ In den meisten Fällen sollten Sie Verweise auf die PIAs, die von Visual Studio 
 Wenn Sie die PIAs im globalen Assemblycache installiert und registriert haben, werden diese Versionen im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** angezeigt. Vermeiden Sie es, Verweise auf diese Versionen hinzuzufügen, da sonst bei ihrer Verwendung Entwicklungsprobleme auftreten können. Wenn verschiedene Versionen der PIAs im globalen Assemblycache registriert sind, bindet das Projekt automatisch an die Version der Assembly, die zuletzt registriert wurde - auch dann, wenn Sie im Dialogfeld **Verweis-Manager** auf der Registerkarte **COM** eine andere Version angeben.
 
 > [!NOTE]
->  Einige Assemblys werden einem Projekt automatisch hinzugefügt, wenn eine Assembly hinzugefügt wird, die auf sie verweist. Beispielsweise Verweise auf die *"Office.dll"* und *"Microsoft.Vbe.Interop.dll"* Assemblys werden automatisch hinzugefügt, wenn Sie einen Verweis auf die Word, Excel, Outlook, Microsoft Forms- oder Graph hinzufügen Assemblys.
+> Einige Assemblys werden einem Projekt automatisch hinzugefügt, wenn eine Assembly hinzugefügt wird, die auf sie verweist. Beispielsweise Verweise auf die *"Office.dll"* und *"Microsoft.Vbe.Interop.dll"* Assemblys werden automatisch hinzugefügt, wenn Sie einen Verweis auf die Word, Excel, Outlook, Microsoft Forms- oder Graph hinzufügen Assemblys.
 
 <a name="pialist"></a>
 

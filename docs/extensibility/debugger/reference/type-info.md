@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b6af233b630b001d0d9087a2e7792497c2531d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415799"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Diese Struktur gibt die verschiedenen Arten von Informationen zum Typ des Felds an.
@@ -70,7 +70,7 @@ public struct TYPE_INFO {
  Diese Struktur wird zum Übergeben der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) Methode, in denen es ausgefüllt wird. Wie der Inhalt der Struktur interpretiert werden basiert auf der `dwKind` Feld.
 
 > [!NOTE]
->  [C++ nur] Wenn `dwKind` gleich `TYPE_KIND_BUILT`, ist es erforderlich, um den zugrunde liegenden freizugeben [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt beim Zerstören der `TYPE_INFO` Struktur. Hierzu wird `typeInfo.type.typeBuilt.pUnderlyingField->Release()` aufgerufen.
+> [C++ nur] Wenn `dwKind` gleich `TYPE_KIND_BUILT`, ist es erforderlich, um den zugrunde liegenden freizugeben [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt beim Zerstören der `TYPE_INFO` Struktur. Hierzu wird `typeInfo.type.typeBuilt.pUnderlyingField->Release()` aufgerufen.
 
  [C# nur] Die folgende Tabelle zeigt die Interpretation der `unionmember` Element für jede Art von Typ. Im Beispiel wird gezeigt, wie dies für eine Art von Typ erfolgt.
 

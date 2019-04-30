@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434356"
 ---
 # <a name="define-packages-and-namespaces"></a>Definieren von Paketen und Namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
 2. Klicken Sie mit der rechten Maustaste auf ein Paket oder Modell, dem Sie ein neues Paket hinzufügen möchten.  
   
    > [!NOTE]
-   >  Sie können ein Paket in einem anderen Paket schachteln.  
+   > Sie können ein Paket in einem anderen Paket schachteln.  
   
 3. Zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **Paket**.  
   
@@ -95,7 +95,7 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
 - Ziehen Sie das Paket aus dem UML-Modell-Explorer in das Klassendiagramm.  
   
     > [!NOTE]
-    >  Hierdurch wird in diesem Diagramm eine Ansicht des Pakets erstellt. In der Ansicht werden nicht unbedingt alle im Paket enthaltenen Elemente angezeigt. Um sicherzustellen, dass der gesamte Inhalt eines Pakets angezeigt wird, zeigen Sie das Paket im UML-Modell-Explorer an.  
+    > Hierdurch wird in diesem Diagramm eine Ansicht des Pakets erstellt. In der Ansicht werden nicht unbedingt alle im Paket enthaltenen Elemente angezeigt. Um sicherzustellen, dass der gesamte Inhalt eines Pakets angezeigt wird, zeigen Sie das Paket im UML-Modell-Explorer an.  
   
 ## <a name="Elements"></a> Erstellen von Modellelementen in Paketen  
  Es gibt vier Verfahren, mit denen Sie Modellelemente in ein Paket einfügen können:  
@@ -123,7 +123,7 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
 4. Geben Sie einen Namen für das neue Element ein.  
   
     > [!NOTE]
-    >  Das neue Element wird in keinem Diagramm angezeigt. Um eine Ansicht des neuen Elements zu erstellen, können Sie es aus dem UML-Modell-Explorer in ein Diagramm ziehen. Das Diagramm muss von einem Diagrammtyp sein, in dem diese Art von Element angezeigt wird.  
+    > Das neue Element wird in keinem Diagramm angezeigt. Um eine Ansicht des neuen Elements zu erstellen, können Sie es aus dem UML-Modell-Explorer in ein Diagramm ziehen. Das Diagramm muss von einem Diagrammtyp sein, in dem diese Art von Element angezeigt wird.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>So erstellen Sie in einem UML-Klassendiagramm ein Element in einem Paket  
   
@@ -173,7 +173,7 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
      Der qualifizierte Name des Elements wird geändert, um den Namen des neuen Pakets anzugeben, das Besitzer des Modells ist.  
   
     > [!NOTE]
-    >  Wenn Sie ein Element aus einem Paket in einen leeren Teil des Diagramms ziehen, bleibt das gleiche Paket Besitzer des Elements. So können Sie ein Diagramm erstellen, in dem Elemente aus mehreren Paketen angezeigt werden, ohne die Pakete selbst anzeigen zu müssen.  
+    > Wenn Sie ein Element aus einem Paket in einen leeren Teil des Diagramms ziehen, bleibt das gleiche Paket Besitzer des Elements. So können Sie ein Diagramm erstellen, in dem Elemente aus mehreren Paketen angezeigt werden, ohne die Pakete selbst anzeigen zu müssen.  
   
 ## <a name="Pasting"></a> Einfügen von Elementen in einem Paket  
  Sie können ein Element in ein Paket einfügen. Wenn Sie eine Gruppe von zugehörigen Elementen in ein Paket einfügen, werden die Beziehungen zwischen ihnen ebenfalls eingefügt.  
@@ -185,7 +185,7 @@ In Visual Studio eine *Paket* ist ein Container für die Definitionen von UML-El
 2. Mit der rechten Maustaste in des Pakets, und klicken Sie dann auf **einfügen**.  
   
     > [!NOTE]
-    >  Das Paket kann in einem anderen Diagramm enthalten sein.  
+    > Das Paket kann in einem anderen Diagramm enthalten sein.  
   
 ## <a name="Import"></a> Importbeziehungen zwischen Paketen  
  Sie können eine importbeziehung zwischen Paketen mit definieren die **importieren** Tool.  

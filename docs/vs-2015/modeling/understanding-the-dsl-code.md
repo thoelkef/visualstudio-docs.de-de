@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426959"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
  Zum Erstellen der Projektmappe, die die Quelle für die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der **Komponentenmodelle** Projektmappe (Vorlage). Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.  
   
 > [!NOTE]
->  Die Komponente Diagramme DSL-Vorlage bezieht sich nicht auf den UML-Komponentendiagrammen, die Sie mit dem Menü "Architektur" in Visual Studio erstellen können. In der **neues Projekt** Dialogfeld erweitern Sie **andere projekttypen\erweiterungen** , und klicken Sie dann auf **domänenspezifischen Sprachdesigner**.  
+> Die Komponente Diagramme DSL-Vorlage bezieht sich nicht auf den UML-Komponentendiagrammen, die Sie mit dem Menü "Architektur" in Visual Studio erstellen können. In der **neues Projekt** Dialogfeld erweitern Sie **andere projekttypen\erweiterungen** , und klicken Sie dann auf **domänenspezifischen Sprachdesigner**.  
   
  Drücken Sie F5, und experimentieren Sie, wenn Sie mit dieser Projektmappenvorlage nicht vertraut sind. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.  
   
@@ -133,7 +133,7 @@ Eine DSL-Projektmappe (Domain-Specific Language, domänenspezifische Sprache) ge
   Die Klasse, die das Domänenmodell darstellt. Sie wird von <xref:Microsoft.VisualStudio.Modeling.DomainModel> abgeleitet.  
   
 > [!NOTE]
->  Sie ist nicht mit der Stammklasse des Modells identisch.  
+> Sie ist nicht mit der Stammklasse des Modells identisch.  
   
  Mit Kopier- und Löschabschlüssen wird definiert, welche anderen Elemente aufgenommen werden sollen, wenn ein Element kopiert oder gelöscht wird. Sie können dieses Verhalten steuern, durch Festlegen der **überträgt Kopie** und **löschen weitergeben** Eigenschaften der Rollen auf beiden Seiten jeder Beziehung. Wenn die Werte dynamisch ermittelt werden sollen, können Sie Code schreiben, um die Methoden der Abschlussklassen zu überschreiben. Weitere Informationen finden Sie unter [Vorgehensweise: Programmieren von Kopier- und Einfügeverhalten - umleiten](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Um diese Datei anzupassen, bearbeiten Sie die `.tt`-Datei.  
   
 > [!WARNING]
->  Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Klicken Sie im Projektmappen-Explorer die Datei auszuwählen, und stellen Sie sicher, dass die **Include in VSIX-Datei** Eigenschaft `True`.  
+> Wenn Sie die TT-Datei bearbeiten, damit sie Ressourcen wie Symbole oder Bilder enthält, stellen Sie sicher, dass die Ressourcen im VSIX-Build enthalten sind. Klicken Sie im Projektmappen-Explorer die Datei auszuwählen, und stellen Sie sicher, dass die **Include in VSIX-Datei** Eigenschaft `True`.  
   
  Mit dieser Datei wird gesteuert, wie die DSL in eine Visual Studio-Integrationserweiterung (VSIX) verpackt wird. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).  
   

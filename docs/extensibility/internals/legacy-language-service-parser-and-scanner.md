@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418373"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 Der Parser ist das Herzstück des Sprachdiensts. Die Managed Package Framework (MPF)-Language-Klassen erfordern einen Sprachenparser auf Informationen über den Code, der angezeigt wird. Ein Parser trennt den Text in lexikalischer Token, und klicken Sie dann identifiziert diese Token nach Typ und Funktion.
@@ -66,7 +66,7 @@ namespace MyNamespace
  Im Gegensatz zu einen Parser, der als Teil eines Compilers verwendet wird (wobei die Token in eine Form von ausführbarem Code konvertiert werden), kann ein sprachdienstparser für viele verschiedene Gründe und in vielen verschiedenen Kontexten aufgerufen werden. Wie Sie diesen Ansatz implementieren die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse bleibt Ihnen überlassen. Es ist wichtig zu bedenken, die die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode kann in einem Hintergrundthread aufgerufen werden.
 
 > [!CAUTION]
->  Die <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktur enthält einen Verweis auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt. Dies <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt kann nicht im Hintergrundthread verwendet werden. Viele der die MPF-Basisklassen können nicht in der Tat im Hintergrundthread verwendet werden. Dazu gehören die <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Klassen und einer beliebigen anderen Klasse, die direkt oder indirekt mit der Ansicht kommuniziert.
+> Die <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktur enthält einen Verweis auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt. Dies <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt kann nicht im Hintergrundthread verwendet werden. Viele der die MPF-Basisklassen können nicht in der Tat im Hintergrundthread verwendet werden. Dazu gehören die <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> Klassen und einer beliebigen anderen Klasse, die direkt oder indirekt mit der Ansicht kommuniziert.
 
  Dieser Parser analysiert in der Regel die gesamte Quelle der ersten Dateizeit Funktion aufgerufen wurde bzw. wenn die Analyse Wert der Grund <xref:Microsoft.VisualStudio.Package.ParseReason> erhält. Nachfolgende Aufrufe der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode einen kleinen Teil des analysierten Code behandeln und die Ergebnisse der vorherigen vollständigen Analysevorgang mit sehr viel schneller ausgeführt werden kann. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode kommuniziert die Ergebnisse des Analysevorgangs über die <xref:Microsoft.VisualStudio.Package.AuthoringSink> und <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekte. Die <xref:Microsoft.VisualStudio.Package.AuthoringSink> Objekt wird zum Sammeln von Informationen für einen bestimmten Grund analysieren, z. B. Informationen über die Spannen der übereinstimmenden geschweiften Klammern oder Signaturen, die Parameterlisten aufweisen. Die <xref:Microsoft.VisualStudio.Package.AuthoringScope> enthält Auflistungen von Deklarationen und die Methodensignaturen und auch Unterstützung für die erweiterte Gehe zu bearbeiten-Option (**Gehe zu Definition**, **Gehe zu Deklaration**, **finden Sie unter Verweisen auf**).
 

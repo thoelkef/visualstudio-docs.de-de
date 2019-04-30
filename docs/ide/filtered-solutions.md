@@ -1,6 +1,6 @@
 ---
 title: Laden einer Teilmenge von Projekten
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,14 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439847"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Gefilterte Projektmappen in Visual Studio
-
-**Neu in Visual Studio 2019**
 
 Große Entwicklungsteams arbeiten häufig mit einer einzigen großen Projektmappe, die viele Projekten enthält. Einzelne Entwickler arbeiten jedoch in der Regel mit einer kleinen Teilmenge dieser Projekte. Zur Leistungsverbesserung beim Öffnen großer Projektmappen wird in Visual Studio 2019 nun die *Projektmappenfilterung* eingeführt. Mit der Projektmappenfilterung können Sie eine Projektmappe öffnen, in der nur ausgewählte Projekte geladen sind. Durch das Laden einer Teilmenge von Projekten in einer Projektmappe wird die Zeit zum Laden und Erstellen einer Projektmappe sowie für den Testlauf einer Projektmappe verringert. Zudem wird eine zielgerichtetere Überprüfung ermöglicht.
 
@@ -33,7 +31,11 @@ Die folgenden Features sind verfügbar:
 
 ## <a name="open-a-filtered-solution"></a>Öffnen einer gefilterten Projektmappe
 
-Führen Sie die folgenden Schritte aus, wenn Sie eine Projektmappe öffnen möchten, in der nur einige der zugehörigen Projekte geladen sind:
+Sie können eine Projektmappe direkt im Dialogfeld **Projekt öffnen** oder über die [Befehlszeile](#command-line) öffnen, ohne ihre Projekte zu laden.
+
+### <a name="open-project-dialog"></a>Dialogfeld „Projekt öffnen“
+
+Um eine Projektmappe zu öffnen, ohne ihre Projekte zu laden, verwenden Sie das Dialogfeld **Projekt öffnen**:
 
 1. Wählen Sie auf der Menüleiste **Datei** > **Öffnen** > **Projekt/Projektmappe** aus.
 
@@ -51,15 +53,31 @@ Führen Sie die folgenden Schritte aus, wenn Sie eine Projektmappe öffnen möch
 
    Visual Studio merkt sich, welche Projekte Sie beim nächsten lokalen Öffnen der Projektmappe laden.
 
+### <a name="command-line"></a>Befehlszeile
+
+(Neu in Visual Studio 2019 Version 16.1.)
+
+Um eine Projektmappe über die Befehlszeile zu öffnen, ohne ihre Projekte zu laden, verwenden Sie die Befehlszeilenoption [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) wie im folgenden Beispiel:
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>Umschalten der Sichtbarkeit von nicht geladener Projekte
 
 Sie können im **Projektmappen-Explorer** mithilfe einer der folgenden Auswahlmöglichkeiten entweder alle Projekte in der Projektmappe oder nur die geladenen Projekte anzeigen:
 
 - Klicken Sie mit der rechten Maustaste auf Ihre Projektmappe, und wählen Sie **Show Unloaded Projects** (Nicht geladene Projekte einblenden) oder **Hide Unloaded Projects** (Nicht geladene Projekte ausblenden) aus.
 
-- Klicken Sie auf die Schaltfläche **Alle Dateien anzeigen**, um die Sichtbarkeit der nicht geladenen Projekte umzuschalten.
+- Wählen Sie den Projektmappenknoten aus, um die Schaltfläche **Alle Dateien anzeigen** zu aktivieren; klicken Sie auf die Schaltfläche, um die Sichtbarkeit ungeladener Projekte umzuschalten.
 
    ![Schaltfläche „Alle Dateien anzeigen“ im Projektmappen-Explorer von Visual Studio](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>Laden von Projektabhängigkeiten
+
+In einer Projektmappe, in die nur ausgewählte Projekte geladen werden, sind möglicherweise nicht alle Projektabhängigkeiten eines Projekts geladen. Stellen Sie mit der Menüoption **Projektabhängigkeiten laden**  sicher, dass alle Projekte, von denen ein Projekt abhängt, auch geladen werden. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf ein oder mehrere geladene Projekte, und wählen Sie **Projektabhängigkeiten laden**  aus.
+
+![Laden von Projektabhängigkeiten in Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>Projektmappen-Filterdateien
 

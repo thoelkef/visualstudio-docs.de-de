@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431179"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079479"
 Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) auf den Windows Forms-Designer, der eine besondere Überlegungen kommt ins Spiel: die Spaltennamen in den sind neu formatiert, in eine lesbarere Zeichenfolge, wenn zwei oder mehr Wörter sind miteinander verkettete gefunden Sie werden. Sie können anpassen, dass die Möglichkeit, die in der diese Bezeichnungen, durch Festlegen erstellt werden der **SmartCaptionExpression**, **SmartCaptionReplacement**, und **SmartCaptionSuffix** Werte im die **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data Designer** Registrierungsschlüssel.
 
 > [!NOTE]
->  Dieser Registrierungsschlüssel ist nicht vorhanden, bis Sie ihn erstellen.
+> Dieser Registrierungsschlüssel ist nicht vorhanden, bis Sie ihn erstellen.
 
  Smart-captioning wird gesteuert, mit dem regulären Ausdruck eingegeben haben, in den Wert des der **SmartCaptionExpression** Wert. Hinzufügen der **Datendesigner** Registrierungsschlüssel überschreibt die standardmäßige regulären Ausdruck, der Beschriftungstitel gesteuert. Weitere Informationen zu regulären Ausdrücken finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -54,9 +54,9 @@ Beim Ziehen von Elementen aus der [Fensters "Datenquellen"](http://msdn.microsof
 |**SmartCaptionSuffix**|:|Stellt ein Zeichen, die an die zurückgegebene Zeichenfolge angefügt. Wenn die Beschriftung wird z. B. `Company Name`, erleichtert das Suffix `Company Name:`|
 
 > [!CAUTION]
->  Sie sollten sehr vorsichtig, wenn alles in den Registrierungs-Editor ausführen können. Sichern Sie die Registrierung vor der Bearbeitung. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können zu schwerwiegende Problemen führen, die Neuinstallation des Betriebssystems erforderlich machen können. Microsoft garantiert nicht, dass Probleme, die Sie auslösen, indem Sie eine nicht ordnungsgemäße Verwendung des Registrierungs-Editors behoben werden können. Verwenden Sie den Registrierungs-Editor auf eigene Gefahr.
+> Sie sollten sehr vorsichtig, wenn alles in den Registrierungs-Editor ausführen können. Sichern Sie die Registrierung vor der Bearbeitung. Wenn Sie den Registrierungs-Editor nicht ordnungsgemäß verwenden, können zu schwerwiegende Problemen führen, die Neuinstallation des Betriebssystems erforderlich machen können. Microsoft garantiert nicht, dass Probleme, die Sie auslösen, indem Sie eine nicht ordnungsgemäße Verwendung des Registrierungs-Editors behoben werden können. Verwenden Sie den Registrierungs-Editor auf eigene Gefahr.
 >
->  Im folgenden Knowledge Base-Artikel enthält Anweisungen zum Sichern, bearbeiten und Wiederherstellen der Registrierung: [Beschreibung der Microsoft Windows-Registrierung](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; En-us; 256986)
+> Im folgenden Knowledge Base-Artikel enthält Anweisungen zum Sichern, bearbeiten und Wiederherstellen der Registrierung: [Beschreibung der Microsoft Windows-Registrierung](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; En-us; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>So ändern Sie das intelligente Untertitel Verhalten des Fensters Datenquellen
 

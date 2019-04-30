@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421046"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys
   Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die primären Interopassemblys (PIAs) von Microsoft Office hinzu, die zum Erstellen des Projekts erforderlich sind. Verweise auf andere PIAs müssen in den folgenden Szenarien hinzugefügt werden:
@@ -45,7 +45,7 @@ ms.locfileid: "60079631"
      Wenn das Projekt als Zielversion der [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher, die **Embed Interop Types** für den Assemblyverweis-Eigenschaftensatz auf **"true"** standardmäßig. Mit dieser Einstellung erfordert die Lösung keine PIA auf Endbenutzercomputern. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
-    >  In Office-Projekten mithilfe von Verweisen auf Office-PIAs immer Hinzufügen der **.NET** Registerkarte die **Verweis hinzufügen** Dialogfeld anstelle der **COM** Registerkarte. Weitere Informationen finden Sie unter [primären Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md).
+    > In Office-Projekten mithilfe von Verweisen auf Office-PIAs immer Hinzufügen der **.NET** Registerkarte die **Verweis hinzufügen** Dialogfeld anstelle der **COM** Registerkarte. Weitere Informationen finden Sie unter [primären Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md).
 
 4. Klicken Sie auf **OK**.
 

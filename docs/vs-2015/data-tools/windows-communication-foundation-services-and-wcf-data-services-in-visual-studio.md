@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443875"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
     ```
 
     > [!NOTE]
-    >  Ersetzen Sie dies *ServiceReference* mit dem Namespace für den Dienstverweis und *Service1Client* mit dem Namen des Diensts.
+    > Ersetzen Sie dies *ServiceReference* mit dem Namespace für den Dienstverweis und *Service1Client* mit dem Namen des Diensts.
 
 3. Mit den Überladungen des Konstruktors wird eine IntelliSense-Liste angezeigt. Wählen Sie die `endpointConfigurationName As String` überladen.
 
 4. Geben Sie nach der Überladung `=` *ConfigurationName*, wobei *ConfigurationName* ist der Name des Endpunkts, den Sie verwenden möchten.
 
     > [!NOTE]
-    >  Wenn Sie die Namen der verfügbaren Endpunkte nicht kennen, finden Sie sie in der Datei "App.config".
+    > Wenn Sie die Namen der verfügbaren Endpunkte nicht kennen, finden Sie sie in der Datei "App.config".
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Um die verfügbaren Endpunkte für einen WCF-Dienst gefunden werden.
 
@@ -164,7 +164,7 @@ Visual Studio enthält Tools für die Arbeit mit Windows Communication Foundatio
  In der Standardeinstellung ein Dienstverweises zu einem Projekt hinzugefügt wird ist er dafür konfiguriert, synchron Aufrufen von Methoden. Sie können das Verhalten zum Aufrufen von Methoden asynchron durch das Ändern einer Einstellung im Ändern der **Dienstverweis konfigurieren** Dialogfeld.
 
 > [!NOTE]
->  Diese Option wird auf einer pro-Dienst-Basis festgelegt. Wenn eine Methode für einen Dienst asynchron aufgerufen wird, müssen alle Methoden asynchron aufgerufen werden.
+> Diese Option wird auf einer pro-Dienst-Basis festgelegt. Wenn eine Methode für einen Dienst asynchron aufgerufen wird, müssen alle Methoden asynchron aufgerufen werden.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

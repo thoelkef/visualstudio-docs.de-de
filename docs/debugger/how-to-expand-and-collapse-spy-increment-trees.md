@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388374"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Vorgehensweise: Auf- und Zuklappen von Spy++-Strukturen
 Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die über zwei Methoden: durch Klicken auf die Symbole in das Fenster oder mithilfe der **Struktur** Menü. Die + und - Symbole in der Struktur zu reagieren, wie in der Visualisierung C++ Fenster "Projekt".
@@ -30,7 +30,7 @@ Sie erweitern und reduzieren Sie die Windows-Prozesse und Threads Ansichten, die
 |**Zuklappen**|Vollständig reduziert das aktuell ausgewählte Element.|
 
 > [!TIP]
->  Wenn Sie einen Prozess erweitern, sehen Sie alle Threads, die Besitzer des Prozesses ist. Wenn Sie einen Thread erweitern, sehen Sie eine Liste aller Fenster, die er besitzt.
+> Wenn Sie einen Prozess erweitern, sehen Sie alle Threads, die Besitzer des Prozesses ist. Wenn Sie einen Thread erweitern, sehen Sie eine Liste aller Fenster, die er besitzt.
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>So erweitern oder Reduzieren von Spy++-Strukturen
 

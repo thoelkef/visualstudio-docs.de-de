@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430116"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die
  Erstellen Sie aufgrund des Leistungsoverheads Textmarkierungen zugeordnet wird nicht viele Marker für Ihre Textpuffer. Marker wird aktualisiert, wenn ein Benutzer den Inhalt des Puffers bearbeitet.  
   
 > [!NOTE]
->  Benutzer können die Farbe des einen sichtbaren Markertyp, aber nicht die Form und Stil ändern. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Benutzer können die Farbe des einen sichtbaren Markertyp, aber nicht die Form und Stil ändern. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Vorgehensweise: Standard-Text-Marker hinzufügen](../extensibility/how-to-add-standard-text-markers.md)|Beschreibt das Hinzufügen von bereitgestellten Typ des Markers eine standard-Text der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf eine Textansicht-Kern-Editor.|  
-|[Vorgehensweise: Implementieren von Fehlermarker](../extensibility/how-to-implement-error-markers.md)|Beschreibt, wie Sie eine Instanz der Implementierung der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Marker, der verwendet wird, um Fehler anzugeben, mit einer roten Wellenlinie unterstrichen.|  
-|[Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen](../extensibility/how-to-create-custom-text-markers.md)|Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen.|  
+|[Vorgehensweise: Hinzufügen von Standardtextmarkierungen](../extensibility/how-to-add-standard-text-markers.md)|Beschreibt das Hinzufügen von bereitgestellten Typ des Markers eine standard-Text der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf eine Textansicht-Kern-Editor.|  
+|[Vorgehensweise: Implementieren von Fehlermarkierungen](../extensibility/how-to-implement-error-markers.md)|Beschreibt, wie Sie eine Instanz der Implementierung der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Marker, der verwendet wird, um Fehler anzugeben, mit einer roten Wellenlinie unterstrichen.|  
+|[Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md)|Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen.|  
 |[Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)|Erläutert das Hinzufügen von Textmarkierungen.|  
 |[Im Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die Funktionen von der Kern-Editor, und enthält ausführliche Informationen zum Anpassen der Kern-Editor.|  
 |[Editor-Funktionen](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor.|  

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438422"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Vorgehensweise: Erstellen eines Standard-Phong-Shaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
    In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Teekannenmodells gezeigt, auf dem der Shader angewandt wurde.  
   
 > [!NOTE]
->  Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders sowie ein metallfarbenes Finish durch die Verwendung der Parameter **MaterialSpecular** und **MaterialSpecularPower** angegeben, um den Effekt des Shaders in dieser Abbildung besser zu veranschaulichen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shader verwenden“ unter [Shader-Designer](../designers/shader-designer.md).  
+> Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders sowie ein metallfarbenes Finish durch die Verwendung der Parameter **MaterialSpecular** und **MaterialSpecularPower** angegeben, um den Effekt des Shaders in dieser Abbildung besser zu veranschaulichen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shader verwenden“ unter [Shader-Designer](../designers/shader-designer.md).  
   
  ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
  In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben, auf ein 3D-Modell angewandt wurde. Die Eigenschaft **MaterialSpecular** ist auf (1,00, 0,50, 0,20, 0,00) festgelegt und seine Eigenschaft **MaterialSpecularPower** auf 16.  
   
 > [!NOTE]
->  Die Eigenschaft **MaterialSpecular** bestimmt das erkennbare Finish des Oberflächenmaterials. Eine hochglänzende Oberfläche wie Glas oder Kunststoff besitzt tendenziell eine helle weiß glänzende Farbe. Eine Oberfläche aus Metall hat tendenziell eine glänzende Farbe ähnlich ihrer diffusen Farbe. Eine Oberfläche mit Satin-Finish hat tendenziell eine dunkelgrau glänzende Farbe.  
+> Die Eigenschaft **MaterialSpecular** bestimmt das erkennbare Finish des Oberflächenmaterials. Eine hochglänzende Oberfläche wie Glas oder Kunststoff besitzt tendenziell eine helle weiß glänzende Farbe. Eine Oberfläche aus Metall hat tendenziell eine glänzende Farbe ähnlich ihrer diffusen Farbe. Eine Oberfläche mit Satin-Finish hat tendenziell eine dunkelgrau glänzende Farbe.  
 >   
->  Die Eigenschaft **MaterialSpecularPower** bestimmt, wie intensiv die Glanzlichter sind. Hohe Glanzkräfte simulieren stumpfere, lokalisiertere Glanzlichter. Sehr niedrige Glanzkräfte simulieren intensive, auffällige Glanzlichter, die die Farbe der ganzen Oberfläche übersättigen und verbergen können.  
+> Die Eigenschaft **MaterialSpecularPower** bestimmt, wie intensiv die Glanzlichter sind. Hohe Glanzkräfte simulieren stumpfere, lokalisiertere Glanzlichter. Sehr niedrige Glanzkräfte simulieren intensive, auffällige Glanzlichter, die die Farbe der ganzen Oberfläche übersättigen und verbergen können.  
   
  ![Phong-Beleuchtung in einem Modell](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

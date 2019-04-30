@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432637"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
  ![Profilerstellungs-Sitzungsseite](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  Sie können die Leistungssitzung auch mit angehaltener Profilerstellung starten und die Profilaustellung zu einem späteren Zeitpunkt in der Programmausführung fortsetzen. Wählen Sie zum Starten der Leistungssitzung bei angehaltener Profilerstellung im Menü **Debuggen** den Befehl **Leistungsanalyse mit angehaltener Profilerstellung starten** aus.  
+> Sie können die Leistungssitzung auch mit angehaltener Profilerstellung starten und die Profilaustellung zu einem späteren Zeitpunkt in der Programmausführung fortsetzen. Wählen Sie zum Starten der Leistungssitzung bei angehaltener Profilerstellung im Menü **Debuggen** den Befehl **Leistungsanalyse mit angehaltener Profilerstellung starten** aus.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>So können Sie die Profilerstellung anhalten, fortsetzen oder beenden  
   

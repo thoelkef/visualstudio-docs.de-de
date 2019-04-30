@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435184"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
  Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange). Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange). Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>So signieren Sie Anwendungs- und Bereitstellungsmanifeste mit einem Zertifikat  
   
@@ -48,7 +48,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
      Das Dialogfeld **Zertifikat auswählen** wird mit dem Inhalt des Windows-Zertifikatspeichers angezeigt.  
   
     > [!TIP]
-    >  Wenn Sie auf **Klicken Sie hier, um Zertifikateigenschaften anzuzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** angezeigt. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Zertifikate** klicken, um weitere Hilfeinformationen anzuzeigen.  
+    > Wenn Sie auf **Klicken Sie hier, um Zertifikateigenschaften anzuzeigen** klicken, wird das Dialogfeld **Zertifikatdetails** angezeigt. Dieses Dialogfeld enthält ausführliche Informationen zu dem Zertifikat sowie zusätzliche Optionen. Sie können auf **Zertifikate** klicken, um weitere Hilfeinformationen anzuzeigen.  
   
 3. Wählen Sie das Zertifikat aus, mit dem Sie die Manifeste signieren möchten.  
   
@@ -65,7 +65,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 3. Suchen Sie im Dialogfeld **Datei auswählen** den Speicherort der zu verwendenden Schlüsseldatei (PFX-Datei), und klicken Sie dann auf **Öffnen**.  
   
     > [!NOTE]
-    >  Diese Option kann nur bei Dateien mit der Erweiterung .pfx verwendet werden. Speichern Sie Schlüsseldateien oder Zertifikate in einem anderen Format im Windows-Zertifikatspeicher, und wählen Sie das Zertifikat aus, das im vorhergehenden Verfahren beschrieben wurde. Zu den Funktionen des ausgewählten Zertifikats sollten auch Codesignaturen gehören.  
+    > Diese Option kann nur bei Dateien mit der Erweiterung .pfx verwendet werden. Speichern Sie Schlüsseldateien oder Zertifikate in einem anderen Format im Windows-Zertifikatspeicher, und wählen Sie das Zertifikat aus, das im vorhergehenden Verfahren beschrieben wurde. Zu den Funktionen des ausgewählten Zertifikats sollten auch Codesignaturen gehören.  
   
      Das Dialogfeld **Kennwort zum Öffnen der Datei eingeben** wird angezeigt. (Wenn die PFX-Datei bereits im Windows-Zertifikatspeicher gespeichert oder nicht kennwortgeschützt ist, werden Sie zur Eingabe eines Kennworts aufgefordert.)  
   
@@ -83,7 +83,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
  Das Signieren der ClickOnce-Manifeste ist für EXE-basierte Anwendungen optional. In den folgenden Anleitungen wird dargestellt, wie unsignierte ClickOnce-Manifeste generiert werden.  
   
 > [!IMPORTANT]
->  Unsignierte Manifeste können die Entwicklung und das Testen der Anwendung vereinfachen. Unsignierte Manifeste führen in einer Produktionsumgebung jedoch zu beträchtlichen Sicherheitsrisiken. Ziehen Sie die Verwendung unsignierter Manifeste nur in Betracht, wenn die ClickOnce-Anwendung auf Computern in einem Intranet ausgeführt wird, das vollständig vom Internet oder anderen Quellen bösartigen Codes abgeschirmt ist.  
+> Unsignierte Manifeste können die Entwicklung und das Testen der Anwendung vereinfachen. Unsignierte Manifeste führen in einer Produktionsumgebung jedoch zu beträchtlichen Sicherheitsrisiken. Ziehen Sie die Verwendung unsignierter Manifeste nur in Betracht, wenn die ClickOnce-Anwendung auf Computern in einem Intranet ausgeführt wird, das vollständig vom Internet oder anderen Quellen bösartigen Codes abgeschirmt ist.  
   
  Standardmäßig werden durch ClickOnce automatisch signierte Manifeste generiert, sofern nicht mindestens eine Datei ausdrücklich aus dem generierten Hash ausgeschlossen wird. Wenn alle Dateien im Hash eingeschlossen sind, werden beim Veröffentlichen der Anwendung somit signierte Manifeste erstellt. Dies gilt auch, wenn das Kontrollkästchen **ClickOnce-Manifeste signieren** deaktiviert ist.  
   
@@ -104,7 +104,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 2. Öffnen Sie das Dialogfeld **Anwendungsdateien**, und legen Sie **Hash** für die Dateien auf **Ausschließen** fest, die Sie aus dem generierten Hash ausschließen möchten.  
   
     > [!NOTE]
-    >  Durch Ausschließen einer Datei aus dem Hash wird ClickOnce so konfiguriert, dass das automatische Signieren von Manifesten deaktiviert wird. Daher muss nicht zuerst mit signierten Manifesten veröffentlicht werden, wie es im vorhergehenden Verfahren der Fall war.  
+    > Durch Ausschließen einer Datei aus dem Hash wird ClickOnce so konfiguriert, dass das automatische Signieren von Manifesten deaktiviert wird. Daher muss nicht zuerst mit signierten Manifesten veröffentlicht werden, wie es im vorhergehenden Verfahren der Fall war.  
   
 3. Veröffentlichen Sie die Anwendung.  
   

@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443931"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Ein VSIX-Paket ist eine VSIX-Datei, die eine oder mehrere Visual Studio-Erweiter
  VSIX-Paketformat folgt den Open Packaging Conventions (OPC) Standard. Das Paket enthält die Binärdateien und die unterstützenden Dateien, sowie eine [Content_Types] .xml-Datei und ein VSIX-Manifestdatei. Ein VSIX-Paket kann die Ausgabe von mehreren Projekten oder sogar mehrere Pakete, die ihre eigenen Manifeste umfassen, enthalten.  
   
 > [!NOTE]
->  Die Namen der Dateien in VSIX-Pakete enthalten, darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Die Namen der Dateien in VSIX-Pakete enthalten, darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Das VSIX-Manifest  
  Das VSIX-Manifest enthält Informationen über die zu installierende Erweiterung und folgt dem VSX-Schema. Weitere Informationen finden Sie unter [Referenz zum VSIX-Erweiterungsschema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Eine Beispiel-VSIX-Manifests finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815049"
 ---
 # <a name="work-with-visio-documents"></a>Arbeiten mit Visio-Dokumenten
   Die Themen in diesem Abschnitt bieten schrittweise Anleitungen und Codebeispiele, für die Verwendung des Microsoft Office Visio-Objektmodells zum Arbeiten mit Dokumenten in Office-Projekten.

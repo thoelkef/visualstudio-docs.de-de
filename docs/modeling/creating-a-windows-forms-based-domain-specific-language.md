@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438181"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
 Sie können Windows Forms verwenden, um den Status eines Modells mit einer domänenspezifischen Sprache (DSL), anstatt von einem DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch die Bindung von einem Windows Form an einer DSL, die mit dem Visual Studio-Visualisierungs und Modellierungs-SDK.
@@ -80,7 +80,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
      Geben Sie ihm weitere Domäne-Eigenschaften, die mit der Bezeichnung `Size` des Typs **Int32**, und `IsOrganic` des Typs **booleschen**.
 
     > [!NOTE]
-    >  Wenn Sie die Stammklasse für die Domäne zu löschen, und klicken Sie dann eine neue Stamm erstellen, müssen Sie die Editor-Stammklasse Eigenschaft zurückgesetzt. In **DSL-Explorer**Option **Editor**. Legen Sie dann im Fenster Eigenschaften **Stammklasse** zu `Farm`.
+    > Wenn Sie die Stammklasse für die Domäne zu löschen, und klicken Sie dann eine neue Stamm erstellen, müssen Sie die Editor-Stammklasse Eigenschaft zurückgesetzt. In **DSL-Explorer**Option **Editor**. Legen Sie dann im Fenster Eigenschaften **Stammklasse** zu `Farm`.
 
 4. Verwenden der **benannte Domänenklasse** Tool, um die folgenden Domänenklassen zu erstellen:
 
@@ -105,7 +105,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 10. Erstellen der **Dsl** Projekt.
 
     > [!NOTE]
-    >  In dieser Phase werden die anderen Projekte nicht fehlerfrei erstellt. Allerdings möchten wir die Dsl-Projekt erstellen, damit die Assembly für die Datenquellen-Assistenten verfügbar ist.
+    > In dieser Phase werden die anderen Projekte nicht fehlerfrei erstellt. Allerdings möchten wir die Dsl-Projekt erstellen, damit die Assembly für die Datenquellen-Assistenten verfügbar ist.
 
 ## <a name="updating-the-ui-project"></a>Aktualisieren das UI-Projekt
  Jetzt können Sie ein neues Benutzersteuerelement erstellen, das die Informationen angezeigt werden, die in das DSL-Modell gespeichert ist. Die einfachste Möglichkeit, die das Benutzersteuerelement mit dem Modell hergestellt wird, über datenbindungen. Die Adaptertyp mit dem Namen für die Datenbindung **ModelingBindingSource** wurde speziell für die Verbindung nicht VMSDK-Schnittstellen mit DSLs.
@@ -149,7 +149,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
 6. Verwenden der Toolbox, erstellen Sie zwei Instanzen von **DataGridView**, und nennen Sie diese `AnimalGridView` und `FieldGridView`.
 
    > [!NOTE]
-   >  Ein alternativer Schritt werden die Tiere und Felder Elemente aus dem Fenster Datenquellen auf das Steuerelement ziehen. Dadurch wird automatisch erstellt, Datenraster und Bindungen zwischen der Rasteransicht und der Datenquelle. Allerdings funktioniert diese Bindung nicht für DSLs ordnungsgemäß. Aus diesem Grund ist es besser, erstellen Sie das Datenraster und Bindungen manuell.
+   > Ein alternativer Schritt werden die Tiere und Felder Elemente aus dem Fenster Datenquellen auf das Steuerelement ziehen. Dadurch wird automatisch erstellt, Datenraster und Bindungen zwischen der Rasteransicht und der Datenquelle. Allerdings funktioniert diese Bindung nicht für DSLs ordnungsgemäß. Aus diesem Grund ist es besser, erstellen Sie das Datenraster und Bindungen manuell.
 
 7. Wenn keine die Toolbox enthält die **ModelingBindingSource** tool, fügen Sie es hinzu. Im Kontextmenü von der **Daten** Registerkarte **Elemente auswählen**. In der **Toolboxelemente** wählen Sie im Dialogfeld **ModelingBindingSource** aus der **Registerkarte ".NET Framework"**.
 
@@ -221,7 +221,7 @@ Sie können Windows Forms verwenden, um den Status eines Modells mit einer domä
      `Goat1` wird in der **Tiere** anzeigen.
 
     > [!WARNING]
-    >  Müssen Sie das Kontextmenü verwenden, auf die **Farm** Knoten nicht die **Tiere** Knoten.
+    > Müssen Sie das Kontextmenü verwenden, auf die **Farm** Knoten nicht die **Tiere** Knoten.
 
 4. Wählen Sie die **Farm** Stammknoten und Anzeigen seiner Eigenschaften.
 

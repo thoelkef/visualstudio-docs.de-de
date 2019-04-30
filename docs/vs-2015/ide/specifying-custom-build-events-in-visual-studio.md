@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441959"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Angeben von benutzerdefinierten Build-Ereignissen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
      Beispiel: `for %I in (*.txt *.doc *.html) do copy %I c:\`*meinverzeichnis*`\`
 
     > [!NOTE]
-    >  `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
+    > `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
 ## <a name="see-also"></a>Siehe auch
  [Kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md) [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)

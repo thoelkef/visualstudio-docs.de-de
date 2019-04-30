@@ -11,18 +11,18 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f74dcee5e72221271e2756af37d3d9284841db5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430219"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementieren von Typschnellansichten und benutzerdefinierten Viewern
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Typschnellansichten und benutzerdefinierten Viewer können den Benutzer Daten eines bestimmten Typs in einer Weise anzeigen, die aussagekräftiger sind als ein Speicherabbild der einfachen hexadezimale Zahlen ist. Eine ausdrucksauswertung (EE) kann benutzerdefinierten Viewer bestimmte Typen von Daten oder Variablen zuordnen. Diese benutzerdefinierte Viewer werden durch die EE implementiert. Die EE kann auch externen Typ-Schnellansichten unterstützen, die von einem anderen Drittanbieter oder sogar der Endbenutzer stammen können.  
   

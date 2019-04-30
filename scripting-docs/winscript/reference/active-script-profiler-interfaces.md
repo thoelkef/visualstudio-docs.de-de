@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422233"
 ---
 # <a name="active-script-profiler-interfaces"></a>Active Script Profiler-Schnittstelle
 Active Script-Profilerschnittstellen geben Ihnen die Möglichkeit, Profilerstellungsereignisse von der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Engine zu empfangen.  
@@ -47,9 +47,9 @@ Active Script-Profilerschnittstellen geben Ihnen die Möglichkeit, Profilerstell
 - [Konstanten, Enumerationen und Strukturen für den Active Script-Profiler](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Die Active Script-Profilerschnittstellen waren erstmalig in Internet Explorer 8 enthalten. Die Schnittstellen `IActiveScriptProfilerControl2` und `IActiveScriptProfilerCallback2` waren erstmalig in Internet Explorer 9 enthalten. Die [IActiveScriptProfilerControl3 Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [IActiveScriptProfilerCallback3 Schnittstelle](../../winscript/reference/iactivescriptprofilercallback3-interface.md), und [IActiveScriptProfilerHeapEnum Schnittstelle](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) Schnittstellen mit Internet Explorer 10 zuerst veröffentlicht. Die [IActiveScriptProfilerControl5 Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) erschien mit Internet Explorer 11.  
+> Die Active Script-Profilerschnittstellen waren erstmalig in Internet Explorer 8 enthalten. Die Schnittstellen `IActiveScriptProfilerControl2` und `IActiveScriptProfilerCallback2` waren erstmalig in Internet Explorer 9 enthalten. Die [IActiveScriptProfilerControl3 Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [IActiveScriptProfilerCallback3 Schnittstelle](../../winscript/reference/iactivescriptprofilercallback3-interface.md), und [IActiveScriptProfilerHeapEnum Schnittstelle](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) Schnittstellen mit Internet Explorer 10 zuerst veröffentlicht. Die [IActiveScriptProfilerControl5 Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) erschien mit Internet Explorer 11.  
 >   
->  In Internet Explorer 8 und in Internet Explorer 9 verwendet nur die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Programmiersprache diese Schnittstellen, um Skriptprofilerstellung zu unterstützen.  
+> In Internet Explorer 8 und in Internet Explorer 9 verwendet nur die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]-Programmiersprache diese Schnittstellen, um Skriptprofilerstellung zu unterstützen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Windows Script-Schnittstellenreferenz](../../winscript/reference/windows-script-interfaces-reference.md)

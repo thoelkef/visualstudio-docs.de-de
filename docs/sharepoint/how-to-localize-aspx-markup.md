@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443107"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Vorgehensweise: Lokalisieren von ASPX-markup
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (ASPX) verwenden Sie in der Regel hartcodierte Zeichenfolgenwerte. Um diese Zeichenfolgen zu lokalisieren, ersetzen Sie sie mit Ausdrücken, die lokalisierte Ressourcen zu verweisen.
@@ -36,7 +36,7 @@ ms.locfileid: "60057567"
     2. Hinzufügen einer Ressourcendatei in **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für eine SharePoint-Projektelement, und wählen Sie dann **hinzufügen** > **neues Element**. Entweder unter der **Visual Basic** oder **Visual C#-** Knoten, wählen Sie die **Ressourcendatei** Vorlage.
 
     > [!NOTE]
-    >  Achten Sie darauf, dass die Dateien zu einem SharePoint-Projektelement, aktivieren Sie die Eigenschaft "Bereitstellungstyp" hinzufügen. Diese Eigenschaft ist später in dieser Prozedur erforderlich. Wenn Ihre Lösung keine SharePoint-Projektelements, können Sie ein leeres SharePoint-Projekt hinzufügen und entfernen Sie den Standardwert *"Elements.xml"* Datei.
+    > Achten Sie darauf, dass die Dateien zu einem SharePoint-Projektelement, aktivieren Sie die Eigenschaft "Bereitstellungstyp" hinzufügen. Diese Eigenschaft ist später in dieser Prozedur erforderlich. Wenn Ihre Lösung keine SharePoint-Projektelements, können Sie ein leeres SharePoint-Projekt hinzufügen und entfernen Sie den Standardwert *"Elements.xml"* Datei.
 
 2. Benennen Sie die Ressourcendatei der Standardsprache der mit einem *resx* Erweiterung, z. B. MyAppResources.resx. Verwenden Sie für jede lokalisierte Ressourcendatei den gleichen Basisnamen, aber fügen Sie die Kultur [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Z. B. Namen, eine für Deutsch lokalisierte Ressource *MyAppResources.de-DE.resx*.
 

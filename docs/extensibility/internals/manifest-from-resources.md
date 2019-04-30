@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859943"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
 Das Manifest aus Ressourcen Tool ist eine Konsolenanwendung, die akzeptiert eine Liste von Bildressourcen (PNG oder XAML-Dateien) und generiert eine .imagemanifest-Datei, die diese Images mit dem Visual Studio-Image-Dienst verwendet werden kann. Darüber hinaus kann dieses Tool verwendet werden, eine vorhandene .imagemanifest Bilder hinzugefügt. Dieses Tool eignet sich für das Hinzufügen von hohen dpi- und Design-Unterstützung für Bilder für Visual Studio-Erweiterung. Die generierte .imagemanifest-Datei sollte in enthalten und als Teil der Visual Studio-Erweiterung (VSIX) bereitgestellt werden.

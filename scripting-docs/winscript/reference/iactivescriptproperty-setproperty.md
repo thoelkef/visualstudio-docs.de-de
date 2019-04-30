@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385948"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Legt die Eigenschaft, die durch den Parameter angegeben wird.  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Auswählen der Satz von Sprachfeatures, wenn unterstützt werden müssen die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine wird initialisiert, rufen `SetProperty` und übergeben Sie einen Wert, der an den Language Features für SCRIPTPROP_INVOKEVERSIONING aktiviert werden soll. Wenn diese Eigenschaft auf 1 (SCRIPTLANGUAGEVERSION_5_7) festgelegt ist, die verfügbaren Funktionen sind identisch mit denen, die in Version 5.7 von angezeigt wurden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine. Wenn es auf 2 (SCRIPTLANGUAGEVERSION_5_8) festgelegt ist, sind die verfügbaren Funktionen, die in Version 5.7 neben neuen Features angezeigt, die Version 5.8 hinzugefügt wurden. Standardmäßig ist diese Eigenschaft auf 0 (SCRIPTLANGUAGEVERSION_DEFAULT), festgelegt; entspricht den Funktionsumfang, der in Version 5.7, angezeigt, wenn der Host ein Standardverhalten für verschiedene unterstützt. Z. B. Internet Explorer 8 "OPTS" in der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Sprachfunktionen, die von der Version 5.8 unterstützt werden [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine wird standardmäßig bei der Standard-Dokumentmodus für Internet Explorer 8 "Internet Explorer 8-Standards"-Modus ist. Umschalten zwischen der Dokumentmodus für Internet Explorer 8, Internet Explorer 7-Standards oder Quirks-Modus setzt die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine, unterstützen nur den Funktionsumfang, die vorhanden waren, in der Version 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING sollte festgelegt werden, nur, wenn die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine initialisiert wird.  
+> SCRIPTPROP_INVOKEVERSIONING sollte festgelegt werden, nur, wenn die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skript-Engine initialisiert wird.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Skript-Engine, mit der Division ganzer Zahlen zu erzwingen und zum Zulassen der Compare-Funktion überladen.  

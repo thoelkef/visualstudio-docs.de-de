@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411032"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Exemplarische Vorgehensweise: Erstellen Sie einen Kern-Editor und registrieren einen Dateityp-Editor-
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage zu erstellen, die beginnt die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Kern-Editor eine Datei mit den *.myext* Dateinamenerweiterung geladen wird.
@@ -325,7 +325,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine VSPackage
 3. Öffnen der **VSPackage.resx** Datei, fügen Sie eine neue Zeichenfolge hinzu, legen Sie den Namen **101**, und legen Sie den Wert `IDS_EDITORNAME`. Dieser Schritt umfasst das Paket mit einer Ressourcen-ID auf die Zeichenfolge, die Sie erstellt haben.
 
    > [!NOTE]
-   >  Wenn die **VSPackage.resx** -Datei enthält eine andere Zeichenfolge, die `name` -Attributsatz auf **101**, einen anderen eindeutigen, numerischen Wert ersetzen, hier und in die folgenden Schritte aus.
+   > Wenn die **VSPackage.resx** -Datei enthält eine andere Zeichenfolge, die `name` -Attributsatz auf **101**, einen anderen eindeutigen, numerischen Wert ersetzen, hier und in die folgenden Schritte aus.
 
 4. In **Projektmappen-Explorer**öffnen die **MyPackagePackage.cs** Datei.
 

@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420936"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Verbesserung der Leistung eines VSTO-add-Ins
   Sie können die Benutzererfahrung verbessern, indem Sie VSTO-Add-Ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente schnell geöffnet und andere Aufgaben rasch ausgeführt werden können. Wenn das VSTO-Add-In für Outlook bestimmt ist, können Sie das Risiko senken, dass das VSTO-Add-In aufgrund schwacher Leistung deaktiviert wird. Sie können die Leistung des VSTO-Add-Ins mithilfe der folgenden Strategien steigern:
@@ -93,7 +93,7 @@ ms.locfileid: "60071820"
 - Überprüfen der digitalen Signaturen der Bereitstellungsmanifeste.
 
   > [!NOTE]
-  >  Dieser Ansatz ist nicht erforderlich, wenn Sie an einem sicheren Speicherort auf den Computern der Benutzer das VSTO-Add-in bereitstellen.
+  > Dieser Ansatz ist nicht erforderlich, wenn Sie an einem sicheren Speicherort auf den Computern der Benutzer das VSTO-Add-in bereitstellen.
 
   Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe mit Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071820"
  Erwägen Sie, zeitintensive Aufgaben (z. B. Aufgaben mit langer Ausführungsdauer, Datenbankverbindungen oder andere Arten von Netzwerkaufrufen) in einem separaten Thread auszuführen. Weitere Informationen finden Sie unter [Threading-Unterstützung in Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Der gesamte Code, der das Office-Objektmodell aufruft, muss im Hauptthread ausgeführt werden.
+> Der gesamte Code, der das Office-Objektmodell aufruft, muss im Hauptthread ausgeführt werden.
 
 ## <a name="see-also"></a>Siehe auch
 

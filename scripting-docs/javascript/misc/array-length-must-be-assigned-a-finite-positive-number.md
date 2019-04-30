@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 39f2720efbcd8defffb9d0c77047a50e57939e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818046"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Der Arraylänge muss eine endliche positive Ganzzahl zugewiesen sein.
 Beim Festlegen der **Länge** -Eigenschaft eines vorhandenen **Array** Objekt angegebene Arraylänge, die keine positive Zahl oder 0 (null). Dieser Fehler tritt auf, wenn Sie einen Wert zuweisen der **Länge** Eigenschaft eine `Array` -Objekt, das negativ ist oder keine Zahl (`NaN`). Beachten Sie, dass [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatisch Bruchzahlen in ganze Zahlen konvertiert.  

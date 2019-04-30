@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827244"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Speichern von Daten in Erweiterungen des SharePoint-Projektsystem
   Wenn Sie SharePoint-Projektsystem erweitern, können Sie Zeichenfolgedaten speichern, die erhalten bleibt, nachdem ein SharePoint-Projekt geschlossen wird. Die Daten sind in der Regel mit einem bestimmten Projekt-Element oder das Projekt selbst zugeordnet.

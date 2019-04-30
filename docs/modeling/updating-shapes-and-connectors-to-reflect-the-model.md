@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b4c0c88e9e096836e32ce427ff78cc94f5d1f72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906988"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Connectors zur Darstellung des Modells
 

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433118"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definieren eines Linkhandlers für Arbeitselemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  Führen Sie den Linkhandler zu Testzwecken im Debugmodus aus.  
   
 > [!WARNING]
->  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
+> Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
   
 #### <a name="to-test-the-link-handler"></a>So testen Sie den Linkhandler  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Damit dieses Beispiel funktioniert, müssen Sie einen Projektverweis auf `System.Drawing.dll` hinzufügen und den `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`-Namespace importieren. Diese Hinzufügungen sind für andere Implementierungen von `OnWorkItemLinked` jedoch nicht erforderlich.  
+> Damit dieses Beispiel funktioniert, müssen Sie einen Projektverweis auf `System.Drawing.dll` hinzufügen und den `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`-Namespace importieren. Diese Hinzufügungen sind für andere Implementierungen von `OnWorkItemLinked` jedoch nicht erforderlich.  
   
 ### <a name="listening-for-link-removal"></a>Lauschen auf Linkentfernung  
  `OnWorkItemRemoved` wird einmal unmittelbar vor dem Entfernen des Arbeitsaufgabenlinks aufgerufen. Wenn ein Modellelement gelöscht wird, werden alle Links entfernt.  

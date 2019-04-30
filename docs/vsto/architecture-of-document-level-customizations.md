@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440375"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektur von Anpassungen auf Dokumentebene
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] enthält Projekte für das Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. In diesem Thema werden die folgenden Aspekte von Anpassungen auf Dokumentebene beschrieben:
@@ -49,7 +49,7 @@ ms.locfileid: "60051999"
  Wenn ein Benutzer mehrere Anpassungen auf Dokumentebene gleichzeitig öffnet, wird jede Assembly in eine andere Anwendungsdomäne geladen. So kann eine Projektmappe, die sich falsch verhält, nicht bewirken, dass andere Projektmappen fehlschlagen. Anpassungen auf Dokumentebene sind für einzelne Dokumente in einer einzelnen Anwendungsdomäne konzipiert. Sie sind nicht für die Kommunikation zwischen verschiedenen Dokumenten konzipiert. Weitere Informationen zu Anwendungsdomänen finden Sie unter [Anwendungsdomänen](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Anpassungen auf Dokumentebene, die mit den Office-Entwicklertools in Visual Studio erstellt werden, sollen nur dann verwendet werden, wenn die Microsoft Office-Hostanwendung von einem Endbenutzer gestartet wird. Wird die Anwendung programmgesteuert gestartet, beispielsweise durch Automatisierung, verhält sich die Anpassung unter Umständen nicht so, wie erwartet.
+> Anpassungen auf Dokumentebene, die mit den Office-Entwicklertools in Visual Studio erstellt werden, sollen nur dann verwendet werden, wenn die Microsoft Office-Hostanwendung von einem Endbenutzer gestartet wird. Wird die Anwendung programmgesteuert gestartet, beispielsweise durch Automatisierung, verhält sich die Anpassung unter Umständen nicht so, wie erwartet.
 
 ### <a name="design-time-and-run-time-experiences"></a>Entwurfs- und Laufzeit-Umgebungen
  Um die Architektur von Anpassungen auf Dokumentebene zu verstehen, ist es hilfreich, wenn Sie die Möglichkeiten beim Entwerfen und beim Ausführen einer Lösung kennen.
@@ -118,7 +118,7 @@ ms.locfileid: "60051999"
  ![Architektur von 2007 Office-Anpassung](../vsto/media/office07-custom.png "2007 Office-anpassungsarchitektur")
 
 > [!NOTE]
->  In Office-Projektmappen, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielen, rufen Projektmappen das Objektmodell der Hostanwendung mithilfe von in die Projektmappenassembly eingebetteten Typinformationen der primären Interop-Assembly auf, statt die PIA direkt aufzurufen. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
+> In Office-Projektmappen, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielen, rufen Projektmappen das Objektmodell der Hostanwendung mithilfe von in die Projektmappenassembly eingebetteten Typinformationen der primären Interop-Assembly auf, statt die PIA direkt aufzurufen. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Prozess des Ladens
  Die folgenden Schritte werden ausgeführt, wenn ein Benutzer ein Dokument öffnet, das Teil einer Microsoft Office-Projektmappe ist:

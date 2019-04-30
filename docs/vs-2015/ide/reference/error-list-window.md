@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437231"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 HINWEIS]
->  In der Fehlerliste werden Informationen zu einer bestimmten Fehlermeldung angezeigt. Sie können die Fehlernummer oder den Fehlerzeichenfolgentext im Ausgabefenster kopieren. Drücken Sie zum Anzeigen des Ausgabefensters STRG+ALT+O. Siehe [Ausgabefenster](../../ide/reference/output-window.md).  
+> In der Fehlerliste werden Informationen zu einer bestimmten Fehlermeldung angezeigt. Sie können die Fehlernummer oder den Fehlerzeichenfolgentext im Ausgabefenster kopieren. Drücken Sie zum Anzeigen des Ausgabefensters STRG+ALT+O. Siehe [Ausgabefenster](../../ide/reference/output-window.md).  
   
  Sie können Apps mithilfe des Fensters **Fehlerliste** schneller entwickeln. Sie können z. B. folgende Aufgaben ausführen:  
   
@@ -50,7 +50,7 @@ HINWEIS]
   Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Um erneut nach einer zusätzlichen Spalte zu sortieren, halten Sie die UMSCHALTTASTE gedrückt, und klicken Sie auf eine andere Spaltenüberschrift. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Um die Reihenfolge zu ändern, in der Spalten angezeigt werden, ziehen Sie eine beliebige Spaltenüberschrift nach links oder rechts.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Klicken Sie zum Ändern der Einstellungen auf **Extras / Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den hier beschriebenen. Klicken Sie zum Ändern der Einstellungen auf **Extras / Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Fehlerlistenfilter  
  Es gibt zwei Filtertypen in beiden Dropdownfeldern, einen auf der rechten Seite der Symbolleiste und einen auf der linken Seite der Symbolleiste. Die Dropdownliste auf der linken Seite der Symbolleiste gibt den zu verwendenden Satz von Codedateien an (**Gesamte Projektmappe**, **Geöffnete Dokumente**, **Aktuelles Projekt**, **Aktuelles Dokument**).  
@@ -62,7 +62,7 @@ HINWEIS]
 2. **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.  
   
    > [!NOTE]
-   >  Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.  
+   > Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.  
   
 3. **Aktuelles Dokument**: Zeigt Fehler, Warnungen und Meldungen für das aktuell ausgewählte Dokument im **Editor** oder **Projektmappen-Explorer** an.  
   

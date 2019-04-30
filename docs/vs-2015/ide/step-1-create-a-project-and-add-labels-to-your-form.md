@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441986"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071875"
 Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projekt und fügen einem Formular Bezeichnungen, eine Schaltfläche und weitere Steuerelemente hinzu. Außerdem legen Sie Eigenschaften für jedes Steuerelement fest, das Sie hinzufügen. Das Projekt enthält das Formular, die Steuerelemente und (später im Lernprogramm) den Code. Das Quiz wird mit der Schaltfläche gestartet, die Bezeichnungen stellen die Quizaufgaben dar und die anderen Steuerelemente zeigen die Quizantworten und die Zeit an, die bis zum Abschluss des Quiz verbleibt.  
   
 > [!NOTE]
->  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen ein Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen ein Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>So erstellen Sie ein Projekt und legen Eigenschaften für ein Formular fest  
   
@@ -145,7 +145,7 @@ Erste Zeile des Mathequiz
 9. Führen Sie für die vierte Zeile folgende Schritte aus: Nennen Sie die erste Bezeichnung **dividedLeftLabel**, ändern Sie die **Text**-Eigenschaft der zweiten Eigenschaft in **÷** (Divisionszeichen), nennen Sie die dritte Bezeichnung **dividedRightLabel**, und nennen Sie das NumericUpDown-Steuerelement **Quotient**.  
   
     > [!NOTE]
-    >  Sie können das Multiplikationszeichen × und das Divisionszeichen ÷ aus diesem Lernprogramm kopieren und in das Formular einfügen.  
+    > Sie können das Multiplikationszeichen × und das Divisionszeichen ÷ aus diesem Lernprogramm kopieren und in das Formular einfügen.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>So fügen Sie einen Startknopf hinzu und legen die Aktivierreihenfolge fest  
   
@@ -162,7 +162,7 @@ Erste Zeile des Mathequiz
 6. Legen Sie den Wert der **TabIndex**-Eigenschaft für das **startButton**-Steuerelement auf **1** fest.  
   
     > [!NOTE]
-    >  Mit der Eigenschaft **TabIndex** wird die Reihenfolge der Steuerelemente festgelegt, die aktiviert werden, wenn der Quizteilnehmer die TAB-TASTE auswählt. Um zu sehen, wie dies funktioniert, öffnen Sie ein beliebiges Dialogfeld (wählen Sie z. B. in der Menüleiste **Datei**, **Öffnen** aus), und drücken Sie dann mehrmals die TAB-TASTE. Beobachten Sie, wie der Cursor jedes Mal, wenn Sie die TAB-TASTE auswählen, von Steuerelement zu Steuerelement springt. Ein Programmierer hat diese Reihenfolge beim Erstellen des Formulars festgelegt.  
+    > Mit der Eigenschaft **TabIndex** wird die Reihenfolge der Steuerelemente festgelegt, die aktiviert werden, wenn der Quizteilnehmer die TAB-TASTE auswählt. Um zu sehen, wie dies funktioniert, öffnen Sie ein beliebiges Dialogfeld (wählen Sie z. B. in der Menüleiste **Datei**, **Öffnen** aus), und drücken Sie dann mehrmals die TAB-TASTE. Beobachten Sie, wie der Cursor jedes Mal, wenn Sie die TAB-TASTE auswählen, von Steuerelement zu Steuerelement springt. Ein Programmierer hat diese Reihenfolge beim Erstellen des Formulars festgelegt.  
   
 7. Legen Sie den Wert der Eigenschaft **TabIndex** für das NumericUpDown-Steuerelement „Summe“ auf **2**, für das Differenzsteuerelement auf **3**, für das Produktsteuerelement auf **4** und für das Quotientsteuerelement auf **5** fest.  
   

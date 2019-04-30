@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 601f20c530ec5e275139d1e70d3df58fa88cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425829"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 Ermöglicht die Erstellung von Objekten im Debuggerprozess von Code, Out-of-Process an den Debugger.  
   
 > [!IMPORTANT]
->  Diese Methode sollte nicht implementiert werden, da es sich um nicht vertrauenswürdigem Code zum Erstellen von beliebiger Objekten in einen vertrauenswürdigen debugthread ermöglicht.  
+> Diese Methode sollte nicht implementiert werden, da es sich um nicht vertrauenswürdigem Code zum Erstellen von beliebiger Objekten in einen vertrauenswürdigen debugthread ermöglicht.  
   
 ## <a name="syntax"></a>Syntax  
   

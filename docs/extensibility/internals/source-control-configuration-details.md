@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59aa3ac36e989b2e2e1af2e36e8360ef53cb8438
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428996"
 ---
 # <a name="source-control-configuration-details"></a>Konfigurationsdetails für die Quellcodeverwaltung
 Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgemäßen Konfigurieren von Ihrem Projektsystem oder Editor, um die folgenden Schritte ausführen:
@@ -41,7 +41,7 @@ Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgem
  Bevor ein Projekt oder der Editor eine Datei gespeichert wird, muss er Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Für Projektdateien werden diese Aufrufe automatisch von der Lösung durchgeführt, die weiß, wann eine Projektdatei zu speichern. Editoren sind dafür verantwortlich, dass diese Aufrufe, es sei denn, die Implementierung von `IVsPersistDocData2` verwendet die Hilfsfunktion <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Wenn Ihr Editor implementiert `IVsPersistDocData2` in auf diese Weise, und klicken Sie dann auf den Aufruf von `IVsQueryEditQuerySave2::QuerySaveFile` oder `IVsQueryEditQuerySave2::QuerySaveFiles` für Sie vorgenommen wird.
 
 > [!NOTE]
->  Stellen Sie diese Aufrufe immer präemptiv, d. h. zu einem Zeitpunkt, wenn der Editor ist einen Abbruch zu empfangen.
+> Stellen Sie diese Aufrufe immer präemptiv, d. h. zu einem Zeitpunkt, wenn der Editor ist einen Abbruch zu empfangen.
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
  Bevor ein Projekt hinzufügen, umbenennen oder einer Datei oder eines Verzeichnisses entfernen kann, müssen die entsprechenden Aufrufen `IVsTrackProjectDocuments2::OnQuery*` Methode um eine Berechtigung aus der Umgebung. Wenn die Berechtigung erteilt, und klicken Sie dann das Projekt muss der Vorgang abgeschlossen und rufen Sie dann auf die entsprechende `IVsTrackProjectDocuments2::OnAfter*` Methode, um der Umgebung zu benachrichtigen, dass der Vorgang abgeschlossen ist. Das Projekt muss Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Schnittstelle für alle Dateien (z. B. spezielle Dateien) und nicht nur die übergeordneten-Dateien. Datei-Aufrufe sind obligatorisch, aber Directory-Aufrufe sind optional. Wenn Ihr Projekt Verzeichnisinformationen, sollten Sie den entsprechenden Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden, aber wenn keine dieser Informationen, und klicken Sie dann die Umgebung Verzeichnisinformationen folgert.

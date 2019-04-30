@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447001"
 ---
 # <a name="ribbon-designer"></a>Multifunktionsleisten-Designer
   Der Menüband-Designer ist ein visueller Entwurfzeichnungsbereich. Verwenden Sie die Menüband-Designer, um benutzerdefinierte Registerkarten, Gruppen und Steuerelemente des Menübands einer Microsoft Office-Anwendung hinzuzufügen.
@@ -47,7 +47,7 @@ ms.locfileid: "60103640"
 - [Hinzufügen von Steuerelementen zur Backstage-Ansicht](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Einige Aufgaben können mit dem Menüband-Designer nicht ausgeführt werden. Weitere Informationen zu diesen Aufgaben und wie Sie sie ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
+> Einige Aufgaben können mit dem Menüband-Designer nicht ausgeführt werden. Weitere Informationen zu diesen Aufgaben und wie Sie sie ausführen können, finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
 
  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden des Menüband-Designers zum Anpassen des Menübands in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

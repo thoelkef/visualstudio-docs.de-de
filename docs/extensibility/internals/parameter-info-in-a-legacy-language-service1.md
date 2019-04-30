@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423966"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
 Die IntelliSense-ParameterInfo-QuickInfo bietet Benutzern Hinweise, wo sie sich in einem Sprachkonstrukt sind.
@@ -27,7 +27,7 @@ Die IntelliSense-ParameterInfo-QuickInfo bietet Benutzern Hinweise, wo sie sich 
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Funktionsweise von QuickInfo-Tipps für Parameter
  Wenn Sie eine Anweisung im Editor eingeben, zeigt das VSPackage ein kleines QuickInfo-Fenster, das mit der Definition der-Anweisung eingegeben wird. Angenommen, Sie geben Sie eine Microsoft Foundation Classes (MFC)-Anweisung (z. B. `pMainFrame ->UpdateWindow`), und drücken Sie die öffnende Klammer ein Schlüssel, um zu beginnen, Auflisten von einem methodentipp angezeigt wird, mit der Definition der Parameter, die `UpdateWindow` Methode.

@@ -6,15 +6,15 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000284"
 ---
 # <a name="source-editor"></a>Quellcode-Editor
 
-Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt nicht nur die erwarteten Funktionen bereit, sondern auch solche, die Sie für reibungslose Arbeitsabläufe benötigen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
+Ein zuverlässiger Quellcode-Editor ist entscheidend für kurzen und effizienten Code. Visual Studio für Mac bietet einen anspruchsvollen Quellcode-Editor, der das Herzstück der IDE darstellt. Der Quellcode-Editor stellt Features bereit, die Sie möglicherweise erwarten und benötigen, um Ihre Arbeit mühelos durchzuführen: von den Grundlagen wie der Syntaxhervorhebung, über Codeausschnitte und der Codefaltung, bis hin zu den Vorteilen der Roslyn-Compilerintegration wie eine voll funktionale IntelliSense-Codevervollständigung.
 
 Der Quellcode-Editor in Visual Studio für Mac funktioniert problemlos mit allen anderen Funktionen der IDE, z.B. dem Debuggen, der Umgestaltung und der Integration der Versionskontrolle.
 
@@ -50,7 +50,7 @@ Dieses Menüelement kann auch zur Aktivierung oder Deaktivierung der Codefaltung
 
 Es kann für Sie notwendig sein, unsichtbare Zeichen im Quellcode zu sehen. So können Sie sicherstellen, dass Codierungsstandards eingehalten und Speicherplatz nicht unnötigerweise verschwendet wird. Auch beim Programmieren in F# ist dies nützlich, denn dabei kommt es bei der Bewertung von Code genau auf die eingezogenen Zeilen an.
 
-Um Leerzeichen anzuzeigen, navigieren Sie zu **Visual Studio > Einstellungen > Text-Editor > Markierungen und Lineale**. Wenn Sie diese Option auswählen, können Sie festlegen, _wann_ unsichtbare Zeichen angezeigt werden: Never (Nie), On Selection (Bei Auswahl) oder Always (Immer):
+Um Leerzeichen anzuzeigen, navigieren Sie zu **Visual Studio > Einstellungen > Text-Editor > Markierungen und Lineale**. Wenn Sie diese Option auswählen, können Sie festlegen, _wann_ unsichtbare Zeichen angezeigt werden sollen: „Never“ (Nie), „On Selection“ (Bei Auswahl) oder „Always“ (Immer):
 
 ![Optionen zum Anzeigen unsichtbarer Zeichen](media/source-editor-image3.png)
 

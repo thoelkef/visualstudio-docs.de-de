@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438791"
 ---
 # <a name="listobject-control"></a>ListObject-Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist eine Liste, die Ereignisse verfügbar macht und an Daten gebunden werden kann. Beim Hinzufügen einer Liste zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.
@@ -34,13 +34,13 @@ ms.locfileid: "60073631"
  In Projekten auf Dokumentebene können Sie einem Arbeitsblatt zur Entwurfszeit oder Laufzeit <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente hinzufügen. Sie können in VSTO-Add-in-Projekten hinzufügen <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen zu Arbeitsblättern nur zur Laufzeit. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  Standardmäßig werden dynamisch erstellte Listenobjekte im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Standardmäßig werden dynamisch erstellte Listenobjekte im Arbeitsblatt nicht dauerhaft als Hoststeuerelemente gespeichert, wenn das Arbeitsblatt geschlossen wird. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Binden von Daten an das Steuerelement
  Ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement unterstützt die einfache und komplexe Datenbindung. Die <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement gebunden werden kann, um einer Datenquelle mithilfe der <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> und <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> Eigenschaften zur Entwurfszeit oder der <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> Methode zur Laufzeit.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.ListObject> wird bei der Bindung an eine Datenquelle wie <xref:System.Data.DataTable>, die Ereignisse auslöst, wenn die Daten geändert werden, automatisch aktualisiert. Wenn Sie <xref:Microsoft.Office.Tools.Excel.ListObject> an eine Datenquelle binden, die bei einer Datenänderung keine Ereignisse auslöst, müssen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> -Methode oder <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> -Methode aufrufen, um <xref:Microsoft.Office.Tools.Excel.ListObject>zu aktualisieren.
+> <xref:Microsoft.Office.Tools.Excel.ListObject> wird bei der Bindung an eine Datenquelle wie <xref:System.Data.DataTable>, die Ereignisse auslöst, wenn die Daten geändert werden, automatisch aktualisiert. Wenn Sie <xref:Microsoft.Office.Tools.Excel.ListObject> an eine Datenquelle binden, die bei einer Datenänderung keine Ereignisse auslöst, müssen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> -Methode oder <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> -Methode aufrufen, um <xref:Microsoft.Office.Tools.Excel.ListObject>zu aktualisieren.
 
  Wenn Sie <xref:Microsoft.Office.Tools.Excel.ListObject> einer Arbeitsblattzelle hinzufügen, indem Sie der Zelle ein sich wiederholendes Schemaelement zuordnen, ordnet Visual Studio <xref:Microsoft.Office.Tools.Excel.ListObject> automatisch dem generierten DataSet zu. Allerdings wird <xref:Microsoft.Office.Tools.Excel.ListObject> nicht automatisch an die Daten gebunden. Sie können dafür sorgen, die zum Binden der <xref:Microsoft.Office.Tools.Excel.ListObject> auf das Dataset, die zur Entwurfszeit oder zur Laufzeit in einem Projekt auf Dokumentebene. Sie können eine Bindung programmgesteuert die <xref:Microsoft.Office.Tools.Excel.ListObject> auf das Dataset zur Laufzeit in einem VSTO-Add-in.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073631"
  Sie können ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement schnell füllen, indem Sie <xref:Microsoft.Office.Tools.Excel.ListObject> an eine Datenquelle binden. Wenn Sie die Daten in einem datengebundenen <xref:Microsoft.Office.Tools.Excel.ListObject>bearbeiten, werden die Änderungen auch automatisch in der Datenquelle vorgenommen. Wenn Sie <xref:Microsoft.Office.Tools.Excel.ListObject> füllen und dann dem Benutzer das Ändern der Daten in <xref:Microsoft.Office.Tools.Excel.ListObject> ermöglichen möchten, ohne die Datenquelle zu ändern, können Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> -Methode verwenden, um <xref:Microsoft.Office.Tools.Excel.ListObject> von der Datenquelle zu trennen. Weitere Informationen finden Sie unter [Vorgehensweise: ListObject-Steuerelementen mit Daten füllen](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  Die Datenbindung wird bei überlappenden <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelementen nicht unterstützt.
+> Die Datenbindung wird bei überlappenden <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelementen nicht unterstützt.
 
 ### <a name="improve-performance-in-listobject-controls"></a>Verbessern der Leistung von ListObject-Steuerelementen
  Das Einlesen einer XML-Datei in ein datengebundenes <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist normalerweise langsamer, wenn Sie das Steuerelement zuerst binden und dann <xref:System.Data.DataSet.ReadXml%2A> zum Füllen des DataSets aufrufen. Rufen Sie für eine bessere Leistung <xref:System.Data.DataSet.ReadXml%2A> auf, bevor Sie das Steuerelement binden.

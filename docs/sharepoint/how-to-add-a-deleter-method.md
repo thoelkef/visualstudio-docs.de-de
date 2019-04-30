@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418352"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Vorgehensweise: Hinzufügen einer Deleter-Methode
   Sie können die Benutzer, einen Datensatz aus einer externen Liste auf einer SharePoint-Website zu löschen, durch das Hinzufügen einer Deleter-Methode für das Modell aktivieren. Weitere Informationen finden Sie unter [entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56644392"
 5. Fügen Sie Code hinzu, um die Deleter-Methode, die einen Datensatz zu löschen. Das folgende Beispiel löscht einen Eintrag aus einem Auftrag mit der AdventureWorks-Beispieldatenbank für SQL Server.
 
    > [!NOTE]
-   >  Die Methode in diesem Beispiel verwendet zwei Eingabeparameter an.
+   > Die Methode in diesem Beispiel verwendet zwei Eingabeparameter an.
 
    > [!NOTE]
-   >  Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
+   > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

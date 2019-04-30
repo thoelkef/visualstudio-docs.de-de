@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436969"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ Sie können untersuchen, grundlegende Aufgaben wie dem Hinzufügen von Tabellen 
 6. Fügen Sie Daten für mindestens drei Bestellungen hinzu.  
   
     > [!IMPORTANT]
-    >  Überprüfen Sie, ob alle Bestellnummern und -mengen ganze Zahlen sind und ob jede Kunden-ID mit einem Wert übereinstimmt, den Sie in der Spalte "CustomerID" in der Tabelle "Customers" angegeben haben.  
+    > Überprüfen Sie, ob alle Bestellnummern und -mengen ganze Zahlen sind und ob jede Kunden-ID mit einem Wert übereinstimmt, den Sie in der Spalte "CustomerID" in der Tabelle "Customers" angegeben haben.  
   
 7. Wählen Sie auf der Menüleiste **Datei** > **Alles speichern**.  
   
 8. Wählen Sie auf der Menüleiste **Datei** > **Projektmappe schließen**.  
   
     > [!NOTE]
-    >  Die empfohlene Vorgehensweise besteht darin, die soeben erstellte Datenbankdatei zu sichern, indem Sie sie kopieren und dann entweder die Kopie an einem anderen Speicherort einzufügen oder der Kopie einen anderen Namen zu geben.  
+    > Die empfohlene Vorgehensweise besteht darin, die soeben erstellte Datenbankdatei zu sichern, indem Sie sie kopieren und dann entweder die Kopie an einem anderen Speicherort einzufügen oder der Kopie einen anderen Namen zu geben.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Nun, da Sie eine lokale Datenbankdatei mit einigen Beispieldaten haben, können Sie eine der exemplarischen Vorgehensweisen abschließen, die Tasks der Datenbank zu veranschaulichen.

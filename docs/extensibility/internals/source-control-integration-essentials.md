@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908950"
 ---
 # <a name="source-control-integration-essentials"></a>Grundlagen der Integration der Quellcodeverwaltung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten der Integration der quellcodeverwaltung: ein Quellcodeverwaltungs-Plug-Ins, die stellt grundlegende Funktionalität bereit und wird mithilfe der Quell-Plug-in-API (ehemals die MSSCCI-API) und eine VSPackage-basierten Datenquellen-Steuerelement-integrationslösung erstellt, Stellt robuster Funktionen bereit.

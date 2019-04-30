@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ebeef5502787ad5ab745d72e42205d86320a8f20
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914466"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Diese Methode setzt die Enumeration auf das erste Element zurück.
@@ -33,7 +33,7 @@ int Reset();
 ```
 
 #### <a name="parameters"></a>Parameter
- Keine
+ Keiner
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

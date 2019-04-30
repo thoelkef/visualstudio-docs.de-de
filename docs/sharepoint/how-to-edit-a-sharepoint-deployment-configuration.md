@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444702"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration
   Sie können eine Bereitstellungskonfiguration erstellen oder eine vorhandene Bereitstellungskonfiguration zu ändern. Sie können z. B. einen einzigen Schritt ausführen oder Ändern der Reihenfolge der Schritte im Bereitstellungsprozess. Möglicherweise möchten erstellen oder Ändern von Bereitstellungskonfigurationen, da die integrierte und die programmgesteuert hinzugefügten Konfiguration nicht geändert werden können.
@@ -39,7 +39,7 @@ ms.locfileid: "60093708"
 4. In der **Verfügbare Bereitstellungsschritte** Bereich, wählen Sie die Schritte aus, die Sie verwenden möchten, an der Bereitstellungskonfiguration hinzuzufügen, wählen Sie die (**>**) Schaltfläche, und wählen Sie dann die **OK** Schaltfläche.
 
     > [!NOTE]
-    >  Wenn Sie einen Befehl vor der Bereitstellung oder ein Befehl nach der Bereitstellung konfiguriert haben, führen Sie diese Schritte nur, wenn Sie eine angepasste Bereitstellungskonfiguration hinzugefügt.
+    > Wenn Sie einen Befehl vor der Bereitstellung oder ein Befehl nach der Bereitstellung konfiguriert haben, führen Sie diese Schritte nur, wenn Sie eine angepasste Bereitstellungskonfiguration hinzugefügt.
 
 ## <a name="change-the-active-deployment-configuration"></a>Ändern der aktiven Bereitstellungskonfiguration
 

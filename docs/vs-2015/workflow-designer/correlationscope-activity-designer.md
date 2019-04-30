@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 95c8422d53903c3c7b81db9f6ef042c5ea9ff1c1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58957686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976765"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope-Aktivitätsdesigner
 Die **CorrelationScope** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.CorrelationScope> Aktivität, die implizite Verwaltung untergeordneter messagingaktivitäten mithilfe bietet eine <xref:System.ServiceModel.Activities.CorrelationHandle> Objekt.  

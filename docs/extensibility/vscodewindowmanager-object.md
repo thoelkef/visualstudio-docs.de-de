@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950925"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager object
 Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung von Zusatzelemente (z. B. die Dropdownleiste). Weitere Informationen finden Sie unter [Anpassen von Code Windows mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).

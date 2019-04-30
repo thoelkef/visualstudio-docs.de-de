@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905443"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:

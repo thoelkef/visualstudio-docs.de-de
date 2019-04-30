@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435970"
 ---
 # <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehlermarker
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Fehlermarker (oder rote wellenförmige unterstreichungen) sind sehr schwer Text-
 1. In einer Sicht, die gefiltert wird, ruft der Filter ein Zeiger auf den Aufgabenanbieter zugeordnet, die Daten Ansicht ab.  
   
     > [!NOTE]
-    >  Sie können den gleichen Befehlsfilter für methodentipps, Anweisungsvervollständigung, fehlermarker und So weiter verwenden.  
+    > Sie können den gleichen Befehlsfilter für methodentipps, Anweisungsvervollständigung, fehlermarker und So weiter verwenden.  
   
 2. Wenn der Filter empfängt ein Ereignis gibt an, dass Sie in eine neue Zeile verschoben haben, wird eine Aufgabe erstellt, um Fehler zu finden.  
   

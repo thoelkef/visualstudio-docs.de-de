@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e0770654f564c57cf576666dcd9575f47d9ce1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432290"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd-Fehler
 FxCopCmd werden alle schwerwiegenden Fehler nicht berücksichtigt. Wenn FxCopCmd genügend Informationen zum Ausführen einer partiellen Analysis hat, führt es die Analyse- und Berichten aufgetretenen. Der Fehlercode, der eine 32-Bit-Ganzzahl ist, enthält eine bitweise Kombination von numerischen Werten, die Fehlern entsprechen.  
@@ -49,7 +49,7 @@ FxCopCmd werden alle schwerwiegenden Fehler nicht berücksichtigt. Wenn FxCopCmd
 - Die Output-Option wurde nicht angegeben oder die Datei konnte nicht geschrieben werden.  
   
     > [!NOTE]
-    >  Die FxCopCmd Rückgabecode "Fehler" 0 x 200 allein ist eher eine Warnung als Fehler. Dieser Rückgabecode gibt an, dass fehlende indirekte Verweise gefunden wurden jedoch, dass FxCopCmd diese behandeln konnte. Es ist eine Warnung, dass es besteht die Möglichkeit, dass einige Analyseergebnisse gefährdet sein könnte. Betrachten Sie die Rückgabecode "Verweist auf Fehler der Assembly" als Fehler, zusammen mit anderen Rückgabecode.  
+    > Die FxCopCmd Rückgabecode "Fehler" 0 x 200 allein ist eher eine Warnung als Fehler. Dieser Rückgabecode gibt an, dass fehlende indirekte Verweise gefunden wurden jedoch, dass FxCopCmd diese behandeln konnte. Es ist eine Warnung, dass es besteht die Möglichkeit, dass einige Analyseergebnisse gefährdet sein könnte. Betrachten Sie die Rückgabecode "Verweist auf Fehler der Assembly" als Fehler, zusammen mit anderen Rückgabecode.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anwendungsfehler bei der Codeanalyse](../code-quality/code-analysis-application-errors.md)

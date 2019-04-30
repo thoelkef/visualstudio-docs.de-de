@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443921"
 ---
 # <a name="extending-the-isolated-shell"></a>Erweitern der Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054091"
 Sie können die Visual Studio isolierte Shell erweitern, indem Ihre isolated Shell-Anwendung ein VSPackage, einer Komponente des Managed Extensibility Framework (MEF) oder ein generischer VSIX-Projekt hinzugefügt.  
   
 > [!NOTE]
->  Die folgenden Schritte erfordern, dass Sie eine grundlegenden isolated Shell-Anwendung unter Verwendung der isolierten Visual Studio Shell-Projektvorlage erstellt haben. Weitere Informationen zu dieser Projektvorlage, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Die folgenden Schritte erfordern, dass Sie eine grundlegenden isolated Shell-Anwendung unter Verwendung der isolierten Visual Studio Shell-Projektvorlage erstellt haben. Weitere Informationen zu dieser Projektvorlage, finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Basic-isolierten Shellanwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Speicherorte für die VSPackage-Projektvorlage  
  Die VSPackage-Projektvorlage finden Sie an drei verschiedenen Stellen im Dialogfeld **Neues Projekt** :  

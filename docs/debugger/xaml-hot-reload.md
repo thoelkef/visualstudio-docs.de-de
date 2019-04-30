@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929131"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von ausgeführten XAML-Code mit "Hot" Laden von XAML in Visual Studio
 
@@ -43,8 +43,8 @@ Im folgenden werden bekannte Einschränkungen von XAML die erneut laden "Hot". U
 
 |Einschränkung|WPF|UWP|Hinweise|
 |-|-|-|-|
-|Verknüpfen von Ereignissen mit Steuerelementen, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|Fehler: *Ereignis stellen Sie sicher ist fehlgeschlagen.*|
-|Erstellen Ressourcenobjekte in einem Ressourcenwörterbuch, z. B. in Ihrer app Seitenfenster oder *"App.xaml"*|Nicht unterstützt|Unterstützt|Beispiel: Hinzufügen einer ```SolidColorBrush``` in ein Ressourcenverzeichnis für die Verwendung als eine ```StaticResource```.</br>Hinweis: Bei der Verwendung von "Hot" Reload XAML können eine statische Ressourcen, Stil-Konverter und andere Elemente in einem Ressourcenverzeichnis geschrieben sein angewendet/verwendet. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern das Ressourcenverzeichnis ```Source``` Eigenschaft.| 
+|Verknüpfen von Ereignissen mit Steuerelementen, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|Fehler angezeigt: *Stellen Sie sicher Ereignis Fehler*|
+|Erstellen Ressourcenobjekte in einem Ressourcenwörterbuch, z. B. in Ihrer app Seitenfenster oder *"App.xaml"*|Nicht unterstützt|Unterstützt|Beispiel: Hinzufügen einer ```SolidColorBrush``` in ein Ressourcenverzeichnis für die Verwendung als eine ```StaticResource```.</br>Hinweis: Statische Ressourcen, Stil-Konverter und andere Elemente in einem Ressourcenverzeichnis geschrieben können angewendet/verwendet werden, bei der Verwendung von XAML "Hot" erneut laden. Nur die Erstellung der Ressource wird nicht unterstützt.</br> Ändern das Ressourcenverzeichnis ```Source``` Eigenschaft.| 
 |Neue Steuerelemente, Klassen, Windows oder andere Dateien hinzufügen zum Projekt, während die app ausgeführt wird|Nicht unterstützt|Nicht unterstützt|Keiner|
 |Verwalten von NuGet-Pakete (Pakete hinzufügen/entfernen/aktualisieren)|Nicht unterstützt|Nicht unterstützt|Keiner|
 |Ändern von Daten, die Bindung, verwendet die {X: Bind}-Markuperweiterung|Nicht zutreffend|In Visual Studio-2019 und höheren Versionen unterstützt|In Visual Studio 2018 oder früheren Versionen unterstützt nicht|

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816633"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Regelsatz für die erweiterten Regeln für Richtigkeit für verwalteten Code
 Der Regelsatz Microsoft erweiterte Regeln für Richtigkeit maximiert die Logik und Fehler, die von der Codeanalyse gemeldet werden. Besonderes Augenmerk wird auf bestimmte Szenarien wie z. B. COM-Interoperabilität und mobile Anwendungen. Sie sollten diesen Regelsatz, wenn eines dieser Szenarien zutrifft, zu Ihrem Projekt oder um weitere Probleme in Ihrem Projekt zu ermitteln.

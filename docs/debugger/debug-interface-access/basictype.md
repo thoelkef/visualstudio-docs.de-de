@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829731"
 ---
 # <a name="basictype"></a>BasicType
 Gibt an, die grundlegende Symboltyp.
@@ -54,13 +54,13 @@ BtNoType kein Basistyp angegeben ist.
 
 BtVoid Basistyp ist eine `void`.
 
-BtChar Basistyp ist eine `char` (C/C++-Typ).
+BtChar Basistyp ist eine `char` (C /C++ Typ).
 
 BtWChar Basistyp ist ein Breitzeichen (Unicode) ist (`WCHAR`).
 
-BtInt Basistyp ist `signed int` (C/C++-Typ).
+BtInt Basistyp ist `signed int` (C /C++ Typ).
 
-BtUInt Basistyp ist `unsigned int` (C/C++-Typ).
+BtUInt Basistyp ist `unsigned int` (C /C++ Typ).
 
 BtFloat Basistyp ist eine Gleitkommazahl (`FLOAT`).
 
@@ -68,9 +68,9 @@ BtBCD Basistyp ist eine Dezimalzahl Binär codierte (`BCD`).
 
 BtBool Basistyp ist ein boolescher Wert (`BOOL`).
 
-BtLong Basistyp ist eine `long int` (C/C++-Typ).
+BtLong Basistyp ist eine `long int` (C /C++ Typ).
 
-BtULong Basistyp ist ein `unsigned long int` (C/C++-Typ).
+BtULong Basistyp ist ein `unsigned long int` (C /C++ Typ).
 
 BtCurrency Basistyp ist die Währung.
 
@@ -86,7 +86,7 @@ BtBSTR Basistyp ist eine grundlegende oder binäre Zeichenfolge (`BSTR`).
 
 BtHresult Basistyp ist ein `HRESULT`.
 
-## <a name="remarks"></a>Anmerkungen
+## <a name="remarks"></a>Hinweise
 Die Werte in dieser Enumeration werden zurückgegeben, durch die [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) Methode.
 
 ## <a name="requirements"></a>Anforderungen

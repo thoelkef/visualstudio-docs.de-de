@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434060"
 ---
 # <a name="step-2-run-your-program"></a>Schritt 2: Ausführen des Programms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Debugsymbolleiste
     - Schließen Sie das **Form1**-Fenster, indem Sie auf das X in der oberen rechten Ecke des Fensters klicken.  
   
     > [!NOTE]
-    >  Wenn Sie das Programm von der IDE aus ausführen, wird dies als *Debuggen* bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Debugger – Grundlagen](../debugger/debugger-basics.md).  
+    > Wenn Sie das Programm von der IDE aus ausführen, wird dies als *Debuggen* bezeichnet, denn dies geschieht normalerweise, um Programmfehler zu finden und zu beheben. Obwohl dieses Programm klein ist und noch keine wirkliche Funktion hat, ist es immer noch ein echtes Programm. Halten Sie die gleiche Prozedur ein, um andere Programme auszuführen und zu debuggen. Weitere Informationen zum Debuggen finden Sie unter [Debugger – Grundlagen](../debugger/debugger-basics.md).  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   

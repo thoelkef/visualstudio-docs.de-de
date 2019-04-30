@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434689"
 ---
 # <a name="sccdiff-function"></a>SccDiff-Funktion
 Diese Funktion wird angezeigt (oder optional für überprüft) die Unterschiede zwischen der aktuellen Datei (auf dem lokalen Datenträger) und die zuletzt eingecheckte Version in der Quelle System steuern.
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Das Quellcodeverwaltungs-Plug-In können Leistung zu optimieren, basierte auf einer Prüfsumme oder einen Zeitstempel anstelle der Byte-pro-Byte-Vergleich für aufgerufen werden, indem Sie Alternative `SCC_DIFF_CONTENTS`: Diese Formen des Vergleichs werden offensichtlich schneller, aber weniger zuverlässig. Nicht alle Quellcode-Verwaltungssysteme können diese Vergleichsmethoden alternative unterstützen, und das plug-in möglicherweise beim ausweichen auf einen Vergleich der Inhalte. Alle Quellcodeverwaltungs-Plug-ins muss mindestens einen Vergleich Inhalt unterstützen.
 
 > [!NOTE]
->  Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.
+> Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.
 
 |`fOption`|Bedeutung|
 |---------------|-------------|
