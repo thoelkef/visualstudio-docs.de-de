@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit Unittests
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57984117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003179"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -24,145 +24,153 @@ Verwenden Sie Visual Studio, um Komponententests zu definieren und auszuführen,
 
 In diesem Abschnitt wird genauestens beschrieben, wie Sie ein Komponententestprojekt erstellen.
 
-> [!TIP]
-> Das getestete Projekt „HelloWorld“ ist ein Beispielprojekt, für das kein Code angezeigt werden soll. Wenn Sie ein HelloWorld-Projekt zum Testen erstellen möchten, finden Sie Anweisungen dazu unter [Erstellen Ihrer ersten C#-Konsolenanwendung](../ide/quickstart-csharp-console.md). Eine vollständige exemplarische Vorgehensweise finden Sie unter [Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1. Öffnen Sie das Projekt, das Sie in Visual Studio testen möchten.
 
-1. Erstellen Sie ein Unittests.
+   In diesem Artikel wird ein einfaches „Hallo Welt“-Projekt getestet, um einen Beispielkomponententest zu demonstrieren. Der Beispielcode für ein solches Projekt lautet wie folgt:
 
-   ![Hinzufügen einer Projektmappe zu einem Unittestprojekt](media/createunittest1.png)
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
-1. Geben Sie dem Projekt einen Namen.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektmappenknoten aus. Wählen Sie dann in der oberen Menüleiste **Datei** > **Hinzufügen** > **Neues Projekt** aus.
 
-   ![Vorlage für Unittestprojekte](media/createunittest2.png)
+1. Suchen Sie im Dialogfeld „Neues Projekt“ nach einer Komponententestprojektvorlage für das Testframework, das Sie verwenden möchten, und wählen Sie sie aus.
+
+   ::: moniker range=">=vs-2019"
+
+   ![Komponententestprojektvorlage in Visual Studio 2019](media/vs-2019/add-new-test-project.png)
+
+   Klicken Sie auf **Weiter**, wählen Sie einen Namen für das Testprojekt aus, und klicken Sie dann auf **Erstellen**.
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2017"
+
+   ![Komponententestprojektvorlage in Visual Studio 2019](media/mstest-test-project-template.png)
+
+   Wählen Sie einen Namen für das Testprojekt aus, und klicken Sie dann auf **OK**.
+
+   ::: moniker-end
 
    Das Projekt wird Ihrer Projektmappe hinzugefügt.
 
-   ![Wählen Sie das Unittestprojekt im Projektmappen-Explorer aus.](media/createunittest5.png)
+   ![Wählen Sie das Unittestprojekt im Projektmappen-Explorer aus.](media/vs-2019/solution-explorer.png)
 
-1. Fügen Sie im Unittestprojekt dem zu testenden Projekt eine Referenz hinzu.
+1. Fügen Sie im Komponententestprojekt einen Verweis auf das Projekt hinzu, das Sie testen möchten, indem Sie mit der rechten Maustaste auf **Verweise** oder auf **Abhängigkeiten** klicken und dann die Option **Verweis hinzufügen** auswählen.
 
-   ![Hinzufügen eines Verweises zu Ihrem Unittestprojekt.](media/createunittest6.png)
+1. Wählen Sie das Projekt aus, das den Code enthält, den Sie testen möchten, und klicken Sie auf **OK**.
 
-1. Wählen Sie das Projekt aus, das den Code enthält, den Sie testen möchten.
+   ![Screenshot: Hinzufügen eines Projektverweises in Visual Studio](media/vs-2019/reference-manager.png)
 
-   ![Auswählen des hinzuzufügenden Verweises](media/createunittest7.png)
+1. Fügen Sie der Komponententestmethode Code hinzu.
 
-1. Programmieren Sie den Unittest.
+   ![Screenshot: Hinzufügen von Code zu Ihrer Komponententestmethode in Visual Studio](media/vs-2019/unit-test-method.png)
 
-   ![Hinzufügen von Code zu Ihrem Unittest](media/createunittest8.png)
-
-Sie können Stubs für Komponententestmethoden auch mit dem **Befehl** [Komponententests erstellen](create-unit-tests-menu.md) erstellen.
-
-![Verwenden des Befehls „Unittests erstellen“](media/createunittestcommand2.png)
+> [!TIP]
+> Eine ausführlichere exemplarische Vorgehensweise zum Erstellen von Komponententest finden Sie unter [Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Komponententests ausführen
 
-1. Öffnen Sie den **Test-Explorer**.
+1. Öffnen Sie den [Test-Explorer](../test/run-unit-tests-with-test-explorer.md), indem Sie in der oberen Menüleiste **Testen** > **Windows** > **Test-Explorer** auswählen.
 
-   ![Öffnen des Test-Explorers im Menü „Test“](media/rununittest1.png)
+1. Die Komponententests führen Sie aus, indem Sie auf **Alle ausführen** klicken.
 
-1. Führen Sie Unittests aus.
+   ![Ausführen von Komponententests im Test-Explorer](media/vs-2019/test-explorer-run-all.png)
 
-   ![Ausführen von Komponententests im Test-Explorer](media/rununittest2.png)
+   Wenn die Tests ausgeführt wurden, zeigt ein grünes Häkchen an, dass ein Test bestanden wurde. Ein rotes „x“-Symbol zeigt an, dass ein Test nicht erfolgreich war.
 
-   Es werden die Komponententests angezeigt, die im **Test-Explorer** entweder erfolgreich oder mit Fehlern ausgeführt wurden.
+   ![Überprüfen der Unittestsergebnisse im Test-Explorer](media/vs-2019/unit-test-passed.png)
 
-   ![Überprüfen der Unittestsergebnisse im Test-Explorer](media/rununittest3.png)
+> [!TIP]
+> Sie können den [Test-Explorer](../test/run-unit-tests-with-test-explorer.md) verwenden, um im integrierten Testframework (MSTest) oder in Testframeworks von Drittanbietern Komponententests auszuführen. Sie können die Tests auch in Kategorien gruppieren, Filter auf die Testliste anwenden, und Wiedergabelisten von Tests erstellen, speichern und ausführen. Zudem können Sie Tests debuggen und die Leistung und Codeabdeckung von Tests analysieren.
 
 ## <a name="view-live-unit-test-results"></a>Anzeigen der Ergebnisse von Liveunittests
 
 Wenn Sie die Testframeworks MSTest, xUnit oder NUnit in Visual Studio 2017 oder höher verwenden, werden Live-Ergebnisse Ihrer Komponententests angezeigt.
 
 > [!NOTE]
-> Livekomponententests sind nur in der Visual Studio Enterprise-Edition verfügbar.
+> Live Unit Testing ist nur in der Enterprise-Edition verfügbar.
 
-1. Aktivieren Sie die Liveunittests im Menü **Test**.
+1. Das Feature „Live Unit Testing“ aktivieren Sie im Menü **Testen**, indem Sie **Testen** > **Live Unit Testing** > **Starten** auswählen.
+
+   ::: moniker range="vs-2017"
 
    ![Aktivieren der Liveunittests](media/live-test-results-start.png)
 
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Starten von Live Unit Testing in Visual Studio 2019](media/vs-2019/start-live-unit-testing.png)
+
+   ::: moniker-end
+
 1. Schauen Sie sich die Ergebnisse der Tests im Fenster des Code-Editors an, während Sie Code schreiben und diesen bearbeiten.
 
-   ![Überprüfen der Ergebnisse der Tests](media/live-test-results-ui.png)
+   ![Überprüfen der Ergebnisse der Tests](media/vs-2019/live-unit-testing-results.png)
 
-1. Wählen Sie die Testergebnisindikatoren aus, um mehr Informationen anzuzeigen.
+1. Klicken Sie auf einen Testergebnisindikator, damit weitere Informationen angezeigt werden, z.B. die Namen der Tests, die diese Methode abdecken.
 
-   ![Auswählen der Testergebnisindikatoren](media/live-test-results-details.png)
+   ![Auswählen der Testergebnisindikatoren](media/vs-2019/live-unit-testing-details.png)
 
-Weitere Informationen finden Sie unter [Live Unit Testing](../test/live-unit-testing-intro.md).
+Weitere Informationen zu Live Unit Testing finden Sie unter [Einführung in Live Unit Testing](../test/live-unit-testing-intro.md).
 
 ## <a name="generate-unit-tests-with-intellitest"></a>Generieren von Unittests mit IntelliTest
 
-Wenn Sie IntelliTest ausführen, erkennen Sie ohne weiteres, welche Tests zu einem Fehler führen, und können den erforderlichen Code hinzufügen, um die Fehler zu beseitigen. Sie können wählen, welche der generierten Tests in einem Testprojekt gespeichert werden sollen, um eine Regressionsreihe zu erstellen. Wenn Sie den Code ändern, führen Sie IntelliTest erneut aus, damit die generierten Tests mit den Codeänderungen synchronisiert werden. Weitere Informationen finden Sie unter [Generieren von Komponententests für Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Wenn Sie IntelliTest ausführen, erkennen Sie, welche Tests zu einem Fehler führen, und können den erforderlichen Code hinzufügen, um die Fehler zu beseitigen. Sie können wählen, welche der generierten Tests in einem Testprojekt gespeichert werden sollen, um eine Regressionsreihe zu erstellen. Wenn Sie den Code ändern, führen Sie IntelliTest erneut aus, damit die generierten Tests mit den Codeänderungen synchronisiert werden. Weitere Informationen finden Sie unter [Generieren von Komponententests für Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+
+> [!TIP]
+> IntelliTest ist nur für verwalteten Code verfügbar, der das .NET Framework unterstützt.
 
 ![Erzeugen von Unittests mit IntelliTest](media/intellitest.png)
 
-## <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
-
-Mithilfe des **Test-Explorers** können Sie Komponententests aus Visual Studio oder Testprojekte von Drittanbietern ausführen, Tests in Kategorien gruppieren, die Testliste filtern sowie Testwiedergabelisten erstellen, speichern und ausführen. Zudem können Sie Tests debuggen und die Leistung und Codeabdeckung von Tests analysieren. Weitere Informationen finden Sie unter [Ausführen von Unittests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md).
-
-![Ausführen von Unittests mit dem Test-Explorer](media/testexplorer.png)
-
-## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
+## <a name="analyze-code-coverage"></a>Analysieren von Code Coverage
 
 Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests wie Komponententests tatsächlich getestet wird, verwenden Sie die Code Coverage-Funktion von Visual Studio. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen. Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-## <a name="use-a-different-unit-test-framework"></a>Verwenden eines anderen Komponententest-Frameworks
+## <a name="use-a-third-party-test-framework"></a>Verwenden des Testframeworks eines Drittanbieters
 
-Sie können Komponententests in Visual Studio auch über Testframeworks von Drittanbietern wie Boost, Google und NUnit ausführen. Verwenden Sie das Plug-In für das Framework, damit der Test Runner von Visual Studio mit dem Framework arbeiten kann.
+Sie können Komponententests in Visual Studio auch über Testframeworks von Drittanbietern wie Boost, Google und NUnit ausführen. Verwenden Sie den **NuGet-Paket-Manager**, um das NuGet-Paket für das Framework Ihrer Wahl zu installieren. Als Alternative beinhaltet Visual Studio für die Frameworks NUnit und xUnit vorkonfigurierte Testprojektvorlagen, die die erforderlichen NuGet-Pakete beinhalten.
 
-Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu aktivieren:
+So erstellen Sie Komponententest für das Framework [NUnit](https://nunit.org/):
 
-::: moniker range="vs-2017"
+1. Öffnen Sie die Projektmappe, die den Code enthält, den Sie testen möchten.
 
-1. Wählen Sie auf der Menüleiste **Extras** > **Erweiterungen und Updates** aus.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
-2. Erweitern Sie im Dialogfeld **Erweiterungen und Updates** die Kategorie **Online**, und wählen Sie dann **Visual Studio Marketplace** aus. Wählen Sie anschließend **Extras** > **Testen** aus.
+3. Wählen Sie die Projektvorlage **NUnit-Testprojekt** aus.
 
-   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+   ::: moniker range=">=vs-2019"
 
-::: moniker-end
+   ![NUnit-Testprojektvorlage in Visual Studio 2019](media/vs-2019/nunit-test-project-template.png)
 
-::: moniker range=">=vs-2019"
+   Klicken Sie auf **Weiter**, benennen Sie das Projekt, und klicken Sie dann auf **Erstellen**.
 
-1. Wählen Sie auf der Menüleiste **Erweiterungen** > **Erweiterungen verwalten** aus.
+   ::: moniker-end
 
-2. Erweitern Sie im Dialogfeld **Erweiterungen verwalten** die Kategorie **Online**, und wählen Sie dann **Visual Studio Marketplace** aus. Wählen Sie anschließend **Extras** > **Testen** aus.
+   ::: moniker range="vs-2017"
 
-   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+   Benennen Sie das Projekt, und klicken Sie auf **OK**, um es zu erstellen.
 
-::: moniker-end
+   ::: moniker-end
 
-3. Wählen Sie das Framework oder den Adapter aus, die Sie installieren möchten, und klicken Sie auf **Herunterladen**.
+   Die Projektvorlage beinhaltet NuGet-Verweise auf NUnit und auf NUnit3TestAdapter.
 
-4. Erstellen Sie ein Klassenbibliotheksprojekt, und fügen Sie es Ihrer Projektmappe hinzu.
+   ![NUnit-NuGet-Abhängigkeiten im Projektmappen-Explorer](media/vs-2019/nunit-nuget-dependencies.png)
 
-   ![Benennen Sie das Klassenbibliotheksprojekt und fügen Sie es hinzu](media/create3rdpartyunittest3.png)
+4. Fügen Sie dem Projekt, das den Code enthält, den Sie testen möchten, einen Verweis aus dem Testprojekt hinzu.
 
-5. Installieren Sie das Plug-In. Wählen Sie im **Projektmappen-Explorer** das Klassenbibliotheksprojekt aus, und wählen Sie anschließend im Kontextmenü die Option **NuGet-Pakete verwalten** aus.
+5. Fügen Sie Ihrer Testmethode Code hinzu.
 
-   ![Verwalten von NuGet-Paketen zum Installieren des Plug-Ins](media/create3rdpartyunittest3a.png)
+   ![Hinzufügen von Code zur Codedatei für Ihren Komponententest](media/vs-2019/unit-test-method.png)
 
-   [NuGet](https://www.nuget.org/) ist eine Erweiterung von Visual Studio, mit der Sie Bibliotheken und Tools für Ihre Projekte hinzufügen und aktualisieren können.
-
-6. Suchen Sie im Fenster **NuGet-Paket-Manager** nach dem Plug-In, und wählen Sie es aus. Klicken Sie anschließend auf **Installieren**.
-
-   ![Installieren des Frameworks des Drittanbieters](media/create3rdpartyunittest4.png)
-
-   In Ihrem Projekt wird auf das Framework verwiesen.
-
-   ![Der Verweis für das Unittestframework des Drittanbieters wird Ihrer Projektmappe hinzugefügt.](media/create3rdpartyunittest6.png)
-
-7. Wählen Sie im Knoten **Verweise** des Klassenbibliotheksprojekts den Eintrag **Verweis hinzufügen** aus.
-
-   ![Fügen Sie einen Verweis auf das Projekt hinzu.](media/createunittest6.png)
-
-8. Wählen Sie im Dialogfeld **Verweis-Manager** das Projekt mit dem Code aus, den Sie testen möchten.
-
-   ![Wählen Sie das Codeprojekt aus, das Sie testen möchten.](media/createunittest7.png)
-
-9. Programmieren Sie den Unittest.
-
-   ![Hinzufügen von Code zur Codedatei für Ihren Komponententest](media/create3rdpartyunittest7.png)
+6. Führen Sie den Test über den **Test-Explorer** aus, oder, indem Sie mit der rechten Maustaste auf den Testcode klicken und die Option **Tests ausführen** auswählen.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -170,5 +178,4 @@ Führen Sie die folgenden Schritte aus, um Testframeworks von Drittanbietern zu 
 * [Create Unit Tests command (Befehl „Komponententests erstellen“)](create-unit-tests-menu.md)
 * [Generieren von Tests mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Ausführen von Unittests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
-* [Bestimmen von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Verbessern der Codequalität](improve-code-quality.md)
+* [Analysieren von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
