@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447137"
 ---
 # <a name="office-development-samples"></a>Office-Entwicklungsbeispiele
   Visual Studio enthält Beispielanwendungen, die veranschaulichen, wie die Microsoft Office Developer Tools verwendet werden, um Office-Projektmappen zu erstellen. Im Code dieser Beispiele werden die Syntax, Struktur und Techniken zum Erstellen von Office-Projektmappen veranschaulicht.
@@ -35,9 +35,9 @@ ms.locfileid: "56604067"
 |Excel-Datenanalysebeispiel|Veranschaulicht eine Bestandsmanagementanwendung, in der Datenanalyseaufgaben in Excel mithilfe von Listenobjekten, PivotTables und Diagrammen ausgeführt werden.|
 |Beispiel für den Aufgabenbereich in Word|Veranschaulicht das Erstellen eines einfachen benutzerdefinierten Aufgabenbereichs für Word.|
 |Beispiel für Inhaltssteuerelemente in Word|Veranschaulicht das Binden von Word-Inhaltssteuerelementen an Datenbankfelder.|
-|RSS-Reader für Outlook-Formularbereich &ndash; Beispiel|Veranschaulicht, wie Outlook-Formularbereiche zur Anzeige des gesamten Inhalts von Artikeln aus einem RSS-Feed verwendet werden.|
-|Menübandsteuerelemente &ndash; Beispiel|In diesem Beispiel wird das Erstellen einer benutzerdefinierten Registerkarte veranschaulicht, die auf dem Menüband eines Excel-Arbeitsblatts angezeigt wird. Dieses benutzerdefinierte Menüband beinhaltet den Großteil der in der Gruppe „Steuerelemente für Office-Menübänder“ der Toolbox von Visual Studio verfügbaren Steuerelemente.|
-|UI-Manager &ndash; Beispiel|Zeigt, wie eine Menübandanpassung, ein benutzerdefinierter Aufgabenbereich und ein benutzerdefinierter Formularbereich für Outlook durch Implementieren von Erweiterbarkeitsschnittstellen in einem VSTO-Add-In erstellt werden. Alle Instanzen von Menüband, Aufgabenbereich und Formularbereich können ordnungsgemäß miteinander kommunizieren.|
+|RSS-Reader für Outlook-Formularbereich &amp;ndash; Beispiel|Veranschaulicht, wie Outlook-Formularbereiche zur Anzeige des gesamten Inhalts von Artikeln aus einem RSS-Feed verwendet werden.|
+|Menübandsteuerelemente &amp;ndash; Beispiel|In diesem Beispiel wird das Erstellen einer benutzerdefinierten Registerkarte veranschaulicht, die auf dem Menüband eines Excel-Arbeitsblatts angezeigt wird. Dieses benutzerdefinierte Menüband beinhaltet den Großteil der in der Gruppe "Steuerelemente für Office-Menübänder" des Werkzeugkastens von Visual Studio verfügbaren Steuerelemente.|
+|UI-Manager &amp;ndash; Beispiel|Zeigt, wie eine Menübandanpassung, ein benutzerdefinierter Aufgabenbereich und ein benutzerdefinierter Formularbereich für Outlook durch Implementieren von Erweiterbarkeitsschnittstellen in einem VSTO-Add-In erstellt werden. Alle Instanzen von Menüband, Aufgabenbereich und Formularbereich können ordnungsgemäß miteinander kommunizieren.|
 |Beispiel für VBA- und VSTO-Interoperabilität|Veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Excel in VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird.<br /><br /> Das Beispiel steht nur online zur Verfügung.|
 
 ## <a name="see-also"></a>Siehe auch

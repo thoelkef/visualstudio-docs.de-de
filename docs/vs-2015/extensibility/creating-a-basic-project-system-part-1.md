@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1fcf05377545100dfffe2db2385ea80fef4106eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439399"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projektsystems, Teil 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
  Projekte werden in Projektdateien, z. B. einer CSPROJ-Datei für ein Visual C#-Projekt definiert. Sie können Ihren eigenen Projekttyp erstellen, die Ihre eigenen Projekt-Dateierweiterung aufweist. Weitere Informationen zu Projekttypen, finden Sie unter [Projekttypen](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
->  Wenn Sie Visual Studio mit einem benutzerdefinierten Projekttyp erweitern müssen, sollten Sie dringend nutzen die [Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem) der hat einer Reihe von Vorteilen, die über ein Projektsystem von Grund auf neu erstellen:  
+> Wenn Sie Visual Studio mit einem benutzerdefinierten Projekttyp erweitern müssen, sollten Sie dringend nutzen die [Visual Studio-Projektsystem](https://github.com/Microsoft/VSProjectSystem) der hat einer Reihe von Vorteilen, die über ein Projektsystem von Grund auf neu erstellen:  
 > 
 > - Einfacher integrieren.  Sogar ein grundlegenden Projektsystems erfordert Tausende von Codezeilen erforderlich.  Die Onboarding-Kosten auf ein paar Klicks CPS Nutzung reduziert werden, bevor Sie es an Ihre Bedürfnisse anpassen möchten.  
 >   - Einfachere Verwaltung.  Durch die Nutzung CPS, müssen Sie nur Ihren eigenen Szenarios zu verwalten.  Wir kümmern uns um die Wartung der alle von der Project-System-Infrastruktur.  
@@ -37,7 +37,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
  Diese exemplarische Vorgehensweise veranschaulicht die ein Projekt zu erstellen, die Project-Datei Name Erweiterung .myproj verfügt. In dieser exemplarischen Vorgehensweise, die aus dem vorhandenen Visual C#-Projektsystem nutzt Teile.  
   
 > [!NOTE]
->  Ein End-to-End-Beispiel von ein Projektsystem vollständige Sprache finden Sie ausführliche Erläuterungen der IronPython-Beispiel in [VSSDK-Beispiele](../misc/vssdk-samples.md).  
+> Ein End-to-End-Beispiel von ein Projektsystem vollständige Sprache finden Sie ausführliche Erläuterungen der IronPython-Beispiel in [VSSDK-Beispiele](../misc/vssdk-samples.md).  
   
  In dieser exemplarischen Vorgehensweise erfahren, wie diese Aufgaben auszuführen:  
   
@@ -103,7 +103,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
    ```  
   
    > [!IMPORTANT]
-   >  Dies ist nicht das endgültige Format des Codes "Program.cs". die Ersetzungsparameter werden in einem späteren Schritt hostrichtlinieninformationen werden. Möglicherweise Kompilierungsfehler, jedoch so lange, wie der Datei **BuildAction** ist **Content**, Sie sollten in der Lage zu erstellen, und führen das Projekt wie gewohnt.  
+   > Dies ist nicht das endgültige Format des Codes "Program.cs". die Ersetzungsparameter werden in einem späteren Schritt hostrichtlinieninformationen werden. Möglicherweise Kompilierungsfehler, jedoch so lange, wie der Datei **BuildAction** ist **Content**, Sie sollten in der Lage zu erstellen, und führen das Projekt wie gewohnt.  
   
 7. Speichern Sie die Datei.  
   
@@ -112,7 +112,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
 9. In der **Projects\SimpleProject** Ordner hinzufügen, eine XML-Datei mit dem Namen `SimpleProject.myproj`.  
   
    > [!NOTE]
-   >  Die Dateinamenerweiterung für alle Projekte dieses Typs ist .myproj. Wenn Sie sie ändern möchten, müssen Sie es überall ändern, die sie in der exemplarischen Vorgehensweise erwähnt wird.  
+   > Die Dateinamenerweiterung für alle Projekte dieses Typs ist .myproj. Wenn Sie sie ändern möchten, müssen Sie es überall ändern, die sie in der exemplarischen Vorgehensweise erwähnt wird.  
   
 10. Ersetzen Sie den vorhandenen Inhalt durch die folgenden Zeilen ein.  
   
@@ -269,7 +269,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
         ```  
   
         > [!IMPORTANT]
-        >  Vergessen Sie nicht den umgekehrten Schrägstrich am Ende des Pfads.  
+        > Vergessen Sie nicht den umgekehrten Schrägstrich am Ende des Pfads.  
   
     3. Laden Sie das Projekt ein.  
   

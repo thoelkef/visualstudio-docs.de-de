@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444990"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Es gibt eine Vielzahl von Problemen bei der [!INCLUDE[ndptecclick](../includes/n
  Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch aktualisieren die `deploymentProvider` Pfad, damit der Client vom neuen Speicherort vornimmt. Aktualisiert diesen Pfad ist vor allem relevant, wenn Sie die Anwendungen installiert haben. Für online-Anwendungen, die immer über die ursprüngliche URL, die Einstellung gestartet, werden die `deploymentProvider` ist optional. Wenn `deploymentProvider` festgelegt ist, wird es berücksichtigt werden; andernfalls wird zum Starten der Anwendung verwendete URL als Basis-URL verwendet werden, zum Herunterladen von Anwendungsdateien.  
   
 > [!NOTE]
->  Jedes Mal, wenn Sie das Manifest aktualisieren, müssen Sie es auch erneut signieren.  
+> Jedes Mal, wenn Sie das Manifest aktualisieren, müssen Sie es auch erneut signieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)   

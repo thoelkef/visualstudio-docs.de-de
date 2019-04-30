@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427036"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Abrufen von UML-Modellelementen aus IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58946651"
 Wenn der Benutzer Elemente aus einer Quelle in ein Diagramm zieht, werden diese Elemente in einem `System.Windows.Forms.IDataObject` codiert. Die Codierung hängt vom Typ des Quellobjekts ab. Das folgende Fragment zeigt, wie die Elemente abgerufen werden, wenn die Quelle ein UML-Diagramm ist.  
   
 > [!NOTE]
->  Die meisten Vorgänge, die Sie für die Sie für UML-Modelle können ausgeführt werden, mithilfe der Typen in definiert, in den Assemblys **Microsoft.VisualStudio.Uml.Interfaces** und  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Zu diesem Zweck müssen Sie jedoch einige Klassen verwenden, die Teil der Implementierung der UML-Modellierungstools sind. `ShapeElement` in diesem Fragment ist z. B. nicht mit der UML-Klasse `IShape` identisch. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden nun dann für diese Implementierungsklassen verwendet werden, wenn es keine Alternative gibt.  
+> Die meisten Vorgänge, die Sie für die Sie für UML-Modelle können ausgeführt werden, mithilfe der Typen in definiert, in den Assemblys **Microsoft.VisualStudio.Uml.Interfaces** und  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Zu diesem Zweck müssen Sie jedoch einige Klassen verwenden, die Teil der Implementierung der UML-Modellierungstools sind. `ShapeElement` in diesem Fragment ist z. B. nicht mit der UML-Klasse `IShape` identisch. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden nun dann für diese Implementierungsklassen verwendet werden, wenn es keine Alternative gibt.  
   
 ## <a name="code-sample"></a>Codebeispiel  
  Das Projekt muss die folgenden verweisen [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] Assemblys:  

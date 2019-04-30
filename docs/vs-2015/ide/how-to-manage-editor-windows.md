@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430508"
 ---
 # <a name="how-to-manage-editor-windows"></a>Vorgehensweise: Verwalten von-Editor für Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089925"
 Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teilen Sie ein Editorfenster oder öffnen mehrere Instanzen von Editorfenstern.  
   
 > [!NOTE]
->  Nicht alle Editorfenster unterstützen mehrere Instanzen.  
+> Nicht alle Editorfenster unterstützen mehrere Instanzen.  
   
 ## <a name="splitting-an-editor-window"></a>Teilen eines Editorfensters  
  Eine Instanz eines Editorfensters kann für die einfachere Bearbeitung in zwei separate Ansichten geteilt werden.  
@@ -41,7 +41,7 @@ Sie können an mehreren Speicherorten gleichzeitig an Code arbeiten. Hierzu teil
      Der Bearbeitungsbereich ist in zwei Bereiche aufgeteilt, die durch eine Teilerleiste getrennt sind. Sie können in jedem Bereich unabhängig scrollen, um verschiedene Teile des aktiven Dokuments gleichzeitig anzuzeigen und zu bearbeiten. Alle Änderungen, die in einem Bereich vorgenommen werden, spiegeln sich auch im anderen wider.  
   
     > [!TIP]
-    >  Um unterschiedliche Größen für zwei Bereiche festzulegen, ziehen Sie die Teilerleiste nach oben oder unten.  
+    > Um unterschiedliche Größen für zwei Bereiche festzulegen, ziehen Sie die Teilerleiste nach oben oder unten.  
   
 #### <a name="to-return-to-single-pane-view"></a>So kehren Sie in die Anzeige mit nur einem Bereich zurück  
   

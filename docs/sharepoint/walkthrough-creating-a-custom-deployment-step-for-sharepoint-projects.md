@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430430"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Schritten zur Bereitstellung in einer bestimmten Reihenfolge. Visual Studio enthält viele integrierte Bereitstellungsschritte, aber Sie können auch eigene erstellen.
@@ -74,7 +74,7 @@ ms.locfileid: "60040171"
 3. In der **neues Projekt** Dialogfeld erweitern Sie die **Visual C#-** oder **Visual Basic** Knoten, und wählen Sie dann die **Erweiterbarkeit** Knoten.
 
     > [!NOTE]
-    >  Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
+    > Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
 
 4. Wählen Sie am oberen Rand des Dialogfelds, **.NET Framework 4.5** in der Liste der Versionen von .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040171"
 1. In der **DeploymentStepExtension** Projekt, öffnen Sie die Codedatei UpgradeStep und fügen Sie den folgenden Code hinein.
 
     > [!NOTE]
-    >  Nachdem Sie diesen Code hinzufügen, muss das Projekt einige Kompilierungsfehler, aber allerdings verschwinden fügen Sie Code bei in späteren Schritten fest.
+    > Nachdem Sie diesen Code hinzufügen, muss das Projekt einige Kompilierungsfehler, aber allerdings verschwinden fügen Sie Code bei in späteren Schritten fest.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040171"
 6. In der **Typ** wählen **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040171"
 10. In der **Typ** aus, geben Sie **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Dieses Element gibt eine benutzerdefinierte Erweiterung, die in der Visual Studio-Erweiterung enthalten sein sollen. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Dieses Element gibt eine benutzerdefinierte Erweiterung, die in der Visual Studio-Erweiterung enthalten sein sollen. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040171"
 6. Klicken Sie unter **was der Vertrauensebene für diese SharePoint-Lösung ist**, wählen Sie die **als farmlösung bereitstellen** Optionsfeld aus.
 
    > [!NOTE]
-   >  Der Schritt der Bereitstellung eines Upgrades unterstützt nicht Sandbox-Lösungen.
+   > Der Schritt der Bereitstellung eines Upgrades unterstützt nicht Sandbox-Lösungen.
 
 7. Wählen Sie die **Fertig stellen** Schaltfläche.
 

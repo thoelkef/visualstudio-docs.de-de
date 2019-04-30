@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441060"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
    - Wählen Sie **minimale Sprache** in anderen Fällen oder wenn Sie unsicher sind.  
   
        > [!NOTE]
-       >  Wenn Sie ein Klassendiagramm oder ein Komponentendiagramm erstellen möchten, können Sie auch UML-Modelle verwenden. Die UML-Modellierungstools stellen einen Satz von Diagrammen bereit, die um ein einzelnes Modell herum integriert sind. Sie sind erweiterbar und können über ModelBus in Ihre DSL integriert werden. Weitere Informationen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
+       > Wenn Sie ein Klassendiagramm oder ein Komponentendiagramm erstellen möchten, können Sie auch UML-Modelle verwenden. Die UML-Modellierungstools stellen einen Satz von Diagrammen bereit, die um ein einzelnes Modell herum integriert sind. Sie sind erweiterbar und können über ModelBus in Ihre DSL integriert werden. Weitere Informationen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
   
    - Wählen Sie **minimaler WinForm-Designer** oder **minimaler WPF-Designer** um eine DSL zu erstellen, die auf einer Windows Forms- oder WPF-Oberfläche angezeigt wird. Sie müssen Code zur Definition des Editors schreiben. Weitere Informationen finden Sie unter den folgenden Themen:  
   
@@ -108,7 +108,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
  Schließen Sie die experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Wenn Sie die DSL geändert haben, können Sie die Formen in der "Sample"-Testdatei nicht mehr sehen. Sie können aber neue Elemente erstellen.  
+> Wenn Sie die DSL geändert haben, können Sie die Formen in der "Sample"-Testdatei nicht mehr sehen. Sie können aber neue Elemente erstellen.  
   
 ### <a name="modifying-the-template-dsl"></a>Ändern der Vorlagen-DSL  
  Benennen Sie einige oder alle Domänenklassen und Formklassen der Vorlagen-DSL-Definition um, und behalten Sie sie bei. Die neuen Klassennamen sollten gültige CLR-Namen ohne Leerzeichen oder Interpunktionszeichen sein.  
@@ -137,7 +137,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   In den folgenden Abschnitten wird die Erstellung der nützlichsten DSL-Features beschrieben. Es gibt viele andere Muster, nach denen eine DSL erstellt werden kann, aber die folgenden sind die gängigsten.  
   
 > [!NOTE]
->  Nach dem Hinzufügen eines Features, vergessen Sie nicht auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer vor dem Erstellen und Ausführen von Ihrer DSL.  
+> Nach dem Hinzufügen eines Features, vergessen Sie nicht auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer vor dem Erstellen und Ausführen von Ihrer DSL.  
   
  In der folgenden Abbildung sind die Klassen und Beziehungen der DSL dargestellt, die in diesem Thema als Beispiel verwendet wird.  
   
@@ -148,7 +148,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
  ![Instanzmodell für generierte DSL](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  "Modell" bezieht sich auf eine Instanz Ihrer DSL, die Benutzer erstellen. Sie wird üblicherweise als Diagramm dargestellt. In diesem Thema werden das DSL-Definitionsdiagramm und die Modelldiagramme erläutert, die bei Verwendung der DSL angezeigt werden.  
+> "Modell" bezieht sich auf eine Instanz Ihrer DSL, die Benutzer erstellen. Sie wird üblicherweise als Diagramm dargestellt. In diesem Thema werden das DSL-Definitionsdiagramm und die Modelldiagramme erläutert, die bei Verwendung der DSL angezeigt werden.  
   
 ## <a name="classes"></a> Definieren von Domänenklassen  
  Domänenklassen stellen die Konzepte der DSL dar. Die Instanzen sind *Modellelemente*. Z. B. in einem **"Musikbibliothek"** DSL möglicherweise Domänenklassen, die mit dem Namen **Album** und **"Song"**.  
@@ -185,7 +185,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
  Weitere Informationen finden Sie unter [Eigenschaften des Domänenbeziehungen](../modeling/properties-of-domain-relationships.md) und [Eigenschaften von Domänenrollen](../modeling/properties-of-domain-roles.md).  
   
 > [!NOTE]
->  Einbettung ist nicht identisch mit Vererbung. Die untergeordneten Elemente in einer einbettenden Beziehung erben keine Features von ihren übergeordneten Elementen.  
+> Einbettung ist nicht identisch mit Vererbung. Die untergeordneten Elemente in einer einbettenden Beziehung erben keine Features von ihren übergeordneten Elementen.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Hinzufügen von Domäneneigenschaften zu den einzelnen Domänenklassen  
  In Domäneneigenschaften werden Werte gespeichert. Beispiele sind: Name, Titel, Veröffentlichungsdatum.  
@@ -296,7 +296,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
    2. Mit der rechten Maustaste unter des Knotens **Toolboxregisterkarten** Listenfeldsteuerelement mit den gleichen Namen wie Ihre DSL hat, z. B. "Musikbibliothek". Klicken Sie auf **Elementwerkzeug hinzufügen**.  
   
        > [!NOTE]
-       >  Wenn Sie mit der rechten Maustaste die **Tools** Knoten nicht sehen Sie **Elementwerkzeug hinzufügen**. Klicken Sie stattdessen auf den übergeordneten Knoten.  
+       > Wenn Sie mit der rechten Maustaste die **Tools** Knoten nicht sehen Sie **Elementwerkzeug hinzufügen**. Klicken Sie stattdessen auf den übergeordneten Knoten.  
   
    3. Die mit dem neuen Elementtool ausgewählt haben, legen Sie im Fenster **Klasse** mit der Domänenklasse, die Sie vor kurzem hinzugefügt haben.  
   
@@ -464,7 +464,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
          Klicken Sie unter **Anzeigeeigenschaft**, wählen Sie die Eigenschaft, die in der Liste angezeigt werden sollen. Im Beispiel ist dies "Titel".  
   
 > [!NOTE]
->  Mithilfe der Pfadfelder in der Decorator-Zuordnung und der Depot-Zuordnung können Sie komplexere Beziehungen zwischen der Domänenklasse und der Depot-Form erstellen.  
+> Mithilfe der Pfadfelder in der Decorator-Zuordnung und der Depot-Zuordnung können Sie komplexere Beziehungen zwischen der Domänenklasse und der Depot-Form erstellen.  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>So definieren Sie ein Werkzeug zum Erstellen der Form  
   
@@ -475,7 +475,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
 3. Mit der rechten Maustaste unter des Knotens **Toolboxregisterkarten** Listenfeldsteuerelement mit den gleichen Namen wie Ihre DSL hat, z. B. "Musikbibliothek". Klicken Sie auf **Elementwerkzeug hinzufügen**.  
   
     > [!NOTE]
-    >  Wenn Sie mit der rechten Maustaste die **Tools** Knoten nicht sehen Sie **Elementwerkzeug hinzufügen**. Klicken Sie stattdessen auf den übergeordneten Knoten.  
+    > Wenn Sie mit der rechten Maustaste die **Tools** Knoten nicht sehen Sie **Elementwerkzeug hinzufügen**. Klicken Sie stattdessen auf den übergeordneten Knoten.  
   
 4. Die mit dem neuen Elementtool ausgewählt haben, legen Sie im Fenster **Klasse** mit der Domänenklasse, die Sie vor kurzem hinzugefügt haben.  
   

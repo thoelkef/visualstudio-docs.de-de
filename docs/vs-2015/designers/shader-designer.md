@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432585"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 |**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird.<br /><br /> **Mit D3D11 rendern**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Mit D3D11WARP rendern**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Framerate**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|  
   
 > [!TIP]
->  Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.  
+> Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.  
   
 ### <a name="working-with-nodes-and-connections"></a>Arbeiten mit Knoten und Verbindungen  
  Verwenden Sie den Modus **Auswählen**, um Knoten hinzuzufügen, zu entfernen, neu anzuordnen, zu verbinden und zu konfigurieren. So werden diese grundlegenden Vorgänge ausgeführt:  

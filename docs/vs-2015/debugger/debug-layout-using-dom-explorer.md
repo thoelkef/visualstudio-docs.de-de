@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434119"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Die Registerkarte **Layout** des DOM Explorer teigt das [CSS-Verschachtelungsmodell](http://go.microsoft.com/fwlink/?LinkID=238778) für das ausgewählte Elemente in einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App, Windows Phone Store-App oder einer mit Visual Studio Tools for Apache Cordova erstellten App. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
   
 > [!TIP]
->  Änderungen, die Sie auf der Registerkarte **Layout** vornehmen, werden nicht dauerhaft übernommen. Wenn Sie permanente Änderungen am Quellcode vornehmen möchten, aktualisieren Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** (nur Windows Store- und Windows Phone Store-Apps) auf der Symbolleiste "Debuggen". Dadurch können Sie vermeiden, dass der Debugger neu gestartet wird.  
+> Änderungen, die Sie auf der Registerkarte **Layout** vornehmen, werden nicht dauerhaft übernommen. Wenn Sie permanente Änderungen am Quellcode vornehmen möchten, aktualisieren Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** (nur Windows Store- und Windows Phone Store-Apps) auf der Symbolleiste "Debuggen". Dadurch können Sie vermeiden, dass der Debugger neu gestartet wird.  
   
  DOM Explorer zum Ändern von layoutaspekten, die nicht im feldmodell angezeigt werden, finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -76,21 +76,21 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 7. Öffnen Sie "Section 4" durch Blättern oder Streichen.  
   
     > [!TIP]
-    >  Positionieren Sie den Phone-Emulator oder den Simulator direkt neben dem Visual Studio-Fenster, sodass Ihnen die Ergebnisse der von Ihnen an den CSS-Stilen vorgenommenen Auswahl und alle Änderungen sofort angezeigt werden.  
+    > Positionieren Sie den Phone-Emulator oder den Simulator direkt neben dem Visual Studio-Fenster, sodass Ihnen die Ergebnisse der von Ihnen an den CSS-Stilen vorgenommenen Auswahl und alle Änderungen sofort angezeigt werden.  
   
      Wenn "Section 4" geladen wird, können Sie sehen, dass die unteren Bilder nicht richtig aussehen. Jedes Elementbild erscheint in der Hälfte zerteilt (wobei die linke Hälfte fehlt).  
   
 8. Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt.  
   
     > [!TIP]
-    >  Sie können auch die Pfeilschaltflächen oder andere Methoden verwenden, um HTML-Elemente direkt im DOM Explorer auszuwählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
+    > Sie können auch die Pfeilschaltflächen oder andere Methoden verwenden, um HTML-Elemente direkt im DOM Explorer auszuwählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Wählen Sie im Phone-Emulator oder Simulator die graue rechte Hälfte eines der Bilder aus, das nur halb dargestellt ist. Das ausgewählte Element wird markiert, wie hier im Windows Phone-Emulator dargestellt:  
   
      ![Auswählen eines DOM-Elements](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  Der Simulator unterstützt das Zeigen auf Elemente, um eine rechteckige Hervorhebung um DOM-Elemente anzuzeigen, bevor Sie sie auswählen. Der Windows Phone-Emulator unterstützt dies nicht.  
+    > Der Simulator unterstützt das Zeigen auf Elemente, um eine rechteckige Hervorhebung um DOM-Elemente anzuzeigen, bevor Sie sie auswählen. Der Windows Phone-Emulator unterstützt dies nicht.  
   
      Wenn Sie ein DOM-Element auswählen, wählt der DOM Explorer automatisch das entsprechende IMG-Element in Visual Studio aus. Das Element, das im Dom Explorer ausgewählt wird, sieht wie folgt aus:  
   
@@ -114,7 +114,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 11. Um zu sehen, wie die margin-left-Regel angewendet wird, klicken Sie auf die Registerkarte **Berechnet** , und schauen Sie unter der Regel "margin-left" nach. Sie sehen, dass die margin-left-Regel mit einem Wert von "5em" festgelegt ist, der berechnete Wert aber "66.66px" oder "146.66px" lautet, je nach Zielgerät.  
   
     > [!TIP]
-    >  Die **berechnet** Registerkarte zeigt, dass die Margin-Left-Regel, in festgelegt ist der `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor in "Hub.CSS" gefunden. Sie müssen das Problem in dieser Demo-App beheben.  
+    > Die **berechnet** Registerkarte zeigt, dass die Margin-Left-Regel, in festgelegt ist der `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor in "Hub.CSS" gefunden. Sie müssen das Problem in dieser Demo-App beheben.  
   
      Sie können auch die Registerkarte **Layout** verwenden, um Änderungen an den Layoutwerten zu testen.  
   

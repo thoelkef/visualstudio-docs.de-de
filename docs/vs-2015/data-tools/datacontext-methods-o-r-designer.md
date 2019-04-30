@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431137"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext-Methoden (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & Auto
  Die gespeicherten Prozeduren und Funktionen zugeordneten <xref:System.Data.Linq.DataContext>-Methoden werden im Methodenbereich von [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] angezeigt. Der Methodenbereich ist der Bereich am Rand der **Entitäten** Bereich (der Hauptentwurfsoberfläche). Der Methodenbereich Listet alle <xref:System.Data.Linq.DataContext> Methoden, die Sie erstellt haben die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Standardmäßig ist der Methodenbereich leer. Ziehen Sie gespeicherte Prozeduren oder Funktionen aus **Server-Explorer**/**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] erstellen <xref:System.Data.Linq.DataContext> Methoden und den Methodenbereich zu füllen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von DataContext-Methoden, die gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).  
   
 > [!NOTE]
->  Öffnen und schließen Sie den Methodenbereich, mit der rechten Maustaste die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , und klicken Sie dann auf **Methodenbereich ausblenden** oder **Methodenbereich anzeigen**, oder verwenden Sie die Tastenkombination STRG + 1.  
+> Öffnen und schließen Sie den Methodenbereich, mit der rechten Maustaste die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , und klicken Sie dann auf **Methodenbereich ausblenden** oder **Methodenbereich anzeigen**, oder verwenden Sie die Tastenkombination STRG + 1.  
   
 ## <a name="two-types-of-datacontext-methods"></a>Zwei Typen von DataContext-Methoden  
  DataContext-Methoden sind Methoden, die gespeicherten Prozeduren und Funktionen in der Datenbank zugeordnet werden. DataContext-Methoden können im Methodenbereich des [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] erstellt und hinzugefügt werden. Es gibt zwei verschiedene Typen von <xref:System.Data.Linq.DataContext>-Methoden, die sich dadurch unterscheiden, dass von dem einen mindestens ein Resultset zurückgegeben wird und von dem anderen nicht:  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & Auto
  Beim Ziehen von gespeicherten Prozeduren und Funktionen von **Server-Explorer**/**Datenbank-Explorer** auf die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], der Rückgabetyp der generierten <xref:System.Data.Linq.DataContext> Methode unterscheidet sich abhängig davon, wo Sie das Element ablegen. Die Elemente direkt auf einer existierenden Entitätsklasse ablegen, wird erstellt eine <xref:System.Data.Linq.DataContext> -Methode mit dem Rückgabetyp der Entitätsklasse; durch Ablegen von Elementen in einem leeren Bereich des der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (in beiden Bereichen) erstellt eine <xref:System.Data.Linq.DataContext> -Methode, die zurückgegeben ein automatisch generierten Typ. Der automatisch generierte Typ erhält einen Namen, der dem der gespeicherten Prozedur oder Funktion entspricht, und Eigenschaften, die den von der gespeicherten Prozedur oder Funktion zurückgegebenen Feldern entsprechen.  
   
 > [!NOTE]
->  Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, wenn Sie sie dem Methodenbereich hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie, und überprüfen Sie die Eigenschaft **Rückgabetyp** im Fenster **Eigenschaften**. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+> Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, wenn Sie sie dem Methodenbereich hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie, und überprüfen Sie die Eigenschaft **Rückgabetyp** im Fenster **Eigenschaften**. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
   
  Objekte, die von der Datenbank auf die Oberfläche des O/R-Designers gezogen werden, werden nach den Namen der Objekte in der Datenbank automatisch benannt. Wenn dasselbe Objekt mehrfach auf die Oberfläche gezogen wird, wird an das Ende des neuen Namens eine Nummer angehängt, damit die Namen unterschieden werden können. Wenn Namen von Datenbankobjekten Leerzeichen oder in Visual Basic oder C# nicht unterstützte Zeichen enthalten, wird das entsprechende Zeichen durch einen Unterstrich ersetzt.  
   

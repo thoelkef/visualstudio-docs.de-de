@@ -11,23 +11,23 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436686"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Beispielimplementierung der Änderungen von Werten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Jeder lokalen angezeigt, der **"lokal"** Fenster verfügt über eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Objekt verknüpft. Dies `IDebugProperty2` Objekt enthält, den lokalen Namen, Wert und Typ. Wenn ein Benutzer den Wert eines lokalen Elements ändert, ruft Visual Studio [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) für das update der lokalen im Arbeitsspeicher. In diesem Beispiel wird die lokale dargestellt, durch die `CFieldProperty` Klasse, die implementiert die `IDebugProperty2` Schnittstelle.  
   
 > [!NOTE]
->  Für **sehen Sie sich** und **Schnellüberwachung** Ausdrücke, liegt der Wert geändert wird durch die `CValueProperty` Klasse im MyCEE-Beispiel. Jedoch die Implementierung der `IDebugProperty2::SetValueAsString` wie hier dargestellt ist.  
+> Für **sehen Sie sich** und **Schnellüberwachung** Ausdrücke, liegt der Wert geändert wird durch die `CValueProperty` Klasse im MyCEE-Beispiel. Jedoch die Implementierung der `IDebugProperty2::SetValueAsString` wie hier dargestellt ist.  
   
  Diese Implementierung der `IDebugProperty2::SetValueAsString` führt die folgenden Aufgaben:  
   

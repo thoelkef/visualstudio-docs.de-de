@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433388"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Um eine DSL-Projektmappe zu erstellen, wählen Sie eine der Lösungsvorlagen, di
  Die folgenden Vorlagen stehen in den Designer-Assistenten in einer domänenspezifischen Sprache zur Verfügung.  
   
 > [!NOTE]
->  Der Zweck der Vorlagen ist, geben Sie eine DSL ab. Die Vorlagen, die mit dem Namen-Klasse, Komponente Diagramme sind nicht vollständige UML-Diagramme. Wenn Sie ein UML-Modell erstellen möchten, sollten Sie die UML-Modellierungstools, die einen Satz von Diagrammen zu bieten, die um ein einzelnes Modell herum integriert sind. Sie sind erweiterbar und können über ModelBus in Ihre DSL integriert werden. Weitere Informationen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
+> Der Zweck der Vorlagen ist, geben Sie eine DSL ab. Die Vorlagen, die mit dem Namen-Klasse, Komponente Diagramme sind nicht vollständige UML-Diagramme. Wenn Sie ein UML-Modell erstellen möchten, sollten Sie die UML-Modellierungstools, die einen Satz von Diagrammen zu bieten, die um ein einzelnes Modell herum integriert sind. Sie sind erweiterbar und können über ModelBus in Ihre DSL integriert werden. Weitere Informationen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
   
 |Vorlage|Features|Beschreibung|  
 |--------------|--------------|-----------------|  

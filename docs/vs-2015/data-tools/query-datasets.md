@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425369"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
  Innerhalb eines Datasets, Tabellen- und Spaltennamen sind standardmäßig Groß-/Kleinschreibung, d. h. eine Tabelle in ein Dataset namens "Customers" kann werden so genannte "Customers". Dies entspricht den Benennungskonventionen in verschiedenen Datenbanken, einschließlich SQL clientmethodenaufrufe SQL Server, das Standardverhalten, dass die Namen von Datenelementen, die nur durch Fall unterschieden werden können.  
   
 > [!NOTE]
->  Im Gegensatz zu Datasets sind XML-Dokumenten Groß-/Kleinschreibung beachtet, also die Namen von Datenelementen, die in Schemas definierte Groß-/Kleinschreibung beachtet. Schemaprotokoll ermöglicht beispielsweise das Schema zum Definieren einer Tabelle namens "Customers" und eine andere Tabelle, die Namen "Customers". Dies kann zu Namenskonflikten führen, wenn ein Schema, das Elemente enthält, die nur durch Fall unterscheiden verwendet wird, um eine Dataset-Klasse zu generieren.  
+> Im Gegensatz zu Datasets sind XML-Dokumenten Groß-/Kleinschreibung beachtet, also die Namen von Datenelementen, die in Schemas definierte Groß-/Kleinschreibung beachtet. Schemaprotokoll ermöglicht beispielsweise das Schema zum Definieren einer Tabelle namens "Customers" und eine andere Tabelle, die Namen "Customers". Dies kann zu Namenskonflikten führen, wenn ein Schema, das Elemente enthält, die nur durch Fall unterscheiden verwendet wird, um eine Dataset-Klasse zu generieren.  
   
  Groß-/Kleinschreibung, kann jedoch sein, ein Faktor bei der Interpretation der Daten im Dataset. Z. B. Wenn Sie Daten in einer Datasettabelle filtern, könnte die Suchkriterien andere Ergebnisse zurückgeben abhängig davon, ob der Vergleich Groß-/Kleinschreibung beachtet. Sie können steuern, die Groß-/Kleinschreibung von Filtern, durchsuchen und Sortieren durch Festlegen des Datasets <xref:System.Data.DataSet.CaseSensitive%2A> Eigenschaft. Alle Tabellen im Dataset, den Wert dieser Eigenschaft wird standardmäßig erben. (Sie können diese Eigenschaft für jede einzelne Tabelle überschreiben, indem Sie der Tabelle festlegen <xref:System.Data.DataTable.CaseSensitive%2A> Eigenschaft.)  
   

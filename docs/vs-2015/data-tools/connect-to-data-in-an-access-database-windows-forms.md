@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437000"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-
      ![Datenanbieter für OLE DB ändern](../data-tools/media/datachangedatasourceoledb.png "DataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Obwohl eine Datenquelle **Microsoft Access-Datenbankdatei (OLE DB)** mag die richtige Wahl, Sie verwenden diese Datenquellentyp nur für MDB-Datenbankdateien.  
+    > Obwohl eine Datenquelle **Microsoft Access-Datenbankdatei (OLE DB)** mag die richtige Wahl, Sie verwenden diese Datenquellentyp nur für MDB-Datenbankdateien.  
   
 8. In **OLE DB-Anbieter**Option **Microsoft Office 12.0 Access Database Engine OLE DB Provider**.  
   
@@ -70,7 +70,7 @@ Sie können mit einer Access-Datenbank (entweder eine MDF-Datei oder eine ACCDB-
 9. In **Server-oder Dateiname**, geben Sie den Pfad und Namen der ACCDB-Datei zu dem Sie eine Verbindung herstellen, und wählen Sie dann möchten **OK**.  
   
     > [!NOTE]
-    >  Wenn die Datenbankdatei einen Benutzernamen und ein Kennwort verfügt, geben Sie diese vor der Auswahl **OK**.  
+    > Wenn die Datenbankdatei einen Benutzernamen und ein Kennwort verfügt, geben Sie diese vor der Auswahl **OK**.  
   
 10. Wählen Sie **Weiter** auf die **wählen Sie Ihre Datenverbindung** Seite.  
   

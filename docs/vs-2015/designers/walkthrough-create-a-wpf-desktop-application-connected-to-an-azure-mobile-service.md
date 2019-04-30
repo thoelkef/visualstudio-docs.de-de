@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421249"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit einem Azure Mobile Service verbunden sind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 3. Wählen Sie im linken Bereich **WindowsAzure.MobileServices**aus, und wählen Sie dann im rechten Bereich die Schaltfläche **Installieren** aus.  
   
     > [!NOTE]
-    >  Wenn ein Dialogfeld mit einer **Vorschau** angezeigt wird, prüfen Sie die vorgeschlagenen Änderungen, und wählen Sie dann die Schaltfläche **OK** aus.  
+    > Wenn ein Dialogfeld mit einer **Vorschau** angezeigt wird, prüfen Sie die vorgeschlagenen Änderungen, und wählen Sie dann die Schaltfläche **OK** aus.  
   
 4. Lesen Sie im Dialogfeld zum **Akzeptieren der Lizenzbedingungen** die Lizenzbedingungen, und akzeptieren Sie diese durch Klicken auf die Schaltfläche **Ich stimme den Lizenzbedingungen zu** .  
   
      Die erforderlichen Verweise werden dem **Projektmappen-Explorer**hinzugefügt.  
   
     > [!NOTE]
-    >  Wenn Sie die Lizenzbedingungen nicht akzeptieren, wählen Sie die Schaltfläche **Ich stimme den Lizenzbedingungen nicht zu** aus. In diesem Fall können Sie die exemplarische Vorgehensweise nicht fortsetzen.  
+    > Wenn Sie die Lizenzbedingungen nicht akzeptieren, wählen Sie die Schaltfläche **Ich stimme den Lizenzbedingungen nicht zu** aus. In diesem Fall können Sie die exemplarische Vorgehensweise nicht fortsetzen.  
   
 ## <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche  
  Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Zunächst erstellen Sie ein wiederverwendbares Benutzersteuerelement, das ein nebeneinander angeordnetes, in zwei Bereiche unterteiltes Standardbereichslayout anzeigt. Sie fügen das Benutzersteuerelement dem Hauptanwendungsfenster hinzu, und Sie fügen Steuerelemente zum Eingeben und Anzeigen von Daten hinzu. Dann schreiben Sie Code, um die Interaktion mit dem Mobile Service-Backend zu definieren.  
@@ -288,7 +288,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
      ![Das MainWindow-Element im Designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Bei Ausführen der nächsten Vorgehensweisen werden möglicherweise Fehler in der **Fehlerliste** angezeigt, wenn diese geöffnet ist. Diese verschwinden wieder, während Sie die verbleibenden Vorgehensweisen ausführen.  
+    > Bei Ausführen der nächsten Vorgehensweisen werden möglicherweise Fehler in der **Fehlerliste** angezeigt, wenn diese geöffnet ist. Diese verschwinden wieder, während Sie die verbleibenden Vorgehensweisen ausführen.  
   
 6. Erweitern Sie in **Projektmappen-Explorer**den Knoten **MainWindow.xaml** , und öffnen Sie die Datei **MainWindow.xaml.cs** oder **MainWindow.xaml.vb** .  
   
@@ -482,7 +482,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 3. Wählen Sie im Dialogfeld **NEUER MOBILER SERVICE** das Textfeld **URL** aus, und geben Sie `wpfquickstart01` ein.  
   
     > [!NOTE]
-    >  Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
+    > Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
   
      Hiermit wird die URL für den Dienst `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 5. Wählen Sie in der Liste **REGION** das Rechenzentrum aus, in dem Sie den mobilen Service bereitstellen möchten, und wählen Sie dann **Weiter** (Pfeil nach rechts) aus.  
   
     > [!NOTE]
-    >  Für diesen Service verwenden Sie die standardmäßige **BACKEND** -Einstellung, **JavaScript**.  
+    > Für diesen Service verwenden Sie die standardmäßige **BACKEND** -Einstellung, **JavaScript**.  
   
 6. Wenn Sie eine neue Datenbank erstellen, wählen Sie auf der Seite **Datenbankeinstellungen angeben** in der Liste **SERVER** die Option **Neuer SQL-Datenbankserver**aus, geben Sie Ihren **SQL-ANMELDENAMEN** und Ihr **KENNWORT**ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
   

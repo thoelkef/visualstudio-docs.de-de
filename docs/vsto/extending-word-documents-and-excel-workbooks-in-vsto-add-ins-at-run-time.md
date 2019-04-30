@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437243"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-add-ins zur Laufzeit
   Sie können ein VSTO-Add-In verwenden, um Word-Dokumente und Excel-Arbeitsmappen wie folgt anzupassen:
@@ -89,7 +89,7 @@ ms.locfileid: "60049469"
  Sie können Windows Forms-Steuerelemente oder *Hoststeuerelemente*hinzufügen. Ein Hoststeuerelement ist ein Steuerelement, das von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt wird und mit dem ein entsprechendes Steuerelement in der primären Word- oder Excel-Interopassembly eingeschlossen wird. Ein Hoststeuerelement macht alle das Verhalten des zugrunde liegenden systemeigenen Office-Objekts verfügbar. Außerdem löst Ereignisse aus, und mithilfe der Windows Forms-Datenbindungsmodell an Daten gebunden werden kann. Weitere Informationen finden Sie unter [hosten Elemente und Übersicht zu Steuerelementen](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
->  Es ist nicht möglich, ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement einem Arbeitsblatt oder ein <xref:Microsoft.Office.Tools.Word.XMLNode> - oder <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement einem Dokument per VSTO-Add-In hinzuzufügen. Diese Hoststeuerelemente können nicht programmgesteuert hinzugefügt werden. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Es ist nicht möglich, ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement einem Arbeitsblatt oder ein <xref:Microsoft.Office.Tools.Word.XMLNode> - oder <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement einem Dokument per VSTO-Add-In hinzuzufügen. Diese Hoststeuerelemente können nicht programmgesteuert hinzugefügt werden. Weitere Informationen finden Sie unter [programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ### <a name="persist-and-remove-controls"></a>Speichern und Entfernen von Steuerelementen
  Wenn Sie einem Dokument oder Arbeitsblatt verwaltete Steuerelemente hinzufügen, werden die Steuerelemente nicht beibehalten, wenn das Dokument gespeichert und anschließend geschlossen wird. Alle Hoststeuerelemente werden entfernt, sodass nur die zugrunde liegenden systemeigenen Office-Objekte übrig bleiben. Beispielsweise wird ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Element zu einem <xref:Microsoft.Office.Interop.Excel.ListObject>-Element. Außerdem werden alle Windows Forms-Steuerelemente entfernt, aber ActiveX-Wrapper für die Steuerelemente im Dokument bleiben erhalten. Sie müssen in Ihr VSTO-Add-In Code zum Bereinigen der Steuerelemente oder zum Neuerstellen der Steuerelemente beim nächsten Öffnen des Dokuments einfügen. Weitere Informationen finden Sie unter [beibehalten von dynamischen Steuerelementen in Office-Dokumente](../vsto/persisting-dynamic-controls-in-office-documents.md).

@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411138"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterung Schema 2.0
 Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. Das Dateiformat wird durch ein Schema bestimmt. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das Ladeprogramm des Manifeste ignoriert XML-Elemente und Attribute, die sie nicht versteht.
 
 > [!IMPORTANT]
->  Visual Studio 2015 können VSIX-Dateien in den Formaten für Visual Studio 2010, Visual Studio 2012 oder Visual Studio 2013 laden.
+> Visual Studio 2015 können VSIX-Dateien in den Formaten für Visual Studio 2010, Visual Studio 2012 oder Visual Studio 2013 laden.
 
 ## <a name="package-manifest-schema"></a>Paket-manifest-schema
  Das Stammelement der XML-Manifestdatei ist `<PackageManifest>`. Es wurde ein einzelnes Attribut `Version`, dies ist die Version des Manifests-Formats. Wenn das Format wesentliche Änderungen vorgenommen werden, wird das Versionsformat geändert. In diesem Artikel wird beschrieben, Manifestformat Version 2.0, die im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert der-Version = "2.0".

@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f64e2cebf267e9be1773b37a5827c876961a0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dfde37125b78e2ff8077712321b3a19816582cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387803"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen mithilfe von Server-Explorer
   Jetzt können Sie lokale SharePoint-Verbindungen in Durchsuchen **Server-Explorer**. Mit diesem Verfahren können Sie auf Ihrem System durch die Komponenten einer SharePoint-Website navigieren. SharePoint-Site-Komponenten, z. B. Listendefinitionen und Inhaltstypen, angezeigt in einem Knoten mit dem Namen **SharePoint-Verbindungen** in der Strukturansicht des **Server-Explorer**. Anzuzeigende **Server-Explorer**, wählen Sie auf der Menüleiste **Ansicht** > **Server-Explorer**. Zusätzlich zur Anzeige der SharePoint-Site-Komponenten, können Sie Elemente entfernen, deren Eigenschaften anzeigen oder Aktualisieren mithilfe der Befehle im Kontextmenü der Strukturansicht.
 
 > [!IMPORTANT]
->  Um einer SharePoint-Website zu durchsuchen, müssen Sie Administrator der SharePoint-Websitesammlung sein, und Sie werden Sie als Administrator des lokalen Computers müssen Visual Studio ausführen. Andernfalls die Website wird in **Server-Explorer**, aber Sie können nicht den Knoten erweitern. Öffnen Sie die Website in einem Webbrowser öffnen, um zu überprüfen, ob Sie ein Administrator der Websitesammlung sind, die **Websiteaktionen** Menü wählen **Websiteberechtigungen**, und klicken Sie auf die **Berechtigungen: Teamwebsite** Seite die **Websitesammlungsadministratoren** Befehl die **verwalten** -Gruppe auf dem Menüband. Ihr Name wird im Textfeld angezeigt, wenn Sie Administrator einer Websitesammlung sind. Wenn die **Websitesammlungsadministratoren** Befehl nicht in der Gruppe "verwalten" auf dem Menüband angezeigt wird, Sie sind ein Administrator für die Websitesammlung nicht und die entsprechenden Berechtigungen müssen vom Administrator Website abrufen.
+> Um einer SharePoint-Website zu durchsuchen, müssen Sie Administrator der SharePoint-Websitesammlung sein, und Sie werden Sie als Administrator des lokalen Computers müssen Visual Studio ausführen. Andernfalls die Website wird in **Server-Explorer**, aber Sie können nicht den Knoten erweitern. Öffnen Sie die Website in einem Webbrowser öffnen, um zu überprüfen, ob Sie ein Administrator der Websitesammlung sind, die **Websiteaktionen** Menü wählen **Websiteberechtigungen**, und klicken Sie auf die **Berechtigungen: Teamwebsite** Seite die **Websitesammlungsadministratoren** Befehl die **verwalten** -Gruppe auf dem Menüband. Ihr Name wird im Textfeld angezeigt, wenn Sie Administrator einer Websitesammlung sind. Wenn die **Websitesammlungsadministratoren** Befehl nicht in der Gruppe "verwalten" auf dem Menüband angezeigt wird, Sie sind ein Administrator für die Websitesammlung nicht und die entsprechenden Berechtigungen müssen vom Administrator Website abrufen.
 
 ## <a name="server-explorer-nodes"></a>Server-Explorer-Knoten
  Jede Komponente von einer SharePoint-Website wird dargestellt, durch einen Knoten in der **Server-Explorer** Strukturansicht unter **SharePoint-Verbindungen**. Standard-SharePoint-Websites enthalten z. B. einen Inhaltstyp namens-Lösung, die einen Diskussionstyp, der darstellt in zeigt die **Diskussionen** auf der Seite der SharePoint-Website. Der Inhaltstyp Diskussion enthält mehrere Felder. An diese Felder in **Server-Explorer**, erweitern Sie die **"ContentTypes"** Knoten, und klicken Sie dann die **Diskussion** Knoten. Darunter befinden sich mehrere Feldknoten, z. B. Text, Betreff der Diskussion und Titel.

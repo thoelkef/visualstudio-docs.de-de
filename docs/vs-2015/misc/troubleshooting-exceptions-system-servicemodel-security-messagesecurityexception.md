@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436553"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException
 Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst, wenn [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] feststellt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:  
@@ -35,7 +35,7 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
  Wenn ein Remotebenutzer die Website unter Verwendung des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Servers ausführt und zusätzlich mit einem Webdienst oder WCF-Dienst arbeitet, können Sie entweder eine benutzerdefinierte Dienstbindung erstellen oder die NTLM-Sicherheit deaktivieren.  
   
 > [!IMPORTANT]
->  Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
+> Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
   
  Wenn eine benutzerdefinierte Dienstbindung erstellt wird, bleibt der Schutz durch die NTLM-Authentifizierung weiterhin bestehen.  
   
@@ -74,7 +74,7 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
    Mithilfe der folgenden Schritte können Sie die NTLM-Sicherheit bei Verwendung eines WCF-Dienstverweises deaktivieren.  
   
 > [!IMPORTANT]
->  Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
+> Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
   
 #### <a name="to-turn-off-ntlm-security"></a>So deaktivieren Sie die NTLM-Sicherheit  
   

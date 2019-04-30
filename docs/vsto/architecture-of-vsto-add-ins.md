@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440348"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektur von VSTO-Add-Ins
   VSTO-Add-Ins, die mit den Office Developer Tools in Visual Studio erstellt werden, verfügen über Architekturfunktionen, mit denen die Stabilität und Sicherheit gestärkt werden und die enge Zusammenarbeit mit Microsoft Office ermöglicht wird. In diesem Thema werden die folgenden Aspekte von VSTO-Add-Ins beschrieben:
@@ -44,7 +44,7 @@ ms.locfileid: "60091075"
  Wenn für eine Anwendung mehrere VSTO-Add-Ins installiert werden, wird jedes VSTO-Add-In in einer anderen Anwendungsdomäne geladen. So kann ein VSTO-Add-In, das sich falsch verhält, nicht bewirken, dass für andere VSTO-Add-Ins Fehler auftreten. Es wird auch sichergestellt, dass beim Schließen der Anwendung alle VSTO-Add-In-Assemblys aus dem Speicher entladen werden. Weitere Informationen zu Anwendungsdomänen finden Sie unter [Anwendungsdomänen](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  VSTO-Add-Ins, die mit den Office Developer Tools in Visual Studio erstellt werden, sollen nur dann verwendet werden, wenn die Microsoft Office-Hostanwendung von einem Endbenutzer gestartet wird. Wird die Anwendung programmgesteuert gestartet (beispielsweise per Automatisierung), verhält sich das VSTO-Add-In unter Umständen nicht wie erwartet.
+> VSTO-Add-Ins, die mit den Office Developer Tools in Visual Studio erstellt werden, sollen nur dann verwendet werden, wenn die Microsoft Office-Hostanwendung von einem Endbenutzer gestartet wird. Wird die Anwendung programmgesteuert gestartet (beispielsweise per Automatisierung), verhält sich das VSTO-Add-In unter Umständen nicht wie erwartet.
 
 ## <a name="AddinComponents"></a> Komponenten von VSTO-Add-Ins
  Die VSTO-Add-In-Assembly ist zwar die Hauptkomponente, aber es gibt noch mehrere andere Komponenten, die eine wichtige Rolle dabei spielen, wie Microsoft Office-Anwendungen VSTO-Add-Ins ermitteln und laden.
@@ -70,7 +70,7 @@ ms.locfileid: "60091075"
  ![2007 Office-add-in-Architektur](../vsto/media/office07addin.png "2007 Office-add-in-Architektur")
 
 > [!NOTE]
->  In Office-Projektmappen, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]abzielen, rufen Projektmappen das Objektmodell der Hostanwendung mithilfe von in die Projektmappenassembly eingebetteten PIA-Typinformationen auf, statt die PIA direkt aufzurufen. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
+> In Office-Projektmappen, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]abzielen, rufen Projektmappen das Objektmodell der Hostanwendung mithilfe von in die Projektmappenassembly eingebetteten PIA-Typinformationen auf, statt die PIA direkt aufzurufen. Weitere Informationen finden Sie unter [entwerfen und Erstellen von Office-Projektmappen](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Prozess des Ladens
  Die folgenden Schritte werden ausgeführt, wenn ein Benutzer eine Anwendung startet:
@@ -100,7 +100,7 @@ ms.locfileid: "60091075"
      Sie können diese Methode optional außer Kraft setzen, um eine Microsoft Office-Funktion zu erweitern, indem Sie ein Objekt zurückgeben, mit dem eine Erweiterbarkeitsschnittstelle implementiert wird. Weitere Informationen finden Sie unter [Anpassen der UI-Features mithilfe von Erweiterbarkeitsschnittstellen](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
     > [!NOTE]
-    >  Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] führt separate Aufrufe der <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode für die einzelnen Erweiterbarkeitsschnittstellen durch, die von der Hostanwendung unterstützt werden. Obwohl der erste Aufruf der <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode normalerweise vor dem Aufruf der `ThisAddIn_Startup` -Methode erfolgt, sollten in Ihrem VSTO-Add-In keine Annahmen dazu getroffen werden, wann oder wie oft die <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode aufgerufen wird.
+    > Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] führt separate Aufrufe der <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode für die einzelnen Erweiterbarkeitsschnittstellen durch, die von der Hostanwendung unterstützt werden. Obwohl der erste Aufruf der <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode normalerweise vor dem Aufruf der `ThisAddIn_Startup` -Methode erfolgt, sollten in Ihrem VSTO-Add-In keine Annahmen dazu getroffen werden, wann oder wie oft die <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> -Methode aufgerufen wird.
 
 11. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft die `ThisAddIn_Startup` -Methode in Ihrem VSTO-Add-In auf. Diese Methode ist der Standardereignishandler für das <xref:Microsoft.Office.Tools.AddInBase.Startup> -Ereignis. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 

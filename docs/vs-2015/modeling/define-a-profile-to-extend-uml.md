@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433130"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definieren eines Profils zum Erweitern von UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
   Sie können eigene Profile an das Team verteilen. Jedes Teammitglied kann das Profil installieren. Auf diese Weise können die Teammitglieder Modelle bearbeiten und erstellen, die die Stereotype verwenden.  
   
 > [!NOTE]
->  Wenn Sie die Stereotype eines Profils in einem Modell anwenden, das Sie bearbeiten, und das Modell dann für andere Personen freigeben, sollten diese Personen auf ihren Computern das gleiche Profil installieren. Andernfalls sind sie nicht in der Lage, die Stereotype anzuzeigen, die Sie verwendet haben.  
+> Wenn Sie die Stereotype eines Profils in einem Modell anwenden, das Sie bearbeiten, und das Modell dann für andere Personen freigeben, sollten diese Personen auf ihren Computern das gleiche Profil installieren. Andernfalls sind sie nicht in der Lage, die Stereotype anzuzeigen, die Sie verwendet haben.  
   
  Ein Profil ist häufig Teil einer größeren [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Erweiterung. Sie können z. B. einen Befehl definieren, der einige Teile eines Modells in Code übersetzt. Sie können ein Profil definieren, das Benutzer auf Pakete anwenden müssen, die sie übersetzen möchten. In diesem Fall verteilen Sie den neuen Befehl gemeinsam mit dem Profil in einer einzelnen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterung.  
   
@@ -83,7 +83,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
 1. Erstellen Sie ein Visual Studio-Erweiterungsprojekt.  
   
    > [!NOTE]
-   >  Um dieses Verfahren durchführen zu können, muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.  
+   > Um dieses Verfahren durchführen zu können, muss [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installiert sein.  
   
    1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
@@ -194,7 +194,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
 2. Fügen Sie im Verzeichnis, in dem sich die Datei mit dem Standardprofil befindet, ein neues Verzeichnis hinzu.  
   
     > [!NOTE]
-    >  Falls Sie die Erweiterung mithilfe eines Visual Studio-Erweiterungsprojekts erstellen, verwenden Sie den Projektmappen-Explorer, um dem Projekt einen neuen Ordner hinzuzufügen.  
+    > Falls Sie die Erweiterung mithilfe eines Visual Studio-Erweiterungsprojekts erstellen, verwenden Sie den Projektmappen-Explorer, um dem Projekt einen neuen Ordner hinzuzufügen.  
   
 3. Ändern Sie den Namen des neuen Verzeichnisses in den ISO-Kurzcode für die lokalisierte Kultur, z. B. `bg` für Bulgarisch oder `fr` für Französisch. Sie sollten einen neutralen Kulturcode verwenden, also in der Regel zwei Buchstaben. Verwenden Sie keine speziellen Kulturcodes wie `fr-CA`. Weitere Informationen zu kulturcodes finden Sie unter [CultureInfo.GetCultures-Methode](http://go.microsoft.com/fwlink/?LinkId=160782), die eine vollständige Liste der kulturcodes bereitstellt.  
   
@@ -211,7 +211,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  Sie sollten in `extension.vsixmanifest` keinen Verweis auf die lokalisierten Versionen der Profile einfügen. Die kopierten Profildateien müssen den gleichen Namen wie das Profil im übergeordneten Ordner haben.  
+    > Sie sollten in `extension.vsixmanifest` keinen Verweis auf die lokalisierten Versionen der Profile einfügen. Die kopierten Profildateien müssen den gleichen Namen wie das Profil im übergeordneten Ordner haben.  
   
 5. Bearbeiten Sie die neue Kopie des Profils, indem Sie alle für Benutzer sichtbaren Elemente in die Zielsprache übersetzen, z. B. die `displayName`-Attribute.  
   
@@ -247,7 +247,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
 ```  
   
 > [!NOTE]
->  Das Attribut `name` darf keine Leerzeichen oder Interpunktionszeichen enthalten. Das Attribut `displayName` wird auf der Benutzeroberfläche angezeigt und sollte eine gültige XML-Zeichenfolge sein.  
+> Das Attribut `name` darf keine Leerzeichen oder Interpunktionszeichen enthalten. Das Attribut `displayName` wird auf der Benutzeroberfläche angezeigt und sollte eine gültige XML-Zeichenfolge sein.  
   
  Jedes Profil enthält drei Hauptabschnitte. Dies sind in umgekehrter Reihenfolge:  
   
@@ -310,7 +310,7 @@ Sie können definieren, eine *UML-Profil* auf die standardmäßigen Modellelemen
  Das `name`-Attribut von `metaclassMoniker` ist ein Link zu einem Element im `<metaClasses>`-Abschnitt.  
   
 > [!NOTE]
->  Der Monikername muss mit `/yourProfileName/` beginnen, wobei `yourProfileName` im `name`-Attribut des Profils definiert ist ("CSharpProfile" in diesem Beispiel). Der Moniker endet mit dem Namen von einem der Einträge im metaclasses-Abschnitt.  
+> Der Monikername muss mit `/yourProfileName/` beginnen, wobei `yourProfileName` im `name`-Attribut des Profils definiert ist ("CSharpProfile" in diesem Beispiel). Der Moniker endet mit dem Namen von einem der Einträge im metaclasses-Abschnitt.  
   
  Jedes Stereotyp kann keine oder mehrere Eigenschaften aufführen, die es jedem Modellelement hinzufügt, auf das es angewendet wird. Die `<propertyType>` enthält einen Link zu einer der Typen, die definiert sind die `<propertyTypes>` Abschnitt. Der Link muss entweder `<externalTypeMoniker>` sein, um auf `<externalType>,` zu verweisen, oder `<enumerationTypeMoniker>`, um auf `<enumerationType>` zu verweisen. Der Link beginnt wieder mit dem Namen des Profils.  
   

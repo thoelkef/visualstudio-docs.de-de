@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436933"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referenz zum VSIX-Erweiterungsschema 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048658"
 Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. Das Dateiformat wird durch ein Schema bestimmt. Version 2.0 von diesem Schema unterstützt das Hinzufügen von benutzerdefinierten Typen und Attribute.  Das Schema des Manifests ist erweiterbar. Das Ladeprogramm des Manifeste ignoriert XML-Elemente und Attribute, die sie nicht versteht.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 können VSIX-Dateien in den Formaten für Visual Studio 2010, Visual Studio 2012 oder Visual Studio 2013 laden.  
+> Visual Studio 2015 können VSIX-Dateien in den Formaten für Visual Studio 2010, Visual Studio 2012 oder Visual Studio 2013 laden.  
   
 ## <a name="package-manifest-schema"></a>Paket-Manifest-Schema  
  Das Stammelement der XML-Manifestdatei ist `<PackageManifest>`, mit einem einzelnen Attribut `Version`, dies ist die Version des Manifests-Formats. Wenn das Format wesentliche Änderungen vorgenommen werden, wird das Versionsformat geändert werden. In diesem Thema wird beschrieben, Manifestformat Version 2.0, die im Manifest, durch Festlegen angegeben ist der `Version` -Attributs auf den Wert Version = "2.0".  
@@ -129,7 +129,7 @@ Eine VSIX-Bereitstellung-Manifestdatei beschreibt den Inhalt einer VSIX-Paket. D
         - Einzelne Version # - nur die angegebene Version.  
   
         > [!IMPORTANT]
-        >  Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden. Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und die VSIXInstaller.exe, die Teil des Produkts verwenden. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIX-Installationsprogramm, aber nur mit den neueren Versionen des Installationsprogramms.  
+        > Version 2.0 des VSIX-Schema wurde in Visual Studio 2012 eingeführt. Dieses Schema verwenden. Sie benötigen Visual Studio 2012 oder höher auf dem Computer installiert und die VSIXInstaller.exe, die Teil des Produkts verwenden. Sie können frühere Versionen von Visual Studio mit einem Visual Studio 2012 oder höher VSIX-Installationsprogramm, aber nur mit den neueren Versionen des Installationsprogramms.  
   
     - `AnyAttribute*` – Die `<InstallationTarget>` -Element ermöglicht einen offenen Satz von Attributen, die zur Laufzeit als ein Wörterbuch mit Name-Wert-Paaren verfügbar gemacht werden müssen.  
   

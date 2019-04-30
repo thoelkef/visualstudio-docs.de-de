@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be17b2f78048bd0e9c2052066796857dbeba2048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435265"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Vorgehensweise: Generieren von Registrierungsinformationen für einen Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117732"
 Das Dienstprogramm "RegPkg.exe" kann verwendet werden, um ein Manifest für die Registrierung für ein verwaltetes VSPackage zu generieren. Das Manifest kann in einer Windows Installer-Paket integriert werden. RegPkg auch kann eine Datei generieren, die in einer Setup-Quelldatei, die basierend auf aufgenommen werden kann die [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]
->  RegPkg generiert Pfadnamen, die auf Ihrem Entwicklungssystem spezifisch sind, damit jedes Mal, wenn Sie RegPkg verwenden, müssen Sie die Ausgabe verwendet bearbeiten formatiert entsprechende Windows Installer Eigenschaften. Beispielsweise muss der Wert von InprocServer32 **[SystemFolder]mscoree.dll** und Pfade sollten **[#filekey]** und **[$componentkey]**. Die Ausgabe auf diese Weise anpassen, werden Computer mit Windows-Installation auf einem anderen Laufwerk oder in einem anderen Verzeichnis, lokalisierte Verzeichnisnamen und Pfade, die Benutzer auswählen können, unterstützt. Weitere Informationen finden Sie unter [formatierte](http://go.microsoft.com/fwlink/?LinkId=71120) in das Windows Installer SDK. Wenn Sie für Ihre Entwicklung Systempfade RegPkg-Konventionen beachten, z. B. Datei-IDs des Formulars File_*Filename*– müssen Sie weniger Änderungen vornehmen.  
+> RegPkg generiert Pfadnamen, die auf Ihrem Entwicklungssystem spezifisch sind, damit jedes Mal, wenn Sie RegPkg verwenden, müssen Sie die Ausgabe verwendet bearbeiten formatiert entsprechende Windows Installer Eigenschaften. Beispielsweise muss der Wert von InprocServer32 **[SystemFolder]mscoree.dll** und Pfade sollten **[#filekey]** und **[$componentkey]**. Die Ausgabe auf diese Weise anpassen, werden Computer mit Windows-Installation auf einem anderen Laufwerk oder in einem anderen Verzeichnis, lokalisierte Verzeichnisnamen und Pfade, die Benutzer auswählen können, unterstützt. Weitere Informationen finden Sie unter [formatierte](http://go.microsoft.com/fwlink/?LinkId=71120) in das Windows Installer SDK. Wenn Sie für Ihre Entwicklung Systempfade RegPkg-Konventionen beachten, z. B. Datei-IDs des Formulars File_*Filename*– müssen Sie weniger Änderungen vornehmen.  
   
 ### <a name="to-create-a-registration-manifest"></a>Um ein Manifest für die Registrierung zu erstellen.  
   

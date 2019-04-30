@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431408"
 ---
 # <a name="how-to-build-incrementally"></a>Vorgehensweise: Inkrementelles Erstellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
  Wenn Eingaben und Ausgaben in einem Ziel angegeben sind, kann entweder jede Ausgabe nur einer Eingabe zugeordnet werden, oder es entsteht keine Zuordnung zwischen Aus- und Eingaben. Im vorherigen [Csc-Task](../msbuild/csc-task.md) kann z.B. die Ausgabedatei „hello.exe“ keiner einzelnen Eingabe zugeordnet werden – sie hängt von allen Eingaben ab.  
   
 > [!NOTE]
->  Ein Ziel, in dem keine direkte Zuordnung zwischen den Ein- und Ausgaben besteht, führt immer öfter eine Erstellung durch, als ein Ziel, in dem jede Ausgabe nur einer Eingabe zugeordnet werden kann, da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nicht bestimmen kann, welche Ausgaben neu erstellt werden müssen, wenn sich einige der Eingaben verändert haben.  
+> Ein Ziel, in dem keine direkte Zuordnung zwischen den Ein- und Ausgaben besteht, führt immer öfter eine Erstellung durch, als ein Ziel, in dem jede Ausgabe nur einer Eingabe zugeordnet werden kann, da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nicht bestimmen kann, welche Ausgaben neu erstellt werden müssen, wenn sich einige der Eingaben verändert haben.  
   
  Aufgaben, in denen Sie eine direkte Zuordnung zwischen den Aus- und Eingaben erkennen können, z.B. die [LC-Aufgabe](../msbuild/lc-task.md), sind am besten für inkrementelle Builds geeignet, im Gegensatz zu Aufgaben wie `Csc` und [Vbc](../msbuild/vbc-task.md), die nur eine Ausgabeassembly aus einer Reihe von Eingaben erstellen.  
   
@@ -70,7 +70,7 @@ Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor ers
   Diese Projektdatei enthält jeweils die Ziele `Convert` und `Build`. Die `GenerateContentFiles`- und `BuildHelp`-Aufgaben sind jeweils in den Zielen `Convert` und `Build` platziert, sodass jedes Ziel inkrementell erstellt werden kann. Indem das `Output`-Element verwendet wird, werden die Ausgaben der `GenerateContentFiles`-Aufgabe in der `ContentFile`-Elementauflistung platziert, wo sie als Eingaben für die `BuildHelp`-Aufgabe verwendet werden können. Wenn Sie das `Output`-Element so nutzen, werden automatisch die Ausgaben aus einer Aufgabe als Eingaben für eine andere Aufgabe verwendet, sodass Sie nicht die einzelnen Elemente oder Elementauflistungen manuell in jeder Aufgabe eingeben müssen.  
   
 > [!NOTE]
->  Obwohl das `GenerateContentFiles`-Ziel eine inkrementelle Erstellung vornehmen kann, werden alle Ausgaben aus diesem Ziel immer als Eingaben für das `BuildHelp`-Ziel benötigt. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] stellt automatisch alle Ausgaben von einem Ziel als Eingaben für ein anderes Ziel bereit, wenn Sie das `Output`-Element verwenden.  
+> Obwohl das `GenerateContentFiles`-Ziel eine inkrementelle Erstellung vornehmen kann, werden alle Ausgaben aus diesem Ziel immer als Eingaben für das `BuildHelp`-Ziel benötigt. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] stellt automatisch alle Ausgaben von einem Ziel als Eingaben für ein anderes Ziel bereit, wenn Sie das `Output`-Element verwenden.  
   
 ```  
 <Project DefaultTargets="Build"  

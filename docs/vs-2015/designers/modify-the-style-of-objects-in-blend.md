@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442450"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
   
 - [Ressourcen: Farben, Stilen und Vorlagen zu erstellen und später erneut verwenden](#Resources)  
   
-## <a name="Brushes"></a> Pinsel: Aussehen eines Objekts ändern  
+## <a name="Brushes"></a> Pinsel: Ändern des Aussehens eines Objekts  
  Anwenden eines Pinsels bei einem Objekt, dessen Darstellung geändert werden soll.  
   
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Pinsel-Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
@@ -86,11 +86,11 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
   ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
->  Sie können keine Stile oder Vorlagen für jede Art von Steuerelement erstellen. Wenn ein Steuerelement diese nicht unterstützt,  wird die Breadcrumb-Schaltfläche nicht oberhalb der Zeichenfläche angezeigt.  
+> Sie können keine Stile oder Vorlagen für jede Art von Steuerelement erstellen. Wenn ein Steuerelement diese nicht unterstützt,  wird die Breadcrumb-Schaltfläche nicht oberhalb der Zeichenfläche angezeigt.  
 >   
->  Um zum Bearbeitungsbereich des Hauptdokuments zurückzukehren, klicken Sie auf **Return scope to** (Bereich zurücksetzen auf) ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
+> Um zum Bearbeitungsbereich des Hauptdokuments zurückzukehren, klicken Sie auf **Return scope to** (Bereich zurücksetzen auf) ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
->  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
+> ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
  **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Erstellen eines Stils](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
@@ -102,14 +102,14 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements  
  Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann im Kontextmenü auf **Zurücksetzen**.  
   
-## <a name="Visual"></a> Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf deren Status  
+## <a name="Visual"></a> Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf dessen Status  
  Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie könnten eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
  **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Verwalten des Zustands der WPF-Steuerelemente](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-## <a name="Resources"></a> Ressourcen: Farben, Stile und Vorlagen erstellen und später erneut verwenden  
+## <a name="Resources"></a> Ressourcen: Erstellen von Farben, Stilen und Vorlagen und deren spätere Wiederverwendung  
  Sie können fast alles in Ihrem Projekt in eine Ressource konvertieren. Eine Ressource ist ein Objekt, das an unterschiedlichen Stellen in Ihrer Anwendung wiederverwendet werden kann. Sie können z. B. eine Farbe einmal erstellen, sie in eine Ressource konvertieren und dann diese Farbe auf mehrere Objekte anwenden. Um die Farbe aller dieser Objekte zu ändern, ändern Sie einfach die Farbressource.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  

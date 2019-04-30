@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435450"
 ---
 # <a name="sandboxed-solution-considerations"></a>Überlegungen zu sandkastenlösungen
   *Sandbox-Lösungen* sind ein Feature in Microsoft SharePoint 2010, mit dem Standort Sammlung Benutzer ihre eigenen benutzerdefinierten codelösungen hochladen können. Allgemeine Sandbox-Lösung ist die Benutzer ihre eigenen Webparts hochladen.
@@ -34,7 +34,7 @@ ms.locfileid: "56621694"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unterstützt die Sandbox-Lösungen durch eine boolesche Eigenschaft namens *Sandkastenlösung*. Diese Eigenschaft kann zu einem beliebigen Zeitpunkt im Projekt festgelegt werden, oder angegeben werden bei der Erstellung des Projekts in der **SharePoint Customization Wizard**.
 
 > [!NOTE]
->  Ändern der *Sandkastenlösung* Eigenschaft eines Projekts aus, nachdem es erstellt wurde, kann zu Überprüfungsfehlern führen.
+> Ändern der *Sandkastenlösung* Eigenschaft eines Projekts aus, nachdem es erstellt wurde, kann zu Überprüfungsfehlern führen.
 
  Die Lösung wird eine Lösung Farmbereich betrachtet, wenn die *Sandkastenlösung* -Eigenschaftensatz auf **"false"** , oder Sie wählen die **als farmlösung bereitstellen** Option. Allerdings die Lösung ist anders behandelt als farmlösung Wenn die *Sandkastenlösung* -Eigenschaftensatz auf **"true"** , oder Sie wählen die **als sandkastenlösung bereitstellen** die Option im Assistenten.
 

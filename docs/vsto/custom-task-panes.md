@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445544"
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Funktionen Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.
@@ -38,7 +38,7 @@ ms.locfileid: "60106201"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Ein benutzerdefinierter Aufgabenbereich ist nicht das gleiche wie der Aktionsbereich. Der Aktionsbereich ist Bestandteil von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).
+> Ein benutzerdefinierter Aufgabenbereich ist nicht das gleiche wie der Aktionsbereich. Der Aktionsbereich ist Bestandteil von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. Weitere Informationen finden Sie unter [aktionsbereichsübersicht](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Vorteile von benutzerdefinierten Aufgabenbereichen
  Mit benutzerdefinierten Aufgabenbereichen können Sie Funktionen in eine vertraute Benutzeroberfläche integrieren. Sie können mit Visual Studio-Tools schnell einen benutzerdefinierten Aufgabenbereich erstellen.

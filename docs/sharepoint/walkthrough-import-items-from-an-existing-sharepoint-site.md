@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446609"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren von Elementen aus einer vorhandenen SharePoint-Website in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
@@ -75,7 +75,7 @@ ms.locfileid: "60110863"
  Als Nächstes erhalten Sie eine SharePoint-Setup (.wsp)-Datei mit dem SharePoint-Elemente und Elemente, die Sie in importieren möchten Ihre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt. Wenn Sie nicht bereits über eine WSP-Datei verfügen, müssen Sie eine aus einer vorhandenen SharePoint-Website erstellen. In diesem Beispiel werden Sie der Standard-SharePoint-Website in eine WSP-Datei exportieren.
 
 > [!IMPORTANT]
->  Wenn Sie einen Laufzeitfehler, die den folgenden Schritten erhalten haben, müssen Sie das Verfahren auf einem System ausführen, die zur SharePoint-Website zugreifen.
+> Wenn Sie einen Laufzeitfehler, die den folgenden Schritten erhalten haben, müssen Sie das Verfahren auf einem System ausführen, die zur SharePoint-Website zugreifen.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>So exportieren Sie eine vorhandene SharePoint-Website
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110863"
 6. In der **neue Projektquelle angeben** Seite, navigieren Sie zum Speicherort auf dem System, in dem Sie gespeichert haben, die *.wsp* Datei zuvor aus, und wählen Sie dann die **Weiter** Schaltfläche.
 
    > [!NOTE]
-   >  Bei Auswahl der **Fertig stellen** Schaltfläche auf dieser Seite, die alle verfügbaren Elemente in der *.wsp* Datei importiert werden soll.
+   > Bei Auswahl der **Fertig stellen** Schaltfläche auf dieser Seite, die alle verfügbaren Elemente in der *.wsp* Datei importiert werden soll.
 
 7. In der **zu importierende Elemente auswählen** Deaktivieren aller Kontrollkästchen in der Liste mit Ausnahme von **Spalte Test**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 

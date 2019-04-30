@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441800"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Vorgehensweise: Anfügen von Erweiterungen durch verwalteten Code an Dokumente
   Sie können eine Anpassungsassembly an ein vorhandenes Microsoft Office Word-Dokument oder die Microsoft Office Excel-Arbeitsmappe anfügen. Das Dokument oder die Arbeitsmappe kann in einem beliebigen Dateiformat sein, die von der Microsoft Office-Projekten und Entwicklungstools in Visual Studio unterstützt wird. Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokumentebene](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044263"
  Verwenden Sie zum Anfügen einer Anpassung an ein Word- oder Excel-Dokument die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> Methode der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse. Da die <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse soll auf einem Computer ausgeführt werden, die keine Microsoft Office installiert ist, können Sie diese Methode verwenden, in Projektmappen, die nicht direkt mit Microsoft Office-Entwicklung (z. B. eine Konsole oder Windows Forms-Anwendung) verknüpft sind.
 
 > [!NOTE]
->  Die Anpassung kann nicht geladen werden, wenn der Code Steuerelemente erwartet, die das angegebene Dokument nicht.
+> Die Anpassung kann nicht geladen werden, wenn der Code Steuerelemente erwartet, die das angegebene Dokument nicht.
 
  ![Link zum Video](../vsto/media/playvideo.gif "Link zum Video") eine entsprechende Videodemo finden Sie unter [Gewusst wie: Anfügen oder trennen eine VSTO-Assembly aus einem Word-Dokument? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

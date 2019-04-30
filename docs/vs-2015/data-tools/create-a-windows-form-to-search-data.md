@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f12e8e50b07157f581635fcbd43dbe7863ec40f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436939"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Erstellen eines Windows Forms zum Suchen von Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
   
  In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:  
   
--   Erstellen ein neues Windows Forms-Anwendungsprojekt.  
+- Erstellen ein neues Windows Forms-Anwendungsprojekt.  
   
--   Erstellen und konfigurieren die Datenquelle in Ihrer Anwendung mit der **Datenquellenkonfiguration** Assistenten.  
+- Erstellen und konfigurieren die Datenquelle in Ihrer Anwendung mit der **Datenquellenkonfiguration** Assistenten.  
   
--   Festlegen des Ablagetyps der Elemente in der **Datenquellen** Fenster.  
+- Festlegen des Ablagetyps der Elemente in der **Datenquellen** Fenster.  
   
--   Erstellen von Steuerelementen, mit denen Daten angezeigt werden, indem Elemente aus dem **Datenquellenfenster** auf ein Formular gezogen werden.  
+- Erstellen von Steuerelementen, mit denen Daten angezeigt werden, indem Elemente aus dem **Datenquellenfenster** auf ein Formular gezogen werden.  
   
--   Hinzufügen von Steuerelementen zum Anzeigen der Daten auf dem Formular.  
+- Hinzufügen von Steuerelementen zum Anzeigen der Daten auf dem Formular.  
   
--   Abschließen der **Suchkriterien-Generator** Dialogfeld.  
+- Abschließen der **Suchkriterien-Generator** Dialogfeld.  
   
--   Eingeben von Parametern in das Formular und Ausführen der parametrisierten Abfrage.  
+- Eingeben von Parametern in das Formular und Ausführen der parametrisierten Abfrage.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
--   Zugriff auf die Beispieldatenbank Northwind.  
+- Zugriff auf die Beispieldatenbank Northwind.  
   
 ## <a name="create-the-windows-application"></a>Erstellen Sie die Windows-Anwendung  
  Der erste Schritt ist die Erstellung einer **Windows-Anwendung**. Zuweisen eines Namens für das Projekt an dieser Stelle optional ist, aber Sie erhalten sie hier einen Namen ein, da Sie es später noch Mal speichern.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>So erstellen Sie das neue Windows-Anwendungsprojekt  
   
-1.  Von der **Datei** Menü ein neues Projekt erstellen.  
+1. Von der **Datei** Menü ein neues Projekt erstellen.  
   
-2.  Benennen Sie das Projekt mit `WindowsSearchForm`.  
+2. Benennen Sie das Projekt mit `WindowsSearchForm`.  
   
-3.  Wählen Sie **Windows-Anwendung** , und klicken Sie auf **OK**.  
+3. Wählen Sie **Windows-Anwendung** , und klicken Sie auf **OK**.  
   
      Das Projekt **WindowsSearchForm** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.  
   
@@ -75,25 +75,25 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
   
 #### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle  
   
-1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
+1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
   
-2.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
+2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
   
-3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
+3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
   
-4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
+4. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.  
   
-    -   Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.  
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.  
   
-5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
+5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
   
-6.  Klicken Sie auf der Seite **Save connection string to the Application Configuration file** (Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern) auf **Weiter**.  
+6. Klicken Sie auf der Seite **Save connection string to the Application Configuration file** (Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern) auf **Weiter**.  
   
-7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
+7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
   
-8.  Wählen Sie die Tabelle **Customers** aus, und klicken Sie anschließend auf **Fertig stellen**.  
+8. Wählen Sie die Tabelle **Customers** aus, und klicken Sie anschließend auf **Fertig stellen**.  
   
      **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**-Tabelle wird im **Datenquellenfenster** angezeigt.  
   
@@ -102,9 +102,9 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>So erstellen Sie datengebundene Steuerelemente auf dem Formular  
   
-1.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
+1. Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
   
-2.  Ziehen Sie den Knoten **Customers** aus dem **Datenquellenfenster** auf das Formular.  
+2. Ziehen Sie den Knoten **Customers** aus dem **Datenquellenfenster** auf das Formular.  
   
      Auf dem Formular werden <xref:System.Windows.Forms.DataGridView> und ein ToolStrip-Element (<xref:System.Windows.Forms.BindingNavigator>) angezeigt, mit denen Sie durch die Datensätze auf dem Formular navigieren können. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden auf der Komponentenleiste angezeigt.  
   
@@ -113,11 +113,11 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
   
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>So erstellen Sie eine parametrisierte Abfrage sowie Steuerelemente zur Eingabe der Parameter  
   
-1.  Wählen Sie das Steuerelement <xref:System.Windows.Forms.DataGridView> aus. Wählen Sie anschließend im Menü **Daten** die Option **Abfrage hinzufügen** aus.  
+1. Wählen Sie das Steuerelement <xref:System.Windows.Forms.DataGridView> aus. Wählen Sie anschließend im Menü **Daten** die Option **Abfrage hinzufügen** aus.  
   
-2.  Typ `FillByCity` in die **Neuer Abfragename** Bereich auf die **Suchkriterien-Generator** Dialogfeld.  
+2. Typ `FillByCity` in die **Neuer Abfragename** Bereich auf die **Suchkriterien-Generator** Dialogfeld.  
   
-3.  Fügen Sie der Abfrage im Bereich **Abfragetext** die Zeichenfolge `WHERE City = @City` hinzu.  
+3. Fügen Sie der Abfrage im Bereich **Abfragetext** die Zeichenfolge `WHERE City = @City` hinzu.  
   
      Die Abfrage müsste ungefähr wie folgt aussehen:  
   
@@ -128,9 +128,9 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Zugriff und OLE DB-Datenquellen verwenden das Fragezeichen ("?") zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussehen würde: `WHERE City = ?`.  
+    > Zugriff und OLE DB-Datenquellen verwenden das Fragezeichen ("?") zur Angabe von Parametern, sodass die WHERE-Klausel wie folgt aussehen würde: `WHERE City = ?`.  
   
-4.  Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.  
+4. Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.  
   
      Dem Formular wird ein **FillByCityToolStrip** hinzugefügt.  
   
@@ -139,18 +139,18 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
   
 #### <a name="to-test-the-application"></a>So testen Sie die Anwendung  
   
-1.  Drücken Sie F5, um die Anwendung auszuführen.  
+1. Drücken Sie F5, um die Anwendung auszuführen.  
   
-2.  Geben Sie **London** in das Textfeld **City** ein, und klicken Sie dann auf **FillByCity**.  
+2. Geben Sie **London** in das Textfeld **City** ein, und klicken Sie dann auf **FillByCity**.  
   
      Das Datenraster wird mit den Kunden gefüllt, die die Kriterien erfüllen. In diesem Beispiel zeigt das Datenraster nur Kunden an, die den Wert **London** in der Spalte **City** aufweisen.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  Je nach den Anforderungen der Anwendung können nach dem Erstellen eines parametrisierten Formulars weitere Schritte sinnvoll sein. Sie können an dieser exemplarischen Vorgehensweise beispielsweise folgende Verbesserungen vornehmen:  
   
--   Hinzufügen von Steuerelementen, die verknüpfte Daten anzeigen.  
+- Hinzufügen von Steuerelementen, die verknüpfte Daten anzeigen.  
   
--   Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

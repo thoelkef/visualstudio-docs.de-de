@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432557"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
 1. Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei / neu / Projekt / Visual c# / Erweiterbarkeit / C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
   
     > [!NOTE]
-    >  Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+    > Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 2. Fügen Sie ein neues VSIX-Projekt hinzu (**Datei / neu / Projekt / Visual C#-/ Erweiterbarkeit / VSIX-Projekt**) in der gleichen Projektmappe wie das Projektvorlagenprojekt (in der **Projektmappen-Explorer**, wählen Sie den Projektmappenknoten, mit der rechten Maustaste, und wählen **Add / New Project**). Nennen Sie sie **MyProjectWizard.**  
   

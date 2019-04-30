@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427239"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien (.exe) und die Assemblys der Anwendung befinden.  
   
 > [!NOTE]
->  Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z. B. Dokumente, zu speichern.  
+> Wenn eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z. B. Dokumente, zu speichern.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Markieren von Datendateien in einer ClickOnce-Verteilung  
  Um eine vorhandene Datei im Datenverzeichnis abzulegen, müssen Sie sie in der Anwendungsmanifestdatei ihrer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung als Datendatei markieren. Weitere Informationen finden Sie unter [Vorgehensweise: Einschließen einer Datendatei in eine ClickOnce-Anwendung](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
@@ -52,7 +52,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  Zum Lesen aus dem Datenverzeichnis muss Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung eine Leseberechtigung anfordern; analog dazu erfordert das Schreiben in das Verzeichnis eine Schreibberechtigung. Ihre Anwendung verfügt automatisch über diese Berechtigung, wenn sie für die Ausführung mit voller Vertrauenswürdigkeit konfiguriert ist. Weitere Informationen zum Erhöhen von Berechtigungen für die Anwendung unter Verwendung der Berechtigungserweiterung oder der Bereitstellung vertrauenswürdiger Anwendungen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Wenn Ihre Organisation die Bereitstellung vertrauenswürdiger Anwendungen nicht verwendet und die Berechtigungserweiterung deaktiviert hat, schlägt die Assertion der Berechtigungen fehl.  
+> Wenn Ihre Organisation die Bereitstellung vertrauenswürdiger Anwendungen nicht verwendet und die Berechtigungserweiterung deaktiviert hat, schlägt die Assertion der Berechtigungen fehl.  
   
  Nachdem die Anwendung über diese Berechtigungen verfügt, kann sie auf das Datenverzeichnis zugreifen, indem sie Methodenaufrufe für Klassen innerhalb von <xref:System.IO>verwendet. Den Pfad des Datenverzeichnisses innerhalb einer Windows Forms [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung erhalten Sie mithilfe der in der <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> -Eigenschaft von <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> definierten <xref:System.Deployment.Application.ApplicationDeployment>-Eigenschaft. Dies ist die einfachste und empfohlene Möglichkeit, auf Ihre Daten zuzugreifen. Im folgenden Codebeispiel wird veranschaulicht, wie Sie mit einer Textdatei mit dem Namen CSV.txt vorgehen, die Sie als Datendatei in die Bereitstellung aufgenommen haben.  
   

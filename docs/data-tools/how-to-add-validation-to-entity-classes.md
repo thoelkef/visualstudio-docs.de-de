@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b91fc7fb356ebd0db4a0bd7960ac060e7d152ec1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402849"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen
 Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass die in Datenobjekte eingegebenen Werte den Einschränkungen eines Objektschemas oder den bestehenden Regeln für die Anwendung entsprechen. Es dient der Fehlervermeidung, Daten vor dem Senden von Aktualisierungen an zugrunde liegende Datenbanken auf Gültigkeit zu überprüfen. Dadurch wird auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank verringert.
@@ -24,7 +24,7 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
  Die [LINQ to SQL-tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) stellt partielle Methoden, mit denen Benutzer, den vom Designer generierten Code zu erweitern, der ausgeführt wird, während Einfüge-, Update- und gelöscht werden, von Entitäten, die abgeschlossen und auch während und nach der einzelnen Spalte ändert.
 
 > [!NOTE]
->  Dieses Thema enthält die grundlegenden Schritte zum Hinzufügen von Validierungen zu Entitätsklassen mit dem **O/R Designer**. Da es schwierig, diese generischen Schritte ohne Verweis auf eine bestimmte Entitätsklasse nachzuvollziehen sein könnte, wird eine exemplarische Vorgehensweise mit tatsächlichen Daten bereitgestellt.
+> Dieses Thema enthält die grundlegenden Schritte zum Hinzufügen von Validierungen zu Entitätsklassen mit dem **O/R Designer**. Da es schwierig, diese generischen Schritte ohne Verweis auf eine bestimmte Entitätsklasse nachzuvollziehen sein könnte, wird eine exemplarische Vorgehensweise mit tatsächlichen Daten bereitgestellt.
 
 ## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Hinzufügen von Validierung für Änderungen auf den Wert in einer bestimmten Spalte
  Dieses Verfahren veranschaulicht, wie Daten auf Gültigkeit geprüft werden, wenn sich der Wert in einer Spalte ändert. Da die Validierung innerhalb der Klassendefinition (nicht der Benutzeroberfläche) ausgeführt wird, wird eine Ausnahme ausgelöst, wenn die Validierung aufgrund des Werts nicht durchgeführt werden kann. Implementieren Sie eine Fehlerbehandlung für den Code in der Anwendung, der die Änderung von Spaltenwerten durchführt.
@@ -75,7 +75,7 @@ Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass d
  Neben der Überprüfung von Werten während Änderungen können Sie auch Daten auf Gültigkeit prüfen, wenn versucht wird, eine vollständige Entitätsklasse zu aktualisieren. Validierung während eines versuchten Updates ermöglicht Ihnen, Werte in mehreren Spalten zu vergleichen, wenn die Geschäftsregeln dies erfordern. Das folgende Verfahren veranschaulicht die Validierung beim Versuch, eine vollständige Entitätsklasse zu aktualisieren.
 
 > [!NOTE]
->  Der Validierungscode für Updates vollständiger Entitätsklassen wird in der partiellen <xref:System.Data.Linq.DataContext>-Klasse ausgeführt (statt in der partiellen Klasse einer bestimmten Entitätsklasse).
+> Der Validierungscode für Updates vollständiger Entitätsklassen wird in der partiellen <xref:System.Data.Linq.DataContext>-Klasse ausgeführt (statt in der partiellen Klasse einer bestimmten Entitätsklasse).
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>So validieren Sie Daten während eines Updates einer Entitätsklasse
 

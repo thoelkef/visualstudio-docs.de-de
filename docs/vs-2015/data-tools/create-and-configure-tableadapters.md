@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431205"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
      Ordnen Sie die Parameter der ausgewählten gespeicherten Prozedur den entsprechenden Spalten in der Datentabelle zu. Wenn die gespeicherte Prozedur einen Parameter, die mit dem Namen akzeptiert, z. B. `@CompanyName` , die zum Übergeben der `CompanyName` Spaltensatz in der Tabelle der **Quellspalte** von der `@CompanyName` Parameter, um `CompanyName`.  
   
     > [!NOTE]
-    >  Die gespeicherte Prozedur, die die SELECT-Befehl zugewiesen ist, wird durch Aufrufen der Methode des TableAdapter mit den Bezeichnungen im nächsten Schritt des Assistenten ausgeführt. Die Standardmethode ist `Fill`, sodass der Code, der in der Regel, zum Ausführen der SELECT-Prozedur verwendet wird ist `TableAdapter.Fill(tableName)`. Wenn Sie den Standardnamen aus ändern `Fill`, ersetzen Sie `Fill` mit dem Namen zuweisen, und Ersetzen Sie "TableAdapter" durch den tatsächlichen Namen des TableAdapter (z. B. `CustomersTableAdapter`).  
+    > Die gespeicherte Prozedur, die die SELECT-Befehl zugewiesen ist, wird durch Aufrufen der Methode des TableAdapter mit den Bezeichnungen im nächsten Schritt des Assistenten ausgeführt. Die Standardmethode ist `Fill`, sodass der Code, der in der Regel, zum Ausführen der SELECT-Prozedur verwendet wird ist `TableAdapter.Fill(tableName)`. Wenn Sie den Standardnamen aus ändern `Fill`, ersetzen Sie `Fill` mit dem Namen zuweisen, und Ersetzen Sie "TableAdapter" durch den tatsächlichen Namen des TableAdapter (z. B. `CustomersTableAdapter`).  
   
 - Die **erweiterte Optionen** im Assistenten ermöglichen es Ihnen, Generieren von INSERT-, Update- und DELETE-Anweisungen, die basierend auf der SELECT-Anweisung, die auf definiert ist die **SQL-Anweisungen** Seite. Verwenden von optimistischer Parallelität, und gibt an, ob zum Aktualisieren der Datentabelle nach einem INSERT- und UPDATE-Anweisungen ausgeführt werden.  
   
@@ -82,7 +82,7 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
 3. Auf der **wählen Sie Ihre Datenverbindung** Bildschirm Wählen oder erstellen Sie die Verbindung, die die Abfrage verwendet.  
   
     > [!NOTE]
-    >  Dieser Bildschirm wird nur angezeigt, wenn der Designer nicht die richtige zu verwendende Verbindung bestimmen kann, oder wenn keine Verbindungen verfügbar sind.  
+    > Dieser Bildschirm wird nur angezeigt, wenn der Designer nicht die richtige zu verwendende Verbindung bestimmen kann, oder wenn keine Verbindungen verfügbar sind.  
   
 4. Auf der **wählen Sie einen Befehlstyp aus** aus der folgenden Methoden zum Abrufen von Daten aus der Datenbank wählen:  
   
@@ -97,7 +97,7 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
 - Wenn Sie eine vorhandene TableAdapter-Abfrage bearbeiten, mit der rechten Maustaste in der Abfrage aus, und wählen Sie dann **konfigurieren** aus dem Kontextmenü.  
   
     > [!NOTE]
-    >  Mit der rechten Maustaste in der Hauptabfrage des TableAdapter wird den TableAdapter und <xref:System.Data.DataTable> Schema. Mit der rechten Maustaste auf einen TableAdapter einer weiteren Abfrage, wird jedoch nur die ausgewählte Abfrage konfiguriert. Die **TableAdapter-Konfigurations-Assistenten** Neukonfiguration die Definition des TableAdapter, während die Konfigurations-Assistent die TableAdapter-Abfragen nur die ausgewählte Abfrage wird.  
+    > Mit der rechten Maustaste in der Hauptabfrage des TableAdapter wird den TableAdapter und <xref:System.Data.DataTable> Schema. Mit der rechten Maustaste auf einen TableAdapter einer weiteren Abfrage, wird jedoch nur die ausgewählte Abfrage konfiguriert. Die **TableAdapter-Konfigurations-Assistenten** Neukonfiguration die Definition des TableAdapter, während die Konfigurations-Assistent die TableAdapter-Abfragen nur die ausgewählte Abfrage wird.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Zum Hinzufügen einer globalen Abfrage einem TableAdapter  
   
@@ -108,7 +108,7 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
 - Geben Sie eine Abfrage, die die gewünschte Aufgabe, z. B. ausführt `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
-    >  Sie ziehen ein **Abfrage** Objekt direkt auf die **Dataset-Designer** erstellt eine Methode, die nur einen Skalarwert (Einzelwert) zurückgibt. Während die Abfrage oder gespeicherte Prozedur, die Sie auswählen, mehr als einen einzelnen Wert zurückgeben kann, gibt die Methode, die vom Assistenten erstellt wird nur einen einzelnen Wert zurück. Die Abfrage kann z. B. die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.  
+    > Sie ziehen ein **Abfrage** Objekt direkt auf die **Dataset-Designer** erstellt eine Methode, die nur einen Skalarwert (Einzelwert) zurückgibt. Während die Abfrage oder gespeicherte Prozedur, die Sie auswählen, mehr als einen einzelnen Wert zurückgeben kann, gibt die Methode, die vom Assistenten erstellt wird nur einen einzelnen Wert zurück. Die Abfrage kann z. B. die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444546"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Umgestaltung "Parameter neu anordnen" (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58959463"
  Zum Ausführen der `Reorder Parameters` -Operation, platzieren Sie den Cursor auf oder neben einer Methode, Indexer oder Delegat. Wenn der Cursor positioniert wurde, rufen die `Reorder Parameters` Vorgang durch Drücken der Tastenkombination oder durch Klicken auf den Befehl aus dem Kontextmenü.  
   
 > [!NOTE]
->  Sie können den ersten Parameter in eine Erweiterungsmethode nicht ändern.  
+> Sie können den ersten Parameter in eine Erweiterungsmethode nicht ändern.  
   
 ### <a name="to-reorder-parameters"></a>Parameter neu anordnen.  
   
-1.  Erstellen einer Klassenbibliothek mit dem Namen `ReorderParameters`, und Ersetzen Sie `Class1` mit dem folgenden Beispielcode.  
+1. Erstellen einer Klassenbibliothek mit dem Namen `ReorderParameters`, und Ersetzen Sie `Class1` mit dem folgenden Beispielcode.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "58959463"
     }  
     ```  
   
-2.  Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
+2. Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
   
-3.  Auf der **Umgestalten** Menü klicken Sie auf **Parameter neu anordnen**.  
+3. Auf der **Umgestalten** Menü klicken Sie auf **Parameter neu anordnen**.  
   
      Die **Parameter neu anordnen** Dialogfeld wird angezeigt.  
   
-4.  In der **Parameter neu anordnen** wählen Sie im Dialogfeld `int i` in die **Parameter** aus, und klicken Sie dann auf die Schaltfläche nach unten.  
+4. In der **Parameter neu anordnen** wählen Sie im Dialogfeld `int i` in die **Parameter** aus, und klicken Sie dann auf die Schaltfläche nach unten.  
   
      Alternativ können Sie ziehen `int i` nach `bool b` in die **Parameter** Liste.  
   
-5.  In der **Parameter neu anordnen** Dialogfeld klicken Sie auf **OK**.  
+5. In der **Parameter neu anordnen** Dialogfeld klicken Sie auf **OK**.  
   
      Wenn die **Vorschau der verweisänderungen** Option ausgewählt ist, der **Parameter neu anordnen** im Dialogfeld die **Vorschau der Änderungen – Parameter neu anordnen** Dialogfeld wird angezeigt. Es bietet eine Vorschau der Änderungen in der Parameterliste für `MethodB` in der Signatur und den Methodenaufruf.  
   
-    1.  Wenn die **Vorschau der Änderungen – Parameter neu anordnen** klicken Sie im angezeigten Dialogfeld **übernehmen**.  
+    1. Wenn die **Vorschau der Änderungen – Parameter neu anordnen** klicken Sie im angezeigten Dialogfeld **übernehmen**.  
   
          In diesem Beispiel ist die Deklaration der Methode und alle der Methodenaufruf Websites für `MethodB` werden aktualisiert.  
   

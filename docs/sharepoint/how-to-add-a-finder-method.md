@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428727"
 ---
 # <a name="how-to-add-a-finder-method"></a>Vorgehensweise: Hinzufügen einer Finder-Methode
   Damit können den Business Data Connectivity (BDC)-Dienst, um eine Liste von Entitäten in einem Webpart oder einer Liste anzuzeigen, müssen Sie erstellen eine *Finder* Methode. Eine Finder-Methode ist eine besondere Methode, die eine Auflistung von Instanzen der Entität zurückgibt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608070"
 4. Konfigurieren Sie den Typdeskriptor als Typdeskriptor eine Entity-Auflistung. Weitere Informationen zum Erstellen der Sammlung Entitätstypdeskriptor finden Sie unter [Vorgehensweise: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Sie müssen nicht diesen Schritt ausführen, wenn Sie eine spezifische Finder-Methode für die Entität hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der spezifische Finder-Methode definiert.
+   > Sie müssen nicht diesen Schritt ausführen, wenn Sie eine spezifische Finder-Methode für die Entität hinzugefügt haben. Visual Studio verwendet den Typdeskriptor, den Sie in der spezifische Finder-Methode definiert.
 
 5. In **Projektmappen-Explorer**, öffnen Sie im Kontextmenü des der Authentifizierungsdienst-Codedatei, die generiert wurde für die Entität aus, und wählen Sie dann **Ansichtscode**. Weitere Informationen zu den Authentifizierungsdienst-Codedatei, finden Sie unter [erstellen ein Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608070"
      Das folgende Beispiel gibt eine Auflistung von `Contact` Entitäten durch Verwenden von Daten aus der AdventureWorks-Beispieldatenbank für SQL Server.
 
    > [!NOTE]
-   >  Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
+   > Ersetzen Sie den Wert der `ServerName` Feld mit dem Namen Ihres Servers.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

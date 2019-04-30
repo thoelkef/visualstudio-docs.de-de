@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430383"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.
@@ -75,7 +75,7 @@ ms.locfileid: "60059993"
 4. Erweitern Sie die **Visual Basic** oder **Visual C#-** Knoten, und wählen Sie dann die **Erweiterbarkeit** Knoten.
 
     > [!NOTE]
-    >  Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
+    > Die **Erweiterbarkeit** Knoten ist nur verfügbar, wenn Sie Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
 
 5. Wählen Sie in der Liste der Projektvorlagen das Projekt **VSIX-Projekt**.
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059993"
 2. Erstellen Sie ein SharePoint 2010-Projekt mit dem Namen **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   >  In der **SharePoint Customization Wizard**, wählen Sie nicht die **als farmlösung bereitstellen** Optionsfeld aus.
+   > In der **SharePoint Customization Wizard**, wählen Sie nicht die **als farmlösung bereitstellen** Optionsfeld aus.
 
 3. Dem Projekt ein leeres Projektelement hinzugefügt werden soll, und nennen Sie das Element **"Field1"**.
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059993"
 7. Klicken Sie in das Verzeichnis, das das BaseSharePointProject-Projekt enthält, wählen Sie die key.snk-Datei, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
    > [!NOTE]
-   >  In dieser exemplarischen Vorgehensweise wird diese KEY.SNK-Datei von der Projektvorlage verwendet, die Sie erstellen, um die einzelnen Projekte zu signieren, die mit der Vorlage erstellt werden. Gewusst wie: Erweitern Sie in diesem Beispiel zum Erstellen einer neuen key.snk-Datei für die einzelnen finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+   > In dieser exemplarischen Vorgehensweise wird diese KEY.SNK-Datei von der Projektvorlage verwendet, die Sie erstellen, um die einzelnen Projekte zu signieren, die mit der Vorlage erstellt werden. Gewusst wie: Erweitern Sie in diesem Beispiel zum Erstellen einer neuen key.snk-Datei für die einzelnen finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 8. Wiederholen Sie die Schritte 5-8, um die folgenden Dateien aus den angegebenen Unterordnern im Verzeichnis BaseSharePointProject hinzuzufügen:
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059993"
 6. In der **Typ** wählen **Microsoft.VisualStudio.ProjectTemplate**.
 
     > [!NOTE]
-    >  Dieser Wert entspricht dem `ProjectTemplate`-Element in der Datei "extension.vsixmanifest". Durch dieses Element wird der Unterordner im VSIX-Paket identifiziert, der die Projektvorlage enthält. Weitere Informationen finden Sie unter ["ProjectTemplate"-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
+    > Dieser Wert entspricht dem `ProjectTemplate`-Element in der Datei "extension.vsixmanifest". Durch dieses Element wird der Unterordner im VSIX-Paket identifiziert, der die Projektvorlage enthält. Weitere Informationen finden Sie unter ["ProjectTemplate"-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
 7. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059993"
 10. In der **Typ** wählen **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059993"
      Dadurch wird auf dem Entwicklungscomputer die lokale SharePoint-Website angegeben, die zum Debuggen verwendet werden soll.
 
     > [!NOTE]
-    >  Die **Website-URL** Eigenschaft ist standardmäßig leer, da die Projektvorlage für Websitespalten enthalten keinen Assistenten zum Erfassen dieses Werts, wenn das Projekt erstellt wird. Weitere Informationen zum Hinzufügen eines Assistenten, die diesen Wert vom Entwickler abgefragt, und klicken Sie dann diese Eigenschaft im neuen Projekt konfiguriert, finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+    > Die **Website-URL** Eigenschaft ist standardmäßig leer, da die Projektvorlage für Websitespalten enthalten keinen Assistenten zum Erfassen dieses Werts, wenn das Projekt erstellt wird. Weitere Informationen zum Hinzufügen eines Assistenten, die diesen Wert vom Entwickler abgefragt, und klicken Sie dann diese Eigenschaft im neuen Projekt konfiguriert, finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 3. Drücken Sie die Taste **F5**.
 
      Die Websitespalte wird verpackt und bereitgestellt werden, auf die SharePoint-Website, die im angegebenen die **Website-URL** -Eigenschaft des Projekts. Im Webbrowser wird die Standardseite dieser Website geöffnet.
 
     > [!NOTE]
-    >  Wenn die **Skriptdebugging deaktiviert** wählen Sie im angezeigten Dialogfeld die **Ja** Schaltfläche, um das Debuggen des Projekts fortzusetzen.
+    > Wenn die **Skriptdebugging deaktiviert** wählen Sie im angezeigten Dialogfeld die **Ja** Schaltfläche, um das Debuggen des Projekts fortzusetzen.
 
 4. Auf der **Websiteaktionen** Menü wählen **Standorteinstellungen**.
 

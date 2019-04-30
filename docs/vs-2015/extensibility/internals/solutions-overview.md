@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432083"
 ---
 # <a name="solutions-overview"></a>Übersicht über Projektmappen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstell
  Jedem VSPackage kann in beide Arten von Projektmappendatei schreiben. Aufgrund der Natur der Dateien es gibt zwei unterschiedliche Schnittstellen implementiert, um in diese schreiben. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Schnittstelle schreibt Textinformationen in der SLN-Datei und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> Schnittstelle binäre Datenströmen in der SUO-Datei geschrieben.  
   
 > [!NOTE]
->  Ein Projekt muss nicht explizit Schreiben eines Eintrags für sich selbst in die Projektmappendatei; die Umgebung, die für das Projekt behandelt werden. Aus diesem Grund, es sei denn, Sie speziell für die Projektmappendatei Weitere Inhalte hinzufügen möchten, nicht müssen Sie das VSPackage auf diese Weise zu registrieren.  
+> Ein Projekt muss nicht explizit Schreiben eines Eintrags für sich selbst in die Projektmappendatei; die Umgebung, die für das Projekt behandelt werden. Aus diesem Grund, es sei denn, Sie speziell für die Projektmappendatei Weitere Inhalte hinzufügen möchten, nicht müssen Sie das VSPackage auf diese Weise zu registrieren.  
   
  Jedes VSPackage Unterstützung der Persistenz der Lösung verwendet drei Schnittstellen, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> -Schnittstelle, die von der Umgebung implementiert und vom VSPackage aufgerufen, und `IVsPersistSolutionProps` und `IVsPersistSolutionOpts`, sind beide implementiert vom VSPackage. Die `IVsPersistSolutionOpts` Schnittstelle nur implementiert werden, wenn private Informationen vom VSPackage in der SUO-Datei geschrieben werden muss.  
   
@@ -44,7 +44,7 @@ Eine Lösung ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstell
    Spezifische Informationen im Zusammenhang mit der Verwendung dieser Dateien finden Sie in [Lösung (. Sln) Datei](../../extensibility/internals/solution-dot-sln-file.md) und [Benutzeroptionen bei Projektmappen (. Suo)-Datei](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Wenn Sie eine neue Projektmappenkonfiguration bestehend aus zwei Projekten Konfigurationen und Ausschließen von einer dritten aus dem Build erstellen möchten, müssen Sie die Seiten-UI-Eigenschaft oder die Automatisierung zu verwenden. Sie nicht der Projektmappenbuild-Konfigurationen-Manager und deren Eigenschaften direkt ändern, aber Sie können mithilfe der projektmappenbuildmanager Bearbeiten der `SolutionBuild` Klasse von DTE im Automatisierungsmodell. Weitere Informationen zum Konfigurieren von Lösungen finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
+> Wenn Sie eine neue Projektmappenkonfiguration bestehend aus zwei Projekten Konfigurationen und Ausschließen von einer dritten aus dem Build erstellen möchten, müssen Sie die Seiten-UI-Eigenschaft oder die Automatisierung zu verwenden. Sie nicht der Projektmappenbuild-Konfigurationen-Manager und deren Eigenschaften direkt ändern, aber Sie können mithilfe der projektmappenbuildmanager Bearbeiten der `SolutionBuild` Klasse von DTE im Automatisierungsmodell. Weitere Informationen zum Konfigurieren von Lösungen finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432461"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Wenn von-Plug-in unterstützt werden, im Hintergrund des Verzeichnisses über die Zeitstempel vergleicht oder, wenn nicht unterstützt, auf SCC_DIFF_QD_CHECKSUM oder SCC_DIFF_QD_CONTENTS zurück fällt.|  
   
 > [!NOTE]
->  Diese Funktion verwendet die gleichen Befehlsflags als die [SccDiff](../extensibility/sccdiff-function.md). Ein Quellcodeverwaltungs-Plug-In können jedoch die "Quick-Diff"-Vorgang für Verzeichnisse wird nicht unterstützt.  
+> Diese Funktion verwendet die gleichen Befehlsflags als die [SccDiff](../extensibility/sccdiff-function.md). Ein Quellcodeverwaltungs-Plug-In können jedoch die "Quick-Diff"-Vorgang für Verzeichnisse wird nicht unterstützt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

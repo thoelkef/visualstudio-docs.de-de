@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440363"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
   Sie können angeben, welche Elemente von Microsoft Office Outlook einen Formularbereich anzeigen, indem der Formularbereich der Nachrichtenklasse jedes Elements zugeordnet. Z. B. Wenn Sie einen Formularbereich am unteren Rand eine e-Mail-Nachricht anfügen möchten, Sie können Zuordnen des Formularbereichs mit den `IPM.Note` message-Klasse.
@@ -45,7 +45,7 @@ ms.locfileid: "60063542"
  Sie können auch die Namen der benutzerdefinierten Meldungsklassen angeben. Benutzerdefinierte Meldungsklassen identifizieren Sie benutzerdefinierte Formulare, die Sie in Outlook zu definieren.
 
 > [!NOTE]
->  Für die Formularbereiche Ersetzung und alle ersetzen können Sie einen neuen benutzerdefinierten Meldung Klassennamen angeben. Sie müssen nicht den Nachrichtenklassennamen eines vorhandenen benutzerdefinierten Formulars verwenden. Der Name der benutzerdefinierten Message-Klasse muss eindeutig sein. Eine Möglichkeit, sicherzustellen, dass der Name eindeutig ist, ist eine Namenskonvention, die etwa wie folgt verwenden: \<*Standard-Nachrichtenklassenname*>.\< *Unternehmen*>.\< *Nachrichtenklassenname*> (z. B.: `IPM.Note.Contoso.MyMessageClass`).
+> Für die Formularbereiche Ersetzung und alle ersetzen können Sie einen neuen benutzerdefinierten Meldung Klassennamen angeben. Sie müssen nicht den Nachrichtenklassennamen eines vorhandenen benutzerdefinierten Formulars verwenden. Der Name der benutzerdefinierten Message-Klasse muss eindeutig sein. Eine Möglichkeit, sicherzustellen, dass der Name eindeutig ist, ist eine Namenskonvention, die etwa wie folgt verwenden: \<*Standard-Nachrichtenklassenname*>.\< *Unternehmen*>.\< *Nachrichtenklassenname*> (z. B.: `IPM.Note.Contoso.MyMessageClass`).
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse
  Es gibt zwei Möglichkeiten, eine Nachrichtenklasse aus einen Formularbereich zugeordnet werden soll:
@@ -76,7 +76,7 @@ ms.locfileid: "60063542"
   Die **neuer Outlook-Formularbereich** Assistent überprüft das Format der Eingabe aus, wenn Sie auf **Fertig stellen**.
 
 > [!NOTE]
->  Die **neuer Outlook-Formularbereich** Assistenten überprüft nicht, dass die Nachricht-Klassennamen, die Sie bereitstellen korrekt oder gültig sind.
+> Die **neuer Outlook-Formularbereich** Assistenten überprüft nicht, dass die Nachricht-Klassennamen, die Sie bereitstellen korrekt oder gültig sind.
 
  Beim Ausführen des Assistenten, der **neuer Outlook-Formularbereich** -Assistent wendet Attribute auf die Klasse, die die angegebene Nachrichtenklassennamen enthalten. Sie können diese Attribute auch manuell anwenden.
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063542"
   Visual Studio überprüft das Format der Nachrichtenklassennamen an, bei der Erstellung des Projekts.
 
 > [!NOTE]
->  Visual Studio überprüft nicht, dass die Nachricht-Klassennamen, die Sie bereitstellen korrekt oder gültig sind.
+> Visual Studio überprüft nicht, dass die Nachricht-Klassennamen, die Sie bereitstellen korrekt oder gültig sind.
 
 ## <a name="see-also"></a>Siehe auch
 - [Zugriff auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)

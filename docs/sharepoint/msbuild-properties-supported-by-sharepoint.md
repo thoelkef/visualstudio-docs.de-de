@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429211"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Von SharePoint unterstützte MsBuild-Eigenschaften
   Alle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaft, die in der Microsoft.VisualStudio.SharePoint.targets-Datei, die Projektdatei oder das Projektbenutzerdatei definierten kann verwendet werden, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekte. Zusätzlich zu den allgemeinen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften bereitgestellt, die vom SharePoint-Projekt definiert zusätzliche Eigenschaften, die spezifisch für SharePoint-Projekte sind.
@@ -49,7 +49,7 @@ ms.locfileid: "56599687"
  Für die Flexibilität, anstelle von hartcodierten Zeichenfolgen in die **vor der Bereitstellung über die Befehlszeile** und **Befehlszeile nach der Bereitstellung** Felder auf der Seite der SharePoint-Eigenschaften können Sie die SharePoint die Eigenschaften als Argumente. Beispielsweise anstelle einen bestimmten [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] Zeichenfolge für die SharePoint-Website können Sie stattdessen `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  Verwenden Sie entweder die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Variable Syntax `$(` *PropertyName* `)` oder die Umgebungsvariablensyntax `%` *PropertyName* `%` Um eine Eigenschaft anzugeben.
+> Verwenden Sie entweder die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Variable Syntax `$(` *PropertyName* `)` oder die Umgebungsvariablensyntax `%` *PropertyName* `%` Um eine Eigenschaft anzugeben.
 
 ## <a name="see-also"></a>Siehe auch
 

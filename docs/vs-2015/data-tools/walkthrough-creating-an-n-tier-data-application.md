@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424747"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
  Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe und zwei Klassenbibliotheksprojekte erstellt. Die erste Klassenbibliothek enthält das DataSet (die generierte typisierte DataSet-Klasse und die DataTables für die Anwendungsdaten). Dieses Projekt wird als Datenentitätsschicht der Anwendung verwendet und befindet sich normalerweise in der mittleren Ebene. Der Dataset-Designer wird verwendet, um das ursprüngliche Dataset zu erstellen und den Code automatisch in zwei Klassenbibliotheken aufzuteilen.  
   
 > [!NOTE]
->  Stellen Sie sicher, dass Projekt und Projektmappe ordnungsgemäß benannt wurden, bevor Sie auf **OK** klicken. Das erleichtert die Durchführung der exemplarischen Vorgehensweise.  
+> Stellen Sie sicher, dass Projekt und Projektmappe ordnungsgemäß benannt wurden, bevor Sie auf **OK** klicken. Das erleichtert die Durchführung der exemplarischen Vorgehensweise.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>So erstellen Sie die N-Tier-Projektmappe und die DataEntityTier-Klassenbibliothek  
   
 1. Von der **Datei** Menü ein neues Projekt erstellen.  
   
     > [!NOTE]
-    >  Die **Dataset-Designer** wird in unterstützt [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und C#-Projekte. Erstellen Sie das neue Projekt in einer der beiden Sprachen.  
+    > Die **Dataset-Designer** wird in unterstützt [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] und C#-Projekte. Erstellen Sie das neue Projekt in einer der beiden Sprachen.  
   
 2. In der **neues Projekt** Dialogfeld die **Projekttypen** Bereich, klicken Sie auf **Windows**.  
   
@@ -125,7 +125,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
 6. Sollte für die Datenbank ein Kennwort erforderlich sein, wählen Sie die Option für die Einbeziehung vertraulicher Daten aus, und klicken Sie anschließend auf **Weiter**.  
   
     > [!NOTE]
-    >  Wenn Sie eine lokale Datenbankdatei ausgewählt haben (statt eine Verbindung mit SQL Server herzustellen), werden Sie möglicherweise gefragt, ob Sie die Datei zum Projekt hinzufügen möchten. Klicken Sie auf **Ja** die Datenbankdatei zum Projekt hinzufügen.  
+    > Wenn Sie eine lokale Datenbankdatei ausgewählt haben (statt eine Verbindung mit SQL Server herzustellen), werden Sie möglicherweise gefragt, ob Sie die Datei zum Projekt hinzufügen möchten. Klicken Sie auf **Ja** die Datenbankdatei zum Projekt hinzufügen.  
   
 7. Klicken Sie auf **Weiter** auf die **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** Seite.  
   
@@ -153,7 +153,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
    DataSet und TableAdapter werden in die zwei Klassenbibliotheksprojekte aufgeteilt. Das Projekt, in dem ursprünglich das gesamte DataSet (DataAccessTier) enthalten war, enthält jetzt nur noch die TableAdapter. Das Projekt festgelegt wird, der **DataSet-Projekt** -Eigenschaft (DataEntityTier) enthält das typisierte Dataset: NorthwindDataSet.Dataset.Designer.vb (oder NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.  
+> Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.  
   
 ## <a name="creating-a-new-service-application"></a>Erstellen einer neuen Dienstanwendung  
  Da in dieser exemplarischen Vorgehensweise beschrieben wird, wie mithilfe eines WCF-Diensts auf die Datenzugriffsebene zugegriffen wird, muss eine neue WCF-Dienstanwendung erstellt werden.  
@@ -220,7 +220,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
  Nachdem die Datenzugriffsebene die Methoden zur Rückgabe der Daten enthält, müssen Sie im Datendienst Methoden erstellen, um die Methoden in der Datenzugriffsebene aufzurufen.  
   
 > [!NOTE]
->  In C#-Projekten muss ein Verweis auf die `System.Data.DataSetExtensions`-Assembly für die Kompilierung des nachfolgenden Codes hinzugefügt werden.  
+> In C#-Projekten muss ein Verweis auf die `System.Data.DataSetExtensions`-Assembly für die Kompilierung des nachfolgenden Codes hinzugefügt werden.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>So erstellen Sie im Datendienst die GetCustomers-Funktion und die GetOrders-Funktion  
   
@@ -322,7 +322,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
 3. Wählen Sie **"Service1"** , und klicken Sie auf **OK**.  
   
     > [!NOTE]
-    >  Wenn der aktuelle Computer über mehrere Dienste verfügt, wählen Sie den zuvor in dieser exemplarischen Vorgehensweise erstellten Dienst aus (der Dienst, der die GetCustomers-Methode und die GetOrders-Methode enthält).  
+    > Wenn der aktuelle Computer über mehrere Dienste verfügt, wählen Sie den zuvor in dieser exemplarischen Vorgehensweise erstellten Dienst aus (der Dienst, der die GetCustomers-Methode und die GetOrders-Methode enthält).  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Hinzufügen von DataGridViews zum Formular, um die vom Datendienst zurückgegebenen Daten anzuzeigen.  
  Nachdem der Dienstverweis zum Datendienst hinzugefügt wurde, werden die vom Dienst zurückgegebenen Daten automatisch zum Fenster **Datenquellen** hinzugefügt.  
@@ -361,7 +361,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
  Da der Dienst Daten aus den Tabellen Customers und Orders zurückgibt, ist der Standardwert von maxReceivedMessageSize nicht ausreichend und muss erhöht werden. Für diese exemplarische Vorgehensweise ändern Sie den Wert in 6553600. Durch die Änderung des Werts im Client wird der Dienstverweis automatisch aktualisiert.  
   
 > [!NOTE]
->  Die niedrigere Standardgröße dient dazu, die Anfälligkeit für Denial-of-Service (DoS)-Angriffe zu verringern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> Die niedrigere Standardgröße dient dazu, die Anfälligkeit für Denial-of-Service (DoS)-Angriffe zu verringern. Weitere Informationen finden Sie unter <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>So erhöhen Sie den maxReceivedMessageSize-Wert  
   

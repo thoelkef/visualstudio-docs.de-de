@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434253"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und Tipps zum Beheben der Probleme.
@@ -46,7 +46,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
 4. Öffnen der **Ausgabe** Fenster der Instanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tritt ein Fehler, die auf das VSPackage lädt. Informationen, warum das VSPackage nicht laden kann in diesem Fenster angezeigt werden.
 
    > [!NOTE]
-   >  Wenn Sie die experimentelle Version von starten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aus der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE), überprüfen Sie die **Ausgabe** Fenster beider Versionen.
+   > Wenn Sie die experimentelle Version von starten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aus der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE), überprüfen Sie die **Ausgabe** Fenster beider Versionen.
 
 5. Überprüfen Sie das Aktivitätsprotokoll.
 
@@ -85,7 +85,7 @@ Es folgen allgemeine Probleme, die Sie möglicherweise mit einem VSPackage und T
     4. Auf der **Debuggen** Menü klicken Sie auf **Debuggen starten** oder drücken Sie F5.
 
         > [!NOTE]
-        >  Wenn Sie ein Projekt debuggen, erstellen Sie oder Laden Sie jetzt eine vorhandene Instanz des Projekts.
+        > Wenn Sie ein Projekt debuggen, erstellen Sie oder Laden Sie jetzt eine vorhandene Instanz des Projekts.
 
 2. Verwenden des Aktivitätsprotokolls an.
 

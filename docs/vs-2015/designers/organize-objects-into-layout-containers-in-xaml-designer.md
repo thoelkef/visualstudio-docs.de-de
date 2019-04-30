@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432597"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Stellen Sie sich vor, wo Objekte auf einer Seite angezeigt werden sollen; Objekt
  Diese Seite beschreibt LayoutPanel-Elemente und Steuerelemente und leitet Sie dann weiter zu kurzen Videos, mit deren Hilfe sie einen Einstieg finden.  
   
 > [!NOTE]
->  Einige Videos beziehen sich möglicherweise auf Blend oder Expression Blend, die den gleichen XAML-Designer wie Visual Studio und Blend für Visual Studio verwenden.  
+> Einige Videos beziehen sich möglicherweise auf Blend oder Expression Blend, die den gleichen XAML-Designer wie Visual Studio und Blend für Visual Studio verwenden.  
   
 ## <a name="layout-panels"></a>Layoutbereiche  
  Starten Sie die Seite durch Auswahl eines dieser Layoutpanels. Ihre Seite kann mehrere Panele enthalten. Sie können z.B. mit einem Layoutbereich des Typs **Raster** beginnen und dann einem Bereich des **Rasters** ein **StackPanel** hinzufügen, um in diesem Element Steuerelemente vertikal anzuordnen.  

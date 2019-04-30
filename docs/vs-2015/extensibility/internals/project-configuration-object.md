@@ -11,12 +11,12 @@ ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d84dd905c09b0bcc19833198b925f66dea245b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 32e4d34ec3d1fbe8753b4185cab76caa77038bd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434831"
 ---
 # <a name="project-configuration-object"></a>Projektkonfigurationsobjekt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Eigenschaftenseiten für Projekt-Konfiguration
  Der Konfigurationsanbieter Projekt verwaltet die Projektkonfigurationen. Die Umgebung und andere Pakete, auf das Abrufen von Informationen zu Konfigurationen eines Projekts, und rufen Sie die Projekt-Konfigurationsanbieter-Objekt zugeordneten Schnittstellen zuzugreifen.  
   
 > [!NOTE]
->  Sie können nicht erstellen oder bearbeiten die Konfigurationsdateien für die Lösung programmgesteuert. Verwenden Sie `DTE.SolutionBuilder`. Finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md) für Weitere Informationen.  
+> Sie können nicht erstellen oder bearbeiten die Konfigurationsdateien für die Lösung programmgesteuert. Verwenden Sie `DTE.SolutionBuilder`. Finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md) für Weitere Informationen.  
   
  Um veröffentlichen einen Anzeigenamen ein, in der Benutzeroberfläche für die Konfiguration verwendet werden, sollte Ihr Projekt implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. Die Umgebung ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, womit eine Liste der `IVsCfg` Zeiger, die Sie verwenden können, zum Abrufen der Anzeigenamen für die Konfiguration und Plattform-Informationen in der Benutzeroberfläche der Umgebung aufgelistet werden. Die aktive Konfiguration und Plattform ergeben sich die Konfiguration des Projekts in der Konfiguration der aktuellen Projektmappe gespeichert. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Methode kann verwendet werden, um die aktive Projektkonfiguration abzurufen.  
   
@@ -38,7 +38,7 @@ Eigenschaftenseiten für Projekt-Konfiguration
  Eine weitere Möglichkeit für die Umgebung und andere Projekte den Zugriff auf Projektkonfigurationen bereit ist für Projekte, die eine Implementierung bereitstellen der `IVsCfgProvider2::GetCfgs` Methode, um eine oder mehrere Konfigurationsobjekte zurück. Die Projekte können auch implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, erbt von `IVsProjectCfg` und dadurch `IVsCfg`, um die konfigurationsspezifischen Informationen bereitstellen. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> unterstützt die Plattformen und Funktionen zum Hinzufügen, löschen und Umbenennen von Projektkonfigurationen.  
   
 > [!NOTE]
->  Da Visual Studio nicht mehr auf zwei Arten der Konfiguration beschränkt ist, Code, der Konfigurationen verarbeitet nicht mit Annahmen über die Anzahl der Konfigurationen geschrieben werden sollte, noch mit der Annahme geschrieben werden, die ein Projekt, das nur eine Festplatte verfügt Konfiguration ist unbedingt Debuggen oder der Verkaufsversion durchführen. Dadurch wird die Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> veraltet.  
+> Da Visual Studio nicht mehr auf zwei Arten der Konfiguration beschränkt ist, Code, der Konfigurationen verarbeitet nicht mit Annahmen über die Anzahl der Konfigurationen geschrieben werden sollte, noch mit der Annahme geschrieben werden, die ein Projekt, das nur eine Festplatte verfügt Konfiguration ist unbedingt Debuggen oder der Verkaufsversion durchführen. Dadurch wird die Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> veraltet.  
   
  Aufrufen von `QueryInterface` auf das von zurückgegebene Objekt`IVsGetCfgProvider::GetCfgProvider` ruft `IVsCfgProvider2`. Wenn `IVsGetCfgProvider` wurde nicht gefunden, durch den Aufruf `QueryInterface` auf die `IVsProject3` Project-Objekt, Sie können das konfigurationsanbieterobjekt zugreifen, durch den Aufruf `QueryInterface` für die Hierarchie Browser Stammobjekt für das Objekt zurückgegeben, für die `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, oder über Ein Zeiger auf den Konfigurationsanbieter für zurückgegebenen `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.  
   

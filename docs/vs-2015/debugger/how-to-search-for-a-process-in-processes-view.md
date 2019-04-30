@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431728"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Vorgehensweise: Suchen eines Prozesses in der Prozessansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Sie können mithilfe der Prozess-ID oder ein Modul Zeichenfolge als Suchkriteriu
 4. Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
   
    > [!TIP]
-   >  Um alle Prozesse, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Prozess** und geben Sie den Namen des Moduls in die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Prozesse, die Suche fortgesetzt werden.  
+   > Um alle Prozesse, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Prozess** und geben Sie den Namen des Moduls in die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Prozesse, die Suche fortgesetzt werden.  
   
 5. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.  
   

@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439042"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und Metadatenkonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
 1. Erstellen ein Objekt, das die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse.  
   
    > [!NOTE]
-   >  Die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse sollte nie implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.Shell.Package> Klasse.  
+   > Die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse sollte nie implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.Shell.Package> Klasse.  
   
 2. Registrieren Sie die implementierende Klasse <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Bereitstellen von Unterstützung für die VSPackage Designer-Erweiterungen durch Anwenden von Instanzen von <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für die Bereitstellung die VSPackage Implementierung der Klasse <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  Zur Zeit können die Entwurfsoberfläche unterstützt nur das Erstellen von Komponenten, und daher nur Komponenten lokalen Metadaten. Im obigen Beispiel, wir haben versucht, eine Eigenschaft zu ändern, wie z.B. die `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag übergebene `CustomBrowser` würde nie angezeigt werden, da der Designer nie eine Instanz erstellt `Color`. Wenn auf das globale Flag `false` eignet sich für Komponenten, z. B. Steuerelemente, Timer und Dialogfelder.  
+> Zur Zeit können die Entwurfsoberfläche unterstützt nur das Erstellen von Komponenten, und daher nur Komponenten lokalen Metadaten. Im obigen Beispiel, wir haben versucht, eine Eigenschaft zu ändern, wie z.B. die `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag übergebene `CustomBrowser` würde nie angezeigt werden, da der Designer nie eine Instanz erstellt `Color`. Wenn auf das globale Flag `false` eignet sich für Komponenten, z. B. Steuerelemente, Timer und Dialogfelder.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436243"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IntelliSense-Codeausschnitte sind vorab erstellte Codeelemente, die mithilfe von
  Gibt den Namen der Assembly an, auf die vom Codeausschnitt verwiesen wird.  
   
 > [!NOTE]
->  Das `Assembly`-Element wird nur in Visual Basic-Codeausschnitten unterstützt.  
+> Das `Assembly`-Element wird nur in Visual Basic-Codeausschnitten unterstützt.  
   
  Der Textwert des **Assembly**-Elements entspricht entweder dem benutzerfreundlichen Textnamen der Assembly, beispielsweise `System.dll`, oder ihrem starken Namen, beispielsweise `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Gibt eine Funktion an, die ausgeführt wird, wenn das Literal oder Objekt in Visual Studio den Fokus erhält.  
   
 > [!NOTE]
->  Das `Function`-Element wird nur in Visual C#-Codeausschnitten unterstützt.  
+> Das `Function`-Element wird nur in Visual C#-Codeausschnitten unterstützt.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Gibt eine URL zu weiteren Informationen über einen Codeausschnitt an.  
   
 > [!NOTE]
->  Visual Studio verwendet das `HelpUrl`-Element nicht. Das Element ist Bestandteil des XML-Schemas für IntelliSense-Codeausschnitte. Alle Codeausschnitte mit dem Element werden überprüft, der Wert des Elements wird jedoch nie verwendet.  
+> Visual Studio verwendet das `HelpUrl`-Element nicht. Das Element ist Bestandteil des XML-Schemas für IntelliSense-Codeausschnitte. Alle Codeausschnitte mit dem Element werden überprüft, der Wert des Elements wird jedoch nie verwendet.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt verwendet werden.  
   
 > [!NOTE]
->  Das `Import`-Element wird nur für Visual Basic-Projekte unterstützt.  
+> Das `Import`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Gruppiert einzelne `Import`-Elemente.  
   
 > [!NOTE]
->  Das `Imports`-Element wird nur für Visual Basic-Projekte unterstützt.  
+> Das `Imports`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschnitts importiert werden muss. Der im `Namespace`-Element angegebene Namespace wird automatisch einer `Imports`-Anweisung am Anfang des Codes hinzugefügt, sofern er nicht bereits vorhanden ist.  
   
 > [!NOTE]
->  Das `Namespace`-Element wird nur für Visual Basic-Projekte unterstützt.  
+> Das `Namespace`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Bezeichnet Informationen über die für den Codeausschnitt erforderlichen Assemblyverweise.  
   
 > [!NOTE]
->  Das `Reference`-Element wird nur für Visual Basic-Projekte unterstützt.  
+> Das `Reference`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Gruppiert einzelne `Reference`-Elemente.  
   
 > [!NOTE]
->  Das `References`-Element wird nur für Visual Basic-Projekte unterstützt.  
+> Das `References`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Gibt den Verknüpfungstext an, der zum Einfügen des Codeausschnitts verwendet wird. Der Textwert eines `Shortcut`-Elements kann nur alphanumerische Zeichen, Bindestriche ( - ) und Unterstriche ( _ ) enthalten.  
   
 > [!CAUTION]
->  Die Zeichen "_" und "–“ werden in C++-Ausschnittsverknüpfungen nicht unterstützt.  
+> Die Zeichen "_" und "–“ werden in C++-Ausschnittsverknüpfungen nicht unterstützt.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Gibt eine URL an, die weitere Informationen über die referenzierte Assembly bietet.  
   
 > [!NOTE]
->  Das `Url`-Element wird nur für Visual Basic-Projekte unterstützt.  
+> Das `Url`-Element wird nur für Visual Basic-Projekte unterstützt.  
   
 ```xml  
 <Url>  

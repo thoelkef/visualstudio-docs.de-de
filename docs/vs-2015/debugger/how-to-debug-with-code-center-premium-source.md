@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438332"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Vorgehensweise: Debuggen Sie mit Code Center Premium-Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Achten Sie darauf, dass Sie den nachgestellten Schrägstrich<strong>/</strong> am Ende des Pfads.  
+   > Achten Sie darauf, dass Sie den nachgestellten Schrägstrich<strong>/</strong> am Ende des Pfads.  
   
      Verschieben Sie diese Orte an den Anfang der Liste, um sicherzustellen, dass diese Symbole zuerst geladen werden.  
   
    > [!NOTE]
-   >  Diese Code Center Premium-Orte müssen zuerst aufgeführt werden, damit sie als erste Orte geladen werden. In Visual Studio 2010 können nicht verschoben werden alle oben aufgeführten Server die **Microsoft-Symbolserver** Eintrag, weshalb Sie das Kontrollkästchen deaktiviert werden muss.  
+   > Diese Code Center Premium-Orte müssen zuerst aufgeführt werden, damit sie als erste Orte geladen werden. In Visual Studio 2010 können nicht verschoben werden alle oben aufgeführten Server die **Microsoft-Symbolserver** Eintrag, weshalb Sie das Kontrollkästchen deaktiviert werden muss.  
    > 
    >  Um während einer Debugsitzung Symbole aus den Microsoft-Symbolen zu laden, folgen Sie diesen Schritten:  
    > 
@@ -113,7 +113,7 @@ Mit dem [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]-Debugger kön
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Achten Sie darauf, dass Sie den nachgestellten Schrägstrich<strong>/</strong> am Ende des Pfads.  
+   > Achten Sie darauf, dass Sie den nachgestellten Schrägstrich<strong>/</strong> am Ende des Pfads.  
   
 4. Führen Sie für jedes verwaltete Projekte in der Projektmappe Folgendes aus:  
   

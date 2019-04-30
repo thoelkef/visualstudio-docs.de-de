@@ -13,12 +13,12 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f450453ce8e336fecb401e30bc777c7b9c8ef7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441490"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef-Hilfsprogramm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58958121"
 Eine DLL-Datei für Visual Studio-Erweiterung als Parameter akzeptiert, und erstellt eine PKGDEF-Datei, um die DLL-Datei zu begleiten. Die PKGDEF-Datei enthält alle Informationen, die in die systemregistrierung andernfalls geschrieben werden sollen, wenn die Erweiterung installiert ist.  
   
 > [!NOTE]
->  Die meisten der Projektvorlagen, die in Visual Studio SDK, automatisch enthalten sind erstellen PKGDEF-Dateien als Teil des Buildprozesses. Dieses Dokument richtet sich für diejenigen, die Pakete manuell erstellen, oder konvertieren Sie vorhandene Pakete, um die PKGDEF-Bereitstellung verwenden möchten.  
+> Die meisten der Projektvorlagen, die in Visual Studio SDK, automatisch enthalten sind erstellen PKGDEF-Dateien als Teil des Buildprozesses. Dieses Dokument richtet sich für diejenigen, die Pakete manuell erstellen, oder konvertieren Sie vorhandene Pakete, um die PKGDEF-Bereitstellung verwenden möchten.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,7 +53,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  Die PKGDEF-Dateien müssen in einem der folgenden Speicherorte installiert sein: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ oder %vsinstalldir%\Common7\IDE\Extensions\\. Ist der Installationsordner %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, die Erweiterung wird von Visual Studio erkannt, aber standardmäßig deaktiviert sein. Der Benutzer kann mit die Erweiterung aktivieren **Erweiterungen und Updates**. Ist der Installationsordner %vsinstalldir%\Common7\IDE\Extensions\\, die Erweiterung ist standardmäßig aktiviert.  
   
 > [!NOTE]
->  Die **Erweiterungen und Updates** Tool kann nicht verwendet werden, um eine Erweiterung zugreifen, es sei denn, es als Teil eines VSIX-Pakets installiert ist.  
+> Die **Erweiterungen und Updates** Tool kann nicht verwendet werden, um eine Erweiterung zugreifen, es sei denn, es als Teil eines VSIX-Pakets installiert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [CreateExpInstance-Hilfsprogramm](../../extensibility/internals/createexpinstance-utility.md)

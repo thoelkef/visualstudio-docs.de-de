@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429048"
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 Projektmappenkonfigurationen auf Projektmappenebene Eigenschaften zu speichern. Sie leiten das Verhalten der **starten** (F5) Schlüssel und **erstellen** Befehle. Standardmäßig werden diese Befehle erstellen und die Debug-Konfiguration zu starten. Führen Sie beide Befehle im Kontext einer Projektmappenkonfiguration. Dies bedeutet, dass der Benutzer F5 erwarten kann, zu starten und zu erstellen, die beliebige die aktive Projektmappe über die Einstellungen konfiguriert ist. Die Umgebung für Lösungen anstelle von Projekten zu optimieren, wenn es darum geht, erstellen und ausführen soll.
@@ -23,7 +23,7 @@ Projektmappenkonfigurationen auf Projektmappenebene Eigenschaften zu speichern. 
  Der standardmäßige Visual Studio-Symbolleiste enthält eine Schaltfläche "Start" und eine Projektmappenkonfiguration-Dropdownliste rechts neben der Schaltfläche "Start". Dieser Liste kann Benutzer wählen die Konfiguration gestartet werden soll, wenn F5 gedrückt wird, ihre eigenen Projektmappenkonfigurationen erstellen oder Bearbeiten einer vorhandenen Konfigurations.
 
 > [!NOTE]
->  Es gibt keine Erweiterungsschnittstellen erstellen oder bearbeiten die Projektmappenkonfiguration ein. Verwenden Sie `DTE.SolutionBuilder`. Es gibt jedoch Erweiterbarkeits-APIs für die Verwaltung der Erstellung der Projektmappe. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Es gibt keine Erweiterungsschnittstellen erstellen oder bearbeiten die Projektmappenkonfiguration ein. Verwenden Sie `DTE.SolutionBuilder`. Es gibt jedoch Erweiterbarkeits-APIs für die Verwaltung der Erstellung der Projektmappe. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Hier ist, wie Sie die Projektmappenkonfiguration, die vom Projekttyp unterstützt implementieren können:
 

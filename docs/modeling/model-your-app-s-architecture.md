@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436892"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellieren Ihrer app&#39;s-Architektur
 Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer erfüllen müssen, können Sie Modelle als Teil der Beschreibung von Gesamtstruktur und das Verhalten des Softwaresystems oder der Anwendung in Visual Studio erstellen. Mit Modellen können Sie auch Muster beschreiben, die im gesamten Entwurf verwendet werden. Mithilfe dieser Modelle können Sie die vorhandene Architektur verstehen, Änderungen erörtern und Ihre Absichten eindeutig vermitteln.
@@ -24,7 +24,7 @@ Um sicherzustellen, dass das Softwaresystem oder die Anwendung Ihrer Benutzer er
  Ein Modell soll die Mehrdeutigkeiten in Beschreibungen in natürlicher Sprache reduzieren und Ihnen und Ihren Kollegen helfen, den Entwurf visuell darzustellen sowie alternative Entwürfe zu erörtern. Ein Modell sollte zusammen mit anderen Dokumenten oder Diskussionen verwendet werden. Ein Modell an sich stellt keine vollständige Spezifikation der Architektur dar.
 
 > [!NOTE]
->  In diesem gesamten Thema wird als „System“ die Software bezeichnet, die Sie entwickeln. Dabei kann es sich um eine umfangreiche Sammlung vieler Software- und Hardwarekomponenten, eine einzelne Anwendung oder einen Teil einer Anwendung handeln.
+> In diesem gesamten Thema wird als „System“ die Software bezeichnet, die Sie entwickeln. Dabei kann es sich um eine umfangreiche Sammlung vieler Software- und Hardwarekomponenten, eine einzelne Anwendung oder einen Teil einer Anwendung handeln.
 
  Die Architektur eines Systems kann in zwei Bereiche unterteilt werden:
 

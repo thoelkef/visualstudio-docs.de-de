@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424696"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen mithilfe der Vererbung einer einzelnen Tabelle (O/R-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 1. In **Server-Explorer**/**Datenbank-Explorer**, mit der rechten Maustaste die **Tabellen** Knoten, und klicken Sie auf **neue Tabelle hinzufügen**.  
   
     > [!NOTE]
-    >  Sie können die Northwind-Datenbank oder eine andere Datenbank verwenden, der Sie eine Tabelle hinzufügen können.  
+    > Sie können die Northwind-Datenbank oder eine andere Datenbank verwenden, der Sie eine Tabelle hinzufügen können.  
   
 2. Fügen Sie der Tabelle im Tabellen-Designer die folgenden Spalten hinzu:  
   
@@ -96,7 +96,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 2. Nennen Sie das Projekt **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird von Visual Basic- und C#-Projekten unterstützt. Erstellen Sie das neue Projekt in einer der beiden Sprachen.  
+    > Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird von Visual Basic- und C#-Projekten unterstützt. Erstellen Sie das neue Projekt in einer der beiden Sprachen.  
   
 3. Klicken Sie auf die **Windows Forms-Anwendung** -Vorlage, und klicken Sie dann auf **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441463"
 ---
 # <a name="extending-javascript-intellisense"></a>Erweitern von JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Weitere Beispiele finden Sie in der \\ \\ *Visual Studio-Installationspfad*\JavaScript\References-Ordner. Die showPlainComments.js-Datei in diesem Ordner enthält Beispiele für die Verwendung von anderen Ereignissen zu Standard-IntelliSense-Unterstützung für den standardmäßigen JavaScript-Kommentartags (/ /). Wie underscorefilter.js showPlainComments.js ist bereits als eine Erweiterung für die Arbeit zur Verfügung, und sehen Sie die resultierende IntelliSense-Informationen beim Kommentartags für Variablen, Funktionen und Objekte in Ihrem Code verwenden. Weitere Beispiele finden Sie unter [Codebeispiele](#CodeExamples).  
   
 > [!WARNING]
->  Wenn Sie die Erweiterungsdateien in Visual Studio enthaltenen ändern, können Sie JavaScript-IntelliSense oder die Funktion, die von der Erweiterung unterstützten deaktivieren.  
+> Wenn Sie die Erweiterungsdateien in Visual Studio enthaltenen ändern, können Sie JavaScript-IntelliSense oder die Funktion, die von der Erweiterung unterstützten deaktivieren.  
   
  Sie können Handler für die folgenden Ereignistypen in Ihrem Erweiterungscode erstellen, mit `addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Beispiele, die IntelliSense-Features wie Anweisungsvervollständigung, Informationen zu den Parametern und QuickInfo anzeigen, finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  In JavaScript bezieht sich auf das Popup-Feld, das rechts vom eine Vervollständigungsliste angezeigt wird. "QuickInfo". Sie können keine QuickInfo manuell aufrufen.  
+> In JavaScript bezieht sich auf das Popup-Feld, das rechts vom eine Vervollständigungsliste angezeigt wird. "QuickInfo". Sie können keine QuickInfo manuell aufrufen.  
   
 ## <a name="intellisenseObject"></a> IntelliSense-Objekt  
  Die folgende Tabelle zeigt die verfügbaren Funktionen für die `intellisense` Objekt. Die `intellisense` Objekt steht nur zur Entwurfszeit.  

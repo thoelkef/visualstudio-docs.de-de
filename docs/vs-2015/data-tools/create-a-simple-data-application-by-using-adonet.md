@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436977"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
  Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf eine sehr schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.  
   
 > [!IMPORTANT]
->  Um den Code einfach zu halten, enthält er keine produktionsbereite Ausnahmebehandlung.  
+> Um den Code einfach zu halten, enthält er keine produktionsbereite Ausnahmebehandlung.  
   
  **Inhalt**  
   
@@ -78,7 +78,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
 3. Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.  
   
    > [!NOTE]
-   >  Das Gruppenfeld und die Bezeichnungsfelder sorgen für Klarheit, werden im Code jedoch nicht verwendet.  
+   > Das Gruppenfeld und die Bezeichnungsfelder sorgen für Klarheit, werden im Code jedoch nicht verwendet.  
   
    **Navigationsformular**  
   
@@ -135,7 +135,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
 5. In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.  
   
 > [!NOTE]
->  In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Abrufen der Verbindungszeichenfolge  
   

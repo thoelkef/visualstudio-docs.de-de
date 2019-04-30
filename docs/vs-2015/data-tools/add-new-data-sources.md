@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445774"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 - Eine Klasse oder eine Auflistung in der Projektmappe.  
   
 > [!NOTE]
->  Wenn Sie keine Funktionen für die Datenbindung verwenden, gilt Datasets, die Entity Framework, LINQ to SQL, WCF, oder die SharePoint, das Konzept einer "Datenquelle" nicht. Einfach direkt an die Datenbank mithilfe von die SQLCommand-Objekte eine Verbindung herstellen Sie, und kommunizieren Sie direkt mit der Datenbank.  
+> Wenn Sie keine Funktionen für die Datenbindung verwenden, gilt Datasets, die Entity Framework, LINQ to SQL, WCF, oder die SharePoint, das Konzept einer "Datenquelle" nicht. Einfach direkt an die Datenbank mithilfe von die SQLCommand-Objekte eine Verbindung herstellen Sie, und kommunizieren Sie direkt mit der Datenbank.  
   
  Sie erstellen und Bearbeiten von Datenquellen mithilfe der **Assistenten zur Datenquellenkonfiguration** in einer Windows Forms oder Windows Presentation Foundation-Anwendung. Erstellen Sie zunächst die Entitätsklassen für Entity Framework, und starten Sie den Assistenten dazu **Projekt** > **neue Datenquelle hinzufügen** (weiter unten in diesem Artikel ausführlicher beschrieben).  
   
@@ -84,7 +84,7 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
 - Webdienste.  
   
     > [!NOTE]
-    >  Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.  
+    > Die Elemente in der **Datenquellen** hängen von den Daten, die der Dienst zurückgibt. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Z. B. wenn der Dienst ein nicht typisiertes Dataset zurückgibt, keine Elemente angezeigt der **Datenquellen** anzeigen, wenn Sie den Assistenten abzuschließen. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.  
   
 ## <a name="data-source-for-an-object"></a>Datenquelle für ein Objekt  
  Sie können eine Datenquelle mit jedem Objekt erstellen, das mindestens eine öffentliche Eigenschaft durch Ausführen des **Assistenten zum Konfigurieren von Datenquellen** und anschließendes Auswählen des Datenquellentyps **Objekt** verfügbar macht. Alle öffentlichen Eigenschaften eines Objekts werden im Fenster **Datenquellen** angezeigt.   Wenn Sie Entity Framework verwenden und ein Modell generiert haben, ist dies, wo Sie die Entitätsklassen, die die Datenquellen für Ihre Anwendung finden.  
@@ -94,10 +94,10 @@ Im Kontext des .NET Data-Tools in Visual Studio den Begriff *Datenquelle* bezieh
  Wenn Sie möchten die Bindung an ein Objekt in eine Assembly oder ein Projekt, das nicht in der Strukturansicht angezeigt wird, klicken Sie auf **Verweis hinzufügen** und verwenden Sie die **Add Reference Dialog Box** einen Verweis auf die Assembly oder ein Projekt hinzufügen. Nachdem Sie den Verweis hinzugefügt haben, wird die Assembly oder das Projekt der Strukturansicht hinzugefügt.  
   
 > [!NOTE]
->  Sie müssen das Projekt zu erstellen, das die Objekte enthält, bevor die Objekte in der Strukturansicht angezeigt werden.  
+> Sie müssen das Projekt zu erstellen, das die Objekte enthält, bevor die Objekte in der Strukturansicht angezeigt werden.  
   
 > [!NOTE]
->  Um Drag & Drop-Datenbindung, unterstützen Objekte, implementieren die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource> Schnittstelle muss über einen Standardkonstruktor verfügen. Andernfalls, Visual Studio das Datenquellen-Objekt kann nicht instanziiert werden, und es wird eine Fehlermeldung angezeigt, wenn Sie das Element auf die Entwurfsoberfläche ziehen.  
+> Um Drag & Drop-Datenbindung, unterstützen Objekte, implementieren die <xref:System.ComponentModel.ITypedList> oder <xref:System.ComponentModel.IListSource> Schnittstelle muss über einen Standardkonstruktor verfügen. Andernfalls, Visual Studio das Datenquellen-Objekt kann nicht instanziiert werden, und es wird eine Fehlermeldung angezeigt, wenn Sie das Element auf die Entwurfsoberfläche ziehen.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste  
  Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], sodass das Erstellen einer SharePoint-Datenquelle ist dasselbe wie das Erstellen einer Datenquelle von einem Dienst. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen.  Dies erfordert das SharePoint SDK.  

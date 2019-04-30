@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436954"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Erstellen Sie eine SQL­Datenbank mithilfe eines Skripts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ In dieser exemplarischen Vorgehensweise verwenden Sie Visual Studio eine kleine 
 2. Unter **installiert**, erweitern Sie die **Vorlagen** Knoten, erweitern Sie die **andere Sprachen** Knoten die **SQL Server** (Kategorie), und klicken Sie dann Wählen Sie die **SQL Server-Datenbankprojekt** Vorlage.  
   
     > [!NOTE]
-    >  Die **andere Sprachen** Knoten nicht in allen Installationen von Visual Studio angezeigt.  
+    > Die **andere Sprachen** Knoten nicht in allen Installationen von Visual Studio angezeigt.  
   
 3. In der **Namen** geben `Small Database`.  
   

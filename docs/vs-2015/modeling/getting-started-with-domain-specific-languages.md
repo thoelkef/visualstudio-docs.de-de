@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427066"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
     Eine Projektmappe wird generiert, die zwei Projekte enthält. Sie werden Dsl "und" DslPackage bezeichnet. Eine Diagrammdatei wird geöffnet, auf benannte "DslDefinition.DSL" aus.  
   
    > [!NOTE]
-   >  Großteil des Codes, die Sie in den Ordnern in beiden Projekten sehen können, wird aus "DslDefinition.DSL" generiert. Aus diesem Grund sind die meisten Änderungen an Ihrer DSL in dieser Datei hergestellt.  
+   > Großteil des Codes, die Sie in den Ordnern in beiden Projekten sehen können, wird aus "DslDefinition.DSL" generiert. Aus diesem Grund sind die meisten Änderungen an Ihrer DSL in dieser Datei hergestellt.  
   
    Die Benutzeroberfläche gleicht nun der folgenden Abbildung.  
   
@@ -104,7 +104,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 1. Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer. Dies wird erneut die meisten der Quellcode von "DslDefinition.DSL" generiert.  
   
    > [!NOTE]
-   >  Wenn Sie "DslDefinition.DSL" ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Wenn Sie "DslDefinition.DSL" ändern, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Drücken Sie F5, oder auf die **Debuggen** Menü klicken Sie auf **Debuggen starten**.  
   
@@ -171,7 +171,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
    Sie können eine beliebige Anzahl von Textvorlagendateien zu einem Projekt hinzufügen. Jede Vorlage generiert eine Ergebnisdatei an.  
   
 > [!NOTE]
->  Wenn Sie die DSL-Definition ändern, funktioniert der Textvorlagencode Beispiel nicht, sofern die Aktualisierung.  
+> Wenn Sie die DSL-Definition ändern, funktioniert der Textvorlagencode Beispiel nicht, sofern die Aktualisierung.  
   
  Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md) und [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
  Wenn Sie die DSL-Definition ändern möchten, schließen Sie die experimentelle Instanz, und Aktualisieren der Definition im Hauptfenster [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Instanz.  
   
 > [!NOTE]
->  Nachdem Sie die DSL-Definition geändert haben, verlieren Sie möglicherweise Informationen in den Test-Modellen, die Sie erstellt haben, die mit früheren Versionen.  Die debugprojektmappe enthält beispielsweise eine Datei mit dem Namen Beispiel enthält einige Formen und Konnektoren. Nach dem Starten Ihrer DSL-Definition zu entwickeln, werden sie nicht angezeigt, und sie gehen verloren, wenn Sie die Datei speichern.  
+> Nachdem Sie die DSL-Definition geändert haben, verlieren Sie möglicherweise Informationen in den Test-Modellen, die Sie erstellt haben, die mit früheren Versionen.  Die debugprojektmappe enthält beispielsweise eine Datei mit dem Namen Beispiel enthält einige Formen und Konnektoren. Nach dem Starten Ihrer DSL-Definition zu entwickeln, werden sie nicht angezeigt, und sie gehen verloren, wenn Sie die Datei speichern.  
   
  Sie können eine Vielzahl von Erweiterungen Ihrer DSL vornehmen. In den folgenden Beispielen erhalten Sie einen Eindruck von den Möglichkeiten.  
   
@@ -285,7 +285,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
          Legen Sie dessen Namen, z. B. **Town**.  
   
         > [!NOTE]
-        >  Jede Domänenklasse mit Ausnahme des Stamms des Modells muss das Ziel mindestens einer einbettenden Beziehung sein, oder es muss eine Klasse, die das Ziel einer Einbettung erben. Aus diesem Grund ist es häufig praktisch eine Domänenklasse erstellen, mit dem Tool für die einbettende Beziehung.  
+        > Jede Domänenklasse mit Ausnahme des Stamms des Modells muss das Ziel mindestens einer einbettenden Beziehung sein, oder es muss eine Klasse, die das Ziel einer Einbettung erben. Aus diesem Grund ist es häufig praktisch eine Domänenklasse erstellen, mit dem Tool für die einbettende Beziehung.  
   
     2. Fügen Sie eine Domäneneigenschaft auf die neue Klasse, z. B. **Namen**.  
   
@@ -296,7 +296,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
          ![DSL-definitionsfragment: stammstrukturstamm](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Verweisbeziehungen darstellen Querverweise von einem Teil der Modellstruktur auf einen anderen.  
+        > Verweisbeziehungen darstellen Querverweise von einem Teil der Modellstruktur auf einen anderen.  
   
 3. Fügen Sie eine Form vom Typ zur Darstellung von Städten in den Diagrammen Modell hinzu.  
   

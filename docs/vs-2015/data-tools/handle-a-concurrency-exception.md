@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434500"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
 - Zugriff auf die Beispieldatenbank Northwind mit der Berechtigung zum Durchführen von Aktualisierungen.
   
 > [!NOTE]
->  Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  Erstellen Sie in dieser exemplarischen Vorgehensweise zunächst eine neue Windows-Anwendung.  
@@ -86,7 +86,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
 3. Wählen Sie eine Verbindung mit der Northwind-Beispieldatenbank an, aus der Liste der verfügbaren Verbindungen. Wenn die Verbindung nicht in der Liste der Verbindungen verfügbar ist, wählen Sie**neue Verbindung**  
   
     > [!NOTE]
-    >  Wenn Sie die zu einer lokalen Datenbankdatei herstellen, wählen Sie **keine** Wenn gefragt werden, wenn Sie dies tun würden Sie die Datei zu Ihrem Projekt hinzufügen möchten.  
+    > Wenn Sie die zu einer lokalen Datenbankdatei herstellen, wählen Sie **keine** Wenn gefragt werden, wenn Sie dies tun würden Sie die Datei zu Ihrem Projekt hinzufügen möchten.  
   
 4. Auf der **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern**auf **Weiter**.  
   
@@ -149,7 +149,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
  In diesem Abschnitt fügen Sie Code, der versucht, die zum Aktualisieren der Datenbank hinzu. Sie können auch behandeln alle <xref:System.Data.DBConcurrencyException> ausgelöste, sowie alle anderen Ausnahmen.  
   
 > [!NOTE]
->  Die `CreateMessage`-Methode und die `ProcessDialogResults`-Methode werden zu einem späteren Zeitpunkt in dieser exemplarischen Vorgehensweise hinzugefügt.  
+> Die `CreateMessage`-Methode und die `ProcessDialogResults`-Methode werden zu einem späteren Zeitpunkt in dieser exemplarischen Vorgehensweise hinzugefügt.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>So fügen Sie Fehlerbehandlungscode für den Parallelitätsfehler hinzu  
   
@@ -201,7 +201,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
 6. Im ersten Datensatz (`ALFKI`) ändern `ContactName` zu `Maria Anders2`.  
   
     > [!NOTE]
-    >  Navigieren Sie zu einer anderen Zeile, um einen Commit für die Änderung auszuführen.  
+    > Navigieren Sie zu einer anderen Zeile, um einen Commit für die Änderung auszuführen.  
   
 7. Wechseln Sie zum Formular `ConcurrencyWalkthrough`, das immer noch ausgeführt wird.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59bdcbd3cefe185a8809e471be22f00ea2478857
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6833e9735aa6a360ce0642e991bd019df347d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442505"
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen von Timern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Als Nächstes fügen Sie dem Spiel ein **Timer**-Steuerelement hinzu. Ein solche
 Zeitgeber  
   
     > [!NOTE]
-    >  Wenn die Toolbox leer ist, haben Sie zuvor möglicherweise nicht den Formular-Designer aktiviert, sondern den Code für das Formular.  
+    > Wenn die Toolbox leer ist, haben Sie zuvor möglicherweise nicht den Formular-Designer aktiviert, sondern den Code für das Formular.  
   
 2. Wählen Sie das Symbol **Timer1**, um den Timer auszuwählen. Im Fenster **Eigenschaften** wechseln Sie von der Anzeige der Ereignisse zur Anzeige der Eigenschaften. Legen Sie die **Interval**-Eigenschaft des Timers auf **750** fest, ohne den Wert **FALSE** der **Enabled**-Eigenschaft zu ändern. Die Eigenschaft **Interval** gibt an, wie lange der Timer zwischen *Ticks* wartet bzw. wann das Tick-Ereignis auslöst werden soll. Mit dem Wert „750“ wartet der Timer eine Dreiviertelsekunde (750 Millisekunden), bevor er das Tick-Ereignis auslöst. Sie rufen die `Start()`-Methode für den Start des Zeitgeber nur auf, nachdem der Spieler das zweite Bezeichnungsfeld auswählt hat.  
   
@@ -41,7 +41,7 @@ Zeitgeber
      Der Tick-Ereignishandler bewirkt drei Dinge: Zuerst beendet er den Zeitgeber, indem er die `Stop()`-Methode aufruft. Anschließend verwendet er die beiden Verweisvariablen `firstClicked` und `secondClicked`, um die Symbole für die zwei Bezeichnungsfelder, die der Spieler gewählt hat, wieder unsichtbar zu machen. Zuletzt setzt er die Verweisvariablen `firstClicked` und `secondClicked` in Visual C# auf `null` und in Visual Basic auf `Nothing` zurück. Dieser Schritt ist wichtig, weil sich das Programm auf diese Weise selbst zurücksetzt. In diesem Zustand werden keine `Label`-Steuerelemente überwacht, und das Programm ist wieder für eine Auswahl des Spielers bereit.  
   
     > [!NOTE]
-    >  Ein `Timer`-Objekt verfügt über eine `Start()`-Methode, die den Zeitgeber startet, und eine `Stop()`-Methode, die den Zeitgeber stoppt. Wenn Sie die **Enabled**-Eigenschaft des Timers im **Eigenschaftenfenster** auf **TRUE** festlegen,fängt dieser an zu laufen, sobald das Programm beginnt. Wenn Sie die Eigenschaft jedoch auf **FALSE** festgelegt lassen, fängt dieser erst an zu laufen, wenn seine `Start()`-Methode aufgerufen wird. Normalerweise löst ein Timer sein Tick-Ereignis immer wieder aus, wobei in der **Interval**-Eigenschaft festgelegt ist, wie viele Millisekunden zwischen Ticks gewartet wird. Sie haben möglicherweise bemerkt, dass im Tick-Ereignis die `Stop()`-Methode des Zeitgebers aufgerufen wird. Damit wird der Timer in den *Einmalmodus* versetzt, was bedeutet, dass er nach dem Aufruf der `Start()`-Methode das festgelegte Zeitintervall wartet, dann ein Tick-Ereignis auslöst und anschließend stoppt.  
+    > Ein `Timer`-Objekt verfügt über eine `Start()`-Methode, die den Zeitgeber startet, und eine `Stop()`-Methode, die den Zeitgeber stoppt. Wenn Sie die **Enabled**-Eigenschaft des Timers im **Eigenschaftenfenster** auf **TRUE** festlegen,fängt dieser an zu laufen, sobald das Programm beginnt. Wenn Sie die Eigenschaft jedoch auf **FALSE** festgelegt lassen, fängt dieser erst an zu laufen, wenn seine `Start()`-Methode aufgerufen wird. Normalerweise löst ein Timer sein Tick-Ereignis immer wieder aus, wobei in der **Interval**-Eigenschaft festgelegt ist, wie viele Millisekunden zwischen Ticks gewartet wird. Sie haben möglicherweise bemerkt, dass im Tick-Ereignis die `Stop()`-Methode des Zeitgebers aufgerufen wird. Damit wird der Timer in den *Einmalmodus* versetzt, was bedeutet, dass er nach dem Aufruf der `Start()`-Methode das festgelegte Zeitintervall wartet, dann ein Tick-Ereignis auslöst und anschließend stoppt.  
   
 4. Um den neuen Zeitgeber in Aktion zu sehen, wechseln Sie zum Code-Editor und fügen am Anfang und Ende der `label_Click()`-Ereignishandlermethode den folgenden Code hinzu. (Sie fügen am Anfang eine `if`-Anweisung und am Ende drei Anweisungen hinzu. Der Rest der Methode bleibt unverändert.)  
   

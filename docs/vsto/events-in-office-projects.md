@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441824"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.
@@ -82,7 +82,7 @@ ms.locfileid: "60094852"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Vermeiden Sie es, Steuerelemente während des **Shutdown** -Ereignishandlerzeitraums des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das **Shutdown** -Ereignis eintritt. Wenn Sie Steuerelemente vor dem Schließen der Anwendung entfernen möchten, können Sie Ihren Code einem anderen Ereignishandler hinzufügen, z. B. **BeforeClose** oder **BeforeSave**.
+> Vermeiden Sie es, Steuerelemente während des **Shutdown** -Ereignishandlerzeitraums des Dokuments programmgesteuert zu entfernen. Die Benutzeroberflächenelemente des Dokuments sind nicht mehr verfügbar, wenn das **Shutdown** -Ereignis eintritt. Wenn Sie Steuerelemente vor dem Schließen der Anwendung entfernen möchten, können Sie Ihren Code einem anderen Ereignishandler hinzufügen, z. B. **BeforeClose** oder **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Ereignishandler-Methodendeklarationen
  An jede Ereignishandler-Methodendeklaration werden die gleichen Argumente übergeben: *sender* und *e*. In Excel bezieht sich das *sender* -Argument auf das Arbeitsblatt, z. B. `Sheet1` oder `Sheet2`. In Word bezieht sich das *sender* -Argument auf das Dokument. Das *e* -Argument bezieht sich auf die Standardargumente für ein Ereignis, die in diesem Fall nicht verwendet werden.
@@ -95,7 +95,7 @@ ms.locfileid: "60094852"
  Im folgenden Codebeispiel werden die Standardereignishandler in Projekten auf Dokumentebene für Excel veranschaulicht.
 
 > [!NOTE]
->  Im folgenden Codebeispiel werden die Ereignishandler in der `Sheet1` -Klasse veranschaulicht. Die Namen der Ereignishandler in anderen Hostelementklassen entsprechen dem Klassennamen. In der `Sheet2` -Klasse hat der **Startup** -Ereignishandler beispielsweise den Namen `Sheet2_Startup`. In der `ThisWorkbook` -Klasse hat der **Startup** -Ereignishandler beispielsweise den Namen `ThisWorkbook_Startup`.
+> Im folgenden Codebeispiel werden die Ereignishandler in der `Sheet1` -Klasse veranschaulicht. Die Namen der Ereignishandler in anderen Hostelementklassen entsprechen dem Klassennamen. In der `Sheet2` -Klasse hat der **Startup** -Ereignishandler beispielsweise den Namen `Sheet2_Startup`. In der `ThisWorkbook` -Klasse hat der **Startup** -Ereignishandler beispielsweise den Namen `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094852"
 - Das <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> -Ereignis des <xref:Microsoft.Office.Interop.Outlook.Explorer> -Objekts.
 
 > [!NOTE]
->  Sie können für Outlook erzwingen, dass das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis beim Beenden ausgelöst wird, indem Sie dies in der Registrierung ändern. Aber wenn ein Administrator diese Einstellung zurücksetzt, wird der Code, den Sie der `ThisAddIn_Shutdown` -Methode hinzufügen, beim Beenden von Outlook nicht mehr ausgeführt. Weitere Informationen finden Sie unter [Shutdown-Änderungen für Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Sie können für Outlook erzwingen, dass das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis beim Beenden ausgelöst wird, indem Sie dies in der Registrierung ändern. Aber wenn ein Administrator diese Einstellung zurücksetzt, wird der Code, den Sie der `ThisAddIn_Shutdown` -Methode hinzufügen, beim Beenden von Outlook nicht mehr ausgeführt. Weitere Informationen finden Sie unter [Shutdown-Änderungen für Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Siehe auch
 - [Entwickeln von Office-Projektmappen](../vsto/developing-office-solutions.md)

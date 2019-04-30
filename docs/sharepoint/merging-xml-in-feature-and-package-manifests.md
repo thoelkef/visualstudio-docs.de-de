@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429287"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Zusammenführen von XML in Funktions- und Manifesten
   Funktionen und Pakete werden durch definiert [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Manifestdateien. Diese App-Pakete Manifeste sind eine Kombination von Daten aus Designer und benutzerdefinierte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in der Manifestvorlage vom Benutzer eingegeben. Zum Zeitpunkt der paketerstellung [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] führt die benutzerdefinierte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Anweisungen mit der vom Designer bereitgestellten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Paket bilden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifest-Datei. Ähnliche Elemente, mit der Ausnahmen, die weiter unten in der Merge-Ausnahmen werden zusammengeführt, um zu vermeiden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Validierungsfehler, nachdem Sie die Dateien in SharePoint bereitstellen, und das Manifest zu kleiner und effizienter Dateien.
@@ -51,11 +51,11 @@ ms.locfileid: "56646303"
 |ElementFile|Speicherort|
 |ElementManifests/ElementManifest|Speicherort|
 |Properties-Eigenschaft|Key|
-|CustomUpgradeAction|name|
-|CustomUpgradeActionParameter|name|
+|CustomUpgradeAction|Name|
+|CustomUpgradeActionParameter|Name|
 
 > [!NOTE]
->  Da die einzige Möglichkeit zum Ändern der CustomUpgradeAction-Element in der benutzerdefinierten ist [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Editor, die Auswirkungen der Zusammenführung nicht ist zu niedrig.
+> Da die einzige Möglichkeit zum Ändern der CustomUpgradeAction-Element in der benutzerdefinierten ist [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Editor, die Auswirkungen der Zusammenführung nicht ist zu niedrig.
 
 ## <a name="package-manifest-elements"></a>Paket-manifest-Elemente
  In der folgende Tabelle ist eine Liste mit allen manifest Paketelemente, die zusammengeführt werden können und ihre eindeutigen Schlüssel, der für den Abgleich verwendet wird.

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444334"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Exemplarische Vorgehensweise: Programmgesteuertes Erfassen von Grafikinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
 - Aufzeichnen von Grafikinformationen  
   
 > [!NOTE]
->  Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um Erfassungsfunktionalität bereitzustellen. Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Deshalb ist es unter Windows 8.1 nicht mehr erforderlich, dass Sie die Remotetools für programmgesteuerte Erfassung installieren.  
+> Frühere Implementierungen der programmgesteuerten Erfassung basieren auf Remotetools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , um Erfassungsfunktionalität bereitzustellen. Windows 8.1 unterstützt Erfassung direkt über Direct3D 11.2. Deshalb ist es unter Windows 8.1 nicht mehr erforderlich, dass Sie die Remotetools für programmgesteuerte Erfassung installieren.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
  Um programmgesteuerte Erfassung in Ihrer App verwenden zu können, muss diese die erforderlichen Header enthalten. Diese Header sind Bestandteile des Windows 8.1 SDK.  
@@ -58,10 +58,10 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
     ```  
   
     > [!IMPORTANT]
-    >  Schließen Sie nicht die Header-Datei vsgcapture.h—which unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher – programmgesteuerte Erfassung in Ihren Windows 8.1-apps ausführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei enthalten ist, nachdem die d3d11_2.h-Header enthalten ist, gibt der Compiler eine Warnung aus. Wenn vor dem d3d11_2.h vsgcapture.h enthalten ist, wird die app nicht starten.  
+    > Schließen Sie nicht die Header-Datei vsgcapture.h—which unterstützt die programmgesteuerte Erfassung unter Windows 8.0 und früher – programmgesteuerte Erfassung in Ihren Windows 8.1-apps ausführen. Dieser Header ist nicht mit DirectX 11.2 kompatibel. Wenn diese Datei enthalten ist, nachdem die d3d11_2.h-Header enthalten ist, gibt der Compiler eine Warnung aus. Wenn vor dem d3d11_2.h vsgcapture.h enthalten ist, wird die app nicht starten.  
   
     > [!NOTE]
-    >  Wenn das DirectX SDK vom Juni 2010 auf Ihrem Computer installiert wurde und der Include-Pfad Ihres Projekts `%DXSDK_DIR%includex86`enthält, verschieben Sie diesen Teil an das Ende des Include-Pfads. Gehen Sie beim Bibliothekspfad genauso vor.  
+    > Wenn das DirectX SDK vom Juni 2010 auf Ihrem Computer installiert wurde und der Include-Pfad Ihres Projekts `%DXSDK_DIR%includex86`enthält, verschieben Sie diesen Teil an das Ende des Include-Pfads. Gehen Sie beim Bibliothekspfad genauso vor.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
  Da das Windows Phone 8.1 SDK den DXProgrammableCapture.h-Header einzuschließen, nicht, müssen Sie definieren die `IDXGraphicsAnalysis` -Schnittstelle selbst, sodass Sie verwenden können, die `BeginCapture()` und `EndCapture()` Methoden. Schließen Sie die anderen Header so ein, wie dies im vorherigen Abschnitt beschrieben ist.  
@@ -85,7 +85,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
  Bevor Sie Grafikinformationen von DirectX 11.2 erfassen können, müssen Sie die DXGI-Debugschnittstelle abrufen.  
   
 > [!IMPORTANT]
->  Wenn Sie programmgesteuerte Erfassung verwenden zu können, müssen Sie weiterhin Ihre app unter der Grafikdiagnose ausführen (Alt + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) oder unter dem [Befehlszeilen-Erfassungs-Tool](../debugger/command-line-capture-tool.md).  
+> Wenn Sie programmgesteuerte Erfassung verwenden zu können, müssen Sie weiterhin Ihre app unter der Grafikdiagnose ausführen (Alt + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) oder unter dem [Befehlszeilen-Erfassungs-Tool](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>So rufen Sie die IDXGraphicsAnalysis-Schnittstelle ab  
   
@@ -106,7 +106,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
     ```  
   
     > [!NOTE]
-    >  Wenn `DXGIGetDebugInterface1` den Wert `E_NOINTERFACE` zurückgibt (`error: E_NOINTERFACE No such interface supported`), müssen Sie sicherstellen, dass die App unter der Grafikdiagnose (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    > Wenn `DXGIGetDebugInterface1` den Wert `E_NOINTERFACE` zurückgibt (`error: E_NOINTERFACE No such interface supported`), müssen Sie sicherstellen, dass die App unter der Grafikdiagnose (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Aufzeichnen von Grafikinformationen  
  Wenn Sie nun über eine gültige `IDXGraphicsAnalysis` -Schnittstelle verfügen, können Sie `BeginCapture` und `EndCapture` verwenden, um Grafikinformationen zu erfassen.  
@@ -150,7 +150,7 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
  Alternativ werden durch [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die erforderlichen Komponenten zur Durchführung der Remote-Erfassung für 32-Bit-Apps installiert.  
   
 > [!NOTE]
->  Da die meisten Windows-Desktop-Apps – darunter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– unter [!INCLUDE[win8](../includes/win8-md.md)] für ARM-Geräte nicht unterstützt werden, ist die Verwendung von Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zusammen mit der API für die programmgesteuerte Erfassung der einzige Weg, um Grafikdiagnosen auf ARM-Geräten zu erfassen.  
+> Da die meisten Windows-Desktop-Apps – darunter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]– unter [!INCLUDE[win8](../includes/win8-md.md)] für ARM-Geräte nicht unterstützt werden, ist die Verwendung von Remote-Tools für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zusammen mit der API für die programmgesteuerte Erfassung der einzige Weg, um Grafikdiagnosen auf ARM-Geräten zu erfassen.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Vorbereiten Ihrer App für die Verwendung der programmgesteuerten Erfassung  
  Sie müssen zunächst die benötigten Grafikinformationen erfassen, um die Grafikdiagnosetools verwenden zu können. Sie können die Informationen mithilfe der `CaptureCurrentFrame` -API programmgesteuert erfassen.  
@@ -185,13 +185,13 @@ Sie können die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Grafikdiagnose zur
   Für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -apps, den Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und -app und befindet sich in der Regel an einem Ort wie z. B. C:\users\\*Benutzername*\AppData\Local\Packages\\ *paketfamilienname*\TempState\\. Für desktop-apps, der Speicherort des temp-Verzeichnisses ist spezifisch für jeden Benutzer und befindet sich in der Regel an einem Ort wie z. B. C:\Users\\*Benutzername*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
+> Um in einen speziellen Speicherort zu schreiben, müssen Sie über die entsprechende Berechtigungen verfügen; andernfalls tritt ein Fehler auf. Denken Sie daran, dass [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -Apps Daten in weniger Orte schreiben können als Desktop-Apps und dass eventuell eine zusätzliche Konfiguration erforderlich ist, um in bestimmte Speicherorte zu schreiben.  
   
 ### <a name="capturing-the-graphics-information"></a>Erfassung der Grafikinformationen  
  Wenn Sie die App für die programmgesteuerte Erfassung vorbereitet und optional den Speicherort und den Namen der Grafikprotokolldatei konfiguriert haben, erstellen Sie die App, und führen Sie sie dann aus, oder debuggen Sie sie, um die Daten zu erfassen; starten Sie nicht die Grafikdiagnose aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , wenn Sie die API für die programmgesteuerte Erfassung verwenden. Das Grafikprotokoll wird in den von Ihnen angegebene Speicherort geschrieben. Wenn Sie diese Version des Protokolls behalten möchten, verschieben Sie sie an einen anderen Speicherort; andernfalls wird sie überschrieben, wenn Sie die App erneut ausführen.  
   
 > [!TIP]
->  Sie können Grafikinformationen auch während der programmgesteuerten Erfassung weiterhin manuell erfassen – drücken Sie einfach **Bildschirm drucken**, während die App aufgerufen ist. Sie können dieses Verfahren anwenden, um zusätzliche Grafikinformationen zu erfassen, die nicht von der API für die programmgesteuerte Erfassung erfasst werden.  
+> Sie können Grafikinformationen auch während der programmgesteuerten Erfassung weiterhin manuell erfassen – drücken Sie einfach **Bildschirm drucken**, während die App aufgerufen ist. Sie können dieses Verfahren anwenden, um zusätzliche Grafikinformationen zu erfassen, die nicht von der API für die programmgesteuerte Erfassung erfasst werden.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  In dieser exemplarische Vorgehensweise wurde veranschaulicht, wie Grafikinformationen programmatisch erfasst werden. Im nächsten Schritt haben Sie folgende Möglichkeit:  

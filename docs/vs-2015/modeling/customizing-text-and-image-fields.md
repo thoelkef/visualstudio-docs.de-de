@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5069f6d45d72606bce7de2866c6328864fcde21f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433242"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Falls nicht, und überschreiben Sie dann die `InitializeShapeFields` Ihre Shape-Klasse, und weisen Sie einen Wert an die entsprechende Methode `Default...` Eigenschaft des Textfelds.  
   
 > [!WARNING]
->  Zum Überschreiben `InitializeShapeFields()`, müssen Sie festlegen, die **generiert doppelte Ableitungen** Eigenschaft der Shape-Klasse, `true` in der DSL-Definition.  
+> Zum Überschreiben `InitializeShapeFields()`, müssen Sie festlegen, die **generiert doppelte Ableitungen** Eigenschaft der Shape-Klasse, `true` in der DSL-Definition.  
   
  In diesem Beispiel hat eine Form ein Textfeld, das für die Kommentare von Benutzern verwendet wird. Die standard-Kommentar-Schriftart verwendet werden soll. Da es einer Standardschriftart, aus dem Stil handelt, können wir die Standard-Schriftart-Id festlegen:  
   
@@ -202,7 +202,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  In diesem Beispiel wird ein Symbol zu ändern, die abhängig vom Zustand des Modellelements der Form.  
   
 > [!WARNING]
->  In diesem Beispiel wird veranschaulicht, wie Sie ein dynamisches Bild-Decorator-Element. Aber wenn Sie nur ein oder zwei Abbilder abhängig vom Status einer Variablen des Modells wechseln möchten, es ist einfacher, mehrere Image-Decorator-Elemente erstellen, suchen sie in der gleichen Position auf der Form und legen Sie den Filter Sichtbarkeit, hängt von bestimmten Werten des Modells Variable. Zum Festlegen dieser Filter wählen Sie das flächenkartogramm, in der DSL-Definition, öffnen Sie das DSL-Details-Fenster, und klicken Sie auf der Registerkarte "Decorator-Elemente".  
+> In diesem Beispiel wird veranschaulicht, wie Sie ein dynamisches Bild-Decorator-Element. Aber wenn Sie nur ein oder zwei Abbilder abhängig vom Status einer Variablen des Modells wechseln möchten, es ist einfacher, mehrere Image-Decorator-Elemente erstellen, suchen sie in der gleichen Position auf der Form und legen Sie den Filter Sichtbarkeit, hängt von bestimmten Werten des Modells Variable. Zum Festlegen dieser Filter wählen Sie das flächenkartogramm, in der DSL-Definition, öffnen Sie das DSL-Details-Fenster, und klicken Sie auf der Registerkarte "Decorator-Elemente".  
   
  Erstellen Sie eine neue DSL-Projektmappe mithilfe der Vorlage für die minimale Sprache, zum Ausführen dieses Beispiels den Code. Fügen Sie eine booleschen Domäneneigenschaft `AlternateState` mit der Domänenklasse ExampleElement. Fügen Sie ein Symbol für Decorator-Element der ExampleShape-Klasse aus, und legen Sie das Image in eine Bitmapdatei. Klicken Sie auf **alle Vorlagen transformieren**. Fügen Sie eine neue Codedatei im DSL-Projekt, und fügen Sie den folgenden Code.  
   

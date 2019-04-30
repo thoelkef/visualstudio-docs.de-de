@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438885"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -26,12 +26,12 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der
  Die **Regelsatz-Editor** Dialogfeld wird verwendet, um das Erstellen und Ändern von [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) -Regelsätze, die als rules-Datei serialisiert wurden.  
   
 > [!NOTE]
->  Wenn Sie die zu öffnende die rules-Datei mit den **XML-Editor mit Codierung**, müssen Sie zunächst das zugewiesene Designerfenster für den Workflow oder eine Aktivität schließen.  
+> Wenn Sie die zu öffnende die rules-Datei mit den **XML-Editor mit Codierung**, müssen Sie zunächst das zugewiesene Designerfenster für den Workflow oder eine Aktivität schließen.  
   
  Informationen über den Zugriff auf die **Regelsatz-Editor** im Dialogfeld finden Sie unter [Vorgehensweise: Erstellen ein PolicyActivity-Regelsatzes (Vorgängerversion)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../includes/wfd2-md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.  
+> Der Regel-Editor der Vorgängerversion von  [!INCLUDE[wfd2](../includes/wfd2-md.md)], der zum Abzielen auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] verwendet wird, unterstützt die Festlegung von Zielversionen nicht.  
   
  Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von der **Regelsatz-Editor** Dialogfeld.  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424136"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
 |`Dependencies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Elementliste an, die die abhängigen Assemblys für das generierte Manifest definiert. Jedes Element wird ggf. anhand von Elementmetadaten näher beschrieben, um zusätzlich den Bereitstellungszustand und den Typ der Abhängigkeit anzugeben. Weitere Informationen finden Sie im Abschnitt "Elementmetadaten" weiter unten.|  
 |`Description`|Optionaler `String` -Parameter.<br /><br /> Gibt die Beschreibung der Anwendung oder Komponente an.|  
 |`EntryPoint`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt ein einzelnes Element an, das den Einstiegspunkt für die generierte Manifestassembly bezeichnet.<br /><br /> Bei einem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsmanifest gibt dieser Parameter die Assembly an, die gestartet wird, wenn die Anwendung ausgeführt wird.|  
-|`ErrorReportUrl`|Optionale [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Gibt die URL der Webseite an, die bei Fehlerberichten während ClickOnce-Installationen in den Dialogfeldern angezeigt wird.|  
+|`ErrorReportUrl`|Optionaler [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Gibt die URL der Webseite an, die bei Fehlerberichten während ClickOnce-Installationen in den Dialogfeldern angezeigt wird.|  
 |`FileAssociations`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt eine Liste mit mindestens einem Dateityp an, der dem ClickOnce-Bereitstellungsmanifest zugeordnet ist.<br /><br /> Dateizuordnungen sind nur gültig, wenn als Ziel .NET Framework 3.5 oder höher verwendet wird.|  
 |`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Die Dateien, die in das Manifest eingeschlossen werden sollen. Geben Sie den vollständigen Pfad für jede Datei an.|  
-|`HostInBrowser`|Optionale [booleschen])<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Bei `true` wird die Anwendung in einem Browser gehostet (wie WPF-Webbrowseranwendungen).|  
+|`HostInBrowser`|Optionaler [Boolescher](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Bei `true` wird die Anwendung in einem Browser gehostet (wie WPF-Webbrowseranwendungen).|  
 |`IconFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die Anwendungssymboldatei an. Das Anwendungssymbol wird im generierten Anwendungsmanifest ausgedrückt und im Startmenü sowie im Dialogfeld Software verwendet. Erfolgt diese Angabe nicht, wird ein Standardsymbol verwendet. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
 |`InputManifest`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt ein Eingabe-XML-Dokument an, das als Basis für den Manifestgenerator dienen soll. Dadurch können strukturierte Daten, z. B. für Anwendungssicherheit oder benutzerdefinierte Manifestdefinitionen, im Ausgabemanifest dargestellt werden. Das Stammelement im XML-Dokument muss ein Assemblyknoten im "asmv1"-Namespace sein.|  
 |`IsolatedComReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt COM-Komponenten an, die im generierten Manifest isoliert werden sollen. Dieser Parameter unterstützt das Isolieren von COM-Komponenten für die Bereitstellung über "COM-Interop ohne Registrierung". Zu diesem Zweck wird automatisch ein Manifest mit standardmäßigen COM-Registrierungsdefinitionen generiert. Die COM-Komponenten müssen jedoch auf dem Buildcomputer registriert werden, damit dies ordnungsgemäß funktioniert.|  
@@ -60,12 +60,12 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
 |`Publisher`|Optionaler `String` -Parameter.<br /><br /> Gibt den Herausgeber der Anwendung an. Wenn dieser Parameter nicht angegeben ist, wird der Name vom registrierten Benutzer oder von der Identität des generierten Manifests abgeleitet. Dieser Name wird für den Ordnernamen im Startmenü verwendet und ist Teil des Namens, der im Dialogfeld "Software" angezeigt wird.|  
 |`RequiresMinimumFramework35SP1`|Optionaler `Boolean` -Parameter.<br /><br /> Bei "true" ist für die Anwendung .NET Framework 3.5 SP1 oder eine aktuellere Version erforderlich.|  
 |`TargetCulture`|Optionaler `String` -Parameter.<br /><br /> Identifiziert die Kultur der Anwendung und gibt das `Language`-Feld der Assemblyidentität für das generierte Manifest an. Wenn dieser Parameter nicht angegeben ist, wird davon ausgegangen, dass die Anwendung kulturunabhängig ist.|  
-|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt den Zielframeworkmoniker an.|  
-|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt das Zielframeworkprofil an.|  
-|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt den Namen der .NET Framework-Teilmenge an, auf die abgezielt wird.|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt das .NET Framework-Ziel des Projekts an.|  
+|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt den Zielframeworkmoniker an.|  
+|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt das Zielframeworkprofil an.|  
+|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt den Namen der .NET Framework-Teilmenge an, auf die abgezielt wird.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt das .NET Framework-Ziel des Projekts an.|  
 |`TrustInfoFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Bezeichnet ein XML-Dokument, das die Anwendungssicherheit angibt. Das Stammelement im XML-Dokument muss ein trustInfo-Knoten im asmv2-Namespace sein. Wenn die Aufgabe ein natives Manifest generiert, wird dieser Parameter ignoriert.|  
-|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Bei "true" werden die Eigenschaften `Product`, `Publisher` und `SupportUrl` in das Anwendungsmanifest geschrieben.|  
+|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Bei "true" werden die Eigenschaften `Product`, `Publisher` und `SupportUrl` in das Anwendungsmanifest geschrieben.|  
   
 ## <a name="remarks"></a>Hinweise  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.GenerateManifestBase>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste der Parameter der „Task“-Klasse finden Sie unter [Aufgabenbasisklasse](../msbuild/task-base-class.md).  
@@ -90,10 +90,10 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
  Dies ist das einfachste mögliche Szenario für das Generieren von Manifesten, in dem [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Manifeste für ein einzelnes Programm generiert werden. Ein Standardname und eine Identität für das Manifest werden von der Assembly abgeleitet.  
   
 > [!NOTE]
->  Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
+> Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
   
 > [!NOTE]
->  Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile Task (SignFile-Aufgabe)](../msbuild/signfile-task.md).  
+> Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile Task (SignFile-Aufgabe)](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -143,10 +143,10 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
  Dieses Beispiel ist mit dem vorherigen Beispiel vergleichbar und unterscheidet sich von diesem nur dadurch, dass der Name und die Identität der Manifeste explizit angegeben werden. Zudem wird in diesem Beispiel statt einer installierten Anwendung eine Onlineanwendung konfiguriert.  
   
 > [!NOTE]
->  Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
+> Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
   
 > [!NOTE]
->  Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile Task (SignFile-Aufgabe)](../msbuild/signfile-task.md).  
+> Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile Task (SignFile-Aufgabe)](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -201,10 +201,10 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
  Im folgenden Beispiel werden die `GenerateApplicationManifest`-Aufgabe und die `GenerateDeploymentManifest`-Aufgabe verwendet, um ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsmanifest und -Bereitstellungsmanifest für eine Anwendung mit mehreren Dateien und Assemblys zu generieren.  
   
 > [!NOTE]
->  Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
+> Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
   
 > [!NOTE]
->  Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile Task (SignFile-Aufgabe)](../msbuild/signfile-task.md).  
+> Weitere Informationen zur `Thumbprint`-Eigenschaft, die in diesem Beispiel in der `SignFile`-Aufgabe verwendet wird, finden Sie unter [SignFile Task (SignFile-Aufgabe)](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -321,7 +321,7 @@ Generiert ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungsm
  In diesem Beispiel wird "Test.exe.manifest" erstellt, wodurch die Anwendung unter Verwendung von COM-Interop ohne Registrierung mit XCOPY bereitgestellt werden kann.  
   
 > [!NOTE]
->  Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
+> Im folgenden Beispiel sind alle Binärdateien der Anwendung bereits erstellt, sodass Sie besonders auf die Aspekte der Generierung von Manifesten achten können. In diesem Beispiel wird eine voll funktionsfähige [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung erstellt  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

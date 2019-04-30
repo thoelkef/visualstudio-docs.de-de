@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436901"
 ---
 # <a name="vsix-project-template"></a>VSIX-Projektvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Sie können die VSIX-Projektvorlage verwenden, um eine oder mehrere Visual Studi
  VSIX-Bereitstellung unterstützt VSPackages, Assemblys, MEF-Komponenten, Projektvorlagen, Elementvorlagen, Toolbox-Steuerelemente und benutzerdefinierte Erweiterungstypen.  
   
 > [!NOTE]
->  Um die VSIX-Projekte verwenden zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Um die VSIX-Projekte verwenden zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Wo finden die VSIX-Projektvorlage  
  Die VSIX-Projektvorlage finden Sie in der **neues Projekt** Dialogfeld. Erweitern Sie entweder die **Visual Basic** Knoten oder die **Visual C#-** Knoten, und wählen Sie dann **Erweiterbarkeit**.  
   
 > [!TIP]
->  Sie sollten sicherstellen, dass diese .NET Framework 4.5 oder höher angegeben ist, in der Dropdownliste am oberen Rand der **neues Projekt** Dialogfeld.  
+> Sie sollten sicherstellen, dass diese .NET Framework 4.5 oder höher angegeben ist, in der Dropdownliste am oberen Rand der **neues Projekt** Dialogfeld.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>Verwendet die VSIX-Projektvorlage  
  Die VSIX-Projektvorlage verfügt über zwei Hauptanwendungsgebiete:  

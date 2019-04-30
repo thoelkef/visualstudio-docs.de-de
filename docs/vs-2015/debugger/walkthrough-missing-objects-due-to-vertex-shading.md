@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444267"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Vertex-Shading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     Im Fenster **Grafikpipelinestufen** zeigt die **Eingabeassembler** -Stufe die Geometrie des Objekts vor dem Transformieren, und die **Vertexshader** -Stufe zeigt dasselbe Objekt nach dem Transformieren. In diesem Fall wissen Sie, dass Sie das fehlende Objekt gefunden haben, wenn es in der **Eingabeassembler** -Stufe angezeigt wird, und wenn in der **Vertexshader** -Stufe nichts angezeigt wird.  
   
    > [!NOTE]
-   >  Wenn das Objekt in weiteren Geometriestufen verarbeitet wird – beispielsweise in der Hullshader-, Domainshader- oder Geometryshader-Stufe –, kann die Ursache des Problems in diesen Stufen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.  
+   > Wenn das Objekt in weiteren Geometriestufen verarbeitet wird – beispielsweise in der Hullshader-, Domainshader- oder Geometryshader-Stufe –, kann die Ursache des Problems in diesen Stufen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.  
   
 4. Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** , dass die Geometrie zwar an die GPU übergeben wurde (gekennzeichnet durch die Eingabeassembler-Miniaturansicht), jedoch nicht im Renderziel angezeigt wird, weil auf der Vertexshader-Stufe ein Problem aufgetreten ist (gekennzeichnet durch die Vertexshader-Miniaturansicht):  
   
@@ -107,7 +107,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     ![Der Code, der den Konstantenpuffer festlegt](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.  
+   > Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection` -Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.  
   
    Nachdem Sie die Position, an der der Konstantenpuffer gefüllt wird, gefunden und festgestellt haben, dass dessen Werte aus der Variablen `m_marbleConstantBufferData` stammen, müssen Sie im nächsten Schritt herausfinden, wo der `m_marbleConstantBufferData.projection`-Member mit den Nullen gefüllt wird. Sie können **Alle Verweise suchen** verwenden, um schnell nach Code zu suchen, in dem der Wert von `m_marbleConstantBufferData.projection`geändert wird.  
   
