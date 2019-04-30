@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415563"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Language-Dienst und -Editor-Erweiterungen
 Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung, Klammern, IntelliSense und Glühbirnen Ihrer eigenen Programmiersprache oder für beliebige Inhaltstypen hinzufügen. Sie können auch das Aussehen und Verhalten von Visual Studio-Editor, z. B. Text, die Farbgebung, Ränder, Zusatzelemente und andere visuelle Elemente anpassen. Sie können auch Ihren eigenen Typ des Inhalts definieren und geben Sie das Aussehen und Verhalten von der Textansichten in denen Ihre Inhalte angezeigt wird.
@@ -23,7 +23,7 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Verwenden Sie zum Einstieg das Schreiben von Erweiterungen des Editors die Editor-Projektvorlagen, die als Teil der Visual Studio SDK installiert sind. Visual Studio SDK ist eine herunterladbare Reihe von Tools, die zum Entwickeln von Visual Studio-Erweiterungen mit VSPackages oder mit dem Managed Extensibility Framework (MEF) erleichtern.
 
 > [!NOTE]
->  Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Es wird empfohlen, dass die folgenden Konzepte und Technologien erfahren, bevor Sie Ihre eigenen Erweiterungen des Editors schreiben.
 
@@ -34,7 +34,7 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Visual Studio-Editor verwendet das Managed Extensibility Framework (MEF) zum Verwalten von zugehörigen Komponenten und -Erweiterungen. Das MEF kann Entwickler weitere Erweiterungen für eine hostanwendung, z. B. Visual Studio auf einfache Weise erstellen. Dieses Framework definieren Sie eine Erweiterung gemäß einem MEF-Vertrag und exportieren Sie es als Teil einer MEF-Komponente. Die hostanwendung verwaltet die Komponenten, indem sie suchen, deren Registrierung und stellt sicher, dass sie auf den richtigen Kontext angewendet werden.
 
 > [!NOTE]
->  Weitere Informationen zu den MEF im Editor, finden Sie unter [Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).
+> Weitere Informationen zu den MEF im Editor, finden Sie unter [Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio-Editor-Erweiterungspunkte und -Erweiterungen
  Editor-Erweiterungspunkte sind MEF-Komponenten, die Sie anpassen und erweitern können. In einigen Fällen erweitern Sie den Erweiterungspunkt durch Implementieren einer Schnittstelle und ihn zusammen mit den richtigen Metadaten zu exportieren. In anderen Fällen Sie nur eine Erweiterung zu deklarieren und exportieren Sie es als einen bestimmten Typ.
@@ -59,7 +59,7 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Wenn Sie eine Erweiterung auf einem Computer installieren, enthalten Sie die Binärdateien und das Manifest in einem Unterordner des Ordners, der in Visual Studio bekannt ist.
 
 > [!WARNING]
->  Sie müssen nicht die Details der Manifeste und Standorten für die Bereitstellung sorgen, wenn Sie eine der Vorlagen-Editor-Erweiterungen verwenden, die in Visual Studio enthalten sind. Die Vorlagen enthalten alles, was zu registrieren und Bereitstellen eine Erweiterung erforderlich ist.
+> Sie müssen nicht die Details der Manifeste und Standorten für die Bereitstellung sorgen, wenn Sie eine der Vorlagen-Editor-Erweiterungen verwenden, die in Visual Studio enthalten sind. Die Vorlagen enthalten alles, was zu registrieren und Bereitstellen eine Erweiterung erforderlich ist.
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Führen Sie die Erweiterungen in der experimentellen Instanz
  Sie können Ihre funktionierende Version von Visual Studio isolieren, während der Entwicklung einer Erweiterungs durch die Bereitstellung im folgenden experimentellen Ordner (unter Windows Vista und Windows 7):

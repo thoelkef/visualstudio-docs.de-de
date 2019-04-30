@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387653"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Gewusst wie: Verwenden des Suchtools
+# <a name="how-to-use-the-finder-tool"></a>Vorgehensweise: Verwenden des Suchtools
 Können Sie das Suchtool im der **Fenster Suchen** Dialogfeld zum Anzeigen von Eigenschaften oder Meldungen. Das Suchtool können auch deaktivierte untergeordnete Fenster Suchen und erkennen, welches Fenster zum Hervorheben, deaktivierte untergeordnete Fenster überlappen.
 
  ![Spy++&#43; &#43; Dialogfeld Fenster Suchen](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find") Suchtool im Dialogfeld "Fenster Suchen"
@@ -41,7 +41,7 @@ Können Sie das Suchtool im der **Fenster Suchen** Dialogfeld zum Anzeigen von E
      Wenn Sie das Handle des Fensters haben (z. B. aus dem Debugger kopiert) überprüfen möchten, geben Sie ihn in das **behandeln** Textfeld.
 
    > [!TIP]
-   >  Um die Übersichtlichkeit des Bildschirms, wählen Sie die **Spy++ ausblenden** Option. Diese Option verbirgt die Spy++-Hauptfenster, sondern nur die **Fenster Suchen** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen**, oder wenn Sie das Kontrollkästchen der **Spy++ ausblenden** Option.
+   > Um die Übersichtlichkeit des Bildschirms, wählen Sie die **Spy++ ausblenden** Option. Diese Option verbirgt die Spy++-Hauptfenster, sondern nur die **Fenster Suchen** Dialogfeld sichtbar ist, zusätzlich zu anderen Anwendungen. Spy++-Hauptfenster wird wiederhergestellt, wenn Sie auf **OK** oder **Abbrechen**, oder wenn Sie das Kontrollkästchen der **Spy++ ausblenden** Option.
 
 4. Klicken Sie unter **anzeigen**, wählen Sie entweder **Eigenschaften** oder **Nachrichten**.
 

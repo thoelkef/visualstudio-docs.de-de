@@ -12,12 +12,12 @@ ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f9057b8c19c1e1763b29fe40fc77bfc0be064159
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444958"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ public struct DEBUG_ADDRESS {
  Das Token identifiziert die Klasse oder eines Typs dieser Adresse.  
   
 > [!NOTE]
->  Dieser Wert richtet sich nach einem symbolanbieter und hat daher keine allgemein Bedeutung außer als Bezeichner für einen Klassentyp.  
+> Dieser Wert richtet sich nach einem symbolanbieter und hat daher keine allgemein Bedeutung außer als Bezeichner für einen Klassentyp.  
   
  addr  
  Ein [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, die eine Vereinigung von Strukturen enthält, in denen einzelne Adresse beschrieben. Der Wert `addr`.`dwKind` stammt aus dem [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) -Enumeration, die erläutert, wie die Union zu interpretieren.  
@@ -63,7 +63,7 @@ public struct DEBUG_ADDRESS {
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur wird zum Übergeben der [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Methode gefüllt werden soll.  
   
- **Warnung [nur für C++]**  
+ **Warnung [C++ nur]**  
   
  Wenn `addr.dwKind` ist `ADDRESS_KIND_METADATA_LOCAL` und, wenn `addr.addr.addrLocal.pLocal` nicht ist ein null-Wert, wird Sie aufrufen müssen `Release` für den token auf:  
   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c57b3de77c2b32d7589fe50d55b3e81db08facd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422490"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Vorgehensweise: Ändern der Größe von NamedRange-Steuerelementen
   Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements festlegen, wenn Sie es zu einem Microsoft Office Excel-Dokument hinzufügen. Möglicherweise möchten Sie jedoch zu einem späteren Zeitpunkt die Größe ändern.
@@ -59,7 +59,7 @@ ms.locfileid: "60099608"
  Sie können die Größe eines benannten Bereichs programmgesteuert ändern, indem Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft verwenden.
 
 > [!NOTE]
->  Im Fenster **Eigenschaften** ist die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft als schreibgeschützt markiert.
+> Im Fenster **Eigenschaften** ist die <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> -Eigenschaft als schreibgeschützt markiert.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>So ändern Sie die Größe eines benannten Bereichs programmgesteuert
 

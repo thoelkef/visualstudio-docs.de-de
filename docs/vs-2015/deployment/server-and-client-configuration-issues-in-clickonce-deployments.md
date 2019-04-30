@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444970"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
  Derzeit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Installationen nur gestartet, wenn die URL für das Bereitstellungsmanifest mit Internet Explorer geöffnet wird. Eine Bereitstellung, deren URL durch eine andere Anwendung, z. B. Microsoft Office Outlook, gestartet wird, wird erfolgreich gestartet werden, nur, wenn Internet Explorer als Standardbrowser festgelegt ist.  
   
 > [!NOTE]
->  Mozilla Firefox wird unterstützt, wenn der Bereitstellungsanbieter nicht leer ist oder die Erweiterung von Microsoft .NET Framework-Assistent ist installiert. Diese Erweiterung wird mit .NET Framework 3.5 SP1 verpackt. Die NPWPF-Plug-in wird bei Bedarf zur XBAP-Unterstützung aktiviert.  
+> Mozilla Firefox wird unterstützt, wenn der Bereitstellungsanbieter nicht leer ist oder die Erweiterung von Microsoft .NET Framework-Assistent ist installiert. Diese Erweiterung wird mit .NET Framework 3.5 SP1 verpackt. Die NPWPF-Plug-in wird bei Bedarf zur XBAP-Unterstützung aktiviert.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Aktivieren von ClickOnce-Anwendungen über die Skriptprogrammierung Browser  
  Wenn Sie eine benutzerdefinierte Webseite entwickelt haben, die startet eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung mithilfe von Active Scripting, vorkommen, dass die Anwendung nicht auf einigen Computern zu starten. Internet Explorer enthält eine Einstellung namens **automatisch aufgefordert, für den Download der Datei**, die dieses Verhalten wirkt sich auf. Diese Einstellung ist verfügbar, auf die **Sicherheit** Registerkarte die **Optionen** Menü, das dieses Verhalten wirkt sich auf. Es heißt **automatisch aufgefordert, für den Download der Datei**, und es wird aufgeführt, unter der **Downloads** Kategorie. Die Eigenschaft wird festgelegt, um **aktivieren** standardmäßig für die Webseiten im Intranet und **deaktivieren** standardmäßig für Internet-Webseiten. Wenn diese Einstellung festgelegt wurde, um **deaktivieren**, jeder Versuch, aktivieren Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung programmgesteuert (z. B. durch die URL zum Zuweisen der `document.location` Eigenschaft) blockiert werden. Unter diesen Umständen können Benutzer Anwendungen nur über eine vom Benutzer initiierte-Download, z. B. durch Klicken auf einen Link aus, legen Sie auf die URL der Anwendung starten.  
@@ -78,7 +78,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 ```  
   
 > [!NOTE]
->  NTLM (NT-Abfrage / Rückmeldung)-Authentifizierung funktioniert, wenn die Website zur Eingabe von Anmeldeinformationen als die standardmäßigen Anmeldeinformationen fordert, und klicken Sie im Dialogfeld "Sicherheit", die Sie auf möglich **OK** Wenn Sie aufgefordert werden, wenn die angegebene gespeichert werden soll Anmeldeinformationen für zukünftige Sitzungen. Diese problemumgehung funktioniert jedoch nicht für die Standardauthentifizierung.  
+> NTLM (NT-Abfrage / Rückmeldung)-Authentifizierung funktioniert, wenn die Website zur Eingabe von Anmeldeinformationen als die standardmäßigen Anmeldeinformationen fordert, und klicken Sie im Dialogfeld "Sicherheit", die Sie auf möglich **OK** Wenn Sie aufgefordert werden, wenn die angegebene gespeichert werden soll Anmeldeinformationen für zukünftige Sitzungen. Diese problemumgehung funktioniert jedoch nicht für die Standardauthentifizierung.  
   
 ## <a name="using-third-party-web-servers"></a>Mithilfe von Drittanbieter-Webservern  
  Bei der Bereitstellung einer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung von einem Webserver als IIS können Sie ein Problem auftreten, wenn der Server, den falschen Inhaltstyp für Schlüssel zurückgibt [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Dateien, z. B. das Bereitstellungsmanifest und Anwendungsmanifest. Um dieses Problem zu beheben, finden Sie in Ihrem Webserver-Hilfe, die Dokumentation über das Hinzufügen von neuer Inhaltstypen an den Server, und stellen Sie sicher, dass alle Datei Namen Erweiterung Zuordnungen in der folgenden Tabelle aufgeführt sind.  

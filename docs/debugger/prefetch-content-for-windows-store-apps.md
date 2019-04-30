@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408594"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debuggen von UWP-apps mithilfe von vorab abgerufenem Inhalt in Visual Studio
 
@@ -30,14 +30,14 @@ ms.locfileid: "56701276"
 
 1. Starten Sie die App, um die Inhalts-URIs zum Vorabladen in der App zu registrieren. Wählen Sie anschließend im Menü **Debuggen** die Option **Debuggen starten** (Tastenkombination: F5) aus.
 
-2. Wählen Sie im Menü **Debuggen** die Option **Debuggen beenden** (Tastenkombination: UMSCHALT+F5) aus.
+2. Auf der **Debuggen** Menü wählen **Debuggen beenden** (Tastenkombination: UMSCHALT + F5).
 
 3. Wählen Sie im Menü **Debuggen** die Option **Andere Debugziele** und anschließend **Vorabrufen von Windows Store-App auslösen** aus.
 
    Sie können die App jetzt mit den vorabgerufenen Webressourcen debuggen, testen oder analysieren.
 
 > [!NOTE]
->  Wiederholen Sie diese Schritte jedes Mal, wenn Sie die angegebenen Webinhalte ändern oder neue hinzufügen.
+> Wiederholen Sie diese Schritte jedes Mal, wenn Sie die angegebenen Webinhalte ändern oder neue hinzufügen.
 
 ## <a name="see-also"></a>Siehe auch
-- [Blogbeitrag: Auslösen der Vorabruf für Windows Store-Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+- [Blogbeitrag: Vorabrufen auslösen, für Windows Store-Apps in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

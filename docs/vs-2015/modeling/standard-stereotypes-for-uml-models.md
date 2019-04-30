@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411746"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardstereotype für UML-Modelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
 2. Legen Sie im Fenster Eigenschaften die **Profile** als leere Eigenschaft.  
   
     > [!NOTE]
-    >  Sie können die Verknüpfung eines Profils nur aufheben, wenn keines der Elemente im Modell oder Paket die Stereotype dieses Profils verwendet.  
+    > Sie können die Verknüpfung eines Profils nur aufheben, wenn keines der Elemente im Modell oder Paket die Stereotype dieses Profils verwendet.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>So wenden Sie ein Stereotyp auf ein Modellelement an  
   
@@ -67,7 +67,7 @@ Sie können Stereotype zu UML-Modellelementen hinzufügen, um zusätzliche Infor
      Für die meisten Arten von Elementen werden die ausgewählten Stereotype innerhalb von Chevrons (« ») im Modellelement angezeigt.  
   
     > [!NOTE]
-    >  Wenn Sie nicht sehen können die **Stereotype** -Eigenschaft, oder wenn das gewünschte Stereotyp nicht angezeigt wird, stellen Sie sicher, dass das Modellelement in einem Paket oder ein Modell ist, das entsprechende Profil verknüpft wurde.  
+    > Wenn Sie nicht sehen können die **Stereotype** -Eigenschaft, oder wenn das gewünschte Stereotyp nicht angezeigt wird, stellen Sie sicher, dass das Modellelement in einem Paket oder ein Modell ist, das entsprechende Profil verknüpft wurde.  
   
 3. Einige Stereotype ermöglichen es Ihnen, die Werte zusätzlicher Eigenschaften für das Modellelement festzulegen. Um diese Eigenschaften anzuzeigen, erweitern Sie die **Stereotype** Eigenschaft.  
   

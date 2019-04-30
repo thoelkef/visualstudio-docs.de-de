@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407758"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -100,7 +100,7 @@ Sie können einige Aspekte der Konfiguration des Remotedebuggers ändern, nachde
      Eine Liste der standardmäßig verwendeten Portnummern, finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
-     >  Sie haben die Möglichkeit, die Remotetools im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus „Ohne Authentifizierung“ nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
+     > Sie haben die Möglichkeit, die Remotetools im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus „Ohne Authentifizierung“ nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
 
 ## <a name="bkmk_configureService"></a> (Optional) Konfigurieren des Remotedebuggers als Dienst
 Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remotedebugger als Administrator ausführen oder, soll es immer ausgeführt, den den Remotedebugger als Dienst ausführen.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402797"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Vorgehensweise: Erstellen Sie eine Zuordnung zwischen LINQ to SQL-Klassen (O/R Designer)
 Zuordnungen zwischen Entitätsklassen in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ähneln Beziehungen zwischen Tabellen einer Datenbank. Sie können Zuordnungen zwischen Entitätsklassen mithilfe des Dialogfelds **Zuordnungs-Editor** erstellen.
@@ -21,7 +21,7 @@ Zuordnungen zwischen Entitätsklassen in [!INCLUDE[vbtecdlinq](../data-tools/inc
 Sie müssen eine übergeordnete und eine untergeordnete Klasse auswählen, wenn Sie das Dialogfeld **Zuordnungs-Editor** verwenden, um eine Zuordnung zu erstellen. Die übergeordnete Klasse ist die Entitätsklasse, die den Primärschlüssel enthält. Die untergeordnete Klasse ist die Entitätsklasse, die den Fremdschlüssel enthält. Angenommen, Entitätsklassen, die zugeordnet erstellt wurden die `Northwind Customers` und `Orders` Tabellen, die `Customer` Klasse wäre die übergeordnete Klasse und die `Order` Klasse wäre der untergeordneten Klasse.
 
 > [!NOTE]
->  Beim Ziehen von Tabellen aus **Server-Explorer** oder **Datenbank-Explorer** auf die **Object Relational Designer** (**O/R Designer**), Zuordnungen werden automatisch basierend auf den vorhandenen Fremdschlüssel-Beziehungen in der Datenbank erstellt.
+> Beim Ziehen von Tabellen aus **Server-Explorer** oder **Datenbank-Explorer** auf die **Object Relational Designer** (**O/R Designer**), Zuordnungen werden automatisch basierend auf den vorhandenen Fremdschlüssel-Beziehungen in der Datenbank erstellt.
 
 ## <a name="association-properties"></a>Zuordnungseigenschaften
 Nach dem Erstellen der Zuordnung kann die Zuordnung im **O/R-Designer** ausgewählt werden, um einige ihrer Eigenschaften im Fenster **Eigenschaften** zu konfigurieren. (Die Zuordnung wird durch die Linie zwischen den verknüpften Klassen dargestellt.) In der folgenden Tabelle werden Beschreibungen der Eigenschaften einer Zuordnung aufgeführt.

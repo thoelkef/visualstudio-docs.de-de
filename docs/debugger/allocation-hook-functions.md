@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402698"
 ---
 # <a name="allocation-hook-functions"></a>Hookfunktionen für Reservierungen
 Einer Reservierungshookfunktion, installiert mit [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), wird jedes Mal aufgerufen Arbeitsspeicher reserviert, neu zugeordnet oder freigegeben wird. Sie können diese Art von Hook für unterschiedliche Zwecke verwenden. Verwenden Sie, um zu testen, wie eine Anwendung nicht genügend Arbeitsspeicher Situationen, z. B. verhält, Reservierungsmuster überprüfen oder protokollieren Sie Reservierungsinformationen für die spätere Analyse.
 
 > [!NOTE]
->  Beachten Sie die Einschränkungen hinsichtlich der Verwendung von C-Laufzeitbibliotheksfunktionen in einer Zuweisungshookfunktion, die unter [Zuweisungshook und Speicherbelegungen von C-Laufzeitbibliotheken](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) beschrieben werden.
+> Beachten Sie die Einschränkungen hinsichtlich der Verwendung von C-Laufzeitbibliotheksfunktionen in einer Zuweisungshookfunktion, die unter [Zuweisungshook und Speicherbelegungen von C-Laufzeitbibliotheken](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) beschrieben werden.
 
  Eine Reservierungshookfunktion sollte einen Prototyp wie im folgenden Beispiel haben:
 

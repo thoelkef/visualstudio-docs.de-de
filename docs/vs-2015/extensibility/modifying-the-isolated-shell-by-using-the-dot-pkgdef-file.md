@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386034"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Ändern der Isolated Shell mithilfe der. PKGDEF-Datei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663965"
 Die PKGDEF-Datei unterstützt die Einstellungen, die Sie zum Anpassen einer isolierten Shell-Anwendung verwenden können. Es gibt Werte an, die erstellt werden, wenn eine Anwendung auf einem Computer installiert ist, und verwiesen wird, werden von der Visual Studio-Shell beim Start der Anwendungs. Die Einstellungen werden in der Datei, die basierend auf den entsprechenden Registrierungsschlüsseln organisiert.  
 
 > [!WARNING]
->  Beachten Sie, dass die PKGDEF-Dateien, die nicht in der vsixmanifest-Datei des VSPackage deklariert werden nicht überprüft werden, beim Start von Visual Studio.  
+> Beachten Sie, dass die PKGDEF-Dateien, die nicht in der vsixmanifest-Datei des VSPackage deklariert werden nicht überprüft werden, beim Start von Visual Studio.  
 
  Die PKGDEF-Datei enthält Abschnitte, die jeweils anhand eines Schlüssels, entweder identifiziert werden `[$RootKey$]` oder `[$RootKey$\` *Unterschlüssel*`]`, wobei $RootKey$ den Stammschlüssel für die Anwendung.  
 
@@ -53,7 +53,7 @@ Die PKGDEF-Datei unterstützt die Einstellungen, die Sie zum Anpassen einer isol
  In den folgenden Abschnitten beschreiben bestimmte Registrierungswerte, die das Verhalten von der Visual Studio-Shell im isolierten Modus beeinflussen. Sie können auch die Registrierungswerte für die Anwendung in dieser Datei definieren.  
 
 > [!NOTE]
->  Wenn eine Einstellung nicht in der PKGDEF-Datei angegeben ist, ist kein entsprechender Eintrag in der Registrierung vorgenommen.  
+> Wenn eine Einstellung nicht in der PKGDEF-Datei angegeben ist, ist kein entsprechender Eintrag in der Registrierung vorgenommen.  
 
 ## <a name="settings"></a>Einstellungen  
  Die folgende Tabelle beschreibt die Werte, die unter [$RootKey$] definiert.  

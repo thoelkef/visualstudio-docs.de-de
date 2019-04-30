@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2f32cde96d7be482d0283510bcc3f0c127db9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d486234bd220fd1a7b2a93ca88fd89e5119b2dbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411309"
 ---
 # <a name="expression-evaluator-architecture"></a>Architektur der ausdrucksauswertung
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Die Integration in das Visual Studio-Paket Debuggen bedeutet, Sie dass von eine proprietäre Sprache muss richten Sie die erforderlichen Expression Evaluator (EE)-Schnittstellen und rufen Sie die common Language Run-Time-Symbol-Dienstanbieter (SP) und den Binder-Schnittstellen. Die SP und Binder-Objekte zusammen mit der aktuellen Adresse für die Ausführung stehen für Kontext in dem Ausdrücke ausgewertet werden. Die Informationen, die diese Schnittstellen zu erzeugen und nutzen, stellt die wichtigsten Konzepte in der Architektur eine EE dar.
 

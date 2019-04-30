@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445963"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Unittests bei einer Visual C++-DLL für Store-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
     ```  
   
     > [!TIP]
-    >  Es wird empfohlen, keine Tests zu ändern, die erfolgreich abgeschlossen wurden. Fügen Sie stattdessen einen neuen Test hinzu, aktualisieren Sie den Code, damit der Test erfolgreich ist, und fügen Sie dann einen weiteren Test hinzu, usw.  
+    > Es wird empfohlen, keine Tests zu ändern, die erfolgreich abgeschlossen wurden. Fügen Sie stattdessen einen neuen Test hinzu, aktualisieren Sie den Code, damit der Test erfolgreich ist, und fügen Sie dann einen weiteren Test hinzu, usw.  
     >   
     >  Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.  
   
@@ -231,7 +231,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
      ![Fehler beim RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.  
+    > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.  
   
 4. Erweitern Sie den Code unter dem Test, damit der neue Test erfolgreich ist. Fügen Sie **RooterLib.cpp** Folgendes hinzu:  
   
@@ -259,7 +259,7 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
      Beide Tests sind erfolgreich.  
   
 > [!TIP]
->  Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.  
+> Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen  
   
@@ -346,6 +346,6 @@ Dieses Thema beschreibt eine Möglichkeit zum Erstellen von Komponententests fü
 2. Wählen Sie **Alle ausführen** aus, um die umgestaltete Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.  
   
     > [!TIP]
-    >  Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.  
+    > Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.  
     >   
     >  Halten Sie Umgestaltungen getrennt von anderen Änderungen.

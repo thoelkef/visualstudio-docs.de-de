@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447023"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Registrierungseinträge für VSTO-Add-ins
   Sie müssen einen bestimmten Satz von Registrierungseinträgen erstellen, wenn Sie VSTO-Add-Ins bereitstellen, die mithilfe von Visual Studio erstellt werden. Diese Registrierungseinträge enthalten Informationen, mit denen die Microsoft Office-Anwendung das VSTO-Add-In erkennt und lädt.
@@ -33,7 +33,7 @@ ms.locfileid: "60071807"
  Weitere Informationen zur Verwendung der Registrierungseinträge während des Ladevorgangs für VSTO-Add-Ins finden Sie unter [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  In diesem Thema stellt der Text *Add-In-ID* eine eindeutige ID für das VSTO-Add-In dar. Standardmäßig entspricht die ID dem Namen der VSTO-Add-In-Assembly.
+> In diesem Thema stellt der Text *Add-In-ID* eine eindeutige ID für das VSTO-Add-In dar. Standardmäßig entspricht die ID dem Namen der VSTO-Add-In-Assembly.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrieren von VSTO-Add-ins für den aktuellen Benutzer im Vergleich zu allen Benutzern
  Wenn ein VSTO-Add-In installiert ist, kann es auf zwei Arten registriert werden:

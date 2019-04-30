@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445983"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60069912"
   
 - [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
-- [Schnellstart: Testgesteuerte Entwicklung mit Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 - [Komponententests für systemeigenen Code mit Test-Explorer](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Nennen Sie das Projekt zum Testen des Projekts `Accounts` in diesem Beispiel `AccountsTests`.  
   
    > [!WARNING]
-   >  Nicht alle Drittanbieter- und Open-Source-Komponententest-Frameworks stellen eine Visual Studio-Projektvorlage bereit. Lesen Sie die Dokumentation des Frameworks, um Informationen zum Erstellen eines Projekts zu erhalten.  
+   > Nicht alle Drittanbieter- und Open-Source-Komponententest-Frameworks stellen eine Visual Studio-Projektvorlage bereit. Lesen Sie die Dokumentation des Frameworks, um Informationen zum Erstellen eines Projekts zu erhalten.  
   
 8. Fügen Sie im Komponententestprojekt unter "Test" einen Verweis auf das Codeprojekt hinzu, in unserem Beispiel auf das Projekt "Accounts".  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> Ausführen von Tests nach jedem Build  
   
 > [!WARNING]
->  Das Ausführen von Komponententests nach jedem Buildvorgang wird nur in Visual Studio Enterprise unterstützt.  
+> Das Ausführen von Komponententests nach jedem Buildvorgang wird nur in Visual Studio Enterprise unterstützt.  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.  
   
    > [!NOTE]
-   >  Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.  
+   > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.  
   
 2. Wählen Sie im Test-Explorer die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **Antwort:** Ja. Mit*datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Weisen Sie im Methodentext die Zeilenwerte den Variablen mithilfe des Indexers `TestContext.DataRow[`*ColumnName*`]` zu.  
   
 > [!NOTE]
->  Diese Verfahren gelten nur für Testmethoden, die Sie mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code schreiben. Wenn Sie ein anderes Framework verwenden, finden Sie Informationen zu entsprechenden Funktionen in der Frameworkdokumentation.  
+> Diese Verfahren gelten nur für Testmethoden, die Sie mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code schreiben. Wenn Sie ein anderes Framework verwenden, finden Sie Informationen zu entsprechenden Funktionen in der Frameworkdokumentation.  
   
  Nehmen Sie beispielsweise an, Sie fügen der `CheckingAccount` -Klasse eine unnötige Methode mit dem Namen `AddIntegerHelper`hinzu. In`AddIntegerHelper` werden zwei ganze Zahlen addiert.  
   

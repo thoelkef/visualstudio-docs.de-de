@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2de018cc757adba814c8705fb0f2e02e96f1c59c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420779"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrieren einer ausdrucksauswertung
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zum Implementieren von CLR-ausdrucksauswertungen finden Sie unter [CLR ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Auswertung (Beispiel) verwaltete Ausdruck](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Die ausdrucksauswertung (EE) muss sich als eine Klassenfactory mit der Windows-COM-Umgebung und die Visual Studio zu registrieren. Ein EE wird als DLL richten, sodass er, in der Debug-Engine (DE)-Adressraum oder des Visual Studio-Adressraums eingefügt wird, je nachdem, welche Entität die EE instanziiert.
 
@@ -101,7 +101,7 @@ namespace EEMC
  Die EE-DLL implementiert die `DllRegisterServer` Funktion, um sich mit COM-Umgebung als auch Visual Studio zu registrieren.
 
 > [!NOTE]
->  Sie finden die MyCEE Registrierung Codebeispiel wird in der Datei *dllentry.cpp*, befindet sich in der VSIP-Installation unter EnVSDK\MyCPkgs\MyCEE.
+> Sie finden die MyCEE Registrierung Codebeispiel wird in der Datei *dllentry.cpp*, befindet sich in der VSIP-Installation unter EnVSDK\MyCPkgs\MyCEE.
 
 ### <a name="dll-server-process"></a>DLL-Server-Prozess
  Wenn Sie die EE, die DLL-Server zu registrieren:
@@ -118,7 +118,7 @@ namespace EEMC
     |`metricEngine`|`GUID`s von der Debug-Engines (DE), die mit diesem EE arbeiten|
 
     > [!NOTE]
-    >  Die `metricLanguage``GUID` identifiziert die Sprache von Namen, aber es ist die `guidLang` Argument `SetEEMetric` , bei dem die Sprache ausgewählt. Wenn der Compiler die Debuginformationsdatei generiert, sollten die entsprechenden schreiben `guidLang` , damit die DE weiß, welche EE verwenden. Die DE fordert den symbolanbieter in der Regel für diese Sprache `GUID`, die in der Debug-Informationsdatei gespeichert ist.
+    > Die `metricLanguage``GUID` identifiziert die Sprache von Namen, aber es ist die `guidLang` Argument `SetEEMetric` , bei dem die Sprache ausgewählt. Wenn der Compiler die Debuginformationsdatei generiert, sollten die entsprechenden schreiben `guidLang` , damit die DE weiß, welche EE verwenden. Die DE fordert den symbolanbieter in der Regel für diese Sprache `GUID`, die in der Debug-Informationsdatei gespeichert ist.
 
 3. Registriert bei Visual Studio erstellen, die Schlüssel unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, wobei *X.Y* ist die Version von Visual Studio zu registrieren.
 

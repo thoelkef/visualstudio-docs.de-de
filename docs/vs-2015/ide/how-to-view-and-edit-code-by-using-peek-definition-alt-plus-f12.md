@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386845"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
  Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic enthält **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten (z.B. integrierte .NET Framework-Typen).  
   
 > [!IMPORTANT]
->  Sie können diesen Befehl in einer Express-Version von Visual Studio 2013 nicht verwenden.  
+> Sie können diesen Befehl in einer Express-Version von Visual Studio 2013 nicht verwenden.  
   
 ## <a name="working-with-peek-definition"></a>Arbeiten mit der Peek-Definition  
   
@@ -76,7 +76,7 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
     |Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|UMSCHALT+ESC|  
   
     > [!NOTE]
-    >  Sie können die gleichen Tastenkombinationen zum Bearbeiten in einem **Definition einsehen**-Fenster verwenden, die Sie an anderer Stelle in Visual Studio nutzen.  
+    > Sie können die gleichen Tastenkombinationen zum Bearbeiten in einem **Definition einsehen**-Fenster verwenden, die Sie an anderer Stelle in Visual Studio nutzen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)

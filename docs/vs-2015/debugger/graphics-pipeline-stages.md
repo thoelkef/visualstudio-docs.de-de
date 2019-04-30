@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420156"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafikpipelinestufen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
 - Suchen Sie im Fenster **Grafikpipelinestufen** nach der Shader-Stufe, die dem zu überprüfenden Shader entspricht. Folgen Sie unter dem Vorschaubild anschließend dem Shader-Stufentitellink, folgen Sie beispielsweise dem Link **Vertex Shader obj:30**, um den Quellcode des Vertex-Shaders anzuzeigen.  
   
     > [!TIP]
-    >  Die Objektnummer **obj:30** identifiziert diesen Shader über die gesamte Grafikanalyseoberfläche hinweg, beispielsweise in der Objekttabelle und im Pixelverlaufsfenster.  
+    > Die Objektnummer **obj:30** identifiziert diesen Shader über die gesamte Grafikanalyseoberfläche hinweg, beispielsweise in der Objekttabelle und im Pixelverlaufsfenster.  
   
 ##### <a name="to-debug-a-shader"></a>Um einen Shader zu debuggen  
   
@@ -59,7 +59,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  Im Fenster „Pipelinestufen“ werden nur die Stufen der Pipeline veranschaulicht, die während des Zeichnen-Befehls aktiv waren. Auf jeder Stufe der Grafikpipeline werden Eingaben aus der vorherigen Stufe umgewandelt, und das Ergebnis wird an die nächste Stufe weitergegeben. Auf der ersten Stufe (der Eingabe-Assembler) werden Index- und Vertexdaten Ihrer App aus entsprechende Eingabe verwendet. Auf der letzten Stufe (die Ausgabezusammenführung) werden die neu gerenderten Pixel mit den aktuellen Inhalten des Framepuffers oder Renderziels kombiniert, wie es ausgegeben wird, um das endgültige Bild zu generieren, wie es auf Ihrem Bildschirm angezeigt wird.  
   
 > [!NOTE]
->  Compute-Shader werden nicht im Fenster **Grafikpipelinestufen** unterstützt.  
+> Compute-Shader werden nicht im Fenster **Grafikpipelinestufen** unterstützt.  
   
  **Eingabe-Assembler**  
  Der Eingabe-Assembler liest durch Ihre App angegebene Index- und Vertexdaten und assembliert sie für die Grafikhardware.  
@@ -67,7 +67,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  Im Fenster „Pipelinestufen“ wird die Ausgabe „Eingabe-Assembler“ in einem Drahtmodell veranschaulicht. Wählen Sie zur detaillierten Anzeige des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Eingabe-Assembler** aus, um die assemblierten Scheitelpunkte mithilfe des Modell-Editors in vollständigem 3D anzuzeigen.  
   
 > [!NOTE]
->  Wenn die `POSITION`-Semantik nicht in der Eingabe-Assembler-Ausgabe vorhanden ist, dann wird in der **Eingabe-Assembler**-Phase nichts angezeigt.  
+> Wenn die `POSITION`-Semantik nicht in der Eingabe-Assembler-Ausgabe vorhanden ist, dann wird in der **Eingabe-Assembler**-Phase nichts angezeigt.  
   
  **Vertex-Shader**  
  Die Vertex-Shader-Stufe verarbeitet Scheitelpunkte, wobei für gewöhnlich Vorgänge wie die Transformation, das Skinning und die Beleuchtung ausgeführt werden. Vertex-Shader generieren die gleiche Anzahl an Scheitelpunkten, die sie als Eingabe verwenden.  
@@ -75,7 +75,7 @@ Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie e
  Im Fenster „Pipelinestufen“ wird die Ausgabe „Vertex-Shader“ als ein Drahtmodell-Rasterbild veranschaulicht. Wählen Sie zum genaueren Anzeigen des Ergebnisses im Fenster **Grafikpipelinestufen** die Option **Vertex-Shader** aus, um die verarbeiteten Scheitelpunkte im Bild-Editor anzuzeigen.  
   
 > [!NOTE]
->  Wenn die `POSITION`- oder `SV_POSITION`-Semantik nicht in der Vertex-Shader-Ausgabe vorhanden ist, dann wird in der **Vertex-Shader**-Phase nichts angezeigt.  
+> Wenn die `POSITION`- oder `SV_POSITION`-Semantik nicht in der Vertex-Shader-Ausgabe vorhanden ist, dann wird in der **Vertex-Shader**-Phase nichts angezeigt.  
   
  **Hull-Shader** (nur Direct3D 11 und Direct3D 12)  
  Die Hull-Shader-Stufe verarbeitet Kontrollpunkte, die eine Oberfläche mit geringer Ordnung wie eine Line, ein Dreieck oder ein Quadrupel definieren. Als Ausgabe werden ein Geometriepatch mit höherer Ordnung und Patchkonstanten generiert, die an die Mosaikphase einer festen Funktion weitergegeben werden.  

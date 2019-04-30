@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445927"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 3. Wenn die Ergebnisse eine niedrige Abdeckung anzeigen, untersuchen Sie, welche Teile des Codes nicht ausgeführt werden, und schreiben Sie weitere Tests, um diese abzudecken. Entwicklungsteams streben normalerweise eine Codeabdeckung von ca. 80 % an. In einigen Situationen ist eine geringere Abdeckung akzeptabel. Beispielsweise ist eine geringere Abdeckung akzeptabel, wenn ein Teil des Codes aus einer Standardvorlage generiert wird.  
   
 > [!TIP]
->  So erhalten Sie genaue Ergebnisse:  
+> So erhalten Sie genaue Ergebnisse:  
 > 
 > - Überprüfen Sie, ob Compileroptimierung deaktiviert ist.  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - Die Ausschlüsse müssen als nicht verwalteter (systemeigener) Code kompiliert werden, indem Sie entweder die Compileroption festlegen oder `#pragma managed(off)` verwenden.  
   
 > [!NOTE]
->  Um Funktionen in C++/CLI-Code auszuschließen, wenden Sie das Attribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` auf die Funktion an. Dasselbe gilt für C#.  
+> Um Funktionen in C++/CLI-Code auszuschließen, wenden Sie das Attribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` auf die Funktion an. Dasselbe gilt für C#.  
   
 ### <a name="including-or-excluding-additional-elements"></a>Ein- oder Ausschließen zusätzlicher Elemente  
  Die Codeabdeckungsanalyse wird nur für geladene Assemblys ausgeführt, für die eine PDB-Datei in demselben Verzeichnis verfügbar ist, in dem sich die DLL- oder EXE-Datei befindet. Daher können Sie in bestimmten Fällen den Satz der enthaltenen Assemblys erweitern, indem Sie Kopien der entsprechenden PDB-Dateien abrufen.  

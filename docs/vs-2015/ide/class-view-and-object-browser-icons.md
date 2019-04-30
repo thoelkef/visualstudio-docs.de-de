@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422852"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektbrowser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeenti
  Die folgenden Signalsymbole gelten für alle zuvor erwähnten Symbole und geben deren Barrierefreiheit an.  
   
 > [!NOTE]
->  Wenn Ihr Projekt in einer Quellcodeverwaltungs-Datenbank enthalten ist, werden möglicherweise zusätzliche Signalsymbole angezeigt, um den Quellcodestatus anzugeben, z.B. eingecheckt oder ausgecheckt.  
+> Wenn Ihr Projekt in einer Quellcodeverwaltungs-Datenbank enthalten ist, werden möglicherweise zusätzliche Signalsymbole angezeigt, um den Quellcodestatus anzugeben, z.B. eingecheckt oder ausgecheckt.  
   
 |Symbol|Beschreibung|  
 |----------|-----------------|  

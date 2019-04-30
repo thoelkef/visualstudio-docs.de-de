@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445882"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  **Aufzeichnung:** Sie müssen den Coded UI-Test-Generator verwenden, um den Webanwendungstest mit Internet Explorer aufzuzeichnen. Optional können Sie den getesteten Steuerelementen Validierungscode und benutzerdefinierten Code mit einem vordefinierten Satz von Eigenschaften hinzufügen, wie Sie dies normalerweise für Tests der programmierten UI tun. Weitere Informationen finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  Tests der programmierten UI können nicht mit den Browsern Google Chrome oder Mozilla Firefox aufgezeichnet werden.  
+> Tests der programmierten UI können nicht mit den Browsern Google Chrome oder Mozilla Firefox aufgezeichnet werden.  
   
  **Wiedergabe mit Internet Explorer:** Wird kein Browser explizit angegeben, werden Tests standardmäßig in Internet Explorer ausgeführt. Sie können den zu verwendenden Browser explizit angeben, indem Sie die **BrowserWindow.CurrentBrowser**-Eigenschaft im Testcode festlegen. Zur Verwendung von Internet Explorer sollte diese Eigenschaft auf **IE** oder **Internet Explorer** festgelegt werden.  
   
@@ -76,7 +76,7 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
 3. Heben Sie die Erweiterung hervor, und wählen Sie **Herunterladen** aus.  
   
    > [!TIP]
-   >  Sie können die Selenium-Komponenten für browserübergreifende Coded UI-Tests [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) herunterladen.  
+   > Sie können die Selenium-Komponenten für browserübergreifende Coded UI-Tests [hier](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) herunterladen.  
   
    Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

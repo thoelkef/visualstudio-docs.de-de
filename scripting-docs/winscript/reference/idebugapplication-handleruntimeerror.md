@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412440"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung über den Fehler an den Debugger-IDE.  
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  Eine Sprach-Engine ruft diese Methode im Kontext eines Threads, der einen Laufzeitfehler auslöst. Diese Methode bewirkt, dass den aktuelle Thread blockiert und sendet eine Fehlermeldung angezeigt, die an der Debugger-IDE gesendet werden. Wenn der Debugger-IDE mit der Anwendung fortgesetzt wird, gibt diese Methode, mit der Aktion an, die ausgeführt werden.  
   
 > [!NOTE]
->  In den Fehler zur Laufzeit kann die Sprach-Engine aufgerufen werden, durch den Thread aus, um solche Aufgaben wie Stapelrahmen aufzählen oder Ausdrücke auswerten.  
+> In den Fehler zur Laufzeit kann die Sprach-Engine aufgerufen werden, durch den Thread aus, um solche Aufgaben wie Stapelrahmen aufzählen oder Ausdrücke auswerten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   

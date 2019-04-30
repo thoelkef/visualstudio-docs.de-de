@@ -1,5 +1,5 @@
 ---
-title: T4-Assemblyanweisung
+title: T4-Assemblydirektive
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -7,24 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422954"
 ---
-# <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
+# <a name="t4-assembly-directive"></a>T4-Assemblydirektive
 
 In einer Textvorlage von Visual Studio zur Entwurfszeit die `assembly` Richtlinie lädt eine Assembly, damit im Vorlagencode die Typen verwenden kann. Der Effekt ist vergleichbar mit dem Hinzufügen eines Assemblyverweises in einem Visual Studio-Projekt.
 
  Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Die `assembly`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Visual Studio-Projekt.
+> Die `assembly`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Visual Studio-Projekt.
 
 ## <a name="using-the-assembly-directive"></a>Verwenden der Assemblyanweisung
- Die Syntax der Direktive lautet wie folgt:
+ Die Syntax der Anweisung lautet wie folgt:
 
 ```
 <#@ assembly name="[assembly strong name|assembly file name]" #>
@@ -53,7 +53,7 @@ In einer Textvorlage von Visual Studio zur Entwurfszeit die `assembly` Richtlini
 
 - `WindowsBase.dll`
 
-  Wenn Sie eine benutzerdefinierte Anweisung verwenden, lädt der Anweisungsprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblyanweisungen für die folgenden Assemblys schreiben:
+  Wenn Sie eine benutzerdefinierte Direktive verwenden, lädt der Direktivenprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblyanweisungen für die folgenden Assemblys schreiben:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 

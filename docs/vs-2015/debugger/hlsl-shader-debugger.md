@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410187"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL-Shaderdebugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
 2. Unterhalb des Titels der Pipelinestufe wählen Sie **Debuggen starten**. Dies wird als kleiner grüner Pfeil angezeigt.  
   
     > [!NOTE]
-    >  Dieser Einstiegspunkt in den HLSL-Debugger debuggt nur den ersten Shader-Thread für die entsprechende Stufe, d. h. für den ersten Vertex oder das erste Pixel, der bzw. das verarbeitet wird. Sie können „Pixelverlauf“ verwenden, um auf andere Threads dieser Shader-Stufen zuzugreifen.  
+    > Dieser Einstiegspunkt in den HLSL-Debugger debuggt nur den ersten Shader-Thread für die entsprechende Stufe, d. h. für den ersten Vertex oder das erste Pixel, der bzw. das verarbeitet wird. Sie können „Pixelverlauf“ verwenden, um auf andere Threads dieser Shader-Stufen zuzugreifen.  
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>So starten Sie den HLSL-Debugger im Fenster "Grafikpixelverlauf"  
   
@@ -71,7 +71,7 @@ Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollzie
     Wählen Sie rechts vom ausgewählten Shader **Debuggen starten**. Dies wird als kleiner grüner Pfeil angezeigt.  
   
    > [!NOTE]
-   >  Dieser Einstiegspunkt in den HLSL-Debugger debuggt entweder den Pixel-Shader-Thread, der dem ausgewählten Zeichnen-Befehl, Primitivum und Pixel entspricht, oder die Vertex-Shader-Threads, deren Ergebnisse durch den Zeichnen-Befehl, die Primitiva und Pixel interpoliert werden, die Sie ausgewählt haben. Für Vertex-Shader können Sie den Einstiegspunkt auf einen bestimmten Vertex festlegen, indem Sie die Details des Vertex-Shaders erweitern.  
+   > Dieser Einstiegspunkt in den HLSL-Debugger debuggt entweder den Pixel-Shader-Thread, der dem ausgewählten Zeichnen-Befehl, Primitivum und Pixel entspricht, oder die Vertex-Shader-Threads, deren Ergebnisse durch den Zeichnen-Befehl, die Primitiva und Pixel interpoliert werden, die Sie ausgewählt haben. Für Vertex-Shader können Sie den Einstiegspunkt auf einen bestimmten Vertex festlegen, indem Sie die Details des Vertex-Shaders erweitern.  
   
    Beispiele zur Verwendung der HLSL-Debugger zum Debuggen von Shader-Fehlern finden Sie in [Beispiele](../debugger/graphics-diagnostics-examples.md) oder die exemplarischen Vorgehensweisen im Abschnitt Siehe auch verknüpft.  
   

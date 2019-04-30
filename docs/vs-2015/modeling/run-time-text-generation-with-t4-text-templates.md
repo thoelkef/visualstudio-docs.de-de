@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411880"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. Geben Sie einen Namen für die Vorlagendatei an.  
   
     > [!NOTE]
-    >  Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Aus diesem Grund sollten sie Leerzeichen oder Interpunktionszeichen keine.  
+    > Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Aus diesem Grund sollten sie Leerzeichen oder Interpunktionszeichen keine.  
   
 4. Wählen Sie **Hinzufügen** aus.  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. Legen Sie die Datei **benutzerdefinierte Tools** Eigenschaft **TextTemplatingFilePreprocessor**. Wählen Sie im Projektmappen-Explorer im Kontextmenü der Datei **Eigenschaften**.  
   
     > [!NOTE]
-    >  Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass er ist **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann auftreten, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.  
+    > Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass er ist **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann auftreten, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.  
   
 3. Ändern Sie die Dateinamenerweiterung zu **TT**. Obwohl dieser Schritt optional ist, können Sie vermeiden Sie die Datei in einem falschen Editor öffnen.  
   

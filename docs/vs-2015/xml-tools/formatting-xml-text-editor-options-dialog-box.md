@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34eedf61afd79570ca1e4ba471efa9802aae7bfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417414"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatierung, XML, Texteditor, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "59664124"
 In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Editor angeben. Sie können den Zugriff auf die **Optionen** das Dialogfeld die **Tools** Menü.  
   
 > [!NOTE]
->  Diese Einstellungen sind verfügbar, wenn Sie auswählen der **Text-Editor** Ordner die **XML** Ordner, und klicken Sie dann die **Formatierung** option die **Optionen** Dialogfeld.  
+> Diese Einstellungen sind verfügbar, wenn Sie auswählen der **Text-Editor** Ordner die **XML** Ordner, und klicken Sie dann die **Formatierung** option die **Optionen** Dialogfeld.  
   
 ## <a name="attributes"></a>Attribute  
  **Manuelle Attributformatierung beibehalten**  
  Attribute werden nicht neu formatiert. Dies ist die Standardeinstellung.  
   
 > [!NOTE]
->  Wenn sich die Attribute auf mehreren Zeilen befinden, zieht der Editor jede Attributzeile ein, sodass das Einzugsmuster des übergeordneten Elements festgelegt wird.  
+> Wenn sich die Attribute auf mehreren Zeilen befinden, zieht der Editor jede Attributzeile ein, sodass das Einzugsmuster des übergeordneten Elements festgelegt wird.  
   
  **Attribute jeweils in einer eigenen Zeile ausrichten**  
  Richtet das zweite und die nachfolgenden Attribute vertikal aus, damit sie dem Einzug des ersten Attributs entsprechen. Der folgende XML-Text veranschaulicht, wie die Attribute ausgerichtet werden.  

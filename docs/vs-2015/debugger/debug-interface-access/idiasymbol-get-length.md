@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2942c69908348b13bb2a682471ca82cff850830d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9f8c757d3da3049c29f7da13b13985dc2c50b4b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423001"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_length ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn die [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) des Symbols ist `LocIsBitField`, die von dieser Methode zurückgegebene Länge in Bits ist; andernfalls ist die Länge in Bytes für alle anderen Typen.  

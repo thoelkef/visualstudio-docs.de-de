@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446435"
 ---
 # <a name="how-to-use-a-visualizer"></a>Vorgehensweise: Verwenden einer Schnellansicht
 Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnellansicht in einer für den Datentyp sinnvollen Art anzeigen. Können Schnellansichten über **DataTips**, **Überwachen** Fenster die **"Auto"** Fenster oder die **"lokal"** Fenster.  
@@ -36,7 +36,7 @@ Sie können den Inhalt einer Variable oder eines Objekts mithilfe einer Schnella
  Schnellansichten werden in Compact Framework nicht unterstützt.  
   
 > [!NOTE]
->  In **Store** apps, die nur den Standardtext, HTML, XML und JSON-Schnellansichten werden unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
+> In **Store** apps, die nur den Standardtext, HTML, XML und JSON-Schnellansichten werden unterstützt. Benutzerdefinierte (von Benutzern erstellte) Schnellansichten werden nicht unterstützt.  
   
 ### <a name="to-open-a-visualizer"></a>So öffnen Sie eine Schnellansicht  
   

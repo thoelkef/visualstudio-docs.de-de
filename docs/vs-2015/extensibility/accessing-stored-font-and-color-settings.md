@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403261"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Zugriff auf gespeicherte Schriftart- und Farbeinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebun
   Standardmäßig ist das Generieren nicht aktiviert. Zum Generieren von Ereignissen zu aktivieren, muss eine Kategorie mit geöffnet sein <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Dies bewirkt, dass die IDE aufrufen, die entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Methode, die eine VSPackage implementiert.  
   
 > [!NOTE]
->  Änderungen über die **Schriftart- und Farbeinstellungen** Eigenschaftenseite Generieren von Ereignissen, die unabhängig von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Können Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update der zwischengespeicherten Einstellungen von Schriftart und Farbe erforderlich ist, vor dem Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Klasse.  
+> Änderungen über die **Schriftart- und Farbeinstellungen** Eigenschaftenseite Generieren von Ereignissen, die unabhängig von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Können Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Update der zwischengespeicherten Einstellungen von Schriftart und Farbe erforderlich ist, vor dem Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Klasse.  
   
 ### <a name="storing-and-retrieving-information"></a>Speichern und Abrufen von Informationen  
  Rufen Sie zum Abrufen oder konfigurieren die Informationen, die ein Benutzer für ein benanntes Display-Element in einem geöffneten Kategorie ändern können, VSPackages die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> Methoden.  
@@ -69,12 +69,12 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebun
  Informationen zu Schriftart Attribute für eine bestimmte Kategorie, mithilfe abgerufen werden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> Methoden.  
   
 > [!NOTE]
->  Die `fFlags` Argument, das an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode, wenn diese Kategorie geöffnet wurde, definiert das Verhalten der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> Methoden. Diese Methoden nur Informationen ausgegeben werden Aboutdisplay Itemsthat standardmäßig wurden geändert. Allerdings wird eine Kategorie mit geöffnet die <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> zu kennzeichnen, beide aktualisiert und können unverändert Anzeigeelemente zugegriffen werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
+> Die `fFlags` Argument, das an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode, wenn diese Kategorie geöffnet wurde, definiert das Verhalten der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> Methoden. Diese Methoden nur Informationen ausgegeben werden Aboutdisplay Itemsthat standardmäßig wurden geändert. Allerdings wird eine Kategorie mit geöffnet die <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> zu kennzeichnen, beide aktualisiert und können unverändert Anzeigeelemente zugegriffen werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
   
  Nur in der Standardeinstellung geändert **Anzeigeelemente** Informationen werden in der Registrierung gespeichert. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle kann nicht verwendet werden, um alle Einstellungen für Schriftarten und Farben abgerufen werden.  
   
 > [!NOTE]
->  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> Methoden zurückgeben REGDB_E_KEYMISSING, (0x80040152L), wenn Sie diese verwenden, zum Abrufen von Informationen zu unverändert **Anzeigeelemente**.  
+> Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> Methoden zurückgeben REGDB_E_KEYMISSING, (0x80040152L), wenn Sie diese verwenden, zum Abrufen von Informationen zu unverändert **Anzeigeelemente**.  
   
  Die Einstellungen aller **Anzeigeelemente** in einer bestimmten **Kategorie** erhalten Sie, indem Sie mithilfe der Methoden der der `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` Schnittstelle.  
   

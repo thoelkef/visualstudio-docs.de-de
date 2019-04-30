@@ -10,12 +10,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fdead0bf0f1c5d2cb329d25cd37487cf93b772d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445448"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementieren der Befehlsbehandlung für geschachtelte Projekte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58959015"
 Die IDE Befehle, die durchlaufen werden kann übergeben, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstellen für geschachtelte Projekte oder übergeordnete Projekte filtern oder überschreiben Sie die Befehle können.  
   
 > [!NOTE]
->  Nur Befehle, die normalerweise behandelt, indem das übergeordnete Projekt können gefiltert werden. Befehle wie **erstellen** und **bereitstellen** erfolgt, die mit die IDE kann nicht gefiltert werden.  
+> Nur Befehle, die normalerweise behandelt, indem das übergeordnete Projekt können gefiltert werden. Befehle wie **erstellen** und **bereitstellen** erfolgt, die mit die IDE kann nicht gefiltert werden.  
   
  Die folgenden Schritte beschreiben den Prozess zum Implementieren der Befehlsbehandlung.  
   

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406742"
 ---
 # <a name="secure-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen unterliegen in .NET Framework Einschränkungen in Bezug auf die Codezugriffssicherheit, um den Zugriff zu begrenzen, den Code auf geschützte Ressourcen und Vorgänge hat. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen anwenden. Die Anwendungen können Zonen mit voller Vertrauenswürdigkeit oder teilweise vertrauenswürdige Zonen verwenden, z. B. die Internet- und Intranetzonen, um den Zugriff einzuschränken.
@@ -71,7 +71,7 @@ ms.locfileid: "58866785"
  Übergeben Sie Argumente, die über eine Abfragezeichenfolge abgerufen wurden, nie an eine Datenbank oder an die Befehlszeile, ohne die Argumente auf ihre Sicherheit zu überprüfen. Unsichere Argumente sind Argumente, die Datenbank- oder Befehlszeilen-Escapezeichen enthalten, mit denen böswillige Benutzer die Möglichkeit erhalten können, Ihre Anwendung für die Ausführung beliebiger Befehle zu manipulieren.
 
 > [!NOTE]
->  Abfragezeichenfolgenargumente sind die einzige Möglichkeit, Argumente beim Starten an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung zu übergeben. Über die Befehlszeile können Sie keine Argumente an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung übergeben.
+> Abfragezeichenfolgenargumente sind die einzige Möglichkeit, Argumente beim Starten an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung zu übergeben. Über die Befehlszeile können Sie keine Argumente an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung übergeben.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Bereitstellen von verborgenen Assemblys
  Visual Studio umfasst die kostenlose [PreEmptive Protection – Dotfuscator Community](../ide/dotfuscator/index.md), die Sie verwenden können, um Ihre ClickOnce-Anwendungen mithilfe von Codeobfuskation und aktiver Schutzmaßnahmen zu schützen.  Weitere Informationen finden Sie [im Abschnitt „ClickOnce“ des Dotfuscator Community Edition User Guide](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

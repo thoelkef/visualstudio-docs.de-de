@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418455"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs von Visual Studio-Symbolleiste
 Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, und der Gruppen enthalten. Diese Werte werden in definiert *VSCT* Dateien, die als Teil von Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Viele der in Symbolleisten in Visual Studio zur Verfügung sind nicht definiert, von Visual Studio und ihrer GUID und ID-Werte sind nicht öffentlich. Dieses Thema enthält nur die Symbolleisten, die in Visual Studio SDK definierten *VSCT* Dateien.
+> Viele der in Symbolleisten in Visual Studio zur Verfügung sind nicht definiert, von Visual Studio und ihrer GUID und ID-Werte sind nicht öffentlich. Dieses Thema enthält nur die Symbolleisten, die in Visual Studio SDK definierten *VSCT* Dateien.
 
  Weitere Informationen zum Arbeiten mit IDE-Objekten, die definiert sind *VSCT* finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
 
@@ -41,9 +41,9 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 |Symbolleiste|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Erstellen|IDM_VS_TOOL_BUILD|
-|Text-editor|IDM_VS_TOOL_TEXTEDITOR|
-|Debuggen|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|
+|Build|IDM_VS_TOOL_BUILD|
+|Text-Editor|IDM_VS_TOOL_TEXTEDITOR|
+|Debug|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|
 |Debugspeicherort|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|
 
 ### <a name="special-toolbars"></a>Spezielle Symbolleisten
@@ -61,7 +61,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 
 ### <a name="standard-toolbar-groups"></a>Standardsymbolleiste Gruppen
 
-|name|ID|
+|Name|ID|
 |----------|--------|
 |Speichern/Öffnen|IDG_VS_TOOLSB_SAVEOPEN|
 |Ausschneiden/Kopieren|IDG_VS_TOOLSB_CUTCOPY|
@@ -75,14 +75,14 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 
 ### <a name="build-toolbar-groups"></a>Symbolleistengruppen erstellen
 
-|name|ID|
+|Name|ID|
 |----------|--------|
 |Build-Leiste|IDG_VS_BUILDBAR|
 |Abbrechen|IDG_VS_BUILD_CANCEL|
 
 ### <a name="text-editor-toolbar-groups"></a>Text-Editor-Symbolleistengruppen
 
-|name|ID|
+|Name|ID|
 |----------|--------|
 |Abschluss|IDM_VS_TOOL_TEXTEDITOR|
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|
@@ -91,7 +91,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 
 ### <a name="debug-toolbar-groups"></a>Debug-Symbolleistengruppen
 
-|name|ID|
+|Name|ID|
 |----------|--------|
 |Ausführung|IDM_DEBUG_TOOLBAR|
 |Schrittweises Ausführen|IDG_DEBUG_TOOLBAR_STEPPING|
@@ -100,7 +100,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 
 ### <a name="debug-location-toolbar-groups"></a>Debuggen von Gruppen für Standort-Symbolleiste
 
-|name|ID|
+|Name|ID|
 |----------|--------|
 |Debugspeicherort|IDG_DEBUG_CONTEXT_TOOLBAR|
 
@@ -108,7 +108,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
  Symbolleisten können angezeigt werden direkt in der IDE oder in Toolfenstern wie z. B. **Projektmappen-Explorer**. Da Toolfenster in nicht definiert sind *VSCT* sind Dateien, Symbolleisten des Toolfensters nicht übergeordneten Elementen definiert haben. Stattdessen werden diese im Code platziert. Die folgende Tabelle zeigt die Symbolleisten, die Toolfenster in der IDE angezeigt werden und die darin enthaltenen Befehlsgruppen.
 
 > [!NOTE]
->  Verwenden Sie die GUID, Symbolleisten und Gruppen `guidSHLMainMenu`, sofern nicht anders angegeben, mit der GUID: ID-Syntax. Eine GUID für eine Symbolleiste angegeben ist, gilt er auch den Gruppen, die von dieser Symbolleiste abgeleitet.
+> Verwenden Sie die GUID, Symbolleisten und Gruppen `guidSHLMainMenu`, sofern nicht anders angegeben, mit der GUID: ID-Syntax. Eine GUID für eine Symbolleiste angegeben ist, gilt er auch den Gruppen, die von dieser Symbolleiste abgeleitet.
 
 |Toolfenster|Symbolleiste|Gruppen|
 |-----------------|-------------|------------|
@@ -130,7 +130,7 @@ Dieses Thema listet die GUID und ID-Werte, der in Symbolleisten, die in der inte
 |Fehlerliste|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|
 |Aufrufbrowser|IDM_VS_TOOL_CALLBROWSER1..16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
 |Haltepunkte|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
-|Disassembly|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
+|Disassemblierung|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
 |Arbeitsspeicher von 1 bis 4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1..4|
 |Prozesse|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 

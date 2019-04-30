@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423277"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Codezugriffssicherheit für ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 - Wenn eine Anwendung "Voll vertrauenswürdig"-Berechtigungen erfordert, wird ein Endbenutzer möglicherweise aufgefordert, Berechtigungen für die Anwendung zu gewähren. Dies bedeutet, dass die Anwendung keine wirkliche ClickOnce-Bedienung bereitstellt, und die Eingabeaufforderung kann für weniger erfahrene Benutzer verwirrend sein.  
   
   > [!NOTE]
-  >  Wird eine Anwendung von Wechselmedien wie z. B. einer CD-ROM installiert, wird der Benutzer nicht zu einer Eingabe aufgefordert. Darüber hinaus kann ein Netzwerkadministrator Netzwerkrichtlinien so konfigurieren, dass Benutzer nicht zu einer Eingabe aufgefordert werden, wenn sie eine Anwendung aus einer vertrauenswürdigen Quelle installieren. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Wird eine Anwendung von Wechselmedien wie z. B. einer CD-ROM installiert, wird der Benutzer nicht zu einer Eingabe aufgefordert. Darüber hinaus kann ein Netzwerkadministrator Netzwerkrichtlinien so konfigurieren, dass Benutzer nicht zu einer Eingabe aufgefordert werden, wenn sie eine Anwendung aus einer vertrauenswürdigen Quelle installieren. Weitere Informationen finden Sie unter [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   Um die Berechtigungen für eine ClickOnce-Anwendung einzuschränken, können Sie die Codezugriffsberechtigungen für Ihre Anwendung so ändern, dass sie die Zone anfordert, die am besten für die Berechtigungen geeignet ist, die Ihre Anwendung erfordert. In den meisten Fällen können Sie die Zone auswählen, aus der die Anwendung bereitgestellt wird. Ist Ihre Anwendung beispielsweise eine Unternehmensanwendung, können Sie die Zone **Lokales Intranet** verwenden. Ist Ihre Anwendung eine Internetanwendung, können Sie die Zone **Internet** verwenden.  
   

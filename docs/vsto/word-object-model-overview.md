@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009356"
 ---
 # <a name="word-object-model-overview"></a>Übersicht über das Word-Objektmodell
   Wenn Sie Word-Lösungen in Visual Studio entwickeln, interagieren Sie mit dem Word-Objektmodell. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Word bereitgestellt und im Namespace <xref:Microsoft.Office.Interop.Word> definiert werden.
