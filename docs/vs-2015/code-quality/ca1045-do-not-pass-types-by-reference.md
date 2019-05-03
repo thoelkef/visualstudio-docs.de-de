@@ -81,7 +81,7 @@ ms.locfileid: "63431541"
 **12345**
 **12345**
 **ändern – als Verweis übergebenen Zeiger:** 
- ** 12345**
+**12345**
 **12345 ABCDE**
 **Übergabe nach Wert zurückgibt:**
 **12345 ABCDE**
