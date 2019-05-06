@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58959847"
@@ -77,8 +77,8 @@ ms.locfileid: "58959847"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Auf der Illegales vor Glen erfüllen 2/22/2003 12:00:00 Uhr. ** 
- **Von Test: sonnigen Wiese**
+ **Auf der Illegales vor Glen erfüllen 2/22/2003 12:00:00 Uhr.**
+**Von Test: sonnigen Wiese**
 **erfüllen, auf die sonnigen Wiese 2/22/2003 12:00:00 Uhr.**
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
