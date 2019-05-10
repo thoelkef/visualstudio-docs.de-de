@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: af67f4589682cc3c0ecf42653374521c011115c2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869241"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457528"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Ruft einen benutzerdefinierten Debug-Engine (DE)-Schnittstelle ab.
@@ -36,8 +39,8 @@ int GetEngineInterface( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppUnk`
+## <a name="parameters"></a>Parameter
+ `ppUnk`\
 
  [out] Gibt eine `IUnknown` Objekt darstellt, die Debug-Engine (DE), und was für eine beliebige andere gültige Schnittstelle mit einer bereitgestellten Kompatibilitätsrichtlinie verknüpften abgefragt werden kann (z. B. [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oder [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 

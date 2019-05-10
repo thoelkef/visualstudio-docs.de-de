@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc83bc78aace73cedf186b5ec925dce0a509b91d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5ae70462079589ba2b63ee50cf0b7a0570e056a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565471"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457855"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Diese verknüpfte Methode ist die Sicherungsmethode für die folgenden standardmäßigen Methoden zum Einfügen, Aktualisieren oder Löschen.
 
@@ -33,5 +33,4 @@ Die ausgewählte `DataContext` Methode dient als eines der derzeit die `Insert`,
 
 ## <a name="see-also"></a>Siehe auch
 
-- [O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

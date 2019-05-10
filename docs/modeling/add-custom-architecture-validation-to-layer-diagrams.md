@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 743337777677b61661da53446f9717cad14ff9ed
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960449"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476669"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
 
@@ -32,7 +32,7 @@ Sie können die Ebenenvalidierungserweiterung in eine Visual Studio-Integrations
 
 ## <a name="requirements"></a>Anforderungen
 
-Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).
+Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Definieren eines Ebenenvalidierungssteuerelements in einer neuen VSIX
 

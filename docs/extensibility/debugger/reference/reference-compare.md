@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 947063690840dfb3c49e2c41e6178cbc67dc714b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913464"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457898"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Gibt den Typ von Vergleich für Verweise.
@@ -41,12 +44,15 @@ public enum enum_REFERENCE_COMPARE { 
 };
 ```
 
-## <a name="members"></a>Member
- REF_COMPARE_EQUAL gibt einen-gleich-Vergleich an.
+## <a name="fields"></a>Felder
+ `REF_COMPARE_EQUAL`\
+ Gibt einen-gleich-Vergleich an.
 
- REF_COMPARE_LESS_THAN gibt eine kleiner-als-Vergleich.
+ `REF_COMPARE_LESS_THAN`\
+ Gibt an, eine kleiner-als-Vergleich.
 
- REF_COMPARE_GREATER_THAN gibt ein größer-als-Vergleich.
+ `REF_COMPARE_GREATER_THAN`\
+ Gibt an, ein größer-als-Vergleich.
 
 ## <a name="remarks"></a>Hinweise
  Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugreference2-compare.md) Methode.

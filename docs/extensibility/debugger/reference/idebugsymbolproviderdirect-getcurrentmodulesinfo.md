@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915698"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457441"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Ruft Informationen über die Module in der Gruppe "Symbol" ab.
@@ -43,24 +46,24 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pCount`
+## <a name="parameters"></a>Parameter
+ `pCount`\
 
  [in] Anzahl der Module in der `ppGuids` Array.
 
- `ppGuids`
+ `ppGuids`\
 
  [in] Ein Array, das die eindeutigen Bezeichner für die Module enthält.
 
- `pADIds`
+ `pADIds`\
 
  [in] Der Bezeichner für Anwendungsdomänen.
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in] Aktuellen Status der Gruppe "Symbol".
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out] Gibt ein Objekt, das die Module in der Gruppe "Symbol" enthält.
 

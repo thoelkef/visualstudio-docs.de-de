@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002709"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476640"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
+# <a name="create-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 
 Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Eingabe und erzeugt eine Textdatei, die als Ausgabe. Die *Textvorlagen-Transformationsmodul* Steuerelemente, die der Prozess, und die Engine interagiert mit einer Textvorlagen-Transformationshost und mindestens eine Textvorlage *anweisungsprozessoren* zum Abschließen der der Prozess. Weitere Informationen finden Sie unter [das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).
 

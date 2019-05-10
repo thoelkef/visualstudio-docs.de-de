@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869775"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458966"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Teilt dem Verleger für die Anwendung mit, dass ein Debugger vorhanden ist und ausgeführt wird.
@@ -36,8 +39,8 @@ int SetDebuggerPresent(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `fDebuggerPresent`
+## <a name="parameters"></a>Parameter
+ `fDebuggerPresent`\
 
  [in] Ungleich 0 (`TRUE`), wenn ein Debugger vorhanden ist, NULL (`FALSE`) ist dies nicht.
 

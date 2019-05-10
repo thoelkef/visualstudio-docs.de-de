@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f78753afdf8d0ded233b2451db42dee73c41de0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51c7ae179cc7ba1a62ee1937f7b8f113a3263b8a
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861875"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878251"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 
@@ -70,14 +70,14 @@ Regel-basierte Benutzeroberfläche-Kontext kann auf verschiedene Weise verwendet
 
    ```xml
    <VisibilityConstraints>
-       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="UIContextGuid"/>
    </VisibilityConstraints>
    ```
 
 4. Fügen Sie im Abschnitt "Symbole" die Definition der UIContext hinzu:
 
    ```xml
-   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
+   <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
     Jetzt die Kontextmenübefehle  *\*config* Dateien werden sichtbare nur, wenn das ausgewählte Element im Projektmappen-Explorer ist ein *config* -Datei und das Paket werden nicht werden geladen, bis eine solche Befehle ausgewählt ist.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e615abb8bf4a535f88dd1df483540ac84e5ca5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915754"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224013"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Diese Methode ordnet eine Dokumentposition in ein Array von Debug-Adressen.
@@ -42,20 +45,20 @@ int GetAddressesFromPosition( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pDocPos`
+## <a name="parameters"></a>Parameter
+ `pDocPos`\
 
  [in] Die Dokumentposition.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] True gibt an, beschränkt die Debug-Adressen zu einer einzigen Anweisung.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Gibt einen Enumerator für die Debug-Startadressen dieser Anweisung oder der Zeile zugeordnet.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Gibt eine [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) Enumerator für die abschließende Debug-Adressen, die dieser Anweisung oder der Zeile zugeordnet.
 

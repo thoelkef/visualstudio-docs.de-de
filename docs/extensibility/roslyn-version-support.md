@@ -1,6 +1,6 @@
 ---
 title: Unterstützten Roslyn-Paket-Version-Zuordnungen
-ms.date: 04/04/2019
+ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9fa8837a45939da3dcda16864b3cad697e659da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b2dd97b078923cfa3358d56e6316bfff654c4dd
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805704"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878242"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET Compiler Platform-Version-Paketverweis
 
@@ -22,23 +22,26 @@ Die folgende Tabelle zeigt die [.NET Compiler Platform (Roslyn) Paket](https://w
 
 Beispielsweise sollten um sicherzustellen, dass Ihre benutzerdefinierte Analyzer in allen Versionen von Visual Studio 2017 wird Version 2.0 von Microsoft.Net.Compilers abzielen.
 
-| Roslyn-Paketversion | Unterstützte Visual Studio-version |
+| Roslyn-Paketversion | Mindestens unterstützte Version von Visual Studio |
 | - | - |
-| 3.x | Visual Studio 2019 oder höher |
-| 2.10.0 | Visual Studio 2017 Version 15.9 oder höher |
-| 2.9.0 | Visual Studio 2017 Version 15,8 oder höher |
-| 2.8.2 | Visual Studio 2017 Version 15.7 oder höher |
-| 2.7.0 | Visual Studio 2017 Version 15.6 oder höher |
-| 2.6.1 | Visual Studio 2017 Version 15.5 oder höher |
-| 2.4.0 | Visual Studio 2017 Version 15.4 oder höher |
-| 2.3.2 | Visual Studio 2017 Version 15.3 oder höher |
-| 2.2.0 | Visual Studio 2017 Version 15.2 oder höher |
-| 2.1.0 | Visual Studio 2017 Version 15.1 oder höher |
-| 2.0.0 | Visual Studio 2017 RTM oder höher |
-| 1.3.2 | Visual Studio 2015 Update 3 oder höher |
-| 1.2.2 | Visual Studio 2015 Update 2 oder höher |
-| 1.1.1 | Visual Studio 2015 Update 1 oder höher |
-| 1.0.1 | Visual Studio 2015 RTM oder höher |
+| 3.x | Visual Studio 2019 |
+| 2.10.0 | Visual Studio 2017, Version 15.9 |
+| 2.9.0 | Visual Studio 2017 Version 15.8 |
+| 2.8.2 | Visual Studio 2017-Version 15.7 |
+| 2.7.0 | Visual Studio 2017 Version 15.6 |
+| 2.6.1 | Visual Studio 2017 Version 15.5 |
+| 2.4.0 | Visual Studio 2017 Version 15.4 |
+| 2.3.2 | Visual Studio 2017 Version 15.3 |
+| 2.2.0 | Visual Studio 2017 Version 15.2 |
+| 2.1.0 | Visual Studio 2017 Version 15.1 |
+| 2.0.0 | Visual Studio 2017 RTM |
+| 1.3.2 | Visual Studio 2015 Update 3 |
+| 1.2.2 | Visual Studio 2015 Update 2 |
+| 1.1.1 | Visual Studio 2015 Update 1 |
+| 1.0.1 | Visual Studio 2015 RTM |
+
+> [!TIP]
+> Für Roslyn-Pakete, in dem die mindestens erforderliche Version für Visual Studio eine Visual Studio 2017-Version ist, werden alle Versionen von Visual Studio-2019 ebenfalls unterstützt, da sie später stammen.
 
 ## <a name="see-also"></a>Siehe auch
 

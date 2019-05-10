@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913500"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457955"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 Angegeben, welche Art von Informationen für einen Prozess abrufen.
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Member
- PIF_FILE_NAME initialisieren und Verwenden der `bstrFileName` Feld der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur.
+## <a name="fields"></a>Felder
+ `PIF_FILE_NAME`\
+ Initialisieren und Verwenden der `bstrFileName` Feld der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur.
 
- PIF_BASE_NAME initialisieren und Verwenden der `bstrBaseName` Feld der `PROCESS_INFO` Struktur.
+ `PIF_BASE_NAME`\
+ Initialisieren und Verwenden der `bstrBaseName` Feld der `PROCESS_INFO` Struktur.
 
- PIF_TITLE initialisieren und Verwenden der `bstrTitle` Feld der `PROCESS_INFO` Struktur.
+ `PIF_TITLE`\
+ Initialisieren und Verwenden der `bstrTitle` Feld der `PROCESS_INFO` Struktur.
 
- PIF_PROCESS_ID initialisieren und Verwenden der `ProcessId` Feld der `PROCESS_INFO` Struktur.
+ `PIF_PROCESS_ID`\
+ Initialisieren und Verwenden der `ProcessId` Feld der `PROCESS_INFO` Struktur.
 
- PIF_SESSION_ID initialisieren und Verwenden der `dwSessionId` Feld der `PROCESS_INFO` Struktur.
+ `PIF_SESSION_ID`\
+ Initialisieren und Verwenden der `dwSessionId` Feld der `PROCESS_INFO` Struktur.
 
- PIF_ATTACHED_SESSION_NAME initialisieren und Verwenden der `bstrAttachedSessionName` Feld der `PROCESS_INFO` Struktur.
+ `PIF_ATTACHED_SESSION_NAME`\
+ Initialisieren und Verwenden der `bstrAttachedSessionName` Feld der `PROCESS_INFO` Struktur.
 
- PIF_CREATION_TIME initialisieren und Verwenden der `CreationTime` Feld der `PROCESS_INFO` Struktur.
+ `PIF_CREATION_TIME`\
+ Initialisieren und Verwenden der `CreationTime` Feld der `PROCESS_INFO` Struktur.
 
- PIF_FLAGS initialisieren und Verwenden der `Flags` Feld der `PROCESS_INFO` Struktur.
+ `PIF_FLAGS`\
+ Initialisieren und Verwenden der `Flags` Feld der `PROCESS_INFO` Struktur.
 
- PIF_ALL füllt alle Felder aus.
+ `PIF_ALL`\
+ Füllt alle Felder ein.
 
 ## <a name="remarks"></a>Hinweise
  Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) Methode an, welche Felder der der [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) sind, dass die Struktur initialisiert werden.

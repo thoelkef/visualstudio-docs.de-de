@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865783"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458053"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Gibt an, welche Art von Informationen für einen bestimmten Computer abgerufen.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Member
- MCIF_NAME initialisieren und Verwenden der `bstrName` Feld in der Struktur.
+## <a name="fields"></a>Felder
+ `MCIF_NAME`\
+ Initialisieren und Verwenden der `bstrName` Feld in der Struktur.
 
- MCIF_FLAGS initialisieren und Verwenden der `Flags` Feld in der Struktur.
+ `MCIF_FLAGS`\
+ Initialisieren und Verwenden der `Flags` Feld in der Struktur.
 
- MIF_ALL initialisieren/verwenden alle Felder in der Struktur.
+ `MIF_ALL`\
+ Verwenden Sie Initialize/alle Felder in der Struktur.
 
 ## <a name="remarks"></a>Hinweise
  Diese Werte werden übergeben, um die [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) Methode an, dass Mitglieder der der [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) sind, dass die Struktur initialisiert werden.

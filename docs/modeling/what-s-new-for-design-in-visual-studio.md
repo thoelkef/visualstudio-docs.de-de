@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386923"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476537"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Neuerungen beim Entwurf in Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Liveüberprüfung von Abhängigkeiten
 
-Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Bestandteil der verwalten Ihre technischen Schulden. Live-Überprüfung von Abhängigkeiten ist jetzt enthalten, genaue Informationen zu Problemen bereitgestellt und vollständig von der neuen Funktionen in der Fehlerliste enthalten und dem Editor profitieren.
+Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Bestandteil der verwalten Ihre technischen Schulden. Visual Studio bietet live Überprüfung von Abhängigkeiten, einschließlich präzise Informationen über Probleme, z. B. wo sich diese befinden. Liveüberprüfung von Abhängigkeiten Überprüfung akzeptiert vollständige Vorteile der neuen Funktionen in der Fehlerliste enthalten und den Editor.
 
 ![Live-abhängigkeitsüberprüfung in Aktion](media/dep-validation-whatsnew-01.png)
 
-Die Autoren-Benutzeroberfläche hat sich geändert, um die Auffindbarkeit und besser zugänglich sind, ändern die Terminologie von "Ebenendiagramm", "Abhängigkeitsdiagramm" abhängigkeitsüberprüfung zu machen.
+Die Autoren-Benutzeroberfläche hat sich geändert, um abhängigkeitsüberprüfung leichter auffindbar und zugänglicher zu machen. Die Terminologie wurde von "Ebenendiagramm" in "Abhängigkeitsdiagramm" geändert.
 
 Die **Architektur** enthält einen Befehl aus, um direkt zu einem Abhängigkeitsdiagramm erstellen:
 
 ![Liveüberprüfung von Abhängigkeiten-Element, auf das Menü "Architektur"](media/dep-validation-whatsnew-02.png)
 
-... und den Eigenschaftennamen in ein Abhängigkeitsdiagramm und deren Beschreibungen, eine Ebene wurden geändert, um aussagekräftigere:
+Layer-Eigenschaftennamen und Beschreibungen wurden geändert, um aussagekräftigere:
 
 ![Eigenschaftennamen aktualisiert liveüberprüfung von Abhängigkeiten](media/dep-validation-whatsnew-03.png)
 
-Sie sehen jetzt die Auswirkungen der Änderungen sofort in die Analyseergebnisse, nach dem aktuellen Code in der Lösung jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht mehr auf den Abschluss des Befehls "Abhängigkeiten überprüfen" zu warten.
+Sie sehen sofort die Auswirkungen Ihrer Änderungen in den Ergebnissen der Analyse für den aktuellen Code in der Lösung jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht auf den Abschluss warten die **Abhängigkeiten überprüfen** Befehl.
 
 Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>UML-Designern wurden entfernt.
 
-Die UML-Designern wurden von der Visual Studio Enterprise-Version entfernt.
+Die UML-Designer wurden in Visual Studio entfernt.
 
 * UML-Diagramme werden als XML-Dateien jetzt angezeigt.
 * UML-Modell-Explorer ist nicht mehr vorhanden.
@@ -57,7 +57,7 @@ Die UML-Designern wurden von der Visual Studio Enterprise-Version entfernt.
 * Back Verknüpfen von DSL oder einer Ebene wird nicht mehr unterstützt.
 * UML-Erweiterungen in das Modellierungs-SDK wird nicht mehr unterstützt.
 
-Unterstützung für die Architektur von .NET und C++-Code zu visualisieren über verfügbar ist jedoch [von code Maps](map-dependencies-across-your-solutions.md), und die erheblichen Verbesserungen an der abhängigkeitsüberprüfung, die oben beschriebenen.
+Unterstützung für die visuelle Darstellung der Architektur von .NET und C++ Code steht über [von code Maps](map-dependencies-across-your-solutions.md).
 
 Wenn Sie eine erhebliche UML-Designern verwenden, können Sie weiterhin Visual Studio 2015 oder früher verwenden, während Sie möchten eine alternative Tool für Ihre Anforderungen UML.
 

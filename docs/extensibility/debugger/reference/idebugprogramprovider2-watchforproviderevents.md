@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869801"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458981"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Ermöglicht dem Prozess portereignisse benachrichtigt werden sollen.
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `Flags`
+## <a name="parameters"></a>Parameter
+ `Flags`\
 
  [in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|
 |`PFLAG_REASON_WATCH`|Aufrufer Ereignisse zu überwachen. Wenn dieses Flag nicht festgelegt ist. Klicken Sie dann das Rückrufereignis entfernt, und der Aufrufer empfängt keine Benachrichtigungen.|
 
- `pPort`
+ `pPort`\
 
  [in] Der Port der aufrufende Prozess ausgeführt wird.
 
- `processId`
+ `processId`\
 
  [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Ein Array von GUIDs von Debug-Engines, die dem Prozess zugeordnet.
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in] GUID der Debug-Engine, die diesen Prozess (sofern vorhanden) gestartet.
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in] Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) -Objekt, das die ereignisbenachrichtigungen empfängt.
 

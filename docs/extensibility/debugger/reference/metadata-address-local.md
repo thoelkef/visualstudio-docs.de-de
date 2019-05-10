@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac19a3e59e70d0a1fb03b78e64036bd2ac23219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10e94460dfd65294536fcb116099ba10c357d845
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865835"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461122"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -41,19 +44,19 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="terms"></a>Begriffe
+## <a name="members"></a>Member
 
-`tokMethod`
+`tokMethod`\
 
 Die ID der Methode oder der Funktion ist die lokale Variable Teil.
 
 [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.
 
-`pLocal`
+`pLocal`\
 
 Das Token, dessen Adresse dieser Struktur darstellt.
 
-`dwIndex`
+`dwIndex`\
 
 Der Index dieser lokalen Variablen in der Methode oder Funktion oder einen anderen Wert (sprachspezifischen) kann sein.
 

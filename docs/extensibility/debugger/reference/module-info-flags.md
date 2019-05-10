@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9f08422ae106e7d97341d3909ed5470a83d815e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913873"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460939"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Gibt den Status von Symbolen für ein Modul.
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Member
- MIF_SYMBOLS_LOADED an mindestens einen Satz von Symbolen, die vom Modul geladen wurde (andernfalls keine Symbole geladen wurden).
+## <a name="fields"></a>Felder
+ `MIF_SYMBOLS_LOADED`\
+ Mindestens ein Satz von Symbolen, die vom Modul geladen wurde (andernfalls keine Symbole geladen wurden).
 
 ## <a name="remarks"></a>Hinweise
  Dieser Wert wird zurückgegeben, durch die [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) Methode.

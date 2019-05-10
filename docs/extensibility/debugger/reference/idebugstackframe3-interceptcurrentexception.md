@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c38d8c1c2f06701d1e0a34560b674aa62292a803
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412667"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457414"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Aufgerufen vom Debugger auf dem aktuellen Stapelrahmen an, wenn die aktuelle Ausnahme abzufangen.
@@ -38,12 +41,12 @@ int InterceptCurrentException(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwFlags`
+## <a name="parameters"></a>Parameter
+ `dwFlags`\
 
  [in] Gibt die verschiedenen Aktionen an. Derzeit nur die [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) Wert `IEA_INTERCEPT` wird unterstützt und muss angegeben werden.
 
- `pqwCookie`
+ `pqwCookie`\
 
  [out] Eindeutiger Wert identifiziert eine bestimmte Ausnahme.
 

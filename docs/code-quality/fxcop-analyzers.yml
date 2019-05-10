@@ -1,10 +1,4 @@
 ﻿### YamlMime:YamlDocument
-ms.openlocfilehash: 9ead89ed9cf91c10c66ddde33c5268d6b8e44254
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816320"
 documentType: LandingData
 title: Migrieren von FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools
 metadata:
@@ -18,88 +12,88 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: Erfahren Sie, wie Sie Code zum ersten Mal analysieren oder eine Migration von FxCop durchführen, um verwalteten Code mithilfe von nicht statischen Analysetools zu analysieren.
+  description: 'Erfahren Sie, wie Sie Code zum ersten Mal analysieren oder eine Migration von FxCop durchführen, um verwalteten Code mithilfe von nicht statischen Analysetools zu analysieren.'
   aside:
     image:
       alt: Common Management Tasks-logo
       height: 133
       width: 48
-      src: https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg
-    title: 
+      src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
+    title: null
 sections:
-- title: Häufig gestellte Fragen
-  items:
-  - html: Hier erhalten Sie Antworten auf einige <a href="fxcop-analyzers-faq.md">häufig gestellte Fragen</a> zu den Unterschieden zwischen FxCop und den .NET Compiler Platform-Analysetools.
-- title: Wenn Sie mit der Codeanalyse noch nicht vertraut sind ...
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - title: Häufig gestellte Fragen
     items:
-    - href: roslyn-analyzers-overview.md
+      - html: Hier erhalten Sie Antworten auf einige <a href="fxcop-analyzers-faq.md">häufig gestellte Fragen</a> zu den Unterschieden zwischen FxCop und den .NET Compiler Platform-Analysetools.
+  - title: Wenn Sie mit der Codeanalyse noch nicht vertraut sind ...
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: roslyn-analyzers-overview.md
             html: '<p>Grundlegendes zu .NET-Analysetools</p>'
-      html: <p>Grundlegendes zu .NET-Analysetools</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: Übersicht über die Analysetools
-    - href: install-roslyn-analyzers.md
-      html: <p>Erfahren Sie, wie Sie Analysetools als NuGet-Paket oder als Visual Studio-Erweiterung installieren.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Installieren der Analysetools
-    - href: use-roslyn-analyzers.md
-      html: <p>Erfahren Sie, wie Sie die Analysetools verwenden und Verstöße gegen C# - oder Visual Basic-Coderichtlinien unterdrücken.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      title: Schweregrad für Regelsatz festlegen und Unterdrücken von Fehlern
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>Erfahren Sie, wie Sie die Analysetools über die Befehlszeile verwenden.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: Die Verwendung der Befehlszeile
-- title: Wenn Sie FxCop-Benutzer sind...
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+            html: <p>Grundlegendes zu .NET-Analysetools</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: Übersicht über die Analysetools
+          - href: install-roslyn-analyzers.md
+            html: '<p>Erfahren Sie, wie Sie Analysetools als NuGet-Paket oder als Visual Studio-Erweiterung installieren.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Installieren der Analysetools
+          - href: use-roslyn-analyzers.md
+            html: '<p>Erfahren Sie, wie Sie die Analysetools verwenden und Verstöße gegen C# - oder Visual Basic-Coderichtlinien unterdrücken.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
+            title: Schweregrad für Regelsatz festlegen und Unterdrücken von Fehlern
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: '<p>Erfahren Sie, wie Sie die Analysetools über die Befehlszeile verwenden.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: Die Verwendung der Befehlszeile
+  - title: Wenn Sie FxCop-Benutzer sind...
     items:
-    - href: roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
             html: '<p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen</p>'
-      html: <p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: Was ist anders?
-    - href: install-fxcop-analyzers.md
-      html: <p>Erfahren Sie, wie Sie das Paket des FxCop-Analysetools installieren.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Installieren von FxCop-Analysetools
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>Wenn Sie die Codeanalyse in der Regel über die Befehlszeile ausführen, erfahren Sie, wie sie die Analysetools über die Befehlszeile verwenden.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: Die Verwendung der Befehlszeile
-    - href: analyzer-rule-sets.md
-      html: <p>Informationen zu Regelsätzen für das Analyzer-Paket.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: Regelsätze
-- title: Verwandte Artikel
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+            html: <p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: Was ist anders?
+          - href: install-fxcop-analyzers.md
+            html: '<p>Erfahren Sie, wie Sie das Paket des FxCop-Analysetools installieren.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Installieren von FxCop-Analysetools
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: '<p>Wenn Sie die Codeanalyse in der Regel über die Befehlszeile ausführen, erfahren Sie, wie sie die Analysetools über die Befehlszeile verwenden.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: Die Verwendung der Befehlszeile
+          - href: analyzer-rule-sets.md
+            html: <p>Informationen zu Regelsätzen für das Analyzer-Paket.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: Regelsätze
+  - title: Verwandte Artikel
     items:
-    - href: code-analysis-for-c-cpp-overview.md
-      html: <p>Erfahren Sie, wie Sie die Codeanalyse für nativen C++-Code ausführen. Analyse von verwaltetem C++-Code wird nicht mehr unterstützt.</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-      title: C++-Codeanalyse
-    - href: code-metrics-values.md
-      html: <p>Erfahren Sie, wie Sie Codemetriken erhalten. Die Benutzererfahrung für Codemetriken bleibt unverändert.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_data-collection.svg
-      title: Codemetrik
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: code-analysis-for-c-cpp-overview.md
+            html: '<p>Erfahren Sie, wie Sie die Codeanalyse für nativen C++-Code ausführen. Analyse von verwaltetem C++-Code wird nicht mehr unterstützt.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
+            title: C++-Codeanalyse
+          - href: code-metrics-values.md
+            html: '<p>Erfahren Sie, wie Sie Codemetriken erhalten. Die Benutzererfahrung für Codemetriken bleibt unverändert.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
+            title: Codemetrik

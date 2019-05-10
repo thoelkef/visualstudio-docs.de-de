@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865598"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460988"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Diese Struktur stellt einen Parameter einer Methode oder Funktion dar.
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>Begriffe
- TokMethod die ID der Methode der Parameter gehört.
+## <a name="members"></a>Member
+ `tokMethod`\
+ Die ID der Methode ist der Parameter Teil.
 
- TokParam die ID des Parameters.
+ `tokParam`\
+ Die ID des Parameters.
 
- dwIndex der Index des Parameters in einer Liste von Parametern ab.
+ `dwIndex`\
+ Der Index des Parameters in einer Liste von Parametern.
 
 ## <a name="remarks"></a>Hinweise
  Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_PARAM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).

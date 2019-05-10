@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916717"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459007"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Ruft eine Liste von gerade ausgeführten Programmen von einem angegebenen Prozess.
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `Flags`
+## <a name="parameters"></a>Parameter
+ `Flags`\
 
  [in] Eine Kombination von Flags aus der [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) Enumeration. Die folgenden Flags sind typisch für diesen Aufruf:
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Aufrufer wurde angefügt, aber nicht vom Debugger gestartet.|
 |`PFLAG_GET_PROGRAM_NODES`|Aufrufer werden eine Liste der programmknoten gefragt, zurückgegeben werden.|
 
- `pPort`
+ `pPort`\
 
  [in] Der Port der aufrufende Prozess ausgeführt wird.
 
- `processId`
+ `processId`\
 
  [in] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur mit der betreffenden die ID des Prozesses, der das Programm enthält.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Ein Array von GUIDs für die Debug-Engines, die diesen Prozess zu debuggen (diese werden verwendet, Filtern die Programme, die tatsächlich zurückgegeben werden, basierend auf was die angegebenen Module unterstützen; Wenn keine Module angegeben werden, und klicken Sie dann alle Programme zurückgegeben werden) zugewiesen werden soll.
 
- `pProcess`
+ `pProcess`\
 
  [out] Ein [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) -Struktur, die mit den geforderten Informationen gefüllt wird.
 

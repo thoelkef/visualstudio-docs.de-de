@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824006"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476602"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Reagieren auf und Propagieren von Änderungen
+# <a name="respond-to-and-propagate-changes"></a>Reagieren auf und Weitergeben von Änderungen
+
 Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code schreiben, die die Änderung auf andere Teile des Modells oder auf externe Ressourcen wie Dateien, Datenbanken oder andere Komponenten weitergibt.
 
-## <a name="in-this-section"></a>In diesem Abschnitt
- Betrachten Sie als Richtwert diese Techniken in der folgenden Reihenfolge aus:
+## <a name="reference"></a>Referenz
+
+Betrachten Sie als Richtwert diese Techniken in der folgenden Reihenfolge aus:
 
 |Verfahren|Szenarien|Weitere Informationen|
 |-|-|-|
@@ -34,12 +36,13 @@ Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code sc
 |Regeln für die Adressenauswahl|Auswahlregeln beschränken insbesondere an, was der Benutzer auswählen kann.|[Vorgehensweise: Zugreifen auf die aktuelle Auswahl und Einschränken der aktuellen Auswahl](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Geben Sie die Modellelemente-Zustände, die mithilfe der Features von Formen und Konnektoren, z. B. Schatten, Pfeilspitzen, Farbe, und die Linienstärke und Stil an.|[Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Vergleichen von Regeln und Store-Ereignisse**
- Änderung Notifier, Regeln und Ereignisse werden ausgeführt, wenn in einem Modell Änderungen.
+## <a name="compare-rules-and-store-events"></a>Vergleichen Sie die Regeln, und Speichern von Ereignissen
 
- Regeln werden in der Regel angewendet, mit der Endtransaktion, in der die Änderung aufgetreten ist, und Ereignisse werden angewendet, nachdem die Änderungen in einer Transaktion ein Commit ausgeführt werden.
+Änderung Notifier, Regeln und Ereignisse werden ausgeführt, wenn in einem Modell Änderungen.
 
- Verwenden Sie Speicherereignisse, um das Modell mit Objekten außerhalb der Store, und Regeln, die Konsistenz in den Store zu synchronisieren.
+Regeln werden in der Regel angewendet, mit der Endtransaktion, in der die Änderung aufgetreten ist, und Ereignisse werden angewendet, nachdem die Änderungen in einer Transaktion ein Commit ausgeführt werden.
+
+Verwenden Sie Speicherereignisse, um das Modell mit Objekten außerhalb der Store, und Regeln, die Konsistenz in den Store zu synchronisieren.
 
 - **Erstellen benutzerdefinierter Regeln** als abgeleitete Klasse von einer abstrakten-Regel, erstellen Sie eine benutzerdefinierte Regel. Sie müssen auch das Framework über die benutzerdefinierte Regel benachrichtigen. Weitere Informationen finden Sie unter [Regeln weitergegeben werden Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).
 

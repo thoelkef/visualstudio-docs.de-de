@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226704"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Legt den aktuellen Anweisungszeiger auf den angegebenen Code-Kontext fest.
@@ -38,10 +41,11 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pStackFrame` Für die zukünftige Verwendung reserviert. Legen Sie auf einen null-Wert.
+## <a name="parameters"></a>Parameter
+ `pStackFrame`\
+ Für die zukünftige Verwendung reserviert. Legen Sie auf einen null-Wert.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das beschreibt, der Code-Ort ausgeführt werden und der Kontext.
 

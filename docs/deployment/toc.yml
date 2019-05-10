@@ -63,8 +63,9 @@
 - name: Anleitungen
   items:
     - name: ClickOnce-Sicherheit und Bereitstellung
-      href: clickonce-security-and-deployment.md
       items:
+        - name: ClickOnce-Sicherheit und Bereitstellung
+          href: clickonce-security-and-deployment.md
         - name: Auswählen einer Strategie für die ClickOnce-Bereitstellung
           href: choosing-a-clickonce-deployment-strategy.md
         - name: Übersicht über den ClickOnce-Cache
@@ -74,13 +75,15 @@
         - name: ClickOnce-Bereitstellung unter Windows Vista
           href: clickonce-deployment-on-windows-vista.md
         - name: Lokalisieren von ClickOnce-Anwendungen
-          href: localizing-clickonce-applications.md
           items:
+            - name: Lokalisieren von ClickOnce-Anwendungen
+              href: localizing-clickonce-applications.md
             - name: Veröffentlichen eines Projekts mit einem bestimmten Gebietsschema
               href: how-to-publish-a-project-that-has-a-specific-locale.md
         - name: Sichern von ClickOnce-Anwendungen
-          href: securing-clickonce-applications.md
           items:
+            - name: Sichern von ClickOnce-Anwendungen
+              href: securing-clickonce-applications.md
             - name: ClickOnce und Authenticode
               href: clickonce-and-authenticode.md
             - name: Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
@@ -104,8 +107,9 @@
             - name: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
         - name: Veröffentlichen von ClickOnce-Anwendungen
-          href: publishing-clickonce-applications.md
           items:
+            - name: Veröffentlichen von ClickOnce-Anwendungen
+              href: publishing-clickonce-applications.md
             - name: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
               href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
             - name: Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
@@ -129,8 +133,9 @@
             - name: Automatisches Erhöhen der ClickOnce-Veröffentlichungsversion
               href: how-to-automatically-increment-the-clickonce-publish-version.md
             - name: Angeben der mit ClickOnce veröffentlichten Dateien
-              href: how-to-specify-which-files-are-published-by-clickonce.md
               items:
+                - name: Angeben der mit ClickOnce veröffentlichten Dateien
+                  href: how-to-specify-which-files-are-published-by-clickonce.md
                 - name: Einschließen einer Datendatei in eine ClickOnce-Anwendung
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
             - name: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
@@ -144,13 +149,15 @@
             - name: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
             - name: Angeben eines Links für den technischen Support
-              href: how-to-specify-a-link-for-technical-support.md
               items:
+                - name: Angeben eines Links für den technischen Support
+                  href: how-to-specify-a-link-for-technical-support.md
                 - name: Angeben einer Support-URL für einzelne erforderliche Komponenten
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
             - name: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung
-              href: how-to-specify-a-publish-page-for-a-clickonce-application.md
               items:
+                - name: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung
+                  href: how-to-specify-a-publish-page-for-a-clickonce-application.md
                 - name: Anpassen der Standardwebseite für eine ClickOnce-Anwendung
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: Aktivieren von AutoStart für Installationen von CD
@@ -160,8 +167,9 @@
             - name: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
             - name: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers
-              href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
               items:
+                - name: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers
+                  href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
                 - name: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen
                   href: how-to-disable-url-activation-of-clickonce-applications.md
             - name: 'Bereitstellen von Apps, die unter mehreren Versionen von .NET Framework ausgeführt werden können'
@@ -169,15 +177,17 @@
             - name: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
             - name: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mithilfe des Designers'
-              href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
               items:
+                - name: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mithilfe des Designers'
+                  href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
                 - name: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 'Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mithilfe des Designers'
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
             - name: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung'
-              href: walkthrough-manually-deploying-a-clickonce-application.md
               items:
+                - name: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung'
+                  href: walkthrough-manually-deploying-a-clickonce-application.md
                 - name: 'Exemplarische Vorgehensweise: Manuelles Bereitstellen einer App, die kein erneutes Signieren erfordert'
                   href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
             - name: 'Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf'
@@ -185,8 +195,9 @@
             - name: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installationsprogramms'
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
         - name: Auswählen einer Strategie für die ClickOnce-Aktualisierung
-          href: choosing-a-clickonce-update-strategy.md
           items:
+            - name: Auswählen einer Strategie für die ClickOnce-Aktualisierung
+              href: choosing-a-clickonce-update-strategy.md
             - name: Wie ClickOnce Anwendungsupdates ausführt
               href: how-clickonce-performs-application-updates.md
             - name: Programmgesteuertes Suchen nach Anwendungsupdates
@@ -196,8 +207,9 @@
         - name: ClickOnce-Bereitstellungsbeispiele und exemplarische Vorgehensweisen
           href: clickonce-deployment-samples-and-walkthroughs.md
         - name: Problembehandlung bei ClickOnce-Bereitstellungen
-          href: troubleshooting-clickonce-deployments.md
           items:
+            - name: Problembehandlung bei ClickOnce-Bereitstellungen
+              href: troubleshooting-clickonce-deployments.md
             - name: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
             - name: Angeben von ausführlichen Protokolldateien für ClickOnce-Bereitstellungen
@@ -211,8 +223,9 @@
             - name: 'Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden'
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: Vorbedingungen für die Anwendungsbereitstellung
-      href: application-deployment-prerequisites.md
       items:
+        - name: Vorbedingungen für die Anwendungsbereitstellung
+          href: application-deployment-prerequisites.md
         - name: Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: Erstellen von Bootstrapperpaketen
@@ -226,8 +239,9 @@
         - name: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung'
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: Referenz zum Produkt- und Paketschema
-          href: product-and-package-schema-reference.md
           items:
+            - name: Referenz zum Produkt- und Paketschema
+              href: product-and-package-schema-reference.md
             - name: <Product>-Element (Bootstrapper)
               href: product-element-bootstrapper.md
             - name: <Package>-Element (Bootstrapper)
@@ -247,11 +261,13 @@
 - name: Referenz
   items:
     - name: ClickOnce-Referenz
-      href: clickonce-reference.md
       items:
+        - name: ClickOnce-Referenz
+          href: clickonce-reference.md
         - name: ClickOnce Application Manifest
-          href: clickonce-application-manifest.md
           items:
+            - name: ClickOnce Application Manifest
+              href: clickonce-application-manifest.md
             - name: <assembly>-Element (ClickOnce-Anwendung)
               href: assembly-element-clickonce-application.md
             - name: <assemblyIdentity>-Element (ClickOnce-Anwendung)
@@ -267,8 +283,9 @@
             - name: <fileAssociation>-Element (ClickOnce-Anwendung)
               href: fileassociation-element-clickonce-application.md
         - name: ClickOnce-Bereitstellungsmanifest
-          href: clickonce-deployment-manifest.md
           items:
+            - name: ClickOnce-Bereitstellungsmanifest
+              href: clickonce-deployment-manifest.md
             - name: <assembly>-Element (ClickOnce-Bereitstellung)
               href: assembly-element-clickonce-deployment.md
             - name: <assemblyIdentity>-Element (ClickOnce-Bereitstellung)

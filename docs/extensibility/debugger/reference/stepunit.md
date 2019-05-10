@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864866"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460999"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Gibt die Schrittweite für die schrittweise Ausführung.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Member
- STEP_STATEMENT Schritte von-Anweisung.
+## <a name="fields"></a>Felder
+ `STEP_STATEMENT`\
+ Schritte nach Anweisung.
 
- STEP_LINE-Schritte nach Zeile.
+ `STEP_LINE`\
+ Schritte nach Zeile.
 
- STEP_INSTRUCTION Schritte nach Anweisung.
+ `STEP_INSTRUCTION`\
+ Schritte nach Anweisung.
 
 ## <a name="remarks"></a>Hinweise
  Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864820"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458394"
 ---
 # <a name="seekstart"></a>SEEK_START
 Gibt die Position, ab dem mit dem Sie suchen, die in einem Stream Disassembly.
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Member
- SEEK_START_BEGIN beginnt die Suche am Anfang des aktuellen Dokuments.
+## <a name="fields"></a>Felder
+ `SEEK_START_BEGIN`\
+ Beginnt die Suche am Anfang des aktuellen Dokuments.
 
- SEEK_START_END beginnt die Suche am Ende des aktuellen Dokuments.
+ `SEEK_START_END`\
+ Beginnt die Suche am Ende des aktuellen Dokuments.
 
- SEEK_START_CURRENT beginnt die Suche an der aktuellen Position des aktuellen Dokuments.
+ `SEEK_START_CURRENT`\
+ Beginnt die Suche an der aktuellen Position des aktuellen Dokuments.
 
- SEEK_START_CODECONTEXT gestartet wird, Suchen in der angegebenen Code-Kontext des aktuellen Dokuments.
+ `SEEK_START_CODECONTEXT`\
+ Startet die Suchvorgänge in den angegebenen Code-Kontext des aktuellen Dokuments.
 
- SEEK_START_CODELOCID beginnt an der angegebenen Code Standortbezeichner suchen. Speicherort der Codebezeichner erhalten Sie durch Aufrufen von [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Wird gestartet, an der angegebenen Code Standortbezeichner suchen. Speicherort der Codebezeichner erhalten Sie durch Aufrufen von [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Hinweise
  Übergeben als Argument an die [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.

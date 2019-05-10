@@ -1,46 +1,47 @@
 ---
 title: IEnumDebugThreads2::Reset | Microsoft-Dokumentation
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugThreads2::Reset
 helpviewer_keywords:
 - IEnumDebugThreads2::Reset
 ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 67af0fcdf6b4b3a6c70484020109fed0173bcaba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d0eef830808f413fe6a52239ddf50625dcaabc29
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914093"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461154"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Setzt die Enumeration auf das erste Element zurück.
 
-Setzt die Enumeration auf das erste Element zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp#  
-HRESULT Reset(  
-   void  
-);  
-```  
-  
-```csharp  
-int Reset();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von der [Weiter](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) Methode gibt das erste Element der Enumeration.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT Reset(
+   void
+);
+```
+
+```csharp
+int Reset();
+```
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Nachdem diese Methode aufgerufen wird, wird beim nächsten Aufruf von der [Weiter](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) Methode gibt das erste Element der Enumeration.
+
+## <a name="see-also"></a>Siehe auch
+- [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

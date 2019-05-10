@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913339"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460710"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Gibt den Zustand des Threads.
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Member
- THREADSTATE_RUNNING gibt an, die der Thread ausgeführt wird.
+## <a name="fields"></a>Felder
+ `THREADSTATE_RUNNING`\
+ Gibt an, dass der Thread ausgeführt wird.
 
- THREADSTATE_STOPPED gibt an, dass der Thread aufgrund von einem Haltepunkt angehalten wurde.
+ `THREADSTATE_STOPPED`\
+ Gibt an, dass der Thread aufgrund von einem Haltepunkt angehalten wurde.
 
- THREADSTATE_FRESH gibt an, dass der Thread erstellt wurde, aber noch nicht Code ausgeführt wird.
+ `THREADSTATE_FRESH`\
+ Gibt an, dass der Thread erstellt wurde, aber noch nicht Code ausgeführt wird.
 
- THREADSTATE_DEAD gibt an, dass der Thread inaktiv ist.
+ `THREADSTATE_DEAD`\
+ Gibt an, dass der Thread inaktiv ist.
 
- THREADSTATE_FROZEN gibt an, dass der Thread gesperrt ist (es kann keine Ausführung ausgeführt werden).
+ `THREADSTATE_FROZEN`\
+ Gibt an, dass der Thread gesperrt ist (es kann keine Ausführung ausgeführt werden).
 
 ## <a name="remarks"></a>Hinweise
  Verwendet für die `dwThreadState` Feld der [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) Struktur.

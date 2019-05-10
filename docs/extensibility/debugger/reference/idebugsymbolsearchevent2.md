@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85556fb8549b6ebab679fed35d5d39fbd060fbff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e105f8d90c9482123c6adf44a527abd3e00f03b3
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915593"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226175"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Diese Schnittstelle wird von der Debug-Engine (DE) gesendet, um anzugeben, dass die Debugsymbole für ein Modul, das im Debugmodus befindlichen geladen wurden.

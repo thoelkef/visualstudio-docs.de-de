@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08d50e3d3ddda55a7ff0f3fea333c5408b02878a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865439"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461034"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Gibt den Typ eines Objekts von der ausdrucksauswertung.
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>Member
- OBJECT_TYPE_BOOLEAN gibt an, dass das Objekt ein boolescher Wert ist.
+## <a name="fields"></a>Felder
+ `OBJECT_TYPE_BOOLEAN`\
+ Gibt an, dass das Objekt ein boolescher Wert.
 
- OBJECT_TYPE_CHAR gibt an, dass das Objekt ein Zeichen ist.
+ `OBJECT_TYPE_CHAR`\
+ Gibt an, dass das Objekt ein Zeichen ist.
 
- OBJECT_TYPE_I1 gibt an, dass das Objekt eine ein-Byte-Ganzzahl mit Vorzeichen ist.
+ `OBJECT_TYPE_I1`\
+ Gibt an, dass das Objekt eine ein-Byte-Ganzzahl mit Vorzeichen ist.
 
- OBJECT_TYPE_U1 gibt an, dass das Objekt eine ein-Byte-Ganzzahl ohne Vorzeichen ist.
+ `OBJECT_TYPE_U1`\
+ Gibt an, dass das Objekt eine ein-Byte-Ganzzahl ohne Vorzeichen ist.
 
- OBJECT_TYPE_I2 gibt an, dass das Objekt eine 2-Byte-Ganzzahl mit Vorzeichen ist.
+ `OBJECT_TYPE_I2`\
+ Gibt an, dass das Objekt eine 2-Byte-Ganzzahl mit Vorzeichen ist.
 
- OBJECT_TYPE_U2 gibt an, dass das Objekt eine 2-Byte-Ganzzahl ohne Vorzeichen ist.
+ `OBJECT_TYPE_U2`\
+ Gibt an, dass das Objekt eine 2-Byte-Ganzzahl ohne Vorzeichen ist.
 
- OBJECT_TYPE_I4 gibt an, dass das Objekt eine vier-Byte-Ganzzahl mit Vorzeichen ist.
+ `OBJECT_TYPE_I4`\
+ Gibt an, dass das Objekt eine vier-Byte-Ganzzahl mit Vorzeichen ist.
 
- OBJECT_TYPE_U4 gibt an, dass das Objekt eine vier-Byte-Ganzzahl ohne Vorzeichen ist.
+ `OBJECT_TYPE_U4`\
+ Gibt an, dass das Objekt eine vier-Byte-Ganzzahl ohne Vorzeichen ist.
 
- OBJECT_TYPE_I8 gibt an, dass das Objekt eine 8-Byte-Ganzzahl mit Vorzeichen ist.
+ `OBJECT_TYPE_I8`\
+ Gibt an, dass das Objekt eine 8-Byte-Ganzzahl mit Vorzeichen ist.
 
- OBJECT_TYPE_U8 gibt an, dass das Objekt eine 8-Byte-Ganzzahl ohne Vorzeichen ist.
+ `OBJECT_TYPE_U8`\
+ Gibt an, dass das Objekt eine 8-Byte-Ganzzahl ohne Vorzeichen ist.
 
- OBJECT_TYPE_R4 gibt an, dass das Objekt eine vier-Byte-Gleitkommazahl.
+ `OBJECT_TYPE_R4`\
+ Gibt an, dass das Objekt eine vier-Byte-Gleitkommazahl.
 
- OBJECT_TYPE_R8 gibt an, dass das Objekt eine 8-Byte-Gleitkommazahl.
+ `OBJECT_TYPE_R8`\
+ Gibt an, dass das Objekt eine 8-Byte-Gleitkommazahl.
 
- OBJECT_TYPE_OBJECT gibt an, dass das Objekt ein Objekt.
+ `OBJECT_TYPE_OBJECT`\
+ Gibt an, dass das Objekt ein Objekt.
 
- OBJECT_TYPE_NULL gibt an, dass das Objekt NULL ist.
+ `OBJECT_TYPE_NULL`\
+ Gibt an, dass das Objekt NULL ist.
 
- OBJECT_TYPE_CLASS gibt an, dass das Objekt einer Klasse ist.
+ `OBJECT_TYPE_CLASS`\
+ Gibt an, dass das Objekt einer Klasse ist.
 
 ## <a name="remarks"></a>Hinweise
  Übergeben als Argument an die [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) und [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) Methoden.
